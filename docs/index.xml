@@ -1797,7 +1797,88 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Global JavaScript file</title><link>https://docs.kianda.com/docs/low-code/global-javascript-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-javascript-file/</guid><description/></item><item><title>Docs: Toggle control</title><link>https://docs.kianda.com/docs/platform/controls/input/toggle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/toggle/</guid><description/></item><item><title>Docs: Custom form control development</title><link>https://docs.kianda.com/docs/low-code/field-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/field-widget/</guid><description/></item><item><title>Docs: User picker control</title><link>https://docs.kianda.com/docs/platform/controls/input/user-picker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/user-picker/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Global JavaScript file</title><link>https://docs.kianda.com/docs/low-code/global-javascript-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-javascript-file/</guid><description/></item><item><title>Docs: Toggle control</title><link>https://docs.kianda.com/docs/platform/controls/input/toggle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/toggle/</guid><description>
+&lt;p>&lt;strong>Toggle fields&lt;/strong> (controls) can be used in a form to record a decision, confirm that an action has been taken or an item has been received, or to record a yes/no type answer. They can be used as either a toggle or as a checkbox - for example, Toggle fields could be used to create a series of checkboxes in an Onboarding Form to record whether a new employee has received required training, been assigned an employee number and so on.&lt;/p>
+&lt;p>Rules can be applied to &lt;strong>Toggle fields&lt;/strong> to make your form more dynamic. One such rule, the &lt;strong>Show, hide or disable rule&lt;/strong> can be applied to a Toggle field to have the effect of showing or hiding remaining options/sections in the form dependent on whether the toggle/checkbox is selected or not.&lt;/p>
+&lt;p>For example, in a Training Request form, a Toggle field could be used to record a manager&amp;rsquo;s decision to either approve or reject an employee&amp;rsquo;s training request - by applying the &lt;strong>Show, hide or disable&lt;/strong> rule to this field, a different last section of the form will display based on the manager&amp;rsquo;s decision. If the manager select&amp;rsquo;s to approve the training, a sign-off button then appears; if the manager reject&amp;rsquo;s the request, a &amp;lsquo;Reason&amp;rsquo; textbox appears for them to insert their feedback. To learn more about applying rules to fields, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>. To find out more about this specific rule, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable">Show, hide or disable&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>To add a &lt;strong>Toggle field&lt;/strong> to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible). If you want to add the Toggle field to a panel within your form, first select the panel by clicking on it and then add the &lt;strong>Toggle field&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Insert the new &lt;strong>Toggle field&lt;/strong> by clicking on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu, then select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Toggle&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-insert.jpg" alt="Insert toggle field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>New field - Toggle&lt;/strong> dialog box will open with a range of options you can choose from for your new Toggle field.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-dialog.jpg" alt="New toggle field dialog box">&lt;/p>
+&lt;p>The options available in the &lt;strong>New field - Toggle&lt;/strong> dialog box include:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the Toggle field from the default title &lt;strong>Toggle 1&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Name&lt;/strong> - This is a unique name for the field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to explain to the form user what selecting the toggle/checkbox means. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted. In this example, the Toggle field is titled &amp;lsquo;Approve Training&amp;rsquo; and has associated help text:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-approve-training.jpg" alt="Toggle field help text icon">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-helptext-example.jpg" alt="List field help text example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Value when enabled&lt;/strong> - You can set the value for when the user selects the toggle/checkbox. For example, the value when it is selected could be &amp;lsquo;Yes&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Value when disabled&lt;/strong> - You can set the value for when the user does &lt;em>not&lt;/em> select the toggle/checkbox. For example, the value when it is not selected could be &amp;lsquo;No&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Display mode&lt;/strong> - You can choose to have the Toggle field display as either a &lt;strong>Toggle button&lt;/strong> &lt;img src="https://docs.kianda.com/images/toggle-icon.jpg" alt="Toggle button icon"> or &lt;strong>Checkbox&lt;/strong> &lt;img src="https://docs.kianda.com/images/toggle-checkbox-icon.jpg" alt="Checkbox icon">.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;ol start="4">
+&lt;li>Once you complete the &lt;strong>New field - Toggle&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong> button, a new &lt;strong>Toggle field&lt;/strong> is added to your form, with the name you inserted as the &lt;strong>Title&lt;/strong> in the dialog box (by default, the title is &lt;strong>Toggle 1&lt;/strong> unless you change it).&lt;/li>
+&lt;/ol>
+&lt;p>If we take the example of the Training Request form we already discussed, with a Toggle field called &amp;lsquo;Approve Training Request&amp;rsquo; that is formatted to be a checkbox, the Toggle field could look like this when a user views it on their mobile phone:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-example-mobile.jpg" alt="Toggle field example on a mobile phone">&lt;/p>
+&lt;p>To check how your form or field will look like on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by clicking the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">(play icon) after first saving your changes.&lt;/p>
+&lt;h3 id="how-to-edit-move-and-delete-toggle-fields">How to edit, move and delete Toggle fields&lt;/h3>
+&lt;p>As we go through the options available for editing a Toggle field, we will keep in mind the example of the &amp;lsquo;Approve Training Request&amp;rsquo; Toggle field in our Training Request form.&lt;/p>
+&lt;h4 id="how-to-edit-a-toggle-field">How to edit a Toggle field&lt;/h4>
+&lt;p>To edit a &lt;strong>Toggle field&lt;/strong>, select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-edit.jpg" alt="Select toggle field to edit">&lt;/p>
+&lt;p>The &lt;strong>Edit field - Toggle&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - Toggle&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-example-dialog.jpg" alt="Edit toggle field dialog box">&lt;/p>
+&lt;p>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;p>You can apply rules to a &lt;strong>Toggle field&lt;/strong> to make it more dynamic so that, for example, it generates information that is autofiled into another field.&lt;/p>
+&lt;p>For example, you could apply a &amp;lsquo;&lt;strong>Set date&lt;/strong>&amp;rsquo; rule to your &amp;lsquo;&amp;rsquo;&lt;strong>Order Received&lt;/strong>&amp;rsquo; toggle field so that it generates a date to be displayed in a &amp;lsquo;&lt;strong>Date received&lt;/strong>&amp;rsquo; field when &lt;strong>Order received&lt;/strong> is selected by the user - this will mean that when the user selects the Order Received toggle field, this automatically generates a date stamp for when the order was received:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-rule-date.jpg" alt="Toggle example date rule">&lt;/p>
+&lt;p>To learn more about applying rules to fields, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>. To find out more about the specific rule added in our example - where a date is automatically populated in another field - go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field">Set form field&lt;/a>.&lt;/p>
+&lt;h4 id="how-to-move-a-toggle-field">How to move a Toggle field&lt;/h4>
+&lt;p>To move a &lt;strong>Toggle field&lt;/strong>, simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to within your form.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-move.jpg" alt="Toggle field drag handle">&lt;/p>
+&lt;h4 id="how-to-delete-a-toggle-field">How to delete a Toggle field&lt;/h4>
+&lt;p>To delete a &lt;strong>Toggle field&lt;/strong> from your form, simply select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;h3 id="how-to-edit-toggle-field-properties">How to edit Toggle field properties&lt;/h3>
+&lt;p>To view or edit the field properties associated with a &lt;strong>Toggle field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-field-properties.jpg" alt="Toggle field properties">&lt;/p>
+&lt;p>In the example shown here, a &lt;strong>Toggle field&lt;/strong> titled &amp;lsquo;&amp;rsquo;&lt;strong>Approve Training Request&lt;/strong>&amp;rsquo;&amp;rsquo; has been selected and it&amp;rsquo;s properties are displayed, including: its Field type (Toggle), Title, that its Title will be shown in the form (the &amp;lsquo;Show title&amp;rsquo; checkbox is ticked), that it will &lt;em>not&lt;/em> a mandatory field for users to complete (the &amp;lsquo;Required&amp;rsquo; checkbox isn&amp;rsquo;t ticked), that this field will be enabled for users to complete (the &amp;lsquo;Enabled&amp;rsquo; checkbox is ticked), and that this field will be visible to form users (the &amp;lsquo;Visible&amp;rsquo; checkbox is ticked). The width of the field on PC and mobile is also shown.&lt;/p>
+&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
+&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Toggle controls&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Custom form control development</title><link>https://docs.kianda.com/docs/low-code/field-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/field-widget/</guid><description/></item><item><title>Docs: User picker control</title><link>https://docs.kianda.com/docs/platform/controls/input/user-picker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/user-picker/</guid><description>
 &lt;p>The &lt;strong>user picker field&lt;/strong> provides a way to associate a user to a particular task for example to allow a form user to find their manager to approve a workflow. This is achieved by connecting your Kianda form to a data source, for example information in SharePoint, and using the user picker field.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
