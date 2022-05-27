@@ -130,6 +130,6 @@ Now that you've learned about **List controls**, find out more about the other t
 - [File upload control](/docs/platform/controls/input/file-upload/)
 - [Number control](/docs/platform/controls/input/number/)
 - [Table control](/docs/platform/controls/input/table/)
-- [Textbox control](/docs/platform/controls/input/textbox/)
+- [Text box control](/docs/platform/controls/input/textbox/)
 - [Toggle control](/docs/platform/controls/input/toggle/)
 - [User picker control](/docs/platform/controls/input/user-picker/)
