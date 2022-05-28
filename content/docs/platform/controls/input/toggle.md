@@ -93,7 +93,7 @@ To view or edit the field properties associated with a **Toggle field**, select 
 
 ![Toggle field properties](/images/toggle-field-properties.jpg)
 
-In the example shown here, a **Toggle field** titled ''**Approve Training Request**'' has been selected and it's properties are displayed, including: its Field type (Toggle), Title, that its Title will be shown in the form (the 'Show title' checkbox is ticked), that it will *not* a mandatory field for users to complete (the 'Required' checkbox isn't ticked), that this field will be enabled for users to complete (the 'Enabled' checkbox is ticked), and that this field will be visible to form users (the 'Visible' checkbox is ticked). The width of the field on PC and mobile is also shown. 
+In the example shown here, a **Toggle field** titled '**Approve Training Request**' has been selected and it's properties are displayed, including: its Field type (Toggle), Title, that its Title will be shown in the form (the 'Show title' checkbox is ticked), that it will *not* a mandatory field for users to complete (the 'Required' checkbox isn't ticked), that this field will be enabled for users to complete (the 'Enabled' checkbox is ticked), and that this field will be visible to form users (the 'Visible' checkbox is ticked). The width of the field on PC and mobile is also shown. 
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 
