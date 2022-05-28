@@ -662,77 +662,99 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: User picker control</title><link>https://docs.kianda.com/docs/platform/controls/input/user-picker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/user-picker/</guid><description>
-&lt;p>The &lt;strong>user picker field&lt;/strong> provides a way to associate a user to a particular task for example to allow a form user to find their manager to approve a workflow. This is achieved by connecting your Kianda form to a data source, for example information in SharePoint, and using the user picker field.&lt;/p>
+&lt;p>The &lt;strong>User picker field&lt;/strong> can be used in a form if you want the form user to select a user, multiple users or a group of users. You can format the User picker field so that, for example, the form user can choose any user, can only choose a user or users from a certain group - for example, users in the HR Department - or can choose multiple users.&lt;/p>
+&lt;p>For example, in a &amp;lsquo;Training Request&amp;rsquo; form, you may insert a &lt;strong>User picker field&lt;/strong> titled &amp;lsquo;Manager&amp;rsquo; so that the user can select their manager (who will subsequently need to approve or reject their training request once it has been submitted).&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To add a particular user, click on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Input&lt;/strong> &amp;gt; &lt;strong>User picker&lt;/strong>. The field can also be placed within an element for example a panel, by clicking on the panel itself and then add user picker field. Compare in the image below, the field Line Manager which is inside a panel versus Department Manager which is outside the panel, both in the form Employee Request.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/userpickerinout.png" alt="User picker field inside and outside a panel">&lt;/p>
+&lt;p>To add a &lt;strong>User picker field&lt;/strong> to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Choose from the edit options:&lt;/p>
+&lt;p>Insert the &lt;strong>User picker field&lt;/strong> by clicking on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu, then select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>User picker&lt;/strong>. If you want to insert the new field into a panel in your form, first select the panel by clicking on the drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and then insert the new User picker field from the Controls menu.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-insert.jpg" alt="Insert User picker field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>New field - User picker&lt;/strong> dialog box will open with a range of options you can choose from for your new User picker field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-dialog.jpg" alt="New field user picker dialog box">&lt;/p>
+&lt;p>The options available include:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - of the user, for example Training Manager&lt;/p>
+&lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the User picker field from the default &amp;lsquo;&amp;rsquo;&lt;strong>User picker 1&lt;/strong>&amp;rsquo;&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Name&lt;/strong> - this is a unique name for the field&lt;/p>
+&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the field&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Help text&lt;/strong> - information to help the form user&lt;/p>
+&lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user to complete the User Picker field. Taking the example of the &amp;lsquo;Manager&amp;rsquo; User picker field in a &amp;lsquo;Training Request&amp;rsquo; form, you could insert help text to this effect:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-helptext-example.jpg" alt="User picker field help text example dialog box">&lt;/p>
+&lt;p>If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-helptext-shown.jpg" alt="User picker field help text example icon">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Mode&lt;/strong> - options are a) Single or b) Multiple&lt;/p>
-&lt;p>If you choose b) Multiple then you can choose the maximum number of users to select by clicking on the arrow or simply typing your number into the box, for example 3 users as shown below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/maxusers.png" alt="Maximum number of users to select">&lt;/p>
+&lt;p>&lt;strong>Selection Mode&lt;/strong> - You can choose whether the user will only be able to select one user from the User Picker list (by selecting &lt;strong>Single&lt;/strong>) or whether the user will be able to select multiple users (by selecting &lt;strong>Multiple&lt;/strong>).&lt;/p>
+&lt;p>If you choose to allow the user to select multiple users, by selecting &lt;strong>Multiple&lt;/strong> as the Selection mode, an additional option then displays - &lt;strong>Max users to select&lt;/strong>. Here you can set a maximum number of users that can be selected - you can do this by either manually typing the number into the box or by clicking on the up/down buttons &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up down buttons"> at the right-hand side of the box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-multiple.jpg" alt="User picker multiple">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Default to current user&lt;/strong> - options to default to the current user when in edit mode are a) No or b) Yes&lt;/p>
+&lt;p>&lt;strong>Default to current user&lt;/strong> - You can choose to have the current user display in the User picker field once the form is opened to be edited. If you select &amp;lsquo;&lt;strong>Yes&lt;/strong>&amp;rsquo;, so the User picker field shows the current user by default, an additional option then displays - &lt;strong>Allow override picker value&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-default-current-user.jpg" alt="User picker default to current user">&lt;/p>
+&lt;p>If you choose &lt;strong>Yes&lt;/strong> for &lt;strong>Allow override picker value&lt;/strong>, this automatically allows the override of the user in the User Picker field.&lt;/p>
+&lt;p>For example, in an &amp;lsquo;Annual Leave Request&amp;rsquo; form, there could be an &amp;lsquo;Employee Name&amp;rsquo; User picker field that defaults to the current user; but we may want the Employee&amp;rsquo;s Manager to be able to override the name in this field if they are submitting an annual leave request on behalf of an employee.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Member of group&lt;/strong> - select the group from your data source that the user is a member of, for example HR Managers&lt;/p>
+&lt;p>&lt;strong>Member of group&lt;/strong> - You can select the group from your data source that the user is a member of - for example HR Managers.&lt;/p>
+&lt;p>In Kianda, Groups can be configured under the Administration menu - to learn more about how you can set up and edit Groups, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Selection options&lt;/strong> - choose from a) Users b) Groups c) Partners, as many as needed&lt;/p>
+&lt;p>&lt;strong>Selection options&lt;/strong> - You can choose to enable the form user to choose a user or users from &lt;strong>Users&lt;/strong> (all users), &lt;strong>Groups&lt;/strong> (such as HR) or &lt;strong>Partners&lt;/strong> - you can select as many of these three options as you like.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Default selection option&lt;/strong> - choose one from a) Users b) Groups c) Partners&lt;/p>
+&lt;p>&lt;strong>Default selection option&lt;/strong> - You can choose to have the default option displayed in the User picker field be &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or &lt;strong>Partners&lt;/strong>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Show selection option menu&lt;/strong> - options are a) No or b) Yes&lt;/p>
+&lt;p>&lt;strong>Show selection option menu&lt;/strong> - You can choose whether or not the selection option menu (where the form user can switch between &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong>) is shown on the right-hand side of the User picker field.&lt;/p>
+&lt;p>If you choose &lt;strong>No&lt;/strong>, there will not be a selection option menu:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-no-options.jpg" alt="User picker without selection option menu">&lt;/p>
+&lt;p>If you choose &lt;strong>Yes&lt;/strong>, a selection option menu will be available to the form user to click (to change the list of users they can select from):&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-options.jpg" alt="User picker field with selection option menu">&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="Ok button"> when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you need to re-edit the user picker field, click on the field itself and the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears allowing you to edit the field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/userpickeredit.png" alt="Editing the user picker field">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To move the field, click on the &lt;strong>Drag handle&lt;/strong> &lt;img src="images/move.png" alt="Move button">on the user picker field itself and drag it to where you want it to appear on the form, for example within a panel.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To delete the field, click on the field itself and then click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin or Trash icon"> and then click on &lt;strong>Ok&lt;/strong> after you have reviewed the field name and are sure this is what you want to delete. Click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
+&lt;p>Once you complete the &lt;strong>New field - User picker&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong>, a new &lt;strong>User picker field&lt;/strong> is added to your form, with the name you inserted as the &lt;strong>Title&lt;/strong> in the dialog box (by default the title is &lt;strong>User picker 1&lt;/strong> unless you change it).&lt;/p>
+&lt;p>In the example of our Training Request Form, the new User picker field (titled &lt;strong>Manager&lt;/strong>) added to the form could look like this when a user views it on their mobile phone:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-mobile-example.jpg" alt="File upload example mobile phone">&lt;/p>
+&lt;p>To see how your form or field will look on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by using the &lt;strong>Preview&lt;/strong> option which can be opened by clicking the play button icon &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">. You also have the options to see how it will look on a PC or tablet.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="how-to-edit-user-picker-properties">How to edit user picker properties&lt;/h2>
-&lt;p>To change the user picker field properties, click on the field itself and the properties pane appears on the right.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/userpickerproperties.png" alt="User picker field properties">&lt;/p>
-&lt;p>The &lt;strong>Field type&lt;/strong>, User picker, is shown along with the &lt;strong>Title&lt;/strong> of the field, in the example above Training Manager.&lt;/p>
-&lt;p>The options within properties are as follows, check the checkbox to implement:&lt;/p>
+&lt;h3 id="how-to-edit-move-and-delete-user-picker-fields">How to edit, move and delete User picker fields&lt;/h3>
+&lt;p>As we go through the options available for editing a User picker field, we will keep in mind the example of the &amp;lsquo;Manager&amp;rsquo; User picker field in the &amp;lsquo;Training Request&amp;rsquo; form.&lt;/p>
+&lt;h4 id="how-to-edit-a-user-picker-field">How to edit a User picker field&lt;/h4>
+&lt;p>To edit a &lt;strong>User picker field&lt;/strong>, select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-edit.jpg" alt="Select User picker field to edit">&lt;/p>
+&lt;p>The &lt;strong>Edit field - User picker&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - User picker&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-edit-dialog.jpg" alt="Edit User picker field dialog box">&lt;/p>
+&lt;p>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;h4 id="how-to-move-a-user-picker-field">How to move a User picker field&lt;/h4>
+&lt;p>To move a &lt;strong>User picker field&lt;/strong>, simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to within your form.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-move.jpg" alt="User picker drag handle">&lt;/p>
+&lt;h4 id="how-to-delete-a-user-picker-field">How to delete a User picker field&lt;/h4>
+&lt;p>To delete a &lt;strong>User picker field&lt;/strong> from your form, simply select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;h3 id="how-to-edit-user-picker-field-properties">How to edit User picker field properties&lt;/h3>
+&lt;p>To view or edit the field properties associated with a &lt;strong>User picker field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-field-properties.jpg" alt="User picker field properties">&lt;/p>
+&lt;p>In the example shown here, a &lt;strong>User picker field&lt;/strong> titled &amp;lsquo;&lt;strong>Manager&lt;/strong>&amp;rsquo; has been selected and it&amp;rsquo;s properties are displayed, including: its &lt;strong>Field type&lt;/strong> (User picker), &lt;strong>Title&lt;/strong>, that its Title will be shown in the form (the &amp;lsquo;&lt;strong>Show title&lt;/strong>&amp;rsquo; checkbox is ticked), that it will be a mandatory field for users to complete (the &amp;lsquo;&lt;strong>Required&lt;/strong>&amp;rsquo; checkbox is ticked and a red star is shown next to the field title), that this field will be enabled for users to complete (the &amp;lsquo;&lt;strong>Enabled&lt;/strong>&amp;rsquo; checkbox is ticked), and that this field will be visible to form users (the &amp;lsquo;&lt;strong>Visible&lt;/strong>&amp;rsquo; checkbox is ticked). The width of the field on PC and mobile is also shown - and can be changed - in the &lt;strong>Layout&lt;/strong> section.&lt;/p>
+&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
+&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>User picker control&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Show Title&lt;/strong> - show the title of the field&lt;/li>
-&lt;li>&lt;strong>Required&lt;/strong> - make this field mandatory for users to use&lt;/li>
-&lt;li>&lt;strong>Enabled&lt;/strong> - the field is enabled for users to use&lt;/li>
-&lt;li>&lt;strong>Visible&lt;/strong> - the field is visible to users&lt;/li>
-&lt;li>&lt;strong>Layout&lt;/strong> - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the text box for mobile use.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize.png" alt="Changing text box width">&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Rules&lt;/strong> - rules for input fields are covered in &lt;a href="rules/README.md">Rules&lt;/a>.&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>
