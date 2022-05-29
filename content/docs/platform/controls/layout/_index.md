@@ -24,13 +24,13 @@ Layout fields are one category of [controls](/docs/platform/controls/) (fields).
 
 	There are 4 types of layout fields:
 
-- **Panel** - The Panel field provides responsive panels to hold elements of your form like text boxes and lists and enables flexible layout options for better design. To learn more, go to [Panel](/docs/platform/controls/layout/panel/).
+- **Panel** - The Panel field provides responsive panels to hold elements of your form like text boxes and lists and enables flexible layout options for better design. To learn more, go to [Panel control](/docs/platform/controls/layout/panel/).
 
-- **Dialog** - The Dialog field is used to create modal dialogs to alert or prompt form users. For example, a warning message could display to remind the user to complete part of a form before they proceed to the next section. To learn more, go to [Dialog](/docs/platform/controls/layout/dialog/).
+- **Dialog** - The Dialog field is used to create modal dialogs to alert or prompt form users. For example, a warning message could display to remind the user to complete part of a form before they proceed to the next section. To learn more, go to [Modal Dialog control](/docs/platform/controls/layout/dialog/).
 
-- **Richtext** - The Richtext field is used to create rich content in forms, such as an attractive banner or static html, and provides optimum formatting options. To learn more, go to [Richtext](/docs/platform/controls/layout/richtext/).
+- **Richtext** - The Richtext field is used to create rich content in forms, such as an attractive banner or static html, and provides optimum formatting options. To learn more, go to [Richtext control](/docs/platform/controls/layout/richtext/).
 
-- **Field group** - The Field Group control can be used to mirror a group of fields from another form or location and reference those fields in your new form, making process design sleeker and more efficient. To learn more, go to [Field group](/docs/platform/controls/layout/field-group/).
+- **Field group** - The Field Group control can be used to mirror a group of fields from another form or location and reference those fields in your new form, making process design sleeker and more efficient. To learn more, go to [Field group control](/docs/platform/controls/layout/field-group/).
 
 
 
