@@ -4,7 +4,9 @@ weight: 8
 typora-root-url: ..\..\..\..\..\static
 ---
 
-The **User picker field** can be used in a form if you want the form user to select a user, multiple users or a group of users. You can format the User picker field so that, for example, the form user can choose any user, can only choose a user or users from a certain group - for example, users in the HR Department - or can choose multiple users. 
+The **User picker field** can be used in a form if you want the form user to select a user, multiple users or a group of users. You can format the User picker field so that, for example, the form user can choose any user, can only choose a user or users from a certain group - for example, users in the HR Department - or can choose multiple users.
+
+You can pre-define Groups on Kianda by using the Users function under Kianda Administration. To learn more about how you can set up and manage Groups, go to [Users & Groups](/docs/platform/administration/users/).
 
 For example, in a 'Training Request' form, you may insert a **User picker field** titled 'Manager' so that the user can select their manager (who will subsequently need to approve or reject their training request once it has been submitted). 
 
