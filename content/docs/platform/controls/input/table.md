@@ -45,9 +45,9 @@ As we go through the options available for editing a Table, we will keep in mind
 
 First, decide **how many columns** you need in your table and **what type of input field** you want to use for each column. To learn more about the eight different types of Input fields that you can use, go to [Input controls](/docs/platform/controls/input/).
 
-In our example, we want to change the default table that was inserted - titled **Table 1** with two columns of textbox fields - into a table called 'Existing Qualifications' to capture the existing qualifications of the user who is requesting futher training. 
+In our example, we want to change the default table that was inserted - titled **Table 1** with two columns of text box fields - into a table called 'Existing Qualifications' to capture the existing qualifications of the user who is requesting further training. 
 
-We want our table to have three columns: the first column will be a textbox field titled 'Qualification Description' where the user will manually type in the name of a qualification, the second column will be a drop-down list titled 'Educational Institution' (which could link to an external data source) where the user will choose the relevant institution, and the third column will be a date field titled 'Date Qualification Obtained', as shown here:
+We want our table to have three columns: the first column will be a text box field titled 'Qualification Description' where the user will manually type in the name of a qualification, the second column will be a drop-down list titled 'Educational Institution' (which could link to an external data source) where the user will choose the relevant institution, and the third column will be a date field titled 'Date Qualification Obtained', as shown here:
 
 ![Table example training](/images/table-training-example.jpg)
 
@@ -57,7 +57,7 @@ To change the title of the default first column texbox field from **Text 1**, si
 
 ![Table select field to edit](/images/table-edit-field.jpg)
 
-The **Edit field - Text** dialog box will open and you can change the title of the field here. There are also a number of other options available to you - see [Textbox control](/docs/platform/controls/input/textbox/) for more information on how you can edit textbox fields.
+The **Edit field - Text** dialog box will open and you can change the title of the field here. There are also a number of other options available to you - see [Text box control](/docs/platform/controls/input/textbox/) for more information on how you can edit text box fields.
 
 ##### How to delete a column from a Table
 
@@ -67,7 +67,7 @@ To delete a column from a Table field, select the column field you want to delet
 
 ##### How to change the field type of an existing Table column
 
-In our example, we want the second column in our table to be a drop-down list. We can either delete the default second textbox column and then insert a new list column or we can **change the field type of the existing column** from textbox to list. To do this, select the column field you want to change (by either clicking on the column Title or clicking into the blank box below it) so that the Edit field button ![Edit field button](/images/penicon.png) (Pen icon) is shown and then click on the **Change field** button in the right-hand pane:
+In our example, we want the second column in our table to be a drop-down list. We can either delete the default second text box column and then insert a new list column or we can **change the field type of the existing column** from text box to list. To do this, select the column field you want to change (by either clicking on the column Title or clicking into the blank box below it) so that the Edit field button ![Edit field button](/images/penicon.png) (Pen icon) is shown and then click on the **Change field** button in the right-hand pane:
 
 ![Change Table column type](/images/table-change-column-type.jpg)
 
@@ -75,7 +75,7 @@ A **Change** dialog box will open up, allowing you to change the existing column
 
 ![Table change column type dialog box](/images/table-change-column-type-dialog.jpg)
 
-In our example, if we want to change the 'Text 2' textbox column to be a List field, we would select the **List** radio box and then click **OK** to confirm. An **Edit field** dialog box for the type of input field you have chosen will then open, allowing you to change the column field title (in our case, we will rename it as 'Educational Institution') and to choose from a range of options relevant to that field type. 
+In our example, if we want to change the 'Text 2' text box column to be a List field, we would select the **List** radio box and then click **OK** to confirm. An **Edit field** dialog box for the type of input field you have chosen will then open, allowing you to change the column field title (in our case, we will rename it as 'Educational Institution') and to choose from a range of options relevant to that field type. 
 
 ##### How to insert new columns in a Table
 
@@ -189,6 +189,6 @@ Now that you've learned about the **Table control**, find out more about the oth
 - [File upload control](/docs/platform/controls/input/file-upload/)
 - [List control](/docs/platform/controls/input/list/)
 - [Number control](/docs/platform/controls/input/number/)
-- [Textbox control](/docs/platform/controls/input/textbox/)
+- [Text box control](/docs/platform/controls/input/textbox/)
 - [Toggle control](/docs/platform/controls/input/toggle/)
 - [User picker control](/docs/platform/controls/input/user-picker/)

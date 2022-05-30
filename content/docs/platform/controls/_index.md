@@ -21,7 +21,7 @@ If you go to **Administration** > **Designer** and click on an existing process 
 
 There are three categories of controls (fields):
 
-1. **Input** - There are eight types of Input fields. These include the most commonly used data fields such as textbox, user picker, date field, table, checkbox, drop-down and number field. See [Input](/docs/platform/controls/input/) for more information. 
+1. **Input** - There are eight types of Input fields. These include the most commonly used data fields such as text box, user picker, date field, table, checkbox, drop-down and number field. See [Input](/docs/platform/controls/input/) for more information. 
 2. **Layout** - There are four Layout fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields - see [Layout](/docs/platform/controls/layout/) for more information.
 3. **Action** - There are four Action fields that allow user interface actions like buttons, links or even signature components - see [Actions](/docs/platform/controls/actions/) for more information.
 

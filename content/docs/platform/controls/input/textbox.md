@@ -142,7 +142,7 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-Now that you've learned about the **Textbox control**, find out more about the other types of **Input fields** you can add to a Kianda process:
+Now that you've learned about the **Text box control**, find out more about the other types of **Input fields** you can add to a Kianda process:
 
 - [Date control](/docs/platform/controls/input/date/)
 - [File upload control](/docs/platform/controls/input/file-upload/)
