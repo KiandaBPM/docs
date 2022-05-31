@@ -3,4 +3,4 @@ title: "Users & Groups"
 typora-root-url: ..\..\..\..\static
 ---
 
-Page under construction
+The **Users** function is used to manage users and groups in Kianda.
