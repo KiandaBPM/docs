@@ -3,7 +3,7 @@ title: "Field group control"
 typora-root-url: ..\..\..\..\..\static
 ---
 
-A **field group** control is a convenient way to mirror a group of fields that are in another form or location and reference those fields in your new form, making process design sleeker and more efficient. 
+A **Field group** control is a convenient way to mirror a group of fields that are in another form or location and reference those fields in your new form, making process design sleeker and more efficient. 
 
 For example, in an Education Request Process - where employees can request training in a 'Training Request' form and their manager can either approve or reject that request in a 'Training Approval' form - we may want to mirror some of the fields from the first form in the process, 'Training Request', into the second form 'Training Approval'. We will keep this example in mind as we learn more about using the **Field group control**.
 
