@@ -224,7 +224,54 @@
 &lt;p>You can access this section by clicking on &lt;strong>Open Wizard&lt;/strong> &amp;gt; &lt;strong>Look and Feel&lt;/strong> or by clicking on &lt;strong>Look and Feel&lt;/strong> in the main &lt;strong>Subscription&lt;/strong> page.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/look-and-feel.jpg" alt="Look and feel">&lt;/p>
 &lt;p>Note logo sizes are 200 x 65px for a full-sized logo and 45 x 45px for a collapsed logo. You can also select a colour scheme under Themes and preview the results under Workspace preview on the right.&lt;/p>
-&lt;h3 id="whats-next--idea-iconcontentdocsplatformadministrationsubscriptionassets18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/../content/docs/platform/administration/subscription.assets/18.png" alt="Idea icon">&lt;/h3>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Support</title><link>https://docs.kianda.com/docs/platform/administration/support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/support/</guid><description>
-&lt;p>Page under construction&lt;/p></description></item><item><title>Docs: Users &amp; Groups</title><link>https://docs.kianda.com/docs/platform/administration/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/users/</guid><description>
+&lt;p>The &lt;strong>Support&lt;/strong> function is available to users with a designated role, for example, &lt;strong>Manage partners&lt;/strong>, &lt;strong>Designer&lt;/strong> or &lt;strong>Administrator&lt;/strong> and is found in the left-hand side pane, under &lt;strong>More&lt;/strong>. This function allows you to log support tickets and view application logs.&lt;/p>
+&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
+&lt;p>To view use the Support function:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>More&lt;/strong> in the left-hand side pane and then click on &lt;strong>Support&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can view any current tickets or logs in the main view pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/support-function.jpg" alt="Support view">&lt;/p>
+&lt;p>These are two main areas: &lt;strong>Support tickets&lt;/strong> and &lt;strong>Application logs&lt;/strong> these are explained in more detail below.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="support-tickets">Support tickets&lt;/h4>
+&lt;p>Existing support tickets appear within this section, showing the &lt;strong>title&lt;/strong> of the ticket, &lt;strong>date&lt;/strong> it was issued and &lt;strong>status&lt;/strong>.&lt;/p>
+&lt;h5 id="for-existing-tickets">For existing tickets:&lt;/h5>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>name&lt;/strong> of a ticket to view ticket details, such as who raised the ticket and a description of the title.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>update status&lt;/strong> to change the title of the field or update the status. The status can either be &lt;strong>Open&lt;/strong>, &lt;strong>Resolved&lt;/strong> (resolved from the Kianda support side) or &lt;strong>Closed&lt;/strong> (customer is satisfied with the resolution and has closed the ticket). Click on &lt;strong>Close&lt;/strong> to exit without saving or &lt;strong>OK&lt;/strong> to submit changes.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>reply&lt;/strong> to add a comment to the ticket. The comment can be styled to change the font colour, paragraph layout, add tables, links or images.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/post-comment.jpg" alt="Post comment">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h5 id="to-create-a-new-ticket">To create a new ticket:&lt;/h5>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Add new&lt;/strong> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Create a new thread&lt;/strong> dialog box, enter a &lt;strong>Title&lt;/strong>, &lt;strong>Description&lt;/strong> and set the ticket &lt;strong>status&lt;/strong>, typically Open.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/new-ticket-thread.jpg" alt="New support ticket">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="application-logs">Application logs&lt;/h4>
+&lt;p>System logs appear in this section when you click on &lt;strong>Load errors&lt;/strong>. Logs are listed by &lt;strong>date&lt;/strong>, &lt;strong>url/area&lt;/strong>, for example a User update, a system generated Message, User and &lt;strong>Browser&lt;/strong> involved in the log entry.&lt;/p>
+&lt;ol>
+&lt;li>Click in the &lt;strong>search box&lt;/strong> and enter text to search for logs based on key word entry.&lt;/li>
+&lt;li>If there are several pages of logs, click on the &lt;strong>page number&lt;/strong> to see entries for that page.&lt;/li>
+&lt;li>Click on &lt;strong>Clear errors&lt;/strong> to clear all existing logs from the system. Any changes after this time will be added to the logs again and visible to users.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
+&lt;p>To find out about other ways to get help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/help">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Users &amp; Groups</title><link>https://docs.kianda.com/docs/platform/administration/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/users/</guid><description>
 &lt;p>Page under construction&lt;/p></description></item></channel></rss>
