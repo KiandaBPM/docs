@@ -37,7 +37,7 @@ You can access this section by clicking on **Open Wizard** > **Look and Feel** o
 Note logo sizes are 200 x 65px for a full-sized logo and 45 x 45px for a collapsed logo. You can also select a colour scheme under Themes and preview the results under Workspace preview on the right.
 
 
-### What's next  ![Idea icon](/../content/docs/platform/administration/subscription.assets/18.png) ###
+### What's next  ![Idea icon](/images/18.png) ###
 
 To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
 
