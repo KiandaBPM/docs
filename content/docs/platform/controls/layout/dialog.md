@@ -5,13 +5,11 @@ typora-root-url: ..\..\..\..\..\static
 
 The **Modal dialog field** allows you to design pop-up dialog messages that alert or provide reminders or warnings to form end-users.
 
-The most common way to use Dialog fields is to apply a **rule** - to a field, form or button - so that the pop-up Dialog only displays in *certain circumstances*. Rules allow actions based upon conditions resulting from user interaction with fields. Go to [Rules](/docs/platform/rules/) to learn about the different categories of rules that can be applied.
+You can apply a **rule** - to a field, form or button - so that the pop-up Dialog displays to the user when you want it to, for example, when the user clicks a certain button. Rules allow actions based upon conditions resulting from user interaction with fields. Go to [Rules](/docs/platform/rules/) to learn about the different categories of rules that can be applied. One such rule that can be used in conjunction with the **Dialog field** is the **Show, hide or disable** rule - to learn more, see [Show, hide or disable](/docs/platform/rules/workflow/hide-or-disable/).
 
-The **Show, hide or disable** rule is often used in conjunction with the **Dialog field** so that the pop-up Dialog appears if a user interacts with a field, button or form in a certain way. To learn more, go to [Show, hide or disable](/docs/platform/rules/workflow/hide-or-disable/) or to see a step-by-step example of adding a Show, hide or disable rule, see [Adding a Workflow rule called Hide and Disable](/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules#adding-a-second-workflow-rule-called-hide-and-disable).
+For example, in a simple Training Request form that employees can complete if they want to request training, it could be useful to insert a Dialog field so that a reminder message pops up when the employee clicks on the Save or Submit buttons, to remind them to check that they have completed all fields before they submit their form. We will keep this example in mind as we learn more about Dialog fields.
 
-For example, in a simple Training Request form that employees can complete if they want to request training, it could be useful to insert a Dialog field so that a reminder message pops up when the form user clicks on the Save or Submit buttons, to remind them to check that they have completed all fields before they submit their form. We will keep this example in mind as we learn more about Dialog fields.
-
-To view a **video** example of how to create a Modal dialog field, go to [**How to create a modal dialog**](/docs/how-to/create-a-modal-dialog/).
+To view a **video** example of how to create a Modal dialog field, see [**How to create a modal dialog**](/docs/how-to/create-a-modal-dialog/).
 
  
 
@@ -19,13 +17,13 @@ To view a **video** example of how to create a Modal dialog field, go to [**How 
 
 1. To add a **Modal dialog field** to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). Go to [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
 
-2. Insert the **Modal dialog field** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Layout** to view the range of Layout controls and click on **Dialog**. A pop-up message will appear saying '**Field added**' and a Dialog field will be added to the bottom of your form.
+2. Click on **Controls** in the left-hand pane to expand the Controls menu, then select **Layout** to view the range of Layout controls and click on **Dialog**. A pop-up message will appear saying '**Field added**' and a Dialog field will be added to the bottom of your form.
 
    ![Insert Dialog field](/images/dialog-insert.jpg)
 
    
 
-   By default, the Dialog field will *not* be displayed in the form to users. This is denoted by the eye symbol with the line through it ![Eye symbol with line through it](/images/eye-symbol.jpg). This is because, as already mentioned, the most common way to use Dialog fields is to apply a **rule** to a field or button - such as the **Submit** or **Save** buttons - so that the pop-up Dialog message is only shown to users in *certain circumstances*, rather than it being shown all the time.
+   By default, the Dialog field will *not* be displayed in the form to users (as denoted by the eye symbol with the line through it ![Eye symbol with line through it](/images/eye-symbol.jpg)). This is because, as already mentioned, Dialog fields are typically used in conjunction with a **rule** being applied to a field or button - such as the **Submit** or **Save** buttons - so that the pop-up message is only shown to users in *certain circumstances*, rather than being displayed in the form all the time.
 
    In our example of the Training Request form, we may only want the Dialog to display when the user clicks on either **Submit** or **Save**, to remind them to check that they have completed all fields. 
 
@@ -33,7 +31,10 @@ To view a **video** example of how to create a Modal dialog field, go to [**How 
 
 The title of the **Dialog field** will display as the heading at the top of the pop-up Dialog message.
 
-By default, the title of the new Dialog field is '**Dialog 1**'. To change this to the heading you want, select the new Dialog field (by either clicking on the drag handle ![Drag handle button](/images/draghandlewhite-frame.png) or clicking in the area of the Dialog field) so that the **Edit field** button ![Edit form button](/images/penicon.png) is visible - you can then view and edit the **Title** in the **Field properties** panel to the right. 
+By default, the title of the new Dialog field is '**Dialog 1**'. To change this to the heading you want:
+
+1. Select the new Dialog field (by either clicking on the drag handle ![Drag handle button](/images/draghandlewhite-frame.png) or clicking in the area of the Dialog field) so that the **Edit field** button ![Edit form button](/images/penicon.png) is visible.
+2. You can then view and edit the **Title** in the **Field properties** panel to the right. 
 
 For example, we could decide to give our pop-up Dialog message a heading of  'Reminder'. To learn more about editing the Field properties associated with Modal dialog fields, go to [How to edit Modal dialog field properties](/docs/platform/controls/layout/dialog#how-to-edit-modal-dialog-field-properties).
 
@@ -43,19 +44,23 @@ For example, we could decide to give our pop-up Dialog message a heading of  'Re
 
 #### How to insert body text for the Dialog
 
-To insert the text you want to display in the body of the pop-up Dialog, select the Dialog field and then insert a **Richtext field** into it by clicking **Controls** >**Layout** >**Richtext** in the right-hand pane. To learn more about Richtext fields, go to [Richtext control](/docs/platform/controls/layout/richtext/).
+To create the body of the pop-up Dialog, you can insert any of the field types from the **Controls** menu, such as a [text box](/docs/platform/controls/input/textbox/), [list](/docs/platform/controls/input/list/), [table](/docs/platform/controls/input/table/) or [richtext](/docs/platform/controls/layout/richtext/). First, select the **Dialog field** (so that the **Edit field** button ![Edit form button](/images/penicon.png) is visible) and then go to the Controls menu and click on the field type you want to insert.
+
+The **Richtext field** is a very flexible option to use for the body of the pop-up message as it gives you the most options - such as formatting and styling the text or inserting images or links. We will use a **Richtext field** to step through how to add text to the body of the Dialog field for our Training Request form.
+
+1. Select the **Dialog field** and then insert a **Richtext field** into it by clicking **Controls** >**Layout** >**Richtext** in the right-hand pane. To learn more about Richtext fields, go to [Richtext control](/docs/platform/controls/layout/richtext/).
 
    ![Insert richtext into Dialog field](/images/dialog-insert-richtext.jpg)
 
-   A  **New field - Richtext** dialog box will open:
+2. A  **New field - Richtext** dialog box will open:
 
    ![Richtext dialog box](/images/richtext-dialog.jpg)
 
 ​		The options within the **New field - Richtext** dialog box include:
 
-- **Title** - You can change the title of the Richtext field from the default '**Richtext 1**'
+- **Title** - You can change the title of the Richtext field from the default '**Richtext 1**'. **Note**: It is the **Dialog field** title that will show as the heading of the pop-up Dialog, not the Richtext title.
 
-- **Name** - This is a unique name for the field
+- **Name** - This is a unique name for the field.
 
 - **Helptext** - You can insert text to help the form user to complete the field - if you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted. This option is not as relevant to the Dialog field as it is to other fields, as the Dialog field is not a field the user needs to complete.
 
@@ -67,35 +72,35 @@ To insert the text you want to display in the body of the pop-up Dialog, select 
 
   ![Example richtext for Dialog field](/images/dialog-richtext-example.jpg)
 
-  Once you have completed the **New field - Richtext** dialog box, click **OK**. 
+3. Once you have completed the **New field - Richtext** dialog box, click **OK**. You will now see the body text of your Dialog field in the Richtext field you added to it:
 
-  You will now see the body text of your Dialog field in the Richtext field you added to it:
+	![Dialog example](/images/dialog-example.jpg)
 
-  ![Dialog example](/images/dialog-example.jpg)
-  
-  To preview how the pop-up Dialog will look for users, either click on the Dialog **Preview** button ![Dialog field preview button](/images/dialog-preview-button.jpg) or click on the eye symbol ![Eye symbol](/images/eye-symbol.jpg):
-  
-  ![Preview example of Dialog](/images/dialog-example-preview.jpg)
+4. To preview how the pop-up Dialog will look tp users, either click on the Dialog **Preview** button ![Dialog field preview button](/images/dialog-preview-button.jpg) or click on the eye symbol ![Eye symbol](/images/eye-symbol.jpg):
 
-​		Click on **Close** or **OK** to close the preview.
+	![Preview example of Dialog](/images/dialog-example-preview.jpg)
+
+5. Click on **Close** or **OK** to close the preview.
 
 ### How to edit, move and delete Modal dialog fields
 
-As we go through the options available for editing a Modal dialog field in a form, we will keep in mind our example of the 'Reminder' pop-up Dialog message in the Training Request form.
+As we go through the options available for editing, moving or deleting a Modal dialog field in a form, we will keep in mind our example of the 'Reminder' pop-up Dialog in the Training Request form.
 
 
 
 #### How to edit a Modal dialog field
 
-To edit a **Modal dialog field**, select the field (by either clicking on the drag handle ![Drag handle button](/images/draghandlewhite-frame.png) or clicking in the area of the Dialog field) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
+To edit a **Modal dialog field**:
 
-![Select Dialog to edit](/images/dialog-select-to-edit.jpg)
+1. Select the Dialog field (by either clicking on the drag handle ![Drag handle button](/images/draghandlewhite-frame.png) or clicking in the area of the Dialog field) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
 
-The **Edit field - Dialog** dialog box will open, enabling you to choose from a range of options (we already changed the Dialog field title to 'Reminder' so this name will be shown in the dialog box name):
+	![Select Dialog to edit](/images/dialog-select-to-edit.jpg)
 
-![Edit Modal Dialog field dialog box](/images/dialog-dialog-box.jpg)
+2. The **Edit field - Dialog** dialog box will open, enabling you to choose from a range of options (we already changed the Dialog field title to 'Reminder' so this name will be shown in the dialog box name):
 
-​		The options within the **Edit field - Dialog** dialog box include:
+	![Edit Modal Dialog field dialog box](/images/dialog-dialog-box.jpg)
+
+	The options within the **Edit field - Dialog** dialog box include:
 
 - **Title** - You can change the title of the Modal Dialog field here. We already changed it to 'Reminder' from the default **Dialog 1** in the 'Title' field in the **Field properties** pane.  
 
@@ -111,9 +116,9 @@ The **Edit field - Dialog** dialog box will open, enabling you to choose from a 
 
 - **Dialog size** - You can choose from the **Default** size or **Large** size for your Dialog message.
 
-Once you have finished editing the **Dialog field** in the **Edit field - Dialog** dialog box, click on the **OK** button ![OK button](/images/ok.png) to save your changes or click on **Close** to exit the dialog box without saving.
+3. Once you have finished editing the **Dialog field** in the **Edit field - Dialog** dialog box, click on the **OK** button ![OK button](/images/ok.png) to save your changes or click on **Close** to exit the dialog box without saving.
 
-To see how your form or Dialog field will look on a mobile, view it in **Mobile preview** by using the **Preview** option which can be opened by clicking the play button icon ![Preview](/images/preview.png). You also have the options to see how it will look on a PC or tablet.
+4. To see how your form or Dialog field will look on a mobile, view it in **Mobile preview** by using the **Preview** option which can be opened by clicking the play button icon ![Preview](/images/preview.png). You also have the options to see how it will look on a PC or tablet.
 
 
 
