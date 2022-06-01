@@ -22,6 +22,7 @@ To view use the Support function:
    
 #### Support tickets
 Existing support tickets appear within this section, showing the **title** of the ticket, **date** it was issued and **status**. 
+
 ##### For existing tickets:
 
 1. Click on the **name** of a ticket to view ticket details, such as who raised the ticket and a description of the title.
