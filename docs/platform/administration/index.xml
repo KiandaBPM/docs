@@ -274,4 +274,79 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about other ways to get help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/help">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Users &amp; Groups</title><link>https://docs.kianda.com/docs/platform/administration/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/users/</guid><description>
-&lt;p>The &lt;strong>Users&lt;/strong> function is used to manage users and groups in Kianda.&lt;/p></description></item></channel></rss>
+&lt;p>The &lt;strong>Users&lt;/strong> function is available to users with the &lt;strong>Administrator&lt;/strong> role and is found in the left-hand side pane under &lt;strong>Administration&lt;/strong>. This function allows you to manage users and groups in your Kianda workspace.&lt;/p>
+&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
+&lt;p>To access the &lt;strong>Users&lt;/strong> function:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Users&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can view any existing users and groups in the main view pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-main-view.jpg" alt="Users main view">&lt;/p>
+&lt;p>These are two main areas: &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong> these are explained in more detail below.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="users">Users&lt;/h4>
+&lt;p>Existing support tickets appear within this section, showing the &lt;strong>name&lt;/strong> of the user, &lt;strong>email&lt;/strong>, &lt;strong>role&lt;/strong> and whether they are &lt;strong>active&lt;/strong> or not in the system.&lt;/p>
+&lt;h5 id="to-view-existing-user-details">To view existing user details:&lt;/h5>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>name&lt;/strong> of a user and the user details appear.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-profile.jpg" alt="User details view">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the details box you can edit a user&amp;rsquo;s:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>First name&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Last name&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Display name&lt;/strong> - how their name will display in the system&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Primary role&lt;/strong> - click on &lt;strong>More roles&lt;/strong> to see additional roles and choose from six system defined roles,&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Phone number&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Profile picture URL&lt;/strong> - browse on a laptop or network to add a profile photo for the user&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Active&lt;/strong> checkbox - by default this checkbox is checked but you can uncheck it to disable a user&amp;rsquo;s account&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Profile properties&lt;/strong> - click on this option to see additional properties that you can define, see ************&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Group membership&lt;/strong> - click on this option to see the groups that a user is added to. Click on the red x symbol &lt;img src="https://docs.kianda.com/images/redx.jpg" alt="Red x"> to remove a user from a group.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing a user&amp;rsquo;s details, click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h5 id="to-create-a-new-user">To create a new user:&lt;/h5>
+&lt;ol>
+&lt;li>Click on the &lt;strong>Create new user&lt;/strong> button.&lt;/li>
+&lt;li>Complete the fields as listed in step 2 in the &lt;a href="#to-view-existing-user-details">Existing users&lt;/a> above. If additional profile properties have been set for the workspace, add in details for those properties, see ************&lt;/li>
+&lt;li>Check the &lt;strong>Send welcome email&lt;/strong> check box if you wish to have a system generated email sent to the new user.&lt;/li>
+&lt;li>View Group membership.&lt;/li>
+&lt;li>When you are finished editing a user&amp;rsquo;s details, click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-new-user.jpg" alt="User profile properties and group membership">&lt;/p>
+&lt;h4 id="application-logs">Application logs&lt;/h4>
+&lt;p>System logs appear in this section when you click on &lt;strong>Load errors&lt;/strong>. Logs are listed by &lt;strong>date&lt;/strong>, &lt;strong>url/area&lt;/strong>, for example a User update, a system generated Message, User and &lt;strong>Browser&lt;/strong> involved in the log entry.&lt;/p>
+&lt;ol>
+&lt;li>Click in the &lt;strong>search box&lt;/strong> and enter text to search for logs based on key word entry.&lt;/li>
+&lt;li>If there are several pages of logs, click on the &lt;strong>page number&lt;/strong> to see entries for that page.&lt;/li>
+&lt;li>Click on &lt;strong>Clear errors&lt;/strong> to clear all existing logs from the system. Any changes after this time will be added to the logs again and visible to users.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconcontentdocsplatformadministrationusersassets18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/../content/docs/platform/administration/users.assets/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
+&lt;p>To find out about other ways to get help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/help">Help&lt;/a>.&lt;/p></description></item></channel></rss>
