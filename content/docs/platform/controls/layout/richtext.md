@@ -3,67 +3,143 @@ title: "Richtext control"
 typora-root-url: ..\..\..\..\..\static
 ---
 
-Using **Richtext**, it is easy to create rich text content that supports text formatting, such as bold and italics and 
+**Richtext fields** can be used to create custom rich text content in forms, such as an attractive banner. They provide optimum formatting options, such as bold and italics, or the option to insert images or links.
+
+For example, we may want to insert some colourful headings into a Training Approval form within an Education Request process (where employees can request training in a Training Request form and their manager then either approves or rejects this request in a Training Approval form).
 
  
 
 ## How to get started
 
-1. To use field group, click on **Controls** > **Layout** > **Richtext**.
+1. To add a **Richtext field** to a form, first open the relevant process - in our case, we will open the Education Request process. Go to [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
 
-2. Choose from the edit options:
+2. Then select the form within that process to which you want to add the **Richtext field** (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). We will select the 'Training Approval' form: 
 
-   - **Title** - of the field 
+   ![Select form to insert Richtext field](/images/richtext-example-select-form.jpg)
 
-   - **Name** - this is a unique name for the field
+   The Training Approval form contains two panels (as indicated above), neither of which currently has a heading. For the first panel, we will insert a Richtext heading titled 'Training Details' and, for the second panel, we will insert a Richtext heading titled 'Approval Decision'. 
 
-   - **Help text** - information to help the form user
+3. To insert a **Richtext field** into the first panel in the form:
 
-   - **Richtext** - choose from an array of styles and formats to create your text including **Style,** **Colour**, **Bold**, **Underline**, **Remove font style**, **Font size**,**Font family**, **Unordered list**, **Ordered list**, **Paragraph**, **Table**, **Link**, **Picture**, and **Code view**. For example if you click on **Code view** button ![Code view button](/images/code.png)you can copy HTML code directly into the text. Type in the text you want into the body of the Richtext box.
+   - Select that panel by clicking on the drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)
 
-     <img src="/images/richtexttext.png" alt="Richtext formats" style="zoom:67%;" />
+   - Then click on **Controls** in the left-hand pane to expand the Controls menu and select **Layout** to view the range of Layout controls
 
-     
+   - Click on **Richtext**
 
-     You can click on the **Help** button <img src="images/help.png" alt="Help" style="zoom:67%;" />to get a list of over 20 keyboard shortcuts that you can use to style your text.
+   ![Insert Richtext field](/images/richtext-insert.jpg)
 
-     If you want a useful way to personalise richtextemails click on the **Ellipsis** button ![Ellipsis button](images/ellipsis-16401854043731.png)to add an expression, see [Expression builder](#Expression builder) for more details. 
+4. A **New field - Richtext** dialog box will open with a range of options you can choose from for your new Richtext field:
 
-   - **Colour scheme** - choose from Navy, Green, Blue, Amber, Red or White Colours for your rich text background.
+  ![Richtext dialog box](/images/richtext-dialog.jpg)
 
-3. Click on the **OK** button ![OK button](/images/ok.png) when you are finished editing the field to save your changes or click on **Close** to exit the dialog box without saving.
+  The options available in the **New field - Richtext** dialog box include:
 
-   In the example below a richtext banner called Training Details is created which can be used as a heading on a form.
+  - **Title** - You can change the title of the Richtext field from the default title of '**Richtext 1**'.
 
-   <img src="/images/banner.png" alt="Richtext banner" style="zoom:67%;" />
+  - **Name** - This is a unique name for the field.
 
-4. To move the field, click on the **Drag handle**  ![Move button](images\move.png) and drag the text to where you want it to appear on the form.
+  - **Help text** - You can insert text to help the form user - if you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-5. To save your changes, click on the **Save** button ![Save button](/images/saveprocess.png).
+  - **Richtext** - Here you can insert the text you want to appear and can choose from an wide array of styles and formats, including **Style,** **Colour**, **Bold**, **Underline**, **Remove font style**, **Font size**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, and **Table**. You can also choose to insert a **Link** or **Picture** or to switch to **Code view**. For example, if you click on **Code view** button ![Code view button](/images/code.png)you can copy HTML code directly into the text. 
 
-6. To delete the field, click on the field itself and then click on the **Bin/Trash** button ![Bin or Trash icon](images\binicon.png) and then click on **Ok** after you have reviewed the field name and are sure this is what you want to delete. Click on **Cancel** if you wish to cancel the deletion.
+    Type in the text you want to use into the body of the Richtext box - in our example, we will insert the text 'Training Details' (the title we want to use for the first panel in our form), bold it, choose font size 14 and a blue colour scheme:
+
+    ![Example of Richtext body text](/images/richtext-example-body-text.jpg)
+
+    You can click on the **Help** button ![Help button](/images/help.png) to get a list of over 20 keyboard shortcuts that you can use to style your text.
+
+    ![Richtext help](/images/richtext-help-shortcuts.jpg)
+
+    Click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis-16401854043731.png) if you want to add an expression - see [Expression builder](/docs/platform/rules/general/expression-builder/) for more details.
+
+  - **Colour scheme** - You can choose from Navy, Green, Blue, Amber, Red or White Colours for your rich text background.
+
+5. Once you have completed the **New field - Richtext** dialog box, click **OK** ![OK button](/images/ok.png) and the new **Richtext field** will be added to your form.
+
+   In our example, it is inserted at the bottom of the panel we added it to. The same steps can be repeated in order to insert a Richtext heading in the second panel, titled 'Approval Decision'.
+
+   ![Richtext field inserted](/images/richtext-inserted.jpg)
+
+   By default, the Richtext **Title** will not be shown (unless you choose to display it, by selecting the **Show title** checkbox in the Field properties menu to the right).
 
    
 
+### How to edit, move and delete Richtext fields
+
+To edit a **Richtext field**, select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
+
+![Select Richtext field to edit](/images/richtext-select-to-edit.jpg)
+
+The **Edit field - Richtext** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - Richtext** dialog box (as already discussed in [How to get started](/docs/platform/controls/layout/richtext#how-to-get-started)).
+
+![Richtext field edit dialog box](/images/richtext-edit-dialog.jpg)
+
+
+
+To move a **Richtext field**, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to within your form. 
+
+In our example, we can move the new Richtext heading to the top of the first panel in the Training Approval form:
+
+![Move a Richtext field](/images/richtext-move.jpg)
+
+
+
+To delete a **Richtext field** from your form:
+
+1. Select the field (by clicking on the **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+
+3. Click on **OK** to confirm. Click on **Cancel** if you wish to cancel the deletion.
+
    
 
 
-## How to edit richtext properties
+### How to preview your Richtext field
 
-To change the field properties, click on the field itself and the properties pane appears on the right.
+To see how your Richtext field or fields will look to a user on a PC or mobile phone:
 
-<img src="/images/richtextproperties.png" alt="Richtext properties" style="zoom:67%;" />
+1. Save your changes.
+2. Click on the **Preview** button ![Preview](/images/preview.png).
+3. Click on **Desktop preview** button ![Desktop preview button](/images/desktop.png) to see how the form will look when viewed on a PC or click on the **Mobile preview** button ![Mobile preview button](/images/mobile.png) to see how it will look on a mobile phone.
 
-The **Field type**, Richtext, is shown along with the **Title** of the field, in the example above Banner 1.
+From our example, the new Richtext headings - 'Training Details' and 'Approval Decision' - could look like this when a user views the form on their mobile phone: 
 
-The options within properties are as follows, check the checkbox to implement:
+![Richtext previewed on a mobile phone](/images/richtext-preview-mobile.jpg)
 
-- **Show Title** - show the title of the field
-- **Required** - make this field mandatory for users to fill out
-- **Enabled** - the field is enabled for users to fill out
-- **Visible** - the field is visible to users
-- **Layout** - change the width of the field by clicking on the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on box to change the width of the panel for mobile use.
 
-![Changing text box width](/images/textboxsize.png)
 
-- **Rules** - rules for fields are covered in [Rules](../../rules/). 
+## How to edit Richtext field properties
+
+To view or edit the field properties associated with a **Richtext field**, select the field (by clicking on the title or drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - the **Field properties** menu will appear in the right-hand pane.
+
+![Richtext field properties](/images/richtext-field-properties.jpg)
+
+In the example shown here, the **Field properties** associated with the 'Training Details' Richtext field include:
+
+- **Field type** - Richtext
+- **Title** - the title of the Richtext field (default name '**Richtext 1**' unless you change this)
+- **Show title** - this is not selected, which means that the Richtext title will not be shown in the form
+- **Required** - this is not selected, so the Richtext field is not a mandatory field for the user to complete
+- **Enabled** - the field is enabled so the user can edit it (not relevant for a richtext heading which the user will not interact with)
+- **Visible** - this is selected, so the Richtext field will be visible to users
+- **Layout** - the width of the blue bar can be adjusted to change the width of the Richtext field on PC or mobile. To view the mobile width, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right of the Layout option.
+
+To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+
+
+
+### Saving changes and version history ###
+
+Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+Now that you've learned about the **Richtext control**, find out more about the other types of **Layout fields** you can add to a Kianda process:
+
+- [Field group control](/docs/platform/controls/layout/field-group/)
+- [Modal dialog control](/docs/platform/controls/layout/dialog/)
+- [Panel layout control](/docs/platform/controls/layout/panel/)
