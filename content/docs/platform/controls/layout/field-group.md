@@ -46,12 +46,11 @@ For example, in an Education Request Process - where employees can request train
    		
    		Note that selected fields grouped under the current field group are not copied only referenced.
 
+4. Once you have completed the **New field - Field group** dialog box, click **OK** and the new **Field group** will be added to your form. By default, the **Title** of the new Field group will not be shown (unless you choose to display it, by selecting the **Show title** checkbox in the Field properties menu to the right). 
 
-Once you have complete the **New field - Field group** dialog box, click **OK** and the new **Field group** will be added to your form. By default, the **Title** of the new Field group will not be shown (unless you choose to display it, by selecting the **Show title** checkbox in the Field properties menu to the right). 
+	In our example, our new Field group contains the three fields we chose:
 
-In our example, our new Field group contains the three fields we chose:
-
-![Move field group](/images/field-group-move.jpg)
+	![Move field group](/images/field-group-move.jpg)
 
 
 
