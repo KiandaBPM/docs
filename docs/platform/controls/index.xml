@@ -135,22 +135,106 @@
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced each of the four types of &lt;strong>Layout controls&lt;/strong>. Now let&amp;rsquo;s look at each of these types of Layout controls in more detail:&lt;/p></description></item><item><title>Docs: Actions</title><link>https://docs.kianda.com/docs/platform/controls/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/</guid><description>
-&lt;p>Action fields are one category of &lt;a href="fields/Readme.md">controls&lt;/a> and include the fields that allow user interface actions like buttons or links.&lt;/p>
-&lt;h2 id="getting-started-with-action-fields">Getting started with Action fields&lt;/h2>
-&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Controls&lt;/strong> the action fields are found in the left-hand pane when you click on &lt;strong>Action&lt;/strong>.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/actions.png" alt="Action fields" style="zoom:67%;" />
-&lt;p>There are 4 types of action fields as follows:&lt;/p>
+&lt;p>&lt;strong>Action fields&lt;/strong> are one category of &lt;a href="https://docs.kianda.com/docs/platform/controls/">controls&lt;/a> and include the fields that allow user interface actions like buttons or links.&lt;/p>
+&lt;h2 id="getting-started-with-action-controls">Getting started with Action controls&lt;/h2>
+&lt;p>There are four types of &lt;strong>Action fields&lt;/strong>:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Button&lt;/strong> - buttons can be applied to forms to allow user interaction, see &lt;a href="button.md">Button&lt;/a> for more information.&lt;/p>
+&lt;p>&lt;strong>Button&lt;/strong> - Buttons can be used to allow user interaction and to enable rules to be applied to actions taken by users. Applying rules to buttons can help to create smart, dynamic forms that follow business logic, without the need for coding. See &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button/">Button control&lt;/a> to learn more.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Link&lt;/strong> -&lt;/p>
+&lt;p>&lt;strong>Link&lt;/strong> - Link fields can be used to create custom links to forms. These can be external links. See &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link/">Link control&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Image&lt;/strong> - see &lt;a href="richtext.md">Richtext&lt;/a> for more information.&lt;/p>
+&lt;p>&lt;strong>Image&lt;/strong> - Image fields can be used to display images, either statically or from file fields. Go to &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image control&lt;/a> to find out more.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Signature&lt;/strong> - applying this field provides a very neat way to electronically sign-off on a form or process, see &lt;a href="signature.md">Signature&lt;/a> for more information.&lt;/p>
+&lt;p>&lt;strong>Signature&lt;/strong> - Signature fields provide a very neat way to electronically sign-off on a form or process. To learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature/">Signature control&lt;/a>.&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>Docs: Custom controls</title><link>https://docs.kianda.com/docs/platform/controls/custom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/custom/</guid><description/></item></channel></rss>
+&lt;/ul>
+&lt;p>To add an &lt;strong>Action field&lt;/strong> to a Kianda form:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/designer-open-process.jpg" alt="Open process in Designer">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once you have opened your process, select the form you want to work on (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> is shown).&lt;/p>
+&lt;p>In this example, a Training Request form has been selected:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/actions-select-form.jpg" alt="Select form">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane so the Controls menu expands to show the four categories of Controls (fields): Input, Layout, Actions and Custom.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Actions&lt;/strong> to see the four types of Action fields: Button, Link, Image and Signature.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/actions-menu.jpg" alt="Actions menu in the Controls panel">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Action field&lt;/strong> type you want to insert.&lt;/p>
+&lt;p>For example, to insert an &lt;strong>Image&lt;/strong> field:&lt;/p>
+&lt;ul>
+&lt;li>Click on &lt;strong>Image&lt;/strong>&lt;/li>
+&lt;li>A &lt;strong>New field - Image&lt;/strong> dialog box opens automatically, giving you a range of options for your new &lt;strong>Image field&lt;/strong>.&lt;/li>
+&lt;li>Once you complete this dialog box and click &lt;strong>OK&lt;/strong>, the new Image field is inserted into your form. To learn more about the Image field, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/image-dialog.jpg" alt="Image dialog box">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-edit-move-and-delete-action-fields">How to edit, move and delete Action fields&lt;/h3>
+&lt;p>To edit whatever type of &lt;strong>Action field&lt;/strong> you have added to your form:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the field (by either clicking on the field name or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Edit Field&lt;/strong> dialog box will open, giving you a different range of options to make changes to the Action field - such as changing the Title of the field - depending on the type of Action field you are working with.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>To move an &lt;strong>Action field&lt;/strong>, simply:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Drag and drop the Action field wherever you want to move it within your form.&lt;/p>
+&lt;p>For example, the &amp;lsquo;Training Documentation&amp;rsquo; &lt;strong>Link field&lt;/strong> shown here can be moved in the form by selecting the &lt;strong>drag handle&lt;/strong> button and dragging and dropping it wherever you want to put it:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/action-link-example-move.jpg" alt="Move link field example">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>To delete an &lt;strong>Action field&lt;/strong> field from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the Action field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-view-and-edit-action-control-field-properties">How to view and edit Action control Field Properties&lt;/h3>
+&lt;p>You can view and edit an Action control&amp;rsquo;s &lt;strong>Field properties&lt;/strong> by&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Selecting the Action field&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The Field Properties associated with the Action field will be displayed (and can be changed) in the &lt;strong>Field properties&lt;/strong> menu on the right-hand side.&lt;/p>
+&lt;p>For example, the &lt;strong>Field properties&lt;/strong> associated with a Link field titled &amp;lsquo;Training Documentation&amp;rsquo; are shown here:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/action-link-field-properties.jpg" alt="Field properties associated with a Link field">&lt;/p>
+&lt;p>The &lt;strong>Field Properties&lt;/strong> shown here include&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Link field&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Training Documentation&amp;rsquo;.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the field title will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the field will be mandatory for the form user to complete (and a red star will be shown next to the field title to denote this).&lt;/li>
+&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit the field.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the field will be visible in the form.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
+&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>We have briefly introduced each of the four types of &lt;strong>Action fields&lt;/strong>. Now let&amp;rsquo;s look at each of these Action fields in more detail:&lt;/p></description></item><item><title>Docs: Custom controls</title><link>https://docs.kianda.com/docs/platform/controls/custom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/custom/</guid><description/></item></channel></rss>
