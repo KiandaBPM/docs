@@ -23,11 +23,11 @@ To access the **Users** function:
 
    
 
-#### Users
+### Users
 
 Existing support tickets appear within this section, showing the **name** of the user, **email**, **role** and whether they are **active** or not in the system.  
 
-##### To view existing user details:
+#### To view existing user details:
 
 1. Click on the **name** of a user and the user details appear.
 
@@ -57,7 +57,7 @@ Existing support tickets appear within this section, showing the **name** of the
 
  
 
-##### To create a new user:
+#### To create a new user:
 
 1. Click on the **Create new user** button.
 2. Complete the fields as listed in step 2 in the [Existing users](#to-view-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties, see ************
@@ -68,11 +68,15 @@ Existing support tickets appear within this section, showing the **name** of the
 ![User profile properties and group membership](/images/create-new-user.jpg)
 
 
+### Groups
 
+You can group users into defined groups which can be used in various ways in the platform, for example to create a group of form owners, to allow group selection in a user picker field, and create a group of administrators for a process.
 
+#### To view existing group details:
 
+1. Click on the **group name** to see details for a group.
+2. The **Edit group 'Name'** dialog box appears. 
 
-#### Application logs
 
 System logs appear in this section when you click on **Load errors**. Logs are listed by **date**, **url/area**, for example a User update, a system generated Message, User and **Browser** involved in the log entry. 
 
