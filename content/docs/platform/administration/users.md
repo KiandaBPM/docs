@@ -68,21 +68,43 @@ Existing support tickets appear within this section, showing the **name** of the
 ![User profile properties and group membership](/images/create-new-user.jpg)
 
 
+
 ### Groups
 
 You can group users into defined groups which can be used in various ways in the platform, for example to create a group of form owners, to allow group selection in a user picker field, and create a group of administrators for a process.
 
-#### To view existing group details:
+#### Viewing and editing group members
+
+1. Click on the radio button beside the group name to see the group members. 
+
+![Group membership](/images/group-members.jpg)
+
+2. From this view you can **remove a user from the group** by checking the checkbox beside a user name and click on **Remove user(s) from group**. 
+
+3. You can also change **add users** from the current group **to another group** by clicking on the dropdown list of group names, choosing a group, checking the checkbox beside the user name and click on **Add user(s) to group**.
+
+   ![Add user to group](/images/add-user-to-group.jpg)
+
+   **Note**: You can only add users to groups, if you yourself are an administrator for the group, see next section.
+
+
+
+#### Viewing and editing group details
 
 1. Click on the **group name** to see details for a group.
 2. The **Edit group 'Name'** dialog box appears. 
 
+![Edit group dialog box](/images/edit-group.jpg)
 
-System logs appear in this section when you click on **Load errors**. Logs are listed by **date**, **url/area**, for example a User update, a system generated Message, User and **Browser** involved in the log entry. 
+3. In this dialog box you can edit:
 
-1. Click in the **search box** and enter text to search for logs based on key word entry. 
-2. If there are several pages of logs, click on the **page number** to see entries for that page. 
-3. Click on **Clear errors** to clear all existing logs from the system. Any changes after this time will be added to the logs again and  visible to users. 
+   - **Group name**
+
+   - **Primary role** - of the group
+   - **Group member sync** - options are **Yes** or **No**
+   - **Group administrators** - only users or groups listed here can manage the group; if you leave the field blank then Kianda administrators can manage the group.
+
+4. To delete a group, click on the **Bin/Trash** icon. 
 
 
 
@@ -91,4 +113,4 @@ System logs appear in this section when you click on **Load errors**. Logs are l
 
 To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
 
-To find out about other ways to get help and support, go to [Help](/docs/platform/administration/help).
+To find out about help and support, go to [Help](/docs/platform/administration/help).
