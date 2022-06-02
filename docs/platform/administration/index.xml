@@ -342,17 +342,49 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/create-new-user.jpg" alt="User profile properties and group membership">&lt;/p>
 &lt;h3 id="groups">Groups&lt;/h3>
 &lt;p>You can group users into defined groups which can be used in various ways in the platform, for example to create a group of form owners, to allow group selection in a user picker field, and create a group of administrators for a process.&lt;/p>
-&lt;h4 id="to-view-existing-group-details">To view existing group details:&lt;/h4>
+&lt;h4 id="viewing-and-editing-group-members">Viewing and editing group members&lt;/h4>
+&lt;ol>
+&lt;li>Click on the radio button beside the group name to see the group members.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/group-members.jpg" alt="Group membership">&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>From this view you can &lt;strong>remove a user from the group&lt;/strong> by checking the checkbox beside a user name and click on &lt;strong>Remove user(s) from group&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can also change &lt;strong>add users&lt;/strong> from the current group &lt;strong>to another group&lt;/strong> by clicking on the dropdown list of group names, choosing a group, checking the checkbox beside the user name and click on &lt;strong>Add user(s) to group&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-user-to-group.jpg" alt="Add user to group">&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: You can only add users to groups, if you yourself are an administrator for the group, see next section.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="viewing-and-editing-group-details">Viewing and editing group details&lt;/h4>
 &lt;ol>
 &lt;li>Click on the &lt;strong>group name&lt;/strong> to see details for a group.&lt;/li>
 &lt;li>The &lt;strong>Edit group &amp;lsquo;Name&amp;rsquo;&lt;/strong> dialog box appears.&lt;/li>
 &lt;/ol>
-&lt;p>System logs appear in this section when you click on &lt;strong>Load errors&lt;/strong>. Logs are listed by &lt;strong>date&lt;/strong>, &lt;strong>url/area&lt;/strong>, for example a User update, a system generated Message, User and &lt;strong>Browser&lt;/strong> involved in the log entry.&lt;/p>
-&lt;ol>
-&lt;li>Click in the &lt;strong>search box&lt;/strong> and enter text to search for logs based on key word entry.&lt;/li>
-&lt;li>If there are several pages of logs, click on the &lt;strong>page number&lt;/strong> to see entries for that page.&lt;/li>
-&lt;li>Click on &lt;strong>Clear errors&lt;/strong> to clear all existing logs from the system. Any changes after this time will be added to the logs again and visible to users.&lt;/li>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-group.jpg" alt="Edit group dialog box">&lt;/p>
+&lt;ol start="3">
+&lt;li>
+&lt;p>In this dialog box you can edit:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Group name&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Primary role&lt;/strong> - of the group&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Group member sync&lt;/strong> - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Group administrators&lt;/strong> - only users or groups listed here can manage the group; if you leave the field blank then Kianda administrators can manage the group.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>To delete a group, click on the &lt;strong>Bin/Trash&lt;/strong> icon.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconcontentdocsplatformadministrationusersassets18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/../content/docs/platform/administration/users.assets/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
-&lt;p>To find out about other ways to get help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/help">Help&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/help">Help&lt;/a>.&lt;/p></description></item></channel></rss>
