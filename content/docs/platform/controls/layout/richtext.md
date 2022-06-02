@@ -31,9 +31,9 @@ For example, we may want to insert some colourful headings into a Training Appro
 
 4. A **New field - Richtext** dialog box will open with a range of options you can choose from for your new Richtext field:
 
-  ![Richtext dialog box](/images/richtext-dialog.jpg)
+	![Richtext dialog box](/images/richtext-dialog.jpg)
 
-  The options available in the **New field - Richtext** dialog box include:
+	The options available in the **New field - Richtext** dialog box include:
 
   - **Title** - You can change the title of the Richtext field from the default title of '**Richtext 1**'.
 
