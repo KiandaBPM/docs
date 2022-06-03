@@ -34,6 +34,22 @@
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced each of the nine functions within &lt;strong>Administration&lt;/strong>. Now let&amp;rsquo;s look at each of these functions in more detail:&lt;/p></description></item><item><title>Docs: Application designer</title><link>https://docs.kianda.com/docs/platform/application-designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/</guid><description>
+&lt;p>Creating your first &lt;strong>process&lt;/strong> or application in Kianda starts with designing your first &lt;strong>form&lt;/strong>. Forms can connect to any number of &lt;strong>data sources&lt;/strong> or connectors at the same time. The form might be a simple contact form or something else more complex, and you can add more forms like &amp;ldquo;Follow-up form&amp;rdquo; or even a &amp;ldquo;Closure form&amp;rdquo;.&lt;/p>
+&lt;p>Although Kianda aims to be intuitive and easy to get started, it is never difficult to over-engineer. So at Kianda we always recommend doing some simple planning before you design your first form.&lt;/p>
+&lt;p>It could be something as simple as a quick flow chart or as we use a spreadsheet where you quickly log the key components, fields or rules that should be needed in the process.&lt;/p>
+&lt;p>In general, we normally include the following key steps to build a process in an agile manner:&lt;/p>
+&lt;ol>
+&lt;li>Plan process design, forms, fields, rules, log into design spreadsheet.&lt;/li>
+&lt;li>Build forms and fields connecting to data where applicable.&lt;/li>
+&lt;li>Publish to dashboards, anonymous forms or SharePoint for end-user distribution.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;em>&lt;strong>Platform getting started video&lt;/strong>&lt;/em>&lt;/p>
+&lt;video width="100%" style="width:100%" controls>
+&lt;source src="https://docs.kianda.com/videos/Kianda-get-started.mp4">
+Your browser does not support the video tag.
+&lt;/source>
+&lt;/video>
+&lt;h3 id="kianda-designer">Kianda Designer&lt;/h3>
 &lt;p>Kianda process designer provides an intuitive interface where you can quickly start building forms for any use case.&lt;/p>
 &lt;p>The key components of the form designer are:&lt;/p>
 &lt;ol>
