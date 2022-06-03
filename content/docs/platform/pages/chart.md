@@ -62,7 +62,7 @@ With the chart widget, you can create pie, bar or line charts. These charts can 
 
 3. The first option on the left is to choose is where the data should originate from using the **Data from** radio buttons. Choose from a) Process b) Partner process c) Data source. Depending on which option you choose go to the relevant area to read more on [Choosing data from a Process](#choosing-data-from-a-process), [Choosing data from a Partner process](#choosing-data-from-a-partner-process) and [Choosing data from a Data source](#choosing-data-from-a-data-source).
 
-3. The second option **Show processes** has 3 radio buttons associated with it a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user. TO COME BACK TO.
+3. The second option **Show processes** has 3 radio buttons associated with it a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user. 
 
 4. The third option **Connect to List Widget** allows you to choose if this widget should connect to List widgets you have created for this dashboard page. Choose from a) Yes or b) No if you want to connect the widgets. If you click on **Yes** then click into the List Widget field and choose from previously created list widgets.
 
@@ -83,7 +83,7 @@ If you choose data from a Process, then the options below become available.
 Choose from the following options:
 
 - **Business process** - click into the field to choose a process which will be the input for the dashboard.
-- **Show processes** - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user - TO COME BACK TO
+- **Show processes** - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user.
 
 
 
@@ -97,7 +97,7 @@ Choose from the following options:
 
 - **Partner** - click into the field to choose from a pre-configured Partner who has created the process you are interested in.
 - **Business process** - click into the field to choose a process which will be the input for the dashboard.
-- **Show processes** - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user - TO COME BACK TO
+- **Show processes** - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user.
 
 
 

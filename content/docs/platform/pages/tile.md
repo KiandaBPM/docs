@@ -62,7 +62,7 @@ The tile widget allows you to display a count of instances. This is a really use
 
 3. The first option on the left is to choose is where the data should originate from using the **Data from** radio buttons. Choose from a) Process b) Partner process c) Data source. Depending on which option you choose go to the relevant area to read more on [Choosing data from a Process](#choosing-data-from-a-process), [Choosing data from a Partner process](#choosing-data-from-a-partner-process) and [Choosing data from a Data source](#choosing-data-from-a-data-source).
 
-4. The second option **Show processes** has 3 radio buttons associated with it a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user. TO COME BACK TO.
+4. The second option **Show processes** has 3 radio buttons associated with it a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user.
 
 5. The third option **Show decimals** allows you to choose if a decimal point is used in the number displayed. Choose from a) Yes or b) No if you want to only show a whole number.
 
@@ -85,7 +85,7 @@ If you choose data from a Process, then the options below become available.
 Choose from the following options:
 
 - **Business process** - click into the field to choose a process which will be the input for the dashboard.
-- **Show processes** - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user - TO COME BACK TO
+- **Show processes** - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user.
 
 
 

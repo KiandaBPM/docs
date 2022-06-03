@@ -7,6 +7,14 @@ toc_hide: true
 hide_summary: true
 ---
 
+The Kianda platform is a modern low-code and no-code development platform. It enables developers and non-developers (citizen developers) to build ambitious web based business applications of any kind.
+
+In this documentation you will find the information that will let you build beautiful mobile-ready web applications or simple forms that orchestrate into a functional digital business process using the Kianda low-code and no-code approach.
+
+In summary the Kianda platform provides an ideal interface for rapid prototyping and delivering outcomes quickly. Kianda **Designer** is the main interface for designing processes. Designer components are explained below.
+
+### How to get started with Kianda Designer
+
 The key components of the form designer are:
 
 1. Left panel
