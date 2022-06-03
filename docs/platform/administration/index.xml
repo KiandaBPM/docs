@@ -136,16 +136,71 @@
 &lt;p>If you have an &lt;strong>Administrator&lt;/strong> role you will see five buttons, other roles will see three buttons listed below:&lt;/p>
 &lt;p>The buttons include:&lt;/p>
 &lt;ul>
-&lt;li>Create new page&lt;/li>
-&lt;li>[Online session refresh](#Online session refresh) &lt;img src="https://docs.kianda.com/images/refresh.png" alt="Refresh button">&lt;/li>
-&lt;li>[User notifications](#User notifications) &lt;img src="C:%5CKianda%5Cdocs-dev%5Cplatform%5Cquickaction.assets%5Cnotifications.png" alt="Notifications button">&lt;/li>
-&lt;li>[User profile](#User profile) &lt;img src="C:%5CKianda%5Cdocs-dev%5Cplatform%5Cquickaction.assets%5Cuserprofile.png" alt="User profile">&lt;/li>
+&lt;li>&lt;a href="#create-a-new-page">Create a new page&lt;/a> &lt;img src="https://docs.kianda.com/images/new-page-button.jpg" alt="Create new page button">- &lt;strong>Administrators&lt;/strong> can use this function to create a &lt;strong>new dashboard page&lt;/strong>.&lt;/li>
+&lt;li>&lt;a href="#edit-current-page">Edit current page&lt;/a> &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit current page button"> - &lt;strong>Administrators&lt;/strong> can use this function to edit a dashboard &lt;strong>page&lt;/strong>.&lt;/li>
+&lt;li>[Online session refresh](#Online session refresh) &lt;img src="https://docs.kianda.com/images/refresh.png" alt="Refresh button"> - &lt;strong>All users&lt;/strong> can use this function to &lt;strong>refresh a session&lt;/strong> to allow offline use.&lt;/li>
+&lt;li>[User notifications](#User notifications) &lt;img src="https://docs.kianda.com/images/notifications.png" alt="Notifications button"> - provides notifications to &lt;strong>all users&lt;/strong> such as being assigned forms to edit or reassign.&lt;/li>
+&lt;li>[User profile](#User profile) &lt;img src="https://docs.kianda.com/images/userprofile.png" alt="User profile">- allows &lt;strong>all users&lt;/strong> to change profile details, such as working offline or changing password.&lt;/li>
 &lt;/ul>
 &lt;p>Click on each link above to find out more about each button.&lt;/p>
-&lt;h2 id="online-session-refresh">Online session refresh&lt;/h2>
-&lt;h2 id="user-notifications">User notifications&lt;/h2>
+&lt;h3 id="create-a-new-page">Create a new page&lt;/h3>
+&lt;p>Administrators can create a new dashboard page that connects to a chosen process. Users can view this dashboard to monitor how processes are performing and gain business insights to improve the business.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Create new page&lt;/strong> &lt;img src="https://docs.kianda.com/images/new-page-button.jpg" alt="Create new page button"> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Create dashboard page&lt;/strong> dialog box opens.
+&lt;img src="https://docs.kianda.com/images/new-dashboard-page.jpg" alt="Create dashboard page">&lt;/p>
+&lt;p>In this dialog box fill out the following fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> - give the dashboard a title.&lt;/li>
+&lt;li>&lt;strong>Name&lt;/strong> - this field is autofilled from the title field and creates a unique ID for the dashboard page.&lt;/li>
+&lt;li>&lt;strong>Visible to&lt;/strong> - choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> of users who will see this dashboard.&lt;/li>
+&lt;li>&lt;strong>Icon&lt;/strong> - choose from hundreds of icons to represent your dashboard in the left-hand pane&lt;/li>
+&lt;li>&lt;strong>Sort order&lt;/strong> - enter a numeric value to set the order of display in a dashboard group, for example a dashboard called &lt;strong>Induction&lt;/strong> has a sort order value of &amp;lsquo;1&amp;rsquo;, while a dashboard called &lt;strong>Annual leave&lt;/strong> has a value of &amp;lsquo;2&amp;rsquo;. The dashboards will display in chronological order according to the values associated with them.&lt;/li>
+&lt;li>&lt;strong>Group&lt;/strong> - choose an existing group or create a new group to add the dashboard to. As soon as two dashboard pages are added to a group, then the group will appear in the left-hand pane, for example see &lt;strong>HR dashboards group&lt;/strong> below with 2 dashboards: &lt;strong>Induction&lt;/strong> and &lt;strong>Annual leave&lt;/strong>.
+&lt;img src="https://docs.kianda.com/images/dashboard-group.jpg" alt="Dashboard group">&lt;/li>
+&lt;li>&lt;strong>Enable favourites&lt;/strong> - allows you to set this dashboard as a &amp;lsquo;favourite&amp;rsquo;. If you check the checkbox then users will see a &lt;strong>Add to favourites&lt;/strong> button in the &lt;strong>Quick actions menu&lt;/strong>, allowing them to add this dashboard to a &amp;lsquo;favourites&amp;rsquo; catalog.&lt;/li>
+&lt;li>&lt;img src="https://docs.kianda.com/images/favourite-dashboard.jpg" alt="Favourite dashboard">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>To find out more about dashboards go to the &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> section of the documentation.&lt;/p>
+&lt;h3 id="edit-current-page">Edit current page&lt;/h3>
+&lt;p>Administrators can edit an existing dashboard page by clicking on the dashboards button when on a selected page.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>As an administrator, click on a dashboard page of choice displayed in the left-hand pane.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit current page button"> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/editing-page.jpg" alt="Editing page">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You are then in &lt;strong>Edit mode&lt;/strong> for the page. Here you can add new &lt;strong>dashboard widgets&lt;/strong>, edit &lt;strong>Settings&lt;/strong>, or &lt;strong>Delete&lt;/strong> the dashboard page. To read more about Edit mode go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="online-session-refresh">Online session refresh&lt;/h3>
+&lt;p>You can use Kianda offline and view dashboards even without internet access. To synchronise dashboards, with system data:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;img src="https://docs.kianda.com/images/refresh.png" alt="Online session refresh button"> to synchronise data.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>Synchronising&lt;/strong> message appears, followed by a &lt;strong>Ready for offline use&lt;/strong> notification.
+&lt;img src="https://docs.kianda.com/images/synchronising-offline.jpg" alt="Synchronising message">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>At this point you can view dashboards even without internet access.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-notifications">User notifications&lt;/h3>
 &lt;p>This icon alerts you when actions happen associated with processes, for example a form is completed by a user. You will receive a configured message indicating in this case, what form has been completed and by whom.&lt;/p>
-&lt;h2 id="user-profile">User profile&lt;/h2>
+&lt;h3 id="user-profile">User profile&lt;/h3>
 &lt;p>The information found under User profile includes your name, email, role for example Administrator and options to update your information.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/../content/docs/platform/administration/quickaction.assets/myaccount.png" alt="My account information">&lt;/p>
 &lt;p>To update your information, you can:&lt;/p>
