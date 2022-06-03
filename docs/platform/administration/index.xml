@@ -110,7 +110,74 @@
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about Developer and how to use the interface to low-code development.&lt;/p></description></item><item><title>Docs: Recycle bin</title><link>https://docs.kianda.com/docs/platform/administration/recyclebin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/recyclebin/</guid><description>
+&lt;p>To read more about Developer and how to use the interface to low-code development.&lt;/p></description></item><item><title>Docs: Help</title><link>https://docs.kianda.com/docs/platform/administration/help/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/help/</guid><description>
+&lt;p>The &lt;strong>Help&lt;/strong> function is available to users with a designated role, for example, &lt;strong>Manage partners&lt;/strong>, &lt;strong>Designer&lt;/strong> or &lt;strong>Administrator&lt;/strong> and is found in the left-hand side pane, under &lt;strong>More&lt;/strong>. Help contains a list of Frequently Asked Questions (FAQs) designed to help you when you are using the Kianda workspace. There are a couple of ways you can use the Help pages listed in the steps below.&lt;/p>
+&lt;h2 id="getting-started-with-help">Getting started with Help&lt;/h2>
+&lt;ol>
+&lt;li>Click on any topic and you will find a set of instructions to help you and a short video that shows you what to do.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/help3.png" alt="Help FAQs">&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>Click on &lt;strong>Select a topic&lt;/strong> and filter from a selection of topics: Rules, User, Designer, Data Sources, Security, Dashboard, General and Configuration&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/helptopics.png" alt="Help topics">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Create a further filter by typing your keywords in the &lt;strong>Filter help&lt;/strong> box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>At any time you can play the Getting started video by clicking on the &lt;strong>Get Started&lt;/strong> button &lt;img src="https://docs.kianda.com/images/getstarted.png" alt="Get started video"> in the top right-hand corner.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Quick action menu</title><link>https://docs.kianda.com/docs/platform/administration/quickaction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/quickaction/</guid><description>
+&lt;p>The &lt;strong>Quick action menu&lt;/strong> contains all the shortcuts that you need to manage your pages efficiently. The menu is found in the top right-hand corner of your Kianda workspace.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/quick-action-menu.jpg" alt="Quick action menu">&lt;/p>
+&lt;p>If you have an &lt;strong>Administrator&lt;/strong> role you will see five buttons, other roles will see three buttons listed below:&lt;/p>
+&lt;p>The buttons include:&lt;/p>
+&lt;ul>
+&lt;li>Create new page&lt;/li>
+&lt;li>[Online session refresh](#Online session refresh) &lt;img src="https://docs.kianda.com/images/refresh.png" alt="Refresh button">&lt;/li>
+&lt;li>[User notifications](#User notifications) &lt;img src="C:%5CKianda%5Cdocs-dev%5Cplatform%5Cquickaction.assets%5Cnotifications.png" alt="Notifications button">&lt;/li>
+&lt;li>[User profile](#User profile) &lt;img src="C:%5CKianda%5Cdocs-dev%5Cplatform%5Cquickaction.assets%5Cuserprofile.png" alt="User profile">&lt;/li>
+&lt;/ul>
+&lt;p>Click on each link above to find out more about each button.&lt;/p>
+&lt;h2 id="online-session-refresh">Online session refresh&lt;/h2>
+&lt;h2 id="user-notifications">User notifications&lt;/h2>
+&lt;p>This icon alerts you when actions happen associated with processes, for example a form is completed by a user. You will receive a configured message indicating in this case, what form has been completed and by whom.&lt;/p>
+&lt;h2 id="user-profile">User profile&lt;/h2>
+&lt;p>The information found under User profile includes your name, email, role for example Administrator and options to update your information.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/platform/administration/quickaction.assets/myaccount.png" alt="My account information">&lt;/p>
+&lt;p>To update your information, you can:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Add your photo by clicking on the &lt;strong>Update profile picture&lt;/strong> button &lt;img src="https://docs.kianda.com/../content/docs/platform/administration/quickaction.assets/profilepic.png" alt="Update profile picture button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change your password by clicking on &lt;strong>Change Password&lt;/strong>. You need to type in your current password and then your new password twice and click on &lt;strong>Change Password&lt;/strong> or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/platform/administration/quickaction.assets/changepassword.png" alt="Change password">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Update your profile by clicking on &lt;strong>Update My Profile&lt;/strong>. Type in your &lt;strong>Job title,&lt;/strong> &lt;strong>Department&lt;/strong> and &lt;strong>Phone number&lt;/strong> and click on &lt;strong>Update Profile&lt;/strong> or click on **Close **to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Logout of Kianda by clicking on &lt;strong>Sign-Out&lt;/strong>. Then click on &lt;strong>Ok&lt;/strong> to confirm that you want to logout or click on **Cancel **to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Work offline by clicking moving the slider button across. When you do this you will get a message to say&lt;/p>
+&lt;p>Offline mode is enabled. TO COME BACK TO&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/platform/administration/quickaction.assets/workoffline.png" alt="Work offline">&lt;/p>
+&lt;p>If you move the slider back then Offline mode is disabled.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>View the system version of Kianda, for example System version 2.11.3&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Collapse account information by clicking on the &lt;strong>User profile&lt;/strong> button &lt;img src="C:%5CKianda%5Cdocs-dev%5Cplatform%5Cquickaction.assets%5Cuserprofile.png" alt="User profile"> again.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Recycle bin</title><link>https://docs.kianda.com/docs/platform/administration/recyclebin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/recyclebin/</guid><description>
 &lt;p>The &lt;strong>Recycle bin&lt;/strong> function is available to administrators and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The recycle bin holds deleted process instances, dashboard pages and process designs. Deleted items are held for 30 days and are permanently deleted after this time.&lt;/p>
 &lt;h3 id="how-to-get-started">How to get started&lt;/h3>
 &lt;p>To view items in the Recycle bin:&lt;/p>
