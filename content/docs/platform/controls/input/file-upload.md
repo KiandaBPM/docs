@@ -10,7 +10,7 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 
 ## How to get started
 
-1. To add a **File upload field** to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). 
+1. To add a **File upload field** to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible).
 
 2. Insert the **File upload field** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Input** to view the range of Input controls and click on **File**. A **New field - File** dialog box will open with a range of options you can choose from for your new File upload field.
 
@@ -80,21 +80,31 @@ In the example of our Inspection Form, the new File upload field (titled **Uploa
 
 ### How to edit, move and delete File upload fields
 
-To edit a **File upload field**, select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
+To edit a **File upload field**:
+
+1. Select the File upload field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
 
 ![Select file upload field to edit](/images/file-upload-edit-field.jpg)
 
-The **Edit field - File** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - File** dialog box (as already discussed in [How to get started](/docs/platform/controls/input/file-upload#how-to-get-started)).
+3. The **Edit field - File** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - File** dialog box (as already discussed in [How to get started](/docs/platform/controls/input/file-upload#how-to-get-started)).
 
 ![Edit date field dialog box](/images/file-upload-edit-field-dialog.jpg)
 
 You can make any changes you wish in this dialog box and then click **OK** to confirm. 
 
-To move a **File upload field**, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to within your form.
+To move a **File upload field**, simply:
+
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
+2. Drag and drop the field wherever you want to move it to within your form.
 
 ![Date field drag handle](/images/upload-file-draghandle.jpg)
 
-To delete a **File upload field** from your form, simply select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)), click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm.
+To delete a **File upload field** from your form:
+
+1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+3. Click on **OK** to confirm
 
 ### How to edit File upload field properties ###
 To view or edit the field properties associated with a **File upload field**, select the field (by clicking on the field title or field drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - the **Field properties** menu will appear in the right-hand pane.
