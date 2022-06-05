@@ -153,14 +153,29 @@
 &lt;p>In the example of our Inspection Form, the new File upload field (titled &lt;strong>Upload photos&lt;/strong>) added to the form could look like this when a user views it on a mobile phone (to see how your form or field will look on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by using the &lt;strong>Preview&lt;/strong> option which can be opened by clicking the play button icon &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-example-mobile.jpg" alt="File upload example mobile phone">&lt;/p>
 &lt;h3 id="how-to-edit-move-and-delete-file-upload-fields">How to edit, move and delete File upload fields&lt;/h3>
-&lt;p>To edit a &lt;strong>File upload field&lt;/strong>, select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>To edit a &lt;strong>File upload field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select the File upload field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-edit-field.jpg" alt="Select file upload field to edit">&lt;/p>
-&lt;p>The &lt;strong>Edit field - File&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - File&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;ol start="3">
+&lt;li>The &lt;strong>Edit field - File&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - File&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload#how-to-get-started">How to get started&lt;/a>).&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-edit-field-dialog.jpg" alt="Edit date field dialog box">&lt;/p>
 &lt;p>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
-&lt;p>To move a &lt;strong>File upload field&lt;/strong>, simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to within your form.&lt;/p>
+&lt;p>To move a &lt;strong>File upload field&lt;/strong>, simply:&lt;/p>
+&lt;ol>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Drag and drop the field wherever you want to move it to within your form.&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/upload-file-draghandle.jpg" alt="Date field drag handle">&lt;/p>
-&lt;p>To delete a &lt;strong>File upload field&lt;/strong> from your form, simply select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">), click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;p>To delete a &lt;strong>File upload field&lt;/strong> from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm&lt;/li>
+&lt;/ol>
 &lt;h3 id="how-to-edit-file-upload-field-properties">How to edit File upload field properties&lt;/h3>
 &lt;p>To view or edit the field properties associated with a &lt;strong>File upload field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-field-prop.jpg" alt="Field properties">&lt;/p>
