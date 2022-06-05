@@ -1,4 +1,145 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Actions</title><link>https://docs.kianda.com/docs/platform/controls/actions/</link><description>Recent content in Actions on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/controls/actions/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Button control</title><link>https://docs.kianda.com/docs/platform/controls/actions/button/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/button/</guid><description/></item><item><title>Docs: Image control</title><link>https://docs.kianda.com/docs/platform/controls/actions/image/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/image/</guid><description/></item><item><title>Docs: Link control</title><link>https://docs.kianda.com/docs/platform/controls/actions/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/link/</guid><description/></item><item><title>Docs: Signature control</title><link>https://docs.kianda.com/docs/platform/controls/actions/signature/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/signature/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Actions</title><link>https://docs.kianda.com/docs/platform/controls/actions/</link><description>Recent content in Actions on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/controls/actions/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Button control</title><link>https://docs.kianda.com/docs/platform/controls/actions/button/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/button/</guid><description>
+&lt;p>&lt;strong>Button fields&lt;/strong> can be used in forms to allow user interface actions. Often, rules are applied to buttons so that actions are automatically executed once the user clicks on the button. To learn more about rules, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
+&lt;p>For example, as part of an Employee Appraisal Process, a manager may complete a Performance Plan form for each employee, setting out their Key Performance Areas and goals. It could be useful to add a button to this form - titled &amp;lsquo;Schedule Meeting&amp;rsquo; - that will automatically schedule a performance review meeting between the manager and the employee at a pre-determined date in the future. We will keep this example in mind as we learn more about using &lt;strong>Button controls&lt;/strong>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To add a &lt;strong>Button field&lt;/strong> to a Kianda form:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/designer-open-process.jpg" alt="Open process in Designer">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once you have opened your process, select the form you want to work on (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> is shown).&lt;/p>
+&lt;p>In this example, a Performance Plan form has been selected:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-form-selected.jpg" alt="Select form">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the area within the form where you want to insert the new &lt;strong>Button field&lt;/strong> - in our example, we will select the panel containing the &amp;lsquo;Schedule performance plan review meeting&amp;rsquo; information.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-select-area.jpg" alt="Select panel to insert Button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane, and, from the four categories of Controls (Input, Layout, Actions and Custom), click on &lt;strong>Actions&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Button&lt;/strong> from the four types of Action fields: Button, Link, Image and Signature:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-insert.jpg" alt="Actions menu insert Button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>New field - Button&lt;/strong> dialog box will automatically open, giving you options for your new Button field:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog.jpg" alt="Button field dialog box">&lt;/p>
+&lt;p>The options available in the &lt;strong>New field - Button&lt;/strong> dialog box include:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the Button from the default &amp;lsquo;&lt;strong>Button 1&lt;/strong>&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the new field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Color scheme&lt;/strong> - You can choose a colour for your new Button field from six options.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Icon&lt;/strong> - You can choose an icon to appear on your Button by clicking on the down arrow to the right and scrolling to select the icon you want to use (or can opt not to add an icon).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog-icon.jpg" alt="Button dialog box icon options">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Show in form body&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want your Button to be shown in the Form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable button security&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to limit who can see the Button you are adding to the form.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog-security.jpg" alt="Button dialog box enable button security">&lt;/p>
+&lt;p>If you select &lt;strong>Yes&lt;/strong>, two additional options are displayed: &lt;strong>Add security&lt;/strong> and &lt;strong>Allow anonymous link&lt;/strong>.&lt;/p>
+&lt;p>When you click on &lt;strong>Add security&lt;/strong>, a new line appears with the options &lt;strong>Field security&lt;/strong> and &lt;strong>Select user(s) or groups&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog-add-security.jpg" alt="Buttons add security">&lt;/p>
+&lt;p>In &lt;strong>Field security&lt;/strong>, you can choose from &lt;strong>three options in terms of who will be able to view the Button you are inserting&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog-visibility.jpg" alt="Button visibility options">&lt;/p>
+&lt;p>(i) If you choose to limit the Button visibility to a &amp;lsquo;&lt;strong>User or group&lt;/strong>&amp;rsquo;, you can then select the user(s) or groups you want to be able to see the Button in the &amp;lsquo;Select user(s) or groups&amp;rsquo; box.&lt;/p>
+&lt;p>(ii) If you choose to limit the Button visibility to a &amp;lsquo;&lt;strong>User picker field&lt;/strong>&amp;rsquo;, you then select the User picker field in the &amp;lsquo;Select a userpicker field&amp;rsquo; box:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog-user-picker.jpg" alt="Button visibility limited to User picker field">&lt;/p>
+&lt;p>This will limit the visibility of the Button to the user(s) who are selected in that User picker field.&lt;/p>
+&lt;p>(iii) If you choose to limit the Button visibility to &amp;lsquo;&lt;strong>Form owner(s)&lt;/strong>&amp;rsquo;, you then select the form in the &amp;lsquo;Select a form&amp;rsquo; box - only the owner(s) of the selected form will be able to view the new Button you are inserting:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-security-form-owner.jpg" alt="Button visibility limited to Form owners">&lt;/p>
+&lt;p>The second main option in terms of Button security is &amp;lsquo;&lt;strong>Allow anonymous link&lt;/strong>&amp;rsquo;. If you choose &lt;strong>Yes&lt;/strong>, this means an anonymous link to the form can be created and the new Button field will be visible when the form is viewed using that anonymous link.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Once you complete the &lt;strong>New field - Button&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong> and the new &lt;strong>Button field&lt;/strong> is added to your form.&lt;/p>
+&lt;p>In our example, if we changed the Button field title to &amp;lsquo;Schedule Meeting&amp;rsquo; and chose a green colour scheme and &amp;lsquo;people&amp;rsquo; icon, our new Button could look like this when added to our &amp;lsquo;Performance Plan&amp;rsquo; form:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-example-meeting.jpg" alt="Button example titled Schedule Meeting">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You may then decide to add rules to your new &lt;strong>Button field&lt;/strong> - to learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>. The rules we add will be executed in the order in which they are listed under &lt;strong>Rules&lt;/strong> in the right hand pane.&lt;/p>
+&lt;p>For example, we could add a series of rules to our new &lt;strong>Schedule Meeting&lt;/strong> button:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-example-rules.jpg" alt="Button field example with rules">&lt;/p>
+&lt;p>In our example, the sixth rule is a Meeting Request rule which will mean that, once the &lt;strong>Schedule Meeting&lt;/strong> button is clicked, an automated email will be sent to the employee scheduling a performance review meeting - to learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/meeting-request/">Meeting request rule&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-edit-move-and-delete-button-fields">How to edit, move and delete Button fields&lt;/h3>
+&lt;p>To edit a &lt;strong>Button field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the Button field (by either clicking on the field name or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Edit Field&lt;/strong> dialog box will open (with the Button title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Button&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-edit-field-dialog.jpg" alt="Button edit field dialog box">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>To move a &lt;strong>Button&lt;/strong>, simply:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the Button&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Drag and drop the Button wherever you want to move it within your form.&lt;/p>
+&lt;p>For example, the &amp;lsquo;Schedule Meeting&amp;rsquo; &lt;strong>Button&lt;/strong> could be moved from where it was automatically added at the bottom of the panel to the the location where we want it to go:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-move.jpg" alt="Move Button field example">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>To delete a &lt;strong>Button&lt;/strong> from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the Button (by either clicking on the Button&amp;rsquo;s title or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-view-and-edit-button-field-properties">How to view and edit Button field properties&lt;/h3>
+&lt;p>To view or edit a Button&amp;rsquo;s &lt;strong>Field properties&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the Button field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The Field Properties associated with the &lt;strong>Button&lt;/strong> field will be displayed (and can be changed) in the &lt;strong>Field properties&lt;/strong> menu to the right.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-field-properties.jpg" alt="Field properties associated with a Button">&lt;/p>
+&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Button field&lt;/strong> titled &amp;lsquo;Schedule Meeting&amp;rsquo; are shown here and include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Button&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Schedule Meeting&amp;rsquo;.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Button will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the Button will be mandatory for the form user.&lt;/li>
+&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Button will be visible in the form.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Button as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
+&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Button controls&lt;/strong>, find out more about the other types of &lt;strong>Action fields&lt;/strong> you can add to Kianda forms:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link/">Link controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature/">Signature controls&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Image control</title><link>https://docs.kianda.com/docs/platform/controls/actions/image/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/image/</guid><description/></item><item><title>Docs: Link control</title><link>https://docs.kianda.com/docs/platform/controls/actions/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/link/</guid><description/></item><item><title>Docs: Signature control</title><link>https://docs.kianda.com/docs/platform/controls/actions/signature/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/signature/</guid><description>
 &lt;p>A &lt;strong>signature&lt;/strong> is section of a form. Panels hold other fields like lists and text boxes. It is a good idea when first creating a form to insert a panel and from there to insert other control fields.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
