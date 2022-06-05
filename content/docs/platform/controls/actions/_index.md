@@ -77,9 +77,9 @@ To move an **Action field**, simply:
 
    
 
-To delete an **Action field** field from your form:
+To delete an **Action field** from your form:
 
-1. Select the Action field (by either clicking on the field's name or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+1. Select the Action field (by either clicking on the field's title or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
 2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
 3. Click on **OK** to confirm.
 
@@ -87,8 +87,8 @@ To delete an **Action field** field from your form:
 
 ### How to view and edit Action control Field Properties ###
 
-You can view and edit an Action control's **Field properties** by
-1. Selecting the Action field
+To view or edit an Action control's **Field properties**:
+1. Select the Action field (by either clicking on the field title or on the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
 
 2. The Field Properties associated with the Action field will be displayed (and can be changed) in the **Field properties** menu on the right-hand side.
 
