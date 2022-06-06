@@ -120,7 +120,7 @@ To move a **Button**, simply:
 
 2. Drag and drop the Button wherever you want to move it within your form.
 
-   For example, the 'Schedule Meeting' **Button** could be moved from where it was automatically added at the bottom of the panel to the the location where we want it to go:
+   For example, the 'Schedule Meeting' **Button** could be moved from where it was automatically added at the bottom of the panel to the location where we want it to go:
 
    ![Move Button field example](/images/button-move.jpg)
 
