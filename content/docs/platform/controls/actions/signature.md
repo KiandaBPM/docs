@@ -1,93 +1,205 @@
 ---
 title: "Signature control"
+linkTitle: "Signature control"
 typora-root-url: ..\..\..\..\..\static
 ---
 
-A **signature** is section of a form. Panels hold other fields like lists and text boxes. It is a good idea when first creating a form to insert a panel and from there to insert other control fields.
+A **Signature control** can be used in a form to capture a user's electronic signature. This can be particularly useful in a form that needs to be signed off as part of an approval process.
+
+For example, a manager may complete a Performance Plan form for each employee, setting out their Key Performance Areas and goals. It could be useful to add two **Signature fields** to this form - titled 'Manager Signature' and 'Employee Signature' - to record the Manager and Employee each signing off on the Performance Plan. We will keep this example in mind as we learn more about using Signature fields.
 
  
 
 ## How to get started
 
-1. To add a Signature to your form click on **Controls** > **Actions** > **Signature**.
+1. To add a **Signature field** to a Kianda form:
 
-2. Choose from the edit options:
+   1. Open an existing process by going to **Administration** > **Designer** in the left side menu and clicking on a process, or create a new process in Designer. See [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
 
-   - **Title** - of the Signature for example HR Manager Signature
+      ![Open process in Designer](/images/designer-open-process.jpg)
 
-   - **Name** - this is a unique name for the field
+   2. Once you have opened your process, select the form you want to work on (so that the **Edit Form** button ![Pen icon](/images/penicon.png) is shown). 
 
-   - **Help text** - information to help the form user
+      In this example, we have opened an Employee Appraisal Process and selected a Performance Plan form within it:
 
-   - **Signature pad height (pixels)** - the height of the signature in pixels
+      ![Select form](/images/button-form-selected.jpg)
 
-   - **Signature color** - click on the field and use the slider to move between colours and click on the palette to choose a particular hue or type in the R G B value if you know the colour you are looking for.
+   3. Select the area within the form where you want to insert the new **Signature field(s)** - in our example, we want to insert one new Signature field below the 'For Manager' table and a second new Signature field below the 'For Employee' table in our Performance Plan form: 
 
-     <img src="/images/sigcolor.png" alt="Signature colour" style="zoom:67%;" />
+      ![Select form section to insert Signature field](/images/signature-form-section.jpg)
 
-   - **Signature tickness** - number value
+   4. Click on **Controls** in the left-hand pane, and, from the four categories of Controls (Input, Layout, Actions and Custom), click on **Actions**.
 
-   - **Start signing button text** - default text is 'Start Signing', type in the field to change the text that will appear on your Signature button
+   5. Select **Signature** from the four types of Action fields: Button, Link, Image and Signature:
 
-   - **Re-sign button text** - default text is 'Re-sign'
+      ![Actions menu insert Signature](/images/signature-insert.jpg)
 
-   - **Show username and signing time** - options are a) Yes or b) No
+   6. A **New field - Signature** dialog box will automatically open, giving you options for your new Signature field: 
 
-   - **Require user authentication** - options are a) Yes or b) No
+      ![Signature field dialog box](/images/signature-dialog.jpg)
 
-   - **Hide sign by textbox** - options are a) Yes or b) No
+      The options available in the **New field - Signature** dialog box include:
 
-   - **Allow override sign by** - options are a) Yes or b) No
+      - **Title** - You can change the name of the Signature field from the default '**Signature 1**'. In our example, we can change it to 'Manager Signature'.
 
-   - **Hide default signature tab** - options are a) Yes or b) No
+      - **Name (Unique)** - This is a unique name for the new field.
 
-   - **Auto save signature** - options are a) Yes or b) No
+      - **Help text** - You can insert text to help the form user. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-   - **Button icon** - click on the arrow in the dropdown list to select from several hundred icons for your signature button.
+        For example, we could insert this Help text to go with our new 'Manager Signature' Signature field:
 
-   - **Button color** - choose from Navy, Green, Blue, Amber, Red or White colours for your signature button.
+        ![Signature field help text](/images/signature-help.jpg)
 
-   - **Sign dialog button text** 
+      - **Signature pad height (pixels)** - You can choose the height of the signature in pixels. To do this, either manually type in the number of pixels you want the height to be or use the up and down arrows ![Up down arrows](/images/up-down-arrows.jpg) to the right.
 
-4. Click on the **OK** button ![OK button](/images/ok.png) when you are finished editing the panel to save your changes or click on **Close** to exit the dialog box without saving.
+      - **Signature color** - You can choose the colour for the signature itself, i.e. the name of the user electronically signing the form. To do this, click on the field and then either
 
-4. To move the signature, click on the **Drag handle** beside the signature button  ![Move button](/images/move.png) and drag the signature to where you want it to appear on the form.
+        (i) use the slider to move between colours and click on the palette to choose a particular hue
 
-5. To save your changes, click on the **Save** button ![Save button](/images/saveprocess.png).
+        (ii) click on the dropper icon ![Signature colour dropper icon](/images/signature-dropper.jpg) and then choose a colour from your open PC window(s)
 
-   When your signature is complete, you can click on it within the form and a dialog box appears giving you and option to choose from a system created **Signature** or to **Draw or Upload** your own version.
+        (iii) type in the R G B value if you know the colour you want to use
 
-   <img src="/images/sigdecision.png" alt="Signature format" style="zoom:50%;" />
+        ![Signature colour](/images/signature-colour.jpg)
 
-   If you click on **Draw or Upload** then you can sign on the dotted line and click on **Clear** at any stage to erase your work, or click on **Upload handwritten signature** and browse for a file. 
+      - **Signature thickness** - Insert a numerical value for how thick you want the signature font to be. By default, this is set to 2.
 
-   <img src="/images/sigupload.png" alt="Signature upload" style="zoom:60%;" />
+      - **Start signing button text** - You can choose the text you want to appear on the Signature field button. By default, the text is 'Start Signing' but you can change this to whatever you want.
 
-   Click on the **OK** button to save your work.
+      - **Re-Sign button text** - You can choose the text you want to appear on the 'Re-Sign'  button. By default, the text is 'Re-sign' but you can change this to whatever you want.
 
-7. To delete the signature, click on the signature itself and then click on the **Bin/Trash** button ![Bin or Trash icon](images\binicon.png) and then click on **Ok** after you have reviewed the field name and are sure this is what you want to delete. Click on **Cancel** if you wish to cancel the deletion.
+      - **Show username and signing time** - Select **Yes** to show the username of the person electonically signing with the Signature field and the time they signed at.
+   
+      - **Require user authentication** - Select **Yes** to require user authentication for the user clicking the Signature field button to sign the section/form. If you select Yes, an additional option will display - **Authenticate via SSO**.
+   
+        ![Signature user authentication option](/images/signature-user-authentication.jpg)
+   
+        You can then choose **Yes** or **No** for authenticating the user via a Single Sign-on (an authentication method that allows users to securely authenticate on multiple applications and websites using just one set of credentials).
+   
+      - **Hide sign by textbox** - Select **Yes** if you want to hide the sign by textbox.
+   
+      - **Allow override sign by** - Select **Yes** if you want to allow override of the signature in the Signature field. If you choose Yes, an additional option will be shown - **Default title of sign by**:
+   
+        ![Signature field allow override sign by option](/images/signature-override.jpg)
+   
+      - **Hide default signature tab** - Select **Yes** if you want to hide the default signature tab. If you choose Yes, the next option - **Auto save signature** - will no longer be available to you.
+   
+      - **Auto save signature** - Select **Yes** if you want to auto save the signature.
+   
+      - **Button icon** - You can choose an icon to appear on your Signature field button (or can opt not to have an icon on it). Click on the down arrow to the right of the field and select the icon you want from several hundred icons in the dropdown list.
+   
+      - **Button color** - Choose the colour you want for your Signature field button. The options are Navy, Green, Blue, Amber, Red or White.
+      
+      - **Sign dialog button text** - You can choose the text to appear on the button in the Signature dialog box. By default, the text is 'OK' but you can change this to whatever you want.
+   
+   
+   7. Once you complete the **New field - Signature** dialog box, click **OK** and the new **Signature field** will be added to your form. 
+   
+      In our example, if we insert a new Signature field titled 'Manager Signature', it will be added to the bottom of the Performance Plan form and look like this:
+   
+      ![Inserted Signature field](/images/signature-inserted-no-title.jpg)
+   
+   8. By default, the **Title** of the new **Signature field** will not be shown but you can change this by selecting the the field and checking the **Show title** checkbox in the **Field properties** menu to the right.
+   
+      ![Show Signature field title](/images/signature-show-title.jpg)
+   
+      
+   
+   9. You can then click on the new **Signature field** within the form to see how it will appear to users. 
+   
+      In our case, we can click on the '**Start Signing**' Manager Signature button to see the dialog box that will appear when the form user clicks on it:
+   
+      ![Signature preview dialog box](/images/signature-preview-dialog.jpg)
+   
+      The user can choose between a system-created **Signature** or to **Draw or Upload** their own version. If you click on **Draw or Upload** you can see how the user can either sign on the dotted line (and click on **Clear** at any stage to erase a mistake) or click on **Upload handwritten signature** and browse for a file.
+   
+      ![Signature Draw or Upload option](/images/signature-draw-or-upload.jpg)
+   
 
-8. You are now ready to add elements to your panel, for example a textbox, table or other fields, as well as rules. Go to [Controls](fields/README.md) to see the full list of fields available and [Rules](rules/README.md) to read about different categories of rules that can be applied.
+		Click on the **OK** button to close the dialog box.
+
+   10. You may decide to add rules to your **Signature field** - to learn more about the different categories of rules available, go to [Rules](/docs/platform/rules/). The rules we add will be executed in the order in which they are listed under **Rules** in the right hand pane.
+
+
+
+
+   ### How to edit, move and delete Signature fields ###
+
+   To edit a **Signature field**:
+
+   1. Select the Signature field (by either clicking on the field name or on the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+
+   2. Click on the **Edit Field** button (Pen icon) ![Pen button](/images/penicon.png)
+
+      ![Edit Signature field](/images/signature-edit.jpg)
+
+   3. The **Edit Field** dialog box will open (with the Signature field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the **New field - Signature** dialog box (as already discussed in [How to get started](/docs/platform/controls/actions/signature#how-to-get-started)).
+
+      ![Signature edit field dialog box](/images/signature-edit-dialog.jpg)
+
+      
+
+   To move a **Signature field**, simply:
+
+   1. Select the Signature field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+
+   2. Drag and drop the Signature field wherever you want to move it within your form.
+
+      For example, we can move the 'Employee Signature' **Signature field** from where it was automatically added at the bottom of the panel to the location where we want it to go:
+
+      ![Move Signature field](/images/signature-move.jpg)
+
+      In our example, if we moved the two **Signature fields** we inserted in the Performance Plan form - one titled '**Manager Signature**' and a second titled '**Employee Signature**' - to go under the 'For Manager' and 'For Employee' sections, they could look like this:
+      
+      ![Signature example](/images/signature-example.jpg)
+      
+      
+
+   To delete a **Signature field** from your form:
+
+   1. Select the Signature field (by either clicking on the field's title or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+   2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+   3. Click on **OK** to confirm.
+
+
+
+
+   ### How to view and edit Signature field properties ###
+
+   To view or edit a Signature control's **Field properties**:
+
+   1. Select the Signature field (by either clicking on the field title or **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+
+   2. The Field Properties associated with the **Signature** field will be displayed (and can be changed) in the **Field properties** menu to the right.
+
+      ![Field properties associated with a Signature field](/images/signature-field-properties.jpg)
+
+      For example, the **Field Properties** associated with a **Signature field** titled 'Manager Signature' are shown here and include:
+
+      - **Field type** - The type of field, in this case a **Signature** field.
+      - **Title** - The Title of the field, in this case 'Manager Signature'.
+      - **Show title** - If this is selected, the Signature field will be shown in the form.
+      - **Required** - If this is selected, the Signature field will be mandatory for the form user.
+      - **Enabled** - If this is selected, the user will be able to edit or interact with the field.
+      - **Visible** - If this is selected, the Signature field will be visible in the form.
+      - **Layout** - The width of the blue bar can be adjusted to change the width of the Signature field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
+
+   ​		For more details, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 
    
 
+   ### Saving changes and version history ###
 
-## How to edit signature properties
+   Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
-To change the signature properties, click on the signature itself and the properties pane appears on the right.
+   
 
-<img src="/images/sigproperties.png" alt="Signature properties" style="zoom:60%;" />
+   ### What's next  ![Idea icon](/images/18.png) ###
 
-The **Field type**, Signature is shown along with the **Title** of the field, in the example above Signature 1.
+   Now that you've learned about the **Signature control**, find out more about the other types of **Action fields** you can add to Kianda forms:
 
-The options within properties are as follows, check the checkbox to implement:
+   - [Button control](/docs/platform/controls/actions/button/)
 
-- **Show Title** - show the title of the field
-- **Required** - make this field mandatory for users to fill out
-- **Enabled** - the field is enabled for users to use
-- **Visible** - the field is visible to users
-- **Layout** - change the width of the Signature button by clicking on the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on box to change the width of the panel for mobile use.
+   - [Image control](/docs/platform/controls/actions/image/)
 
-![Changing text box width](/images/textboxsize.png)
-
-- **Rules** - rules for fields are covered in [Rules](/docs/platform/rules/). 
+   - [Link controls](/docs/platform/controls/actions/link/)
