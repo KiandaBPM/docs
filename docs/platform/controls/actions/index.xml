@@ -140,103 +140,191 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link/">Link controls&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature/">Signature controls&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Image control</title><link>https://docs.kianda.com/docs/platform/controls/actions/image/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/image/</guid><description/></item><item><title>Docs: Link control</title><link>https://docs.kianda.com/docs/platform/controls/actions/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/link/</guid><description/></item><item><title>Docs: Signature control</title><link>https://docs.kianda.com/docs/platform/controls/actions/signature/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/signature/</guid><description>
-&lt;p>A &lt;strong>signature&lt;/strong> is section of a form. Panels hold other fields like lists and text boxes. It is a good idea when first creating a form to insert a panel and from there to insert other control fields.&lt;/p>
+&lt;p>A &lt;strong>Signature control&lt;/strong> can be used in a form to capture a user&amp;rsquo;s electronic signature. This can be particularly useful in a form that needs to be signed off as part of an approval process.&lt;/p>
+&lt;p>For example, a manager may complete a Performance Plan form for each employee, setting out their Key Performance Areas and goals. It could be useful to add two &lt;strong>Signature fields&lt;/strong> to this form - titled &amp;lsquo;Manager Signature&amp;rsquo; and &amp;lsquo;Employee Signature&amp;rsquo; - to record the Manager and Employee each signing off on the Performance Plan. We will keep this example in mind as we learn more about using Signature fields.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To add a Signature to your form click on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Actions&lt;/strong> &amp;gt; &lt;strong>Signature&lt;/strong>.&lt;/p>
+&lt;p>To add a &lt;strong>Signature field&lt;/strong> to a Kianda form:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/designer-open-process.jpg" alt="Open process in Designer">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Choose from the edit options:&lt;/p>
+&lt;p>Once you have opened your process, select the form you want to work on (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> is shown).&lt;/p>
+&lt;p>In this example, we have opened an Employee Appraisal Process and selected a Performance Plan form within it:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-form-selected.jpg" alt="Select form">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the area within the form where you want to insert the new &lt;strong>Signature field(s)&lt;/strong> - in our example, we want to insert one new Signature field below the &amp;lsquo;For Manager&amp;rsquo; table and a second new Signature field below the &amp;lsquo;For Employee&amp;rsquo; table in our Performance Plan form:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-form-section.jpg" alt="Select form section to insert Signature field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane, and, from the four categories of Controls (Input, Layout, Actions and Custom), click on &lt;strong>Actions&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Signature&lt;/strong> from the four types of Action fields: Button, Link, Image and Signature:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-insert.jpg" alt="Actions menu insert Signature">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>New field - Signature&lt;/strong> dialog box will automatically open, giving you options for your new Signature field:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-dialog.jpg" alt="Signature field dialog box">&lt;/p>
+&lt;p>The options available in the &lt;strong>New field - Signature&lt;/strong> dialog box include:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - of the Signature for example HR Manager Signature&lt;/p>
+&lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the Signature field from the default &amp;lsquo;&lt;strong>Signature 1&lt;/strong>&amp;rsquo;. In our example, we can change it to &amp;lsquo;Manager Signature&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Name&lt;/strong> - this is a unique name for the field&lt;/p>
+&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the new field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Help text&lt;/strong> - information to help the form user&lt;/p>
+&lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
+&lt;p>For example, we could insert this Help text to go with our new &amp;lsquo;Manager Signature&amp;rsquo; Signature field:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-help.jpg" alt="Signature field help text">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Signature pad height (pixels)&lt;/strong> - the height of the signature in pixels&lt;/p>
+&lt;p>&lt;strong>Signature pad height (pixels)&lt;/strong> - You can choose the height of the signature in pixels. To do this, either manually type in the number of pixels you want the height to be or use the up and down arrows &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up down arrows"> to the right.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Signature color&lt;/strong> - click on the field and use the slider to move between colours and click on the palette to choose a particular hue or type in the R G B value if you know the colour you are looking for.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/sigcolor.png" alt="Signature colour" style="zoom:67%;" />
+&lt;p>&lt;strong>Signature color&lt;/strong> - You can choose the colour for the signature itself, i.e. the name of the user electronically signing the form. To do this, click on the field and then either&lt;/p>
+&lt;p>(i) use the slider to move between colours and click on the palette to choose a particular hue&lt;/p>
+&lt;p>(ii) click on the dropper icon &lt;img src="https://docs.kianda.com/images/signature-dropper.jpg" alt="Signature colour dropper icon"> and then choose a colour from your open PC window(s)&lt;/p>
+&lt;p>(iii) type in the R G B value if you know the colour you want to use&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-colour.jpg" alt="Signature colour">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Signature tickness&lt;/strong> - number value&lt;/p>
+&lt;p>&lt;strong>Signature thickness&lt;/strong> - Insert a numerical value for how thick you want the signature font to be. By default, this is set to 2.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Start signing button text&lt;/strong> - default text is &amp;lsquo;Start Signing&amp;rsquo;, type in the field to change the text that will appear on your Signature button&lt;/p>
+&lt;p>&lt;strong>Start signing button text&lt;/strong> - You can choose the text you want to appear on the Signature field button. By default, the text is &amp;lsquo;Start Signing&amp;rsquo; but you can change this to whatever you want.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Re-sign button text&lt;/strong> - default text is &amp;lsquo;Re-sign&amp;rsquo;&lt;/p>
+&lt;p>&lt;strong>Re-Sign button text&lt;/strong> - You can choose the text you want to appear on the &amp;lsquo;Re-Sign&amp;rsquo; button. By default, the text is &amp;lsquo;Re-sign&amp;rsquo; but you can change this to whatever you want.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Show username and signing time&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;p>&lt;strong>Show username and signing time&lt;/strong> - Select &lt;strong>Yes&lt;/strong> to show the username of the person electonically signing with the Signature field and the time they signed at.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Require user authentication&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;p>&lt;strong>Require user authentication&lt;/strong> - Select &lt;strong>Yes&lt;/strong> to require user authentication for the user clicking the Signature field button to sign the section/form. If you select Yes, an additional option will display - &lt;strong>Authenticate via SSO&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-user-authentication.jpg" alt="Signature user authentication option">&lt;/p>
+&lt;p>You can then choose &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong> for authenticating the user via a Single Sign-on (an authentication method that allows users to securely authenticate on multiple applications and websites using just one set of credentials).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Hide sign by textbox&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;p>&lt;strong>Hide sign by textbox&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to hide the sign by textbox.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Allow override sign by&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;p>&lt;strong>Allow override sign by&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to allow override of the signature in the Signature field. If you choose Yes, an additional option will be shown - &lt;strong>Default title of sign by&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-override.jpg" alt="Signature field allow override sign by option">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Hide default signature tab&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;p>&lt;strong>Hide default signature tab&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to hide the default signature tab. If you choose Yes, the next option - &lt;strong>Auto save signature&lt;/strong> - will no longer be available to you.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Auto save signature&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;p>&lt;strong>Auto save signature&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to auto save the signature.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Button icon&lt;/strong> - click on the arrow in the dropdown list to select from several hundred icons for your signature button.&lt;/p>
+&lt;p>&lt;strong>Button icon&lt;/strong> - You can choose an icon to appear on your Signature field button (or can opt not to have an icon on it). Click on the down arrow to the right of the field and select the icon you want from several hundred icons in the dropdown list.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Button color&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White colours for your signature button.&lt;/p>
+&lt;p>&lt;strong>Button color&lt;/strong> - Choose the colour you want for your Signature field button. The options are Navy, Green, Blue, Amber, Red or White.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sign dialog button text&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Sign dialog button text&lt;/strong> - You can choose the text to appear on the button in the Signature dialog box. By default, the text is &amp;lsquo;OK&amp;rsquo; but you can change this to whatever you want.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when you are finished editing the panel to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;p>Once you complete the &lt;strong>New field - Signature&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong> and the new &lt;strong>Signature field&lt;/strong> will be added to your form.&lt;/p>
+&lt;p>In our example, if we insert a new Signature field titled &amp;lsquo;Manager Signature&amp;rsquo;, it will be added to the bottom of the Performance Plan form and look like this:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-inserted-no-title.jpg" alt="Inserted Signature field">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To move the signature, click on the &lt;strong>Drag handle&lt;/strong> beside the signature button &lt;img src="https://docs.kianda.com/images/move.png" alt="Move button"> and drag the signature to where you want it to appear on the form.&lt;/p>
+&lt;p>By default, the &lt;strong>Title&lt;/strong> of the new &lt;strong>Signature field&lt;/strong> will not be shown but you can change this by selecting the the field and checking the &lt;strong>Show title&lt;/strong> checkbox in the &lt;strong>Field properties&lt;/strong> menu to the right.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-show-title.jpg" alt="Show Signature field title">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To save your changes, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save button">.&lt;/p>
-&lt;p>When your signature is complete, you can click on it within the form and a dialog box appears giving you and option to choose from a system created &lt;strong>Signature&lt;/strong> or to &lt;strong>Draw or Upload&lt;/strong> your own version.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/sigdecision.png" alt="Signature format" style="zoom:50%;" />
-&lt;p>If you click on &lt;strong>Draw or Upload&lt;/strong> then you can sign on the dotted line and click on &lt;strong>Clear&lt;/strong> at any stage to erase your work, or click on &lt;strong>Upload handwritten signature&lt;/strong> and browse for a file.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/sigupload.png" alt="Signature upload" style="zoom:60%;" />
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button to save your work.&lt;/p>
+&lt;p>You can then click on the new &lt;strong>Signature field&lt;/strong> within the form to see how it will appear to users.&lt;/p>
+&lt;p>In our case, we can click on the &amp;lsquo;&lt;strong>Start Signing&lt;/strong>&amp;rsquo; Manager Signature button to see the dialog box that will appear when the form user clicks on it:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-preview-dialog.jpg" alt="Signature preview dialog box">&lt;/p>
+&lt;p>The user can choose between a system-created &lt;strong>Signature&lt;/strong> or to &lt;strong>Draw or Upload&lt;/strong> their own version. If you click on &lt;strong>Draw or Upload&lt;/strong> you can see how the user can either sign on the dotted line (and click on &lt;strong>Clear&lt;/strong> at any stage to erase a mistake) or click on &lt;strong>Upload handwritten signature&lt;/strong> and browse for a file.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-draw-or-upload.jpg" alt="Signature Draw or Upload option">&lt;/p>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button to close the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To delete the signature, click on the signature itself and then click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="images%5Cbinicon.png" alt="Bin or Trash icon"> and then click on &lt;strong>Ok&lt;/strong> after you have reviewed the field name and are sure this is what you want to delete. Click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You are now ready to add elements to your panel, for example a textbox, table or other fields, as well as rules. Go to &lt;a href="fields/README.md">Controls&lt;/a> to see the full list of fields available and &lt;a href="rules/README.md">Rules&lt;/a> to read about different categories of rules that can be applied.&lt;/p>
+&lt;p>You may decide to add rules to your &lt;strong>Signature field&lt;/strong> - to learn more about the different categories of rules available, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>. The rules we add will be executed in the order in which they are listed under &lt;strong>Rules&lt;/strong> in the right hand pane.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="how-to-edit-signature-properties">How to edit signature properties&lt;/h2>
-&lt;p>To change the signature properties, click on the signature itself and the properties pane appears on the right.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/sigproperties.png" alt="Signature properties" style="zoom:60%;" />
-&lt;p>The &lt;strong>Field type&lt;/strong>, Signature is shown along with the &lt;strong>Title&lt;/strong> of the field, in the example above Signature 1.&lt;/p>
-&lt;p>The options within properties are as follows, check the checkbox to implement:&lt;/p>
+&lt;h3 id="how-to-edit-move-and-delete-signature-fields">How to edit, move and delete Signature fields&lt;/h3>
+&lt;p>To edit a &lt;strong>Signature field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the Signature field (by either clicking on the field name or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-edit.jpg" alt="Edit Signature field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Edit Field&lt;/strong> dialog box will open (with the Signature field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Signature&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-edit-dialog.jpg" alt="Signature edit field dialog box">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>To move a &lt;strong>Signature field&lt;/strong>, simply:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the Signature field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Drag and drop the Signature field wherever you want to move it within your form.&lt;/p>
+&lt;p>For example, we can move the &amp;lsquo;Employee Signature&amp;rsquo; &lt;strong>Signature field&lt;/strong> from where it was automatically added at the bottom of the panel to the location where we want it to go:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-move.jpg" alt="Move Signature field">&lt;/p>
+&lt;p>In our example, if we moved the two &lt;strong>Signature fields&lt;/strong> we inserted in the Performance Plan form - one titled &amp;lsquo;&lt;strong>Manager Signature&lt;/strong>&amp;rsquo; and a second titled &amp;lsquo;&lt;strong>Employee Signature&lt;/strong>&amp;rsquo; - to go under the &amp;lsquo;For Manager&amp;rsquo; and &amp;lsquo;For Employee&amp;rsquo; sections, they could look like this:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-example.jpg" alt="Signature example">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>To delete a &lt;strong>Signature field&lt;/strong> from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the Signature field (by either clicking on the field&amp;rsquo;s title or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-view-and-edit-signature-field-properties">How to view and edit Signature field properties&lt;/h3>
+&lt;p>To view or edit a Signature control&amp;rsquo;s &lt;strong>Field properties&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the Signature field (by either clicking on the field title or &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The Field Properties associated with the &lt;strong>Signature&lt;/strong> field will be displayed (and can be changed) in the &lt;strong>Field properties&lt;/strong> menu to the right.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-field-properties.jpg" alt="Field properties associated with a Signature field">&lt;/p>
+&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Signature field&lt;/strong> titled &amp;lsquo;Manager Signature&amp;rsquo; are shown here and include:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Show Title&lt;/strong> - show the title of the field&lt;/li>
-&lt;li>&lt;strong>Required&lt;/strong> - make this field mandatory for users to fill out&lt;/li>
-&lt;li>&lt;strong>Enabled&lt;/strong> - the field is enabled for users to use&lt;/li>
-&lt;li>&lt;strong>Visible&lt;/strong> - the field is visible to users&lt;/li>
-&lt;li>&lt;strong>Layout&lt;/strong> - change the width of the Signature button by clicking on the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on box to change the width of the panel for mobile use.&lt;/li>
+&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Signature&lt;/strong> field.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Manager Signature&amp;rsquo;.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Signature field will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the Signature field will be mandatory for the form user.&lt;/li>
+&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Signature field will be visible in the form.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Signature field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize.png" alt="Changing text box width">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
+&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Signature control&lt;/strong>, find out more about the other types of &lt;strong>Action fields&lt;/strong> you can add to Kianda forms:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Rules&lt;/strong> - rules for fields are covered in &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;li>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button/">Button control&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image control&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link/">Link controls&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>
