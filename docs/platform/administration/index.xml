@@ -14,7 +14,7 @@
 &lt;/ol>
 &lt;h3 id="shared-processes">Shared processes&lt;/h3>
 &lt;p>Existing shared processes appear within this section in the right-hand side of the main view. Before you invite a partner you must choose a process to share from within this section first.&lt;/p>
-&lt;h4 id="to-share-a-process">To share a process:&lt;/h4>
+&lt;h4 id="to-share-a-process">To share a process&lt;/h4>
 &lt;ol>
 &lt;li>
 &lt;p>To share a process with a business partner, click on the &lt;strong>Share a process&lt;/strong> button.&lt;/p>
@@ -26,14 +26,80 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/edit-shared-process.jpg" alt="Edit Shared Process dialog box">&lt;/p>
 &lt;p>​ The fields in this box are:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong> - provide a title for the shared process&lt;/li>
-&lt;li>&lt;strong>Instructions for partner&lt;/strong> - provide instructions for the selected partner&lt;/li>
-&lt;li>Click on the &lt;strong>plus symbol&lt;/strong> to add a selected process design.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - provide a title for the shared process&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Instructions for partner&lt;/strong> - provide instructions for the selected partner&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>plus symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-process.jpg" alt="Add shared process"> to add a selected process design to share. Then click on the dropdown list to search for a process to share.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to add a to change the selected shared process properties by clicking on the **cog **button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Edit selected shared process properties"> or delete the selected shared process by clicking on the &lt;strong>bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/change-selected-prop.jpg" alt="Edit selected shared process properties">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you click on the **cog **button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Edit selected shared process properties"> a &lt;strong>Process properties&lt;/strong> dialog box appears, as shown above, for example Training Request properties. You can check radio buttons for:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Allow partner to create a new process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to create new process instances from the chosen shared process design. A field &lt;strong>Partner user group allowed to create new instances&lt;/strong> appears, where you can define the group(s) in the partner organisation, that can create these new process instances. If you leave the field blank, then anyone in the partner organisation can create process instances.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Allow partner delete a process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to delete new process instances from the chosen shared process design.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Partner process form visibility mode - choose from &lt;strong>Assigned&lt;/strong> or &lt;strong>All forms&lt;/strong>. If you choose &lt;strong>Assigned&lt;/strong>, then the invited partner(s) can view only assigned form versus all forms, if &lt;strong>All forms&lt;/strong> is chosen.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>If you click on the &lt;strong>bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes"> then a pop-up appears to &lt;strong>Confirm removal&lt;/strong>, choose from &lt;strong>OK&lt;/strong> or &lt;strong>Cancel&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/confirm-removal.jpg" alt="Confirm removal of selected shared process">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Click on the &lt;strong>tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to add further selected processes to share.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Add partner group&lt;/strong> button to add one or more partner groups. Click on the &lt;strong>bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes"> to delete partner groups.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Dashboard template&lt;/strong> click on the dropdown list to select an existing dashboards to share with the selected processes. If you choose to share a dashboard then you can select parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Dashboard name in partner&lt;/strong> - choose from &lt;strong>Use your company name &amp;lsquo;Name of your organisation&amp;rsquo;&lt;/strong> or &lt;strong>Same as selected dashboard&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Make welcome page&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> then the selected dashboard becomes the welcome page for the partner if no other welcome page is configured.&lt;/li>
+&lt;li>&lt;strong>Dashboard security&lt;/strong> - choose from created partner groups within this field to ensure that only users in these partner groups can access the dashboard.&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ul>
 &lt;ol start="3">
-&lt;li>Click on the dropdown list to add an existing process.&lt;/li>
+&lt;li>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/li>
 &lt;/ol>
-&lt;h3 id="whats-next--idea-iconcontentdocsplatformadministrationb2b-portalsassets18png">What&amp;rsquo;s next ![Idea icon](/../content/docs/platform/administration/b2b portals.assets/18.png)&lt;/h3>
+&lt;h4 id="to-view-details-of-an-existing-shared--process">To view details of an existing shared process:&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>From the main shared processes view, click on the &lt;strong>name&lt;/strong> of a shared process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/shared-processes.jpg" alt="Shared processes view">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>An &lt;strong>Edit Shared Process&lt;/strong> dialog box appears with the same parameters as described in the &lt;a href="#to-share-a-process">To share a process&lt;/a> section.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/confirm-process-update.jpg" alt="Confirm shared process update">&lt;/p>
+&lt;ol start="3">
+&lt;li>From the main shared processes view click on the &lt;strong>Send Update&lt;/strong> button if you want to send an update to your partner dashboard. Then in the &lt;strong>Confirm shared process update&lt;/strong> dialog box click on &lt;strong>Yes proceed&lt;/strong> to send the update or &lt;strong>Cancel&lt;/strong> to cancel sending the update.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/confirm-process-update.jpg" alt="Confirm shared process update">&lt;/p>
+&lt;ol start="4">
+&lt;li>Click on the &lt;strong>bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes"> to delete a shared process, that is to remove partner access to the process design.&lt;/li>
+&lt;/ol>
+&lt;p>Once you have selected processes to share and configured the sharing properties, you are ready to invite partners to the shared processes.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about Designer and how to use the interface to create forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Data sources</title><link>https://docs.kianda.com/docs/platform/administration/datasources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/datasources/</guid><description>
 &lt;p>The &lt;strong>Data sources&lt;/strong> function is available to administrators and those users with the role &lt;strong>Manage datasources&lt;/strong>. Data sources is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The data sources function allows you to connect your processes to external data sources like SharePoint, Salesforce or SAP.&lt;/p>
 &lt;p>Connecting your data sources in this way allows real-time scalability, so as your organisation and data grows, the processes created in Kianda will continue to operate with these data sources, providing sustainable, flexible growth.&lt;/p>
