@@ -1,0 +1,171 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Your workspace</title><link>https://docs.kianda.com/docs/platform/general/</link><description>Recent content in Your workspace on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/general/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Help</title><link>https://docs.kianda.com/docs/platform/general/help/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/general/help/</guid><description>
+&lt;p>The &lt;strong>Help&lt;/strong> function is available to users with a designated role, for example, &lt;strong>Manage partners&lt;/strong>, &lt;strong>Designer&lt;/strong> or &lt;strong>Administrator&lt;/strong> and is found in the left-hand side pane, under &lt;strong>More&lt;/strong>. Help contains a list of Frequently Asked Questions (FAQs) designed to help you when you are using the Kianda workspace. There are a couple of ways you can use the Help pages listed in the steps below.&lt;/p>
+&lt;h2 id="getting-started-with-help">Getting started with Help&lt;/h2>
+&lt;ol>
+&lt;li>Click on any topic and you will find a set of instructions to help you and a short video that shows you what to do.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/help3.png" alt="Help FAQs">&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>Click on &lt;strong>Select a topic&lt;/strong> and filter from a selection of topics: Rules, User, Designer, Data Sources, Security, Dashboard, General and Configuration&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/helptopics.png" alt="Help topics">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Create a further filter by typing your keywords in the &lt;strong>Filter help&lt;/strong> box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>At any time you can play the Getting started video by clicking on the &lt;strong>Get Started&lt;/strong> button &lt;img src="https://docs.kianda.com/images/getstarted.png" alt="Get started video"> in the top right-hand corner.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Quick action menu</title><link>https://docs.kianda.com/docs/platform/general/quickaction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/general/quickaction/</guid><description>
+&lt;p>The &lt;strong>Quick action menu&lt;/strong> contains all the shortcuts that you need to manage your pages efficiently. The menu is found in the top right-hand corner of your Kianda workspace.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/quick-action-menu.jpg" alt="Quick action menu">&lt;/p>
+&lt;p>If you have an &lt;strong>Administrator&lt;/strong> role you will see five buttons, other roles will see three buttons listed below:&lt;/p>
+&lt;p>The buttons include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="#create-a-new-page">Create a new page&lt;/a> &lt;img src="https://docs.kianda.com/images/new-page-button.jpg" alt="Create new page button">- &lt;strong>Administrators&lt;/strong> can use this function to create a &lt;strong>new dashboard page&lt;/strong>.&lt;/li>
+&lt;li>&lt;a href="#edit-current-page">Edit current page&lt;/a> &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit current page button"> - &lt;strong>Administrators&lt;/strong> can use this function to edit a dashboard &lt;strong>page&lt;/strong>.&lt;/li>
+&lt;li>[Online session refresh](#Online session refresh) &lt;img src="https://docs.kianda.com/images/refresh.png" alt="Refresh button"> - &lt;strong>All users&lt;/strong> can use this function to &lt;strong>refresh a session&lt;/strong> to allow offline use.&lt;/li>
+&lt;li>[User notifications](#User notifications) &lt;img src="https://docs.kianda.com/images/notifications.png" alt="Notifications button"> - provides notifications to &lt;strong>all users&lt;/strong> such as being assigned forms to edit or reassign.&lt;/li>
+&lt;li>[User profile](#User profile) &lt;img src="https://docs.kianda.com/images/userprofile.png" alt="User profile">- allows &lt;strong>all users&lt;/strong> to change profile details, such as working offline or changing password.&lt;/li>
+&lt;/ul>
+&lt;p>Click on each link above to find out more about each button.&lt;/p>
+&lt;h3 id="create-a-new-page">Create a new page&lt;/h3>
+&lt;p>Administrators can create a new dashboard page that connects to a chosen process. Users can view this dashboard to monitor how processes are performing and gain business insights to improve the business.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Create new page&lt;/strong> &lt;img src="https://docs.kianda.com/images/new-page-button.jpg" alt="Create new page button"> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Create dashboard page&lt;/strong> dialog box opens.
+&lt;img src="https://docs.kianda.com/images/new-dashboard-page.jpg" alt="Create dashboard page">&lt;/p>
+&lt;p>In this dialog box fill out the following fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> - give the dashboard a title.&lt;/li>
+&lt;li>&lt;strong>Name&lt;/strong> - this field is autofilled from the title field and creates a unique ID for the dashboard page.&lt;/li>
+&lt;li>&lt;strong>Visible to&lt;/strong> - choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> of users who will see this dashboard.&lt;/li>
+&lt;li>&lt;strong>Icon&lt;/strong> - choose from hundreds of icons to represent your dashboard in the left-hand pane&lt;/li>
+&lt;li>&lt;strong>Sort order&lt;/strong> - enter a numeric value to set the order of display in a dashboard group, for example a dashboard called &lt;strong>Induction&lt;/strong> has a sort order value of &amp;lsquo;1&amp;rsquo;, while a dashboard called &lt;strong>Annual leave&lt;/strong> has a value of &amp;lsquo;2&amp;rsquo;. The dashboards will display in chronological order according to the values associated with them.&lt;/li>
+&lt;li>&lt;strong>Group&lt;/strong> - choose an existing group or create a new group to add the dashboard to. As soon as two dashboard pages are added to a group, then the group will appear in the left-hand pane, for example see &lt;strong>HR dashboards group&lt;/strong> below with 2 dashboards: &lt;strong>Induction&lt;/strong> and &lt;strong>Annual leave&lt;/strong>.
+&lt;img src="https://docs.kianda.com/images/dashboard-group.jpg" alt="Dashboard group">&lt;/li>
+&lt;li>&lt;strong>Enable favourites&lt;/strong> - allows you to set this dashboard as a &amp;lsquo;favourite&amp;rsquo;. If you check the checkbox then users will see a &lt;strong>Add to favourites&lt;/strong> button in the &lt;strong>Quick actions menu&lt;/strong>, allowing them to add this dashboard to a &amp;lsquo;favourites&amp;rsquo; catalog.&lt;/li>
+&lt;li>&lt;img src="https://docs.kianda.com/images/favourite-dashboard.jpg" alt="Favourite dashboard">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>To find out more about dashboards go to the &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> section of the documentation.&lt;/p>
+&lt;h3 id="edit-current-page">Edit current page&lt;/h3>
+&lt;p>Administrators can edit an existing dashboard page by clicking on the dashboards button when on a selected page.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>As an administrator, click on a dashboard page of choice displayed in the left-hand pane.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit current page button"> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/editing-page.jpg" alt="Editing page">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You are then in &lt;strong>Edit mode&lt;/strong> for the page. Here you can add new &lt;strong>dashboard widgets&lt;/strong>, edit &lt;strong>Settings&lt;/strong>, or &lt;strong>Delete&lt;/strong> the dashboard page. To read more about Edit mode go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="online-session-refresh">Online session refresh&lt;/h3>
+&lt;p>You can use Kianda offline and view dashboards even without internet access. To synchronise dashboards, with system data:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;img src="https://docs.kianda.com/images/refresh.png" alt="Online session refresh button"> to synchronise data.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>Synchronising&lt;/strong> message appears, followed by a &lt;strong>Ready for offline use&lt;/strong> notification.
+&lt;img src="https://docs.kianda.com/images/synchronising-offline.jpg" alt="Synchronising message">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>At this point you can view dashboards even without internet access.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-notifications">User notifications&lt;/h3>
+&lt;p>This icon alerts you when actions happen associated with processes, for example a form is completed by a user. You will receive a configured message indicating in this case, what form has been completed and by whom.&lt;/p>
+&lt;h3 id="user-profile">User profile&lt;/h3>
+&lt;p>The information found under User profile includes your name, email, role for example Administrator and options to update your information.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/myaccount.png" alt="My account information">&lt;/p>
+&lt;p>To update your information, you can:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Add your photo by clicking on the &lt;strong>Update profile picture&lt;/strong> button &lt;img src="https://docs.kianda.com/images/profilepic.png" alt="Update profile picture button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change your password by clicking on &lt;strong>Change Password&lt;/strong>. You need to type in your current password and then your new password twice and click on &lt;strong>Change Password&lt;/strong> or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/changepassword.png" alt="Change password">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Update your profile by clicking on &lt;strong>Update My Profile&lt;/strong>. Type in your &lt;strong>Job title,&lt;/strong> &lt;strong>Department&lt;/strong> and &lt;strong>Phone number&lt;/strong> and click on &lt;strong>Update Profile&lt;/strong> or click on **Close **to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Logout of Kianda by clicking on &lt;strong>Sign-Out&lt;/strong>. Then click on &lt;strong>Ok&lt;/strong> to confirm that you want to logout or click on **Cancel **to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Work offline by clicking moving the slider button across. When you do this you will get a message to say&lt;/p>
+&lt;p>Offline mode is enabled.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/workoffline.png" alt="Work offline">&lt;/p>
+&lt;p>If you move the slider back then Offline mode is disabled.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>View the system version of Kianda, for example System version 2.11.3&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Collapse account information by clicking on the &lt;strong>User profile&lt;/strong> button &lt;img src="https://docs.kianda.com/images/userprofile.png" alt="User profile"> again.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Support</title><link>https://docs.kianda.com/docs/platform/general/support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/general/support/</guid><description>
+&lt;p>The &lt;strong>Support&lt;/strong> function is available to users with a designated role, for example, &lt;strong>Manage partners&lt;/strong>, &lt;strong>Designer&lt;/strong> or &lt;strong>Administrator&lt;/strong> and is found in the left-hand side pane, under &lt;strong>More&lt;/strong>. This function allows you to log support tickets and view application logs.&lt;/p>
+&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
+&lt;p>To view use the Support function:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>More&lt;/strong> in the left-hand side pane and then click on &lt;strong>Support&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can view any current tickets or logs in the main view pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/support-function.jpg" alt="Support view">&lt;/p>
+&lt;p>These are two main areas: &lt;strong>Support tickets&lt;/strong> and &lt;strong>Application logs&lt;/strong> these are explained in more detail below.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="support-tickets">Support tickets&lt;/h4>
+&lt;p>Existing support tickets appear within this section, showing the &lt;strong>title&lt;/strong> of the ticket, &lt;strong>date&lt;/strong> it was issued and &lt;strong>status&lt;/strong>.&lt;/p>
+&lt;h5 id="for-existing-tickets">For existing tickets:&lt;/h5>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>name&lt;/strong> of a ticket to view ticket details, such as who raised the ticket and a description of the title.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>update status&lt;/strong> to change the title of the field or update the status. The status can either be &lt;strong>Open&lt;/strong>, &lt;strong>Resolved&lt;/strong> (resolved from the Kianda support side) or &lt;strong>Closed&lt;/strong> (customer is satisfied with the resolution and has closed the ticket). Click on &lt;strong>Close&lt;/strong> to exit without saving or &lt;strong>OK&lt;/strong> to submit changes.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>reply&lt;/strong> to add a comment to the ticket. The comment can be styled to change the font colour, paragraph layout, add tables, links or images.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/post-comment.jpg" alt="Post comment">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h5 id="to-create-a-new-ticket">To create a new ticket:&lt;/h5>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Add new&lt;/strong> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Create a new thread&lt;/strong> dialog box, enter a &lt;strong>Title&lt;/strong>, &lt;strong>Description&lt;/strong> and set the ticket &lt;strong>status&lt;/strong>, typically Open.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/new-ticket-thread.jpg" alt="New support ticket">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="application-logs">Application logs&lt;/h4>
+&lt;p>System logs appear in this section when you click on &lt;strong>Load errors&lt;/strong>. Logs are listed by &lt;strong>date&lt;/strong>, &lt;strong>url/area&lt;/strong>, for example a User update, a system generated Message, User and &lt;strong>Browser&lt;/strong> involved in the log entry.&lt;/p>
+&lt;ol>
+&lt;li>Click in the &lt;strong>search box&lt;/strong> and enter text to search for logs based on key word entry.&lt;/li>
+&lt;li>If there are several pages of logs, click on the &lt;strong>page number&lt;/strong> to see entries for that page.&lt;/li>
+&lt;li>Click on &lt;strong>Clear errors&lt;/strong> to clear all existing logs from the system. Any changes after this time will be added to the logs again and visible to users.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
+&lt;p>To find out about other ways to get help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/help">Help&lt;/a>.&lt;/p></description></item></channel></rss>
