@@ -37,7 +37,7 @@ Existing shared processes appear within this section in the right-hand side of t
 
 -	 **Title** - provide a title for the shared process
 -	 **Instructions for partner** - provide instructions for the selected partner
--	 Click on the plus symbol to add a selected process design.	
+-	 Click on the **plus symbol** to add a selected process design.	
 
 3. Click on the dropdown list to add an existing process.
 
