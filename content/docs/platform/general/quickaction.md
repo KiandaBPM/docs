@@ -78,15 +78,15 @@ This icon alerts you when actions happen associated with processes, for example 
 
 The information found under User profile includes your name, email, role for example Administrator and options to update your information.
 
-![My account information](/../content/docs/platform/administration/quickaction.assets/myaccount.png)
+![My account information](/images/myaccount.png)
 
 To update your information, you can:
 
-1. Add your photo by clicking on the **Update profile picture** button ![Update profile picture button](/../content/docs/platform/administration/quickaction.assets/profilepic.png)
+1. Add your photo by clicking on the **Update profile picture** button ![Update profile picture button](/images/profilepic.png)
 
 2. Change your password by clicking on **Change Password**. You need to type in your current password and then your new password twice and click on **Change Password** or click on **Close** to exit the dialog box.
 
-   ![Change password](/../content/docs/platform/administration/quickaction.assets/changepassword.png)
+   ![Change password](/images/changepassword.png)
 
 3. Update your profile by clicking on **Update My Profile**. Type in your **Job title,** **Department** and **Phone number** and click on **Update Profile** or click on **Close **to exit the dialog box.
 
@@ -94,15 +94,15 @@ To update your information, you can:
 
 5. Work offline by clicking moving the slider button across. When you do this you will get a message to say 
 
-   Offline mode is enabled. TO COME BACK TO
+   Offline mode is enabled. 
 
-   ![Work offline](/../content/docs/platform/administration/quickaction.assets/workoffline.png)
+   ![Work offline](/images/workoffline.png)
 
    If you move the slider back then Offline mode is disabled.
 
 6. View the system version of Kianda, for example System version 2.11.3
 
-7. Collapse account information by clicking on the **User profile** button ![User profile](C:\Kianda\docs-dev\platform\quickaction.assets\userprofile.png) again. 
+7. Collapse account information by clicking on the **User profile** button ![User profile](/images/userprofile.png) again. 
 
 
 

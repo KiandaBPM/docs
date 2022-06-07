@@ -1,0 +1,28 @@
+---
+title: "Your workspace"
+weight: 9
+typora-root-url: ..\..\..\..\static
+---
+
+When you login to Kianda for the first time, you are presented with an easy-to-use interface, your Kianda **workspace**, that contains all the functions you need for your role.
+
+***Kianda workspace***
+
+![User interface](/images/workspace4.gif)
+
+The layout of the Kianda workspace is as follows:
+
+1. **Company logo** - the top left-hand corner is reserved for uploading company logos. If you click on the **Collapse navigation** button ![Collapse navigation button](/images/navigation_frame_copy.png) you will see the collapsed version of the company logo and collapsed side menu, giving you more real estate in the central view panel.
+2. **Side menu** - Beneath the logo is the left-hand pane, the side menu, containing all of the key functions within **[Administration](/docs/platform/administration)** that you need to create and manage your business processes. From this menu for example you can start creating processes using **[Designer](/docs/platform/administration/designer)**. In this left side menu, under **More**, there are links to get **[Help](/docs/platform/general/help)**, **[Support](/docs/platform/general/support)**, and give **[Feedback](/docs/platform/general/feedback)**, Click on each of the links for more details.
+3. **Quick Action menu** - the top right-hand menu bar contains shortcuts to keep you updated, for example **user notifications** and the ability to **add dashboard pages**, see **[Quick action menu](/docs/platform/general/quickaction/)** for more details.
+4. **Main view** - the central view panel is the main view for any of the functions chosen from the side menu. Here you can **view and edit** processes and dashboards.
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+Go to [Personalise your workspace](/docs/getting-started/logging-in/personalise-workspace/) to find out how to change the look and feel of your workspace and to set regional settings.
+
+To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
+
+To find out about other ways to get help and support, go to [Help](/docs/platform/administration/help).
