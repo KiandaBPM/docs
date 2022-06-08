@@ -1,14 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – User rules</title><link>https://docs.kianda.com/docs/platform/rules/users/</link><description>Recent content in User rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/users/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Get user profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/get-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/get-user-property/</guid><description>
 &lt;p>This rule is used to get data from the selected user profile. A user profile contains properties such as first name, last name, department etc..&lt;/p>
-&lt;p>&lt;img src="images/getuserproperty.png" alt="Send email rule dialog box">&lt;/p>
-&lt;h6 id="when-to-use">When to use&lt;/h6>
+&lt;p>&lt;img src="https://docs.kianda.com/images/getuserproperty.png" alt="Send email rule dialog box">&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h6 id="how-to-use">How to use&lt;/h6>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
 &lt;p>To get a user property (e.g. department) for a given user:&lt;/p>
 &lt;ol>
 &lt;li>Before adding the rule, add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to User Property.&lt;/li>
@@ -19,32 +19,27 @@
 &lt;li>From the drop down list, choose a user property e.g. department.&lt;/li>
 &lt;li>Click OK.&lt;/li>
 &lt;/ol>
-&lt;h6 id="notes">Notes&lt;/h6>
+&lt;h3 id="notes">Notes&lt;/h3>
 &lt;p>Administrators can view the profile properties for any user by selecting Administration &amp;gt; Users and clicking on the user&amp;rsquo;s name.&lt;/p></description></item><item><title>Docs: Invite partner</title><link>https://docs.kianda.com/docs/platform/rules/users/invite-partner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/invite-partner/</guid><description>
 &lt;p>This rule sends an invitation to a partner to share a process.
-&lt;img src="images/invitepartner.png" alt="Invite partner dialog box">&lt;/p>
+&lt;img src="https://docs.kianda.com/images/invitepartner.png" alt="Invite partner dialog box">&lt;/p>
 &lt;h6 id="when-to-use">When to use&lt;/h6>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h6 id="how-to-use">How to use&lt;/h6>
-&lt;p>To invite a partner to share a process:
-1.&lt;/p>
-&lt;h6 id="notes">Notes&lt;/h6>
-&lt;p>None.&lt;/p></description></item><item><title>Docs: Lookup user by profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Lookup user by profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</guid><description>
 &lt;p>This rule is used to look up a user using one of the properties in their profile such as first name, last name, email, department etc..&lt;/p>
-&lt;p>&lt;img src="images/lookupuserbyproperty.png" alt="Look up user by property dialog box">&lt;/p>
-&lt;h6 id="when-to-use">When to use&lt;/h6>
+&lt;p>&lt;img src="https://docs.kianda.com/images/lookupuserbyproperty.png" alt="Look up user by property dialog box">&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h6 id="how-to-use">How to use&lt;/h6>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
 &lt;p>To look up a user by first name:&lt;/p>
 &lt;ol>
 &lt;li>Before adding the rule, add a text field to store the First Name and a user picker field to store the User:&lt;/li>
@@ -61,19 +56,17 @@
 &lt;li>For Field value or text, select the First Name field.&lt;/li>
 &lt;li>For User field to store lookup result, choose the User field.&lt;/li>
 &lt;li>Click OK.&lt;/li>
-&lt;/ol>
-&lt;h6 id="notes">Notes&lt;/h6>
-&lt;p>None.&lt;/p></description></item><item><title>Docs: Update user profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</guid><description>
+&lt;/ol></description></item><item><title>Docs: Update user profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</guid><description>
 &lt;p>This rule is used to update a property in a user profile.&lt;/p>
-&lt;p>&lt;img src="images/updateuserproperty.png" alt="Update user property dialog box">&lt;/p>
-&lt;h6 id="when-to-use">When to use&lt;/h6>
+&lt;p>&lt;img src="https://docs.kianda.com/images/updateuserproperty.png" alt="Update user property dialog box">&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h6 id="how-to-use">How to use&lt;/h6>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
 &lt;p>To update the phone number for a given user:&lt;/p>
 &lt;ol>
 &lt;li>Before adding the rule, add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to Phone.&lt;/li>
@@ -83,6 +76,4 @@
 &lt;li>For Field to store user profile property, choose the new Phone field.&lt;/li>
 &lt;li>From the drop down list, choose the user property to update i.e. Phone number.&lt;/li>
 &lt;li>Click OK.&lt;/li>
-&lt;/ol>
-&lt;h6 id="notes">Notes&lt;/h6>
-&lt;p>None.&lt;/p></description></item></channel></rss>
+&lt;/ol></description></item></channel></rss>

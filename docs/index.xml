@@ -203,6 +203,8 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/one.png" alt="1"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">&lt;strong>Plan your process&lt;/strong>&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/two.png" alt="2"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/">&lt;strong>Design and build your process&lt;/strong>&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/three.png" alt="3"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/publish-your-process/">&lt;strong>Publish your process&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Docs: Rule conditions</title><link>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</guid><description>
+&lt;p>Flexible and dynamic conditions form an important component to make forms fully dynamic. It enables you to create natural language conditions when rules should be triggered.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/condition-editor.png" alt="Conditiion Editor">&lt;/p>
 &lt;p>Conditions can be applied throughout your Kianda form to ensure your rules, etc. only run at specific points depending on certain criteria being met.&lt;/p>
 &lt;p>&lt;strong>When to use:&lt;/strong>&lt;/p>
 &lt;p>Conditions should be used when a rule should only be triggered at a specific point, i.e. an email only being sent if the status of a request is not closed.&lt;/p>

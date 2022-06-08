@@ -85,22 +85,16 @@ Allows copying files between datasources. Use this file together with two file f
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-use">How to use&lt;/h2>
-&lt;p>Generate an excel workbook dynamically from process data.&lt;/p>
-&lt;p>Workbook generation based on XLSX template with dynamic form mappings&lt;/p>
-&lt;p>&lt;strong>Note&lt;/strong>: Kianda task-pane is required for mapping the field values to the excel template. Download the Kianda task pane from the Office store.&lt;/p>
-&lt;p>Generating MS excel document using Kianda is just a matter of few simple steps. For example, lets generate file on submission with fields like first name, last name, DOB, email, address, city and country. To do so:&lt;/p>
-&lt;p>Go to Microsoft Excel.
-Have the template ready with the above fields.
-Click on the Kianda Task-pane on the right top corner (Home page).
-Now, login to Kianda using your User name and Password.
-Click on two-sided arrows ⇄ and select a process from the drop-down.
-Now place the cursor next to the field on the word document, select the appropriate field on the Kianda Task-pane and click on &amp;lsquo;Insert&amp;rsquo; (repeat this for all the fields).
-Save the document and go back to Kianda. Navigate to Designer &amp;gt; and select appropriate process.
-Add two file fields on the form. First file field should store the above saved template (this template should not be deleted and this field should be connected to data source).
-Select the &amp;lsquo;Submit&amp;rsquo; button and navigate to File management &amp;gt; Generate excel workbook
-You can optionally add conditions.
-Now, Select document template as the first file field with template stored in it and Select document destination as the second file field.
-Click on &amp;lsquo;OK&amp;rsquo;&lt;/p></description></item><item><title>Docs: Generate word document</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</guid><description>
+&lt;h6 id="how-to-use-1">How to use&lt;/h6>
+&lt;p>To generate an Excel workbook from data stored in a process:&lt;/p>
+&lt;ol>
+&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to .&lt;/li>
+&lt;li>Select the Submit button.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
+&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
+&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Generate word document</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</guid><description>
 &lt;p>This rule generates a word document from data stored in the process using a word DOCX template.&lt;br>
 &lt;img src="https://docs.kianda.com/images/generateworddocument.png" alt="Send email rule dialog box">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
@@ -108,25 +102,41 @@ Click on &amp;lsquo;OK&amp;rsquo;&lt;/p></description></item><item><title>Docs: 
 &lt;p>Associate this rule to any form component.&lt;/p>
 &lt;h2 id="how-to-use">How to use&lt;/h2>
 &lt;p>Note: Kianda task-pane is required for mapping the field values to the word document.&lt;/p>
-&lt;p>Generating word document using Kianda is just a matter of few simple steps. For example, lets generate a word document on submission with fields like first name, last name, DOB, email, address, city and country. To do so:&lt;/p>
-&lt;p>Go to Microsoft Word.
-Have the template ready with the above fields (as shown in the video).
-Click on the Kianda Task-pane on the right top corner (Home page).
-Now, login to Kianda using your User name and Password.
-Click on two-sided arrows ⇄ and select a process from the drop-down.
-Now place the cursor next to the field on the word document, select the appropriate field on the Kianda Task-pane and click on &amp;lsquo;Insert&amp;rsquo; (repeat this for all the fields).
-Save the document and go back to Kianda. Navigate to Designer &amp;gt; and select appropriate process.
-Add two file fields on the form. First file field should store the above saved template (this template should not be deleted and this field should be connected to data source).
-Select the &amp;lsquo;Submit&amp;rsquo; button and navigate to File management &amp;gt; Generate word document.
-You can optionally add conditions.
-Now, Select document template as the first file field with template stored in it and Select document destination as the second file field.
-You can chose to convert to PDF and click on &amp;lsquo;OK&amp;rsquo;&lt;/p></description></item><item><title>Docs: Merge PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</guid><description>
+&lt;h6 id="how-to-use-1">How to use&lt;/h6>
+&lt;p>To generate a word document from data stored in a process:&lt;/p>
+&lt;ol>
+&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to .&lt;/li>
+&lt;li>Select the Submit button.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
+&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
+&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Merge PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</guid><description>
 &lt;p>This rule merges two or more PDF files into a single file. It is also possible to merge to or more image files.
 &lt;img src="https://docs.kianda.com/images/mergepdf.png" alt="Send email rule dialog box">&lt;/p>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>Use this rule when your process requires you to merge dynamically two or more PDF files. For example automatically merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.&lt;/p></description></item><item><title>Docs: Set existing file field</title><link>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</guid><description>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>Use this rule when your process requires you to merge dynamically two or more PDF files. For example automatically merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.&lt;/p>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;p>To merge two PDF files into a single file:&lt;/p>
+&lt;ol>
+&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to one of a desired name .&lt;/li>
+&lt;li>Select the Submit button.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
+&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
+&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Set existing file field</title><link>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</guid><description>
 &lt;p>This rule enables to construct the file field reference based on provided file URL path
 &lt;img src="https://docs.kianda.com/images/setexistingfile.png" alt="Send email rule dialog box">&lt;/p>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
 &lt;p>Use this rule when your process requires you to bring an existing file dynamically into the form without having the user uploading such file. For example if proving a mechanism to allow the end user to search for file(s) you might use the results of this search as input of an existing file field based on displayname and file url.&lt;/p>
-&lt;p>Add this rule to any form component.&lt;/p></description></item></channel></rss>
+&lt;p>Add this rule to any form component.&lt;/p>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;ol>
+&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to one of desired choice.&lt;/li>
+&lt;li>Select the Submit button.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
+&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
+&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol></description></item></channel></rss>

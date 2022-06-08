@@ -60,51 +60,131 @@ Multiple conditions can be grouped with condition groups.&lt;/p>
 &lt;p>&lt;a href="rules_dates.md">Dates&lt;/a>&lt;/p>
 &lt;p>&lt;a href="rules_form_actions.md">Form actions&lt;/a>&lt;/p>
 &lt;p>&lt;a href="rules_sharepoint.md">Sharepoint&lt;/a>&lt;/p>
-&lt;p>&lt;a href="rules_kianda_ai.md">Kianda_AI&lt;/a>&lt;/p></description></item><item><title>Docs: Workflow rules</title><link>https://docs.kianda.com/docs/platform/rules/workflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/</guid><description/></item><item><title>Docs: Communication rules</title><link>https://docs.kianda.com/docs/platform/rules/communications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/communications/</guid><description>
+&lt;p>&lt;a href="rules_kianda_ai.md">Kianda_AI&lt;/a>&lt;/p></description></item><item><title>Docs: Workflow rules</title><link>https://docs.kianda.com/docs/platform/rules/workflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/</guid><description>
+&lt;p>Kianda workflow rules represent the actions a user intend to perform when they interact with form components. Below are the workflow rules:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;h3 id="hide-or-disable">Hide or disable&lt;/h3>
+&lt;p>This rule is used to hide, disable, show or enable one or more fields, one or more sections or entire forms. This rule has special meaning in terms of workflow allowing the application to direct user action and flow by hidding or showing entire sections of the application.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h3 id="go-to-form">Go to form&lt;/h3>
+&lt;p>Go to form rule navigates the user from the current form to the destination form. This rule could also set the destination form&amp;rsquo;s display mode.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h3 id="assign-form">Assign form&lt;/h3>
+&lt;p>This rule enables dynamic form ownership and form security assigment of a form owner by assigning a user or a group to a form. You could also choose to override or append the form owner. By default only form owners can see the form in edit&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h3 id="process-security">Process security&lt;/h3>
+&lt;p>This rule defines the security of the entire process instance (record). Using this rule, you could add any user or group with the right permissions to view/update any instances.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h3 id="start-a-sub-process">Start a (sub) process&lt;/h3>
+&lt;p>Start a process rule helps you create a new instance of the same process or a different process. You could also map the inputs from the current instance to a new instance.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;h3 id="schedule-a-rule">Schedule a rule&lt;/h3>
+&lt;p>This rule helps you schedule a rule/rules to be triggered one time, with a recurring schedule or immediately. For example, this rule could be used to schedule a daily reminder email to a user if the task is not complete.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>We have briefly introduced each of the six types of &lt;strong>Workflow rules&lt;/strong>. Now let&amp;rsquo;s look at each of these types of rules in more detail:&lt;/p></description></item><item><title>Docs: Communication rules</title><link>https://docs.kianda.com/docs/platform/rules/communications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/communications/</guid><description>
 &lt;p>Communication rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable automated communications with process users, for example sending meeting requests or even user push notifications.&lt;/p>
 &lt;h2 id="getting-started-with-communication-rules">Getting started with Communication rules&lt;/h2>
 &lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the Communication rules are found in the left-hand pane when you click on &lt;strong>Communications&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/communications.png" alt="Communication rules">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/communication-rules-all.jpg" alt="Communication rules">&lt;/p>
 &lt;p>There are four types of Communication rules as follows:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>Send email&lt;/p>
+&lt;p>&lt;strong>Send email&lt;/strong> - allows you to send automated emails that contain images, text, process and other links and attachments.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Meeting request&lt;/p>
+&lt;p>&lt;strong>Meeting request&lt;/strong> - allows you to send automated emails that contain a meeting request.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Anonymous form link&lt;/p>
+&lt;p>&lt;strong>Anonymous form link&lt;/strong> - this rule creates a link to a form which can be sent to external users,.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>User alert&lt;/p>
+&lt;p>&lt;strong>User alert&lt;/strong> - this rule sends an alert to a user who can then access a process instance.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: Data rules</title><link>https://docs.kianda.com/docs/platform/rules/data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/</guid><description>
-&lt;p>Data rules is the category of rules that enables that flow between data connectors and form elements, for example reading or writing data from a database table or performing data manipulation with the &lt;a href="set_form_field.md">Set form field rule&lt;/a> expressions.&lt;/p>
+&lt;p>Data rules is the category of rules that enables the flow of data between data connectors and form elements, for example reading or writing data from a database table or performing data manipulation with the &lt;a href="set_form_field.md">Set form field rule&lt;/a> expressions.&lt;/p>
 &lt;h2 id="getting-started-with-data-rules">Getting started with Data rules&lt;/h2>
 &lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the Data rules are found in the left-hand pane when you click on &lt;strong>Data&lt;/strong>.&lt;/p>
 &lt;p>There are five types of data rules as follows:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>Create item - Use this rule together with a datasource to perform a create / insert query and return data identifiers for use with the form.&lt;/p>
+&lt;p>Create item - The create item rule is used to create an item on your data-connection. This is a straight forward rule which allows you to connect to your data source and map inputs. You can also map a data source field or text back to Kianda on success or store an error message on failure.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Delete item - Use this rule together with a datasource to perform a delete query and return data identifiers for use with the form.&lt;/p>
+&lt;p>Delete item - This rule works exactly like Update item rule. To delete an item from your data connection, you could use a data source filter and map data source field or text from a data connection to Kianda form field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Update item - Use this rule together with a datasource to perform an update query and return data identifiers for use with the form.&lt;/p>
+&lt;p>Update item - At any point, if you would like to update any item on your data connection, use this rule. To find an item to update, you could use a data source filter and map the input fields or text.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Find Items - Use this rule together with a datasource to perform a query and return data for use with the form.&lt;/p>
+&lt;p>Find Items - Use this rule together with a datasource to perform a query and return data for use with the form. To find an item, you could use a data source filter which acts as a conditional bridge between Kianda and data-connections. If the condition is true, you could map the data source field or text to the Kianda form field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Set form field - This rule is used to update the value of fields in a form. Use this rule to copy content between fields or to apply a custom expression to set the value of a given field.&lt;/p>
+&lt;p>Set form field - This rule is used to update the value of fields in a form. The field value could be simple text or based on a custom expression with the ability to define JavaScript expressions. Use this rule to copy content between fields or to apply a custom expression to set the value of a given field.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>We have briefly introduced each of the five types of &lt;strong>Data rules&lt;/strong>. Click on the links below to find out more about each rule in detail.&lt;/p></description></item><item><title>Docs: User rules</title><link>https://docs.kianda.com/docs/platform/rules/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/</guid><description/></item><item><title>Docs: File management rules</title><link>https://docs.kianda.com/docs/platform/rules/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/</guid><description/></item><item><title>Docs: Table rules</title><link>https://docs.kianda.com/docs/platform/rules/tables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/</guid><description/></item><item><title>Docs: Date rules</title><link>https://docs.kianda.com/docs/platform/rules/dates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/</guid><description/></item><item><title>Docs: Form action rules</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/</guid><description>
+&lt;p>We have briefly introduced each of the five types of &lt;strong>Data rules&lt;/strong>. Click on the links below to find out more about each rule in detail.&lt;/p></description></item><item><title>Docs: User rules</title><link>https://docs.kianda.com/docs/platform/rules/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/</guid><description>
+&lt;p>User rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable operations based on user attributes, such as updating user properties and looking up users in a data connector by property.&lt;/p>
+&lt;h2 id="getting-started-with-user-rules">Getting started with User rules&lt;/h2>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the User rules are found in the left-hand pane when you click on &lt;strong>Users&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-rules.jpg" alt="User rules">&lt;/p>
+&lt;p>There are four types of User rules as follows:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Get user property&lt;/strong> - this rule is used to get data from a selected user profile.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Lookup user by property&lt;/strong> - this rule is used to look up a user by attribute, for example email address.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Invite partner&lt;/strong> - this rule sends an invitation to a contact in a partner organisation for them to access a shared process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Update user property&lt;/strong> - this rule is used to update a property in a user profile.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: File management rules</title><link>https://docs.kianda.com/docs/platform/rules/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/</guid><description>
+&lt;p>&lt;strong>Management&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable operations such as the generation of Word documents, and conversion to PDF format.&lt;/p>
+&lt;h2 id="getting-started-with-management-rules">Getting started with Management rules&lt;/h2>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the User rules are found in the left-hand pane when you click on &lt;strong>File management&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/file-managemt-rules.jpg" alt="File management rules">&lt;/p>
+&lt;p>There are seven types of Management rules as follows:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Copy file&lt;/strong> - this rule copies a file from one data location to another.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Convert to PDF&lt;/strong> - this rule converts a Word document to PDF format.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Generate word document&lt;/strong> - this rule generates a Word document from data associated with a process instance using a user-designed template.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Generate excel document&lt;/strong> - this rule generates an Excel workbook from data associated with a process instance using a user-designed template.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Set existing file&lt;/strong> - this rule is used to make an existing file available within a configured file field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Merge PDF&lt;/strong> - this rule merges two or more PDF files into a single PDF file.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Create a file anonymous link&lt;/strong> - this rule generates file links that can be shared anonymously to external users.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: Table rules</title><link>https://docs.kianda.com/docs/platform/rules/tables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/</guid><description/></item><item><title>Docs: Date rules</title><link>https://docs.kianda.com/docs/platform/rules/dates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/</guid><description/></item><item><title>Docs: Form action rules</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/</guid><description>
 &lt;p>Rules within the form action rules allow to perform form specific actions such as saving a form / process, submiting a form, closing a form, deleting a process and validating form input.&lt;/p>
 &lt;p>There are six form action rules as follows:&lt;/p>
 &lt;ul>

@@ -233,15 +233,15 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/rulesgeneral.png" alt="Rules">&lt;/p>
 &lt;p>There are 10 categories of rules:&lt;/p>
 &lt;ol>
-&lt;li>&lt;strong>Workflow&lt;/strong> - rules that represent the actions a user intends to perform, when they interact with form components. There are 6 workflow rules, see &lt;a href="workflow/">Workflow&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Communications&lt;/strong> - rules associated with user communication for example sending an email or triggering a user alert. There are 4 communication rules, see &lt;a href="communications/">Communications&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Data&lt;/strong> - rules associated with database operations like create, update and delete. There are 5 data rules, see &lt;a href="data/">Data&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Users&lt;/strong> - rules associated with user properties, allowing user lookup or update a user. There are 4 user rules, see &lt;a href="users/">Users&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Workflow&lt;/strong> - rules that represent the actions a user intends to perform when they interact with form components. These rules enable you to execute actions that can change the flow of information within a process. There are 6 workflow rules, see &lt;a href="workflow/">Workflow&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Communications&lt;/strong> - rules associated with user communication for example sending an email, meeting request or triggering a user alert. There are 4 communication rules, see &lt;a href="communications/">Communications&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Data&lt;/strong> - rules associated with database operations Create, Read, Update and Delete (CRUD) allowing these actions to occur on configured data sources. There are 5 data rules, see &lt;a href="data/">Data&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Users&lt;/strong> - rules associated with user properties, allowing user lookup based on a user attribute or retrieve a user property. There are 4 user rules, see &lt;a href="users/">Users&lt;/a> for more information.&lt;/li>
 &lt;li>&lt;strong>File management&lt;/strong> - rules concerned with generating documents such as Word, Excel or converting to PDF. There are 7 file management rules, see &lt;a href="files/">File Management&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Tables&lt;/strong> - rules associated with table operations such as updating, adding and removing table rows. There are 12 table rules, see &lt;a href="tables/">Tables&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Dates&lt;/strong> - date rules to calculate time and format dates. There are 4 date rules, see &lt;a href="dates/">Dates&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Tables&lt;/strong> - rules associated with table operations such as sorting, copying table rows to another table, adding and removing table rows. There are 12 table rules, see &lt;a href="tables/">Tables&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Dates&lt;/strong> - date rules to calculate time and format dates with advanced filter options like omitting weekends or special dates . There are 4 date rules, see &lt;a href="dates/">Dates&lt;/a> for more information.&lt;/li>
 &lt;li>&lt;strong>Form actions&lt;/strong> - rules linked to actions that are part of forms, for example submit, close or save. There are 6 form rules, see &lt;a href="form-actions/">Form actions&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>SharePoint&lt;/strong> - SharePoint associated rules such as adding, finding or removing users. There are 10 SharePoint rules, see &lt;a href="sharepoint/">SharePoint&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>SharePoint&lt;/strong> - SharePoint associated rules such as adding, finding or removing users, defining permissions and check-in/checkout of an item. There are 10 SharePoint rules, see &lt;a href="sharepoint/">SharePoint&lt;/a> for more information.&lt;/li>
 &lt;li>&lt;strong>KiandaAI&lt;/strong> - there is 1 KiandaAI rule related to text analysis, see &lt;a href="kianda-AI/">KiandaAI&lt;/a> for more information.&lt;/li>
 &lt;/ol>
 &lt;h3 id="rule-design">Rule design&lt;/h3>
