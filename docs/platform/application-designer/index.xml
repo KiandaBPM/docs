@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Application designer</title><link>https://docs.kianda.com/docs/platform/application-designer/</link><description>Recent content in Application designer on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/application-designer/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/designer/</guid><description>
 &lt;p>Kianda &lt;strong>Designer&lt;/strong> provides an intuitive interface where you can quickly start building &lt;strong>forms&lt;/strong> for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).&lt;/p>
-&lt;h3 id="how-the-designer-works">How the designer works&lt;/h3>
+&lt;h3 id="how-designer-works">How Designer works&lt;/h3>
 &lt;p>This video introduces Kianda Designer and demonstrates how to start creating a form and add fields.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/designerintro.mp4">
@@ -73,13 +73,12 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-&lt;ol>
-&lt;li>
-&lt;p>If you have created a process from scratch, an empty form is added to your process by default, called &amp;ldquo;form 1&amp;rdquo;. This is the first form. Click on this form and the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to customise it. You can also click on the &lt;strong>Add form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addform.png" alt="Add form"> to add a new form.&lt;/p>
+&lt;p>If you have created a process from scratch, an empty form is added to your process by default, called &amp;ldquo;form 1&amp;rdquo;. This is the first form. Click on this form and the &lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to customise it. You can also click on the &lt;strong>Add form&lt;/strong> button to add a new form.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/addform.png" alt="Add form">&lt;/p>
+&lt;h4 id="editing-forms">Editing forms&lt;/h4>
+&lt;p>When you click on a chosen form, then click on the &lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to edit the form.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/form1_resized.png" alt="Edit form">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>There are a number of edit options below.&lt;/p>
+&lt;p>The &lt;strong>Edit form&lt;/strong> dialog box opens where you can edit the fields. There are a number of edit options below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/editingform.png" alt="Edit form options">&lt;/p>
 &lt;p>Note: as you change any of the options in the dialog box, the impact will be shown in real-time on the form in the background, for example a title, or colour form theme.&lt;/p>
 &lt;ol>
@@ -132,7 +131,7 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;/ol>
 &lt;p>As a form designer you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If &lt;strong>Edit mode&lt;/strong> is chosen, then the button will only appear when the form is being &lt;strong>edited&lt;/strong>. In this way you can create dynamic forms that suit user interactions.&lt;/p>
-&lt;/li>
+&lt;ol>
 &lt;li>
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;/li>
@@ -204,41 +203,41 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Enable process security&lt;/strong> - if you tick the checkbox, can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/processsecurity.png" alt="Process security">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/process_security.png" alt="Process security">&lt;/p>
 &lt;p>The default setting is &lt;strong>Security users can create, assign to can update, everyone else can view&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>On load rules execution mode&lt;/strong> - options are a) Always b) When in edit mode or c) When open new. The default setting is &lt;strong>Always&lt;/strong>. TO COME BACK TO&lt;/p>
+&lt;p>&lt;strong>On load rules execution mode&lt;/strong> - options are a) &lt;strong>Always&lt;/strong> b) &lt;strong>When in edit mode&lt;/strong> or c) &lt;strong>When open new&lt;/strong>. The default setting is &lt;strong>Always&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Hide form tabs&lt;/strong> - gives you the ability to hide form tabs, options are a) Yes or b) No&lt;/p>
+&lt;p>&lt;strong>Hide form tabs&lt;/strong> - gives you the ability to hide form tabs, options are a) &lt;strong>Yes&lt;/strong> or b) &lt;strong>No&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Hide left nav&lt;/strong> - gives you the ability to hide navigation elements, options are a) Yes or b) No&lt;/p>
+&lt;p>&lt;strong>Hide left nav&lt;/strong> - gives you the ability to hide navigation elements, options are a) &lt;strong>Yes&lt;/strong> or b) &lt;strong>No&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Enable anonymous sharing of forms&lt;/strong> - gives you the ability to share forms with people outside your organisation for example a feedback form or GDPR subject access request. Options are a) Yes or b) No. If you click on &lt;strong>Yes&lt;/strong> there are various options that you can add:&lt;/p>
+&lt;p>&lt;strong>Enable anonymous sharing of forms&lt;/strong> - gives you the ability to share forms with people outside your organisation for example a feedback form or GDPR subject access request. Options are a) &lt;strong>Yes&lt;/strong> or b) &lt;strong>No&lt;/strong>. If you click on &lt;strong>Yes&lt;/strong> there are various options that you can add:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Message to display after anonymous submission&lt;/strong> - to add a display message&lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/anonlink.png" alt="Link for external users">&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Hide form topbar&lt;/strong> - checkbox to COME BACK TO&lt;/li>
+&lt;li>&lt;strong>Hide form topbar&lt;/strong> - checkbox to allow you to hide the form form topbar.&lt;/li>
 &lt;li>&lt;strong>Force log out&lt;/strong> - options are a) Yes or b) No to force user logout once the form is submitted&lt;/li>
-&lt;li>Click on &lt;strong>New link&lt;/strong> to generate a new anonymous form link to share with users and click on &lt;strong>Edit&lt;/strong> to change the link. TO COME BACK TO - Existing instance anonymous form URL&lt;/li>
+&lt;li>Click on &lt;strong>New link&lt;/strong> to generate a new anonymous form link to share with users and click on &lt;strong>Edit&lt;/strong> to change the link.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Enable mobile bottom navigation&lt;/strong> - options are a) Yes or b) No TO COME BACK TO&lt;/p>
+&lt;p>&lt;strong>Enable mobile bottom navigation&lt;/strong> - options are a) &lt;strong>Yes&lt;/strong> or b) &lt;strong>No&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Instance delete settings&lt;/strong> - options are a) Any user can delete b) Creator can delete c) &amp;ldquo;Current form owner&amp;rdquo; can delete d) &amp;ldquo;Security users&amp;rdquo; can delete e) &amp;ldquo;Admins only&amp;rdquo; can delete. The default setting is &lt;strong>Creator can delete&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Enable form assignment notification&lt;/strong> - options are a) Yes or b) No TO COME BACK TO&lt;/p>
+&lt;p>&lt;strong>Enable form assignment notification&lt;/strong> - options are a) &lt;strong>Yes&lt;/strong> or b) &lt;strong>No&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Prevent closing instance with unsaved data&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;p>&lt;strong>Prevent closing instance with unsaved data&lt;/strong> - options are a) &lt;strong>Yes&lt;/strong> or b) &lt;strong>No&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Selected tab theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is selected.&lt;/p>
@@ -319,7 +318,7 @@ Your browser does not support the video tag.
 &lt;li>&lt;strong>Visible&lt;/strong> - the button is visible to users&lt;/li>
 &lt;li>&lt;strong>Perform validation&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Show in display mode&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Layout&lt;/strong> - change the width of the field {TO COME BACK TO - does this work for buttons??) by clicking on the bar in the Layout box until you see the desired size, from 1 to 12 columns. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width for mobile use.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - change the width of the field by clicking on the bar in the Layout box until you see the desired size, from 1 to 12 columns. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width for mobile use.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize.png" alt="Changing text box width">&lt;/p>
 &lt;ul>
@@ -334,7 +333,9 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/clonefield.png" alt="Cloning">&lt;/p>
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;h4 id="deleting-a-button-or-field">Deleting a button or field&lt;/h4>
-&lt;p>Click on the on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon-16397581516591.png" alt="Bin icon"> and then click on &lt;strong>Ok&lt;/strong> after you have reviewed the form title and you are sure this is what you want to delete. Click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p></description></item><item><title>Docs: Form basics</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/</guid><description>
+&lt;p>Click on the on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon-16397581516591.png" alt="Bin icon"> and then click on &lt;strong>Ok&lt;/strong> after you have reviewed the form title and you are sure this is what you want to delete. Click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read about managing versions of forms, go to the link below:&lt;/p></description></item><item><title>Docs: Form basics</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/</guid><description>
 &lt;p>Processes in Kianda are made up of &lt;strong>forms&lt;/strong>. Forms contain all the buttons, fields, and rule triggers needed to execute your process.&lt;/p>
 &lt;p>There are three principles to consider when working with forms:&lt;/p>
 &lt;ul>
