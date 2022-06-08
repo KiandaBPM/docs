@@ -139,7 +139,127 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image controls&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link/">Link controls&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature/">Signature controls&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Image control</title><link>https://docs.kianda.com/docs/platform/controls/actions/image/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/image/</guid><description/></item><item><title>Docs: Link control</title><link>https://docs.kianda.com/docs/platform/controls/actions/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/link/</guid><description/></item><item><title>Docs: Signature control</title><link>https://docs.kianda.com/docs/platform/controls/actions/signature/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/signature/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Image control</title><link>https://docs.kianda.com/docs/platform/controls/actions/image/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/image/</guid><description/></item><item><title>Docs: Link control</title><link>https://docs.kianda.com/docs/platform/controls/actions/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/link/</guid><description>
+&lt;p>&lt;strong>Link fields&lt;/strong> can be used to add custom links to forms, including external links.&lt;/p>
+&lt;p>For example, as part of an Employee Appraisal Process, a manager may complete a Performance Plan form for each employee, setting out their Key Performance Areas and goals. It could be useful to add a Link Field to this form that links to the company&amp;rsquo;s Employee Handbook. We will keep this example in mind as we learn more about using &lt;strong>Link controls&lt;/strong>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To add a &lt;strong>Link field&lt;/strong> to a Kianda form:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/designer-open-process.jpg" alt="Open process in Designer">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once you have opened your process, select the form you want to work on (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> is shown).&lt;/p>
+&lt;p>In this example, a Performance Plan form within an Employee Appraisal Process has been selected:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-form-selected.jpg" alt="Select form">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the area within the form where you want to insert the new &lt;strong>Link field&lt;/strong> - in our example, we will select the first panel in the &amp;lsquo;Employee Information&amp;rsquo; section of the form.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-select-area.jpg" alt="Select panel to insert Link field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane, and, from the four categories of Controls (Input, Layout, Actions and Custom), click on &lt;strong>Actions&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Link&lt;/strong> from the four types of Action fields: Button, Link, Image and Signature:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-insert.jpg" alt="Actions menu insert Link">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>New field - Link&lt;/strong> dialog box will automatically open, giving you options for your new Link field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-dialog.jpg" alt="Link field dialog box">&lt;/p>
+&lt;p>The options available in the &lt;strong>New field - Link&lt;/strong> dialog box include:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the Link field from the default &amp;lsquo;&lt;strong>Link 1&lt;/strong>&amp;rsquo;. In our example, we will change the title to &amp;lsquo;Employee Handbook&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the new field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
+&lt;p>In our example, we could insert this help text:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-help-text.jpg" alt="Link field help text &amp;amp;ldquo;Click here to open the latest version of the Employee Handbook&amp;amp;rdquo;">&lt;/p>
+&lt;p>The user will then be able to view this help text by clicking on the question mark icon &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> next to the Link field title:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-help-text-example.jpg" alt="Link field sample help text">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Link target&lt;/strong> - You can choose to have the link either open as a &lt;strong>New tab&lt;/strong> or open in the &lt;strong>Same tab&lt;/strong> the form user is currently in.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Default URL&lt;/strong> - This is where you can insert the URL you want the user to be brought to when they click on the Link field.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Once you complete the &lt;strong>New field - Link&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong> and the new &lt;strong>Link field&lt;/strong> is added to your form.&lt;/p>
+&lt;p>In our example, if we changed the default Link field title to &amp;lsquo;Employee Handbook&amp;rsquo; and inserted help text (as shown previously), our new Link field could look like this when added to our &amp;lsquo;Performance Plan&amp;rsquo; form:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-example.jpg" alt="Link field example titled Employee Handbook">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-edit-move-and-delete-link-fields">How to edit, move and delete Link fields&lt;/h3>
+&lt;p>To edit a &lt;strong>Link field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the Link field (by either clicking on the field name or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-edit.jpg" alt="Edit Link field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Edit Field - Link&lt;/strong> dialog box will open (with the Link field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Link&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-edit-dialog.jpg" alt="Link field Edit field dialog box">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>To move a &lt;strong>Link field&lt;/strong>, simply:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the Link field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Drag and drop the Link field wherever you want to move it within your form.&lt;/p>
+&lt;p>For example, we could move the &amp;lsquo;Employee Handbook&amp;rsquo; &lt;strong>Link field&lt;/strong> by selecting its drag handle and dragging and dropping it wherever we want within our Performance Plan form:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-move.jpg" alt="Move Link field example">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>To delete a &lt;strong>Link field&lt;/strong> from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the Link field (by either clicking on its title or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-view-and-edit-link-control-field-properties">How to view and edit Link control Field properties&lt;/h3>
+&lt;p>To view or edit a Link control&amp;rsquo;s &lt;strong>Field properties&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the Link field (by either clicking on the field&amp;rsquo;s title or &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The Field Properties associated with the &lt;strong>Link field&lt;/strong> field will be displayed (and can be changed) in the &lt;strong>Field properties&lt;/strong> menu to the right.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-field-properties.jpg" alt="Field properties associated with a Link control">&lt;/p>
+&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Link control&lt;/strong> titled &amp;lsquo;Employee Handbook&amp;rsquo; are shown here and include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Link field&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Employee Handbook&amp;rsquo;.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Link field title will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the Link field will be mandatory for the form user.&lt;/li>
+&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Link field will be visible in the form.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Button as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
+&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Link controls&lt;/strong>, find out more about the other types of &lt;strong>Action fields&lt;/strong> you can add to Kianda forms:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button/">Button controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature/">Signature controls&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Signature control</title><link>https://docs.kianda.com/docs/platform/controls/actions/signature/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/actions/signature/</guid><description>
 &lt;p>A &lt;strong>Signature control&lt;/strong> can be used in a form to capture a user&amp;rsquo;s electronic signature. This can be particularly useful in a form that needs to be signed off as part of an approval process.&lt;/p>
 &lt;p>For example, a manager may complete a Performance Plan form for each employee, setting out their Key Performance Areas and goals. It could be useful to add two &lt;strong>Signature fields&lt;/strong> to this form - titled &amp;lsquo;Manager Signature&amp;rsquo; and &amp;lsquo;Employee Signature&amp;rsquo; - to record the Manager and Employee each signing off on the Performance Plan. We will keep this example in mind as we learn more about using Signature fields.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
