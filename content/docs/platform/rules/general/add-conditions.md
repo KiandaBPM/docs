@@ -4,6 +4,10 @@ typora-root-url: ..\..\..\..\..\static
 weight: 1
 ---
 
+Flexible and dynamic conditions form an important component to make forms fully dynamic. It enables you  to create natural language conditions when rules should be triggered.
+
+![Conditiion Editor](/images/condition-editor.png)
+
 Conditions can be applied throughout your Kianda form to ensure your rules, etc. only run at specific points depending on certain criteria being met. 
 
 **When to use:** 

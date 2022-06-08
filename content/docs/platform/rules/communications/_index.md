@@ -12,19 +12,19 @@ Communication rules is one category of [rules](rules/Readme.md) to enable automa
 
 If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the Communication rules are found in the left-hand pane when you click on **Communications**.
 
-![Communication rules](/images/communications.png)
+![Communication rules](/images/communication-rules-all.jpg)
 
 
 
 There are four types of Communication rules as follows:
 
-- Send email
+- **Send email** - allows you to send automated emails that contain images, text, process and other links and attachments.
 
-- Meeting request
+- **Meeting request** - allows you to send automated emails that contain a meeting request. 
 
-- Anonymous form link
+- **Anonymous form link** - this rule creates a link to a form which can be sent to external users,.
 
-- User alert
+- **User alert** - this rule sends an alert to a user who can then access a process instance.
 
   
 

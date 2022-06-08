@@ -4,15 +4,15 @@ title: "Get user profile property"
 
 This rule is used to get data from the selected user profile.  A user profile contains properties such as first name, last name, department etc..  	
 
-![Send email rule dialog box](images/getuserproperty.png)
+![Send email rule dialog box](/images/getuserproperty.png)
 
-###### When to use 
+### When to use 
 You can add this rule:
 - [x] to a field
 - [x] to a form 
 - [x] to a process (the rule will run on load)
 
-###### How to use
+### How to use
 To get a user property (e.g. department) for a given user:
 1. Before adding the rule, add a text field: Click on Controls > Input > Text and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to User Property. 
 2. Select the 'Submit' button.
@@ -24,7 +24,7 @@ To get a user property (e.g. department) for a given user:
 
 
 
-###### Notes
+### Notes
 Administrators can view the profile properties for any user by selecting Administration > Users and clicking on the user's name.
 
 

@@ -25,6 +25,6 @@ To ..SharePoint list
 7. Under On error mapping
 
 ### Notes
-Use this rule together with a datasource to perform an update query and return data identifiers for use with the form. Employ the transactional nature of the rule with input fields, results and error nodes to build retry logic"		
+Use this rule together with a datasource to perform an update query and return data identifiers for use with the form. Employ the transactional nature of the rule with input fields, results and error nodes to build retry logic.		
 
 Mapping for blank fields: then if this flag is set, for example, if there are two fields to be updated and the user wants to update only one, and leaves the other blank, then the filled out field is updated and the other field is left unchanged.
