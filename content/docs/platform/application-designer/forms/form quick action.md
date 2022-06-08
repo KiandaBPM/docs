@@ -49,7 +49,7 @@ To enable quick actions, click on a process with Kianda Designer and then a form
 
   ![Trigger rule quick action](/images/trigger-rule-quick-action.jpg)
 
-    
+​    
 
 
 

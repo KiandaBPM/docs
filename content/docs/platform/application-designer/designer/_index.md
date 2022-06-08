@@ -5,7 +5,7 @@ typora-root-url: ..\..\..\..\..\static
 
 Kianda **Designer** provides an intuitive interface where you can quickly start building **forms** for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).
 
-### How the designer works ### 
+### How Designer works ### 
 
 This video introduces Kianda Designer and demonstrates how to start creating a form and add fields.
 
@@ -89,59 +89,65 @@ Note the name of the process you are working on is shown in the top menu bar, fo
 
 
 
-1. If you have created a process from scratch, an empty form is added to your process by default, called "form 1". This is the first form. Click on this form and the **Pen** button ![Pen icon](/images/penicon.png) to customise it. You can also click on the **Add form** button ![Add form](/images/addform.png) to add a new form. 
+If you have created a process from scratch, an empty form is added to your process by default, called "form 1". This is the first form. Click on this form and the **Edit/Pen** button ![Pen icon](/images/penicon.png) to customise it. You can also click on the **Add form** button to add a new form.
 
-   ![Edit form](/images/form1_resized.png)
+![Add form](/images/addform.png) 
 
-2. There are a number of edit options below.
+#### Editing forms ###
 
-   ![Edit form options](/images/editingform.png)
+When you click on a chosen form, then click on the **Edit/Pen** button ![Pen icon](/images/penicon.png) to edit the form. 
 
-   Note: as you change any of the options in the dialog box, the impact will be shown in real-time on the form in the background, for example a title, or colour form theme.
+![Edit form](/images/form1_resized.png)
 
-   1. **Title** - the form title, for example Employee Request Form
+The **Edit form** dialog box opens where you can edit the fields. There are a number of edit options below.
 
-   2. **Name** - this is a unique name for the form
+![Edit form options](/images/editingform.png)
 
-   3. **Default owner(s)** - by default the form creator is an owner. You can remove this owner by clicking on ![x](/images/x.png) and add other owners by clicking on the arrow and choose from **Users**, **Groups** or **Partners**. 
+Note: as you change any of the options in the dialog box, the impact will be shown in real-time on the form in the background, for example a title, or colour form theme.
 
-      - Users - allows you to choose individual owners
-      - Groups - allows you to choose from defined groups for example HR Team or Management Team
-      - Partners - allows you to choose predefined partner organisations that you want to share with or provide permissions
+1. **Title** - the form title, for example Employee Request Form
 
-   4. **Activate with** - will decide when the form will be active. If you have several forms attached to a process, then select from a dropdown list the form you want to activate with the current form. If you leave the field blank, the new form will be activated **sequentially** after the first form is submitted. 
+2. **Name** - this is a unique name for the form
 
-   5. **Submit mode** - options are a) Only this form (the current form) or b) All forms in edit mode
+3. **Default owner(s)** - by default the form creator is an owner. You can remove this owner by clicking on ![x](/images/x.png) and add other owners by clicking on the arrow and choose from **Users**, **Groups** or **Partners**. 
 
-   6. **Form icon** - click on the arrow to choose from hundreds of icons to attach to your form.
+   - Users - allows you to choose individual owners
+   - Groups - allows you to choose from defined groups for example HR Team or Management Team
+   - Partners - allows you to choose predefined partner organisations that you want to share with or provide permissions
 
-   7. **Form theme** - choose from Navy, Green, Blue, Amber, Red or White Colours for your form.
+4. **Activate with** - will decide when the form will be active. If you have several forms attached to a process, then select from a dropdown list the form you want to activate with the current form. If you leave the field blank, the new form will be activated **sequentially** after the first form is submitted. 
 
-   8. **Enable quick actions** - if you tick the checkbox, you can select from the options a) Enable re-assign b) Enable edit and c) Enable custom action. Click on **Ellipsis** button ![Ellipsis button](/images/ellipsis_frame.png) to further modify the action settings. 
+5. **Submit mode** - options are a) Only this form (the current form) or b) All forms in edit mode
 
-      - If you click on **Enable re-assign**, you can reassign action settings to particular Users, Groups or Partners. Click on **Allow form owners** if you want form owners to be able to reassign actions.
+6. **Form icon** - click on the arrow to choose from hundreds of icons to attach to your form.
 
-      - If you click on **Enable edit**, you can allow certain Users, Groups or Partners to edit the form, along with form owners by clicking on **Allow form owners**. 
+7. **Form theme** - choose from Navy, Green, Blue, Amber, Red or White Colours for your form.
 
-        Other options include a checkbox for **When editing auto hide form footer buttons** and **Trigger rules on save**.
-      
-        - If you check **Trigger rules on save** then click into the **Save action field** to choose from an action trigger as to when the form is saved, for example Submit, Save or Close. These can be other actions depending on what you have defined.
-      
-        ![Edit action settings](/images/editactions_resized.png)
-      
-      - If you click on **Enable custom action**, you can allow certain Users, Groups or Partners to edit the form, along with form owners by clicking on **Allow form owners**. 
-      
-        Other options include **Action label**, **Target action field** and **Action display mode**, for example **Read-only mode**, **Edit mode** or **Both**.  
+8. **Enable quick actions** - if you tick the checkbox, you can select from the options a) Enable re-assign b) Enable edit and c) Enable custom action. Click on **Ellipsis** button ![Ellipsis button](/images/ellipsis_frame.png) to further modify the action settings. 
 
-        ![Custom action settings](/images/customsetting_resized.png)
+   - If you click on **Enable re-assign**, you can reassign action settings to particular Users, Groups or Partners. Click on **Allow form owners** if you want form owners to be able to reassign actions.
 
-   As a form designer you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If **Edit mode** is chosen, then the button will only appear when the form is being **edited**. In this way you can create dynamic forms that suit user interactions.
+   - If you click on **Enable edit**, you can allow certain Users, Groups or Partners to edit the form, along with form owners by clicking on **Allow form owners**. 
 
-3. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
+     Other options include a checkbox for **When editing auto hide form footer buttons** and **Trigger rules on save**.
+   
+     - If you check **Trigger rules on save** then click into the **Save action field** to choose from an action trigger as to when the form is saved, for example Submit, Save or Close. These can be other actions depending on what you have defined.
+   
+     ![Edit action settings](/images/editactions_resized.png)
+   
+   - If you click on **Enable custom action**, you can allow certain Users, Groups or Partners to edit the form, along with form owners by clicking on **Allow form owners**. 
+   
+     Other options include **Action label**, **Target action field** and **Action display mode**, for example **Read-only mode**, **Edit mode** or **Both**.  
 
-4. To save your changes to the form, click on the **Save** button ![Save button](/images/save.png). 
+     ![Custom action settings](/images/customsetting_resized.png)
 
-5. You are now ready to start adding [Controls](fields/README.md) and [Rules](rules/README.md) to your form. You can also implement additional settings see [Process Settings](#process-settings).
+As a form designer you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If **Edit mode** is chosen, then the button will only appear when the form is being **edited**. In this way you can create dynamic forms that suit user interactions.
+
+1. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
+
+2. To save your changes to the form, click on the **Save** button ![Save button](/images/save.png). 
+
+3. You are now ready to start adding [Controls](fields/README.md) and [Rules](rules/README.md) to your form. You can also implement additional settings see [Process Settings](#process-settings).
 
    
 
@@ -209,33 +215,33 @@ Choose from the settings:
 
 2. **Enable process security** - if you tick the checkbox, can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.
 
-   ![Process security](/images/processsecurity.png)
+   ![Process security](/images/process_security.png)
 
    The default setting is **Security users can create, assign to can update, everyone else can view**.
 
-3. **On load rules execution mode** - options are a) Always b) When in edit mode or c) When open new. The default setting is **Always**. TO COME BACK TO
+3. **On load rules execution mode** - options are a) **Always** b) **When in edit mode** or c) **When open new**. The default setting is **Always**. 
 
-4. **Hide form tabs** - gives you the ability to hide form tabs, options are a) Yes or b) No 
+4. **Hide form tabs** - gives you the ability to hide form tabs, options are a) **Yes** or b) **No**.
 
-5. **Hide left nav** - gives you the ability to hide navigation elements, options are a) Yes or b) No 
+5. **Hide left nav** - gives you the ability to hide navigation elements, options are a) **Yes** or b) **No**.
 
-6. **Enable anonymous sharing of forms** - gives you the ability to share forms with people outside your organisation for example a feedback form or GDPR subject access request. Options are a) Yes or b) No. If you click on **Yes** there are various options that you can add:
+6. **Enable anonymous sharing of forms** - gives you the ability to share forms with people outside your organisation for example a feedback form or GDPR subject access request. Options are a) **Yes** or b) **No**. If you click on **Yes** there are various options that you can add:
 
    - **Message to display after anonymous submission** - to add a display message
 
    ![Link for external users](/images/anonlink.png)
 
-   - **Hide form topbar** - checkbox to COME BACK TO
+   - **Hide form topbar** - checkbox to allow you to hide the form form topbar.
    - **Force log out** - options are a) Yes or b) No to force user logout once the form is submitted
-   - Click on **New link** to generate a new anonymous form link to share with users and click on **Edit** to change the link. TO COME BACK TO - Existing instance anonymous form URL
+   - Click on **New link** to generate a new anonymous form link to share with users and click on **Edit** to change the link.
 
-7. **Enable mobile bottom navigation** - options are a) Yes or b) No TO COME BACK TO
+7. **Enable mobile bottom navigation** - options are a) **Yes** or b) **No**.
 
 8. **Instance delete settings** - options are a) Any user can delete b) Creator can delete c) "Current form owner" can delete d) "Security users" can delete e) "Admins only" can delete. The default setting is **Creator can delete**.
 
-9. **Enable form assignment notification** - options are a) Yes or b) No TO COME BACK TO
+9. **Enable form assignment notification** - options are a) **Yes** or b) **No**.
 
-10. **Prevent closing instance with unsaved data** - options are a) Yes or b) No
+10. **Prevent closing instance with unsaved data** - options are a) **Yes** or b) **No**.
 
 11. **Selected tab theme** - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is selected.
 
@@ -307,7 +313,7 @@ The options within properties are:
 - **Visible** - the button is visible to users
 - **Perform validation** 
 - **Show in display mode** 
-- **Layout** - change the width of the field {TO COME BACK TO - does this work for buttons??) by clicking on the bar in the Layout box until you see the desired size, from 1 to 12 columns. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width for mobile use.
+- **Layout** - change the width of the field by clicking on the bar in the Layout box until you see the desired size, from 1 to 12 columns. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width for mobile use.
 
 ![Changing text box width](/images/textboxsize.png)
 
@@ -331,3 +337,9 @@ Click on the **OK** button ![OK button](/images/ok.png) when you are finished ed
 #### Deleting a button or field ####
 
 Click on the on the **Bin/Trash** button ![Bin icon](/images/binicon-16397581516591.png) and then click on **Ok** after you have reviewed the form title and you are sure this is what you want to delete. Click on **Cancel** if you wish to cancel the deletion.
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+To read about managing versions of forms, go to the link below:
