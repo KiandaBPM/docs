@@ -90,11 +90,11 @@ Multiple conditions can be grouped with condition groups.&lt;/p>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced each of the six types of &lt;strong>Workflow rules&lt;/strong>. Now let&amp;rsquo;s look at each of these types of rules in more detail:&lt;/p></description></item><item><title>Docs: Communication rules</title><link>https://docs.kianda.com/docs/platform/rules/communications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/communications/</guid><description>
-&lt;p>Communication rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable automated communications with process users, for example sending meeting requests or even user push notifications.&lt;/p>
+&lt;p>&lt;strong>Communication&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable automated communications with process users, for example sending meeting requests or even user push notifications.&lt;/p>
 &lt;h2 id="getting-started-with-communication-rules">Getting started with Communication rules&lt;/h2>
-&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the Communication rules are found in the left-hand pane when you click on &lt;strong>Communications&lt;/strong>.&lt;/p>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>Communication&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Communications&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/communication-rules-all.jpg" alt="Communication rules">&lt;/p>
-&lt;p>There are four types of Communication rules as follows:&lt;/p>
+&lt;p>There are four types of &lt;strong>Communication&lt;/strong> rules as follows:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Send email&lt;/strong> - allows you to send automated emails that contain images, text, process and other links and attachments.&lt;/p>
@@ -111,22 +111,23 @@ Multiple conditions can be grouped with condition groups.&lt;/p>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: Data rules</title><link>https://docs.kianda.com/docs/platform/rules/data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/</guid><description>
-&lt;p>Data rules is the category of rules that enables the flow of data between data connectors and form elements, for example reading or writing data from a database table or performing data manipulation with the &lt;a href="set_form_field.md">Set form field rule&lt;/a> expressions.&lt;/p>
+&lt;p>&lt;strong>Data&lt;/strong> rules is the category of rules that enables the flow of data between data connectors and form elements, for example reading or writing data from a database table or performing data manipulation with the &lt;a href="set_form_field.md">Set form field rule&lt;/a> expressions.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/data-rules-all.jpg" alt="Data rules">&lt;/p>
 &lt;h2 id="getting-started-with-data-rules">Getting started with Data rules&lt;/h2>
-&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the Data rules are found in the left-hand pane when you click on &lt;strong>Data&lt;/strong>.&lt;/p>
-&lt;p>There are five types of data rules as follows:&lt;/p>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>Data&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Data&lt;/strong>.&lt;/p>
+&lt;p>There are five types of &lt;strong>Data&lt;/strong> rules as follows:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>Create item - The create item rule is used to create an item on your data-connection. This is a straight forward rule which allows you to connect to your data source and map inputs. You can also map a data source field or text back to Kianda on success or store an error message on failure.&lt;/p>
+&lt;p>&lt;strong>Create item&lt;/strong> - The create item rule is used to create an item on your data-connection. This is a straight forward rule which allows you to connect to your data source and map inputs. You can also map a data source field or text back to Kianda on success or store an error message on failure.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Delete item - This rule works exactly like Update item rule. To delete an item from your data connection, you could use a data source filter and map data source field or text from a data connection to Kianda form field.&lt;/p>
+&lt;p>&lt;strong>Delete item&lt;/strong> - This rule works exactly like Update item rule. To delete an item from your data connection, you could use a data source filter and map data source field or text from a data connection to Kianda form field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Update item - At any point, if you would like to update any item on your data connection, use this rule. To find an item to update, you could use a data source filter and map the input fields or text.&lt;/p>
+&lt;p>&lt;strong>Update item&lt;/strong> - At any point, if you would like to update any item on your data connection, use this rule. To find an item to update, you could use a data source filter and map the input fields or text.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Find Items - Use this rule together with a datasource to perform a query and return data for use with the form. To find an item, you could use a data source filter which acts as a conditional bridge between Kianda and data-connections. If the condition is true, you could map the data source field or text to the Kianda form field.&lt;/p>
+&lt;p>&lt;strong>Find Items&lt;/strong> - Use this rule together with a datasource to perform a query and return data for use with the form. To find an item, you could use a data source filter which acts as a conditional bridge between Kianda and data-connections. If the condition is true, you could map the data source field or text to the Kianda form field.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Set form field - This rule is used to update the value of fields in a form. The field value could be simple text or based on a custom expression with the ability to define JavaScript expressions. Use this rule to copy content between fields or to apply a custom expression to set the value of a given field.&lt;/p>
@@ -155,11 +156,11 @@ Multiple conditions can be grouped with condition groups.&lt;/p>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: File management rules</title><link>https://docs.kianda.com/docs/platform/rules/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/</guid><description>
-&lt;p>&lt;strong>Management&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable operations such as the generation of Word documents, and conversion to PDF format.&lt;/p>
-&lt;h2 id="getting-started-with-management-rules">Getting started with Management rules&lt;/h2>
-&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the User rules are found in the left-hand pane when you click on &lt;strong>File management&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>File management&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable operations such as the generation of Word documents, and conversion to PDF format.&lt;/p>
+&lt;h2 id="getting-started-with-file-management-rules">Getting started with File management rules&lt;/h2>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>File management&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>File management&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-managemt-rules.jpg" alt="File management rules">&lt;/p>
-&lt;p>There are seven types of Management rules as follows:&lt;/p>
+&lt;p>There are seven types of &lt;strong>File management&lt;/strong> rules as follows:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Copy file&lt;/strong> - this rule copies a file from one data location to another.&lt;/p>
@@ -184,23 +185,106 @@ Multiple conditions can be grouped with condition groups.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: Table rules</title><link>https://docs.kianda.com/docs/platform/rules/tables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/</guid><description/></item><item><title>Docs: Date rules</title><link>https://docs.kianda.com/docs/platform/rules/dates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/</guid><description/></item><item><title>Docs: Form action rules</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/</guid><description>
-&lt;p>Rules within the form action rules allow to perform form specific actions such as saving a form / process, submiting a form, closing a form, deleting a process and validating form input.&lt;/p>
-&lt;p>There are six form action rules as follows:&lt;/p>
+&lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: Table rules</title><link>https://docs.kianda.com/docs/platform/rules/tables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/</guid><description>
+&lt;p>&lt;strong>Table&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable table operations such as sorting, copying table rows to another table, exporting and importing table data as .csv files and adding and removing table rows. These operations are useful to implement in external data sources, automating actions using Kianda processes.&lt;/p>
+&lt;h2 id="getting-started-with-table-rules">Getting started with Table rules&lt;/h2>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the Table rules are found in the left-hand pane when you click on &lt;strong>Tables&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/table-rules-all.jpg" alt="Table rules">&lt;/p>
+&lt;p>There are 12 types of Table rules as follows:&lt;/p>
 &lt;ul>
-&lt;li>Validate input - provides ability perform flexible data validation and prevents incorrect data submission&lt;/li>
-&lt;li>Field display mode - this rule forces the display mode to override the automatic display mode of fields and forms&lt;/li>
-&lt;li>Submit form - marks the current form as complete and makes it read-only&lt;/li>
-&lt;li>Save form - commits a record or process instance in the server&lt;/li>
-&lt;li>Close form - closes the form and navigates to another resource&lt;/li>
-&lt;li>Delete form - marks the record or process instance to be deleted&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Loop table&lt;/strong> - this rule loops through table rows, where other rules can be triggered and implemented.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add table row&lt;/strong> - this rule adds a new row to a table.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Remove table row&lt;/strong> - this rule removes a current row from a table.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Import CSV&lt;/strong> - this rule imports .csv or .xlsx file data into a table, based on mapping provided within the rule.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Export CSV&lt;/strong> - this rule is export the contents of a table to a .csv file.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Copy table rows&lt;/strong> - this rule copies table rows from one table to another.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Clear table rows&lt;/strong> - this rule removes table rows that match given criteria.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Lookup value from table&lt;/strong> - this rule performs a lookup on a table value that match given criteria&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Update table values&lt;/strong> -this rule updates table columns that match given criteria.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Sort table&lt;/strong> -this rule sorts table data based on multiple conditions.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Aggregate table&lt;/strong> - this rule aggregates table values.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Hide/Show column&lt;/strong> - this rule allows you to hide or show columns within a table&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: Date rules</title><link>https://docs.kianda.com/docs/platform/rules/dates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/</guid><description>
+&lt;p>&lt;strong>Date&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to allow date calculation and manipulation for example to add time units to a date, to compare dates and allow customised formatting of date display.&lt;/p>
+&lt;h2 id="getting-started-with-date-rules">Getting started with Date rules&lt;/h2>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>Date&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Dates&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-all.jpg" alt="Date rules">&lt;/p>
+&lt;p>There are four types of &lt;strong>Date&lt;/strong> rules as follows:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Add time to date&lt;/strong> - this rule allows the addition of time to a date which can be based on a chosen parameter such as starting from now, today or another specified value.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Calculate time&lt;/strong> - this rule calculates the number of times unites between two dates, or from now.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Compare dates&lt;/strong> - this rule allows the comparison of date fields to know if one date is for example, between dates, before or after a given date.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Format date&lt;/strong> - this rule applies custom formatting to input date fields.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: Form action rules</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/</guid><description>
+&lt;p>Rules within the &lt;strong>Form action&lt;/strong> rules category allow you to perform form specific actions on forms and processes such as saving a form / process, submitting a form, closing a form, deleting a process and validating form input.&lt;/p>
+&lt;h2 id="getting-started-with-form-action-rules">Getting started with Form action rules&lt;/h2>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>Form action&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Form action&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/form-action-rules-all.jpg" alt="Form action rules">&lt;/p>
+&lt;p>There are six &lt;strong>Form action&lt;/strong> rules as follows:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Validate input&lt;/strong> - provides ability perform flexible data validation and prevents incorrect data submission&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Field display mode&lt;/strong> - this rule forces the display mode to override the automatic display mode of fields and forms&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Submit form&lt;/strong> - marks the current form as complete and makes it read-only&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Save form&lt;/strong> - commits a record or process instance in the server&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Close form&lt;/strong> - closes the form and navigates to another resource&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Delete form&lt;/strong> - marks the record or process instance to be deleted&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: AI rules</title><link>https://docs.kianda.com/docs/platform/rules/kianda-ai/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/kianda-ai/</guid><description>
 &lt;p>Artificial Intelligence powered text analysis performs sentiment analysis to text content&lt;/p></description></item><item><title>Docs: SharePoint rules</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/</guid><description>
+&lt;p>&lt;strong>SharePoint&lt;/strong> rules are associated with SharePoint specific functionality. These rules are typically used to perform actions with SharePoint connectors that are not related with data, for example resetting SharePoint permissions or adding a user into a group on SharePoint.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sharepoint-rules-all.jpg" alt="Sharepoint rules">&lt;/p>
 &lt;h3 id="getting-started-with-sharepoint-rules">Getting started with SharePoint rules&lt;/h3>
-&lt;p>SharePoint rules are associated with SharePoint specific functionality. These rules are typically used to perform actions with SharePoint connectors that are not related with data, for example resetting SharePoint permissions or adding a user into a group on SharePoint.&lt;/p>
-&lt;p>There are 10 SharePoint rules as follows:&lt;/p>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>Sharepoint&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Sharepoint&lt;/strong>.&lt;/p>
+&lt;p>There are 10 &lt;strong>SharePoint&lt;/strong> rules as follows:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Create a list&lt;/strong> - creates a new list in a SharePoint site.&lt;/li>
 &lt;li>&lt;strong>Create a site&lt;/strong> - creates a new site on SharePoint, enabling the use of a site template.&lt;/li>
