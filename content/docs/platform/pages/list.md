@@ -75,7 +75,7 @@ If you choose data from a Process, then the options below become available.
 Choose from the following options:
 
 - **Business process** - click into the field to choose a process which will be the input for the dashboard.
-- **Show processes** - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user - TO COME BACK TO
+- **Show processes** - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user.
 - For all other available options see [Filter options](#filter-options).
 
 
@@ -90,7 +90,7 @@ Choose from the following options:
 
 - **Partner** - click into the field to choose from a pre-configured Partner who has created the process you are interested in.
 - **Business process** - click into the field to choose a process which will be the input for the dashboard.
-- **Show processes** - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user - TO COME BACK TO
+- **Show processes** - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user.
 - For all other available options see [Filter options](#filter-options).
 
 
@@ -107,7 +107,7 @@ If you choose data from a Data source, then the options below become available.
 
    Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 
-1. Click on **Data source filter** TO COME BACK TO.
+1. Click on **Data source filter**.
 
 1. For all other available options see [Filter options](#filter-options).
 
@@ -129,9 +129,9 @@ Once you have chosen where the dashboard data will come from then there are a nu
 
      Enter a number in **Items per page** for the number items you wish to load at a time. The default value is '20'.
 
-   - **Show 'Add process' button** - choose from a) Yes or b) No if you wish to Add process to your dashboard. TO COME BACK TO If you click on **Yes**, then you can decide on what text should appear on screen, by typing the text in the **'Add process' button text** field. 
+   - **Show 'Add process' button** - choose from a) Yes or b) No if you wish to Add process to your dashboard. If you click on **Yes**, then you can decide on what text should appear on screen, by typing the text in the **'Add process' button text** field. 
 
-     By default, the process used to generate the data is added, click on **No** beside the Add 'Process 	Name' by default if you don't wish to add the input process.
+     By default, the process used to generate the data is added, click on **No** beside the Add 'Process Name' by default if you don't wish to add the input process.
 
    - **Show delete button** - choose from a) Yes or b) No if you wish to add a Delete button to your dashboard. If you choose **Yes**, then the option **Enable bulk delete** appears allowing you to choose a) Yes or b) No to enable bulk deletion of records.
 
@@ -143,12 +143,48 @@ Once you have chosen where the dashboard data will come from then there are a nu
 
    - **Common fields** are fields commonly used in dashboards such as 'Created' or 'Status' or choose from a field within a form by clicking and drilling down to the field name that you want to sort by, for example a text box field called 'Name' in a form called 'Training Request'.
 
-   - When a field is chosen then the options for **Sort Direction** appear as either a) Ascending or b) 	Descending.
+   - When a field is chosen then the options for **Sort Direction** appear as either a) Ascending or b) Descending.
 
-   - **Then by** - TO COME BACK TO
+   - **Enable empty list template** - click on a) Yes or b) No to enable.
 
-   - **Enable empty list template** - click on a) Yes or b) No to enable TO COME BACK TO.
-
-2. Go to [List view fields](pages/listviewfields.md) to read about options in the right-hand pane of this dialog box on how to choose fields to filter data.
+2. Go to [List view fields](#list-view-fields) to read about options in the right-hand pane of this dialog box on how to choose fields to filter data.
 
 3. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
+
+
+
+### List view fields #
+
+When you choose the List widget for your dashboard, there are a number of ways to select fields that you want to view.
+
+1. Click on the **Pen** button ![Pen button](/../content/docs/platform/pages/list.assets/pen.png)in the widget you have created, to see the **List view fields** visible in the right-hand pane.
+
+   ![List view fields](/../content/docs/platform/pages/list.assets/listconfig_frame.png)
+
+2. Click on **Common fields** to see a list of commonly used dashboard fields such as 'Status', 'Created by' and 'Modified'. Click on as many fields as needed to add to the dashboard, for example 3 fields are selected below.
+
+   ![Common fields](/../content/docs/platform/pages/list.assets/commonfields.png)
+
+   Click on **Common fields** again to close the options.
+
+3. Click on **Design fields** to see a list of all the fields used in the design of the forms used in the chosen process. For example the Training Process shown below has 2 forms, 'Training Request' and 'Training Approval' and all control fields used in the form design are available to choose as filters for the dashboard. Click on the + symbol to drill down into the form, and click on the relevant fields to use them, for example Name, Type of Training and Management Decision have been chosen below. 
+
+   ![Design fields](/../content/docs/platform/pages/list.assets/designfields.png)
+
+   Click on **Design fields** again to close the options.
+
+4. Clicking on **List fields** shows you a list of all the fields you have already chosen from **Common fields** and **Design fields**. There is also an option to **Add column** and **Add action**. You can change the order of the fields as they appear in the list from left to right by clicking on the Drag handle button ![Drag handle](/../content/docs/platform/pages/list.assets/draghandlewhite.png). 
+
+   ![List fields](/images/listfields.png)
+
+5. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
+
+5. To change the list settings, that is the way the list looks, title and so on, click on the **Settings** button ![Settings button](/../content/docs/platform/pages/list.assets/cog.png)and go to [List widget](pages/list.md) to find out more about edit options.
+
+5. When you are finished making edits, click on the **Save** button ![Save button](/../content/docs/platform/pages/list.assets/save.png) in the top menu to ensure your dashboard changes are saved and you see a pop-up message **Page saved successfully**.
+
+6. To make further changes later on, click on the **Edit** button ![Edit button](/../content/docs/platform/pages/list.assets/edit.png) in the top menu and then click on the **Pen** button
+
+   ![Pen button in a widget](/../content/docs/platform/pages/list.assets/penbutton.png) 
+
+7. Go to [List widget](#list.md) to find out about other sorting and search options. 

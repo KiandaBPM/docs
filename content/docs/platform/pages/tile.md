@@ -9,7 +9,7 @@ The tile widget allows you to display a count of instances. This is a really use
 
 ## How to get started ##
 
-1. After creating a dashboard page, make sure you are in Edit mode, by clicking on the **Edit** button ![Edit button](C:\Kianda\docs-dev\pages\tile.assets\edit.png) at the top of the page, so the Widget menu with 7 widget types is available. Then click on the Tile widget ![Tile widget button](images/tile.png).
+1. After creating a dashboard page, make sure you are in Edit mode, by clicking on the **Edit** button ![Edit button](/images/edit.png) at the top of the page, so the Widget menu with 7 widget types is available. Then click on the Tile widget ![Tile widget button](/images/tile.png).
 
 2. The **Add widget** dialog box opens.
 

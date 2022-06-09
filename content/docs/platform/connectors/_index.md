@@ -45,10 +45,4 @@ If you have a data source that is not on the list above, you can use SOAP or RES
 
 ![Connecting to on-premises SQL](https://app.kianda.com/Content/6ceb0eeb-bfb7-44a8-ad57-3df169286224/2929bafd-a863-48f8-985e-644bb48b7596.gif)
 
-## Offline availability
-
-## Database connectors
-
-## Cloud connectors
-
-## PowerShell connector
+## 

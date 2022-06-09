@@ -13,7 +13,11 @@ A SharePoint data connector allows you to use SharePoint data sources as part of
 
 2. Click on **+ Add new** button ![Add new data connector button](/images/addnew.png) and choose **SharePoint** from the list of datasources provided.
 
-3. Choose from the edit options:
+3. Fill out fields in the **SharePoint details** screen.
+
+   ![Sharepoint datasources](/images/sharepoint-connector.jpg)
+
+   Choose from the edit options:
 
    - **Display name** - the name of the data source, for example SharePoint HR
 
@@ -28,8 +32,8 @@ A SharePoint data connector allows you to use SharePoint data sources as part of
      If you choose a) SharePoint Online Authorisation then click on **Authorize** button ![Authorize button](/images/authorize.png) in this instance you will need SharePoint administration rights
 
      If you choose b) System User Credentials then fill out your username and password. In this instance you do not need SharePoint administration rights.
-   
-1. Click on **Save** ![Save button](/images/save.png) and you should see a message "Details saved successfully".
+
+4. Click on **Save** ![Save button](/images/save.png) and you should see a message "Details saved successfully".
 
 5. Click on **Test Connection** ![Test Connection button](/images/testconnection.png)  and you should see a message "Connection test succeeded".
 

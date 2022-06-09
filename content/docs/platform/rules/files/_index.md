@@ -9,11 +9,11 @@ weight: 5
 
 ## Getting started with File management rules ##
 
-If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the File management rules are found in the left-hand pane when you click on **File management**.
+If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the **File management** rules are found in the left-hand pane when you click on **File management**.
 
 ![File management rules](/images/file-managemt-rules.jpg)
 
-There are seven types of File management rules as follows:
+There are seven types of **File management** rules as follows:
 
 - **Copy file** - this rule copies a file from one data location to another.
 

@@ -3,11 +3,15 @@ title: "SharePoint rules"
 weight: 9
 ---
 
+**SharePoint** rules are associated with SharePoint specific functionality. These rules are typically used to perform actions with SharePoint connectors that are not related with data, for example resetting SharePoint permissions or adding a user into a group on SharePoint.
+
+![Sharepoint rules](/images/sharepoint-rules-all.jpg)
+
 ### Getting started with SharePoint rules
 
-SharePoint rules are associated with SharePoint specific functionality. These rules are typically used to perform actions with SharePoint connectors that are not related with data, for example resetting SharePoint permissions or adding a user into a group on SharePoint.
+If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the **Sharepoint** rules are found in the left-hand pane when you click on **Sharepoint**.
 
-There are 10 SharePoint rules as follows:
+There are 10 **SharePoint** rules as follows:
 
 - **Create a list** - creates a new list in a SharePoint site.	
 - **Create a site** - creates a new site on SharePoint, enabling the use of a site template.	

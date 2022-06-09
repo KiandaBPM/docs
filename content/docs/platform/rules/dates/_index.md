@@ -9,11 +9,11 @@ weight: 7
 
 ## Getting started with Date rules ##
 
-If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the Date rules are found in the left-hand pane when you click on **Dates**.
+If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the **Date** rules are found in the left-hand pane when you click on **Dates**.
 
 ![Date rules](/images/date-rules-all.jpg)
 
-There are four types of Date rules as follows:
+There are four types of **Date** rules as follows:
 
 - **Add time to date** - this rule allows the addition of time to a date which can be based on a chosen parameter such as starting from now, today or another specified value. 
 
