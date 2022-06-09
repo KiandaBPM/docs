@@ -64,7 +64,7 @@ To add a **Link field** to a Kianda form:
 
    ![Link field example titled Employee Handbook](/images/link-example.jpg)
 
-  
+
 
 ### How to edit, move and delete Link fields ###
 
@@ -129,6 +129,13 @@ To view or edit a Link control's **Field properties**:
 ### Saving changes and version history ###
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
+
+
+
+### User tips ![Target icon](/images/05.png) ###
+If you want the **Link to be automatically emailed** to someone once the form user clicks on the Submit button, for example, you could apply a **Send email rule** to the Submit button and reference the Link field in an **expression** in the email.
+
+Rules allow actions based upon conditions resulting from user interaction with fields. To learn about the different types of rules that you can apply go to [Rules](/docs/platform/rules/), to learn about expressions see [Expression builder](/docs/platform/rules/general/expression-builder/) or for more information specifically about the Send email rule, see [Send email](/docs/platform/rules/communications/send-email/).
 
 
 
