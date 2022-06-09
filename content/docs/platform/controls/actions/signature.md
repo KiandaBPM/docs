@@ -66,37 +66,57 @@ For example, a manager may complete a Performance Plan form for each employee, s
 
       - **Start signing button text** - You can choose the text you want to appear on the Signature field button. By default, the text is 'Start Signing' but you can change this to whatever you want.
 
-      - **Re-Sign button text** - You can choose the text you want to appear on the 'Re-Sign'  button. By default, the text is 'Re-sign' but you can change this to whatever you want.
+      - **Re-Sign button text** - You can choose the text you want to appear on the 'Re-Sign'  button. This 'Re-Sign' button appears after the user has clicked the Start signing button and completed the dialog box and it enables the user to replace or override the original signature they input. By default, the text is 'Re-sign' but you can change this to whatever you want.
 
-      - **Show username and signing time** - Select **Yes** to show the username of the person electonically signing with the Signature field and the time they signed at.
+        In our example of adding a Signature field titled 'Manager Signature', once the manager has signed, the 'Re-sign' button will be shown:
+   
+        ![Re-sign button showing after completing Signature field](/images/signature-resign.jpg)
+   
+      - **Show username and signing time** - Select **Yes** to show the Kianda username of the person who has electronically signed with the Signature field and the time they signed at (per the local time settings on the user's Kianda account).
+   
+        ![Signature showing username and signing time](/images/signature-username-time.jpg)
    
       - **Require user authentication** - Select **Yes** to require user authentication for the user clicking the Signature field button to sign the section/form. If you select Yes, an additional option will display - **Authenticate via SSO**.
    
         ![Signature user authentication option](/images/signature-user-authentication.jpg)
    
-        You can then choose **Yes** or **No** for authenticating the user via a Single Sign-on (an authentication method that allows users to securely authenticate on multiple applications and websites using just one set of credentials).
+        If you then choose **Yes** for authenticating the user via Single Sign-on, an initial pop-up box will appear to check whether the user is signed in and, after clicking on the Signature button a second pop-up will appear to confirm the user's credentials.
+   
+        If you choose **No** for **Authenticate via SSO**, a pop-up appears requiring the user to confirm their login credentials.
    
       - **Hide sign by textbox** - Select **Yes** if you want to hide the sign by textbox.
    
+        For example, if we choose **Yes** for this option for our new 'Manager Signature', when the user clicks the 'Start signing' button and the pop-up box opens, they will just see an area where they can either choose Signature (with an electronically generated signature) or Draw or Upload (to draw or upload their signature):
+   
+        ![Signature pop up with sign by textbox hidden](/images/signature-hide-sign-by.jpg)
+      
+        If we choose **No** to **Hide sign by textbox**, when the user clicks Start signing they will see a 'Sign by' textbox at the top of the pop-up that appears:
+      
+        ![Signature pop up including Sign by textbox](/images/signature-sign-by.jpg)
+      
       - **Allow override sign by** - Select **Yes** if you want to allow override of the signature in the Signature field. If you choose Yes, an additional option will be shown - **Default title of sign by**:
-   
+      
         ![Signature field allow override sign by option](/images/signature-override.jpg)
-   
-      - **Hide default signature tab** - Select **Yes** if you want to hide the default signature tab. If you choose Yes, the next option - **Auto save signature** - will no longer be available to you.
-   
+      
+      - **Hide default signature tab** - Select **Yes** if you want to hide the default signature tab (where an electronic signature is automatically generated). If you choose Yes, the next option - **Auto save signature** - will no longer be available to you.
+      
+        In our example, if we select **No** to hiding the default signature tab, the user will see the electronically generated signature:
+      
+        ![Default signature tab shown](/images/signature-default-signature.jpg)
+      
       - **Auto save signature** - Select **Yes** if you want to auto save the signature.
-   
+      
       - **Button icon** - You can choose an icon to appear on your Signature field button (or can opt not to have an icon on it). Click on the down arrow to the right of the field and select the icon you want from several hundred icons in the dropdown list.
-   
+      
       - **Button color** - Choose the colour you want for your Signature field button. The options are Navy, Green, Blue, Amber, Red or White.
       
-      - **Sign dialog button text** - You can choose the text to appear on the button in the Signature dialog box. By default, the text is 'OK' but you can change this to whatever you want.
+      - **Sign dialog button text** - You can choose the text to appear on the button at the bottom right of the Signature dialog box. By default, the text is 'OK' but you can change this to whatever you want.
    
    
    7. Once you complete the **New field - Signature** dialog box, click **OK** and the new **Signature field** will be added to your form. 
    
       In our example, if we insert a new Signature field titled 'Manager Signature', it will be added to the bottom of the Performance Plan form and look like this:
-   
+	
       ![Inserted Signature field](/images/signature-inserted-no-title.jpg)
    
    8. By default, the **Title** of the new **Signature field** will not be shown but you can change this by selecting the the field and checking the **Show title** checkbox in the **Field properties** menu to the right.
@@ -115,9 +135,9 @@ For example, a manager may complete a Performance Plan form for each employee, s
    
       ![Signature Draw or Upload option](/images/signature-draw-or-upload.jpg)
    
-
-		Click on the **OK** button to close the dialog box.
-
+   
+   	Click on the **OK** button to close the dialog box.
+   
    10. You may decide to add rules to your **Signature field** - to learn more about the different categories of rules available, go to [Rules](/docs/platform/rules/). The rules we add will be executed in the order in which they are listed under **Rules** in the right hand pane.
 
 
