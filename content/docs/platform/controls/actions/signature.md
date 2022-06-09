@@ -94,9 +94,11 @@ For example, a manager may complete a Performance Plan form for each employee, s
       
         ![Signature pop up including Sign by textbox](/images/signature-sign-by.jpg)
       
-      - **Allow override sign by** - Select **Yes** if you want to allow override of the signature in the Signature field. If you choose Yes, an additional option will be shown - **Default title of sign by**:
+      - **Allow override sign by** - Select **Yes** if you want to allow override of the signature inserted in the Signature field. If you choose Yes, an additional option will be shown - **Default title of sign by**:
       
         ![Signature field allow override sign by option](/images/signature-override.jpg)
+      
+        If you select **Yes** to 'Allow override sign by' and then click into the '**Default title of sign by**' field, you can then select a field to be used to populate the default name in the Signature field. For example, you could select a [User picker field](/docs/platform/controls/input/user-picker/) within your form as the 'Default title of sign by' - this would then mean that the user that is selected in that User picker field will be the default name shown in the Signature field. 
       
       - **Hide default signature tab** - Select **Yes** if you want to hide the default signature tab (where an electronic signature is automatically generated). If you choose Yes, the next option - **Auto save signature** - will no longer be available to you.
       
@@ -114,9 +116,9 @@ For example, a manager may complete a Performance Plan form for each employee, s
    
    
    7. Once you complete the **New field - Signature** dialog box, click **OK** and the new **Signature field** will be added to your form. 
-   
-      In our example, if we insert a new Signature field titled 'Manager Signature', it will be added to the bottom of the Performance Plan form and look like this:
 	
+      In our example, if we insert a new Signature field titled 'Manager Signature', it will be added to the bottom of the Performance Plan form and look like this:
+   
       ![Inserted Signature field](/images/signature-inserted-no-title.jpg)
    
    8. By default, the **Title** of the new **Signature field** will not be shown but you can change this by selecting the the field and checking the **Show title** checkbox in the **Field properties** menu to the right.
