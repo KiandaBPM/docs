@@ -345,8 +345,9 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-sign-by.jpg" alt="Signature pop up including Sign by textbox">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Allow override sign by&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to allow override of the signature in the Signature field. If you choose Yes, an additional option will be shown - &lt;strong>Default title of sign by&lt;/strong>:&lt;/p>
+&lt;p>&lt;strong>Allow override sign by&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to allow override of the signature inserted in the Signature field. If you choose Yes, an additional option will be shown - &lt;strong>Default title of sign by&lt;/strong>:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-override.jpg" alt="Signature field allow override sign by option">&lt;/p>
+&lt;p>If you select &lt;strong>Yes&lt;/strong> to &amp;lsquo;Allow override sign by&amp;rsquo; and then click into the &amp;lsquo;&lt;strong>Default title of sign by&lt;/strong>&amp;rsquo; field, you can then select a field to be used to populate the default name in the Signature field. For example, you could select a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker field&lt;/a> within your form as the &amp;lsquo;Default title of sign by&amp;rsquo; - this would then mean that the user that is selected in that User picker field will be the default name shown in the Signature field.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Hide default signature tab&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to hide the default signature tab (where an electronic signature is automatically generated). If you choose Yes, the next option - &lt;strong>Auto save signature&lt;/strong> - will no longer be available to you.&lt;/p>
