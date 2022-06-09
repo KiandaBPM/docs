@@ -323,25 +323,35 @@
 &lt;p>&lt;strong>Start signing button text&lt;/strong> - You can choose the text you want to appear on the Signature field button. By default, the text is &amp;lsquo;Start Signing&amp;rsquo; but you can change this to whatever you want.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Re-Sign button text&lt;/strong> - You can choose the text you want to appear on the &amp;lsquo;Re-Sign&amp;rsquo; button. By default, the text is &amp;lsquo;Re-sign&amp;rsquo; but you can change this to whatever you want.&lt;/p>
+&lt;p>&lt;strong>Re-Sign button text&lt;/strong> - You can choose the text you want to appear on the &amp;lsquo;Re-Sign&amp;rsquo; button. This &amp;lsquo;Re-Sign&amp;rsquo; button appears after the user has clicked the Start signing button and completed the dialog box and it enables the user to replace or override the original signature they input. By default, the text is &amp;lsquo;Re-sign&amp;rsquo; but you can change this to whatever you want.&lt;/p>
+&lt;p>In our example of adding a Signature field titled &amp;lsquo;Manager Signature&amp;rsquo;, once the manager has signed, the &amp;lsquo;Re-sign&amp;rsquo; button will be shown:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-resign.jpg" alt="Re-sign button showing after completing Signature field">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Show username and signing time&lt;/strong> - Select &lt;strong>Yes&lt;/strong> to show the username of the person electonically signing with the Signature field and the time they signed at.&lt;/p>
+&lt;p>&lt;strong>Show username and signing time&lt;/strong> - Select &lt;strong>Yes&lt;/strong> to show the Kianda username of the person who has electronically signed with the Signature field and the time they signed at (per the local time settings on the user&amp;rsquo;s Kianda account).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-username-time.jpg" alt="Signature showing username and signing time">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Require user authentication&lt;/strong> - Select &lt;strong>Yes&lt;/strong> to require user authentication for the user clicking the Signature field button to sign the section/form. If you select Yes, an additional option will display - &lt;strong>Authenticate via SSO&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-user-authentication.jpg" alt="Signature user authentication option">&lt;/p>
-&lt;p>You can then choose &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong> for authenticating the user via a Single Sign-on (an authentication method that allows users to securely authenticate on multiple applications and websites using just one set of credentials).&lt;/p>
+&lt;p>If you then choose &lt;strong>Yes&lt;/strong> for authenticating the user via Single Sign-on, an initial pop-up box will appear to check whether the user is signed in and, after clicking on the Signature button a second pop-up will appear to confirm the user&amp;rsquo;s credentials.&lt;/p>
+&lt;p>If you choose &lt;strong>No&lt;/strong> for &lt;strong>Authenticate via SSO&lt;/strong>, a pop-up appears requiring the user to confirm their login credentials.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Hide sign by textbox&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to hide the sign by textbox.&lt;/p>
+&lt;p>For example, if we choose &lt;strong>Yes&lt;/strong> for this option for our new &amp;lsquo;Manager Signature&amp;rsquo;, when the user clicks the &amp;lsquo;Start signing&amp;rsquo; button and the pop-up box opens, they will just see an area where they can either choose Signature (with an electronically generated signature) or Draw or Upload (to draw or upload their signature):&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-hide-sign-by.jpg" alt="Signature pop up with sign by textbox hidden">&lt;/p>
+&lt;p>If we choose &lt;strong>No&lt;/strong> to &lt;strong>Hide sign by textbox&lt;/strong>, when the user clicks Start signing they will see a &amp;lsquo;Sign by&amp;rsquo; textbox at the top of the pop-up that appears:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-sign-by.jpg" alt="Signature pop up including Sign by textbox">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Allow override sign by&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to allow override of the signature in the Signature field. If you choose Yes, an additional option will be shown - &lt;strong>Default title of sign by&lt;/strong>:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-override.jpg" alt="Signature field allow override sign by option">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Hide default signature tab&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to hide the default signature tab. If you choose Yes, the next option - &lt;strong>Auto save signature&lt;/strong> - will no longer be available to you.&lt;/p>
+&lt;p>&lt;strong>Hide default signature tab&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to hide the default signature tab (where an electronic signature is automatically generated). If you choose Yes, the next option - &lt;strong>Auto save signature&lt;/strong> - will no longer be available to you.&lt;/p>
+&lt;p>In our example, if we select &lt;strong>No&lt;/strong> to hiding the default signature tab, the user will see the electronically generated signature:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-default-signature.jpg" alt="Default signature tab shown">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Auto save signature&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to auto save the signature.&lt;/p>
@@ -353,7 +363,7 @@
 &lt;p>&lt;strong>Button color&lt;/strong> - Choose the colour you want for your Signature field button. The options are Navy, Green, Blue, Amber, Red or White.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sign dialog button text&lt;/strong> - You can choose the text to appear on the button in the Signature dialog box. By default, the text is &amp;lsquo;OK&amp;rsquo; but you can change this to whatever you want.&lt;/p>
+&lt;p>&lt;strong>Sign dialog button text&lt;/strong> - You can choose the text to appear on the button at the bottom right of the Signature dialog box. By default, the text is &amp;lsquo;OK&amp;rsquo; but you can change this to whatever you want.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -372,11 +382,11 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-preview-dialog.jpg" alt="Signature preview dialog box">&lt;/p>
 &lt;p>The user can choose between a system-created &lt;strong>Signature&lt;/strong> or to &lt;strong>Draw or Upload&lt;/strong> their own version. If you click on &lt;strong>Draw or Upload&lt;/strong> you can see how the user can either sign on the dotted line (and click on &lt;strong>Clear&lt;/strong> at any stage to erase a mistake) or click on &lt;strong>Upload handwritten signature&lt;/strong> and browse for a file.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-draw-or-upload.jpg" alt="Signature Draw or Upload option">&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button to close the dialog box.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You may decide to add rules to your &lt;strong>Signature field&lt;/strong> - to learn more about the different categories of rules available, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>. The rules we add will be executed in the order in which they are listed under &lt;strong>Rules&lt;/strong> in the right hand pane.&lt;/p>
-&lt;/li>
+&lt;ol start="10">
+&lt;li>You may decide to add rules to your &lt;strong>Signature field&lt;/strong> - to learn more about the different categories of rules available, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>. The rules we add will be executed in the order in which they are listed under &lt;strong>Rules&lt;/strong> in the right hand pane.&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-move-and-delete-signature-fields">How to edit, move and delete Signature fields&lt;/h3>
 &lt;p>To edit a &lt;strong>Signature field&lt;/strong>:&lt;/p>
