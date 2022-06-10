@@ -139,7 +139,64 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/selectdatasource.png" alt="Selecting a data source">&lt;/p>
 &lt;p>You will be directed to different data sources where you can search in the &lt;strong>datasource tree&lt;/strong> search box or drill down to the data source you want.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/selectdatasource.png" alt="Select data source">&lt;/p>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p></description></item><item><title>Docs: Conditions</title><link>https://docs.kianda.com/docs/platform/pages/conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/conditions/</guid><description>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;h3 id="chart-view-fields">Chart view fields&lt;/h3>
+&lt;p>When you choose the Chart widget for your dashboard, there are a number of options to configure the chart to make it look the way you want.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/pen.png" alt="Pen button"> in the widget you have created, to see the fields used to &lt;strong>edit the chart&lt;/strong>, visible in the right-hand pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/charteditfields.png" alt="Chart edit fields">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Chart type&lt;/strong> - choose from a) Pie chart b) Bar chart c) Line chart&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Labels field&lt;/strong> - click into the field to drill down to the find what you want to use. You can use &lt;strong>Common fields&lt;/strong> such as Status and Created, commonly used in dashboards, and use &lt;strong>design fields&lt;/strong> that are part of processes attached to forms, for example fields within the forms Training Request and Training Approval below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/labelsfield.png" alt="labelsfield">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Values field&lt;/strong> - choose from a) Count b) Sum c) Average and click into the field itself to drill down to the fields you want, as with the &lt;strong>Labels field&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Chart width&lt;/strong> - use the arrow to choose a numeric value.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Chart width&lt;/strong> - use the arrow to choose a numeric value.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Chart height&lt;/strong> - use the arrow to choose a numeric value.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Limit label names&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Show values&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Hide legend&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To change the chart settings, that is the way the chart looks, title and so on, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog.png" alt="Settings button">and go to &lt;a href="pages/chart.md">Chart widget&lt;/a> to find out more about edit options.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished making edits to your widget, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> in the top menu to ensure your dashboard changes are saved and you will see a pop-up message &lt;strong>Page saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To make further changes later on, click on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/chart.assets/edit.png" alt="Edit button"> in the top menu and then click on the &lt;strong>Pen&lt;/strong> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/penbutton.png" alt="Pen button in a widget">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Go to &lt;a href="pages/chart.md">Chart widget&lt;/a> to find out about data connection options.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Conditions</title><link>https://docs.kianda.com/docs/platform/pages/conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/conditions/</guid><description>
 &lt;p>Conditions allow you to make forms and dashboards fully dynamic. They are easy to configure in the Kianda platform, using natural language to create triggers for rule execution.&lt;/p>
 &lt;p>Conditions can be applied to &lt;a href="pages/tile.md">Tile&lt;/a>, &lt;a href="pages/list.md">List&lt;/a> and &lt;a href="pages/chart.md">Chart&lt;/a> dashboard widgets.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -185,12 +242,18 @@
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> button again for the &lt;strong>Edit widget&lt;/strong> dialog box to apply the changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Docs: Filter widget</title><link>https://docs.kianda.com/docs/platform/pages/filter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/filter/</guid><description/></item><item><title>Docs: Link widget</title><link>https://docs.kianda.com/docs/platform/pages/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/link/</guid><description/></item><item><title>Docs: LIst widget</title><link>https://docs.kianda.com/docs/platform/pages/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/list/</guid><description>
+&lt;/ol></description></item><item><title>Docs: Filter widget</title><link>https://docs.kianda.com/docs/platform/pages/filter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/filter/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction&lt;/p>
+&lt;/div></description></item><item><title>Docs: Link widget</title><link>https://docs.kianda.com/docs/platform/pages/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/link/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction&lt;/p>
+&lt;/div></description></item><item><title>Docs: List widget</title><link>https://docs.kianda.com/docs/platform/pages/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/list/</guid><description>
 &lt;p>The list widget displays the instances of the selected process in a dashboard. The List widget can also be used to connect with any other dashboard widgets to display filtered items.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>After creating a dashboard page, make sure you are in Edit mode, by clicking on the &lt;strong>Edit&lt;/strong> button &lt;img src="images/edit.png" alt="Edit button"> at the top of the page, so the Widget menu with 7 widget types is available. Then click on the List widget &lt;img src="images/listwidget.png" alt="List widget">.&lt;/p>
+&lt;p>After creating a dashboard page, make sure you are in Edit mode, by clicking on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> at the top of the page, so the Widget menu with 7 widget types is available. Then click on the List widget &lt;img src="https://docs.kianda.com/images/listwidget.png" alt="List widget">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Add widget&lt;/strong> dialog box opens.&lt;/p>
@@ -350,38 +413,38 @@
 &lt;p>When you choose the List widget for your dashboard, there are a number of ways to select fields that you want to view.&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/../content/docs/platform/pages/list.assets/pen.png" alt="Pen button">in the widget you have created, to see the &lt;strong>List view fields&lt;/strong> visible in the right-hand pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/platform/pages/list.assets/listconfig_frame.png" alt="List view fields">&lt;/p>
+&lt;p>Click on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/pen.png" alt="Pen button">in the widget you have created, to see the &lt;strong>List view fields&lt;/strong> visible in the right-hand pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/listconfig_frame.png" alt="List view fields">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Common fields&lt;/strong> to see a list of commonly used dashboard fields such as &amp;lsquo;Status&amp;rsquo;, &amp;lsquo;Created by&amp;rsquo; and &amp;lsquo;Modified&amp;rsquo;. Click on as many fields as needed to add to the dashboard, for example 3 fields are selected below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/platform/pages/list.assets/commonfields.png" alt="Common fields">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/commonfields.png" alt="Common fields">&lt;/p>
 &lt;p>Click on &lt;strong>Common fields&lt;/strong> again to close the options.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Design fields&lt;/strong> to see a list of all the fields used in the design of the forms used in the chosen process. For example the Training Process shown below has 2 forms, &amp;lsquo;Training Request&amp;rsquo; and &amp;lsquo;Training Approval&amp;rsquo; and all control fields used in the form design are available to choose as filters for the dashboard. Click on the + symbol to drill down into the form, and click on the relevant fields to use them, for example Name, Type of Training and Management Decision have been chosen below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/platform/pages/list.assets/designfields.png" alt="Design fields">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/designfields.png" alt="Design fields">&lt;/p>
 &lt;p>Click on &lt;strong>Design fields&lt;/strong> again to close the options.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Clicking on &lt;strong>List fields&lt;/strong> shows you a list of all the fields you have already chosen from &lt;strong>Common fields&lt;/strong> and &lt;strong>Design fields&lt;/strong>. There is also an option to &lt;strong>Add column&lt;/strong> and &lt;strong>Add action&lt;/strong>. You can change the order of the fields as they appear in the list from left to right by clicking on the Drag handle button &lt;img src="https://docs.kianda.com/../content/docs/platform/pages/list.assets/draghandlewhite.png" alt="Drag handle">.&lt;/p>
+&lt;p>Clicking on &lt;strong>List fields&lt;/strong> shows you a list of all the fields you have already chosen from &lt;strong>Common fields&lt;/strong> and &lt;strong>Design fields&lt;/strong>. There is also an option to &lt;strong>Add column&lt;/strong> and &lt;strong>Add action&lt;/strong>. You can change the order of the fields as they appear in the list from left to right by clicking on the Drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite.png" alt="Drag handle">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/listfields.png" alt="List fields">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To change the list settings, that is the way the list looks, title and so on, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/../content/docs/platform/pages/list.assets/cog.png" alt="Settings button">and go to &lt;a href="pages/list.md">List widget&lt;/a> to find out more about edit options.&lt;/p>
+&lt;p>To change the list settings, that is the way the list looks, title and so on, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog.png" alt="Settings button">and go to &lt;a href="pages/list.md">List widget&lt;/a> to find out more about edit options.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>When you are finished making edits, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/../content/docs/platform/pages/list.assets/save.png" alt="Save button"> in the top menu to ensure your dashboard changes are saved and you see a pop-up message &lt;strong>Page saved successfully&lt;/strong>.&lt;/p>
+&lt;p>When you are finished making edits, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> in the top menu to ensure your dashboard changes are saved and you see a pop-up message &lt;strong>Page saved successfully&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To make further changes later on, click on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/../content/docs/platform/pages/list.assets/edit.png" alt="Edit button"> in the top menu and then click on the &lt;strong>Pen&lt;/strong> button&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/platform/pages/list.assets/penbutton.png" alt="Pen button in a widget">&lt;/p>
+&lt;p>To make further changes later on, click on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> in the top menu and then click on the &lt;strong>Pen&lt;/strong> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/penbutton.png" alt="Pen button in a widget">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Go to &lt;a href="#list.md">List widget&lt;/a> to find out about other sorting and search options.&lt;/p>
+&lt;p>When you have completed your changes, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/../old-documentation/save-dash.png" alt="Save button"> to save your changes or &lt;strong>X&lt;/strong> to quit without saving.&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>Docs: Richtext widget</title><link>https://docs.kianda.com/docs/platform/pages/richtext/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/richtext/</guid><description/></item><item><title>Docs: Tile widget</title><link>https://docs.kianda.com/docs/platform/pages/tile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/tile/</guid><description>
 &lt;p>The tile widget allows you to display a count of instances. This is a really useful way to showcase whole numbers for example total budget requested through Purchase Orders, or the amount of customer queries solved in a week.&lt;/p>
@@ -488,4 +551,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/selectdatasource.png" alt="Selecting a data source">&lt;/p>
 &lt;p>You will be directed to different data sources where you can search in the &lt;strong>datasource tree&lt;/strong> search box or drill down to the data source you want.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/selectdatasource.png" alt="Select data source">&lt;/p>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p></description></item><item><title>Docs: Walkthrough widget</title><link>https://docs.kianda.com/docs/platform/pages/walkthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/walkthrough/</guid><description/></item></channel></rss>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p></description></item><item><title>Docs: Walkthrough widget</title><link>https://docs.kianda.com/docs/platform/pages/walkthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/walkthrough/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction&lt;/p>
+&lt;/div></description></item></channel></rss>
