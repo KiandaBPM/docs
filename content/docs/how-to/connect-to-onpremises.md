@@ -4,3 +4,6 @@ description: "Learn how to connect to on-premises data using Kianda's data gatew
 typora-root-url: ..\..\..\static
 ---
 
+{{% pageinfo color="primary" %}}
+Page under construction
+{{% /pageinfo %}}

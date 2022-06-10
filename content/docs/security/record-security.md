@@ -4,3 +4,6 @@ linkTitle: "Record security"
 weight: 3
 ---
 
+{{% pageinfo color="primary" %}}
+Page under construction
+{{% /pageinfo %}}

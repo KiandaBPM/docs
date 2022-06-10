@@ -17,4 +17,4 @@ The process will use **utility panels** to hold form fields and values, not visi
 
 You can create an Inspection process if you have the role **Administrator** or **Designer** by going to the left-hand side menu and click on **Administration** and **Designer**.
 
-1. In the main process view, click on the 
+1. 

@@ -1,5 +1,5 @@
 ---
-title: "LIst widget"
+title: "List widget"
 typora-root-url: ..\..\..\..\static
 ---
 
@@ -9,7 +9,7 @@ The list widget displays the instances of the selected process in a dashboard. T
 
 ## How to get started ##
 
-1. After creating a dashboard page, make sure you are in Edit mode, by clicking on the **Edit** button ![Edit button](images/edit.png) at the top of the page, so the Widget menu with 7 widget types is available. Then click on the List widget ![List widget](images/listwidget.png).
+1. After creating a dashboard page, make sure you are in Edit mode, by clicking on the **Edit** button ![Edit button](/images/edit.png) at the top of the page, so the Widget menu with 7 widget types is available. Then click on the List widget ![List widget](/images/listwidget.png).
 
 2. The **Add widget** dialog box opens.
 
@@ -157,34 +157,34 @@ Once you have chosen where the dashboard data will come from then there are a nu
 
 When you choose the List widget for your dashboard, there are a number of ways to select fields that you want to view.
 
-1. Click on the **Pen** button ![Pen button](/../content/docs/platform/pages/list.assets/pen.png)in the widget you have created, to see the **List view fields** visible in the right-hand pane.
+1. Click on the **Pen** button ![Pen button](/images/pen.png)in the widget you have created, to see the **List view fields** visible in the right-hand pane.
 
-   ![List view fields](/../content/docs/platform/pages/list.assets/listconfig_frame.png)
+   ![List view fields](/images/listconfig_frame.png)
 
 2. Click on **Common fields** to see a list of commonly used dashboard fields such as 'Status', 'Created by' and 'Modified'. Click on as many fields as needed to add to the dashboard, for example 3 fields are selected below.
 
-   ![Common fields](/../content/docs/platform/pages/list.assets/commonfields.png)
+   ![Common fields](/images/commonfields.png)
 
    Click on **Common fields** again to close the options.
 
 3. Click on **Design fields** to see a list of all the fields used in the design of the forms used in the chosen process. For example the Training Process shown below has 2 forms, 'Training Request' and 'Training Approval' and all control fields used in the form design are available to choose as filters for the dashboard. Click on the + symbol to drill down into the form, and click on the relevant fields to use them, for example Name, Type of Training and Management Decision have been chosen below. 
 
-   ![Design fields](/../content/docs/platform/pages/list.assets/designfields.png)
+   ![Design fields](/images/designfields.png)
 
    Click on **Design fields** again to close the options.
 
-4. Clicking on **List fields** shows you a list of all the fields you have already chosen from **Common fields** and **Design fields**. There is also an option to **Add column** and **Add action**. You can change the order of the fields as they appear in the list from left to right by clicking on the Drag handle button ![Drag handle](/../content/docs/platform/pages/list.assets/draghandlewhite.png). 
+4. Clicking on **List fields** shows you a list of all the fields you have already chosen from **Common fields** and **Design fields**. There is also an option to **Add column** and **Add action**. You can change the order of the fields as they appear in the list from left to right by clicking on the Drag handle button ![Drag handle](/images/draghandlewhite.png). 
 
    ![List fields](/images/listfields.png)
 
 5. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 
-5. To change the list settings, that is the way the list looks, title and so on, click on the **Settings** button ![Settings button](/../content/docs/platform/pages/list.assets/cog.png)and go to [List widget](pages/list.md) to find out more about edit options.
+5. To change the list settings, that is the way the list looks, title and so on, click on the **Settings** button ![Settings button](/images/cog.png)and go to [List widget](pages/list.md) to find out more about edit options.
 
-5. When you are finished making edits, click on the **Save** button ![Save button](/../content/docs/platform/pages/list.assets/save.png) in the top menu to ensure your dashboard changes are saved and you see a pop-up message **Page saved successfully**.
+5. When you are finished making edits, click on the **Save** button ![Save button](/images/save.png) in the top menu to ensure your dashboard changes are saved and you see a pop-up message **Page saved successfully**.
 
-6. To make further changes later on, click on the **Edit** button ![Edit button](/../content/docs/platform/pages/list.assets/edit.png) in the top menu and then click on the **Pen** button
+6. To make further changes later on, click on the **Edit** button ![Edit button](/images/edit.png) in the top menu and then click on the **Pen** button.
 
-   ![Pen button in a widget](/../content/docs/platform/pages/list.assets/penbutton.png) 
+   ![Pen button in a widget](/images/penbutton.png) 
 
-7. Go to [List widget](#list.md) to find out about other sorting and search options. 
+7. When you have completed your changes, click on the **Save** button ![Save button](/../old-documentation/save-dash.png) to save your changes or **X** to quit without saving. 

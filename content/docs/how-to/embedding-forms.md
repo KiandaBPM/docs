@@ -5,3 +5,6 @@ description: "Learn how to embed forms in external pages"
 typora-root-url: ..\..\..\static
 ---
 
+{{% pageinfo color="primary" %}}
+Page under construction
+{{% /pageinfo %}}

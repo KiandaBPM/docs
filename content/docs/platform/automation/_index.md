@@ -30,9 +30,5 @@ Scheduling a task from the left navigation panel in a few simple steps:
 
 The Kianda schedule tasks can be triggered for re-occurrence. The re-occurrence could be by minutes, hours, days, weeks or months. Further, the schedule tasks could be configured easily to run at a specific minute of the hour, weekdays only, specific day of the week or specific day of the month.
 
-## Offline availability
-
-
-
-## Server vs client side
+## 
 

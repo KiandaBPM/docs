@@ -5,3 +5,6 @@ description: "Learn how to work with tables and table specific rules to capture 
 typora-root-url: ..\..\..\static
 ---
 
+{{% pageinfo color="primary" %}}
+Page under construction
+{{% /pageinfo %}}
