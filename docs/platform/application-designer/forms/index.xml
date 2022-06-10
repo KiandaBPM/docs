@@ -1,9 +1,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Form basics</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/</link><description>Recent content in Form basics on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/application-designer/forms/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Form owners</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/</guid><description>
-&lt;p>The key rules for working with forms are:&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>When creating forms, is important to consider &lt;strong>form access&lt;/strong> during the design phase, that is who can access and edit forms in a process instance. For example if an employee submits a performance review form, a line manager may wish to access that submitted process instance/record and edit the form, adding in comments and performance grades.&lt;/p>
+&lt;p>There are two key principles to keep in mind in terms of &lt;strong>form access&lt;/strong>:&lt;/p>
 &lt;ol>
-&lt;li>Forms are assignable - means that only a form assignee can edit a particular form. This can be a combination of users and groups.&lt;/li>
-&lt;li>Only form owners can edit a given form by default. Any other user with access to view the form will see it in read-only mode.&lt;/li>
+&lt;li>Forms are &lt;strong>assignable&lt;/strong> - this means that only a form assignee, that is, someone that is assigned to a form, can &lt;strong>edit&lt;/strong> a particular form in a process instance. The &amp;lsquo;assignee&amp;rsquo; can be a combination of users and groups.&lt;/li>
+&lt;li>&lt;strong>Only form owners&lt;/strong> can edit a given form by &lt;strong>default&lt;/strong>. Any other user with access to view the form will see it in read-only mode.&lt;/li>
 &lt;/ol>
+&lt;p>So what is &lt;strong>form owner&lt;/strong>? A form owner can be assigned when a form is created in Kianda Designer. Only the form owner will be able to edit &lt;strong>process instances&lt;/strong> (records).&lt;/p>
+&lt;p>Once a process has been designed and users can initiate new process instances or records from a dashboard page, then the only people who can edit process records are the form owners or someone who has had the record assigned to them.
+For example, a line manager who is a form owner may need to add additional information about work goals to an appraisal form their employee has already filled out.&lt;/p>
+&lt;h3 id="getting-started-with-form-owners">Getting started with Form owners&lt;/h3>
+&lt;p>To create form owners:&lt;/p>
+&lt;ol>
+&lt;li>Click on a process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on an existing process or create a new process by clicking on &lt;strong>Add new&lt;/strong> and complete the &lt;strong>Add new process&lt;/strong> dialog box.&lt;/li>
+&lt;li>Then within Kianda &lt;strong>Designer&lt;/strong> click on a form of interest and then click on the &lt;strong>Edit&lt;/strong>/{Pen} &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit/Pen button">button for that form.&lt;/li>
+&lt;li>In the &lt;strong>Edit form&lt;/strong> dialog box you can add form owners in the &lt;strong>Default owner(s)&lt;/strong> field - this can be &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or &lt;strong>Partners&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to &lt;strong>when the the form is created&lt;/strong>. By default, only this person or group &lt;strong>can edit the form&lt;/strong>. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups.&lt;/p>
 &lt;p>The rules above work together to determine if the form is in &lt;strong>edit mode&lt;/strong> or &lt;strong>display mode&lt;/strong>. Form designers have at their disposal &lt;a href="business-rules.md">business rules&lt;/a> such as &lt;em>assign form&lt;/em>, &lt;em>go to form&lt;/em> and &lt;em>submit rule&lt;/em> to dynamically control the ability for end-users to edit a particular form or a section of a form.&lt;/p></description></item><item><title>Docs: Form display modes</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
