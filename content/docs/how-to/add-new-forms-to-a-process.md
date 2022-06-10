@@ -1,5 +1,5 @@
 ---
-title: "How to add a new form to an existing processS"
+title: "How to add a new form to an existing process"
 description: "Learn how to add a new form to an existing process and enable quick actions"
 typora-root-url: ..\..\..\static
 ---
@@ -11,7 +11,6 @@ This video demonstrates how to add a new form and edit the form to enable quick 
     Your browser does not support the video tag.
     </source>
 </video>
-
 
 
 
