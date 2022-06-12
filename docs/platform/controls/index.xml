@@ -258,4 +258,99 @@
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>We have briefly introduced each of the four types of &lt;strong>Action fields&lt;/strong>. Now let&amp;rsquo;s look at each of these Action fields in more detail:&lt;/p></description></item><item><title>Docs: Custom controls</title><link>https://docs.kianda.com/docs/platform/controls/custom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/custom/</guid><description/></item></channel></rss>
+&lt;p>We have briefly introduced each of the four types of &lt;strong>Action fields&lt;/strong>. Now let&amp;rsquo;s look at each of these Action fields in more detail:&lt;/p></description></item><item><title>Docs: Custom controls</title><link>https://docs.kianda.com/docs/platform/controls/custom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/custom/</guid><description>
+&lt;p>&lt;strong>Custom fields&lt;/strong> are a fourth category of &lt;a href="https://docs.kianda.com/docs/platform/controls/">controls&lt;/a> that are only available to you as a Designer in Kianda if Custom controls have been created by an Administrator or Designer in your Kianda workspace.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To add a &lt;strong>Custom field&lt;/strong> to a Kianda form:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/designer-open-process.jpg" alt="Open process in Designer">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once you have opened your process, select the form you want to work on (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> is shown).&lt;/p>
+&lt;p>In this example, a Training Request form in an Education Request Process has been selected:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-form.jpg" alt="Select form to insert Custom field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the area within the form where you want to insert the new &lt;strong>Custom field&lt;/strong> - in our example, we will select the first panel in the Training Request form:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-location.jpg" alt="Select panel to insert Custom field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane, and, from the four categories of Controls (Input, Layout, Actions and Custom), click on &lt;strong>Custom&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-fields.jpg" alt="Insert Custom field">&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: &lt;strong>This fourth category of Controls will only be available to you if Custom controls have been created by Administrators or Developers in your Kianda workspace&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Custom fields&lt;/strong> available to you will be shown in the expanded &lt;strong>Custom&lt;/strong> menu - in the example shown here, there are three Custom fields available to the form Designer:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-fields-example.jpg" alt="Insert Custom field examples">&lt;/p>
+&lt;p>Click on the &lt;strong>Custom field&lt;/strong> you want to insert and it will be added to your form at the bottom of the form section you have selected.&lt;/p>
+&lt;p>In our example, we can click on the first Custom field listed in the &lt;strong>Custom&lt;/strong> sub-menu - Field widget - the new Custom widget (&amp;lsquo;Field widget 1&amp;rsquo;) is added to the bottom of the panel we had selected and a pop-up message says &amp;lsquo;Field added&amp;rsquo;:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-inserted.jpg" alt="New Custom field inserted">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can then edit the new &lt;strong>Custom field&lt;/strong> as you want - to do this, select the Custom field (by either clicking on its field title or on its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click the &lt;strong>Edit field&lt;/strong> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-edit.jpg" alt="Edit Custom field">&lt;/p>
+&lt;p>The &lt;strong>Edit field&lt;/strong> dialog box will open, showing the range of options available for that particular Custom field.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-custom-controls-are-created">How Custom controls are created&lt;/h3>
+&lt;p>A Kianda Administrator or Developer can create &lt;strong>Custom controls&lt;/strong> by opening the &lt;strong>Administration&lt;/strong> menu from the left-side menu and clicking on &lt;strong>Developer&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-developer.jpg" alt="Create a Custom field by clicking on Developer from the Administration menu">&lt;/p>
+&lt;p>The Developer resources page opens and displays all of the Custom widgets that have been created - these include Custom field widgets, Custom rule widgets and Custom Dashboard widgets.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-widgets.jpg" alt="Create new Custom widget Developer resources page">&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: Only &lt;strong>Custom field widgets&lt;/strong> will be shown in the &lt;strong>Custom&lt;/strong> controls menu in Kianda Designer - that is, only Custom widgets with a &amp;lsquo;Type&amp;rsquo; of &amp;lsquo;&lt;strong>Field&lt;/strong>&amp;rsquo;.&lt;/p>
+&lt;p>To create a new Custom Widget, the Developer/Administrator clicks on the &lt;strong>New widget&lt;/strong> button &lt;img src="https://docs.kianda.com/images/custom-field-new-widget.jpg" alt="New widget button">.&lt;/p>
+&lt;p>An &lt;strong>Edit widget&lt;/strong> dialog box opens, in which the Title, Unique ID, Widget icon and Widget type can be chosen:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-edit-widget.jpg" alt="Edit widget dialog box">&lt;/p>
+&lt;p>When the Developer/Administrator completes the dialog box and clicks on &lt;strong>OK&lt;/strong>, a workspace opens where they can create their Custom widget:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-new-widget-workspace.jpg" alt="Custom widget workspace">&lt;/p>
+&lt;p>Once a &lt;strong>Custom field widget&lt;/strong> has been created, Designers will then be able to see and use that Custom field widget in the &lt;strong>Custom&lt;/strong> section of the &lt;strong>Controls&lt;/strong> menu when designing Kianda forms.&lt;/p>
+&lt;p>To learn more about how to create &lt;strong>Custom field widgets&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code#how-to-get-started-as-a-kianda-low-code-developer">Creating a custom field widget&lt;/a>.&lt;/p>
+&lt;h3 id="how-to-edit-move-and-delete-custom-fields">How to edit, move and delete Custom fields&lt;/h3>
+&lt;p>To edit a &lt;strong>Custom field&lt;/strong>, select the field (by either clicking on the field title or &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-edit2.jpg" alt="Select Custom field to edit">&lt;/p>
+&lt;p>The &lt;strong>Edit field&lt;/strong> dialog box will open, enabling you to choose from a range of options specific to that particular Custom field. The functionality of the field will depend on what the Custom field was designed to do.&lt;/p>
+&lt;p>To move a &lt;strong>Custom field&lt;/strong>, simply select the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to within your form.&lt;/p>
+&lt;p>In our example, we could drag and drop the new Custom field titled &amp;lsquo;Field widget 1&amp;rsquo; so that it comes before the &amp;lsquo;Type of Training&amp;rsquo; List field:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-move.jpg" alt="Custom field drag handle">&lt;/p>
+&lt;p>To delete a &lt;strong>Custom field&lt;/strong> from your form, simply select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">), click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;h3 id="how-to-view-or-edit-custom-control-field-properties">How to view or edit Custom control Field properties&lt;/h3>
+&lt;p>To view or edit the Field properties associated with a &lt;strong>Custom field&lt;/strong>, select the field (by clicking on the field title or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-field-properties.jpg" alt="Field properties associated with a Custom field">&lt;/p>
+&lt;p>In the example shown here, a &lt;strong>Custom field&lt;/strong> titled &amp;lsquo;&lt;strong>Field widget 1&lt;/strong>&amp;rsquo; has been selected and the Field properties associated with this field are shown in the &lt;strong>Field properties&lt;/strong> menu to the right, including:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Field type&lt;/strong> - For Custom field widgets, the &amp;lsquo;Field type&amp;rsquo; will be &amp;lsquo;Field widget&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Field widget 1&amp;rsquo;. You can change the title here, in Field properties, or in the Edit field dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the Custom field title will be shown in the form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Required&lt;/strong> - If this is selected, the field will be mandatory for the form user.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Visible&lt;/strong> - If this is selected, the Custom field will be visible in the form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Custom field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
+&lt;p>For more details, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
+&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Custom controls&lt;/strong>, find out more about how you can use Controls, how you can get started as a Kianda low-code developer, and more about the three other categories of &lt;strong>Controls&lt;/strong> you can add to a Kianda process:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low code?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/layout/">Layout controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
