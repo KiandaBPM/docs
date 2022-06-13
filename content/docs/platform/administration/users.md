@@ -109,7 +109,7 @@ You can group users into defined groups which can be used in various ways in the
 
 
 
-### What's next  ![Idea icon](/../content/docs/platform/administration/users.assets/18.png) ###
+### What's next  ![Idea icon](/images/18.png) ###
 
 To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
 

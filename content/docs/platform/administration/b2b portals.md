@@ -41,7 +41,7 @@ The fields in this box are:
 
 - Click on the **plus symbol** ![Add shared process](/images/add-process.jpg) to add a selected process design to share. Then click on the dropdown list to search for a process to share.	
 
-- Click on the **tick symbol** ![Edit selected shared  process](/images/edit-selected-process.jpg) to add a to change the selected shared process properties by clicking on the **cog **button ![Edit selected shared process properties](/images/cog-shared-process.jpg) or delete the selected shared process by clicking on the **Bin/trash** button ![Bin button for shared processes](/images/bin-shared-process.jpg). 
+- Click on the **tick symbol** ![Edit selected shared  process](/images/edit-selected-process.jpg) to add the selected shared process. To change the selected shared process properties by clicking on the **Cog/Settings** button ![Edit selected shared process properties](/images/cog-shared-process.jpg) or delete the selected shared process by clicking on the **Bin/trash** button ![Bin button for shared processes](/images/bin-shared-process.jpg). 
 
   ![Edit selected shared process properties](/images/change-selected-prop.jpg)
 
