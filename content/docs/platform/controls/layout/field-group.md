@@ -36,21 +36,22 @@ For example, in an Education Request Process - where employees can request train
 
      In our example, we will select three fields in the 'Training Request' form that we want to be shown on the 'Training Approval' form - Employee Name, Type of Training and Reason:
      
-     ![Select fields to mirror in Field group](/images/field-group-select-fields-mirror.jpg) 
-
-   	The field(s) you select will automatically be grouped together in **Grouped fields** at the bottom of the dialog box - click on Grouped fields to see the list of fields you have chosen:
-   	
-	![Field group grouped fields](/images/field-group-grouped-fields.jpg)
-   		
-   	The fields you have chosen being 'grouped' together will mean that you will be able to edit them and move them around your form as a group (rather than as individual fields). 
-   		
-   	If there is a field or fields you do not want to be grouped, simply click on the **Bin/Trash icon** ![Grouped fields blue bin icon](/images/field-group-blue-bin.jpg) to the right and that field will no longer be grouped with the others. 
-   		
-   	You can also change the order of the fields within the Field group by simply clicking on the field's **drag handle** button and dragging and dropping the field where you want it to be.
-
-   	![Move field within Field group](/images/field-group-grouped-move.jpg)
-   		
-   	Note that selected fields grouped under the current field group are not copied only referenced.
+     ![Select fields to mirror in Field group](/images/field-group-select-fields-mirror.jpg)
+   
+   - **Grouped fields** - The field(s) you select will automatically be grouped together in the **Grouped fields** section at the bottom of the dialog box - click on Grouped fields so that it expands to show the list of fields you have chosen:
+   
+      ![Field group grouped fields](/images/field-group-grouped-fields.jpg)
+      		
+      	The fields you have chosen being 'grouped' together will mean that you will be able to edit them and move them around your form as a group (rather than as individual fields). 
+      		
+      	If there is a field or fields you do not want to be grouped, simply click on the **Bin/Trash icon** ![Grouped fields blue bin icon](/images/field-group-blue-bin.jpg) to the right and that field will no longer be grouped with the others. 
+      		
+      	You can also change the order of the fields within the Field group by simply clicking on the field's **drag handle** button and dragging and dropping the field where you want it to be.
+      	
+      	![Move field within Field group](/images/field-group-grouped-move.jpg)
+      		
+      	Note that selected fields grouped under the current field group are not copied only referenced.
+   
 
 4. Once you have completed the **New field - Field group** dialog box, click **OK** and the new **Field group** will be added to your form. By default, the **Title** of the new Field group will not be shown (unless you choose to display it, by selecting the **Show title** checkbox in the Field properties menu to the right). 
 
