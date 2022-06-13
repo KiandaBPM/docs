@@ -1442,8 +1442,25 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-help-text.jpg" alt="File upload help text example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Display format&lt;/strong> - you can choose whether the number inserted by the user is formatted to be an integer (whole number), currency or a percentage. If you select &lt;strong>Currency&lt;/strong>, two new options will appear - &lt;strong>Currency format&lt;/strong> (where you can select the currency you want to use) and &lt;strong>Country format&lt;/strong>:&lt;/p>
+&lt;p>&lt;strong>Display format&lt;/strong> - you can choose whether the number inserted by the user is formatted to be an integer (whole number), currency or a percentage.&lt;/p>
+&lt;p>If you select &lt;strong>Currency&lt;/strong> as the Display format, a new option will appear - &lt;strong>Currency format&lt;/strong> - where you can select the currency you want to use.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-currency.jpg" alt="Number field currency options">&lt;/p>
+&lt;p>If you select &lt;strong>Euro&lt;/strong> as the Currency format, a new format option called &lt;strong>Country format&lt;/strong> appears to the right. This is a drop-down list from which you can choose from three different ways that Euro amounts can be displayed:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/number-euro-format.jpg" alt="Euro format options">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>If you choose &lt;strong>Ireland&lt;/strong> as the Country format, Euro amounts will be displayed like this:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/number-euro-Ireland.jpg" alt="Euro Ireland currency format">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you choose &lt;strong>Portugal&lt;/strong> as the Country format, Euro amounts will be displayed like this:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/number-euro-portugal.jpg" alt="Euro Portugal currency format">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you choose &lt;strong>France&lt;/strong> as the Country format, Euro amounts will be displayed like this:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/number-euro-france.jpg" alt="Euro France currency format">&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Show number up/down arrows&lt;/strong> - you can choose whether or not you want the Number field to have up/down arrow buttons &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up and down arrows"> that enable the user to increase or decrease the number in the field&lt;/p>
