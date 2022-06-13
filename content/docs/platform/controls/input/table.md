@@ -111,7 +111,7 @@ The options within the **Edit field - Table** dialog box include:
 
 - **Add row text** - you can insert the text you want to appear with the Add Row button ![Table add row button](/images/table-add-row.jpg). By default, this will be 'add row'.
 
-- **Page size** - you can increase or decrease the page size by clicking the up/down arrow buttons ![Up and down arrows](/images/up-down-arrows.jpg) at the right of the field
+- **Page size** - you can increase or decrease the number of row items you will see per page by clicking the up/down arrow buttons ![Up and down arrows](/images/up-down-arrows.jpg) at the right of the field. By default, it is set to show 10 row items per page.
 
 - **Enable adding rows** - selecting 'Yes' enables the user to add rows to the table when they are completing it and displays the **Add row** button ![Table add row button](/images/table-add-row.jpg) and selecting 'No' removes this option. By default, this option is set to 'Yes'.
 
