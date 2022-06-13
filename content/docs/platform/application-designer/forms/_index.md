@@ -1,5 +1,6 @@
 ---
 title: "Form basics"
+typora-root-url: ..\..\..\..\..\static
 ---
 
 

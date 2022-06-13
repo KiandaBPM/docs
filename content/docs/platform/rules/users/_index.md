@@ -11,7 +11,7 @@ User rules is one category of [rules](rules/Readme.md) to enable operations base
 
 If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the User rules are found in the left-hand pane when you click on **Users**.
 
-![User rules](/images/user-rules.jpg)
+![User rules](/images/user-rules-intro.jpg)
 
 There are four types of User rules as follows:
 
