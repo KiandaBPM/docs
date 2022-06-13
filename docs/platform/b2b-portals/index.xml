@@ -2,9 +2,70 @@
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Access to the B2B Portal is controlled through standard user and group creation, dashboard security and through how the Shared Processes and Dashboards are defined.&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>B2B Portals are a means of connecting your clients to your Kianda subscription through their own subscription. This provides a means of allowing your clients to interface with processes you have already created, be it through updating existing processes, deleting processes or creating processes. Access to the B2B Portal can be controlled by your own administrator and each B2B Portal can have multiple users for your clients.&lt;/p>
-&lt;p>&lt;strong>How to get started.&lt;/strong>&lt;/p>
-&lt;p>To create &lt;strong>Users &amp;amp; Groups&lt;/strong> navigate to the &lt;strong>Administration&lt;/strong> section of the Portal and enter the &lt;strong>Users &amp;amp; Groups&lt;/strong> section. Within this page you will be able to view all existing &lt;strong>Users&lt;/strong> in the &lt;strong>Portal&lt;/strong> on the left-hand side, their email, role and if they are active or not. All existing &lt;strong>Groups&lt;/strong> can be seen in the right-hand side of the screen.&lt;/p></description></item><item><title>Docs: Partner profile</title><link>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</guid><description>
+&lt;p>B2B Portals are a means of connecting your clients to your Kianda subscription through their own subscription. This provides a means of allowing your clients to interface with processes you have already created, be it through updating existing processes, deleting processes or creating processes. Access to the B2B Portal can be controlled by your own administrator and each B2B portal can have multiple users for your clients.&lt;/p>
+&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
+&lt;p>To share data with B2B portal users, there are a number of steps involved starting with:&lt;/p>
+&lt;p>a) Creating users and groups&lt;/p>
+&lt;p>b) Create dashboards to share&lt;/p>
+&lt;p>c) Create shared processes and attach dashboards to share&lt;/p>
+&lt;h4 id="create-users-and-groups-for-the-b2b-portal">Create users and groups for the B2B portal&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>To begin create &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong> for the B2B portal. If you are an &lt;strong>administrator,&lt;/strong> navigate to the &lt;strong>Administration&lt;/strong> section in the left-hand side menu and click on &lt;strong>Users&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Within this page you will be able to view all existing &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong> in the portal. In the left-hand side, under &lt;strong>Users&lt;/strong> you can see user names, emails, role and if they are active or not. All existing &lt;strong>Groups&lt;/strong> can be seen in the right-hand side of the screen. Here you can see group names and the number of members.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-main-view.jpg" alt="Users main view">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For full details on how to create, edit and delete users and groups got to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="create-dashboards-to-share">Create Dashboards to share&lt;/h4>
+&lt;ol>
+&lt;li>Within your own portal you may then wish to create &lt;strong>Dashboards&lt;/strong> to share. Dashboards provide a convenient way to gain insights into how your business processes are performing. They offer easy reporting, permissions management, quick build, condition-based filtering amongst other features. For details on how to get started with dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/platform/pages/">Dashboards&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;h4 id="create-shared-processes-and-attach-dashboards-to-share">Create shared processes and attach dashboards to share&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>When the dashboard that you want to share within your &lt;strong>B2B portal&lt;/strong> has been created, then you can control access by two means: a) Using the &lt;strong>Shared Processes&lt;/strong> feature within &lt;strong>Invite partner&lt;/strong> within &lt;strong>Administration&lt;/strong> and b) within the B2B portal itself.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To implement a) go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Invite partner&lt;/strong> and within the &lt;strong>Shared processes&lt;/strong> section, click on &lt;strong>Share a process&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Type in a &lt;strong>Title&lt;/strong> and &lt;strong>Instructions for partner&lt;/strong>, click on the &lt;strong>plus symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-process.jpg" alt="Add shared process"> to add a selected process design to share.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then click on the dropdown list to search for a process to share.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to add the selected shared process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Add partner group&lt;/strong> button to add a group from step 3 and click on &lt;strong>Dashboard template&lt;/strong> to add the desired Dashboard (from step 4) to share. Security can be set on this dashboard so that only a defined group can see the dashboard - click on the field under &lt;strong>Dashboard security&lt;/strong> to add in a named &amp;lsquo;partner group&amp;rsquo; to enable access to this group only.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-shared-process.jpg" alt="Edit Shared Process dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add as many shared dashboards and partner groups as needed using the previous instructions. In addition the level of access for each shared process can be controlled through system settings. Click on the on the &lt;strong>tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to change the shared processes details, and then click on the &lt;strong>Cog/Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Edit selected shared process properties"> and edit the details within the &lt;strong>Process properties&lt;/strong> dialog box, for example as shown for a Training Request process below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/change-selected-prop.jpg" alt="Edit selected shared process properties">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Within the &lt;strong>Process properties&lt;/strong> dialog box you can check radio buttons for:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Allow partner to create a new process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to create new process instances from the chosen shared process design. A field &lt;strong>Partner user group allowed to create new instances&lt;/strong> appears, where you can define the group(s) in the partner organisation, that can create these new process instances. If you leave the field blank, then anyone in the partner organisation can create process instances.&lt;/li>
+&lt;li>&lt;strong>Allow partner delete a process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to delete new process instances from the chosen shared process design.&lt;/li>
+&lt;li>&lt;strong>Partner user group allowed to create new instances&lt;/strong>- choose from the &lt;strong>Partner user groups&lt;/strong> that you created previously. By selecting a group here this dictates who can enter the process. Thus, defining a sub set of your B2B Portal users which can interact with that specific process.&lt;/li>
+&lt;li>&lt;strong>Partner process form visibility mode&lt;/strong> - choose from &lt;strong>Assigned&lt;/strong> or &lt;strong>All forms&lt;/strong>. If you choose &lt;strong>Assigned&lt;/strong>, then the invited partner(s) can view only assigned form versus all forms, if &lt;strong>All forms&lt;/strong> is chosen.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about User and group management, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.
+To read more about Dashboards, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p></description></item><item><title>Docs: Partner profile</title><link>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Shared dashboard</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-dashboard/</guid><description>
