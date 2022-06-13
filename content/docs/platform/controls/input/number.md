@@ -44,9 +44,27 @@ The options within the **Edit field - Number** dialog box include:
 
   ![File upload help text example](/images/number-help-text.jpg)
 
-- **Display format** - you can choose whether the number inserted by the user is formatted to be an integer (whole number), currency or a percentage. If you select **Currency**, two new options will appear - **Currency format** (where you can select the currency you want to use) and **Country format**:
+- **Display format** - you can choose whether the number inserted by the user is formatted to be an integer (whole number), currency or a percentage. 
+
+  If you select **Currency** as the Display format, a new option will appear - **Currency format** - where you can select the currency you want to use.
 
   ![Number field currency options](/images/number-currency.jpg)
+
+  If you select **Euro** as the Currency format, a new format option called **Country format** appears to the right. This is a drop-down list from which you can choose from three different ways that Euro amounts can be displayed: 
+
+  ![Euro format options](/images/number-euro-format.jpg)
+
+  - If you choose **Ireland** as the Country format, Euro amounts will be displayed like this:
+
+    ![Euro Ireland currency format](/images/number-euro-Ireland.jpg)
+
+  - If you choose **Portugal** as the Country format, Euro amounts will be displayed like this:
+
+    ![Euro Portugal currency format](/images/number-euro-portugal.jpg)
+
+  - If you choose **France** as the Country format, Euro amounts will be displayed like this:
+
+    ![Euro France currency format](/images/number-euro-france.jpg)
 
 - **Show number up/down arrows** - you can choose whether or not you want the Number field to have up/down arrow buttons ![Up and down arrows](/images/up-down-arrows.jpg) that enable the user to increase or decrease the number in the field
 
