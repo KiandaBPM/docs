@@ -31,14 +31,16 @@
 &lt;p>In our example, we will select three fields in the &amp;lsquo;Training Request&amp;rsquo; form that we want to be shown on the &amp;lsquo;Training Approval&amp;rsquo; form - Employee Name, Type of Training and Reason:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/field-group-select-fields-mirror.jpg" alt="Select fields to mirror in Field group">&lt;/p>
 &lt;/li>
-&lt;/ul>
-&lt;p>The field(s) you select will automatically be grouped together in &lt;strong>Grouped fields&lt;/strong> at the bottom of the dialog box - click on Grouped fields to see the list of fields you have chosen:&lt;/p>
+&lt;li>
+&lt;p>&lt;strong>Grouped fields&lt;/strong> - The field(s) you select will automatically be grouped together in the &lt;strong>Grouped fields&lt;/strong> section at the bottom of the dialog box - click on Grouped fields so that it expands to show the list of fields you have chosen:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/field-group-grouped-fields.jpg" alt="Field group grouped fields">&lt;/p>
 &lt;p>The fields you have chosen being &amp;lsquo;grouped&amp;rsquo; together will mean that you will be able to edit them and move them around your form as a group (rather than as individual fields).&lt;/p>
 &lt;p>If there is a field or fields you do not want to be grouped, simply click on the &lt;strong>Bin/Trash icon&lt;/strong> &lt;img src="https://docs.kianda.com/images/field-group-blue-bin.jpg" alt="Grouped fields blue bin icon"> to the right and that field will no longer be grouped with the others.&lt;/p>
 &lt;p>You can also change the order of the fields within the Field group by simply clicking on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button and dragging and dropping the field where you want it to be.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/field-group-grouped-move.jpg" alt="Move field within Field group">&lt;/p>
 &lt;p>Note that selected fields grouped under the current field group are not copied only referenced.&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>Once you have completed the &lt;strong>New field - Field group&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong> and the new &lt;strong>Field group&lt;/strong> will be added to your form. By default, the &lt;strong>Title&lt;/strong> of the new Field group will not be shown (unless you choose to display it, by selecting the &lt;strong>Show title&lt;/strong> checkbox in the Field properties menu to the right).&lt;/p>
