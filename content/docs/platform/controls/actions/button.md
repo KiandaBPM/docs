@@ -74,13 +74,13 @@ To add a **Button field** to a Kianda form:
 
      ![Button visibility limited to User picker field](/images/button-dialog-user-picker.jpg)
 
-     This will limit the visibility of the Button to the user(s) who are selected in that User picker field.
+     This will limit the visibility of the Button to the user(s) selected in that User picker field.
 
      (iii) If you choose to limit the Button visibility to '**Form owner(s)**', you then select the form in the 'Select a form' box - only the owner(s) of the selected form will be able to view the new Button you are inserting:
 
      ![Button visibility limited to Form owners](/images/button-security-form-owner.jpg)
 
-     The second main option in terms of Button security is '**Allow anonymous link**'. If you choose **Yes**, this means an anonymous link to the form can be created and the new Button field will be visible when the form is viewed using that anonymous link.
+     The second main option in terms of Button security is '**Allow anonymous link**'. If you choose **Yes**, this will mean that the new Button field will be visible when the form is accessed via an anonymous link. If you choose **No**, anyone accessing the form from an anonymous link will not be able to see the Button field. Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda.
 
       
 
