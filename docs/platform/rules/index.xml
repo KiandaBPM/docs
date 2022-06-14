@@ -1,66 +1,148 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Rules</title><link>https://docs.kianda.com/docs/platform/rules/</link><description>Recent content in Rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: General</title><link>https://docs.kianda.com/docs/platform/rules/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/</guid><description>
-&lt;h1 id="business-process-rules">Business Process Rules&lt;/h1>
-&lt;p>Business rules are what makes Kianda forms come alive. They represent the actual actions users intend to perform when they interact with form components.&lt;/p>
-&lt;h4 id="categories">Categories&lt;/h4>
+&lt;p>Rules are an important component of any process as they can be used to trigger automated actions, requiring minimal user management once created. There are 60 predefined rules in Kianda covering workflow applications, communications and file management to name a few.&lt;/p>
+&lt;h1 id="categories-of-rules">Categories of rules&lt;/h1>
 &lt;ul>
-&lt;li>&lt;strong>Workflow&lt;/strong> - Enables you to execute actions that might change the flow of the information within a process.&lt;/li>
-&lt;li>&lt;strong>Communications&lt;/strong> - Enables sending emails or meeting requests or even user (push) notifications.&lt;/li>
-&lt;li>&lt;strong>Data&lt;/strong> - This is an important and flexible rule group because it allows you to configure CRUD (Create, Read, Update and Delete) actions to configured data sources.&lt;/li>
-&lt;li>&lt;strong>Users&lt;/strong> - This enables you to retrieve a user property, updating user properties or lookup for a user based on a user attribute.&lt;/li>
-&lt;li>&lt;strong>File management&lt;/strong> - Allows operations such as the generation of a word document and conversion to PDF and more.&lt;/li>
-&lt;li>&lt;strong>Tables&lt;/strong> - Provides specialised rules to enable working with tables like sorting, copying table rows to another table and more.&lt;/li>
-&lt;li>&lt;strong>Dates&lt;/strong> - Enables convenient date calculation with advanced options like ignoring weekends or special dates.&lt;/li>
-&lt;li>&lt;strong>Form actions&lt;/strong> - Allows operations like submit, save, close and delete forms.&lt;/li>
-&lt;li>&lt;strong>SharePoint&lt;/strong> - Provides a variety of operations to be performed on the SharePoint connection. These rules include operations like create a list, find a user, define permission to an item, check-in / out an item or adding a user to a SharePoint group.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Workflow&lt;/strong> - Enables you to execute actions that might change the flow of the information within a process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Communications&lt;/strong> - Enables sending emails or meeting requests or even user (push) notifications.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Data&lt;/strong> - This is an important and flexible rule group because it allows you to configure CRUD (Create, Read, Update and Delete) actions to configured data sources.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Users&lt;/strong> - This enables you to retrieve a user property, updating user properties or lookup for a user based on a user attribute.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>File management&lt;/strong> - Allows operations such as the generation of a word document and conversion to PDF and more.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Tables&lt;/strong> - Provides specialised rules to enable working with tables like sorting, copying table rows to another table and more.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Dates&lt;/strong> - Enables convenient date calculation with advanced options like ignoring weekends or special dates.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form actions&lt;/strong> - Allows operations like submit, save, close and delete forms.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>SharePoint&lt;/strong> - Provides a variety of operations to be performed on the SharePoint connection. These rules include operations like create a list, find a user, define permission to an item, check-in / out an item or adding a user to a SharePoint group.&lt;/p>
+&lt;/li>
 &lt;/ul>
-&lt;h4 id="working-with-rules">Working with rules&lt;/h4>
-&lt;h5 id="where-to-add-a-rule">Where to Add a rule&lt;/h5>
+&lt;h1 id="working-with-rules">Working with rules&lt;/h1>
+&lt;h2 id="when-to-add-a-rule">When to add a rule&lt;/h2>
 &lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/p>
+&lt;/li>
 &lt;/ul>
-&lt;h5 id="how-to-add-a-rule">How to Add a rule&lt;/h5>
+&lt;h2 id="how-to-view-a-rule">How to view a rule&lt;/h2>
+&lt;p>To view existing rules:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the field that contains a rule, for example a button at the end of a form, or a field within a form which if it has rules attached will be indicated as having rules within the form, as shown in the example below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-on-a-field.jpg" alt="Rule attached to a form field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Rules&lt;/strong> in the right-hand pane, click on the given &lt;strong>rule name&lt;/strong> to view the rule details, for example a &amp;lsquo;Set form&amp;rsquo; rule called &amp;lsquo;Set link&amp;rsquo; as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/view-rule.jpg" alt="View rule details">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Details of the rule are available in the &lt;strong>Edit rule&lt;/strong> dialog box,
+&lt;img src="https://docs.kianda.com/images/rule-details-example.jpg" alt="Rule details">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="how-to-add-a-rule">How to add a rule&lt;/h2>
 &lt;p>To add a rule to a specific component:&lt;/p>
-&lt;p>Select the field you want.
-Under Add a rule, select the rule you want.
-Edit the rule and click &amp;lsquo;OK&amp;rsquo; - the rule will be displayed on the right-hand side of the page&lt;/p>
-&lt;h5 id="how-to-copy-a-rule">How to Copy a rule&lt;/h5>
-&lt;p>Duplicating rules can be very useful in case you have similar rules that are in different fields. To duplicate a rule:&lt;/p>
-&lt;p>Select the field with the desired rule
-Click on the Clone rule button, next to the rule name
-Optionally, modify the rule settings&lt;/p>
-&lt;h5 id="how-to-view-a-rule">How to View a rule&lt;/h5>
-&lt;h5 id="how-to-edit-a-rule">How to Edit a rule&lt;/h5>
-&lt;h5 id="how-to-disable-a-rule">How to Disable a rule&lt;/h5>
-&lt;h5 id="where-to-place-a-rule-in-a-list-of-rules">Where to place a rule in a list of rules&lt;/h5>
-&lt;p>Select the field with the rules.
-On the Rules section, drag and drop the rules in the order you want them.
-Submit, save, close
-If there is a Condition, then the fields must be set before it is run
-Example: Set Status, Send Email, Submit, Save, Close&lt;/p>
-&lt;h4 id="conditions">Conditions&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>Select the field you want.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Add a rule&lt;/strong>, &lt;strong>select a category&lt;/strong> of rules, and then &lt;strong>select the rule&lt;/strong> you want.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Edit the &lt;strong>rule dialog box&lt;/strong> and click &amp;lsquo;&lt;strong>OK&lt;/strong>&amp;rsquo;. The rule will be displayed on the right-hand side of the page.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="how-to-copy-a-rule">How to copy a rule&lt;/h2>
+&lt;p>Duplicating rules can be very useful where you have similar rules that are associated with different fields. To duplicate a rule:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the field with the desired rule.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Rules&lt;/strong> in the right-hand pane, click on the &lt;strong>Duplicate rule&lt;/strong> &lt;img src="https://docs.kianda.com/images/duplicate-rule.jpg" alt="Duplicate rule"> button next to the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Choose &lt;strong>Copy to another field&lt;/strong> if you wish to copy to another field and select the field you want to copy to. Select &lt;strong>OK&lt;/strong> when complete.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Alternatively select &lt;strong>OK&lt;/strong> without copying to another field or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="how-to-edit-a-rule">How to edit a rule&lt;/h2>
+&lt;p>Follow the steps to &lt;a href="#how-to-view-a-rule">View an existing rule&lt;/a> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;p>In the Edit rule dialog box, you can change:&lt;/p>
+&lt;ol>
+&lt;li>The &lt;strong>Title&lt;/strong> of the rule&lt;/li>
+&lt;li>Create or edit conditions for the rule by clicking on the &lt;strong>Edit conditions&lt;/strong> button.&lt;/li>
+&lt;li>Change how the rule performs by changing details under &lt;strong>Action&lt;/strong>. Actions will differ depending on the rule in use.&lt;/li>
+&lt;/ol>
+&lt;h2 id="how-to-disable-a-rule">How to disable a rule&lt;/h2>
+&lt;p>Disabiling a rule means that the rule is not active but is still visible in the &lt;strong>Rules&lt;/strong> pane. The rule can be activated at any time again by clicking on the toggle button.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the field that contains a rule, for example a button at the end of a form, or a field within a form which if it has rules attached.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Rules&lt;/strong> in the right-hand pane, beside the given &lt;strong>rule name&lt;/strong> slide the toggle button from &amp;lsquo;on&amp;rsquo; to &amp;lsquo;off&amp;rsquo; to view the rule details, for example a &amp;lsquo;Set form&amp;rsquo; rule called &amp;lsquo;Set link&amp;rsquo; as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-disabled.jpg" alt="Rule disabled">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To enable the rule at any time again follow the steps above and slide the toggle button into the &amp;lsquo;on&amp;rsquo; position.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-enabled.jpg" alt="Rule enabled">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="where-to-place-a-rule-in-a-list-of-rules">Where to place a rule in a list of rules&lt;/h2>
+&lt;p>The rule order refers to the order of execution of multiple rules. To change the rule order:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the field with the rules attached.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Rules&lt;/strong> in the right-hand pane, drag and drop the rules in the order you want them.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The top-most rule is the first rule to be executed. By default buttons at the end of a form will automatically have &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong>, and &lt;strong>Close&lt;/strong> rules. If you create rules you may wish to have these rules placed &lt;strong>above&lt;/strong> these shutdown rules so that your rules are executed first before form shutdown.&lt;/p>
+&lt;p>Note: If there is a Condition, then the fields must be set before it is run
+For example an order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Status, Send Email, Submit, Save, Close, whereby the status of the process instance is set first, before an automated email and then the form shutdown rules occur.&lt;/p>
+&lt;p>To read more about multiple rules, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="conditions">Conditions&lt;/h2>
 &lt;p>Flexible and dynamic conditions form an important component to make forms fully dynamic. It enables you to create natural language conditions when rules should be triggered.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/condition-editor.png" alt="Condition Editor">&lt;/p>
-&lt;p>To configure a rule to conditionally execute an action:&lt;/p>
-&lt;p>Click on Edit conditions button within the rule.
-Add the conditions that satisfy your scenario.
-Multiple conditions can be grouped with condition groups.&lt;/p>
-&lt;h4 id="custom-rules">Custom rules&lt;/h4>
+&lt;p>To configure a rule to conditionally execute an action, follow the steps in &lt;a href="#how-to-view-a-rule">How to view a rule&lt;/a> to open the &lt;strong>Edit rule&lt;/strong> dialog box:&lt;/p>
+&lt;ol>
+&lt;li>Click on &lt;strong>Edit conditions&lt;/strong> button within the rule.&lt;/li>
+&lt;li>Add the conditions that satisfy your scenario. Multiple conditions can be grouped with condition groups.&lt;/li>
+&lt;/ol>
+&lt;p>For more information on Conditions, go to the &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> page.&lt;/p>
+&lt;h2 id="custom-rules">Custom rules&lt;/h2>
 &lt;p>Under custom rules, you will find any custom-developed rules available under your developer section. Custom rules provide access to rules that are built for extensibility of Kianda capabilities. This is particularly used in situations when existing rules do not provide the required functionality.&lt;/p>
 &lt;p>Custom rules have the purpose of providing a user interface for the end-users. If you need to build &amp;ldquo;a rule&amp;rdquo; then you should use a custom rule widget.&lt;/p>
 &lt;p>It allows a developer to quickly build a reusable component that would then be used by process designers in real processes.&lt;/p>
-&lt;p>Check-out the &lt;a href="development.md">development&lt;/a> section for more details on how to build custom widgets in Kianda.&lt;/p>
-&lt;p>&lt;a href="../workflow/">Workflow&lt;/a>&lt;/p>
-&lt;p>&lt;a href="rules_communications.md">Communications&lt;/a>&lt;/p>
-&lt;p>&lt;a href="rules_data.md">Data&lt;/a>&lt;/p>
-&lt;p>&lt;a href="rules_users.md">Users&lt;/a>&lt;/p>
-&lt;p>&lt;a href="rules_file_management.md">File management&lt;/a>&lt;/p>
-&lt;p>&lt;a href="rules_tables.md">Tables&lt;/a>&lt;/p>
-&lt;p>&lt;a href="rules_dates.md">Dates&lt;/a>&lt;/p>
-&lt;p>&lt;a href="rules_form_actions.md">Form actions&lt;/a>&lt;/p>
-&lt;p>&lt;a href="rules_sharepoint.md">Sharepoint&lt;/a>&lt;/p>
-&lt;p>&lt;a href="rules_kianda_ai.md">Kianda_AI&lt;/a>&lt;/p></description></item><item><title>Docs: Workflow rules</title><link>https://docs.kianda.com/docs/platform/rules/workflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/</guid><description>
+&lt;p>Check-out the &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">development&lt;/a> section for more details on how to build custom widgets in Kianda.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>We have briefly introduced the key concepts of rules. Click on the links below to read more about rule concepts in detail:&lt;/p></description></item><item><title>Docs: Workflow rules</title><link>https://docs.kianda.com/docs/platform/rules/workflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/</guid><description>
 &lt;p>Kianda workflow rules represent the actions a user intend to perform when they interact with form components. Below are the workflow rules:&lt;/p>
 &lt;ol>
 &lt;li>

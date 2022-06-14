@@ -1,34 +1,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – General</title><link>https://docs.kianda.com/docs/platform/rules/general/</link><description>Recent content in General on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/general/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Rule conditions</title><link>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</guid><description>
-&lt;p>Flexible and dynamic conditions form an important component to make forms fully dynamic. It enables you to create natural language conditions when rules should be triggered.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/condition-editor.png" alt="Conditiion Editor">&lt;/p>
-&lt;p>Conditions can be applied throughout your Kianda form to ensure your rules, etc. only run at specific points depending on certain criteria being met.&lt;/p>
-&lt;p>&lt;strong>When to use:&lt;/strong>&lt;/p>
-&lt;p>Conditions should be used when a rule should only be triggered at a specific point, i.e. an email only being sent if the status of a request is not closed.&lt;/p>
-&lt;p>&lt;strong>You can add this rule:&lt;/strong>&lt;/p>
-&lt;p>· to a field&lt;/p>
-&lt;p>· to a form&lt;/p>
-&lt;p>· to a process (the rule will run on load)&lt;/p>
-&lt;p>&lt;strong>How to use:&lt;/strong>&lt;/p>
+&lt;h4 id="introduction">Introduction&lt;/h4>
+&lt;p>Conditions are a key component of Kianda &lt;strong>rules&lt;/strong>. They are the &lt;strong>triggers&lt;/strong> that result in fully dynamic forms. They enable you to enables you to create natural language conditions when rules should be triggered.&lt;/p>
+&lt;p>The &lt;strong>Conditions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/condition.png" alt="img"> is found within all &lt;strong>rules&lt;/strong> as well as &lt;a href="docs/platform/pages/">&lt;strong>dashboard widgets&lt;/strong>&lt;/a>. Conditions add an important level of interactivity, creating dynamic pathways within a process. These pathways could result from user interaction or from other events that happen.&lt;/p>
+&lt;p>Conditions work on the ‘if…then’ principle: ‘if’ the condition exists ‘then’ an action happens, and where applicable, if the condition does not exist, then another action can happen. You can use these principles as steps to implementing conditions:&lt;/p>
 &lt;ol>
-&lt;li>
-&lt;p>When you edit the condition, the first thing you will select is the Kianda field which you want the condition to apply to.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Next you select the match type of the filter, i.e. equal to, not equal to, is blank, etc.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The third portion of the condition is to select the value you wish to be your filter criteria. This could be either an existing field within Kianda, or it can be a text input you can add directly to the field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You can have multiple conditions and can have one or all of the filter criteria being met via the and/or setting which is available after adding a second condition.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>It is also possible to add additional condition groups, this will allow you to have multiple different conditions depending on your needs.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click Ok and the condition is now set.&lt;/p>
-&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
+&lt;li>Create the &lt;strong>condition(s)&lt;/strong>&lt;/li>
+&lt;li>Create the &lt;strong>action(s)&lt;/strong> that will be applied as a result of the first condition being in place.&lt;/li>
+&lt;li>Where applicable, create the &lt;strong>otherwise action(s)&lt;/strong> based on other conditions being in place.&lt;/li>
+&lt;/ol>
+&lt;h4 id="create-the-condition">Create the condition&lt;/h4>
+&lt;ol>
+&lt;li>To create &lt;strong>conditions&lt;/strong>, first choose the &lt;strong>process element&lt;/strong> you want the condition to apply to – such as a form, set of forms, a field/control or set of fields.&lt;/li>
+&lt;li>Next, depending on whether the rule is applied to a &lt;strong>text-based field or date-based field&lt;/strong>, choose from 13 text operators or 25 date operators (see image below).&lt;/li>
+&lt;li>Then choose a &lt;strong>value&lt;/strong>, this could be typed in text, number(s), date(s), form(s) or field(s).&lt;/li>
+&lt;/ol>
+&lt;p>&lt;em>&lt;strong>Condition elements&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/conditions3-2.gif" alt="img">&lt;/p>
+&lt;p>In the case of &lt;strong>multiple conditions&lt;/strong>, you can use &lt;strong>And&lt;/strong> or &lt;strong>Or&lt;/strong> to create a group of compound conditions:&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/editconditions-1.gif" alt="img">&lt;/p>
+&lt;p>The result is a flexible process workflow that will result in desired actions based on any number of conditions.&lt;/p>
+&lt;h4 id="create-the-actions--example-hide-or-disable-rule">Create the action(s) – example Hide or Disable rule&lt;/h4>
+&lt;p>To create &lt;strong>actions&lt;/strong> and where applicable, &lt;strong>otherwise actions&lt;/strong>, the &lt;strong>action will depend on the rule&lt;/strong> that is chosen. All Kianda rules use a natural language structure to make it is easy to apply actions. For example, for the &lt;strong>Workflow rule&lt;/strong>, &lt;strong>Hide or Disable&lt;/strong>, you can choose forms and fields from your process and then apply seven possible actions (as shown below).&lt;/p>
+&lt;p>*&lt;strong>Action elements for Hide or Disable*&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/hideoptions-1024x477.gif" alt="7 actions for Hide or Disable">&lt;/p>
+&lt;p>The actions within &lt;strong>Hide or disable&lt;/strong> are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Hide&lt;/strong> will hide a process element (forms or fields) from view.&lt;/li>
+&lt;li>&lt;strong>Show&lt;/strong> will show the element.&lt;/li>
+&lt;li>&lt;strong>Disable&lt;/strong> blocks a user from editing an element.&lt;/li>
+&lt;li>&lt;strong>Enable&lt;/strong> allows a user to add a value to an element.&lt;/li>
+&lt;li>&lt;strong>Toggle visible&lt;/strong> will toggle between showing an element or not, based on subsequent clicks of a field that the rule is applied to.&lt;/li>
+&lt;li>&lt;strong>Toggle enable&lt;/strong> will toggle between allowing an element to be edited or not, based on subsequent clicks of a field that the rule is applied to.&lt;/li>
+&lt;li>&lt;strong>Hide and clear&lt;/strong> will allow you to hide a process element and clear the details. For example, if a toggle button has this rule applied, with an &lt;strong>otherwise action&lt;/strong> of &lt;strong>show&lt;/strong> on a textbox, then if one value is chosen on the toggle button, the user is allowed enter details into the textbox. The otherwise action is that the field is hidden and cleared of data, so that no data can be retrieved. This might be useful, for example, when sensitive information is used, like a social security number on a form.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Note&lt;/strong>: You can use rules to create &lt;strong>actions&lt;/strong> &lt;strong>without conditions&lt;/strong> too. In this case the rule will simply execute, for example when a form or field is clicked on.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Depending on how the rule is applied, for example to a &lt;strong>Submit&lt;/strong> button, the rule order is important to consider, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/mutiple-rules/">Multiple rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
 &lt;h3 id="introduction">Introduction&lt;/h3>
 &lt;p>When working with rules in forms, a key principle to consider is &lt;strong>rule order&lt;/strong>. This is important if there are &lt;strong>multiple rules&lt;/strong> attached to an item like a button. In this case the order of execution is important and can be modified to suit your needs.&lt;/p>
 &lt;p>For example, you may want a &lt;strong>Send email rule&lt;/strong> to be executed once the &lt;strong>Submit&lt;/strong> button is clicked. This will result in an automated email to a designated person. You may also want to attach a report to this email, a report that is a complete form. In this example a &lt;strong>Generate word&lt;/strong> &lt;strong>document&lt;/strong> &lt;strong>rule&lt;/strong> could be used to generate a report when the &lt;strong>Submit&lt;/strong> button is clicked. In this example the &lt;strong>Generate word document rule&lt;/strong> has to be executed before the &lt;strong>Send email rule&lt;/strong>, so that the Word document can be generated and then attached to the email.&lt;/p>
@@ -46,7 +54,10 @@
 &lt;source src="https://docs.kianda.com/videos/short-rule-order.mp4">
 Your browser does not support the video tag.
 &lt;/source>
-&lt;/video></description></item><item><title>Docs: Expression builder</title><link>https://docs.kianda.com/docs/platform/rules/general/expression-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/expression-builder/</guid><description>
+&lt;/video>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Expression builder</title><link>https://docs.kianda.com/docs/platform/rules/general/expression-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/expression-builder/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Expressions allow you to put together form &lt;strong>identifiers&lt;/strong> (form field IDs) and &lt;strong>constants&lt;/strong> with &lt;strong>operators&lt;/strong> and &lt;strong>functions&lt;/strong> to return a &lt;strong>dynamic value&lt;/strong> that can be used in various places – for example, in a form or field rule to automate processes.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Expressions&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/expressions.gif" alt="Expression elements">&lt;/p>
@@ -54,9 +65,23 @@ Your browser does not support the video tag.
 &lt;p>&lt;em>&lt;strong>Expression example&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/expressioneg-1.gif" alt="img">&lt;/p>
 &lt;p>In the example above, &lt;strong>[RequesterName]&lt;/strong> and &lt;strong>[category]&lt;/strong> are identifiers, that is unique IDs for form fields. &lt;strong>ProcessLink()&lt;/strong> is a function that will return a link to that process instance. Using the expressions above in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient.&lt;/p>
-&lt;h3 id="expression-builder">Expression builder&lt;/h3>
-&lt;p>The expression builder is used to build expressions. You can search for fields and click on &lt;strong>Add to expression&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/expressionbuilder.png" alt="Expression builder dialog box">&lt;/p>
+&lt;h2 id="getting-started-with-expressions--example-email-body-text">Getting started with expressions – example Email body text&lt;/h2>
+&lt;p>Expressions are recognisable in Kianda from the &lt;strong>Expressions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png" alt="Expressions"> found in &lt;strong>Edit rule dialog boxes&lt;/strong> and &lt;strong>other menu items&lt;/strong>, such as enabling quick actions for processes and number fields.&lt;/p>
+&lt;p>Within rules, expressions can be created using the &lt;strong>Expression builder&lt;/strong> where you can &lt;strong>Add field to an expression&lt;/strong> or use the handy &lt;strong>Reference&lt;/strong> guide to get a list of commonly used functions.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Expression builder&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/expressionbuilder2.gif" alt="img">&lt;/p>
+&lt;p>Now let’s go step by step through the process of adding an expression to the &lt;strong>Body&lt;/strong> section of an email being sent using the &lt;strong>Send email&lt;/strong> rule:&lt;/p>
+&lt;ol>
+&lt;li>First, add a &lt;strong>Send email&lt;/strong> rule to a form or forms, field or fields by selecting &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Communications&lt;/strong>&amp;gt; &lt;strong>Send email&lt;/strong> from the left-side pane.&lt;/li>
+&lt;li>In the &lt;strong>Body&lt;/strong> section of the email (under &lt;strong>Action&lt;/strong>), click on the &lt;strong>&lt;em>*Expressions*&lt;/em> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png" alt="Expressions">&lt;/strong>.&lt;/li>
+&lt;li>Click on the blank box under &lt;strong>Add field to expression&lt;/strong> and find the field you want to reference in your email – for example, a text box titled &lt;strong>EmployeeName&lt;/strong>.&lt;/li>
+&lt;li>Click &lt;strong>Add to expression&lt;/strong>.&lt;/li>
+&lt;li>Click &lt;strong>OK&lt;/strong>.&lt;/li>
+&lt;li>To add additional field expressions, click on the &lt;strong>&lt;em>*Expressions*&lt;/em> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png" alt="Expressions">&lt;/strong> again, under &lt;strong>Add field to expression&lt;/strong>, click on &lt;strong>X&lt;/strong> beside the field name to clear the expression box and then search for the desired field from a form.&lt;/li>
+&lt;li>To add a function, click on &lt;strong>Reference&lt;/strong> and copy the function into the body of the email. A list of references are available below.&lt;/li>
+&lt;/ol>
+&lt;h2 id="expression-functions">Expression functions&lt;/h2>
+&lt;p>All JavaScript expressions and functions can be used in the Expression builder to create the impact you want.&lt;/p>
 &lt;p>In addition to defining your own expressions there is a set list of expressions found under &lt;strong>References&lt;/strong>, see table below for meaning.&lt;/p>
 &lt;table>
 &lt;thead>
@@ -132,16 +157,36 @@ Your browser does not support the video tag.
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>&lt;strong>Note&lt;/strong>: In the case of the last three expressions, you should select a field which contains data. If you give the name of a button field for example, then no data will be returned.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
-&lt;p>Success/Error mapping can be used to populate fields within the Kianda form depending on the success or failure of a rule being executed.&lt;/p>
-&lt;p>&lt;strong>When to use:&lt;/strong>&lt;/p>
-&lt;p>Success/Error mapping should be used when after the execution of a rule you wish to have fields populated with specific values.&lt;/p>
-&lt;p>&lt;strong>You can add this rule:&lt;/strong>&lt;/p>
-&lt;p>· to a field&lt;/p>
-&lt;p>· to a form&lt;/p>
-&lt;p>· to a process (the rule will run on load)&lt;/p>
-&lt;p>&lt;strong>How to use:&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: In the case of the last three expressions, you should select a field which contains data. If you give the name of a button field for example, then no data will be returned.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Success/Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As an &lt;strong>administrator&lt;/strong> or &lt;strong>designer&lt;/strong>, you can use Kianda &lt;strong>Designer&lt;/strong> to populate fields within the Kianda form, in the &lt;strong>Edit rule&lt;/strong> dialog box and set parameters for success and error mapping.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Success/Error mapping should be with rule execution, displaying values that you want for rule execution success or failure.&lt;/p>
+&lt;p>&lt;strong>You can use mapping with the following rules:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Find items&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Create item&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Update item&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Delete item&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> All SharePoint rules, except Get attachments and Create anonymous link&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
 &lt;ol>
+&lt;li>
+&lt;p>Select the field that will have the rule attached, for example a button at the end of a form, or a field within a form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane and select one of the rules that uses mapping as shown in the &lt;a href="#wehn-to-use">When to use&lt;/a> list above, for example the &lt;strong>SharePoint rule&lt;/strong> called &lt;strong>Create list&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>, add conditions if desired by clicking on the &lt;strong>Edit conditions&lt;/strong> button and under &lt;strong>Action&lt;/strong> select a SharePoint data source from the dropdown list.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-eg.jpg" alt="(Example of a rule with mapping)">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out any additional fields as necessary, for example to create a list the following fields must be completed.&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>For on success mapping select the “form field” and chose the field within the form which you want to store the information.&lt;/p>
 &lt;/li>
@@ -157,4 +202,6 @@ Your browser does not support the video tag.
 &lt;li>
 &lt;p>Click OK and the mapping is set.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconcontentdocsplatformrulesgeneralsuccess-error-mappingassets18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/../content/docs/platform/rules/general/success-error-mapping.assets/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item></channel></rss>

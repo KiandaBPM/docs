@@ -218,7 +218,7 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/fields-controls-list-table.jpg" alt="Form controls">&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you know what &lt;strong>Controls&lt;/strong> are, the different types of Controls (fields) and how to add them to a form, find out more about the properties associated with Controls and more about each of the three categories of Controls, as well as Custom controls:&lt;/p></description></item><item><title>Docs: Rules</title><link>https://docs.kianda.com/docs/platform/rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/</guid><description>
-&lt;p>Business rules are what makes Kianda forms come alive. They represent the actual actions users intend to perform when they interact with form components. There are 59 rules you can apply to forms, see &lt;a href="#rules-list">Rules list&lt;/a>.&lt;/p>
+&lt;p>Business rules are what makes Kianda forms come alive. They represent the actual actions users intend to perform when they interact with form components. There are 60 rules you can apply to forms, see &lt;a href="#rules-list">Rules list&lt;/a>.&lt;/p>
 &lt;p>There are two key principles to consider when working with forms:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -233,16 +233,16 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/rulesgeneral.png" alt="Rules">&lt;/p>
 &lt;p>There are 10 categories of rules:&lt;/p>
 &lt;ol>
-&lt;li>&lt;strong>Workflow&lt;/strong> - rules that represent the actions a user intends to perform when they interact with form components. These rules enable you to execute actions that can change the flow of information within a process. There are 6 workflow rules, see &lt;a href="workflow/">Workflow&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Communications&lt;/strong> - rules associated with user communication for example sending an email, meeting request or triggering a user alert. There are 4 communication rules, see &lt;a href="communications/">Communications&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Data&lt;/strong> - rules associated with database operations Create, Read, Update and Delete (CRUD) allowing these actions to occur on configured data sources. There are 5 data rules, see &lt;a href="data/">Data&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Users&lt;/strong> - rules associated with user properties, allowing user lookup based on a user attribute or retrieve a user property. There are 4 user rules, see &lt;a href="users/">Users&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>File management&lt;/strong> - rules concerned with generating documents such as Word, Excel or converting to PDF. There are 7 file management rules, see &lt;a href="files/">File Management&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Tables&lt;/strong> - rules associated with table operations such as sorting, copying table rows to another table, adding and removing table rows. There are 12 table rules, see &lt;a href="tables/">Tables&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Dates&lt;/strong> - date rules to calculate time and format dates with advanced filter options like omitting weekends or special dates . There are 4 date rules, see &lt;a href="dates/">Dates&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Form actions&lt;/strong> - rules linked to actions that are part of forms, for example submit, close or save. There are 6 form rules, see &lt;a href="form-actions/">Form actions&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>SharePoint&lt;/strong> - SharePoint associated rules such as adding, finding or removing users, defining permissions and check-in/checkout of an item. There are 10 SharePoint rules, see &lt;a href="sharepoint/">SharePoint&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>KiandaAI&lt;/strong> - there is 1 KiandaAI rule related to text analysis, see &lt;a href="kianda-AI/">KiandaAI&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Workflow&lt;/strong> - rules that represent the actions a user intends to perform when they interact with form components. These rules enable you to execute actions that can change the flow of information within a process. There are 7 workflow rules, see &lt;a href="docs/platform/rules/workflow/">Workflow&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Communications&lt;/strong> - rules associated with user communication for example sending an email, meeting request or triggering a user alert. There are 4 communication rules, see &lt;a href="docs/platform/rules/communications/">Communications&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Data&lt;/strong> - rules associated with database operations Create, Read, Update and Delete (CRUD) allowing these actions to occur on configured data sources. There are 5 data rules, see &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Users&lt;/strong> - rules associated with user properties, allowing user lookup based on a user attribute or retrieve a user property. There are 4 user rules, see &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">Users&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>File management&lt;/strong> - rules concerned with generating documents such as Word, Excel or converting to PDF. There are 7 file management rules, see &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File Management&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Tables&lt;/strong> - rules associated with table operations such as sorting, copying table rows to another table, adding and removing table rows. There are 12 table rules, see &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Tables&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Dates&lt;/strong> - date rules to calculate time and format dates with advanced filter options like omitting weekends or special dates . There are 4 date rules, see &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Form actions&lt;/strong> - rules linked to actions that are part of forms, for example submit, close or save. There are 6 form rules, see &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form actions&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>SharePoint&lt;/strong> - SharePoint associated rules such as adding, finding or removing users, defining permissions and check-in/checkout of an item. There are 10 SharePoint rules, see &lt;a href="https://docs.kianda.com/docs/platform/rules/sharepoint/">SharePoint&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>KiandaAI&lt;/strong> - there is 1 KiandaAI rule related to text analysis, see &lt;a href="https://docs.kianda.com/docs/platform/rules/kianda-ai/">KiandaAI&lt;/a> for more information.&lt;/li>
 &lt;/ol>
 &lt;h2 id="rule-design">Rule design&lt;/h2>
 &lt;ol>
@@ -258,9 +258,12 @@ Your browser does not support the video tag.
 &lt;p>If there is more than 1 rule for an item like a field or button, then the order of execution must be considered.&lt;/p>
 &lt;p>For example for a Submit button on a form I may want my &lt;strong>Send email rule&lt;/strong> to be executed first before any other rule is executed. To do this click on the &lt;strong>Submit&lt;/strong> button to make sure you are in &lt;strong>Edit&lt;/strong> mode, and under &lt;strong>Rules&lt;/strong> in the right-hand pane, drag the &lt;strong>Send email&lt;/strong> rule to the top of the list by clicking on the rule and dragging it to the top.&lt;/p>
 &lt;img src="https://docs.kianda.com/images/ruleorder.png" alt="Rule order" style="zoom:70%;" />
+Go to [Multiple rules](/docs/platform/rules/general/multiple-rules/) to read more about using mutiple rules on a field or other item.
 &lt;h2 id="rules-list">Rules list&lt;/h2>
 &lt;p>A full list of rules is available in the table below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/rulestable_orig.png" alt="Rules list">&lt;/p></description></item><item><title>Docs: Your workspace</title><link>https://docs.kianda.com/docs/platform/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/general/</guid><description>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rules-list.jpg" alt="Rules list">&lt;/p>
+&lt;h3 id="whats-next--idea-iconcontentdocsplatformrules_indexassets18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/../content/docs/platform/rules/_index.assets/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>We have briefly introduced the concept of &lt;strong>Rules&lt;/strong>. To read more about rules including each category of rules, click on the links below:&lt;/p></description></item><item><title>Docs: Your workspace</title><link>https://docs.kianda.com/docs/platform/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/general/</guid><description>
 &lt;p>When you login to Kianda for the first time, you are presented with an easy-to-use interface, your Kianda &lt;strong>workspace&lt;/strong>, that contains all the functions you need for your role.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Kianda workspace&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/workspace4.gif" alt="User interface">&lt;/p>
