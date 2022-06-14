@@ -4,7 +4,7 @@ linkTitle: "Button control"
 typora-root-url: ..\..\..\..\..\static
 ---
 
-**Button fields** can be used in forms to allow user interface actions. Often, rules are applied to buttons so that actions are automatically executed once the user clicks on the button. To learn more about rules, go to [Rules](/docs/platform/rules/).
+**Button fields** can be used in forms to allow user interface actions. Often, rules are applied to buttons so that actions are automatically executed once the user clicks on the button. In this way, Button fields with rules can be used to trigger a sequence of events. To learn more about rules, go to [Rules](/docs/platform/rules/).
 
 For example, as part of an Employee Appraisal Process, a manager may complete a Performance Plan form for each employee, setting out their Key Performance Areas and goals. It could be useful to add a button to this form - titled 'Schedule Meeting' - that will automatically schedule a performance review meeting between the manager and the employee at a pre-determined date in the future. We will keep this example in mind as we learn more about using **Button controls**.
 
