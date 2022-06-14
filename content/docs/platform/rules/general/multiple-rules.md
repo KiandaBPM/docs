@@ -32,3 +32,9 @@ The video below shows an example of a **Send email rule** being created and save
     Your browser does not support the video tag.
     </source>
 </video>
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+To find out more about rule implementation, go to the main [Rules](/docs/platform/rules/) page and then click on the links to the different rule categories.

@@ -4,6 +4,8 @@ weight: 3
 typora-root-url: ..\..\..\..\..\static
 ---
 
+## Introduction ##
+
 Expressions allow you to put together form **identifiers** (form field IDs) and **constants** with **operators** and **functions** to return a **dynamic value** that can be used in various places – for example, in a form or field rule to automate processes.
 
 ***Expressions***
@@ -18,11 +20,29 @@ For example, expressions could be used in the body of an automated email sent us
 
 In the example above, **[RequesterName]** and **[category]** are identifiers, that is unique IDs for form fields. **ProcessLink()** is a function that will return a link to that process instance. Using the expressions above in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient.
 
-### Expression builder
+## Getting started with expressions – example Email body text
 
-The expression builder is used to build expressions. You can search for fields and click on **Add to expression**.
+Expressions are recognisable in Kianda from the **Expressions** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png) found in **Edit rule dialog boxes** and **other menu items**, such as enabling quick actions for processes and number fields.
 
-![Expression builder dialog box](/images/expressionbuilder.png)
+Within rules, expressions can be created using the **Expression builder** where you can **Add field to an expression** or use the handy **Reference** guide to get a list of commonly used functions.
+
+***Expression builder***
+
+![img](https://academy.kianda.com/wp-content/uploads/2022/03/expressionbuilder2.gif)
+
+Now let’s go step by step through the process of adding an expression to the **Body** section of an email being sent using the **Send email** rule:
+
+1. First, add a **Send email** rule to a form or forms, field or fields by selecting **Add a rule** > **Communications**> **Send email** from the left-side pane.
+2. In the **Body** section of the email (under **Action**), click on the ***\*Expressions\** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png)**.
+3. Click on the blank box under **Add field to expression** and find the field you want to reference in your email – for example, a text box titled **EmployeeName**.
+4. Click **Add to expression**.
+5. Click **OK**.
+6. To add additional field expressions, click on the ***\*Expressions\** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png)** again, under **Add field to expression**, click on **X** beside the field name to clear the expression box and then search for the desired field from a form.
+7. To add a function, click on **Reference** and copy the function into the body of the email. A list of references are available below.
+
+## Expression functions
+
+All JavaScript expressions and functions can be used in the Expression builder to create the impact you want.
 
 In addition to defining your own expressions there is a set list of expressions found under **References**, see table below for meaning.
 
@@ -46,4 +66,8 @@ In addition to defining your own expressions there is a set list of expressions 
 | GetFieldValue('fieldName')                    | Returns the value in the given field. See note below.        |
 
 **Note**: In the case of the last three expressions, you should select a field which contains data.  If you give the name of a button field for example, then no data will be returned.
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+To find out more about rule implementation, go to the main [Rules](/docs/platform/rules/) page and then click on the links to the different rule categories.
 

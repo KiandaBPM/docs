@@ -4,38 +4,59 @@ typora-root-url: ..\..\..\..\..\static
 weight: 1
 ---
 
-Flexible and dynamic conditions form an important component to make forms fully dynamic. It enables you  to create natural language conditions when rules should be triggered.
+#### Introduction
 
-![Conditiion Editor](/images/condition-editor.png)
+Conditions are a key component of Kianda **rules**. They are the **triggers** that result in fully dynamic forms. They enable you to enables you to create natural language conditions when rules should be triggered.
 
-Conditions can be applied throughout your Kianda form to ensure your rules, etc. only run at specific points depending on certain criteria being met. 
+The **Conditions** button ![img](https://academy.kianda.com/wp-content/uploads/2022/02/condition.png) is found within all **rules** as well as [**dashboard widgets**](docs/platform/pages/). Conditions add an important level of interactivity, creating dynamic pathways within a process. These pathways could result from user interaction or from other events that happen.
 
-**When to use:** 
+Conditions work on the ‘if…then’ principle: ‘if’ the condition exists ‘then’ an action happens, and where applicable, if the condition does not exist, then another action can happen. You can use these principles as steps to implementing conditions:
 
-Conditions should be used when a rule should only be triggered at a specific point, i.e. an email only being sent if the status of a request is not closed.
+1. Create the **condition(s)**
+2. Create the **action(s)** that will be applied as a result of the first condition being in place.
+3. Where applicable, create the **otherwise action(s)** based on other conditions being in place.
 
- 
+#### Create the condition
 
-**You can add this rule:**
+1. To create **conditions**, first choose the **process element** you want the condition to apply to – such as a form, set of forms, a field/control or set of fields.
+2. Next, depending on whether the rule is applied to a **text-based field or date-based field**, choose from 13 text operators or 25 date operators (see image below).
+3. Then choose a **value**, this could be typed in text, number(s), date(s), form(s) or field(s).
 
-·    to a field
+***Condition elements***
 
-·    to a form
+![img](https://academy.kianda.com/wp-content/uploads/2022/03/conditions3-2.gif)
 
-·    to a process (the rule will run on load)
+In the case of **multiple conditions**, you can use **And** or **Or** to create a group of compound conditions:
 
- 
+![img](https://academy.kianda.com/wp-content/uploads/2022/03/editconditions-1.gif)
 
-**How to use:**
+The result is a flexible process workflow that will result in desired actions based on any number of conditions.
 
-1. When you edit the condition, the first thing you will select is the Kianda field which you want the condition to apply to. 
+#### Create the action(s) – example Hide or Disable rule
 
-2. Next you select the match type of the filter, i.e. equal to, not equal to, is blank, etc. 
+To create **actions** and where applicable, **otherwise actions**, the **action will depend on the rule** that is chosen. All Kianda rules use a natural language structure to make it is easy to apply actions. For example, for the **Workflow rule**, **Hide or Disable**, you can choose forms and fields from your process and then apply seven possible actions (as shown below).
 
-3. The third portion of the condition is to select the value you wish to be your filter criteria. This could be either an existing field within Kianda, or it can be a text input you can add directly to the field. 
+***Action elements for Hide or Disable\***
 
-4. You can have multiple conditions and can have one or all of the filter criteria being met via the and/or setting which is available after adding a second condition. 
+![7 actions for Hide or Disable](https://academy.kianda.com/wp-content/uploads/2022/02/hideoptions-1024x477.gif)
 
-5. It is also possible to add additional condition groups, this will allow you to have multiple different conditions depending on your needs. 
+The actions within **Hide or disable** are:
 
-6. Click Ok and the condition is now set.
+- **Hide** will hide a process element (forms or fields) from view.
+- **Show** will show the element.
+- **Disable** blocks a user from editing an element.
+- **Enable** allows a user to add a value to an element.
+- **Toggle visible** will toggle between showing an element or not, based on subsequent clicks of a field that the rule is applied to.
+- **Toggle enable** will toggle between allowing an element to be edited or not, based on subsequent clicks of a field that the rule is applied to.
+- **Hide and clear** will allow you to hide a process element and clear the details. For example, if a toggle button has this rule applied, with an **otherwise action** of **show** on a textbox, then if one value is chosen on the toggle button, the user is allowed enter details into the textbox. The otherwise action is that the field is hidden and cleared of data, so that no data can be retrieved. This might be useful, for example, when sensitive information is used, like a social security number on a form.
+
+**Note**: You can use rules to create **actions** **without conditions** too. In this case the rule will simply execute, for example when a form or field is clicked on.
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+Depending on how the rule is applied, for example to a **Submit** button, the rule order is important to consider, see [Multiple rules](/docs/platform/rules/general/mutiple-rules/).
+
+To find out more about rule implementation, go to the main [Rules](/docs/platform/rules/) page and then click on the links to the different rule categories.
+

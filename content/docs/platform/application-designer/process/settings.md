@@ -1,57 +1,92 @@
 ---
 title: "Process settings"
+weight: "2"
+linkTitle: "Process settings"
+typora-root-url: ..\..\..\..\..\static
 ---
 
-Every process, form and control, such as text boxes and lists, will have **properties** visible in the right-hand pane of the [Designer](platform/form_designer2.md) view. 
+ ## Introduction ## 
 
-## Process properties ##
-When you go to **Administration** > **Designer** > click on a process > **Process properties** in the right-hand pane, you will see the properties for the chosen process.
+There are a number of properties and settings that you can implement to your process and forms. 
 
-The following properties are visible:
+***Settings and properties***
 
-- Title - the title of process for example Quarterly Training Request
-- Page layout - you can click on **Wide** ![Wide button](/images/wide-resized.png) or **Narrow**  ![Narrow button](/images/narrow-resized.png) to change the layout.
-![Process and form properties](/images/formlayout_resized.png) 
+![Process and form properties](/images/settingsprocess.png)
 
-In the image above, the process 'Quarterly Training Request' has 2 forms 'Training Request' and 'Training Approval'. Clicking on one of these forms will show the [Form properties](#form-properties). 
+Settings are available from the right-hand pane and give you the ability to:
 
+- [Import processes](#import-forms)
 
+- View [Version history](getting-started/create_process/version_history.md)
 
-## Form properties ##
-When you click on a form, the **Form properties** appear in the right-hand pane.
+- Change [Process settings](#process-settings) ![Settings button](/images/settings.png)
 
-![Form properties](/images/formproperties_resized.png)
+- Edit form information by selecting a form and clicking on the **Pen** button ![Pen icon](/images/penicon.png).
 
-The following properties are visible:
+- Change a field to another field by clicking on  **Change field**
 
-- Title - the form title, for example Training Request
+- Create a duplicate form by selecting a form, clicking on the **Clone** button ![Clone button](/images/clone.png) and then click on **Ok**. A version called 'Form Name Copy' is created and available to edit on the canvas. The **Clone** button can also be used to clone form elements like controls or buttons. 
 
-- Visible - click on this checkbox if you want the form to be visible to users
+- Delete a form by selecting a form, clicking on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **Ok** after you have reviewed the form title and you are sure this is what you want to delete. Click on **Cancel** if you wish to cancel the deletion.
 
-- Show info - click on this checkbox if you want to show information, for example who are the form owners, the design version and when the form was started and completed. This information will pop up at the bottom of the form.
+- View and edit [Form properties](getting-started/create_process/properties.md) and [rules](getting-started/rcreate_process/rules).
 
-  ![Form information](/images/forminfo_resized.png)
-
-Underneath form properties you will see **Form submit rules**, go to [Rules](http://localhost:3000/#/rules/README) to find out more about Form rules.
-
-Click on a control field, for example a text box, in the form to see [Field properties](#field-properties). 
+  
 
 
+### Process settings
 
-## Field properties ##
-When you click on any field, such as User picker, list or text box, the field properties appear in the right-hand pane.
-![Field properties](/images/fieldproperties_resized.png)
+You can edit process settings by clicking on the **Settings** button ![Settings button](/images/settings.png) in the right-hand pane. 
 
-The **Field type**, in the example above, **Text box**, is shown along with the **Title** of the field, in the example above, this is Employee Name.
+Choose from the settings:
 
-The options within properties are:
+1. **Process id settings** - choose from a) Default or b) Custom and use a combination of [ProcessName]-[UniqueNumber]-[FieldName]
 
-- Show Title - show the title of the field
-- Required - tick this checkbox to make this field mandatory for users to fill out
-- Enabled - tick this checkbox to make the field enabled for users to fill out
-- Visible - tick this checkbox to make the field visible to users
-- Layout - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the text box for mobile use.
+2. **Enable process security** - if you tick the checkbox, can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.
 
-![Changing text box width](/images/textboxsize-frame.png) 
+   ***Enable process security***
 
-Underneath field properties you will see **Rules**, go to [Rules](http://localhost:3000/#/rules/README) to find out more about Field rules.
+   ![Process security](/images/process_security.png)
+
+   The default setting is **Security users can create, assign to can update, everyone else can view**.
+
+3. **On load rules execution mode** - options are a) Always b) When in edit mode or c) When open new. The default setting is **Always**. 
+
+4. **Hide form tabs** - gives you the ability to hide form tabs, options are a) Yes or b) No 
+
+5. **Hide left nav** - gives you the ability to hide navigation elements, options are a) Yes or b) No 
+
+6. **Enable anonymous sharing of forms** - gives you the ability to share forms with people outside your organisation for example a feedback form or GDPR subject access request. Options are a) Yes or b) No. If you click on **Yes** there are various options that you can add:
+
+   - **Message to display after anonymous submission** - to add a display message
+
+     ***Enabling anonymous sharing***
+
+   ![Link for external users](/images/anonlink.png)
+
+   - **Hide form topbar** - checkbox to hide the form topbar.
+   - **Force log out** - options are a) Yes or b) No to force user logout once the form is submitted
+   - Click on **New link** to generate a new anonymous form link to share with users and click on **Edit** to change the link. 
+
+7. **Enable mobile bottom navigation** - options are a) Yes or b) No 
+
+8. **Instance delete settings** - options are a) Any user can delete b) Creator can delete c) "Current form owner" can delete d) "Security users" can delete e) "Admins only" can delete. The default setting is **Creator can delete**.
+
+9. **Enable form assignment notification** - options are a) Yes or b) No 
+
+10. **Prevent closing instance with unsaved data** - options are a) Yes or b) No
+
+11. **Selected tab theme** - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is selected.
+
+12. **Completed tab theme** - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is completed.
+
+13. Click on the **OK** button ![OK button](/images/ok.png) when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
+
+14. Click on the **Exit** button ![Exit process](/images/exitdesign.png) to go back to the process list, the Save button ![Save button](/images/save.png) to save your work, the **Preview** button ![Preview](/images/preview.png) to preview what you have created and the **Publish** button ![Publish button](/images/publish.png) to publish your work.
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+- To learn more about rules and controls that can be applied to forms go to [**Controls**](/docs/platform/controls/) and [**Rules**](/docs/platform/rules/). 
+- To learn more about properties, go to [**Properties**](/docs/platform/application-designer/process/properties/).
