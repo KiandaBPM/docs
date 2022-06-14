@@ -27,7 +27,7 @@ When you are in **View mode**, the **Edit** button ![Edit button](/images/edit.p
 
 ![View mode](/images/dashboardgeneral.png)
 
-When you click on the **Edit** button ![Edit button](/images/edit.png) you will be in **Edit mode**, which means that the **Widget menu** is available at the top of the dashboard page, along with the **Settings** button ![Settings](images/settings.png) to make changes to the page, and **Bin/Trash** button ![Bin button](/images/binicon.png) to delete the page.
+When you click on the **Edit** button ![Edit button](/images/edit.png) you will be in **Edit mode**, which means that the **Widget menu** is available at the top of the dashboard page, along with the **Settings** button ![Settings](/images/settings.png) to make changes to the page, and **Bin/Trash** button ![Bin button](/images/binicon.png) to delete the page.
 
 ![Page edit mode](/images/editmode.png)
 

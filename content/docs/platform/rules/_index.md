@@ -35,7 +35,7 @@ There are 10 categories of rules:
 
 
 
-### Rule design ###
+## Rule design ###
 
 1. Click on an existing process by going to **Administration** > **Designer** and decide which form or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Pen button,  **Pen** button ![Pen button](/images/penicon.png) for example a form Training Approval or Submit button.
 
@@ -47,7 +47,7 @@ There are 10 categories of rules:
 
 
 
-### Rule order ###
+## Rule order ###
 
 If there is more than 1 rule for an item like a field or button, then the order of execution must be considered. 
 
