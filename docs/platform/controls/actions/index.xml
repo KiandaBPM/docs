@@ -59,10 +59,10 @@
 &lt;p>(i) If you choose to limit the Button visibility to a &amp;lsquo;&lt;strong>User or group&lt;/strong>&amp;rsquo;, you can then select the user(s) or groups you want to be able to see the Button in the &amp;lsquo;Select user(s) or groups&amp;rsquo; box.&lt;/p>
 &lt;p>(ii) If you choose to limit the Button visibility to a &amp;lsquo;&lt;strong>User picker field&lt;/strong>&amp;rsquo;, you then select the User picker field in the &amp;lsquo;Select a userpicker field&amp;rsquo; box:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog-user-picker.jpg" alt="Button visibility limited to User picker field">&lt;/p>
-&lt;p>This will limit the visibility of the Button to the user(s) who are selected in that User picker field.&lt;/p>
+&lt;p>This will limit the visibility of the Button to the user(s) selected in that User picker field.&lt;/p>
 &lt;p>(iii) If you choose to limit the Button visibility to &amp;lsquo;&lt;strong>Form owner(s)&lt;/strong>&amp;rsquo;, you then select the form in the &amp;lsquo;Select a form&amp;rsquo; box - only the owner(s) of the selected form will be able to view the new Button you are inserting:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/button-security-form-owner.jpg" alt="Button visibility limited to Form owners">&lt;/p>
-&lt;p>The second main option in terms of Button security is &amp;lsquo;&lt;strong>Allow anonymous link&lt;/strong>&amp;rsquo;. If you choose &lt;strong>Yes&lt;/strong>, this means an anonymous link to the form can be created and the new Button field will be visible when the form is viewed using that anonymous link.&lt;/p>
+&lt;p>The second main option in terms of Button security is &amp;lsquo;&lt;strong>Allow anonymous link&lt;/strong>&amp;rsquo;. If you choose &lt;strong>Yes&lt;/strong>, this will mean that the new Button field will be visible when the form is accessed via an anonymous link. If you choose &lt;strong>No&lt;/strong>, anyone accessing the form from an anonymous link will not be able to see the Button field. Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
