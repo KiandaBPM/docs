@@ -12,14 +12,14 @@ For example, expressions could be used in the body of an automated email sent us
 
 ![Expression examples](/images/expressioneg.gif)
 
-In the example above, **[RequesterName]** and **[category]** are identifiers, that is unique IDs for form fields. **ProcessLink()** is a function that will return a link to that process instance. Using these expressions in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient. 
+In the example above, **[RequesterName]** and **[category]** are identifiers, that are unique IDs for form fields. **ProcessLink()** is a function that will return a link to that process instance. Using these expressions in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient. 
 
 One of the most commonly used rules that uses expressions is the **Communications** rule, **Send email** - we will use this as an example in the video and in the [Getting started](#getting-started-with-expressions) section below.
 
 ***Using expressions: Example of Sending email***
 
 <video width="100%" style="width:100%" controls>
-    <source src="/videos/expressions.mp4">
+    <source src="/videos/Expressions.mp4">
     Your browser does not support the video tag.
     </source>
 </video>

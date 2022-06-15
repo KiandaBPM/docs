@@ -83,7 +83,7 @@ The first field we are going to add in our example is a textbox field to accept 
 
    ![New field - User picker](/images/userpicker.gif)
 
-   The user picker field will be used in this example, to allow the form user to pick from a list of users. This could be a pre-defined group, or individual users. The user picker field could also be connected to an external datasource like a list of line managers from SalesForce. 
+   The user picker field will be used in this example, to allow the form user to pick from a list of users. This could be a pre-defined group, or individual users. The user picker field could also be connected to an external [datasource](/docs/platform/connectors/) like a list of line managers from SalesForce. 
 
 6. Edit field properties as necessary to control how fields appear, see the next section Field properties.  
 

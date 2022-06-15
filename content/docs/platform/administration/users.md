@@ -19,7 +19,7 @@ To access the **Users** function:
 
    
 
-   These are two main areas: **Users** and **Groups** these are explained in more detail below. 
+   The two main areas are **Users** and **Groups**. These two areas are explained in more detail below. 
 
    
 
@@ -60,7 +60,7 @@ Existing support tickets appear within this section, showing the **name** of the
 #### To create a new user:
 
 1. Click on the **Create new user** button.
-2. Complete the fields as listed in step 2 in the [Existing users](#to-view-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties, see ************
+2. Complete the fields as listed in step 2 in the [Existing users](#to-view-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties.
 3. Check the **Send welcome email** check box if you wish to have a system generated email sent to the new user. 
 4. View Group membership.
 5. When you are finished editing a user's details, click on **OK**, or click on **Close** to exit the dialog box. 
@@ -81,7 +81,7 @@ You can group users into defined groups which can be used in various ways in the
 
 2. From this view you can **remove a user from the group** by checking the checkbox beside a user name and click on **Remove user(s) from group**. 
 
-3. You can also change **add users** from the current group **to another group** by clicking on the dropdown list of group names, choosing a group, checking the checkbox beside the user name and click on **Add user(s) to group**.
+3. You can also change **users** from the current group **to another group** by clicking on the dropdown list of group names, by choosing a group, checking the checkbox beside the username and click on **Add user(s) to group**.
 
    ![Add user to group](/images/add-user-to-group.jpg)
 
@@ -98,11 +98,11 @@ You can group users into defined groups which can be used in various ways in the
 
 3. In this dialog box you can edit:
 
-   - **Group name**
+   - **Group name** - the name of the group
 
-   - **Primary role** - of the group
+   - **Primary role** - the primary role of the group
    - **Group member sync** - options are **Yes** or **No**
-   - **Group administrators** - only users or groups listed here can manage the group; if you leave the field blank then Kianda administrators can manage the group.
+   - **Group administrators** - only users or groups listed here can manage the group; if you leave the field blank then Kianda administrators can manage the group
 
 4. To delete a group, click on the **Bin/Trash** icon. 
 

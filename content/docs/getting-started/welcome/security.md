@@ -42,7 +42,7 @@ Kianda can be linked with active directory groups set up by the client to contro
 
 The Kianda platform allows for **different users to have different security privileges**, providing for easy administrative management of users and their access rights. Our platform allows the following user levels by default:
 
-- User -can only access what is assigned to them. For example, forms and dashboards. 
+- User - can only access what is assigned to them. For example, forms and dashboards
 - Administrator - can access (view and edit) all 
 - Manage partners/customers - can only access what is required to manage customer portals
 - Design business process - can only design business forms and workflows 

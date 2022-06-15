@@ -37,7 +37,7 @@ To add a SharePoint data connector, the steps are:
 
 1. To connect to a datasource, select **Administration** from the left-hand side pane and then click **Data sources**.
 2. Click on **+ Add new** button and then one of 19 data connectors, for example **SharePoint**.
-3. In the case SharePoint fill out the **Site URL** and choose from options like **SharePoint version**, **Scope** as in, if its a Site or Site Collection and **Authentication mode**. For example, if you choose **System User Credentials** as an authentication mode, you must provide your SharePoint system username and password.
+3. In the case of a SharePoint data connector, fill out the **Site URL** and choose from options like **SharePoint version**, **Scope** as in, if it is a **Site** or **Site Collection** and **Authentication mode**. For example, if you choose **System User Credentials** as an authentication mode, you must provide your SharePoint system username and password.
 4. Click on **Test connection** and then **Save**.
 
 Once the data connector is created, this can be used with controls like lists and rules, for example in the image below, a SalesForce data connector called 'Training' has been setup within the Data sources function. Lists within SharePoint can then be linked to list fields in Kianda, by clicking on Data connector in the Edit list dialog box.

@@ -26,7 +26,7 @@ The Kianda platform can quickly deliver amazing results to any digital project -
 
 ## Kianda is a no-code and low-code development platform
 
-Kianda saves your organisation time and resources. Following a short onboarding, any employee can be assigned to build web applications for your business, without the need for any coding experience. **No-code** literally means just that - you don't need to know how to code to create automated forms or build digital processes in Kianda. Anyone is empowered to create. Using Kianda, non-IT professionals can draw on their business expertise to rapidly and simply develop create a digital prototype in an easy-to-use interface and then share it with their colleagues. 
+Kianda saves your organisation time and resources. Following a short onboarding, any employee can be assigned to build web applications for your business, without the need for any coding experience. **No-code** literally means just that - you don't need to know how to code to create automated forms or build digital processes in Kianda. Anyone is empowered to create. Using Kianda, non-IT professionals can draw on their business expertise to rapidly and simply create a digital prototype in an easy-to-use interface and then share it with their colleagues. 
 
 For those who have coding experience, Kianda's open, extensible architecture allows a **low-code** approach, meaning you can use the graphical user interface to extend the range of applications to create what you want, using your own code. This type of reusability, leveraging existing templates to build applications, reduces turnaround time and improves organisational productivity. Developers can also use the platform to create **custom widgets** to use in application design. 
 

@@ -30,7 +30,7 @@ One of the most commonly used rules that uses conditions is the **Workflow** rul
 ***Using conditions in rules: Example of Hide or disable***
 
 <video width="100%" style="width:100%" controls>
-    <source src="/videos/conditions.mp4">
+    <source src="/videos/Conditions.mp4">
     Your browser does not support the video tag.
     </source>
 </video>

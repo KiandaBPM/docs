@@ -35,7 +35,7 @@ Statements like **if** and **unless** are implemented as built-in helpers. Helpe
 
 ## How to get started as a Kianda low-code developer
 
-Kianda **Developer** is a user-friendly interface that allows you to create custom widgets in a few minutes. A custom widget could be a 'Field', 'Rule' or Dashboard widget'. This video goes through an example of how to create a custom field widget.
+Kianda **Developer** is a user-friendly interface that allows you to create custom widgets in a few minutes. A custom widget could be a 'Field', 'Rule' or 'Dashboard widget'. This video goes through an example of how to create a custom field widget.
 
 ***Creating a custom field widget***
 
