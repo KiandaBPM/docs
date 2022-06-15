@@ -23,23 +23,35 @@ Success/Error mapping should be with rule execution, displaying values that you 
 
 1. Select the field that will have the rule attached, for example a button at the end of a form, or a field within a form.
 
-2. Click on **Add a rule** in the left-hand pane and select one of the rules that uses mapping as shown in the [When to use](#wehn-to-use) list above, for example the **SharePoint rule** called **Create list**.
+2. Click on **Add a rule** in the left-hand pane and select one of the rules that uses mapping as shown in the [When to use](#wehn-to-use) list above, for example the **SharePoint rule** called **Create list**, used to create a list in SharePoint dynamically using Kianda form data.
 
 3. In the **Edit rule** dialog box, give the rule a **Title**, add conditions if desired by clicking on the **Edit conditions** button and under **Action** select a SharePoint data source from the dropdown list.
 
    ![(Example of a rule with mapping)](/images/create-a-list-eg.jpg)
 
-4. Fill out any additional fields as necessary, for example to create a list the following fields must be completed.
+4. Fill out any additional fields as necessary, for example to create a list the following fields must be completed:
 
-5. For on success mapping select the “form field” and chose the field within the form which you want to store the information. 
+   - **List template** - choose from a list of SharePoint list types
 
-6. Then in the “data source field or text” you can select the column/field within your respective data source and this value will be stored in the “form field”.
+   - **List name field** - choose a form field that will be used the create a name for the list in SharePoint
 
-7. For on error mapping, you simply need to select the field within the form which will store the error message
+   - **List url field** - choose a form field that will be used in the creation of a URL within SharePoint
+
+   - **List description field** - choose a form field that 
+
+   - **Quick Launch menu** -  options are **Yes** or **No** - choosing Yes allows the created list to be displayed in the Quick Launch menu, containing a link to the list.
+
+     ![Create a list example with details](/images/create-a-list-filled.jpg)
+
+5. To add success mapping, click on **On success mapping** and click on the **Add mapping** button. 
+
+6. Under **form field** select a form field which will store information and under **Data source field or text** select the column/field within your data source to store the value.
+
+7. For **On error mapping**, you simply need to select the field within the form which will store the error message
 
 8. Then select the error message from the dropdown. This error message will be a system generated error which will indicate what if anything has gone wrong when the rule executed.
 
-9. Click OK and the mapping is set.
+9. Click **OK** and the mapping is set.
 
 
 

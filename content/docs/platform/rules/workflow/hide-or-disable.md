@@ -1,8 +1,13 @@
 ---
 title: "Show, hide or disable"
+weight: 1
+typora-root-url: ..\..\..\..\..\static
 ---
 
-This rule can perform one of the following actions on either fields or forms:
+Use the **Hide or Disable** rule to hide, disable, show or enable a field or a component in a Kianda form. This rule is very useful if you want different parts of a form, a complete form or multiple forms, to appear or hide based on how the user of the form completes the form.  
+
+There are seven possible actions within this rule that can be applied to fields or forms:
+
 - Hide from the user (not visible)
 - Show to the user (visible)
 - Disable for the user (not enabled)
@@ -11,7 +16,7 @@ This rule can perform one of the following actions on either fields or forms:
 - Toggle enable: toggle between enabled and not enabled
 - Hide and clear: hide from the user (not visible) and clear the contents
 
-![Hide or disable rule dialog box](/images/HideorDisable.png)
+
 
 ## When to use
 
