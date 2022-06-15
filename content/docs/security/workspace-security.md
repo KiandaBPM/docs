@@ -10,16 +10,19 @@ As an end user, when you login to Kianda, you are presented with dashboards and 
 
 The workspace here refers to the dashboards and widgets, where the user can view the information in order to view or update any record.
 
-The workspace level security can only be applied if you have the Administrator role to set visibility to the **dashboards and widgets.**
+The workspace level security can only be applied if you have the **Administrator** role to allow visibility of **dashboards and widgets.**
 
 These are the steps involved in applying security to the dashboards:
 
 1. Go to the existing **dashboard** page.
 
-2. Click the **Edit** button ![Edit button](/../content/docs/security/workspace-security.assets/clip_image004.png) visible in the top menu bar.
-3. Now in **edit mode**, **settings** button is visible. Click on it.
+2. Click the **Edit** button ![Edit button](/images/edit.png) visible in the top menu bar.
 
-4. “Edit dashboard page” dialog appears where you can find the **Visible to** user picker with an option to select users or groups**.** 
+3. Now in **edit mode**, the **Settings** button  ![Settings button](/images/settings2.png) is visible. Click on the **Settings** button.
+
+4. The **Edit dashboard page** dialog box appears where you can find the **Visible to** user picker with an option to select users or groups**.** 
+
+   ![Edit dashboard visible to parameter](/images/edit-dashboard-users.jpg)
 
 5. Select the correct **users or groups** and click on **Ok**. 
 
@@ -31,9 +34,9 @@ These are the steps involved in applying security to the widgets:
 
 1. Go to the existing **dashboard** page.
 
-2. Click the **Edit** button ![Edit button](/../content/docs/security/workspace-security.assets/clip_image004.png) visible in the top menu bar.
+2. Click the **Edit** button ![Edit button](/images/edit.png) visible in the top menu bar.
 
-3. Now in **edit mode**, click on the gear ⚙ icon of the widget.
+3. Now in **Edit mode**, click on the gear ⚙ icon of the widget.
 
 4. “Edit widget” dialog appears where you can find the **Visible to** user picker with an option to select users or groups**.** 
 
