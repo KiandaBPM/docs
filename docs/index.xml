@@ -65,8 +65,8 @@ Your browser does not support the video tag.
 &lt;p>If you have developer skills, you can create your own custom field widget - see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome//low-code/#how-to-get-started-with-developer">Developer&lt;/a> for more information.&lt;/p>
 &lt;h2 id="getting-started-with-controls">Getting started with Controls&lt;/h2>
 &lt;p>If you go to &lt;strong>Side menu&lt;/strong> &amp;gt;&lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on an existing process or create a new process and then select a form within that process (so that the Edit form buttton - Pen icon - is visible), you will see the pre-defined &lt;strong>Controls&lt;/strong> options in the left-hand pane. If the Controls menu is collapsed, click on it to expand it.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Control Categories&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/Access_ControlsMenu_Select_Form.jpg" alt="Controls">&lt;/p>
+&lt;p>&lt;em>&lt;strong>Control categories&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/access-controlsmenu-select-form.jpg" alt="Form controls">&lt;/p>
 &lt;p>By default, there are three categories of fields:&lt;/p>
 &lt;ol>
 &lt;li>&lt;strong>Input&lt;/strong> - There are eight types of Input fields. They include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.&lt;/li>
@@ -78,7 +78,7 @@ Your browser does not support the video tag.
 &lt;h2 id="controls-list">Controls list&lt;/h2>
 &lt;p>A full list of controls (fields) is shown here.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Control categories, with field names and purpose&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/Fields_Controls_List_Table.jpg" alt="Form controls">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/fields-controls-list-table.jpg" alt="Form controls">&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To learn more about rules that can be applied to fields go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>.&lt;/p>
 &lt;p>To learn more about field properties, go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties/">&lt;strong>Field properties&lt;/strong>&lt;/a>.&lt;/p>
@@ -935,7 +935,7 @@ Your browser does not support the video tag.
 &lt;p>One of the most commonly used rules that uses conditions is the &lt;strong>Workflow&lt;/strong> rule &lt;strong>Hide or Disable&lt;/strong>. This is used as an example in the video and in the &lt;a href="#getting-started-with-conditions">Getting started&lt;/a> section below.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Using conditions in rules: Example of Hide or disable&lt;/strong>&lt;/em>&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
-&lt;source src="https://docs.kianda.com/videos/conditions.mp4">
+&lt;source src="https://docs.kianda.com/videos/Conditions.mp4">
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
@@ -1584,7 +1584,7 @@ Your browser does not support the video tag.
 &lt;h4 id="conditionals">Conditionals&lt;/h4>
 &lt;p>Statements like &lt;strong>if&lt;/strong> and &lt;strong>unless&lt;/strong> are implemented as built-in helpers. Helpers can be invoked three ways; inline invocation, nested invocation and block invocation. For more details, go to: &lt;a href="https://guides.emberjs.com/v2.18.0/templates/conditionals/">https://guides.emberjs.com/v2.18.0/templates/conditionals/&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started-as-a-kianda-low-code-developer">How to get started as a Kianda low-code developer&lt;/h2>
-&lt;p>Kianda &lt;strong>Developer&lt;/strong> is a user-friendly interface that allows you to create custom widgets in a few minutes. A custom widget could be a &amp;lsquo;Field&amp;rsquo;, &amp;lsquo;Rule&amp;rsquo; or Dashboard widget&amp;rsquo;. This video goes through an example of how to create a custom field widget.&lt;/p>
+&lt;p>Kianda &lt;strong>Developer&lt;/strong> is a user-friendly interface that allows you to create custom widgets in a few minutes. A custom widget could be a &amp;lsquo;Field&amp;rsquo;, &amp;lsquo;Rule&amp;rsquo; or &amp;lsquo;Dashboard widget&amp;rsquo;. This video goes through an example of how to create a custom field widget.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Creating a custom field widget&lt;/strong>&lt;/em>&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/createwidget.mp4">
@@ -1668,11 +1668,11 @@ The &amp;lsquo;Widget UI&amp;rsquo; defines the HTML, handlers, expressions and 
 &lt;p>For example, expressions could be used in the body of an automated email sent using the &lt;strong>Send email&lt;/strong> rule, as shown here.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Expression examples&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/expressioneg.gif" alt="Expression examples">&lt;/p>
-&lt;p>In the example above, &lt;strong>[RequesterName]&lt;/strong> and &lt;strong>[category]&lt;/strong> are identifiers, that is unique IDs for form fields. &lt;strong>ProcessLink()&lt;/strong> is a function that will return a link to that process instance. Using these expressions in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient.&lt;/p>
+&lt;p>In the example above, &lt;strong>[RequesterName]&lt;/strong> and &lt;strong>[category]&lt;/strong> are identifiers, that are unique IDs for form fields. &lt;strong>ProcessLink()&lt;/strong> is a function that will return a link to that process instance. Using these expressions in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient.&lt;/p>
 &lt;p>One of the most commonly used rules that uses expressions is the &lt;strong>Communications&lt;/strong> rule, &lt;strong>Send email&lt;/strong> - we will use this as an example in the video and in the &lt;a href="#getting-started-with-expressions">Getting started&lt;/a> section below.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Using expressions: Example of Sending email&lt;/strong>&lt;/em>&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
-&lt;source src="https://docs.kianda.com/videos/expressions.mp4">
+&lt;source src="https://docs.kianda.com/videos/Expressions.mp4">
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
@@ -1921,7 +1921,7 @@ Your browser does not support the video tag.
 &lt;h3 id="user-management">User Management&lt;/h3>
 &lt;p>The Kianda platform allows for &lt;strong>different users to have different security privileges&lt;/strong>, providing for easy administrative management of users and their access rights. Our platform allows the following user levels by default:&lt;/p>
 &lt;ul>
-&lt;li>User -can only access what is assigned to them. For example, forms and dashboards.&lt;/li>
+&lt;li>User - can only access what is assigned to them. For example, forms and dashboards&lt;/li>
 &lt;li>Administrator - can access (view and edit) all&lt;/li>
 &lt;li>Manage partners/customers - can only access what is required to manage customer portals&lt;/li>
 &lt;li>Design business process - can only design business forms and workflows&lt;/li>

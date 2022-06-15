@@ -181,7 +181,7 @@ Your browser does not support the video tag.
 &lt;h4 id="conditionals">Conditionals&lt;/h4>
 &lt;p>Statements like &lt;strong>if&lt;/strong> and &lt;strong>unless&lt;/strong> are implemented as built-in helpers. Helpers can be invoked three ways; inline invocation, nested invocation and block invocation. For more details, go to: &lt;a href="https://guides.emberjs.com/v2.18.0/templates/conditionals/">https://guides.emberjs.com/v2.18.0/templates/conditionals/&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started-as-a-kianda-low-code-developer">How to get started as a Kianda low-code developer&lt;/h2>
-&lt;p>Kianda &lt;strong>Developer&lt;/strong> is a user-friendly interface that allows you to create custom widgets in a few minutes. A custom widget could be a &amp;lsquo;Field&amp;rsquo;, &amp;lsquo;Rule&amp;rsquo; or Dashboard widget&amp;rsquo;. This video goes through an example of how to create a custom field widget.&lt;/p>
+&lt;p>Kianda &lt;strong>Developer&lt;/strong> is a user-friendly interface that allows you to create custom widgets in a few minutes. A custom widget could be a &amp;lsquo;Field&amp;rsquo;, &amp;lsquo;Rule&amp;rsquo; or &amp;lsquo;Dashboard widget&amp;rsquo;. This video goes through an example of how to create a custom field widget.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Creating a custom field widget&lt;/strong>&lt;/em>&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/createwidget.mp4">
@@ -282,7 +282,7 @@ The &amp;lsquo;Widget UI&amp;rsquo; defines the HTML, handlers, expressions and 
 &lt;h3 id="user-management">User Management&lt;/h3>
 &lt;p>The Kianda platform allows for &lt;strong>different users to have different security privileges&lt;/strong>, providing for easy administrative management of users and their access rights. Our platform allows the following user levels by default:&lt;/p>
 &lt;ul>
-&lt;li>User -can only access what is assigned to them. For example, forms and dashboards.&lt;/li>
+&lt;li>User - can only access what is assigned to them. For example, forms and dashboards&lt;/li>
 &lt;li>Administrator - can access (view and edit) all&lt;/li>
 &lt;li>Manage partners/customers - can only access what is required to manage customer portals&lt;/li>
 &lt;li>Design business process - can only design business forms and workflows&lt;/li>
