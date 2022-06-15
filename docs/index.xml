@@ -397,10 +397,16 @@ For example, a line manager who is a form owner may need to add additional infor
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To add a &lt;strong>File upload field&lt;/strong> to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
+&lt;p>To add a &lt;strong>File upload field&lt;/strong> to a form, first open the relevant process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Insert the &lt;strong>File upload field&lt;/strong> by clicking on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu, then select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>File&lt;/strong>. A &lt;strong>New field - File&lt;/strong> dialog box will open with a range of options you can choose from for your new File upload field.&lt;/p>
+&lt;p>Select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>File&lt;/strong>. A &lt;strong>New field - File&lt;/strong> dialog box will open with a range of options you can choose from for your new File upload field.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/new-file-field.jpg" alt="Edit file upload field dialog box">&lt;/p>
 &lt;p>The options available in the &lt;strong>New field - File&lt;/strong> dialog box include:&lt;/p>
 &lt;ul>
@@ -466,14 +472,14 @@ For example, a line manager who is a form owner may need to add additional infor
 &lt;/li>
 &lt;li>
 &lt;p>Once you complete the &lt;strong>New field - File&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong>, a new &lt;strong>File upload field&lt;/strong> is added to your form, with the name you inserted as the &lt;strong>Title&lt;/strong> in the dialog box (by default the title is &lt;strong>File 1&lt;/strong> unless you change it).&lt;/p>
-&lt;/li>
-&lt;/ol>
 &lt;p>In the example of our Inspection Form, the new File upload field (titled &lt;strong>Upload photos&lt;/strong>) added to the form could look like this when a user views it on a mobile phone (to see how your form or field will look on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by using the &lt;strong>Preview&lt;/strong> option which can be opened by clicking the play button icon &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-example-mobile.jpg" alt="File upload example mobile phone">&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="how-to-edit-move-and-delete-file-upload-fields">How to edit, move and delete File upload fields&lt;/h3>
 &lt;p>To edit a &lt;strong>File upload field&lt;/strong>:&lt;/p>
 &lt;ol>
-&lt;li>Select the File upload field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Select the File upload field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
 &lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-edit-field.jpg" alt="Select file upload field to edit">&lt;/p>
@@ -481,23 +487,32 @@ For example, a line manager who is a form owner may need to add additional infor
 &lt;li>The &lt;strong>Edit field - File&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - File&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload#how-to-get-started">How to get started&lt;/a>).&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-edit-field-dialog.jpg" alt="Edit date field dialog box">&lt;/p>
-&lt;p>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;p>​ You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
 &lt;p>To move a &lt;strong>File upload field&lt;/strong>, simply:&lt;/p>
 &lt;ol>
-&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
 &lt;li>Drag and drop the field wherever you want to move it to within your form.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/upload-file-draghandle.jpg" alt="Date field drag handle">&lt;/p>
 &lt;p>To delete a &lt;strong>File upload field&lt;/strong> from your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
 &lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
 &lt;li>Click on &lt;strong>OK&lt;/strong> to confirm&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-file-upload-field-properties">How to edit File upload field properties&lt;/h3>
 &lt;p>To view or edit the field properties associated with a &lt;strong>File upload field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-field-prop.jpg" alt="Field properties">&lt;/p>
-&lt;p>In the example shown here, a &lt;strong>File upload field&lt;/strong> titled &lt;strong>Upload Photos&lt;/strong> has been selected in a form called &amp;lsquo;Inspection Form&amp;rsquo; and the Field properties associated with this field include its Title, that its title will be shown in the form (the &amp;lsquo;Show title&amp;rsquo; checkbox is ticked), that this is a mandatory field that users must complete (the &amp;lsquo;Required&amp;rsquo; checkbox is selected and there is a red star next to the field name in the form), that this field will be enabled for users to complete (the &amp;lsquo;Enabled&amp;rsquo; checkbox is ticked), and that this field will be visible to form users (the &amp;lsquo;Visible&amp;rsquo; checkbox is ticked).&lt;/p>
+&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>File upload field&lt;/strong> titled &amp;lsquo;Upload photos&amp;rsquo; are shown here and include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>File&lt;/strong> field.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Upload photos&amp;rsquo;.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the File upload field will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the File upload field will be mandatory for the form user.&lt;/li>
+&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the File upload field will be visible in the form.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the File upload field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
+&lt;/ul>
 &lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
