@@ -86,9 +86,9 @@ To add a **Button field** to a Kianda form:
    
      - If you choose **Yes**, this will mean that the Button field will be visible when the form is accessed via an anonymous link. 
    
-     - If you choose **No**, anyone accessing the form from an anonymous link will not be able to see the Button field. Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda.
+     - If you choose **No**, anyone accessing the form from an anonymous link will not be able to see the Button field. 
    
-     To learn more about how you can create anonymous links to a form that can be shared with external users, see [Anonymous form link](/docs/platform/rules/communications/anonymous-form-link/).
+     Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda. To learn more about how you can create anonymous links to a form that can be shared with external users, see [Anonymous form link](/docs/platform/rules/communications/anonymous-form-link/).
    
       
    

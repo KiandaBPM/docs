@@ -49,7 +49,7 @@ The **Edit field - Panel** dialog box will open, enabling you to choose from a r
 
   ![Show Panel title](/images/panel-show-title.jpg)
 
-  You will learn more about the Field properties associated with Panels in [How to edit Panel field properties](/docs/platform/controls/layout/panel#how-to-edit-panel-field-properties).
+  You will learn more about the Field properties associated with Panels in [How to edit Panel Field properties](/docs/platform/controls/layout/panel#how-to-edit-panel-field-properties).
 
 - **Name (unique)** - This is a unique name for the Panel field.
 
@@ -77,7 +77,32 @@ The **Edit field - Panel** dialog box will open, enabling you to choose from a r
 
 	![Panel add security](/images/panel-add-security.jpg)
 
-	If you choose to '**Allow anonymous link**', this means that the system can generate an anonymous link to the form (including to the Panel contents).
+	In **Field security**, you can choose from **three options in terms of who will be able to view the Panel you are inserting**: User or group, User picker field or Form owner(s).
+	
+	(i) If you choose to limit the Panel visibility to a '**User or group**', you can then select the user(s) or groups you want to be able to see it in the 'Select user(s) or groups' box.
+	
+	(ii) If you choose to limit the Panel visibility to a '**User picker field**', you then select the User picker field in the 'Select a userpicker field' box:
+	
+	![Panel security visibility limited to User picker field](/images/panel-security-user-picker.jpg)
+	
+	This will limit the visibility of the Panel to the user(s) selected in that User picker field.
+	
+	(iii) If you choose to limit the Panel visibility to '**Form owner(s)**', you then select the form in the 'Select a form' box - only the owner(s) of the selected form will be able to view the Panel you are inserting:
+	
+	![Panel security visibility limited to Form owner](/images/panel-security-form-owner.jpg)
+	
+	
+	
+	The second main option in terms of Panel security is '**Allow anonymous link**':
+	
+	![Panel allow anonymous link](/images/panel-security-link.jpg)
+	
+	- If you choose **Yes**, this will mean that the Panel will be visible when the form is accessed via an anonymous link. 
+	
+	- If you choose **No**, anyone accessing the form from an anonymous link will not be able to see the Panel.
+	
+	Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda. To learn more about how you can create anonymous links to a form that can be shared with external users, see [Anonymous form link](/docs/platform/rules/communications/anonymous-form-link/).
+	
 
 Once you are finished editing the **Panel** in the **Edit field** dialog box, click on the **OK** button ![OK button](/images/ok.png) to save your changes or click on **Close** to exit the dialog box without saving.
 
@@ -85,9 +110,12 @@ Once you are finished editing the **Panel** in the **Edit field** dialog box, cl
 
 Once you have inserted a Panel and completed the **Edit field - Panel** dialog box, you can then start to add the elements you need into the Panel - such as text boxes, lists, tables, number fields or date fields. Go to [Controls](/docs/platform/controls/) to see the full list of fields available and [Rules](/docs/platform/rules/) to learn about different categories of rules that can be applied.
 
-To add fields to your Panel, select the Panel (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) so that the **Edit field** button ![Edit form button](/images/penicon.png) is visible - then click on whatever field you want to insert. 
+To add fields to your Panel:
 
-Let's take the example of our first Panel, titled '**Employee Details**'. We will select the Panel by clicking on the 'Employee Details' field Drag handle and can then add a **Text box field** to this Panel by clicking on **Controls**>**Input**>**Text box** in the **Controls** menu - a pop-up message says 'Field added' and a new Text box, titled '**Text box 1**', is added to the 'Employee Details' panel:
+1. Select the Panel (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) so that the **Edit field** button ![Edit form button](/images/penicon.png) is visible
+2. Click on whatever type of field you want to insert from the **Controls** menu in the left-hand pane.
+
+Let's take the example of our first Panel, titled '**Employee Details**'. We can select the Panel by clicking on the 'Employee Details' field Drag handle and then add a **Text box field** to this Panel by clicking on **Controls**>**Input**>**Text box** in the **Controls** menu - a pop-up message says 'Field added' and a new Text box, titled '**Text box 1**', is added to the 'Employee Details' panel:
 
 ![Insert text box field into a Panel](/images/panel-insert-fields.jpg)
 
@@ -101,25 +129,37 @@ To see how your form or field will look on a mobile, view it in **Mobile preview
 
 #### How to move a Panel ####
 
-To move a Panel, simply select the Panel field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop it wherever you want to move it within your form.
+To move a Panel, simply
+
+1. Select the Panel field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+2. Drag and drop it wherever you want to move it within your form.
 
 ![Move a Panel](/images/panel-move.jpg)
 
 #### How to delete a Panel ####
 
-To delete a Panel from your form, select it (by either clicking on the Panel field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)), click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm. Click on **Cancel** if you wish to cancel the deletion.
+To delete a Panel from your form
+
+1. Select it (by either clicking on the Panel field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)), click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+2. Click on **OK** to confirm or click on **Cancel** if you wish to cancel the deletion.
 
 **Note**: Remember that deleting a Panel will result in all of the fields contained within that Panel also being deleted.
 
 
 
-### How to edit Panel field properties ###
+### How to edit Panel Field properties ###
 
 To view or edit the field properties associated with a **Panel**, select the Panel field (by clicking on the field title or drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - the **Field properties** menu will appear in the right-hand pane.
 
-In the example shown here, a **Panel** titled '**Employee Details**' has been selected and the **Field properties** associated with the Panel are shown in the Field properties menu to the right. They include: the field type (Panel), title, that the title will be shown in the form (the 'Show title' checkbox has been selected), that the field will be visible in the form (the 'Visible' checkbox has been selected) and how wide the field layout will be on a PC and mobile phone (the blue bars in 'Layout').
-
 ![Panel field properties](/images/panel-field-properties2.jpg)
+
+In the example shown here, the **Field properties** associated with the 'Employee Details' Panel include:
+
+- **Field type** - the type of field. In this case, Panel.
+- **Title** - the title of the Panel field (default name '**Panel 1**' unless you change it). In this case, 'Employee Details'.
+- **Show title** - this is selected, which means that the Panel title will be shown in the form
+- **Visible** - this is selected, so the Panel will be visible to form users
+- **Layout** - the width of the blue bars can be adjusted to change the width of the Richtext field on PC or mobile. To view the mobile width, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right of the Layout option.
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 
