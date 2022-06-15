@@ -2,6 +2,7 @@
 title: "Platform security"
 linkTitle: "Security"
 weight: 7
+typora-root-url: ..\..\..\static
 ---
 
 Kianda is committed to delivering a best-in class solution to our clients by placing security at the core of our offering. In terms of security and quality, Kianda’s services and solutions are **ISO27001:2013 certified and audited by external parties**, so you can be confident that we follow best practice for our clients’ data and information security.
@@ -51,3 +52,9 @@ Our data classification system has been designed to support access to informatio
 The Kianda platform ensures that data is never transmitted in clear text or stored in a DB or file solution and is hosted and secured in MS Azure with enterprise-grade security. All data generated is encrypted at rest and in transit. Data records are also masked from a GDPR point of view. We employ Microsoft security products to automatically mask and classify personal data - which is scheduled weekly.  
 
 Overall, Kianda Technologies follows ISO ISMS policies, GDPR best practices and OWASP guidelines for product development. Kianda Technologies will also adhere to Client security standards.  
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+This page introduces security in Kianda, to read more about how levels of security are administered, please see the links below:
