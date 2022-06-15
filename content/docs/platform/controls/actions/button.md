@@ -80,10 +80,18 @@ To add a **Button field** to a Kianda form:
 
      ![Button visibility limited to Form owners](/images/button-security-form-owner.jpg)
 
-     The second main option in terms of Button security is '**Allow anonymous link**'. If you choose **Yes**, this will mean that the new Button field will be visible when the form is accessed via an anonymous link. If you choose **No**, anyone accessing the form from an anonymous link will not be able to see the Button field. Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda.
-
+	  
+   
+     The second main option in terms of Button security is '**Allow anonymous link**':
+   
+     - If you choose **Yes**, this will mean that the Button field will be visible when the form is accessed via an anonymous link. 
+   
+     - If you choose **No**, anyone accessing the form from an anonymous link will not be able to see the Button field. Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda.
+   
+     To learn more about how you can create anonymous links to a form that can be shared with external users, see [Anonymous form link](/docs/platform/rules/communications/anonymous-form-link/).
+   
       
-
+   
 7. Once you complete the **New field - Button** dialog box, click **OK** and the new **Button field** is added to your form. 
 
    In our example, if we changed the Button field title to 'Schedule Meeting' and chose a green colour scheme and 'people' icon, our new Button could look like this when added to our 'Performance Plan' form:
