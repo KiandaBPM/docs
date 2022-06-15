@@ -58,13 +58,25 @@ For example, in a 'Training Request' form, you may insert a **User picker field*
 
       For example, in an 'Annual Leave Request' form, there could be an 'Employee Name' User picker field that defaults to the current user; but we may want the Employee's Manager to be able to override the name in this field if they are submitting an annual leave request on behalf of an employee.
 
-   - **Member of group** - You can select the group from your data source that the user is a member of - for example HR Managers.
+   - **Member of group** - You can choose to restrict the users available to be selected in the User picker field to a certain group - for example, only users in the HR Team. Alternatively, you can leave this field blank.
 
-      In Kianda, Groups can be configured under the Administration menu - to learn more about how you can set up and edit Groups, go to [Users & Groups](/docs/platform/administration/users/).
+      When you click into the **Member of group** field, you will see a drop-down list of all of the Groups you can select:
 
-   - **Selection options** - You can choose to enable the form user to choose a user or users from **Users** (all users), **Groups** (such as HR) or **Partners** - you can select as many of these three options as you like.
+      ![User picker field select Member of group](/images/user-picker-member-of-group.jpg)
 
-   - **Default selection option** - You can choose to have the default option displayed in the User picker field be **Users**, **Groups** or **Partners**
+      In Kianda, Groups can be configured under the Administration menu - to learn more about how you can set up and manage Groups, go to [Users & Groups](/docs/platform/administration/users/).
+
+      For example, if you select 'HR Team', the end user completing the form will only be able to select users who are members of the 'HR Team' group in this User picker field.
+
+   - **Selection options** - You can choose what selection options are available to the form user to the right of the User picker field. You can choose to show as many of these three selection options as like: **Users** (all users), **Groups** (such as HR) and **Partners**.
+
+      For example, if you choose to make all three selection options available, your User picker field will have a drop-down menu to the right where the form user can switch between Users, Groups and Partners:
+
+      ![Selection options in a User picker field](/images/user-picker-selection-options.jpg)
+
+      **Note**: If you have inserted a Group in the **Member of group** field, this selection will limit the users or groups available to be selected in the User picker field, regardless of what **Selection options** you choose to make available to the form user.
+
+   - **Default selection option** - You can choose to have a certain selection option displayed to the right of the User picker field by default - either **Users**, **Groups** or **Partners**.
 
    - **Show selection option menu** - You can choose whether or not the selection option menu (where the form user can switch between **Users**, **Groups** and **Partners**) is shown on the right-hand side of the User picker field.
 
@@ -140,6 +152,13 @@ To learn more about the different options within the Field properties menu, go t
 ### Saving changes and version history ###
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
+
+
+
+### User tips ![Target icon](/images/05.png) ###
+Rules can be applied to User picker fields to make your form dynamic. Rules allow actions based upon conditions resulting from user interaction with fields. To learn about the different types of rules you can apply, go to [Rules](/docs/platform/rules/). 
+
+For example, you could apply a [Set form field](/docs/platform/rules/data/set-form-field) rule so that the User picker field is set to be the current user or the user who started the process off.
 
 
 
