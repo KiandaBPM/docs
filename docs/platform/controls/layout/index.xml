@@ -233,7 +233,7 @@
 &lt;p>In our example, after inserting two panels into our form, we could edit each of them in turn and change their titles to &amp;lsquo;Employee Details&amp;rsquo; and &amp;lsquo;Training Details&amp;rsquo;.&lt;/p>
 &lt;p>In order to have the title of a Panel display in your form, you need to take one further step - select each panel and then select the &amp;lsquo;&lt;strong>Show title&lt;/strong>&amp;rsquo; checkbox in the &lt;strong>Field properties&lt;/strong> panel to the right. Now the titles of the two Panels will be shown - here we have selected the first panel in order to display the &amp;lsquo;Show title&amp;rsquo; checkbox associated with it:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-show-title.jpg" alt="Show Panel title">&lt;/p>
-&lt;p>You will learn more about the Field properties associated with Panels in &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/panel#how-to-edit-panel-field-properties">How to edit Panel field properties&lt;/a>.&lt;/p>
+&lt;p>You will learn more about the Field properties associated with Panels in &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/panel#how-to-edit-panel-field-properties">How to edit Panel Field properties&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Name (unique)&lt;/strong> - This is a unique name for the Panel field.&lt;/p>
@@ -257,29 +257,65 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-enable-security.jpg" alt="Enable Panel security">&lt;/p>
 &lt;p>To limit who can view the Panel contents, click the &amp;lsquo;&lt;strong>Add security&lt;/strong>&amp;rsquo; button. A new row is displayed, within which you can select the user(s) or groups who will be able to vie the Panel:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-add-security.jpg" alt="Panel add security">&lt;/p>
-&lt;p>If you choose to &amp;lsquo;&lt;strong>Allow anonymous link&lt;/strong>&amp;rsquo;, this means that the system can generate an anonymous link to the form (including to the Panel contents).&lt;/p>
+&lt;p>In &lt;strong>Field security&lt;/strong>, you can choose from &lt;strong>three options in terms of who will be able to view the Panel you are inserting&lt;/strong>: User or group, User picker field or Form owner(s).&lt;/p>
+&lt;p>(i) If you choose to limit the Panel visibility to a &amp;lsquo;&lt;strong>User or group&lt;/strong>&amp;rsquo;, you can then select the user(s) or groups you want to be able to see it in the &amp;lsquo;Select user(s) or groups&amp;rsquo; box.&lt;/p>
+&lt;p>(ii) If you choose to limit the Panel visibility to a &amp;lsquo;&lt;strong>User picker field&lt;/strong>&amp;rsquo;, you then select the User picker field in the &amp;lsquo;Select a userpicker field&amp;rsquo; box:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/panel-security-user-picker.jpg" alt="Panel security visibility limited to User picker field">&lt;/p>
+&lt;p>This will limit the visibility of the Panel to the user(s) selected in that User picker field.&lt;/p>
+&lt;p>(iii) If you choose to limit the Panel visibility to &amp;lsquo;&lt;strong>Form owner(s)&lt;/strong>&amp;rsquo;, you then select the form in the &amp;lsquo;Select a form&amp;rsquo; box - only the owner(s) of the selected form will be able to view the Panel you are inserting:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/panel-security-form-owner.jpg" alt="Panel security visibility limited to Form owner">&lt;/p>
+&lt;p>The second main option in terms of Panel security is &amp;lsquo;&lt;strong>Allow anonymous link&lt;/strong>&amp;rsquo;:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/panel-security-link.jpg" alt="Panel allow anonymous link">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>If you choose &lt;strong>Yes&lt;/strong>, this will mean that the Panel will be visible when the form is accessed via an anonymous link.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you choose &lt;strong>No&lt;/strong>, anyone accessing the form from an anonymous link will not be able to see the Panel.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda. To learn more about how you can create anonymous links to a form that can be shared with external users, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/anonymous-form-link/">Anonymous form link&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;p>Once you are finished editing the &lt;strong>Panel&lt;/strong> in the &lt;strong>Edit field&lt;/strong> dialog box, click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;h4 id="how-to-add-fields-to-a-panel">How to add fields to a Panel&lt;/h4>
 &lt;p>Once you have inserted a Panel and completed the &lt;strong>Edit field - Panel&lt;/strong> dialog box, you can then start to add the elements you need into the Panel - such as text boxes, lists, tables, number fields or date fields. Go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a> to see the full list of fields available and &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to learn about different categories of rules that can be applied.&lt;/p>
-&lt;p>To add fields to your Panel, select the Panel (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) so that the &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible - then click on whatever field you want to insert.&lt;/p>
-&lt;p>Let&amp;rsquo;s take the example of our first Panel, titled &amp;lsquo;&lt;strong>Employee Details&lt;/strong>&amp;rsquo;. We will select the Panel by clicking on the &amp;lsquo;Employee Details&amp;rsquo; field Drag handle and can then add a &lt;strong>Text box field&lt;/strong> to this Panel by clicking on &lt;strong>Controls&lt;/strong>&amp;gt;&lt;strong>Input&lt;/strong>&amp;gt;&lt;strong>Text box&lt;/strong> in the &lt;strong>Controls&lt;/strong> menu - a pop-up message says &amp;lsquo;Field added&amp;rsquo; and a new Text box, titled &amp;lsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;, is added to the &amp;lsquo;Employee Details&amp;rsquo; panel:&lt;/p>
+&lt;p>To add fields to your Panel:&lt;/p>
+&lt;ol>
+&lt;li>Select the Panel (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) so that the &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible&lt;/li>
+&lt;li>Click on whatever type of field you want to insert from the &lt;strong>Controls&lt;/strong> menu in the left-hand pane.&lt;/li>
+&lt;/ol>
+&lt;p>Let&amp;rsquo;s take the example of our first Panel, titled &amp;lsquo;&lt;strong>Employee Details&lt;/strong>&amp;rsquo;. We can select the Panel by clicking on the &amp;lsquo;Employee Details&amp;rsquo; field Drag handle and then add a &lt;strong>Text box field&lt;/strong> to this Panel by clicking on &lt;strong>Controls&lt;/strong>&amp;gt;&lt;strong>Input&lt;/strong>&amp;gt;&lt;strong>Text box&lt;/strong> in the &lt;strong>Controls&lt;/strong> menu - a pop-up message says &amp;lsquo;Field added&amp;rsquo; and a new Text box, titled &amp;lsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;, is added to the &amp;lsquo;Employee Details&amp;rsquo; panel:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-insert-fields.jpg" alt="Insert text box field into a Panel">&lt;/p>
 &lt;p>You can then edit this new Text box field as needed - in our example, we will rename it as &amp;lsquo;First Name&amp;rsquo;. To learn more about Text box fields, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
 &lt;p>By adding two text box fields (titled &amp;lsquo;First Name&amp;rsquo; and &amp;lsquo;Surname&amp;rsquo;) and a date field (titled &amp;lsquo;Date of Birth&amp;rsquo;) to our &amp;lsquo;Employee Details&amp;rsquo; Panel, and then adding the fields we need to the &amp;lsquo;Training Details&amp;rsquo; Panel, our &amp;lsquo;Training Request&amp;rsquo; form - with its two Panels - could look like this when viewed on a user&amp;rsquo;s mobile phone:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-example-mobile.jpg" alt="Panel example on mobile phone">&lt;/p>
 &lt;p>To see how your form or field will look on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by using the &lt;strong>Preview&lt;/strong> option which can be opened by clicking the play button icon &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">. You also have the options to see how it will look on a PC or tablet.&lt;/p>
 &lt;h4 id="how-to-move-a-panel">How to move a Panel&lt;/h4>
-&lt;p>To move a Panel, simply select the Panel field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop it wherever you want to move it within your form.&lt;/p>
+&lt;p>To move a Panel, simply&lt;/p>
+&lt;ol>
+&lt;li>Select the Panel field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Drag and drop it wherever you want to move it within your form.&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-move.jpg" alt="Move a Panel">&lt;/p>
 &lt;h4 id="how-to-delete-a-panel">How to delete a Panel&lt;/h4>
-&lt;p>To delete a Panel from your form, select it (by either clicking on the Panel field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">), click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm. Click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
+&lt;p>To delete a Panel from your form&lt;/p>
+&lt;ol>
+&lt;li>Select it (by either clicking on the Panel field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">), click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/li>
+&lt;/ol>
 &lt;p>&lt;strong>Note&lt;/strong>: Remember that deleting a Panel will result in all of the fields contained within that Panel also being deleted.&lt;/p>
-&lt;h3 id="how-to-edit-panel-field-properties">How to edit Panel field properties&lt;/h3>
+&lt;h3 id="how-to-edit-panel-field-properties">How to edit Panel Field properties&lt;/h3>
 &lt;p>To view or edit the field properties associated with a &lt;strong>Panel&lt;/strong>, select the Panel field (by clicking on the field title or drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
-&lt;p>In the example shown here, a &lt;strong>Panel&lt;/strong> titled &amp;lsquo;&lt;strong>Employee Details&lt;/strong>&amp;rsquo; has been selected and the &lt;strong>Field properties&lt;/strong> associated with the Panel are shown in the Field properties menu to the right. They include: the field type (Panel), title, that the title will be shown in the form (the &amp;lsquo;Show title&amp;rsquo; checkbox has been selected), that the field will be visible in the form (the &amp;lsquo;Visible&amp;rsquo; checkbox has been selected) and how wide the field layout will be on a PC and mobile phone (the blue bars in &amp;lsquo;Layout&amp;rsquo;).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-field-properties2.jpg" alt="Panel field properties">&lt;/p>
+&lt;p>In the example shown here, the &lt;strong>Field properties&lt;/strong> associated with the &amp;lsquo;Employee Details&amp;rsquo; Panel include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field type&lt;/strong> - the type of field. In this case, Panel.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - the title of the Panel field (default name &amp;lsquo;&lt;strong>Panel 1&lt;/strong>&amp;rsquo; unless you change it). In this case, &amp;lsquo;Employee Details&amp;rsquo;.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - this is selected, which means that the Panel title will be shown in the form&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - this is selected, so the Panel will be visible to form users&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - the width of the blue bars can be adjusted to change the width of the Richtext field on PC or mobile. To view the mobile width, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right of the Layout option.&lt;/li>
+&lt;/ul>
 &lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
