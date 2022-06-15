@@ -10,9 +10,13 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 
 ## How to get started
 
-1. To add a **File upload field** to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible).
+1. To add a **File upload field** to a form, first open the relevant process. 
 
-2. Insert the **File upload field** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Input** to view the range of Input controls and click on **File**. A **New field - File** dialog box will open with a range of options you can choose from for your new File upload field.
+2. Select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible).
+
+3. Click on **Controls** in the left-hand pane to expand the Controls menu.
+
+4. Select **Input** to view the range of Input controls and click on **File**. A **New field - File** dialog box will open with a range of options you can choose from for your new File upload field.
 
    ![Edit file upload field dialog box](/images/new-file-field.jpg)
 
@@ -72,17 +76,17 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 
    
 
-3. Once you complete the **New field - File** dialog box and click **OK**, a new **File upload field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default the title is **File 1** unless you change it). 
+5. Once you complete the **New field - File** dialog box and click **OK**, a new **File upload field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default the title is **File 1** unless you change it). 
 
-In the example of our Inspection Form, the new File upload field (titled **Upload photos**) added to the form could look like this when a user views it on a mobile phone (to see how your form or field will look on a mobile, view it in **Mobile preview** by using the **Preview** option which can be opened by clicking the play button icon ![Preview](/images/preview.png)):
+	In the example of our Inspection Form, the new File upload field (titled **Upload photos**) added to the form could look like this when a user views it on a mobile phone (to see how your form or field will look on a mobile, view it in **Mobile preview** by using the **Preview** option which can be opened by clicking the play button icon ![Preview](/images/preview.png)):
 
-  ![File upload example mobile phone](/images/file-upload-example-mobile.jpg)
+  	![File upload example mobile phone](/images/file-upload-example-mobile.jpg)
 
 ### How to edit, move and delete File upload fields
 
 To edit a **File upload field**:
 
-1. Select the File upload field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+1. Select the File upload field (by either clicking on the field title or on the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
 2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
 
 ![Select file upload field to edit](/images/file-upload-edit-field.jpg)
@@ -91,18 +95,18 @@ To edit a **File upload field**:
 
 ![Edit date field dialog box](/images/file-upload-edit-field-dialog.jpg)
 
-You can make any changes you wish in this dialog box and then click **OK** to confirm. 
+​	You can make any changes you wish in this dialog box and then click **OK** to confirm. 
 
 To move a **File upload field**, simply:
 
-1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
+1. Select the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
 2. Drag and drop the field wherever you want to move it to within your form.
 
 ![Date field drag handle](/images/upload-file-draghandle.jpg)
 
 To delete a **File upload field** from your form:
 
-1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+1. Select the field (by either clicking on the field's name or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
 2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
 3. Click on **OK** to confirm
 
@@ -111,7 +115,15 @@ To view or edit the field properties associated with a **File upload field**, se
 
 ![Field properties](/images/file-upload-field-prop.jpg)
 
-In the example shown here, a **File upload field** titled **Upload Photos** has been selected in a form called 'Inspection Form' and the Field properties associated with this field include its Title, that its title will be shown in the form (the 'Show title' checkbox is ticked), that this is a mandatory field that users must complete (the 'Required' checkbox is selected and there is a red star next to the field name in the form), that this field will be enabled for users to complete (the 'Enabled' checkbox is ticked), and that this field will be visible to form users (the 'Visible' checkbox is ticked).
+For example, the **Field Properties** associated with a **File upload field** titled 'Upload photos' are shown here and include:
+
+- **Field type** - The type of field, in this case a **File** field.
+- **Title** - The Title of the field, in this case 'Upload photos'.
+- **Show title** - If this is selected, the File upload field will be shown in the form.
+- **Required** - If this is selected, the File upload field will be mandatory for the form user.
+- **Enabled** - If this is selected, the user will be able to edit or interact with the field.
+- **Visible** - If this is selected, the File upload field will be visible in the form.
+- **Layout** - The width of the blue bar can be adjusted to change the width of the File upload field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 
