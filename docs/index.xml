@@ -92,27 +92,39 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/">&lt;strong>Designer&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a>&lt;/strong>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Date control</title><link>https://docs.kianda.com/docs/platform/controls/input/date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/date/</guid><description>
-&lt;p>&lt;strong>Date controls&lt;/strong> or &lt;strong>Date fields&lt;/strong> can be inserted in a form when you want a user to be able to input a date and time by using a date and time picker. For example, in a Training Request form, you may want the user to select the date and time of the training course they want to attend.&lt;/p>
+&lt;p>&lt;strong>Date controls&lt;/strong> or &lt;strong>Date fields&lt;/strong> can be inserted in a form when you want a user to be able to input a date and time by using a date and time picker.&lt;/p>
+&lt;p>For example, in a Training Request form, you may want the user to select the date and time of the training course they want to attend.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To add a &lt;strong>Date field&lt;/strong> to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
+&lt;p>To add a &lt;strong>Date field&lt;/strong> to a form, first open the relevant process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Insert the &lt;strong>Date field&lt;/strong> by clicking on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu, then select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Date&lt;/strong>. A date field will be added to your form with the default title of &amp;lsquo;&lt;strong>Date 1&lt;/strong>&amp;rsquo; and a pop-up message will say &amp;lsquo;Field added&amp;rsquo;.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/date-field-added.jpg" alt="List inside and outside a panel">&lt;/p>
+&lt;p>Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The Date field has a small calendar icon on the right hand side - when the user clicks on this icon a calendar is displayed, allowing them to select a date.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/date-field-expanded.jpg" alt="List inside and outside a panel">&lt;/p>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Date&lt;/strong>.&lt;/p>
+&lt;p>A date field will be added to your form with the default title of &amp;lsquo;&lt;strong>Date 1&lt;/strong>&amp;rsquo; and a pop-up message will say &amp;lsquo;Field added&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-field-added.jpg" alt="List inside and outside a panel">&lt;/p>
+&lt;p>The Date field has a small calendar icon on the right hand side - when the user clicks on this icon a calendar is displayed, allowing them to select a date.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-field-expanded.jpg" alt="List inside and outside a panel">&lt;/p>
 &lt;h3 id="how-to-edit-move-and-delete-date-fields">How to edit, move and delete Date fields&lt;/h3>
-&lt;p>To edit a &lt;strong>Date field&lt;/strong>, select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>To edit a &lt;strong>Date field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/select-date-field-to-edit.jpg" alt="Select date field to edit">&lt;/p>
-&lt;p>The &lt;strong>Edit field&lt;/strong> dialog box will open, enabling you to choose from a range of options.&lt;/p>
+&lt;ol start="3">
+&lt;li>The &lt;strong>Edit field&lt;/strong> dialog box will open, enabling you to choose from a range of options.&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/edit-date-field-dialog-box.jpg" alt="Edit date field dialog box">&lt;/p>
-&lt;p>The options within the &lt;strong>Edit date field dialog box&lt;/strong> include:&lt;/p>
+&lt;p>​ The options within the &lt;strong>Edit date field dialog box&lt;/strong> include:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the date field&lt;/p>
@@ -130,29 +142,39 @@ Your browser does not support the video tag.
 &lt;p>&lt;strong>Set default date onload&lt;/strong> - if you choose &amp;lsquo;Yes&amp;rsquo;, this means that the date field will automatically be populated (with a date stamp) when a user opens the form to start completing it; by default, the date that will be inserted is today&amp;rsquo;s date. If you choose &amp;lsquo;No&amp;rsquo;, then the user will need to manually complete the date field.&lt;/p>
 &lt;p>If you choose &amp;lsquo;Yes&amp;rsquo;, two additional options then appear in the dialog box:&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;ol>
 &lt;li>&lt;strong>Default date&lt;/strong> - this is where you can choose the default date that will be automatically inserted in the form when a user opens it. You can choose from &amp;lsquo;&lt;strong>Now&lt;/strong>&amp;rsquo;, &amp;lsquo;&lt;strong>Today&lt;/strong>&amp;rsquo; (which inserts today&amp;rsquo;s date and a time of 00:00 midnight) or &amp;lsquo;&lt;strong>Relative from now&amp;rsquo;&lt;/strong> (you can insert the date you want to use, in terms of the number of days, hours and minutes from now).&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>
-&lt;ol start="2">
 &lt;li>&lt;strong>Always set date even if not empty&lt;/strong> - if you select this option, this means that the default date you&amp;rsquo;ve chosen to be automatically inserted when a user opens the form will be updated/changed &lt;em>each time&lt;/em> the user goes into the form. In other words, the initial date that was inserted when the form was first opened will be replaced/updated when the user goes back into the form. If you want the date field to retain the initial date the user started to complete the form, do not tick this checkbox.&lt;/li>
-&lt;/ol>
-&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Enable native picker on mobile&lt;/strong> - you can choose to allow users who are completing the date field on a mobile phone to use the default pop-up date picker associated with their mobile phone&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>To move a &lt;strong>Date field&lt;/strong>, simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to within your form.&lt;/p>
+&lt;p>To move a &lt;strong>Date field&lt;/strong>, simply&lt;/p>
+&lt;ol>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Drag and drop the field wherever you want to move it to within your form.&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/move-date-field-drag-handle.jpg" alt="Date field drag handle">&lt;/p>
-&lt;p>To delete a &lt;strong>Date field&lt;/strong> from your form, simply select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">), click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;p>To delete a &lt;strong>Date field&lt;/strong> from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/ol>
 &lt;h3 id="how-to-edit-date-field-properties">How to edit Date field properties&lt;/h3>
 &lt;p>To view or edit the field properties associated with a &lt;strong>Date field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-field-properties-new.jpg" alt="Field properties">&lt;/p>
-&lt;p>In the example shown here, a &lt;strong>Date field&lt;/strong> titled &lt;strong>Date&lt;/strong> has been selected in a form called &amp;lsquo;Expense Report&amp;rsquo; and the Field properties associated with this field include its Title, that its title will be shown in the form (the &amp;lsquo;Show title&amp;rsquo; checkbox is ticked), that this will not be a field users are required to complete (the &amp;lsquo;Required&amp;rsquo; checkbox is not selected), that this field will be enabled for users to complete (the &amp;lsquo;Enabled&amp;rsquo; checkbox is ticked), and that this field will be visible to form users (the &amp;lsquo;Visible&amp;rsquo; checkbox is ticked).&lt;/p>
+&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Date field&lt;/strong> titled &amp;lsquo;Date&amp;rsquo; are shown here and include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Date&lt;/strong> field.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Date&amp;rsquo;.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Date field will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the Date field will be mandatory for the form user.&lt;/li>
+&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Date field will be visible in the form.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Date field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
+&lt;/ul>
 &lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
