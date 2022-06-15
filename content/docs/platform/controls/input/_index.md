@@ -16,11 +16,12 @@ To start adding Input controls (fields) to your Kianda forms:
 
 ![Opening Designer from left side menu by choosing Administration>Designer](/images/administration-designer-inputcont.jpg)
 
-2. Once you have opened your process, select the form you want to work on (so that the **Edit Form** button ![Pen icon](/images/penicon.png) is shown) and then click on **Controls** in the left-hand pane so the Controls menu expands to show the four categories of Controls (fields): Input, Layout, Actions and Custom.
+2. Once you have opened your process, select the form you want to work on (so that the **Edit Form** button ![Pen icon](/images/penicon.png) is shown).
+2. Click on **Controls** in the left-hand pane so the Controls menu expands to show the four categories of Controls (fields): Input, Layout, Actions and Custom.
 
 ![Opening Controls menu to view four categories of Controls](/images/open-controls-cat-trainingprocess.jpg)
 
-3. Select **Input** to view the eight types of Input fields:
+4. Select **Input** to view the eight types of Input fields:
 
 ![Input fields](/images/input-menu-controls.jpg)
 
@@ -39,7 +40,9 @@ The eight types of input fields are:
 
 ### How to add, edit, move and delete Input fields ###
 
-To insert an **Input field** into your form, click on the field type you want to add from the **Input** menu. For example, to add a new text box field, click on **Text box** - a pop-up message will appear saying 'Field added' and a new text box with the default name **Text box 1** will be added to your form.
+To insert an **Input field** into your form click on the field type you want to add from the **Input** menu. 
+
+For example, to add a new text box field, click on **Text box** - a pop-up message will appear saying 'Field added' and a new text box with the default name **Text box 1** will be added to your form.
 
 ![Inserting a text box field](/images/insert-text-box-input.jpg)
 
@@ -51,7 +54,7 @@ To edit whatever type of input field you have added to your form:
 
 ![Select field to edit](/images/select-text-box-edit.jpg)
 
-To move an input field, simply
+To move an Input field, simply
 
 1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
 2. Drag and drop the field wherever you want to move it within your form. This example shows how you could move a Text box field in a form:
