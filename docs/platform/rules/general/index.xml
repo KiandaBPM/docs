@@ -178,29 +178,47 @@ Your browser does not support the video tag.
 &lt;p>Select the field that will have the rule attached, for example a button at the end of a form, or a field within a form.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane and select one of the rules that uses mapping as shown in the &lt;a href="#wehn-to-use">When to use&lt;/a> list above, for example the &lt;strong>SharePoint rule&lt;/strong> called &lt;strong>Create list&lt;/strong>.&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane and select one of the rules that uses mapping as shown in the &lt;a href="#wehn-to-use">When to use&lt;/a> list above, for example the &lt;strong>SharePoint rule&lt;/strong> called &lt;strong>Create list&lt;/strong>, used to create a list in SharePoint dynamically using Kianda form data.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Edit rule&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>, add conditions if desired by clicking on the &lt;strong>Edit conditions&lt;/strong> button and under &lt;strong>Action&lt;/strong> select a SharePoint data source from the dropdown list.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-eg.jpg" alt="(Example of a rule with mapping)">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Fill out any additional fields as necessary, for example to create a list the following fields must be completed.&lt;/p>
+&lt;p>Fill out any additional fields as necessary, for example to create a list the following fields must be completed:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>List template&lt;/strong> - choose from a list of SharePoint list types&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>For on success mapping select the “form field” and chose the field within the form which you want to store the information.&lt;/p>
+&lt;p>&lt;strong>List name field&lt;/strong> - choose a form field that will be used the create a name for the list in SharePoint&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Then in the “data source field or text” you can select the column/field within your respective data source and this value will be stored in the “form field”.&lt;/p>
+&lt;p>&lt;strong>List url field&lt;/strong> - choose a form field that will be used in the creation of a URL within SharePoint&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>For on error mapping, you simply need to select the field within the form which will store the error message&lt;/p>
+&lt;p>&lt;strong>List description field&lt;/strong> - choose a form field that&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Quick Launch menu&lt;/strong> - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong> - choosing Yes allows the created list to be displayed in the Quick Launch menu, containing a link to the list.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-filled.jpg" alt="Create a list example with details">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>To add success mapping, click on &lt;strong>On success mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>form field&lt;/strong> select a form field which will store information and under &lt;strong>Data source field or text&lt;/strong> select the column/field within your data source to store the value.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For &lt;strong>On error mapping&lt;/strong>, you simply need to select the field within the form which will store the error message&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Then select the error message from the dropdown. This error message will be a system generated error which will indicate what if anything has gone wrong when the rule executed.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click OK and the mapping is set.&lt;/p>
+&lt;p>Click &lt;strong>OK&lt;/strong> and the mapping is set.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconcontentdocsplatformrulesgeneralsuccess-error-mappingassets18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/../content/docs/platform/rules/general/success-error-mapping.assets/18.png" alt="Idea icon">&lt;/h3>

@@ -270,13 +270,97 @@ For example, a line manager who is a form owner may need to add additional infor
 &lt;p>&lt;strong>Note&lt;/strong>: You can use rules to create &lt;strong>actions&lt;/strong> &lt;strong>without conditions&lt;/strong> too. In this case the rule will simply execute, for example when a form or field is clicked on.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Depending on how the rule is applied, for example to a &lt;strong>Submit&lt;/strong> button, the rule order is important to consider, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/mutiple-rules/">Multiple rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Word document add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</guid><description>
+&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Show, hide or disable</title><link>https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/</guid><description>
+&lt;p>Use the &lt;strong>Hide or Disable&lt;/strong> rule to hide, disable, show or enable a field or a component in a Kianda form. This rule is very useful if you want different parts of a form, a complete form or multiple forms, to appear or hide based on how the user of the form completes the form.&lt;/p>
+&lt;p>There are seven possible actions within this rule that can be applied to fields or forms:&lt;/p>
+&lt;ul>
+&lt;li>Hide from the user (not visible)&lt;/li>
+&lt;li>Show to the user (visible)&lt;/li>
+&lt;li>Disable for the user (not enabled)&lt;/li>
+&lt;li>Enable for the user (enabled)&lt;/li>
+&lt;li>Toggle visible: toggle between visible and not visible&lt;/li>
+&lt;li>Toggle enable: toggle between enabled and not enabled&lt;/li>
+&lt;li>Hide and clear: hide from the user (not visible) and clear the contents&lt;/li>
+&lt;/ul>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
+&lt;p>To dynamically &lt;em>hide&lt;/em> a field or component:&lt;/p>
+&lt;ol>
+&lt;li>Choose a field.&lt;/li>
+&lt;li>Select Add a rule &amp;gt; Workflow &amp;gt; Hide or disable.&lt;/li>
+&lt;li>Click on Edit condition and add a condition.&lt;/li>
+&lt;li>Under Action, select a field or component to be made not visible.&lt;/li>
+&lt;li>Choose Hide from the drop down list.&lt;/li>
+&lt;li>Under Add otherwise action, select the field or component to be made visible.&lt;/li>
+&lt;li>Choose Show from the drop down list.&lt;/li>
+&lt;li>Click OK.&lt;/li>
+&lt;/ol>
+&lt;p>The result is that a field or component will be made visible/not visible depending on the condition that has been set.&lt;/p>
+&lt;h2 id="notes">Notes&lt;/h2>
+&lt;p>It is not necessary to add a condition. In this case the rule will be triggered automatically:&lt;/p>
+&lt;ul>
+&lt;li>if the rule is applied to a &lt;em>field&lt;/em>, then the rule will be triggered when the user enters a value in that field.&lt;/li>
+&lt;li>if the rule is applied to a &lt;em>button&lt;/em>, then the rule will be triggered when the user clicks the button.&lt;/li>
+&lt;li>if the rule is applied to a &lt;em>form&lt;/em>, then the rule will be triggered when the form is submitted.&lt;/li>
+&lt;li>if the rule is applied to a &lt;em>process&lt;/em>, then the rule will be triggered on load.&lt;/li>
+&lt;/ul>
+&lt;p>If a rule causes a mandatory field (i.e. &lt;em>Required&lt;/em> is ticked in the Field Properties) to be hidden or disabled, this will not stop the form from being submitted.&lt;/p></description></item><item><title>Docs: Word document add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Workspace security</title><link>https://docs.kianda.com/docs/security/workspace-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/workspace-security/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Connecting to SharePoint lists and Libraries</title><link>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>As an end user, when you login to Kianda, you are presented with dashboards and widgets for different processes. The dashboard is made of multiple widgets like tiles, charts, links etc. Go to Dashboard widgets to find out more about each widget type.&lt;/p>
+&lt;p>The workspace here refers to the dashboards and widgets, where the user can view the information in order to view or update any record.&lt;/p>
+&lt;p>The workspace level security can only be applied if you have the Administrator role to set visibility to the &lt;strong>dashboards and widgets.&lt;/strong>&lt;/p>
+&lt;p>These are the steps involved in applying security to the dashboards:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Go to the existing &lt;strong>dashboard&lt;/strong> page.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/../content/docs/security/workspace-security.assets/clip_image004.png" alt="Edit button"> visible in the top menu bar.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Now in &lt;strong>edit mode&lt;/strong>, &lt;strong>settings&lt;/strong> button is visible. Click on it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“Edit dashboard page” dialog appears where you can find the &lt;strong>Visible to&lt;/strong> user picker with an option to select users or groups**.**&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the correct &lt;strong>users or groups&lt;/strong> and click on &lt;strong>Ok&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Save the changes you make by clicking on the &lt;strong>Save&lt;/strong> button&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>Similarly, you can set the visibility to an individual widget on the dashboard like tile, chart, etc. For example, if you want the dashboard to be visible to everyone and a particular chart on the dashboard only visible to management. This can be achieved by setting the &lt;strong>visible to&lt;/strong> field to the management group as shown below.&lt;/p>
+&lt;p>These are the steps involved in applying security to the widgets:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Go to the existing &lt;strong>dashboard&lt;/strong> page.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/../content/docs/security/workspace-security.assets/clip_image004.png" alt="Edit button"> visible in the top menu bar.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Now in &lt;strong>edit mode&lt;/strong>, click on the gear ⚙ icon of the widget.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>“Edit widget” dialog appears where you can find the &lt;strong>Visible to&lt;/strong> user picker with an option to select users or groups**.**&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the correct &lt;strong>users or groups&lt;/strong> and click on &lt;strong>Ok&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Save the changes you make by clicking on the &lt;strong>Save&lt;/strong> button.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Connecting to SharePoint lists and Libraries</title><link>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</guid><description>
 &lt;p>This video demonstrates how to connect to a datasource in SharePoint and use that information in a form list.&lt;/p>
 &lt;div style="padding:50.94% 0 0 0;position:relative;">&lt;iframe src="https://player.vimeo.com/video/677724364?h=cdfc835f25&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Connecting to SharePoint example">&lt;/iframe>&lt;/div>&lt;script src="https://player.vimeo.com/api/player.js">&lt;/script></description></item><item><title>Docs: Excel workbook add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
@@ -1439,29 +1523,47 @@ Your browser does not support the video tag.
 &lt;p>Select the field that will have the rule attached, for example a button at the end of a form, or a field within a form.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane and select one of the rules that uses mapping as shown in the &lt;a href="#wehn-to-use">When to use&lt;/a> list above, for example the &lt;strong>SharePoint rule&lt;/strong> called &lt;strong>Create list&lt;/strong>.&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane and select one of the rules that uses mapping as shown in the &lt;a href="#wehn-to-use">When to use&lt;/a> list above, for example the &lt;strong>SharePoint rule&lt;/strong> called &lt;strong>Create list&lt;/strong>, used to create a list in SharePoint dynamically using Kianda form data.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Edit rule&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>, add conditions if desired by clicking on the &lt;strong>Edit conditions&lt;/strong> button and under &lt;strong>Action&lt;/strong> select a SharePoint data source from the dropdown list.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-eg.jpg" alt="(Example of a rule with mapping)">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Fill out any additional fields as necessary, for example to create a list the following fields must be completed.&lt;/p>
+&lt;p>Fill out any additional fields as necessary, for example to create a list the following fields must be completed:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>List template&lt;/strong> - choose from a list of SharePoint list types&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>For on success mapping select the “form field” and chose the field within the form which you want to store the information.&lt;/p>
+&lt;p>&lt;strong>List name field&lt;/strong> - choose a form field that will be used the create a name for the list in SharePoint&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Then in the “data source field or text” you can select the column/field within your respective data source and this value will be stored in the “form field”.&lt;/p>
+&lt;p>&lt;strong>List url field&lt;/strong> - choose a form field that will be used in the creation of a URL within SharePoint&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>For on error mapping, you simply need to select the field within the form which will store the error message&lt;/p>
+&lt;p>&lt;strong>List description field&lt;/strong> - choose a form field that&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Quick Launch menu&lt;/strong> - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong> - choosing Yes allows the created list to be displayed in the Quick Launch menu, containing a link to the list.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-filled.jpg" alt="Create a list example with details">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>To add success mapping, click on &lt;strong>On success mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>form field&lt;/strong> select a form field which will store information and under &lt;strong>Data source field or text&lt;/strong> select the column/field within your data source to store the value.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For &lt;strong>On error mapping&lt;/strong>, you simply need to select the field within the form which will store the error message&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Then select the error message from the dropdown. This error message will be a system generated error which will indicate what if anything has gone wrong when the rule executed.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click OK and the mapping is set.&lt;/p>
+&lt;p>Click &lt;strong>OK&lt;/strong> and the mapping is set.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconcontentdocsplatformrulesgeneralsuccess-error-mappingassets18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/../content/docs/platform/rules/general/success-error-mapping.assets/18.png" alt="Idea icon">&lt;/h3>
@@ -2192,4 +2294,4 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Custom form control development</title><link>https://docs.kianda.com/docs/low-code/field-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/field-widget/</guid><description/></item></channel></rss>
+&lt;/ul></description></item></channel></rss>
