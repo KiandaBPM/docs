@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Platform security</title><link>https://docs.kianda.com/docs/security/</link><description>Recent content in Platform security on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Workspace security</title><link>https://docs.kianda.com/docs/security/workspace-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/workspace-security/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;h2 id="dashboard-security">Dashboard security&lt;/h2>
 &lt;p>As an end user, when you login to Kianda, you are presented with dashboards and widgets for different processes. The dashboard is made of multiple widgets like tiles, charts, links and lists. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard&lt;/a> to find out more about each widget type.&lt;/p>
 &lt;p>The workspace level security can only be applied if you have the &lt;strong>Administrator&lt;/strong> role to allow visibility of &lt;strong>dashboards and widgets.&lt;/strong>&lt;/p>
 &lt;p>These are the steps involved in applying security to the dashboards:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Go to the existing &lt;strong>dashboard&lt;/strong> page.&lt;/p>
+&lt;p>Go to the existing dashboard page by clicking on &lt;strong>Dashboard&lt;/strong> and the page name in the left-hand side menu.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> visible in the top menu bar.&lt;/p>
@@ -21,32 +21,40 @@
 &lt;p>Select the correct &lt;strong>Users&lt;/strong> or &lt;strong>Groups&lt;/strong> using the dropdown menu.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Make any other changes you need to the dashboard, see&lt;/p>
+&lt;p>Make any other changes you need to the dashboard, see &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Save the changes you make by clicking on the &lt;strong>Save&lt;/strong> button&lt;/p>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when you are finished editing the dialog box or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Save the changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-dash.png" alt="Save button"> at the top of the page.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>Similarly, you can set the visibility to an individual widget on the dashboard like tile, chart, etc. For example, if you want the dashboard to be visible to everyone and a particular chart on the dashboard only visible to management. This can be achieved by setting the &lt;strong>visible to&lt;/strong> field to the management group as shown below.&lt;/p>
-&lt;p>These are the steps involved in applying security to the widgets:&lt;/p>
+&lt;h2 id="widget-security">Widget security&lt;/h2>
+&lt;p>Similarly, you can set the visibility for an individual widget on the dashboard like a tile, chart, or list, for example, if you want the dashboard to be visible to everyone and a particular chart on the dashboard only visible to management. This can be achieved by setting the &lt;strong>visible to&lt;/strong> field to the management group as shown below.&lt;/p>
+&lt;p>To apply security to a dashboard widget:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Go to the existing &lt;strong>dashboard&lt;/strong> page.&lt;/p>
+&lt;p>Go to the existing dashboard page by clicking on &lt;strong>Dashboard&lt;/strong> and the page name in the left-hand side menu.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> visible in the top menu bar.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Now in &lt;strong>Edit mode&lt;/strong>, click on the gear ⚙ icon of the widget.&lt;/p>
+&lt;p>Now in &lt;strong>Edit mode&lt;/strong>, click on the &lt;strong>Cog/settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/widget-cog.jpg" alt="Widget settings"> of the widget.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>“Edit widget” dialog appears where you can find the &lt;strong>Visible to&lt;/strong> user picker with an option to select users or groups**.**&lt;/p>
+&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box appears where you can find the &lt;strong>Visible to&lt;/strong> user picker with an option to select users or groups**.** The example below shows the dialog box for a &lt;strong>List&lt;/strong> widget.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-widget-eg.jpg" alt="Edit widget dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Select the correct &lt;strong>users or groups&lt;/strong> and click on &lt;strong>Ok&lt;/strong>.&lt;/p>
+&lt;p>In the &lt;strong>Visible to&lt;/strong> field select the correct &lt;strong>Users&lt;/strong> or &lt;strong>Groups&lt;/strong> from the dropdown menu.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Save the changes you make by clicking on the &lt;strong>Save&lt;/strong> button.&lt;/p>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when you are finished editing the dialog box or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Save the changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-dash.png" alt="Save button"> at the top of the page.&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>Docs: Field level security</title><link>https://docs.kianda.com/docs/security/form-and-field-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/form-and-field-security/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
