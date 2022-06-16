@@ -10,13 +10,17 @@ For example, you could insert a list field in your form that will show a drop-do
 
 ## How to get started
 
-1. To add a **List field** to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). If you want to add the List field to a panel within your form, first select the panel by clicking on it and then add the **List field**.
+1. To add a **List field** to a form, first open the relevant process. 
 
-2. Insert the new **List field** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Input** to view the range of Input controls and click on **List**. A **New field - List** dialog box will open with a range of options you can choose from for your new List field.
+2. Select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). If you want to add the List field to a panel within your form, first select the panel by clicking on it and then add the **List field**.
 
-![New list field dialog box](/images/list-field-dialog-box.jpg)
+3. Click on **Controls** in the left-hand pane to expand the Controls menu.
 
-   The options available in the **New field - List** dialog box include:
+4. Select **Input** to view the range of Input controls and click on **List**. A **New field - List** dialog box will open with a range of options you can choose from for your new List field.
+
+	![New list field dialog box](/images/list-field-dialog-box.jpg)
+
+	The options available in the **New field - List** dialog box include:
 
    - **Title** - You can change the name of the List field from the default title **List 1**. For example, if you are working on a Training Request form, you may want to insert a List field to contain the types of training and may choose to title this 'Type of Training'.
 
@@ -28,11 +32,11 @@ For example, you could insert a list field in your form that will show a drop-do
 
    - **List source** - You have three main options in terms of the source of the choices that will appear in your List field: 
 
-​		a) **Entered manually** 
-​		b) **Form data**
-​		c) **Data source**
+		a) **Entered manually** 
+		b) **Form data**
+		c) **Data source**
 
-​		We will look at each of these three list source options in turn.
+We will look at each of these three list source options in turn.
 
 If you select the **Entered manually** checkbox, you must then manually type the choices you want to appear in your list into the **List source** box. Three default choices are shown - simply replace these with the choices you want to appear in your list (keeping the same format of one choice per line). You can insert more than three choices.
 
@@ -73,12 +77,12 @@ By default, the **Dropdown list** radio button is selected, along with two addit
 
 If you choose **Radio list** or **Checkbox list** you can choose a **List display position** of either Vertical or Horizontal.  
 
-3. Once you complete the **New field - List** dialog box and click **OK** button, a new **List field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default, the title is **List 1** unless you change it).
+5. Once you complete the **New field - List** dialog box and click **OK** button, a new **List field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default, the title is **List 1** unless you change it).
 
 
-If we take the example of a Training Request form with a list field that contains the different types of training a user can request, the list field (which is titled 'Type of Training' and has a drop-down list format) could look like this when a user views it on their mobile phone:
-
-![List field dropdown list example mobile phone](/images/list-example-mobile.jpg)
+	If we take the example of a Training Request form with a list field that contains the different types of training a user can request, the list field (which is titled 'Type of Training' and has a drop-down list format) could look like this when a user views it on their mobile phone:
+	
+	![List field dropdown list example mobile phone](/images/list-example-mobile.jpg)
 
 
 
@@ -88,21 +92,31 @@ To see how your form or field will look like on a mobile, view it in **Mobile pr
 
 ### How to edit, move and delete File upload fields
 
-To edit a **List field**, select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
+To edit a **List field**:
+
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
 
 ![Select file upload file to edit](/images/list-select-to-edit.jpg)
 
 The **Edit field - List** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - List** dialog box (as already discussed in [How to get started](/docs/platform/controls/input/list#how-to-get-started)).
-
+	
 ![Edit date field dialog box](/images/list-edit-dialog-example.jpg)
-
+	
 You can make any changes you wish in this dialog box and then click **OK** to confirm. 
 
-To move a **List field**, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to within your form.
+To move a **List field**, simply
+
+1. Select the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+2. Drag and drop the field wherever you want to move it to within your form
 
 ![Date field drag handle](/images/list-move-draghandle.jpg)
 
-To delete a **List field** from your form, simply select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)), click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm.
+To delete a **List field** from your form:
+
+1. Select the field (by either clicking on the field's name or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+3. Click on **OK** to confirm.
 
 
 ### How to edit List field properties
@@ -111,7 +125,15 @@ To view or edit the field properties associated with a **List field**, select th
 
 ![List properties](/images/list-field-properties.jpg)
 
-In the example shown here, a **List field** titled **Type of Training** has been selected and it's properties are displayed, including: its Title, that its Title will be shown in the form (the 'Show title' checkbox is ticked), that it will be a mandatory field for users to complete (the 'Required' checkbox is ticked and there is a red star next to the field name in the form), that this field will be enabled for users to complete (the 'Enabled' checkbox is ticked), and that this field will be visible to form users (the 'Visible' checkbox is ticked). The width of the field on PC and mobile is also shown. 
+For example, the **Field Properties** associated with a **List field** titled 'Type of Training' are shown here and include:
+
+- **Field type** - The type of field, in this case a **List** field.
+- **Title** - The Title of the field, in this case 'Type of Training'.
+- **Show title** - If this is selected, the List field will be shown in the form.
+- **Required** - If this is selected, the List field will be mandatory for the form user.
+- **Enabled** - If this is selected, the user will be able to edit or interact with the field.
+- **Visible** - If this is selected, the List field will be visible in the form.
+- **Layout** - The width of the blue bar can be adjusted to change the width of the List field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 
