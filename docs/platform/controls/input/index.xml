@@ -353,21 +353,36 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To add a &lt;strong>Number field&lt;/strong> to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
+&lt;p>To add a &lt;strong>Number field&lt;/strong> to a form, first open the relevant process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Insert the &lt;strong>Number field&lt;/strong> by clicking on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu, then select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Number&lt;/strong>. A number field will be added to your form with the default title of &amp;lsquo;&amp;rsquo;&lt;strong>Number 1&lt;/strong>&amp;rsquo;&amp;rsquo; and a pop-up message will say &amp;lsquo;Field added&amp;rsquo;.&lt;/p>
+&lt;p>Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Number&lt;/strong>.&lt;/p>
+&lt;p>A number field will be added to your form with the default title of &amp;lsquo;&amp;rsquo;&lt;strong>Number 1&lt;/strong>&amp;rsquo;&amp;rsquo; and a pop-up message will say &amp;lsquo;Field added&amp;rsquo;.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-field-added.jpg" alt="Number field added">&lt;/p>
 &lt;p>By default, the new &lt;strong>Number field&lt;/strong> will have up and down arrow buttons &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up and down arrows"> at the right that users can click to increase or decrease the number in the field and will show any numbers entered to two decimal places. These settings can be amended by editing the field.&lt;/p>
 &lt;p>In the example shown here, a new Number field has been added to form called &amp;lsquo;Training Request&amp;rsquo;. This new Number field could be edited to rename it &amp;lsquo;Cost of Training Course&amp;rsquo; and could be formatted as currency (Euro) so that users could insert the cost of the training course they want to take.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-move-and-delete-number-fields">How to edit, move and delete Number fields&lt;/h3>
-&lt;p>To edit a &lt;strong>Number field&lt;/strong>, select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>To edit a &lt;strong>Number field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-field-edit2.jpg" alt="Select number field to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - Number&lt;/strong> dialog box will open, enabling you to choose from a range of options:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-edit-dialog.jpg" alt="Edit number field dialog box">&lt;/p>
 &lt;p>The options within the &lt;strong>Edit field - Number&lt;/strong> dialog box include:&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the Number field from the default &amp;lsquo;&lt;strong>Number 1&lt;/strong>&amp;rsquo;&lt;/p>
@@ -411,7 +426,7 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-placeholder.jpg" alt="Number field with placeholder text">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Expression&lt;/strong> - you can add an expression to your Number field if, for example, you want the field to contain a calculation based on another field or want it to pull values from other fields. To add an expression, click on the expression button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Expression button ellipsis"> to open the Expression builder dialog box - here you can add expressions to perform math operations and various other actions.&lt;/p>
+&lt;p>&lt;strong>Expression&lt;/strong> - you can add an expression to your Number field if, for example, you want the field to contain a calculation based on another field or want it to pull values from other fields. To add an expression, click on the expression button (ellipsis) &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Expression button ellipsis"> to open the &lt;strong>Expression builder&lt;/strong> dialog box - here you can add expressions to perform math operations and various other actions.&lt;/p>
 &lt;p>For example, let&amp;rsquo;s say you have a Number field called &amp;lsquo;Salary&amp;rsquo; where the user inputs their salary and another Number field called &amp;lsquo;Bonus&amp;rsquo; which you want to be automatically populated with a figure that is 20% of the &amp;lsquo;Salary&amp;rsquo; figure. To do this, you add an Expression to the &amp;lsquo;Bonus&amp;rsquo; field:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-expression-example.jpg" alt="Expression builder">&lt;/p>
 &lt;p>Now when a user completes the &amp;lsquo;Salary&amp;rsquo; field, the Bonus field automatically populates with a figure that is 20% of their salary:&lt;/p>
@@ -419,14 +434,34 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>To learn more about applying rules and expressions to Number fields, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>Make whatever changes you want in this &lt;strong>Edit field - Number&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
-&lt;p>To move a &lt;strong>Number field&lt;/strong>, simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to within your form.&lt;/p>
+&lt;ol start="3">
+&lt;li>Make whatever changes you want in this &lt;strong>Edit field - Number&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/ol>
+&lt;p>To move a &lt;strong>Number field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Drag and drop the field wherever you want to move it to within your form&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-move.jpg" alt="Date field drag handle">&lt;/p>
-&lt;p>To delete a &lt;strong>Number field&lt;/strong> from your form, simply select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">), click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;p>To delete a &lt;strong>Number field&lt;/strong> from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/ol>
 &lt;h3 id="how-to-edit-number-field-properties">How to edit Number field properties&lt;/h3>
 &lt;p>To view or edit the field properties associated with a &lt;strong>Number field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-properties.jpg" alt="Field properties">&lt;/p>
-&lt;p>In the example shown here, a &lt;strong>Number field&lt;/strong> titled &amp;lsquo;&lt;strong>Salary&lt;/strong>&amp;rsquo; has been selected in a form called &amp;lsquo;Salary Review&amp;rsquo; and the Field properties associated with this field include the field type (Number), its Title, that its title will be shown in the form (the &amp;lsquo;Show title&amp;rsquo; checkbox is ticked), that it is a mandatory field that users must complete (the &amp;lsquo;Required&amp;rsquo; checkbox is selected and there is a red star next to the field name in the form), that this field will be enabled for users to complete (the &amp;lsquo;Enabled&amp;rsquo; checkbox is ticked), and it will be visible to form users (the &amp;lsquo;Visible&amp;rsquo; checkbox is ticked).&lt;/p>
+&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Number field&lt;/strong> titled &amp;lsquo;Salary&amp;rsquo; are shown here and include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Number&lt;/strong> field.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Salary&amp;rsquo;.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Number field will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the Number field will be mandatory for the form user.&lt;/li>
+&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Number field will be visible in the form.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Number field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
+&lt;/ul>
 &lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
