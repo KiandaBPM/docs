@@ -13,15 +13,17 @@ For example, in a Training Request form, a Toggle field could be used to record 
 
 ## How to get started
 
-1. To add a **Toggle field** to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). If you want to add the Toggle field to a panel within your form, first select the panel by clicking on it and then add the **Toggle field**.
+1. To add a **Toggle field** to a form, first open the relevant process. 
 
-2. Insert the new **Toggle field** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Input** to view the range of Input controls and click on **Toggle**. 
+2. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). If you want to add the Toggle field to a panel within your form, first select the panel by clicking on it and then add the **Toggle field**.
+
+3. Insert the new **Toggle field** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Input** to view the range of Input controls and click on **Toggle**. 
 
    ![Insert toggle field](/images/toggle-insert.jpg)
 
-3. A **New field - Toggle** dialog box will open with a range of options you can choose from for your new Toggle field.
+4. A **New field - Toggle** dialog box will open with a range of options you can choose from for your new Toggle field.
 
-![New toggle field dialog box](/images/toggle-dialog.jpg)
+	![New toggle field dialog box](/images/toggle-dialog.jpg)
 
    The options available in the **New field - Toggle** dialog box include:
 
@@ -41,7 +43,7 @@ For example, in a Training Request form, a Toggle field could be used to record 
 
    - **Display mode** - You can choose to have the Toggle field display as either a **Toggle button** ![Toggle button icon](/images/toggle-icon.jpg) or **Checkbox** ![Checkbox icon](/images/toggle-checkbox-icon.jpg).
 
-4. Once you complete the **New field - Toggle** dialog box and click **OK** button, a new **Toggle field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default, the title is **Toggle 1** unless you change it).
+5. Once you complete the **New field - Toggle** dialog box and click **OK** button, a new **Toggle field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default, the title is **Toggle 1** unless you change it).
 
 
 If we take the example of the Training Request form we already discussed, with a Toggle field called 'Approve Training Request' that is formatted to be a checkbox, the Toggle field could look like this when a user views it on their mobile phone:
@@ -58,7 +60,10 @@ As we go through the options available for editing a Toggle field, we will keep 
 
 #### How to edit a Toggle field
 
-To edit a **Toggle field**, select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
+To edit a **Toggle field**:
+
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
 
 ![Select toggle field to edit](/images/toggle-edit.jpg)
 
@@ -66,9 +71,9 @@ The **Edit field - Toggle** dialog box will open, enabling you to choose from th
 
 ![Edit toggle field dialog box](/images/toggle-example-dialog.jpg)
 
-You can make any changes you wish in this dialog box and then click **OK** to confirm. 
+3. You can make any changes you wish in this dialog box and then click **OK** to confirm. 
 
-You can apply rules to a **Toggle field** to make it more dynamic so that, for example, it generates information that is autofiled into another field. 
+You can apply rules to a **Toggle field** to make it more dynamic so that, for example, it generates information that is automatically inserted into another field. 
 
 For example, you could apply a '**Set date**' rule to your ''**Order Received**' toggle field so that it generates a date to be displayed in a '**Date received**' field when **Order received** is selected by the user - this will mean that when the user selects the Order Received toggle field, this automatically generates a date stamp for when the order was received:
 
@@ -78,13 +83,20 @@ To learn more about applying rules to fields, see [Rules](/docs/platform/rules/)
 
 #### How to move a Toggle field
 
-To move a **Toggle field**, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to within your form.
+To move a **Toggle field**:
+
+1. Simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
+2. Drag and drop the field wherever you want to move it to within your form
 
 ![Toggle field drag handle](/images/toggle-move.jpg)
 
 #### How to delete a Toggle field
 
-To delete a **Toggle field** from your form, simply select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm.
+To delete a **Toggle field** from your form:
+
+1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+3. Click on **OK** to confirm.
 
 
 ### How to edit Toggle field properties
@@ -93,7 +105,21 @@ To view or edit the field properties associated with a **Toggle field**, select 
 
 ![Toggle field properties](/images/toggle-field-properties.jpg)
 
-In the example shown here, a **Toggle field** titled '**Approve Training Request**' has been selected and it's properties are displayed, including: its Field type (Toggle), Title, that its Title will be shown in the form (the 'Show title' checkbox is ticked), that it will *not* a mandatory field for users to complete (the 'Required' checkbox isn't ticked), that this field will be enabled for users to complete (the 'Enabled' checkbox is ticked), and that this field will be visible to form users (the 'Visible' checkbox is ticked). The width of the field on PC and mobile is also shown. 
+For example, the **Field Properties** associated with a **Toggle field** titled 'Approve Training Request' are shown here and include:
+
+- **Field type** - The type of field, in this case a **Toggle** field.
+
+- **Title** - The Title of the field, in this case 'Approve Training Request'.
+
+- **Show title** - If this is selected, the Toggle field will be shown in the form.
+
+- **Required** - If this is selected, the Toggle field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).
+
+- **Enabled** - If this is selected, the user will be able to edit or interact with the field.
+
+- **Visible** - If this is selected, the Toggle field will be visible in the form.
+
+- **Layout** - The width of the blue bar can be adjusted to change the width of the Toggle field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 
