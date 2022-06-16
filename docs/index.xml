@@ -2092,10 +2092,17 @@ Your browser does not support the video tag.
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To add a &lt;strong>Table field&lt;/strong> to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
+&lt;p>To add a &lt;strong>Table field&lt;/strong> to a form, first open the relevant process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Insert the &lt;strong>Table field&lt;/strong> by clicking on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu, then select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Table&lt;/strong>. A Table field will be added to your form with the default title of &amp;lsquo;&amp;rsquo;&lt;strong>Table 1&lt;/strong>&amp;rsquo;&amp;rsquo; and a pop-up message will say &amp;lsquo;Field added&amp;rsquo;.&lt;/p>
+&lt;p>Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Table&lt;/strong>.&lt;/p>
+&lt;p>A Table field will be added to your form with the default title of &amp;lsquo;&amp;rsquo;&lt;strong>Table 1&lt;/strong>&amp;rsquo;&amp;rsquo; and a pop-up message will say &amp;lsquo;Field added&amp;rsquo;.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-added.jpg" alt="Table field added">&lt;/p>
 &lt;p>By default, the new &lt;strong>Table field&lt;/strong> will have one row with two columns of text fields, titled &lt;strong>Text 1&lt;/strong> and &lt;strong>Text 2&lt;/strong>. You can add rows, columns and various different types of fields to the table by editing the table field, as outlined in the next section. In the example shown here, a new table has been added to a form called &amp;lsquo;Training Request&amp;rsquo;.&lt;/p>
 &lt;/li>
@@ -2108,27 +2115,61 @@ Your browser does not support the video tag.
 &lt;p>We want our table to have three columns: the first column will be a text box field titled &amp;lsquo;Qualification Description&amp;rsquo; where the user will manually type in the name of a qualification, the second column will be a drop-down list titled &amp;lsquo;Educational Institution&amp;rsquo; (which could link to an external data source) where the user will choose the relevant institution, and the third column will be a date field titled &amp;lsquo;Date Qualification Obtained&amp;rsquo;, as shown here:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-training-example.jpg" alt="Table example training">&lt;/p>
 &lt;h5 id="how-to-change-the-title-of-a-table-column">How to change the title of a Table column&lt;/h5>
-&lt;p>To change the title of the default first column texbox field from &lt;strong>Text 1&lt;/strong>, simply select that field by either clicking on the field title or by clicking into the blank text box so that the &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button"> (Pen icon) displays and then click the Edit field button.&lt;/p>
+&lt;p>To change the default title of the first column texbox field from &lt;strong>Text 1&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select that field by either clicking on the field title or by clicking into the blank text box so that the &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button"> (Pen icon) displays.&lt;/li>
+&lt;li>Click the Edit field button.&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-edit-field.jpg" alt="Table select field to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - Text&lt;/strong> dialog box will open and you can change the title of the field here. There are also a number of other options available to you - see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a> for more information on how you can edit text box fields.&lt;/p>
 &lt;h5 id="how-to-delete-a-column-from-a-table">How to delete a column from a Table&lt;/h5>
-&lt;p>To delete a column from a Table field, select the column field you want to delete (either by clicking on the title or clicking into the blank field below the title) so that the Edit field and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">are shown, click the &lt;strong>Bin/Trash&lt;/strong> button:&lt;/p>
+&lt;p>To delete a column from a Table field:&lt;/p>
+&lt;ol>
+&lt;li>Select the column field you want to delete (either by clicking on the title or clicking into the blank field below the title) so that the Edit field and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">is shown.&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button.&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-delete-column.jpg" alt="Delete Table column">&lt;/p>
 &lt;h5 id="how-to-change-the-field-type-of-an-existing-table-column">How to change the field type of an existing Table column&lt;/h5>
-&lt;p>In our example, we want the second column in our table to be a drop-down list. We can either delete the default second text box column and then insert a new list column or we can &lt;strong>change the field type of the existing column&lt;/strong> from text box to list. To do this, select the column field you want to change (by either clicking on the column Title or clicking into the blank box below it) so that the Edit field button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button"> (Pen icon) is shown and then click on the &lt;strong>Change field&lt;/strong> button in the right-hand pane:&lt;/p>
+&lt;p>In our example, we want the second column in our table to be a drop-down list. We can either delete the default second text box column and then insert a new list column or we can &lt;strong>change the field type of the existing column&lt;/strong> from text box to list.&lt;/p>
+&lt;p>To change the field type of an existing column:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the column field you want to change (by either clicking on the column Title or clicking into the blank box below it) so that the Edit field button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button"> (Pen icon) is shown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Change field&lt;/strong> button in the right-hand pane:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-change-column-type.jpg" alt="Change Table column type">&lt;/p>
 &lt;p>A &lt;strong>Change&lt;/strong> dialog box will open up, allowing you to change the existing column field type to another type of input field - there are many options to choose from (only some of which are shown here):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-change-column-type-dialog.jpg" alt="Table change column type dialog box">&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>In our example, if we want to change the &amp;lsquo;Text 2&amp;rsquo; text box column to be a List field, we would select the &lt;strong>List&lt;/strong> radio box and then click &lt;strong>OK&lt;/strong> to confirm. An &lt;strong>Edit field&lt;/strong> dialog box for the type of input field you have chosen will then open, allowing you to change the column field title (in our case, we will rename it as &amp;lsquo;Educational Institution&amp;rsquo;) and to choose from a range of options relevant to that field type.&lt;/p>
 &lt;h5 id="how-to-insert-new-columns-in-a-table">How to insert new columns in a Table&lt;/h5>
-&lt;p>To &lt;strong>insert new columns into a Table&lt;/strong>, either select the Table field itself or select one of the individual columns, then go to &lt;strong>Controls&amp;gt;Input&lt;/strong> in the menu in the left-hand pane and click on the &lt;strong>type of input field&lt;/strong> you want to insert. The new column will be inserted to the right of the existing columns, or, if you selected one of the existing columns before inserting the new column, it will be inserted to that right of that column.&lt;/p>
+&lt;p>To &lt;strong>insert new columns into a Table&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Either select the Table field itself or select one of the individual columns.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Go to &lt;strong>Controls&amp;gt;Input&lt;/strong> in the menu in the left-hand pane and click on the &lt;strong>type of input field&lt;/strong> you want to insert.&lt;/p>
+&lt;p>The new column will be inserted to the right of the existing columns, or, if you selected one of the existing columns before inserting the new column, it will be inserted to that right of that column.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>In our example, we will insert a date field to be our third column (and can then rename it as &amp;lsquo;Date Qualification Obtained&amp;rsquo; by clicking on &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button"> (Pen icon) and changing it in the &lt;strong>Edit field - Date&lt;/strong> dialog box):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-date-column-added.jpg" alt="Date field inserted in Table">&lt;/p>
 &lt;h5 id="how-to-move-columns-in-a-table">How to move columns in a Table&lt;/h5>
-&lt;p>To re-order columns in a Table, simply select the column field you want to move (by either clicking the column title or clicking into the blank box below the title) so the Edit field button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button"> (Pen icon) displays and then click on the left or right arrow buttons &lt;img src="https://docs.kianda.com/images/left-right-arrows.jpg" alt="Left or right arrow buttons"> to move that column to the left or right:&lt;/p>
+&lt;p>To re-order columns in a Table, simply&lt;/p>
+&lt;ol>
+&lt;li>Select the column field you want to move (by either clicking the column title or clicking into the blank box below the title) so the &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button"> (Pen icon) displays.&lt;/li>
+&lt;li>Click on the left or right arrow buttons &lt;img src="https://docs.kianda.com/images/left-right-arrows.jpg" alt="Left or right arrow buttons"> to move that column to the left or right:&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-move-columns.jpg" alt="Move table columns">&lt;/p>
 &lt;h5 id="how-to-edit-the-table-field">How to edit the Table field&lt;/h5>
-&lt;p>To edit the &lt;strong>Table field&lt;/strong> itself, select the Table (by either clicking on the Table title or on the table&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>To edit the &lt;strong>Table field&lt;/strong> itself:&lt;/p>
+&lt;ol>
+&lt;li>Select the Table (by either clicking on the Table title or on the table&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-edit.jpg" alt="Select table field to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - Table&lt;/strong> dialog box will open, enabling you to choose from a range of options:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-edit-dialog.jpg" alt="Edit table field dialog box">&lt;/p>
@@ -2175,20 +2216,40 @@ Your browser does not support the video tag.
 &lt;p>The &lt;strong>Columns to export&lt;/strong> will automatically show the columns in your table&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>Make whatever changes you want to make to the table in the &lt;strong>Edit field - Table&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;ol start="3">
+&lt;li>Make whatever changes you want to make to the table in the &lt;strong>Edit field - Table&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/ol>
 &lt;p>If you want to make your table more dynamic - for example, so that calculations are made or information is autofilled into part of the table - you can add rules to it. To learn about applying rules to fields and forms go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and for more specific information about applying rules to &lt;strong>Table fields&lt;/strong> see &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;h4 id="how-to-move-table-fields">How to move Table fields&lt;/h4>
-&lt;p>To move a &lt;strong>Table field&lt;/strong> within your form, simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to.&lt;/p>
+&lt;p>To move a &lt;strong>Table field&lt;/strong> within your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Drag and drop the field wherever you want to move it to.&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-move.jpg" alt="Table field drag handle">&lt;/p>
 &lt;h4 id="how-to-delete-table-fields">How to delete Table fields&lt;/h4>
-&lt;p>To delete a &lt;strong>Table field&lt;/strong> from your form, simply select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">), click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;p>To delete a &lt;strong>Table field&lt;/strong> from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/ol>
 &lt;h3 id="how-to-edit-table-field-properties">How to edit Table field properties&lt;/h3>
 &lt;p>To view or edit the field properties associated with a &lt;strong>Table field&lt;/strong>, select the table (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-field-properties.jpg" alt="Field properties">&lt;/p>
-&lt;p>In the example shown here, our sample &lt;strong>Table field&lt;/strong> titled &amp;lsquo;&lt;strong>Existing Qualifications&lt;/strong>&amp;rsquo; has been selected and the Field properties associated with this field include the field type (Table), its Title, that its title will be shown in the form (the &amp;lsquo;Show title&amp;rsquo; checkbox is ticked), that it will not be a mandatory field that users must complete (the &amp;lsquo;Required&amp;rsquo; checkbox is not selected), that this field will be enabled for users to complete (the &amp;lsquo;Enabled&amp;rsquo; checkbox is ticked), and it will be visible to form users (the &amp;lsquo;Visible&amp;rsquo; checkbox is ticked).&lt;/p>
-&lt;p>You can change the size of the Table by clicking into the &lt;strong>Layout&lt;/strong> or &lt;strong>Mobile Layout&lt;/strong> options at the bottom of the Field Properties menu and changing the width of the blue bar. You can then check how the Table will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">. Our sample table, &lt;strong>Existing Qualifications&lt;/strong> could look like this when viewed on a PC:&lt;/p>
+&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Table field&lt;/strong> titled &amp;lsquo;Existing Qualifications&amp;rsquo; are shown here and include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Table&lt;/strong> field.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Existing Qualifications&amp;rsquo;.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Table field will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the Table field will be mandatory for the form user.&lt;/li>
+&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Table field will be visible in the form.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Table field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
+&lt;/ul>
+&lt;p>You can then check how the Table will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">. Our sample table, &lt;strong>Existing Qualifications&lt;/strong> could look like this when viewed on a PC:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-preview-example.jpg" alt="Sample table in preview">&lt;/p>
-&lt;p>You can also view and edit the properties of the individual column fields within the Table by selecting the column field.&lt;/p>
+&lt;p>You can also view and edit the &lt;strong>properties of the individual column fields&lt;/strong> within the Table by selecting the column field.&lt;/p>
 &lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
