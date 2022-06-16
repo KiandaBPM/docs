@@ -33,11 +33,11 @@
 &lt;p>In the example shown here, the Employee Name field has been selected and the &lt;strong>Field properties&lt;/strong> associated with it include the &lt;strong>Field type&lt;/strong> (&lt;strong>Text box&lt;/strong> in this case) and the &lt;strong>Title&lt;/strong> of the field.&lt;/p>
 &lt;p>The options within the Field properties menu are:&lt;/p>
 &lt;ul>
-&lt;li>Show Title - show the title of the field&lt;/li>
-&lt;li>Required - tick this checkbox to make this field mandatory for users to fill out (this will be denoted by an asterix beside the field name)&lt;/li>
-&lt;li>Enabled - tick this checkbox to make the field enabled for users to fill out&lt;/li>
-&lt;li>Visible - tick this checkbox to make the field visible to users&lt;/li>
-&lt;li>Layout - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the text box for mobile use.&lt;/li>
+&lt;li>&lt;strong>Show Title&lt;/strong> - show the title of the field&lt;/li>
+&lt;li>&lt;strong>Required&lt;/strong> - tick this checkbox to make this field mandatory for users to fill out (this will be denoted by an asterix beside the field name)&lt;/li>
+&lt;li>&lt;strong>Enabled&lt;/strong> - tick this checkbox to make the field enabled for users to fill out&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - tick this checkbox to make the field visible to users&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the field when viewed on a mobile phone.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize-frame.png" alt="Changing text box width">&lt;/p>
 &lt;p>Underneath the Field properties menu, you will see &lt;strong>Rules&lt;/strong> - go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about the rules that can be applied to fields.&lt;/p>
@@ -109,19 +109,23 @@
 &lt;p>Layout fields are one category of &lt;a href="https://docs.kianda.com/docs/platform/controls/">controls&lt;/a> (fields). They are fields that can be used to enhance the layout of your form - for example, responsive panels, dialog boxes and rich text fields.&lt;/p>
 &lt;h2 id="getting-started-with-layout-fields">Getting started with Layout fields&lt;/h2>
 &lt;ol>
-&lt;li>
-&lt;p>To insert a &lt;strong>Layout field&lt;/strong> into a form, first open an existing process or create a new process by going to &lt;strong>Administration&lt;/strong>&amp;gt;&lt;strong>Designer&lt;/strong> in the left side menu. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;li>To insert a &lt;strong>Layout field&lt;/strong> into a form, first open an existing process or create a new process by going to &lt;strong>Administration&lt;/strong>&amp;gt;&lt;strong>Designer&lt;/strong> in the left side menu. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/administration-designer-inputcont.jpg" alt="Opening Designer from left side menu by choosing Administration&amp;gt;Designer">&lt;/p>
-&lt;/li>
+&lt;ol start="2">
 &lt;li>
 &lt;p>Then select the form within that process that you want to add the Layout field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Next, click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu and select &lt;strong>Layout&lt;/strong> to view the Layout fields. Then click on the Layout field you want to insert.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/layout-insert.jpg" alt="Layout fields menu">&lt;/p>
-&lt;p>There are 4 types of layout fields:&lt;/p>
+&lt;p>Next, click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu and select &lt;strong>Layout&lt;/strong> to view the Layout fields.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the Layout field you want to insert.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/layout-insert.jpg" alt="Layout fields menu">&lt;/p>
+&lt;pre>&lt;code>There are 4 types of layout fields:
+&lt;/code>&lt;/pre>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Panel&lt;/strong> - The Panel field provides responsive panels to hold elements of your form like text boxes and lists and enables flexible layout options for better design. To learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/panel/">Panel control&lt;/a>.&lt;/p>
@@ -142,17 +146,60 @@
 &lt;p>For example, to add a new panel to your form, click on &lt;strong>Panel&lt;/strong> - a pop-up message will appear saying &amp;lsquo;&lt;strong>Field added&lt;/strong>&amp;rsquo; and a panel field with the default name &lt;strong>Panel 1&lt;/strong> will be added to your form (by default, the title of the new panel will not be shown but you can make it visible by selecting the &amp;lsquo;&lt;strong>Show title&lt;/strong>&amp;rsquo; checkbox in the &lt;strong>Field properties&lt;/strong> panel to the right).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-insert.jpg" alt="Insert panel field">&lt;/p>
 &lt;h4 id="how-to-edit-layout-fields">How to edit Layout fields&lt;/h4>
-&lt;p>To edit whatever type of &lt;strong>Layout field&lt;/strong> you have added to your form, select the field (by either clicking on the field name or on the &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">. In our example, we have selected the &lt;strong>Panel field&lt;/strong> by clicking the Drag handle button and can then click on the Edit field button to edit it.&lt;/p>
+&lt;p>To edit whatever type of &lt;strong>Layout field&lt;/strong> you have added to your form:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the field (by either clicking on the field name or on the &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;p>In our example, we have selected the &lt;strong>Panel field&lt;/strong> by clicking the Drag handle button and can then click on the Edit field button to edit it.&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>This will open up the &lt;strong>Edit Field&lt;/strong> dialog box where you can make various changes (such as changing the Title of the field) and where a variety of options will be available to you, depending on the type of Layout field you have selected.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-select-to-edit.jpg" alt="Select panel to edit">&lt;/p>
 &lt;h4 id="how-to-move-layout-fields">How to move Layout fields&lt;/h4>
-&lt;p>To move a Layout field, simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it within your form.&lt;/p>
+&lt;p>To move a Layout field:&lt;/p>
+&lt;ol>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Drag and drop the field wherever you want to move it within your form&lt;/li>
+&lt;/ol>
 &lt;h4 id="how-to-delete-layout-fields">How to delete Layout fields&lt;/h4>
-&lt;p>To delete an input field from your form, select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">), click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;p>To delete an input field from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm&lt;/li>
+&lt;/ol>
 &lt;h3 id="how-to-edit-layout-field-properties">How to edit Layout field properties&lt;/h3>
 &lt;p>To view or edit the field properties associated with a &lt;strong>Layout field&lt;/strong>, select the field (by clicking on the field title or drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
-&lt;p>In the example shown here, a &lt;strong>Panel&lt;/strong> titled &amp;lsquo;&lt;strong>Existing Qualifications&lt;/strong> has been selected and the &lt;strong>Field properties&lt;/strong> associated with the Panel are shown in the panel to the right. They include: the field type (Panel), title, that the title will be shown in the form (the &amp;lsquo;Show title&amp;rsquo; checkbox has been selected), that the field will be visible in the form (the &amp;lsquo;Visible&amp;rsquo; checkbox has been selected) and how wide the field layout will be on a PC and mobile phone (the blue bars in &amp;lsquo;Layout&amp;rsquo;).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-field-properties.jpg" alt="Panel field properties">&lt;/p>
+&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Panel field&lt;/strong> titled &amp;lsquo;Existing Qualifications&amp;rsquo; are shown here and include:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Panel&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Existing Qualifications&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the field title will be shown in the form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Required&lt;/strong> - If this is selected, the field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Visible&lt;/strong> - If this is selected, the field will be visible in the form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout&lt;/strong> - The width of the field is denoted by the width of the blue bar. Click on the bar to change the width of the field as it will appear on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
@@ -242,11 +289,10 @@
 &lt;/li>
 &lt;li>
 &lt;p>The Field Properties associated with the Action field will be displayed (and can be changed) in the &lt;strong>Field properties&lt;/strong> menu on the right-hand side.&lt;/p>
-&lt;p>For example, the &lt;strong>Field properties&lt;/strong> associated with a Link field titled &amp;lsquo;Training Documentation&amp;rsquo; are shown here:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/action-link-field-properties.jpg" alt="Field properties associated with a Link field">&lt;/p>
-&lt;p>The &lt;strong>Field Properties&lt;/strong> shown here include&lt;/p>
+&lt;p>For example, the &lt;strong>Field properties&lt;/strong> associated with a Link field titled &amp;lsquo;Training Documentation&amp;rsquo; are shown here:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Link field&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Link&lt;/strong> field.&lt;/li>
 &lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Training Documentation&amp;rsquo;.&lt;/li>
 &lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the field title will be shown in the form.&lt;/li>
 &lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the field will be mandatory for the form user to complete (and a red star will be shown next to the field title to denote this).&lt;/li>

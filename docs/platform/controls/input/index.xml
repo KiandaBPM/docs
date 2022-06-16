@@ -76,7 +76,7 @@
 &lt;ul>
 &lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Date&lt;/strong> field.&lt;/li>
 &lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Date&amp;rsquo;.&lt;/li>
-&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Date field will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Date field title will be shown in the form.&lt;/li>
 &lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the Date field will be mandatory for the form user.&lt;/li>
 &lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
 &lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Date field will be visible in the form.&lt;/li>
@@ -211,7 +211,7 @@
 &lt;ul>
 &lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>File&lt;/strong> field.&lt;/li>
 &lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Upload photos&amp;rsquo;.&lt;/li>
-&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the File upload field will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the File upload field title will be shown in the form.&lt;/li>
 &lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the File upload field will be mandatory for the form user.&lt;/li>
 &lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
 &lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the File upload field will be visible in the form.&lt;/li>
@@ -328,7 +328,7 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>List&lt;/strong> field.&lt;/li>
 &lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Type of Training&amp;rsquo;.&lt;/li>
-&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the List field will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the List field title will be shown in the form.&lt;/li>
 &lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the List field will be mandatory for the form user.&lt;/li>
 &lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
 &lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the List field will be visible in the form.&lt;/li>
@@ -456,7 +456,7 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Number&lt;/strong> field.&lt;/li>
 &lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Salary&amp;rsquo;.&lt;/li>
-&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Number field will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Number field title will be shown in the form.&lt;/li>
 &lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the Number field will be mandatory for the form user.&lt;/li>
 &lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
 &lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Number field will be visible in the form.&lt;/li>
@@ -645,7 +645,7 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Table&lt;/strong> field.&lt;/li>
 &lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Existing Qualifications&amp;rsquo;.&lt;/li>
-&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Table field will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Table field title will be shown in the form.&lt;/li>
 &lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the Table field will be mandatory for the form user.&lt;/li>
 &lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
 &lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Table field will be visible in the form.&lt;/li>
@@ -795,7 +795,7 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;First Name&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the Text box field will be shown in the form.&lt;/p>
+&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the Text box field title will be shown in the form.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Required&lt;/strong> - If this is selected, the Text box field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).&lt;/p>
@@ -919,7 +919,7 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Approve Training Request&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the Toggle field will be shown in the form.&lt;/p>
+&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the Toggle field title will be shown in the form.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Required&lt;/strong> - If this is selected, the Toggle field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).&lt;/p>
@@ -1060,7 +1060,7 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Manager&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the User picker field will be shown in the form.&lt;/p>
+&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the User picker field title will be shown in the form.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Required&lt;/strong> - If this is selected, the User picker field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).&lt;/p>
