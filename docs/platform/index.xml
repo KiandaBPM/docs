@@ -209,10 +209,19 @@ Your browser does not support the video tag.
 &lt;li>&lt;strong>Action&lt;/strong> - There are four Action fields that allow user interface actions like buttons, links or even signature components - see &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a> for more information.&lt;/li>
 &lt;/ol>
 &lt;p>If you develop custom fields, they will be available to form designers under a fourth category of controls called &lt;strong>Custom&lt;/strong>.&lt;/p>
-&lt;p>To start adding fields to a form, select the form you want to work on so that the &lt;strong>Edit Form&lt;/strong> button (Pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">) appears. Then click on a Controls category and control type in the left-hand pane. For example, you could choose the &lt;strong>Input&lt;/strong> category and select &lt;strong>Text box&lt;/strong> to insert a text box into your form.&lt;/p>
+&lt;p>&lt;strong>To start adding fields to a form&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select the form you want to work on so that the &lt;strong>Edit Form&lt;/strong> button (Pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">) appears&lt;/li>
+&lt;li>Click on a Controls category and control type in the left-hand pane. For example, you could choose the &lt;strong>Input&lt;/strong> category and select &lt;strong>Text box&lt;/strong> to insert a text box into your form.&lt;/li>
+&lt;/ol>
 &lt;p>To move a field, click on the &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
-&lt;p>To remove a field from your form, select the field you want to remove, then click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click &lt;strong>OK&lt;/strong> to confirm removal.&lt;/p>
-&lt;p>All fields will have edit options when you start creating the field, as well as field properties that you can edit to tailor the field (control) to make it work the way you want. Each field can also have rules applied to it to make your process dynamic.&lt;/p>
+&lt;p>To remove a field from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the field you want to remove&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click &lt;strong>OK&lt;/strong> to confirm removal.&lt;/li>
+&lt;/ol>
+&lt;p>All fields will have edit options when you start creating the field, as well as &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties#field-properties">Field properties&lt;/a> that you can edit to tailor the field (control) to make it work the way you want. Each field can also have rules applied to it to make your process dynamic.&lt;/p>
 &lt;h2 id="controls-list">Controls list&lt;/h2>
 &lt;p>This table lists out the full range of available field types.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/fields-controls-list-table.jpg" alt="Form controls">&lt;/p>
