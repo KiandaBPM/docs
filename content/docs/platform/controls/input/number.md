@@ -11,9 +11,15 @@ For example, in a Purchase Order Request form, you may want to use Number fields
 
 ## How to get started
 
-1. To add a **Number field** to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). 
+1. To add a **Number field** to a form, first open the relevant process. 
 
-2. Insert the **Number field** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Input** to view the range of Input controls and click on **Number**. A number field will be added to your form with the default title of ''**Number 1**'' and a pop-up message will say 'Field added'.
+2. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). 
+
+3. Click on **Controls** in the left-hand pane to expand the Controls menu.
+
+4. Select **Input** to view the range of Input controls and click on **Number**. 
+
+   A number field will be added to your form with the default title of ''**Number 1**'' and a pop-up message will say 'Field added'.
 
    ![Number field added](/images/number-field-added.jpg)
 
@@ -28,15 +34,18 @@ For example, in a Purchase Order Request form, you may want to use Number fields
 
 ### How to edit, move and delete Number fields
 
-To edit a **Number field**, select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
+To edit a **Number field**:
 
-![Select number field to edit](/images/number-field-edit2.jpg)
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
 
-The **Edit field - Number** dialog box will open, enabling you to choose from a range of options:
+	![Select number field to edit](/images/number-field-edit2.jpg)
 
-![Edit number field dialog box](/images/number-edit-dialog.jpg)
+	The **Edit field - Number** dialog box will open, enabling you to choose from a range of options:
 
-The options within the **Edit field - Number** dialog box include:
+	![Edit number field dialog box](/images/number-edit-dialog.jpg)
+
+	The options within the **Edit field - Number** dialog box include:
 
 - **Title** - you can change the title of the Number field from the default '**Number 1**'
 
@@ -76,7 +85,7 @@ The options within the **Edit field - Number** dialog box include:
 
   ![Number field with placeholder text](/images/number-placeholder.jpg)
 
-- **Expression** - you can add an expression to your Number field if, for example, you want the field to contain a calculation based on another field or want it to pull values from other fields. To add an expression, click on the expression button ![Expression button ellipsis](/images/ellipsis.png) to open the Expression builder dialog box - here you can add expressions to perform math operations and various other actions. 
+- **Expression** - you can add an expression to your Number field if, for example, you want the field to contain a calculation based on another field or want it to pull values from other fields. To add an expression, click on the expression button (ellipsis) ![Expression button ellipsis](/images/ellipsis.png) to open the **Expression builder** dialog box - here you can add expressions to perform math operations and various other actions. 
 
   For example, let's say you have a Number field called 'Salary' where the user inputs their salary and another Number field called 'Bonus' which you want to be automatically populated with a figure that is 20% of the 'Salary' figure. To do this, you add an Expression to the 'Bonus' field:
 
@@ -88,14 +97,21 @@ The options within the **Edit field - Number** dialog box include:
 
 	To learn more about applying rules and expressions to Number fields, go to [Rules](/docs/platform/rules/) and [Expression builder](/docs/platform/rules/general/expression-builder).
 
+3. Make whatever changes you want in this **Edit field - Number** dialog box and then click **OK** to confirm. 
 
-Make whatever changes you want in this **Edit field - Number** dialog box and then click **OK** to confirm. 
 
-To move a **Number field**, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to within your form.
+To move a **Number field**:
+
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
+2. Drag and drop the field wherever you want to move it to within your form
 
 ![Date field drag handle](/images/number-move.jpg)
 
-To delete a **Number field** from your form, simply select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)), click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm.
+To delete a **Number field** from your form:
+
+1. Select the field (by either clicking on the field's name or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+3. Click on **OK** to confirm.
 
 ### How to edit Number field properties ###
 
@@ -103,7 +119,15 @@ To view or edit the field properties associated with a **Number field**, select 
 
 ![Field properties](/images/number-properties.jpg)
 
-In the example shown here, a **Number field** titled '**Salary**' has been selected in a form called 'Salary Review' and the Field properties associated with this field include the field type (Number), its Title, that its title will be shown in the form (the 'Show title' checkbox is ticked), that it is a mandatory field that users must complete (the 'Required' checkbox is selected and there is a red star next to the field name in the form), that this field will be enabled for users to complete (the 'Enabled' checkbox is ticked), and it will be visible to form users (the 'Visible' checkbox is ticked).
+For example, the **Field Properties** associated with a **Number field** titled 'Salary' are shown here and include:
+
+- **Field type** - The type of field, in this case a **Number** field.
+- **Title** - The Title of the field, in this case 'Salary'.
+- **Show title** - If this is selected, the Number field will be shown in the form.
+- **Required** - If this is selected, the Number field will be mandatory for the form user.
+- **Enabled** - If this is selected, the user will be able to edit or interact with the field.
+- **Visible** - If this is selected, the Number field will be visible in the form.
+- **Layout** - The width of the blue bar can be adjusted to change the width of the Number field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 
