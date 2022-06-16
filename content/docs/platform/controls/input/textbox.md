@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 The **Text box control** can be used if you want a user to manually input text into a form. For example, in a Training Request form, you may want the user to insert their first name and surname and may want those fields to be mandatory for the user to complete.
 
-There are various options available when creating a Text box field, such as formatting it to allow multiple lines of text, to contain a password (text input is not shown) or to autofil with saved information such as the user's address or email. More advanced options include applying a rule or expression to a Text box field - for more information, see [Rules](/docs/platform/rules/) and [Expression builder](/docs/platform/rules/general/expression-builder).
+There are various options available when creating a Text box field, such as formatting it to allow multiple lines of text, to contain a password (text input is not shown) or to autofill with saved information such as the user's address or email. More advanced options include applying a rule or expression to a Text box field - for more information, see [Rules](/docs/platform/rules/) and [Expression builder](/docs/platform/rules/general/expression-builder).
 
 
 
@@ -14,9 +14,15 @@ There are various options available when creating a Text box field, such as form
 ## How to get started
 
 
-1. To add a **Text box** field to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible).
+1. To add a **Text box** field to a form, first open the relevant process. 
 
-2. Insert the **Text box** field by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Input** to view the range of Input controls and click on **Text box**. A Text box field will be added to your form with the default title of ''**Text box 1**'' and a pop-up message will say 'Field added'.
+2. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible).
+
+3. Click on **Controls** in the left-hand pane to expand the Controls menu.
+
+4. Select **Input** to view the range of Input controls and click on **Text box**. 
+
+   A Text box field will be added to your form with the default title of ''**Text box 1**'' and a pop-up message will say 'Field added'.
 
    ![Text box inserted](/images/textbox-inserted.jpg)
 
@@ -33,7 +39,10 @@ As we go through the options available for editing a Text box, we will keep in m
 
 #### How to edit a Text box field
 
-To edit a **Text box field**, select the Text box (by either clicking on its title or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
+To edit a **Text box field**:
+
+1. Select the Text box (by either clicking on its title or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
 
 ![Select text box edit button](/images/textbox-edit-button.jpg)
 
@@ -99,14 +108,20 @@ The options within the **Edit field - Text box** dialog box include:
 
 You can click on the **Reference** button ![Reference button in the Expression builder dialog box](/images/reference.png) to see some of the most commonly used Expressions. To learn more about using Expressions, go to [Expression builder](/docs/platform/rules/general/expression-builder). 
 
-Make whatever changes you want to make to the Text box field in the **Edit field - Text box** dialog box and then click **OK** to confirm. 
+3. Make whatever changes you want to make to the Text box field in the **Edit field - Text box** dialog box and then click **OK** to confirm. 
 
 
 
 
 #### How to move Text box fields
 
-To move a **Text box** within your form, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to. In our example, the two new Text boxes titled 'First Name' and 'Surname' can be moved from the botton of the form to the top:
+To move a **Text box** within your form:
+
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png). 
+
+2. Drag and drop the field wherever you want to move it to. 
+
+   In our example, the two new Text boxes titled 'First Name' and 'Surname' can be moved from the bottom of the form to the top:
 
 ![Table field drag handle](/images/textbox-move.jpg)
 
@@ -114,7 +129,11 @@ To move a **Text box** within your form, simply select the field's **Drag handle
 
 #### How to delete Text box fields
 
-To delete a **Text box field** from your form, simply select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)), click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm. Click on **Cancel** if you wish to cancel the deletion.
+To delete a **Text box field** from your form:
+
+1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png)
+3. Click on **OK** to confirm (or click on **Cancel** if you wish to cancel the deletion).
 
 
 
@@ -124,13 +143,27 @@ To view or edit the field properties associated with a **Text box field**, selec
 
 ![Field properties](/images/textbox-properties.jpg)
 
-In the example shown here, our sample **Text box field** titled '**First Name**' has been selected and the Field properties associated with this field include the field type (Text box), its Title, that its title will be shown in the form (the 'Show title' checkbox is ticked), that it will be a mandatory field that users must complete (the 'Required' checkbox has been selected and there is a red star next to the field title), that this field will be enabled for users to complete (the 'Enabled' checkbox is ticked), and it will be visible to form users (the 'Visible' checkbox is ticked).
+For example, the **Field Properties** associated with a **Text box field** titled 'First Name' are shown here and include:
 
-You can change the size of the Text box by clicking into the **Layout** or **Mobile Layout** options at the bottom of the Field Properties menu and changing the width of the blue bar. You can then check how the Text box will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button ![Preview button](/images/preview.png). Our simplified example of the 'First Name' and 'Surname' fields in a Training Request form could look like this when viewed on a user's mobile phone:
+- **Field type** - The type of field, in this case a **Text box** field.
 
-![Sample table in preview](/images/textbox-preview-mobile.jpg)
+- **Title** - The Title of the field, in this case 'First Name'.
+
+- **Show title** - If this is selected, the Text box field will be shown in the form.
+
+- **Required** - If this is selected, the Text box field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).
+
+- **Enabled** - If this is selected, the user will be able to edit or interact with the field.
+
+- **Visible** - If this is selected, the Text box field will be visible in the form.
+
+- **Layout** - The width of the blue bar can be adjusted to change the width of the Tetg box field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+
+You can check how the Text box will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button ![Preview button](/images/preview.png). Our simple example of the 'First Name' and 'Surname' fields in a Training Request form could look like this when viewed on a user's mobile phone:
+
+![Sample table in preview](/images/textbox-preview-mobile.jpg)
 
 
 
