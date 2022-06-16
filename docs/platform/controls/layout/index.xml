@@ -4,7 +4,10 @@
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To add a &lt;strong>Field group&lt;/strong> to a form, first open the relevant process - in our case, we will open the Education Request Process. Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible) - we will select the &amp;lsquo;Training Approval&amp;rsquo; form. Go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>To add a &lt;strong>Field group&lt;/strong> to a form, first open the relevant process - in our case, we will open the Education Request Process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible) - we will select the &amp;lsquo;Training Approval&amp;rsquo; form. Go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/field-group-example1.jpg" alt="Select form to insert Field group control">&lt;/p>
 &lt;p>Our &lt;strong>Training Approval&lt;/strong> form contains two Panels - the first Panel currently only contains the Richtext field titled &amp;lsquo;Training Details&amp;rsquo;, the second Panel contains fields related to the approval decision. Panels are sections within your form - to learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/panel/">Panel control&lt;/a>. We will use the &lt;strong>Field group control&lt;/strong> to add fields from the &amp;lsquo;Training Request&amp;rsquo; form to the first panel.&lt;/p>
 &lt;/li>
@@ -43,23 +46,59 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Once you have completed the &lt;strong>New field - Field group&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong> and the new &lt;strong>Field group&lt;/strong> will be added to your form. By default, the &lt;strong>Title&lt;/strong> of the new Field group will not be shown (unless you choose to display it, by selecting the &lt;strong>Show title&lt;/strong> checkbox in the Field properties menu to the right).&lt;/p>
-&lt;p>In our example, our new Field group contains the three fields we chose:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/field-group-move.jpg" alt="Move field group">&lt;/p>
+&lt;p>Once you have completed the &lt;strong>New field - Field group&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong> and the new &lt;strong>Field group&lt;/strong> will be added to your form.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>By default, the &lt;strong>Title&lt;/strong> of the new Field group will not be shown (unless you choose to display it, by selecting the &lt;strong>Show title&lt;/strong> checkbox in the Field properties menu to the right).&lt;/p>
+&lt;p>In our example, our new Field group contains the three fields we chose:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/field-group-move.jpg" alt="Move field group">&lt;/p>
 &lt;h3 id="how-to-edit-move-and-delete-field-groups">How to edit, move and delete Field groups&lt;/h3>
-&lt;p>To edit a &lt;strong>Field group&lt;/strong>, select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>To edit a &lt;strong>Field group&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/field-group-select-to-edit.jpg" alt="Select field group to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - Field group&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - Field group&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/field-group#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/field-group-edit-dialog.jpg" alt="Field group edit dialog box">&lt;/p>
-&lt;p>To move a &lt;strong>Field group&lt;/strong>, simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to within your form. Noted that the grouped fields are available to move and edit as a group within the form.&lt;/p>
-&lt;p>To delete a &lt;strong>Field group&lt;/strong> from your form, simply select the group by clicking on the group&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm. Click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
+&lt;p>To move a &lt;strong>Field group&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Drag and drop the field wherever you want to move it to within your form. Note that the grouped fields are available to move and edit as a group within the form.&lt;/li>
+&lt;/ol>
+&lt;p>To delete a &lt;strong>Field group&lt;/strong> from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the group by clicking on the group&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm (or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion)&lt;/li>
+&lt;/ol>
 &lt;h2 id="how-to-edit-field-group-properties">How to edit Field group properties&lt;/h2>
 &lt;p>To view or edit the field properties associated with a &lt;strong>Field group&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/field-group-field-properties.jpg" alt="Field group Field properties">&lt;/p>
-&lt;p>The &lt;strong>Field type&lt;/strong>, Field group, is shown along with the &lt;strong>Title&lt;/strong> of the field, in the example above Training Details.&lt;/p>
-&lt;p>In the example shown here, a &lt;strong>Field group&lt;/strong> titled &amp;lsquo;&lt;strong>Field group 1&lt;/strong>&amp;rsquo; has been selected and the &lt;strong>Field properties&lt;/strong> associated with it are shown in the Field properties menu to the right. They include: the field type (Field group), title, that the title will &lt;em>not&lt;/em> be shown in the form (the &amp;lsquo;Show title&amp;rsquo; checkbox has not been selected), that the field will not be a mandatory field for the user to complete (the &amp;lsquo;Required&amp;rsquo; checkbox has not been selected), that the field is enabled so the user can edit it (the &amp;lsquo;Enabled&amp;rsquo; checkbox has been selected), that the field will be visible in the form (the &amp;lsquo;Visible&amp;rsquo; checkbox has been selected) and how wide the field layout will be on a PC and mobile phone (the blue bars in &amp;lsquo;Layout&amp;rsquo;).&lt;/p>
+&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Field group&lt;/strong> field titled &amp;lsquo;Field group 1&amp;rsquo; are shown here and include:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Field group&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Field group 1&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the Field group will be shown in the form. In this case, the &amp;lsquo;Show title&amp;rsquo; checkbox has &lt;em>not&lt;/em> been selected, so it won&amp;rsquo;t be shown in the form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Required&lt;/strong> - If this is selected, the field will be mandatory for form users to complete.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Visible&lt;/strong> - If this is selected, the Field group will be visible in the form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Field group as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
