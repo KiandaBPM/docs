@@ -79,7 +79,7 @@ For example, the **Field Properties** associated with a **Date field** titled 'D
 
 - **Field type** - The type of field, in this case a **Date** field.
 - **Title** - The Title of the field, in this case 'Date'.
-- **Show title** - If this is selected, the Date field will be shown in the form.
+- **Show title** - If this is selected, the Date field title will be shown in the form.
 - **Required** - If this is selected, the Date field will be mandatory for the form user.
 - **Enabled** - If this is selected, the user will be able to edit or interact with the field.
 - **Visible** - If this is selected, the Date field will be visible in the form.

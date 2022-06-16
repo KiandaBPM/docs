@@ -200,7 +200,7 @@ For example, a manager may complete a Performance Plan form for each employee, s
 
       - **Field type** - The type of field, in this case a **Signature** field.
       - **Title** - The Title of the field, in this case 'Manager Signature'.
-      - **Show title** - If this is selected, the Signature field will be shown in the form.
+      - **Show title** - If this is selected, the Signature field title will be shown in the form.
       - **Required** - If this is selected, the Signature field will be mandatory for the form user.
       - **Enabled** - If this is selected, the user will be able to edit or interact with the field.
       - **Visible** - If this is selected, the Signature field will be visible in the form.

@@ -50,11 +50,11 @@ In the example shown here, the Employee Name field has been selected and the **F
 
 The options within the Field properties menu are:
 
-- Show Title - show the title of the field
-- Required - tick this checkbox to make this field mandatory for users to fill out (this will be denoted by an asterix beside the field name)
-- Enabled - tick this checkbox to make the field enabled for users to fill out
-- Visible - tick this checkbox to make the field visible to users
-- Layout - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the text box for mobile use.
+- **Show Title** - show the title of the field
+- **Required** - tick this checkbox to make this field mandatory for users to fill out (this will be denoted by an asterix beside the field name)
+- **Enabled** - tick this checkbox to make the field enabled for users to fill out
+- **Visible** - tick this checkbox to make the field visible to users
+- **Layout** - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the field when viewed on a mobile phone.
 
 ![Changing text box width](/images/textboxsize-frame.png) 
 

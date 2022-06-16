@@ -156,7 +156,7 @@ To view or edit a Button's **Field properties**:
 
    - **Field type** - The type of field, in this case a **Button**.
    - **Title** - The Title of the field, in this case 'Schedule Meeting'.
-   - **Show title** - If this is selected, the Button will be shown in the form.
+   - **Show title** - If this is selected, the Button field title will be shown in the form.
    - **Required** - If this is selected, the Button will be mandatory for the form user.
    - **Enabled** - If this is selected, the user will be able to edit or interact with the field.
    - **Visible** - If this is selected, the Button will be visible in the form.

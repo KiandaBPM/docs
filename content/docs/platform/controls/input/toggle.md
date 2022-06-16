@@ -111,7 +111,7 @@ For example, the **Field Properties** associated with a **Toggle field** titled 
 
 - **Title** - The Title of the field, in this case 'Approve Training Request'.
 
-- **Show title** - If this is selected, the Toggle field will be shown in the form.
+- **Show title** - If this is selected, the Toggle field title will be shown in the form.
 
 - **Required** - If this is selected, the Toggle field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).
 

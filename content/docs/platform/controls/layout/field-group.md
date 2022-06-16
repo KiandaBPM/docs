@@ -104,7 +104,7 @@ For example, the **Field Properties** associated with a **Field group** field ti
 
 - **Title** - The Title of the field, in this case 'Field group 1'.
 
-- **Show title** - If this is selected, the Field group will be shown in the form. In this case, the 'Show title' checkbox has *not* been selected, so it won't be shown in the form.
+- **Show title** - If this is selected, the Field group title will be shown in the form. In this case, the 'Show title' checkbox has *not* been selected, so it won't be shown in the form.
 
 - **Required** - If this is selected, the field will be mandatory for form users to complete.
 
