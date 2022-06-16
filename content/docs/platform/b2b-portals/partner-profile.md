@@ -85,7 +85,7 @@ If you **already have a subscription** you can choose to **Login** instead of Si
 
 Within your subscription you will be able to see if an invited partner has accepted their **invitation** based on the **status**. **Pending** means they have not accepted the **invite**, **active** means they have accepted the **invite**.
 
-![Invite partner status](/images/pending-invites.jpg)
+git![Invite partner status](/images/pending-invites.jpg)
 
 Once an invite is accepted, your client’s/invited partner's employees can now access the B2B Portal and interact with the Dashboards and Processes that have been shared with them. For more information on how  **B2B Portal** users access shared data go to [Data access](/docs/platform/b2b-portals/data-access/), as well as [Shared dashboards](/docs/platform/b2b-portals/shared-dashboard/) for information on dashboards, and [Shared process](/docs/platform/b2b-portals/shared-process/) for information on processes. 
 
