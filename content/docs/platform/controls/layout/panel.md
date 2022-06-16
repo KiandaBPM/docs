@@ -13,9 +13,15 @@ For example, in a 'Training Request' form, you may decide to insert two panels -
 
 ## How to get started
 
-1. To add a **Panel** to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). Go to [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
+1. To add a **Panel** to a form, first open the relevant process. 
 
-2. Insert the **Panel** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Layout** to view the range of Layout controls and click on **Panel**. A pop-up message will appear saying '**Field added**' and a panel field with the default name **Panel 1** will be added to your form.
+2. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). Go to [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
+
+3. Insert the **Panel** by clicking on **Controls** in the left-hand pane to expand the Controls menu.
+
+4. Select **Layout** to view the range of Layout controls and click on **Panel**. 
+
+   A pop-up message will appear saying '**Field added**' and a panel field with the default name **Panel 1** will be added to your form.
 
    ![Insert panel field](/images/panel-insert-blank-form.jpg)
 
@@ -31,15 +37,18 @@ As we go through the options available for editing a Panel in a form, we will ke
 
 #### How to edit a Panel
 
-To edit a **Panel**, select the field  and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
+To edit a **Panel**:
 
-![Select Panel to edit](/images/panel-edit.jpg)
+1. Select the field
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
 
-The **Edit field - Panel** dialog box will open, enabling you to choose from a range of options:
+	![Select Panel to edit](/images/panel-edit.jpg)
 
-![Edit Panel dialog box](/images/panel-edit-dialog.jpg)
+	The **Edit field - Panel** dialog box will open, enabling you to choose from a range of options:
+	
+	![Edit Panel dialog box](/images/panel-edit-dialog.jpg)
 
-​		The options within the **Edit field - Panel** dialog box include:
+	The options within the **Edit field - Panel** dialog box include:
 
 - **Title** - You can change the title of the Panel from the default '**Panel 1**'. 
 
@@ -104,7 +113,7 @@ The **Edit field - Panel** dialog box will open, enabling you to choose from a r
 	Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda. To learn more about how you can create anonymous links to a form that can be shared with external users, see [Anonymous form link](/docs/platform/rules/communications/anonymous-form-link/).
 	
 
-Once you are finished editing the **Panel** in the **Edit field** dialog box, click on the **OK** button ![OK button](/images/ok.png) to save your changes or click on **Close** to exit the dialog box without saving.
+3. Once you are finished editing the **Panel** in the **Edit field** dialog box, click on the **OK** button ![OK button](/images/ok.png) to save your changes or click on **Close** to exit the dialog box without saving.
 
 #### How to add fields to a Panel
 
@@ -115,11 +124,14 @@ To add fields to your Panel:
 1. Select the Panel (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) so that the **Edit field** button ![Edit form button](/images/penicon.png) is visible
 2. Click on whatever type of field you want to insert from the **Controls** menu in the left-hand pane.
 
-Let's take the example of our first Panel, titled '**Employee Details**'. We can select the Panel by clicking on the 'Employee Details' field Drag handle and then add a **Text box field** to this Panel by clicking on **Controls**>**Input**>**Text box** in the **Controls** menu - a pop-up message says 'Field added' and a new Text box, titled '**Text box 1**', is added to the 'Employee Details' panel:
+Let's take the example of our first Panel, titled '**Employee Details**'. To add a Text box field to this Panel we can:
+
+1. Select the Panel by clicking on the 'Employee Details' field Drag handle.
+2. Click on **Controls**>**Input**>**Text box** in the **Controls** menu to insert a Text box. A pop-up message says 'Field added' and a new Text box, titled '**Text box 1**', is added to the 'Employee Details' panel:
 
 ![Insert text box field into a Panel](/images/panel-insert-fields.jpg)
 
-You can then edit this new Text box field as needed - in our example, we will rename it as 'First Name'. To learn more about Text box fields, go to [Text box control](/docs/platform/controls/input/textbox/).
+3. You can then edit this new Text box field as needed - in our example, we will rename it as 'First Name'. To learn more about Text box fields, go to [Text box control](/docs/platform/controls/input/textbox/).
 
 By adding two text box fields (titled 'First Name' and 'Surname') and a date field (titled 'Date of Birth') to our 'Employee Details' Panel, and then adding the fields we need to the 'Training Details' Panel, our 'Training Request' form - with its two Panels - could look like this when viewed on a user's mobile phone:
 
