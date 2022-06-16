@@ -157,7 +157,7 @@ For example, the **Field Properties** associated with a **Text box field** title
 
 - **Visible** - If this is selected, the Text box field will be visible in the form.
 
-- **Layout** - The width of the blue bar can be adjusted to change the width of the Tetg box field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
+- **Layout** - The width of the blue bar can be adjusted to change the width of the Text box field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 
