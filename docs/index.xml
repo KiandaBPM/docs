@@ -337,8 +337,7 @@ For example, a line manager who is a form owner may need to add additional infor
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Workspace security</title><link>https://docs.kianda.com/docs/security/workspace-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/workspace-security/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>As an end user, when you login to Kianda, you are presented with dashboards and widgets for different processes. The dashboard is made of multiple widgets like tiles, charts, links etc. Go to Dashboard widgets to find out more about each widget type.&lt;/p>
-&lt;p>The workspace here refers to the dashboards and widgets, where the user can view the information in order to view or update any record.&lt;/p>
+&lt;p>As an end user, when you login to Kianda, you are presented with dashboards and widgets for different processes. The dashboard is made of multiple widgets like tiles, charts, links and lists. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard&lt;/a> to find out more about each widget type.&lt;/p>
 &lt;p>The workspace level security can only be applied if you have the &lt;strong>Administrator&lt;/strong> role to allow visibility of &lt;strong>dashboards and widgets.&lt;/strong>&lt;/p>
 &lt;p>These are the steps involved in applying security to the dashboards:&lt;/p>
 &lt;ol>
@@ -349,14 +348,17 @@ For example, a line manager who is a form owner may need to add additional infor
 &lt;p>Click the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> visible in the top menu bar.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Now in &lt;strong>edit mode&lt;/strong>, the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings2.png" alt="Settings button"> is visible. Click on the &lt;strong>Settings&lt;/strong> button.&lt;/p>
+&lt;p>Now in &lt;strong>Edit mode&lt;/strong>, the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings2.png" alt="Settings button"> is visible. Click on the &lt;strong>Settings&lt;/strong> button.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Edit dashboard page&lt;/strong> dialog box appears where you can find the &lt;strong>Visible to&lt;/strong> user picker with an option to select users or groups**.**&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/edit-dashboard-users.jpg" alt="Edit dashboard visible to parameter">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Select the correct &lt;strong>users or groups&lt;/strong> and click on &lt;strong>Ok&lt;/strong>.&lt;/p>
+&lt;p>Select the correct &lt;strong>Users&lt;/strong> or &lt;strong>Groups&lt;/strong> using the dropdown menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Make any other changes you need to the dashboard, see&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Save the changes you make by clicking on the &lt;strong>Save&lt;/strong> button&lt;/p>
