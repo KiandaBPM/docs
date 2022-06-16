@@ -478,11 +478,19 @@
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-move-and-delete-richtext-fields">How to edit, move and delete Richtext fields&lt;/h3>
-&lt;p>To edit a &lt;strong>Richtext field&lt;/strong>, select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>To edit a &lt;strong>Richtext field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/richtext-select-to-edit.jpg" alt="Select Richtext field to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - Richtext&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - Richtext&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/richtext#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/richtext-edit-dialog.jpg" alt="Richtext field edit dialog box">&lt;/p>
-&lt;p>To move a &lt;strong>Richtext field&lt;/strong>, simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to within your form.&lt;/p>
+&lt;p>To move a &lt;strong>Richtext field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Drag and drop the field wherever you want to move it to within your form.&lt;/li>
+&lt;/ol>
 &lt;p>In our example, we can move the new Richtext heading to the top of the first panel in the Training Approval form:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/richtext-move.jpg" alt="Move a Richtext field">&lt;/p>
 &lt;p>To delete a &lt;strong>Richtext field&lt;/strong> from your form:&lt;/p>
