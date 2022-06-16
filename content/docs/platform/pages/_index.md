@@ -110,8 +110,8 @@ When you have added one or more widgets, you can move the widgets around the das
 
 When you click on the **Settings** button ![Settings](images/settings.png) a **Page settings** dialog box opens. The edit options are the same as **Create dashboard page** dialog box that appears during page creation, see [How to get started](#how-to-get-started) but also includes **two** additional checkboxes:
 
-- **Display in mobile footer** - tick this checkbox if you want to COME BACK TO
-- **Hide from navigation** - tick this checkbox if you want to hide the dashboard from navigation COME BACK TO
+- **Display in mobile footer** - tick this checkbox if you want
+- **Hide from navigation** - tick this checkbox if you want to hide the dashboard from navigation 
 
 ![Dashboard settings](/images/dashsettings.png)
 
