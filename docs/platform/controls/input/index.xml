@@ -236,12 +236,16 @@
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To add a &lt;strong>List field&lt;/strong> to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible). If you want to add the List field to a panel within your form, first select the panel by clicking on it and then add the &lt;strong>List field&lt;/strong>.&lt;/p>
+&lt;p>To add a &lt;strong>List field&lt;/strong> to a form, first open the relevant process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Insert the new &lt;strong>List field&lt;/strong> by clicking on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu, then select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>List&lt;/strong>. A &lt;strong>New field - List&lt;/strong> dialog box will open with a range of options you can choose from for your new List field.&lt;/p>
+&lt;p>Select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible). If you want to add the List field to a panel within your form, first select the panel by clicking on it and then add the &lt;strong>List field&lt;/strong>.&lt;/p>
 &lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>List&lt;/strong>. A &lt;strong>New field - List&lt;/strong> dialog box will open with a range of options you can choose from for your new List field.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-field-dialog-box.jpg" alt="New list field dialog box">&lt;/p>
 &lt;p>The options available in the &lt;strong>New field - List&lt;/strong> dialog box include:&lt;/p>
 &lt;ul>
@@ -257,12 +261,14 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>List source&lt;/strong> - You have three main options in terms of the source of the choices that will appear in your List field:&lt;/p>
+&lt;p>a) &lt;strong>Entered manually&lt;/strong>
+b) &lt;strong>Form data&lt;/strong>
+c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>​ a) &lt;strong>Entered manually&lt;/strong>
-​ b) &lt;strong>Form data&lt;/strong>
-​ c) &lt;strong>Data source&lt;/strong>&lt;/p>
-&lt;p>​ We will look at each of these three list source options in turn.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>We will look at each of these three list source options in turn.&lt;/p>
 &lt;p>If you select the &lt;strong>Entered manually&lt;/strong> checkbox, you must then manually type the choices you want to appear in your list into the &lt;strong>List source&lt;/strong> box. Three default choices are shown - simply replace these with the choices you want to appear in your list (keeping the same format of one choice per line). You can insert more than three choices.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-source-manually.jpg" alt="Manually entered list">&lt;/p>
 &lt;p>If you select the &lt;strong>Form data&lt;/strong> checkbox (so the source of your list options is a form field), then the box under &lt;strong>List source&lt;/strong> will now show the instruction &amp;lsquo;Select a form field&amp;hellip;&amp;rsquo; and two further options will appear below this - &lt;strong>Display field&lt;/strong> and &lt;strong>Value field&lt;/strong>.&lt;/p>
@@ -285,25 +291,49 @@
 &lt;p>By default, the &lt;strong>Dropdown list&lt;/strong> radio button is selected, along with two additional options - &lt;strong>Filter mode&lt;/strong> (you can choose either &amp;lsquo;Starts With&amp;rsquo; or &amp;lsquo;Contains&amp;rsquo;) and &lt;strong>Enable native selector on mobile&lt;/strong> (so a user completing the list field on their mobile phone can use the default list selector on it).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-display-format.jpg" alt="Dropdown list display format">&lt;/p>
 &lt;p>If you choose &lt;strong>Radio list&lt;/strong> or &lt;strong>Checkbox list&lt;/strong> you can choose a &lt;strong>List display position&lt;/strong> of either Vertical or Horizontal.&lt;/p>
-&lt;ol start="3">
-&lt;li>Once you complete the &lt;strong>New field - List&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong> button, a new &lt;strong>List field&lt;/strong> is added to your form, with the name you inserted as the &lt;strong>Title&lt;/strong> in the dialog box (by default, the title is &lt;strong>List 1&lt;/strong> unless you change it).&lt;/li>
-&lt;/ol>
+&lt;ol start="5">
+&lt;li>
+&lt;p>Once you complete the &lt;strong>New field - List&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong> button, a new &lt;strong>List field&lt;/strong> is added to your form, with the name you inserted as the &lt;strong>Title&lt;/strong> in the dialog box (by default, the title is &lt;strong>List 1&lt;/strong> unless you change it).&lt;/p>
 &lt;p>If we take the example of a Training Request form with a list field that contains the different types of training a user can request, the list field (which is titled &amp;lsquo;Type of Training&amp;rsquo; and has a drop-down list format) could look like this when a user views it on their mobile phone:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-example-mobile.jpg" alt="List field dropdown list example mobile phone">&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>To see how your form or field will look like on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by clicking the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">(play icon) after first saving your changes.&lt;/p>
 &lt;h3 id="how-to-edit-move-and-delete-file-upload-fields">How to edit, move and delete File upload fields&lt;/h3>
-&lt;p>To edit a &lt;strong>List field&lt;/strong>, select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>To edit a &lt;strong>List field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-select-to-edit.jpg" alt="Select file upload file to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - List&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - List&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-edit-dialog-example.jpg" alt="Edit date field dialog box">&lt;/p>
 &lt;p>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
-&lt;p>To move a &lt;strong>List field&lt;/strong>, simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to within your form.&lt;/p>
+&lt;p>To move a &lt;strong>List field&lt;/strong>, simply&lt;/p>
+&lt;ol>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Drag and drop the field wherever you want to move it to within your form&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-move-draghandle.jpg" alt="Date field drag handle">&lt;/p>
-&lt;p>To delete a &lt;strong>List field&lt;/strong> from your form, simply select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">), click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;p>To delete a &lt;strong>List field&lt;/strong> from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/ol>
 &lt;h3 id="how-to-edit-list-field-properties">How to edit List field properties&lt;/h3>
 &lt;p>To view or edit the field properties associated with a &lt;strong>List field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-field-properties.jpg" alt="List properties">&lt;/p>
-&lt;p>In the example shown here, a &lt;strong>List field&lt;/strong> titled &lt;strong>Type of Training&lt;/strong> has been selected and it&amp;rsquo;s properties are displayed, including: its Title, that its Title will be shown in the form (the &amp;lsquo;Show title&amp;rsquo; checkbox is ticked), that it will be a mandatory field for users to complete (the &amp;lsquo;Required&amp;rsquo; checkbox is ticked and there is a red star next to the field name in the form), that this field will be enabled for users to complete (the &amp;lsquo;Enabled&amp;rsquo; checkbox is ticked), and that this field will be visible to form users (the &amp;lsquo;Visible&amp;rsquo; checkbox is ticked). The width of the field on PC and mobile is also shown.&lt;/p>
+&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>List field&lt;/strong> titled &amp;lsquo;Type of Training&amp;rsquo; are shown here and include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>List&lt;/strong> field.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Type of Training&amp;rsquo;.&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the List field will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the List field will be mandatory for the form user.&lt;/li>
+&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the List field will be visible in the form.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the List field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
+&lt;/ul>
 &lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
