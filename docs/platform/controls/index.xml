@@ -356,13 +356,26 @@
 &lt;p>Once a &lt;strong>Custom field widget&lt;/strong> has been created, Designers will then be able to see and use that Custom field widget in the &lt;strong>Custom&lt;/strong> section of the &lt;strong>Controls&lt;/strong> menu when designing Kianda forms.&lt;/p>
 &lt;p>To learn more about how to create &lt;strong>Custom field widgets&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code#how-to-get-started-as-a-kianda-low-code-developer">Creating a custom field widget&lt;/a>.&lt;/p>
 &lt;h3 id="how-to-edit-move-and-delete-custom-fields">How to edit, move and delete Custom fields&lt;/h3>
-&lt;p>To edit a &lt;strong>Custom field&lt;/strong>, select the field (by either clicking on the field title or &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>To edit a &lt;strong>Custom field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field title or &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-edit2.jpg" alt="Select Custom field to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field&lt;/strong> dialog box will open, enabling you to choose from a range of options specific to that particular Custom field. The functionality of the field will depend on what the Custom field was designed to do.&lt;/p>
-&lt;p>To move a &lt;strong>Custom field&lt;/strong>, simply select the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to within your form.&lt;/p>
+&lt;p>To move a &lt;strong>Custom field&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Drag and drop the field wherever you want to move it to within your form.&lt;/li>
+&lt;/ol>
 &lt;p>In our example, we could drag and drop the new Custom field titled &amp;lsquo;Field widget 1&amp;rsquo; so that it comes before the &amp;lsquo;Type of Training&amp;rsquo; List field:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-move.jpg" alt="Custom field drag handle">&lt;/p>
-&lt;p>To delete a &lt;strong>Custom field&lt;/strong> from your form, simply select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">), click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;p>To delete a &lt;strong>Custom field&lt;/strong> from your form:&lt;/p>
+&lt;ol>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/ol>
 &lt;h3 id="how-to-view-or-edit-custom-control-field-properties">How to view or edit Custom control Field properties&lt;/h3>
 &lt;p>To view or edit the Field properties associated with a &lt;strong>Custom field&lt;/strong>, select the field (by clicking on the field title or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-field-properties.jpg" alt="Field properties associated with a Custom field">&lt;/p>
