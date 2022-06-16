@@ -276,10 +276,17 @@
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To add a &lt;strong>Panel&lt;/strong> to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible). Go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>To add a &lt;strong>Panel&lt;/strong> to a form, first open the relevant process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Insert the &lt;strong>Panel&lt;/strong> by clicking on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu, then select &lt;strong>Layout&lt;/strong> to view the range of Layout controls and click on &lt;strong>Panel&lt;/strong>. A pop-up message will appear saying &amp;lsquo;&lt;strong>Field added&lt;/strong>&amp;rsquo; and a panel field with the default name &lt;strong>Panel 1&lt;/strong> will be added to your form.&lt;/p>
+&lt;p>Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible). Go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Insert the &lt;strong>Panel&lt;/strong> by clicking on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Layout&lt;/strong> to view the range of Layout controls and click on &lt;strong>Panel&lt;/strong>.&lt;/p>
+&lt;p>A pop-up message will appear saying &amp;lsquo;&lt;strong>Field added&lt;/strong>&amp;rsquo; and a panel field with the default name &lt;strong>Panel 1&lt;/strong> will be added to your form.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-insert-blank-form.jpg" alt="Insert panel field">&lt;/p>
 &lt;p>By default, the title of the new panel will not be displayed in your form, but you can make it visible by selecting the &amp;lsquo;&lt;strong>Show title&lt;/strong>&amp;rsquo; checkbox in the &lt;strong>Field properties&lt;/strong> panel to the right) - to learn more about editing the &lt;strong>Field properties&lt;/strong> associated with Panels, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/panel#how-to-edit-panel-field-properties">How to edit Panel field properties&lt;/a>.&lt;/p>
 &lt;/li>
@@ -287,11 +294,19 @@
 &lt;h3 id="how-to-edit-move-and-delete-panels">How to edit, move and delete Panels&lt;/h3>
 &lt;p>As we go through the options available for editing a Panel in a form, we will keep in mind the example of adding two panels to a &amp;lsquo;Training Request&amp;rsquo; form - one titled &amp;lsquo;Employee Details&amp;rsquo; and one titled &amp;lsquo;Training Details&amp;rsquo;.&lt;/p>
 &lt;h4 id="how-to-edit-a-panel">How to edit a Panel&lt;/h4>
-&lt;p>To edit a &lt;strong>Panel&lt;/strong>, select the field and then click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
+&lt;p>To edit a &lt;strong>Panel&lt;/strong>:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the field&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-edit.jpg" alt="Select Panel to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - Panel&lt;/strong> dialog box will open, enabling you to choose from a range of options:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-edit-dialog.jpg" alt="Edit Panel dialog box">&lt;/p>
-&lt;p>​ The options within the &lt;strong>Edit field - Panel&lt;/strong> dialog box include:&lt;/p>
+&lt;p>The options within the &lt;strong>Edit field - Panel&lt;/strong> dialog box include:&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - You can change the title of the Panel from the default &amp;lsquo;&lt;strong>Panel 1&lt;/strong>&amp;rsquo;.&lt;/p>
@@ -342,7 +357,9 @@
 &lt;p>Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda. To learn more about how you can create anonymous links to a form that can be shared with external users, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/anonymous-form-link/">Anonymous form link&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>Once you are finished editing the &lt;strong>Panel&lt;/strong> in the &lt;strong>Edit field&lt;/strong> dialog box, click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;ol start="3">
+&lt;li>Once you are finished editing the &lt;strong>Panel&lt;/strong> in the &lt;strong>Edit field&lt;/strong> dialog box, click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/li>
+&lt;/ol>
 &lt;h4 id="how-to-add-fields-to-a-panel">How to add fields to a Panel&lt;/h4>
 &lt;p>Once you have inserted a Panel and completed the &lt;strong>Edit field - Panel&lt;/strong> dialog box, you can then start to add the elements you need into the Panel - such as text boxes, lists, tables, number fields or date fields. Go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a> to see the full list of fields available and &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to learn about different categories of rules that can be applied.&lt;/p>
 &lt;p>To add fields to your Panel:&lt;/p>
@@ -350,9 +367,15 @@
 &lt;li>Select the Panel (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) so that the &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible&lt;/li>
 &lt;li>Click on whatever type of field you want to insert from the &lt;strong>Controls&lt;/strong> menu in the left-hand pane.&lt;/li>
 &lt;/ol>
-&lt;p>Let&amp;rsquo;s take the example of our first Panel, titled &amp;lsquo;&lt;strong>Employee Details&lt;/strong>&amp;rsquo;. We can select the Panel by clicking on the &amp;lsquo;Employee Details&amp;rsquo; field Drag handle and then add a &lt;strong>Text box field&lt;/strong> to this Panel by clicking on &lt;strong>Controls&lt;/strong>&amp;gt;&lt;strong>Input&lt;/strong>&amp;gt;&lt;strong>Text box&lt;/strong> in the &lt;strong>Controls&lt;/strong> menu - a pop-up message says &amp;lsquo;Field added&amp;rsquo; and a new Text box, titled &amp;lsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;, is added to the &amp;lsquo;Employee Details&amp;rsquo; panel:&lt;/p>
+&lt;p>Let&amp;rsquo;s take the example of our first Panel, titled &amp;lsquo;&lt;strong>Employee Details&lt;/strong>&amp;rsquo;. To add a Text box field to this Panel we can:&lt;/p>
+&lt;ol>
+&lt;li>Select the Panel by clicking on the &amp;lsquo;Employee Details&amp;rsquo; field Drag handle.&lt;/li>
+&lt;li>Click on &lt;strong>Controls&lt;/strong>&amp;gt;&lt;strong>Input&lt;/strong>&amp;gt;&lt;strong>Text box&lt;/strong> in the &lt;strong>Controls&lt;/strong> menu to insert a Text box. A pop-up message says &amp;lsquo;Field added&amp;rsquo; and a new Text box, titled &amp;lsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;, is added to the &amp;lsquo;Employee Details&amp;rsquo; panel:&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-insert-fields.jpg" alt="Insert text box field into a Panel">&lt;/p>
-&lt;p>You can then edit this new Text box field as needed - in our example, we will rename it as &amp;lsquo;First Name&amp;rsquo;. To learn more about Text box fields, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;ol start="3">
+&lt;li>You can then edit this new Text box field as needed - in our example, we will rename it as &amp;lsquo;First Name&amp;rsquo;. To learn more about Text box fields, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;/ol>
 &lt;p>By adding two text box fields (titled &amp;lsquo;First Name&amp;rsquo; and &amp;lsquo;Surname&amp;rsquo;) and a date field (titled &amp;lsquo;Date of Birth&amp;rsquo;) to our &amp;lsquo;Employee Details&amp;rsquo; Panel, and then adding the fields we need to the &amp;lsquo;Training Details&amp;rsquo; Panel, our &amp;lsquo;Training Request&amp;rsquo; form - with its two Panels - could look like this when viewed on a user&amp;rsquo;s mobile phone:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-example-mobile.jpg" alt="Panel example on mobile phone">&lt;/p>
 &lt;p>To see how your form or field will look on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by using the &lt;strong>Preview&lt;/strong> option which can be opened by clicking the play button icon &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">. You also have the options to see how it will look on a PC or tablet.&lt;/p>
