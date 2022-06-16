@@ -14,13 +14,17 @@ For example, in a 'Training Request' form, you may insert a **User picker field*
 
 ## How to get started
 
-1. To add a **User picker field** to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible).
+1. To add a **User picker field** to a form, first open the relevant process. 
 
-2. Insert the **User picker field** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Input** to view the range of Input controls and click on **User picker**. If you want to insert the new field into a panel in your form, first select the panel by clicking on the drag handle button ![Drag handle button](/images/draghandlewhite-frame.png) and then insert the new User picker field from the Controls menu.
+2. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible).
+
+3. Click on **Controls** in the left-hand pane to expand the Controls menu.
+
+4. Select **Input** to view the range of Input controls and click on **User picker**. If you want to insert the new field into a panel in your form, first select the panel by clicking on the drag handle button ![Drag handle button](/images/draghandlewhite-frame.png) and then insert the new User picker field from the Controls menu.
 
 	![Insert User picker field](/images/user-picker-insert.jpg)
 
-3. A **New field - User picker** dialog box will open with a range of options you can choose from for your new User picker field.
+5. A **New field - User picker** dialog box will open with a range of options you can choose from for your new User picker field.
 
    ![New field user picker dialog box](/images/user-picker-dialog.jpg)
 
@@ -90,7 +94,7 @@ For example, in a 'Training Request' form, you may insert a **User picker field*
      
      
 
-4. Once you complete the **New field - User picker** dialog box and click **OK**, a new **User picker field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default the title is **User picker 1** unless you change it). 
+6. Once you complete the **New field - User picker** dialog box and click **OK**, a new **User picker field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default the title is **User picker 1** unless you change it). 
 
    In the example of our Training Request Form, the new User picker field (titled **Manager**) added to the form could look like this when a user views it on their mobile phone:
 
@@ -108,7 +112,10 @@ As we go through the options available for editing a User picker field, we will 
 
 #### How to edit a User picker field
 
-To edit a **User picker field**, select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
+To edit a **User picker field**:
+
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
 
 ![Select User picker field to edit](/images/user-picker-edit.jpg)
 
@@ -122,7 +129,7 @@ You can make any changes you wish in this dialog box and then click **OK** to co
 
 #### How to move a User picker field
 
-To move a **User picker field**, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to within your form.
+To move a **User picker field** simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to within your form.
 
 ![User picker drag handle](/images/user-picker-move.jpg)
 
@@ -130,7 +137,11 @@ To move a **User picker field**, simply select the field's **Drag handle** butto
 
 #### How to delete a User picker field
 
-To delete a **User picker field** from your form, simply select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm.
+To delete a **User picker field** from your form:
+
+1. Select the field (by either clicking on the field's title or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png)
+3. Click on **OK** to confirm
 
 
 
@@ -143,7 +154,21 @@ To view or edit the field properties associated with a **User picker field**, se
 
 
 
-In the example shown here, a **User picker field** titled '**Manager**' has been selected and it's properties are displayed, including: its **Field type** (User picker), **Title**, that its Title will be shown in the form (the '**Show title**' checkbox is ticked), that it will be a mandatory field for users to complete (the '**Required**' checkbox is ticked and a red star is shown next to the field title), that this field will be enabled for users to complete (the '**Enabled**' checkbox is ticked), and that this field will be visible to form users (the '**Visible**' checkbox is ticked). The width of the field on PC and mobile is also shown - and can be changed - in the **Layout** section. 
+For example, the **Field Properties** associated with a **User picker** field titled 'Manager' are shown here and include:
+
+- **Field type** - The type of field, in this case a **User picker** field.
+
+- **Title** - The Title of the field, in this case 'Manager'.
+
+- **Show title** - If this is selected, the User picker field will be shown in the form.
+
+- **Required** - If this is selected, the User picker field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).
+
+- **Enabled** - If this is selected, the user will be able to edit or interact with the field.
+
+- **Visible** - If this is selected, the User picker field will be visible in the form.
+
+- **Layout** - The width of the blue bar can be adjusted to change the width of the User picker field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 
