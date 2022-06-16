@@ -4,7 +4,7 @@ weight: 1
 typora-root-url: ..\..\..\static
 ---
 
-## Introduction
+## Dashboard security
 
 As an end user, when you login to Kianda, you are presented with dashboards and widgets for different processes. The dashboard is made of multiple widgets like tiles, charts, links and lists. Go to [Dashboard](/docs/platform/pages/) to find out more about each widget type.
 
@@ -12,7 +12,7 @@ The workspace level security can only be applied if you have the **Administrator
 
 These are the steps involved in applying security to the dashboards:
 
-1. Go to the existing **dashboard** page.
+1. Go to the existing dashboard page by clicking on **Dashboard** and the page name in the left-hand side menu.
 
 2. Click the **Edit** button ![Edit button](/images/edit.png) visible in the top menu bar.
 
@@ -24,22 +24,30 @@ These are the steps involved in applying security to the dashboards:
 
 5. Select the correct **Users** or **Groups** using the dropdown menu.
 
-6. Make any other changes you need to the dashboard, see 
+6. Make any other changes you need to the dashboard, see [Dashboard](/docs/platform/pages/) for more details. 
 
-7. Save the changes you make by clicking on the **Save** button
+7. Click on **OK** when you are finished editing the dialog box or **Close** to exit the dialog box at any time.
 
-Similarly, you can set the visibility to an individual widget on the dashboard like tile, chart, etc. For example, if you want the dashboard to be visible to everyone and a particular chart on the dashboard only visible to management. This can be achieved by setting the **visible to** field to the management group as shown below.
+8. Save the changes you make by clicking on the **Save** button ![Save button](/images/save-dash.png) at the top of the page.
 
-These are the steps involved in applying security to the widgets:
+## Widget security
 
-1. Go to the existing **dashboard** page.
+Similarly, you can set the visibility for an individual widget on the dashboard like a tile, chart, or list, for example, if you want the dashboard to be visible to everyone and a particular chart on the dashboard only visible to management. This can be achieved by setting the **visible to** field to the management group as shown below.
+
+To apply security to a dashboard widget:
+
+1. Go to the existing dashboard page by clicking on **Dashboard** and the page name in the left-hand side menu.
 
 2. Click the **Edit** button ![Edit button](/images/edit.png) visible in the top menu bar.
 
-3. Now in **Edit mode**, click on the gear ⚙ icon of the widget.
+3. Now in **Edit mode**, click on the **Cog/settings** button ![Widget settings](/images/widget-cog.jpg) of the widget.
 
-4. “Edit widget” dialog appears where you can find the **Visible to** user picker with an option to select users or groups**.** 
+4. The **Edit widget** dialog box appears where you can find the **Visible to** user picker with an option to select users or groups**.** The example below shows the dialog box for a **List** widget.
 
-5. Select the correct **users or groups** and click on **Ok**. 
+   ![Edit widget dialog box](/images/edit-widget-eg.jpg)
 
-6. Save the changes you make by clicking on the **Save** button.
+5. In the **Visible to** field select the correct **Users** or **Groups** from the dropdown menu.
+
+6. Click on **OK** when you are finished editing the dialog box or **Close** to exit the dialog box at any time.
+
+7. Save the changes you make by clicking on the **Save** button ![Save button](/images/save-dash.png) at the top of the page.
