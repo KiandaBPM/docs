@@ -1,14 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – B2B Portals</title><link>https://docs.kianda.com/docs/platform/b2b-portals/</link><description>Recent content in B2B Portals on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/b2b-portals/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Data Access</title><link>https://docs.kianda.com/docs/platform/b2b-portals/data-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/data-access/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Access to the B2B Portal is controlled through standard user and group creation, dashboard security and through how the Shared Processes and Dashboards are defined.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>B2B Portals are a means of connecting your clients to your Kianda subscription through their own subscription. This provides a means of allowing your clients to interface with processes you have already created, be it through updating existing processes, deleting processes or creating processes. Access to the B2B Portal can be controlled by your own administrator and each B2B portal can have multiple users for your clients.&lt;/p>
-&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To share data with B2B portal users, there are a number of steps involved starting with:&lt;/p>
 &lt;p>a) Creating users and groups&lt;/p>
 &lt;p>b) Create dashboards to share&lt;/p>
 &lt;p>c) Create shared processes and attach dashboards to share&lt;/p>
-&lt;h4 id="create-users-and-groups-for-the-b2b-portal">Create users and groups for the B2B portal&lt;/h4>
+&lt;h3 id="create-users-and-groups-for-the-b2b-portal">Create users and groups for the B2B portal&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>To begin create &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong> for the B2B portal. If you are an &lt;strong>administrator,&lt;/strong> navigate to the &lt;strong>Administration&lt;/strong> section in the left-hand side menu and click on &lt;strong>Users&lt;/strong>.&lt;/p>
@@ -21,11 +21,11 @@
 &lt;p>For full details on how to create, edit and delete users and groups got to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h4 id="create-dashboards-to-share">Create Dashboards to share&lt;/h4>
+&lt;h3 id="create-dashboards-to-share">Create dashboards to share&lt;/h3>
 &lt;ol>
 &lt;li>Within your own portal you may then wish to create &lt;strong>Dashboards&lt;/strong> to share. Dashboards provide a convenient way to gain insights into how your business processes are performing. They offer easy reporting, permissions management, quick build, condition-based filtering amongst other features. For details on how to get started with dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/platform/pages/">Dashboards&lt;/a>.&lt;/li>
 &lt;/ol>
-&lt;h4 id="create-shared-processes-and-attach-dashboards-to-share">Create shared processes and attach dashboards to share&lt;/h4>
+&lt;h3 id="create-shared-processes-and-attach-dashboards-to-share">Create shared processes and attach dashboards to share&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>When the dashboard that you want to share within your &lt;strong>B2B portal&lt;/strong> has been created, then you can control access by two means: a) Using the &lt;strong>Shared Processes&lt;/strong> feature within &lt;strong>Invite partner&lt;/strong> within &lt;strong>Administration&lt;/strong> and b) within the B2B portal itself.&lt;/p>
@@ -66,9 +66,56 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about User and group management, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.
 To read more about Dashboards, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p></description></item><item><title>Docs: Partner profile</title><link>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Shared dashboard</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-dashboard/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Within the &lt;strong>B2B Portal&lt;/strong> your client’s administrator will be able to create as many &lt;strong>Partner Profiles&lt;/strong> (&lt;strong>users&lt;/strong>) as they wish. By creating these &lt;strong>users&lt;/strong>, they will have the ability to access the &lt;strong>B2B Portal&lt;/strong> and interact with the &lt;strong>Dashboards&lt;/strong> and &lt;strong>Processes&lt;/strong> shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-dashboard/">Shared dashboards&lt;/a> for information on dashboards, and &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared process&lt;/a> for information on processes.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Your client will need to add &lt;strong>Partner Profiles&lt;/strong> in order for their employees to have access to the &lt;strong>B2B Portal&lt;/strong>. At this point your subscription will need to have been created and Administrators created. If this has not happened yet, please get in touch with your Account Manager or &lt;a href="mailto:support@kianda.com">Kianda Support&lt;/a> to begin the process.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>In order to begin a user with an &lt;strong>Administrator&lt;/strong> role or &lt;strong>Manage partner&lt;/strong> role will need to log into your subscription. Using one of these roles:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to &lt;strong>Invite Partner&lt;/strong> within the &lt;strong>Administration&lt;/strong> section.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Within this page click on the &lt;strong>Invite Partner&lt;/strong> Button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Invite partner&lt;/strong> dialog box populate the fields with the details of the person you want to share your &lt;strong>Processes&lt;/strong> and &lt;strong>Dashboards&lt;/strong> with.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/invite-partner-dialog.jpg" alt="Invite partner dialog box">&lt;/p>
+&lt;p>The fields in this box are:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Partner organisation&lt;/strong> - provide the name of the partner organisation&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Contact first name&lt;/strong> - provide the first name of a contact in the partner organisation&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Contact last name&lt;/strong> - provide the surname of a contact in the partner organisation&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Contact email&lt;/strong> - provide the email of a contact&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Shared process selection&lt;/strong> - in the dropdown list choose a shared process created using the steps listed in &lt;a href="#to-share-a-process">To share a process&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>More fields&lt;/strong> to see more fields these include: &lt;strong>Partner country&lt;/strong>, &lt;strong>Partner city&lt;/strong>, and &lt;strong>Partner logo&lt;/strong> which you can add by clicking on &lt;strong>Browse&lt;/strong> and browsing your PC or network.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Within your subscription you will be able to see if they have accepted their &lt;strong>invitation&lt;/strong> based on the &lt;strong>status&lt;/strong>. &lt;strong>Pending&lt;/strong> means they have not accepted the &lt;strong>invite&lt;/strong>, &lt;strong>active&lt;/strong> means they have accepted the &lt;strong>invite&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/pending-invites.png" alt="Invite partner status">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage. Clicking on &lt;strong>OK&lt;/strong> will save the partner and will result in an invitation being sent to their email address, similar to the one below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/invite-email-example.png" alt="Invite partner email example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>As a partner click on the &lt;strong>Accept&lt;/strong> button. Then you are linked to a greeting page asking you to sign up to Kianda or login to your subscription if it has already been created.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Shared dashboard</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-dashboard/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Shared process</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
