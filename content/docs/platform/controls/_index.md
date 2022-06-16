@@ -27,13 +27,20 @@ There are three categories of controls (fields):
 
 If you develop custom fields, they will be available to form designers under a fourth category of controls called **Custom**.
 
-To start adding fields to a form, select the form you want to work on so that the **Edit Form** button (Pen icon ![Pen button](/images/penicon.png)) appears. Then click on a Controls category and control type in the left-hand pane. For example, you could choose the **Input** category and select **Text box** to insert a text box into your form. 
+**To start adding fields to a form**:
+
+1. Select the form you want to work on so that the **Edit Form** button (Pen icon ![Pen button](/images/penicon.png)) appears
+2. Click on a Controls category and control type in the left-hand pane. For example, you could choose the **Input** category and select **Text box** to insert a text box into your form. 
 
 To move a field, click on the **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
 
-To remove a field from your form, select the field you want to remove, then click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click **OK** to confirm removal.
+To remove a field from your form:
 
-All fields will have edit options when you start creating the field, as well as field properties that you can edit to tailor the field (control) to make it work the way you want. Each field can also have rules applied to it to make your process dynamic.
+1. Select the field you want to remove
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+3. Click **OK** to confirm removal.
+
+All fields will have edit options when you start creating the field, as well as [Field properties](/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties#field-properties) that you can edit to tailor the field (control) to make it work the way you want. Each field can also have rules applied to it to make your process dynamic.
 
 
 

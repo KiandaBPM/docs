@@ -10,17 +10,19 @@ For example, in an Education Request Process - where employees can request train
 
 ## How to get started
 
-1. To add a **Field group** to a form, first open the relevant process - in our case, we will open the Education Request Process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible) - we will select the 'Training Approval' form. Go to [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
+1. To add a **Field group** to a form, first open the relevant process - in our case, we will open the Education Request Process. 
+
+2. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible) - we will select the 'Training Approval' form. Go to [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
 
    ![Select form to insert Field group control](/images/field-group-example1.jpg)
 
    Our **Training Approval** form contains two Panels - the first Panel currently only contains the Richtext field titled 'Training Details', the second Panel contains fields related to the approval decision. Panels are sections within your form - to learn more, go to [Panel control](/docs/platform/controls/layout/panel/). We will use the **Field group control** to add fields from the 'Training Request' form to the first panel.
 
-2. Insert the **Field group** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Layout** to view the range of Layout controls and click on **Field group**. 
+3. Insert the **Field group** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Layout** to view the range of Layout controls and click on **Field group**. 
 
    ![Insert field group](/images/field-group-insert.jpg)
 
-3. A **New field - Field group** dialog box will open with a range of options you can choose from for your new Field group: 
+4. A **New field - Field group** dialog box will open with a range of options you can choose from for your new Field group: 
 
    ![New field group dialog box](/images/field-group-dialog.jpg)
 
@@ -37,9 +39,9 @@ For example, in an Education Request Process - where employees can request train
      In our example, we will select three fields in the 'Training Request' form that we want to be shown on the 'Training Approval' form - Employee Name, Type of Training and Reason:
      
      ![Select fields to mirror in Field group](/images/field-group-select-fields-mirror.jpg)
-   
+
    - **Grouped fields** - The field(s) you select will automatically be grouped together in the **Grouped fields** section at the bottom of the dialog box - click on Grouped fields so that it expands to show the list of fields you have chosen:
-   
+
       ![Field group grouped fields](/images/field-group-grouped-fields.jpg)
       		
       	The fields you have chosen being 'grouped' together will mean that you will be able to edit them and move them around your form as a group (rather than as individual fields). 
@@ -51,19 +53,23 @@ For example, in an Education Request Process - where employees can request train
       	![Move field within Field group](/images/field-group-grouped-move.jpg)
       		
       	Note that selected fields grouped under the current field group are not copied only referenced.
-   
 
-4. Once you have completed the **New field - Field group** dialog box, click **OK** and the new **Field group** will be added to your form. By default, the **Title** of the new Field group will not be shown (unless you choose to display it, by selecting the **Show title** checkbox in the Field properties menu to the right). 
+5. Once you have completed the **New field - Field group** dialog box, click **OK** and the new **Field group** will be added to your form. 
 
-	In our example, our new Field group contains the three fields we chose:
+  By default, the **Title** of the new Field group will not be shown (unless you choose to display it, by selecting the **Show title** checkbox in the Field properties menu to the right). 
 
-	![Move field group](/images/field-group-move.jpg)
+  In our example, our new Field group contains the three fields we chose:
+
+  ![Move field group](/images/field-group-move.jpg)
 
 
 
 ### How to edit, move and delete Field groups
 
-To edit a **Field group**, select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
+To edit a **Field group**:
+
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) 
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
 
 ![Select field group to edit](/images/field-group-select-to-edit.jpg)
 
@@ -73,9 +79,16 @@ The **Edit field - Field group** dialog box will open, enabling you to choose fr
 
 
 
-To move a **Field group**, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to within your form. Noted that the grouped fields are available to move and edit as a group within the form.
+To move a **Field group**:
 
-To delete a **Field group** from your form, simply select the group by clicking on the group's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png), click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm. Click on **Cancel** if you wish to cancel the deletion.
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+2. Drag and drop the field wherever you want to move it to within your form. Note that the grouped fields are available to move and edit as a group within the form.
+
+To delete a **Field group** from your form:
+
+1. Select the group by clicking on the group's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+3. Click on **OK** to confirm (or click on **Cancel** if you wish to cancel the deletion)
 
 
 
@@ -85,9 +98,21 @@ To view or edit the field properties associated with a **Field group**, select t
 
 ![Field group Field properties](/images/field-group-field-properties.jpg)
 
-The **Field type**, Field group, is shown along with the **Title** of the field, in the example above Training Details.
+For example, the **Field Properties** associated with a **Field group** field titled 'Field group 1' are shown here and include:
 
-In the example shown here, a **Field group** titled '**Field group 1**' has been selected and the **Field properties** associated with it are shown in the Field properties menu to the right. They include: the field type (Field group), title, that the title will *not* be shown in the form (the 'Show title' checkbox has not been selected), that the field will not be a mandatory field for the user to complete (the 'Required' checkbox has not been selected), that the field is enabled so the user can edit it (the 'Enabled' checkbox has been selected), that the field will be visible in the form (the 'Visible' checkbox has been selected) and how wide the field layout will be on a PC and mobile phone (the blue bars in 'Layout').
+- **Field type** - The type of field, in this case a **Field group**.
+
+- **Title** - The Title of the field, in this case 'Field group 1'.
+
+- **Show title** - If this is selected, the Field group title will be shown in the form. In this case, the 'Show title' checkbox has *not* been selected, so it won't be shown in the form.
+
+- **Required** - If this is selected, the field will be mandatory for form users to complete.
+
+- **Enabled** - If this is selected, the user will be able to edit or interact with the field.
+
+- **Visible** - If this is selected, the Field group will be visible in the form.
+
+- **Layout** - The width of the blue bar can be adjusted to change the width of the Field group as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 

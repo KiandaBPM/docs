@@ -92,13 +92,11 @@ To view or edit an Action control's **Field properties**:
 
 2. The Field Properties associated with the Action field will be displayed (and can be changed) in the **Field properties** menu on the right-hand side.
 
-   For example, the **Field properties** associated with a Link field titled 'Training Documentation' are shown here:
-
    ![Field properties associated with a Link field](/images/action-link-field-properties.jpg)
 
-   The **Field Properties** shown here include
+   For example, the **Field properties** associated with a Link field titled 'Training Documentation' are shown here:
 
-   - **Field type** - The type of field, in this case a **Link field**.
+   - **Field type** - The type of field, in this case a **Link** field.
    - **Title** - The Title of the field, in this case 'Training Documentation'.
    - **Show title** - If this is selected, the field title will be shown in the form.
    - **Required** - If this is selected, the field will be mandatory for the form user to complete (and a red star will be shown next to the field title to denote this).

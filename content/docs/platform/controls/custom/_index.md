@@ -81,7 +81,10 @@ To learn more about how to create **Custom field widgets**, go to [Creating a cu
 
 ### How to edit, move and delete Custom fields
 
-To edit a **Custom field**, select the field (by either clicking on the field title or **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
+To edit a **Custom field**:
+
+1. Select the field (by either clicking on the field title or **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
 
 ![Select Custom field to edit](/images/custom-field-edit2.jpg)
 
@@ -89,7 +92,10 @@ The **Edit field** dialog box will open, enabling you to choose from a range of 
 
 
 
-To move a **Custom field**, simply select the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to within your form. 
+To move a **Custom field**:
+
+1. Select the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+2. Drag and drop the field wherever you want to move it to within your form. 
 
 In our example, we could drag and drop the new Custom field titled 'Field widget 1' so that it comes before the 'Type of Training' List field:
 
@@ -97,7 +103,11 @@ In our example, we could drag and drop the new Custom field titled 'Field widget
 
 
 
-To delete a **Custom field** from your form, simply select the field (by either clicking on the field's name or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)), click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm.
+To delete a **Custom field** from your form:
+
+1. Select the field (by either clicking on the field's name or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+3. Click on **OK** to confirm.
 
 
 

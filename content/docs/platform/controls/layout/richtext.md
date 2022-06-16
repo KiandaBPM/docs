@@ -67,7 +67,10 @@ For example, we may want to insert some colourful headings into a Training Appro
 
 ### How to edit, move and delete Richtext fields
 
-To edit a **Richtext field**, select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
+To edit a **Richtext field**:
+
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
 
 ![Select Richtext field to edit](/images/richtext-select-to-edit.jpg)
 
@@ -77,7 +80,10 @@ The **Edit field - Richtext** dialog box will open, enabling you to choose from 
 
 
 
-To move a **Richtext field**, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to within your form. 
+To move a **Richtext field**:
+
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+2. Drag and drop the field wherever you want to move it to within your form. 
 
 In our example, we can move the new Richtext heading to the top of the first panel in the Training Approval form:
 

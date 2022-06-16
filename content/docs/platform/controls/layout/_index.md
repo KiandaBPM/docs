@@ -12,13 +12,15 @@ Layout fields are one category of [controls](/docs/platform/controls/) (fields).
 
 1. To insert a **Layout field** into a form, first open an existing process or create a new process by going to **Administration**>**Designer** in the left side menu. See [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
 
-	![Opening Designer from left side menu by choosing Administration>Designer](/images/administration-designer-inputcont.jpg)
+  ![Opening Designer from left side menu by choosing Administration>Designer](/images/administration-designer-inputcont.jpg)
 
 2. Then select the form within that process that you want to add the Layout field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible).
 
-3. Next, click on **Controls** in the left-hand pane to expand the Controls menu and select **Layout** to view the Layout fields. Then click on the Layout field you want to insert.
+3. Next, click on **Controls** in the left-hand pane to expand the Controls menu and select **Layout** to view the Layout fields. 
 
-	![Layout fields menu](/images/layout-insert.jpg)
+4. Click on the Layout field you want to insert.
+
+  ![Layout fields menu](/images/layout-insert.jpg)
 
 
 
@@ -46,19 +48,32 @@ For example, to add a new panel to your form, click on **Panel** - a pop-up mess
 
 #### How to edit Layout fields ####
 
-To edit whatever type of **Layout field** you have added to your form, select the field (by either clicking on the field name or on the **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit Field** button (Pen icon) ![Pen button](/images/penicon.png). In our example, we have selected the **Panel field** by clicking the Drag handle button and can then click on the Edit field button to edit it.
+To edit whatever type of **Layout field** you have added to your form:
 
-This will open up the **Edit Field** dialog box where you can make various changes (such as changing the Title of the field) and where a variety of options will be available to you, depending on the type of Layout field you have selected.
+1. Select the field (by either clicking on the field name or on the **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+
+2. Click on the **Edit Field** button (Pen icon) ![Pen button](/images/penicon.png). 
+
+	In our example, we have selected the **Panel field** by clicking the Drag handle button and can then click on the Edit field button to edit it.
+
+3. This will open up the **Edit Field** dialog box where you can make various changes (such as changing the Title of the field) and where a variety of options will be available to you, depending on the type of Layout field you have selected.
 
 ![Select panel to edit](/images/panel-select-to-edit.jpg)
 
 #### How to move Layout fields ####
 
-To move a Layout field, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it within your form.
+To move a Layout field:
+
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
+2. Drag and drop the field wherever you want to move it within your form
 
 #### How to delete Layout fields ####
 
-To delete an input field from your form, select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)), click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm.
+To delete an input field from your form:
+
+1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png)
+3. Click on **OK** to confirm
 
 
 
@@ -66,9 +81,23 @@ To delete an input field from your form, select the field (by either clicking on
 
 To view or edit the field properties associated with a **Layout field**, select the field (by clicking on the field title or drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - the **Field properties** menu will appear in the right-hand pane.
 
-In the example shown here, a **Panel** titled '**Existing Qualifications** has been selected and the **Field properties** associated with the Panel are shown in the panel to the right. They include: the field type (Panel), title, that the title will be shown in the form (the 'Show title' checkbox has been selected), that the field will be visible in the form (the 'Visible' checkbox has been selected) and how wide the field layout will be on a PC and mobile phone (the blue bars in 'Layout').
-
 ![Panel field properties](/images/panel-field-properties.jpg)
+
+For example, the **Field Properties** associated with a **Panel field** titled 'Existing Qualifications' are shown here and include:
+
+- **Field type** - The type of field, in this case a **Panel**.
+
+- **Title** - The Title of the field, in this case 'Existing Qualifications'.
+
+- **Show title** - If this is selected, the field title will be shown in the form.
+
+- **Required** - If this is selected, the field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).
+
+- **Enabled** - If this is selected, the user will be able to edit or interact with the field.
+
+- **Visible** - If this is selected, the field will be visible in the form.
+
+- **Layout** - The width of the field is denoted by the width of the blue bar. Click on the bar to change the width of the field as it will appear on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 
