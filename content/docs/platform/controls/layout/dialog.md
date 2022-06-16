@@ -15,9 +15,13 @@ To view a **video** example of how to create a Modal dialog field, see [**How to
 
 ## How to get started
 
-1. To add a **Modal dialog field** to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). Go to [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
+1. To add a **Modal dialog field** to a form, first open the relevant process. 
 
-2. Click on **Controls** in the left-hand pane to expand the Controls menu, then select **Layout** to view the range of Layout controls and click on **Dialog**. A pop-up message will appear saying '**Field added**' and a Dialog field will be added to the bottom of your form.
+2. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). Go to [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
+
+3. Click on **Controls** in the left-hand pane to expand the Controls menu.
+
+4. Select **Layout** to view the range of Layout controls and click on **Dialog**. A pop-up message will appear saying '**Field added**' and a Dialog field will be added to the bottom of your form.
 
    ![Insert Dialog field](/images/dialog-insert.jpg)
 
@@ -29,12 +33,12 @@ To view a **video** example of how to create a Modal dialog field, see [**How to
 
 #### How to set the heading for the Dialog
 
-The title of the **Dialog field** will display as the heading at the top of the pop-up Dialog message.
+The **title of the Dialog field** will display as the heading at the top of the pop-up Dialog message. By default, the title of the new Dialog field is '**Dialog 1**'. 
 
-By default, the title of the new Dialog field is '**Dialog 1**'. To change this to the heading you want:
+To change the title of a Dialog field:
 
 1. Select the new Dialog field (by either clicking on the drag handle ![Drag handle button](/images/draghandlewhite-frame.png) or clicking in the area of the Dialog field) so that the **Edit field** button ![Edit form button](/images/penicon.png) is visible.
-2. You can then view and edit the **Title** in the **Field properties** panel to the right. 
+2. Edit the **Title** in the **Field properties** panel to the right. 
 
 For example, we could decide to give our pop-up Dialog message a heading of  'Reminder'. To learn more about editing the Field properties associated with Modal dialog fields, go to [How to edit Modal dialog field properties](/docs/platform/controls/layout/dialog#how-to-edit-modal-dialog-field-properties).
 
@@ -56,7 +60,7 @@ The **Richtext field** is a very flexible option to use for the body of the pop-
 
    ![Richtext dialog box](/images/richtext-dialog.jpg)
 
-​		The options within the **New field - Richtext** dialog box include:
+	The options within the **New field - Richtext** dialog box include:
 
 - **Title** - You can change the title of the Richtext field from the default '**Richtext 1**'. **Note**: It is the **Dialog field** title that will show as the heading of the pop-up Dialog, not the Richtext title.
 
@@ -92,11 +96,13 @@ As we go through the options available for editing, moving or deleting a Modal d
 
 To edit a **Modal dialog field**:
 
-1. Select the Dialog field (by either clicking on the drag handle ![Drag handle button](/images/draghandlewhite-frame.png) or clicking in the area of the Dialog field) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
+1. Select the Dialog field (by either clicking on the drag handle ![Drag handle button](/images/draghandlewhite-frame.png) or clicking in the area of the Dialog field)
+
+2. Then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
 
 	![Select Dialog to edit](/images/dialog-select-to-edit.jpg)
 
-2. The **Edit field - Dialog** dialog box will open, enabling you to choose from a range of options (we already changed the Dialog field title to 'Reminder' so this name will be shown in the dialog box name):
+3. The **Edit field - Dialog** dialog box will open, enabling you to choose from a range of options (we already changed the Dialog field title to 'Reminder' so this name will be shown in the dialog box name):
 
 	![Edit Modal Dialog field dialog box](/images/dialog-dialog-box.jpg)
 
@@ -116,23 +122,30 @@ To edit a **Modal dialog field**:
 
 - **Dialog size** - You can choose from the **Default** size or **Large** size for your Dialog message.
 
-3. Once you have finished editing the **Dialog field** in the **Edit field - Dialog** dialog box, click on the **OK** button ![OK button](/images/ok.png) to save your changes or click on **Close** to exit the dialog box without saving.
+4. Once you have finished editing the **Dialog field** in the **Edit field - Dialog** dialog box, click on the **OK** button ![OK button](/images/ok.png) to save your changes or click on **Close** to exit the dialog box without saving.
 
-4. To see how your form or Dialog field will look on a mobile, view it in **Mobile preview** by using the **Preview** option which can be opened by clicking the play button icon ![Preview](/images/preview.png). You also have the options to see how it will look on a PC or tablet.
+5. To see how your form or Dialog field will look on a mobile, view it in **Mobile preview** by using the **Preview** option which can be opened by clicking the play button icon ![Preview](/images/preview.png). You also have the options to see how it will look on a PC or tablet.
 
 
 
 #### How to move a Modal dialog field ####
 
-To move a Modal dialog field, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop it wherever you want to move it within your form.
+To move a Modal dialog field:
 
-![Move a Dialog field](/images/dialog-example-move.jpg)
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
+2. Drag and drop it wherever you want to move it within your form
+
+	![Move a Dialog field](/images/dialog-example-move.jpg)
 
 
 
 #### How to delete a Modal dialog field ####
 
-To delete a Modal dialog field from your form, select it (by either clicking on the Panel field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)), click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm. Click on **Cancel** if you wish to cancel the deletion.
+To delete a Modal dialog field from your form:
+
+1. Select it (by either clicking on the Panel field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+3. Click on **OK** to confirm the deletion (or click **Cancel** if you wish to cancel the deletion).
 
 
 
@@ -140,9 +153,12 @@ To delete a Modal dialog field from your form, select it (by either clicking on 
 
 To view or edit the field properties associated with a **Modal dialog field**, select the Dialog field (by clicking on the drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)or clicking in the area of the Dialog field) - the **Field properties** menu will appear in the right-hand pane.
 
-In the example shown here, a **Dialog field** titled '**Reminder**' has been selected and the **Field properties** associated with it are shown in the Field properties menu to the right. They are: the Dialog Title ('Reminder') and the field Layout (how wide the field layout will be on a PC and mobile phone, denoted by the width of the blue bar).
-
 ![Panel field properties](/images/dialog-field-properties.jpg)
+
+In the example shown here, a **Dialog field** titled '**Reminder**' has been selected and the **Field properties** associated with it are shown in the Field properties menu to the right:
+
+- **Title** - The title of the Modal Dialog field. In this case, 'Reminder'.
+- **Layout** - How wide the Modal Dialog field will be on a PC and mobile phone, denoted by the width of the blue bar. You can change the width by clicking on the blue bar.
 
 
 
