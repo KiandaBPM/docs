@@ -1,8 +1,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Platform security</title><link>https://docs.kianda.com/docs/security/</link><description>Recent content in Platform security on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Workspace security</title><link>https://docs.kianda.com/docs/security/workspace-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/workspace-security/</guid><description>
+&lt;p>There are a number of different ways of setting security within your Kianda workspace. Security refers to both access to processes as a Designer, and access to process instances.&lt;/p>
+&lt;h2 id="security-privileges-by-role">Security privileges by role&lt;/h2>
+&lt;p>The Kianda platform allows for &lt;strong>different security privileges to be set for different types of users&lt;/strong>, making administration of users and their access rights easy to manage. The following are &lt;strong>the different roles&lt;/strong> users can be assigned on Kianda – each has certain &lt;strong>default permissions&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>User&lt;/strong> – can only access what is assigned to them. For example, forms and dashboards.&lt;/li>
+&lt;li>&lt;strong>Administrator&lt;/strong> – can access (view and edit) all published processes. Can only edit draft processes that they have created themselves or for which they have been made Process Administrators.&lt;/li>
+&lt;li>&lt;strong>Manage partners/customers&lt;/strong> – can only access the essentials to manage customer portals; that is, they can use the Invite partners function under the Administration menu.&lt;/li>
+&lt;li>&lt;strong>Design business process&lt;/strong> – can only design business forms and workflows using Kianda Designer&lt;/li>
+&lt;li>&lt;strong>Manage data sources&lt;/strong> – can only manage data sources and connections, namely the Data sources function&lt;/li>
+&lt;li>&lt;strong>Developer&lt;/strong> – can design new widgets within the platform using the Developer function&lt;/li>
+&lt;/ul>
+&lt;p>In addition to default permissions, you can also create user groups and assign ownership and/or access to processes or dashboards as needed. Security settings can be applied to dashboards or particular widgets within a dashboard so that they are only visible to certain users or groups of users; and data source connections can be configured in the same way to ensure the highest access control levels. We will now look at different ways of assigning access and controlling security.&lt;/p>
+&lt;h2 id="process-administrators">Process administrators&lt;/h2>
+&lt;p>When an &lt;strong>Administrator&lt;/strong> creates a new process in Kianda, they can set who they want the &lt;strong>Process Administrators&lt;/strong> of that process to be (anyone chosen to be a Process Administrator needs to be someone who has an Administrator role, so that they have access to the Designer function to be able to edit the process). The &lt;strong>Process Administrators&lt;/strong> can be individual users, groups or a combination of the two.&lt;/p>
+&lt;p>If you are an Administrator, you can edit a process you have created and set the Administrator role for that process by clicking on the &lt;strong>Edit process&lt;/strong> button (Pen icon) in the main process view. Choose the user(s) and/or groups you want to be the Process Administrator(s) in the Edit process dialog box.&lt;/p>
+&lt;p>&lt;em>Setting process administrators in the Edit process dialog box&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/04/process-administrator.gif" alt="img">&lt;/p>
+&lt;p>In the example above, Vikky was already a Workspace Administrator who had access to the Designer function in Kianda – now that she has been assigned to be the Process Administrator for the Maintenance Process, this means that she &lt;strong>can edit the draft process design&lt;/strong>.&lt;/p>
+&lt;h2 id="form-ownership">Form ownership&lt;/h2>
+&lt;p>When you create a process in Kianda, you can then set a &lt;strong>default owner&lt;/strong> for each form you create within that process. Only Form Owners can &lt;strong>edit individual&lt;/strong> &lt;strong>process records&lt;/strong>. For example, if a ‘Maintenance Request Process’ is initiated from a dashboard, then the default Form Owner, regardless of their role (that is, regardless of whether their ‘role’ on Kianda is ‘administrator’ or ‘user’ etc), will be able to edit information submitted in new process records from that form.&lt;/p>
+&lt;p>If you are a Workspace Administrator and you’ve created a new process that contains a form, you can set the default owner for that form by opening the process in Kianda Designer, selecting the form and clicking the Edit form button (Pen icon). This opens the &lt;strong>Edit form&lt;/strong> dialog box within which you can choose from individual users, groups or a combination of both under &lt;strong>Default owner(s)&lt;/strong>.&lt;/p>
+&lt;h3 id="quick-actions-within-forms">Quick actions within forms&lt;/h3>
+&lt;p>Within the &lt;strong>Edit form&lt;/strong> dialog box, you can select the &lt;strong>Enable quick actions&lt;/strong> checkbox so that options to &lt;strong>Enable re-assign&lt;/strong>, &lt;strong>Enable edit&lt;/strong> and &lt;strong>Enable custom action&lt;/strong> appear. From here, a Process Administrator or form designer can give individuals, groups or a combination of both, the ability to have &lt;strong>process instances&lt;/strong> assigned to them, to enable them to &lt;strong>edit&lt;/strong> &lt;strong>in process records&lt;/strong> and &lt;strong>custom actions&lt;/strong> of their choice.&lt;/p>
+&lt;p>&lt;em>Edit form dialog box&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/04/edit-form-dialog-box.gif" alt="img">&lt;/p>
+&lt;p>Select the &lt;strong>Enable quick actions&lt;/strong> checkbox, then select one or more of the checkboxes for the three options that appear below it (as shown in the image). For each of the options you select, click on the ellipsis button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis-1.png" alt="ellipsis button used to select users and groups"> and select from Users, Groups and Partners, and/or check the box to &lt;strong>Allow form owners&lt;/strong> the particular action – for example, re-assignment means the chosen users can click on the &lt;strong>quick action&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/quick-action-1.png" alt="Quick action button on forms"> in the form and &lt;strong>reassign&lt;/strong> the form to someone else.&lt;/p>
+&lt;h2 id="process-security-settings">Process security settings&lt;/h2>
+&lt;p>When you are creating or editing a process in Kianda Designer, you can set security settings for that process. This setting will &lt;strong>apply to every record (instance)&lt;/strong> created from that process. To do this, click on the process in Designer and then, in the right-hand pane, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/settings.png" alt="Process settings button"> and select the checkbox beside &lt;strong>Enable process security.&lt;/strong>&lt;/p>
+&lt;p>Choose an individual user, groups or partner or combination, to be ‘security users’ and then choose from one of three security modes, as shown in here.&lt;/p>
+&lt;p>&lt;em>Process security settings&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/04/process-security-settings.gif" alt="img">&lt;/p>
+&lt;p>The three available security levels are listed from lowest to highest. For example, if you choose &lt;strong>Security users only can create, view and update&lt;/strong> means that only the users listed as &lt;strong>Process security users&lt;/strong> – in the example shown here, Mike Balcoome and the Management Team – will be able to access and view process records. No other users will have access to the process records generated by this process.&lt;/p>
+&lt;h2 id="process-security-rule">Process security rule&lt;/h2>
+&lt;p>Another way to set security is to use one of the &lt;strong>Workflow&lt;/strong> rules called &lt;strong>Process security&lt;/strong> to &lt;strong>dynamically change&lt;/strong> the security settings for a process record (instance). Using this rule allows you to set the same security modes shown in the process settings above, but this can happen based on a particular condition or trigger – for example, clicking the Submit button.&lt;/p>
+&lt;p>To add this rule, open your process in Kianda Designer and select the relevant form. Then, in the left-hand pane, go to &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Process security&lt;/strong>. In the Edit rule – Process security dialog box, create a condition if desired, and then choose from the type of users who will become security users. Choose from the options: &lt;strong>Override&lt;/strong> to override existing security, or &lt;strong>Append&lt;/strong> if you want to add a new level of access. Click the &lt;strong>Enable security&lt;/strong> checkbox to choose a Process security mode.&lt;/p>
+&lt;p>&lt;em>Edit rule – Process security dialog box&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/04/security-rule.jpg" alt="img">&lt;/p>
+&lt;h2 id="panel-and-button-security">Panel and button security&lt;/h2>
+&lt;p>In addition to process and form level security, you can set panel and button security by clicking on a panel or button within a form. Click on the panel or button of choice, click the &lt;strong>Edit&lt;/strong> button (Pen icon) and choose &lt;strong>Yes&lt;/strong> beside &lt;strong>Enable security&lt;/strong>. Click on the &lt;strong>Add security&lt;/strong> button to add users or groups to enable access to the button or panel.&lt;/p>
+&lt;p>&lt;em>Panel security within the edit field dialog box&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/04/panel-security.jpg" alt="img">&lt;/p>
 &lt;h2 id="dashboard-security">Dashboard security&lt;/h2>
-&lt;p>As an end user, when you login to Kianda, you are presented with dashboards and widgets for different processes. The dashboard is made of multiple widgets like tiles, charts, links and lists. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard&lt;/a> to find out more about each widget type.&lt;/p>
-&lt;p>The workspace level security can only be applied if you have the &lt;strong>Administrator&lt;/strong> role to allow visibility of &lt;strong>dashboards and widgets.&lt;/strong>&lt;/p>
-&lt;p>These are the steps involved in applying security to the dashboards:&lt;/p>
+&lt;p>As an end user, when you login to Kianda, you are presented with dashboards and widgets for different processes. The dashboard is made of multiple widgets like tiles, charts, links and lists. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard&lt;/a> to find out more about each widget type. You can set security at both a) dashboard level and b) widget level, see &lt;a href="#widget-security">Widget security&lt;/a> for more details. This section will deal with dashboard level security.&lt;/p>
+&lt;p>Dashboard level security can only be applied if you have the &lt;strong>Administrator&lt;/strong> role to allow visibility of &lt;strong>dashboards and widgets.&lt;/strong>&lt;/p>
+&lt;p>To apply security to dashboards:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Go to the existing dashboard page by clicking on &lt;strong>Dashboard&lt;/strong> and the page name in the left-hand side menu.&lt;/p>
@@ -14,11 +55,11 @@
 &lt;p>Now in &lt;strong>Edit mode&lt;/strong>, the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings2.png" alt="Settings button"> is visible. Click on the &lt;strong>Settings&lt;/strong> button.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Edit dashboard page&lt;/strong> dialog box appears where you can find the &lt;strong>Visible to&lt;/strong> user picker with an option to select users or groups**.**&lt;/p>
+&lt;p>The &lt;strong>Edit dashboard page&lt;/strong> dialog box appears where you can find the &lt;strong>Visible to&lt;/strong> user picker with an option to select &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/edit-dashboard-users.jpg" alt="Edit dashboard visible to parameter">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Select the correct &lt;strong>Users&lt;/strong> or &lt;strong>Groups&lt;/strong> using the dropdown menu.&lt;/p>
+&lt;p>Select the correct &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> using the dropdown menu.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Make any other changes you need to the dashboard, see &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard&lt;/a> for more details.&lt;/p>
@@ -30,7 +71,7 @@
 &lt;p>Save the changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-dash.png" alt="Save button"> at the top of the page.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="widget-security">Widget security&lt;/h2>
+&lt;h3 id="widget-security">Widget security&lt;/h3>
 &lt;p>Similarly, you can set the visibility for an individual widget on the dashboard like a tile, chart, or list, for example, if you want the dashboard to be visible to everyone and a particular chart on the dashboard only visible to management. This can be achieved by setting the &lt;strong>visible to&lt;/strong> field to the management group as shown below.&lt;/p>
 &lt;p>To apply security to a dashboard widget:&lt;/p>
 &lt;ol>
@@ -44,11 +85,11 @@
 &lt;p>Now in &lt;strong>Edit mode&lt;/strong>, click on the &lt;strong>Cog/settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/widget-cog.jpg" alt="Widget settings"> of the widget.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box appears where you can find the &lt;strong>Visible to&lt;/strong> user picker with an option to select users or groups**.** The example below shows the dialog box for a &lt;strong>List&lt;/strong> widget.&lt;/p>
+&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box appears where you can find the &lt;strong>Visible to&lt;/strong> user picker with an option to select &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong>. The example below shows the dialog box for a &lt;strong>List&lt;/strong> widget.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/edit-widget-eg.jpg" alt="Edit widget dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the &lt;strong>Visible to&lt;/strong> field select the correct &lt;strong>Users&lt;/strong> or &lt;strong>Groups&lt;/strong> from the dropdown menu.&lt;/p>
+&lt;p>In the &lt;strong>Visible to&lt;/strong> field select the correct &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> from the dropdown menu.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> when you are finished editing the dialog box or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/p>
