@@ -8,11 +8,11 @@ typora-root-url: ..\..\..\..\static
 
 Access to the B2B Portal is controlled through standard user and group creation, dashboard security and through how the Shared Processes and Dashboards are defined.
 
-### When to use
+## When to use
 
 B2B Portals are a means of connecting your clients to your Kianda subscription through their own subscription. This provides a means of allowing your clients to interface with processes you have already created, be it through updating existing processes, deleting processes or creating processes. Access to the B2B Portal can be controlled by your own administrator and each B2B portal can have multiple users for your clients.
 
-### How to get started
+## How to get started
 
 To share data with B2B portal users, there are a number of steps involved starting with:
 
@@ -22,7 +22,7 @@ b) Create dashboards to share
 
 c) Create shared processes and attach dashboards to share
 
-#### Create users and groups for the B2B portal
+### Create users and groups for the B2B portal
 
 1. To begin create **Users** and **Groups** for the B2B portal. If you are an **administrator,** navigate to the **Administration** section in the left-hand side menu and click on **Users**.
 
@@ -32,11 +32,11 @@ c) Create shared processes and attach dashboards to share
 
 3. For full details on how to create, edit and delete users and groups got to [Users](/docs/platform/administration/users/).
 
-#### Create Dashboards to share
+### Create dashboards to share
 
 1. Within your own portal you may then wish to create **Dashboards** to share. Dashboards provide a convenient way to gain insights into how your business processes are performing. They offer easy reporting, permissions management, quick build, condition-based filtering amongst other features. For details on how to get started with dashboards go to [Dashboards](/docs/platform/platform/pages/). 
 
-#### Create shared processes and attach dashboards to share
+### Create shared processes and attach dashboards to share
 
 1. When the dashboard that you want to share within your **B2B portal** has been created, then you can control access by two means: a) Using the **Shared Processes** feature within **Invite partner** within **Administration** and b) within the B2B portal itself. 
 
