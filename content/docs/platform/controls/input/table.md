@@ -26,9 +26,15 @@ We will now go through
 
 ## How to get started
 
-1. To add a **Table field** to a form, first open the relevant process. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). 
+1. To add a **Table field** to a form, first open the relevant process. 
 
-2. Insert the **Table field** by clicking on **Controls** in the left-hand pane to expand the Controls menu, then select **Input** to view the range of Input controls and click on **Table**. A Table field will be added to your form with the default title of ''**Table 1**'' and a pop-up message will say 'Field added'.
+2. Then select the form within that process that you want to add the field to (so that the **Edit Form** button ![Edit form button](/images/penicon.png) is visible). 
+
+3. Click on **Controls** in the left-hand pane to expand the Controls menu.
+
+4. Select **Input** to view the range of Input controls and click on **Table**. 
+
+   A Table field will be added to your form with the default title of ''**Table 1**'' and a pop-up message will say 'Field added'.
 
    ![Table field added](/images/table-added.jpg)
 
@@ -53,7 +59,10 @@ We want our table to have three columns: the first column will be a text box fie
 
 ##### How to change the title of a Table column
 
-To change the title of the default first column texbox field from **Text 1**, simply select that field by either clicking on the field title or by clicking into the blank text box so that the **Edit field** button  ![Edit field button](/images/penicon.png) (Pen icon) displays and then click the Edit field button.
+To change the default title of the first column texbox field from **Text 1**:
+
+1. Select that field by either clicking on the field title or by clicking into the blank text box so that the **Edit field** button ![Edit field button](/images/penicon.png) (Pen icon) displays.
+2. Click the Edit field button.
 
 ![Table select field to edit](/images/table-edit-field.jpg)
 
@@ -61,25 +70,39 @@ The **Edit field - Text** dialog box will open and you can change the title of t
 
 ##### How to delete a column from a Table
 
-To delete a column from a Table field, select the column field you want to delete (either by clicking on the title or clicking into the blank field below the title) so that the Edit field and **Bin/Trash** button ![Bin icon](/images/binicon.png)are shown, click the **Bin/Trash** button:
+To delete a column from a Table field:
+
+1. Select the column field you want to delete (either by clicking on the title or clicking into the blank field below the title) so that the Edit field and **Bin/Trash** button ![Bin icon](/images/binicon.png)is shown.
+2. Click on the **Bin/Trash** button.
 
 ![Delete Table column](/images/table-delete-column.jpg)
 
 ##### How to change the field type of an existing Table column
 
-In our example, we want the second column in our table to be a drop-down list. We can either delete the default second text box column and then insert a new list column or we can **change the field type of the existing column** from text box to list. To do this, select the column field you want to change (by either clicking on the column Title or clicking into the blank box below it) so that the Edit field button ![Edit field button](/images/penicon.png) (Pen icon) is shown and then click on the **Change field** button in the right-hand pane:
+In our example, we want the second column in our table to be a drop-down list. We can either delete the default second text box column and then insert a new list column or we can **change the field type of the existing column** from text box to list. 
 
-![Change Table column type](/images/table-change-column-type.jpg)
+To change the field type of an existing column:
 
-A **Change** dialog box will open up, allowing you to change the existing column field type to another type of input field - there are many options to choose from (only some of which are shown here):
+1. Select the column field you want to change (by either clicking on the column Title or clicking into the blank box below it) so that the Edit field button ![Edit field button](/images/penicon.png) (Pen icon) is shown.
+2. Click on the **Change field** button in the right-hand pane:
 
-![Table change column type dialog box](/images/table-change-column-type-dialog.jpg)
+	![Change Table column type](/images/table-change-column-type.jpg)
+
+	A **Change** dialog box will open up, allowing you to change the existing column field type to another type of input field - there are many options to choose from (only some of which are shown here):
+
+	![Table change column type dialog box](/images/table-change-column-type-dialog.jpg)
 
 In our example, if we want to change the 'Text 2' text box column to be a List field, we would select the **List** radio box and then click **OK** to confirm. An **Edit field** dialog box for the type of input field you have chosen will then open, allowing you to change the column field title (in our case, we will rename it as 'Educational Institution') and to choose from a range of options relevant to that field type. 
 
 ##### How to insert new columns in a Table
 
-To **insert new columns into a Table**, either select the Table field itself or select one of the individual columns, then go to **Controls>Input** in the menu in the left-hand pane and click on the **type of input field** you want to insert. The new column will be inserted to the right of the existing columns, or, if you selected one of the existing columns before inserting the new column, it will be inserted to that right of that column.
+To **insert new columns into a Table**:
+
+1. Either select the Table field itself or select one of the individual columns.
+
+2. Go to **Controls>Input** in the menu in the left-hand pane and click on the **type of input field** you want to insert. 
+
+   The new column will be inserted to the right of the existing columns, or, if you selected one of the existing columns before inserting the new column, it will be inserted to that right of that column.
 
 In our example, we will insert a date field to be our third column (and can then rename it as 'Date Qualification Obtained' by clicking on **Edit field** button ![Edit field button](/images/penicon.png) (Pen icon) and changing it in the **Edit field - Date** dialog box):
 
@@ -87,13 +110,19 @@ In our example, we will insert a date field to be our third column (and can then
 
 ##### How to move columns in a Table
 
-To re-order columns in a Table, simply select the column field you want to move (by either clicking the column title or clicking into the blank box below the title) so the Edit field button ![Edit field button](/images/penicon.png) (Pen icon) displays and then click on the left or right arrow buttons ![Left or right arrow buttons](/images/left-right-arrows.jpg) to move that column to the left or right:
+To re-order columns in a Table, simply
+
+1. Select the column field you want to move (by either clicking the column title or clicking into the blank box below the title) so the **Edit field** button ![Edit field button](/images/penicon.png) (Pen icon) displays.
+2. Click on the left or right arrow buttons ![Left or right arrow buttons](/images/left-right-arrows.jpg) to move that column to the left or right:
 
 ![Move table columns](/images/table-move-columns.jpg)
 
 ##### How to edit the Table field 
 
-To edit the **Table field** itself, select the Table (by either clicking on the Table title or on the table's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) and then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
+To edit the **Table field** itself:
+
+1. Select the Table (by either clicking on the Table title or on the table's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
 
 ![Select table field to edit](/images/table-edit.jpg)
 
@@ -139,7 +168,7 @@ The options within the **Edit field - Table** dialog box include:
   
   The **Columns to export** will automatically show the columns in your table
 
-Make whatever changes you want to make to the table in the **Edit field - Table** dialog box and then click **OK** to confirm. 
+3. Make whatever changes you want to make to the table in the **Edit field - Table** dialog box and then click **OK** to confirm. 
 
 If you want to make your table more dynamic - for example, so that calculations are made or information is autofilled into part of the table - you can add rules to it. To learn about applying rules to fields and forms go to [Rules](/docs/platform/rules/) and for more specific information about applying rules to **Table fields** see [Table rules](/docs/platform/rules/tables/).
 
@@ -147,7 +176,10 @@ If you want to make your table more dynamic - for example, so that calculations 
 
 #### How to move Table fields
 
-To move a **Table field** within your form, simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) and drag and drop the field wherever you want to move it to.
+To move a **Table field** within your form:
+
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+2. Drag and drop the field wherever you want to move it to.
 
 ![Table field drag handle](/images/table-move.jpg)
 
@@ -155,7 +187,11 @@ To move a **Table field** within your form, simply select the field's **Drag han
 
 #### How to delete Table fields
 
-To delete a **Table field** from your form, simply select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)), click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **OK** to confirm.
+To delete a **Table field** from your form:
+
+1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png).
+3. Click on **OK** to confirm.
 
 
 
@@ -165,13 +201,23 @@ To view or edit the field properties associated with a **Table field**, select t
 
 ![Field properties](/images/table-field-properties.jpg)
 
-In the example shown here, our sample **Table field** titled '**Existing Qualifications**' has been selected and the Field properties associated with this field include the field type (Table), its Title, that its title will be shown in the form (the 'Show title' checkbox is ticked), that it will not be a mandatory field that users must complete (the 'Required' checkbox is not selected), that this field will be enabled for users to complete (the 'Enabled' checkbox is ticked), and it will be visible to form users (the 'Visible' checkbox is ticked).
+For example, the **Field Properties** associated with a **Table field** titled 'Existing Qualifications' are shown here and include:
 
-You can change the size of the Table by clicking into the **Layout** or **Mobile Layout** options at the bottom of the Field Properties menu and changing the width of the blue bar. You can then check how the Table will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button ![Preview button](/images/preview.png). Our sample table, **Existing Qualifications** could look like this when viewed on a PC:
+- **Field type** - The type of field, in this case a **Table** field.
+- **Title** - The Title of the field, in this case 'Existing Qualifications'.
+- **Show title** - If this is selected, the Table field will be shown in the form.
+- **Required** - If this is selected, the Table field will be mandatory for the form user.
+- **Enabled** - If this is selected, the user will be able to edit or interact with the field.
+- **Visible** - If this is selected, the Table field will be visible in the form.
+- **Layout** - The width of the blue bar can be adjusted to change the width of the Table field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
+
+
+
+You can then check how the Table will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button ![Preview button](/images/preview.png). Our sample table, **Existing Qualifications** could look like this when viewed on a PC:
 
 ![Sample table in preview](/images/table-preview-example.jpg)
 
-You can also view and edit the properties of the individual column fields within the Table by selecting the column field.
+You can also view and edit the **properties of the individual column fields** within the Table by selecting the column field.
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
 
