@@ -56,7 +56,7 @@ In order to begin a user with an **Administrator** role or **Manage partner** ro
 
 2. In the next page configure the name of the subscription for the **B2B Portal.** Enter your **Company name**, an **Identity** that will form the beginning of your URL, the **Company Size**, **Industry**, **Address**, **Country** and **City**. Click **Start Trial** when ready to proceed. This will create and automatically log you into your subscription.
 
-![Signin to Kianda as an invited partner example](/images/sign-in-partner.jpg)
+![Signin to Kianda as an invited partner example](/images/kianda-partner-signup.jpg)
 
 3. Return back to the email you received. Click on the **Accept Invite** button again. Now that your subscription is created and you are logged in the **invite** will be changed and will instead ask you to **Accept Invite**.
 
@@ -64,7 +64,7 @@ In order to begin a user with an **Administrator** role or **Manage partner** ro
 
 4. Click on the **Accept Invite** button. You will be redirected to the Home page of the Subscription. You will now see the contents of the **Shared Process**.
 
-	​									![Shared process example](/images/see-shared-dashboard.jpg) 
+	​					![Shared process example](/images/see-shared-dashboard.jpg) 
 
 
 
@@ -81,11 +81,11 @@ If you **already have a subscription** you can choose to **Login** instead of Si
 
 
 
-### ### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png) ###
 
 Within your subscription you will be able to see if an invited partner has accepted their **invitation** based on the **status**. **Pending** means they have not accepted the **invite**, **active** means they have accepted the **invite**.
 
-git![Invite partner status](/images/pending-invites.jpg)
+![Invite partner status](/images/pending-invites.jpg)
 
 Once an invite is accepted, your client’s/invited partner's employees can now access the B2B Portal and interact with the Dashboards and Processes that have been shared with them. For more information on how  **B2B Portal** users access shared data go to [Data access](/docs/platform/b2b-portals/data-access/), as well as [Shared dashboards](/docs/platform/b2b-portals/shared-dashboard/) for information on dashboards, and [Shared process](/docs/platform/b2b-portals/shared-process/) for information on processes. 
 
