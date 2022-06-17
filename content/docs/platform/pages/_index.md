@@ -27,17 +27,16 @@ Before you begin, it is important to be aware that there are **two modes** invol
 ## Edit mode and View mode ##
 
 When using dashboards there are two modes: **Edit mode** and **View mode**.
-When using dashboards, there are two modes: **Edit mode** and **View mode**.
 
 When you are in **View mode**, the **Edit** button ![Edit button](/images/edit.png) will be visible in the top menu bar.
 ### Dashboards View mode ###
-When you are in **View mode**, the **Edit** button ![Edit button](/images/edit.png) will be visible to the right in the top menu bar.
+The image below shows a dashboard in **View mode**, where the **Edit** button ![Edit button](/images/edit.png) is visible in the top menu bar.
 
 ![View mode](/images/dashboardgeneral.png)
 
 When you click on the **Edit** button ![Edit button](/images/edit.png) you will be in **Edit mode**, which means that the **Widget menu** is available at the top of the dashboard page, along with the **Settings** button ![Settings](/images/settings.png) to make changes to the page, and **Bin/Trash** button ![Bin button](/images/binicon.png) to delete the page.
 ### Dashboards Edit mode ###
-When you click on the **Edit** button ![Edit button](/images/edit.png) you will be in **Edit mode**. When you are viewing a page in Edit mode, these options will be available to you along the top of the dashboard page:
+Clicking on the **Edit** button ![Edit button](/images/edit.png) on the top of a dashboard page will take you from **View mode** to **Edit mode**. When you are viewing a page in Edit mode, these options will be available to you along the top of the dashboard page:
 
 - the **Widget menu** where you can insert any of the seven available dashboard widgets
 - the **Settings** button ![Settings](/images/settings.png) to make changes to the dashboard page
@@ -55,7 +54,7 @@ If you want to create a dashboard page from scratch go to [How to get started](#
 ## How to get started ##
 
 Kianda offers a user-friendly interface to create dashboards in a few minutes. Please follow the below video to create dashboards.
-Kianda offers a user-friendly interface to create dashboards in minutes. This video covers the steps for creating a new dashboard:
+
 
 <video width="100%" style="width:100%" controls>
     <source src="/videos/updated_introduction_dashboard.mp4">
