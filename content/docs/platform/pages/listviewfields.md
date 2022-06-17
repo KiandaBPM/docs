@@ -1,3 +1,7 @@
+---
+title: "List view fields"
+typora-root-url: ..\..\..\..\static
+---
 # List view fields #
 
 When you choose the List widget for your dashboard, there are a number of ways to select fields that you want to view.
