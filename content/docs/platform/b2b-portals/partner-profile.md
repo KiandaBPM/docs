@@ -1,6 +1,7 @@
 ---
 title: "Partner profile"
 linkTitle: "Partner Profile"
+weight: 2
 typora-root-url: ..\..\..\..\static
 ---
 
