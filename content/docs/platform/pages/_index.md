@@ -80,7 +80,7 @@ The options in the **Create dashboard page** dialog box include:
 
 - **Group** - define a group who will use this dashboard, for example HR managers
 
-- **Enable favourites** - Select this checkbox if you want to enable an '**Add to favourites** button to the top menu in the dashboard. Once you complete the dialog box and click **OK** and then click the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg)in the top dashboard menu, a new '**Add to favourites**' button will be added to your top dashboard menu:
+- **Enable favourites** - Select this checkbox if you want to enable an '**Add to favourites** button to the top menu in the dashboard. Once you complete the **Create dashboard page** dialog box and click **OK** and then click the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg)in the top dashboard menu, a new '**Add to favourites**' button will be added to your top dashboard menu:
 
   ![Dashboard Add to favourites button](/images/dashboard-favourites-button.jpg)
 
@@ -88,13 +88,11 @@ The options in the **Create dashboard page** dialog box include:
 
   - Click the **Add to favourites** button
 
-  - Complete the **Add to favourite** dialog box that opens and then click **Add to favourite** to add the dashboard to your favourites (or click **Close** to cancel adding it to your favourites)
+  - Complete the **Add to favourite** dialog box that opens and then click the **Add to favourite** button to add the dashboard to your favourites (or click **Close** to cancel adding it to your favourites)
 
     ![Dashboard Add to favourite dialog box](/images/dashboard-favourites-dialog.jpg)
 
-  - If you click 'Add favourite' A pop-up message will display saying '**Favourite saved successfully**' and a new **Add to favourites** button will now be available in the top dashboard page menu.
-
-  - Click on the new **Add to favourites** button if you want to add the current dashboard page to your favourites. Then click **Save**. Your dashboard page will now have a star next to it in the Dashboards menu in the main left side menu.
+  - If you click 'Add favourite' A pop-up message will display saying '**Favourite saved successfully**' and a star will now appear next to this dashboard page in the Dashboards menu in the main left side menu (denoting that it is a favourite page).
 
 4. Click on the **OK** button when you are finished editing the field to save your changes or click on **Close** to exit the dialog box without saving.
 
