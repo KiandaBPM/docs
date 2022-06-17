@@ -292,7 +292,96 @@ For example, a line manager who is a form owner may need to add additional infor
 &lt;p>&lt;strong>Note&lt;/strong>: You can use rules to create &lt;strong>actions&lt;/strong> &lt;strong>without conditions&lt;/strong> too. In this case the rule will simply execute, for example when a form or field is clicked on.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Depending on how the rule is applied, for example to a &lt;strong>Submit&lt;/strong> button, the rule order is important to consider, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/mutiple-rules/">Multiple rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Show, hide or disable</title><link>https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/</guid><description>
+&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Shared process</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>A &lt;strong>Shared Process&lt;/strong> is a &lt;strong>process&lt;/strong> which you create within your own subscription with the intention to share with your B2B Portal. This &lt;strong>process&lt;/strong>, as with all &lt;strong>processes&lt;/strong>, can be used to review data, create new instances, update or delete instances.&lt;/p>
+&lt;p>Within a shared process, you can also create a &lt;strong>Shared Dashboard&lt;/strong> which is a dashboard created within your own subscription with the intention to share with your B2B Portal. This &lt;strong>dashboard&lt;/strong>, as with all dashboards, can be used to review data, access &lt;strong>Shared Processes&lt;/strong> by creating new instances, updating or deleting instances.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Using the &lt;strong>Shared Process&lt;/strong> feature will allow users within the &lt;strong>B2B Portal&lt;/strong> to have access to a process you have created. By sharing this &lt;strong>process&lt;/strong> you will give your &lt;strong>partner&lt;/strong> the opportunity to work on the process by updating, creating and deleting instances.&lt;/p>
+&lt;p>It terms of dashboards, it is necessary to share your &lt;strong>dashboard&lt;/strong> with your &lt;strong>B2B&lt;/strong> &lt;strong>Portal&lt;/strong> when sharing &lt;strong>processes&lt;/strong> and &lt;strong>dashboard&lt;/strong> &lt;strong>widgets&lt;/strong> with your Client. Before you can share a &lt;strong>dashboard&lt;/strong> you must first create one. This &lt;strong>dashboard&lt;/strong> can be one that you have already created, however, we recommend creating a unique dashboard that will be used specifically for sharing with B2B Portals. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> to learn more about how to create dashboards.&lt;/p>
+&lt;p>The following sections will step through how to share a process (steps 1-3) and share a dashboard (step 4) and how to conclude and update partners (steps 5-6).&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>Log into your subscription and navigate to the &lt;strong>Invite Partner&lt;/strong> section located within &lt;strong>Administration.&lt;/strong> Your role needs to be &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage partner&lt;/strong> to view &lt;strong>Invite Partner&lt;/strong>. Using one of these roles:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to &lt;strong>Invite Partner&lt;/strong> within the &lt;strong>Administration&lt;/strong> section.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/invite-partner-function.jpg" alt="Invite partner function">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Shared processes&lt;/strong> section, click on the &lt;strong>Share a process&lt;/strong> button &lt;img src="https://docs.kianda.com/images/share-a-process.jpg" alt="Share a process button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Create a Shared Process&lt;/strong> dialog box opens.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-shared-process.jpg" alt="Edit Shared Process dialog box">&lt;/p>
+&lt;p>Populate the fields as desired:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - provide a title for the shared process&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Instructions for partner&lt;/strong> - provide instructions for the selected partner&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>plus symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-process.jpg" alt="Add shared process"> to add a selected process design to share. Then click on the dropdown list to search for a process to share.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to add the selected shared process. To change the selected shared process properties by clicking on the &lt;strong>Cog/Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Edit selected shared process properties"> or delete the selected shared process by clicking on the &lt;strong>Bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/change-selected-prop.jpg" alt="Edit selected shared process properties">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>If you click on the **Cog/Settings **button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Edit selected shared process properties"> a &lt;strong>Process properties&lt;/strong> dialog box appears, as shown above, for example Training Request properties. You can check radio buttons for:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Allow partner to create a new process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to create new process instances from the chosen shared process design.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A field &lt;strong>Partner user group allowed to create new instances&lt;/strong> appears, where you can define the group(s) in the partner organisation, that can create these new process instances. This is the first level of security for processes and dashboards. If you leave the field blank, then anyone in the partner organisation can create process instances.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Allow partner delete a process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to delete new process instances from the chosen shared process design.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Partner process form visibility mode - choose from &lt;strong>Assigned&lt;/strong> or &lt;strong>All forms&lt;/strong>. If you choose &lt;strong>Assigned&lt;/strong>, then the invited partner(s) can view only assigned form versus all forms, if &lt;strong>All forms&lt;/strong> is chosen.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you click on the &lt;strong>Bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes"> then a pop-up appears to &lt;strong>Confirm removal&lt;/strong>, choose from &lt;strong>OK&lt;/strong> or &lt;strong>Cancel&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/confirm-removal.jpg" alt="Confirm removal of selected shared process">&lt;/p>
+&lt;ul>
+&lt;li>Click on the &lt;strong>Tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to add further selected processes to share.&lt;/li>
+&lt;li>Click on the &lt;strong>Add partner group&lt;/strong> button to add one or more partner groups. Click on the &lt;strong>Bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes"> to delete partner groups.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>There are a set of dashboard parameters under the field &lt;strong>Add partner group&lt;/strong>. These are:&lt;/p>
+&lt;ul>
+&lt;li>Under &lt;strong>Dashboard template&lt;/strong> click on the dropdown list to select an existing dashboards to share with the selected processes. If you choose to share a dashboard then you can select parameters:
+&lt;ul>
+&lt;li>&lt;strong>Dashboard name in partner&lt;/strong> - choose from &lt;strong>Use your company name &amp;lsquo;Name of your organisation&amp;rsquo;&lt;/strong> or &lt;strong>Same as selected dashboard&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Make welcome page&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> then the selected dashboard becomes the welcome page for the partner if no other welcome page is configured.&lt;/li>
+&lt;li>&lt;strong>Dashboard security&lt;/strong> - choose from created partner groups within this field to ensure that &lt;strong>only users&lt;/strong> in these partner groups can access the dashboard. This is the method to set security on the dashboard specifically.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once you have completed configuring or modifying the &lt;strong>Shared Process&lt;/strong> you will need to send the shared process to your partner. To do this press the &lt;strong>Send Update&lt;/strong> button which appears in the main view of the &lt;strong>Shared processes&lt;/strong> section.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-update-partner.jpg" alt="Send Update">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Once you have successfully creating a shared process and dashboard, these will be available in the B2B Portal for partners, for example when your partner users log into the B2B Portal they will be able to see the newly shared dashboard. From here they will be able to see the widgets within the dashboard and interact with the Processes. Go to the &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/secure-data-access/">Secure Data Access&lt;/a> to read more about security in shared processes and data sources.&lt;/p></description></item><item><title>Docs: Show, hide or disable</title><link>https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/</guid><description>
 &lt;p>Use the &lt;strong>Hide or Disable&lt;/strong> rule to hide, disable, show or enable a field or a component in a Kianda form. This rule is very useful if you want different parts of a form, a complete form or multiple forms, to appear or hide based on how the user of the form completes the form.&lt;/p>
 &lt;p>There are seven possible actions within this rule that can be applied to fields or forms:&lt;/p>
 &lt;ul>
@@ -627,7 +716,88 @@ Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Process settings</title><link>https://docs.kianda.com/docs/platform/application-designer/process/settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/settings/</guid><description>
+&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Partner profile</title><link>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Within the &lt;strong>B2B Portal&lt;/strong> your client’s administrator will be able to create as many &lt;strong>Partner Profiles&lt;/strong> (&lt;strong>users&lt;/strong>) as they wish. By creating these &lt;strong>users&lt;/strong>, they will have the ability to access the &lt;strong>B2B Portal&lt;/strong> and interact with the &lt;strong>Dashboards&lt;/strong> and &lt;strong>Processes&lt;/strong> shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-dashboard/">Shared dashboards&lt;/a> for information on dashboards, and &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared process&lt;/a> for information on processes.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Your client will need to add &lt;strong>Partner Profiles&lt;/strong> in order for their employees to have access to the &lt;strong>B2B Portal&lt;/strong>. At this point your subscription will need to have been created and Administrators created. If this has not happened yet, please get in touch with your Account Manager or &lt;a href="mailto:support@kianda.com">Kianda Support&lt;/a> to begin the process.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>In order to begin a user with an &lt;strong>Administrator&lt;/strong> role or &lt;strong>Manage partner&lt;/strong> role will need to log into your subscription. Using one of these roles:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to &lt;strong>Invite Partner&lt;/strong> within the &lt;strong>Administration&lt;/strong> section.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Within this page click on the &lt;strong>Invite Partner&lt;/strong> Button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Invite partner&lt;/strong> dialog box populate the fields with the details of the person you want to share your &lt;strong>Processes&lt;/strong> and &lt;strong>Dashboards&lt;/strong> with.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/invite-partner-dialog.jpg" alt="Invite partner dialog box">&lt;/p>
+&lt;p>The fields in this box are:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Partner organisation&lt;/strong> - provide the name of the partner organisation&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Contact first name&lt;/strong> - provide the first name of a contact in the partner organisation&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Contact last name&lt;/strong> - provide the surname of a contact in the partner organisation&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Contact email&lt;/strong> - provide the email of a contact&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Shared process selection&lt;/strong> - in the dropdown list choose a shared process created using the steps listed in &lt;a href="#to-share-a-process">To share a process&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>More fields&lt;/strong> to see more fields these include: &lt;strong>Partner country&lt;/strong>, &lt;strong>Partner city&lt;/strong>, and &lt;strong>Partner logo&lt;/strong> which you can add by clicking on &lt;strong>Browse&lt;/strong> and browsing your PC or network.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage. Clicking on &lt;strong>OK&lt;/strong> will save the partner and will result in an invitation being sent to their email address, similar to the one below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/invite-email.jpg" alt="Invite partner email example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>As a partner click on the &lt;strong>Accept&lt;/strong> button. Then you are linked to a greeting page asking you to sign up to Kianda if you don&amp;rsquo;t have a login. Click on the &lt;strong>Sign up&lt;/strong> button if you don’t have a subscription.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/invite-partner-greenitr.jpg" alt="Accept invite example">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="accepting-a-partner-invite-without-a-subscription">Accepting a partner invite without a subscription&lt;/h3>
+&lt;ol>
+&lt;li>If you do have a subscription please continue to the section detailing what to do after when &lt;strong>login&lt;/strong> is clicked &lt;a href="#accepting-a-partner-invite-with-a-subscription">Accepting a partner invite with a subscription&lt;/a>, otherwise create a subscription, by entering your &lt;strong>Firstname&lt;/strong>, &lt;strong>Lastname&lt;/strong>, your &lt;strong>email&lt;/strong>, a &lt;strong>password&lt;/strong> and a &lt;strong>phone number&lt;/strong>. Click &lt;strong>Next&lt;/strong> when you are ready to continue.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sign-in-partner.jpg" alt="Signin to Kianda as an invited partner example">&lt;/p>
+&lt;ol start="2">
+&lt;li>In the next page configure the name of the subscription for the &lt;strong>B2B Portal.&lt;/strong> Enter your &lt;strong>Company name&lt;/strong>, an &lt;strong>Identity&lt;/strong> that will form the beginning of your URL, the &lt;strong>Company Size&lt;/strong>, &lt;strong>Industry&lt;/strong>, &lt;strong>Address&lt;/strong>, &lt;strong>Country&lt;/strong> and &lt;strong>City&lt;/strong>. Click &lt;strong>Start Trial&lt;/strong> when ready to proceed. This will create and automatically log you into your subscription.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/kianda-partner-signup.jpg" alt="Signin to Kianda as an invited partner example">&lt;/p>
+&lt;ol start="3">
+&lt;li>
+&lt;p>Return back to the email you received. Click on the &lt;strong>Accept Invite&lt;/strong> button again. Now that your subscription is created and you are logged in the &lt;strong>invite&lt;/strong> will be changed and will instead ask you to &lt;strong>Accept Invite&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/accept-invite-2.jpg" alt="Accept invite as a partner example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Accept Invite&lt;/strong> button. You will be redirected to the Home page of the Subscription. You will now see the contents of the &lt;strong>Shared Process&lt;/strong>.&lt;/p>
+&lt;p>​ &lt;img src="https://docs.kianda.com/images/see-shared-dashboard.jpg" alt="Shared process example">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="accepting-a-partner-invite-with-a-subscription">Accepting a partner invite with a subscription&lt;/h3>
+&lt;p>If you &lt;strong>already have a subscription&lt;/strong> you can choose to &lt;strong>Login&lt;/strong> instead of Signing up. By logging in you can log into your subscription and you will be given the option to accept the invite. Please note that you will need to be an &lt;strong>administrator&lt;/strong> in your portal in order to accept the invite.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Accept Invite&lt;/strong> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/invite-partner-greenitr.jpg" alt="Accept invite example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will be redirected to the Home page of the Subscription. You will now see the contents of the &lt;strong>Shared Process&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Within your subscription you will be able to see if an invited partner has accepted their &lt;strong>invitation&lt;/strong> based on the &lt;strong>status&lt;/strong>. &lt;strong>Pending&lt;/strong> means they have not accepted the &lt;strong>invite&lt;/strong>, &lt;strong>active&lt;/strong> means they have accepted the &lt;strong>invite&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/pending-invites.jpg" alt="Invite partner status">&lt;/p>
+&lt;p>Once an invite is accepted, your client’s/invited partner&amp;rsquo;s employees can now access the B2B Portal and interact with the Dashboards and Processes that have been shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-dashboard/">Shared dashboards&lt;/a> for information on dashboards, and &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared process&lt;/a> for information on processes.&lt;/p></description></item><item><title>Docs: Process settings</title><link>https://docs.kianda.com/docs/platform/application-designer/process/settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/settings/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>There are a number of properties and settings that you can implement to your process and forms.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Settings and properties&lt;/strong>&lt;/em>&lt;/p>
@@ -1623,7 +1793,74 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>Underneath field properties you will see &lt;strong>Rules&lt;/strong>, go to &lt;a href="http://localhost:3000/#/rules/README">Rules&lt;/a> to find out more about Field rules.&lt;/p></description></item><item><title>Docs: Instance or record level security</title><link>https://docs.kianda.com/docs/security/record-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/record-security/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
+&lt;/div></description></item><item><title>Docs: Secure Data Access</title><link>https://docs.kianda.com/docs/platform/b2b-portals/data-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/data-access/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Access to the B2B Portal is controlled through standard user and group creation, dashboard security and through how the Shared Processes and Dashboards are defined.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>B2B Portals are a means of connecting your clients to your Kianda subscription through their own subscription. This provides a means of allowing your clients to interface with processes you have already created, be it through updating existing processes, deleting processes or creating processes. Access to the B2B Portal can be controlled by your own administrator and each B2B portal can have multiple users for your clients.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To share data with B2B portal users, there are a number of steps involved starting with:&lt;/p>
+&lt;p>a) Creating users and groups&lt;/p>
+&lt;p>b) Create dashboards to share&lt;/p>
+&lt;p>c) Create shared processes and attach dashboards to share&lt;/p>
+&lt;h3 id="create-users-and-groups-for-the-b2b-portal">Create users and groups for the B2B portal&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>To begin create &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong> for the B2B portal. If you are an &lt;strong>administrator,&lt;/strong> navigate to the &lt;strong>Administration&lt;/strong> section in the left-hand side menu and click on &lt;strong>Users&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Within this page you will be able to view all existing &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong> in the portal. In the left-hand side, under &lt;strong>Users&lt;/strong> you can see user names, emails, role and if they are active or not. All existing &lt;strong>Groups&lt;/strong> can be seen in the right-hand side of the screen. Here you can see group names and the number of members.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-main-view.jpg" alt="Users main view">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For full details on how to create, edit and delete users and groups got to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="create-dashboards-to-share">Create dashboards to share&lt;/h3>
+&lt;ol>
+&lt;li>Within your own portal you may then wish to create &lt;strong>Dashboards&lt;/strong> to share. Dashboards provide a convenient way to gain insights into how your business processes are performing. They offer easy reporting, permissions management, quick build, condition-based filtering amongst other features. For details on how to get started with dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/platform/pages/">Dashboards&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;h3 id="create-shared-processes-and-attach-dashboards-to-share">Create shared processes and attach dashboards to share&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>When the dashboard that you want to share within your &lt;strong>B2B portal&lt;/strong> has been created, then you can control access by two means: a) Using the &lt;strong>Shared Processes&lt;/strong> feature within &lt;strong>Invite partner&lt;/strong> within &lt;strong>Administration&lt;/strong> and b) within the B2B portal itself.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To implement a) go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Invite partner&lt;/strong> and within the &lt;strong>Shared processes&lt;/strong> section, click on &lt;strong>Share a process&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Type in a &lt;strong>Title&lt;/strong> and &lt;strong>Instructions for partner&lt;/strong>, click on the &lt;strong>plus symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-process.jpg" alt="Add shared process"> to add a selected process design to share.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then click on the dropdown list to search for a process to share.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to add the selected shared process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Add partner group&lt;/strong> button to add a group from step 3 and click on &lt;strong>Dashboard template&lt;/strong> to add the desired Dashboard (from step 4) to share. Security can be set on this dashboard so that only a defined group can see the dashboard - click on the field under &lt;strong>Dashboard security&lt;/strong> to add in a named &amp;lsquo;partner group&amp;rsquo; to enable access to this group only.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-shared-process.jpg" alt="Edit Shared Process dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add as many shared dashboards and partner groups as needed using the previous instructions. In addition the level of access for each shared process can be controlled through system settings. Click on the on the &lt;strong>tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to change the shared processes details, and then click on the &lt;strong>Cog/Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Edit selected shared process properties"> and edit the details within the &lt;strong>Process properties&lt;/strong> dialog box, for example as shown for a Training Request process below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/change-selected-prop.jpg" alt="Edit selected shared process properties">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Within the &lt;strong>Process properties&lt;/strong> dialog box you can check radio buttons for:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Allow partner to create a new process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to create new process instances from the chosen shared process design. A field &lt;strong>Partner user group allowed to create new instances&lt;/strong> appears, where you can define the group(s) in the partner organisation, that can create these new process instances. If you leave the field blank, then anyone in the partner organisation can create process instances.&lt;/li>
+&lt;li>&lt;strong>Allow partner delete a process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to delete new process instances from the chosen shared process design.&lt;/li>
+&lt;li>&lt;strong>Partner user group allowed to create new instances&lt;/strong>- choose from the &lt;strong>Partner user groups&lt;/strong> that you created previously. By selecting a group here this dictates who can enter the process. Thus, defining a sub set of your B2B Portal users which can interact with that specific process.&lt;/li>
+&lt;li>&lt;strong>Partner process form visibility mode&lt;/strong> - choose from &lt;strong>Assigned&lt;/strong> or &lt;strong>All forms&lt;/strong>. If you choose &lt;strong>Assigned&lt;/strong>, then the invited partner(s) can view only assigned form versus all forms, if &lt;strong>All forms&lt;/strong> is chosen.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about User and group management, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.
+To read more about Dashboards, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Success/Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As an &lt;strong>administrator&lt;/strong> or &lt;strong>designer&lt;/strong>, you can use Kianda &lt;strong>Designer&lt;/strong> to populate fields within the Kianda form, in the &lt;strong>Edit rule&lt;/strong> dialog box and set parameters for success and error mapping.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
@@ -2317,287 +2554,4 @@ Your browser does not support the video tag.
 &lt;/ul></description></item><item><title>Docs: Global CSS file</title><link>https://docs.kianda.com/docs/low-code/global-css-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-css-file/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Text box control</title><link>https://docs.kianda.com/docs/platform/controls/input/textbox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/textbox/</guid><description>
-&lt;p>The &lt;strong>Text box control&lt;/strong> can be used if you want a user to manually input text into a form. For example, in a Training Request form, you may want the user to insert their first name and surname and may want those fields to be mandatory for the user to complete.&lt;/p>
-&lt;p>There are various options available when creating a Text box field, such as formatting it to allow multiple lines of text, to contain a password (text input is not shown) or to autofill with saved information such as the user&amp;rsquo;s address or email. More advanced options include applying a rule or expression to a Text box field - for more information, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>To add a &lt;strong>Text box&lt;/strong> field to a form, first open the relevant process.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Text box&lt;/strong>.&lt;/p>
-&lt;p>A Text box field will be added to your form with the default title of &amp;lsquo;&amp;rsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;&amp;rsquo; and a pop-up message will say &amp;lsquo;Field added&amp;rsquo;.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-inserted.jpg" alt="Text box inserted">&lt;/p>
-&lt;p>In the example shown here, a Text box field has been added to a form called &amp;lsquo;Training Request&amp;rsquo; in a process called &amp;lsquo;Training Process&amp;rsquo;, as the first step in adding two Text box fields (which will be used to capture the first name and surname of the user who is completing the form).&lt;/p>
-&lt;p>You can also place a Text box within an element - such as within a panel in a form. In the example above, the Text box was inserted outside the panel in the form. If you wanted to insert it &lt;em>within&lt;/em> the panel, simply select the panel itself by clicking on its drag handle &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag Handle icon"> and then click on &lt;strong>Controls&amp;gt;Input&amp;gt;Text box&lt;/strong> - this will result in the new Text box being added inside the panel, as shown here:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-inside-panel.jpg" alt="Text box inside a panel">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="how-to-edit-move-and-delete-text-box-fields">How to edit, move and delete Text box fields&lt;/h3>
-&lt;p>As we go through the options available for editing a Text box, we will keep in mind the example of adding two text boxes to the &amp;lsquo;Training Request&amp;rsquo; form to capture a user&amp;rsquo;s first name and surname.&lt;/p>
-&lt;h4 id="how-to-edit-a-text-box-field">How to edit a Text box field&lt;/h4>
-&lt;p>To edit a &lt;strong>Text box field&lt;/strong>:&lt;/p>
-&lt;ol>
-&lt;li>Select the Text box (by either clicking on its title or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
-&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-edit-button.jpg" alt="Select text box edit button">&lt;/p>
-&lt;p>The &lt;strong>Edit field - Text&lt;/strong> dialog box will open, enabling you to choose from a range of options:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-edit-dialog.jpg" alt="Edit table field dialog box">&lt;/p>
-&lt;p>The options within the &lt;strong>Edit field - Text box&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the Text box from the default &amp;lsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;. In our example, we could change the name of the first Text box to &amp;lsquo;First Name&amp;rsquo; and the second Text box to &amp;lsquo;Surname&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Name (unique)&lt;/strong> - this is a unique name for the Text box field&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Help text&lt;/strong> - you can insert text to help the form user to complete the Table. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-help-text.jpg" alt="Table help text example">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Mode&lt;/strong> - you can decide whether your Text box is limited to a &lt;strong>Single line of text&lt;/strong> or will allow for &lt;strong>Multiple lines of text&lt;/strong> or can choose &lt;strong>Rich text&lt;/strong>. Different additional options will then be shown, depending on the Mode you have chosen.&lt;/p>
-&lt;p>If you choose &amp;lsquo;&lt;strong>Single line of text&lt;/strong>&amp;rsquo; as the Mode for your Text box - as in the example shown above - these additional options will be shown:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Max length&lt;/strong> - choose the maximum number of characters for the text inserted in your Text box by either typing in a number or by clicking the up/down arrow buttons &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up down arrow buttons"> at the right side of the blank field beneath it&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Text style&lt;/strong> - choose &lt;strong>Normal&lt;/strong>, &lt;strong>Capitalise&lt;/strong>, &lt;strong>Uppercase&lt;/strong> or &lt;strong>Lowercase&lt;/strong>, depending on how you want the text input in the Text box to appear&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Control type&lt;/strong> - choose either &lt;strong>Text&lt;/strong> or &lt;strong>Password&lt;/strong>. If you choose Password, then the text input by the user in the Text box will not be visible:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-password.jpg" alt="Text box formatted as a password">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Autofill type&lt;/strong> - you can choose between &lt;strong>Default&lt;/strong>, &lt;strong>Off&lt;/strong>, &lt;strong>Password&lt;/strong>, &lt;strong>Address&lt;/strong>, &lt;strong>Email&lt;/strong> and &lt;strong>Phone&lt;/strong>. If, for example, you select Address, this means that when the user is completing this Text box field, it will automatically populate with the user&amp;rsquo;s saved address information (if the user has that saved information on their PC or mobile phone).&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Placeholder&lt;/strong> - you can insert placeholder text to appear in the Text box field to assist the user. For example, this Text box field titled &amp;lsquo;Address 1&amp;rsquo; has placeholder text:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-placeholder.jpg" alt="Example of Text box placeholder text">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>If you choose &amp;lsquo;&lt;strong>Multiple lines of text&lt;/strong>&amp;rsquo; as the Mode for your Text box, these additional options will be shown:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-multiple-lines-options.jpg" alt="Text box multiple lines of text options">&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Rows&lt;/strong> - you can decide how many rows of text you want your Text box to have. Either manually type in a number or use the up/down arrows &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up down arrow buttons"> on the right-side of the field&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Max length&lt;/strong> - you can set a maximum number of characters for the Text box&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Text style&lt;/strong> - choose from &lt;strong>Normal&lt;/strong>, &lt;strong>Capitalise&lt;/strong>, &lt;strong>Uppercase&lt;/strong> or &lt;strong>Lowercase&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Placeholder&lt;/strong> - you can insert placeholder text to appear in the Text box field to assist the user.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>If you choose &amp;lsquo;&lt;strong>Rich text&lt;/strong>&amp;rsquo; as the Mode for your Text box, you will have the additional options of setting a &lt;strong>Max length&lt;/strong> (maximum number of characters that can be input in the field) and choosing a &lt;strong>Text style&lt;/strong>, as shown here:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-richtext-options.jpg" alt="Text box Rich text options">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Expression&lt;/strong> - If you want to use your Text box field in a way that is more dynamic, you could decide to add an expression to it. For example, an Expression can be used to return a value - if you apply the Expression &amp;lsquo;&lt;strong>Date()&lt;/strong>&amp;rsquo; to your Text box field, it will return the current date and time.&lt;/p>
-&lt;p>To add an Expression to your Text box field, click on the ellipsis button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button in the Expression box"> to the right. This will open the &lt;strong>Expression builder&lt;/strong> dialog box:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/expression-builder.jpg" alt="Expression builder dialog box">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>You can click on the &lt;strong>Reference&lt;/strong> button &lt;img src="https://docs.kianda.com/images/reference.png" alt="Reference button in the Expression builder dialog box"> to see some of the most commonly used Expressions. To learn more about using Expressions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
-&lt;ol start="3">
-&lt;li>Make whatever changes you want to make to the Text box field in the &lt;strong>Edit field - Text box&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
-&lt;/ol>
-&lt;h4 id="how-to-move-text-box-fields">How to move Text box fields&lt;/h4>
-&lt;p>To move a &lt;strong>Text box&lt;/strong> within your form:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Drag and drop the field wherever you want to move it to.&lt;/p>
-&lt;p>In our example, the two new Text boxes titled &amp;lsquo;First Name&amp;rsquo; and &amp;lsquo;Surname&amp;rsquo; can be moved from the bottom of the form to the top:&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-move.jpg" alt="Table field drag handle">&lt;/p>
-&lt;h4 id="how-to-delete-text-box-fields">How to delete Text box fields&lt;/h4>
-&lt;p>To delete a &lt;strong>Text box field&lt;/strong> from your form:&lt;/p>
-&lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm (or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion).&lt;/li>
-&lt;/ol>
-&lt;h3 id="how-to-edit-text-box-field-properties">How to edit Text box field properties&lt;/h3>
-&lt;p>To view or edit the field properties associated with a &lt;strong>Text box field&lt;/strong>, select the field (by clicking on its title or its drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-properties.jpg" alt="Field properties">&lt;/p>
-&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Text box field&lt;/strong> titled &amp;lsquo;First Name&amp;rsquo; are shown here and include:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Text box&lt;/strong> field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;First Name&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the Text box field title will be shown in the form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Required&lt;/strong> - If this is selected, the Text box field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Visible&lt;/strong> - If this is selected, the Text box field will be visible in the form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Text box field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
-&lt;p>You can check how the Text box will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">. Our simple example of the &amp;lsquo;First Name&amp;rsquo; and &amp;lsquo;Surname&amp;rsquo; fields in a Training Request form could look like this when viewed on a user&amp;rsquo;s mobile phone:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-preview-mobile.jpg" alt="Sample table in preview">&lt;/p>
-&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
-&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Text box control&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Global JavaScript file</title><link>https://docs.kianda.com/docs/low-code/global-javascript-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-javascript-file/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Toggle control</title><link>https://docs.kianda.com/docs/platform/controls/input/toggle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/toggle/</guid><description>
-&lt;p>&lt;strong>Toggle fields&lt;/strong> (controls) can be used in a form to record a decision, confirm that an action has been taken or an item has been received, or to record a yes/no type answer. They can be used as either a toggle or as a checkbox - for example, Toggle fields could be used to create a series of checkboxes in an Onboarding Form to record whether a new employee has received required training, been assigned an employee number and so on.&lt;/p>
-&lt;p>Rules can be applied to &lt;strong>Toggle fields&lt;/strong> to make your form more dynamic. One such rule, the &lt;strong>Show, hide or disable rule&lt;/strong> can be applied to a Toggle field to have the effect of showing or hiding remaining options/sections in the form dependent on whether the toggle/checkbox is selected or not.&lt;/p>
-&lt;p>For example, in a Training Request form, a Toggle field could be used to record a manager&amp;rsquo;s decision to either approve or reject an employee&amp;rsquo;s training request - by applying the &lt;strong>Show, hide or disable&lt;/strong> rule to this field, a different last section of the form will display based on the manager&amp;rsquo;s decision. If the manager select&amp;rsquo;s to approve the training, a sign-off button then appears; if the manager reject&amp;rsquo;s the request, a &amp;lsquo;Reason&amp;rsquo; text box appears for them to insert their feedback. To learn more about applying rules to fields, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>. To find out more about this specific rule, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable">Show, hide or disable&lt;/a>.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>To add a &lt;strong>Toggle field&lt;/strong> to a form, first open the relevant process.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible). If you want to add the Toggle field to a panel within your form, first select the panel by clicking on it and then add the &lt;strong>Toggle field&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Insert the new &lt;strong>Toggle field&lt;/strong> by clicking on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu, then select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Toggle&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-insert.jpg" alt="Insert toggle field">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>A &lt;strong>New field - Toggle&lt;/strong> dialog box will open with a range of options you can choose from for your new Toggle field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-dialog.jpg" alt="New toggle field dialog box">&lt;/p>
-&lt;p>The options available in the &lt;strong>New field - Toggle&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the Toggle field from the default title &lt;strong>Toggle 1&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Name&lt;/strong> - This is a unique name for the field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to explain to the form user what selecting the toggle/checkbox means. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted. In this example, the Toggle field is titled &amp;lsquo;Approve Training&amp;rsquo; and has associated help text:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-approve-training.jpg" alt="Toggle field help text icon">&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-helptext-example.jpg" alt="List field help text example">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Value when enabled&lt;/strong> - You can set the value for when the user selects the toggle/checkbox. For example, the value when it is selected could be &amp;lsquo;Yes&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Value when disabled&lt;/strong> - You can set the value for when the user does &lt;em>not&lt;/em> select the toggle/checkbox. For example, the value when it is not selected could be &amp;lsquo;No&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Display mode&lt;/strong> - You can choose to have the Toggle field display as either a &lt;strong>Toggle button&lt;/strong> &lt;img src="https://docs.kianda.com/images/toggle-icon.jpg" alt="Toggle button icon"> or &lt;strong>Checkbox&lt;/strong> &lt;img src="https://docs.kianda.com/images/toggle-checkbox-icon.jpg" alt="Checkbox icon">.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Once you complete the &lt;strong>New field - Toggle&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong> button, a new &lt;strong>Toggle field&lt;/strong> is added to your form, with the name you inserted as the &lt;strong>Title&lt;/strong> in the dialog box (by default, the title is &lt;strong>Toggle 1&lt;/strong> unless you change it).&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>If we take the example of the Training Request form we already discussed, with a Toggle field called &amp;lsquo;Approve Training Request&amp;rsquo; that is formatted to be a checkbox, the Toggle field could look like this when a user views it on their mobile phone:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-example-mobile.jpg" alt="Toggle field example on a mobile phone">&lt;/p>
-&lt;p>To check how your form or field will look like on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by clicking the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">(play icon) after first saving your changes.&lt;/p>
-&lt;h3 id="how-to-edit-move-and-delete-toggle-fields">How to edit, move and delete Toggle fields&lt;/h3>
-&lt;p>As we go through the options available for editing a Toggle field, we will keep in mind the example of the &amp;lsquo;Approve Training Request&amp;rsquo; Toggle field in our Training Request form.&lt;/p>
-&lt;h4 id="how-to-edit-a-toggle-field">How to edit a Toggle field&lt;/h4>
-&lt;p>To edit a &lt;strong>Toggle field&lt;/strong>:&lt;/p>
-&lt;ol>
-&lt;li>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-edit.jpg" alt="Select toggle field to edit">&lt;/p>
-&lt;p>The &lt;strong>Edit field - Toggle&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - Toggle&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle#how-to-get-started">How to get started&lt;/a>).&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-example-dialog.jpg" alt="Edit toggle field dialog box">&lt;/p>
-&lt;ol start="3">
-&lt;li>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
-&lt;/ol>
-&lt;p>You can apply rules to a &lt;strong>Toggle field&lt;/strong> to make it more dynamic so that, for example, it generates information that is automatically inserted into another field.&lt;/p>
-&lt;p>For example, you could apply a &amp;lsquo;&lt;strong>Set date&lt;/strong>&amp;rsquo; rule to your &amp;lsquo;&amp;rsquo;&lt;strong>Order Received&lt;/strong>&amp;rsquo; toggle field so that it generates a date to be displayed in a &amp;lsquo;&lt;strong>Date received&lt;/strong>&amp;rsquo; field when &lt;strong>Order received&lt;/strong> is selected by the user - this will mean that when the user selects the Order Received toggle field, this automatically generates a date stamp for when the order was received:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-rule-date.jpg" alt="Toggle example date rule">&lt;/p>
-&lt;p>To learn more about applying rules to fields, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>. To find out more about the specific rule added in our example - where a date is automatically populated in another field - go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field">Set form field&lt;/a>.&lt;/p>
-&lt;h4 id="how-to-move-a-toggle-field">How to move a Toggle field&lt;/h4>
-&lt;p>To move a &lt;strong>Toggle field&lt;/strong>:&lt;/p>
-&lt;ol>
-&lt;li>Simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
-&lt;li>Drag and drop the field wherever you want to move it to within your form&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-move.jpg" alt="Toggle field drag handle">&lt;/p>
-&lt;h4 id="how-to-delete-a-toggle-field">How to delete a Toggle field&lt;/h4>
-&lt;p>To delete a &lt;strong>Toggle field&lt;/strong> from your form:&lt;/p>
-&lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
-&lt;/ol>
-&lt;h3 id="how-to-edit-toggle-field-properties">How to edit Toggle field properties&lt;/h3>
-&lt;p>To view or edit the field properties associated with a &lt;strong>Toggle field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-field-properties.jpg" alt="Toggle field properties">&lt;/p>
-&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Toggle field&lt;/strong> titled &amp;lsquo;Approve Training Request&amp;rsquo; are shown here and include:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Toggle&lt;/strong> field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Approve Training Request&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the Toggle field title will be shown in the form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Required&lt;/strong> - If this is selected, the Toggle field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Visible&lt;/strong> - If this is selected, the Toggle field will be visible in the form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Toggle field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
-&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
-&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Toggle controls&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>
