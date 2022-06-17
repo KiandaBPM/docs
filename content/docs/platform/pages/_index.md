@@ -29,7 +29,7 @@ When you are in **View mode**, the **Edit** button ![Edit button](/images/edit.p
 ![View mode](/images/dashboardgeneral.png)
 
 ### Dashboards Edit mode ###
-When you click on the **Edit** button ![Edit button](/images/edit.png) you will be in **Edit mode**. When you are viewing a page in Edit mode, these options will be available to you along the top of the dashboard page:
+When you click on the **Edit** button ![Edit button](/images/edit-current-page.jpg) you will be in **Edit mode**. When you are viewing a page in **Edit mode**, these options will be available to you along the top of the dashboard page:
 
 - the **Widget menu** where you can insert any of the seven available dashboard widgets
 - the **Settings** button ![Settings](/images/settings.png) to make changes to the dashboard page
@@ -56,9 +56,9 @@ Kianda offers a user-friendly interface to create dashboards in minutes. This vi
 
 To create a new Dashboard page:
 
-1. Go to **Home** ![Home button](/images/home.png) in the left-hand pane
-2. Click on **Create a new page** icon ![Create a new page](/images/createnew.png)
-3. A **Create dashboard page** dialog box will open, allowing you to choose from a range of options:
+1. Click on **Home** ![Home button](/images/dashboard-home.jpg) in the left-hand pane
+2. Click on the **Create a new page** icon ![Create a new page](/images/dashboard-create-new-page.jpg)
+3. A **Create dashboard page** dialog box will open, allowing you to choose from a range of options for your new dashboard page:
 
 	![Create dashboard page dialog box](/images/dashboard-dialog.jpg)
 
@@ -72,7 +72,11 @@ The options in the **Create dashboard page** dialog box include:
 
   ![Dashboard page visible to](/images/dashboard-visible-to.jpg)
 
-- **Icon** - You can choose an icon for your dashboard page from a drop-down list of hundreds of available icons. This will appear next to the dashboard when you click on **Dashboard** in the left side menu to view all of the available dashboards:
+- **Icon** - You can choose an icon for your dashboard page from a drop-down list of hundreds of available icons. 
+
+  ![Dashboard icon drop down menu](/images/dashboard-icon.jpg)
+
+  The icon you select will appear next to the dashboard title when you click on **Dashboard** in the left side menu to view all of the available dashboards:
 
   ![Dashboard page icon example](/images/dashboard-icon-example.jpg)
 
@@ -80,51 +84,60 @@ The options in the **Create dashboard page** dialog box include:
 
 - **Group** - define a group who will use this dashboard, for example HR managers
 
-- **Enable favourites** - Select this checkbox if you want to enable an '**Add to favourites** button to the top menu in the dashboard. Once you complete the **Create dashboard page** dialog box and click **OK** and then click the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg)in the top dashboard menu, a new '**Add to favourites**' button will be added to your top dashboard menu:
+- **Enable favourites** - Select this checkbox if you want to insert an '**Add to favourites**' button to the top menu in the dashboard. 
 
-  ![Dashboard Add to favourites button](/images/dashboard-favourites-button.jpg)
+  Once you complete the **Create dashboard page** dialog box and click **OK**, and then click the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg)in the top dashboard menu, a new '**Add to favourites**' button will be added to your top dashboard menu:
+
+  ![Dashboard Add to favourites button being clicked](/images/dashboard-favourites-button.jpg)
 
   If you want to add the current dashboard to your favourites:
 
-  - Click the **Add to favourites** button
+  - Click the **Add to favourites** button ![Dashboard Add to favourites button star icon](/images/dashboard-favourites-star.jpg)
 
-  - Complete the **Add to favourite** dialog box that opens and then click the **Add to favourite** button to add the dashboard to your favourites (or click **Close** to cancel adding it to your favourites)
+  - Complete the **Add to favourite** dialog box that opens and then click the **Add favourite** button to add this dashboard to your favourites (or click **Close** to cancel adding it to your favourites):
 
     ![Dashboard Add to favourite dialog box](/images/dashboard-favourites-dialog.jpg)
 
-  - If you click 'Add favourite' A pop-up message will display saying '**Favourite saved successfully**' and a star will now appear next to this dashboard page in the Dashboards menu in the main left side menu (denoting that it is a favourite page).
+  - If you click '**Add favourite**', the dialog box will close and a pop-up message will display saying '**Favourite saved successfully**'. A new star icon will now appear next to this dashboard page in the Dashboards menu in the main left side menu (denoting that it is a favourite page).
 
-4. Click on the **OK** button when you are finished editing the field to save your changes or click on **Close** to exit the dialog box without saving.
+    ![Favourited dashboard page with star](/images/dashboard-favourites-example.jpg)
+
+4. Click on the **OK** button when you are have completed the **Create dashboard page** dialog box (or click on **Close** to close the dialog box and cancel the creation of the new dashboard page).
 
 5. The output is a menu with a number of widgets available that you can add to the dashboard. Go to [Dashboard widgets](#dashboard-widgets) to find out more about each widget type.
 
-![Widget menu](/images/widgetmenu_resized.png)
+	![Widget menu](/images/dashboard-widget-menu.jpg)
 
-6. Save any changes you make to the new Dashboard page by clicking on the **Save** button ![Save button](/images/save.png) in the top menu to ensure your changes are saved - a pop-up message saying '**Page saved successfully**' will display.
-7. You are now in **View mode**. To make further changes to the dashboard page, return to **Edit mode** by clicking on the **Edit** button ![Edit button](/images/edit.png) in the top menu.
+6. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg)in the top menu to save any changes you make to the new Dashboard page - a pop-up message saying '**Page saved successfully**' will display. 
+
+   Alternatively, if you don't want to save the changes you've made to the page, click on the **Stop editing page** button to return to **View mode** without saving changes:
+
+   ![Dashboard stop editing page button](/images/dashboard-stop-editing-page.jpg)
+
+7. You are now in **View mode**. To make further changes to the dashboard page, return to **Edit mode** by clicking on the **Edit** button ![Edit button](/images/edit-current-page.jpg) in the top menu.
 
 To edit a Dashboard page:
 
+1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
 1. Click on the **Settings** button ![Settings](/images/settings.png) - see [Dashboard page settings](#dashboard-page-settings) for more details.
 
 If you want to delete a Dashboard page:
 
-1. Click on the **Trash/Bin** icon ![Bin](/images/bin.png). 
+1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
 
-2. A **Delete page** dialog box will open:
+2. Click on the **Trash/Bin** icon ![Bin](/images/bin.png).
 
-   ![Delete dashboard dialog box](/images/dashboard-delete.jpg)
+3. A **Delete page** dialog box will open:
 
-3. Click on **OK** to confirm that you want to delete the dashboard page (or click on **Cancel** to cancel the deletion).
+   ![Delete dashboard dialog box](/images/dashboard-delete2.jpg)
 
-   
+4. Click on **OK** to confirm that you want to delete the dashboard page (or click on **Cancel** to cancel the deletion).
 
-   
 
 
 ### Dashboard widgets ###
 
-Kianda comes with 7 predefined dashboard widgets. Using these widgets, you can quickly and easily create a process dashboard in minutes. 
+Kianda comes with **7 predefined dashboard widgets**. Using these widgets, you can quickly and easily create a process dashboard in minutes. 
 
 The dashboard widgets include:
 
@@ -142,7 +155,7 @@ The dashboard widgets include:
 
 - **Walk-through widget**: The Walk-through widget allows you to create a walk-through of a process quickly which could be made available to a user, group or organisation. See [Walk through widget](/docs/platform/pages/walkthrough/) for more details.
 
-When you have added one or more widgets, you can move the widgets around the dashboard page using the **Drag handle** button. This is possible when you are in **Edit mode**, see [Edit mode and View mode](#edit-mode-and-view-mode).
+When you have added one or more dashboard widgets, you can move the widgets around the dashboard page using the **Drag handle** button. This is possible when you are in **Edit mode**, see [Edit mode and View mode](#edit-mode-and-view-mode).
 
 ![Drag handle button](/images/draghandle.png)
 
@@ -151,16 +164,20 @@ When you have added one or more widgets, you can move the widgets around the das
 
 ### Dashboard page settings ###
 
-When you click on the **Settings** button ![Settings](/images/settings.png) an **Edit dashboard page** dialog box opens. 
+To edit a Dashboard page:
+
+1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
+2. Click on the **Settings** button ![Settings](/images/settings.png).
+3. An **Edit dashboard page** dialog box opens:
+
+![Edit dashboard page dialog box](/images/dashboard-edit-dialog.jpg)
 
 The options available are the same as those available in the **Create dashboard page** dialog box used to create a new dashboard page  - see [How to get started](#how-to-get-started) - but there are also **two** additional options:
 
-- **Display in mobile footer** - Select this checkbox to display in mobile footer
-- **Hide from navigation** - Select this checkbox if you want to hide the dashboard from navigation 
+- **Display in mobile footer** - Select this checkbox to display in mobile footer.
+- **Hide from navigation** - Select this checkbox if you want to hide the dashboard from navigation in the left side menu.
 
-![Dashboard settings](/images/dashsettings.png)
-
-Click on the **OK** button when you are finished making the changes you want to the dashboard page to save your changes (or click on **Close** to exit the dialog box without saving).
+4. Click on the **OK** button to save the changes you have made in the **Edit dashboard page** dialog box (or click on **Close** to exit the dialog box without saving).
 
 
 
