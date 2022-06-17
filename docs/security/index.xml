@@ -1,5 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Platform security</title><link>https://docs.kianda.com/docs/security/</link><description>Recent content in Platform security on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Workspace security</title><link>https://docs.kianda.com/docs/security/workspace-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/workspace-security/</guid><description>
-&lt;p>There are a number of different ways of setting security within your Kianda workspace. Security refers to both access to processes as a Designer, and access to process instances.&lt;/p>
+&lt;p>There are a number of different ways of setting security within your &lt;strong>Kianda workspace&lt;/strong>. Security refers to both access to processes as a Designer, and access to process instances.&lt;/p>
 &lt;h2 id="security-privileges-by-role">Security privileges by role&lt;/h2>
 &lt;p>The Kianda platform allows for &lt;strong>different security privileges to be set for different types of users&lt;/strong>, making administration of users and their access rights easy to manage. The following are &lt;strong>the different roles&lt;/strong> users can be assigned on Kianda – each has certain &lt;strong>default permissions&lt;/strong>:&lt;/p>
 &lt;ul>
@@ -25,6 +25,15 @@
 &lt;p>&lt;em>Edit form dialog box&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/04/edit-form-dialog-box.gif" alt="img">&lt;/p>
 &lt;p>Select the &lt;strong>Enable quick actions&lt;/strong> checkbox, then select one or more of the checkboxes for the three options that appear below it (as shown in the image). For each of the options you select, click on the ellipsis button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis-1.png" alt="ellipsis button used to select users and groups"> and select from Users, Groups and Partners, and/or check the box to &lt;strong>Allow form owners&lt;/strong> the particular action – for example, re-assignment means the chosen users can click on the &lt;strong>quick action&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/quick-action-1.png" alt="Quick action button on forms"> in the form and &lt;strong>reassign&lt;/strong> the form to someone else.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Workspace security&lt;/strong>, find out more about other security access levels:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/security/process-level-security/">Process level security&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/security/sso/">Single Sign-On&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/security/data-residency/">Data residency&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Process security</title><link>https://docs.kianda.com/docs/security/process-level-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/process-level-security/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>In addition to [Workspace security](, se/docs/security/workspace-security/) that is setting levels of access by role and form ownership, there are a multitude of ways to set access at a process, field and dashboard level. The following sections describe security at different levels.&lt;/p>
 &lt;h2 id="process-security-settings">Process security settings&lt;/h2>
 &lt;p>When you are creating or editing a process in Kianda Designer, you can set security settings for that process. This setting will &lt;strong>apply to every record (instance)&lt;/strong> created from that process. To do this, click on the process in Designer and then, in the right-hand pane, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/settings.png" alt="Process settings button"> and select the checkbox beside &lt;strong>Enable process security.&lt;/strong>&lt;/p>
 &lt;p>Choose an individual user, groups or partner or combination, to be ‘security users’ and then choose from one of three security modes, as shown in here.&lt;/p>
@@ -97,13 +106,14 @@
 &lt;li>
 &lt;p>Save the changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-dash.png" alt="Save button"> at the top of the page.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Docs: Field level security</title><link>https://docs.kianda.com/docs/security/form-and-field-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/form-and-field-security/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Instance or record level security</title><link>https://docs.kianda.com/docs/security/record-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/record-security/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Single Sign On (SSO)</title><link>https://docs.kianda.com/docs/security/sso/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/sso/</guid><description>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Process level security&lt;/strong>, find out more about other security access levels:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/security/workspace-security/">Workspace security&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/security/sso/">Single Sign-On&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/security/data-residency/">Data residency&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Single Sign On (SSO)</title><link>https://docs.kianda.com/docs/security/sso/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/sso/</guid><description>
 &lt;p>&lt;em>Note: If the Single-Sign-On is already enabled and if you wish to disable it. Try to clear the cache memory and&lt;/em> &lt;em>login to&lt;/em> Kianda by entering &lt;em>your password first and then the username.&lt;/em>&lt;/p>
 &lt;p>Enabling Single-Sign-On allows the user to login via Single-Sign-On connector. This connector could be SharePoint, Office365 or anything else. To enable Single-Sign-On, please follow the below steps:&lt;/p>
 &lt;ol>
