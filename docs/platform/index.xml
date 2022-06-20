@@ -447,7 +447,7 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;p>When you have added one or more dashboard widgets, you can move the widgets around the dashboard page using the &lt;strong>Drag handle&lt;/strong> button. This is possible when you are in &lt;strong>Edit mode&lt;/strong>, see &lt;a href="#edit-mode-and-view-mode">Edit mode and View mode&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/draghandle.png" alt="Drag handle button">&lt;/p>
-&lt;h3 id="dashboard-page-settings">Dashboard page settings&lt;/h3>
+&lt;h3 id="how--to-edit-dashboard-page-settings">How to edit Dashboard page settings&lt;/h3>
 &lt;p>To edit a Dashboard page:&lt;/p>
 &lt;ol>
 &lt;li>Click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button">to go into &lt;strong>Edit mode&lt;/strong>.&lt;/li>
@@ -457,8 +457,13 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-dialog.jpg" alt="Edit dashboard page dialog box">&lt;/p>
 &lt;p>The options available are the same as those available in the &lt;strong>Create dashboard page&lt;/strong> dialog box used to create a new dashboard page - see &lt;a href="#how-to-get-started">How to get started&lt;/a> - but there are also &lt;strong>two&lt;/strong> additional options:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Display in mobile footer&lt;/strong> - Select this checkbox to display in mobile footer.&lt;/li>
-&lt;li>&lt;strong>Hide from navigation&lt;/strong> - Select this checkbox if you want to hide the dashboard from navigation in the left side menu.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Display in mobile footer&lt;/strong> - Select this checkbox to display in mobile footer.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Hide from navigation&lt;/strong> - Select this checkbox if you want to hide this dashboard from the navigation in the left side menu.&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: Selecting this option will override whatever options you may have inserted in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box. Selecting &lt;strong>Hide from navigation&lt;/strong> will mean the dashboard page will not be visible to anyone in the main side menu.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;ol start="4">
 &lt;li>Click on the &lt;strong>OK&lt;/strong> button to save the changes you have made in the &lt;strong>Edit dashboard page&lt;/strong> dialog box (or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving).&lt;/li>
