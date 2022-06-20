@@ -80,9 +80,9 @@ The options in the **Create dashboard page** dialog box include:
 
   ![Dashboard page icon example](/images/dashboard-icon-example.jpg)
 
-- **Sort order** - Choose a numeric value to sort on by clicking on the up down arrows at the right of the field ![Up down arrows](/images/up-down-arrows.jpg)
+- **Sort order** - Choose a numeric value - by either typing it into the field or by clicking on the up down arrows at the right of the field ![Up down arrows](/images/up-down-arrows.jpg) - for the place you want this dashboard to go in terms of the order of the dashboard pages in your main left side menu.
 
-- **Group** - define a group who will use this dashboard, for example HR managers
+- **Group** - You can choose to group this dashboard as a sub-page of an existing dashboard page. If you want to do this, insert the name of the dashboard page you want to group this new dashboard page under.
 
 - **Enable favourites** - Select this checkbox if you want to insert an '**Add to favourites**' button to the top menu in the dashboard. 
 
