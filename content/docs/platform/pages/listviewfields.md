@@ -2,8 +2,6 @@
 title: "List view fields"
 typora-root-url: ..\..\..\..\static
 ---
-# List view fields #
-
 When you choose the List widget for your dashboard, there are a number of ways to select fields that you want to view.
 
 1. Click on the **Pen** button ![Pen button](images/pen.png)in the widget you have created, to see the **List view fields** visible in the right-hand pane.
