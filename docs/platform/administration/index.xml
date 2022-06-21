@@ -414,7 +414,7 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Users &amp; Groups</title><link>https://docs.kianda.com/docs/platform/administration/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/users/</guid><description>
 &lt;p>The &lt;strong>Users&lt;/strong> function is available to users with the &lt;strong>Administrator&lt;/strong> role and is found in the left-hand side pane under &lt;strong>Administration&lt;/strong>. This function allows you to manage users and groups in your Kianda workspace.&lt;/p>
-&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To access the &lt;strong>Users&lt;/strong> function:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -426,9 +426,9 @@
 &lt;p>The two main areas are &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong>. These two areas are explained in more detail below.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="users">Users&lt;/h3>
+&lt;h2 id="users">Users&lt;/h2>
 &lt;p>Existing support tickets appear within this section, showing the &lt;strong>name&lt;/strong> of the user, &lt;strong>email&lt;/strong>, &lt;strong>role&lt;/strong> and whether they are &lt;strong>active&lt;/strong> or not in the system.&lt;/p>
-&lt;h4 id="to-view-existing-user-details">To view existing user details:&lt;/h4>
+&lt;h3 id="to-view-existing-user-details">To view existing user details&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>Click on the &lt;strong>name&lt;/strong> of a user and the user details appear.&lt;/p>
@@ -438,31 +438,51 @@
 &lt;p>In the details box you can edit a user&amp;rsquo;s:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>First name&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>First name&lt;/strong> - user first name&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Last name&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Last name&lt;/strong> - user last name&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Display name&lt;/strong> - how their name will display in the system&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Primary role&lt;/strong> - click on &lt;strong>More roles&lt;/strong> to see additional roles and choose from six system defined roles,&lt;/p>
+&lt;p>&lt;strong>Primary role&lt;/strong> - click on &lt;strong>More roles&lt;/strong> to see additional roles and choose from six system defined roles:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>User&lt;/strong> - lowest level of access where users with this role can access dashboards and forms, Help and Account details&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Phone number&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Administrator&lt;/strong> - highest level of access where users with this role can access all functions under &lt;strong>Administration&lt;/strong> such as &lt;strong>Designer&lt;/strong> and &lt;strong>Developer&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Profile picture URL&lt;/strong> - browse on a laptop or network to add a profile photo for the user&lt;/p>
+&lt;p>&lt;strong>Manage partners&lt;/strong> - users with this role can access the same areas as &lt;strong>User&lt;/strong> as well as the &lt;strong>Invite partners&lt;/strong> function under &lt;strong>Administration&lt;/strong> to create shared processes for business partners.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Active&lt;/strong> checkbox - by default this checkbox is checked but you can uncheck it to disable a user&amp;rsquo;s account&lt;/p>
+&lt;p>&lt;strong>Design business process&lt;/strong> - users with this role can access the same areas as &lt;strong>User&lt;/strong> as well as the &lt;strong>Designer&lt;/strong> function under &lt;strong>Administration&lt;/strong> to create and manage processes and form designs.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Profile properties&lt;/strong> - click on this option to see additional properties that you can define, see ************&lt;/p>
+&lt;p>&lt;strong>Manage datasources&lt;/strong> - users with this role can access the same areas as &lt;strong>User&lt;/strong> as well as the &lt;strong>Data sources&lt;/strong> function under &lt;strong>Administration&lt;/strong> to create and manage data sources such as connections to SAP, Dropbox, SharePoint and Salesforce.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Group membership&lt;/strong> - click on this option to see the groups that a user is added to. Click on the red x symbol &lt;img src="https://docs.kianda.com/images/redx.jpg" alt="Red x"> to remove a user from a group.&lt;/p>
+&lt;p>&lt;strong>Developer&lt;/strong> - users with this role can access the same areas as &lt;strong>User&lt;/strong> as well as the &lt;strong>Developes&lt;/strong> function under &lt;strong>Administration&lt;/strong> to create custom widgets for fields/controls, rules and dashboards.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Phone number&lt;/strong> - user phone number&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Profile picture URL&lt;/strong> - click on &lt;strong>Browse&lt;/strong> to browse for a profile picture on a laptop or network drive to add a profile photo for the user.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Active&lt;/strong> checkbox - by default this checkbox is checked but you can &lt;strong>uncheck it to disable&lt;/strong> a user&amp;rsquo;s account.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Profile properties&lt;/strong> - click on this option to see additional properties that you can define, see &lt;a href="#modify-profile-attributes">Modify profile attributes&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Group membership&lt;/strong> - click on this option to see the groups that a user is added to. Click on the red x button &lt;img src="https://docs.kianda.com/images/redx.jpg" alt="Red x"> to remove a user from a group.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -470,18 +490,19 @@
 &lt;p>When you are finished editing a user&amp;rsquo;s details, click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h4 id="to-create-a-new-user">To create a new user:&lt;/h4>
+&lt;h3 id="to-create-a-new-user">To create a new user&lt;/h3>
 &lt;ol>
 &lt;li>Click on the &lt;strong>Create new user&lt;/strong> button.&lt;/li>
-&lt;li>Complete the fields as listed in step 2 in the &lt;a href="#to-view-existing-user-details">Existing users&lt;/a> above. If additional profile properties have been set for the workspace, add in details for those properties.&lt;/li>
+&lt;li>Complete the fields as listed in step 2 in &lt;a href="#to-view-existing-user-details">To view existing user details&lt;/a> above. If additional profile properties have been set for the workspace, add in details for those properties.&lt;/li>
 &lt;li>Check the &lt;strong>Send welcome email&lt;/strong> check box if you wish to have a system generated email sent to the new user.&lt;/li>
 &lt;li>View Group membership.&lt;/li>
 &lt;li>When you are finished editing a user&amp;rsquo;s details, click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/create-new-user.jpg" alt="User profile properties and group membership">&lt;/p>
-&lt;h3 id="groups">Groups&lt;/h3>
+&lt;h4 id="modify-profile-attributes">Modify profile attributes&lt;/h4>
+&lt;h2 id="groups">Groups&lt;/h2>
 &lt;p>You can group users into defined groups which can be used in various ways in the platform, for example to create a group of form owners, to allow group selection in a user picker field, and create a group of administrators for a process.&lt;/p>
-&lt;h4 id="viewing-and-editing-group-members">Viewing and editing group members&lt;/h4>
+&lt;h3 id="viewing-and-editing-group-members">Viewing and editing group members&lt;/h3>
 &lt;ol>
 &lt;li>Click on the radio button beside the group name to see the group members.&lt;/li>
 &lt;/ol>
@@ -496,7 +517,7 @@
 &lt;p>&lt;strong>Note&lt;/strong>: You can only add users to groups, if you yourself are an administrator for the group, see next section.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h4 id="viewing-and-editing-group-details">Viewing and editing group details&lt;/h4>
+&lt;h3 id="viewing-and-editing-group-details">Viewing and editing group details&lt;/h3>
 &lt;ol>
 &lt;li>Click on the &lt;strong>group name&lt;/strong> to see details for a group.&lt;/li>
 &lt;li>The &lt;strong>Edit group &amp;lsquo;Name&amp;rsquo;&lt;/strong> dialog box appears.&lt;/li>
@@ -524,6 +545,6 @@
 &lt;p>To delete a group, click on the &lt;strong>Bin/Trash&lt;/strong> icon.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/help">Help&lt;/a>.&lt;/p></description></item></channel></rss>
