@@ -119,7 +119,7 @@ The options in the **Create dashboard page** dialog box include:
 To edit a Dashboard page:
 
 1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
-1. Click on the **Settings** button ![Settings](/images/settings.png) - see [Dashboard page settings](#dashboard-page-settings) for more details.
+1. Click on the **Settings** button ![Settings](/images/settings.png) - see [How to edit Dashboard page settings](#how-to-edit-dashboard-page-settings) for more details.
 
 If you want to delete a Dashboard page:
 
@@ -162,7 +162,7 @@ When you have added one or more dashboard widgets, you can move the widgets arou
   
 
 
-### How  to edit Dashboard page settings ###
+### How to edit Dashboard page settings ###
 
 To edit a Dashboard page:
 
@@ -174,11 +174,13 @@ To edit a Dashboard page:
 
 The options available are the same as those available in the **Create dashboard page** dialog box used to create a new dashboard page  - see [How to get started](#how-to-get-started) - but there are also **two** additional options:
 
-- **Display in mobile footer** - Select this checkbox to display in mobile footer.
+- **Display in mobile footer** - Select this checkbox to display a link to the dashboard in the footer of a mobile phone when the Kianda workspace is accessed on a mobile. Here we can see the example of a link to a dashboard page called 'Staff onboarding' available in the footer of a mobile phone:
+
+  ![Display dashboard in mobile phone footer](/images/dashboard-mobile-footer.jpg)
 
 - **Hide from navigation** - Select this checkbox if you want to hide this dashboard from the navigation in the left side menu. 
 
-  **Note**: Selecting this option will override whatever options you may have inserted in the '**Visible to**' option in the **Create dashboard page** dialog box. Selecting **Hide from navigation** will mean the dashboard page will not be visible to anyone in the main side menu.
+  **Note**: Selecting this option will override whatever options you may have inserted in the '**Visible to**' option in the **Create dashboard page** dialog box (which allows you to restrict who can see the dashboard). Selecting **Hide from navigation** will mean the dashboard page will not be visible to anyone in the main side menu.
 
 4. Click on the **OK** button to save the changes you have made in the **Edit dashboard page** dialog box (or click on **Close** to exit the dialog box without saving).
 
