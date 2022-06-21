@@ -6,8 +6,7 @@ typora-root-url: ..\..\..\..\static
 The **Users** function is available to users with the **Administrator** role and is found in the left-hand side pane under **Administration**. This function allows you to manage users and groups in your Kianda workspace.
 
 
-
-### How to get started
+## How to get started
 
 To access the **Users** function:
 
@@ -23,11 +22,13 @@ To access the **Users** function:
 
    
 
-### Users
+## Users
 
 Existing support tickets appear within this section, showing the **name** of the user, **email**, **role** and whether they are **active** or not in the system.  
 
-#### To view existing user details:
+
+
+### To view existing user details
 
 1. Click on the **name** of a user and the user details appear.
 
@@ -35,45 +36,57 @@ Existing support tickets appear within this section, showing the **name** of the
 
 2. In the details box you can edit a user's:
 
-   - **First name**
+   - **First name** - user first name
 
-   - **Last name**
+   - **Last name** - user last name
 
    - **Display name** - how their name will display in the system
 
-   - **Primary role** - click on **More roles** to see additional roles and choose from six system defined roles, 
+   - **Primary role** - click on **More roles** to see additional roles and choose from six system defined roles:
+     - **User** - lowest level of access where users with this role can access dashboards and forms, Help and Account details
 
-   - **Phone number**
+     - **Administrator** - highest level of access where users with this role can access all functions under **Administration** such as **Designer** and **Developer**.
 
-   - **Profile picture URL** - browse on a laptop or network to add a profile photo for the user
+     - **Manage partners** - users with this role can access the same areas as **User** as well as the **Invite partners** function under **Administration** to create shared processes for business partners.
 
-   - **Active** checkbox - by default this checkbox is checked but you can uncheck it to disable a user's account
+     - **Design business process** - users with this role can access the same areas as **User** as well as the **Designer** function under **Administration** to create and manage processes and form designs.
 
-   - **Profile properties** - click on this option to see additional properties that you can define, see ************
+     - **Manage datasources** - users with this role can access the same areas as **User** as well as the **Data sources** function under **Administration** to create and manage data sources such as connections to SAP, Dropbox, SharePoint and Salesforce.
 
-   - **Group membership** - click on this option to see the groups that a user is added to. Click on the red x symbol  ![Red x](/images/redx.jpg) to remove a user from a group. 
+     - **Developer** - users with this role can access the same areas as **User** as well as the **Developes** function under **Administration** to create custom widgets for fields/controls, rules and dashboards.
+
+   - **Phone number** - user phone number
+
+   - **Profile picture URL** - click on **Browse** to browse for a profile picture on a laptop or network drive to add a profile photo for the user.
+
+   - **Active** checkbox - by default this checkbox is checked but you can **uncheck it to disable** a user's account.
+
+   - **Profile properties** - click on this option to see additional properties that you can define, see [Modify profile attributes](#modify-profile-attributes)
+
+   - **Group membership** - click on this option to see the groups that a user is added to. Click on the red x button  ![Red x](/images/redx.jpg) to remove a user from a group. 
 
 3. When you are finished editing a user's details, click on **OK**, or click on **Close** to exit the dialog box. 
 
  
 
-#### To create a new user:
+### To create a new user
 
 1. Click on the **Create new user** button.
-2. Complete the fields as listed in step 2 in the [Existing users](#to-view-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties.
+2. Complete the fields as listed in step 2 in [To view existing user details](#to-view-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties.
 3. Check the **Send welcome email** check box if you wish to have a system generated email sent to the new user. 
 4. View Group membership.
 5. When you are finished editing a user's details, click on **OK**, or click on **Close** to exit the dialog box. 
 
 ![User profile properties and group membership](/images/create-new-user.jpg)
 
+#### Modify profile attributes
 
 
-### Groups
+## Groups
 
 You can group users into defined groups which can be used in various ways in the platform, for example to create a group of form owners, to allow group selection in a user picker field, and create a group of administrators for a process.
 
-#### Viewing and editing group members
+### Viewing and editing group members
 
 1. Click on the radio button beside the group name to see the group members. 
 
@@ -89,7 +102,7 @@ You can group users into defined groups which can be used in various ways in the
 
 
 
-#### Viewing and editing group details
+### Viewing and editing group details
 
 1. Click on the **group name** to see details for a group.
 2. The **Edit group 'Name'** dialog box appears. 
@@ -109,7 +122,7 @@ You can group users into defined groups which can be used in various ways in the
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+## What's next  ![Idea icon](/images/18.png) ###
 
 To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
 
