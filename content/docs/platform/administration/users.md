@@ -74,7 +74,7 @@ Existing support tickets appear within this section, showing the **name** of the
 1. Click on the **Create new user** button.
 2. Complete the fields as listed in step 2 in [To view existing user details](#to-view-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties.
 3. Check the **Send welcome email** check box if you wish to have a system generated email sent to the new user. 
-4. View Group membership.
+4. Click on **Group membership** to view a user's group membership, see [Groups](Groups)
 5. When you are finished editing a user's details, click on **OK**, or click on **Close** to exit the dialog box. 
 
 ![User profile properties and group membership](/images/create-new-user.jpg)
