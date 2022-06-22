@@ -203,9 +203,9 @@ Another way of validating input is to use the **validate input rule** this allow
 
 In the form designer, almost any of the components can be cloned. This will increase your productivity considerably and will make creating multi-step processes a breeze.
 
-To clone either a field a panel or even a form simple select the component then click the clone button in the  properties panel in the right-hand side of the panel.
+To clone either a field, a panel or even a form, simply select the component then click the clone button in the  properties panel in the right-hand side of the panel.
 
-If cloning a field the cloning dialog will prompt for the destination of the new cloned field, once your choice is made, simply click ok.
+If cloning a field, the cloning dialog box will prompt for the destination of the new cloned field, once your choice is made, simply click ok.
 
 ***Cloning a form***
 
@@ -219,13 +219,9 @@ If cloning a field the cloning dialog will prompt for the destination of the new
 
 ## Custom fields
 
-Custom fields section provides access to fields that are built for extensibility of Kianda capabilities. It is particularly useful in those situations where existing fields or rules will not provide the required functionality.
+The Custom fields section provides access to fields that are built for extensibility of Kianda capabilities. It is particularly useful in those situations where existing fields or rules will not provide the required functionality.
 
-Custom fields have the purpose of providing a user interface for end-users. If you need to build "an action" then you should use a custom rule widget.
-
-It allows a developer to build a reusable component that would then be used by process designers in real processes.
-
-Check-out the [development](development.md) section for more details on how to build custom widgets in Kianda.
+Custom fields have the purpose of providing a user interface for end-users. These custom fields can be built by developers. It allows a developer to build a reusable component that would then be used by process designers in real processes. Check-out the [development](/docs/getting-started/welcome/low-code/) section for more details on how to build custom widgets in Kianda.
 
 ## Advanced techniques
 
@@ -233,7 +229,7 @@ Like the cascading dropdown discussed above, several other advanced scenarios ca
 
 - **Repeating section** - A repeating section can be created by adding a **panel** to a table field. This table can be configured to include a single column made of the panel that itself will include the repeating fields of your repeating section.
 - **The capture of media** - Kianda enables mobile users to directly capture pictures, video or audio just like a native application.
--  **Background save** - By making use of PWA principles (Progressive Web Application) Kianda allows the ability to perform background operations. This is useful when, for example, a mobile user picks-up their phone to perform a quick action and places it back in his pocket. Operations will continue in the background allowing all data to be captured.
+-  **Background save** - By making use of PWA principles (Progressive Web Application), Kianda allows the ability to perform background operations. This is useful when, for example, a mobile user picks-up their phone to perform a quick action and places it back in his pocket. Operations will continue in the background allowing all data to be captured.
 - **Image annotation** - Kianda allows for image annotation online or offline.
 - **Multi-column / row layout** - Making multi-column responsive interfaces is quite easy. Simply add two panels into a form that only use half of the screen (6 columns) then add fields inside panels and you have multiple column layouts. Adding a panel using 12 columns gives you a row.
 - **Form tab colour and icon** - Form tabs can be quickly customised to display their icons or tab colours, it is also possible to define custom colours for selected and completed form tabs.
