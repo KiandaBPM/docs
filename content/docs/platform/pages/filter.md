@@ -1,5 +1,6 @@
 ---
 title: "Filter widget"
+typora-root-url: ..\..\..\..\static
 ---
 
 {{% pageinfo color="primary" %}}

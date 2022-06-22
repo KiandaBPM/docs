@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough widget"
+typora-root-url: ..\..\..\..\static
 ---
 
 {{% pageinfo color="primary" %}}

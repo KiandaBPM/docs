@@ -1,5 +1,6 @@
 ---
 title: "Link widget"
+typora-root-url: ..\..\..\..\static
 ---
 
 {{% pageinfo color="primary" %}}
