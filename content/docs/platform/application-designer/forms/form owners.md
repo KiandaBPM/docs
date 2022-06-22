@@ -7,7 +7,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction
 
-When creating forms, is important to consider **form access** during the design phase, that is who can access and edit forms in a process instance. For example if an employee submits a performance review form, a line manager may wish to access that submitted process instance/record and edit the form, adding in comments and performance grades. 
+When creating forms, it is important to consider **form access** during the design phase, that is who can access and edit forms in a process instance. For example if an employee submits a performance review form, a line manager may wish to access that submitted process instance/record and edit the form, adding in comments and performance grades. 
 
 There are two key principles to keep in mind in terms of **form access**:
 

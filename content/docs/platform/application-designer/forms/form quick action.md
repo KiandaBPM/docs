@@ -43,7 +43,7 @@ To enable quick actions, click on a process with Kianda Designer and then a form
 
     - **When editing auto hide form footer buttons** - hides form footer buttons when users are editing forms in a process instance
 
-    - **Trigger rules on save** - allows rules to be triggered when a form is saved/submitted. In this case select enter the button name used as the trigger in the **Save action field** 
+    - **Trigger rules on save** - allows rules to be triggered when a form is saved/submitted. In this case, select the button name used as the trigger in the **Save action field** 
 
 6. Click on **OK** when complete or **Close** to exit the dialog box. 
 
