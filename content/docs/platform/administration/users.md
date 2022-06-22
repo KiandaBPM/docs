@@ -8,6 +8,10 @@ The **Users** function is available to users with the **Administrator** role and
 
 ## How to get started
 
+Start **typing** *italic* <u>underline</u>
+
+
+
 To access the **Users** function:
 
 1. Click on **Administration** in the left-hand side pane and then click on **Users**. 
@@ -24,15 +28,33 @@ To access the **Users** function:
 
 ## Users
 
-Existing users appear within this section, showing the **name** of the user, **email**, **role** and whether they are **active** or not in the system.  From this main view, you can:
+Existing users appear within this section, showing the **name** of the user, **email**, **role** and whether they are **active** or not in the system.  
+
+![User management main user view](/images/user-mgmt-view.jpg)
+
+From this main view, you can:
 
 - [**view and edit** existing user details](#view-and-edit-existing-user-details)
-- [**create new users**](#create-new-users)
+- [**create a new user**](#create-a-new-user)
 - [create new **profile attributes**](#modify-profile-attributes)
 - [bulk **import and export** users](#import-and-export-users)
 - [**add and remove users** to/from groups](#add-and-remove-users-to/from-groups)
 
-In addition to the above administrative functions, you can also set passwords and delete users from this main view.
+Click on each of the links below to read more about each function. In addition to the above administrative functions, you can also set passwords and delete users from this main view as follows:
+
+- To **reset a password** for a user, click on the **Reset password/key** button ![Reset password/key button](/images/reset-password.jpg) beside a user name. This will open the **reset password** dialog box where you can type in a new password for the user.
+
+![Reset password dialog box](/images/reset-password-box.jpg)
+
+​		When you are finished adding the new password, click on **OK**, or click on **Close** to exit the dialog box. 
+
+- To **delete an existing user**, click on the **Bin/Trash** button beside a user name. 
+
+  ![Delete an existing user](/images/delete-user-popup.jpg)
+
+- Then click on **OK**.
+
+
 
 
 
@@ -95,7 +117,7 @@ In addition to the above administrative functions, you can also set passwords an
 
 As an administrator you can set profile attributes for workspace users within your organisation. For example if your organisation uses particular grade levels for roles, then these can be set using this feature. To modify attributes:
 
-1. Click on the **Profile attributes** button in the main **Users** section.![Profile attributes button](/images/profile-attributes.jpg) 
+1. Click on the **Profile attributes** button in the main **Users** section![Profile attributes button](/images/profile-attributes.jpg).
 
 2. In the **Modify user attributes** dialog box, any existing attributes will be listed under **Property**. To remove an attribute, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin-shared-process.jpg). 
 
