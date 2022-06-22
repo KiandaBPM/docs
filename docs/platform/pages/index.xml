@@ -1,202 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Dashboard pages</title><link>https://docs.kianda.com/docs/platform/pages/</link><description>Recent content in Dashboard pages on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: List widget</title><link>https://docs.kianda.com/docs/platform/pages/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/list/</guid><description>
-&lt;p>The list widget displays the instances of the selected process in a dashboard. The List widget can also be used to connect with any other dashboard widgets to display filtered items.&lt;/p>
-&lt;h2 id="how-to-get-started-with-the-list-widget">How to get started with the List widget&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>After creating a dashboard page, make sure you are in Edit mode, by clicking on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> at the top of the page, so the Widget menu with 7 widget types is available. Then click on the List widget &lt;img src="https://docs.kianda.com/images/listwidget.png" alt="List widget">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The &lt;strong>Add widget&lt;/strong> dialog box opens.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/addlistwidget.png" alt="Add list widget">&lt;/p>
-&lt;p>Choose from the edit options:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - the dashboard title, for example Training Requests&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Layout columns&lt;/strong> - control the size of the dashboard, choose from 1 to 12 columns in width. For example click half-way across the blue bar to create a panel that is 6 columns wide, or click on the right of the blue bar to create a column that is 12 columns wide.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Colour scheme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White Colours for your dashboard.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Show header&lt;/strong> checkbox - tick this checkbox if you wish to show a header on your dashboard.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Visible to&lt;/strong> - determine who will see the dashboard, choose from a) Users b) Groups&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Device visibility&lt;/strong> - choose from icons for desktop, tablet, mobile, wifi and flightmode as to when the device can view the dashboards.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/devicevisibility.png" alt="Device visibility">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing the dashboard to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You can then edit the widget to display certain fields from your form, that relates to the data you are interested in. Go to &lt;a href="#configure-your-widget">Configure your widget&lt;/a> to find out more.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When you are finished making edits, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> in the top menu to ensure your dashboard changes are saved and you see a pop-up message &lt;strong>Page saved successfully&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To make further changes later on, click on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> in the top menu and then click on the &lt;strong>Pen&lt;/strong> button.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/penbutton_frame.png" alt="Pen button in a widget">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To re-edit the title, colour scheme or other options in Step 2, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog.png" alt="Settings button">and the &lt;strong>Edit widget&lt;/strong> dialog box options, allowing you to make changes.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To delete the widget at any stage, click on the &lt;strong>Bin&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin button"> beside the cog button, and then click on &lt;strong>Ok&lt;/strong> to confirm that you want to delete the dashboard page or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="configure-your-widget">Configure your widget&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>Click on the &lt;strong>Update configuration&lt;/strong> or &lt;strong>Pen&lt;/strong> button in a list widget you have created.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/penbutton.png" alt="Chart widget edit">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>A dialog box opens with filter options in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions">in the middle of the box, and list view fields in the right-hand pane. Go to &lt;a href="pages/conditions.md">Conditions&lt;/a> to read more about conditions you can apply to data and go to &lt;a href="pages/listviewfields.md">List view fields&lt;/a> to read more about how to apply fields to your list view.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/listconfig.png" alt="Editing options">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The first option to choose is where the data should originate from using the &lt;strong>Data from&lt;/strong> radio buttons. Choose from a) Process b) Partner process c) Data source. Depending on which option you choose go to the relevant area to read more on &lt;a href="#choosing-data-from-a-process">Choosing data from a Process&lt;/a>, &lt;a href="#choosing-data-from-a-partner-process">Choosing data from a Partner process&lt;/a> and &lt;a href="#choosing-data-from-a-data-source">Choosing data from a Data source&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Once a data source is chosen, then there are a number of other options available, see &lt;a href="#filter-options">Filter options&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When you are finished choosing options, click on the &lt;strong>OK&lt;/strong> button to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="choosing-data-from-a-process">Choosing data from a Process&lt;/h3>
-&lt;p>If you choose data from a Process, then the options below become available.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/processdata2.png" alt="Choosing data from a Process">&lt;/p>
-&lt;p>Choose from the following options:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Business process&lt;/strong> - click into the field to choose a process which will be the input for the dashboard.&lt;/li>
-&lt;li>&lt;strong>Show processes&lt;/strong> - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user.&lt;/li>
-&lt;li>For all other available options see &lt;a href="#filter-options">Filter options&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;h3 id="choosing-data-from-a-partner-process">Choosing data from a Partner Process&lt;/h3>
-&lt;p>If you choose data from a Partner Process, then the options below become available.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/partnerprocess_resized.png" alt="Choosing data from a Process">&lt;/p>
-&lt;p>Choose from the following options:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Partner&lt;/strong> - click into the field to choose from a pre-configured Partner who has created the process you are interested in.&lt;/li>
-&lt;li>&lt;strong>Business process&lt;/strong> - click into the field to choose a process which will be the input for the dashboard.&lt;/li>
-&lt;li>&lt;strong>Show processes&lt;/strong> - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user.&lt;/li>
-&lt;li>For all other available options see &lt;a href="#filter-options">Filter options&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;h3 id="choosing-data-from-a-data-source">Choosing data from a Data source&lt;/h3>
-&lt;p>If you choose data from a Data source, then the options below become available.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dataprocess_resized.png" alt="Choosing data from a Process">&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Click on &lt;strong>Select data source&lt;/strong>. You will be directed to different data sources where you can search in the &lt;strong>datasource tree&lt;/strong> search box or drill down to the data source you want.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/selectdatasource.png" alt="Select data source">&lt;/p>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Data source filter&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>For all other available options see &lt;a href="#filter-options">Filter options&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="filter-options">Filter options&lt;/h3>
-&lt;p>Once you have chosen where the dashboard data will come from then there are a number of other options available.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Choose from the edit options:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Enable sorting&lt;/strong> - choose from a) Yes or b) No if you wish to enable sorting in the dashboard&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable filtering&lt;/strong> - choose from a) Yes or b) No if you wish to enable filtering in the dashboard&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable search&lt;/strong> - choose from a) Yes or b) No if you wish to enable a search in the dashboard&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable &amp;ldquo;Load more&amp;rdquo; mode&lt;/strong> - choose from a) Yes or b) No if you wish to enable more data records to be visible. If you click on &lt;strong>Yes&lt;/strong>, then you can decide on what text should appear on screen, by typing the text in the &lt;strong>Load more button text&lt;/strong> field.&lt;/p>
-&lt;p>Enter a number in &lt;strong>Items per page&lt;/strong> for the number items you wish to load at a time. The default value is &amp;lsquo;20&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Show &amp;lsquo;Add process&amp;rsquo; button&lt;/strong> - choose from a) Yes or b) No if you wish to Add process to your dashboard. If you click on &lt;strong>Yes&lt;/strong>, then you can decide on what text should appear on screen, by typing the text in the &lt;strong>&amp;lsquo;Add process&amp;rsquo; button text&lt;/strong> field.&lt;/p>
-&lt;p>By default, the process used to generate the data is added, click on &lt;strong>No&lt;/strong> beside the Add &amp;lsquo;Process Name&amp;rsquo; by default if you don&amp;rsquo;t wish to add the input process.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Show delete button&lt;/strong> - choose from a) Yes or b) No if you wish to add a Delete button to your dashboard. If you choose &lt;strong>Yes&lt;/strong>, then the option &lt;strong>Enable bulk delete&lt;/strong> appears allowing you to choose a) Yes or b) No to enable bulk deletion of records.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable show history&lt;/strong> - choose from a) Yes or b) No if you wish to show the history of the dashboard.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable data export&lt;/strong> - choose from a) Yes or b) No if you wish to allow data export.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Sort by - click into the Sort By field and choose from options a) Common fields or b) fields within a form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Common fields&lt;/strong> are fields commonly used in dashboards such as &amp;lsquo;Created&amp;rsquo; or &amp;lsquo;Status&amp;rsquo; or choose from a field within a form by clicking and drilling down to the field name that you want to sort by, for example a text box field called &amp;lsquo;Name&amp;rsquo; in a form called &amp;lsquo;Training Request&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When a field is chosen then the options for &lt;strong>Sort Direction&lt;/strong> appear as either a) Ascending or b) Descending.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable empty list template&lt;/strong> - click on a) Yes or b) No to enable.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Go to &lt;a href="#list-view-fields">List view fields&lt;/a> to read about options in the right-hand pane of this dialog box on how to choose fields to filter data.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="list-view-fields">List view fields&lt;/h3>
-&lt;p>When you choose the List widget for your dashboard, there are a number of ways to select fields that you want to view.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Click on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/pen.png" alt="Pen button">in the widget you have created, to see the &lt;strong>List view fields&lt;/strong> visible in the right-hand pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/listconfig_frame.png" alt="List view fields">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Common fields&lt;/strong> to see a list of commonly used dashboard fields such as &amp;lsquo;Status&amp;rsquo;, &amp;lsquo;Created by&amp;rsquo; and &amp;lsquo;Modified&amp;rsquo;. Click on as many fields as needed to add to the dashboard, for example 3 fields are selected below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/commonfields.png" alt="Common fields">&lt;/p>
-&lt;p>Click on &lt;strong>Common fields&lt;/strong> again to close the options.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Design fields&lt;/strong> to see a list of all the fields used in the design of the forms used in the chosen process. For example the Training Process shown below has 2 forms, &amp;lsquo;Training Request&amp;rsquo; and &amp;lsquo;Training Approval&amp;rsquo; and all control fields used in the form design are available to choose as filters for the dashboard. Click on the + symbol to drill down into the form, and click on the relevant fields to use them, for example Name, Type of Training and Management Decision have been chosen below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/designfields.png" alt="Design fields">&lt;/p>
-&lt;p>Click on &lt;strong>Design fields&lt;/strong> again to close the options.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Clicking on &lt;strong>List fields&lt;/strong> shows you a list of all the fields you have already chosen from &lt;strong>Common fields&lt;/strong> and &lt;strong>Design fields&lt;/strong>. There is also an option to &lt;strong>Add column&lt;/strong> and &lt;strong>Add action&lt;/strong>. You can change the order of the fields as they appear in the list from left to right by clicking on the Drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite.png" alt="Drag handle">.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/listfields.png" alt="List fields">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To change the list settings, that is the way the list looks, title and so on, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog.png" alt="Settings button">and go to &lt;a href="pages/list.md">List widget&lt;/a> to find out more about edit options.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When you are finished making edits, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> in the top menu to ensure your dashboard changes are saved and you see a pop-up message &lt;strong>Page saved successfully&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To make further changes later on, click on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> in the top menu and then click on the &lt;strong>Pen&lt;/strong> button.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/penbutton.png" alt="Pen button in a widget">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When you have completed your changes, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-dash.png" alt="Save button"> to save your changes or &lt;strong>X&lt;/strong> to quit without saving.&lt;/p>
-&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Chart widget</title><link>https://docs.kianda.com/docs/platform/pages/chart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/chart/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Dashboard pages</title><link>https://docs.kianda.com/docs/platform/pages/</link><description>Recent content in Dashboard pages on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Chart widget</title><link>https://docs.kianda.com/docs/platform/pages/chart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/chart/</guid><description>
 &lt;p>With the chart widget, you can create pie, bar or line charts. These charts can be used to represent various conditions for a process.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -407,7 +209,205 @@
 &lt;/div></description></item><item><title>Docs: Link widget</title><link>https://docs.kianda.com/docs/platform/pages/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/link/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Rich Text widget</title><link>https://docs.kianda.com/docs/platform/pages/richtext/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/richtext/</guid><description>
+&lt;/div></description></item><item><title>Docs: List widget</title><link>https://docs.kianda.com/docs/platform/pages/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/list/</guid><description>
+&lt;p>The list widget displays the instances of the selected process in a dashboard. The List widget can also be used to connect with any other dashboard widgets to display filtered items.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>After creating a dashboard page, make sure you are in Edit mode, by clicking on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> at the top of the page, so the Widget menu with 7 widget types is available. Then click on the List widget &lt;img src="https://docs.kianda.com/images/listwidget.png" alt="List widget">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Add widget&lt;/strong> dialog box opens.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/addlistwidget.png" alt="Add list widget">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - the dashboard title, for example Training Requests&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout columns&lt;/strong> - control the size of the dashboard, choose from 1 to 12 columns in width. For example click half-way across the blue bar to create a panel that is 6 columns wide, or click on the right of the blue bar to create a column that is 12 columns wide.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Colour scheme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White Colours for your dashboard.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Show header&lt;/strong> checkbox - tick this checkbox if you wish to show a header on your dashboard.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Visible to&lt;/strong> - determine who will see the dashboard, choose from a) Users b) Groups&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Device visibility&lt;/strong> - choose from icons for deshtop, tablet, mobile, wifi and flightmode as to when the device can view the dashboards.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/devicevisibility.png" alt="Device visibility">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing the dashboard to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can then edit the widget to display certain fields from your form, that relates to the data you are interested in. Go to &lt;a href="#configure-your-widget">Configure your widget&lt;/a> to find out more.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished making edits, click on the &lt;strong>Save&lt;/strong> button &lt;img src="images/save.png" alt="Save button"> in the top menu to ensure your dashboard changes are saved and you see a pop-up message &lt;strong>Page saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To make further changes later on, click on the &lt;strong>Edit&lt;/strong> button &lt;img src="images/edit.png" alt="Edit button"> in the top menu and then click on the &lt;strong>Pen&lt;/strong> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/penbutton_frame.png" alt="Pen button in a widget">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To re-edit the title, colour scheme or other options in Step 2, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="images/cog.png" alt="Settings button">and the &lt;strong>Edit widget&lt;/strong> dialog box options, allowing you to make changes.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To delete the widget at any stage, click on the &lt;strong>Bin&lt;/strong> icon &lt;img src="images/bin.png" alt="Bin button"> beside the cog button, and then click on &lt;strong>Ok&lt;/strong> to confirm that you want to delete the dashboard page or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="configure-your-widget">Configure your widget&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Update configuration&lt;/strong> or &lt;strong>Pen&lt;/strong> button in a list widget you have created.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/penbutton.png" alt="Chart widget edit">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A dialog box opens with filter options in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="images/conditions.png" alt="Conditions">in the middle of the box, and list view fields in the right-hand pane. Go to &lt;a href="pages/conditions.md">Conditions&lt;/a> to read more about conditions you can apply to data and go to &lt;a href="pages/listviewfields.md">List view fields&lt;/a> to read more about how to apply fields to your list view.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/listconfig.png" alt="Editing options">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The first option to choose is where the data should originate from using the &lt;strong>Data from&lt;/strong> radio buttons. Choose from a) Process b) Partner process c) Data source. Depending on which option you choose go to the relevant area to read more on &lt;a href="#choosing-data-from-a-process">Choosing data from a Process&lt;/a>, &lt;a href="#choosing-data-from-a-partner-process">Choosing data from a Partner process&lt;/a> and &lt;a href="#choosing-data-from-a-data-source">Choosing data from a Data source&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once a data source is chosen, then there are a number of other options available, see &lt;a href="#filter-options">Filter options&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished choosing options, click on the &lt;strong>OK&lt;/strong> button to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="choosing-data-from-a-process">Choosing data from a Process&lt;/h3>
+&lt;p>If you choose data from a Process, then the options below become available.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/processdata2.png" alt="Choosing data from a Process">&lt;/p>
+&lt;p>Choose from the following options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Business process&lt;/strong> - click into the field to choose a process which will be the input for the dashboard.&lt;/li>
+&lt;li>&lt;strong>Show processes&lt;/strong> - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user.&lt;/li>
+&lt;li>For all other available options see &lt;a href="#filter-options">Filter options&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="choosing-data-from-a-partner-process">Choosing data from a Partner Process&lt;/h3>
+&lt;p>If you choose data from a Partner Process, then the options below become available.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/partnerprocess_resized.png" alt="Choosing data from a Process">&lt;/p>
+&lt;p>Choose from the following options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Partner&lt;/strong> - click into the field to choose from a pre-configured Partner who has created the process you are interested in.&lt;/li>
+&lt;li>&lt;strong>Business process&lt;/strong> - click into the field to choose a process which will be the input for the dashboard.&lt;/li>
+&lt;li>&lt;strong>Show processes&lt;/strong> - choose from a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user.&lt;/li>
+&lt;li>For all other available options see &lt;a href="#filter-options">Filter options&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="choosing-data-from-a-data-source">Choosing data from a Data source&lt;/h3>
+&lt;p>If you choose data from a Data source, then the options below become available.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dataprocess_resized.png" alt="Choosing data from a Process">&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Select data source&lt;/strong>. You will be directed to different data sources where you can search in the &lt;strong>datasource tree&lt;/strong> search box or drill down to the data source you want.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/selectdatasource.png" alt="Select data source">&lt;/p>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Data source filter&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For all other available options see &lt;a href="#filter-options">Filter options&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="filter-options">Filter options&lt;/h3>
+&lt;p>Once you have chosen where the dashboard data will come from then there are a number of other options available.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Enable sorting&lt;/strong> - choose from a) Yes or b) No if you wish to enable sorting in the dashboard&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable filtering&lt;/strong> - choose from a) Yes or b) No if you wish to enable filtering in the dashboard&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable search&lt;/strong> - choose from a) Yes or b) No if you wish to enable a search in the dashboard&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable &amp;ldquo;Load more&amp;rdquo; mode&lt;/strong> - choose from a) Yes or b) No if you wish to enable more data records to be visible. If you click on &lt;strong>Yes&lt;/strong>, then you can decide on what text should appear on screen, by typing the text in the &lt;strong>Load more button text&lt;/strong> field.&lt;/p>
+&lt;p>Enter a number in &lt;strong>Items per page&lt;/strong> for the number items you wish to load at a time. The default value is &amp;lsquo;20&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Show &amp;lsquo;Add process&amp;rsquo; button&lt;/strong> - choose from a) Yes or b) No if you wish to Add process to your dashboard. If you click on &lt;strong>Yes&lt;/strong>, then you can decide on what text should appear on screen, by typing the text in the &lt;strong>&amp;lsquo;Add process&amp;rsquo; button text&lt;/strong> field.&lt;/p>
+&lt;p>By default, the process used to generate the data is added, click on &lt;strong>No&lt;/strong> beside the Add &amp;lsquo;Process Name&amp;rsquo; by default if you don&amp;rsquo;t wish to add the input process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Show delete button&lt;/strong> - choose from a) Yes or b) No if you wish to add a Delete button to your dashboard. If you choose &lt;strong>Yes&lt;/strong>, then the option &lt;strong>Enable bulk delete&lt;/strong> appears allowing you to choose a) Yes or b) No to enable bulk deletion of records.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable show history&lt;/strong> - choose from a) Yes or b) No if you wish to show the history of the dashboard.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable data export&lt;/strong> - choose from a) Yes or b) No if you wish to allow data export.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Sort by - click into the Sort By field and choose from options a) Common fields or b) fields within a form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Common fields&lt;/strong> are fields commonly used in dashboards such as &amp;lsquo;Created&amp;rsquo; or &amp;lsquo;Status&amp;rsquo; or choose from a field within a form by clicking and drilling down to the field name that you want to sort by, for example a text box field called &amp;lsquo;Name&amp;rsquo; in a form called &amp;lsquo;Training Request&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When a field is chosen then the options for &lt;strong>Sort Direction&lt;/strong> appear as either a) Ascending or b) Descending.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable empty list template&lt;/strong> - click on a) Yes or b) No to enable.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Go to &lt;a href="#list-view-fields">List view fields&lt;/a> to read about options in the right-hand pane of this dialog box on how to choose fields to filter data.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="list-view-fields">List view fields&lt;/h3>
+&lt;p>When you choose the List widget for your dashboard, there are a number of ways to select fields that you want to view.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/pen.png" alt="Pen button">in the widget you have created, to see the &lt;strong>List view fields&lt;/strong> visible in the right-hand pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/listconfig_frame.png" alt="List view fields">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Common fields&lt;/strong> to see a list of commonly used dashboard fields such as &amp;lsquo;Status&amp;rsquo;, &amp;lsquo;Created by&amp;rsquo; and &amp;lsquo;Modified&amp;rsquo;. Click on as many fields as needed to add to the dashboard, for example 3 fields are selected below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/commonfields.png" alt="Common fields">&lt;/p>
+&lt;p>Click on &lt;strong>Common fields&lt;/strong> again to close the options.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Design fields&lt;/strong> to see a list of all the fields used in the design of the forms used in the chosen process. For example the Training Process shown below has 2 forms, &amp;lsquo;Training Request&amp;rsquo; and &amp;lsquo;Training Approval&amp;rsquo; and all control fields used in the form design are available to choose as filters for the dashboard. Click on the + symbol to drill down into the form, and click on the relevant fields to use them, for example Name, Type of Training and Management Decision have been chosen below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/designfields.png" alt="Design fields">&lt;/p>
+&lt;p>Click on &lt;strong>Design fields&lt;/strong> again to close the options.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Clicking on &lt;strong>List fields&lt;/strong> shows you a list of all the fields you have already chosen from &lt;strong>Common fields&lt;/strong> and &lt;strong>Design fields&lt;/strong>. There is also an option to &lt;strong>Add column&lt;/strong> and &lt;strong>Add action&lt;/strong>. You can change the order of the fields as they appear in the list from left to right by clicking on the Drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite.png" alt="Drag handle">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/listfields.png" alt="List fields">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To change the list settings, that is the way the list looks, title and so on, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog.png" alt="Settings button">and go to &lt;a href="pages/list.md">List widget&lt;/a> to find out more about edit options.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished making edits, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> in the top menu to ensure your dashboard changes are saved and you see a pop-up message &lt;strong>Page saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To make further changes later on, click on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> in the top menu and then click on the &lt;strong>Pen&lt;/strong> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/penbutton.png" alt="Pen button in a widget">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you have completed your changes, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/../old-documentation/save-dash.png" alt="Save button"> to save your changes or &lt;strong>X&lt;/strong> to quit without saving.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Rich Text widget</title><link>https://docs.kianda.com/docs/platform/pages/richtext/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/richtext/</guid><description>
 &lt;p>A &lt;strong>Rich Text dashboard widget&lt;/strong> can be used to create custom rich text content on a dashboard page, such as an attractive banner or heading. It can provide optimum formatting options, such as bold and italics, or the option to insert images or links.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
