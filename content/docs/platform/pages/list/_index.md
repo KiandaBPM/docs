@@ -28,7 +28,7 @@ The list widget displays the instances of the selected process in a dashboard. T
 
    - **Visible to** - determine who will see the dashboard, choose from a) Users b) Groups 
 
-   - **Device visibility** - choose from icons for deshtop, tablet, mobile, wifi and flightmode as to when the device can view the dashboards.
+   - **Device visibility** - choose from icons for desktop, tablet, mobile, wifi and flightmode as to when the device can view the dashboards.
 
      ![Device visibility](/images/devicevisibility.png)
 
