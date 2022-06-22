@@ -415,6 +415,7 @@
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Users &amp; Groups</title><link>https://docs.kianda.com/docs/platform/administration/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/users/</guid><description>
 &lt;p>The &lt;strong>Users&lt;/strong> function is available to users with the &lt;strong>Administrator&lt;/strong> role and is found in the left-hand side pane under &lt;strong>Administration&lt;/strong>. This function allows you to manage users and groups in your Kianda workspace.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>Start &lt;strong>typing&lt;/strong> &lt;em>italic&lt;/em> &lt;u>underline&lt;/u>&lt;/p>
 &lt;p>To access the &lt;strong>Users&lt;/strong> function:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -427,15 +428,31 @@
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="users">Users&lt;/h2>
-&lt;p>Existing users appear within this section, showing the &lt;strong>name&lt;/strong> of the user, &lt;strong>email&lt;/strong>, &lt;strong>role&lt;/strong> and whether they are &lt;strong>active&lt;/strong> or not in the system. From this main view, you can:&lt;/p>
+&lt;p>Existing users appear within this section, showing the &lt;strong>name&lt;/strong> of the user, &lt;strong>email&lt;/strong>, &lt;strong>role&lt;/strong> and whether they are &lt;strong>active&lt;/strong> or not in the system.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-mgmt-view.jpg" alt="User management main user view">&lt;/p>
+&lt;p>From this main view, you can:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="#view-and-edit-existing-user-details">&lt;strong>view and edit&lt;/strong> existing user details&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-new-users">&lt;strong>create new users&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-a-new-user">&lt;strong>create a new user&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#modify-profile-attributes">create new &lt;strong>profile attributes&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#import-and-export-users">bulk &lt;strong>import and export&lt;/strong> users&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#add-and-remove-users-to/from-groups">&lt;strong>add and remove users&lt;/strong> to/from groups&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>In addition to the above administrative functions, you can also set passwords and delete users from this main view.&lt;/p>
+&lt;p>Click on each of the links below to read more about each function. In addition to the above administrative functions, you can also set passwords and delete users from this main view as follows:&lt;/p>
+&lt;ul>
+&lt;li>To &lt;strong>reset a password&lt;/strong> for a user, click on the &lt;strong>Reset password/key&lt;/strong> button &lt;img src="https://docs.kianda.com/images/reset-password.jpg" alt="Reset password/key button"> beside a user name. This will open the &lt;strong>reset password&lt;/strong> dialog box where you can type in a new password for the user.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/reset-password-box.jpg" alt="Reset password dialog box">&lt;/p>
+&lt;p>​ When you are finished adding the new password, click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>To &lt;strong>delete an existing user&lt;/strong>, click on the &lt;strong>Bin/Trash&lt;/strong> button beside a user name.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/delete-user-popup.jpg" alt="Delete an existing user">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then click on &lt;strong>OK&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;h3 id="view-and-edit-existing-user-details">View and edit existing user details&lt;/h3>
 &lt;ol>
 &lt;li>
@@ -514,7 +531,7 @@
 &lt;p>As an administrator you can set profile attributes for workspace users within your organisation. For example if your organisation uses particular grade levels for roles, then these can be set using this feature. To modify attributes:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click on the &lt;strong>Profile attributes&lt;/strong> button in the main &lt;strong>Users&lt;/strong> section.&lt;img src="https://docs.kianda.com/images/profile-attributes.jpg" alt="Profile attributes button">&lt;/p>
+&lt;p>Click on the &lt;strong>Profile attributes&lt;/strong> button in the main &lt;strong>Users&lt;/strong> section&lt;img src="https://docs.kianda.com/images/profile-attributes.jpg" alt="Profile attributes button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Modify user attributes&lt;/strong> dialog box, any existing attributes will be listed under &lt;strong>Property&lt;/strong>. To remove an attribute, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin/Trash button">.&lt;/p>
