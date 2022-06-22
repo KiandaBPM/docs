@@ -141,13 +141,13 @@ Note: as you change any of the options in the dialog box, the impact will be sho
 
      ![Custom action settings](/images/customsetting_resized.png)
 
-As a form designer you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If **Edit mode** is chosen, then the button will only appear when the form is being **edited**. In this way you can create dynamic forms that suit user interactions.
+As a form designer, you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If **Edit mode** is chosen, then the button will only appear when the form is being **edited**. In this way you can create dynamic forms that suit user interactions.
 
 1. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 
 2. To save your changes to the form, click on the **Save** button ![Save button](/images/save.png). 
 
-3. You are now ready to start adding [Controls](fields/README.md) and [Rules](rules/README.md) to your form. You can also implement additional settings see [Process Settings](#process-settings).
+3. You are now ready to start adding [Controls](fields/README.md) and [Rules](rules/README.md) to your form. To implement additional settings, see [Process Settings](#process-settings).
 
    
 
@@ -175,7 +175,7 @@ You can:
 
 1) Add elements to this canvas by clicking on [Controls](fields/README.md) and [Rules](rules/README.md) in the left-hand pane. Click on each link to find out more about the 16 Control fields and 
 2) Move elements by clicking on the **Drag Handle** ![Drag handle](/images/move.png) beside the item and dragging it to where you want to place it. 
-3) Edit elements by clicking on each item and clicking on the **Pen** button ![Pen icon](/images/penicon.png) for example if you click on the **Close button** there are a number of options to choose from when editing see [Form buttons](#form-buttons).
+3) Edit elements by clicking on each item and clicking on the **Pen** button ![Pen icon](/images/penicon.png), for example if you click on the **Close button**, there are a number of options to choose from when editing see [Form buttons](#form-buttons).
 
 
 
@@ -213,7 +213,7 @@ Choose from the settings:
 
 1. **Process id settings** - choose from a) Default or b) Custom and use a combination of [ProcessName]-[UniqueNumber]-[FieldName]
 
-2. **Enable process security** - if you tick the checkbox, can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.
+2. **Enable process security** - if you tick the checkbox, you can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.
 
    ![Process security](/images/process_security.png)
 
@@ -269,7 +269,7 @@ Go to [Rules](/docs/platform/rules/) to find out more about **Form rules**.
 
 ### Form buttons ###
 
-By default there are 3 buttons on all forms, **Submit**, **Save** and **Close**, but you can change these to buttons in a myriad of ways to customise your users' experience see sections [Editing a button](#editing-a-button), [Copying a button](#copying--a-button), [Changing button properties](#changing-button-properties) and [Deleting a button](#deleting-a-button) below.
+By default there are 3 buttons on all forms, **Submit**, **Save** and **Close**, but you can change these to buttons in a myriad of ways to customise your users' experience. See sections [Editing a button](#editing-a-button), [Copying a button](#copying--a-button), [Changing button properties](#changing-button-properties) and [Deleting a button](#deleting-a-button) below.
 
 #### Editing a button
 
