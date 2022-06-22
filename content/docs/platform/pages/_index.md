@@ -39,7 +39,7 @@ When you click on the **Edit** button ![Edit button](/images/edit-current-page.j
 
 In **Edit mode,** you can also make changes to widgets, such as to Kianda predefined dashboards from the App Store, using the **Update configuration** ![Pen button](/images/pen.png), **Settings** ![Cog button](/images/cog.png)and **Delete** ![Bin button](/images/bin.png) buttons.
 
-If you want to create a dashboard page from scratch go to [How to get started](#how-to-create-a-dashboard-page) or if you want to learn more about dashboard widgets go to [Dashboard widgets](#dashboard-widgets).
+If you want to create a dashboard page from scratch go to [How to create a dashboard page](#how-to-create-a-dashboard-page) or if you want to learn more about dashboard widgets go to [Dashboard widgets](#dashboard-widgets).
 
 
 
