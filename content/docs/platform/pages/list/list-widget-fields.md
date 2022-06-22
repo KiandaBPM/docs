@@ -35,15 +35,15 @@ The list widget displays the instances of the selected process in a dashboard. T
 
 4. You can then edit the widget to display certain fields from your form, that relates to the data you are interested in. Go to [Configure your widget](#configure-your-widget) to find out more.
 
-5. When you are finished making edits, click on the **Save** button ![Save button](images/save.png) in the top menu to ensure your dashboard changes are saved and you see a pop-up message **Page saved successfully**.
+5. When you are finished making edits, click on the **Save** button ![Save button](/images/save.png) in the top menu to ensure your dashboard changes are saved and you see a pop-up message **Page saved successfully**.
 
-6. To make further changes later on, click on the **Edit** button ![Edit button](images/edit.png) in the top menu and then click on the **Pen** button.
+6. To make further changes later on, click on the **Edit** button ![Edit button](/images/edit.png) in the top menu and then click on the **Pen** button.
 
    ![Pen button in a widget](/images/penbutton_frame.png) 
 
-7. To re-edit the title, colour scheme or other options in Step 2, click on the **Settings** button ![Settings button](images/cog.png)and the **Edit widget** dialog box options, allowing you to make changes.
+7. To re-edit the title, colour scheme or other options in Step 2, click on the **Settings** button ![Settings button](/images/cog.png)and the **Edit widget** dialog box options, allowing you to make changes.
 
-7. To delete the widget at any stage, click on the **Bin** icon ![Bin button](images/bin.png) beside the cog button, and then click on **Ok** to confirm that you want to delete the dashboard page or click on **Cancel** if you wish to cancel the deletion.
+7. To delete the widget at any stage, click on the **Bin** icon ![Bin button](/images/bin.png) beside the cog button, and then click on **Ok** to confirm that you want to delete the dashboard page or click on **Cancel** if you wish to cancel the deletion.
 
    
 
@@ -54,7 +54,7 @@ The list widget displays the instances of the selected process in a dashboard. T
 
    ![Chart widget edit](/images/penbutton.png)
 
-2. A dialog box opens with filter options in the left-hand pane, a **Conditions** button ![Conditions](images/conditions.png)in the middle of the box, and list view fields in the right-hand pane. Go to [Conditions](pages/conditions.md) to read more about conditions you can apply to data and go to [List view fields](pages/listviewfields.md) to read more about how to apply fields to your list view.
+2. A dialog box opens with filter options in the left-hand pane, a **Conditions** button ![Conditions](/images/conditions.png)in the middle of the box, and list view fields in the right-hand pane. Go to [Conditions](pages/conditions.md) to read more about conditions you can apply to data and go to [List view fields](pages/listviewfields.md) to read more about how to apply fields to your list view.
 
    ![Editing options](/images/listconfig.png)
 
@@ -187,4 +187,4 @@ When you choose the List widget for your dashboard, there are a number of ways t
 
    ![Pen button in a widget](/images/penbutton.png) 
 
-7. When you have completed your changes, click on the **Save** button ![Save button](/../old-documentation/save-dash.png) to save your changes or **X** to quit without saving. 
+7. When you have completed your changes, click on the **Save** button ![Save button](/images/save-dash.png) to save your changes or **X** to quit without saving. 
