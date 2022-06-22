@@ -187,7 +187,7 @@ In addition to the edits above, there are a number other actions and settings th
 
 Settings are available from the right-hand pane and give you the ability to:
 
-- View [Design version history](#design-version-history)
+- View [Design version history](/docs/platform/application-designer/designer/version-history/)
 
 - Change [Process settings](#process-settings)
 
