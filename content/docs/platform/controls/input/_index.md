@@ -28,7 +28,7 @@ To start adding Input controls (fields) to your Kianda forms:
 The eight types of input fields are:
 
 - **Text box** - A text box field is a section in your form where users can enter text, for example, an Address field. See [Text box control](/docs/platform/controls/input/textbox/) for more information. 
-- **List** - A list field lists information, for example from a SharePoint data source. This is particular useful for dropdown menus, when you want a user to fill out a form and choose an item from a list. See [List control](/docs/platform/controls/input/list/) for more information.
+- **List** - A list field lists information, for example from a SharePoint data source. This is particularly useful for dropdown menus, when you want a user to fill out a form and choose an item from a list. See [List control](/docs/platform/controls/input/list/) for more information.
 - **Number** - A number field provides an input box that only allows numeric input, such as currencies or percentages.
 - **Date** - A date field provides a date and time picker that allows users to input both date and time.
 - **File** - A file field allows users to upload multiple files. Uploaded files are stored within the configured data structures or folders.
