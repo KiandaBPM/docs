@@ -130,7 +130,7 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
-&lt;p>As a form designer you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If &lt;strong>Edit mode&lt;/strong> is chosen, then the button will only appear when the form is being &lt;strong>edited&lt;/strong>. In this way you can create dynamic forms that suit user interactions.&lt;/p>
+&lt;p>As a form designer, you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If &lt;strong>Edit mode&lt;/strong> is chosen, then the button will only appear when the form is being &lt;strong>edited&lt;/strong>. In this way you can create dynamic forms that suit user interactions.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
@@ -139,7 +139,7 @@ Your browser does not support the video tag.
 &lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You are now ready to start adding &lt;a href="fields/README.md">Controls&lt;/a> and &lt;a href="rules/README.md">Rules&lt;/a> to your form. You can also implement additional settings see &lt;a href="#process-settings">Process Settings&lt;/a>.&lt;/p>
+&lt;p>You are now ready to start adding &lt;a href="fields/README.md">Controls&lt;/a> and &lt;a href="rules/README.md">Rules&lt;/a> to your form. To implement additional settings, see &lt;a href="#process-settings">Process Settings&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="import-forms">Import forms&lt;/h3>
@@ -165,7 +165,7 @@ Your browser does not support the video tag.
 &lt;ol>
 &lt;li>Add elements to this canvas by clicking on &lt;a href="fields/README.md">Controls&lt;/a> and &lt;a href="rules/README.md">Rules&lt;/a> in the left-hand pane. Click on each link to find out more about the 16 Control fields and&lt;/li>
 &lt;li>Move elements by clicking on the &lt;strong>Drag Handle&lt;/strong> &lt;img src="https://docs.kianda.com/images/move.png" alt="Drag handle"> beside the item and dragging it to where you want to place it.&lt;/li>
-&lt;li>Edit elements by clicking on each item and clicking on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> for example if you click on the &lt;strong>Close button&lt;/strong> there are a number of options to choose from when editing see &lt;a href="#form-buttons">Form buttons&lt;/a>.&lt;/li>
+&lt;li>Edit elements by clicking on each item and clicking on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">, for example if you click on the &lt;strong>Close button&lt;/strong>, there are a number of options to choose from when editing see &lt;a href="#form-buttons">Form buttons&lt;/a>.&lt;/li>
 &lt;/ol>
 &lt;h2 id="settings-and-properties">Settings and Properties&lt;/h2>
 &lt;p>In addition to the edits above, there are a number other actions and settings that you can implement to your process and forms.&lt;/p>
@@ -202,7 +202,7 @@ Your browser does not support the video tag.
 &lt;p>&lt;strong>Process id settings&lt;/strong> - choose from a) Default or b) Custom and use a combination of [ProcessName]-[UniqueNumber]-[FieldName]&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Enable process security&lt;/strong> - if you tick the checkbox, can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.&lt;/p>
+&lt;p>&lt;strong>Enable process security&lt;/strong> - if you tick the checkbox, you can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process_security.png" alt="Process security">&lt;/p>
 &lt;p>The default setting is &lt;strong>Security users can create, assign to can update, everyone else can view&lt;/strong>.&lt;/p>
 &lt;/li>
@@ -267,7 +267,7 @@ Your browser does not support the video tag.
 &lt;/ol>
 &lt;p>Go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about &lt;strong>Form rules&lt;/strong>.&lt;/p>
 &lt;h3 id="form-buttons">Form buttons&lt;/h3>
-&lt;p>By default there are 3 buttons on all forms, &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> and &lt;strong>Close&lt;/strong>, but you can change these to buttons in a myriad of ways to customise your users&amp;rsquo; experience see sections &lt;a href="#editing-a-button">Editing a button&lt;/a>, &lt;a href="#copying--a-button">Copying a button&lt;/a>, &lt;a href="#changing-button-properties">Changing button properties&lt;/a> and &lt;a href="#deleting-a-button">Deleting a button&lt;/a> below.&lt;/p>
+&lt;p>By default there are 3 buttons on all forms, &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> and &lt;strong>Close&lt;/strong>, but you can change these to buttons in a myriad of ways to customise your users&amp;rsquo; experience. See sections &lt;a href="#editing-a-button">Editing a button&lt;/a>, &lt;a href="#copying--a-button">Copying a button&lt;/a>, &lt;a href="#changing-button-properties">Changing button properties&lt;/a> and &lt;a href="#deleting-a-button">Deleting a button&lt;/a> below.&lt;/p>
 &lt;h4 id="editing-a-button">Editing a button&lt;/h4>
 &lt;p>To edit a button:&lt;/p>
 &lt;ol>
@@ -351,7 +351,7 @@ Your browser does not support the video tag.
 &lt;li>The &lt;strong>Default owner(s)&lt;/strong> field is where you can set individuals and groups as the default &lt;strong>form owners&lt;/strong> who can edit the form.&lt;/li>
 &lt;li>&lt;strong>Activate with&lt;/strong> means that the form can be activated with other forms within the process, so they can be edited at the same time. This means several forms become the &lt;strong>current form&lt;/strong> in a form group.&lt;/li>
 &lt;li>&lt;strong>Submit mode&lt;/strong> means that when a process instance is running you can choose &lt;strong>only this form&lt;/strong> to be submitted, or you can choose &lt;strong>all forms in edit mode&lt;/strong> meaning that several forms could have their details submitted or saved.&lt;/li>
-&lt;li>&lt;strong>Enable quick actions&lt;/strong> allows you to &lt;strong>statically&lt;/strong> enable a) reassignment, b) edit, and c) custom actions on any form. For a) and b) you can choose individuals and/or groups who can reassign or edit forms. In the case of b) edit there are options to &lt;strong>hide form footer buttons&lt;/strong> when editing, and to &lt;strong>trigger rules on save&lt;/strong> against a set field when saving edits. For c) custom actions, you can set your own custom action and create an action label against a particular form field. This means the user(s) assigns the custom action will see the labelled action designated for them. As a designer you can choose the &lt;strong>action display mode&lt;/strong> as read-only, edit or both, so you can decide what type of access the user(s) will have.&lt;/li>
+&lt;li>&lt;strong>Enable quick actions&lt;/strong> allows you to &lt;strong>statically&lt;/strong> enable a) reassignment, b) edit, and c) custom actions on any form. For a) and b) you can choose individuals and/or groups who can reassign or edit forms. In the case of b) edit there are options to &lt;strong>hide form footer buttons&lt;/strong> when editing, and to &lt;strong>trigger rules on save&lt;/strong> against a set field when saving edits. For c) custom actions, you can set your own custom action and create an action label against a particular form field. This means that the user(s) assigning the custom action will see the labelled action designated for them. As a designer you can choose the &lt;strong>action display mode&lt;/strong> as read-only, edit or both, so you can decide what type of access the user(s) will have.&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Getting started with Kianda processes</title><link>https://docs.kianda.com/docs/platform/application-designer/process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/</guid><description>
 &lt;p>The power of Kianda lies in giving anyone, even those without coding experience, the ability to design a &lt;strong>business application or process&lt;/strong> quickly and efficiently, for example, this process could be a Quality Assurance checklist that installation engineers must follow on site using a mobile app or it could be a HR process to allow employees to submit annual leave requests and approve these online. Processes can connect to your data sources like Sharepoint or SalesForce allowing for the flexibility of your applications to grow as your business grows.&lt;/p>
 &lt;p>Each process can be linked to &lt;strong>dashboards&lt;/strong> so you can see at a glance, for example, how many leave requests were submitted, purchase orders approved and so on. And you can customise all of these processes the way you want.&lt;/p>
