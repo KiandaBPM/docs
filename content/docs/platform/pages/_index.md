@@ -39,11 +39,11 @@ When you click on the **Edit** button ![Edit button](/images/edit-current-page.j
 
 In **Edit mode,** you can also make changes to widgets, such as to Kianda predefined dashboards from the App Store, using the **Update configuration** ![Pen button](/images/pen.png), **Settings** ![Cog button](/images/cog.png)and **Delete** ![Bin button](/images/bin.png) buttons.
 
-If you want to create a dashboard page from scratch go to [How to get started](#how-to-get-started) or if you want to learn more about dashboard widgets go to [Dashboard widgets](#dashboard-widgets).
+If you want to create a dashboard page from scratch go to [How to get started](#how-to-create-a-dashboard-page) or if you want to learn more about dashboard widgets go to [Dashboard widgets](#dashboard-widgets).
 
 
 
-## How to get started ##
+## How to create a Dashboard page ##
 
 Kianda offers a user-friendly interface to create dashboards in minutes. This video covers the steps for creating a new dashboard:
 
@@ -172,7 +172,7 @@ To edit a Dashboard page:
 
 ![Edit dashboard page dialog box](/images/dashboard-edit-dialog.jpg)
 
-The options available are the same as those available in the **Create dashboard page** dialog box used to create a new dashboard page  - see [How to get started](#how-to-get-started) - but there are also **two** additional options:
+The options available are the same as those available in the **Create dashboard page** dialog box used to create a new dashboard page  - see [How to create a dashboard page](#how-to-create-a-dashboard-page) - but there are also **two** additional options:
 
 - **Display in mobile footer** - Select this checkbox to display a link to the dashboard in the footer of a mobile phone when the Kianda workspace is accessed on a mobile. Here we can see the example of a link to a dashboard page called 'Staff onboarding' available in the footer of a mobile phone:
 
