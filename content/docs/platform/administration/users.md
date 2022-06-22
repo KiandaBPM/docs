@@ -28,7 +28,7 @@ Existing support tickets appear within this section, showing the **name** of the
 
 
 
-### To view existing user details
+### View existing user details
 
 1. Click on the **name** of a user and the user details appear.
 
@@ -69,22 +69,31 @@ Existing support tickets appear within this section, showing the **name** of the
 
  
 
-### To create a new user
+### Create a new user
 
-1. Click on the **Create new user** button.
-2. Complete the fields as listed in step 2 in [To view existing user details](#to-view-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties.
+1. Click on the **Create new user** button ![Create new user button](/images/create-new-user-button.jpg).
+2. Complete the fields as listed in step 2 in [View existing user details](#view-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the **Profile attributes** button, see [Modify profile attributes](#modify-profile-attributes) section.
 3. Check the **Send welcome email** check box if you wish to have a system generated email sent to the new user. 
-4. Click on **Group membership** to view a user's group membership, see [Groups](Groups)
+4. Click on **Group membership** to view a user's group membership, see [Groups](Groups) for more details.
 5. When you are finished editing a user's details, click on **OK**, or click on **Close** to exit the dialog box. 
 
 ![User profile properties and group membership](/images/create-new-user.jpg)
 
-#### Modify profile attributes
+### Modify profile attributes
+
+As an administrator you can set profile attributes for workspace users within your organisation. For example if your organisation uses particular grade levels for roles, then these can be set using this feature. To modify attributes:
+
+1. Click on the **Profile attributes** button in the main **Users** section.![Profile attributes button](/images/profile-attributes.jpg) 
+
+2. In the **Modify user attributes** dialog box, any existing attributes will be listed under **Property**. To remove an attribute, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin-shared-process.jpg). 
+
+   ![Modify user attributes](/images/modify-user-attributes.jpg)
+
+3. To add a new attribute, click on the **Add attribute** button ![Add attribute button](/images/add-attribute.jpg) then type in the name of the new attribute.
+
+4. When you are finished editing attributes, click on **OK**, or click on **Close** to exit the dialog box. 
 
 
-## Groups
-
-You can group users into defined groups which can be used in various ways in the platform, for example to create a group of form owners, to allow group selection in a user picker field, and create a group of administrators for a process.
 
 ### Viewing and editing group members
 
