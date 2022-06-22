@@ -427,8 +427,16 @@
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="users">Users&lt;/h2>
-&lt;p>Existing support tickets appear within this section, showing the &lt;strong>name&lt;/strong> of the user, &lt;strong>email&lt;/strong>, &lt;strong>role&lt;/strong> and whether they are &lt;strong>active&lt;/strong> or not in the system.&lt;/p>
-&lt;h3 id="view-existing-user-details">View existing user details&lt;/h3>
+&lt;p>Existing users appear within this section, showing the &lt;strong>name&lt;/strong> of the user, &lt;strong>email&lt;/strong>, &lt;strong>role&lt;/strong> and whether they are &lt;strong>active&lt;/strong> or not in the system. From this main view, you can:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="#view-and-edit-existing-user-details">&lt;strong>view and edit&lt;/strong> existing user details&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-new-users">&lt;strong>create new users&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#modify-profile-attributes">create new &lt;strong>profile attributes&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#import-and-export-users">bulk &lt;strong>import and export&lt;/strong> users&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#add-and-remove-users-to/from-groups">&lt;strong>add and remove users&lt;/strong> to/from groups&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>In addition to the above administrative functions, you can also set passwords and delete users from this main view.&lt;/p>
+&lt;h3 id="view-and-edit-existing-user-details">View and edit existing user details&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>Click on the &lt;strong>name&lt;/strong> of a user and the user details appear.&lt;/p>
@@ -438,10 +446,10 @@
 &lt;p>In the details box you can edit a user&amp;rsquo;s:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>First name&lt;/strong> - user first name&lt;/p>
+&lt;p>&lt;strong>First name&lt;/strong> - user&amp;rsquo;s first name&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Last name&lt;/strong> - user last name&lt;/p>
+&lt;p>&lt;strong>Last name&lt;/strong> - user&amp;rsquo;s last name&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Display name&lt;/strong> - how their name will display in the system&lt;/p>
@@ -470,7 +478,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Phone number&lt;/strong> - user phone number&lt;/p>
+&lt;p>&lt;strong>Phone number&lt;/strong> - user&amp;rsquo;s phone number (mobile or office)&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Profile picture URL&lt;/strong> - click on &lt;strong>Browse&lt;/strong> to browse for a profile picture on a laptop or network drive to add a profile photo for the user.&lt;/p>
@@ -479,7 +487,7 @@
 &lt;p>&lt;strong>Active&lt;/strong> checkbox - by default this checkbox is checked but you can &lt;strong>uncheck it to disable&lt;/strong> a user&amp;rsquo;s account.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Profile properties&lt;/strong> - click on this option to see additional properties that you can define, see &lt;a href="#modify-profile-attributes">Modify profile attributes&lt;/a>&lt;/p>
+&lt;p>&lt;strong>Profile properties&lt;/strong> - click on this option to see additional properties that you can define, see &lt;a href="#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Group membership&lt;/strong> - click on this option to see the groups that a user is added to. Click on the red x button &lt;img src="https://docs.kianda.com/images/redx.jpg" alt="Red x"> to remove a user from a group.&lt;/p>
@@ -493,12 +501,15 @@
 &lt;h3 id="create-a-new-user">Create a new user&lt;/h3>
 &lt;ol>
 &lt;li>Click on the &lt;strong>Create new user&lt;/strong> button &lt;img src="https://docs.kianda.com/images/create-new-user-button.jpg" alt="Create new user button">.&lt;/li>
-&lt;li>Complete the fields as listed in step 2 in &lt;a href="#view-existing-user-details">View existing user details&lt;/a> above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the &lt;strong>Profile attributes&lt;/strong> button, see &lt;a href="#modify-profile-attributes">Modify profile attributes&lt;/a> section.&lt;/li>
+&lt;li>Complete the fields as listed in Step 2 in [can &lt;a href="#view-and-edit-existing-user-details">&lt;strong>view and edit&lt;/strong> existing user details&lt;/a>](#view-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the &lt;strong>Profile attributes&lt;/strong> button, see &lt;a href="#modify-profile-attributes">Modify profile attributes&lt;/a> section.&lt;/li>
 &lt;li>Check the &lt;strong>Send welcome email&lt;/strong> check box if you wish to have a system generated email sent to the new user.&lt;/li>
 &lt;li>Click on &lt;strong>Group membership&lt;/strong> to view a user&amp;rsquo;s group membership, see &lt;a href="Groups">Groups&lt;/a> for more details.&lt;/li>
 &lt;li>When you are finished editing a user&amp;rsquo;s details, click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/create-new-user.jpg" alt="User profile properties and group membership">&lt;/p>
+&lt;ol start="6">
+&lt;li>When the user is created they will appear in the main Users view.&lt;/li>
+&lt;/ol>
 &lt;h3 id="modify-profile-attributes">Modify profile attributes&lt;/h3>
 &lt;p>As an administrator you can set profile attributes for workspace users within your organisation. For example if your organisation uses particular grade levels for roles, then these can be set using this feature. To modify attributes:&lt;/p>
 &lt;ol>
@@ -516,6 +527,8 @@
 &lt;p>When you are finished editing attributes, click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;h3 id="importing-and-exporting-users">Importing and exporting users&lt;/h3>
+&lt;p>In addition to clicking on the &lt;strong>Create new user&lt;/strong> button &lt;img src="https://docs.kianda.com/images/create-new-user-button.jpg" alt="Create new user button"> you can import users using an Excel file by clicking on the &lt;strong>Bulk import users&lt;/strong> button.&lt;/p>
 &lt;h3 id="viewing-and-editing-group-members">Viewing and editing group members&lt;/h3>
 &lt;ol>
 &lt;li>Click on the radio button beside the group name to see the group members.&lt;/li>
