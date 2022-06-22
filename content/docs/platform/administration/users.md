@@ -24,11 +24,19 @@ To access the **Users** function:
 
 ## Users
 
-Existing support tickets appear within this section, showing the **name** of the user, **email**, **role** and whether they are **active** or not in the system.  
+Existing users appear within this section, showing the **name** of the user, **email**, **role** and whether they are **active** or not in the system.  From this main view, you can:
+
+- [**view and edit** existing user details](#view-and-edit-existing-user-details)
+- [**create new users**](#create-new-users)
+- [create new **profile attributes**](#modify-profile-attributes)
+- [bulk **import and export** users](#import-and-export-users)
+- [**add and remove users** to/from groups](#add-and-remove-users-to/from-groups)
+
+In addition to the above administrative functions, you can also set passwords and delete users from this main view.
 
 
 
-### View existing user details
+### View and edit existing user details
 
 1. Click on the **name** of a user and the user details appear.
 
@@ -36,9 +44,9 @@ Existing support tickets appear within this section, showing the **name** of the
 
 2. In the details box you can edit a user's:
 
-   - **First name** - user first name
+   - **First name** - user's first name
 
-   - **Last name** - user last name
+   - **Last name** - user's last name
 
    - **Display name** - how their name will display in the system
 
@@ -55,13 +63,13 @@ Existing support tickets appear within this section, showing the **name** of the
 
      - **Developer** - users with this role can access the same areas as **User** as well as the **Developes** function under **Administration** to create custom widgets for fields/controls, rules and dashboards.
 
-   - **Phone number** - user phone number
+   - **Phone number** - user's phone number (mobile or office)
 
    - **Profile picture URL** - click on **Browse** to browse for a profile picture on a laptop or network drive to add a profile photo for the user.
 
    - **Active** checkbox - by default this checkbox is checked but you can **uncheck it to disable** a user's account.
 
-   - **Profile properties** - click on this option to see additional properties that you can define, see [Modify profile attributes](#modify-profile-attributes)
+   - **Profile properties** - click on this option to see additional properties that you can define, see [Modify profile attributes](#modify-profile-attributes).
 
    - **Group membership** - click on this option to see the groups that a user is added to. Click on the red x button  ![Red x](/images/redx.jpg) to remove a user from a group. 
 
@@ -72,12 +80,16 @@ Existing support tickets appear within this section, showing the **name** of the
 ### Create a new user
 
 1. Click on the **Create new user** button ![Create new user button](/images/create-new-user-button.jpg).
-2. Complete the fields as listed in step 2 in [View existing user details](#view-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the **Profile attributes** button, see [Modify profile attributes](#modify-profile-attributes) section.
+2. Complete the fields as listed in Step 2 in [can [**view and edit** existing user details](#view-and-edit-existing-user-details)](#view-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the **Profile attributes** button, see [Modify profile attributes](#modify-profile-attributes) section.
 3. Check the **Send welcome email** check box if you wish to have a system generated email sent to the new user. 
 4. Click on **Group membership** to view a user's group membership, see [Groups](Groups) for more details.
 5. When you are finished editing a user's details, click on **OK**, or click on **Close** to exit the dialog box. 
 
 ![User profile properties and group membership](/images/create-new-user.jpg)
+
+6. When the user is created they will appear in the main Users view. 
+
+
 
 ### Modify profile attributes
 
@@ -92,6 +104,13 @@ As an administrator you can set profile attributes for workspace users within yo
 3. To add a new attribute, click on the **Add attribute** button ![Add attribute button](/images/add-attribute.jpg) then type in the name of the new attribute.
 
 4. When you are finished editing attributes, click on **OK**, or click on **Close** to exit the dialog box. 
+
+
+
+### Importing and exporting users
+
+In addition to clicking on the **Create new user** button ![Create new user button](/images/create-new-user-button.jpg) you can import users using an Excel file by clicking on the **Bulk import users** button.
+
 
 
 
