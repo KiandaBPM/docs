@@ -54,13 +54,13 @@ To add a **Rich Text widget** to a dashboard:
 
    ![Dashboard Rich Text widget Edit content dialog box](/images/dashboard-richtext-edit-dialog.jpg)
 
-   Insert the content you want to appear in your **Rich Text widget** by using the available options.
+   - Insert the content you want to appear in your **Rich Text widget** by using the available options.
 
-   Insert the text you want to appear in the body of the **Edit content** dialog box. You can choose from an wide array of styles and formats, including: **Style**, **Colour**, **Bold**, **Underline**, **Remove font style**, **Font size**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, and **Table**. 
+   - Insert the text you want to appear in the body of the **Edit content** dialog box. You can choose from an wide array of styles and formats, including: **Style**, **Colour**, **Bold**, **Underline**, **Remove font style**, **Font size**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, and **Table**. 
 
-   You can also choose to insert a **Link** or **Picture** or to switch to **Code view** (if you click on **Code view** button ![Code view button](/images/code.png)you can copy HTML code directly into the text). 
+   - You can also choose to insert a **Link** or **Picture** or to switch to **Code view** (if you click on **Code view** button ![Code view button](/images/code.png)you can copy HTML code directly into the text). 
 
-   If you click on **Picture** an **Insert Picture** dialog box opens, allowing you to either browse to select an image file or to insert an image URL (as shown here):
+   - If you click on **Picture** an **Insert Picture** dialog box opens, allowing you to either browse to select an image file or to insert an image URL (as shown here):
 
    ![Dashboard Rich Text widget insert image dialog box](/images/dashboard-richtext-image.jpg)
 
@@ -69,6 +69,8 @@ To add a **Rich Text widget** to a dashboard:
    For our example, we will insert text details relating to the Annual Leave dashboard, format them as we want, and also insert a suitable image:
 
    ![Dashboard Rich Text widget Edit content dialog box example](/images/dashboard-richtext-edit-content.jpg)
+
+   
 
 7. Click on the **OK** button when you are finished inserting the content you want in your **Rich Text widget** or click on **Close** to exit the dialog box without saving. 
 
@@ -127,9 +129,9 @@ To delete a **Rich Text widget** from your dashboard:
    
 
 
-### How to change Rich Text widget settings
+### How to edit Rich Text widget settings
 
-To update your **Rich Text widget** settings:
+To update or edit your **Rich Text widget** settings:
 
 1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
 
