@@ -5,19 +5,19 @@ typora-root-url: ..\..\..\..\static
 
 Conditions allow you to make forms and dashboards fully dynamic. They are easy to configure in the Kianda platform, using natural language to create triggers for rule execution.
 
-Conditions can be applied to [Tile](pages/tile.md), [List](pages/list.md) and [Chart](pages/chart.md) dashboard widgets.
+Conditions can be applied to [Tile](/docs/platform/pages/tile/), [List](/docs/platform/pages/list/) and [Chart](/docs/platform/pages/chart/) dashboard widgets.
 
 
 
 ## How to get started ##
 
-1. Make sure you in **Edit mode** on your dashboard page by clicking on the **Edit** button ![Edit button](/images/edit.png) in the top menu. Click hen click on the **Pen** button.
+1. Make sure you in **Edit mode** on your dashboard page by clicking on the **Edit** button ![Edit button](/images/edit.png) in the top menu.
 
    ![Pen button in a widget](/images/penbutton_frame.png) 
 
 2. Click on the **Update configuration** or **Pen** button for any Tile, List or Chart widget.
 
-3. Click on the **Conditions** button ![Conditions button](/images/conditions.png)appears in the dialog box.
+3. Click on the **Conditions** button ![Conditions button](/images/conditions.png)in the dialog box that opens.
 
 4. Click on **Add a conditions group** ![Add conditions button](/images/addconditions.png) button to add a condition.
 
@@ -27,7 +27,7 @@ Conditions can be applied to [Tile](pages/tile.md), [List](pages/list.md) and [C
 
    Click into the first empty field to choose a field to filter on, this can be a **Common field** or a **Design field** as found in a form. Click on the + symbol to drill down to the relevant fields to use. Click on a field to use, for example the Common field, 'Status'. If you want to replace the field for a different one, click on the X ![X](/images/x.png) beside the field name.
 
-6. Click on the operator field and choose from a relevant operator to apply, for example **Equals**, **Contains**, **Is blank**, **Matches pattern** and so on.
+6. Click on the operator field and choose from a relevant operator to apply, for example **Equals**, **Contains**, **Is blank**, **Matches pattern** and so on. 
 
    ![Condition operators](/images/operator.png)
 
