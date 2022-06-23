@@ -34,7 +34,49 @@
 &lt;/div></description></item><item><title>Docs: PowerShell</title><link>https://docs.kianda.com/docs/platform/connectors/powershell/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/powershell/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
+&lt;/div></description></item><item><title>Docs: REST Web Service</title><link>https://docs.kianda.com/docs/platform/connectors/rest/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/rest/</guid><description>
+&lt;p>One of the datasources available in Kianda is a connector to a &lt;strong>REST API&lt;/strong>. Kianda has the ability to perform &lt;strong>GET, POST, PUT&lt;/strong> and &lt;strong>DELETE&lt;/strong> operation if they are supported by the webservice. The REST API datasource can support multiple REST methods, all of which can be called independently. Data from the webservice can be pulled into Kianda and manipulated or data from Kianda can be pushed to the webservice to be used by other systems.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can create a REST API datasource when you want your Kianda processes and forms to have access to a REST API.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>A REST API data connector can be configured by users with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage datasources&lt;/strong>. These users can access the function, found under &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>In the left-hand side menu, go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the main view you will see any existing data connectors that have been created. From this view, uou can click on the &lt;strong>name&lt;/strong> of a data connector to see details or &lt;strong>delete&lt;/strong> a data connector by clicking on the &lt;strong>Bin/Trash&lt;/strong> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-main-view.jpg" alt="Data sources main view">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Add new&lt;/strong> In the dialog box select the &lt;strong>REST Service&lt;/strong> option, the below screen will open.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" alt="img">&lt;/p>
+&lt;p>Fill in the fields above to set up the &lt;strong>datasource&lt;/strong>&lt;/p>
+&lt;p>· &lt;strong>Display name –&lt;/strong> This is the name of the datasourcce. Give it an adequate name as it will be used with your Process.&lt;/p>
+&lt;p>· &lt;strong>Rest server base URL –&lt;/strong> This is the base URL of the REST API. Ensure there are no trailing characters, for example &lt;a href="https://api.mywebsite.com">https://api.mywebsite.com&lt;/a>&lt;/p>
+&lt;p>· &lt;strong>Enable Certificate Authentication –&lt;/strong> By default this option is set to &lt;strong>No&lt;/strong>. By Selecting &lt;strong>Yes&lt;/strong> this will display two new fields&lt;/p>
+&lt;p>o &lt;strong>Certificate (.pfx) –&lt;/strong> This is a file field which you can use to upload your certificate&lt;/p>
+&lt;p>o &lt;strong>Certificate password –&lt;/strong> Enter the password of the certificate here so Kianda will be able to use it.&lt;/p>
+&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" alt="img">&lt;/p>
+&lt;p>· &lt;strong>Rest Methods –&lt;/strong> Is a list of the current &lt;strong>REST Methods&lt;/strong> that have been created in Kianda. To add a new &lt;strong>REST Method&lt;/strong> to Kianda click on the &lt;strong>+Add REST Method&lt;/strong>. The dialog box will appear.&lt;/p>
+&lt;p>o &lt;strong>Display Name –&lt;/strong> The name you want to attribute to the REST Method&lt;/p>
+&lt;p>o &lt;strong>HTTP Method –&lt;/strong> The HTTP Method of the REST Method.&lt;/p>
+&lt;p>o &lt;strong>Url Path –&lt;/strong> This is the rest of the URL that will be concatenated with the &lt;strong>Rest server base URL&lt;/strong>. For example, /rest/GetUserDetails&lt;/p>
+&lt;p>o &lt;strong>Request headers –&lt;/strong> Request headers can be manually added here that need to be sent as part of the request. For example, Authorization. These values can be hard coded or passed into the &lt;strong>Request header&lt;/strong> from the &lt;strong>Process.&lt;/strong>&lt;/p>
+&lt;p>o &lt;strong>Request body –&lt;/strong> This section is for the &lt;strong>Request body&lt;/strong> that will be used during the request. These values can be hard coded or passed into the &lt;strong>Request body&lt;/strong> from the &lt;strong>Process.&lt;/strong>&lt;/p>
+&lt;p>o &lt;strong>Content type –&lt;/strong> Here you can define the &lt;strong>Content type&lt;/strong> of the body. The options are JSON and Form Data&lt;/p>
+&lt;p>o &lt;strong>Response headers –&lt;/strong> Here you can define any response headers you wish to capture in the response that you want to use in Kianda&lt;/p>
+&lt;p>o &lt;strong>Response body –&lt;/strong> Here you can define the response body that the request will receive. Include or remove fields as needed.&lt;/p>
+&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img">&lt;/p>
+&lt;p>· &lt;strong>Buttons&lt;/strong>&lt;/p>
+&lt;p>o &lt;strong>Test connection –&lt;/strong> By clicking this button you verify that the &lt;strong>RESR server base URL&lt;/strong> can be reached by Kianda.&lt;/p>
+&lt;p>o &lt;strong>Save –&lt;/strong> Saves the creation or changes made to the &lt;strong>REST Service&lt;/strong>&lt;/p>
+&lt;p>o &lt;strong>Security –&lt;/strong> Define who can control, use and the level of access your &lt;strong>B2B Portals&lt;/strong> have to the &lt;strong>REST Service.&lt;/strong> See the &lt;strong>Data Access&lt;/strong> page for more details. (&lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">https://docs.kianda.com/docs/platform/b2b-portals/data-access/&lt;/a>)&lt;/p>
+&lt;p>o &lt;strong>Close –&lt;/strong> Close the &lt;strong>REST Service.&lt;/strong> All changes will not be saved.&lt;/p>
+&lt;p>&lt;strong>Next Steps&lt;/strong>&lt;/p>
+&lt;p>Your &lt;strong>REST Service&lt;/strong> is now set up and ready to be used in your &lt;strong>Processes&lt;/strong>. Check out the following article on how to implement a &lt;strong>REST Service&lt;/strong> in order to refresh an Access token.&lt;/p></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: SAP connector</title><link>https://docs.kianda.com/docs/platform/connectors/sap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sap/</guid><description>
