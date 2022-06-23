@@ -17,7 +17,7 @@ B2B Portals are a means of connecting your clients to your Kianda subscription t
 
 To share data with B2B portal users, there are a number of steps involved starting with:
 
- a) Creating users and groups 
+a) Creating users and groups 
 
 b) Create dashboards to share
 

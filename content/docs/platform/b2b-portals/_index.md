@@ -8,7 +8,7 @@ B2B Portals are a means of connecting your clients to your Kianda subscription t
 
 Your client's subscription will need to be configured by Kianda so please reach out to your Account Manager or [Kianda Support](mailto:support@kianda.com) to arrange the set up.  
 
-B2B Portals can be configured within **Administration** > **Invite Partner**.
+B2B Portals can be configured by users with the role **Administrator** or **Manage partners**. These users can access the function, found under **Administration** > **Invite Partner**.
 
 
 
