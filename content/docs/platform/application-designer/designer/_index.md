@@ -5,7 +5,7 @@ typora-root-url: ..\..\..\..\..\static
 
 Kianda **Designer** provides an intuitive interface where you can quickly start building **forms** for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).
 
-### How Designer works ### 
+## How Designer works ##
 
 This video introduces Kianda Designer and demonstrates how to start creating a form and add fields.
 
@@ -93,7 +93,9 @@ If you have created a process from scratch, an empty form is added to your proce
 
 ![Add form](/images/addform.png) 
 
-#### Editing forms ###
+
+
+### Editing forms ###
 
 When you click on a chosen form, then click on the **Edit/Pen** button ![Pen icon](/images/penicon.png) to edit the form. 
 
@@ -179,7 +181,7 @@ You can:
 
 
 
- ## Settings and Properties ## 
+## Settings and Properties ## 
 
 In addition to the edits above, there are a number other actions and settings that you can implement to your process and forms. 
 
@@ -202,8 +204,6 @@ Settings are available from the right-hand pane and give you the ability to:
 - Edit form buttons by clicking on a button of choice and then **Change field**, see [Form buttons](#form-buttons).
 
   
-
-
 
 ### Process settings
 
