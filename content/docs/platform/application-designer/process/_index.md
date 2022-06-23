@@ -36,8 +36,6 @@ Before you begin, we at Kianda recommend doing some simple planning before you d
 
 2. Choose from **General**, **IT**, **Customer Services**, **Finance**, **Travel**, **Quality** and **Accounting** apps by clicking on the relevant button in the left-hand pane and then select an app from within that category, for example Customer Support Queries.
 
-   Click on [Kianda Apps](platform/appstore.md) to find out more about other apps in the App Store.
-   
    ![App Store General Apps](/images/appstoreegs.png) 
    
 3. You can click on **Read More** to read about the app and click on **Import Process App** to import the process. 

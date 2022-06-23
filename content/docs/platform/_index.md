@@ -54,25 +54,25 @@ The layout of the user interface is as follows:
    
    - User defined pages - these are defined by you the user depending on what features you want to showcase, for example **Dashboard** could contain all the process dashboards and **Inspection Checklist** could be a dashboard of inspection lists.
    
-   - [Administration](platform/administration.md) - contains 8 functions related to administration of your Kianda workspace. Click on Details below to see a list of functions and links to find out more about each one.
+   - [Administration](platform/administration.md) - contains 8 functions related to administration of your Kianda workspace. Click on Details below to see a list of functions and links to find out more.
    
      <details>
    
-     - [Designer](platform/form_designer2.md) - central point to create and manage processes
+     - [Designer](/docs/platform/administration/designer/) - central point to create and manage processes
    
-     - [App Store](platform/appstore.md) - pre-defined processes, for HR, Finance and Quality Assurance amongst others, that you can use and modify
+     - App Store - pre-defined processes, for HR, Finance and Quality Assurance amongst others, that you can use and modify
    
-     - [Subscription](platform/subscription.md) - design your own look and feel for your Kianda instance and change settings
+     - [Subscription](/docs/platform/administration/subscription/) - design your own look and feel for your Kianda instance and change settings
    
-     - [Data sources](platform/datasources.md) - connections to data sources like SharePoint or SQL Server
+     - [Data sources](/docs/platform/administration/datasources/) - connections to data sources like SharePoint or SQL Server
    
-     - [Scheduled tasks](platform/scheduledtasks.md) - use processes to run as scheduled tasks, and manage timeframes
+     - [Scheduled tasks](platform//docs/platform/administration/scheduledtasks/) - use processes to run as scheduled tasks, and manage timeframes
    
-     - [Recycle bin]([platform/recyclebin.md]) - list of deleted processes
+     - [Recycle bin](/docs/platform/administration/recyclebin/) - list of deleted processes
    
-     - [Users](platform/users.md) - user management area to create, delete users and groups
+     - [Users](/docs/platform/administration/users/) - user management area to create, delete users and groups
    
-     - [Developer](platform/developer.md) - allows you to create new widgets and webhooks
+     - [Developer](/docs/platform/administration/developer/) - allows you to create new widgets and webhooks
    
        </details>
    
