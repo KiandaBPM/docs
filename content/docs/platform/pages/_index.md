@@ -29,7 +29,7 @@ When you are in **View mode**, the **Edit** button ![Edit button](/images/edit.p
 ![View mode](/images/dashboardgeneral.png)
 
 ### Dashboards Edit mode ###
-When you click on the **Edit** button ![Edit button](/images/edit-current-page.jpg) you will be in **Edit mode**. When you are viewing a page in **Edit mode**, these options will be available to you along the top of the dashboard page:
+When you click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) you will be in **Edit mode**. When you are viewing a page in **Edit mode**, these options will be available to you along the top of the dashboard page:
 
 - the **Widget menu** where you can insert any of the seven available dashboard widgets
 - the **Settings** button ![Settings](/images/settings.png) to make changes to the dashboard page
@@ -80,7 +80,7 @@ The options in the **Create dashboard page** dialog box include:
 
   ![Dashboard page icon example](/images/dashboard-icon-example.jpg)
 
-- **Sort order** - Choose a numeric value - by either typing it into the field or by clicking on the up down arrows at the right of the field ![Up down arrows](/images/up-down-arrows.jpg) - for the place you want this dashboard to go in terms of the order of the dashboard pages in your main left side menu.
+- **Sort order** - Choose a numeric value - by either typing it into the field or by clicking on the up down arrows at the right of the field ![Up down arrows](/images/up-down-arrows.jpg) - for the place you want this dashboard to go in terms of the order of the dashboard pages in your main left side menu. 
 
 - **Group** - You can choose to group this dashboard as a sub-page of an existing dashboard page. If you want to do this, insert the name of the dashboard page you want to group this new dashboard page under.
 
