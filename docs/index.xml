@@ -190,23 +190,40 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Form owners</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>When creating forms, it is important to consider &lt;strong>form access&lt;/strong> during the design phase, that is who can access and edit forms in a process instance. For example if an employee submits a performance review form, a line manager may wish to access that submitted process instance/record and edit the form, adding in comments and performance grades.&lt;/p>
+&lt;p>When creating forms, it is important to consider &lt;strong>form access&lt;/strong> during the design phase, that is who can access and edit forms &lt;strong>in a process instance&lt;/strong>. For example if an employee submits a performance review form, a line manager may wish to access that submitted process instance/record and edit the form, adding in comments and performance grades.&lt;/p>
 &lt;p>There are two key principles to keep in mind in terms of &lt;strong>form access&lt;/strong>:&lt;/p>
 &lt;ol>
-&lt;li>Forms are &lt;strong>assignable&lt;/strong> - this means that only a form assignee, that is, someone that is assigned to a form, can &lt;strong>edit&lt;/strong> a particular form in a process instance. The &amp;lsquo;assignee&amp;rsquo; can be a combination of users and groups.&lt;/li>
-&lt;li>&lt;strong>Only form owners&lt;/strong> can edit a given form by &lt;strong>default&lt;/strong>. Any other user with access to view the form will see it in read-only mode.&lt;/li>
+&lt;li>
+&lt;p>Forms are &lt;strong>assignable&lt;/strong> - this means that only a form assignee, that is, someone that is assigned to a form, can &lt;strong>edit&lt;/strong> a particular form in a process instance. The &amp;lsquo;assignee&amp;rsquo; can be a combination of users and groups. There are various ways a form can be assigned to a user&lt;/p>
+&lt;p>​ a) Using &lt;strong>Rules&lt;/strong>, in particular the Workflow rule Assign form, see &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a> for details&lt;/p>
+&lt;p>​ b) Using &lt;strong>Quick actions&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/">Form Quick action&lt;/a> for details&lt;/p>
+&lt;p>​ c) Creating &lt;strong>form owners&lt;/strong> when creating or updating a process design, see &lt;a href="#creating-form-owners">Creating form owners&lt;/a> for details&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Only form owners&lt;/strong> can edit a given form by &lt;strong>default&lt;/strong>. Any other user with access to view the form will see it in read-only mode.&lt;/p>
+&lt;/li>
 &lt;/ol>
-&lt;p>So what is &lt;strong>form owner&lt;/strong>? A form owner can be assigned when a form is created in Kianda Designer. Only the form owner will be able to edit &lt;strong>process instances&lt;/strong> (records).&lt;/p>
-&lt;p>Once a process has been designed and users can initiate new process instances or records from a dashboard page, then the only people who can edit process records are the form owners or someone who has had the record assigned to them.
-For example, a line manager who is a form owner may need to add additional information about work goals in an appraisal form that their employee has already filled out.&lt;/p>
-&lt;h3 id="getting-started-with-form-owners">Getting started with Form owners&lt;/h3>
-&lt;p>To create form owners:&lt;/p>
+&lt;p>So what is &lt;strong>form owner&lt;/strong>? A form owner is assigned when a form is created in Kianda Designer or form owners can be added to a process design at a later stage. Only the form owner will be able to edit &lt;strong>process instances&lt;/strong> (records).&lt;/p>
+&lt;p>Once a process has been designed and users can initiate new process instances or records from a dashboard page, then the only people who can edit process records are the form owners or someone who has had the record assigned to them. For example, a line manager who is a form owner may need to add additional information about work goals in an appraisal form that their employee has already filled out.&lt;/p>
+&lt;h2 id="getting-started-with-form-owners">Getting started with Form owners&lt;/h2>
+&lt;h3 id="creating-form-owners">Creating form owners&lt;/h3>
 &lt;ol>
 &lt;li>Click on a process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on an existing process or create a new process by clicking on &lt;strong>Add new&lt;/strong> and complete the &lt;strong>Add new process&lt;/strong> dialog box.&lt;/li>
 &lt;li>Then within Kianda &lt;strong>Designer&lt;/strong> click on a form of interest and then click on the &lt;strong>Edit/(Pen)&lt;/strong> &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit/Pen button"> button for that form.&lt;/li>
-&lt;li>In the &lt;strong>Edit form&lt;/strong> dialog box you can add form owners in the &lt;strong>Default owner(s)&lt;/strong> field - this can be &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or &lt;strong>Partners&lt;/strong>.&lt;/li>
+&lt;li>In the &lt;strong>New form/Edit form&lt;/strong> dialog box you can add form owners in the &lt;strong>Default owner(s)&lt;/strong> field.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/new-form-owners.jpg" alt="Partner account details attributes">&lt;/p>
+&lt;p>​ Using the dropdown list choose from:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Users&lt;/strong> - Users must already be in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Groups&lt;/strong> - Groups must be defined in advance, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Partners&lt;/strong> - Partners must be already in the system and active, see &lt;a href="https://docs.kianda.com/docs/platform/administration/b2b-portals/">B2B portals&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;ol start="4">
+&lt;li>If you make a mistake, or form owners need to be changed in an existing process, click on the &lt;strong>x&lt;/strong> beside the name of the &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or &lt;strong>Partners&lt;/strong> to remove them and choose from the dropdown list again.&lt;/li>
+&lt;li>Add to or edit the remaining parameters in the dialog box as desired, see &lt;a href="#editing-forms/docs/platform/application-designer/designer/">Editing forms&lt;/a> and click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/li>
+&lt;/ol>
+&lt;h3 id="form-ownership-and-process-instances">Form ownership and process instances&lt;/h3>
 &lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to &lt;strong>when the the form is created&lt;/strong>. By default, only this person or group &lt;strong>can edit the form&lt;/strong>. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups.&lt;/p></description></item><item><title>Docs: How does Kianda work</title><link>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</guid><description>
 &lt;p>The Kianda no-code / low-code (NCLC) platform has been created with the ultimate flexibility and agility in mind, allowing simple user interactions to build complex processes.&lt;/p>
 &lt;p>Kianda has been constructed using an &lt;strong>Model, View, Controller (MVC) approach&lt;/strong>. This approach allows designers to build mobile-responsive applications via &lt;strong>rapid User Interface (UI) prototyping&lt;/strong>. The UI provides an easy way to build an application by clicking, scrolling, and dragging and dropping fields. The layout both provides a way to build the application or process schema, and to capture and monitor data at run-time.&lt;/p>

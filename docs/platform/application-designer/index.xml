@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Application designer</title><link>https://docs.kianda.com/docs/platform/application-designer/</link><description>Recent content in Application designer on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/application-designer/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/designer/</guid><description>
 &lt;p>Kianda &lt;strong>Designer&lt;/strong> provides an intuitive interface where you can quickly start building &lt;strong>forms&lt;/strong> for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).&lt;/p>
-&lt;h3 id="how-designer-works">How Designer works&lt;/h3>
+&lt;h2 id="how-designer-works">How Designer works&lt;/h2>
 &lt;p>This video introduces Kianda Designer and demonstrates how to start creating a form and add fields.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/designerintro.mp4">
@@ -75,7 +75,7 @@ Your browser does not support the video tag.
 &lt;/video>
 &lt;p>If you have created a process from scratch, an empty form is added to your process by default, called &amp;ldquo;form 1&amp;rdquo;. This is the first form. Click on this form and the &lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to customise it. You can also click on the &lt;strong>Add form&lt;/strong> button to add a new form.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/addform.png" alt="Add form">&lt;/p>
-&lt;h4 id="editing-forms">Editing forms&lt;/h4>
+&lt;h3 id="editing-forms">Editing forms&lt;/h3>
 &lt;p>When you click on a chosen form, then click on the &lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to edit the form.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/form1_resized.png" alt="Edit form">&lt;/p>
 &lt;p>The &lt;strong>Edit form&lt;/strong> dialog box opens where you can edit the fields. There are a number of edit options below.&lt;/p>
