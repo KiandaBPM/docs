@@ -66,6 +66,6 @@ A full list of rules is available in the table below.
 
 
 
-### What's next  ![Idea icon](/../content/docs/platform/rules/_index.assets/18.png) ###
+### What's next  ![Idea icon](/images/18.png) ###
 
 We have briefly introduced the concept of **Rules**. To read more about rules including each category of rules, click on the links below:

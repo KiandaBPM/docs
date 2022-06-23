@@ -35,7 +35,7 @@ The following properties are visible:
 
   ![Form information](/images/forminfo_resized.png)
 
-Underneath form properties you will see **Form submit rules**, go to [Rules](http://localhost:3000/#/rules/README) to find out more about Form rules.
+Underneath form properties you will see **Form submit rules**, go to [Rules](/docs/platform/rules/) to find out more about Form rules.
 
 Click on a control field, for example a text box, in the form to see [Field properties](#field-properties). 
 
@@ -57,4 +57,4 @@ The options within properties are:
 
 ![Changing text box width](/images/textboxsize-frame.png) 
 
-Underneath field properties you will see **Rules**, go to [Rules](http://localhost:3000/#/rules/README) to find out more about Field rules.
+Underneath field properties you will see **Rules**, go to [Rules](/docs/platform/rules/) to find out more about Field rules.
