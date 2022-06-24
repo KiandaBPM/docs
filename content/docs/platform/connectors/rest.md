@@ -14,64 +14,77 @@ You can create a REST API datasource when you want your Kianda processes and for
 
 A REST API data connector can be configured by users with the role **Administrator** or **Manage datasources**. These users can access the function, found under **Administration** > **Data sources**.
 
-1.  In the left-hand side menu, go to **Administration** > **Data sources.** 
+1. In the left-hand side menu, go to **Administration** > **Data sources.** 
 
-2. In the main view you will see any existing data connectors that have been created. From this view, uou can click on the **name** of a data connector to see details or **delete** a data connector by clicking on the **Bin/Trash** button. 
+2. In the main view you will see any existing data sources that have been created. From this view, you can click on the **name** of a data source to see details or **delete** a data source by clicking on the **Bin/Trash** button ![Bin/trash button](/images/binicon.png).
 
    ![Data sources main view](/images/datasource-main-view.jpg)
 
-3. Click on the **Add new** In the dialog box select the **REST Service** option, the below screen will open.
+3. To create a new data source, click on the **Add new** in the main view. A range of data source connectors will appear.
 
-![img](file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+   ![Data source list](/images/datasource-range.jpg)
 
-Fill in the fields above to set up the **datasource**
+4. To add a REST Service data source click on **REST Service**.
 
-·     **Display name –** This is the name of the datasourcce. Give it an adequate name as it will be used with your Process.
+5. The **REST Service details** screen opens. 
 
-·     **Rest server base URL –** This is the base URL of the REST API. Ensure there are no trailing characters, for example https://api.mywebsite.com
+![REST Service details](/images/rest-service-details.jpg)
 
-·     **Enable Certificate Authentication –** By default this option is set to **No**. By Selecting **Yes** this will display two new fields
+6. Fill in the first set of fields:
 
-o  **Certificate (.pfx) –** This is a file field which you can use to upload your certificate
+   - **Display name –** This is the name of the data source. Use an appropriate name, as this will be used with your process. 
 
-o  **Certificate password –** Enter the password of the certificate here so Kianda will be able to use it.
+   - **Rest server base URL –** This is the base URL of the REST API. Ensure there are no trailing characters, for example https://api.mywebsite.com   
 
-![img](file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+   - **Enable Certificate Authentication –** By default this option is set to **No**. By Selecting **Yes** this will display two new fields:
+     
+     - **Certificate (.pfx) –** This is a file field which you can use to upload your authentication certificate.
+     
+     - **Certificate password –** Enter the password of the certificate here so the Kianda platform will be able to use it.
+     
+       ![REST certificate authentication](/images/rest-cert.jpg)
 
-·     **Rest Methods –** Is a list of the current **REST Methods** that have been created in Kianda. To add a new **REST Method** to Kianda click on the **+Add REST Method**. The dialog box will appear.
 
-o  **Display Name –** The name you want to attribute to the REST Method
+7. Under **REST Methods**, a list of current REST Methods that have been created in Kianda will appear, listed by **Name**, **Path** and **HTTP Method**. You can edit details of the existing REST Methods by clicking on the **Edit/Pen** button or delete a REST Method by clicking on the **Bin/Trash** button.
 
-o  **HTTP Method –** The HTTP Method of the REST Method. 
+   ![REST Methods](/images/rest-methods.jpg)
 
-o  **Url Path –** This is the rest of the URL that will be concatenated with the **Rest server base URL**. For example, /rest/GetUserDetails
+8. To add a new **REST Method** to Kianda click on the **+Add REST Method** button. The **REST Method editor** dialog box appears.
 
-o  **Request headers –** Request headers can be manually added here that need to be sent as part of the request. For example, Authorization. These values can be hard coded or passed into the **Request header** from the **Process.**
+   ![REST Method editor](/images/rest-method-editor.jpg)
 
-o  **Request body –** This section is for the **Request body** that will be used during the request. These values can be hard coded or passed into the **Request body** from the **Process.**
+   Fill out the fields: 
 
-o  **Content type –** Here you can define the **Content type** of the body. The options are JSON and Form Data
+   - **Display Name –** The name you want to attribute to the REST Method.
+   - **HTTP Method –** The HTTP Method of the REST Method. 
+   - **Url Path –** This is the rest of the URL that will be concatenated with the **Rest server base URL**. For example /rest/GetUserDetails
+   - **Request headers –** Request headers can be manually added here that need to be sent as part of the request. For example, Authorization. These values can be hard coded or passed into the **Request header** from the **Process.**
+   - **Request body –** This section is for the **Request body** that will be used during the request. These values can be hard coded or passed into the **Request body** from the **Process.**
+   - **Content type –** Here you can define the **Content type** of the body. The options are JSON and Form Data
+   - **Response headers –** Here you can define any response headers you wish to capture in the response that you want to use in Kianda
+   - **Response body –** Here you can define the response body that the request will receive. Include or remove fields as needed.
 
-o  **Response headers –** Here you can define any response headers you wish to capture in the response that you want to use in Kianda
+   When you are finished editing the dialog box click on **OK** to save your changes, or click on **Close** at any time to exit
 
-o  **Response body –** Here you can define the response body that the request will receive. Include or remove fields as needed.
+9. Beneath the REST Methods on the REST Service details page there is a check box to **Use Kianda Cloud Connect?** - if you check this checkbox it gives you an option to Download Kianda Cloud Connect. Click on **Download Kianda Cloud Connect** to download a zip file.
 
-![img](file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+   ![Kianda Cloud Connect](/images/kianda-cloud-connect.jpg)
 
-·     **Buttons**
+10. At the bottom of the REST Service details page there are four buttons:
 
-o  **Test connection –** By clicking this button you verify that the **RESR server base URL** can be reached by Kianda.
+    - **Test connection –** By clicking this button you verify that the **REST server base URL** can be reached by Kianda.
 
-o  **Save –** Saves the creation or changes made to the **REST Service**
+    - **Save –** Saves the creation or changes made to the **REST Service**
 
-o  **Security –** Define who can control, use and the level of access your **B2B Portals** have to the **REST Service.** See the **Data Access** page for more details. (https://docs.kianda.com/docs/platform/b2b-portals/data-access/)
+    - **Security –** Define who can control, use and the level of access your **B2B Portals** have to the **REST Service.** See the [**Data Access**](/docs/platform/b2b-portals/data-access/) page for more details. 
 
-o  **Close –** Close the **REST Service.** All changes will not be saved.
+    - **Close –** Close the **REST Service.** Click on this to exit the page without saving. 
+
+    To finalise the connection, click on **Test connection** first, then click on **Security** to set security settings, and then click on **Save** to save your work. The data connector will now appear in the main data sources view. 
 
  
 
 **Next Steps**
 
 Your **REST Service** is now set up and ready to be used in your **Processes**. Check out the following article on how to implement a **REST Service** in order to refresh an Access token.
-
 
