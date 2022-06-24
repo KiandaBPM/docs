@@ -1,7 +1,7 @@
 ---
 title: "REST Web Service"
 linkTitle: "REST Web Service"
-typora-root-url: ..\..\..\..\static
+typora-root-url: ..\..\..\..\..\static
 ---
 
 One of the datasources available in Kianda is a connector to a **REST API**. Kianda has the ability to perform **GET, POST, PUT** and **DELETE** operation if they are supported by the webservice. The REST API datasource can support multiple REST methods, all of which can be called independently. Data from the webservice can be pulled into Kianda and manipulated or data from Kianda can be pushed to the webservice to be used by other systems.
