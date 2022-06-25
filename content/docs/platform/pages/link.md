@@ -110,7 +110,9 @@ To add a **Link widget** to a dashboard:
       - **Link visible to administrators only?** - Select **Yes** if you want to limit the visibility of this particular link button in the Link widget to Kianda Administrators only.
    
    
-      - **Link security (optional)** - You can limit visibility of this link button - the 'Start New Process' link, in our example - in the Link widget by selecting the user(s) and/or group(s) you want to be able to see it on the dashboard.
+      - **Link security (optional)** - You can limit visibility of this link button - the 'Start New Process' link, in our example - in the Link widget by selecting the user(s) and/or group(s) you want to be able to see it on the dashboard. 
+   
+        **Note**: If you have multiple button links in your **Link widget**, you can limit the users/groups who can view *each* of the link buttons within that Link widget.
    
 
 8. Click on the **OK** button when you are finished choosing the options you want for your **Link widget** (or click on **Close** to exit the **Edit link** dialog box without saving).
