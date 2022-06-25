@@ -72,6 +72,12 @@ The options in the **Create dashboard page** dialog box include:
 
   ![Dashboard page visible to](/images/dashboard-visible-to.jpg)
 
+  **Note**: **Levels of Security**
+
+  - **Dashboard-level security** can only be applied if you are an **Administrator** and can set the visibility of dashboards and widgets.  The dashboard page-level security you are setting here - who can see the dashboard page - will override any security you set for the visibility of individual widgets on that dashboard. See [Dashboard security](/docs/security/process-level-security#dashboard-security) and [Widget security](/docs/process-level-security#widget-security) for more information.
+
+  - **Widget security**: You will also be able to set security for each of the *individual widgets* that you add to the dashboard, i.e. who can view each dashboard widget.
+
 - **Icon** - You can choose an icon for your dashboard page from a drop-down list of hundreds of available icons. 
 
   ![Dashboard icon drop down menu](/images/dashboard-icon.jpg)
