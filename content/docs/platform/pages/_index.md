@@ -13,6 +13,8 @@ There are 3 steps involved in creating a dashboard:
 2. Add one or more widgets.
 3. Configure or edit the widgets to make the page look the way you want.
 
+This page covers how to [create](#how-to-create-a-dashboard-page), [edit](#how-to-edit-a-dashboard-page), and [delete](#how-to-delete-a-dashboard-page) dashboards and give an overview of [how to add widgets to a dashboard page](#how-to-add-widgets-to-a-dashboard-page).
+
 If you are using Kianda predefined processes from the App Store, then dashboards have already been created for you! These are available by clicking on **Dashboard** from the main side menu or left-hand pane.
 
 Before you begin, it is important to be aware that there are **two modes** involved in dashboard pages, an [Edit mode and View mode](#edit-mode-and-view-mode) as described below.
@@ -24,9 +26,9 @@ Before you begin, it is important to be aware that there are **two modes** invol
 When using dashboards, there are two modes: **Edit mode** and **View mode**.
 
 ### Dashboards View mode ###
-When you are in **View mode**, the **Edit** button ![Edit button](/images/edit.png) will be visible to the right in the top menu bar.
+When you are in **View mode**, the **Edit** button ![Edit button](/images/edit-current-page.jpg) will be visible to the right in the top menu bar.
 
-![View mode](/images/dashboardgeneral.png)
+![View mode](/images/dashboard-edit-overview.jpg)
 
 ### Dashboards Edit mode ###
 When you click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) you will be in **Edit mode**. When you are viewing a page in **Edit mode**, these options will be available to you along the top of the dashboard page:
@@ -34,10 +36,12 @@ When you click on the **Edit current page** button ![Edit button](/images/edit-c
 - the **Widget menu** where you can insert any of the seven available dashboard widgets
 - the **Settings** button ![Settings](/images/settings.png) to make changes to the dashboard page
 - the **Bin/Trash** button ![Bin button](/images/binicon.png) to delete the dashboard page
+- the **Add layout container** button ![Dashboard Add layout container button](/images/dashboard-add-layout-container.jpg) to add a layout container to the dashboard page in order to organise the widgets on the page and achieve the layout you want
+- three buttons ![Dashboard widget buttons in edit mode](/images/dashboard-widget-buttons.jpg) on each widget on the dashboard that allow you to edit the options relating to that widget type (**Update configuration**), edit the widget settings (**Update widget settings**) or delete the widget from the dashboard (**Remove widget**)
 
-![Page edit mode](/images/editmode.png)
+![Page edit mode](/images/dashboard-edit-mode.jpg)
 
-In **Edit mode,** you can also make changes to widgets, such as to Kianda predefined dashboards from the App Store, using the **Update configuration** ![Pen button](/images/pen.png), **Settings** ![Cog button](/images/cog.png)and **Delete** ![Bin button](/images/bin.png) buttons.
+
 
 If you want to create a dashboard page from scratch go to [How to create a dashboard page](#how-to-create-a-dashboard-page) or if you want to learn more about dashboard widgets go to [Dashboard widgets](#dashboard-widgets).
 
@@ -52,6 +56,7 @@ Kianda offers a user-friendly interface to create dashboards in minutes. This vi
     Your browser does not support the video tag.
     </source>
 </video>
+
 
 
 To create a new Dashboard page:
@@ -110,9 +115,11 @@ The options in the **Create dashboard page** dialog box include:
 
 4. Click on the **OK** button when you are have completed the **Create dashboard page** dialog box (or click on **Close** to close the dialog box and cancel the creation of the new dashboard page).
 
-5. The output is a menu with a number of widgets available that you can add to the dashboard. Go to [Dashboard widgets](#dashboard-widgets) to find out more about each widget type.
+5. The output is a menu with a number of widgets available that you can add to the dashboard.
 
 	![Widget menu](/images/dashboard-widget-menu.jpg)
+
+	**Note**: To add a widget to a dashboard, simply click on the widget type from the widget menu when you are in **Edit mode**. See [How to add layout containers to a Dashboard page](#how-to-add-layout-containers-to-a-dashboard-page) and [How to add widgets to a Dashboard page](#how-to-add-widgets-to-a-dashboard-page) to learn more, and go to [Dashboard widgets](#dashboard-widgets) to find out more about each widget type.
 
 6. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg)in the top menu to save any changes you make to the new Dashboard page - a pop-up message saying '**Page saved successfully**' will display. 
 
@@ -122,12 +129,16 @@ The options in the **Create dashboard page** dialog box include:
 
 7. You are now in **View mode**. To make further changes to the dashboard page, return to **Edit mode** by clicking on the **Edit** button ![Edit button](/images/edit-current-page.jpg) in the top menu.
 
-To edit a Dashboard page:
+
+
+### How to edit a Dashboard page ###
 
 1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
 1. Click on the **Settings** button ![Settings](/images/settings.png) - see [How to edit Dashboard page settings](#how-to-edit-dashboard-page-settings) for more details.
+1. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the top dashboard menu to save the changes to the page.
 
-If you want to delete a Dashboard page:
+
+### How to delete a Dashboard page ###
 
 1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
 
@@ -139,27 +150,74 @@ If you want to delete a Dashboard page:
 
 4. Click on **OK** to confirm that you want to delete the dashboard page (or click on **Cancel** to cancel the deletion).
 
+5. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the top dashboard menu to save the changes to the page.
+
+
+
+### How to add layout containers to a Dashboard page ###
+
+A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. It works in a way that is similar to how a [Panel layout control](/docs/platform/controls/layout/panel/) is used in a form to organise the fields in a form.
+
+To add a layout container to a Dashboard:
+
+1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
+
+2. Click the green **Add layout container** button ![Dashboard Add layout container button](/images/dashboard-add-layout-container.jpg) at the bottom right of the dashboard page.
+
+3. Complete the **Create a layout container** dialog box that opens by inserting a name and then selecting the width you want for the layout container (by selecting how wide the blue bar is):
+
+   ![Dashboard Create a layout container dialog box](/images/dashboard-create-layout-container.jpg)
+
+**Note**: 
+
+- If you know the layout you want for your Dashboard, in terms of what widgets you want to put where and how large you want the various widgets to be, insert layout containers *before* you start adding widgets to your dashboard page. Then, when you insert each widget, you can choose which layout container you want to assign it to when you are creating the widget.
+
+- Alternatively, if you aren't sure what widgets you are going to add or what layout you want for your dashboard, you can simply start adding widgets to your dashboard without any layout containers. Once you have added the widgets to the dashboard, you can either drag and drop the widgets to get the dashboard page layout you want or you can go back and insert layout containers and assign widgets to those containers but clicking on the **Update widget settings** button for each widget.
+
+- For example, for this existing widget, by opening the **Edit widget** dialog box, we can now choose to assign it to any of the four available **layout containers**:
+
+	![Dashboard widget assign to layout container](/images/dashboard-edit-widget-layout-container.jpg)
+
+
+
+### How to add widgets to a Dashboard page ###
+
+To add a widget to a Dashboard page:
+
+1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
+
+2. If you know the layout you want for your Dashboard, click the green **Add layout container** button ![Dashboard Add layout container button](/images/dashboard-add-layout-container.jpg) to create a layout container or several layout containers. See [How to add layout containers to a Dashboard page](#how-to-add-layout-containers-to-a-dashboard-page).
+
+3. Click on the type of widget you want to insert, from the seven available widget types in the dashboard widgets menu.
+
+   ![Dashboard widgets menu in Edit mode](/images/dashboard-seven-widgets.jpg)
+
+4. Complete the relevant dialog boxes for the widget type you have chosen. To learn more, go to [Dashboard widgets](#dashboard-widgets) and click on the widget type you want to add to your dashboard to find out more about it.
+
+5. Once you have added your widget(s), click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the top dashboard menu to save the changes to the page.
+
+   
 
 
 ### Dashboard widgets ###
 
-Kianda comes with **7 predefined dashboard widgets**. Using these widgets, you can quickly and easily create a process dashboard in minutes. 
+Kianda comes with **7 predefined dashboard widgets** that you can add to a dashboard page once you are in **Edit mode**. Using these widgets, you can quickly and easily create a process dashboard in minutes.
 
-The dashboard widgets include:
+To learn more about each widget type and how to add it to a dashboard, click on the name of the widget:
 
-- **Richtext widget**: The Richtext widget can be used to display text, links or images in a dashboard. See [Richtext widget](/docs/platform/pages/richtext/) for more information.
+- [**Rich Text widget**](/docs/platform/pages/richtext/): The Rich Text widget can be used to display text, links or images in a dashboard.
 
-- **Tile widget**: The Tile widget can be used to display a count of instances with different colour schemes. You could also add conditions to a display count - for example, you could add a condition of “Status” equals “In-progress” so that the count of process instances with a status of “In-progress” is displayed. To learn more, go to [Tile widget](/docs/platform/pages/tile/).
+- **[Tile widget](/docs/platform/pages/tile/)**: The Tile widget can be used to display a count of instances with different colour schemes. You could also add conditions to a display count - for example, you could add a condition of “Status” equals “In-progress” so that the count of process instances with a status of “In-progress” is displayed.
 
-- **Chart widget**: Using a Chart widget, you could display a pie chart, bar chart or a line chart in your dashboard. These charts can be used to represent various conditions in a process. For more details, see [Chart widget](/docs/platform/pages/chart/).
+- **[Chart widget](/docs/platform/pages/chart/)**: Using a Chart widget, you could display a pie chart, bar chart or a line chart in your dashboard. These charts can be used to represent various conditions in a process.
 
-- **List widget**: The List widget displays the instances (individual records) of the selected process. It can also be used to connect with any other widget to display the filtered items. See [List widget](/docs/platform/pages/list/) for more details.
+- [**List widget**](/docs/platform/pages/list/): The List widget displays the instances (individual records) of the selected process. It can also be used to connect with any other widget to display the filtered items.
 
-- **Filter widget**: The Filter widget can be used to filter process instances based on a field. For example, process instances could be filtered by status. See [Filter widget](/docs/platform/pages/filter/) for more details.
+- [**Filter widget**](/docs/platform/pages/filter/): The Filter widget can be used to filter process instances based on a field. For example, process instances could be filtered by status.
 
-- **Link widget**: The Link widget can be used to add a link to a new process, dashboard or any external sources (such as SharePoint). See [Link widget](/docs/platform/pages/link/) for more details.
+- [**Link widget**](/docs/platform/pages/link/): The Link widget can be used to add a link to a new process, dashboard or any external sources (such as SharePoint or a website).
 
-- **Walk-through widget**: The Walk-through widget allows you to create a walk-through of a process quickly which could be made available to a user, group or organisation. See [Walk through widget](/docs/platform/pages/walkthrough/) for more details.
+- [**Walk through widget**](/docs/platform/pages/walkthrough/): The Walk-through widget allows you to create a walk-through of a process quickly which could be made available to a user, group or organisation.
 
 When you have added one or more dashboard widgets, you can move the widgets around the dashboard page using the **Drag handle** button. This is possible when you are in **Edit mode**, see [Edit mode and View mode](#edit-mode-and-view-mode).
 
@@ -176,7 +234,7 @@ To edit a Dashboard page:
 2. Click on the **Settings** button ![Settings](/images/settings.png).
 3. An **Edit dashboard page** dialog box opens:
 
-![Edit dashboard page dialog box](/images/dashboard-edit-dialog.jpg)
+	![Edit dashboard page dialog box](/images/dashboard-edit-dialog.jpg)
 
 The options available are the same as those available in the **Create dashboard page** dialog box used to create a new dashboard page  - see [How to create a dashboard page](#how-to-create-a-dashboard-page) - but there are also **two** additional options:
 
@@ -189,6 +247,7 @@ The options available are the same as those available in the **Create dashboard 
   **Note**: Selecting this option will override whatever options you may have inserted in the '**Visible to**' option in the **Create dashboard page** dialog box (which allows you to restrict who can see the dashboard). Selecting **Hide from navigation** will mean the dashboard page will not be visible to anyone in the main side menu.
 
 4. Click on the **OK** button to save the changes you have made in the **Edit dashboard page** dialog box (or click on **Close** to exit the dialog box without saving).
+4. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the top dashboard menu to save the changes to the page.
 
 
 
@@ -215,7 +274,7 @@ This can be beneficial for businesses with users who will need to complete forms
 
 
 ### Saving changes and version history ###
-Make sure to save any changes you make to your Dashboard by clicking on the **Save** button ![Save](/images/saveprocess.png). 
+Make sure to save any changes you make to your Dashboard by clicking on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg). 
 
 
 
