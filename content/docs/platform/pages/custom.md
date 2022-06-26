@@ -3,9 +3,9 @@ title: "Custom dashboard widgets"
 typora-root-url: ..\..\..\..\static
 ---
 
-There are currently seven dashboard widgets, however you can create your own customised dashboard widgets using the steps below.
+There are currently seven pre-defined dashboard widgets that you can add to your dashboard page. However, you can also create your own **customised dashboard widgets** using the steps below.
 
-## How to get started ##
-
-1. 
+{{% pageinfo color="primary" %}}
+Page under construction
+{{% /pageinfo %}}
 
