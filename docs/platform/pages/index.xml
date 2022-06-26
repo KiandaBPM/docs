@@ -230,7 +230,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Add widget&lt;/strong> dialog box opens with a range of options for your new &lt;strong>Link widget&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-add-widget-link.jpg" alt="Dashboard Add widget dialog box">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-add-widget-link2.jpg" alt="Dashboard Add widget dialog box">&lt;/p>
 &lt;p>Choose the options you want:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -253,6 +253,12 @@
 &lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard.&lt;/p>
 &lt;/li>
 &lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout container&lt;/strong> - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new &lt;strong>Link widget&lt;/strong> to be placed in.&lt;/p>
+&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
+&lt;p>In this example, we can select to place our new Filter widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Device visibility&lt;/strong> - You can choose what devices and types of internet connections the dashboard &lt;strong>Link widget&lt;/strong> will be visible on - select all the options you want from Desktop, Tablet, Mobile, Wi-Fi and Flight mode as to when the device can view the dashboards. By default, all options are selected.&lt;/p>
@@ -331,6 +337,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Link security (optional)&lt;/strong> - You can limit visibility of this link button - the &amp;lsquo;Start New Process&amp;rsquo; link, in our example - in the Link widget by selecting the user(s) and/or group(s) you want to be able to see it on the dashboard.&lt;/p>
+&lt;p>If you choose &amp;lsquo;Yes&amp;rsquo; to the &amp;lsquo;Link visible to administrators only&amp;rsquo; option, you could then add in other users (in addition to administrators) who you want to be able to see the link button using this &amp;lsquo;Link security&amp;rsquo; option.&lt;/p>
 &lt;p>&lt;strong>Note&lt;/strong>: If you have multiple button links in your &lt;strong>Link widget&lt;/strong>, you can limit the users/groups who can view &lt;em>each&lt;/em> of the link buttons within that Link widget.&lt;/p>
 &lt;/li>
 &lt;/ul>
