@@ -44,6 +44,8 @@ To add a **Link widget** to a dashboard:
      - **Note - Dashboard page security**: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the '**Visible to**' option in the **Create dashboard page** dialog box (see Step 3 in [How to create a Dashboard page](/docs/platform/pages#how-to-create-a-dashboard-page)). 
 
        You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings ('Visible to') that are applied to the *individual widgets* within the dashboard.
+       
+       See [Dashboard security](/docs/security/process-level-security#dashboard-security) and [Widget security](/docs/process-level-security#widget-security) for more information.
 
    - **Layout container** - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new **Link widget** to be placed in.
 
@@ -51,7 +53,7 @@ To add a **Link widget** to a dashboard:
      
      In this example, we can select to place our new Filter widget into one of three layout containers - Top, Middle or Bottom:
      
-		![Dashboard Add widget dialog box select Layout container](/images/dashboard-select-layout-container.jpg)
+   	![Dashboard Add widget dialog box select Layout container](/images/dashboard-select-layout-container.jpg)
      
    - **Device visibility** - You can choose what devices and types of internet connections the dashboard **Link widget** will be visible on - select all the options you want from Desktop, Tablet, Mobile, Wi-Fi and Flight mode as to when the device can view the dashboards. By default, all options are selected.
 
