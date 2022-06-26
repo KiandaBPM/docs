@@ -203,7 +203,7 @@ Make sure to save any changes you make to your **Link widget** by clicking on th
 
 ## What's next  ![Idea icon](/images/18.png) ##
 
-Now that you've learned about the **Dashboard Link widget**, find out more about the other types of **Dashboard widget** you can add to your Kianda dashboard:
+Now that you've learned about the **Dashboard Link widget**, find out more about the other types of **Dashboard widgets** you can add to your Kianda dashboard:
 
 - [Chart widget](/docs/platform/pages/chart/)
 - [Filter widget](/docs/platform/pages/filter/)
