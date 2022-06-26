@@ -251,6 +251,7 @@
 &lt;li>
 &lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
 &lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard.&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -258,8 +259,10 @@
 &lt;p>&lt;strong>Layout container&lt;/strong> - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new &lt;strong>Link widget&lt;/strong> to be placed in.&lt;/p>
 &lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
 &lt;p>In this example, we can select to place our new Filter widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
 &lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
+&lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Device visibility&lt;/strong> - You can choose what devices and types of internet connections the dashboard &lt;strong>Link widget&lt;/strong> will be visible on - select all the options you want from Desktop, Tablet, Mobile, Wi-Fi and Flight mode as to when the device can view the dashboards. By default, all options are selected.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/devicevisibility.png" alt="Device visibility">&lt;/p>
