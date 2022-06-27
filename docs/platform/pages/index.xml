@@ -208,9 +208,298 @@
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Filter widget</title><link>https://docs.kianda.com/docs/platform/pages/filter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/filter/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Link widget</title><link>https://docs.kianda.com/docs/platform/pages/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/link/</guid><description>
+&lt;p>A &lt;strong>Filter dashboard widget&lt;/strong> can be used to create a filter or filters that enable you to change the information that is displayed on your dashboard, based on criteria you choose.&lt;/p>
+&lt;p>For example, if you have an &amp;lsquo;Annual Leave&amp;rsquo; dashboard that contains a List widget that shows the individual annual leave requests (process instances) submitted by employees, you could add a Filter widget to the dashboard and connect the List widget to it. This would add a Filter widget to your dashboard that enables you to filter the annual leave requests in the List widget by employee name.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To add a &lt;strong>Filter widget&lt;/strong> to a dashboard:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
+&lt;p>For this example, we&amp;rsquo;ll open a dashboard page called &amp;lsquo;Annual Leave&amp;rsquo; that has a &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a> on it showing the individual records (process instances) for annual leave requests made by employees:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-annual-leave-example3.jpg" alt="Annual Leave dashboard page example 2">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available):&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-button.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Filter widget&lt;/strong> button in the Dashboard &lt;strong>Widget menu&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-filter.jpg" alt="Select the Rich Text button in the Dashboard Widget menu">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Add widget&lt;/strong> dialog box opens with a range of options for your new &lt;strong>Filter widget&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-add-widget-filter.jpg" alt="Dashboard Add widget dialog box">&lt;/p>
+&lt;p>Choose the options you want:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - You can insert the title you want for your &lt;strong>Filter widget&lt;/strong> (instead of the default title that is shown). In our example, we&amp;rsquo;ll call it &amp;lsquo;Filter by Employee&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout columns&lt;/strong> - You can choose how wide you want your &lt;strong>Filter widget&lt;/strong> to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example click half-way across the blue bar to create a widget that is 6 columns wide, or click to the very end of the bar to create a column that is 12 columns wide.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Colour scheme&lt;/strong> - You can choose from six colour options for the header of the widget (Navy, Green, Blue, Amber, Red or White), if you choose to display it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Show header&lt;/strong> - You can choose whether or not you want the header of your Dashboard widget to be shown. This checkbox is selected by default, so de-select it if you don&amp;rsquo;t want the header to be displayed.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Filter widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as the Filter widget, in this case).&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout container&lt;/strong>: This option will only display if you have already created layout containers for your Dashboard page. Here, you can select the layout container you want to place your new &lt;strong>Filter widget&lt;/strong> in.&lt;/p>
+&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
+&lt;p>In this example, we can select to place our new Filter widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Device visibility&lt;/strong> - You can choose what devices and types of internet connections the dashboard &lt;strong>Filter widget&lt;/strong> will be visible on - select all the options you want from Desktop, Tablet, Mobile, Wi-Fi and Flight mode as to when the device can view the dashboards. By default, all options are selected.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/devicevisibility.png" alt="Device visibility">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when you&amp;rsquo;ve completed the &lt;strong>Add widget&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>Filter settings&lt;/strong> dialog box automatically opens showing the options for the Filter widget:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-settings-dialog.jpg" alt="Dashboard Link widget Edit button links dialog box">&lt;/p>
+&lt;p>Select the options you want for your &lt;strong>Filter widget&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Filter type&lt;/strong>: You can choose the way you want the filter options to be displayed for the end user. The options are &lt;strong>Dropdown list&lt;/strong>, &lt;strong>Radio list&lt;/strong>, &lt;strong>Date range&lt;/strong>, &lt;strong>Free text&lt;/strong> or &lt;strong>Current user&lt;/strong>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Dropdown list&lt;/strong> - Select this option if you want the filter options to be shown in a dropdown list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Radio list&lt;/strong> - Select this option if you want the filter options to be shown in a radio list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Date range&lt;/strong> - Select this option if you want the filter options to be shown as date ranges. If you select &lt;strong>Date range&lt;/strong> as the Filter type, you then have two filter options - &lt;strong>Date&lt;/strong> or &lt;strong>Date and time&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-date-range-options.jpg" alt="Dashboard Filter Widget date range filter options">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Free text&lt;/strong> - Select this option if you want the filter options to consist of free text.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Current user&lt;/strong> - Select this option if you want to filter by current user. If you select &lt;strong>Current user&lt;/strong> as the Filter type, you then need to choose the &lt;strong>Current user property&lt;/strong> from a drop-down list:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-current-user.jpg" alt="Dashboard Filter widget filter by Current User filter options">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Filter options&lt;/strong> - Once you have chosen the &lt;strong>Filter type&lt;/strong> you want - let&amp;rsquo;s say drop-down list - you can then decide whether the options that the end user can filter are &lt;strong>Manual entries&lt;/strong> (that you input by typing them into the box with the &amp;lsquo;Options one per line&amp;rsquo; placeholder text) or are pulled from a &lt;strong>Data source&lt;/strong>.&lt;/p>
+&lt;p>If you select &lt;strong>Data source&lt;/strong> to pull the filter options from a data source, four additional options will be shown:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-data-source.jpg" alt="Dashboard Filter widget Data source options">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Datasource&lt;/strong> - If you select &amp;lsquo;&lt;strong>Data source&lt;/strong>&amp;rsquo; for creating your filter options, next click on the &lt;strong>Datasource&lt;/strong> button. The &lt;strong>Select datasource&lt;/strong> dialog box automatically opens:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-select-datasource.jpg" alt="Dashboard Filter widget select datasource dialog box">&lt;/p>
+&lt;p>Select the data source you want to use by selecting one of the available Datasources listed on the left.&lt;/p>
+&lt;p>For our example, we will select &lt;strong>Kianda&lt;/strong> as our data source and then select the &amp;lsquo;Annual leave request and approval process&amp;rsquo;. We can do this by either&lt;/p>
+&lt;p>&lt;strong>(a)&lt;/strong> typing the start of this process name into the &amp;lsquo;&lt;strong>datasource tree&lt;/strong>&amp;rsquo; search field and selecting it when it is displayed below it, or&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-datasource-example.jpg" alt="Dashboard Filter widget Select datasource example">&lt;/p>
+&lt;p>&lt;strong>(b)&lt;/strong> by clicking on &lt;strong>Processes&lt;/strong> to show the full list of Kianda processes and scrolling and selecting the one we want&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-datasource-process.jpg" alt="Dashboard Filter widget Select datasource Kianda process">&lt;/p>
+&lt;p>Click &lt;strong>OK&lt;/strong> when you have selected the data source you want to use. The source you selected will now be shown beneath the &lt;strong>Datasource&lt;/strong> button in the &lt;strong>Filter settings&lt;/strong> dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-datasource-shown.jpg" alt="Dashboard Filter widget data source shown in Filter settings dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Edit conditions&lt;/strong> - If you want to add a condition to your filter&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/Edit_Conditions_button.jpg" alt="Edit Conditions button">and the &lt;strong>Edit conditions&lt;/strong> dialog box will open&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click the &lt;strong>Add conditions group&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addconditions.png" alt="Dashboard Filter widget Add a conditions group button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add the condition you want and click on &lt;strong>OK&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: To see an example of adding a condition to a filter, see the &amp;lsquo;&lt;strong>Add connections&lt;/strong>&amp;rsquo; option further down.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Display field&lt;/strong> - Choose the field you want displayed as the field options.&lt;/p>
+&lt;p>In our example - setting up a Filter widget to filter annual leave requests by employee name - we chose a Kianda process as the data source for the filter options, so when we click on the Display field, we can then expand the relevant form (Request form) and select the field we want to filter by:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-display-field-example.jpg" alt="Dashboard filter widget select Display field example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Value field&lt;/strong> - Choose the value you want displayed as the field options. Typically, the same field will be chosen as both the Display field and Value field (but you could choose different fields as needed).&lt;/p>
+&lt;p>In our example, we will select the &amp;lsquo;&lt;strong>Employee Name&lt;/strong>&amp;rsquo; field from the &amp;lsquo;Request form&amp;rsquo; in the &amp;lsquo;Annual leave request and approval process&amp;rsquo; for both the Display field and Value field:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-display-field.jpg" alt="Dashboard filter select Display field and Value field">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Filter mode&lt;/strong> - You can choose whether the filter widget displays options that &lt;strong>start with&lt;/strong> the letters or words the user types into the filter widget search box or shows filter options that &lt;strong>contain&lt;/strong> the letters or words the user inputs.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Default value&lt;/strong> - You can choose a Default value to appear in the Filter widget.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Enable query string&lt;/strong> - This option appears for all Filter types except for Date range and Current user.&lt;/p>
+&lt;p>To enable a query string:&lt;/p>
+&lt;ol>
+&lt;li>Select the &amp;lsquo;&lt;strong>Enable query string&lt;/strong> checkbox.&lt;/li>
+&lt;li>Insert the &lt;strong>unique field name&lt;/strong> of the field you want to filter by into the box with the &amp;lsquo;Parameter name&amp;rsquo; placeholder text.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-enable-query-string.jpg" alt="Dashboard Filter widget Enable query string option">&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong> - You can find the unique field name by going to the form that contains the field and clicking on the &lt;strong>Edit field&lt;/strong> button to open the &lt;strong>Edit field&lt;/strong> dialog box and copying the unique field name from the &amp;lsquo;&lt;strong>Name (Unique)&lt;/strong>&amp;rsquo; field.&lt;/p>
+&lt;p>In our example, we can find the &lt;strong>unique field name&lt;/strong> we need to enable a query string by&lt;/p>
+&lt;ol>
+&lt;li>Opening the Annual Leave process&lt;/li>
+&lt;li>Selecting the &amp;lsquo;Employee Name&amp;rsquo; field in the Annual Leave Request form - the field we want to filter by in our Filter widget.&lt;/li>
+&lt;li>Opening the &lt;strong>Edit field&lt;/strong> dialog box to find the field&amp;rsquo;s unique name:&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-uniquename.jpg" alt="Dashboard Filter widget Query string example field unique name">&lt;/p>
+&lt;ol start="4">
+&lt;li>In our &lt;strong>Filter settings&lt;/strong> dialog box, we can now select the &amp;lsquo;&lt;strong>Enable query string&lt;/strong>&amp;rsquo; checkbox and insert this unique field name into the Parameter name box - we will also select the &amp;lsquo;&lt;strong>Auto update URL&lt;/strong>&amp;rsquo; option (which will mean that the URL at the top of the page will automatically change when we choose a filter option):&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-example.jpg" alt="Dashboard filter widget Enable query string example">&lt;/p>
+&lt;ol start="5">
+&lt;li>Once you complete the &lt;strong>Filter settings&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong> and then click the &lt;strong>Save&lt;/strong> button in the top menu, you will now see that when you select an employee in the Filter widget, the URL at the top updates:&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-url.jpg" alt="Dashboard Filter widget enable query string Auto update URL example">&lt;/p>
+&lt;p>Setting the filter up like this to automatically update the URL when a filter option is selected enables you to make any of the filter selections a &lt;strong>dashboard favourite&lt;/strong> page.&lt;/p>
+&lt;p>For example, we could now choose to make this filter selection - Maddy Leenane&amp;rsquo;s annual leave requests - a favourited dashboard page by clicking on the &lt;strong>Add to favourites&lt;/strong> button in the top menu and completing the &lt;strong>Add to favourite&lt;/strong> dialog box that opens:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-favourited.jpg" alt="Dashboard Filter widget enable query string auto update URL add to favourites example">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add connections&lt;/strong> - Click on the &lt;strong>Add connections&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-filter-add-connection.jpg" alt="Dashboard Link widget Add connection button"> if you want to &lt;strong>add a filter connection to an existing widget on the dashboard&lt;/strong>, so that the data displayed in that widget is filtered based on the option selected in the Filter widget.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>The &lt;strong>Filter connection&lt;/strong> dialog box opens - click on the down arrow and select the dashboard widget you want to connect to:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-widget-connection.jpg" alt="Dashboard Filter widget Widget Filter connection dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can then choose to add filter conditions to the widget filter connection by&lt;/p>
+&lt;p>(a) clicking on the &lt;strong>Add filter conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-filter-add-filter-conditions.jpg" alt="Dashboard Filter widget Widget filter connection Add filter conditions button">&lt;/p>
+&lt;p>(b) clicking the &lt;strong>Add a conditions group&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addconditions.png" alt="Dashboard Filter widget Widget filter connection Add a conditions group button">in the &lt;strong>Edit conditions&lt;/strong> dialog box that opens&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-widget-connection-conditions.jpg" alt="Dashboard Filter widget Widget filter connection Edit conditions dialog box">&lt;/p>
+&lt;p>(c) completing the &lt;strong>Edit conditions&lt;/strong> dialog box to apply conditions to the widget filter connection and then clicking on &lt;strong>OK&lt;/strong>&lt;/p>
+&lt;p>In our example, we would add a filter condition to the widget filter connection by selecting &amp;lsquo;Employee Name&amp;rsquo; in the field on the left and &amp;lsquo;Filter value&amp;rsquo; in the field on the right. This will ensure that the &amp;lsquo;Employee Name&amp;rsquo; field will display as the filter value.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-widget-connection-conditionex.jpg" alt="Dashboard Filter widget Widget connection filter condition example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once you have completed the &lt;strong>Filter connection&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong>. The widget you have connected to the new Filter widget will now be shown under &lt;strong>Widget connections&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-widget-connection-example.jpg" alt="Dashboard Filter widget Widget connections example">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished choosing the options you want for your &lt;strong>Filter widget&lt;/strong> in the &lt;strong>Filter settings&lt;/strong> dialog box (or click on &lt;strong>Close&lt;/strong> to exit the &lt;strong>Edit link&lt;/strong> dialog box without saving).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the top dashboard menu to save the insertion of the new Filter widget.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Your new &lt;strong>Filter widget&lt;/strong> will now be displayed on your dashboard.&lt;/p>
+&lt;ul>
+&lt;li>Our example of a &lt;strong>Filter widget&lt;/strong> for the &amp;lsquo;Annual Leave&amp;rsquo; dashboard - where the filter allows users to filter the Annual Leave Request records in the existing List Widget by employee name - could look like this:&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-example.jpg" alt="Dashboard Filter widget example">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>When the user clicks on the down arrow button in the Filter widget, the names of employees who have submitted an Annual Leave Request are shown in a drop-down list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The user can then select an employee name from the drop-down list and the List widget to the right will automatically update to only show Annual Leave Request records (process instances) submitted by that employee. This is because we used the &lt;strong>Widget connection&lt;/strong> option to connect that List widget to the new Filter widget.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-example2.jpg" alt="Dashboard Filter widget example connected to a List widget">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-edit-filter-widgets">How to edit Filter widgets&lt;/h3>
+&lt;p>To edit a &lt;strong>Filter widget&lt;/strong> on a dashboard:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the Filter widget&amp;rsquo;s &lt;strong>Update configuration&lt;/strong> (Edit) button &lt;img src="https://docs.kianda.com/images/dashboard-update-configuration.jpg" alt="Dashboard update configuration button">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-update-config.jpg" alt="Select Dashboard Link widget Update configuration button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Filter settings&lt;/strong> dialog box opens, enabling you to make whatever changes you want to the filter using the same range of options as outlined in Step 6 of &lt;a href="#how-to-get-started">How to get started&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Making the changes you want and then click &lt;strong>OK&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The updated &lt;strong>Filter widget&lt;/strong> will be shown on the Dashboard. Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-move-filter-widgets">How to move Filter widgets&lt;/h3>
+&lt;p>To move a &lt;strong>Filter widget&lt;/strong> on a dashboard:&lt;/p>
+&lt;ol>
+&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
+&lt;li>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/li>
+&lt;li>Drag and drop the widget where you want it to go on your dashboard.&lt;/li>
+&lt;/ol>
+&lt;p>In our example, we could move the new Filter widget to the top left of the dashboard:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-move.jpg" alt="Move a Dashboard Link widget">&lt;/p>
+&lt;h3 id="how-to-delete-filter-widgets">How to delete Filter widgets&lt;/h3>
+&lt;p>To delete a &lt;strong>Filter widget&lt;/strong> from your dashboard:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-delete.jpg" alt="Delete Dashboard Rich Text widget">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>Delete widget&lt;/strong> dialog box will open. Click on &lt;strong>OK&lt;/strong> to delete the widget (or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-delete-widget-dialog.jpg" alt="Dashboard Delete widget dialog">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-edit-filter-widget-settings">How to edit Filter widget settings&lt;/h3>
+&lt;p>To update or edit your &lt;strong>Filter widget&lt;/strong> settings:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-edit-widget-settings.jpg" alt="Dashboard Update widget settings button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box will open, enabling you to make changes to any of the available options (the same options as were available in the &lt;strong>Add widget&lt;/strong> dialog box discussed in Step 4 of &lt;a href="#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-edit-widget.jpg" alt="Dashboard Link widget Edit widget dialog box">&lt;/p>
+&lt;p>In our example, we could choose to reduce the width of the &lt;strong>Filter widget&lt;/strong> to be 4 columns wide, by clicking to the left of the existing blue bar.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> to confirm the changes you&amp;rsquo;ve made to the widget settings (or click on &lt;strong>Close&lt;/strong> if you don&amp;rsquo;t want to retain any changes).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The updated &lt;strong>Filter widget&lt;/strong> will display on your dashboard. Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="saving-changes">Saving changes&lt;/h3>
+&lt;p>Make sure to save any changes you make to your &lt;strong>Filter widget&lt;/strong> by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu. If you leave the dashboard without saving the changes you have made to a widget, the next time you visit the dashboard it won&amp;rsquo;t include any of the changes made to it since the dashboard page was last saved.&lt;/p>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Dashboard Filter widget&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough">Walkthrough widget&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Link widget</title><link>https://docs.kianda.com/docs/platform/pages/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/link/</guid><description>
 &lt;p>A &lt;strong>Link dashboard widget&lt;/strong> can be used to create a button link on a dashboard page that initiates a new process instance (by bringing the user straight into the first form of a particular process), links to another dashboard or links to an external website.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To add a &lt;strong>Link widget&lt;/strong> to a dashboard:&lt;/p>
