@@ -1,5 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Dashboard pages</title><link>https://docs.kianda.com/docs/platform/pages/</link><description>Recent content in Dashboard pages on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/pages/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Chart widget</title><link>https://docs.kianda.com/docs/platform/pages/chart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/chart/</guid><description>
-&lt;p>With the chart widget, you can create pie, bar or line charts. These charts can be used to represent various conditions for a process.&lt;/p>
+&lt;p>A dashboard &lt;strong>Chart widget&lt;/strong> enables you to create pie charts, bar charts or line charts on your dashboard page. These charts can be used to represent various conditions or values in a process.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -208,7 +208,7 @@
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Filter widget</title><link>https://docs.kianda.com/docs/platform/pages/filter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/filter/</guid><description>
-&lt;p>A &lt;strong>Filter dashboard widget&lt;/strong> can be used to create a filter or filters that enable you to change the information that is displayed on your dashboard, based on criteria you choose.&lt;/p>
+&lt;p>A dashboard &lt;strong>Filter widget&lt;/strong> can be used to create a filter or filters that enable you to change the information that is displayed on your dashboard, based on criteria you choose.&lt;/p>
 &lt;p>For example, if you have an &amp;lsquo;Annual Leave&amp;rsquo; dashboard that contains a List widget that shows the individual annual leave requests (process instances) submitted by employees, you could add a Filter widget to the dashboard and connect the List widget to it. This would add a Filter widget to your dashboard that enables you to filter the annual leave requests in the List widget by employee name.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To add a &lt;strong>Filter widget&lt;/strong> to a dashboard:&lt;/p>
@@ -506,7 +506,7 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough">Walkthrough widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Link widget</title><link>https://docs.kianda.com/docs/platform/pages/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/link/</guid><description>
-&lt;p>A &lt;strong>Link dashboard widget&lt;/strong> can be used to create a button link on a dashboard page that initiates a new process instance (by bringing the user straight into the first form of a particular process), links to another dashboard or links to an external website.&lt;/p>
+&lt;p>A dashboard &lt;strong>Link widget&lt;/strong> can be used to create a button link on a dashboard page that initiates a new process instance (by bringing the user straight into the first form of a particular process), links to another dashboard or links to an external website.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To add a &lt;strong>Link widget&lt;/strong> to a dashboard:&lt;/p>
 &lt;ol>
@@ -728,7 +728,7 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough">Walkthrough widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: List widget</title><link>https://docs.kianda.com/docs/platform/pages/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/list/</guid><description>
-&lt;p>The list widget displays the instances of the selected process in a dashboard. The List widget can also be used to connect with any other dashboard widgets to display filtered items.&lt;/p>
+&lt;p>A dashboard &lt;strong>List widget&lt;/strong> displays the instances of the selected process in a dashboard. The List widget can also be used to connect with any other dashboard widgets to display filtered items.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -926,7 +926,7 @@
 &lt;p>When you have completed your changes, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/../old-documentation/save-dash.png" alt="Save button"> to save your changes or &lt;strong>X&lt;/strong> to quit without saving.&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>Docs: Rich Text widget</title><link>https://docs.kianda.com/docs/platform/pages/richtext/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/richtext/</guid><description>
-&lt;p>A &lt;strong>Rich Text dashboard widget&lt;/strong> can be used to create custom rich text content on a dashboard page, such as an attractive banner or heading. It can provide optimum formatting options, such as bold and italics and the option to insert images or links.&lt;/p>
+&lt;p>A dashboard &lt;strong>Rich Text widget&lt;/strong> can be used to create custom rich text content on a dashboard page, such as an attractive banner or heading. It can provide optimum formatting options, such as bold and italics and the option to insert images or links.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To add a &lt;strong>Rich Text widget&lt;/strong> to a dashboard:&lt;/p>
 &lt;ol>
@@ -1080,7 +1080,7 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough">Walkthrough widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Tile widget</title><link>https://docs.kianda.com/docs/platform/pages/tile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/tile/</guid><description>
-&lt;p>The tile widget allows you to display a count of instances. This is a really useful way to showcase whole numbers for example total budget requested through Purchase Orders, or the amount of customer queries solved in a week.&lt;/p>
+&lt;p>A dashboard &lt;strong>Tile widget&lt;/strong> allows you to display a count of instances. This is a really useful way to showcase whole numbers for example total budget requested through Purchase Orders, or the amount of customer queries solved in a week.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
