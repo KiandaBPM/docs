@@ -356,19 +356,25 @@
 &lt;p>&lt;strong>Note&lt;/strong> - You can find the unique field name by going to the form that contains the field and clicking on the &lt;strong>Edit field&lt;/strong> button to open the &lt;strong>Edit field&lt;/strong> dialog box and copying the unique field name from the &amp;lsquo;&lt;strong>Name (Unique)&lt;/strong>&amp;rsquo; field.&lt;/p>
 &lt;p>In our example, we can find the &lt;strong>unique field name&lt;/strong> we need to enable a query string by&lt;/p>
 &lt;ol>
-&lt;li>Opening the Annual Leave process&lt;/li>
-&lt;li>Selecting the &amp;lsquo;Employee Name&amp;rsquo; field in the Annual Leave Request form - the field we want to filter by in our Filter widget.&lt;/li>
-&lt;li>Opening the &lt;strong>Edit field&lt;/strong> dialog box to find the field&amp;rsquo;s unique name:&lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>Opening the Annual Leave process&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Selecting the &amp;lsquo;Employee Name&amp;rsquo; field in the Annual Leave Request form - the field we want to filter by in our Filter widget.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Opening the &lt;strong>Edit field&lt;/strong> dialog box to find the field&amp;rsquo;s unique name:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-uniquename.jpg" alt="Dashboard Filter widget Query string example field unique name">&lt;/p>
-&lt;ol start="4">
-&lt;li>In our &lt;strong>Filter settings&lt;/strong> dialog box, we can now select the &amp;lsquo;&lt;strong>Enable query string&lt;/strong>&amp;rsquo; checkbox and insert this unique field name into the Parameter name box - we will also select the &amp;lsquo;&lt;strong>Auto update URL&lt;/strong>&amp;rsquo; option (which will mean that the URL at the top of the page will automatically change when we choose a filter option):&lt;/li>
-&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>In our &lt;strong>Filter settings&lt;/strong> dialog box, we can now select the &amp;lsquo;&lt;strong>Enable query string&lt;/strong>&amp;rsquo; checkbox and insert this unique field name into the Parameter name box - we will also select the &amp;lsquo;&lt;strong>Auto update URL&lt;/strong>&amp;rsquo; option (which will mean that the URL at the top of the page will automatically change when we choose a filter option):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-example.jpg" alt="Dashboard filter widget Enable query string example">&lt;/p>
-&lt;ol start="5">
-&lt;li>Once you complete the &lt;strong>Filter settings&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong> and then click the &lt;strong>Save&lt;/strong> button in the top menu, you will now see that when you select an employee in the Filter widget, the URL at the top updates:&lt;/li>
-&lt;/ol>
+&lt;/li>
+&lt;li>
+&lt;p>Once you complete the &lt;strong>Filter settings&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong> and then click the &lt;strong>Save&lt;/strong> button in the top menu, you will now see that when you select an employee in the Filter widget, the URL at the top updates:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-url.jpg" alt="Dashboard Filter widget enable query string Auto update URL example">&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>Setting the filter up like this to automatically update the URL when a filter option is selected enables you to make any of the filter selections a &lt;strong>dashboard favourite&lt;/strong> page.&lt;/p>
 &lt;p>For example, we could now choose to make this filter selection - Maddy Leenane&amp;rsquo;s annual leave requests - a favourited dashboard page by clicking on the &lt;strong>Add to favourites&lt;/strong> button in the top menu and completing the &lt;strong>Add to favourite&lt;/strong> dialog box that opens:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-favourited.jpg" alt="Dashboard Filter widget enable query string auto update URL add to favourites example">&lt;/p>
@@ -408,18 +414,18 @@
 &lt;li>
 &lt;p>Your new &lt;strong>Filter widget&lt;/strong> will now be displayed on your dashboard.&lt;/p>
 &lt;ul>
-&lt;li>Our example of a &lt;strong>Filter widget&lt;/strong> for the &amp;lsquo;Annual Leave&amp;rsquo; dashboard - where the filter allows users to filter the Annual Leave Request records in the existing List Widget by employee name - could look like this:&lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>Our example of a &lt;strong>Filter widget&lt;/strong> for the &amp;lsquo;Annual Leave&amp;rsquo; dashboard - where the filter allows users to filter the Annual Leave Request records in the existing List Widget by employee name - could look like this:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-example.jpg" alt="Dashboard Filter widget example">&lt;/p>
-&lt;ul>
+&lt;/li>
 &lt;li>
 &lt;p>When the user clicks on the down arrow button in the Filter widget, the names of employees who have submitted an Annual Leave Request are shown in a drop-down list.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The user can then select an employee name from the drop-down list and the List widget to the right will automatically update to only show Annual Leave Request records (process instances) submitted by that employee. This is because we used the &lt;strong>Widget connection&lt;/strong> option to connect that List widget to the new Filter widget.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-example2.jpg" alt="Dashboard Filter widget example connected to a List widget">&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-example2.jpg" alt="Dashboard Filter widget example connected to a List widget">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-filter-widgets">How to edit Filter widgets&lt;/h3>
