@@ -79,7 +79,7 @@ The options in the **Create dashboard page** dialog box include:
 
   **Note**: **Levels of Security**
 
-  - **Dashboard-level security** can only be applied if you are an **Administrator** and can set the visibility of dashboards and widgets.  The dashboard page-level security you are setting here - who can see the dashboard page - will override any security you set for the visibility of individual widgets on that dashboard. See [Dashboard security](/docs/security/process-level-security#dashboard-security) and [Widget security](/docs/process-level-security#widget-security) for more information.
+  - **Dashboard-level security** can only be applied if you are an **Administrator** and can set the visibility of dashboards and widgets.  The dashboard page-level security you are setting here - who can see the dashboard page - will override any security you set for the visibility of individual widgets on that dashboard. See [Dashboard security](/docs/security/process-level-security#dashboard-security) and [Widget security](/docs/security/process-level-security#widget-security) for more information.
 
   - **Widget security**: You will also be able to set security for each of the *individual widgets* that you add to the dashboard, i.e. who can view each dashboard widget.
 
@@ -91,7 +91,7 @@ The options in the **Create dashboard page** dialog box include:
 
   ![Dashboard page icon example](/images/dashboard-icon-example.jpg)
 
-- **Sort order** - Choose a numeric value - by either typing it into the field or by clicking on the up down arrows at the right of the field ![Up down arrows](/images/up-down-arrows.jpg) - for the place you want this dashboard to go in terms of the order of the dashboard pages in your main left side menu. 
+- **Sort order** - Choose a numeric value - by either typing it into the field or by clicking on the up down arrows at the right of the field ![Up down arrows](/images/up-down-arrows.jpg) - for the place you want this dashboard to go in terms of the order of the dashboard pages in your main left side menu.
 
 - **Group** - You can choose to group this dashboard as a sub-page of an existing dashboard page. If you want to do this, insert the name of the dashboard page you want to group this new dashboard page under.
 
