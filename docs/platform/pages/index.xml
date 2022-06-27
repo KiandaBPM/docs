@@ -554,10 +554,8 @@
 &lt;p>&lt;strong>Layout container&lt;/strong> - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new &lt;strong>Link widget&lt;/strong> to be placed in.&lt;/p>
 &lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
 &lt;p>In this example, we can select to place our new Filter widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
-&lt;ul>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Device visibility&lt;/strong> - You can choose what devices and types of internet connections the dashboard &lt;strong>Link widget&lt;/strong> will be visible on - select all the options you want from Desktop, Tablet, Mobile, Wi-Fi and Flight mode as to when the device can view the dashboards. By default, all options are selected.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/devicevisibility.png" alt="Device visibility">&lt;/p>
@@ -592,7 +590,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>Select the Kianda &lt;strong>process&lt;/strong> that you want to open when the user clicks on the Link widget. You can type the start of a process name into the field so the drop-down list is filtered to show processes starting with that letter or word.&lt;/p>
-&lt;p>In our example, we will select the &amp;lsquo;Annual leave request and approval process&amp;rsquo; as the &lt;strong>Target process&lt;/strong> for our new &lt;strong>Link widget&lt;/strong>; this will mean that a new instance of the Annual Leave request form will open when the user clicks on the &amp;lsquo;Start New Process&amp;rsquo; Link widget button on the dashboard.&lt;/p>
+&lt;p>In our example, we will select the &amp;lsquo;&lt;strong>Annual leave request and approval process&lt;/strong>&amp;rsquo; as the &lt;strong>Target process&lt;/strong> for our new &lt;strong>Link widget&lt;/strong>; this will mean that a new instance of the &amp;lsquo;Annual Leave request form&amp;rsquo; will open when the user clicks on the &amp;lsquo;Start New Process&amp;rsquo; Link widget button on the dashboard.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>If you want the process to open in a pop-up dialog box without the user leaving the dashboard page, select the &lt;strong>Show in dialog?&lt;/strong> checkbox. Otherwise, the user will be brought directly into the first form in the process that you have linked to.&lt;/p>
@@ -615,9 +613,33 @@
 &lt;p>If you select to link to an &lt;strong>External&lt;/strong> website, two options display below it - &lt;strong>URL&lt;/strong> and &amp;lsquo;&lt;strong>Open in new window?&lt;/strong>&amp;rsquo;:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-external.jpg" alt="Dashboard Link widget linking to an External website">&lt;/p>
 &lt;ol>
-&lt;li>Insert the URL you want the user to be brought to when they click on the Link widget.&lt;/li>
-&lt;li>Select the &amp;lsquo;&lt;strong>Open in new window?&lt;/strong>&amp;rsquo; checkbox if you want the external website to open in a new window.&lt;/li>
+&lt;li>
+&lt;p>Insert the URL you want the user to be brought to when they click on the Link widget.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the &amp;lsquo;&lt;strong>Open in new window?&lt;/strong>&amp;rsquo; checkbox if you want the external website to open in a new window.&lt;/p>
+&lt;/li>
 &lt;/ol>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>QueryString parameters&lt;/strong> - If the process you are linking to has an On-load rule (that is, a rule that is executed when the process is initiated) that includes a data rule with a query string, the query string parameter(s) from that rule will be shown here.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-parameters.jpg" alt="Dashboard Link widget query string parameters example">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>In the example shown here, &amp;lsquo;&lt;strong>firstName=John&lt;/strong>&amp;rsquo; is being passed as a query string parameter. This means that when the &amp;lsquo;Start New Process&amp;rsquo; link is clicked, the new form will open with &amp;lsquo;John&amp;rsquo; pre-populated in the &amp;lsquo;First Name&amp;rsquo; field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The query string in the &lt;strong>QueryString parameters&lt;/strong> field is being pulled from the On load rule applied to the &amp;lsquo;Annual leave request and approval process&amp;rsquo; we are linking to. We can view this rule by opening the process in Designer and looking at the &lt;strong>On load rules&lt;/strong> in the right side menu:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-onload.jpg" alt="Dashboard Link widget query string on load rule example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you click on the &amp;lsquo;&lt;strong>Set form field 1&lt;/strong>&amp;rsquo; On load rule, you can then see in the &lt;strong>Edit rule - Set form field&lt;/strong> dialog box that a rule has been applied to the form to set the &amp;lsquo;First Name&amp;rsquo; field:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-set-form-field.jpg" alt="Dashboard Link widget query string form on load rule example">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>To learn more about the &lt;strong>Set form field&lt;/strong> rule, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field/">Set form field rule&lt;/a> or to learn more about Rules in general, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Link icon&lt;/strong> - You can choose the icon you want to appear on your Link widget button. Click on the down arrow and select the icon you want to use from the large number of options available.&lt;/p>
@@ -637,8 +659,6 @@
 &lt;p>&lt;strong>Link security (optional)&lt;/strong> - You can limit visibility of this link button - the &amp;lsquo;Start New Process&amp;rsquo; link, in our example - in the Link widget by selecting the user(s) and/or group(s) you want to be able to see it on the dashboard.&lt;/p>
 &lt;p>If you choose &amp;lsquo;Yes&amp;rsquo; to the &amp;lsquo;Link visible to administrators only&amp;rsquo; option, you could then add in other users (in addition to administrators) who you want to be able to see the link button using this &amp;lsquo;Link security&amp;rsquo; option.&lt;/p>
 &lt;p>&lt;strong>Note&lt;/strong>: If you have multiple button links in your &lt;strong>Link widget&lt;/strong>, you can limit the users/groups who can view &lt;em>each&lt;/em> of the link buttons within that Link widget.&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
