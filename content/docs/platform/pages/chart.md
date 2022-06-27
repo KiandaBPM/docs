@@ -3,7 +3,7 @@ title: "Chart widget"
 typora-root-url: ..\..\..\..\static
 ---
 
-With the chart widget, you can create pie, bar or line charts. These charts can be used to represent various conditions for a process.
+A dashboard **Chart widget** enables you to create pie charts, bar charts or line charts on your dashboard page. These charts can be used to represent various conditions or values in a process.
 
 
 

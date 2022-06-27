@@ -3,7 +3,7 @@ title: "List widget"
 typora-root-url: ..\..\..\..\static
 ---
 
-The list widget displays the instances of the selected process in a dashboard. The List widget can also be used to connect with any other dashboard widgets to display filtered items.
+A dashboard **List widget** displays the instances of the selected process in a dashboard. The List widget can also be used to connect with any other dashboard widgets to display filtered items.
 
 
 

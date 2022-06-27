@@ -3,7 +3,7 @@ title: "Tile widget"
 typora-root-url: ..\..\..\..\static
 ---
 
-The tile widget allows you to display a count of instances. This is a really useful way to showcase whole numbers for example total budget requested through Purchase Orders, or the amount of customer queries solved in a week.
+A dashboard **Tile widget** allows you to display a count of instances. This is a really useful way to showcase whole numbers for example total budget requested through Purchase Orders, or the amount of customer queries solved in a week.
 
 
 

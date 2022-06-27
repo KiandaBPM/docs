@@ -3,7 +3,7 @@ title: "Filter widget"
 typora-root-url: ..\..\..\..\static
 ---
 
-A **Filter dashboard widget** can be used to create a filter or filters that enable you to change the information that is displayed on your dashboard, based on criteria you choose. 
+A dashboard **Filter widget** can be used to create a filter or filters that enable you to change the information that is displayed on your dashboard, based on criteria you choose. 
 
 For example, if you have an 'Annual Leave' dashboard that contains a List widget that shows the individual annual leave requests (process instances) submitted by employees, you could add a Filter widget to the dashboard and connect the List widget to it. This would add a Filter widget to your dashboard that enables you to filter the annual leave requests in the List widget by employee name. 
 
