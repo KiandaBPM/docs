@@ -53,7 +53,7 @@ To add a **Link widget** to a dashboard:
      
      In this example, we can select to place our new Filter widget into one of three layout containers - Top, Middle or Bottom:
      
-   	![Dashboard Add widget dialog box select Layout container](/images/dashboard-select-layout-container.jpg)
+		![Dashboard Add widget dialog box select Layout container](/images/dashboard-select-layout-container.jpg)
      
    - **Device visibility** - You can choose what devices and types of internet connections the dashboard **Link widget** will be visible on - select all the options you want from Desktop, Tablet, Mobile, Wi-Fi and Flight mode as to when the device can view the dashboards. By default, all options are selected.
 
@@ -85,7 +85,7 @@ To add a **Link widget** to a dashboard:
 
        2. Select the Kianda **process** that you want to open when the user clicks on the Link widget. You can type the start of a process name into the field so the drop-down list is filtered to show processes starting with that letter or word.
 
-          In our example, we will select the 'Annual leave request and approval process' as the **Target process** for our new **Link widget**; this will mean that a new instance of the Annual Leave request form will open when the user clicks on the 'Start New Process' Link widget button on the dashboard.
+          In our example, we will select the '**Annual leave request and approval process**' as the **Target process** for our new **Link widget**; this will mean that a new instance of the 'Annual Leave request form' will open when the user clicks on the 'Start New Process' Link widget button on the dashboard.
 
        3. If you want the process to open in a pop-up dialog box without the user leaving the dashboard page, select the **Show in dialog?** checkbox. Otherwise, the user will be brought directly into the first form in the process that you have linked to.
        
@@ -101,30 +101,45 @@ To add a **Link widget** to a dashboard:
        ![Dashboard Link widget linking to an External website](/images/dashboard-link-external.jpg)       
        
        1. Insert the URL you want the user to be brought to when they click on the Link widget.
-       1. Select the '**Open in new window?**' checkbox if you want the external website to open in a new window.
+       
+       2. Select the '**Open in new window?**' checkbox if you want the external website to open in a new window.
 
+	- **QueryString parameters** - If the process you are linking to has an On-load rule (that is, a rule that is executed when the process is initiated) that includes a data rule with a query string, the query string parameter(s) from that rule will be shown here.
 
-      - **Link icon** - You can choose the icon you want to appear on your Link widget button. Click on the down arrow and select the icon you want to use from the large number of options available.
-    
+        ![Dashboard Link widget query string parameters example](/images/dashboard-link-query-string-parameters.jpg)
+   
+        - In the example shown here, '**firstName=John**' is being passed as a query string parameter. This means that when the 'Start New Process' link is clicked, the new form will open with 'John' pre-populated in the 'First Name' field.
+   
+        - The query string in the **QueryString parameters** field is being pulled from the On load rule applied to the 'Annual leave request and approval process' we are linking to. We can view this rule by opening the process in Designer and looking at the **On load rules** in the right side menu:
+   
+			![Dashboard Link widget query string on load rule example](/images/dashboard-link-query-string-onload.jpg)
+   
+        - If you click on the '**Set form field 1**' On load rule, you can then see in the **Edit rule - Set form field** dialog box that a rule has been applied to the form to set the 'First Name' field:
+   
+			![Dashboard Link widget query string form on load rule example](/images/dashboard-link-query-string-set-form-field.jpg)
+   
+        To learn more about the **Set form field** rule, go to [Set form field rule](/docs/platform/rules/data/set-form-field/) or to learn more about Rules in general, see [Rules](/docs/platform/rules/).
+   
+    - **Link icon** - You can choose the icon you want to appear on your Link widget button. Click on the down arrow and select the icon you want to use from the large number of options available.
+   
         ![Dashboard Link widget link icon](/images/dashboard-link-icon.jpg)
 
 
-      - **Text colour** - You can choose the colour of the text that appears on the Link widget button. For example, if we choose orange, our Link widget button could look like this:
+    - **Text colour** - You can choose the colour of the text that appears on the Link widget button. For example, if we choose orange, our Link widget button could look like this:
     
         ![Dashboard Link widget button example with orange text](/images/dashboard-link-button-example.jpg)
-
-
-      - **Link size** - You can choose the width of the Link widget button, from 1 column wide to 12 columns wide. Change the width by clicking on the blue bar.
-
-
-      - **Link visible to administrators only?** - Select **Yes** if you want to limit the visibility of this particular link button in the Link widget to Kianda Administrators only.
-
-
-      - **Link security (optional)** - You can limit visibility of this link button - the 'Start New Process' link, in our example - in the Link widget by selecting the user(s) and/or group(s) you want to be able to see it on the dashboard. 
     
-        If you choose 'Yes' to the 'Link visible to administrators only' option, you could then add in other users (in addition to administrators) who you want to be able to see the link button using this 'Link security' option.
-        
-        **Note**: If you have multiple button links in your **Link widget**, you can limit the users/groups who can view *each* of the link buttons within that Link widget.
+    - **Link size** - You can choose the width of the Link widget button, from 1 column wide to 12 columns wide. Change the width by clicking on the blue bar.
+
+
+	- **Link visible to administrators only?** - Select **Yes** if you want to limit the visibility of this particular link button in the Link widget to Kianda Administrators only.
+
+
+	- **Link security (optional)** - You can limit visibility of this link button - the 'Start New Process' link, in our example - in the Link widget by selecting the user(s) and/or group(s) you want to be able to see it on the dashboard. 
+	
+	    If you choose 'Yes' to the 'Link visible to administrators only' option, you could then add in other users (in addition to administrators) who you want to be able to see the link button using this 'Link security' option.
+	    
+	    **Note**: If you have multiple button links in your **Link widget**, you can limit the users/groups who can view *each* of the link buttons within that Link widget.
 
 8. Click on the **OK** button when you are finished choosing the options you want for your **Link widget** (or click on **Close** to exit the **Edit link** dialog box without saving).
 
