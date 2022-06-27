@@ -154,15 +154,15 @@ To add a **Filter widget** to a dashboard:
        2. Selecting the 'Employee Name' field in the Annual Leave Request form - the field we want to filter by in our Filter widget.
        3. Opening the **Edit field** dialog box to find the field's unique name:
      
-       ![Dashboard Filter widget Query string example field unique name](/images/dashboard-filter-query-string-uniquename.jpg)
+			![Dashboard Filter widget Query string example field unique name](/images/dashboard-filter-query-string-uniquename.jpg)
      
        4. In our **Filter settings** dialog box, we can now select the '**Enable query string**' checkbox and insert this unique field name into the Parameter name box - we will also select the '**Auto update URL**' option (which will mean that the URL at the top of the page will automatically change when we choose a filter option):
      
-       ![Dashboard filter widget Enable query string example](/images/dashboard-filter-query-string-example.jpg)
+			![Dashboard filter widget Enable query string example](/images/dashboard-filter-query-string-example.jpg)
      
        5. Once you complete the **Filter settings** dialog box and click **OK** and then click the **Save** button in the top menu, you will now see that when you select an employee in the Filter widget, the URL at the top updates:
      
-       ![Dashboard Filter widget enable query string Auto update URL example](/images/dashboard-filter-query-string-url.jpg)
+			![Dashboard Filter widget enable query string Auto update URL example](/images/dashboard-filter-query-string-url.jpg)
      
        Setting the filter up like this to automatically update the URL when a filter option is selected enables you to make any of the filter selections a **dashboard favourite** page. 
        
@@ -204,13 +204,13 @@ To add a **Filter widget** to a dashboard:
 
    - Our example of a **Filter widget** for the 'Annual Leave' dashboard - where the filter allows users to filter the Annual Leave Request records in the existing List Widget by employee name - could look like this:
 
-	![Dashboard Filter widget example](/images/dashboard-filter-example.jpg)
+		![Dashboard Filter widget example](/images/dashboard-filter-example.jpg)
 	
 	- When the user clicks on the down arrow button in the Filter widget, the names of employees who have submitted an Annual Leave Request are shown in a drop-down list. 
 	
 	- The user can then select an employee name from the drop-down list and the List widget to the right will automatically update to only show Annual Leave Request records (process instances) submitted by that employee. This is because we used the **Widget connection** option to connect that List widget to the new Filter widget.
 	
-	![Dashboard Filter widget example connected to a List widget](/images/dashboard-filter-example2.jpg)
+		![Dashboard Filter widget example connected to a List widget](/images/dashboard-filter-example2.jpg)
 
 
 
