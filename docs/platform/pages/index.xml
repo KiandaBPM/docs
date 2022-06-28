@@ -630,7 +630,7 @@
 &lt;p>As an example, let&amp;rsquo;s say that when the user clicks on the link in the Link widget, you want the First Name field of the new Annual Leave Request form they are brought to to be pre-populated with the name &amp;lsquo;John&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To do this, insert the unique name of that field, as well as the value you want that field to be pre-populated with into the &lt;strong>QueryString parameters&lt;/strong> box - in this case that will be &amp;lsquo;&lt;strong>firstName=John&lt;/strong>&amp;rsquo;.&lt;/p>
+&lt;p>To do this, insert the unique name of that field, as well as the value you want that field to be pre-populated with into the &lt;strong>QueryString parameters&lt;/strong> box - in this case that will be &amp;lsquo;&lt;strong>firstName=John&lt;/strong>&amp;rsquo;. [The grey text that appears in the QueryString parameters field when you open the dialog box - param1=value1 is just placeholder text.]&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-parameters.jpg" alt="Dashboard Link widget query string parameters example">&lt;/p>
 &lt;/li>
 &lt;li>
