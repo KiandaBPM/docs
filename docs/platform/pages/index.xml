@@ -516,7 +516,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-annual-leave-example2.jpg" alt="Annual Leave dashboard page example 2">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available):&lt;/p>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-button.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -624,22 +624,29 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>QueryString parameters&lt;/strong> - If the process you are linking to has an On-load rule (that is, a rule that is executed when the process is initiated) that includes a data rule with a query string, the query string parameter(s) from that rule will be shown here.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-parameters.jpg" alt="Dashboard Link widget query string parameters example">&lt;/p>
+&lt;p>&lt;strong>QueryString parameters&lt;/strong> - Complete this field if you want to pass a query string when the user clicks on the link. For example, you may want the current user&amp;rsquo;s email address to be pre-populated in a form you are linking to.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>In the example shown here, &amp;lsquo;&lt;strong>firstName=John&lt;/strong>&amp;rsquo; is being passed as a query string parameter. This means that when the &amp;lsquo;Start New Process&amp;rsquo; link is clicked, the new form will open with &amp;lsquo;John&amp;rsquo; pre-populated in the &amp;lsquo;First Name&amp;rsquo; field.&lt;/p>
+&lt;p>As an example, let&amp;rsquo;s say that when the user clicks on the link in the Link widget, you want the First Name field of the new Annual Leave Request form they are brought to to be pre-populated with the name &amp;lsquo;John&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The query string in the &lt;strong>QueryString parameters&lt;/strong> field is being pulled from the On load rule applied to the &amp;lsquo;Annual leave request and approval process&amp;rsquo; we are linking to. We can view this rule by opening the process in Designer and looking at the &lt;strong>On load rules&lt;/strong> in the right side menu:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-onload.jpg" alt="Dashboard Link widget query string on load rule example">&lt;/p>
+&lt;p>To do this, insert the unique name of that field, as well as the value you want that field to be pre-populated with into the &lt;strong>QueryString parameters&lt;/strong> box - in this case that will be &amp;lsquo;&lt;strong>firstName=John&lt;/strong>&amp;rsquo;.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-parameters.jpg" alt="Dashboard Link widget query string parameters example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you click on the &amp;lsquo;&lt;strong>Set form field 1&lt;/strong>&amp;rsquo; On load rule, you can then see in the &lt;strong>Edit rule - Set form field&lt;/strong> dialog box that a rule has been applied to the form to set the &amp;lsquo;First Name&amp;rsquo; field:&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: The unique name of a field can be found by selecting the field in the form it is in and clicking on the &lt;strong>Edit field&lt;/strong> button. The field&amp;rsquo;s unique name can then be copied from the &lt;strong>Name (Unique)&lt;/strong> field.&lt;/p>
+&lt;p>In our example, the unique name of the &amp;lsquo;First Name&amp;rsquo; field in the &amp;lsquo;Annual Leave Request&amp;rsquo; form is &amp;lsquo;&lt;strong>firstName&lt;/strong>&amp;rsquo;:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/field-unique-name.jpg" alt="Dashboard Link widget example of field unique name">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For our query string parameter example to work, we now need to add an On load &lt;strong>Set form field rule&lt;/strong> (that is, a rule that is executed when the form is opened that will run a query string to automatically populate a field in the form).&lt;/p>
+&lt;p>To do this, we go to Designer, and add a &lt;strong>Set form field&lt;/strong> rule to execute when the form is loaded. In our example, the rule will set the &amp;lsquo;First Name&amp;rsquo; field when the form is loaded:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-set-form-field.jpg" alt="Dashboard Link widget query string form on load rule example">&lt;/p>
+&lt;p>Once the rule has been saved, it can be viewed in the &lt;strong>On load rules&lt;/strong> section of the right side menu when the process is opened:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-onload.jpg" alt="Dashboard Link widget query string on load rule example">&lt;/p>
+&lt;p>To learn more about the &lt;strong>Set form field&lt;/strong> rule, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field/">Set form field rule&lt;/a> or to learn more about Rules in general, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>To learn more about the &lt;strong>Set form field&lt;/strong> rule, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field/">Set form field rule&lt;/a> or to learn more about Rules in general, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Link icon&lt;/strong> - You can choose the icon you want to appear on your Link widget button. Click on the down arrow and select the icon you want to use from the large number of options available.&lt;/p>
