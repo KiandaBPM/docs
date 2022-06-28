@@ -18,7 +18,7 @@ To add a **Rich Text widget** to a dashboard:
 
    ![Annual Leave dashboard page example](/images/dashboard-annual-leave-example.jpg)
 
-2. Click on the **Edit current page** button from the top dashboard menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode) (in which the **Widget menu**, **Settings** button ![Settings](/images/settings.png) and **Bin/Trash** button ![Bin trash button](/images/bin.png) are available):
+2. Click on the **Edit current page** button from the top dashboard menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode) (in which the **Widget menu**, **Settings** button ![Settings](/images/settings.png), **Bin/Trash** button ![Bin trash button](/images/bin.png) and **Add layout container** button ![Dashboard Add layout container button](/images/dashboard-add-layout-container.jpg) are available):
 
    ![Click Edit current page button to go into Edit mode](/images/dashboard-edit-button.jpg)
 
