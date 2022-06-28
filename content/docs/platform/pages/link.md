@@ -17,7 +17,7 @@ To add a **Link widget** to a dashboard:
 
    ![Annual Leave dashboard page example 2](/images/dashboard-annual-leave-example2.jpg)
 
-2. Click on the **Edit current page** button from the top dashboard menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode) (in which the **Widget menu**, **Settings** button ![Settings](/images/settings.png) and **Bin/Trash** button ![Bin trash button](/images/bin.png) are available):
+2. Click on the **Edit current page** button from the top dashboard menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode) (in which the **Widget menu**, **Settings** button ![Settings](/images/settings.png), **Bin/Trash** button ![Bin trash button](/images/bin.png) and **Add layout container** button ![Dashboard Add layout container button](/images/dashboard-add-layout-container.jpg) are available):
 
    ![Click Edit current page button to go into Edit mode](/images/dashboard-edit-button.jpg)
 
@@ -104,21 +104,31 @@ To add a **Link widget** to a dashboard:
        
        2. Select the '**Open in new window?**' checkbox if you want the external website to open in a new window.
 
-	- **QueryString parameters** - If the process you are linking to has an On-load rule (that is, a rule that is executed when the process is initiated) that includes a data rule with a query string, the query string parameter(s) from that rule will be shown here.
+	- **QueryString parameters** - Complete this field if you want to pass a query string when the user clicks on the link. For example, you may want the current user's email address to be pre-populated in a form you are linking to.
 
-        ![Dashboard Link widget query string parameters example](/images/dashboard-link-query-string-parameters.jpg)
+        - As an example, let's say that when the user clicks on the link in the Link widget, you want the First Name field of the new Annual Leave Request form they are brought to to be pre-populated with the name 'John'.
    
-        - In the example shown here, '**firstName=John**' is being passed as a query string parameter. This means that when the 'Start New Process' link is clicked, the new form will open with 'John' pre-populated in the 'First Name' field.
+        - To do this, insert the unique name of that field, as well as the value you want that field to be pre-populated with into the **QueryString parameters** box - in this case that will be '**firstName=John**'.
    
-        - The query string in the **QueryString parameters** field is being pulled from the On load rule applied to the 'Annual leave request and approval process' we are linking to. We can view this rule by opening the process in Designer and looking at the **On load rules** in the right side menu:
+          ![Dashboard Link widget query string parameters example](/images/dashboard-link-query-string-parameters.jpg)
    
+	     - **Note**: The unique name of a field can be found by selecting the field in the form it is in and clicking on the **Edit field** button. The field's unique name can then be copied from the **Name (Unique)** field. 
+   
+	       In our example, the unique name of the 'First Name' field in the 'Annual Leave Request' form is '**firstName**':
+          
+	       ![Dashboard Link widget example of field unique name](/images/field-unique-name.jpg)
+          
+        - For our query string parameter example to work, we now need to add an On load **Set form field rule** (that is, a rule that is executed when the form is opened that will run a query string to automatically populate a field in the form).
+   
+          To do this, we go to Designer, and add a **Set form field** rule to execute when the form is loaded. In our example, the rule will set the 'First Name' field when the form is loaded:
+          
+          ![Dashboard Link widget query string form on load rule example](/images/dashboard-link-query-string-set-form-field.jpg)
+          
+	       Once the rule has been saved, it can be viewed in the **On load rules** section of the right side menu when the process is opened:
+
 			![Dashboard Link widget query string on load rule example](/images/dashboard-link-query-string-onload.jpg)
-   
-        - If you click on the '**Set form field 1**' On load rule, you can then see in the **Edit rule - Set form field** dialog box that a rule has been applied to the form to set the 'First Name' field:
-   
-			![Dashboard Link widget query string form on load rule example](/images/dashboard-link-query-string-set-form-field.jpg)
-   
-        To learn more about the **Set form field** rule, go to [Set form field rule](/docs/platform/rules/data/set-form-field/) or to learn more about Rules in general, see [Rules](/docs/platform/rules/).
+          
+          To learn more about the **Set form field** rule, go to [Set form field rule](/docs/platform/rules/data/set-form-field/) or to learn more about Rules in general, see [Rules](/docs/platform/rules/).
    
     - **Link icon** - You can choose the icon you want to appear on your Link widget button. Click on the down arrow and select the icon you want to use from the large number of options available.
    
