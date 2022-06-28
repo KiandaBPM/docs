@@ -108,7 +108,7 @@ To add a **Link widget** to a dashboard:
 
         - As an example, let's say that when the user clicks on the link in the Link widget, you want the First Name field of the new Annual Leave Request form they are brought to to be pre-populated with the name 'John'.
    
-        - To do this, insert the unique name of that field, as well as the value you want that field to be pre-populated with into the **QueryString parameters** box - in this case that will be '**firstName=John**'.
+        - To do this, insert the unique name of that field, as well as the value you want that field to be pre-populated with into the **QueryString parameters** box - in this case that will be '**firstName=John**'. [The grey text that appears in the QueryString parameters field when you open the dialog box - param1=value1 is just placeholder text.]
    
           ![Dashboard Link widget query string parameters example](/images/dashboard-link-query-string-parameters.jpg)
    
