@@ -19,7 +19,7 @@ To add a **Filter widget** to a dashboard:
 
    ![Annual Leave dashboard page example 2](/images/dashboard-annual-leave-example3.jpg)
 
-2. Click on the **Edit current page** button from the top dashboard menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode) (in which the **Widget menu**, **Settings** button ![Settings](/images/settings.png) and **Bin/Trash** button ![Bin trash button](/images/bin.png) are available):
+2. Click on the **Edit current page** button from the top dashboard menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode) (in which the **Widget menu**, **Settings** button ![Settings](/images/settings.png), **Bin/Trash** button ![Bin trash button](/images/bin.png) and **Add layout container** button ![Dashboard Add layout container button](/images/dashboard-add-layout-container.jpg) are available):
 
    ![Click Edit current page button to go into Edit mode](/images/dashboard-edit-button.jpg)
 
@@ -156,7 +156,7 @@ To add a **Filter widget** to a dashboard:
      
 			![Dashboard Filter widget Query string example field unique name](/images/dashboard-filter-query-string-uniquename.jpg)
      
-       4. In our **Filter settings** dialog box, we can now select the '**Enable query string**' checkbox and insert this unique field name into the Parameter name box - we will also select the '**Auto update URL**' option (which will mean that the URL at the top of the page will automatically change when we choose a filter option):
+       4. In our **Filter settings** dialog box, we can now select the '**Enable query string**' checkbox and insert this unique field name into the Parameter name box - we will also select the '**Auto update URL**' option (which will dynamically construct a URL, meaning that the URL at the top of the page will automatically change when we choose a filter option):
      
 			![Dashboard filter widget Enable query string example](/images/dashboard-filter-query-string-example.jpg)
      
