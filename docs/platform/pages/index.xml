@@ -204,10 +204,197 @@
 &lt;p>Click on &lt;strong>OK&lt;/strong> button again for the &lt;strong>Edit widget&lt;/strong> dialog box to apply the changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>Docs: Custom dashboard widgets</title><link>https://docs.kianda.com/docs/platform/pages/custom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/custom/</guid><description>
-&lt;p>There are currently seven pre-defined dashboard widgets that you can add to your dashboard page. However, you can also create your own &lt;strong>customised dashboard widgets&lt;/strong> using the steps below.&lt;/p>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Filter widget</title><link>https://docs.kianda.com/docs/platform/pages/filter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/filter/</guid><description>
+&lt;p>There are currently seven pre-defined dashboard widgets that you can add to your dashboard page. However, you can also create and use your own &lt;strong>customised dashboard widgets&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Custom dashboard widgets&lt;/strong> will only be available to add to your dashboard page from the widget menu if custom widgets have been created by an Administrator or Designer in your Kianda workspace.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To add a &lt;strong>Custom widget&lt;/strong> to a Kianda dashboard:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
+&lt;p>For this example, we&amp;rsquo;ll open a dashboard page called &amp;lsquo;Annual Leave&amp;rsquo; that currently has a &lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a> on it:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-annual-leave-example2.jpg" alt="Annual Leave dashboard page example 2">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-button.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>down arrow&lt;/strong> button in the Dashboard &lt;strong>Widget menu&lt;/strong> to view the available &lt;strong>Custom dashboard widgets&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-custom.jpg" alt="Select the Rich Text button in the Dashboard Widget menu">&lt;/p>
+&lt;p>In this example, there are two custom dashboard widgets available - the &amp;lsquo;Expenses dashboard&amp;rsquo; widget and &amp;lsquo;Welcome Banner&amp;rsquo;. We will use the &lt;strong>Welcome Banner&lt;/strong> custom widget for our example.&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: &lt;strong>This eight type of dashboard widget will only be available to you if Custom dashboard widgets have been created by Administrators or Developers in your Kianda workspace&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Add widget&lt;/strong> dialog box opens with a range of options for your new &lt;strong>Custom dashboard widget&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-add-widget-custom.jpg" alt="Dashboard Add widget dialog box">&lt;/p>
+&lt;p>Choose the options you want:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - You can insert the title you want for your &lt;strong>Custom dashboard widget&lt;/strong> (by replacing the default title shown). In our example, we&amp;rsquo;ll call it &amp;lsquo;Welcome&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout columns&lt;/strong> - You can choose how wide you want your &lt;strong>Custom widget&lt;/strong> to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example click half-way across the blue bar to create a widget that is 6 columns wide, or click to the very end of the bar to create a column that is 12 columns wide.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Colour scheme&lt;/strong> - You can choose from six colour options for the header of the widget (Navy, Green, Blue, Amber, Red or White), if you choose to display it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Show header&lt;/strong> - You can choose whether or not you want the header of your Custom widget to be shown in the dashboard. In our example, we will de-select the &amp;lsquo;Show header&amp;rsquo; option so that the header is not shown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Custom widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard.&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout container&lt;/strong> - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new &lt;strong>Custom widget&lt;/strong> to be placed in.&lt;/p>
+&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
+&lt;p>In this example, we can select to place our new Custom widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Device visibility&lt;/strong> - You can choose what devices and types of internet connections the dashboard &lt;strong>Custom widget&lt;/strong> will be visible on - select all the options you want from Desktop, Tablet, Mobile, Wi-Fi and Flight mode as to when the device can view the dashboards. By default, all options are selected.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/devicevisibility.png" alt="Device visibility">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when you&amp;rsquo;ve completed the &lt;strong>Add widget&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>An &lt;strong>Edit widget&lt;/strong> dialog box automatically opens showing the options you can choose for that particular &lt;strong>Custom dashboard widget&lt;/strong>. The options available will be dependent on the functionality of the custom widget.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished choosing the options you want (or click on &lt;strong>Close&lt;/strong> to exit the &lt;strong>Edit widget&lt;/strong> dialog box without saving).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Your &lt;strong>Custom widget&lt;/strong> will now be displayed on your dashboard. Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the insertion of the new widget.&lt;/p>
+&lt;p>Our example of the &amp;lsquo;Welcome banner&amp;rsquo; custom dashboard widget could look like this when inserted and moved to the top of the dashboard page:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-example.jpg" alt="Dashboard Custom widget Welcome banner example">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-custom-dashboard-widgets-are-created">How Custom dashboard widgets are created&lt;/h3>
+&lt;p>A Kianda Administrator or Developer can create &lt;strong>Custom dashboard widgets&lt;/strong> by opening the &lt;strong>Administration&lt;/strong> menu from the left-side menu and clicking on &lt;strong>Developer&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-developer.jpg" alt="Create a Custom field by clicking on Developer from the Administration menu">&lt;/p>
+&lt;p>The Developer resources page opens and displays all of the Custom widgets that have been created - these include &lt;strong>Custom field widgets&lt;/strong>, &lt;strong>Custom rule widgets&lt;/strong> and &lt;strong>Custom Dashboard widgets&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-widgets.jpg" alt="Create new Custom widget Developer resources page">&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: Only &lt;strong>Custom dashboard widgets&lt;/strong> will be shown in the Custom drop-down list in the &lt;strong>Widget menu&lt;/strong> on dashboard pages.&lt;/p>
+&lt;p>To create a new Custom dashboard widget, a Developer/Administrator needs to:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>New widget&lt;/strong> button &lt;img src="https://docs.kianda.com/images/custom-field-new-widget.jpg" alt="New widget button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>An &lt;strong>Edit widget&lt;/strong> dialog box opens, in which they can choose the Title, Unique ID, Widget icon and Widget type for the new custom widget.&lt;/p>
+&lt;p>To create a new &lt;strong>Dashboard Widget&lt;/strong>, the Developer/Administrator must choose &amp;lsquo;Dashboard widget&amp;rsquo; as the &lt;strong>Widget type&lt;/strong>, as shown in this example:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-widget.jpg" alt="Edit widget dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once the Developer/Administrator has completed the &lt;strong>Edit widget&lt;/strong> dialog box and clicks on &lt;strong>OK&lt;/strong>, a workspace opens where they can create their Custom dashboard widget (and a pop-up message displays saying &amp;lsquo;Success saving the widget&amp;rsquo;):&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-widget-workspace.jpg" alt="Custom widget workspace">&lt;/p>
+&lt;p>The two workspaces that are shown, &lt;strong>Widget UI&lt;/strong> and &lt;strong>Widget Code&lt;/strong>, show the default code that the Developer/Administrator can then add to this in order to create a dashboard widget with the functionality they want.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When they have finished working on the new custom dashboard widget, they need to click on the &lt;strong>Update&lt;/strong> button and a pop-up message will say &amp;lsquo;Widget updated&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Close&lt;/strong> button to close the custom dashboard widget workspace.&lt;/p>
+&lt;p>The new &lt;strong>custom dashboard widget&lt;/strong> will now be listed in the &lt;strong>Widgets&lt;/strong> screen in the Developer section:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-widget-listed.jpg" alt="Custom dashboard widget listed in Widgets in Developer">&lt;/p>
+&lt;p>Designers will now be able to see and use the new custom dashboard widget from the &lt;strong>Custom&lt;/strong> section of the &lt;strong>Dashboard Widgets menu&lt;/strong> when they are adding widgets to dashboard pages.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-widget-menu.jpg" alt="Custom dashboard widget example in the widget menu">&lt;/p>
+&lt;p>To learn more about how to create &lt;strong>Custom dashboard widgets&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code#dashboard-widget">Creating a custom Dashboard widget&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-edit-custom-dashboard-widgets">How to edit Custom dashboard widgets&lt;/h3>
+&lt;p>To edit a &lt;strong>Custom dashboard widget&lt;/strong> on a dashboard page:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the Custom dashboard widget&amp;rsquo;s &lt;strong>Update configuration&lt;/strong> (Edit) button &lt;img src="https://docs.kianda.com/images/dashboard-update-configuration.jpg" alt="Dashboard update configuration button">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-update-config.jpg" alt="Select Dashboard Link widget Update configuration button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box opens, enabling you to make whatever changes are available to you for that particular custom dashboard widget (this will depend on the range of options and functionality the Developer/Administrator who created it gave it). These will be the same options as were outlined in Step 6 of &lt;a href="#how-to-get-started">How to get started&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Making the changes you want and then click &lt;strong>OK&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The updated &lt;strong>Custom dashboard widget&lt;/strong> will be shown on the Dashboard. Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-move-custom-dashboard-widgets">How to move Custom dashboard widgets&lt;/h3>
+&lt;p>To move a &lt;strong>Custom widget&lt;/strong> on a dashboard page:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the Custom dashboard widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-widget-move.jpg" alt="Custom dashboard widget drag handle">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Drag and drop the widget where you want it to go on your dashboard.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-delete-custom-dashboard-widgets">How to delete Custom dashboard widgets&lt;/h3>
+&lt;p>To delete a &lt;strong>Custom dashboard widget&lt;/strong> from your dashboard:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-widget-delete.jpg" alt="Delete Dashboard Rich Text widget">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>Delete widget&lt;/strong> dialog box will open. Click on &lt;strong>OK&lt;/strong> to delete the widget (or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-delete-widget-dialog.jpg" alt="Dashboard Delete widget dialog">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-edit-custom-dashboard-widget-settings">How to edit Custom dashboard widget settings&lt;/h3>
+&lt;p>To update or edit your &lt;strong>Custom dashboard widget&lt;/strong> settings:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-widget-settings.jpg" alt="Dashboard Update widget settings button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box will open, enabling you to make changes to any of the available options (the same options as were available in the &lt;strong>Add widget&lt;/strong> dialog box discussed in Step 4 of &lt;a href="#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-edit-widget.jpg" alt="Dashboard Link widget Edit widget dialog box">&lt;/p>
+&lt;p>In our example, we could choose to reduce the width of the &lt;strong>Custom dashboard widget&lt;/strong> to be 4 columns wide, by clicking to the left of the existing blue bar.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> to confirm the changes you&amp;rsquo;ve made to the widget settings (or click on &lt;strong>Close&lt;/strong> if you don&amp;rsquo;t want to retain any changes).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The updated &lt;strong>Custom dashboard widget&lt;/strong> will display on your dashboard. Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
+&lt;p>Make sure to save any changes you make to your &lt;strong>Custom dashboard widget&lt;/strong> by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu. If you leave the dashboard without saving the changes you have made to a widget, the next time you visit the dashboard it won&amp;rsquo;t include any of the changes made to it since the dashboard page was last saved.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Custom dashboard widgets&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough">Walkthrough widget&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Filter widget</title><link>https://docs.kianda.com/docs/platform/pages/filter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/filter/</guid><description>
 &lt;p>A dashboard &lt;strong>Filter widget&lt;/strong> can be used to create a filter or filters that enable you to change the information that is displayed on your dashboard, based on criteria you choose.&lt;/p>
 &lt;p>For example, if you have an &amp;lsquo;Annual Leave&amp;rsquo; dashboard that contains a List widget that shows the individual annual leave requests (process instances) submitted by employees, you could add a Filter widget to the dashboard and connect the List widget to it. This would add a Filter widget to your dashboard that enables you to filter the annual leave requests in the List widget by employee name.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
