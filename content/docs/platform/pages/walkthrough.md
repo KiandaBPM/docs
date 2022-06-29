@@ -83,9 +83,9 @@ To add a **Walk-through widget** to a dashboard:
 	
 		Repeat these three steps to add as many steps as you want to your Walk-through widget.
    
-     ![Dashboard Walkthrough widget Edit step dialog box](/images/dashboard-walkthrough-edit-step-dialog.jpg)
+		![Dashboard Walkthrough widget Edit step dialog box](/images/dashboard-walkthrough-edit-step-dialog.jpg)
    
-	  The options for the first step in your Walk-through widget in the **Edit step** dialog box include:
+		The options for the first step in your Walk-through widget in the **Edit step** dialog box include:
    
      - **Title** - Insert a title for this walk-through step. In our example, we'll title our first step 'Welcome step'.
    
