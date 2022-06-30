@@ -273,7 +273,7 @@ This can be beneficial for businesses with users who will need to complete forms
 
 
 
-### Saving changes and version history ###
+### Saving changes ###
 Make sure to save any changes you make to your Dashboard by clicking on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg). 
 
 
