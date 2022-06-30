@@ -43,7 +43,7 @@ To add a **Link widget** to a dashboard:
 
      - **Note - Dashboard page security**: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the '**Visible to**' option in the **Create dashboard page** dialog box (see Step 3 in [How to create a Dashboard page](/docs/platform/pages#how-to-create-a-dashboard-page)). 
 
-       You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings ('Visible to') that are applied to the *individual widgets* within the dashboard.
+       You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings ('Visible to') that are applied to the *individual widgets* within the dashboard (such as a Link widget, in this case).
        
        See [Dashboard security](/docs/security/process-level-security#dashboard-security) and [Widget security](/docs/security/process-level-security#widget-security) for more information.
 
@@ -51,7 +51,7 @@ To add a **Link widget** to a dashboard:
 
      A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to [How to add layout containers to a Dashboard page](/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page).
      
-     In this example, we can select to place our new Filter widget into one of three layout containers - Top, Middle or Bottom:
+     In this example, we can select to place our new Link widget into one of three layout containers - Top, Middle or Bottom:
      
 		![Dashboard Add widget dialog box select Layout container](/images/dashboard-select-layout-container.jpg)
      
@@ -185,10 +185,11 @@ To move a **Link widget** on a dashboard:
 1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
 2. Select the widget's **drag handle** button ![Dashboard widget drag handle button](/images/dashboard-widget-draghandle.jpg). 
 3. Drag and drop the widget where you want it to go on your dashboard. 
+4. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made.
 
   In our example, we could move the new Link widget to the top left of the dashboard:
 
-  ![Move a Dashboard Link widget](/images/dashboard-link-move.jpg)
+![Move a Dashboard Link widget](/images/dashboard-link-move.jpg)
 
 
 
@@ -205,6 +206,10 @@ To delete a **Link widget** from your dashboard:
 3. A **Delete widget** dialog box will open. Click on **OK** to delete the widget (or click on **Cancel** if you wish to cancel the deletion).
 
    ![Dashboard Delete widget dialog](/images/dashboard-delete-widget-dialog.jpg)
+
+4. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made.
+
+   
 
    
 
@@ -246,4 +251,5 @@ Now that you've learned about the **Dashboard Link widget**, find out more about
 - [Rich Text widget](/docs/platform/pages/richtext/)
 - [List widget](/docs/platform/pages/list/)
 - [Tile widget](/docs/platform/pages/tile/)
-- [Walkthrough widget](/docs/platform/pages/walkthrough)
+- [Walkthrough widget](/docs/platform/pages/walkthrough/)
+- [Custom dashboard widget]( /docs/platform/pages/custom/)
