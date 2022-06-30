@@ -3,7 +3,7 @@ title: "Tile widget"
 typora-root-url: ..\..\..\..\static
 ---
 
-A dashboard **Tile widget** allows you to display a count of instances. This is a really useful way to showcase whole numbers for example total budget requested through Purchase Orders, or the amount of customer queries solved in a week.
+A dashboard **Tile widget** allows you to display a count of instances. This is a really useful way to showcase whole numbers - for example, the total budget requested through Purchase Orders, the number of customer queries solved in a week or the number of training requests that have been approved.
 
 
 
@@ -13,7 +13,7 @@ A dashboard **Tile widget** allows you to display a count of instances. This is 
 
 2. The **Add widget** dialog box opens.
 
-   ![Add tile widget](/images/addtilewidget.png)
+   ![Add tile widget](/images/dashboard-add-tile.jpg)
 
    Choose from the edit options:
 
@@ -25,8 +25,24 @@ A dashboard **Tile widget** allows you to display a count of instances. This is 
 
    - **Show header** checkbox - tick this checkbox if you wish to show a header on your dashboard.
 
-   - **Visible to** - determine who will see the dashboard, choose from a) Users b) Groups 
+   - **Visible to** - You can determine who will be able to see the **Tile widget**. You can select single or multiple Users or Groups, or a combination of the two. You can select Users or Groups in the right-hand menu so that the options shown in the drop-down list are either individual users or Groups.
 
+     To find out more about pre-defined Groups on Kianda, go to [Users & Groups](/docs/platform/administration/users).
+
+     - **Note - Dashboard page security**: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the '**Visible to**' option in the **Create dashboard page** dialog box (see Step 3 in [How to create a Dashboard page](/docs/platform/pages#how-to-create-a-dashboard-page)). 
+
+       You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings ('Visible to') that are applied to the *individual widgets* within the dashboard (such as the Tile widget, in this case).
+
+       See [Dashboard security](/docs/security/process-level-security#dashboard-security) and [Widget security](/docs/security/process-level-security#widget-security) for more information.
+
+   - **Layout container** - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new **Tile widget** to be placed in.
+
+     A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to [How to add layout containers to a Dashboard page](/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page).
+     
+     In this example, we can select to place our new Tile widget into one of three layout containers - Top, Middle or Bottom:
+     
+     ![Dashboard Add widget dialog box select Layout container](/images/dashboard-select-layout-container.jpg)
+     
    - **Device visibility** - choose from icons for deshtop, tablet, mobile, wifi and flightmode as to when the device can view the dashboards.
 
      ![Device visibility](/images/devicevisibility.png)
@@ -56,7 +72,7 @@ A dashboard **Tile widget** allows you to display a count of instances. This is 
 
    ![Tile widget edit](/images/edittile.png)
 
-2. A dialog box opens with filter options in the left-hand pane,  a **Conditions** button ![Conditions](C:\Kianda\docs-dev\pages\tile.assets\conditions.png)in the middle of the box, and tile view fields in the right-hand pane. Go to [Conditions](pages/conditions.md) to read more about conditions you can apply to data, and go to [Tile view fields](pages/tileviewfields.md) to read more about changing how a tile looks.
+2. A dialog box opens with filter options in the left-hand pane,  a **Conditions** button ![Conditions](/images/conditions.png)in the middle of the box, and tile view fields in the right-hand pane. Go to [Conditions](/docs/platform/pages/conditions/) to read more about conditions you can apply to dashboard widgets, and go to Tile view fields to read more about changing how a tile looks.
 
    ![Editing a tile widget](/images/edittilebox.png)
 
@@ -70,7 +86,7 @@ A dashboard **Tile widget** allows you to display a count of instances. This is 
 
    ![Connect to List widget](/images/connecttolist.png)
 
-6. Go to [Tile view fields](pages/tileviewfields.md) to read about options in the right-hand pane of this dialog box to make changes to your tile like icons and colours.
+6. Go to Tile view fields to read about options in the right-hand pane of this dialog box to make changes to your tile like icons and colours.
 
 7. When you are finished choosing options, click on the **OK** button to save your changes or click on **Close** to exit the dialog box without saving.
 
@@ -114,3 +130,68 @@ You will be directed to different data sources where you can search in the **dat
 ![Select data source](/images/selectdatasource.png)
 
 Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
+
+
+
+### How to move Tile widgets
+
+To move a **Tile widget** on a dashboard:
+
+1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+2. Select the widget's **drag handle** button ![Dashboard widget drag handle button](/images/dashboard-widget-draghandle.jpg). 
+3. Drag and drop the widget where you want it to go on your dashboard.
+4. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made. 
+
+  
+
+### How to delete Tile widgets
+
+To delete a **Tile widget** from your dashboard:
+
+1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+
+2. Click on the widget's **Remove widget** (Bin/Trash icon) button ![Bin icon](/images/binicon.png).
+
+3. A **Delete widget** dialog box will open. Click on **OK** to delete the widget (or click on **Cancel** if you wish to cancel the deletion).
+
+   ![Dashboard Delete widget dialog](/images/dashboard-delete-widget-dialog.jpg)
+
+4. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made.
+
+
+
+### How to edit Tile widget settings
+
+To update or edit your **Tile widget** settings:
+
+1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+
+2. Click on the **Update widget settings** (Cog) button ![Dashboard Update widget settings button](/images/cog-shared-process.jpg).
+
+3. The **Edit widget** dialog box will open, enabling you to make changes to any of the available options (the same options as were available in the **Add widget** dialog box discussed in Step 2 of [How to get started](#how-to-get-started)).
+
+   For example, we could choose to reduce the width of the **Tile widget** by clicking to the left of the blue bar which denotes layout column width.
+
+4. Click on **OK** to confirm the changes you've made to the widget settings (or click on **Close** if you don't want to retain any changes).
+
+5. The updated **Tile widget** will display on your dashboard. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made.
+
+
+
+### Saving changes ###
+
+Make sure to save any changes you make to your dashboard **Tile widget** by clicking on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu. If you leave the dashboard without saving the changes you have made to a widget, the next time you visit the dashboard it won't include any of the changes made to it since the dashboard page was last saved.
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+Now that you've learned about **Dashboard Tile widgets**, find out more about the other types of **Dashboard widgets** you can add to your Kianda dashboard:
+
+- [Chart widget](/docs/platform/pages/chart/)
+- [Filter widget](/docs/platform/pages/filter/)
+- [Rich Text widget](/docs/platform/pages/richtext/)
+- [Link widget](/docs/platform/pages/link/)
+- [List widget](/docs/platform/pages/list/)
+- [Walkthrough widget](/docs/platform/pages/walkthrough/)
+- [Custom dashboard widget]( /docs/platform/pages/custom/)
