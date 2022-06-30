@@ -25,7 +25,7 @@ Conditions can be applied to [Tile](/docs/platform/pages/tile/), [List](/docs/pl
 
    ![Edit conditions](/images/editconditions.png)
 
-   Click into the first empty field to choose a field to filter on, this can be a **Common field** or a **Design field** as found in a form. Click on the + symbol to drill down to the relevant fields to use. Click on a field to use, for example the Common field, 'Status'. If you want to replace the field for a different one, click on the X ![X](/images/x.png) beside the field name.
+   Click into the first empty field to choose a field to filter on, this can be a **Common field** or a **Design field** as found in a form. Click on the + symbol to drill down to the relevant fields to use. Click on a field to use, for example the Common field, 'Status'. If you want to replace the field with a different one, click on the ![X](/images/x.png) beside the field name.
 
 6. Click on the operator field and choose from a relevant operator to apply, for example **Equals**, **Contains**, **Is blank**, **Matches pattern** and so on. 
 
@@ -49,4 +49,23 @@ Conditions can be applied to [Tile](/docs/platform/pages/tile/), [List](/docs/pl
 
 11. Click on **OK** button again for the **Edit widget** dialog box to apply the changes or click on **Close** to exit the dialog box without saving.
 
-    
+
+
+### Saving changes ###
+
+Make sure to save any changes you make to your dashboard by clicking on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu. If you leave the dashboard without saving the changes you have made, the next time you visit the dashboard it won't include any of the changes made to it since the dashboard page was last saved.
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+Now that you've learned about the **Conditions** that can be applied to Tile, List and Chart widgets, find out more about all of the types of **Dashboard widgets** you can add to your Kianda dashboard:
+
+- [Chart widget](/docs/platform/pages/chart/)
+- [Filter widget](/docs/platform/pages/filter/)
+- [Rich Text widget](/docs/platform/pages/richtext/)
+- [Link widget](/docs/platform/pages/link/)
+- [List widget](/docs/platform/pages/list/)
+- [Tile widget](/docs/platform/pages/tile/)
+- [Walkthrough widget](/docs/platform/pages/walkthrough/)
+- [Custom dashboard widget]( /docs/platform/pages/custom/)
