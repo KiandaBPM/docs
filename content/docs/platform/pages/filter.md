@@ -237,12 +237,16 @@ To edit a **Filter widget** on a dashboard:
 To move a **Filter widget** on a dashboard:
 
 1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+
 2. Select the widget's **drag handle** button ![Dashboard widget drag handle button](/images/dashboard-widget-draghandle.jpg). 
-3. Drag and drop the widget where you want it to go on your dashboard. 
 
-  In our example, we could move the new Filter widget to the top left of the dashboard:
+3. Drag and drop the widget where you want it to go on your dashboard.
 
-  ![Move a Dashboard Link widget](/images/dashboard-filter-move.jpg)
+   In our example, we could move the new Filter widget to the top left of the dashboard:  ![Move a Dashboard Link widget](/images/dashboard-filter-move.jpg)
+
+4. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made.
+
+
 
 
 
@@ -259,6 +263,8 @@ To delete a **Filter widget** from your dashboard:
 3. A **Delete widget** dialog box will open. Click on **OK** to delete the widget (or click on **Cancel** if you wish to cancel the deletion).
 
    ![Dashboard Delete widget dialog](/images/dashboard-delete-widget-dialog.jpg)
+
+4. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made.
 
    
 
@@ -300,4 +306,5 @@ Now that you've learned about the **Dashboard Filter widget**, find out more abo
 - [Rich Text widget](/docs/platform/pages/richtext/)
 - [List widget](/docs/platform/pages/list/)
 - [Tile widget](/docs/platform/pages/tile/)
-- [Walkthrough widget](/docs/platform/pages/walkthrough)
+- [Walkthrough widget](/docs/platform/pages/walkthrough/)
+- [Custom dashboard widget]( /docs/platform/pages/custom/)
