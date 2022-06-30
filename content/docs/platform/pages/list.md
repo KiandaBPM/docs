@@ -13,7 +13,7 @@ A dashboard **List widget** displays the instances of the selected process in a 
 
 2. The **Add widget** dialog box opens.
 
-   ![Add list widget](/images/addlistwidget.png)
+   ![Add list widget](/images/dashboard-list-add.jpg)
 
    Choose from the edit options:
 
@@ -25,8 +25,22 @@ A dashboard **List widget** displays the instances of the selected process in a 
 
    - **Show header** checkbox - tick this checkbox if you wish to show a header on your dashboard.
 
-   - **Visible to** - determine who will see the dashboard, choose from a) Users b) Groups 
+   - **Visible to** - You can choose who will be able to see the **List widget**. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to [Users & Groups](/docs/platform/administration/users).
 
+     - **Note - Dashboard page security**: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the '**Visible to**' option in the **Create dashboard page** dialog box (see Step 3 in [How to create a Dashboard page](/docs/platform/pages#how-to-create-a-dashboard-page)). 
+
+       You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings ('Visible to') that are applied to the *individual widgets* within the dashboard (such as a dashboard List widget, in this case).
+
+       See [Dashboard security](/docs/security/process-level-security#dashboard-security) and [Widget security](/docs/security/process-level-security#widget-security) for more information.
+
+   - **Layout container** - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new **List widget** to be placed in.
+
+     A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to [How to add layout containers to a Dashboard page](/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page).
+     
+     In this example, we can select to place our new List widget into one of three layout containers - Top, Middle or Bottom:
+     
+     ![Dashboard Add widget dialog box select Layout container](/images/dashboard-select-layout-container.jpg)
+     
    - **Device visibility** - choose from icons for deshtop, tablet, mobile, wifi and flightmode as to when the device can view the dashboards.
 
      ![Device visibility](/images/devicevisibility.png)
@@ -35,15 +49,15 @@ A dashboard **List widget** displays the instances of the selected process in a 
 
 4. You can then edit the widget to display certain fields from your form, that relates to the data you are interested in. Go to [Configure your widget](#configure-your-widget) to find out more.
 
-5. When you are finished making edits, click on the **Save** button ![Save button](images/save.png) in the top menu to ensure your dashboard changes are saved and you see a pop-up message **Page saved successfully**.
+5. When you are finished making edits, click on the **Save** button ![Save button](/images/save.png) in the top menu to ensure your dashboard changes are saved and you see a pop-up message **Page saved successfully**.
 
-6. To make further changes later on, click on the **Edit** button ![Edit button](images/edit.png) in the top menu and then click on the **Pen** button.
+6. To make further changes later on, click on the **Edit** button ![Edit button](/images/edit.png) in the top menu and then click on the **Pen** button.
 
    ![Pen button in a widget](/images/penbutton_frame.png) 
 
-7. To re-edit the title, colour scheme or other options in Step 2, click on the **Settings** button ![Settings button](images/cog.png)and the **Edit widget** dialog box options, allowing you to make changes.
+7. To re-edit the title, colour scheme or other options in Step 2, click on the **Settings** button ![Settings button](/images/cog.png)and the **Edit widget** dialog box options, allowing you to make changes.
 
-7. To delete the widget at any stage, click on the **Bin** icon ![Bin button](images/bin.png) beside the cog button, and then click on **Ok** to confirm that you want to delete the dashboard page or click on **Cancel** if you wish to cancel the deletion.
+7. To delete the widget at any stage, click on the **Bin** icon ![Bin button](/images/bin.png) beside the cog button, and then click on **Ok** to confirm that you want to delete the dashboard page or click on **Cancel** if you wish to cancel the deletion.
 
    
 
@@ -54,7 +68,7 @@ A dashboard **List widget** displays the instances of the selected process in a 
 
    ![Chart widget edit](/images/penbutton.png)
 
-2. A dialog box opens with filter options in the left-hand pane, a **Conditions** button ![Conditions](images/conditions.png)in the middle of the box, and list view fields in the right-hand pane. Go to [Conditions](pages/conditions.md) to read more about conditions you can apply to data and go to [List view fields](pages/listviewfields.md) to read more about how to apply fields to your list view.
+2. A dialog box opens with filter options in the left-hand pane, a **Conditions** button ![Conditions](/images/conditions.png)in the middle of the box, and list view fields in the right-hand pane. Go to [Conditions](/docs/platform/pages/conditions/) to read more about conditions you can apply to dashboard widgets and go to [List view fields](#list-view-fields) to read more about how to apply fields to your list view.
 
    ![Editing options](/images/listconfig.png)
 
@@ -157,7 +171,7 @@ Once you have chosen where the dashboard data will come from then there are a nu
 
 When you choose the List widget for your dashboard, there are a number of ways to select fields that you want to view.
 
-1. Click on the **Pen** button ![Pen button](/images/pen.png)in the widget you have created, to see the **List view fields** visible in the right-hand pane.
+1. Click on the **Pen** button ![Pen button](/images/pen.png)n the widget you have created, to see the **List view fields** visible in the right-hand pane.
 
    ![List view fields](/images/listconfig_frame.png)
 
@@ -179,12 +193,80 @@ When you choose the List widget for your dashboard, there are a number of ways t
 
 5. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 
-5. To change the list settings, that is the way the list looks, title and so on, click on the **Settings** button ![Settings button](/images/cog.png)and go to [List widget](pages/list.md) to find out more about edit options.
+6. To change the list settings, that is the way the list looks, title and so on, click on the **Settings** button ![Settings button](/images/cog.png)and go to [How to edit List widget settings](#how-to-edit-list-widget-settings) to find out more about edit options.
 
-5. When you are finished making edits, click on the **Save** button ![Save button](/images/save.png) in the top menu to ensure your dashboard changes are saved and you see a pop-up message **Page saved successfully**.
+7. When you are finished making edits, click on the **Save** button ![Save button](/images/save.png) in the top menu to ensure your dashboard changes are saved and you see a pop-up message **Page saved successfully**.
 
-6. To make further changes later on, click on the **Edit** button ![Edit button](/images/edit.png) in the top menu and then click on the **Pen** button.
+8. To make further changes later on, click on the **Edit** button ![Edit button](/images/edit.png) in the top menu and then click on the **Pen** button.
 
    ![Pen button in a widget](/images/penbutton.png) 
 
-7. When you have completed your changes, click on the **Save** button ![Save button](/../old-documentation/save-dash.png) to save your changes or **X** to quit without saving. 
+9. When you have completed your changes, click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) to save your changes or **X** to quit without saving.
+
+
+
+### How to move List widgets
+
+To move a **List widget** on a dashboard:
+
+1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+2. Select the widget's **drag handle** button ![Dashboard widget drag handle button](/images/dashboard-widget-draghandle.jpg). 
+3. Drag and drop the widget where you want it to go on your dashboard. 
+4. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made.
+
+
+
+### How to delete List widgets
+
+To delete a **List widget** from your dashboard:
+
+1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+
+2. Click on the widget's **Remove widget** (Bin/Trash icon) button ![Bin icon](/images/binicon.png).
+
+3. A **Delete widget** dialog box will open. Click on **OK** to delete the widget (or click on **Cancel** if you wish to cancel the deletion).
+
+   ![Dashboard Delete widget dialog](/images/dashboard-delete-widget-dialog.jpg)
+
+4. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made.
+
+   
+
+   
+
+
+### How to edit List widget settings
+
+To update or edit your **List widget** settings:
+
+1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+
+2. Click on the **Update widget settings** (Cog) button ![Dashboard Update widget settings button](/images/cog-shared-process.jpg).
+
+3. The **Edit widget** dialog box will open, enabling you to make changes to any of the available options (the same options as were available in the **Add widget** dialog box discussed in Step 2 of [How to get started](#how-to-get-started)).
+
+   For example, we could choose to reduce the width of the **List widget** to be 4 columns wide, by clicking to the left of the existing blue bar.
+
+4. Click on **OK** to confirm the changes you've made to the widget settings (or click on **Close** if you don't want to retain any changes).
+
+5. The updated **List widget** will display on your dashboard. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made.
+
+
+
+### Saving changes ###
+
+Make sure to save any changes you make to your **List widget** by clicking on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu. If you leave the dashboard without saving the changes you have made to a widget, the next time you visit the dashboard it won't include any of the changes made to it since the dashboard page was last saved.
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+Now that you've learned about the **Dashboard List widget**, find out more about the other types of **Dashboard widgets** you can add to your Kianda dashboard:
+
+- [Chart widget](/docs/platform/pages/chart/)
+- [Filter widget](/docs/platform/pages/filter/)
+- [Rich Text widget](/docs/platform/pages/richtext/)
+- [Link widget](/docs/platform/pages/link/)
+- [Tile widget](/docs/platform/pages/tile/)
+- [Walkthrough widget](/docs/platform/pages/walkthrough/)
+- [Custom dashboard widget]( /docs/platform/pages/custom/)
