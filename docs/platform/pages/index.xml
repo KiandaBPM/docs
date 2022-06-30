@@ -1711,7 +1711,7 @@
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
-&lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as the Filter widget, in this case).&lt;/p>
+&lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as the Walk-through widget, in this case).&lt;/p>
 &lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
@@ -1719,7 +1719,7 @@
 &lt;li>
 &lt;p>&lt;strong>Layout container&lt;/strong>: This option will only display if you have already created layout containers for your Dashboard page. Here, you can select the layout container you want to place your new &lt;strong>Walk-through widget&lt;/strong> in.&lt;/p>
 &lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
-&lt;p>In this example, we can select to place our new Filter widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
+&lt;p>In this example, we can select to place our new Walk-through widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1861,6 +1861,7 @@
 &lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
 &lt;li>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/li>
 &lt;li>Drag and drop the widget where you want it to go on your dashboard.&lt;/li>
+&lt;li>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/li>
 &lt;/ol>
 &lt;p>In our example, we could move the new &amp;lsquo;&lt;strong>Procurement Walk-through&lt;/strong> widget to the top right section of the dashboard:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-walkthrough-move.jpg" alt="Move a Dashboard Link widget">&lt;/p>
@@ -1877,6 +1878,9 @@
 &lt;li>
 &lt;p>A &lt;strong>Delete widget&lt;/strong> dialog box will open. Click on &lt;strong>OK&lt;/strong> to delete the widget (or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-delete-widget-dialog.jpg" alt="Dashboard Delete widget dialog">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-walk-through-widget-settings">How to edit Walk-through widget settings&lt;/h3>
