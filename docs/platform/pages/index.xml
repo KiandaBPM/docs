@@ -730,12 +730,20 @@
 &lt;h3 id="how-to-move-filter-widgets">How to move Filter widgets&lt;/h3>
 &lt;p>To move a &lt;strong>Filter widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
-&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
-&lt;li>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/li>
-&lt;li>Drag and drop the widget where you want it to go on your dashboard.&lt;/li>
+&lt;li>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Drag and drop the widget where you want it to go on your dashboard.&lt;/p>
+&lt;p>In our example, we could move the new Filter widget to the top left of the dashboard: &lt;img src="https://docs.kianda.com/images/dashboard-filter-move.jpg" alt="Move a Dashboard Link widget">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/p>
+&lt;/li>
 &lt;/ol>
-&lt;p>In our example, we could move the new Filter widget to the top left of the dashboard:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-move.jpg" alt="Move a Dashboard Link widget">&lt;/p>
 &lt;h3 id="how-to-delete-filter-widgets">How to delete Filter widgets&lt;/h3>
 &lt;p>To delete a &lt;strong>Filter widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
@@ -749,6 +757,9 @@
 &lt;li>
 &lt;p>A &lt;strong>Delete widget&lt;/strong> dialog box will open. Click on &lt;strong>OK&lt;/strong> to delete the widget (or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-delete-widget-dialog.jpg" alt="Dashboard Delete widget dialog">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-filter-widget-settings">How to edit Filter widget settings&lt;/h3>
@@ -783,7 +794,8 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough">Walkthrough widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Link widget</title><link>https://docs.kianda.com/docs/platform/pages/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/link/</guid><description>
 &lt;p>A dashboard &lt;strong>Link widget&lt;/strong> can be used to create a button link on a dashboard page that initiates a new process instance (by bringing the user straight into the first form of a particular process), links to another dashboard or links to an external website.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
