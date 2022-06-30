@@ -49,7 +49,7 @@ To add a **Custom widget** to a Kianda dashboard:
 
      - **Note - Dashboard page security**: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the '**Visible to**' option in the **Create dashboard page** dialog box (see Step 3 in [How to create a Dashboard page](/docs/platform/pages#how-to-create-a-dashboard-page)). 
 
-       You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings ('Visible to') that are applied to the *individual widgets* within the dashboard.
+       You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings ('Visible to') that are applied to the *individual widgets* within the dashboard (such as a Custom dashboard widget, in this case).
 
        See [Dashboard security](/docs/security/process-level-security#dashboard-security) and [Widget security](/docs/security/process-level-security#widget-security) for more information.
 
@@ -57,7 +57,7 @@ To add a **Custom widget** to a Kianda dashboard:
 
      A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to [How to add layout containers to a Dashboard page](/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page).
 
-     In this example, we can select to place our new Custom widget into one of three layout containers - Top, Middle or Bottom:
+     In this example, we can select to place our new Custom dashboard widget into one of three layout containers - Top, Middle or Bottom:
 
      ![Dashboard Add widget dialog box select Layout container](/images/dashboard-select-layout-container.jpg)
 
@@ -194,7 +194,7 @@ To update or edit your **Custom dashboard widget** settings:
 
 
 
-### Saving changes and version history ###
+### Saving changes ###
 
 Make sure to save any changes you make to your **Custom dashboard widget** by clicking on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu. If you leave the dashboard without saving the changes you have made to a widget, the next time you visit the dashboard it won't include any of the changes made to it since the dashboard page was last saved.
 
@@ -210,4 +210,5 @@ Now that you've learned about **Custom dashboard widgets**, find out more about 
 - [Link widget](/docs/platform/pages/link/)
 - [List widget](/docs/platform/pages/list/)
 - [Tile widget](/docs/platform/pages/tile/)
-- [Walkthrough widget](/docs/platform/pages/walkthrough)
+- [Walkthrough widget](/docs/platform/pages/walkthrough/)
+- [Custom dashboard widget]( /docs/platform/pages/custom/)
