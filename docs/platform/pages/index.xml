@@ -255,7 +255,7 @@
 &lt;li>
 &lt;p>The &lt;strong>Edit conditions&lt;/strong> dialog box opens.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions">&lt;/p>
-&lt;p>Click into the first empty field to choose a field to filter on, this can be a &lt;strong>Common field&lt;/strong> or a &lt;strong>Design field&lt;/strong> as found in a form. Click on the + symbol to drill down to the relevant fields to use. Click on a field to use, for example the Common field, &amp;lsquo;Status&amp;rsquo;. If you want to replace the field for a different one, click on the X &lt;img src="https://docs.kianda.com/images/x.png" alt="X"> beside the field name.&lt;/p>
+&lt;p>Click into the first empty field to choose a field to filter on, this can be a &lt;strong>Common field&lt;/strong> or a &lt;strong>Design field&lt;/strong> as found in a form. Click on the + symbol to drill down to the relevant fields to use. Click on a field to use, for example the Common field, &amp;lsquo;Status&amp;rsquo;. If you want to replace the field with a different one, click on the &lt;img src="https://docs.kianda.com/images/x.png" alt="X"> beside the field name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the operator field and choose from a relevant operator to apply, for example &lt;strong>Equals&lt;/strong>, &lt;strong>Contains&lt;/strong>, &lt;strong>Is blank&lt;/strong>, &lt;strong>Matches pattern&lt;/strong> and so on.&lt;/p>
@@ -280,7 +280,21 @@
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> button again for the &lt;strong>Edit widget&lt;/strong> dialog box to apply the changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Docs: Custom dashboard widgets</title><link>https://docs.kianda.com/docs/platform/pages/custom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/custom/</guid><description>
+&lt;/ol>
+&lt;h3 id="saving-changes">Saving changes&lt;/h3>
+&lt;p>Make sure to save any changes you make to your dashboard by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu. If you leave the dashboard without saving the changes you have made, the next time you visit the dashboard it won&amp;rsquo;t include any of the changes made to it since the dashboard page was last saved.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Conditions&lt;/strong> that can be applied to Tile, List and Chart widgets, find out more about all of the types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Custom dashboard widgets</title><link>https://docs.kianda.com/docs/platform/pages/custom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/custom/</guid><description>
 &lt;p>There are currently seven pre-defined dashboard widgets that you can add to your dashboard page. However, you can also create and use your own &lt;strong>customised dashboard widgets&lt;/strong>.&lt;/p>
 &lt;p>&lt;strong>Custom dashboard widgets&lt;/strong> will only be available to add to your dashboard page from the widget menu if custom widgets have been created by an Administrator or Designer in your Kianda workspace.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
