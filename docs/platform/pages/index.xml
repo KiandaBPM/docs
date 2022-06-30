@@ -1494,7 +1494,7 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Tile widget</title><link>https://docs.kianda.com/docs/platform/pages/tile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/tile/</guid><description>
-&lt;p>A dashboard &lt;strong>Tile widget&lt;/strong> allows you to display a count of instances. This is a really useful way to showcase whole numbers for example total budget requested through Purchase Orders, or the amount of customer queries solved in a week.&lt;/p>
+&lt;p>A dashboard &lt;strong>Tile widget&lt;/strong> allows you to display a count of instances. This is a really useful way to showcase whole numbers - for example, the total budget requested through Purchase Orders, the number of customer queries solved in a week or the number of training requests that have been approved.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -1502,7 +1502,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Add widget&lt;/strong> dialog box opens.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/addtilewidget.png" alt="Add tile widget">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-add-tile.jpg" alt="Add tile widget">&lt;/p>
 &lt;p>Choose from the edit options:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -1518,7 +1518,21 @@
 &lt;p>&lt;strong>Show header&lt;/strong> checkbox - tick this checkbox if you wish to show a header on your dashboard.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Visible to&lt;/strong> - determine who will see the dashboard, choose from a) Users b) Groups&lt;/p>
+&lt;p>&lt;strong>Visible to&lt;/strong> - You can determine who will be able to see the &lt;strong>Tile widget&lt;/strong>. You can select single or multiple Users or Groups, or a combination of the two. You can select Users or Groups in the right-hand menu so that the options shown in the drop-down list are either individual users or Groups.&lt;/p>
+&lt;p>To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as the Tile widget, in this case).&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout container&lt;/strong> - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new &lt;strong>Tile widget&lt;/strong> to be placed in.&lt;/p>
+&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
+&lt;p>In this example, we can select to place our new Tile widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Device visibility&lt;/strong> - choose from icons for deshtop, tablet, mobile, wifi and flightmode as to when the device can view the dashboards.&lt;/p>
@@ -1553,7 +1567,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/edittile.png" alt="Tile widget edit">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>A dialog box opens with filter options in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="C:%5CKianda%5Cdocs-dev%5Cpages%5Ctile.assets%5Cconditions.png" alt="Conditions">in the middle of the box, and tile view fields in the right-hand pane. Go to &lt;a href="pages/conditions.md">Conditions&lt;/a> to read more about conditions you can apply to data, and go to &lt;a href="pages/tileviewfields.md">Tile view fields&lt;/a> to read more about changing how a tile looks.&lt;/p>
+&lt;p>A dialog box opens with filter options in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions">in the middle of the box, and tile view fields in the right-hand pane. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions you can apply to dashboard widgets, and go to Tile view fields to read more about changing how a tile looks.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/edittilebox.png" alt="Editing a tile widget">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1570,7 +1584,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/connecttolist.png" alt="Connect to List widget">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Go to &lt;a href="pages/tileviewfields.md">Tile view fields&lt;/a> to read about options in the right-hand pane of this dialog box to make changes to your tile like icons and colours.&lt;/p>
+&lt;p>Go to Tile view fields to read about options in the right-hand pane of this dialog box to make changes to your tile like icons and colours.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>When you are finished choosing options, click on the &lt;strong>OK&lt;/strong> button to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
@@ -1598,7 +1612,65 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/selectdatasource.png" alt="Selecting a data source">&lt;/p>
 &lt;p>You will be directed to different data sources where you can search in the &lt;strong>datasource tree&lt;/strong> search box or drill down to the data source you want.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/selectdatasource.png" alt="Select data source">&lt;/p>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p></description></item><item><title>Docs: Walk-through widget</title><link>https://docs.kianda.com/docs/platform/pages/walkthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/walkthrough/</guid><description>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;h3 id="how-to-move-tile-widgets">How to move Tile widgets&lt;/h3>
+&lt;p>To move a &lt;strong>Tile widget&lt;/strong> on a dashboard:&lt;/p>
+&lt;ol>
+&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
+&lt;li>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/li>
+&lt;li>Drag and drop the widget where you want it to go on your dashboard.&lt;/li>
+&lt;li>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-delete-tile-widgets">How to delete Tile widgets&lt;/h3>
+&lt;p>To delete a &lt;strong>Tile widget&lt;/strong> from your dashboard:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>Delete widget&lt;/strong> dialog box will open. Click on &lt;strong>OK&lt;/strong> to delete the widget (or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-delete-widget-dialog.jpg" alt="Dashboard Delete widget dialog">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-edit-tile-widget-settings">How to edit Tile widget settings&lt;/h3>
+&lt;p>To update or edit your &lt;strong>Tile widget&lt;/strong> settings:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box will open, enabling you to make changes to any of the available options (the same options as were available in the &lt;strong>Add widget&lt;/strong> dialog box discussed in Step 2 of &lt;a href="#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>For example, we could choose to reduce the width of the &lt;strong>Tile widget&lt;/strong> by clicking to the left of the blue bar which denotes layout column width.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> to confirm the changes you&amp;rsquo;ve made to the widget settings (or click on &lt;strong>Close&lt;/strong> if you don&amp;rsquo;t want to retain any changes).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The updated &lt;strong>Tile widget&lt;/strong> will display on your dashboard. Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="saving-changes">Saving changes&lt;/h3>
+&lt;p>Make sure to save any changes you make to your dashboard &lt;strong>Tile widget&lt;/strong> by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu. If you leave the dashboard without saving the changes you have made to a widget, the next time you visit the dashboard it won&amp;rsquo;t include any of the changes made to it since the dashboard page was last saved.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Dashboard Tile widgets&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Walk-through widget</title><link>https://docs.kianda.com/docs/platform/pages/walkthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/walkthrough/</guid><description>
 &lt;p>A dashboard &lt;strong>Walk-through widget&lt;/strong> can be used to walk a user through the features of a dashboard or steps in a process by displaying a series of prompts.&lt;/p>
 &lt;p>For example, if you have a Procurement dashboard page that displays key information relating to your procurement process (using &lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widgets&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widgets&lt;/a>, a &lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a> and a &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>), it could be useful to insert a Walk-through widget that can bring a new user through the various features of the page or through steps in the procurement process.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
