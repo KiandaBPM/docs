@@ -8,10 +8,6 @@ The **Users** function is available to users with the **Administrator** role and
 
 ## How to get started
 
-Start **typing** *italic* <u>underline</u>
-
-
-
 To access the **Users** function:
 
 1. Click on **Administration** in the left-hand side pane and then click on **Users**. 
