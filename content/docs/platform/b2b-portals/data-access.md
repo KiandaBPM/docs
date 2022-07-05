@@ -70,7 +70,7 @@ These steps are covered within the headings below. In addition you can manage [d
 
    
 
-### Data access at a datasource level
+## Data access at a datasource level
 When a **process** is shared within the B2B portal, you may choose to include one or more of your datasources. You may not wish to share all records from the datasource within the B2B portal, so you can limit access within the datasource itself. B2B Security can be enabled with the following datasources:
 
 - Active Directory
