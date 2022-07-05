@@ -3,7 +3,7 @@ title: "SharePoint connector"
 typora-root-url: ..\..\..\..\static
 ---
 
-A SharePoint data connector allows you to use SharePoint data sources as part of your Kianda forms or dashboards. This means that as your processes are running they will use the 
+A SharePoint data connector allows you to use SharePoint data sources as part of your Kianda forms or dashboards. This means that as your processes are running they will use the information at the data source or depending on the process, update information at a data source location. 
 
 
 
@@ -37,4 +37,42 @@ A SharePoint data connector allows you to use SharePoint data sources as part of
 
 5. Click on **Test Connection** ![Test Connection button](/images/testconnection.png)  and you should see a message "Connection test succeeded".
 
-     
+   
+
+## SharePoint parameters
+
+When you use a SharePoint datasource, there are **default parameters** invoked from SharePoint. For example when you create a **list** in a Kianda form using a SharePoint datasource, these SharePoint parameters will appear in **Display field**, **Value field** and **Sort by** field in the **Edit list dialog box**, see **Title** for example in the image below.
+
+![SharePoint parameters](/images/edit-list-params.jpg)
+
+The SharePoint parameters that appear in those three dropdown fields are:
+
+- **ID**
+- **Content Type**
+- **Title**
+- **Modified**
+- **Created**
+- **Created By**
+- **Modified By**
+- **Version**
+- **Server Relative URL**
+- **Item Child Count**
+- **Folder Child Count**
+- **Label setting**
+- **Retention label**
+- **Retention label Applied**
+- **Label applied by**
+- **App created By**
+- **App modified By**
+- **Compliance Asset ID**
+- **Telephone Code**
+
+All custom columns in the datasource will also appear at the **bottom** of this list. For example in a SharePoint list, a column named **Location** will also be listed in the Display, Value and Sort by fields.
+
+![SharePoint list example](/images/sharepoint-list-field.jpg)
+
+This customised name 'Location' appears in the dropdown list, for example the **Display field** for the list.
+
+![Customised column name example in SharePoint](/images/location-sharepoint-field.jpg)
+
+​     

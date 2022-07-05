@@ -1,5 +1,5 @@
 ---
-title: "Rule conditions"
+title: "Conditions"
 typora-root-url: ..\..\..\..\..\static
 weight: 1
 ---
@@ -8,7 +8,9 @@ weight: 1
 
 Conditions are a key component of Kianda **rules**. They are the **triggers** that result in fully dynamic forms. They enable you to enables you to create natural language conditions when rules should be triggered.
 
-The **Conditions** button ![img](https://academy.kianda.com/wp-content/uploads/2022/02/condition.png) is found within all **rules** as well as [**dashboard widgets**](docs/platform/pages/). Conditions add an important level of interactivity, creating dynamic pathways within a process. These pathways could result from user interaction or from other events that happen.
+The **Conditions** button ![img](https://academy.kianda.com/wp-content/uploads/2022/02/condition.png) is found within all **rules** as well as [dashboard widgets](docs/platform/pages/). Conditions can also be set when setting data source security levels for [B2B portals](/docs/platform/b2b-portals/data-access/).
+
+Conditions add an important level of interactivity, creating dynamic pathways within a process. These pathways could result from user interaction or from other events that happen.
 
 Conditions work on the ‘if…then’ principle: ‘if’ the condition exists ‘then’ an action happens, and where applicable, if the condition does not exist, then another action can happen. You can use these principles as steps to implementing conditions:
 
@@ -32,7 +34,7 @@ In the case of **multiple conditions**, you can use **And** or **Or** to create 
 
 The result is a flexible process workflow that will result in desired actions based on any number of conditions.
 
-#### Create the action(s) – example Hide or Disable rule
+#### Rule action(s) – example Hide or Disable rule
 
 To create **actions** and where applicable, **otherwise actions**, the **action will depend on the rule** that is chosen. All Kianda rules use a natural language structure to make it is easy to apply actions. For example, for the **Workflow rule**, **Hide or Disable**, you can choose forms and fields from your process and then apply seven possible actions (as shown below).
 
