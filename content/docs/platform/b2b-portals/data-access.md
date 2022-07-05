@@ -149,3 +149,5 @@ To read more about User and group management, go to [Users](/docs/platform/admin
 To read more about Dashboards, go to [Dashboards](/docs/platform/pages/).
 
 To read more about Conditions, go to [Conditions](/docs/platform/rules/general/add-conditions/).
+
+To read more about data source parameters, go to [Connectors](/docs/platform/connectors/) and from there navigate to the different predefined data connectors.
