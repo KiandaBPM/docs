@@ -8,7 +8,46 @@ Your browser does not support the video tag.
 &lt;p>Back to &lt;a href="../">How to Videos&lt;/a>&lt;/p></description></item><item><title>Docs: Application design principles</title><link>https://docs.kianda.com/docs/low-code/application-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/application-design/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Control properties</title><link>https://docs.kianda.com/docs/platform/controls/properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/properties/</guid><description>
+&lt;/div></description></item><item><title>Docs: Conditions</title><link>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</guid><description>
+&lt;h4 id="introduction">Introduction&lt;/h4>
+&lt;p>Conditions are a key component of Kianda &lt;strong>rules&lt;/strong>. They are the &lt;strong>triggers&lt;/strong> that result in fully dynamic forms. They enable you to enables you to create natural language conditions when rules should be triggered.&lt;/p>
+&lt;p>The &lt;strong>Conditions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/condition.png" alt="img"> is found within all &lt;strong>rules&lt;/strong> as well as &lt;a href="docs/platform/pages/">dashboard widgets&lt;/a>. Conditions can also be set when setting data source security levels for &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">B2B portals&lt;/a>.&lt;/p>
+&lt;p>Conditions add an important level of interactivity, creating dynamic pathways within a process. These pathways could result from user interaction or from other events that happen.&lt;/p>
+&lt;p>Conditions work on the ‘if…then’ principle: ‘if’ the condition exists ‘then’ an action happens, and where applicable, if the condition does not exist, then another action can happen. You can use these principles as steps to implementing conditions:&lt;/p>
+&lt;ol>
+&lt;li>Create the &lt;strong>condition(s)&lt;/strong>&lt;/li>
+&lt;li>Create the &lt;strong>action(s)&lt;/strong> that will be applied as a result of the first condition being in place.&lt;/li>
+&lt;li>Where applicable, create the &lt;strong>otherwise action(s)&lt;/strong> based on other conditions being in place.&lt;/li>
+&lt;/ol>
+&lt;h4 id="create-the-condition">Create the condition&lt;/h4>
+&lt;ol>
+&lt;li>To create &lt;strong>conditions&lt;/strong>, first choose the &lt;strong>process element&lt;/strong> you want the condition to apply to – such as a form, set of forms, a field/control or set of fields.&lt;/li>
+&lt;li>Next, depending on whether the rule is applied to a &lt;strong>text-based field or date-based field&lt;/strong>, choose from 13 text operators or 25 date operators (see image below).&lt;/li>
+&lt;li>Then choose a &lt;strong>value&lt;/strong>, this could be typed in text, number(s), date(s), form(s) or field(s).&lt;/li>
+&lt;/ol>
+&lt;p>&lt;em>&lt;strong>Condition elements&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/conditions3-2.gif" alt="img">&lt;/p>
+&lt;p>In the case of &lt;strong>multiple conditions&lt;/strong>, you can use &lt;strong>And&lt;/strong> or &lt;strong>Or&lt;/strong> to create a group of compound conditions:&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/editconditions-1.gif" alt="img">&lt;/p>
+&lt;p>The result is a flexible process workflow that will result in desired actions based on any number of conditions.&lt;/p>
+&lt;h4 id="rule-actions--example-hide-or-disable-rule">Rule action(s) – example Hide or Disable rule&lt;/h4>
+&lt;p>To create &lt;strong>actions&lt;/strong> and where applicable, &lt;strong>otherwise actions&lt;/strong>, the &lt;strong>action will depend on the rule&lt;/strong> that is chosen. All Kianda rules use a natural language structure to make it is easy to apply actions. For example, for the &lt;strong>Workflow rule&lt;/strong>, &lt;strong>Hide or Disable&lt;/strong>, you can choose forms and fields from your process and then apply seven possible actions (as shown below).&lt;/p>
+&lt;p>*&lt;strong>Action elements for Hide or Disable*&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/hideoptions-1024x477.gif" alt="7 actions for Hide or Disable">&lt;/p>
+&lt;p>The actions within &lt;strong>Hide or disable&lt;/strong> are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Hide&lt;/strong> will hide a process element (forms or fields) from view.&lt;/li>
+&lt;li>&lt;strong>Show&lt;/strong> will show the element.&lt;/li>
+&lt;li>&lt;strong>Disable&lt;/strong> blocks a user from editing an element.&lt;/li>
+&lt;li>&lt;strong>Enable&lt;/strong> allows a user to add a value to an element.&lt;/li>
+&lt;li>&lt;strong>Toggle visible&lt;/strong> will toggle between showing an element or not, based on subsequent clicks of a field that the rule is applied to.&lt;/li>
+&lt;li>&lt;strong>Toggle enable&lt;/strong> will toggle between allowing an element to be edited or not, based on subsequent clicks of a field that the rule is applied to.&lt;/li>
+&lt;li>&lt;strong>Hide and clear&lt;/strong> will allow you to hide a process element and clear the details. For example, if a toggle button has this rule applied, with an &lt;strong>otherwise action&lt;/strong> of &lt;strong>show&lt;/strong> on a textbox, then if one value is chosen on the toggle button, the user is allowed enter details into the textbox. The otherwise action is that the field is hidden and cleared of data, so that no data can be retrieved. This might be useful, for example, when sensitive information is used, like a social security number on a form.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Note&lt;/strong>: You can use rules to create &lt;strong>actions&lt;/strong> &lt;strong>without conditions&lt;/strong> too. In this case the rule will simply execute, for example when a form or field is clicked on.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Depending on how the rule is applied, for example to a &lt;strong>Submit&lt;/strong> button, the rule order is important to consider, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/mutiple-rules/">Multiple rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Control properties</title><link>https://docs.kianda.com/docs/platform/controls/properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/properties/</guid><description>
 &lt;p>Each process, form and control (field) will have the properties associated with it displayed in the right-hand pane of the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a> view.&lt;/p>
 &lt;h2 id="process-properties">Process properties&lt;/h2>
 &lt;p>When you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and then click on a process, you will see the &lt;strong>Process properties&lt;/strong> for that process in the right-hand pane.&lt;/p>
@@ -271,45 +310,7 @@ Your browser does not support the video tag.
 &lt;p>&lt;a href="https://green-itr.kianda.com/forms/new-training-process-39">https://green-itr.kianda.com/forms/new-training-process-39&lt;/a>&lt;/p>
 &lt;p>You can create a link on your dashboard – in the example shown above, the &lt;strong>Start new process&lt;/strong> button at the top right of the Training Requests list widget – that enables you to create a &lt;strong>new record&lt;/strong> by bringing you into the relevant form. For information on creating list widgets go to &lt;a href="docs/platform/pages/list/">List widget&lt;/a>.&lt;/p>
 &lt;p>If you commit to the process by &lt;strong>submitting or saving information&lt;/strong>, then the result is a new process instance – that is, a new unique record – which will be seen in a list widget in the dashboard, as seen in the image above.&lt;/p>
-&lt;p>Keeping in mind that Designer is used to create processes, and that each ‘run’ of the process design results in a unique process instance or record, will help you later on when designing forms and dashboards. See &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/settings/">Process settings&lt;/a> for more details on process settings and parameters and &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> for more information on dashboards.&lt;/p></description></item><item><title>Docs: Rule conditions</title><link>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</guid><description>
-&lt;h4 id="introduction">Introduction&lt;/h4>
-&lt;p>Conditions are a key component of Kianda &lt;strong>rules&lt;/strong>. They are the &lt;strong>triggers&lt;/strong> that result in fully dynamic forms. They enable you to enables you to create natural language conditions when rules should be triggered.&lt;/p>
-&lt;p>The &lt;strong>Conditions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/condition.png" alt="img"> is found within all &lt;strong>rules&lt;/strong> as well as &lt;a href="docs/platform/pages/">&lt;strong>dashboard widgets&lt;/strong>&lt;/a>. Conditions add an important level of interactivity, creating dynamic pathways within a process. These pathways could result from user interaction or from other events that happen.&lt;/p>
-&lt;p>Conditions work on the ‘if…then’ principle: ‘if’ the condition exists ‘then’ an action happens, and where applicable, if the condition does not exist, then another action can happen. You can use these principles as steps to implementing conditions:&lt;/p>
-&lt;ol>
-&lt;li>Create the &lt;strong>condition(s)&lt;/strong>&lt;/li>
-&lt;li>Create the &lt;strong>action(s)&lt;/strong> that will be applied as a result of the first condition being in place.&lt;/li>
-&lt;li>Where applicable, create the &lt;strong>otherwise action(s)&lt;/strong> based on other conditions being in place.&lt;/li>
-&lt;/ol>
-&lt;h4 id="create-the-condition">Create the condition&lt;/h4>
-&lt;ol>
-&lt;li>To create &lt;strong>conditions&lt;/strong>, first choose the &lt;strong>process element&lt;/strong> you want the condition to apply to – such as a form, set of forms, a field/control or set of fields.&lt;/li>
-&lt;li>Next, depending on whether the rule is applied to a &lt;strong>text-based field or date-based field&lt;/strong>, choose from 13 text operators or 25 date operators (see image below).&lt;/li>
-&lt;li>Then choose a &lt;strong>value&lt;/strong>, this could be typed in text, number(s), date(s), form(s) or field(s).&lt;/li>
-&lt;/ol>
-&lt;p>&lt;em>&lt;strong>Condition elements&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/conditions3-2.gif" alt="img">&lt;/p>
-&lt;p>In the case of &lt;strong>multiple conditions&lt;/strong>, you can use &lt;strong>And&lt;/strong> or &lt;strong>Or&lt;/strong> to create a group of compound conditions:&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/editconditions-1.gif" alt="img">&lt;/p>
-&lt;p>The result is a flexible process workflow that will result in desired actions based on any number of conditions.&lt;/p>
-&lt;h4 id="create-the-actions--example-hide-or-disable-rule">Create the action(s) – example Hide or Disable rule&lt;/h4>
-&lt;p>To create &lt;strong>actions&lt;/strong> and where applicable, &lt;strong>otherwise actions&lt;/strong>, the &lt;strong>action will depend on the rule&lt;/strong> that is chosen. All Kianda rules use a natural language structure to make it is easy to apply actions. For example, for the &lt;strong>Workflow rule&lt;/strong>, &lt;strong>Hide or Disable&lt;/strong>, you can choose forms and fields from your process and then apply seven possible actions (as shown below).&lt;/p>
-&lt;p>*&lt;strong>Action elements for Hide or Disable*&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/hideoptions-1024x477.gif" alt="7 actions for Hide or Disable">&lt;/p>
-&lt;p>The actions within &lt;strong>Hide or disable&lt;/strong> are:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Hide&lt;/strong> will hide a process element (forms or fields) from view.&lt;/li>
-&lt;li>&lt;strong>Show&lt;/strong> will show the element.&lt;/li>
-&lt;li>&lt;strong>Disable&lt;/strong> blocks a user from editing an element.&lt;/li>
-&lt;li>&lt;strong>Enable&lt;/strong> allows a user to add a value to an element.&lt;/li>
-&lt;li>&lt;strong>Toggle visible&lt;/strong> will toggle between showing an element or not, based on subsequent clicks of a field that the rule is applied to.&lt;/li>
-&lt;li>&lt;strong>Toggle enable&lt;/strong> will toggle between allowing an element to be edited or not, based on subsequent clicks of a field that the rule is applied to.&lt;/li>
-&lt;li>&lt;strong>Hide and clear&lt;/strong> will allow you to hide a process element and clear the details. For example, if a toggle button has this rule applied, with an &lt;strong>otherwise action&lt;/strong> of &lt;strong>show&lt;/strong> on a textbox, then if one value is chosen on the toggle button, the user is allowed enter details into the textbox. The otherwise action is that the field is hidden and cleared of data, so that no data can be retrieved. This might be useful, for example, when sensitive information is used, like a social security number on a form.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Note&lt;/strong>: You can use rules to create &lt;strong>actions&lt;/strong> &lt;strong>without conditions&lt;/strong> too. In this case the rule will simply execute, for example when a form or field is clicked on.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Depending on how the rule is applied, for example to a &lt;strong>Submit&lt;/strong> button, the rule order is important to consider, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/mutiple-rules/">Multiple rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Shared process</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
+&lt;p>Keeping in mind that Designer is used to create processes, and that each ‘run’ of the process design results in a unique process instance or record, will help you later on when designing forms and dashboards. See &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/settings/">Process settings&lt;/a> for more details on process settings and parameters and &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> for more information on dashboards.&lt;/p></description></item><item><title>Docs: Shared process</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>A &lt;strong>Shared Process&lt;/strong> is a &lt;strong>process&lt;/strong> which you create within your own subscription with the intention to share with your B2B Portal. This &lt;strong>process&lt;/strong>, as with all &lt;strong>processes&lt;/strong>, can be used to review data, create new instances, update or delete instances.&lt;/p>
 &lt;p>Within a shared process, you can also create a &lt;strong>Shared Dashboard&lt;/strong> which is a dashboard created within your own subscription with the intention to share with your B2B Portal. This &lt;strong>dashboard&lt;/strong>, as with all dashboards, can be used to review data, access &lt;strong>Shared Processes&lt;/strong> by creating new instances, updating or deleting instances.&lt;/p>
@@ -1827,9 +1828,10 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>B2B Portals are a means of connecting your clients to your Kianda subscription through their own subscription. This provides a means of allowing your clients to interface with processes you have already created, be it through updating existing processes, deleting processes or creating processes. Access to the B2B Portal can be controlled by your own administrator and each B2B portal can have multiple users for your clients.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To share data with B2B portal users, there are a number of steps involved starting with:&lt;/p>
-&lt;p>a) Creating users and groups&lt;/p>
-&lt;p>b) Create dashboards to share&lt;/p>
-&lt;p>c) Create shared processes and attach dashboards to share&lt;/p>
+&lt;p>a) &lt;a href="create-users-and-groups-for-the-B2B-portal">Creating users and groups&lt;/a>&lt;/p>
+&lt;p>b) &lt;a href="create-dashboards-to-share">Create dashboards to share&lt;/a>&lt;/p>
+&lt;p>c) &lt;a href="create-shared-processes-and-attach-dashboards-to-share">Create shared processes and attach dashboards to share&lt;/a>&lt;/p>
+&lt;p>These steps are covered within the headings below. In addition you can manage &lt;a href="data-access-at-a-datasource-level">data access at a datasource level&lt;/a>, click on the link to see more details.&lt;/p>
 &lt;h3 id="create-users-and-groups-for-the-b2b-portal">Create users and groups for the B2B portal&lt;/h3>
 &lt;ol>
 &lt;li>
@@ -1885,9 +1887,99 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;h3 id="data-access-at-a-datasource-level">Data access at a datasource level&lt;/h3>
+&lt;p>When a &lt;strong>process&lt;/strong> is shared within the B2B portal, you may choose to include one or more of your datasources. You may not wish to share all records from the datasource within the B2B portal, so you can limit access within the datasource itself. B2B Security can be enabled with the following datasources:&lt;/p>
+&lt;ul>
+&lt;li>Active Directory&lt;/li>
+&lt;li>Docusign&lt;/li>
+&lt;li>Dropbox&lt;/li>
+&lt;li>Email&lt;/li>
+&lt;li>File system&lt;/li>
+&lt;li>FTP&lt;/li>
+&lt;li>Global Payments&lt;/li>
+&lt;li>Google Drive&lt;/li>
+&lt;li>MySQL&lt;/li>
+&lt;li>Office 365&lt;/li>
+&lt;li>Oracle&lt;/li>
+&lt;li>PowerShell&lt;/li>
+&lt;li>REST Service&lt;/li>
+&lt;li>Salesforce&lt;/li>
+&lt;li>SAP&lt;/li>
+&lt;li>SharePoint&lt;/li>
+&lt;li>SQL Server&lt;/li>
+&lt;li>SOAP Service&lt;/li>
+&lt;/ul>
+&lt;ol>
+&lt;li>
+&lt;p>Go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the Datasource management main view, click on a data source that has already been created with a status of &lt;strong>ready&lt;/strong>, by clicking on the &lt;strong>name&lt;/strong> of the data source, or create a new Data source by clicking on &lt;strong>Add new&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/administration/datasources/">Data sources&lt;/a> for more details.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-management.jpg" alt="Datasource management view">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Data source details&lt;/strong> screen, click on the &lt;strong>Security&lt;/strong> button &lt;img src="https://docs.kianda.com/images/security-button.jpg" alt="Security button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Security settings&lt;/strong> dialog box, complete the fields as shown on screen, starting with &lt;strong>Connection administrators&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/security-settings.jpg" alt="Security settings dialog box">&lt;/p>
+&lt;p>&lt;strong>Connection administrators&lt;/strong> - only users or groups listed here are allowed to modify the connection settings. Click on the dropdown list to choose &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong>. If you leave the field blank, all &lt;strong>Administrators&lt;/strong> and those users with the &lt;strong>Manage datasources&lt;/strong> role can edit the connection.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Complete the field for &lt;strong>Connection users&lt;/strong>. Only users or groups listed here are allowed to query data using this connection. Click on the dropdown list to choose &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong>. If you leave the field blank, any user can query data within the datasource.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Check/Uncheck &lt;strong>Enable B2B&lt;/strong>. If you check the checkbox, this allows B2B external users to query the connection. The &lt;strong>Enable partner default query parameters&lt;/strong> checkbox appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Check/Uncheck &lt;strong>Enable partner default query parameters&lt;/strong>. If you check the checkbox, you can define default query parameters that are applied to any partner originated query. Parameters defined here take precedence over any design time queries. Click on &lt;strong>Add mapping&lt;/strong> to choose a query type and table/operation as follows:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Query type&lt;/strong> - choose from &lt;strong>Create, Read, Update, Delete&lt;/strong> (CRUD). These CRUD operations allow you to create, read, update and delete records within your datasource.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Table/Operation&lt;/strong> - click on &lt;strong>Select a table&lt;/strong> to select a resource within the data connector. Click on &lt;strong>OK&lt;/strong> when you are finished editing, or &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Query parameters&lt;/strong> - when a datasource resource is chosen, for example a SharePoint list called &amp;lsquo;Countries&amp;rsquo; below, then you will have an option to set conditions for filtering data.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/query-parameters-security.jpg" alt="Query parameters">&lt;/p>
+&lt;p>Click on &lt;strong>Filter conditions&lt;/strong> to open an &lt;strong>Edit conditions&lt;/strong> dialog box and from there click on &lt;strong>Add a conditions group&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>If you choose to set conditions using the steps above, then in the &lt;strong>Edit conditions&lt;/strong> dialog box, you can set conditions based on data source parameters, operators and form fields.&lt;/p>
+&lt;ul>
+&lt;li>The parameter on the left comes from the &lt;strong>data source&lt;/strong>, for example for SharePoint, there are 18 possible values listed in &lt;a href="#sharepoint-parameters/docs/platform/connectors/sharepoint/">SharePoint parameters&lt;/a>. See &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data sources&lt;/a> for information about other data connectors.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-conditions.jpg" alt="Edit conditions dialog box in Security settings">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Within this dialog box you can also use different operators, for example &lt;strong>Equals&lt;/strong> as shown above. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details on using conditions in Kianda.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The right-most field relates to the B2B Portal and B2B User. There are standard options listed below:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Main Contact Name –&lt;/strong> the first name and last name of the Partner&lt;/li>
+&lt;li>&lt;strong>Main Contact Email –&lt;/strong> the email of the Partner&lt;/li>
+&lt;li>&lt;strong>Partner Company Name –&lt;/strong> the Partner organisation of the Partner&lt;/li>
+&lt;li>&lt;strong>Partner Current User Name –&lt;/strong> the user within the B2B Portal that is accessing the datasource&lt;/li>
+&lt;li>&lt;strong>Partner Current User Email –&lt;/strong> the user&amp;rsquo;s email within the B2B Portal that is accessing the datasource&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added conditions click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the security settings dialog box, click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about User and group management, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.
-To read more about Dashboards, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
+&lt;p>To read more about User and group management, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.&lt;/p>
+&lt;p>To read more about Dashboards, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p>
+&lt;p>To read more about Conditions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Success/Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As an &lt;strong>administrator&lt;/strong> or &lt;strong>designer&lt;/strong>, you can use Kianda &lt;strong>Designer&lt;/strong> to populate fields within the Kianda form, in the &lt;strong>Edit rule&lt;/strong> dialog box and set parameters for success and error mapping.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
