@@ -19,7 +19,7 @@ A dashboard **Chart widget** enables you to create pie charts, bar charts or lin
 
    - **Title** - You can insert the title you want for your **Chart widget** (instead of the default title that is shown). 
 
-   - **Layout columns** - You can choose how wide you want your **Chart widget** to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example click half-way across the blue bar to create a widget that is 6 columns wide.
+   - **Layout columns** - You can choose how wide you want your **Chart widget** to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example, click half-way across the blue bar to create a widget that is 6 columns wide.
 
    - **Colour scheme** - You can choose from six colour options for the header of the widget (Navy, Green, Blue, Amber, Red or White), if you choose to display it.
 
@@ -49,7 +49,7 @@ A dashboard **Chart widget** enables you to create pie charts, bar charts or lin
 
 4. An **Edit chart** dialog box automatically opens showing the options for your new Chart widget. To learn more about these options and how to complete the Edit chart dialog box so the Chart widget displays certain fields from your form, see Step 3 of [How to edit Chart widgets](#how-to-edit-chart-widgets).
 
-5. Once you have finished chooseing the options you want in the **Edit chart** dialog box, click on the **OK** button (or click on **Close** to exit the dialog box without saving).
+5. Once you have finished choosing the options you want in the **Edit chart** dialog box, click on the **OK** button (or click on **Close** to exit the dialog box without saving).
 
 6. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the top dashboard menu to save the insertion of the new Chart widget.
 
@@ -71,17 +71,17 @@ To edit a **Chart widget** on a dashboard:
 
    ![Chart widget edit](/images/chartpen.png)
 
-3. The **Edit chart** dialog box opens, enabling you to choose from a range of options for your Chart widget. Filter options are shown in the left-hand pane, a **Conditions** button ![Conditions button](/images/conditions.png)in the middle of the dialog box, and chart edit fields in the right-hand pane. 
+3. The **Edit chart** dialog box opens, enabling you to choose from a range of options for your Chart widget. Filter options are shown in the left-hand pane, a **Conditions** button ![Conditions button](/images/conditions.png) in the middle of the dialog box, and chart edit fields in the right-hand pane. 
 
-   Go to [Conditions](pages/platform/pages/conditions/) to read more about conditions you can apply to data and go to [Chart view fields](#chart-view-fields) to read more about changing how a chart looks.
+   Go to [Conditions](/docs/platform/pages/conditions/) to read more about conditions you can apply to data and go to [Chart view fields](#chart-view-fields) to read more about changing how a chart looks.
 
    ![Editing a chart widget](/images/editchart.png)
 
-4. The first option on the left is to choose is where the data should originate from using the **Data from** radio buttons. Choose from a) Process b) Partner process c) Data source. Depending on which option you choose go to the relevant area to read more on [Choosing data from a Process](#choosing-data-from-a-process), [Choosing data from a Partner process](#choosing-data-from-a-partner-process) and [Choosing data from a Data source](#choosing-data-from-a-data-source).
+4. The first option on the left is to choose is where the data should originate from using the **Data from** radio buttons. Choose from a) Process b) Partner process or c) Data source. Depending on which option you choose go to the relevant area to read more on [Choosing data from a Process](#choosing-data-from-a-process), [Choosing data from a Partner process](#choosing-data-from-a-partner-process) and [Choosing data from a Data source](#choosing-data-from-a-data-source).
 
 5. The second option **Show processes** has 3 radio buttons associated with it a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user. 
 
-6. The third option **Connect to List Widget** allows you to choose if this widget should connect to List widgets you have created for this dashboard page. Choose from a) Yes or b) No if you want to connect the widgets. If you click on **Yes** then click into the List Widget field and choose from previously created list widgets.
+6. The third option **Connect to List Widget** allows you to choose if this widget should connect to List widgets you have created for this dashboard page. Choose from a) Yes or b) No if you want to connect the widgets. If you click on **Yes**, then click into the List Widget field, you can choose from previously created list widgets.
 
    ![Connect to List widget](/images/connecttolist.png)
 
@@ -128,7 +128,7 @@ If you choose data from a Data source, then click on the **Select data source** 
 
 ![Selecting a data source](/images/selectdatasource.png)
 
-You will be directed to different data sources where you can search in the **datasource tree** search box or drill down to the data source you want. 
+You will be directed to different data sources where you can search in the **data source tree** search box or drill down to the data source you want. 
 
 ![Select data source](/images/selectdatasource.png)
 
@@ -146,17 +146,15 @@ When you choose the Chart widget for your dashboard, there are a number of optio
 
 2. Choose from the edit options:
 
-   - **Chart type** - choose from a) Pie chart b) Bar chart c) Line chart
+   - **Chart type** - choose from a) Pie chart b) Bar chart c) Line chart.
 
-   - **Labels field** - click into the field to drill down to the find what you want to use. You can use **Common fields** such as Status and Created, commonly used in dashboards, and use **design fields** that are part of processes attached to forms, for example fields within the forms Training Request and Training Approval below.
+   - **Labels field** - click into the field to drill down to find what you want to use. You can use **Common fields** such as Status and Created, commonly used in dashboards, and use **design fields** that are part of processes attached to forms, for example fields within the forms Training Request and Training Approval below.
 
      ![labelsfield](/images/labelsfield.png)
 
      
 
    - **Values field** - choose from a) Count b) Sum c) Average and click into the field itself to drill down to the fields you want, as with the **Labels field**.
-
-   - **Chart width** - use the arrow to choose a numeric value.
 
    - **Chart width** - use the arrow to choose a numeric value.
 
@@ -170,7 +168,7 @@ When you choose the Chart widget for your dashboard, there are a number of optio
 
 3. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 
-4. To change the chart settings, that is the way the chart looks, title and so on, click on the **Settings** button ![Settings button](/images/cog.png)and go to [How to edit Chart widget settings](#how-to-edit-chart-widget-settings) to find out more about edit options.
+4. To change the chart settings, that is the way the chart looks, title and so on, click on the **Settings** button ![Settings button](/images/cog.png) and go to [How to edit Chart widget settings](#how-to-edit-chart-widget-settings) to find out more about edit options.
 
 5. When you are finished making edits to your widget, click on the **Save** button ![Save button](/images/save.png) in the top menu to ensure your dashboard changes are saved and you will see a pop-up message **Page saved successfully**.
 
