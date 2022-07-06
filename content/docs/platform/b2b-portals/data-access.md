@@ -23,7 +23,7 @@ b) [Create dashboards to share](#create-dashboards-to-share)
 
 c) [Create shared processes and attach dashboards to share](#create-shared-processes-and-attach-dashboards-to-share)
 
-These steps are covered within the headings below. In addition you can manage [data access at a datasource level](data-access-at-a-datasource-level), click on the link to see more details. 
+These steps are covered within the headings below. In addition you can manage [data access at a datasource level](#data-access-at-a-datasource-level), click on the link to see more details. 
 
 ### Create users and groups for the B2B portal
 
