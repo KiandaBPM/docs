@@ -129,6 +129,7 @@ When a **process** is shared within the B2B portal, you may choose to include on
    ![Edit conditions dialog box in Security settings](/images/edit-conditions.jpg)
 
    - Within this dialog box you can also use different operators, for example **Equals** as shown above. See [Conditions](/docs/platform/rules/general/add-conditions/) for more details on using conditions in Kianda. 
+
    - The right-most field relates to the B2B Portal and B2B User. There are standard options listed below:
      - **Main Contact Name –** the first name and last name of the Partner
      - **Main Contact Email –** the email of the Partner
@@ -136,6 +137,8 @@ When a **process** is shared within the B2B portal, you may choose to include on
      - **Partner Current User Name –** the user within the B2B Portal that is accessing the datasource
      - **Partner Current User Email –** the user's email within the B2B Portal that is accessing the datasource
 
+     ![B2B form parameters](/images/b2b-parameters.jpg)
+     
    - When you have added conditions click on **OK**, or click on **Close** at any time to exit the dialog box.
 
 9. When you are finished editing the security settings dialog box, click on **OK**, or click on **Close** at any time to exit the dialog box.
