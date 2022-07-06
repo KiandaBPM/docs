@@ -14,7 +14,7 @@
 &lt;p>&lt;strong>Title&lt;/strong> - You can insert the title you want for your &lt;strong>Chart widget&lt;/strong> (instead of the default title that is shown).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Layout columns&lt;/strong> - You can choose how wide you want your &lt;strong>Chart widget&lt;/strong> to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example click half-way across the blue bar to create a widget that is 6 columns wide.&lt;/p>
+&lt;p>&lt;strong>Layout columns&lt;/strong> - You can choose how wide you want your &lt;strong>Chart widget&lt;/strong> to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example, click half-way across the blue bar to create a widget that is 6 columns wide.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Colour scheme&lt;/strong> - You can choose from six colour options for the header of the widget (Navy, Green, Blue, Amber, Red or White), if you choose to display it.&lt;/p>
@@ -51,7 +51,7 @@
 &lt;p>An &lt;strong>Edit chart&lt;/strong> dialog box automatically opens showing the options for your new Chart widget. To learn more about these options and how to complete the Edit chart dialog box so the Chart widget displays certain fields from your form, see Step 3 of &lt;a href="#how-to-edit-chart-widgets">How to edit Chart widgets&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Once you have finished chooseing the options you want in the &lt;strong>Edit chart&lt;/strong> dialog box, click on the &lt;strong>OK&lt;/strong> button (or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving).&lt;/p>
+&lt;p>Once you have finished choosing the options you want in the &lt;strong>Edit chart&lt;/strong> dialog box, click on the &lt;strong>OK&lt;/strong> button (or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving).&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the top dashboard menu to save the insertion of the new Chart widget.&lt;/p>
@@ -73,18 +73,18 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/chartpen.png" alt="Chart widget edit">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Edit chart&lt;/strong> dialog box opens, enabling you to choose from a range of options for your Chart widget. Filter options are shown in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions button">in the middle of the dialog box, and chart edit fields in the right-hand pane.&lt;/p>
-&lt;p>Go to &lt;a href="pages/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions you can apply to data and go to &lt;a href="#chart-view-fields">Chart view fields&lt;/a> to read more about changing how a chart looks.&lt;/p>
+&lt;p>The &lt;strong>Edit chart&lt;/strong> dialog box opens, enabling you to choose from a range of options for your Chart widget. Filter options are shown in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions button"> in the middle of the dialog box, and chart edit fields in the right-hand pane.&lt;/p>
+&lt;p>Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions you can apply to data and go to &lt;a href="#chart-view-fields">Chart view fields&lt;/a> to read more about changing how a chart looks.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/editchart.png" alt="Editing a chart widget">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The first option on the left is to choose is where the data should originate from using the &lt;strong>Data from&lt;/strong> radio buttons. Choose from a) Process b) Partner process c) Data source. Depending on which option you choose go to the relevant area to read more on &lt;a href="#choosing-data-from-a-process">Choosing data from a Process&lt;/a>, &lt;a href="#choosing-data-from-a-partner-process">Choosing data from a Partner process&lt;/a> and &lt;a href="#choosing-data-from-a-data-source">Choosing data from a Data source&lt;/a>.&lt;/p>
+&lt;p>The first option on the left is to choose is where the data should originate from using the &lt;strong>Data from&lt;/strong> radio buttons. Choose from a) Process b) Partner process or c) Data source. Depending on which option you choose go to the relevant area to read more on &lt;a href="#choosing-data-from-a-process">Choosing data from a Process&lt;/a>, &lt;a href="#choosing-data-from-a-partner-process">Choosing data from a Partner process&lt;/a> and &lt;a href="#choosing-data-from-a-data-source">Choosing data from a Data source&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The second option &lt;strong>Show processes&lt;/strong> has 3 radio buttons associated with it a) Matching condition b) Matching condition and assigned to current user c) Matching condition and created by current user.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The third option &lt;strong>Connect to List Widget&lt;/strong> allows you to choose if this widget should connect to List widgets you have created for this dashboard page. Choose from a) Yes or b) No if you want to connect the widgets. If you click on &lt;strong>Yes&lt;/strong> then click into the List Widget field and choose from previously created list widgets.&lt;/p>
+&lt;p>The third option &lt;strong>Connect to List Widget&lt;/strong> allows you to choose if this widget should connect to List widgets you have created for this dashboard page. Choose from a) Yes or b) No if you want to connect the widgets. If you click on &lt;strong>Yes&lt;/strong>, then click into the List Widget field, you can choose from previously created list widgets.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/connecttolist.png" alt="Connect to List widget">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -120,7 +120,7 @@
 &lt;h3 id="choosing-data-from-a-data-source">Choosing data from a Data source&lt;/h3>
 &lt;p>If you choose data from a Data source, then click on the &lt;strong>Select data source&lt;/strong> button.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/selectdatasource.png" alt="Selecting a data source">&lt;/p>
-&lt;p>You will be directed to different data sources where you can search in the &lt;strong>datasource tree&lt;/strong> search box or drill down to the data source you want.&lt;/p>
+&lt;p>You will be directed to different data sources where you can search in the &lt;strong>data source tree&lt;/strong> search box or drill down to the data source you want.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/selectdatasource.png" alt="Select data source">&lt;/p>
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;h3 id="chart-view-fields">Chart view fields&lt;/h3>
@@ -134,17 +134,14 @@
 &lt;p>Choose from the edit options:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Chart type&lt;/strong> - choose from a) Pie chart b) Bar chart c) Line chart&lt;/p>
+&lt;p>&lt;strong>Chart type&lt;/strong> - choose from a) Pie chart b) Bar chart c) Line chart.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Labels field&lt;/strong> - click into the field to drill down to the find what you want to use. You can use &lt;strong>Common fields&lt;/strong> such as Status and Created, commonly used in dashboards, and use &lt;strong>design fields&lt;/strong> that are part of processes attached to forms, for example fields within the forms Training Request and Training Approval below.&lt;/p>
+&lt;p>&lt;strong>Labels field&lt;/strong> - click into the field to drill down to find what you want to use. You can use &lt;strong>Common fields&lt;/strong> such as Status and Created, commonly used in dashboards, and use &lt;strong>design fields&lt;/strong> that are part of processes attached to forms, for example fields within the forms Training Request and Training Approval below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/labelsfield.png" alt="labelsfield">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Values field&lt;/strong> - choose from a) Count b) Sum c) Average and click into the field itself to drill down to the fields you want, as with the &lt;strong>Labels field&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Chart width&lt;/strong> - use the arrow to choose a numeric value.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Chart width&lt;/strong> - use the arrow to choose a numeric value.&lt;/p>
@@ -167,7 +164,7 @@
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To change the chart settings, that is the way the chart looks, title and so on, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog.png" alt="Settings button">and go to &lt;a href="#how-to-edit-chart-widget-settings">How to edit Chart widget settings&lt;/a> to find out more about edit options.&lt;/p>
+&lt;p>To change the chart settings, that is the way the chart looks, title and so on, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog.png" alt="Settings button"> and go to &lt;a href="#how-to-edit-chart-widget-settings">How to edit Chart widget settings&lt;/a> to find out more about edit options.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>When you are finished making edits to your widget, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> in the top menu to ensure your dashboard changes are saved and you will see a pop-up message &lt;strong>Page saved successfully&lt;/strong>.&lt;/p>
@@ -240,14 +237,14 @@
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>Make sure you in &lt;strong>Edit mode&lt;/strong> on your dashboard page by clicking on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> in the top menu.&lt;/p>
+&lt;p>Make sure you are in &lt;strong>Edit mode&lt;/strong> on your dashboard page by clicking on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> in the top menu.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/penbutton_frame.png" alt="Pen button in a widget">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update configuration&lt;/strong> or &lt;strong>Pen&lt;/strong> button for any Tile, List or Chart widget.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions button">in the dialog box that opens.&lt;/p>
+&lt;p>Click on the &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions button"> in the dialog box that opens.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add a conditions group&lt;/strong> &lt;img src="https://docs.kianda.com/images/addconditions.png" alt="Add conditions button"> button to add a condition.&lt;/p>
@@ -255,7 +252,7 @@
 &lt;li>
 &lt;p>The &lt;strong>Edit conditions&lt;/strong> dialog box opens.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions">&lt;/p>
-&lt;p>Click into the first empty field to choose a field to filter on, this can be a &lt;strong>Common field&lt;/strong> or a &lt;strong>Design field&lt;/strong> as found in a form. Click on the + symbol to drill down to the relevant fields to use. Click on a field to use, for example the Common field, &amp;lsquo;Status&amp;rsquo;. If you want to replace the field with a different one, click on the &lt;img src="https://docs.kianda.com/images/x.png" alt="X"> beside the field name.&lt;/p>
+&lt;p>Click into the first empty field to choose a field to filter on. This field can be a &lt;strong>Common field&lt;/strong> or a &lt;strong>Design field&lt;/strong> as found in a form. Click on the + symbol to drill down to the relevant fields to use. Click on a field to use, for example the Common field, &amp;lsquo;Status&amp;rsquo;. If you want to replace the field with a different one, click on the &lt;img src="https://docs.kianda.com/images/x.png" alt="X"> beside the field name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the operator field and choose from a relevant operator to apply, for example &lt;strong>Equals&lt;/strong>, &lt;strong>Contains&lt;/strong>, &lt;strong>Is blank&lt;/strong>, &lt;strong>Matches pattern&lt;/strong> and so on.&lt;/p>
@@ -313,7 +310,7 @@
 &lt;p>Click on the &lt;strong>down arrow&lt;/strong> button in the Dashboard &lt;strong>Widget menu&lt;/strong> to view the available &lt;strong>Custom dashboard widgets&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-custom.jpg" alt="Select the Rich Text button in the Dashboard Widget menu">&lt;/p>
 &lt;p>In this example, there are two custom dashboard widgets available - the &amp;lsquo;Expenses dashboard&amp;rsquo; widget and &amp;lsquo;Welcome Banner&amp;rsquo;. We will use the &lt;strong>Welcome Banner&lt;/strong> custom widget for our example.&lt;/p>
-&lt;p>&lt;strong>Note&lt;/strong>: &lt;strong>This eight type of dashboard widget will only be available to you if Custom dashboard widgets have been created by Administrators or Developers in your Kianda workspace&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: &lt;strong>This eighth type of dashboard widget will only be available to you if Custom dashboard widgets have been created by Administrators or Developers in your Kianda workspace&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Add widget&lt;/strong> dialog box opens with a range of options for your new &lt;strong>Custom dashboard widget&lt;/strong>.&lt;/p>
@@ -324,7 +321,7 @@
 &lt;p>&lt;strong>Title&lt;/strong> - You can insert the title you want for your &lt;strong>Custom dashboard widget&lt;/strong> (by replacing the default title shown). In our example, we&amp;rsquo;ll call it &amp;lsquo;Welcome&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Layout columns&lt;/strong> - You can choose how wide you want your &lt;strong>Custom widget&lt;/strong> to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example click half-way across the blue bar to create a widget that is 6 columns wide, or click to the very end of the bar to create a column that is 12 columns wide.&lt;/p>
+&lt;p>&lt;strong>Layout columns&lt;/strong> - You can choose how wide you want your &lt;strong>Custom widget&lt;/strong> to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example, click half-way across the blue bar to create a widget that is 6 columns wide, or click to the very end of the bar to create a column that is 12 columns wide.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Colour scheme&lt;/strong> - You can choose from six colour options for the header of the widget (Navy, Green, Blue, Amber, Red or White), if you choose to display it.&lt;/p>
@@ -440,7 +437,7 @@
 &lt;p>To delete a &lt;strong>Custom dashboard widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
@@ -455,7 +452,7 @@
 &lt;p>To update or edit your &lt;strong>Custom dashboard widget&lt;/strong> settings:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
@@ -498,7 +495,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-annual-leave-example3.jpg" alt="Annual Leave dashboard page example 2">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-button.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -580,25 +577,25 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-data-source.jpg" alt="Dashboard Filter widget Data source options">&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Datasource&lt;/strong> - If you select &amp;lsquo;&lt;strong>Data source&lt;/strong>&amp;rsquo; for creating your filter options, next click on the &lt;strong>Datasource&lt;/strong> button. The &lt;strong>Select datasource&lt;/strong> dialog box automatically opens:&lt;/p>
+&lt;p>&lt;strong>Data source&lt;/strong> - If you select &amp;lsquo;&lt;strong>Data source&lt;/strong>&amp;rsquo; for creating your filter options, next click on the &lt;strong>Data source&lt;/strong> button. The &lt;strong>Select data source&lt;/strong> dialog box automatically opens:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-select-datasource.jpg" alt="Dashboard Filter widget select datasource dialog box">&lt;/p>
-&lt;p>Select the data source you want to use by selecting one of the available Datasources listed on the left.&lt;/p>
+&lt;p>Select the data source you want to use by selecting one of the available Data sources listed on the left.&lt;/p>
 &lt;p>For our example, we will select &lt;strong>Kianda&lt;/strong> as our data source and then select the &amp;lsquo;Annual leave request and approval process&amp;rsquo;. We can do this by either&lt;/p>
-&lt;p>&lt;strong>(a)&lt;/strong> typing the start of this process name into the &amp;lsquo;&lt;strong>datasource tree&lt;/strong>&amp;rsquo; search field and selecting it when it is displayed below it, or&lt;/p>
+&lt;p>&lt;strong>(a)&lt;/strong> typing the start of this process name into the &amp;lsquo;&lt;strong>data source tree&lt;/strong>&amp;rsquo; search field and selecting it when it is displayed below it, or&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-datasource-example.jpg" alt="Dashboard Filter widget Select datasource example">&lt;/p>
-&lt;p>&lt;strong>(b)&lt;/strong> by clicking on &lt;strong>Processes&lt;/strong> to show the full list of Kianda processes and scrolling and selecting the one we want&lt;/p>
+&lt;p>&lt;strong>(b)&lt;/strong> by clicking on &lt;strong>Processes&lt;/strong> to show the full list of Kianda processes and scrolling and selecting the one we want.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-datasource-process.jpg" alt="Dashboard Filter widget Select datasource Kianda process">&lt;/p>
-&lt;p>Click &lt;strong>OK&lt;/strong> when you have selected the data source you want to use. The source you selected will now be shown beneath the &lt;strong>Datasource&lt;/strong> button in the &lt;strong>Filter settings&lt;/strong> dialog box.&lt;/p>
+&lt;p>Click &lt;strong>OK&lt;/strong> when you have selected the data source you want to use. The source you selected will now be shown beneath the &lt;strong>Data source&lt;/strong> button in the &lt;strong>Filter settings&lt;/strong> dialog box.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-datasource-shown.jpg" alt="Dashboard Filter widget data source shown in Filter settings dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Edit conditions&lt;/strong> - If you want to add a condition to your filter&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/Edit_Conditions_button.jpg" alt="Edit Conditions button">and the &lt;strong>Edit conditions&lt;/strong> dialog box will open&lt;/p>
+&lt;p>Click the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/Edit_Conditions_button.jpg" alt="Edit Conditions button"> and the &lt;strong>Edit conditions&lt;/strong> dialog box will open.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click the &lt;strong>Add conditions group&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addconditions.png" alt="Dashboard Filter widget Add a conditions group button">&lt;/p>
+&lt;p>Click the &lt;strong>Add conditions group&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addconditions.png" alt="Dashboard Filter widget Add a conditions group button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Add the condition you want and click on &lt;strong>OK&lt;/strong>.&lt;/p>
@@ -619,7 +616,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Filter mode&lt;/strong> - You can choose whether the filter widget displays options that &lt;strong>start with&lt;/strong> the letters or words the user types into the filter widget search box or shows filter options that &lt;strong>contain&lt;/strong> the letters or words the user inputs.&lt;/p>
+&lt;p>&lt;strong>Filter mode&lt;/strong> - You can choose whether the filter widget displays options that &lt;strong>start with&lt;/strong> the letters or words the user types into the filter widget search box, or shows filter options that &lt;strong>contain&lt;/strong> the letters or words the user inputs.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Default value&lt;/strong> - You can choose a Default value to appear in the Filter widget.&lt;/p>
@@ -628,12 +625,12 @@
 &lt;p>&lt;strong>Enable query string&lt;/strong> - This option appears for all Filter types except for Date range and Current user.&lt;/p>
 &lt;p>To enable a query string:&lt;/p>
 &lt;ol>
-&lt;li>Select the &amp;lsquo;&lt;strong>Enable query string&lt;/strong> checkbox.&lt;/li>
+&lt;li>Select the &amp;lsquo;&lt;strong>Enable query string&lt;/strong>&amp;rsquo; checkbox.&lt;/li>
 &lt;li>Insert the &lt;strong>unique field name&lt;/strong> of the field you want to filter by into the box with the &amp;lsquo;Parameter name&amp;rsquo; placeholder text.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-enable-query-string.jpg" alt="Dashboard Filter widget Enable query string option">&lt;/p>
 &lt;p>&lt;strong>Note&lt;/strong> - You can find the unique field name by going to the form that contains the field and clicking on the &lt;strong>Edit field&lt;/strong> button to open the &lt;strong>Edit field&lt;/strong> dialog box and copying the unique field name from the &amp;lsquo;&lt;strong>Name (Unique)&lt;/strong>&amp;rsquo; field.&lt;/p>
-&lt;p>In our example, we can find the &lt;strong>unique field name&lt;/strong> we need to enable a query string by&lt;/p>
+&lt;p>In our example, we can find the &lt;strong>unique field name&lt;/strong> we need to enable a query string by:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Opening the Annual Leave process&lt;/p>
@@ -654,7 +651,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-url.jpg" alt="Dashboard Filter widget enable query string Auto update URL example">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>Setting the filter up like this to automatically update the URL when a filter option is selected enables you to make any of the filter selections a &lt;strong>dashboard favourite&lt;/strong> page.&lt;/p>
+&lt;p>Setting the filter up like this to automatically update the URL when a filter option is selected, enables you to make any of the filter selections a &lt;strong>dashboard favourite&lt;/strong> page.&lt;/p>
 &lt;p>For example, we could now choose to make this filter selection - Maddy Leenane&amp;rsquo;s annual leave requests - a favourited dashboard page by clicking on the &lt;strong>Add to favourites&lt;/strong> button in the top menu and completing the &lt;strong>Add to favourite&lt;/strong> dialog box that opens:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-favourited.jpg" alt="Dashboard Filter widget enable query string auto update URL add to favourites example">&lt;/p>
 &lt;/li>
@@ -668,11 +665,11 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-widget-connection.jpg" alt="Dashboard Filter widget Widget Filter connection dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You can then choose to add filter conditions to the widget filter connection by&lt;/p>
-&lt;p>(a) clicking on the &lt;strong>Add filter conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-filter-add-filter-conditions.jpg" alt="Dashboard Filter widget Widget filter connection Add filter conditions button">&lt;/p>
-&lt;p>(b) clicking the &lt;strong>Add a conditions group&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addconditions.png" alt="Dashboard Filter widget Widget filter connection Add a conditions group button">in the &lt;strong>Edit conditions&lt;/strong> dialog box that opens&lt;/p>
+&lt;p>You can then choose to add filter conditions to the widget filter connection by:&lt;/p>
+&lt;p>(a) clicking on the &lt;strong>Add filter conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-filter-add-filter-conditions.jpg" alt="Dashboard Filter widget Widget filter connection Add filter conditions button">,&lt;/p>
+&lt;p>(b) clicking the &lt;strong>Add a conditions group&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addconditions.png" alt="Dashboard Filter widget Widget filter connection Add a conditions group button"> in the &lt;strong>Edit conditions&lt;/strong> dialog box that opens, or&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-widget-connection-conditions.jpg" alt="Dashboard Filter widget Widget filter connection Edit conditions dialog box">&lt;/p>
-&lt;p>(c) completing the &lt;strong>Edit conditions&lt;/strong> dialog box to apply conditions to the widget filter connection and then clicking on &lt;strong>OK&lt;/strong>&lt;/p>
+&lt;p>(c) completing the &lt;strong>Edit conditions&lt;/strong> dialog box to apply conditions to the widget filter connection and then clicking on &lt;strong>OK&lt;/strong>.&lt;/p>
 &lt;p>In our example, we would add a filter condition to the widget filter connection by selecting &amp;lsquo;Employee Name&amp;rsquo; in the field on the left and &amp;lsquo;Filter value&amp;rsquo; in the field on the right. This will ensure that the &amp;lsquo;Employee Name&amp;rsquo; field will display as the filter value.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-widget-connection-conditionex.jpg" alt="Dashboard Filter widget Widget connection filter condition example">&lt;/p>
 &lt;/li>
@@ -711,7 +708,7 @@
 &lt;p>To edit a &lt;strong>Filter widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
+&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the Filter widget&amp;rsquo;s &lt;strong>Update configuration&lt;/strong> (Edit) button &lt;img src="https://docs.kianda.com/images/dashboard-update-configuration.jpg" alt="Dashboard update configuration button">.&lt;/p>
@@ -731,7 +728,7 @@
 &lt;p>To move a &lt;strong>Filter widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/p>
@@ -748,7 +745,7 @@
 &lt;p>To delete a &lt;strong>Filter widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
@@ -766,7 +763,7 @@
 &lt;p>To update or edit your &lt;strong>Filter widget&lt;/strong> settings:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
