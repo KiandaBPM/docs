@@ -28,7 +28,21 @@
 &lt;/div></description></item><item><title>Docs: Office 365</title><link>https://docs.kianda.com/docs/platform/connectors/office-365/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/office-365/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Oracle database</title><link>https://docs.kianda.com/docs/platform/connectors/oracle-database/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/oracle-database/</guid><description>
+&lt;/div>
+&lt;h2 id="office-365-parameters">Office 365 parameters&lt;/h2>
+&lt;p>When you use an Office 365 datasource, there are &lt;strong>default options&lt;/strong> that can be passed as parameters, for example when using conditions with Office 365 data connectors. These are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>User List&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Group List&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Find Users&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Find Groups&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Create Group&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Add User to Group&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Remove User From Group&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Licence Plan List&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Assign Licence to User&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Remove Licence from User&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Oracle database</title><link>https://docs.kianda.com/docs/platform/connectors/oracle-database/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/oracle-database/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: PowerShell</title><link>https://docs.kianda.com/docs/platform/connectors/powershell/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/powershell/</guid><description>
@@ -205,9 +219,21 @@
 &lt;p>This customised name &amp;lsquo;Location&amp;rsquo; appears in the dropdown list, for example the &lt;strong>Display field&lt;/strong> for the list.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/location-sharepoint-field.jpg" alt="Customised column name example in SharePoint">&lt;/p>
 &lt;p>​&lt;/p></description></item><item><title>Docs: SQL Server connector</title><link>https://docs.kianda.com/docs/platform/connectors/sql-server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sql-server/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: REST and SOAP Webservice connectors</title><link>https://docs.kianda.com/docs/platform/connectors/webservices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/webservices/</guid><description>
+&lt;h2 id="sql-server-parameters">SQL Server parameters&lt;/h2>
+&lt;p>When you use a SQL datasource, there are values that can be passed as parameters, for example when using conditions with SQL Server data connectors.&lt;/p>
+&lt;p>When you use an Office 365 datasource, there are &lt;strong>default options&lt;/strong> that can be passed as parameters, for example when using conditions with Office 365 data connectors. These are:These are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>User List&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Group List&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Find Users&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Find Groups&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Create Group&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Add User to Group&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Remove User From Group&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Licence Plan List&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Assign Licence to User&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Remove Licence from User&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: REST and SOAP Webservice connectors</title><link>https://docs.kianda.com/docs/platform/connectors/webservices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/webservices/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item></channel></rss>
