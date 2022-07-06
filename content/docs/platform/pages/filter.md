@@ -19,7 +19,7 @@ To add a **Filter widget** to a dashboard:
 
    ![Annual Leave dashboard page example 2](/images/dashboard-annual-leave-example3.jpg)
 
-2. Click on the **Edit current page** button from the top dashboard menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode) (in which the **Widget menu**, **Settings** button ![Settings](/images/settings.png), **Bin/Trash** button ![Bin trash button](/images/bin.png) and **Add layout container** button ![Dashboard Add layout container button](/images/dashboard-add-layout-container.jpg) are available):
+2. Click on the **Edit current page** button from the top dashboard menu to go into [Dashboards Edit mode](/docs/platform/pages#dashboards-edit-mode) (in which the **Widget menu**, **Settings** button ![Settings](/images/settings.png), **Bin/Trash** button ![Bin trash button](/images/bin.png) and **Add layout container** button ![Dashboard Add layout container button](/images/dashboard-add-layout-container.jpg) are available):
 
    ![Click Edit current page button to go into Edit mode](/images/dashboard-edit-button.jpg)
 
@@ -91,31 +91,31 @@ To add a **Filter widget** to a dashboard:
 
      ![Dashboard Filter widget Data source options](/images/dashboard-filter-data-source.jpg)
 
-     - **Datasource** - If you select '**Data source**' for creating your filter options, next click on the **Datasource** button. The **Select datasource** dialog box automatically opens:
+     - **Data source** - If you select '**Data source**' for creating your filter options, next click on the **Data source** button. The **Select data source** dialog box automatically opens:
 
        ![Dashboard Filter widget select datasource dialog box](/images/dashboard-filter-select-datasource.jpg)
 
-       Select the data source you want to use by selecting one of the available Datasources listed on the left.
+       Select the data source you want to use by selecting one of the available Data sources listed on the left.
 
        For our example, we will select **Kianda** as our data source and then select the 'Annual leave request and approval process'. We can do this by either
 
-       **(a)** typing the start of this process name into the '**datasource tree**' search field and selecting it when it is displayed below it, or
+       **(a)** typing the start of this process name into the '**data source tree**' search field and selecting it when it is displayed below it, or
 
        ![Dashboard Filter widget Select datasource example](/images/dashboard-link-datasource-example.jpg)
 
-       **(b)**  by clicking on **Processes** to show the full list of Kianda processes and scrolling and selecting the one we want
+       **(b)**  by clicking on **Processes** to show the full list of Kianda processes and scrolling and selecting the one we want.
 
        ![Dashboard Filter widget Select datasource Kianda process](/images/dashboard-filter-datasource-process.jpg)
 
-       Click **OK** when you have selected the data source you want to use. The source you selected will now be shown beneath the **Datasource** button in the **Filter settings** dialog box.
+       Click **OK** when you have selected the data source you want to use. The source you selected will now be shown beneath the **Data source** button in the **Filter settings** dialog box.
 
        ![Dashboard Filter widget data source shown in Filter settings dialog box](/images/dashboard-filter-datasource-shown.jpg)
 
      - **Edit conditions** - If you want to add a condition to your filter
 
-       1. Click the **Edit conditions** button ![Edit Conditions button](/images/Edit_Conditions_button.jpg)and the **Edit conditions** dialog box will open
+       1. Click the **Edit conditions** button ![Edit Conditions button](/images/Edit_Conditions_button.jpg) and the **Edit conditions** dialog box will open.
 
-       2. Click the **Add conditions group** button ![Dashboard Filter widget Add a conditions group button](/images/addconditions.png) 
+       2. Click the **Add conditions group** button ![Dashboard Filter widget Add a conditions group button](/images/addconditions.png).
 
        3. Add the condition you want and click on **OK**. 
 
@@ -133,7 +133,7 @@ To add a **Filter widget** to a dashboard:
 
        ![Dashboard filter select Display field and Value field](/images/dashboard-filter-display-field.jpg)
 
-   - **Filter mode** - You can choose whether the filter widget displays options that **start with** the letters or words the user types into the filter widget search box or shows filter options that **contain** the letters or words the user inputs.
+   - **Filter mode** - You can choose whether the filter widget displays options that **start with** the letters or words the user types into the filter widget search box, or shows filter options that **contain** the letters or words the user inputs.
 
    - **Default value** - You can choose a Default value to appear in the Filter widget.
      
@@ -141,14 +141,14 @@ To add a **Filter widget** to a dashboard:
      
        To enable a query string:
      
-       1. Select the '**Enable query string** checkbox.
+       1. Select the '**Enable query string**' checkbox.
        2. Insert the **unique field name** of the field you want to filter by into the box with the 'Parameter name' placeholder text. 
      
        ![Dashboard Filter widget Enable query string option](/images/dashboard-filter-enable-query-string.jpg)
      
        **Note** - You can find the unique field name by going to the form that contains the field and clicking on the **Edit field** button to open the **Edit field** dialog box and copying the unique field name from the '**Name (Unique)**' field.
      
-       In our example, we can find the **unique field name** we need to enable a query string by
+       In our example, we can find the **unique field name** we need to enable a query string by:
      
        1. Opening the Annual Leave process
        2. Selecting the 'Employee Name' field in the Annual Leave Request form - the field we want to filter by in our Filter widget.
@@ -164,7 +164,7 @@ To add a **Filter widget** to a dashboard:
      
 			![Dashboard Filter widget enable query string Auto update URL example](/images/dashboard-filter-query-string-url.jpg)
      
-       Setting the filter up like this to automatically update the URL when a filter option is selected enables you to make any of the filter selections a **dashboard favourite** page. 
+       Setting the filter up like this to automatically update the URL when a filter option is selected, enables you to make any of the filter selections a **dashboard favourite** page. 
        
        For example, we could now choose to make this filter selection - Maddy Leenane's annual leave requests - a favourited dashboard page by clicking on the **Add to favourites** button in the top menu and completing the **Add to favourite** dialog box that opens:
        
@@ -176,15 +176,15 @@ To add a **Filter widget** to a dashboard:
 
        ![Dashboard Filter widget Widget Filter connection dialog box](/images/dashboard-filter-widget-connection.jpg)
      
-     - You can then choose to add filter conditions to the widget filter connection by
+     - You can then choose to add filter conditions to the widget filter connection by:
      
-       (a) clicking on the **Add filter conditions** button ![Dashboard Filter widget Widget filter connection Add filter conditions button](/images/dashboard-filter-add-filter-conditions.jpg) 
+       (a) clicking on the **Add filter conditions** button ![Dashboard Filter widget Widget filter connection Add filter conditions button](/images/dashboard-filter-add-filter-conditions.jpg), 
      
-       (b) clicking the **Add a conditions group** button ![Dashboard Filter widget Widget filter connection Add a conditions group button](/images/addconditions.png)in the **Edit conditions** dialog box that opens
+       (b) clicking the **Add a conditions group** button ![Dashboard Filter widget Widget filter connection Add a conditions group button](/images/addconditions.png) in the **Edit conditions** dialog box that opens, or
      
        ![Dashboard Filter widget Widget filter connection Edit conditions dialog box](/images/dashboard-filter-widget-connection-conditions.jpg)
      
-       (c) completing the **Edit conditions** dialog box to apply conditions to the widget filter connection and then clicking on **OK**
+       (c) completing the **Edit conditions** dialog box to apply conditions to the widget filter connection and then clicking on **OK**.
        
        In our example, we would add a filter condition to the widget filter connection by selecting 'Employee Name' in the field on the left and 'Filter value' in the field on the right. This will ensure that the 'Employee Name' field will display as the filter value.
        
@@ -218,7 +218,7 @@ To add a **Filter widget** to a dashboard:
 
 To edit a **Filter widget** on a dashboard:
 
-1. In the dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to view the page in [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode) (in which the **Widget menu**, **Settings** button ![Settings](/images/settings.png) and **Bin/Trash** button ![Bin trash button](/images/bin.png) are available).
+1. In the dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to view the page in [Dashboards Edit mode](/docs/platform/pages#dashboards-edit-mode) (in which the **Widget menu**, **Settings** button ![Settings](/images/settings.png) and **Bin/Trash** button ![Bin trash button](/images/bin.png) are available).
 
 2. Click on the Filter widget's **Update configuration** (Edit) button ![Dashboard update configuration button](/images/dashboard-update-configuration.jpg).
 
@@ -236,7 +236,7 @@ To edit a **Filter widget** on a dashboard:
 
 To move a **Filter widget** on a dashboard:
 
-1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboards Edit mode](/docs/platform/pages#dashboards-edit-mode).
 
 2. Select the widget's **drag handle** button ![Dashboard widget drag handle button](/images/dashboard-widget-draghandle.jpg). 
 
@@ -254,7 +254,7 @@ To move a **Filter widget** on a dashboard:
 
 To delete a **Filter widget** from your dashboard:
 
-1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboards Edit mode](/docs/platform/pages#dashboards-edit-mode).
 
 2. Click on the widget's **Remove widget** (Bin/Trash icon) button ![Bin icon](/images/binicon.png).
 
@@ -273,7 +273,7 @@ To delete a **Filter widget** from your dashboard:
 
 To update or edit your **Filter widget** settings:
 
-1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboards Edit mode](/docs/platform/pages#dashboards-edit-mode).
 
 2. Click on the **Update widget settings** (Cog) button ![Dashboard Update widget settings button](/images/cog-shared-process.jpg).
 
