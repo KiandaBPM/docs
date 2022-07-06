@@ -133,14 +133,14 @@ The options in the **Create dashboard page** dialog box include:
 
 ### How to edit a Dashboard page ###
 
-1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
+1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) to go into **Edit mode**. 
 1. Click on the **Settings** button ![Settings](/images/settings.png) - see [How to edit Dashboard page settings](#how-to-edit-dashboard-page-settings) for more details.
 1. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the top dashboard menu to save the changes to the page.
 
 
 ### How to delete a Dashboard page ###
 
-1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
+1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) to go into **Edit mode**. 
 
 2. Click on the **Trash/Bin** icon ![Bin](/images/bin.png).
 
@@ -160,7 +160,7 @@ A layout container is a simple way to organise, arrange and move the widgets you
 
 To add a layout container to a Dashboard:
 
-1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
+1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) to go into **Edit mode**. 
 
 2. Click the green **Add layout container** button ![Dashboard Add layout container button](/images/dashboard-add-layout-container.jpg) at the bottom right of the dashboard page.
 
@@ -170,7 +170,7 @@ To add a layout container to a Dashboard:
 
 **Note**: 
 
-- If you know the layout you want for your Dashboard, in terms of what widgets you want to put where and how large you want the various widgets to be, insert layout containers *before* you start adding widgets to your dashboard page. Then, when you insert each widget, you can choose which layout container you want to assign it to when you are creating the widget.
+- If you know the layout you want for your Dashboard, in terms of what widgets you want to put where, and how large you want the various widgets to be, insert layout containers *before* you start adding widgets to your dashboard page. Then, when you insert each widget, you can choose which layout container you want to assign it to when you are creating the widget.
 
 - Alternatively, if you aren't sure what widgets you are going to add or what layout you want for your dashboard, you can simply start adding widgets to your dashboard without any layout containers. Once you have added the widgets to the dashboard, you can either drag and drop the widgets to get the dashboard page layout you want or you can go back and insert layout containers and assign widgets to those containers but clicking on the **Update widget settings** button for each widget.
 
@@ -184,7 +184,7 @@ To add a layout container to a Dashboard:
 
 To add a widget to a Dashboard page:
 
-1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
+1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) to go into **Edit mode**. 
 
 2. If you know the layout you want for your Dashboard, click the green **Add layout container** button ![Dashboard Add layout container button](/images/dashboard-add-layout-container.jpg) to create a layout container or several layout containers. See [How to add layout containers to a Dashboard page](#how-to-add-layout-containers-to-a-dashboard-page).
 
@@ -217,7 +217,7 @@ To learn more about each widget type and how to add it to a dashboard, click on 
 
 - [**Link widget**](/docs/platform/pages/link/): The Link widget can be used to add a link to a new process, dashboard or any external sources (such as SharePoint or a website).
 
-- [**Walk through widget**](/docs/platform/pages/walkthrough/): The Walk-through widget allows you to create a walk-through of a process quickly which could be made available to a user, group or organisation.
+- [**Walk-through widget**](/docs/platform/pages/walkthrough/): The Walk-through widget allows you to create a walk-through of a process quickly which could be made available to a user, group or organisation.
 
 When you have added one or more dashboard widgets, you can move the widgets around the dashboard page using the **Drag handle** button. This is possible when you are in **Edit mode**, see [Edit mode and View mode](#edit-mode-and-view-mode).
 
@@ -230,7 +230,7 @@ When you have added one or more dashboard widgets, you can move the widgets arou
 
 To edit a Dashboard page:
 
-1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg)to go into **Edit mode**. 
+1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) to go into **Edit mode**. 
 2. Click on the **Settings** button ![Settings](/images/settings.png).
 3. An **Edit dashboard page** dialog box opens:
 
