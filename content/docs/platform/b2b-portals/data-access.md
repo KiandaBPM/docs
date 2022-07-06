@@ -17,11 +17,11 @@ B2B Portals are a means of connecting your clients to your Kianda subscription t
 
 To share data with B2B portal users, there are a number of steps involved starting with:
 
-a) [Creating users and groups](create-users-and-groups-for-the-B2B-portal) 
+a) [Creating users and groups](#create-users-and-groups-for-the-B2B-portal) 
 
-b) [Create dashboards to share](create-dashboards-to-share)
+b) [Create dashboards to share](#create-dashboards-to-share)
 
-c) [Create shared processes and attach dashboards to share](create-shared-processes-and-attach-dashboards-to-share)
+c) [Create shared processes and attach dashboards to share](#create-shared-processes-and-attach-dashboards-to-share)
 
 These steps are covered within the headings below. In addition you can manage [data access at a datasource level](data-access-at-a-datasource-level), click on the link to see more details. 
 
