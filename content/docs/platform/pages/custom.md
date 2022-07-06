@@ -29,7 +29,7 @@ To add a **Custom widget** to a Kianda dashboard:
 
    In this example, there are two custom dashboard widgets available - the 'Expenses dashboard' widget and 'Welcome Banner'. We will use the **Welcome Banner** custom widget for our example.
 
-   **Note**: **This eight type of dashboard widget will only be available to you if Custom dashboard widgets have been created by Administrators or Developers in your Kianda workspace**.
+   **Note**: **This eighth type of dashboard widget will only be available to you if Custom dashboard widgets have been created by Administrators or Developers in your Kianda workspace**.
 
 4. The **Add widget** dialog box opens with a range of options for your new **Custom dashboard widget**.
 
@@ -39,7 +39,7 @@ To add a **Custom widget** to a Kianda dashboard:
 
    - **Title** - You can insert the title you want for your **Custom dashboard widget** (by replacing the default title shown). In our example, we'll call it 'Welcome'.
 
-   - **Layout columns** - You can choose how wide you want your **Custom widget** to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example click half-way across the blue bar to create a widget that is 6 columns wide, or click to the very end of the bar to create a column that is 12 columns wide.
+   - **Layout columns** - You can choose how wide you want your **Custom widget** to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example, click half-way across the blue bar to create a widget that is 6 columns wide, or click to the very end of the bar to create a column that is 12 columns wide.
 
    - **Colour scheme** - You can choose from six colour options for the header of the widget (Navy, Green, Blue, Amber, Red or White), if you choose to display it.
 
@@ -159,7 +159,7 @@ To move a **Custom widget** on a dashboard page:
 
 To delete a **Custom dashboard widget** from your dashboard:
 
-1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboards Edit mode](/docs/platform/pages#dashboards-edit-mode).
 
 2. Click on the widget's **Remove widget** (Bin/Trash icon) button ![Bin icon](/images/binicon.png).
 
@@ -176,7 +176,7 @@ To delete a **Custom dashboard widget** from your dashboard:
 
 To update or edit your **Custom dashboard widget** settings:
 
-1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboard Edit mode](/docs/platform/pages#dashboards-edit-mode).
+1. On your dashboard, click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) in the top menu to go into [Dashboards Edit mode](/docs/platform/pages#dashboards-edit-mode).
 
 2. Click on the **Update widget settings** (Cog) button ![Dashboard Update widget settings button](/images/cog-shared-process.jpg).
 
