@@ -27,7 +27,7 @@ Kianda comes with a predefined set of data connectors, these include:
 
 Click on each of the links above to find out more about each data connector. 
 
-If you have a data source that is not on the list above, you can use SOAP or REST to easily connect to your data source, go to [link to SOAP and REST] for more information.
+If you have a data source that is not on the list above, you can use SOAP or REST to easily connect to your data source, go to [SOAP](/docs/platform/connectors/soap) or [REST](https://docs.kianda.com/docs/platform/connectors/rest/) for more information.
 
 
 
@@ -45,4 +45,3 @@ If you have a data source that is not on the list above, you can use SOAP or RES
 
 ![Connecting to on-premises SQL](https://app.kianda.com/Content/6ceb0eeb-bfb7-44a8-ad57-3df169286224/2929bafd-a863-48f8-985e-644bb48b7596.gif)
 
-## 

@@ -124,7 +124,7 @@ When a **process** is shared within the B2B portal, you may choose to include on
 
 8. If you choose to set conditions using the steps above, then in the **Edit conditions** dialog box, you can set conditions based on data source parameters, operators and form fields.
 
-   - The parameter on the left comes from the **data source**, for example for SharePoint, there are 18 possible values listed in [SharePoint parameters](#sharepoint-parameters/docs/platform/connectors/sharepoint/). See [Data sources](/docs/platform/connectors/) for information about other data connectors.
+   - The parameter on the left comes from the **data source**, for example for SharePoint, there are 18 possible values listed in [SharePoint parameters](/docs/platform/connectors/sharepoint/#sharepoint-parameters). See [Data sources](/docs/platform/connectors/) for information about other data connectors.
 
    ![Edit conditions dialog box in Security settings](/images/edit-conditions.jpg)
 
