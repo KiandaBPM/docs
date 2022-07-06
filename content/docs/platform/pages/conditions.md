@@ -11,13 +11,13 @@ Conditions can be applied to [Tile](/docs/platform/pages/tile/), [List](/docs/pl
 
 ## How to get started ##
 
-1. Make sure you in **Edit mode** on your dashboard page by clicking on the **Edit** button ![Edit button](/images/edit.png) in the top menu.
+1. Make sure you are in **Edit mode** on your dashboard page by clicking on the **Edit** button ![Edit button](/images/edit.png) in the top menu.
 
    ![Pen button in a widget](/images/penbutton_frame.png) 
 
 2. Click on the **Update configuration** or **Pen** button for any Tile, List or Chart widget.
 
-3. Click on the **Conditions** button ![Conditions button](/images/conditions.png)in the dialog box that opens.
+3. Click on the **Conditions** button ![Conditions button](/images/conditions.png) in the dialog box that opens.
 
 4. Click on **Add a conditions group** ![Add conditions button](/images/addconditions.png) button to add a condition.
 
@@ -25,7 +25,7 @@ Conditions can be applied to [Tile](/docs/platform/pages/tile/), [List](/docs/pl
 
    ![Edit conditions](/images/editconditions.png)
 
-   Click into the first empty field to choose a field to filter on, this can be a **Common field** or a **Design field** as found in a form. Click on the + symbol to drill down to the relevant fields to use. Click on a field to use, for example the Common field, 'Status'. If you want to replace the field with a different one, click on the ![X](/images/x.png) beside the field name.
+   Click into the first empty field to choose a field to filter on. This field can be a **Common field** or a **Design field** as found in a form. Click on the + symbol to drill down to the relevant fields to use. Click on a field to use, for example the Common field, 'Status'. If you want to replace the field with a different one, click on the ![X](/images/x.png) beside the field name.
 
 6. Click on the operator field and choose from a relevant operator to apply, for example **Equals**, **Contains**, **Is blank**, **Matches pattern** and so on. 
 
