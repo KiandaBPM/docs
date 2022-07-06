@@ -23,9 +23,11 @@ The instance has a unique ID which can be seen in a list widget in a **dashboard
 
 ***List widget in a dashboard showing process instances***
 
-```
+
 <!-- This is a test comment -->
-```
+
+
+
 
 ![Process instance example](/images/processinstance.jpg)
 
