@@ -4,50 +4,37 @@ weight: 4
 typora-root-url: ..\..\..\static
 ---
 
-*Note: If the Single-Sign-On is already enabled and if you wish to disable it. Try to clear the cache memory and* *login to* Kianda by entering *your password first and then the username.*  
+Single Sign-On(SSO) is an authentication process that allows a user to log in with a single ID to any of several related, yet independent, software systems. Single sign-on allows the user to log in one time and access services without re-entering authentication factors.
 
-Enabling Single-Sign-On allows the user to login via Single-Sign-On connector. This connector could be SharePoint, Office365 or anything else. To enable Single-Sign-On, please follow the below steps:
+On Kianda, Single-Sign-On allows the user to login via Single Sign-On connector. This connector for example could be SharePoint, Office365 or Salesforce. 
 
-1. Login to Kianda (the user must be of Admin role). 
+## How to get started
 
-2. Under the left navigation click on Administration => Subscription => Details. 
+To enable Single-Sign-On, follow the steps below:
 
-3. 'Enable Single-Sign-On’ to Yes. As shown below.
+1. Login to Kianda with an **Administrator** account.
 
-   ![Single Sign On configuration](/images/kianda-sso.jpg)
+2. From the left-hand side pane, click on **Administration** > **Subscription** > **Details**. 
 
-4. Select an SSO Provider from the list below.
+3. In the **Single Sign-On Details** page, beside **Enable Single Sign-On** click on **Yes** to enable Single Sign-On. If Single-Sign-On is already enabled and if you wish to disable it, click on **No** and then clear the cache memory and login to Kianda by entering your password first and then the username.
 
-## Integrate with Office 365
+   ![Enable Single Sign-On](/images/single-sign-on.jpg)
 
-![Office 365 connector settings](/images/IntegrateOffice365.PNG)
+4. Choose a **Single Sign-On Provider** by choosing **Office 365** or **SAML**.
 
-Kianda offers easy integration with Office 365. To set-up the office 365 data connector, please follow the steps below:
+   - If you choose **Office 365**, you must choose an **Office 365 Connector** from a dropdown list. This will show Office 365 datasources already created in the **Data sources** function under **Administration**. Go to [Office 365 data connector](/docs/platform/connectors/office-365/) to learn how to create a data source if one doesn't exist.
 
-1. Login to Kianda (the user must be of Admin role).
-2. Under the left navigation click on Administration => Data sources => Add new. 
-3. Select *Office 365* datasource.
-4. Click on *Authorize* and login to the Office 365 account.
-5. Now, select the options using the checkboxes.
-6. Click on *Save* and then *Test connection*.
+     ![Office 365 data connector](/images/office365-signon.jpg)
 
-## Sync with Active Directory
+   - If you choose **SAML 2.0**, you must provide the **SAML 2.0 Target URL**. This is the SAML 2.0 enabled Idp target URL which is redirected by the HTTP POST. 
+     - You can also provide the **SAML 2.0 Token Signing Certificate** **(.cer)** by clicking on **Browse** to navigate, find and add the cert, a .cer file to the details page.
 
-## User Management
+5. For **Auto redirect to SSO** choose from **No** or **Yes**. If you choose **Yes** then users cannot login with their Kianda username and password directly, and are automatically redirected to the configured SSO provider for authenticaion.
 
-Kianda provides an easy to create users and groups interface which could be synchronised with a data source of your choice. To create users or groups, please follow the steps below:
+   - However if you have an external set of users, for example contractor who need access to Kianda, you can set a **SSO bypass group.** You must define a group of users in advance using the [**Users**](/docs/platform/administration/users/) function under **Administration**. From here you can define a group of users that can login using Kianda's username and password. Use this option for users that are external for the configured SSO provider, so they can go directly to the workspace login page to login.
 
-1. Login to Kianda (the user must be of Admin role). 
+6. For the option **Default "Remember Me" to false** choose from **No** or **Yes**, to remember the login details. 
 
-2. Click on 'Users' in the left navigation.
+7. When you have completed your edits, click on **Save Changes** or click on **Back** at any time to exit the page without saving. 
 
-3. Click on 'Add User', a pop-up window appears as shown below to provide the details of the user.
-
-   ![Add user dialog](/images/kianda-create-user.JPG)
-
-4. Click on 'Add group', a pop-up window appears as shown below to provide the details of the group.
-
-   ![Add group dialog](/images/kianda-create-group.JPG)
-
-
-
+   
