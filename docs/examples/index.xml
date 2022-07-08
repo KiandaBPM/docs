@@ -9,8 +9,87 @@
 &lt;/ul>
 &lt;p>The result at the end of the process is an email to a designated Safety manager, who receives a PDF report of the inspection form.&lt;/p>
 &lt;p>The process will use &lt;strong>utility panels&lt;/strong> to hold form fields and values, not visible to the end user, but these will be used with rules to automate the process.&lt;/p>
-&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
+&lt;h2 id="creating-a-new-process">Creating a new process&lt;/h2>
 &lt;p>You can create an Inspection process if you have the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Designer&lt;/strong> by going to the left-hand side menu and click on &lt;strong>Administration&lt;/strong> and &lt;strong>Designer&lt;/strong>.&lt;/p>
 &lt;ol>
-&lt;li>&lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;li>
+&lt;p>When you are in process designer window, click on &lt;strong>Add new&lt;/strong> button to start a new process. This button can be found at the top of the screen.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add new process&lt;/strong> window will open with the following fields to fill out:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> - represents the name of your process which is also the display name for other users.&lt;/li>
+&lt;li>&lt;strong>ID (unique)&lt;/strong> - A unique ID which is used to identify your process.&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong> - Piece of text to describe your new process.&lt;/li>
+&lt;li>&lt;strong>Group&lt;/strong> - A group which you want your new process to belong to.
+&lt;ul>
+&lt;li>If a group already exist, it will simply add your new process to that group. If the group does not exist, it will make a folder for you and automatically add the process to that group.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Administrators&lt;/strong> - In this field you can choose to add &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong> to be administrators of the new process. This field determines who can edit and make changes to your process.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-new-process.jpg" alt="Add new process window">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>After you fill out the information needed, press &lt;strong>OK&lt;/strong>. You will be automatically brought into a &lt;strong>blank&lt;/strong> process creation page, which looks as follow:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-process-creation-page.jpg" alt="Process creation page">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="creating-forms">Creating forms&lt;/h2>
+&lt;p>For this &lt;strong>Inspection process&lt;/strong> we will create two different forms.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Request form&lt;/strong> which will be used to request an inspection&lt;/li>
+&lt;li>&lt;strong>Inspection form&lt;/strong> which will be used by an engineer to complete the inspection.&lt;/li>
+&lt;/ul>
+&lt;h3 id="request-form">Request Form&lt;/h3>
+&lt;h4 id="form-settings">Form Settings&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>From the process creation page, click on &lt;strong>form 1&lt;/strong> to select the form. This can be found at the top of your screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-form-select.jpg" alt="Form selection">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> on the selected form to edit it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>An &lt;strong>Edit form&lt;/strong> box will appear on your screen. There are 8 different fields we need to fill in.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> - Name to represent this form. In our case we will call it &lt;strong>Request Form&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Name (unique)&lt;/strong> - A unique identifier for our form. You can give this any name you would like as long as it&amp;rsquo;s unique.&lt;/li>
+&lt;li>&lt;strong>Default owner(s)&lt;/strong> - This field identifies which users can fill out our form when it&amp;rsquo;s complete. In our case we will choose from &lt;strong>Groups&lt;/strong> and choose our &lt;strong>Management Team&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Activate with&lt;/strong> - We can avoid this field. We will cover this in later use cases.&lt;/li>
+&lt;li>&lt;strong>Submit mode&lt;/strong> - From the two radio button options, we will choose &lt;strong>Only this form&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Form icon&lt;/strong> - Dropdown field to select an icon for the form. We will leave this field blank.&lt;/li>
+&lt;li>&lt;strong>Form theme&lt;/strong> - This option is used to change the colour of our form tile. We will change it to &lt;strong>Green&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Enable quick actions&lt;/strong> - A check box which allows us to enable or disable different actions to our form. We will keep it simple and leave this box unchecked.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-request-form-edit-box.jpg" alt="Edit form box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Now that we edited our &lt;strong>Request form&lt;/strong> to our needs, we can press &lt;strong>OK&lt;/strong> which will bring us back to the process creation page.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="form-layout">Form Layout&lt;/h4>
+&lt;p>For our &lt;strong>Request form&lt;/strong> we will need a couple of fields which will be used to make a request for an inspection:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Company&lt;/strong> - Which company we need the inspection to be completed in.&lt;/li>
+&lt;li>&lt;strong>Location&lt;/strong> - What location of that company we need to go to.&lt;/li>
+&lt;li>&lt;strong>Engineer&lt;/strong> - Assign an engineer to complete the inspection.&lt;/li>
+&lt;li>&lt;strong>Safety Manager&lt;/strong> - Assign a safety manager which will receive a completed &lt;strong>Inspection form&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Status&lt;/strong> - Field representing the status of the process. For example the status can be &lt;strong>Open&lt;/strong> or &lt;strong>Completed&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="creating-fields">Creating Fields&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Company&lt;/strong>&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/company-field.gif"/>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="inspection-form">Inspection Form&lt;/h3>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Section under construction.&lt;/p>
+&lt;/div>
+&lt;h2 id="dashboard">Dashboard&lt;/h2>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Section under construction.&lt;/p>
+&lt;/div></description></item></channel></rss>
