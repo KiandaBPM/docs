@@ -1982,7 +1982,54 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>To read more about User and group management, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.&lt;/p>
 &lt;p>To read more about Dashboards, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p>
 &lt;p>To read more about Conditions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
-&lt;p>To read more about data source parameters, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Connectors&lt;/a> and from there navigate to the different predefined data connectors.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
+&lt;p>To read more about data source parameters, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Connectors&lt;/a> and from there navigate to the different predefined data connectors.&lt;/p></description></item><item><title>Docs: SSO copy</title><link>https://docs.kianda.com/docs/security/sso-copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/sso-copy/</guid><description>
+&lt;p>&lt;em>Note: If the Single-Sign-On is already enabled and if you wish to disable it. Try to clear the cache memory and&lt;/em> &lt;em>login to&lt;/em> Kianda by entering &lt;em>your password first and then the username.&lt;/em>&lt;/p>
+&lt;p>Enabling Single-Sign-On allows the user to login via Single-Sign-On connector. This connector could be SharePoint, Office365 or anything else. To enable Single-Sign-On, please follow the below steps:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Login to Kianda (the user must be of Admin role).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the left navigation click on Administration =&amp;gt; Subscription =&amp;gt; Details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&amp;lsquo;Enable Single-Sign-On’ to Yes. As shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/kianda-sso.jpg" alt="Single Sign On configuration">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select an SSO Provider from the list below.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="integrate-with-office-365">Integrate with Office 365&lt;/h2>
+&lt;p>&lt;img src="https://docs.kianda.com/images/IntegrateOffice365.PNG" alt="Office 365 connector settings">&lt;/p>
+&lt;p>Kianda offers easy integration with Office 365. To set-up the office 365 data connector, please follow the steps below:&lt;/p>
+&lt;ol>
+&lt;li>Login to Kianda (the user must be of Admin role).&lt;/li>
+&lt;li>Under the left navigation click on Administration =&amp;gt; Data sources =&amp;gt; Add new.&lt;/li>
+&lt;li>Select &lt;em>Office 365&lt;/em> datasource.&lt;/li>
+&lt;li>Click on &lt;em>Authorize&lt;/em> and login to the Office 365 account.&lt;/li>
+&lt;li>Now, select the options using the checkboxes.&lt;/li>
+&lt;li>Click on &lt;em>Save&lt;/em> and then &lt;em>Test connection&lt;/em>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="sync-with-active-directory">Sync with Active Directory&lt;/h2>
+&lt;h2 id="user-management">User Management&lt;/h2>
+&lt;p>Kianda provides an easy to create users and groups interface which could be synchronised with a data source of your choice. To create users or groups, please follow the steps below:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Login to Kianda (the user must be of Admin role).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &amp;lsquo;Users&amp;rsquo; in the left navigation.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &amp;lsquo;Add User&amp;rsquo;, a pop-up window appears as shown below to provide the details of the user.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/kianda-create-user.JPG" alt="Add user dialog">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &amp;lsquo;Add group&amp;rsquo;, a pop-up window appears as shown below to provide the details of the group.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/kianda-create-group.JPG" alt="Add group dialog">&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Success/Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As an &lt;strong>administrator&lt;/strong> or &lt;strong>designer&lt;/strong>, you can use Kianda &lt;strong>Designer&lt;/strong> to populate fields within the Kianda form, in the &lt;strong>Edit rule&lt;/strong> dialog box and set parameters for success and error mapping.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
@@ -2346,51 +2393,47 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Single Sign On (SSO)</title><link>https://docs.kianda.com/docs/security/sso/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/sso/</guid><description>
-&lt;p>&lt;em>Note: If the Single-Sign-On is already enabled and if you wish to disable it. Try to clear the cache memory and&lt;/em> &lt;em>login to&lt;/em> Kianda by entering &lt;em>your password first and then the username.&lt;/em>&lt;/p>
-&lt;p>Enabling Single-Sign-On allows the user to login via Single-Sign-On connector. This connector could be SharePoint, Office365 or anything else. To enable Single-Sign-On, please follow the below steps:&lt;/p>
+&lt;p>Single Sign-On(SSO) is an authentication process that allows a user to log in with a single ID to any of several related, yet independent, software systems. Single sign-on allows the user to log in one time and access services without re-entering authentication factors.&lt;/p>
+&lt;p>On Kianda, Single-Sign-On allows the user to login via Single Sign-On connector. This connector for example could be SharePoint, Office365 or Salesforce.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To enable Single-Sign-On, follow the steps below:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Login to Kianda (the user must be of Admin role).&lt;/p>
+&lt;p>Login to Kianda with an &lt;strong>Administrator&lt;/strong> account.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under the left navigation click on Administration =&amp;gt; Subscription =&amp;gt; Details.&lt;/p>
+&lt;p>From the left-hand side pane, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Details&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&amp;lsquo;Enable Single-Sign-On’ to Yes. As shown below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/kianda-sso.jpg" alt="Single Sign On configuration">&lt;/p>
+&lt;p>In the &lt;strong>Single Sign-On Details&lt;/strong> page, beside &lt;strong>Enable Single Sign-On&lt;/strong> click on &lt;strong>Yes&lt;/strong> to enable Single Sign-On. If Single-Sign-On is already enabled and if you wish to disable it, click on &lt;strong>No&lt;/strong> and then clear the cache memory and login to Kianda by entering your password first and then the username.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/single-sign-on.jpg" alt="Enable Single Sign-On">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Select an SSO Provider from the list below.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="integrate-with-office-365">Integrate with Office 365&lt;/h2>
-&lt;p>&lt;img src="https://docs.kianda.com/images/IntegrateOffice365.PNG" alt="Office 365 connector settings">&lt;/p>
-&lt;p>Kianda offers easy integration with Office 365. To set-up the office 365 data connector, please follow the steps below:&lt;/p>
-&lt;ol>
-&lt;li>Login to Kianda (the user must be of Admin role).&lt;/li>
-&lt;li>Under the left navigation click on Administration =&amp;gt; Data sources =&amp;gt; Add new.&lt;/li>
-&lt;li>Select &lt;em>Office 365&lt;/em> datasource.&lt;/li>
-&lt;li>Click on &lt;em>Authorize&lt;/em> and login to the Office 365 account.&lt;/li>
-&lt;li>Now, select the options using the checkboxes.&lt;/li>
-&lt;li>Click on &lt;em>Save&lt;/em> and then &lt;em>Test connection&lt;/em>.&lt;/li>
-&lt;/ol>
-&lt;h2 id="sync-with-active-directory">Sync with Active Directory&lt;/h2>
-&lt;h2 id="user-management">User Management&lt;/h2>
-&lt;p>Kianda provides an easy to create users and groups interface which could be synchronised with a data source of your choice. To create users or groups, please follow the steps below:&lt;/p>
-&lt;ol>
+&lt;p>Choose a &lt;strong>Single Sign-On Provider&lt;/strong> by choosing &lt;strong>Office 365&lt;/strong> or &lt;strong>SAML&lt;/strong>.&lt;/p>
+&lt;ul>
 &lt;li>
-&lt;p>Login to Kianda (the user must be of Admin role).&lt;/p>
+&lt;p>If you choose &lt;strong>Office 365&lt;/strong>, you must choose an &lt;strong>Office 365 Connector&lt;/strong> from a dropdown list. This will show Office 365 datasources already created in the &lt;strong>Data sources&lt;/strong> function under &lt;strong>Administration&lt;/strong>. Go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/office-365/">Office 365 data connector&lt;/a> to learn how to create a data source if one doesn&amp;rsquo;t exist.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/office365-signon.jpg" alt="Office 365 data connector">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &amp;lsquo;Users&amp;rsquo; in the left navigation.&lt;/p>
+&lt;p>If you choose &lt;strong>SAML 2.0&lt;/strong>, you must provide the &lt;strong>SAML 2.0 Target URL&lt;/strong>. This is the SAML 2.0 enabled Idp target URL which is redirected by the HTTP POST.&lt;/p>
+&lt;ul>
+&lt;li>You can also provide the &lt;strong>SAML 2.0 Token Signing Certificate&lt;/strong> &lt;strong>(.cer)&lt;/strong> by clicking on &lt;strong>Browse&lt;/strong> to navigate, find and add the cert, a .cer file to the details page.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &amp;lsquo;Add User&amp;rsquo;, a pop-up window appears as shown below to provide the details of the user.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/kianda-create-user.JPG" alt="Add user dialog">&lt;/p>
+&lt;p>For &lt;strong>Auto redirect to SSO&lt;/strong> choose from &lt;strong>No&lt;/strong> or &lt;strong>Yes&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> then users cannot login with their Kianda username and password directly, and are automatically redirected to the configured SSO provider for authenticaion.&lt;/p>
+&lt;ul>
+&lt;li>However if you have an external set of users, for example contractor who need access to Kianda, you can set a &lt;strong>SSO bypass group.&lt;/strong> You must define a group of users in advance using the &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">&lt;strong>Users&lt;/strong>&lt;/a> function under &lt;strong>Administration&lt;/strong>. From here you can define a group of users that can login using Kianda&amp;rsquo;s username and password. Use this option for users that are external for the configured SSO provider, so they can go directly to the workspace login page to login.&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &amp;lsquo;Add group&amp;rsquo;, a pop-up window appears as shown below to provide the details of the group.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/kianda-create-group.JPG" alt="Add group dialog">&lt;/p>
+&lt;p>For the option &lt;strong>Default &amp;ldquo;Remember Me&amp;rdquo; to false&lt;/strong> choose from &lt;strong>No&lt;/strong> or &lt;strong>Yes&lt;/strong>, to remember the login details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you have completed your edits, click on &lt;strong>Save Changes&lt;/strong> or click on &lt;strong>Back&lt;/strong> at any time to exit the page without saving.&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>Docs: Data residency</title><link>https://docs.kianda.com/docs/security/data-residency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/data-residency/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
@@ -2676,162 +2719,4 @@ Your browser does not support the video tag.
 &lt;/ul></description></item><item><title>Docs: Global CSS file</title><link>https://docs.kianda.com/docs/low-code/global-css-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-css-file/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Text box control</title><link>https://docs.kianda.com/docs/platform/controls/input/textbox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/textbox/</guid><description>
-&lt;p>The &lt;strong>Text box control&lt;/strong> can be used if you want a user to manually input text into a form. For example, in a Training Request form, you may want the user to insert their first name and surname and may want those fields to be mandatory for the user to complete.&lt;/p>
-&lt;p>There are various options available when creating a Text box field, such as formatting it to allow multiple lines of text, to contain a password (text input is not shown) or to autofill with saved information such as the user&amp;rsquo;s address or email. More advanced options include applying a rule or expression to a Text box field - for more information, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>To add a &lt;strong>Text box&lt;/strong> field to a form, first open the relevant process.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Text box&lt;/strong>.&lt;/p>
-&lt;p>A Text box field will be added to your form with the default title of &amp;lsquo;&amp;rsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;&amp;rsquo; and a pop-up message will say &amp;lsquo;Field added&amp;rsquo;.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-inserted.jpg" alt="Text box inserted">&lt;/p>
-&lt;p>In the example shown here, a Text box field has been added to a form called &amp;lsquo;Training Request&amp;rsquo; in a process called &amp;lsquo;Training Process&amp;rsquo;, as the first step in adding two Text box fields (which will be used to capture the first name and surname of the user who is completing the form).&lt;/p>
-&lt;p>You can also place a Text box within an element - such as within a panel in a form. In the example above, the Text box was inserted outside the panel in the form. If you wanted to insert it &lt;em>within&lt;/em> the panel, simply select the panel itself by clicking on its drag handle &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag Handle icon"> and then click on &lt;strong>Controls&amp;gt;Input&amp;gt;Text box&lt;/strong> - this will result in the new Text box being added inside the panel, as shown here:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-inside-panel.jpg" alt="Text box inside a panel">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="how-to-edit-move-and-delete-text-box-fields">How to edit, move and delete Text box fields&lt;/h3>
-&lt;p>As we go through the options available for editing a Text box, we will keep in mind the example of adding two text boxes to the &amp;lsquo;Training Request&amp;rsquo; form to capture a user&amp;rsquo;s first name and surname.&lt;/p>
-&lt;h4 id="how-to-edit-a-text-box-field">How to edit a Text box field&lt;/h4>
-&lt;p>To edit a &lt;strong>Text box field&lt;/strong>:&lt;/p>
-&lt;ol>
-&lt;li>Select the Text box (by either clicking on its title or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
-&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-edit-button.jpg" alt="Select text box edit button">&lt;/p>
-&lt;p>The &lt;strong>Edit field - Text&lt;/strong> dialog box will open, enabling you to choose from a range of options:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-edit-dialog.jpg" alt="Edit table field dialog box">&lt;/p>
-&lt;p>The options within the &lt;strong>Edit field - Text box&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the Text box from the default &amp;lsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;. In our example, we could change the name of the first Text box to &amp;lsquo;First Name&amp;rsquo; and the second Text box to &amp;lsquo;Surname&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Name (unique)&lt;/strong> - this is a unique name for the Text box field&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Help text&lt;/strong> - you can insert text to help the form user to complete the Table. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-help-text.jpg" alt="Table help text example">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Mode&lt;/strong> - you can decide whether your Text box is limited to a &lt;strong>Single line of text&lt;/strong> or will allow for &lt;strong>Multiple lines of text&lt;/strong> or can choose &lt;strong>Rich text&lt;/strong>. Different additional options will then be shown, depending on the Mode you have chosen.&lt;/p>
-&lt;p>If you choose &amp;lsquo;&lt;strong>Single line of text&lt;/strong>&amp;rsquo; as the Mode for your Text box - as in the example shown above - these additional options will be shown:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Max length&lt;/strong> - choose the maximum number of characters for the text inserted in your Text box by either typing in a number or by clicking the up/down arrow buttons &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up down arrow buttons"> at the right side of the blank field beneath it&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Text style&lt;/strong> - choose &lt;strong>Normal&lt;/strong>, &lt;strong>Capitalise&lt;/strong>, &lt;strong>Uppercase&lt;/strong> or &lt;strong>Lowercase&lt;/strong>, depending on how you want the text input in the Text box to appear&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Control type&lt;/strong> - choose either &lt;strong>Text&lt;/strong> or &lt;strong>Password&lt;/strong>. If you choose Password, then the text input by the user in the Text box will not be visible:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-password.jpg" alt="Text box formatted as a password">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Autofill type&lt;/strong> - you can choose between &lt;strong>Default&lt;/strong>, &lt;strong>Off&lt;/strong>, &lt;strong>Password&lt;/strong>, &lt;strong>Address&lt;/strong>, &lt;strong>Email&lt;/strong> and &lt;strong>Phone&lt;/strong>. If, for example, you select Address, this means that when the user is completing this Text box field, it will automatically populate with the user&amp;rsquo;s saved address information (if the user has that saved information on their PC or mobile phone).&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Placeholder&lt;/strong> - you can insert placeholder text to appear in the Text box field to assist the user. For example, this Text box field titled &amp;lsquo;Address 1&amp;rsquo; has placeholder text:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-placeholder.jpg" alt="Example of Text box placeholder text">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>If you choose &amp;lsquo;&lt;strong>Multiple lines of text&lt;/strong>&amp;rsquo; as the Mode for your Text box, these additional options will be shown:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-multiple-lines-options.jpg" alt="Text box multiple lines of text options">&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Rows&lt;/strong> - you can decide how many rows of text you want your Text box to have. Either manually type in a number or use the up/down arrows &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up down arrow buttons"> on the right-side of the field&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Max length&lt;/strong> - you can set a maximum number of characters for the Text box&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Text style&lt;/strong> - choose from &lt;strong>Normal&lt;/strong>, &lt;strong>Capitalise&lt;/strong>, &lt;strong>Uppercase&lt;/strong> or &lt;strong>Lowercase&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Placeholder&lt;/strong> - you can insert placeholder text to appear in the Text box field to assist the user.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>If you choose &amp;lsquo;&lt;strong>Rich text&lt;/strong>&amp;rsquo; as the Mode for your Text box, you will have the additional options of setting a &lt;strong>Max length&lt;/strong> (maximum number of characters that can be input in the field) and choosing a &lt;strong>Text style&lt;/strong>, as shown here:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-richtext-options.jpg" alt="Text box Rich text options">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Expression&lt;/strong> - If you want to use your Text box field in a way that is more dynamic, you could decide to add an expression to it. For example, an Expression can be used to return a value - if you apply the Expression &amp;lsquo;&lt;strong>Date()&lt;/strong>&amp;rsquo; to your Text box field, it will return the current date and time.&lt;/p>
-&lt;p>To add an Expression to your Text box field, click on the ellipsis button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button in the Expression box"> to the right. This will open the &lt;strong>Expression builder&lt;/strong> dialog box:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/expression-builder.jpg" alt="Expression builder dialog box">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>You can click on the &lt;strong>Reference&lt;/strong> button &lt;img src="https://docs.kianda.com/images/reference.png" alt="Reference button in the Expression builder dialog box"> to see some of the most commonly used Expressions. To learn more about using Expressions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
-&lt;ol start="3">
-&lt;li>Make whatever changes you want to make to the Text box field in the &lt;strong>Edit field - Text box&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
-&lt;/ol>
-&lt;h4 id="how-to-move-text-box-fields">How to move Text box fields&lt;/h4>
-&lt;p>To move a &lt;strong>Text box&lt;/strong> within your form:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Drag and drop the field wherever you want to move it to.&lt;/p>
-&lt;p>In our example, the two new Text boxes titled &amp;lsquo;First Name&amp;rsquo; and &amp;lsquo;Surname&amp;rsquo; can be moved from the bottom of the form to the top:&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-move.jpg" alt="Table field drag handle">&lt;/p>
-&lt;h4 id="how-to-delete-text-box-fields">How to delete Text box fields&lt;/h4>
-&lt;p>To delete a &lt;strong>Text box field&lt;/strong> from your form:&lt;/p>
-&lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm (or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion).&lt;/li>
-&lt;/ol>
-&lt;h3 id="how-to-edit-text-box-field-properties">How to edit Text box field properties&lt;/h3>
-&lt;p>To view or edit the field properties associated with a &lt;strong>Text box field&lt;/strong>, select the field (by clicking on its title or its drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-properties.jpg" alt="Field properties">&lt;/p>
-&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Text box field&lt;/strong> titled &amp;lsquo;First Name&amp;rsquo; are shown here and include:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Text box&lt;/strong> field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;First Name&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the Text box field title will be shown in the form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Required&lt;/strong> - If this is selected, the Text box field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Visible&lt;/strong> - If this is selected, the Text box field will be visible in the form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Text box field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
-&lt;p>You can check how the Text box will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">. Our simple example of the &amp;lsquo;First Name&amp;rsquo; and &amp;lsquo;Surname&amp;rsquo; fields in a Training Request form could look like this when viewed on a user&amp;rsquo;s mobile phone:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-preview-mobile.jpg" alt="Sample table in preview">&lt;/p>
-&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
-&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Text box control&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>
