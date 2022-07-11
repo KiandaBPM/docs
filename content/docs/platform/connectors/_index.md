@@ -1,6 +1,7 @@
 ---
 title: "Data connectors"
 linkTitle: "Data connectors"
+weight: 6
 typora-root-url: ..\..\..\..\static
 ---
 

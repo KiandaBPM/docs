@@ -4,7 +4,10 @@ weight: 2
 typora-root-url: ..\..\..\static
 ---
 
-#  The Kianda Platform
+## What is Kianda ##
+
+Kianda is the most flexible no-code / low-code platform that you can use to create digital business processes. You can use the easy to use Kianda **Designer** to create forms to look and work the way you want. Choose from 18 predefined field types and 60 rules to create your forms within your processes. And if you don't like those, use the no-code part of the platform to create customised field and rule widgets. Then monitor process execution in a dashboard using seven widget types, from lists to chart, or create your own dashboard widget using Kianda **Developer**. 
+
 ## How does Kianda work
 
 The Kianda platform no-code / low-code (NCLC) platform is created with the ultimate flexibility and agility in mind, allowing simple user interactions to build complex processes.
@@ -18,8 +21,8 @@ Kianda has been constructed using an **Model, View, Controller (MVC) approach** 
 
 The MVC approach enables user or system-supplied data captured through fields within forms, to react or trigger defined rules associated with fields, forms or processes, via the **rules engine**. 
 
-### The **rules-engine** is made of:
-
+### The Kianda **rules-engine**
+The Kianda rules engine consists of:
 1. Rule blocks - these are blocks that unlock specific functionality using a toolkit approach
 2. Flexible and declarative conditional logic 
 
@@ -39,13 +42,13 @@ In summary the Kianda platform provides an ideal interface for rapid prototyping
 
 ## What does Kianda look like
 
-The Kianda user interface is designed to be responsive and intuitive, allowing you to easily create and control your business processes.  The Kianda **Workspace** gives you to ability to manage all your processes and view real-time data presented in dashboards, to guide your business decisions.
+The Kianda user interface or **workspace** is designed to be responsive and intuitive, allowing you to easily create and control your business processes.  Your Kianda **workspace** gives you to ability to manage all your processes and view real-time data presented in dashboards, to guide your business decisions.
 
-You can find out more about the Kianda workspace below or go straight to [Getting started with Kianda processes](platform/process.md) to create your first process.
+You can find out more about the Kianda workspace below or go straight to [Welcome to Kianda](/docs/getting-started/welcome/) to learn how to login, and get started with creating your first process.
 
 ![User interface](/images/userinterface2.png)
 
-The layout of the user interface is as follows:
+When you login the layout of the user interface is as follows:
 
 1. **Company logo** - the top left-hand corner is reserved uploading your company logos. If you click on the **Collapse navigation** button ![Collapse navigation button](/images/navigation_frame.png) you will see the collapsed version of the company logo and collapsed side menu, giving you more real estate in the central view panel.
 
@@ -91,10 +94,9 @@ The layout of the user interface is as follows:
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-The next steps are: 
+The links below will guide you through the main features of the platform. Let's start your Kianda journey! 
 
-- [**Administration**](/platform/administration/)
-- [**Application designer**](/platform/application-designer/)
+![Kianda documentation journey](/images/kianda-journey.jpg)
 
 
 

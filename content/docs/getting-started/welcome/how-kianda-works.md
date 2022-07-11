@@ -1,5 +1,5 @@
 ---
-title: "How does Kianda work"
+title: "How does Kianda work?"
 weight: 1
 typora-root-url: ..\..\..\..\static
 ---

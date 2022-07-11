@@ -37,13 +37,7 @@ The flexible nature of Kianda allows custom-coding and no-coding development, pr
 
 ### **If you are ready to discover more about Kianda, let's get started**  ![Idea icon](/images/18.png) 
 
-#### To learn how to start using Kianda, go to:
-
-- [**Logging in**](/docs/getting-started/logging-in/)
-
-
-
-### What's next  ![Idea icon](/images/18.png) ###
+To learn how to start using Kianda go to [**Logging in**](/docs/getting-started/logging-in/).
 
 If you want to use Kianda for no-code development, then follow these simple steps:
 
@@ -54,6 +48,8 @@ If you want to use Kianda for no-code development, then follow these simple step
 ![3](/images/three.png)  [**Publish your process**](/docs/getting-started/create-first-process/publish-your-process/)
 
 
+
+Alternatively click on the links below to find out more about Kianda:
 
 
 

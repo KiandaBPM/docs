@@ -1,5 +1,5 @@
 ---
-title: "General"
+title: "General rule concepts"
 weight: 1
 typora-root-url: ..\..\..\..\..\static
 ---
@@ -9,7 +9,7 @@ typora-root-url: ..\..\..\..\..\static
 Rules are an important component of any process as they can be used to trigger automated actions, requiring minimal user management once created. There are 60 predefined rules in Kianda covering workflow applications, communications and file management to name a few.
 
 
-# Categories of rules
+## Categories of rules
 
 - **Workflow** - Enables you to execute actions that might change the flow of the information within a process. 
 
@@ -31,9 +31,9 @@ Rules are an important component of any process as they can be used to trigger a
 
   
 
-# Working with rules
+## Working with rules
 
-## When to add a rule
+### When to add a rule
 
 - [x] to a field
 
@@ -41,13 +41,12 @@ Rules are an important component of any process as they can be used to trigger a
 
 - [x] to a process (the rule will run on load)
 
-  
 
-## How to view a rule
+### How to view a rule
 
 To view existing rules:
 
-1. Select the field that contains a rule, for example a button at the end of a form, or a field within a form which if it has rules attached will be indicated as having rules within the form, as shown in the example below.
+1. Select the field or form that contains a rule, for example a button at the end of a form. If a field within a form which rules attached this will be indicated within the form, as shown in the example below where the column **Instances** has **1 rule** attached.
 
    ![Rule attached to a form field](/images/rule-on-a-field.jpg)
 
@@ -55,12 +54,16 @@ To view existing rules:
 
    ![View rule details](/images/view-rule.jpg)
 
-3. Details of the rule are available in the **Edit rule** dialog box,
-   ![Rule details](/images/rule-details-example.jpg)
+3. Details of the rule are available in the **Edit rule** dialog box, for example the **Set form field** rule is shown below.  
+   ![Rule details](/images/rule-details-examples.jpg)
 
-   
+You can view rule conditions by clicking on **Edit conditions** and actions to be performed as part of the 		rule are under **Action**. Other features to note in the dialog box are:
 
-## How to add a rule
+- Expression button ![Expression button](/images/expression-button.jpg)
+
+
+
+### How to add a rule
 
 To add a rule to a specific component:
 
@@ -70,9 +73,10 @@ To add a rule to a specific component:
 
 3. Edit the **rule dialog box** and click '**OK**'. The rule will be displayed on the right-hand side of the page.
 
-   
 
-## How to copy a rule
+
+### How to copy a rule
+
 Duplicating rules can be very useful where you have similar rules that are associated with different fields. To duplicate a rule:
 
 1. Select the field with the desired rule.
@@ -83,9 +87,9 @@ Duplicating rules can be very useful where you have similar rules that are assoc
 
 4. Alternatively select **OK** without copying to another field or click on **Close** at any time to exit the dialog box.
 
-   
 
-## How to edit a rule
+
+### How to edit a rule
 
 Follow the steps to [View an existing rule](#how-to-view-a-rule) to open the **Edit rule** dialog box.
 
@@ -97,9 +101,9 @@ In the Edit rule dialog box, you can change:
 
 
 
-## How to disable a rule
+### How to disable a rule
 
-Disabiling a rule means that the rule is not active but is still visible in the **Rules** pane. The rule can be activated at any time again by clicking on the toggle button.
+Disabling a rule means that the rule is not active but is still visible in the **Rules** pane. The rule can be activated at any time again by clicking on the toggle button.
 
 1. Select the field that contains a rule, for example a button at the end of a form, or a field within a form which if it has rules attached.
 
@@ -113,7 +117,7 @@ Disabiling a rule means that the rule is not active but is still visible in the 
 
 
 
-## Where to place a rule in a list of rules
+### Where to place a rule in a list of rules
 
 The rule order refers to the order of execution of multiple rules. To change the rule order:
 
@@ -123,8 +127,8 @@ The rule order refers to the order of execution of multiple rules. To change the
 
 3. The top-most rule is the first rule to be executed. By default buttons at the end of a form will automatically have **Submit**, **Save**, and **Close** rules. If you create rules you may wish to have these rules placed **above** these shutdown rules so that your rules are executed first before form shutdown.
 
-   Note: If there is a Condition, then the fields must be set before it is run
-   For example an order of rules on a **Submit** button could be: Set Status, Send Email, Submit, Save, Close, whereby the status of the process instance is set first, before an automated email and then the form shutdown rules occur.
+   **Note:** Rule order becomes important when the output of one rule impacts the execution of another, for example if a process remains 'open' because a user must perform a particular action, then it is useful to have an automated email reminder sent to the user while the process is open. For example 
+   the order of rules on a **Submit** button could be: Set Status, Send Email, Submit, Save, Close, whereby the status of the process instance is set first, before an automated email and then the form shutdown rules of Submit, Save and Close occur.
 
    To read more about multiple rules, go to [Multiple rules](/docs/platform/rules/general/multiple-rules/).
    
@@ -132,16 +136,16 @@ The rule order refers to the order of execution of multiple rules. To change the
 
 ## Conditions
 
-Flexible and dynamic conditions form an important component to make forms fully dynamic. It enables you  to create natural language conditions when rules should be triggered.
+Flexible and dynamic conditions form an important component to make forms fully dynamic. This feature enables you to create natural language conditions when rules should be triggered.
 
 ![Condition Editor](/images/condition-editor.png)
 
+To configure a rule to conditionally execute an action:
 
-
-To configure a rule to conditionally execute an action, follow the steps in [How to view a rule](#how-to-view-a-rule) to open the **Edit rule** dialog box:
-
-1. Click on **Edit conditions** button within the rule.
-2. Add the conditions that satisfy your scenario. Multiple conditions can be grouped with condition groups.
+1. Select the field or form that the rule will be attached to. 
+2. Under **Add a rule** in the left-hand pane, click on a **category** of rules, for example **Workflow** and then a rule itself, for example **Process security**.
+3. Click on **Edit conditions** button within the rule.
+4. Add the conditions that satisfy your scenario. Multiple conditions can be grouped with condition groups.
 
 For more information on Conditions, go to the [Conditions](/docs/platform/rules/general/add-conditions/) page.
 

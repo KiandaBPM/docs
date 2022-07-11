@@ -1,5 +1,6 @@
 ---
 title: "Dashboard pages"
+weight: 5
 typora-root-url: ..\..\..\..\static
 ---
 

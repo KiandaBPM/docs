@@ -49,12 +49,15 @@ There are 10 categories of rules:
 
 ## Rule order ###
 
-If there is more than 1 rule for an item like a field or button, then the order of execution must be considered. 
+If there is more than one rule for an item like a field or button, then the order of execution must be considered. 
 
-For example for a Submit button on a form I may want my **Send email rule** to be executed first before any other rule is executed. To do this click on the **Submit** button to make sure you are in **Edit** mode, and under **Rules** in the right-hand pane,  drag the **Send email** rule to the top of the list by clicking on the rule and dragging it to the top.
+For example for a **Submit** button on a form, you may want a **Send email rule** to be executed first before any other rule is executed, that is an automated email will be sent before anything else. To ensure this happens, click on the **Submit** button to make sure you are in **Edit** mode, and under **Rules** in the right-hand pane,  drag the **Send email** rule to the top of the list by clicking on the rule and dragging it to the top of the list of rules.
 
 <img src="/images/ruleorder.png" alt="Rule order" style="zoom:70%;" />
-Go to [Multiple rules](/docs/platform/rules/general/multiple-rules/) to read more about using mutiple rules on a field or other item.
+
+
+
+Go to [Multiple rules](/docs/platform/rules/general/multiple-rules/) to read more about using multiple rules on a field or other item.
 
 
 
