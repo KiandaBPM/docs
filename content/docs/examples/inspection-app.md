@@ -172,12 +172,46 @@ The location field is a cascading dropdown selection which corresponds to the **
 
 ##### ***Engineer*** - User picker input.
 
+<br>
+
+<img src="/videos/gifs/examples/inspection/engineer-field.gif"/>
+
+<br>
+
+<br>
+
+<br>
+
 1. Click on **Controls** in the left-hand pane.
 2. In the controls menu, click on the **Input** tab.
 3. Finally to add the field, click on **User picker**. 
-4. Change the **Title** to ***"Engineer"***.
+4. In the **Edit field** box change the **Title** to ***"Engineer"***.
 5. Change the **Name (unique)** to a unique identifier.
-6. Click on **OK** ![Ok button](/images/ok-16402622244922.png)
+6. Click on **OK** ![Ok button](/images/ok-16402622244922.png)to save.
+
+##### ***Safety Manager*** - User picker field.
+
+This field is a **User picker** field just like the above **Engineer**. We will go through how to clone a field and add it into our form.
+
+<br>
+
+<img src="/videos/gifs/examples/inspection/safety-manager-field.gif"/>
+
+<br>
+
+<br>
+
+<br>
+
+1. Select the **Engineer**  field so that the blue pen icon ![Pen icon](/images/penicon.png) appears. This means you are now in edit mode of the field.
+2. Go to the **Right-hand** pane and click on **Clone** ![Ok button](/images/clone.png)
+3. A **Duplicate or move field** box appears. Click on the dropdown list and select **Request form**.
+4. Leave **Move field instead** checkbox unchecked and click **OK** ![Ok button](/images/ok-16402622244922.png) 
+5. Select the **Engineer copy** field so that the blue pen icon![Pen icon](/images/penicon.png)appears 
+6. Click the blue pen icon![Pen icon](/images/penicon.png)to edit the properties.
+7. Change the title to **Safety Manager**.
+8. Change **Name (unique)** to a unique identifier.
+9. Click **OK** ![Ok button](/images/ok-16402622244922.png)to save changes.
 
 ### Inspection Form
 
