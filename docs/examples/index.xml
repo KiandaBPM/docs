@@ -16,14 +16,15 @@
 &lt;p>When you are in process designer window, click on &lt;strong>Add new&lt;/strong> button to start a new process. This button can be found at the top of the screen.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Add new process&lt;/strong> window will open with the following fields to fill out:&lt;/p>
+&lt;p>&lt;strong>Add new process&lt;/strong> window appears with the following fields to fill out:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong> - represents the name of your process which is also the display name for other users.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - represents the name of your process which is also the displayed name for other users.&lt;/li>
 &lt;li>&lt;strong>ID (unique)&lt;/strong> - A unique ID which is used to identify your process.&lt;/li>
 &lt;li>&lt;strong>Description&lt;/strong> - Piece of text to describe your new process.&lt;/li>
 &lt;li>&lt;strong>Group&lt;/strong> - A group which you want your new process to belong to.
 &lt;ul>
-&lt;li>If a group already exist, it will simply add your new process to that group. If the group does not exist, it will make a folder for you and automatically add the process to that group.&lt;/li>
+&lt;li>If a group already exist, it will simply add your new process to that group.&lt;/li>
+&lt;li>If the group does not exist, it will make a folder for you and automatically add the process to that group.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;strong>Administrators&lt;/strong> - In this field you can choose to add &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong> to be administrators of the new process. This field determines who can edit and make changes to your process.&lt;/li>
@@ -31,7 +32,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/examples-new-process.jpg" alt="Add new process window">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>After you fill out the information needed, press &lt;strong>OK&lt;/strong>. You will be automatically brought into a &lt;strong>blank&lt;/strong> process creation page, which looks as follow:&lt;/p>
+&lt;p>After you fill out the information needed, press &lt;strong>OK&lt;/strong>. You are automatically brought into a &lt;strong>blank&lt;/strong> process creation page, which looks as follow:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/examples-process-creation-page.jpg" alt="Process creation page">&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -52,25 +53,25 @@
 &lt;p>Click on the pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> on the selected form to edit it.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>An &lt;strong>Edit form&lt;/strong> box will appear on your screen. There are 8 different fields we need to fill in.&lt;/p>
+&lt;p>An &lt;strong>Edit form&lt;/strong> box appear on your screen. There are 8 different fields to fill in.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Title&lt;/strong> - Name to represent this form. In our case we will call it &lt;strong>Request Form&lt;/strong>.&lt;/li>
 &lt;li>&lt;strong>Name (unique)&lt;/strong> - A unique identifier for our form. You can give this any name you would like as long as it&amp;rsquo;s unique.&lt;/li>
-&lt;li>&lt;strong>Default owner(s)&lt;/strong> - This field identifies which users can fill out our form when it&amp;rsquo;s complete. In our case we will choose from &lt;strong>Groups&lt;/strong> and choose our &lt;strong>Management Team&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Default owner(s)&lt;/strong> - This field identifies which users can fill out our form when it&amp;rsquo;s complete. In our case we will choose from &lt;strong>Groups&lt;/strong> and choose our &lt;strong>Management Team&lt;/strong>. &lt;em>put a link leading to group creation.&lt;/em>&lt;/li>
 &lt;li>&lt;strong>Activate with&lt;/strong> - We can avoid this field. We will cover this in later use cases.&lt;/li>
-&lt;li>&lt;strong>Submit mode&lt;/strong> - From the two radio button options, we will choose &lt;strong>Only this form&lt;/strong>.&lt;/li>
-&lt;li>&lt;strong>Form icon&lt;/strong> - Dropdown field to select an icon for the form. We will leave this field blank.&lt;/li>
-&lt;li>&lt;strong>Form theme&lt;/strong> - This option is used to change the colour of our form tile. We will change it to &lt;strong>Green&lt;/strong>.&lt;/li>
-&lt;li>&lt;strong>Enable quick actions&lt;/strong> - A check box which allows us to enable or disable different actions to our form. We will keep it simple and leave this box unchecked.&lt;/li>
+&lt;li>&lt;strong>Submit mode&lt;/strong> - Choose &lt;strong>Only this form&lt;/strong> radio list.&lt;/li>
+&lt;li>&lt;strong>Form icon&lt;/strong> - Dropdown field to select an icon for the form.&lt;/li>
+&lt;li>&lt;strong>Form theme&lt;/strong> - This option is used to change the colour of the form tile. We will change it to &lt;strong>Green&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Enable quick actions&lt;/strong> - A check box which allows us to enable or disable different actions to our form. Leave this box unchecked.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/examples-request-form-edit-box.jpg" alt="Edit form box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Now that we edited our &lt;strong>Request form&lt;/strong> to our needs, we can press &lt;strong>OK&lt;/strong> which will bring us back to the process creation page.&lt;/p>
+&lt;p>&lt;strong>Request form&lt;/strong> settings are now complete. Press &lt;strong>OK&lt;/strong> to accept the changes, this will bring you back to the process creation page.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h4 id="form-layout">Form Layout&lt;/h4>
-&lt;p>For our &lt;strong>Request form&lt;/strong> we will need a couple of fields which will be used to make a request for an inspection:&lt;/p>
+&lt;p>On the &lt;strong>Request form&lt;/strong> there is 5 different fields which will be used to make a request for an inspection:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Company&lt;/strong> - Which company we need the inspection to be completed in.&lt;/li>
 &lt;li>&lt;strong>Location&lt;/strong> - What location of that company we need to go to.&lt;/li>
@@ -79,12 +80,113 @@
 &lt;li>&lt;strong>Status&lt;/strong> - Field representing the status of the process. For example the status can be &lt;strong>Open&lt;/strong> or &lt;strong>Completed&lt;/strong>.&lt;/li>
 &lt;/ul>
 &lt;h4 id="creating-fields">Creating Fields&lt;/h4>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Company&lt;/strong>&lt;/p>
+&lt;h5 id="company---list-input">&lt;em>&lt;strong>Company&lt;/strong>&lt;/em> - List input.&lt;/h5>
+&lt;br>
 &lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/company-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane.&lt;/p>
 &lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>In the controls, click on the &lt;strong>Input&lt;/strong> tab.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Finally to add a field, click on &lt;strong>List&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A field edit box will appear in which we change the &lt;strong>Title&lt;/strong> to &lt;em>&lt;strong>&amp;ldquo;Company&amp;rdquo;&lt;/strong>&lt;/em>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Name&lt;/strong> field is changed automatically but you may change it into any unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the &lt;strong>Data source&lt;/strong> within the &lt;strong>List source&lt;/strong> radio list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>datasource&lt;/strong> &lt;img src="https://docs.kianda.com/images/datasource-button-blue.jpg" alt="Datasource button"> button. This will open a data source selector box. To learn more about adding a SharePoint data connector, follow this link. &lt;a href="https://docs.kianda.com/docs/platform/connectors/sharepoint/">Connecting to sharepoint&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on your SharePoint connector and select &lt;strong>Companies&lt;/strong>. Press &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button"> on the Datasource popup.&lt;/p>
+&lt;p>&lt;em>&lt;strong>SharePoint Companies List&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-sharepoint-companies.jpg" alt="SharePoint companies list">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the dropdown on the &lt;strong>Display, Value&lt;/strong> and &lt;strong>Sort by&lt;/strong> fields select &lt;strong>Title&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Leave all of the other options as default. Press **OK **&lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h5 id="location---list-input">&lt;em>&lt;strong>Location&lt;/strong>&lt;/em> - List input.&lt;/h5>
+&lt;p>The location field is a cascading dropdown selection which corresponds to the &lt;strong>Company&lt;/strong> field (see above). The goal is to display only the &lt;strong>locations&lt;/strong> of the selected &lt;strong>company&lt;/strong>. Take a look how we achieve this in the below steps.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/location-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the controls, click on the &lt;strong>Input&lt;/strong> tab.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Finally to add a field, click on &lt;strong>List&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A field edit box will appear in which we change the &lt;strong>Title&lt;/strong> to &lt;em>&lt;strong>&amp;ldquo;Location&amp;rdquo;&lt;/strong>&lt;/em>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Name&lt;/strong> field is changed automatically but you may change it into any unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the &lt;strong>Data source&lt;/strong> within the &lt;strong>List source&lt;/strong> radio list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>datasource&lt;/strong> &lt;img src="https://docs.kianda.com/images/datasource-button-blue.jpg" alt="Datasource button"> button. This will open a data source selector box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on your SharePoint connector and select &lt;strong>Location&lt;/strong>. Click &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button"> on the Datasource popup.&lt;/p>
+&lt;p>&lt;em>&lt;strong>SharePoint Locations List&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-sharepoint-locations.jpg" alt="SharePoint companies list">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the dropdown on the &lt;strong>Display, Value&lt;/strong> and &lt;strong>Sort by&lt;/strong> fields select &lt;strong>Locations&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To create the cascading selection we add a condition. Click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Company&lt;/strong> in the first drop down.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Equals&lt;/strong> in the second dropdown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Company&lt;/strong> in the third dropdown.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-edit-conditions.jpg" alt="Edit conditions">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">on &lt;strong>Edit conditions&lt;/strong> popup.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Leave all of the other options as default. Press &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h5 id="engineer---user-picker-input">&lt;em>&lt;strong>Engineer&lt;/strong>&lt;/em> - User picker input.&lt;/h5>
+&lt;ol>
+&lt;li>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane.&lt;/li>
+&lt;li>In the controls menu, click on the &lt;strong>Input&lt;/strong> tab.&lt;/li>
+&lt;li>Finally to add the field, click on &lt;strong>User picker&lt;/strong>.&lt;/li>
+&lt;li>Change the &lt;strong>Title&lt;/strong> to &lt;em>&lt;strong>&amp;ldquo;Engineer&amp;rdquo;&lt;/strong>&lt;/em>.&lt;/li>
+&lt;li>Change the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">&lt;/li>
+&lt;/ol>
 &lt;h3 id="inspection-form">Inspection Form&lt;/h3>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Section under construction.&lt;/p>
