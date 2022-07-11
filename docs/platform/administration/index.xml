@@ -461,17 +461,10 @@
 &lt;li>
 &lt;p>In the details box you can edit a user&amp;rsquo;s:&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;strong>First name&lt;/strong> - user&amp;rsquo;s first name&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Last name&lt;/strong> - user&amp;rsquo;s last name&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Display name&lt;/strong> - how their name will display in the system&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Primary role&lt;/strong> - click on &lt;strong>More roles&lt;/strong> to see additional roles and choose from six system defined roles:&lt;/p>
+&lt;li>&lt;strong>First name&lt;/strong> - user&amp;rsquo;s first name&lt;/li>
+&lt;li>&lt;strong>Last name&lt;/strong> - user&amp;rsquo;s last name&lt;/li>
+&lt;li>&lt;strong>Display name&lt;/strong> - how their name will display in the system&lt;/li>
+&lt;li>&lt;strong>Primary role&lt;/strong> - click on &lt;strong>More roles&lt;/strong> to see additional roles and choose from six system defined roles.
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>User&lt;/strong> - lowest level of access where users with this role can access dashboards and forms, Help and Account details&lt;/p>
@@ -493,21 +486,11 @@
 &lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Phone number&lt;/strong> - user&amp;rsquo;s phone number (mobile or office)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Profile picture URL&lt;/strong> - click on &lt;strong>Browse&lt;/strong> to browse for a profile picture on a laptop or network drive to add a profile photo for the user.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Active&lt;/strong> checkbox - by default this checkbox is checked but you can &lt;strong>uncheck it to disable&lt;/strong> a user&amp;rsquo;s account.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Profile properties&lt;/strong> - click on this option to see additional properties that you can define, see &lt;a href="#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Group membership&lt;/strong> - click on this option to see the groups that a user is added to. Click on the red x button &lt;img src="https://docs.kianda.com/images/redx.jpg" alt="Red x"> to remove a user from a group.&lt;/p>
-&lt;/li>
+&lt;li>&lt;strong>Phone number&lt;/strong> - user&amp;rsquo;s phone number (mobile or office)&lt;/li>
+&lt;li>&lt;strong>Profile picture URL&lt;/strong> - click on &lt;strong>Browse&lt;/strong> to browse for a profile picture on a laptop or network drive to add a profile photo for the user.&lt;/li>
+&lt;li>&lt;strong>Active&lt;/strong> checkbox - by default this checkbox is checked but you can &lt;strong>uncheck it to disable&lt;/strong> a user&amp;rsquo;s account.&lt;/li>
+&lt;li>&lt;strong>Profile properties&lt;/strong> - click on this option to see additional properties that you can define, see &lt;a href="#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Group membership&lt;/strong> - click on this option to see the groups that a user is added to. Click on the red x button &lt;img src="https://docs.kianda.com/images/redx.jpg" alt="Red x"> to remove a user from a group.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -553,8 +536,8 @@
 &lt;ul>
 &lt;li>&lt;a href="#viewing-and-editng-group-members">view and edit group members&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#viewing-and-editing-group-details">view and edit group details&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#deleting-groups">delete groups&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#creating-new-groups">create a new group&lt;/a>&lt;/li>
-&lt;li>delete groups&lt;/li>
 &lt;/ul>
 &lt;h3 id="viewing-and-editing-group-members">Viewing and editing group members&lt;/h3>
 &lt;ol>
@@ -598,15 +581,40 @@
 &lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;/ol>
+&lt;h3 id="deleting-groups">Deleting groups&lt;/h3>
+&lt;ol>
 &lt;li>
-&lt;p>To delete a group, click on the &lt;strong>Bin/Trash&lt;/strong> icon.&lt;/p>
+&lt;p>To delete a group, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/trash button"> beside the name of the group.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will receive a popup asking you if you want to delete the particular team. Click on &lt;strong>OK&lt;/strong> to delete the team, or &lt;strong>Cancel&lt;/strong> to cancel the deletion.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="creating-new-groups">Creating new groups&lt;/h3>
 &lt;ol>
-&lt;li>To create a new group, click on the &lt;strong>Create new group&lt;/strong> button in the main view.&lt;/li>
-&lt;li>In the &lt;strong>Add group&lt;/strong> dialog&lt;/li>
-&lt;li>The &lt;strong>Edit group &amp;lsquo;Name&amp;rsquo;&lt;/strong> dialog box appears.&lt;/li>
+&lt;li>
+&lt;p>To create a new group, click on the &lt;strong>Create new group&lt;/strong> button in the main view.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Add group&lt;/strong> dialog box, type in details for the group:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-group.jpg" alt="Add group dialog box">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Group name&lt;/strong> - the name of the group&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Primary role&lt;/strong> - choose a role for the group from &lt;strong>User&lt;/strong>, &lt;strong>Administrator&lt;/strong>, &lt;strong>Manage partners&lt;/strong>, &lt;strong>Design business process&lt;/strong>, &lt;strong>Manage datasources&lt;/strong> and &lt;strong>Developer&lt;/strong> as before, see Role details in &lt;a href="#view-and-edit-existing-user-details">Viewing and editing existing user details&lt;/a>. In addition there is another role, &lt;strong>Design own business process&lt;/strong> that allows groups to design their own process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/design-own-process.jpg" alt="Group roles">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Group administrators&lt;/strong> - add &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> to add people who can manage group membership. If you leave the field blank, any Kianda administrator can manage the group. If you specify administrators, as group creator you must add yourself as group administrator.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box click on &lt;strong>OK&lt;/strong> to save changes, otherwise click on &lt;strong>Close&lt;/strong> to exit at any time.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
