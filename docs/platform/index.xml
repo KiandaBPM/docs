@@ -1,39 +1,29 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Platform</title><link>https://docs.kianda.com/docs/platform/</link><description>Recent content in Platform on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Administration</title><link>https://docs.kianda.com/docs/platform/administration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/</guid><description>
-&lt;p>The &lt;strong>Administration&lt;/strong> menu contains all the functions you need to maintain your Kianda workspace.&lt;/p>
-&lt;p>The menu is found in the left-hand side pane when you log in to Kianda. This menu will only appear if you have a certain role, for example Administrators will see all items shown in the image below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/admin-view.jpg" alt="Administration menu">&lt;/p>
-&lt;p>Other roles like &lt;strong>Developer&lt;/strong>, or &lt;strong>Design business process role&lt;/strong> will have access to the Administration menu, but will only see role-related items within the menu. For example a Developer will only see &lt;strong>Developer&lt;/strong> within Administration, while a person with a Design business process role will only see &lt;strong>Designer&lt;/strong> within Administration. User roles are set by Administrator who will have access to the &lt;strong>Users&lt;/strong> function within administration. If you have full administration access then you will see nine functions by default within administration. These are:&lt;/p>
-&lt;ul>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Platform</title><link>https://docs.kianda.com/docs/platform/</link><description>Recent content in Platform on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Your workspace</title><link>https://docs.kianda.com/docs/platform/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/general/</guid><description>
+&lt;p>When you login to Kianda for the first time, you are presented with an easy-to-use interface, your Kianda &lt;strong>workspace&lt;/strong>, that contains all the functions you need for your role.&lt;/p>
+&lt;p>The main navigation is driven from the left-hand &lt;strong>side menu&lt;/strong>. Here you will find shared &lt;strong>dashboards&lt;/strong> linked to processes. Depending on your role you may have &lt;strong>Administration&lt;/strong> functions like &lt;strong>Designer&lt;/strong> that allows you to design processes, or &lt;strong>Invite partner&lt;/strong> that allows you to manage B2B shared processes and dashboards for example with third party contractors.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>&lt;em>&lt;strong>Kianda workspace&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/workspace4.gif" alt="User interface">&lt;/p>
+&lt;p>The layout of the Kianda workspace is as follows:&lt;/p>
+&lt;ol>
 &lt;li>
-&lt;p>&lt;strong>Designer&lt;/strong> - users with the Designer business process role and administrators can access this function to design business processes&lt;/p>
+&lt;p>&lt;strong>Company logo&lt;/strong> - the top left-hand corner is reserved for uploading company logos. If you click on the &lt;strong>Collapse navigation&lt;/strong> button &lt;img src="https://docs.kianda.com/images/navigation_frame_copy.png" alt="Collapse navigation button"> you will see the collapsed version of the company logo and collapsed side menu, giving you more real estate in the central view panel to view processes and dashboards.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>App Store&lt;/strong> - administrators can access predefined process templates within the App Store, and use these templates to create business process.&lt;/p>
+&lt;p>&lt;strong>Side menu&lt;/strong> - Beneath the logo is the left-hand pane, the side menu, containing all of the key functions within &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/administration">Administration&lt;/a>&lt;/strong> that you need to create and manage your business processes. Depending on your role, the Administration function and sub-functions may be visible. For example users with an &lt;strong>Administrator&lt;/strong> role will see Administration and functions within this area such as &lt;strong>User Management&lt;/strong> and &lt;strong>Subscription.&lt;/strong> Other roles will only have one function visible within Administration, dependent on the role, for example the role &lt;strong>Manage datasources&lt;/strong>, will see the &lt;strong>Data sources&lt;/strong> function within Administration, allowing users with this role to connect Kianda to data held in organisational data sources like SAP or Salesforce. From this menu for example you can start creating processes using &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/administration/designer">Designer&lt;/a>&lt;/strong> if you have the role &lt;strong>Administration&lt;/strong> or &lt;strong>Design business process&lt;/strong>.&lt;/p>
+&lt;p>In this left side menu, under &lt;strong>More&lt;/strong>, there are links to get &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/general/help">Help&lt;/a>&lt;/strong>, &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/general/support">Support&lt;/a>&lt;/strong>, and give &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/general/help/#feedback">Feedback&lt;/a>&lt;/strong>. Click on each of the links for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Subscription&lt;/strong> - administrators can update an organisation&amp;rsquo;s subscription details, including Single Sign On, workspace look and feel and regional settings.&lt;/p>
+&lt;p>&lt;strong>Quick Action menu&lt;/strong> - the top right-hand menu bar contains shortcuts to keep you updated, for example &lt;strong>user notifications&lt;/strong> and the ability to &lt;strong>add dashboard pages&lt;/strong>. Here you can also add a profile picture for your account and manage other details for your account, such as &lt;strong>changing password&lt;/strong> and &lt;strong>working offline&lt;/strong> like in-flight mode, allowing you to peruse the platform without requiring internet access. See &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/general/quickaction/">Quick action menu&lt;/a>&lt;/strong> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Data sources&lt;/strong> - users with the Manage datasources role and administrators can access this function to connect a workspace to external data sources such as SAP, SharePoint and Oracle databases.&lt;/p>
+&lt;p>&lt;strong>Main view&lt;/strong> - the central view panel is the main view for any of the functions chosen from the side menu. For example in the main view you can &lt;strong>view and edit&lt;/strong> processes and dashboards, as well as managing users and groups, depending on your role.&lt;/p>
 &lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Scheduled tasks&lt;/strong> - administrators can access this function to schedule tasks which can be full processes or parts of a process, for example to execute a rule, and schedule these tasks for a desired period or on demand.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Recycle bin&lt;/strong> - administrators can access deleted processes, tasks and process instances in the recycle bin.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Users&lt;/strong> - administrators can manage user accounts using this function for example setting roles, profile properties, creating and deleting groups.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Invite partner&lt;/strong> - users with the Manage partners role and administrators can access this function to invite business partners to view processes.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Developer&lt;/strong> - developers and administrators can access this function to create customised field, rule and dashboard widgets.&lt;/p>
-&lt;/li>
-&lt;/ul>
+&lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>We have briefly introduced each of the nine functions within &lt;strong>Administration&lt;/strong>. Now let&amp;rsquo;s look at each of these functions in more detail:&lt;/p></description></item><item><title>Docs: Application designer</title><link>https://docs.kianda.com/docs/platform/application-designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/</guid><description>
+&lt;p>Go to &lt;a href="https://docs.kianda.com/docs/getting-started/logging-in/personalise-workspace/">Personalise your workspace&lt;/a> to find out how to change the look and feel of your workspace and to set regional settings.&lt;/p>
+&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
+&lt;p>To find out about other ways to get help and support, click on the links below:&lt;/p></description></item><item><title>Docs: Application designer</title><link>https://docs.kianda.com/docs/platform/application-designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/</guid><description>
 &lt;p>Creating your first &lt;strong>process&lt;/strong> or application in Kianda starts with designing your first &lt;strong>form&lt;/strong>. Forms can connect to any number of &lt;strong>data sources&lt;/strong> or connectors at the same time. The form might be a simple contact form or something else more complex, and you can add more forms like &amp;ldquo;Follow-up form&amp;rdquo; or even a &amp;ldquo;Closure form&amp;rdquo;.&lt;/p>
 &lt;p>Although Kianda aims to be intuitive and easy to get started, it is never difficult to over-engineer. So at Kianda we always recommend doing some simple planning before you design your first form.&lt;/p>
 &lt;p>It could be something as simple as a quick flow chart or as we use a spreadsheet where you quickly log the key components, fields or rules that should be needed in the process.&lt;/p>
@@ -262,34 +252,15 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="rule-order">Rule order&lt;/h2>
-&lt;p>If there is more than 1 rule for an item like a field or button, then the order of execution must be considered.&lt;/p>
-&lt;p>For example for a Submit button on a form I may want my &lt;strong>Send email rule&lt;/strong> to be executed first before any other rule is executed. To do this click on the &lt;strong>Submit&lt;/strong> button to make sure you are in &lt;strong>Edit&lt;/strong> mode, and under &lt;strong>Rules&lt;/strong> in the right-hand pane, drag the &lt;strong>Send email&lt;/strong> rule to the top of the list by clicking on the rule and dragging it to the top.&lt;/p>
+&lt;p>If there is more than one rule for an item like a field or button, then the order of execution must be considered.&lt;/p>
+&lt;p>For example for a &lt;strong>Submit&lt;/strong> button on a form, you may want a &lt;strong>Send email rule&lt;/strong> to be executed first before any other rule is executed, that is an automated email will be sent before anything else. To ensure this happens, click on the &lt;strong>Submit&lt;/strong> button to make sure you are in &lt;strong>Edit&lt;/strong> mode, and under &lt;strong>Rules&lt;/strong> in the right-hand pane, drag the &lt;strong>Send email&lt;/strong> rule to the top of the list by clicking on the rule and dragging it to the top of the list of rules.&lt;/p>
 &lt;img src="https://docs.kianda.com/images/ruleorder.png" alt="Rule order" style="zoom:70%;" />
-Go to [Multiple rules](/docs/platform/rules/general/multiple-rules/) to read more about using mutiple rules on a field or other item.
+&lt;p>Go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> to read more about using multiple rules on a field or other item.&lt;/p>
 &lt;h2 id="rules-list">Rules list&lt;/h2>
 &lt;p>A full list of rules is available in the table below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rules-list.jpg" alt="Rules list">&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>We have briefly introduced the concept of &lt;strong>Rules&lt;/strong>. To read more about rules including each category of rules, click on the links below:&lt;/p></description></item><item><title>Docs: Your workspace</title><link>https://docs.kianda.com/docs/platform/general/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/general/</guid><description>
-&lt;p>When you login to Kianda for the first time, you are presented with an easy-to-use interface, your Kianda &lt;strong>workspace&lt;/strong>, that contains all the functions you need for your role.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Kianda workspace&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/workspace4.gif" alt="User interface">&lt;/p>
-&lt;p>The layout of the Kianda workspace is as follows:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Company logo&lt;/strong> - the top left-hand corner is reserved for uploading company logos. If you click on the &lt;strong>Collapse navigation&lt;/strong> button &lt;img src="https://docs.kianda.com/images/navigation_frame_copy.png" alt="Collapse navigation button"> you will see the collapsed version of the company logo and collapsed side menu, giving you more real estate in the central view panel.&lt;/li>
-&lt;li>&lt;strong>Side menu&lt;/strong> - Beneath the logo is the left-hand pane, the side menu, containing all of the key functions within &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/administration">Administration&lt;/a>&lt;/strong> that you need to create and manage your business processes. From this menu for example you can start creating processes using &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/administration/designer">Designer&lt;/a>&lt;/strong>. In this left side menu, under &lt;strong>More&lt;/strong>, there are links to get &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/general/help">Help&lt;/a>&lt;/strong>, &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/general/support">Support&lt;/a>&lt;/strong>, and give &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/general/feedback">Feedback&lt;/a>&lt;/strong>, Click on each of the links for more details.&lt;/li>
-&lt;li>&lt;strong>Quick Action menu&lt;/strong> - the top right-hand menu bar contains shortcuts to keep you updated, for example &lt;strong>user notifications&lt;/strong> and the ability to &lt;strong>add dashboard pages&lt;/strong>, see &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/general/quickaction/">Quick action menu&lt;/a>&lt;/strong> for more details.&lt;/li>
-&lt;li>&lt;strong>Main view&lt;/strong> - the central view panel is the main view for any of the functions chosen from the side menu. Here you can &lt;strong>view and edit&lt;/strong> processes and dashboards.&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Go to &lt;a href="https://docs.kianda.com/docs/getting-started/logging-in/personalise-workspace/">Personalise your workspace&lt;/a> to find out how to change the look and feel of your workspace and to set regional settings.&lt;/p>
-&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
-&lt;p>To find out about other ways to get help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/help">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: B2B Portals</title><link>https://docs.kianda.com/docs/platform/b2b-portals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/</guid><description>
-&lt;p>B2B Portals are a means of connecting your clients to your Kianda subscription through their own subscription. This provides a means of allowing your clients to interface with processes you have already created. This could involve updating existing processes, deleting processes or creating processes. Access to the B2B Portal can be controlled by your own administrator and each B2B Portal can have multiple users for your clients.&lt;/p>
-&lt;p>Your client&amp;rsquo;s subscription will need to be configured by Kianda so please reach out to your Account Manager or &lt;a href="mailto:support@kianda.com">Kianda Support&lt;/a> to arrange the set up.&lt;/p>
-&lt;p>B2B Portals can be configured by users with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage partners&lt;/strong>. These users can access the function, found under &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Invite Partner&lt;/strong>.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>We have briefly introduced each of the concept of B2B Portals within &lt;strong>Administration&lt;/strong>. Now let&amp;rsquo;s look at the following areas in more detail:&lt;/p></description></item><item><title>Docs: Dashboard pages</title><link>https://docs.kianda.com/docs/platform/pages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/</guid><description>
+&lt;p>We have briefly introduced the concept of &lt;strong>Rules&lt;/strong>. To read more about rules including each category of rules, click on the links below:&lt;/p></description></item><item><title>Docs: Dashboard pages</title><link>https://docs.kianda.com/docs/platform/pages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/</guid><description>
 &lt;p>Kianda &lt;strong>dashboards&lt;/strong> deliver a convenient way to provide insights into how your business processes are performing. Dashboards offer easy reporting, permissions management, quick build, condition-based filtering and many more useful features.&lt;/p>
 &lt;p>From lists to tiles, filters and charts, dashboards allow you to build full digital experiences to monitor your real-time processes in a few minutes.&lt;/p>
 &lt;p>There are 3 steps involved in creating a dashboard:&lt;/p>
@@ -582,7 +553,47 @@ Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
 &lt;h2 id="on-premises-data">On-premises data&lt;/h2>
-&lt;p>&lt;img src="https://app.kianda.com/Content/6ceb0eeb-bfb7-44a8-ad57-3df169286224/2929bafd-a863-48f8-985e-644bb48b7596.gif" alt="Connecting to on-premises SQL">&lt;/p></description></item><item><title>Docs: Document generation</title><link>https://docs.kianda.com/docs/platform/document-generation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/</guid><description>
+&lt;p>&lt;img src="https://app.kianda.com/Content/6ceb0eeb-bfb7-44a8-ad57-3df169286224/2929bafd-a863-48f8-985e-644bb48b7596.gif" alt="Connecting to on-premises SQL">&lt;/p></description></item><item><title>Docs: B2B Portals</title><link>https://docs.kianda.com/docs/platform/b2b-portals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/</guid><description>
+&lt;p>B2B Portals are a means of connecting your clients to your Kianda subscription through their own subscription. This provides a means of allowing your clients to interface with processes you have already created. This could involve updating existing processes, deleting processes or creating processes. Access to the B2B Portal can be controlled by your own administrator and each B2B Portal can have multiple users for your clients.&lt;/p>
+&lt;p>Your client&amp;rsquo;s subscription will need to be configured by Kianda so please reach out to your Account Manager or &lt;a href="mailto:support@kianda.com">Kianda Support&lt;/a> to arrange the set up.&lt;/p>
+&lt;p>B2B Portals can be configured by users with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage partners&lt;/strong>. These users can access the function, found under &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Invite Partner&lt;/strong>.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>We have briefly introduced each of the concept of B2B Portals within &lt;strong>Administration&lt;/strong>. Now let&amp;rsquo;s look at the following areas in more detail:&lt;/p></description></item><item><title>Docs: Administration</title><link>https://docs.kianda.com/docs/platform/administration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/</guid><description>
+&lt;p>The &lt;strong>Administration&lt;/strong> menu contains all the functions you need to maintain your Kianda workspace.&lt;/p>
+&lt;p>The menu is found in the left-hand side pane when you log in to Kianda. This menu will only appear if you have a certain role, for example Administrators will see all items shown in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/admin-view.jpg" alt="Administration menu">&lt;/p>
+&lt;p>Other roles like &lt;strong>Developer&lt;/strong>, or &lt;strong>Design business process role&lt;/strong> will have access to the Administration menu, but will only see role-related items within the menu. For example a Developer will only see &lt;strong>Developer&lt;/strong> within Administration, while a person with a Design business process role will only see &lt;strong>Designer&lt;/strong> within Administration. User roles are set by Administrator who will have access to the &lt;strong>Users&lt;/strong> function within administration. If you have full administration access then you will see nine functions by default within administration. These are:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Designer&lt;/strong> - users with the Designer business process role and administrators can access this function to design business processes&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>App Store&lt;/strong> - administrators can access predefined process templates within the App Store, and use these templates to create business process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Subscription&lt;/strong> - administrators can update an organisation&amp;rsquo;s subscription details, including Single Sign On, workspace look and feel and regional settings.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Data sources&lt;/strong> - users with the Manage datasources role and administrators can access this function to connect a workspace to external data sources such as SAP, SharePoint and Oracle databases.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Scheduled tasks&lt;/strong> - administrators can access this function to schedule tasks which can be full processes or parts of a process, for example to execute a rule, and schedule these tasks for a desired period or on demand.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Recycle bin&lt;/strong> - administrators can access deleted processes, tasks and process instances in the recycle bin.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Users&lt;/strong> - administrators can manage user accounts using this function for example setting roles, profile properties, creating and deleting groups.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Invite partner&lt;/strong> - users with the Manage partners role and administrators can access this function to invite business partners to view processes.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Developer&lt;/strong> - developers and administrators can access this function to create customised field, rule and dashboard widgets.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>We have briefly introduced each of the nine functions within &lt;strong>Administration&lt;/strong>. Now let&amp;rsquo;s look at each of these functions in more detail:&lt;/p></description></item><item><title>Docs: Document generation</title><link>https://docs.kianda.com/docs/platform/document-generation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Task Automation with Kianda</title><link>https://docs.kianda.com/docs/platform/automation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/automation/</guid><description>
