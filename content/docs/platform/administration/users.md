@@ -63,12 +63,9 @@ Click on each of the links below to read more about each function. In addition t
 2. In the details box you can edit a user's:
 
    - **First name** - user's first name
-
    - **Last name** - user's last name
-
    - **Display name** - how their name will display in the system
-
-   - **Primary role** - click on **More roles** to see additional roles and choose from six system defined roles:
+   - **Primary role** - click on **More roles** to see additional roles and choose from six system defined roles.
      - **User** - lowest level of access where users with this role can access dashboards and forms, Help and Account details
 
      - **Administrator** - highest level of access where users with this role can access all functions under **Administration** such as **Designer** and **Developer**.
@@ -80,15 +77,10 @@ Click on each of the links below to read more about each function. In addition t
      - **Manage datasources** - users with this role can access the same areas as **User** as well as the **Data sources** function under **Administration** to create and manage data sources such as connections to SAP, Dropbox, SharePoint and Salesforce.
 
      - **Developer** - users with this role can access the same areas as **User** as well as the **Developes** function under **Administration** to create custom widgets for fields/controls, rules and dashboards.
-
    - **Phone number** - user's phone number (mobile or office)
-
    - **Profile picture URL** - click on **Browse** to browse for a profile picture on a laptop or network drive to add a profile photo for the user.
-
    - **Active** checkbox - by default this checkbox is checked but you can **uncheck it to disable** a user's account.
-
    - **Profile properties** - click on this option to see additional properties that you can define, see [Modify profile attributes](#modify-profile-attributes).
-
    - **Group membership** - click on this option to see the groups that a user is added to. Click on the red x button  ![Red x](/images/redx.jpg) to remove a user from a group. 
 
 3. When you are finished editing a user's details, click on **OK**, or click on **Close** to exit the dialog box. 
@@ -143,8 +135,8 @@ From this main view you can:
 
 - [view and edit group members](#viewing-and-editng-group-members)
 - [view and edit group details](#viewing-and-editing-group-details)
+- [delete groups](#deleting-groups)
 - [create a new group](#creating-new-groups)
-- delete groups
 
 
 
@@ -182,15 +174,33 @@ From this main view you can:
    - **Group member sync** - options are **Yes** or **No**
    - **Group administrators** - only users or groups listed here can manage the group; if you leave the field blank then Kianda administrators can manage the group
 
-4. To delete a group, click on the **Bin/Trash** icon. 
+   
 
+### Deleting groups
 
+1. To delete a group, click on the **Bin/Trash** button ![Bin/trash button](/images/bin.png) beside the name of the group.
+
+2. You will receive a popup asking you if you want to delete the particular team. Click on **OK** to delete the team, or **Cancel** to cancel the deletion.
+
+   
 
 ### Creating new groups
 
 1. To create a new group, click on the **Create new group** button in the main view.
-2. In the **Add group** dialog 
-3. The **Edit group 'Name'** dialog box appears. 
+
+2. In the **Add group** dialog box, type in details for the group:
+
+   ![Add group dialog box](/images/create-group.jpg)
+
+   - **Group name** - the name of the group
+
+   - **Primary role** - choose a role for the group from **User**, **Administrator**, **Manage partners**, **Design business process**, **Manage datasources** and **Developer** as before, see Role details in [Viewing and editing existing user details](#view-and-edit-existing-user-details). In addition there is another role, **Design own business process** that allows groups to design their own process.
+
+     ![Group roles](/images/design-own-process.jpg)
+
+   - **Group administrators** - add **Users** and/or **Groups** to add people who can manage group membership. If you leave the field blank, any Kianda administrator can manage the group. If you specify administrators, as group creator you must add yourself as group administrator.
+
+3. When you are finished editing the dialog box click on **OK** to save changes, otherwise click on **Close** to exit at any time.
 
 
 
