@@ -179,13 +179,36 @@
 &lt;/li>
 &lt;/ol>
 &lt;h5 id="engineer---user-picker-input">&lt;em>&lt;strong>Engineer&lt;/strong>&lt;/em> - User picker input.&lt;/h5>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/engineer-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
 &lt;ol>
 &lt;li>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane.&lt;/li>
 &lt;li>In the controls menu, click on the &lt;strong>Input&lt;/strong> tab.&lt;/li>
 &lt;li>Finally to add the field, click on &lt;strong>User picker&lt;/strong>.&lt;/li>
-&lt;li>Change the &lt;strong>Title&lt;/strong> to &lt;em>&lt;strong>&amp;ldquo;Engineer&amp;rdquo;&lt;/strong>&lt;/em>.&lt;/li>
+&lt;li>In the &lt;strong>Edit field&lt;/strong> box change the &lt;strong>Title&lt;/strong> to &lt;em>&lt;strong>&amp;ldquo;Engineer&amp;rdquo;&lt;/strong>&lt;/em>.&lt;/li>
 &lt;li>Change the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">to save.&lt;/li>
+&lt;/ol>
+&lt;h5 id="safety-manager---user-picker-field">&lt;em>&lt;strong>Safety Manager&lt;/strong>&lt;/em> - User picker field.&lt;/h5>
+&lt;p>This field is a &lt;strong>User picker&lt;/strong> field just like the above &lt;strong>Engineer&lt;/strong>. We will go through how to clone a field and add it into our form.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/safety-manager-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>Select the &lt;strong>Engineer&lt;/strong> field so that the blue pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears. This means you are now in edit mode of the field.&lt;/li>
+&lt;li>Go to the &lt;strong>Right-hand&lt;/strong> pane and click on &lt;strong>Clone&lt;/strong> &lt;img src="https://docs.kianda.com/images/clone.png" alt="Ok button">&lt;/li>
+&lt;li>A &lt;strong>Duplicate or move field&lt;/strong> box appears. Click on the dropdown list and select &lt;strong>Request form&lt;/strong>.&lt;/li>
+&lt;li>Leave &lt;strong>Move field instead&lt;/strong> checkbox unchecked and click &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">&lt;/li>
+&lt;li>Select the &lt;strong>Engineer copy&lt;/strong> field so that the blue pen icon&lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">appears&lt;/li>
+&lt;li>Click the blue pen icon&lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">to edit the properties.&lt;/li>
+&lt;li>Change the title to &lt;strong>Safety Manager&lt;/strong>.&lt;/li>
+&lt;li>Change &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
+&lt;li>Click &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">to save changes.&lt;/li>
 &lt;/ol>
 &lt;h3 id="inspection-form">Inspection Form&lt;/h3>
 &lt;div class="pageinfo pageinfo-primary">
