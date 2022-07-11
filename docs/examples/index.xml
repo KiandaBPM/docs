@@ -210,6 +210,21 @@
 &lt;li>Change &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
 &lt;li>Click &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">to save changes.&lt;/li>
 &lt;/ol>
+&lt;h5 id="status---text-box">&lt;em>&lt;strong>Status&lt;/strong>&lt;/em> - text box.&lt;/h5>
+&lt;p>We will make the status field invisible so we can track the inspection progress but not show it to the user. The &lt;strong>Status&lt;/strong> field will be used in the dashboard at a later stage in this example.&lt;/p>
+&lt;p>&lt;br> &lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/status-field.gif"/>&lt;/p>
+&lt;br>
+&lt;ol>
+&lt;li>In the &lt;strong>Left-hand&lt;/strong> pane click on &lt;strong>Controls&lt;/strong>.&lt;/li>
+&lt;li>Click on the &lt;strong>Input&lt;/strong> tab.&lt;/li>
+&lt;li>To add the field, click on &lt;strong>Text box&lt;/strong>.&lt;/li>
+&lt;li>Select the field and click on the blue pen icon&lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">&lt;/li>
+&lt;li>Change the &lt;strong>Title&lt;/strong> to &lt;em>&lt;strong>&amp;ldquo;Status&amp;rdquo;&lt;/strong>&lt;/em>.&lt;/li>
+&lt;li>Change &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong>&lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">to save the field.&lt;/li>
+&lt;li>Select the &lt;strong>Status&lt;/strong> field.&lt;/li>
+&lt;li>In the &lt;strong>Right-hand&lt;/strong> pane, under &lt;strong>Field properties&lt;/strong> click on the &lt;strong>Visible&lt;/strong> checkbox to uncheck it.&lt;/li>
+&lt;/ol>
 &lt;h3 id="inspection-form">Inspection Form&lt;/h3>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Section under construction.&lt;/p>
