@@ -20,17 +20,19 @@ You can create an Inspection process if you have the role **Administrator** or *
 
 1. When you are in process designer window, click on **Add new** button to start a new process. This button can be found at the top of the screen.
 
-2. **Add new process** window will open with the following fields to fill out:
-   - **Title** - represents the name of your process which is also the display name for other users.
+2. **Add new process** window appears with the following fields to fill out:
+   
+   - **Title** - represents the name of your process which is also the displayed name for other users.
    - **ID (unique)** - A unique ID which is used to identify your process. 
    - **Description** - Piece of text to describe your new process.
    - **Group** - A group which you want your new process to belong to.
-     - If a group already exist, it will simply add your new process to that group. If the group does not exist, it will make a folder for you and automatically add the process to that group.
+     - If a group already exist, it will simply add your new process to that group.
+     - If the group does not exist, it will make a folder for you and automatically add the process to that group.
    - **Administrators** - In this field you can choose to add **Users** and **Groups** to be administrators of the new process. This field determines who can edit and make changes to your process.
 
    ![Add new process window](/images/examples-new-process.jpg)
-
-3. After you fill out the information needed, press **OK**. You will be automatically brought into a **blank** process creation page, which looks as follow:
+   
+3. After you fill out the information needed, press **OK**. You are automatically brought into a **blank** process creation page, which looks as follow:
 
    ![Process creation page](/images/examples-process-creation-page.jpg)
 
@@ -51,24 +53,24 @@ For this **Inspection process** we will create two different forms.
 
 2. Click on the pen icon ![Pen icon](/images/penicon.png) on the selected form to edit it.
 
-3. An **Edit form** box will appear on your screen. There are 8 different fields we need to fill in.
+3. An **Edit form** box appear on your screen. There are 8 different fields to fill in.
 
    - **Title** - Name to represent this form. In our case we will call it **Request Form**.
    - **Name (unique)** - A unique identifier for our form. You can give this any name you would like as long as it's unique.
-   - **Default owner(s)** - This field identifies which users can fill out our form when it's complete. In our case we will choose from **Groups** and choose our **Management Team**.
+   - **Default owner(s)** - This field identifies which users can fill out our form when it's complete. In our case we will choose from **Groups** and choose our **Management Team**. *put a link leading to group creation.*
    - **Activate with** - We can avoid this field. We will cover this in later use cases. 
-   - **Submit mode** - From the two radio button options, we will choose **Only this form**. 
-   - **Form icon** - Dropdown field to select an icon for the form. We will leave this field blank.
-   - **Form theme** -  This option is used to change the colour of our form tile. We will change it to **Green**.
-   - **Enable quick actions** - A check box which allows us to enable or disable different actions to our form. We will keep it simple and leave this box unchecked. 
+   - **Submit mode** - Choose **Only this form** radio list. 
+   - **Form icon** - Dropdown field to select an icon for the form.
+   - **Form theme** - This option is used to change the colour of the form tile. We will change it to **Green**.
+   - **Enable quick actions** - A check box which allows us to enable or disable different actions to our form. Leave this box unchecked. 
 
    ![Edit form box](/images/examples-request-form-edit-box.jpg)
 
-4. Now that we edited our **Request form** to our needs, we can press **OK** which will bring us back to the process creation page.
+4. **Request form** settings are now complete. Press **OK** to accept the changes, this will bring you back to the process creation page.
 
 #### Form Layout
 
-For our **Request form** we will need a couple of fields which will be used to make a request for an inspection:
+On the **Request form** there is 5 different fields which will be used to make a request for an inspection:
 
 - **Company** - Which company we need the inspection to be completed in.
 - **Location** - What location of that company we need to go to.
@@ -78,13 +80,104 @@ For our **Request form** we will need a couple of fields which will be used to m
 
 #### Creating Fields
 
-- **Company**
+##### ***Company*** - List input.
 
-   <img src="/videos/gifs/examples/inspection/company-field.gif"/>
+<br>
 
-  
+<img src="/videos/gifs/examples/inspection/company-field.gif"/>
+
+<br>
+
+<br>
+
+<br>
+
+1. Click on **Controls** in the left-hand pane.
+
+2. In the controls, click on the **Input** tab.
+
+3. Finally to add a field, click on **List**. 
+
+4. A field edit box will appear in which we change the **Title** to ***"Company"***. 
+
+5. The **Name** field is changed automatically but you may change it into any unique identifier.
+
+6. Select the **Data source** within the **List source** radio list.
+
+7. Click on the **datasource** ![Datasource button](/images/datasource-button-blue.jpg) button. This will open a data source selector box. To learn more about adding a SharePoint data connector, follow this link. [Connecting to sharepoint](/docs/platform/connectors/sharepoint/)
+
+8. Click on your SharePoint connector and select **Companies**. Press **OK** ![Ok button](/images/ok-16402622244922.png) on the Datasource popup.
+
+   ***SharePoint Companies List***
+
+   ![SharePoint companies list](/images/examples-sharepoint-companies.jpg)
+
+9. From the dropdown on the **Display, Value** and **Sort by** fields select **Title**.
+
+10. Leave all of the other options as default. Press **OK **![Ok button](/images/ok-16402622244922.png)
+
+<br>
+
+#####   ***Location*** - List input.
+
+The location field is a cascading dropdown selection which corresponds to the **Company** field (see above). The goal is to display only the **locations** of the selected **company**. Take a look how we achieve this in the below steps.
+
+<br>
+
+<img src="/videos/gifs/examples/inspection/location-field.gif"/>
+
+<br>
+
+<br>
+
+<br>
+
+1. Click on **Controls** in the left-hand pane.
+
+2. In the controls, click on the **Input** tab.
+
+3. Finally to add a field, click on **List**. 
+
+4. A field edit box will appear in which we change the **Title** to ***"Location"***. 
+
+5. The **Name** field is changed automatically but you may change it into any unique identifier.
+
+6. Select the **Data source** within the **List source** radio list.
+
+7. Click on the **datasource** ![Datasource button](/images/datasource-button-blue.jpg) button. This will open a data source selector box.
+
+8. Click on your SharePoint connector and select **Location**. Click **OK** ![Ok button](/images/ok-16402622244922.png) on the Datasource popup.
+
+   ***SharePoint Locations List***
+
+   ![SharePoint companies list](/images/examples-sharepoint-locations.jpg)
+
+9. From the dropdown on the **Display, Value** and **Sort by** fields select **Locations**.
+
+10. To create the cascading selection we add a condition. Click on **Edit conditions** ![Edit conditions button](/images/editconditions.png)
+
+11. Select **Company** in the first drop down.
+
+12. Select **Equals** in the second dropdown.
+
+13. Select **Company** in the third dropdown.
+
+    ![Edit conditions](/images/examples-edit-conditions.jpg)
+
+14. Click on **OK** ![Ok button](/images/ok-16402622244922.png)on **Edit conditions** popup.
+
+15. Leave all of the other options as default. Press **OK** ![Ok button](/images/ok-16402622244922.png)
 
 
+
+##### ***Engineer*** - User picker input.
+
+1. Click on **Controls** in the left-hand pane.
+2. In the controls menu, click on the **Input** tab.
+3. Finally to add the field, click on **User picker**. 
+4. Change the **Title** to ***"Engineer"***.
+5. Change the **Name (unique)** to a unique identifier.
+6. Click on **OK** ![Ok button](/images/ok-16402622244922.png)
 
 ### Inspection Form
 
