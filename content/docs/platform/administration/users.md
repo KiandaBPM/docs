@@ -120,7 +120,16 @@ As an administrator you can set profile attributes for workspace users within yo
 
 ### Importing and exporting users
 
-In addition to clicking on the **Create new user** button ![Create new user button](/images/create-new-user-button.jpg) you can import users using an Excel file by clicking on the **Bulk import users** button.
+In addition to clicking on the **Create new user** button ![Create new user button](/images/create-new-user-button.jpg) you can **import** users using an Excel file by clicking on the **Bulk import users** button ![Bulk import users](/images/bulk-import-users.jpg). The **Import users** dialog box opens.
+
+![Import users dialog box](/images/import-users.jpg)
+
+In the **Import users** dialog box you can:
+
+- Click on **Browse User Import Excel File** to browse for a file of users to add. 
+- Click on **Download sample user import Excel file** to see the file structure needed to import users. The key user fields here are: Email, First Name, Last Name, Display Name and optional is Telephone number.
+
+You can **export** a list of users by clicking on the **Export to csv** button ![Export to csv](/images/export-to-csv.jpg). The resulting file will list users by **display name**, **email**, **primary role** and **groups** they are members of.
 
 
 
