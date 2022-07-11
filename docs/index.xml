@@ -2393,7 +2393,7 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Single Sign On (SSO)</title><link>https://docs.kianda.com/docs/security/sso/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/sso/</guid><description>
-&lt;p>Single Sign-On(SSO) is an authentication process that allows a user to log in with a single ID to any of several related, yet independent, software systems. Single sign-on allows the user to log in one time and access services without re-entering authentication factors.&lt;/p>
+&lt;p>Single Sign-On (SSO) is an authentication process that allows a user to log in with a single ID to any of several related, yet independent, software systems. Single sign-on allows the user to log in one time and access services without re-entering authentication factors.&lt;/p>
 &lt;p>On Kianda, Single-Sign-On allows the user to login via Single Sign-On connector. This connector for example could be SharePoint, Office365 or Salesforce.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To enable Single-Sign-On, follow the steps below:&lt;/p>
@@ -2410,30 +2410,30 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;li>
 &lt;p>Choose a &lt;strong>Single Sign-On Provider&lt;/strong> by choosing &lt;strong>Office 365&lt;/strong> or &lt;strong>SAML&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Office 365&lt;/strong> allows Office enterprise users to Single Sign-On into their Office 365 account with a single username and password and from there to access web and Software as a Service (applications) like Kianda.&lt;/p>
+&lt;p>&lt;strong>Secure Assertion Markup Language (SAML) 2.0&lt;/strong> enables individuals to access numerous web applications using one set of login credentials. It works by passing authentication data between an identity provider (IdP) and a service provider such as Kianda.&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>If you choose &lt;strong>Office 365&lt;/strong>, you must choose an &lt;strong>Office 365 Connector&lt;/strong> from a dropdown list. This will show Office 365 datasources already created in the &lt;strong>Data sources&lt;/strong> function under &lt;strong>Administration&lt;/strong>. Go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/office-365/">Office 365 data connector&lt;/a> to learn how to create a data source if one doesn&amp;rsquo;t exist.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/office365-signon.jpg" alt="Office 365 data connector">&lt;/p>
+&lt;p>​ &lt;img src="https://docs.kianda.com/images/office365-signon.jpg" alt="Office 365 data connector">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you choose &lt;strong>SAML 2.0&lt;/strong>, you must provide the &lt;strong>SAML 2.0 Target URL&lt;/strong>. This is the SAML 2.0 enabled Idp target URL which is redirected by the HTTP POST.&lt;/p>
+&lt;p>If you choose &lt;strong>SAML 2.0&lt;/strong>, you must provide the &lt;strong>SAML 2.0 Target URL&lt;/strong>. This is the identify provider (Idp ) URL. You can also provide the &lt;strong>SAML 2.0 Token Signing Certificate&lt;/strong> &lt;strong>(.cer)&lt;/strong> by clicking on &lt;strong>Browse&lt;/strong> to navigate, find and add the cert, a .cer file to the details page.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/saml.jpg" alt="SAML options">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>For &lt;strong>Auto redirect to SSO&lt;/strong> choose from &lt;strong>No&lt;/strong> or &lt;strong>Yes&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> then users cannot login with their Kianda username and password directly, and are automatically redirected to the configured SSO provider for authentication.&lt;/p>
 &lt;ul>
-&lt;li>You can also provide the &lt;strong>SAML 2.0 Token Signing Certificate&lt;/strong> &lt;strong>(.cer)&lt;/strong> by clicking on &lt;strong>Browse&lt;/strong> to navigate, find and add the cert, a .cer file to the details page.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>For &lt;strong>Auto redirect to SSO&lt;/strong> choose from &lt;strong>No&lt;/strong> or &lt;strong>Yes&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> then users cannot login with their Kianda username and password directly, and are automatically redirected to the configured SSO provider for authenticaion.&lt;/p>
-&lt;ul>
-&lt;li>However if you have an external set of users, for example contractor who need access to Kianda, you can set a &lt;strong>SSO bypass group.&lt;/strong> You must define a group of users in advance using the &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">&lt;strong>Users&lt;/strong>&lt;/a> function under &lt;strong>Administration&lt;/strong>. From here you can define a group of users that can login using Kianda&amp;rsquo;s username and password. Use this option for users that are external for the configured SSO provider, so they can go directly to the workspace login page to login.&lt;/li>
+&lt;li>However if you have an external set of users, for example contractor who need access to Kianda, you can set a &lt;strong>SSO bypass group.&lt;/strong> You must define a group of users in advance, using the group creation option within the &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">&lt;strong>Users&lt;/strong>&lt;/a> function under &lt;strong>Administration&lt;/strong>. From here you can define a group of users that can login using Kianda&amp;rsquo;s username and password. Use this option for users that are external for the configured SSO provider, so they can go directly to the workspace login page to login.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>For the option &lt;strong>Default &amp;ldquo;Remember Me&amp;rdquo; to false&lt;/strong> choose from &lt;strong>No&lt;/strong> or &lt;strong>Yes&lt;/strong>, to remember the login details.&lt;/p>
+&lt;p>For the option &lt;strong>Default &amp;ldquo;Remember Me&amp;rdquo; to false&lt;/strong> choose from &lt;strong>No&lt;/strong> or &lt;strong>Yes&lt;/strong>, to remember the login credentials.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>When you have completed your edits, click on &lt;strong>Save Changes&lt;/strong> or click on &lt;strong>Back&lt;/strong> at any time to exit the page without saving.&lt;/p>
+&lt;p>When you have completed your edits, click on &lt;strong>Save Changes&lt;/strong> or click on the &lt;strong>Back&lt;/strong> button at any time to exit the page without saving.&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>Docs: Data residency</title><link>https://docs.kianda.com/docs/security/data-residency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/data-residency/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">

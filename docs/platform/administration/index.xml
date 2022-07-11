@@ -545,6 +545,9 @@
 &lt;/ol>
 &lt;h3 id="importing-and-exporting-users">Importing and exporting users&lt;/h3>
 &lt;p>In addition to clicking on the &lt;strong>Create new user&lt;/strong> button &lt;img src="https://docs.kianda.com/images/create-new-user-button.jpg" alt="Create new user button"> you can import users using an Excel file by clicking on the &lt;strong>Bulk import users&lt;/strong> button.&lt;/p>
+&lt;h2 id="groups">Groups&lt;/h2>
+&lt;p>When you create predefined &lt;strong>groups,&lt;/strong> you can use these group names in a myriad of ways, for example to create a set of finance managers who can then be listed as &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">form owners&lt;/a> to edit forms in process instances for procurement, or a set of contractors in an &lt;a href="https://docs.kianda.com/docs/security/sso/">SSO bypass group&lt;/a> who can go the workspace login page to login to Kianda.&lt;/p>
+&lt;p>Existing groups appear within the &lt;strong>Groups&lt;/strong> section of the &lt;strong>User management page&lt;/strong>, showing the &lt;strong>name&lt;/strong> of the group, the &lt;strong>number of members&lt;/strong> with options to &lt;strong>search&lt;/strong> for groups, &lt;strong>delete&lt;/strong> groups and &lt;strong>create&lt;/strong> new groups.&lt;/p>
 &lt;h3 id="viewing-and-editing-group-members">Viewing and editing group members&lt;/h3>
 &lt;ol>
 &lt;li>Click on the radio button beside the group name to see the group members.&lt;/li>
