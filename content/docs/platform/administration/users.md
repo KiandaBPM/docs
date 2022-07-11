@@ -135,30 +135,41 @@ In addition to clicking on the **Create new user** button ![Create new user butt
 
 When you create predefined **groups,** you can use these group names in a myriad of ways, for example to create a set of finance managers who can then be listed as [form owners](/docs/platform/application-designer/forms/form-owners/) to edit forms in process instances for procurement, or a set of contractors in an [SSO bypass group](/docs/security/sso/) who can go the workspace login page to login to Kianda.
 
-Existing groups appear within the **Groups** section of the **User management page**, showing the **name** of the group, the **number of members** with options to **search** for groups, **delete** groups and **create** new groups.
+![Groups in User Management](/images/groups.jpg)
+
+Existing groups appear within the **Groups** section of the **User management page**, showing the **name** of the group and the **number of members**.
+
+From this main view you can:
+
+- [view and edit group members](#viewing-and-editng-group-members)
+- [view and edit group details](#viewing-and-editing-group-details)
+- [create a new group](#creating-new-groups)
+- delete groups
 
 
 
 
 ### Viewing and editing group members
 
-1. Click on the radio button beside the group name to see the group members. 
+1. Click on the radio button beside the **group name** in the main view to see the group members. 
 
 ![Group membership](/images/group-members.jpg)
 
 2. From this view you can **remove a user from the group** by checking the checkbox beside a user name and click on **Remove user(s) from group**. 
 
-3. You can also change **users** from the current group **to another group** by clicking on the dropdown list of group names, by choosing a group, checking the checkbox beside the username and click on **Add user(s) to group**.
+3. You can also change **users** from the current group **to another group** by clicking on the dropdown list of group names, by choosing a group, checking the checkbox beside the username.
 
    ![Add user to group](/images/add-user-to-group.jpg)
 
+4. Click on **Add user(s) to group**.
+   
    **Note**: You can only add users to groups, if you yourself are an administrator for the group, see next section.
 
 
 
 ### Viewing and editing group details
 
-1. Click on the **group name** to see details for a group.
+1. Click on the **group name** in the main view to see details for a group.
 2. The **Edit group 'Name'** dialog box appears. 
 
 ![Edit group dialog box](/images/edit-group.jpg)
@@ -172,6 +183,14 @@ Existing groups appear within the **Groups** section of the **User management pa
    - **Group administrators** - only users or groups listed here can manage the group; if you leave the field blank then Kianda administrators can manage the group
 
 4. To delete a group, click on the **Bin/Trash** icon. 
+
+
+
+### Creating new groups
+
+1. To create a new group, click on the **Create new group** button in the main view.
+2. In the **Add group** dialog 
+3. The **Edit group 'Name'** dialog box appears. 
 
 
 
