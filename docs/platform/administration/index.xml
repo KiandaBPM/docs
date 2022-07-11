@@ -527,7 +527,14 @@
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="importing-and-exporting-users">Importing and exporting users&lt;/h3>
-&lt;p>In addition to clicking on the &lt;strong>Create new user&lt;/strong> button &lt;img src="https://docs.kianda.com/images/create-new-user-button.jpg" alt="Create new user button"> you can import users using an Excel file by clicking on the &lt;strong>Bulk import users&lt;/strong> button.&lt;/p>
+&lt;p>In addition to clicking on the &lt;strong>Create new user&lt;/strong> button &lt;img src="https://docs.kianda.com/images/create-new-user-button.jpg" alt="Create new user button"> you can &lt;strong>import&lt;/strong> users using an Excel file by clicking on the &lt;strong>Bulk import users&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bulk-import-users.jpg" alt="Bulk import users">. The &lt;strong>Import users&lt;/strong> dialog box opens.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/import-users.jpg" alt="Import users dialog box">&lt;/p>
+&lt;p>In the &lt;strong>Import users&lt;/strong> dialog box you can:&lt;/p>
+&lt;ul>
+&lt;li>Click on &lt;strong>Browse User Import Excel File&lt;/strong> to browse for a file of users to add.&lt;/li>
+&lt;li>Click on &lt;strong>Download sample user import Excel file&lt;/strong> to see the file structure needed to import users. The key user fields here are: Email, First Name, Last Name, Display Name and optional is Telephone number.&lt;/li>
+&lt;/ul>
+&lt;p>You can &lt;strong>export&lt;/strong> a list of users by clicking on the &lt;strong>Export to csv&lt;/strong> button &lt;img src="https://docs.kianda.com/images/export-to-csv.jpg" alt="Export to csv">. The resulting file will list users by &lt;strong>display name&lt;/strong>, &lt;strong>email&lt;/strong>, &lt;strong>primary role&lt;/strong> and &lt;strong>groups&lt;/strong> they are members of.&lt;/p>
 &lt;h2 id="groups">Groups&lt;/h2>
 &lt;p>When you create predefined &lt;strong>groups,&lt;/strong> you can use these group names in a myriad of ways, for example to create a set of finance managers who can then be listed as &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">form owners&lt;/a> to edit forms in process instances for procurement, or a set of contractors in an &lt;a href="https://docs.kianda.com/docs/security/sso/">SSO bypass group&lt;/a> who can go the workspace login page to login to Kianda.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/groups.jpg" alt="Groups in User Management">&lt;/p>
