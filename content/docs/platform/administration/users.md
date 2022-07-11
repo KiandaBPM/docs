@@ -131,6 +131,14 @@ In addition to clicking on the **Create new user** button ![Create new user butt
 
 
 
+## Groups ##
+
+When you create predefined **groups,** you can use these group names in a myriad of ways, for example to create a set of finance managers who can then be listed as [form owners](/docs/platform/application-designer/forms/form-owners/) to edit forms in process instances for procurement, or a set of contractors in an [SSO bypass group](/docs/security/sso/) who can go the workspace login page to login to Kianda.
+
+Existing groups appear within the **Groups** section of the **User management page**, showing the **name** of the group, the **number of members** with options to **search** for groups, **delete** groups and **create** new groups.
+
+
+
 
 ### Viewing and editing group members
 
