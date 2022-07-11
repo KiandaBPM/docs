@@ -1,5 +1,9 @@
 ---
 title: "Users & Groups"
+linkTitle: "Add Controls and rules"
+weight: 7
+description: >
+How to manage users and groups in Kianda as an administrator.
 typora-root-url: ..\..\..\..\static
 ---
 
