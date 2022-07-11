@@ -1,5 +1,7 @@
 ---
 title: "Version history"
+description: >
+   How to manage process versions in Kianda.
 typora-root-url: ..\..\..\..\..\static
 ---
 
