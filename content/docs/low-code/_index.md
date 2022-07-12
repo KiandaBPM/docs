@@ -3,8 +3,6 @@ title: "What is Low-Code Development?"
 linkTitle: "Low-code development"
 weight: 4
 typora-root-url: ..\..\..\static
-toc_hide: true
-hide_summary: true
 ---
 
 Kianda comes with several pre-defined field, rule and dashboard widgets. In case you want to create something else to satisfy your specific needs you can create your own custom widget if you have some level of development skills. Kianda uses EmberJS to build modern web applications, and in particular the Handlebars templating library to power the application's user interface.

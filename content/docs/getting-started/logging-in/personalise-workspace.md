@@ -77,6 +77,7 @@ We will now go through each of these four sections of the wizard for a sample co
 ![Subscription settings](/images/setup_wizard_subscription_page.jpg)
 
 
+
 ### What's next  ![Idea icon](/images/18.png) ###
 
 Go to **[Create your first Kianda process](/docs/getting-started/create-first-process/)** to start creating your first process.

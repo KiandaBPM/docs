@@ -3,7 +3,7 @@ title: "Help"
 typora-root-url: ..\..\..\..\static
 ---
 
-The **Help** function is available to all users of all roles and is found in the left-hand side pane, under **More**. Help contains a list of Frequently Asked Questions (FAQs) designed to help you when you are using the Kianda workspace. You can search a topic and filter by keywords. There is also a short video to help you get started. 
+The **Help** function is available to all users of all roles and is found in the left-hand side pane, under **More**. Help contains a list of Frequently Asked Questions (FAQs) designed to help you when you are using the Kianda workspace. You can search a topic and filter by keywords. There is also a short Get started video available to introduce the platform and how to create a simple process with forms and fields.
 
 
 
@@ -45,7 +45,9 @@ In addition to getting support, we welcome your feedback. Your thoughts and sugg
 
 3. Click on **OK** to submit your feedback or **Close** to close the dialog box. 
 
-   
+**Note**: We also welcome feedback on this **documentation**. Please feel free to indicate if this or other pages are helpful by using the **Yes** and **No** buttons at the bottom of the page. Alternatively you can provide feedback/comments via github by clicking on the **documentation issue** button ![Documentation issue button](/images/documentation-issue.jpg) in the right-hand pane of this and other documentation pages.
+
+![Feedback via github](/images/feedback-github.jpg)
 
 ### What's next  ![Idea icon](/images/18.png) ###
 

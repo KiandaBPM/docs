@@ -1,5 +1,6 @@
 ---
 title: "Form responsive layout"
+typora-root-url: ..\..\..\..\..\static
 ---
 
 Responsive layout refers to the fact that all forms will display equally well on laptop screens, tablets and mobile phone screens. As a form designer you can set the appearance of form fields using the layout function.  

@@ -7,15 +7,15 @@ The **Quick action menu** contains all the shortcuts that you need to manage you
 
 ![Quick action menu](/images/quick-action-menu.jpg)
 
-If you have an **Administrator** role you will see five buttons, other roles will see three buttons listed below:
+If you have an **Administrator** role you will see five buttons from your workspace **home** page, other roles will see three buttons listed below:
 
 The buttons include:
 
-- [Create a new page](#create-a-new-page)  ![Create new page button](/images/new-page-button.jpg)- **Administrators** can use this function to create a **new dashboard page**.
-- [Edit current page](#edit-current-page) ![Edit current page button](/images/edit-current-page.jpg) - **Administrators** can use this function to edit a dashboard **page**. 
-- [Online session refresh](#Online session refresh) ![Refresh button](/images/refresh.png) - **All users** can use this function to **refresh a session** to allow offline use.
-- [User notifications](#User notifications) ![Notifications button](/images/notifications.png) - provides notifications to **all users** such as being assigned forms to edit or reassign.
-- [User profile](#User profile) ![User profile](/images/userprofile.png)- allows **all users** to change profile details, such as working offline or changing password.
+- [Create a new page](#create-a-new-page)  ![Create new page button](/images/new-page-button.jpg) **Administrators** can use this function to create a **new dashboard page**.
+- [Edit current page](#edit-current-page) ![Edit current page button](/images/edit-current-page.jpg) **Administrators** can use this function to edit a dashboard **page**. 
+- [Online session refresh](#online-session-refresh) ![Refresh button](/images/refresh.png) **All users** can use this function to **refresh a session** to allow offline use.
+- [User notifications](#user-notifications) ![Notifications button](/images/notifications.png) provides notifications to **all users** such as being assigned forms to edit or reassign.
+- [User profile](#user-profile) ![User profile](/images/userprofile.png)allows **all users** to change profile details, such as working offline or changing password.
 
 Click on each link above to find out more about each button.
 
@@ -26,22 +26,22 @@ Administrators can create a new dashboard page that connects to a chosen process
 1. Click on the **Create new page** ![Create new page button](/images/new-page-button.jpg) button.
 
 2. The **Create dashboard page** dialog box opens. 
+
     ![Create dashboard page](/images/new-dashboard-page.jpg)
 
     In this dialog box fill out the following fields:
 
     - **Title** - give the dashboard a title.
     - **Name** - this field is autofilled from the title field and creates a unique ID for the dashboard page.
-    - **Visible to** - choose from **Users** and/or **Groups** of users who will see this dashboard.
-    - **Icon** - choose from hundreds of icons to represent your dashboard in the left-hand pane
+    - **Visible to** - choose from **Users** and/or **Groups** of users who will see this dashboard. In this way you are setting the first level of security for the dashboard, see [Dashboard security](/docs/security/process-level-security/#dashboard-security) for more details.
+    - **Icon** - choose from hundreds of icons to represent your dashboard in the left-hand pane.
     - **Sort order** - enter a numeric value to set the order of display in a dashboard group, for example a dashboard called **Induction** has a sort order value of '1', while a dashboard called **Annual leave** has a value of '2'. The dashboards will display in chronological order according to the values associated with them.
     - **Group** - choose an existing group or create a new group to add the dashboard to. As soon as two dashboard pages are added to a group, then the group will appear in the left-hand pane, for example see **HR dashboards group** below with 2 dashboards: **Induction** and **Annual leave**. 
     ![Dashboard group](/images/dashboard-group.jpg)
     - **Enable favourites** - allows you to set this dashboard as a 'favourite'. If you check the checkbox then users will see a **Add to favourites** button in the **Quick actions menu**, allowing them to add this dashboard to a 'favourites' catalog. 
     - ![Favourite dashboard](/images/favourite-dashboard.jpg)
 3. Click on **OK** when complete, or **Close** to exit the dialog box. 
-
-To find out more about dashboards go to the [Dashboards](/docs/platform/pages/) section of the documentation. 
+4. From there you are in the main dashboard view where you can add dashboard **widgets** to display lists or charts or edit the **settings** for the dashboard page. To find out more about dashboards go to the [Dashboards](/docs/platform/pages/) section of the documentation. 
 
  
 
@@ -62,13 +62,17 @@ Administrators can edit an existing dashboard page by clicking on the dashboards
 
 ### Online session refresh ##
 
-You can use Kianda offline and view dashboards even without internet access. To synchronise dashboards, with system data:
-1. Click on the ![Online session refresh button](/images/refresh.png) to synchronise data. 
+You can use Kianda offline for example to view dashboards even without internet access. To synchronise dashboards with system data:
+1. Click on the **Online session** button ![Online session refresh button](/images/refresh.png) to synchronise data. 
 
 2. A **Synchronising** message appears, followed by a **Ready for offline use** notification.
    ![Synchronising message](/images/synchronising-offline.jpg)
+
+3. You can view dashboards even without internet access.
+
+**Note**: You can switch to offline mode by clicking on your profile and slide the **work offline** toggle to 'on' see [User profile](#user-profile) below.
+
    
-3. At this point you can view dashboards even without internet access. 
 
 ### User notifications ##
 
