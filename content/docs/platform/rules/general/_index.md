@@ -31,9 +31,7 @@ Rules are an important component of any process as they can be used to trigger a
 
   
 
-## Working with rules
-
-### When to add a rule
+## When to add a rule
 
 - [x] to a field
 
@@ -42,9 +40,10 @@ Rules are an important component of any process as they can be used to trigger a
 - [x] to a process (the rule will run on load)
 
 
-### How to view a rule
 
-To view existing rules:
+## How to view a rule
+
+If rules have already been created 
 
 1. Select the field or form that contains a rule, for example a button at the end of a form. If a field within a form which rules attached this will be indicated within the form, as shown in the example below where the column **Instances** has **1 rule** attached.
 
@@ -57,13 +56,14 @@ To view existing rules:
 3. Details of the rule are available in the **Edit rule** dialog box, for example the **Set form field** rule is shown below.  
    ![Rule details](/images/rule-details-examples.jpg)
 
-You can view rule conditions by clicking on **Edit conditions** and actions to be performed as part of the 		rule are under **Action**. Other features to note in the dialog box are:
+You can view rule conditions by clicking on **Edit conditions** and actions to be performed as part of the rule are under **Action**. Other features to note in the dialog box are:
 
-- Expression button ![Expression button](/images/expression-button.jpg)
+- **Expression** button ![Expression button](/images/ellipsis_frame.png)
+- Mapping
 
 
 
-### How to add a rule
+## How to add a rule
 
 To add a rule to a specific component:
 
@@ -75,7 +75,7 @@ To add a rule to a specific component:
 
 
 
-### How to copy a rule
+## How to copy a rule
 
 Duplicating rules can be very useful where you have similar rules that are associated with different fields. To duplicate a rule:
 
@@ -89,7 +89,7 @@ Duplicating rules can be very useful where you have similar rules that are assoc
 
 
 
-### How to edit a rule
+## How to edit a rule
 
 Follow the steps to [View an existing rule](#how-to-view-a-rule) to open the **Edit rule** dialog box.
 
@@ -101,7 +101,7 @@ In the Edit rule dialog box, you can change:
 
 
 
-### How to disable a rule
+## How to disable a rule
 
 Disabling a rule means that the rule is not active but is still visible in the **Rules** pane. The rule can be activated at any time again by clicking on the toggle button.
 
@@ -117,7 +117,7 @@ Disabling a rule means that the rule is not active but is still visible in the *
 
 
 
-### Where to place a rule in a list of rules
+## Where to place a rule in a list of rules
 
 The rule order refers to the order of execution of multiple rules. To change the rule order:
 
