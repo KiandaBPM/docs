@@ -30,8 +30,7 @@
 &lt;p>&lt;strong>SharePoint&lt;/strong> - Provides a variety of operations to be performed on the SharePoint connection. These rules include operations like create a list, find a user, define permission to an item, check-in / out an item or adding a user to a SharePoint group.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="working-with-rules">Working with rules&lt;/h2>
-&lt;h3 id="when-to-add-a-rule">When to add a rule&lt;/h3>
+&lt;h2 id="when-to-add-a-rule">When to add a rule&lt;/h2>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/p>
@@ -43,8 +42,8 @@
 &lt;p>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-view-a-rule">How to view a rule&lt;/h3>
-&lt;p>To view existing rules:&lt;/p>
+&lt;h2 id="how-to-view-a-rule">How to view a rule&lt;/h2>
+&lt;p>If rules have already been created&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Select the field or form that contains a rule, for example a button at the end of a form. If a field within a form which rules attached this will be indicated within the form, as shown in the example below where the column &lt;strong>Instances&lt;/strong> has &lt;strong>1 rule&lt;/strong> attached.&lt;/p>
@@ -61,9 +60,10 @@
 &lt;/ol>
 &lt;p>You can view rule conditions by clicking on &lt;strong>Edit conditions&lt;/strong> and actions to be performed as part of the rule are under &lt;strong>Action&lt;/strong>. Other features to note in the dialog box are:&lt;/p>
 &lt;ul>
-&lt;li>Expression button &lt;img src="https://docs.kianda.com/images/expression-button.jpg" alt="Expression button">&lt;/li>
+&lt;li>&lt;strong>Expression&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis_frame.png" alt="Expression button">&lt;/li>
+&lt;li>Mapping&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-add-a-rule">How to add a rule&lt;/h3>
+&lt;h2 id="how-to-add-a-rule">How to add a rule&lt;/h2>
 &lt;p>To add a rule to a specific component:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -76,7 +76,7 @@
 &lt;p>Edit the &lt;strong>rule dialog box&lt;/strong> and click &amp;lsquo;&lt;strong>OK&lt;/strong>&amp;rsquo;. The rule will be displayed on the right-hand side of the page.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="how-to-copy-a-rule">How to copy a rule&lt;/h3>
+&lt;h2 id="how-to-copy-a-rule">How to copy a rule&lt;/h2>
 &lt;p>Duplicating rules can be very useful where you have similar rules that are associated with different fields. To duplicate a rule:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -92,7 +92,7 @@
 &lt;p>Alternatively select &lt;strong>OK&lt;/strong> without copying to another field or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="how-to-edit-a-rule">How to edit a rule&lt;/h3>
+&lt;h2 id="how-to-edit-a-rule">How to edit a rule&lt;/h2>
 &lt;p>Follow the steps to &lt;a href="#how-to-view-a-rule">View an existing rule&lt;/a> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
 &lt;p>In the Edit rule dialog box, you can change:&lt;/p>
 &lt;ol>
@@ -100,7 +100,7 @@
 &lt;li>Create or edit conditions for the rule by clicking on the &lt;strong>Edit conditions&lt;/strong> button.&lt;/li>
 &lt;li>Change how the rule performs by changing details under &lt;strong>Action&lt;/strong>. Actions will differ depending on the rule in use.&lt;/li>
 &lt;/ol>
-&lt;h3 id="how-to-disable-a-rule">How to disable a rule&lt;/h3>
+&lt;h2 id="how-to-disable-a-rule">How to disable a rule&lt;/h2>
 &lt;p>Disabling a rule means that the rule is not active but is still visible in the &lt;strong>Rules&lt;/strong> pane. The rule can be activated at any time again by clicking on the toggle button.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -115,7 +115,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-enabled.jpg" alt="Rule enabled">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="where-to-place-a-rule-in-a-list-of-rules">Where to place a rule in a list of rules&lt;/h3>
+&lt;h2 id="where-to-place-a-rule-in-a-list-of-rules">Where to place a rule in a list of rules&lt;/h2>
 &lt;p>The rule order refers to the order of execution of multiple rules. To change the rule order:&lt;/p>
 &lt;ol>
 &lt;li>
