@@ -1,7 +1,7 @@
 ---
 title: "Contribution guidelines"
-hidden: true
-unlisted: true
+toc_hide: true
+hide_summary: true
 ---
 
 
