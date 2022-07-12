@@ -69,7 +69,11 @@
 &lt;li>
 &lt;p>&lt;strong>Request form&lt;/strong> settings are now complete. Press &lt;strong>OK&lt;/strong> to accept the changes, this will bring you back to the process creation page.&lt;/p>
 &lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>save&lt;/strong> &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save button"> button to save any progress of your process. Remember to save your process when you make changes to it.&lt;/p>
+&lt;/li>
 &lt;/ol>
+&lt;img src="https://docs.kianda.com/videos/gifs/common/save-process.gif"/>
 &lt;h3 id="form-layout">Form Layout&lt;/h3>
 &lt;p>On the &lt;strong>Request form&lt;/strong> there is 5 different fields which will be used to make a request for an inspection:&lt;/p>
 &lt;ul>
@@ -388,9 +392,11 @@
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="inspection-form">Inspection Form&lt;/h2>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Section under construction.&lt;/p>
-&lt;/div>
+&lt;p>Here we will create an &lt;strong>Inspection Form&lt;/strong> for our process. The form will be used by our engineer, he will fill it out and submit it. We will add a rule to &lt;strong>Generate a word document&lt;/strong> and a rule to &lt;strong>Convert to PDF&lt;/strong>. The PDF file will be then sent to the &lt;strong>Safety Manager&lt;/strong> which we will get from the &lt;strong>Request Form&lt;/strong>. First we need to create a new &lt;strong>Inspection Form&lt;/strong>.&lt;/p>
+&lt;h3 id="create-new-form">Create new form&lt;/h3>
+&lt;ol>
+&lt;li>In the process creation page, click on &lt;strong>Add form&lt;/strong>&lt;/li>
+&lt;/ol>
 &lt;h2 id="dashboard">Dashboard&lt;/h2>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Section under construction.&lt;/p>
