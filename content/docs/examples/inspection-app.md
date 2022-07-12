@@ -68,6 +68,10 @@ For this **Inspection process** we will create two different forms.
 
 4. **Request form** settings are now complete. Press **OK** to accept the changes, this will bring you back to the process creation page.
 
+5. Click on the **save** ![Save button](/images/saveprocess.png) button to save any progress of your process. Remember to save your process when you make changes to it.
+
+<img src="/videos/gifs/common/save-process.gif"/>
+
 ### Form Layout
 
 On the **Request form** there is 5 different fields which will be used to make a request for an inspection:
@@ -368,9 +372,15 @@ This rule will be used to send an email to the selected **Engineer**. We will be
 
 ## Inspection Form
 
-{{% pageinfo color="primary" %}}
-Section under construction.
-{{% /pageinfo %}}
+Here we will create an **Inspection Form** for our process. The form will be used by our engineer, he will fill it out and submit it. We will add a rule to **Generate a word document** and a rule to **Convert to PDF**. The PDF file will be then sent to the **Safety Manager** which we will get from the **Request Form**. First we need to create a new **Inspection Form**.
+
+### Create new form
+
+1. In the process creation page, click on **Add form** 
+
+
+
+
 
 
 
