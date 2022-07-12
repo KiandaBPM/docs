@@ -43,9 +43,9 @@ For this **Inspection process** we will create two different forms.
 - **Request form** which will be used to request an inspection
 - **Inspection form** which will be used by an engineer to complete the inspection.
 
-### Request Form
+## Request Form
 
-#### Form Settings
+### Form Settings
 
 1. From the process creation page, click on **form 1** to select the form. This can be found at the top of your screen. 
 
@@ -57,7 +57,7 @@ For this **Inspection process** we will create two different forms.
 
    - **Title** - Name to represent this form. In our case we will call it **Request Form**.
    - **Name (unique)** - A unique identifier for our form. You can give this any name you would like as long as it's unique.
-   - **Default owner(s)** - This field identifies which users can fill out our form when it's complete. In our case we will choose from **Groups** and choose our **Management Team**. *put a link leading to group creation.*
+   - **Default owner(s)** - This field identifies which users can fill out our form when it's complete. In our case we will choose from **Groups** and choose our **Management Team** - [How to create groups in Kianda](/docs/platform/administration/users/#creating-new-groups).
    - **Activate with** - We can avoid this field. We will cover this in later use cases. 
    - **Submit mode** - Choose **Only this form** radio list. 
    - **Form icon** - Dropdown field to select an icon for the form.
@@ -68,7 +68,7 @@ For this **Inspection process** we will create two different forms.
 
 4. **Request form** settings are now complete. Press **OK** to accept the changes, this will bring you back to the process creation page.
 
-#### Form Layout
+### Form Layout
 
 On the **Request form** there is 5 different fields which will be used to make a request for an inspection:
 
@@ -76,11 +76,11 @@ On the **Request form** there is 5 different fields which will be used to make a
 - **Location** - What location of that company we need to go to.
 - **Engineer** - Assign an engineer to complete the inspection.
 - **Safety Manager** - Assign a safety manager which will receive a completed **Inspection form**. 
-- **Status** - Field representing the status of the process. For example the status can be **Open** or **Completed**.
+- **Status** - Field representing the status of the process. For example the status can be **Requested** or **Completed**.
 
-#### Creating Fields
+### Company field
 
-##### ***Company*** - List input.
+The **Company** field represents the company we want our inspection to take place at. It is a **List** input which is populated from our **SharePoint** datasource. [Learn more about List input](/docs/platform/controls/input/list/).
 
 <br>
 
@@ -104,9 +104,9 @@ On the **Request form** there is 5 different fields which will be used to make a
 
 6. Select the **Data source** within the **List source** radio list.
 
-7. Click on the **datasource** ![Datasource button](/images/datasource-button-blue.jpg) button. This will open a data source selector box. To learn more about adding a SharePoint data connector, follow this link. [Connecting to sharepoint](/docs/platform/connectors/sharepoint/)
+7. Click on the **datasource** ![Datasource button](/images/datasource-button-blue.jpg) button. This will open a data source selector box. To learn more about adding a SharePoint data connector, follow this link [Connecting to sharepoint](/docs/platform/connectors/sharepoint/).
 
-8. Click on your SharePoint connector and select **Companies**. Press **OK** ![Ok button](/images/ok-16402622244922.png) on the Datasource popup.
+8. Click on your SharePoint connector and select **Companies**. Click on **OK** on the Datasource popup.
 
    ***SharePoint Companies List***
 
@@ -114,13 +114,13 @@ On the **Request form** there is 5 different fields which will be used to make a
 
 9. From the dropdown on the **Display, Value** and **Sort by** fields select **Title**.
 
-10. Leave all of the other options as default. Press **OK **![Ok button](/images/ok-16402622244922.png)
+10. Leave all of the other options as default. Click on **OK **in the **Edit** **field** popup.
 
 <br>
 
-#####   ***Location*** - List input.
+###   Location field
 
-The location field is a cascading dropdown selection which corresponds to the **Company** field (see above). The goal is to display only the **locations** of the selected **company**. Take a look how we achieve this in the below steps.
+The **Location** field represents the location of our inspection. This field is a cascading dropdown selection which corresponds to the **Company** field (see above). The goal is to display only the **locations** of the selected **company**. We will add a condition to this field, you can see how that's done below. [How to create cascading dropdown lists](/docs/how-to/create-cascading-dropdown-lists/).
 
 <br>
 
@@ -146,7 +146,7 @@ The location field is a cascading dropdown selection which corresponds to the **
 
 7. Click on the **datasource** ![Datasource button](/images/datasource-button-blue.jpg) button. This will open a data source selector box.
 
-8. Click on your SharePoint connector and select **Location**. Click **OK** ![Ok button](/images/ok-16402622244922.png) on the Datasource popup.
+8. Click on your SharePoint connector and select **Location**. Click **OK** on the Datasource popup.
 
    ***SharePoint Locations List***
 
@@ -166,11 +166,13 @@ The location field is a cascading dropdown selection which corresponds to the **
 
 14. Click on **OK** ![Ok button](/images/ok-16402622244922.png)on **Edit conditions** popup.
 
-15. Leave all of the other options as default. Press **OK** ![Ok button](/images/ok-16402622244922.png)
+15. Leave all of the other options as default. Click on **OK** in the **Edit field** popup.
 
 
 
-##### ***Engineer*** - User picker input.
+### Engineer field
+
+The **Engineer** field represents the engineer we want to complete the inspection. This field is a **User picker** field in which we can pick any of our Kianda users.
 
 <br>
 
@@ -189,9 +191,9 @@ The location field is a cascading dropdown selection which corresponds to the **
 5. Change the **Name (unique)** to a unique identifier.
 6. Click on **OK** ![Ok button](/images/ok-16402622244922.png)to save.
 
-##### ***Safety Manager*** - User picker field.
+### Safety Manager field
 
-This field is a **User picker** field just like the above **Engineer**. We will go through how to clone a field and add it into our form.
+The **Safety Manager** field represents the manager which requests the inspection. This is a **User picker** field just like the above **Engineer**. We will go through how to clone a field and add it into our form.
 
 <br>
 
@@ -213,9 +215,9 @@ This field is a **User picker** field just like the above **Engineer**. We will 
 8. Change **Name (unique)** to a unique identifier.
 9. Click **OK** ![Ok button](/images/ok-16402622244922.png)to save changes.
 
-##### ***Status*** - text box.
+### Status field
 
-We will make the status field invisible so we can track the inspection progress but not show it to the user. The **Status** field will be used in the dashboard at a later stage in this example.
+The **Status** field represents the current status of the whole process. We will make the status field invisible so we can track the inspection progress but not show it to the user. The **Status** field will be used in the dashboard at a later stage in this example.
 
 <br> <img src="/videos/gifs/examples/inspection/status-field.gif"/>
 
@@ -231,7 +233,140 @@ We will make the status field invisible so we can track the inspection progress 
 8. Select the **Status** field.
 9. In the **Right-hand** pane, under **Field properties** click on the **Visible** checkbox to uncheck it.
 
-### Inspection Form
+### Submit Button
+
+Here we will add 2 rules to the submit button.
+
+- **Set status to Requested** - Sets the status field that we created to ***"Requested"***.
+- **Send email to Engineer** - Sends an email to the selected engineer from the **Engineer field**.
+
+#### Set status to Requested
+
+Here we will be setting our **Status** field to **"Requested"**. We will be using the **Set form field** rule from the **Data** set of rules.
+
+<br>
+
+<img src="/videos/gifs/examples/inspection/status-rule.gif"/>
+
+<br>
+
+<br>
+
+1. Select the **Submit** button by clicking on it. 
+
+2. In the **Left-hand** pane click on the **Add a rule** tab.
+
+3. Click on **Data**.
+
+4. Select **Set form field**.
+
+5. In the **Edit rule** box, change the **Title to** "**Set status to Requested**"
+
+6. Click on **Form field to set** dropdown, in the **Request Form** select **Status** field.
+
+7. In the **Value or expression** box type in ***Requested***.
+
+8. Click on the **OK** button to save rule.
+
+9. With the **Submit** button selected, in the **Right-hand** pane click on the **Rules** tab.
+
+10. The **Set status to Requested** is under the **Close** rule. Drag and drop the **Set status to Requested**  rule to the top of the list.
+
+    <br>
+
+#### Send email to Engineer - Communications rule.
+
+This rule will be used to send an email to the selected **Engineer**. We will be using the **Send email**  rule from the **Communications** set of rules. We will also add **expressions** to our email. [More about expressions](/docs/getting-started/create-first-process/plan-your-process/expressions/).
+
+1. Select the **Submit** button by clicking on it. 
+
+2. In the **Left-hand** pane click on the **Add a rule** tab.
+
+3. Click on **Communications**.
+
+4. Select **Send email**.
+
+5. In the **Edit rule** box, change the **Title to** "**Send email to Engineer**"
+
+6. Click on the person icon ![Person icon](/images/person.png) on the **To:** part of the email.
+
+7. In the **Select email users** box select the **User(s) defined in a user field** radio button.
+
+8. In the **Select a user field** select **Engineer**.
+
+   ![Select email users box](/images/examples-send-email-to.jpg)
+
+9. Change the subject to **New Inspection Request**.
+
+10. Change the body of the email to: 
+
+    <code>Hi, 
+
+    You are requested to visit ...... to complete an inspection for ......
+
+    Please ...... to view the Inspection Form.
+
+    Regards,
+
+    The Safety Team</code>
+
+11. Adding **Expressions**:
+
+    <img src="/videos/gifs/examples/inspection/expressions.gif"/>
+
+    <br>
+
+    <br>
+
+    - **Location** 
+
+      1. To add an **Location** click your cursor where you want to add it. In our case it is in the blank space between the words "visit" and "to".
+      2. Click on the 3 dots button ![3 dots](/images/expression-dots.jpg) on the the **right-hand** side of the **Body** box.
+      3. Click on the **Add field to expression** and select **Location** from the dropdown list.
+      4. Click on **Add to expression** ![Add to expression](/images/addtoexpression.png) button. The expression is added into the **Expression**(unique identifier for that field) window.
+      5. Click on **OK** on the **Expression builder** popup.
+
+    - **Company**
+
+      1. To add an **Company** click your cursor where you want to add it. In our case it is in the blank after the word "for".
+
+      2. Click on the 3 dots button ![3 dots](/images/expression-dots.jpg) on the the **right-hand** side of the **Body** box.
+
+      3. Click on the **X** in the **Add field to expression** field.
+
+         ![Delete expression](/images/delete-expression.jpg)
+
+      4. Click on the **Add field to expression** and select **Company** from the dropdown list.
+
+      5. Click on **Add to expression** ![Add to expression](/images/addtoexpression.png) button. The expression is added into the **Expression**(unique identifier for that field) window.
+
+      6. Click on **OK** on the **Expression builder** popup.
+
+    - **ProcessLink()** - Links you to the open form of this process.
+
+      1. To add the **ProcessLink()** expression, click on the 3 dots button ![3 dots](/images/expression-dots.jpg) on the the **right-hand** side of the **Body** box.
+
+      2. Click on the **Reference** ![Reference button](/images/reference.png) button.
+
+      3. From the **Expression reference** copy **ProcessLink()**
+
+      4. Click on **Close** on the **Express builder** popup to exit.
+
+      5. Paste in the **ProcessLink()** in between "Please" and "to" on the second line of the email.
+
+      6. In the parentheses of the **ProcessLink()** open up quotation marks and in between, type **click here**. 
+
+         <br>
+
+12. Click on **OK** in the **Edit rule** popup.
+
+13. With the **Submit** button selected, in the **Right-hand** pane click on the **Rules** tab.
+
+14. **Send email to Engineer** is located under the **Close** rule. Drag and drop the **Send email to Engineer**  rule in between **Submit process** and **Set status to Requested**.
+
+    <br>
+
+## Inspection Form
 
 {{% pageinfo color="primary" %}}
 Section under construction.
