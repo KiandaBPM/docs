@@ -18,6 +18,11 @@ theme = ["docsy"]
 # Will give values to .Lastmod etc.
 enableGitInfo = true
 
+[[menu.main]]
+    name = "Get Started"
+    weight = 50
+    url = "https://portal.kianda.com/public/signup"
+
 # Comment out to enable taxonomies in Docsy
 # disableKinds = ["taxonomy", "taxonomyTerm"]
 
