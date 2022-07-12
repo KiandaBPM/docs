@@ -1,5 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Your workspace</title><link>https://docs.kianda.com/docs/platform/general/</link><description>Recent content in Your workspace on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/general/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Help</title><link>https://docs.kianda.com/docs/platform/general/help/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/general/help/</guid><description>
-&lt;p>The &lt;strong>Help&lt;/strong> function is available to all users of all roles and is found in the left-hand side pane, under &lt;strong>More&lt;/strong>. Help contains a list of Frequently Asked Questions (FAQs) designed to help you when you are using the Kianda workspace. You can search a topic and filter by keywords. There is also a short video to help you get started.&lt;/p>
+&lt;p>The &lt;strong>Help&lt;/strong> function is available to all users of all roles and is found in the left-hand side pane, under &lt;strong>More&lt;/strong>. Help contains a list of Frequently Asked Questions (FAQs) designed to help you when you are using the Kianda workspace. You can search a topic and filter by keywords. There is also a short Get started video available to introduce the platform and how to create a simple process with forms and fields.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -42,20 +42,22 @@
 &lt;p>Click on &lt;strong>OK&lt;/strong> to submit your feedback or &lt;strong>Close&lt;/strong> to close the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>&lt;strong>Note&lt;/strong>: We also welcome feedback on this &lt;strong>documentation&lt;/strong>. Please feel free to indicate if this or other pages are helpful by using the &lt;strong>Yes&lt;/strong> and &lt;strong>No&lt;/strong> buttons at the bottom of the page. Alternatively you can provide feedback/comments via github by clicking on the &lt;strong>documentation issue&lt;/strong> button &lt;img src="https://docs.kianda.com/images/documentation-issue.jpg" alt="Documentation issue button"> in the right-hand pane of this and other documentation pages.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/feedback-github.jpg" alt="Feedback via github">&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about other support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/support/">Support&lt;/a>.&lt;/p>
 &lt;p>To find out about other platform features, go to &lt;a href="https://docs.kianda.com/docs/platform/">Platform&lt;/a>.&lt;/p></description></item><item><title>Docs: Quick action menu</title><link>https://docs.kianda.com/docs/platform/general/quickaction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/general/quickaction/</guid><description>
 &lt;p>The &lt;strong>Quick action menu&lt;/strong> contains all the shortcuts that you need to manage your pages efficiently. The menu is found in the top right-hand corner of your Kianda workspace.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/quick-action-menu.jpg" alt="Quick action menu">&lt;/p>
-&lt;p>If you have an &lt;strong>Administrator&lt;/strong> role you will see five buttons, other roles will see three buttons listed below:&lt;/p>
+&lt;p>If you have an &lt;strong>Administrator&lt;/strong> role you will see five buttons from your workspace &lt;strong>home&lt;/strong> page, other roles will see three buttons listed below:&lt;/p>
 &lt;p>The buttons include:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="#create-a-new-page">Create a new page&lt;/a> &lt;img src="https://docs.kianda.com/images/new-page-button.jpg" alt="Create new page button">- &lt;strong>Administrators&lt;/strong> can use this function to create a &lt;strong>new dashboard page&lt;/strong>.&lt;/li>
-&lt;li>&lt;a href="#edit-current-page">Edit current page&lt;/a> &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit current page button"> - &lt;strong>Administrators&lt;/strong> can use this function to edit a dashboard &lt;strong>page&lt;/strong>.&lt;/li>
-&lt;li>[Online session refresh](#Online session refresh) &lt;img src="https://docs.kianda.com/images/refresh.png" alt="Refresh button"> - &lt;strong>All users&lt;/strong> can use this function to &lt;strong>refresh a session&lt;/strong> to allow offline use.&lt;/li>
-&lt;li>[User notifications](#User notifications) &lt;img src="https://docs.kianda.com/images/notifications.png" alt="Notifications button"> - provides notifications to &lt;strong>all users&lt;/strong> such as being assigned forms to edit or reassign.&lt;/li>
-&lt;li>[User profile](#User profile) &lt;img src="https://docs.kianda.com/images/userprofile.png" alt="User profile">- allows &lt;strong>all users&lt;/strong> to change profile details, such as working offline or changing password.&lt;/li>
+&lt;li>&lt;a href="#create-a-new-page">Create a new page&lt;/a> &lt;img src="https://docs.kianda.com/images/new-page-button.jpg" alt="Create new page button"> &lt;strong>Administrators&lt;/strong> can use this function to create a &lt;strong>new dashboard page&lt;/strong>.&lt;/li>
+&lt;li>&lt;a href="#edit-current-page">Edit current page&lt;/a> &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit current page button"> &lt;strong>Administrators&lt;/strong> can use this function to edit a dashboard &lt;strong>page&lt;/strong>.&lt;/li>
+&lt;li>&lt;a href="#online-session-refresh">Online session refresh&lt;/a> &lt;img src="https://docs.kianda.com/images/refresh.png" alt="Refresh button"> &lt;strong>All users&lt;/strong> can use this function to &lt;strong>refresh a session&lt;/strong> to allow offline use.&lt;/li>
+&lt;li>&lt;a href="#user-notifications">User notifications&lt;/a> &lt;img src="https://docs.kianda.com/images/notifications.png" alt="Notifications button"> provides notifications to &lt;strong>all users&lt;/strong> such as being assigned forms to edit or reassign.&lt;/li>
+&lt;li>&lt;a href="#user-profile">User profile&lt;/a> &lt;img src="https://docs.kianda.com/images/userprofile.png" alt="User profile">allows &lt;strong>all users&lt;/strong> to change profile details, such as working offline or changing password.&lt;/li>
 &lt;/ul>
 &lt;p>Click on each link above to find out more about each button.&lt;/p>
 &lt;h3 id="create-a-new-page">Create a new page&lt;/h3>
@@ -65,14 +67,14 @@
 &lt;p>Click on the &lt;strong>Create new page&lt;/strong> &lt;img src="https://docs.kianda.com/images/new-page-button.jpg" alt="Create new page button"> button.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Create dashboard page&lt;/strong> dialog box opens.
-&lt;img src="https://docs.kianda.com/images/new-dashboard-page.jpg" alt="Create dashboard page">&lt;/p>
+&lt;p>The &lt;strong>Create dashboard page&lt;/strong> dialog box opens.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/new-dashboard-page.jpg" alt="Create dashboard page">&lt;/p>
 &lt;p>In this dialog box fill out the following fields:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Title&lt;/strong> - give the dashboard a title.&lt;/li>
 &lt;li>&lt;strong>Name&lt;/strong> - this field is autofilled from the title field and creates a unique ID for the dashboard page.&lt;/li>
-&lt;li>&lt;strong>Visible to&lt;/strong> - choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> of users who will see this dashboard.&lt;/li>
-&lt;li>&lt;strong>Icon&lt;/strong> - choose from hundreds of icons to represent your dashboard in the left-hand pane&lt;/li>
+&lt;li>&lt;strong>Visible to&lt;/strong> - choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> of users who will see this dashboard. In this way you are setting the first level of security for the dashboard, see &lt;a href="https://docs.kianda.com/docs/security/process-level-security/#dashboard-security">Dashboard security&lt;/a> for more details.&lt;/li>
+&lt;li>&lt;strong>Icon&lt;/strong> - choose from hundreds of icons to represent your dashboard in the left-hand pane.&lt;/li>
 &lt;li>&lt;strong>Sort order&lt;/strong> - enter a numeric value to set the order of display in a dashboard group, for example a dashboard called &lt;strong>Induction&lt;/strong> has a sort order value of &amp;lsquo;1&amp;rsquo;, while a dashboard called &lt;strong>Annual leave&lt;/strong> has a value of &amp;lsquo;2&amp;rsquo;. The dashboards will display in chronological order according to the values associated with them.&lt;/li>
 &lt;li>&lt;strong>Group&lt;/strong> - choose an existing group or create a new group to add the dashboard to. As soon as two dashboard pages are added to a group, then the group will appear in the left-hand pane, for example see &lt;strong>HR dashboards group&lt;/strong> below with 2 dashboards: &lt;strong>Induction&lt;/strong> and &lt;strong>Annual leave&lt;/strong>.
 &lt;img src="https://docs.kianda.com/images/dashboard-group.jpg" alt="Dashboard group">&lt;/li>
@@ -83,8 +85,10 @@
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
 &lt;/li>
+&lt;li>
+&lt;p>From there you are in the main dashboard view where you can add dashboard &lt;strong>widgets&lt;/strong> to display lists or charts or edit the &lt;strong>settings&lt;/strong> for the dashboard page. To find out more about dashboards go to the &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> section of the documentation.&lt;/p>
+&lt;/li>
 &lt;/ol>
-&lt;p>To find out more about dashboards go to the &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> section of the documentation.&lt;/p>
 &lt;h3 id="edit-current-page">Edit current page&lt;/h3>
 &lt;p>Administrators can edit an existing dashboard page by clicking on the dashboards button when on a selected page.&lt;/p>
 &lt;ol>
@@ -100,19 +104,20 @@
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="online-session-refresh">Online session refresh&lt;/h3>
-&lt;p>You can use Kianda offline and view dashboards even without internet access. To synchronise dashboards, with system data:&lt;/p>
+&lt;p>You can use Kianda offline for example to view dashboards even without internet access. To synchronise dashboards with system data:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click on the &lt;img src="https://docs.kianda.com/images/refresh.png" alt="Online session refresh button"> to synchronise data.&lt;/p>
+&lt;p>Click on the &lt;strong>Online session&lt;/strong> button &lt;img src="https://docs.kianda.com/images/refresh.png" alt="Online session refresh button"> to synchronise data.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>A &lt;strong>Synchronising&lt;/strong> message appears, followed by a &lt;strong>Ready for offline use&lt;/strong> notification.
 &lt;img src="https://docs.kianda.com/images/synchronising-offline.jpg" alt="Synchronising message">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>At this point you can view dashboards even without internet access.&lt;/p>
+&lt;p>You can view dashboards even without internet access.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>&lt;strong>Note&lt;/strong>: You can switch to offline mode by clicking on your profile and slide the &lt;strong>work offline&lt;/strong> toggle to &amp;lsquo;on&amp;rsquo; see &lt;a href="#user-profile">User profile&lt;/a> below.&lt;/p>
 &lt;h3 id="user-notifications">User notifications&lt;/h3>
 &lt;p>This icon alerts you when actions happen associated with processes, for example a form is completed by a user. You will receive a configured message indicating in this case, what form has been completed and by whom.&lt;/p>
 &lt;h3 id="user-profile">User profile&lt;/h3>
