@@ -1030,7 +1030,31 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ol></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save button">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;img src="https://docs.kianda.com/videos/gifs/common/save-process.gif"/>
+&lt;h3 id="creating-form-fields">Creating Form Fields&lt;/h3>
+&lt;p>Taking a look back at our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>, on the &lt;strong>Inspection Form&lt;/strong> there is 5 different fields which will be used to complete an inspection along with 5 inner fields for our table:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Date&lt;/strong> - Representing the day of inspection&lt;/li>
+&lt;li>&lt;strong>Inspection checklist&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Question&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Pass or fail&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Comment&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Upload file&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Image&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Utility panel&lt;/strong> - Assign an engineer to complete the inspection.&lt;/li>
+&lt;li>&lt;strong>Upload template&lt;/strong> - Word template used to create a PDF file.&lt;/li>
+&lt;li>&lt;strong>Generated PDF&lt;/strong> - File field to hold our generated PDF.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
 &lt;h3 id="introduction">Introduction&lt;/h3>
 &lt;p>When working with rules in forms, a key principle to consider is &lt;strong>rule order&lt;/strong>. This is important if there are &lt;strong>multiple rules&lt;/strong> attached to an item like a button. In this case the order of execution is important and can be modified to suit your needs.&lt;/p>
 &lt;p>For example, you may want a &lt;strong>Send email rule&lt;/strong> to be executed once the &lt;strong>Submit&lt;/strong> button is clicked. This will result in an automated email to a designated person. You may also want to attach a report to this email, a report that is a complete form. In this example a &lt;strong>Generate word&lt;/strong> &lt;strong>document&lt;/strong> &lt;strong>rule&lt;/strong> could be used to generate a report when the &lt;strong>Submit&lt;/strong> button is clicked. In this example the &lt;strong>Generate word document rule&lt;/strong> has to be executed before the &lt;strong>Send email rule&lt;/strong>, so that the Word document can be generated and then attached to the email.&lt;/p>
