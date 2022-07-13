@@ -1,0 +1,359 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Simple Inspection process</title><link>https://docs.kianda.com/docs/examples/inspection/</link><description>Recent content in Simple Inspection process on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/examples/inspection/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Request Form</title><link>https://docs.kianda.com/docs/examples/inspection/request-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/request-form/</guid><description>
+&lt;h2 id="creating-the-request-form">Creating the Request Form&lt;/h2>
+&lt;h3 id="configuring-form-settings">Configuring Form Settings&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>From the process creation page, click on &lt;strong>form 1&lt;/strong> to select the form. This can be found at the top of your screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-form-select.jpg" alt="Form selection">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> on the selected form to edit it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>An &lt;strong>Edit form&lt;/strong> dialog box appears on your screen. There are 8 different fields to fill in.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> - Name to represent this form. In our case we will call it &lt;strong>Request Form&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Name (unique)&lt;/strong> - A unique identifier for our form. You can give this any name you would like as long as it&amp;rsquo;s unique.&lt;/li>
+&lt;li>&lt;strong>Default owner(s)&lt;/strong> - This field identifies which users can fill out our form when it&amp;rsquo;s complete. In our case we will choose from &lt;strong>Groups&lt;/strong> and choose our &lt;strong>Management Team&lt;/strong>. To learn more about how to create groups in Kianda go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#creating-new-groups">creating groups&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Activate with&lt;/strong> - Will decide when the form will be active. If you have several forms attached to a process, then select from a dropdown list the form you want to activate with the current form. In our case we will leave this blank.&lt;/li>
+&lt;li>&lt;strong>Submit mode&lt;/strong> - Choose &lt;strong>Only this form&lt;/strong> radio list.&lt;/li>
+&lt;li>&lt;strong>Form icon&lt;/strong> - Dropdown field to select an icon for the form.&lt;/li>
+&lt;li>&lt;strong>Form theme&lt;/strong> - This option is used to change the colour of the form tile, for example &lt;strong>Green&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Enable quick actions&lt;/strong> - if you tick the checkbox, you can select from the options a) Enable re-assign b) Enable edit and c) Enable custom action. We will leave this box unchecked.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-request-form-edit-box.jpg" alt="Edit form box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save button">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;img src="https://docs.kianda.com/videos/gifs/common/save-process.gif"/>
+&lt;h3 id="creating-form-fields">Creating Form Fields&lt;/h3>
+&lt;p>On the &lt;strong>Request form&lt;/strong> there is 5 different fields which will be used to make a request for an inspection:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Company&lt;/strong> - Which company we need the inspection to be completed in.&lt;/li>
+&lt;li>&lt;strong>Location&lt;/strong> - What location of that company we need to go to.&lt;/li>
+&lt;li>&lt;strong>Engineer&lt;/strong> - Assign an engineer to complete the inspection.&lt;/li>
+&lt;li>&lt;strong>Safety Manager&lt;/strong> - Assign a safety manager which will receive a completed &lt;strong>Inspection form&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Status&lt;/strong> - Field representing the status of the process. For example the status can be &lt;strong>Requested&lt;/strong> or &lt;strong>Completed&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="creating-a-list-field--company">Creating a List field- Company&lt;/h4>
+&lt;p>The &lt;strong>Company&lt;/strong> field represents the company we want our inspection to take place at. It is a &lt;strong>List&lt;/strong> input which is populated from our &lt;strong>SharePoint&lt;/strong> datasource. To learn more about &lt;strong>List input&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List Control&lt;/a>.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/company-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>List&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>New field - List&lt;/strong> dialog box will open with a range of options you can choose from for your new List field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>&amp;ldquo;Company&amp;rdquo;&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the &lt;strong>Data source&lt;/strong> within the &lt;strong>List source&lt;/strong> radio list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Datasource&lt;/strong> &lt;img src="https://docs.kianda.com/images/datasource-button-blue.jpg" alt="Datasource button"> button. This will open a data source selector dialog box. To learn more about adding a SharePoint data connector, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/sharepoint/">Connecting to SharePoint&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on your SharePoint connector and select &lt;strong>Companies&lt;/strong>(the companies data should be pre-created in your SharePoint, see the image below for an example). Click on &lt;strong>OK&lt;/strong> on the Datasource dialog box.&lt;/p>
+&lt;p>&lt;em>&lt;strong>SharePoint Companies List&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-sharepoint-companies.jpg" alt="SharePoint companies list">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the dropdown on the &lt;strong>Display, Value&lt;/strong> and &lt;strong>Sort by&lt;/strong> fields select &lt;strong>Title&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Leave all of the other options as default. Click on **OK **in the &lt;strong>Edit&lt;/strong> &lt;strong>field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h4 id="creating-a-list-field--location">Creating a List field- Location&lt;/h4>
+&lt;p>The &lt;strong>Location&lt;/strong> field represents the location of our inspection. This field is a cascading dropdown selection which corresponds to the &lt;strong>Company&lt;/strong> field (see above). The goal is to display only the &lt;strong>locations&lt;/strong> of the selected &lt;strong>company&lt;/strong>. We will add a condition to this field, you can see how that&amp;rsquo;s done below. To learn more about cascading dropdown lists go to &lt;a href="https://docs.kianda.com/docs/how-to/create-cascading-dropdown-lists/">Cascading dropdown lists&lt;/a>.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/location-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>List&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A field edit box will appear in which we change the &lt;strong>Title&lt;/strong> to &lt;strong>&amp;ldquo;Location&amp;rdquo;&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the &lt;strong>Data source&lt;/strong> within the &lt;strong>List source&lt;/strong> radio list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>datasource&lt;/strong> &lt;img src="https://docs.kianda.com/images/datasource-button-blue.jpg" alt="Datasource button"> button. This will open a data source selector box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on your SharePoint connector and select &lt;strong>Location&lt;/strong>(the location data should be pre-created in your SharePoint, see the image below for an example). Click &lt;strong>OK&lt;/strong> on the Datasource dialog box.&lt;/p>
+&lt;p>&lt;em>&lt;strong>SharePoint Locations List&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-sharepoint-locations.jpg" alt="SharePoint companies list">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the dropdown on the &lt;strong>Display, Value&lt;/strong> and &lt;strong>Sort by&lt;/strong> fields select &lt;strong>Locations&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To create the cascading selection we add a condition. Click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit condition&lt;/strong> dialog box, select &lt;strong>Company&lt;/strong> in the first dropdown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Equals&lt;/strong> in the second dropdown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Company&lt;/strong> in the third dropdown.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-edit-conditions.jpg" alt="Edit conditions">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on &lt;strong>Edit conditions&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Leave all of the other options as default. Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="creating-a-user-picker-field---engineer">Creating a User Picker field - Engineer&lt;/h4>
+&lt;p>The &lt;strong>Engineer&lt;/strong> field represents the engineer we want to complete the inspection. This field is a &lt;strong>User picker&lt;/strong> field in which we can pick any of our Kianda users.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/engineer-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/li>
+&lt;li>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/li>
+&lt;li>Click on &lt;strong>User picker&lt;/strong>.&lt;/li>
+&lt;li>In the &lt;strong>Edit field&lt;/strong> box change the &lt;strong>Title&lt;/strong> to &lt;strong>&amp;ldquo;Engineer&amp;rdquo;&lt;/strong>.&lt;/li>
+&lt;li>Change the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">to save.&lt;/li>
+&lt;/ol>
+&lt;h4 id="cloning-a-user-picker-field---safety-manager">Cloning a User Picker field - Safety Manager&lt;/h4>
+&lt;p>The &lt;strong>Safety Manager&lt;/strong> field represents the manager which requests the inspection. This is a &lt;strong>User picker&lt;/strong> field just like the above &lt;strong>Engineer&lt;/strong>. We will go through how to clone a field and add it into our form.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/safety-manager-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>Select the &lt;strong>Engineer&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears. This means you are now in edit mode of the field.&lt;/li>
+&lt;li>Go to the &lt;strong>Right-hand&lt;/strong> pane and click on &lt;strong>Clone&lt;/strong> &lt;img src="https://docs.kianda.com/images/clone.png" alt="Ok button">&lt;/li>
+&lt;li>A &lt;strong>Duplicate or move field&lt;/strong> dialog box appears. Click on the dropdown list and select &lt;strong>Request form&lt;/strong>.&lt;/li>
+&lt;li>Leave &lt;strong>Move field instead&lt;/strong> checkbox unchecked and click &lt;strong>OK&lt;/strong>.&lt;/li>
+&lt;li>Select the &lt;strong>Engineer copy&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/li>
+&lt;li>Click the edit or pen icon&lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">to edit the properties.&lt;/li>
+&lt;li>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Safety Manager&lt;/strong>.&lt;/li>
+&lt;li>Change &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
+&lt;li>Click &lt;strong>OK&lt;/strong> to save changes.&lt;/li>
+&lt;/ol>
+&lt;h4 id="status-field---text-box">Status field - text box&lt;/h4>
+&lt;p>The &lt;strong>Status&lt;/strong> field represents the current status of the whole process. We will make the status field invisible so we can track the inspection progress but not show it to the user. The &lt;strong>Status&lt;/strong> field will be used in the dashboard at a later stage in this example.&lt;/p>
+&lt;p>&lt;br> &lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/status-field.gif"/>&lt;/p>
+&lt;br>
+&lt;ol>
+&lt;li>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/li>
+&lt;li>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/li>
+&lt;li>Click on &lt;strong>Text box&lt;/strong>.&lt;/li>
+&lt;li>Select the &lt;strong>Text box 1&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/li>
+&lt;li>Change the &lt;strong>Title&lt;/strong> to &lt;strong>&amp;ldquo;Status&amp;rdquo;&lt;/strong>.&lt;/li>
+&lt;li>Change &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
+&lt;li>Click on **OK **to save the field.&lt;/li>
+&lt;li>Select the &lt;strong>Status&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/li>
+&lt;li>In the &lt;strong>Right-hand&lt;/strong> pane, under &lt;strong>Field properties&lt;/strong> click on the &lt;strong>Visible&lt;/strong> checkbox to uncheck it. To learn more about field properties, go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties/#field-properties">Field properites&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="adding-rules-to-submit-button">Adding rules to Submit button&lt;/h2>
+&lt;p>To take a look back at our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a> for our &lt;strong>Request form&lt;/strong>, we need 2 rules for the &lt;strong>Submit&lt;/strong> button.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Set status to Requested&lt;/strong> - Sets the status field that we created to &lt;strong>&amp;ldquo;Requested&amp;rdquo;&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Send email to Engineer&lt;/strong> - Sends an email to the selected engineer from the &lt;strong>Engineer field&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="creating-a-set-form-field-rule---set-status-to-requested">Creating a Set form field rule - Set status to Requested&lt;/h4>
+&lt;p>With this rule we will be setting our &lt;strong>Status&lt;/strong> field to &lt;strong>&amp;ldquo;Requested&amp;rdquo;&lt;/strong>. We will be using the &lt;strong>Set form field&lt;/strong> rule from the &lt;strong>Data&lt;/strong> set of rules.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/status-rule.gif"/>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>
+&lt;p>Select the &lt;strong>Submit&lt;/strong> button by clicking on it so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Left-hand&lt;/strong> pane click on &lt;strong>Add a rule&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Data&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Set form field&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule&lt;/strong> dialog box, change the &lt;strong>Title&lt;/strong> to &amp;ldquo;&lt;strong>Set status to Requested&lt;/strong>&amp;rdquo;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Form field to set&lt;/strong> dropdown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Request Form&lt;/strong> select &lt;strong>Status&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Value or expression&lt;/strong> box, type &lt;strong>Requested&lt;/strong>. &lt;img src="https://docs.kianda.com/images/examples-set-form-field.jpg" alt="Set form field dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> button to save rule.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>With the &lt;strong>Submit&lt;/strong> button selected, in the &lt;strong>Right-hand&lt;/strong> pane click on the &lt;strong>Rules&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Set status to Requested&lt;/strong> is under the &lt;strong>Close&lt;/strong> rule. Drag and drop the &lt;strong>Set status to Requested&lt;/strong> rule to the top of the list.&lt;/p>
+&lt;br>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="creating-a-send-email-rule---send-email-to-engineer">Creating a Send email rule - Send email to Engineer&lt;/h4>
+&lt;p>This rule will be used to send an email to the selected &lt;strong>Engineer&lt;/strong>. We will be using the &lt;strong>Send email&lt;/strong> rule from the &lt;strong>Communications&lt;/strong> set of rules. In this rule we will add expressions, to learn more go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/">Expressions&lt;/a>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the &lt;strong>Submit&lt;/strong> button by clicking on it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Left-hand&lt;/strong> pane click on the &lt;strong>Add a rule&lt;/strong> tab.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Communications&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Send email&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule&lt;/strong> box, change the &lt;strong>Title to&lt;/strong> &amp;ldquo;&lt;strong>Send email to Engineer&lt;/strong>&amp;rdquo;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the person icon &lt;img src="https://docs.kianda.com/images/person.png" alt="Person icon"> on the &lt;strong>To:&lt;/strong> part of the email.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select email users&lt;/strong> box select the &lt;strong>User(s) defined in a user field&lt;/strong> radio button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a user field&lt;/strong> select &lt;strong>Engineer&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-send-email-to.jpg" alt="Select email users box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the subject to &lt;strong>New Inspection Request&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the body of the email to:&lt;/p>
+&lt;pre tabindex="0">&lt;code>Hi,
+You are requested to visit ...... to complete an inspection for ......
+Please ...... to view the Inspection Form.
+Regards,
+The Safety Team
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>Adding &lt;strong>Expressions&lt;/strong>:&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/expressions.gif"/>
+&lt;br>
+&lt;br>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Location&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>To add an &lt;strong>Location&lt;/strong> click your cursor where you want to add it. In our case it is in the blank space between the words &amp;ldquo;visit&amp;rdquo; and &amp;ldquo;to&amp;rdquo;.&lt;/li>
+&lt;li>Click on the 3 dots button &lt;img src="https://docs.kianda.com/images/expression-dots.jpg" alt="3 dots"> on the the &lt;strong>right-hand&lt;/strong> side of the &lt;strong>Body&lt;/strong> box.&lt;/li>
+&lt;li>Click on the &lt;strong>Add field to expression&lt;/strong> and select &lt;strong>Location&lt;/strong> from the dropdown list.&lt;/li>
+&lt;li>Click on &lt;strong>Add to expression&lt;/strong> &lt;img src="https://docs.kianda.com/images/addtoexpression.png" alt="Add to expression"> The expression is added into the &lt;strong>Expression&lt;/strong> window. Note that the expression is the unique identifier for that field.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Expression builder&lt;/strong> dialog box.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Company&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>To add the &lt;strong>Company&lt;/strong> expression, start off by clearing &lt;strong>Add field to expression&lt;/strong> field and follow the steps above.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/delete-expression.jpg" alt="Delete expression">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>ProcessLink()&lt;/strong> - Links you to the open form of this process.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>To add the &lt;strong>ProcessLink()&lt;/strong> expression, click on the 3 dots button &lt;img src="https://docs.kianda.com/images/expression-dots.jpg" alt="3 dots"> on the the &lt;strong>right-hand&lt;/strong> side of the &lt;strong>Body&lt;/strong> box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Reference&lt;/strong> &lt;img src="https://docs.kianda.com/images/reference.png" alt="Reference button"> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the &lt;strong>Expression reference&lt;/strong> copy &lt;strong>ProcessLink()&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-process-link.jpg" alt="Copying ProcessLink">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> on the &lt;strong>Express builder&lt;/strong> dialog box to exit.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Paste in the &lt;strong>ProcessLink()&lt;/strong> in between &amp;ldquo;Please&amp;rdquo; and &amp;ldquo;to&amp;rdquo; on the second line of the email.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the parentheses of the &lt;strong>ProcessLink()&lt;/strong> open up quotation marks and in between, type &lt;strong>click here&lt;/strong>.&lt;/p>
+&lt;br>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>With the &lt;strong>Submit&lt;/strong> button selected, in the &lt;strong>Right-hand&lt;/strong> pane click on the &lt;strong>Rules&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Send email to Engineer&lt;/strong> is located under the &lt;strong>Close&lt;/strong> rule. Drag and drop the &lt;strong>Send email to Engineer&lt;/strong> rule in between &lt;strong>Submit process&lt;/strong> and &lt;strong>Set status to Requested&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-rules-tab.jpg" alt="Right-hand pane Rule menu">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save button">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="request-form-summary">Request Form Summary&lt;/h2>
+&lt;p>To summarise our &lt;strong>Request From&lt;/strong>, we created all fields, buttons and rules that we stated in our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>. Our Safety Managers can fill out our &lt;strong>Request Form&lt;/strong> which automatically sends an email to an engineer stating what &lt;strong>Location&lt;/strong> to visit and at what &lt;strong>Company&lt;/strong>. We are also updating our &lt;strong>Status&lt;/strong> field to keep track of the process.&lt;/p>
+&lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/inspect-form/">Creating Inspection Form&lt;/a>.&lt;/p></description></item><item><title>Docs: Inspection Form</title><link>https://docs.kianda.com/docs/examples/inspection/inspect-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/inspect-form/</guid><description>
+&lt;p>To create an Inspection Form for this process, we will take a look back at our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>.&lt;/p>
+&lt;p>Here we will create an &lt;strong>Inspection Form&lt;/strong> for our process. The form will be used by our engineer, he will fill it out and submit it. We will add a rule to &lt;strong>Generate a word document&lt;/strong> and a rule to &lt;strong>Convert to PDF&lt;/strong>. The PDF file will be then sent to the &lt;strong>Safety Manager&lt;/strong> which we will get from the &lt;strong>Request Form&lt;/strong>. First we need to create a new &lt;strong>Inspection Form&lt;/strong>.&lt;/p>
+&lt;h3 id="create-new-form">Create new form&lt;/h3>
+&lt;ol>
+&lt;li>In the process creation page, click on &lt;strong>Add form&lt;/strong>&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction.&lt;/p>
+&lt;/div></description></item></channel></rss>

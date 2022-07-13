@@ -310,7 +310,356 @@ Your browser does not support the video tag.
 &lt;p>&lt;a href="https://green-itr.kianda.com/forms/training-request-and-feedback-process-26">https://green-itr.kianda.com/forms/training-request-and-feedback-process-26&lt;/a>&lt;/p>
 &lt;p>You can create a link on your dashboard – in the example shown above, the &lt;strong>Start new process&lt;/strong> button at the top right of the Training Requests list widget – that enables you to create a &lt;strong>new record&lt;/strong> by bringing you into the relevant form. For information on creating list widgets go to &lt;a href="docs/platform/pages/list/">List widget&lt;/a>.&lt;/p>
 &lt;p>If you commit to the process by &lt;strong>submitting or saving information&lt;/strong>, then the result is a new process instance – that is, a new unique record – which will be seen in a list widget in the dashboard, as seen in the image above.&lt;/p>
-&lt;p>Keeping in mind that Designer is used to create processes, and that each ‘run’ of the process design results in a unique process instance or record, will help you later on when designing forms and dashboards. See &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/settings/">Process settings&lt;/a> for more details on process settings and parameters and &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> for more information on dashboards.&lt;/p></description></item><item><title>Docs: Shared process</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
+&lt;p>Keeping in mind that Designer is used to create processes, and that each ‘run’ of the process design results in a unique process instance or record, will help you later on when designing forms and dashboards. See &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/settings/">Process settings&lt;/a> for more details on process settings and parameters and &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> for more information on dashboards.&lt;/p></description></item><item><title>Docs: Request Form</title><link>https://docs.kianda.com/docs/examples/inspection/request-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/request-form/</guid><description>
+&lt;h2 id="creating-the-request-form">Creating the Request Form&lt;/h2>
+&lt;h3 id="configuring-form-settings">Configuring Form Settings&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>From the process creation page, click on &lt;strong>form 1&lt;/strong> to select the form. This can be found at the top of your screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-form-select.jpg" alt="Form selection">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> on the selected form to edit it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>An &lt;strong>Edit form&lt;/strong> dialog box appears on your screen. There are 8 different fields to fill in.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> - Name to represent this form. In our case we will call it &lt;strong>Request Form&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Name (unique)&lt;/strong> - A unique identifier for our form. You can give this any name you would like as long as it&amp;rsquo;s unique.&lt;/li>
+&lt;li>&lt;strong>Default owner(s)&lt;/strong> - This field identifies which users can fill out our form when it&amp;rsquo;s complete. In our case we will choose from &lt;strong>Groups&lt;/strong> and choose our &lt;strong>Management Team&lt;/strong>. To learn more about how to create groups in Kianda go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#creating-new-groups">creating groups&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Activate with&lt;/strong> - Will decide when the form will be active. If you have several forms attached to a process, then select from a dropdown list the form you want to activate with the current form. In our case we will leave this blank.&lt;/li>
+&lt;li>&lt;strong>Submit mode&lt;/strong> - Choose &lt;strong>Only this form&lt;/strong> radio list.&lt;/li>
+&lt;li>&lt;strong>Form icon&lt;/strong> - Dropdown field to select an icon for the form.&lt;/li>
+&lt;li>&lt;strong>Form theme&lt;/strong> - This option is used to change the colour of the form tile, for example &lt;strong>Green&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Enable quick actions&lt;/strong> - if you tick the checkbox, you can select from the options a) Enable re-assign b) Enable edit and c) Enable custom action. We will leave this box unchecked.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-request-form-edit-box.jpg" alt="Edit form box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save button">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;img src="https://docs.kianda.com/videos/gifs/common/save-process.gif"/>
+&lt;h3 id="creating-form-fields">Creating Form Fields&lt;/h3>
+&lt;p>On the &lt;strong>Request form&lt;/strong> there is 5 different fields which will be used to make a request for an inspection:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Company&lt;/strong> - Which company we need the inspection to be completed in.&lt;/li>
+&lt;li>&lt;strong>Location&lt;/strong> - What location of that company we need to go to.&lt;/li>
+&lt;li>&lt;strong>Engineer&lt;/strong> - Assign an engineer to complete the inspection.&lt;/li>
+&lt;li>&lt;strong>Safety Manager&lt;/strong> - Assign a safety manager which will receive a completed &lt;strong>Inspection form&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Status&lt;/strong> - Field representing the status of the process. For example the status can be &lt;strong>Requested&lt;/strong> or &lt;strong>Completed&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="creating-a-list-field--company">Creating a List field- Company&lt;/h4>
+&lt;p>The &lt;strong>Company&lt;/strong> field represents the company we want our inspection to take place at. It is a &lt;strong>List&lt;/strong> input which is populated from our &lt;strong>SharePoint&lt;/strong> datasource. To learn more about &lt;strong>List input&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List Control&lt;/a>.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/company-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>List&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A &lt;strong>New field - List&lt;/strong> dialog box will open with a range of options you can choose from for your new List field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>&amp;ldquo;Company&amp;rdquo;&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the &lt;strong>Data source&lt;/strong> within the &lt;strong>List source&lt;/strong> radio list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Datasource&lt;/strong> &lt;img src="https://docs.kianda.com/images/datasource-button-blue.jpg" alt="Datasource button"> button. This will open a data source selector dialog box. To learn more about adding a SharePoint data connector, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/sharepoint/">Connecting to SharePoint&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on your SharePoint connector and select &lt;strong>Companies&lt;/strong>(the companies data should be pre-created in your SharePoint, see the image below for an example). Click on &lt;strong>OK&lt;/strong> on the Datasource dialog box.&lt;/p>
+&lt;p>&lt;em>&lt;strong>SharePoint Companies List&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-sharepoint-companies.jpg" alt="SharePoint companies list">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the dropdown on the &lt;strong>Display, Value&lt;/strong> and &lt;strong>Sort by&lt;/strong> fields select &lt;strong>Title&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Leave all of the other options as default. Click on **OK **in the &lt;strong>Edit&lt;/strong> &lt;strong>field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h4 id="creating-a-list-field--location">Creating a List field- Location&lt;/h4>
+&lt;p>The &lt;strong>Location&lt;/strong> field represents the location of our inspection. This field is a cascading dropdown selection which corresponds to the &lt;strong>Company&lt;/strong> field (see above). The goal is to display only the &lt;strong>locations&lt;/strong> of the selected &lt;strong>company&lt;/strong>. We will add a condition to this field, you can see how that&amp;rsquo;s done below. To learn more about cascading dropdown lists go to &lt;a href="https://docs.kianda.com/docs/how-to/create-cascading-dropdown-lists/">Cascading dropdown lists&lt;/a>.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/location-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>List&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A field edit box will appear in which we change the &lt;strong>Title&lt;/strong> to &lt;strong>&amp;ldquo;Location&amp;rdquo;&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the &lt;strong>Data source&lt;/strong> within the &lt;strong>List source&lt;/strong> radio list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>datasource&lt;/strong> &lt;img src="https://docs.kianda.com/images/datasource-button-blue.jpg" alt="Datasource button"> button. This will open a data source selector box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on your SharePoint connector and select &lt;strong>Location&lt;/strong>(the location data should be pre-created in your SharePoint, see the image below for an example). Click &lt;strong>OK&lt;/strong> on the Datasource dialog box.&lt;/p>
+&lt;p>&lt;em>&lt;strong>SharePoint Locations List&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-sharepoint-locations.jpg" alt="SharePoint companies list">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the dropdown on the &lt;strong>Display, Value&lt;/strong> and &lt;strong>Sort by&lt;/strong> fields select &lt;strong>Locations&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To create the cascading selection we add a condition. Click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit condition&lt;/strong> dialog box, select &lt;strong>Company&lt;/strong> in the first dropdown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Equals&lt;/strong> in the second dropdown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Company&lt;/strong> in the third dropdown.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-edit-conditions.jpg" alt="Edit conditions">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on &lt;strong>Edit conditions&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Leave all of the other options as default. Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="creating-a-user-picker-field---engineer">Creating a User Picker field - Engineer&lt;/h4>
+&lt;p>The &lt;strong>Engineer&lt;/strong> field represents the engineer we want to complete the inspection. This field is a &lt;strong>User picker&lt;/strong> field in which we can pick any of our Kianda users.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/engineer-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/li>
+&lt;li>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/li>
+&lt;li>Click on &lt;strong>User picker&lt;/strong>.&lt;/li>
+&lt;li>In the &lt;strong>Edit field&lt;/strong> box change the &lt;strong>Title&lt;/strong> to &lt;strong>&amp;ldquo;Engineer&amp;rdquo;&lt;/strong>.&lt;/li>
+&lt;li>Change the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok-16402622244922.png" alt="Ok button">to save.&lt;/li>
+&lt;/ol>
+&lt;h4 id="cloning-a-user-picker-field---safety-manager">Cloning a User Picker field - Safety Manager&lt;/h4>
+&lt;p>The &lt;strong>Safety Manager&lt;/strong> field represents the manager which requests the inspection. This is a &lt;strong>User picker&lt;/strong> field just like the above &lt;strong>Engineer&lt;/strong>. We will go through how to clone a field and add it into our form.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/safety-manager-field.gif"/>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>Select the &lt;strong>Engineer&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears. This means you are now in edit mode of the field.&lt;/li>
+&lt;li>Go to the &lt;strong>Right-hand&lt;/strong> pane and click on &lt;strong>Clone&lt;/strong> &lt;img src="https://docs.kianda.com/images/clone.png" alt="Ok button">&lt;/li>
+&lt;li>A &lt;strong>Duplicate or move field&lt;/strong> dialog box appears. Click on the dropdown list and select &lt;strong>Request form&lt;/strong>.&lt;/li>
+&lt;li>Leave &lt;strong>Move field instead&lt;/strong> checkbox unchecked and click &lt;strong>OK&lt;/strong>.&lt;/li>
+&lt;li>Select the &lt;strong>Engineer copy&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/li>
+&lt;li>Click the edit or pen icon&lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">to edit the properties.&lt;/li>
+&lt;li>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Safety Manager&lt;/strong>.&lt;/li>
+&lt;li>Change &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
+&lt;li>Click &lt;strong>OK&lt;/strong> to save changes.&lt;/li>
+&lt;/ol>
+&lt;h4 id="status-field---text-box">Status field - text box&lt;/h4>
+&lt;p>The &lt;strong>Status&lt;/strong> field represents the current status of the whole process. We will make the status field invisible so we can track the inspection progress but not show it to the user. The &lt;strong>Status&lt;/strong> field will be used in the dashboard at a later stage in this example.&lt;/p>
+&lt;p>&lt;br> &lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/status-field.gif"/>&lt;/p>
+&lt;br>
+&lt;ol>
+&lt;li>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/li>
+&lt;li>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/li>
+&lt;li>Click on &lt;strong>Text box&lt;/strong>.&lt;/li>
+&lt;li>Select the &lt;strong>Text box 1&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/li>
+&lt;li>Change the &lt;strong>Title&lt;/strong> to &lt;strong>&amp;ldquo;Status&amp;rdquo;&lt;/strong>.&lt;/li>
+&lt;li>Change &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
+&lt;li>Click on **OK **to save the field.&lt;/li>
+&lt;li>Select the &lt;strong>Status&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/li>
+&lt;li>In the &lt;strong>Right-hand&lt;/strong> pane, under &lt;strong>Field properties&lt;/strong> click on the &lt;strong>Visible&lt;/strong> checkbox to uncheck it. To learn more about field properties, go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties/#field-properties">Field properites&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="adding-rules-to-submit-button">Adding rules to Submit button&lt;/h2>
+&lt;p>To take a look back at our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a> for our &lt;strong>Request form&lt;/strong>, we need 2 rules for the &lt;strong>Submit&lt;/strong> button.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Set status to Requested&lt;/strong> - Sets the status field that we created to &lt;strong>&amp;ldquo;Requested&amp;rdquo;&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Send email to Engineer&lt;/strong> - Sends an email to the selected engineer from the &lt;strong>Engineer field&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="creating-a-set-form-field-rule---set-status-to-requested">Creating a Set form field rule - Set status to Requested&lt;/h4>
+&lt;p>With this rule we will be setting our &lt;strong>Status&lt;/strong> field to &lt;strong>&amp;ldquo;Requested&amp;rdquo;&lt;/strong>. We will be using the &lt;strong>Set form field&lt;/strong> rule from the &lt;strong>Data&lt;/strong> set of rules.&lt;/p>
+&lt;br>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/status-rule.gif"/>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>
+&lt;p>Select the &lt;strong>Submit&lt;/strong> button by clicking on it so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Left-hand&lt;/strong> pane click on &lt;strong>Add a rule&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Data&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Set form field&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule&lt;/strong> dialog box, change the &lt;strong>Title&lt;/strong> to &amp;ldquo;&lt;strong>Set status to Requested&lt;/strong>&amp;rdquo;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Form field to set&lt;/strong> dropdown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Request Form&lt;/strong> select &lt;strong>Status&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Value or expression&lt;/strong> box, type &lt;strong>Requested&lt;/strong>. &lt;img src="https://docs.kianda.com/images/examples-set-form-field.jpg" alt="Set form field dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> button to save rule.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>With the &lt;strong>Submit&lt;/strong> button selected, in the &lt;strong>Right-hand&lt;/strong> pane click on the &lt;strong>Rules&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Set status to Requested&lt;/strong> is under the &lt;strong>Close&lt;/strong> rule. Drag and drop the &lt;strong>Set status to Requested&lt;/strong> rule to the top of the list.&lt;/p>
+&lt;br>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="creating-a-send-email-rule---send-email-to-engineer">Creating a Send email rule - Send email to Engineer&lt;/h4>
+&lt;p>This rule will be used to send an email to the selected &lt;strong>Engineer&lt;/strong>. We will be using the &lt;strong>Send email&lt;/strong> rule from the &lt;strong>Communications&lt;/strong> set of rules. In this rule we will add expressions, to learn more go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/">Expressions&lt;/a>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the &lt;strong>Submit&lt;/strong> button by clicking on it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Left-hand&lt;/strong> pane click on the &lt;strong>Add a rule&lt;/strong> tab.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Communications&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Send email&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule&lt;/strong> box, change the &lt;strong>Title to&lt;/strong> &amp;ldquo;&lt;strong>Send email to Engineer&lt;/strong>&amp;rdquo;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the person icon &lt;img src="https://docs.kianda.com/images/person.png" alt="Person icon"> on the &lt;strong>To:&lt;/strong> part of the email.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select email users&lt;/strong> box select the &lt;strong>User(s) defined in a user field&lt;/strong> radio button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a user field&lt;/strong> select &lt;strong>Engineer&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-send-email-to.jpg" alt="Select email users box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the subject to &lt;strong>New Inspection Request&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the body of the email to:&lt;/p>
+&lt;pre tabindex="0">&lt;code>Hi,
+You are requested to visit ...... to complete an inspection for ......
+Please ...... to view the Inspection Form.
+Regards,
+The Safety Team
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>Adding &lt;strong>Expressions&lt;/strong>:&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/expressions.gif"/>
+&lt;br>
+&lt;br>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Location&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>To add an &lt;strong>Location&lt;/strong> click your cursor where you want to add it. In our case it is in the blank space between the words &amp;ldquo;visit&amp;rdquo; and &amp;ldquo;to&amp;rdquo;.&lt;/li>
+&lt;li>Click on the 3 dots button &lt;img src="https://docs.kianda.com/images/expression-dots.jpg" alt="3 dots"> on the the &lt;strong>right-hand&lt;/strong> side of the &lt;strong>Body&lt;/strong> box.&lt;/li>
+&lt;li>Click on the &lt;strong>Add field to expression&lt;/strong> and select &lt;strong>Location&lt;/strong> from the dropdown list.&lt;/li>
+&lt;li>Click on &lt;strong>Add to expression&lt;/strong> &lt;img src="https://docs.kianda.com/images/addtoexpression.png" alt="Add to expression"> The expression is added into the &lt;strong>Expression&lt;/strong> window. Note that the expression is the unique identifier for that field.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Expression builder&lt;/strong> dialog box.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Company&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>To add the &lt;strong>Company&lt;/strong> expression, start off by clearing &lt;strong>Add field to expression&lt;/strong> field and follow the steps above.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/delete-expression.jpg" alt="Delete expression">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>ProcessLink()&lt;/strong> - Links you to the open form of this process.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>To add the &lt;strong>ProcessLink()&lt;/strong> expression, click on the 3 dots button &lt;img src="https://docs.kianda.com/images/expression-dots.jpg" alt="3 dots"> on the the &lt;strong>right-hand&lt;/strong> side of the &lt;strong>Body&lt;/strong> box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Reference&lt;/strong> &lt;img src="https://docs.kianda.com/images/reference.png" alt="Reference button"> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the &lt;strong>Expression reference&lt;/strong> copy &lt;strong>ProcessLink()&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-process-link.jpg" alt="Copying ProcessLink">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> on the &lt;strong>Express builder&lt;/strong> dialog box to exit.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Paste in the &lt;strong>ProcessLink()&lt;/strong> in between &amp;ldquo;Please&amp;rdquo; and &amp;ldquo;to&amp;rdquo; on the second line of the email.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the parentheses of the &lt;strong>ProcessLink()&lt;/strong> open up quotation marks and in between, type &lt;strong>click here&lt;/strong>.&lt;/p>
+&lt;br>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>With the &lt;strong>Submit&lt;/strong> button selected, in the &lt;strong>Right-hand&lt;/strong> pane click on the &lt;strong>Rules&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Send email to Engineer&lt;/strong> is located under the &lt;strong>Close&lt;/strong> rule. Drag and drop the &lt;strong>Send email to Engineer&lt;/strong> rule in between &lt;strong>Submit process&lt;/strong> and &lt;strong>Set status to Requested&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-rules-tab.jpg" alt="Right-hand pane Rule menu">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save button">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h2 id="request-form-summary">Request Form Summary&lt;/h2>
+&lt;p>To summarise our &lt;strong>Request From&lt;/strong>, we created all fields, buttons and rules that we stated in our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>. Our Safety Managers can fill out our &lt;strong>Request Form&lt;/strong> which automatically sends an email to an engineer stating what &lt;strong>Location&lt;/strong> to visit and at what &lt;strong>Company&lt;/strong>. We are also updating our &lt;strong>Status&lt;/strong> field to keep track of the process.&lt;/p>
+&lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/inspect-form/">Creating Inspection Form&lt;/a>.&lt;/p></description></item><item><title>Docs: Shared process</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>A &lt;strong>Shared Process&lt;/strong> is a &lt;strong>process&lt;/strong> which you create within your own subscription with the intention to share with your B2B Portal. This &lt;strong>process&lt;/strong>, as with all &lt;strong>processes&lt;/strong>, can be used to review data, create new instances, update or delete instances.&lt;/p>
 &lt;p>Within a shared process, you can also create a &lt;strong>Shared Dashboard&lt;/strong> which is a dashboard created within your own subscription with the intention to share with your B2B Portal. This &lt;strong>dashboard&lt;/strong>, as with all dashboards, can be used to review data, access &lt;strong>Shared Processes&lt;/strong> by creating new instances, updating or deleting instances.&lt;/p>
@@ -645,7 +994,13 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-&lt;p>Back to &lt;a href="../">How to videos&lt;/a>&lt;/p></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
+&lt;p>Back to &lt;a href="../">How to videos&lt;/a>&lt;/p></description></item><item><title>Docs: Inspection Form</title><link>https://docs.kianda.com/docs/examples/inspection/inspect-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/inspect-form/</guid><description>
+&lt;p>To create an Inspection Form for this process, we will take a look back at our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>.&lt;/p>
+&lt;p>Here we will create an &lt;strong>Inspection Form&lt;/strong> for our process. The form will be used by our engineer, he will fill it out and submit it. We will add a rule to &lt;strong>Generate a word document&lt;/strong> and a rule to &lt;strong>Convert to PDF&lt;/strong>. The PDF file will be then sent to the &lt;strong>Safety Manager&lt;/strong> which we will get from the &lt;strong>Request Form&lt;/strong>. First we need to create a new &lt;strong>Inspection Form&lt;/strong>.&lt;/p>
+&lt;h3 id="create-new-form">Create new form&lt;/h3>
+&lt;ol>
+&lt;li>In the process creation page, click on &lt;strong>Add form&lt;/strong>&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
 &lt;h3 id="introduction">Introduction&lt;/h3>
 &lt;p>When working with rules in forms, a key principle to consider is &lt;strong>rule order&lt;/strong>. This is important if there are &lt;strong>multiple rules&lt;/strong> attached to an item like a button. In this case the order of execution is important and can be modified to suit your needs.&lt;/p>
 &lt;p>For example, you may want a &lt;strong>Send email rule&lt;/strong> to be executed once the &lt;strong>Submit&lt;/strong> button is clicked. This will result in an automated email to a designated person. You may also want to attach a report to this email, a report that is a complete form. In this example a &lt;strong>Generate word&lt;/strong> &lt;strong>document&lt;/strong> &lt;strong>rule&lt;/strong> could be used to generate a report when the &lt;strong>Submit&lt;/strong> button is clicked. In this example the &lt;strong>Generate word document rule&lt;/strong> has to be executed before the &lt;strong>Send email rule&lt;/strong>, so that the Word document can be generated and then attached to the email.&lt;/p>
@@ -1282,7 +1637,10 @@ Your browser does not support the video tag.
 &lt;li>
 &lt;p>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction.&lt;/p>
+&lt;/div></description></item><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</guid><description>
 &lt;p>Kianda &lt;strong>Designer&lt;/strong> provides an intuitive interface where you can quickly start building &lt;strong>forms&lt;/strong> for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).&lt;/p>
 &lt;p>There are 3 key principles to consider when working with forms:&lt;/p>
 &lt;ol>
@@ -2454,363 +2812,4 @@ Your browser does not support the video tag.
 &lt;p>Back to &lt;a href="../">How to videos&lt;/a>&lt;/p></description></item><item><title>Docs: Javascript expressions</title><link>https://docs.kianda.com/docs/low-code/javascript-expressions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/javascript-expressions/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Security</title><link>https://docs.kianda.com/docs/getting-started/welcome/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/welcome/security/</guid><description>
-&lt;p>&lt;img src="https://docs.kianda.com/images/security.png" alt="Security">&lt;/p>
-&lt;p>Kianda is committed to delivering a best-in-class solution to our clients. We place security at the core of our offering.&lt;/p>
-&lt;p>In terms of security and quality, Kianda&amp;rsquo;s services and solutions are &lt;strong>ISO27001:2013 certified and audited by external parties&lt;/strong>, so you can be confident that we follow best practice for our clients&amp;rsquo; data and information security.&lt;/p>
-&lt;p>The Kianda Platform is a solution that is SaaS cloud-based, and allows for integration to multiple third-party IT systems or siloed data sources. For example, SharePoint Online Environment and Active Directory, SAP, SQL Server, O365 and Oracle.&lt;/p>
-&lt;h2 id="quality-assurance">Quality Assurance &lt;/h2>
-&lt;p>To ensure Kianda meets the highest quality assurance levels, we employ a number of methodologies, including:&lt;/p>
-&lt;ul>
-&lt;li>Kianda is &lt;strong>ISO 27001 ISMS certified&lt;/strong> and audited by an external party every 6 months. Details can be accessed here: &lt;a href="https://www.kianda.com/information-security">https://www.kianda.com/information-security&lt;/a>.&lt;/li>
-&lt;li>Kianda follows agile methodologies for managing product development and project deliveries. Team members are certified in Agile Project Management and Scrum Framework, ensuring we deliver best practice project documentation and product development cycles.&lt;/li>
-&lt;li>Kianda’s Information Security Management System (ISMS) policy is designed to protect Kianda’s information assets as well our clients’ information from all threats (whether internal or external, deliberate or accidental), to provide a security approach that satisfies our clients, and to ensure a solid understanding of security requirements and risk management practices and effective communication of security to all Kianda employees, contractors, partners, clients and third parties.&lt;/li>
-&lt;li>Kianda’s Information Security Policy ‘Security in Development and Support Processes&amp;rsquo; covers Patch Management Processes, Technical Review of Operating System Changes Restrictions on Changes to Software Packages and Product Development stages.&lt;/li>
-&lt;li>Kianda regularly backs-up adequate copies and generations of all software, documentation and business information. Regular testing is carried out to ensure the quality and usability of backed-up resources.&lt;/li>
-&lt;/ul>
-&lt;p>The Kianda Platform &lt;strong>fully complies with General Data Protection Requirements&lt;/strong> (GDPR) and is being continually improved, with an enhancement roadmap in place.&lt;/p>
-&lt;h3 id="security-and-authentication">Security and Authentication&lt;/h3>
-&lt;p>The Kianda platform &lt;strong>provides Single Sign On (SSO)&lt;/strong> capability with SharePoint or OneLogin. This allows users to create, view and approve forms by first logging in with their Active Directory (AD) account.&lt;/p>
-&lt;p>Security is provided by integration with the Clients Active Directory / O365 or other Multi-Factor Authentication (MFA) requirements. It can synchronise users and their groups from SharePoint, O365 or AD. The platform provides the ability for external users to integrate with SSO and MFA authentication via guest users in O365.&lt;/p>
-&lt;p>Kianda can be linked with active directory groups set up by the client to control permissions. The system can synchronize with the existing permissions from AD.&lt;/p>
-&lt;h3 id="user-management">User Management&lt;/h3>
-&lt;p>The Kianda platform allows for &lt;strong>different users to have different security privileges&lt;/strong>, providing for easy administrative management of users and their access rights. Our platform allows the following user levels by default:&lt;/p>
-&lt;ul>
-&lt;li>User - can only access what is assigned to them. For example, forms and dashboards&lt;/li>
-&lt;li>Administrator - can access (view and edit) all&lt;/li>
-&lt;li>Manage partners/customers - can only access what is required to manage customer portals&lt;/li>
-&lt;li>Design business process - can only design business forms and workflows&lt;/li>
-&lt;li>Manage data sources - can only manage data sources and connections&lt;/li>
-&lt;li>Developer - can design new widgets within the platform&lt;/li>
-&lt;/ul>
-&lt;p>The platform allows for the creation of user groups and the ability to assign these user groups to processes or dashboards as needed. Dashboard levels or particular widgets can be configured to only be visible to certain users or groups of users and data source connections can be configured in the same way to ensure the highest access control levels.&lt;/p>
-&lt;p>Our data classification system has been designed to support access to information based on the need to know, so that information will be protected from unauthorised disclosure, use, modification and deletion.&lt;/p>
-&lt;p>The Kianda platform ensures that data is never transmitted in clear text or stored in a database or file solution. The platform is hosted in MS Azure with enterprise-grade security. All data generated is encrypted at rest and in transit. Data records are also masked from a GDPR point of view. We employ Microsoft security products to automatically mask and classify personal data - which is scheduled weekly.&lt;/p>
-&lt;p>Overall, Kianda Technologies follows ISO ISMS policies, GDPR best practices and Open Web Application Security Project (OWASP) guidelines for product development. Kianda Technologies will also adhere to Client security standards.&lt;/p>
-&lt;h3 id="ease-of-use">Ease of use&lt;/h3>
-&lt;p>The Kianda Platform offers administrative interfaces that are private and segregated from user interfaces.&lt;/p>
-&lt;p>Kianda forms, by default, provide edit and reassign functions that are only available to admin users or configurable roles within the system. These quick actions allow admin users to make changes to an existing form record when needed. Any &lt;strong>changes made&lt;/strong> &lt;strong>by&lt;/strong> &lt;strong>any user are logged&lt;/strong> in the Audit History.&lt;/p>
-&lt;p>In terms of designing new forms or making changes to existing designs, admin users have the ability to preview their changes before publishing within the design interface. Changes only become visible to end-users after the process or form has been published. In addition, &lt;strong>live and test environments are provided&lt;/strong> to enterprise clients, providing the ability to test in the test environment before publishing to live.&lt;/p>
-&lt;p>For further ease of use, error messages are configurable within the Kianda platform. They can be created freely when forms are being designed to ensure scenarios such as data validation or indicating the next course of action. This gives flexibility to form designers to define error messages as needed.&lt;/p>
-&lt;p>It is easy to learn how to optimally use the Kianda platform. Kianda training is delivered by technical experts and trainers with a deep understanding of the platform, ensuring that clients&amp;rsquo; training experience is optimised. Projects are structured so that clients’ appointed staff are involved during the whole journey of project execution. This facilitates knowledge transfer and an “on-the-job” training approach and includes specific training sessions that are run before and after solution delivery.&lt;/p>
-&lt;h2 id="dashboards-and-reporting">Dashboards and reporting&lt;/h2>
-&lt;p>The Kianda platform allows admin users to personalise dashboards based on the unique needs of users or user groups based on hierarchy - for example, only project managers see their forms status and admin users may see the full picture.&lt;/p>
-&lt;p>Multiple dashboards can be created and customised as required per project, per department or other configurations. &lt;strong>Access to the dashboards can be set at a high level for the entire dashboard or certain links&lt;/strong>, lists or widgets in a dashboard and can be made accessible to certain user groups defined in the system.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Dashboard page&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/IT_dashboard2.jpg" alt="Dashboard page">&lt;/p>
-&lt;p>Examples of some of our dashboard features include:&lt;/p>
-&lt;ul>
-&lt;li>Number of forms awaiting approval&lt;/li>
-&lt;li>Number of completed forms per week/period/quarter&lt;/li>
-&lt;li>Split dashboards by type or department&lt;/li>
-&lt;li>Columns to cater for “requested by”, “date of request”, “pending approval from”, “approved by”, “rejected by”&lt;/li>
-&lt;li>An alerts section to highlight approvals that have been pending past X number of days&lt;/li>
-&lt;li>Designing layouts to group certain fields&lt;/li>
-&lt;li>Charts, Lists, Links, Tiles and Rich Text are available dashboard widgets&lt;/li>
-&lt;/ul>
-&lt;p>The Kianda platform allows users to report on different forms within a SharePoint site (or other relevant data source), as well as for a particular form library. In addition, the platform allows reporting across multiple form libraries, SharePoint Sites, and SharePoint Site Collections. Our reporting capability goes way beyond reporting from SharePoint data, and allows &lt;strong>combining&lt;/strong> of data from multiple data sources for reporting purposes.&lt;/p>
-&lt;h3 id="audit-history">Audit history&lt;/h3>
-&lt;p>Kianda logs and makes available all security-related events within the Audit History of each record to administrative users. Also, system logs can be made available when required.&lt;/p>
-&lt;p>By default, all the forms and processes created in our platform come with &lt;strong>detailed read-only Audit History&lt;/strong>. Audit logs are created for any modifications made to records automatically and are only available to configured roles to view. Our platform allows for the set-up of an “auditor role”, with read-only access, to allow an auditor to run reports and check audit logs.&lt;/p>
-&lt;p>Admin users can configure optional record level viewing logs. The recording of audit logs is automatic for any changes in the forms which gives detailed field-level auditing information.&lt;/p>
-&lt;p>The Kianda Platform integrates with SharePoint which provides IRM (Information Rights Management) features that enable the tagging of certain data or documents not to be printed or emailed and so on.&lt;/p>
-&lt;h2 id="support-and-security-updates">Support and security updates&lt;/h2>
-&lt;p>Within the Kianda platform, administrative users and general users can report any queries or issues using the &lt;strong>support ticket&lt;/strong> menu option available. Our platform is updated with one major release per year and patch/security releases multiple times during the year (which includes security updates). These are communicated with clients in advance.&lt;/p>
-&lt;p>We provide multi-levels of data recovery. This includes data version history of records, recycle bin feature and ability to recover from a point in time, backups with a time window of every 10 minutes.&lt;/p>
-&lt;p>Our platform supports &lt;strong>99% uptime&lt;/strong>. We provide 99% availability; availability is calculated with the exception of scheduled maintenance.&lt;/p>
-&lt;p>Our services are available 24 hours a day, 7 days a week, excluding planned downtime. We expect planned downtime to be infrequent but will endeavour to provide customers with advance notice. If our systems fail, we treat this as a critical high priority event with an impact on our business continuity. We will do everything possible to solve the issue as soon as possible. Our web services use highly available services with &lt;strong>geo-redundancy&lt;/strong> enabling a failover to another European region in the event of emergency.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>If you want to use Kianda for no-code development, follow these simple steps:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/one.png" alt="1"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">&lt;strong>Plan your process&lt;/strong>&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/two.png" alt="2"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/">&lt;strong>Design and build your process&lt;/strong>&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/three.png" alt="3"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/publish-your-process/">&lt;strong>Publish your process&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Docs: Table control</title><link>https://docs.kianda.com/docs/platform/controls/input/table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/table/</guid><description>
-&lt;p>&lt;strong>Table controls&lt;/strong> (fields) can be inserted in a form if you want form users to complete a table, if you want display data pulled from external sources in a table, or if you want a table to be autofilled as part of a rule. Tables can include different types of fields, such as text boxes, date fields, number fields, and list fields.&lt;/p>
-&lt;p>For example, in a Purchase Order Request form, you may want to use a Table field to display certain information about items or suppliers and/or to capture details the user inputs about items being ordered. In addition, you could apply rules to some of the fields within the table to, for example, automatically calculate totals or percentages or to pull in data from external data sources.&lt;/p>
-&lt;p>For more information about applying rules to fields and forms go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and for more specific information about applying rules to &lt;strong>Table fields&lt;/strong> see &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
-&lt;p>We will now go through&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-get-started">how to add a Table field to a form&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-column-fields-in-a-table">how to edit column fields in a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-change-the-title-of-a-table-column">how to change the title of a Table colulmn&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-delete-a-column-from-a-table">how to delete a column from a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-change-the-field-type-of-an-existing-table-column">how to change the field type of an existing Table column&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-insert-new-columns-in-a-table">how to insert new columns in a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-move-columns-in-a-table">how to move columns in a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-the-table-field">how to edit the Table field&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-move-table-fields">how to move Table fields&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-delete-table-fields">how to delete Table fields&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-table-field-properties">how to edit Table field properties&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>To add a &lt;strong>Table field&lt;/strong> to a form, first open the relevant process.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Table&lt;/strong>.&lt;/p>
-&lt;p>A Table field will be added to your form with the default title of &amp;lsquo;&amp;rsquo;&lt;strong>Table 1&lt;/strong>&amp;rsquo;&amp;rsquo; and a pop-up message will say &amp;lsquo;Field added&amp;rsquo;.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-added.jpg" alt="Table field added">&lt;/p>
-&lt;p>By default, the new &lt;strong>Table field&lt;/strong> will have one row with two columns of text fields, titled &lt;strong>Text 1&lt;/strong> and &lt;strong>Text 2&lt;/strong>. You can add rows, columns and various different types of fields to the table by editing the table field, as outlined in the next section. In the example shown here, a new table has been added to a form called &amp;lsquo;Training Request&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="how-to-edit-move-and-delete-table-fields">How to edit, move and delete Table fields&lt;/h3>
-&lt;p>As we go through the options available for editing a Table, we will keep in mind the example of the table we added to the &amp;lsquo;Training Request&amp;rsquo; form above.&lt;/p>
-&lt;h4 id="how-to-edit-column-fields-in-a-table">How to edit column fields in a Table&lt;/h4>
-&lt;p>First, decide &lt;strong>how many columns&lt;/strong> you need in your table and &lt;strong>what type of input field&lt;/strong> you want to use for each column. To learn more about the eight different types of Input fields that you can use, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input controls&lt;/a>.&lt;/p>
-&lt;p>In our example, we want to change the default table that was inserted - titled &lt;strong>Table 1&lt;/strong> with two columns of text box fields - into a table called &amp;lsquo;Existing Qualifications&amp;rsquo; to capture the existing qualifications of the user who is requesting further training.&lt;/p>
-&lt;p>We want our table to have three columns: the first column will be a text box field titled &amp;lsquo;Qualification Description&amp;rsquo; where the user will manually type in the name of a qualification, the second column will be a drop-down list titled &amp;lsquo;Educational Institution&amp;rsquo; (which could link to an external data source) where the user will choose the relevant institution, and the third column will be a date field titled &amp;lsquo;Date Qualification Obtained&amp;rsquo;, as shown here:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-training-example.jpg" alt="Table example training">&lt;/p>
-&lt;h5 id="how-to-change-the-title-of-a-table-column">How to change the title of a Table column&lt;/h5>
-&lt;p>To change the default title of the first column texbox field from &lt;strong>Text 1&lt;/strong>:&lt;/p>
-&lt;ol>
-&lt;li>Select that field by either clicking on the field title or by clicking into the blank text box so that the &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button"> (Pen icon) displays.&lt;/li>
-&lt;li>Click the Edit field button.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-edit-field.jpg" alt="Table select field to edit">&lt;/p>
-&lt;p>The &lt;strong>Edit field - Text&lt;/strong> dialog box will open and you can change the title of the field here. There are also a number of other options available to you - see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a> for more information on how you can edit text box fields.&lt;/p>
-&lt;h5 id="how-to-delete-a-column-from-a-table">How to delete a column from a Table&lt;/h5>
-&lt;p>To delete a column from a Table field:&lt;/p>
-&lt;ol>
-&lt;li>Select the column field you want to delete (either by clicking on the title or clicking into the blank field below the title) so that the Edit field and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">is shown.&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-delete-column.jpg" alt="Delete Table column">&lt;/p>
-&lt;h5 id="how-to-change-the-field-type-of-an-existing-table-column">How to change the field type of an existing Table column&lt;/h5>
-&lt;p>In our example, we want the second column in our table to be a drop-down list. We can either delete the default second text box column and then insert a new list column or we can &lt;strong>change the field type of the existing column&lt;/strong> from text box to list.&lt;/p>
-&lt;p>To change the field type of an existing column:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Select the column field you want to change (by either clicking on the column Title or clicking into the blank box below it) so that the Edit field button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button"> (Pen icon) is shown.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>Change field&lt;/strong> button in the right-hand pane:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-change-column-type.jpg" alt="Change Table column type">&lt;/p>
-&lt;p>A &lt;strong>Change&lt;/strong> dialog box will open up, allowing you to change the existing column field type to another type of input field - there are many options to choose from (only some of which are shown here):&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-change-column-type-dialog.jpg" alt="Table change column type dialog box">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>In our example, if we want to change the &amp;lsquo;Text 2&amp;rsquo; text box column to be a List field, we would select the &lt;strong>List&lt;/strong> radio box and then click &lt;strong>OK&lt;/strong> to confirm. An &lt;strong>Edit field&lt;/strong> dialog box for the type of input field you have chosen will then open, allowing you to change the column field title (in our case, we will rename it as &amp;lsquo;Educational Institution&amp;rsquo;) and to choose from a range of options relevant to that field type.&lt;/p>
-&lt;h5 id="how-to-insert-new-columns-in-a-table">How to insert new columns in a Table&lt;/h5>
-&lt;p>To &lt;strong>insert new columns into a Table&lt;/strong>:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Either select the Table field itself or select one of the individual columns.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Go to &lt;strong>Controls&amp;gt;Input&lt;/strong> in the menu in the left-hand pane and click on the &lt;strong>type of input field&lt;/strong> you want to insert.&lt;/p>
-&lt;p>The new column will be inserted to the right of the existing columns, or, if you selected one of the existing columns before inserting the new column, it will be inserted to that right of that column.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>In our example, we will insert a date field to be our third column (and can then rename it as &amp;lsquo;Date Qualification Obtained&amp;rsquo; by clicking on &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button"> (Pen icon) and changing it in the &lt;strong>Edit field - Date&lt;/strong> dialog box):&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-date-column-added.jpg" alt="Date field inserted in Table">&lt;/p>
-&lt;h5 id="how-to-move-columns-in-a-table">How to move columns in a Table&lt;/h5>
-&lt;p>To re-order columns in a Table, simply&lt;/p>
-&lt;ol>
-&lt;li>Select the column field you want to move (by either clicking the column title or clicking into the blank box below the title) so the &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button"> (Pen icon) displays.&lt;/li>
-&lt;li>Click on the left or right arrow buttons &lt;img src="https://docs.kianda.com/images/left-right-arrows.jpg" alt="Left or right arrow buttons"> to move that column to the left or right:&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-move-columns.jpg" alt="Move table columns">&lt;/p>
-&lt;h5 id="how-to-edit-the-table-field">How to edit the Table field&lt;/h5>
-&lt;p>To edit the &lt;strong>Table field&lt;/strong> itself:&lt;/p>
-&lt;ol>
-&lt;li>Select the Table (by either clicking on the Table title or on the table&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
-&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-edit.jpg" alt="Select table field to edit">&lt;/p>
-&lt;p>The &lt;strong>Edit field - Table&lt;/strong> dialog box will open, enabling you to choose from a range of options:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-edit-dialog.jpg" alt="Edit table field dialog box">&lt;/p>
-&lt;p>The options within the &lt;strong>Edit field - Table&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the Table from the default &amp;lsquo;&lt;strong>Table 1&lt;/strong>&amp;rsquo;. In our example, we could change the name of the table to &amp;lsquo;Existing Qualifications&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Help text&lt;/strong> - you can insert text to help the form user to complete the Table. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-helptext.jpg" alt="Table help text example">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Add row text&lt;/strong> - you can insert the text you want to appear with the Add Row button &lt;img src="https://docs.kianda.com/images/table-add-row.jpg" alt="Table add row button">. By default, this will be &amp;lsquo;add row&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Page size&lt;/strong> - you can increase or decrease the number of row items you will see per page by clicking the up/down arrow buttons &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up and down arrows"> at the right of the field. By default, it is set to show 10 row items per page.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable adding rows&lt;/strong> - selecting &amp;lsquo;Yes&amp;rsquo; enables the user to add rows to the table when they are completing it and displays the &lt;strong>Add row&lt;/strong> button &lt;img src="https://docs.kianda.com/images/table-add-row.jpg" alt="Table add row button"> and selecting &amp;lsquo;No&amp;rsquo; removes this option. By default, this option is set to &amp;lsquo;Yes&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable removing rows&lt;/strong> - selecting &amp;lsquo;Yes&amp;rsquo; enables the user to remove rows from the table as they are completing it (by clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> at the end of each table row) and selecting &amp;lsquo;No&amp;rsquo; removes this option. By default, this option is set to &amp;lsquo;Yes&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Show row count&lt;/strong> - you can choose to display text showing the number of rows in the table. This text will appear below the &lt;strong>Add row&lt;/strong> button:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-row-count.jpg" alt="Number field with placeholder text">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable sorting&lt;/strong> - you can select &amp;lsquo;Yes&amp;rsquo; to enable the form user to sort the data in the table&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable search&lt;/strong> - you can select &amp;lsquo;Yes&amp;rsquo; to enable the form user to search the data in the table. If you choose this option, the form user will see a search field at the top of the table:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-search.jpg" alt="Table search field">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Add first row onload&lt;/strong> - by default, this is set to &amp;lsquo;Yes&amp;rsquo;, meaning that when the form is loaded the first row is automatically shown&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable export to csv&lt;/strong> - you can select &amp;lsquo;Yes&amp;rsquo; to enable the form user to export the table contents to a csv file. If you select &amp;lsquo;Yes&amp;rsquo;, some additional options appear in the &lt;strong>Edit field - Table&lt;/strong> dialog box:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-export-csv.jpg" alt="Table enable export to csv">&lt;/p>
-&lt;p>The &lt;strong>CSV Separator&lt;/strong> is set to be a comma by default (but you can change this) and you can insert text you want to appear on the &lt;strong>Export CSV&lt;/strong> button. For example, if you insert &amp;lsquo;Export to CSV&amp;rsquo; as the text to appear on the button, it will appear like this in the form to the user:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-export-csv-button.jpg" alt="Table export to CSV button">&lt;/p>
-&lt;p>The &lt;strong>Columns to export&lt;/strong> will automatically show the columns in your table&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;ol start="3">
-&lt;li>Make whatever changes you want to make to the table in the &lt;strong>Edit field - Table&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
-&lt;/ol>
-&lt;p>If you want to make your table more dynamic - for example, so that calculations are made or information is autofilled into part of the table - you can add rules to it. To learn about applying rules to fields and forms go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and for more specific information about applying rules to &lt;strong>Table fields&lt;/strong> see &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
-&lt;h4 id="how-to-move-table-fields">How to move Table fields&lt;/h4>
-&lt;p>To move a &lt;strong>Table field&lt;/strong> within your form:&lt;/p>
-&lt;ol>
-&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
-&lt;li>Drag and drop the field wherever you want to move it to.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-move.jpg" alt="Table field drag handle">&lt;/p>
-&lt;h4 id="how-to-delete-table-fields">How to delete Table fields&lt;/h4>
-&lt;p>To delete a &lt;strong>Table field&lt;/strong> from your form:&lt;/p>
-&lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
-&lt;/ol>
-&lt;h3 id="how-to-edit-table-field-properties">How to edit Table field properties&lt;/h3>
-&lt;p>To view or edit the field properties associated with a &lt;strong>Table field&lt;/strong>, select the table (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-field-properties.jpg" alt="Field properties">&lt;/p>
-&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Table field&lt;/strong> titled &amp;lsquo;Existing Qualifications&amp;rsquo; are shown here and include:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Table&lt;/strong> field.&lt;/li>
-&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Existing Qualifications&amp;rsquo;.&lt;/li>
-&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Table field title will be shown in the form.&lt;/li>
-&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the Table field will be mandatory for the form user.&lt;/li>
-&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
-&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Table field will be visible in the form.&lt;/li>
-&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Table field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
-&lt;/ul>
-&lt;p>You can then check how the Table will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">. Our sample table, &lt;strong>Existing Qualifications&lt;/strong> could look like this when viewed on a PC:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-preview-example.jpg" alt="Sample table in preview">&lt;/p>
-&lt;p>You can also view and edit the &lt;strong>properties of the individual column fields&lt;/strong> within the Table by selecting the column field.&lt;/p>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
-&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
-&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Table control&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Global CSS file</title><link>https://docs.kianda.com/docs/low-code/global-css-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-css-file/</guid><description>
-&lt;p>Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the site. However as a workspace &lt;strong>Administrator&lt;/strong> you can access a &lt;strong>Global CSS File&lt;/strong> that exists within the &lt;strong>Look and Feel&lt;/strong> section of the Subscription**,** within the &lt;strong>Administration&lt;/strong> section of the site**.**&lt;/p>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>You may want to modify or add to the &lt;strong>Global CSS File&lt;/strong> when you want to change the &lt;strong>Look and Feel&lt;/strong> of the site or your &lt;strong>processes&lt;/strong>. You can do this by selecting individual fields in the &lt;strong>process&lt;/strong> via the unique name or can change entire elements by selecting their element name or a selector. Once items are added to the file they will be available globally in the &lt;strong>Subscription&lt;/strong> function within &lt;strong>Administration&lt;/strong>.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To access the Global CSS file:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>As an &lt;strong>administrator&lt;/strong>, go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Look and Feel&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>On the Look and Feel page, click on the ellipsis button &lt;img src="https://docs.kianda.com/images/expression-button.jpg" alt="Ellipsis button"> beside the Custom CSS Url to access the Global CSS file.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/custom-css-url.jpg" alt="Custom CSS Url file">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The CSS Editor opens, allowing you to make edits to default code.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/css-editor.jpg" alt="CSS Editor">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Within the file there are some items already added that can be expanded upon. These items include:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Class selectors&lt;/strong> - .list-row&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Class selector and element&lt;/strong> - .pagination &amp;gt; .active &amp;gt; a&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Elements&lt;/strong> - section &amp;gt; div &amp;gt; div &amp;gt; div &amp;gt; div &amp;gt; div &amp;gt; .form-card&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Element and attribute&lt;/strong> - div[data-name$=&amp;quot;?card&amp;quot;].form-group&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Media controls&lt;/strong> - @media screen and max-width: 767px&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;p>The next section deals with &lt;a href="#adding-items">Adding items&lt;/a> to the file.&lt;/p>
-&lt;h3 id="adding-items">Adding items&lt;/h3>
-&lt;p>Additional items can be added to the file whenever you wish. Typically, the best practice, is to update only individual items based on the &lt;strong>Unique Name&lt;/strong> which becomes an attribute.&lt;/p>
-&lt;p>For example, if I have a button in my process that I want to change background colour and text colour, first I need to note down the &lt;strong>Unique Name.&lt;/strong> Next, because I want to only target the button in my process and not all buttons in the system, I am going to use the &lt;strong>Element and attribute&lt;/strong> selector. This will take the form of:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">button&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>&lt;span style="color:#204a87;font-weight:bold">data-name&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">$=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;?pinkButton&amp;#34;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#5c35cc;font-weight:bold">not&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">is-design&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol>
-&lt;li>Within the &lt;strong>Global CSS File&lt;/strong> add the necessary details, for example the above along with the necessary CSS properties.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png" alt="img">&lt;/p>
-&lt;ol start="2">
-&lt;li>
-&lt;p>When you are finished making changes click on &lt;strong>OK&lt;/strong> or else click on &lt;strong>Close&lt;/strong> at any time to close the dialog box. Ensure to save changes to the file by clicking on the &lt;strong>Save Changes&lt;/strong> button in &lt;strong>Look and Feel&lt;/strong>. Once the file is saved ensure to refresh Kianda to download the most recent changes into the cache.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Return to the process and select the button that needs the custom CSS.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Edit the button and enter the attribute name into the &lt;strong>Unique Name&lt;/strong> field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/unique-name" alt="image-20220712071246993">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When the process is viewed in preview mode or published the Global CSS will override the default system CSS.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-pink" alt="image-20220712071813270">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>The steps above can be used to edit any element in the subscription using any standard CSS syntax.&lt;/p>
-&lt;h3 id="process-and-dashboard-specific-css">Process and Dashboard specific CSS&lt;/h3>
-&lt;p>The steps in the &lt;a href="#adding-items">Adding items&lt;/a> provide a perfect means to ensure your CSS is available throughout the subscription. However changes may unintentionally cause changes in order parts of the system. For this reason, it possible to add &lt;strong>localised CSS&lt;/strong> to each process and dashboard through a rich text field.
-For example, if you want to change all buttons in the process to have a background colour of Magenta, you can follow the following steps.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Navigate to the process and add a &lt;strong>Rich Text&lt;/strong> field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>It is important to name it &lt;strong>_CSS&lt;/strong>. Within the Rich text field click on the &lt;strong>Code View&lt;/strong> button to open up the code editor.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/richtext-source-code.jpg" alt="Richtext source code">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Enter the &lt;style>&lt;/style> tags into the body.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/style-tags" alt="image-20220712073111187">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click the Code View button again to commit the change and click &lt;strong>OK&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To make all buttons show the changes, use the class selector by editing the richtext field again and go into the Code View and add the necessary CSS.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/style-magenta" alt="image-20220712073306562">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The buttons now have a background colour of magenta provided they do not have a custom colour already selected.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/magenta-buttons" alt="image-20220712073349125">&lt;/p>
-&lt;p>The steps above can be used to edit any element in a process or dashboard using any standard CSS syntax.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To learn more about designing processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application designer&lt;/a>.&lt;/p>
-&lt;p>To learn more about dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard pages&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>
