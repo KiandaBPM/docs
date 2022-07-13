@@ -32,6 +32,26 @@ To begin this example of creating an **Inspection Form**, we need to add a new f
 
      ![Edit form box](/images/examples-inspection-form-edit-box.jpg)
 
+2. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
+
+3. To save your changes to the form, click on the **Save** button ![Save button](/images/saveprocess.png)
+
+<img src="/videos/gifs/common/save-process.gif"/>
+
+### Creating Form Fields
+
+Taking a look back at our [requirements](/docs/examples/inspection/#planning-form-requirements), on the **Inspection Form** there is 5 different fields which will be used to complete an inspection along with 5 inner fields for our table:
+
+- **Date** - Representing the day of inspection
+- **Inspection checklist** 
+  - **Question**
+  - **Pass or fail**
+  - **Comment**
+  - **Upload file**
+  - **Image**
+- **Utility panel** - Assign an engineer to complete the inspection.
+- **Upload template** - Word template used to create a PDF file.
+- **Generated PDF** - File field to hold our generated PDF.
 
 
 
@@ -48,8 +68,6 @@ To begin this example of creating an **Inspection Form**, we need to add a new f
 
 
 
-
- 
 
 
 
