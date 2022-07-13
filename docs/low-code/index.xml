@@ -1,7 +1,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – What is Low-Code Development?</title><link>https://docs.kianda.com/docs/low-code/</link><description>Recent content in What is Low-Code Development? on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/low-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Application design principles</title><link>https://docs.kianda.com/docs/low-code/application-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/application-design/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Progressive Web Application (PWA)</title><link>https://docs.kianda.com/docs/low-code/pwa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/pwa/</guid><description>
+&lt;/div></description></item><item><title>Docs: REST API</title><link>https://docs.kianda.com/docs/low-code/apis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/apis/</guid><description>
+&lt;p>You can query data using Kianda via a REST Application Programming Interface (API). Using REpresentational State Transfer (REST) allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>Before you get started, there are three things to keep in mind:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To use API methods in Kianda you must have an &lt;strong>administrator&lt;/strong> role, go to &lt;a href="https://docs.kianda.com/administration/users/#view-and-edit-existing-user-details">View and edit user details&lt;/a> to see information on how to set roles.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Each API method requires a &lt;strong>Bearer token&lt;/strong> which is a &lt;strong>security token&lt;/strong> to enable HTTP authentication. The bearer token is a cryptic text string, included in the request header.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>The token can be retrieved by querying &lt;code>/Token&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then pass the following in the header of the request:&lt;/p>
+&lt;p>&lt;code>username, password, grant_type:password remember:yes&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will need your workspace Subscription ID&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Each of the following methods can be used on &lt;strong>process instances&lt;/strong> or records, where &lt;strong>{name}&lt;/strong> is the name of a process instance, such as &amp;rsquo;training-approval-request-1'.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="post-create-an-instance">POST Create an instance&lt;/h2>
+&lt;pre tabindex="0">&lt;code>/api/instances/create
+&lt;/code>&lt;/pre>&lt;p>This request creates a process instance/new record.&lt;/p>
+&lt;p>The &lt;strong>Request Body&lt;/strong> for the POST request is:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/json-create.jpg" alt="Create instance">&lt;/p>
+&lt;p>The &lt;strong>Response Body&lt;/strong> for POST request:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/json-create-response.jpg" alt="Create Response Body">&lt;/p>
+&lt;h2 id="put-update-an-instance">PUT Update an instance&lt;/h2>
+&lt;pre tabindex="0">&lt;code>/api/instances/{name}
+&lt;/code>&lt;/pre>&lt;p>​ where &lt;code>{name}&lt;/code>is the name of the process instance.&lt;/p>
+&lt;p>This request updates all fields in the instance by performing a comparison based on version number, to ensure there are no duplicate process instances.&lt;/p>
+&lt;p>The &lt;strong>Request Body&lt;/strong> for the PUT request is:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/put-request.jpg" alt="PUT Request Body">&lt;/p>
+&lt;p>The &lt;strong>Response Body&lt;/strong> for PUT request:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/put-request.jpg" alt="Create Response Body">&lt;/p>
+&lt;h2 id="patch-partially-save-an-instance">PATCH Partially save an instance&lt;/h2>
+&lt;pre tabindex="0">&lt;code>/api/instances/{name}/update
+&lt;/code>&lt;/pre>&lt;p>​ where &lt;code>{name}&lt;/code>is the name of the process instance.&lt;/p>
+&lt;p>This request partially updates an instance by comparing changes to the last saved version of the instance, and updating only changed fields.&lt;/p>
+&lt;p>The &lt;strong>Request Body&lt;/strong> for the PATCH request is:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/patch-request.jpg" alt="PATCH Request Body">&lt;/p>
+&lt;p>The &lt;strong>Response Body&lt;/strong> for PATCH is:&lt;/p>
+&lt;h2 id="get-retrieve-instance-fields">GET Retrieve instance fields&lt;/h2>
+&lt;pre tabindex="0">&lt;code>/api/instances/{name}/fields?names=field1,field2..
+&lt;/code>&lt;/pre>&lt;p>​ where &lt;code>{name}&lt;/code>is the name of the process instance.&lt;/p>
+&lt;p>This request retrieves the values of multiple fields by name.&lt;/p>
+&lt;p>No Request Body is required.&lt;/p>
+&lt;p>The &lt;strong>Response Body&lt;/strong> for GET is:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/get-response.jpg" alt="GET Response Body">&lt;/p></description></item><item><title>Docs: Progressive Web Application (PWA)</title><link>https://docs.kianda.com/docs/low-code/pwa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/pwa/</guid><description>
 &lt;p>Progressive web applications are the next great trend for the mobile web.&lt;/p>
 &lt;p>Kianda is a progressive web application. This means with Kianda you get a digital experience that is native-like while maintaining online web benefits.&lt;/p>
 &lt;blockquote>
