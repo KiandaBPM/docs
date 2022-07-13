@@ -4,23 +4,23 @@ weight: 2
 typora-root-url: ..\..\..\..\..\static
 ---
 
+When working with rules in forms, a key principle to consider is **rule order**. Rule order is important if there are **multiple rules** attached to an item like a button to determine the sequence of rule execution. As a form designer you can change the order of execution is important and modified form and process designs, including rule order to suit your needs.
+
+## Rule order example ##
+
+For example, you may want a process to send automated emails to a safety manager, where the email includes submitted form data. In this case a **Send email rule** could be attached to a form **Submit** button so an email is sent once the button is clicked. This will result in an automated email to a designated person. To generate a report of the completed form you can use the **Generate word** **document** **rule** triggered again when the **Submit** button is clicked. In this example the **Generate word document rule** has to be executed <u>before</u> the **Send email rule**, so that the Word document can be generated and then attached to the email. 
+
+The rule order consideration is therefore particularly important when rules are **dependent** on each other - where the output of one rule is the input of another rule.
 
 
-### Introduction
 
-When working with rules in forms, a key principle to consider is **rule order**. This is important if there are **multiple rules** attached to an item like a button. In this case the order of execution is important and can be modified to suit your needs.
-
-For example, you may want a **Send email rule** to be executed once the **Submit** button is clicked. This will result in an automated email to a designated person. You may also want to attach a report to this email, a report that is a complete form. In this example a **Generate word** **document** **rule** could be used to generate a report when the **Submit** button is clicked. In this example the **Generate word document rule** has to be executed before the **Send email rule**, so that the Word document can be generated and then attached to the email. 
-
-The rule order consideration is therefore particularly important when rules are dependent on each other - where the output of one rule is the input of another rule.
-
-### Changing the rule order of multiple rules
+## Changing the rule order of multiple rules
 
 In the example below we will look at changing the rule order of a Send email rule attached to a Submit button. The **Submit**, **Save** and **Close** buttons by default already have **Submit**, **Save** and **Close** process rules attached, in order to allow form shutdown.
 
 To change rule order, when the rule is created:
 
-1. Click on the item that has multiple rules attached, for example a **Submit** button.
+1. Click on the item that has multiple rules attached, for example a **Submit** button. Remember by default Submit buttons in forms will have 'form shutdown' rules, namely **Submit**, **Save** and **Close**.
 2. Click on **Rules** in the right-hand pane, drag the **Send email** rule to the top of the list by clicking on the rule and drag it to the top of the list, before **Submit**, **Save** and **Close** rules. 
 
 ![img](https://academy.kianda.com/wp-content/uploads/2022/03/ruleorder_frame.png)

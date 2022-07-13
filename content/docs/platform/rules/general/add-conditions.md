@@ -4,8 +4,6 @@ typora-root-url: ..\..\..\..\..\static
 weight: 1
 ---
 
-#### Introduction
-
 Conditions are a key component of Kianda **rules**. They are the **triggers** that result in fully dynamic forms. They enable you to enables you to create natural language conditions when rules should be triggered.
 
 The **Conditions** button ![img](https://academy.kianda.com/wp-content/uploads/2022/02/condition.png) is found within all **rules** as well as [dashboard widgets](docs/platform/pages/). Conditions can also be set when setting data source security levels for [B2B portals](/docs/platform/b2b-portals/data-access/).
@@ -18,7 +16,7 @@ Conditions work on the ‘if…then’ principle: ‘if’ the condition exists 
 2. Create the **action(s)** that will be applied as a result of the first condition being in place.
 3. Where applicable, create the **otherwise action(s)** based on other conditions being in place.
 
-#### Create the condition
+## Create the condition
 
 1. To create **conditions**, first choose the **process element** you want the condition to apply to – such as a form, set of forms, a field/control or set of fields.
 2. Next, depending on whether the rule is applied to a **text-based field or date-based field**, choose from 13 text operators or 25 date operators (see image below).
@@ -34,7 +32,7 @@ In the case of **multiple conditions**, you can use **And** or **Or** to create 
 
 The result is a flexible process workflow that will result in desired actions based on any number of conditions.
 
-#### Rule action(s) – example Hide or Disable rule
+### Rule action(s) – example Hide or Disable rule
 
 To create **actions** and where applicable, **otherwise actions**, the **action will depend on the rule** that is chosen. All Kianda rules use a natural language structure to make it is easy to apply actions. For example, for the **Workflow rule**, **Hide or Disable**, you can choose forms and fields from your process and then apply seven possible actions (as shown below).
 
