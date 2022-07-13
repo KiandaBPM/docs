@@ -27,3 +27,6 @@ $primary : #063680;
 #m-docs>span::before{
     content:"" !important;
 }
+body > div > div > div > aside.col-12.col-md-3.col-xl-2.td-sidebar.d-print-none{
+    max-width:20%;
+}
