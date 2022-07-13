@@ -1,11 +1,11 @@
 ---
-title: "REST API"
-linkTitle: "REST API"
+title: "Instances API"
+linkTitle: "Instances API"
 weight: 1
 typora-root-url: ..\..\..\..\static
 ---
 
-You can query data using Kianda via a REST Application Programming Interface (API). Using REpresentational State Transfer (REST) allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values.
+You can query Kianda's REST Application Programming Interface (API). Using REpresentational State Transfer (REST) allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on process instances.
 
 
 
@@ -32,7 +32,8 @@ Before you get started, there are three things to keep in mind:
 ## POST Create an instance
 
 ```
-/api/instances/create
+For example for the workspace for the company GreenITR:
+https://green-itr.kianda.com/api/instances/create
 ```
 
 This request creates a process instance/new record.
@@ -41,7 +42,7 @@ The **Request Body** for the POST request is:
 
 ![Create instance](/images/json-create.jpg)
 
-The **Response Body** for POST request:
+The **Response Body** will be the following:
 
 ![Create Response Body](/images/json-create-response.jpg)
 
