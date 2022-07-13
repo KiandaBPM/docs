@@ -327,8 +327,8 @@ Your browser does not support the video tag.
 &lt;li>&lt;strong>Title&lt;/strong> - Name to represent this form. In our case we will call it &lt;strong>Request Form&lt;/strong>.&lt;/li>
 &lt;li>&lt;strong>Name (unique)&lt;/strong> - A unique identifier for our form. You can give this any name you would like as long as it&amp;rsquo;s unique.&lt;/li>
 &lt;li>&lt;strong>Default owner(s)&lt;/strong> - This field identifies which users can fill out our form when it&amp;rsquo;s complete. In our case we will choose from &lt;strong>Groups&lt;/strong> and choose our &lt;strong>Management Team&lt;/strong>. To learn more about how to create groups in Kianda go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#creating-new-groups">creating groups&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Activate with&lt;/strong> - Will decide when the form will be active. If you have several forms attached to a process, then select from a dropdown list the form you want to activate with the current form. In our case we will leave this blank.&lt;/li>
-&lt;li>&lt;strong>Submit mode&lt;/strong> - Choose &lt;strong>Only this form&lt;/strong> radio list.&lt;/li>
+&lt;li>&lt;strong>Activate with&lt;/strong> - Means that the form can be activated with other forms within the process, so they can be edited at the same time. This means several forms become the &lt;strong>current form&lt;/strong> in a form group. In our case we will leave this blank.&lt;/li>
+&lt;li>&lt;strong>Submit mode&lt;/strong> - This option means that when a process instance is running you can choose &lt;strong>only this form&lt;/strong> to be submitted, or you can choose &lt;strong>all forms in edit mode&lt;/strong> meaning that several forms could have their details submitted or saved. Choose &lt;strong>Only this form&lt;/strong> radio list.&lt;/li>
 &lt;li>&lt;strong>Form icon&lt;/strong> - Dropdown field to select an icon for the form.&lt;/li>
 &lt;li>&lt;strong>Form theme&lt;/strong> - This option is used to change the colour of the form tile, for example &lt;strong>Green&lt;/strong>.&lt;/li>
 &lt;li>&lt;strong>Enable quick actions&lt;/strong> - if you tick the checkbox, you can select from the options a) Enable re-assign b) Enable edit and c) Enable custom action. We will leave this box unchecked.&lt;/li>
@@ -995,11 +995,41 @@ Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
 &lt;p>Back to &lt;a href="../">How to videos&lt;/a>&lt;/p></description></item><item><title>Docs: Inspection Form</title><link>https://docs.kianda.com/docs/examples/inspection/inspect-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/inspect-form/</guid><description>
-&lt;p>To create an Inspection Form for this process, we will take a look back at our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>.&lt;/p>
-&lt;p>Here we will create an &lt;strong>Inspection Form&lt;/strong> for our process. The form will be used by our engineer, he will fill it out and submit it. We will add a rule to &lt;strong>Generate a word document&lt;/strong> and a rule to &lt;strong>Convert to PDF&lt;/strong>. The PDF file will be then sent to the &lt;strong>Safety Manager&lt;/strong> which we will get from the &lt;strong>Request Form&lt;/strong>. First we need to create a new &lt;strong>Inspection Form&lt;/strong>.&lt;/p>
-&lt;h3 id="create-new-form">Create new form&lt;/h3>
+&lt;!-- The **Inspection Form** for this process will be used by an engineer from our **Request Form**. The engineer will have the ability to access and edit the form. When the engineer submits the **Inspection Form**, we will generate a word document, convert it to a PDF file and send it to our **Safety Manager** from our **Request Form**. For this we will use **Generate a word document** rule along with **Convert to PDF** rule. We will also then use **Send email** rule to send. -->
+&lt;h2 id="creating-the-inspection-form">Creating the Inspection Form&lt;/h2>
+&lt;p>To begin this example of creating an &lt;strong>Inspection Form&lt;/strong>, we need to add a new form to our process.&lt;/p>
 &lt;ol>
-&lt;li>In the process creation page, click on &lt;strong>Add form&lt;/strong>&lt;/li>
+&lt;li>
+&lt;p>From the process creation page, click on &lt;strong>Add form&lt;/strong>. This can be found at the top of your screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-add-form.jpg" alt="">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - Name to represent this form. In our case we will call it &lt;strong>Inspection Form&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Name (unique)&lt;/strong> - A unique identifier for our form. You can give this any name you would like as long as it’s unique.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Default owner(s)&lt;/strong> - This field identifies which users can fill out our form when it’s complete. In our case we will choose from &lt;strong>Groups&lt;/strong> and choose our &lt;strong>Management Team&lt;/strong>. To learn more about how to create groups in Kianda go to &lt;a href="http://localhost:1313/docs/platform/administration/users/#creating-new-groups">creating groups&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Activate with&lt;/strong> - Means that the form can be activated with other forms within the process, so they can be edited at the same time. This means several forms become the &lt;strong>current form&lt;/strong> in a form group. In our case we will leave this blank.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Submit mode&lt;/strong> - This option means that when a process instance is running you can choose &lt;strong>only this form&lt;/strong> to be submitted, or you can choose &lt;strong>all forms in edit mode&lt;/strong> meaning that several forms could have their details submitted or saved. Choose &lt;strong>Only this form&lt;/strong> radio list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form icon&lt;/strong> - Dropdown field to select an icon for the form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form theme&lt;/strong> - This option is used to change the colour of the form tile, for example &lt;strong>Green&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable quick actions&lt;/strong> - if you tick the checkbox, you can select from the options a) Enable re-assign b) Enable edit and c) Enable custom action. We will leave this box unchecked.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-inspection-form-edit-box.jpg" alt="Edit form box">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
 &lt;h3 id="introduction">Introduction&lt;/h3>
 &lt;p>When working with rules in forms, a key principle to consider is &lt;strong>rule order&lt;/strong>. This is important if there are &lt;strong>multiple rules&lt;/strong> attached to an item like a button. In this case the order of execution is important and can be modified to suit your needs.&lt;/p>
