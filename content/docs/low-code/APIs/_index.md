@@ -5,7 +5,7 @@ weight: 1
 typora-root-url: ..\..\..\..\static
 ---
 
-You can query Kianda's REST Application Programming Interface (API). Using REpresentational State Transfer (REST) allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on process instances.
+Kianda's REST Application Programming Interface (API) for **instances** allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on process instances. A process instance is created everything data is either saved or submitted to Kianda's database for a given process design.
 
 
 
@@ -29,11 +29,10 @@ Before you get started, there are three things to keep in mind:
 
    
 
-## POST Create an instance
+## POST  - Create a process instance
 
 ```
-For example for the workspace for the company GreenITR:
-https://green-itr.kianda.com/api/instances/create
+{domain}/api/instances/create
 ```
 
 This request creates a process instance/new record.
@@ -50,10 +49,10 @@ The **Response Body** will be the following:
 
 
 
-## PUT Update an instance
+## PUT - Update a process instance
 
 ```
-/api/instances/{name}
+{domain}/api/instances/{name}
 ```
 
 ​	where `{name}`is the name of the process instance.
@@ -70,27 +69,11 @@ The **Response Body** for PUT request:
 
 
 
-## PATCH Partially save an instance
+
+## GET - Retrieve process instance fields
 
 ```
-/api/instances/{name}/update
-```
-
-​	where `{name}`is the name of the process instance.
-
-This request partially updates an instance by comparing changes to the last saved version of the instance, and updating only changed fields.
-
-The **Request Body** for the PATCH request is:
-
-![PATCH Request Body](/images/patch-request.jpg)
-
-The **Response Body** for PATCH is:
-
-
-## GET Retrieve instance fields
-
-```
-/api/instances/{name}/fields?names=field1,field2..
+{domain}/api/instances/{name}/fields?names=field1,field2..
 ```
 
 ​	where `{name}`is the name of the process instance.
