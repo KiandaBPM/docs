@@ -4,7 +4,7 @@ weight: 6
 typora-root-url: ..\..\..\static
 ---
 
-Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the site. However as a workspace **Administrator** you can access a **Global CSS File** that exists within the **Look and Feel** section of the Subscription**,** within the **Administration** section of the site**.** 
+Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the site. However as a workspace **Administrator** you can access a **Global CSS File** that exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site. 
 
 
 
@@ -22,51 +22,101 @@ To access the Global CSS file:
 
 2. Click on **Look and Feel**.
 
-3. On the Look and Feel page, click on the ellipsis button ![Ellipsis button](/images/expression-button.jpg) beside the Custom CSS Url to access the Global CSS file.
+3. On the **Look and Feel** page, click on the **ellipsis** button ![Ellipsis button](/images/expression-button.jpg) beside the **Custom CSS Url** to access the Global CSS file.
 
    ![Custom CSS Url file](/images/custom-css-url.jpg)
 
-4. The CSS Editor opens, allowing you to make edits to default code. 
+4. The **CSS Editor** opens, allowing you to make edits to default code. 
 
    ![CSS Editor](/images/css-editor.jpg)
 
-5. Within the file there are some items already added that can be expanded upon. These items include:
+5. Within the file there are some items already added that can be expanded upon. For example these items include:
 
-   - **Class selectors** - .list-row
+   - **Class selectors** for example:
 
-   - **Class selector and element** - .pagination > .active > a
+   ```css
+   .list-row {
+     border-radius: 5px;
+     background-color: #ffffff;
+     padding: 10px;
+     -webkit-transition: background-color 100ms ease-out;
+     transition: background-color 100ms ease-out;
+   }
+   ```
+   
+   - **Class selector and element** for example:
+   
+   ```css
+     .pagination > .active > a {
+      background-color: #1e2458;
+      border-color: #1e2458;
+     }
+   ```
+   
+   - **Elements and attributes** for example:
+   
+     ```css
+     div[data-name$="?card"].form-group {
+      border-radius: 12px;
+      border: 1px solid #e7eaee;
+      background: white;
+      margin-bottom: 15px;
+      padding-bottom: 0px !important;
+      padding-top: 18px;
+      padding-right: 15px;
+     }
+     ```
+   
+   - **Media controls** for example:
+   
+   ```css
+   @media only screen and (max-width: 767px) {
+     div[data-name$="?headerTitle"]:not(.is-design) {
+       margin-left: calc(-52vw + 50%);
+       width: 101vw;
+     }
+   }
+   ```
+   
 
-   - **Elements** - section > div > div > div > div > div > .form-card
+The next section deals with [Adding items](#adding-items-to-global-css) to the file.
 
-   - **Element and attribute** - div[data-name$="?card"].form-group
 
-   - **Media controls** - @media screen and max-width: 767px
 
-The next section deals with [Adding items](#adding-items) to the file.
+### Adding items to Global CSS
 
-### Adding items
+Additional items can be added to the file whenever you wish. Best practice is to update only individual items based on the **Unique Name** which becomes an attribute.
 
-Additional items can be added to the file whenever you wish. Typically, the best practice, is to update only individual items based on the **Unique Name** which becomes an attribute.
-
-For example, if I have a button in my process that I want to change background colour and text colour, first I need to note down the **Unique Name.** Next, because I want to only target the button in my process and not all buttons in the system, I am going to use the **Element and attribute** selector. This will take the form of: 
+For example, if you have a button in a process and you want to change background colour and text colour, first you need to note down the **Unique Name.** Next, because you only want to target the button in a specific process and not all buttons in the system, use the **Element and attribute** selector. This will take the form of: 
 
 ```css
 button[data-name$="?pinkButton"]:not(.is-design) {}
 ```
 
-1. Within the **Global CSS File** add the necessary details, for example the above along with the necessary CSS properties.
+1. Within the **Global CSS File** add the necessary details, for example the above along with the necessary CSS properties, for example:
 
-![img](file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png)
+   ```css
+    button[data-name$="?pinkButton"]:not(.is-design) {
+         color: green;
+       background-color:pink;
+     }
+   ```
 
-2. When you are finished making changes click on **OK** or else click on **Close** at any time to close the dialog box. Ensure to save changes to the file by clicking on the **Save Changes** button in **Look and Feel**. Once the file is saved ensure to refresh Kianda to download the most recent changes into the cache. 
+2. When you are finished making changes click on **OK** or else click on **Close** at any time to close the dialog box. 
 
-3. Return to the process and select the button that needs the custom CSS.
+3. Ensure to save changes to the file by clicking on the **Save Changes** button in **Look and Feel**. You should see a notification to say **Subscription settings updated**.
 
-4. Edit the button and enter the attribute name into the **Unique Name** field.
+   ![Subscription settings updated](/images/subscription-settings.jpg)
+
+   **Once** the file is saved ensure to refresh Kianda to download the most recent changes into the cache. 
+
+4. Return to the process and select the button that needs the custom CSS.
+
+5. Edit the button and enter the attribute name into the **Unique Name** field.
 
    ![image-20220712071246993](/images/unique-name)
 
-5. When the process is viewed in preview mode or published the Global CSS will override the default system CSS.
+6. When the process is viewed in preview mode or published the Global CSS will override the default system CSS.
 
    ![image-20220712071813270](/images/send-email-pink)
 

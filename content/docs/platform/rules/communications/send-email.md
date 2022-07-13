@@ -93,7 +93,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
 ### Email connector ###
 
-The email connector must be set up in advance TO COME BACK TO. 
+The email connector must be set up in advance. 
 
 If you leave the From field empty, the email will be sent from noreply@kianda.com.  If you want your email to come from a different sender, follow these steps when you are editing the Send email rule:
 
