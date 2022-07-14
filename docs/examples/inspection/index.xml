@@ -442,7 +442,7 @@ The Safety Team
 &lt;/li>
 &lt;/ol>
 &lt;h4 id="creating-a-table-field---inspection-checklist">Creating a Table field - Inspection Checklist&lt;/h4>
-&lt;p>The &lt;strong>Inspection Checklist&lt;/strong> will be used by an engineer to fill out. Inside of the table we need to have five different columns. &lt;strong>First&lt;/strong> column will be a text box representing a check that our engineer must complete. &lt;strong>Second&lt;/strong> column will be our passed radio list of &lt;strong>Yes&lt;/strong> and &lt;strong>No&lt;/strong> options. &lt;strong>Third&lt;/strong> column is another text box for any comments that the engineer might have. &lt;strong>Forth&lt;/strong> column is a &lt;strong>File upload&lt;/strong> field to upload any images. Our last, &lt;strong>fifth&lt;/strong> column is the &lt;strong>Image&lt;/strong> container to hold the uploaded image.&lt;/p>
+&lt;p>The &lt;strong>Inspection Checklist&lt;/strong> will be used by an engineer to fill out. Inside of the table we need to have five different columns. &lt;strong>First&lt;/strong> column will be a text box representing a check that our engineer must complete. &lt;strong>Second&lt;/strong> column will be our passed radio list of &lt;strong>Yes&lt;/strong> and &lt;strong>No&lt;/strong> options. &lt;strong>Third&lt;/strong> column is another text box for any comments that the engineer might have. &lt;strong>Forth&lt;/strong> column is a &lt;strong>File upload&lt;/strong> field to upload any images. Our last, &lt;strong>fifth&lt;/strong> column is the &lt;strong>Image&lt;/strong> container to hold the uploaded image. To learn more about Table input, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
 &lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/table-field.gif"/>
 &lt;ol>
 &lt;li>
@@ -547,8 +547,9 @@ The Safety Team
 &lt;/ol>
 &lt;p>The image below shows how the &lt;strong>Inspection Checklist&lt;/strong> should look so far. You can move the table fields with the left and right arrows above each field. Note the crossed circle above the question text box, this indicated that this field is disabled and will not be editable by an user of the form.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-move-fields.jpg" alt="Table move left and right">&lt;/p>
+&lt;br>
 &lt;h4 id="changing-text-box-field---comment">Changing Text box field - Comment&lt;/h4>
-&lt;p>The &lt;strong>Comment&lt;/strong> field gives the ability to type in a comment on any of the checks performed by the engineer.&lt;/p>
+&lt;p>The &lt;strong>Comment&lt;/strong> field gives the ability to type in a comment on any of the checks performed by the engineer. We will use the &lt;strong>Text 2&lt;/strong> field which is automatically created in when adding the &lt;strong>Table&lt;/strong> field.&lt;/p>
 &lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/comment.gif"/>
 &lt;p>&lt;br>&lt;br>&lt;/p>
 &lt;ol>
@@ -575,6 +576,195 @@ The Safety Team
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
 &lt;/li>
+&lt;/ol>
+&lt;h4 id="adding-a-file-field---upload-image">Adding a File field - Upload Image&lt;/h4>
+&lt;p>The &lt;strong>Upload Image&lt;/strong> field allows the engineer to upload an image into our form and into a specific check within the checklist. From the &lt;strong>File&lt;/strong> options, we need to save the uploaded file in our database, for example SharePoint, this database needs to be pre-created. To learn more about &lt;strong>File&lt;/strong> input go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/upload-file.gif"/>
+&lt;p>&lt;br>&lt;br>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To add a &lt;strong>File&lt;/strong> field, first select the &lt;strong>Comment&lt;/strong> field in the checklist table so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>File&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-table-add-file.jpg" alt="Adding Radio list">&lt;/p>
+&lt;br>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Upload Image&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Destination&lt;/strong> &lt;img src="https://docs.kianda.com/images/destination-file.jpg" alt="Destination button"> to open datasource dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select your desired location to save the file.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Datasource&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>With the &lt;strong>Allow file override&lt;/strong> option you can choose whether or not to allow file override. If you choose ‘Yes’, if a user goes back into the form and uploads another file to the File upload field, this will override the original file they had uploaded. This option works in conjunction with the &lt;strong>Allow uploading multiple files&lt;/strong> option - if you choose to allow multiple files to be uploaded, then the ‘Allow file override’ option is no longer relevant (as uploading more files will not override file/files already uploaded). We will choose &lt;strong>Yes&lt;/strong> for our process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>With the &lt;strong>Enable media capture&lt;/strong> if you choose &lt;strong>Yes&lt;/strong>, this enables the user to capture media to upload - on a mobile device, when the user clicks on the Upload button their camera/video recorder will open (depending on whether you’ve selected the file extension to be image or video). We will choose &lt;strong>Yes&lt;/strong> for our process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Button icon&lt;/strong> by default, the file upload icon is &lt;img src="https://docs.kianda.com/images/file-upload-icon.jpg" alt="File upload icon"> but you can change this by clicking the Button icon drop-down menu and choosing a different icon from the large range of icons available. We will choose a camera icon for our process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>New field - File&lt;/strong> dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-file-settings.jpg" alt="Destination button">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;br>
+&lt;h4 id="adding-an-image-field---image">Adding an Image field - Image&lt;/h4>
+&lt;p>The &lt;strong>Image field&lt;/strong> is used for holding an image. In our case we will use this field to hold the image that is uploaded by the engineer during the inspection. To learn more about &lt;strong>Image&lt;/strong> fields, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image control&lt;/a>.&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/image-field.gif"/>
+&lt;p>&lt;br>&lt;br>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To add an &lt;strong>Image&lt;/strong> field, first select the &lt;strong>Upload Image&lt;/strong> field in the checklist table so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Actions&lt;/strong> to view the range of Action controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Image&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-table-add-image.jpg" alt="Image settings">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Upload Image&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>File field&lt;/strong> from the &lt;strong>Image source&lt;/strong> option, from the &lt;strong>Inspection Form&lt;/strong> drill down and select &lt;strong>Upload Image&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-image-settings.jpg" alt="Image settings">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Image max height&lt;/strong> and &lt;strong>Image max width&lt;/strong> type in &lt;strong>100&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>New field - Image&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="adding-rows-to-table---checklist">Adding rows to Table - Checklist&lt;/h4>
+&lt;p>We have now created all fields needed for our Inspection Checklist. The &lt;strong>First row&lt;/strong> we created is a template for all other rows and will &lt;strong>NOT&lt;/strong> be visible and editable by a user of the form. To learn more about &lt;strong>Tables&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>. In our &lt;strong>Table&lt;/strong> we will have three different checks that we need our engineer to complete therefore we will add three rows.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To add a row click on &lt;strong>Add Row&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Repeat step 1 two more times to have three rows. You can delete a row by clicking the red trash &lt;img src="https://docs.kianda.com/images/red-trash-icon.jpg" alt="Image settings"> on the right-hand side of the row.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-add-row.jpg" alt="Add row to table">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>First&lt;/strong> row of the &lt;strong>Question&lt;/strong> field type in &lt;strong>Are there adequate safety warnings?&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the **Second **row of the &lt;strong>Question&lt;/strong> field type in &lt;strong>Are the rotors in motion?&lt;/strong> in the &lt;strong>Question&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Third&lt;/strong> row of the &lt;strong>Question&lt;/strong> field type in &lt;strong>Does the tower pass a visual inspection?&lt;/strong> in the &lt;strong>Question&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-3rows.jpg" alt="Three rows with questions">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="disabling-row-adding-and-removing">Disabling row adding and removing&lt;/h4>
+&lt;p>For our Inspection Form we will disable &lt;strong>row adding&lt;/strong> and &lt;strong>row removing&lt;/strong> from the &lt;strong>Checklist&lt;/strong>. This will prevent the engineer to add and remove rows from the checklist when he is completing the inspection.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the &lt;strong>Table&lt;/strong> so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to edit the &lt;strong>Table&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>No&lt;/strong> on the &lt;strong>Enable adding rows&lt;/strong> option.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>No&lt;/strong> on the &lt;strong>Enable removing rows&lt;/strong> option.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-add-remove-rows.jpg" alt="Add/Remove rows">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="creating-a-utility-panel">Creating a Utility panel&lt;/h3>
+&lt;p>The utility panel will hold our word document template and the generated PDF file of our inspection. First we need to create a utility panel and make it invisible to the user.&lt;/p>
+&lt;h4 id="adding-a-panel-field">Adding a Panel field&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>To add a &lt;strong>Panel&lt;/strong> field, first select the &lt;strong>Inspection Form&lt;/strong> so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Layout&lt;/strong> to view the range of Layout controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Panel&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the &lt;strong>Panel&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Field properties&lt;/strong> in the right-hand pane.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Visible&lt;/strong> checkbox to uncheck it.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/field-properties-visible-uncheck.jpg" alt="Field properties, enabled unchecked">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to edit the &lt;strong>Panel&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Utility panel&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="adding-a-file-field---upload-template">Adding a File field - Upload template&lt;/h4>
+&lt;p>The Upload template is a &lt;strong>File&lt;/strong> field. This field will be used to upload a word document which will be the template for creating the PDF file.&lt;/p>
+&lt;ol>
+&lt;li>To add a &lt;strong>File&lt;/strong> field into the &lt;strong>Panel&lt;/strong>, first select the &lt;strong>Panel&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/li>
+&lt;li>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/li>
+&lt;li>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/li>
+&lt;li>Click on &lt;strong>File&lt;/strong>.&lt;/li>
+&lt;li>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Upload template&lt;/strong>.&lt;/li>
+&lt;li>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
+&lt;li>Click on &lt;strong>Destination&lt;/strong> &lt;img src="https://docs.kianda.com/images/destination-file.jpg" alt="Destination button"> to open datasource dialog box.&lt;/li>
+&lt;li>Select your desired location to save the file.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Datasource&lt;/strong> dialog box.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h4 id="adding-a-file-field---generated-pdf">Adding a File field - Generated PDF&lt;/h4>
+&lt;p>The Generated PDF file is a &lt;strong>File&lt;/strong> field which is used to hold our PDF from the above template.&lt;/p>
+&lt;ol>
+&lt;li>To add a &lt;strong>File&lt;/strong> field into the &lt;strong>Panel&lt;/strong> follow steps 1 through 4 in the above &lt;strong>Adding a file - Upload template&lt;/strong> section.&lt;/li>
+&lt;li>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Generated PDF&lt;/strong>.&lt;/li>
+&lt;li>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
+&lt;li>Click on &lt;strong>Destination&lt;/strong> &lt;img src="https://docs.kianda.com/images/destination-file.jpg" alt="Destination button"> to open datasource dialog box.&lt;/li>
+&lt;li>Select your desired location to save the file.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Datasource&lt;/strong> dialog box.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction.&lt;/p>
