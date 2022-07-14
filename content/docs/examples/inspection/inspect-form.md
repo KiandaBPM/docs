@@ -81,7 +81,7 @@ The **Date** field represents the day, month and year of our inspection. To lear
 
 #### Creating a Table field - Inspection Checklist
 
-The **Inspection Checklist** will be used by an engineer to fill out. Inside of the table we need to have five different columns. **First** column will be a text box representing a check that our engineer must complete. **Second** column will be our passed radio list of **Yes** and **No** options. **Third** column is another text box for any comments that the engineer might have. **Forth** column is a **File upload** field to upload any images. Our last, **fifth** column is the **Image** container to hold the uploaded image.
+The **Inspection Checklist** will be used by an engineer to fill out. Inside of the table we need to have five different columns. **First** column will be a text box representing a check that our engineer must complete. **Second** column will be our passed radio list of **Yes** and **No** options. **Third** column is another text box for any comments that the engineer might have. **Forth** column is a **File upload** field to upload any images. Our last, **fifth** column is the **Image** container to hold the uploaded image. To learn more about Table input, go to [Table control](/docs/platform/controls/input/table/).
 
 <img src="/videos/gifs/examples/inspection/table-field.gif"/>
 
@@ -109,7 +109,7 @@ The **Inspection Checklist** will be used by an engineer to fill out. Inside of 
 
 ### Changing the Table layout
 
-When adding a table in Kianda, the table has two text boxes inside by default. We will leave them in as we'll be using them for our **Question** and **Comment** fields.
+When adding a table in Kianda, the table has two text boxes inside by default. We will leave them in as we'll be using them for our **Question** and **Comment** fields. 
 
 #### Changing Text box field - Question
 
@@ -179,11 +179,13 @@ The image below shows how the **Inspection Checklist** should look so far. You c
 
 ![Table move left and right](/images/table-move-fields.jpg)
 
+<br>
+
 
 
 #### Changing Text box field - Comment
 
-The **Comment** field gives the ability to type in a comment on any of the checks performed by the engineer.
+The **Comment** field gives the ability to type in a comment on any of the checks performed by the engineer. We will use the **Text 2** field which is automatically created in when adding the **Table** field.
 
 <img src="/videos/gifs/examples/inspection/comment.gif"/>
 
@@ -207,31 +209,167 @@ The **Comment** field gives the ability to type in a comment on any of the check
 
 7. Click on **OK** on the **Edit field** dialog box.
 
+#### Adding a File field - Upload Image
 
+The **Upload Image** field allows the engineer to upload an image into our form and into a specific check within the checklist. From the **File** options, we need to save the uploaded file in our database, for example SharePoint, this database needs to be pre-created. To learn more about **File** input go to [File upload control](/docs/platform/controls/input/file-upload/).
 
+<img src="/videos/gifs/examples/inspection/upload-file.gif"/>
 
+<br><br>
 
+1. To add a **File** field, first select the **Comment** field in the checklist table so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
 
+2. Click on **Controls** in the left-hand pane to expand the Controls menu.
 
+3. Select **Input** to view the range of Input controls.
 
+4. Click on **File**.
 
+   ![Adding Radio list](/images/examples-table-add-file.jpg)
 
+   <br>
 
+5. Change the **Title** to **Upload Image**.
 
+6. Chane the **Name (unique)** to a unique identifier.
 
+7. Click on **Destination** ![Destination button](/images/destination-file.jpg) to open datasource dialog box.
 
+8. Select your desired location to save the file.
 
+9. Click on **OK** on the **Datasource** dialog box.
 
+10. With the **Allow file override** option you can choose whether or not to allow file override. If you choose ‘Yes’, if a user goes back into the form and uploads another file to the File upload field, this will override the original file they had uploaded. This option works in conjunction with the **Allow uploading multiple files** option - if you choose to allow multiple files to be uploaded, then the ‘Allow file override’ option is no longer relevant (as uploading more files will not override file/files already uploaded). We will choose **Yes** for our process. 
 
+11. With the **Enable media capture**  if you choose **Yes**, this enables the user to capture media to upload - on a mobile device, when the user clicks on the Upload button their camera/video recorder will open (depending on whether you’ve selected the file extension to be image or video). We will choose **Yes** for our process.
 
+12. **Button icon** by default, the file upload icon is ![File upload icon](/images/file-upload-icon.jpg) but you can change this by clicking the Button icon drop-down menu and choosing a different icon from the large range of icons available. We will choose a camera icon for our process.
 
+13. Click on **OK** on the **New field - File** dialog box.
 
+    ![Destination button](/images/examples-file-settings.jpg)
 
+<br>
 
+#### Adding an Image field - Image
 
+The **Image field** is used for holding an image. In our case we will use this field to hold the image that is uploaded by the engineer during the inspection. To learn more about **Image** fields, go to [Image control](/docs/platform/controls/actions/image/).
 
+<img src="/videos/gifs/examples/inspection/image-field.gif"/>
 
+<br><br>
 
+1. To add an **Image** field, first select the **Upload Image** field in the checklist table so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
 
+2. Click on **Controls** in the left-hand pane to expand the Controls menu.
 
+3. Select **Actions** to view the range of Action controls.
 
+4. Click on **Image**.
+
+   ![Image settings](/images/examples-table-add-image.jpg)
+
+5. Change the **Title** to **Upload Image**.
+
+6. Chane the **Name (unique)** to a unique identifier.
+
+7. Select **File field** from the **Image source** option, from the **Inspection Form** drill down and select **Upload Image**.
+
+   ![Image settings](/images/examples-image-settings.jpg)
+
+8. In the **Image max height** and **Image max width** type in **100**.
+
+9. Click on **OK** on the **New field - Image** dialog box.
+
+#### Adding rows to Table - Checklist
+
+We have now created all fields needed for our Inspection Checklist. The **First row** we created is a template for all other rows and will **NOT** be visible and editable by a user of the form. To learn more about **Tables**, go to [Table control](/docs/platform/controls/input/table/). In our **Table** we will have three different checks that we need our engineer to complete therefore we will add three rows.
+
+1. To add a row click on **Add Row**.
+
+2. Repeat step 1 two more times to have three rows. You can delete a row by clicking the red trash ![Image settings](/images/red-trash-icon.jpg) on the right-hand side of the row. 
+
+   ![Add row to table](/images/examples-add-row.jpg)
+
+3. In the **First** row of the **Question** field type in **Are there adequate safety warnings?**
+
+4. In the **Second **row of the **Question** field type in **Are the rotors in motion?** in the **Question** field.
+
+5. In the **Third** row of the **Question** field type in **Does the tower pass a visual inspection?** in the **Question** field.
+
+   ![Three rows with questions](/images/examples-3rows.jpg)
+
+#### Disabling row adding and removing
+
+For our Inspection Form we will disable **row adding** and **row removing** from the **Checklist**. This will prevent the engineer to add and remove rows from the checklist when he is completing the inspection.
+
+1. Select the **Table** so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
+
+2. Click on the edit or pen icon ![Pen icon](/images/penicon.png) to edit the **Table**.
+
+3. Select **No** on the **Enable adding rows** option.
+
+4. Select **No** on the **Enable removing rows** option.
+
+   ![Add/Remove rows](/images/examples-add-remove-rows.jpg)
+
+5. Click on **OK** on the **Edit field** dialog box.
+
+### Creating a Utility panel
+
+The utility panel will hold our word document template and the generated PDF file of our inspection. First we need to create a utility panel and make it invisible to the user.
+
+#### Adding a Panel field
+
+1. To add a **Panel** field, first select the **Inspection Form** so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
+
+2. Click on **Controls** in the left-hand pane to expand the Controls menu.
+
+3. Select **Layout** to view the range of Layout controls.
+
+4. Click on **Panel**.
+
+5. Select the **Panel** field so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
+
+6. Click on **Field properties** in the right-hand pane. 
+
+7. Click on the **Visible** checkbox to uncheck it.
+
+   ![Field properties, enabled unchecked](/images/field-properties-visible-uncheck.jpg)
+
+   
+
+8. Click on the edit or pen icon ![Pen icon](/images/penicon.png) to edit the **Panel**.
+
+9. Change the **Title** to **Utility panel**.
+
+10. Chane the **Name (unique)** to a unique identifier.
+
+11. Click on **OK** on the **Edit field** dialog box.
+
+#### Adding a File field - Upload template
+
+The Upload template is a **File** field. This field will be used to upload a word document which will be the template for creating the PDF file.
+
+1. To add a **File** field into the **Panel**, first select the **Panel** field so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
+2. Click on **Controls** in the left-hand pane to expand the Controls menu.
+3. Select **Input** to view the range of Input controls.
+4. Click on **File**.
+5. Change the **Title** to **Upload template**.
+6. Chane the **Name (unique)** to a unique identifier.
+7. Click on **Destination** ![Destination button](/images/destination-file.jpg) to open datasource dialog box.
+8. Select your desired location to save the file.
+9. Click on **OK** on the **Datasource** dialog box.
+10. Click on **OK** on the **Edit field** dialog box.
+
+#### Adding a File field - Generated PDF
+
+The Generated PDF file is a **File** field which is used to hold our PDF from the above template.
+
+1. To add a **File** field into the **Panel** follow steps 1 through 4 in the above **Adding a file - Upload template** section.
+2. Change the **Title** to **Generated PDF**.
+3. Chane the **Name (unique)** to a unique identifier.
+4. Click on **Destination** ![Destination button](/images/destination-file.jpg) to open datasource dialog box.
+5. Select your desired location to save the file.
+6. Click on **OK** on the **Datasource** dialog box.
+7. Click on **OK** on the **Edit field** dialog box.
