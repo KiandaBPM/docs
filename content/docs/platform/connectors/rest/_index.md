@@ -4,7 +4,7 @@ linkTitle: "REST Web Service"
 typora-root-url: ..\..\..\..\..\static
 ---
 
-One of the datasources available in Kianda is a connector to a **REST API**. Kianda has the ability to perform **GET, POST, PUT** and **DELETE** operation if they are supported by the webservice. The REST API datasource can support multiple REST methods, all of which can be called independently. Data from the webservice can be pulled into Kianda and manipulated or data from Kianda can be pushed to the webservice to be used by other systems.
+One of the datasources available in Kianda is a connector to a **REST API**. Kianda has the ability to perform **GET, POST, PUT** and **DELETE** operations if they are supported by the webservice. The REST API datasource can support multiple REST methods, all of which can be called independently. Data from the webservice can be pulled into your Kianda workspace and manipulated, or data from Kianda can be pushed to the webservice to be used by other systems.
 
 ## When to use 
 
@@ -12,7 +12,7 @@ You can create a REST API datasource when you want your Kianda processes and for
 
 ## How to get started
 
-A REST API data connector can be configured by users with the role **Administrator** or **Manage datasources**. These users can access the function, found under **Administration** > **Data sources**.
+A REST API data connector can be configured by users with the role **Administrator** or **Manage datasources**. These users can access the datasource management function, found under **Administration** > **Data sources**.
 
 1. In the left-hand side menu, go to **Administration** > **Data sources.** 
 
@@ -42,12 +42,15 @@ A REST API data connector can be configured by users with the role **Administrat
      
      - **Certificate password –** Enter the password of the certificate here so the Kianda platform will be able to use it.
      
-       ![REST certificate authentication](/images/rest-cert.jpg)
+
+![Enable Certificate Authentication](/images/rest-cert-authentication.jpg)
 
 
-7. Under **REST Methods**, a list of current REST Methods that have been created in Kianda will appear, listed by **Name**, **Path** and **HTTP Method**. You can edit details of the existing REST Methods by clicking on the **Edit/Pen** button or delete a REST Method by clicking on the **Bin/Trash** button.
+7. Under **REST Methods**, a list of current REST Methods that have been created in Kianda will appear, listed by **Name**, **Path** and **HTTP Method**. 
 
-   ![REST Methods](/images/rest-methods.jpg)
+   ![Existing REST Methods](/images/rest-methods-existing.jpg)
+
+   You can edit details of the existing REST Methods by clicking on the **Edit/Pen** button ![Edit REST Methods](/images/edit-method.jpg)or delete a REST Method by clicking on the **Bin/Trash** button ![Delete REST Method](/images/delete-method.jpg).
 
 8. To add a new **REST Method** to Kianda click on the **+Add REST Method** button. The **REST Method editor** dialog box appears.
 
@@ -55,18 +58,18 @@ A REST API data connector can be configured by users with the role **Administrat
 
    Fill out the fields: 
 
-   - **Display Name –** The name you want to attribute to the REST Method.
-   - **HTTP Method –** The HTTP Method of the REST Method. 
-   - **Url Path –** This is the rest of the URL that will be concatenated with the **Rest server base URL**. For example /rest/GetUserDetails
-   - **Request headers –** Request headers can be manually added here that need to be sent as part of the request. For example, Authorization. These values can be hard coded or passed into the **Request header** from the **Process.**
-   - **Request body –** This section is for the **Request body** that will be used during the request. These values can be hard coded or passed into the **Request body** from the **Process.**
-   - **Content type –** Here you can define the **Content type** of the body. The options are JSON and Form Data
-   - **Response headers –** Here you can define any response headers you wish to capture in the response that you want to use in Kianda
+   - **Display Name –** this is the name you want to attribute to the REST Method.
+   - **HTTP Method –** this is the HTTP Method of the REST Method. 
+   - **Url Path –** this is the rest of the URL that will be concatenated with the **Rest server base URL**. For example /rest/GetUserDetails
+   - **Request headers –** Request headers can be manually added here that need to be sent as part of the request, for example, Authorization. These values can be hard coded or passed into the **Request header** from the **process.** Click on **Add header** to add a request header.
+   - **Request body –** This section is for the **Request body** that will be used during the request. These values can be hard coded or passed into the **Request body** from the **process.**
+   - **Content type –** Here you can define the **Content type** of the body. The options are **JSON** and **Form Data**.
+   - **Response headers –** Here you can define any response headers you wish to capture in the response that you want to use in Kianda. Click on **Add header** to add a response header.
    - **Response body –** Here you can define the response body that the request will receive. Include or remove fields as needed.
 
-   When you are finished editing the dialog box click on **OK** to save your changes, or click on **Close** at any time to exit
+   When you are finished editing the dialog box click on **OK** to save your changes, or click on **Close** at any time to exit.
 
-9. Beneath the REST Methods on the REST Service details page there is a check box to **Use Kianda Cloud Connect?** - if you check this checkbox it gives you an option to Download Kianda Cloud Connect. Click on **Download Kianda Cloud Connect** to download a zip file.
+9. Under the REST Methods on the REST Service details page, there is a check box to **Use Kianda Cloud Connect?** If you check this checkbox it gives you an option to Download Kianda Cloud Connect. Click on **Download Kianda Cloud Connect** to download a zip file.
 
    ![Kianda Cloud Connect](/images/kianda-cloud-connect.jpg)
 
