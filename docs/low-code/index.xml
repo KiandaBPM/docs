@@ -106,7 +106,7 @@
 &lt;p>Click on &lt;strong>Look and Feel&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>On the &lt;strong>Look and Feel&lt;/strong> page, click on the &lt;strong>ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/expression-button.jpg" alt="Ellipsis button"> beside the &lt;strong>Custom CSS Url&lt;/strong> to access the Global CSS file.&lt;/p>
+&lt;p>On the &lt;strong>Look and Feel&lt;/strong> page, click on the &lt;strong>ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/expression.jpg" alt="Ellipsis button"> beside the &lt;strong>Custom CSS Url&lt;/strong> to access the Global CSS file.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/custom-css-url.jpg" alt="Custom CSS Url file">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -126,7 +126,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">transition&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">background-color&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">100&lt;/span>&lt;span style="color:#204a87;font-weight:bold">ms&lt;/span> &lt;span style="color:#204a87;font-weight:bold">ease-out&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;strong>Class selector and element&lt;/strong> for example:&lt;/li>
+&lt;li>&lt;strong>Class selector and element&lt;/strong> example:&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">pagination&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;gt;&lt;/span> &lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">active&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;gt;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">a&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">background-color&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">#1e2458&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
@@ -134,7 +134,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Elements and attributes&lt;/strong> for example:&lt;/p>
+&lt;p>&lt;strong>Elements and attributes&lt;/strong> example:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">div&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>&lt;span style="color:#204a87;font-weight:bold">data-name&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">$=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;?card&amp;#34;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">form-group&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">border-radius&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">12&lt;/span>&lt;span style="color:#204a87;font-weight:bold">px&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">border&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#204a87;font-weight:bold">px&lt;/span> &lt;span style="color:#204a87;font-weight:bold">solid&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">#e7eaee&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
@@ -146,7 +146,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Media controls&lt;/strong> for example:&lt;/p>
+&lt;p>&lt;strong>Media controls&lt;/strong> example:&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">@&lt;/span>&lt;span style="color:#204a87;font-weight:bold">media&lt;/span> &lt;span style="color:#204a87;font-weight:bold">only&lt;/span> &lt;span style="color:#204a87;font-weight:bold">screen&lt;/span> &lt;span style="color:#204a87;font-weight:bold">and&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>&lt;span style="color:#204a87;font-weight:bold">max-width&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">767px&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
@@ -176,49 +176,55 @@
 &lt;li>
 &lt;p>Ensure to save changes to the file by clicking on the &lt;strong>Save Changes&lt;/strong> button in &lt;strong>Look and Feel&lt;/strong>. You should see a notification to say &lt;strong>Subscription settings updated&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/subscription-settings.jpg" alt="Subscription settings updated">&lt;/p>
-&lt;p>&lt;strong>Once&lt;/strong> the file is saved ensure to refresh Kianda to download the most recent changes into the cache.&lt;/p>
+&lt;p>Once the file is saved ensure to refresh Kianda to download the most recent changes into the cache.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Return to the process and select the button that needs the custom CSS.&lt;/p>
+&lt;p>Click on &lt;strong>Back&lt;/strong> to return to the &lt;strong>Subscription&lt;/strong> page and go to &lt;strong>Administration&lt;/strong> and &lt;strong>Designer&lt;/strong> to navigate to the desired process. Within that process &lt;strong>select the button&lt;/strong> that needs the custom CSS.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Edit the button and enter the attribute name into the &lt;strong>Unique Name&lt;/strong> field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/unique-name" alt="image-20220712071246993">&lt;/p>
+&lt;p>Click on the &lt;strong>Edit/Pen&lt;/strong> button to edit the field and enter the attribute name into the &lt;strong>Unique Name&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-pink-name.jpg" alt="Unique Name field change">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> to submit changes or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>When the process is viewed in preview mode or published the Global CSS will override the default system CSS.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-pink" alt="image-20220712071813270">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-pink-button.jpg" alt="CSS styled button">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>The steps above can be used to edit any element in the subscription using any standard CSS syntax.&lt;/p>
-&lt;h3 id="process-and-dashboard-specific-css">Process and Dashboard specific CSS&lt;/h3>
-&lt;p>The steps in the &lt;a href="#adding-items">Adding items&lt;/a> provide a perfect means to ensure your CSS is available throughout the subscription. However changes may unintentionally cause changes in order parts of the system. For this reason, it possible to add &lt;strong>localised CSS&lt;/strong> to each process and dashboard through a rich text field.
+&lt;h3 id="process-and-dashboard-specific-css">Process and dashboard specific CSS&lt;/h3>
+&lt;p>The steps in the &lt;a href="#adding-items-to-global-css">Adding items to Global CSS&lt;/a> section provide a perfect means to ensure your CSS is available throughout the workspace subscription. However changes may unintentionally cause changes in other parts of the system. For this reason, it possible to add &lt;strong>localised CSS&lt;/strong> to each process and dashboard through a rich text field.
 For example, if you want to change all buttons in the process to have a background colour of Magenta, you can follow the following steps.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Navigate to the process and add a &lt;strong>Rich Text&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>It is important to name it &lt;strong>_CSS&lt;/strong>. Within the Rich text field click on the &lt;strong>Code View&lt;/strong> button to open up the code editor.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/richtext-source-code.jpg" alt="Richtext source code">&lt;/p>
+&lt;p>&lt;strong>Give the field a title&lt;/strong> &lt;strong>_CSS&lt;/strong>. Within the Rich text field click on the &lt;strong>Code View&lt;/strong> button &lt;img src="https://docs.kianda.com/images/source-code.jpg" alt="Code view button">to open up the code editor.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/richtext-css.jpg" alt="Richtext _CSS title">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Enter the &lt;style>&lt;/style> tags into the body.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/style-tags" alt="image-20220712073111187">&lt;/p>
+&lt;p>Enter the &lt;code>&amp;lt;style&amp;gt;&amp;lt;/style&amp;gt;&lt;/code> tags into the body.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/style-tags-richtext.jpg" alt="Style tags in Richtext body">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click the Code View button again to commit the change and click &lt;strong>OK&lt;/strong>.&lt;/p>
+&lt;p>Click the &lt;strong>Code View&lt;/strong> button again to commit the change and click &lt;strong>OK&lt;/strong> when you are finished editing the dialog box, or click on &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To make all buttons show the changes, use the class selector by editing the richtext field again and go into the Code View and add the necessary CSS.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/style-magenta" alt="image-20220712073306562">&lt;/p>
+&lt;p>To make all buttons show the changes, use the class selector by editing the richtext field again and go into the &lt;strong>Code View&lt;/strong> and add the necessary CSS.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Code View&lt;/strong> button again to commit changes and then click** on &lt;strong>OK&lt;/strong> when you are finished editing the dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/richtext-magenta.jpg" alt="Richtext CSS example">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The buttons now have a background colour of magenta provided they do not have a custom colour already selected.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/magenta-buttons" alt="image-20220712073349125">&lt;/p>
-&lt;p>The steps above can be used to edit any element in a process or dashboard using any standard CSS syntax.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-color-change.jpg" alt="Richtext button styling example">&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>The steps above can be used to edit any element in a &lt;strong>process or dashboard&lt;/strong> using any standard CSS syntax.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To learn more about designing processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application designer&lt;/a>.&lt;/p>
 &lt;p>To learn more about dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard pages&lt;/a>.&lt;/p></description></item><item><title>Docs: Global JavaScript file</title><link>https://docs.kianda.com/docs/low-code/global-javascript-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-javascript-file/</guid><description>
