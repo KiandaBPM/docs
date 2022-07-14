@@ -4,13 +4,13 @@ weight: 6
 typora-root-url: ..\..\..\static
 ---
 
-Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the site. However as a workspace **Administrator** you can access a **Global CSS File** that exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site. 
+Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace **Administrator** you can access a **Global CSS File** to make changes to the look and feel of the site as well as processes. The **Global CSS file** exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site. 
 
 
 
 ## When to use ##
 
-You may want to modify or add to the **Global CSS File** when you want to change the **Look and Feel** of the site or your **processes**. You can do this by selecting individual fields in the **process** via the unique name or can change entire elements by selecting their element name or a selector. Once items are added to the file they will be available globally in the **Subscription** function within **Administration**. 
+You may want to modify or add to the **Global CSS File** when you want to change the look and feel of the **site or your processes**. You can do this by selecting individual fields in the **process** via the unique name or can change entire elements by selecting their element name or a selector. Once items are added to the file they will be available globally in the **Subscription** function within **Administration**. 
 
 
 

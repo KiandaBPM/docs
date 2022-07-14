@@ -5,9 +5,9 @@ weight: 6
 typora-root-url: ..\..\..\..\static
 ---
 
-Connecting to data in Kianda is a breeze. You can quickly connect to a data source, for example data in Salesforce, and use this in Kianda forms and dashboards, creating a **data connector**. 
+The **Data sources** function is found under **Administration** in the left-hand side menu, and provides an easy way to create connections to ERP, CRM and IT systems. These connections allow you to combine multiple sources of data in one place and from there Kianda processes can use and update the data to creative effective workflows. 
 
-Kianda comes with a predefined set of data connectors, these include:
+Connecting to data in Kianda is a breeze. You can quickly connect to a data source, for example data in Salesforce, and use this data in Kianda forms and dashboards. The connection is called a **data connector** and Kianda comes with a predefined set of data connectors, these include:
 
 - [Active Directory](active-directory/)
 - [DocuSign](docusign/)
@@ -20,6 +20,7 @@ Kianda comes with a predefined set of data connectors, these include:
 - [Office 365](office-365/) 
 - [Oracle](oracle-database/) 
 - [Powershell](powershell/) 
+- [REST Service](/docs/platform/connectors/rest/)
 - [Salesforce](Salesforce/)
 - [SAP](sap/)
 - [SharePoint](sharepoint/)
