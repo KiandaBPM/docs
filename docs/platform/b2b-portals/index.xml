@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – B2B Portals</title><link>https://docs.kianda.com/docs/platform/b2b-portals/</link><description>Recent content in B2B Portals on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/b2b-portals/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Shared process</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – B2B Portals</title><link>https://docs.kianda.com/docs/platform/b2b-portals/</link><description>Recent content in B2B Portals on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/b2b-portals/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Shared processes</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>A &lt;strong>Shared Process&lt;/strong> is a &lt;strong>process&lt;/strong> which you create within your own subscription with the intention to share with your B2B Portal. This &lt;strong>process&lt;/strong>, as with all &lt;strong>processes&lt;/strong>, can be used to review data, create new instances, update or delete instances.&lt;/p>
 &lt;p>Within a shared process, you can also create a &lt;strong>Shared Dashboard&lt;/strong> which is a dashboard created within your own subscription with the intention to share with your B2B Portal. This &lt;strong>dashboard&lt;/strong>, as with all dashboards, can be used to review data, access &lt;strong>Shared Processes&lt;/strong> by creating new instances, updating or deleting instances.&lt;/p>
@@ -35,7 +35,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/change-selected-prop.jpg" alt="Edit selected shared process properties">&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>If you click on the **Cog/Settings **button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Edit selected shared process properties"> a &lt;strong>Process properties&lt;/strong> dialog box appears, as shown above, for example Training Request properties. You can check radio buttons for:&lt;/p>
+&lt;p>If you click on the &lt;strong>Cog/Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Edit selected shared process properties"> a &lt;strong>Process properties&lt;/strong> dialog box appears, as shown above, for example Training Request properties. You can check radio buttons for:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Allow partner to create a new process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to create new process instances from the chosen shared process design.&lt;/p>
@@ -58,23 +58,34 @@
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/confirm-removal.jpg" alt="Confirm removal of selected shared process">&lt;/p>
 &lt;ul>
-&lt;li>Click on the &lt;strong>Tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to add further selected processes to share.&lt;/li>
-&lt;li>Click on the &lt;strong>Add partner group&lt;/strong> button to add one or more partner groups. Click on the &lt;strong>Bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes"> to delete partner groups.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>Click on the &lt;strong>Tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to add further selected processes to share.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>There are a set of dashboard parameters under the field &lt;strong>Add partner group&lt;/strong>. These are:&lt;/p>
-&lt;ul>
-&lt;li>Under &lt;strong>Dashboard template&lt;/strong> click on the dropdown list to select an existing dashboards to share with the selected processes. If you choose to share a dashboard then you can select parameters:
-&lt;ul>
-&lt;li>&lt;strong>Dashboard name in partner&lt;/strong> - choose from &lt;strong>Use your company name &amp;lsquo;Name of your organisation&amp;rsquo;&lt;/strong> or &lt;strong>Same as selected dashboard&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Make welcome page&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> then the selected dashboard becomes the welcome page for the partner if no other welcome page is configured.&lt;/li>
-&lt;li>&lt;strong>Dashboard security&lt;/strong> - choose from created partner groups within this field to ensure that &lt;strong>only users&lt;/strong> in these partner groups can access the dashboard. This is the method to set security on the dashboard specifically.&lt;/li>
+&lt;p>Click on the &lt;strong>Add partner group&lt;/strong> button to add one or more partner groups. Click on the &lt;strong>Bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes"> to delete partner groups.&lt;/p>
+&lt;p>Information on dashboard parameters under &lt;strong>Add partner group&lt;/strong> is found under the heading below.&lt;/p>
+&lt;/li>
 &lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="shared-dashboards">Shared dashboards&lt;/h3>
+&lt;p>There are a set of dashboard parameters under the field &lt;strong>Add partner group&lt;/strong>. These are:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Under &lt;strong>Dashboard template&lt;/strong> click on the dropdown list to select an existing dashboards to share with the selected processes. If you choose to share a dashboard then you can select parameters:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Dashboard name in partner&lt;/strong> - choose from &lt;strong>Use your company name &amp;lsquo;Name of your organisation&amp;rsquo;&lt;/strong> or &lt;strong>Same as selected dashboard&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Make welcome page&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> then the selected dashboard becomes the welcome page for the partner if no other welcome page is configured.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Dashboard security&lt;/strong> - choose from created partner groups within this field to ensure that &lt;strong>only users&lt;/strong> in these partner groups can access the dashboard. This is the method to set security on the dashboard specifically.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -83,13 +94,13 @@
 &lt;/li>
 &lt;li>
 &lt;p>Once you have completed configuring or modifying the &lt;strong>Shared Process&lt;/strong> you will need to send the shared process to your partner. To do this press the &lt;strong>Send Update&lt;/strong> button which appears in the main view of the &lt;strong>Shared processes&lt;/strong> section.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/send-update-partner.jpg" alt="Send Update">&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-update-partner.jpg" alt="Send Update">&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Once you have successfully creating a shared process and dashboard, these will be available in the B2B Portal for partners, for example when your partner users log into the B2B Portal they will be able to see the newly shared dashboard. From here they will be able to see the widgets within the dashboard and interact with the Processes. Go to the &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/secure-data-access/">Secure Data Access&lt;/a> to read more about security in shared processes and data sources.&lt;/p></description></item><item><title>Docs: Partner profile</title><link>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</guid><description>
+&lt;p>Once you have successfully creating a shared process and dashboard, these will be available in the B2B Portal for partners, for example when your partner users log into the B2B Portal they will be able to see the newly shared dashboard. From here they will be able to see the widgets within the dashboard and interact with the Processes. Go to the &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Secure Data Access&lt;/a> to read more about security in shared processes and data sources.&lt;/p></description></item><item><title>Docs: Partner profile</title><link>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Within the &lt;strong>B2B Portal&lt;/strong> your client’s administrator will be able to create as many &lt;strong>Partner Profiles&lt;/strong> (&lt;strong>users&lt;/strong>) as they wish. By creating these &lt;strong>users&lt;/strong>, they will have the ability to access the &lt;strong>B2B Portal&lt;/strong> and interact with the &lt;strong>Dashboards&lt;/strong> and &lt;strong>Processes&lt;/strong> shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-dashboard/">Shared dashboards&lt;/a> for information on dashboards, and &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared process&lt;/a> for information on processes.&lt;/p>
+&lt;p>Within the &lt;strong>B2B Portal&lt;/strong> your client’s administrator will be able to create as many &lt;strong>Partner Profiles&lt;/strong> (&lt;strong>users&lt;/strong>) as they wish. By creating these &lt;strong>users&lt;/strong>, they will have the ability to access the &lt;strong>B2B Portal&lt;/strong> and interact with the &lt;strong>Dashboards&lt;/strong> and &lt;strong>Processes&lt;/strong> shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared processes&lt;/a> for information on processes, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/#shared-dashboards">Shared dashboards&lt;/a> for information on dashboards.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Your client will need to add &lt;strong>Partner Profiles&lt;/strong> in order for their employees to have access to the &lt;strong>B2B Portal&lt;/strong>. At this point your subscription will need to have been created and Administrators created. If this has not happened yet, please get in touch with your Account Manager or &lt;a href="mailto:support@kianda.com">Kianda Support&lt;/a> to begin the process.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -119,7 +130,7 @@
 &lt;p>&lt;strong>Contact email&lt;/strong> - provide the email of a contact&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Shared process selection&lt;/strong> - in the dropdown list choose a shared process created using the steps listed in &lt;a href="#to-share-a-process">To share a process&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Shared process selection&lt;/strong> - in the dropdown list choose a shared process created using the steps listed in &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/#how-to-get-started">How to get started with shared processes&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>More fields&lt;/strong> to see more fields these include: &lt;strong>Partner country&lt;/strong>, &lt;strong>Partner city&lt;/strong>, and &lt;strong>Partner logo&lt;/strong> which you can add by clicking on &lt;strong>Browse&lt;/strong> and browsing your PC or network.&lt;/p>
@@ -168,7 +179,7 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Within your subscription you will be able to see if an invited partner has accepted their &lt;strong>invitation&lt;/strong> based on the &lt;strong>status&lt;/strong>. &lt;strong>Pending&lt;/strong> means they have not accepted the &lt;strong>invite&lt;/strong>, &lt;strong>active&lt;/strong> means they have accepted the &lt;strong>invite&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/pending-invites.jpg" alt="Invite partner status">&lt;/p>
-&lt;p>Once an invite is accepted, your client’s/invited partner&amp;rsquo;s employees can now access the B2B Portal and interact with the Dashboards and Processes that have been shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-dashboard/">Shared dashboards&lt;/a> for information on dashboards, and &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared process&lt;/a> for information on processes.&lt;/p></description></item><item><title>Docs: Secure Data Access</title><link>https://docs.kianda.com/docs/platform/b2b-portals/data-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/data-access/</guid><description>
+&lt;p>Once an invite is accepted, your client’s/invited partner&amp;rsquo;s employees can now access the B2B Portal and interact with the Dashboards and Processes that have been shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/#shared-dashboards">Shared dashboards&lt;/a> for information on dashboards, and &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared processes&lt;/a> for information on processes.&lt;/p></description></item><item><title>Docs: Secure Data Access</title><link>https://docs.kianda.com/docs/platform/b2b-portals/data-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/data-access/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Access to the B2B Portal is controlled through standard user and group creation, dashboard security and through how the Shared Processes and Dashboards are defined.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
@@ -189,12 +200,12 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-main-view.jpg" alt="Users main view">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>For full details on how to create, edit and delete users and groups got to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.&lt;/p>
+&lt;p>For full details on how to create, edit and delete users and groups go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="create-dashboards-to-share">Create dashboards to share&lt;/h3>
 &lt;ol>
-&lt;li>Within your own portal you may then wish to create &lt;strong>Dashboards&lt;/strong> to share. Dashboards provide a convenient way to gain insights into how your business processes are performing. They offer easy reporting, permissions management, quick build, condition-based filtering amongst other features. For details on how to get started with dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/platform/pages/">Dashboards&lt;/a>.&lt;/li>
+&lt;li>Within your own portal you may then wish to create &lt;strong>Dashboards&lt;/strong> to share. Dashboards provide a convenient way to gain insights into how your business processes are performing. They offer easy reporting, permissions management, quick build, condition-based filtering amongst other features. For details on how to get started with dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/li>
 &lt;/ol>
 &lt;h3 id="create-shared-processes-and-attach-dashboards-to-share">Create shared processes and attach dashboards to share&lt;/h3>
 &lt;ol>
