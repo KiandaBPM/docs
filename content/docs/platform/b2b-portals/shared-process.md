@@ -1,6 +1,6 @@
 ---
-title: "Shared process"
-linkTitle: "Shared process"
+title: "Shared processes"
+linkTitle: "Shared processes"
 weight: 1
 typora-root-url: ..\..\..\..\static
 ---
@@ -45,7 +45,7 @@ Log into your subscription and navigate to the **Invite Partner** section locate
 
       ![Edit selected shared process properties](/images/change-selected-prop.jpg)
 
-     - If you click on the **Cog/Settings **button ![Edit selected shared process properties](/images/cog-shared-process.jpg) a **Process properties** dialog box appears, as shown above, for example Training Request properties. You can check radio buttons for:
+     - If you click on the **Cog/Settings** button ![Edit selected shared process properties](/images/cog-shared-process.jpg) a **Process properties** dialog box appears, as shown above, for example Training Request properties. You can check radio buttons for:
 
        - **Allow partner to create a new process instance** - choose from **Yes** or **No**. If you choose **Yes**, then you are allowing invited partner(s) to create new process instances from the chosen shared process design. 
        - A field **Partner user group allowed to create new instances** appears, where you can define the group(s) in the partner organisation, that can create these new process instances. This is the first level of security for processes and dashboards. If you leave the field blank, then anyone in the partner organisation can create process instances.
@@ -58,24 +58,31 @@ Log into your subscription and navigate to the **Invite Partner** section locate
        
        ![Confirm removal of selected shared process](/images/confirm-removal.jpg)
        
-       -  Click on the **Tick symbol** ![Edit selected shared  process](/images/edit-selected-process.jpg) to add further selected processes to share.
-       -  Click on the **Add partner group** button to add one or more partner groups. Click on the **Bin/trash** button ![Bin button for shared processes](/images/bin-shared-process.jpg) to delete partner groups.
+       - Click on the **Tick symbol** ![Edit selected shared  process](/images/edit-selected-process.jpg) to add further selected processes to share.
+       
+       - Click on the **Add partner group** button to add one or more partner groups. Click on the **Bin/trash** button ![Bin button for shared processes](/images/bin-shared-process.jpg) to delete partner groups.
+       
+         Information on dashboard parameters under **Add partner group** is found under the heading below.
+       
+### Shared dashboards ###
 
-4. There are a set of dashboard parameters under the field **Add partner group**. These are:
+There are a set of dashboard parameters under the field **Add partner group**. These are:
 
-   -  Under **Dashboard template** click on the dropdown list to select an existing dashboards to share with the selected processes. If you choose to share a dashboard then you can select parameters:
-      -  **Dashboard name in partner** - choose from **Use your company name 'Name of your organisation'** or **Same as selected dashboard**
-      -  **Make welcome page** - choose from **Yes** or **No**. If you choose **Yes** then the selected dashboard becomes the welcome page for the partner if no other welcome page is configured.
-      -  **Dashboard security** - choose from created partner groups within this field to ensure that **only users** in these partner groups can access the dashboard. This is the method to set security on the dashboard specifically.
+1. Under **Dashboard template** click on the dropdown list to select an existing dashboards to share with the selected processes. If you choose to share a dashboard then you can select parameters:
 
-5. When you are finished editing the dialog box, click on **OK**, or else click on **Close** to exit the dialog box at any stage. 
+   -  **Dashboard name in partner** - choose from **Use your company name 'Name of your organisation'** or **Same as selected dashboard**
 
-6. Once you have completed configuring or modifying the **Shared Process** you will need to send the shared process to your partner. To do this press the **Send Update** button which appears in the main view of the **Shared processes** section.
+   -  **Make welcome page** - choose from **Yes** or **No**. If you choose **Yes** then the selected dashboard becomes the welcome page for the partner if no other welcome page is configured.
 
-   ![Send Update](/images/send-update-partner.jpg)
+   -  **Dashboard security** - choose from created partner groups within this field to ensure that **only users** in these partner groups can access the dashboard. This is the method to set security on the dashboard specifically.
 
-   
+2. When you are finished editing the dialog box, click on **OK**, or else click on **Close** to exit the dialog box at any stage. 
+3. Once you have completed configuring or modifying the **Shared Process** you will need to send the shared process to your partner. To do this press the **Send Update** button which appears in the main view of the **Shared processes** section.
+
+![Send Update](/images/send-update-partner.jpg)
+
+
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-Once you have successfully creating a shared process and dashboard, these will be available in the B2B Portal for partners, for example when your partner users log into the B2B Portal they will be able to see the newly shared dashboard. From here they will be able to see the widgets within the dashboard and interact with the Processes. Go to the [Secure Data Access](/docs/platform/b2b-portals/secure-data-access/) to read more about security in shared processes and data sources.
+Once you have successfully creating a shared process and dashboard, these will be available in the B2B Portal for partners, for example when your partner users log into the B2B Portal they will be able to see the newly shared dashboard. From here they will be able to see the widgets within the dashboard and interact with the Processes. Go to the [Secure Data Access](/docs/platform/b2b-portals/data-access/) to read more about security in shared processes and data sources.

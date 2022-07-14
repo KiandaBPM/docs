@@ -33,11 +33,11 @@ These steps are covered within the headings below. In addition you can manage [d
 
       ![Users main view](/images/user-main-view.jpg)
 
-3. For full details on how to create, edit and delete users and groups got to [Users](/docs/platform/administration/users/).
+3. For full details on how to create, edit and delete users and groups go to [Users](/docs/platform/administration/users/).
 
 ### Create dashboards to share
 
-1. Within your own portal you may then wish to create **Dashboards** to share. Dashboards provide a convenient way to gain insights into how your business processes are performing. They offer easy reporting, permissions management, quick build, condition-based filtering amongst other features. For details on how to get started with dashboards go to [Dashboards](/docs/platform/platform/pages/). 
+1. Within your own portal you may then wish to create **Dashboards** to share. Dashboards provide a convenient way to gain insights into how your business processes are performing. They offer easy reporting, permissions management, quick build, condition-based filtering amongst other features. For details on how to get started with dashboards go to [Dashboards](/docs/platform/pages/). 
 
 ### Create shared processes and attach dashboards to share
 

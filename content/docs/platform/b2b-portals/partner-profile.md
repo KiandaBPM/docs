@@ -7,7 +7,7 @@ typora-root-url: ..\..\..\..\static
 
 ## Introduction
 
-Within the **B2B Portal** your client’s administrator will be able to create as many **Partner Profiles** (**users**) as they wish. By creating these **users**, they will have the ability to access the **B2B Portal** and interact with the **Dashboards** and **Processes** shared with them. For more information on how  **B2B Portal** users access shared data go to [Data access](/docs/platform/b2b-portals/data-access/), as well as [Shared dashboards](/docs/platform/b2b-portals/shared-dashboard/) for information on dashboards, and [Shared process](/docs/platform/b2b-portals/shared-process/) for information on processes. 
+Within the **B2B Portal** your client’s administrator will be able to create as many **Partner Profiles** (**users**) as they wish. By creating these **users**, they will have the ability to access the **B2B Portal** and interact with the **Dashboards** and **Processes** shared with them. For more information on how  **B2B Portal** users access shared data go to [Data access](/docs/platform/b2b-portals/data-access/), [Shared processes](/docs/platform/b2b-portals/shared-process/) for information on processes, as well as [Shared dashboards](/docs/platform/b2b-portals/shared-process/#shared-dashboards) for information on dashboards.
 
 ## When to use
 
@@ -35,7 +35,7 @@ In order to begin a user with an **Administrator** role or **Manage partner** ro
 
    - **Contact email** - provide the email of a contact
 
-   - **Shared process selection** - in the dropdown list choose a shared process created using the steps listed in [To share a process](#to-share-a-process).
+   - **Shared process selection** - in the dropdown list choose a shared process created using the steps listed in [How to get started with shared processes](/docs/platform/b2b-portals/shared-process/#how-to-get-started).
 
    - Click on **More fields** to see more fields these include: **Partner country**, **Partner city**, and **Partner logo** which you can add by clicking on **Browse** and browsing your PC or network.
 
@@ -88,5 +88,5 @@ Within your subscription you will be able to see if an invited partner has accep
 
 ![Invite partner status](/images/pending-invites.jpg)
 
-Once an invite is accepted, your client’s/invited partner's employees can now access the B2B Portal and interact with the Dashboards and Processes that have been shared with them. For more information on how  **B2B Portal** users access shared data go to [Data access](/docs/platform/b2b-portals/data-access/), as well as [Shared dashboards](/docs/platform/b2b-portals/shared-dashboard/) for information on dashboards, and [Shared process](/docs/platform/b2b-portals/shared-process/) for information on processes. 
+Once an invite is accepted, your client’s/invited partner's employees can now access the B2B Portal and interact with the Dashboards and Processes that have been shared with them. For more information on how  **B2B Portal** users access shared data go to [Data access](/docs/platform/b2b-portals/data-access/), as well as [Shared dashboards](/docs/platform/b2b-portals/shared-process/#shared-dashboards) for information on dashboards, and [Shared processes](/docs/platform/b2b-portals/shared-process/) for information on processes. 
 
