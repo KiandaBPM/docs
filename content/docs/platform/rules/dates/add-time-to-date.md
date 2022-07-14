@@ -4,21 +4,35 @@ title: "Add time to date"
 
 The add time to date rule allows you to add time to a date field in order to have a future date set within your form.
 
-**When to use:**
+
+
+## When to use the Add time to date rule
+
+When to use:
 
 The add time to date rule should be used when a user wishes to add time to a date, i.e. for a reminder email to be sent after 24 hours.
 
  
 
-**You can add this rule:**
+You can add this rule:
 
-·    to a field
+- [x] to a field
+- [x] to a form 
+- [x] to a process (the rule will run on load)
 
-·    to a form
 
-·    to a process (the rule will run on load)
+
+## Before you get started
+
+In advance of using this rule, you need to have **created one or more forms, complete with control fields**. For example, you must have a created field in your form that the add time to date rule can be applied to.
 
  
+
+
+
+
+
+
 
 **How to use:**
 
