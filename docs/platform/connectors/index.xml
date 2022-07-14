@@ -49,11 +49,11 @@
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: REST Web Service</title><link>https://docs.kianda.com/docs/platform/connectors/rest/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/rest/</guid><description>
-&lt;p>One of the datasources available in Kianda is a connector to a &lt;strong>REST API&lt;/strong>. Kianda has the ability to perform &lt;strong>GET, POST, PUT&lt;/strong> and &lt;strong>DELETE&lt;/strong> operation if they are supported by the webservice. The REST API datasource can support multiple REST methods, all of which can be called independently. Data from the webservice can be pulled into Kianda and manipulated or data from Kianda can be pushed to the webservice to be used by other systems.&lt;/p>
+&lt;p>One of the datasources available in Kianda is a connector to a &lt;strong>REST API&lt;/strong>. Kianda has the ability to perform &lt;strong>GET, POST, PUT&lt;/strong> and &lt;strong>DELETE&lt;/strong> operations if they are supported by the webservice. The REST API datasource can support multiple REST methods, all of which can be called independently. Data from the webservice can be pulled into your Kianda workspace and manipulated, or data from Kianda can be pushed to the webservice to be used by other systems.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can create a REST API datasource when you want your Kianda processes and forms to have access to a REST API.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>A REST API data connector can be configured by users with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage datasources&lt;/strong>. These users can access the function, found under &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;p>A REST API data connector can be configured by users with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage datasources&lt;/strong>. These users can access the datasource management function, found under &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>In the left-hand side menu, go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources.&lt;/strong>&lt;/p>
@@ -92,34 +92,37 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Certificate password –&lt;/strong> Enter the password of the certificate here so the Kianda platform will be able to use it.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/rest-cert.jpg" alt="REST certificate authentication">&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rest-cert-authentication.jpg" alt="Enable Certificate Authentication">&lt;/p>
+&lt;ol start="7">
 &lt;li>
-&lt;p>Under &lt;strong>REST Methods&lt;/strong>, a list of current REST Methods that have been created in Kianda will appear, listed by &lt;strong>Name&lt;/strong>, &lt;strong>Path&lt;/strong> and &lt;strong>HTTP Method&lt;/strong>. You can edit details of the existing REST Methods by clicking on the &lt;strong>Edit/Pen&lt;/strong> button or delete a REST Method by clicking on the &lt;strong>Bin/Trash&lt;/strong> button.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/rest-methods.jpg" alt="REST Methods">&lt;/p>
+&lt;p>Under &lt;strong>REST Methods&lt;/strong>, a list of current REST Methods that have been created in Kianda will appear, listed by &lt;strong>Name&lt;/strong>, &lt;strong>Path&lt;/strong> and &lt;strong>HTTP Method&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rest-methods-existing.jpg" alt="Existing REST Methods">&lt;/p>
+&lt;p>You can edit details of the existing REST Methods by clicking on the &lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-method.jpg" alt="Edit REST Methods">or delete a REST Method by clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/delete-method.jpg" alt="Delete REST Method">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To add a new &lt;strong>REST Method&lt;/strong> to Kianda click on the &lt;strong>+Add REST Method&lt;/strong> button. The &lt;strong>REST Method editor&lt;/strong> dialog box appears.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rest-method-editor.jpg" alt="REST Method editor">&lt;/p>
 &lt;p>Fill out the fields:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Display Name –&lt;/strong> The name you want to attribute to the REST Method.&lt;/li>
-&lt;li>&lt;strong>HTTP Method –&lt;/strong> The HTTP Method of the REST Method.&lt;/li>
-&lt;li>&lt;strong>Url Path –&lt;/strong> This is the rest of the URL that will be concatenated with the &lt;strong>Rest server base URL&lt;/strong>. For example /rest/GetUserDetails&lt;/li>
-&lt;li>&lt;strong>Request headers –&lt;/strong> Request headers can be manually added here that need to be sent as part of the request. For example, Authorization. These values can be hard coded or passed into the &lt;strong>Request header&lt;/strong> from the &lt;strong>Process.&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Request body –&lt;/strong> This section is for the &lt;strong>Request body&lt;/strong> that will be used during the request. These values can be hard coded or passed into the &lt;strong>Request body&lt;/strong> from the &lt;strong>Process.&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Content type –&lt;/strong> Here you can define the &lt;strong>Content type&lt;/strong> of the body. The options are JSON and Form Data&lt;/li>
-&lt;li>&lt;strong>Response headers –&lt;/strong> Here you can define any response headers you wish to capture in the response that you want to use in Kianda&lt;/li>
+&lt;li>&lt;strong>Display Name –&lt;/strong> this is the name you want to attribute to the REST Method.&lt;/li>
+&lt;li>&lt;strong>HTTP Method –&lt;/strong> this is the HTTP Method of the REST Method.&lt;/li>
+&lt;li>&lt;strong>Url Path –&lt;/strong> this is the rest of the URL that will be concatenated with the &lt;strong>Rest server base URL&lt;/strong>. For example /rest/GetUserDetails&lt;/li>
+&lt;li>&lt;strong>Request headers –&lt;/strong> Request headers can be manually added here that need to be sent as part of the request, for example, Authorization. These values can be hard coded or passed into the &lt;strong>Request header&lt;/strong> from the &lt;strong>process.&lt;/strong> Click on &lt;strong>Add header&lt;/strong> to add a request header.&lt;/li>
+&lt;li>&lt;strong>Request body –&lt;/strong> This section is for the &lt;strong>Request body&lt;/strong> that will be used during the request. These values can be hard coded or passed into the &lt;strong>Request body&lt;/strong> from the &lt;strong>process.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Content type –&lt;/strong> Here you can define the &lt;strong>Content type&lt;/strong> of the body. The options are &lt;strong>JSON&lt;/strong> and &lt;strong>Form Data&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Response headers –&lt;/strong> Here you can define any response headers you wish to capture in the response that you want to use in Kianda. Click on &lt;strong>Add header&lt;/strong> to add a response header.&lt;/li>
 &lt;li>&lt;strong>Response body –&lt;/strong> Here you can define the response body that the request will receive. Include or remove fields as needed.&lt;/li>
 &lt;/ul>
-&lt;p>When you are finished editing the dialog box click on &lt;strong>OK&lt;/strong> to save your changes, or click on &lt;strong>Close&lt;/strong> at any time to exit&lt;/p>
+&lt;p>When you are finished editing the dialog box click on &lt;strong>OK&lt;/strong> to save your changes, or click on &lt;strong>Close&lt;/strong> at any time to exit.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Beneath the REST Methods on the REST Service details page there is a check box to &lt;strong>Use Kianda Cloud Connect?&lt;/strong> - if you check this checkbox it gives you an option to Download Kianda Cloud Connect. Click on &lt;strong>Download Kianda Cloud Connect&lt;/strong> to download a zip file.&lt;/p>
+&lt;p>Under the REST Methods on the REST Service details page, there is a check box to &lt;strong>Use Kianda Cloud Connect?&lt;/strong> If you check this checkbox it gives you an option to Download Kianda Cloud Connect. Click on &lt;strong>Download Kianda Cloud Connect&lt;/strong> to download a zip file.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/kianda-cloud-connect.jpg" alt="Kianda Cloud Connect">&lt;/p>
 &lt;/li>
 &lt;li>
