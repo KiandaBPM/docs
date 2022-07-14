@@ -354,7 +354,7 @@ The Safety Team
 &lt;ol>
 &lt;li>
 &lt;p>From the process creation page, click on &lt;strong>Add form&lt;/strong>. This can be found at the top of your screen.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/examples-add-form.jpg" alt="">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-add-form.jpg" alt="Add form">&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - Name to represent this form. In our case we will call it &lt;strong>Inspection Form&lt;/strong>.&lt;/p>
@@ -379,7 +379,7 @@ The Safety Team
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Enable quick actions&lt;/strong> - if you tick the checkbox, you can select from the options a) Enable re-assign b) Enable edit and c) Enable custom action. We will leave this box unchecked.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/examples-inspection-form-edit-box.jpg" alt="Edit form box">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-inspection-form.jpg" alt="Edit form box">&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -394,17 +394,17 @@ The Safety Team
 &lt;h3 id="creating-form-fields">Creating Form Fields&lt;/h3>
 &lt;p>Taking a look back at our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>, on the &lt;strong>Inspection Form&lt;/strong> there is 5 different fields which will be used to complete an inspection along with 5 inner fields for our table:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Date&lt;/strong> - Representing the day of inspection&lt;/li>
-&lt;li>&lt;strong>Inspection checklist&lt;/strong>
+&lt;li>&lt;strong>Date&lt;/strong> - Representing the day of the inspection.&lt;/li>
+&lt;li>&lt;strong>Inspection checklist&lt;/strong> - Checklist that will be filled out by an &lt;strong>Engineer.&lt;/strong>
 &lt;ul>
-&lt;li>&lt;strong>Question&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Pass or fail&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Comment&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Upload file&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Image&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Question&lt;/strong> - Question asking the engineer to make a check on the inspection.&lt;/li>
+&lt;li>&lt;strong>Pass or fail&lt;/strong> - Radio list for with a yes or no indicating whether a check is passed or failed.&lt;/li>
+&lt;li>&lt;strong>Comment&lt;/strong> - Text box used by the engineer for any comments on a check.&lt;/li>
+&lt;li>&lt;strong>Upload file&lt;/strong> - Upload file button used to upload an image.&lt;/li>
+&lt;li>&lt;strong>Image&lt;/strong> - Image container that contains the uploaded image.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Utility panel&lt;/strong> - Assign an engineer to complete the inspection.&lt;/li>
+&lt;li>&lt;strong>Utility panel&lt;/strong> - An invisible to the user panel used to hold our word template and generated PDF file.&lt;/li>
 &lt;li>&lt;strong>Upload template&lt;/strong> - Word template used to create a PDF file.&lt;/li>
 &lt;li>&lt;strong>Generated PDF&lt;/strong> - File field to hold our generated PDF.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
