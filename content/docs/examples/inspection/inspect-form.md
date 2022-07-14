@@ -12,7 +12,7 @@ To begin this example of creating an **Inspection Form**, we need to add a new f
 
 1. From the process creation page, click on **Add form**. This can be found at the top of your screen. 
 
-   ![](/images/examples-add-form.jpg)
+   ![Add form](/images/examples-add-form.jpg)
 
    - **Title** - Name to represent this form. In our case we will call it **Inspection Form**.
 
@@ -30,7 +30,7 @@ To begin this example of creating an **Inspection Form**, we need to add a new f
 
    - **Enable quick actions** - if you tick the checkbox, you can select from the options a) Enable re-assign b) Enable edit and c) Enable custom action. We will leave this box unchecked.
 
-     ![Edit form box](/images/examples-inspection-form-edit-box.jpg)
+     ![Edit form box](/images/examples-inspection-form.jpg)
 
 2. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 
@@ -42,14 +42,14 @@ To begin this example of creating an **Inspection Form**, we need to add a new f
 
 Taking a look back at our [requirements](/docs/examples/inspection/#planning-form-requirements), on the **Inspection Form** there is 5 different fields which will be used to complete an inspection along with 5 inner fields for our table:
 
-- **Date** - Representing the day of inspection
-- **Inspection checklist** 
-  - **Question**
-  - **Pass or fail**
-  - **Comment**
-  - **Upload file**
-  - **Image**
-- **Utility panel** - Assign an engineer to complete the inspection.
+- **Date** - Representing the day of the inspection.
+- **Inspection checklist** - Checklist that will be filled out by an **Engineer.**
+  - **Question** - Question asking the engineer to make a check on the inspection.
+  - **Pass or fail** - Radio list for with a yes or no indicating whether a check is passed or failed.
+  - **Comment** - Text box used by the engineer for any comments on a check.
+  - **Upload file** - Upload file button used to upload an image.
+  - **Image** - Image container that contains the uploaded image.
+- **Utility panel** - An invisible to the user panel used to hold our word template and generated PDF file. 
 - **Upload template** - Word template used to create a PDF file.
 - **Generated PDF** - File field to hold our generated PDF.
 
