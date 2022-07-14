@@ -126,6 +126,39 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/kianda-cloud-connect.jpg" alt="Kianda Cloud Connect">&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>When you have added REST Service details, you are ready to test your connection and add security. At the bottom of the &lt;strong>REST Service details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/connection-test-succeeded.jpg" alt="Connection test succeeded message">&lt;/p>
+&lt;p>In the event of an error, you will receive a message that relates to the error, for example a null or incorrect URL as shown in the example below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rest-connection-error.jpg" alt="REST test connection error">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button">to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="adding-security">Adding security&lt;/h3>
+&lt;p>You can add&lt;/p>
+&lt;ol start="7">
+&lt;li>
+&lt;p>first and if the service has been configured correctly, you should get a notification saying&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Test connection –&lt;/strong> By clicking this button you verify that the &lt;strong>REST server base URL&lt;/strong> can be reached by Kianda.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Save –&lt;/strong> Saves the creation or changes made to the &lt;strong>REST Service&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Security –&lt;/strong> Define who can control, use and the level of access your &lt;strong>B2B Portals&lt;/strong> have to the &lt;strong>REST Service.&lt;/strong> See the &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">&lt;strong>Data Access&lt;/strong>&lt;/a> page for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Close –&lt;/strong> Close the &lt;strong>REST Service.&lt;/strong> Click on this to exit the page without saving.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>To finalise the connection, click on &lt;strong>Test connection&lt;/strong> first and if the service has been configured correctly, you should get a notification saying&lt;/p>
+&lt;p>then click on &lt;strong>Security&lt;/strong> to set security settings, and then click on &lt;strong>Save&lt;/strong> to save your work. The data connector will now appear in the main data sources view.&lt;/p>
 &lt;p>At the bottom of the REST Service details page there are four buttons:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -141,7 +174,6 @@
 &lt;p>&lt;strong>Close –&lt;/strong> Close the &lt;strong>REST Service.&lt;/strong> Click on this to exit the page without saving.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>To finalise the connection, click on &lt;strong>Test connection&lt;/strong> first, then click on &lt;strong>Security&lt;/strong> to set security settings, and then click on &lt;strong>Save&lt;/strong> to save your work. The data connector will now appear in the main data sources view.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>&lt;strong>Next Steps&lt;/strong>&lt;/p>
