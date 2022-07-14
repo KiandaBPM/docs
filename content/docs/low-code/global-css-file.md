@@ -22,7 +22,7 @@ To access the Global CSS file:
 
 2. Click on **Look and Feel**.
 
-3. On the **Look and Feel** page, click on the **ellipsis** button ![Ellipsis button](/images/expression-button.jpg) beside the **Custom CSS Url** to access the Global CSS file.
+3. On the **Look and Feel** page, click on the **ellipsis** button ![Ellipsis button](/images/expression.jpg) beside the **Custom CSS Url** to access the Global CSS file.
 
    ![Custom CSS Url file](/images/custom-css-url.jpg)
 
@@ -44,7 +44,7 @@ To access the Global CSS file:
    }
    ```
    
-   - **Class selector and element** for example:
+   - **Class selector and element** example:
    
    ```css
      .pagination > .active > a {
@@ -53,7 +53,7 @@ To access the Global CSS file:
      }
    ```
    
-   - **Elements and attributes** for example:
+   - **Elements and attributes** example:
    
      ```css
      div[data-name$="?card"].form-group {
@@ -67,7 +67,7 @@ To access the Global CSS file:
      }
      ```
    
-   - **Media controls** for example:
+   - **Media controls** example:
    
    ```css
    @media only screen and (max-width: 767px) {
@@ -108,45 +108,51 @@ button[data-name$="?pinkButton"]:not(.is-design) {}
 
    ![Subscription settings updated](/images/subscription-settings.jpg)
 
-   **Once** the file is saved ensure to refresh Kianda to download the most recent changes into the cache. 
+   Once the file is saved ensure to refresh Kianda to download the most recent changes into the cache. 
 
-4. Return to the process and select the button that needs the custom CSS.
+4. Click on **Back** to return to the **Subscription** page and go to **Administration** and **Designer** to navigate to the desired process. Within that process **select the button** that needs the custom CSS.
 
-5. Edit the button and enter the attribute name into the **Unique Name** field.
+5. Click on the **Edit/Pen** button to edit the field and enter the attribute name into the **Unique Name** field.
 
-   ![image-20220712071246993](/images/unique-name)
+   ![Unique Name field change](/images/send-email-pink-name.jpg)
 
-6. When the process is viewed in preview mode or published the Global CSS will override the default system CSS.
+6. Click on **OK** to submit changes or click on **Close** at any time to exit the dialog box.
 
-   ![image-20220712071813270](/images/send-email-pink)
+7. When the process is viewed in preview mode or published the Global CSS will override the default system CSS.
+
+   ![CSS styled button](/images/send-email-pink-button.jpg)
 
 The steps above can be used to edit any element in the subscription using any standard CSS syntax.
 
-### Process and Dashboard specific CSS
-The steps in the [Adding items](#adding-items) provide a perfect means to ensure your CSS is available throughout the subscription. However changes may unintentionally cause changes in order parts of the system. For this reason, it possible to add **localised CSS** to each process and dashboard through a rich text field.
+
+
+### Process and dashboard specific CSS
+The steps in the [Adding items to Global CSS](#adding-items-to-global-css) section provide a perfect means to ensure your CSS is available throughout the workspace subscription. However changes may unintentionally cause changes in other parts of the system. For this reason, it possible to add **localised CSS** to each process and dashboard through a rich text field.
 For example, if you want to change all buttons in the process to have a background colour of Magenta, you can follow the following steps.
 
 1. Navigate to the process and add a **Rich Text** field. 
 
-2. It is important to name it **_CSS**. Within the Rich text field click on the **Code View** button to open up the code editor.
+2. **Give the field a title** **_CSS**. Within the Rich text field click on the **Code View** button ![Code view button](/images/source-code.jpg)to open up the code editor.
 
-   ![Richtext source code](/images/richtext-source-code.jpg)
+   ![Richtext _CSS title](/images/richtext-css.jpg)
 
-3. Enter the <style></style> tags into the body.
+3. Enter the `<style></style>` tags into the body. 
 
-   ![image-20220712073111187](/images/style-tags)
+   ![Style tags in Richtext body](/images/style-tags-richtext.jpg)
 
-4. Click the Code View button again to commit the change and click **OK**. 
+4. Click the **Code View** button again to commit the change and click **OK** when you are finished editing the dialog box, or click on **Close** to exit the dialog box at any time.
 
-5. To make all buttons show the changes, use the class selector by editing the richtext field again and go into the Code View and add the necessary CSS.
+5. To make all buttons show the changes, use the class selector by editing the richtext field again and go into the **Code View** and add the necessary CSS. 
 
-   ![image-20220712073306562](/images/style-magenta)
+6. Click on the **Code View** button again to commit changes and then click** on **OK** when you are finished editing the dialog box.
 
-6. The buttons now have a background colour of magenta provided they do not have a custom colour already selected.
+   ![Richtext CSS example](/images/richtext-magenta.jpg)
 
-   ![image-20220712073349125](/images/magenta-buttons)
+7. The buttons now have a background colour of magenta provided they do not have a custom colour already selected.
 
-   The steps above can be used to edit any element in a process or dashboard using any standard CSS syntax. 
+   ![Richtext button styling example](/images/button-color-change.jpg)
+
+The steps above can be used to edit any element in a **process or dashboard** using any standard CSS syntax. 
 
    
 
