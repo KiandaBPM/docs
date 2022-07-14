@@ -392,7 +392,7 @@ The Safety Team
 &lt;/ol>
 &lt;img src="https://docs.kianda.com/videos/gifs/common/save-process.gif"/>
 &lt;h3 id="creating-form-fields">Creating Form Fields&lt;/h3>
-&lt;p>Taking a look back at our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>, on the &lt;strong>Inspection Form&lt;/strong> there is 5 different fields which will be used to complete an inspection along with 5 inner fields for our table:&lt;/p>
+&lt;p>Taking a look back at our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>, on the &lt;strong>Inspection Form&lt;/strong> there is five different fields which will be used to complete an inspection along with five inner fields for our table:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Date&lt;/strong> - Representing the day of the inspection.&lt;/li>
 &lt;li>&lt;strong>Inspection checklist&lt;/strong> - Checklist that will be filled out by an &lt;strong>Engineer.&lt;/strong>
@@ -407,7 +407,175 @@ The Safety Team
 &lt;li>&lt;strong>Utility panel&lt;/strong> - An invisible to the user panel used to hold our word template and generated PDF file.&lt;/li>
 &lt;li>&lt;strong>Upload template&lt;/strong> - Word template used to create a PDF file.&lt;/li>
 &lt;li>&lt;strong>Generated PDF&lt;/strong> - File field to hold our generated PDF.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
+&lt;/ul>
+&lt;h4 id="creating-a-date-field---date">Creating a Date field - Date&lt;/h4>
+&lt;p>The &lt;strong>Date&lt;/strong> field represents the day, month and year of our inspection. To learn more about &lt;strong>Date&lt;/strong> fields, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date Control&lt;/a>.&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/date-field.gif"/>
+&lt;ol>
+&lt;li>
+&lt;p>To add a &lt;strong>Data&lt;/strong> field, first select the &lt;strong>Inspection Form&lt;/strong> so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Date&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the &lt;strong>Date&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to open the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-edit-date.jpg" alt="Edit date dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Date&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="creating-a-table-field---inspection-checklist">Creating a Table field - Inspection Checklist&lt;/h4>
+&lt;p>The &lt;strong>Inspection Checklist&lt;/strong> will be used by an engineer to fill out. Inside of the table we need to have five different columns. &lt;strong>First&lt;/strong> column will be a text box representing a check that our engineer must complete. &lt;strong>Second&lt;/strong> column will be our passed radio list of &lt;strong>Yes&lt;/strong> and &lt;strong>No&lt;/strong> options. &lt;strong>Third&lt;/strong> column is another text box for any comments that the engineer might have. &lt;strong>Forth&lt;/strong> column is a &lt;strong>File upload&lt;/strong> field to upload any images. Our last, &lt;strong>fifth&lt;/strong> column is the &lt;strong>Image&lt;/strong> container to hold the uploaded image.&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/table-field.gif"/>
+&lt;ol>
+&lt;li>
+&lt;p>To add a &lt;strong>Table&lt;/strong> field, first select the &lt;strong>Inspection Form&lt;/strong> so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Table&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the &lt;strong>Table&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to open the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-table-select.jpg" alt="Table select">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Inspection Checklist&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-table-1.jpg" alt="Edit table dialog box">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="changing-the-table-layout">Changing the Table layout&lt;/h3>
+&lt;p>When adding a table in Kianda, the table has two text boxes inside by default. We will leave them in as we&amp;rsquo;ll be using them for our &lt;strong>Question&lt;/strong> and &lt;strong>Comment&lt;/strong> fields.&lt;/p>
+&lt;h4 id="changing-text-box-field---question">Changing Text box field - Question&lt;/h4>
+&lt;p>The &lt;strong>Question&lt;/strong> field represents what kind of check the engineer must complete. This field will be disabled so that the users of this form will not be able to change the contents of the question.&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/changing-text-box.gif"/>
+&lt;p>&lt;br>&lt;br>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the left text box inside of the table so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-table-left-textbox.jpg" alt="Table Left text box select">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to open the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Question&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Field properties&lt;/strong> in the right-hand pane.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Enabled&lt;/strong> checkbox to uncheck it.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/field-properties-enabled-uncheck.jpg" alt="Field properties, enabled unchecked">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="adding-radio-list-to-a-table---passed-field">Adding Radio List to a table - Passed field&lt;/h4>
+&lt;p>The &lt;strong>Radio list&lt;/strong> is a &lt;strong>List&lt;/strong> type from the &lt;strong>Input&lt;/strong> set of fields. We will enter the options manually and set the field to be of type radio. To find out more about radio lists, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List Control&lt;/a>.&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/table-radio-list.gif"/>
+&lt;br>
+&lt;br>
+&lt;ol>
+&lt;li>
+&lt;p>To add a &lt;strong>Radio&lt;/strong> list, first select the &lt;strong>Question&lt;/strong> field in the checklist table so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>List&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-table-add-radiolist.jpg" alt="Adding Radio list">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>New field - List&lt;/strong> dialog box, change the &lt;strong>Title&lt;/strong> to &lt;strong>Passed&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Entered manually&lt;/strong> in the &lt;strong>List source&lt;/strong> options.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Type in &lt;strong>Yes&lt;/strong> and &lt;strong>No&lt;/strong> in the text box as shown in the image below.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Radio list&lt;/strong> from the &lt;strong>Display format&lt;/strong> options.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Vertical&lt;/strong> in the &lt;strong>List display position&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-table-radio-list.jpg" alt="Radio List edit dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>The image below shows how the &lt;strong>Inspection Checklist&lt;/strong> should look so far. You can move the table fields with the left and right arrows above each field. Note the crossed circle above the question text box, this indicated that this field is disabled and will not be editable by an user of the form.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/table-move-fields.jpg" alt="Table move left and right">&lt;/p>
+&lt;h4 id="changing-text-box-field---comment">Changing Text box field - Comment&lt;/h4>
+&lt;p>The &lt;strong>Comment&lt;/strong> field gives the ability to type in a comment on any of the checks performed by the engineer.&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/comment.gif"/>
+&lt;p>&lt;br>&lt;br>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the right &lt;strong>Text 2&lt;/strong> inside of the table so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-table-right-textbox.jpg" alt="Table Left text box select">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to open the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Comment&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Mode&lt;/strong> options, select &lt;strong>Multiple lines of text&lt;/strong>. Selecting &lt;strong>Multiple lines of text&lt;/strong> adds another option called &lt;strong>Rows&lt;/strong>. To learn more about text box options, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Rows&lt;/strong> option and type &amp;ldquo;&lt;strong>3&lt;/strong>&amp;rdquo; or use the up arrow to increase and down arrow to decrease.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-rows.jpg" alt="Increasing row number">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction.&lt;/p>
 &lt;/div></description></item></channel></rss>
