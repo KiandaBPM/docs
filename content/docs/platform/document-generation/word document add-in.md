@@ -8,7 +8,7 @@ You can **generate reports** within Kianda processes and **populate** the report
 
 *Microsoft Word template with Kianda form fields*
 
-
+![Get add-ins](/images/word-kianda-example.jpg)
 
 In the example above, a report will generate data pulled from a Kianda process instance (record) that contains the date, company and location data within an ‘Inspection Form’ and a ‘Request Form’. To create this kind of template, you can use a **Kianda Add-in** in Word to link your document to your Kianda process.
 
