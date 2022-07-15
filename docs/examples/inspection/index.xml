@@ -398,7 +398,7 @@ The Safety Team
 &lt;li>&lt;strong>Inspection checklist&lt;/strong> - Checklist that will be filled out by an &lt;strong>Engineer.&lt;/strong>
 &lt;ul>
 &lt;li>&lt;strong>Question&lt;/strong> - Question asking the engineer to make a check on the inspection.&lt;/li>
-&lt;li>&lt;strong>Pass or fail&lt;/strong> - Radio list for with a yes or no indicating whether a check is passed or failed.&lt;/li>
+&lt;li>&lt;strong>Pass or fail&lt;/strong> - Radio list with a yes or no indicating whether a check is passed or failed.&lt;/li>
 &lt;li>&lt;strong>Comment&lt;/strong> - Text box used by the engineer for any comments on a check.&lt;/li>
 &lt;li>&lt;strong>Upload file&lt;/strong> - Upload file button used to upload an image.&lt;/li>
 &lt;li>&lt;strong>Image&lt;/strong> - Image container that contains the uploaded image.&lt;/li>
@@ -411,6 +411,7 @@ The Safety Team
 &lt;h4 id="creating-a-date-field---date">Creating a Date field - Date&lt;/h4>
 &lt;p>The &lt;strong>Date&lt;/strong> field represents the day, month and year of our inspection. To learn more about &lt;strong>Date&lt;/strong> fields, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date Control&lt;/a>.&lt;/p>
 &lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/date-field.gif"/>
+&lt;p>&lt;br>&lt;br>&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>To add a &lt;strong>Data&lt;/strong> field, first select the &lt;strong>Inspection Form&lt;/strong> so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
@@ -444,6 +445,7 @@ The Safety Team
 &lt;h4 id="creating-a-table-field---inspection-checklist">Creating a Table field - Inspection Checklist&lt;/h4>
 &lt;p>The &lt;strong>Inspection Checklist&lt;/strong> will be used by an engineer to fill out. Inside of the table we need to have five different columns. &lt;strong>First&lt;/strong> column will be a text box representing a check that our engineer must complete. &lt;strong>Second&lt;/strong> column will be our passed radio list of &lt;strong>Yes&lt;/strong> and &lt;strong>No&lt;/strong> options. &lt;strong>Third&lt;/strong> column is another text box for any comments that the engineer might have. &lt;strong>Forth&lt;/strong> column is a &lt;strong>File upload&lt;/strong> field to upload any images. Our last, &lt;strong>fifth&lt;/strong> column is the &lt;strong>Image&lt;/strong> container to hold the uploaded image. To learn more about Table input, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
 &lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/table-field.gif"/>
+&lt;p>&lt;br>&lt;br>&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>To add a &lt;strong>Table&lt;/strong> field, first select the &lt;strong>Inspection Form&lt;/strong> so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
@@ -937,7 +939,7 @@ The Safety Team
 &lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save button">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="request-form-summary">Request Form Summary&lt;/h2>
+&lt;h2 id="inspection-form-summary">Inspection Form Summary&lt;/h2>
 &lt;p>To summarise our &lt;strong>Inspection From&lt;/strong>, we created all fields, buttons and rules that we stated in our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>. Our Engineer can fill out our &lt;strong>Inspection Checklist&lt;/strong> and submit the form which automatically sends an email to an &lt;strong>Safety Manager&lt;/strong> with the generated PDF file of the report. We are also updating our &lt;strong>Status&lt;/strong> field to &lt;strong>Completed&lt;/strong>.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/dashboard/">Creating Dashboard&lt;/a>.&lt;/p></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
