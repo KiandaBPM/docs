@@ -209,7 +209,7 @@ To take a look back at our [requirements](/docs/examples/inspection/#planning-fo
 
 
 
-#### Creating a Set form field rule - Set status to Requested 
+### Creating a Set form field rule - Set status to Requested 
 
 With this rule we will be setting our **Status** field to **"Requested"**. We will be using the **Set form field** rule from the **Data** set of rules.
 
@@ -245,7 +245,7 @@ With this rule we will be setting our **Status** field to **"Requested"**. We wi
 
     <br>
 
-#### Creating a Send email rule - Send email to Engineer
+### Creating a Send email rule - Send email to Engineer
 
 This rule will be used to send an email to the selected **Engineer**. We will be using the **Send email**  rule from the **Communications** set of rules. In this rule we will add expressions, to learn more go to [Expressions](/docs/getting-started/create-first-process/plan-your-process/expressions/).
 
