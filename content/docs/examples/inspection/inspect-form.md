@@ -45,7 +45,7 @@ Taking a look back at our [requirements](/docs/examples/inspection/#planning-for
 - **Date** - Representing the day of the inspection.
 - **Inspection checklist** - Checklist that will be filled out by an **Engineer.**
   - **Question** - Question asking the engineer to make a check on the inspection.
-  - **Pass or fail** - Radio list for with a yes or no indicating whether a check is passed or failed.
+  - **Pass or fail** - Radio list with a yes or no indicating whether a check is passed or failed.
   - **Comment** - Text box used by the engineer for any comments on a check.
   - **Upload file** - Upload file button used to upload an image.
   - **Image** - Image container that contains the uploaded image.
@@ -58,6 +58,8 @@ Taking a look back at our [requirements](/docs/examples/inspection/#planning-for
 The **Date** field represents the day, month and year of our inspection. To learn more about **Date** fields, go to [Date Control](/docs/platform/controls/input/date/).
 
 <img src="/videos/gifs/examples/inspection/date-field.gif"/>
+
+<br><br>
 
 1. To add a **Data** field, first select the **Inspection Form** so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
 
@@ -84,6 +86,8 @@ The **Date** field represents the day, month and year of our inspection. To lear
 The **Inspection Checklist** will be used by an engineer to fill out. Inside of the table we need to have five different columns. **First** column will be a text box representing a check that our engineer must complete. **Second** column will be our passed radio list of **Yes** and **No** options. **Third** column is another text box for any comments that the engineer might have. **Forth** column is a **File upload** field to upload any images. Our last, **fifth** column is the **Image** container to hold the uploaded image. To learn more about Table input, go to [Table control](/docs/platform/controls/input/table/).
 
 <img src="/videos/gifs/examples/inspection/table-field.gif"/>
+
+<br><br>
 
 1. To add a **Table** field, first select the **Inspection Form** so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
 
@@ -517,7 +521,7 @@ This rule will be used to send an email to the selected **Safety Manager**. We w
 
 14. To save your changes to the form, click on the **Save** button ![Save button](/images/saveprocess.png)
 
-## Request Form Summary 
+## Inspection Form Summary 
 
 To summarise our **Inspection From**, we created all fields, buttons and rules that we stated in our [requirements](/docs/examples/inspection/#planning-form-requirements). Our Engineer can fill out our **Inspection Checklist** and submit the form which automatically sends an email to an **Safety Manager** with the generated PDF file of the report. We are also updating our **Status** field to **Completed**.
 
