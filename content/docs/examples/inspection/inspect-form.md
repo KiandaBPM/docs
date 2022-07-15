@@ -407,7 +407,7 @@ To learn more on how to create the **Word template** using **Kianda Add-in** in 
 
 
 
-### Adding rules to Submit button
+## Adding rules to Submit button
 
 To take a look back at our [requirements](/docs/examples/inspection/#planning-form-requirements) for our **Inspection form**, we need 3 rules for the **Submit** button.
 
@@ -415,7 +415,7 @@ To take a look back at our [requirements](/docs/examples/inspection/#planning-fo
 - **Generate a PDF using word template** - Generates a PDF file using a word template which we created using the **Kianda Add-in**.
 - **Send email to Safety Manager** - Sends an email to the selected user from the **Safety Manager** field from our **Request form**.
 
-#### Creating a Set form field rule - Set status to Completed
+### Creating a Set form field rule - Set status to Completed
 
 With this rule we will be setting our **Status** field to **“Completed”**. We will be using the **Set form field** rule from the **Data** set of rules.
 
@@ -445,7 +445,7 @@ With this rule we will be setting our **Status** field to **“Completed”**. W
 
 11. The **Set status to Completed** is under the **Close** rule. Drag and drop the **Set status to Completed**  rule to the top of the list.
 
-#### Creating a Generate word document rule - Generate PDF using word template
+### Creating a Generate word document rule - Generate PDF using word template
 
 1. Select the **Submit** button by clicking on it so that the edit or pen icon ![Pen icon](/images/penicon.png) appears. 
 
@@ -473,7 +473,7 @@ With this rule we will be setting our **Status** field to **“Completed”**. W
 
     
 
-#### Creating a Send email rule - Send email to Safety Manager
+### Creating a Send email rule - Send email to Safety Manager
 
 This rule will be used to send an email to the selected **Safety Manager**. We will be using the **Send email**  rule from the **Communications** set of rules. In this rule we will add expressions, to learn more go to [Expressions](/docs/getting-started/create-first-process/plan-your-process/expressions/).
 
