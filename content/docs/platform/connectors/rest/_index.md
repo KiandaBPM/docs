@@ -87,36 +87,6 @@ A REST API data connector can be configured by users with the role **Administrat
 
 12. Add Security settings by clicking on the **Security** button, go to 
 
-### Adding security
-
-You can add 
-
-
-
-7. first and if the service has been configured correctly, you should get a notification saying 
-
-   - **Test connection –** By clicking this button you verify that the **REST server base URL** can be reached by Kianda.
-
-   - **Save –** Saves the creation or changes made to the **REST Service**
-
-   - **Security –** Define who can control, use and the level of access your **B2B Portals** have to the **REST Service.** See the [**Data Access**](/docs/platform/b2b-portals/data-access/) page for more details. 
-
-   - **Close –** Close the **REST Service.** Click on this to exit the page without saving. 
-
-   To finalise the connection, click on **Test connection** first and if the service has been configured correctly, you should get a notification saying 
-
-   then click on **Security** to set security settings, and then click on **Save** to save your work. The data connector will now appear in the main data sources view. 
-
-   At the bottom of the REST Service details page there are four buttons:
-
-   - **Test connection –** By clicking this button you verify that the **REST server base URL** can be reached by Kianda.
-
-   - **Save –** Saves the creation or changes made to the **REST Service**
-
-   - **Security –** Define who can control, use and the level of access your **B2B Portals** have to the **REST Service.** See the [**Data Access**](/docs/platform/b2b-portals/data-access/) page for more details. 
-
-   - **Close –** Close the **REST Service.** Click on this to exit the page without saving. 
-
  
 
 **Next Steps**
