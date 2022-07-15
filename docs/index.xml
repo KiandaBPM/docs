@@ -1401,28 +1401,203 @@ Your browser does not support the video tag.
 &lt;h4 id="adding-a-file-field---upload-template">Adding a File field - Upload template&lt;/h4>
 &lt;p>The Upload template is a &lt;strong>File&lt;/strong> field. This field will be used to upload a word document which will be the template for creating the PDF file.&lt;/p>
 &lt;ol>
-&lt;li>To add a &lt;strong>File&lt;/strong> field into the &lt;strong>Panel&lt;/strong>, first select the &lt;strong>Panel&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/li>
-&lt;li>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/li>
-&lt;li>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/li>
-&lt;li>Click on &lt;strong>File&lt;/strong>.&lt;/li>
-&lt;li>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Upload template&lt;/strong>.&lt;/li>
-&lt;li>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
-&lt;li>Click on &lt;strong>Destination&lt;/strong> &lt;img src="https://docs.kianda.com/images/destination-file.jpg" alt="Destination button"> to open datasource dialog box.&lt;/li>
-&lt;li>Select your desired location to save the file.&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Datasource&lt;/strong> dialog box.&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/li>
+&lt;li>
+&lt;p>To add a &lt;strong>File&lt;/strong> field into the &lt;strong>Panel&lt;/strong>, first select the &lt;strong>Panel&lt;/strong> field so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-panel-select.jpg" alt="Panel select">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>File&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Upload template&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Destination&lt;/strong> &lt;img src="https://docs.kianda.com/images/destination-file.jpg" alt="Destination button"> to open datasource dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select your desired location to save the file.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Datasource&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h4 id="adding-a-file-field---generated-pdf">Adding a File field - Generated PDF&lt;/h4>
 &lt;p>The Generated PDF file is a &lt;strong>File&lt;/strong> field which is used to hold our PDF from the above template.&lt;/p>
 &lt;ol>
-&lt;li>To add a &lt;strong>File&lt;/strong> field into the &lt;strong>Panel&lt;/strong> follow steps 1 through 4 in the above &lt;strong>Adding a file - Upload template&lt;/strong> section.&lt;/li>
-&lt;li>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Generated PDF&lt;/strong>.&lt;/li>
-&lt;li>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/li>
-&lt;li>Click on &lt;strong>Destination&lt;/strong> &lt;img src="https://docs.kianda.com/images/destination-file.jpg" alt="Destination button"> to open datasource dialog box.&lt;/li>
-&lt;li>Select your desired location to save the file.&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Datasource&lt;/strong> dialog box.&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
+&lt;li>
+&lt;p>To add a &lt;strong>File&lt;/strong> field into the &lt;strong>Panel&lt;/strong> follow steps 1 through 4 in the above &lt;strong>Adding a file - Upload template&lt;/strong> section.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-panel-select-upload.jpg" alt="Panel select with upload template">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Generated PDF&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chane the &lt;strong>Name (unique)&lt;/strong> to a unique identifier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Destination&lt;/strong> &lt;img src="https://docs.kianda.com/images/destination-file.jpg" alt="Destination button"> to open datasource dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select your desired location to save the file.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Datasource&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit field&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="creating-a-word-template">Creating a Word template&lt;/h3>
+&lt;p>You can &lt;strong>generate reports&lt;/strong> within Kianda processes and &lt;strong>populate&lt;/strong> the reports with &lt;strong>data captured&lt;/strong> within each process instance. We will be generating a PDF file for inspection reports where a report template can be used to show the information the engineer input to a &lt;strong>Kianda form&lt;/strong> during his inspection. Each time an inspection is performed, a report is generated based on a Word template and the report shows the relevant information that was captured during that particular inspection.&lt;/p>
+&lt;p>To learn more on how to create the &lt;strong>Word template&lt;/strong> using &lt;strong>Kianda Add-in&lt;/strong> in Word go to &lt;a href="https://vimeo.com/696535028/ef00136ecd">Kianda Add-in&lt;/a> to watch a short video going through the process step by step. Alternatively you can also go through the steps of learning the process by going to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/">Word document add-in&lt;/a>.&lt;/p>
+&lt;h3 id="adding-rules-to-submit-button">Adding rules to Submit button&lt;/h3>
+&lt;p>To take a look back at our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a> for our &lt;strong>Inspection form&lt;/strong>, we need 3 rules for the &lt;strong>Submit&lt;/strong> button.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Set status to Complete&lt;/strong> - Sets the status field that we created to &lt;strong>“Complete”&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Generate a PDF using word template&lt;/strong> - Generates a PDF file using a word template which we created using the &lt;strong>Kianda Add-in&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Send email to Safety Manager&lt;/strong> - Sends an email to the selected user from the &lt;strong>Safety Manager&lt;/strong> field from our &lt;strong>Request form&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h4 id="creating-a-set-form-field-rule---set-status-to-completed">Creating a Set form field rule - Set status to Completed&lt;/h4>
+&lt;p>With this rule we will be setting our &lt;strong>Status&lt;/strong> field to &lt;strong>“Completed”&lt;/strong>. We will be using the &lt;strong>Set form field&lt;/strong> rule from the &lt;strong>Data&lt;/strong> set of rules.&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/status-completed.gif"/>
+&lt;p>&lt;br>&lt;br>&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the &lt;strong>Submit&lt;/strong> button by clicking on it so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Left-hand&lt;/strong> pane click on &lt;strong>Add a rule&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Data&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Set form field&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule&lt;/strong> dialog box, change the &lt;strong>Title&lt;/strong> to &amp;ldquo;&lt;strong>Set status to Completed&lt;/strong>&amp;rdquo;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Form field to set&lt;/strong> dropdown.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Request Form&lt;/strong> select &lt;strong>Status&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Value or expression&lt;/strong> box, type &lt;strong>Completed&lt;/strong>. &lt;img src="https://docs.kianda.com/images/examples-set-form-field.jpg" alt="Set form field dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> button to save rule.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>With the &lt;strong>Submit&lt;/strong> button selected, in the &lt;strong>Right-hand&lt;/strong> pane click on the &lt;strong>Rules&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Set status to Completed&lt;/strong> is under the &lt;strong>Close&lt;/strong> rule. Drag and drop the &lt;strong>Set status to Completed&lt;/strong> rule to the top of the list.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="creating-a-generate-word-document-rule---generate-pdf-using-word-template">Creating a Generate word document rule - Generate PDF using word template&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>Select the &lt;strong>Submit&lt;/strong> button by clicking on it so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Left-hand&lt;/strong> pane click on &lt;strong>Add a rule&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>File Management&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Generate word document&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule&lt;/strong> dialog box, change the &lt;strong>Title&lt;/strong> to &amp;ldquo;&lt;strong>Generate PDF using word template&lt;/strong>&amp;rdquo;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select document template&lt;/strong> option, select &lt;strong>Upload template&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select document destination&lt;/strong> option, select &lt;strong>Generated PDF&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the Upload template file, brows for the created word template file.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-generate-pdf.jpg" alt="Send email to safety manager">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Move the &lt;strong>Generate PDF using word template&lt;/strong> rule under the &lt;strong>Set status to Completed&lt;/strong> rule.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="creating-a-send-email-rule---send-email-to-safety-manager">Creating a Send email rule - Send email to Safety Manager&lt;/h4>
+&lt;p>This rule will be used to send an email to the selected &lt;strong>Safety Manager&lt;/strong>. We will be using the &lt;strong>Send email&lt;/strong> rule from the &lt;strong>Communications&lt;/strong> set of rules. In this rule we will add expressions, to learn more go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/">Expressions&lt;/a>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the &lt;strong>Submit&lt;/strong> button by clicking on it so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Left-hand&lt;/strong> pane click on the &lt;strong>Add a rule&lt;/strong> tab.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Communications&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Send email&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule&lt;/strong> box, change the &lt;strong>Title to&lt;/strong> &amp;ldquo;&lt;strong>Send email to Safety Manager&lt;/strong>&amp;rdquo;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the person icon &lt;img src="https://docs.kianda.com/../static/images/person.png" alt="Person icon"> on the &lt;strong>To:&lt;/strong> part of the email.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select email users&lt;/strong> box select the &lt;strong>User(s) defined in a user field&lt;/strong> radio button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a user field&lt;/strong> select &lt;strong>Safety Manager&lt;/strong> from the &lt;strong>Request form&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-send-email-pdf.jpg" alt="Send email to safety manager">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To attach the created PDF file to the email, click on &lt;strong>File&lt;/strong> icon in the &lt;strong>Body&lt;/strong> of the email.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Attach file to email&lt;/strong> dialog box, drill down and choose &lt;strong>Generated PDF&lt;/strong> from the &lt;strong>Inspection Form&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-attach-pdf.jpg" alt="Send email to safety manager">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>body&lt;/strong> of the email to:&lt;/p>
+&lt;pre tabindex="0">&lt;code>Hi,
+See report attached
+Regards,
+The Safety Team
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Move the &lt;strong>Send email to Safety Manager&lt;/strong> rule under the &lt;strong>Generate PDF using word template&lt;/strong> rule.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save button">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="request-form-summary">Request Form Summary&lt;/h2>
+&lt;p>To summarise our &lt;strong>Inspection From&lt;/strong>, we created all fields, buttons and rules that we stated in our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>. Our Engineer can fill out our &lt;strong>Inspection Checklist&lt;/strong> and submit the form which automatically sends an email to an &lt;strong>Safety Manager&lt;/strong> with the generated PDF file of the report. We are also updating our &lt;strong>Status&lt;/strong> field to &lt;strong>Completed&lt;/strong>.&lt;/p>
+&lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/dashboard/">Creating Dashboard&lt;/a>.&lt;/p></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
 &lt;p>When working with rules in forms, a key principle to consider is &lt;strong>rule order&lt;/strong>. Rule order is important if there are &lt;strong>multiple rules&lt;/strong> attached to an item like a button to determine the sequence of rule execution. As a form designer you can change the order of execution is important and modified form and process designs, including rule order to suit your needs.&lt;/p>
 &lt;h2 id="rule-order-example">Rule order example&lt;/h2>
 &lt;p>For example, you may want a process to send automated emails to a safety manager, where the email includes submitted form data. In this case a &lt;strong>Send email rule&lt;/strong> could be attached to a form &lt;strong>Submit&lt;/strong> button so an email is sent once the button is clicked. This will result in an automated email to a designated person. To generate a report of the completed form you can use the &lt;strong>Generate word&lt;/strong> &lt;strong>document&lt;/strong> &lt;strong>rule&lt;/strong> triggered again when the &lt;strong>Submit&lt;/strong> button is clicked. In this example the &lt;strong>Generate word document rule&lt;/strong> has to be executed &lt;u>before&lt;/u> the &lt;strong>Send email rule&lt;/strong>, so that the Word document can be generated and then attached to the email.&lt;/p>
@@ -2060,9 +2235,18 @@ Your browser does not support the video tag.
 &lt;p>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction.&lt;/p>
-&lt;/div></description></item><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</guid><description>
+&lt;p>Kianda &lt;strong>dashboards&lt;/strong> deliver a convenient way to provide insights into how your business processes are performing. Kianda dashboards offer easy reporting, permissions management, quick build, condition-based filtering and many more features.&lt;/p>
+&lt;p>From lists to tiles, filter and charts, dashboards allow you to build full digital experiences to monitor your real-time processes in a few minutes.&lt;/p>
+&lt;h2 id="creating-a-dashboard">Creating a Dashboard&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>In the left-hand side menu click on Home&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/left-menu-home.jpg" alt="Home">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On the top right-hand side menu click on the plus&lt;img src="https://docs.kianda.com/images/top-right-menu-plus.jpg" alt="Plus">&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</guid><description>
 &lt;p>Kianda &lt;strong>Designer&lt;/strong> provides an intuitive interface where you can quickly start building &lt;strong>forms&lt;/strong> for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).&lt;/p>
 &lt;p>There are 3 key principles to consider when working with forms:&lt;/p>
 &lt;ol>
