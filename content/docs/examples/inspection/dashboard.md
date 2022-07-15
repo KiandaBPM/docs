@@ -18,5 +18,69 @@ From lists to tiles, filter and charts, dashboards allow you to build full digit
 
 2. On the top right-hand side menu click on the plus![Plus](/images/top-right-menu-plus.jpg)
 
+3. Change the **Title** to **Inspection Dashboard**.
 
+4. Click on **OK** on the **Create dashboard page** dialog box.
+
+5. Creating the **Inspection dashboard** will automatically bring you to a blank **dashboard creation page**.
+
+### Creating a List Widget
+
+We will use the List widget to keep track all instances of our Inspection Processes.
+
+1. On the dashboard creation page, click on **List** in the top menu.
+
+   ![Home](/images/dashboard-list.jpg)
+
+2. Change the **Title** to **Inspection records**.
+
+3. List widget automatically shows all records of all our processes in the system. We need to select the **Inspection Process**. Click on the pen icon on the **Inspection Records**.
+
+   ![Edit list widget](/images/examples-edit-list.jpg)
+
+4. In the **Edit List** dialog box, select **Inspection Process** in the **Business process** option.
+
+5. On the right-hand side of the **Edit List** dialog box click on **Design Fields**.
+
+6. Select **Status** field from the **Request Form**.
+
+   ![List dialog box](/images/examples-list-editbox.jpg)
+
+7. Click on **OK** in the **Edit List** dialog box to save changes.
+
+
+
+### Creating a Link widget
+
+With the Link widget in our dashboard, by clicking on it, our users will be able to create new instances of the **Inspection Process**.
+
+1. On the dashboard creation page, click on **List** in the top menu.
+
+   ![Add link in dashboard](/images/dashboard-add-link.jpg)
+
+2. Change the **Title** to **Request an Inspection**.
+
+3. Click on **OK** in the **Edit Link** dialog box.
+
+4. We need to activate which process to start when clicking on the link, click on the pen icon to edit the **Link widget** 
+
+   ![Link edit](/images/dashboard-edit-link.jpg)
+
+5. Click on **Start New Process** in the **Edit button links** dialog box.
+
+6. In the **Edit buttons links Request an Inspection** dialog box select **Inspection Process** in the **Target process** option.
+
+7. Click on **OK** in the **Edit Link** dialog box.
+
+8. Click on **OK** in the **Edit buttons links Request an Inspection** dialog box.
+
+9. In the top right-hand menu click on ![Link edit](/images/dashboard-save-button.jpg) to save your dashboard.
+
+   ![Link edit](/images/dashboard-menu.jpg)
+
+### Inspection Process Dashboard Summary
+
+We have now created the dashboard for our Inspection process. Using the List widget, we can see all details of all instances of each inspection process that was created. By picking the **Status** field to show in our **List** widget, we can see which processes are **Completed** and **Requested**. With the **Link** widget we are allowing the users of the dash board to click on the link to start an **Inspection process.** Take a look at the finished dashboard for the **Inspection Process** below.
+
+![Link edit](/images/examples-inspection-dashboard.jpg)
 
