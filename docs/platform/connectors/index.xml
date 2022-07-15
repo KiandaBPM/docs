@@ -138,44 +138,6 @@
 &lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="adding-security">Adding security&lt;/h3>
-&lt;p>You can add&lt;/p>
-&lt;ol start="7">
-&lt;li>
-&lt;p>first and if the service has been configured correctly, you should get a notification saying&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Test connection –&lt;/strong> By clicking this button you verify that the &lt;strong>REST server base URL&lt;/strong> can be reached by Kianda.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Save –&lt;/strong> Saves the creation or changes made to the &lt;strong>REST Service&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Security –&lt;/strong> Define who can control, use and the level of access your &lt;strong>B2B Portals&lt;/strong> have to the &lt;strong>REST Service.&lt;/strong> See the &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">&lt;strong>Data Access&lt;/strong>&lt;/a> page for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Close –&lt;/strong> Close the &lt;strong>REST Service.&lt;/strong> Click on this to exit the page without saving.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>To finalise the connection, click on &lt;strong>Test connection&lt;/strong> first and if the service has been configured correctly, you should get a notification saying&lt;/p>
-&lt;p>then click on &lt;strong>Security&lt;/strong> to set security settings, and then click on &lt;strong>Save&lt;/strong> to save your work. The data connector will now appear in the main data sources view.&lt;/p>
-&lt;p>At the bottom of the REST Service details page there are four buttons:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Test connection –&lt;/strong> By clicking this button you verify that the &lt;strong>REST server base URL&lt;/strong> can be reached by Kianda.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Save –&lt;/strong> Saves the creation or changes made to the &lt;strong>REST Service&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Security –&lt;/strong> Define who can control, use and the level of access your &lt;strong>B2B Portals&lt;/strong> have to the &lt;strong>REST Service.&lt;/strong> See the &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">&lt;strong>Data Access&lt;/strong>&lt;/a> page for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Close –&lt;/strong> Close the &lt;strong>REST Service.&lt;/strong> Click on this to exit the page without saving.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
 &lt;p>&lt;strong>Next Steps&lt;/strong>&lt;/p>
 &lt;p>Your &lt;strong>REST Service&lt;/strong> is now set up and ready to be used in your &lt;strong>Processes&lt;/strong>. Check out the following article on how to implement a &lt;strong>REST Service&lt;/strong> in order to refresh an Access token.&lt;/p></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">

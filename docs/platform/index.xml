@@ -525,6 +525,7 @@ Your browser does not support the video tag.
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced Kianda Dashboards. Now let&amp;rsquo;s look at each of available &lt;strong>Dashboard widgets&lt;/strong> - and Conditions that can be applied to some of them - in more detail:&lt;/p></description></item><item><title>Docs: Data connectors</title><link>https://docs.kianda.com/docs/platform/connectors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/</guid><description>
 &lt;p>The &lt;strong>Data sources&lt;/strong> function is found under &lt;strong>Administration&lt;/strong> in the left-hand side menu, and provides an easy way to create connections to ERP, CRM and IT systems. These connections allow you to combine multiple sources of data in one place and from there Kianda processes can use and update the data to creative effective workflows.&lt;/p>
+&lt;h2 id="predefined-data-connectors">Predefined data connectors&lt;/h2>
 &lt;p>Connecting to data in Kianda is a breeze. You can quickly connect to a data source, for example data in Salesforce, and use this data in Kianda forms and dashboards. The connection is called a &lt;strong>data connector&lt;/strong> and Kianda comes with a predefined set of data connectors, these include:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="active-directory/">Active Directory&lt;/a>&lt;/li>
@@ -547,14 +548,145 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;p>Click on each of the links above to find out more about each data connector.&lt;/p>
 &lt;p>If you have a data source that is not on the list above, you can use SOAP or REST to easily connect to your data source, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/soap">SOAP&lt;/a> or &lt;a href="https://docs.kianda.com/docs/platform/connectors/rest/">REST&lt;/a> for more information.&lt;/p>
-&lt;p>&lt;strong>Connecting to SharePoint Data (On-premises or Online):&lt;/strong>&lt;/p>
+&lt;h2 id="viewing-existing-data-sources">Viewing existing data sources&lt;/h2>
+&lt;p>Only those with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage data sources&lt;/strong> have access to the &lt;strong>Datasource management&lt;/strong> function. To view any existing data sources:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong> in the left-hand side menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Any existing data sources that have been created for your workspace are shown in the main view under &lt;strong>Datasource management&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-list.jpg" alt="Existing data connectors">&lt;/p>
+&lt;p>Data sources are listed by: &lt;strong>Name&lt;/strong>, &lt;strong>Type and icon&lt;/strong>, &lt;strong>Modified&lt;/strong> (as in the date the connector was modified), &lt;strong>Modified By&lt;/strong> (the person who last made changes) and the &lt;strong>Status&lt;/strong>, for example &lt;strong>ready&lt;/strong> means the connection has been tested and is working, while &lt;strong>incomplete&lt;/strong> means that more details still need to be added.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>search&lt;/strong> for a data source, type in the name or type of data source in the &lt;strong>search box&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>delete&lt;/strong> a data source, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin/Trash button"> beside the name of the datasource. You will receive a popup asking to you to confirm deletion by clicking &lt;strong>OK&lt;/strong>, or you can exit the deletion by clicking on &lt;strong>Cancel&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>see the details&lt;/strong> of a data source, click on the &lt;strong>name&lt;/strong> of the Data source and from there you are brought to the &lt;strong>Data source details&lt;/strong> page:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-details-eg.jpg" alt="Data source details example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The details will vary depending on the data source, but there are some common elements:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong> - the name of the data source as it will display in your system. Choose something meaningful, as you will use this name in process design to connect your forms to your data source.&lt;/li>
+&lt;li>&lt;strong>Information about the data source&lt;/strong> - this could be a URL, Server name, Client ID, root folder path etc.&lt;/li>
+&lt;li>&lt;strong>Authentication details&lt;/strong> - this could be a username, password, client secret etc.&lt;/li>
+&lt;li>Option to use &lt;strong>Kianda Cloud Connect&lt;/strong> - you enable this feature and download a zip file which you can install on your server, allowing the Kianda system to reach your server and get access to data, for example SQL Server, making system integration quick and efficient.&lt;/li>
+&lt;li>&lt;strong>Test connection&lt;/strong> - all data source detail pages will allow you to test your connection using this button to ensure data exchange can happen.&lt;/li>
+&lt;li>&lt;strong>Save&lt;/strong> - at any time you can save details, even if some parameters need to be completed, allowing you to return to the configuration at any point.&lt;/li>
+&lt;li>&lt;strong>Security&lt;/strong> - all data sources can have different levels of security set up, including administrators for the connection, and users of the connection, see &lt;a href="#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/li>
+&lt;li>&lt;strong>Close&lt;/strong> - allows you to exit from the data source details page.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="creating-a-datasource">Creating a datasource&lt;/h2>
+&lt;p>The video below demonstrates how to create a datasource for SharePoint. The procedure shown is similar for other data connectors. Click on the links in &lt;a href="#predefined-data-connectors">Predefined data connectors&lt;/a> to read more on how to connect to different data sources.&lt;/p>
+&lt;p>&lt;strong>Connecting to SharePoint Data (On-premises or Online) example&lt;/strong>&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/SharePoint connection.mp4">
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-&lt;h2 id="on-premises-data">On-premises data&lt;/h2>
-&lt;p>&lt;img src="https://app.kianda.com/Content/6ceb0eeb-bfb7-44a8-ad57-3df169286224/2929bafd-a863-48f8-985e-644bb48b7596.gif" alt="Connecting to on-premises SQL">&lt;/p></description></item><item><title>Docs: B2B Portals</title><link>https://docs.kianda.com/docs/platform/b2b-portals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/</guid><description>
+&lt;h3 id="kianda-cloud-connect">Kianda Cloud Connect&lt;/h3>
+&lt;p>Kianda Cloud Connect (KCC) is available with the following data sources, allowing you to streamline data system integration:&lt;/p>
+&lt;ul>
+&lt;li>Active Directory&lt;/li>
+&lt;li>Email&lt;/li>
+&lt;li>File System&lt;/li>
+&lt;li>FTP&lt;/li>
+&lt;li>MySQL&lt;/li>
+&lt;li>Oracle&lt;/li>
+&lt;li>PowerShell&lt;/li>
+&lt;li>REST&lt;/li>
+&lt;li>SAP&lt;/li>
+&lt;li>SharePoint&lt;/li>
+&lt;li>SQL Server&lt;/li>
+&lt;li>SOAP&lt;/li>
+&lt;/ul>
+&lt;p>You can enable KCC when you &lt;strong>add a new&lt;/strong> data source from the main by datasource management page:&lt;/p>
+&lt;ol>
+&lt;li>Fill out details for your data source in the &lt;strong>data source details&lt;/strong> page.&lt;/li>
+&lt;li>Check the checkbox beside &lt;strong>Kianda Cloud Connect&lt;/strong>.&lt;/li>
+&lt;li>A link appears to &lt;strong>Download Kianda Cloud Connect&lt;/strong>. Click on this link to download the software.&lt;/li>
+&lt;li>Click on the &lt;strong>setup file&lt;/strong> in the zip package and step through the wizard to install Kianda Cloud Connect.&lt;/li>
+&lt;/ol>
+&lt;h3 id="setting-security-for-data-sources">Setting security for data sources&lt;/h3>
+&lt;p>All data sources can have security added at different levels, for example at a role level and even database query level.&lt;/p>
+&lt;p>To enable security for datasources:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>From the left-hand side menu, go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on an existing data source &lt;strong>name&lt;/strong> or click on &lt;strong>Add new&lt;/strong> to create a new data source.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the data source details screen, click on the &lt;strong>Security&lt;/strong> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Security settings&lt;/strong> dialog box opens.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/security-settings-datasource.jpg" alt="Security settings for data sources">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out the details:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Connection administrators&lt;/strong> - click on the dropdown list to choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> who can edit the connection settings. If left blank any user with the role &lt;strong>Administrator&lt;/strong> can edit the connection. See &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and groups&lt;/a> for more details on how to add users and groups to the workspace.&lt;/li>
+&lt;li>&lt;strong>Connection users&lt;/strong> - click on the dropdown list to choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> who are allowed to query data using this connection. If left blank any user can query data using the datasource.&lt;/li>
+&lt;li>**Enable B2B ** - if you check the checkbox, this allows B2B external users to query the connection. The &lt;strong>Enable partner default query parameters&lt;/strong> checkbox appears.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Check/Uncheck &lt;strong>Enable partner default query parameters&lt;/strong>. If you check the checkbox, you can define default query parameters that are applied to any partner originated query. Parameters defined here take precedence over any design time queries. Click on &lt;strong>Add mapping&lt;/strong> to choose a query type and table/operation as follows:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Query type&lt;/strong> - choose from &lt;strong>Create, Read, Update, Delete&lt;/strong> (CRUD). These CRUD operations allow you to create, read, update and delete records within your datasource.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Table/Operation&lt;/strong> - click on &lt;strong>Select a table&lt;/strong> to select a resource within the data connector. Click on &lt;strong>OK&lt;/strong> when you are finished editing, or &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Query parameters&lt;/strong> - when a datasource resource is chosen, for example a SharePoint list called &amp;lsquo;Countries&amp;rsquo; below, then you will have an option to set conditions for filtering data.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/query-parameters-security.jpg" alt="Query parameters">&lt;/p>
+&lt;p>Click on &lt;strong>Filter conditions&lt;/strong> to open an &lt;strong>Edit conditions&lt;/strong> dialog box and from there click on &lt;strong>Add a conditions group&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>If you choose to set conditions using the steps above, then in the &lt;strong>Edit conditions&lt;/strong> dialog box, you can set conditions based on data source parameters, operators and form fields.&lt;/p>
+&lt;ul>
+&lt;li>The parameter on the left comes from the &lt;strong>data source&lt;/strong>, for example for SharePoint, there are 18 possible values listed in &lt;a href="https://docs.kianda.com/docs/platform/connectors/sharepoint/#sharepoint-parameters">SharePoint parameters&lt;/a>. See &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data sources&lt;/a> for information about other data connectors.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-conditions.jpg" alt="Edit conditions dialog box in Security settings">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Within this dialog box you can also use different operators, for example &lt;strong>Equals&lt;/strong> as shown above. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details on using conditions in Kianda.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The right-most field relates to the B2B Portal and B2B User. There are standard options listed below:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Main Contact Name –&lt;/strong> the first name and last name of the Partner&lt;/li>
+&lt;li>&lt;strong>Main Contact Email –&lt;/strong> the email of the Partner&lt;/li>
+&lt;li>&lt;strong>Partner Company Name –&lt;/strong> the Partner organisation of the Partner&lt;/li>
+&lt;li>&lt;strong>Partner Current User Name –&lt;/strong> the user within the B2B Portal that is accessing the datasource&lt;/li>
+&lt;li>&lt;strong>Partner Current User Email –&lt;/strong> the user&amp;rsquo;s email within the B2B Portal that is accessing the datasource&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/b2b-parameters.jpg" alt="B2B form parameters">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added conditions click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the security settings dialog box, click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>We have introduced the data sources management function within &lt;strong>Administration&lt;/strong>. Now let&amp;rsquo;s look at each of the data connector types in more detail:&lt;/p></description></item><item><title>Docs: B2B Portals</title><link>https://docs.kianda.com/docs/platform/b2b-portals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/</guid><description>
 &lt;p>B2B Portals are a means of connecting your clients to your Kianda subscription through their own subscription. This provides a means of allowing your clients to interface with processes you have already created. This could involve updating existing processes, deleting processes or creating processes. Access to the B2B Portal can be controlled by your own administrator and each B2B Portal can have multiple users for your clients.&lt;/p>
 &lt;p>Your client&amp;rsquo;s subscription will need to be configured by Kianda so please reach out to your Account Manager or &lt;a href="mailto:support@kianda.com">Kianda Support&lt;/a> to arrange the set up.&lt;/p>
 &lt;p>B2B Portals can be configured by users with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage partners&lt;/strong>. These users can access the function, found under &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Invite Partner&lt;/strong>.&lt;/p>
