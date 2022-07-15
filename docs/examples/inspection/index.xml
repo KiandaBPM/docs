@@ -948,11 +948,11 @@ The Safety Team
 &lt;h2 id="creating-a-dashboard">Creating a Dashboard&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>In the left-hand side menu click on Home&lt;/p>
+&lt;p>In the left-hand side menu click on Home.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/left-menu-home.jpg" alt="Home">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>On the top right-hand side menu click on the plus&lt;img src="https://docs.kianda.com/images/top-right-menu-plus.jpg" alt="Plus">&lt;/p>
+&lt;p>On the top right-hand side menu click on the plus&lt;img src="https://docs.kianda.com/images/top-right-menu-plus.jpg" alt="Plus"> to add a dashboard.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Inspection Dashboard&lt;/strong>.&lt;/p>
@@ -965,11 +965,11 @@ The Safety Team
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="creating-a-list-widget">Creating a List Widget&lt;/h3>
-&lt;p>We will use the List widget to keep track all instances of our Inspection Processes.&lt;/p>
+&lt;p>In this example we will use a List widget to keep track of all instances of our Inspection Processes. We will add the &lt;strong>Status&lt;/strong> field from the &lt;strong>Request From&lt;/strong> to the list to keep track in what stage is a particular process.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>On the dashboard creation page, click on &lt;strong>List&lt;/strong> in the top menu.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-list.jpg" alt="Home">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-widget-menu-list.jpg" alt="Home">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Inspection records&lt;/strong>.&lt;/p>
@@ -993,11 +993,11 @@ The Safety Team
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="creating-a-link-widget">Creating a Link widget&lt;/h3>
-&lt;p>With the Link widget in our dashboard, by clicking on it, our users will be able to create new instances of the &lt;strong>Inspection Process&lt;/strong>.&lt;/p>
+&lt;p>In this example we will use the Link widget in our dashboard. By clicking on it, our users will be able to create new instances of the &lt;strong>Inspection Process&lt;/strong> starting in the &lt;strong>Request Form&lt;/strong>. To learn more about Link widgets go to &lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>On the dashboard creation page, click on &lt;strong>List&lt;/strong> in the top menu.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-add-link.jpg" alt="Add link in dashboard">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-widget-menu-link.jpg" alt="Add link in dashboard">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Request an Inspection&lt;/strong>.&lt;/p>
