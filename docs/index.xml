@@ -2284,7 +2284,7 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;/ul></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
 &lt;p>Kianda &lt;strong>dashboards&lt;/strong> deliver a convenient way to provide insights into how your business processes are performing. Kianda dashboards offer easy reporting, permissions management, quick build, condition-based filtering and many more features.&lt;/p>
-&lt;p>From lists to tiles, filter and charts, dashboards allow you to build full digital experiences to monitor your real-time processes in a few minutes.&lt;/p>
+&lt;p>From lists to tiles, filter and charts, dashboards allow you to build full digital experiences to monitor your real-time processes in a few minutes. To learn more about dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard pages&lt;/a>.&lt;/p>
 &lt;h2 id="creating-a-dashboard">Creating a Dashboard&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -2312,7 +2312,7 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-widget-menu-list.jpg" alt="Home">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Inspection records&lt;/strong>.&lt;/p>
+&lt;p>In the &lt;strong>Add widget&lt;/strong> dialog box, change the &lt;strong>Title&lt;/strong> to &lt;strong>Inspection records&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>List widget automatically shows all records of all our processes in the system. We need to select the &lt;strong>Inspection Process&lt;/strong>. Click on the pen icon on the &lt;strong>Inspection Records&lt;/strong>.&lt;/p>
@@ -2340,10 +2340,10 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-widget-menu-link.jpg" alt="Add link in dashboard">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Request an Inspection&lt;/strong>.&lt;/p>
+&lt;p>In the &lt;strong>Add widget&lt;/strong> dialog box, change the &lt;strong>Title&lt;/strong> to &lt;strong>Request an Inspection&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit Link&lt;/strong> dialog box.&lt;/p>
+&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Add widget&lt;/strong> dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>We need to activate which process to start when clicking on the link, click on the pen icon to edit the &lt;strong>Link widget&lt;/strong>&lt;/p>
@@ -2361,14 +2361,44 @@ Your browser does not support the video tag.
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit buttons links Request an Inspection&lt;/strong> dialog box.&lt;/p>
 &lt;/li>
+&lt;/ol>
+&lt;h3 id="creating-a-pie-chart-widget---pie-chart">Creating a Pie Chart widget - Pie chart&lt;/h3>
+&lt;p>In this example we will use the Chart widget in our dashboard. We will create a pie chart from the available options, representing the status of our inspection processes. To learn more about Chart widgets go to &lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On the dashboard creation page, click on &lt;strong>Chart&lt;/strong> in the top menu.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-widget-menu-chart.jpg" alt="Add link in dashboard">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Add widget&lt;/strong> dialog box, change the &lt;strong>Title&lt;/strong> to &lt;strong>Inspection Status&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Add widget&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>We need to attach a process to the pie chart, click on the pen icon on the chart widget to edit it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Inspection process&lt;/strong> in the &lt;strong>Business process&lt;/strong> option.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Pie chart&lt;/strong> from the &lt;strong>Chart type&lt;/strong> option.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Status&lt;/strong> field from the &lt;strong>Label field&lt;/strong> option.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit chart&lt;/strong> dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-chart-editbox.jpg" alt="List dialog box">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>In the top right-hand menu click on &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Link edit"> to save your dashboard.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-menu.jpg" alt="Link edit">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="inspection-process-dashboard-summary">Inspection Process Dashboard Summary&lt;/h3>
+&lt;h2 id="inspection-process-dashboard-summary">Inspection Process Dashboard Summary&lt;/h2>
 &lt;p>We have now created the dashboard for our Inspection process. Using the List widget, we can see all details of all instances of each inspection process that was created. By picking the &lt;strong>Status&lt;/strong> field to show in our &lt;strong>List&lt;/strong> widget, we can see which processes are &lt;strong>Completed&lt;/strong> and &lt;strong>Requested&lt;/strong>. With the &lt;strong>Link&lt;/strong> widget we are allowing the users of the dash board to click on the link to start an &lt;strong>Inspection process.&lt;/strong> Take a look at the finished dashboard for the &lt;strong>Inspection Process&lt;/strong> below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/examples-inspection-dashboard.jpg" alt="Link edit">&lt;/p></description></item><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</guid><description>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-inspection-dashboard.jpg" alt="Finished Dashboard">&lt;/p></description></item><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/</guid><description>
 &lt;p>Kianda &lt;strong>Designer&lt;/strong> provides an intuitive interface where you can quickly start building &lt;strong>forms&lt;/strong> for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).&lt;/p>
 &lt;p>There are 3 key principles to consider when working with forms:&lt;/p>
 &lt;ol>
