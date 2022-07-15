@@ -807,14 +807,14 @@ The Safety Team
 &lt;h3 id="creating-a-word-template">Creating a Word template&lt;/h3>
 &lt;p>You can &lt;strong>generate reports&lt;/strong> within Kianda processes and &lt;strong>populate&lt;/strong> the reports with &lt;strong>data captured&lt;/strong> within each process instance. We will be generating a PDF file for inspection reports where a report template can be used to show the information the engineer input to a &lt;strong>Kianda form&lt;/strong> during his inspection. Each time an inspection is performed, a report is generated based on a Word template and the report shows the relevant information that was captured during that particular inspection.&lt;/p>
 &lt;p>To learn more on how to create the &lt;strong>Word template&lt;/strong> using &lt;strong>Kianda Add-in&lt;/strong> in Word go to &lt;a href="https://vimeo.com/696535028/ef00136ecd">Kianda Add-in&lt;/a> to watch a short video going through the process step by step. Alternatively you can also go through the steps of learning the process by going to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/">Word document add-in&lt;/a>.&lt;/p>
-&lt;h3 id="adding-rules-to-submit-button">Adding rules to Submit button&lt;/h3>
+&lt;h2 id="adding-rules-to-submit-button">Adding rules to Submit button&lt;/h2>
 &lt;p>To take a look back at our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a> for our &lt;strong>Inspection form&lt;/strong>, we need 3 rules for the &lt;strong>Submit&lt;/strong> button.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Set status to Complete&lt;/strong> - Sets the status field that we created to &lt;strong>“Complete”&lt;/strong>.&lt;/li>
 &lt;li>&lt;strong>Generate a PDF using word template&lt;/strong> - Generates a PDF file using a word template which we created using the &lt;strong>Kianda Add-in&lt;/strong>.&lt;/li>
 &lt;li>&lt;strong>Send email to Safety Manager&lt;/strong> - Sends an email to the selected user from the &lt;strong>Safety Manager&lt;/strong> field from our &lt;strong>Request form&lt;/strong>.&lt;/li>
 &lt;/ul>
-&lt;h4 id="creating-a-set-form-field-rule---set-status-to-completed">Creating a Set form field rule - Set status to Completed&lt;/h4>
+&lt;h3 id="creating-a-set-form-field-rule---set-status-to-completed">Creating a Set form field rule - Set status to Completed&lt;/h3>
 &lt;p>With this rule we will be setting our &lt;strong>Status&lt;/strong> field to &lt;strong>“Completed”&lt;/strong>. We will be using the &lt;strong>Set form field&lt;/strong> rule from the &lt;strong>Data&lt;/strong> set of rules.&lt;/p>
 &lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/status-completed.gif"/>
 &lt;p>&lt;br>&lt;br>&lt;/p>
@@ -853,7 +853,7 @@ The Safety Team
 &lt;p>The &lt;strong>Set status to Completed&lt;/strong> is under the &lt;strong>Close&lt;/strong> rule. Drag and drop the &lt;strong>Set status to Completed&lt;/strong> rule to the top of the list.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h4 id="creating-a-generate-word-document-rule---generate-pdf-using-word-template">Creating a Generate word document rule - Generate PDF using word template&lt;/h4>
+&lt;h3 id="creating-a-generate-word-document-rule---generate-pdf-using-word-template">Creating a Generate word document rule - Generate PDF using word template&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>Select the &lt;strong>Submit&lt;/strong> button by clicking on it so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
@@ -887,7 +887,7 @@ The Safety Team
 &lt;p>Move the &lt;strong>Generate PDF using word template&lt;/strong> rule under the &lt;strong>Set status to Completed&lt;/strong> rule.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h4 id="creating-a-send-email-rule---send-email-to-safety-manager">Creating a Send email rule - Send email to Safety Manager&lt;/h4>
+&lt;h3 id="creating-a-send-email-rule---send-email-to-safety-manager">Creating a Send email rule - Send email to Safety Manager&lt;/h3>
 &lt;p>This rule will be used to send an email to the selected &lt;strong>Safety Manager&lt;/strong>. We will be using the &lt;strong>Send email&lt;/strong> rule from the &lt;strong>Communications&lt;/strong> set of rules. In this rule we will add expressions, to learn more go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/">Expressions&lt;/a>.&lt;/p>
 &lt;ol>
 &lt;li>
