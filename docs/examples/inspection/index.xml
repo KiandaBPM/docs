@@ -952,4 +952,78 @@ The Safety Team
 &lt;li>
 &lt;p>On the top right-hand side menu click on the plus&lt;img src="https://docs.kianda.com/images/top-right-menu-plus.jpg" alt="Plus">&lt;/p>
 &lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Inspection Dashboard&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Create dashboard page&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Creating the &lt;strong>Inspection dashboard&lt;/strong> will automatically bring you to a blank &lt;strong>dashboard creation page&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="creating-a-list-widget">Creating a List Widget&lt;/h3>
+&lt;p>We will use the List widget to keep track all instances of our Inspection Processes.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On the dashboard creation page, click on &lt;strong>List&lt;/strong> in the top menu.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-list.jpg" alt="Home">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Inspection records&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>List widget automatically shows all records of all our processes in the system. We need to select the &lt;strong>Inspection Process&lt;/strong>. Click on the pen icon on the &lt;strong>Inspection Records&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-edit-list.jpg" alt="Edit list widget">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit List&lt;/strong> dialog box, select &lt;strong>Inspection Process&lt;/strong> in the &lt;strong>Business process&lt;/strong> option.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On the right-hand side of the &lt;strong>Edit List&lt;/strong> dialog box click on &lt;strong>Design Fields&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Status&lt;/strong> field from the &lt;strong>Request Form&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-list-editbox.jpg" alt="List dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit List&lt;/strong> dialog box to save changes.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="creating-a-link-widget">Creating a Link widget&lt;/h3>
+&lt;p>With the Link widget in our dashboard, by clicking on it, our users will be able to create new instances of the &lt;strong>Inspection Process&lt;/strong>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On the dashboard creation page, click on &lt;strong>List&lt;/strong> in the top menu.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-add-link.jpg" alt="Add link in dashboard">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Request an Inspection&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit Link&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>We need to activate which process to start when clicking on the link, click on the pen icon to edit the &lt;strong>Link widget&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-link.jpg" alt="Link edit">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Start New Process&lt;/strong> in the &lt;strong>Edit button links&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit buttons links Request an Inspection&lt;/strong> dialog box select &lt;strong>Inspection Process&lt;/strong> in the &lt;strong>Target process&lt;/strong> option.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit Link&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit buttons links Request an Inspection&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the top right-hand menu click on &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Link edit"> to save your dashboard.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-menu.jpg" alt="Link edit">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="inspection-process-dashboard-summary">Inspection Process Dashboard Summary&lt;/h3>
+&lt;p>We have now created the dashboard for our Inspection process. Using the List widget, we can see all details of all instances of each inspection process that was created. By picking the &lt;strong>Status&lt;/strong> field to show in our &lt;strong>List&lt;/strong> widget, we can see which processes are &lt;strong>Completed&lt;/strong> and &lt;strong>Requested&lt;/strong>. With the &lt;strong>Link&lt;/strong> widget we are allowing the users of the dash board to click on the link to start an &lt;strong>Inspection process.&lt;/strong> Take a look at the finished dashboard for the &lt;strong>Inspection Process&lt;/strong> below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-inspection-dashboard.jpg" alt="Link edit">&lt;/p></description></item></channel></rss>
