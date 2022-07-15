@@ -196,7 +196,7 @@
 &lt;li>&lt;strong>Set status to Requested&lt;/strong> - Sets the status field that we created to &lt;strong>&amp;ldquo;Requested&amp;rdquo;&lt;/strong>.&lt;/li>
 &lt;li>&lt;strong>Send email to Engineer&lt;/strong> - Sends an email to the selected engineer from the &lt;strong>Engineer field&lt;/strong>.&lt;/li>
 &lt;/ul>
-&lt;h4 id="creating-a-set-form-field-rule---set-status-to-requested">Creating a Set form field rule - Set status to Requested&lt;/h4>
+&lt;h3 id="creating-a-set-form-field-rule---set-status-to-requested">Creating a Set form field rule - Set status to Requested&lt;/h3>
 &lt;p>With this rule we will be setting our &lt;strong>Status&lt;/strong> field to &lt;strong>&amp;ldquo;Requested&amp;rdquo;&lt;/strong>. We will be using the &lt;strong>Set form field&lt;/strong> rule from the &lt;strong>Data&lt;/strong> set of rules.&lt;/p>
 &lt;br>
 &lt;img src="https://docs.kianda.com/videos/gifs/examples/inspection/status-rule.gif"/>
@@ -238,7 +238,7 @@
 &lt;br>
 &lt;/li>
 &lt;/ol>
-&lt;h4 id="creating-a-send-email-rule---send-email-to-engineer">Creating a Send email rule - Send email to Engineer&lt;/h4>
+&lt;h3 id="creating-a-send-email-rule---send-email-to-engineer">Creating a Send email rule - Send email to Engineer&lt;/h3>
 &lt;p>This rule will be used to send an email to the selected &lt;strong>Engineer&lt;/strong>. We will be using the &lt;strong>Send email&lt;/strong> rule from the &lt;strong>Communications&lt;/strong> set of rules. In this rule we will add expressions, to learn more go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/">Expressions&lt;/a>.&lt;/p>
 &lt;ol>
 &lt;li>
