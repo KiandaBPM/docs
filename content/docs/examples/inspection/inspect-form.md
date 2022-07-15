@@ -45,7 +45,7 @@ Taking a look back at our [requirements](/docs/examples/inspection/#planning-for
 - **Date** - Representing the day of the inspection.
 - **Inspection checklist** - Checklist that will be filled out by an **Engineer.**
   - **Question** - Question asking the engineer to make a check on the inspection.
-  - **Pass or fail** - Radio list for with a yes or no indicating whether a check is passed or failed.
+  - **Pass or fail** - Radio list with a yes or no indicating whether a check is passed or failed.
   - **Comment** - Text box used by the engineer for any comments on a check.
   - **Upload file** - Upload file button used to upload an image.
   - **Image** - Image container that contains the uploaded image.
@@ -58,6 +58,8 @@ Taking a look back at our [requirements](/docs/examples/inspection/#planning-for
 The **Date** field represents the day, month and year of our inspection. To learn more about **Date** fields, go to [Date Control](/docs/platform/controls/input/date/).
 
 <img src="/videos/gifs/examples/inspection/date-field.gif"/>
+
+<br><br>
 
 1. To add a **Data** field, first select the **Inspection Form** so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
 
@@ -84,6 +86,8 @@ The **Date** field represents the day, month and year of our inspection. To lear
 The **Inspection Checklist** will be used by an engineer to fill out. Inside of the table we need to have five different columns. **First** column will be a text box representing a check that our engineer must complete. **Second** column will be our passed radio list of **Yes** and **No** options. **Third** column is another text box for any comments that the engineer might have. **Forth** column is a **File upload** field to upload any images. Our last, **fifth** column is the **Image** container to hold the uploaded image. To learn more about Table input, go to [Table control](/docs/platform/controls/input/table/).
 
 <img src="/videos/gifs/examples/inspection/table-field.gif"/>
+
+<br><br>
 
 1. To add a **Table** field, first select the **Inspection Form** so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
 
@@ -352,14 +356,25 @@ The utility panel will hold our word document template and the generated PDF fil
 The Upload template is a **File** field. This field will be used to upload a word document which will be the template for creating the PDF file.
 
 1. To add a **File** field into the **Panel**, first select the **Panel** field so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
+
+   ![Panel select](/images/examples-panel-select.jpg)
+
 2. Click on **Controls** in the left-hand pane to expand the Controls menu.
+
 3. Select **Input** to view the range of Input controls.
+
 4. Click on **File**.
+
 5. Change the **Title** to **Upload template**.
+
 6. Chane the **Name (unique)** to a unique identifier.
+
 7. Click on **Destination** ![Destination button](/images/destination-file.jpg) to open datasource dialog box.
+
 8. Select your desired location to save the file.
+
 9. Click on **OK** on the **Datasource** dialog box.
+
 10. Click on **OK** on the **Edit field** dialog box.
 
 #### Adding a File field - Generated PDF
@@ -367,9 +382,149 @@ The Upload template is a **File** field. This field will be used to upload a wor
 The Generated PDF file is a **File** field which is used to hold our PDF from the above template.
 
 1. To add a **File** field into the **Panel** follow steps 1 through 4 in the above **Adding a file - Upload template** section.
+
+   ![Panel select with upload template](/images/examples-panel-select-upload.jpg)
+
 2. Change the **Title** to **Generated PDF**.
+
 3. Chane the **Name (unique)** to a unique identifier.
+
 4. Click on **Destination** ![Destination button](/images/destination-file.jpg) to open datasource dialog box.
+
 5. Select your desired location to save the file.
+
 6. Click on **OK** on the **Datasource** dialog box.
+
 7. Click on **OK** on the **Edit field** dialog box.
+
+
+
+### Creating a Word template
+
+You can **generate reports** within Kianda processes and **populate** the reports with **data captured** within each process instance. We will be generating a PDF file for inspection reports where a report template can be used to show the information the engineer input to a **Kianda form** during his inspection. Each time an inspection is performed, a report is generated based on a Word template and the report shows the relevant information that was captured during that particular inspection. 
+
+To learn more on how to create the **Word template** using **Kianda Add-in** in Word go to [Kianda Add-in](https://vimeo.com/696535028/ef00136ecd) to watch a short video going through the process step by step. Alternatively you can also go through the steps of learning the process by going to [Word document add-in](/docs/platform/document-generation/word-document-add-in/).
+
+
+
+### Adding rules to Submit button
+
+To take a look back at our [requirements](/docs/examples/inspection/#planning-form-requirements) for our **Inspection form**, we need 3 rules for the **Submit** button.
+
+- **Set status to Complete** - Sets the status field that we created to **“Complete”**.
+- **Generate a PDF using word template** - Generates a PDF file using a word template which we created using the **Kianda Add-in**.
+- **Send email to Safety Manager** - Sends an email to the selected user from the **Safety Manager** field from our **Request form**.
+
+#### Creating a Set form field rule - Set status to Completed
+
+With this rule we will be setting our **Status** field to **“Completed”**. We will be using the **Set form field** rule from the **Data** set of rules.
+
+<img src="/videos/gifs/examples/inspection/status-completed.gif"/>
+
+<br><br>
+
+1. Select the **Submit** button by clicking on it so that the edit or pen icon ![Pen icon](/images/penicon.png) appears. 
+
+2. In the **Left-hand** pane click on **Add a rule**.
+
+3. Click on **Data**.
+
+4. Select **Set form field**.
+
+5. In the **Edit rule** dialog box, change the **Title** to "**Set status to Completed**"
+
+6. Click on **Form field to set** dropdown.
+
+7. Under the **Request Form** select **Status** field.
+
+8. In the **Value or expression** box, type **Completed**. ![Set form field dialog box](/images/examples-set-form-field.jpg)
+
+9. Click on **OK** button to save rule.
+
+10. With the **Submit** button selected, in the **Right-hand** pane click on the **Rules**.
+
+11. The **Set status to Completed** is under the **Close** rule. Drag and drop the **Set status to Completed**  rule to the top of the list.
+
+#### Creating a Generate word document rule - Generate PDF using word template
+
+1. Select the **Submit** button by clicking on it so that the edit or pen icon ![Pen icon](/images/penicon.png) appears. 
+
+2. In the **Left-hand** pane click on **Add a rule**.
+
+3. Click on **File Management**.
+
+4. Select **Generate word document**.
+
+5. In the **Edit rule** dialog box, change the **Title** to "**Generate PDF using word template**"
+
+6. In the **Select document template** option, select **Upload template** field.
+
+7. In the **Select document destination** option, select **Generated PDF** field.
+
+8. In the Upload template file, brows for the created word template file.
+
+   ![Send email to safety manager](/images/examples-generate-pdf.jpg)
+
+9. Click on **OK** in the **Edit rule** dialog box.
+
+10. Move the **Generate PDF using word template** rule under the **Set status to Completed** rule.
+
+    
+
+    
+
+#### Creating a Send email rule - Send email to Safety Manager
+
+This rule will be used to send an email to the selected **Safety Manager**. We will be using the **Send email**  rule from the **Communications** set of rules. In this rule we will add expressions, to learn more go to [Expressions](/docs/getting-started/create-first-process/plan-your-process/expressions/).
+
+1. Select the **Submit** button by clicking on it so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
+
+2. In the **Left-hand** pane click on the **Add a rule** tab.
+
+3. Click on **Communications**.
+
+4. Select **Send email**.
+
+5. In the **Edit rule** box, change the **Title to** "**Send email to Safety Manager**"
+
+6. Click on the person icon ![Person icon](/../static/images/person.png) on the **To:** part of the email.
+
+7. In the **Select email users** box select the **User(s) defined in a user field** radio button.
+
+8. In the **Select a user field** select **Safety Manager** from the **Request form**.
+
+   ![Send email to safety manager](/images/examples-send-email-pdf.jpg)
+
+9. To attach the created PDF file to the email, click on **File** icon in the **Body** of the email.
+
+10. In the **Attach file to email** dialog box, drill down and choose **Generated PDF** from the **Inspection Form**.
+
+    ![Send email to safety manager](/images/examples-attach-pdf.jpg)
+
+11. Change the **body** of the email to:
+
+    ```
+    Hi,
+    
+    See report attached
+    
+    Regards,
+    
+    The Safety Team
+    ```
+
+    
+
+12. Click on **OK** on the **Edit rule** dialog box.
+
+13. Move the **Send email to Safety Manager** rule under the **Generate PDF using word template** rule.
+
+14. To save your changes to the form, click on the **Save** button ![Save button](/images/saveprocess.png)
+
+## Inspection Form Summary 
+
+To summarise our **Inspection From**, we created all fields, buttons and rules that we stated in our [requirements](/docs/examples/inspection/#planning-form-requirements). Our Engineer can fill out our **Inspection Checklist** and submit the form which automatically sends an email to an **Safety Manager** with the generated PDF file of the report. We are also updating our **Status** field to **Completed**.
+
+### What's next ![Idea icon](/images/18.png) 
+
+To follow a step by step guide on creating our **Inspection From**, go to [Creating Dashboard](/docs/examples/inspection/dashboard/).
