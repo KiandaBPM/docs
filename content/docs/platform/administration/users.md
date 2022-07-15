@@ -195,9 +195,11 @@ From this main view you can:
      - **Auto disable previously imported users that are missing on re-import** - choose from **No** or **Yes**. By choosing **Yes**, any previously imported users that no longer exist in the data source, will be disabled in Kianda when re-synchronisation is executed. Their account will still exist in the system, but they will no longer be able to login to Kianda. 
 
      - **Auto remove previously imported users that are missing on re-import** - choose from **No** or **Yes**. By choosing **Yes**, any previously imported users that no longer exist in the data source, will be removed from Kianda when re-synchronisation is executed. They will no longer be able to login to Kianda as their account will be removed from the system. 
-
+     
+	    Note: When a group is synchronised, a **scheduled task** is created to import users from the data source group every one hour by default. This can be changed by going to **Administration** > **Scheduled tasks**. Go to [Scheduled tasks](/docs/platform/administration/scheduledtasks/) to find out more about different schedules.
+     
    - **Group administrators** - only **Users** or **Groups** listed here can manage the group; if you leave the field blank then Kianda administrators can manage the group.
-
+   
    
 
 ### Deleting groups

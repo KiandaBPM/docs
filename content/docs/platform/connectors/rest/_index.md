@@ -85,11 +85,11 @@ A REST API data connector can be configured by users with the role **Administrat
 
 11. Click on **Save** ![Save connection button](/images/save-connection.jpg)to save the connection and you will receive a notification saying **Details saved successfully**.
 
-12. Add Security settings by clicking on the **Security** button, go to 
+12. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
 
  
 
-**Next Steps**
+### What's next  ![Idea icon](/images/18.png) ###
 
-Your **REST Service** is now set up and ready to be used in your **Processes**. Check out the following article on how to implement a **REST Service** in order to refresh an Access token.
+Your **REST Service** is now set up and ready to be used in your **processes**. Check out the following article on how to implement a **REST Service** in order to [refresh an Access token](/docs/platform/connectors/rest/rest-access-token/).
 
