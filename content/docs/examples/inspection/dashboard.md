@@ -12,11 +12,11 @@ From lists to tiles, filter and charts, dashboards allow you to build full digit
 
 ## Creating a Dashboard
 
-1. In the left-hand side menu click on Home
+1. In the left-hand side menu click on Home.
 
    ![Home](/images/left-menu-home.jpg)
 
-2. On the top right-hand side menu click on the plus![Plus](/images/top-right-menu-plus.jpg)
+2. On the top right-hand side menu click on the plus![Plus](/images/top-right-menu-plus.jpg) to add a dashboard.
 
 3. Change the **Title** to **Inspection Dashboard**.
 
@@ -26,11 +26,11 @@ From lists to tiles, filter and charts, dashboards allow you to build full digit
 
 ### Creating a List Widget
 
-We will use the List widget to keep track all instances of our Inspection Processes.
+In this example we will use a List widget to keep track of all instances of our Inspection Processes. We will add the **Status** field from the **Request From** to the list to keep track in what stage is a particular process.
 
 1. On the dashboard creation page, click on **List** in the top menu.
 
-   ![Home](/images/dashboard-list.jpg)
+   ![Home](/images/dashboard-widget-menu-list.jpg)
 
 2. Change the **Title** to **Inspection records**.
 
@@ -52,11 +52,11 @@ We will use the List widget to keep track all instances of our Inspection Proces
 
 ### Creating a Link widget
 
-With the Link widget in our dashboard, by clicking on it, our users will be able to create new instances of the **Inspection Process**.
+In this example we will use the Link widget in our dashboard. By clicking on it, our users will be able to create new instances of the **Inspection Process** starting in the **Request Form**. To learn more about Link widgets go to [Link widget](/docs/platform/pages/link/)
 
 1. On the dashboard creation page, click on **List** in the top menu.
 
-   ![Add link in dashboard](/images/dashboard-add-link.jpg)
+   ![Add link in dashboard](/images/dashboard-widget-menu-link.jpg)
 
 2. Change the **Title** to **Request an Inspection**.
 
