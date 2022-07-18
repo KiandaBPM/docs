@@ -759,35 +759,62 @@ The Safety Team
 &lt;p>&lt;img src="https://docs.kianda.com/images/send-update-partner.jpg" alt="Send Update">&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Once you have successfully creating a shared process and dashboard, these will be available in the B2B Portal for partners, for example when your partner users log into the B2B Portal they will be able to see the newly shared dashboard. From here they will be able to see the widgets within the dashboard and interact with the Processes. Go to the &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Secure Data Access&lt;/a> to read more about security in shared processes and data sources.&lt;/p></description></item><item><title>Docs: Show, hide or disable</title><link>https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Use the &lt;strong>Hide or Disable&lt;/strong> rule to hide, disable, show or enable a field or a component in a Kianda form. This rule is very useful if you want different parts of a form, a complete form or multiple forms, to appear or hide based on how the user of the form completes the form.&lt;/p>
 &lt;p>There are seven possible actions within this rule that can be applied to fields or forms:&lt;/p>
 &lt;ul>
-&lt;li>Hide from the user (not visible)&lt;/li>
-&lt;li>Show to the user (visible)&lt;/li>
-&lt;li>Disable for the user (not enabled)&lt;/li>
-&lt;li>Enable for the user (enabled)&lt;/li>
-&lt;li>Toggle visible: toggle between visible and not visible&lt;/li>
-&lt;li>Toggle enable: toggle between enabled and not enabled&lt;/li>
-&lt;li>Hide and clear: hide from the user (not visible) and clear the contents&lt;/li>
+&lt;li>&lt;strong>Hide&lt;/strong> from the user (not visible)&lt;/li>
+&lt;li>&lt;strong>Show&lt;/strong> to the user (visible)&lt;/li>
+&lt;li>&lt;strong>Disable&lt;/strong> for the user (not enabled)&lt;/li>
+&lt;li>&lt;strong>Enable&lt;/strong> for the user (enabled)&lt;/li>
+&lt;li>&lt;strong>Toggle visible:&lt;/strong> toggle between visible and not visible&lt;/li>
+&lt;li>&lt;strong>Toggle enable&lt;/strong>: toggle between enabled and not enabled&lt;/li>
+&lt;li>&lt;strong>Hide and clear&lt;/strong>: hide from the user (not visible) and clear the contents&lt;/li>
 &lt;/ul>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/p>
+&lt;/li>
 &lt;/ul>
-&lt;h2 id="how-to-use">How to use&lt;/h2>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To dynamically &lt;em>hide&lt;/em> a field or component:&lt;/p>
 &lt;ol>
-&lt;li>Choose a field.&lt;/li>
-&lt;li>Select Add a rule &amp;gt; Workflow &amp;gt; Hide or disable.&lt;/li>
-&lt;li>Click on Edit condition and add a condition.&lt;/li>
-&lt;li>Under Action, select a field or component to be made not visible.&lt;/li>
-&lt;li>Choose Hide from the drop down list.&lt;/li>
-&lt;li>Under Add otherwise action, select the field or component to be made visible.&lt;/li>
-&lt;li>Choose Show from the drop down list.&lt;/li>
-&lt;li>Click OK.&lt;/li>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Hide or Disable&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Hide or Disable&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/hide-or-disable.jpg" alt="Edit rule - Hide or Disable dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Action&lt;/strong> create an action for the rule by clicking on the empty field to add a form or form field, and then choose an option from the action dropdown list, choosing from &lt;strong>Hide&lt;/strong>, &lt;strong>Show&lt;/strong>, &lt;strong>Disable&lt;/strong>, &lt;strong>Enable&lt;/strong>, &lt;strong>Toggle visible&lt;/strong>, &lt;strong>Toggle enable&lt;/strong>, or &lt;strong>Hide and clear&lt;/strong>, see &lt;a href="#introduction">Introduction&lt;/a> for an explanation of each action.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For example choose &lt;strong>Hide&lt;/strong> from the drop down list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under Add otherwise action, select the field or component to be made visible.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Choose Show from the drop down list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click OK.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;p>The result is that a field or component will be made visible/not visible depending on the condition that has been set.&lt;/p>
 &lt;h2 id="notes">Notes&lt;/h2>
