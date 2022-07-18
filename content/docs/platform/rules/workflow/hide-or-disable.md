@@ -43,29 +43,73 @@ To dynamically *hide* a field or component:
 
    ![Edit rule - Hide or Disable dialog box](/../content/docs/hide-or-disable.jpg)
 
-4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. Under **Action** create an action for the rule by clicking on the empty field to add a form or form field, and then choose an option from the action drop-down list, choosing from **Hide**, **Show**, **Disable**, **Enable**, **Toggle visible**, **Toggle enable**, or **Hide and clear**, see [Introduction](#introduction) for an explanation of each action.
+5. Under **Action** create an action for the rule by clicking on the **empty field** to add a form or form field, and then choose an option from the action drop-down list, choosing from **Hide**, **Show**, **Disable**, **Enable**, **Toggle visible**, **Toggle enable**, or **Hide and clear**, see [Introduction](#introduction) for an explanation of each action.
 
-6. For example choose **Hide** from the drop-down list.
+   ![Hide or disable example - Hide or show](/images/hide-example.jpg)
 
-7. Under Add otherwise action, select the field or component to be made visible.
+   For example in the image above, a **Feedback** field will be hidden, using **Hide**, based on a condition, when a field **Management decision** equals **Yes**.
 
-8. Choose Show from the drop down list.
+6. To add more actions, click on **Add**. At any time remove an action by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png) beside the name of the action.
 
-9. Click OK.
+7. LIke an 'if..else' statement you can add alternative/elsewise actions, based on different conditions by clicking on **Add otherwise action**.
 
-The result is that a field or component will be made visible/not visible depending on the condition that has been set.
+   ![Hide or show example](/images/hide-or-show-example.jpg)
 
-## Notes
+   In the example above, **Signature** and **Training materials** field will show and a **Feedback** field will hide, while a **Management decision** field has a value of **Yes**, otherwise the shown fields will hide, while the **Feedback** field shows. The result is a dynamic form that will reveal particular fields based on user input for the Management decision field. 
 
-It is not necessary to add a condition.  In this case the rule will be triggered automatically:  
+8. To remove the otherwise action(s) click on the **Remove otherwise action** fields.
+
+9. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
+
+10. If the rule is attached to field within a form, a notification will appear within the form design, for example the field **Management decision** as shown in the image below.
+
+    ![Rule on a form field](/images/rule-in-form-example.jpg)
+
+11. When you click on the field or form that has the rule attached, the rule will appear in the right-hand pane under **Rules**. 
+
+    ![Hide or disable rule example](/images/hide-or-show-rule.jpg)
+
+    The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.
+
+
+
+### Editing, deleting or duplicating rules
+
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
+
+1. To **disable** a rule click the slider across beside the rule name. 
+
+![Disable a rule](/images/disable-rule.jpg)
+
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
+
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
+
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+
+
+
+### User tip ![Target icon](/images/05.png) ###
+
+Note, it is not necessary to add a condition to the rule.  In this case the rule will be triggered automatically:  
 - if the rule is applied to a *field*, then the rule will be triggered when the user enters a value in that field.  
 - if the rule is applied to a *button*, then the rule will be triggered when the user clicks the button.
 - if the rule is applied to a *form*, then the rule will be triggered when the form is submitted.
-- if the rule is applied to a *process*, then the rule will be triggered on load.
+- if the rule is applied to a *process*, then the rule will be triggered on load, that is when the process is initiated.
 
-If a rule causes a mandatory field (i.e. *Required* is ticked in the Field Properties) to be hidden or disabled, this will not stop the form from being submitted.
+If a rule causes a mandatory field to be hidden or disabled, this will not stop the form from being submitted.
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+To find out more about other workflow rules go to [Workflow](/docs/platform/rules/workflow/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).
+
+
 
 
 
