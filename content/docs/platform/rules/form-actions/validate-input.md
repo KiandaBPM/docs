@@ -20,7 +20,7 @@ You can add this rule:
 
 ### How to use
 
-With the given example above, we will make a validation check on a **Date of Incident** field to see if the entered date is a past date.
+To showcase the **Validate input** rule in action, we will make a validation check on a **Date of Incident** field to see if the entered date is a past date.
 
 To implement the rule:
 
@@ -56,4 +56,4 @@ From the example mentioned above, we created a simple **Incident Form** in which
 
 ### What's next ![Idea icon](/images/18.png) 
 
-To learn more on **Form Action** rules go to [Field Display mode](/docs/platform/rules/form-actions/field-display-mode/).
+To learn the next rule from the **Form Action** set of rules, go to [Field Display mode](/docs/platform/rules/form-actions/field-display-mode/).
