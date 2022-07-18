@@ -45,9 +45,9 @@ To dynamically *hide* a field or component:
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. Under **Action** create an action for the rule by clicking on the empty field to add a form or form field, and then choose an option from the action dropdown list, choosing from **Hide**, **Show**, **Disable**, **Enable**, **Toggle visible**, **Toggle enable**, or **Hide and clear**, see [Introduction](#introduction) for an explanation of each action.
+5. Under **Action** create an action for the rule by clicking on the empty field to add a form or form field, and then choose an option from the action drop-down list, choosing from **Hide**, **Show**, **Disable**, **Enable**, **Toggle visible**, **Toggle enable**, or **Hide and clear**, see [Introduction](#introduction) for an explanation of each action.
 
-6. For example choose **Hide** from the drop down list.
+6. For example choose **Hide** from the drop-down list.
 
 7. Under Add otherwise action, select the field or component to be made visible.
 
