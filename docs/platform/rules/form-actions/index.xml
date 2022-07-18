@@ -8,7 +8,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>With the given example above, we will make a validation check on a &lt;strong>Date of Incident&lt;/strong> field to see if the entered date is a past date.&lt;/p>
+&lt;p>To showcase the &lt;strong>Validate input&lt;/strong> rule in action, we will make a validation check on a &lt;strong>Date of Incident&lt;/strong> field to see if the entered date is a past date.&lt;/p>
 &lt;p>To implement the rule:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -47,7 +47,7 @@
 &lt;/ol>
 &lt;p>From the example mentioned above, we created a simple &lt;strong>Incident Form&lt;/strong> in which a user needs to select a date of an incident. The image below displays the &lt;strong>Validate input&lt;/strong> rule in action, where the date selected &lt;strong>Is After Today&lt;/strong> therefore the condition is valid and an error message is displayed.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To learn more on &lt;strong>Form Action&lt;/strong> rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/">Field Display mode&lt;/a>.&lt;/p></description></item><item><title>Docs: Field Display mode</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</guid><description>
+&lt;p>To learn the next rule from the &lt;strong>Form Action&lt;/strong> set of rules, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/">Field Display mode&lt;/a>.&lt;/p></description></item><item><title>Docs: Field Display mode</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</guid><description>
 &lt;p>The &lt;strong>Field display mode&lt;/strong> rule temporarily changes the display mode of a field or form creating a temporary form or field display mode. This rule forces the display mode to override the automatically calculated display mode of fields and forms.
 &lt;strong>Note&lt;/strong>: Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
@@ -58,31 +58,50 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;p>To showcase the &lt;strong>Field display mode&lt;/strong> in action, we will change the display mode of a user picker field to &lt;strong>Read mode&lt;/strong> after a user has been chosen. To learn more about &lt;strong>User picker&lt;/strong> field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/p>
 &lt;p>To implement the rule:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select a field to attach the rule to.&lt;/p>
+&lt;p>Select a field to attach the rule to so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-form-actions-select-employee.jpg" alt="Field selection">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Field display mode&lt;/strong>.&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane to expand the Rules menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Form actions&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Field display mode&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-rule-menu-field-display-mode.jpg" alt="Validate input selection">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under &lt;strong>Field or form&lt;/strong> select a field or form to change the display mode.&lt;/p>
+&lt;p>The Field display mode rule does not need conditions to work. If &lt;strong>No&lt;/strong> conditions will be applied, the rule will take affect on from load. In this example we will add a condition. Click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit Conditions button"> To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Choose from &lt;strong>Edit mode&lt;/strong> or &lt;strong>Read mode&lt;/strong>.&lt;/p>
+&lt;p>Select the field you want the condition to be applied to. In this example it is the &lt;strong>Employee&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select type of condition to be performed. In this example it is the &lt;strong>Not blank&lt;/strong> condition. Here we are checking whether the &lt;strong>Employee&lt;/strong> field is &lt;strong>Not blank&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/example-condition-field-display-mode.jpg" alt="Edit conditions">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Field or form&lt;/strong> option, select the field you want the &lt;strong>Field display mode&lt;/strong> rule to affect. In this example it is the &lt;strong>Employee&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Choose from &lt;strong>Edit mode&lt;/strong> or &lt;strong>Read mode&lt;/strong>. In this example we choose &lt;strong>Read mode&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add&lt;/strong> to add as many fields or forms as needed.&lt;/p>
 &lt;/li>
-&lt;li>
-&lt;p>Conditions can be set for these actions, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
-&lt;/li>
 &lt;/ol>
-&lt;h6 id="heading">&lt;/h6></description></item><item><title>Docs: Submit form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</guid><description>
+&lt;p>The video below demonstrates the &lt;strong>Field Display mode&lt;/strong> rule in action, where the &lt;strong>Employee&lt;/strong> field becomes &lt;strong>Read mode&lt;/strong> after a user is selected. This is achieved by applying a condition to the &lt;strong>Employee&lt;/strong> field. The condition checks if the &lt;strong>Employee&lt;/strong> field is &lt;strong>Not blank&lt;/strong>, therefore when a user has been selected this condition is valid, activating the &lt;strong>Field Display mode&lt;/strong> rule.&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/field-display-mode/field-display-mode.gif"/>
+&lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To learn the next rule from the &lt;strong>Form Action&lt;/strong> set of rules, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/">Submit form&lt;/a>.&lt;/p></description></item><item><title>Docs: Submit form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</guid><description>
 &lt;p>The &lt;strong>Submit form&lt;/strong> rule marks the current form as complete and makes it read-only. By default on submit, the next form is activated.&lt;/p>
 &lt;p>This rule is automatically attached to &lt;strong>Submit&lt;/strong> button which is added to all forms by default.&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
