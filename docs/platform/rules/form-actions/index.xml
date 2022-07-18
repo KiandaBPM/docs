@@ -1,4 +1,150 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Form action rules</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/</link><description>Recent content in Form action rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/form-actions/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Close form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/close-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/close-form/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Form action rules</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/</link><description>Recent content in Form action rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/form-actions/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Validate input</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/</guid><description>
+&lt;p>The &lt;strong>Validate input&lt;/strong> provides the ability to perform flexible data validation and prevents incorrect data submission. For example, this could be performed on a &lt;strong>Date of Incident&lt;/strong> field, where the validation checks that the date entered is a past date.&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;p>With the given example above, we will make a validation check on a &lt;strong>Date of Incident&lt;/strong> field to see if the entered date is a past date.&lt;/p>
+&lt;p>To implement the rule:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select a field to attach the rule to so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-form-actions-select-field.jpg" alt="Field selection">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane to expand the Rules menu.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>Form actions&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Validate input&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-rule-menu-validate-input.jpg" alt="Validate input selection">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Validate input&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit Conditions button"> to add a validation condition. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the field you want to validate. In this example it is the &lt;strong>Date of Incident&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select type of validation to be performed. In this example it is the &lt;strong>Is After Today&lt;/strong> validation.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-condition-after-today.jpg" alt="Validate input selection">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Validate input&lt;/strong> dialog box, In the &lt;strong>Error message to display when rule conditions above apply&lt;/strong> text box, type in the error message you want to be displayed if validation condition apply.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select a form or field to &lt;strong>Trigger rules if validation condition apply&lt;/strong> so that rules attached to that particular form or field are initiated if the condition(s) set in step 4 apply.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Field Display mode</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</guid><description>
+&lt;p>The &lt;strong>Field display mode&lt;/strong> rule temporarily changes the display mode of a field or form creating a temporary form or field display mode. This rule forces the display mode to override the automatically calculated display mode of fields and forms.
+&lt;strong>Note&lt;/strong>: Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;p>To implement the rule:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select a field to attach the rule to.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Field display mode&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Field or form&lt;/strong> select a field or form to change the display mode.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Choose from &lt;strong>Edit mode&lt;/strong> or &lt;strong>Read mode&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add&lt;/strong> to add as many fields or forms as needed.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Conditions can be set for these actions, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h6 id="heading">&lt;/h6></description></item><item><title>Docs: Submit form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</guid><description>
+&lt;p>The &lt;strong>Submit form&lt;/strong> rule marks the current form as complete and makes it read-only. By default on submit, the next form is activated.&lt;/p>
+&lt;p>This rule is automatically attached to &lt;strong>Submit&lt;/strong> button which is added to all forms by default.&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>This action is used to submit a form that you are working on, that is the &amp;lsquo;current&amp;rsquo; form.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;p>To implement the rule:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select a field to attach the rule to.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Submit form&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Submit form&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under Action, &lt;strong>Set process status&lt;/strong> choose from &lt;strong>Auto (Current form title)&lt;/strong> or &lt;strong>Manual&lt;/strong>. If you choose &lt;strong>Manual&lt;/strong> then type in the desired text to appear to users in the &lt;strong>Status text after submit&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can set conditions for the action to happen, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Save form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/save-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/save-form/</guid><description>
+&lt;p>The &lt;strong>Save form&lt;/strong> rule saves changes made in a form. This is particularly useful if a user needs to complete a long form, or is offsite, so that initial changes to the form are saved and then all changes can be submitted later on. The rule commits a record in the server.&lt;/p>
+&lt;p>This rule is automatically attached to &lt;strong>Submit&lt;/strong> and &lt;strong>Save&lt;/strong> buttons which are added to forms by default.&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>Use this rule to ensure the state of the application is stored with data.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;p>To implement the rule:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select a field to attach the rule to.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Save form&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Save form&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under Action, check the box for &lt;strong>Perform background save&lt;/strong> if you want to allow background upload of forms or chunked upload of forms.&lt;/p>
+&lt;p>For example if you are offsite or don&amp;rsquo;t have a good internet connection and need to upload files to forms, then it is useful to allow &amp;lsquo;chunked&amp;rsquo; and &amp;lsquo;background upload&amp;rsquo; so that the file can be transmitted in resumable chunks. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a> for more information on file upload.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under Action, you can also check the box for &lt;strong>Perform partial save&lt;/strong> to allow partial save of a form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can also create a notification to display to users when a save has been successful by typing a message in the &lt;strong>Save notification&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can create conditions for the actions to happen, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Close form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/close-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/close-form/</guid><description>
 &lt;p>The &lt;strong>Close form&lt;/strong> rule closes the form to allow users to navigate to another resource. This rule is automatically attached to &lt;strong>Close&lt;/strong>, &lt;strong>Submit&lt;/strong> and &lt;strong>Save&lt;/strong> buttons which are added to forms by default.&lt;/p>
 &lt;h6 id="heading">&lt;/h6>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
@@ -59,138 +205,5 @@
 &lt;/li>
 &lt;li>
 &lt;p>There is no action on the Delete form rule, only Conditions that can be set to Delete a form, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
-&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Field Display mode</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</guid><description>
-&lt;p>The &lt;strong>Field display mode&lt;/strong> rule temporarily changes the display mode of a field or form creating a temporary form or field display mode. This rule forces the display mode to override the automatically calculated display mode of fields and forms.
-&lt;strong>Note&lt;/strong>: Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>You can add this rule:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>To implement the rule:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Select a field to attach the rule to.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Field display mode&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under &lt;strong>Field or form&lt;/strong> select a field or form to change the display mode.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Choose from &lt;strong>Edit mode&lt;/strong> or &lt;strong>Read mode&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add&lt;/strong> to add as many fields or forms as needed.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Conditions can be set for these actions, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h6 id="heading">&lt;/h6></description></item><item><title>Docs: Save form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/save-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/save-form/</guid><description>
-&lt;p>The &lt;strong>Save form&lt;/strong> rule saves changes made in a form. This is particularly useful if a user needs to complete a long form, or is offsite, so that initial changes to the form are saved and then all changes can be submitted later on. The rule commits a record in the server.&lt;/p>
-&lt;p>This rule is automatically attached to &lt;strong>Submit&lt;/strong> and &lt;strong>Save&lt;/strong> buttons which are added to forms by default.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>Use this rule to ensure the state of the application is stored with data.&lt;/p>
-&lt;p>You can add this rule:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>To implement the rule:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Select a field to attach the rule to.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Save form&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule - Save form&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under Action, check the box for &lt;strong>Perform background save&lt;/strong> if you want to allow background upload of forms or chunked upload of forms.&lt;/p>
-&lt;p>For example if you are offsite or don&amp;rsquo;t have a good internet connection and need to upload files to forms, then it is useful to allow &amp;lsquo;chunked&amp;rsquo; and &amp;lsquo;background upload&amp;rsquo; so that the file can be transmitted in resumable chunks. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a> for more information on file upload.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under Action, you can also check the box for &lt;strong>Perform partial save&lt;/strong> to allow partial save of a form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You can also create a notification to display to users when a save has been successful by typing a message in the &lt;strong>Save notification&lt;/strong> field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You can create conditions for the actions to happen, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
-&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Submit form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</guid><description>
-&lt;p>The &lt;strong>Submit form&lt;/strong> rule marks the current form as complete and makes it read-only. By default on submit, the next form is activated.&lt;/p>
-&lt;p>This rule is automatically attached to &lt;strong>Submit&lt;/strong> button which is added to all forms by default.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>This action is used to submit a form that you are working on, that is the &amp;lsquo;current&amp;rsquo; form.&lt;/p>
-&lt;p>You can add this rule:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>To implement the rule:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Select a field to attach the rule to.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Submit form&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule - Submit form&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under Action, &lt;strong>Set process status&lt;/strong> choose from &lt;strong>Auto (Current form title)&lt;/strong> or &lt;strong>Manual&lt;/strong>. If you choose &lt;strong>Manual&lt;/strong> then type in the desired text to appear to users in the &lt;strong>Status text after submit&lt;/strong> field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You can set conditions for the action to happen, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
-&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Validate input</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/</guid><description>
-&lt;p>The &lt;strong>Validate input&lt;/strong> provides the ability to perform flexible data validation and prevents incorrect data submission. This could be performed for example on a date of birth field, where the validation checks that the person submitting a form is over 18 years of age.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>You can add this rule:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>To implement the rule:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Select a field to attach the rule to.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Validate input&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule - Validate input&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Create validation conditions for the action to happen, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under Action, type in a message for the user under &lt;strong>Error message to display when rule conditions above apply&lt;/strong> if you want to allow background upload of forms or chunked upload of forms.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under Action, you can also check the box for &lt;strong>Perform partial save&lt;/strong> to allow partial save of a form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select a form or field to &lt;strong>Trigger rules if validation condition apply&lt;/strong> so that rules attached to that particular form or field are initiated if the condition(s) set in step 4 apply.&lt;/p>
 &lt;/li>
 &lt;/ol></description></item></channel></rss>
