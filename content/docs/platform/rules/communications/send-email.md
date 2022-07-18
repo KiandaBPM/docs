@@ -31,7 +31,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
 ## How to get started ##
 
-1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Pen button,  **Pen** button ![Pen button](/images/penicon.png). For example if the form Training Approval has a Submit button within a form and you want to attach the rule to Send an email when the form is submitted, then you need to click on the form and the Submit button in that form.
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button,  **Pen** button ![Pen button](/images/penicon.png). For example if the form Training Approval has a Submit button within a form and you want to attach the rule to Send an email when the form is submitted, then you need to click on the form and the Submit button in that form.
 
    ![Form and button edit mode](/images/formvsbutton.png)
 
