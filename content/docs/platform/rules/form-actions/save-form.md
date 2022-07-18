@@ -1,5 +1,6 @@
 ---
 title: "Save form"
+weight: 4
 ---
 
 The **Save form** rule saves changes made in a form. This is particularly useful if a user needs to complete a long form, or is offsite, so that initial changes to the form are saved and then all changes can be submitted later on. The rule commits a record in the server. 

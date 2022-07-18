@@ -1,5 +1,6 @@
 ---
 title: "Field Display mode"
+weight: 2
 ---
 
 The **Field display mode** rule temporarily changes the display mode of a field or form creating a temporary form or field display mode. This rule forces the display mode to override the automatically calculated display mode of fields and forms.		

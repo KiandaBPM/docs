@@ -1,10 +1,12 @@
 ---
 title: "Validate input"
+weight: 1
+typora-root-url: ..\..\..\..\..\static
 ---
 
 
 
-The **Validate input** provides the ability to perform flexible data validation and prevents incorrect data submission. This could be performed for example on a date of birth field, where the validation checks that the person submitting a form is over 18 years of age. 
+The **Validate input** provides the ability to perform flexible data validation and prevents incorrect data submission. For example, this could be performed on a **Date of Incident** field, where the validation checks that the date entered is a past date. 
 
 ### When to use
 
@@ -18,13 +20,32 @@ You can add this rule:
 
 ### How to use
 
+With the given example above, we will make a validation check on a **Date of Incident** field to see if the entered date is a past date.
+
 To implement the rule:
 
-1. Select a field to attach the rule to.
-2. Click on **Add a rule** > **Form actions** > **Validate input**. 
-3. In the **Edit rule - Validate input** dialog box, give the rule a **Title**. 
-4. Create validation conditions for the action to happen, see [Conditions](/docs/platform/rules/general/add-conditions/) for more information.
-5. Under Action, type in a message for the user under **Error message to display when rule conditions above apply** if you want to allow background upload of forms or chunked upload of forms. 
+1. Select a field to attach the rule to so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
 
-6. Under Action, you can also check the box for **Perform partial save** to allow partial save of a form. 
-7. Select a form or field to **Trigger rules if validation condition apply** so that rules attached to that particular form or field are initiated if the condition(s) set in step 4 apply.
+   ![Field selection](/images/examples-form-actions-select-field.jpg)
+
+2. Click on **Add a rule** in the left-hand pane to expand the Rules menu.
+
+3. Select **Form actions** to view the range of Input controls.
+
+4. Click on **Validate input**. 
+
+   ![Validate input selection](/images/add-rule-menu-validate-input.jpg)
+
+5. In the **Edit rule - Validate input** dialog box, give the rule a **Title**. 
+
+6. Click on **Edit conditions** ![Edit Conditions button](/images/editconditions.png) to add a validation condition. To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
+
+7. Select the field you want to validate. In this example it is the **Date of Incident** field.
+
+8. Select type of validation to be performed. In this example it is the **Is After Today** validation.
+
+   ![Validate input selection](/images/examples-condition-after-today.jpg)
+
+9. In the **Edit rule - Validate input** dialog box, In the **Error message to display when rule conditions above apply** text box, type in the error message you want to be displayed if validation condition apply.
+
+10. Select a form or field to **Trigger rules if validation condition apply** so that rules attached to that particular form or field are initiated if the condition(s) set in step 4 apply.
