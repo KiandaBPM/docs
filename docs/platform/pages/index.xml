@@ -901,16 +901,15 @@
 &lt;p>If you select to link to an &lt;strong>External&lt;/strong> website, two options display below it - &lt;strong>URL&lt;/strong> and &amp;lsquo;&lt;strong>Open in new window?&lt;/strong>&amp;rsquo;:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-external.jpg" alt="Dashboard Link widget linking to an External website">&lt;/p>
 &lt;ol>
-&lt;li>
-&lt;p>Insert the URL you want the user to be brought to when they click on the Link widget.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select the &amp;lsquo;&lt;strong>Open in new window?&lt;/strong>&amp;rsquo; checkbox if you want the external website to open in a new window.&lt;/p>
-&lt;/li>
+&lt;li>Insert the URL you want the user to be brought to when they click on the Link widget.&lt;/li>
+&lt;li>Select the &amp;lsquo;&lt;strong>Open in new window?&lt;/strong>&amp;rsquo; checkbox if you want the external website to open in a new window.&lt;/li>
 &lt;/ol>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;/ul>
+&lt;h5 id="heading">&lt;/h5>
+&lt;ul>
 &lt;li>
 &lt;p>&lt;strong>QueryString parameters&lt;/strong> - Complete this field if you want to pass a query string when the user clicks on the link. For example, you may want the current user&amp;rsquo;s email address to be pre-populated in a form you are linking to.&lt;/p>
 &lt;ul>

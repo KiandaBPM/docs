@@ -239,20 +239,19 @@
 &lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Close form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/close-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/close-form/</guid><description>
 &lt;p>The &lt;strong>Close form&lt;/strong> rule closes the form to allow users to navigate to another resource. This rule is automatically attached to &lt;strong>Close&lt;/strong>, &lt;strong>Submit&lt;/strong> and &lt;strong>Save&lt;/strong> buttons which are added to forms by default.&lt;/p>
-&lt;h6 id="heading">&lt;/h6>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>Together with the &lt;strong>Submit&lt;/strong>, and &lt;strong>Save&lt;/strong> rules, the &lt;strong>Close form&lt;/strong> rule forms the shutdown procedures for forms and should not be deleted from &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> or Close buttons.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Together with the &lt;strong>Submit&lt;/strong>, and &lt;strong>Save&lt;/strong> rules, the &lt;strong>Close form&lt;/strong> rule forms the shutdown procedures for forms and should not be deleted from &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> or &lt;strong>Close&lt;/strong> buttons.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>By default all forms come with a Close button, and therefore a &lt;strong>Close form&lt;/strong> rule however, you can set a close rule yourself, and redirect the user anywhere with the Close rule. To do so:&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>By default all forms come with a Close button, and therefore a &lt;strong>Close form&lt;/strong> rule however, you can set a close rule yourself, and redirect the user anywhere. To do so:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select a field to attach the rule to.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="http://localhost:1313/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Close form&lt;/strong>.&lt;/p>
@@ -261,19 +260,40 @@
 &lt;p>In the &lt;strong>Edit rule - Close form&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Select the action you want to execute after closing the form.&lt;/p>
+&lt;p>In the &lt;strong>On form close navigate to&lt;/strong> option, you can select from four different actions.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Auto&lt;/strong> - This option will redirect the user to the last location they were before opening the form.&lt;/li>
+&lt;li>&lt;strong>Return to a dashboard&lt;/strong> - This option will redirect the user to a dashboard of choice.&lt;/li>
+&lt;li>&lt;strong>Return to URL&lt;/strong> - This option will redirect the user to any URL specified.&lt;/li>
+&lt;li>&lt;strong>Go to process&lt;/strong> - This option will redirect you to a process specified in the &lt;strong>Please indicate the process or instance ID&lt;/strong> text box.&lt;/li>
+&lt;/ul>
+&lt;h4 id="how-the-go-to-process-option-works">How the Go to process option works&lt;/h4>
+&lt;p>With this option selected, you can now enter an ID of a process you want the user to be navigated to. There is also a &lt;strong>Is new instance?&lt;/strong> radio list available with a &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong> options. If you choose:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Yes&lt;/strong> - In the &lt;strong>Please indicate the process or instance ID&lt;/strong> text box, you &lt;strong>MUST&lt;/strong> specify a process ID which is the &lt;strong>ID (Unique)&lt;/strong> of a process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-process-id.jpg" alt="Edit process - ID field">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Auto will redirect the user to the last location they were before opening the form.&lt;/p>
+&lt;p>&lt;strong>No&lt;/strong> - In the &lt;strong>Please indicate the process or instance ID&lt;/strong> text box, you &lt;strong>MUST&lt;/strong> specify an instance ID of a process. The instance ID is a unique identifier for a process instance. For example an &lt;strong>Incident&lt;/strong> process may have more than one instances and each of those instances contains a unique ID as shown in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-close-instance-id.jpg" alt="Edit process - ID field">&lt;/p>
 &lt;/li>
-&lt;li>
-&lt;p>Return to a dashboard will redirect the user to a dashboard of your choice&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Return to URL will redirect the user to any URL specified&lt;/p>
+&lt;/ul>
+&lt;p>Query string parameters are used to populate form or fields when a given form is loaded. To learn more about query parameters go to &lt;a href="https://docs.kianda.com/docs/platform/pages/link/#heading">Query parameters&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;strong>Note&lt;/strong>: You cannot use Close form and Go to form in the same button.&lt;/p></description></item><item><title>Docs: Delete form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/delete-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/delete-form/</guid><description>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;p>Note, You cannot use Close form and Go to form in the same button.&lt;/p>
+&lt;p>Note, it is not necessary to add a condition to the rule. In this case the rule will be triggered automatically:&lt;/p>
+&lt;ul>
+&lt;li>if the rule is applied to a &lt;em>field&lt;/em>, then the rule will be triggered when the user enters a value in that field.&lt;/li>
+&lt;li>if the rule is applied to a &lt;em>button&lt;/em>, then the rule will be triggered when the user clicks the button.&lt;/li>
+&lt;li>if the rule is applied to a &lt;em>form&lt;/em>, then the rule will be triggered when the form is submitted.&lt;/li>
+&lt;li>if the rule is applied to a &lt;em>process&lt;/em>, then the rule will be triggered on load, that is when the process is initiated.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Delete form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/delete-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/delete-form/</guid><description>
 &lt;p>The &lt;strong>Delete form&lt;/strong> rule marks a process / record to be deleted.&lt;/p>
 &lt;p>This rule is automatically attached to &lt;strong>Close&lt;/strong>, &lt;strong>Submit&lt;/strong> and &lt;strong>Save&lt;/strong> buttons which are added to forms by default.&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
