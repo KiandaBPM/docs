@@ -25,7 +25,7 @@
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To dynamically &lt;em>hide&lt;/em> a field or component:&lt;/p>
+&lt;p>The following steps illustrate a scenario to &lt;strong>hide&lt;/strong> and &lt;strong>show&lt;/strong> fields. The same steps can be applied to enable, disable, toggle enable and so on. To dynamically hide a field:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
@@ -41,7 +41,7 @@
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong> create an action for the rule by clicking on the &lt;strong>empty field&lt;/strong> to add a form or form field, and then choose an option from the action drop-down list, choosing from &lt;strong>Hide&lt;/strong>, &lt;strong>Show&lt;/strong>, &lt;strong>Disable&lt;/strong>, &lt;strong>Enable&lt;/strong>, &lt;strong>Toggle visible&lt;/strong>, &lt;strong>Toggle enable&lt;/strong>, or &lt;strong>Hide and clear&lt;/strong>, see &lt;a href="#introduction">Introduction&lt;/a> for an explanation of each action.&lt;/p>
+&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by clicking on the &lt;strong>empty field&lt;/strong> to add a form or form field, and then choose an option from the action drop-down list, choosing from &lt;strong>Hide&lt;/strong>, &lt;strong>Show&lt;/strong>, &lt;strong>Disable&lt;/strong>, &lt;strong>Enable&lt;/strong>, &lt;strong>Toggle visible&lt;/strong>, &lt;strong>Toggle enable&lt;/strong>, or &lt;strong>Hide and clear&lt;/strong>, see &lt;a href="#introduction">Introduction&lt;/a> for an explanation of each action.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/hide-example.jpg" alt="Hide or disable example - Hide or show">&lt;/p>
 &lt;p>For example in the image above, a &lt;strong>Feedback&lt;/strong> field will be hidden, using &lt;strong>Hide&lt;/strong>, based on a condition, when a field &lt;strong>Management decision&lt;/strong> equals &lt;strong>Yes&lt;/strong>.&lt;/p>
 &lt;/li>
@@ -49,7 +49,7 @@
 &lt;p>To add more actions, click on &lt;strong>Add&lt;/strong>. At any time remove an action by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> beside the name of the action.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>LIke an &amp;lsquo;if..else&amp;rsquo; statement you can add alternative/elsewise actions, based on different conditions by clicking on &lt;strong>Add otherwise action&lt;/strong>.&lt;/p>
+&lt;p>Like an &amp;lsquo;if..else&amp;rsquo; statement you can add alternative/elsewise actions, based on different conditions by clicking on &lt;strong>Add otherwise action&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/hide-or-show-example.jpg" alt="Hide or show example">&lt;/p>
 &lt;p>In the example above, &lt;strong>Signature&lt;/strong> and &lt;strong>Training materials&lt;/strong> field will show and a &lt;strong>Feedback&lt;/strong> field will hide, while a &lt;strong>Management decision&lt;/strong> field has a value of &lt;strong>Yes&lt;/strong>, otherwise the shown fields will hide, while the &lt;strong>Feedback&lt;/strong> field shows. The result is a dynamic form that will reveal particular fields based on user input for the Management decision field.&lt;/p>
 &lt;/li>
@@ -60,7 +60,7 @@
 &lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If the rule is attached to field within a form, a notification will appear within the form design, for example the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
+&lt;p>If the rule is attached to a field within a form, a notification will appear within the form design, for example the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-in-form-example.jpg" alt="Rule on a form field">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -77,7 +77,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
 &lt;ol start="2">
 &lt;li>
-&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
@@ -98,8 +98,23 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Assign form</title><link>https://docs.kianda.com/docs/platform/rules/workflow/assign-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/assign-form/</guid><description>
-&lt;p>This rule is used to assign a form to a user or to a group of users. You can override the existing users or add to the existing users.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/Assign.png" alt="Assign rule dialog box">&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Assign form&lt;/strong> rule is used to assign a form to a user or to a group of users, making them the &lt;strong>form owners&lt;/strong>. This means that when a process instance is created, a form owner can &lt;strong>edit&lt;/strong> the form in the process instance, for example a manager who needs to add comments on an appraisal form that has been submitted by an employee.&lt;/p>
+&lt;p>You can use this rule to override the existing form owners, or to add users or groups to the list of existing form owners. When assigning forms you can choose from:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Any user&lt;/strong> - choose from any user, groups or partners defined in the system&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Current user&lt;/strong> - make the current form user, the form owner&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Defined in a user field&lt;/strong> - use a selected user/group/partner chosen in a user picker field&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form owner(s)&lt;/strong> - existing form owners as defined in the form configuration&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -107,20 +122,87 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h2 id="how-to-use">How to use&lt;/h2>
-&lt;p>To assign a form to a user:&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To dynamically assign a form to a user:&lt;/p>
 &lt;ol>
-&lt;li>Select Controls &amp;gt; Input &amp;gt; User picker to add a field to store the user.&lt;/li>
-&lt;li>Click on a button e.g. the Submit button.&lt;/li>
-&lt;li>Select Add a rule &amp;gt; Workflow &amp;gt; Assign form.&lt;/li>
-&lt;li>Under Action, select a form. You can select more forms by clicking the plus icon.&lt;/li>
-&lt;li>For Assign to, select Defined in a user field. Then select the User picker field created earlier.&lt;/li>
-&lt;li>Set Existing user(s) to Override to make the selected user the only user.&lt;/li>
-&lt;li>Click OK.&lt;/li>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Assign form&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Assign form&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/assign-rule.jpg" alt="Edit rule - Assign form dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Action&lt;/strong> one or more actions for the rule by filling out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select form&lt;/strong> - click on the field and select a form from the process. Click on the &lt;strong>Plus/Add&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-plus-action.jpg" alt="Add/Plus button">to add more forms to assign. If you change your mind and want to delete a form, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Assign to&lt;/strong> - choose from the radio buttons:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details.&lt;/li>
+&lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.&lt;/li>
+&lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them.&lt;/li>
+&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Depending on the option chosen for &lt;strong>Assign to&lt;/strong>, different fields will display. For example if &lt;strong>Any user&lt;/strong> is chosen, then a &lt;strong>Select user(s)&lt;/strong> field appears as shown in the image above. If &lt;strong>Defined in a user field&lt;/strong> or &lt;strong>Form owner(s)&lt;/strong> is chosen then a &lt;strong>Select form field&lt;/strong> appears prompting you to select a user picker field for the former, and a form with form owners for the latter.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/assign-form-select-field.jpg" alt="Select form field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Existing user(s)&lt;/strong> - choose from &lt;strong>Override&lt;/strong> or &lt;strong>Append&lt;/strong> where &lt;strong>Override&lt;/strong> means that this rule will override form ownership, making those referenced in the &lt;strong>Edit rule dialog&lt;/strong> box**, the form owners. &lt;strong>Append&lt;/strong> means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the &lt;strong>Edit rule dialog&lt;/strong> box.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If the rule is attached to field within a form, a notification will appear within the form design, for example the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-in-form-example.jpg" alt="Rule on a form field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you click on the field or form that has the rule attached, the rule will appear in the right-hand pane under &lt;strong>Rules&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/hide-or-show-rule.jpg" alt="Hide or disable rule example">&lt;/p>
+&lt;p>The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>sdfsf&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select Controls &amp;gt; Input &amp;gt; User picker to add a field to store the user.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on a button e.g. the Submit button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select Add a rule &amp;gt; Workflow &amp;gt; Assign form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under Action, select a form. You can select more forms by clicking the plus icon.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For Assign to, select Defined in a user field. Then select the User picker field created earlier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Set Existing user(s) to Override to make the selected user the only user.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click OK.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h2 id="notes">Notes&lt;/h2>
 &lt;p>This rule can be used multiple times in sequence: typically the first rule overrides the existing users and the following rule(s) appends users.&lt;/p>
-&lt;p>To view the default owners for the form, go to Edit form in the Designer.&lt;/p></description></item><item><title>Docs: Go to form</title><link>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</guid><description>
+&lt;p>To view the default owners for the form, go to Edit form in the Designer.&lt;/p>
+&lt;p>A form renders in edit mode if 1) the user is member or the owner of the form and 2) the form is the current form 3) the form is not submitted or completed state. (The Go to form rule can reset the submitted state of a form)&lt;/p></description></item><item><title>Docs: Go to form</title><link>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</guid><description>
 &lt;p>This rule is used to control how a user moves between forms. Normally control passes to the next form and the user is not allowed to go back to the previous form. The Go to form rule allows you to redirect the user to any form. The user can then navigate back and forth between those forms.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/Gotoform.png" alt="Go to form rule dialog box">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>

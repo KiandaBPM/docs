@@ -785,7 +785,7 @@ The Safety Team
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To dynamically &lt;em>hide&lt;/em> a field or component:&lt;/p>
+&lt;p>The following steps illustrate a scenario to &lt;strong>hide&lt;/strong> and &lt;strong>show&lt;/strong> fields. The same steps can be applied to enable, disable, toggle enable and so on. To dynamically hide a field:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
@@ -801,7 +801,7 @@ The Safety Team
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong> create an action for the rule by clicking on the &lt;strong>empty field&lt;/strong> to add a form or form field, and then choose an option from the action drop-down list, choosing from &lt;strong>Hide&lt;/strong>, &lt;strong>Show&lt;/strong>, &lt;strong>Disable&lt;/strong>, &lt;strong>Enable&lt;/strong>, &lt;strong>Toggle visible&lt;/strong>, &lt;strong>Toggle enable&lt;/strong>, or &lt;strong>Hide and clear&lt;/strong>, see &lt;a href="#introduction">Introduction&lt;/a> for an explanation of each action.&lt;/p>
+&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by clicking on the &lt;strong>empty field&lt;/strong> to add a form or form field, and then choose an option from the action drop-down list, choosing from &lt;strong>Hide&lt;/strong>, &lt;strong>Show&lt;/strong>, &lt;strong>Disable&lt;/strong>, &lt;strong>Enable&lt;/strong>, &lt;strong>Toggle visible&lt;/strong>, &lt;strong>Toggle enable&lt;/strong>, or &lt;strong>Hide and clear&lt;/strong>, see &lt;a href="#introduction">Introduction&lt;/a> for an explanation of each action.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/hide-example.jpg" alt="Hide or disable example - Hide or show">&lt;/p>
 &lt;p>For example in the image above, a &lt;strong>Feedback&lt;/strong> field will be hidden, using &lt;strong>Hide&lt;/strong>, based on a condition, when a field &lt;strong>Management decision&lt;/strong> equals &lt;strong>Yes&lt;/strong>.&lt;/p>
 &lt;/li>
@@ -809,7 +809,7 @@ The Safety Team
 &lt;p>To add more actions, click on &lt;strong>Add&lt;/strong>. At any time remove an action by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> beside the name of the action.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>LIke an &amp;lsquo;if..else&amp;rsquo; statement you can add alternative/elsewise actions, based on different conditions by clicking on &lt;strong>Add otherwise action&lt;/strong>.&lt;/p>
+&lt;p>Like an &amp;lsquo;if..else&amp;rsquo; statement you can add alternative/elsewise actions, based on different conditions by clicking on &lt;strong>Add otherwise action&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/hide-or-show-example.jpg" alt="Hide or show example">&lt;/p>
 &lt;p>In the example above, &lt;strong>Signature&lt;/strong> and &lt;strong>Training materials&lt;/strong> field will show and a &lt;strong>Feedback&lt;/strong> field will hide, while a &lt;strong>Management decision&lt;/strong> field has a value of &lt;strong>Yes&lt;/strong>, otherwise the shown fields will hide, while the &lt;strong>Feedback&lt;/strong> field shows. The result is a dynamic form that will reveal particular fields based on user input for the Management decision field.&lt;/p>
 &lt;/li>
@@ -820,7 +820,7 @@ The Safety Team
 &lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If the rule is attached to field within a form, a notification will appear within the form design, for example the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
+&lt;p>If the rule is attached to a field within a form, a notification will appear within the form design, for example the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-in-form-example.jpg" alt="Rule on a form field">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -837,7 +837,7 @@ The Safety Team
 &lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
 &lt;ol start="2">
 &lt;li>
-&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
@@ -998,7 +998,112 @@ The Safety Team
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/process-level-security/">Process level security&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/sso/">Single Sign-On&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/data-residency/">Data residency&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Connecting to SharePoint lists and Libraries</title><link>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Assign form</title><link>https://docs.kianda.com/docs/platform/rules/workflow/assign-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/assign-form/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Assign form&lt;/strong> rule is used to assign a form to a user or to a group of users, making them the &lt;strong>form owners&lt;/strong>. This means that when a process instance is created, a form owner can &lt;strong>edit&lt;/strong> the form in the process instance, for example a manager who needs to add comments on an appraisal form that has been submitted by an employee.&lt;/p>
+&lt;p>You can use this rule to override the existing form owners, or to add users or groups to the list of existing form owners. When assigning forms you can choose from:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Any user&lt;/strong> - choose from any user, groups or partners defined in the system&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Current user&lt;/strong> - make the current form user, the form owner&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Defined in a user field&lt;/strong> - use a selected user/group/partner chosen in a user picker field&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form owner(s)&lt;/strong> - existing form owners as defined in the form configuration&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To dynamically assign a form to a user:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Assign form&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Assign form&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/assign-rule.jpg" alt="Edit rule - Assign form dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Action&lt;/strong> one or more actions for the rule by filling out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select form&lt;/strong> - click on the field and select a form from the process. Click on the &lt;strong>Plus/Add&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-plus-action.jpg" alt="Add/Plus button">to add more forms to assign. If you change your mind and want to delete a form, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Assign to&lt;/strong> - choose from the radio buttons:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details.&lt;/li>
+&lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.&lt;/li>
+&lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them.&lt;/li>
+&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Depending on the option chosen for &lt;strong>Assign to&lt;/strong>, different fields will display. For example if &lt;strong>Any user&lt;/strong> is chosen, then a &lt;strong>Select user(s)&lt;/strong> field appears as shown in the image above. If &lt;strong>Defined in a user field&lt;/strong> or &lt;strong>Form owner(s)&lt;/strong> is chosen then a &lt;strong>Select form field&lt;/strong> appears prompting you to select a user picker field for the former, and a form with form owners for the latter.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/assign-form-select-field.jpg" alt="Select form field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Existing user(s)&lt;/strong> - choose from &lt;strong>Override&lt;/strong> or &lt;strong>Append&lt;/strong> where &lt;strong>Override&lt;/strong> means that this rule will override form ownership, making those referenced in the &lt;strong>Edit rule dialog&lt;/strong> box**, the form owners. &lt;strong>Append&lt;/strong> means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the &lt;strong>Edit rule dialog&lt;/strong> box.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If the rule is attached to field within a form, a notification will appear within the form design, for example the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-in-form-example.jpg" alt="Rule on a form field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you click on the field or form that has the rule attached, the rule will appear in the right-hand pane under &lt;strong>Rules&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/hide-or-show-rule.jpg" alt="Hide or disable rule example">&lt;/p>
+&lt;p>The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>sdfsf&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select Controls &amp;gt; Input &amp;gt; User picker to add a field to store the user.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on a button e.g. the Submit button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select Add a rule &amp;gt; Workflow &amp;gt; Assign form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under Action, select a form. You can select more forms by clicking the plus icon.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For Assign to, select Defined in a user field. Then select the User picker field created earlier.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Set Existing user(s) to Override to make the selected user the only user.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click OK.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="notes">Notes&lt;/h2>
+&lt;p>This rule can be used multiple times in sequence: typically the first rule overrides the existing users and the following rule(s) appends users.&lt;/p>
+&lt;p>To view the default owners for the form, go to Edit form in the Designer.&lt;/p>
+&lt;p>A form renders in edit mode if 1) the user is member or the owner of the form and 2) the form is the current form 3) the form is not submitted or completed state. (The Go to form rule can reset the submitted state of a form)&lt;/p></description></item><item><title>Docs: Connecting to SharePoint lists and Libraries</title><link>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</guid><description>
 &lt;p>This video demonstrates how to connect to a datasource in SharePoint and use that information in a form list.&lt;/p>
 &lt;div style="padding:50.94% 0 0 0;position:relative;">&lt;iframe src="https://player.vimeo.com/video/677724364?h=cdfc835f25&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Connecting to SharePoint example">&lt;/iframe>&lt;/div>&lt;script src="https://player.vimeo.com/api/player.js">&lt;/script></description></item><item><title>Docs: Excel workbook add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
@@ -3805,47 +3910,4 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Single Sign On (SSO)</title><link>https://docs.kianda.com/docs/security/sso/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/sso/</guid><description>
-&lt;p>Single Sign-On (SSO) is an authentication process that allows a user to log in with a single ID to any of several related, yet independent, software systems. Single sign-on allows the user to log in one time and access services without re-entering authentication factors.&lt;/p>
-&lt;p>On Kianda, Single-Sign-On allows the user to login via Single Sign-On connector. This connector for example could be SharePoint, Office365 or Salesforce.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To enable Single-Sign-On, follow the steps below:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Login to Kianda with an &lt;strong>Administrator&lt;/strong> account.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>From the left-hand side pane, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Details&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Single Sign-On Details&lt;/strong> page, beside &lt;strong>Enable Single Sign-On&lt;/strong> click on &lt;strong>Yes&lt;/strong> to enable Single Sign-On. If Single-Sign-On is already enabled and if you wish to disable it, click on &lt;strong>No&lt;/strong> and then clear the cache memory and login to Kianda by entering your password first and then the username.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/single-sign-on.jpg" alt="Enable Single Sign-On">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Choose a &lt;strong>Single Sign-On Provider&lt;/strong> by choosing &lt;strong>Office 365&lt;/strong> or &lt;strong>SAML&lt;/strong>.&lt;/p>
-&lt;p>&lt;strong>Office 365&lt;/strong> allows Office enterprise users to Single Sign-On into their Office 365 account with a single username and password and from there to access web and Software as a Service (applications) like Kianda.&lt;/p>
-&lt;p>&lt;strong>Secure Assertion Markup Language (SAML) 2.0&lt;/strong> enables individuals to access numerous web applications using one set of login credentials. It works by passing authentication data between an identity provider (IdP) and a service provider such as Kianda.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>If you choose &lt;strong>Office 365&lt;/strong>, you must choose an &lt;strong>Office 365 Connector&lt;/strong> from a dropdown list. This will show Office 365 datasources already created in the &lt;strong>Data sources&lt;/strong> function under &lt;strong>Administration&lt;/strong>. Go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/office-365/">Office 365 data connector&lt;/a> to learn how to create a data source if one doesn&amp;rsquo;t exist.&lt;/p>
-&lt;p>​ &lt;img src="https://docs.kianda.com/images/office365-signon.jpg" alt="Office 365 data connector">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you choose &lt;strong>SAML 2.0&lt;/strong>, you must provide the &lt;strong>SAML 2.0 Target URL&lt;/strong>. This is the identify provider (Idp ) URL. You can also provide the &lt;strong>SAML 2.0 Token Signing Certificate&lt;/strong> &lt;strong>(.cer)&lt;/strong> by clicking on &lt;strong>Browse&lt;/strong> to navigate, find and add the cert, a .cer file to the details page.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/saml.jpg" alt="SAML options">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>For &lt;strong>Auto redirect to SSO&lt;/strong> choose from &lt;strong>No&lt;/strong> or &lt;strong>Yes&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> then users cannot login with their Kianda username and password directly, and are automatically redirected to the configured SSO provider for authentication.&lt;/p>
-&lt;ul>
-&lt;li>However if you have an external set of users, for example contractor who need access to Kianda, you can set a &lt;strong>SSO bypass group.&lt;/strong> You must define a group of users in advance, using the group creation option within the &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">&lt;strong>Users&lt;/strong>&lt;/a> function under &lt;strong>Administration&lt;/strong>. From here you can define a group of users that can login using Kianda&amp;rsquo;s username and password. Use this option for users that are external for the configured SSO provider, so they can go directly to the workspace login page to login.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>For the option &lt;strong>Default &amp;ldquo;Remember Me&amp;rdquo; to false&lt;/strong> choose from &lt;strong>No&lt;/strong> or &lt;strong>Yes&lt;/strong>, to remember the login credentials.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When you have completed your edits, click on &lt;strong>Save Changes&lt;/strong> or click on the &lt;strong>Back&lt;/strong> button at any time to exit the page without saving.&lt;/p>
-&lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
