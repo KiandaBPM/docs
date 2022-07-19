@@ -33,7 +33,7 @@ You can add this rule:
 
 ## How to get started
 
-To dynamically *hide* a field or component:
+The following steps illustrate a scenario to **hide** and **show** fields. The same steps can be applied to enable, disable, toggle enable and so on. To dynamically hide a field:
 
 1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button,  **Pen** button ![Pen button](/images/penicon.png).
 
@@ -45,7 +45,7 @@ To dynamically *hide* a field or component:
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. Under **Action** create an action for the rule by clicking on the **empty field** to add a form or form field, and then choose an option from the action drop-down list, choosing from **Hide**, **Show**, **Disable**, **Enable**, **Toggle visible**, **Toggle enable**, or **Hide and clear**, see [Introduction](#introduction) for an explanation of each action.
+5. Under **Action** create one or more actions for the rule by clicking on the **empty field** to add a form or form field, and then choose an option from the action drop-down list, choosing from **Hide**, **Show**, **Disable**, **Enable**, **Toggle visible**, **Toggle enable**, or **Hide and clear**, see [Introduction](#introduction) for an explanation of each action.
 
    ![Hide or disable example - Hide or show](/images/hide-example.jpg)
 
@@ -53,7 +53,7 @@ To dynamically *hide* a field or component:
 
 6. To add more actions, click on **Add**. At any time remove an action by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png) beside the name of the action.
 
-7. LIke an 'if..else' statement you can add alternative/elsewise actions, based on different conditions by clicking on **Add otherwise action**.
+7. Like an 'if..else' statement you can add alternative/elsewise actions, based on different conditions by clicking on **Add otherwise action**.
 
    ![Hide or show example](/images/hide-or-show-example.jpg)
 
@@ -63,7 +63,7 @@ To dynamically *hide* a field or component:
 
 9. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
-10. If the rule is attached to field within a form, a notification will appear within the form design, for example the field **Management decision** as shown in the image below.
+10. If the rule is attached to a field within a form, a notification will appear within the form design, for example the field **Management decision** as shown in the image below.
 
     ![Rule on a form field](/images/rule-in-form-example.jpg)
 
@@ -83,7 +83,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ![Disable a rule](/images/disable-rule.jpg)
 
-2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
 
 3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 
