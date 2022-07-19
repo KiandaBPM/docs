@@ -859,14 +859,14 @@ The Safety Team
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Validate input</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/</guid><description>
 &lt;p>The &lt;strong>Validate input&lt;/strong> provides the ability to perform flexible data validation and prevents incorrect data submission. For example, this could be performed on a &lt;strong>Date of Incident&lt;/strong> field, where the validation checks that the date entered is a past date.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To showcase the &lt;strong>Validate input&lt;/strong> rule in action, we will make a validation check on a &lt;strong>Date of Incident&lt;/strong> field to see if the entered date is a past date.&lt;/p>
 &lt;p>To implement the rule:&lt;/p>
 &lt;ol>
@@ -891,7 +891,7 @@ The Safety Team
 &lt;p>Click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit Conditions button"> to add a validation condition. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Select the field you want to validate. In this example it is the &lt;strong>Date of Incident&lt;/strong> field.&lt;/p>
+&lt;p>Select the field you want the condition check to be performed on. In this example it is the &lt;strong>Date of Incident&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Select type of validation to be performed. In this example it is the &lt;strong>Is After Today&lt;/strong> validation.&lt;/p>
@@ -905,8 +905,26 @@ The Safety Team
 &lt;/li>
 &lt;/ol>
 &lt;p>From the example mentioned above, we created a simple &lt;strong>Incident Form&lt;/strong> in which a user needs to select a date of an incident. The image below displays the &lt;strong>Validate input&lt;/strong> rule in action, where the date selected &lt;strong>Is After Today&lt;/strong> therefore the condition is valid and an error message is displayed.&lt;/p>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To learn the next rule from the &lt;strong>Form Action&lt;/strong> set of rules, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/">Field Display mode&lt;/a>.&lt;/p></description></item><item><title>Docs: Word document add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</guid><description>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Word document add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</guid><description>
 &lt;p>You can &lt;strong>generate reports&lt;/strong> within Kianda processes and &lt;strong>populate&lt;/strong> the reports with &lt;strong>data captured&lt;/strong> within each process instance. This could be useful, for example, for inspection reports where a report template can be used to show the information the engineer input to a &lt;strong>Kianda form&lt;/strong> during his inspection. Each time an inspection is performed, a report is generated based on a Word template and the report shows the relevant information that was captured during that particular inspection.&lt;/p>
 &lt;p>&lt;em>Microsoft Word template with Kianda form fields&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/word-kianda-example.jpg" alt="Get add-ins">&lt;/p>
@@ -996,39 +1014,31 @@ The Safety Team
 &lt;/div></description></item><item><title>Docs: Field Display mode</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</guid><description>
 &lt;p>The &lt;strong>Field display mode&lt;/strong> rule temporarily changes the display mode of a field or form creating a temporary form or field display mode. This rule forces the display mode to override the automatically calculated display mode of fields and forms.
 &lt;strong>Note&lt;/strong>: Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To showcase the &lt;strong>Field display mode&lt;/strong> in action, we will change the display mode of a user picker field to &lt;strong>Read mode&lt;/strong> after a user has been chosen. To learn more about &lt;strong>User picker&lt;/strong> field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/p>
 &lt;p>To implement the rule:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select a field to attach the rule to so that the edit or pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> appears.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/examples-form-actions-select-employee.jpg" alt="Field selection">&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="http://localhost:1313/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane to expand the Rules menu.&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Field display mode&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Select &lt;strong>Form actions&lt;/strong> to view the range of Input controls.&lt;/p>
+&lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Field display mode&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/add-rule-menu-field-display-mode.jpg" alt="Validate input selection">&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="http://localhost:1313/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The Field display mode rule does not need conditions to work. If &lt;strong>No&lt;/strong> conditions will be applied, the rule will take affect on from load. In this example we will add a condition. Click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit Conditions button"> To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select the field you want the condition to be applied to. In this example it is the &lt;strong>Employee&lt;/strong> field.&lt;/p>
+&lt;p>To demonstrate how this rule works, we will add a condition to a field. Select the field you want the condition to be applied to. In this example it is the &lt;strong>Employee&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Select type of condition to be performed. In this example it is the &lt;strong>Not blank&lt;/strong> condition. Here we are checking whether the &lt;strong>Employee&lt;/strong> field is &lt;strong>Not blank&lt;/strong>.&lt;/p>
@@ -1038,16 +1048,39 @@ The Safety Team
 &lt;p>In the &lt;strong>Field or form&lt;/strong> option, select the field you want the &lt;strong>Field display mode&lt;/strong> rule to affect. In this example it is the &lt;strong>Employee&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Choose from &lt;strong>Edit mode&lt;/strong> or &lt;strong>Read mode&lt;/strong>. In this example we choose &lt;strong>Read mode&lt;/strong>.&lt;/p>
+&lt;p>Choose from &lt;strong>Edit mode&lt;/strong> or &lt;strong>Read mode&lt;/strong>.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Edit mode&lt;/strong> - allows the form or field to be edited.&lt;/li>
+&lt;li>&lt;strong>Read mode&lt;/strong> - sets the mode of a form or a field to &lt;strong>Read-only&lt;/strong>.&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add&lt;/strong> to add as many fields or forms as needed.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-field-display-mode-fields.jpg" alt="Edit rule dialog box">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>The video below demonstrates the &lt;strong>Field Display mode&lt;/strong> rule in action, where the &lt;strong>Employee&lt;/strong> field becomes &lt;strong>Read mode&lt;/strong> after a user is selected. This is achieved by applying a condition to the &lt;strong>Employee&lt;/strong> field. The condition checks if the &lt;strong>Employee&lt;/strong> field is &lt;strong>Not blank&lt;/strong>, therefore when a user has been selected this condition is valid, activating the &lt;strong>Field Display mode&lt;/strong> rule.&lt;/p>
-&lt;img src="https://docs.kianda.com/videos/gifs/examples/field-display-mode/field-display-mode.gif"/>
+&lt;p>The video below demonstrates the &lt;strong>Field Display mode&lt;/strong> rule in action, where the &lt;strong>Employee&lt;/strong> field becomes &lt;strong>Read mode&lt;/strong> after a user is selected. The date field which was not editable, changes to &lt;strong>Edit mode&lt;/strong> after a user is selected. This is achieved by applying a condition to the &lt;strong>Employee&lt;/strong> field. The condition checks if the &lt;strong>Employee&lt;/strong> field is &lt;strong>Not blank&lt;/strong>, therefore when a user has been selected this condition is valid, activating the &lt;strong>Field Display mode&lt;/strong> rule.&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/examples/field-display-mode/field-display-mode2.gif"/>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To learn the next rule from the &lt;strong>Form Action&lt;/strong> set of rules, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/">Submit form&lt;/a>.&lt;/p></description></item><item><title>Docs: File upload control</title><link>https://docs.kianda.com/docs/platform/controls/input/file-upload/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/file-upload/</guid><description>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: File upload control</title><link>https://docs.kianda.com/docs/platform/controls/input/file-upload/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/file-upload/</guid><description>
 &lt;p>&lt;strong>File upload controls&lt;/strong> (fields) can be inserted in a form if you want form users to be able to upload a file or files. File upload fields can also be useful if you want a file to be generated from the information entered in a form or if you want a file to be sent as part of your process - see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> for more information.&lt;/p>
 &lt;p>For example, in an Inspection process, you may want the user (an inspector) to be able to upload the details of their inspection as a PDF file or photos as they complete an Inspection Form; or you may want the Kianda system to generate a report based on the information in the Inspection Form and to email this as a PDF file to a supervisor.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -3347,8 +3380,26 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;/ol>
 &lt;p>The image below shows how a form is displayed to users after it has been submitted.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/examples-submit-form-read-only.jpg" alt="Submit form read only">&lt;/p>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To learn the next rule from the &lt;strong>Form Action&lt;/strong> set of rules, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/save-form/">Save form&lt;/a>.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Success/Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As an &lt;strong>administrator&lt;/strong> or &lt;strong>designer&lt;/strong>, you can use Kianda &lt;strong>Designer&lt;/strong> to populate fields within the Kianda form, in the &lt;strong>Edit rule&lt;/strong> dialog box and set parameters for success and error mapping.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
