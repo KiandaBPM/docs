@@ -1,6 +1,7 @@
 ---
 title: "Delete form"
 weight: 6
+typora-root-url: ..\..\..\..\..\static
 ---
 
 The **Delete form** rule marks a process / record to be deleted.

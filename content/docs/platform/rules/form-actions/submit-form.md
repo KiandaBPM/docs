@@ -20,36 +20,46 @@ You can add this rule:
 
 
 
-### How to use
-
-As mentioned above, the Submit form rule is applied to each form automatically therefore, to showcase the **Submit form** rule in action, we will take a look how forms are presented for users after the submission.
+## How to get started
 
 To implement the rule:
 
-1. Select a field to attach the rule to so that the edit or pen icon ![Pen icon](/images/penicon.png) appears. 
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](http://localhost:1313/images/penicon.png).
 
-   ![Field selection](/images/examples-submit-form-select.jpg)
+2. Click on **Add a rule** > **Form actions** > **Field display mode**.
+3. In the **Edit rule - Field display mode** dialog box, give the rule a title in the **Title** field.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](http://localhost:1313/docs/platform/rules/general/add-conditions/) for more details.
+5. Under Action, **Set process status** choose from **Auto (Current form title)** or **Manual**. If you choose **Manual** then type in the desired text to appear to users in the **Status text after submit** field.
 
-2. Click on **Add a rule** in the left-hand pane to expand the Rules menu.
+Each process contains an internal status value, this is automatically set to the name of the active form. For example there are two forms in a Incident process, a **Incident form** and a **Review form** and the **Auto (Current form title)** is selected in the **Set process status** option. When the **Incident form** is completed and submitted, the internal status will be set to the next active form, in this case the **Review form**. When all forms are completed and submitted, the internal status is set to **completed**. The image below shows how the internal status of the process can be reflected in a dashboard to keep track of the current stage of a process. 
 
-3. Select **Form actions** to view the range of Input controls.
+![Submit form read only](/images/examples-submit-form-status.jpg)
 
-4. Click on **Submit form**. 
+### Editing, deleting or duplicating rules
 
-   ![Validate input selection](/images/add-rule-menu-submit-form.jpg)
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
 
-5. In the **Edit rule - Submit form** dialog box, give the rule a **Title**.
+1. To **disable** a rule click the slider across beside the rule name. 
 
-6. Under Action, **Set process status** choose from **Auto (Current form title)** or **Manual**. If you choose **Manual** then type in the desired text to appear to users in the **Status text after submit** field.
+![Disable a rule](/images/disable-rule.jpg)
 
-7. You can set conditions for the action to happen, see [Conditions](https://docs.kianda.com/docs/platform/rules/general/add-conditions/) for more information.
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
 
-The image below shows how a form is displayed to users after it has been submitted.
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 
-![Submit form read only](/images/examples-submit-form-read-only.jpg)
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
 
+### User tip ![Target icon](/images/05.png) ###
 
+Note, it is not necessary to add a condition to the rule.  In this case the rule will be triggered automatically:  
+
+- if the rule is applied to a *field*, then the rule will be triggered when the user enters a value in that field.  
+- if the rule is applied to a *button*, then the rule will be triggered when the user clicks the button.
+- if the rule is applied to a *form*, then the rule will be triggered when the form is submitted.
+- if the rule is applied to a *process*, then the rule will be triggered on load, that is when the process is initiated.
 
 ### What's next ![Idea icon](/images/18.png) 
 
-To learn the next rule from the **Form Action** set of rules, go to [Save form](/docs/platform/rules/form-actions/save-form/).
+To find our more about other form action rules go to [Form Action rules](/docs/platform/rules/form-actions/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).
