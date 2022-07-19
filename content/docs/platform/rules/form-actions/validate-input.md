@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\..\..\static
 
 The **Validate input** provides the ability to perform flexible data validation and prevents incorrect data submission. For example, this could be performed on a **Date of Incident** field, where the validation checks that the date entered is a past date. 
 
-### When to use
+## When to use
 
 You can add this rule:
 
@@ -18,7 +18,7 @@ You can add this rule:
 
 
 
-### How to use
+## How to get started
 
 To showcase the **Validate input** rule in action, we will make a validation check on a **Date of Incident** field to see if the entered date is a past date.
 
@@ -40,7 +40,7 @@ To implement the rule:
 
 6. Click on **Edit conditions** ![Edit Conditions button](/images/editconditions.png) to add a validation condition. To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
 
-7. Select the field you want to validate. In this example it is the **Date of Incident** field.
+7. Select the field you want the condition check to be performed on. In this example it is the **Date of Incident** field.
 
 8. Select type of validation to be performed. In this example it is the **Is After Today** validation.
 
@@ -52,8 +52,24 @@ To implement the rule:
 
 From the example mentioned above, we created a simple **Incident Form** in which a user needs to select a date of an incident. The image below displays the **Validate input** rule in action, where the date selected **Is After Today** therefore the condition is valid and an error message is displayed. 
 
+### Editing, deleting or duplicating rules
+
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
+
+1. To **disable** a rule click the slider across beside the rule name. 
+
+![Disable a rule](/images/disable-rule.jpg)
+
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
+
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
+
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+
 
 
 ### What's next ![Idea icon](/images/18.png) 
 
-To learn the next rule from the **Form Action** set of rules, go to [Field Display mode](/docs/platform/rules/form-actions/field-display-mode/).
+To find our more about other form action rules go to [Form Action rules](/docs/platform/rules/form-actions/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).

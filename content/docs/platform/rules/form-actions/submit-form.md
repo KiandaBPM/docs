@@ -48,8 +48,24 @@ The image below shows how a form is displayed to users after it has been submitt
 
 ![Submit form read only](/images/examples-submit-form-read-only.jpg)
 
+### Editing, deleting or duplicating rules
+
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
+
+1. To **disable** a rule click the slider across beside the rule name. 
+
+![Disable a rule](/images/disable-rule.jpg)
+
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
+
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
+
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+
 
 
 ### What's next ![Idea icon](/images/18.png) 
 
-To learn the next rule from the **Form Action** set of rules, go to [Save form](/docs/platform/rules/form-actions/save-form/).
+To find our more about other form action rules go to [Form Action rules](/docs/platform/rules/form-actions/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).

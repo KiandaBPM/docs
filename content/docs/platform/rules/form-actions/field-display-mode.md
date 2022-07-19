@@ -7,7 +7,7 @@ typora-root-url: ..\..\..\..\..\static
 The **Field display mode** rule temporarily changes the display mode of a field or form creating a temporary form or field display mode. This rule forces the display mode to override the automatically calculated display mode of fields and forms.		
 **Note**: Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.
 
-### When to use
+## When to use
 
 You can add this rule:
 
@@ -17,46 +17,59 @@ You can add this rule:
 
 
 
-### How to use
+## How to get started
 
 To showcase the **Field display mode** in action, we will change the display mode of a user picker field to **Read mode** after a user has been chosen. To learn more about **User picker** field go to [User picker control](/docs/platform/controls/input/user-picker/).
 
 To implement the rule:
 
-1. Select a field to attach the rule to so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](http://localhost:1313/images/penicon.png).
 
-   ![Field selection](/images/examples-form-actions-select-employee.jpg)
+2. Click on **Add a rule** > **Form actions** > **Field display mode**.
 
-2. Click on **Add a rule** in the left-hand pane to expand the Rules menu.
+3. In the **Edit rule - Field display mode** dialog box, give the rule a title in the **Title** field.
 
-3. Select **Form actions** to view the range of Input controls.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](http://localhost:1313/docs/platform/rules/general/add-conditions/) for more details.
 
-4. Click on **Field display mode**. 
+5. To demonstrate how this rule works, we will add a condition to a field. Select the field you want the condition to be applied to. In this example it is the **Employee** field.
 
-   ![Validate input selection](/images/add-rule-menu-field-display-mode.jpg)
-
-5. In the **Edit rule - Field display mode** dialog box, give the rule a **Title**. 
-
-6.  The Field display mode rule does not need conditions to work. If **No** conditions will be applied, the rule will take affect on from load. In this example we will add a condition. Click on **Edit conditions** ![Edit Conditions button](/images/editconditions.png) To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
-
-7. Select the field you want the condition to be applied to. In this example it is the **Employee** field.
-
-8. Select type of condition to be performed. In this example it is the **Not blank** condition. Here we are checking whether the **Employee** field is **Not blank**.
+6. Select type of condition to be performed. In this example it is the **Not blank** condition. Here we are checking whether the **Employee** field is **Not blank**.
 
    ![Edit conditions](/images/example-condition-field-display-mode.jpg) 
 
-9. In the **Field or form** option, select the field you want the **Field display mode** rule to affect. In this example it is the **Employee** field.
+7. In the **Field or form** option, select the field you want the **Field display mode** rule to affect. In this example it is the **Employee** field.
 
-10. Choose from **Edit mode** or **Read mode**. In this example we choose **Read mode**.
+8. Choose from **Edit mode** or **Read mode**.
 
-11. Click on **Add** to add as many fields or forms as needed.
+   - **Edit mode** - allows the form or field to be edited.
+   - **Read mode** - sets the mode of a form or a field to **Read-only**.
 
-The video below demonstrates the **Field Display mode** rule in action, where the **Employee** field becomes **Read mode** after a user is selected. This is achieved by applying a condition to the **Employee** field. The condition checks if the **Employee** field is **Not blank**, therefore when a user has been selected this condition is valid, activating the **Field Display mode** rule.
+9. Click on **Add** to add as many fields or forms as needed.
 
-<img src="/videos/gifs/examples/field-display-mode/field-display-mode.gif"/>
+   ![Edit rule dialog box](/images/examples-field-display-mode-fields.jpg)
+
+The video below demonstrates the **Field Display mode** rule in action, where the **Employee** field becomes **Read mode** after a user is selected. The date field which was not editable, changes to **Edit mode** after a user is selected. This is achieved by applying a condition to the **Employee** field. The condition checks if the **Employee** field is **Not blank**, therefore when a user has been selected this condition is valid, activating the **Field Display mode** rule.
+
+<img src="/videos/gifs/examples/field-display-mode/field-display-mode2.gif"/>
+
+### Editing, deleting or duplicating rules
+
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
+
+1. To **disable** a rule click the slider across beside the rule name. 
+
+![Disable a rule](/images/disable-rule.jpg)
+
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
+
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
+
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
 
 
 
 ### What's next ![Idea icon](/images/18.png) 
 
-To learn the next rule from the **Form Action** set of rules, go to [Submit form](/docs/platform/rules/form-actions/submit-form/).
+To find our more about other form action rules go to [Form Action rules](/docs/platform/rules/form-actions/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).
