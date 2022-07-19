@@ -24,31 +24,23 @@ To showcase the **Validate input** rule in action, we will make a validation che
 
 To implement the rule:
 
-1. Select a field to attach the rule to so that the edit or pen icon ![Pen icon](/images/penicon.png) appears.
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](http://localhost:1313/images/penicon.png).
 
-   ![Field selection](/images/examples-form-actions-select-field.jpg)
+2. Click on **Add a rule** > **Form actions** > **Validate input**.
 
-2. Click on **Add a rule** in the left-hand pane to expand the Rules menu.
+3. In the **Edit rule - Field display mode** dialog box, give the rule a title in the **Title** field.
 
-3. Select **Form actions** to view the range of Input controls.
+4. Click on **Edit conditions** ![Edit Conditions button](/images/editconditions.png) to add a validation condition. To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
 
-4. Click on **Validate input**. 
+5. Select the field you want the condition check to be performed on. In this example it is the **Date of Incident** field.
 
-   ![Validate input selection](/images/add-rule-menu-validate-input.jpg)
-
-5. In the **Edit rule - Validate input** dialog box, give the rule a **Title**. 
-
-6. Click on **Edit conditions** ![Edit Conditions button](/images/editconditions.png) to add a validation condition. To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
-
-7. Select the field you want the condition check to be performed on. In this example it is the **Date of Incident** field.
-
-8. Select type of validation to be performed. In this example it is the **Is After Today** validation.
+6. Select type of validation to be performed. In this example it is the **Is After Today** validation.
 
    ![Validate input selection](/images/examples-condition-after-today.jpg)
 
-9. In the **Edit rule - Validate input** dialog box, In the **Error message to display when rule conditions above apply** text box, type in the error message you want to be displayed if validation condition apply.
+7. In the **Edit rule - Validate input** dialog box, In the **Error message to display when rule conditions above apply** text box, type in the error message you want to be displayed if validation condition apply.
 
-10. Select a form or field to **Trigger rules if validation condition apply** so that rules attached to that particular form or field are initiated if the condition(s) set in step 4 apply.
+8. Select a form or field to **Trigger rules if validation condition apply** so that rules attached to that particular form or field are initiated if the condition(s) set in step 6 apply.
 
 From the example mentioned above, we created a simple **Incident Form** in which a user needs to select a date of an incident. The image below displays the **Validate input** rule in action, where the date selected **Is After Today** therefore the condition is valid and an error message is displayed. 
 
