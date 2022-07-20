@@ -10,8 +10,16 @@ Processes in Kianda are made up of **forms**. Forms contain all the buttons, fie
 There are three principles to consider when working with forms:
 
 - **Reading modes**: **Form users** can either use forms in **edit** mode or **read** mode. Edit mode means that users can submit information, while read mode means that users can only view forms. The latter may be useful for example for certain staff to review feedback in a form, but not be able to edit/update it. See [**Rules**](/docs/getting-started/create-first-process/plan-your-process/rules/) for more information on different types of rules. 
+
 - **Form owner**: The **default owner** is the person or group that the form is assigned to **when the the form is created**. By default, only this person or group **can edit the form**. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups.
-- **Current form**: Typically there are several forms in a process, and only the form that has the status ‘**current form’** is editable. However, in a complex multi-step process, other forms can be configured to **activate with** the current form, meaning they can also become editable at the same time, creating a form group.
+
+- **Current form**: Typically there are several forms in a process, and by default, the **first form** in a process is the **current form**. 
+
+  ![Three form process example](/images/3-form-example.jpg)
+
+  For example in the Training Attendance Process above, the process flow would be an employee fills out the **Training Request** > a manager approves the request in a **Training Approval** form > once approved a trainer completes a **Training Attendance** evaluation of the employee. When a process instance is initiated by an employee submitting a request, then the next form in the process becomes the **current form**, in this case the **Training Approval** form.
+
+  Only the form that has the status ‘**current form’** **is editable**. However, in a complex multi-step process, other forms can be configured to **activate with** the current form, meaning they can also become editable at the same time, creating a form group. 
 
 These three considerations are established when the form is created, as seen in the dialog box below. These properties can also change **dynamically** as a result of **rules being applied**. See [**Rules**](/docs/getting-started/create-first-process/plan-your-process/rules/) for more information on different types of rules. 
 
