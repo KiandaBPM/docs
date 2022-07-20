@@ -294,29 +294,63 @@
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Delete form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/delete-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/delete-form/</guid><description>
-&lt;p>The &lt;strong>Delete form&lt;/strong> rule marks a process / record to be deleted.&lt;/p>
-&lt;p>This rule is automatically attached to &lt;strong>Close&lt;/strong>, &lt;strong>Submit&lt;/strong> and &lt;strong>Save&lt;/strong> buttons which are added to forms by default.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>Use this use with the &lt;strong>Save form&lt;/strong> rule to commit the deletion request in the server.&lt;/p>
+&lt;p>The &lt;strong>Delete form&lt;/strong> rule marks a process instance to be deleted. This rule can be used for General Data Protection Regulation(GDPR) reasons whereby a process instance with personal data is deleted.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule with the &lt;strong>Save form&lt;/strong> rule to commit the deletion request in the server.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>As mentioned in the example above, we will use this rule to delete personal data for GDPR reasons.&lt;/p>
 &lt;p>To implement the rule:&lt;/p>
 &lt;ol>
+&lt;li>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="http://localhost:1313/images/penicon.png" alt="Pen button">.&lt;/li>
+&lt;li>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Delete form&lt;/strong>.&lt;/li>
+&lt;li>In the &lt;strong>Edit rule - Delete form&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/li>
+&lt;li>There is no action on the Delete form rule that can be specified. The internal action of this rule is to delete the process instance if a condition becomes true, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/li>
+&lt;li>To apply a condition to the &lt;strong>Delete form&lt;/strong> rule, in the &lt;strong>Edit rule - Delete form&lt;/strong> dialog box click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">&lt;/li>
+&lt;/ol>
+&lt;h3 id="gdpr-example-use-case">GDPR example use case&lt;/h3>
+&lt;p>In this example we have two forms:&lt;/p>
+&lt;ul>
 &lt;li>
-&lt;p>Select a field to attach the rule to.&lt;/p>
+&lt;p>&lt;strong>Personal Information&lt;/strong> form in which some personal data of an employee are being stored.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-form-personal-info.jpg" alt="Personal information form">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Delete form&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Company feedback&lt;/strong> form in which the employee can give feedback of the company and decide whether to keep personal information in the company system or delete them.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-form-company-feedback.jpg" alt="Company feedback form">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>In this example we will add the &lt;strong>Delete form&lt;/strong> rule to the &lt;strong>Submit&lt;/strong> button of the &lt;strong>Company feedback&lt;/strong> form.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Follow steps 1 through 5 above to add the rule to a desired field. In this example it is the &lt;strong>Submit&lt;/strong> button in the &lt;strong>Company feedback&lt;/strong> form.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the &lt;strong>Edit rule - Delete form&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
+&lt;p>In the &lt;strong>Edit conditions&lt;/strong> dialog box select a field for the condition check. In this example it is the &lt;strong>Delete personal data for GDPR reasons&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>There is no action on the Delete form rule, only Conditions that can be set to Delete a form, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
+&lt;p>Select desired operator for the condition . In this example it is the &lt;strong>Equals&lt;/strong> operator.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;li>
+&lt;p>Choose a value for the conditional check. In this example type in &lt;strong>Yes&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-condition-delete-form.jpg" alt="Delete data condition">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>The image below presents deleted process instances. As shown in the &lt;strong>Delete personal data for GDPR reasons&lt;/strong> column, there is no &lt;strong>Yes&lt;/strong> values as all those processes were deleted from the system.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-delete-form-list-widget.jpg" alt="Deleted processes - list widget">&lt;/p>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;p>Note, it is not necessary to add a condition to the rule. In this case the rule will be triggered automatically:&lt;/p>
+&lt;ul>
+&lt;li>if the rule is applied to a &lt;em>field&lt;/em>, then the rule will be triggered when the user enters a value in that field.&lt;/li>
+&lt;li>if the rule is applied to a &lt;em>button&lt;/em>, then the rule will be triggered when the user clicks the button.&lt;/li>
+&lt;li>if the rule is applied to a &lt;em>form&lt;/em>, then the rule will be triggered when the form is submitted.&lt;/li>
+&lt;li>if the rule is applied to a &lt;em>process&lt;/em>, then the rule will be triggered on load, that is when the process is initiated.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
