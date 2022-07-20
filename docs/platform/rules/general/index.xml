@@ -10,9 +10,16 @@
 &lt;/ol>
 &lt;h2 id="create-the-condition">Create the condition&lt;/h2>
 &lt;ol>
-&lt;li>To create &lt;strong>conditions&lt;/strong>, first choose the &lt;strong>process element&lt;/strong> you want the condition to apply to – such as a form, set of forms, a field/control or set of fields.&lt;/li>
-&lt;li>Next, depending on whether the rule is applied to a &lt;strong>text-based field or date-based field&lt;/strong>, choose from 13 text operators or 25 date operators (see image below).&lt;/li>
-&lt;li>Then choose a &lt;strong>value&lt;/strong>, this could be typed in text, number(s), date(s), form(s) or field(s).&lt;/li>
+&lt;li>
+&lt;p>To create &lt;strong>conditions&lt;/strong>, first choose the &lt;strong>process element&lt;/strong> you want the condition to apply to – such as a form, set of forms, a field/control or set of fields. This could also be a set of common fields associated with all process instances, such as &lt;strong>Process ID&lt;/strong>, &lt;strong>Status&lt;/strong> or &lt;strong>Modified by&lt;/strong>, see image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/common-fields-in-condition.jpg" alt="Common fields used in the process element part of a condition">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Next, depending on whether the rule is applied to a &lt;strong>text-based field or date-based field&lt;/strong>, choose from 13 text operators or 25 date operators (see image below).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then choose a &lt;strong>value&lt;/strong>, this could be typed in text, number(s), date(s), form(s) or field(s).&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;p>&lt;em>&lt;strong>Condition elements&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/conditions3-2.gif" alt="img">&lt;/p>

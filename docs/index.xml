@@ -20,9 +20,16 @@ Your browser does not support the video tag.
 &lt;/ol>
 &lt;h2 id="create-the-condition">Create the condition&lt;/h2>
 &lt;ol>
-&lt;li>To create &lt;strong>conditions&lt;/strong>, first choose the &lt;strong>process element&lt;/strong> you want the condition to apply to – such as a form, set of forms, a field/control or set of fields.&lt;/li>
-&lt;li>Next, depending on whether the rule is applied to a &lt;strong>text-based field or date-based field&lt;/strong>, choose from 13 text operators or 25 date operators (see image below).&lt;/li>
-&lt;li>Then choose a &lt;strong>value&lt;/strong>, this could be typed in text, number(s), date(s), form(s) or field(s).&lt;/li>
+&lt;li>
+&lt;p>To create &lt;strong>conditions&lt;/strong>, first choose the &lt;strong>process element&lt;/strong> you want the condition to apply to – such as a form, set of forms, a field/control or set of fields. This could also be a set of common fields associated with all process instances, such as &lt;strong>Process ID&lt;/strong>, &lt;strong>Status&lt;/strong> or &lt;strong>Modified by&lt;/strong>, see image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/common-fields-in-condition.jpg" alt="Common fields used in the process element part of a condition">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Next, depending on whether the rule is applied to a &lt;strong>text-based field or date-based field&lt;/strong>, choose from 13 text operators or 25 date operators (see image below).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then choose a &lt;strong>value&lt;/strong>, this could be typed in text, number(s), date(s), form(s) or field(s).&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;p>&lt;em>&lt;strong>Condition elements&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/conditions3-2.gif" alt="img">&lt;/p>
@@ -1005,111 +1012,7 @@ The Safety Team
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/process-level-security/">Process level security&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/sso/">Single Sign-On&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/data-residency/">Data residency&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Assign form</title><link>https://docs.kianda.com/docs/platform/rules/workflow/assign-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/assign-form/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Assign form&lt;/strong> rule is used to assign a form to a user or to a group of users, making them the &lt;strong>form owners&lt;/strong>. This means that when a process instance is created, a form owner can &lt;strong>edit&lt;/strong> the form in the process instance, for example a manager who needs to add comments on an appraisal form that has been submitted by an employee.&lt;/p>
-&lt;p>You can use this rule to override the existing form owners, or to add users or groups to the list of existing form owners. When assigning forms you can choose from:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Any user&lt;/strong> - choose from any user, groups or partners defined in the system&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Current user&lt;/strong> - make the current form user, the form owner&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Defined in a user field&lt;/strong> - use a selected user/group/partner chosen in a user picker field&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Form owner(s)&lt;/strong> - existing form owners as defined in the form configuration&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>You can add this rule:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To dynamically assign a form to a user:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Assign form&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule - Assign form&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/assign-rule.jpg" alt="Edit rule - Assign form dialog box">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by filling out the following:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Select form&lt;/strong> - click on the field and select a form from the process. Click on the &lt;strong>Plus/Add&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-plus-action.jpg" alt="Add/Plus button">to add more forms to assign. If you change your mind and want to delete a form, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Assign to&lt;/strong> - choose from the radio buttons:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details.&lt;/li>
-&lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.&lt;/li>
-&lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them.&lt;/li>
-&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Depending on the option chosen for &lt;strong>Assign to&lt;/strong>, different fields will display. For example if &lt;strong>Any user&lt;/strong> is chosen, then a &lt;strong>Select user(s)&lt;/strong> field appears as shown in the image above. If &lt;strong>Defined in a user field&lt;/strong> or &lt;strong>Form owner(s)&lt;/strong> is chosen then a &lt;strong>Select form field&lt;/strong> appears prompting you to select a user picker field for the former, and a form with form owners for the latter. In the example below a user from a field called &lt;strong>Requester&lt;/strong> will become the form owner of a form called &lt;strong>User Feedback&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/assign-form-select-field.jpg" alt="Select form field">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Existing user(s)&lt;/strong> - choose from &lt;strong>Override&lt;/strong> or &lt;strong>Append&lt;/strong> where &lt;strong>Override&lt;/strong> means that this rule will override form ownership, making those referenced in the &lt;strong>Edit rule dialog&lt;/strong> box**, the form owners**. &lt;strong>Append&lt;/strong> means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the &lt;strong>Edit rule dialog&lt;/strong> box.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If the rule is attached to field within a form, a notification will appear within the form design, for example the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/rule-in-form-example.jpg" alt="Rule on a form field">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When you click on the field or form that has the rule attached, the rule will appear in the right-hand pane under &lt;strong>Rules&lt;/strong>.&lt;/p>
-&lt;p>The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
-&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;p>This rule can be used multiple times in sequence. A typical use case is that the first rule overrides the existing users and the following rule(s) appends users.&lt;/p>
-&lt;p>To view the default owners for the form, click on the form itself within the process in Designer and in the &lt;strong>Edit form&lt;/strong> dialog box, see named owners in the &lt;strong>Default owner(s)&lt;/strong> field. See &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details.&lt;/p>
-&lt;p>Note: a form displays in edit mode if:&lt;/p>
-&lt;ol>
-&lt;li>The user is the owner of the form and&lt;/li>
-&lt;li>The form is the current form&lt;/li>
-&lt;li>The form is not submitted or in a completed state, that is being worked on. The &lt;strong>Go to form&lt;/strong> rule can reset the submitted state of a form, see &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/">Go to form&lt;/a> for details.&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Connecting to SharePoint lists and Libraries</title><link>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Connecting to SharePoint lists and Libraries</title><link>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</guid><description>
 &lt;p>This video demonstrates how to connect to a datasource in SharePoint and use that information in a form list.&lt;/p>
 &lt;div style="padding:50.94% 0 0 0;position:relative;">&lt;iframe src="https://player.vimeo.com/video/677724364?h=cdfc835f25&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Connecting to SharePoint example">&lt;/iframe>&lt;/div>&lt;script src="https://player.vimeo.com/api/player.js">&lt;/script></description></item><item><title>Docs: Excel workbook add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
@@ -1946,7 +1849,75 @@ The Safety Team
 &lt;h2 id="inspection-form-summary">Inspection Form Summary&lt;/h2>
 &lt;p>To summarise our &lt;strong>Inspection From&lt;/strong>, we created all fields, buttons and rules that we stated in our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>. Our Engineer can fill out our &lt;strong>Inspection Checklist&lt;/strong> and submit the form which automatically sends an email to an &lt;strong>Safety Manager&lt;/strong> with the generated PDF file of the report. We are also updating our &lt;strong>Status&lt;/strong> field to &lt;strong>Completed&lt;/strong>.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/dashboard/">Creating Dashboard&lt;/a>.&lt;/p></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
+&lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/dashboard/">Creating Dashboard&lt;/a>.&lt;/p></description></item><item><title>Docs: Make required</title><link>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Make required&lt;/strong> rule is used to dynamically make form elements required or mandatory for users to fill in, or not required or to toggle between both states.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To dynamically make a field required:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Make required&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Make required&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/make-required-rule.jpg" alt="Make required rule example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by clicking on the &lt;strong>empty field&lt;/strong> to add a form or form field, and then choose an option from the action drop-down list, choosing from &lt;strong>Required&lt;/strong>, &lt;strong>Not required&lt;/strong> or &lt;strong>Toggle required&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To add more actions, click on &lt;strong>Add&lt;/strong>. At any time remove an action by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> beside the name of the action.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If the rule is attached to a field within a form, a notification will appear within the form design, for example the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-in-form-example.jpg" alt="Rule on a form field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you click on the field or form that has the rule attached, the rule will appear in the right-hand pane under &lt;strong>Rules&lt;/strong>.&lt;/p>
+&lt;p>The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
 &lt;p>When working with rules in forms, a key principle to consider is &lt;strong>rule order&lt;/strong>. Rule order is important if there are &lt;strong>multiple rules&lt;/strong> attached to an item like a button to determine the sequence of rule execution. As a form designer you can change the order of execution is important and modified form and process designs, including rule order to suit your needs.&lt;/p>
 &lt;h2 id="rule-order-example">Rule order example&lt;/h2>
 &lt;p>For example, you may want a process to send automated emails to a safety manager, where the email includes submitted form data. In this case a &lt;strong>Send email rule&lt;/strong> could be attached to a form &lt;strong>Submit&lt;/strong> button so an email is sent once the button is clicked. This will result in an automated email to a designated person. To generate a report of the completed form you can use the &lt;strong>Generate word&lt;/strong> &lt;strong>document&lt;/strong> &lt;strong>rule&lt;/strong> triggered again when the &lt;strong>Submit&lt;/strong> button is clicked. In this example the &lt;strong>Generate word document rule&lt;/strong> has to be executed &lt;u>before&lt;/u> the &lt;strong>Send email rule&lt;/strong>, so that the Word document can be generated and then attached to the email.&lt;/p>
@@ -3739,7 +3710,115 @@ The &amp;lsquo;Widget UI&amp;rsquo; defines the HTML, handlers, expressions and 
 &lt;p>If you want to use Kianda for no-code development, follow these simple steps:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/one.png" alt="1"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">&lt;strong>Plan your process&lt;/strong>&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/two.png" alt="2"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/">&lt;strong>Design and build your process&lt;/strong>&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/three.png" alt="3"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/publish-your-process/">&lt;strong>Publish your process&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Docs: Expressions</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/</guid><description>
+&lt;p>&lt;img src="https://docs.kianda.com/images/three.png" alt="3"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/publish-your-process/">&lt;strong>Publish your process&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Docs: Assign form</title><link>https://docs.kianda.com/docs/platform/rules/workflow/assign-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/assign-form/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Assign form&lt;/strong> rule is used to assign a form to a user or to a group of users, making them the &lt;strong>form owners&lt;/strong>. This means that when a process instance is created, a form owner can &lt;strong>edit&lt;/strong> the form in the process instance, for example a manager who needs to add comments on an appraisal form that has been submitted by an employee.&lt;/p>
+&lt;p>You can use this rule to override the existing form owners, or to add users or groups to the list of existing form owners. When assigning forms you can choose from:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Any user&lt;/strong> - choose from any user, groups or partners defined in the system&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Current user&lt;/strong> - make the current form user, the form owner&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Defined in a user field&lt;/strong> - use a selected user/group/partner chosen in a user picker field&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form owner(s)&lt;/strong> - existing form owners as defined in the form configuration&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To dynamically assign a form to a user:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Assign form&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Assign form&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/assign-rule.jpg" alt="Edit rule - Assign form dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by filling out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select form&lt;/strong> - click on the field and select a form from the process. Click on the &lt;strong>Plus/Add&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-plus-action.jpg" alt="Add/Plus button">to add more forms to assign. If you change your mind and want to delete a form, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Assign to&lt;/strong> - choose from the radio buttons:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details.&lt;/li>
+&lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.&lt;/li>
+&lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them.&lt;/li>
+&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Depending on the option chosen for &lt;strong>Assign to&lt;/strong>, different fields will display. For example if &lt;strong>Any user&lt;/strong> is chosen, then a &lt;strong>Select user(s)&lt;/strong> field appears as shown in the image above. If &lt;strong>Defined in a user field&lt;/strong> or &lt;strong>Form owner(s)&lt;/strong> is chosen then a &lt;strong>Select form field&lt;/strong> appears prompting you to select a user picker field for the former, and a form with form owners for the latter. For example, in the image below a user from a field called &lt;strong>Requester&lt;/strong> will become the form owner of a form called &lt;strong>User Feedback&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/assign-form-select-field.jpg" alt="Select form field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Existing user(s)&lt;/strong> - choose from:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Override&lt;/strong> - this means that this rule will override form ownership, making those referenced in the &lt;strong>Edit rule dialog&lt;/strong> box**, the form owners**.&lt;/li>
+&lt;li>&lt;strong>Append&lt;/strong> - this means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the &lt;strong>Edit rule dialog&lt;/strong> box.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If the rule is attached to field within a form, a notification will appear within the form design, for example the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-in-form-example.jpg" alt="Rule on a form field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you click on the field or form that has the rule attached, the rule will appear in the right-hand pane under &lt;strong>Rules&lt;/strong>.&lt;/p>
+&lt;p>The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;p>This rule can be used multiple times in sequence. A typical use case is that the first rule overrides the existing users and the following rule(s) appends users.&lt;/p>
+&lt;p>To view the default owners for the form, click on the form itself within the process in Designer and in the &lt;strong>Edit form&lt;/strong> dialog box, see named owners in the &lt;strong>Default owner(s)&lt;/strong> field. See &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details.&lt;/p>
+&lt;p>Note: a form displays in edit mode if:&lt;/p>
+&lt;ol>
+&lt;li>The user is the owner of the form and&lt;/li>
+&lt;li>The form is the current form&lt;/li>
+&lt;li>The form is not submitted or in a completed state, that is being worked on. The &lt;strong>Go to form&lt;/strong> rule can reset the submitted state of a form, see &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/">Go to form&lt;/a> for details.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Expressions</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/</guid><description>
 &lt;p>Expressions allow you to put together form identifiers and constants with operators and functions to return a &lt;strong>dynamic value&lt;/strong> that can be used in a rule to automate processes.&lt;/p>
 &lt;p>For example, expressions could be used in the body of an automated email sent using the &lt;strong>Send email&lt;/strong> rule, as shown here.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Expression examples&lt;/strong>&lt;/em>&lt;/p>
@@ -3815,132 +3894,4 @@ Your browser does not support the video tag.
 &lt;p>Back to &lt;a href="../">How to videos&lt;/a>&lt;/p></description></item><item><title>Docs: Low-code customisation options for the list widget</title><link>https://docs.kianda.com/docs/low-code/list-widget-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/list-widget-template/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Number control</title><link>https://docs.kianda.com/docs/platform/controls/input/number/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/number/</guid><description>
-&lt;p>&lt;strong>Number controls&lt;/strong> (fields) can be inserted in a form if you want form users to insert a numerical value. Number fields can be formatted to be integers (whole numbers), currency or percentages.&lt;/p>
-&lt;p>For example, in a Purchase Order Request form, you may want to use Number fields to allow the user to insert the number, unit price and total cost of items being ordered and you may apply rules to some of those fields so that they perform calculations or pull values from other fields or forms. Go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a> for more information on how you make your forms dynamic.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>To add a &lt;strong>Number field&lt;/strong> to a form, first open the relevant process.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Then select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible).&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>Number&lt;/strong>.&lt;/p>
-&lt;p>A number field will be added to your form with the default title of &amp;lsquo;&amp;rsquo;&lt;strong>Number 1&lt;/strong>&amp;rsquo;&amp;rsquo; and a pop-up message will say &amp;lsquo;Field added&amp;rsquo;.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-field-added.jpg" alt="Number field added">&lt;/p>
-&lt;p>By default, the new &lt;strong>Number field&lt;/strong> will have up and down arrow buttons &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up and down arrows"> at the right that users can click to increase or decrease the number in the field and will show any numbers entered to two decimal places. These settings can be amended by editing the field.&lt;/p>
-&lt;p>In the example shown here, a new Number field has been added to form called &amp;lsquo;Training Request&amp;rsquo;. This new Number field could be edited to rename it &amp;lsquo;Cost of Training Course&amp;rsquo; and could be formatted as currency (Euro) so that users could insert the cost of the training course they want to take.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="how-to-edit-move-and-delete-number-fields">How to edit, move and delete Number fields&lt;/h3>
-&lt;p>To edit a &lt;strong>Number field&lt;/strong>:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-field-edit2.jpg" alt="Select number field to edit">&lt;/p>
-&lt;p>The &lt;strong>Edit field - Number&lt;/strong> dialog box will open, enabling you to choose from a range of options:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-edit-dialog.jpg" alt="Edit number field dialog box">&lt;/p>
-&lt;p>The options within the &lt;strong>Edit field - Number&lt;/strong> dialog box include:&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the Number field from the default &amp;lsquo;&lt;strong>Number 1&lt;/strong>&amp;rsquo;&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Help text&lt;/strong> - you can insert text to help the form user to complete the Number field. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-help-text.jpg" alt="File upload help text example">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Display format&lt;/strong> - you can choose whether the number inserted by the user is formatted to be an integer (whole number), currency or a percentage.&lt;/p>
-&lt;p>If you select &lt;strong>Currency&lt;/strong> as the Display format, a new option will appear - &lt;strong>Currency format&lt;/strong> - where you can select the currency you want to use.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-currency.jpg" alt="Number field currency options">&lt;/p>
-&lt;p>If you select &lt;strong>Euro&lt;/strong> as the Currency format, a new format option called &lt;strong>Country format&lt;/strong> appears to the right. This is a drop-down list from which you can choose from three different ways that Euro amounts can be displayed:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-euro-format.jpg" alt="Euro format options">&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>If you choose &lt;strong>Ireland&lt;/strong> as the Country format, Euro amounts will be displayed like this:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-euro-Ireland.jpg" alt="Euro Ireland currency format">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you choose &lt;strong>Portugal&lt;/strong> as the Country format, Euro amounts will be displayed like this:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-euro-portugal.jpg" alt="Euro Portugal currency format">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you choose &lt;strong>France&lt;/strong> as the Country format, Euro amounts will be displayed like this:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-euro-france.jpg" alt="Euro France currency format">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Show number up/down arrows&lt;/strong> - you can choose whether or not you want the Number field to have up/down arrow buttons &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up and down arrows"> that enable the user to increase or decrease the number in the field&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable native number input on mobile&lt;/strong> - you can select this to enable native number input when a user is completing the Number field on their mobile phone&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Decimal places&lt;/strong> - you can insert the number of decimal places you want the figure in the Number field to have&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Placeholder&lt;/strong> - you can insert placeholder text to appear in the Number field to assist the user. For example, this Number field titled &amp;lsquo;Salary&amp;rsquo; has placeholder text:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-placeholder.jpg" alt="Number field with placeholder text">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Expression&lt;/strong> - you can add an expression to your Number field if, for example, you want the field to contain a calculation based on another field or want it to pull values from other fields. To add an expression, click on the expression button (ellipsis) &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Expression button ellipsis"> to open the &lt;strong>Expression builder&lt;/strong> dialog box - here you can add expressions to perform math operations and various other actions.&lt;/p>
-&lt;p>For example, let&amp;rsquo;s say you have a Number field called &amp;lsquo;Salary&amp;rsquo; where the user inputs their salary and another Number field called &amp;lsquo;Bonus&amp;rsquo; which you want to be automatically populated with a figure that is 20% of the &amp;lsquo;Salary&amp;rsquo; figure. To do this, you add an Expression to the &amp;lsquo;Bonus&amp;rsquo; field:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-expression-example.jpg" alt="Expression builder">&lt;/p>
-&lt;p>Now when a user completes the &amp;lsquo;Salary&amp;rsquo; field, the Bonus field automatically populates with a figure that is 20% of their salary:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-expression-example2.jpg" alt="Number expression example">&lt;/p>
-&lt;p>To learn more about applying rules and expressions to Number fields, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;ol start="3">
-&lt;li>Make whatever changes you want in this &lt;strong>Edit field - Number&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
-&lt;/ol>
-&lt;p>To move a &lt;strong>Number field&lt;/strong>:&lt;/p>
-&lt;ol>
-&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
-&lt;li>Drag and drop the field wherever you want to move it to within your form&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-move.jpg" alt="Date field drag handle">&lt;/p>
-&lt;p>To delete a &lt;strong>Number field&lt;/strong> from your form:&lt;/p>
-&lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
-&lt;/ol>
-&lt;h3 id="how-to-edit-number-field-properties">How to edit Number field properties&lt;/h3>
-&lt;p>To view or edit the field properties associated with a &lt;strong>Number field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/number-properties.jpg" alt="Field properties">&lt;/p>
-&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>Number field&lt;/strong> titled &amp;lsquo;Salary&amp;rsquo; are shown here and include:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>Number&lt;/strong> field.&lt;/li>
-&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Salary&amp;rsquo;.&lt;/li>
-&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the Number field title will be shown in the form.&lt;/li>
-&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the Number field will be mandatory for the form user.&lt;/li>
-&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
-&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Number field will be visible in the form.&lt;/li>
-&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Number field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
-&lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
-&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
-&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Number control&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>
