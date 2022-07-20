@@ -60,14 +60,26 @@ The image below presents deleted process instances. As shown in the **Delete per
 
 ![Deleted processes - list widget](/images/examples-delete-form-list-widget.jpg)
 
+### Editing, deleting or duplicating rules
+
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
+
+1. To **disable** a rule click the slider across beside the rule name. 
+
+![Disable a rule](/images/disable-rule.jpg)
+
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
+
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
+
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+
 ### User tip ![Target icon](/images/05.png) ###
 
-Note, it is not necessary to add a condition to the rule.  In this case the rule will be triggered automatically:  
+- When adding the **Delete form** rule to a process, make sure to change the rule order of execution of the **Delete form** to be after **Submit form**. Remember that you can't submit a deleted form.
 
-- if the rule is applied to a *field*, then the rule will be triggered when the user enters a value in that field.  
-- if the rule is applied to a *button*, then the rule will be triggered when the user clicks the button.
-- if the rule is applied to a *form*, then the rule will be triggered when the form is submitted.
-- if the rule is applied to a *process*, then the rule will be triggered on load, that is when the process is initiated.
+
+
 
 ### What's next ![Idea icon](/images/18.png) 
 

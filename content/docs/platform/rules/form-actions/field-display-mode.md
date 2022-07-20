@@ -5,7 +5,7 @@ typora-root-url: ..\..\..\..\..\static
 ---
 
 The **Field display mode** rule temporarily changes the display mode of a field or form creating a temporary form or field display mode. This rule forces the display mode to override the automatically calculated display mode of fields and forms.		
-**Note**: Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.
+
 
 ## When to use
 
@@ -33,7 +33,7 @@ To implement the rule:
 
 5. To demonstrate how this rule works, we will add a condition to a field. Select the field you want the condition to be applied to. In this example it is the **Employee** field.
 
-6. Select type of condition to be performed. In this example it is the **Not blank** condition. Here we are checking whether the **Employee** field is **Not blank**.
+6. Select type of operator check to be performed on the condition. In this example it is the **Not blank** operator. Here we are checking whether the **Employee** field is **Not blank**.
 
    ![Edit conditions](/images/example-condition-field-display-mode.jpg) 
 
@@ -48,7 +48,7 @@ To implement the rule:
 
    ![Edit rule dialog box](/images/examples-field-display-mode-fields.jpg)
 
-The video below demonstrates the **Field Display mode** rule in action, where the **Employee** field becomes **Read mode** after a user is selected. The date field which was not editable, changes to **Edit mode** after a user is selected. This is achieved by applying a condition to the **Employee** field. The condition checks if the **Employee** field is **Not blank**, therefore when a user has been selected this condition is valid, activating the **Field Display mode** rule.
+The video below demonstrates the **Field Display mode** rule in action, where the **Employee** field becomes **Read mode** after a user is selected. The **Date** field which was not editable changes to **Edit mode** after a user is selected. This is achieved by applying a condition to the **Employee** field. The condition checks if the **Employee** field is **Not blank**, therefore when a user has been selected this condition is valid, activating the **Field Display mode** rule.
 
 <img src="/videos/gifs/examples/field-display-mode/field-display-mode2.gif"/>
 
@@ -66,7 +66,9 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
 
+### User tip ![Target icon](/images/05.png)
 
+-  Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.
 
 ### What's next ![Idea icon](/images/18.png) 
 
