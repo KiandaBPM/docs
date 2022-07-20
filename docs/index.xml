@@ -1115,8 +1115,7 @@ The Safety Team
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Field Display mode</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</guid><description>
-&lt;p>The &lt;strong>Field display mode&lt;/strong> rule temporarily changes the display mode of a field or form creating a temporary form or field display mode. This rule forces the display mode to override the automatically calculated display mode of fields and forms.
-&lt;strong>Note&lt;/strong>: Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.&lt;/p>
+&lt;p>The &lt;strong>Field display mode&lt;/strong> rule temporarily changes the display mode of a field or form creating a temporary form or field display mode. This rule forces the display mode to override the automatically calculated display mode of fields and forms.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -1144,7 +1143,7 @@ The Safety Team
 &lt;p>To demonstrate how this rule works, we will add a condition to a field. Select the field you want the condition to be applied to. In this example it is the &lt;strong>Employee&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Select type of condition to be performed. In this example it is the &lt;strong>Not blank&lt;/strong> condition. Here we are checking whether the &lt;strong>Employee&lt;/strong> field is &lt;strong>Not blank&lt;/strong>.&lt;/p>
+&lt;p>Select type of operator check to be performed on the condition. In this example it is the &lt;strong>Not blank&lt;/strong> operator. Here we are checking whether the &lt;strong>Employee&lt;/strong> field is &lt;strong>Not blank&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/example-condition-field-display-mode.jpg" alt="Edit conditions">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1162,7 +1161,7 @@ The Safety Team
 &lt;p>&lt;img src="https://docs.kianda.com/images/examples-field-display-mode-fields.jpg" alt="Edit rule dialog box">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>The video below demonstrates the &lt;strong>Field Display mode&lt;/strong> rule in action, where the &lt;strong>Employee&lt;/strong> field becomes &lt;strong>Read mode&lt;/strong> after a user is selected. The date field which was not editable, changes to &lt;strong>Edit mode&lt;/strong> after a user is selected. This is achieved by applying a condition to the &lt;strong>Employee&lt;/strong> field. The condition checks if the &lt;strong>Employee&lt;/strong> field is &lt;strong>Not blank&lt;/strong>, therefore when a user has been selected this condition is valid, activating the &lt;strong>Field Display mode&lt;/strong> rule.&lt;/p>
+&lt;p>The video below demonstrates the &lt;strong>Field Display mode&lt;/strong> rule in action, where the &lt;strong>Employee&lt;/strong> field becomes &lt;strong>Read mode&lt;/strong> after a user is selected. The &lt;strong>Date&lt;/strong> field which was not editable changes to &lt;strong>Edit mode&lt;/strong> after a user is selected. This is achieved by applying a condition to the &lt;strong>Employee&lt;/strong> field. The condition checks if the &lt;strong>Employee&lt;/strong> field is &lt;strong>Not blank&lt;/strong>, therefore when a user has been selected this condition is valid, activating the &lt;strong>Field Display mode&lt;/strong> rule.&lt;/p>
 &lt;img src="https://docs.kianda.com/videos/gifs/examples/field-display-mode/field-display-mode2.gif"/>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
@@ -1181,6 +1180,10 @@ The Safety Team
 &lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.&lt;/li>
+&lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: File upload control</title><link>https://docs.kianda.com/docs/platform/controls/input/file-upload/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/file-upload/</guid><description>
@@ -3502,7 +3505,7 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>Under Action, &lt;strong>Set process status&lt;/strong> choose from &lt;strong>Auto (Current form title)&lt;/strong> or &lt;strong>Manual&lt;/strong>. If you choose &lt;strong>Manual&lt;/strong> then type in the desired text to appear to users in the &lt;strong>Status text after submit&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>Each process contains an internal status value, this is automatically set to the name of the active form. For example there are two forms in a Incident process, a &lt;strong>Incident form&lt;/strong> and a &lt;strong>Review form&lt;/strong> and the &lt;strong>Auto (Current form title)&lt;/strong> is selected in the &lt;strong>Set process status&lt;/strong> option. When the &lt;strong>Incident form&lt;/strong> is completed and submitted, the internal status will be set to the next active form, in this case the &lt;strong>Review form&lt;/strong>. When all forms are completed and submitted, the internal status is set to &lt;strong>completed&lt;/strong>. The image below shows how the internal status of the process can be reflected in a dashboard to keep track of the current stage of a process.&lt;/p>
+&lt;p>Each process contains an internal status value, this is automatically set to the name of the active form. For example there are two forms in a Incident process, a &lt;strong>Incident form&lt;/strong>, a &lt;strong>Review form&lt;/strong> and the &lt;strong>Auto (Current form title)&lt;/strong> is selected in the &lt;strong>Set process status&lt;/strong> option. When the &lt;strong>Incident form&lt;/strong> is completed and submitted, the internal status will be set to the next active form, in this case the &lt;strong>Review form&lt;/strong>. When all forms are completed and submitted, the internal status is set to &lt;strong>completed&lt;/strong>. The image below shows how the internal status of the process can be reflected in a dashboard to keep track of the current stage of a process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/examples-submit-form-status.jpg" alt="Submit form read only">&lt;/p>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
@@ -3522,12 +3525,8 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;p>Note, it is not necessary to add a condition to the rule. In this case the rule will be triggered automatically:&lt;/p>
 &lt;ul>
-&lt;li>if the rule is applied to a &lt;em>field&lt;/em>, then the rule will be triggered when the user enters a value in that field.&lt;/li>
-&lt;li>if the rule is applied to a &lt;em>button&lt;/em>, then the rule will be triggered when the user clicks the button.&lt;/li>
-&lt;li>if the rule is applied to a &lt;em>form&lt;/em>, then the rule will be triggered when the form is submitted.&lt;/li>
-&lt;li>if the rule is applied to a &lt;em>process&lt;/em>, then the rule will be triggered on load, that is when the process is initiated.&lt;/li>
+&lt;li>You can display the internal status of a process in a list widget on your dashboard. This can help you keep of the current state the process instance is. For example when the process is complete of which form the process is currently in.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
