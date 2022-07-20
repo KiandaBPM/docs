@@ -52,9 +52,9 @@ To dynamically assign a form to a user:
      - **Any user** - choose from **Users**, **Groups** and/or **Partners** in the drop-down list. All users must be predefined in the system, see [Users and Groups](/docs/platform/administration/users/) for more details. 
      - **Current user** - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.
      - **Defined in a user field** - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them. 
-     - **Form owner(s)** - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them. 
+     - **Form owner(s)** - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see [Form owners](/docs/platform/application-designer/forms/form-owners/) for more details on what form ownership is and how to create form owners.
      
-   - Depending on the option chosen for **Assign to**, different fields will display. For example if **Any user** is chosen, then a **Select user(s)** field appears as shown in the image above. If **Defined in a user field** or **Form owner(s)** is chosen then a **Select form field** appears prompting you to select a user picker field for the former, and a form with form owners for the latter.
+   - Depending on the option chosen for **Assign to**, different fields will display. For example if **Any user** is chosen, then a **Select user(s)** field appears as shown in the image above. If **Defined in a user field** or **Form owner(s)** is chosen then a **Select form field** appears prompting you to select a user picker field for the former, and a form with form owners for the latter. In the example below a user from a field called **Requester** will become the form owner of a form called **User Feedback**.
 
      ![Select form field](/images/assign-form-select-field.jpg) 
 
@@ -68,32 +68,51 @@ To dynamically assign a form to a user:
 
 11. When you click on the field or form that has the rule attached, the rule will appear in the right-hand pane under **Rules**. 
 
-    ![Hide or disable rule example](/images/hide-or-show-rule.jpg)
-
     The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.
-    
-12. sdfsf
 
-10. Select Controls > Input > User picker to add a field to store the user.
 
-11. Click on a button e.g. the Submit button.
 
-12. Select Add a rule > Workflow > Assign form.
+### Editing, deleting or duplicating rules
 
-13. Under Action, select a form.  You can select more forms by clicking the plus icon.
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
 
-14. For Assign to, select Defined in a user field. Then select the User picker field created earlier.
+1. To **disable** a rule click the slider across beside the rule name. 
 
-15. Set Existing user(s) to Override to make the selected user the only user.  
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
 
-7. Click OK.
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 
-## Notes
-This rule can be used multiple times in sequence: typically the first rule overrides the existing users and the following rule(s) appends users.
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
 
-To view the default owners for the form, go to Edit form in the Designer.
+
+
+### User tip ![Target icon](/images/05.png) ###
+
+This rule can be used multiple times in sequence. A typical use case is that the first rule overrides the existing users and the following rule(s) appends users. 
+
+To view the default owners for the form, click on the form itself within the process in Designer and see named **Form owners **
 
 A form renders in edit mode if 1) the user is member or the owner of the form and 2) the form is the current form 3) the form is not submitted or completed state. (The Go to form rule can reset the submitted state of a form)
+
+Note, it is not necessary to add a condition to the rule.  In this case the rule will be triggered automatically:  
+
+- if the rule is applied to a *field*, then the rule will be triggered when the user enters a value in that field.  
+- if the rule is applied to a *button*, then the rule will be triggered when the user clicks the button.
+- if the rule is applied to a *form*, then the rule will be triggered when the form is submitted.
+- if the rule is applied to a *process*, then the rule will be triggered on load, that is when the process is initiated.
+
+If a rule causes a mandatory field to be hidden or disabled, this will not stop the form from being submitted.
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+To find out more about other workflow rules go to [Workflow](/docs/platform/rules/workflow/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).
+
+## Notes
+
 
 
 
