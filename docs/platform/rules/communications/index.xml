@@ -92,7 +92,7 @@ c. Add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the
 &lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example a text box control with an employee&amp;rsquo;s &amp;lsquo;Name&amp;rsquo; may be part of a form &amp;lsquo;Annual Leave Request&amp;rsquo;. Then this &amp;lsquo;Name&amp;rsquo; field can be used as an &lt;strong>expression&lt;/strong> in the email to send personalised emails, so these aspects must be set up in advance.&lt;/p>
 &lt;ol>
 &lt;li>Decide how the rule will be implemented, for example will an email be sent once a form is saved or submitted. In the example of form submit, then click on that form in the process &amp;gt; &lt;strong>Submit&lt;/strong> button &amp;gt; &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Send email&lt;/strong>.&lt;/li>
-&lt;li>Decide who the automated email will be sent from, for example a no-reply type email. If you leave the From field empty, the email will be sent from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>. If you want your email to come from a different sender, then go to [Email connector](#Email connector) for more details on how to set that up.&lt;/li>
+&lt;li>Decide who the automated email will be sent from, for example a no-reply type email. If you leave the From field empty, the email will be sent from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>. If you want your email to come from a different sender, then go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#email-connector">Email connector&lt;/a> for more details on how to set that up.&lt;/li>
 &lt;li>Any email addresses to send To, From, CC or BCC must be set up in advance. This could be a textbox in a form called &amp;lsquo;Email address&amp;rsquo; with a unique Name like &amp;rsquo;emailAddress&amp;rsquo;, or it could be a user picker field associated with particular users, groups or partners.&lt;/li>
 &lt;li>If you want to track the emails, then you must set up a field in your form to store email tracking.&lt;/li>
 &lt;li>If you want to attach any files to an email, files must first be stored in a File field in one of the forms.&lt;/li>
@@ -100,11 +100,14 @@ c. Add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">. For example if the form Training Approval has a Submit button within a form and you want to attach the rule to Send an email when the form is submitted, then you need to click on the form and the Submit button in that form.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/formvsbutton.png" alt="Form and button edit mode">&lt;/p>
+&lt;p>In the &lt;strong>Home&lt;/strong> page, in the left-hand side pane go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> to open the &lt;strong>Process design&lt;/strong> page.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Communications&lt;/strong> &amp;gt; &lt;strong>Send email&lt;/strong>.&lt;/p>
+&lt;p>Select an existing process, then select a form or field you want the &lt;strong>Send email&lt;/strong> rule to apply to so that the Edit/pen button appears &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">. For example, adding the the &lt;strong>Send email&lt;/strong> rule to a &lt;strong>Submit&lt;/strong> button within a form, select the form itself and then the submit button like show in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-page-select-submit.jpg" alt="Form and button edit mode">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the left-hand side pane, click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Communications&lt;/strong> &amp;gt; &lt;strong>Send email&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Choose from the edit options:&lt;/p>
@@ -113,14 +116,12 @@ c. Add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the
 &lt;p>&lt;strong>Title&lt;/strong> - of the email for example &amp;lsquo;Send email to Training Managers&amp;rsquo;&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Edit conditions&lt;/strong> - click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> create conditions to send the email, for example while a process has a &amp;lsquo;status&amp;rsquo; of &amp;lsquo;open&amp;rsquo;. This type of status value can be set in a utility panel.&lt;/p>
+&lt;p>&lt;strong>Edit conditions&lt;/strong> - click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to set conditions for sending an email, for example while a process has a &amp;lsquo;status&amp;rsquo; of &amp;lsquo;open&amp;rsquo;, send reminder emails. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>From&lt;/strong> - who the email is from, click on &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button"> and choose from the appropriate Selection mode, see [Selection mode](#Selection mode) below.&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Warning&lt;/strong>&lt;/p>
-&lt;p>If you add an email address to the From field then you must specify an Email connector, see [Email connector](#Email connector).&lt;/p>
-&lt;/blockquote>
+&lt;p>&lt;strong>From&lt;/strong> - who the email is from, click on &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button"> and choose from the appropriate &lt;strong>Selection mode&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#selection-mode">Selection mode&lt;/a> below.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Warning&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;em>If you add an email address to the &lt;strong>From&lt;/strong> field, you must specify an Email connector, see [Email connector](#Email connector).&lt;/em>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>To&lt;/strong> - who the email is to, click on &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button"> and choose from the appropriate Selection mode, see [Selection mode](#Selection mode) below.&lt;/p>
@@ -180,29 +181,57 @@ c. Add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the
 &lt;/ol>
 &lt;p>Note that this will override the global Email connector setting if one has been configured for your system. Go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> to check for a global setting.&lt;/p>
 &lt;h3 id="selection-mode">Selection mode&lt;/h3>
-&lt;p>When you are filling out the &lt;strong>To&lt;/strong>, &lt;strong>From&lt;/strong>, &lt;strong>CC&lt;/strong> or &lt;strong>BCC&lt;/strong> fields and click on the &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button">you have the following selection mode options to choose from: &lt;strong>Any user or partner&lt;/strong>, &lt;strong>User(s) defined in a user field&lt;/strong>, &lt;strong>Form owner(s)&lt;/strong>, &lt;strong>Email address in a field&lt;/strong>. Each option is explained below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/anygroups2.png" alt="Any user or partner mode">&lt;/p>
-&lt;p>Please note in all modes you can clear a field by clicking on the field and click on &lt;strong>Clear field&lt;/strong> &lt;img src="https://docs.kianda.com/images/clearx.png" alt="Clear field">.&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Any user or partner&lt;/strong> - if you choose this option, then click on &lt;strong>Users&lt;/strong> and choose from Users, Groups or Partners and click into the field under &lt;strong>Select users&lt;/strong> to see a dropdown list of users, predefined groups and partners and click onto your name of choice. You can add as many users, groups and partners as desired by clicking on a name in the list, or remove by clicking on the name within the field for example HR Team.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/clearfield.png" alt="Clear user field">&lt;/p>
-&lt;p>​ Clear the field if needed clicking on the field and click on &lt;strong>Clear&lt;/strong> &lt;img src="https://docs.kianda.com/images/clearx.png" alt="Clear field">.&lt;/p>
-&lt;ol start="2">
-&lt;li>&lt;strong>User(s) defined in a user field&lt;/strong> - if you choose this option, it means the user name is already defined in a form. Click on &lt;strong>User picker&lt;/strong> button &lt;img src="https://docs.kianda.com/images/userpicker.png" alt="User picker button"> and click into the field under &lt;strong>Select a user field&lt;/strong> to see a user picker field or other field within a form, where the user (email address), for example &amp;lsquo;Line Manager&amp;rsquo; is within the form Employee Request&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/userpickerfield.png" alt="Select a user field">&lt;/p>
-&lt;p>Click on the field to add to the list. You can add as many fields as desired by clicking on the &lt;strong>User picker&lt;/strong> button &lt;img src="https://docs.kianda.com/images/userpicker.png" alt="User picker button"> or remove a field by clicking on the field or by clicking on the &lt;strong>Bin/Trash&lt;/strong> button.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/nameduserpicker.png" alt="User defined field">&lt;/p>
-&lt;ol start="3">
-&lt;li>&lt;strong>Form owner(s)&lt;/strong> - if you choose this option, then click click into the field under &lt;strong>Form owner of selected form&lt;/strong> and choose from the forms within that process, where the form owner(s) email addresses will be selected.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/formowners.png" alt="Form owner of selected form">&lt;/p>
+&lt;p>When you are filling out the &lt;strong>To&lt;/strong>, &lt;strong>From&lt;/strong>, &lt;strong>CC&lt;/strong> or &lt;strong>BCC&lt;/strong> fields and click on the &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button">you have the following selection mode options to choose from:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>Any user or partner&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>User(s) defined in a user field&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>Form owner(s)&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>Email address in a field&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;!---->
+&lt;p>&lt;strong>Note&lt;/strong>; You can reset user/ field you selected by clicking &lt;strong>Clear&lt;/strong>&lt;img src="https://docs.kianda.com/images/clearx.png" alt="Clear field"> on the dropdown field in the &lt;strong>Select email users&lt;/strong> dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-selection-mode.jpg" alt="Select email users dialog box">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Any user or partner&lt;/strong> - With this &lt;strong>Selection mode&lt;/strong> selected. On the right-hand side of the &lt;strong>Select users&lt;/strong> dropdown list, you can choose to select from &lt;strong>Users, Groups&lt;/strong> and &lt;strong>Partners&lt;/strong>. This allows you to distinguish which users are picked for this field. For example a single user, or a group of users.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>User(s) defined in a user field&lt;/strong> - if you choose this option, it means the user name is already defined in a form. By clicking into the &lt;strong>Select a user field&lt;/strong>, you can select a field from the process you are working in.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Click on the desired &lt;strong>User&lt;/strong> field in your process to add to the &lt;strong>Select a user field&lt;/strong> box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-select-user.jpg" alt="Select user">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;img src="https://docs.kianda.com/images/userpicker.png" alt="User picker button"> to add more selection fields.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-add-user-field.jpg" alt="Add user field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Remove a field clicking on the &lt;strong>Bin/Trash&lt;/strong> button&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-remove-user-field.jpg" alt="User defined field">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form owner(s)&lt;/strong> - With this option selected, by clicking into the field under &lt;strong>Form owner of selected form&lt;/strong> and choose from the forms within that process. This automatically uses the form owner(s) email address. To learn more about forms and form owners go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Form basics&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-form-owner.jpg" alt="Form owner of selected form">&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;ol start="4">
-&lt;li>Email address in a field - if you choose this option, then click into the field under &lt;strong>Type the address or select from a field&lt;/strong> and either type in an email address or choose from a field within a form within that process.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Email address in a field&lt;/strong> - With this option selected, by clicking into the field under &lt;strong>Type the address or select from a field&lt;/strong>, you can either type in an email address or choose from a field within the process you are working in.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-email-address.jpg" alt="select email users">&lt;/p>
+&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/selectemailusers.png" alt="select email users">&lt;/p>
-&lt;p>In all cases when you have made your selection, click on &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;p>In all cases when you have made your selection, click on &lt;strong>OK&lt;/strong> button to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;h3 id="expression-builder">Expression builder&lt;/h3>
 &lt;p>The expression builder is a useful and efficient way to use existing form fields as part of automated emails that you want to send out.&lt;/p>
 &lt;p>For example if you have a form Annual Leave request that contains a text box field &amp;lsquo;Employee Name&amp;rsquo; you can use this field in an automated email to let a manager know that an employee has submitted an a request.&lt;/p>
