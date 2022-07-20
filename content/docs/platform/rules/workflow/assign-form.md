@@ -44,7 +44,7 @@ To dynamically assign a form to a user:
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. Under **Action** one or more actions for the rule by filling out the following:
+5. Under **Action** create one or more actions for the rule by filling out the following:
 
    - **Select form** - click on the field and select a form from the process. Click on the **Plus/Add** button ![Add/Plus button](/images/add-plus-action.jpg)to add more forms to assign. If you change your mind and want to delete a form, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 
