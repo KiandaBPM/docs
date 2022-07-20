@@ -90,18 +90,13 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 This rule can be used multiple times in sequence. A typical use case is that the first rule overrides the existing users and the following rule(s) appends users. 
 
-To view the default owners for the form, click on the form itself within the process in Designer and see named **Form owners **
+To view the default owners for the form, click on the form itself within the process in Designer and in the **Edit form** dialog box,  see named owners in the **Default owner(s)** field. See [Form owners](/docs/platform/application-designer/forms/form-owners/) for more details.
 
-A form renders in edit mode if 1) the user is member or the owner of the form and 2) the form is the current form 3) the form is not submitted or completed state. (The Go to form rule can reset the submitted state of a form)
+Note: a form displays in edit mode if:
 
-Note, it is not necessary to add a condition to the rule.  In this case the rule will be triggered automatically:  
-
-- if the rule is applied to a *field*, then the rule will be triggered when the user enters a value in that field.  
-- if the rule is applied to a *button*, then the rule will be triggered when the user clicks the button.
-- if the rule is applied to a *form*, then the rule will be triggered when the form is submitted.
-- if the rule is applied to a *process*, then the rule will be triggered on load, that is when the process is initiated.
-
-If a rule causes a mandatory field to be hidden or disabled, this will not stop the form from being submitted.
+1) The user is the owner of the form and
+2) The form is the current form 
+3) The form is not submitted or in a completed state, that is being worked on. The **Go to form** rule can reset the submitted state of a form, see [Go to form](/docs/platform/rules/workflow/go-to-form/) for details. 
 
 
 
@@ -111,7 +106,6 @@ To find out more about other workflow rules go to [Workflow](/docs/platform/rule
 
 To find out more about other rules go to [Rules](/docs/platform/rules/).
 
-## Notes
 
 
 
