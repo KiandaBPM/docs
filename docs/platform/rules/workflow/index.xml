@@ -139,7 +139,7 @@
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong> one or more actions for the rule by filling out the following:&lt;/p>
+&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by filling out the following:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Select form&lt;/strong> - click on the field and select a form from the process. Click on the &lt;strong>Plus/Add&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-plus-action.jpg" alt="Add/Plus button">to add more forms to assign. If you change your mind and want to delete a form, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
@@ -202,36 +202,87 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Go to form</title><link>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</guid><description>
-&lt;p>The &lt;strong>Go to form&lt;/strong> rule is used to control how a user moves between forms. Normally control passes to the next form and the user is not allowed to go back to the previous form. The Go to form rule allows you to redirect the user to any form. The user can then navigate back and forth between those forms.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/Gotoform.png" alt="Go to form rule dialog box">&lt;/p>
+&lt;p>The &lt;strong>Go to form&lt;/strong> rule is used to control how a user moves between forms. As mentioned in &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Form basics&lt;/a> by default the first form in a process is the &lt;strong>current form&lt;/strong>. Once submitted, control passes to the next form and the user is not allowed to go back to the previous form. The &lt;strong>Go to form&lt;/strong> rule allows you to redirect the user to any form. The user can then navigate back and forth between those forms.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>This rule may only be added to a button.&lt;/p>
+&lt;p>This rule may only be added to a &lt;strong>button&lt;/strong>.&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;strong>Warning&lt;/strong>&lt;/p>
-&lt;p>The Close form and Go to form rules &lt;em>cannot&lt;/em> be applied to the same button as both rules control which form comes next.&lt;/p>
-&lt;p>The Save form rule must be used &lt;em>and&lt;/em> must appear before the Go to form rule in the list of rules.&lt;/p>
+&lt;p>The &lt;strong>Close form&lt;/strong> and &lt;strong>Go to form&lt;/strong> rules &lt;strong>cannot&lt;/strong> be applied to the same button as both rules control which form comes next.&lt;/p>
+&lt;p>The &lt;strong>Save form&lt;/strong> rule must be used &lt;strong>and&lt;/strong> must &lt;strong>appear before the Go to form&lt;/strong> rule in the list of rules.&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="how-to-use">How to use&lt;/h2>
-&lt;p>To make the user go to a particular form:&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To dynamically redirect a user to a form:&lt;/p>
 &lt;ol>
-&lt;li>Click on a button.&lt;/li>
-&lt;li>Select Add a rule &amp;gt;Workflow &amp;gt; Go to form.&lt;/li>
-&lt;li>Under Action, choose the destination form from the list in the Select form field.&lt;/li>
-&lt;li>Select Edit mode as the Display mode so that the user will be able to edit the destination form.&lt;/li>
-&lt;li>Choose Yes (for Set as current form) to make the destination form the next active form. This will enable previously completed forms so that the user can navigate between these forms.&lt;/li>
-&lt;li>Click OK.&lt;/li>
-&lt;/ol>
-&lt;h2 id="notes">Notes&lt;/h2>
-&lt;p>Display mode:&lt;/p>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Go to form&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Go to form&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/Gotoform.png" alt="Go to form rule">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by filling out the following:&lt;/p>
 &lt;ul>
-&lt;li>Auto - the display mode will be either edit or read as determined by the system. If the destination form is the next form in the process workflow, and if the user is an owner of the form, and the form is not completed, then the form will be displayed in edit mode. Otherwise the form will appear in read mode.&lt;/li>
-&lt;li>Edit mode - the user will be able to edit the destination form.&lt;/li>
-&lt;li>Read mode - the user will be able to read (but not edit) the destination form.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Select form&lt;/strong> - click on the field and select a form from the process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Display mode&lt;/strong> - choose from:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Auto&lt;/strong> - the display mode will be either edit or read as determined by the system. If the destination form is the next form in the process workflow, and if the user is an owner of the form, and the form is not completed, then the form will be displayed in edit mode. Otherwise the form will appear in read mode.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Edit mode&lt;/strong> - the user will be able to edit the destination form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Read mode&lt;/strong> - the user will be able to read, but not edit, the destination form.&lt;/p>
+&lt;/li>
 &lt;/ul>
-&lt;p>Set as current form:&lt;/p>
-&lt;ul>
-&lt;li>Setting this flag to Yes will change the flow of control in your process. Check the current workflow in your process before making this change.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Process security</title><link>https://docs.kianda.com/docs/platform/rules/workflow/process-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/process-security/</guid><description>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Set as current form&lt;/strong> - choose from the radio buttons &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> this will change the process flow, forcing the selected form to become the current, active form.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/go-to-form-example.jpg" alt="Go to form example">&lt;/p>
+&lt;p>For example in the image above of an IT Support process, there are a number of forms, one of which is &lt;strong>User Review&lt;/strong>. In Kianda Designer, the &lt;strong>Go to form&lt;/strong> rule is assigned to a &lt;strong>Resolved&lt;/strong> button in the &lt;strong>1st Level Support&lt;/strong> form, meaning that the &lt;strong>User Review&lt;/strong> form becomes the next active form, not the &lt;strong>2nd Level Support&lt;/strong> form although it is the next form in the process workflow.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Remember this rule can only be attached to a button. When you click on the button, the rule will appear in the right-hand pane under &lt;strong>Rules&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/resolved-go-to-form-eg.jpg" alt="Rule on a form field">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>See example above, for a &lt;strong>Go to form&lt;/strong> rule, called &amp;lsquo;Go to User Review&amp;rsquo; for a resolved button. Note there are 11 rules attached to that button so the order of execution is important, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> to learn more about how to change rule order.&lt;/p>
+&lt;p>The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.&lt;/p>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Make required</title><link>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</guid><description>
+&lt;p>Page under construction&lt;/p></description></item><item><title>Docs: Process security</title><link>https://docs.kianda.com/docs/platform/rules/workflow/process-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/process-security/</guid><description>
 &lt;p>This rule &lt;em>dynamically&lt;/em> changes the security settings of an instance of a process. You can set the security settings for a process by going to the Process Settings in the Designer. (If you tick Enable process security, you can then select users and their access level.) This setting is static and applies to every instance of the process. The Process security rule is &lt;em>dynamic&lt;/em> and changes the security settings for a particular instance.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/ProcessSecurity.png" alt="Process security rule dialog box 1">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
