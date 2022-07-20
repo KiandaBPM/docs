@@ -62,12 +62,10 @@ The image below presents deleted process instances. As shown in the **Delete per
 
 ### User tip ![Target icon](/images/05.png) ###
 
-Note, it is not necessary to add a condition to the rule.  In this case the rule will be triggered automatically:  
+- When adding the **Delete form** rule to a process, make sure to change the rule order of execution of the **Delete form** to be after **Submit form**. Remember that you can't submit a deleted form.
 
-- if the rule is applied to a *field*, then the rule will be triggered when the user enters a value in that field.  
-- if the rule is applied to a *button*, then the rule will be triggered when the user clicks the button.
-- if the rule is applied to a *form*, then the rule will be triggered when the form is submitted.
-- if the rule is applied to a *process*, then the rule will be triggered on load, that is when the process is initiated.
+
+
 
 ### What's next ![Idea icon](/images/18.png) 
 

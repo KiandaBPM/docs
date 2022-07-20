@@ -42,7 +42,13 @@ To implement the rule:
 
 8. Select a form or field to **Trigger rules if validation condition apply** so that rules attached to that particular form or field are initiated if the condition(s) set in step 6 apply.
 
+   For example if the **Submit** button is selected in this field, all its rules will be executed which means the **Submit process**, **Save process** and **Close** rules will be executed after a condition is met.
+
+   ![Submit button rules](/images/submit-button-rules.jpg)
+
 From the example mentioned above, we created a simple **Incident Form** in which a user needs to select a date of an incident. The image below displays the **Validate input** rule in action, where the date selected **Is After Today** therefore the condition is valid and an error message is displayed. 
+
+![Incident form date error message](/images/examples-validate-input-error-message.jpg)
 
 ### Editing, deleting or duplicating rules
 
@@ -58,7 +64,9 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
 
+### User tip ![Target icon](/images/05.png) ###
 
+- When validating a field, form or a process, think of conditions. When a condition is met, an action must follow. For example an error message is displayed(**Action**) when the wrong date is entered(**Condition**).
 
 ### What's next ![Idea icon](/images/18.png) 
 
