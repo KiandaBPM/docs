@@ -50,14 +50,23 @@ To implement the rule:
 
 7. You can create conditions for the actions to happen, see [Conditions](/docs/platform/rules/general/add-conditions/) for more information.
 
-### User tip ![Target icon](/images/05.png) ###
+### Editing, deleting or duplicating rules
 
-Note, it is not necessary to add a condition to the rule.  In this case the rule will be triggered automatically:  
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
 
-- if the rule is applied to a *field*, then the rule will be triggered when the user enters a value in that field.  
-- if the rule is applied to a *button*, then the rule will be triggered when the user clicks the button.
-- if the rule is applied to a *form*, then the rule will be triggered when the form is submitted.
-- if the rule is applied to a *process*, then the rule will be triggered on load, that is when the process is initiated.
+1. To **disable** a rule click the slider across beside the rule name. 
+
+![Disable a rule](/images/disable-rule.jpg)
+
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
+
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
+
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+
+### User tip ![Target icon](/images/05.png)
+
+- You can add a condition to the **Save form** rule to make sure that users fill out certain pieces of information in your form before they can actually save it.
 
 ### What's next ![Idea icon](/images/18.png) 
 

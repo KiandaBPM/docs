@@ -35,8 +35,8 @@ By default all forms come with a Close button, and therefore a **Close form** ru
 4. In the **On form close navigate to** option, you can select from four different actions.
 
    - **Auto** - This option will redirect the user to the last location they were before opening the form.
-   - **Return to a dashboard** - This option will redirect the user to a dashboard of choice.
-   - **Return to URL** - This option will redirect the user to any URL specified.
+   - **Return to a dashboard** - This option will redirect the user to a dashboard of choice. To navigate to a specific dashboard, in the **Please choose a dashboard** option select the desired dashboard. 
+   - **Return to URL** - This option will redirect the user to any URL specified in the **Please choose a field or type the URL** text box.
    - **Go to process** - This option will redirect you to a process specified in the **Please indicate the process or instance ID** text box.
 
    #### How the Go to process option works
@@ -52,6 +52,22 @@ By default all forms come with a Close button, and therefore a **Close form** ru
      ![Edit process - ID field](/images/rule-close-instance-id.jpg)
 
    Query string parameters are used to populate form or fields when a given form is loaded. To learn more about query parameters go to [Query parameters](/docs/platform/pages/link/#heading).
+   
+   
+
+### Editing, deleting or duplicating rules
+
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
+
+1. To **disable** a rule click the slider across beside the rule name. 
+
+![Disable a rule](/images/disable-rule.jpg)
+
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
+
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
+
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
 
 ### User tip ![Target icon](/images/05.png) ###
 
