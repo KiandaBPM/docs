@@ -35,9 +35,12 @@
 &lt;/li>
 &lt;li>
 &lt;p>Select a form or field to &lt;strong>Trigger rules if validation condition apply&lt;/strong> so that rules attached to that particular form or field are initiated if the condition(s) set in step 6 apply.&lt;/p>
+&lt;p>For example if the &lt;strong>Submit&lt;/strong> button is selected in this field, all its rules will be executed which means the &lt;strong>Submit process&lt;/strong>, &lt;strong>Save process&lt;/strong> and &lt;strong>Close&lt;/strong> rules will be executed after a condition is met.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/submit-button-rules.jpg" alt="Submit button rules">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>From the example mentioned above, we created a simple &lt;strong>Incident Form&lt;/strong> in which a user needs to select a date of an incident. The image below displays the &lt;strong>Validate input&lt;/strong> rule in action, where the date selected &lt;strong>Is After Today&lt;/strong> therefore the condition is valid and an error message is displayed.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-validate-input-error-message.jpg" alt="Incident form date error message">&lt;/p>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
@@ -55,6 +58,10 @@
 &lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>When validating a field, form or a process, think of conditions. When a condition is met, an action must follow. For example an error message is displayed(&lt;strong>Action&lt;/strong>) when the wrong date is entered(&lt;strong>Condition&lt;/strong>).&lt;/li>
+&lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Field Display mode</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</guid><description>
@@ -344,12 +351,8 @@
 &lt;p>The image below presents deleted process instances. As shown in the &lt;strong>Delete personal data for GDPR reasons&lt;/strong> column, there is no &lt;strong>Yes&lt;/strong> values as all those processes were deleted from the system.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/examples-delete-form-list-widget.jpg" alt="Deleted processes - list widget">&lt;/p>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;p>Note, it is not necessary to add a condition to the rule. In this case the rule will be triggered automatically:&lt;/p>
 &lt;ul>
-&lt;li>if the rule is applied to a &lt;em>field&lt;/em>, then the rule will be triggered when the user enters a value in that field.&lt;/li>
-&lt;li>if the rule is applied to a &lt;em>button&lt;/em>, then the rule will be triggered when the user clicks the button.&lt;/li>
-&lt;li>if the rule is applied to a &lt;em>form&lt;/em>, then the rule will be triggered when the form is submitted.&lt;/li>
-&lt;li>if the rule is applied to a &lt;em>process&lt;/em>, then the rule will be triggered on load, that is when the process is initiated.&lt;/li>
+&lt;li>When adding the &lt;strong>Delete form&lt;/strong> rule to a process, make sure to change the rule order of execution of the &lt;strong>Delete form&lt;/strong> to be after &lt;strong>Submit form&lt;/strong>. Remember that you can&amp;rsquo;t submit a deleted form.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
