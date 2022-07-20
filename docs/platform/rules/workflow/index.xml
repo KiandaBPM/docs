@@ -202,7 +202,7 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Go to form</title><link>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</guid><description>
-&lt;p>This rule is used to control how a user moves between forms. Normally control passes to the next form and the user is not allowed to go back to the previous form. The Go to form rule allows you to redirect the user to any form. The user can then navigate back and forth between those forms.&lt;/p>
+&lt;p>The &lt;strong>Go to form&lt;/strong> rule is used to control how a user moves between forms. Normally control passes to the next form and the user is not allowed to go back to the previous form. The Go to form rule allows you to redirect the user to any form. The user can then navigate back and forth between those forms.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/Gotoform.png" alt="Go to form rule dialog box">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>This rule may only be added to a button.&lt;/p>
