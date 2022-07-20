@@ -58,7 +58,7 @@ To dynamically assign a form to a user:
 
      ![Select form field](/images/assign-form-select-field.jpg) 
 
-   - **Existing user(s)** - choose from **Override** or **Append** where **Override** means that this rule will override form ownership, making those referenced in the **Edit rule dialog** box**, the form owners. **Append** means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the **Edit rule dialog** box. 
+   - **Existing user(s)** - choose from **Override** or **Append** where **Override** means that this rule will override form ownership, making those referenced in the **Edit rule dialog** box**, the form owners**. **Append** means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the **Edit rule dialog** box. 
 
 9. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
