@@ -1,6 +1,6 @@
 ---
 title: "Assign form"
-weight: 2
+weight: 4
 typora-root-url: ..\..\..\..\..\static
 ---
 
@@ -54,11 +54,14 @@ To dynamically assign a form to a user:
      - **Defined in a user field** - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them. 
      - **Form owner(s)** - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see [Form owners](/docs/platform/application-designer/forms/form-owners/) for more details on what form ownership is and how to create form owners.
      
-   - Depending on the option chosen for **Assign to**, different fields will display. For example if **Any user** is chosen, then a **Select user(s)** field appears as shown in the image above. If **Defined in a user field** or **Form owner(s)** is chosen then a **Select form field** appears prompting you to select a user picker field for the former, and a form with form owners for the latter. In the example below a user from a field called **Requester** will become the form owner of a form called **User Feedback**.
+   - Depending on the option chosen for **Assign to**, different fields will display. For example if **Any user** is chosen, then a **Select user(s)** field appears as shown in the image above. If **Defined in a user field** or **Form owner(s)** is chosen then a **Select form field** appears prompting you to select a user picker field for the former, and a form with form owners for the latter. For example, in the image below a user from a field called **Requester** will become the form owner of a form called **User Feedback**.
 
      ![Select form field](/images/assign-form-select-field.jpg) 
 
-   - **Existing user(s)** - choose from **Override** or **Append** where **Override** means that this rule will override form ownership, making those referenced in the **Edit rule dialog** box**, the form owners**. **Append** means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the **Edit rule dialog** box. 
+   - **Existing user(s)** - choose from:
+
+     -  **Override** - this means that this rule will override form ownership, making those referenced in the **Edit rule dialog** box**, the form owners**.
+     - **Append** - this means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the **Edit rule dialog** box. 
 
 9. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 

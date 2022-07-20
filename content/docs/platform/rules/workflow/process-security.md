@@ -1,8 +1,10 @@
 ---
 title: "Process security"
+weight: 5
+typora-root-url: ..\..\..\..\..\static
 ---
 
-This rule *dynamically* changes the security settings of an instance of a process. You can set the security settings for a process by going to the Process Settings in the Designer.  (If you tick Enable process security, you can then select users and their access level.)  This setting is static and applies to every instance of the process.  The Process security rule is *dynamic* and changes the security settings for a particular instance.
+The **Process security** rule *dynamically* changes the security settings of an instance of a process. You can set the security settings for a process by going to the Process Settings in the Designer.  If you tick Enable process security, you can then select users and their access level.  This setting is static and applies to every instance of the process.  The Process security rule is *dynamic* and changes the security settings for a particular instance.
 
 ![Process security rule dialog box 1](/images/ProcessSecurity.png)
 

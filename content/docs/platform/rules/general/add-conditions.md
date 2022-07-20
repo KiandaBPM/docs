@@ -18,8 +18,12 @@ Conditions work on the ‘if…then’ principle: ‘if’ the condition exists 
 
 ## Create the condition
 
-1. To create **conditions**, first choose the **process element** you want the condition to apply to – such as a form, set of forms, a field/control or set of fields.
+1. To create **conditions**, first choose the **process element** you want the condition to apply to – such as a form, set of forms, a field/control or set of fields. This could also be a set of common fields associated with all process instances, such as **Process ID**, **Status** or **Modified by**, see image below.
+
+   ![Common fields used in the process element part of a condition](/images/common-fields-in-condition.jpg)
+
 2. Next, depending on whether the rule is applied to a **text-based field or date-based field**, choose from 13 text operators or 25 date operators (see image below).
+
 3. Then choose a **value**, this could be typed in text, number(s), date(s), form(s) or field(s).
 
 ***Condition elements***
