@@ -49,45 +49,46 @@ In advance of using this rule, you need to have **created one or more forms, com
 
       ***Warning*** 
       
-      *If you add an email address to the **From** field, you must specify an Email connector, see [Email connector](#Email connector).*
+      *If you add an email address to the **From** field, you must specify an Email connector, see [Email connector](/docs/platform/rules/communications/send-email/#email-connector). If a connector is not specified, the emails will come from noreply@kianda.com*. 
       
-   4. **To** - who the email is to, click on **Person** button ![Person button](/images/person.png) and choose from the appropriate Selection mode, see [Selection mode](#Selection mode) below.
+   4. **To** - who the email is to, click on **Person** button ![Person button](/images/person.png) and choose from the appropriate Selection mode, see [Selection mode](/docs/platform/rules/communications/send-email/#selection-mode) below.
 
    5. **CC** - who will be copied on the email, as with **To** field.
 
    5. **BCC** - who will be blind copied on the email, as with **To** field.
 
-   5. **Subject** - type in your email subject and click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, go to [Expression builder](#Expression builder) for more information. The **Subject** cannot be left empty.
+   5. **Subject** - type in your email subject and click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, go to [Expression builder](/docs/platform/rules/general/expression-builder/) for more information. The **Subject** cannot be left empty.
 
-   5. **Body** - choose from an array of styles and formats to create your email including **Style,** **Colour**, **Font  size**, **Remove font style**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, **Table**, **Link**, **Picture**, **Attach a File** and **Code view**. For example if you click on **Code view** button ![Code view button](/images/\code.png) you can copy HTML code directly into the body text.
+   5. **Body** - choose from an array of styles and formats to create your email including **Style,** **Colour**, **Font  size**, **Remove font style**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, **Table**, **Link**, **Picture**, **Attach a File** and **Code view**. For example if you click on **Code view** button ![Code view button](/images/code.png) you can copy HTML code directly into the body text.
 
-      ![Send email](/images/email.png)
+      ![Send email](/images/send-email-edit-box.jpg)
 
       
 
-      To find out more about how to attach a file, see [Attachments](#Attachments) for more details.
+      To find out more about how to attach a file, see [Attachments](/docs/platform/rules/communications/send-email/#attachments) for more details.
 
-      Click into body text to type in your text. If you want a useful way to personalise automated emails using fields from the forms you have created click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, see [Expression builder](#Expression builder) for more details. 
+      To add a message to your email, click on the **Body** text box. You can personalise automated emails using fields from the process by clicking on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, see [Expression builder](/docs/platform/rules/general/expression-builder/) for more details. 
 
    9. **Send via connector** - options are a) No or b) Yes 
 
-      - If you choose **Yes** then you must choose an **Email connector** and decide if you want to **Save Sent Items** (Yes or No) which means sent emails are saved in a sent items folder in your email account. For more information go to [Email connector](#Email connector)
-   ![Email connector options](/images/emailconnector.png) 
+      - If you choose **Yes** then you must choose an **Email connector** and decide if you want to **Save Sent Items** (Yes or No) which means sent emails are saved in a sent items folder in your email account. For more information go to [Email connector](/docs/platform/rules/communications/send-email/#email-connector)
+   ![Email connector options](/images/send-email-connector-yes.jpg) 
 
-   5. **Enable tracking** - options are a) No or b) Yes 
+   10. **Enable tracking** - options are a) No or b) Yes 
 
       - Note that this option is only available if **Send via connector** is set to **No** and the email is being sent from noreply@kianda.com. 
-      - If you choose **Yes** then you must click into the field under **Field to store tracking event (Open, Click, Bounce, Spam)** and choose a field from a form to store the event. 
-
-      ![Enable tracking](/images/enabletrackingyes.png)
-
+   
+      - If you choose **Yes** then you must click into the field under **Field to store tracking event (Open, Click, Bounce, Spam)** and choose a field from a form to store the event.
+   
+        ![Enable tracking](/images/send-email-tracking.jpg)
+   
       * This option allows you to track the email after it is sent. All of these events, Open, Click, Bounce and Spam will be tracked.
-
+   
    11. Click on **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
-
+   
    12. Note when your rule is complete you may want to change the order of rules for the particular field or form that it has been applied to. Drag the new Send email rule to where you want, so the order of execution of rules is correct. 
-
-       For example for a Submit button on a form I may want my **Send email rule** to be executed first before any other rule is executed. To do this click on the **Submit** button to make sure you are in **Edit** mode, and under **Rules** in the right-hand pane,  drag the **Send email** rule to the top of the list by clicking on the rule and dragging it to the top.
+   
+       For example for a Submit button on a form I may want my **Send email rule** to be executed first before any other rule is executed. To do this click on the **Submit** button to make sure you are in **Edit** mode, and under **Rules** in the right-hand pane,  drag the **Send email** rule to the top of the list by clicking on the rule and dragging it.
        ![Rule order](/images/ruleorder.png)
        
        For more information on rules, see [Rules](rules/Readme.md).
@@ -97,7 +98,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
 The email connector must be set up in advance. 
 
-If you leave the From field empty, the email will be sent from noreply@kianda.com.  If you want your email to come from a different sender, follow these steps when you are editing the Send email rule:
+If you leave the **From** field empty, the email will be sent from noreply@kianda.com.  If you want your email to come from a different sender, follow these steps when you are editing the Send email rule:
 
 1. Set **Send via connector** to **Yes**.  
 2. Click into the field under **Email connector** and select a connector. 
@@ -160,21 +161,19 @@ In all cases when you have made your selection, click on **OK** button to save y
 
 The expression builder is a useful and efficient way to use existing form fields as part of automated emails that you want to send out.
 
-For example if you have a form Annual Leave request that contains a text box field 'Employee Name' you can use this field in an automated email to let a manager know that an employee has submitted an a request. 
+For example if you have a form Annual Leave request that contains a text box field 'Employee Name' you can use this field in an automated email to let a manager know that an employee has submitted a request. 
 
-1. Before you begin have your body text inserted into the **Body** of the email and position your cursor where you want to add an expression, for example an Employee Name after 'Your employee' as shown below.
+1. Before you begin have your message inserted into the **Body** of the email and position your cursor where you want to add an expression, for example an Employee Name after 'Your employee' as shown below.
 
    ![Body text](/images/bodytext.png)
 
-2. Click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png)beside email **Body** then the Expression builder dialog box opens.
+2. Click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png)on the right-hand side of the email **Body**. An **Expression** **builder** dialog box opens.
 
 3. Click into the field under **Add field to expression**. Forms and fields that are part of your process appear where you can expand elements to drill down to find the field that you want, for example 'Employee Name'. Click on the field to add field to the expression.
 
+   ![Expression builder](/images/expressionaddfield.png)
 
-
-![Expression builder](/images/expressionaddfield.png)
-
-3. Click on the **Add to expression** button ![Add to expression](/images/addtoexpression.png)to add the field as an expression.
+3. Click on the **Add to expression** button ![Add to expression](/images/addtoexpression.png)to add the field as an expression. Note that the expression is the **Name(unique)** of that field.
 
    ![Expression added](/images/expressionadded.png)
 
@@ -192,23 +191,37 @@ For example if you have a form Annual Leave request that contains a text box fie
 
    Then search for other fields, for example lists or links, and use the Expression reference functions, see step 7.
 
-7. Click on Reference button ![Expression reference](/images/reference.png) button to find out how to use particular functions in your email. For example **ProcessLink()** returns the html link to the current process. Copy this function into the Expression box and click on **OK** to add the function. Then in the **Body** type in the text you want associated with this link for example "click here" into the brackets of the function:
+7. Click on **Reference** ![Expression reference](/images/reference.png) to find out how to use particular functions in your email. For example **ProcessLink()** returns the html link to the current process. Copy this function into the Expression box and click on **OK** to add the function. Then in the **Body** type in the text you want associated with this link for example "click here" into the brackets of the function:
 
    ![Click here text](/images/clickhere.png)
 
-   In this way you can build sophisticated automated emails that provide a link back to a process instance, for example that a manager can view, update or approve. For more information on References and Expressions see [Expressions](expressions.md) for more information.
+   In this way you can build personalised automated emails that provide a link back to a process instance, for example that a manager can view, update or approve. For more information on References and Expressions see [Expressions](/docs/getting-started/create-first-process/plan-your-process/expressions/) for more information.
 
 
 
 ### Attachments ###
 
-To attach a file to an automated email, click on the **Attach a file** button ![Attach a file button](/images/attachfile.png) and the Attach file to email dialog box opens.
+To attach a file into the **Send email** rule, you must first contain a file field in your process. To learn more about file control go to [File upload control](/docs/platform/controls/input/file-upload/). 
 
-**Attachments**: Files can be attached to the email.  First the file must be stored in a File field in one of the forms.  Open the Send Email rule and find the File icon in the Body field menu.  Click in the File field to find the field where the file is stored. Click on Insert attachment.  There is an option to attach a link to the file rather than the file itself.
+1. To attach a file to an email, click on the **Attach a file** button ![Attach a file button](/images/attachfile.png). The **Attach file to email** dialog box opens. 
+
+2. Select a **File** field from your process to attach the file, for example an image as shown in the image below.
+
+   ![Attach file dialog box](/images/send-email-attach-file.jpg)
+
+3. Click in the **File** field to find the field where the file is stored.
+
+4. Click on **Insert attachment**. There is an option to attach a link to the file rather than the file itself.
+
+In the **Attachments** section of the Send email dialog box, the name of the **File** field will appear indicating that attachments will come from the specified field. You can delete the specified File field by clicking the red bin/trash icon.
+
+![Send email dialog box - attachment section](/images/send-email-attachment.jpg)
 
 
 
+### What’s next ![Idea icon](/images/18.png)
 
+To find out more about other communication rules go to [Communication rules](/docs/platform/rules/communications/).
 
-
+To find out more about other rules go to [Rules](/docs/platform/rules/).
 
