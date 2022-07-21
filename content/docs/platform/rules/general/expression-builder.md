@@ -22,7 +22,7 @@ In the example above, **[RequesterName]** and **[category]** are identifiers, th
 
 ## Getting started with expressions – example Email body text
 
-Expressions are recognisable in Kianda from the **Expressions** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png) found in **Edit rule dialog boxes** and **other menu items**, such as enabling quick actions for processes and number fields.
+Expressions are recognisable in Kianda from the **Expressions** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png) found in **Edit rule dialog boxes** and **other menu items**, such as enabling **quick actions** for processes and **number fields**.
 
 Within rules, expressions can be created using the **Expression builder** where you can **Add field to an expression** or use the handy **Reference** guide to get a list of commonly used functions.
 
@@ -30,15 +30,31 @@ Within rules, expressions can be created using the **Expression builder** where 
 
 ![img](https://academy.kianda.com/wp-content/uploads/2022/03/expressionbuilder2.gif)
 
-Now let’s go step by step through the process of adding an expression to the **Body** section of an email being sent using the **Send email** rule:
+Let's look at an example of using an expression in the **Body** section of an email being sent using the **Send email** rule:
 
 1. First, add a **Send email** rule to a form or forms, field or fields by selecting **Add a rule** > **Communications**> **Send email** from the left-side pane.
-2. In the **Body** section of the email (under **Action**), click on the ***\*Expressions\** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png)**.
-3. Click on the blank box under **Add field to expression** and find the field you want to reference in your email – for example, a text box titled **EmployeeName**.
-4. Click **Add to expression**.
-5. Click **OK**.
-6. To add additional field expressions, click on the ***\*Expressions\** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png)** again, under **Add field to expression**, click on **X** beside the field name to clear the expression box and then search for the desired field from a form.
-7. To add a function, click on **Reference** and copy the function into the body of the email. A list of references are available below.
+
+2. Type in any text that you want in the email **Body** and position your cursor where you want to add the expression.
+
+   ![Cursor positioning in an email body to add an expression](/images/cursor-in-expression.jpg)
+
+3. On the right of the **Body** section of the email, click on the **Expressions** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png).
+
+4. The **Expression builder** dialog box appears.
+
+5. Click on the blank box under **Add field to expression** and find the field you want to reference in your email, for example, a text box with a name **'EmployeeName'**.
+
+6. Click **Add to expression**. The result is that the field appears in the Expression box. 
+
+   ![Expression builder example](/images/expression-builder-example.jpg)
+
+7. Click **OK** to add the expression to the email body text, or click on **Close** to exit the dialog box without making changes.
+
+8. To add additional field expressions, click on the **Expressions** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png)again, under **Add field to expression**, click on **X** beside the field name to clear the expression box and then search for the desired field from a form.
+
+9. To add a function, click on **Reference** and copy the function into the body of the email. A list of references are available below.
+
+   
 
 ## Expression functions
 
@@ -70,4 +86,8 @@ In addition to defining your own expressions there is a set list of expressions 
 ### What's next  ![Idea icon](/images/18.png) ###
 
 To find out more about rule implementation, go to the main [Rules](/docs/platform/rules/) page and then click on the links to the different rule categories.
+
+To see how expressions are used in controls such as Number fields, go to [Number control](/docs/platform/controls/input/number/).
+
+
 
