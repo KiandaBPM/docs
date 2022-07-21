@@ -151,7 +151,9 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;p>Check-out the &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">development&lt;/a> section for more details on how to build custom widgets in Kianda.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced the key concepts of rules. Click on the links below to read more about rule concepts in detail:&lt;/p></description></item><item><title>Docs: Workflow rules</title><link>https://docs.kianda.com/docs/platform/rules/workflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/</guid><description>
-&lt;p>&lt;strong>Workflow&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> used to represent the actions a user intends to perform when they interact with form components, and be used to change the flow of information within a process.&lt;/p>
+&lt;p>&lt;strong>Workflow&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> used relating to user interactions with form components. Using Workflow rules will also allow you to change the flow of information within a process. For example in a simple Training Process that is made up of three forms by default, the &lt;strong>first form&lt;/strong> in a process is the &lt;strong>current form&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/3-form-example.jpg" alt="Three form process example">&lt;/p>
+&lt;p>In the example above, the workflow for this process would be completion of the forms in this order: &lt;strong>Training Request&lt;/strong> &amp;gt; &lt;strong>Training Approval&lt;/strong> &amp;gt; &lt;strong>Training Attendance&lt;/strong> however using Workflow rules, you could use &lt;strong>Go to form&lt;/strong> to force the &lt;strong>Training Attendance&lt;/strong> form to be the current form after the Training Request form has been completed. You could also use &lt;strong>Assign form&lt;/strong> to assign editing rights to particular users so they can edit forms. Using rules in this way changes the flow of the process, and additional levels of security and user interaction can be added using &lt;strong>Process security&lt;/strong> and &lt;strong>Hide or disable&lt;/strong> see below.&lt;/p>
 &lt;h2 id="getting-started-with-workflow-rules">Getting started with Workflow rules&lt;/h2>
 &lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>Workflow&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Workflow&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/workflow-rules.jpg" alt="Workflow rules">&lt;/p>
@@ -159,11 +161,11 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;ol>
 &lt;li>
 &lt;h3 id="hide-or-disable">Hide or disable&lt;/h3>
-&lt;p>This rule is used to hide, disable, show or enable one or more fields, one or more sections or entire forms. This rule has special meaning in terms of workflow allowing the application to direct user action and flow by hidding or showing entire sections of the application.&lt;/p>
+&lt;p>This rule is used to hide, disable, show or enable one or more fields, one or more sections or entire forms. This rule has special meaning in terms of workflow allowing the application to direct user action and flow by hiding or showing entire sections of the application.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;h3 id="make-required">Make required&lt;/h3>
-&lt;p>Use this rule to make individual fields required or entire forms. Unlike the field property &amp;lsquo;Required&amp;rsquo;, this rule will dynamically allocate a mandatory status on chosen forms or fields, for users to submit.&lt;/p>
+&lt;p>Use this rule to make individual fields required or entire forms. Unlike the field property &amp;lsquo;Required&amp;rsquo;, this rule will dynamically allocate a mandatory status on chosen forms or fields, that users must complete and submit.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;h3 id="go-to-form">Go to form&lt;/h3>
@@ -171,7 +173,7 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;/li>
 &lt;li>
 &lt;h3 id="assign-form">Assign form&lt;/h3>
-&lt;p>This rule enables dynamic form ownership and form security assigment of a form owner by assigning a user or a group to a form. You could also choose to override or append the form owner. By default only form owners can see the form in edit&lt;/p>
+&lt;p>This rule enables dynamic form ownership and form security assignment of a form owner by assigning a user or a group to a form. You could also choose to override or append the form owner. By default only form owners can see the form in edit&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;h3 id="process-security">Process security&lt;/h3>

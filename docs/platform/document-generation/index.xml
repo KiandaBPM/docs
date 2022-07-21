@@ -1,51 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Document generation</title><link>https://docs.kianda.com/docs/platform/document-generation/</link><description>Recent content in Document generation on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/document-generation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Word document add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</guid><description>
 &lt;p>You can &lt;strong>generate reports&lt;/strong> within Kianda processes and &lt;strong>populate&lt;/strong> the reports with &lt;strong>data captured&lt;/strong> within each process instance. This could be useful, for example, for inspection reports where a report template can be used to show the information the engineer input to a &lt;strong>Kianda form&lt;/strong> during his inspection. Each time an inspection is performed, a report is generated based on a Word template and the report shows the relevant information that was captured during that particular inspection.&lt;/p>
-&lt;p>&lt;em>Microsoft Word template with Kianda form fields&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/word-kianda-example.jpg" alt="Get add-ins">&lt;/p>
-&lt;p>In the example above, a report will generate data pulled from a Kianda process instance (record) that contains the date, company and location data within an ‘Inspection Form’ and a ‘Request Form’. To create this kind of template, you can use a &lt;strong>Kianda Add-in&lt;/strong> in Word to link your document to your Kianda process.&lt;/p>
-&lt;h3 id="using-the-kianda-add-in-for-word">Using the Kianda Add-in for Word&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>Create a template outline in Microsoft Word.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>Insert&lt;/strong> tab &amp;gt; &lt;strong>Get Add-ins&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/word-get-add-in.jpg" alt="Get add-ins">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Search for &lt;strong>Kianda&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add&lt;/strong>, then &lt;strong>Continue&lt;/strong> and click on the &lt;strong>Home&lt;/strong> tab. The &lt;strong>Show Kianda Taskpane&lt;/strong> should be added to your ribbon.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>Kianda Add-in&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/word-kianda-add-in-button.jpg" alt="Kianda button in word">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Log in using your username and password, select your subscription.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the process link button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif" alt="Process link button"> to get a dropdown list of Kianda processes that you have access to based on your role, for example Administrator or Designer.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select a relevant process and a relevant form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Position your cursor in the Word document at the point where you would like to add in form fields.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select the Kianda form field you would like to add to the Word template. For example Company field in the Request form as shown below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/word-kianda-field-select.jpg" alt="Field select in Kianda add-in">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Repeat for as many form fields as needed and format the document as necessary.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Save the template. You can then add in the template as a File field within the process in Kianda.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>To watch a short video demonstrating each of the steps above and showcases the use of a template to produce a report in a sample inspection process, go to &lt;a href="https://academy.kianda.com/lesson/addin/">Kianda Add-in&lt;/a>.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>There is also a Kianda Add-in for Excel that is added in the same way as the Kianda Add-in for Word. Usage is very similar allowing you to connect an Excel spreadsheet to Kianda processes to create a template that can be used within processes. To learn more about adding Kianda to excel go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/">Excel workbook add-in&lt;/a>.&lt;/p></description></item><item><title>Docs: Excel workbook add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
