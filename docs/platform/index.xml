@@ -731,7 +731,8 @@ Your browser does not support the video tag.
 &lt;p>&lt;em>Microsoft Word template with Kianda form fields&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/04/word-template.gif" alt="MS Word template containing Kianda form fields">&lt;/p>
 &lt;p>In the example above, a report will generate data pulled from a Kianda process instance (record) that contains the date, company and location data within an ‘Inspection Form’ and a ‘Request Form’. To create this kind of template, you can use a &lt;strong>Kianda Add-in&lt;/strong> in Word to link your document to your Kianda process.&lt;/p>
-&lt;h4 id="using-the-kianda-add-in-for-word">Using the Kianda Add-in for Word&lt;/h4>
+&lt;h4 id="using-the-kianda-add-in">Using the Kianda Add-in&lt;/h4>
+&lt;p>The example below steps through how to use the Kianda Add-in for Word, however the same steps apply to get started with the Kianda Add-in for Excel.&lt;/p>
 &lt;ol>
 &lt;li>Create a template outline in Microsoft Word.&lt;/li>
 &lt;li>Click on the &lt;strong>Insert&lt;/strong> tab &amp;gt; &lt;strong>Get Add-ins&lt;/strong> and search for &lt;strong>Kianda&lt;/strong>.&lt;/li>
@@ -743,10 +744,7 @@ Your browser does not support the video tag.
 &lt;li>Repeat for as many form fields as needed and format the document as necessary.&lt;/li>
 &lt;li>Save the template. You can then add in the template as a File field within the process in Kianda.&lt;/li>
 &lt;/ol>
-&lt;p>The video demonstrates each of the steps above and showcases the use of a template to produce a report in a sample inspection process.&lt;/p>
-&lt;p>The lesson&lt;a href="https://academy.kianda.com/lesson/file-management/"> File Management &lt;/a>in the Rules section of the course shows how the Kianda Add-in is used to create a template, which generates a document, that can be converted to a pdf file and added as a report to an automated email.&lt;/p>
-&lt;p>There is also a Kianda Add-in for Excel that is added in the same way as the Kianda Add-in for Word. Usage is very similar allowing you to connect an Excel spreadsheet to Kianda processes to create a template that can be used within processes.&lt;/p>
-&lt;p>You’ve now completed lessons on how to create forms, add in controls and rules, and perform administration functions like adding users. The next lesson will introduce how layers of security can be added during the creation of processes, forms and fields. It will also cover user roles and predefined privileges.&lt;/p></description></item><item><title>Docs: Task Automation with Kianda</title><link>https://docs.kianda.com/docs/platform/automation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/automation/</guid><description>
+&lt;p>There is also a Kianda Add-in for Excel that is added in the same way as the Kianda Add-in for Word. Usage is very similar allowing you to connect an Excel spreadsheet to Kianda processes to create a template that can be used within processes.&lt;/p></description></item><item><title>Docs: Task Automation with Kianda</title><link>https://docs.kianda.com/docs/platform/automation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/automation/</guid><description>
 &lt;p>Kianda could automate any tasks in few simple steps. Tasks could be something like sending reminder emails, having a background check, action with respect data source or scheduling a sub-process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/kianda-schedule-tasks.JPG" alt="Scheduled tasks list">&lt;/p>
 &lt;p>Scheduling a task from the left navigation panel in a few simple steps:&lt;/p>
