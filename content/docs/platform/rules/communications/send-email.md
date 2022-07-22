@@ -31,15 +31,13 @@ In advance of using this rule, you need to have **created one or more forms, com
 
 ## How to get started ##
 
-1. In the **Home** page, in the left-hand side pane go to **Administration** > **Designer** to open the **Process design** page.
-
-2. Select an existing process, then select a form or field you want the **Send email** rule to apply to so that the Edit/pen button appears ![Pen button](/images/penicon.png). For example, adding the the **Send email** rule to a **Submit** button within a form, select the form itself and then the submit button like show in the image below.
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](https://docs.kianda.com/images/penicon.png). For example selecting the **Submit** as shown below.
 
    ![Form and button edit mode](/images/send-email-page-select-submit.jpg)
 
-3. In the left-hand side pane, click on **Add a rule** > **Communications** > **Send email**. 
+2. In the left-hand side pane, click on **Add a rule** > **Communications** > **Send email**. 
 
-4. Choose from the edit options:
+3. Choose from the edit options:
 
    1. **Title** - of the email for example 'Send email to Training Managers'
 
@@ -47,7 +45,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
    3. **From** - who the email is from, click on **Person** button ![Person button](/images/person.png) and choose from the appropriate **Selection mode**, see [Selection mode](/docs/platform/rules/communications/send-email/#selection-mode) below.
 
-      ***Warning*** 
+      **Warning** 
       
       *If you add an email address to the **From** field, you must specify an Email connector, see [Email connector](/docs/platform/rules/communications/send-email/#email-connector). If a connector is not specified, the emails will come from noreply@kianda.com*. 
       
@@ -77,17 +75,17 @@ In advance of using this rule, you need to have **created one or more forms, com
    10. **Enable tracking** - options are a) No or b) Yes 
 
       - Note that this option is only available if **Send via connector** is set to **No** and the email is being sent from noreply@kianda.com. 
-   
+
       - If you choose **Yes** then you must click into the field under **Field to store tracking event (Open, Click, Bounce, Spam)** and choose a field from a form to store the event.
-   
+
         ![Enable tracking](/images/send-email-tracking.jpg)
-   
+
       * This option allows you to track the email after it is sent. All of these events, Open, Click, Bounce and Spam will be tracked.
-   
+
    11. Click on **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
-   
+
    12. Note when your rule is complete you may want to change the order of rules for the particular field or form that it has been applied to. Drag the new Send email rule to where you want, so the order of execution of rules is correct. 
-   
+
        For example for a Submit button on a form I may want my **Send email rule** to be executed first before any other rule is executed. To do this click on the **Submit** button to make sure you are in **Edit** mode, and under **Rules** in the right-hand pane,  drag the **Send email** rule to the top of the list by clicking on the rule and dragging it.
        ![Rule order](/images/ruleorder.png)
        
@@ -96,7 +94,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
 ### Email connector ###
 
-The email connector must be set up in advance. 
+The email connector must be set up in advance. To learn how to set up an Email connector go to [Email connector](/docs/platform/connectors/email/).
 
 If you leave the **From** field empty, the email will be sent from noreply@kianda.com.  If you want your email to come from a different sender, follow these steps when you are editing the Send email rule:
 

@@ -3,7 +3,7 @@ title: "Email connector"
 typora-root-url: ..\..\..\..\static
 ---
 
-An email data connector enables you to send emails as well as receive them on your company's Kianda platform. It is mostly used when applying the **Send email** rule which allows you to set a **From** field. To learn more about send email rule go to [Send email](/docs/platform/rules/communications/send-email/).
+In your company's Kianda platform you can connect an emailing service such as Outlook or Gmail. This allows you to send automated emails from a specified email account such as support@ or info@. The email connector feature It is mostly used when applying the **Send email** rule, which allows you to set a **From** field. For example setting up a payroll **Email connector** would be used to send automated emails to employees with their payslips attached. To learn more about send email rule go to [Send email](/docs/platform/rules/communications/send-email/).
 
 ## How to get started
 
@@ -17,23 +17,56 @@ An email data connector enables you to send emails as well as receive them on yo
 
 4. Choose a **Display name** for your email connector. This is used to distinguish between different email connectors on your platform.
 
-## IMAP settings
+5. In the following example we will use an outlook office 365 IMAP to set up the connector. Fill in the following details:
 
-Internet Message Access Protocol, or IMAP, is **a standard email retrieval (incoming) protocol**. It stores email messages on a mail server and enables the recipient to view and manipulate them as though they were stored locally on their device(s). In order to activate your email connector we need to fill out the following:
+   - **IMAP server** - the IMAP server address of your provider. **outlook.office365.com** in this example
+   - **IMAP server port** - the IMAP port your provider listens to. Port number is **993** in this example.
+   - **Use SSL** - IMAP security of your provider. Outlook uses SSL therefore we need to **enable** it.
+   - **Username / email** - the email provider credentials. In this example we are creating a support@ connector.
+   - **Password** - the password to access your email account.
+   - **Enable mail send from** - allows you to fill in details used to send emails.
+
+   To learn more about IMAP settings and how to obtain them, go to [IMAP settings](/docs/platform/connectors/email/#imap-settings).
+
+   ![IMAP settings](/images/email-connector-imap.jpg)
+
+6. If you select **Yes** in the **Enable mail send from**, you are prested with SMTP details. Fill out the following:
+
+   - **SMTP server** - the SMTP server address of your provider. In this example it is **smtp.office365.com**.
+   - **SMTP server port** - the SMTP port your provider listens to. In this example it's port **587**.
+   - **Use SSL** - IMAP security of your provider. Outlook uses SSL therefore we need to **enable** it.
+   - **Email Address** - Used to send test email to ensure emails are delivered.
+   - **Use same credentials as above**
+     - **Yes** - selecting this will ensure to use the same credentials as stated in the above IMAP settings.
+     - **No** - selecting  this will enable you to use different credentials for the SMTP server.
+
+   To learn more about IMAP settings and how to obtain them, go to [SMTP settings](/docs/platform/connectors/email/#smtp-details).
+
+7. Click on **Save** ![Save button](/images/save.png) and you should see a message “Details saved successfully”.
+
+8. Click on **Test Connection** ![Test Connection button](/images/testconnection.png) and you should see a message “Connection test succeeded”.
+
+### IMAP settings
+
+Internet Message Access Protocol, or IMAP, is **a standard email retrieval (incoming) protocol**. It stores email messages on a mail server and enables the recipient to view and manipulate them as though they were stored locally on their device(s). These settings are needed to connect to your emailing service and authentication of ownership. In order to activate your email connector we need to fill out the following:
+
+
+
+> Note; some emailing providers need IMAP settings enabled as they are disabled by default.
 
 - **IMAP server** - IMAP server is an address for a given mailing service, it usually comes in the form of **imap.yourdomain.com**. For example Google's IMAP is **imap.gmail.com**. To access your IMAP address, contact your email provider or email server.
 - **IMAP server port** - Indicates which port your IMAP server listens to. The IMAP server typically listen to a well known port **143** or **993** with **SSL/TSL** functionality. The port information can be found by contacting your email provider.
 - **Use SSL** - Secure Socket Layer (SSL) is a standard technology for keeping the internet connection secure and safeguarding. Contact your email provider to find out if **SSL** is required when accessing IMAP server.
-- **Username/ email** - The credentials used to access your emailing provider.
-- **Password** -  The credentials used to access your emailing provider.
-- **Enable mail send from** - With this option you can choose the ability to send email **OUT** to others using the connected emailing service. If you choose **Yes**, you need to fill in **SMTP details**. to find out more got to [SMTP detail](/docs/platform/connectors/email/#smtp-details).
+- **Username/ email** - The credentials used to access your emailing account. Indicates which email will be used to send mail.
+- **Password** -  The credentials used to access your emailing account.
+- **Enable mail send from** - With this option you can choose the ability to send email **OUT** to others using the connected emailing service. If you choose **Yes**, you need to fill in **SMTP details**. To find out more got to [SMTP detail](/docs/platform/connectors/email/#smtp-details).
 
-## SMTP details
+### SMTP details
 
-Simple Mail Transfer Protocol or SMTP, is **a standard email outgoing (sending) protocol**. It is used for sending email messages from one email account to another via the internet. The SMTP server checks whether the two emails are valid and proceeds with sending of the mail. To be able sending of mail using your email provider, the following details need to be filled out:
+Simple Mail Transfer Protocol or SMTP, is **a standard email outgoing (sending) protocol**. It is used for sending email messages from one email account to another via the internet. The SMTP server checks whether the two emails are valid and proceeds with sending of the email. To be able sending of email using your email provider, the following details need to be filled out:
 
 - **SMTP server** -  SMTP server is an address for a given mailing service, it usually comes in the form of **smtp.yourdomain.com**. For example Google's SMTP is **smtp.gmail.com**. To access your IMAP address, contact your email provider or email server.
-- **SMTP server port** - Indicates which port your SMTP server listens to. The SMTP server typically listen to port **25** if unencrypted or **465** with **SSL** encryption. The port information can be found by contacting your email provider.
+- **SMTP server port** - Indicates which port your SMTP server listens to. The SMTP servers typically listen to port **25** if unencrypted or **465** with **SSL** encryption. The port information can be found by contacting your email provider.
 - **Email address** - Used to send test email to ensure emails are delivered.
 - **Use same credentials as above** - By choosing **Yes**, you will be using the same credentials to log into your SMTP server as you are to the IMAP server. If your SMTP server credentials are different, select **No** to be presented with:
   - **SMTP Username** - The credentials used to access your SMTP provider.
@@ -41,7 +74,21 @@ Simple Mail Transfer Protocol or SMTP, is **a standard email outgoing (sending) 
 
 
 
+## Setting up a Global SMTP mail Connector
 
+As mentioned above, you can create multiple **Email connectors** and use them to send emails using different email accounts such as support@ or info@. You can also choose to ignore all **email connectors** and enable one **Global SMTP connector** which forces all sent email to come from one single connector. To set a **Global SMTP connector**, you need **Administrator** rights in your Kianda platform.
+
+> Note; to set up a global smtp mail connector, you need to have an **Email connector** set up. 
+
+1. From the Kianda home page, click on **Administration** > **Subscription** > **Subscription Details**.
+
+2. Under General settings, select **Yes** on the **Enable Global SMTP Main Connector** option.
+
+3. A **SMTP Email** connector dropdown box appears. Select your desired email connector.
+
+4. In the **Enable save to "Sent Items"** option select **Yes** if you want your email to save all emails sent and select **No** to not save. If you select **Yes**, the emails will be saved in the **Sent Items** folder in your email.
+
+   ![Global settings](/images/email-connector-global-settings.jpg)
 
 
 
