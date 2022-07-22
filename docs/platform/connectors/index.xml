@@ -44,7 +44,7 @@
 &lt;p>If you select &lt;strong>Yes&lt;/strong> in the &lt;strong>Enable mail send from&lt;/strong>, you are prested with SMTP details. Fill out the following:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>SMTP server&lt;/strong> - the SMTP server address of your provider. In this example it is &lt;strong>smtp.office365.com&lt;/strong>.&lt;/li>
-&lt;li>&lt;strong>SMTP server port&lt;/strong> - the SMTP port your provider listens to. in this example it port &lt;strong>587&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>SMTP server port&lt;/strong> - the SMTP port your provider listens to. In this example it&amp;rsquo;s port &lt;strong>587&lt;/strong>.&lt;/li>
 &lt;li>&lt;strong>Use SSL&lt;/strong> - IMAP security of your provider. Outlook uses SSL therefore we need to &lt;strong>enable&lt;/strong> it.&lt;/li>
 &lt;li>&lt;strong>Email Address&lt;/strong> - Used to send test email to ensure emails are delivered.&lt;/li>
 &lt;li>&lt;strong>Use same credentials as above&lt;/strong>

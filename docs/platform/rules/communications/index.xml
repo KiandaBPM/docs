@@ -100,10 +100,7 @@ c. Add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>In the &lt;strong>Home&lt;/strong> page, in the left-hand side pane go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> to open the &lt;strong>Process design&lt;/strong> page.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select an existing process, then select a form or field you want the &lt;strong>Send email&lt;/strong> rule to apply to so that the Edit/pen button appears &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">. For example, adding the the &lt;strong>Send email&lt;/strong> rule to a &lt;strong>Submit&lt;/strong> button within a form, select the form itself and then the submit button like show in the image below.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">. For example selecting the &lt;strong>Submit&lt;/strong> as shown below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/send-email-page-select-submit.jpg" alt="Form and button edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -120,7 +117,7 @@ c. Add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>From&lt;/strong> - who the email is from, click on &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button"> and choose from the appropriate &lt;strong>Selection mode&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#selection-mode">Selection mode&lt;/a> below.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Warning&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;strong>Warning&lt;/strong>&lt;/p>
 &lt;p>&lt;em>If you add an email address to the &lt;strong>From&lt;/strong> field, you must specify an Email connector, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#email-connector">Email connector&lt;/a>. If a connector is not specified, the emails will come from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>&lt;/em>.&lt;/p>
 &lt;/li>
 &lt;li>
@@ -178,7 +175,7 @@ c. Add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="email-connector">Email connector&lt;/h3>
-&lt;p>The email connector must be set up in advance.&lt;/p>
+&lt;p>The email connector must be set up in advance. To learn how to set up an Email connector go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/">Email connector&lt;/a>.&lt;/p>
 &lt;p>If you leave the &lt;strong>From&lt;/strong> field empty, the email will be sent from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>. If you want your email to come from a different sender, follow these steps when you are editing the Send email rule:&lt;/p>
 &lt;ol>
 &lt;li>Set &lt;strong>Send via connector&lt;/strong> to &lt;strong>Yes&lt;/strong>.&lt;/li>
