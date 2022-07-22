@@ -135,6 +135,8 @@ To add a **Filter widget** to a dashboard:
 
    - **Filter mode** - You can choose whether the filter widget displays options that **start with** the letters or words the user types into the filter widget search box, or shows filter options that **contain** the letters or words the user inputs.
 
+     #####
+
    - **Default value** - You can choose a Default value to appear in the Filter widget.
      
      - **Enable query string** - This option appears for all Filter types except for Date range and Current user. 
@@ -154,15 +156,15 @@ To add a **Filter widget** to a dashboard:
        2. Selecting the 'Employee Name' field in the Annual Leave Request form - the field we want to filter by in our Filter widget.
        3. Opening the **Edit field** dialog box to find the field's unique name:
      
-			![Dashboard Filter widget Query string example field unique name](/images/dashboard-filter-query-string-uniquename.jpg)
+   		![Dashboard Filter widget Query string example field unique name](/images/dashboard-filter-query-string-uniquename.jpg)
      
        4. In our **Filter settings** dialog box, we can now select the '**Enable query string**' checkbox and insert this unique field name into the Parameter name box - we will also select the '**Auto update URL**' option (which will dynamically construct a URL, meaning that the URL at the top of the page will automatically change when we choose a filter option):
      
-			![Dashboard filter widget Enable query string example](/images/dashboard-filter-query-string-example.jpg)
+   		![Dashboard filter widget Enable query string example](/images/dashboard-filter-query-string-example.jpg)
      
        5. Once you complete the **Filter settings** dialog box and click **OK** and then click the **Save** button in the top menu, you will now see that when you select an employee in the Filter widget, the URL at the top updates:
      
-			![Dashboard Filter widget enable query string Auto update URL example](/images/dashboard-filter-query-string-url.jpg)
+   		![Dashboard Filter widget enable query string Auto update URL example](/images/dashboard-filter-query-string-url.jpg)
      
        Setting the filter up like this to automatically update the URL when a filter option is selected, enables you to make any of the filter selections a **dashboard favourite** page. 
        

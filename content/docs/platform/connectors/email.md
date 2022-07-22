@@ -33,7 +33,7 @@ In your company's Kianda platform you can connect an emailing service such as Ou
 6. If you select **Yes** in the **Enable mail send from**, you are prested with SMTP details. Fill out the following:
 
    - **SMTP server** - the SMTP server address of your provider. In this example it is **smtp.office365.com**.
-   - **SMTP server port** - the SMTP port your provider listens to. in this example it port **587**.
+   - **SMTP server port** - the SMTP port your provider listens to. In this example it's port **587**.
    - **Use SSL** - IMAP security of your provider. Outlook uses SSL therefore we need to **enable** it.
    - **Email Address** - Used to send test email to ensure emails are delivered.
    - **Use same credentials as above**
