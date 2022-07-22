@@ -1,10 +1,14 @@
 ---
 title: "Start a process"
+weight: 6
+typora-root-url: ..\..\..\..\..\static
 ---
 
-This rule allows you to start a new instance of a different process (or a new instance of the same process). You can transfer field data from the current process instance to a new process instance. 
+## Introduction ##
 
-![Process security rule dialog box 1](/images/StartaProcess.png)
+The **Start a process** rule allows you to dynamically **start a new instance** of a different process, or a new instance of the same process. You can **transfer field data** from the current process instance to a new process instance. 
+
+
 
 ## When to use 
 
@@ -13,16 +17,33 @@ You can add this rule:
 - [x] to a form 
 - [x] to a process (the rule will run on load)
 
-## How to use
 
-To start an instance of a the Sample Process from the current process:
-1. Click on a button e.g. the Submit button.
-2. Select Add a rule >Workflow > Start a Process.
-3. Under Action, select Own process.
-4. Choose a target process design e.g. Sample Process.  
-5. Under Input mapping, click on Add mapping.  On the left side, choose a field from the current process.  On the right side, select a destination field in the target process.
-6. Click On success mapping. On the right side, type a message;  on the left side, choose a field to store the message.  Here data is being mapped back from the target process to the current process.
-7. Click OK.
+
+## How to get started
+
+To dynamically set start a new process:
+
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item for example the **Submit** button so that it is in **edit mode** so you can see the Edit/pen button,  **Pen** button ![Pen button](/images/penicon.png).
+
+2. Click on **Add a rule** > **Workflow** > **Start a process**. 
+
+3. In the **Edit rule - Start process** dialog box, give the rule a title in the **Title** field.
+
+   ![Start a process rule](/images/start-a-process.jpg)
+
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+
+5. Under **Action** create one or more actions for the rule by filling out the following:
+
+   - **Process source** - choose from the radio buttons:
+     - **Own process** 
+     - **Partner process** 
+   
+   - **Select a process design** - choose a target process design from the drop-down list
+   
+6. Under Input mapping, click on Add mapping.  On the left side, choose a field from the current process.  On the right side, select a destination field in the target process.
+7. Click On success mapping. On the right side, type a message;  on the left side, choose a field to store the message.  Here data is being mapped back from the target process to the current process.
+8. Click OK.
 
 ## Notes
 
