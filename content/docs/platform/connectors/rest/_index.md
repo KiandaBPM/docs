@@ -32,7 +32,7 @@ A REST API data connector can be configured by users with the role **Administrat
 
 6. Fill in the first set of fields:
 
-   - **Display name –** This is the name of the data source. Use an appropriate name, as this will be used with your process. 
+   - **Display name –** This is the name of the data source. Use an appropriate name, as this will be used within your process(es). 
 
    - **Rest server base URL –** This is the base URL of the REST API. Ensure there are no trailing characters, for example https://api.mywebsite.com   
 
