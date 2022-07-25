@@ -2,8 +2,9 @@
 &lt;p>One of the datasources available in Kianda is a connector to Office 365. Kianda has the ability to read users’ profiles, extract data, update users and groups and enable Single Sign-On (SSO). The Office 365 datasource can be used for example to automatically import users using a scheduled task within Kianda or with individual Kianda processes to update the configuration of users and groups within Office 365.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>If you have an Office 365 subscription, you can create an Office 365 data connector so that Kianda can access data and manipulate data at that data source.&lt;/p>
+&lt;p>Note: To create this datasource you need to have an &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage datasources&lt;/strong> role in Kianda. You also need to be an &lt;strong>administrator in Office 365&lt;/strong>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>An Office 365data connector can be configured by users with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage datasources&lt;/strong>. These users can access the datasource management function, found under &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;p>An Office 365 data connector can be configured by users with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage datasources&lt;/strong>. These users can access the datasource management function, found under &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
@@ -26,23 +27,54 @@
 &lt;li>
 &lt;p>Fill in the first set of fields:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Display name –&lt;/strong> this is the name of the data source. Use an appropriate name, as this will be used within your process(es).&lt;/li>
-&lt;li>&lt;strong>Read all users&amp;rsquo; full profiles –&lt;/strong> by default, this is enabled and cannot be disabled. This allows Kianda processes to read all user profiles that exist in Office 365.&lt;/li>
-&lt;li>&lt;strong>Read and write users &amp;amp; groups&lt;/strong> - by checking this option it will allow Kianda the rights to read users and group information and update information.&lt;/li>
-&lt;li>&lt;strong>Enable Azure OpenID Connect Single-Sign-On&lt;/strong> - checking this checkbox enables a user to sign into Kianda using their Office 365 login. For more details see the &lt;a href="https://docs.kianda.com/docs/security/sso/">SSO page&lt;/a>.&lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>&lt;strong>Display name –&lt;/strong> this is the name of the data source. Use an appropriate name, as this will be used within your process(es).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>When you have added Office 365 details, you are ready to test your connection and add security. At the bottom of the &lt;strong>Office 365 data connector&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for Office 365"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
-&lt;p>In the event of an error, you will receive a message that relates to the error.&lt;/p>
-&lt;ol start="8">
+&lt;p>&lt;strong>Read all users&amp;rsquo; full profiles –&lt;/strong> by default, this is enabled and cannot be disabled. This allows Kianda processes to read all user profiles that exist in Office 365.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Read and write users &amp;amp; groups&lt;/strong> - by checking this option it will allow Kianda the rights to read users and group information and update information, performing &amp;lsquo;write operations&amp;rsquo; in Office 365, such as assigning a user license and adding users to groups.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable Azure OpenID Connect Single-Sign-On&lt;/strong> - checking this checkbox enables a user to sign into Kianda using their Office 365 login. For more details see the &lt;a href="https://docs.kianda.com/docs/security/sso/">SSO page&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>After these details have been completed, you will need to &lt;a href="#authorize-the-connection">Authorize the connection&lt;/a> as the datasource will have a status of &amp;lsquo;incomplete&amp;rsquo; until authorised. When authorized for use, the status will be &amp;lsquo;ready&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="authorize-the-connection">Authorize the connection&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Before the datasource can be used it will need to be authorised. Click on the &lt;strong>Authorize&lt;/strong> button &lt;img src="https://docs.kianda.com/images/authorize.jpg" alt="Authorize button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A pop up appears asking you to sign in to your Office365 account. You must be an &lt;strong>administrator in Office 365&lt;/strong> to complete authorization.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/office365-login.jpg" alt="Office 365 Login">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Enter your &lt;strong>email&lt;/strong> and click on &lt;strong>Next&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then enter your &lt;strong>password&lt;/strong> and click on &lt;strong>Sign in&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/password-office365.jpg" alt="Office365 password">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Yes&lt;/strong> to Stay signed in.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If your details are correct and you are an administrator, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong> and the status changes to &lt;strong>ready&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/office365-ready.jpg" alt="Office 365 connector ready">&lt;/p>
+&lt;p>The &lt;strong>Authorize&lt;/strong> button changes to &lt;strong>Re-Authorize&lt;/strong>. If authorization is removed from within Office 365, the datasource will need to be re-authorized from within Kianda. In addition, Microsoft security policy requires the connection to Office 365 to be re-authorized every 6 months. To re-authorize, click on the &lt;strong>Re-Authorize&lt;/strong> button and repeat steps 2 to 5 above.&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button">to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
 &lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to return to the main datasource management view.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="office-365-parameters">Office 365 parameters&lt;/h2>
