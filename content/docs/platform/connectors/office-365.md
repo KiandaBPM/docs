@@ -20,11 +20,11 @@ An Office 365 data connector can be configured by users with the role **Administ
 
    ![Opening data sources from Administration](/images/open-data-sources.jpg)
 
-2. In the main view you will see any existing data sources that have been created. From this view, you can click on the **name** of a data source to see details or **delete** a data source by clicking on the **Bin/Trash** button ![Bin/trash button](/images/binicon.png).
+2. In the main view you will see any existing data sources that have been created. From this view, you can click on the **name** of a data source to see details or **delete** a data source by clicking on the **Bin/Trash** button ![Bin/trash button](/images/binicon.png). 
 
-3. To create a new data source, click on the **Add new** in the main view. A range of data source connectors will appear.
+3. Click on **+ Add new** button ![Add new data connector button](/images/addnew.png) and a range of data source connectors will appear.
 
-   ![Data source list](/images/datasource-range.jpg)
+      ![Data source list](/images/datasource-range.jpg)
 
 4. Click on **Office 365**.
 
@@ -41,7 +41,7 @@ An Office 365 data connector can be configured by users with the role **Administ
       - **Read and write users & groups** - by checking this option it will allow Kianda the rights to read users and group information and update information, performing 'write operations' in Office 365, such as assigning a user license and adding users to groups. 
 
       - **Enable Azure OpenID Connect Single-Sign-On** - checking this checkbox enables a user to sign into Kianda using their Office 365 login. For more details see the [SSO page](/docs/security/sso/).
-      
+
       After these details have been completed, you will need to [Authorize the connection](#authorize-the-connection) as the datasource will have a status of 'incomplete' until authorised. When authorized for use, the status will be 'ready'.
 
 ### Authorize the connection
