@@ -3,9 +3,9 @@ title: "Subscription"
 typora-root-url: ..\..\..\..\static
 ---
 
-The **Subscription** function is available to administrators and is found in the left-hand side pane, under **Administration**. This function allows you to update the look and feel of your workspace, set regional, mobile and single sign-on settings and design the login page.
+The **Subscription** function is available to **administrators** and is found in the left-hand side pane, under **Administration**. This function allows you to update the look and feel of your workspace, set regional, mobile and single sign-on settings and design the login page.
 
-### How to get started
+## How to get started
 
 To view use the Scheduled tasks function:
 
@@ -28,13 +28,97 @@ To view use the Scheduled tasks function:
 
 3. Click on a particular area to edit details or click on **Open Wizard** to use a wizard to edit **Look and Feel**, **Design Login Page**, **Regional Settings**, and **Mobile Settings**.
 
-   
-#### Look and Feel
+Details on each area are available below.
+
+## Look and Feel
 You can access this section by clicking on **Open Wizard** > **Look and Feel** or by clicking on **Look and Feel** in the main **Subscription** page. 
 
  ![Look and feel](/images/look-and-feel.jpg)
 
-Note logo sizes are 200 x 65px for a full-sized logo and 45 x 45px for a collapsed logo. You can also select a colour scheme under Themes and preview the results under Workspace preview on the right.
+**Note**: Logo sizes are 200 x 65px for a full-sized logo and 45 x 45px for a collapsed logo. You can also select a colour scheme under Themes and preview the results under Workspace preview on the right.
+
+Details for each of the areas within the page - [Logos][#logos], [Layout](#layout). [Themes](#themes) and [CSS](#css) are available below. Make sure to click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made. 
+
+### Logos ###
+
+To add a logo for your company:
+
+1. Click on **Browse** beside **Logo Url** to browse for a logo to add from your PC or network. The recommended size is 200px x 65px.
+2. To add a logo that will appear when the left-hand side menu is collapsed, click on **Browse** beside **Collapsed Logo URL** to browse for a a logo to add from your PC or network. The recommended size is 45px x 45px. 
+
+### Layout ###
+
+The options for your workspace layout are:
+
+- **Boxed** - moving the slider across to enable a boxed layout, that is the workspace appears in a box in the browser, with space appearing around the box and centred content.
+
+  ![Boxed layout](/images/boxed-layout.jpg)
+
+- **RTL** - moved the slider across to enable a right-to-left (RTL) layout, that is text, layout, icons and so on are right -hand based. 
+
+- **Disable Zoom on Mobile** - move the slider across to enable the 'disable zoom on mobile' option, which means that the zooming option is disabled on mobile web pages.
+
+- **Welcome page** - click on the **Change** button ![Change button](/images/change-button.jpg) to change the Welcome page for users of your Kianda workspace.  The **Update welcome page** dialog box opens where you can click on the drop-down list under **New welcome page** to choose a new welcome page, from the Home page and dashboards. 
+
+  ![Update welcome page dialog box](/images/update-welcome-page.jpg)
+
+  Click on **OK** to save changes or **Close** to exit the dialog box at any time.
+
+### Themes ###
+
+Click on a Theme of choice, options range from two-tone layouts, to those with a dark left-hand side menu as shown in the middle of the image below. 
+
+![Themes](/images/themes.jpg)
+
+### CSS ###
+
+In this section you can modify the **Global CSS File** to make changes to the look and feel of the site as well as processes. Here you can access the existing CSS details by clicking on the on the **ellipsis** button ![Ellipsis button](/images/expression.jpg) to open a CSS Editor and add to those details, or click on **Browse** to browse for a CSS file. See [Global CSS file](/images//docs/low-code/global-css-file/) for more details. 
+
+Make sure to click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
+
+
+
+## Design Login Page
+
+This section allows you to design the login page, choose background and font colours and complete fields for Taglines.
+
+![Design login page](/images/design-login-page.jpg)
+
+On this page you can make the following changes:
+
+- **Login Page Logo Url** - add/change a logo for the login page to Kianda by clicking on **Browse** to browse for a logo on your PC or network.
+- **Background Color** - you can either click on the colour itself or click in the box beside it to add in a HEX value for a colour.
+
+
+
+## Regional Settings
+
+Here you can set your operational time zone and regional settings, such as English Ireland, from the dropdown.
+
+## Mobile Settings
+
+Here you can customise how the Kianda workspace will appear as a mobile app. You can choose your App name, App short name, Splash Screen Colour, and Theme Colour and upload a mobile size icon (note the icon size is 512 x 512 px).
+
+## Subscription Details
+
+General settings include details like your company name, subscription ID, renewal date and business identity (your workspace URL, for example, green-itr.kianda.com).
+
+You can also enable a Global SMTP Mail Connector to enable email flow to/from your Kianda workspace.
+
+Within general settings administrators can set who the Global Administrator is, or the main administrator for the workspace.
+
+## Single Sign-On (SSO)
+
+Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. To enable Single-Sign-On, please follow the below steps:
+
+As an administrator, go to the left-hand pane and click on Administration > Subscription > Single Sign-on.
+Click the radio button for ‘Enable Single-Sign-On’ Yes.
+Select an SSO Provider from the list provided.
+
+At any time, you can go to Side menu > Subscription to edit any of these settings or to manage Subscription Details, Payment Details and Single Sign-on.
+
+
+
 
 
 ### What's next  ![Idea icon](/images/18.png) ###
