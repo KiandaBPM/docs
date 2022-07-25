@@ -1,6 +1,7 @@
 ---
 title: "Anonymous form link"
 typora-root-url: ..\..\..\..\..\static
+weight: 3
 ---
 
 This rule creates a link to a form which can be sent to an external user.  The user can open the form without the need for authentication.  
