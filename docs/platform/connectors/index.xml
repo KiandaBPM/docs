@@ -1,4 +1,60 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Data connectors</title><link>https://docs.kianda.com/docs/platform/connectors/</link><description>Recent content in Data connectors on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/connectors/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Office 365</title><link>https://docs.kianda.com/docs/platform/connectors/office-365/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/office-365/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Data connectors</title><link>https://docs.kianda.com/docs/platform/connectors/</link><description>Recent content in Data connectors on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/connectors/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: SOAP</title><link>https://docs.kianda.com/docs/platform/connectors/soap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/soap/</guid><description>
+&lt;p>One of the datasources available in Kianda is a connector to Simple Object Access Protocol (SOAP) messaging services. Kianda has the ability to execute a command within the service whatever the function may be.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You will want to create a SOAP Service datasource when you want Kianda to have access to your SOAP Service operations and execute them.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>A SOAP Service data connector can be configured by users with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage datasources&lt;/strong>. These users can access the datasource management function, found under &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/open-data-sources.jpg" alt="Opening data sources from Administration">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the main view you will see any existing data sources that have been created. From this view, you can click on the &lt;strong>name&lt;/strong> of a data source to see details or &lt;strong>delete&lt;/strong> a data source by clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin/trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and a range of data source connectors will appear.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-range.jpg" alt="Data source list">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>SOAP Service&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out the details in the &lt;strong>SOAP Service details&lt;/strong> page:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/soap-detail.jpg" alt="SOAP service detais">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Display name&lt;/strong> - this is the name of the data source. Use an appropriate name, as this will be used within your process(es).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Service URL&lt;/strong> - this will be the URL of the service.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Service WSDL URL&lt;/strong> - this will be the URL of the service including the WSDL&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Authentication Mode - there are three options available:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Anonymous&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Basic&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Windows&lt;/p>
+&lt;p>Selecting Basic or Windows exposes the options below. Enter the credentials as needed.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img">&lt;/p>
+&lt;p>&lt;strong>Status:&lt;/strong> when the datasource has not been configured, the status will be ‘incomplete’. When set up it will be ‘ready’.&lt;/p>
+&lt;p>&lt;strong>Next Steps&lt;/strong>&lt;/p>
+&lt;p>The SOAP Service is now ready to be used. Check out the below on how to design processes.&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/application-designe">https://docs.kianda.com/docs/platform/application-designe&lt;/a>&lt;/p></description></item><item><title>Docs: Office 365</title><link>https://docs.kianda.com/docs/platform/connectors/office-365/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/office-365/</guid><description>
 &lt;p>One of the datasources available in Kianda is a connector to Office 365. Kianda has the ability to read users’ profiles, extract data, update users and groups and enable Single Sign-On (SSO). The Office 365 datasource can be used for example to automatically import users using a scheduled task within Kianda or with individual Kianda processes to update the configuration of users and groups within Office 365.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>If you have an Office 365 subscription, you can create an Office 365 data connector so that Kianda can access data and manipulate data at that data source.&lt;/p>
@@ -14,7 +70,7 @@
 &lt;p>In the main view you will see any existing data sources that have been created. From this view, you can click on the &lt;strong>name&lt;/strong> of a data source to see details or &lt;strong>delete&lt;/strong> a data source by clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin/trash button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To create a new data source, click on the &lt;strong>Add new&lt;/strong> in the main view. A range of data source connectors will appear.&lt;/p>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and a range of data source connectors will appear.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/datasource-range.jpg" alt="Data source list">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -385,10 +441,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/sharepoint-list-field.jpg" alt="SharePoint list example">&lt;/p>
 &lt;p>This customised name &amp;lsquo;Location&amp;rsquo; appears in the dropdown list, for example the &lt;strong>Display field&lt;/strong> for the list.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/location-sharepoint-field.jpg" alt="Customised column name example in SharePoint">&lt;/p>
-&lt;p>​&lt;/p></description></item><item><title>Docs: SOAP</title><link>https://docs.kianda.com/docs/platform/connectors/soap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/soap/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: SQL Server connector</title><link>https://docs.kianda.com/docs/platform/connectors/sql-server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sql-server/</guid><description>
+&lt;p>​&lt;/p></description></item><item><title>Docs: SQL Server connector</title><link>https://docs.kianda.com/docs/platform/connectors/sql-server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sql-server/</guid><description>
 &lt;h2 id="sql-server-parameters">SQL Server parameters&lt;/h2>
 &lt;p>When you use a SQL datasource, there are values that can be passed as parameters, for example when using conditions with SQL Server data connectors.&lt;/p>
 &lt;p>When you use an Office 365 datasource, there are &lt;strong>default options&lt;/strong> that can be passed as parameters, for example when using conditions with Office 365 data connectors. These are:These are:&lt;/p>
