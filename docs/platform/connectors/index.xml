@@ -182,9 +182,9 @@
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="setting-up-a-global-smtp-mail-connector">Setting up a Global SMTP mail Connector&lt;/h2>
-&lt;p>As mentioned above, you can create multiple &lt;strong>Email connectors&lt;/strong> and use them to send emails using different email accounts such as support@ or info@. You can also choose to ignore all &lt;strong>email connectors&lt;/strong> and enable one &lt;strong>Global SMTP connector&lt;/strong> which forces all sent email to come from one single connector. To set a &lt;strong>Global SMTP connector&lt;/strong>, you need &lt;strong>Administrator&lt;/strong> rights in your Kianda platform.&lt;/p>
+&lt;p>As mentioned above, you can create multiple &lt;strong>Email connectors&lt;/strong> and use them to send emails using different email accounts such as support@ or info@. You can also choose to ignore all &lt;strong>email connectors&lt;/strong> as well as the &lt;a href="mailto:no-reply@kianda.com">no-reply@kianda.com&lt;/a> emails by enabling one &lt;strong>Global SMTP connector&lt;/strong> which forces all sent email to come from one single connector. To set a &lt;strong>Global SMTP connector&lt;/strong>, you need &lt;strong>Administrator&lt;/strong> rights in your Kianda platform.&lt;/p>
 &lt;blockquote>
-&lt;p>Note; to set up a global smtp mail connector, you need to have an &lt;strong>Email connector&lt;/strong> set up.&lt;/p>
+&lt;p>Note; to set up a global smtp mail connector, you need to have an &lt;strong>Email connector&lt;/strong> set up, see top of this on how to do that.&lt;/p>
 &lt;/blockquote>
 &lt;ol>
 &lt;li>
