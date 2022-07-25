@@ -1,6 +1,7 @@
 ---
 title: "User alert"
 typora-root-url: ..\..\..\..\..\static
+weight: 4
 ---
 
 This rule sends an alert to a user who can then open an instance of a process.  A user can view all alerts by clicking on the bell icon on the top right-hand corner of their screen.

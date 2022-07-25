@@ -1,6 +1,7 @@
 ---
 title: "Send email"
 typora-root-url: ..\..\..\..\..\static
+weight: 1
 ---
 
 This rule sends an email according to a predefined template.  Each element of the email is configurable.  The body of the email can include text, images and attachments.  Data stored in fields in the current form can be copied in dynamically. 
@@ -46,18 +47,18 @@ In advance of using this rule, you need to have **created one or more forms, com
    3. **From** - who the email is from, click on **Person** button ![Person button](/images/person.png) and choose from the appropriate **Selection mode**, see [Selection mode](/docs/platform/rules/communications/send-email/#selection-mode) below.
 
       **Warning** 
-      
-      *If you add an email address to the **From** field, you must specify an Email connector, see [Email connector](/docs/platform/rules/communications/send-email/#email-connector). If a connector is not specified, the emails will come from noreply@kianda.com*. 
-      
+   
+      *If you add an email address to the **From** field, you must specify an Email connector, see [Email connector](/docs/platform/rules/communications/send-email/#email-connector). If a connector is not specified, the emails will come from noreply@kianda.com. If a Global SMTP connector is configured, all emails will be sent from the global connector.*
+   
    4. **To** - who the email is to, click on **Person** button ![Person button](/images/person.png) and choose from the appropriate Selection mode, see [Selection mode](/docs/platform/rules/communications/send-email/#selection-mode) below.
 
    5. **CC** - who will be copied on the email, as with **To** field.
 
-   5. **BCC** - who will be blind copied on the email, as with **To** field.
+   6. **BCC** - who will be blind copied on the email, as with **To** field.
 
-   5. **Subject** - type in your email subject and click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, go to [Expression builder](/docs/platform/rules/general/expression-builder/) for more information. The **Subject** cannot be left empty.
+   7. **Subject** - type in your email subject and click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, go to [Expression builder](/docs/platform/rules/general/expression-builder/) for more information. The **Subject** cannot be left empty.
 
-   5. **Body** - choose from an array of styles and formats to create your email including **Style,** **Colour**, **Font  size**, **Remove font style**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, **Table**, **Link**, **Picture**, **Attach a File** and **Code view**. For example if you click on **Code view** button ![Code view button](/images/code.png) you can copy HTML code directly into the body text.
+   8. **Body** - choose from an array of styles and formats to create your email including **Style,** **Colour**, **Font  size**, **Remove font style**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, **Table**, **Link**, **Picture**, **Attach a File** and **Code view**. For example if you click on **Code view** button ![Code view button](/images/code.png) you can copy HTML code directly into the body text.
 
       ![Send email](/images/send-email-edit-box.jpg)
 
@@ -70,22 +71,23 @@ In advance of using this rule, you need to have **created one or more forms, com
    9. **Send via connector** - options are a) No or b) Yes 
 
       - If you choose **Yes** then you must choose an **Email connector** and decide if you want to **Save Sent Items** (Yes or No) which means sent emails are saved in a sent items folder in your email account. For more information go to [Email connector](/docs/platform/rules/communications/send-email/#email-connector)
-   ![Email connector options](/images/send-email-connector-yes.jpg) 
-
+      ![Email connector options](/images/send-email-connector-yes.jpg)
+      - Note that if **Global SMTP Mail connector** has been configured, all emails sent will use the Global connector settings instead, including no-reply@kianda.como find out more, go to [Setting up a Global SMTP mail connector](/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector). 
+   
    10. **Enable tracking** - options are a) No or b) Yes 
-
+   
       - Note that this option is only available if **Send via connector** is set to **No** and the email is being sent from noreply@kianda.com. 
-
+   
       - If you choose **Yes** then you must click into the field under **Field to store tracking event (Open, Click, Bounce, Spam)** and choose a field from a form to store the event.
-
+   
         ![Enable tracking](/images/send-email-tracking.jpg)
-
+   
       * This option allows you to track the email after it is sent. All of these events, Open, Click, Bounce and Spam will be tracked.
-
+   
    11. Click on **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
-
+   
    12. Note when your rule is complete you may want to change the order of rules for the particular field or form that it has been applied to. Drag the new Send email rule to where you want, so the order of execution of rules is correct. 
-
+   
        For example for a Submit button on a form I may want my **Send email rule** to be executed first before any other rule is executed. To do this click on the **Submit** button to make sure you are in **Edit** mode, and under **Rules** in the right-hand pane,  drag the **Send email** rule to the top of the list by clicking on the rule and dragging it.
        ![Rule order](/images/ruleorder.png)
        
@@ -94,7 +96,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
 ### Email connector ###
 
-The email connector must be set up in advance. To learn how to set up an Email connector go to [Email connector](/docs/platform/connectors/email/).
+The **Email connector** is a mailing tool that allows you to send emails with a specified email account, for example support@ or info@. An email connector must be set up in advance, to learn how to set up an **Email connector** go to [Email connector](/docs/platform/connectors/email/).
 
 If you leave the **From** field empty, the email will be sent from noreply@kianda.com.  If you want your email to come from a different sender, follow these steps when you are editing the Send email rule:
 
@@ -102,7 +104,7 @@ If you leave the **From** field empty, the email will be sent from noreply@kiand
 2. Click into the field under **Email connector** and select a connector. 
 3. Click on **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 
-Note that this will override the global Email connector setting if one has been configured for your system.  Go to **Administration** > **Subscription** > **Subscription Details** to check for a global setting. 
+Note that if **Global SMTP Mail connector** has been configured, all emails sent will use the Global connector settings instead of what is specified in the **send email** rule. Go to **Administration** > **Subscription** > **Subscription Details** to check for a global setting or to find out more, go to [Setting up a Global SMTP mail connector](/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector).
 
 
 
@@ -118,9 +120,11 @@ When you are filling out the **To**, **From**, **CC** or **BCC** fields and clic
 
 - [x] **Email address in a field**. 
 
-<!---->
 
-**Note**; You can reset user/ field you selected by clicking **Clear**![Clear field](/images/clearx.png) on the dropdown field in the **Select email users** dialog box.
+
+> **Note**; You can reset user/ field you selected by clicking **Clear**![Clear field](/images/clearx.png) on the dropdown field in the **Select email users** dialog box.
+
+
 
 ![Select email users dialog box](/images/send-email-selection-mode.jpg)
 
@@ -203,15 +207,15 @@ To attach a file into the **Send email** rule, you must first contain a file fie
 
 1. To attach a file to an email, click on the **Attach a file** button ![Attach a file button](/images/attachfile.png). The **Attach file to email** dialog box opens. 
 
-2. Select a **File** field from your process to attach the file, for example an image as shown in the image below.
+2. Select a **File** field from your process to attach the file, for example an **Image** filed as shown in the image below.
 
    ![Attach file dialog box](/images/send-email-attach-file.jpg)
 
-3. Click in the **File** field to find the field where the file is stored.
+3. Click in the **File** field, find and select the desired field.
 
 4. Click on **Insert attachment**. There is an option to attach a link to the file rather than the file itself.
 
-In the **Attachments** section of the Send email dialog box, the name of the **File** field will appear indicating that attachments will come from the specified field. You can delete the specified File field by clicking the red bin/trash icon.
+In the **Attachments** section of the **Send email** dialog box, the name of the **File** field will appear indicating that attachments will come from the specified field. You can delete the specified File field by clicking the red bin/trash icon.
 
 ![Send email dialog box - attachment section](/images/send-email-attachment.jpg)
 

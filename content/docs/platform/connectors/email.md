@@ -76,9 +76,9 @@ Simple Mail Transfer Protocol or SMTP, is **a standard email outgoing (sending) 
 
 ## Setting up a Global SMTP mail Connector
 
-As mentioned above, you can create multiple **Email connectors** and use them to send emails using different email accounts such as support@ or info@. You can also choose to ignore all **email connectors** and enable one **Global SMTP connector** which forces all sent email to come from one single connector. To set a **Global SMTP connector**, you need **Administrator** rights in your Kianda platform.
+As mentioned above, you can create multiple **Email connectors** and use them to send emails using different email accounts such as support@ or info@. You can also choose to ignore all **email connectors** as well as the no-reply@kianda.com emails by enabling one **Global SMTP connector** which forces all sent email to come from one single connector. To set a **Global SMTP connector**, you need **Administrator** rights in your Kianda platform.
 
-> Note; to set up a global smtp mail connector, you need to have an **Email connector** set up. 
+> Note; to set up a global smtp mail connector, you need to have an **Email connector** set up, see top of this on how to do that. 
 
 1. From the Kianda home page, click on **Administration** > **Subscription** > **Subscription Details**.
 
