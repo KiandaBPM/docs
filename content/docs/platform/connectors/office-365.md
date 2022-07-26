@@ -42,7 +42,7 @@ An Office 365 data connector can be configured by users with the role **Administ
 
       - **Enable Azure OpenID Connect Single-Sign-On** - checking this checkbox enables a user to sign into Kianda using their Office 365 login. For more details see the [SSO page](/docs/security/sso/).
 
-      After these details have been completed, you will need to [Authorize the connection](#authorize-the-connection) as the datasource will have a status of 'incomplete' until authorised. When authorized for use, the status will be 'ready'.
+      After these details have been completed, you will need to [Authorize the connection](#authorize-the-connection) as the datasource will have a **status** of **incomplete** until authorised. When authorized for use, the status will be **ready**.
 
 ### Authorize the connection
 
@@ -70,7 +70,7 @@ An Office 365 data connector can be configured by users with the role **Administ
 
 8. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
 
-9. Click on **Close** to return to the main datasource management view.
+9. Click on **Close** to close the details page and return to the datasource management main view.
 
 
 
@@ -90,3 +90,9 @@ When you use an Office 365 datasource, there are **default options** that can be
 - **Licence Plan List**
 - **Assign Licence to User**
 - **Remove Licence from User**
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+Your **Office 365 connector** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).

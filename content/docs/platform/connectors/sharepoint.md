@@ -33,9 +33,13 @@ A SharePoint data connector allows you to use SharePoint data sources as part of
 
      If you choose b) System User Credentials then fill out your username and password. In this instance you do not need SharePoint administration rights.
 
-4. Click on **Save** ![Save button](/images/save.png) and you should see a message "Details saved successfully".
+4. When you have added SharePoint details, you are ready to test your connection and add security. At the bottom of the **SharePoint details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
 
-5. Click on **Test Connection** ![Test Connection button](/images/testconnection.png)  and you should see a message "Connection test succeeded".
+5. Click on **Save** ![Save connection button](/images/save-connection.jpg)to save the connection and you will receive a notification saying **Details saved successfully**.
+
+6. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
+
+7. Click on **Close** to close the details page and return to the datasource management main view.
 
    
 
@@ -76,3 +80,9 @@ This customised name 'Location' appears in the dropdown list, for example the **
 ![Customised column name example in SharePoint](/images/location-sharepoint-field.jpg)
 
 ​     
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+Your **SharePoint service** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).
+
+To see how SharePoint parameters are used in a form, for example with a **list** field, go to [List control](//docs/platform/controls/input/list/#how-to-get-started). 

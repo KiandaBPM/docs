@@ -32,30 +32,33 @@ A SOAP Service data connector can be configured by users with the role **Adminis
 
    ![SOAP service detais](/images/soap-detail.jpg)
 
+   Note:  The **status** of the datasource will be **incomplete** until it has been fully configured. When set up it will be **ready**.
+
    - **Display name** - this is the name of the data source. Use an appropriate name, as this will be used within your process(es). 
 
    - **Service URL** - this will be the URL of the service.
 
-   - **Service WSDL URL** - this will be the URL of the service including the WSDL
+   - **Service WSDL URL** - this will be the URL of the service including the Web Services Description Language (WSDL). WSDL describes the structure, contents and limitations of the elements of XML passed between the web service and client. 
 
-   - Authentication Mode - there are three options available:
+   - **Authentication Mode** - there are three options available:
 
-     - Anonymous
+     - **Anonymous** - the message initiator is anonymous and the responder is authenticated, no credentials needed.
 
-     - Basic
+     - **Basic** - provides basic authentication and requires credentials to be entered.
 
-     - Windows
+     - **Windows** - provides authentication using Windows login and requires credentials to be entered.
 
-       Selecting Basic or Windows exposes the options below. Enter the credentials as needed.
+       ![Windows authentication](/images/windows-authentication.jpg)
 
-![img](file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+6. When you have added SOAP service details, you are ready to test your connection and add security. At the bottom of the **SOAP service details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
 
-**Status:** when the datasource has not been configured, the status will be ‘incomplete’. When set up it will be ‘ready’.
+7. Click on **Save** ![Save connection button](/images/save-connection.jpg)to save the connection and you will receive a notification saying **Details saved successfully**.
+
+8. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
 
  
 
-**Next Steps**
+### What's next  ![Idea icon](/images/18.png) ###
 
-The SOAP Service is now ready to be used. Check out the below on how to design processes.
+Your **SOAP Service** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).
 
-https://docs.kianda.com/docs/platform/application-designe
