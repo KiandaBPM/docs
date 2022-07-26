@@ -449,59 +449,82 @@
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>Docs: Anonymous form link</title><link>https://docs.kianda.com/docs/platform/rules/communications/anonymous-form-link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/communications/anonymous-form-link/</guid><description>
-&lt;p>This rule creates a link to a form which can be sent to an external user. The user can open the form without the need for authentication.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/anonymousformlink.png" alt="Anonymous form link dialog box">&lt;/p>
-&lt;h6 id="when-to-use">When to use&lt;/h6>
+&lt;p>The &lt;strong>Anonymous form&lt;/strong> rule creates a link to a selected form from the process which can be sent to an external user. The user can open the form without the need for authentication into the Kianda platform.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>To use the &lt;strong>Anonymous form&lt;/strong> rule effectively, you would typically apply it to a &lt;strong>Submit&lt;/strong> button along side &lt;strong>Send email&lt;/strong> rule so that you can attach the link into an email and share the specified form with an external user.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h6 id="how-to-use">How to use&lt;/h6>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Anonymous form link&lt;/strong>, in your process you need to have created at least one or more forms. This rule also requires a link to be stored inside of a field, for example text box control. To learn more about text box control go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To send an anonymous form link to an external user:&lt;/p>
 &lt;ol>
-&lt;li>Before adding the rule, add a text field to store the anonymous link: Click on Controls &amp;gt; Input &amp;gt; Text and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to &lt;em>Anonymous Link&lt;/em>. Change the Name(unique) to &lt;em>anonymousLink&lt;/em>.&lt;/li>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Click on Add a rule &amp;gt; Communications &amp;gt; Anonymous form link.&lt;/li>
-&lt;li>Under Action, Select a form to be completed by an external user.&lt;/li>
-&lt;li>Select the Anonymous Link field where the link will be stored.&lt;/li>
-&lt;li>Enter a message for the external user. This message will be displayed when they submit the form.&lt;/li>
-&lt;li>Click OK.&lt;/li>
-&lt;li>Select Add a rule &amp;gt; Communications &amp;gt; Send email:
-a. Add the external user&amp;rsquo;s email address under To:
-b. Add a Subject.
-c. Use the Expression builder to add [anonymousLink] to the Body of the email.
-d. Refer to the documentation for the Send email rule, if required.&lt;/li>
-&lt;li>Click OK.&lt;/li>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Communications&lt;/strong> &amp;gt; &lt;strong>Anonymous form link&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Anonymous form link&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-edit-box.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a form&lt;/strong> dropdown, select the desired form to create a link to.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Link expire settings contains three options:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Never expires&lt;/strong> - Indicating that the link will never expire and will always be active.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Expire after a number of uses&lt;/strong> - the link will expire after the specified number of uses in the &lt;strong>Expire link after number of uses&lt;/strong> text box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-expire-uses.jpg" alt="Link expire settings - number of uses">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Expire in time&lt;/strong> - the link will expire after the specified &lt;strong>Days&lt;/strong>, &lt;strong>Hours&lt;/strong> and &lt;strong>Minutes&lt;/strong> from the time it was created.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-expire-time.jpg" alt="Link expire settings - time">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Field to store the generated anonymous link&lt;/strong> dropdown, select a field in which you want the link to be stored in.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Message to display after anonymous submission&lt;/strong> text box, type in a message your want users to see after they submit the form.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-message-box.jpg" alt="Link expire settings - time">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-message.jpg" alt="Link expire settings - time">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Selecting the &lt;strong>Hide form topbar&lt;/strong> will hide all form tiles from the users view.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Force logout:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Yes&lt;/strong> - users will be logged out after submitting the form.&lt;/li>
+&lt;li>&lt;strong>No&lt;/strong> - users will stay logged in after submitting the form.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Create a &lt;strong>Send email&lt;/strong> rule and apply the link expression to the body of the email. To learn more about &lt;strong>Send email&lt;/strong> rule and how to add expressions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email&lt;/a>.&lt;/p>
+&lt;/li>
 &lt;/ol>
-&lt;p>The field used to store the Anonymous Link can be made invisible to the user of the current form. Go to the field properties and set the field to &lt;em>not visible&lt;/em>.&lt;/p>
-&lt;h6 id="notes">Notes&lt;/h6>
-&lt;p>&lt;em>Each record or instance of a process can have only one active link.&lt;/em> If a second anonymous link is created for an instance of a process, the first link will not exist anymore. Users clicking on the first link will get an error message.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align:left">Link expire settings&lt;/th>
-&lt;th style="text-align:left">Options&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align:left">Never expires&lt;/td>
-&lt;td style="text-align:left">The link will never expire.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Expire after a number of uses&lt;/td>
-&lt;td style="text-align:left">Add the number of uses before the link expires.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Expire in time&lt;/td>
-&lt;td style="text-align:left">Give the number of days, hours, and minutes before the link expires.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>Hide form topbar: when selected, the tabs with the form names will not appear at top of the form opened by the external user.&lt;/p>
-&lt;p>Force log out: when set to Yes, the user will be logged out automatically.&lt;/p></description></item><item><title>Docs: User alert</title><link>https://docs.kianda.com/docs/platform/rules/communications/user-alert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/communications/user-alert/</guid><description>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>The field used to store the Anonymous Link can be made invisible to the user of the current form. Go to the field properties and set the field to &lt;em>not visible&lt;/em>.&lt;/li>
+&lt;li>Each record or instance of a process can have only one active link. If a second anonymous link is created for an instance of a process, the first link will not exist anymore. Users clicking on the first link will get an error message.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: User alert</title><link>https://docs.kianda.com/docs/platform/rules/communications/user-alert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/communications/user-alert/</guid><description>
 &lt;p>This rule sends an alert to a user who can then open an instance of a process. A user can view all alerts by clicking on the bell icon on the top right-hand corner of their screen.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/useralert.png" alt="User alert dialog box">&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
