@@ -1234,7 +1234,10 @@ The Safety Team
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/process-level-security/">Process level security&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/sso/">Single Sign-On&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/data-residency/">Data residency&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Connecting to SharePoint lists and Libraries</title><link>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Cloud gateway</title><link>https://docs.kianda.com/docs/platform/connectors/cloud-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/cloud-gateway/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction&lt;/p>
+&lt;/div></description></item><item><title>Docs: Connecting to SharePoint lists and Libraries</title><link>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</guid><description>
 &lt;p>This video demonstrates how to connect to a datasource in SharePoint and use that information in a form list.&lt;/p>
 &lt;div style="padding:50.94% 0 0 0;position:relative;">&lt;iframe src="https://player.vimeo.com/video/677724364?h=cdfc835f25&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Connecting to SharePoint example">&lt;/iframe>&lt;/div>&lt;script src="https://player.vimeo.com/api/player.js">&lt;/script></description></item><item><title>Docs: Excel workbook add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
@@ -3507,7 +3510,10 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/">&lt;strong>Add forms&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a>&lt;/strong>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties/">&lt;strong>Properties&lt;/strong>&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Expression builder</title><link>https://docs.kianda.com/docs/platform/rules/general/expression-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/expression-builder/</guid><description>
+&lt;/ul></description></item><item><title>Docs: DocuSign</title><link>https://docs.kianda.com/docs/platform/connectors/docusign/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/docusign/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction&lt;/p>
+&lt;/div></description></item><item><title>Docs: Expression builder</title><link>https://docs.kianda.com/docs/platform/rules/general/expression-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/expression-builder/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Expressions allow you to put together form &lt;strong>identifiers&lt;/strong> (form field IDs) and &lt;strong>constants&lt;/strong> with &lt;strong>operators&lt;/strong> and &lt;strong>functions&lt;/strong> to return a &lt;strong>dynamic value&lt;/strong> that can be used in various places – for example, in a form or field rule to automate processes.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Expressions&lt;/strong>&lt;/em>&lt;/p>
@@ -4032,137 +4038,4 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>To read more about User and group management, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.&lt;/p>
 &lt;p>To read more about Dashboards, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p>
 &lt;p>To read more about Conditions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
-&lt;p>To read more about data source parameters, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Connectors&lt;/a> and from there navigate to the different predefined data connectors.&lt;/p></description></item><item><title>Docs: Submit form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</guid><description>
-&lt;p>The &lt;strong>Submit form&lt;/strong> rule marks the current form as complete and makes it read-only. By default on submit, the next form is activated.&lt;/p>
-&lt;p>This rule is automatically attached to &lt;strong>Submit&lt;/strong> button which is added to all forms by default.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>This action is used to submit a form that you are working on, that is the &amp;lsquo;current&amp;rsquo; form.&lt;/p>
-&lt;p>You can add this rule:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To implement the rule:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="http://localhost:1313/images/penicon.png" alt="Pen button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Field display mode&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="http://localhost:1313/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under Action, &lt;strong>Set process status&lt;/strong> choose from &lt;strong>Auto (Current form title)&lt;/strong> or &lt;strong>Manual&lt;/strong>. If you choose &lt;strong>Manual&lt;/strong> then type in the desired text to appear to users in the &lt;strong>Status text after submit&lt;/strong> field.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>Each process contains an internal status value, this is automatically set to the name of the active form. For example there are two forms in a Incident process, a &lt;strong>Incident form&lt;/strong>, a &lt;strong>Review form&lt;/strong> and the &lt;strong>Auto (Current form title)&lt;/strong> is selected in the &lt;strong>Set process status&lt;/strong> option. When the &lt;strong>Incident form&lt;/strong> is completed and submitted, the internal status will be set to the next active form, in this case the &lt;strong>Review form&lt;/strong>. When all forms are completed and submitted, the internal status is set to &lt;strong>completed&lt;/strong>. The image below shows how the internal status of the process can be reflected in a dashboard to keep track of the current stage of a process.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/examples-submit-form-status.jpg" alt="Submit form read only">&lt;/p>
-&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
-&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
-&lt;ol>
-&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
-&lt;ol start="2">
-&lt;li>
-&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;ul>
-&lt;li>You can display the internal status of a process in a list widget on your dashboard. This can help you keep of the current state the process instance is. For example when the process is complete of which form the process is currently in.&lt;/li>
-&lt;/ul>
-&lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Success and Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As a user with a &lt;strong>administrator&lt;/strong> or &lt;strong>designer&lt;/strong> role, you can use Kianda &lt;strong>Designer&lt;/strong> to populate fields within the Kianda form, using the &lt;strong>Edit rule&lt;/strong> dialog box to set parameters for success and error mapping.&lt;/p>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>Success and Error mapping should be with rule execution, displaying values that you want for rule execution success or failure.&lt;/p>
-&lt;p>&lt;strong>You can use mapping with the following rules:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Find items&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Create item&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Update item&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Delete item&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> All SharePoint rules, except Get attachments and Create anonymous link&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-use">How to use&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>Select the field that will have the rule attached, for example a button at the end of a form, or a field within a form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane and select one of the rules that uses mapping as shown in the &lt;a href="#wehn-to-use">When to use&lt;/a> list above, for example the &lt;strong>SharePoint rule&lt;/strong> called &lt;strong>Create list&lt;/strong>, used to create a list in SharePoint dynamically using Kianda form data.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-eg.jpg" alt="(Example of a rule with mapping)">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong>, click on the field &lt;strong>Select a SharePoint data source&lt;/strong> from the drop-down list.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-filled.jpg" alt="Create a list example with details">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Fill out any additional fields as necessary, for example to create a list the following fields must be completed:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>List template&lt;/strong> - choose from a list of SharePoint list types&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>List name field&lt;/strong> - choose a form field that will be used the create a name for the list in SharePoint&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>List url field&lt;/strong> - choose a form field that will be used in the creation of a URL within SharePoint&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>List description field&lt;/strong> - choose a form field that describes what the list is about&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Quick Launch menu&lt;/strong> - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. Choosing &lt;strong>Yes&lt;/strong> allows the created list to be displayed in the Quick Launch menu, containing a link to the list.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>To add success mapping, click on &lt;strong>On success mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button:&lt;/p>
-&lt;ul>
-&lt;li>In the &lt;strong>Form field&lt;/strong> select a form field which will store information in your Kianda form&lt;/li>
-&lt;li>In the &lt;strong>Data source field or text&lt;/strong> select a data source field that is used in the mapping&lt;/li>
-&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>For &lt;strong>On error mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button:&lt;/p>
-&lt;ul>
-&lt;li>In the &lt;strong>Form field&lt;/strong> select a form field which will store information in your Kianda form&lt;/li>
-&lt;li>In the &lt;strong>Error message or text&lt;/strong> enter a error message that you want to appear in the event of errors or leave empty to use a system generated error indicating what has gone wrong when the rule executed.&lt;/li>
-&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>you simply need to select the field within the form which will store the error message&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconcontentdocsplatformrulesgeneralsuccess-error-mappingassets18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/../content/docs/platform/rules/general/success-error-mapping.assets/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item></channel></rss>
+&lt;p>To read more about data source parameters, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Connectors&lt;/a> and from there navigate to the different predefined data connectors.&lt;/p></description></item></channel></rss>
