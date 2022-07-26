@@ -151,7 +151,7 @@ On this page you can make the following changes:
 
 - **Mobile Icon** - click on **Browse** to browse for a logo to add from your PC or network. The recommended size is 512px x 512px.
 
-When you are finished making changes click on ** **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
+When you are finished making changes click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
 
 
 
@@ -163,6 +163,8 @@ Within general settings administrators can set who the Global Administrator is, 
 
 ![Subscription details](/images/company-details.jpg)
 
+### Company details
+
 On this page you can make the following changes:
 
 - **Company Name** - add in your company name.
@@ -171,19 +173,14 @@ On this page you can make the following changes:
 - **City** - choose a city from the drop-down list.
 - **Address** - add in your company address.
 - **Renewal date** - your subscription renewal date is automatically added in.
-- **Subscription Id** - your company subscription identity is automatically generated. This is needed when
+- **Subscription Id** - your company subscription identity is automatically generated. This is needed when you need to perform authorisation to use Instance API.
 - **Address** - add in your company address.
 
 
 
+### General settings
 
 
-
-
-- **City** - choose a city from the drop-down list.
-- **Company Name** - add in your company name.
-- **App short name** - add/change a  short name for your app/workspace. A maximum of 12 characters is recommended.
-- **Splash Screen Color** - to set the introducto
 
 ## Single Sign-On (SSO)
 
