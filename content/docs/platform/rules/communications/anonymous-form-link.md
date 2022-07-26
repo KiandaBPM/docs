@@ -68,7 +68,7 @@ To send an anonymous form link to an external user:
 
 ### User tip ![Target icon](/images/05.png)
 
-- The field used to store the Anonymous Link can be made invisible to the user of the current form. Go to the field properties and set the field to *not visible*.
+- The field used to store the Anonymous Link can be made invisible to the user of the current form. Go to the field properties and set the field to **not visible**.
 - Each record or instance of a process can have only one active link. If a second anonymous link is created for an instance of a process, the first link will not exist anymore. Users clicking on the first link will get an error message.
 
 ### What’s next ![Idea icon](/images/18.png)
