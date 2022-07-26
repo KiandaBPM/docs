@@ -165,7 +165,7 @@ Within general settings administrators can set who the Global Administrator is, 
 
 ### Company details
 
-On this page you can make the following changes:
+in this section you can make the following changes:
 
 - **Company Name** - add in your company name.
 - **Business identity** - the business identity for your company workspace is automatically added in. 
@@ -180,7 +180,11 @@ On this page you can make the following changes:
 
 ### General settings
 
+In this section you can make the following changes:
 
+- **Enable Global SMTP Mail Connector** - set a global SMTP connector used to send emails. The global connector will ignore all other connectors and will no longer use no-reply@kianda.com as a sender. To learn more about email connector and how to set up a SMTP, go to [Email connector](/docs/platform/connectors/email/).
+- **Global Administrator** - change the global administrator of your company's Kianda platform from the list of users that are in it.
+- **Global JavaScript** - allows you to create a JavaScript file with custom functions as helper or action functions allowing you to perform any functionality you may want. The file is accessible globally and will load when the application first starts. 
 
 ## Single Sign-On (SSO)
 
