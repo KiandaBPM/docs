@@ -500,50 +500,24 @@
 &lt;p>&lt;strong>Mobile Icon&lt;/strong> - click on &lt;strong>Browse&lt;/strong> to browse for a logo to add from your PC or network. The recommended size is 512px x 512px.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>When you are finished making changes click on ** &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
+&lt;p>When you are finished making changes click on &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
 &lt;h2 id="subscription-details">Subscription Details&lt;/h2>
 &lt;p>General settings include details like your company name, subscription ID, renewal date and business identity (your workspace URL, for example, green-itr.kianda.com). You can also enable a Global SMTP Mail Connector to enable email flow to/from your Kianda workspace.&lt;/p>
 &lt;p>Within general settings administrators can set who the Global Administrator is, or the main administrator for the workspace.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/company-details.jpg" alt="Subscription details">&lt;/p>
+&lt;h3 id="company-details">Company details&lt;/h3>
 &lt;p>On this page you can make the following changes:&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Company Name&lt;/strong> - add in your company name.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Business identity&lt;/strong> - the business identity for your company workspace is automatically added in.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Country&lt;/strong> - choose a country from the drop-down list.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>City&lt;/strong> - choose a city from the drop-down list.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Address&lt;/strong> - add in your company address.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Renewal date&lt;/strong> - your subscription renewal date is automatically added in.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Subscription Id&lt;/strong> - your company subscription identity is automatically generated. This is needed when&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Address&lt;/strong> - add in your company address.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>City&lt;/strong> - choose a city from the drop-down list.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Company Name&lt;/strong> - add in your company name.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>App short name&lt;/strong> - add/change a short name for your app/workspace. A maximum of 12 characters is recommended.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Splash Screen Color&lt;/strong> - to set the introducto&lt;/p>
-&lt;/li>
+&lt;li>&lt;strong>Company Name&lt;/strong> - add in your company name.&lt;/li>
+&lt;li>&lt;strong>Business identity&lt;/strong> - the business identity for your company workspace is automatically added in.&lt;/li>
+&lt;li>&lt;strong>Country&lt;/strong> - choose a country from the drop-down list.&lt;/li>
+&lt;li>&lt;strong>City&lt;/strong> - choose a city from the drop-down list.&lt;/li>
+&lt;li>&lt;strong>Address&lt;/strong> - add in your company address.&lt;/li>
+&lt;li>&lt;strong>Renewal date&lt;/strong> - your subscription renewal date is automatically added in.&lt;/li>
+&lt;li>&lt;strong>Subscription Id&lt;/strong> - your company subscription identity is automatically generated. This is needed when you need to perform authorisation to use Instance API.&lt;/li>
+&lt;li>&lt;strong>Address&lt;/strong> - add in your company address.&lt;/li>
 &lt;/ul>
+&lt;h3 id="general-settings">General settings&lt;/h3>
 &lt;h2 id="single-sign-on-sso">Single Sign-On (SSO)&lt;/h2>
 &lt;p>Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. To enable Single-Sign-On, please follow the below steps:&lt;/p>
 &lt;p>As an administrator, go to the left-hand pane and click on Administration &amp;gt; Subscription &amp;gt; Single Sign-on.
