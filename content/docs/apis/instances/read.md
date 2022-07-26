@@ -4,8 +4,6 @@ weight: 2
 typora-root-url: ..\..\..\static
 ---
 
-{{% pageinfo color='primary'%}}
-
+{{% pageinfo color="primary" %}}
 Page under construction
-
 {{% /pageinfo %}}
