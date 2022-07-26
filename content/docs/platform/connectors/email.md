@@ -1,5 +1,6 @@
 ---
 title: "Email connector"
+weight: 5
 typora-root-url: ..\..\..\..\static
 ---
 

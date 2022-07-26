@@ -1,5 +1,7 @@
 ---
 title: "FTP"
+weight: 7
+typora-root-url: ..\..\..\..\static
 ---
 
 {{% pageinfo color="primary" %}}

@@ -1,5 +1,7 @@
 ---
 title: "Salesforce"
+weight: 13
+typora-root-url: ..\..\..\..\static
 ---
 
 {{% pageinfo color="primary" %}}

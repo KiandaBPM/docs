@@ -1,5 +1,7 @@
 ---
 title: "SAP connector"
+weight: 14
+typora-root-url: ..\..\..\..\static
 ---
 
 {{% pageinfo color="primary" %}}
