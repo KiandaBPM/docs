@@ -2,10 +2,7 @@
 &lt;h1 id="authentication">Authentication&lt;/h1>
 &lt;p>Kianda’s REST Application Programming Interface (API) for &lt;strong>instances&lt;/strong> allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on &lt;strong>process instances&lt;/strong>. A process instance is created every time data is either saved or submitted to Kianda’s database for a given process design.&lt;/p></description></item><item><title>Docs: Instances API</title><link>https://docs.kianda.com/docs/apis/instances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/instances/</guid><description>
 &lt;hr>
-&lt;h2 id="typora-root-url-static">title: &amp;ldquo;Instances API&amp;rdquo;
-linkTitle: &amp;ldquo;Instances API&amp;rdquo;
-weight: 1
-typora-root-url: ........\static&lt;/h2>
+&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Kianda&amp;rsquo;s REST Application Programming Interface (API) for &lt;strong>instances&lt;/strong> allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on &lt;strong>process instances&lt;/strong>. A process instance is created every time data is either saved or submitted to Kianda&amp;rsquo;s database for a given process design.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>Before you get started, there are three things to keep in mind:&lt;/p>
