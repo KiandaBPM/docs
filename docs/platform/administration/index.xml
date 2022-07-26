@@ -506,7 +506,7 @@
 &lt;p>Within general settings administrators can set who the Global Administrator is, or the main administrator for the workspace.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/company-details.jpg" alt="Subscription details">&lt;/p>
 &lt;h3 id="company-details">Company details&lt;/h3>
-&lt;p>On this page you can make the following changes:&lt;/p>
+&lt;p>in this section you can make the following changes:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Company Name&lt;/strong> - add in your company name.&lt;/li>
 &lt;li>&lt;strong>Business identity&lt;/strong> - the business identity for your company workspace is automatically added in.&lt;/li>
@@ -518,6 +518,12 @@
 &lt;li>&lt;strong>Address&lt;/strong> - add in your company address.&lt;/li>
 &lt;/ul>
 &lt;h3 id="general-settings">General settings&lt;/h3>
+&lt;p>In this section you can make the following changes:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Enable Global SMTP Mail Connector&lt;/strong> - set a global SMTP connector used to send emails. The global connector will ignore all other connectors and will no longer use &lt;a href="mailto:no-reply@kianda.com">no-reply@kianda.com&lt;/a> as a sender. To learn more about email connector and how to set up a SMTP, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/">Email connector&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Global Administrator&lt;/strong> - change the global administrator of your company&amp;rsquo;s Kianda platform from the list of users that are in it.&lt;/li>
+&lt;li>&lt;strong>Global JavaScript&lt;/strong> - allows you to create a JavaScript file with custom functions as helper or action functions allowing you to perform any functionality you may want. The file is accessible globally and will load when the application first starts.&lt;/li>
+&lt;/ul>
 &lt;h2 id="single-sign-on-sso">Single Sign-On (SSO)&lt;/h2>
 &lt;p>Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. To enable Single-Sign-On, please follow the below steps:&lt;/p>
 &lt;p>As an administrator, go to the left-hand pane and click on Administration &amp;gt; Subscription &amp;gt; Single Sign-on.
