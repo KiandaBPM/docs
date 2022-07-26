@@ -519,63 +519,61 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;ul>
-&lt;li>The field used to store the Anonymous Link can be made invisible to the user of the current form. Go to the field properties and set the field to &lt;em>not visible&lt;/em>.&lt;/li>
+&lt;li>The field used to store the Anonymous Link can be made invisible to the user of the current form. Go to the field properties and set the field to &lt;strong>not visible&lt;/strong>.&lt;/li>
 &lt;li>Each record or instance of a process can have only one active link. If a second anonymous link is created for an instance of a process, the first link will not exist anymore. Users clicking on the first link will get an error message.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: User alert</title><link>https://docs.kianda.com/docs/platform/rules/communications/user-alert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/communications/user-alert/</guid><description>
-&lt;p>This rule sends an alert to a user who can then open an instance of a process. A user can view all alerts by clicking on the bell icon on the top right-hand corner of their screen.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/useralert.png" alt="User alert dialog box">&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>The &lt;strong>User alert&lt;/strong> rule sends an alert to a user who can then open an instance of a process. It can be used as a reminder or a notification for a user to fill out a form in a process. A user can view all alerts by clicking on the bell icon on the top right-hand corner of their screen.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>There is a lot of uses for the user alert rule, it can be used as a reminder to complete a form or when a form is submitted and the form needs to be reviewed, a manger can recieve the alert to review the information in the form.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>To send an alert to the current user:&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
-&lt;li>Select the Submit button&lt;/li>
-&lt;li>Add a rule &amp;gt;Communications &amp;gt; User Alert&lt;/li>
-&lt;li>Select Current user.&lt;/li>
-&lt;li>Enter a title for the Alert.&lt;/li>
-&lt;li>Enter a message to be displayed to the user.&lt;/li>
-&lt;li>Select a colour to indicate the Alert Status.&lt;/li>
-&lt;li>Choose an Alert icon e.g. flag.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
-&lt;/ol>
-&lt;h3 id="notes">Notes&lt;/h3>
-&lt;p>&lt;strong>Send alert to:&lt;/strong>&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align:left">Option&lt;/th>
-&lt;th style="text-align:left">Notes&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align:left">Any user&lt;/td>
-&lt;td style="text-align:left">Select from any user in the system.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Current user&lt;/td>
-&lt;td style="text-align:left">The current user will get an alert.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Defined in a user field&lt;/td>
-&lt;td style="text-align:left">Select a user picker field which stores the user to receive the alert.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Form owner(s)&lt;/td>
-&lt;td style="text-align:left">Select the form and the owner(s) will receive the alert.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>&lt;strong>Process ID:&lt;/strong>
-When the user receives an alert and clicks on it, he will open the process instance defined in the Process ID field.&lt;/p>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Communications&lt;/strong> &amp;gt; &lt;strong>Anonymous form link&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - User alert&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-edit-box.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Send alert to&lt;/strong> - choose from the radio buttons:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details.&lt;/li>
+&lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that thealert is being sent to.&lt;/li>
+&lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will have an alert sent to.&lt;/li>
+&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the alert sent to, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Alert title&lt;/strong> - select a field from the process to be the title or type one in.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Alert message&lt;/strong> - select a field from the process for the message of the alert or type one in.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Alert Status&lt;/strong> - choose from four different colours to be applied to the tile of the alert.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Alert icon&lt;/strong> - choose an icon from the dropdown list.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-settings.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-reminder.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Process ID&lt;/strong> - when the user receives an alert and clicks on it, he will open the process instance defined in the Process ID field.&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>If left blank, this field will contain the current Process ID.&lt;/p>
@@ -583,4 +581,9 @@ When the user receives an alert and clicks on it, he will open the process insta
 &lt;li>
 &lt;p>A different process ID can be added by typing or copying in the ID (or if the Process ID is stored in a field, then that field can be selected).&lt;/p>
 &lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
