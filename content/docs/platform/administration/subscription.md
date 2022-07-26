@@ -30,6 +30,8 @@ To view use the Scheduled tasks function:
 
 Details on each area are available below.
 
+
+
 ## Look and Feel
 You can access this section by clicking on **Open Wizard** > **Look and Feel** or by clicking on **Look and Feel** in the main **Subscription** page. 
 
@@ -39,12 +41,16 @@ You can access this section by clicking on **Open Wizard** > **Look and Feel** o
 
 Details for each of the areas within the page - [Logos][#logos], [Layout](#layout). [Themes](#themes) and [CSS](#css) are available below. Make sure to click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made. 
 
+
+
 ### Logos ###
 
 To add a logo for your company:
 
 1. Click on **Browse** beside **Logo Url** to browse for a logo to add from your PC or network. The recommended size is 200px x 65px.
 2. To add a logo that will appear when the left-hand side menu is collapsed, click on **Browse** beside **Collapsed Logo URL** to browse for a a logo to add from your PC or network. The recommended size is 45px x 45px. 
+
+
 
 ### Layout ###
 
@@ -64,11 +70,15 @@ The options for your workspace layout are:
 
   Click on **OK** to save changes or **Close** to exit the dialog box at any time.
 
+
+
 ### Themes ###
 
 Click on a Theme of choice, options range from two-tone layouts, to those with a dark left-hand side menu as shown in the middle of the image below. 
 
 ![Themes](/images/themes.jpg)
+
+
 
 ### CSS ###
 
@@ -87,7 +97,20 @@ This section allows you to design the login page, choose background and font col
 On this page you can make the following changes:
 
 - **Login Page Logo Url** - add/change a logo for the login page to Kianda by clicking on **Browse** to browse for a logo on your PC or network.
-- **Background Color** - you can either click on the colour itself or click in the box beside it to add in a HEX value for a colour.
+
+- **Background Color** - to create a background colour for the login page, you can either click on the colour itself and select a colour in the main view, or using the slider, or type in an RGB, HSL or HEX value in the fields above, or click in the box beside it to add in a HEX value for a colour, for example #BFBFBF.
+
+  ![Background Color](/images/background-color.jpg)
+
+- **Font Color** - as with the Background Color, to create a font colour, choose an appropriate colour using the colour box itself or type in a value in the field beside the colour.
+
+- **Tagline 1** - type in the first tagline that will appear on the login page. A maximum of 25 characters is recommended.
+
+- **Tagline 2** - type in the second tagline that will appear on the login page. A maximum of 20 characters is recommended.
+
+  ![Taglines](/images/taglines.jpg)
+
+When you are finished making changes click on ** **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
 
 
 
@@ -95,17 +118,72 @@ On this page you can make the following changes:
 
 Here you can set your operational time zone and regional settings, such as English Ireland, from the dropdown.
 
+![Regional settings](/images/regional-settings.jpg)
+
+On this page you can make the following changes:
+
+- **Regional settings** - choose a language setting from the drop-down list.
+- **Time zone** - choose a time zone from the drop-down list.
+
+When you are finished making changes click on ** **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
+
+The chosen options are reflected in the text below the fields, for example **date and time format**.
+
+
+
 ## Mobile Settings
 
 Here you can customise how the Kianda workspace will appear as a mobile app. You can choose your App name, App short name, Splash Screen Colour, and Theme Colour and upload a mobile size icon (note the icon size is 512 x 512 px).
 
+![Mobile settings](/images/mobile-settings.jpg)
+
+On this page you can make the following changes:
+
+- **App name** - add/change a name for your app/workspace. A maximum of 45 characters is recommended.
+
+- **App short name** - add/change a  short name for your app/workspace. A maximum of 12 characters is recommended.
+
+- **Splash Screen Color** - to set the introductory screen colour that appears while your application loads (splash screen), you can either click on the colour itself and select a colour in the main view, or using the slider, or type in an RGB, HSL or HEX value in the fields above, or click in the box beside it to add in a HEX value for a colour, for example #037dd3.
+
+  ![Splash screen color](/images/splash-screen-color.jpg)
+
+- **Theme Color** - as with the Splash Screen Color, choose an appropriate colour for the mobile app theme font using the colour box itself or type in a value in the field beside the colour.
+
+- **Mobile Icon** - click on **Browse** to browse for a logo to add from your PC or network. The recommended size is 512px x 512px.
+
+When you are finished making changes click on ** **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
+
+
+
 ## Subscription Details
 
-General settings include details like your company name, subscription ID, renewal date and business identity (your workspace URL, for example, green-itr.kianda.com).
-
-You can also enable a Global SMTP Mail Connector to enable email flow to/from your Kianda workspace.
+General settings include details like your company name, subscription ID, renewal date and business identity (your workspace URL, for example, green-itr.kianda.com). You can also enable a Global SMTP Mail Connector to enable email flow to/from your Kianda workspace.
 
 Within general settings administrators can set who the Global Administrator is, or the main administrator for the workspace.
+
+![Subscription details](/images/company-details.jpg)
+
+On this page you can make the following changes:
+
+- **Company Name** - add in your company name.
+- **Business identity** - the business identity for your company workspace is automatically added in. 
+- **Country** - choose a country from the drop-down list.
+- **City** - choose a city from the drop-down list.
+- **Address** - add in your company address.
+- **Renewal date** - your subscription renewal date is automatically added in.
+- **Subscription Id** - your company subscription identity is automatically generated. This is needed when
+- **Address** - add in your company address.
+
+
+
+
+
+
+
+- **City** - choose a city from the drop-down list.
+- **Company Name** - add in your company name.
+- **App short name** - add/change a  short name for your app/workspace. A maximum of 12 characters is recommended.
+- **Splash Screen Color** - to set the introducto
 
 ## Single Sign-On (SSO)
 

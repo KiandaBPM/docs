@@ -56,6 +56,8 @@ A SOAP Service data connector can be configured by users with the role **Adminis
 
 8. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
 
+9. Click on **Close** to close the details page and return to the datasource management main view.
+
  
 
 ### What's next  ![Idea icon](/images/18.png) ###
