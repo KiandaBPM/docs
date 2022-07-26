@@ -1,0 +1,77 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – APIs</title><link>https://docs.kianda.com/docs/apis/</link><description>Recent content in APIs on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/apis/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Authentication</title><link>https://docs.kianda.com/docs/apis/authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/authentication/</guid><description>
+&lt;h1 id="authentication">Authentication&lt;/h1>
+&lt;p>Kianda’s REST Application Programming Interface (API) for &lt;strong>instances&lt;/strong> allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on &lt;strong>process instances&lt;/strong>. A process instance is created every time data is either saved or submitted to Kianda’s database for a given process design.&lt;/p></description></item><item><title>Docs: Instances API</title><link>https://docs.kianda.com/docs/apis/instances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/instances/</guid><description>
+&lt;hr>
+&lt;h2 id="typora-root-url-static">title: &amp;ldquo;Instances API&amp;rdquo;
+linkTitle: &amp;ldquo;Instances API&amp;rdquo;
+weight: 1
+typora-root-url: ........\static&lt;/h2>
+&lt;p>Kianda&amp;rsquo;s REST Application Programming Interface (API) for &lt;strong>instances&lt;/strong> allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on &lt;strong>process instances&lt;/strong>. A process instance is created every time data is either saved or submitted to Kianda&amp;rsquo;s database for a given process design.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>Before you get started, there are three things to keep in mind:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To use API methods in Kianda you must have an &lt;strong>administrator&lt;/strong> role, go to &lt;a href="https://docs.kianda.com/administration/users/#view-and-edit-existing-user-details">View and edit user details&lt;/a> to see information on how to set roles.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Each API method requires a &lt;strong>Bearer token&lt;/strong>, see &lt;a href="#authorization">Authorization&lt;/a> below for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Each of the following methods can be used on &lt;strong>process instances&lt;/strong> or records, where &lt;strong>{name}&lt;/strong> is the name of a process instance, such as &amp;rsquo;training-approval-request-1'.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="authentication">Authentication&lt;/h2>
+&lt;p>The Instances API methods require a &lt;strong>Bearer token&lt;/strong> or &lt;strong>Access token&lt;/strong> which is a &lt;strong>security token&lt;/strong> to enable HTTP authentication. The bearer token is a cryptic text string, included in the request header.&lt;/p>
+&lt;p>The token can be retrieved by using a &lt;strong>GET&lt;/strong> query as follows:&lt;/p>
+&lt;pre tabindex="0">&lt;code>{{domain}}/token
+&lt;/code>&lt;/pre>&lt;p>Pass the following in the header of the request:&lt;/p>
+&lt;p>&lt;code>username, password, scope, grant_type:password, remember:yes&lt;/code>&lt;/p>
+&lt;p>where {scope} is your &lt;strong>Subscription ID&lt;/strong> found in your Kianda workspace by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> &amp;gt; &lt;strong>Subscription Id&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/subscription-details.jpg" alt="Subscription Id">&lt;/p>
+&lt;h2 id="post----create-a-process-instance">POST - Create a process instance&lt;/h2>
+&lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/create
+&lt;/code>&lt;/pre>&lt;p>This request creates a process instance/new record.&lt;/p>
+&lt;p>The &lt;strong>Request Body&lt;/strong> for the POST request is:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ProcessName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;FieldsMappings&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;TriggerField&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;success&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#204a87;font-weight:bold">true&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;instanceID&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="put---update-a-process-instance">PUT - Update a process instance&lt;/h2>
+&lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/{name}
+&lt;/code>&lt;/pre>&lt;pre>&lt;code>where `{name}`is the name of the process instance.
+&lt;/code>&lt;/pre>
+&lt;p>This request updates all fields in the instance by performing a comparison based on version number, to ensure there are no duplicate process instances.&lt;/p>
+&lt;p>The &lt;strong>Request Body&lt;/strong> for the PUT request is:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ProcessName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;FieldsMappings&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;TriggerField&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ProcessName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;FieldsMappings&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;TriggerField&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="get---retrieve-process-instance-fields">GET - Retrieve process instance fields&lt;/h2>
+&lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/{name}/fields?names=field1,field2..
+&lt;/code>&lt;/pre>&lt;pre>&lt;code>where `{name}`is the name of the process instance.
+&lt;/code>&lt;/pre>
+&lt;p>This request retrieves the values of multiple fields by name.&lt;/p>
+&lt;p>No Request Body is required.&lt;/p>
+&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;value&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

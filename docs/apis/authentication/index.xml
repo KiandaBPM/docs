@@ -1,0 +1,26 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Authentication</title><link>https://docs.kianda.com/docs/apis/authentication/</link><description>Recent content in Authentication on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/apis/authentication/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: OAuth 2.0</title><link>https://docs.kianda.com/docs/apis/authentication/oauth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/authentication/oauth/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction&lt;/p>
+&lt;/div></description></item><item><title>Docs: Bearer access token</title><link>https://docs.kianda.com/docs/apis/authentication/bearer-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/authentication/bearer-access/</guid><description>
+&lt;p>Kianda&amp;rsquo;s REST Application Programming Interface (API) for &lt;strong>instances&lt;/strong> allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on &lt;strong>process instances&lt;/strong>. A process instance is created every time data is either saved or submitted to Kianda&amp;rsquo;s database for a given process design.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>Before you get started, there are three things to keep in mind:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To use API methods in Kianda you must have an &lt;strong>administrator&lt;/strong> role, go to &lt;a href="https://docs.kianda.com/administration/users/#view-and-edit-existing-user-details">View and edit user details&lt;/a> to see information on how to set roles.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Each API method requires a &lt;strong>Bearer token&lt;/strong>, see &lt;a href="#authorization">Authorization&lt;/a> below for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Each of the following methods can be used on &lt;strong>process instances&lt;/strong> or records, where &lt;strong>{name}&lt;/strong> is the name of a process instance, such as &amp;rsquo;training-approval-request-1'.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="authentication">Authentication&lt;/h2>
+&lt;p>The Instances API methods require a &lt;strong>Bearer token&lt;/strong> or &lt;strong>Access token&lt;/strong> which is a &lt;strong>security token&lt;/strong> to enable HTTP authentication. The bearer token is a cryptic text string, included in the request header.&lt;/p>
+&lt;p>The token can be retrieved by using a &lt;strong>GET&lt;/strong> query as follows:&lt;/p>
+&lt;pre tabindex="0">&lt;code>{{domain}}/token
+&lt;/code>&lt;/pre>&lt;p>Pass the following in the header of the request:&lt;/p>
+&lt;p>&lt;code>username, password, scope, grant_type:password, remember:yes&lt;/code>&lt;/p>
+&lt;p>where {scope} is your &lt;strong>Subscription ID&lt;/strong> found in your Kianda workspace by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> &amp;gt; &lt;strong>Subscription Id&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/subscription-details.jpg" alt="Subscription Id">&lt;/p></description></item></channel></rss>

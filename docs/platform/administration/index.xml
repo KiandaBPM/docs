@@ -449,17 +449,101 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/design-login-page.jpg" alt="Design login page">&lt;/p>
 &lt;p>On this page you can make the following changes:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Login Page Logo Url&lt;/strong> - add/change a logo for the login page to Kianda by clicking on &lt;strong>Browse&lt;/strong> to browse for a logo on your PC or network.&lt;/li>
-&lt;li>&lt;strong>Background Color&lt;/strong> - you can either click on the colour itself or click in the box beside it to add in a HEX value for a colour.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Login Page Logo Url&lt;/strong> - add/change a logo for the login page to Kianda by clicking on &lt;strong>Browse&lt;/strong> to browse for a logo on your PC or network.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Background Color&lt;/strong> - to create a background colour for the login page, you can either click on the colour itself and select a colour in the main view, or using the slider, or type in an RGB, HSL or HEX value in the fields above, or click in the box beside it to add in a HEX value for a colour, for example #BFBFBF.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/background-color.jpg" alt="Background Color">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Font Color&lt;/strong> - as with the Background Color, to create a font colour, choose an appropriate colour using the colour box itself or type in a value in the field beside the colour.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Tagline 1&lt;/strong> - type in the first tagline that will appear on the login page. A maximum of 25 characters is recommended.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Tagline 2&lt;/strong> - type in the second tagline that will appear on the login page. A maximum of 20 characters is recommended.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/taglines.jpg" alt="Taglines">&lt;/p>
+&lt;/li>
 &lt;/ul>
+&lt;p>When you are finished making changes click on ** &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
 &lt;h2 id="regional-settings">Regional Settings&lt;/h2>
 &lt;p>Here you can set your operational time zone and regional settings, such as English Ireland, from the dropdown.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/regional-settings.jpg" alt="Regional settings">&lt;/p>
+&lt;p>On this page you can make the following changes:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Regional settings&lt;/strong> - choose a language setting from the drop-down list.&lt;/li>
+&lt;li>&lt;strong>Time zone&lt;/strong> - choose a time zone from the drop-down list.&lt;/li>
+&lt;/ul>
+&lt;p>When you are finished making changes click on ** &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
+&lt;p>The chosen options are reflected in the text below the fields, for example &lt;strong>date and time format&lt;/strong>.&lt;/p>
 &lt;h2 id="mobile-settings">Mobile Settings&lt;/h2>
 &lt;p>Here you can customise how the Kianda workspace will appear as a mobile app. You can choose your App name, App short name, Splash Screen Colour, and Theme Colour and upload a mobile size icon (note the icon size is 512 x 512 px).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/mobile-settings.jpg" alt="Mobile settings">&lt;/p>
+&lt;p>On this page you can make the following changes:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>App name&lt;/strong> - add/change a name for your app/workspace. A maximum of 45 characters is recommended.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>App short name&lt;/strong> - add/change a short name for your app/workspace. A maximum of 12 characters is recommended.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Splash Screen Color&lt;/strong> - to set the introductory screen colour that appears while your application loads (splash screen), you can either click on the colour itself and select a colour in the main view, or using the slider, or type in an RGB, HSL or HEX value in the fields above, or click in the box beside it to add in a HEX value for a colour, for example #037dd3.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/splash-screen-color.jpg" alt="Splash screen color">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Theme Color&lt;/strong> - as with the Splash Screen Color, choose an appropriate colour for the mobile app theme font using the colour box itself or type in a value in the field beside the colour.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Mobile Icon&lt;/strong> - click on &lt;strong>Browse&lt;/strong> to browse for a logo to add from your PC or network. The recommended size is 512px x 512px.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>When you are finished making changes click on ** &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
 &lt;h2 id="subscription-details">Subscription Details&lt;/h2>
-&lt;p>General settings include details like your company name, subscription ID, renewal date and business identity (your workspace URL, for example, green-itr.kianda.com).&lt;/p>
-&lt;p>You can also enable a Global SMTP Mail Connector to enable email flow to/from your Kianda workspace.&lt;/p>
+&lt;p>General settings include details like your company name, subscription ID, renewal date and business identity (your workspace URL, for example, green-itr.kianda.com). You can also enable a Global SMTP Mail Connector to enable email flow to/from your Kianda workspace.&lt;/p>
 &lt;p>Within general settings administrators can set who the Global Administrator is, or the main administrator for the workspace.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/company-details.jpg" alt="Subscription details">&lt;/p>
+&lt;p>On this page you can make the following changes:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Company Name&lt;/strong> - add in your company name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Business identity&lt;/strong> - the business identity for your company workspace is automatically added in.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Country&lt;/strong> - choose a country from the drop-down list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>City&lt;/strong> - choose a city from the drop-down list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Address&lt;/strong> - add in your company address.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Renewal date&lt;/strong> - your subscription renewal date is automatically added in.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Subscription Id&lt;/strong> - your company subscription identity is automatically generated. This is needed when&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Address&lt;/strong> - add in your company address.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>City&lt;/strong> - choose a city from the drop-down list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Company Name&lt;/strong> - add in your company name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>App short name&lt;/strong> - add/change a short name for your app/workspace. A maximum of 12 characters is recommended.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Splash Screen Color&lt;/strong> - to set the introducto&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="single-sign-on-sso">Single Sign-On (SSO)&lt;/h2>
 &lt;p>Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. To enable Single-Sign-On, please follow the below steps:&lt;/p>
 &lt;p>As an administrator, go to the left-hand pane and click on Administration &amp;gt; Subscription &amp;gt; Single Sign-on.
