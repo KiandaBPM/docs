@@ -25,26 +25,6 @@ Before you get started, there are three things to keep in mind:
 
    
 
-## Authentication
-
-The Instances API methods require a **Bearer token** or **Access token** which is a **security token** to enable HTTP authentication. The bearer token is a cryptic text string, included in the request header. 
-
-The token can be retrieved by using a **GET** query as follows:
-
-```
-{{domain}}/token
-```
-
-Pass the following in the header of the request:
-
-`username, password, scope, grant_type:password, remember:yes`
-
-where {scope} is your **Subscription ID** found in your Kianda workspace by going to **Administration** > **Subscription** > **Subscription Details** > **Subscription Id**
-
-![Subscription Id](/images/subscription-details.jpg)
-
-
-
 
 ## REST API Methods
 You can perform Create, Read, and Update operations on Kianda resources using standard HTTP method requests, as summarised below:
@@ -56,47 +36,59 @@ You can perform Create, Read, and Update operations on Kianda resources using st
 | [PUT](#update-a-process-instance-put)        | Update a process instance             |
 | PATCH                                        | Partially update a process instance   |
 
-Before any of the requests are used, you must have the bearer access token
+Before any of the requests are used, you must have the bearer access token inserted into the request header, see [Authentication](/docs/apis/authentication/) for details.
 
 
 
-### Create a process instance - POST
+## Create a process instance - POST
 
-This request creates a process instance/new record. 
+This request creates a process instance/new record. To use POST:
 
-1. The format for the request is:
+1. Use the following request format:
 
 ```
 {{domain}}/api/instances/create
 ```
 
-2. Ensure that the **bearer** token is inserted into the authorisation header, for example to create an instance of a process called 'new-training-process-43' as shown below:
+2. Ensure that the **bearer** token is inserted into the authorisation header
 
    ![Create instance example](/images/create-instance.jpg)
 
-3. The **Request Body** for the POST request is:
+3. Pass parameters into the body of the request, for example to create a new instance of a process called 'new-training-process' where a textbox field called 'Reason' will be prepopulated with a value:
 
-```json
-{
-	"ProcessName":"",
-	"FieldsMappings":[],
-	"TriggerField":"",
-	"Status":""
-}
-```
+   ```
+   {
+    "processName" :"new-training-process",
+    "instanceID" : "new-training-process",
+    "FieldsMappings":[{
+      "fieldname":"reason",
+      "text":"New employee",
+      "value":"New employee"
+     }
+    ]
+   }
+   ```
 
-The **Response Body** will be as follows:
+4. The **Response Body** will be as follows:
 
 ```json
 {
 	"success":true,
-	"instanceID":0
+	"instanceID":"new-training-process-70"
 }
 ```
 
+In the example above a new instance is created with an ID 'new-training-process-70'. The new instance can be see in a List widget in a dashboard as follows.
+
+![New instance example using Instance API](/images/instance-api-example.jpg)
+
+In this example the **Reason** text box is populated from the POST request.
+
+![New training process instance with field populated](/images/new-training-process-70.jpg)
 
 
-### Read/Retrieve process instance fields - GET
+
+## Read/Retrieve process instance fields - GET
 
 ```
 {{domain}}/api/instances/{name}/fields?names=field1,field2..
@@ -105,9 +97,6 @@ The **Response Body** will be as follows:
 	where `{name}`is the name of the process instance.
 
 This request retrieves the values of multiple fields by name.
-Ensure that the **bearer** token is inserted into the authorisation header, for example to create an instance of a process called 'new-training-process-43' as shown below:
-
-   ![Create instance example](/images/create-instance.jpg)
 
 No Request Body is required.
 
@@ -123,7 +112,7 @@ The **Response Body** will be as follows:
 
 
 
-### Update a process instance - PUT
+## Update a process instance - PUT
 
 ```
 {{domain}}/api/instances/{name}
