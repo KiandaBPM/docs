@@ -11,7 +11,52 @@ Your browser does not support the video tag.
 &lt;p>Back to &lt;a href="../">How to Videos&lt;/a>&lt;/p></description></item><item><title>Docs: Application design principles</title><link>https://docs.kianda.com/docs/low-code/application-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/application-design/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Conditions</title><link>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</guid><description>
+&lt;/div></description></item><item><title>Docs: Authentication</title><link>https://docs.kianda.com/docs/apis/authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/authentication/</guid><description>
+&lt;p>The framework used for authentication in Kianda is &lt;strong>OAuth 2.0&lt;/strong>. This framework uses &lt;strong>Bearer&lt;/strong> type tokens to authorise access to the platform for individual users. This token is required by Kianda to preform any &lt;strong>Create, Read, Update and Delete&lt;/strong> (CRUD) requests in the &lt;strong>Application Programming Interface&lt;/strong> (API).&lt;/p>
+&lt;p>Your Bearer token carry many privilages, so be sure to keep it secure! Do not share your Bearer token in publicly accessible areas such as GitHub, client-side code, and so forth.&lt;/p>
+&lt;p>When working within Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved from the user being logged in. If you may want to create an application outside of Kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There are two ways for retrieving the Bearer token:&lt;/p>
+&lt;h3 id="retrieving-bearer-token-using-a-get-request">Retrieving Bearer token using a GET request&lt;/h3>
+&lt;p>To retrieve your token you need to make the a &lt;strong>GET&lt;/strong> request looking like &lt;code>https://domain.com/token&lt;/code> where the domain is your company&amp;rsquo;s, for example &lt;code>https://green-itr.kianda.com/token&lt;/code> . For the request to be valid, you need to pass the following perameters to the header of the request:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Parameter&lt;/th>
+&lt;th>Value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>username:&lt;/code>&lt;/td>
+&lt;td>your Kianda username.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>password:&lt;/code>&lt;/td>
+&lt;td>your Kianda password.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>scope:&lt;/code>&lt;/td>
+&lt;td>your Kianda subscription ID.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>grant_type:&lt;/code>&lt;/td>
+&lt;td>&lt;code>password&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>remember:&lt;/code>&lt;/td>
+&lt;td>&lt;code>yes&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>You can obtain your &lt;code>scope&lt;/code> by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> &amp;gt; &lt;strong>Subscription Id&lt;/strong>.&lt;/p>
+&lt;h3 id="retrieving-bearer-token-using-devtools">Retrieving Bearer token using devtools&lt;/h3>
+&lt;p>To retrieve your Bearer token using the devtools, first you need to log into Kianda. When logged in, open the devtools by:&lt;/p>
+&lt;ol>
+&lt;li>Right clicking your mouse anywhere on the screen.&lt;/li>
+&lt;li>Click on &lt;strong>Ispect&lt;/strong> in the dialog box.&lt;/li>
+&lt;li>Open the &lt;strong>Network&lt;/strong> tab.&lt;/li>
+&lt;li>Click on the &lt;strong>info&lt;/strong> request.&lt;/li>
+&lt;li>In the &lt;strong>Header&lt;/strong> tab, scroll down to autorization. You can find your Bearer token here.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Conditions</title><link>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</guid><description>
 &lt;p>Conditions are a key component of Kianda &lt;strong>rules&lt;/strong>. They are the &lt;strong>triggers&lt;/strong> that result in fully dynamic forms. They enable you to enables you to create natural language conditions when rules should be triggered.&lt;/p>
 &lt;p>The &lt;strong>Conditions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/condition.png" alt="img"> is found within all &lt;strong>rules&lt;/strong> as well as &lt;a href="docs/platform/pages/">dashboard widgets&lt;/a>. Conditions can also be set when setting data source security levels for &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">B2B portals&lt;/a>.&lt;/p>
 &lt;p>Conditions add an important level of interactivity, creating dynamic pathways within a process. These pathways could result from user interaction or from other events that happen.&lt;/p>
@@ -2504,10 +2549,7 @@ Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: OAuth 2.0</title><link>https://docs.kianda.com/docs/apis/authentication/oauth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/authentication/oauth/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Partner profile</title><link>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</guid><description>
+&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Partner profile</title><link>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Within the &lt;strong>B2B Portal&lt;/strong> your client’s administrator will be able to create as many &lt;strong>Partner Profiles&lt;/strong> (&lt;strong>users&lt;/strong>) as they wish. By creating these &lt;strong>users&lt;/strong>, they will have the ability to access the &lt;strong>B2B Portal&lt;/strong> and interact with the &lt;strong>Dashboards&lt;/strong> and &lt;strong>Processes&lt;/strong> shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared processes&lt;/a> for information on processes, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/#shared-dashboards">Shared dashboards&lt;/a> for information on dashboards.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
@@ -3123,29 +3165,7 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Bearer access token</title><link>https://docs.kianda.com/docs/apis/authentication/bearer-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/authentication/bearer-access/</guid><description>
-&lt;p>Kianda&amp;rsquo;s REST Application Programming Interface (API) for &lt;strong>instances&lt;/strong> allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on &lt;strong>process instances&lt;/strong>. A process instance is created every time data is either saved or submitted to Kianda&amp;rsquo;s database for a given process design.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>Before you get started, there are three things to keep in mind:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>To use API methods in Kianda you must have an &lt;strong>administrator&lt;/strong> role, go to &lt;a href="https://docs.kianda.com/administration/users/#view-and-edit-existing-user-details">View and edit user details&lt;/a> to see information on how to set roles.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Each API method requires a &lt;strong>Bearer token&lt;/strong>, see &lt;a href="#authorization">Authorization&lt;/a> below for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Each of the following methods can be used on &lt;strong>process instances&lt;/strong> or records, where &lt;strong>{name}&lt;/strong> is the name of a process instance, such as &amp;rsquo;training-approval-request-1'.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="authentication">Authentication&lt;/h2>
-&lt;p>The Instances API methods require a &lt;strong>Bearer token&lt;/strong> or &lt;strong>Access token&lt;/strong> which is a &lt;strong>security token&lt;/strong> to enable HTTP authentication. The bearer token is a cryptic text string, included in the request header.&lt;/p>
-&lt;p>The token can be retrieved by using a &lt;strong>GET&lt;/strong> query as follows:&lt;/p>
-&lt;pre tabindex="0">&lt;code>{{domain}}/token
-&lt;/code>&lt;/pre>&lt;p>Pass the following in the header of the request:&lt;/p>
-&lt;p>&lt;code>username, password, scope, grant_type:password, remember:yes&lt;/code>&lt;/p>
-&lt;p>where {scope} is your &lt;strong>Subscription ID&lt;/strong> found in your Kianda workspace by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> &amp;gt; &lt;strong>Subscription Id&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/subscription-details.jpg" alt="Subscription Id">&lt;/p></description></item><item><title>Docs: Conditional logic</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/conditions/</guid><description>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Conditional logic</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/conditions/</guid><description>
 &lt;p>Conditions are a key component of Kianda &lt;strong>rules&lt;/strong>. They are the triggers that result in fully dynamic forms and add an important level of interactivity, creating pathways within a process based on user interaction.&lt;/p>
 &lt;p>Conditions work on the &amp;lsquo;if&amp;hellip;then&amp;hellip;else&amp;rsquo; principle: &amp;lsquo;if&amp;rsquo; the condition exists &amp;rsquo;then&amp;rsquo; an action happens, &amp;rsquo;else&amp;rsquo; another action happens. There are three parts to applying a condition to a rule (depending on the rule that is used):&lt;/p>
 &lt;ol>
@@ -4198,4 +4218,82 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Success and Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As a user with a &lt;strong>administrator&lt;/strong> or &lt;strong>designer&lt;/strong> role, you can use Kianda &lt;strong>Designer&lt;/strong> to populate fields within the Kianda form, using the &lt;strong>Edit rule&lt;/strong> dialog box to set parameters for success and error mapping.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Success and Error mapping should be with rule execution, displaying values that you want for rule execution success or failure.&lt;/p>
+&lt;p>&lt;strong>You can use mapping with the following rules:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Find items&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Create item&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Update item&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Delete item&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> All SharePoint rules, except Get attachments and Create anonymous link&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Select the field that will have the rule attached, for example a button at the end of a form, or a field within a form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane and select one of the rules that uses mapping as shown in the &lt;a href="#wehn-to-use">When to use&lt;/a> list above, for example the &lt;strong>SharePoint rule&lt;/strong> called &lt;strong>Create list&lt;/strong>, used to create a list in SharePoint dynamically using Kianda form data.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-eg.jpg" alt="(Example of a rule with mapping)">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Action&lt;/strong>, click on the field &lt;strong>Select a SharePoint data source&lt;/strong> from the drop-down list.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-filled.jpg" alt="Create a list example with details">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out any additional fields as necessary, for example to create a list the following fields must be completed:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>List template&lt;/strong> - choose from a list of SharePoint list types&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>List name field&lt;/strong> - choose a form field that will be used the create a name for the list in SharePoint&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>List url field&lt;/strong> - choose a form field that will be used in the creation of a URL within SharePoint&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>List description field&lt;/strong> - choose a form field that describes what the list is about&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Quick Launch menu&lt;/strong> - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. Choosing &lt;strong>Yes&lt;/strong> allows the created list to be displayed in the Quick Launch menu, containing a link to the list.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>To add success mapping, click on &lt;strong>On success mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button:&lt;/p>
+&lt;ul>
+&lt;li>In the &lt;strong>Form field&lt;/strong> select a form field which will store information in your Kianda form&lt;/li>
+&lt;li>In the &lt;strong>Data source field or text&lt;/strong> select a data source field that is used in the mapping&lt;/li>
+&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>For &lt;strong>On error mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button:&lt;/p>
+&lt;ul>
+&lt;li>In the &lt;strong>Form field&lt;/strong> select a form field which will store information in your Kianda form&lt;/li>
+&lt;li>In the &lt;strong>Error message or text&lt;/strong> enter a error message that you want to appear in the event of errors or leave empty to use a system generated error indicating what has gone wrong when the rule executed.&lt;/li>
+&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>you simply need to select the field within the form which will store the error message&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconcontentdocsplatformrulesgeneralsuccess-error-mappingassets18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/../content/docs/platform/rules/general/success-error-mapping.assets/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item></channel></rss>
