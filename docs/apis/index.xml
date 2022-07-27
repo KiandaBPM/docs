@@ -14,15 +14,15 @@
 &lt;tbody>
 &lt;tr>
 &lt;td style="text-align:left">&lt;code>username:&lt;/code>&lt;/td>
-&lt;td>your Kianda username.&lt;/td>
+&lt;td>your Kianda username&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:left">&lt;code>password:&lt;/code>&lt;/td>
-&lt;td>your Kianda password.&lt;/td>
+&lt;td>your Kianda password&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:left">&lt;code>scope:&lt;/code>&lt;/td>
-&lt;td>your Kianda subscription ID.&lt;/td>
+&lt;td>your Kianda subscription ID&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:left">&lt;code>grant_type:&lt;/code>&lt;/td>
@@ -34,9 +34,10 @@
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>You can obtain your &lt;code>scope&lt;/code> by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> &amp;gt; &lt;strong>Subscription Id&lt;/strong>.&lt;/p>
+&lt;p>You can obtain the &lt;code>scope&lt;/code> value by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> &amp;gt; &lt;strong>Subscription Id&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/subscription-details.jpg" alt="Subscription Id">&lt;/p>
 &lt;h3 id="retrieving-bearer-token-using-devtools">Retrieving Bearer token using devtools&lt;/h3>
-&lt;p>To retrieve your Bearer token using the devtools, first you need to log into Kianda. When logged in, open the devtools by:&lt;/p>
+&lt;p>To retrieve your Bearer token using devtools, first you need to log into Kianda. When logged in, open the devtools by:&lt;/p>
 &lt;ol>
 &lt;li>Right clicking your mouse anywhere on the screen.&lt;/li>
 &lt;li>Click on &lt;strong>Inspect&lt;/strong> in the dialog box.&lt;/li>
@@ -62,14 +63,6 @@
 &lt;p>Each of the following methods can be used on &lt;strong>process instances&lt;/strong> or records, where &lt;strong>{name}&lt;/strong> is the name of a process instance, such as &amp;rsquo;training-approval-request-1'.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="authentication">Authentication&lt;/h2>
-&lt;p>The Instances API methods require a &lt;strong>Bearer token&lt;/strong> or &lt;strong>Access token&lt;/strong> which is a &lt;strong>security token&lt;/strong> to enable HTTP authentication. The bearer token is a cryptic text string, included in the request header.&lt;/p>
-&lt;p>The token can be retrieved by using a &lt;strong>GET&lt;/strong> query as follows:&lt;/p>
-&lt;pre tabindex="0">&lt;code>{{domain}}/token
-&lt;/code>&lt;/pre>&lt;p>Pass the following in the header of the request:&lt;/p>
-&lt;p>&lt;code>username, password, scope, grant_type:password, remember:yes&lt;/code>&lt;/p>
-&lt;p>where {scope} is your &lt;strong>Subscription ID&lt;/strong> found in your Kianda workspace by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> &amp;gt; &lt;strong>Subscription Id&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/subscription-details.jpg" alt="Subscription Id">&lt;/p>
 &lt;h2 id="rest-api-methods">REST API Methods&lt;/h2>
 &lt;p>You can perform Create, Read, and Update operations on Kianda resources using standard HTTP method requests, as summarised below:&lt;/p>
 &lt;table>
@@ -98,40 +91,48 @@
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>Before any of the requests are used, you must have the bearer access token&lt;/p>
-&lt;h3 id="create-a-process-instance---post">Create a process instance - POST&lt;/h3>
-&lt;p>This request creates a process instance/new record.&lt;/p>
+&lt;p>Before any of the requests are used, you must have the bearer access token inserted into the request header, see &lt;a href="https://docs.kianda.com/docs/apis/authentication/">Authentication&lt;/a> for details.&lt;/p>
+&lt;h2 id="create-a-process-instance---post">Create a process instance - POST&lt;/h2>
+&lt;p>This request creates a process instance/new record. To use POST:&lt;/p>
 &lt;ol>
-&lt;li>The format for the request is:&lt;/li>
+&lt;li>Use the following request format:&lt;/li>
 &lt;/ol>
 &lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/create
 &lt;/code>&lt;/pre>&lt;ol start="2">
 &lt;li>
-&lt;p>Ensure that the &lt;strong>bearer&lt;/strong> token is inserted into the authorisation header, for example to create an instance of a process called &amp;rsquo;new-training-process-43&amp;rsquo; as shown below:&lt;/p>
+&lt;p>Ensure that the &lt;strong>bearer&lt;/strong> token is inserted into the authorisation header&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/create-instance.jpg" alt="Create instance example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Request Body&lt;/strong> for the POST request is:&lt;/p>
+&lt;p>Pass parameters into the body of the request, for example to create a new instance of a process called &amp;rsquo;new-training-process&amp;rsquo; where a textbox field called &amp;lsquo;Reason&amp;rsquo; will be prepopulated with a value:&lt;/p>
+&lt;pre tabindex="0">&lt;code>{
+&amp;#34;processName&amp;#34; :&amp;#34;new-training-process&amp;#34;,
+&amp;#34;instanceID&amp;#34; : &amp;#34;new-training-process&amp;#34;,
+&amp;#34;FieldsMappings&amp;#34;:[{
+&amp;#34;fieldname&amp;#34;:&amp;#34;reason&amp;#34;,
+&amp;#34;text&amp;#34;:&amp;#34;New employee&amp;#34;,
+&amp;#34;value&amp;#34;:&amp;#34;New employee&amp;#34;
+}
+]
+}
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ProcessName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;FieldsMappings&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:[],&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;TriggerField&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;success&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#204a87;font-weight:bold">true&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;instanceID&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;instanceID&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;new-training-process-70&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="readretrieve-process-instance-fields---get">Read/Retrieve process instance fields - GET&lt;/h3>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In the example above a new instance is created with an ID &amp;rsquo;new-training-process-70&amp;rsquo;. The new instance can be see in a List widget in a dashboard as follows.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/instance-api-example.jpg" alt="New instance example using Instance API">&lt;/p>
+&lt;p>In this example the &lt;strong>Reason&lt;/strong> text box is populated from the POST request.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/new-training-process-70.jpg" alt="New training process instance with field populated">&lt;/p>
+&lt;h2 id="readretrieve-process-instance-fields---get">Read/Retrieve process instance fields - GET&lt;/h2>
 &lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/{name}/fields?names=field1,field2..
 &lt;/code>&lt;/pre>&lt;pre>&lt;code>where `{name}`is the name of the process instance.
 &lt;/code>&lt;/pre>
-&lt;p>This request retrieves the values of multiple fields by name.
-Ensure that the &lt;strong>bearer&lt;/strong> token is inserted into the authorisation header, for example to create an instance of a process called &amp;rsquo;new-training-process-43&amp;rsquo; as shown below:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/create-instance.jpg" alt="Create instance example">&lt;/p>
+&lt;p>This request retrieves the values of multiple fields by name.&lt;/p>
 &lt;p>No Request Body is required.&lt;/p>
 &lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
@@ -139,7 +140,7 @@ Ensure that the &lt;strong>bearer&lt;/strong> token is inserted into the authori
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;value&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="update-a-process-instance---put">Update a process instance - PUT&lt;/h3>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="update-a-process-instance---put">Update a process instance - PUT&lt;/h2>
 &lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/{name}
 &lt;/code>&lt;/pre>&lt;pre>&lt;code>where `{name}`is the name of the process instance.
 &lt;/code>&lt;/pre>
