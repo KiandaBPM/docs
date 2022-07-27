@@ -105,6 +105,9 @@ The **Response Body** will be as follows:
 	where `{name}`is the name of the process instance.
 
 This request retrieves the values of multiple fields by name.
+Ensure that the **bearer** token is inserted into the authorisation header, for example to create an instance of a process called 'new-training-process-43' as shown below:
+
+   ![Create instance example](/images/create-instance.jpg)
 
 No Request Body is required.
 
