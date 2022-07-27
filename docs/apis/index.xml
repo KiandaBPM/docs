@@ -1,6 +1,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – APIs</title><link>https://docs.kianda.com/docs/apis/</link><description>Recent content in APIs on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/apis/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Authentication</title><link>https://docs.kianda.com/docs/apis/authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/authentication/</guid><description>
-&lt;h1 id="authentication">Authentication&lt;/h1>
-&lt;p>Kianda’s REST Application Programming Interface (API) for &lt;strong>instances&lt;/strong> allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on &lt;strong>process instances&lt;/strong>. A process instance is created every time data is either saved or submitted to Kianda’s database for a given process design.&lt;/p></description></item><item><title>Docs: Instances API</title><link>https://docs.kianda.com/docs/apis/instances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/instances/</guid><description>
+&lt;p>The framework used for authentication in Kianda is &lt;strong>OAuth 2.0&lt;/strong>. This framework uses &lt;strong>Bearer&lt;/strong> type tokens to authorise access to the platform for individual users. This token is required by Kianda to preform any &lt;strong>Create, Read, Update and Delete&lt;/strong> (CRUD) requests in the &lt;strong>Application Programming Interface&lt;/strong> (API).&lt;/p>
+&lt;p>Your Bearer token carry many privilages, so be sure to keep it secure! Do not share your Bearer token in publicly accessible areas such as GitHub, client-side code, and so forth.&lt;/p>
+&lt;p>When working within Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved from the user being logged in. If you may want to create an application outside of kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There is two ways for retrieving the Bearer token:&lt;/p>
+&lt;h3 id="retrieving-bearer-token-using-a-get-request">Retrieving Bearer token using a GET request&lt;/h3>
+&lt;p>To retrieve your token you need to make the a &lt;strong>GET&lt;/strong> request looking like &lt;code>https://domain.com/token&lt;/code> where the domain is your company&amp;rsquo;s, for example &lt;code>https://green-itr.kianda.com/token&lt;/code> . For the request to be valid, you need to pass the following perameters to the header of the request:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Parameter&lt;/th>
+&lt;th>Value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>username:&lt;/code>&lt;/td>
+&lt;td>your Kianda username.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>password:&lt;/code>&lt;/td>
+&lt;td>your Kianda password.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>scope:&lt;/code>&lt;/td>
+&lt;td>your Kianda subscription ID.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>grant_type:&lt;/code>&lt;/td>
+&lt;td>&lt;code>password&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>remember:&lt;/code>&lt;/td>
+&lt;td>&lt;code>yes&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>You can obtain your &lt;code>scope&lt;/code> by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> &amp;gt; &lt;strong>Subscription Id&lt;/strong>.&lt;/p>
+&lt;h3 id="retrieving-bearer-token-using-devtools">Retrieving Bearer token using devtools&lt;/h3>
+&lt;p>To retrieve your Bearer token using the devtools, first you need to log into Kianda. When logged in, open the devtools by:&lt;/p>
+&lt;ol>
+&lt;li>Right clicking your mouse anywhere on the screen.&lt;/li>
+&lt;li>Click on &lt;strong>Ispect&lt;/strong> in the dialog box.&lt;/li>
+&lt;li>Open the &lt;strong>Network&lt;/strong> tab.&lt;/li>
+&lt;li>Click on the &lt;strong>info&lt;/strong> request.&lt;/li>
+&lt;li>In the &lt;strong>Header&lt;/strong> tab, scroll down to autorization. You can find your Bearer token here.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Instances API</title><link>https://docs.kianda.com/docs/apis/instances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/instances/</guid><description>
 &lt;hr>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Kianda&amp;rsquo;s REST Application Programming Interface (API) for &lt;strong>instances&lt;/strong> allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on &lt;strong>process instances&lt;/strong>. A process instance is created every time data is either saved or submitted to Kianda&amp;rsquo;s database for a given process design, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/process-instance/">Process instance&lt;/a> for more details.&lt;/p>
