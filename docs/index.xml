@@ -367,8 +367,8 @@ Your browser does not support the video tag.
 &lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/create
 &lt;/code>&lt;/pre>&lt;ol start="2">
 &lt;li>
-&lt;p>Ensure that the &lt;strong>bearer&lt;/strong> token is inserted into the authorisation header.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/create-instance.jpg" alt="Create instance example">&lt;/p>
+&lt;p>Ensure that the &lt;strong>bearer&lt;/strong> token is inserted into the authorisation header, for example to create an instance of a process called &amp;rsquo;new-training-process-43&amp;rsquo; as shown below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-instance.jpg" alt="Create instance example">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Request Body&lt;/strong> for the POST request is:&lt;/p>
