@@ -12,11 +12,11 @@ Your browser does not support the video tag.
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Authentication</title><link>https://docs.kianda.com/docs/apis/authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/authentication/</guid><description>
-&lt;p>The framework used for authentication in Kianda is &lt;strong>OAuth 2.0&lt;/strong>. This framework uses &lt;strong>Bearer&lt;/strong> type tokens to authorise access to the platform for individual users. This token is required by Kianda to preform any &lt;strong>Create, Read, Update and Delete&lt;/strong> (CRUD) requests in the &lt;strong>Application Programming Interface&lt;/strong> (API).&lt;/p>
-&lt;p>Your Bearer token carry many privilages, so be sure to keep it secure! Do not share your Bearer token in publicly accessible areas such as GitHub, client-side code, and so forth.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The framework used for authentication in Kianda is &lt;strong>OAuth 2.0&lt;/strong>. It is a framework that uses industry-standard protocol for authorisation which focuses on simplifying client developer practices, while providing specific authorisation flows for applications. &lt;strong>OAuth 2.0&lt;/strong> framework uses &lt;strong>Bearer&lt;/strong> type tokens to authorise access to the platform for individual users. This token is required by Kianda to preform any &lt;strong>Create, Read, Update and Delete&lt;/strong> (CRUD) requests to the &lt;strong>Application Programming Interface&lt;/strong> (API).&lt;/p>
 &lt;p>When working within Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved from the user being logged in. If you may want to create an application outside of Kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There are two ways for retrieving the Bearer token:&lt;/p>
 &lt;h3 id="retrieving-bearer-token-using-a-get-request">Retrieving Bearer token using a GET request&lt;/h3>
-&lt;p>To retrieve your token you need to make the a &lt;strong>GET&lt;/strong> request looking like &lt;code>https://domain.com/token&lt;/code> where the domain is your company&amp;rsquo;s, for example &lt;code>https://green-itr.kianda.com/token&lt;/code> . For the request to be valid, you need to pass the following perameters to the header of the request:&lt;/p>
+&lt;p>To retrieve your token you need to make the a &lt;strong>GET&lt;/strong> request looking like &lt;code>https://domain.com/token&lt;/code> where the domain is your company&amp;rsquo;s, for example &lt;code>https://green-itr.kianda.com/token&lt;/code> . For the request to be valid, you need to pass the following parameters to the header of the request:&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -52,11 +52,13 @@ Your browser does not support the video tag.
 &lt;p>To retrieve your Bearer token using the devtools, first you need to log into Kianda. When logged in, open the devtools by:&lt;/p>
 &lt;ol>
 &lt;li>Right clicking your mouse anywhere on the screen.&lt;/li>
-&lt;li>Click on &lt;strong>Ispect&lt;/strong> in the dialog box.&lt;/li>
+&lt;li>Click on &lt;strong>Inspect&lt;/strong> in the dialog box.&lt;/li>
 &lt;li>Open the &lt;strong>Network&lt;/strong> tab.&lt;/li>
 &lt;li>Click on the &lt;strong>info&lt;/strong> request.&lt;/li>
-&lt;li>In the &lt;strong>Header&lt;/strong> tab, scroll down to autorization. You can find your Bearer token here.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Conditions</title><link>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</guid><description>
+&lt;li>In the &lt;strong>Header&lt;/strong> tab, scroll down to &lt;strong>authorisation&lt;/strong>. You can find your &lt;strong>Bearer&lt;/strong> token here.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To learn more about Kianda&amp;rsquo;s API go to &lt;a href="https://docs.kianda.com/docs/apis/instances/">Instance API&lt;/a>.&lt;/p></description></item><item><title>Docs: Conditions</title><link>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</guid><description>
 &lt;p>Conditions are a key component of Kianda &lt;strong>rules&lt;/strong>. They are the &lt;strong>triggers&lt;/strong> that result in fully dynamic forms. They enable you to enables you to create natural language conditions when rules should be triggered.&lt;/p>
 &lt;p>The &lt;strong>Conditions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/condition.png" alt="img"> is found within all &lt;strong>rules&lt;/strong> as well as &lt;a href="docs/platform/pages/">dashboard widgets&lt;/a>. Conditions can also be set when setting data source security levels for &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">B2B portals&lt;/a>.&lt;/p>
 &lt;p>Conditions add an important level of interactivity, creating dynamic pathways within a process. These pathways could result from user interaction or from other events that happen.&lt;/p>
