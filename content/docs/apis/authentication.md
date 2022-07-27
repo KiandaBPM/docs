@@ -8,7 +8,7 @@ The framework used for authentication in Kianda is **OAuth 2.0**. This framework
 
 Your Bearer token carry many privilages, so be sure to keep it secure! Do not share your Bearer token  in publicly accessible areas such as GitHub, client-side code, and so forth.
 
-When working within Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved from the user being logged in. If you may want to create an application outside of kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There is two ways for retrieving the Bearer token:
+When working within Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved from the user being logged in. If you may want to create an application outside of Kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There are two ways for retrieving the Bearer token:
 
 ### Retrieving Bearer token using a GET request
 
