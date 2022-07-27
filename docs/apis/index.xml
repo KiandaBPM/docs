@@ -129,7 +129,9 @@
 &lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/{name}/fields?names=field1,field2..
 &lt;/code>&lt;/pre>&lt;pre>&lt;code>where `{name}`is the name of the process instance.
 &lt;/code>&lt;/pre>
-&lt;p>This request retrieves the values of multiple fields by name.&lt;/p>
+&lt;p>This request retrieves the values of multiple fields by name.
+Ensure that the &lt;strong>bearer&lt;/strong> token is inserted into the authorisation header, for example to create an instance of a process called &amp;rsquo;new-training-process-43&amp;rsquo; as shown below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-instance.jpg" alt="Create instance example">&lt;/p>
 &lt;p>No Request Body is required.&lt;/p>
 &lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
