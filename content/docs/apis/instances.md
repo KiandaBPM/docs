@@ -2,7 +2,7 @@
 title: "Instances API"
 linkTitle: "Instances API"
 weight: 1
-typora-root-url: ..\..\..\..\static
+typora-root-url: ..\..\..\static
 ---
 
 ---
@@ -70,9 +70,9 @@ This request creates a process instance/new record.
 {{domain}}/api/instances/create
 ```
 
-2. Ensure that the **bearer** token is inserted into the authorisation header.
+2. Ensure that the **bearer** token is inserted into the authorisation header, for example to create an instance of a process called 'new-training-process-43' as shown below:
 
-   ![Create instance example](/../content/docs/create-instance.jpg)
+   ![Create instance example](/images/create-instance.jpg)
 
 3. The **Request Body** for the POST request is:
 
