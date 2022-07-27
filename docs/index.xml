@@ -139,10 +139,7 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/">&lt;strong>Add forms&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/">&lt;strong>Designer&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a>&lt;/strong>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Create</title><link>https://docs.kianda.com/docs/apis/instances/create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/instances/create/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Date control</title><link>https://docs.kianda.com/docs/platform/controls/input/date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/date/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Date control</title><link>https://docs.kianda.com/docs/platform/controls/input/date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/date/</guid><description>
 &lt;p>&lt;strong>Date controls&lt;/strong> or &lt;strong>Date fields&lt;/strong> can be inserted in a form when you want a user to be able to input a date and time by using a date and time picker.&lt;/p>
 &lt;p>For example, in a Training Request form, you may want the user to select the date and time of the training course they want to attend.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -308,7 +305,118 @@ Your browser does not support the video tag.
 &lt;p>If you want to use Kianda for no-code development, then follow these simple steps:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/one.png" alt="1"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">&lt;strong>Plan your process&lt;/strong>&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/two.png" alt="2"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/">&lt;strong>Design and build your process&lt;/strong>&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/three.png" alt="3"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/publish-your-process/">&lt;strong>Publish your process&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Docs: Process instance</title><link>https://docs.kianda.com/docs/platform/application-designer/process/process-instance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/process-instance/</guid><description>
+&lt;p>&lt;img src="https://docs.kianda.com/images/three.png" alt="3"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/publish-your-process/">&lt;strong>Publish your process&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Docs: Instances API</title><link>https://docs.kianda.com/docs/apis/instances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/instances/</guid><description>
+&lt;hr>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Kianda&amp;rsquo;s REST Application Programming Interface (API) for &lt;strong>instances&lt;/strong> allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on &lt;strong>process instances&lt;/strong>. A process instance is created every time data is either saved or submitted to Kianda&amp;rsquo;s database for a given process design, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/process-instance/">Process instance&lt;/a> for more details.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>Before you get started, there are three things to keep in mind:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To use API methods in Kianda you must have an &lt;strong>administrator&lt;/strong> role, go to &lt;a href="https://docs.kianda.com/administration/users/#view-and-edit-existing-user-details">View and edit user details&lt;/a> to see information on how to set roles.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Each API method requires a &lt;strong>Bearer token&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/apis/authentication/">Authentication&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Each of the following methods can be used on &lt;strong>process instances&lt;/strong> or records, where &lt;strong>{name}&lt;/strong> is the name of a process instance, such as &amp;rsquo;training-approval-request-1'.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="authentication">Authentication&lt;/h2>
+&lt;p>The Instances API methods require a &lt;strong>Bearer token&lt;/strong> or &lt;strong>Access token&lt;/strong> which is a &lt;strong>security token&lt;/strong> to enable HTTP authentication. The bearer token is a cryptic text string, included in the request header.&lt;/p>
+&lt;p>The token can be retrieved by using a &lt;strong>GET&lt;/strong> query as follows:&lt;/p>
+&lt;pre tabindex="0">&lt;code>{{domain}}/token
+&lt;/code>&lt;/pre>&lt;p>Pass the following in the header of the request:&lt;/p>
+&lt;p>&lt;code>username, password, scope, grant_type:password, remember:yes&lt;/code>&lt;/p>
+&lt;p>where {scope} is your &lt;strong>Subscription ID&lt;/strong> found in your Kianda workspace by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> &amp;gt; &lt;strong>Subscription Id&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/subscription-details.jpg" alt="Subscription Id">&lt;/p>
+&lt;h2 id="rest-api-methods">REST API Methods&lt;/h2>
+&lt;p>You can perform Create, Read, and Update operations on Kianda resources using standard HTTP method requests, as summarised below:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Method&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a href="#create-a-process-instance-post">POST&lt;/a>&lt;/td>
+&lt;td>Create a process instance&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#read/retrieve-a-process-instance-get">GET&lt;/a>&lt;/td>
+&lt;td>Read/Retrieve process instance fields&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#update-a-process-instance-put">PUT&lt;/a>&lt;/td>
+&lt;td>Update a process instance&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>PATCH&lt;/td>
+&lt;td>Partially update a process instance&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Before any of the requests are used, you must have the bearer access token&lt;/p>
+&lt;h3 id="create-a-process-instance---post">Create a process instance - POST&lt;/h3>
+&lt;p>This request creates a process instance/new record.&lt;/p>
+&lt;ol>
+&lt;li>The format for the request is:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/create
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>
+&lt;p>Ensure that the &lt;strong>bearer&lt;/strong> token is inserted into the authorisation header.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/create-instance.jpg" alt="Create instance example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Request Body&lt;/strong> for the POST request is:&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ProcessName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;FieldsMappings&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;TriggerField&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;success&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#204a87;font-weight:bold">true&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;instanceID&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="readretrieve-process-instance-fields---get">Read/Retrieve process instance fields - GET&lt;/h3>
+&lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/{name}/fields?names=field1,field2..
+&lt;/code>&lt;/pre>&lt;pre>&lt;code>where `{name}`is the name of the process instance.
+&lt;/code>&lt;/pre>
+&lt;p>This request retrieves the values of multiple fields by name.&lt;/p>
+&lt;p>No Request Body is required.&lt;/p>
+&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;value&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="update-a-process-instance---put">Update a process instance - PUT&lt;/h3>
+&lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/{name}
+&lt;/code>&lt;/pre>&lt;pre>&lt;code>where `{name}`is the name of the process instance.
+&lt;/code>&lt;/pre>
+&lt;p>This request updates all fields in the instance by performing a comparison based on version number, to ensure there are no duplicate process instances.&lt;/p>
+&lt;p>The &lt;strong>Request Body&lt;/strong> for the PUT request is:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ProcessName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;FieldsMappings&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;TriggerField&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ProcessName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;FieldsMappings&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;TriggerField&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Process instance</title><link>https://docs.kianda.com/docs/platform/application-designer/process/process-instance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/process-instance/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Kianda processes are made up of &lt;strong>forms&lt;/strong>, which in turn contain &lt;strong>fields&lt;/strong> or &lt;strong>controls&lt;/strong> and &lt;strong>rules&lt;/strong>. Fields are used to take in user input, make calculations, display values and so on, and rules are used to execute actions to drive the process.&lt;/p>
 &lt;p>&lt;strong>Kianda Designer&lt;/strong> is used to create these forms and form elements within a process. Each process in Kianda Designer will have it’s own unique link or URL and this can be shared with other form designers for co-creation, for example, for a process named ‘Training process’ the link is:&lt;/p>
@@ -2694,10 +2802,7 @@ Your browser does not support the video tag.
 &lt;p>Emphasize benefits to potential clients who are frequently operating in remote areas with no access to the internet.&lt;/p>
 &lt;h2 id="performance">Performance&lt;/h2>
 &lt;p>Progressive web apps are faster because of the way the underlying technology caches and serves text, stylesheets, images and other content on the websites. As a result user experience, consistency and conversion rate increase.&lt;/p>
-&lt;p>Progressive web apps utilize service workers, which are JavaScript files that run independently from the main browser thread and efficiently control caching, this is how progressive web apps enhance better performance than traditional web apps.&lt;/p></description></item><item><title>Docs: Read</title><link>https://docs.kianda.com/docs/apis/instances/read/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/instances/read/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Business rules</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/</guid><description>
+&lt;p>Progressive web apps utilize service workers, which are JavaScript files that run independently from the main browser thread and efficiently control caching, this is how progressive web apps enhance better performance than traditional web apps.&lt;/p></description></item><item><title>Docs: Business rules</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/</guid><description>
 &lt;p>Business rules are what make Kianda forms come alive. They represent the actual actions users intend to perform when they interact with form components - for example, sending automated emails, revealing certain parts of a form based on user interactions and automatically generating Word and PDF documents from completed forms.&lt;/p>
 &lt;p>There are 60 predefined rules across 10 categories and they can be applied to fields (controls), forms, groups of forms or even to a whole process - see &lt;a href="#rules-list">Rules list&lt;/a> for more details.&lt;/p>
 &lt;p>There are two key principles to consider when working with rules:&lt;/p>
@@ -4038,4 +4143,59 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>To read more about User and group management, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.&lt;/p>
 &lt;p>To read more about Dashboards, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p>
 &lt;p>To read more about Conditions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
-&lt;p>To read more about data source parameters, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Connectors&lt;/a> and from there navigate to the different predefined data connectors.&lt;/p></description></item></channel></rss>
+&lt;p>To read more about data source parameters, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Connectors&lt;/a> and from there navigate to the different predefined data connectors.&lt;/p></description></item><item><title>Docs: Submit form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</guid><description>
+&lt;p>The &lt;strong>Submit form&lt;/strong> rule marks the current form as complete and makes it read-only. By default on submit, the next form is activated.&lt;/p>
+&lt;p>This rule is automatically attached to &lt;strong>Submit&lt;/strong> button which is added to all forms by default.&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>This action is used to submit a form that you are working on, that is the &amp;lsquo;current&amp;rsquo; form.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To implement the rule:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="http://localhost:1313/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Field display mode&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="http://localhost:1313/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under Action, &lt;strong>Set process status&lt;/strong> choose from &lt;strong>Auto (Current form title)&lt;/strong> or &lt;strong>Manual&lt;/strong>. If you choose &lt;strong>Manual&lt;/strong> then type in the desired text to appear to users in the &lt;strong>Status text after submit&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>Each process contains an internal status value, this is automatically set to the name of the active form. For example there are two forms in a Incident process, a &lt;strong>Incident form&lt;/strong>, a &lt;strong>Review form&lt;/strong> and the &lt;strong>Auto (Current form title)&lt;/strong> is selected in the &lt;strong>Set process status&lt;/strong> option. When the &lt;strong>Incident form&lt;/strong> is completed and submitted, the internal status will be set to the next active form, in this case the &lt;strong>Review form&lt;/strong>. When all forms are completed and submitted, the internal status is set to &lt;strong>completed&lt;/strong>. The image below shows how the internal status of the process can be reflected in a dashboard to keep track of the current stage of a process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/examples-submit-form-status.jpg" alt="Submit form read only">&lt;/p>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>You can display the internal status of a process in a list widget on your dashboard. This can help you keep of the current state the process instance is. For example when the process is complete of which form the process is currently in.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
