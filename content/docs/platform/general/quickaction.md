@@ -51,11 +51,11 @@ Administrators can edit an existing dashboard page by clicking on the dashboards
 
 1. As an administrator, click on a dashboard page of choice displayed in the left-hand pane.
 
-2. Click on the **Edit current page** ![Edit current page button](/images/edit-current-page.jpg) button.
+2. Click on the **Edit current page** ![Edit current page button](/images/edit-current-page.jpg) button. You are then in **Edit mode** for the page recognisable by the widget menu, along with **Settings** for the dashboard and any **widgets** that exist.
 
    ![Editing page](/images/editing-page.jpg)
 
-3. You are then in **Edit mode** for the page. Here you can add new **dashboard widgets**, edit **Settings**, or **Delete** the dashboard page. To read more about Edit mode go to [Dashboards](/docs/platform/pages/).
+3. In Edit mode you can add new **dashboard widgets**, edit **Settings**, or **Delete** the dashboard page. To read more about Edit mode go to [Dashboards](/docs/platform/pages/).
 
 
 
@@ -92,19 +92,17 @@ To update your information, you can:
 
    ![Change password](/images/changepassword.png)
 
-3. Update your profile by clicking on **Update My Profile**. Type in your **Job title,** **Department** and **Phone number** and click on **Update Profile** or click on **Close **to exit the dialog box.
+3. Update your profile by clicking on **Update My Profile**. Type in your **Job title,** **Department** and **Phone number** and click on **Update Profile** or click on **Close** to exit the dialog box.
 
-4. Logout of Kianda by clicking on **Sign-Out**. Then click on **Ok** to confirm that you want to logout or click on **Cancel **to exit the dialog box.
+4. Logout of Kianda by clicking on **Sign-Out**. Then click on **Ok** to confirm that you want to logout or click on **Cancel** to exit the dialog box.
 
-5. Work offline by clicking moving the slider button across. When you do this you will get a message to say 
-
-   Offline mode is enabled. 
+5. Work offline by clicking moving the slider button across. When you do this you will get a message to say **Offline mode** is **enabled.** 
 
    ![Work offline](/images/workoffline.png)
 
    If you move the slider back then Offline mode is disabled.
 
-6. View the system version of Kianda, for example System version 2.11.3
+6. View the system version of Kianda, for example System version 2.11.3 as shown in the image above.
 
 7. Collapse account information by clicking on the **User profile** button ![User profile](/images/userprofile.png) again. 
 

@@ -6,23 +6,25 @@ typora-root-url: ..\..\..\..\static
 
 The **Administration** menu contains all the functions you need to maintain your Kianda workspace.
 
-The menu is found in the left-hand side pane when you log in to Kianda. This menu will only appear if you have a certain role, for example Administrators will see all items shown in the image below.
+The menu is found in the left-hand side pane when you log in to Kianda. This menu will only appear if you have a certain role, for example **Administrators** will see all items shown in the image below.
 
 ![Administration menu](/images/admin-view.jpg)
 
-Other roles like **Developer**, or **Design business process role** will have access to the Administration menu, but will only see role-related items within the menu. For example a Developer will only see **Developer** within Administration, while a person with a Design business process role will only see **Designer** within Administration. User roles are set by Administrator who will have access to the **Users** function within administration. If you have full administration access then you will see nine functions by default within administration. These are:
+Other roles like **Developer**, or **Design business process role** will have access to the Administration menu, but will only see role-related items within the menu. For example a Developer will only see **Developer** within Administration, while a person with a Design business process role will only see **Designer** within Administration. User roles are set by Administrator who will have access to the **Users** function within administration, see [Users and Groups](/docs/platform/administration/users/) for more information. 
 
-- **Designer** - users with the Designer business process role and administrators can access this function to design business processes
+If you have full administration access then you will see nine functions by default within administration. These are:
 
-- **App Store** - administrators can access predefined process templates within the App Store, and use these templates to create business process.
+- **Designer** - users with the Designer business process role and administrators can access this function to design business processes. Designer is the main feature that allows you to create processes, forms, add fields and business rules all using an easy-to-user graphical user interface, without the need for coding.
 
-- **Subscription** - administrators can update an organisation's subscription details, including Single Sign On, workspace look and feel and regional settings.
+- **App Store** - administrators can access predefined process templates within the App Store, and use these templates to create business process. There are 20 predefined templates that can be imported and used at the click of a button and cover areas like: IT Support Helpdesk, Purchase Order Approval, Employee Appraisal, Change Request Process, Inspection Checklist and Expense report.
 
-- **Data sources** - users with the Manage datasources role and administrators can access this function to connect a workspace to external data sources such as SAP, SharePoint and Oracle databases.
+- **Subscription** - administrators can update an organisation's subscription details, including Single Sign On, workspace look and feel, mobile app login design and regional settings.
 
-- **Scheduled tasks** - administrators can access this function to schedule tasks which can be full processes or parts of a process, for example to execute a rule, and schedule these tasks for a desired period or on demand.
+- **Data sources** - users with the **Manage datasources** role and administrators can access this function to connect a workspace to external data sources such as SAP, SharePoint and Oracle databases. These connectors can be used to retrieve data for processes and processes can automate the update and manipulation at the data source location.
 
-- **Recycle bin** - administrators can access deleted processes, tasks and process instances in the recycle bin.
+- **Scheduled tasks** - administrators can access this function to schedule tasks which can be full processes or parts of a process, for example to execute a rule, and schedule these tasks for a desired period or on demand. Within this function you can also view all existing scheduled tasks that could be rules executing within a process such as scheduled reminders. 
+
+- **Recycle bin** - administrators can access deleted processes, tasks and process instances in the recycle bin and restore them to their original location.
 
 - **Users** - administrators can manage user accounts using this function for example setting roles, profile properties, creating and deleting groups.
 

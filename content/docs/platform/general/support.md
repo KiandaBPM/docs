@@ -5,35 +5,49 @@ typora-root-url: ..\..\..\..\static
 
 The **Support** function is available to users with a designated role, for example, **Manage partners**, **Designer** or **Administrator** and is found in the left-hand side pane, under **More**. This function allows you to log support tickets and view application logs.
 
-### How to get started
+## How to get started
 
-To view use the Support function:
+To view use the **Support** function:
 
 1. Click on **More** in the left-hand side pane and then click on **Support**. 
 
-2. You can view any current tickets or logs in the main view pane.
+2. You can view any current tickets or logs in the main view pane. 
 
    ![Support view](/images/support-function.jpg)
 
    
 
-   These are two main areas: **Support tickets** and **Application logs** these are explained in more detail below. 
+   These are two main areas: [**Support tickets**](#support-tickets) and [**Application logs**](#application-logs). These areas are explained in more detail below. 
    
    
-#### Support tickets
+## Support tickets
+Support tickets can be raised and viewed through this area of the platform.
+
 Existing support tickets appear within this section, showing the **title** of the ticket, **date** it was issued and **status**. 
 
-##### For existing tickets:
+### Existing tickets ### 
 
-1. Click on the **name** of a ticket to view ticket details, such as who raised the ticket and a description of the title.
-2. Click on **update status** to change the title of the field or update the status. The status can either be **Open**, **Resolved** (resolved from the Kianda support side) or **Closed** (customer is satisfied with the resolution and has closed the ticket). Click on **Close** to exit without saving or **OK** to submit changes.
-3. Click on **reply** to add a comment to the ticket. The comment can be styled to change the font colour, paragraph layout, add tables, links or images. 
+1. Click on the **name** of a ticket to view ticket details, such as who raised the ticket and a description of the issue. The date and time that the ticket is raised is visible, along with the status of the ticket.
+
+   ![Support ticket details example](/images/existing-support-ticket-eg.jpg)
+
+2. Click on **update status** to change the title of the field or update the status. 
+
+   ![Update ticket status](/images/new-thread.jpg)
+
+   The **Create a new thread** dialog box showing the title and description. Here the status can be changed to become: **Open**, **Resolved** (resolved from the Kianda support side) or **Closed** (the customer is satisfied with the resolution and has closed the ticket). Click on **Close** to exit without saving or **OK** to submit changes.
+
+3. Click on **reply** to add a comment to the ticket. The **Post a reply** dialog box opens. 
 
    ![Post comment](/images/post-comment.jpg)
 
- 
+​	Here you can add a comment in the **Description** box which can be styled in various way, for example to change the font colour, paragraph layout, add 	tables, links or images. There is also a **Help** button ![Help button](/images/help-button.jpg)that gives you Keyboard shortcuts to change the style. 
 
-##### To create a new ticket:
+​	Click on **Close** to exit without saving or **OK** to submit changes.
+
+
+
+### To create a new ticket
 
 1. Click on the **Add new** button.
 2. In the **Create a new thread** dialog box, enter a **Title**, **Description** and set the ticket **status**, typically Open. 
@@ -47,7 +61,7 @@ Existing support tickets appear within this section, showing the **title** of th
 
 
 
-#### Application logs
+## Application logs
 
 System logs appear in this section when you click on **Load errors**. Logs are listed by **date**, **url/area**, for example a User update, a system generated Message, User and **Browser** involved in the log entry. 
 
