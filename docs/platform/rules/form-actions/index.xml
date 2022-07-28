@@ -203,7 +203,7 @@
 &lt;p>To implement the rule:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="http://localhost:1313/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Save form&lt;/strong>.&lt;/p>
@@ -233,12 +233,11 @@
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
-&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
-&lt;ol start="2">
 &lt;li>
-&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
@@ -267,7 +266,7 @@
 &lt;p>By default all forms come with a Close button, and therefore a &lt;strong>Close form&lt;/strong> rule however, you can set a close rule yourself, and redirect the user anywhere. To do so:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="http://localhost:1313/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Close form&lt;/strong>.&lt;/p>
@@ -290,10 +289,12 @@
 &lt;p>&lt;strong>Return to URL&lt;/strong> - This option will redirect the user to any URL specified in the &lt;strong>Please choose a field or type the URL&lt;/strong> text box.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Go to process&lt;/strong> - This option will redirect you to a process specified in the &lt;strong>Please indicate the process or instance ID&lt;/strong> text box.&lt;/p>
+&lt;p>&lt;strong>Go to process&lt;/strong> - This option will redirect you to a process specified in the &lt;strong>Please indicate the process or instance ID&lt;/strong> text box. See heading below for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h4 id="how-the-go-to-process-option-works">How the Go to process option works&lt;/h4>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-the-go-to-process-option-works">How the &amp;lsquo;Go to process&amp;rsquo; option works&lt;/h3>
 &lt;p>With this option selected, you can now enter an ID of a process you want the user to be navigated to. There is also a &lt;strong>Is new instance?&lt;/strong> radio list available with a &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong> options. If you choose:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -306,8 +307,6 @@
 &lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Query string parameters&lt;/strong> are used to populate form or fields when a given form is loaded. To learn more about query parameters go to &lt;a href="https://docs.kianda.com/docs/platform/pages/link/#heading">Query parameters&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ol>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
@@ -337,7 +336,7 @@
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Delete form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/delete-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/delete-form/</guid><description>
-&lt;p>The &lt;strong>Delete form&lt;/strong> rule marks a process instance to be deleted. This rule can be used for General Data Protection Regulation(GDPR) reasons whereby a process instance with personal data is deleted.&lt;/p>
+&lt;p>The &lt;strong>Delete form&lt;/strong> rule marks a process instance to be deleted. This rule can be used for example for General Data Protection Regulation (GDPR) reasons whereby a process instance with personal data is deleted.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Use this rule with the &lt;strong>Save form&lt;/strong> rule to commit the deletion request in the server.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
@@ -350,11 +349,11 @@
 &lt;p>As mentioned in the example above, we will use this rule to delete personal data for GDPR reasons.&lt;/p>
 &lt;p>To implement the rule:&lt;/p>
 &lt;ol>
-&lt;li>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="http://localhost:1313/images/penicon.png" alt="Pen button">.&lt;/li>
+&lt;li>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/li>
 &lt;li>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Delete form&lt;/strong>.&lt;/li>
 &lt;li>In the &lt;strong>Edit rule - Delete form&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/li>
 &lt;li>There is no action on the Delete form rule that can be specified. The internal action of this rule is to delete the process instance if a condition becomes true, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/li>
-&lt;li>To apply a condition to the &lt;strong>Delete form&lt;/strong> rule, in the &lt;strong>Edit rule - Delete form&lt;/strong> dialog box click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">&lt;/li>
+&lt;li>To apply a condition to the &lt;strong>Delete form&lt;/strong> rule, in the &lt;strong>Edit rule - Delete form&lt;/strong> dialog box click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">.&lt;/li>
 &lt;/ol>
 &lt;h3 id="gdpr-example-use-case">GDPR example use case&lt;/h3>
 &lt;p>In this example we have two forms:&lt;/p>
@@ -389,12 +388,11 @@
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
-&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
-&lt;ol start="2">
 &lt;li>
-&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
