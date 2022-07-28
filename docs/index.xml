@@ -4152,7 +4152,7 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>To read more about Dashboards, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p>
 &lt;p>To read more about Conditions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;p>To read more about data source parameters, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Connectors&lt;/a> and from there navigate to the different predefined data connectors.&lt;/p></description></item><item><title>Docs: Submit form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</guid><description>
-&lt;p>The &lt;strong>Submit form&lt;/strong> rule marks the current form as complete and makes it read-only. By default on submit, the next form is activated.&lt;/p>
+&lt;p>The &lt;strong>Submit form&lt;/strong> rule marks the current form as complete and makes it read-only. By default upon submit of a form, the next form in the process is activated.&lt;/p>
 &lt;p>This rule is automatically attached to &lt;strong>Submit&lt;/strong> button which is added to all forms by default.&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
 &lt;p>This action is used to submit a form that you are working on, that is the &amp;lsquo;current&amp;rsquo; form.&lt;/p>
@@ -4166,7 +4166,7 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>To implement the rule:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="http://localhost:1313/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Field display mode&lt;/strong>.&lt;/p>
@@ -4175,23 +4175,22 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="http://localhost:1313/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under Action, &lt;strong>Set process status&lt;/strong> choose from &lt;strong>Auto (Current form title)&lt;/strong> or &lt;strong>Manual&lt;/strong>. If you choose &lt;strong>Manual&lt;/strong> then type in the desired text to appear to users in the &lt;strong>Status text after submit&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>Each process contains an internal status value, this is automatically set to the name of the active form. For example there are two forms in a Incident process, a &lt;strong>Incident form&lt;/strong>, a &lt;strong>Review form&lt;/strong> and the &lt;strong>Auto (Current form title)&lt;/strong> is selected in the &lt;strong>Set process status&lt;/strong> option. When the &lt;strong>Incident form&lt;/strong> is completed and submitted, the internal status will be set to the next active form, in this case the &lt;strong>Review form&lt;/strong>. When all forms are completed and submitted, the internal status is set to &lt;strong>completed&lt;/strong>. The image below shows how the internal status of the process can be reflected in a dashboard to keep track of the current stage of a process.&lt;/p>
+&lt;p>​ Each process contains an internal status value, this is automatically set to the name of the active form. For example there are two forms in a Incident process, a &lt;strong>Incident form&lt;/strong>, a &lt;strong>Review form&lt;/strong> and the &lt;strong>Auto (Current form title)&lt;/strong> is selected in the &lt;strong>Set process status&lt;/strong> option. When the &lt;strong>Incident form&lt;/strong> is completed and submitted, the internal status will be set to the next active form, in this case the &lt;strong>Review form&lt;/strong>. When all forms are completed and submitted, the internal status is set to &lt;strong>completed&lt;/strong>. The image below shows how the internal status of the process can be reflected in a dashboard to keep track of the current stage of a process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/examples-submit-form-status.jpg" alt="Submit form read only">&lt;/p>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
-&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
-&lt;ol start="2">
 &lt;li>
-&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
@@ -4202,7 +4201,7 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;ul>
-&lt;li>You can display the internal status of a process in a list widget on your dashboard. This can help you keep of the current state the process instance is. For example when the process is complete of which form the process is currently in.&lt;/li>
+&lt;li>You can display the internal status of a process in a list widget on your dashboard. This can help you keep track of the current state the process instance is. For example when the process is complete or which form in the process is currently active.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
