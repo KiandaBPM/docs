@@ -4,9 +4,7 @@ weight: 6
 typora-root-url: ..\..\..\..\..\static
 ---
 
-The **Delete form** rule marks a process instance to be deleted. This rule can be used for General Data Protection Regulation(GDPR) reasons whereby a process instance with personal data is deleted.  
-
-
+The **Delete form** rule marks a process instance to be deleted. This rule can be used for example for General Data Protection Regulation (GDPR) reasons whereby a process instance with personal data is deleted.  
 
 ## When to use
 
@@ -26,11 +24,11 @@ As mentioned in the example above, we will use this rule to delete personal data
 
 To implement the rule:
 
-1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](http://localhost:1313/images/penicon.png).
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
 2. Click on **Add a rule** > **Form actions** > **Delete form**. 
 3. In the **Edit rule - Delete form** dialog box, give the rule a **Title**. 
 4. There is no action on the Delete form rule that can be specified. The internal action of this rule is to delete the process instance if a condition becomes true, see [Conditions](/docs/platform/rules/general/add-conditions/) for more information.
-5. To apply a condition to the **Delete form** rule, in the **Edit rule - Delete form** dialog box click on **Edit conditions** ![Edit conditions button](/images/editconditions.png)
+5. To apply a condition to the **Delete form** rule, in the **Edit rule - Delete form** dialog box click on **Edit conditions** ![Edit conditions button](/images/editconditions.png).
 
 ### GDPR example use case
 
@@ -66,13 +64,13 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 1. To **disable** a rule click the slider across beside the rule name. 
 
-![Disable a rule](/images/disable-rule.jpg)
-
-2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
 
 3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 
 4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+
+   
 
 ### User tip ![Target icon](/images/05.png) ###
 

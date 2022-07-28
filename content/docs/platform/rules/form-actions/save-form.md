@@ -24,7 +24,7 @@ You can add this rule:
 
 To implement the rule:
 
-1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](http://localhost:1313/images/penicon.png).
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
 
 2. Click on **Add a rule** > **Form actions** > **Save form**. 
 
@@ -50,23 +50,27 @@ To implement the rule:
 
 7. You can create conditions for the actions to happen, see [Conditions](/docs/platform/rules/general/add-conditions/) for more information.
 
+   
+
 ### Editing, deleting or duplicating rules
 
 When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
 
 1. To **disable** a rule click the slider across beside the rule name. 
 
-![Disable a rule](/images/disable-rule.jpg)
-
-2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
 
 3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 
 4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
 
+   
+
 ### User tip ![Target icon](/images/05.png)
 
 - You can add a condition to the **Save form** rule to make sure that users fill out certain pieces of information in your form before they can actually save it.
+
+  
 
 ### What's next ![Idea icon](/images/18.png) 
 

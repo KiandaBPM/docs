@@ -26,7 +26,7 @@ You can add this rule:
 
 By default all forms come with a Close button, and therefore a **Close form** rule however, you can set a close rule yourself, and redirect the user anywhere. To do so:
 
-1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](http://localhost:1313/images/penicon.png).
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
 
 2. Click on **Add a rule** > **Form actions** > **Close form**. 
 
@@ -44,12 +44,12 @@ By default all forms come with a Close button, and therefore a **Close form** ru
    
    - **Return to URL** - This option will redirect the user to any URL specified in the **Please choose a field or type the URL** text box.
    
-   - **Go to process** - This option will redirect you to a process specified in the **Please indicate the process or instance ID** text box.
+   - **Go to process** - This option will redirect you to a process specified in the **Please indicate the process or instance ID** text box. See heading below for more information.
    
-   #### How the Go to process option works
-   
+### How the 'Go to process' option works
+
    With this option selected, you can now enter an ID of a process you want the user to be navigated to. There is also a **Is new instance?** radio list available with a **Yes** or **No** options. If you choose: 
-   
+
    - **Yes** - In the  **Please indicate the process or instance ID** text box, you **MUST** specify a process ID which is the **ID (Unique)** of a process.
    
      ![Edit process - ID field](/images/edit-process-id.jpg)
@@ -57,9 +57,9 @@ By default all forms come with a Close button, and therefore a **Close form** ru
    - **No** - In the **Please indicate the process or instance ID** text box, you **MUST** specify an instance ID of a process. The instance ID is a unique identifier for a process instance. For example an **Incident** process may have more than one instances and each of those instances contains a unique ID as shown in the image below.
    
      ![Edit process - ID field](/images/rule-close-instance-id.jpg)
-   
+
    **Query string parameters** are used to populate form or fields when a given form is loaded. To learn more about query parameters go to [Query parameters](/docs/platform/pages/link/#heading).
-   
+
    
 
 ### Editing, deleting or duplicating rules
