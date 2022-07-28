@@ -3,24 +3,83 @@ title: "Developer"
 typora-root-url: ..\..\..\..\static
 ---
 
-Kianda **Developer** is available to administrators and those users with the role **Developer**. The Developer function is found in the left-hand side pane, under **Administration**. The function allows you to create customised field, rule and dashboard widgets using pre-defined widget UI and code templates that you can add your own code to. 
+Kianda **Developer** is available to **administrators** and those users with the role **Developer**. The Developer function is found in the left-hand side pane, under **Administration**. The function allows you to create customised field, rule and dashboard widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.
 
-### How to get started
+You can also quickly use Kianda **Developer** to add webhooks, providing an efficient way to push GET requests to other applications in real-time as the Kianda process(es) runs and avoiding the need to poll for data. 
+
+Kianda uses EmberJS to build widgets, and in particular the Handlebars templating library, to power the application's user interface. See [templating basics](#emberjs-templating-basics) to get started.
+
+## How to get started
 
 To start using **Developer**:
 
 1. Click on **Administration** in the left-hand side pane and then click on **Developer**.
 
-2. Any customised widgets that have been created will be visible in the main widget view. 
+2. Any customised widgets that have been created will be visible in the **Developer resources** main widget view. 
 
    ![Developer view](/images/developer-view.jpg)
 
-3. From the widget view you can click on the **Version History** button ![Version History button](/images/widget-version-history.jpg) to view the widget creation history, or click on the **Edit** (Pen) button  ![Edit widget button](/images/widget-edit.jpg), or click on the **Bin/Trash** button  ![Delete widget button](/images/widget-delete.jpg) to delete a widget. To view widget details, click on the name of a widget.
+3. To view details for existing widgets, click on the widget name.
 
-4. To create a new widget click on **New widget**.
+   ![Widget example](/images/widget-example.jpg)
+
+4. In the **Widget** page you can update existing Widget UI and Widget Code within the editor and then click on **Update** ![Update button](/images/update-button.jpg). Alternatively click on **Close** to exit the page at any time.
+
+5. From the **Developer resources** main widget view you can:
+
+   - View the widget creation history by clicking on the **Version History** button ![Version History button](/images/widget-version-history.jpg)
+   - Edit a widget by clicking on the **Edit** (Pen) button  ![Edit widget button](/images/widget-edit.jpg)
+   - Delete a widget by clicking on the **Bin/Trash** button  ![Delete widget button](/images/widget-delete.jpg)
+
+6. To create a new widget click on **New widget** ![New widget button](/images/new-widget-button.jpg). This will open the **Edit widget** dialog box.
+
+   ![Edit widget example](/images/edit-widget-page.jpg)
+
+   Fill out details as follows:
+
+   - **Title** - fill out a title for the widget.
+
+   - **Unique Id** - this is a unique value that is autofilled from the Title.
+
+   - **Widget Icon** - choose an appropriate icon from the drop-down list.
+
+   - **Widget type** - choose from **Field**, **Rule** or **Dashboard widget**.
+
+   Go to [EmberJS templating basics](#emberjs-templating-basics) to find out more about EmberJS to build widgets.
+
+   When you are finished editing the dialog box click on **OK** or click on **Close** at any time to exit.
+
+7. Click on **Webhooks** to configure URLs to respond to process instance create, update and delete events. 
+
+   ![Instance Callback URLs](/images/webhook-edit.jpg)
+   
+   - Move the slider across for each type of operation (Create, Update, Delete) to add in a URL to enable callback. 
+   - For example for **Enable Deleted Callback**, will enable the URL callback every time a process instance is updated. 
+   - HTTP GET with parameters `instanceID={instanceID}, processName={processName}` and `eventType=deleted` will be issued to the provided URL.
+   - When you are finished editing the dialog box click on **OK** or click on **Close** at any time to exit.
+
+
+
+## EmberJS templating basics
+
+With Handlebars you can quickly build web applications that are made up of different components. Handlebar templates contain static HTML and dynamic content inside Handlebars expressions, which are summoned with double curly braces: {{ }}
+
+Dynamic content inside a Handlebars expression is rendered with data-binding. This means if you update a property, your usage of that property in a template will be automatically updated to the latest value.
+
+### Helpers 
+
+Ember gives the ability to write your helpers, to bring a minimum of logic into Ember templating. For example, let's say you would like the ability to add a few numbers together, without needing to define a computed property everywhere you would like to do so.
+
+***Helper example***
+
+![Helpers](/images/write-our-own-helpers.png)
+
+#### Conditionals
+
+Statements like **if** and **unless** are implemented as built-in helpers. Helpers can be invoked three ways; inline invocation, nested invocation and block invocation. For more details, go to: https://guides.emberjs.com/v2.18.0/templates/conditionals/.
 
 
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To read more about Developer and how to use the interface to low-code development.
+To read more about Developer and how to use the platform for low-code development, go to [Low code development](/docs/low-code/).
