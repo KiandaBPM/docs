@@ -419,7 +419,7 @@
 &lt;p>Statements like &lt;strong>if&lt;/strong> and &lt;strong>unless&lt;/strong> are implemented as built-in helpers. Helpers can be invoked three ways; inline invocation, nested invocation and block invocation. For more details, go to: &lt;a href="https://guides.emberjs.com/v2.18.0/templates/conditionals/">https://guides.emberjs.com/v2.18.0/templates/conditionals/&lt;/a>.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about Developer and how to use the platform for low-code development, go to &lt;a href="https://docs.kianda.com/docs/low-code/">Low code development&lt;/a>.&lt;/p></description></item><item><title>Docs: Recycle bin</title><link>https://docs.kianda.com/docs/platform/administration/recyclebin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/recyclebin/</guid><description>
-&lt;p>The &lt;strong>Recycle bin&lt;/strong> function is available to administrators and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The recycle bin holds deleted process instances, dashboard pages and process designs. Deleted items are held for 30 days and are permanently deleted after this time.&lt;/p>
+&lt;p>The &lt;strong>Recycle bin&lt;/strong> function is available to &lt;strong>administrators&lt;/strong> and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The recycle bin holds deleted process instances, dashboard pages and process designs. Deleted items are held for 30 days and are permanently deleted after this time.&lt;/p>
 &lt;h3 id="how-to-get-started">How to get started&lt;/h3>
 &lt;p>To view items in the Recycle bin:&lt;/p>
 &lt;ol>
@@ -427,19 +427,35 @@
 &lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Recycle bin&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You can view any deleted items in the main recycle bin view.&lt;/p>
+&lt;p>Search for an item by typing in key words into the &lt;strong>Search items&lt;/strong> box for example &amp;lsquo;Office&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can view existing deleted items in the &lt;strong>Recycle bin&lt;/strong> main view.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/recycle-bin-view2.jpg" alt="Recycle bin main view">&lt;/p>
-&lt;p>The first column in the view shows &lt;strong>Item type&lt;/strong> and in this example there are two processes, four dashboard pages and five process instances.&lt;/p>
+&lt;p>Deleted items are listed by:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Item type&lt;/strong> - this is the type of deleted item, for example a widget, process instance, datasource or page.&lt;/li>
+&lt;li>&lt;strong>Item details&lt;/strong> - the name of the deleted item, for example the name of a process instance and the unique name (ID) for that process&lt;/li>
+&lt;li>&lt;strong>Deleted date&lt;/strong> - the date the item was deleted&lt;/li>
+&lt;li>&lt;strong>Deleted by&lt;/strong> - the name of the user who deleted the item.&lt;/li>
+&lt;/ul>
+&lt;p>In the example above there is one process design, four dashboard pages and three process instances.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To restore an item click on the &lt;strong>Restore item&lt;/strong> button &lt;img src="https://docs.kianda.com/images/restore-bin-item.jpg" alt="Restore recycle bin button"> beside the item name.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>When you click on the button you will get a pop-up confirmation asking you to confirm that you want to restore that item, click on &lt;strong>OK&lt;/strong> if you wish to restore the item or &lt;strong>Cancel&lt;/strong> to exit. If you click on &lt;strong>OK&lt;/strong> the item is restored, for example a dashboard page appears again under &lt;strong>Dashboard&lt;/strong> in the left-hand pane.&lt;/p>
+&lt;p>When you click on the button you will get a pop-up confirmation asking you to confirm that you want to restore that item.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/restore-item.jpg" alt="Restore item">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> if you wish to restore the item or &lt;strong>Cancel&lt;/strong> to exit. If you click on &lt;strong>OK&lt;/strong> the item is restored, for example a datasource appears again within the Datasource management main view when you click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong> in the left-hand pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-restored.jpg" alt="Datasource restored">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about how to create processes and form go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Scheduled tasks</title><link>https://docs.kianda.com/docs/platform/administration/scheduledtasks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/scheduledtasks/</guid><description>
+&lt;p>To read more about how to create processes and form go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
+&lt;p>To read about other parts of the platform go to &lt;a href="https://docs.kianda.com/docs/platform/administration/">Administration&lt;/a>.&lt;/p></description></item><item><title>Docs: Scheduled tasks</title><link>https://docs.kianda.com/docs/platform/administration/scheduledtasks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/scheduledtasks/</guid><description>
 &lt;p>The &lt;strong>Scheduled tasks&lt;/strong> function is available to administrators and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The Scheduled tasks function allows you to schedule a task, that could be a process or a rule for example to send reminder emails.&lt;/p>
 &lt;h3 id="how-to-get-started">How to get started&lt;/h3>
 &lt;p>To view use the Scheduled tasks function:&lt;/p>
