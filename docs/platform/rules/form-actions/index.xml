@@ -12,7 +12,7 @@
 &lt;p>To implement the rule:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="http://localhost:1313/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Validate input&lt;/strong>.&lt;/p>
@@ -44,10 +44,9 @@
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
-&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
-&lt;ol start="2">
+&lt;li>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
 &lt;/li>
@@ -60,7 +59,7 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;ul>
-&lt;li>When validating a field, form or a process, think of conditions. When a condition is met, an action must follow. For example an error message is displayed(&lt;strong>Action&lt;/strong>) when the wrong date is entered(&lt;strong>Condition&lt;/strong>).&lt;/li>
+&lt;li>When validating a field, form or a process, think of conditions. When a condition is met, an action must follow. For example an error message is displayed (&lt;strong>Action&lt;/strong>) when the wrong date is entered (&lt;strong>Condition&lt;/strong>).&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
@@ -78,7 +77,7 @@
 &lt;p>To implement the rule:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="http://localhost:1313/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Field display mode&lt;/strong>.&lt;/p>
@@ -87,7 +86,7 @@
 &lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="http://localhost:1313/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To demonstrate how this rule works, we will add a condition to a field. Select the field you want the condition to be applied to. In this example it is the &lt;strong>Employee&lt;/strong> field.&lt;/p>
@@ -109,17 +108,16 @@
 &lt;li>
 &lt;p>Click on &lt;strong>Add&lt;/strong> to add as many fields or forms as needed.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/examples-field-display-mode-fields.jpg" alt="Edit rule dialog box">&lt;/p>
+&lt;p>The video below demonstrates the &lt;strong>Field Display mode&lt;/strong> rule in action, where the &lt;strong>Employee&lt;/strong> field becomes &lt;strong>Read mode&lt;/strong> after a user is selected. The &lt;strong>Date&lt;/strong> field which was not editable changes to &lt;strong>Edit mode&lt;/strong> after a user is selected. This is achieved by applying a condition to the &lt;strong>Employee&lt;/strong> field. The condition checks if the &lt;strong>Employee&lt;/strong> field is &lt;strong>Not blank&lt;/strong>, therefore when a user has been selected this condition is valid, activating the &lt;strong>Field Display mode&lt;/strong> rule.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>The video below demonstrates the &lt;strong>Field Display mode&lt;/strong> rule in action, where the &lt;strong>Employee&lt;/strong> field becomes &lt;strong>Read mode&lt;/strong> after a user is selected. The &lt;strong>Date&lt;/strong> field which was not editable changes to &lt;strong>Edit mode&lt;/strong> after a user is selected. This is achieved by applying a condition to the &lt;strong>Employee&lt;/strong> field. The condition checks if the &lt;strong>Employee&lt;/strong> field is &lt;strong>Not blank&lt;/strong>, therefore when a user has been selected this condition is valid, activating the &lt;strong>Field Display mode&lt;/strong> rule.&lt;/p>
 &lt;img src="https://docs.kianda.com/videos/gifs/examples/field-display-mode/field-display-mode2.gif"/>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
-&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
-&lt;ol start="2">
+&lt;li>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button">beside the rule name.&lt;/p>
 &lt;/li>

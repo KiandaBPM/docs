@@ -456,30 +456,28 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and form go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To read about other parts of the platform go to &lt;a href="https://docs.kianda.com/docs/platform/administration/">Administration&lt;/a>.&lt;/p></description></item><item><title>Docs: Scheduled tasks</title><link>https://docs.kianda.com/docs/platform/administration/scheduledtasks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/scheduledtasks/</guid><description>
-&lt;p>The &lt;strong>Scheduled tasks&lt;/strong> function is available to administrators and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The Scheduled tasks function allows you to schedule a task, that could be a process or a rule for example to send reminder emails.&lt;/p>
-&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
+&lt;p>The &lt;strong>Scheduled tasks&lt;/strong> function is available to &lt;strong>administrators&lt;/strong> and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The Scheduled tasks function allows you to schedule a task, that could be a process or a rule for example to send reminder emails.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To view use the Scheduled tasks function:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Scheduled tasks&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You can view any current tasks in the main tasks view.&lt;/p>
+&lt;p>You can view current tasks scheduled via this function in the &lt;strong>Task automation&lt;/strong> main tasks view. This is a subset of all tasks, see Step 3 below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-tasks-view.jpg" alt="Scheduled tasks view">&lt;/p>
 &lt;p>In this view you can see the &lt;strong>Name&lt;/strong> of the task, the &lt;strong>Schedule&lt;/strong> for example weekly or monthly, when the task was &lt;strong>last run&lt;/strong>, when the task will &lt;strong>next run&lt;/strong>, the &lt;strong>status&lt;/strong> of the task, the name of the associated &lt;strong>process&lt;/strong> and process &lt;strong>instance&lt;/strong> where relevant, and &lt;strong>who&lt;/strong> is the administrator of the task/who has created the task.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To see a complete list of scheduled tasks click on &lt;strong>Show All&lt;/strong>.&lt;/p>
+&lt;p>To see a complete list of scheduled tasks click on &lt;strong>Show All&lt;/strong> &lt;img src="https://docs.kianda.com/images/show-all.jpg" alt="Show All button">. This list will include all tasks that are running as a result of processes, for example scheduled reminders that are running as a result of rules in a process. To see the shorter list again of tasks created via this function, click on &lt;strong>Show All&lt;/strong> again.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To schedule a new task, click on the &lt;strong>Schedule a task&lt;/strong> button.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Schedule a task&lt;/strong> dialog box, select a &lt;strong>Task name&lt;/strong> for the task and then a &lt;strong>schedule&lt;/strong> choosing from &lt;strong>One time&lt;/strong>, or a periodic schedule from: &lt;strong>Minutes&lt;/strong>, &lt;strong>Hourly&lt;/strong>, &lt;strong>Daily&lt;/strong>, &lt;strong>Weekly&lt;/strong>, &lt;strong>Monthly&lt;/strong> or &lt;strong>On demand&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-tasks-box.jpg" alt="Scheduled tasks view">&lt;/p>
-&lt;ol start="6">
+&lt;/li>
 &lt;li>
 &lt;p>Depending on which option you choose, different &lt;strong>time modes&lt;/strong> or ways of scheduling the task will be presented:&lt;/p>
 &lt;ul>
@@ -490,8 +488,8 @@
 &lt;p>&lt;strong>Minutes&lt;/strong> - enter a numeric value into the minutes box&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Hourly&lt;/strong> - enter a numeric value into the minutes and &lt;strong>Every&lt;/strong> field, to set a recurring schedule, see image below:
-&lt;img src="https://docs.kianda.com/images/hours-schedule.jpg" alt="Hourly schedule option">&lt;/p>
+&lt;p>&lt;strong>Hourly&lt;/strong> - enter a numeric value into the minutes and &lt;strong>Every&lt;/strong> field, to set a recurring schedule, see image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/hours-schedule.jpg" alt="Hourly schedule option">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Daily&lt;/strong> - enter a time in the &lt;strong>At&lt;/strong> field, a numeric value in the &lt;strong>Every&lt;/strong> field, to set a recurring schedule and check the checkbox for &lt;strong>Week days&lt;/strong> &lt;strong>only&lt;/strong> to only schedule the task on weekdays.&lt;/p>
@@ -500,11 +498,11 @@
 &lt;p>&lt;strong>Weekly&lt;/strong> - enter a day of the week in the &lt;strong>Week day&lt;/strong> field, a time in the &lt;strong>At&lt;/strong> field, and a numeric value in the &lt;strong>Every&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Monthly&lt;/strong> - enter a numeric value in the &lt;strong>Day&lt;/strong> field to set what day of the month, or choose values to set when the task should happen for example , the &lt;strong>First&lt;/strong> &lt;strong>Monday&lt;/strong> of a month, as shown in the image below. Also select a time in the &lt;strong>At&lt;/strong> field, and a numeric value in the &lt;strong>Every&lt;/strong> field.&lt;/p>
+&lt;p>&lt;strong>Monthly&lt;/strong> - enter a numeric value in the &lt;strong>Day&lt;/strong> field to set what day of the month, or choose values to set when the task should happen for example, the &lt;strong>First&lt;/strong> &lt;strong>Monday&lt;/strong> of a month, as shown in the image below. Also select a time in the &lt;strong>At&lt;/strong> field, and a numeric value in the &lt;strong>Every&lt;/strong> field.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-monthly.jpg" alt="Monthly schedule option">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>On demand&lt;/strong> - if you choose this option then a &lt;strong>Task Webhook URL&lt;/strong> field will appear. If you click on &lt;strong>OK&lt;/strong> the URL is generated by the system. This will send a POST request to the generated URL to trigger the task on demand. If you add an optional instanceID parameter you can run the task on a specific instance.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>On demand&lt;/strong> - if you choose this option then a &lt;strong>Task Webhook URL&lt;/strong> field will appear. If you click on &lt;strong>OK&lt;/strong> the URL is generated by the system. This will send a POST request to the generated URL to trigger the task on demand. If you add an optional instanceID parameter you can run the task on a specific instance.&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -655,15 +653,23 @@
 &lt;h3 id="general-settings">General settings&lt;/h3>
 &lt;p>In this section you can make the following changes:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Enable Global SMTP Mail Connector&lt;/strong> - set a global SMTP connector used to send emails. The global connector will ignore all other connectors and will no longer use &lt;a href="mailto:no-reply@kianda.com">no-reply@kianda.com&lt;/a> as a sender. To learn more about email connector and how to set up a SMTP, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/">Email connector&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Global Administrator&lt;/strong> - change the global administrator of your company&amp;rsquo;s Kianda platform from the list of users that are in it.&lt;/li>
-&lt;li>&lt;strong>Global JavaScript&lt;/strong> - allows you to create a JavaScript file with custom functions as helper or action functions allowing you to perform any functionality you may want. The file is accessible globally and will load when the application first starts.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable Global SMTP Mail Connector&lt;/strong> - click on &lt;strong>Yes&lt;/strong> to set a global Simple Mail Transfer Protocol (SMTP) connector used to send emails.&lt;/p>
+&lt;p>The global connector will ignore all other connectors and will no longer use &lt;a href="mailto:no-reply@kianda.com">no-reply@kianda.com&lt;/a> as a sender. To enable this you must have an email connector set up in advance. To learn more about email connectors go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/">Email connector&lt;/a>.&lt;/p>
+&lt;p>In addition you can choose &lt;strong>Yes&lt;/strong> for &lt;strong>Enable save to Sent Items&lt;/strong> so that sent email are automatically saved in a &amp;lsquo;Sent items folder&amp;rsquo;.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/global-smtp-email-connector.jpg" alt="Enabling Global SMTP Mail Connector">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Global Administrator&lt;/strong> - change the global administrator of your company&amp;rsquo;s Kianda platform from the list of users that are in it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Global JavaScript&lt;/strong> - allows you to create a JavaScript file with custom functions as helper or action functions allowing you to perform any functionality you may want. The file is accessible globally and will load when the application first starts. Go to &lt;a href="https://docs.kianda.com/docs/low-code/global-javascript-file/">Global JavaScript file&lt;/a> for more details.&lt;/p>
+&lt;/li>
 &lt;/ul>
+&lt;p>When you are finished making changes click on &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
 &lt;h2 id="single-sign-on-sso">Single Sign-On (SSO)&lt;/h2>
-&lt;p>Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. To enable Single-Sign-On, please follow the below steps:&lt;/p>
-&lt;p>As an administrator, go to the left-hand pane and click on Administration &amp;gt; Subscription &amp;gt; Single Sign-on.
-Click the radio button for ‘Enable Single-Sign-On’ Yes.
-Select an SSO Provider from the list provided.&lt;/p>
+&lt;p>Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. When you click on &lt;strong>Single Sign-On&lt;/strong> in &lt;strong>Subscription&lt;/strong> page you are brought to the &lt;strong>Single Sign-on Details&lt;/strong> page. See [Single Sign On][/docs/security/sso/] for more details.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/single-sign-on-details.jpg" alt="Single Sign-On Details">&lt;/p>
 &lt;p>At any time, you can go to Side menu &amp;gt; Subscription to edit any of these settings or to manage Subscription Details, Payment Details and Single Sign-on.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Users &amp; Groups</title><link>https://docs.kianda.com/docs/platform/administration/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/users/</guid><description>
