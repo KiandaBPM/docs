@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Administration</title><link>https://docs.kianda.com/docs/platform/administration/</link><description>Recent content in Administration on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/administration/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: B2B Portals</title><link>https://docs.kianda.com/docs/platform/administration/b2b-portals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/b2b-portals/</guid><description>
 &lt;p>&lt;strong>B2B Portals&lt;/strong> is available within the &lt;strong>Invite partners&lt;/strong> function and available to administrators and those users with the role &lt;strong>Manage partners&lt;/strong>. &lt;strong>Invite partners&lt;/strong> is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The function allows you to share business processes processes to select business partners as external links.&lt;/p>
-&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To access B2B portals:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -12,9 +12,9 @@
 &lt;p>There are two main areas: &lt;strong>Partners&lt;/strong> and &lt;strong>Shared processes&lt;/strong>, these are explained in more detail below.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="shared-processes">Shared processes&lt;/h3>
+&lt;h2 id="shared-processes">Shared processes&lt;/h2>
 &lt;p>Existing shared processes appear within this section in the right-hand side of the main view. Before you invite a partner you must choose a process to share from within this section first.&lt;/p>
-&lt;h4 id="to-share-a-process">To share a process&lt;/h4>
+&lt;h3 id="to-share-a-process">To share a process&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>To share a process with a business partner, click on the &lt;strong>Share a process&lt;/strong> button.&lt;/p>
@@ -40,7 +40,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/change-selected-prop.jpg" alt="Edit selected shared process properties">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you click on the **Cog/Settings **button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Edit selected shared process properties"> a &lt;strong>Process properties&lt;/strong> dialog box appears, as shown above, for example Training Request properties. You can check radio buttons for:&lt;/p>
+&lt;p>If you click on the &lt;strong>Cog/Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Edit selected shared process properties"> a &lt;strong>Process properties&lt;/strong> dialog box appears, as shown above, for example Training Request properties. You can check radio buttons for:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Allow partner to create a new process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to create new process instances from the chosen shared process design. A field &lt;strong>Partner user group allowed to create new instances&lt;/strong> appears, where you can define the group(s) in the partner organisation, that can create these new process instances. If you leave the field blank, then anyone in the partner organisation can create process instances.&lt;/p>
@@ -58,10 +58,8 @@
 &lt;/li>
 &lt;li>
 &lt;p>If you click on the &lt;strong>Bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes"> then a pop-up appears to &lt;strong>Confirm removal&lt;/strong>, choose from &lt;strong>OK&lt;/strong> or &lt;strong>Cancel&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/confirm-removal.jpg" alt="Confirm removal of selected shared process">&lt;/p>
-&lt;ul>
+&lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to add further selected processes to share.&lt;/p>
 &lt;/li>
@@ -80,7 +78,7 @@
 &lt;ol start="3">
 &lt;li>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/li>
 &lt;/ol>
-&lt;h4 id="to-view-details-of-an-existing-shared--process">To view details of an existing shared process&lt;/h4>
+&lt;h3 id="to-view-details-of-an-existing-shared--process">To view details of an existing shared process&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>From the main shared processes view, click on the &lt;strong>name&lt;/strong> of a shared process.&lt;/p>
@@ -88,20 +86,20 @@
 &lt;/li>
 &lt;li>
 &lt;p>An &lt;strong>Edit Shared Process&lt;/strong> dialog box appears with the same parameters as described in the &lt;a href="#to-share-a-process">To share a process&lt;/a> section.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-shared-process.jpg" alt="Edit shared process dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the main shared processes view click on the &lt;strong>Send Update&lt;/strong> button if you want to send an update to your partner dashboard. Then in the &lt;strong>Confirm shared process update&lt;/strong> dialog box click on &lt;strong>Yes proceed&lt;/strong> to send the update or &lt;strong>Cancel&lt;/strong> to cancel sending the update.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/confirm-process-update.jpg" alt="Confirm shared process update">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes"> to delete a shared process.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/edit-shared-process.jpg" alt="Edit shared process dialog box">&lt;/p>
-&lt;ol start="3">
-&lt;li>From the main shared processes view click on the &lt;strong>Send Update&lt;/strong> button if you want to send an update to your partner dashboard. Then in the &lt;strong>Confirm shared process update&lt;/strong> dialog box click on &lt;strong>Yes proceed&lt;/strong> to send the update or &lt;strong>Cancel&lt;/strong> to cancel sending the update.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/confirm-process-update.jpg" alt="Confirm shared process update">&lt;/p>
-&lt;ol start="4">
-&lt;li>Click on the &lt;strong>Bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin button for shared processes"> to delete a shared process,&lt;/li>
-&lt;/ol>
 &lt;p>To invite partners to shared processes go to the &lt;a href="#partners">Partners&lt;/a> section.&lt;/p>
-&lt;h3 id="partners">Partners&lt;/h3>
+&lt;h2 id="partners">Partners&lt;/h2>
 &lt;p>Existing partners appear within this section in the left-hand side of the main view. Before you invite a partner create a shared process as demonstrated in the section &lt;a href="#to-share-a-process">To share a process&lt;/a>.&lt;/p>
-&lt;h4 id="to-invite-partners">To invite partners&lt;/h4>
+&lt;h3 id="to-invite-partners">To invite partners&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>To invite partners to view shared processes, click on the &lt;strong>Invite partner&lt;/strong> button.&lt;/p>
@@ -135,7 +133,7 @@
 &lt;ol start="3">
 &lt;li>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/li>
 &lt;/ol>
-&lt;h4 id="to-view-details-of-existing-partners">To view details of existing partners&lt;/h4>
+&lt;h3 id="to-view-details-of-existing-partners">To view details of existing partners&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>From the main partners view, click on the &lt;strong>name&lt;/strong> of an existing partner from the list of partners or type in the name of a partner in the &lt;strong>Search partner&lt;/strong> search box.&lt;/p>
@@ -152,10 +150,8 @@
 &lt;/li>
 &lt;li>
 &lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/p>
-&lt;/li>
-&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/confirm-process-update.jpg" alt="Confirm shared process update">&lt;/p>
-&lt;ol start="4">
+&lt;/li>
 &lt;li>
 &lt;p>From the main shared processes view click on the &lt;strong>New invite&lt;/strong> button if you want to invite a partner to a different shared process from the original one. Click on the dropdown list under &lt;strong>Shared process selection&lt;/strong> and select one of the listed shared processes. When you have made your choice, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/shared-process-selection.jpg" alt="Shared process selection">&lt;/p>
@@ -170,7 +166,7 @@
 &lt;/li>
 &lt;/ol>
 &lt;p>To edit existing partner properties, go to the &lt;a href="#partner-properties">Partner properties&lt;/a> section.&lt;/p>
-&lt;h4 id="partner-properties">Partner properties&lt;/h4>
+&lt;h3 id="partner-properties">Partner properties&lt;/h3>
 &lt;p>To add new partner properties click on the &lt;strong>Partner properties&lt;/strong> button in the main Partners view.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -185,10 +181,10 @@
 &lt;/li>
 &lt;li>
 &lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/p>
-&lt;/li>
-&lt;/ol>
 &lt;p>When a new property has been added you will receive a notification &lt;strong>Global settings updated&lt;/strong> and the attribute can be edited for partners when you click on the partner &lt;strong>name&lt;/strong> in the main view and edit the &lt;strong>Partner attributes&lt;/strong> details.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/partner-account-details-attribute.jpg" alt="Partner account details attributes">&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about creating process designs in Designer and how to use the interface to create forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Data sources</title><link>https://docs.kianda.com/docs/platform/administration/datasources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/datasources/</guid><description>
 &lt;p>The &lt;strong>Data sources&lt;/strong> function is available to administrators and those users with the role &lt;strong>Manage datasources&lt;/strong>. Data sources is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The data sources function allows you to connect your processes to external data sources like SharePoint, Salesforce or SAP.&lt;/p>
@@ -216,18 +212,88 @@
 &lt;li>REST Service&lt;/li>
 &lt;/ul>
 &lt;p>If you are a developer and want to connect to a datasource that is not included in the predefined set, you can use SOAP or REST to create your own API for data transfer.&lt;/p>
-&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
-&lt;p>To add a SharePoint data connector, the steps are:&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To start viewing existing data sources:&lt;/p>
 &lt;ol>
-&lt;li>To connect to a datasource, select &lt;strong>Administration&lt;/strong> from the left-hand side pane and then click &lt;strong>Data sources&lt;/strong>.&lt;/li>
-&lt;li>Click on &lt;strong>+ Add new&lt;/strong> button and then one of 19 data connectors, for example &lt;strong>SharePoint&lt;/strong>.&lt;/li>
-&lt;li>In the case of a SharePoint data connector, fill out the &lt;strong>Site URL&lt;/strong> and choose from options like &lt;strong>SharePoint version&lt;/strong>, &lt;strong>Scope&lt;/strong> as in, if it is a &lt;strong>Site&lt;/strong> or &lt;strong>Site Collection&lt;/strong> and &lt;strong>Authentication mode&lt;/strong>. For example, if you choose &lt;strong>System User Credentials&lt;/strong> as an authentication mode, you must provide your SharePoint system username and password.&lt;/li>
-&lt;li>Click on &lt;strong>Test connection&lt;/strong> and then &lt;strong>Save&lt;/strong>.&lt;/li>
+&lt;li>
+&lt;p>To see the datasource management function, select &lt;strong>Administration&lt;/strong> from the left-hand side pane and then click &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Any existing data sources that have been created for your workspace are shown in the main view under &lt;strong>Datasource management&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-list.jpg" alt="Existing data connectors">&lt;/p>
+&lt;p>Data sources are listed by: &lt;strong>Name&lt;/strong>, &lt;strong>Type and icon&lt;/strong>, &lt;strong>Modified&lt;/strong> (as in the date the connector was modified), &lt;strong>Modified By&lt;/strong> (the person who last made changes) and the &lt;strong>Status&lt;/strong>, for example &lt;strong>ready&lt;/strong> means the connection has been tested and is working, while &lt;strong>incomplete&lt;/strong> means that more details still need to be added.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>search&lt;/strong> for a data source, type in the name or type of data source in the &lt;strong>search box&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>delete&lt;/strong> a data source, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin/Trash button"> beside the name of the datasource. You will receive a popup asking to you to confirm deletion by clicking &lt;strong>OK&lt;/strong>, or you can exit the deletion by clicking on &lt;strong>Cancel&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>see the details&lt;/strong> of a data source, click on the &lt;strong>name&lt;/strong> of the Data source and from there you are brought to the &lt;strong>Data source details&lt;/strong> page:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-details-eg.jpg" alt="Data source details example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The details will vary depending on the data source, but there are some common elements:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong> - the name of the data source as it will display in your system. Choose something meaningful, as you will use this name in process design to connect your forms to your data source.&lt;/li>
+&lt;li>&lt;strong>Information about the data source&lt;/strong> - this could be a URL, Server name, Client ID, root folder path etc.&lt;/li>
+&lt;li>&lt;strong>Authentication details&lt;/strong> - this could be a username, password, client secret etc.&lt;/li>
+&lt;li>Option to use &lt;strong>Kianda Cloud Connect&lt;/strong> - you enable this feature and download a zip file which you can install on your server, allowing the Kianda system to reach your server and get access to data, for example SQL Server, making system integration quick and efficient.&lt;/li>
+&lt;li>&lt;strong>Test connection&lt;/strong> - all data source detail pages will allow you to test your connection using this button to ensure data exchange can happen.&lt;/li>
+&lt;li>&lt;strong>Save&lt;/strong> - at any time you can save details, even if some parameters need to be completed, allowing you to return to the configuration at any point.&lt;/li>
+&lt;li>&lt;strong>Security&lt;/strong> - all data sources can have different levels of security set up, including administrators for the connection, and users of the connection, see &lt;a href="#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/li>
+&lt;li>&lt;strong>Close&lt;/strong> - allows you to exit from the data source details page.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="how-to-create-a-new-datasource">How to create a new datasource&lt;/h2>
+&lt;p>The following uses &lt;strong>SharePoint as an example&lt;/strong> when creating a new datasource. The main steps for any datasource will be similar, that is: click on the &lt;strong>Add new&lt;/strong> button, fill out the &lt;strong>datasource details&lt;/strong> page, &lt;strong>test the connection&lt;/strong>, &lt;strong>save&lt;/strong> and &lt;strong>add security&lt;/strong>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>From the main datasource management view, click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and then one of 19 data connectors that appear, for example &lt;strong>SharePoint&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out fields in the &lt;strong>SharePoint details&lt;/strong> screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sharepoint-connector.jpg" alt="Sharepoint datasources">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Display name&lt;/strong> - the name of the data source, for example SharePoint HR&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Site URL&lt;/strong> - this is the link to your SharePoint data&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>SharePoint version&lt;/strong> - choose from a) SharePoint Online (also known as SharePoint in Microsoft 365) b) SharePoint 2016 or c) SharePoint 2013&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Scope&lt;/strong> - choose from a) Site for example a particular SharePoint website or b) Site Collection, a collection of SharePoint sites&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Authentication mode&lt;/strong> - options are a) SharePoint Online Authorisation and b) System User Credentials&lt;/p>
+&lt;p>If you choose a) SharePoint Online Authorisation then click on &lt;strong>Authorize&lt;/strong> button &lt;img src="https://docs.kianda.com/images/authorize.png" alt="Authorize button"> in this instance you will need SharePoint administration rights&lt;/p>
+&lt;p>If you choose b) System User Credentials then fill out your username and password. In this instance you do not need SharePoint administration rights.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added SharePoint details, you are ready to test your connection and add security. At the bottom of the &lt;strong>SharePoint details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button">to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the datasource management main view.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;p>Once the data connector is created, this can be used with controls like lists and rules, for example in the image below, a SalesForce data connector called &amp;lsquo;Training&amp;rsquo; has been setup within the Data sources function. Lists within SharePoint can then be linked to list fields in Kianda, by clicking on Data connector in the Edit list dialog box.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/edit-list-eg.jpg" alt="Datasource">&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about data connectors and how to use them, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Connectors&lt;/a>.&lt;/p></description></item><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/platform/administration/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/designer/</guid><description>
+&lt;p>To read more about data connectors and how to use them, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data Connectors&lt;/a>.&lt;/p></description></item><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/platform/administration/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/designer/</guid><description>
 &lt;p>Kianda &lt;strong>Designer&lt;/strong> is available to administrators and those users with the role &lt;strong>Designer&lt;/strong>. Designer is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer you can create forms, add controls and rules to create processes to work the way you want.&lt;/p>
 &lt;h3 id="how-to-get-started">How to get started&lt;/h3>
 &lt;p>To start creating a process so that Kianda Designer will open:&lt;/p>
