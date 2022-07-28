@@ -348,26 +348,77 @@
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about Designer and how to use the interface to create forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Developer</title><link>https://docs.kianda.com/docs/platform/administration/developer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/developer/</guid><description>
-&lt;p>Kianda &lt;strong>Developer&lt;/strong> is available to administrators and those users with the role &lt;strong>Developer&lt;/strong>. The Developer function is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The function allows you to create customised field, rule and dashboard widgets using pre-defined widget UI and code templates that you can add your own code to.&lt;/p>
-&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
+&lt;p>Kianda &lt;strong>Developer&lt;/strong> is available to &lt;strong>administrators&lt;/strong> and those users with the role &lt;strong>Developer&lt;/strong>. The Developer function is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The function allows you to create customised field, rule and dashboard widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.&lt;/p>
+&lt;p>You can also quickly use Kianda &lt;strong>Developer&lt;/strong> to add webhooks, providing an efficient way to push GET requests to other applications in real-time as the Kianda process(es) runs and avoiding the need to poll for data.&lt;/p>
+&lt;p>Kianda uses EmberJS to build widgets, and in particular the Handlebars templating library, to power the application&amp;rsquo;s user interface. See &lt;a href="#emberjs-templating-basics">templating basics&lt;/a> to get started.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To start using &lt;strong>Developer&lt;/strong>:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Developer&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Any customised widgets that have been created will be visible in the main widget view.&lt;/p>
+&lt;p>Any customised widgets that have been created will be visible in the &lt;strong>Developer resources&lt;/strong> main widget view.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/developer-view.jpg" alt="Developer view">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>From the widget view you can click on the &lt;strong>Version History&lt;/strong> button &lt;img src="https://docs.kianda.com/images/widget-version-history.jpg" alt="Version History button"> to view the widget creation history, or click on the &lt;strong>Edit&lt;/strong> (Pen) button &lt;img src="https://docs.kianda.com/images/widget-edit.jpg" alt="Edit widget button">, or click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/widget-delete.jpg" alt="Delete widget button"> to delete a widget. To view widget details, click on the name of a widget.&lt;/p>
+&lt;p>To view details for existing widgets, click on the widget name.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/widget-example.jpg" alt="Widget example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To create a new widget click on &lt;strong>New widget&lt;/strong>.&lt;/p>
+&lt;p>In the &lt;strong>Widget&lt;/strong> page you can update existing Widget UI and Widget Code within the editor and then click on &lt;strong>Update&lt;/strong> &lt;img src="https://docs.kianda.com/images/update-button.jpg" alt="Update button">. Alternatively click on &lt;strong>Close&lt;/strong> to exit the page at any time.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the &lt;strong>Developer resources&lt;/strong> main widget view you can:&lt;/p>
+&lt;ul>
+&lt;li>View the widget creation history by clicking on the &lt;strong>Version History&lt;/strong> button &lt;img src="https://docs.kianda.com/images/widget-version-history.jpg" alt="Version History button">&lt;/li>
+&lt;li>Edit a widget by clicking on the &lt;strong>Edit&lt;/strong> (Pen) button &lt;img src="https://docs.kianda.com/images/widget-edit.jpg" alt="Edit widget button">&lt;/li>
+&lt;li>Delete a widget by clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/widget-delete.jpg" alt="Delete widget button">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>To create a new widget click on &lt;strong>New widget&lt;/strong> &lt;img src="https://docs.kianda.com/images/new-widget-button.jpg" alt="New widget button">. This will open the &lt;strong>Edit widget&lt;/strong> dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-widget-page.jpg" alt="Edit widget example">&lt;/p>
+&lt;p>Fill out details as follows:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - fill out a title for the widget.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Unique Id&lt;/strong> - this is a unique value that is autofilled from the Title.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Widget Icon&lt;/strong> - choose an appropriate icon from the drop-down list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Widget type&lt;/strong> - choose from &lt;strong>Field&lt;/strong>, &lt;strong>Rule&lt;/strong> or &lt;strong>Dashboard widget&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Go to &lt;a href="#emberjs-templating-basics">EmberJS templating basics&lt;/a> to find out more about EmberJS to build widgets.&lt;/p>
+&lt;p>When you are finished editing the dialog box click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Webhooks&lt;/strong> to configure URLs to respond to process instance create, update and delete events.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/webhook-edit.jpg" alt="Instance Callback URLs">&lt;/p>
+&lt;ul>
+&lt;li>Move the slider across for each type of operation (Create, Update, Delete) to add in a URL to enable callback.&lt;/li>
+&lt;li>For example for &lt;strong>Enable Deleted Callback&lt;/strong>, will enable the URL callback every time a process instance is updated.&lt;/li>
+&lt;li>HTTP GET with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;code>eventType=deleted&lt;/code> will be issued to the provided URL.&lt;/li>
+&lt;li>When you are finished editing the dialog box click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit.&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;/ol>
+&lt;h2 id="emberjs-templating-basics">EmberJS templating basics&lt;/h2>
+&lt;p>With Handlebars you can quickly build web applications that are made up of different components. Handlebar templates contain static HTML and dynamic content inside Handlebars expressions, which are summoned with double curly braces: {{ }}&lt;/p>
+&lt;p>Dynamic content inside a Handlebars expression is rendered with data-binding. This means if you update a property, your usage of that property in a template will be automatically updated to the latest value.&lt;/p>
+&lt;h3 id="helpers">Helpers&lt;/h3>
+&lt;p>Ember gives the ability to write your helpers, to bring a minimum of logic into Ember templating. For example, let&amp;rsquo;s say you would like the ability to add a few numbers together, without needing to define a computed property everywhere you would like to do so.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Helper example&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/write-our-own-helpers.png" alt="Helpers">&lt;/p>
+&lt;h4 id="conditionals">Conditionals&lt;/h4>
+&lt;p>Statements like &lt;strong>if&lt;/strong> and &lt;strong>unless&lt;/strong> are implemented as built-in helpers. Helpers can be invoked three ways; inline invocation, nested invocation and block invocation. For more details, go to: &lt;a href="https://guides.emberjs.com/v2.18.0/templates/conditionals/">https://guides.emberjs.com/v2.18.0/templates/conditionals/&lt;/a>.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about Developer and how to use the interface to low-code development.&lt;/p></description></item><item><title>Docs: Recycle bin</title><link>https://docs.kianda.com/docs/platform/administration/recyclebin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/recyclebin/</guid><description>
+&lt;p>To read more about Developer and how to use the platform for low-code development, go to &lt;a href="https://docs.kianda.com/docs/low-code/">Low code development&lt;/a>.&lt;/p></description></item><item><title>Docs: Recycle bin</title><link>https://docs.kianda.com/docs/platform/administration/recyclebin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/recyclebin/</guid><description>
 &lt;p>The &lt;strong>Recycle bin&lt;/strong> function is available to administrators and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The recycle bin holds deleted process instances, dashboard pages and process designs. Deleted items are held for 30 days and are permanently deleted after this time.&lt;/p>
 &lt;h3 id="how-to-get-started">How to get started&lt;/h3>
 &lt;p>To view items in the Recycle bin:&lt;/p>
