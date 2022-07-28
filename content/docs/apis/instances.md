@@ -1,6 +1,6 @@
 ---
-title: "Instances API"
-linkTitle: "Instances API"
+title: "Instances"
+linkTitle: "Instances"
 weight: 1
 typora-root-url: ..\..\..\static
 ---
