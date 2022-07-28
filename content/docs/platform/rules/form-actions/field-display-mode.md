@@ -23,13 +23,13 @@ To showcase the **Field display mode** in action, we will change the display mod
 
 To implement the rule:
 
-1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](http://localhost:1313/images/penicon.png).
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
 
 2. Click on **Add a rule** > **Form actions** > **Field display mode**.
 
 3. In the **Edit rule - Field display mode** dialog box, give the rule a title in the **Title** field.
 
-4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](http://localhost:1313/docs/platform/rules/general/add-conditions/) for more details.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
 5. To demonstrate how this rule works, we will add a condition to a field. Select the field you want the condition to be applied to. In this example it is the **Employee** field.
 
@@ -48,9 +48,11 @@ To implement the rule:
 
    ![Edit rule dialog box](/images/examples-field-display-mode-fields.jpg)
 
-The video below demonstrates the **Field Display mode** rule in action, where the **Employee** field becomes **Read mode** after a user is selected. The **Date** field which was not editable changes to **Edit mode** after a user is selected. This is achieved by applying a condition to the **Employee** field. The condition checks if the **Employee** field is **Not blank**, therefore when a user has been selected this condition is valid, activating the **Field Display mode** rule.
+	The video below demonstrates the **Field Display mode** rule in action, where the **Employee** field becomes **Read mode** after a user is selected. The 	**Date** field which was not editable changes to **Edit mode** after a user is selected. This is achieved by applying a condition to the **Employee** field. The condition checks if the **Employee** field is **Not blank**, therefore when a user has been selected this condition is valid, activating the **Field Display mode** rule.
 
 <img src="/videos/gifs/examples/field-display-mode/field-display-mode2.gif"/>
+
+
 
 ### Editing, deleting or duplicating rules
 
@@ -58,17 +60,19 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 1. To **disable** a rule click the slider across beside the rule name. 
 
-![Disable a rule](/images/disable-rule.jpg)
-
 2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg)beside the rule name. 
 
 3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 
 4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
 
+   
+
 ### User tip ![Target icon](/images/05.png)
 
--  Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.
+- Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.
+
+  
 
 ### What's next ![Idea icon](/images/18.png) 
 

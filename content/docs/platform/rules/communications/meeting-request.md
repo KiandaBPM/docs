@@ -42,53 +42,51 @@ In advance of using this rule, you need to have **created one or more forms, com
 
 2. In the left-hand side pane, click on **Add a rule** > **Communications** > **Meeting request rule**.
 
-3. In the **Meeting request** dialog box, S
+3. In the **Edit rule - Meeting request** dialog box, fill out the following details:
 
-   1. **Title** - of the email for example 'Send meeting request'
+   ![Edit rule Meeting request dialog box](/images/meeting-request-rule.jpg)
 
-   2. **Edit conditions** - click on **Edit conditions** ![Edit conditions button](/images/editconditions.png) to set conditions for sending an email, for example while a process has a 'status' of 'open', send reminder emails. To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
+   - **Title** - of the email for example 'Send meeting request'
+   - **Edit conditions** - click on **Edit conditions** ![Edit conditions button](/images/editconditions.png) to set conditions for sending an email, for example while a process has a 'status' of 'open', send reminder emails. To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
+   - **Start time** - select a pre-defined date field from your form. This is a **required** field.
+   - **End time** -  select a pre-defined date field from your form. This is a **required** field.
+   - **From** - who the email is from, click on **Person** button ![Person button](/images/person.png) and choose from the appropriate **Selection mode**, see [Selection mode](/docs/platform/rules/communications/send-email/#selection-mode) below.
 
-   3. **Start time** - select a pre-defined date field from your form. This is a **required** field.
+   **Warning** 
 
-   4. **End time** -  select a pre-defined date field from your form. This is a **required** field.
+   *If you add an email address to the **From** field, you must specify an Email connector, see [Email connector](/docs/platform/rules/communications/send-email/#email-connector). If a connector is not specified, the emails will come from noreply@kianda.com. If a Global SMTP connector is configured, all emails will be sent from the global connector.*
 
-   5. **From** - who the email is from, click on **Person** button ![Person button](/images/person.png) and choose from the appropriate **Selection mode**, see [Selection mode](/docs/platform/rules/communications/send-email/#selection-mode) below.
+   - **To** - who the email is to, click on **Person** button ![Person button](/images/person.png) and choose from the appropriate Selection mode, see [Selection mode](/docs/platform/rules/communications/send-email/#selection-mode) below. This is a **required **field.
+   - **BCC** - who will be blind copied on the email, as with **To** field.
+   - **Subject** - type in your email subject and click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, go to [Expression builder](/docs/platform/rules/general/expression-builder/) for more information. This is a **required **field.
+   - **Body** - choose from an array of styles and formats to create your email including **Style,** **Colour**, **Font  size**, **Remove font style**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, **Table**, **Link**, **Picture**, **Attach a File** and **Code view**. For example if you click on **Code view** button ![Code view button](/images/code.png) you can copy HTML code directly into the body text. This is a **required** field.
 
-      **Warning** 
+   ![Body of email](/images/meeting-request-body.jpg)
 
-      *If you add an email address to the **From** field, you must specify an Email connector, see [Email connector](/docs/platform/rules/communications/send-email/#email-connector). If a connector is not specified, the emails will come from noreply@kianda.com. If a Global SMTP connector is configured, all emails will be sent from the global connector.*
+   
 
-   6. **To** - who the email is to, click on **Person** button ![Person button](/images/person.png) and choose from the appropriate Selection mode, see [Selection mode](/docs/platform/rules/communications/send-email/#selection-mode) below. This is a **required **field.
+   ​		To find out more about how to attach a file, see [Attachments](/docs/platform/rules/communications/send-email/#attachments) for more details.
 
-   7. **BCC** - who will be blind copied on the email, as with **To** field.
+   ​		To add a message to your email, click on the **Body** text box. You can personalise automated emails using fields from the process by clicking on 		the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, see [Expression builder](/docs/platform/rules/general/expression-builder/) for more details. 
 
-   8. **Subject** - type in your email subject and click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, go to [Expression builder](/docs/platform/rules/general/expression-builder/) for more information. This is a **required **field.
+   - **Send via connector** - options are a) No or b) Yes 
 
-   9. **Body** - choose from an array of styles and formats to create your email including **Style,** **Colour**, **Font  size**, **Remove font style**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, **Table**, **Link**, **Picture**, **Attach a File** and **Code view**. For example if you click on **Code view** button ![Code view button](/images/code.png) you can copy HTML code directly into the body text. This is a **required** field.
+     - If you choose **Yes** then you must choose an **Email connector** and decide if you want to **Save Sent Items** (Yes or No) which means sent emails are saved in a sent items folder in your email account. For more information go to [Email connector](/docs/platform/rules/communications/send-email/#email-connector)
+       ![Email connector options](/images/send-email-connector-yes.jpg)
 
-      ![Body of email](/images/meeting-request-body.jpg)
+     - Note that if **Global SMTP Mail connector** has been configured, all emails sent will use the Global connector settings instead, including no-reply@kianda.como find out more, go to [Setting up a Global SMTP mail connector](/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector). 
 
-      
+   - **Enable tracking** - options are a) No or b) Yes 
 
-      To find out more about how to attach a file, see [Attachments](/docs/platform/rules/communications/send-email/#attachments) for more details.
+        - Note that this option is only available if **Send via connector** is set to **No** and the email is being sent from noreply@kianda.com. 
 
-      To add a message to your email, click on the **Body** text box. You can personalise automated emails using fields from the process by clicking on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, see [Expression builder](/docs/platform/rules/general/expression-builder/) for more details. 
 
-   10. **Send via connector** - options are a) No or b) Yes 
+        - If you choose **Yes** then you must click into the field under **Field to store tracking event (Open, Click, Bounce, Spam)** and choose a field from a form to store the event.
 
-       - If you choose **Yes** then you must choose an **Email connector** and decide if you want to **Save Sent Items** (Yes or No) which means sent emails are saved in a sent items folder in your email account. For more information go to [Email connector](/docs/platform/rules/communications/send-email/#email-connector)
-         ![Email connector options](/images/send-email-connector-yes.jpg)
-       - Note that if **Global SMTP Mail connector** has been configured, all emails sent will use the Global connector settings instead, including no-reply@kianda.como find out more, go to [Setting up a Global SMTP mail connector](/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector). 
+          ![Enable tracking](/images/send-email-tracking.jpg)
 
-   11. **Enable tracking** - options are a) No or b) Yes 
+        * This option allows you to track the email after it is sent. All of these events, Open, Click, Bounce and Spam will be tracked.
 
-      - Note that this option is only available if **Send via connector** is set to **No** and the email is being sent from noreply@kianda.com. 
-
-      - If you choose **Yes** then you must click into the field under **Field to store tracking event (Open, Click, Bounce, Spam)** and choose a field from a form to store the event.
-
-        ![Enable tracking](/images/send-email-tracking.jpg)
-
-      * This option allows you to track the email after it is sent. All of these events, Open, Click, Bounce and Spam will be tracked.
 
    11. Click on **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 
@@ -157,9 +155,10 @@ In advance of using this rule, you need to have **created one or more forms, com
 
      ![Form owner of selected form](/images/send-email-form-owner.jpg)
 
-   4. **Email address in a field** - With this option selected, by clicking into the field under **Type the address or select from a field**, you can either type in an email address manually or choose from a field within the process you are working in.
+- **Email address in a field** - With this option selected, by clicking into the field under **Type the address or select from a field**, you can either type in an email address manually or choose from a field within the process you are working in.
 
-      ![select email users](/images/send-email-email-address.jpg)
+
+![select email users](/images/send-email-email-address.jpg)
 
    In all cases when you have made your selection, click on **OK** button to save your changes or click on **Close** to exit the dialog box without saving.
 

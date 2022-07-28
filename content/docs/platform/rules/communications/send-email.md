@@ -68,13 +68,14 @@ In advance of using this rule, you need to have **created one or more forms, com
 
       To add a message to your email, click on the **Body** text box. You can personalise automated emails using fields from the process by clicking on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, see [Expression builder](/docs/platform/rules/general/expression-builder/) for more details. 
 
-   9. **Send via connector** - options are a) No or b) Yes 
+   9. **Send via connector** - options are a) **No** or b) **Yes** 
 
-      - If you choose **Yes** then you must choose an **Email connector** and decide if you want to **Save Sent Items** (Yes or No) which means sent emails are saved in a sent items folder in your email account. For more information go to [Email connector](/docs/platform/rules/communications/send-email/#email-connector)
+      If you choose **Yes** then you must choose an **Email connector** and decide if you want to **Save Sent Items** (Yes or No) which means sent emails are saved in a sent items folder in your email account. For more information go to [Email connector](/docs/platform/rules/communications/send-email/#email-connector)
       ![Email connector options](/images/send-email-connector-yes.jpg)
-      - Note that if **Global SMTP Mail connector** has been configured, all emails sent will use the Global connector settings instead, including no-reply@kianda.como find out more, go to [Setting up a Global SMTP mail connector](/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector). 
    
-   10. **Enable tracking** - options are a) No or b) Yes 
+      Note that if **Global SMTP Mail connector** has been configured, all emails sent will use the Global connector settings instead, including no-reply@kianda.como find out more, go to [Setting up a Global SMTP mail connector](/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector). 
+   
+   10. **Enable tracking** - options are a) **No** or b) **Yes** 
    
       - Note that this option is only available if **Send via connector** is set to **No** and the email is being sent from noreply@kianda.com. 
    
@@ -89,9 +90,10 @@ In advance of using this rule, you need to have **created one or more forms, com
    12. Note when your rule is complete you may want to change the order of rules for the particular field or form that it has been applied to. Drag the new Send email rule to where you want, so the order of execution of rules is correct. 
    
        For example for a Submit button on a form I may want my **Send email rule** to be executed first before any other rule is executed. To do this click on the **Submit** button to make sure you are in **Edit** mode, and under **Rules** in the right-hand pane,  drag the **Send email** rule to the top of the list by clicking on the rule and dragging it.
+       
        ![Rule order](/images/ruleorder.png)
        
-       For more information on rules, see [Rules](rules/Readme.md).
+       For more information on rule order, see [Rules](rules/Readme.md).
 
 
 ### Email connector ###
@@ -151,9 +153,10 @@ When you are filling out the **To**, **From**, **CC** or **BCC** fields and clic
 
   ![Form owner of selected form](/images/send-email-form-owner.jpg)
 
-4. **Email address in a field** - With this option selected, by clicking into the field under **Type the address or select from a field**, you can either type in an email address or choose from a field within the process you are working in.
+- **Email address in a field** - With this option selected, by clicking into the field under **Type the address or select from a field**, you can either type in an email address or choose from a field within the process you are working in.
 
-   ![select email users](/images/send-email-email-address.jpg)
+
+![select email users](/images/send-email-email-address.jpg)
 
 In all cases when you have made your selection, click on **OK** button to save your changes or click on **Close** to exit the dialog box without saving.
 

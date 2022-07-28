@@ -182,17 +182,29 @@ in this section you can make the following changes:
 
 In this section you can make the following changes:
 
-- **Enable Global SMTP Mail Connector** - set a global SMTP connector used to send emails. The global connector will ignore all other connectors and will no longer use no-reply@kianda.com as a sender. To learn more about email connector and how to set up a SMTP, go to [Email connector](/docs/platform/connectors/email/).
+- **Enable Global SMTP Mail Connector** - click on **Yes** to set a global Simple Mail Transfer Protocol (SMTP) connector used to send emails. 
+
+  The global connector will ignore all other connectors and will no longer use no-reply@kianda.com as a sender. To enable this you must have an email connector set up in advance. To learn more about email connectors go to [Email connector](/docs/platform/connectors/email/).
+
+  In addition you can choose **Yes** for **Enable save to Sent Items** so that sent email are automatically saved in a 'Sent items folder'.
+
+  ![Enabling Global SMTP Mail Connector](/images/global-smtp-email-connector.jpg)
+
 - **Global Administrator** - change the global administrator of your company's Kianda platform from the list of users that are in it.
-- **Global JavaScript** - allows you to create a JavaScript file with custom functions as helper or action functions allowing you to perform any functionality you may want. The file is accessible globally and will load when the application first starts. 
+
+- **Global JavaScript** - allows you to create a JavaScript file with custom functions as helper or action functions allowing you to perform any functionality you may want. The file is accessible globally and will load when the application first starts. Go to [Global JavaScript file](/docs/low-code/global-javascript-file/) for more details.
+
+When you are finished making changes click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
+
+
 
 ## Single Sign-On (SSO)
 
-Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. To enable Single-Sign-On, please follow the below steps:
+Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. When you click on **Single Sign-On** in **Subscription** page you are brought to the **Single Sign-on Details** page. See [Single Sign On][/docs/security/sso/] for more details.
 
-As an administrator, go to the left-hand pane and click on Administration > Subscription > Single Sign-on.
-Click the radio button for ‘Enable Single-Sign-On’ Yes.
-Select an SSO Provider from the list provided.
+![Single Sign-On Details](/images/single-sign-on-details.jpg)
+
+
 
 At any time, you can go to Side menu > Subscription to edit any of these settings or to manage Subscription Details, Payment Details and Single Sign-on.
 
