@@ -5,7 +5,7 @@ typora-root-url: ..\..\..\..\static
 
 **B2B Portals** is available within the **Invite partners** function and available to administrators and those users with the role **Manage partners**. **Invite partners** is found in the left-hand side pane, under **Administration**. The function allows you to share business processes processes to select business partners as external links.
 
-### How to get started
+## How to get started
 
 To access B2B portals:
 
@@ -21,11 +21,11 @@ To access B2B portals:
 
    
 
-### Shared processes
+## Shared processes
 
 Existing shared processes appear within this section in the right-hand side of the main view. Before you invite a partner you must choose a process to share from within this section first. 
 
-#### To share a process
+### To share a process
 
 1. To share a process with a business partner, click on the **Share a process** button. 
 
@@ -45,7 +45,7 @@ The fields in this box are:
 
   ![Edit selected shared process properties](/images/change-selected-prop.jpg)
 
-- If you click on the **Cog/Settings **button ![Edit selected shared process properties](/images/cog-shared-process.jpg) a **Process properties** dialog box appears, as shown above, for example Training Request properties. You can check radio buttons for:
+- If you click on the **Cog/Settings** button ![Edit selected shared process properties](/images/cog-shared-process.jpg) a **Process properties** dialog box appears, as shown above, for example Training Request properties. You can check radio buttons for:
 
   - **Allow partner to create a new process instance** - choose from **Yes** or **No**. If you choose **Yes**, then you are allowing invited partner(s) to create new process instances from the chosen shared process design. A field **Partner user group allowed to create new instances** appears, where you can define the group(s) in the partner organisation, that can create these new process instances. If you leave the field blank, then anyone in the partner organisation can create process instances.
 
@@ -57,7 +57,7 @@ The fields in this box are:
 
 - If you click on the **Bin/trash** button ![Bin button for shared processes](/images/bin-shared-process.jpg) then a pop-up appears to **Confirm removal**, choose from **OK** or **Cancel**. 
 
-![Confirm removal of selected shared process](/images/confirm-removal.jpg)
+	![Confirm removal of selected shared process](/images/confirm-removal.jpg)
 
 -  Click on the **Tick symbol** ![Edit selected shared  process](/images/edit-selected-process.jpg) to add further selected processes to share.
 
@@ -73,7 +73,7 @@ The fields in this box are:
    
 
 
-#### To view details of an existing shared  process
+### To view details of an existing shared  process
 
 1. From the main shared processes view, click on the **name** of a shared process.
 
@@ -81,24 +81,24 @@ The fields in this box are:
 
 2. An **Edit Shared Process** dialog box appears with the same parameters as described in the [To share a process](#to-share-a-process) section.
 
-![Edit shared process dialog box](/images/edit-shared-process.jpg)
+	![Edit shared process dialog box](/images/edit-shared-process.jpg)
 
 3. From the main shared processes view click on the **Send Update** button if you want to send an update to your partner dashboard. Then in the **Confirm shared process update** dialog box click on **Yes proceed** to send the update or **Cancel** to cancel sending the update.
 
-![Confirm shared process update](/images/confirm-process-update.jpg)
+	![Confirm shared process update](/images/confirm-process-update.jpg)
 
-4. Click on the **Bin/trash** button ![Bin button for shared processes](/images/bin-shared-process.jpg) to delete a shared process, 
+4. Click on the **Bin/trash** button ![Bin button for shared processes](/images/bin-shared-process.jpg) to delete a shared process.
 
 
 To invite partners to shared processes go to the [Partners](#partners) section.
 
 
 
-### Partners
+## Partners
 
 Existing partners appear within this section in the left-hand side of the main view. Before you invite a partner create a shared process as demonstrated in the section [To share a process](#to-share-a-process).
 
-#### To invite partners
+### To invite partners
 
 1. To invite partners to view shared processes, click on the **Invite partner** button. 
 
@@ -124,7 +124,7 @@ Existing partners appear within this section in the left-hand side of the main v
 
    
 
-#### To view details of existing partners
+### To view details of existing partners
 
 1. From the main partners view, click on the **name** of an existing partner from the list of partners or type in the name of a partner in the **Search partner** search box.
 
@@ -141,7 +141,7 @@ Existing partners appear within this section in the left-hand side of the main v
 
 3. When you are finished editing the dialog box, click on **OK**, or else click on **Close** to exit the dialog box at any stage. 
 
-![Confirm shared process update](/images/confirm-process-update.jpg)
+	![Confirm shared process update](/images/confirm-process-update.jpg)
 
 4. From the main shared processes view click on the **New invite** button if you want to invite a partner to a different shared process from the original one. Click on the dropdown list under **Shared process selection** and select one of the listed shared processes. When you have made your choice, click on **OK**, or else click on **Close** to exit the dialog box at any stage. 
 
@@ -163,7 +163,7 @@ To edit existing partner properties, go to the [Partner properties](#partner-pro
 
 
 
-#### Partner properties
+### Partner properties
 
 To add new partner properties click on the **Partner properties** button in the main Partners view.
 
@@ -177,9 +177,9 @@ To add new partner properties click on the **Partner properties** button in the 
 
 4. When you are finished editing the dialog box, click on **OK**, or else click on **Close** to exit the dialog box at any stage. 
 
-When a new property has been added you will receive a notification **Global settings updated** and the attribute can be edited for partners when you click on the partner **name** in the main view and edit the **Partner attributes** details.
+	When a new property has been added you will receive a notification **Global settings updated** and the attribute can be edited for partners when you click on the partner **name** in the main view and edit the **Partner attributes** details.
 
-  ![Partner account details attributes](/images/partner-account-details-attribute.jpg)
+  	![Partner account details attributes](/images/partner-account-details-attribute.jpg)
 
 
 

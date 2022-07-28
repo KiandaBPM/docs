@@ -10,7 +10,7 @@ In your company's Kianda platform you can connect an emailing service such as Ou
 
 1. From the Kianda home page, click on **Administration** > **Data sources**.
 
-2. Click on **+ Add new** button ![Add new data connector button](http://localhost:1313/images/addnew.png) and choose **Email** from the list of data sources provided.
+2. Click on **+ Add new** button ![Add new data connector button](/images/addnew.png) and choose **Email** from the list of data sources provided.
 
 3. You will be automatically brought to the **Email connection details** page where we can start setting up the email connector.
 
