@@ -150,7 +150,7 @@
 &lt;li>Append - will add any duplicate data to the table and therefore all occurrence of data will be displayed in the table.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Enable server paging&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>Enable server paging&lt;/strong> - enables the server paging configurations. For example if your data source has 10 row per page, enabling this option will force the table to have 10 rows per page.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
