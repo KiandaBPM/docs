@@ -47,6 +47,8 @@ You can add this rule:
 
 9. **On error mapping** - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to [Success/Error Mapping](/docs/platform/rules/general/success-error-mapping/).
 
+10. **Ignore mapping for blank fields** - used to check if there are any blank field that need to be updated on the datasource. For example, if there are two fields to be updated and the user wants to update only one, and leaves the other blank, then the filled out field is updated and the other field is left unchanged.
+
 ### Editing, deleting or duplicating rules
 
 When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
@@ -61,3 +63,6 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 To find out more about other Data rules go to [Data rules](/docs/platform/rules/data/).
 
 To find out more about other rules go to [Rules](/docs/platform/rules/).
+
+
+
