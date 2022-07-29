@@ -2,6 +2,7 @@
 title: "Find items data rule"
 linkTitle: "Find items"
 typora-root-url: ..\..\..\..\..\static
+weight: 2
 ---
 
 ## Introduction
@@ -10,7 +11,7 @@ This rule implements the Read function which is one of the four CRUD functions. 
 
 This rule is used to find an item from your data-connections. To find an item, you could use a data source filter which acts as a conditional bridge between Kianda and data-connections. If the condition is true, you could map the data source field or text to the Kianda form field.
 
-This rule is used to perform a query and return data for use in the form.  The data may be stored locally or in one of the data sources
+This rule is used to perform a query and return data for use in the form. The data may be stored locally or in one of the data sources
 
 The Data source filter is useful when you want to query data from a specific user using a unique identifier like an Id, name or email.
 

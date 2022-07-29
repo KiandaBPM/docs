@@ -2,6 +2,7 @@
 title: "Set form field rule"
 linkTitle: "Set form field"
 typora-root-url: ..\..\..\..\..\static
+weight: 1
 ---
 
 This rule is used to set the value of a field (or fields) in a form. You can also use this rule to copy content between fields or to apply an expression to a given field. 	

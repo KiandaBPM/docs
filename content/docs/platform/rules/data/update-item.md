@@ -2,6 +2,7 @@
 title: "Update data item rule"
 linkTitle: "Update item"
 typora-root-url: ..\..\..\..\..\static
+weight: 4
 ---
 
 ## Introduction

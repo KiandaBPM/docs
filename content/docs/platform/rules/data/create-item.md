@@ -2,6 +2,7 @@
 title: "Create data item rule"
 linkTitle: "Create item"
 typora-root-url: ..\..\..\..\..\static
+weight: 3
 ---
 
 ## Introduction

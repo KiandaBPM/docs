@@ -2,6 +2,7 @@
 title: "Delete data item rule"
 linkTitle: "Delete item"
 typora-root-url: ..\..\..\..\..\static
+weight: 5
 ---
 
 ## Introduction
