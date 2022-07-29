@@ -1042,8 +1042,8 @@ The Safety Team
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Set form field rule</title><link>https://docs.kianda.com/docs/platform/rules/data/set-form-field/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/set-form-field/</guid><description>
-&lt;p>This rule is used to set the value of a field (or fields) in a form. You can also use this rule to copy content between fields or to apply an expression to a given field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/setformfield.png" alt="Set form field dialog box">&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>With the &lt;strong>Set form field&lt;/strong> rule you have the ability to select a field within your process and give it a value using plain text or an expression. With this rule you can also set multiple fields at once by adding more fields to the value mapping.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -1051,53 +1051,41 @@ The Safety Team
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h2 id="how-to-use">How to use&lt;/h2>
-&lt;p>Some examples of the usage of this rule are given below.&lt;/p>
-&lt;p>&lt;strong>To set the value of a field:&lt;/strong>&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
-&lt;li>Before adding the rule, add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to Status.&lt;/li>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
-&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
-&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>To empty a field:&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
-&lt;li>Under Form field to set, select the field to be emptied.&lt;/li>
-&lt;li>Under Value or expression, add a few characters and then delete them all. If you skip this step, then you will get an error message because this is a mandatory field.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>To copy content between fields:&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>Find two fields on the current form where one field is the source of the content and the other field is the destination for the content.&lt;/li>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field&lt;/li>
-&lt;li>Under Form field to set, select the destination field.&lt;/li>
-&lt;li>Under Value or expression, select the source field.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>To add two values together (using an expression):&lt;/strong>&lt;/p>
-&lt;ol>
-&lt;li>Before adding the rule, add three number fields: Click on Controls &amp;gt; Input &amp;gt; Number and drag a number field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title of the field to First Number. Change the Name(unique) to firstNumber. Repeat for Second Number and Result.&lt;/li>
-&lt;li>Select the Second Number field.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
-&lt;li>Under Form field to set, select the Result field.&lt;/li>
-&lt;li>Under Value or expression, open the Expression builder by clicking on the button with 3 black dots.&lt;/li>
-&lt;li>In the Expression builder:
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Data&lt;/strong> &amp;gt; &lt;strong>Set form field&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Set form field&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/set-field-edit-rule.jpg" alt="Edit rule - Set form field dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Field value mapping&lt;/strong> section, you can select which fields to set and what values to give them. You can do that with the following fields:&lt;/p>
 &lt;ul>
-&lt;li>Click on Reference to view all of the options. Mathematical operations such as &amp;lsquo;+&amp;rsquo; are available.&lt;/li>
-&lt;li>Under Add field to expression, select the First Number field. Click on Add to Expression.&lt;/li>
-&lt;li>In the Expression window, enter the &amp;lsquo;+&amp;rsquo; symbol.&lt;/li>
-&lt;li>Under Add field to expression, select the Second Number field. Click on Add to Expression.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
+&lt;li>&lt;strong>Form field to set&lt;/strong> - this dropdown list is used to select a field from within your process that you want to set.&lt;/li>
+&lt;li>&lt;strong>Value or expression&lt;/strong> - in this field you can type in text manually which is used as the value to be set in the above field. To make this rule dynamic and use other fields as values, you can use expressions. To learn more about expressions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder/">Expression builder&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Add mapping&lt;/strong> - you can choose to set multiple fields in your process by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Under Value or expression, check the expression is [firstNumber] + [secondNumber].&lt;/li>
-&lt;li>Click on OK.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Shared processes</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Shared processes</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>A &lt;strong>Shared Process&lt;/strong> is a &lt;strong>process&lt;/strong> which you create within your own subscription with the intention to share with your B2B Portal. This &lt;strong>process&lt;/strong>, as with all &lt;strong>processes&lt;/strong>, can be used to review data, create new instances, update or delete instances.&lt;/p>
 &lt;p>Within a shared process, you can also create a &lt;strong>Shared Dashboard&lt;/strong> which is a dashboard created within your own subscription with the intention to share with your B2B Portal. This &lt;strong>dashboard&lt;/strong>, as with all dashboards, can be used to review data, access &lt;strong>Shared Processes&lt;/strong> by creating new instances, updating or deleting instances.&lt;/p>
