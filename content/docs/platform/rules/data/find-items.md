@@ -48,7 +48,7 @@ You can add this rule:
      - **Select a table** - allow you to select a table from within your process which will be populated by mapping. This is useful when you want to display a lot of data from the datasource.
      - **Existing rows behaviour**:
        -  **Override** - will override any duplicate date therefore will keep the last duplicate inside of the table.
-       - Append - will add any duplicate data to the table and therefore all occurrence of data will be displayed in the table.
+       - **Append** - will add any duplicate data to the table and therefore all occurrence of data will be displayed in the table.
      - **Enable server paging** - enables the server paging configurations. For example if your data source has 10 row per page, enabling this option will force the table to have 10 rows per page.
 
    - **No** - selecting this option will only pull the first occurrence from your data source.
