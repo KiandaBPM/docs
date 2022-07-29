@@ -5,59 +5,49 @@ typora-root-url: ..\..\..\..\..\static
 weight: 1
 ---
 
-This rule is used to set the value of a field (or fields) in a form. You can also use this rule to copy content between fields or to apply an expression to a given field. 	
+## Introduction
 
-![Set form field dialog box](/images/setformfield.png)
+With the **Set form field** rule you have the ability to select a field within your process and give it a value using plain text or an expression. With this rule you can also set multiple fields at once by adding more fields to the value mapping.
 
 ## When to use 
+
 You can add this rule:
 - [x] to a field
 - [x] to a form 
 - [x] to a process (the rule will run on load)
 
-## How to use
-Some examples of the usage of this rule are given below.
+## How to get started
 
-**To set the value of a field:**
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
 
-1. Before adding the rule, add a text field: Click on Controls > Input > Text and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to Status. 
-2. Select the Submit button.
-3. Add a rule > Data > Set form field.
-4. Under Form field to set, select the new field called Status.
-5. Under Value or expression, enter the status e.g. Complete.
-6. Click on OK.
+2. Click on **Add a rule** > **Data** > **Set form field**.
 
-**To empty a field:**
-1. Select the Submit button.
-2. Add a rule > Data > Set form field.
-3. Under Form field to set, select the field to be emptied.
-4. Under Value or expression, add a few characters and then delete them all. If you skip this step, then you will get an error message because this is a mandatory field.
-5. Click on OK.
+3. In the **Edit rule - Set form field** dialog box, give the rule a title in the **Title** field.
 
-**To copy content between fields:**
+   ![Edit rule - Set form field dialog box](/images/set-field-edit-rule.jpg)
 
-1. Find two fields on the current form where one field is the source of the content and the other field is the destination for the content.
-2. Select the Submit button.
-3. Add a rule > Data > Set form field
-4. Under Form field to set, select the destination field.
-5. Under Value or expression, select the source field.
-6. Click on OK.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png), see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-**To add two values together (using an expression):**
+5. In the **Field value mapping** section, you can select which fields to set and what values to give them. You can do that with the following fields:
 
-1. Before adding the rule, add three number fields: Click on Controls > Input > Number and drag a number field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title of the field to First Number.  Change the Name(unique)  to firstNumber. Repeat for Second Number and Result.
-2. Select the Second Number field.
-3. Add a rule > Data > Set form field.
-4. Under Form field to set, select the Result field.
-5. Under Value or expression, open the Expression builder by clicking on the button with 3 black dots.
-6. In the Expression builder:
-   - Click on Reference to view all of the options.  Mathematical operations such as '+' are available.  
-   - Under Add field to expression, select the First Number field.  Click on Add to Expression. 
-   - In the Expression window, enter the '+' symbol. 
-   - Under Add field to expression, select the Second Number field.  Click on Add to Expression.  
-   - Click on OK.
-7. Under Value or expression, check the expression is [firstNumber] + [secondNumber].
-8. Click on OK.
+   - **Form field to set** - this dropdown list is used to select a field from within your process that you want to set.
+   - **Value or expression** - in this field you can type in text manually which is used as the value to be set in the above field. To make this rule dynamic and use other fields as values, you can use expressions. To learn more about expressions go to [Expression builder](/docs/platform/rules/general/expression-builder/).
+   - **Add mapping** - you can choose to set multiple fields in your process by clicking on **Add mapping** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png).
+
+### Editing, deleting or duplicating rules
+
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
+
+1. To **disable** a rule click the slider across beside the rule name.
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name.
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+
+### What’s next ![Idea icon](/images/18.png)
+
+To find out more about other Data rules go to [Data rules](/docs/platform/rules/data/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).
 
 
 
