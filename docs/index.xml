@@ -1041,7 +1041,63 @@ The Safety Team
 &lt;p>&lt;img src="https://docs.kianda.com/images/send-email-attachment.jpg" alt="Send email dialog box - attachment section">&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Shared processes</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Set form field rule</title><link>https://docs.kianda.com/docs/platform/rules/data/set-form-field/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/set-form-field/</guid><description>
+&lt;p>This rule is used to set the value of a field (or fields) in a form. You can also use this rule to copy content between fields or to apply an expression to a given field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/setformfield.png" alt="Set form field dialog box">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
+&lt;p>Some examples of the usage of this rule are given below.&lt;/p>
+&lt;p>&lt;strong>To set the value of a field:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Before adding the rule, add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to Status.&lt;/li>
+&lt;li>Select the Submit button.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
+&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
+&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>To empty a field:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Select the Submit button.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
+&lt;li>Under Form field to set, select the field to be emptied.&lt;/li>
+&lt;li>Under Value or expression, add a few characters and then delete them all. If you skip this step, then you will get an error message because this is a mandatory field.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>To copy content between fields:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Find two fields on the current form where one field is the source of the content and the other field is the destination for the content.&lt;/li>
+&lt;li>Select the Submit button.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field&lt;/li>
+&lt;li>Under Form field to set, select the destination field.&lt;/li>
+&lt;li>Under Value or expression, select the source field.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>To add two values together (using an expression):&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Before adding the rule, add three number fields: Click on Controls &amp;gt; Input &amp;gt; Number and drag a number field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title of the field to First Number. Change the Name(unique) to firstNumber. Repeat for Second Number and Result.&lt;/li>
+&lt;li>Select the Second Number field.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
+&lt;li>Under Form field to set, select the Result field.&lt;/li>
+&lt;li>Under Value or expression, open the Expression builder by clicking on the button with 3 black dots.&lt;/li>
+&lt;li>In the Expression builder:
+&lt;ul>
+&lt;li>Click on Reference to view all of the options. Mathematical operations such as &amp;lsquo;+&amp;rsquo; are available.&lt;/li>
+&lt;li>Under Add field to expression, select the First Number field. Click on Add to Expression.&lt;/li>
+&lt;li>In the Expression window, enter the &amp;lsquo;+&amp;rsquo; symbol.&lt;/li>
+&lt;li>Under Add field to expression, select the Second Number field. Click on Add to Expression.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Under Value or expression, check the expression is [firstNumber] + [secondNumber].&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Shared processes</title><link>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/shared-process/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>A &lt;strong>Shared Process&lt;/strong> is a &lt;strong>process&lt;/strong> which you create within your own subscription with the intention to share with your B2B Portal. This &lt;strong>process&lt;/strong>, as with all &lt;strong>processes&lt;/strong>, can be used to review data, create new instances, update or delete instances.&lt;/p>
 &lt;p>Within a shared process, you can also create a &lt;strong>Shared Dashboard&lt;/strong> which is a dashboard created within your own subscription with the intention to share with your B2B Portal. This &lt;strong>dashboard&lt;/strong>, as with all dashboards, can be used to review data, access &lt;strong>Shared Processes&lt;/strong> by creating new instances, updating or deleting instances.&lt;/p>
@@ -1601,7 +1657,87 @@ The Safety Team
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Form display modes</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Find items data rule</title><link>https://docs.kianda.com/docs/platform/rules/data/find-items/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/find-items/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This rule implements the Read function which is one of the four CRUD functions. The rule will read one or more items of data from a chosen data source (see notes below on the types of data source that can be used).&lt;/p>
+&lt;p>This rule is used to find an item from your data-connections. To find an item, you could use a data source filter which acts as a conditional bridge between Kianda and data-connections. If the condition is true, you could map the data source field or text to the Kianda form field.&lt;/p>
+&lt;p>This rule is used to perform a query and return data for use in the form. The data may be stored locally or in one of the data sources&lt;/p>
+&lt;p>The Data source filter is useful when you want to query data from a specific user using a unique identifier like an Id, name or email.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Data&lt;/strong> &amp;gt; &lt;strong>Find items&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Find items&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/find-items-edit-rule.jpg" alt="Edit rule - Assign form dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Select data source&lt;/strong> button &lt;img src="https://docs.kianda.com/images/button-select-data-source.jpg" alt="Select data source">to select the desired data source. When you select your data source, new mappings options are presented.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/find-items-mapping.jpg" alt="Find items - mapping">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Data source filter&lt;/strong> - used to filter data within your datasource. It works on condition bases which allows you to pull wanted and unwanted data back into the process. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Map results to table&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Yes&lt;/strong> - selecting this option will allow you to&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/find-items-table-map.jpg" alt="Find items - mapping">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Select a table&lt;/strong> - allow you to select a table from within your process which will be populated by mapping. This is useful when you want to display a lot of data from the datasource.&lt;/li>
+&lt;li>&lt;strong>Existing rows behaviour&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>Override&lt;/strong> - will override any duplicate date therefore will keep the last duplicate inside of the table.&lt;/li>
+&lt;li>Append - will add any duplicate data to the table and therefore all occurrence of data will be displayed in the table.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Enable server paging&lt;/strong> - enables the server paging configurations. For example if your data source has 10 row per page, enabling this option will force the table to have 10 rows per page.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>No&lt;/strong> - selecting this option will only pull the first occurrence from your data source.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Results mapping&lt;/strong> - is used to set fields within your form from the datasource itself. To learn more about results mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>On error mapping&lt;/strong> - you can expand this option by clicking on it, then add fields where you can display any error message that may have occurred during the mapping process. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Max rows&lt;/strong> - will allow you to set a number of fields to be displayed within a table.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Sort By&lt;/strong> - allows you to sort the results of your datasource within the mapped rows of the table.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Form display modes</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Remember there are three principles to consider when working with forms:&lt;/p>
 &lt;ul>
@@ -3230,7 +3366,59 @@ Your browser does not support the video tag.
 &lt;li>
 &lt;p>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Create data item rule</title><link>https://docs.kianda.com/docs/platform/rules/data/create-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/create-item/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This rule implements the Create function which is one of the four CRUD functions. The rule will create one or more items of data from a chosen data source (see notes below on the types of data source that can be used).&lt;/p>
+&lt;p>The &lt;strong>Create item&lt;/strong> rule allows you to create an item of any type in the specified data connector. When applying this rule, you must select a data source in which you want to create the item. When the data source is connecter, you can map inputs from your form fields into your source. Also, you could map a data source field or text back to Kianda on success or store an error message on failure.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Data&lt;/strong> &amp;gt; &lt;strong>Create item&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Create item&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-item-edit-rule.jpg" alt="Edit rule - Assign form dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Select data source&lt;/strong> button &lt;img src="https://docs.kianda.com/images/button-select-data-source.jpg" alt="Select data source">to select the data source you want to create a new item in. When you select your data source, new mapping options are presented.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-item-mapping.jpg" alt="create item - mapping options">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Input mapping&lt;/strong> - used to create an item inside of the data source that you selected.
+&lt;ul>
+&lt;li>&lt;strong>Form field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value you want to your new item to contain.&lt;/li>
+&lt;li>&lt;strong>Data source field&lt;/strong> - select a field in your data source to hold the new value.&lt;/li>
+&lt;li>&lt;strong>Add mapping&lt;/strong> - you can choose to create multiple items in your data source by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>On success mapping&lt;/strong> - select the field(s) in the form which will store information and populate the &lt;strong>data source field or text&lt;/strong> field with the respective data source value. To learn more about success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>On error mapping&lt;/strong> - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
 &lt;p>Kianda &lt;strong>dashboards&lt;/strong> deliver a convenient way to provide insights into how your business processes are performing. Kianda dashboards offer easy reporting, permissions management, quick build, condition-based filtering and many more features.&lt;/p>
 &lt;p>From lists to tiles, filter and charts, dashboards allow you to build full digital experiences to monitor your real-time processes in a few minutes. To learn more about dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard pages&lt;/a>.&lt;/p>
 &lt;h2 id="creating-a-dashboard">Creating a Dashboard&lt;/h2>
@@ -3991,296 +4179,4 @@ c) &lt;strong>Data source&lt;/strong>&lt;/p>
 &lt;li>Layout - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the text box for mobile use.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize-frame.png" alt="Changing text box width">&lt;/p>
-&lt;p>Underneath field properties you will see &lt;strong>Rules&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about Field rules.&lt;/p></description></item><item><title>Docs: Secure Data Access</title><link>https://docs.kianda.com/docs/platform/b2b-portals/data-access/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/b2b-portals/data-access/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Access to the B2B Portal is controlled through standard user and group creation, dashboard security and through how the Shared Processes and Dashboards are defined.&lt;/p>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>B2B Portals are a means of connecting your clients to your Kianda subscription through their own subscription. This provides a means of allowing your clients to interface with processes you have already created, be it through updating existing processes, deleting processes or creating processes. Access to the B2B Portal can be controlled by your own administrator and each B2B portal can have multiple users for your clients.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To share data with B2B portal users, there are a number of steps involved starting with:&lt;/p>
-&lt;p>a) &lt;a href="#create-users-and-groups-for-the-B2B-portal">Creating users and groups&lt;/a>&lt;/p>
-&lt;p>b) &lt;a href="#create-dashboards-to-share">Create dashboards to share&lt;/a>&lt;/p>
-&lt;p>c) &lt;a href="#create-shared-processes-and-attach-dashboards-to-share">Create shared processes and attach dashboards to share&lt;/a>&lt;/p>
-&lt;p>These steps are covered within the headings below. In addition you can manage &lt;a href="#data-access-at-a-datasource-level">data access at a datasource level&lt;/a>, click on the link to see more details.&lt;/p>
-&lt;h3 id="create-users-and-groups-for-the-b2b-portal">Create users and groups for the B2B portal&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>To begin create &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong> for the B2B portal. If you are an &lt;strong>administrator,&lt;/strong> navigate to the &lt;strong>Administration&lt;/strong> section in the left-hand side menu and click on &lt;strong>Users&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Within this page you will be able to view all existing &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong> in the portal. In the left-hand side, under &lt;strong>Users&lt;/strong> you can see user names, emails, role and if they are active or not. All existing &lt;strong>Groups&lt;/strong> can be seen in the right-hand side of the screen. Here you can see group names and the number of members.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/user-main-view.jpg" alt="Users main view">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>For full details on how to create, edit and delete users and groups go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="create-dashboards-to-share">Create dashboards to share&lt;/h3>
-&lt;ol>
-&lt;li>Within your own portal you may then wish to create &lt;strong>Dashboards&lt;/strong> to share. Dashboards provide a convenient way to gain insights into how your business processes are performing. They offer easy reporting, permissions management, quick build, condition-based filtering amongst other features. For details on how to get started with dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/li>
-&lt;/ol>
-&lt;h3 id="create-shared-processes-and-attach-dashboards-to-share">Create shared processes and attach dashboards to share&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>When the dashboard that you want to share within your &lt;strong>B2B portal&lt;/strong> has been created, then you can control access by two means: a) Using the &lt;strong>Shared Processes&lt;/strong> feature within &lt;strong>Invite partner&lt;/strong> within &lt;strong>Administration&lt;/strong> and b) within the B2B portal itself.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To implement a) go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Invite partner&lt;/strong> and within the &lt;strong>Shared processes&lt;/strong> section, click on &lt;strong>Share a process&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Type in a &lt;strong>Title&lt;/strong> and &lt;strong>Instructions for partner&lt;/strong>, click on the &lt;strong>plus symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-process.jpg" alt="Add shared process"> to add a selected process design to share.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Then click on the dropdown list to search for a process to share.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to add the selected shared process.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>Add partner group&lt;/strong> button to add a group from step 3 and click on &lt;strong>Dashboard template&lt;/strong> to add the desired Dashboard (from step 4) to share. Security can be set on this dashboard so that only a defined group can see the dashboard - click on the field under &lt;strong>Dashboard security&lt;/strong> to add in a named &amp;lsquo;partner group&amp;rsquo; to enable access to this group only.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/edit-shared-process.jpg" alt="Edit Shared Process dialog box">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Add as many shared dashboards and partner groups as needed using the previous instructions. In addition the level of access for each shared process can be controlled through system settings. Click on the on the &lt;strong>tick symbol&lt;/strong> &lt;img src="https://docs.kianda.com/images/edit-selected-process.jpg" alt="Edit selected shared process"> to change the shared processes details, and then click on the &lt;strong>Cog/Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Edit selected shared process properties"> and edit the details within the &lt;strong>Process properties&lt;/strong> dialog box, for example as shown for a Training Request process below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/change-selected-prop.jpg" alt="Edit selected shared process properties">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Within the &lt;strong>Process properties&lt;/strong> dialog box you can check radio buttons for:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Allow partner to create a new process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to create new process instances from the chosen shared process design. A field &lt;strong>Partner user group allowed to create new instances&lt;/strong> appears, where you can define the group(s) in the partner organisation, that can create these new process instances. If you leave the field blank, then anyone in the partner organisation can create process instances.&lt;/li>
-&lt;li>&lt;strong>Allow partner delete a process instance&lt;/strong> - choose from &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, then you are allowing invited partner(s) to delete new process instances from the chosen shared process design.&lt;/li>
-&lt;li>&lt;strong>Partner user group allowed to create new instances&lt;/strong>- choose from the &lt;strong>Partner user groups&lt;/strong> that you created previously. By selecting a group here this dictates who can enter the process. Thus, defining a sub set of your B2B Portal users which can interact with that specific process.&lt;/li>
-&lt;li>&lt;strong>Partner process form visibility mode&lt;/strong> - choose from &lt;strong>Assigned&lt;/strong> or &lt;strong>All forms&lt;/strong>. If you choose &lt;strong>Assigned&lt;/strong>, then the invited partner(s) can view only assigned form versus all forms, if &lt;strong>All forms&lt;/strong> is chosen.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong>, or else click on &lt;strong>Close&lt;/strong> to exit the dialog box at any stage.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="data-access-at-a-datasource-level">Data access at a datasource level&lt;/h2>
-&lt;p>When a &lt;strong>process&lt;/strong> is shared within the B2B portal, you may choose to include one or more of your datasources. You may not wish to share all records from the datasource within the B2B portal, so you can limit access within the datasource itself. B2B Security can be enabled with the following datasources:&lt;/p>
-&lt;ul>
-&lt;li>Active Directory&lt;/li>
-&lt;li>Docusign&lt;/li>
-&lt;li>Dropbox&lt;/li>
-&lt;li>Email&lt;/li>
-&lt;li>File system&lt;/li>
-&lt;li>FTP&lt;/li>
-&lt;li>Global Payments&lt;/li>
-&lt;li>Google Drive&lt;/li>
-&lt;li>MySQL&lt;/li>
-&lt;li>Office 365&lt;/li>
-&lt;li>Oracle&lt;/li>
-&lt;li>PowerShell&lt;/li>
-&lt;li>REST Service&lt;/li>
-&lt;li>Salesforce&lt;/li>
-&lt;li>SAP&lt;/li>
-&lt;li>SharePoint&lt;/li>
-&lt;li>SQL Server&lt;/li>
-&lt;li>SOAP Service&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>
-&lt;p>Go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>From the Datasource management main view, click on a data source that has already been created with a status of &lt;strong>ready&lt;/strong>, by clicking on the &lt;strong>name&lt;/strong> of the data source, or create a new Data source by clicking on &lt;strong>Add new&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/administration/datasources/">Data sources&lt;/a> for more details.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-management.jpg" alt="Datasource management view">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Data source details&lt;/strong> screen, click on the &lt;strong>Security&lt;/strong> button &lt;img src="https://docs.kianda.com/images/security-button.jpg" alt="Security button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Security settings&lt;/strong> dialog box, complete the fields as shown on screen, starting with &lt;strong>Connection administrators&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/security-settings.jpg" alt="Security settings dialog box">&lt;/p>
-&lt;p>&lt;strong>Connection administrators&lt;/strong> - only users or groups listed here are allowed to modify the connection settings. Click on the dropdown list to choose &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong>. If you leave the field blank, all &lt;strong>Administrators&lt;/strong> and those users with the &lt;strong>Manage datasources&lt;/strong> role can edit the connection.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Complete the field for &lt;strong>Connection users&lt;/strong>. Only users or groups listed here are allowed to query data using this connection. Click on the dropdown list to choose &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong>. If you leave the field blank, any user can query data within the datasource.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Check/Uncheck &lt;strong>Enable B2B&lt;/strong>. If you check the checkbox, this allows B2B external users to query the connection. The &lt;strong>Enable partner default query parameters&lt;/strong> checkbox appears.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Check/Uncheck &lt;strong>Enable partner default query parameters&lt;/strong>. If you check the checkbox, you can define default query parameters that are applied to any partner originated query. Parameters defined here take precedence over any design time queries. Click on &lt;strong>Add mapping&lt;/strong> to choose a query type and table/operation as follows:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Query type&lt;/strong> - choose from &lt;strong>Create, Read, Update, Delete&lt;/strong> (CRUD). These CRUD operations allow you to create, read, update and delete records within your datasource.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Table/Operation&lt;/strong> - click on &lt;strong>Select a table&lt;/strong> to select a resource within the data connector. Click on &lt;strong>OK&lt;/strong> when you are finished editing, or &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Query parameters&lt;/strong> - when a datasource resource is chosen, for example a SharePoint list called &amp;lsquo;Countries&amp;rsquo; below, then you will have an option to set conditions for filtering data.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/query-parameters-security.jpg" alt="Query parameters">&lt;/p>
-&lt;p>Click on &lt;strong>Filter conditions&lt;/strong> to open an &lt;strong>Edit conditions&lt;/strong> dialog box and from there click on &lt;strong>Add a conditions group&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>If you choose to set conditions using the steps above, then in the &lt;strong>Edit conditions&lt;/strong> dialog box, you can set conditions based on data source parameters, operators and form fields.&lt;/p>
-&lt;ul>
-&lt;li>The parameter on the left comes from the &lt;strong>data source&lt;/strong>, for example for SharePoint, there are 18 possible values listed in &lt;a href="https://docs.kianda.com/docs/platform/connectors/sharepoint/#sharepoint-parameters">SharePoint parameters&lt;/a>. See &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data sources&lt;/a> for information about other data connectors.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://docs.kianda.com/images/edit-conditions.jpg" alt="Edit conditions dialog box in Security settings">&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Within this dialog box you can also use different operators, for example &lt;strong>Equals&lt;/strong> as shown above. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details on using conditions in Kianda.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The right-most field relates to the B2B Portal and B2B User. There are standard options listed below:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Main Contact Name –&lt;/strong> the first name and last name of the Partner&lt;/li>
-&lt;li>&lt;strong>Main Contact Email –&lt;/strong> the email of the Partner&lt;/li>
-&lt;li>&lt;strong>Partner Company Name –&lt;/strong> the Partner organisation of the Partner&lt;/li>
-&lt;li>&lt;strong>Partner Current User Name –&lt;/strong> the user within the B2B Portal that is accessing the datasource&lt;/li>
-&lt;li>&lt;strong>Partner Current User Email –&lt;/strong> the user&amp;rsquo;s email within the B2B Portal that is accessing the datasource&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://docs.kianda.com/images/b2b-parameters.jpg" alt="B2B form parameters">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When you have added conditions click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>When you are finished editing the security settings dialog box, click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about User and group management, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users&lt;/a>.&lt;/p>
-&lt;p>To read more about Dashboards, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p>
-&lt;p>To read more about Conditions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
-&lt;p>To read more about data source parameters, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Connectors&lt;/a> and from there navigate to the different predefined data connectors.&lt;/p></description></item><item><title>Docs: Submit form</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/</guid><description>
-&lt;p>The &lt;strong>Submit form&lt;/strong> rule marks the current form as complete and makes it read-only. By default upon submit of a form, the next form in the process is activated.&lt;/p>
-&lt;p>This rule is automatically attached to &lt;strong>Submit&lt;/strong> button which is added to all forms by default.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>This action is used to submit a form that you are working on, that is the &amp;lsquo;current&amp;rsquo; form.&lt;/p>
-&lt;p>You can add this rule:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To implement the rule:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Field display mode&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under Action, &lt;strong>Set process status&lt;/strong> choose from &lt;strong>Auto (Current form title)&lt;/strong> or &lt;strong>Manual&lt;/strong>. If you choose &lt;strong>Manual&lt;/strong> then type in the desired text to appear to users in the &lt;strong>Status text after submit&lt;/strong> field.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>​ Each process contains an internal status value, this is automatically set to the name of the active form. For example there are two forms in a Incident process, a &lt;strong>Incident form&lt;/strong>, a &lt;strong>Review form&lt;/strong> and the &lt;strong>Auto (Current form title)&lt;/strong> is selected in the &lt;strong>Set process status&lt;/strong> option. When the &lt;strong>Incident form&lt;/strong> is completed and submitted, the internal status will be set to the next active form, in this case the &lt;strong>Review form&lt;/strong>. When all forms are completed and submitted, the internal status is set to &lt;strong>completed&lt;/strong>. The image below shows how the internal status of the process can be reflected in a dashboard to keep track of the current stage of a process.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/examples-submit-form-status.jpg" alt="Submit form read only">&lt;/p>
-&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
-&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;ul>
-&lt;li>You can display the internal status of a process in a list widget on your dashboard. This can help you keep track of the current state the process instance is. For example when the process is complete or which form in the process is currently active.&lt;/li>
-&lt;/ul>
-&lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Success and Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As a user with a &lt;strong>administrator&lt;/strong> or &lt;strong>designer&lt;/strong> role, you can use Kianda &lt;strong>Designer&lt;/strong> to populate fields within the Kianda form, using the &lt;strong>Edit rule&lt;/strong> dialog box to set parameters for success and error mapping.&lt;/p>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>Success and Error mapping should be with rule execution, displaying values that you want for rule execution success or failure.&lt;/p>
-&lt;p>&lt;strong>You can use mapping with the following rules:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Find items&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Create item&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Update item&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Data rules &amp;gt; Delete item&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> All SharePoint rules, except Get attachments and Create anonymous link&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-use">How to use&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>Select the field that will have the rule attached, for example a button at the end of a form, or a field within a form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane and select one of the rules that uses mapping as shown in the &lt;a href="#wehn-to-use">When to use&lt;/a> list above, for example the &lt;strong>SharePoint rule&lt;/strong> called &lt;strong>Create list&lt;/strong>, used to create a list in SharePoint dynamically using Kianda form data.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-eg.jpg" alt="(Example of a rule with mapping)">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong>, click on the field &lt;strong>Select a SharePoint data source&lt;/strong> from the drop-down list.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-filled.jpg" alt="Create a list example with details">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Fill out any additional fields as necessary, for example to create a list the following fields must be completed:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>List template&lt;/strong> - choose from a list of SharePoint list types&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>List name field&lt;/strong> - choose a form field that will be used the create a name for the list in SharePoint&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>List url field&lt;/strong> - choose a form field that will be used in the creation of a URL within SharePoint&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>List description field&lt;/strong> - choose a form field that describes what the list is about&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Quick Launch menu&lt;/strong> - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. Choosing &lt;strong>Yes&lt;/strong> allows the created list to be displayed in the Quick Launch menu, containing a link to the list.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>To add success mapping, click on &lt;strong>On success mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button:&lt;/p>
-&lt;ul>
-&lt;li>In the &lt;strong>Form field&lt;/strong> select a form field which will store information in your Kianda form&lt;/li>
-&lt;li>In the &lt;strong>Data source field or text&lt;/strong> select a data source field that is used in the mapping&lt;/li>
-&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>For &lt;strong>On error mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button:&lt;/p>
-&lt;ul>
-&lt;li>In the &lt;strong>Form field&lt;/strong> select a form field which will store information in your Kianda form&lt;/li>
-&lt;li>In the &lt;strong>Error message or text&lt;/strong> enter a error message that you want to appear in the event of errors or leave empty to use a system generated error indicating what has gone wrong when the rule executed.&lt;/li>
-&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>you simply need to select the field within the form which will store the error message&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconcontentdocsplatformrulesgeneralsuccess-error-mappingassets18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/../content/docs/platform/rules/general/success-error-mapping.assets/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item></channel></rss>
+&lt;p>Underneath field properties you will see &lt;strong>Rules&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about Field rules.&lt;/p></description></item></channel></rss>
