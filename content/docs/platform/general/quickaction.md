@@ -76,7 +76,13 @@ You can use Kianda offline for example to view dashboards even without internet 
 
 ### User notifications ##
 
-This icon alerts you when actions happen associated with processes, for example a form is completed by a user. You will receive a configured message indicating in this case, what form has been completed and by whom.
+This icon alerts you when actions happen associated with processes, for example if a form has been assigned to you. Any new notifications will be seen as a number beside the **user notification** icon/bell symbol. 
+
+![User notification](/images/user-alert-notification.jpg)
+
+You will receive a configured message indicating the title of the notification and a short piece of text explaining what has happened, for example if a process design has been published and existing process instances have been updated, or the message could be as a result of a [User alert rule](/docs/platform/rules/communications/user-alert/) as seen below. In this example, the user can click on the alert and they are brought to the form that they have to complete. 
+
+![User alert example](/images/user-alert-example.jpg)
 
 ### User profile ##
 

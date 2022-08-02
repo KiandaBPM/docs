@@ -4,11 +4,21 @@ typora-root-url: ..\..\..\..\..\static
 weight: 4
 ---
 
-The **User alert** rule sends an alert to a user who can then open an instance of a process. It can be used as a reminder or a notification for a user to fill out a form in a process.  A user can view all alerts by clicking on the bell icon on the top right-hand corner of their screen.
+The **User alert** rule sends an alert to a user who can click on the alert to open the process instance, for example to a form that needs to be completed by a given user.  A user can view all alerts by clicking on the **notifications** or bell icon on the top right-hand corner of their screen.
+
+For example in the image below there is one new notification.
+
+![User notification](/images/user-alert-notification.jpg)
+
+When the user clicks on the icon, the alert created using the **User alert** rule appears. 
+
+![User alert example](/images/user-alert-example.jpg)
+
+In this example clicking on the alert itself, will bring the user to a form that they need to fill out. 
 
 ## When to use 
 
-There is a lot of uses for the user alert rule, it can be used as a reminder to complete a form or when a form is submitted and the form needs to be reviewed, a manger can recieve the alert to review the information in the form.
+There are a lot of uses for the user alert rule. For example, the rule can be used as a reminder to complete a form or when a form is submitted and the form needs to be reviewed, a manger can receive the alert to review the information in the form.
 
 You can add this rule:
 - [x] to a field
@@ -43,6 +53,8 @@ You can add this rule:
 9. **Alert icon** - choose an icon from the dropdown list.
 
    ![Edit rule - Anonymous link dialog box](/images/user-alert-settings.jpg)
+
+   The resulting alert design looks like this:
 
    ![Edit rule - Anonymous link dialog box](/images/user-alert-reminder.jpg)
 
