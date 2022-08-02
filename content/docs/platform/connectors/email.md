@@ -51,9 +51,7 @@ In your company's Kianda platform you can connect an emailing service such as Ou
 
 Internet Message Access Protocol, or IMAP, is **a standard email retrieval (incoming) protocol**. It stores email messages on a mail server and enables the recipient to view and manipulate them as though they were stored locally on their device(s). These settings are needed to connect to your emailing service and authentication of ownership. In order to activate your email connector we need to fill out the following:
 
-
-
-> Note; some emailing providers need IMAP settings enabled as they are disabled by default.
+> Note: some email providers need IMAP settings enabled as they are disabled by default.
 
 - **IMAP server** - IMAP server is an address for a given mailing service, it usually comes in the form of **imap.yourdomain.com**. For example Google's IMAP is **imap.gmail.com**. To access your IMAP address, contact your email provider or email server.
 - **IMAP server port** - Indicates which port your IMAP server listens to. The IMAP server typically listen to a well known port **143** or **993** with **SSL/TSL** functionality. The port information can be found by contacting your email provider.
@@ -75,11 +73,11 @@ Simple Mail Transfer Protocol or SMTP, is **a standard email outgoing (sending) 
 
 
 
-## Setting up a Global SMTP mail Connector
+## Setting up a Global SMTP mail connector
 
 As mentioned above, you can create multiple **Email connectors** and use them to send emails using different email accounts such as support@ or info@. You can also choose to ignore all **email connectors** as well as the no-reply@kianda.com emails by enabling one **Global SMTP connector** which forces all sent email to come from one single connector. To set a **Global SMTP connector**, you need **Administrator** rights in your Kianda platform.
 
-> Note; to set up a global smtp mail connector, you need to have an **Email connector** set up, see top of this on how to do that. 
+> Note: to set up a global SMTP mail connector, you need to have an **Email connector** set up, see the steps under [How to get started](#how-to-get-started) on how to set up an email connector. 
 
 1. From the Kianda home page, click on **Administration** > **Subscription** > **Subscription Details**.
 
