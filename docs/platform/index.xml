@@ -25,13 +25,12 @@
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about other ways to get help and support, click on the links below:&lt;/p></description></item><item><title>Docs: Application designer</title><link>https://docs.kianda.com/docs/platform/application-designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/</guid><description>
 &lt;p>Creating your first &lt;strong>process&lt;/strong> or application in Kianda starts with designing your first &lt;strong>form&lt;/strong>. Forms can connect to any number of &lt;strong>data sources&lt;/strong> or connectors at the same time. The form might be a simple contact form or something else more complex, and you can add more forms like &amp;ldquo;Follow-up form&amp;rdquo; or even a &amp;ldquo;Closure form&amp;rdquo;.&lt;/p>
-&lt;p>Although Kianda aims to be intuitive and easy to get started, it is never difficult to over-engineer. So at Kianda we always recommend doing some simple planning before you design your first form.&lt;/p>
-&lt;p>It could be something as simple as a quick flow chart or as we use a spreadsheet where you quickly log the key components, fields or rules that should be needed in the process.&lt;/p>
-&lt;p>In general, we normally include the following key steps to build a process in an agile manner:&lt;/p>
+&lt;p>Although Kianda aims to be intuitive and easy to get started, it is never difficult to over-engineer. So at Kianda we always recommend doing some simple planning before you design your first form. It could be something as simple as a quick flow chart or a spreadsheet where you can quickly log the key components, fields or rules that are needed in the process.&lt;/p>
+&lt;p>In general there are three key steps to build a process in an agile manner:&lt;/p>
 &lt;ol>
-&lt;li>Plan process design, forms, fields, rules, log into design spreadsheet.&lt;/li>
-&lt;li>Build forms and fields connecting to data where applicable.&lt;/li>
-&lt;li>Publish to dashboards, anonymous forms or SharePoint for end-user distribution.&lt;/li>
+&lt;li>&lt;strong>Plan&lt;/strong> process design, forms, fields, rules, log into design spreadsheet.&lt;/li>
+&lt;li>&lt;strong>Build&lt;/strong> forms and fields connecting to data where applicable.&lt;/li>
+&lt;li>&lt;strong>Publish&lt;/strong> to dashboards, launch anonymous forms or publish to data sources for end-user distribution.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;em>&lt;strong>Platform getting started video&lt;/strong>&lt;/em>&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
@@ -39,7 +38,7 @@
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-&lt;h3 id="kianda-designer">Kianda Designer&lt;/h3>
+&lt;h2 id="kianda-designer-introduction">Kianda Designer Introduction&lt;/h2>
 &lt;p>Kianda process designer provides an intuitive interface where you can quickly start building forms for any use case.&lt;/p>
 &lt;p>The key components of the form designer are:&lt;/p>
 &lt;ol>
@@ -49,44 +48,14 @@ Your browser does not support the video tag.
 &lt;/ol>
 &lt;p>&lt;em>&lt;strong>Form designer key components&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/form-designer.png" alt="Form designer components">&lt;/p>
-&lt;h2 id="responsive-form-layout">Responsive form layout&lt;/h2>
-&lt;p>Form fields are made to with a mobile-first approach giving you design once and deploy everywhere opportunity.&lt;/p>
-&lt;p>By using the &lt;strong>Layout&lt;/strong> option under the property panel you will be able to simply define the layout of your fields or panels within a form. Clicking on the &lt;strong>^&lt;/strong> quickly uncovers the layout mode for desktop and mobile.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/layout-mode.png" alt="Layout mode">&lt;/p>
-&lt;p>This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS framework that allows designing web interfaces with a mobile-first approach.&lt;/p>
-&lt;h2 id="forms--layout-fields">Forms &amp;amp; layout fields&lt;/h2>
-&lt;p>Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of &lt;a href="development.md">development&lt;/a> skills you can always create your custom field widget.&lt;/p>
-&lt;p>At the time of writing, the default fields fall into four main categories of fields:&lt;/p>
+&lt;p>The following headings highlight the key features of Designer that allow you to build slick, progressive, responsive and customised forms and processes.&lt;/p>
+&lt;h2 id="forms">Forms&lt;/h2>
+&lt;p>Forms are an important component of any process, they might be used as stages of a process and could be made active individually or at the same time known as &lt;strong>parallel&lt;/strong> forms.&lt;/p>
+&lt;p>The key rules related to designing forms for user interaction are:&lt;/p>
 &lt;ol>
-&lt;li>&lt;strong>Input&lt;/strong> - Input fields include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.&lt;/li>
-&lt;li>&lt;strong>Layout&lt;/strong> - Layout fields are the fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields.&lt;/li>
-&lt;li>&lt;strong>Action&lt;/strong> - Action fields are fields that allow user interface actions like buttons, links or even signature components.&lt;/li>
-&lt;li>&lt;strong>Custom&lt;/strong> - Under custom fields, you will find any custom-developed fields available under your developer section.&lt;/li>
-&lt;/ol>
-&lt;p>Layout fields take an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.&lt;/p>
-&lt;h3 id="model-dialogs">Model dialogs&lt;/h3>
-&lt;p>Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users attention to something important.&lt;/p>
-&lt;p>Typically we use dialogs for things like requiring user confirmation or to let them make a final decision.&lt;/p>
-&lt;p>&lt;em>&lt;strong>How to use a model dialog&lt;/strong>&lt;/em>&lt;/p>
-&lt;video width="100%" style="width:100%" controls>
-&lt;source src="https://docs.kianda.com/videos/How to use a model dialog.mp4">
-Your browser does not support the video tag.
-&lt;/source>
-&lt;/video>
-&lt;p>On the example above, we use a modal dialog to display a simple &lt;em>warning to the user&lt;/em>. The following are the steps:&lt;/p>
-&lt;ol>
-&lt;li>On the Layout components, select the &lt;em>Dialog&lt;/em>.&lt;/li>
-&lt;li>Click on the dialog component to insert other fields within it.&lt;/li>
-&lt;li>You can add any field to your dialog, in this case, we are adding a Rich text.&lt;/li>
-&lt;li>To preview how your dialog box will be displayed, you can use the &lt;strong>Preview&lt;/strong> button, on the dialog component.&lt;/li>
-&lt;/ol>
-&lt;h3 id="forms">Forms&lt;/h3>
-&lt;p>Forms are an important component of any process, they might be used as stages of a process and could be made active individually or at the same time (parallel forms).&lt;/p>
-&lt;p>The key rules for working with forms are:&lt;/p>
-&lt;ol>
-&lt;li>Forms are assignable - means that only a form assignee can edit a particular form. This can be a combination of users and groups.&lt;/li>
-&lt;li>Only form owners can edit a given form by default. Any other user with access to view the form will see it in read-only mode.&lt;/li>
-&lt;li>Multi-step processes use the concept of &amp;ldquo;current form&amp;rdquo;. Only the form matching the process status will be made editable.&lt;/li>
+&lt;li>Forms are &lt;strong>assignable&lt;/strong>, this means that &lt;strong>only a form assignee can edit&lt;/strong> a particular form in a process instance. The form assignee can be a combination of users and groups.&lt;/li>
+&lt;li>When a form is created, as a designer you can configure form owners. &lt;strong>Only form owners can edit&lt;/strong> a given form in a process instance by default. Any other user with access to view the form will see it in read-only mode.&lt;/li>
+&lt;li>Processes that have several steps or multi-step processes use the concept of &lt;strong>current form&lt;/strong>. Only the form matching the process status will be made editable.&lt;/li>
 &lt;li>In a multi-step process, other forms that are not &amp;ldquo;current form&amp;rdquo; can be configured to &lt;strong>activate with&lt;/strong> the current form. Meaning they might also be editable and will form a form group.&lt;/li>
 &lt;/ol>
 &lt;p>The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal &lt;a href="business-rules.md">business rules&lt;/a> such as &lt;em>assign form&lt;/em>, &lt;em>go to form&lt;/em> and &lt;em>submit rule&lt;/em> to dynamically control the ability for end-users to edit a particular form or a section of a form.&lt;/p>
@@ -135,7 +104,39 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;p>&lt;strong>Important&lt;/strong>: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically expire the previous of the same type if a link existed.&lt;/p>
 &lt;h2 id="input-fields">Input fields&lt;/h2>
-&lt;p>Kianda forms usability is brought to life with the help of the various input fields available that are specifically adapted to work in mobile, tablet or desktop modes.&lt;/p>
+&lt;p>Kianda forms usability is brought to life with the help of the vario&lt;/p>
+&lt;h2 id="responsive-form-layout">Responsive form layout&lt;/h2>
+&lt;p>Form fields are made with a mobile-first approach giving you a &amp;lsquo;design once and deploy everywhere&amp;rsquo; opportunity.&lt;/p>
+&lt;p>By using the &lt;strong>Layout&lt;/strong> option under the property panel you will be able to simply define the layout of your fields or panels within a form. Clicking on the &lt;strong>^&lt;/strong> quickly uncovers the layout mode for desktop and mobile.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/layout-mode.png" alt="Layout mode">&lt;/p>
+&lt;p>This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS framework that allows designing web interfaces with a mobile-first approach.&lt;/p>
+&lt;h2 id="forms--layout-fields">Forms &amp;amp; layout fields&lt;/h2>
+&lt;p>Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of &lt;a href="development.md">development&lt;/a> skills you can always create your custom field widget.&lt;/p>
+&lt;p>At the time of writing, the default fields fall into four main categories of fields:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Input&lt;/strong> - Input fields include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - Layout fields are the fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields.&lt;/li>
+&lt;li>&lt;strong>Action&lt;/strong> - Action fields are fields that allow user interface actions like buttons, links or even signature components.&lt;/li>
+&lt;li>&lt;strong>Custom&lt;/strong> - Under custom fields, you will find any custom-developed fields available under your developer section.&lt;/li>
+&lt;/ol>
+&lt;p>Layout fields take an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.&lt;/p>
+&lt;h3 id="model-dialogs">Model dialogs&lt;/h3>
+&lt;p>Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users attention to something important.&lt;/p>
+&lt;p>Typically we use dialogs for things like requiring user confirmation or to let them make a final decision.&lt;/p>
+&lt;p>&lt;em>&lt;strong>How to use a model dialog&lt;/strong>&lt;/em>&lt;/p>
+&lt;video width="100%" style="width:100%" controls>
+&lt;source src="https://docs.kianda.com/videos/How to use a model dialog.mp4">
+Your browser does not support the video tag.
+&lt;/source>
+&lt;/video>
+&lt;p>On the example above, we use a modal dialog to display a simple &lt;em>warning to the user&lt;/em>. The following are the steps:&lt;/p>
+&lt;ol>
+&lt;li>On the Layout components, select the &lt;em>Dialog&lt;/em>.&lt;/li>
+&lt;li>Click on the dialog component to insert other fields within it.&lt;/li>
+&lt;li>You can add any field to your dialog, in this case, we are adding a Rich text.&lt;/li>
+&lt;li>To preview how your dialog box will be displayed, you can use the &lt;strong>Preview&lt;/strong> button, on the dialog component.&lt;/li>
+&lt;/ol>
+&lt;p>us input fields available that are specifically adapted to work in mobile, tablet or desktop modes.&lt;/p>
 &lt;p>From the textbox, date picker, numeric input, file upload and table, Kianda offers a flexible array of controls that can be adjusted to work with a myriad of scenarios.&lt;/p>
 &lt;p>Key properties of fields:&lt;/p>
 &lt;p>Each field comes with its own set of settings like autofill for textbox and currency format for numeric input.&lt;/p>

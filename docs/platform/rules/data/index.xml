@@ -22,7 +22,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/set-field-edit-rule.jpg" alt="Edit rule - Set form field dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Field value mapping&lt;/strong> section, you can select which fields to set and what values to give them. You can do that with the following fields:&lt;/p>
@@ -45,8 +45,8 @@
 &lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Find items data rule</title><link>https://docs.kianda.com/docs/platform/rules/data/find-items/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/find-items/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This rule implements the Read function which is one of the four CRUD functions. The rule will read one or more items of data from a chosen data source (see notes below on the types of data source that can be used).&lt;/p>
-&lt;p>This rule is used to find an item from your data-connections. To find an item, you could use a data source filter which acts as a conditional bridge between Kianda and data-connections. If the condition is true, you could map the data source field or text to the Kianda form field.&lt;/p>
+&lt;p>This rule implements the Read function which is one of the four CRUD (Create, Read, Update and Database) functions. The rule will read one or more items of data from a chosen data source, for example SharePoint, SAP or Oracle databases, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for more details.&lt;/p>
+&lt;p>This rule is used to find an item from your data connections. To find an item, you could use a data source filter which acts as a conditional bridge between Kianda and data connections. If the condition is true, you could map the data source field or text to the Kianda form field.&lt;/p>
 &lt;p>This rule is used to perform a query and return data for use in the form. The data may be stored locally or in one of the data sources&lt;/p>
 &lt;p>The Data source filter is useful when you want to query data from a specific user using a unique identifier like an Id, name or email.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
@@ -82,7 +82,7 @@
 &lt;p>&lt;strong>Map results to table&lt;/strong>:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Yes&lt;/strong> - selecting this option will allow you to&lt;/p>
+&lt;p>&lt;strong>Yes&lt;/strong> - selecting this option will allow you to map results to a table and opens the following options below:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/find-items-table-map.jpg" alt="Find items - mapping">&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Select a table&lt;/strong> - allow you to select a table from within your process which will be populated by mapping. This is useful when you want to display a lot of data from the datasource.&lt;/li>
@@ -125,7 +125,7 @@
 &lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Create data item rule</title><link>https://docs.kianda.com/docs/platform/rules/data/create-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/create-item/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This rule implements the Create function which is one of the four CRUD functions. The rule will create one or more items of data from a chosen data source (see notes below on the types of data source that can be used).&lt;/p>
+&lt;p>This rule implements the Create function which is one of the four CRUD (Create, Read, Update and Database) functions. The rule will create one or more items of data from a chosen data source, for example SharePoint, SAP or Oracle databases, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for more details.&lt;/p>
 &lt;p>The &lt;strong>Create item&lt;/strong> rule allows you to create an item of any type in the specified data connector. When applying this rule, you must select a data source in which you want to create the item. When the data source is connecter, you can map inputs from your form fields into your source. Also, you could map a data source field or text back to Kianda on success or store an error message on failure.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
@@ -177,7 +177,7 @@
 &lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Update data item rule</title><link>https://docs.kianda.com/docs/platform/rules/data/update-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/update-item/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This rule implements the Update function which is one of the four CRUD functions. The rule will update one or more items of data from a chosen data source (see notes below on the types of data source that can be used).&lt;/p>
+&lt;p>This rule implements the Update function which is one of the four CRUD (Create, Read, Update and Database) functions. The rule will read one or more items of data from a chosen data source, for example SharePoint, SAP or Oracle databases, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for more details.&lt;/p>
 &lt;p>The &lt;strong>Data source filter&lt;/strong> in this rule is used for targeting specific data item in your data connection. The item you want to update within your data source is targeted by filtering it out using a field within your form. It is a good idea to connect a dummy field to your data source first and then use that field to filter for the item you want to update. The actual value used to update the item in your data source can also use a field or text filled out in your mapping section (see below for more detail). To make your &lt;strong>Update item&lt;/strong> rule extremely dynamic, it is recommended to create field for filtering an item and a separate field for the new value you want your item to hold.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>The Update item rule should be used whenever you want to update an existing item within a data source of your choice.&lt;/p>
@@ -190,7 +190,7 @@
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the &lt;strong>Edit/pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Data&lt;/strong> &amp;gt; &lt;strong>Update item&lt;/strong>.&lt;/p>
@@ -210,7 +210,7 @@
 &lt;p>&lt;strong>Data source filter&lt;/strong> - works on condition bases where by you can filter the specific item that you want to update within your data source. The condition uses a field from within your form and therefore it is good practice to create a field and connect it to your data source to have the ability of selecting an item that you want to update. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Input mapping&lt;/strong> - used to update an item inside of the data source that you selected.&lt;/p>
+&lt;p>&lt;strong>Input mapping&lt;/strong> - used to update an item inside of the data source that you selected. Within this section the following fields are visible:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Form field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value you want to your updated item to contain.&lt;/li>
 &lt;li>&lt;strong>Data source field&lt;/strong> - select a field in your data source to hold the new value.&lt;/li>
@@ -239,7 +239,7 @@
 &lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Delete data item rule</title><link>https://docs.kianda.com/docs/platform/rules/data/delete-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/delete-item/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This rule implements the Delete function which is one of the four CRUD functions. The rule will delete one or more items of data from a chosen data source (see notes below on the types of data source that can be used).&lt;/p>
+&lt;p>This rule implements the Delete function which is one of the CRUD (Create, Read, Update and Database) functions. The rule will delete an item data from a chosen data source, for example SharePoint, SAP or Oracle databases, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for more details.&lt;/p>
 &lt;p>The &lt;strong>Data source filter&lt;/strong> in this rule is used for targeting specific data item in your data connection. The item you want to delete within your data source is targeted by filtering it out using a field within your form. It is a good idea to connect a dummy field to your data source first and then use that field to filter for the item you want to delete.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>The Delete item rule should be used whenever you want to delete an existing item within a data source of your choice.&lt;/p>
@@ -262,7 +262,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/delete-item-edit-rule.jpg" alt="Edit rule - Delete item dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Select data source&lt;/strong> button &lt;img src="https://docs.kianda.com/images/button-select-data-source.jpg" alt="Select data source">to select the data source you want to update an item in. When you select your data source, new mapping options are presented.&lt;/p>
