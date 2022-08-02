@@ -7,7 +7,9 @@ weight: 1
 
 ## Introduction
 
-Using the **Set form field** rule you have the ability to select a field within your process and assign it a value using manually typed text or an expression. With the **Set form field** rule you can also set multiple fields at once by adding more fields to the value mapping within the rule.
+Using the **Set form field** rule you have the ability to select a field within your process and assign it a value using manually typed text or an expression. With the **Set form field** rule you can set multiple fields at once by adding more fields to the value mapping within the rule.
+
+This rule is useful when automating processes with previously provided information from other forms. You can apply this rule to a form which will activate the rule when the form is loaded. You can pass query strings and apply the Set form field rule assign values to fields when opening form for the first time. To learn more about query strings go to [Query strings](/docs/platform/pages/link/#heading).
 
 ## When to use 
 
