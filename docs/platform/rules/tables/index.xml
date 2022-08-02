@@ -1,185 +1,78 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Table rules</title><link>https://docs.kianda.com/docs/platform/rules/tables/</link><description>Recent content in Table rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/tables/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Loop table</title><link>https://docs.kianda.com/docs/platform/rules/tables/loop-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/loop-table/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Add table row</title><link>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</guid><description>
-&lt;h6 id="introduction---good-description-simple-language">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use">When to use&lt;/h6>
-&lt;h6 id="how-to-use">How to use&lt;/h6>
-&lt;p>Number of points for the actual steps you need to follow to configure the rule.&lt;/p>
-&lt;h6 id="notes">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule
-Loops through table rows
-Loops through a table to trigger consecutively rules within the table
-FROM HELP??
-If you need to perform loop actions on table, you can do so with Loop tables under Add a rule. In the example, we are importing data using the file and performing loop action on the &amp;lsquo;Set Complete&amp;rsquo; button.&lt;/p>
-&lt;p>In this case, we need to set form field value of &amp;lsquo;Status&amp;rsquo; to &amp;lsquo;Complete&amp;rsquo;.&lt;/p>
-&lt;p>Select &amp;lsquo;Loop Complete&amp;rsquo; button.
-Go to &amp;lsquo;Add a rule&amp;rsquo;.
-Select &amp;lsquo;Tables&amp;rsquo;.
-Select &amp;lsquo;Loop table&amp;rsquo;.
-Select a table &amp;lsquo;List of tickets&amp;rsquo;.
-Select column field which needs to be triggered.
-VIDEO??&lt;/p>
-&lt;h5 id="add-table-row">Add table row&lt;/h5>
-&lt;h6 id="introduction---good-description-simple-language-1">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use-1">When to use&lt;/h6>
-&lt;h6 id="how-to-use-1">How to use&lt;/h6>
-&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
-Video should be here?
-&lt;/code>&lt;/pre>
-&lt;h6 id="notes-1">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule
-Add a new row to a table
-Adds a new row into a table&lt;/p>
-&lt;h5 id="remove-table-row">Remove table row&lt;/h5>
-&lt;h6 id="introduction---good-description-simple-language-2">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use-2">When to use&lt;/h6>
-&lt;h6 id="how-to-use-2">How to use&lt;/h6>
-&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
-Video should be here?
-&lt;/code>&lt;/pre>
-&lt;h6 id="notes-2">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule&lt;/p>
-&lt;p>Remove current row from a table
-Remove a row from the table.
-Run this rule from the context of the row to remove the current row&lt;/p>
-&lt;h5 id="import-csv">Import CSV&lt;/h5>
-&lt;h6 id="introduction---good-description-simple-language-3">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use-3">When to use&lt;/h6>
-&lt;h6 id="how-to-use-3">How to use&lt;/h6>
-&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
-Video should be here?
-&lt;/code>&lt;/pre>
-&lt;h6 id="notes-3">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule
-Import a csv file into a table
-Imports CSV or XLSX data into a table based on provided mapping
-FROM HELP??
-Yes, you can easily do that. First of all, you will need a File upload input, so you can upload the file from your computer. Then, you can create the rule wherever it suits you. On the example, we created a button specifically to map the CSV file to the table.&lt;/p>
-&lt;p>Click on the button to add the rule.
-Navigate to Tables &amp;gt; Import CSV.
-Select the CSV file field where you will upload the CSV file.
-On the CSV Separator, as the data on our CSV file is separated in columns, we are using the &amp;quot; | &amp;quot; sign.
-Select the number of columns expected.
-You can skip the first line, in case you have a header row in your file.
-Select the destination table.
-You can alternatively, override existing table fields.
-Select the mapping options and click &amp;lsquo;OK&amp;rsquo;.
-VIDEO??&lt;/p>
-&lt;h5 id="export-csv">Export CSV&lt;/h5>
-&lt;h6 id="introduction---good-description-simple-language-4">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use-4">When to use&lt;/h6>
-&lt;h6 id="how-to-use-4">How to use&lt;/h6>
-&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
-Video should be here?
-&lt;/code>&lt;/pre>
-&lt;h6 id="notes-4">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule&lt;/p>
-&lt;p>Export a table as CSV file
-Exports the content of the table as a CSV file&lt;/p>
-&lt;h5 id="copy-table-rows">Copy table rows&lt;/h5>
-&lt;h6 id="introduction---good-description-simple-language-5">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use-5">When to use&lt;/h6>
-&lt;h6 id="how-to-use-5">How to use&lt;/h6>
-&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
-Video should be here?
-&lt;/code>&lt;/pre>
-&lt;h6 id="notes-5">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule&lt;/p>
-&lt;p>Copy table rows from one table to another
-Copy rows between tables based on copy conditions&lt;/p>
-&lt;h5 id="clear-table-rows">Clear table rows&lt;/h5>
-&lt;h6 id="introduction---good-description-simple-language-6">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use-6">When to use&lt;/h6>
-&lt;h6 id="how-to-use-6">How to use&lt;/h6>
-&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
-Video should be here?
-&lt;/code>&lt;/pre>
-&lt;h6 id="notes-6">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule&lt;/p>
-&lt;p>Remove table rows matching a criteria
-Clears or conditionally removes rows from a table&lt;/p>
-&lt;h5 id="lookup-value-from-table">Lookup value from table&lt;/h5>
-&lt;h6 id="introduction---good-description-simple-language-7">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use-7">When to use&lt;/h6>
-&lt;h6 id="how-to-use-7">How to use&lt;/h6>
-&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
-Video should be here?
-&lt;/code>&lt;/pre>
-&lt;h6 id="notes-7">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule&lt;/p>
-&lt;p>Lookup table value matching a criteria
-Lookup table cell value based on conditions&lt;/p>
-&lt;h5 id="update-table-values">Update table values&lt;/h5>
-&lt;h6 id="introduction---good-description-simple-language-8">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use-8">When to use&lt;/h6>
-&lt;h6 id="how-to-use-8">How to use&lt;/h6>
-&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
-Video should be here?
-&lt;/code>&lt;/pre>
-&lt;h6 id="notes-8">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule&lt;/p>
-&lt;p>Update table column matching a criteria
-Updates table cell values based on conditions&lt;/p>
-&lt;h5 id="sort-table">Sort table&lt;/h5>
-&lt;h6 id="introduction---good-description-simple-language-9">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use-9">When to use&lt;/h6>
-&lt;h6 id="how-to-use-9">How to use&lt;/h6>
-&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
-Video should be here?
-&lt;/code>&lt;/pre>
-&lt;h6 id="notes-9">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule&lt;/p>
-&lt;p>Sort a table based on a table field(s)
-Sort table data based on multiple conditions.
-Multiple sortings can be used sequentially to achieve the desired results&lt;/p>
-&lt;h5 id="aggregate-table">Aggregate table&lt;/h5>
-&lt;h6 id="introduction---good-description-simple-language-10">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use-10">When to use&lt;/h6>
-&lt;h6 id="how-to-use-10">How to use&lt;/h6>
-&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
-Video should be here?
-&lt;/code>&lt;/pre>
-&lt;h6 id="notes-10">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule&lt;/p>
-&lt;p>See example in suggestion box&lt;/p>
-&lt;p>Aggregate table values
-&amp;ldquo;Use this rule to perform sum of a table cell, count the rows or even calculate the avg of the value within a table cell. Use conditions to further improve how aggregation occurs&amp;rdquo;&lt;/p>
-&lt;h5 id="hide--show-column">Hide / Show column&lt;/h5>
-&lt;h6 id="introduction---good-description-simple-language-11">Introduction - good description, simple language&lt;/h6>
-&lt;pre>&lt;code> A screenshots back-up the intro
-&lt;/code>&lt;/pre>
-&lt;h6 id="when-to-use-11">When to use&lt;/h6>
-&lt;h6 id="how-to-use-11">How to use&lt;/h6>
-&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
-Video should be here?
-&lt;/code>&lt;/pre>
-&lt;h6 id="notes-11">Notes&lt;/h6>
-&lt;p>Explain other advanced scenarios of the rule&lt;/p>
-&lt;p>Hide or show table columns
-Similar to hide / show rule enables the complete hidding&lt;/p></description></item><item><title>Docs: Remove table row</title><link>https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The **Loop table **rule allows you to loop through table rows allowing you to trigger fields or rules within the specified table. This rule is often used when the same action must be performed for a multiple rows within a table. To prevent triggering the action manually, you can use this rule to loop through each row and trigger the action. For example calculating the total price spent for an item.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>To demonstrate this rule, we will loop through a simple &lt;strong>Purchase table&lt;/strong> in which we will calculate the total price spent on each item bought. To learn more on how to add a table into your form go to In the table we will have the following columns:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Item&lt;/strong> - text box field representing the name of the item bought. To learn how to add a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Price&lt;/strong> - number field representing the price of the item. To learn how to add a number field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Quantity&lt;/strong> - number field representing the quantity of the item.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Total&lt;/strong> - number field representing the total quantity spent on the item.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Calculate total&lt;/strong> - a button with a &lt;strong>Set form field&lt;/strong> rule attached. To learn more on how to add and how to use the &lt;strong>Set form field&lt;/strong> go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field/">Set form field rule&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/loop-table-purchase-table.jpg" alt="Edit rule - purchase table">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>The goal in this example is to loop though the table and trigger the &lt;strong>Calculate total&lt;/strong> button so that for each item purchased, the total can be calculated depending on its quantity.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Loop table&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Loop table&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a table&lt;/strong> option, select the table you want to loop through.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a column field or rule to trigger&lt;/strong> option, select a field or rule you want to trigger when looping through the table. In this example, we will select the &lt;strong>Calculate total&lt;/strong> button from the table column.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/loop-table-edit-rule.jpg" alt="Edit rule - loop table">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable start action&lt;/strong> gives you two options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Yes&lt;/strong> - allows you to select a field that will execute before the loop starts.&lt;/li>
+&lt;li>&lt;strong>No&lt;/strong> - no changes are made, the loop will execute straight away.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable end action&lt;/strong> gives you two options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Yes&lt;/strong> - allows you to select a field that will execute after the loop finishes.&lt;/li>
+&lt;li>&lt;strong>No&lt;/strong> - no changes are made, the loop will end without any action.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Add table row</title><link>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</guid><description/></item><item><title>Docs: Remove table row</title><link>https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Import CSV or Excel into Table</title><link>https://docs.kianda.com/docs/platform/rules/tables/import-csv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/import-csv/</guid><description>
