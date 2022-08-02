@@ -1,5 +1,6 @@
 ---
 title: "Sort table"
+weight: 9
 ---
 
 {{% pageinfo color="primary" %}}

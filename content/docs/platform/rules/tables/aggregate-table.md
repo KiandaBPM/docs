@@ -1,5 +1,6 @@
 ---
 title: "Aggregate table"
+weight: 10
 ---
 
 This rule allows you to aggregate the values of a column in a table within Kianda.
