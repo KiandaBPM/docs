@@ -7,7 +7,7 @@ weight: 1
 
 ## Introduction
 
-With the **Set form field** rule you have the ability to select a field within your process and give it a value using plain text or an expression. With this rule you can also set multiple fields at once by adding more fields to the value mapping.
+Using the **Set form field** rule you have the ability to select a field within your process and assign it a value using manually typed text or an expression. With the **Set form field** rule you can also set multiple fields at once by adding more fields to the value mapping within the rule.
 
 ## When to use 
 
@@ -31,7 +31,7 @@ You can add this rule:
 5. In the **Field value mapping** section, you can select which fields to set and what values to give them. You can do that with the following fields:
 
    - **Form field to set** - this dropdown list is used to select a field from within your process that you want to set.
-   - **Value or expression** - in this field you can type in text manually which is used as the value to be set in the above field. To make this rule dynamic and use other fields as values, you can use expressions. To learn more about expressions go to [Expression builder](/docs/platform/rules/general/expression-builder/).
+   - **Value or expression** - in this field you are able to type in text manually to set the value for a desired field. To make this rule dynamic and use other fields as values, you can use expressions. To learn more about expressions go to [Expression builder](/docs/platform/rules/general/expression-builder/).
    - **Add mapping** - you can choose to set multiple fields in your process by clicking on **Add mapping** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png).
 
 ### Editing, deleting or duplicating rules
