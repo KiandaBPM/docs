@@ -1,9 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Table rules</title><link>https://docs.kianda.com/docs/platform/rules/tables/</link><description>Recent content in Table rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/tables/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs:</title><link>https://docs.kianda.com/docs/platform/rules/tables/hide-show-column/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/hide-show-column/</guid><description>
-&lt;pre tabindex="0">&lt;code>title: &amp;#34;Hide or Show table column&amp;#34;
-&lt;/code>&lt;/pre>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Aggregate table</title><link>https://docs.kianda.com/docs/platform/rules/tables/aggregate-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/aggregate-table/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Table rules</title><link>https://docs.kianda.com/docs/platform/rules/tables/</link><description>Recent content in Table rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/tables/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Aggregate table</title><link>https://docs.kianda.com/docs/platform/rules/tables/aggregate-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/aggregate-table/</guid><description>
 &lt;p>This rule allows you to aggregate the values of a column in a table within Kianda.&lt;/p>
 &lt;p>When to use:&lt;/p>
 &lt;p>This rule should be used when working with a table in Kianda and you want to aggregate the values in a column and store this in another field within the form.&lt;/p>
@@ -108,7 +103,10 @@
 &lt;p>The final field, &lt;strong>Destination file field&lt;/strong>, is the field in the form which will store the export of the table within the Kianda form.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>Once these fields are set you can also set conditions on the rule, further details on conditions can be found here: &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">https://docs.kianda.com/docs/platform/rules/general/add-conditions/&lt;/a>&lt;/p></description></item><item><title>Docs: Import CSV or Excel into Table</title><link>https://docs.kianda.com/docs/platform/rules/tables/import-csv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/import-csv/</guid><description>
+&lt;p>Once these fields are set you can also set conditions on the rule, further details on conditions can be found here: &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">https://docs.kianda.com/docs/platform/rules/general/add-conditions/&lt;/a>&lt;/p></description></item><item><title>Docs: Hide or Show table column</title><link>https://docs.kianda.com/docs/platform/rules/tables/hide-show-column/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/hide-show-column/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction&lt;/p>
+&lt;/div></description></item><item><title>Docs: Import CSV or Excel into Table</title><link>https://docs.kianda.com/docs/platform/rules/tables/import-csv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/import-csv/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Lookup value from table</title><link>https://docs.kianda.com/docs/platform/rules/tables/lookup-value-from-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/lookup-value-from-table/</guid><description>
