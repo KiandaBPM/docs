@@ -466,7 +466,10 @@ Your browser does not support the video tag.
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;TriggerField&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Process instance</title><link>https://docs.kianda.com/docs/platform/application-designer/process/process-instance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/process-instance/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Loop table</title><link>https://docs.kianda.com/docs/platform/rules/tables/loop-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/loop-table/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction&lt;/p>
+&lt;/div></description></item><item><title>Docs: Process instance</title><link>https://docs.kianda.com/docs/platform/application-designer/process/process-instance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/process-instance/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Kianda processes are made up of &lt;strong>forms&lt;/strong>, which in turn contain &lt;strong>fields&lt;/strong> or &lt;strong>controls&lt;/strong> and &lt;strong>rules&lt;/strong>. Fields are used to take in user input, make calculations, display values and so on, and rules are used to execute actions to drive the process.&lt;/p>
 &lt;p>&lt;strong>Kianda Designer&lt;/strong> is used to create these forms and form elements within a process. Each process in Kianda Designer will have it’s own unique link or URL and this can be shared with other form designers for co-creation, for example, for a process named ‘Training process’ the link is:&lt;/p>
@@ -1432,7 +1435,185 @@ The Safety Team
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/process-level-security/">Process level security&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/sso/">Single Sign-On&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/security/data-residency/">Data residency&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Cloud gateway</title><link>https://docs.kianda.com/docs/platform/connectors/cloud-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/cloud-gateway/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Add table row</title><link>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</guid><description>
+&lt;h6 id="introduction---good-description-simple-language">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use">When to use&lt;/h6>
+&lt;h6 id="how-to-use">How to use&lt;/h6>
+&lt;p>Number of points for the actual steps you need to follow to configure the rule.&lt;/p>
+&lt;h6 id="notes">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule
+Loops through table rows
+Loops through a table to trigger consecutively rules within the table
+FROM HELP??
+If you need to perform loop actions on table, you can do so with Loop tables under Add a rule. In the example, we are importing data using the file and performing loop action on the &amp;lsquo;Set Complete&amp;rsquo; button.&lt;/p>
+&lt;p>In this case, we need to set form field value of &amp;lsquo;Status&amp;rsquo; to &amp;lsquo;Complete&amp;rsquo;.&lt;/p>
+&lt;p>Select &amp;lsquo;Loop Complete&amp;rsquo; button.
+Go to &amp;lsquo;Add a rule&amp;rsquo;.
+Select &amp;lsquo;Tables&amp;rsquo;.
+Select &amp;lsquo;Loop table&amp;rsquo;.
+Select a table &amp;lsquo;List of tickets&amp;rsquo;.
+Select column field which needs to be triggered.
+VIDEO??&lt;/p>
+&lt;h5 id="add-table-row">Add table row&lt;/h5>
+&lt;h6 id="introduction---good-description-simple-language-1">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use-1">When to use&lt;/h6>
+&lt;h6 id="how-to-use-1">How to use&lt;/h6>
+&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
+Video should be here?
+&lt;/code>&lt;/pre>
+&lt;h6 id="notes-1">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule
+Add a new row to a table
+Adds a new row into a table&lt;/p>
+&lt;h5 id="remove-table-row">Remove table row&lt;/h5>
+&lt;h6 id="introduction---good-description-simple-language-2">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use-2">When to use&lt;/h6>
+&lt;h6 id="how-to-use-2">How to use&lt;/h6>
+&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
+Video should be here?
+&lt;/code>&lt;/pre>
+&lt;h6 id="notes-2">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule&lt;/p>
+&lt;p>Remove current row from a table
+Remove a row from the table.
+Run this rule from the context of the row to remove the current row&lt;/p>
+&lt;h5 id="import-csv">Import CSV&lt;/h5>
+&lt;h6 id="introduction---good-description-simple-language-3">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use-3">When to use&lt;/h6>
+&lt;h6 id="how-to-use-3">How to use&lt;/h6>
+&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
+Video should be here?
+&lt;/code>&lt;/pre>
+&lt;h6 id="notes-3">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule
+Import a csv file into a table
+Imports CSV or XLSX data into a table based on provided mapping
+FROM HELP??
+Yes, you can easily do that. First of all, you will need a File upload input, so you can upload the file from your computer. Then, you can create the rule wherever it suits you. On the example, we created a button specifically to map the CSV file to the table.&lt;/p>
+&lt;p>Click on the button to add the rule.
+Navigate to Tables &amp;gt; Import CSV.
+Select the CSV file field where you will upload the CSV file.
+On the CSV Separator, as the data on our CSV file is separated in columns, we are using the &amp;quot; | &amp;quot; sign.
+Select the number of columns expected.
+You can skip the first line, in case you have a header row in your file.
+Select the destination table.
+You can alternatively, override existing table fields.
+Select the mapping options and click &amp;lsquo;OK&amp;rsquo;.
+VIDEO??&lt;/p>
+&lt;h5 id="export-csv">Export CSV&lt;/h5>
+&lt;h6 id="introduction---good-description-simple-language-4">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use-4">When to use&lt;/h6>
+&lt;h6 id="how-to-use-4">How to use&lt;/h6>
+&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
+Video should be here?
+&lt;/code>&lt;/pre>
+&lt;h6 id="notes-4">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule&lt;/p>
+&lt;p>Export a table as CSV file
+Exports the content of the table as a CSV file&lt;/p>
+&lt;h5 id="copy-table-rows">Copy table rows&lt;/h5>
+&lt;h6 id="introduction---good-description-simple-language-5">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use-5">When to use&lt;/h6>
+&lt;h6 id="how-to-use-5">How to use&lt;/h6>
+&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
+Video should be here?
+&lt;/code>&lt;/pre>
+&lt;h6 id="notes-5">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule&lt;/p>
+&lt;p>Copy table rows from one table to another
+Copy rows between tables based on copy conditions&lt;/p>
+&lt;h5 id="clear-table-rows">Clear table rows&lt;/h5>
+&lt;h6 id="introduction---good-description-simple-language-6">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use-6">When to use&lt;/h6>
+&lt;h6 id="how-to-use-6">How to use&lt;/h6>
+&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
+Video should be here?
+&lt;/code>&lt;/pre>
+&lt;h6 id="notes-6">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule&lt;/p>
+&lt;p>Remove table rows matching a criteria
+Clears or conditionally removes rows from a table&lt;/p>
+&lt;h5 id="lookup-value-from-table">Lookup value from table&lt;/h5>
+&lt;h6 id="introduction---good-description-simple-language-7">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use-7">When to use&lt;/h6>
+&lt;h6 id="how-to-use-7">How to use&lt;/h6>
+&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
+Video should be here?
+&lt;/code>&lt;/pre>
+&lt;h6 id="notes-7">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule&lt;/p>
+&lt;p>Lookup table value matching a criteria
+Lookup table cell value based on conditions&lt;/p>
+&lt;h5 id="update-table-values">Update table values&lt;/h5>
+&lt;h6 id="introduction---good-description-simple-language-8">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use-8">When to use&lt;/h6>
+&lt;h6 id="how-to-use-8">How to use&lt;/h6>
+&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
+Video should be here?
+&lt;/code>&lt;/pre>
+&lt;h6 id="notes-8">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule&lt;/p>
+&lt;p>Update table column matching a criteria
+Updates table cell values based on conditions&lt;/p>
+&lt;h5 id="sort-table">Sort table&lt;/h5>
+&lt;h6 id="introduction---good-description-simple-language-9">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use-9">When to use&lt;/h6>
+&lt;h6 id="how-to-use-9">How to use&lt;/h6>
+&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
+Video should be here?
+&lt;/code>&lt;/pre>
+&lt;h6 id="notes-9">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule&lt;/p>
+&lt;p>Sort a table based on a table field(s)
+Sort table data based on multiple conditions.
+Multiple sortings can be used sequentially to achieve the desired results&lt;/p>
+&lt;h5 id="aggregate-table">Aggregate table&lt;/h5>
+&lt;h6 id="introduction---good-description-simple-language-10">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use-10">When to use&lt;/h6>
+&lt;h6 id="how-to-use-10">How to use&lt;/h6>
+&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
+Video should be here?
+&lt;/code>&lt;/pre>
+&lt;h6 id="notes-10">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule&lt;/p>
+&lt;p>See example in suggestion box&lt;/p>
+&lt;p>Aggregate table values
+&amp;ldquo;Use this rule to perform sum of a table cell, count the rows or even calculate the avg of the value within a table cell. Use conditions to further improve how aggregation occurs&amp;rdquo;&lt;/p>
+&lt;h5 id="hide--show-column">Hide / Show column&lt;/h5>
+&lt;h6 id="introduction---good-description-simple-language-11">Introduction - good description, simple language&lt;/h6>
+&lt;pre>&lt;code> A screenshots back-up the intro
+&lt;/code>&lt;/pre>
+&lt;h6 id="when-to-use-11">When to use&lt;/h6>
+&lt;h6 id="how-to-use-11">How to use&lt;/h6>
+&lt;pre>&lt;code> Number of points for the actual steps you need to follow to configure the rule.
+Video should be here?
+&lt;/code>&lt;/pre>
+&lt;h6 id="notes-11">Notes&lt;/h6>
+&lt;p>Explain other advanced scenarios of the rule&lt;/p>
+&lt;p>Hide or show table columns
+Similar to hide / show rule enables the complete hidding&lt;/p></description></item><item><title>Docs: Cloud gateway</title><link>https://docs.kianda.com/docs/platform/connectors/cloud-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/cloud-gateway/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Connecting to SharePoint lists and Libraries</title><link>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</guid><description>
@@ -4009,163 +4190,4 @@ Your browser does not support the video tag.
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: List control</title><link>https://docs.kianda.com/docs/platform/controls/input/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/list/</guid><description>
-&lt;p>&lt;strong>List fields&lt;/strong> (controls) can be manually entered into a form or can be linked to from an external site like SharePoint. There are different display options - from dropdown lists to checklists - as well as other options (like the ability to make a list field mandatory for a user to complete).&lt;/p>
-&lt;p>For example, you could insert a list field in your form that will show a drop-down list of Types of Training that is maintained on SharePoint. The advantage of linking to an external data source like this is that your list will stay up-to-date with any changes made to the list on SharePoint.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>To add a &lt;strong>List field&lt;/strong> to a form, first open the relevant process.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select the form within that process that you want to add the field to (so that the &lt;strong>Edit Form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible). If you want to add the List field to a panel within your form, first select the panel by clicking on it and then add the &lt;strong>List field&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Controls&lt;/strong> in the left-hand pane to expand the Controls menu.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>List&lt;/strong>. A &lt;strong>New field - List&lt;/strong> dialog box will open with a range of options you can choose from for your new List field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-field-dialog-box.jpg" alt="New list field dialog box">&lt;/p>
-&lt;p>The options available in the &lt;strong>New field - List&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the List field from the default title &lt;strong>List 1&lt;/strong>. For example, if you are working on a Training Request form, you may want to insert a List field to contain the types of training and may choose to title this &amp;lsquo;Type of Training&amp;rsquo;.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Name&lt;/strong> - This is a unique name for the field.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user to complete the List field. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted. In this example, the list field is titled &amp;lsquo;Type of Training&amp;rsquo; and has associated help text:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-field-help-text.jpg" alt="List field help text example">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>List source&lt;/strong> - You have three main options in terms of the source of the choices that will appear in your List field:&lt;/p>
-&lt;p>a) &lt;strong>Entered manually&lt;/strong>
-b) &lt;strong>Form data&lt;/strong>
-c) &lt;strong>Data source&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;p>We will look at each of these three list source options in turn.&lt;/p>
-&lt;p>If you select the &lt;strong>Entered manually&lt;/strong> checkbox, you must then manually type the choices you want to appear in your list into the &lt;strong>List source&lt;/strong> box. Three default choices are shown - simply replace these with the choices you want to appear in your list (keeping the same format of one choice per line). You can insert more than three choices.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-source-manually.jpg" alt="Manually entered list">&lt;/p>
-&lt;p>If you select the &lt;strong>Form data&lt;/strong> checkbox (so the source of your list options is a form field), then the box under &lt;strong>List source&lt;/strong> will now show the instruction &amp;lsquo;Select a form field&amp;hellip;&amp;rsquo; and two further options will appear below this - &lt;strong>Display field&lt;/strong> and &lt;strong>Value field&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-source-form-data.jpg" alt="List field list source form data">&lt;/p>
-&lt;p>Click into the &lt;strong>List source&lt;/strong> box and select the form field you wish to use as your &lt;strong>List source&lt;/strong> and then choose a &lt;strong>Display field&lt;/strong> (the field used to display values) and &lt;strong>Value field&lt;/strong> to specify how you want to map the values from your data source into your list field.&lt;/p>
-&lt;p>Select the &lt;strong>Data source&lt;/strong> checkbox if you want to use an external data source as the source for the choices to appear in your list:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-source-datasource.jpg" alt="List field list source datasource">&lt;/p>
-&lt;p>Then click on the &lt;strong>Datasource&lt;/strong> button &lt;img src="https://docs.kianda.com/images/datasource.png" alt="Data source button"> to open the &lt;strong>Select datasource&lt;/strong> dialog box and choose the data source you want to connect to - for example, SharePoint. For more information on how to connect to data sources in Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-select-data-source.jpg" alt="List field select data source dialog box">&lt;/p>
-&lt;p>Once you&amp;rsquo;ve selected a data source, click &lt;strong>OK&lt;/strong> - a range of new options will now be shown below the &lt;strong>Datasource&lt;/strong> button in the &lt;strong>New field - List&lt;/strong> dialog box.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-datasource-options.jpg" alt="List field Data source options example">&lt;/p>
-&lt;p>Select the &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and a field to &lt;strong>Sort by&lt;/strong> (the &amp;lsquo;Sort by&amp;rsquo; option appears once you&amp;rsquo;ve selected a data source). Once you&amp;rsquo;ve chosen a field to sort by, an additional option - &lt;strong>Direction&lt;/strong> - appears, enabling you to choose to sort values in &lt;strong>Ascending&lt;/strong> or &lt;strong>Descending&lt;/strong> order. In the example shown here, Kianda has been chosen as the data source and a field titled &amp;lsquo;Type of Training&amp;rsquo; from a form called &amp;lsquo;Training Request&amp;rsquo; has been chosen as both the Display field and Value field.&lt;/p>
-&lt;p>Click on the &lt;strong>Edit conditions&lt;/strong> button if you want to add a condition to your List field - for example, if you want to create a cascading list where the options available in a second list are dependent upon the option the user has chosen from a first list. To learn more about applying conditions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">&lt;strong>Conditions&lt;/strong>&lt;/a> and to find out more about creating cascading lists, watch the video on &lt;a href="https://docs.kianda.com/docs/how-to/create-cascading-dropdown-lists/">&lt;strong>How to create cascading dropdown lists&lt;/strong>&lt;/a>.&lt;/p>
-&lt;p>If you choose Kianda as the data source for your list field, two additional options will be displayed - &lt;strong>Query any process&lt;/strong> (checks all processes within Kianda for the field you have selected as the source for your list) and &lt;strong>Query type&lt;/strong> (you can select anything created by or assigned to a particular user).&lt;/p>
-&lt;p>Once you&amp;rsquo;ve selected your &lt;strong>List source&lt;/strong> and the various options associated with it, complete the remaining options in the &lt;strong>New field - List&lt;/strong> dialog box:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Enable offline cache&lt;/strong> - You can choose this option to make list data available when offline (only available for lists with less than 500 options).&lt;/li>
-&lt;li>&lt;strong>Display format&lt;/strong> - You can choose to have your list field appear as either a Drop-down list, a Radio list, Multi-select or a Checkbox list.&lt;/li>
-&lt;/ul>
-&lt;p>By default, the &lt;strong>Dropdown list&lt;/strong> radio button is selected, along with two additional options - &lt;strong>Filter mode&lt;/strong> (you can choose either &amp;lsquo;Starts With&amp;rsquo; or &amp;lsquo;Contains&amp;rsquo;) and &lt;strong>Enable native selector on mobile&lt;/strong> (so a user completing the list field on their mobile phone can use the default list selector on it).&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-display-format.jpg" alt="Dropdown list display format">&lt;/p>
-&lt;p>If you choose &lt;strong>Radio list&lt;/strong> or &lt;strong>Checkbox list&lt;/strong> you can choose a &lt;strong>List display position&lt;/strong> of either Vertical or Horizontal.&lt;/p>
-&lt;ol start="5">
-&lt;li>
-&lt;p>Once you complete the &lt;strong>New field - List&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong> button, a new &lt;strong>List field&lt;/strong> is added to your form, with the name you inserted as the &lt;strong>Title&lt;/strong> in the dialog box (by default, the title is &lt;strong>List 1&lt;/strong> unless you change it).&lt;/p>
-&lt;p>If we take the example of a Training Request form with a list field that contains the different types of training a user can request, the list field (which is titled &amp;lsquo;Type of Training&amp;rsquo; and has a drop-down list format) could look like this when a user views it on their mobile phone:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-example-mobile.jpg" alt="List field dropdown list example mobile phone">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>To see how your form or field will look like on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by clicking the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">(play icon) after first saving your changes.&lt;/p>
-&lt;h3 id="how-to-edit-move-and-delete-file-upload-fields">How to edit, move and delete File upload fields&lt;/h3>
-&lt;p>To edit a &lt;strong>List field&lt;/strong>:&lt;/p>
-&lt;ol>
-&lt;li>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-select-to-edit.jpg" alt="Select file upload file to edit">&lt;/p>
-&lt;p>The &lt;strong>Edit field - List&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - List&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list#how-to-get-started">How to get started&lt;/a>).&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-edit-dialog-example.jpg" alt="Edit date field dialog box">&lt;/p>
-&lt;p>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
-&lt;p>To move a &lt;strong>List field&lt;/strong>, simply&lt;/p>
-&lt;ol>
-&lt;li>Select the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
-&lt;li>Drag and drop the field wherever you want to move it to within your form&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-move-draghandle.jpg" alt="Date field drag handle">&lt;/p>
-&lt;p>To delete a &lt;strong>List field&lt;/strong> from your form:&lt;/p>
-&lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
-&lt;/ol>
-&lt;h3 id="how-to-edit-list-field-properties">How to edit List field properties&lt;/h3>
-&lt;p>To view or edit the field properties associated with a &lt;strong>List field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-field-properties.jpg" alt="List properties">&lt;/p>
-&lt;p>For example, the &lt;strong>Field Properties&lt;/strong> associated with a &lt;strong>List field&lt;/strong> titled &amp;lsquo;Type of Training&amp;rsquo; are shown here and include:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Field type&lt;/strong> - The type of field, in this case a &lt;strong>List&lt;/strong> field.&lt;/li>
-&lt;li>&lt;strong>Title&lt;/strong> - The Title of the field, in this case &amp;lsquo;Type of Training&amp;rsquo;.&lt;/li>
-&lt;li>&lt;strong>Show title&lt;/strong> - If this is selected, the List field title will be shown in the form.&lt;/li>
-&lt;li>&lt;strong>Required&lt;/strong> - If this is selected, the List field will be mandatory for the form user.&lt;/li>
-&lt;li>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/li>
-&lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the List field will be visible in the form.&lt;/li>
-&lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the List field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
-&lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
-&lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
-&lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>List controls&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Process properties</title><link>https://docs.kianda.com/docs/platform/application-designer/process/properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/properties/</guid><description>
-&lt;p>Every process, form and control, such as text boxes and lists, will have &lt;strong>properties&lt;/strong> visible in the right-hand pane of the &lt;a href="platform/form_designer2.md">Designer&lt;/a> view.&lt;/p>
-&lt;h2 id="process-properties">Process properties&lt;/h2>
-&lt;p>When you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> &amp;gt; click on a process &amp;gt; &lt;strong>Process properties&lt;/strong> in the right-hand pane, you will see the properties for the chosen process.&lt;/p>
-&lt;p>The following properties are visible:&lt;/p>
-&lt;ul>
-&lt;li>Title - the title of process for example Quarterly Training Request&lt;/li>
-&lt;li>Page layout - you can click on &lt;strong>Wide&lt;/strong> &lt;img src="https://docs.kianda.com/images/wide-resized.png" alt="Wide button"> or &lt;strong>Narrow&lt;/strong> &lt;img src="https://docs.kianda.com/images/narrow-resized.png" alt="Narrow button"> to change the layout.
-&lt;img src="https://docs.kianda.com/images/formlayout_resized.png" alt="Process and form properties">&lt;/li>
-&lt;/ul>
-&lt;p>In the image above, the process &amp;lsquo;Quarterly Training Request&amp;rsquo; has 2 forms &amp;lsquo;Training Request&amp;rsquo; and &amp;lsquo;Training Approval&amp;rsquo;. Clicking on one of these forms will show the &lt;a href="#form-properties">Form properties&lt;/a>.&lt;/p>
-&lt;h2 id="form-properties">Form properties&lt;/h2>
-&lt;p>When you click on a form, the &lt;strong>Form properties&lt;/strong> appear in the right-hand pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/formproperties_resized.png" alt="Form properties">&lt;/p>
-&lt;p>The following properties are visible:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Title - the form title, for example Training Request&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Visible - click on this checkbox if you want the form to be visible to users&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Show info - click on this checkbox if you want to show information, for example who are the form owners, the design version and when the form was started and completed. This information will pop up at the bottom of the form.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/forminfo_resized.png" alt="Form information">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>Underneath form properties you will see &lt;strong>Form submit rules&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about Form rules.&lt;/p>
-&lt;p>Click on a control field, for example a text box, in the form to see &lt;a href="#field-properties">Field properties&lt;/a>.&lt;/p>
-&lt;h2 id="field-properties">Field properties&lt;/h2>
-&lt;p>When you click on any field, such as User picker, list or text box, the field properties appear in the right-hand pane.
-&lt;img src="https://docs.kianda.com/images/fieldproperties_resized.png" alt="Field properties">&lt;/p>
-&lt;p>The &lt;strong>Field type&lt;/strong>, in the example above, &lt;strong>Text box&lt;/strong>, is shown along with the &lt;strong>Title&lt;/strong> of the field, in the example above, this is Employee Name.&lt;/p>
-&lt;p>The options within properties are:&lt;/p>
-&lt;ul>
-&lt;li>Show Title - show the title of the field&lt;/li>
-&lt;li>Required - tick this checkbox to make this field mandatory for users to fill out&lt;/li>
-&lt;li>Enabled - tick this checkbox to make the field enabled for users to fill out&lt;/li>
-&lt;li>Visible - tick this checkbox to make the field visible to users&lt;/li>
-&lt;li>Layout - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the text box for mobile use.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize-frame.png" alt="Changing text box width">&lt;/p>
-&lt;p>Underneath field properties you will see &lt;strong>Rules&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about Field rules.&lt;/p></description></item></channel></rss>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
