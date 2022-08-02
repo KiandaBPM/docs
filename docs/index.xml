@@ -1618,7 +1618,62 @@ Similar to hide / show rule enables the complete hidding&lt;/p></description></i
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Connecting to SharePoint lists and Libraries</title><link>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/connect-to-sharepoint/</guid><description>
 &lt;p>This video demonstrates how to connect to a datasource in SharePoint and use that information in a form list.&lt;/p>
-&lt;div style="padding:50.94% 0 0 0;position:relative;">&lt;iframe src="https://player.vimeo.com/video/677724364?h=cdfc835f25&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Connecting to SharePoint example">&lt;/iframe>&lt;/div>&lt;script src="https://player.vimeo.com/api/player.js">&lt;/script></description></item><item><title>Docs: Excel workbook add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</guid><description>
+&lt;div style="padding:50.94% 0 0 0;position:relative;">&lt;iframe src="https://player.vimeo.com/video/677724364?h=cdfc835f25&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Connecting to SharePoint example">&lt;/iframe>&lt;/div>&lt;script src="https://player.vimeo.com/api/player.js">&lt;/script></description></item><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/platform/administration/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/designer/</guid><description>
+&lt;p>Kianda &lt;strong>Designer&lt;/strong> is available to administrators and those users with the role &lt;strong>Designer&lt;/strong>. Designer is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer you can create forms, add controls and rules to create processes to work the way you want.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To start creating a process so that Kianda Designer will open:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Designer&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can view any existing created processes in the main &lt;strong>Process design&lt;/strong> view.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/main-process-view.jpg" alt="Process view">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Processes may be arranged in folders or groups. Click on the folder name to see processes within that group, for example a group like &lt;strong>Training&lt;/strong> as shown in the image.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/training-folder.jpg" alt="Training folder of processes">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on a process name to see the process design. You are then brought into &lt;strong>Kianda Designer&lt;/strong>, see &lt;a href="#design-view">Design view&lt;/a> details below.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To import a process created for example in another workspace, click on &lt;strong>Import&lt;/strong> &lt;img src="https://docs.kianda.com/images/import_frame.png" alt="Import button">. Also note that from the main process view you can also export processes listed here for use in another workspace, by clicking on &lt;strong>Export&lt;/strong> &lt;img src="https://docs.kianda.com/images/export_frame.png" alt="Export process">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To create a process using a predefined template, click on the &lt;strong>App Store&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To create a new process, click on the &lt;strong>Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Add new process&lt;/strong> dialog box appears where you can fill out details for your new process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/new-process.jpg" alt="New process view">&lt;/p>
+&lt;p>In this dialog box fill out the following fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> - give the new process a title&lt;/li>
+&lt;li>&lt;strong>ID&lt;/strong> - the Unique ID field is autofilled from the title field. Note that this ID is unique for each process.&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong> - a short description that describes the new process&lt;/li>
+&lt;li>&lt;strong>Group&lt;/strong> - choose an existing group/folder to add the new process to, or type in a new group name to create a new group of processes&lt;/li>
+&lt;li>&lt;strong>Administrators&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or a mix of both users and groups for people who will be administrators of this process. The process administrator(s) is the only person/people who can edit &lt;strong>draft&lt;/strong> process designs. Once the process design is published, workspace administrators will be able to access the process design.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Once a process is opened, you are brought straight into Kianda &lt;strong>Designer&lt;/strong>, see &lt;a href="#designer-view">Designer view&lt;/a> below.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="designer-view">Designer view&lt;/h2>
+&lt;p>Kianda &lt;strong>Designer&lt;/strong> allows you to create forms within your process, add in fields, rules and set out exactly how you want your form to appear, for example mandatory fields, help text, connection to a data source that pulls in information into the form as well as using &lt;strong>settings&lt;/strong> to control who has access to forms and fields.&lt;/p>
+&lt;p>Kianda &lt;strong>Designer&lt;/strong> is made up of three panes.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/design-view.jpg" alt="Designer view">&lt;/p>
+&lt;ol>
+&lt;li>In the left-hand pane, you will find the &lt;strong>Controls&lt;/strong> and &lt;strong>Rules&lt;/strong> as well as buttons to &lt;strong>Save&lt;/strong>, &lt;strong>Preview&lt;/strong> and &lt;strong>Publish&lt;/strong> processes, as well as exiting Kianda Designer to return to the main process view.&lt;/li>
+&lt;li>In the centre pane, also called the &lt;strong>canvas&lt;/strong>, you can view form details and manipulate form fields.&lt;/li>
+&lt;li>In the right-hand pane, you can view and edit process and field &lt;strong>properties&lt;/strong> as well as viewing rules assigned to fields, forms and processes.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about Designer in detail and how to use the interface to create forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
+&lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Excel workbook add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Field Display mode</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/field-display-mode/</guid><description>
@@ -4110,84 +4165,4 @@ Your browser does not support the video tag.
 &lt;p>&lt;strong>Note&lt;/strong>: In the case of the last three expressions, you should select a field which contains data. If you give the name of a button field for example, then no data will be returned.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p>
-&lt;p>To see how expressions are used in controls such as Number fields, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/p></description></item><item><title>Docs: Go to form</title><link>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</guid><description>
-&lt;p>The &lt;strong>Go to form&lt;/strong> rule is used to control how a user moves between forms. As mentioned in &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Form basics&lt;/a> by default the first form in a process is the &lt;strong>current form&lt;/strong>. Once submitted, control passes to the next form and the user is not allowed to go back to the previous form. The &lt;strong>Go to form&lt;/strong> rule allows you to redirect the user to any form. The user can then navigate back and forth between those forms.&lt;/p>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>This rule may only be added to a &lt;strong>button&lt;/strong>.&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>Warning&lt;/strong>&lt;/p>
-&lt;p>The &lt;strong>Close form&lt;/strong> and &lt;strong>Go to form&lt;/strong> rules &lt;strong>cannot&lt;/strong> be applied to the same button as both rules control which form comes next.&lt;/p>
-&lt;p>The &lt;strong>Save form&lt;/strong> rule must be used &lt;strong>and&lt;/strong> must &lt;strong>appear before the Go to form&lt;/strong> rule in the list of rules.&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To dynamically redirect a user to a form:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Go to form&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule - Go to form&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/Gotoform.png" alt="Go to form rule">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by filling out the following:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Select form&lt;/strong> - click on the field and select a form from the process.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Display mode&lt;/strong> - choose from:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Auto&lt;/strong> - the display mode will be either edit or read as determined by the system. If the destination form is the next form in the process workflow, and if the user is an owner of the form, and the form is not completed, then the form will be displayed in edit mode. Otherwise the form will appear in read mode.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Edit mode&lt;/strong> - the user will be able to edit the destination form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Read mode&lt;/strong> - the user will be able to read, but not edit, the destination form.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Set as current form&lt;/strong> - choose from the radio buttons &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> this will change the process flow, forcing the selected form to become the current, active form.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/go-to-form-example.jpg" alt="Go to form example">&lt;/p>
-&lt;p>For example in the image above of an IT Support process, there are a number of forms, one of which is &lt;strong>User Review&lt;/strong>. In Kianda Designer, the &lt;strong>Go to form&lt;/strong> rule is assigned to a &lt;strong>Resolved&lt;/strong> button in the &lt;strong>1st Level Support&lt;/strong> form, meaning that the &lt;strong>User Review&lt;/strong> form becomes the next active form, not the &lt;strong>2nd Level Support&lt;/strong> form although it is the next form in the process workflow.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Remember this rule can only be attached to a button. When you click on the button, the rule will appear in the right-hand pane under &lt;strong>Rules&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/resolved-go-to-form-eg.jpg" alt="Rule on a form field">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>See example above, for a &lt;strong>Go to form&lt;/strong> rule, called &amp;lsquo;Go to User Review&amp;rsquo; for a resolved button. Note there are 11 rules attached to that button so the order of execution is important, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> to learn more about how to change rule order.&lt;/p>
-&lt;p>The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.&lt;/p>
-&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
-&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>To see how expressions are used in controls such as Number fields, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/p></description></item></channel></rss>
