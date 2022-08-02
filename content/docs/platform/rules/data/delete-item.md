@@ -7,7 +7,7 @@ weight: 5
 
 ## Introduction
 
-This rule implements the Delete function which is one of the four CRUD functions. The rule will delete one or more items of data from a chosen data source (see notes below on the types of data source that can be used).
+This rule implements the Delete function which is one of the CRUD (Create, Read, Update and Database) functions.  The rule will delete an item data from a chosen data source, for example SharePoint, SAP or Oracle databases, see [Data connectors](/docs/platform/connectors/) for more details. 
 
 The **Data source filter** in this rule is used for targeting specific data item in your data connection. The item you want to delete within your data source is targeted by filtering it out using a field within your form. It is a good idea to connect a dummy field to your data source first and then use that field to filter for the item you want to delete. 
 
@@ -28,7 +28,7 @@ You can add this rule:
 
    ![Edit rule - Delete item dialog box](/images/delete-item-edit-rule.jpg)
 
-4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png), see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
 5. Click on **Select data source** button ![Select data source](/images/button-select-data-source.jpg)to select the data source you want to update an item in. When you select your data source, new mapping options are presented.
 

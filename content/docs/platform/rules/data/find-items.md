@@ -7,9 +7,9 @@ weight: 2
 
 ## Introduction
 
-This rule implements the Read function which is one of the four CRUD functions.  The rule will read one or more items of data from a chosen data source (see notes below on the types of data source that can be used).
+This rule implements the Read function which is one of the four CRUD (Create, Read, Update and Database) functions.  The rule will read one or more items of data from a chosen data source, for example SharePoint, SAP or Oracle databases, see [Data connectors](/docs/platform/connectors/) for more details. 
 
-This rule is used to find an item from your data-connections. To find an item, you could use a data source filter which acts as a conditional bridge between Kianda and data-connections. If the condition is true, you could map the data source field or text to the Kianda form field.
+This rule is used to find an item from your data connections. To find an item, you could use a data source filter which acts as a conditional bridge between Kianda and data connections. If the condition is true, you could map the data source field or text to the Kianda form field.
 
 This rule is used to perform a query and return data for use in the form. The data may be stored locally or in one of the data sources
 
@@ -41,7 +41,7 @@ You can add this rule:
 
 7. **Map results to table**:
 
-   - **Yes** -  selecting this option will allow you to
+   - **Yes** -  selecting this option will allow you to map results to a table and opens the following options below:
 
      ![Find items - mapping](/images/find-items-table-map.jpg)
 

@@ -7,7 +7,7 @@ weight: 4
 
 ## Introduction
 
-This rule implements the Update function which is one of the four CRUD functions. The rule will update one or more items of data from a chosen data source (see notes below on the types of data source that can be used).
+This rule implements the Update function which is one of the four CRUD (Create, Read, Update and Database) functions.  The rule will read one or more items of data from a chosen data source, for example SharePoint, SAP or Oracle databases, see [Data connectors](/docs/platform/connectors/) for more details. 
 
 The **Data source filter** in this rule is used for targeting specific data item in your data connection. The item you want to update within your data source is targeted by filtering it out using a field within your form. It is a good idea to connect a dummy field to your data source first and then use that field to filter for the item you want to update. The actual value used to update the item in your data source can also use a field or text filled out in your mapping section (see below for more detail). To make your **Update item** rule extremely dynamic, it is recommended to create field for filtering an item and a separate field for the new value you want your item to hold.
 
@@ -22,7 +22,7 @@ You can add this rule:
 
 ## How to get started
 
-1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the **Edit/pen** button ![Pen button](/images/penicon.png).
 
 2. Click on **Add a rule** > **Data** > **Update item**.
 
@@ -38,7 +38,7 @@ You can add this rule:
 
 6. **Data source filter** - works on condition bases where by you can filter the specific item that you want to update within your data source. The condition uses a field from within your form and therefore it is good practice to create a field and connect it to your data source to have the ability of selecting an item that you want to update. To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
 
-7. **Input mapping** - used to update an item inside of the data source that you selected.
+7. **Input mapping** - used to update an item inside of the data source that you selected. Within this section the following fields are visible:
 
    - **Form field or text** - you can select a field within your form or type in text manually to represent the value you want to your updated item to contain.
    - **Data source field** -  select a field in your data source to hold the new value.

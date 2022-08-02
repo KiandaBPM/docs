@@ -15,7 +15,7 @@ If you go to **Administration** > **Designer** and click on a process or create 
 
 There are five types of **Data** rules as follows:
 
-- **Create item** - The create item rule is used to create an item on your data-connection. This is a straight forward rule which allows you to connect to your data source and map inputs. You can also map a data source field or text back to Kianda on success or store an error message on failure.
+- **Create item** - The create item rule is used to create an item on your data connection. This is a straight forward rule which allows you to connect to your data source and map inputs. You can also map a data source field or text back to Kianda on success or store an error message on failure.
 
 - **Delete item** - This rule works exactly like Update item rule. To delete an item from your data connection, you could use a data source filter and map data source field or text from a data connection to Kianda form field.
 

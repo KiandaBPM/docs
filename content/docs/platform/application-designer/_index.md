@@ -6,15 +6,13 @@ typora-root-url: ..\..\..\..\static
 
 Creating your first **process** or application in Kianda starts with designing your first **form**. Forms can connect to any number of **data sources** or connectors at the same time. The form might be a simple contact form or something else more complex, and you can add more forms like "Follow-up form" or even a "Closure form".
 
-Although Kianda aims to be intuitive and easy to get started, it is never difficult to over-engineer. So at Kianda we always recommend doing some simple planning before you design your first form.
+Although Kianda aims to be intuitive and easy to get started, it is never difficult to over-engineer. So at Kianda we always recommend doing some simple planning before you design your first form. It could be something as simple as a quick flow chart or a spreadsheet where you can quickly log the key components, fields or rules that are needed in the process.
 
-It could be something as simple as a quick flow chart or as we use a spreadsheet where you quickly log the key components, fields or rules that should be needed in the process.
+In general there are three key steps to build a process in an agile manner:
 
-In general, we normally include the following key steps to build a process in an agile manner:
-
-1. Plan process design, forms, fields, rules, log into design spreadsheet.
-2. Build forms and fields connecting to data where applicable.
-3. Publish to dashboards, anonymous forms or SharePoint for end-user distribution.
+1. **Plan** process design, forms, fields, rules, log into design spreadsheet.
+2. **Build** forms and fields connecting to data where applicable.
+3. **Publish** to dashboards, launch anonymous forms or publish to data sources for end-user distribution.
 
 ***Platform getting started video***
 
@@ -25,7 +23,7 @@ In general, we normally include the following key steps to build a process in an
 </video>
 
 
-### Kianda Designer
+## Kianda Designer Introduction
 
 Kianda process designer provides an intuitive interface where you can quickly start building forms for any use case.
 
@@ -39,61 +37,17 @@ The key components of the form designer are:
 
 ![Form designer components](/images/form-designer.png)
 
-## Responsive form layout
+The following headings highlight the key features of Designer that allow you to build slick, progressive, responsive and customised forms and processes. 
 
-Form fields are made to with a mobile-first approach giving you design once and deploy everywhere opportunity.
+## Forms
 
-By using the **Layout** option under the property panel you will be able to simply define the layout of your fields or panels within a form. Clicking on the **^** quickly uncovers the layout mode for desktop and mobile.
+Forms are an important component of any process, they might be used as stages of a process and could be made active individually or at the same time known as **parallel** forms.
 
-![Layout mode](/images/layout-mode.png)
+The key rules related to designing forms for user interaction are:
 
-This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS  framework that allows designing web interfaces with a mobile-first approach.
-
-## Forms & layout fields
-
-Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of [development](development.md) skills you can always create your custom field widget.
-
-At the time of writing, the default fields fall into four main categories of fields:
-
-1. **Input** - Input fields include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.
-2. **Layout** - Layout fields are the fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields.
-3. **Action** - Action fields are fields that allow user interface actions like buttons, links or even signature components.
-4. **Custom**  - Under custom fields, you will find any custom-developed fields available under your developer section.
-
-Layout fields take an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.
-
-### Model dialogs
-
-Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users attention to something important.
-
-Typically we use dialogs for things like requiring user confirmation or to let them make a final decision.
-
-***How to use a model dialog***
-
-<video width="100%" style="width:100%" controls>
-    <source src="/videos/How to use a model dialog.mp4">
-    Your browser does not support the video tag.
-    </source>
-</video>
-
-
-
-On the example above, we use a modal dialog to display a simple *warning to the user*. The following are the steps:
-
-1. On the Layout components, select the *Dialog*.
-2. Click on the dialog component to insert other fields within it.
-3. You can add any field to your dialog, in this case, we are adding a Rich text.
-4. To preview how your dialog box will be displayed, you can use the **Preview** button, on the dialog component.
-
-### Forms
-
-Forms are an important component of any process, they might be used as stages of a process and could be made active individually or at the same time (parallel forms).
-
-The key rules for working with forms are:
-
-1. Forms are assignable - means that only a form assignee can edit a particular form. This can be a combination of users and groups.
-2. Only form owners can edit a given form by default. Any other user with access to view the form will see it in read-only mode.
-3. Multi-step processes use the concept of "current form". Only the form matching the process status will be made editable.
+1. Forms are **assignable**, this means that **only a form assignee can edit** a particular form in a process instance. The form assignee can be a combination of users and groups.
+2. When a form is created, as a designer you can configure form owners. **Only form owners can edit** a given form in a process instance by default. Any other user with access to view the form will see it in read-only mode.
+3. Processes that have several steps or multi-step processes use the concept of  **current form**. Only the form matching the process status will be made editable.
 4. In a multi-step process, other forms that are not "current form" can be configured to **activate with** the current form. Meaning they might also be editable and will form a form group.
 
 The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal [business rules](business-rules.md) such as *assign form*, *go to form* and *submit rule* to dynamically control the ability for end-users to edit a particular form or a section of a form.
@@ -105,6 +59,7 @@ The rules above work together to determine if the form is in edit mode or displa
     Your browser does not support the video tag.
     </source>
 </video>
+
 
 
 
@@ -158,7 +113,73 @@ The following are some of the key options of the anonymous link rule:
 
 ## Input fields
 
-Kianda forms usability is brought to life with the help of the various input fields available that are specifically adapted to work in mobile, tablet or desktop modes.
+Kianda forms usability is brought to life with the help of the vario
+
+
+
+## Responsive form layout
+
+Form fields are made with a mobile-first approach giving you a 'design once and deploy everywhere' opportunity.
+
+By using the **Layout** option under the property panel you will be able to simply define the layout of your fields or panels within a form. Clicking on the **^** quickly uncovers the layout mode for desktop and mobile.
+
+![Layout mode](/images/layout-mode.png)
+
+This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS  framework that allows designing web interfaces with a mobile-first approach.
+
+## Forms & layout fields
+
+Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of [development](development.md) skills you can always create your custom field widget.
+
+At the time of writing, the default fields fall into four main categories of fields:
+
+1. **Input** - Input fields include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.
+2. **Layout** - Layout fields are the fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields.
+3. **Action** - Action fields are fields that allow user interface actions like buttons, links or even signature components.
+4. **Custom**  - Under custom fields, you will find any custom-developed fields available under your developer section.
+
+Layout fields take an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.
+
+### Model dialogs
+
+Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users attention to something important.
+
+Typically we use dialogs for things like requiring user confirmation or to let them make a final decision.
+
+***How to use a model dialog***
+
+<video width="100%" style="width:100%" controls>
+    <source src="/videos/How to use a model dialog.mp4">
+    Your browser does not support the video tag.
+    </source>
+</video>
+
+
+
+On the example above, we use a modal dialog to display a simple *warning to the user*. The following are the steps:
+
+1. On the Layout components, select the *Dialog*.
+2. Click on the dialog component to insert other fields within it.
+3. You can add any field to your dialog, in this case, we are adding a Rich text.
+4. To preview how your dialog box will be displayed, you can use the **Preview** button, on the dialog component.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+us input fields available that are specifically adapted to work in mobile, tablet or desktop modes.
 
 From the textbox, date picker, numeric input, file upload and table, Kianda offers a flexible array of controls that can be adjusted to work with a myriad of scenarios.
 

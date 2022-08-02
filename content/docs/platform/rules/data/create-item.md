@@ -7,7 +7,7 @@ weight: 3
 
 ## Introduction
 
-This rule implements the Create function which is one of the four CRUD functions. The rule will create one or more items of data from a chosen data source (see notes below on the types of data source that can be used).
+This rule implements the Create function which is one of the four CRUD (Create, Read, Update and Database) functions.  The rule will create one or more items of data from a chosen data source, for example SharePoint, SAP or Oracle databases, see [Data connectors](/docs/platform/connectors/) for more details. 
 
 The **Create item** rule allows you to create an item of any type in the specified data connector. When applying this rule, you must select a data source in which you want to create the item. When the data source is connecter, you can map inputs from your form fields into your source. Also, you could map a data source field or text back to Kianda on success or store an error message on failure.
 

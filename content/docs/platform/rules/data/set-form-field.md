@@ -28,7 +28,7 @@ You can add this rule:
 
    ![Edit rule - Set form field dialog box](/images/set-field-edit-rule.jpg)
 
-4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png), see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
 5. In the **Field value mapping** section, you can select which fields to set and what values to give them. You can do that with the following fields:
 

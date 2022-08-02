@@ -8,7 +8,11 @@ typora-root-url: ..\..\..\..\..\static
 
    ![Three form process example](/images/3-form-example.jpg)
 
-In the example above, the workflow for this process would be completion of the forms in this order: **Training Request** > **Training Approval** > **Training Attendance** however using Workflow rules, you could use **Go to form** to force the **Training Attendance** form to be the current form after the Training Request form has been completed. You could also use **Assign form** to assign editing rights to particular users so they can edit forms. Using rules in this way changes the flow of the process, and additional levels of security and user interaction can be added using **Process security** and **Hide or disable** see below.
+In the example above, the workflow for this process would be completion of the forms in this order: **Training Request** > **Training Approval** > **Training Attendance** however using Workflow rules, you could use **Go to form** to force the **Training Attendance** form to be the current form after the Training Request form has been completed. 
+
+You could also use the **Assign form** rule to assign editing rights to particular users so they can edit forms. See more about Go to form and Assign form below.
+
+Using rules in this way changes the flow of the process, and additional levels of security and user interaction can be added using **Process security** and **Hide or disable** see below.
 
 
 
