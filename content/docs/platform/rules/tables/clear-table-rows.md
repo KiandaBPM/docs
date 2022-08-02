@@ -1,5 +1,6 @@
 ---
 title: "Clear table rows"
+weight: 7
 ---
 
 This rule allows you to clear rows from a table within Kianda.

@@ -1,5 +1,6 @@
 ---
 title: "Export table as CSV"
+weight: 5
 ---
 
 This rule allows you to export a table as a CSV file from within Kianda.

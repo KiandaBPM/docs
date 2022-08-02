@@ -1,5 +1,6 @@
 ---
-title: "Table loop"
+title: "Add table row"
+weight: 2
 ---
 
 ###### Introduction - good description, simple language 

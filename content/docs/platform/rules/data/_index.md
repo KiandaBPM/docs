@@ -23,7 +23,7 @@ There are five types of **Data** rules as follows:
 
 - **Find Items** - Use this rule together with a datasource to perform a query and return data for use with the form. To find an item, you could use a data source filter which acts as a conditional bridge between Kianda and data-connections. If the condition is true, you could map the data source field or text to the Kianda form field.
 
-- Set form field - This rule is used to update the value of fields in a form. The field value could be simple text or based on a custom expression with the ability to define JavaScript expressions. Use this rule to copy content between fields or to apply a custom expression to set the value of a given field. 
+- **Set form field** - This rule is used to update the value of fields in a form. The field value could be simple text or based on a custom expression with the ability to define JavaScript expressions. Use this rule to copy content between fields or to apply a custom expression to set the value of a given field. 
 
   
 

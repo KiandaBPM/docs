@@ -3,13 +3,13 @@ title: "Table rules"
 weight: 6
 ---
 
-**Table** rules is one category of [rules](rules/Readme.md) to enable table operations such as sorting, copying table rows to another table, exporting and importing table data as .csv files and adding and removing table rows. These operations are useful to implement in external data sources, automating actions using Kianda processes.
+**Table** rules is one category of [rules](/docs/platform/rules/) to enable table operations such as sorting, copying table rows to another table, exporting and importing table data as .csv files and adding and removing table rows. These operations are useful to implement in external data sources, automating actions using Kianda processes.
 
 
 
 ## Getting started with Table rules ##
 
-If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the Table rules are found in the left-hand pane when you click on **Tables**.
+If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule**, the **Table** rules are found in the left-hand pane when you click on **Tables**.
 
 ![Table rules](/images/table-rules-all.jpg)
 

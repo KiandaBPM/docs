@@ -1,5 +1,6 @@
 ---
 title: "Copy table rows"
+weight: 6
 ---
 
 This rule allows you to copy table rows within Kianda from one table to another.
