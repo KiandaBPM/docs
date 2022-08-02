@@ -72,7 +72,60 @@
 &lt;/ol>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Add table row</title><link>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</guid><description/></item><item><title>Docs: Remove table row</title><link>https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/</guid><description>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Add table row</title><link>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Add table row&lt;/strong> rule allows you to add rows within a specified table. You can set values for each field within the newly created row by mapping values into them. For mapping new values to each field, you can use manually typed text or use other fields from your process. You can also add rows with empty values by deleting the mapping fields. To learn more about mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error mapping&lt;/a>.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule if you want more dynamic and more automated tables. By removing the original &lt;strong>add row&lt;/strong> button from the table and adding a new button with the &lt;strong>Add table row&lt;/strong> rule attached, you can map specific row fields to automatically appear with values when adding the rows. Take a look below how to add and use the &lt;strong>Add table row&lt;/strong> rule.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Add table row&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Add table row&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-row-edit-rule.jpg" alt="Edit rule - Add table row">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a table&lt;/strong> option, select the table you want to add a new row to. New mapping options are presented when you select a table.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>New row mapping&lt;/strong> you have the option to assign values to newly created rows and the fields within it.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-row-mapping.jpg" alt="Add table row - mapping">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Table row field&lt;/strong> - allows you to select a field from the row which you want to map a value to.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value you want to your row field to contain.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add mapping&lt;/strong> - you can choose to assign values to multiple row in your row by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">. To add a row without any values, delete all mapping fields as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-row-empty-mapping.jpg" alt="Empty new row mapping">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Remove table row</title><link>https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Import CSV or Excel into Table</title><link>https://docs.kianda.com/docs/platform/rules/tables/import-csv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/import-csv/</guid><description>
