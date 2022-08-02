@@ -1043,7 +1043,8 @@ The Safety Team
 &lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Set form field rule</title><link>https://docs.kianda.com/docs/platform/rules/data/set-form-field/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/set-form-field/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Using the &lt;strong>Set form field&lt;/strong> rule you have the ability to select a field within your process and assign it a value using manually typed text or an expression. With the &lt;strong>Set form field&lt;/strong> rule you can also set multiple fields at once by adding more fields to the value mapping within the rule.&lt;/p>
+&lt;p>Using the &lt;strong>Set form field&lt;/strong> rule you have the ability to select a field within your process and assign it a value using manually typed text or an expression. With the &lt;strong>Set form field&lt;/strong> rule you can set multiple fields at once by adding more fields to the value mapping within the rule.&lt;/p>
+&lt;p>This rule is useful when automating processes with previously provided information from other forms. You can apply this rule to a form which will activate the rule when the form is loaded. You can pass query strings and apply the Set form field rule assign values to fields when opening form for the first time. To learn more about query strings go to &lt;a href="https://docs.kianda.com/docs/platform/pages/link/#heading">Query strings&lt;/a>.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
