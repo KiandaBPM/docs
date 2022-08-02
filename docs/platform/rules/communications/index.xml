@@ -510,9 +510,14 @@
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: User alert</title><link>https://docs.kianda.com/docs/platform/rules/communications/user-alert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/communications/user-alert/</guid><description>
-&lt;p>The &lt;strong>User alert&lt;/strong> rule sends an alert to a user who can then open an instance of a process. It can be used as a reminder or a notification for a user to fill out a form in a process. A user can view all alerts by clicking on the bell icon on the top right-hand corner of their screen.&lt;/p>
+&lt;p>The &lt;strong>User alert&lt;/strong> rule sends an alert to a user who can click on the alert to open the process instance, for example to a form that needs to be completed by a given user. A user can view all alerts by clicking on the &lt;strong>notifications&lt;/strong> or bell icon on the top right-hand corner of their screen.&lt;/p>
+&lt;p>For example in the image below there is one new notification.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-notification.jpg" alt="User notification">&lt;/p>
+&lt;p>When the user clicks on the icon, the alert created using the &lt;strong>User alert&lt;/strong> rule appears.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-example.jpg" alt="User alert example">&lt;/p>
+&lt;p>In this example clicking on the alert itself, will bring the user to a form that they need to fill out.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>There is a lot of uses for the user alert rule, it can be used as a reminder to complete a form or when a form is submitted and the form needs to be reviewed, a manger can recieve the alert to review the information in the form.&lt;/p>
+&lt;p>There are a lot of uses for the user alert rule. For example, the rule can be used as a reminder to complete a form or when a form is submitted and the form needs to be reviewed, a manger can receive the alert to review the information in the form.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -555,6 +560,7 @@
 &lt;li>
 &lt;p>&lt;strong>Alert icon&lt;/strong> - choose an icon from the dropdown list.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-settings.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
+&lt;p>The resulting alert design looks like this:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-reminder.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
 &lt;/li>
 &lt;li>

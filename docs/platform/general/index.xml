@@ -119,7 +119,10 @@
 &lt;/ol>
 &lt;p>&lt;strong>Note&lt;/strong>: You can switch to offline mode by clicking on your profile and slide the &lt;strong>work offline&lt;/strong> toggle to &amp;lsquo;on&amp;rsquo; see &lt;a href="#user-profile">User profile&lt;/a> below.&lt;/p>
 &lt;h3 id="user-notifications">User notifications&lt;/h3>
-&lt;p>This icon alerts you when actions happen associated with processes, for example a form is completed by a user. You will receive a configured message indicating in this case, what form has been completed and by whom.&lt;/p>
+&lt;p>This icon alerts you when actions happen associated with processes, for example if a form has been assigned to you. Any new notifications will be seen as a number beside the &lt;strong>user notification&lt;/strong> icon/bell symbol.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-notification.jpg" alt="User notification">&lt;/p>
+&lt;p>You will receive a configured message indicating the title of the notification and a short piece of text explaining what has happened, for example if a process design has been published and existing process instances have been updated, or the message could be as a result of a &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/user-alert/">User alert rule&lt;/a> as seen below. In this example, the user can click on the alert and they are brought to the form that they have to complete.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-example.jpg" alt="User alert example">&lt;/p>
 &lt;h3 id="user-profile">User profile&lt;/h3>
 &lt;p>The information found under User profile includes your name, email, role for example Administrator and options to update your information.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/myaccount.png" alt="My account information">&lt;/p>

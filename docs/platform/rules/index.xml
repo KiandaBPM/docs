@@ -193,22 +193,24 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced each of the six types of &lt;strong>Workflow rules&lt;/strong>. Now let&amp;rsquo;s look at each of these types of rules in more detail:&lt;/p></description></item><item><title>Docs: Communication rules</title><link>https://docs.kianda.com/docs/platform/rules/communications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/communications/</guid><description>
 &lt;p>&lt;strong>Communication&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable automated communications with process users, for example sending meeting requests or even user push notifications.&lt;/p>
+&lt;p>Take an example of a &lt;strong>User alert&lt;/strong> rule. Implementing this rule will result in a new item in the &lt;strong>user notification&lt;/strong> in the &lt;a href="https://docs.kianda.com/docs/platform/general/quickaction/">&lt;strong>Quick action menu&lt;/strong>&lt;/a>, for example that looks like this: &lt;img src="https://docs.kianda.com/images/user-notification-new-item.jpg" alt="New user notification">.&lt;/p>
+&lt;p>Clicking on the notification icon, opens up a pop-up box with the notification, for example:&lt;/p>
 &lt;h2 id="getting-started-with-communication-rules">Getting started with Communication rules&lt;/h2>
 &lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>Communication&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Communications&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/communication-rules-all.jpg" alt="Communication rules">&lt;/p>
 &lt;p>There are four types of &lt;strong>Communication&lt;/strong> rules as follows:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Send email&lt;/strong> - allows you to send automated emails that contain images, text, process and other links and attachments.&lt;/p>
+&lt;p>&lt;strong>Send email&lt;/strong> - This rule allows you to send automated emails that contain images, text, process and other links and attachments. Emails can be sent out using a predefined SMTP connector, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector">Setting up a Global SMTP mail Connector&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Meeting request&lt;/strong> - allows you to send automated emails that contain a meeting request.&lt;/p>
+&lt;p>&lt;strong>Meeting request&lt;/strong> - This rule allows you to send automated emails that contain a meeting request.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Anonymous form link&lt;/strong> - this rule creates a link to a form which can be sent to external users,.&lt;/p>
+&lt;p>&lt;strong>Anonymous form link&lt;/strong> - This rule creates a link to a form which can be sent to external users who do not need Kianda login details or accounts to access the form(s), for example contractors or third party providers.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>User alert&lt;/strong> - this rule sends an alert to a user who can then access a process instance.&lt;/p>
+&lt;p>&lt;strong>User alert&lt;/strong> - This rule sends an alert to a user which appears in the user notifications in the top right-hand quick actions menu bar. See &lt;a href="https://docs.kianda.com/docs/platform/general/quickaction/">Quick action menu&lt;/a> for an introduction to the shortcuts available to users including notifications.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
