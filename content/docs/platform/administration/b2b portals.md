@@ -1,5 +1,6 @@
 ---
 title: "B2B Portals"
+weight: 8
 typora-root-url: ..\..\..\..\static
 ---
 
@@ -186,4 +187,6 @@ To add new partner properties click on the **Partner properties** button in the 
 ### What's next  ![Idea icon](/images/18.png) ###
 
 To read more about creating process designs in Designer and how to use the interface to create forms  go to [Application Designer](/docs/platform/application-designer/).
+
+To find out about help and support, go to [Help](/docs/platform/general/help/).
 

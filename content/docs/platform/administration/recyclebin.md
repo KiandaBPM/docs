@@ -1,5 +1,6 @@
 ---
 title: "Recycle bin"
+weight: 6
 typora-root-url: ..\..\..\..\static
 ---
 
@@ -45,3 +46,5 @@ To view items in the Recycle bin:
 To read more about how to create processes and form go to [Application Designer](/docs/platform/application-designer/).
 
 To read about other parts of the platform go to [Administration](/docs/platform/administration/).
+
+To find out about help and support, go to [Help](/docs/platform/general/help/).

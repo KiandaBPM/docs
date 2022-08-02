@@ -1,5 +1,6 @@
 ---
 title: "Developer"
+weight: 9
 typora-root-url: ..\..\..\..\static
 ---
 
@@ -54,8 +55,8 @@ To start using **Developer**:
    ![Instance Callback URLs](/images/webhook-edit.jpg)
    
    - Move the slider across for each type of operation (Create, Update, Delete) to add in a URL to enable callback. 
-   - For example for **Enable Deleted Callback**, will enable the URL callback every time a process instance is updated. 
-   - HTTP GET with parameters `instanceID={instanceID}, processName={processName}` and `eventType=deleted` will be issued to the provided URL.
+     - For example for **Enable Deleted Callback**, will enable the URL callback every time a process instance is updated. 
+     - HTTP GET with parameters `instanceID={instanceID}, processName={processName}` and `eventType=deleted` will be issued to the provided URL.
    - When you are finished editing the dialog box click on **OK** or click on **Close** at any time to exit.
 
 
@@ -83,3 +84,5 @@ Statements like **if** and **unless** are implemented as built-in helpers. Helpe
 ### What's next  ![Idea icon](/images/18.png) ###
 
 To read more about Developer and how to use the platform for low-code development, go to [Low code development](/docs/low-code/).
+
+To find out about help and support, go to [Help](/docs/platform/general/help/).

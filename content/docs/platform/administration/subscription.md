@@ -1,5 +1,6 @@
 ---
 title: "Subscription"
+weight: 3
 typora-root-url: ..\..\..\..\static
 ---
 
@@ -161,7 +162,7 @@ General settings include details like your company name, subscription ID, renewa
 
 Within general settings administrators can set who the Global Administrator is, or the main administrator for the workspace.
 
-![Subscription details](/images/company-details.jpg)
+<img src="/images/company-details.jpg" alt="Subscription details" style="zoom:80%;" />
 
 ### Company details
 
@@ -206,7 +207,7 @@ Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector.
 
 
 
-At any time, you can go to Side menu > Subscription to edit any of these settings or to manage Subscription Details, Payment Details and Single Sign-on.
+At any time, you can go to left-hand side menu and **Subscription** to edit any of the settings for the headings above.
 
 
 
@@ -215,4 +216,6 @@ At any time, you can go to Side menu > Subscription to edit any of these setting
 ### What's next  ![Idea icon](/images/18.png) ###
 
 To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
+
+To find out about help and support, go to [Help](/docs/platform/general/help/).
 

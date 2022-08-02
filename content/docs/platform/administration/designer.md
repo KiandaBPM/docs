@@ -1,5 +1,6 @@
 ---
 title: "Designer"
+weight: 2
 typora-root-url: ..\..\..\..\static
 ---
 
@@ -60,5 +61,7 @@ Kianda **Designer** is made up of three panes.
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To read more about Designer and how to use the interface to create forms go to [Application Designer](/docs/platform/application-designer/).
+To read more about Designer in detail and how to use the interface to create forms go to [Application Designer](/docs/platform/application-designer/).
+
+To find out about help and support, go to [Help](/docs/platform/general/help/).
 

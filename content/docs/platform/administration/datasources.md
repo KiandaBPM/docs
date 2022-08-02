@@ -1,5 +1,6 @@
 ---
 title: "Data sources"
+weight: 4
 typora-root-url: ..\..\..\..\static
 ---
 
@@ -106,6 +107,8 @@ Once the data connector is created, this can be used with controls like lists an
 ### What's next  ![Idea icon](/images/18.png) ###
 
 To read more about data connectors and how to use them, go to [Data Connectors](/docs/platform/connectors/).
+
+To find out about help and support, go to [Help](/docs/platform/general/help/).
 
 
 

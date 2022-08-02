@@ -1,6 +1,7 @@
 ---
 title: "Users & Groups"
 linkTitle: "Users and groups"
+weight: 7
 typora-root-url: ..\..\..\..\static
 ---
 
@@ -235,4 +236,4 @@ From this main view you can:
 
 To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
 
-To find out about help and support, go to [Help](/docs/platform/administration/help).
+To find out about help and support, go to [Help](/docs/platform/general/help/).
