@@ -38,7 +38,7 @@ You can add this rule:
 
    - **Table row field** - allows you to select a field from the row which you want to map a value to.
 
-   - **Form field or text** -  you can select a field within your form or type in text manually to represent the value you want to your row field to contain.
+   - **Form field or text** -  you can select a field within your form or type in text manually to represent the value you want your row field to contain.
 
    - **Add mapping** - you can choose to assign values to multiple row in your row by clicking on **Add mapping** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png). To add a row without any values, delete all mapping fields as shown below.
 
