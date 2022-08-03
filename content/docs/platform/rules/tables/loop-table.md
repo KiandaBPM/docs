@@ -6,9 +6,11 @@ weight: 1
 
 ## Introduction
 
-The **Loop table **rule allows you to loop through table rows allowing you to trigger fields or rules within the specified table. This rule is often used when the same action must be performed for a multiple rows within a table. To prevent triggering the action manually, you can use this rule to loop through each row and trigger the action. For example calculating the total price spent for an item.
+The **Loop table** rule allows you to loop through table rows allowing you to trigger fields or rules within the specified table. To prevent triggering the action manually, you can use this rule to loop through each row and trigger the action. For example calculating the total price spent for an item on a purchase table.
 
 ## When to use 
+
+This rule is often used when the same action must be performed for a multiple rows within a table.
 
 You can add this rule:
 
