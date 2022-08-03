@@ -28,9 +28,11 @@ You can add this rule:
 
    ![Edit rule - Add table row](/images/add-row-edit-rule.jpg)
 
-4. In the **Select a table** option, select the table you want to add a new row to. New mapping options are presented when you select a table.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. In the **New row mapping** you have the option to assign values to newly created rows and the fields within it.
+5. In the **Select a table** option, select the table you want to add a new row to. New mapping options are presented when you select a table.
+
+6. In the **New row mapping** you have the option to assign values to newly created rows and the fields within it.
 
    ![Add table row - mapping](/images/add-row-mapping.jpg)
 
@@ -41,6 +43,8 @@ You can add this rule:
    - **Add mapping** - you can choose to assign values to multiple row in your row by clicking on **Add mapping** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png). To add a row without any values, delete all mapping fields as shown below.
 
      ![Empty new row mapping](/images/add-row-empty-mapping.jpg)
+
+7. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
 
 ### Editing, deleting or duplicating rules
@@ -57,3 +61,4 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 To find out more about other Table rules go to [Table rules](/docs/platform/rules/tables/).
 
 To find out more about other rules go to [Rules](/docs/platform/rules/).
+

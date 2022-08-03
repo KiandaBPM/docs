@@ -10,7 +10,7 @@ The **Loop table** rule allows you to loop through table rows allowing you to tr
 
 ## When to use 
 
-This rule is often used when the same action must be performed for a multiple rows within a table.
+This rule is often used when the same action must be performed for multiple rows within a table.
 
 You can add this rule:
 
