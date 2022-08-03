@@ -470,7 +470,7 @@ Your browser does not support the video tag.
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Loop table&lt;/strong> rule allows you to loop through table rows allowing you to trigger fields or rules within the specified table. To prevent triggering the action manually, you can use this rule to loop through each row and trigger the action. For example calculating the total price spent for an item on a purchase table.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>This rule is often used when the same action must be performed for a multiple rows within a table.&lt;/p>
+&lt;p>This rule is often used when the same action must be performed for multiple rows within a table.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -1531,6 +1531,9 @@ The Safety Team
 &lt;p>&lt;img src="https://docs.kianda.com/images/add-row-edit-rule.jpg" alt="Edit rule - Add table row">&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>In the &lt;strong>Select a table&lt;/strong> option, select the table you want to add a new row to. New mapping options are presented when you select a table.&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1548,6 +1551,9 @@ The Safety Team
 &lt;p>&lt;img src="https://docs.kianda.com/images/add-row-empty-mapping.jpg" alt="Empty new row mapping">&lt;/p>
 &lt;/li>
 &lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
