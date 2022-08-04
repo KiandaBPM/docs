@@ -46,46 +46,66 @@ A REST API data connector can be configured by users with the role **Administrat
 ![Enable Certificate Authentication](/images/rest-cert-authentication.jpg)
 
 
-7. Under **REST Methods**, a list of current REST Methods that have been created in Kianda will appear, listed by **Name**, **Path** and **HTTP Method**. 
+7. Under the Service details section, is a the **REST Methods** section. If there are any existing methods created, for example to find and retrieve particular information using HTTP GET, the method will be listed here. Go to [REST Methods](#rest-methods) to find out more about how to add a method. To find out more about Kianda REST APIs, go to [APIs](/docs/apis/).
 
-   ![Existing REST Methods](/images/rest-methods-existing.jpg)
-
-   You can edit details of the existing REST Methods by clicking on the **Edit/Pen** button ![Edit REST Methods](/images/edit-method.jpg)or delete a REST Method by clicking on the **Bin/Trash** button ![Delete REST Method](/images/delete-method.jpg).
-
-8. To add a new **REST Method** to Kianda click on the **+Add REST Method** button. The **REST Method editor** dialog box appears.
-
-   ![REST Method editor](/images/rest-method-editor.jpg)
-
-   Fill out the fields: 
-
-   - **Display Name –** this is the name you want to attribute to the REST Method.
-   - **HTTP Method –** this is the HTTP Method of the REST Method. 
-   - **Url Path –** this is the rest of the URL that will be concatenated with the **Rest server base URL**. For example /rest/GetUserDetails
-   - **Request headers –** Request headers can be manually added here that need to be sent as part of the request, for example, Authorization. These values can be hard coded or passed into the **Request header** from the **process.** Click on **Add header** to add a request header.
-   - **Request body –** This section is for the **Request body** that will be used during the request. These values can be hard coded or passed into the **Request body** from the **process.**
-   - **Content type –** Here you can define the **Content type** of the body. The options are **JSON** and **Form Data**.
-   - **Response headers –** Here you can define any response headers you wish to capture in the response that you want to use in Kianda. Click on **Add header** to add a response header.
-   - **Response body –** Here you can define the response body that the request will receive. Include or remove fields as needed.
-
-   When you are finished editing the dialog box click on **OK** to save your changes, or click on **Close** at any time to exit.
-
-9. Under the REST Methods on the REST Service details page, there is a check box to **Use Kianda Cloud Connect?** If you check this checkbox it gives you an option to Download Kianda Cloud Connect. Click on **Download Kianda Cloud Connect** to download a zip file.
+8. Under the REST Methods on the REST Service details page, there is a check box to **Use Kianda Cloud Connect?** If you check this checkbox it gives you an option to Download Kianda Cloud Connect. Click on **Download Kianda Cloud Connect** to download a zip file.
 
    ![Kianda Cloud Connect](/images/kianda-cloud-connect.jpg)
 
-10. When you have added REST Service details, you are ready to test your connection and add security. At the bottom of the **REST Service details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
+9. When you have added REST Service details, you are ready to test your connection and add security. At the bottom of the **REST Service details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
 
-    ![Connection test succeeded message](/images/connection-test-succeeded.jpg)
+   ![Connection test succeeded message](/images/connection-test-succeeded.jpg)
 
-    In the event of an error, you will receive a message that relates to the error, for example a null or incorrect URL as shown in the example below:
+   In the event of an error, you will receive a message that relates to the error, for example a null or incorrect URL as shown in the example below:
 
-    ![REST test connection error](/images/rest-connection-error.jpg)
+   ![REST test connection error](/images/rest-connection-error.jpg)
 
-    
+   
 
-11. Click on **Save** ![Save connection button](/images/save-connection.jpg)to save the connection and you will receive a notification saying **Details saved successfully**.
+10. Click on **Save** ![Save connection button](/images/save-connection.jpg)to save the connection and you will receive a notification saying **Details saved successfully**.
 
-12. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
+11. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
+
+
+
+### REST Methods
+
+A list of current REST Methods that have been created in Kianda will appear, listed by **Name**, **Path** and **HTTP Method**, where:
+
+- **Name** - is the name of the method, for example to get a list of course attendees, which could be called 'Course Attendees'
+
+- **Path** - is the address that allows you to access the API, also called **endpoints**, for example **/instances** or **/processes** are endpoints for Kianda REST APIs that allow you to perform methods on process instances and process designs respectively.
+
+- **HTTP Method** - is the type of operation that can be performed on the data, namely **POST** (create), **GET** (read). **PUT** (update). **PATCH** (partial update) and **DELETE** (delete).
+
+  ![Existing REST Methods](/images/rest-method-example.jpg)
+
+ You can edit details of the existing REST Methods by clicking on the **Edit/Pen** button ![Edit REST Methods](/images/edit-method.jpg) or delete a method by clicking on the **Bin/Trash** button ![Delete REST Method](/images/delete-method.jpg).
+
+To add a new **REST Method** to Kianda:
+
+1. Click on the **+Add REST Method** button. The **REST Method editor** dialog box appears.
+
+![REST Method editor](/images/rest-method-editor.jpg)
+
+Fill out the fields: 
+
+- **Display Name –** this is the name you want to attribute to the REST Method.
+- **HTTP Method –** this is the HTTP Method of the REST Method. 
+- **Url Path –** this is the rest of the URL that will be concatenated with the **Rest server base URL**. For example /rest/GetUserDetails.
+- **Request headers –** Request headers can be manually added here that need to be sent as part of the request, for example, Authorization. These values can be hard coded or passed into the **Request header** from the **process.** Click on **Add header** to add a request header.
+- **Request body –** This section is for the **Request body** that will be used during the request. These values can be hard coded or passed into the **Request body** from the **process.**
+- **Content type –** Here you can define the **Content type** of the body. The options are **JSON** and **Form Data**.
+- **Response headers –** Here you can define any response headers you wish to capture in the response that you want to use in Kianda. Click on **Add header** to add a response header.
+- **Response body –** Here you can define the response body that the request will receive. Include or remove fields as needed.
+
+When you are finished editing the dialog box click on **OK** to save your changes, or click on **Close** at any time to exit.
+
+
+
+
+
+
 
  
 
