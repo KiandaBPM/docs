@@ -41,16 +41,15 @@ The following headings highlight the key features of Designer that allow you to 
 
 ## Forms
 
-Forms are an important component of any process, they might be used as stages of a process and could be made active individually or at the same time known as **parallel** forms.
+Forms are an important component of any process. They might be used as stages of a process and could be made active individually or at the same time known as **parallel** forms.
 
 The key rules related to designing forms for user interaction are:
 
 1. Forms are **assignable**, this means that **only a form assignee can edit** a particular form in a process instance. The form assignee can be a combination of users and groups.
 2. When a form is created, as a designer you can configure form owners. **Only form owners can edit** a given form in a process instance by default. Any other user with access to view the form will see it in read-only mode.
-3. Processes that have several steps or multi-step processes use the concept of  **current form**. Only the form matching the process status will be made editable.
-4. In a multi-step process, other forms that are not "current form" can be configured to **activate with** the current form. Meaning they might also be editable and will form a form group.
+3. Processes that have several steps use the concept of **current form**, where only the current form is **editable** in a process instance. Forms become the current form as the process executes sequentially. Rules like [Go to form](/docs/platform/rules/workflow/go-to-form/) can be used to make forms the current form. Other forms can be configured to **activate with** the current form. This means it is also possible to edit these forms at the same point in process execution and togther the forms form a form group.
 
-The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal [business rules](business-rules.md) such as *assign form*, *go to form* and *submit rule* to dynamically control the ability for end-users to edit a particular form or a section of a form.
+The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal [business rules](business-rules.md) such as [Assign form](/docs/platform/rules/workflow/assign-form/), [Go to form](/docs/platform/rules/workflow/go-to-form/) and [Submit form](/docs/platform/rules/form-actions/submit-form/) to dynamically control the ability for end-users to edit a particular form or a section of a form.
 
 ***How to add new form***
 
@@ -60,17 +59,153 @@ The rules above work together to determine if the form is in edit mode or displa
     </source>
 </video>
 
+### How to add a form
+
+1. To get started with processes go to the left-hand side menu > **Administration** >  **Designer**. There are options to import processes, or use the App Store or create a new process from scratch by clicking on the **Add new** button, see [How to get started with processes](/docs/platform/application-designer/designer/#how-to-get-started) for more information.
+
+2. When you open a process or create a new process you are automatically brought into **Kianda Designer**. In new processes, by default a **new form** is automatically added to your process called **form 1**. 
+
+   ![New process with new form 1](/images/new-process-new-form.jpg)
+
+   
+
+3. The form is automatically selected and ready to add **controls** and **rules** to using the options in the left-hand pane. You can edit the form by clicking on the **edit/pen** button ![Edit button](/images/penicon.png) highlighted above. This will open an **Edit form** dialog box, see [Editing forms](/docs/platform/application-designer/designer/#editing-forms) for more details.
+
+4. To add another form, click on the **Add form** button at the top of the page.
+
+5. A **new form** dialog box appears. See [Editing forms](/docs/platform/application-designer/designer/#editing-forms) for more details for example how to add form owners and enable quick actions. 
+
+As you create forms, there are some important features to note that will help you get the most out of your form design:
+
+- [Form fields][#form-fields]
+- [Responsive form layout](responsive-form-layout)
+- [Input validation](#input-validation)
+- [Anonymous forms](#anonymous-forms)
+- [Cloning](#cloning)
+- [Custom fields](#custom-fields)
+- [Advanced techniques](#advanced-techniques)
+
+Click on the links above or browse through the following headings to read more.
 
 
 
-1. Click on *Add form*, on the top right side of the page.
-2. Give your form a title.
-3. The *name* is a unique identifier - you can leave it as it is.
-4. You can define an owner to the form.
-5. Activate with will decide when the form will be active - if you leave it blank, the new form will be activated *sequentially* after the first form is submitted.
-6. Select *Submit mode* - you can submit just the current form or all forms that are in edit mode.
-7. Check *Enable quick actions* if you want the form to be edited or re-assigned.
-8. Provide a user or group in the *Quick action user (s)* to whom you would like to permit to re-assign or edit the form.
+## Forms fields
+
+Kianda form usability is brought to life with the help of the various input fields or controls that are specifically adapted to work in mobile, tablet or desktop modes. Fields include textbox, date picker, numeric input, file upload and table, to name a few. Kianda offers a flexible array of controls that can be adjusted to work with a myriad of scenarios.
+
+Each field comes with its own set of settings like autofill for textbox and currency format for numeric input. The following are some of the common settings of input fields:
+
+- **Title** - every field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user.
+
+- **Required** - this Boolean property allows a form designer to make a field mandatory or not.
+
+- **Visible** - Displays the field in the form or not.
+
+- **Layout** - Defines both desktop or mobile layout.
+
+  ![Textbox example](/images/textbox-example.jpg)
+
+Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of [development](development.md) skills you can always create your custom field widget.
+
+Currently the default fields fall into four main categories of fields:
+
+1. **Input** - Input fields include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.
+2. **Layout** - Layout fields are the fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields.
+3. **Action** - Action fields are fields that allow user interface actions like buttons, links or even signature components.
+4. **Custom**  - Under custom fields, you will find any custom-developed fields available under your developer section.
+
+Layout fields take an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.
+
+### Model dialogs
+
+Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users attention to something important.
+
+Typically we use dialogs for things like requiring user confirmation or to let them make a final decision.
+
+***How to use a model dialog***
+
+<video width="100%" style="width:100%" controls>
+    <source src="/videos/How to use a model dialog.mp4">
+    Your browser does not support the video tag.
+    </source>
+</video>
+
+
+
+
+On the example above, we use a modal dialog to display a simple *warning to the user*. The following are the steps:
+
+1. On the Layout components, select the *Dialog*.
+2. Click on the dialog component to insert other fields within it.
+3. You can add any field to your dialog, in this case, we are adding a Rich text.
+4. To preview how your dialog box will be displayed, you can use the **Preview** button, on the dialog component.
+
+### Cascading dropdown
+
+The List field provides the opportunity to define an unlimited level cascading dropdown hierarchy very easily.
+
+To achieve that you might connect your list to a data source table or SharePoint list then use the list data source conditions options to filter its content based on a parent list. 
+
+![Cascading dropdown](/images/cascading-dropdown.png)
+
+***How to create cascading dropdowns***
+
+<video width="100%" style="width:100%" controls>
+    <source src="/videos/How to create cascading dropdowns.mp4">
+    Your browser does not support the video tag.
+    </source>
+</video>
+
+
+
+
+## Input validation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Anonymous Forms
 
@@ -127,41 +262,7 @@ By using the **Layout** option under the property panel you will be able to simp
 
 This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS  framework that allows designing web interfaces with a mobile-first approach.
 
-## Forms & layout fields
-
-Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of [development](development.md) skills you can always create your custom field widget.
-
-At the time of writing, the default fields fall into four main categories of fields:
-
-1. **Input** - Input fields include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.
-2. **Layout** - Layout fields are the fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields.
-3. **Action** - Action fields are fields that allow user interface actions like buttons, links or even signature components.
-4. **Custom**  - Under custom fields, you will find any custom-developed fields available under your developer section.
-
-Layout fields take an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.
-
-### Model dialogs
-
-Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users attention to something important.
-
-Typically we use dialogs for things like requiring user confirmation or to let them make a final decision.
-
-***How to use a model dialog***
-
-<video width="100%" style="width:100%" controls>
-    <source src="/videos/How to use a model dialog.mp4">
-    Your browser does not support the video tag.
-    </source>
-</video>
-
-
-
-On the example above, we use a modal dialog to display a simple *warning to the user*. The following are the steps:
-
-1. On the Layout components, select the *Dialog*.
-2. Click on the dialog component to insert other fields within it.
-3. You can add any field to your dialog, in this case, we are adding a Rich text.
-4. To preview how your dialog box will be displayed, you can use the **Preview** button, on the dialog component.
+## 
 
 
 
@@ -174,45 +275,6 @@ On the example above, we use a modal dialog to display a simple *warning to the 
 
 
 
-
-
-
-
-
-us input fields available that are specifically adapted to work in mobile, tablet or desktop modes.
-
-From the textbox, date picker, numeric input, file upload and table, Kianda offers a flexible array of controls that can be adjusted to work with a myriad of scenarios.
-
-Key properties of fields:
-
-Each field comes with its own set of settings like autofill for textbox and currency format for numeric input. 
-
-The following are some of the common settings of input fields:
-
-- Title - Every field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user.
-- Required - This Boolean property allows making a field mandatory or not.
-- Visible - Displays the field in the form or not.
-- Layout - Defines both desktop or mobile layout.
-
-### Cascading dropdown
-
-The List field provides the opportunity to define an unlimited level cascading dropdown hierarchy very easily.
-
-To achieve that you might connect your list to a data source table or SharePoint list then use the list data source conditions options to filter its content based on a parent list. 
-
-![Cascading dropdown](/images/cascading-dropdown.png)
-
-***How to create cascading dropdowns***
-
-<video width="100%" style="width:100%" controls>
-    <source src="/videos/How to create cascading dropdowns.mp4">
-    Your browser does not support the video tag.
-    </source>
-</video>
-
-
-
-## Input validation
 
 Validating input in forms is quick and easy. Simply enable the **required** flag of an input field and it will automatically prevent users from submitting it empty.
 

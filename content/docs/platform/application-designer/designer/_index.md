@@ -119,13 +119,13 @@ Note: as you change any of the options in the dialog box, the impact will be sho
 
 4. **Activate with** - will decide when the form will be active. If you have several forms attached to a process, then select from a dropdown list the form you want to activate with the current form. If you leave the field blank, the new form will be activated **sequentially** after the first form is submitted. 
 
-5. **Submit mode** - options are a) Only this form (the current form) or b) All forms in edit mode
+5. **Submit mode** - options are a) **Only this form** (the current form) or b) **All forms in edit mode**. 
 
 6. **Form icon** - click on the arrow to choose from hundreds of icons to attach to your form.
 
 7. **Form theme** - choose from Navy, Green, Blue, Amber, Red or White Colours for your form.
 
-8. **Enable quick actions** - if you tick the checkbox, you can select from the options a) Enable re-assign b) Enable edit and c) Enable custom action. Click on **Ellipsis** button ![Ellipsis button](/images/ellipsis_frame.png) to further modify the action settings. 
+8. **Enable quick actions** - if you tick the checkbox, you can select from the options a) **Enable re-assign** b) **Enable edit** and c) **Enable custom action**. Click on **Ellipsis** button ![Ellipsis button](/images/ellipsis_frame.png) to further modify the action settings. 
 
    - If you click on **Enable re-assign**, you can reassign action settings to particular Users, Groups or Partners. Click on **Allow form owners** if you want form owners to be able to reassign actions.
 
@@ -142,16 +142,16 @@ Note: as you change any of the options in the dialog box, the impact will be sho
      Other options include **Action label**, **Target action field** and **Action display mode**, for example **Read-only mode**, **Edit mode** or **Both**.  
 
      ![Custom action settings](/images/customsetting_resized.png)
-
-As a form designer, you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If **Edit mode** is chosen, then the button will only appear when the form is being **edited**. In this way you can create dynamic forms that suit user interactions.
-
-1. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
-
-2. To save your changes to the form, click on the **Save** button ![Save button](/images/save.png). 
-
-3. You are now ready to start adding [Controls](fields/README.md) and [Rules](rules/README.md) to your form. To implement additional settings, see [Process Settings](#process-settings).
-
    
+   - As a form designer, you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If **Edit mode** is chosen, then the button will only appear when the form is being **edited**. In this way you can create dynamic forms that suit user interactions.
+   
+
+9. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
+10. To save your changes to the form, click on the **Save** button ![Save button](/images/save.png). 
+
+You are now ready to start adding [Controls](fields/README.md) and [Rules](rules/README.md) to your form. To implement additional settings, see [Process Settings](#process-settings).
+
+
 
 ### Import forms ###
 
