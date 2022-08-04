@@ -6,7 +6,13 @@ weight: 5
 
 ## Introduction
 
-The **Export CSV** rule allows you export a specified table from within your process into a CSV (Comma Separated Values) file. In the edit rule dialog box you can format how each value is separated and which columns to include and exclude when exporting. 
+The **Export CSV** rule allows you export a specified table from within your process into a CSV (Comma Separated Values) file. In the edit rule dialog box you can format how each value is separated and which columns to include and exclude when exporting. Keep in mind when exporting a table into a CSV format, it will only keep primitive types of field types such as:
+
+- **Text box**
+- **Number**
+- **Date**
+
+Any other field types will be ignored, for example all control types from within **Layout** and **Actions** will be ignored.
 
 ## When to use 
 
