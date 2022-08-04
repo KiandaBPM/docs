@@ -100,7 +100,7 @@ Your browser does not support the video tag.
 &lt;p>&lt;strong>Activate with&lt;/strong> - will decide when the form will be active. If you have several forms attached to a process, then select from a dropdown list the form you want to activate with the current form. If you leave the field blank, the new form will be activated &lt;strong>sequentially&lt;/strong> after the first form is submitted.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Submit mode&lt;/strong> - options are a) Only this form (the current form) or b) All forms in edit mode&lt;/p>
+&lt;p>&lt;strong>Submit mode&lt;/strong> - options are a) &lt;strong>Only this form&lt;/strong> (the current form) or b) &lt;strong>All forms in edit mode&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Form icon&lt;/strong> - click on the arrow to choose from hundreds of icons to attach to your form.&lt;/p>
@@ -109,7 +109,7 @@ Your browser does not support the video tag.
 &lt;p>&lt;strong>Form theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White Colours for your form.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Enable quick actions&lt;/strong> - if you tick the checkbox, you can select from the options a) Enable re-assign b) Enable edit and c) Enable custom action. Click on &lt;strong>Ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis_frame.png" alt="Ellipsis button"> to further modify the action settings.&lt;/p>
+&lt;p>&lt;strong>Enable quick actions&lt;/strong> - if you tick the checkbox, you can select from the options a) &lt;strong>Enable re-assign&lt;/strong> b) &lt;strong>Enable edit&lt;/strong> and c) &lt;strong>Enable custom action&lt;/strong>. Click on &lt;strong>Ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis_frame.png" alt="Ellipsis button"> to further modify the action settings.&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>If you click on &lt;strong>Enable re-assign&lt;/strong>, you can reassign action settings to particular Users, Groups or Partners. Click on &lt;strong>Allow form owners&lt;/strong> if you want form owners to be able to reassign actions.&lt;/p>
@@ -127,21 +127,19 @@ Your browser does not support the video tag.
 &lt;p>Other options include &lt;strong>Action label&lt;/strong>, &lt;strong>Target action field&lt;/strong> and &lt;strong>Action display mode&lt;/strong>, for example &lt;strong>Read-only mode&lt;/strong>, &lt;strong>Edit mode&lt;/strong> or &lt;strong>Both&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/customsetting_resized.png" alt="Custom action settings">&lt;/p>
 &lt;/li>
+&lt;li>
+&lt;p>As a form designer, you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If &lt;strong>Edit mode&lt;/strong> is chosen, then the button will only appear when the form is being &lt;strong>edited&lt;/strong>. In this way you can create dynamic forms that suit user interactions.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ol>
-&lt;p>As a form designer, you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If &lt;strong>Edit mode&lt;/strong> is chosen, then the button will only appear when the form is being &lt;strong>edited&lt;/strong>. In this way you can create dynamic forms that suit user interactions.&lt;/p>
-&lt;ol>
 &lt;li>
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button">.&lt;/p>
 &lt;/li>
-&lt;li>
-&lt;p>You are now ready to start adding &lt;a href="fields/README.md">Controls&lt;/a> and &lt;a href="rules/README.md">Rules&lt;/a> to your form. To implement additional settings, see &lt;a href="#process-settings">Process Settings&lt;/a>.&lt;/p>
-&lt;/li>
 &lt;/ol>
+&lt;p>You are now ready to start adding &lt;a href="fields/README.md">Controls&lt;/a> and &lt;a href="rules/README.md">Rules&lt;/a> to your form. To implement additional settings, see &lt;a href="#process-settings">Process Settings&lt;/a>.&lt;/p>
 &lt;h3 id="import-forms">Import forms&lt;/h3>
 &lt;ol>
 &lt;li>
