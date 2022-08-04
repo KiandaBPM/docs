@@ -148,6 +148,9 @@ Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
 &lt;h2 id="input-validation">Input validation&lt;/h2>
+&lt;p>Validating input in forms is quick and easy. Simply enable the &lt;strong>required&lt;/strong> flag of an input field and it will automatically prevent users from submitting it empty.&lt;/p>
+&lt;p>The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.&lt;/p>
+&lt;p>Another way of validating input is to use the &lt;strong>validate input rule&lt;/strong> this allows greater flexibility in terms of when or what to validate.&lt;/p>
 &lt;h2 id="anonymous-forms">Anonymous Forms&lt;/h2>
 &lt;p>Anonymous forms are a great way of allowing people outside of your organisation to interact with your processes.&lt;/p>
 &lt;p>It could be something as simple as a contact form or a feedback form but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission.&lt;/p>
@@ -176,17 +179,12 @@ Your browser does not support the video tag.
 &lt;li>Message to display on submission.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Important&lt;/strong>: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically expire the previous of the same type if a link existed.&lt;/p>
-&lt;h2 id="input-fields">Input fields&lt;/h2>
-&lt;p>Kianda forms usability is brought to life with the help of the vario&lt;/p>
 &lt;h2 id="responsive-form-layout">Responsive form layout&lt;/h2>
 &lt;p>Form fields are made with a mobile-first approach giving you a &amp;lsquo;design once and deploy everywhere&amp;rsquo; opportunity.&lt;/p>
 &lt;p>By using the &lt;strong>Layout&lt;/strong> option under the property panel you will be able to simply define the layout of your fields or panels within a form. Clicking on the &lt;strong>^&lt;/strong> quickly uncovers the layout mode for desktop and mobile.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/layout-mode.png" alt="Layout mode">&lt;/p>
 &lt;p>This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS framework that allows designing web interfaces with a mobile-first approach.&lt;/p>
 &lt;h2 id="heading">&lt;/h2>
-&lt;p>Validating input in forms is quick and easy. Simply enable the &lt;strong>required&lt;/strong> flag of an input field and it will automatically prevent users from submitting it empty.&lt;/p>
-&lt;p>The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.&lt;/p>
-&lt;p>Another way of validating input is to use the &lt;strong>validate input rule&lt;/strong> this allows greater flexibility in terms of when or what to validate.&lt;/p>
 &lt;h2 id="cloning">Cloning&lt;/h2>
 &lt;p>In the form designer, almost any of the components can be cloned. This will increase your productivity considerably and will make creating multi-step processes a breeze.&lt;/p>
 &lt;p>To clone either a field, a panel or even a form, simply select the component then click the clone button in the properties panel in the right-hand side of the panel.&lt;/p>
