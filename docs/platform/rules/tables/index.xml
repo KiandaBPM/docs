@@ -367,7 +367,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Edit rule - Copy table rows&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-edit-rule.jpg" alt="Edit rule - Import CSV">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-row-edit-rule.jpg" alt="Edit rule - Copy table rows">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
@@ -416,27 +416,66 @@
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Clear table rows</title><link>https://docs.kianda.com/docs/platform/rules/tables/clear-table-rows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/clear-table-rows/</guid><description>
-&lt;p>This rule allows you to clear rows from a table within Kianda.&lt;/p>
-&lt;p>When to use:&lt;/p>
-&lt;p>This rule should be used when working with a table in Kianda and you want to clear the rows from a table.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Clear table rows&lt;/strong> rule allows you clear/delete all or some rows from a specified table in your process. This rule acts similar to &lt;strong>Remove table row&lt;/strong> except with the &lt;strong>Clear table rows&lt;/strong>, you can delete multiple rows and filter out which rows to delete by adding conditions. To learn more about &lt;strong>Remove table row&lt;/strong> go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/">Remove table row&lt;/a>.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule when you want clear all rows from a table or by adding criteria to delete rows, you can filter out which rows to clear from the table.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
-&lt;p>· to a field&lt;/p>
-&lt;p>· to a form&lt;/p>
-&lt;p>· to a process (the rule will run on load)&lt;/p>
-&lt;p>How to use:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to clear rows in. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To clear table rows, the first step is to select the table which you want to clear the rows from.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Following this you will select the criteria for the table row deletion. This will determine which rows within the table will be deleted.&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Clear table rows&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The criteria for row deletion is configured the same as a condition, meaning you set the criteria for deletion, akin to filtering when a rule should be triggered via the edit condition. More details on this can be found here:&lt;/p>
+&lt;p>In the &lt;strong>Edit rule - Clear table rows&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/clear-rows-edit-rule.jpg" alt="Edit rule - Clear table rows">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Table to clear rows from&lt;/strong> - select the table you wish target when clearing rows from. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show. When the &lt;strong>Table to clear rows from&lt;/strong> is assigned, the &lt;strong>Criteria to delete rows&lt;/strong> is presented.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Criteria to delete rows&lt;/strong> - allows you to add a condition which works like a filter. Adding a condition will allow you to filter out which rows to delete and which to keep when using the &lt;strong>Clear table rows&lt;/strong> rule. For example if a table looks like this:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-row-country-example.jpg" alt="Copy row table example">&lt;/p>
+&lt;p>We can set a condition using the &lt;strong>Criteria to delete rows&lt;/strong> button. For example if we want to delete all rows in which the &lt;strong>Country&lt;/strong> field contains the word &amp;ldquo;land&amp;rdquo;. To achieve this, the &lt;strong>Criteria to delete rows&lt;/strong> would look as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-rows-copy-conditions.jpg" alt="Copy row mapping">&lt;/p>
+&lt;p>&lt;strong>Box 1&lt;/strong> represents the field from the table which you are clearing rows in.&lt;/p>
+&lt;p>&lt;strong>Box 2&lt;/strong> represents the conditional check.&lt;/p>
+&lt;p>&lt;em>This is the example output table using the conditions and table shown earlier&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/clear-rows-output-table.jpg" alt="Example output table">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>Once these fields are set you can also set conditions on the rule, further details on conditions can be found here:&lt;/p>
-&lt;p>&lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">https://docs.kianda.com/docs/platform/rules/general/add-conditions/&lt;/a>&lt;/strong>&lt;/p></description></item><item><title>Docs: Lookup value from table</title><link>https://docs.kianda.com/docs/platform/rules/tables/lookup-value-from-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/lookup-value-from-table/</guid><description>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Lookup value from table</title><link>https://docs.kianda.com/docs/platform/rules/tables/lookup-value-from-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/lookup-value-from-table/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Sort table</title><link>https://docs.kianda.com/docs/platform/rules/tables/sort-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/sort-table/</guid><description>
