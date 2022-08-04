@@ -30,7 +30,7 @@ For this rule to work you need to have one or more tables in your process. This 
 
 3. In the **Edit rule - Copy table rows** dialog box, give the rule a title in the **Title** field.
 
-   ![Edit rule - Import CSV](/images/import-csv-edit-rule.jpg)
+   ![Edit rule - Copy table rows](/images/copy-row-edit-rule.jpg)
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
