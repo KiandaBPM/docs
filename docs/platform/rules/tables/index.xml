@@ -209,7 +209,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-edit-rule.jpg" alt="Edit rule - Import CSV">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details. It is a good idea to add condition to this rule to prevent deleting valuable information from the table.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
@@ -266,35 +266,79 @@
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Export table as CSV</title><link>https://docs.kianda.com/docs/platform/rules/tables/export-csv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/export-csv/</guid><description>
-&lt;p>This rule allows you to export a table as a CSV file from within Kianda.&lt;/p>
-&lt;p>When to use:&lt;/p>
-&lt;p>This rule should be used when working with a table in Kianda and you want to export the table into Excel in a CSV format.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Export CSV&lt;/strong> rule allows you export a specified table from within your process into a CSV (Comma Separated Values) file. In the edit rule dialog box you can format how each value is separated and which columns to include and exclude when exporting.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule when you want to open the table with a notepad or excel. This rule is also useful when you want to share a table with other users, you can do that by exporting the table into a &lt;strong>File&lt;/strong> field and attaching the file into an email using the &lt;strong>Send email&lt;/strong> rule. To learn more about attaching a file into an email go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#attachments">Attachments&lt;/a>.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
-&lt;p>· to a field&lt;/p>
-&lt;p>· to a form&lt;/p>
-&lt;p>· to a process (the rule will run on load)&lt;/p>
-&lt;p>How to use:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work there are a couple of prerequisites needed inside of your process:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Table&lt;/strong> - needed to let the rule know which table will be used to export into the csv file, for more detail on how to add a table go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>File&lt;/strong> - needed as a container to hold your exported csv file. When the table is exported into this file field, you can downloaded by clicking on the file name. For more detail on how to add a file field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To export a table as a CSV the first step is to select the &lt;strong>Origin Table&lt;/strong> this will be the table you wish to have exported.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Once you select the &lt;strong>Origin Table&lt;/strong> you will be presented with four options, &lt;strong>Columns to Export, CSV separator, Include header rows, Destination file field&lt;/strong>&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Export CSV&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The columns to export is utilized to select the columns from the table in question which you want to export.&lt;/p>
+&lt;p>In the &lt;strong>Edit rule - Export CSV&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/export-csv-edit-rule.jpg" alt="Edit rule - Export CSV">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The CSV separator is used to determine the separator you wish your CSV file to be formatted, the default for this is a comma.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details. It is a good idea to add condition to this rule to prevent exporting incomplete tables.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The include header rows option allows you to either exclude or exclude the header of the respective table.&lt;/p>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Origin table&lt;/strong> - field that allows you to select the table you want to target when exporting into a CSV file. When selecting a table, new options appear:&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The final field, &lt;strong>Destination file field&lt;/strong>, is the field in the form which will store the export of the table within the Kianda form.&lt;/p>
+&lt;p>&lt;strong>Columns to export&lt;/strong> - this is a checklist allowing you to select or deselect columns from a table that you want to keep or dismiss from exporting into the CSV file. These fields will correspond to field names given in your table, see below image for an example.&lt;/p>
+&lt;p>&lt;em>Table with three columns will correspond to &lt;strong>Columns to export&lt;/strong> option in the export CSV edit rule dialog box.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/export-csv-columns.jpg" alt="Export to export checklist">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>CSV separator&lt;/strong> - the default separator is a comma &lt;code> ,&lt;/code> but you can set it to any character, number or symbol you want. Keep in mind that the separator fields separates each column of a row. For example you can have a file that looks as follows when setting this field with a semi-colon &lt;code>;&lt;/code>&lt;/p>
+&lt;p>&lt;em>Opened with Notepad.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/export-csv-semicolon.jpg" alt="Semicolon separated csv file">&lt;/p>
+&lt;p>Keep in mind when exporting a table using any other separator than a comma &lt;code>,&lt;/code> and open it in excel, the data will not be formatted correctly within excel as it recognises columns when only separated by commas &lt;code>,&lt;/code> For example the above file is opened with Notepad while the image below shows the same exported file opened with excel:&lt;/p>
+&lt;p>&lt;em>Opened with Excel.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/export-csv-semicolon-excel.jpg" alt="Semicolon separated csv file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Include header row&lt;/strong> - radio button asking whether to include the header row meaning that the column title will be included or not.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Destination file field&lt;/strong> - field specifying the container which hold the csv file of the exported table. When the CSV file is present in the file field, the name of the file will be the same as the title of the table specified to export. For example if the title of a table is &lt;strong>Countries&lt;/strong>, the file will be called &lt;strong>Countrie.csv&lt;/strong>. You can download the file by clicking on the file name.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>Once these fields are set you can also set conditions on the rule, further details on conditions can be found here: &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">https://docs.kianda.com/docs/platform/rules/general/add-conditions/&lt;/a>&lt;/p></description></item><item><title>Docs: Copy table rows</title><link>https://docs.kianda.com/docs/platform/rules/tables/copy-table-rows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/copy-table-rows/</guid><description>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Copy table rows</title><link>https://docs.kianda.com/docs/platform/rules/tables/copy-table-rows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/copy-table-rows/</guid><description>
 &lt;p>This rule allows you to copy table rows within Kianda from one table to another.&lt;/p>
 &lt;p>When to use:&lt;/p>
 &lt;p>This rule should be used when working with a table in Kianda and you want to copy a row from a table and copy it into a different table.&lt;/p>
