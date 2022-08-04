@@ -40,7 +40,7 @@ You can add this rule:
 
 7. **Input mapping** - used to update an item inside of the data source that you selected. Within this section the following fields are visible:
 
-   - **Form field or text** - you can select a field within your form or type in text manually to represent the value you want to your updated item to contain.
+   - **Form field or text** - you can select a field within your form or type in text manually to represent the value you want your updated item to contain.
    - **Data source field** -  select a field in your data source to hold the new value.
    - **Add mapping** - you can choose to create multiple items in your data source by clicking on **Add mapping** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png).
 
