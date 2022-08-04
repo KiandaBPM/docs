@@ -35,11 +35,10 @@ To access the Global CSS file:
    - **Class selectors** for example:
 
    ```css
-   .list-row {
+   .widget-list-row {
      border-radius: 5px;
      background-color: #ffffff;
      padding: 10px;
-     -webkit-transition: background-color 100ms ease-out;
      transition: background-color 100ms ease-out;
    }
    ```
@@ -48,15 +47,15 @@ To access the Global CSS file:
    
    ```css
      .pagination > .active > a {
-      background-color: #1e2458;
-      border-color: #1e2458;
+      background-color: #101641;
+      border-color: #101641;
      }
    ```
    
    - **Elements and attributes** example:
    
      ```css
-     div[data-name$="?card"].form-group {
+     .field-panel[data-name$="?card-view"].form-group {
       border-radius: 12px;
       border: 1px solid #e7eaee;
       background: white;
@@ -71,9 +70,8 @@ To access the Global CSS file:
    
    ```css
    @media only screen and (max-width: 767px) {
-     div[data-name$="?headerTitle"]:not(.is-design) {
-       margin-left: calc(-52vw + 50%);
-       width: 101vw;
+     .field-panel[data-name$="?card-view"].form-group:not(.is-design) {
+      background: whitesmoke;
      }
    }
    ```
