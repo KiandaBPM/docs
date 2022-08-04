@@ -26,7 +26,7 @@ To access the Global CSS file:
 
    ![Custom CSS Url file](/images/custom-css-url.jpg)
 
-4. The **CSS Editor** opens, allowing you to make edits to default code. 
+4. The **CSS Editor** opens, allowing you to make edits to default code, see example below.
 
    ![CSS Editor](/images/css-editor.jpg)
 

@@ -68,7 +68,7 @@ A REST API data connector can be configured by users with the role **Administrat
 
 
 
-### REST Methods
+## REST Methods
 
 A list of current REST Methods that have been created in Kianda will appear, listed by **Name**, **Path** and **HTTP Method**, where:
 
@@ -80,9 +80,11 @@ A list of current REST Methods that have been created in Kianda will appear, lis
 
   ![Existing REST Methods](/images/rest-method-example.jpg)
 
- You can edit details of the existing REST Methods by clicking on the **Edit/Pen** button ![Edit REST Methods](/images/edit-method.jpg) or delete a method by clicking on the **Bin/Trash** button ![Delete REST Method](/images/delete-method.jpg).
+You can edit details of the existing REST Methods by clicking on the **Edit/Pen** button ![Edit REST Methods](/images/edit-method.jpg) or delete a method by clicking on the **Bin/Trash** button ![Delete REST Method](/images/delete-method.jpg).
 
-To add a new **REST Method** to Kianda:
+
+
+### How to add a new **REST Method** ###
 
 1. Click on the **+Add REST Method** button. The **REST Method editor** dialog box appears.
 
@@ -103,9 +105,11 @@ When you are finished editing the dialog box click on **OK** to save your change
 
 
 
+### Example of a REST Method
 
+Take an example of https://catfact.ninja a well-known API that provides endpoints to retrieve random facts about cats.
 
-
+Using the steps in [How to add a new REST Method](#how-to-add-a-new-rest-method)
 
  
 
