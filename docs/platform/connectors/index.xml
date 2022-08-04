@@ -458,7 +458,7 @@
 &lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="rest-methods">REST Methods&lt;/h3>
+&lt;h2 id="rest-methods">REST Methods&lt;/h2>
 &lt;p>A list of current REST Methods that have been created in Kianda will appear, listed by &lt;strong>Name&lt;/strong>, &lt;strong>Path&lt;/strong> and &lt;strong>HTTP Method&lt;/strong>, where:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -473,7 +473,7 @@
 &lt;/li>
 &lt;/ul>
 &lt;p>You can edit details of the existing REST Methods by clicking on the &lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-method.jpg" alt="Edit REST Methods"> or delete a method by clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/delete-method.jpg" alt="Delete REST Method">.&lt;/p>
-&lt;p>To add a new &lt;strong>REST Method&lt;/strong> to Kianda:&lt;/p>
+&lt;h3 id="how-to-add-a-new-rest-method">How to add a new &lt;strong>REST Method&lt;/strong>&lt;/h3>
 &lt;ol>
 &lt;li>Click on the &lt;strong>+Add REST Method&lt;/strong> button. The &lt;strong>REST Method editor&lt;/strong> dialog box appears.&lt;/li>
 &lt;/ol>
@@ -490,5 +490,8 @@
 &lt;li>&lt;strong>Response body –&lt;/strong> Here you can define the response body that the request will receive. Include or remove fields as needed.&lt;/li>
 &lt;/ul>
 &lt;p>When you are finished editing the dialog box click on &lt;strong>OK&lt;/strong> to save your changes, or click on &lt;strong>Close&lt;/strong> at any time to exit.&lt;/p>
+&lt;h3 id="example-of-a-rest-method">Example of a REST Method&lt;/h3>
+&lt;p>Take an example of &lt;a href="https://catfact.ninja">https://catfact.ninja&lt;/a> a well-known API that provides endpoints to retrieve random facts about cats.&lt;/p>
+&lt;p>Using the steps in &lt;a href="#how-to-add-a-new-rest-method">How to add a new REST Method&lt;/a>&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Your &lt;strong>REST Service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. Check out the following article on how to implement a &lt;strong>REST Service&lt;/strong> in order to &lt;a href="https://docs.kianda.com/docs/platform/connectors/rest/rest-access-token/">refresh an Access token&lt;/a>.&lt;/p></description></item></channel></rss>
