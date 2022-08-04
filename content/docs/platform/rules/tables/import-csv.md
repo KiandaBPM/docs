@@ -43,7 +43,7 @@ This indicates that the CSV file that we want to import should have three column
 
    ![Edit rule - Import CSV](/images/import-csv-edit-rule.jpg)
 
-4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details. It is a good idea to add condition to this rule to prevent deleting valuable information from the table.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
 5. Under the **Action** section fill out the following:
 
