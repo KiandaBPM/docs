@@ -161,49 +161,11 @@ To achieve that you might connect your list to a data source table or SharePoint
 
 ## Input validation
 
+Validating input in forms is quick and easy. Simply enable the **required** flag of an input field and it will automatically prevent users from submitting it empty.
 
+The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Another way of validating input is to use the **validate input rule** this allows greater flexibility in terms of when or what to validate.
 
 
 
@@ -246,10 +208,6 @@ The following are some of the key options of the anonymous link rule:
 
 **Important**: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically expire the previous of the same type if a link existed.
 
-## Input fields
-
-Kianda forms usability is brought to life with the help of the vario
-
 
 
 ## Responsive form layout
@@ -263,24 +221,6 @@ By using the **Layout** option under the property panel you will be able to simp
 This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS  framework that allows designing web interfaces with a mobile-first approach.
 
 ## 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Validating input in forms is quick and easy. Simply enable the **required** flag of an input field and it will automatically prevent users from submitting it empty.
-
-The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.
-
-Another way of validating input is to use the **validate input rule** this allows greater flexibility in terms of when or what to validate.
 
 ## Cloning
 
