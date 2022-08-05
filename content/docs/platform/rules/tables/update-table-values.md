@@ -40,7 +40,7 @@ For this rule to work you need to have one or more tables in your process. This 
 
    - **Table lookup conditions** - allows you to add a condition that works like a filter. Adding a condition will allow you to target the specific row that the condition specifies. For example checking if a currency column is equal to Euro, the condition will look as follows:
 
-     ![Copy row mapping](C:\Kianda\docs\static\images\lookup-table-condition.jpg)
+     ![Copy row mapping](/images/lookup-table-condition.jpg)
 
      **Box 1** represents the column from a row which you are looking up.
 
