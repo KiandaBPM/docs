@@ -1,6 +1,6 @@
 ---
 title: "Hide or Show table column"
-weight: 11
+weight: 12
 ---
 {{% pageinfo color="primary" %}}
 Page under construction
