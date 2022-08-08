@@ -49,7 +49,7 @@ For this rule to work there are a couple of prerequisites needed inside of your 
      - **Select a number field to aggregate** - allows you to select a number field within your table. It is only used with the **Sum** and **Average** operations.
    
    - **Result field** - select the field you want to store the value of the aggregation.
-   - **Auto update result** - checkbox allowing you to enable or disable auto update. This will determin if the result field will be updated when more rows are added after the aggregation. 
+   - **Auto update result** - checkbox allowing you to enable or disable auto update. This will determine if the result field will be updated when more rows are added after the aggregation. 
    
 6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 

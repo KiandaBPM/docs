@@ -48,6 +48,8 @@ For this rule to work you need to have one or more tables in your process. This 
      - **Show**- will set the visible property to enabled.
      - **Toggle visible** - will set the visible property as the opposite of what it is. For example if the current state of the visible property is enabled, when this rule is triggered, it will set the visible property to disabled.
 
+   - **Add** - you can choose to change visibile property of multiple columns in your table by clicking on **+ Add** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png).
+
 6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
 
