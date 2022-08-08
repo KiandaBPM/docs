@@ -90,26 +90,56 @@ You can edit details of the existing REST Methods by clicking on the **Edit/Pen*
 
 ![REST Method editor](/images/rest-method-editor.jpg)
 
-Fill out the fields: 
+2. Fill out the fields: 
 
-- **Display Name –** this is the name you want to attribute to the REST Method.
-- **HTTP Method –** this is the HTTP Method of the REST Method. 
-- **Url Path –** this is the rest of the URL that will be concatenated with the **Rest server base URL**. For example /rest/GetUserDetails.
-- **Request headers –** Request headers can be manually added here that need to be sent as part of the request, for example, Authorization. These values can be hard coded or passed into the **Request header** from the **process.** Click on **Add header** to add a request header.
-- **Request body –** This section is for the **Request body** that will be used during the request. These values can be hard coded or passed into the **Request body** from the **process.**
-- **Content type –** Here you can define the **Content type** of the body. The options are **JSON** and **Form Data**.
-- **Response headers –** Here you can define any response headers you wish to capture in the response that you want to use in Kianda. Click on **Add header** to add a response header.
-- **Response body –** Here you can define the response body that the request will receive. Include or remove fields as needed.
+   - **Display Name –** this is the name you want to attribute to the REST Method.
 
-When you are finished editing the dialog box click on **OK** to save your changes, or click on **Close** at any time to exit.
+   - **HTTP Method –** this is the HTTP Method of the REST Method. 
+
+   - **Url Path –** this is the rest of the URL that will be concatenated with the **Rest server base URL**. For example /rest/GetUserDetails.
+
+   - **Request headers –** Request headers can be manually added here that need to be sent as part of the request, for example, Authorization. These values can be hard coded or passed into the **Request header** from the **process.** Click on **Add header** to add a request header.
+
+   - **Request body –** This section is for the **Request body** that will be used during the request. These values can be hard coded or passed into the **Request body** from the **process.**
+
+   - **Content type –** Here you can define the **Content type** of the body. The options are **JSON** and **Form Data**.
+
+   - **Response headers –** Here you can define any response headers you wish to capture in the response that you want to use in Kianda. Click on **Add header** to add a response header.
+
+   - **Response body –** Here you can define the response body that the request will receive. Include or remove fields as needed.
 
 
+3. When you are finished editing the dialog box click on **OK** to save your changes, or click on **Close** at any time to exit.
 
-### Example of a REST Method
+See [Example of REST Method use in Kianda](#example-of-rest-method-use-in-kianda) below which can be used as a service with the connection.
 
-Take an example of https://catfact.ninja a well-known API that provides endpoints to retrieve random facts about cats.
+### Example of REST Method use in Kianda
 
-Using the steps in [How to add a new REST Method](#how-to-add-a-new-rest-method)
+Take an example of https://catfact.ninja/fact a well-known API that provides an endpoint to retrieve random facts about cats.
+
+If a simple **GET** method is used to retrieve facts using an API client, then parameters are returned showing the 'fact' and the 'length' of the fact as shown below.
+
+![Catninja GET example](/images/catfact-ninja-send.jpg)
+
+Knowing what parameters are available we can use the steps in [How to add a new REST Method](#how-to-add-a-new-rest-method),:
+
+1. Click on **+Add REST Method** ![Add REST Method](/images/add-rest-method.jpg)from the **REST Service details** page, and add in details using the **REST Method editor** where:
+
+   - **Url Path** - the path that is attached to the base URL, for example **/fact**
+
+   - **HTTP Method** - **GET** is used to retrieve values
+
+   - Click on **Add Header** ![Add Header button](/images/add-header.jpg)to add request headers, for example for authentication. 
+
+   - **Request body** - this is the part of the request that is sent to a function where a function processes the request and sends back the **Response body**. For our 'catfact ninja' example we will use the parameters 'fact' and 'length' for **mapping values to form fields** in Kianda processes:
+
+     ![Catfact ninja response body](/images/catfact-ninja-response-body.jpg)
+
+   - Click on **OK** to save the details and then click on **Save** ![Save button](/images/save-button.jpg)in the **REST Service details** screen to save the connection.
+
+2. To see how 'catfacts' are mapped into Kianda processes, create a new process by going to the left-hand side menu > **Administration** > **Designer** and click on **Add new** ![Add new button](/images/addnew.png)and fill out details for the process, such as a **Title** and **Description**. Click on **OK** when complete.
+
+   
 
  
 
