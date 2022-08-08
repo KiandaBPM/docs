@@ -40,15 +40,17 @@ For this rule to work there are a couple of prerequisites needed inside of your 
 5. Under the **Action** section fill out the following:
 
    - **Select a table field** - select the table you wish target when aggregating values. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show. 
-- **Table aggregate conditions** - allows you to add a condition that works like a filter. Adding a condition will allow you to target the specific row that the condition matches. For example, you want to aggregate all rows that the avarage score is more than 50%.
+   
+   - **Table aggregate conditions** - allows you to add a condition that works like a filter. Adding a condition will allow you to target the specific row that the condition matches. For example, you want to aggregate all rows that the avarage score is more than 50%.
    - **Operation** - radio selection of the operation that you want performed on the aggregate rule:
-  - **Sum** - counts all fields together and outputs the total(only works with numbers). Requires a **Number** field within your table. To lean more on Number field, got to [Number control](/docs/platform/controls/input/number/).
+      - **Sum** - counts all fields together and outputs the total(only works with numbers). Requires a **Number** field within your table. To lean more on Number field, got to [Number control](/docs/platform/controls/input/number/).
      - **Average** - gets the average from all the values provided in a column(only works with numbers). Requires a **Number** field within your table. To lean more on Number field, got to [Number control](/docs/platform/controls/input/number/).
-  - **Count** - counts all row instances that the aggregate rule looped through.
-   - **Select a number field to aggregate** - allows you to select a number field withiin your table. It is only used wit the **Sum** and **Average** operations.
-- **Result field** - select the field you want to store the value of the aggregation.
+     - **Count** - counts all row instances that the aggregate rule looped through.
+     - **Select a number field to aggregate** - allows you to select a number field within your table. It is only used with the **Sum** and **Average** operations.
+   
+   - **Result field** - select the field you want to store the value of the aggregation.
    - **Auto update result** - checkbox allowing you to enable or disable auto update. This will determin if the result field will be updated when more rows are added after the aggregation. 
-
+   
 6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
 
