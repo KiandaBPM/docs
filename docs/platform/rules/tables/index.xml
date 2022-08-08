@@ -143,6 +143,8 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to target when removing rows. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -487,7 +489,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to clear rows in. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you wanttarget when looking up values. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -551,7 +553,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to clear rows in. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to update values in. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -613,7 +615,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to clear rows in. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to be sorted. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -671,37 +673,77 @@
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Aggregate table</title><link>https://docs.kianda.com/docs/platform/rules/tables/aggregate-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/aggregate-table/</guid><description>
-&lt;p>This rule allows you to aggregate the values of a column in a table within Kianda.&lt;/p>
-&lt;p>When to use:&lt;/p>
-&lt;p>This rule should be used when working with a table in Kianda and you want to aggregate the values in a column and store this in another field within the form.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Aggregate table&lt;/strong> rule loops through a table allowing you to aggregate a specific column and store the value in another field from within you process. There are three functions of the &lt;strong>Aggregate table&lt;/strong> rule which are &lt;strong>Sum&lt;/strong>, &lt;strong>Average&lt;/strong> and &lt;strong>Count&lt;/strong>. Sum and Average only work on number fields while count will count the number of rows it looped through.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule to sum up all the values in a column or get the average. &lt;strong>Sum&lt;/strong> and &lt;strong>Average&lt;/strong> functions of the aggregate rule work only on number fields. The &lt;strong>Count&lt;/strong> function can be used to count the rows that the aggregate rule looped through.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
-&lt;p>· to a field&lt;/p>
-&lt;p>· to a form&lt;/p>
-&lt;p>· to a process (the rule will run on load)&lt;/p>
-&lt;p>How to use:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work there are a couple of prerequisites needed inside of your process:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Table&lt;/strong> - needed to let the rule know which table will be used to aggregate columns together, for more detail on how to add a table go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box&lt;/strong> - needed as a container to hold the result from the aggregate. For more detail on how to add a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>To aggregate a table column, the first step is to select the table which you want to use.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Following this you will select the operation which you want to perform on the column, be this sum, average, or count.&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Aggregate table&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You will then be presented with two fields &lt;strong>select a number field to aggregate&lt;/strong> &amp;amp; &lt;strong>Results field&lt;/strong>.&lt;/p>
+&lt;p>In the &lt;strong>Edit rule - Aggregate table&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/aggregate-table-edit-rule.jpg" alt="Edit rule - Aggregate table">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Select a table field&lt;/strong> - select the table you wish target when aggregating values. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show.&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;/ol>
-&lt;p>You can also set a &lt;strong>table aggregate condition&lt;/strong> this will be used to set conditions on how the table aggregation will be performed, for more details on conditions, please see here:&lt;/p>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">https://docs.kianda.com/docs/platform/rules/general/add-conditions/&lt;/a>&lt;/p>
-&lt;ol start="4">
-&lt;li>
-&lt;p>These two fields will be present within the Kianda form and are used to confirm the number column within the table which will be used in the aggregation. And the results field will be a field within the form, which will be used to store result of the aggregation&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Table aggregate conditions&lt;/strong> - allows you to add a condition that works like a filter. Adding a condition will allow you to target the specific row that the condition matches. For example, you want to aggregate all rows that the avarage score is more than 50%.
+&lt;ul>
+&lt;li>&lt;strong>Operation&lt;/strong> - radio selection of the operation that you want performed on the aggregate rule:&lt;/li>
+&lt;li>&lt;strong>Sum&lt;/strong> - counts all fields together and outputs the total(only works with numbers). Requires a &lt;strong>Number&lt;/strong> field within your table. To lean more on Number field, got to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.
+&lt;ul>
+&lt;li>&lt;strong>Average&lt;/strong> - gets the average from all the values provided in a column(only works with numbers). Requires a &lt;strong>Number&lt;/strong> field within your table. To lean more on Number field, got to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/li>
+&lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>Finally, there is a check box which will enable auto update of the result, which will automatically update the result field when a change is made within the table.&lt;/p>
+&lt;li>&lt;strong>Count&lt;/strong> - counts all row instances that the aggregate rule looped through.&lt;/li>
+&lt;li>&lt;strong>Select a number field to aggregate&lt;/strong> - allows you to select a number field withiin your table. It is only used wit the &lt;strong>Sum&lt;/strong> and &lt;strong>Average&lt;/strong> operations.&lt;/li>
+&lt;/ul>
 &lt;/li>
+&lt;li>&lt;strong>Result field&lt;/strong> - select the field you want to store the value of the aggregation.
+&lt;ul>
+&lt;li>&lt;strong>Auto update result&lt;/strong> - checkbox allowing you to enable or disable auto update. This will determin if the result field will be updated when more rows are added after the aggregation.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;ol start="6">
+&lt;li>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/li>
 &lt;/ol>
-&lt;p>Once these fields are set you can also set conditions on the rule, further details on conditions can be found here:&lt;/p>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">https://docs.kianda.com/docs/platform/rules/general/add-conditions/&lt;/a>&lt;/p></description></item><item><title>Docs: Hide or Show table column</title><link>https://docs.kianda.com/docs/platform/rules/tables/hide-show-column/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/hide-show-column/</guid><description>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Hide or Show table column</title><link>https://docs.kianda.com/docs/platform/rules/tables/hide-show-column/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/hide-show-column/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item></channel></rss>
