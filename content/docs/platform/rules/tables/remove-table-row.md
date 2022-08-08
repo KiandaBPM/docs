@@ -18,6 +18,10 @@ You can add this rule:
 - [x] to a form 
 - [x] to a process (the rule will run on load)
 
+## Before you get started
+
+For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to target when removing rows. To learn how to add a table to your process go to [Table control](/docs/platform/controls/input/table/).
+
 ## How to get started
 
 1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
