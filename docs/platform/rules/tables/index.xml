@@ -707,31 +707,32 @@
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Select a table field&lt;/strong> - select the table you wish target when aggregating values. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show.&lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>&lt;strong>Select a table field&lt;/strong> - select the table you wish target when aggregating values. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show.&lt;/p>
 &lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>&lt;strong>Table aggregate conditions&lt;/strong> - allows you to add a condition that works like a filter. Adding a condition will allow you to target the specific row that the condition matches. For example, you want to aggregate all rows that the avarage score is more than 50%.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Operation&lt;/strong> - radio selection of the operation that you want performed on the aggregate rule:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Table aggregate conditions&lt;/strong> - allows you to add a condition that works like a filter. Adding a condition will allow you to target the specific row that the condition matches. For example, you want to aggregate all rows that the avarage score is more than 50%.
-&lt;ul>
-&lt;li>&lt;strong>Operation&lt;/strong> - radio selection of the operation that you want performed on the aggregate rule:&lt;/li>
-&lt;li>&lt;strong>Sum&lt;/strong> - counts all fields together and outputs the total(only works with numbers). Requires a &lt;strong>Number&lt;/strong> field within your table. To lean more on Number field, got to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.
-&lt;ul>
+&lt;li>&lt;strong>Sum&lt;/strong> - counts all fields together and outputs the total(only works with numbers). Requires a &lt;strong>Number&lt;/strong> field within your table. To lean more on Number field, got to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>Average&lt;/strong> - gets the average from all the values provided in a column(only works with numbers). Requires a &lt;strong>Number&lt;/strong> field within your table. To lean more on Number field, got to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;/li>
 &lt;li>&lt;strong>Count&lt;/strong> - counts all row instances that the aggregate rule looped through.&lt;/li>
-&lt;li>&lt;strong>Select a number field to aggregate&lt;/strong> - allows you to select a number field withiin your table. It is only used wit the &lt;strong>Sum&lt;/strong> and &lt;strong>Average&lt;/strong> operations.&lt;/li>
+&lt;li>&lt;strong>Select a number field to aggregate&lt;/strong> - allows you to select a number field within your table. It is only used with the &lt;strong>Sum&lt;/strong> and &lt;strong>Average&lt;/strong> operations.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Result field&lt;/strong> - select the field you want to store the value of the aggregation.
-&lt;ul>
-&lt;li>&lt;strong>Auto update result&lt;/strong> - checkbox allowing you to enable or disable auto update. This will determin if the result field will be updated when more rows are added after the aggregation.&lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>&lt;strong>Result field&lt;/strong> - select the field you want to store the value of the aggregation.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Auto update result&lt;/strong> - checkbox allowing you to enable or disable auto update. This will determin if the result field will be updated when more rows are added after the aggregation.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;ol start="6">
-&lt;li>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/li>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
