@@ -478,20 +478,71 @@
 &lt;li>Click on the &lt;strong>+Add REST Method&lt;/strong> button. The &lt;strong>REST Method editor&lt;/strong> dialog box appears.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rest-method-editor.jpg" alt="REST Method editor">&lt;/p>
+&lt;ol start="2">
+&lt;li>
 &lt;p>Fill out the fields:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Display Name –&lt;/strong> this is the name you want to attribute to the REST Method.&lt;/li>
-&lt;li>&lt;strong>HTTP Method –&lt;/strong> this is the HTTP Method of the REST Method.&lt;/li>
-&lt;li>&lt;strong>Url Path –&lt;/strong> this is the rest of the URL that will be concatenated with the &lt;strong>Rest server base URL&lt;/strong>. For example /rest/GetUserDetails.&lt;/li>
-&lt;li>&lt;strong>Request headers –&lt;/strong> Request headers can be manually added here that need to be sent as part of the request, for example, Authorization. These values can be hard coded or passed into the &lt;strong>Request header&lt;/strong> from the &lt;strong>process.&lt;/strong> Click on &lt;strong>Add header&lt;/strong> to add a request header.&lt;/li>
-&lt;li>&lt;strong>Request body –&lt;/strong> This section is for the &lt;strong>Request body&lt;/strong> that will be used during the request. These values can be hard coded or passed into the &lt;strong>Request body&lt;/strong> from the &lt;strong>process.&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Content type –&lt;/strong> Here you can define the &lt;strong>Content type&lt;/strong> of the body. The options are &lt;strong>JSON&lt;/strong> and &lt;strong>Form Data&lt;/strong>.&lt;/li>
-&lt;li>&lt;strong>Response headers –&lt;/strong> Here you can define any response headers you wish to capture in the response that you want to use in Kianda. Click on &lt;strong>Add header&lt;/strong> to add a response header.&lt;/li>
-&lt;li>&lt;strong>Response body –&lt;/strong> Here you can define the response body that the request will receive. Include or remove fields as needed.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Display Name –&lt;/strong> this is the name you want to attribute to the REST Method.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>HTTP Method –&lt;/strong> this is the HTTP Method of the REST Method.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Url Path –&lt;/strong> this is the rest of the URL that will be concatenated with the &lt;strong>Rest server base URL&lt;/strong>. For example /rest/GetUserDetails.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Request headers –&lt;/strong> Request headers can be manually added here that need to be sent as part of the request, for example, Authorization. These values can be hard coded or passed into the &lt;strong>Request header&lt;/strong> from the &lt;strong>process.&lt;/strong> Click on &lt;strong>Add header&lt;/strong> to add a request header.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Request body –&lt;/strong> This section is for the &lt;strong>Request body&lt;/strong> that will be used during the request. These values can be hard coded or passed into the &lt;strong>Request body&lt;/strong> from the &lt;strong>process.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Content type –&lt;/strong> Here you can define the &lt;strong>Content type&lt;/strong> of the body. The options are &lt;strong>JSON&lt;/strong> and &lt;strong>Form Data&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Response headers –&lt;/strong> Here you can define any response headers you wish to capture in the response that you want to use in Kianda. Click on &lt;strong>Add header&lt;/strong> to add a response header.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Response body –&lt;/strong> Here you can define the response body that the request will receive. Include or remove fields as needed.&lt;/p>
+&lt;/li>
 &lt;/ul>
+&lt;/li>
+&lt;li>
 &lt;p>When you are finished editing the dialog box click on &lt;strong>OK&lt;/strong> to save your changes, or click on &lt;strong>Close&lt;/strong> at any time to exit.&lt;/p>
-&lt;h3 id="example-of-a-rest-method">Example of a REST Method&lt;/h3>
-&lt;p>Take an example of &lt;a href="https://catfact.ninja">https://catfact.ninja&lt;/a> a well-known API that provides endpoints to retrieve random facts about cats.&lt;/p>
-&lt;p>Using the steps in &lt;a href="#how-to-add-a-new-rest-method">How to add a new REST Method&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>See &lt;a href="#example-of-rest-method-use-in-kianda">Example of REST Method use in Kianda&lt;/a> below which can be used as a service with the connection.&lt;/p>
+&lt;h3 id="example-of-rest-method-use-in-kianda">Example of REST Method use in Kianda&lt;/h3>
+&lt;p>Take an example of &lt;a href="https://catfact.ninja/fact">https://catfact.ninja/fact&lt;/a> a well-known API that provides an endpoint to retrieve random facts about cats.&lt;/p>
+&lt;p>If a simple &lt;strong>GET&lt;/strong> method is used to retrieve facts using an API client, then parameters are returned showing the &amp;lsquo;fact&amp;rsquo; and the &amp;rsquo;length&amp;rsquo; of the fact as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/catfact-ninja-send.jpg" alt="Catninja GET example">&lt;/p>
+&lt;p>Knowing what parameters are available we can use the steps in &lt;a href="#how-to-add-a-new-rest-method">How to add a new REST Method&lt;/a>,:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>+Add REST Method&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-rest-method.jpg" alt="Add REST Method">from the &lt;strong>REST Service details&lt;/strong> page, and add in details using the &lt;strong>REST Method editor&lt;/strong> where:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Url Path&lt;/strong> - the path that is attached to the base URL, for example &lt;strong>/fact&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>HTTP Method&lt;/strong> - &lt;strong>GET&lt;/strong> is used to retrieve values&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add Header&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-header.jpg" alt="Add Header button">to add request headers, for example for authentication.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Request body&lt;/strong> - this is the part of the request that is sent to a function where a function processes the request and sends back the &lt;strong>Response body&lt;/strong>. For our &amp;lsquo;catfact ninja&amp;rsquo; example we will use the parameters &amp;lsquo;fact&amp;rsquo; and &amp;rsquo;length&amp;rsquo; for &lt;strong>mapping values to form fields&lt;/strong> in Kianda processes:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/catfact-ninja-response-body.jpg" alt="Catfact ninja response body">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> to save the details and then click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-button.jpg" alt="Save button">in the &lt;strong>REST Service details&lt;/strong> screen to save the connection.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>To see how &amp;lsquo;catfacts&amp;rsquo; are mapped into Kianda processes, create a new process by going to the left-hand side menu &amp;gt; &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on &lt;strong>Add new&lt;/strong> &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new button">and fill out details for the process, such as a &lt;strong>Title&lt;/strong> and &lt;strong>Description&lt;/strong>. Click on &lt;strong>OK&lt;/strong> when complete.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Your &lt;strong>REST Service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. Check out the following article on how to implement a &lt;strong>REST Service&lt;/strong> in order to &lt;a href="https://docs.kianda.com/docs/platform/connectors/rest/rest-access-token/">refresh an Access token&lt;/a>.&lt;/p></description></item></channel></rss>
