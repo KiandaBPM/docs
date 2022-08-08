@@ -726,7 +726,7 @@
 &lt;p>&lt;strong>Result field&lt;/strong> - select the field you want to store the value of the aggregation.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Auto update result&lt;/strong> - checkbox allowing you to enable or disable auto update. This will determin if the result field will be updated when more rows are added after the aggregation.&lt;/p>
+&lt;p>&lt;strong>Auto update result&lt;/strong> - checkbox allowing you to enable or disable auto update. This will determine if the result field will be updated when more rows are added after the aggregation.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -789,6 +789,9 @@
 &lt;li>&lt;strong>Show&lt;/strong>- will set the visible property to enabled.&lt;/li>
 &lt;li>&lt;strong>Toggle visible&lt;/strong> - will set the visible property as the opposite of what it is. For example if the current state of the visible property is enabled, when this rule is triggered, it will set the visible property to disabled.&lt;/li>
 &lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add&lt;/strong> - you can choose to change visibile property of multiple columns in your table by clicking on &lt;strong>+ Add&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
