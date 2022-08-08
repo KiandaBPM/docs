@@ -72,11 +72,11 @@
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Select data source&lt;/strong> button &lt;img src="https://docs.kianda.com/images/button-select-data-source.jpg" alt="Select data source">to select the desired data source. When you select your data source, new mappings options are presented.&lt;/p>
+&lt;p>Click on &lt;strong>Select data source&lt;/strong> button &lt;img src="https://docs.kianda.com/images/button-select-data-source.jpg" alt="Select data source"> to select the desired data source. When you select your data source, new mappings options are presented.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/find-items-mapping.jpg" alt="Find items - mapping">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Data source filter&lt;/strong> - used to filter data within your datasource. It works on condition bases which allows you to pull wanted and unwanted data back into the process. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Data source filter&lt;/strong> - this is used to filter data within your datasource. It works on condition bases which allows you to pull wanted and unwanted data back into the process. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Map results to table&lt;/strong>:&lt;/p>
@@ -85,7 +85,7 @@
 &lt;p>&lt;strong>Yes&lt;/strong> - selecting this option will allow you to map results to a table and opens the following options below:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/find-items-table-map.jpg" alt="Find items - mapping">&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Select a table&lt;/strong> - allow you to select a table from within your process which will be populated by mapping. This is useful when you want to display a lot of data from the datasource.&lt;/li>
+&lt;li>&lt;strong>Select a table&lt;/strong> - allows you to select a table from within your process which will be populated by mapping. This is useful when you want to display a lot of data from the datasource.&lt;/li>
 &lt;li>&lt;strong>Existing rows behaviour&lt;/strong>:
 &lt;ul>
 &lt;li>&lt;strong>Override&lt;/strong> - will override any duplicate date therefore will keep the last duplicate inside of the table.&lt;/li>

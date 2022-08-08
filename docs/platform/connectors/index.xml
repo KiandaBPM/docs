@@ -458,6 +458,8 @@
 &lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>Here is an example of a data connector for a REST Service called &amp;lsquo;Cat facts&amp;rsquo;. We will use this example to create a &lt;a href="#rest-methods">REST method&lt;/a>, see section below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rest-service-example-catfacts.jpg" alt="REST Service example">&lt;/p>
 &lt;h2 id="rest-methods">REST Methods&lt;/h2>
 &lt;p>A list of current REST Methods that have been created in Kianda will appear, listed by &lt;strong>Name&lt;/strong>, &lt;strong>Path&lt;/strong> and &lt;strong>HTTP Method&lt;/strong>, where:&lt;/p>
 &lt;ul>
@@ -469,6 +471,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>HTTP Method&lt;/strong> - is the type of operation that can be performed on the data, namely &lt;strong>POST&lt;/strong> (create), &lt;strong>GET&lt;/strong> (read). &lt;strong>PUT&lt;/strong> (update). &lt;strong>PATCH&lt;/strong> (partial update) and &lt;strong>DELETE&lt;/strong> (delete).&lt;/p>
+&lt;p>These details are shown in the example below, a data connector called &amp;lsquo;REST Service for HR&amp;rsquo;.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rest-method-example.jpg" alt="Existing REST Methods">&lt;/p>
 &lt;/li>
 &lt;/ul>
@@ -523,10 +526,13 @@
 &lt;p>Click on &lt;strong>+Add REST Method&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-rest-method.jpg" alt="Add REST Method">from the &lt;strong>REST Service details&lt;/strong> page, and add in details using the &lt;strong>REST Method editor&lt;/strong> where:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Url Path&lt;/strong> - the path that is attached to the base URL, for example &lt;strong>/fact&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Display Name&lt;/strong> - this is the name of your method that will be called upon in a process, for example &amp;lsquo;Cat fact&amp;rsquo;&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>HTTP Method&lt;/strong> - &lt;strong>GET&lt;/strong> is used to retrieve values&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Url Path&lt;/strong> - the path that is attached to the base URL, for example &lt;strong>/fact&lt;/strong>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add Header&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-header.jpg" alt="Add Header button">to add request headers, for example for authentication.&lt;/p>
@@ -540,9 +546,48 @@
 &lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;/ol>
+&lt;p>The method will appear under &lt;strong>REST Methods&lt;/strong> in the details screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rest-method-get-catfact.jpg" alt="REST Method example">&lt;/p>
+&lt;p>The next section shows how data at the data source can be used in a Kianda process.&lt;/p>
+&lt;h3 id="using-a-rest-method-in-a-kianda-process">Using a REST Method in a Kianda process&lt;/h3>
+&lt;p>To see how &amp;lsquo;catfacts&amp;rsquo; are mapped into Kianda processes, create a new process, add fields and a rule that uses the REST Method created above.&lt;/p>
+&lt;ol>
 &lt;li>
-&lt;p>To see how &amp;lsquo;catfacts&amp;rsquo; are mapped into Kianda processes, create a new process by going to the left-hand side menu &amp;gt; &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on &lt;strong>Add new&lt;/strong> &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new button">and fill out details for the process, such as a &lt;strong>Title&lt;/strong> and &lt;strong>Description&lt;/strong>. Click on &lt;strong>OK&lt;/strong> when complete.&lt;/p>
+&lt;p>To create a new process by going to the left-hand side menu &amp;gt; &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on &lt;strong>Add new&lt;/strong> &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new button">and fill out details for the process, such as a &lt;strong>Title&lt;/strong> and &lt;strong>Description&lt;/strong>. Click on &lt;strong>OK&lt;/strong> when complete.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Kianda Designer opens and in the first form, &lt;strong>form1&lt;/strong>, add in a new text box by going to the left-hand pane and click on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Input&lt;/strong> &amp;gt; &lt;strong>Text box&lt;/strong>. This field will hold the value of the &amp;lsquo;fact&amp;rsquo; from catfacts. To read more about Input controls go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input controls&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add a button to initiate the call from catfacts by going to the left-hand pane &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Actions&lt;/strong> &amp;gt; &lt;strong>Button&lt;/strong>. Give the button a &lt;strong>title&lt;/strong> for example &amp;lsquo;Get Cat Fact&amp;rsquo;, and choose &lt;strong>No&lt;/strong> for &lt;strong>Show in form body&lt;/strong> so the button appears at the bottom of the form. To read more about Action controls go to &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/get-cat-fact-button.jpg" alt="Get cat fact button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To dynamically populate the textbox with a fact, we need a rule. Click on &amp;lsquo;Get cat fact&amp;rsquo; button to add a rule. Then go to &lt;strong>Rules&lt;/strong> &amp;gt; &lt;strong>Data&lt;/strong> &amp;gt; &lt;strong>Find items&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Give the rule a title, and under &lt;strong>Action&lt;/strong>, click on &lt;strong>Select data source&lt;/strong> to select the data source created using the steps in &lt;a href="how-to-get-started">How to get started&lt;/a>. Select the method &amp;lsquo;Cat fact&amp;rsquo; created using the steps above in &lt;a href="#example-of-rest-method-use-in-kianda">Example of REST Method use in Kianda&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/select-datasource-catfacts.jpg" alt="Selecting datasource example catfact">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> to close the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add headers to the request use the &lt;strong>Input mapping&lt;/strong> for example requests headers for authentication, otherwise click on the &lt;strong>Bin/Trash&lt;/strong> button to delete the input mapping fields.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Results mapping&lt;/strong> select the textbox from your form for the &lt;strong>Form field&lt;/strong> and under &lt;strong>Data source field or text&lt;/strong> navigate to &amp;lsquo;fact&amp;rsquo; from the &lt;strong>responseBody&lt;/strong> as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/results-mapping-example.jpg" alt="Results mapping example for &amp;amp;lsquo;facts&amp;amp;rsquo;">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Error mapping if desired. Click on the links to read more about &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Error mapping&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/data/find-items/">Find items rule&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Save the process by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-button.jpg" alt="Save button"> and preview the process by clicking on &lt;strong>Preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">. In the previewed instance, click on the Get Cat Fact button to populate the textbox.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Your &lt;strong>REST Service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. Check out the following article on how to implement a &lt;strong>REST Service&lt;/strong> in order to &lt;a href="https://docs.kianda.com/docs/platform/connectors/rest/rest-access-token/">refresh an Access token&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>Your &lt;strong>REST Service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. Check out the following article on how to implement a &lt;strong>REST Service&lt;/strong> in order to &lt;a href="https://docs.kianda.com/docs/platform/connectors/rest/rest-access-token/">refresh an Access token&lt;/a>.&lt;/p>
+&lt;p>To read more about APIs, go to &lt;a href="https://docs.kianda.com/docs/apis/">APIs&lt;/a>.&lt;/p>
+&lt;p>To read more about processes and forms, go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Application designer&lt;/a>.&lt;/p></description></item></channel></rss>
