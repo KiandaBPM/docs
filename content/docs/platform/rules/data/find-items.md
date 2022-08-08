@@ -33,11 +33,11 @@ You can add this rule:
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. Click on **Select data source** button ![Select data source](/images/button-select-data-source.jpg)to select the desired data source. When you select your data source, new mappings options are presented.
+5. Click on **Select data source** button ![Select data source](/images/button-select-data-source.jpg) to select the desired data source. When you select your data source, new mappings options are presented.
 
    ![Find items - mapping](/images/find-items-mapping.jpg)
 
-6. **Data source filter** - used to filter data within your datasource. It works on condition bases which allows you to pull wanted and unwanted data back into the process. To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
+6. **Data source filter** - this is used to filter data within your datasource. It works on condition bases which allows you to pull wanted and unwanted data back into the process. To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
 
 7. **Map results to table**:
 
@@ -45,7 +45,7 @@ You can add this rule:
 
      ![Find items - mapping](/images/find-items-table-map.jpg)
 
-     - **Select a table** - allow you to select a table from within your process which will be populated by mapping. This is useful when you want to display a lot of data from the datasource.
+     - **Select a table** - allows you to select a table from within your process which will be populated by mapping. This is useful when you want to display a lot of data from the datasource.
      - **Existing rows behaviour**:
        -  **Override** - will override any duplicate date therefore will keep the last duplicate inside of the table.
        - **Append** - will add any duplicate data to the table and therefore all occurrence of data will be displayed in the table.

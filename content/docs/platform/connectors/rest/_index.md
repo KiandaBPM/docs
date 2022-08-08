@@ -66,6 +66,12 @@ A REST API data connector can be configured by users with the role **Administrat
 
 11. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
 
+Here is an example of a data connector for a REST Service called 'Cat facts'. We will use this example to create a [REST method](#rest-methods), see section below.
+
+![REST Service example](/images/rest-service-example-catfacts.jpg)
+
+
+
 
 
 ## REST Methods
@@ -78,9 +84,13 @@ A list of current REST Methods that have been created in Kianda will appear, lis
 
 - **HTTP Method** - is the type of operation that can be performed on the data, namely **POST** (create), **GET** (read). **PUT** (update). **PATCH** (partial update) and **DELETE** (delete).
 
+  These details are shown in the example below, a data connector called 'REST Service for HR'.
+  
   ![Existing REST Methods](/images/rest-method-example.jpg)
 
 You can edit details of the existing REST Methods by clicking on the **Edit/Pen** button ![Edit REST Methods](/images/edit-method.jpg) or delete a method by clicking on the **Bin/Trash** button ![Delete REST Method](/images/delete-method.jpg).
+
+
 
 
 
@@ -113,6 +123,8 @@ You can edit details of the existing REST Methods by clicking on the **Edit/Pen*
 
 See [Example of REST Method use in Kianda](#example-of-rest-method-use-in-kianda) below which can be used as a service with the connection.
 
+
+
 ### Example of REST Method use in Kianda
 
 Take an example of https://catfact.ninja/fact a well-known API that provides an endpoint to retrieve random facts about cats.
@@ -125,9 +137,11 @@ Knowing what parameters are available we can use the steps in [How to add a new 
 
 1. Click on **+Add REST Method** ![Add REST Method](/images/add-rest-method.jpg)from the **REST Service details** page, and add in details using the **REST Method editor** where:
 
-   - **Url Path** - the path that is attached to the base URL, for example **/fact**
+   - **Display Name** - this is the name of your method that will be called upon in a process, for example 'Cat fact'
 
    - **HTTP Method** - **GET** is used to retrieve values
+
+   - **Url Path** - the path that is attached to the base URL, for example **/fact**
 
    - Click on **Add Header** ![Add Header button](/images/add-header.jpg)to add request headers, for example for authentication. 
 
@@ -137,13 +151,53 @@ Knowing what parameters are available we can use the steps in [How to add a new 
 
    - Click on **OK** to save the details and then click on **Save** ![Save button](/images/save-button.jpg)in the **REST Service details** screen to save the connection.
 
-2. To see how 'catfacts' are mapped into Kianda processes, create a new process by going to the left-hand side menu > **Administration** > **Designer** and click on **Add new** ![Add new button](/images/addnew.png)and fill out details for the process, such as a **Title** and **Description**. Click on **OK** when complete.
+The method will appear under **REST Methods** in the details screen.
 
-   
+![REST Method example](/images/rest-method-get-catfact.jpg)
+
+The next section shows how data at the data source can be used in a Kianda process.
+
+
+
+### Using a REST Method in a Kianda process
+
+To see how 'catfacts' are mapped into Kianda processes, create a new process, add fields and a rule that uses the REST Method created above.
+
+1. To create a new process by going to the left-hand side menu > **Administration** > **Designer** and click on **Add new** ![Add new button](/images/addnew.png)and fill out details for the process, such as a **Title** and **Description**. Click on **OK** when complete.
+
+2. Kianda Designer opens and in the first form, **form1**, add in a new text box by going to the left-hand pane and click on **Controls** > **Input** > **Text box**. This field will hold the value of the 'fact' from catfacts. To read more about Input controls go to [Input controls](/docs/platform/controls/input/).
+
+3. Add a button to initiate the call from catfacts by going to the left-hand pane **Controls** > **Actions** > **Button**. Give the button a **title** for example 'Get Cat Fact', and choose **No** for **Show in form body** so the button appears at the bottom of the form. To read more about Action controls go to [Actions](/docs/platform/controls/actions/).
+
+   ![Get cat fact button](/images/get-cat-fact-button.jpg)
+
+4. To dynamically populate the textbox with a fact, we need a rule. Click on 'Get cat fact' button to add a rule. Then go to **Rules** > **Data** > **Find items**.
+
+5. Give the rule a title, and under **Action**, click on **Select data source** to select the data source created using the steps in [How to get started](how-to-get-started). Select the method 'Cat fact' created using the steps above in [Example of REST Method use in Kianda](#example-of-rest-method-use-in-kianda).
+
+   ![Selecting datasource example catfact](/images/select-datasource-catfacts.jpg)
+
+6. Click on **OK** to close the dialog box.
+
+7. If you want to add headers to the request use the **Input mapping** for example requests headers for authentication, otherwise click on the **Bin/Trash** button to delete the input mapping fields. 
+
+8. Under **Results mapping** select the textbox from your form for the **Form field** and under **Data source field or text** navigate to 'fact' from the **responseBody** as shown below.
+
+   ![Results mapping example for 'facts'](/images/results-mapping-example.jpg)
+
+9. Add Error mapping if desired. Click on the links to read more about [Error mapping](/docs/platform/rules/general/success-error-mapping/) and [Find items rule](/docs/platform/rules/data/find-items/).
+
+10. Save the process by clicking on the **Save** button ![Save button](/images/save-button.jpg) and preview the process by clicking on **Preview** ![Preview button](/images/preview.png). In the previewed instance, click on the Get Cat Fact button to populate the textbox.
+
+    
 
  
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
 Your **REST Service** is now set up and ready to be used in your **processes**. Check out the following article on how to implement a **REST Service** in order to [refresh an Access token](/docs/platform/connectors/rest/rest-access-token/).
+
+To read more about APIs, go to [APIs](/docs/apis/).
+
+To read more about processes and forms, go to [Application designer](/docs/platform/application-designer/designer/).
 
