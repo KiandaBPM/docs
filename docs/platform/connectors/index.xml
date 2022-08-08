@@ -134,15 +134,7 @@
 &lt;p>&lt;strong>File search pattern&lt;/strong> - select the extension you want the connector to display. For example typing in &lt;code>*.txt&lt;/code> will only output the .txt files within the folder path, it will ignore all other path endings and will not display them. To set pattern you need to type in &lt;code>*&lt;/code> followed by &lt;code>.extenstion&lt;/code> for example &lt;code>*.txt&lt;/code> , &lt;code>*.docx&lt;/code> or &lt;code>*.pdf&lt;/code>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Search options&lt;/strong> - allows you to search only the top directory that is set in the &lt;strong>Root folder path&lt;/strong> or all other directories within. For example selecting:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Top Directory Only&lt;/strong> - will only give you access to the files in the root directory.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>All Directories&lt;/strong> - will give you access to all files within the root directory and its folders.&lt;/p>
-&lt;/li>
-&lt;/ul>
+&lt;p>&lt;strong>Search options&lt;/strong> - it only allows you to search the files of the top directory that is set in the &lt;strong>Root folder path&lt;/strong> or all other files of other directories within. For example selecting if &lt;strong>Top Directory Only&lt;/strong> is selected, you will be able to see only the files that are in &lt;strong>Root folder path&lt;/strong> while ignoring folders. If the &lt;strong>All Directories&lt;/strong> is selected, you will be able to see files that are in &lt;strong>Root folder path&lt;/strong> and all files from within each folder.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
