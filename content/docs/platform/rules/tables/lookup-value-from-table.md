@@ -20,7 +20,7 @@ You can add this rule:
 
 ## Before you get started
 
-For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to clear rows in. To learn how to add a table to your process go to [Table control](/docs/platform/controls/input/table/).
+For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you wanttarget when looking up values. To learn how to add a table to your process go to [Table control](/docs/platform/controls/input/table/).
 
 ## How to get started
 
