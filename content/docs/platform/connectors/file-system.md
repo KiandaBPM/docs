@@ -28,9 +28,6 @@ A File System data connector allows you to use your local file system as a data 
 
    - **File search pattern** - select the extension you want the connector to display. For example typing in `*.txt` will only output the .txt files within the folder path, it will ignore all other path endings and will not display them. To set pattern you need to type in `*` followed by `.extenstion` for example `*.txt` , `*.docx` or `*.pdf`
 
-   - **Search options** - allows you to search only the top directory that is set in the **Root folder path** or all other directories within. For example selecting:
-     -  **Top Directory Only** - will only give you access to the files in the root directory. 
-
-     - **All Directories** - will give you access to all files within the root directory and its folders.
+   - **Search options** - it only allows you to search the files of the top directory that is set in the **Root folder path** or all other files of other directories within. For example selecting if **Top Directory Only** is selected, you will be able to see only the files that are in **Root folder path** while ignoring folders. If the **All Directories** is selected, you will be able to see files that are in **Root folder path** and all files from within each folder.
 
 
