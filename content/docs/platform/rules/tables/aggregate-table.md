@@ -6,7 +6,7 @@ weight: 11
 
 ## Introduction
 
-The **Aggregate table** rule loops through a table allowing you to aggregate a specific column and store the value in another field from within you process. There are three functions of the **Aggregate table** rule which are **Sum**, **Average** and **Count**. Sum and Average only work on number fields while count will count the number of rows it looped through.
+The **Aggregate table** rule loops through a table allowing you to aggregate a specific column and store the value in another field from within you process. There are three functions of the **Aggregate table** rule which are **Sum**, **Average** and **Count**. **Sum and Average** only work on **number fields** while **Count** will **count the number of rows** it looped through.
 
 ## When to use
 

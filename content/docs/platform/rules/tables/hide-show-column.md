@@ -6,11 +6,11 @@ weight: 12
 
 ## Introduction
 
-The **Hide / Show column** rule allows you change the visible property to a specified column within your table. You can either disable oe enable the property, you can also toggle between both of the visible states. 
+The **Hide / Show column** rule allows you change the visibility of a selected column within a table in a process. You can either disable or enable the property, you can also toggle between both of the visible states. 
 
 ## When to use
 
-You can use this rule to hide or show specific columns in your table. Often used when hiding private data from users that do not need access to it. For example you can choose to show total earning column of a table to your managers but not other employees. You can also apply this rule to a button and give it the toggle function which will allow you to toggle the visible property of a column.
+You can use this rule to hide or show specific columns in your table. This rule is often used when hiding private data from users that do not need access to it. For example you can choose to show total earning column of a table to your managers but not other employees. You can also apply this rule to a button and give it the toggle function which will allow you to toggle the visible property of a column.
 
 You can add this rule:
 
@@ -40,9 +40,9 @@ For this rule to work you need to have one or more tables in your process. This 
 
      ![Select field and visible property](/images/hide-show-select-fields.jpg)
 
-   - **[1]Column to hide / show** - select the column you want to target you want the **hide / show** rule to apply to.
+   - **[1] Column to hide / show** - select the column you want to target you want the **hide / show** rule to apply to.
 
-   - **[2]Visible** - select to which visible property you want the column to be set to.
+   - **[2] Visible** - select to which visible property you want the column to be set to.
 
      - **Hide** - will set the visible property to disabled.
      - **Show**- will set the visible property to enabled.

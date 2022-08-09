@@ -6,7 +6,7 @@ weight: 10
 
 ## Introduction
 
-The **Sort table** rule loops through a table allowing to sort it in an ascending or descending manner. The value by which you are sorting the table is the column you select within it. The column you select can be any of the Control inputs, the sorting algorithm takes the numerical or text value of each field and sorts it accordingly. 
+The **Sort table** rule loops through a table allowing you to sort data in an ascending or descending manner. The value by which you are sorting the table is the column you select within it. The column you select can be any of the Control inputs, the sorting algorithm takes the numerical or text value of each field and sorts it accordingly. 
 
 ## When to use
 

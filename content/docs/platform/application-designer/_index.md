@@ -21,6 +21,7 @@ In general there are three key steps to build a process in an agile manner:
     Your browser does not support the video tag.
     </source>
 </video>
+
 ## Creating your first process ##
 
 To help you plan your process, go to [Plan your process](/docs/getting-started/create-first-process/plan-your-process/) to get started. When you have planned what you want to do, it couldn't be simpler to start creating your new process by following the steps below:
@@ -33,21 +34,21 @@ To help you plan your process, go to [Plan your process](/docs/getting-started/c
 
    ![Main process view](/images/mainprocessview.png)
 
-   Click on the **Add new** button to create a process from scratch.
+3. Click on the **Add new** button to create a process from scratch.
 
-3. Fill out the details in the **Add new process** dialog box - that is **Title**, **ID** (a unique Name that autofills from the title), **Description**, **Group** (if you have a predefined group) and **Administrators**, people who will be able to administrate this process, choose from **Users** or **Groups**.
+4. Fill out the details in the **Add new process** dialog box - that is **Title**, **ID** (a unique Name that autofills from the title), **Description**, **Group** (if you have a predefined group) and **Administrators**, people who will be able to change the process design, choose from **Users** or **Groups** or leave blank to allow all those with an administrator role, to have access to this process design.
 
    ***Add new process dialog box***
 
    ![Create a process](/images/createprocess2.png)
 
-    Click on **OK** ![OK button](/images/ok.png) when complete.
+5.  Click on **OK** ![OK button](/images/ok.png) when complete. 
 
-4. You are now in the Process **Design** page, that is Kianda Designer. From here, you can add forms.
+6. You are now in the Process **Design** page, that is Kianda Designer. From here, you can add forms.
 
    
 
-## Kianda Designer Introduction
+## Kianda Designer introduction
 
 Kianda process designer provides an intuitive interface where you can quickly start building forms for any use case.
 
@@ -111,7 +112,7 @@ Click on the links above or browse through the following headings to read more.
 
 
 
-## Forms fields
+## Form fields
 
 Kianda form usability is brought to life with the help of the various input fields or controls that are specifically adapted to work in mobile, tablet or desktop modes. Fields include textbox, date picker, numeric input, file upload and table, to name a few. Kianda offers a flexible array of controls that can be adjusted to work with a myriad of scenarios.
 
@@ -127,7 +128,7 @@ Each field comes with its own set of settings like autofill for textbox and curr
 
   ![Textbox example](/images/textbox-example.jpg)
 
-Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of [development](development.md) skills you can always create your custom field widget.
+Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of [development](/docs/platform/administration/developer/) skills you can always create your custom field widget.
 
 ### Categories of fields
 
@@ -142,7 +143,7 @@ The following headings showcase examples of layout fields as they play an import
 
 ### Model dialogs
 
-Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users' attention to something important.
+Model dialogs are a special form of **layout** fields. It allows a form designer to define an interface with the key intention of grabbing users' attention to something important.
 
 Typically dialogs are used for to create alerts for example a user confirmation or to help users make a final decision in a process.
 
@@ -158,9 +159,11 @@ In the example above, we use a modal dialog to display a simple *warning to the 
 
 1. Choose a process, or create a new process, and select a form in that process to add fields to. In the left-hand pane of Kianda Designer, click on **Controls** > **Layout** > **Dialog**.
 
-2. Click on the **dialog component** to insert other fields within it. You can add any field to your dialog, for example add Richtext by clicking on **Controls** > **Layout** > **Richtext**.
+2. Click on the **dialog component** to edit the dialog, for example give the dialog a **Title** and then **insert** other fields within it. You can add any field to your dialog, for example add Richtext by clicking on **Controls** > **Layout** > **Richtext**.
 
-3. To preview how your dialog box will be displayed, you can use the **Preview** button, on the dialog component.
+3. Give your Richtext field a **title**, and add a **message** in the Richtext body text and use other configurations as needed. Click on **OK** when complete or click on **Close** at any time to exit the dialog box.
+
+4. To preview how your dialog box will be displayed, you can use the **Preview** button, on the dialog component.
 
    
 
