@@ -38,6 +38,28 @@
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
+## Creating your first process ##
+&lt;p>To help you plan your process, go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">Plan your process&lt;/a> to get started. When you have planned what you want to do, it couldn&amp;rsquo;t be simpler to start creating your new process by following the steps below:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Go to the left- hand &lt;strong>side menu&lt;/strong> and click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You are now in the main process view. From here, you can click on &lt;strong>Import&lt;/strong> or &lt;strong>Export&lt;/strong> to import or export processes once created. There is also an option to use Kianda&amp;rsquo;s predefined processes available in the &lt;strong>App Store.&lt;/strong>&lt;/p>
+&lt;p>&lt;em>&lt;strong>Adding a new process&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/mainprocessview.png" alt="Main process view">&lt;/p>
+&lt;p>Click on the &lt;strong>Add new&lt;/strong> button to create a process from scratch.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out the details in the &lt;strong>Add new process&lt;/strong> dialog box - that is &lt;strong>Title&lt;/strong>, &lt;strong>ID&lt;/strong> (a unique Name that autofills from the title), &lt;strong>Description&lt;/strong>, &lt;strong>Group&lt;/strong> (if you have a predefined group) and &lt;strong>Administrators&lt;/strong>, people who will be able to administrate this process, choose from &lt;strong>Users&lt;/strong> or &lt;strong>Groups&lt;/strong>.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Add new process dialog box&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/createprocess2.png" alt="Create a process">&lt;/p>
+&lt;p>Click on &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when complete.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You are now in the Process &lt;strong>Design&lt;/strong> page, that is Kianda Designer. From here, you can add forms.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h2 id="kianda-designer-introduction">Kianda Designer Introduction&lt;/h2>
 &lt;p>Kianda process designer provides an intuitive interface where you can quickly start building forms for any use case.&lt;/p>
 &lt;p>The key components of the form designer are:&lt;/p>
@@ -58,7 +80,6 @@ Your browser does not support the video tag.
 &lt;li>Processes that have several steps use the concept of &lt;strong>current form&lt;/strong>, where only the current form is &lt;strong>editable&lt;/strong> in a process instance. Forms become the current form as the process executes sequentially. Rules like &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/">Go to form&lt;/a> can be used to make forms the current form. Other forms can be configured to &lt;strong>activate with&lt;/strong> the current form. This means it is also possible to edit these forms at the same point in process execution and togther the forms form a form group.&lt;/li>
 &lt;/ol>
 &lt;p>The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal &lt;a href="business-rules.md">business rules&lt;/a> such as &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/">Go to form&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/">Submit form&lt;/a> to dynamically control the ability for end-users to edit a particular form or a section of a form.&lt;/p>
-&lt;p>&lt;em>&lt;strong>How to add new form&lt;/strong>&lt;/em>&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/How to add new form 2.mp4">
 Your browser does not support the video tag.
@@ -113,6 +134,7 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;/ul>
 &lt;p>Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of &lt;a href="development.md">development&lt;/a> skills you can always create your custom field widget.&lt;/p>
+&lt;h3 id="categories-of-fields">Categories of fields&lt;/h3>
 &lt;p>Currently the default fields fall into four main categories of fields:&lt;/p>
 &lt;ol>
 &lt;li>&lt;strong>Input&lt;/strong> - Input fields include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.&lt;/li>
@@ -120,22 +142,27 @@ Your browser does not support the video tag.
 &lt;li>&lt;strong>Action&lt;/strong> - Action fields are fields that allow user interface actions like buttons, links or even signature components.&lt;/li>
 &lt;li>&lt;strong>Custom&lt;/strong> - Under custom fields, you will find any custom-developed fields available under your developer section.&lt;/li>
 &lt;/ol>
-&lt;p>Layout fields take an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.&lt;/p>
+&lt;p>The following headings showcase examples of layout fields as they play an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.&lt;/p>
 &lt;h3 id="model-dialogs">Model dialogs&lt;/h3>
-&lt;p>Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users attention to something important.&lt;/p>
-&lt;p>Typically we use dialogs for things like requiring user confirmation or to let them make a final decision.&lt;/p>
+&lt;p>Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users&amp;rsquo; attention to something important.&lt;/p>
+&lt;p>Typically dialogs are used for to create alerts for example a user confirmation or to help users make a final decision in a process.&lt;/p>
 &lt;p>&lt;em>&lt;strong>How to use a model dialog&lt;/strong>&lt;/em>&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/How to use a model dialog.mp4">
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-&lt;p>On the example above, we use a modal dialog to display a simple &lt;em>warning to the user&lt;/em>. The following are the steps:&lt;/p>
+&lt;p>In the example above, we use a modal dialog to display a simple &lt;em>warning to the user&lt;/em>. The following are the steps involved to create this:&lt;/p>
 &lt;ol>
-&lt;li>On the Layout components, select the &lt;em>Dialog&lt;/em>.&lt;/li>
-&lt;li>Click on the dialog component to insert other fields within it.&lt;/li>
-&lt;li>You can add any field to your dialog, in this case, we are adding a Rich text.&lt;/li>
-&lt;li>To preview how your dialog box will be displayed, you can use the &lt;strong>Preview&lt;/strong> button, on the dialog component.&lt;/li>
+&lt;li>
+&lt;p>Choose a process, or create a new process, and select a form in that process to add fields to. In the left-hand pane of Kianda Designer, click on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Layout&lt;/strong> &amp;gt; &lt;strong>Dialog&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>dialog component&lt;/strong> to insert other fields within it. You can add any field to your dialog, for example add Richtext by clicking on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Layout&lt;/strong> &amp;gt; &lt;strong>Richtext&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To preview how your dialog box will be displayed, you can use the &lt;strong>Preview&lt;/strong> button, on the dialog component.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h3 id="cascading-dropdown">Cascading dropdown&lt;/h3>
 &lt;p>The List field provides the opportunity to define an unlimited level cascading dropdown hierarchy very easily.&lt;/p>
@@ -184,7 +211,6 @@ Your browser does not support the video tag.
 &lt;p>By using the &lt;strong>Layout&lt;/strong> option under the property panel you will be able to simply define the layout of your fields or panels within a form. Clicking on the &lt;strong>^&lt;/strong> quickly uncovers the layout mode for desktop and mobile.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/layout-mode.png" alt="Layout mode">&lt;/p>
 &lt;p>This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS framework that allows designing web interfaces with a mobile-first approach.&lt;/p>
-&lt;h2 id="heading">&lt;/h2>
 &lt;h2 id="cloning">Cloning&lt;/h2>
 &lt;p>In the form designer, almost any of the components can be cloned. This will increase your productivity considerably and will make creating multi-step processes a breeze.&lt;/p>
 &lt;p>To clone either a field, a panel or even a form, simply select the component then click the clone button in the properties panel in the right-hand side of the panel.&lt;/p>
