@@ -10,7 +10,7 @@ Take an example of a **User alert** rule. Implementing this rule will result in 
 
 Clicking on the notification icon, opens up a pop-up box with the notification, for example:
 
-![User alert example to complete a form](/../content/docs/user-alert-example.jpg)
+![User alert example to complete a form](/images/user-alert-example.jpg)
 
 Clicking on the Reminder itself will bring the user to that form within the process instance, for the user to complete.
 
