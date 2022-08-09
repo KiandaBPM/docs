@@ -10,7 +10,7 @@ The **Import CSV** rule allows you import a Comma-Separated Values (CSV) file an
 
 ## When to use 
 
-You can use this rule to populate a table when there is a lot of data present in a CVS file. Apply this rule to a process so that your table is populated automatically when a process has been loaded.
+You can use this rule to populate a table when there is a lot of data present in a CSV file. Apply this rule to a process so that your table is populated automatically when a process has been loaded.
 
 You can add this rule:
 
@@ -51,7 +51,7 @@ This indicates that the CSV file that we want to import should have three column
 
    - **CSV separator** - the default separator is a comma ( **,** ) but you can set it to any character, number or symbol you want. Keep in mind that the separator fields separates each column of a row. For example you can have a file that looks as follows:
 
-     *This image represents how a table looks like applying the Import CSV rule with a sample file and when the CSV separator is set to a comma ( **,** )*
+     *This image represents how a table looks like applying the Import CSV rule with a sample file and when the CSV separator is set to a comma ( **,** ) see below:*
 
      ![Comma separated CSV file](/images/import-csv-comma.jpg)
 
@@ -67,7 +67,8 @@ This indicates that the CSV file that we want to import should have three column
      - **CSV field or text** - you can select a field/column within your CSV file or type in text manually to represent the value you want your field to contain.
      - **Add mapping** - you can choose to assign values to multiple fields in your row by clicking on **Add mapping** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png). 
 
-     Going back to the CSV separator example image, to achieve the correct mapping, we need to add three fields as shown below:
+       Going back to the CSV separator example image, to achieve the correct mapping, we need to add three fields as shown below:
+
 
      ![Import CSV mapping options](/images/import-csv-mapping-fields.jpg)
 

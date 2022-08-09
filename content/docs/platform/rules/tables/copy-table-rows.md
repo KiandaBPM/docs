@@ -53,7 +53,7 @@ For this rule to work you need to have one or more tables in your process. This 
 
      **Box 2** represents the conditional check.
 
-     *This is the example output table using the conditions and table shown earlier, Note we are only copying the country and currency into the new table*
+     *This is an example of the output using the conditions shown above. Note we are only copying the country and currency into the new table:*
 
      ![Example output table](/images/copy-row-output-table.jpg)
 

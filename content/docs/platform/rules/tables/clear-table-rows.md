@@ -50,7 +50,7 @@ For this rule to work you need to have one or more tables in your process. This 
 
      **Box 2** represents the conditional check.
 
-     *This is the example output table using the conditions and table shown earlier*
+     *This is an example of the output using the conditions shown above:*
 
      ![Example output table](/images/clear-rows-output-table.jpg)
 

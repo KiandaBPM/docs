@@ -6,11 +6,11 @@ weight: 3
 
 ## Introduction
 
-The **Remove table row** rule allows you to remove rows within a specified table. The rule targets only the last row in a table and will do nothing when there are no rows present in a table. You can apply conditions to this rule which will allow you to perform checks and only remove rows when a certain condition is met.
+The **Remove table row** rule allows you to remove rows within a specified table. The rule targets **only the last row** in a table and will do nothing when there are no rows present in a table. You can apply conditions to this rule which will allow you to perform checks and only remove rows when a certain condition is met.
 
 ## When to use 
 
-You can use this rule paired up with the **Add table row** rule. The add table rule will allow you to add a row with data in its columns and remove table row rule could be applied to a button, used to remove a row if wrong data has been entered. This gives the user the ability to add a row and remove rows. Give the remove table row rule a condition to make sure not to delete valuable data, see [Conditions](/docs/platform/rules/general/add-conditions/) for more detail. To learn more about Add table row rule go to [Add table row](/docs/platform/rules/tables/add-table-row/).
+You can use this rule paired up with the **Add table row** rule. The add table rule will allow you to add a row with data in its columns and remove table row rule could be applied to a button, used to remove a row if wrong data has been entered. This gives the user the ability to add a row and remove rows. Give the remove table row rule a condition to make sure not to delete valuable data, see [Conditions](/docs/platform/rules/general/add-conditions/) for more detail. To learn more about **Add table row** rule go to [Add table row](/docs/platform/rules/tables/add-table-row/).
 
 You can add this rule:
 
@@ -32,7 +32,7 @@ For this rule to work you need to have one or more tables in your process. This 
 
    ![Edit rule - Remove table row](/images/remove-row-edit-rule.jpg)
 
-4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png)see [Conditions](/docs/platform/rules/general/add-conditions/) for more details. It is a good idea to add condition to this rule to prevent deleting valuable information from the table.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details. It is a good idea to add condition to this rule to prevent deleting valuable information from the table.
 
 5. In the **Select a table** option, select the table you want to remove a row from.
 

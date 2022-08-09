@@ -6,7 +6,15 @@ weight: 1
 
 ## Introduction
 
-The **Loop table** rule allows you to loop through table rows allowing you to trigger fields or rules within the specified table. To prevent triggering the action manually, you can use this rule to loop through each row and trigger the action. For example calculating the total price spent for an item on a purchase table.
+The **Loop table** rule allows you to loop through table rows within a table of choice from within your process. When selected the rule allows you to trigger fields or rules to perform a particular action within the specified table. For example if a button is added to the table with an associated action, you can then trigger that action while looping through the table. 
+
+For example in the table below, there is a **Calculate total** button in a Calculate total column. This button has a rule that will set a value in the field in the **Total** column. Using the **Loop table** rule every row is looped through and this **Calculate total** button rule is triggered, completing the fields for each row in the **Total** column.
+
+![Edit rule - purchase table](/images/loop-table-purchase-table.jpg)
+
+If the **Loop table** rule isn't used, the user has to manually click on the **Calculate Total** button for each row, to populate the field in the **Total** column. 
+
+
 
 ## When to use 
 
@@ -22,7 +30,7 @@ You can add this rule:
 
 ## Before you get started
 
-To demonstrate this rule, we will loop through a simple **Purchase table** in which we will calculate the total price spent on each item bought. To learn more on how to add a table into your form go to In the table we will have the following columns:
+To demonstrate this rule, we will loop through a simple **Purchase table** described in the introduction above, in which we will calculate the total price spent on each item bought. To learn more on how to add a table into your form go to In the table we will have the following columns:
 
 - **Item** - text box field representing the name of the item bought. To learn how to add a text box field go to [Text box control](/docs/platform/controls/input/textbox/).
 
@@ -55,12 +63,12 @@ The goal in this example is to loop though the table and trigger the **Calculate
 6. **Enable start action** gives you two options:
 
    - **Yes** - allows you to select a field that will execute before the loop starts.
-   - **No** - no changes are made, the loop will execute straight away.
+   - **No** - means no changes are made, the loop will execute straight away.
 
 7. **Enable end action** gives you two options: 
 
    - **Yes** - allows you to select a field that will execute after the loop finishes.
-   - **No** - no changes are made, the loop will end without any action.
+   - **No** - means no changes are made, the loop will end without any action.
 
 ### Editing, deleting or duplicating rules
 

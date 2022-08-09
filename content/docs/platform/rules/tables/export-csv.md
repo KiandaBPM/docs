@@ -6,7 +6,7 @@ weight: 5
 
 ## Introduction
 
-The **Export CSV** rule allows you export a specified table from within your process into a CSV (Comma Separated Values) file. In the edit rule dialog box you can format how each value is separated and which columns to include and exclude when exporting. Keep in mind when exporting a table into a CSV format, it will only keep primitive types of field types such as:
+The **Export CSV** rule allows you export a specified table from within your process into a CSV (Comma Separated Values) file. In the edit rule dialog box you can format how each value is separated and which columns to include and exclude when exporting. Keep in mind when exporting a table into a CSV format, it will export data for the following field types:
 
 - **Text box**
 - **Number**
@@ -28,8 +28,8 @@ You can add this rule:
 
 For this rule to work there are a couple of prerequisites needed inside of your process:
 
-- **Table** - needed to let the rule know which table will be used to export into the csv file, for more detail on how to add a table go to [Table control](/docs/platform/controls/input/table/).
-- **File** - needed as a container to hold your exported csv file. When the table is exported into this file field, you can downloaded by clicking on the file name.  For more detail on how to add a file field go to [File upload control](/docs/platform/controls/input/file-upload/).
+- **Table** - needed to let the rule know which table will be used to export into the CSV file, for more detail on how to add a table go to [Table control](/docs/platform/controls/input/table/).
+- **File** - needed as a container to hold your exported CSV file. When the table is exported into this file field, you can downloaded by clicking on the file name.  For more detail on how to add a file field go to [File upload control](/docs/platform/controls/input/file-upload/).
 
 ## How to get started
 
@@ -53,15 +53,11 @@ For this rule to work there are a couple of prerequisites needed inside of your 
 
      ![Export to export checklist](/images/export-csv-columns.jpg)
 
-   - **CSV separator** - the default separator is a comma ` ,` but you can set it to any character, number or symbol you want. Keep in mind that the separator fields separates each column of a row. For example you can have a file that looks as follows when setting this field with a semi-colon `;`
-
-     *Opened with Notepad.*
+   - **CSV separator** - the default separator is a comma ` ,` but you can set it to any character, number or symbol you want. Keep in mind that the separator fields separates each column of a row. For example you can have a file that looks as follows when setting this field with a semi-colon `;`as shown with Notepad below:
 
      ![Semicolon separated csv file](/images/export-csv-semicolon.jpg)
 
-     Keep in mind when exporting a table using any other separator than a comma `,` and open it in excel, the data will not be formatted correctly within excel as it recognises columns when only separated by commas `,` For example the above file is opened with Notepad while the image below shows the same exported file opened with excel:
-
-     *Opened with Excel.*
+     Keep in mind when exporting a table using a separator other than a comma `,` and open it in Excel, the data will not be formatted correctly within Excel as it recognises columns when only separated by commas `,` for example the above file is opened with Notepad while the image below shows the same exported file opened with Excel:
 
      ![Semicolon separated csv file](/images/export-csv-semicolon-excel.jpg)
 
