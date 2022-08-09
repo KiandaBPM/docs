@@ -6,11 +6,29 @@ weight: 4
 
 ## Introduction
 
-The **Import CSV** rule allows you import a Comma-Separated Values (CSV) file and populate a specified table within your process. Using this rule automates and speeds up populating a table when a lot of data is present.
+The **Import CSV** rule allows you import a Comma-Separated Values (CSV) file and populate a specified table within your process. Using this rule automates and speeds up the process of populating a table when a lot of data is present. CSV files may look different depending on what program you will open it with, here is an example of a CSV file opened with **Excel**:
+
+![CSV file - excel](/images/csv-file-excel.jpg)
+
+Here is the same file opened using **Notepad**:
+
+![CSV file - notepad](/images/csv-file-notepad.jpg)
+
+As shown in the two images above, the format changes depending on what **program** you **open** the file with. Using the **Notepad**, each column is **separated** with a **comma** and **each new line is a row**. **Excel** formats commas and new lines automatically and creates **numbers for rows** and **letters for columns**. The CSV file can be separated using **different separators** other than comma. For example you can use `;` as a separator, keep in mind that **Excel** does **not format non-comma separated values correctly** and the file will look as follows when opened using **Excel**:
+
+![CSV file - excel](/images/import-csv-semicolon.jpg)
+
+Here is the same file opened using **Notepad**:
+
+![CSV file - excel](/images/csv-file-notepad-semicolon.jpg)
+
+
+
+
 
 ## When to use 
 
-You can use this rule to populate a table when there is a lot of data present in a CSV file. Apply this rule to a process so that your table is populated automatically when a process has been loaded.
+You can use this rule to populate a table when there is a lot of data present in a CSV file. Apply this rule to a process so that your table is populated **automatically** when a process has been loaded.
 
 You can add this rule:
 
@@ -25,7 +43,7 @@ For this rule to work there are a couple of prerequisites needed inside of your 
 - **Table** - needed to let the rule know which table will be populated using the csv file, for more detail on how to add a table go to [Table control](/docs/platform/controls/input/table/).
 - **File** - needed as a container to hold your csv file. Using a file control, you can upload a csv file and use that csv file to populate a table. For more detail on how to add a file go to [File upload control](/docs/platform/controls/input/file-upload/).
 
-Keep in mind that in order to populate a table within your process correctly, you need to have the same amount of columns in the table as inside of the csv file. For example a table looking as follows:
+Keep in mind that in order to populate a table within your process correctly, you need to have the **same amount of columns** in the table as inside of the CSV file. For example a table looking as follows:
 
 ![Import CSV rule - Sample table](/images/import-csv-table.jpg)
 
@@ -47,7 +65,7 @@ This indicates that the CSV file that we want to import should have three column
 
 5. Under the **Action** section fill out the following:
 
-   - **Select the CSV file field** - select a file field containing a csv file. This file field needs to be pre-created as it is a required field when using this rule. the csv file attached to this field will be used to populate the table.
+   - **Select the CSV file field** - select a file field containing a csv file. This file field needs to be **pre-created** as it is a required field when using this rule. the csv file attached to this field will be used to populate the table.
 
    - **CSV separator** - the default separator is a comma ( **,** ) but you can set it to any character, number or symbol you want. Keep in mind that the separator fields separates each column of a row. For example you can have a file that looks as follows:
 
@@ -68,15 +86,13 @@ This indicates that the CSV file that we want to import should have three column
      - **Add mapping** - you can choose to assign values to multiple fields in your row by clicking on **Add mapping** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png). 
 
        Going back to the CSV separator example image, to achieve the correct mapping, we need to add three fields as shown below:
+       
+       ![Import CSV mapping options](/images/import-csv-mapping-fields.jpg)
 
-
-     ![Import CSV mapping options](/images/import-csv-mapping-fields.jpg)
-
-   - **Existing rows behaviour** - you have two options when populating data into your selected table:
-
+   - **Existing rows behavior** - you have two options when populating data into your selected table:
      - **Override** - will override all existing rows of your table with the new data from your CSV file.
      - **Append** - will ignore the existing rows inside of your table and simply append all the new rows from your CSV file to the end of the table.
-
+     
    - **CSV Date format** - type in manually the data format that you have set in your CSV file. This applies to a column when it is of type **Date**. The formatting of the date specified in tis field must be the same as in your CSV file. For example when your date format in the CSV file is DD/MM/YYYY and **CSV Date format** option is set to YYYY/DD/MM, you can encounter date bugs in your table.
 
 6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.

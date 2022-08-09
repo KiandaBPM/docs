@@ -6,7 +6,13 @@ weight: 2
 
 ## Introduction
 
-The **Add table row** rule allows you to add rows within a specified table. You can set values for each field within the newly created row by mapping values into them. For mapping new values to each field, you can use manually typed text or use other fields from your process. You can also add rows with empty values by deleting the mapping fields. To learn more about mapping go to [Success/Error mapping](/docs/platform/rules/general/success-error-mapping/).
+The **Add table row** rule allows you to add rows within a specified table. You can set values for each field within the newly created row by mapping values into them. **For assigning values to each field** in a row, you can use **manually typed text** or use **other fields from your process**. By default you need to give a value to a field in the newly created row, but can also add rows with **no values**. You can do that by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png) in the **New row mapping** as shown in the image below:
+
+![Add table row - delete mapping](/images/add-row-delete-mapping.jpg)
+
+This will delete the mapping fields and allow you to add the rule without assigning values to a field in the new row. The new row mapping should look as follows:
+
+![Empty new row mapping](/images/add-row-empty-mapping.jpg)
 
 ## When to use 
 
@@ -30,7 +36,7 @@ You can add this rule:
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. In the **Select a table** option, select the table you want to add a new row to. New mapping options are presented when you select a table.
+5. In the **Select a table** option, select the table you want to add a new row to. **New mapping options** are presented when you select a table.
 
 6. In the **New row mapping** you have the option to assign values to newly created rows and the fields within it.
 
@@ -40,7 +46,7 @@ You can add this rule:
 
    - **Form field or text** -  you can select a field within your form or type in text manually to represent the value you want your row field to contain.
 
-   - **Add mapping** - you can choose to assign values to multiple row in your row by clicking on **Add mapping** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png). To add a row without any values, delete all mapping fields as shown below.
+   - **Add mapping** - you can choose to assign values to multiple row in your row by clicking on **Add mapping** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png). **To add a row without any values**, delete all mapping fields as shown below.
 
      ![Empty new row mapping](/images/add-row-empty-mapping.jpg)
 
