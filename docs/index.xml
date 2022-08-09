@@ -468,7 +468,10 @@ Your browser does not support the video tag.
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Loop table</title><link>https://docs.kianda.com/docs/platform/rules/tables/loop-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/loop-table/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Loop table&lt;/strong> rule allows you to loop through table rows allowing you to trigger fields or rules within the specified table. To prevent triggering the action manually, you can use this rule to loop through each row and trigger the action. For example calculating the total price spent for an item on a purchase table.&lt;/p>
+&lt;p>The &lt;strong>Loop table&lt;/strong> rule allows you to loop through table rows within a table of choice from within your process. When selected the rule allows you to trigger fields or rules to perform a particular action within the specified table. For example if a button is added to the table with an associated action, you can then trigger that action while looping through the table.&lt;/p>
+&lt;p>For example in the table below, there is a &lt;strong>Calculate total&lt;/strong> button in a Calculate total column. This button has a rule that will set a value in the field in the &lt;strong>Total&lt;/strong> column. Using the &lt;strong>Loop table&lt;/strong> rule every row is looped through and this &lt;strong>Calculate total&lt;/strong> button rule is triggered, completing the fields for each row in the &lt;strong>Total&lt;/strong> column.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/loop-table-purchase-table.jpg" alt="Edit rule - purchase table">&lt;/p>
+&lt;p>If the &lt;strong>Loop table&lt;/strong> rule isn&amp;rsquo;t used, the user has to manually click on the &lt;strong>Calculate Total&lt;/strong> button for each row, to populate the field in the &lt;strong>Total&lt;/strong> column.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>This rule is often used when the same action must be performed for multiple rows within a table.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
@@ -478,7 +481,7 @@ Your browser does not support the video tag.
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>To demonstrate this rule, we will loop through a simple &lt;strong>Purchase table&lt;/strong> in which we will calculate the total price spent on each item bought. To learn more on how to add a table into your form go to In the table we will have the following columns:&lt;/p>
+&lt;p>To demonstrate this rule, we will loop through a simple &lt;strong>Purchase table&lt;/strong> described in the introduction above, in which we will calculate the total price spent on each item bought. To learn more on how to add a table into your form go to In the table we will have the following columns:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Item&lt;/strong> - text box field representing the name of the item bought. To learn how to add a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
@@ -520,14 +523,14 @@ Your browser does not support the video tag.
 &lt;p>&lt;strong>Enable start action&lt;/strong> gives you two options:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Yes&lt;/strong> - allows you to select a field that will execute before the loop starts.&lt;/li>
-&lt;li>&lt;strong>No&lt;/strong> - no changes are made, the loop will execute straight away.&lt;/li>
+&lt;li>&lt;strong>No&lt;/strong> - means no changes are made, the loop will execute straight away.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Enable end action&lt;/strong> gives you two options:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Yes&lt;/strong> - allows you to select a field that will execute after the loop finishes.&lt;/li>
-&lt;li>&lt;strong>No&lt;/strong> - no changes are made, the loop will end without any action.&lt;/li>
+&lt;li>&lt;strong>No&lt;/strong> - means no changes are made, the loop will end without any action.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ol>

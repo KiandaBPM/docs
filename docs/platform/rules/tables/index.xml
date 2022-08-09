@@ -1,6 +1,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Table rules</title><link>https://docs.kianda.com/docs/platform/rules/tables/</link><description>Recent content in Table rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/tables/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Loop table</title><link>https://docs.kianda.com/docs/platform/rules/tables/loop-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/loop-table/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Loop table&lt;/strong> rule allows you to loop through table rows allowing you to trigger fields or rules within the specified table. To prevent triggering the action manually, you can use this rule to loop through each row and trigger the action. For example calculating the total price spent for an item on a purchase table.&lt;/p>
+&lt;p>The &lt;strong>Loop table&lt;/strong> rule allows you to loop through table rows within a table of choice from within your process. When selected the rule allows you to trigger fields or rules to perform a particular action within the specified table. For example if a button is added to the table with an associated action, you can then trigger that action while looping through the table.&lt;/p>
+&lt;p>For example in the table below, there is a &lt;strong>Calculate total&lt;/strong> button in a Calculate total column. This button has a rule that will set a value in the field in the &lt;strong>Total&lt;/strong> column. Using the &lt;strong>Loop table&lt;/strong> rule every row is looped through and this &lt;strong>Calculate total&lt;/strong> button rule is triggered, completing the fields for each row in the &lt;strong>Total&lt;/strong> column.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/loop-table-purchase-table.jpg" alt="Edit rule - purchase table">&lt;/p>
+&lt;p>If the &lt;strong>Loop table&lt;/strong> rule isn&amp;rsquo;t used, the user has to manually click on the &lt;strong>Calculate Total&lt;/strong> button for each row, to populate the field in the &lt;strong>Total&lt;/strong> column.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>This rule is often used when the same action must be performed for multiple rows within a table.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
@@ -10,7 +13,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>To demonstrate this rule, we will loop through a simple &lt;strong>Purchase table&lt;/strong> in which we will calculate the total price spent on each item bought. To learn more on how to add a table into your form go to In the table we will have the following columns:&lt;/p>
+&lt;p>To demonstrate this rule, we will loop through a simple &lt;strong>Purchase table&lt;/strong> described in the introduction above, in which we will calculate the total price spent on each item bought. To learn more on how to add a table into your form go to In the table we will have the following columns:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Item&lt;/strong> - text box field representing the name of the item bought. To learn how to add a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
@@ -52,14 +55,14 @@
 &lt;p>&lt;strong>Enable start action&lt;/strong> gives you two options:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Yes&lt;/strong> - allows you to select a field that will execute before the loop starts.&lt;/li>
-&lt;li>&lt;strong>No&lt;/strong> - no changes are made, the loop will execute straight away.&lt;/li>
+&lt;li>&lt;strong>No&lt;/strong> - means no changes are made, the loop will execute straight away.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Enable end action&lt;/strong> gives you two options:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Yes&lt;/strong> - allows you to select a field that will execute after the loop finishes.&lt;/li>
-&lt;li>&lt;strong>No&lt;/strong> - no changes are made, the loop will end without any action.&lt;/li>
+&lt;li>&lt;strong>No&lt;/strong> - means no changes are made, the loop will end without any action.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
@@ -134,9 +137,9 @@
 &lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Remove table row</title><link>https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Remove table row&lt;/strong> rule allows you to remove rows within a specified table. The rule targets only the last row in a table and will do nothing when there are no rows present in a table. You can apply conditions to this rule which will allow you to perform checks and only remove rows when a certain condition is met.&lt;/p>
+&lt;p>The &lt;strong>Remove table row&lt;/strong> rule allows you to remove rows within a specified table. The rule targets &lt;strong>only the last row&lt;/strong> in a table and will do nothing when there are no rows present in a table. You can apply conditions to this rule which will allow you to perform checks and only remove rows when a certain condition is met.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>You can use this rule paired up with the &lt;strong>Add table row&lt;/strong> rule. The add table rule will allow you to add a row with data in its columns and remove table row rule could be applied to a button, used to remove a row if wrong data has been entered. This gives the user the ability to add a row and remove rows. Give the remove table row rule a condition to make sure not to delete valuable data, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more detail. To learn more about Add table row rule go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/add-table-row/">Add table row&lt;/a>.&lt;/p>
+&lt;p>You can use this rule paired up with the &lt;strong>Add table row&lt;/strong> rule. The add table rule will allow you to add a row with data in its columns and remove table row rule could be applied to a button, used to remove a row if wrong data has been entered. This gives the user the ability to add a row and remove rows. Give the remove table row rule a condition to make sure not to delete valuable data, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more detail. To learn more about &lt;strong>Add table row&lt;/strong> rule go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/add-table-row/">Add table row&lt;/a>.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -158,7 +161,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/remove-row-edit-rule.jpg" alt="Edit rule - Remove table row">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details. It is a good idea to add condition to this rule to prevent deleting valuable information from the table.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details. It is a good idea to add condition to this rule to prevent deleting valuable information from the table.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Select a table&lt;/strong> option, select the table you want to remove a row from.&lt;/p>
@@ -181,7 +184,7 @@
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Import CSV&lt;/strong> rule allows you import a Comma-Separated Values (CSV) file and populate a specified table within your process. Using this rule automates and speeds up populating a table when a lot of data is present.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>You can use this rule to populate a table when there is a lot of data present in a CVS file. Apply this rule to a process so that your table is populated automatically when a process has been loaded.&lt;/p>
+&lt;p>You can use this rule to populate a table when there is a lot of data present in a CSV file. Apply this rule to a process so that your table is populated automatically when a process has been loaded.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -221,7 +224,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>CSV separator&lt;/strong> - the default separator is a comma ( &lt;strong>,&lt;/strong> ) but you can set it to any character, number or symbol you want. Keep in mind that the separator fields separates each column of a row. For example you can have a file that looks as follows:&lt;/p>
-&lt;p>&lt;em>This image represents how a table looks like applying the Import CSV rule with a sample file and when the CSV separator is set to a comma ( &lt;strong>,&lt;/strong> )&lt;/em>&lt;/p>
+&lt;p>&lt;em>This image represents how a table looks like applying the Import CSV rule with a sample file and when the CSV separator is set to a comma ( &lt;strong>,&lt;/strong> ) see below:&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-comma.jpg" alt="Comma separated CSV file">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -234,11 +237,17 @@
 &lt;p>&lt;strong>Destination table&lt;/strong> - field that allows you to select the table you want to target when populating data from the CSV file. New mapping options are presented when selecting a table.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-mapping.jpg" alt="Import CSV mapping options">&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Table row field&lt;/strong> - select the row you want to target when setting a value.&lt;/li>
-&lt;li>&lt;strong>CSV field or text&lt;/strong> - you can select a field/column within your CSV file or type in text manually to represent the value you want your field to contain.&lt;/li>
-&lt;li>&lt;strong>Add mapping&lt;/strong> - you can choose to assign values to multiple fields in your row by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>&lt;strong>Table row field&lt;/strong> - select the row you want to target when setting a value.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>CSV field or text&lt;/strong> - you can select a field/column within your CSV file or type in text manually to represent the value you want your field to contain.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add mapping&lt;/strong> - you can choose to assign values to multiple fields in your row by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
 &lt;p>Going back to the CSV separator example image, to achieve the correct mapping, we need to add three fields as shown below:&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-mapping-fields.jpg" alt="Import CSV mapping options">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -269,7 +278,7 @@
 &lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Export table as CSV</title><link>https://docs.kianda.com/docs/platform/rules/tables/export-csv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/export-csv/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Export CSV&lt;/strong> rule allows you export a specified table from within your process into a CSV (Comma Separated Values) file. In the edit rule dialog box you can format how each value is separated and which columns to include and exclude when exporting. Keep in mind when exporting a table into a CSV format, it will only keep primitive types of field types such as:&lt;/p>
+&lt;p>The &lt;strong>Export CSV&lt;/strong> rule allows you export a specified table from within your process into a CSV (Comma Separated Values) file. In the edit rule dialog box you can format how each value is separated and which columns to include and exclude when exporting. Keep in mind when exporting a table into a CSV format, it will export data for the following field types:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Text box&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Number&lt;/strong>&lt;/li>
@@ -287,8 +296,8 @@
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
 &lt;p>For this rule to work there are a couple of prerequisites needed inside of your process:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Table&lt;/strong> - needed to let the rule know which table will be used to export into the csv file, for more detail on how to add a table go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>File&lt;/strong> - needed as a container to hold your exported csv file. When the table is exported into this file field, you can downloaded by clicking on the file name. For more detail on how to add a file field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Table&lt;/strong> - needed to let the rule know which table will be used to export into the CSV file, for more detail on how to add a table go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>File&lt;/strong> - needed as a container to hold your exported CSV file. When the table is exported into this file field, you can downloaded by clicking on the file name. For more detail on how to add a file field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -317,11 +326,9 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/export-csv-columns.jpg" alt="Export to export checklist">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>CSV separator&lt;/strong> - the default separator is a comma &lt;code> ,&lt;/code> but you can set it to any character, number or symbol you want. Keep in mind that the separator fields separates each column of a row. For example you can have a file that looks as follows when setting this field with a semi-colon &lt;code>;&lt;/code>&lt;/p>
-&lt;p>&lt;em>Opened with Notepad.&lt;/em>&lt;/p>
+&lt;p>&lt;strong>CSV separator&lt;/strong> - the default separator is a comma &lt;code> ,&lt;/code> but you can set it to any character, number or symbol you want. Keep in mind that the separator fields separates each column of a row. For example you can have a file that looks as follows when setting this field with a semi-colon &lt;code>;&lt;/code>as shown with Notepad below:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/export-csv-semicolon.jpg" alt="Semicolon separated csv file">&lt;/p>
-&lt;p>Keep in mind when exporting a table using any other separator than a comma &lt;code>,&lt;/code> and open it in excel, the data will not be formatted correctly within excel as it recognises columns when only separated by commas &lt;code>,&lt;/code> For example the above file is opened with Notepad while the image below shows the same exported file opened with excel:&lt;/p>
-&lt;p>&lt;em>Opened with Excel.&lt;/em>&lt;/p>
+&lt;p>Keep in mind when exporting a table using a separator other than a comma &lt;code>,&lt;/code> and open it in Excel, the data will not be formatted correctly within Excel as it recognises columns when only separated by commas &lt;code>,&lt;/code> for example the above file is opened with Notepad while the image below shows the same exported file opened with Excel:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/export-csv-semicolon-excel.jpg" alt="Semicolon separated csv file">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -389,7 +396,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/copy-rows-copy-conditions.jpg" alt="Copy row mapping">&lt;/p>
 &lt;p>&lt;strong>Box 1&lt;/strong> represents the field from the table which you are copying from.&lt;/p>
 &lt;p>&lt;strong>Box 2&lt;/strong> represents the conditional check.&lt;/p>
-&lt;p>&lt;em>This is the example output table using the conditions and table shown earlier, Note we are only copying the country and currency into the new table&lt;/em>&lt;/p>
+&lt;p>&lt;em>This is an example of the output using the conditions shown above. Note we are only copying the country and currency into the new table:&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/copy-row-output-table.jpg" alt="Example output table">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -458,7 +465,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/copy-rows-copy-conditions.jpg" alt="Copy row mapping">&lt;/p>
 &lt;p>&lt;strong>Box 1&lt;/strong> represents the field from the table which you are clearing rows in.&lt;/p>
 &lt;p>&lt;strong>Box 2&lt;/strong> represents the conditional check.&lt;/p>
-&lt;p>&lt;em>This is the example output table using the conditions and table shown earlier&lt;/em>&lt;/p>
+&lt;p>&lt;em>This is an example of the output using the conditions shown above:&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/clear-rows-output-table.jpg" alt="Example output table">&lt;/p>
 &lt;/li>
 &lt;/ul>
