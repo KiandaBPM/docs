@@ -21,7 +21,31 @@ In general there are three key steps to build a process in an agile manner:
     Your browser does not support the video tag.
     </source>
 </video>
+## Creating your first process ##
 
+To help you plan your process, go to [Plan your process](/docs/getting-started/create-first-process/plan-your-process/) to get started. When you have planned what you want to do, it couldn't be simpler to start creating your new process by following the steps below:
+
+1. Go to the left- hand **side menu** and click on **Administration** > **Designer**.
+
+2. You are now in the main process view. From here, you can click on **Import** or **Export** to import or export processes once created. There is also an option to use Kianda's predefined processes available in the **App Store.** 
+
+   ***Adding a new process***
+
+   ![Main process view](/images/mainprocessview.png)
+
+   Click on the **Add new** button to create a process from scratch.
+
+3. Fill out the details in the **Add new process** dialog box - that is **Title**, **ID** (a unique Name that autofills from the title), **Description**, **Group** (if you have a predefined group) and **Administrators**, people who will be able to administrate this process, choose from **Users** or **Groups**.
+
+   ***Add new process dialog box***
+
+   ![Create a process](/images/createprocess2.png)
+
+    Click on **OK** ![OK button](/images/ok.png) when complete.
+
+4. You are now in the Process **Design** page, that is Kianda Designer. From here, you can add forms.
+
+   
 
 ## Kianda Designer Introduction
 
@@ -50,8 +74,6 @@ The key rules related to designing forms for user interaction are:
 3. Processes that have several steps use the concept of **current form**, where only the current form is **editable** in a process instance. Forms become the current form as the process executes sequentially. Rules like [Go to form](/docs/platform/rules/workflow/go-to-form/) can be used to make forms the current form. Other forms can be configured to **activate with** the current form. This means it is also possible to edit these forms at the same point in process execution and togther the forms form a form group.
 
 The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal [business rules](business-rules.md) such as [Assign form](/docs/platform/rules/workflow/assign-form/), [Go to form](/docs/platform/rules/workflow/go-to-form/) and [Submit form](/docs/platform/rules/form-actions/submit-form/) to dynamically control the ability for end-users to edit a particular form or a section of a form.
-
-***How to add new form***
 
 <video width="100%" style="width:100%" controls>
     <source src="/videos/How to add new form 2.mp4">
@@ -107,6 +129,8 @@ Each field comes with its own set of settings like autofill for textbox and curr
 
 Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of [development](development.md) skills you can always create your custom field widget.
 
+### Categories of fields
+
 Currently the default fields fall into four main categories of fields:
 
 1. **Input** - Input fields include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.
@@ -114,13 +138,13 @@ Currently the default fields fall into four main categories of fields:
 3. **Action** - Action fields are fields that allow user interface actions like buttons, links or even signature components.
 4. **Custom**  - Under custom fields, you will find any custom-developed fields available under your developer section.
 
-Layout fields take an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.
+The following headings showcase examples of layout fields as they play an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.
 
 ### Model dialogs
 
-Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users attention to something important.
+Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users' attention to something important.
 
-Typically we use dialogs for things like requiring user confirmation or to let them make a final decision.
+Typically dialogs are used for to create alerts for example a user confirmation or to help users make a final decision in a process.
 
 ***How to use a model dialog***
 
@@ -130,15 +154,15 @@ Typically we use dialogs for things like requiring user confirmation or to let t
     </source>
 </video>
 
+In the example above, we use a modal dialog to display a simple *warning to the user*. The following are the steps involved to create this:
 
+1. Choose a process, or create a new process, and select a form in that process to add fields to. In the left-hand pane of Kianda Designer, click on **Controls** > **Layout** > **Dialog**.
 
+2. Click on the **dialog component** to insert other fields within it. You can add any field to your dialog, for example add Richtext by clicking on **Controls** > **Layout** > **Richtext**.
 
-On the example above, we use a modal dialog to display a simple *warning to the user*. The following are the steps:
+3. To preview how your dialog box will be displayed, you can use the **Preview** button, on the dialog component.
 
-1. On the Layout components, select the *Dialog*.
-2. Click on the dialog component to insert other fields within it.
-3. You can add any field to your dialog, in this case, we are adding a Rich text.
-4. To preview how your dialog box will be displayed, you can use the **Preview** button, on the dialog component.
+   
 
 ### Cascading dropdown
 
@@ -220,7 +244,7 @@ By using the **Layout** option under the property panel you will be able to simp
 
 This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS  framework that allows designing web interfaces with a mobile-first approach.
 
-## 
+
 
 ## Cloning
 
