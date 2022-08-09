@@ -69,3 +69,5 @@ You can download **Kianda Cloud Connect** software in any details page of data s
 
 10. In the Installation Complete window click on **Close**.
 
+
+

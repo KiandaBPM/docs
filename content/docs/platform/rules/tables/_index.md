@@ -1,11 +1,18 @@
 ---
 title: "Table rules"
+typora-root-url: ..\..\..\..\..\static
 weight: 6
 ---
 
 **Table** rules is one category of [rules](/docs/platform/rules/) to enable table operations such as sorting, copying table rows to another table, exporting and importing table data as .csv files and adding and removing table rows. These operations are useful to implement in external data sources, automating actions using Kianda processes.
 
+Take an example of a **Sort table** rule. Implementing this rule will result in a table being sorted in an **ascending** or **descending** manner depending on what column of the table you want to sort by. For an example, take the image below as your table.
 
+![Example table](/images/table-rules-table-example.jpg)
+
+You can attach the **Sort table** rule to a button and selecting one of the columns available, for example **Total Price**, and the order of sorting for example **descending**. The result of the table  after sorting will look as follows:
+
+ ![Example table](/images/table-rules-result-table.jpg)
 
 ## Getting started with Table rules ##
 
