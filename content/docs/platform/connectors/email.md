@@ -43,9 +43,13 @@ In your company's Kianda platform you can connect an emailing service such as Ou
 
    To learn more about IMAP settings and how to obtain them, go to [SMTP settings](/docs/platform/connectors/email/#smtp-details).
 
-7. Click on **Save** ![Save button](/images/save.png) and you should see a message “Details saved successfully”.
+7. When you have added Email details, you are ready to test your connection and add security. At the bottom of the **Email details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
 
-8. Click on **Test Connection** ![Test Connection button](/images/testconnection.png) and you should see a message “Connection test succeeded”.
+8. Click on **Save** ![Save connection button](/images/save-connection.jpg)to save the connection and you will receive a notification saying **Details saved successfully**.
+
+9. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
+
+10. Click on **Close** to close the details page and return to the datasource management main view.
 
 ### IMAP settings
 
