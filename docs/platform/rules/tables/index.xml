@@ -185,9 +185,16 @@
 &lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Import CSV or Excel into Table</title><link>https://docs.kianda.com/docs/platform/rules/tables/import-csv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/import-csv/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Import CSV&lt;/strong> rule allows you import a Comma-Separated Values (CSV) file and populate a specified table within your process. Using this rule automates and speeds up populating a table when a lot of data is present.&lt;/p>
+&lt;p>The &lt;strong>Import CSV&lt;/strong> rule allows you import a Comma-Separated Values (CSV) file and populate a specified table within your process. Using this rule automates and speeds up the process of populating a table when a lot of data is present. CSV files may look different depending on what program you will open it with, here is an example of a CSV file opened with &lt;strong>Excel&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/csv-file-excel.jpg" alt="CSV file - excel">&lt;/p>
+&lt;p>Here is the same file opened using &lt;strong>Notepad&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/csv-file-notepad.jpg" alt="CSV file - notepad">&lt;/p>
+&lt;p>As shown in the two images above, the format changes depending on what &lt;strong>program&lt;/strong> you &lt;strong>open&lt;/strong> the file with. Using the &lt;strong>Notepad&lt;/strong>, each column is &lt;strong>separated&lt;/strong> with a &lt;strong>comma&lt;/strong> and &lt;strong>each new line is a row&lt;/strong>. &lt;strong>Excel&lt;/strong> formats commas and new lines automatically and creates &lt;strong>numbers for rows&lt;/strong> and &lt;strong>letters for columns&lt;/strong>. The CSV file can be separated using &lt;strong>different separators&lt;/strong> other than comma. For example you can use &lt;code>;&lt;/code> as a separator, keep in mind that &lt;strong>Excel&lt;/strong> does &lt;strong>not format non-comma separated values correctly&lt;/strong> and the file will look as follows when opened using &lt;strong>Excel&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-semicolon.jpg" alt="CSV file - excel">&lt;/p>
+&lt;p>Here is the same file opened using &lt;strong>Notepad&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/csv-file-notepad-semicolon.jpg" alt="CSV file - excel">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>You can use this rule to populate a table when there is a lot of data present in a CSV file. Apply this rule to a process so that your table is populated automatically when a process has been loaded.&lt;/p>
+&lt;p>You can use this rule to populate a table when there is a lot of data present in a CSV file. Apply this rule to a process so that your table is populated &lt;strong>automatically&lt;/strong> when a process has been loaded.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -200,7 +207,7 @@
 &lt;li>&lt;strong>Table&lt;/strong> - needed to let the rule know which table will be populated using the csv file, for more detail on how to add a table go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>File&lt;/strong> - needed as a container to hold your csv file. Using a file control, you can upload a csv file and use that csv file to populate a table. For more detail on how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;p>Keep in mind that in order to populate a table within your process correctly, you need to have the same amount of columns in the table as inside of the csv file. For example a table looking as follows:&lt;/p>
+&lt;p>Keep in mind that in order to populate a table within your process correctly, you need to have the &lt;strong>same amount of columns&lt;/strong> in the table as inside of the CSV file. For example a table looking as follows:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-table.jpg" alt="Import CSV rule - Sample table">&lt;/p>
 &lt;p>This indicates that the CSV file that we want to import should have three columns:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-file.jpg" alt="CSV file">&lt;/p>
@@ -223,7 +230,7 @@
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Select the CSV file field&lt;/strong> - select a file field containing a csv file. This file field needs to be pre-created as it is a required field when using this rule. the csv file attached to this field will be used to populate the table.&lt;/p>
+&lt;p>&lt;strong>Select the CSV file field&lt;/strong> - select a file field containing a csv file. This file field needs to be &lt;strong>pre-created&lt;/strong> as it is a required field when using this rule. the csv file attached to this field will be used to populate the table.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>CSV separator&lt;/strong> - the default separator is a comma ( &lt;strong>,&lt;/strong> ) but you can set it to any character, number or symbol you want. Keep in mind that the separator fields separates each column of a row. For example you can have a file that looks as follows:&lt;/p>
@@ -249,12 +256,12 @@
 &lt;li>
 &lt;p>&lt;strong>Add mapping&lt;/strong> - you can choose to assign values to multiple fields in your row by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
 &lt;p>Going back to the CSV separator example image, to achieve the correct mapping, we need to add three fields as shown below:&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-mapping-fields.jpg" alt="Import CSV mapping options">&lt;/p>
 &lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Existing rows behaviour&lt;/strong> - you have two options when populating data into your selected table:&lt;/p>
+&lt;p>&lt;strong>Existing rows behavior&lt;/strong> - you have two options when populating data into your selected table:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Override&lt;/strong> - will override all existing rows of your table with the new data from your CSV file.&lt;/li>
 &lt;li>&lt;strong>Append&lt;/strong> - will ignore the existing rows inside of your table and simply append all the new rows from your CSV file to the end of the table.&lt;/li>
