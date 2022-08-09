@@ -78,7 +78,10 @@
 &lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Add table row</title><link>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/add-table-row/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Add table row&lt;/strong> rule allows you to add rows within a specified table. You can set values for each field within the newly created row by mapping values into them. For mapping new values to each field, you can use manually typed text or use other fields from your process. You can also add rows with empty values by deleting the mapping fields. To learn more about mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error mapping&lt;/a>.&lt;/p>
+&lt;p>The &lt;strong>Add table row&lt;/strong> rule allows you to add rows within a specified table. You can set values for each field within the newly created row by mapping values into them. &lt;strong>For assigning values to each field&lt;/strong> in a row, you can use &lt;strong>manually typed text&lt;/strong> or use &lt;strong>other fields from your process&lt;/strong>. By default you need to give a value to a field in the newly created row, but can also add rows with &lt;strong>no values&lt;/strong>. You can do that by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> in the &lt;strong>New row mapping&lt;/strong> as shown in the image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-row-delete-mapping.jpg" alt="Add table row - delete mapping">&lt;/p>
+&lt;p>This will delete the mapping fields and allow you to add the rule without assigning values to a field in the new row. The new row mapping should look as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-row-empty-mapping.jpg" alt="Empty new row mapping">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can use this rule if you want more dynamic and more automated tables. By removing the original &lt;strong>add row&lt;/strong> button from the table and adding a new button with the &lt;strong>Add table row&lt;/strong> rule attached, you can map specific row fields to automatically appear with values when adding the rows. Take a look below how to add and use the &lt;strong>Add table row&lt;/strong> rule.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
@@ -103,7 +106,7 @@
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the &lt;strong>Select a table&lt;/strong> option, select the table you want to add a new row to. New mapping options are presented when you select a table.&lt;/p>
+&lt;p>In the &lt;strong>Select a table&lt;/strong> option, select the table you want to add a new row to. &lt;strong>New mapping options&lt;/strong> are presented when you select a table.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>New row mapping&lt;/strong> you have the option to assign values to newly created rows and the fields within it.&lt;/p>
@@ -116,7 +119,7 @@
 &lt;p>&lt;strong>Form field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value you want your row field to contain.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Add mapping&lt;/strong> - you can choose to assign values to multiple row in your row by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">. To add a row without any values, delete all mapping fields as shown below.&lt;/p>
+&lt;p>&lt;strong>Add mapping&lt;/strong> - you can choose to assign values to multiple row in your row by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">. &lt;strong>To add a row without any values&lt;/strong>, delete all mapping fields as shown below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/add-row-empty-mapping.jpg" alt="Empty new row mapping">&lt;/p>
 &lt;/li>
 &lt;/ul>
