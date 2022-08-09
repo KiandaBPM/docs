@@ -38,7 +38,7 @@
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-## Creating your first process ##
+&lt;h2 id="creating-your-first-process">Creating your first process&lt;/h2>
 &lt;p>To help you plan your process, go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">Plan your process&lt;/a> to get started. When you have planned what you want to do, it couldn&amp;rsquo;t be simpler to start creating your new process by following the steps below:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -48,19 +48,23 @@ Your browser does not support the video tag.
 &lt;p>You are now in the main process view. From here, you can click on &lt;strong>Import&lt;/strong> or &lt;strong>Export&lt;/strong> to import or export processes once created. There is also an option to use Kianda&amp;rsquo;s predefined processes available in the &lt;strong>App Store.&lt;/strong>&lt;/p>
 &lt;p>&lt;em>&lt;strong>Adding a new process&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/mainprocessview.png" alt="Main process view">&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>Click on the &lt;strong>Add new&lt;/strong> button to create a process from scratch.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Fill out the details in the &lt;strong>Add new process&lt;/strong> dialog box - that is &lt;strong>Title&lt;/strong>, &lt;strong>ID&lt;/strong> (a unique Name that autofills from the title), &lt;strong>Description&lt;/strong>, &lt;strong>Group&lt;/strong> (if you have a predefined group) and &lt;strong>Administrators&lt;/strong>, people who will be able to administrate this process, choose from &lt;strong>Users&lt;/strong> or &lt;strong>Groups&lt;/strong>.&lt;/p>
+&lt;p>Fill out the details in the &lt;strong>Add new process&lt;/strong> dialog box - that is &lt;strong>Title&lt;/strong>, &lt;strong>ID&lt;/strong> (a unique Name that autofills from the title), &lt;strong>Description&lt;/strong>, &lt;strong>Group&lt;/strong> (if you have a predefined group) and &lt;strong>Administrators&lt;/strong>, people who will be able to change the process design, choose from &lt;strong>Users&lt;/strong> or &lt;strong>Groups&lt;/strong> or leave blank to allow all those with an administrator role, to have access to this process design.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Add new process dialog box&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/createprocess2.png" alt="Create a process">&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when complete.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>You are now in the Process &lt;strong>Design&lt;/strong> page, that is Kianda Designer. From here, you can add forms.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="kianda-designer-introduction">Kianda Designer Introduction&lt;/h2>
+&lt;h2 id="kianda-designer-introduction">Kianda Designer introduction&lt;/h2>
 &lt;p>Kianda process designer provides an intuitive interface where you can quickly start building forms for any use case.&lt;/p>
 &lt;p>The key components of the form designer are:&lt;/p>
 &lt;ol>
@@ -115,7 +119,7 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="#advanced-techniques">Advanced techniques&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Click on the links above or browse through the following headings to read more.&lt;/p>
-&lt;h2 id="forms-fields">Forms fields&lt;/h2>
+&lt;h2 id="form-fields">Form fields&lt;/h2>
 &lt;p>Kianda form usability is brought to life with the help of the various input fields or controls that are specifically adapted to work in mobile, tablet or desktop modes. Fields include textbox, date picker, numeric input, file upload and table, to name a few. Kianda offers a flexible array of controls that can be adjusted to work with a myriad of scenarios.&lt;/p>
 &lt;p>Each field comes with its own set of settings like autofill for textbox and currency format for numeric input. The following are some of the common settings of input fields:&lt;/p>
 &lt;ul>
@@ -133,7 +137,7 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/textbox-example.jpg" alt="Textbox example">&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of &lt;a href="development.md">development&lt;/a> skills you can always create your custom field widget.&lt;/p>
+&lt;p>Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of &lt;a href="https://docs.kianda.com/docs/platform/administration/developer/">development&lt;/a> skills you can always create your custom field widget.&lt;/p>
 &lt;h3 id="categories-of-fields">Categories of fields&lt;/h3>
 &lt;p>Currently the default fields fall into four main categories of fields:&lt;/p>
 &lt;ol>
@@ -144,7 +148,7 @@ Your browser does not support the video tag.
 &lt;/ol>
 &lt;p>The following headings showcase examples of layout fields as they play an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.&lt;/p>
 &lt;h3 id="model-dialogs">Model dialogs&lt;/h3>
-&lt;p>Model dialogs are a special form of layout fields. It allows a form designer to define an interface with the key intention of grabbing users&amp;rsquo; attention to something important.&lt;/p>
+&lt;p>Model dialogs are a special form of &lt;strong>layout&lt;/strong> fields. It allows a form designer to define an interface with the key intention of grabbing users&amp;rsquo; attention to something important.&lt;/p>
 &lt;p>Typically dialogs are used for to create alerts for example a user confirmation or to help users make a final decision in a process.&lt;/p>
 &lt;p>&lt;em>&lt;strong>How to use a model dialog&lt;/strong>&lt;/em>&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
@@ -158,7 +162,10 @@ Your browser does not support the video tag.
 &lt;p>Choose a process, or create a new process, and select a form in that process to add fields to. In the left-hand pane of Kianda Designer, click on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Layout&lt;/strong> &amp;gt; &lt;strong>Dialog&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>dialog component&lt;/strong> to insert other fields within it. You can add any field to your dialog, for example add Richtext by clicking on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Layout&lt;/strong> &amp;gt; &lt;strong>Richtext&lt;/strong>.&lt;/p>
+&lt;p>Click on the &lt;strong>dialog component&lt;/strong> to edit the dialog, for example give the dialog a &lt;strong>Title&lt;/strong> and then &lt;strong>insert&lt;/strong> other fields within it. You can add any field to your dialog, for example add Richtext by clicking on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Layout&lt;/strong> &amp;gt; &lt;strong>Richtext&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Give your Richtext field a &lt;strong>title&lt;/strong>, and add a &lt;strong>message&lt;/strong> in the Richtext body text and use other configurations as needed. Click on &lt;strong>OK&lt;/strong> when complete or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To preview how your dialog box will be displayed, you can use the &lt;strong>Preview&lt;/strong> button, on the dialog component.&lt;/p>

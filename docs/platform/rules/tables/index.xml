@@ -622,7 +622,7 @@
 &lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Sort table</title><link>https://docs.kianda.com/docs/platform/rules/tables/sort-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/sort-table/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Sort table&lt;/strong> rule loops through a table allowing to sort it in an ascending or descending manner. The value by which you are sorting the table is the column you select within it. The column you select can be any of the Control inputs, the sorting algorithm takes the numerical or text value of each field and sorts it accordingly.&lt;/p>
+&lt;p>The &lt;strong>Sort table&lt;/strong> rule loops through a table allowing you to sort data in an ascending or descending manner. The value by which you are sorting the table is the column you select within it. The column you select can be any of the Control inputs, the sorting algorithm takes the numerical or text value of each field and sorts it accordingly.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can use this rule when you want to sort a table in an ascending or descending manner. The rule allows you to select the column by which you want to sort it, a field which identifies that column will make your table dynamic and very versatile. For example having a &lt;strong>List&lt;/strong> field with options for all columns in your table.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
@@ -691,7 +691,7 @@
 &lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Aggregate table</title><link>https://docs.kianda.com/docs/platform/rules/tables/aggregate-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/aggregate-table/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Aggregate table&lt;/strong> rule loops through a table allowing you to aggregate a specific column and store the value in another field from within you process. There are three functions of the &lt;strong>Aggregate table&lt;/strong> rule which are &lt;strong>Sum&lt;/strong>, &lt;strong>Average&lt;/strong> and &lt;strong>Count&lt;/strong>. Sum and Average only work on number fields while count will count the number of rows it looped through.&lt;/p>
+&lt;p>The &lt;strong>Aggregate table&lt;/strong> rule loops through a table allowing you to aggregate a specific column and store the value in another field from within you process. There are three functions of the &lt;strong>Aggregate table&lt;/strong> rule which are &lt;strong>Sum&lt;/strong>, &lt;strong>Average&lt;/strong> and &lt;strong>Count&lt;/strong>. &lt;strong>Sum and Average&lt;/strong> only work on &lt;strong>number fields&lt;/strong> while &lt;strong>Count&lt;/strong> will &lt;strong>count the number of rows&lt;/strong> it looped through.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can use this rule to sum up all the values in a column or get the average. &lt;strong>Sum&lt;/strong> and &lt;strong>Average&lt;/strong> functions of the aggregate rule work only on number fields. The &lt;strong>Count&lt;/strong> function can be used to count the rows that the aggregate rule looped through.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
@@ -763,9 +763,9 @@
 &lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Hide or Show table column</title><link>https://docs.kianda.com/docs/platform/rules/tables/hide-show-column/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/tables/hide-show-column/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Hide / Show column&lt;/strong> rule allows you change the visible property to a specified column within your table. You can either disable oe enable the property, you can also toggle between both of the visible states.&lt;/p>
+&lt;p>The &lt;strong>Hide / Show column&lt;/strong> rule allows you change the visibility of a selected column within a table in a process. You can either disable or enable the property, you can also toggle between both of the visible states.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>You can use this rule to hide or show specific columns in your table. Often used when hiding private data from users that do not need access to it. For example you can choose to show total earning column of a table to your managers but not other employees. You can also apply this rule to a button and give it the toggle function which will allow you to toggle the visible property of a column.&lt;/p>
+&lt;p>You can use this rule to hide or show specific columns in your table. This rule is often used when hiding private data from users that do not need access to it. For example you can choose to show total earning column of a table to your managers but not other employees. You can also apply this rule to a button and give it the toggle function which will allow you to toggle the visible property of a column.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -797,10 +797,10 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/hide-show-select-fields.jpg" alt="Select field and visible property">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>[1]Column to hide / show&lt;/strong> - select the column you want to target you want the &lt;strong>hide / show&lt;/strong> rule to apply to.&lt;/p>
+&lt;p>&lt;strong>[1] Column to hide / show&lt;/strong> - select the column you want to target you want the &lt;strong>hide / show&lt;/strong> rule to apply to.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>[2]Visible&lt;/strong> - select to which visible property you want the column to be set to.&lt;/p>
+&lt;p>&lt;strong>[2] Visible&lt;/strong> - select to which visible property you want the column to be set to.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Hide&lt;/strong> - will set the visible property to disabled.&lt;/li>
 &lt;li>&lt;strong>Show&lt;/strong>- will set the visible property to enabled.&lt;/li>
