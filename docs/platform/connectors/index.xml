@@ -57,10 +57,16 @@
 &lt;p>To learn more about IMAP settings and how to obtain them, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/#smtp-details">SMTP settings&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> and you should see a message “Details saved successfully”.&lt;/p>
+&lt;p>When you have added Email details, you are ready to test your connection and add security. At the bottom of the &lt;strong>Email details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Test Connection&lt;/strong> &lt;img src="https://docs.kianda.com/images/testconnection.png" alt="Test Connection button"> and you should see a message “Connection test succeeded”.&lt;/p>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button">to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the datasource management main view.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="imap-settings">IMAP settings&lt;/h3>
