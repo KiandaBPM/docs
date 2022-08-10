@@ -100,10 +100,10 @@ The rules above work together to determine if the form is in edit mode or displa
 
 As you create forms, there are some important features to note that will help you get the most out of your form design:
 
-- [Form fields][#form-fields]
-- [Responsive form layout](responsive-form-layout)
+- [Form fields](#form-fields)
+- [Responsive form layout](#responsive-form-layout)
 - [Input validation](#input-validation)
-- [Anonymous forms](#anonymous-forms)
+- [Process settings and anonymous forms](#process-settings-and-anonymous-forms)
 - [Cloning](#cloning)
 - [Custom fields](#custom-fields)
 - [Advanced techniques](#advanced-techniques)
@@ -139,7 +139,7 @@ Currently the default fields fall into four main categories of fields:
 3. **Action** - Action fields are fields that allow user interface actions like buttons, links or even signature components.
 4. **Custom**  - Under custom fields, you will find any custom-developed fields available under your developer section.
 
-The following headings showcase examples of layout fields as they play an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.
+The following headings showcase examples of fields and how they can be used to play an important role when building a modern user interface while allowing you to achieve the pixel perfect layout you want. The examples shown are [Modal dialogs](#modal-dialogs) and [Cascading dropdown lists](#cascading-dropdown-lists)
 
 ### Model dialogs
 
@@ -165,15 +165,21 @@ In the example above, we use a modal dialog to display a simple *warning to the 
 
 4. To preview how your dialog box will be displayed, you can use the **Preview** button, on the dialog component.
 
-   
+   ![Preview dialog](/images/preview-dialog.jpg)
+
+
 
 ### Cascading dropdown
 
-The List field provides the opportunity to define an unlimited level cascading dropdown hierarchy very easily.
+Using the **List field** provides the opportunity to define an unlimited level cascading dropdown hierarchy very easily. For example in the form below, if a user chooses Denmark as a country from the drop-down list, then Danish cities are displayed, while if another country is chosen, the other cities for that country are displayed. 
 
-To achieve that you might connect your list to a data source table or SharePoint list then use the list data source conditions options to filter its content based on a parent list. 
+![Dropdown cascading lists](/images/dropdown-cascading-lists.jpg)
 
-![Cascading dropdown](/images/cascading-dropdown.png)
+To achieve the effect you can connect your list to a data source for example a SharePoint list or table, then use the list data source **conditions** options to filter content based on a parent list. 
+
+![Cascading dropdown](/images/cascading-list-conditions.jpg)
+
+In the example above, the condition used is that a filter is applied if data from the **SharePoint list column** called **Country** is chosen as input for the **form list field** called **Country**, then data from the SharePoint list column called Cities is displayed, see video below.
 
 ***How to create cascading dropdowns***
 
@@ -184,38 +190,50 @@ To achieve that you might connect your list to a data source table or SharePoint
 </video>
 
 
+## Responsive form layout
 
+When designing forms, its easy to change the layout of fields to make the field display the way you want. Form fields are made with a mobile-first approach giving you a 'design once and deploy everywhere' opportunity. 
+
+When you select a field, you can go to **Field properties** in the right-hand pane of Kianda Designer and click on the **Layout** option.
+
+Clicking on **Collapse or expand responsive layout** button ![Collapse responsive layout button](/images/collapse-responsive-button.jpg) uncovers the layout mode for desktop and mobile.
+
+![Layout mode](/images/layout-mode.png)
+
+Click on the blue bar for both **Layout** and **Mobile Layout** to adjust the size of the field. This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS  framework that allows designing web interfaces with a mobile-first approach.
 
 ## Input validation
 
-Validating input in forms is quick and easy. Simply enable the **required** flag of an input field and it will automatically prevent users from submitting it empty.
+As with editing the layout of fields, it is easy to validate input, making fields mandatory for users to fill in or not. Go to **Field properties** in the right-hand pane of Kianda Designer and click on the **Required** option. If already ticked, uncheck this to make the field not required.
 
-The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.
+![Field properties for the field 'City'](/images/field-properties-example.jpg)
 
-Another way of validating input is to use the **validate input rule** this allows greater flexibility in terms of when or what to validate.
+Simply enable the checking the **Required** property in this way will automatically prevent users from submitting forms with an empty field. The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.
 
+Another way of validating input is to use the **validate input rule** this allows greater flexibility in terms of when or what to validate, see [Validate input](/docs/platform/rules/form-actions/validate-input/) for more information.
 
+## Process settings and anonymous forms
 
-## Anonymous Forms
+In addition to **changing field properties** shown in the [previous section](#input-validation), you can edit process **Settings**, also found in the right-hand side pane of Kianda Designer. 
 
-Anonymous forms are a great way of allowing people outside of your organisation to interact with your processes. 
+![Process settings](/images/process-settings.jpg)
 
-It could be something as simple as a contact form or a feedback form but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission.
+There are many options within **Settings** to manage for example process security and set process instance settings. Enabling anonymous sharing of forms is another option within Settings. 
 
-We have seen a few examples of how people use anonymous forms in Kianda. From simple feedback forms to GDPR data requests that hope between multi divisions before sending back a response to the requester with the level of information held by the organization.
+![Process settings](/images/process-settings-anonymous.jpg)
 
-Anonymous forms can be embedded in iframes and safely displayed within other web-based applications.
+**Anonymous forms** are a great way of **allowing people outside of your organisation** to interact with your processes. It could be something as simple as a feedback form or a GDPR data request but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission, or person assigned to manage the form.
 
-In Kianda there are effectively 2 types of anonymous forms
+Anonymous forms can be embedded in iframes and safely displayed within other web-based applications. In Kianda there are effectively two types of anonymous forms:
 
-- New process anonymous form
-- Existing process anonymous form
+- [New process instance anonymous form URL](#new-process-instance-anonymous-form-url)
+- [Existing process anonymous form URL](#existing-instance-anonymous-form-url)
 
-### New instance anonymous form URL
+### New process instance anonymous form URL
 
-To set up a globally available link for allowing external users to create a new instance, perform the following steps within the form designer:
+To set up a **globally available link** to allow external users to create a new process instance, perform the following steps within Kianda designer:
 
-1. On the top right corner of the designer click on the settings button.
+1. Within a chosen process, in the top right click on **Settings**.
 2. Then click the option "Enable anonymous sharing of forms" to Yes.
 3. Click the button "New Link" to generate a new anonymous link.
 
@@ -237,15 +255,7 @@ The following are some of the key options of the anonymous link rule:
 
 
 
-## Responsive form layout
 
-Form fields are made with a mobile-first approach giving you a 'design once and deploy everywhere' opportunity.
-
-By using the **Layout** option under the property panel you will be able to simply define the layout of your fields or panels within a form. Clicking on the **^** quickly uncovers the layout mode for desktop and mobile.
-
-![Layout mode](/images/layout-mode.png)
-
-This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS  framework that allows designing web interfaces with a mobile-first approach.
 
 
 
