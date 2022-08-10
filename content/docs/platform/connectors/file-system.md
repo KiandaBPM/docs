@@ -4,8 +4,6 @@ weight: 6
 typora-root-url: ..\..\..\..\static
 ---
 
-## Introduction
-
 A File System data connector allows you to use your local file system as a data sources for your Kianda forms or dashboards. This means that as your processes are running they will use the information from the local file system or depending on the process, update or delete information at in the local file system location. Any Create, Read, Update and Delete (CRUD) operations performed in Kianda, will be reflected automatically and in real-time in your local system.
 
 
@@ -26,8 +24,8 @@ A File System data connector allows you to use your local file system as a data 
    - **Root folder path** - type in manually the file path to the folder of your connector. The connector will be able to access data only in this folder and folders within.
    - **File search pattern** - select the extension you want the connector to display. For example typing in `*.txt` will only output the .txt files within the folder path, it will ignore all other path endings and will not display them. To set pattern you need to type in `*` followed by `.extenstion` for example `*.txt` , `*.docx` or `*.pdf`
    - **Search options** - it only allows you to search the files of the top directory that is set in the **Root folder path** or all other files of other directories within. For example selecting if **Top Directory Only** is selected, you will be able to see only the files that are in **Root folder path** while ignoring folders. If the **All Directories** is selected, you will be able to see files that are in **Root folder path** and all files from within each folder.
-   - **Use Kianda Cloud Connect** - by default this option is enabled and cannot be changed, the cloud connect is needed to create a connection between the local file system and Kianda itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to 
-   - **Connectors** - displays all available connector PC's that have a connection established with your Kianda website. You must choose the correct PC connection which contains the folder specified in the **Root folder path**, otherwise the connection will fail.
+   - **Use Kianda Cloud Connect** - by default this option is enabled and cannot be changed, the cloud connect is needed to **create a connection** between the **local file system** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
+   - **Connectors** - displays all available connector PC's that have a **connection established** with your **Kianda** website. You must choose the correct **PC connection** which **contains the folder** specified in the **Root folder path**, otherwise the connection will fail.
 
 4. When you have added File system details, you are ready to test your connection and add security. At the bottom of the **File system details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
 
@@ -39,35 +37,23 @@ A File System data connector allows you to use your local file system as a data 
 
 
 
-## Connecting Kianda Cloud Connect to your PC
+## File system parameters
 
-Kianda Cloud Connect is a piece of software that establishes a connection between your local machine and your Kianda subscription. It allows the data to travel from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. 
+When you use a **File system** datasource, there are **default parameters** invoked from the files. For example when you create a **list** in a Kianda form using a File system datasource, these File system parameters will appear in **Display field**, **Value field** and **Sort by** field in the **Edit field dialog box**, see **Title** for example in the image below.
 
-### Downloading Kianda Cloud Connect
+![File system parameters](/images/file-system-parameters.jpg)
 
-You can download **Kianda Cloud Connect** software in any details page of data source that might use it, for example in a **File system** data connector:
+The File system parameters that appear in those three dropdown fields are:
 
-1. From the Kianda home page, click on **Administration** > **Data sources**.
+- **Name** - name of the file including the extension.
+- **NameNoExtension** - name of the file without the extension.
+- **Path** - displays the full path to the file.
+- **Extension** - displays just the extension of the file.
+- **Modified** - displays the date and time when the file was last modified.
+- **Created** - displays the date and time when the file was created.
+- **ParentFolderName** - name of the folder that contains the file.
+- **ParentFolderPath** - path of the folder that contains the file.
 
-2. Click on **+ Add new** button ![Add new data connector button](/images/addnew.png) and choose **File system** from the list of data sources provided.
+### What’s next ![Idea icon](/images/18.png)
 
-3. You will be automatically brought to the **File system details** page, where you can click on **Download Kianda Cloud Connect** at the bottom of the screen.
-
-   ![File system detail page](/images/file-system-download-KCCjpg.jpg)
-
-4. **CloudConnect.zip** file should download onto your PC. Extract the files from the zip folder.
-
-5. Run the **CloudConnect.msi** file.
-
-6. In the **Welcome to Kianda Cloud Connect Setup Wizard**, click **Next >**.
-
-7. In the **Select Installation Folder** window, pick a folder where you want to install the software. Click **Next>**.
-
-8. In the **Confirm Installation** window, click **Next>**.
-
-9. Click on **Yes** in the administrator dialog box to give Kianda Cloud Connect access to your PC.
-
-10. In the Installation Complete window click on **Close**.
-
-
-
+Your **File system service** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).
