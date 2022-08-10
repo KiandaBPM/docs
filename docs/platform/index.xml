@@ -110,10 +110,10 @@ Your browser does not support the video tag.
 &lt;/ol>
 &lt;p>As you create forms, there are some important features to note that will help you get the most out of your form design:&lt;/p>
 &lt;ul>
-&lt;li>[Form fields][#form-fields]&lt;/li>
-&lt;li>&lt;a href="responsive-form-layout">Responsive form layout&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#form-fields">Form fields&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#responsive-form-layout">Responsive form layout&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#input-validation">Input validation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#anonymous-forms">Anonymous forms&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#process-settings-and-anonymous-forms">Process settings and anonymous forms&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#cloning">Cloning&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#custom-fields">Custom fields&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#advanced-techniques">Advanced techniques&lt;/a>&lt;/li>
@@ -146,7 +146,7 @@ Your browser does not support the video tag.
 &lt;li>&lt;strong>Action&lt;/strong> - Action fields are fields that allow user interface actions like buttons, links or even signature components.&lt;/li>
 &lt;li>&lt;strong>Custom&lt;/strong> - Under custom fields, you will find any custom-developed fields available under your developer section.&lt;/li>
 &lt;/ol>
-&lt;p>The following headings showcase examples of layout fields as they play an important role when building a modern user interface and allow you to achieve the pixel perfect layout you want.&lt;/p>
+&lt;p>The following headings showcase examples of fields and how they can be used to play an important role when building a modern user interface while allowing you to achieve the pixel perfect layout you want. The examples shown are &lt;a href="#modal-dialogs">Modal dialogs&lt;/a> and &lt;a href="#cascading-dropdown-lists">Cascading dropdown lists&lt;/a>&lt;/p>
 &lt;h3 id="model-dialogs">Model dialogs&lt;/h3>
 &lt;p>Model dialogs are a special form of &lt;strong>layout&lt;/strong> fields. It allows a form designer to define an interface with the key intention of grabbing users&amp;rsquo; attention to something important.&lt;/p>
 &lt;p>Typically dialogs are used for to create alerts for example a user confirmation or to help users make a final decision in a process.&lt;/p>
@@ -169,36 +169,47 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;li>
 &lt;p>To preview how your dialog box will be displayed, you can use the &lt;strong>Preview&lt;/strong> button, on the dialog component.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/preview-dialog.jpg" alt="Preview dialog">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="cascading-dropdown">Cascading dropdown&lt;/h3>
-&lt;p>The List field provides the opportunity to define an unlimited level cascading dropdown hierarchy very easily.&lt;/p>
-&lt;p>To achieve that you might connect your list to a data source table or SharePoint list then use the list data source conditions options to filter its content based on a parent list.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/cascading-dropdown.png" alt="Cascading dropdown">&lt;/p>
+&lt;p>Using the &lt;strong>List field&lt;/strong> provides the opportunity to define an unlimited level cascading dropdown hierarchy very easily. For example in the form below, if a user chooses Denmark as a country from the drop-down list, then Danish cities are displayed, while if another country is chosen, the other cities for that country are displayed.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dropdown-cascading-lists.jpg" alt="Dropdown cascading lists">&lt;/p>
+&lt;p>To achieve the effect you can connect your list to a data source for example a SharePoint list or table, then use the list data source &lt;strong>conditions&lt;/strong> options to filter content based on a parent list.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/cascading-list-conditions.jpg" alt="Cascading dropdown">&lt;/p>
+&lt;p>In the example above, the condition used is that a filter is applied if data from the &lt;strong>SharePoint list column&lt;/strong> called &lt;strong>Country&lt;/strong> is chosen as input for the &lt;strong>form list field&lt;/strong> called &lt;strong>Country&lt;/strong>, then data from the SharePoint list column called Cities is displayed, see video below.&lt;/p>
 &lt;p>&lt;em>&lt;strong>How to create cascading dropdowns&lt;/strong>&lt;/em>&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/How to create cascading dropdowns.mp4">
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
+&lt;h2 id="responsive-form-layout">Responsive form layout&lt;/h2>
+&lt;p>When designing forms, its easy to change the layout of fields to make the field display the way you want. Form fields are made with a mobile-first approach giving you a &amp;lsquo;design once and deploy everywhere&amp;rsquo; opportunity.&lt;/p>
+&lt;p>When you select a field, you can go to &lt;strong>Field properties&lt;/strong> in the right-hand pane of Kianda Designer and click on the &lt;strong>Layout&lt;/strong> option.&lt;/p>
+&lt;p>Clicking on &lt;strong>Collapse or expand responsive layout&lt;/strong> button &lt;img src="https://docs.kianda.com/images/collapse-responsive-button.jpg" alt="Collapse responsive layout button"> uncovers the layout mode for desktop and mobile.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/layout-mode.png" alt="Layout mode">&lt;/p>
+&lt;p>Click on the blue bar for both &lt;strong>Layout&lt;/strong> and &lt;strong>Mobile Layout&lt;/strong> to adjust the size of the field. This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS framework that allows designing web interfaces with a mobile-first approach.&lt;/p>
 &lt;h2 id="input-validation">Input validation&lt;/h2>
-&lt;p>Validating input in forms is quick and easy. Simply enable the &lt;strong>required&lt;/strong> flag of an input field and it will automatically prevent users from submitting it empty.&lt;/p>
-&lt;p>The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.&lt;/p>
-&lt;p>Another way of validating input is to use the &lt;strong>validate input rule&lt;/strong> this allows greater flexibility in terms of when or what to validate.&lt;/p>
-&lt;h2 id="anonymous-forms">Anonymous Forms&lt;/h2>
-&lt;p>Anonymous forms are a great way of allowing people outside of your organisation to interact with your processes.&lt;/p>
-&lt;p>It could be something as simple as a contact form or a feedback form but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission.&lt;/p>
-&lt;p>We have seen a few examples of how people use anonymous forms in Kianda. From simple feedback forms to GDPR data requests that hope between multi divisions before sending back a response to the requester with the level of information held by the organization.&lt;/p>
-&lt;p>Anonymous forms can be embedded in iframes and safely displayed within other web-based applications.&lt;/p>
-&lt;p>In Kianda there are effectively 2 types of anonymous forms&lt;/p>
+&lt;p>As with editing the layout of fields, it is easy to validate input, making fields mandatory for users to fill in or not. Go to &lt;strong>Field properties&lt;/strong> in the right-hand pane of Kianda Designer and click on the &lt;strong>Required&lt;/strong> option. If already ticked, uncheck this to make the field not required.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/field-properties-example.jpg" alt="Field properties for the field &amp;amp;lsquo;City&amp;amp;rsquo;">&lt;/p>
+&lt;p>Simply enable the checking the &lt;strong>Required&lt;/strong> property in this way will automatically prevent users from submitting forms with an empty field. The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.&lt;/p>
+&lt;p>Another way of validating input is to use the &lt;strong>validate input rule&lt;/strong> this allows greater flexibility in terms of when or what to validate, see &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/">Validate input&lt;/a> for more information.&lt;/p>
+&lt;h2 id="process-settings-and-anonymous-forms">Process settings and anonymous forms&lt;/h2>
+&lt;p>In addition to &lt;strong>changing field properties&lt;/strong> shown in the &lt;a href="#input-validation">previous section&lt;/a>, you can edit process &lt;strong>Settings&lt;/strong>, also found in the right-hand side pane of Kianda Designer.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/process-settings.jpg" alt="Process settings">&lt;/p>
+&lt;p>There are many options within &lt;strong>Settings&lt;/strong> to manage for example process security and set process instance settings. Enabling anonymous sharing of forms is another option within Settings.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/process-settings-anonymous.jpg" alt="Process settings">&lt;/p>
+&lt;p>&lt;strong>Anonymous forms&lt;/strong> are a great way of &lt;strong>allowing people outside of your organisation&lt;/strong> to interact with your processes. It could be something as simple as a feedback form or a GDPR data request but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission, or person assigned to manage the form.&lt;/p>
+&lt;p>Anonymous forms can be embedded in iframes and safely displayed within other web-based applications. In Kianda there are effectively two types of anonymous forms:&lt;/p>
 &lt;ul>
-&lt;li>New process anonymous form&lt;/li>
-&lt;li>Existing process anonymous form&lt;/li>
+&lt;li>&lt;a href="#new-process-instance-anonymous-form-url">New process instance anonymous form URL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#existing-instance-anonymous-form-url">Existing process anonymous form URL&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h3 id="new-instance-anonymous-form-url">New instance anonymous form URL&lt;/h3>
-&lt;p>To set up a globally available link for allowing external users to create a new instance, perform the following steps within the form designer:&lt;/p>
+&lt;h3 id="new-process-instance-anonymous-form-url">New process instance anonymous form URL&lt;/h3>
+&lt;p>To set up a &lt;strong>globally available link&lt;/strong> to allow external users to create a new process instance, perform the following steps within Kianda designer:&lt;/p>
 &lt;ol>
-&lt;li>On the top right corner of the designer click on the settings button.&lt;/li>
+&lt;li>Within a chosen process, in the top right click on &lt;strong>Settings&lt;/strong>.&lt;/li>
 &lt;li>Then click the option &amp;ldquo;Enable anonymous sharing of forms&amp;rdquo; to Yes.&lt;/li>
 &lt;li>Click the button &amp;ldquo;New Link&amp;rdquo; to generate a new anonymous link.&lt;/li>
 &lt;/ol>
@@ -213,11 +224,6 @@ Your browser does not support the video tag.
 &lt;li>Message to display on submission.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Important&lt;/strong>: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically expire the previous of the same type if a link existed.&lt;/p>
-&lt;h2 id="responsive-form-layout">Responsive form layout&lt;/h2>
-&lt;p>Form fields are made with a mobile-first approach giving you a &amp;lsquo;design once and deploy everywhere&amp;rsquo; opportunity.&lt;/p>
-&lt;p>By using the &lt;strong>Layout&lt;/strong> option under the property panel you will be able to simply define the layout of your fields or panels within a form. Clicking on the &lt;strong>^&lt;/strong> quickly uncovers the layout mode for desktop and mobile.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/layout-mode.png" alt="Layout mode">&lt;/p>
-&lt;p>This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS framework that allows designing web interfaces with a mobile-first approach.&lt;/p>
 &lt;h2 id="cloning">Cloning&lt;/h2>
 &lt;p>In the form designer, almost any of the components can be cloned. This will increase your productivity considerably and will make creating multi-step processes a breeze.&lt;/p>
 &lt;p>To clone either a field, a panel or even a form, simply select the component then click the clone button in the properties panel in the right-hand side of the panel.&lt;/p>
