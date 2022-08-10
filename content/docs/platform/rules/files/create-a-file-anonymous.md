@@ -4,7 +4,9 @@ typora-root-url: ..\..\..\..\..\static
 weight: 7
 ---
 
-This rule enables the creation of file links from an existing file field that can be shared anonymously 	
+## Introduction
+
+The **Create a file anonymous link** rule enables you to create a link to a file from your process. The link is **fully anonymous** which means anybody can **access** the file if they have the link. You can set an expiry time of the link (in hours), for example 2 hours and the count down will start from the time the link was created.
 
 ![Send email rule dialog box](/images/createafileanonymouslink.png)
 
