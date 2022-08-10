@@ -394,7 +394,16 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: AI rules</title><link>https://docs.kianda.com/docs/platform/rules/kianda-ai/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/kianda-ai/</guid><description>
-&lt;p>Artificial Intelligence powered text analysis performs sentiment analysis to text content&lt;/p></description></item><item><title>Docs: SharePoint rules</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/</guid><description>
+&lt;p>&lt;strong>Kianda AI&lt;/strong> rules is one category of rules in Kianda that is used to analyse text within fields of your process, for example analysing a feedback text box of a process.&lt;/p>
+&lt;p>&lt;strong>AI&lt;/strong> (Artificial Intelligence) is a form of intelligence demonstrated by machines, opposed to natural intelligence displayed by humans or animals. The AI system used in the &lt;strong>Kianda AI&lt;/strong> rules is &lt;strong>Text Analysis&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Text Analysis&lt;/strong> is a process by which the AI is programmed to distil information and meaning from text. For example, this can be analysing text written in feedback forms, item reviews or analysing documentation to understand its purpose.&lt;/p>
+&lt;h2 id="getting-started-with-kianda-ai-rules">Getting started with Kianda AI rules&lt;/h2>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong>, the &lt;strong>Kianda AI&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Kianda AI&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/kianda-ai-add-rule.jpg" alt="Add Kianda AI rules">&lt;/p>
+&lt;p>There is one type of Kianda AI rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Text analysis&lt;/strong> - gives sentiment analysis or extracts key phrases from a block of text.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: SharePoint rules</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/</guid><description>
 &lt;p>&lt;strong>SharePoint&lt;/strong> rules are associated with SharePoint specific functionality. These rules are typically used to perform actions with SharePoint connectors that are not related with data, for example resetting SharePoint permissions or adding a user into a group on SharePoint.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/sharepoint-rules-all.jpg" alt="Sharepoint rules">&lt;/p>
 &lt;h3 id="getting-started-with-sharepoint-rules">Getting started with SharePoint rules&lt;/h3>

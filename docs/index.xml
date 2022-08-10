@@ -1363,7 +1363,17 @@ The Safety Team
 &lt;p>If a rule causes a mandatory field to be hidden or disabled, this will not stop the form from being submitted.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Validate input</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/</guid><description>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Text Analysis</title><link>https://docs.kianda.com/docs/platform/rules/kianda-ai/text-analysis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/kianda-ai/text-analysis/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>&lt;strong>AI&lt;/strong> (Artificial Intelligence) is a form of intelligence demonstrated by machines, opposed to natural intelligence displayed by humans or animals. The AI system used in the &lt;strong>Kianda AI&lt;/strong> rules is &lt;strong>Text Analysis&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Text Analysis&lt;/strong> is a process by which the AI is programmed to distil information and meaning from text. For example, this can be analysing text written in feedback forms, item reviews or analysing documentation to understand its purpose.&lt;/p>
+&lt;h2 id="getting-started-with-kianda-ai-rules">Getting started with Kianda AI rules&lt;/h2>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong>, the &lt;strong>Kianda AI&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Kianda AI&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/kianda-ai-add-rule.jpg" alt="Add Kianda AI rules">&lt;/p>
+&lt;p>There is one type of Kianda AI rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Text analysis&lt;/strong> - gives sentiment analysis or extracts key phrases from a block of text.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Validate input</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/</guid><description>
 &lt;p>The &lt;strong>Validate input&lt;/strong> provides the ability to perform flexible data validation and prevents incorrect data submission. For example, this could be performed on a &lt;strong>Date of Incident&lt;/strong> field, where the validation checks that the date entered is a past date.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
@@ -3998,130 +4008,4 @@ Your browser does not support the video tag.
 &lt;/ul></description></item><item><title>Docs: DocuSign</title><link>https://docs.kianda.com/docs/platform/connectors/docusign/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/docusign/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Expression builder</title><link>https://docs.kianda.com/docs/platform/rules/general/expression-builder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/expression-builder/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Expressions allow you to put together form &lt;strong>identifiers&lt;/strong> (form field IDs) and &lt;strong>constants&lt;/strong> with &lt;strong>operators&lt;/strong> and &lt;strong>functions&lt;/strong> to return a &lt;strong>dynamic value&lt;/strong> that can be used in various places – for example, in a form or field rule to automate processes.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Expressions&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/expressions.gif" alt="Expression elements">&lt;/p>
-&lt;p>For example, expressions could be used in the body of an automated email sent using the &lt;strong>Send email&lt;/strong> rule, as shown here:&lt;/p>
-&lt;p>&lt;em>&lt;strong>Expression example&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/expressioneg-1.gif" alt="img">&lt;/p>
-&lt;p>In the example above, &lt;strong>[RequesterName]&lt;/strong> and &lt;strong>[category]&lt;/strong> are identifiers, that is unique IDs for form fields. &lt;strong>ProcessLink()&lt;/strong> is a function that will return a link to that process instance. Using the expressions above in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient.&lt;/p>
-&lt;h2 id="getting-started-with-expressions--example-email-body-text">Getting started with expressions – example Email body text&lt;/h2>
-&lt;p>Expressions are recognisable in Kianda from the &lt;strong>Expressions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png" alt="Expressions"> found in &lt;strong>Edit rule dialog boxes&lt;/strong> and &lt;strong>other menu items&lt;/strong>, such as enabling &lt;strong>quick actions&lt;/strong> for processes and &lt;strong>number fields&lt;/strong>.&lt;/p>
-&lt;p>Within rules, expressions can be created using the &lt;strong>Expression builder&lt;/strong> where you can &lt;strong>Add field to an expression&lt;/strong> or use the handy &lt;strong>Reference&lt;/strong> guide to get a list of commonly used functions.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Expression builder&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/expressionbuilder2.gif" alt="img">&lt;/p>
-&lt;p>Let&amp;rsquo;s look at an example of using an expression in the &lt;strong>Body&lt;/strong> section of an email being sent using the &lt;strong>Send email&lt;/strong> rule:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>First, add a &lt;strong>Send email&lt;/strong> rule to a form or forms, field or fields by selecting &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Communications&lt;/strong>&amp;gt; &lt;strong>Send email&lt;/strong> from the left-side pane.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Type in any text that you want in the email &lt;strong>Body&lt;/strong> and position your cursor where you want to add the expression.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/cursor-in-expression.jpg" alt="Cursor positioning in an email body to add an expression">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>On the right of the &lt;strong>Body&lt;/strong> section of the email, click on the &lt;strong>Expressions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png" alt="Expressions">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The &lt;strong>Expression builder&lt;/strong> dialog box appears.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the blank box under &lt;strong>Add field to expression&lt;/strong> and find the field you want to reference in your email, for example, a text box with a name &lt;strong>&amp;lsquo;EmployeeName&amp;rsquo;&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click &lt;strong>Add to expression&lt;/strong>. The result is that the field appears in the Expression box.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/expression-builder-example.jpg" alt="Expression builder example">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click &lt;strong>OK&lt;/strong> to add the expression to the email body text, or click on &lt;strong>Close&lt;/strong> to exit the dialog box without making changes.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To add additional field expressions, click on the &lt;strong>Expressions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png" alt="Expressions">again, under &lt;strong>Add field to expression&lt;/strong>, click on &lt;strong>X&lt;/strong> beside the field name to clear the expression box and then search for the desired field from a form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To add a function, click on &lt;strong>Reference&lt;/strong> and copy the function into the body of the email. A list of references are available below.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="expression-functions">Expression functions&lt;/h2>
-&lt;p>All JavaScript expressions and functions can be used in the Expression builder to create the impact you want.&lt;/p>
-&lt;p>In addition to defining your own expressions there is a set list of expressions found under &lt;strong>References&lt;/strong>, see table below for meaning.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align:left">Expression&lt;/th>
-&lt;th style="text-align:left">Function&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align:left">+, -, /, *&lt;/td>
-&lt;td style="text-align:left">Performs one of the basic mathematical operations: add, subtract, divide or multiply.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Sum(arg1, arg2, &amp;hellip;)&lt;/td>
-&lt;td style="text-align:left">Returns the sum of the arguments listed between the parentheses.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Date(arg1)&lt;/td>
-&lt;td style="text-align:left">Converts the argument into a date.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">DateAdd(dateArg, day, month, year, hour, min)&lt;/td>
-&lt;td style="text-align:left">Adds time to a given date. The date is stored in dateArg and the time to be added is stored in the day, month, year, hour and min arguments.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Status()&lt;/td>
-&lt;td style="text-align:left">Returns the status of the current process.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">ProcessID()&lt;/td>
-&lt;td style="text-align:left">Returns the ID of the current process.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">FormOwner(formName)&lt;/td>
-&lt;td style="text-align:left">Returns the form owner(s) for the given form.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">FormCompleted(formName)&lt;/td>
-&lt;td style="text-align:left">Returns the date completed for the given form.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Pad(value, size, symbol)&lt;/td>
-&lt;td style="text-align:left">Adds left padding to the value with the symbol provided.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">QueryString(parameter)&lt;/td>
-&lt;td style="text-align:left">Returns the URL query string for the given parameter (or an empty string if undefined).&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">IsOnline()&lt;/td>
-&lt;td style="text-align:left">Returns &amp;ldquo;yes&amp;rdquo; or &amp;ldquo;no&amp;rdquo; depending on the status of the online connection.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">ProcessLink()&lt;/td>
-&lt;td style="text-align:left">Returns the HTML link to the current process The link text can be added between the parantheses e.g. ProcessLink(&amp;ldquo;click here&amp;rdquo;). This expression is for use in emails and rich text fields.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Digest()&lt;/td>
-&lt;td style="text-align:left">Returns a summary of changes to fields in the current process. A table will be given with the original and new values.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Digest(&amp;lsquo;fieldName1&amp;rsquo;,&amp;lsquo;fieldName2&amp;rsquo;)&lt;/td>
-&lt;td style="text-align:left">Returns a summary of the changes for the given fields. See note below.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">GetFieldText(&amp;lsquo;fieldName&amp;rsquo;)&lt;/td>
-&lt;td style="text-align:left">Returns the text in the given field. See note below.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">GetFieldValue(&amp;lsquo;fieldName&amp;rsquo;)&lt;/td>
-&lt;td style="text-align:left">Returns the value in the given field. See note below.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>&lt;strong>Note&lt;/strong>: In the case of the last three expressions, you should select a field which contains data. If you give the name of a button field for example, then no data will be returned.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p>
-&lt;p>To see how expressions are used in controls such as Number fields, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>
