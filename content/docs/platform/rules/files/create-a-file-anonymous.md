@@ -1,6 +1,7 @@
 ---
 title: "Create a file anonymous link"
 typora-root-url: ..\..\..\..\..\static
+weight: 7
 ---
 
 This rule enables the creation of file links from an existing file field that can be shared anonymously 	

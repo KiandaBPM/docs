@@ -1,6 +1,7 @@
 ---
 title: "Generate excel workbook"
 typora-root-url: ..\..\..\..\..\static
+weight: 4
 ---
 
 This rule generates an Excel workbook from data stored in the process using a template.  

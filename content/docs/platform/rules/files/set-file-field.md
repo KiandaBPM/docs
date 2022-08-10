@@ -1,6 +1,7 @@
 ---
 title: "Set existing file field"
 typora-root-url: ..\..\..\..\..\static
+weight: 5
 ---
 
 This rule enables to construct the file field reference based on provided file URL path
