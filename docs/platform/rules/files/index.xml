@@ -1,4 +1,25 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – File management rules</title><link>https://docs.kianda.com/docs/platform/rules/files/</link><description>Recent content in File management rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/files/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Convert to PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/convert-to-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/convert-to-pdf/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – File management rules</title><link>https://docs.kianda.com/docs/platform/rules/files/</link><description>Recent content in File management rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/files/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Copy file</title><link>https://docs.kianda.com/docs/platform/rules/files/copy-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/copy-file/</guid><description>
+&lt;p>This rule copies a file from one data location to another.&lt;br>
+&lt;img src="https://docs.kianda.com/images/copyfile.png" alt="Send email rule dialog box">&lt;/p>
+&lt;h6 id="when-to-use">When to use&lt;/h6>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h6 id="how-to-use">How to use&lt;/h6>
+&lt;ol>
+&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to .&lt;/li>
+&lt;li>Select the Submit button.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
+&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
+&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol>
+&lt;h6 id="notes">Notes&lt;/h6>
+&lt;p>Copy files from one field to another
+Allows copying files between datasources. Use this file together with two file fields to move files between two different file locations. Example to copy files between an on premises folder and a SharePoint folder&lt;/p></description></item><item><title>Docs: Convert to PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/convert-to-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/convert-to-pdf/</guid><description>
 &lt;p>This rule converts a Word document (.doc or .docx) to PDF.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/converttopdf.png" alt="convert to pdf rule dialog">&lt;/p>
 &lt;h6 id="when-to-use">When to use&lt;/h6>
@@ -21,17 +42,16 @@
 &lt;li>Select the Submit button.&lt;/li>
 &lt;li>Add a rule &amp;gt; File management &amp;gt; Convert to PDF.&lt;/li>
 &lt;li>Click on OK.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Copy file</title><link>https://docs.kianda.com/docs/platform/rules/files/copy-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/copy-file/</guid><description>
-&lt;p>This rule copies a file from one data location to another.&lt;br>
-&lt;img src="https://docs.kianda.com/images/copyfile.png" alt="Send email rule dialog box">&lt;/p>
-&lt;h6 id="when-to-use">When to use&lt;/h6>
-&lt;p>You can add this rule:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h6 id="how-to-use">How to use&lt;/h6>
+&lt;/ol></description></item><item><title>Docs: Generate word document</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</guid><description>
+&lt;p>This rule generates a word document from data stored in the process using a word DOCX template.&lt;br>
+&lt;img src="https://docs.kianda.com/images/generateworddocument.png" alt="Send email rule dialog box">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule when your process requires dynamic document generation with high fidelity. This rule will use a word template previously mapped with smart tags using the Kianda task pane to generate a document containing the form captured from the process or data source.&lt;/p>
+&lt;p>Associate this rule to any form component.&lt;/p>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
+&lt;p>Note: Kianda task-pane is required for mapping the field values to the word document.&lt;/p>
+&lt;h6 id="how-to-use-1">How to use&lt;/h6>
+&lt;p>To generate a word document from data stored in a process:&lt;/p>
 &lt;ol>
 &lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to .&lt;/li>
 &lt;li>Select the Submit button.&lt;/li>
@@ -39,10 +59,56 @@
 &lt;li>Under Form field to set, select the new field called Status.&lt;/li>
 &lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
 &lt;li>Click on OK.&lt;/li>
-&lt;/ol>
-&lt;h6 id="notes">Notes&lt;/h6>
-&lt;p>Copy files from one field to another
-Allows copying files between datasources. Use this file together with two file fields to move files between two different file locations. Example to copy files between an on premises folder and a SharePoint folder&lt;/p></description></item><item><title>Docs: Create a file anonymous link</title><link>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</guid><description>
+&lt;/ol></description></item><item><title>Docs: Generate excel workbook</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/</guid><description>
+&lt;p>This rule generates an Excel workbook from data stored in the process using a template.&lt;br>
+&lt;img src="https://docs.kianda.com/images/generateexcelworkbook.png" alt="Send email rule dialog box">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule to dynamicaly generate excel workbooks based on form or process data. This data can be available inside tables or in any field&lt;/p>
+&lt;p>Associate this rule to any form element.&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
+&lt;h6 id="how-to-use-1">How to use&lt;/h6>
+&lt;p>To generate an Excel workbook from data stored in a process:&lt;/p>
+&lt;ol>
+&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to .&lt;/li>
+&lt;li>Select the Submit button.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
+&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
+&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Set existing file field</title><link>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</guid><description>
+&lt;p>This rule enables to construct the file field reference based on provided file URL path
+&lt;img src="https://docs.kianda.com/images/setexistingfile.png" alt="Send email rule dialog box">&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>Use this rule when your process requires you to bring an existing file dynamically into the form without having the user uploading such file. For example if proving a mechanism to allow the end user to search for file(s) you might use the results of this search as input of an existing file field based on displayname and file url.&lt;/p>
+&lt;p>Add this rule to any form component.&lt;/p>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;ol>
+&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to one of desired choice.&lt;/li>
+&lt;li>Select the Submit button.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
+&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
+&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Merge PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</guid><description>
+&lt;p>This rule merges two or more PDF files into a single file. It is also possible to merge to or more image files.
+&lt;img src="https://docs.kianda.com/images/mergepdf.png" alt="Send email rule dialog box">&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>Use this rule when your process requires you to merge dynamically two or more PDF files. For example automatically merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.&lt;/p>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;p>To merge two PDF files into a single file:&lt;/p>
+&lt;ol>
+&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to one of a desired name .&lt;/li>
+&lt;li>Select the Submit button.&lt;/li>
+&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
+&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
+&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
+&lt;li>Click on OK.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Create a file anonymous link</title><link>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</guid><description>
 &lt;p>This rule enables the creation of file links from an existing file field that can be shared anonymously&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/createafileanonymouslink.png" alt="Send email rule dialog box">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
@@ -73,70 +139,4 @@ Allows copying files between datasources. Use this file together with two file f
 &lt;li>
 &lt;p>Click on OK.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Docs: Generate excel workbook</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/</guid><description>
-&lt;p>This rule generates an Excel workbook from data stored in the process using a template.&lt;br>
-&lt;img src="https://docs.kianda.com/images/generateexcelworkbook.png" alt="Send email rule dialog box">&lt;/p>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>Use this rule to dynamicaly generate excel workbooks based on form or process data. This data can be available inside tables or in any field&lt;/p>
-&lt;p>Associate this rule to any form element.&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-use">How to use&lt;/h2>
-&lt;h6 id="how-to-use-1">How to use&lt;/h6>
-&lt;p>To generate an Excel workbook from data stored in a process:&lt;/p>
-&lt;ol>
-&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to .&lt;/li>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
-&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
-&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Generate word document</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</guid><description>
-&lt;p>This rule generates a word document from data stored in the process using a word DOCX template.&lt;br>
-&lt;img src="https://docs.kianda.com/images/generateworddocument.png" alt="Send email rule dialog box">&lt;/p>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>Use this rule when your process requires dynamic document generation with high fidelity. This rule will use a word template previously mapped with smart tags using the Kianda task pane to generate a document containing the form captured from the process or data source.&lt;/p>
-&lt;p>Associate this rule to any form component.&lt;/p>
-&lt;h2 id="how-to-use">How to use&lt;/h2>
-&lt;p>Note: Kianda task-pane is required for mapping the field values to the word document.&lt;/p>
-&lt;h6 id="how-to-use-1">How to use&lt;/h6>
-&lt;p>To generate a word document from data stored in a process:&lt;/p>
-&lt;ol>
-&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to .&lt;/li>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
-&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
-&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Merge PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</guid><description>
-&lt;p>This rule merges two or more PDF files into a single file. It is also possible to merge to or more image files.
-&lt;img src="https://docs.kianda.com/images/mergepdf.png" alt="Send email rule dialog box">&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>Use this rule when your process requires you to merge dynamically two or more PDF files. For example automatically merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.&lt;/p>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>To merge two PDF files into a single file:&lt;/p>
-&lt;ol>
-&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to one of a desired name .&lt;/li>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
-&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
-&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Set existing file field</title><link>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</guid><description>
-&lt;p>This rule enables to construct the file field reference based on provided file URL path
-&lt;img src="https://docs.kianda.com/images/setexistingfile.png" alt="Send email rule dialog box">&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>Use this rule when your process requires you to bring an existing file dynamically into the form without having the user uploading such file. For example if proving a mechanism to allow the end user to search for file(s) you might use the results of this search as input of an existing file field based on displayname and file url.&lt;/p>
-&lt;p>Add this rule to any form component.&lt;/p>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;ol>
-&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to one of desired choice.&lt;/li>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
-&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
-&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
 &lt;/ol></description></item></channel></rss>
