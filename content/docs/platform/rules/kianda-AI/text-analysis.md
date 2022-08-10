@@ -1,10 +1,10 @@
 ---
-title: "AI rules"
+title: "Text Analysis"
 typora-root-url: ..\..\..\..\..\static
-weight: 9
+weight: 1
 ---
 
-**Kianda AI** rules is one category of rules in Kianda that is used to analyse text within fields of your process, for example analysing a feedback text box of a process.
+## Introduction
 
 **AI** (Artificial Intelligence) is a form of intelligence demonstrated by machines, opposed to natural intelligence displayed by humans or animals. The AI system used in the **Kianda AI** rules is **Text Analysis**.
 
