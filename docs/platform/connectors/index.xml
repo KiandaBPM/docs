@@ -115,7 +115,6 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/email-connector-global-settings.jpg" alt="Global settings">&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>Docs: File system</title><link>https://docs.kianda.com/docs/platform/connectors/file-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/file-system/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>A File System data connector allows you to use your local file system as a data sources for your Kianda forms or dashboards. This means that as your processes are running they will use the information from the local file system or depending on the process, update or delete information at in the local file system location. Any Create, Read, Update and Delete (CRUD) operations performed in Kianda, will be reflected automatically and in real-time in your local system.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -134,8 +133,8 @@
 &lt;li>&lt;strong>Root folder path&lt;/strong> - type in manually the file path to the folder of your connector. The connector will be able to access data only in this folder and folders within.&lt;/li>
 &lt;li>&lt;strong>File search pattern&lt;/strong> - select the extension you want the connector to display. For example typing in &lt;code>*.txt&lt;/code> will only output the .txt files within the folder path, it will ignore all other path endings and will not display them. To set pattern you need to type in &lt;code>*&lt;/code> followed by &lt;code>.extenstion&lt;/code> for example &lt;code>*.txt&lt;/code> , &lt;code>*.docx&lt;/code> or &lt;code>*.pdf&lt;/code>&lt;/li>
 &lt;li>&lt;strong>Search options&lt;/strong> - it only allows you to search the files of the top directory that is set in the &lt;strong>Root folder path&lt;/strong> or all other files of other directories within. For example selecting if &lt;strong>Top Directory Only&lt;/strong> is selected, you will be able to see only the files that are in &lt;strong>Root folder path&lt;/strong> while ignoring folders. If the &lt;strong>All Directories&lt;/strong> is selected, you will be able to see files that are in &lt;strong>Root folder path&lt;/strong> and all files from within each folder.&lt;/li>
-&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is enabled and cannot be changed, the cloud connect is needed to create a connection between the local file system and Kianda itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to&lt;/li>
-&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a connection established with your Kianda website. You must choose the correct PC connection which contains the folder specified in the &lt;strong>Root folder path&lt;/strong>, otherwise the connection will fail.&lt;/li>
+&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is enabled and cannot be changed, the cloud connect is needed to &lt;strong>create a connection&lt;/strong> between the &lt;strong>local file system&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> website. You must choose the correct &lt;strong>PC connection&lt;/strong> which &lt;strong>contains the folder&lt;/strong> specified in the &lt;strong>Root folder path&lt;/strong>, otherwise the connection will fail.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -151,7 +150,29 @@
 &lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="connecting-kianda-cloud-connect-to-your-pc">Connecting Kianda Cloud Connect to your PC&lt;/h2>
+&lt;h2 id="file-system-parameters">File system parameters&lt;/h2>
+&lt;p>When you use a &lt;strong>File system&lt;/strong> datasource, there are &lt;strong>default parameters&lt;/strong> invoked from the files. For example when you create a &lt;strong>list&lt;/strong> in a Kianda form using a File system datasource, these File system parameters will appear in &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and &lt;strong>Sort by&lt;/strong> field in the &lt;strong>Edit field dialog box&lt;/strong>, see &lt;strong>Title&lt;/strong> for example in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/file-system-parameters.jpg" alt="File system parameters">&lt;/p>
+&lt;p>The File system parameters that appear in those three dropdown fields are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Name&lt;/strong> - name of the file including the extension.&lt;/li>
+&lt;li>&lt;strong>NameNoExtension&lt;/strong> - name of the file without the extension.&lt;/li>
+&lt;li>&lt;strong>Path&lt;/strong> - displays the full path to the file.&lt;/li>
+&lt;li>&lt;strong>Extension&lt;/strong> - displays just the extension of the file.&lt;/li>
+&lt;li>&lt;strong>Modified&lt;/strong> - displays the date and time when the file was last modified.&lt;/li>
+&lt;li>&lt;strong>Created&lt;/strong> - displays the date and time when the file was created.&lt;/li>
+&lt;li>&lt;strong>ParentFolderName&lt;/strong> - name of the folder that contains the file.&lt;/li>
+&lt;li>&lt;strong>ParentFolderPath&lt;/strong> - path of the folder that contains the file.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Your &lt;strong>File system service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: FTP</title><link>https://docs.kianda.com/docs/platform/connectors/ftp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/ftp/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction&lt;/p>
+&lt;/div></description></item><item><title>Docs: Google drive</title><link>https://docs.kianda.com/docs/platform/connectors/google-drive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/google-drive/</guid><description>
+&lt;div class="pageinfo pageinfo-primary">
+&lt;p>Page under construction&lt;/p>
+&lt;/div></description></item><item><title>Docs: Kianda Cloud Connect</title><link>https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Kianda Cloud Connect is a piece of software that establishes a connection between your local machine and your Kianda subscription. It allows the data to travel from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription.&lt;/p>
 &lt;h3 id="downloading-kianda-cloud-connect">Downloading Kianda Cloud Connect&lt;/h3>
 &lt;p>You can download &lt;strong>Kianda Cloud Connect&lt;/strong> software in any details page of data source that might use it, for example in a &lt;strong>File system&lt;/strong> data connector:&lt;/p>
@@ -187,13 +208,7 @@
 &lt;li>
 &lt;p>In the Installation Complete window click on &lt;strong>Close&lt;/strong>.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Docs: FTP</title><link>https://docs.kianda.com/docs/platform/connectors/ftp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/ftp/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Google drive</title><link>https://docs.kianda.com/docs/platform/connectors/google-drive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/google-drive/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: MySql</title><link>https://docs.kianda.com/docs/platform/connectors/mysql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/mysql/</guid><description>
+&lt;/ol></description></item><item><title>Docs: MySql</title><link>https://docs.kianda.com/docs/platform/connectors/mysql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/mysql/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Office 365</title><link>https://docs.kianda.com/docs/platform/connectors/office-365/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/office-365/</guid><description>
