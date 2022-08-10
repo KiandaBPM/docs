@@ -6,7 +6,7 @@ weight: 10
 
 ## Introduction
 
-The **Sort table** rule loops through a table allowing you to sort data in an **ascending** or **descending** manner. In the rule options, you can select which column of the table to sort by. The column you select can be any of the **Control input** fields, the sorting algorithm takes the numerical or text value of each field and sorts it accordingly. For example if there is a **User picker** column in the table like as shown below:
+The **Sort table** rule loops through a table allowing you to sort data in an **ascending** or **descending** manner. In the rule options, you can select which column of the table to sort by. The column you select can be any of the **Control input** fields, the sorting algorithm takes the numerical or text value of each field and sorts it accordingly. For example if there is a **User picker** column in the table like shown below:
 
 ![Sort table users before sort](/images/sort-table-user-before.jpg)
 
