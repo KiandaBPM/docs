@@ -57,7 +57,7 @@ You can download **Kianda Cloud Connect** software in any details page of data s
 
 4. **CloudConnect.zip** file should download onto your PC. Extract the files from the zip folder.
 
-5. Run the CloudConnect.msi file.
+5. Run the **CloudConnect.msi** file.
 
 6. In the **Welcome to Kianda Cloud Connect Setup Wizard**, click **Next >**.
 
