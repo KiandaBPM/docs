@@ -583,7 +583,7 @@
 &lt;/li>
 &lt;/ul>
 &lt;p>You can edit details of the existing REST Methods by clicking on the &lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-method.jpg" alt="Edit REST Methods"> or delete a method by clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/delete-method.jpg" alt="Delete REST Method">.&lt;/p>
-&lt;h3 id="how-to-add-a-new-rest-method">How to add a new &lt;strong>REST Method&lt;/strong>&lt;/h3>
+&lt;h3 id="how-to-add-a-new-rest-method">How to add a new REST Method&lt;/h3>
 &lt;ol>
 &lt;li>Click on the &lt;strong>+Add REST Method&lt;/strong> button. The &lt;strong>REST Method editor&lt;/strong> dialog box appears.&lt;/li>
 &lt;/ol>
@@ -630,7 +630,7 @@
 &lt;p>Knowing what parameters are available we can use the steps in &lt;a href="#how-to-add-a-new-rest-method">How to add a new REST Method&lt;/a>,:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click on &lt;strong>+Add REST Method&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-rest-method.jpg" alt="Add REST Method">from the &lt;strong>REST Service details&lt;/strong> page, and add in details using the &lt;strong>REST Method editor&lt;/strong> where:&lt;/p>
+&lt;p>Click on &lt;strong>+Add REST Method&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-rest-method.jpg" alt="Add REST Method"> from the &lt;strong>REST Service details&lt;/strong> page, and add in details using the &lt;strong>REST Method editor&lt;/strong> where:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Display Name&lt;/strong> - this is the name of your method that will be called upon in a process, for example &amp;lsquo;Cat fact&amp;rsquo;&lt;/p>
@@ -642,14 +642,14 @@
 &lt;p>&lt;strong>Url Path&lt;/strong> - the path that is attached to the base URL, for example &lt;strong>/fact&lt;/strong>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Add Header&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-header.jpg" alt="Add Header button">to add request headers, for example for authentication.&lt;/p>
+&lt;p>Click on &lt;strong>Add Header&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-header.jpg" alt="Add Header button"> to add request headers, for example for authentication.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Request body&lt;/strong> - this is the part of the request that is sent to a function where a function processes the request and sends back the &lt;strong>Response body&lt;/strong>. For our &amp;lsquo;catfact ninja&amp;rsquo; example we will use the parameters &amp;lsquo;fact&amp;rsquo; and &amp;rsquo;length&amp;rsquo; for &lt;strong>mapping values to form fields&lt;/strong> in Kianda processes:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/catfact-ninja-response-body.jpg" alt="Catfact ninja response body">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> to save the details and then click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-button.jpg" alt="Save button">in the &lt;strong>REST Service details&lt;/strong> screen to save the connection.&lt;/p>
+&lt;p>Click on &lt;strong>OK&lt;/strong> to save the details and then click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-button.jpg" alt="Save button"> in the &lt;strong>REST Service details&lt;/strong> screen to save the connection.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -661,7 +661,7 @@
 &lt;p>To see how &amp;lsquo;catfacts&amp;rsquo; are mapped into Kianda processes, create a new process, add fields and a rule that uses the REST Method created above.&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>To create a new process by going to the left-hand side menu &amp;gt; &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on &lt;strong>Add new&lt;/strong> &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new button">and fill out details for the process, such as a &lt;strong>Title&lt;/strong> and &lt;strong>Description&lt;/strong>. Click on &lt;strong>OK&lt;/strong> when complete.&lt;/p>
+&lt;p>To create a new process by going to the left-hand side menu &amp;gt; &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on &lt;strong>Add new&lt;/strong> &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new button"> and fill out details for the process, such as a &lt;strong>Title&lt;/strong> and &lt;strong>Description&lt;/strong>. Click on &lt;strong>OK&lt;/strong> when complete.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Kianda Designer opens and in the first form, &lt;strong>form1&lt;/strong>, add in a new text box by going to the left-hand pane and click on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Input&lt;/strong> &amp;gt; &lt;strong>Text box&lt;/strong>. This field will hold the value of the &amp;lsquo;fact&amp;rsquo; from catfacts. To read more about Input controls go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input controls&lt;/a>.&lt;/p>
@@ -691,7 +691,7 @@
 &lt;p>Add Error mapping if desired. Click on the links to read more about &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Error mapping&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/data/find-items/">Find items rule&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Save the process by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-button.jpg" alt="Save button"> and preview the process by clicking on &lt;strong>Preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">. In the previewed instance, click on the Get Cat Fact button to populate the textbox.&lt;/p>
+&lt;p>Save the process by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-button.jpg" alt="Save button"> and preview the process by clicking on &lt;strong>Preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">. In the previewed instance, click on the &amp;lsquo;Get Cat Fact&amp;rsquo; button to populate the textbox.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>

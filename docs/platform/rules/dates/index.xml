@@ -1,9 +1,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Date rules</title><link>https://docs.kianda.com/docs/platform/rules/dates/</link><description>Recent content in Date rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/dates/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Add time to date</title><link>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>add time to date&lt;/strong> rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. Below is the add time to date rule edit screen.&lt;/p>
+&lt;p>The &lt;strong>Add time to date&lt;/strong> rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. Below is the add time to date rule edit screen.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-screen.jpg" alt="Date rules add time to date screen">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>The add time to date rule should be used when a user wishes to add time to a date, i.e. for a reminder email to be sent after 24 hours or another chosen interval.&lt;/p>
+&lt;p>The &lt;strong>Add time to date&lt;/strong> rule should be used when a user wishes to add time to a date, i.e. for a reminder email to be sent after 24 hours or another chosen interval.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>

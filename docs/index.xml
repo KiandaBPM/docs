@@ -1,7 +1,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Welcome to Kianda</title><link>https://docs.kianda.com/docs/</link><description>Recent content in Welcome to Kianda on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Active directory</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Adding rules to a process</title><link>https://docs.kianda.com/docs/how-to/adding-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/adding-rules/</guid><description>
+&lt;/div></description></item><item><title>Docs: Add time to date</title><link>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Add time to date&lt;/strong> rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. Below is the add time to date rule edit screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-screen.jpg" alt="Date rules add time to date screen">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>The &lt;strong>Add time to date&lt;/strong> rule should be used when a user wishes to add time to a date, i.e. for a reminder email to be sent after 24 hours or another chosen interval.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the add time to date rule can be applied to.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>The first step is to click on an existing field, form or process that you would like to be the executor of the rule.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once highlighted, navigate to &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Dates&lt;/strong> &amp;gt; &lt;strong>Add time to date&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-selected.jpg" alt="Date rules selected">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then you must select the time to add to your date field under &lt;strong>Time to add or a field&lt;/strong>, which can either be a numerical value, or can be another field within your Kianda form. These will be the set intervals passed through to your chosen field, form or process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You then need to select what unit the time is, whether it is a minute, hour, day, etc., using the &lt;strong>Time unit&lt;/strong> drop down list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then under the &lt;strong>To date&lt;/strong> field, you select when the date is to be added from i.e., a date field, or today.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-select-time.jpg" alt="Date rules select time">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You must then select within the &lt;strong>Destination date field&lt;/strong>, the date field which this new date is to be stored within.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-destination.jpg" alt="Date rules destination date field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Date calculation settings&lt;/strong>, you can also select whether the time added to your chosen date field is within business hours or if it includes weekends. This setting could be utilised to disallow notifications sent outside of working hours, and during unsociable hours. You can also define custom special dates and save them accordingly.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-calculations.jpg" alt="Date rules special dates">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Finally, clicking on the &lt;strong>ok&lt;/strong> button will save the new rule you have just created and apply it to the chosen field.&lt;/p>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Adding rules to a process</title><link>https://docs.kianda.com/docs/how-to/adding-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/adding-rules/</guid><description>
 &lt;p>This video introduces Kianda rules and demonstrates how to add a Send email Communications rule to a form.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/rules.mp4">
@@ -3724,120 +3776,4 @@ Your browser does not support the video tag.
 &lt;/ol>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Dashboard</title><link>https://docs.kianda.com/docs/examples/inspection/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/dashboard/</guid><description>
-&lt;p>Kianda &lt;strong>dashboards&lt;/strong> deliver a convenient way to provide insights into how your business processes are performing. Kianda dashboards offer easy reporting, permissions management, quick build, condition-based filtering and many more features.&lt;/p>
-&lt;p>From lists to tiles, filter and charts, dashboards allow you to build full digital experiences to monitor your real-time processes in a few minutes. To learn more about dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard pages&lt;/a>.&lt;/p>
-&lt;h2 id="creating-a-dashboard">Creating a Dashboard&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>In the left-hand side menu click on Home.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/left-menu-home.jpg" alt="Home">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>On the top right-hand side menu click on the plus&lt;img src="https://docs.kianda.com/images/top-right-menu-plus.jpg" alt="Plus"> to add a dashboard.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Change the &lt;strong>Title&lt;/strong> to &lt;strong>Inspection Dashboard&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> on the &lt;strong>Create dashboard page&lt;/strong> dialog box.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Creating the &lt;strong>Inspection dashboard&lt;/strong> will automatically bring you to a blank &lt;strong>dashboard creation page&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="creating-a-list-widget">Creating a List Widget&lt;/h3>
-&lt;p>In this example we will use a List widget to keep track of all instances of our Inspection Processes. We will add the &lt;strong>Status&lt;/strong> field from the &lt;strong>Request From&lt;/strong> to the list to keep track in what stage is a particular process.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>On the dashboard creation page, click on &lt;strong>List&lt;/strong> in the top menu.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-widget-menu-list.jpg" alt="Home">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Add widget&lt;/strong> dialog box, change the &lt;strong>Title&lt;/strong> to &lt;strong>Inspection records&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>List widget automatically shows all records of all our processes in the system. We need to select the &lt;strong>Inspection Process&lt;/strong>. Click on the pen icon on the &lt;strong>Inspection Records&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/examples-edit-list.jpg" alt="Edit list widget">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit List&lt;/strong> dialog box, select &lt;strong>Inspection Process&lt;/strong> in the &lt;strong>Business process&lt;/strong> option.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>On the right-hand side of the &lt;strong>Edit List&lt;/strong> dialog box click on &lt;strong>Design Fields&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select &lt;strong>Status&lt;/strong> field from the &lt;strong>Request Form&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/examples-list-editbox.jpg" alt="List dialog box">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit List&lt;/strong> dialog box to save changes.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="creating-a-link-widget">Creating a Link widget&lt;/h3>
-&lt;p>In this example we will use the Link widget in our dashboard. By clicking on it, our users will be able to create new instances of the &lt;strong>Inspection Process&lt;/strong> starting in the &lt;strong>Request Form&lt;/strong>. To learn more about Link widgets go to &lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>On the dashboard creation page, click on &lt;strong>List&lt;/strong> in the top menu.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-widget-menu-link.jpg" alt="Add link in dashboard">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Add widget&lt;/strong> dialog box, change the &lt;strong>Title&lt;/strong> to &lt;strong>Request an Inspection&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Add widget&lt;/strong> dialog box.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>We need to activate which process to start when clicking on the link, click on the pen icon to edit the &lt;strong>Link widget&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-link.jpg" alt="Link edit">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Start New Process&lt;/strong> in the &lt;strong>Edit button links&lt;/strong> dialog box.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit buttons links Request an Inspection&lt;/strong> dialog box select &lt;strong>Inspection Process&lt;/strong> in the &lt;strong>Target process&lt;/strong> option.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit Link&lt;/strong> dialog box.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit buttons links Request an Inspection&lt;/strong> dialog box.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="creating-a-pie-chart-widget---pie-chart">Creating a Pie Chart widget - Pie chart&lt;/h3>
-&lt;p>In this example we will use the Chart widget in our dashboard. We will create a pie chart from the available options, representing the status of our inspection processes. To learn more about Chart widgets go to &lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>On the dashboard creation page, click on &lt;strong>Chart&lt;/strong> in the top menu.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-widget-menu-chart.jpg" alt="Add link in dashboard">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Add widget&lt;/strong> dialog box, change the &lt;strong>Title&lt;/strong> to &lt;strong>Inspection Status&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Add widget&lt;/strong> dialog box.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>We need to attach a process to the pie chart, click on the pen icon on the chart widget to edit it.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select &lt;strong>Inspection process&lt;/strong> in the &lt;strong>Business process&lt;/strong> option.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select &lt;strong>Pie chart&lt;/strong> from the &lt;strong>Chart type&lt;/strong> option.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select &lt;strong>Status&lt;/strong> field from the &lt;strong>Label field&lt;/strong> option.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Edit chart&lt;/strong> dialog box.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/examples-chart-editbox.jpg" alt="List dialog box">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the top right-hand menu click on &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Link edit"> to save your dashboard.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-menu.jpg" alt="Link edit">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="inspection-process-dashboard-summary">Inspection Process Dashboard Summary&lt;/h2>
-&lt;p>We have now created the dashboard for our Inspection process. Using the List widget, we can see all details of all instances of each inspection process that was created. By picking the &lt;strong>Status&lt;/strong> field to show in our &lt;strong>List&lt;/strong> widget, we can see which processes are &lt;strong>Completed&lt;/strong> and &lt;strong>Requested&lt;/strong>. With the &lt;strong>Link&lt;/strong> widget we are allowing the users of the dash board to click on the link to start an &lt;strong>Inspection process.&lt;/strong> Take a look at the finished dashboard for the &lt;strong>Inspection Process&lt;/strong> below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/examples-inspection-dashboard.jpg" alt="Finished Dashboard">&lt;/p></description></item></channel></rss>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
