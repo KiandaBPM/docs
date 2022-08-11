@@ -290,7 +290,7 @@
 &lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by filling out the following:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Select form&lt;/strong> - click on the field and select a form from the process. Click on the &lt;strong>Plus/Add&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-plus-action.jpg" alt="Add/Plus button">to add more forms to assign. If you change your mind and want to delete a form, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;p>&lt;strong>Select form&lt;/strong> - click on the field and select a form from the process. Click on the &lt;strong>Plus/Add&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-plus-action.jpg" alt="Add/Plus button"> to add more forms to assign. If you change your mind and want to delete a form, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Assign to&lt;/strong> - choose from the radio buttons:&lt;/p>
@@ -308,7 +308,7 @@
 &lt;li>
 &lt;p>&lt;strong>Existing user(s)&lt;/strong> - choose from:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Override&lt;/strong> - this means that this rule will override form ownership, making those referenced in the &lt;strong>Edit rule dialog&lt;/strong> box**, the form owners**.&lt;/li>
+&lt;li>&lt;strong>Override&lt;/strong> - this means that this rule will override form ownership, making those referenced in the &lt;strong>Edit rule dialog&lt;/strong> box, the &lt;strong>form owners&lt;/strong>.&lt;/li>
 &lt;li>&lt;strong>Append&lt;/strong> - this means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the &lt;strong>Edit rule dialog&lt;/strong> box.&lt;/li>
 &lt;/ul>
 &lt;/li>
