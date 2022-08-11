@@ -40,6 +40,30 @@ In advance of using the **Copy file** rule, in your process you need to have cre
 
 5. Under the **Action** section fill out the following:
 
+   - **Copy from** - select a file field which holds the file that you want to copy.
+
+   - **Copy to** - select a file field which will store the copied version of the original file.
+
+   - **Copy mode** - you have two options when copying a file from one field into another:
+
+     - **Override** - when a file already exists in the **Copy to** file filed and the copy rule is triggered again, the **Copy to** file filed will get overridden by the new file from **Copy from**. See example below:
+
+       ![Override example](/images/copy-file-override.jpg)
+
+       When the **Copy file** rule is triggered, the file **README.md** in the **SharePoint datasource** field will be **overridden** by the **access_frame.png** file in the **Local file system** field. See below to see the result when **Copy file** rule is triggered again:
+
+       ![Override example - result](/images/copy-file-override-result.jpg)
+
+     - **Append** - when a file already exists in the **Copy to** file filed and the copy rule is triggered again, the **Copy to** file filed will be appended resulting in **multiple files** in the **Copy to** filed. See example below:
+
+       ![Override example](/images/copy-file-override.jpg)
+
+       When the **Copy file** rule is triggered, the file **access_frame.png** in the **Local file system** field will be **appended** to the already existing **README.md** file in the **SharePoint datasource** field. See below to see the result when **Copy file** rule is triggered again:
+
+       ![Override example - result](/images/copy-file-append-result.jpg)
+
+6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
+
 ### Editing, deleting or duplicating rules
 
 When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
@@ -51,7 +75,12 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png)
 
-- When sharing an anonymous link with someone, use the send email rule and attach the link in the body of the email. Make sure to generate the link before sending the email.
-- To make the rule versatile with setting the duration time, create a text box or a number field and select it in the **Link duration in hours** field.
+- You can use this rule to copy files **from one datasource into another**. In the file field options of the **Copy to** field, set the **destination** to a datasource you want to copy a file into. To learn how to **change the destination** option in a file field go to [File upload control](/docs/platform/controls/input/file-upload/).
+
+### What’s next ![Idea icon](/images/18.png)
+
+To find out more about other File management rules go to [File management rules](/docs/platform/rules/files/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).
 
 ​	
