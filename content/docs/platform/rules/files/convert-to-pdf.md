@@ -37,7 +37,16 @@ In advance of using the **Convert to PDF** rule, in your process you need to hav
 5. Under the **Action** section fill out the following:
 
    - **Convert Word File** - used to hold the word document file that you want to convert.
+
    - **Converted PDF File** - used to store the converted PDF version of the original word document file.
+
+      See below for an example of a word document before and after conversion, note the file extension in the **Word file** field before converting into a PDF:
+
+     ![Convert to pdf before](/images/convert-to-pdf-example-before.jpg)
+
+     Below is an image representing the result after converting the Word document file into a PDF, note the file extension in the Converted PDF file field:
+
+     ![Edit rule - convert to PDF](/images/convert-to-pdf-example.jpg)
 
 6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
