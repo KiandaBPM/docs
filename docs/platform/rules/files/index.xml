@@ -33,6 +33,34 @@
 &lt;/li>
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Copy from&lt;/strong> - select a file field which holds the file that you want to copy.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Copy to&lt;/strong> - select a file field which will store the copied version of the original file.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Copy mode&lt;/strong> - you have two options when copying a file from one field into another:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Override&lt;/strong> - when a file already exists in the &lt;strong>Copy to&lt;/strong> file filed and the copy rule is triggered again, the &lt;strong>Copy to&lt;/strong> file filed will get overridden by the new file from &lt;strong>Copy from&lt;/strong>. See example below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-override.jpg" alt="Override example">&lt;/p>
+&lt;p>When the &lt;strong>Copy file&lt;/strong> rule is triggered, the file &lt;strong>README.md&lt;/strong> in the &lt;strong>SharePoint datasource&lt;/strong> field will be &lt;strong>overridden&lt;/strong> by the &lt;strong>access_frame.png&lt;/strong> file in the &lt;strong>Local file system&lt;/strong> field. See below to see the result when &lt;strong>Copy file&lt;/strong> rule is triggered again:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-override-result.jpg" alt="Override example - result">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Append&lt;/strong> - when a file already exists in the &lt;strong>Copy to&lt;/strong> file filed and the copy rule is triggered again, the &lt;strong>Copy to&lt;/strong> file filed will be appended resulting in &lt;strong>multiple files&lt;/strong> in the &lt;strong>Copy to&lt;/strong> filed. See example below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-override.jpg" alt="Override example">&lt;/p>
+&lt;p>When the &lt;strong>Copy file&lt;/strong> rule is triggered, the file &lt;strong>access_frame.png&lt;/strong> in the &lt;strong>Local file system&lt;/strong> field will be &lt;strong>appended&lt;/strong> to the already existing &lt;strong>README.md&lt;/strong> file in the &lt;strong>SharePoint datasource&lt;/strong> field. See below to see the result when &lt;strong>Copy file&lt;/strong> rule is triggered again:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-append-result.jpg" alt="Override example - result">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
@@ -45,9 +73,11 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;ul>
-&lt;li>When sharing an anonymous link with someone, use the send email rule and attach the link in the body of the email. Make sure to generate the link before sending the email.&lt;/li>
-&lt;li>To make the rule versatile with setting the duration time, create a text box or a number field and select it in the &lt;strong>Link duration in hours&lt;/strong> field.&lt;/li>
+&lt;li>You can use this rule to copy files &lt;strong>from one datasource into another&lt;/strong>. In the file field options of the &lt;strong>Copy to&lt;/strong> field, set the &lt;strong>destination&lt;/strong> to a datasource you want to copy a file into. To learn how to &lt;strong>change the destination&lt;/strong> option in a file field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
 &lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
 &lt;p>​&lt;/p></description></item><item><title>Docs: Convert to PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/convert-to-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/convert-to-pdf/</guid><description>
 &lt;p>This rule converts a Word document (.doc or .docx) to PDF.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/converttopdf.png" alt="convert to pdf rule dialog">&lt;/p>
