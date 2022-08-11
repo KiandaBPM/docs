@@ -46,7 +46,7 @@ To dynamically assign a form to a user:
 
 5. Under **Action** create one or more actions for the rule by filling out the following:
 
-   - **Select form** - click on the field and select a form from the process. Click on the **Plus/Add** button ![Add/Plus button](/images/add-plus-action.jpg)to add more forms to assign. If you change your mind and want to delete a form, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
+   - **Select form** - click on the field and select a form from the process. Click on the **Plus/Add** button ![Add/Plus button](/images/add-plus-action.jpg) to add more forms to assign. If you change your mind and want to delete a form, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 
    - **Assign to** - choose from the radio buttons:
      - **Any user** - choose from **Users**, **Groups** and/or **Partners** in the drop-down list. All users must be predefined in the system, see [Users and Groups](/docs/platform/administration/users/) for more details. 
@@ -60,7 +60,7 @@ To dynamically assign a form to a user:
 
    - **Existing user(s)** - choose from:
 
-     -  **Override** - this means that this rule will override form ownership, making those referenced in the **Edit rule dialog** box**, the form owners**.
+     -  **Override** - this means that this rule will override form ownership, making those referenced in the **Edit rule dialog** box, the **form owners**.
      - **Append** - this means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the **Edit rule dialog** box. 
 
 9. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
