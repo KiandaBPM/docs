@@ -112,8 +112,16 @@
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Convert Word File&lt;/strong> - used to hold the word document file that you want to convert.&lt;/li>
-&lt;li>&lt;strong>Converted PDF File&lt;/strong> - used to store the converted PDF version of the original word document file.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Convert Word File&lt;/strong> - used to hold the word document file that you want to convert.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Converted PDF File&lt;/strong> - used to store the converted PDF version of the original word document file.&lt;/p>
+&lt;p>See below for an example of a word document before and after conversion, note the file extension in the &lt;strong>Word file&lt;/strong> field before converting into a PDF:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/convert-to-pdf-example-before.jpg" alt="Convert to pdf before">&lt;/p>
+&lt;p>Below is an image representing the result after converting the Word document file into a PDF, note the file extension in the Converted PDF file field:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/convert-to-pdf-example.jpg" alt="Edit rule - convert to PDF">&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
