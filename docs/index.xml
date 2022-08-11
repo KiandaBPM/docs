@@ -240,27 +240,56 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/">&lt;strong>Designer&lt;/strong>&lt;/a>&lt;/li>
 &lt;li>&lt;strong>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a>&lt;/strong>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Copy file</title><link>https://docs.kianda.com/docs/platform/rules/files/copy-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/copy-file/</guid><description>
-&lt;p>This rule copies a file from one data location to another.&lt;br>
-&lt;img src="https://docs.kianda.com/images/copyfile.png" alt="Send email rule dialog box">&lt;/p>
-&lt;h6 id="when-to-use">When to use&lt;/h6>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Copy file&lt;/strong> rule allows you to &lt;strong>copy a file&lt;/strong> from one field in your form into another field in a different form. You can use this rule to copy files from &lt;strong>one datasource into another&lt;/strong>, by having the &lt;strong>destination of each file field different&lt;/strong>. For example having the datasource destination of the original file that you want to copy set to your local &lt;strong>File system&lt;/strong>, and the destination of the file field that you are copying into is set to a &lt;strong>SharePoint&lt;/strong> datasource, see the gif below as an example:&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/common/copy-file.gif"/>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule when you need to copy files from one form to another or to transfer files from one datasource into a different one.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h6 id="how-to-use">How to use&lt;/h6>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Copy file&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires two file fields in order to select the original file and the other is used to store the copied version. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Original version)&lt;/strong> - used to hold the file that you want to copy.&lt;/li>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Copied version)&lt;/strong> - used to store the copied version of the original file.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
-&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to .&lt;/li>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
-&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
-&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Create a file anonymous link&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Create a file anonymous link&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-edit-rule.jpg" alt="Edit rule - copy file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;/li>
 &lt;/ol>
-&lt;h6 id="notes">Notes&lt;/h6>
-&lt;p>Copy files from one field to another
-Allows copying files between datasources. Use this file together with two file fields to move files between two different file locations. Example to copy files between an on premises folder and a SharePoint folder&lt;/p></description></item><item><title>Docs: Date control</title><link>https://docs.kianda.com/docs/platform/controls/input/date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/date/</guid><description>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>When sharing an anonymous link with someone, use the send email rule and attach the link in the body of the email. Make sure to generate the link before sending the email.&lt;/li>
+&lt;li>To make the rule versatile with setting the duration time, create a text box or a number field and select it in the &lt;strong>Link duration in hours&lt;/strong> field.&lt;/li>
+&lt;/ul>
+&lt;p>​&lt;/p></description></item><item><title>Docs: Date control</title><link>https://docs.kianda.com/docs/platform/controls/input/date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/input/date/</guid><description>
 &lt;p>&lt;strong>Date controls&lt;/strong> or &lt;strong>Date fields&lt;/strong> can be inserted in a form when you want a user to be able to input a date and time by using a date and time picker.&lt;/p>
 &lt;p>For example, in a Training Request form, you may want the user to select the date and time of the training course they want to attend.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
