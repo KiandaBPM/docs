@@ -1,6 +1,7 @@
 ---
 title: "Generate word document"
 typora-root-url: ..\..\..\..\..\static
+weight: 3
 ---
 
 This rule generates a word document from data stored in the process using a word DOCX template.  

@@ -1,6 +1,7 @@
 ---
 title: "Convert to PDF"
 typora-root-url: ..\..\..\..\..\static
+weight: 2
 ---
 
 This rule converts a Word document (.doc or .docx) to PDF.	

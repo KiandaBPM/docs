@@ -1,6 +1,7 @@
 ---
 title: "Merge PDF"
 typora-root-url: ..\..\..\..\..\static
+weight: 6
 ---
 
 This rule merges two or more PDF files into a single file.  It is also possible to merge to or more image files.	

@@ -1,6 +1,7 @@
 ---
 title: "Copy file"
 typora-root-url: ..\..\..\..\..\static
+weight: 1
 ---
 
 This rule copies a file from one data location to another.  
