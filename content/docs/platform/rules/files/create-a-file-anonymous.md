@@ -61,6 +61,6 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### What’s next ![Idea icon](/images/18.png)
 
-To find out more about other Table rules go to [Table rules](/docs/platform/rules/tables/).
+To find out more about other File management rules go to [File management rules](/docs/platform/rules/files/).
 
 To find out more about other rules go to [Rules](/docs/platform/rules/).
