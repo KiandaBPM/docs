@@ -110,18 +110,23 @@ Allows copying files between datasources. Use this file together with two file f
 &lt;li>Click on OK.&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Create a file anonymous link</title><link>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Create a file anonymous link&lt;/strong> rule enables you to create a link to a file from your process. The link is &lt;strong>fully anonymous&lt;/strong> which means anybody can &lt;strong>access&lt;/strong> the file if they have the link. You can set an expiry time of the link (in hours), for example 2 hours and the count down will start from the time the link was created.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/createafileanonymouslink.png" alt="Send email rule dialog box">&lt;/p>
+&lt;p>The &lt;strong>Create a file anonymous link&lt;/strong> rule enables you to create a link to a file from your process. The link is &lt;strong>fully anonymous&lt;/strong> which means anybody can &lt;strong>access&lt;/strong> the file if they have the link. You can set an expiry time of the link (in hours), the count down will start from the time the link was created.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>Use this rule when your process or application requires sharing anonymously a file stored in one of the supported file connectors. Example when sharing inside an email a link to a report stored behing an authenticated file system.&lt;/p>
+&lt;p>Use this rule when your process or application requires sharing anonymously a file stored in one of the supported file connectors. For example when sharing a file link to a report stored behind an authenticated file system.&lt;/p>
 &lt;p>Add this rule to any form element.&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h2 id="how-to-use">How to use&lt;/h2>
-&lt;p>To create an anonymous link to a file:&lt;/p>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Anonymous form link&lt;/strong>, in your process you need to have created at least one or more forms. The create a file anonymous link rule also requires two control fields in order to store a file which you want to share and a text box control for storing the link. You can also create another text box or a number field to store the link duration, this field is optional but can be a good idea if you want to customise the duration of the link dynamically.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> - used to store the file which you want to create a link to. To learn how to create a file filed go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box field&lt;/strong> - used to store the generated anonymous link which can be shared with other users. To learn how to create a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box or Number field (optional)&lt;/strong> - allows you to determine the duration of the link in hours.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>Before adding the rule,&lt;/p>
