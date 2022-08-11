@@ -1,12 +1,14 @@
 ---
-title: "Add time to date" 
+title: "Add time to date"
+weight: 1
+typora-root-url: ..\..\..\..\..\static
 ---
 
 
 
 ## Introduction
 
-The **add time to date** rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. Below is the add time to date rule edit screen.
+The **Add time to date** rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. Below is the add time to date rule edit screen.
 
 ![Date rules add time to date screen](/images/date-rules-add-time-to-date-screen.jpg)
 
@@ -14,7 +16,7 @@ The **add time to date** rule allows you to add time to a date field in order to
 
 ## When to use
 
-The add time to date rule should be used when a user wishes to add time to a date, i.e. for a reminder email to be sent after 24 hours or another chosen interval.
+The **Add time to date** rule should be used when a user wishes to add time to a date, i.e. for a reminder email to be sent after 24 hours or another chosen interval.
 
  
 

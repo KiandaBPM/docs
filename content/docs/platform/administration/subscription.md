@@ -126,7 +126,7 @@ On this page you can make the following changes:
 - **Regional settings** - choose a language setting from the drop-down list.
 - **Time zone** - choose a time zone from the drop-down list.
 
-When you are finished making changes click on ** **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
+When you are finished making changes click on  **Save Changes** ![Save changes button](/images/save-changes.jpg) to save any changes made and click on **Back** to go back to the **Subscription** page.
 
 The chosen options are reflected in the text below the fields, for example **date and time format**.
 

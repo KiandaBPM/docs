@@ -94,7 +94,7 @@ You can edit details of the existing REST Methods by clicking on the **Edit/Pen*
 
 
 
-### How to add a new **REST Method** ###
+### How to add a new REST Method ###
 
 1. Click on the **+Add REST Method** button. The **REST Method editor** dialog box appears.
 
@@ -135,7 +135,7 @@ If a simple **GET** method is used to retrieve facts using an API client, then p
 
 Knowing what parameters are available we can use the steps in [How to add a new REST Method](#how-to-add-a-new-rest-method),:
 
-1. Click on **+Add REST Method** ![Add REST Method](/images/add-rest-method.jpg)from the **REST Service details** page, and add in details using the **REST Method editor** where:
+1. Click on **+Add REST Method** ![Add REST Method](/images/add-rest-method.jpg) from the **REST Service details** page, and add in details using the **REST Method editor** where:
 
    - **Display Name** - this is the name of your method that will be called upon in a process, for example 'Cat fact'
 
@@ -143,13 +143,13 @@ Knowing what parameters are available we can use the steps in [How to add a new 
 
    - **Url Path** - the path that is attached to the base URL, for example **/fact**
 
-   - Click on **Add Header** ![Add Header button](/images/add-header.jpg)to add request headers, for example for authentication. 
+   - Click on **Add Header** ![Add Header button](/images/add-header.jpg) to add request headers, for example for authentication. 
 
    - **Request body** - this is the part of the request that is sent to a function where a function processes the request and sends back the **Response body**. For our 'catfact ninja' example we will use the parameters 'fact' and 'length' for **mapping values to form fields** in Kianda processes:
 
      ![Catfact ninja response body](/images/catfact-ninja-response-body.jpg)
 
-   - Click on **OK** to save the details and then click on **Save** ![Save button](/images/save-button.jpg)in the **REST Service details** screen to save the connection.
+   - Click on **OK** to save the details and then click on **Save** ![Save button](/images/save-button.jpg) in the **REST Service details** screen to save the connection.
 
 The method will appear under **REST Methods** in the details screen.
 
@@ -163,7 +163,7 @@ The next section shows how data at the data source can be used in a Kianda proce
 
 To see how 'catfacts' are mapped into Kianda processes, create a new process, add fields and a rule that uses the REST Method created above.
 
-1. To create a new process by going to the left-hand side menu > **Administration** > **Designer** and click on **Add new** ![Add new button](/images/addnew.png)and fill out details for the process, such as a **Title** and **Description**. Click on **OK** when complete.
+1. To create a new process by going to the left-hand side menu > **Administration** > **Designer** and click on **Add new** ![Add new button](/images/addnew.png) and fill out details for the process, such as a **Title** and **Description**. Click on **OK** when complete.
 
 2. Kianda Designer opens and in the first form, **form1**, add in a new text box by going to the left-hand pane and click on **Controls** > **Input** > **Text box**. This field will hold the value of the 'fact' from catfacts. To read more about Input controls go to [Input controls](/docs/platform/controls/input/).
 
@@ -187,7 +187,7 @@ To see how 'catfacts' are mapped into Kianda processes, create a new process, ad
 
 9. Add Error mapping if desired. Click on the links to read more about [Error mapping](/docs/platform/rules/general/success-error-mapping/) and [Find items rule](/docs/platform/rules/data/find-items/).
 
-10. Save the process by clicking on the **Save** button ![Save button](/images/save-button.jpg) and preview the process by clicking on **Preview** ![Preview button](/images/preview.png). In the previewed instance, click on the Get Cat Fact button to populate the textbox.
+10. Save the process by clicking on the **Save** button ![Save button](/images/save-button.jpg) and preview the process by clicking on **Preview** ![Preview button](/images/preview.png). In the previewed instance, click on the 'Get Cat Fact' button to populate the textbox.
 
     
 
