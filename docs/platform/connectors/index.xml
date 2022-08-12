@@ -115,7 +115,8 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/email-connector-global-settings.jpg" alt="Global settings">&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>Docs: File system</title><link>https://docs.kianda.com/docs/platform/connectors/file-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/file-system/</guid><description>
-&lt;p>A File System data connector allows you to use your local file system as a data sources for your Kianda forms or dashboards. This means that as your processes are running they will use the information from the local file system or depending on the process, update or delete information at in the local file system location. Any Create, Read, Update and Delete (CRUD) operations performed in Kianda, will be reflected automatically and in real-time in your local system.&lt;/p>
+&lt;p>A &lt;strong>File system&lt;/strong> data connector allows you to use your local file system as a data source for your Kianda forms or dashboards. This means that as your processes are running they will use the information from the local file system or depending on the process, update or delete information at in the local file system location. Kianda has the ability to extract files, navigate subfolders and write new files into the directory. This includes local file and internet file systems.&lt;/p>
+&lt;p>Using this type of datasource is useful when you want Kianda to have access to your directory, to extract and read files as well as writing files to the directory.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -130,10 +131,15 @@
 &lt;p>Choose from the edit options:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your file sytem connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
-&lt;li>&lt;strong>Root folder path&lt;/strong> - type in manually the file path to the folder of your connector. The connector will be able to access data only in this folder and folders within.&lt;/li>
-&lt;li>&lt;strong>File search pattern&lt;/strong> - select the extension you want the connector to display. For example typing in &lt;code>*.txt&lt;/code> will only output the .txt files within the folder path, it will ignore all other path endings and will not display them. To set pattern you need to type in &lt;code>*&lt;/code> followed by &lt;code>.extenstion&lt;/code> for example &lt;code>*.txt&lt;/code> , &lt;code>*.docx&lt;/code> or &lt;code>*.pdf&lt;/code>&lt;/li>
-&lt;li>&lt;strong>Search options&lt;/strong> - it only allows you to search the files of the top directory that is set in the &lt;strong>Root folder path&lt;/strong> or all other files of other directories within. For example selecting if &lt;strong>Top Directory Only&lt;/strong> is selected, you will be able to see only the files that are in &lt;strong>Root folder path&lt;/strong> while ignoring folders. If the &lt;strong>All Directories&lt;/strong> is selected, you will be able to see files that are in &lt;strong>Root folder path&lt;/strong> and all files from within each folder.&lt;/li>
-&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is enabled and cannot be changed, the cloud connect is needed to &lt;strong>create a connection&lt;/strong> between the &lt;strong>local file system&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Root folder path&lt;/strong> - type in manually the file path to the folder of your connector, for example C:\Documents\GreenITR. The connector will be able to access data only in this folder and folders within.&lt;/li>
+&lt;li>&lt;strong>File search pattern&lt;/strong> - this options can be used to limit the type of files for interaction, by using file extensions. For example typing in &lt;code>*.txt&lt;/code> will only output the .txt files within the folder path, it will ignore all other path endings and will not display them. To set pattern you need to type in &lt;code>*&lt;/code> followed by &lt;code>.extenstion&lt;/code> for example &lt;code>*.txt&lt;/code> , &lt;code>*.docx&lt;/code> or &lt;code>*.pdf&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Search options&lt;/strong> - this only allows you to search the files of the top directory that is set in the &lt;strong>Root folder path&lt;/strong> or all other files of other directories within.
+&lt;ul>
+&lt;li>For example selecting if &lt;strong>Top Directory Only&lt;/strong> is selected, you will be able to see only the files that are in &lt;strong>Root folder path&lt;/strong> while ignoring folders, meaning that no subdirectories can be navigated.&lt;/li>
+&lt;li>If &lt;strong>All Directories&lt;/strong> is selected, you will be able to see files that are in &lt;strong>Root folder path&lt;/strong> and all files from within each folder, or subfolders.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is enabled and cannot be changed, the cloud connect is needed to &lt;strong>create a connection&lt;/strong> between the &lt;strong>local file system&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. This lightweight app will sit on the PC or server where the files reside. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> website. You must choose the correct &lt;strong>PC connection&lt;/strong> which &lt;strong>contains the folder&lt;/strong> specified in the &lt;strong>Root folder path&lt;/strong>, otherwise the connection will fail.&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -172,7 +178,8 @@
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Kianda Cloud Connect</title><link>https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/</guid><description>
-&lt;p>&lt;strong>Kianda Cloud Connect&lt;/strong> is a piece of software that &lt;strong>establishes a connection&lt;/strong> between your &lt;strong>local machine&lt;/strong> and your &lt;strong>Kianda subscription&lt;/strong>. It allows the data to &lt;strong>travel&lt;/strong> from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example &lt;strong>Deleting&lt;/strong> a file or &lt;strong>Creating&lt;/strong> one.&lt;/p>
+&lt;p>&lt;strong>Kianda Cloud Connect&lt;/strong> is a piece of software that &lt;strong>establishes a connection&lt;/strong> between your &lt;strong>local machine&lt;/strong> and your &lt;strong>Kianda subscription&lt;/strong>. This lightweight app will sit on your PC or server where files reside that you need to use in Kianda processes. It allows the data to &lt;strong>travel&lt;/strong> from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example &lt;strong>Deleting&lt;/strong> a file or &lt;strong>Creating&lt;/strong> one.&lt;/p>
+&lt;p>Kianda Cloud Connect authenticates with a user created in Kianda, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">User management&lt;/a> for more details on users and send information to and from Kianda using port 80. See details below on how to set up the connection.&lt;/p>
 &lt;h2 id="downloading-kianda-cloud-connect">Downloading Kianda Cloud Connect&lt;/h2>
 &lt;p>You can download &lt;strong>Kianda Cloud Connect&lt;/strong> software in any details page of data source that might use it, for example in a &lt;strong>File system&lt;/strong> data connector:&lt;/p>
 &lt;ol>
@@ -187,13 +194,18 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-system-download-KCCjpg.jpg" alt="File system detail page">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>CloudConnect.zip&lt;/strong> file should download onto your PC. Extract the files from the zip folder.&lt;/p>
+&lt;p>Clicking on Download Kianda Cloud Connect will automatically download a zipped folder. Extract the contents of the folder and open the &lt;strong>Kianda Cloud Connect&lt;/strong> Windows Installer Package. You will need administrative privileges on your device in order to install the application.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/cloud-connector-msi.jpg" alt="Cloud Connect package">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Run the &lt;strong>CloudConnect.msi&lt;/strong> file.&lt;/p>
+&lt;p>Click on the Windows Installer Package &lt;strong>CloudConnect.msi&lt;/strong> file.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the &lt;strong>Welcome to Kianda Cloud Connect Setup Wizard&lt;/strong>, click &lt;strong>Next &amp;gt;&lt;/strong>.&lt;/p>
+&lt;p>Security on the device may prevent you from installing the app. If the below window appears click on the &lt;strong>More Info&lt;/strong> link and then click &lt;strong>Run Anyway&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/windows-defender.jpg" alt="Windows Defender message">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Welcome to Kianda Cloud Connect Setup Wizard&lt;/strong>, follow the installation wizard to install the application. Click &lt;strong>Next &amp;gt;&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Select Installation Folder&lt;/strong> window, pick a folder where you want to install the software. Click &lt;strong>Next&amp;gt;&lt;/strong>.&lt;/p>
@@ -206,6 +218,9 @@
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Installation Complete&lt;/strong> window click on &lt;strong>Close&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once installed the application will be available on your desktop&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="connecting-your-pc-to-kianda-cloud-connect">Connecting your PC to Kianda Cloud Connect&lt;/h2>
