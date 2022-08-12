@@ -6,7 +6,7 @@ weight: 6
 
 ## Introduction
 
-The **Merge PDF** rule allows you to **combine** two or more `.pdf` files. It is also possible to **combine** image files to the PDF file, for example `.png` or `jpg`. 	
+The **Merge PDF** rule allows you to **combine** two or more `.pdf` files. It is also possible to **combine** image files to the PDF file, for example `.png` or `jpg`. 
 
 ### When to use 
 Use this rule when your process requires you to merge dynamically two or more PDF files. For example automatically merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.
@@ -16,6 +16,14 @@ You can add this rule:
 - [x] to a field
 - [x] to a form
 - [x] to a process (the rule will run on load)
+
+## Before you get started
+
+In advance of using the **Merge PDF** rule, in your process you need to have created at least one or more forms. The rule also requires at least 3 file fields, which are used to select files that you want to select and a file to store the merged PDF. To learn how to add a file go to [File upload control](/docs/platform/controls/input/file-upload/).
+
+- **File field** **(To be merged file #1)** - used to hold the first file that you want to merge.
+- **File field** **(To be merged file #2)** - used to hold the first file that you want to merge.
+- **File field** **(Merged PDF file)** - used to store the merged PDF version of the two files.
 
 ## How to get started
 
