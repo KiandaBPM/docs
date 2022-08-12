@@ -191,20 +191,65 @@
 &lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
 &lt;li>Click on OK.&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Merge PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</guid><description>
-&lt;p>This rule merges two or more PDF files into a single file. It is also possible to merge to or more image files.
-&lt;img src="https://docs.kianda.com/images/mergepdf.png" alt="Send email rule dialog box">&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Merge PDF&lt;/strong> rule allows you to &lt;strong>combine&lt;/strong> two or more &lt;code>.pdf&lt;/code> files. It is also possible to &lt;strong>combine&lt;/strong> image files to the PDF file, for example &lt;code>.png&lt;/code> or &lt;code>jpg&lt;/code>.&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
 &lt;p>Use this rule when your process requires you to merge dynamically two or more PDF files. For example automatically merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.&lt;/p>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>To merge two PDF files into a single file:&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
-&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to one of a desired name .&lt;/li>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
-&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
-&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Create a file anonymous link</title><link>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</guid><description>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Merge PDF&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Merge PDF&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/merge-pdf-edit-rule.jpg" alt="Edit rule - copy file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Files to be merged (PDF OR Images)&lt;/strong> - select a file field which contains a PDF file or an image. Note that in order to merge PDF and image files, your first file must be a &lt;code>.pdf&lt;/code> file followed by other image files.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>+Add more files&lt;/strong> - you can choose to merge multiple PDF or image files together by clicking on &lt;strong>Add more files&lt;/strong> button. You can also remove file fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">. Adding more file fields will allow you to attach more PDF or images files that you want to merged, see below image as an example:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/merge-pdf-mulitiple-files.jpg" alt="Multiple files to be merged">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Merged PDF file&lt;/strong> - select a file field from your process that you want to store your merged PDF file.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>When merging file with this rule, you need to place the &lt;code>.pdf&lt;/code> file first followed by the image files.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Create a file anonymous link</title><link>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Create a file anonymous link&lt;/strong> rule enables you to create a link to a file from your process. The link is &lt;strong>fully anonymous&lt;/strong> which means anybody can &lt;strong>access&lt;/strong> the file if they have the link. You can set an expiry time of the link (in hours), the count down will start from the time the link was created. It is possible to create anonymous link for multiple files as long as your file field supports it, see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
