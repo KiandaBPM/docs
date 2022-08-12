@@ -4,20 +4,58 @@ typora-root-url: ..\..\..\..\..\static
 weight: 6
 ---
 
-This rule merges two or more PDF files into a single file.  It is also possible to merge to or more image files.	
-![Send email rule dialog box](/images/mergepdf.png)
+## Introduction
+
+The **Merge PDF** rule allows you to **combine** two or more `.pdf` files. It is also possible to **combine** image files to the PDF file, for example `.png` or `jpg`. 	
 
 ### When to use 
 Use this rule when your process requires you to merge dynamically two or more PDF files. For example automatically merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.
 
-### How to use
+You can add this rule:
 
-To merge two PDF files into a single file:
+- [x] to a field
+- [x] to a form
+- [x] to a process (the rule will run on load)
 
-1. Before adding the rule, add two file fields: Click on Controls > Input > File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to one of a desired name . 
-2. Select the Submit button.
-3. Add a rule > Data > Set form field.
-4. Under Form field to set, select the new field called Status.
-5. Under Value or expression, enter the status e.g. Complete.
-6. Click on OK.
+## How to get started
 
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
+
+2. Click on **Add a rule** > **File management** > **Merge PDF**.
+
+3. In the **Edit rule - Merge PDF** dialog box, give the rule a title in the **Title** field.
+
+   ![Edit rule - copy file](/images/merge-pdf-edit-rule.jpg)
+
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+
+5. Under the **Action** section fill out the following:
+
+   - **Files to be merged (PDF OR Images)** - select a file field which contains a PDF file or an image. Note that in order to merge PDF and image files, your first file must be a `.pdf` file followed by other image files. 
+
+   - **+Add more files** - you can choose to merge multiple PDF or image files together by clicking on **Add more files** button. You can also remove file fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png). Adding more file fields will allow you to attach more PDF or images files that you want to merged, see below image as an example:
+
+     ![Multiple files to be merged](/images/merge-pdf-mulitiple-files.jpg)
+
+   - **Merged PDF file** - select a file field from your process that you want to store your merged PDF file.
+
+6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
+
+### Editing, deleting or duplicating rules
+
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
+
+1. To **disable** a rule click the slider across beside the rule name.
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name.
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+
+### User tip ![Target icon](/images/05.png)
+
+- When merging file with this rule, you need to place the `.pdf` file first followed by the image files.
+
+### What’s next ![Idea icon](/images/18.png)
+
+To find out more about other File management rules go to [File management rules](/docs/platform/rules/files/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).
