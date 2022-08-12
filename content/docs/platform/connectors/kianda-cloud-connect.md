@@ -4,7 +4,9 @@ weight: 9
 typora-root-url: ..\..\..\..\static
 ---
 
-**Kianda Cloud Connect** is a piece of software that **establishes a connection** between your **local machine** and your **Kianda subscription**. It allows the data to **travel** from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example **Deleting** a file or **Creating** one.
+**Kianda Cloud Connect** is a piece of software that **establishes a connection** between your **local machine** and your **Kianda subscription**. This lightweight app will sit on your PC or server where files reside that you need to use in Kianda processes. It allows the data to **travel** from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example **Deleting** a file or **Creating** one.
+
+Kianda Cloud Connect authenticates with a user created in Kianda, see [User management](/docs/platform/administration/users/) for more details on users and send information to and from Kianda using port 80. See details below on how to set up the connection.
 
 ## Downloading Kianda Cloud Connect
 
@@ -18,19 +20,27 @@ You can download **Kianda Cloud Connect** software in any details page of data s
 
    ![File system detail page](/images/file-system-download-KCCjpg.jpg)
 
-4. **CloudConnect.zip** file should download onto your PC. Extract the files from the zip folder.
+4. Clicking on Download Kianda Cloud Connect will automatically download a zipped folder. Extract the contents of the folder and open the **Kianda Cloud Connect** Windows Installer Package. You will need administrative privileges on your device in order to install the application.
 
-5. Run the **CloudConnect.msi** file.
+   ![Cloud Connect package](/images/cloud-connector-msi.jpg)
 
-6. In the **Welcome to Kianda Cloud Connect Setup Wizard**, click **Next >**.
+5. Click on the Windows Installer Package **CloudConnect.msi** file.
 
-7. In the **Select Installation Folder** window, pick a folder where you want to install the software. Click **Next>**.
+6. Security on the device may prevent you from installing the app. If the below window appears click on the **More Info** link and then click **Run Anyway**.
 
-8. In the **Confirm Installation** window, click **Next>**.
+   ![Windows Defender message](/images/windows-defender.jpg)
 
-9. Click on **Yes** in the administrator dialog box to give Kianda Cloud Connect access to your PC.
+7. In the **Welcome to Kianda Cloud Connect Setup Wizard**, follow the installation wizard to install the application. Click **Next >**.
 
-10. In the **Installation Complete** window click on **Close**.
+8. In the **Select Installation Folder** window, pick a folder where you want to install the software. Click **Next>**.
+
+9. In the **Confirm Installation** window, click **Next>**.
+
+10. Click on **Yes** in the administrator dialog box to give Kianda Cloud Connect access to your PC.
+
+11. In the **Installation Complete** window click on **Close**.
+
+12. Once installed the application will be available on your desktop
 
 ## Connecting your PC to Kianda Cloud Connect
 

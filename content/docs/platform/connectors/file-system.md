@@ -4,7 +4,9 @@ weight: 6
 typora-root-url: ..\..\..\..\static
 ---
 
-A File System data connector allows you to use your local file system as a data sources for your Kianda forms or dashboards. This means that as your processes are running they will use the information from the local file system or depending on the process, update or delete information at in the local file system location. Any Create, Read, Update and Delete (CRUD) operations performed in Kianda, will be reflected automatically and in real-time in your local system.
+A **File system** data connector allows you to use your local file system as a data source for your Kianda forms or dashboards. This means that as your processes are running they will use the information from the local file system or depending on the process, update or delete information at in the local file system location. Kianda has the ability to extract files, navigate subfolders and write new files into the directory. This includes local file and internet file systems.
+
+Using this type of datasource is useful when you want Kianda to have access to your directory, to extract and read files as well as writing files to the directory.
 
 
 
@@ -21,10 +23,12 @@ A File System data connector allows you to use your local file system as a data 
    Choose from the edit options:
 
    - **Display name** - type in the name for your file sytem connector. This is used to distinguish between different data connectors on your platform.
-   - **Root folder path** - type in manually the file path to the folder of your connector. The connector will be able to access data only in this folder and folders within.
-   - **File search pattern** - select the extension you want the connector to display. For example typing in `*.txt` will only output the .txt files within the folder path, it will ignore all other path endings and will not display them. To set pattern you need to type in `*` followed by `.extenstion` for example `*.txt` , `*.docx` or `*.pdf`
-   - **Search options** - it only allows you to search the files of the top directory that is set in the **Root folder path** or all other files of other directories within. For example selecting if **Top Directory Only** is selected, you will be able to see only the files that are in **Root folder path** while ignoring folders. If the **All Directories** is selected, you will be able to see files that are in **Root folder path** and all files from within each folder.
-   - **Use Kianda Cloud Connect** - by default this option is enabled and cannot be changed, the cloud connect is needed to **create a connection** between the **local file system** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
+   - **Root folder path** - type in manually the file path to the folder of your connector, for example C:\Documents\GreenITR. The connector will be able to access data only in this folder and folders within.
+   - **File search pattern** - this options can be used to limit the type of files for interaction, by using file extensions. For example typing in `*.txt` will only output the .txt files within the folder path, it will ignore all other path endings and will not display them. To set pattern you need to type in `*` followed by `.extenstion` for example `*.txt` , `*.docx` or `*.pdf`
+   - **Search options** - this only allows you to search the files of the top directory that is set in the **Root folder path** or all other files of other directories within. 
+     - For example selecting if **Top Directory Only** is selected, you will be able to see only the files that are in **Root folder path** while ignoring folders, meaning that no subdirectories can be navigated.
+     - If **All Directories** is selected, you will be able to see files that are in **Root folder path** and all files from within each folder, or subfolders.
+   - **Use Kianda Cloud Connect** - by default this option is enabled and cannot be changed, the cloud connect is needed to **create a connection** between the **local file system** and **Kianda** itself. This lightweight app will sit on the PC or server where the files reside. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
    - **Connectors** - displays all available connector PC's that have a **connection established** with your **Kianda** website. You must choose the correct **PC connection** which **contains the folder** specified in the **Root folder path**, otherwise the connection will fail.
 
 4. When you have added File system details, you are ready to test your connection and add security. At the bottom of the **File system details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
