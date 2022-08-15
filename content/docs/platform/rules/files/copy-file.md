@@ -21,7 +21,7 @@ You can add this rule:
 
 ## Before you get started
 
-In advance of using the **Copy file** rule, in your process you need to have created at least one or more forms. The rule also requires two file fields in order to select the original file and the other is used to store the copied version. To learn how to add a file go to [File upload control](/docs/platform/controls/input/file-upload/).
+In advance of using the **Copy file** rule, in your process you need to have created at least one or more forms. The rule also requires two file fields in order to select the original file and the other is used to store the copied version. To learn how to add a file go to [File upload control](/docs/platform/controls/input/file-upload/). 
 
 - **File field** **(Original version)** - used to hold the file that you want to copy.
 - **File field** **(Copied version)** - used to store the copied version of the original file.

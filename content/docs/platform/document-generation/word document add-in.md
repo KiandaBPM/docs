@@ -44,7 +44,7 @@ In the example above, a report will generate data pulled from a Kianda process i
 
 12. Save the template. You can then add in the template as a File field within the process in Kianda.
 
-To watch a short video demonstrating each of the steps above and showcases the use of a template to produce a report in a sample inspection process, go to [Kianda Add-in](https://academy.kianda.com/lesson/addin/).
+To watch a short video demonstrating each of the steps above and showcases the use of a template to produce a report in a sample inspection process, go to [Kianda Add-in](https://vimeo.com/696535028/ef00136ecd).
 
 ### What's next ![Idea icon](/images/18.png) 
 
