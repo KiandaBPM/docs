@@ -50,5 +50,7 @@ To watch a short video demonstrating each of the steps above and showcases the u
 
 ### What's next ![Idea icon](/images/18.png) 
 
-There is also a Kianda Add-in for Excel that is added in the same way as the Kianda Add-in for Word. Usage is very similar allowing you to connect an Excel spreadsheet to Kianda processes to create a template that can be used within processes. To learn more about adding Kianda to excel go to [Excel workbook add-in](/docs/platform/document-generation/excel-workbook-add-in/).
+With Kianda word add-in you can create templates which can be then used to generate dynamic word documents from the created template, to learn more how to generate a word document go to [Generate word document](/docs/platform/rules/files/generate-word-document/).
+
+There is a Kianda Add-in for Excel that is added in the same way as the Kianda Add-in for Word. Usage is very similar allowing you to connect an Excel spreadsheet to Kianda processes to create a template that can be used within processes. To learn more about adding Kianda to excel go to [Excel workbook add-in](/docs/platform/document-generation/excel-workbook-add-in/).
 
