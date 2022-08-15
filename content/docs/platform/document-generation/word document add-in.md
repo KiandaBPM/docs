@@ -4,6 +4,8 @@ weight: 1
 typora-root-url: ..\..\..\..\static
 ---
 
+## Introduction
+
 You can **generate reports** within Kianda processes and **populate** the reports with **data captured** within each process instance. This could be useful, for example, for inspection reports where a report template can be used to show the information the engineer input to a **Kianda form** during his inspection. Each time an inspection is performed, a report is generated based on a Word template and the report shows the relevant information that was captured during that particular inspection.
 
 *Microsoft Word template with Kianda form fields*
