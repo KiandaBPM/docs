@@ -3,10 +3,10 @@
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Add time to date</title><link>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Add time to date&lt;/strong> rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. Below is the add time to date rule edit screen.&lt;/p>
+&lt;p>The &lt;strong>Add time to date&lt;/strong> rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. An example of this rule would be entering a numeric value of &lt;strong>1&lt;/strong> into the &lt;strong>Time to add or a field&lt;/strong>, selecting &lt;strong>Days&lt;/strong> from the &lt;strong>Time unit&lt;/strong> drop-down list, and selecting &lt;strong>Today()&lt;/strong> from the &lt;strong>To date&lt;/strong> radio box options.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-screen.jpg" alt="Date rules add time to date screen">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>The &lt;strong>Add time to date&lt;/strong> rule should be used when a user wishes to add time to a date, i.e. for a reminder email to be sent after 24 hours or another chosen interval.&lt;/p>
+&lt;p>The Add time to date rule should be used when a user wishes to add time to a date. For example, sending a reminder email after a set interval of time.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -18,32 +18,90 @@
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>The first step is to click on an existing field, form or process that you would like to be the executor of the rule.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Once highlighted, navigate to &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Dates&lt;/strong> &amp;gt; &lt;strong>Add time to date&lt;/strong>.&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Dates&lt;/strong> &amp;gt; &lt;strong>Add time to date&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-selected.jpg" alt="Date rules selected">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Then you must select the time to add to your date field under &lt;strong>Time to add or a field&lt;/strong>, which can either be a numerical value, or can be another field within your Kianda form. These will be the set intervals passed through to your chosen field, form or process.&lt;/p>
+&lt;p>In the &lt;strong>Edit rule - Add time to date&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You then need to select what unit the time is, whether it is a minute, hour, day, etc., using the &lt;strong>Time unit&lt;/strong> drop down list.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-screen-conditions.jpg" alt="Date rules edit conditions">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>​&lt;/p>
+&lt;ol start="5">
+&lt;li>
+&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by filling out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Time to add or a field&lt;/strong> - click on the field and select a numerical value, or another field in your Kianda form. This will be the interval quantity.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Then under the &lt;strong>To date&lt;/strong> field, you select when the date is to be added from i.e., a date field, or today.&lt;/p>
+&lt;p>&lt;strong>Time unit&lt;/strong> - choose an option from the drop-down list to serve as your interval unit:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Minutes&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Hours&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Days&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Weeks&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Months&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Years&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>To date&lt;/strong> - choose from the radio buttons:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Now() - adding time to date immediately&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Today() - adding time to date from midnight today&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Date field - adding time to date from the date specified in another field&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-select-time.jpg" alt="Date rules select time">&lt;/p>
 &lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>
-&lt;p>You must then select within the &lt;strong>Destination date field&lt;/strong>, the date field which this new date is to be stored within.&lt;/p>
+&lt;p>&lt;strong>Destination date field&lt;/strong> - choose the date field within your form which this new date is to be stored.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-destination.jpg" alt="Date rules destination date field">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under &lt;strong>Date calculation settings&lt;/strong>, you can also select whether the time added to your chosen date field is within business hours or if it includes weekends. This setting could be utilised to disallow notifications sent outside of working hours, and during unsociable hours. You can also define custom special dates and save them accordingly.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-calculations.jpg" alt="Date rules special dates">&lt;/p>
+&lt;p>&lt;strong>Date calculation settings&lt;/strong> - you can select whether the time added to your chosen date field:&lt;/p>
+&lt;ul>
+&lt;li>Includes weekends&lt;/li>
+&lt;li>Excludes weekends&lt;/li>
+&lt;li>Excludes weekends and special dates&lt;/li>
+&lt;li>Excludes special dates&lt;/li>
+&lt;/ul>
+&lt;p>This setting could be utilised to disallow notifications sent outside of working hours.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Finally, clicking on the &lt;strong>ok&lt;/strong> button will save the new rule you have just created and apply it to the chosen field.&lt;/p>
+&lt;p>&lt;strong>Special dates&lt;/strong> - you can also define custom special dates and save them accordingly. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the &lt;strong>Save special dates for reuse&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-special-date-btn.jpg" alt="Date rules save special date button">. To load previously saved dates, click on the &lt;strong>Load special dates&lt;/strong> button &lt;img src="https://docs.kianda.com/images/load-special-date-btn.jpg" alt="Date rules load special date button">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-calculations.jpg" alt="Date rules special dates">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Finally, clicking on the &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> button will save the new rule you have just created and apply it to the chosen field.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
@@ -52,8 +110,12 @@
 &lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
 &lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
 &lt;/ol>
-&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Adding rules to a process</title><link>https://docs.kianda.com/docs/how-to/adding-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/adding-rules/</guid><description>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;p>Multiple &lt;strong>Special dates&lt;/strong> can be loaded at once to allow you to select a number of specific dates to exclude from the rule.&lt;/p>
+&lt;p>The Add time to date rule is commonly used with the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/">Schedule a rule&lt;/a> rule to apply the specified time to a rule on a button, for example. This can be used like a clock to countdown to an event such as sending a reminder email.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Adding rules to a process</title><link>https://docs.kianda.com/docs/how-to/adding-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/adding-rules/</guid><description>
 &lt;p>This video introduces Kianda rules and demonstrates how to add a Send email Communications rule to a form.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/rules.mp4">
