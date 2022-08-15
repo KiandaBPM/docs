@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction
 
-The **Add time to date** rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. Below is the add time to date rule edit screen.
+The **Add time to date** rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. An example of this rule would be entering a numeric value of **1** into the **Time to add or a field**, selecting **Days** from the **Time unit** drop-down list, and selecting **Today()** from the **To date** radio box options.
 
 ![Date rules add time to date screen](/images/date-rules-add-time-to-date-screen.jpg)
 
@@ -16,7 +16,7 @@ The **Add time to date** rule allows you to add time to a date field in order to
 
 ## When to use
 
-The **Add time to date** rule should be used when a user wishes to add time to a date, i.e. for a reminder email to be sent after 24 hours or another chosen interval.
+The Add time to date rule should be used when a user wishes to add time to a date. For example, sending a reminder email after a set interval of time.
 
  
 
@@ -38,41 +38,108 @@ In advance of using this rule, you need to have **created one or more forms, com
 
 ## How to get started
 
-1. The first step is to click on an existing field, form or process that you would like to be the executor of the rule.
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
 
-2. Once highlighted, navigate to **Add a rule** > **Dates** > **Add time to date**.
+2. Click on **Add a rule** > **Dates** > **Add time to date**.
 
-   ![Date rules selected](/images/date-rules-selected.jpg)
+    ![Date rules selected](/images/date-rules-selected.jpg)
 
-3. Then you must select the time to add to your date field under **Time to add or a field**, which can either be a numerical value, or can be another field within your Kianda form. These will be the set intervals passed through to your chosen field, form or process. 
+    
 
-4. You then need to select what unit the time is, whether it is a minute, hour, day, etc., using the **Time unit** drop down list. 
+3. In the **Edit rule - Add time to date** dialog box, give the rule a title in the **Title** field.
 
-5. Then under the **To date** field, you select when the date is to be added from i.e., a date field, or today.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png). See [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-   ![Date rules select time](/images/date-rules-add-time-to-date-select-time.jpg) 
+   ![Date rules edit conditions](/images/date-rules-add-time-to-date-screen-conditions.jpg)
 
-6. You must then select within the **Destination date field**, the date field which this new date is to be stored within. 
+​			
 
-   ![Date rules destination date field](/images/date-rules-add-time-to-date-destination.jpg)
 
-7. Under **Date calculation settings**, you can also select whether the time added to your chosen date field is within business hours or if it includes weekends. This setting could be utilised to disallow notifications sent outside of working hours, and during unsociable hours. You can also define custom special dates and save them accordingly.
 
-   ![Date rules special dates](/images/date-rules-add-time-to-date-calculations.jpg)
+5. Under **Action** create one or more actions for the rule by filling out the following:
 
-8. Finally, clicking on the **ok** button will save the new rule you have just created and apply it to the chosen field.
+   * **Time to add or a field** - click on the field and select a numerical value, or another field in your Kianda form. This will be the interval quantity.
+
+     
+
+   * **Time unit** - choose an option from the drop-down list to serve as your interval unit:
+
+     * Minutes
+
+     * Hours
+
+     * Days
+
+     * Weeks
+
+     * Months
+
+     * Years
+
+       
+
+   * **To date** - choose from the radio buttons:
+
+     * Now() - adding time to date immediately
+
+     * Today() - adding time to date from midnight today
+
+     * Date field -  adding time to date from the date specified in another field
+
+       ![Date rules select time](/images/date-rules-add-time-to-date-select-time.jpg)
+
+     
+
+   * **Destination date field** - choose the date field within your form which this new date is to be stored. 
+
+     ![Date rules destination date field](/images/date-rules-add-time-to-date-destination.jpg)
 
    
 
-   
+   * **Date calculation settings** - you can select whether the time added to your chosen date field:
 
-   ### Editing, deleting or duplicating rules
+     * Includes weekends
+     * Excludes weekends
+     * Excludes weekends and special dates
+     * Excludes special dates 
 
-   When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
+     This setting could be utilised to disallow notifications sent outside of working hours.
 
-   1. To **disable** a rule click the slider across beside the rule name.
-   2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](https://docs.kianda.com/images/duplicate-button.jpg) beside the rule name.
-   3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](https://docs.kianda.com/images/bin.png).
-   4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+     
 
-   
+   * **Special dates** - you can also define custom special dates and save them accordingly. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the **Save special dates for reuse** button ![Date rules save special date button](/images/save-special-date-btn.jpg). To load previously saved dates, click on the **Load special dates** button ![Date rules load special date button](/images/load-special-date-btn.jpg). 
+
+     ![Date rules special dates](/images/date-rules-add-time-to-date-calculations.jpg)
+
+
+
+6. Finally, clicking on the **OK** ![OK button](/images/ok.png) button will save the new rule you have just created and apply it to the chosen field.
+
+
+
+
+
+### Editing, deleting or duplicating rules
+
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
+
+1. To **disable** a rule click the slider across beside the rule name.
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](https://docs.kianda.com/images/duplicate-button.jpg) beside the rule name.
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](https://docs.kianda.com/images/bin.png).
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+
+
+
+### User tip ![Target icon](/images/05.png) ###
+
+Multiple **Special dates** can be loaded at once to allow you to select a number of specific dates to exclude from the rule.
+
+The Add time to date rule is commonly used with the [Schedule a rule](/docs/platform/rules/workflow/schedule-a-rule/) rule to apply the specified time to a rule on a button, for example. This can be used like a clock to countdown to an event such as sending a reminder email.
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+To find out more about other date rules go to [Dates](/docs/platform/rules/dates/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).
