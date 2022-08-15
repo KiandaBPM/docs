@@ -45,7 +45,7 @@ A Word template that is used to generate the Word document also needs to be **pr
 
    - **Select a document destination** - select a file field that will store the generated word document.
 
-   - **Convert to PDF** - radio button list which indicated whether you want to convert the generated document into a PDF file or not.
+   - **Convert to PDF** - radio button list which indicates whether you want to convert the generated document into a PDF file or not.
 
 6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
