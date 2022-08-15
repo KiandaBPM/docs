@@ -174,9 +174,16 @@
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Select a document template&lt;/strong> - select a file field that stores the word template.&lt;/li>
-&lt;li>&lt;strong>Select a document destination&lt;/strong> - select a file field that will store the generated word document.&lt;/li>
-&lt;li>&lt;strong>Convert to PDF&lt;/strong> - radio button list which indicated whether you want to convert the generated document into a PDF file or not.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Select a document template&lt;/strong> - select a file field that stores the word template. Your template can pull all values from &lt;strong>Input&lt;/strong> fields in the &lt;strong>Controls&lt;/strong> section of Kianda. For example if a text box field contains &amp;ldquo;This is a test&amp;rdquo; text, the value pulled into the generated word document is &amp;ldquo;This is a test&amp;rdquo;, see image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/word-doc-fields.jpg" alt="word document example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Select a document destination&lt;/strong> - select a file field that will store the generated word document.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Convert to PDF&lt;/strong> - radio button list which indicated whether you want to convert the generated document into a PDF file or not.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
