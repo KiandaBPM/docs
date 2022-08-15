@@ -39,8 +39,12 @@ A Word template that is used to generate the Word document also needs to be **pr
 
 5. Under the **Action** section fill out the following:
 
-   - **Select a document template** - select a file field that stores the word template.
+   - **Select a document template** - select a file field that stores the word template. Your template can pull all values from **Input** fields in the **Controls** section of Kianda. For example if a text box field contains "This is a test" text, the value pulled into the generated word document is "This is a test", see image below:
+
+     ![word document example](/images/word-doc-fields.jpg)
+
    - **Select a document destination** - select a file field that will store the generated word document.
+
    - **Convert to PDF** - radio button list which indicated whether you want to convert the generated document into a PDF file or not.
 
 6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
