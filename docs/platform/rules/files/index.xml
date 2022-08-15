@@ -138,24 +138,67 @@
 &lt;/ol>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Generate word document</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</guid><description>
-&lt;p>This rule generates a word document from data stored in the process using a word DOCX template.&lt;br>
-&lt;img src="https://docs.kianda.com/images/generateworddocument.png" alt="Send email rule dialog box">&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Generate Word document</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This rule generates a Word document from data &lt;strong>stored in the process&lt;/strong> using a Word DOCX template. The Word &lt;strong>template&lt;/strong> needs to be &lt;strong>pre-created&lt;/strong> before using this rule and must be &lt;strong>attached to a file field&lt;/strong>, this way the rule will know which template you want to use when creating the document. The &lt;strong>Generate&lt;/strong> &lt;strong>Word document&lt;/strong> rule can also convert the Word document into a PDF right after generating the document.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>Use this rule when your process requires dynamic document generation with high fidelity. This rule will use a word template previously mapped with smart tags using the Kianda task pane to generate a document containing the form captured from the process or data source.&lt;/p>
-&lt;p>Associate this rule to any form component.&lt;/p>
-&lt;h2 id="how-to-use">How to use&lt;/h2>
-&lt;p>Note: Kianda task-pane is required for mapping the field values to the word document.&lt;/p>
-&lt;h6 id="how-to-use-1">How to use&lt;/h6>
-&lt;p>To generate a word document from data stored in a process:&lt;/p>
+&lt;p>Use this rule when your process requires &lt;strong>dynamic document generation&lt;/strong> with high fidelity. This rule will use a &lt;strong>Word template&lt;/strong> previously mapped with &lt;strong>smart tags&lt;/strong> using the Kianda task pane to generate a document containing the form captured from the process or data source.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Generate Word document&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires &lt;strong>two file fields&lt;/strong>, one for storing the Word template and the other for storing the generated Word document or PDF. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Template)&lt;/strong> - used as a container to store the Word template used to generate the Word document.&lt;/li>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Generated Word Document)&lt;/strong> - used as a container to store the generated Word document.&lt;/li>
+&lt;/ul>
+&lt;p>A Word template that is used to generate the Word document also needs to be &lt;strong>pre-created&lt;/strong> using the Kianda add-in for Word. You can make each generated Word document very dynamic by using the smart tags that Kianda add-in uses to retrieve information for your form fields and places the values into the word document when generating it. To learn more about how to install and use Kianda add-in, go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/">Word document add-in&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
-&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to .&lt;/li>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
-&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
-&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Generate excel workbook</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/</guid><description>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Generate Word document&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Generate Word document&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/word-doc-rule-edit.jpg" alt="Edit rule - copy file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Select a document template&lt;/strong> - select a file field that stores the word template.&lt;/li>
+&lt;li>&lt;strong>Select a document destination&lt;/strong> - select a file field that will store the generated word document.&lt;/li>
+&lt;li>&lt;strong>Convert to PDF&lt;/strong> - radio button list which indicated whether you want to convert the generated document into a PDF file or not.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>When using this rule, create a &lt;strong>utility panel&lt;/strong> and make it &lt;strong>invisible&lt;/strong> to other users. You can then &lt;strong>move&lt;/strong> the Word template file filed and the generated word document file field inside the utility panel. This way other users will not be able to see the &lt;strong>unnecessary&lt;/strong> file fields and will not be able to &lt;strong>tamper&lt;/strong> with them.&lt;/li>
+&lt;li>You can use the &lt;strong>Convert to PDF&lt;/strong> function of the rule to convert the generated word document into a PDF file &lt;strong>instead&lt;/strong> of using the &lt;strong>Convert to PDF rule&lt;/strong> which is also available in the &lt;strong>File management&lt;/strong> rules.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Generate excel workbook</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/</guid><description>
 &lt;p>This rule generates an Excel workbook from data stored in the process using a template.&lt;br>
 &lt;img src="https://docs.kianda.com/images/generateexcelworkbook.png" alt="Send email rule dialog box">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
