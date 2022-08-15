@@ -269,21 +269,67 @@
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Set existing file field</title><link>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</guid><description>
-&lt;p>This rule enables to construct the file field reference based on provided file URL path
-&lt;img src="https://docs.kianda.com/images/setexistingfile.png" alt="Send email rule dialog box">&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Set existing file</title><link>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/set-file-field/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Set existing file&lt;/strong> rule allows a user to &lt;strong>create&lt;/strong> a file and &lt;strong>assign&lt;/strong> it into a &lt;strong>file field&lt;/strong> based on a provided file &lt;strong>URL path&lt;/strong>. For example if you have acces to a file &lt;strong>stored&lt;/strong> in the &lt;strong>cloud&lt;/strong> and have the URL, you can use this URL to &lt;strong>download&lt;/strong> the file from the internet and place it in a file field with a name. The &lt;strong>name&lt;/strong> you give to the &lt;strong>downloaded&lt;/strong> file must &lt;strong>contain an extension&lt;/strong>, for example if the file stored in the cloud is a PDF file and you want the name of the file to be &amp;ldquo;Workbook&amp;rdquo;, then you need to set the name of the file to &lt;code>Workbook.pdf&lt;/code>. You must provide the &lt;strong>correct extension&lt;/strong> for the file otherwise the created file &lt;strong>not be downloadable.&lt;/strong>&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>Use this rule when your process requires you to bring an existing file dynamically into the form without having the user uploading such file. For example if proving a mechanism to allow the end user to search for file(s) you might use the results of this search as input of an existing file field based on displayname and file url.&lt;/p>
-&lt;p>Add this rule to any form component.&lt;/p>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;p>Use this rule when your process requires you to bring an existing file dynamically into the form without having the user uploading such file. For example if proving a mechanism to allow the end user to search for file(s) you might use the results of this search as input of an existing file field based on displayname and file URL.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Set existing file&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires &lt;strong>one file field&lt;/strong> in order to &lt;strong>store&lt;/strong> the file which is created from the given URL.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(required)&lt;/strong> - used to store the created file from the given URL. To learn more on File fields go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
-&lt;li>Before adding the rule, add two file fields: Click on Controls &amp;gt; Input &amp;gt; File and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to one of desired choice.&lt;/li>
-&lt;li>Select the Submit button.&lt;/li>
-&lt;li>Add a rule &amp;gt; Data &amp;gt; Set form field.&lt;/li>
-&lt;li>Under Form field to set, select the new field called Status.&lt;/li>
-&lt;li>Under Value or expression, enter the status e.g. Complete.&lt;/li>
-&lt;li>Click on OK.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Merge PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</guid><description>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Set existing file&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Set existing file&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/set-file-edit-rule.jpg" alt="Edit rule - set existing file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>f you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Set File&lt;/strong> - file field used as a container to store the created file using the given URL.&lt;/li>
+&lt;li>&lt;strong>FileName field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the name you want your created file to have.&lt;/li>
+&lt;li>&lt;strong>File URL field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the URL used to create the file.&lt;/li>
+&lt;/ul>
+&lt;p>Using a field for the name and a field for the URL will allow you to create a different file with a different name every time you use this rule, see the image below and note how the &lt;strong>File name&lt;/strong> field corrisponds to the created file in the &lt;strong>File&lt;/strong> field:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/set-file-result.jpg" alt="created file ussing fields">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>Create a &lt;strong>Text box field&lt;/strong> that can be used to change the URL everytime you want to create a file. This will make the rule dynamic and versitile.&lt;/li>
+&lt;li>Create another &lt;strong>Text box field&lt;/strong> that can be used to change the name of the file everytime you want to create it from a URL.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Merge PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Merge PDF&lt;/strong> rule allows you to &lt;strong>combine&lt;/strong> two or more &lt;code>.pdf&lt;/code> files. It is also possible to &lt;strong>combine&lt;/strong> image files to the PDF file, for example &lt;code>.png&lt;/code> or &lt;code>jpg&lt;/code>.&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
