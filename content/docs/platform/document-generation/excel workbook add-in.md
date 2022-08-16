@@ -26,7 +26,7 @@ You can **generate excel workbooks** within Kianda processes and **populate** th
 
    ![Field select in Kianda add-in](/images/excel-field-select.jpg)
 
-7. Click on ![](/images/insert-kianda-add-in.jpg) at the bottom of Kianda task pane to add the form field into the template. Note that when you select a **Table** into the template, only the **Title** columns appear. This is because the add-in will look for all rows with the specific column name and insert the values into the excel workbook. See below for an example:
+7. Click on ![insert button](/images/insert-kianda-add-in.jpg) at the bottom of Kianda task pane to add the form field into the template. Note that when you select a **Table** into the template, only the **Title** columns appear. This is because the add-in will look for all rows with the specific column name and insert the values into the excel workbook. See below for an example:
 
    ![Table example - excel template](/images/excel-table-example.jpg)
 

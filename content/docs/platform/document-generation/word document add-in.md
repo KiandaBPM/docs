@@ -16,39 +16,61 @@ In the example above, a report will generate data pulled from a Kianda process i
 
 ### Using the Kianda Add-in for Word
 
-1. Create a template outline in Microsoft Word.
-
-2. Click on the **Insert** tab > **Get Add-ins**
-
-   ![Get add-ins](/images/word-get-add-in.jpg)
-
-3. Search for **Kianda**.
-
-4. Click on **Add**, then **Continue** and click on the **Home** tab. The **Show Kianda Taskpane** should be added to your ribbon.
-
-5. On the right-hand side of the Home tab, click on the **Kianda Add-in**.
+1. On the right-hand side of the Home tab, click on the **Kianda Add-in**.
 
    ![Kianda button in word](/images/word-kianda-add-in-button.jpg)
 
-6. In the Kianda pane log in using your Kianda username and password, select your subscription and press **Continue**.
+2. In the Kianda pane log in using your Kianda username and password, select your subscription and press **Continue**.
 
-7. Click on the process link button ![Process link button](https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif) to get a dropdown list of Kianda processes that you have access to based on your role, for example Administrator or Designer.
+3. Click on the process link button ![Process link button](https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif) to get a dropdown list of Kianda processes that you have access to based on your role, for example Administrator or Designer.
 
-8. Select a relevant process and a relevant form.
+4. Select a relevant process and a relevant form that you want to create a template for.
 
-9. Position your cursor in the Word document at the point where you would like to add in form fields.
+5. Position your cursor in the Word document at the point where you would like to add in form fields.
 
-10. Select the Kianda form field you would like to add to the Word template. For example Company field in the Request form as shown below.
+6. Select the Kianda form field you would like to add to the Word template. For example **Company** field in the **Request** form as shown below.
 
-    ![Field select in Kianda add-in](/images/word-kianda-field-select.jpg)
+   ![Field select in Kianda add-in](/images/word-kianda-field-select.jpg)
 
-10. Click on **<-Insert** at the bottom of Kianda task pane to add the form field into the template
+7. Click on ![insert button](/images/insert-kianda-add-in.jpg) at the bottom of Kianda task pane to add the form field into the template
 
-11. Repeat steps 9 - 11 for as many form fields as needed and format the document as necessary.
+8. Repeat steps 9 - 11 for as many form fields as needed and format the document as necessary.
 
-12. Save the template. You can then add in the template as a File field within the process in Kianda.
+9. Save the template. You can then add in the template as a File field within the process in Kianda.
 
-To watch a short video demonstrating each of the steps above and showcases the use of a template to produce a report in a sample inspection process, go to [Kianda Add-in](https://vimeo.com/696535028/ef00136ecd).
+### List of field types accessible by Word add-in
+
+You can use different types of input controls when creating your template for an Word document, the images below represents the value pulled from the form into a Word document for each of the input controls that are available in Kianda:
+
+*Excel template used to represent all values from the above form.*
+
+![Excel template](/images/word-add-in-template.jpg)
+
+*Word document result for the example values from the above form.*
+
+![Excel workbook result from a process instance](/images/word-add-in-result.jpg)
+
+- **Text box control** - retrieves the value from the text box into the place that the smart tag was inserted.
+
+- **List control** - retrieves the value from the list field into the place that the smart tag was inserted.
+
+- **Number control** - retrieves the value from the number field into the place that the smart tag was inserted.
+
+- **Date control** - retrieves the date from the date field into the place that the smart tag was inserted.
+
+- **Table control** - retrieves the values for each row inside of the table. Note that when the smart tag is inserted, extra rows will appear with the same smart tags, as shown in the image below:
+
+  ![Word table smart tag](/images/word-add-in-table.jpg)
+
+  You need to delete all extra rows that appear and only leave one, as shown in the image below:
+
+  ![Word table smart tag](/images/word-add-in-table2.jpg)
+
+- **File control** - retrieves the **hyperlink** to the file that is stored in the file field. When you click on the file, it will open it in browser.
+
+- **User picker control** - retrieves the **name** of the user as a value.
+
+- **Toggle control** - retrieves a **No** value when the toggle is turned **off**, and a **Yes** value when the toggle is turned **on**.
 
 ### What's next ![Idea icon](/images/18.png) 
 
