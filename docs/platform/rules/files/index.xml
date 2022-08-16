@@ -335,9 +335,10 @@
 &lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Merge PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/merge-pdf/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Merge PDF&lt;/strong> rule allows you to &lt;strong>combine&lt;/strong> two or more &lt;code>.pdf&lt;/code> files. It is also possible to &lt;strong>combine&lt;/strong> image files to the PDF file, for example &lt;code>.png&lt;/code> or &lt;code>jpg&lt;/code>.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>Use this rule when your process requires you to merge dynamically two or more PDF files. For example automatically merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.&lt;/p>
+&lt;p>The &lt;strong>Merge PDF&lt;/strong> rule allows you to &lt;strong>combine&lt;/strong> two or more &lt;code>.pdf&lt;/code> files together. It is also possible to &lt;strong>combine&lt;/strong> image files to the PDF file, for example &lt;code>.png&lt;/code> or &lt;code>jpg&lt;/code>. This rule can be useful when creating one large PDF document from smaller files. The generated file name will be the same as the first file used to merge, see image below for an example:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/merge-pdf-name.jpg" alt="Generated PDF file name">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule when your process requires you to merge &lt;strong>dynamically&lt;/strong> two or more PDF files. For example &lt;strong>automatically&lt;/strong> merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -370,7 +371,8 @@
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Files to be merged (PDF OR Images)&lt;/strong> - select a file field which contains a PDF file or an image. Note that in order to merge PDF and image files, your first file must be a &lt;code>.pdf&lt;/code> file followed by other image files.&lt;/p>
+&lt;p>&lt;strong>Files to be merged (PDF OR Images)&lt;/strong> - select a file field which contains a PDF file or an image. Note that in order to merge PDF and image files, your first merging file must be a &lt;code>.pdf&lt;/code> file followed by other image files, see image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/merge-pdf-images.jpg" alt="PDF files merged with images">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>+Add more files&lt;/strong> - you can choose to merge multiple PDF or image files together by clicking on &lt;strong>Add more files&lt;/strong> button. You can also remove file fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">. Adding more file fields will allow you to attach more PDF or images files that you want to merged, see below image as an example:&lt;/p>
