@@ -91,7 +91,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/excel-field-select.jpg" alt="Field select in Kianda add-in">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>&amp;lt;-Insert&lt;/strong> at the bottom of Kianda task pane to add the form field into the template. Note that when you select a &lt;strong>Table&lt;/strong> into the template, only the &lt;strong>Title columns appear&lt;/strong>. This is because the add-in will look for all rows with the specific column name and insert the values into the excel workbook. See below for an example:&lt;/p>
+&lt;p>Click on &lt;strong>&amp;lt;-Insert&lt;/strong> at the bottom of Kianda task pane to add the form field into the template. Note that when you select a &lt;strong>Table&lt;/strong> into the template, only the &lt;strong>Title&lt;/strong> columns appear. This is because the add-in will look for all rows with the specific column name and insert the values into the excel workbook. See below for an example:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/excel-table-example.jpg" alt="Table example - excel template">&lt;/p>
 &lt;p>When you add in the above table into excel as a template &lt;strong>smart tag&lt;/strong>, it will look as follows:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/excel-table-template.jpg" alt="excel table smart tag">&lt;/p>
@@ -99,10 +99,10 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/excel-table-result.jpg" alt="excel table smart tag">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Repeat for as many form fields as needed and format the document as necessary.&lt;/p>
+&lt;p>Repeat steps 9 - 11 for as many form fields as needed and format the workbook as necessary.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Save the template. You can then add in the template as a File field within the process in Kianda.&lt;/p>
+&lt;p>Save the template. You can then add in the template as a &lt;strong>File&lt;/strong> field within the process in Kianda.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
