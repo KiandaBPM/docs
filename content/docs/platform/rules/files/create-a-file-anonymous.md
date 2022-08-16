@@ -6,7 +6,15 @@ weight: 7
 
 ## Introduction
 
-The **Create a file anonymous link** rule enables you to create a link to a file from your process. The link is **fully anonymous** which means anybody can **access** the file if they have the link. You can set an expiry time of the link (in hours), the count down will start from the time the link was created. It is possible to create anonymous link for multiple files as long as your file field supports it, see [File upload control](/docs/platform/controls/input/file-upload/).
+The **Create a file anonymous link** rule enables you to create a link to a file from your process. The link is **fully anonymous** which means anybody can **access** the file if they have the link. You can set an expiry time of the link (in hours), the count down will start from the time the link was created. It is possible to create anonymous link for multiple files as long as your file field supports it, see image below for an example:
+
+*Multiple files uploaded to a file field.*
+
+![Multiple files in a file field](/images/anonymous-file-multiple-files.jpg)
+
+*File field settings to allow multiple files to be uploaded.*
+
+![Multiple files in a file field](/images/anonymous-file-settings.jpg)
 
 ## When to use 
 Use this rule when your process or application requires sharing anonymously a file stored in one of the supported file connectors. For example when sharing a file link to a report stored behind an authenticated file system.
@@ -40,8 +48,12 @@ In advance of using the **Anonymous form link**, in your process you need to hav
 5. Under the **Action** section fill out the following:
 
    - **Select a file field to create anonymous link(s) for** - select the field that contain the file that you want to create the link for.
+
    - **Link duration in hours (Default is 6 hours)** - an optional field indicating the link expiry in hours.
-   - **Select a filed to store resulting anonymous link(s)** - field to store the generated link.
+
+   - **Select a filed to store resulting anonymous link(s)** - field to store the generated link. When there are multiple files uploaded to create the links for, the resulted links will be displayed between square brackets`[]` and separated by a `,` see below image:
+
+     ![Multiple links result](/images/anonymous-file-links.jpg)
 
 6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
@@ -57,7 +69,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 ### User tip ![Target icon](/images/05.png)
 
 - When sharing an anonymous link with someone, use the send email rule and attach the link in the body of the email. Make sure to generate the link before sending the email.
-- To make the rule versatile with setting the duration time, create a text box or a number field and select it in the **Link duration in hours** field.
+- To make the rule versatile with setting the duration time, create a text box or a number field and select it in the **Link duration in hours** field. This way you can set the expiry of the link every time you create one.
 
 ### What’s next ![Idea icon](/images/18.png)
 
