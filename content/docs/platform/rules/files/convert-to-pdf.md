@@ -4,7 +4,7 @@ typora-root-url: ..\..\..\..\..\static
 weight: 2
 ---
 
-The **Convert to PDF** rule allows you to convert a Word document (.doc or.docx) into a PDF (.pdf) file. This rule is very useful when sharing word documents using the **send email** rule, the **Convert to PDF** rule will convert a file into PDF which can be **attached** to an email. This will allow others to open the PDF file on any device.
+The **Convert to PDF** rule allows you to convert a Word document (.doc or .docx) into a PDF (.pdf) file. This rule is very useful when sharing word documents using the **send email** rule, the **Convert to PDF** rule will convert a file into PDF which can be **attached** to an email. This will allow others to open the PDF file on any device.
 
 ## When to use 
 
@@ -17,7 +17,7 @@ You can add this rule:
 
 ## Before you get started
 
-In advance of using the **Convert to PDF** rule, in your process you need to have created at least one or more forms. The rule also requires two file fields in order to select a **Word document** file and the other is used to store the converted PDF version. To learn how to add a file go to [File upload control](/docs/platform/controls/input/file-upload/).
+In advance of using the **Convert to PDF** rule, in your process you need to have created at least one or more forms. The rule also requires two file fields in order to select a **Word document** file and the other is used to store the **converted PDF version**. To learn how to add a file go to [File upload control](/docs/platform/controls/input/file-upload/).
 
 - **File field** **(Word document)** - used to hold the word document file that you want to convert.
 - **File field** **(Converted PDF file)** - used to store the converted PDF version of the original word document file.
@@ -44,7 +44,7 @@ In advance of using the **Convert to PDF** rule, in your process you need to hav
 
      ![Convert to pdf before](/images/convert-to-pdf-example-before.jpg)
 
-     Below is an image representing the result after converting the Word document file into a PDF, note the file extension in the Converted PDF file field:
+     Below is an image representing the result after converting the Word document file into a PDF, note the file extension in the **Converted PDF file** field:
 
      ![Edit rule - convert to PDF](/images/convert-to-pdf-example.jpg)
 
@@ -58,6 +58,10 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name.
 3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+
+### User tip ![Target icon](/images/05.png)
+
+- When converting files to a **PDF format**, you can set the **destination** of the **converted file field** to a location where you want to **store** the PDF. This will save you some time as you will not have to **download** the converted file because the **destination** that you choose in the file field will keep a separate copy.
 
 ### What’s next ![Idea icon](/images/18.png)
 
