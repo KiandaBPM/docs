@@ -26,11 +26,11 @@ In the example above, a report will generate data pulled from a Kianda process i
 
 4. Click on **Add**, then **Continue** and click on the **Home** tab. The **Show Kianda Taskpane** should be added to your ribbon.
 
-5. Click on the **Kianda Add-in**.
+5. On the right-hand side of the Home tab, click on the **Kianda Add-in**.
 
    ![Kianda button in word](/images/word-kianda-add-in-button.jpg)
 
-6. Log in using your username and password, select your subscription.
+6. In the Kianda pane log in using your Kianda username and password, select your subscription and press **Continue**.
 
 7. Click on the process link button ![Process link button](https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif) to get a dropdown list of Kianda processes that you have access to based on your role, for example Administrator or Designer.
 
@@ -41,6 +41,8 @@ In the example above, a report will generate data pulled from a Kianda process i
 10. Select the Kianda form field you would like to add to the Word template. For example Company field in the Request form as shown below.
 
     ![Field select in Kianda add-in](/images/word-kianda-field-select.jpg)
+
+10. Click on **<-Insert** at the bottom of Kianda task pane to add the form field into the template
 
 11. Repeat for as many form fields as needed and format the document as necessary.
 
