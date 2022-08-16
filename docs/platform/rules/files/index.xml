@@ -79,7 +79,7 @@
 &lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
 &lt;p>​&lt;/p></description></item><item><title>Docs: Convert to PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/convert-to-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/convert-to-pdf/</guid><description>
-&lt;p>The &lt;strong>Convert to PDF&lt;/strong> rule allows you to convert a Word document (.doc or.docx) into a PDF (.pdf) file. This rule is very useful when sharing word documents using the &lt;strong>send email&lt;/strong> rule, the &lt;strong>Convert to PDF&lt;/strong> rule will convert a file into PDF which can be &lt;strong>attached&lt;/strong> to an email. This will allow others to open the PDF file on any device.&lt;/p>
+&lt;p>The &lt;strong>Convert to PDF&lt;/strong> rule allows you to convert a Word document (.doc or .docx) into a PDF (.pdf) file. This rule is very useful when sharing word documents using the &lt;strong>send email&lt;/strong> rule, the &lt;strong>Convert to PDF&lt;/strong> rule will convert a file into PDF which can be &lt;strong>attached&lt;/strong> to an email. This will allow others to open the PDF file on any device.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can use this rule when you need to convert a .doc or .docx file into a PDF. PDF files are very useful as they can be opened on any device.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
@@ -89,7 +89,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using the &lt;strong>Convert to PDF&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires two file fields in order to select a &lt;strong>Word document&lt;/strong> file and the other is used to store the converted PDF version. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;p>In advance of using the &lt;strong>Convert to PDF&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires two file fields in order to select a &lt;strong>Word document&lt;/strong> file and the other is used to store the &lt;strong>converted PDF version&lt;/strong>. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Word document)&lt;/strong> - used to hold the word document file that you want to convert.&lt;/li>
 &lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Converted PDF file)&lt;/strong> - used to store the converted PDF version of the original word document file.&lt;/li>
@@ -119,7 +119,7 @@
 &lt;p>&lt;strong>Converted PDF File&lt;/strong> - used to store the converted PDF version of the original word document file.&lt;/p>
 &lt;p>See below for an example of a word document before and after conversion, note the file extension in the &lt;strong>Word file&lt;/strong> field before converting into a PDF:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/convert-to-pdf-example-before.jpg" alt="Convert to pdf before">&lt;/p>
-&lt;p>Below is an image representing the result after converting the Word document file into a PDF, note the file extension in the Converted PDF file field:&lt;/p>
+&lt;p>Below is an image representing the result after converting the Word document file into a PDF, note the file extension in the &lt;strong>Converted PDF file&lt;/strong> field:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/convert-to-pdf-example.jpg" alt="Edit rule - convert to PDF">&lt;/p>
 &lt;/li>
 &lt;/ul>
@@ -136,6 +136,10 @@
 &lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
 &lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
 &lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>When converting files to a &lt;strong>PDF format&lt;/strong>, you can set the &lt;strong>destination&lt;/strong> of the &lt;strong>converted file field&lt;/strong> to a location where you want to &lt;strong>store&lt;/strong> the PDF. This will save you some time as you will not have to &lt;strong>download&lt;/strong> the converted file because the &lt;strong>destination&lt;/strong> that you choose in the file field will keep a separate copy.&lt;/li>
+&lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Generate Word document</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-word-document/</guid><description>
