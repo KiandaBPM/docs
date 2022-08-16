@@ -20,11 +20,11 @@
 &lt;p>Click on &lt;strong>Add&lt;/strong>, then &lt;strong>Continue&lt;/strong> and click on the &lt;strong>Home&lt;/strong> tab. The &lt;strong>Show Kianda Taskpane&lt;/strong> should be added to your ribbon.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Kianda Add-in&lt;/strong>.&lt;/p>
+&lt;p>On the right-hand side of the Home tab, click on the &lt;strong>Kianda Add-in&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/word-kianda-add-in-button.jpg" alt="Kianda button in word">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Log in using your username and password, select your subscription.&lt;/p>
+&lt;p>In the Kianda pane log in using your Kianda username and password, select your subscription and press &lt;strong>Continue&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the process link button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif" alt="Process link button"> to get a dropdown list of Kianda processes that you have access to based on your role, for example Administrator or Designer.&lt;/p>
@@ -40,6 +40,9 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/word-kianda-field-select.jpg" alt="Field select in Kianda add-in">&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>Click on &lt;strong>&amp;lt;-Insert&lt;/strong> at the bottom of Kianda task pane to add the form field into the template&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>Repeat for as many form fields as needed and format the document as necessary.&lt;/p>
 &lt;/li>
 &lt;li>
@@ -50,6 +53,58 @@
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>With Kianda word add-in you can create templates which can be then used to generate dynamic word documents from the created template, to learn more how to generate a word document go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/generate-word-document/">Generate word document&lt;/a>.&lt;/p>
 &lt;p>There is a Kianda Add-in for Excel that is added in the same way as the Kianda Add-in for Word. Usage is very similar allowing you to connect an Excel spreadsheet to Kianda processes to create a template that can be used within processes. To learn more about adding Kianda to excel go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/">Excel workbook add-in&lt;/a>.&lt;/p></description></item><item><title>Docs: Excel workbook add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item></channel></rss>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>You can &lt;strong>generate excel workbooks&lt;/strong> within Kianda processes and &lt;strong>populate&lt;/strong> the workbooks with &lt;strong>data captured&lt;/strong> within each process instance. This could be useful, for example, when working with a lot of table data within Kianda. The add-in will &lt;strong>automatically&lt;/strong> populate excel cells with the data from a table within your process. Each time value changes inside of a table, those values will be reflected in the Excel workbook every time you generate a new workbook.&lt;/p>
+&lt;h3 id="using-the-kianda-add-in-for-excel">Using the Kianda Add-in for Excel&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Create a template outline in Microsoft Excel.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Insert&lt;/strong> tab &amp;gt; &lt;strong>Get Add-ins&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/excel-get-add-ins.jpg" alt="Get add-ins">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Search for &lt;strong>Kianda&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add&lt;/strong>, then &lt;strong>Continue&lt;/strong> and click on the &lt;strong>Home&lt;/strong> tab. The &lt;strong>Show Kianda Taskpane&lt;/strong> should be added to your ribbon.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On the right-hand side of the Home tab, click on the &lt;strong>Kianda Add-in&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/excel-show-pane.jpg" alt="Kianda button in word">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the Kianda pane, log in using your Kianda username and password, select your subscription and press &lt;strong>Continue&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the process link button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif" alt="Process link button"> to get a dropdown list of Kianda processes that you have access to based on your role, for example Administrator or Designer.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select a relevant process and a relevant form that you want to create a template for.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select a &lt;strong>cell&lt;/strong> in the Excel workbook that you want to use to &lt;strong>store&lt;/strong> the data from your process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select the Kianda form field you would like to add to the Excel template. For example &lt;strong>Population table&lt;/strong> field in the &lt;strong>Generate Excel&lt;/strong> form as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/excel-field-select.jpg" alt="Field select in Kianda add-in">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>&amp;lt;-Insert&lt;/strong> at the bottom of Kianda task pane to add the form field into the template. Note that when you select a &lt;strong>Table&lt;/strong> into the template, only the &lt;strong>Title columns appear&lt;/strong>. This is because the add-in will look for all rows with the specific column name and insert the values into the excel workbook. See below for an example:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/excel-table-example.jpg" alt="Table example - excel template">&lt;/p>
+&lt;p>When you add in the above table into excel as a template &lt;strong>smart tag&lt;/strong>, it will look as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/excel-table-template.jpg" alt="excel table smart tag">&lt;/p>
+&lt;p>The resulting excel workbook of the above table and template is shown below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/excel-table-result.jpg" alt="excel table smart tag">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Repeat for as many form fields as needed and format the document as necessary.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Save the template. You can then add in the template as a File field within the process in Kianda.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>With Kianda Excel add-in you can create templates which can be then used to generate dynamic Excel workbooks, to learn more on how to generate a Excel workbooks go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/">Generate excel workbooks&lt;/a>.&lt;/p>
+&lt;p>There is a Kianda Add-in for Word that is added in the same way as the Kianda Add-in for Excel. Usage is very similar allowing you to connect a Word document to Kianda processes to create a templates that can pull data from specific process instances. To learn more about adding Kianda to excel go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/">Word document add-in&lt;/a>.&lt;/p></description></item></channel></rss>
