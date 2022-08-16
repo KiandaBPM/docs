@@ -401,7 +401,11 @@
 &lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Create a file anonymous link</title><link>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/create-a-file-anonymous/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Create a file anonymous link&lt;/strong> rule enables you to create a link to a file from your process. The link is &lt;strong>fully anonymous&lt;/strong> which means anybody can &lt;strong>access&lt;/strong> the file if they have the link. You can set an expiry time of the link (in hours), the count down will start from the time the link was created. It is possible to create anonymous link for multiple files as long as your file field supports it, see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;p>The &lt;strong>Create a file anonymous link&lt;/strong> rule enables you to create a link to a file from your process. The link is &lt;strong>fully anonymous&lt;/strong> which means anybody can &lt;strong>access&lt;/strong> the file if they have the link. You can set an expiry time of the link (in hours), the count down will start from the time the link was created. It is possible to create anonymous link for multiple files as long as your file field supports it, see image below for an example:&lt;/p>
+&lt;p>&lt;em>Multiple files uploaded to a file field.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-file-multiple-files.jpg" alt="Multiple files in a file field">&lt;/p>
+&lt;p>&lt;em>File field settings to allow multiple files to be uploaded.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-file-settings.jpg" alt="Multiple files in a file field">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Use this rule when your process or application requires sharing anonymously a file stored in one of the supported file connectors. For example when sharing a file link to a report stored behind an authenticated file system.&lt;/p>
 &lt;p>Add this rule to any form element.&lt;/p>
@@ -435,9 +439,16 @@
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Select a file field to create anonymous link(s) for&lt;/strong> - select the field that contain the file that you want to create the link for.&lt;/li>
-&lt;li>&lt;strong>Link duration in hours (Default is 6 hours)&lt;/strong> - an optional field indicating the link expiry in hours.&lt;/li>
-&lt;li>&lt;strong>Select a filed to store resulting anonymous link(s)&lt;/strong> - field to store the generated link.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Select a file field to create anonymous link(s) for&lt;/strong> - select the field that contain the file that you want to create the link for.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Link duration in hours (Default is 6 hours)&lt;/strong> - an optional field indicating the link expiry in hours.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Select a filed to store resulting anonymous link(s)&lt;/strong> - field to store the generated link. When there are multiple files uploaded to create the links for, the resulted links will be displayed between square brackets&lt;code>[]&lt;/code> and separated by a &lt;code>,&lt;/code> see below image:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-file-links.jpg" alt="Multiple links result">&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -455,7 +466,7 @@
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;ul>
 &lt;li>When sharing an anonymous link with someone, use the send email rule and attach the link in the body of the email. Make sure to generate the link before sending the email.&lt;/li>
-&lt;li>To make the rule versatile with setting the duration time, create a text box or a number field and select it in the &lt;strong>Link duration in hours&lt;/strong> field.&lt;/li>
+&lt;li>To make the rule versatile with setting the duration time, create a text box or a number field and select it in the &lt;strong>Link duration in hours&lt;/strong> field. This way you can set the expiry of the link every time you create one.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
