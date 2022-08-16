@@ -6,10 +6,12 @@ weight: 6
 
 ## Introduction
 
-The **Merge PDF** rule allows you to **combine** two or more `.pdf` files. It is also possible to **combine** image files to the PDF file, for example `.png` or `jpg`. 
+The **Merge PDF** rule allows you to **combine** two or more `.pdf` files together. It is also possible to **combine** image files to the PDF file, for example `.png` or `jpg`. This rule can be useful when creating one large PDF document from smaller files. The generated file name will be the same as the first file used to merge, see image below for an example:
 
-### When to use 
-Use this rule when your process requires you to merge dynamically two or more PDF files. For example automatically merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.
+![Generated PDF file name](/images/merge-pdf-name.jpg)
+
+## When to use 
+Use this rule when your process requires you to merge **dynamically** two or more PDF files. For example **automatically** merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.
 
 You can add this rule:
 
@@ -39,7 +41,9 @@ In advance of using the **Merge PDF** rule, in your process you need to have cre
 
 5. Under the **Action** section fill out the following:
 
-   - **Files to be merged (PDF OR Images)** - select a file field which contains a PDF file or an image. Note that in order to merge PDF and image files, your first file must be a `.pdf` file followed by other image files. 
+   - **Files to be merged (PDF OR Images)** - select a file field which contains a PDF file or an image. Note that in order to merge PDF and image files, your first merging file must be a `.pdf` file followed by other image files, see image below:
+
+     ![PDF files merged with images](/images/merge-pdf-images.jpg)
 
    - **+Add more files** - you can choose to merge multiple PDF or image files together by clicking on **Add more files** button. You can also remove file fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png). Adding more file fields will allow you to attach more PDF or images files that you want to merged, see below image as an example:
 
