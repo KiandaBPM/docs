@@ -6,7 +6,7 @@ weight: 3
 
 ## Introduction
 
-This rule generates a Word document from data **stored in the process** using a Word DOCX template. The Word **template** needs to be **pre-created** before using this rule and must be **attached to a file field**, this way the rule will know which template you want to use when creating the document. The **Generate** **Word document** rule can also convert the Word document into a PDF right after generating the document. 
+This rule generates a Word document from data **stored in the process** using a Word `.docx` template. The Word **template** needs to be **pre-created** before using this rule and must be **attached to a file field**, this way the rule will know which template you want to use when creating the document. The **Generate** **Word document** rule can also convert the Word document into a PDF right after generating the document. 
 
 ## When to use 
 Use this rule when your process requires **dynamic document generation** with high fidelity. This rule will use a **Word template** previously mapped with **smart tags** using the Kianda task pane to generate a document containing the form captured from the process or data source.
@@ -24,7 +24,7 @@ In advance of using the **Generate Word document** rule, in your process you nee
 - **File field** **(Template)** - used as a container to store the Word template used to generate the Word document.
 - **File field** **(Generated Word Document)** - used as a container to store the generated Word document.
 
-A Word template that is used to generate the Word document also needs to be **pre-created** using the Kianda add-in for Word. You can make each generated Word document very dynamic by using the smart tags that Kianda add-in uses to retrieve information for your form fields and places the values into the word document when generating it. To learn more about how to install and use Kianda add-in, go to [Word document add-in](/docs/platform/document-generation/word-document-add-in/).
+A Word template that is used to generate the Word document also needs to be **pre-created** using the **Kianda add-in for Word**. You can make each generated Word document very **dynamic** by using the **smart tags** that Kianda add-in uses to **retrieve** information for your form fields and places the values into the word document when generating it. To learn more about how to install and use Kianda add-in, go to [Word document add-in](/docs/platform/document-generation/word-document-add-in/).
 
 ## How to get started
 1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
