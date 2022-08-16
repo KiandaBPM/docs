@@ -21,10 +21,10 @@ You can add this rule:
 
 ## Before you get started
 
-In advance of using the **Merge PDF** rule, in your process you need to have created at least one or more forms. The rule also requires at least 3 file fields, which are used to select files that you want to select and a file to store the merged PDF. To learn how to add a file go to [File upload control](/docs/platform/controls/input/file-upload/).
+In advance of using the **Merge PDF** rule, in your process you need to have created at least one or more forms. The rule also requires at least 3 file fields, which are used to select files that you want to merge and a file field to store the **merged PDF**. To learn how to add a file go to [File upload control](/docs/platform/controls/input/file-upload/).
 
 - **File field** **(To be merged file #1)** - used to hold the first file that you want to merge.
-- **File field** **(To be merged file #2)** - used to hold the first file that you want to merge.
+- **File field** **(To be merged file #2)** - used to hold the second file that you want to merge.
 - **File field** **(Merged PDF file)** - used to store the merged PDF version of the two files.
 
 ## How to get started
@@ -45,11 +45,11 @@ In advance of using the **Merge PDF** rule, in your process you need to have cre
 
      ![PDF files merged with images](/images/merge-pdf-images.jpg)
 
-   - **+Add more files** - you can choose to merge multiple PDF or image files together by clicking on **Add more files** button. You can also remove file fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png). Adding more file fields will allow you to attach more PDF or images files that you want to merged, see below image as an example:
+   - **+Add more files** - you can choose to merge multiple PDF or image files together by clicking on **Add more files** button. You can also remove file fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png). Adding more file fields will allow you to attach more PDF or images files that you want to merge, see below image as an example:
 
      ![Multiple files to be merged](/images/merge-pdf-mulitiple-files.jpg)
 
-   - **Merged PDF file** - select a file field from your process that you want to store your merged PDF file.
+   - **Merged PDF file** - select a file field from your process that you want use to store your merged PDF file.
 
 6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
