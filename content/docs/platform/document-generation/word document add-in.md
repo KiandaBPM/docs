@@ -44,7 +44,7 @@ In the example above, a report will generate data pulled from a Kianda process i
 
 10. Click on **<-Insert** at the bottom of Kianda task pane to add the form field into the template
 
-11. Repeat for as many form fields as needed and format the document as necessary.
+11. Repeat steps 9 - 11 for as many form fields as needed and format the document as necessary.
 
 12. Save the template. You can then add in the template as a File field within the process in Kianda.
 
