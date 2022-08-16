@@ -43,7 +43,7 @@
 &lt;p>Click on &lt;strong>&amp;lt;-Insert&lt;/strong> at the bottom of Kianda task pane to add the form field into the template&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Repeat for as many form fields as needed and format the document as necessary.&lt;/p>
+&lt;p>Repeat steps 9 - 11 for as many form fields as needed and format the document as necessary.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Save the template. You can then add in the template as a File field within the process in Kianda.&lt;/p>
@@ -58,19 +58,6 @@
 &lt;h3 id="using-the-kianda-add-in-for-excel">Using the Kianda Add-in for Excel&lt;/h3>
 &lt;ol>
 &lt;li>
-&lt;p>Create a template outline in Microsoft Excel.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>Insert&lt;/strong> tab &amp;gt; &lt;strong>Get Add-ins&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/excel-get-add-ins.jpg" alt="Get add-ins">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Search for &lt;strong>Kianda&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add&lt;/strong>, then &lt;strong>Continue&lt;/strong> and click on the &lt;strong>Home&lt;/strong> tab. The &lt;strong>Show Kianda Taskpane&lt;/strong> should be added to your ribbon.&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>On the right-hand side of the Home tab, click on the &lt;strong>Kianda Add-in&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/excel-show-pane.jpg" alt="Kianda button in word">&lt;/p>
 &lt;/li>
@@ -78,7 +65,7 @@
 &lt;p>In the Kianda pane, log in using your Kianda username and password, select your subscription and press &lt;strong>Continue&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the process link button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif" alt="Process link button"> to get a dropdown list of Kianda processes that you have access to based on your role, for example Administrator or Designer.&lt;/p>
+&lt;p>Click on the process link button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif" alt="Process link button"> to get a drop-down list of Kianda processes that you have access to based on your role, for example Administrator or Designer.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Select a relevant process and a relevant form that you want to create a template for.&lt;/p>
@@ -91,7 +78,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/excel-field-select.jpg" alt="Field select in Kianda add-in">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>&amp;lt;-Insert&lt;/strong> at the bottom of Kianda task pane to add the form field into the template. Note that when you select a &lt;strong>Table&lt;/strong> into the template, only the &lt;strong>Title&lt;/strong> columns appear. This is because the add-in will look for all rows with the specific column name and insert the values into the excel workbook. See below for an example:&lt;/p>
+&lt;p>Click on &lt;img src="https://docs.kianda.com/images/insert-kianda-add-in.jpg" alt=""> at the bottom of Kianda task pane to add the form field into the template. Note that when you select a &lt;strong>Table&lt;/strong> into the template, only the &lt;strong>Title&lt;/strong> columns appear. This is because the add-in will look for all rows with the specific column name and insert the values into the excel workbook. See below for an example:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/excel-table-example.jpg" alt="Table example - excel template">&lt;/p>
 &lt;p>When you add in the above table into excel as a template &lt;strong>smart tag&lt;/strong>, it will look as follows:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/excel-table-template.jpg" alt="excel table smart tag">&lt;/p>
@@ -105,6 +92,24 @@
 &lt;p>Save the template. You can then add in the template as a &lt;strong>File&lt;/strong> field within the process in Kianda.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;h3 id="list-of-field-types-accessible-by-excel-add-in">List of field types accessible by Excel add-in&lt;/h3>
+&lt;p>You can use different types of input controls when creating your template for an Excel workbook, the images below represents the value pulled from the form into an Excel workbook for each of the input controls that are available in Kianda:&lt;/p>
+&lt;p>&lt;em>Example form with all input controls in Kianda.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/excel-add-in-inputs.jpg" alt="Example form representing all input controls of Kianda">&lt;/p>
+&lt;p>&lt;em>Excel template used to represent all values from the above form.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/excel-add-in-template.jpg" alt="Excel template">&lt;/p>
+&lt;p>&lt;em>Excel workbook result for the example values from the above form.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/excel-add-in-result.jpg" alt="Excel workbook result from a process instance">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Text box control&lt;/strong> - retrieves the value from the text box into the cell that the smart tag was inserted.&lt;/li>
+&lt;li>&lt;strong>List control&lt;/strong> - retrieves the value from the list field into the cell that the smart tag was inserted.&lt;/li>
+&lt;li>&lt;strong>Number control&lt;/strong> - retrieves the value from the number field into the cell that the smart tag was inserted.&lt;/li>
+&lt;li>&lt;strong>Date control&lt;/strong> - retrieves the value from the date field into the cell that the smart tag was inserted.&lt;/li>
+&lt;li>&lt;strong>Table control&lt;/strong> - retrieves the values for each row inside of the table. Note that when the smart tag is inserted, only the &lt;strong>column&lt;/strong> name is presented.&lt;/li>
+&lt;li>&lt;strong>File control&lt;/strong> - retrieves the &lt;strong>name&lt;/strong> of the file that is stored in the file field, &lt;strong>not the actual file&lt;/strong> therefore you &lt;strong>cannot&lt;/strong> view any files that are retrieved from file fields.&lt;/li>
+&lt;li>&lt;strong>User picker control&lt;/strong> - retrieves the &lt;strong>name&lt;/strong> of the user as a value.&lt;/li>
+&lt;li>&lt;strong>Toggle control&lt;/strong> - retrieves a &lt;strong>No&lt;/strong> value when the toggle is turned &lt;strong>off&lt;/strong>, and a &lt;strong>Yes&lt;/strong> value when the toggle is turned &lt;strong>on&lt;/strong>.&lt;/li>
+&lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>With Kianda Excel add-in you can create templates which can be then used to generate dynamic Excel workbooks, to learn more on how to generate a Excel workbooks go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/">Generate excel workbooks&lt;/a>.&lt;/p>
 &lt;p>There is a Kianda Add-in for Word that is added in the same way as the Kianda Add-in for Excel. Usage is very similar allowing you to connect a Word document to Kianda processes to create a templates that can pull data from specific process instances. To learn more about adding Kianda to excel go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/">Word document add-in&lt;/a>.&lt;/p></description></item></channel></rss>
