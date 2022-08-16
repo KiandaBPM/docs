@@ -346,10 +346,10 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using the &lt;strong>Merge PDF&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires at least 3 file fields, which are used to select files that you want to select and a file to store the merged PDF. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;p>In advance of using the &lt;strong>Merge PDF&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires at least 3 file fields, which are used to select files that you want to merge and a file field to store the &lt;strong>merged PDF&lt;/strong>. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(To be merged file #1)&lt;/strong> - used to hold the first file that you want to merge.&lt;/li>
-&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(To be merged file #2)&lt;/strong> - used to hold the first file that you want to merge.&lt;/li>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(To be merged file #2)&lt;/strong> - used to hold the second file that you want to merge.&lt;/li>
 &lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Merged PDF file)&lt;/strong> - used to store the merged PDF version of the two files.&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -375,11 +375,11 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/merge-pdf-images.jpg" alt="PDF files merged with images">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>+Add more files&lt;/strong> - you can choose to merge multiple PDF or image files together by clicking on &lt;strong>Add more files&lt;/strong> button. You can also remove file fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">. Adding more file fields will allow you to attach more PDF or images files that you want to merged, see below image as an example:&lt;/p>
+&lt;p>&lt;strong>+Add more files&lt;/strong> - you can choose to merge multiple PDF or image files together by clicking on &lt;strong>Add more files&lt;/strong> button. You can also remove file fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">. Adding more file fields will allow you to attach more PDF or images files that you want to merge, see below image as an example:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/merge-pdf-mulitiple-files.jpg" alt="Multiple files to be merged">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Merged PDF file&lt;/strong> - select a file field from your process that you want to store your merged PDF file.&lt;/p>
+&lt;p>&lt;strong>Merged PDF file&lt;/strong> - select a file field from your process that you want use to store your merged PDF file.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
