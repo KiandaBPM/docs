@@ -6,7 +6,7 @@ weight: 1
 
 ## Introduction
 
-The **Copy file** rule allows you to **copy a file** from one field in your form into another field in a different form. You can use this rule to copy files from **one datasource into another**, by having the **destination of each file field different**. For example having the datasource destination of the original file that you want to copy set to your local **File system**, and the destination of the file field that you are copying into is set to a **SharePoint** datasource, see the gif below as an example:
+The **Copy file** rule allows you to **copy a file** from one field in your form into another field in a different form. You can use this rule to copy files from **one datasource** into **another**, by using **different** file fields for where you are copying **to** and **from**. For example if you want to copy a file from your **local file system** to a **SharePoint** location, set file fields for these locations, see gif below:
 
 <img src="/videos/gifs/common/copy-file.gif"/>
 
@@ -30,9 +30,9 @@ In advance of using the **Copy file** rule, in your process you need to have cre
 
 1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
 
-2. Click on **Add a rule** > **File management** > **Create a file anonymous link**.
+2. Click on **Add a rule** > **File management** > **Copy file**.
 
-3. In the **Edit rule - Create a file anonymous link** dialog box, give the rule a title in the **Title** field.
+3. In the **Edit rule - Copy file** dialog box, give the rule a title in the **Title** field.
 
    ![Edit rule - copy file](/images/copy-file-edit-rule.jpg)
 
