@@ -8,10 +8,10 @@ weight: 5
 
 The **Set existing file** rule allows a user to **create** a file and **assign** it into a **file field** based on a provided file **URL path**. For example if you have access to a file **stored** in the **cloud** and have the URL, you can use this URL to **download** the file from the internet and place it in a file field with a name. The **name** you give to the **downloaded** file must **contain the extension**, for example if the file stored in the cloud is a PDF file and you want the name of the file to be "Workbook", then you need to set the name of the file to `Workbook.pdf`. You must provide the **correct extension** for the file otherwise the created file will **not be downloadable.**
 
-![Correct file extension](/images/set-file-extension.jpg)
+![Correct file extension](/images/set-file-extension2.jpg)
 
 ### When to use 
-Use this rule when your process requires you to bring an existing file **dynamically** into the form without having the user **uploading** such file. For example if proving a mechanism to allow the end user to search for file(s) you might use the results of this search as input of an existing file field based on display name and file URL.
+Use this rule when your process requires you to bring an existing file that you have a link to but not the file itself. For example if you have a **link** that **leads** to a file that is **stored** in a **SharePoint** datasource, you can bring this file into your process by using this rule and storing it in a file field.
 
 You can add this rule:
 
@@ -39,11 +39,11 @@ In advance of using the **Set existing file** rule, in your process you need to 
 
 5. Under the **Action** section fill out the following:
 
-   - **Set File** - file field used as a container to store the created file using the given URL.
-   - **FileName field or text** - you can select a field within your form or type in text manually to represent the name you want your created file to have.
-   - **File URL field or text** - you can select a field within your form or type in text manually to represent the URL used to create the file.
+   - **Set File** - file field used as a container to **store** the created file using the given URL.
+   - **FileName field or text** - you can select a field within your form or type in text manually to **represent** the **name** you want your created file to have.
+   - **File URL field or text** - you can select a field within your form or type in text manually to **represent** the **URL** used to create the file.
 
-   Using a field for the name and a field for the URL will allow you to create a different file with a different name every time you use this rule, see the image below and note how the **File name** field corresponds to the created file in the **File** field:
+   Using a field for the **name** and a field for the **URL** will allow you to create a **different files** with a **different names** every time you use this rule, see the image below and note how the **File name** field corresponds to the created file in the **File** field:
 
    ![created file ussing fields](/images/set-file-result.jpg)
 
@@ -60,7 +60,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png)
 
-- Create a **Text box field** that can be used to change the URL every time you want to create a file. This will make the rule dynamic and versatile. 
+- Create a **Text box field** that can be used to change the URL every time you want to create a file. This will make the rule dynamic and versatile. To laern more about text box field and how to create one, got to [Text box control](/docs/platform/controls/input/textbox/).
 - Create another **Text box field** that can be used to change the name of the file every time you want to create it from a URL.
 
 ### What’s next ![Idea icon](/images/18.png)
