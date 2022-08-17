@@ -267,7 +267,7 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: File management rules</title><link>https://docs.kianda.com/docs/platform/rules/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/</guid><description>
-&lt;p>&lt;strong>File management&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable operations such as the generation of Word documents, conversion to PDF format and merging PDF files together. These operations are useful when creating Word/Excel files with high fidelity, creating anonymous links which give access to files without permissions.&lt;/p>
+&lt;p>&lt;strong>File management&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable operations such as the generation of Word documents, conversion to PDF format and merging PDF files together. These operations are useful when creating Word/Excel where the structure of those documents is the same for every instance but values are different. You can also use the &lt;strong>File management&lt;/strong> rules for creating anonymous links which give access to files without permissions.&lt;/p>
 &lt;p>Take an example of a &lt;strong>Create a file anonymous link&lt;/strong> rule. Implementing this rule will result in a &lt;strong>randomly generated link&lt;/strong> which will lead to a file that you want to share. This link can be opened in &lt;strong>any browser&lt;/strong> and can be &lt;strong>accessible&lt;/strong> by anyone and there is &lt;strong>no need for authentication&lt;/strong> when opening the link. You can also set the expiry time of the created link which will cause the link not to exist after the specified time. See images below for an example of the &lt;strong>Create a file anonymous link&lt;/strong> rule:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-managemt-rules-example.jpg" alt="File management rules">&lt;/p>
 &lt;h2 id="getting-started-with-file-management-rules">Getting started with File management rules&lt;/h2>
@@ -276,10 +276,10 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;p>There are seven types of &lt;strong>File management&lt;/strong> rules as follows:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Copy file&lt;/strong> - this rule copies a file from one data location to another.&lt;/p>
+&lt;p>&lt;strong>Copy file&lt;/strong> - allows copying files between datasources. Use this file together with two file fields to move files between two different file locations. For example to copy files between an on premises folder and a SharePoint folder.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Convert to PDF&lt;/strong> - this rule converts a Word document to PDF format.&lt;/p>
+&lt;p>&lt;strong>Convert to PDF&lt;/strong> - this rule allows the conversation of DOCX and DOC files into PDF format.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Generate word document&lt;/strong> - this rule generates a Word document from data associated with a process instance using a user-designed template.&lt;/p>
@@ -288,13 +288,13 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;p>&lt;strong>Generate excel document&lt;/strong> - this rule generates an Excel workbook from data associated with a process instance using a user-designed template.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Set existing file&lt;/strong> - this rule is used to make an existing file available within a configured file field.&lt;/p>
+&lt;p>&lt;strong>Set existing file&lt;/strong> - this rule is used to make an existing file accessible by a link, available within a configured file field. For example when you have access to a file through a link, you can use this link to store the file in a file field within your process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Merge PDF&lt;/strong> - this rule merges two or more PDF files into a single PDF file.&lt;/p>
+&lt;p>&lt;strong>Merge PDF&lt;/strong> - this rule allows you to merge two or more PDF files into a single PDF file. It also allows you to merge image file such as PNG or JPG to an existing PDF file.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Create a file anonymous link&lt;/strong> - this rule generates file links that can be shared anonymously to external users.&lt;/p>
+&lt;p>&lt;strong>Create a file anonymous link&lt;/strong> - this rule generates file links that can be shared anonymously with external users. No authentication is required when opening the anonymous link to a file.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
