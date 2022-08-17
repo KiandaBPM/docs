@@ -6,11 +6,13 @@ weight: 4
 
 ## Introduction
 
-This rule generates an Excel workbook from data **stored in the process** using a Excel `.xlsx` template. The Excle **template** needs to be **pre-created** before using this rule and must be **attached to a file field**, this way the rule will know which template you want to use when creating the workobook. 
+This rule generates an Excel workbook from data **stored in a process** using an Excel `.xlsx` template. The Excel **template** needs to be **pre-created** before using this rule and must be **attached to a file field**, this way the rule will know which template you want to use when creating the workbook. 
 
 ## When to use 
 
-Use this rule when your process requires **dynamic workbook generation** with high fidelity. This rule will use an **Excel template** previously mapped with **smart tags** using the Kianda task pane to generate a document containing the form captured from the process or data source. Use this rule with combination of the **Table** control to output big tables and transfer them into the Excel workbook.
+Use this rule when your process requires **dynamic workbook generation** where the structure of those workbooks is the same for every instance but the values are different. Use this rule with combination of the **Table** control to output big tables and transfer them into the Excel workbook, to learn more about table control go to [Table control](/docs/platform/controls/input/table/). This rule will use an **Excel template** previously mapped with **smart tags**. Smart tags are created in Excel when a field is selected using the Kianda add-in task pane, and then inserted into the document, see image below for more details. 
+
+![Smart tag explanation](/images/excel-add-in-smart-tag.jpg)
 
 You can add this rule:
 
@@ -41,7 +43,7 @@ A Excel template that is used to generate the Excel workbook also needs to be **
 
 5. Under the **Action** section fill out the following:
 
-   - **Excel workbook template** - select a file field that stores the excel template. Your template can pull all values from **Input** fields in the **Controls** section of Kianda. For example if a text box field contains "This is a test" text, the value pulled into the generated excel workbook is "This is a test".
+   - **Excel workbook template** - select a file field that stores the Excel template. Your template can pull all values from **Input** fields in the **Controls** section of Kianda. For example if a text box field contains "This is a test" text, the value pulled into the generated Excel workbook is "This is a test".
 
      ![word document example](/images/generate-excel-example.jpg)
 
@@ -60,8 +62,8 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png)
 
-- When using this rule, create a **utility panel** and make it **invisible** to other users. You can then **move** the Excel template file filed and the generated excel workbook file field inside the utility panel. This way other users will not be able to see the **unnecessary** file fields and will not be able to **tamper** with them.
-- Use this rule when working with **tables** inside of Kianda. It is very easy to create an excell spreadshet by **tranfering data** from your processes into Excel using the **Excel add-in**. Use **smart tags** from the add-in to add a table, the data from your table will be transfered into the excel spreadsheet without manually typing them. See [Excel workbook add-in](/docs/platform/document-generation/excel-workbook-add-in/) for more detail.
+- When using this rule, create a **utility panel** and make it **invisible** to other users. You can then **move** the Excel template file filed and the generated Excel workbook file field inside the utility panel. This way other users will not be able to see the **unnecessary** file fields and will not be able to **tamper** with them. To see an example of a utility panel, go to [Creating a utility panel](/docs/examples/inspection/inspect-form/#creating-a-utility-panel).
+- Use this rule when working with **tables** inside of Kianda. It is very easy to create an Excel spreadsheet by **transferring data** from your processes into Excel using the **Excel add-in**. Use **smart tags** from the add-in to add a table, the data from your table will be transferred into the Excel spreadsheet without manually typing them. See [Excel workbook add-in](/docs/platform/document-generation/excel-workbook-add-in/) for more detail.
 
 ### What’s next ![Idea icon](/images/18.png)
 

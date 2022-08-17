@@ -4,7 +4,7 @@ typora-root-url: ..\..\..\..\..\static
 weight: 2
 ---
 
-The **Convert to PDF** rule allows you to convert a Word document (.doc or .docx) into a PDF (.pdf) file. This rule is very useful when sharing word documents using the **send email** rule, the **Convert to PDF** rule will convert a file into PDF which can be **attached** to an email. This will allow others to open the PDF file on any device.
+The **Convert to PDF** rule allows you to convert a Word document (.doc or .docx) into a PDF (.pdf) file. This rule is very useful when sharing Word documents using the **send email** rule, the **Convert to PDF** rule will convert a file into PDF which can be **attached** to an email. This will allow other users to open the PDF file on any device.
 
 ## When to use 
 
@@ -20,8 +20,8 @@ You can add this rule:
 
 In advance of using the **Convert to PDF** rule, in your process you need to have created at least one or more forms. The rule also requires two file fields in order to select a **Word document** file and the other is used to store the **converted PDF version**. To learn how to add a file go to [File upload control](/docs/platform/controls/input/file-upload/).
 
-- **File field** **(Word document)** - used to hold the word document file that you want to convert.
-- **File field** **(Converted PDF file)** - used to store the converted PDF version of the original word document file.
+- **File field** **(Word document)** - used to hold the Word document file that you want to convert.
+- **File field** **(Converted PDF file)** - used to store the converted PDF version of the original Word document file.
 
 ## How to get started
 
@@ -37,11 +37,11 @@ In advance of using the **Convert to PDF** rule, in your process you need to hav
 
 5. Under the **Action** section fill out the following:
 
-   - **Convert Word File** - used to hold the word document file that you want to convert.
+   - **Convert Word File** - used to hold the Word document file that you want to convert.
 
-   - **Converted PDF File** - used to store the converted PDF version of the original word document file.
+   - **Converted PDF File** - used to store the converted PDF version of the original Word document file.
 
-      See below for an example of a word document before and after conversion, note the file extension in the **Word file** field before converting into a PDF:
+      See below for an example of a Word document before and after conversion, note the file extension in the **Word file** field before converting into a PDF:
 
      ![Convert to pdf before](/images/convert-to-pdf-example-before.jpg)
 

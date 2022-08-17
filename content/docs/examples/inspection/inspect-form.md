@@ -1,7 +1,7 @@
 ---
 title: "Inspection Form"
 weight: 2
-typora-root-url: ..\..\..\..\static 
+typora-root-url: ..\..\..\..\static
 ---
 
 <!-- The **Inspection Form** for this process will be used by an engineer from our **Request Form**. The engineer will have the ability to access and edit the form. When the engineer submits the **Inspection Form**, we will generate a word document, convert it to a PDF file and send it to our **Safety Manager** from our **Request Form**. For this we will use **Generate a word document** rule along with **Convert to PDF** rule. We will also then use **Send email** rule to send.  -->
@@ -321,7 +321,7 @@ For our Inspection Form we will disable **row adding** and **row removing** from
 
 ### Creating a Utility panel
 
-The utility panel will hold our word document template and the generated PDF file of our inspection. First we need to create a utility panel and make it invisible to the user.
+The utility panel will hold our word document template and the generated PDF file of our inspection. First we need to create a utility panel and make it invisible to the user. Utility panels are useful in processes as they can act as containers for information or data that are used with in a process but not seen by other users.
 
 #### Adding a Panel field
 

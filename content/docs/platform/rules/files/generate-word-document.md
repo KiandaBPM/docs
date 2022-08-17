@@ -9,7 +9,9 @@ weight: 3
 This rule generates a Word document from data **stored in the process** using a Word `.docx` template. The Word **template** needs to be **pre-created** before using this rule and must be **attached to a file field**, this way the rule will know which template you want to use when creating the document. The **Generate** **Word document** rule can also convert the Word document into a PDF right after generating the document. 
 
 ## When to use 
-Use this rule when your process requires **dynamic document generation** with high fidelity. This rule will use a **Word template** previously mapped with **smart tags** using the Kianda task pane to generate a document containing the form captured from the process or data source.
+Use this rule when your process requires **dynamic document generation** where the structure of those documents is the same for every instance but the values are different. This rule will use a **Word template** previously mapped with **smart tags**. Smart tags are created in Word when a field is selected using the Kianda add-in task pane, and then inserted into the document, see image below for more details:
+
+![Smart tag explanation](/images/word-add-in-smart-tag.jpg)
 
 You can add this rule:
 
@@ -41,7 +43,7 @@ A Word template that is used to generate the Word document also needs to be **pr
 
    - **Select a document template** - select a file field that stores the word template. Your template can pull all values from **Input** fields in the **Controls** section of Kianda. For example if a text box field contains "This is a test" text, the value pulled into the generated word document is "This is a test", see image below:
 
-     ![word document example](/images/word-doc-fields.jpg)
+     ![word document example](/images/word-doc-fields2.jpg)
 
    - **Select a document destination** - select a file field that will store the generated word document.
 
@@ -60,7 +62,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png)
 
-- When using this rule, create a **utility panel** and make it **invisible** to other users. You can then **move** the Word template file filed and the generated word document file field inside the utility panel. This way other users will not be able to see the **unnecessary** file fields and will not be able to **tamper** with them.
+- When using this rule, create a **utility panel** and make it **invisible** to other users. You can then **move** the Word template file filed and the generated word document file field inside the utility panel. This way other users will not be able to see the **unnecessary** file fields and will not be able to **tamper** with them. To see an example of a utility panel, go to [Creating a utility panel](/docs/examples/inspection/inspect-form/#creating-a-utility-panel).
 - You can use the **Convert to PDF** function of the rule to convert the generated word document into a PDF file **instead** of using the **Convert to PDF rule** which is also available in the **File management** rules.
 
 ### What’s next ![Idea icon](/images/18.png)
