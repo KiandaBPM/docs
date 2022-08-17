@@ -15,4 +15,4 @@ B2B Portals can be configured by users with the role **Administrator** or **Mana
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-We have briefly introduced each of the concept of B2B Portals within **Administration**. Now let's look at the following areas in more detail:
+We have briefly introduced the concept of B2B Portals within **Administration**. Now let's look at the following areas in more detail:
