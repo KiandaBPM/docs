@@ -25,7 +25,7 @@ You can add this rule:
 
 ## Before you get started
 
-To be able to use the Text analysis rule, there a couple of prerequisites needed in your process. to use both functions, your process needs a **Text box field** which will represent the text that is **targeted** during **Text analysis**. To learn more on how to add a text box to your process, go to [Text box control](/docs/platform/controls/input/textbox/).
+To be able to use the Text analysis rule, there a couple of prerequisites needed in your process. To use both functions, your process needs a **Text box field** which will represent the text that is **targeted** during **Text analysis**. To learn more on how to add a text box to your process, go to [Text box control](/docs/platform/controls/input/textbox/).
 
 To use the **Sentiment analysis** function, you need the following:
 
@@ -46,7 +46,7 @@ To use the **Extract key phrases** function, you will need the following:
 
    ![Text analysis edit rule dialog box](/images/text-analysis-edit-rule.jpg)
 
-4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png)see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
 5. Under the **Action** section fill out the following:
 
