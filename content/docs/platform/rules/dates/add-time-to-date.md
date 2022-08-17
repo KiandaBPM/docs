@@ -52,15 +52,9 @@ In advance of using this rule, you need to have **created one or more forms, com
 
    ![Date rules edit conditions](/images/date-rules-add-time-to-date-screen-conditions.jpg)
 
-​			
-
-
-
 5. Under **Action** create one or more actions for the rule by filling out the following:
 
    * **Time to add or a field** - click on the field and select a numerical value, or another field in your Kianda form. This will be the interval quantity.
-
-     
 
    * **Time unit** - choose an option from the drop-down list to serve as your interval unit:
 
@@ -75,8 +69,6 @@ In advance of using this rule, you need to have **created one or more forms, com
      * Months
 
      * Years
-
-       
 
    * **To date** - choose from the radio buttons:
 
@@ -94,24 +86,18 @@ In advance of using this rule, you need to have **created one or more forms, com
 
      ![Date rules destination date field](/images/date-rules-add-time-to-date-destination.jpg)
 
-   
-
    * **Date calculation settings** - you can select whether the time added to your chosen date field:
 
      * Includes weekends
      * Excludes weekends
      * Excludes weekends and special dates
      * Excludes special dates 
-
+   
      This setting could be utilised to disallow notifications sent outside of working hours.
-
-     
-
+   
    * **Special dates** - you can also define custom special dates and save them accordingly. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the **Save special dates for reuse** button ![Date rules save special date button](/images/save-special-date-btn.jpg). To load previously saved dates, click on the **Load special dates** button ![Date rules load special date button](/images/load-special-date-btn.jpg). 
-
+   
      ![Date rules special dates](/images/date-rules-add-time-to-date-calculations.jpg)
-
-
 
 6. Finally, clicking on the **OK** ![OK button](/images/ok.png) button will save the new rule you have just created and apply it to the chosen field.
 
