@@ -15,7 +15,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>To be able to use the Text analysis rule, there a couple of prerequisites needed in your process. to use both functions, your process needs a &lt;strong>Text box field&lt;/strong> which will represent the text that is &lt;strong>targeted&lt;/strong> during &lt;strong>Text analysis&lt;/strong>. To learn more on how to add a text box to your process, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;p>To be able to use the Text analysis rule, there a couple of prerequisites needed in your process. To use both functions, your process needs a &lt;strong>Text box field&lt;/strong> which will represent the text that is &lt;strong>targeted&lt;/strong> during &lt;strong>Text analysis&lt;/strong>. To learn more on how to add a text box to your process, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
 &lt;p>To use the &lt;strong>Sentiment analysis&lt;/strong> function, you need the following:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Text box field&lt;/strong> - container which will store the computed sentiment result. &lt;strong>Positive&lt;/strong> or &lt;strong>Negative&lt;/strong>.&lt;/li>
@@ -38,7 +38,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/text-analysis-edit-rule.jpg" alt="Text analysis edit rule dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
