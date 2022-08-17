@@ -10,7 +10,7 @@ This rule generates an Excel workbook from data **stored in a process** using an
 
 ## When to use 
 
-Use this rule when your process requires **dynamic workbook generation** where the structure of those workbooks is the same for every instance but the values are different. Use this rule with combination of the **Table** control to output big tables and transfer them into the Excel workbook, to learn more about table control go to [Table control](/docs/platform/controls/input/table/). This rule will use an **Excel template** previously mapped with **smart tags**. Smart tags are created in Excel when a field is selected using the Kianda add-in task pane, and then inserted into the document, see image below for more details. 
+Use this rule when your process requires **dynamic workbook generation** where the structure of those workbooks is the same for every instance, but the values of fields are different. Use this rule with combination of the **Table** control to output big tables and transfer them into the Excel workbook, to learn more about table control go to [Table control](/docs/platform/controls/input/table/). This rule will use an **Excel template** previously mapped with **smart tags**. Smart tags are created in Excel when a field is selected using the Kianda add-in task pane, and then inserted into the document, see image below for more details. 
 
 ![Smart tag explanation](/images/excel-add-in-smart-tag.jpg)
 
