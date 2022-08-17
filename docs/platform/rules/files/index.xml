@@ -79,7 +79,7 @@
 &lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
 &lt;p>​&lt;/p></description></item><item><title>Docs: Convert to PDF</title><link>https://docs.kianda.com/docs/platform/rules/files/convert-to-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/convert-to-pdf/</guid><description>
-&lt;p>The &lt;strong>Convert to PDF&lt;/strong> rule allows you to convert a Word document (.doc or .docx) into a PDF (.pdf) file. This rule is very useful when sharing word documents using the &lt;strong>send email&lt;/strong> rule, the &lt;strong>Convert to PDF&lt;/strong> rule will convert a file into PDF which can be &lt;strong>attached&lt;/strong> to an email. This will allow others to open the PDF file on any device.&lt;/p>
+&lt;p>The &lt;strong>Convert to PDF&lt;/strong> rule allows you to convert a Word document (.doc or .docx) into a PDF (.pdf) file. This rule is very useful when sharing Word documents using the &lt;strong>send email&lt;/strong> rule, the &lt;strong>Convert to PDF&lt;/strong> rule will convert a file into PDF which can be &lt;strong>attached&lt;/strong> to an email. This will allow other users to open the PDF file on any device.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can use this rule when you need to convert a .doc or .docx file into a PDF. PDF files are very useful as they can be opened on any device.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
@@ -91,8 +91,8 @@
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
 &lt;p>In advance of using the &lt;strong>Convert to PDF&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires two file fields in order to select a &lt;strong>Word document&lt;/strong> file and the other is used to store the &lt;strong>converted PDF version&lt;/strong>. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Word document)&lt;/strong> - used to hold the word document file that you want to convert.&lt;/li>
-&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Converted PDF file)&lt;/strong> - used to store the converted PDF version of the original word document file.&lt;/li>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Word document)&lt;/strong> - used to hold the Word document file that you want to convert.&lt;/li>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Converted PDF file)&lt;/strong> - used to store the converted PDF version of the original Word document file.&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -113,11 +113,11 @@
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Convert Word File&lt;/strong> - used to hold the word document file that you want to convert.&lt;/p>
+&lt;p>&lt;strong>Convert Word File&lt;/strong> - used to hold the Word document file that you want to convert.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Converted PDF File&lt;/strong> - used to store the converted PDF version of the original word document file.&lt;/p>
-&lt;p>See below for an example of a word document before and after conversion, note the file extension in the &lt;strong>Word file&lt;/strong> field before converting into a PDF:&lt;/p>
+&lt;p>&lt;strong>Converted PDF File&lt;/strong> - used to store the converted PDF version of the original Word document file.&lt;/p>
+&lt;p>See below for an example of a Word document before and after conversion, note the file extension in the &lt;strong>Word file&lt;/strong> field before converting into a PDF:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/convert-to-pdf-example-before.jpg" alt="Convert to pdf before">&lt;/p>
 &lt;p>Below is an image representing the result after converting the Word document file into a PDF, note the file extension in the &lt;strong>Converted PDF file&lt;/strong> field:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/convert-to-pdf-example.jpg" alt="Edit rule - convert to PDF">&lt;/p>
