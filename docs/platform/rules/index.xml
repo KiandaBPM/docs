@@ -192,27 +192,30 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced each of the six types of &lt;strong>Workflow rules&lt;/strong>. Now let&amp;rsquo;s look at each of these types of rules in more detail:&lt;/p></description></item><item><title>Docs: Communication rules</title><link>https://docs.kianda.com/docs/platform/rules/communications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/communications/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>&lt;strong>Communication&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> to enable automated communications with process users, for example sending meeting requests or even user push notifications.&lt;/p>
 &lt;p>Take an example of a &lt;strong>User alert&lt;/strong> rule. Implementing this rule will result in a new item in the &lt;strong>user notification&lt;/strong> in the &lt;a href="https://docs.kianda.com/docs/platform/general/quickaction/">&lt;strong>Quick action menu&lt;/strong>&lt;/a>, for example a rule that alerts a user to complete a form. The user notification icon will look like this when the alert comes in, indicating there is one new notification: &lt;img src="https://docs.kianda.com/images/user-notification-new-item.jpg" alt="New user notification">&lt;/p>
 &lt;p>Clicking on the notification icon, opens up a pop-up box with the notification, for example:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-example.jpg" alt="User alert example to complete a form">&lt;/p>
 &lt;p>Clicking on the Reminder itself will bring the user to that form within the process instance, for the user to complete.&lt;/p>
+&lt;p>Depending on how you configure the alert, you can create an alert message which appears as a warning in a user&amp;rsquo;s workspace as shown in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/user-alert-warning.jpg" alt="User alert warning">&lt;/p>
 &lt;h2 id="getting-started-with-communication-rules">Getting started with Communication rules&lt;/h2>
 &lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>Communication&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Communications&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/communication-rules-all.jpg" alt="Communication rules">&lt;/p>
 &lt;p>There are four types of &lt;strong>Communication&lt;/strong> rules as follows:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Send email&lt;/strong> - This rule allows you to send automated emails that contain images, text, process and other links and attachments. Emails can be sent out using a predefined SMTP connector, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector">Setting up a Global SMTP mail Connector&lt;/a> for more details.&lt;/p>
+&lt;p>&lt;strong>Send email&lt;/strong> - This rule allows you to send automated emails that contain images, text, process and other links and attachments. Email templates are defined within the rule, allowing you to style emails the way you want and use &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder/">Expressions&lt;/a> to automate the process. You can map fields and content from within the process, for example using a userpicker field so that user input in a form determines who an email is sent to. Emails can be sent out using a predefined SMTP connector, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector">Setting up a Global SMTP mail Connector&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Meeting request&lt;/strong> - This rule allows you to send automated emails that contain a meeting request.&lt;/p>
+&lt;p>&lt;strong>Meeting request&lt;/strong> - This rule is similar to the &lt;strong>Send email&lt;/strong> rule and allows you to send automated specially formatted emails that contain a meeting request.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Anonymous form link&lt;/strong> - This rule creates a link to a form which can be sent to external users who do not need Kianda login details or accounts to access the form(s), for example contractors or third party providers.&lt;/p>
+&lt;p>&lt;strong>Anonymous form link&lt;/strong> - This rule creates an anonymous link to a form which can be sent to external users who do not need Kianda login details or accounts to access the form(s), for example contractors or third party providers. The receivers of the link can then simply click on the link and submit data back to a process instance in Kianda.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>User alert&lt;/strong> - This rule sends an alert to a user which appears in the user notifications in the top right-hand quick actions menu bar. See &lt;a href="https://docs.kianda.com/docs/platform/general/quickaction/">Quick action menu&lt;/a> for an introduction to the shortcuts available to users including notifications.&lt;/p>
+&lt;p>&lt;strong>User alert&lt;/strong> - This rule sends an alert to a user which appears in the user notifications in the top right-hand quick actions menu bar. See &lt;a href="https://docs.kianda.com/docs/platform/general/quickaction/">Quick action menu&lt;/a> for an introduction to the shortcuts available to users including notifications. You can configure the alert to appear the way you want for example to allow warning messages to appear as shown in the image in the &lt;a href="#introduction">Introduction&lt;/a> or to link to a form for a user to complete.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
