@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – File management rules</title><link>https://docs.kianda.com/docs/platform/rules/files/</link><description>Recent content in File management rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/files/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Copy file</title><link>https://docs.kianda.com/docs/platform/rules/files/copy-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/copy-file/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Copy file&lt;/strong> rule allows you to &lt;strong>copy a file&lt;/strong> from one field in your form into another field in a different form. You can use this rule to copy files from &lt;strong>one datasource into another&lt;/strong>, by having the &lt;strong>destination of each file field different&lt;/strong>. For example having the datasource destination of the original file that you want to copy set to your local &lt;strong>File system&lt;/strong>, and the destination of the file field that you are copying into is set to a &lt;strong>SharePoint&lt;/strong> datasource, see the gif below as an example:&lt;/p>
+&lt;p>The &lt;strong>Copy file&lt;/strong> rule allows you to &lt;strong>copy a file&lt;/strong> from one field in your form into another field in a different form. You can use this rule to copy files from &lt;strong>one datasource&lt;/strong> into &lt;strong>another&lt;/strong>, by using &lt;strong>different&lt;/strong> file fields for where you are copying &lt;strong>to&lt;/strong> and &lt;strong>from&lt;/strong>. For example if you want to copy a file from your &lt;strong>local file system&lt;/strong> to a &lt;strong>SharePoint&lt;/strong> location, set file fields for these locations, see gif below:&lt;/p>
 &lt;img src="https://docs.kianda.com/videos/gifs/common/copy-file.gif"/>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Use this rule when you need to copy files from one form to another or to transfer files from one datasource into a different one.&lt;/p>
@@ -22,10 +22,10 @@
 &lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Create a file anonymous link&lt;/strong>.&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Copy file&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the &lt;strong>Edit rule - Create a file anonymous link&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>In the &lt;strong>Edit rule - Copy file&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-edit-rule.jpg" alt="Edit rule - copy file">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -146,7 +146,8 @@
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>This rule generates a Word document from data &lt;strong>stored in the process&lt;/strong> using a Word &lt;code>.docx&lt;/code> template. The Word &lt;strong>template&lt;/strong> needs to be &lt;strong>pre-created&lt;/strong> before using this rule and must be &lt;strong>attached to a file field&lt;/strong>, this way the rule will know which template you want to use when creating the document. The &lt;strong>Generate&lt;/strong> &lt;strong>Word document&lt;/strong> rule can also convert the Word document into a PDF right after generating the document.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>Use this rule when your process requires &lt;strong>dynamic document generation&lt;/strong> with high fidelity. This rule will use a &lt;strong>Word template&lt;/strong> previously mapped with &lt;strong>smart tags&lt;/strong> using the Kianda task pane to generate a document containing the form captured from the process or data source.&lt;/p>
+&lt;p>Use this rule when your process requires &lt;strong>dynamic document generation&lt;/strong> where the structure of those documents is the same for every instance but the values are different. This rule will use a &lt;strong>Word template&lt;/strong> previously mapped with &lt;strong>smart tags&lt;/strong>. Smart tags are created in Word when a field is selected using the Kianda add-in task pane, and then inserted into the document, see image below for more details:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/word-add-in-smart-tag.jpg" alt="Smart tag explanation">&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -180,7 +181,7 @@
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Select a document template&lt;/strong> - select a file field that stores the word template. Your template can pull all values from &lt;strong>Input&lt;/strong> fields in the &lt;strong>Controls&lt;/strong> section of Kianda. For example if a text box field contains &amp;ldquo;This is a test&amp;rdquo; text, the value pulled into the generated word document is &amp;ldquo;This is a test&amp;rdquo;, see image below:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/word-doc-fields.jpg" alt="word document example">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/word-doc-fields2.jpg" alt="word document example">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Select a document destination&lt;/strong> - select a file field that will store the generated word document.&lt;/p>
@@ -204,16 +205,17 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;ul>
-&lt;li>When using this rule, create a &lt;strong>utility panel&lt;/strong> and make it &lt;strong>invisible&lt;/strong> to other users. You can then &lt;strong>move&lt;/strong> the Word template file filed and the generated word document file field inside the utility panel. This way other users will not be able to see the &lt;strong>unnecessary&lt;/strong> file fields and will not be able to &lt;strong>tamper&lt;/strong> with them.&lt;/li>
+&lt;li>When using this rule, create a &lt;strong>utility panel&lt;/strong> and make it &lt;strong>invisible&lt;/strong> to other users. You can then &lt;strong>move&lt;/strong> the Word template file filed and the generated word document file field inside the utility panel. This way other users will not be able to see the &lt;strong>unnecessary&lt;/strong> file fields and will not be able to &lt;strong>tamper&lt;/strong> with them. To see an example of a utility panel, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/inspect-form/#creating-a-utility-panel">Creating a utility panel&lt;/a>.&lt;/li>
 &lt;li>You can use the &lt;strong>Convert to PDF&lt;/strong> function of the rule to convert the generated word document into a PDF file &lt;strong>instead&lt;/strong> of using the &lt;strong>Convert to PDF rule&lt;/strong> which is also available in the &lt;strong>File management&lt;/strong> rules.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Generate excel workbook</title><link>https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/generate-excel-document/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This rule generates an Excel workbook from data &lt;strong>stored in the process&lt;/strong> using a Excel &lt;code>.xlsx&lt;/code> template. The Excle &lt;strong>template&lt;/strong> needs to be &lt;strong>pre-created&lt;/strong> before using this rule and must be &lt;strong>attached to a file field&lt;/strong>, this way the rule will know which template you want to use when creating the workobook.&lt;/p>
+&lt;p>This rule generates an Excel workbook from data &lt;strong>stored in a process&lt;/strong> using an Excel &lt;code>.xlsx&lt;/code> template. The Excel &lt;strong>template&lt;/strong> needs to be &lt;strong>pre-created&lt;/strong> before using this rule and must be &lt;strong>attached to a file field&lt;/strong>, this way the rule will know which template you want to use when creating the workbook.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>Use this rule when your process requires &lt;strong>dynamic workbook generation&lt;/strong> with high fidelity. This rule will use an &lt;strong>Excel template&lt;/strong> previously mapped with &lt;strong>smart tags&lt;/strong> using the Kianda task pane to generate a document containing the form captured from the process or data source. Use this rule with combination of the &lt;strong>Table&lt;/strong> control to output big tables and transfer them into the Excel workbook.&lt;/p>
+&lt;p>Use this rule when your process requires &lt;strong>dynamic workbook generation&lt;/strong> where the structure of those workbooks is the same for every instance but the values are different. Use this rule with combination of the &lt;strong>Table&lt;/strong> control to output big tables and transfer them into the Excel workbook, to learn more about table control go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>. This rule will use an &lt;strong>Excel template&lt;/strong> previously mapped with &lt;strong>smart tags&lt;/strong>. Smart tags are created in Excel when a field is selected using the Kianda add-in task pane, and then inserted into the document, see image below for more details.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/excel-add-in-smart-tag.jpg" alt="Smart tag explanation">&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -246,7 +248,7 @@
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Excel workbook template&lt;/strong> - select a file field that stores the excel template. Your template can pull all values from &lt;strong>Input&lt;/strong> fields in the &lt;strong>Controls&lt;/strong> section of Kianda. For example if a text box field contains &amp;ldquo;This is a test&amp;rdquo; text, the value pulled into the generated excel workbook is &amp;ldquo;This is a test&amp;rdquo;.&lt;/p>
+&lt;p>&lt;strong>Excel workbook template&lt;/strong> - select a file field that stores the Excel template. Your template can pull all values from &lt;strong>Input&lt;/strong> fields in the &lt;strong>Controls&lt;/strong> section of Kianda. For example if a text box field contains &amp;ldquo;This is a test&amp;rdquo; text, the value pulled into the generated Excel workbook is &amp;ldquo;This is a test&amp;rdquo;.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/generate-excel-example.jpg" alt="word document example">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -268,8 +270,8 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;ul>
-&lt;li>When using this rule, create a &lt;strong>utility panel&lt;/strong> and make it &lt;strong>invisible&lt;/strong> to other users. You can then &lt;strong>move&lt;/strong> the Excel template file filed and the generated excel workbook file field inside the utility panel. This way other users will not be able to see the &lt;strong>unnecessary&lt;/strong> file fields and will not be able to &lt;strong>tamper&lt;/strong> with them.&lt;/li>
-&lt;li>Use this rule when working with &lt;strong>tables&lt;/strong> inside of Kianda. It is very easy to create an excell spreadshet by &lt;strong>tranfering data&lt;/strong> from your processes into Excel using the &lt;strong>Excel add-in&lt;/strong>. Use &lt;strong>smart tags&lt;/strong> from the add-in to add a table, the data from your table will be transfered into the excel spreadsheet without manually typing them. See &lt;a href="https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/">Excel workbook add-in&lt;/a> for more detail.&lt;/li>
+&lt;li>When using this rule, create a &lt;strong>utility panel&lt;/strong> and make it &lt;strong>invisible&lt;/strong> to other users. You can then &lt;strong>move&lt;/strong> the Excel template file filed and the generated Excel workbook file field inside the utility panel. This way other users will not be able to see the &lt;strong>unnecessary&lt;/strong> file fields and will not be able to &lt;strong>tamper&lt;/strong> with them. To see an example of a utility panel, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/inspect-form/#creating-a-utility-panel">Creating a utility panel&lt;/a>.&lt;/li>
+&lt;li>Use this rule when working with &lt;strong>tables&lt;/strong> inside of Kianda. It is very easy to create an Excel spreadsheet by &lt;strong>transferring data&lt;/strong> from your processes into Excel using the &lt;strong>Excel add-in&lt;/strong>. Use &lt;strong>smart tags&lt;/strong> from the add-in to add a table, the data from your table will be transferred into the Excel spreadsheet without manually typing them. See &lt;a href="https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/">Excel workbook add-in&lt;/a> for more detail.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>

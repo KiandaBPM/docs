@@ -303,7 +303,7 @@ Your browser does not support the video tag.
 &lt;li>&lt;strong>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a>&lt;/strong>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Copy file</title><link>https://docs.kianda.com/docs/platform/rules/files/copy-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/copy-file/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Copy file&lt;/strong> rule allows you to &lt;strong>copy a file&lt;/strong> from one field in your form into another field in a different form. You can use this rule to copy files from &lt;strong>one datasource into another&lt;/strong>, by having the &lt;strong>destination of each file field different&lt;/strong>. For example having the datasource destination of the original file that you want to copy set to your local &lt;strong>File system&lt;/strong>, and the destination of the file field that you are copying into is set to a &lt;strong>SharePoint&lt;/strong> datasource, see the gif below as an example:&lt;/p>
+&lt;p>The &lt;strong>Copy file&lt;/strong> rule allows you to &lt;strong>copy a file&lt;/strong> from one field in your form into another field in a different form. You can use this rule to copy files from &lt;strong>one datasource&lt;/strong> into &lt;strong>another&lt;/strong>, by using &lt;strong>different&lt;/strong> file fields for where you are copying &lt;strong>to&lt;/strong> and &lt;strong>from&lt;/strong>. For example if you want to copy a file from your &lt;strong>local file system&lt;/strong> to a &lt;strong>SharePoint&lt;/strong> location, set file fields for these locations, see gif below:&lt;/p>
 &lt;img src="https://docs.kianda.com/videos/gifs/common/copy-file.gif"/>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Use this rule when you need to copy files from one form to another or to transfer files from one datasource into a different one.&lt;/p>
@@ -325,10 +325,10 @@ Your browser does not support the video tag.
 &lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Create a file anonymous link&lt;/strong>.&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Copy file&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the &lt;strong>Edit rule - Create a file anonymous link&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>In the &lt;strong>Edit rule - Copy file&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-edit-rule.jpg" alt="Edit rule - copy file">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -2728,7 +2728,7 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="creating-a-utility-panel">Creating a Utility panel&lt;/h3>
-&lt;p>The utility panel will hold our word document template and the generated PDF file of our inspection. First we need to create a utility panel and make it invisible to the user.&lt;/p>
+&lt;p>The utility panel will hold our word document template and the generated PDF file of our inspection. First we need to create a utility panel and make it invisible to the user. Utility panels are useful in processes as they can act as containers for information or data that are used with in a process but not seen by other users.&lt;/p>
 &lt;h4 id="adding-a-panel-field">Adding a Panel field&lt;/h4>
 &lt;ol>
 &lt;li>

@@ -705,7 +705,7 @@ The Safety Team
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="creating-a-utility-panel">Creating a Utility panel&lt;/h3>
-&lt;p>The utility panel will hold our word document template and the generated PDF file of our inspection. First we need to create a utility panel and make it invisible to the user.&lt;/p>
+&lt;p>The utility panel will hold our word document template and the generated PDF file of our inspection. First we need to create a utility panel and make it invisible to the user. Utility panels are useful in processes as they can act as containers for information or data that are used with in a process but not seen by other users.&lt;/p>
 &lt;h4 id="adding-a-panel-field">Adding a Panel field&lt;/h4>
 &lt;ol>
 &lt;li>
