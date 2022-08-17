@@ -11,8 +11,9 @@ The **Convert to PDF** rule allows you to convert a Word document (.doc or .docx
 You can use this rule when you need to convert a .doc or .docx file into a PDF. PDF files are very useful as they can be opened on any device. 
 
 You can add this rule:
+
 - [x] to a field
-- [x] to a form 
+- [x] to a form
 - [x] to a process (the rule will run on load)
 
 ## Before you get started
