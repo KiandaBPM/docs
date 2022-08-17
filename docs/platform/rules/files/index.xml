@@ -310,11 +310,11 @@
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Set File&lt;/strong> - file field used as a container to store the created file using the given URL.&lt;/li>
-&lt;li>&lt;strong>FileName field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the name you want your created file to have.&lt;/li>
-&lt;li>&lt;strong>File URL field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the URL used to create the file.&lt;/li>
+&lt;li>&lt;strong>Set File&lt;/strong> - file field used as a container to &lt;strong>store&lt;/strong> the created file using the given URL.&lt;/li>
+&lt;li>&lt;strong>FileName field or text&lt;/strong> - you can select a field within your form or type in text manually to &lt;strong>represent&lt;/strong> the &lt;strong>name&lt;/strong> you want your created file to have.&lt;/li>
+&lt;li>&lt;strong>File URL field or text&lt;/strong> - you can select a field within your form or type in text manually to &lt;strong>represent&lt;/strong> the &lt;strong>URL&lt;/strong> used to create the file.&lt;/li>
 &lt;/ul>
-&lt;p>Using a field for the name and a field for the URL will allow you to create a different file with a different name every time you use this rule, see the image below and note how the &lt;strong>File name&lt;/strong> field corresponds to the created file in the &lt;strong>File&lt;/strong> field:&lt;/p>
+&lt;p>Using a field for the &lt;strong>name&lt;/strong> and a field for the &lt;strong>URL&lt;/strong> will allow you to create a &lt;strong>different files&lt;/strong> with a &lt;strong>different names&lt;/strong> every time you use this rule, see the image below and note how the &lt;strong>File name&lt;/strong> field corresponds to the created file in the &lt;strong>File&lt;/strong> field:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/set-file-result.jpg" alt="created file ussing fields">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -331,7 +331,7 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;ul>
-&lt;li>Create a &lt;strong>Text box field&lt;/strong> that can be used to change the URL every time you want to create a file. This will make the rule dynamic and versatile.&lt;/li>
+&lt;li>Create a &lt;strong>Text box field&lt;/strong> that can be used to change the URL every time you want to create a file. This will make the rule dynamic and versatile. To laern more about text box field and how to create one, got to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
 &lt;li>Create another &lt;strong>Text box field&lt;/strong> that can be used to change the name of the file every time you want to create it from a URL.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
