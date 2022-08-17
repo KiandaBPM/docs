@@ -39,11 +39,11 @@ In advance of using the **Set existing file** rule, in your process you need to 
 
 5. Under the **Action** section fill out the following:
 
-   - **Set File** - file field used as a container to store the created file using the given URL.
-   - **FileName field or text** - you can select a field within your form or type in text manually to represent the name you want your created file to have.
-   - **File URL field or text** - you can select a field within your form or type in text manually to represent the URL used to create the file.
+   - **Set File** - file field used as a container to **store** the created file using the given URL.
+   - **FileName field or text** - you can select a field within your form or type in text manually to **represent** the **name** you want your created file to have.
+   - **File URL field or text** - you can select a field within your form or type in text manually to **represent** the **URL** used to create the file.
 
-   Using a field for the name and a field for the URL will allow you to create a different file with a different name every time you use this rule, see the image below and note how the **File name** field corresponds to the created file in the **File** field:
+   Using a field for the **name** and a field for the **URL** will allow you to create a **different files** with a **different names** every time you use this rule, see the image below and note how the **File name** field corresponds to the created file in the **File** field:
 
    ![created file ussing fields](/images/set-file-result.jpg)
 
@@ -60,7 +60,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png)
 
-- Create a **Text box field** that can be used to change the URL every time you want to create a file. This will make the rule dynamic and versatile. 
+- Create a **Text box field** that can be used to change the URL every time you want to create a file. This will make the rule dynamic and versatile. To laern more about text box field and how to create one, got to [Text box control](/docs/platform/controls/input/textbox/).
 - Create another **Text box field** that can be used to change the name of the file every time you want to create it from a URL.
 
 ### What’s next ![Idea icon](/images/18.png)
