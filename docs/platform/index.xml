@@ -53,9 +53,30 @@ Your browser does not support the video tag.
 &lt;p>Click on the &lt;strong>Add new&lt;/strong> button to create a process from scratch.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Fill out the details in the &lt;strong>Add new process&lt;/strong> dialog box - that is &lt;strong>Title&lt;/strong>, &lt;strong>ID&lt;/strong> (a unique Name that autofills from the title), &lt;strong>Description&lt;/strong>, &lt;strong>Group&lt;/strong> (if you have a predefined group) and &lt;strong>Administrators&lt;/strong>, people who will be able to change the process design, choose from &lt;strong>Users&lt;/strong> or &lt;strong>Groups&lt;/strong> or leave blank to allow all those with an administrator role, to have access to this process design.&lt;/p>
+&lt;p>Fill out the details in the &lt;strong>Add new process&lt;/strong> dialog box:&lt;/p>
 &lt;p>&lt;em>&lt;strong>Add new process dialog box&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/createprocess2.png" alt="Create a process">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - the title for your process&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>ID&lt;/strong> - this is a unique Name that autofills from the title.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Description&lt;/strong> - a short description for your process&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Group&lt;/strong> - type in a name of a new group or an existing group , for example &amp;lsquo;Training&amp;rsquo; to create a &amp;lsquo;folder&amp;rsquo; for your processes, see examples below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/process-groups.jpg" alt="Process group examples">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Administrators&lt;/strong> - these are &lt;strong>process administrators&lt;/strong> or people who will be able to &lt;strong>change the process design&lt;/strong>. Process administrators must have the role &lt;strong>administrator&lt;/strong> or &lt;strong>design business process&lt;/strong> so that they can access &lt;strong>Designer&lt;/strong> to modify the process design. Choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> in the drop-down list, or leave blank to allow all those with an administrator role, to have access to this process design.&lt;/p>
+&lt;p>Users and groups must be already defined in the system by a user with an &lt;strong>administrator&lt;/strong> role, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">User management&lt;/a>.&lt;/p>
+&lt;p>Note that there is a limit of 10 names in the drop-down list, displayed alphabetically from the list of users and groups, but you can type in a user or group name to see them appear in the list, for example as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/administrator-example.jpg" alt="Administrator user example">&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when complete.&lt;/p>
