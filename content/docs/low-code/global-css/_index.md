@@ -40,7 +40,7 @@ div[data-name$="?card"].form-group{
      border: 1px solid #e7eaee;
      background: white;
      margin-bottom: 15px;
-     padding-bottom: 1px !important;
+     padding-bottom: 1px;
      padding-top: 18px;
      padding-right: 15px;
 }
@@ -96,7 +96,7 @@ To use a Global CSS file:
       border: 1px solid #e7eaee;
       background: white;
       margin-bottom: 15px;
-      padding-bottom: 0px !important;
+      padding-bottom: 0px 
       padding-top: 18px;
       padding-right: 15px;
      }
@@ -178,7 +178,7 @@ For example, if you want to change all buttons in the process to have a backgrou
 
 5. To make all buttons show the changes, use the class selector by editing the richtext field again and go into the **Code View** and add the necessary CSS. 
 
-6. Click on the **Code View** button again to commit changes and then click** on **OK** when you are finished editing the dialog box.
+6. Click on the **Code View** button again to commit changes and then click on **OK** when you are finished editing the dialog box.
 
    ![Richtext CSS example](/images/richtext-magenta.jpg)
 
