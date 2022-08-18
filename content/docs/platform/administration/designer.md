@@ -4,11 +4,11 @@ weight: 2
 typora-root-url: ..\..\..\..\static
 ---
 
-Kianda **Designer** is available to administrators and those users with the role **Designer**. Designer is found in the left-hand side pane, under **Administration**. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer you can create forms, add controls and rules to create processes to work the way you want.
+Kianda **Designer** is available to administrators and those users with the role **Design business process**. Designer is found in the left-hand side pane, under **Administration**. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer you can create forms, add controls and rules to create processes to work the way you want.
 
 ## How to get started
 
-To start creating a process so that Kianda Designer will open:
+Using your Administration or Design business process role start creating or editing a process so that Kianda Designer will open:
 
 1. Click on **Administration** in the left-hand side pane and then click on **Designer**.
 
@@ -20,7 +20,7 @@ To start creating a process so that Kianda Designer will open:
 
     ![Training folder of processes](/images/training-folder.jpg)
 
-4. Click on a process name to see the process design. You are then brought into **Kianda Designer**, see [Design view](#design-view) details below.
+4. Click on a process name to see the process design. You are then brought into **Kianda Designer**, see [Designer view](#designer-view) details below.
 
 5. To import a process created for example in another workspace, click on **Import** ![Import button](/images/import_frame.png). Also note that from the main process view you can also export processes listed here for use in another workspace, by clicking on **Export** ![Export process](/images/export_frame.png).
 

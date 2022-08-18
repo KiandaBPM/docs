@@ -8,11 +8,11 @@ The **Subscription** function is available to **administrators** and is found in
 
 ## How to get started
 
-To view use the Scheduled tasks function:
+To view use the Subscription function as an administrator:
 
 1. Click on **Administration** in the left-hand side pane and then click on **Subscription**. 
 
-2. You can view any current tasks in the main tasks view. 
+2. The main Subscription page opens.
 
    ![Subscription view](/images/subscription-page.jpg)
 
@@ -22,8 +22,8 @@ To view use the Scheduled tasks function:
    - **Design Login Page** allows you to design the login page for your workspace for example to change,  background and font colours and add taglines.
    - **Regional Settings** allows you to set your operational **time zone** and **regional settings**, such as English Ireland for language.
    - **Mobile Settings** allows you to customise how the Kianda workspace will appear as a mobile app.
-   - **Subscription Details**
-   - **Single Sign-On (SSO)** 
+   - **Subscription Details** allows you to view your company details and enable a Global SMTP Mail connector for sending automated emails.
+   - **Single Sign-On (SSO)** allows you to enable Single sign-on so that a user can access Kianda using the same credentials they use everyday for example logging into Office 365.
 
    These areas are covered in more detail in the sections below.
 
@@ -40,7 +40,7 @@ You can access this section by clicking on **Open Wizard** > **Look and Feel** o
 
 **Note**: Logo sizes are 200 x 65px for a full-sized logo and 45 x 45px for a collapsed logo. You can also select a colour scheme under Themes and preview the results under Workspace preview on the right.
 
-Details for each of the areas within the page - [Logos][#logos], [Layout](#layout). [Themes](#themes) and [CSS](#css) are available below. Make sure to click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made. 
+Details for each of the areas within the page - [Logos](#logos), [Layout](#layout). [Themes](#themes) and [CSS](#css) are available below. Make sure to click on **Save Changes** ![Save changes button](/images/save-changes.jpg) to save any changes made. 
 
 
 
@@ -57,11 +57,11 @@ To add a logo for your company:
 
 The options for your workspace layout are:
 
-- **Boxed** - moving the slider across to enable a boxed layout, that is the workspace appears in a box in the browser, with space appearing around the box and centred content.
+- **Boxed** - moving the slider across to enable a boxed layout, that is the workspace appears in a box in the browser, with space appearing around the box and content is centred.
 
   ![Boxed layout](/images/boxed-layout.jpg)
 
-- **RTL** - moved the slider across to enable a right-to-left (RTL) layout, that is text, layout, icons and so on are right -hand based. 
+- **RTL** - moved the slider across to enable a right-to-left (RTL) layout, that is text, layout, icons and so on are right-hand based. 
 
 - **Disable Zoom on Mobile** - move the slider across to enable the 'disable zoom on mobile' option, which means that the zooming option is disabled on mobile web pages.
 
@@ -75,7 +75,7 @@ The options for your workspace layout are:
 
 ### Themes ###
 
-Click on a Theme of choice, options range from two-tone layouts, to those with a dark left-hand side menu as shown in the middle of the image below. 
+Click on a Theme of choice. Options range from two-tone layouts, to those with a dark left-hand side menu as shown in the middle of the image below. 
 
 ![Themes](/images/themes.jpg)
 
@@ -83,9 +83,9 @@ Click on a Theme of choice, options range from two-tone layouts, to those with a
 
 ### CSS ###
 
-In this section you can modify the **Global CSS File** to make changes to the look and feel of the site as well as processes. Here you can access the existing CSS details by clicking on the on the **ellipsis** button ![Ellipsis button](/images/expression.jpg) to open a CSS Editor and add to those details, or click on **Browse** to browse for a CSS file. See [Global CSS file](/images//docs/low-code/global-css-file/) for more details. 
+In this section you can modify the **Global CSS File** to make changes to the look and feel of the site as well as processes. If you have an existing CSS file, you can access the existing CSS details by clicking on the on the **ellipsis** button ![Ellipsis button](/images/expression.jpg) to open a CSS Editor and add to those details, or click on **Browse** to browse for a CSS file to add in customised styling. See [Global CSS file](/images//docs/low-code/global-css-file/) for more details. 
 
-Make sure to click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
+Make sure to click on **Save Changes** ![Save changes button](/images/save-changes.jpg) to save any changes made and click on **Back** to go back to the **Subscription** page.
 
 
 
@@ -111,7 +111,7 @@ On this page you can make the following changes:
 
   ![Taglines](/images/taglines.jpg)
 
-When you are finished making changes click on ** **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
+When you are finished making changes click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
 
 
 
