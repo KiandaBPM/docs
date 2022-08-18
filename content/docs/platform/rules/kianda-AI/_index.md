@@ -10,7 +10,7 @@ weight: 9
 
 **Text Analysis** is a process by which the AI is programmed to distil information and meaning from text. For example, this can be analysing text written in feedback forms, item reviews or analysing documentation to understand its purpose. 
 
-Take an example of **Text analysis** rule and its **extract key phrases** function. Implementing this rule will analyse the block of text and as a result, it will give back key and most relevant words or expressions into another field within your process. See the image below for an example of a feedback text and its key phrases result:
+Take an example of **Text analysis** rule and its **extract key phrases** function. Implementing this rule will analyse the block of text and as a result, it will give back key and most relevant words or expressions into another field within your process. See the image below for an example of a feedback text and resulting key phrases:
 
 ![key phrases example feedback and result](/images/text-analysis-phrases-example.jpg)
 
