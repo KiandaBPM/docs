@@ -6,11 +6,11 @@ typora-root-url: ..\..\..\..\static
 
 ## Introduction
 
-You can **generate reports** within Kianda processes and **populate** the reports with **data captured** within each process instance. This could be useful, for example, when performing a health & safety check on a buliding site. A template can be used by an inspector to have a **generic outline** of what needs to be completed when prefoming the check. Each time a check is performed, the generated report may contain different data. 
+You can **generate reports** within Kianda processes and **populate** the reports with **data captured** within each process instance. This could be useful, for example, when performing a health & safety check on a building site. A template can be used by an inspector to have a **generic outline** of what needs to be completed when preforming the check. Each time a check is performed, the generated report may contain different data. This data is **pulled** directly from the each **individual check** when performed by an inspector.
 
 ## Before you get started
 
-In advance of creating a template, you need to install Kianda add-in for word. Go to [Installing Kianda add-in for Word or Excel](/docs/platform/document-generation/#installing-kianda-add-in-to-word-or-excel) and follow the steps of instalation. You also need to create an template outline before starting, to learn more about what a template outline is go to [template outline](/docs/platform/document-generation/#heading).
+In advance of creating a template, you need to install Kianda add-in for word. Go to [Installing Kianda add-in for Word or Excel](/docs/platform/document-generation/#installing-kianda-add-in-to-word-or-excel) and follow the steps of installation. You also need to create an template outline before starting, to learn more about what a template outline is, go to [template outline](/docs/platform/document-generation/#heading).
 
 ### Using the Kianda Add-in for Word
 
@@ -20,7 +20,7 @@ In advance of creating a template, you need to install Kianda add-in for word. G
 
 2. In the Kianda pane log in using your Kianda username and password, select your subscription and press **Continue**.
 
-3. Click on the process link button ![Process link button](https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif) to get a dropdown list of Kianda processes that you have access to based on your role, for example Administrator or Designer.
+3. Click on the process link button ![Process link button](https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif) to get a drop-down list of Kianda processes that you have access to.
 
 4. Select a relevant process and a relevant form that you want to create a template for.
 
