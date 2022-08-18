@@ -36,13 +36,31 @@ To help you plan your process, go to [Plan your process](/docs/getting-started/c
 
 3. Click on the **Add new** button to create a process from scratch.
 
-4. Fill out the details in the **Add new process** dialog box - that is **Title**, **ID** (a unique Name that autofills from the title), **Description**, **Group** (if you have a predefined group) and **Administrators**, people who will be able to change the process design, choose from **Users** or **Groups** or leave blank to allow all those with an administrator role, to have access to this process design.
+4. Fill out the details in the **Add new process** dialog box:
 
    ***Add new process dialog box***
 
    ![Create a process](/images/createprocess2.png)
 
-5.  Click on **OK** ![OK button](/images/ok.png) when complete. 
+   - **Title** - the title for your process
+
+   - **ID** - this is a unique Name that autofills from the title. 
+
+   - **Description** - a short description for your process
+
+   - **Group** - type in a name of a new group or an existing group , for example 'Training' to create a 'folder' for your processes, see examples below.
+
+     ![Process group examples](/images/process-groups.jpg)
+
+   - **Administrators** - these are **process administrators** or people who will be able to **change the process design**. Process administrators must have the role **administrator** or **design business process** so that they can access **Designer** to modify the process design. Choose from **Users** and/or **Groups** in the drop-down list, or leave blank to allow all those with an administrator role, to have access to this process design. 
+
+     Users and groups must be already defined in the system by a user with an **administrator** role, see [User management](/docs/platform/administration/users/).
+
+     Note that there is a limit of 10 names in the drop-down list, displayed alphabetically from the list of users and groups, but you can type in a user or group name to see them appear in the list, for example as shown below.
+
+     ![Administrator user example](/images/administrator-example.jpg)
+
+5. Click on **OK** ![OK button](/images/ok.png) when complete. 
 
 6. You are now in the Process **Design** page, that is Kianda Designer. From here, you can add forms.
 
