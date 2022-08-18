@@ -5,7 +5,8 @@
 &lt;li>&lt;strong>Sentiment analysis&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Extract key phrases&lt;/strong>&lt;/li>
 &lt;/ul>
-&lt;p>With each function, the AI is programmed to distil information and meaning from a text block. For example, sentiment analysis can be used to give a &lt;strong>Positive&lt;/strong> or &lt;strong>Negative&lt;/strong> result on feedback forms or item reviews. The &lt;strong>Extract key phrases&lt;/strong> on the other hand is programmed to extract most relevant words or expressions from a block of text.&lt;/p>
+&lt;p>With each function, the AI is programmed to distil information and meaning from a text block. For example, &lt;strong>extract key phrases&lt;/strong> function is programmed to extract most relevant words or expressions from a block of text. &lt;strong>Sentiment analysis&lt;/strong> on the other hand can be used to give a &lt;strong>Positive&lt;/strong> or &lt;strong>Negative&lt;/strong> result on feedback forms or item reviews and presented in a dashboard, see image below for an example dashboard sentiment analysis:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ai-rule-dashboard.jpg" alt="sentiment dashboard displaying score and feedback.">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Use this rule when you want to analyse large blocks of text into a &lt;strong>Positive&lt;/strong> or &lt;strong>Negative&lt;/strong> result with a percentage score, or when you want to extract key phrases.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
