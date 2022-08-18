@@ -4,11 +4,11 @@ weight: 2
 typora-root-url: ..\..\..\..\static
 ---
 
-Kianda **Designer** is available to administrators and those users with the role **Design business process**. Designer is found in the left-hand side pane, under **Administration**. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer you can create forms, add controls and rules to create processes to work the way you want.
+Kianda **Designer** is available to administrators and those users with the role **Design business process**. Designer is found in the left-hand side pane, under **Administration**. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer, you can create forms, add controls and add rules to create processes to work the way you want.
 
 ## How to get started
 
-Using your Administration or Design business process role start creating or editing a process so that Kianda Designer will open:
+Using your Administration or Design business process role, start creating or editing a process so that Kianda Designer will open:
 
 1. Click on **Administration** in the left-hand side pane and then click on **Designer**.
 

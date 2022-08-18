@@ -14,9 +14,9 @@ Other roles like **Developer**, or **Design business process role** will have ac
 
 If you have full administration access then you will see nine functions by default within administration. These are:
 
-- **Designer** - users with the Designer business process role and administrators can access this function to design business processes. Designer is the main feature that allows you to create processes, forms, add fields and business rules all using an easy-to-user graphical user interface, without the need for coding.
+- **Designer** - users with the Designer business process role and administrators can access this function to design business processes. Designer is the main feature that allows you to create processes, forms, add fields and business rules all using an easy-to-use graphical user interface, without the need for coding.
 
-- **App Store** - administrators can access predefined process templates within the App Store, and use these templates to create business process. There are 20 predefined templates that can be imported and used at the click of a button and cover areas like: IT Support Helpdesk, Purchase Order Approval, Employee Appraisal, Change Request Process, Inspection Checklist and Expense report.
+- **App Store** - administrators can access predefined process templates within the App Store, and use these templates to create business processes. There are 20 predefined templates that can be imported and used at the click of a button and cover areas like: IT Support Helpdesk, Purchase Order Approval, Employee Appraisal, Change Request Process, Inspection Checklist and Expense report.
 
 - **Subscription** - administrators can update an organisation's subscription details, including Single Sign On, workspace look and feel, mobile app login design and regional settings.
 
@@ -37,3 +37,4 @@ If you have full administration access then you will see nine functions by defau
 ### What's next  ![Idea icon](/images/18.png) ###
 
 We have briefly introduced each of the nine functions within **Administration**. Now let's look at each of these functions in more detail:
+

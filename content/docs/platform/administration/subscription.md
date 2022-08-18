@@ -6,13 +6,13 @@ typora-root-url: ..\..\..\..\static
 
 The **Subscription** function is available to **administrators** and is found in the left-hand side pane, under **Administration**. This function allows you to update the look and feel of your workspace, set regional, mobile and single sign-on settings and design the login page. 
 
-For **developers** who wish to **customise and style** their Kianda workspace and processes there are options to support you in achieving a high level of design that is instantly recognisable for users. These options include creating a **custom branding style**, customised **login page** and option to control how your platform will look on **mobile devices**. 
+For **developers** who wish to **customise and style** their Kianda workspace and processes, there are options to support you in achieving a high level of design that is instantly recognisable for users. These options include creating a **custom branding style**, customised **login page** and option to control how your platform will look on **mobile devices**. 
 
 
 
 ## How to get started
 
-To view use the Subscription function as an administrator:
+To view, use the Subscription function as an administrator:
 
 1. Click on **Administration** in the left-hand side pane and then click on **Subscription**. 
 
@@ -23,7 +23,7 @@ To view use the Subscription function as an administrator:
    In this view you can typically make changes to six areas:
 
    - **Look and Feel** allows you to change the look and feel for your workspace, for example adding company logos. 
-   - **Design Login Page** allows you to design the login page for your workspace for example to change,  background and font colours and add taglines.
+   - **Design Login Page** allows you to design the login page for your workspace, for example to change background and font colours and add taglines.
    - **Regional Settings** allows you to set your operational **time zone** and **regional settings**, such as English Ireland for language.
    - **Mobile Settings** allows you to customise how the Kianda workspace will appear as a mobile app.
    - **Subscription Details** allows you to view your company details and enable a Global SMTP Mail connector for sending automated emails.
@@ -31,7 +31,7 @@ To view use the Subscription function as an administrator:
 
    These areas are covered in more detail in the sections below.
 
-3. Click on a particular area to edit details or click on **Open Wizard** to use a wizard to edit **Look and Feel**, **Design Login Page**, **Regional Settings**, and **Mobile Settings**.
+3. Click on a particular area to edit details or click on the **Open Wizard** ![Open wizard button](/images/open-wizard-btn.jpg) button to use a wizard to edit **Look and Feel**, **Design Login Page**, **Regional Settings**, and **Mobile Settings**.
 
 Details on each area are available below.
 
@@ -44,7 +44,7 @@ You can access this section by clicking on **Open Wizard** > **Look and Feel** o
 
 **Note**: Logo sizes are 200 x 65px for a full-sized logo and 45 x 45px for a collapsed logo. You can also select a colour scheme under Themes and preview the results under Workspace preview on the right.
 
-Details for each of the areas within the page - [Logos](#logos), [Layout](#layout). [Themes](#themes) and [CSS](#css) are available below. Make sure to click on **Save Changes** ![Save changes button](/images/save-changes.jpg) to save any changes made. 
+Details for each of the areas within the page - [Logos](#logos), [Layout](#layout), [Themes](#themes) and [CSS](#css) are available below. Make sure to click on **Save Changes** ![Save changes button](/images/save-changes.jpg) to save any changes made. 
 
 
 
@@ -53,7 +53,7 @@ Details for each of the areas within the page - [Logos](#logos), [Layout](#layou
 To add a logo for your company:
 
 1. Click on **Browse** beside **Logo Url** to browse for a logo to add from your PC or network. The recommended size is 200px x 65px.
-2. To add a logo that will appear when the left-hand side menu is collapsed, click on **Browse** beside **Collapsed Logo URL** to browse for a a logo to add from your PC or network. The recommended size is 45px x 45px. 
+2. To add a logo that will appear when the left-hand side menu is collapsed, click on **Browse** beside **Collapsed Logo URL** to browse for a logo to add from your PC or network. The recommended size is 45px x 45px. 
 
 
 
@@ -69,7 +69,7 @@ The options for your workspace layout are:
 
 - **Disable Zoom on Mobile** - move the slider across to enable the 'disable zoom on mobile' option, which means that the zooming option is disabled on mobile web pages.
 
-- **Welcome page** - click on the **Change** button ![Change button](/images/change-button.jpg) to change the Welcome page for users of your Kianda workspace.  The **Update welcome page** dialog box opens where you can click on the drop-down list under **New welcome page** to choose a new welcome page, from the Home page and dashboards. 
+- **Welcome page** - click on the **Change** button ![Change button](/images/change-button.jpg) to change the Welcome page for users of your Kianda workspace. The **Update welcome page** dialog box opens where you can click on the drop-down list under **New welcome page** to choose a new welcome page, from the Home page and dashboards. 
 
   ![Update welcome page dialog box](/images/update-welcome-page.jpg)
 
@@ -87,7 +87,7 @@ Click on a **Theme** of choice. Options range from two-tone layouts, to those wi
 
 ### CSS ###
 
-In this section you can modify the **Global CSS File** to make changes to the look and feel of the site as well as processes. If you have an existing CSS file, you can access the existing CSS details by clicking on the on the **ellipsis** button ![Ellipsis button](/images/expression.jpg) to open a CSS Editor and add to those details, or click on **Browse** to browse for a CSS file to add in customised styling. See [Global CSS file](/images//docs/low-code/global-css-file/) for more details. 
+In this section you can modify the **Global CSS File** to make changes to the look and feel of the site as well as processes. If you have an existing CSS file, you can access the existing CSS details by clicking on the on the **ellipsis** button ![Ellipsis button](/images/expression.jpg) to open a CSS Editor and add to those details, or click on **Browse** to browse for a CSS file to add in customised styling. See [Global CSS file](/docs/low-code/global-css/) for more details.
 
 Make sure to click on **Save Changes** ![Save changes button](/images/save-changes.jpg) to save any changes made and click on **Back** to go back to the **Subscription** page.
 
@@ -156,7 +156,7 @@ On this page you can make the following changes:
 
 - **Mobile Icon** - click on **Browse** to browse for a logo to add from your PC or network. This will be displayed on the home screen of your users' mobile devices. The recommended size is 512px x 512px.
 
-When you are finished making changes click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
+When you are finished making changes, click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
 
 
 
@@ -164,7 +164,7 @@ When you are finished making changes click on **Save Changes** ![Save changes bu
 
 General settings include details like your company name, subscription ID, renewal date and business identity (your workspace URL, for example, green-itr.kianda.com). You can also enable a Global SMTP Mail Connector to enable email flow to/from your Kianda workspace.
 
-Within general settings administrators can set who the Global Administrator is, or the main administrator for the workspace.
+Within general settings, administrators can set who the Global Administrator is, or the main administrator for the workspace.
 
 <img src="/images/company-details.jpg" alt="Subscription details" style="zoom:80%;" />
 
@@ -205,13 +205,11 @@ When you are finished making changes click on **Save Changes** ![Save changes bu
 
 ## Single Sign-On (SSO)
 
-Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. When you click on **Single Sign-On** in **Subscription** page you are brought to the **Single Sign-on Details** page. See [Single Sign On][/docs/security/sso/] for more details.
+Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. When you click on **Single Sign-On** in **Subscription** page, you are brought to the **Single Sign-on Details** page. See [Single Sign On](/docs/security/sso/) for more details.
 
 ![Single Sign-On Details](/images/single-sign-on-details.jpg)
 
-
-
-At any time, you can go to left-hand side menu and **Subscription** to edit any of the settings for the headings above.
+At any time, you can go to left-hand side menu and click on **Subscription** to edit any of the settings for the headings above.
 
 
 
