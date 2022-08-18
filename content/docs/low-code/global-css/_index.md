@@ -1,14 +1,20 @@
 ---
 title: "Global CSS file"
 weight: 6
-typora-root-url: ..\..\..\static
+typora-root-url: ..\..\..\..\static
 ---
 
-Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace **Administrator** you can access a **Global CSS File** to make changes to the look and feel of the site as well as processes. The **Global CSS file** exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site. 
+Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace **Administrator** you can add a **Global CSS File** to make changes to the look and feel of the site as well as processes. The **Global CSS file editor** exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site, see [Subscription](/docs/platform/administration/subscription/) for an introduction to the **Subscription** function.
 
 
 
 ## When to use ##
+
+Remember the visual style of processes and individual controls like buttons, can be heavily customised using Kianda [**Designer**](/docs/platform/application-designer/designer/) to achieve a unique look that is both appealing to the eye and practical. Many of these changes can be achieved simply by using the provided customisation controls within **Designer**, for example selecting a button, and clicking on the **Edit/pen** icon to make changes. 
+
+![Selected button example](/images/button-example.jpg)
+
+Selecting the button in this way to edit it, will allow you to select the colour scheme of the control and assign an icon to it from a large library of available icons. 
 
 You may want to modify or add to the **Global CSS File** when you want to change the look and feel of the **site or your processes**. You can do this by selecting individual fields in the **process** via the unique name or can change entire elements by selecting their element name or a selector. Once items are added to the file they will be available globally in the **Subscription** function within **Administration**. 
 
@@ -30,9 +36,9 @@ To access the Global CSS file:
 
    ![CSS Editor](/images/css-editor.jpg)
 
-5. Within the file there are some items already added that can be expanded upon. For example these items include:
+5. Within the file there may already be some items added that can be expanded upon, or you can create your own, for example:
 
-   - **Class selectors** for example:
+   - **Class selectors** example
 
    ```css
    .widget-list-row {

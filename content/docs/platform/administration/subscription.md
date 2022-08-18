@@ -4,7 +4,11 @@ weight: 3
 typora-root-url: ..\..\..\..\static
 ---
 
-The **Subscription** function is available to **administrators** and is found in the left-hand side pane, under **Administration**. This function allows you to update the look and feel of your workspace, set regional, mobile and single sign-on settings and design the login page.
+The **Subscription** function is available to **administrators** and is found in the left-hand side pane, under **Administration**. This function allows you to update the look and feel of your workspace, set regional, mobile and single sign-on settings and design the login page. 
+
+For **developers** who wish to **customise and style** their Kianda workspace and processes there are options to support you in achieving a high level of design that is instantly recognisable for users. These options include creating a **custom branding style**, customised **login page** and option to control how your platform will look on **mobile devices**. 
+
+
 
 ## How to get started
 
@@ -75,7 +79,7 @@ The options for your workspace layout are:
 
 ### Themes ###
 
-Click on a Theme of choice. Options range from two-tone layouts, to those with a dark left-hand side menu as shown in the middle of the image below. 
+Click on a **Theme** of choice. Options range from two-tone layouts, to those with a dark left-hand side menu as shown in the middle of the image below. 
 
 ![Themes](/images/themes.jpg)
 
@@ -105,9 +109,9 @@ On this page you can make the following changes:
 
 - **Font Color** - as with the Background Color, to create a font colour, choose an appropriate colour using the colour box itself or type in a value in the field beside the colour.
 
-- **Tagline 1** - type in the first tagline that will appear on the login page. A maximum of 25 characters is recommended.
+- **Tagline 1** - type in the first tagline that will appear under your company logo on the login page. A maximum of 25 characters is recommended.
 
-- **Tagline 2** - type in the second tagline that will appear on the login page. A maximum of 20 characters is recommended.
+- **Tagline 2** - type in the second tagline that will appear under your company logo on the login page. A maximum of 20 characters is recommended.
 
   ![Taglines](/images/taglines.jpg)
 
@@ -134,15 +138,15 @@ The chosen options are reflected in the text below the fields, for example **dat
 
 ## Mobile Settings
 
-Here you can customise how the Kianda workspace will appear as a mobile app. You can choose your App name, App short name, Splash Screen Colour, and Theme Colour and upload a mobile size icon (note the icon size is 512 x 512 px).
+Here you can customise how the Kianda workspace will appear to users on mobile devices. You can choose your App name, App short name, Splash Screen Colour, and Theme Colour and upload a mobile size icon (note the icon size is 512 x 512 px).
 
 ![Mobile settings](/images/mobile-settings.jpg)
 
 On this page you can make the following changes:
 
-- **App name** - add/change a name for your app/workspace. A maximum of 45 characters is recommended.
+- **App name** - add/change a name to set a custom app name for your app/workspace that reflects your business. A maximum of 45 characters is recommended.
 
-- **App short name** - add/change a  short name for your app/workspace. A maximum of 12 characters is recommended.
+- **App short name** - add/change a shortened name for your app/workspace, for user in areas without space for longer text strings. A maximum of 12 characters is recommended.
 
 - **Splash Screen Color** - to set the introductory screen colour that appears while your application loads (splash screen), you can either click on the colour itself and select a colour in the main view, or using the slider, or type in an RGB, HSL or HEX value in the fields above, or click in the box beside it to add in a HEX value for a colour, for example #037dd3.
 
@@ -150,7 +154,7 @@ On this page you can make the following changes:
 
 - **Theme Color** - as with the Splash Screen Color, choose an appropriate colour for the mobile app theme font using the colour box itself or type in a value in the field beside the colour.
 
-- **Mobile Icon** - click on **Browse** to browse for a logo to add from your PC or network. The recommended size is 512px x 512px.
+- **Mobile Icon** - click on **Browse** to browse for a logo to add from your PC or network. This will be displayed on the home screen of your users' mobile devices. The recommended size is 512px x 512px.
 
 When you are finished making changes click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
 
