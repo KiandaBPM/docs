@@ -16,13 +16,43 @@ Remember the visual style of processes and individual controls like buttons, can
 
 Selecting the button in this way to edit it, will allow you to select the colour scheme of the control and assign an icon to it from a large library of available icons. 
 
-You may want to modify or add to the **Global CSS File** when you want to change the look and feel of the **site or your processes**. You can do this by selecting individual fields in the **process** via the unique name or can change entire elements by selecting their element name or a selector. Once items are added to the file they will be available globally in the **Subscription** function within **Administration**. 
+However, you may want to achieve a **deeper level of customisation**. There are several methods available to combine practicality and ease of user with an aesthetically pleasing design. One option is to modify the **Global CSS File** when you want to change the look and feel of the **site or your processes**. You can do this by selecting individual fields in the **process** via the unique name or can change entire elements by selecting their element name or a selector. Once items are added to the file they will be available globally in the **Subscription** function within **Administration**. 
 
 
 
-## How to get started ##
+## Before you get started
 
-To access the Global CSS file:
+The key to building functional and aesthetically pleasing workspaces and processes within Kianda is to **plan ahead** and create a design in advance that you can then use as your vision and mould your process or workspace into. **Design** **tools** can be used to create **visual** **mock**-**ups** of the processes and workspaces you would like to create, for example the mock-up below was created using **Adobe** **XD**. 
+
+<img src="/images/mock-up-design.jpg" alt="Mock-up design example" style="zoom:80%;" />
+
+Bootstrap has released a **library** that can be imported into Adobe XD that allows you to create designs using **bootstrap** **elements**. This allows you to see all of the **available** **components** you have to create your processes and workspaces, and then create **visually** **pleasing** and **functional** **designs** using these elements. 
+
+The **mock**-**up** was then used as a plan to **create** **this** **process**. You don’t have to create processes or workspaces exactly the same as the mock-ups to create during the **planning** **stage**, but they act as a great **reference** and allow you to have a **solid** **foundation** to build off of whilst still being able to **deviate** from the **design** when the need arises. Go to [Create your first Kianda process](/docs/getting-started/create-first-process/) for advice and tips on planning processes. To help you in planning your CSS design, see the sections below.
+
+### Effective use of CSS classes
+
+Although you may be familiar with the concept of using **CSS** **classes** to apply styling to several methods, you may not be familiar with the concept of using the **name** **field** of a Kianda element to **instantly** **apply** **styes** to that element that you have already developed. Within the **global** **CSS** file, we can create **style** **rules** and have them to apply to any **data**-**name** that contains a name that we precede with a **question** **mark**.
+
+```css
+div[data-name$="?card"].form-group{
+     border-radius: 12px;
+     border: 1px solid #e7eaee;
+     background: white;
+     margin-bottom: 15px;
+     padding-bottom: 1px !important;
+     padding-top: 18px;
+     padding-right: 15px;
+}
+```
+
+It is good practice to use **relevant** and **descriptive** names for these style rules. In the example above we have a “?card” section with styling rules to style an element to that the **appearance** of a card.
+
+
+
+## How to get started with Global CSS ##
+
+To use a Global CSS file:
 
 1. As an **administrator**, go to **Administration** > **Subscription**.
 
