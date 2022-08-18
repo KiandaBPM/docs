@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Administration</title><link>https://docs.kianda.com/docs/platform/administration/</link><description>Recent content in Administration on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/administration/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/platform/administration/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/designer/</guid><description>
-&lt;p>Kianda &lt;strong>Designer&lt;/strong> is available to administrators and those users with the role &lt;strong>Designer&lt;/strong>. Designer is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer you can create forms, add controls and rules to create processes to work the way you want.&lt;/p>
+&lt;p>Kianda &lt;strong>Designer&lt;/strong> is available to administrators and those users with the role &lt;strong>Design business process&lt;/strong>. Designer is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer you can create forms, add controls and rules to create processes to work the way you want.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To start creating a process so that Kianda Designer will open:&lt;/p>
+&lt;p>Using your Administration or Design business process role start creating or editing a process so that Kianda Designer will open:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Designer&lt;/strong>.&lt;/p>
@@ -15,7 +15,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/training-folder.jpg" alt="Training folder of processes">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on a process name to see the process design. You are then brought into &lt;strong>Kianda Designer&lt;/strong>, see &lt;a href="#design-view">Design view&lt;/a> details below.&lt;/p>
+&lt;p>Click on a process name to see the process design. You are then brought into &lt;strong>Kianda Designer&lt;/strong>, see &lt;a href="#designer-view">Designer view&lt;/a> details below.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To import a process created for example in another workspace, click on &lt;strong>Import&lt;/strong> &lt;img src="https://docs.kianda.com/images/import_frame.png" alt="Import button">. Also note that from the main process view you can also export processes listed here for use in another workspace, by clicking on &lt;strong>Export&lt;/strong> &lt;img src="https://docs.kianda.com/images/export_frame.png" alt="Export process">.&lt;/p>
@@ -56,13 +56,13 @@
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Subscription</title><link>https://docs.kianda.com/docs/platform/administration/subscription/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/subscription/</guid><description>
 &lt;p>The &lt;strong>Subscription&lt;/strong> function is available to &lt;strong>administrators&lt;/strong> and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. This function allows you to update the look and feel of your workspace, set regional, mobile and single sign-on settings and design the login page.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To view use the Scheduled tasks function:&lt;/p>
+&lt;p>To view use the Subscription function as an administrator:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Subscription&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You can view any current tasks in the main tasks view.&lt;/p>
+&lt;p>The main Subscription page opens.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/subscription-page.jpg" alt="Subscription view">&lt;/p>
 &lt;p>In this view you can typically make changes to six areas:&lt;/p>
 &lt;ul>
@@ -70,8 +70,8 @@
 &lt;li>&lt;strong>Design Login Page&lt;/strong> allows you to design the login page for your workspace for example to change, background and font colours and add taglines.&lt;/li>
 &lt;li>&lt;strong>Regional Settings&lt;/strong> allows you to set your operational &lt;strong>time zone&lt;/strong> and &lt;strong>regional settings&lt;/strong>, such as English Ireland for language.&lt;/li>
 &lt;li>&lt;strong>Mobile Settings&lt;/strong> allows you to customise how the Kianda workspace will appear as a mobile app.&lt;/li>
-&lt;li>&lt;strong>Subscription Details&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Single Sign-On (SSO)&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Subscription Details&lt;/strong> allows you to view your company details and enable a Global SMTP Mail connector for sending automated emails.&lt;/li>
+&lt;li>&lt;strong>Single Sign-On (SSO)&lt;/strong> allows you to enable Single sign-on so that a user can access Kianda using the same credentials they use everyday for example logging into Office 365.&lt;/li>
 &lt;/ul>
 &lt;p>These areas are covered in more detail in the sections below.&lt;/p>
 &lt;/li>
@@ -84,7 +84,7 @@
 &lt;p>You can access this section by clicking on &lt;strong>Open Wizard&lt;/strong> &amp;gt; &lt;strong>Look and Feel&lt;/strong> or by clicking on &lt;strong>Look and Feel&lt;/strong> in the main &lt;strong>Subscription&lt;/strong> page.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/look-and-feel.jpg" alt="Look and feel">&lt;/p>
 &lt;p>&lt;strong>Note&lt;/strong>: Logo sizes are 200 x 65px for a full-sized logo and 45 x 45px for a collapsed logo. You can also select a colour scheme under Themes and preview the results under Workspace preview on the right.&lt;/p>
-&lt;p>Details for each of the areas within the page - [Logos][#logos], &lt;a href="#layout">Layout&lt;/a>. &lt;a href="#themes">Themes&lt;/a> and &lt;a href="#css">CSS&lt;/a> are available below. Make sure to click on &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made.&lt;/p>
+&lt;p>Details for each of the areas within the page - &lt;a href="#logos">Logos&lt;/a>, &lt;a href="#layout">Layout&lt;/a>. &lt;a href="#themes">Themes&lt;/a> and &lt;a href="#css">CSS&lt;/a> are available below. Make sure to click on &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button"> to save any changes made.&lt;/p>
 &lt;h3 id="logos">Logos&lt;/h3>
 &lt;p>To add a logo for your company:&lt;/p>
 &lt;ol>
@@ -95,11 +95,11 @@
 &lt;p>The options for your workspace layout are:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Boxed&lt;/strong> - moving the slider across to enable a boxed layout, that is the workspace appears in a box in the browser, with space appearing around the box and centred content.&lt;/p>
+&lt;p>&lt;strong>Boxed&lt;/strong> - moving the slider across to enable a boxed layout, that is the workspace appears in a box in the browser, with space appearing around the box and content is centred.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/boxed-layout.jpg" alt="Boxed layout">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>RTL&lt;/strong> - moved the slider across to enable a right-to-left (RTL) layout, that is text, layout, icons and so on are right -hand based.&lt;/p>
+&lt;p>&lt;strong>RTL&lt;/strong> - moved the slider across to enable a right-to-left (RTL) layout, that is text, layout, icons and so on are right-hand based.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Disable Zoom on Mobile&lt;/strong> - move the slider across to enable the &amp;lsquo;disable zoom on mobile&amp;rsquo; option, which means that the zooming option is disabled on mobile web pages.&lt;/p>
@@ -111,11 +111,11 @@
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="themes">Themes&lt;/h3>
-&lt;p>Click on a Theme of choice, options range from two-tone layouts, to those with a dark left-hand side menu as shown in the middle of the image below.&lt;/p>
+&lt;p>Click on a Theme of choice. Options range from two-tone layouts, to those with a dark left-hand side menu as shown in the middle of the image below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/themes.jpg" alt="Themes">&lt;/p>
 &lt;h3 id="css">CSS&lt;/h3>
-&lt;p>In this section you can modify the &lt;strong>Global CSS File&lt;/strong> to make changes to the look and feel of the site as well as processes. Here you can access the existing CSS details by clicking on the on the &lt;strong>ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/expression.jpg" alt="Ellipsis button"> to open a CSS Editor and add to those details, or click on &lt;strong>Browse&lt;/strong> to browse for a CSS file. See &lt;a href="https://docs.kianda.com/images//docs/low-code/global-css-file/">Global CSS file&lt;/a> for more details.&lt;/p>
-&lt;p>Make sure to click on &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
+&lt;p>In this section you can modify the &lt;strong>Global CSS File&lt;/strong> to make changes to the look and feel of the site as well as processes. If you have an existing CSS file, you can access the existing CSS details by clicking on the on the &lt;strong>ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/expression.jpg" alt="Ellipsis button"> to open a CSS Editor and add to those details, or click on &lt;strong>Browse&lt;/strong> to browse for a CSS file to add in customised styling. See &lt;a href="https://docs.kianda.com/images//docs/low-code/global-css-file/">Global CSS file&lt;/a> for more details.&lt;/p>
+&lt;p>Make sure to click on &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button"> to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
 &lt;h2 id="design-login-page">Design Login Page&lt;/h2>
 &lt;p>This section allows you to design the login page, choose background and font colours and complete fields for Taglines.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/design-login-page.jpg" alt="Design login page">&lt;/p>
@@ -139,7 +139,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/taglines.jpg" alt="Taglines">&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>When you are finished making changes click on ** &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
+&lt;p>When you are finished making changes click on &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
 &lt;h2 id="regional-settings">Regional Settings&lt;/h2>
 &lt;p>Here you can set your operational time zone and regional settings, such as English Ireland, from the dropdown.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/regional-settings.jpg" alt="Regional settings">&lt;/p>
