@@ -11,7 +11,9 @@ The **Text analysis** rule allows you to analyse small or large amounts of text.
 - **Sentiment analysis**
 - **Extract key phrases**
 
-With each function, the AI is programmed to distil information and meaning from a text block. For example, sentiment analysis can be used to give a **Positive** or **Negative** result on feedback forms or item reviews. The **Extract key phrases** on the other hand is programmed to extract most relevant words or expressions from a block of text.
+With each function, the AI is programmed to distil information and meaning from a text block. For example, **extract key phrases** function is programmed to extract most relevant words or expressions from a block of text. **Sentiment analysis** on the other hand can be used to give a **Positive** or **Negative** result on feedback forms or item reviews and presented in a dashboard, see image below for an example dashboard sentiment analysis:
+
+![sentiment dashboard displaying score and feedback.](/images/ai-rule-dashboard.jpg)
 
 ## When to use
 
