@@ -30,7 +30,7 @@ You can **generate excel workbooks** within Kianda processes and **populate** th
 
    ![Table example - excel template](/images/excel-table-example.jpg)
 
-   When you add in the above table into excel as a template **smart tag**, it will look as follows:
+   When you add in the above table into Excel as a template **smart tag**, it will look as follows:
 
    ![excel table smart tag](/images/excel-table-template.jpg)
 
