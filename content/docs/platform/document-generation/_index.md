@@ -44,7 +44,11 @@ When you want to use Kianda add-in for both a Word or Excel template, you need t
 
 ![Smart tag explanation](/images/excel-add-in-smart-tag.jpg)
 
-Before you get started, you also need to have the outline of a template ready so that you can import data from your process by using the smart tags. For each instance of a process the smart tags will pull values from that a specific process instance, but the outline of the template will stay the same. For example, if you create a Health & Safety checklist process, the outline of the checklist is always the same but the values may differ for each time the checlist is filled out.
+Before you get started, you also need to have the outline of a template ready so that you can import data from your process by using the smart tags. For each instance of a process the smart tags will pull values from that a specific process instance, but the outline of the template will stay the same. For example, if you create a Health & Safety checklist process, the outline of the checklist is always the same but the values may differ for each time the checklist is filled out. A template outline represents the generic outline of what data will be needed in the final generated document, for example, you need the date, the company, location and relevant checks that need to be performed. See image below for an example of a template outline:
+
+###### []()
+
+![Template outline](/images/doc-gen-template-outline.jpg)
 
 We have briefly introduced the concept of document generation in Kianda. Now let’s look at the following areas in more detail:
 

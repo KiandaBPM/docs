@@ -8,6 +8,10 @@ typora-root-url: ..\..\..\..\static
 
 You can **generate excel workbooks** within Kianda processes and **populate** the workbooks with **data captured** within each process instance. This could be useful, for example, when working with a lot of table data within Kianda. The add-in will **automatically** populate excel cells with the data from a table within your process. Each time value changes inside of a table, those values will be reflected in the Excel workbook every time you generate a new workbook.
 
+## Before you get started
+
+In advance of creating a template, you need to install Kianda add-in for word. Go to [Installing Kianda add-in for Word or Excel](/docs/platform/document-generation/#installing-kianda-add-in-to-word-or-excel) and follow the steps of instalation. You also need to create an template outline before starting, to learn more about what a template outline is go to [template outline](/docs/platform/document-generation/#heading).
+
 ### Using the Kianda Add-in for Excel
 
 1. On the right-hand side of the Home tab, click on the **Kianda Add-in**.
