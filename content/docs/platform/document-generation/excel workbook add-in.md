@@ -8,6 +8,10 @@ typora-root-url: ..\..\..\..\static
 
 You can **generate excel workbooks** within Kianda processes and **populate** the workbooks with **data captured** within each process instance. This could be useful, for example, when working with a lot of table data within Kianda. The add-in will **automatically** populate excel cells with the data from a table within your process. Each time value changes inside of a table, those values will be reflected in the Excel workbook every time you generate a new workbook.
 
+## Before you get started
+
+In advance of creating a template, you need to install Kianda add-in for word. Go to [Installing Kianda add-in for Word or Excel](/docs/platform/document-generation/#installing-kianda-add-in-to-word-or-excel) and follow the steps of installation. You also need to create a template outline before starting, to learn more about what a template outline is, go to [template outline](/docs/platform/document-generation/#heading).
+
 ### Using the Kianda Add-in for Excel
 
 1. On the right-hand side of the Home tab, click on the **Kianda Add-in**.
@@ -16,7 +20,7 @@ You can **generate excel workbooks** within Kianda processes and **populate** th
 
 2. In the Kianda pane, log in using your Kianda username and password, select your subscription and press **Continue**.
 
-3. Click on the process link button ![Process link button](https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif) to get a drop-down list of Kianda processes that you have access to based on your role, for example Administrator or Designer.
+3. Click on the process link button ![Process link button](https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif) to get a drop-down list of Kianda processes that you have access to.
 
 4. Select a relevant process and a relevant form that you want to create a template for.
 

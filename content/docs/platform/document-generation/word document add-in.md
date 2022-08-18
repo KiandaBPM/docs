@@ -6,13 +6,11 @@ typora-root-url: ..\..\..\..\static
 
 ## Introduction
 
-You can **generate reports** within Kianda processes and **populate** the reports with **data captured** within each process instance. This could be useful, for example, for inspection reports where a report template can be used to show the information the engineer input to a **Kianda form** during his inspection. Each time an inspection is performed, a report is generated based on a Word template and the report shows the relevant information that was captured during that particular inspection.
+You can **generate reports** within Kianda processes and **populate** the reports with **data captured** within each process instance. This could be useful, for example, when performing a health & safety check on a building site. A template can be used by an inspector to have a **generic outline** of what needs to be completed when preforming the check. Each time a check is performed, the generated report may contain different data. This data is **pulled** directly from the each **individual check** when performed by an inspector.
 
-*Microsoft Word template with Kianda form fields*
+## Before you get started
 
-![Get add-ins](/images/word-kianda-example.jpg)
-
-In the example above, a report will generate data pulled from a Kianda process instance (record) that contains the date, company and location data within an ‘Inspection Form’ and a ‘Request Form’. To create this kind of template, you can use a **Kianda Add-in** in Word to link your document to your Kianda process.
+In advance of creating a template, you need to install Kianda add-in for word. Go to [Installing Kianda add-in for Word or Excel](/docs/platform/document-generation/#installing-kianda-add-in-to-word-or-excel) and follow the steps of installation. You also need to create an template outline before starting, to learn more about what a template outline is, go to [template outline](/docs/platform/document-generation/#heading).
 
 ### Using the Kianda Add-in for Word
 
@@ -22,7 +20,7 @@ In the example above, a report will generate data pulled from a Kianda process i
 
 2. In the Kianda pane log in using your Kianda username and password, select your subscription and press **Continue**.
 
-3. Click on the process link button ![Process link button](https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif) to get a dropdown list of Kianda processes that you have access to based on your role, for example Administrator or Designer.
+3. Click on the process link button ![Process link button](https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif) to get a drop-down list of Kianda processes that you have access to.
 
 4. Select a relevant process and a relevant form that you want to create a template for.
 
@@ -42,11 +40,15 @@ In the example above, a report will generate data pulled from a Kianda process i
 
 You can use different types of input controls when creating your template for an Word document, the images below represents the value pulled from the form into a Word document for each of the input controls that are available in Kianda:
 
-*Excel template used to represent all values from the above form.*
+###### *Example form with all input controls in Kianda.* 
+
+![Example form representing all input controls of Kianda](/images/excel-add-in-inputs.jpg)
+
+*Word template used to represent all values from the above [form](/docs/platform/document-generation/word-document-add-in/#example-form-with-all-input-controls-in-kianda).*
 
 ![Excel template](/images/word-add-in-template.jpg)
 
-*Word document result for the example values from the above form.*
+*Word document result for the example values from the above [form](/docs/platform/document-generation/word-document-add-in/#example-form-with-all-input-controls-in-kianda).*
 
 ![Excel workbook result from a process instance](/images/word-add-in-result.jpg)
 
