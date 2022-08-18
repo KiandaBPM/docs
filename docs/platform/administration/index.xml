@@ -55,6 +55,7 @@
 &lt;p>To read more about Designer in detail and how to use the interface to create forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Subscription</title><link>https://docs.kianda.com/docs/platform/administration/subscription/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/subscription/</guid><description>
 &lt;p>The &lt;strong>Subscription&lt;/strong> function is available to &lt;strong>administrators&lt;/strong> and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. This function allows you to update the look and feel of your workspace, set regional, mobile and single sign-on settings and design the login page.&lt;/p>
+&lt;p>For &lt;strong>developers&lt;/strong> who wish to &lt;strong>customise and style&lt;/strong> their Kianda workspace and processes there are options to support you in achieving a high level of design that is instantly recognisable for users. These options include creating a &lt;strong>custom branding style&lt;/strong>, customised &lt;strong>login page&lt;/strong> and option to control how your platform will look on &lt;strong>mobile devices&lt;/strong>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To view use the Subscription function as an administrator:&lt;/p>
 &lt;ol>
@@ -111,7 +112,7 @@
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="themes">Themes&lt;/h3>
-&lt;p>Click on a Theme of choice. Options range from two-tone layouts, to those with a dark left-hand side menu as shown in the middle of the image below.&lt;/p>
+&lt;p>Click on a &lt;strong>Theme&lt;/strong> of choice. Options range from two-tone layouts, to those with a dark left-hand side menu as shown in the middle of the image below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/themes.jpg" alt="Themes">&lt;/p>
 &lt;h3 id="css">CSS&lt;/h3>
 &lt;p>In this section you can modify the &lt;strong>Global CSS File&lt;/strong> to make changes to the look and feel of the site as well as processes. If you have an existing CSS file, you can access the existing CSS details by clicking on the on the &lt;strong>ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/expression.jpg" alt="Ellipsis button"> to open a CSS Editor and add to those details, or click on &lt;strong>Browse&lt;/strong> to browse for a CSS file to add in customised styling. See &lt;a href="https://docs.kianda.com/images//docs/low-code/global-css-file/">Global CSS file&lt;/a> for more details.&lt;/p>
@@ -132,10 +133,10 @@
 &lt;p>&lt;strong>Font Color&lt;/strong> - as with the Background Color, to create a font colour, choose an appropriate colour using the colour box itself or type in a value in the field beside the colour.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Tagline 1&lt;/strong> - type in the first tagline that will appear on the login page. A maximum of 25 characters is recommended.&lt;/p>
+&lt;p>&lt;strong>Tagline 1&lt;/strong> - type in the first tagline that will appear under your company logo on the login page. A maximum of 25 characters is recommended.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Tagline 2&lt;/strong> - type in the second tagline that will appear on the login page. A maximum of 20 characters is recommended.&lt;/p>
+&lt;p>&lt;strong>Tagline 2&lt;/strong> - type in the second tagline that will appear under your company logo on the login page. A maximum of 20 characters is recommended.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/taglines.jpg" alt="Taglines">&lt;/p>
 &lt;/li>
 &lt;/ul>
@@ -151,15 +152,15 @@
 &lt;p>When you are finished making changes click on &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button"> to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
 &lt;p>The chosen options are reflected in the text below the fields, for example &lt;strong>date and time format&lt;/strong>.&lt;/p>
 &lt;h2 id="mobile-settings">Mobile Settings&lt;/h2>
-&lt;p>Here you can customise how the Kianda workspace will appear as a mobile app. You can choose your App name, App short name, Splash Screen Colour, and Theme Colour and upload a mobile size icon (note the icon size is 512 x 512 px).&lt;/p>
+&lt;p>Here you can customise how the Kianda workspace will appear to users on mobile devices. You can choose your App name, App short name, Splash Screen Colour, and Theme Colour and upload a mobile size icon (note the icon size is 512 x 512 px).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/mobile-settings.jpg" alt="Mobile settings">&lt;/p>
 &lt;p>On this page you can make the following changes:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>App name&lt;/strong> - add/change a name for your app/workspace. A maximum of 45 characters is recommended.&lt;/p>
+&lt;p>&lt;strong>App name&lt;/strong> - add/change a name to set a custom app name for your app/workspace that reflects your business. A maximum of 45 characters is recommended.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>App short name&lt;/strong> - add/change a short name for your app/workspace. A maximum of 12 characters is recommended.&lt;/p>
+&lt;p>&lt;strong>App short name&lt;/strong> - add/change a shortened name for your app/workspace, for user in areas without space for longer text strings. A maximum of 12 characters is recommended.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Splash Screen Color&lt;/strong> - to set the introductory screen colour that appears while your application loads (splash screen), you can either click on the colour itself and select a colour in the main view, or using the slider, or type in an RGB, HSL or HEX value in the fields above, or click in the box beside it to add in a HEX value for a colour, for example #037dd3.&lt;/p>
@@ -169,7 +170,7 @@
 &lt;p>&lt;strong>Theme Color&lt;/strong> - as with the Splash Screen Color, choose an appropriate colour for the mobile app theme font using the colour box itself or type in a value in the field beside the colour.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Mobile Icon&lt;/strong> - click on &lt;strong>Browse&lt;/strong> to browse for a logo to add from your PC or network. The recommended size is 512px x 512px.&lt;/p>
+&lt;p>&lt;strong>Mobile Icon&lt;/strong> - click on &lt;strong>Browse&lt;/strong> to browse for a logo to add from your PC or network. This will be displayed on the home screen of your users&amp;rsquo; mobile devices. The recommended size is 512px x 512px.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;p>When you are finished making changes click on &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
