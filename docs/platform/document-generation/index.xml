@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Document generation</title><link>https://docs.kianda.com/docs/platform/document-generation/</link><description>Recent content in Document generation on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/document-generation/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Word document add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>You can &lt;strong>generate reports&lt;/strong> within Kianda processes and &lt;strong>populate&lt;/strong> the reports with &lt;strong>data captured&lt;/strong> within each process instance. This could be useful, for example, when performing a health &amp;amp; safety check on a buliding site. A template can be used by an inspector to have a &lt;strong>generic outline&lt;/strong> of what needs to be completed when prefoming the check. Each time a check is performed, the generated report may contain different data.&lt;/p>
+&lt;p>You can &lt;strong>generate reports&lt;/strong> within Kianda processes and &lt;strong>populate&lt;/strong> the reports with &lt;strong>data captured&lt;/strong> within each process instance. This could be useful, for example, when performing a health &amp;amp; safety check on a building site. A template can be used by an inspector to have a &lt;strong>generic outline&lt;/strong> of what needs to be completed when preforming the check. Each time a check is performed, the generated report may contain different data. This data is &lt;strong>pulled&lt;/strong> directly from the each &lt;strong>individual check&lt;/strong> when performed by an inspector.&lt;/p>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of creating a template, you need to install Kianda add-in for word. Go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/#installing-kianda-add-in-to-word-or-excel">Installing Kianda add-in for Word or Excel&lt;/a> and follow the steps of instalation. You also need to create an template outline before starting, to learn more about what a template outline is go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/#heading">template outline&lt;/a>.&lt;/p>
+&lt;p>In advance of creating a template, you need to install Kianda add-in for word. Go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/#installing-kianda-add-in-to-word-or-excel">Installing Kianda add-in for Word or Excel&lt;/a> and follow the steps of installation. You also need to create an template outline before starting, to learn more about what a template outline is, go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/#heading">template outline&lt;/a>.&lt;/p>
 &lt;h3 id="using-the-kianda-add-in-for-word">Using the Kianda Add-in for Word&lt;/h3>
 &lt;ol>
 &lt;li>
@@ -13,7 +13,7 @@
 &lt;p>In the Kianda pane log in using your Kianda username and password, select your subscription and press &lt;strong>Continue&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the process link button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif" alt="Process link button"> to get a dropdown list of Kianda processes that you have access to based on your role, for example Administrator or Designer.&lt;/p>
+&lt;p>Click on the process link button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif" alt="Process link button"> to get a drop-down list of Kianda processes that you have access to.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Select a relevant process and a relevant form that you want to create a template for.&lt;/p>
@@ -78,7 +78,7 @@
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>You can &lt;strong>generate excel workbooks&lt;/strong> within Kianda processes and &lt;strong>populate&lt;/strong> the workbooks with &lt;strong>data captured&lt;/strong> within each process instance. This could be useful, for example, when working with a lot of table data within Kianda. The add-in will &lt;strong>automatically&lt;/strong> populate excel cells with the data from a table within your process. Each time value changes inside of a table, those values will be reflected in the Excel workbook every time you generate a new workbook.&lt;/p>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of creating a template, you need to install Kianda add-in for word. Go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/#installing-kianda-add-in-to-word-or-excel">Installing Kianda add-in for Word or Excel&lt;/a> and follow the steps of instalation. You also need to create an template outline before starting, to learn more about what a template outline is go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/#heading">template outline&lt;/a>.&lt;/p>
+&lt;p>In advance of creating a template, you need to install Kianda add-in for word. Go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/#installing-kianda-add-in-to-word-or-excel">Installing Kianda add-in for Word or Excel&lt;/a> and follow the steps of installation. You also need to create a template outline before starting, to learn more about what a template outline is, go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/#heading">template outline&lt;/a>.&lt;/p>
 &lt;h3 id="using-the-kianda-add-in-for-excel">Using the Kianda Add-in for Excel&lt;/h3>
 &lt;ol>
 &lt;li>
@@ -89,7 +89,7 @@
 &lt;p>In the Kianda pane, log in using your Kianda username and password, select your subscription and press &lt;strong>Continue&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the process link button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif" alt="Process link button"> to get a drop-down list of Kianda processes that you have access to based on your role, for example Administrator or Designer.&lt;/p>
+&lt;p>Click on the process link button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/process-link-button.gif" alt="Process link button"> to get a drop-down list of Kianda processes that you have access to.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Select a relevant process and a relevant form that you want to create a template for.&lt;/p>
