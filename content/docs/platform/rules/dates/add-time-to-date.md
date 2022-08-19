@@ -30,7 +30,7 @@ You can add this rule:
 
 ## Before you get started
 
-In advance of using this rule, you need to have **created one or more forms, complete with control fields**. For example, you must have a created field in your form that the add time to date rule can be applied to.
+In advance of using this rule, you need to have **created one or more forms, complete with control fields**. For example, you must have a created field in your form that the add time to date rule can be applied to. See [Date control](/docs/platform/controls/input/date/) for more information on using date fields.
 
  
 
@@ -82,9 +82,11 @@ In advance of using this rule, you need to have **created one or more forms, com
 
      
 
-   * **Destination date field** - choose the date field within your form which this new date is to be stored. 
+   * **Destination date field** - choose the date field within your form which this new date is to be stored. If the **Use business hours?** checkbox is ticked, you will be prompted to enter the start and end time of your business' working day, using the time picker list.
 
      ![Date rules destination date field](/images/date-rules-add-time-to-date-destination.jpg)
+
+     
 
    * **Date calculation settings** - you can select whether the time added to your chosen date field:
 
@@ -92,11 +94,9 @@ In advance of using this rule, you need to have **created one or more forms, com
      * Excludes weekends
      * Excludes weekends and special dates
      * Excludes special dates 
-   
-     This setting could be utilised to disallow notifications sent outside of working hours.
-   
-   * **Special dates** - you can also define custom special dates and save them accordingly. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the **Save special dates for reuse** button ![Date rules save special date button](/images/save-special-date-btn.jpg). To load previously saved dates, click on the **Load special dates** button ![Date rules load special date button](/images/load-special-date-btn.jpg). 
-   
+
+   * **Special dates** - you can also define custom special dates and save them accordingly. Click on Add special date to add in a date. Enter a label for this special date in the left field and a date in the right field. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the **Save special dates for reuse** button ![Date rules save special date button](/images/save-special-date-btn.jpg). To load previously saved dates, click on the **Load special dates** button ![Date rules load special date button](/images/load-special-date-btn.jpg). 
+
      ![Date rules special dates](/images/date-rules-add-time-to-date-calculations.jpg)
 
 6. Finally, clicking on the **OK** ![OK button](/images/ok.png) button will save the new rule you have just created and apply it to the chosen field.
