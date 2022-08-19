@@ -351,27 +351,29 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: Date rules</title><link>https://docs.kianda.com/docs/platform/rules/dates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/</guid><description>
-&lt;p>&lt;strong>Date&lt;/strong> rules is a category of &lt;a href="https://docs.kianda.com/docs/platform/rules/">rules&lt;/a> that allows for the calculation and manipulation of dates, for example to add time units to a date, to compare dates and allow customised formatting of date display.&lt;/p>
+&lt;p>&lt;strong>Date&lt;/strong> rules is a category of &lt;a href="https://docs.kianda.com/docs/platform/rules/">rules&lt;/a> that allows for the calculation, manipulation and general formatting of times and dates. Date rules can be utilised to set the time of a scheduled task, determine which process user submitted an instance first, and format dates that are inputted in date fields. To learn more about dates, see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>.&lt;/p>
+&lt;p>Below is an example of a date rule in operation; a &lt;strong>Compare date&lt;/strong> rule is applied to a date field input in a form. If the date entered is after a set deadline, the field &lt;strong>Status - After Deadline?&lt;/strong> in this process is set to Yes. This could be used to ensure that process instances must be completed before an upcoming deadline.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-compare-date-screen.jpg" alt="Date rules">&lt;/p>
 &lt;h2 id="getting-started-with-date-rules">Getting started with Date rules&lt;/h2>
 &lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong>, the &lt;strong>Date&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Dates&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-all.jpg" alt="Date rules">&lt;/p>
 &lt;p>There are four types of &lt;strong>Date&lt;/strong> rules as follows:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Add time to date&lt;/strong> - this rule allows the addition of time to a date which can be based on a chosen parameter such as starting from now, today or another specified value.&lt;/p>
+&lt;p>&lt;strong>Add time to date&lt;/strong> - this rule allows the addition of time to a date which can be based on a chosen be parameter such as starting from now, today or another specified value. This can used in conjunction with the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/">Schedule a rule&lt;/a> rule to schedule reminders for certain process instances.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Calculate time&lt;/strong> - this rule calculates the number of time units between two dates, or from now.&lt;/p>
+&lt;p>&lt;strong>Calculate time&lt;/strong> - this rule calculates the number of time units between two dates, or between now/today and a given date.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Compare dates&lt;/strong> - this rule allows the comparison of date fields to know if one date is for example, between dates, before or after a given date.&lt;/p>
+&lt;p>&lt;strong>Compare dates&lt;/strong> - this rule allows the comparison of date fields to know if one date is for example, between dates, before or after a given date. The rule could be used to ensure that process instances must be completed before an upcoming deadline.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Format date&lt;/strong> - this rule applies custom formatting to input date fields.&lt;/p>
+&lt;p>&lt;strong>Format date&lt;/strong> - this rule applies custom formatting to input date fields so you can choose the format of the date (for example, parsing the date format MM/DD/YY to DD/MM/YY).&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: Form action rules</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/</guid><description>
+&lt;p>We have briefly introduced the four types of Date rules. To read more about each of the rule types go to the links below:&lt;/p></description></item><item><title>Docs: Form action rules</title><link>https://docs.kianda.com/docs/platform/rules/form-actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/form-actions/</guid><description>
 &lt;p>Rules within the &lt;strong>Form action&lt;/strong> rules category allow you to perform form specific actions on forms and processes such as saving a form / process, submitting a form, closing a form, deleting a process and validating form input.&lt;/p>
 &lt;h2 id="getting-started-with-form-action-rules">Getting started with Form action rules&lt;/h2>
 &lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>Form action&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Form action&lt;/strong>.&lt;/p>

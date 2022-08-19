@@ -14,7 +14,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the add time to date rule can be applied to.&lt;/p>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the add time to date rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -76,7 +76,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Destination date field&lt;/strong> - choose the date field within your form which this new date is to be stored.&lt;/p>
+&lt;p>&lt;strong>Destination date field&lt;/strong> - choose the date field within your form which this new date is to be stored. If the &lt;strong>Use business hours?&lt;/strong> checkbox is ticked, you will be prompted to enter the start and end time of your business&amp;rsquo; working day, using the time picker list.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-destination.jpg" alt="Date rules destination date field">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -87,10 +87,9 @@
 &lt;li>Excludes weekends and special dates&lt;/li>
 &lt;li>Excludes special dates&lt;/li>
 &lt;/ul>
-&lt;p>This setting could be utilised to disallow notifications sent outside of working hours.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Special dates&lt;/strong> - you can also define custom special dates and save them accordingly. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the &lt;strong>Save special dates for reuse&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-special-date-btn.jpg" alt="Date rules save special date button">. To load previously saved dates, click on the &lt;strong>Load special dates&lt;/strong> button &lt;img src="https://docs.kianda.com/images/load-special-date-btn.jpg" alt="Date rules load special date button">.&lt;/p>
+&lt;p>&lt;strong>Special dates&lt;/strong> - you can also define custom special dates and save them accordingly. Click on Add special date to add in a date. Enter a label for this special date in the left field and a date in the right field. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the &lt;strong>Save special dates for reuse&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-special-date-btn.jpg" alt="Date rules save special date button">. To load previously saved dates, click on the &lt;strong>Load special dates&lt;/strong> button &lt;img src="https://docs.kianda.com/images/load-special-date-btn.jpg" alt="Date rules load special date button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-calculations.jpg" alt="Date rules special dates">&lt;/p>
 &lt;/li>
 &lt;/ul>
