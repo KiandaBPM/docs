@@ -3,7 +3,7 @@
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Add time to date</title><link>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Add time to date&lt;/strong> rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. An example of this rule would be entering a numeric value of &lt;strong>1&lt;/strong> into the &lt;strong>Time to add or a field&lt;/strong>, selecting &lt;strong>Days&lt;/strong> from the &lt;strong>Time unit&lt;/strong> drop-down list, and selecting &lt;strong>Today()&lt;/strong> from the &lt;strong>To date&lt;/strong> radio box options.&lt;/p>
+&lt;p>The &lt;strong>Add time to date&lt;/strong> rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. An example of this rule would be entering a numeric value of &lt;strong>1&lt;/strong> into the &lt;strong>Time to add or a field&lt;/strong>, selecting &lt;strong>Days&lt;/strong> from the &lt;strong>Time unit&lt;/strong> drop-down list, and selecting &lt;strong>Today()&lt;/strong> from the &lt;strong>To date&lt;/strong> radio button options.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-screen.jpg" alt="Date rules add time to date screen">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>The Add time to date rule should be used when a user wishes to add time to a date. For example, sending a reminder email after a set interval of time.&lt;/p>
@@ -14,7 +14,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the add time to date rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the Add time to date rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -76,7 +76,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Destination date field&lt;/strong> - choose the date field within your form which this new date is to be stored. If the &lt;strong>Use business hours?&lt;/strong> checkbox is ticked, you will be prompted to enter the start and end time of your business&amp;rsquo; working day, using the time picker list.&lt;/p>
+&lt;p>&lt;strong>Destination date field&lt;/strong> - choose the date field within your form which this new date is to be stored. If the &lt;strong>Use business hours?&lt;/strong> checkbox is ticked, you will be prompted to enter the start and end time of your business&amp;rsquo; working day, using the time picker list. It should be noted that this checkbox only appears when the time unit chosen is minutes or hours.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-destination.jpg" alt="Date rules destination date field">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -89,7 +89,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Special dates&lt;/strong> - you can also define custom special dates and save them accordingly. Click on Add special date to add in a date. Enter a label for this special date in the left field and a date in the right field. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the &lt;strong>Save special dates for reuse&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-special-date-btn.jpg" alt="Date rules save special date button">. To load previously saved dates, click on the &lt;strong>Load special dates&lt;/strong> button &lt;img src="https://docs.kianda.com/images/load-special-date-btn.jpg" alt="Date rules load special date button">.&lt;/p>
+&lt;p>&lt;strong>Special dates&lt;/strong> - you can also define custom special dates and save them accordingly. Click on Add special date to add in a date. Enter a label for this special date in the left field and a date in the right field. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the &lt;strong>Save special dates for reuse&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-special-date-btn.jpg" alt="Date rules save special date button">. To load previously saved dates, click on the &lt;strong>Load special dates&lt;/strong> button &lt;img src="https://docs.kianda.com/images/load-special-date-btn.jpg" alt="Date rules load special date button">. You can delete a saved Special date by clicking on the &lt;strong>Bin/Trash&lt;/strong> button&lt;img src="https://docs.kianda.com/images/binicon.png" alt="bin icon">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-calculations.jpg" alt="Date rules special dates">&lt;/p>
 &lt;/li>
 &lt;/ul>
@@ -1868,6 +1868,118 @@ The Safety Team
 &lt;/ol>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Calculate time</title><link>https://docs.kianda.com/docs/platform/rules/dates/calculate-time/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/calculate-time/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Calculate time&lt;/strong> rule allows you to calculate the difference in time units between one date field and another, or from the current date and a chosen date field. The resulting number is then stored within a separate field within a Kianda form. An example of this rule would be entering a date under &lt;strong>From date&lt;/strong>, selecting the &lt;strong>Now()&lt;/strong> radio button, and entering a field under &lt;strong>destination field&lt;/strong>. This will display the amount of days that are between the entered date field, and now.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-calculate-time-screen.jpg" alt="Calculate Time Screen">&lt;/p>
+&lt;p>For example, the resulting number could be utilised as a countdown feature to communicate to the user that an important date is approaching, and that a task needs to be completed (as seen below). In this instance, there are 20 days before a deadline. To learn more about dates, see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-time-calculate-result.jpg" alt="Calculate Time Results">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>The Calculate time rule should be used when a user wishes to calculate the time difference between a date field and another date/time. For example, creating a countdown function that returns the amount of time units between two set dates.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the Calculate time rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Dates&lt;/strong> &amp;gt; &lt;strong>Calculate time&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-select-calculate-time.jpg" alt="Selecting Calculate Time">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Calculate time&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-calculate-time-screen-conditions.jpg" alt="Selecting Calculate Time">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Action &amp;gt; Calculate time between dates&lt;/strong>, create one or more actions for the rule by filling out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Time unit&lt;/strong> - choose an option from the drop-down list to serve as your calculation unit:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Minutes&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Hours&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Days&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Weeks&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Months&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Years&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>From date&lt;/strong> - click on the field and select another field from the drop-down list. This will be the date the calculation will start counting from.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>To date&lt;/strong> - choose from the radio buttons:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Now() - calculating the number of time units between the From date to now.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Today() - calculating the number of time units between the From date to today at midnight.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Date field - calculating the number of time units between the From date to the date specified in another field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-calculate-time-select-date.jpg" alt="Calculate time select date">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Destination date field&lt;/strong> - choose the date field within your form which this new date is to be stored. If the &lt;strong>Use business hours?&lt;/strong> checkbox is ticked, you will be prompted to enter the start and end time of your business&amp;rsquo; working day, using the time picker list.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-destination.jpg" alt="Date rules destination date field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Date calculation settings&lt;/strong> - you can select whether the time calculated:&lt;/p>
+&lt;ul>
+&lt;li>Includes weekends&lt;/li>
+&lt;li>Excludes weekends&lt;/li>
+&lt;li>Excludes weekends and special dates&lt;/li>
+&lt;li>Excludes special dates&lt;/li>
+&lt;/ul>
+&lt;p>Beside the &lt;strong>Count only full hours?&lt;/strong> label (or time unit chosen), if the No radio button is selected, the &lt;strong>Round result hours?&lt;/strong> (or time unit chosen) label will appear to the right. You will be prompted to select either a Yes or No radio button, allowing you to neatly round the chosen time unit to the nearest whole number (if Yes is selected).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Special dates&lt;/strong> - you can also define custom special dates and save them accordingly. Click on Add special date to add in a date. Enter a label for this special date in the left field and a date in the right field. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the &lt;strong>Save special dates for reuse&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-special-date-btn.jpg" alt="Date rules save special date button">. To load previously saved dates, click on the &lt;strong>Load special dates&lt;/strong> button &lt;img src="https://docs.kianda.com/images/load-special-date-btn.jpg" alt="Date rules load special date button">. You can delete a saved Special date by clicking on the &lt;strong>Bin/Trash&lt;/strong> button&lt;img src="https://docs.kianda.com/images/binicon.png" alt="bin icon">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-calculate-time-calculations.jpg" alt="Calculate time calculations">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;ol start="6">
+&lt;li>Finally, clicking on the &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> button will save the new rule you have just created and apply it to the chosen field.&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;p>Multiple &lt;strong>Special dates&lt;/strong> can be loaded at once to allow you to select a number of specific dates to exclude from the rule.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Cloud gateway</title><link>https://docs.kianda.com/docs/platform/connectors/cloud-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/cloud-gateway/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
@@ -3969,56 +4081,4 @@ Your browser does not support the video tag.
 &lt;li>
 &lt;p>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>Docs: Create data item rule</title><link>https://docs.kianda.com/docs/platform/rules/data/create-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/data/create-item/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This rule implements the Create function which is one of the four CRUD (Create, Read, Update and Database) functions. The rule will create one or more items of data from a chosen data source, for example SharePoint, SAP or Oracle databases, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for more details.&lt;/p>
-&lt;p>The &lt;strong>Create item&lt;/strong> rule allows you to create an item of any type in the specified data connector. When applying this rule, you must select a data source in which you want to create the item. When the data source is connecter, you can map inputs from your form fields into your source. Also, you could map a data source field or text back to Kianda on success or store an error message on failure.&lt;/p>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>You can add this rule:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Data&lt;/strong> &amp;gt; &lt;strong>Create item&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule - Create item&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/create-item-edit-rule.jpg" alt="Edit rule - Assign form dialog box">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Select data source&lt;/strong> button &lt;img src="https://docs.kianda.com/images/button-select-data-source.jpg" alt="Select data source">to select the data source you want to create a new item in. When you select your data source, new mapping options are presented.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/create-item-mapping.jpg" alt="create item - mapping options">&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Input mapping&lt;/strong> - used to create an item inside of the data source that you selected.
-&lt;ul>
-&lt;li>&lt;strong>Form field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value you want to your new item to contain.&lt;/li>
-&lt;li>&lt;strong>Data source field&lt;/strong> - select a field in your data source to hold the new value.&lt;/li>
-&lt;li>&lt;strong>Add mapping&lt;/strong> - you can choose to create multiple items in your data source by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;strong>On success mapping&lt;/strong> - select the field(s) in the form which will store information and populate the &lt;strong>data source field or text&lt;/strong> field with the respective data source value. To learn more about success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>On error mapping&lt;/strong> - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
-&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
-&lt;ol>
-&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
-&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
-&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
-&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;/ul></description></item></channel></rss>
