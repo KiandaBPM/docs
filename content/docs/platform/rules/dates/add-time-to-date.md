@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction
 
-The **Add time to date** rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. An example of this rule would be entering a numeric value of **1** into the **Time to add or a field**, selecting **Days** from the **Time unit** drop-down list, and selecting **Today()** from the **To date** radio box options.
+The **Add time to date** rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. An example of this rule would be entering a numeric value of **1** into the **Time to add or a field**, selecting **Days** from the **Time unit** drop-down list, and selecting **Today()** from the **To date** radio button options.
 
 ![Date rules add time to date screen](/images/date-rules-add-time-to-date-screen.jpg)
 
@@ -30,7 +30,7 @@ You can add this rule:
 
 ## Before you get started
 
-In advance of using this rule, you need to have **created one or more forms, complete with control fields**. For example, you must have a created field in your form that the add time to date rule can be applied to. See [Date control](/docs/platform/controls/input/date/) for more information on using date fields.
+In advance of using this rule, you need to have **created one or more forms, complete with control fields**. For example, you must have a created field in your form that the Add time to date rule can be applied to. See [Date control](/docs/platform/controls/input/date/) for more information on using date fields.
 
  
 
@@ -82,7 +82,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
      
 
-   * **Destination date field** - choose the date field within your form which this new date is to be stored. If the **Use business hours?** checkbox is ticked, you will be prompted to enter the start and end time of your business' working day, using the time picker list.
+   * **Destination date field** - choose the date field within your form which this new date is to be stored. If the **Use business hours?** checkbox is ticked, you will be prompted to enter the start and end time of your business' working day, using the time picker list. It should be noted that this checkbox only appears when the time unit chosen is minutes or hours.
 
      ![Date rules destination date field](/images/date-rules-add-time-to-date-destination.jpg)
 
@@ -95,7 +95,7 @@ In advance of using this rule, you need to have **created one or more forms, com
      * Excludes weekends and special dates
      * Excludes special dates 
 
-   * **Special dates** - you can also define custom special dates and save them accordingly. Click on Add special date to add in a date. Enter a label for this special date in the left field and a date in the right field. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the **Save special dates for reuse** button ![Date rules save special date button](/images/save-special-date-btn.jpg). To load previously saved dates, click on the **Load special dates** button ![Date rules load special date button](/images/load-special-date-btn.jpg). 
+   * **Special dates** - you can also define custom special dates and save them accordingly. Click on Add special date to add in a date. Enter a label for this special date in the left field and a date in the right field. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the **Save special dates for reuse** button ![Date rules save special date button](/images/save-special-date-btn.jpg). To load previously saved dates, click on the **Load special dates** button ![Date rules load special date button](/images/load-special-date-btn.jpg). You can delete a saved Special date by clicking on the **Bin/Trash** button![bin icon](/images/binicon.png). 
 
      ![Date rules special dates](/images/date-rules-add-time-to-date-calculations.jpg)
 
@@ -129,3 +129,4 @@ The Add time to date rule is commonly used with the [Schedule a rule](/docs/plat
 To find out more about other date rules go to [Dates](/docs/platform/rules/dates/).
 
 To find out more about other rules go to [Rules](/docs/platform/rules/).
+
