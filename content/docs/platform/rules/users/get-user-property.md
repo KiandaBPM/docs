@@ -1,5 +1,7 @@
 ---
 title: "Get user profile property"
+weight: 1
+typora-root-url: ..\..\..\..\..\static
 ---
 
 This rule is used to get data from the selected user profile.  A user profile contains properties such as first name, last name, department etc..  	

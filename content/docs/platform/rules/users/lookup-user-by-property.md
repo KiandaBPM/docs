@@ -1,5 +1,7 @@
 ---
 title: "Lookup user by profile property"
+weight: 2
+typora-root-url: ..\..\..\..\..\static
 ---
 
 
@@ -27,5 +29,4 @@ To look up a user by first name:
 8. For Field value or text, select the First Name field.
 9. For User field to store lookup result, choose the User field.
 9. Click OK.
-
 

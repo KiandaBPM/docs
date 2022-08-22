@@ -1,5 +1,7 @@
 ---
 title: "Invite partner"
+weight: 3
+typora-root-url: ..\..\..\..\..\static
 ---
 
 This rule sends an invitation to a partner to share a process.

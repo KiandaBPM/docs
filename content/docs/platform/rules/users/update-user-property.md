@@ -1,5 +1,7 @@
 ---
 title: "Update user profile property"
+weight: 4
+typora-root-url: ..\..\..\..\..\static
 ---
 
 This rule is used to update a property in a user profile.
