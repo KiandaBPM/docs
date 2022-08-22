@@ -1,11 +1,20 @@
 ---
 title: "User rules"
 weight: 4
+typora-root-url: ..\..\..\..\..\static
 ---
 
-User rules is one category of [rules](rules/Readme.md) to enable operations based on user attributes, such as updating user properties and looking up users in a data connector by property.
+## Introduction
 
+User rules is one of the category of [rules](/docs/platform/rules/) available in Kianda, they enable user based operations associated with user **properties**, for example **updating** a user property, **retrieving** a user property and **finding** a user based on a property. The user rules also allow you to **invite partners** and **share** a particular process with them. These **User** rules are very useful when you want to do any property actions on a user like find a user or update a property of a specific user.
 
+Take an example of a **Look up user by property** rule. Implementing this rule will allow you to store a user in a **User picker** field   by providing a property of a user, for example user role or email address. See image below when a location is being chosen, a trainer is found that is assigned to the location:
+
+![User rules](/images/lookup-user-location.jpg)
+
+In this case the trainer is **Mark Lycette** as he is the trainer assigned in Galway, see image below:
+
+![User rules](/images/lookup-user-db.jpg)
 
 ## Getting started with User rules ##
 
@@ -15,13 +24,13 @@ If you go to **Administration** > **Designer** and click on a process or create 
 
 There are four types of User rules as follows:
 
-- **Get user property** - this rule is used to get data from a selected user profile.
+- **Get user property** - this rule allows you to retrieve user profile properties like email, department and so on for a current user, or a user defined via a user picker field, and map these properties for use in form logic.
 
-- **Lookup user by property** - this rule is used to look up a user by attribute, for example email address.
+- **Lookup user by property** - this rule allows you to find users, groups or partner accounts based on input filters.
 
-- **Invite partner** - this rule sends an invitation to a contact in a partner organisation for them to access a shared process. 
+- **Invite partner** - this rule sends an invitation to a contact in a partner organization for them to access a shared process. 
 
-- **Update user property** - this rule is used to update a property in a user profile.
+- **Update user property** - this rule allows you to update user profile properties in a dynamic way.
 
   
 
