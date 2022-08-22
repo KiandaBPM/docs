@@ -21,10 +21,10 @@ You can add this rule:
 
 In advance of using the **Lookup user by property** rule, in your process you need to have created at least one or more forms. The lookup user by property rule also requires a **User picker** field which is used to store the user that matches the property you're looking by. For best practice, you can also create a **text box** field which holds the **actual value** of the property that you want to look by, for example the email address of a user. 
 
-- User picker (required) - field to store the user when the look up is performed.
-- Text box (optional) - value of the property you want to look by.
+- **User picker (required)** - field to store the user when the look up is performed. To learn more about user picker field, go to [User picker control](/docs/platform/controls/input/user-picker/).
+- **Text box (optional)** - value of the property you want to look by. To learn more about text box field, go to [Text box control](/docs/platform/controls/input/textbox/).
 
-## How to use
+## How to get started
 
 1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
 
@@ -45,6 +45,8 @@ In advance of using the **Lookup user by property** rule, in your process you ne
    - **User property to locate user by** - list of profile properties and profile attributes that you want the user to be looked up by. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to [Profile attributes](/docs/platform/administration/users/#modify-profile-attributes).
    - **Field value or text** - you can select a field within your form or type in text manually to represent the value of the property you want to look up by.
    - **User field to store lookup result** - field to store the user that the property you searched by matches.
+
+6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
 ### Editing, deleting or duplicating rules
 
