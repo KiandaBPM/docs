@@ -48,7 +48,7 @@ For this rule to work you need to have one or more tables in your process. This 
 
    - **Lookup mapping** - allows you to extract a value from the row that met the lookup condition.
 
-     - Column to extract - select the specific column from the row to extract the value.
+     - **Column to extract** - select the specific column from the row to extract the value.
      - **Field to store extracted value** - select a pre-created field to store the value from the selected column in the **Column to extract** section.
      - **Add mapping** - you can choose to extract multiple values from a row by clicking on **Add mapping** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png).
 
