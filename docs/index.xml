@@ -510,7 +510,29 @@ Your browser does not support the video tag.
 &lt;li>Add to or edit the remaining parameters in the dialog box as desired, see &lt;a href="#editing-forms/docs/platform/application-designer/designer/">Editing forms&lt;/a> and click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/li>
 &lt;/ol>
 &lt;h3 id="form-ownership-and-process-instances">Form ownership and process instances&lt;/h3>
-&lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to &lt;strong>when the the form is created&lt;/strong>. By default, only this person or group &lt;strong>can edit the form&lt;/strong>. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups.&lt;/p></description></item><item><title>Docs: How does Kianda work?</title><link>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</guid><description>
+&lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to &lt;strong>when the the form is created&lt;/strong>. By default, only this person or group &lt;strong>can edit the form&lt;/strong>. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups.&lt;/p></description></item><item><title>Docs: Get user profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/get-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/get-user-property/</guid><description>
+&lt;p>This rule is used to get data from the selected user profile. A user profile contains properties such as first name, last name, department etc..&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/getuserproperty.png" alt="Send email rule dialog box">&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;p>To get a user property (e.g. department) for a given user:&lt;/p>
+&lt;ol>
+&lt;li>Before adding the rule, add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to User Property.&lt;/li>
+&lt;li>Select the &amp;lsquo;Submit&amp;rsquo; button.&lt;/li>
+&lt;li>Administration &amp;gt; Add a rule &amp;gt; Get user property.&lt;/li>
+&lt;li>Under Action, select Current user.&lt;/li>
+&lt;li>For Field to store user profile property, choose the new User Property field.&lt;/li>
+&lt;li>From the drop down list, choose a user property e.g. department.&lt;/li>
+&lt;li>Click OK.&lt;/li>
+&lt;/ol>
+&lt;h3 id="notes">Notes&lt;/h3>
+&lt;p>Administrators can view the profile properties for any user by selecting Administration &amp;gt; Users and clicking on the user&amp;rsquo;s name.&lt;/p></description></item><item><title>Docs: How does Kianda work?</title><link>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</guid><description>
 &lt;p>The Kianda no-code / low-code (NCLC) platform has been created with the ultimate flexibility and agility in mind, allowing simple user interactions to build complex processes.&lt;/p>
 &lt;p>Kianda has been constructed using an &lt;strong>Model, View, Controller (MVC) approach&lt;/strong>. This approach allows designers to build mobile-responsive applications via &lt;strong>rapid User Interface (UI) prototyping&lt;/strong>. The UI provides an easy way to build an application by clicking, scrolling, and dragging and dropping fields. The layout both provides a way to build the application or process schema, and to capture and monitor data at run-time.&lt;/p>
 &lt;h2 id="whats-under-the-hood">What&amp;rsquo;s under the &amp;lsquo;hood&amp;rsquo;?&lt;/h2>
@@ -3077,7 +3099,34 @@ The Safety Team
 &lt;h2 id="inspection-form-summary">Inspection Form Summary&lt;/h2>
 &lt;p>To summarise our &lt;strong>Inspection From&lt;/strong>, we created all fields, buttons and rules that we stated in our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>. Our Engineer can fill out our &lt;strong>Inspection Checklist&lt;/strong> and submit the form which automatically sends an email to an &lt;strong>Safety Manager&lt;/strong> with the generated PDF file of the report. We are also updating our &lt;strong>Status&lt;/strong> field to &lt;strong>Completed&lt;/strong>.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/dashboard/">Creating Dashboard&lt;/a>.&lt;/p></description></item><item><title>Docs: Make required</title><link>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</guid><description>
+&lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/dashboard/">Creating Dashboard&lt;/a>.&lt;/p></description></item><item><title>Docs: Lookup user by profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</guid><description>
+&lt;p>This rule is used to look up a user using one of the properties in their profile such as first name, last name, email, department etc..&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/lookupuserbyproperty.png" alt="Look up user by property dialog box">&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;p>To look up a user by first name:&lt;/p>
+&lt;ol>
+&lt;li>Before adding the rule, add a text field to store the First Name and a user picker field to store the User:&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>Click on Controls &amp;gt; Input &amp;gt; Text and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to First Name.&lt;/li>
+&lt;li>Click on Controls &amp;gt; Input &amp;gt; User picker and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to User.&lt;/li>
+&lt;/ul>
+&lt;ol start="4">
+&lt;li>Select the &amp;lsquo;Submit&amp;rsquo; button.&lt;/li>
+&lt;li>Administration &amp;gt; Add a rule &amp;gt; Lookup user property.&lt;/li>
+&lt;li>Under Action, select Type of user as Person.&lt;/li>
+&lt;li>For User property to locate user by, choose First Name.&lt;/li>
+&lt;li>For Field value or text, select the First Name field.&lt;/li>
+&lt;li>For User field to store lookup result, choose the User field.&lt;/li>
+&lt;li>Click OK.&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Make required</title><link>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Make required&lt;/strong> rule is used to dynamically make form elements required or mandatory for users to fill in, or not required or to toggle between both states.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
@@ -3928,157 +3977,4 @@ Your browser does not support the video tag.
 &lt;p>To start your no-code development journey, follow these simple steps:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/one.png" alt="1"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">&lt;strong>Plan your process&lt;/strong>&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/two.png" alt="2"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/">&lt;strong>Design and build your process&lt;/strong>&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/three.png" alt="3"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/publish-your-process/">&lt;strong>Publish your process&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Docs: Why choose low-code development?</title><link>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</guid><description/></item><item><title>Docs: Anonymous form link</title><link>https://docs.kianda.com/docs/platform/rules/communications/anonymous-form-link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/communications/anonymous-form-link/</guid><description>
-&lt;p>The &lt;strong>Anonymous form&lt;/strong> rule creates a link to a selected form from the process which can be sent to an external user. The user can open the form without the need for authentication into the Kianda platform.&lt;/p>
-&lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>To use the &lt;strong>Anonymous form&lt;/strong> rule effectively, you would typically apply it to a &lt;strong>Submit&lt;/strong> button along side &lt;strong>Send email&lt;/strong> rule so that you can attach the link into an email and share the specified form with an external user.&lt;/p>
-&lt;p>You can add this rule:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using the &lt;strong>Anonymous form link&lt;/strong>, in your process you need to have created at least one or more forms. This rule also requires a link to be stored inside of a field, for example text box control. To learn more about text box control go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To send an anonymous form link to an external user:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Communications&lt;/strong> &amp;gt; &lt;strong>Anonymous form link&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Edit rule - Anonymous form link&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-edit-box.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Select a form&lt;/strong> dropdown, select the desired form to create a link to.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Link expire settings contains three options:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Never expires&lt;/strong> - Indicating that the link will never expire and will always be active.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Expire after a number of uses&lt;/strong> - the link will expire after the specified number of uses in the &lt;strong>Expire link after number of uses&lt;/strong> text box.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-expire-uses.jpg" alt="Link expire settings - number of uses">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Expire in time&lt;/strong> - the link will expire after the specified &lt;strong>Days&lt;/strong>, &lt;strong>Hours&lt;/strong> and &lt;strong>Minutes&lt;/strong> from the time it was created.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-expire-time.jpg" alt="Link expire settings - time">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Field to store the generated anonymous link&lt;/strong> dropdown, select a field in which you want the link to be stored in.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Message to display after anonymous submission&lt;/strong> text box, type in a message your want users to see after they submit the form.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-message-box.jpg" alt="Link expire settings - time">&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-message.jpg" alt="Link expire settings - time">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Selecting the &lt;strong>Hide form topbar&lt;/strong> will hide all form tiles from the users view.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Force logout:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Yes&lt;/strong> - users will be logged out after submitting the form.&lt;/li>
-&lt;li>&lt;strong>No&lt;/strong> - users will stay logged in after submitting the form.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Create a &lt;strong>Send email&lt;/strong> rule and apply the link expression to the body of the email. To learn more about &lt;strong>Send email&lt;/strong> rule and how to add expressions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;ul>
-&lt;li>The field used to store the Anonymous Link can be made invisible to the user of the current form. Go to the field properties and set the field to &lt;strong>not visible&lt;/strong>.&lt;/li>
-&lt;li>Each record or instance of a process can have only one active link. If a second anonymous link is created for an instance of a process, the first link will not exist anymore. Users clicking on the first link will get an error message.&lt;/li>
-&lt;/ul>
-&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Conditional logic</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/conditions/</guid><description>
-&lt;p>Conditions are a key component of Kianda &lt;strong>rules&lt;/strong>. They are the triggers that result in fully dynamic forms and add an important level of interactivity, creating pathways within a process based on user interaction.&lt;/p>
-&lt;p>Conditions work on the &amp;lsquo;if&amp;hellip;then&amp;hellip;else&amp;rsquo; principle: &amp;lsquo;if&amp;rsquo; the condition exists &amp;rsquo;then&amp;rsquo; an action happens, &amp;rsquo;else&amp;rsquo; another action happens. There are three parts to applying a condition to a rule (depending on the rule that is used):&lt;/p>
-&lt;ol>
-&lt;li>Create the &lt;strong>condition(s)&lt;/strong>&lt;/li>
-&lt;li>Create the &lt;strong>action(s)&lt;/strong> that will be applied as a result of the first condition being in place&lt;/li>
-&lt;li>Create the &lt;strong>otherwise action(s)&lt;/strong> based on other conditions being in place&lt;/li>
-&lt;/ol>
-&lt;p>For example, let&amp;rsquo;s take a simple Training Request and Approval Process, whereby an employee fills out a &lt;strong>request form&lt;/strong>, the details of which are sent to a manager for review in an &lt;strong>approval form&lt;/strong>. In this approval form, the manager can either a) approve the request with a signature or b) not approve the request and provide feedback on why.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Training Process flowchart&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/trainingflow.gif" alt="Training Process flowchart">&lt;/p>
-&lt;p>A condition is created based on the &lt;strong>Manager Decision radio list&lt;/strong>:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Condition&lt;/strong>: If the decision is &amp;lsquo;Yes&amp;rsquo;&lt;/li>
-&lt;li>&lt;strong>Action&lt;/strong>: Then the Signature button appears&lt;/li>
-&lt;li>&lt;strong>Otherwise action:&lt;/strong> Else the decision is &amp;lsquo;No&amp;rsquo; and the Feedback text box appears&lt;/li>
-&lt;/ol>
-&lt;p>One of the most commonly used rules that uses conditions is the &lt;strong>Workflow&lt;/strong> rule &lt;strong>Hide or Disable&lt;/strong>. This is used as an example in the video and in the &lt;a href="#getting-started-with-conditions">Getting started&lt;/a> section below.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Using conditions in rules: Example of Hide or disable&lt;/strong>&lt;/em>&lt;/p>
-&lt;video width="100%" style="width:100%" controls>
-&lt;source src="https://docs.kianda.com/videos/Conditions.mp4">
-Your browser does not support the video tag.
-&lt;/source>
-&lt;/video>
-&lt;h2 id="getting-started-with-conditions">Getting started with conditions&lt;/h2>
-&lt;p>Conditions are recognisable in Kianda from the &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/condition.png" alt="Conditions button"> found in rules and dashboards.&lt;/p>
-&lt;p>To create a condition:&lt;/p>
-&lt;ol>
-&lt;li>Select a form or forms, field or fields and then, a rule, for example Hide or disable, as found in the &lt;strong>left side menu&lt;/strong> &amp;gt; &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Hide or Disable&lt;/strong>.&lt;/li>
-&lt;li>Click on &lt;strong>Edit conditions&lt;/strong>.&lt;/li>
-&lt;li>Click on &lt;strong>Add a conditions group&lt;/strong>.&lt;/li>
-&lt;li>In the &lt;strong>Edit conditions dialog box&lt;/strong>, choose from the elements below, by drilling down to the form(s) or field(s) that you want to apply the rule to.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;em>&lt;strong>Condition elements&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/conditions3.gif" alt="Condition elements">&lt;/p>
-&lt;p>In the case of &lt;strong>multiple conditions&lt;/strong>, you can use &lt;strong>And&lt;/strong> or &lt;strong>Or&lt;/strong> to create compound conditions.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Compound conditions&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/editconditions.gif" alt="Compound conditions">&lt;/p>
-&lt;ol start="5">
-&lt;li>Click on &lt;strong>OK&lt;/strong>.&lt;/li>
-&lt;li>Create the &lt;strong>actions&lt;/strong> and, where applicable, otherwise actions. The action will depend on the rule that is chosen. For example, for the &lt;strong>Workflow rule&lt;/strong>, &lt;strong>Hide or Disable&lt;/strong>, click on the field under &lt;strong>Action&lt;/strong> and choose the form(s) or field(s) where you want an action applied.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;em>&lt;strong>Action elements for Hide and Disable&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/hideoptions.gif" alt="7 actions for Hide or Disable">&lt;/p>
-&lt;ol start="7">
-&lt;li>
-&lt;p>Then click on the field for &lt;strong>actions&lt;/strong> and choose one of seven possible actions to apply.&lt;/p>
-&lt;p>The actions within &lt;strong>Hide or disable&lt;/strong> are:&lt;/p>
-&lt;p>a) &lt;strong>Hide&lt;/strong> will hide a process element (forms or fields) from view&lt;/p>
-&lt;p>b) &lt;strong>Show&lt;/strong> will show the element&lt;/p>
-&lt;p>c) &lt;strong>Disable&lt;/strong> blocks a user from editing an element&lt;/p>
-&lt;p>d) &lt;strong>Enable&lt;/strong> allows a user to add a value to an element&lt;/p>
-&lt;p>e) &lt;strong>Toggle visible&lt;/strong> will toggle between showing an element or not, based on subsequent clicks of a field that the rule is applied to&lt;/p>
-&lt;p>f) &lt;strong>Toggle enable&lt;/strong> will toggle between allowing an element to be edited or not, based on subsequent clicks of a field that the rule is applied to&lt;/p>
-&lt;p>g) &lt;strong>Hide and clear&lt;/strong> will allow you to hide a process element and clear the details. For example, if a toggle button has this rule applied, with an &lt;strong>otherwise action&lt;/strong> of &lt;strong>show&lt;/strong> as actions on a textbox, then if one value is chosen on the toggle button, the user is allowed enter details into the textbox, otherwise the field is hidden and cleared of data so that no data can be retrieved; this may be useful for sensitive information like a social security number on a form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>+ Add&lt;/strong> to add more actions.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add otherwise action&lt;/strong> to add more actions based on other values for the condition.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>The video demonstrates how a condition works within the &lt;strong>Hide and Disable&lt;/strong> rule and highlights that multiple groups of conditions can be used to impact multiple actions to create highly sophisticated form interactions.&lt;/p>
-&lt;h3 id="user-tip--target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;p>You can use rules to create &lt;strong>actions&lt;/strong> &lt;strong>without conditions too&lt;/strong>. In this case, the rule will simply execute - for example, when the form or field is clicked on.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To learn more about controls (fields) go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/controls/">&lt;strong>Controls&lt;/strong>&lt;/a>.&lt;/p>
-&lt;p>To find out more about how expressions are used in rules go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/">&lt;strong>Expressions&lt;/strong>&lt;/a>.&lt;/p>
-&lt;h3 id="to-return-to-the-previous-pages-click-on-the-links-below--idea-iconimages10png">&lt;strong>To return to the previous pages click on the links below&lt;/strong> &lt;img src="https://docs.kianda.com/images/10.png" alt="Idea icon">&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">&lt;strong>Plan your process&lt;/strong>&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;p>&lt;img src="https://docs.kianda.com/images/three.png" alt="3"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/publish-your-process/">&lt;strong>Publish your process&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Docs: Why choose low-code development?</title><link>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</guid><description/></item></channel></rss>

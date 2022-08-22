@@ -20,16 +20,7 @@
 &lt;li>Click OK.&lt;/li>
 &lt;/ol>
 &lt;h3 id="notes">Notes&lt;/h3>
-&lt;p>Administrators can view the profile properties for any user by selecting Administration &amp;gt; Users and clicking on the user&amp;rsquo;s name.&lt;/p></description></item><item><title>Docs: Invite partner</title><link>https://docs.kianda.com/docs/platform/rules/users/invite-partner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/invite-partner/</guid><description>
-&lt;p>This rule sends an invitation to a partner to share a process.
-&lt;img src="https://docs.kianda.com/images/invitepartner.png" alt="Invite partner dialog box">&lt;/p>
-&lt;h6 id="when-to-use">When to use&lt;/h6>
-&lt;p>You can add this rule:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Lookup user by profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</guid><description>
+&lt;p>Administrators can view the profile properties for any user by selecting Administration &amp;gt; Users and clicking on the user&amp;rsquo;s name.&lt;/p></description></item><item><title>Docs: Lookup user by profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</guid><description>
 &lt;p>This rule is used to look up a user using one of the properties in their profile such as first name, last name, email, department etc..&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/lookupuserbyproperty.png" alt="Look up user by property dialog box">&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
@@ -56,7 +47,16 @@
 &lt;li>For Field value or text, select the First Name field.&lt;/li>
 &lt;li>For User field to store lookup result, choose the User field.&lt;/li>
 &lt;li>Click OK.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Update user profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</guid><description>
+&lt;/ol></description></item><item><title>Docs: Invite partner</title><link>https://docs.kianda.com/docs/platform/rules/users/invite-partner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/invite-partner/</guid><description>
+&lt;p>This rule sends an invitation to a partner to share a process.
+&lt;img src="https://docs.kianda.com/images/invitepartner.png" alt="Invite partner dialog box">&lt;/p>
+&lt;h6 id="when-to-use">When to use&lt;/h6>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Update user profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</guid><description>
 &lt;p>This rule is used to update a property in a user profile.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/updateuserproperty.png" alt="Update user property dialog box">&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
