@@ -511,28 +511,88 @@ Your browser does not support the video tag.
 &lt;/ol>
 &lt;h3 id="form-ownership-and-process-instances">Form ownership and process instances&lt;/h3>
 &lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to &lt;strong>when the the form is created&lt;/strong>. By default, only this person or group &lt;strong>can edit the form&lt;/strong>. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups.&lt;/p></description></item><item><title>Docs: Get user profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/get-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/get-user-property/</guid><description>
-&lt;p>This rule is used to get data from the selected user profile. A user profile contains properties such as first name, last name, department etc..&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/getuserproperty.png" alt="Send email rule dialog box">&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Get user property&lt;/strong> rule allows you to retrieve a &lt;strong>property&lt;/strong> of a user that has been selected. You can select a user by defining one in a &lt;strong>user picker&lt;/strong> field or selecting the &lt;strong>current user&lt;/strong>, meaning that the user currently filling out the form will be selected when retrieving a profile property of a profile attribute. For example you can retrieve properties of a such as &lt;strong>First Name&lt;/strong>, &lt;strong>Last Name&lt;/strong>, &lt;strong>Email&lt;/strong> or &lt;strong>Phone number&lt;/strong> of a current user, those property values can be used to automate form fields within your process.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule when you need to retrieve a profile property or a profile attribute from a current user or a user defined in a user picker field.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>To get a user property (e.g. department) for a given user:&lt;/p>
+&lt;h2 id="before-getting-started">Before getting started&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>In advance of using the &lt;strong>Get user property&lt;/strong> rule, in your process you need to have created at least one or more forms. The get user property rule also requires you to select a &lt;strong>user profile source&lt;/strong>, the source can be the &lt;strong>Current user&lt;/strong> or a &lt;strong>User picker&lt;/strong> field. When selecting the &lt;strong>current user&lt;/strong> option, you will target the &lt;strong>property&lt;/strong> of the user that is &lt;strong>currently&lt;/strong> using the form. When you pick the &lt;strong>user picker field&lt;/strong>, you need to create a &lt;strong>User picker&lt;/strong> field which is used to specify a user when getting a property. The rule also requires a &lt;strong>text box&lt;/strong> field which is used as a &lt;strong>container&lt;/strong> to store the &lt;strong>retrieved value&lt;/strong> of the property.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>User picker (required)&lt;/strong> - field used to select a user for which you want to update a property. To learn more about user picker field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box (required)&lt;/strong> - field used as a container to store the value of the property. To learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
-&lt;li>Before adding the rule, add a text field: Click on Controls &amp;gt; Input &amp;gt; Text and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to User Property.&lt;/li>
-&lt;li>Select the &amp;lsquo;Submit&amp;rsquo; button.&lt;/li>
-&lt;li>Administration &amp;gt; Add a rule &amp;gt; Get user property.&lt;/li>
-&lt;li>Under Action, select Current user.&lt;/li>
-&lt;li>For Field to store user profile property, choose the new User Property field.&lt;/li>
-&lt;li>From the drop down list, choose a user property e.g. department.&lt;/li>
-&lt;li>Click OK.&lt;/li>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Users&lt;/strong> &amp;gt; &lt;strong>Update user property&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Update user property&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/get-property-edit-rule.jpg" alt="Get user property - edit rule dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>User profile source&lt;/strong> - select which type of source you want to use as the user to update the property for, choose from:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Current user&lt;/strong> - selecting this option will result in targeting the user that is currently using the form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Defined in a user picker field&lt;/strong> - selecting this option will result in a &lt;strong>Pick a user field&lt;/strong> option to appear allowing you to select a user picker field from your process. This will then specify which user you are targeting when wanting to retrieve a property from. See image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/get-property-user-picker.jpg" alt="Selecting the user picker field option">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Field to store user profile property&lt;/strong> - you can select a field within your process to store the value of the property retrieved.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>User profile property&lt;/strong> - list of profile properties and profile attributes that you want the retrieve. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>You can choose to retrieve more than one property of a user, to do so click on the &lt;img src="https://docs.kianda.com/images/update-propert-plus.jpg" alt="Selecting the user picker field option"> This will result in adding more &lt;strong>Field to store user profile property&lt;/strong> and &lt;strong>User profile property&lt;/strong> fields. You can also delete unwanted property selectors by clicking on the red &lt;strong>Bin/Trash&lt;/strong> icon.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/get-property-add-delete.jpg" alt="Add/delete property selector">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h3 id="notes">Notes&lt;/h3>
-&lt;p>Administrators can view the profile properties for any user by selecting Administration &amp;gt; Users and clicking on the user&amp;rsquo;s name.&lt;/p></description></item><item><title>Docs: How does Kianda work?</title><link>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</guid><description>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>Use this rule to &lt;strong>automate&lt;/strong> processes when a form &lt;strong>requires&lt;/strong> information from a &lt;strong>users profile&lt;/strong>. For example when a form contains field such as name, phone number or email address, you can use this rule to automatically set those fields by &lt;strong>retrieving&lt;/strong> the users name, phone number and email address &lt;strong>properties&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: How does Kianda work?</title><link>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</guid><description>
 &lt;p>The Kianda no-code / low-code (NCLC) platform has been created with the ultimate flexibility and agility in mind, allowing simple user interactions to build complex processes.&lt;/p>
 &lt;p>Kianda has been constructed using an &lt;strong>Model, View, Controller (MVC) approach&lt;/strong>. This approach allows designers to build mobile-responsive applications via &lt;strong>rapid User Interface (UI) prototyping&lt;/strong>. The UI provides an easy way to build an application by clicking, scrolling, and dragging and dropping fields. The layout both provides a way to build the application or process schema, and to capture and monitor data at run-time.&lt;/p>
 &lt;h2 id="whats-under-the-hood">What&amp;rsquo;s under the &amp;lsquo;hood&amp;rsquo;?&lt;/h2>
