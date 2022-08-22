@@ -537,7 +537,7 @@
 &lt;li>
 &lt;p>&lt;strong>Lookup mapping&lt;/strong> - allows you to extract a value from the row that met the lookup condition.&lt;/p>
 &lt;ul>
-&lt;li>Column to extract - select the specific column from the row to extract the value.&lt;/li>
+&lt;li>&lt;strong>Column to extract&lt;/strong> - select the specific column from the row to extract the value.&lt;/li>
 &lt;li>&lt;strong>Field to store extracted value&lt;/strong> - select a pre-created field to store the value from the selected column in the &lt;strong>Column to extract&lt;/strong> section.&lt;/li>
 &lt;li>&lt;strong>Add mapping&lt;/strong> - you can choose to extract multiple values from a row by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
 &lt;/ul>

@@ -3099,34 +3099,69 @@ The Safety Team
 &lt;h2 id="inspection-form-summary">Inspection Form Summary&lt;/h2>
 &lt;p>To summarise our &lt;strong>Inspection From&lt;/strong>, we created all fields, buttons and rules that we stated in our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>. Our Engineer can fill out our &lt;strong>Inspection Checklist&lt;/strong> and submit the form which automatically sends an email to an &lt;strong>Safety Manager&lt;/strong> with the generated PDF file of the report. We are also updating our &lt;strong>Status&lt;/strong> field to &lt;strong>Completed&lt;/strong>.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/dashboard/">Creating Dashboard&lt;/a>.&lt;/p></description></item><item><title>Docs: Lookup user by profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</guid><description>
-&lt;p>This rule is used to look up a user using one of the properties in their profile such as first name, last name, email, department etc..&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/lookupuserbyproperty.png" alt="Look up user by property dialog box">&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/dashboard/">Creating Dashboard&lt;/a>.&lt;/p></description></item><item><title>Docs: Lookup user by property</title><link>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Lookup user by property&lt;/strong> rule allows you to look up a user from your &lt;strong>subscription&lt;/strong> using one of the &lt;strong>properties&lt;/strong> in their &lt;strong>profile&lt;/strong> for example first name, last name, email or department. Using this rule you can also look up &lt;strong>groups&lt;/strong> or &lt;strong>partners&lt;/strong> by specifying one of the properties available.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule when your process requires to &lt;strong>filter&lt;/strong> a &lt;strong>user&lt;/strong> using a profile property, for example, when a user fills out his email address, a user picker field is assigned by the user that &lt;strong>matches&lt;/strong> the specified email address. This rule is used to &lt;strong>automate&lt;/strong> a &lt;strong>user picker&lt;/strong> field when property input is provided.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>To look up a user by first name:&lt;/p>
-&lt;ol>
-&lt;li>Before adding the rule, add a text field to store the First Name and a user picker field to store the User:&lt;/li>
-&lt;/ol>
+&lt;h2 id="before-getting-started">Before getting started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Lookup user by property&lt;/strong> rule, in your process you need to have created at least one or more forms. The lookup user by property rule also requires a &lt;strong>User picker&lt;/strong> field which is used to store the user that matches the property you&amp;rsquo;re looking by. For best practice, you can also create a &lt;strong>text box&lt;/strong> field which holds the &lt;strong>actual value&lt;/strong> of the property that you want to look by, for example the email address of a user.&lt;/p>
 &lt;ul>
-&lt;li>Click on Controls &amp;gt; Input &amp;gt; Text and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to First Name.&lt;/li>
-&lt;li>Click on Controls &amp;gt; Input &amp;gt; User picker and drag the field onto the form. Edit the field by clicking on it and then clicking the pen icon. Change the Title to User.&lt;/li>
+&lt;li>User picker (required) - field to store the user when the look up is performed.&lt;/li>
+&lt;li>Text box (optional) - value of the property you want to look by.&lt;/li>
 &lt;/ul>
-&lt;ol start="4">
-&lt;li>Select the &amp;lsquo;Submit&amp;rsquo; button.&lt;/li>
-&lt;li>Administration &amp;gt; Add a rule &amp;gt; Lookup user property.&lt;/li>
-&lt;li>Under Action, select Type of user as Person.&lt;/li>
-&lt;li>For User property to locate user by, choose First Name.&lt;/li>
-&lt;li>For Field value or text, select the First Name field.&lt;/li>
-&lt;li>For User field to store lookup result, choose the User field.&lt;/li>
-&lt;li>Click OK.&lt;/li>
-&lt;/ol></description></item><item><title>Docs: Make required</title><link>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</guid><description>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Users&lt;/strong> &amp;gt; &lt;strong>Lookup user by property&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Lookup user by property&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/lookup-user-edit-rule.jpg" alt="Lookup user by property - edit rule dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Type of user&lt;/strong> - select the type of user you want to look for, the choices are:
+&lt;ul>
+&lt;li>&lt;strong>Person&lt;/strong> - individual user from your subscription.&lt;/li>
+&lt;li>&lt;strong>Group&lt;/strong> - user group that you have created in your subscription.&lt;/li>
+&lt;li>&lt;strong>Partner&lt;/strong> - user that is part of your subscription with partner rights.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>User property to locate user by&lt;/strong> - list of profile properties and profile attributes that you want the user to be looked up by. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Field value or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value of the property you want to look up by.&lt;/li>
+&lt;li>&lt;strong>User field to store lookup result&lt;/strong> - field to store the user that the property you searched by matches.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>Create a &lt;strong>datasource&lt;/strong> with all users and their &lt;strong>properties&lt;/strong>, you can create a &lt;strong>list&lt;/strong> field and &lt;strong>link&lt;/strong> the datasource to the list field. With that you will have a &lt;strong>selection&lt;/strong> of &lt;strong>user properties&lt;/strong> which you can use as a search mechanism for users.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Make required</title><link>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Make required&lt;/strong> rule is used to dynamically make form elements required or mandatory for users to fill in, or not required or to toggle between both states.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
