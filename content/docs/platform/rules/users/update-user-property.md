@@ -10,7 +10,7 @@ The **Update user property** rule allows you to **change/update** a profile prop
 
 ## When to use 
 
-Use this rule when you need to change a profile property or a profile attribute of a user. Select current user option when updating a property of the user that is filling out a form, or create a user picker field to have more flexibility wit user selection. 
+Use this rule when you need to update a profile **property** or a profile **attribute** of a user. Select the **current user** option to update a property of the user that is **currently** filling out a form, or create a **user picker** field to have more **flexibility** with user selection. 
 
 You can add this rule:
 - [x] to a field
@@ -19,10 +19,10 @@ You can add this rule:
 
 ## Before getting started
 
-In advance of using the **Update user property** rule, in your process you need to have created at least one or more forms. The lookup user by property rule also requires you to select a **user profile source**, the source can be  the **Current user** or a **User picker** field. When selecting the **current user** option, you will target the **property** of the user that is **currently** using the form. When you pick the **user picker field**, you need to create a **User picker** field which is used to specify a user when updating a property. For best practices you can create a text box field which will represent the new value of the property you want to update.
+In advance of using the **Update user property** rule, in your process you need to have created at least one or more forms. The update user property rule also requires you to select a **user profile source**, the source can be the **Current user** or a **User picker** field. When selecting the **current user** option, you will target the **property** of the user that is **currently** using the form. When you pick the **user picker field**, you need to create a **User picker** field which is used to specify a user when updating a property. For best practices you can create a text box field which will represent the new value of the property you want to update.
 
-- **User picker (required)** - field used to select a user for which you want to update a property.
-- **Text box (optional)** - field representing the new value of the property you want to update.
+- **User picker (required)** - field used to select a user for which you want to update a property. To learn more about user picker field go to [User picker control](/docs/platform/controls/input/user-picker/).
+- **Text box (optional)** - field representing the **new value** of the property you want to update. To learn more about text box field go to [Text box control](/docs/platform/controls/input/textbox/).
 
 ## How to get started
 
@@ -50,7 +50,7 @@ In advance of using the **Update user property** rule, in your process you need 
 
    - **User property to update** - list of profile properties and profile attributes that you want the update. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to [Profile attributes](/docs/platform/administration/users/#modify-profile-attributes).
 
-6. You can choose to update more than one property of a user, to do so click on the ![Selecting the user picker field option](/images/update-propert-plus.jpg) This will result in adding more **Field or text** and **User property to update** fields. You can also delete unwanted property selectors by clicking on the red Bin/Trash icon.
+6. You can choose to update more than one property of a user, to do so click on the ![Selecting the user picker field option](/images/update-propert-plus.jpg) This will result in adding more **Field or text** and **User property to update** fields. You can also delete unwanted property selectors by clicking on the red **Bin/Trash** icon.
 
    ![Add/delete property selector](/images/update-property-add-delete.jpg)
 
@@ -67,7 +67,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png)
 
-- Create a **datasource** with all users and their **properties**, you can create a **list** field and **link** the datasource to the list field. With that you will have a **selection** of **user properties** which you can use as a search mechanism for users.
+- When updating multiple properties at once, create a text box field for each property you want to update. This way you have more control of the value you want to assign to each property. To learn more about text box field go to [Text box control](/docs/platform/controls/input/user-picker/).
 
 ### What’s next ![Idea icon](/images/18.png)
 
