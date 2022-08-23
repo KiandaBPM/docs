@@ -282,19 +282,40 @@ Your browser does not support the video tag.
 &lt;li>&lt;strong>Action&lt;/strong> - There are four Action fields that allow user interface actions like buttons, links or even signature components - see &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a> for more information.&lt;/li>
 &lt;/ol>
 &lt;p>If you develop custom fields, they will be available to form designers under a fourth category of controls called &lt;strong>Custom&lt;/strong>.&lt;/p>
-&lt;p>&lt;strong>To start adding fields to a form&lt;/strong>:&lt;/p>
+&lt;h3 id="adding-moving-and-removing-controls">Adding, moving and removing controls&lt;/h3>
+&lt;p>To start &lt;strong>adding&lt;/strong> controls or fields to a form:&lt;/p>
 &lt;ol>
-&lt;li>Select the form you want to work on so that the &lt;strong>Edit Form&lt;/strong> button (Pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">) appears&lt;/li>
-&lt;li>Click on a Controls category and control type in the left-hand pane. For example, you could choose the &lt;strong>Input&lt;/strong> category and select &lt;strong>Text box&lt;/strong> to insert a text box into your form.&lt;/li>
+&lt;li>
+&lt;p>Select the form you want to work on so that the &lt;strong>Edit Form&lt;/strong> button (Pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">) appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on a Controls &lt;strong>category&lt;/strong> (Input, Layout or Action) and control type in the left-hand pane. For example, you could choose the &lt;strong>Input&lt;/strong> category and select &lt;strong>Text box&lt;/strong> to insert a text box into your form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>move&lt;/strong> a control, click on the &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>remove&lt;/strong> a control from your form, select the field you want to remove, then click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and click on &lt;strong>OK&lt;/strong> to confirm removal.&lt;/p>
+&lt;/li>
 &lt;/ol>
-&lt;p>To move a field, click on the &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
-&lt;p>To remove a field from your form:&lt;/p>
+&lt;h3 id="editing-controls">Editing controls&lt;/h3>
+&lt;p>All controls/fields will have edit options when you start creating the field, as well as &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties#field-properties">Field properties&lt;/a> that you can edit to tailor the field (control) to make it work the way you want. Each field can also have rules applied to it to make your processes dynamic.&lt;/p>
+&lt;p>To edit a control:&lt;/p>
 &lt;ol>
-&lt;li>Select the field you want to remove&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
-&lt;li>Click &lt;strong>OK&lt;/strong> to confirm removal.&lt;/li>
+&lt;li>
+&lt;p>Click on the added control, so that the &lt;strong>Edit&lt;/strong> button (Pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">) appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then click on the &lt;strong>Edit&lt;/strong> button itself so that the edit control dialog box appears, for example as shown with the textbox control below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-textbox-example.jpg" alt="Edit textbox example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out the fields within the dialog box as necessary. All controls need a &lt;strong>Title&lt;/strong> from which a &lt;strong>Unique Name&lt;/strong> is auto-created. This Unique ID is used in &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder/">expressions&lt;/a> to create automated emails for example.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-field-name.jpg" alt="Edit textbox name">&lt;/p>
+&lt;p>Additional syntax can be added to the &lt;strong>Unique&lt;/strong> &lt;strong>name&lt;/strong> to attribute customised styling, see &lt;a href="#user-tips">User tips&lt;/a>.&lt;/p>
+&lt;/li>
 &lt;/ol>
-&lt;p>All fields will have edit options when you start creating the field, as well as &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties#field-properties">Field properties&lt;/a> that you can edit to tailor the field (control) to make it work the way you want. Each field can also have rules applied to it to make your process dynamic.&lt;/p>
+&lt;p>Depending on the type of control implemented, different fields and values can be selected, see &lt;a href="#controls-list">Controls list&lt;/a> for a full set of controls.&lt;/p>
 &lt;h2 id="controls-list">Controls list&lt;/h2>
 &lt;p>This table lists out the full range of available field types.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/fields-controls-list-table.jpg" alt="Form controls">&lt;/p>

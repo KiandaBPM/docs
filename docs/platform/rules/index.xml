@@ -250,7 +250,7 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced each of the five types of &lt;strong>Data rules&lt;/strong>. Click on the links below to find out more about each rule in detail.&lt;/p></description></item><item><title>Docs: User rules</title><link>https://docs.kianda.com/docs/platform/rules/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>User rules is one of the category of &lt;a href="https://docs.kianda.com/docs/platform/rules/">rules&lt;/a> available in Kianda, they enable user based operations associated with user &lt;strong>properties&lt;/strong>, for example &lt;strong>updating&lt;/strong> a user property, &lt;strong>retrieving&lt;/strong> a user property and &lt;strong>finding&lt;/strong> a user based on a property. The user rules also allow you to &lt;strong>invite partners&lt;/strong> and &lt;strong>share&lt;/strong> a particular process with them. These &lt;strong>User&lt;/strong> rules are very useful when you want to do any property actions on a user like find a user or update a property of a specific user.&lt;/p>
+&lt;p>&lt;strong>User rules&lt;/strong> is one of the category of &lt;a href="https://docs.kianda.com/docs/platform/rules/">rules&lt;/a> available in Kianda, that enables user-based operations associated with user &lt;strong>properties&lt;/strong>, for example &lt;strong>updating&lt;/strong> a user property, &lt;strong>retrieving&lt;/strong> a user property and &lt;strong>finding&lt;/strong> a user based on a property. The user rules also allow you to &lt;strong>invite partners&lt;/strong> and &lt;strong>share&lt;/strong> a particular process with them. These rules are very useful when you want to do any property actions on a user like find a user or update a property of a specific user.&lt;/p>
 &lt;p>Take an example of a &lt;strong>Look up user by property&lt;/strong> rule. Implementing this rule will allow you to store a user in a &lt;strong>User picker&lt;/strong> field by providing a property of a user, for example user role or email address. See image below when a location is being chosen, a trainer is found that is assigned to the location:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/lookup-user-location.jpg" alt="User rules">&lt;/p>
 &lt;p>In this case the trainer is &lt;strong>Mark Lycette&lt;/strong> as he is the trainer assigned in Galway, see image below:&lt;/p>
@@ -270,7 +270,7 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;p>&lt;strong>Invite partner&lt;/strong> - this rule sends an invitation to a contact in a partner organization for them to access a shared process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Update user property&lt;/strong> - this rule allows you to update user profile properties in a dynamic way.&lt;/p>
+&lt;p>&lt;strong>Update user property&lt;/strong> - this rule allows you to update user profile properties, for example if a user moves department, where the update happens in a dynamic way.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
