@@ -6,7 +6,12 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction
 
-The **Update user property** rule allows you to **change/update** a profile property of a user within your subscription. When updating a property of a user, you can choose to select between the current user of the form or a user that can be selected from a user picker field. To learn more about a user picker field go to [User picker control](/docs/platform/controls/input/user-picker/).
+The **Update user property** rule allows you to **change/update** a profile property of a user within your subscription. When updating a property of a user, you can choose to select between the **current user** of the form or a user that can be selected from a **user picker** field. To learn more about a user picker field go to [User picker control](/docs/platform/controls/input/user-picker/). You can update the following properties of a user:
+
+- **Phone number**
+- **Partner language**
+- **Partner region**
+- **Custom profile attributes**, to learn more about profile attributes go to [Profile attributes](/docs/platform/administration/users/#modify-profile-attributes).
 
 ## When to use 
 

@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction
 
-The **Get user property** rule allows you to retrieve a **property** of a user that has been selected. You can select a user by defining one in a **user picker** field or selecting the **current user**, meaning that the user currently filling out the form will be selected when retrieving a profile property of a profile attribute. For example you can retrieve properties of a such as **First Name**, **Last Name**, **Email** or **Phone number** of a current user, those property values can be used to automate form fields within your process.
+The **Get user property** rule allows you to retrieve a **property** of a user that has been selected. You can select a user by defining one in a **user picker** field or selecting the **current user**, meaning that the user currently filling out the form will be selected when retrieving a profile property of a profile attribute. For example you can retrieve properties such as **First Name**, **Last Name**, **Email** or **Phone number** of a current user, those property values can be used fill in fields associated with a user.
 
 ## When to use 
 
@@ -19,10 +19,10 @@ You can add this rule:
 
 ## Before getting started
 
-- In advance of using the **Get user property** rule, in your process you need to have created at least one or more forms. The get user property rule also requires you to select a **user profile source**, the source can be the **Current user** or a **User picker** field. When selecting the **current user** option, you will target the **property** of the user that is **currently** using the form. When you pick the **user picker field**, you need to create a **User picker** field which is used to specify a user when getting a property.  The rule also requires a **text box** field which is used as a **container** to store the **retrieved value** of the property.
+In advance of using the **Get user property** rule, in your process you need to have created at least one or more forms. The get user property rule also requires you to select a **user profile source**, the source can be the **Current user** or a **User picker** field. When selecting the **current user** option, you will target the **property** of the user that is **currently** using the form. When you pick the **user picker field**, you need to create a **User picker** field which is used to select a user to target when **retireving** a property.  The rule also requires a **text box** field which is used as a **container** to store the **retrieved value** of the property.
 
-  - **User picker (required)** - field used to select a user for which you want to update a property. To learn more about user picker field go to [User picker control](/docs/platform/controls/input/user-picker/).
-  - **Text box (required)** - field used as a container to store the value of the property. To learn more about text box field go to [Text box control](/docs/platform/controls/input/textbox/).
+- **User picker (required)** - field used to select a user for which you want to update a property. To learn more about user picker field go to [User picker control](/docs/platform/controls/input/user-picker/).
+- **Text box (required)** - field used as a container to store the value of the property. To learn more about text box field go to [Text box control](/docs/platform/controls/input/textbox/).
 
 ## How to get started
 
@@ -42,24 +42,19 @@ You can add this rule:
 
      - **Current user** - selecting this option will result in targeting the user that is currently using the form.
 
-     - **Defined in a user picker field** - selecting this option will result in a **Pick a user field** option to appear allowing you to select a user picker field from your process. This will then specify which user you are targeting when wanting to retrieve a property from. See image below:
+     - **Defined in a user picker field** - selecting this option will result in a **Pick a user field** option to appear allowing you to select a user picker field from your process. This will then specify which user you are targeting when wanting to retrieve a property, see image below:
 
        ![Selecting the user picker field option](/images/get-property-user-picker.jpg)
 
-   - **Field to store user profile property** - you can select a field within your process to store the value of the property retrieved.
+   - **Field to store user profile property** - you can select a field within your process to store the value of the retrieved property.
 
-   - **User profile property** - list of profile properties and profile attributes that you want the retrieve. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to [Profile attributes](/docs/platform/administration/users/#modify-profile-attributes).
+   - **User profile property** - list of profile properties and profile attributes that you can retrieve. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to [Profile attributes](/docs/platform/administration/users/#modify-profile-attributes).
 
-6. You can choose to retrieve more than one property of a user, to do so click on the ![Selecting the user picker field option](/images/update-propert-plus.jpg) This will result in adding more **Field to store user profile property** and **User profile property** fields. You can also delete unwanted property selectors by clicking on the red **Bin/Trash** icon.
+6. You can choose to retrieve more than one property of a user, to do so click on the ![Selecting the user picker field option](/images/update-propert-plus.jpg) button. This will result in adding more **Field to store user profile property** and **User profile property** fields. You can also delete unwanted fields by clicking on the red **Bin/trash** icon.
 
    ![Add/delete property selector](/images/get-property-add-delete.jpg)
 
 7. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
-
-
-
-
-### Notes
 
 
 ### Editing, deleting or duplicating rules
