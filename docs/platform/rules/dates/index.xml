@@ -311,31 +311,65 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Format date</title><link>https://docs.kianda.com/docs/platform/rules/dates/format-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/format-date/</guid><description>
-&lt;p>The format date rule is used to reformat a date field present within your form&lt;/p>
-&lt;p>&lt;strong>When to use:&lt;/strong>&lt;/p>
-&lt;p>The format date should be used when you wish to amend the formatting of a date field within Kianda, i.e. you receive a date from a data source in one format and which to present it in the form in another format.&lt;/p>
-&lt;p>&lt;strong>You can add this rule:&lt;/strong>&lt;/p>
-&lt;p>· to a field&lt;/p>
-&lt;p>· to a form&lt;/p>
-&lt;p>· to a process (the rule will run on load)&lt;/p>
-&lt;p>&lt;strong>How to use:&lt;/strong>&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Format date&lt;/strong> rule is used to reformat a selected date field within your Kianda form, and send it to a destination field.&lt;/p>
+&lt;p>In the below example, the Format date rule is applied to a selected field from the drop-down list and is formatted to the &lt;em>MM/DD/YYYY&lt;/em> format. The resulting formatted date is then displayed in the &lt;strong>Formatted Date&lt;/strong> field that is selected under &lt;strong>Select a destination field for the formatted date&lt;/strong>. You can utilise this rule to format the entered date so that it matches various national date formatting standards. The default formatting for Kianda dates are &lt;em>DD/MM/YYYY&lt;/em>, so in the below example an entered date of &lt;em>23/08/2022&lt;/em> would become &lt;em>08/23/2022&lt;/em>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-format-date-screen.jpg" alt="Format date screen">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>The format date rule should be used when you wish to amend the formatting of a date field within Kianda. For example, you receive a date from a data source in one format and wish to present it in the form in another format.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the Format date rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>The first step you select the date field you wish to reformat.&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You then need to select what unit the time is, whether it is a minute, hour, day, etc.&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Dates&lt;/strong> &amp;gt; &lt;strong>Format date&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-select-format-date.jpg" alt="Select format date">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Then you select when the date is to be compared to i.e., a date field, today, or now.&lt;/p>
+&lt;p>In the &lt;strong>Edit rule - Format date&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You must then select the date field within the destination field which this newly formatted date is to be stored within.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-format-date-screen-conditions.jpg" alt="Format date screen conditions">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You can also apply a condition to the rule, to restrict when it will run, more details on conditions can be found here: &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">https://docs.kianda.com/docs/platform/rules/general/add-conditions/&lt;/a>&lt;/p>
+&lt;p>Under &lt;strong>Action&lt;/strong>, create one or more actions for the rule by filling out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select a date field&lt;/strong> - choose a date field from the drop-down list you would like to be formatted. The help button &lt;img src="https://docs.kianda.com/images/help.png" alt="help button">provides you with additional support.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click OK and the rule is configured.&lt;/p>
+&lt;p>&lt;strong>Define a format or select a predefined value&lt;/strong> - choose from the drop-down list the type of date formatting you would like to change your date to:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-different-date-formats.jpg" alt="date formats">&lt;/p>
 &lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;li>
+&lt;p>&lt;strong>Select a destination field for the formatted date&lt;/strong> - choose a date field from the drop-down list where you would like to store the new formatted date.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Finally, clicking on the &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> button will save the new rule you have just created and apply it to the chosen field.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;p>This rule can be utilised to format a date to various national date formatting standards.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
