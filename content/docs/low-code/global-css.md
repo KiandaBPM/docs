@@ -35,7 +35,7 @@ The **mock**-**up** was then used as a plan to **create** **this** **process**. 
 Although you may be familiar with the concept of using **CSS** **classes** to apply styling to several methods, you may not be familiar with the concept of using the **name** **field** of a Kianda element to **instantly** **apply** **styes** to that element that you have already developed. Within the **global** **CSS** file, we can create **style** **rules** and have them to apply to any **data**-**name** that contains a name that we precede with a **question** **mark**.
 
 ```css
-div[data-name$="?card"].form-group{
+div[data-name$="?tile"].form-group{
      border-radius: 12px;
      border: 1px solid #e7eaee;
      background: white;
@@ -46,13 +46,13 @@ div[data-name$="?card"].form-group{
 }
 ```
 
-It is good practice to use **relevant** and **descriptive** names for these style rules. In the example above we have a “?card” section with styling rules to style an element to that the **appearance** of a card.
+It is good practice to use **relevant** and **descriptive** names for these style rules. In the example above we have a “?tile” section with styling rules to style an element to that the **appearance** of a tile
 
-We can then add "**?card**" to the end of the name of any form **element** for example a panel that we want to take the apply that **appearance** to.
+We can then add "**?tile**" to the end of the name of any form **element** for example a panel that we want to take the apply that **appearance** to.
 
-![Card example in a panel](/images/destination-panel-card.jpg)
+![Tile example in a panel](/images/destination-panel-card.jpg)
 
-In the image below “**?card**” was used to style these two panels into two **cards** aligned **side** **by** **side**. A “**?noStyleTable**” rule was also used to give our tables a cleaner, less cluttered look.
+In the image below “**?tile**” was used to style these two panels into two **tiles** aligned **side** **by** **side**. A “**?noStyleTable**” rule was also used to give our tables a cleaner, less cluttered look.
 
 ![Table styling example](/images/table-styling-customised.png)
 
@@ -159,7 +159,7 @@ To use a Global CSS file:
    - **Elements and attributes** example:
    
      ```css
-     .field-panel[data-name$="?card-view"].form-group {
+     .field-panel[data-name$="?tile-view"].form-group {
       border-radius: 12px;
       border: 1px solid #e7eaee;
       background: white;
@@ -174,7 +174,7 @@ To use a Global CSS file:
    
    ```css
    @media only screen and (max-width: 767px) {
-     .field-panel[data-name$="?card-view"].form-group:not(.is-design) {
+     .field-panel[data-name$="?tile-view"].form-group:not(.is-design) {
       background: whitesmoke;
      }
    }
