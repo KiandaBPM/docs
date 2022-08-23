@@ -46,7 +46,7 @@ div[data-name$="?tile"].form-group{
 }
 ```
 
-It is good practice to use **relevant** and **descriptive** names for these style rules. In the example above we have a “?tile” section with styling rules to style an element to that the **appearance** of a tile
+It is good practice to use **relevant** and **descriptive** names for these style rules. In the example above we have a “?tile” section with styling rules to style an element to that the **appearance** of a tile.
 
 We can then add "**?tile**" to the end of the name of any form **element** for example a panel that we want to take the apply that **appearance** to.
 
