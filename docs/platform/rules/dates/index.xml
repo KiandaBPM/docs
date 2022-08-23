@@ -221,36 +221,96 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Compare dates</title><link>https://docs.kianda.com/docs/platform/rules/dates/compare-dates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/compare-dates/</guid><description>
-&lt;p>The compare dates rule is utilised to compare two date fields and store the difference between them in a Kianda form field.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
-&lt;p>This rule should be used when a user wishes to compare one date with another from within Kianda.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Compare dates&lt;/strong> rule is utilised to compare two date fields. Depending on the selected comparison function, the result of this rule will be saved as a boolean value (true/false) in another Kianda form field.&lt;/p>
+&lt;p>In the below example, the Compare dates rule is applied to a date field input in a form. If the date entered is after a set deadline, the field &lt;strong>Status - After Deadline?&lt;/strong> in this process is set to Yes. You could use this to ensure that process instances must be completed before an upcoming deadline.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-compare-date-screen.jpg" alt="Date rules">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>The Compare dates rule should be used when a user wishes to compare two different dates. For example, creating a submission deadline function that disallows form submissions after a specified date.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the Compare dates rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
 &lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/p>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Dates&lt;/strong> &amp;gt; &lt;strong>Compare dates&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-select-compare-dates.jpg" alt="Selecting Compare dates">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/p>
+&lt;p>In the &lt;strong>Edit rule - Compare dates&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-compare-dates-screen-conditions.jpg" alt="Compare dates screen conditions">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Action &amp;gt; Compare dates&lt;/strong>, create one or more actions for the rule by filling out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Date to compare&lt;/strong> - choose a date field from the drop-down list to serve as the date you would like to compare. This date will be placed &lt;em>before&lt;/em> the comparison function.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Compare to date&lt;/strong> - choose a date field from the drop-down list to serve as the date you would like to compare to the initially selected date (Date to compare). This date will be placed &lt;em>after&lt;/em> the comparison function.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Compare function&lt;/strong> - Choose from the radio buttons:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Is between dates - checking this button displays a new field &lt;strong>Compare from date&lt;/strong>, where you must select a start date field from the drop-down list, as well as choosing a Compare to date from the other drop-down list (end date). This function returns true or false if the Date to compare falls within the start and end dates selected.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-compare-date-between.jpg" alt="Between dates function">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Is before date - checking this button determines if the selected date for the Date to compare field falls &lt;em>before&lt;/em> the selected date for the Compare to date field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Is after date - checking this button determines if the selected date for the Date to compare field falls &lt;em>after&lt;/em> the selected date for the Compare to date field.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
-&lt;p>To apply this rule, first choose an item to attach the rule to.&lt;/p>
-&lt;ol>
-&lt;li>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Dates&lt;/strong> &amp;gt; &lt;strong>Compare dates&lt;/strong>.&lt;/li>
-&lt;li>The Compare dates rule dialog box appears. Give the rule a Title.
-&lt;img src="https://docs.kianda.com/images/compare-dates.jpg" alt="Compare dates dialog box">&lt;/li>
-&lt;li>Under &lt;strong>Date to compare&lt;/strong>, select the date to compare where the calculation will start from.&lt;/li>
-&lt;li>Under &lt;strong>Compare function&lt;/strong> select from the options: &lt;strong>Is between dates&lt;/strong>, &lt;strong>Is before date&lt;/strong>, and &lt;strong>Is after date&lt;/strong>. If you choose a) &lt;strong>Is between dates&lt;/strong> then you must provide the &lt;strong>Compare from date&lt;/strong> and &lt;strong>Compare to date&lt;/strong>. If you choose b) or c) then you need only to provide the &lt;strong>Compare to date&lt;/strong>. These are fields from within the Kianda form.&lt;/li>
-&lt;li>Under &lt;strong>Result&lt;/strong>, select a &lt;strong>Destination field&lt;/strong> which is the new date to store the comparison.&lt;/li>
-&lt;li>You then need to select what unit the time is, whether it is a minute, hour, day, etc.&lt;/li>
-&lt;li>Then you select when the date is to be compared to i.e., a date field, today, or now.&lt;/li>
-&lt;li>You must then select the date field within the destination field which this new date is to be stored within. You can also select if it is business hours so the time is set to within your working hours.&lt;/li>
-&lt;li>You can also count only full minutes via a yes/no option, so the resulted time will be a rounded to the minute.&lt;/li>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Action &amp;gt; Result&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Destination field&lt;/strong> - choose the field within your Kianda form where you would like to store the resulting boolean value of the comparison function. As can be seen in the below example, you can utilise the result as a status checker using a destination text field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Value when true&lt;/strong> - if the result of the comparison function is &lt;em>true&lt;/em>, enter what string of text you would like to return to your form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Value when false&lt;/strong> - if the result of the comparison function is &lt;em>false&lt;/em>, enter what string of text you would like to return to your form.&lt;/p>
+&lt;p>The resulting value can be used in a Kianda &lt;strong>Condition&lt;/strong> to control other parameters. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-compare-date-result.jpg" alt="Compare dates result">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Finally, clicking on the &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> button will save the new rule you have just created and apply it to the chosen field.&lt;/p>
+&lt;/li>
 &lt;/ol>
-&lt;p>Finally, you can decide to exclude weekends or special dates within your date calculation, using the date calculation settings &amp;amp; the special date settings.&lt;/p></description></item><item><title>Docs: Format date</title><link>https://docs.kianda.com/docs/platform/rules/dates/format-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/format-date/</guid><description>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;p>Selecting the &lt;strong>Compare to date&lt;/strong> function displays an additional field where you can select two different dates, and determine if your Date to compare is within.&lt;/p>
+&lt;p>The resulting boolean value can be used within other Kianda &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Format date</title><link>https://docs.kianda.com/docs/platform/rules/dates/format-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/format-date/</guid><description>
 &lt;p>The format date rule is used to reformat a date field present within your form&lt;/p>
 &lt;p>&lt;strong>When to use:&lt;/strong>&lt;/p>
 &lt;p>The format date should be used when you wish to amend the formatting of a date field within Kianda, i.e. you receive a date from a data source in one format and which to present it in the form in another format.&lt;/p>
