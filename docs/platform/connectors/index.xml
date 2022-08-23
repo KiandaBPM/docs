@@ -511,20 +511,48 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Your &lt;strong>SOAP Service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: SQL Server connector</title><link>https://docs.kianda.com/docs/platform/connectors/sql-server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sql-server/</guid><description>
 &lt;h2 id="sql-server-parameters">SQL Server parameters&lt;/h2>
-&lt;p>When you use a SQL datasource, there are values that can be passed as parameters, for example when using conditions with SQL Server data connectors.&lt;/p>
-&lt;p>When you use an Office 365 datasource, there are &lt;strong>default options&lt;/strong> that can be passed as parameters, for example when using conditions with Office 365 data connectors. These are:These are:&lt;/p>
+&lt;p>One of the datasources available in Kianda is a Structured Query Language &lt;strong>(SQL) Server&lt;/strong> datasource. Using the SQL server as your datasource, you can perform any Create, Read, Update and Delete (&lt;strong>CRUD&lt;/strong>) operations using the &lt;strong>Data&lt;/strong> rules provided in the Kianda platform, to learn more about data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>. Using the SQK server connector, you have access to all tables within your server but keep in mind that you can perform CRUD operations within a &lt;strong>table&lt;/strong> of the server, but you &lt;strong>cannot&lt;/strong> create or delete &lt;strong>tables themselves&lt;/strong>.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use the SQL Server connector when you want &lt;strong>access&lt;/strong> or &lt;strong>modify&lt;/strong> data within any &lt;strong>table&lt;/strong> in your SQL server. When connecting a SQL server datasource to a field, you can only connect and display information of a &lt;strong>table&lt;/strong> from your server, not the information of the &lt;strong>server&lt;/strong> itself. For example if your SQL server contains tables such as &lt;strong>Employees&lt;/strong>, &lt;strong>Purchases&lt;/strong> and &lt;strong>Standing Orders&lt;/strong>, you will be able to connect the list field to &lt;strong>only one&lt;/strong> of those tables giving you CRUD access.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>SQL Server&lt;/strong> from the list of datasources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out fields in the &lt;strong>SQL Server details&lt;/strong> screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sql-server-details.jpg" alt="SQL Server details page">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>User List&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Group List&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Find Users&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Find Groups&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Create Group&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Add User to Group&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Remove User From Group&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Licence Plan List&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Assign Licence to User&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Remove Licence from User&lt;/strong>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: REST Web Service</title><link>https://docs.kianda.com/docs/platform/connectors/rest/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/rest/</guid><description>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your SQL server connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
+&lt;li>&lt;strong>Server&lt;/strong> - the name of the server you want to access or the IP address where the server is hosted. When you are running a local server on your machine you can use &lt;code>localhost&lt;/code> as the server name.&lt;/li>
+&lt;li>&lt;strong>Database&lt;/strong> - the name of the database from your server that you want to connect to.&lt;/li>
+&lt;li>&lt;strong>User&lt;/strong> - username used to log into the server. Note that in order to log into a server with a username and password, the user must be a &lt;strong>system admin&lt;/strong> for the connection to be successful.&lt;/li>
+&lt;li>&lt;strong>Password&lt;/strong> - password used to log into the server.&lt;/li>
+&lt;li>&lt;strong>Trusted connection&lt;/strong> - enable windows trusted connection. Only available when using with Kianda cloud connector, enabling this will automatically enable the &lt;strong>Use Kianda Cloud Connect&lt;/strong> option. Will use the connector service credentials to connect to the destination datasource.&lt;/li>
+&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is disabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between a &lt;strong>locally run SQL server&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>. Check this option if you want to connect to a server that is running on your local machine. When &lt;strong>Use Kianda Cloud Connect&lt;/strong> is enabled, a &lt;strong>Connectors&lt;/strong> option appears.
+&lt;ul>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC connection that runs the local SQL server that you want to connect to.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added the SQL server details, you are ready to test your connection and add security. At the bottom of the &lt;strong>SQL Server details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: REST Web Service</title><link>https://docs.kianda.com/docs/platform/connectors/rest/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/rest/</guid><description>
 &lt;p>One of the datasources available in Kianda is a connector to a &lt;strong>REST API&lt;/strong>. Kianda has the ability to perform &lt;strong>GET, POST, PUT&lt;/strong> and &lt;strong>DELETE&lt;/strong> operations if they are supported by the webservice. The REST API datasource can support multiple REST methods, all of which can be called independently. Data from the webservice can be pulled into your Kianda workspace and manipulated, or data from Kianda can be pushed to the webservice to be used by other systems.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can create a REST API datasource when you want your Kianda processes and forms to have access to a REST API.&lt;/p>
