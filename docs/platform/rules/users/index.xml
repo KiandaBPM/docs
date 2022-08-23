@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – User rules</title><link>https://docs.kianda.com/docs/platform/rules/users/</link><description>Recent content in User rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/users/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Get user profile property</title><link>https://docs.kianda.com/docs/platform/rules/users/get-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/get-user-property/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Get user property&lt;/strong> rule allows you to retrieve a &lt;strong>property&lt;/strong> of a user that has been selected. You can select a user by defining one in a &lt;strong>user picker&lt;/strong> field or selecting the &lt;strong>current user&lt;/strong>, meaning that the user currently filling out the form will be selected when retrieving a profile property of a profile attribute. For example you can retrieve properties of a such as &lt;strong>First Name&lt;/strong>, &lt;strong>Last Name&lt;/strong>, &lt;strong>Email&lt;/strong> or &lt;strong>Phone number&lt;/strong> of a current user, those property values can be used to automate form fields within your process.&lt;/p>
+&lt;p>The &lt;strong>Get user property&lt;/strong> rule allows you to retrieve a &lt;strong>property&lt;/strong> of a user that has been selected. You can select a user by defining one in a &lt;strong>user picker&lt;/strong> field or selecting the &lt;strong>current user&lt;/strong>, meaning that the user currently filling out the form will be selected when retrieving a profile property of a profile attribute. For example you can retrieve properties such as &lt;strong>First Name&lt;/strong>, &lt;strong>Last Name&lt;/strong>, &lt;strong>Email&lt;/strong> or &lt;strong>Phone number&lt;/strong> of a current user, those property values can be used fill in fields associated with a user.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Use this rule when you need to retrieve a profile property or a profile attribute from a current user or a user defined in a user picker field.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
@@ -10,14 +10,10 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-getting-started">Before getting started&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>In advance of using the &lt;strong>Get user property&lt;/strong> rule, in your process you need to have created at least one or more forms. The get user property rule also requires you to select a &lt;strong>user profile source&lt;/strong>, the source can be the &lt;strong>Current user&lt;/strong> or a &lt;strong>User picker&lt;/strong> field. When selecting the &lt;strong>current user&lt;/strong> option, you will target the &lt;strong>property&lt;/strong> of the user that is &lt;strong>currently&lt;/strong> using the form. When you pick the &lt;strong>user picker field&lt;/strong>, you need to create a &lt;strong>User picker&lt;/strong> field which is used to specify a user when getting a property. The rule also requires a &lt;strong>text box&lt;/strong> field which is used as a &lt;strong>container&lt;/strong> to store the &lt;strong>retrieved value&lt;/strong> of the property.&lt;/p>
+&lt;p>In advance of using the &lt;strong>Get user property&lt;/strong> rule, in your process you need to have created at least one or more forms. The get user property rule also requires you to select a &lt;strong>user profile source&lt;/strong>, the source can be the &lt;strong>Current user&lt;/strong> or a &lt;strong>User picker&lt;/strong> field. When selecting the &lt;strong>current user&lt;/strong> option, you will target the &lt;strong>property&lt;/strong> of the user that is &lt;strong>currently&lt;/strong> using the form. When you pick the &lt;strong>user picker field&lt;/strong>, you need to create a &lt;strong>User picker&lt;/strong> field which is used to select a user to target when &lt;strong>retireving&lt;/strong> a property. The rule also requires a &lt;strong>text box&lt;/strong> field which is used as a &lt;strong>container&lt;/strong> to store the &lt;strong>retrieved value&lt;/strong> of the property.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>User picker (required)&lt;/strong> - field used to select a user for which you want to update a property. To learn more about user picker field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>Text box (required)&lt;/strong> - field used as a container to store the value of the property. To learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -44,28 +40,27 @@
 &lt;p>&lt;strong>Current user&lt;/strong> - selecting this option will result in targeting the user that is currently using the form.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Defined in a user picker field&lt;/strong> - selecting this option will result in a &lt;strong>Pick a user field&lt;/strong> option to appear allowing you to select a user picker field from your process. This will then specify which user you are targeting when wanting to retrieve a property from. See image below:&lt;/p>
+&lt;p>&lt;strong>Defined in a user picker field&lt;/strong> - selecting this option will result in a &lt;strong>Pick a user field&lt;/strong> option to appear allowing you to select a user picker field from your process. This will then specify which user you are targeting when wanting to retrieve a property, see image below:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/get-property-user-picker.jpg" alt="Selecting the user picker field option">&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Field to store user profile property&lt;/strong> - you can select a field within your process to store the value of the property retrieved.&lt;/p>
+&lt;p>&lt;strong>Field to store user profile property&lt;/strong> - you can select a field within your process to store the value of the retrieved property.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>User profile property&lt;/strong> - list of profile properties and profile attributes that you want the retrieve. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>User profile property&lt;/strong> - list of profile properties and profile attributes that you can retrieve. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>You can choose to retrieve more than one property of a user, to do so click on the &lt;img src="https://docs.kianda.com/images/update-propert-plus.jpg" alt="Selecting the user picker field option"> This will result in adding more &lt;strong>Field to store user profile property&lt;/strong> and &lt;strong>User profile property&lt;/strong> fields. You can also delete unwanted property selectors by clicking on the red &lt;strong>Bin/Trash&lt;/strong> icon.&lt;/p>
+&lt;p>You can choose to retrieve more than one property of a user, to do so click on the &lt;img src="https://docs.kianda.com/images/update-propert-plus.jpg" alt="Selecting the user picker field option"> button. This will result in adding more &lt;strong>Field to store user profile property&lt;/strong> and &lt;strong>User profile property&lt;/strong> fields. You can also delete unwanted fields by clicking on the red &lt;strong>Bin/trash&lt;/strong> icon.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/get-property-add-delete.jpg" alt="Add/delete property selector">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="notes">Notes&lt;/h3>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
@@ -82,9 +77,22 @@
 &lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Lookup user by property</title><link>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Lookup user by property&lt;/strong> rule allows you to look up a user from your &lt;strong>subscription&lt;/strong> using one of the &lt;strong>properties&lt;/strong> in their &lt;strong>profile&lt;/strong> for example first name, last name, email or department. Using this rule you can also look up &lt;strong>groups&lt;/strong> or &lt;strong>partners&lt;/strong> by specifying one of the properties available.&lt;/p>
+&lt;p>The &lt;strong>Lookup user by property&lt;/strong> rule allows you to look up a user from your &lt;strong>subscription&lt;/strong> using one of the &lt;strong>properties&lt;/strong> in their &lt;strong>profile&lt;/strong> for example first name, last name, email or department. Using this rule you can also look up &lt;strong>groups&lt;/strong> or &lt;strong>partners&lt;/strong> by specifying one of the properties available. When looking up a user, group or a partner you can use the following properties:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>First Name&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Last name&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Display name&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Email&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Phone number&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Partner company name&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Partner main contact email&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Partner language&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Partner region&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>UserId&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Custom&lt;/strong> &lt;strong>profile attributes&lt;/strong>, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/li>
+&lt;/ul>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>Use this rule when your process requires to &lt;strong>filter&lt;/strong> a &lt;strong>user&lt;/strong> using a profile property, for example, when a user fills out his email address, a user picker field is assigned by the user that &lt;strong>matches&lt;/strong> the specified email address. This rule is used to &lt;strong>automate&lt;/strong> a &lt;strong>user picker&lt;/strong> field when property input is provided.&lt;/p>
+&lt;p>Use this rule when your process requires to &lt;strong>filter&lt;/strong> a &lt;strong>user&lt;/strong> using a profile property, for example, when a user fills out his email address, a user picker field is assigned with the user that &lt;strong>matches&lt;/strong> the entered email address. This rule is used to &lt;strong>automate&lt;/strong> a &lt;strong>user picker&lt;/strong> field when property input is provided.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -92,7 +100,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-getting-started">Before getting started&lt;/h2>
-&lt;p>In advance of using the &lt;strong>Lookup user by property&lt;/strong> rule, in your process you need to have created at least one or more forms. The lookup user by property rule also requires a &lt;strong>User picker&lt;/strong> field which is used to store the user that matches the property you&amp;rsquo;re looking by. For best practice, you can also create a &lt;strong>text box&lt;/strong> field which holds the &lt;strong>actual value&lt;/strong> of the property that you want to look by, for example the email address of a user.&lt;/p>
+&lt;p>In advance of using the &lt;strong>Lookup user by property&lt;/strong> rule, in your process you need to have created at least one or more forms. The lookup user by property rule also requires a &lt;strong>User picker&lt;/strong> field which is used to store the user that matches the property you have entered. For best practice, you can also create a &lt;strong>text box&lt;/strong> field which holds the &lt;strong>value&lt;/strong> of the property that you want to look by, for example the email address of a user.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>User picker (required)&lt;/strong> - field to store the user when the look up is performed. To learn more about user picker field, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>Text box (optional)&lt;/strong> - value of the property you want to look by. To learn more about text box field, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
@@ -141,15 +149,15 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;ul>
-&lt;li>Create a &lt;strong>datasource&lt;/strong> with all users and their &lt;strong>properties&lt;/strong>, you can create a &lt;strong>list&lt;/strong> field and &lt;strong>link&lt;/strong> the datasource to the list field. With that you will have a &lt;strong>selection&lt;/strong> of &lt;strong>user properties&lt;/strong> which you can use as a search mechanism for users.&lt;/li>
+&lt;li>Create a &lt;strong>datasource&lt;/strong> with all users and their &lt;strong>properties&lt;/strong>, you can create a &lt;strong>list&lt;/strong> field and set the field to the created datasource. You can set the display of the list field to the property value of the data source. With that you will have a &lt;strong>selection&lt;/strong> of &lt;strong>user properties&lt;/strong> which you can use as a search mechanism for users. For example search users that are based in a specific location. To learn more about list field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Invite partner</title><link>https://docs.kianda.com/docs/platform/rules/users/invite-partner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/invite-partner/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Invite partner&lt;/strong> rule allows you to dynamically send out an email to a partner organisation with an invitation to share a process from your subscription. This rule creates a profile for the partner as well as shares a process specified in the rule.&lt;/p>
+&lt;p>The &lt;strong>Invite partner&lt;/strong> rule allows you to &lt;strong>dynamically&lt;/strong> send out an email to a partner organisation with an &lt;strong>invitation&lt;/strong> to &lt;strong>share&lt;/strong> a process from your subscription. This rule &lt;strong>creates a profile&lt;/strong> for the partner as well as shares a process specified in the rule. You can choose to &lt;strong>generate&lt;/strong> an invite link and store the link in a text box field if needed instead of sending out an automatic email.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>Use this rule when inviting a &lt;strong>third-party organisation&lt;/strong> from within a process instance, for example when your company must hire a different organisation to complete a specific task. Take a &lt;strong>maintenance&lt;/strong> company for example, a process is created to perform a maintenance check. The maintenance company performs a check but some broken parts need to be re-manufactured, therefore the maintenance company sends out a &lt;strong>Partner invitation&lt;/strong> to the manufacturing company in order to manufacture missing or broken parts.&lt;/p>
+&lt;p>Use this rule when inviting a &lt;strong>third-party organisation&lt;/strong> from within a process instance, for example when your company must hire a third-party organisation to complete a specific task from your process, you can share this process with the third-party organisation to complete the task. Take a &lt;strong>maintenance&lt;/strong> company for example, a process is created to perform a maintenance check. The maintenance company performs a check but some broken parts need to be re-manufactured, therefore the maintenance company sends out a &lt;strong>Partner invitation&lt;/strong> to the &lt;strong>manufacturing&lt;/strong> company in order to manufacture missing or broken parts as the maintenance company makes checks and fixes but not manufacture parts.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -161,7 +169,7 @@
 &lt;p>In advance of using the &lt;strong>Invite partner&lt;/strong> rule, in your process you need to have created at least one or more forms. The invite partner rule also requires you to create a list of fields that are used to hold information about the partner and which process you want to share. See below for the list of fields required in your process before using the invite partner rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Partner organisation&lt;/strong> - text box field representing the name of the organisation that the partner is part of.&lt;/li>
-&lt;li>&lt;strong>Shared process name&lt;/strong> - text box field representing the name of the process you want to share. Note that this name needs to match the name of the &lt;strong>Shared process&lt;/strong> instance and not the name of a process. For example if your subscription has a process called &lt;strong>Maintenance check&lt;/strong>, you need to create a shared process instance and give it an appropriate shared process name, for example &lt;strong>Maintenance check - Plumbing Partner&lt;/strong>. In this field you need to use the Maintenance check - Plumbing Partner as the name.&lt;/li>
+&lt;li>&lt;strong>Shared process name&lt;/strong> - text box field representing the name of the process you want to share.&lt;/li>
 &lt;li>&lt;strong>Contact first name&lt;/strong> - text box field representing the first name of the partner you want to share a process with.&lt;/li>
 &lt;li>&lt;strong>Contact last name&lt;/strong> - text box field representing the last name of the partner you want to share a process with.&lt;/li>
 &lt;li>&lt;strong>Contact email&lt;/strong> - text box field representing the email address of the partner you want to share a process with.&lt;/li>
@@ -186,20 +194,42 @@
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Partner organisation&lt;/strong> - field representing the name of the organisation that the partner is part of.&lt;/li>
-&lt;li>&lt;strong>Shared process name&lt;/strong> - field representing the name of the process you want to share.&lt;/li>
-&lt;li>&lt;strong>Contact first name&lt;/strong> - field representing the first name of the partner you want to share a process with.&lt;/li>
-&lt;li>&lt;strong>Contact last name&lt;/strong> - field representing the last name of the partner you want to share a process with.&lt;/li>
-&lt;li>&lt;strong>Contact email&lt;/strong> - field representing the email address of the partner you want to share a process with.&lt;/li>
-&lt;li>&lt;strong>Partner country&lt;/strong> - field representing the country that your partner is situated in.&lt;/li>
-&lt;li>&lt;strong>Partner city&lt;/strong> - field representing the city that your partner is in.&lt;/li>
-&lt;li>&lt;strong>Partner logo&lt;/strong> - text box field representing the URL of the partners logo or a file field with the uploaded logo.&lt;/li>
-&lt;li>&lt;strong>Send invite email&lt;/strong> - radio list representing whether to send an email to the partner. If &lt;strong>No&lt;/strong> is selected an extra field appears:
+&lt;li>
+&lt;p>&lt;strong>Partner organisation&lt;/strong> - field representing the name of the organisation that the partner is part of.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Shared process name&lt;/strong> - field representing the name of the process you want to share. Note that this name needs to match the name of the &lt;strong>Shared process&lt;/strong> instance and not the name of a process. For example if your subscription has a process called &lt;strong>Maintenance check&lt;/strong>, you need to create a shared process instance and give it an appropriate shared process name, for example &lt;strong>Maintenance check - Plumbing Partner&lt;/strong>. In this field you need to use the Maintenance check - Plumbing Partner as the name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Contact first name&lt;/strong> - field representing the first name of the partner you want to share a process with.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Contact last name&lt;/strong> - field representing the last name of the partner you want to share a process with.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Contact email&lt;/strong> - field representing the email address of the partner you want to share a process with.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Partner country&lt;/strong> - field representing the country that your partner is situated in.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Partner city&lt;/strong> - field representing the city that your partner is in.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Partner logo&lt;/strong> - text box field representing the URL of the partners logo or a file field with the uploaded logo.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Send invite email&lt;/strong> - radio list representing whether to send an email to the partner. If &lt;strong>No&lt;/strong> is selected an extra field appears:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Field to store invite link&lt;/strong> - field used as a container to store the generated invite link.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Field to store invite link&lt;/strong> - field used as a container to store the generated invite link.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/invite-partner-link.jpg" alt="Invite link field">&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Partner account&lt;/strong> - a user picker field used to specify the account of the partner. You can pre-create an account for your partner and set this field with his user. This will prevent the invited partner to create an account when accepting the invite link.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Partner account&lt;/strong> - a user picker field used to specify the account of the partner. You can pre-create an account for your partner and set this field with his user. This will prevent the invited partner to create an account when accepting the invite link.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -222,7 +252,13 @@
 &lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Update user property</title><link>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Update user property&lt;/strong> rule allows you to &lt;strong>change/update&lt;/strong> a profile property of a user within your subscription. When updating a property of a user, you can choose to select between the current user of the form or a user that can be selected from a user picker field. To learn more about a user picker field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/p>
+&lt;p>The &lt;strong>Update user property&lt;/strong> rule allows you to &lt;strong>change/update&lt;/strong> a profile property of a user within your subscription. When updating a property of a user, you can choose to select between the &lt;strong>current user&lt;/strong> of the form or a user that can be selected from a &lt;strong>user picker&lt;/strong> field. To learn more about a user picker field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>. You can update the following properties of a user:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Phone number&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Partner language&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Partner region&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Custom profile attributes&lt;/strong>, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/li>
+&lt;/ul>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Use this rule when you need to update a profile &lt;strong>property&lt;/strong> or a profile &lt;strong>attribute&lt;/strong> of a user. Select the &lt;strong>current user&lt;/strong> option to update a property of the user that is &lt;strong>currently&lt;/strong> filling out a form, or create a &lt;strong>user picker&lt;/strong> field to have more &lt;strong>flexibility&lt;/strong> with user selection.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
