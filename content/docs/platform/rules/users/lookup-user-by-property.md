@@ -6,11 +6,23 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction
 
-The **Lookup user by property** rule allows you to look up a user from your **subscription** using one of the **properties** in their **profile** for example first name, last name, email or department. Using this rule you can also look up **groups** or **partners** by specifying one of the properties available.
+The **Lookup user by property** rule allows you to look up a user from your **subscription** using one of the **properties** in their **profile** for example first name, last name, email or department. Using this rule you can also look up **groups** or **partners** by specifying one of the properties available. When looking up a user, group or a partner you can use the following properties:
+
+- **First Name**
+- **Last name** 
+- **Display name**
+- **Email**
+- **Phone number**
+- **Partner company name**
+- **Partner main contact email**
+- **Partner language**
+- **Partner region**
+- **UserId**
+- **Custom** **profile attributes**, to learn more about profile attributes go to [Profile attributes](/docs/platform/administration/users/#modify-profile-attributes).
 
 ## When to use 
 
-Use this rule when your process requires to **filter** a **user** using a profile property, for example, when a user fills out his email address, a user picker field is assigned by the user that **matches** the specified email address. This rule is used to **automate** a **user picker** field when property input is provided.
+Use this rule when your process requires to **filter** a **user** using a profile property, for example, when a user fills out his email address, a user picker field is assigned with the user that **matches** the entered email address. This rule is used to **automate** a **user picker** field when property input is provided.
 
 You can add this rule:
 - [x] to a field
@@ -19,7 +31,7 @@ You can add this rule:
 
 ## Before getting started
 
-In advance of using the **Lookup user by property** rule, in your process you need to have created at least one or more forms. The lookup user by property rule also requires a **User picker** field which is used to store the user that matches the property you're looking by. For best practice, you can also create a **text box** field which holds the **actual value** of the property that you want to look by, for example the email address of a user. 
+In advance of using the **Lookup user by property** rule, in your process you need to have created at least one or more forms. The lookup user by property rule also requires a **User picker** field which is used to store the user that matches the property you have entered. For best practice, you can also create a **text box** field which holds the **value** of the property that you want to look by, for example the email address of a user. 
 
 - **User picker (required)** - field to store the user when the look up is performed. To learn more about user picker field, go to [User picker control](/docs/platform/controls/input/user-picker/).
 - **Text box (optional)** - value of the property you want to look by. To learn more about text box field, go to [Text box control](/docs/platform/controls/input/textbox/).
@@ -59,7 +71,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png)
 
-- Create a **datasource** with all users and their **properties**, you can create a **list** field and **link** the datasource to the list field. With that you will have a **selection** of **user properties** which you can use as a search mechanism for users.
+- Create a **datasource** with all users and their **properties**, you can create a **list** field and set the field to the created datasource. You can set the display of the list field to the property value of the data source. With that you will have a **selection** of **user properties** which you can use as a search mechanism for users. For example search users that are based in a specific location. To learn more about list field go to [List control](/docs/platform/controls/input/list/).
 
 ### What’s next ![Idea icon](/images/18.png)
 
