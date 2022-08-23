@@ -1,7 +1,7 @@
 ---
 title: "Global CSS file"
 weight: 6
-typora-root-url: ..\..\..\..\static
+typora-root-url: ..\..\..\static
 ---
 
 Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace **Administrator** you can add a **Global CSS File** to make changes to the look and feel of the site as well as processes. The **Global CSS file editor** exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site, see [Subscription](/docs/platform/administration/subscription/) for an introduction to the **Subscription** function.
@@ -40,13 +40,81 @@ div[data-name$="?card"].form-group{
      border: 1px solid #e7eaee;
      background: white;
      margin-bottom: 15px;
-     padding-bottom: 1px;
+     padding-bottom: 2px;
      padding-top: 18px;
      padding-right: 15px;
 }
 ```
 
 It is good practice to use **relevant** and **descriptive** names for these style rules. In the example above we have a “?card” section with styling rules to style an element to that the **appearance** of a card.
+
+We can then add "**?card**" to the end of the name of any form **element** for example a panel that we want to take the apply that **appearance** to.
+
+![Card example in a panel](/images/destination-panel-card.jpg)
+
+In the image below “**?card**” was used to style these two panels into two **cards** aligned **side** **by** **side**. A “**?noStyleTable**” rule was also used to give our tables a cleaner, less cluttered look.
+
+![Table styling example](/images/table-styling-customised.png)
+
+The benefit of this method is that styles can be **created** **once** and very quickly applied to **elements** anywhere in your Kianda platform. This saves process designers having to revisit the **CSS** **file** every time they are creating a new process or dashboard.
+
+#### Small touches example
+Here is another example of that demonstrates how you can create a **defined** and **recognizable** design without bloating the visuals of your workspace. In this example the below a style rule is used to add a gold underline to the **header** **titles** of processes to separate the title of the page and the specific course you are currently viewing. 
+
+```css
+div[data-name$="?headerTitle"]:not(.is-design) .header-prefix {
+  font-size: medium;
+  text-transform: uppercase;
+  color: #004B8B
+    margin-right: 10px;
+  border-bottom: 3px solid #F9DCC1;
+}
+```
+
+![Gold underline styling example](/images/gold-underline-example.jpg)
+
+Adding small details like this can have a great affect on the **aesthetic** of your Kianda platform.
+
+### Using Font Awesome icons
+
+In addition to creating customised styling, you can add icons to your controls, such as buttons, or to your dashboard display as shown in the image below, to make your workspace features stand out.
+
+<img src="/images/icon-examples.jpg" alt="Icon examples" style="zoom:80%;" />
+
+Icons from the [**Font** **Awesome**](https://fontawesome.com/) icon library can be added using HTML to act as **buttons**. This creates a more visually appealing layout and the **function** can be instantly recognizable to users by the **icon** you choose. Once you have found an icon you wish to use you can then use the provided **HTML** on the website to add it to your **Kianda** **workspace**, it can then be wrapped in a [HTML link tag](https://www.w3schools.com/tags/tag_a.asp) to turn it into a **usable** **button**.
+
+You can have icons display before or after the controls by using a CSS rule, for example use a 'before' selector in CSS to make the icons display as shown in the image above. The CSS rule can be given the Unicode ID of the Font Awesome icon you wish to display and the browser will render the icon at runtime.
+
+```css
+a:before {
+    font-family:"Font Awesome 5 Free";
+    content: "\f007"
+        display: inline-block;
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+```
+
+For more information on Font Awesome icons go to this [documentation](https://fontawesome.com/docs/web/setup/upgrade/pseudo-elements) link or see this [cheatsheet of Unicode IDs](https://fontawesome.com/docs/web/setup/upgrade/pseudo-elements) for icons, for example F007 used in the code snippet above is a user icon, while F015 is the home icon, seen in the image above. You can test out designs using this [JSFiddle](http://jsfiddle.net/z2eakghc/9/) or code playground. 
+
+### Using modals in form design
+
+In addition to styling forms and form elements, **modals** provide a useful way to communicate with users by displaying information in front of page content requiring the user to engage with an action within the modal . In the example below, you can see how the Transfer assets modal appears on the page, requiring users to view and interact with functionality **contained** **within** **the modal** without having to navigate away from the **current** **page** they are on. This is not only **convenient** for the user but it adds a **layered** **design** to your Kianda platform and its aesthetically pleasing to view.
+
+![Modal example](/images/modal-design-example.jpg)
+
+A **JavaScript** **function** can be called to **display** a page in a **form** **modal**. This function also allows you to **pass** **data** into the modal for use within that form.
+
+```html
+<div style="padding-top:5px;">
+ <h5>Environments</h5>
+ <a data-subid="95b8e990-21a8-47e0-5f03bcae85c9" onclick="showFormModal(this.dataset.subid, false, '&formName=dev'); return false; title="DEV Environment" class="btn btn-xs created"> == $0
+ <div class="badge created">DEV</div>
+ </a>
+```
+
+Now that you have been introduced to a variety of design considerations, go to the next section to learn how to use the [Global CSS Editor](#how-to-get-started-with-global-css).
 
 
 
@@ -117,9 +185,11 @@ The next section deals with [Adding items](#adding-items-to-global-css) to the f
 
 
 
-### Adding items to Global CSS
+## Adding items to Global CSS
 
-Additional items can be added to the file whenever you wish. Best practice is to update only individual items based on the **Unique Name** which becomes an attribute.
+Remember additional items can be added to the file whenever you wish. Best practice is to update only individual items based on the **Unique Name** which becomes an attribute. The example below uses the concept shown of **CSS classes** as shown in the section [Effective use of CSS classes](#effective-use-of-css-classes)
+
+### Customised button example
 
 For example, if you have a button in a process and you want to change background colour and text colour, first you need to note down the **Unique Name.** Next, because you only want to target the button in a specific process and not all buttons in the system, use the **Element and attribute** selector. This will take the form of: 
 
@@ -161,6 +231,7 @@ The steps above can be used to edit any element in the subscription using any st
 
 
 ### Process and dashboard specific CSS
+
 The steps in the [Adding items to Global CSS](#adding-items-to-global-css) section provide a perfect means to ensure your CSS is available throughout the workspace subscription. However changes may unintentionally cause changes in other parts of the system. For this reason, it possible to add **localised CSS** to each process and dashboard through a rich text field.
 For example, if you want to change all buttons in the process to have a background colour of Magenta, you can follow the following steps.
 
@@ -191,6 +262,8 @@ The steps above can be used to edit any element in a **process or dashboard** us
    
 
 ### What's next  ![Idea icon](/images/18.png) ###
+
+To review the range of fields available in Kianda that can have styling applied go to [Controls](/docs/platform/controls/)
 
 To learn more about designing processes go to [Application designer](/docs/platform/application-designer/).
 
