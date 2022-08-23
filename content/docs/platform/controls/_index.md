@@ -27,22 +27,36 @@ There are three categories of controls (fields):
 
 If you develop custom fields, they will be available to form designers under a fourth category of controls called **Custom**.
 
-**To start adding fields to a form**:
+### Adding, moving and removing controls
 
-1. Select the form you want to work on so that the **Edit Form** button (Pen icon ![Pen button](/images/penicon.png)) appears
-2. Click on a Controls category and control type in the left-hand pane. For example, you could choose the **Input** category and select **Text box** to insert a text box into your form. 
+To start **adding** controls or fields to a form:
 
-To move a field, click on the **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
+1. Select the form you want to work on so that the **Edit Form** button (Pen icon ![Pen button](/images/penicon.png)) appears.
+2. Click on a Controls **category** (Input, Layout or Action) and control type in the left-hand pane. For example, you could choose the **Input** category and select **Text box** to insert a text box into your form. 
 
-To remove a field from your form:
+3. To **move** a control, click on the **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
 
-1. Select the field you want to remove
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
-3. Click **OK** to confirm removal.
+4. To **remove** a control from your form, select the field you want to remove, then click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and click on **OK** to confirm removal.
 
-All fields will have edit options when you start creating the field, as well as [Field properties](/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties#field-properties) that you can edit to tailor the field (control) to make it work the way you want. Each field can also have rules applied to it to make your process dynamic.
+### Editing controls
 
+All controls/fields will have edit options when you start creating the field, as well as [Field properties](/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties#field-properties) that you can edit to tailor the field (control) to make it work the way you want. Each field can also have rules applied to it to make your processes dynamic.
 
+To edit a control:
+
+1. Click on the added control, so that the **Edit** button (Pen icon ![Pen button](/images/penicon.png)) appears.
+
+2. Then click on the **Edit** button itself so that the edit control dialog box appears, for example as shown with the textbox control below.
+
+   ![Edit textbox example](/images/edit-textbox-example.jpg)
+
+3. Fill out the fields within the dialog box as necessary. All controls need a **Title** from which a **Unique Name** is auto-created. This Unique ID is used in [expressions](/docs/platform/rules/general/expression-builder/) to create automated emails for example. 
+
+   ![Edit textbox name](/images/edit-field-name.jpg)
+
+   Additional syntax can be added to the **Unique** **name** to attribute customised styling, see [User tips](#user-tips).
+
+Depending on the type of control implemented, different fields and values can be selected, see [Controls list](#controls-list) for a full set of controls.
 
 ## Controls list ##
 
