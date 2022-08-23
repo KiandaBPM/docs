@@ -50,7 +50,7 @@ It is good practice to use **relevant** and **descriptive** names for these styl
 
 We can then add "**?tile**" to the end of the name of any form **element** for example a panel that we want to take the apply that **appearance** to.
 
-![Tile example in a panel](/images/destination-panel-card.jpg)
+![Tile example in a panel](/images/destination-panel-tile.jpg)
 
 In the image below “**?tile**” was used to style these two panels into two **tiles** aligned **side** **by** **side**. A “**?noStyleTable**” rule was also used to give our tables a cleaner, less cluttered look.
 
