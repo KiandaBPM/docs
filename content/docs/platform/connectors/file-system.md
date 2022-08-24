@@ -43,7 +43,7 @@ Using this type of datasource is useful when you want Kianda to have access to y
 
 ## File system parameters
 
-When you use a **File system** datasource, there are **default parameters** invoked from the files. For example when you create a **list** in a Kianda form using a File system datasource, these File system parameters will appear in **Display field**, **Value field** and **Sort by** field in the **Edit field dialog box**, see **Title** for example in the image below.
+When you use a **File system** datasource, there are **default parameters** invoked from the files. For example when you create a **list** in a Kianda form using a File system datasource, these File system parameters will appear in **Display field**, **Value field** and **Sort by** field in the **Edit field dialog box**, see **Name** for example in the image below.
 
 ![File system parameters](/images/file-system-parameters.jpg)
 
