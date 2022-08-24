@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction
 
-The **Format date** rule is used to reformat a selected date field within your Kianda form, and send it to a destination field.
+The **Format date** rule is used to reformat a selected date field within your Kianda form, and send it to a destination field. You can choose from a range of date formats where month or day leads, and time is also included, see step 5 in [How to get started](#how-to-get-started).
 
 In the below example, the Format date rule is applied to a selected field from the drop-down list and is formatted to the *MM/DD/YYYY* format. The resulting formatted date is then displayed in the **Formatted Date** field that is selected under **Select a destination field for the formatted date**. You can utilise this rule to format the entered date so that it matches various national date formatting standards. The default formatting for Kianda dates are *DD/MM/YYYY*, so in the below example an entered date of *23/08/2022* would become *08/23/2022*.
 
