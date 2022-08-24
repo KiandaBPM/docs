@@ -56,13 +56,43 @@ To edit a control:
 
    Additional syntax can be added to the **Unique** **name** to attribute customised styling, see [User tips](#user-tips).
 
-Depending on the type of control implemented, different fields and values can be selected, see [Controls list](#controls-list) for a full set of controls.
+4. The remaining fields within the dialog box will depend on the type of control implemented, where different fields and values can be selected, see [Controls list](#controls-list) for a full set of controls. Links available at the end of this page will also bring you to each control category and from there you can find out what each parameter means for each control type.
+
+   
 
 ## Controls list ##
 
 This table lists out the full range of available field types.
 
 ![Form controls](/images/fields-controls-list-table.jpg)
+
+
+
+### User tip ![Target icon](/images/05.png)
+
+If customised styling has been applied in a **Global CSS file,** available to administrators under **Administration** > **Subscription**, then these attributes can be applied to controls by using "?attribute selector" after the Unique name of the field/control, as shown below. 
+
+![Textbox with attributes](/images/textbox-attribute.jpg)
+
+In the example above **highlight** is defined in the **Global CSS file** as follows:
+
+```css
+div[data-name$="highlight"].form-group{
+     border-radius: 15px;
+     border: 10px solid #c71104;
+     background: white;
+     margin-bottom: 20px;
+     padding-bottom: 18px;
+     padding-top: 18px;
+     padding-right: 15px;
+}
+```
+
+When applied to a textbox in forms, a particular colour border with padding is applied as follows:
+
+![Applied styling example](/images/applied-styling-example.jpg)
+
+Go to [Global CSS file](/docs/low-code/global-css/) for more details.
 
 
 
