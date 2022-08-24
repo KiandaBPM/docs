@@ -21,7 +21,7 @@ You can add this rule:
 
 Before you get started with this rule, you need to create a **shared process instance** of the process you intend to share with the partner. To learn more how to create a shared process instance, go to [Shared processes](/docs/platform/b2b-portals/shared-process/).
 
-In advance of using the **Invite partner** rule, in your process you need to have created at least one or more forms. The invite partner rule also requires you to create a list of fields that are used to hold information about the partner and which process you want to share. See below for the list of fields required in your process before using the invite partner rule:
+In advance of using the **Invite partner** rule, in your process you need to have created at least one or more forms. The **Invite partner** rule also requires you to create a list of fields that are used to hold information about the partner and which process you want to share. See below for the list of fields required in your process before using the invite partner rule:
 
 - **Partner organisation** - text box field representing the name of the organisation that the partner is part of.
 - **Shared process name** - text box field representing the name of the process you want to share.
@@ -82,7 +82,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png)
 
-- Prior to inviting a partner, create a **shared process instance** of a process that you intend your partner to use. Give it a unique name for example use the original process name followed by the partners name. If you have a process called **Inspection Checklist** and your partners name is **Windmill Inspections**, call your shared process instance **Inspection Checklist - Windmill Inspections**. This will help you differentiate between your original process and the shared process.
+Prior to inviting a partner, create a **shared process instance** of a process that you intend your partner to use. Give it a unique name for example use the original process name followed by the partners name. If you have a process called **Inspection Checklist** and your partners name is **Windmill Inspections**, call your shared process instance **Inspection Checklist - Windmill Inspections**. This will help you differentiate between your original process and the shared process.
 
 ### What’s next ![Idea icon](/images/18.png)
 

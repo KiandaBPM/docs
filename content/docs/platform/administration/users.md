@@ -92,7 +92,7 @@ Click on each of the links below to read more about each function. In addition t
 ### Create a new user
 
 1. Click on the **Create new user** button ![Create new user button](/images/create-new-user-button.jpg).
-2. Complete the fields as listed in Step 2 in [**view and edit** existing user details](#view-and-edit-existing-user-details)] above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the **Profile attributes** button, see [Modify profile attributes](#modify-profile-attributes) section.
+2. Complete the fields as listed in Step 2 in [View and edit existing user details](#view-and-edit-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the **Profile attributes** button, see [Modify profile attributes](#modify-profile-attributes) section.
 3. Check the **Send welcome email** check box if you wish to have a system generated email sent to the new user. 
 4. Click on **Group membership** to view a user's group membership, see [Groups](#Groups) for more details.
 5. When you are finished editing a user's details, click on **OK**, or click on **Close** to exit the dialog box. 

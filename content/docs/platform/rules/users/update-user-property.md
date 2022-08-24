@@ -72,7 +72,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png)
 
-- When updating multiple properties at once, create a text box field for each property you want to update. This way you have more control of the value you want to assign to each property. To learn more about text box field go to [Text box control](/docs/platform/controls/input/user-picker/).
+When updating multiple properties at once, create a text box field for each property you want to update. This way you have more control of the value you want to assign to each property. To learn more about text box field go to [Text box control](/docs/platform/controls/input/user-picker/).
 
 ### What’s next ![Idea icon](/images/18.png)
 

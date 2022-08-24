@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\..\..\static
 
 **User rules** is one of the category of [rules](/docs/platform/rules/) available in Kianda, that enables user-based operations associated with user **properties**, for example **updating** a user property, **retrieving** a user property and **finding** a user based on a property. The user rules also allow you to **invite partners** and **share** a particular process with them. These rules are very useful when you want to do any property actions on a user like find a user or update a property of a specific user.
 
-Take an example of a **Look up user by property** rule. Implementing this rule will allow you to store a user in a **User picker** field   by providing a property of a user, for example user role or email address. See image below when a location is being chosen, a trainer is found that is assigned to the location:
+Take an example of a **Look up user by property** rule. Implementing this rule will allow you to store a user in a **User picker** field by providing a property of a user, for example user role or email address. See image below when a location is being chosen, a trainer is found that is assigned to the location:
 
 ![User rules](/images/lookup-user-location.jpg)
 
