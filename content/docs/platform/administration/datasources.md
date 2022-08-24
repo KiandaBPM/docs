@@ -58,7 +58,7 @@ To start viewing existing data sources:
    - Option to use **Kianda Cloud Connect** - you enable this feature and download a zip file which you can install on your server, allowing the Kianda system to reach your server and get access to data, for example SQL Server, making system integration quick and efficient.
    - **Test connection** - all data source detail pages will allow you to test your connection using this button to ensure data exchange can happen.
    - **Save** - at any time you can save details, even if some parameters need to be completed, allowing you to return to the configuration at any point.
-   - **Security** - all data sources can have different levels of security set up, including administrators for the connection, and users of the connection, see [Setting security for data sources](#setting-security-for-data-sources) for more details.
+   - **Security** - all data sources can have different levels of security set up, including administrators for the connection, and users of the connection, see [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
    - **Close** - allows you to exit from the data source details page.
 
 
@@ -91,16 +91,16 @@ The following uses **SharePoint as an example** when creating a new datasource. 
 
 4. When you have added SharePoint details, you are ready to test your connection and add security. At the bottom of the **SharePoint details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
 
-5. Click on **Save** ![Save connection button](/images/save-connection.jpg)to save the connection and you will receive a notification saying **Details saved successfully**.
+5. Click on **Save** ![Save connection button](/images/save-connection.jpg) to save the connection and you will receive a notification saying **Details saved successfully**.
 
 6. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
 
 7. Click on **Close** to close the details page and return to the datasource management main view.
 
 
-Once the data connector is created, this can be used with controls like lists and rules, for example in the image below, a SalesForce data connector called 'Training' has been setup within the Data sources function. Lists within SharePoint can then be linked to list fields in Kianda, by clicking on Data connector in the Edit list dialog box.
+Once the data connector is created, this can be used with controls like lists and rules, for example in the image below, a SharePoint data connector called 'SharePoint Training Test' has been setup within the datasources function. Lists within SharePoint can then be linked to list fields in Kianda, by clicking on **Datasource** in the Edit list dialog box. In the example below, a list called **Companies** is the data source for the list.
 
-![Datasource](/images/edit-list-eg.jpg)
+![Datasource](/images/list-datasource-example.jpg)
 
 
 

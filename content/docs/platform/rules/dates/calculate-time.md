@@ -22,7 +22,7 @@ For example, the resulting number could be utilised as a countdown feature to co
 
 ## When to use
 
-The Calculate time rule should be used when a user wishes to calculate the time difference between a date field and another date/time. For example, creating a countdown function that returns the amount of time units between two set dates.
+The **Calculate time** rule should be used when a user wishes to calculate the time difference between a date field and another date/time. For example, creating a countdown function that returns the amount of time units between two set dates.
 
  
 
@@ -36,7 +36,7 @@ You can add this rule:
 
 ## Before you get started
 
-In advance of using this rule, you need to have **created one or more forms, complete with control fields**. For example, you must have a created field in your form that the Calculate time rule can be applied to. See [Date control](/docs/platform/controls/input/date/) for more information on using date fields.
+In advance of using this rule, you need to have **created one or more forms, complete with control fields**. For example, you must have a created field in your form that the **Calculate time** rule can be applied to. See [Date control](/docs/platform/controls/input/date/) for more information on using date fields.
 
 
 
@@ -95,7 +95,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
      Beside the **Count only full hours?** label (or time unit chosen), if the No radio button is selected, the **Round result hours?** (or time unit chosen) label will appear to the right. You will be prompted to select either a Yes or No radio button, allowing you to neatly round the chosen time unit to the nearest whole number (if Yes is selected).
 
-   * **Special dates** - you can also define custom special dates and save them accordingly. Click on Add special date to add in a date. Enter a label for this special date in the left field and a date in the right field. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the **Save special dates for reuse** button ![Date rules save special date button](/images/save-special-date-btn.jpg). To load previously saved dates, click on the **Load special dates** button ![Date rules load special date button](/images/load-special-date-btn.jpg). You can delete a saved Special date by clicking on the **Bin/Trash** button![bin icon](/images/binicon.png). 
+   * **Special dates** - you can also define custom special dates and save them accordingly. Click on **Add special date** to add in a date. Enter a label for this special date in the left field and a date in the right field. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the **Save special dates for reuse** button ![Date rules save special date button](/images/save-special-date-btn.jpg). To load previously saved dates, click on the **Load special dates** button ![Date rules load special date button](/images/load-special-date-btn.jpg). You can delete a saved Special date by clicking on the **Bin/Trash** button![bin icon](/images/binicon.png). 
 
      ![Calculate time calculations](/images/date-rules-calculate-time-calculations.jpg)
    
