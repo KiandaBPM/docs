@@ -115,7 +115,7 @@
 &lt;p>For example, the resulting number could be utilised as a countdown feature to communicate to the user that an important date is approaching, and that a task needs to be completed (as seen below). In this instance, there are 20 days before a deadline. To learn more about dates, see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-time-calculate-result.jpg" alt="Calculate Time Results">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>The Calculate time rule should be used when a user wishes to calculate the time difference between a date field and another date/time. For example, creating a countdown function that returns the amount of time units between two set dates.&lt;/p>
+&lt;p>The &lt;strong>Calculate time&lt;/strong> rule should be used when a user wishes to calculate the time difference between a date field and another date/time. For example, creating a countdown function that returns the amount of time units between two set dates.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
@@ -123,7 +123,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the Calculate time rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the &lt;strong>Calculate time&lt;/strong> rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -199,7 +199,7 @@
 &lt;p>Beside the &lt;strong>Count only full hours?&lt;/strong> label (or time unit chosen), if the No radio button is selected, the &lt;strong>Round result hours?&lt;/strong> (or time unit chosen) label will appear to the right. You will be prompted to select either a Yes or No radio button, allowing you to neatly round the chosen time unit to the nearest whole number (if Yes is selected).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Special dates&lt;/strong> - you can also define custom special dates and save them accordingly. Click on Add special date to add in a date. Enter a label for this special date in the left field and a date in the right field. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the &lt;strong>Save special dates for reuse&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-special-date-btn.jpg" alt="Date rules save special date button">. To load previously saved dates, click on the &lt;strong>Load special dates&lt;/strong> button &lt;img src="https://docs.kianda.com/images/load-special-date-btn.jpg" alt="Date rules load special date button">. You can delete a saved Special date by clicking on the &lt;strong>Bin/Trash&lt;/strong> button&lt;img src="https://docs.kianda.com/images/binicon.png" alt="bin icon">.&lt;/p>
+&lt;p>&lt;strong>Special dates&lt;/strong> - you can also define custom special dates and save them accordingly. Click on &lt;strong>Add special date&lt;/strong> to add in a date. Enter a label for this special date in the left field and a date in the right field. By choosing a title for a new special date, and entering the date into the date field, the date can be saved using the &lt;strong>Save special dates for reuse&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-special-date-btn.jpg" alt="Date rules save special date button">. To load previously saved dates, click on the &lt;strong>Load special dates&lt;/strong> button &lt;img src="https://docs.kianda.com/images/load-special-date-btn.jpg" alt="Date rules load special date button">. You can delete a saved Special date by clicking on the &lt;strong>Bin/Trash&lt;/strong> button&lt;img src="https://docs.kianda.com/images/binicon.png" alt="bin icon">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-calculate-time-calculations.jpg" alt="Calculate time calculations">&lt;/p>
 &lt;/li>
 &lt;/ul>
