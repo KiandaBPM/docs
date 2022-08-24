@@ -164,7 +164,7 @@
 &lt;/ul>
 &lt;h2 id="before-getting-started">Before getting started&lt;/h2>
 &lt;p>Before you get started with this rule, you need to create a &lt;strong>shared process instance&lt;/strong> of the process you intend to share with the partner. To learn more how to create a shared process instance, go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared processes&lt;/a>.&lt;/p>
-&lt;p>In advance of using the &lt;strong>Invite partner&lt;/strong> rule, in your process you need to have created at least one or more forms. The invite partner rule also requires you to create a list of fields that are used to hold information about the partner and which process you want to share. See below for the list of fields required in your process before using the invite partner rule:&lt;/p>
+&lt;p>In advance of using the &lt;strong>Invite partner&lt;/strong> rule, in your process you need to have created at least one or more forms. The &lt;strong>Invite partner&lt;/strong> rule also requires you to create a list of fields that are used to hold information about the partner and which process you want to share. See below for the list of fields required in your process before using the invite partner rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Partner organisation&lt;/strong> - text box field representing the name of the organisation that the partner is part of.&lt;/li>
 &lt;li>&lt;strong>Shared process name&lt;/strong> - text box field representing the name of the process you want to share.&lt;/li>
@@ -243,9 +243,7 @@
 &lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;ul>
-&lt;li>Prior to inviting a partner, create a &lt;strong>shared process instance&lt;/strong> of a process that you intend your partner to use. Give it a unique name for example use the original process name followed by the partners name. If you have a process called &lt;strong>Inspection Checklist&lt;/strong> and your partners name is &lt;strong>Windmill Inspections&lt;/strong>, call your shared process instance &lt;strong>Inspection Checklist - Windmill Inspections&lt;/strong>. This will help you differentiate between your original process and the shared process.&lt;/li>
-&lt;/ul>
+&lt;p>Prior to inviting a partner, create a &lt;strong>shared process instance&lt;/strong> of a process that you intend your partner to use. Give it a unique name for example use the original process name followed by the partners name. If you have a process called &lt;strong>Inspection Checklist&lt;/strong> and your partners name is &lt;strong>Windmill Inspections&lt;/strong>, call your shared process instance &lt;strong>Inspection Checklist - Windmill Inspections&lt;/strong>. This will help you differentiate between your original process and the shared process.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Update user property</title><link>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/update-user-property/</guid><description>
@@ -326,9 +324,7 @@
 &lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;ul>
-&lt;li>When updating multiple properties at once, create a text box field for each property you want to update. This way you have more control of the value you want to assign to each property. To learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">Text box control&lt;/a>.&lt;/li>
-&lt;/ul>
+&lt;p>When updating multiple properties at once, create a text box field for each property you want to update. This way you have more control of the value you want to assign to each property. To learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">Text box control&lt;/a>.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
