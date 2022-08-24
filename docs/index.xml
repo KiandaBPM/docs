@@ -413,19 +413,19 @@ Your browser does not support the video tag.
 &lt;p>​ The options within the &lt;strong>Edit date field dialog box&lt;/strong> include:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the date field&lt;/p>
+&lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the date field.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong> - you can insert help text a user can view when completing the date field. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Display format&lt;/strong> - you can choose whether the date field shows the date only or the date and time&lt;/p>
+&lt;p>&lt;strong>Display format&lt;/strong> - you can choose whether the date field shows the date only or the date and time.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Adjust to user timezone&lt;/strong> - you can select this if you want the date field to adjust to the time zone of the form user&lt;/p>
+&lt;p>&lt;strong>Adjust to user timezone&lt;/strong> - you can select this if you want the date field to adjust to the time zone of the form user.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Set default date onload&lt;/strong> - if you choose &amp;lsquo;Yes&amp;rsquo;, this means that the date field will automatically be populated (with a date stamp) when a user opens the form to start completing it; by default, the date that will be inserted is today&amp;rsquo;s date. If you choose &amp;lsquo;No&amp;rsquo;, then the user will need to manually complete the date field.&lt;/p>
+&lt;p>&lt;strong>Set default date onload&lt;/strong> - if you choose &amp;lsquo;&lt;strong>Yes&lt;/strong>&amp;rsquo;, this means that the date field will automatically be populated (with a date stamp) when a user opens the form to start completing it; by default, the date that will be inserted is today&amp;rsquo;s date. If you choose &amp;lsquo;&lt;strong>No&lt;/strong>&amp;rsquo;, then the user will need to manually complete the date field.&lt;/p>
 &lt;p>If you choose &amp;lsquo;Yes&amp;rsquo;, two additional options then appear in the dialog box:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Default date&lt;/strong> - this is where you can choose the default date that will be automatically inserted in the form when a user opens it. You can choose from &amp;lsquo;&lt;strong>Now&lt;/strong>&amp;rsquo;, &amp;lsquo;&lt;strong>Today&lt;/strong>&amp;rsquo; (which inserts today&amp;rsquo;s date and a time of 00:00 midnight) or &amp;lsquo;&lt;strong>Relative from now&amp;rsquo;&lt;/strong> (you can insert the date you want to use, in terms of the number of days, hours and minutes from now).&lt;/li>
@@ -433,7 +433,7 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Enable native picker on mobile&lt;/strong> - you can choose to allow users who are completing the date field on a mobile phone to use the default pop-up date picker associated with their mobile phone&lt;/p>
+&lt;p>&lt;strong>Enable native picker on mobile&lt;/strong> - you can choose to allow users who are completing the date field on a mobile phone to use the default pop-up date picker associated with their mobile phone.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;p>To move a &lt;strong>Date field&lt;/strong>, simply&lt;/p>
