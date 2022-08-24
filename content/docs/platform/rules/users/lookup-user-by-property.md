@@ -71,7 +71,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png)
 
-- Create a **datasource** with all users and their **properties**, you can create a **list** field and set the field to the created datasource. You can set the display of the list field to the property value of the data source. With that you will have a **selection** of **user properties** which you can use as a search mechanism for users. For example search users that are based in a specific location. To learn more about list field go to [List control](/docs/platform/controls/input/list/).
+Create a **datasource** with all users and their **properties**, you can create a **list** field and set the field to the created datasource. You can set the display of the list field to the property value of the data source. With that you will have a **selection** of **user properties** which you can use as a search mechanism for users. For example search users that are based in a specific location. To learn more about list field go to [List control](/docs/platform/controls/input/list/).
 
 ### What’s next ![Idea icon](/images/18.png)
 
