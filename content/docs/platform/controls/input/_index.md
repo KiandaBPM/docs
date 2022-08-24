@@ -28,8 +28,8 @@ To start adding Input controls (fields) to your Kianda forms:
 The eight types of input fields are:
 
 - **Text box** - A text box field is a section in your form where users can enter text, for example, an Address field. See [Text box control](/docs/platform/controls/input/textbox/) for more information. 
-- **List** - A list field lists information, for example from a SharePoint data source. This is particularly useful for dropdown menus, when you want a user to fill out a form and choose an item from a list. See [List control](/docs/platform/controls/input/list/) for more information.
-- **Number** - A number field provides an input box that only allows numeric input, such as currencies or percentages.
+- **List** - A list field lists information, for example from a SharePoint data source. This is particularly useful for drop-down menus, when you want a user to fill out a form and choose an item from a list. See [List control](/docs/platform/controls/input/list/) for more information.
+- **Number** - A number field provides an input box that only allows numeric input, such as currencies or percentages. 
 - **Date** - A date field provides a date and time picker that allows users to input both date and time.
 - **File** - A file field allows users to upload multiple files. Uploaded files are stored within the configured data structures or folders.
 - **Table** - A table field creates a table for input in a form. This table can be filled by the user, or autofilled as part of a rule.
@@ -46,7 +46,7 @@ For example, to add a new text box field, click on **Text box** - a pop-up messa
 
 ![Inserting a text box field](/images/insert-text-box-input.jpg)
 
-To edit whatever type of input field you have added to your form:
+To **edit** whatever type of input field you have added to your form:
 
 1. Select the field (by either clicking on the field name or on the **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
 2. Then click on the **Edit Field** button (Pen icon) ![Pen button](/images/penicon.png). 
@@ -54,14 +54,14 @@ To edit whatever type of input field you have added to your form:
 
 ![Select field to edit](/images/select-text-box-edit.jpg)
 
-To move an Input field, simply
+To **move** an Input field, simply
 
 1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
 2. Drag and drop the field wherever you want to move it within your form. This example shows how you could move a Text box field in a form:
 
 ![Select field drag handle](/images/move-drag-handle.jpg)
 
-To delete an Input field from your form:
+To **delete** an Input field from your form:
 
 1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
 2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
