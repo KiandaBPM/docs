@@ -51,9 +51,9 @@ As we go through the options available for editing a Table, we will keep in mind
 
 First, decide **how many columns** you need in your table and **what type of input field** you want to use for each column. To learn more about the eight different types of Input fields that you can use, go to [Input controls](/docs/platform/controls/input/).
 
-In our example, we want to change the default table that was inserted - titled **Table 1** with two columns of text box fields - into a table called 'Existing Qualifications' to capture the existing qualifications of the user who is requesting further training. 
+In our example, we want to change the default table that was inserted - titled **Table 1** with two columns of text box fields - into a table called '**Existing Qualifications**' to capture the existing qualifications of the user who is requesting further training. 
 
-We want our table to have three columns: the first column will be a text box field titled 'Qualification Description' where the user will manually type in the name of a qualification, the second column will be a drop-down list titled 'Educational Institution' (which could link to an external data source) where the user will choose the relevant institution, and the third column will be a date field titled 'Date Qualification Obtained', as shown here:
+We want our table to have three columns: the first column will be a text box field titled '**Qualification Description**' where the user will manually type in the name of a qualification, the second column will be a drop-down list titled '**Educational Institution**' (which could link to an external data source) where the user will choose the relevant institution, and the third column will be a date field titled '**Date Qualification Obtained**', as shown here:
 
 ![Table example training](/images/table-training-example.jpg)
 
@@ -156,7 +156,7 @@ The options within the **Edit field - Table** dialog box include:
 
   ![Table search field](/images/table-search.jpg)
 
-- **Add first row onload** -  by default, this is set to 'Yes', meaning that when the form is loaded the first row is automatically shown
+- **Add first row onload** -  by default, this is set to 'Yes', meaning that when the form is loaded the first row is automatically shown.
 
 - **Enable export to csv** - you can select 'Yes' to enable the form user to export the table contents to a csv file. If you select 'Yes', some additional options appear in the **Edit field - Table** dialog box: 
 
