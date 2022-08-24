@@ -70,7 +70,7 @@
 &lt;p>The eight types of input fields are:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Text box&lt;/strong> - A text box field is a section in your form where users can enter text, for example, an Address field. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>List&lt;/strong> - A list field lists information, for example from a SharePoint data source. This is particularly useful for dropdown menus, when you want a user to fill out a form and choose an item from a list. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>List&lt;/strong> - A list field lists information, for example from a SharePoint data source. This is particularly useful for drop-down menus, when you want a user to fill out a form and choose an item from a list. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a> for more information.&lt;/li>
 &lt;li>&lt;strong>Number&lt;/strong> - A number field provides an input box that only allows numeric input, such as currencies or percentages.&lt;/li>
 &lt;li>&lt;strong>Date&lt;/strong> - A date field provides a date and time picker that allows users to input both date and time.&lt;/li>
 &lt;li>&lt;strong>File&lt;/strong> - A file field allows users to upload multiple files. Uploaded files are stored within the configured data structures or folders.&lt;/li>
@@ -82,20 +82,20 @@
 &lt;p>To insert an &lt;strong>Input field&lt;/strong> into your form click on the field type you want to add from the &lt;strong>Input&lt;/strong> menu.&lt;/p>
 &lt;p>For example, to add a new text box field, click on &lt;strong>Text box&lt;/strong> - a pop-up message will appear saying &amp;lsquo;Field added&amp;rsquo; and a new text box with the default name &lt;strong>Text box 1&lt;/strong> will be added to your form.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/insert-text-box-input.jpg" alt="Inserting a text box field">&lt;/p>
-&lt;p>To edit whatever type of input field you have added to your form:&lt;/p>
+&lt;p>To &lt;strong>edit&lt;/strong> whatever type of input field you have added to your form:&lt;/p>
 &lt;ol>
 &lt;li>Select the field (by either clicking on the field name or on the &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
 &lt;li>Then click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/li>
 &lt;li>The &lt;strong>Edit Field&lt;/strong> dialog box will automatically open, providing you with a variety of options for editing the field - such as changing the Title of the field - depending on the type of Input field you are working with.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/select-text-box-edit.jpg" alt="Select field to edit">&lt;/p>
-&lt;p>To move an Input field, simply&lt;/p>
+&lt;p>To &lt;strong>move&lt;/strong> an Input field, simply&lt;/p>
 &lt;ol>
 &lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
 &lt;li>Drag and drop the field wherever you want to move it within your form. This example shows how you could move a Text box field in a form:&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/move-drag-handle.jpg" alt="Select field drag handle">&lt;/p>
-&lt;p>To delete an Input field from your form:&lt;/p>
+&lt;p>To &lt;strong>delete&lt;/strong> an Input field from your form:&lt;/p>
 &lt;ol>
 &lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
 &lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
