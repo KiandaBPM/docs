@@ -157,7 +157,7 @@
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="file-system-parameters">File system parameters&lt;/h2>
-&lt;p>When you use a &lt;strong>File system&lt;/strong> datasource, there are &lt;strong>default parameters&lt;/strong> invoked from the files. For example when you create a &lt;strong>list&lt;/strong> in a Kianda form using a File system datasource, these File system parameters will appear in &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and &lt;strong>Sort by&lt;/strong> field in the &lt;strong>Edit field dialog box&lt;/strong>, see &lt;strong>Title&lt;/strong> for example in the image below.&lt;/p>
+&lt;p>When you use a &lt;strong>File system&lt;/strong> datasource, there are &lt;strong>default parameters&lt;/strong> invoked from the files. For example when you create a &lt;strong>list&lt;/strong> in a Kianda form using a File system datasource, these File system parameters will appear in &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and &lt;strong>Sort by&lt;/strong> field in the &lt;strong>Edit field dialog box&lt;/strong>, see &lt;strong>Name&lt;/strong> for example in the image below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-system-parameters.jpg" alt="File system parameters">&lt;/p>
 &lt;p>The File system parameters that appear in those three dropdown fields are:&lt;/p>
 &lt;ul>
@@ -510,10 +510,13 @@
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Your &lt;strong>SOAP Service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: SQL Server connector</title><link>https://docs.kianda.com/docs/platform/connectors/sql-server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sql-server/</guid><description>
-&lt;h2 id="sql-server-parameters">SQL Server parameters&lt;/h2>
-&lt;p>One of the datasources available in Kianda is a Structured Query Language &lt;strong>(SQL) Server&lt;/strong> datasource. Using the SQL server as your datasource, you can perform any Create, Read, Update and Delete (&lt;strong>CRUD&lt;/strong>) operations using the &lt;strong>Data&lt;/strong> rules provided in the Kianda platform, to learn more about data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>. Using the SQK server connector, you have access to all tables within your server but keep in mind that you can perform CRUD operations within a &lt;strong>table&lt;/strong> of the server, but you &lt;strong>cannot&lt;/strong> create or delete &lt;strong>tables themselves&lt;/strong>.&lt;/p>
+&lt;h2 id="sql-server-connector">SQL Server connector&lt;/h2>
+&lt;p>One of the datasources available in Kianda is a Structured Query Language &lt;strong>(SQL) Server&lt;/strong> datasource. Using the SQL server as your datasource, you can perform any Create, Read, Update and Delete (&lt;strong>CRUD&lt;/strong>) operations using the &lt;strong>Data&lt;/strong> rules provided in the Kianda platform, to learn more about data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>. Using the SQL server connector, you have access to all tables within your database from your server, keep in mind that you can perform CRUD operations on data within a &lt;strong>table&lt;/strong> of the database, but you &lt;strong>cannot&lt;/strong> create or delete &lt;strong>tables themselves&lt;/strong>.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can use the SQL Server connector when you want &lt;strong>access&lt;/strong> or &lt;strong>modify&lt;/strong> data within any &lt;strong>table&lt;/strong> in your SQL server. When connecting a SQL server datasource to a field, you can only connect and display information of a &lt;strong>table&lt;/strong> from your server, not the information of the &lt;strong>server&lt;/strong> itself. For example if your SQL server contains tables such as &lt;strong>Employees&lt;/strong>, &lt;strong>Purchases&lt;/strong> and &lt;strong>Standing Orders&lt;/strong>, you will be able to connect the list field to &lt;strong>only one&lt;/strong> of those tables giving you CRUD access.&lt;/p>
+&lt;h2 id="before-getting-started">Before getting started&lt;/h2>
+&lt;p>When establishing a connection using the SQL data connector, you are creating a connection with a &lt;strong>Database&lt;/strong> from a server, not the &lt;strong>server&lt;/strong> itself. Before continuing make sure that your SQL server has a &lt;strong>database&lt;/strong> you can connect to.&lt;/p>
+&lt;p>In order to successfully establish this connection with your server, a user is needed to access the server by logging in. This user that you use to connect to the server must be a &lt;strong>sysadmin&lt;/strong>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -530,12 +533,12 @@
 &lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your SQL server connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
 &lt;li>&lt;strong>Server&lt;/strong> - the name of the server you want to access or the IP address where the server is hosted. When you are running a local server on your machine you can use &lt;code>localhost&lt;/code> as the server name.&lt;/li>
 &lt;li>&lt;strong>Database&lt;/strong> - the name of the database from your server that you want to connect to.&lt;/li>
+&lt;li>&lt;strong>Trusted connection&lt;/strong> - enable windows trusted connection. Only available when using with Kianda cloud connector, enabling this will automatically enable the &lt;strong>Use Kianda Cloud Connect&lt;/strong> option. this option will use the connector service credentials to connect to the destination datasource. Having this option enabled will automatically hide the &lt;strong>User&lt;/strong> and &lt;strong>Password&lt;/strong> fields.&lt;/li>
 &lt;li>&lt;strong>User&lt;/strong> - username used to log into the server. Note that in order to log into a server with a username and password, the user must be a &lt;strong>system admin&lt;/strong> for the connection to be successful.&lt;/li>
 &lt;li>&lt;strong>Password&lt;/strong> - password used to log into the server.&lt;/li>
-&lt;li>&lt;strong>Trusted connection&lt;/strong> - enable windows trusted connection. Only available when using with Kianda cloud connector, enabling this will automatically enable the &lt;strong>Use Kianda Cloud Connect&lt;/strong> option. Will use the connector service credentials to connect to the destination datasource.&lt;/li>
 &lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is disabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between a &lt;strong>locally run SQL server&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>. Check this option if you want to connect to a server that is running on your local machine. When &lt;strong>Use Kianda Cloud Connect&lt;/strong> is enabled, a &lt;strong>Connectors&lt;/strong> option appears.
 &lt;ul>
-&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC connection that runs the local SQL server that you want to connect to.&lt;/li>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that &lt;strong>runs&lt;/strong> the &lt;strong>local SQL server&lt;/strong> that you want to connect to.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -552,7 +555,29 @@
 &lt;li>
 &lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Docs: REST Web Service</title><link>https://docs.kianda.com/docs/platform/connectors/rest/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/rest/</guid><description>
+&lt;/ol>
+&lt;h2 id="connecting-to-a-local-server">Connecting to a local server&lt;/h2>
+&lt;p>Here we will go step by step on how to create a connection between your locally run SQL Server and your Kianda subscription. Follow the steps below to create this connection:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sql-server-example.jpg" alt="Test connection for REST Service">&lt;/p>
+&lt;ol>
+&lt;li>Connect to a SQL server using &lt;code>localhost&lt;/code> as the name of the server.&lt;/li>
+&lt;li>Open the SQL details page by following steps 1 and 2 from &lt;a href="https://docs.kianda.com/docs/platform/connectors/sql-server/#how-to-get-started">How to get started&lt;/a>.&lt;/li>
+&lt;li>Choose a Display name.&lt;/li>
+&lt;li>In the &lt;strong>Server&lt;/strong> text box type in &lt;code>localhost&lt;/code>.&lt;/li>
+&lt;li>In the &lt;strong>Database&lt;/strong> text box type in the name of your database you want to connect from your server. For this example we will connect to a &lt;strong>GreenITR&lt;/strong> database from our server.&lt;/li>
+&lt;li>Enable the &lt;strong>Trusted connection&lt;/strong> checkbox.&lt;/li>
+&lt;li>Enable the &lt;strong>Use Kianda Cloud Connect&lt;/strong> checkbox.&lt;/li>
+&lt;li>In the &lt;strong>Connectors&lt;/strong> radio checklist, select the PC that you are running the local server on, For this example we are using &lt;strong>PC31&lt;/strong>. To establish a connection between your Kianda subscription and your PC go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/li>
+&lt;li>Click on &lt;strong>Test connection&lt;/strong>.&lt;/li>
+&lt;li>A notification &lt;strong>Connection test succeeded&lt;/strong> shows up. Now you are ready to use the SQL connector that is run on your local machine.&lt;/li>
+&lt;/ol>
+&lt;h2 id="sql-server-parameters">SQL Server parameters&lt;/h2>
+&lt;p>When you use a &lt;strong>SQL Server&lt;/strong> datasource, unlike some of the other data connectors in Kianda, SQL Server does not have &lt;strong>default&lt;/strong> parameters. When you connect a SQL server as your datasource, you can choose which &lt;strong>table&lt;/strong> you want to use when performing CRUD operations. For example when connecting a SQL datasource to a &lt;strong>List&lt;/strong> field and selecting a table you want to use, the parameters will depend on what &lt;strong>columns&lt;/strong> are present in the &lt;strong>table&lt;/strong>. Take GreenITR database from the &lt;a href="https://docs.kianda.com/docs/platform/connectors/sql-server/#connecting-to-a-local-server">Connecting to a local server&lt;/a> example. We have an &lt;strong>Employee&lt;/strong> table which we select when connecting a datasource to a &lt;strong>List&lt;/strong> field, to learn how to a datasource to a list field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>, see image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sql-server-employee.jpg" alt="Connecting employee table to list field">&lt;/p>
+&lt;p>The list of parameters displayed in the the &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and &lt;strong>Sort by&lt;/strong> field will match the columns that we have in the &lt;strong>Employee&lt;/strong> table, see image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sql-server-columns.jpg" alt="columns in a table">&lt;/p>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Your &lt;strong>SQL Server connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: REST Web Service</title><link>https://docs.kianda.com/docs/platform/connectors/rest/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/rest/</guid><description>
 &lt;p>One of the datasources available in Kianda is a connector to a &lt;strong>REST API&lt;/strong>. Kianda has the ability to perform &lt;strong>GET, POST, PUT&lt;/strong> and &lt;strong>DELETE&lt;/strong> operations if they are supported by the webservice. The REST API datasource can support multiple REST methods, all of which can be called independently. Data from the webservice can be pulled into your Kianda workspace and manipulated, or data from Kianda can be pushed to the webservice to be used by other systems.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can create a REST API datasource when you want your Kianda processes and forms to have access to a REST API.&lt;/p>
