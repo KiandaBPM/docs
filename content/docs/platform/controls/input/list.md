@@ -4,9 +4,9 @@ weight: 3
 typora-root-url: ..\..\..\..\..\static
 ---
 
-**List fields** (controls) can be manually entered into a form or can be linked to from an external site like SharePoint. There are different display options - from dropdown lists to checklists - as well as other options (like the ability to make a list field mandatory for a user to complete). 
+**List fields** (controls) can be manually entered into a form or can be linked to from an external site like SharePoint. There are different display options - from drop-down lists to checklists - as well as other options (like the ability to make a list field mandatory for a user to complete). 
 
-For example, you could insert a list field in your form that will show a drop-down list of Types of Training that is maintained on SharePoint. The advantage of linking to an external data source like this is that your list will stay up-to-date with any changes made to the list on SharePoint.
+For example, you could insert a list field in your form that will show a drop-down list of Types of Training that is maintained on SharePoint. The **advantage** of linking to an external data source like this is that your list will stay **up-to-date** with any changes made to the list on SharePoint.
 
 ## How to get started
 
@@ -66,7 +66,7 @@ Click on the **Edit conditions** button if you want to add a condition to your L
 
 If you choose Kianda as the data source for your list field, two additional options will be displayed - **Query any process** (checks all processes within Kianda for the field you have selected as the source for your list) and **Query type** (you can select anything created by or assigned to a particular user).
 
- Once you've selected your **List source** and the various options associated with it, complete the remaining options in the **New field - List** dialog box:
+Once you've selected your **List source** and the various options associated with it, complete the remaining options in the **New field - List** dialog box:
 
 - **Enable offline cache** - You can choose this option to make list data available when offline (only available for lists with less than 500 options). 
 - **Display format** - You can choose to have your list field appear as either a Drop-down list, a Radio list, Multi-select or a Checkbox list.
@@ -79,10 +79,9 @@ If you choose **Radio list** or **Checkbox list** you can choose a **List displa
 
 5. Once you complete the **New field - List** dialog box and click **OK** button, a new **List field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default, the title is **List 1** unless you change it).
 
-
-	If we take the example of a Training Request form with a list field that contains the different types of training a user can request, the list field (which is titled 'Type of Training' and has a drop-down list format) could look like this when a user views it on their mobile phone:
-	
-	![List field dropdown list example mobile phone](/images/list-example-mobile.jpg)
+   If we take the example of a Training Request form with a list field that contains the different types of training a user can request, the list field (which is titled 'Type of Training' and has a drop-down list format) could look like this when a user views it on their mobile phone:
+   	
+   ![List field dropdown list example mobile phone](/images/list-example-mobile.jpg)
 
 
 
