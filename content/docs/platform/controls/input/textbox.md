@@ -46,7 +46,7 @@ To edit a **Text box field**:
 
 ![Select text box edit button](/images/textbox-edit-button.jpg)
 
-The **Edit field - Text** dialog box will open, enabling you to choose from a range of options:
+The **Edit field - Text box** dialog box will open, enabling you to choose from a range of options:
 
 ![Edit table field dialog box](/images/textbox-edit-dialog.jpg)
 
