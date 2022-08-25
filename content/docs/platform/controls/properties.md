@@ -11,8 +11,8 @@ When you go to **Administration** > **Designer** and then click on a process, yo
 
 The Process properties include:
 
-- Title - the title of the process, for example Quarterly Training Request
-- Page layout - you can click on **Wide** ![Wide button](/images/wide-resized.png)or **Narrow**  ![Narrow button](/images/narrow-resized.png) to change the process layout.
+- **Title** - the title of the process, for example Quarterly Training Request
+- **Page layout** - you can click on **Wide** ![Wide button](/images/wide-resized.png)or **Narrow**  ![Narrow button](/images/narrow-resized.png) to change the process layout.
 
 ![Process and form properties](/images/process-properties-trainingprocess.jpg)
 
@@ -27,11 +27,11 @@ When you click on a form, the **Form properties** appear in the right-hand pane.
 
 The Form properties include:
 
-- Title - the form title, for example Training Request
+- **Title** - the form title, for example Training Request
 
-- Visible - click on this checkbox if you want the form to be visible to users
+- **Visible** - click on this checkbox if you want the form to be visible to users
 
-- Show info - click on this checkbox if you want details (such as the form owner, the design version and when the form was started and completed) to be displayed at the bottom of the form.
+- **Show info** - click on this checkbox if you want details (such as the form owner, the design version and when the form was started and completed) to be displayed at the bottom of the form.
 
 ![Form information](/images/form-properties-show-info-version.jpg)
 
