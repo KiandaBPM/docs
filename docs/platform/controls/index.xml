@@ -71,12 +71,12 @@
 &lt;ul>
 &lt;li>&lt;strong>Text box&lt;/strong> - A text box field is a section in your form where users can enter text, for example, an Address field. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a> for more information.&lt;/li>
 &lt;li>&lt;strong>List&lt;/strong> - A list field lists information, for example from a SharePoint data source. This is particularly useful for drop-down menus, when you want a user to fill out a form and choose an item from a list. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Number&lt;/strong> - A number field provides an input box that only allows numeric input, such as currencies or percentages.&lt;/li>
-&lt;li>&lt;strong>Date&lt;/strong> - A date field provides a date and time picker that allows users to input both date and time.&lt;/li>
-&lt;li>&lt;strong>File&lt;/strong> - A file field allows users to upload multiple files. Uploaded files are stored within the configured data structures or folders.&lt;/li>
-&lt;li>&lt;strong>Table&lt;/strong> - A table field creates a table for input in a form. This table can be filled by the user, or autofilled as part of a rule.&lt;/li>
+&lt;li>&lt;strong>Number&lt;/strong> - A number field provides an input box that only allows numeric input, such as currencies or percentages. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Date&lt;/strong> - A date field provides a date and time picker that allows users to input both date and time. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>File&lt;/strong> - A file field allows users to upload multiple files. Uploaded files are stored within the configured data structures or folders. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Table&lt;/strong> - A table field creates a table for input in a form. This table can be filled by the user, or autofilled as part of a rule. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a> for more information.&lt;/li>
 &lt;li>&lt;strong>User picker&lt;/strong> - A user picker field allows users to choose from a list of users. This can be a preconfigured group (like HR Managers) or a list of users - see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Toggle&lt;/strong> - A toggle field can be used as a toggle or checkbox that allows users to turn on/off components of the form.&lt;/li>
+&lt;li>&lt;strong>Toggle&lt;/strong> - A toggle field can be used as a toggle or checkbox that allows users to turn on/off components of the form. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a> for more information.&lt;/li>
 &lt;/ul>
 &lt;h3 id="how-to-add-edit-move-and-delete-input-fields">How to add, edit, move and delete Input fields&lt;/h3>
 &lt;p>To insert an &lt;strong>Input field&lt;/strong> into your form click on the field type you want to add from the &lt;strong>Input&lt;/strong> menu.&lt;/p>
