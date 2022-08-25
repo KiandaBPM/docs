@@ -4,6 +4,8 @@ weight: 4
 typora-root-url: ..\..\..\..\static
 ---
 
+## Introduction
+
 The **Data sources** function is available to administrators and those users with the role **Manage datasources**. Data sources is found in the left-hand side pane, under **Administration**. The data sources function allows you to connect your processes to external data sources like SharePoint, Salesforce or SAP. 
 
 Connecting your data sources in this way allows real-time scalability, so as your organisation and data grows, the processes created in Kianda will continue to operate with these data sources, providing sustainable, flexible growth.
@@ -41,7 +43,13 @@ To start viewing existing data sources:
 
    ![Existing data connectors](/images/datasource-list.jpg)
 
-   Data sources are listed by: **Name**, **Type and icon**, **Modified** (as in the date the connector was modified), **Modified By** (the person who last made changes) and the **Status**, for example **ready** means the connection has been tested and is working, while **incomplete** means that more details still need to be added. 
+   Data sources are listed by: 
+   
+   * **Name** - assigned title
+   * **Type and icon** - assigned data connector type and icon image
+   * **Modified** - the date the connector was modified
+   * **Modified By** - the person who last made changes
+   * **Status** - for example **ready** means the connection has been tested and is working, while **incomplete** means that more details still need to be added. 
 3. To **search** for a data source, type in the name or type of data source in the **search box**.
 
 4. To **delete** a data source, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin-shared-process.jpg) beside the name of the datasource. You will receive a popup asking to you to confirm deletion by clicking **OK**, or you can exit the deletion by clicking on **Cancel**.

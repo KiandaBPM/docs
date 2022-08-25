@@ -4,6 +4,8 @@ weight: 6
 typora-root-url: ..\..\..\..\static
 ---
 
+## Introduction
+
 The **Recycle bin** function is available to **administrators** and is found in the left-hand side pane, under **Administration**. The recycle bin holds deleted process instances, dashboard pages and process designs. Deleted items are held for 30 days and are permanently deleted after this time.
 
 ### How to get started
