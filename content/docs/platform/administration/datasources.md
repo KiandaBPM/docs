@@ -93,7 +93,7 @@ The following uses **SharePoint as an example** when creating a new datasource. 
 
 5. Click on **Save** ![Save connection button](/images/save-connection.jpg) to save the connection and you will receive a notification saying **Details saved successfully**.
 
-6. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
+6. Add Security settings by clicking on the **Security** button ![Security button](/images/security-button.jpg), go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
 
 7. Click on **Close** to close the details page and return to the datasource management main view.
 
