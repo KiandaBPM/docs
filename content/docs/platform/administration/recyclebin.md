@@ -4,6 +4,8 @@ weight: 6
 typora-root-url: ..\..\..\..\static
 ---
 
+## Introduction
+
 The **Recycle bin** function is available to **administrators** and is found in the left-hand side pane, under **Administration**. The recycle bin holds deleted process instances, dashboard pages and process designs. Deleted items are held for 30 days and are permanently deleted after this time.
 
 ### How to get started
@@ -33,7 +35,7 @@ To view items in the Recycle bin:
 
    ![Restore item](/images/restore-item.jpg)
 
-6. Click on **OK** if you wish to restore the item or **Cancel** to exit. If you click on **OK** the item is restored, for example a datasource appears again within the Datasource management main view when you click on **Administration** > **Data sources** in the left-hand pane.
+6. Click on **OK** if you wish to restore the item or **Cancel** to exit. If you click on **OK** the item is restored, for example a datasource appears again within the Datasource management main view when you click on **Administration** > **Data sources** in the left-hand pane. To learn more about this, see [Data sources](/docs/platform/administration/datasources).
 
    ![Datasource restored](/images/datasource-restored.jpg)
 

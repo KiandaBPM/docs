@@ -32,9 +32,9 @@ For example, in a 'Training Request' form, you may insert a **User picker field*
 
    The options available include:
 
-   - **Title** - You can change the name of the User picker field from the default ''**User picker 1**'
+   - **Title** - You can change the name of the User picker field from the default ''**User picker 1**'.
 
-   - **Name (Unique)** - This is a unique name for the field
+   - **Name (Unique)** - This is a unique name for the field.
 
    - **Help text** - You can insert text to help the form user to complete the User Picker field. Taking the example of the 'Manager' User picker field in a 'Training Request' form, you could insert help text to this effect:
 

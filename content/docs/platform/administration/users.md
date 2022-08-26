@@ -5,6 +5,8 @@ weight: 7
 typora-root-url: ..\..\..\..\static
 ---
 
+## Introduction
+
 The **Users** function is available to users with the **Administrator** role and is found in the left-hand side pane under **Administration**. This function allows you to manage users and groups in your Kianda workspace.
 
 
@@ -94,7 +96,7 @@ Click on each of the links below to read more about each function. In addition t
 1. Click on the **Create new user** button ![Create new user button](/images/create-new-user-button.jpg).
 2. Complete the fields as listed in Step 2 in [View and edit existing user details](#view-and-edit-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the **Profile attributes** button, see [Modify profile attributes](#modify-profile-attributes) section.
 3. Check the **Send welcome email** check box if you wish to have a system generated email sent to the new user. 
-4. Click on **Group membership** to view a user's group membership, see [Groups](#Groups) for more details.
+4. Click on **Group membership** to view a user's group membership, see [Groups](#groups) for more details.
 5. When you are finished editing a user's details, click on **OK**, or click on **Close** to exit the dialog box. 
 
 ![User profile properties and group membership](/images/create-new-user.jpg)
@@ -107,13 +109,13 @@ Click on each of the links below to read more about each function. In addition t
 
 As an administrator you can set profile attributes for workspace users within your organisation. For example if your organisation uses particular grade levels for roles, then these can be set using this feature. To modify attributes:
 
-1. Click on the **Profile attributes** button in the main **Users** section![Profile attributes button](/images/profile-attributes.jpg).
+1. Click on the **Profile attributes** button in the main **Users** section.![Profile attributes button](/images/profile-attributes.jpg)
 
 2. In the **Modify user attributes** dialog box, any existing attributes will be listed under **Property**. To remove an attribute, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin-shared-process.jpg). 
 
    ![Modify user attributes](/images/modify-user-attributes.jpg)
 
-3. To add a new attribute, click on the **Add attribute** button ![Add attribute button](/images/add-attribute.jpg) then type in the name of the new attribute.
+3. To add a new attribute, click on the **Add attribute** button ![Add attribute button](/images/add-attribute.jpg), then type in the name of the new attribute.
 
 4. When you are finished editing attributes, click on **OK**, or click on **Close** to exit the dialog box. 
 
@@ -121,7 +123,7 @@ As an administrator you can set profile attributes for workspace users within yo
 
 ### Importing and exporting users
 
-In addition to clicking on the **Create new user** button ![Create new user button](/images/create-new-user-button.jpg) you can **import** users using an Excel file by clicking on the **Bulk import users** button ![Bulk import users](/images/bulk-import-users.jpg). The **Import users** dialog box opens.
+In addition to clicking on the **Create new user** button ![Create new user button](/images/create-new-user-button.jpg), you can **import** users using an Excel file by clicking on the **Bulk import users** button ![Bulk import users](/images/bulk-import-users.jpg). The **Import users** dialog box opens.
 
 ![Import users dialog box](/images/import-users.jpg)
 
@@ -144,7 +146,7 @@ Existing groups appear within the **Groups** section of the **User management pa
 
 From this main view you can:
 
-- [view and edit group members](#viewing-and-editng-group-members)
+- [view and edit group members](#viewing-and-editing-group-members)
 - [view and edit group details](#viewing-and-editing-group-details)
 - [delete groups](#deleting-groups)
 - [create a new group](#creating-new-groups)
@@ -158,7 +160,7 @@ From this main view you can:
 
 ![Group membership](/images/group-members.jpg)
 
-2. From this view you can **remove a user from the group** by checking the checkbox beside a user name and click on **Remove user(s) from group**. 
+2. From this view, you can **remove a user from the group** by checking the checkbox beside a user name and click on **Remove user(s) from group**. 
 
 3. You can also change **users** from the current group **to another group** by clicking on the dropdown list of group names, by choosing a group, checking the checkbox beside the username.
 

@@ -12,7 +12,15 @@ Take an example of a **Look up user by property** rule. Implementing this rule w
 
 ![User rules](/images/lookup-user-location.jpg)
 
-In this case the trainer is **Mark Lycette** as he is the trainer assigned in Galway, see image below:
+In this example the **Location of training** is a **List** control is connected to a **SQL Server connector**. The Display field, Value field and Sort by  of the List control is set to **Location**. With the list control set up that way, we are provided with a list based on our Location column in the database. For more information on how to create a List control and set its datasource go to [List control](/docs/platform/controls/input/list/). See image below to see how the **Location of training** field is set up:
+
+![User rules](/images/users-list-control-example.jpg)
+
+With all of our users, we have set up a **Location property** and each user is assigned a different locations based on where they operate and provide training. The **lookup user by property** is set to **Location** which we provide to the rule by selecting our **Location of training**  field. The outcome of this combination will set our **Trainer** field with the user that the **Location property** matches the value specified in the **Location of training** field. To learn more about how to create your own user properties and attributes go to [Modifying profile attributes](/docs/platform/administration/users/#modify-profile-attributes). See image below of the Lookup user by property rule:
+
+![User rules](/images/users-lookup.jpg)
+
+For example when a user selects **Galway** from the **Location of training**, the lookup rule will search for a user that has the location property set to Galway and the result is **Mark Lycette**. See image below to see the SQL database and that Mark Lycette matches with the Galway location.
 
 ![User rules](/images/lookup-user-db.jpg)
 

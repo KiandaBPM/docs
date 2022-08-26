@@ -43,11 +43,11 @@ We will now go through
    By default, the new **Table field** will have one row with two columns of text fields, titled **Text 1** and **Text 2**. You can add rows, columns and various different types of fields to the table by editing the table field, as outlined in the next section. In the example shown here, a new table has been added to a form called 'Training Request'.
 
 
-### How to edit, move and delete Table fields
+## How to edit, move and delete Table fields
 
 As we go through the options available for editing a Table, we will keep in mind the example of the table we added to the 'Training Request' form above. 
 
-#### How to edit column fields in a Table
+### How to edit column fields in a Table
 
 First, decide **how many columns** you need in your table and **what type of input field** you want to use for each column. To learn more about the eight different types of Input fields that you can use, go to [Input controls](/docs/platform/controls/input/).
 
@@ -57,7 +57,7 @@ We want our table to have three columns: the first column will be a text box fie
 
 ![Table example training](/images/table-training-example.jpg)
 
-##### How to change the title of a Table column
+#### How to change the title of a Table column
 
 To change the default title of the first column texbox field from **Text 1**:
 
@@ -77,7 +77,7 @@ To delete a column from a Table field:
 
 ![Delete Table column](/images/table-delete-column.jpg)
 
-##### How to change the field type of an existing Table column
+#### How to change the field type of an existing Table column
 
 In our example, we want the second column in our table to be a drop-down list. We can either delete the default second text box column and then insert a new list column or we can **change the field type of the existing column** from text box to list. 
 
@@ -94,7 +94,7 @@ To change the field type of an existing column:
 
 In our example, if we want to change the 'Text 2' text box column to be a List field, we would select the **List** radio box and then click **OK** to confirm. An **Edit field** dialog box for the type of input field you have chosen will then open, allowing you to change the column field title (in our case, we will rename it as 'Educational Institution') and to choose from a range of options relevant to that field type. 
 
-##### How to insert new columns in a Table
+#### How to insert new columns in a Table
 
 To **insert new columns into a Table**:
 
@@ -108,7 +108,7 @@ In our example, we will insert a date field to be our third column (and can then
 
 ![Date field inserted in Table](/images/table-date-column-added.jpg) 
 
-##### How to move columns in a Table
+#### How to move columns in a Table
 
 To re-order columns in a Table, simply
 
@@ -117,7 +117,7 @@ To re-order columns in a Table, simply
 
 ![Move table columns](/images/table-move-columns.jpg)
 
-##### How to edit the Table field 
+## How to edit the Table field 
 
 To edit the **Table field** itself:
 
@@ -174,7 +174,7 @@ If you want to make your table more dynamic - for example, so that calculations 
 
 
 
-#### How to move Table fields
+### How to move Table fields
 
 To move a **Table field** within your form:
 
@@ -185,7 +185,7 @@ To move a **Table field** within your form:
 
 
 
-#### How to delete Table fields
+### How to delete Table fields
 
 To delete a **Table field** from your form:
 
