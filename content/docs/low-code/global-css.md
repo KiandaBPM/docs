@@ -52,7 +52,7 @@ We can then add "**?tile**" to the end of the name of any form **element** for e
 
 ![Tile example in a panel](/images/destination-panel-tile.jpg)
 
-In the image below “**?tile**” was used to style these two panels into two **tiles** aligned **side** **by** **side**. A “**?noStyleTable**” rule was also used to give our tables a cleaner, less cluttered look.
+In the image below “**?tile**” was used to style these two panels into two **tiles** aligned **side** **by** **side**. 
 
 ![Table styling example](/images/table-styling-customised.png)
 
