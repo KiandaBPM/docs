@@ -4,11 +4,11 @@ weight: 2
 typora-root-url: ..\..\..\static
 ---
 
-## What is Kianda ##
+## What is Kianda? ##
 
 Kianda is the most flexible no-code / low-code platform that you can use to create digital business processes. You can use the easy to use Kianda **Designer** to create forms to look and work the way you want. Choose from 18 predefined field types and 60 rules to create your forms within your processes. And if you don't like those, use the no-code part of the platform to create customised field and rule widgets. Then monitor process execution in a dashboard using seven widget types, from lists to chart, or create your own dashboard widget using Kianda **Developer**. 
 
-## How does Kianda work
+## How does Kianda work?
 
 The Kianda platform no-code / low-code (NCLC) platform is created with the ultimate flexibility and agility in mind, allowing simple user interactions to build complex processes.
 
@@ -40,7 +40,7 @@ In addition to the rules engine, CSS3, HTML5, EmberJS, WebApi and NodeJS are som
 
 In summary the Kianda platform provides an ideal interface for rapid prototyping and delivering outcomes quickly.
 
-## What does Kianda look like
+## What does Kianda look like?
 
 The Kianda user interface or **workspace** is designed to be responsive and intuitive, allowing you to easily create and control your business processes.  Your Kianda **workspace** gives you to ability to manage all your processes and view real-time data presented in dashboards, to guide your business decisions.
 
@@ -57,7 +57,7 @@ When you login the layout of the user interface is as follows:
    
    - User defined pages - these are defined by you the user depending on what features you want to showcase, for example **Dashboard** could contain all the process dashboards and **Inspection Checklist** could be a dashboard of inspection lists.
    
-   - [Administration](platform/administration.md) - contains 8 functions related to administration of your Kianda workspace. Click on Details below to see a list of functions and links to find out more.
+   - [Administration](/docs/platform/administration/) - contains 8 functions related to administration of your Kianda workspace. Click on Details below to see a list of functions and links to find out more.
    
      <details>
    
@@ -69,7 +69,7 @@ When you login the layout of the user interface is as follows:
    
      - [Data sources](/docs/platform/administration/datasources/) - connections to data sources like SharePoint or SQL Server
    
-     - [Scheduled tasks](platform//docs/platform/administration/scheduledtasks/) - use processes to run as scheduled tasks, and manage timeframes
+     - [Scheduled tasks](/docs/platform/administration/scheduledtasks/) - use processes to run as scheduled tasks, and manage timeframes
    
      - [Recycle bin](/docs/platform/administration/recyclebin/) - list of deleted processes
    
@@ -79,7 +79,7 @@ When you login the layout of the user interface is as follows:
    
        </details>
    
-   - More - includes [Help](platform/help.md), [Support](platform/support.md) and [Feedback](platform/feedback.md) links
+   - More - includes [Help](/docs/platform/general/help/), [Support](/docs/platform/general/support/) and [Feedback](/docs/platform/general/help/#feedback) links
    
 3. **Main view** - this central pane is the main view for any of the functions chosen on the right, for example dashboards, or processes created under Designer.
 
@@ -89,7 +89,7 @@ When you login the layout of the user interface is as follows:
    - **User notifications** ![Notifications button](/images/notifications.png)
    - **User profile** ![User profile](/images/userprofile.png) 
    
-   Click on [Quick Action menu](platform/quickaction.md) to find out more about each button.
+   Click on [Quick Action menu](/docs/platform/general/quickaction/) to find out more about each button.
 
 
 ### What's next  ![Idea icon](/images/18.png) ###
