@@ -151,43 +151,44 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;p>Check-out the &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">development&lt;/a> section for more details on how to build custom widgets in Kianda.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced the key concepts of rules. Click on the links below to read more about rule concepts in detail:&lt;/p></description></item><item><title>Docs: Workflow rules</title><link>https://docs.kianda.com/docs/platform/rules/workflow/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/</guid><description>
-&lt;p>&lt;strong>Workflow&lt;/strong> rules is one category of &lt;a href="rules/Readme.md">rules&lt;/a> used relating to user interactions with form components. Using Workflow rules will also allow you to change the flow of information within a process. For example in a simple Training Process that is made up of three forms by default, the &lt;strong>first form&lt;/strong> in a process is the &lt;strong>current form&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Workflow&lt;/strong> rules is one category of &lt;a href="https://docs.kianda.com/docs/platform/rules/">rules&lt;/a> that relates to user interactions with form components. Using Workflow rules will allow you to change the flow of information within a process. For example in a simple Training Process that is made up of three forms by default, the &lt;strong>first form&lt;/strong> in a process is the &lt;strong>current form&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/3-form-example.jpg" alt="Three form process example">&lt;/p>
 &lt;p>In the example above, the workflow for this process would be completion of the forms in this order: &lt;strong>Training Request&lt;/strong> &amp;gt; &lt;strong>Training Approval&lt;/strong> &amp;gt; &lt;strong>Training Attendance&lt;/strong> however using Workflow rules, you could use &lt;strong>Go to form&lt;/strong> to force the &lt;strong>Training Attendance&lt;/strong> form to be the current form after the Training Request form has been completed.&lt;/p>
 &lt;p>You could also use the &lt;strong>Assign form&lt;/strong> rule to assign editing rights to particular users so they can edit forms. See more about Go to form and Assign form below.&lt;/p>
 &lt;p>Using rules in this way changes the flow of the process, and additional levels of security and user interaction can be added using &lt;strong>Process security&lt;/strong> and &lt;strong>Hide or disable&lt;/strong> see below.&lt;/p>
 &lt;h2 id="getting-started-with-workflow-rules">Getting started with Workflow rules&lt;/h2>
-&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>Workflow&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Workflow&lt;/strong>.&lt;/p>
+&lt;p>If you have the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Design business process&lt;/strong> go to &lt;strong>Administration&lt;/strong> in the left-hand side menu and then &lt;strong>Designer&lt;/strong> and click on an existing process or create a new process, then decide on a form or field to add the rule to by clicking on that item and click on &lt;strong>Add a rule&lt;/strong>.&lt;/p>
+&lt;p>The &lt;strong>Workflow&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Workflow&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/workflow-rules.jpg" alt="Workflow rules">&lt;/p>
 &lt;p>There are seven types of &lt;strong>Workflow&lt;/strong> rules as follows:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;h3 id="hide-or-disable">Hide or disable&lt;/h3>
-&lt;p>This rule is used to hide, disable, show or enable one or more fields, one or more sections or entire forms. This rule has special meaning in terms of workflow allowing the application to direct user action and flow by hiding or showing entire sections of the application.&lt;/p>
+&lt;p>This rule is used to hide, disable, &lt;strong>show or enable one or more fields, one or more sections or entire forms&lt;/strong>. This rule has special meaning in terms of workflow allowing the application to direct user action and flow by hiding or showing entire sections of the application.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;h3 id="make-required">Make required&lt;/h3>
-&lt;p>Use this rule to make individual fields required or entire forms. Unlike the field property &amp;lsquo;Required&amp;rsquo;, this rule will dynamically allocate a mandatory status on chosen forms or fields, that users must complete and submit.&lt;/p>
+&lt;p>Use this rule to make individual &lt;strong>fields required or entire forms&lt;/strong>. Unlike the field property &amp;lsquo;Required&amp;rsquo;, this rule will dynamically allocate a mandatory status on chosen forms or fields, that users must complete and submit.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;h3 id="go-to-form">Go to form&lt;/h3>
-&lt;p>Go to form rule navigates the user from the current form to the destination form. This rule could also set the destination form&amp;rsquo;s display mode.&lt;/p>
+&lt;p>&lt;strong>Go to form&lt;/strong> rule &lt;strong>navigates&lt;/strong> the user from the current form to the destination form. This rule could also set the destination form&amp;rsquo;s display mode.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;h3 id="assign-form">Assign form&lt;/h3>
-&lt;p>This rule enables dynamic form ownership and form security assignment of a form owner by assigning a user or a group to a form. You could also choose to override or append the form owner. By default only form owners can see the form in edit&lt;/p>
+&lt;p>This rule &lt;strong>enables dynamic form ownership&lt;/strong> and form security assignment of a form owner by assigning a user or a group to a form. You could also choose to override or append the form owner. By default only form owners can see the form in edit&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;h3 id="process-security">Process security&lt;/h3>
-&lt;p>This rule defines the security of the entire process instance (record). Using this rule, you could add any user or group with the right permissions to view/update any instances.&lt;/p>
+&lt;p>This rule &lt;strong>defines the security of the entire process instance&lt;/strong> (record). Using this rule, you could add any user or group with the right permissions to view/update any instances.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;h3 id="start-a-sub-process">Start a (sub) process&lt;/h3>
-&lt;p>Start a process rule helps you create a new instance of the same process or a different process. You could also map the inputs from the current instance to a new instance.&lt;/p>
+&lt;p>&lt;strong>Start a process&lt;/strong> rule helps you &lt;strong>create a new instance of the same process or a different process&lt;/strong>. You could also map the inputs from the current instance to a new instance.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;h3 id="schedule-a-rule">Schedule a rule&lt;/h3>
-&lt;p>This rule helps you schedule a rule/rules to be triggered one time, with a recurring schedule or immediately. For example, this rule could be used to schedule a daily reminder email to a user if the task is not complete.&lt;/p>
+&lt;p>This rule helps you &lt;strong>schedule a rule/rules to be triggered&lt;/strong> one time, with a recurring schedule or immediately. For example, this rule could be used to schedule a daily reminder email to a user if the task is not complete.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>

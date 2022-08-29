@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Workflow rules</title><link>https://docs.kianda.com/docs/platform/rules/workflow/</link><description>Recent content in Workflow rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/workflow/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Show, hide or disable</title><link>https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Use the &lt;strong>Hide or Disable&lt;/strong> rule to hide, disable, show or enable a field or a component in a Kianda form. This rule is very useful if you want different parts of a form, a complete form or multiple forms, to appear or hide based on how the user of the form completes the form.&lt;/p>
+&lt;p>Use the &lt;strong>Hide or Disable&lt;/strong> rule to hide, disable, show or enable a field or a component in a Kianda form. This rule is very useful if you want different parts of a form, a complete form or multiple forms, to appear or hide based on how the form user completes the form.&lt;/p>
 &lt;p>There are seven possible actions within this rule that can be applied to fields or forms:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Hide&lt;/strong> from the user (not visible)&lt;/li>
@@ -28,14 +28,14 @@
 &lt;p>The following steps illustrate a scenario to &lt;strong>hide&lt;/strong> and &lt;strong>show&lt;/strong> fields. The same steps can be applied to enable, disable, toggle enable and so on. To dynamically hide a field:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;p>If you have the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Design business process&lt;/strong> go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong>, open an existing process or create a new process and decide which form or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Hide or Disable&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Edit rule - Hide or Disable&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/hide-or-disable.jpg" alt="Edit rule - Hide or Disable dialog box">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/hide-or-disable.jpg" alt="Edit rule - Hide or Disable dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
@@ -43,15 +43,15 @@
 &lt;li>
 &lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by clicking on the &lt;strong>empty field&lt;/strong> to add a form or form field, and then choose an option from the action drop-down list, choosing from &lt;strong>Hide&lt;/strong>, &lt;strong>Show&lt;/strong>, &lt;strong>Disable&lt;/strong>, &lt;strong>Enable&lt;/strong>, &lt;strong>Toggle visible&lt;/strong>, &lt;strong>Toggle enable&lt;/strong>, or &lt;strong>Hide and clear&lt;/strong>, see &lt;a href="#introduction">Introduction&lt;/a> for an explanation of each action.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/hide-example.jpg" alt="Hide or disable example - Hide or show">&lt;/p>
-&lt;p>For example in the image above, a &lt;strong>Feedback&lt;/strong> field will be hidden, using &lt;strong>Hide&lt;/strong>, based on a condition, when a field &lt;strong>Management decision&lt;/strong> equals &lt;strong>Yes&lt;/strong>.&lt;/p>
+&lt;p>For example in the image above, a &lt;strong>Feedback&lt;/strong> field will be hidden, using &lt;strong>Hide&lt;/strong>, based on a condition, when a field &lt;strong>Management decision&lt;/strong> equals a value &lt;strong>&amp;lsquo;Yes&amp;rsquo;&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To add more actions, click on &lt;strong>Add&lt;/strong>. At any time remove an action by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> beside the name of the action.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Like an &amp;lsquo;if..else&amp;rsquo; statement you can add alternative/elsewise actions, based on different conditions by clicking on &lt;strong>Add otherwise action&lt;/strong>.&lt;/p>
+&lt;p>Just like an &amp;lsquo;if..else&amp;rsquo; statement, you can add alternative/elsewise actions, based on different conditions by clicking on &lt;strong>Add otherwise action&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/hide-or-show-example.jpg" alt="Hide or show example">&lt;/p>
-&lt;p>In the example above, &lt;strong>Signature&lt;/strong> and &lt;strong>Training materials&lt;/strong> field will show and a &lt;strong>Feedback&lt;/strong> field will hide, while a &lt;strong>Management decision&lt;/strong> field has a value of &lt;strong>Yes&lt;/strong>, otherwise the shown fields will hide, while the &lt;strong>Feedback&lt;/strong> field shows. The result is a dynamic form that will reveal particular fields based on user input for the Management decision field.&lt;/p>
+&lt;p>In the example above, &lt;strong>Signature&lt;/strong> and &lt;strong>Training materials&lt;/strong> field will show and a &lt;strong>Feedback&lt;/strong> field will hide, while a &lt;strong>Management decision&lt;/strong> field has a value of &lt;strong>Yes&lt;/strong>, otherwise the shown fields will hide, while the &lt;strong>Feedback&lt;/strong> field shows &lt;strong>No&lt;/strong>. The result is a dynamic form that will reveal particular fields based on user input for the Management decision field.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To remove the otherwise action(s) click on the &lt;strong>Remove otherwise action&lt;/strong> fields.&lt;/p>
@@ -60,7 +60,7 @@
 &lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If the rule is attached to a field within a form, a notification will appear within the form design, for example the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
+&lt;p>If the rule is attached to a field within a form, a rule notification will appear within the form design, for example a rule is applied to the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-in-form-example.jpg" alt="Rule on a form field">&lt;/p>
 &lt;/li>
 &lt;li>
