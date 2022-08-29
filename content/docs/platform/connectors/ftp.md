@@ -27,14 +27,24 @@ You can use the FTP connector when you want **access** or **modify** data or fil
    Choose from the edit options:
 
    - **Display name** - type in the name for your FTP connector. This is used to distinguish between different data connectors on your platform.
+
    - **FTP Server** - the **server name** of the server you want to access or the **IP address** where the server is hosted. When you are running a **local** server on your machine you can use your **own** IP address as the server.
+
    - **FTP root folder** - name of the root folder that is specified in your server. Note that the root folder that you specify here must be **exactly** the same as on the FTP server. For example If your root folder on the FTP server is `/Files`, you must also specify that the **FTP root folder** is `/Files`. It is possible to successfully connect the FTP connector if you specify a different **FTP root folder** than on the server but you will not be able to access the files properly.
+
    - **FTP port** - enter the port on which your server listens on. 
+
    - **Use SSL** - check this box if your FTP server has SSL security.
+
    - **FTP username** - enter the username you use to connect to your FTP server.
+
    - **FTP password** - enter the password you use to connect to your FTP server.
+
    - **Use Kianda Cloud Connect** - by default this option is disabled, the cloud connect is used to **create a connection** between a **locally run FTP server** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/). Check this option if you want to connect to a server that is running on your local machine. When **Use Kianda Cloud Connect** is enabled, a **Connectors** option appears.
+
      - **Connectors** - displays all available connector PC's that have a **connection established** with your **Kianda** subscription. This option is used to select the PC **connection** that **runs** the **local FTP server** that you want to connect to.
+
+       ![Test connection for REST Service](/images/ftp-connectors.jpg)
 
 4. When you have added File system details, you are ready to test your connection and add security. At the bottom of the **File system details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
 
