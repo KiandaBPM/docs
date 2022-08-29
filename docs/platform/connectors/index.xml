@@ -189,16 +189,34 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/ftp-details.jpg" alt="File system detail page">&lt;/p>
 &lt;p>Choose from the edit options:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your FTP connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
-&lt;li>&lt;strong>FTP Server&lt;/strong> - the &lt;strong>server name&lt;/strong> of the server you want to access or the &lt;strong>IP address&lt;/strong> where the server is hosted. When you are running a &lt;strong>local&lt;/strong> server on your machine you can use your &lt;strong>own&lt;/strong> IP address as the server.&lt;/li>
-&lt;li>&lt;strong>FTP root folder&lt;/strong> - name of the root folder that is specified in your server. Note that the root folder that you specify here must be &lt;strong>exactly&lt;/strong> the same as on the FTP server. For example If your root folder on the FTP server is &lt;code>/Files&lt;/code>, you must also specify that the &lt;strong>FTP root folder&lt;/strong> is &lt;code>/Files&lt;/code>. It is possible to successfully connect the FTP connector if you specify a different &lt;strong>FTP root folder&lt;/strong> than on the server but you will not be able to access the files properly.&lt;/li>
-&lt;li>&lt;strong>FTP port&lt;/strong> - enter the port on which your server listens on.&lt;/li>
-&lt;li>&lt;strong>Use SSL&lt;/strong> - check this box if your FTP server has SSL security.&lt;/li>
-&lt;li>&lt;strong>FTP username&lt;/strong> - enter the username you use to connect to your FTP server.&lt;/li>
-&lt;li>&lt;strong>FTP password&lt;/strong> - enter the password you use to connect to your FTP server.&lt;/li>
-&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is disabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between a &lt;strong>locally run FTP server&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>. Check this option if you want to connect to a server that is running on your local machine. When &lt;strong>Use Kianda Cloud Connect&lt;/strong> is enabled, a &lt;strong>Connectors&lt;/strong> option appears.
+&lt;li>
+&lt;p>&lt;strong>Display name&lt;/strong> - type in the name for your FTP connector. This is used to distinguish between different data connectors on your platform.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>FTP Server&lt;/strong> - the &lt;strong>server name&lt;/strong> of the server you want to access or the &lt;strong>IP address&lt;/strong> where the server is hosted. When you are running a &lt;strong>local&lt;/strong> server on your machine you can use your &lt;strong>own&lt;/strong> IP address as the server.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>FTP root folder&lt;/strong> - name of the root folder that is specified in your server. Note that the root folder that you specify here must be &lt;strong>exactly&lt;/strong> the same as on the FTP server. For example If your root folder on the FTP server is &lt;code>/Files&lt;/code>, you must also specify that the &lt;strong>FTP root folder&lt;/strong> is &lt;code>/Files&lt;/code>. It is possible to successfully connect the FTP connector if you specify a different &lt;strong>FTP root folder&lt;/strong> than on the server but you will not be able to access the files properly.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>FTP port&lt;/strong> - enter the port on which your server listens on.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Use SSL&lt;/strong> - check this box if your FTP server has SSL security.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>FTP username&lt;/strong> - enter the username you use to connect to your FTP server.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>FTP password&lt;/strong> - enter the password you use to connect to your FTP server.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is disabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between a &lt;strong>locally run FTP server&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>. Check this option if you want to connect to a server that is running on your local machine. When &lt;strong>Use Kianda Cloud Connect&lt;/strong> is enabled, a &lt;strong>Connectors&lt;/strong> option appears.&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that &lt;strong>runs&lt;/strong> the &lt;strong>local FTP server&lt;/strong> that you want to connect to.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that &lt;strong>runs&lt;/strong> the &lt;strong>local FTP server&lt;/strong> that you want to connect to.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ftp-connectors.jpg" alt="Test connection for REST Service">&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
