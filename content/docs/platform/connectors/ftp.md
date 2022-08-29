@@ -10,6 +10,10 @@ One of the data connectors that you can connect to is **File Transfer Protocol (
 
 The **FTP** data connector allows you to use an **online** file system as a data source for your Kianda forms or dashboards. This means that as your processes are running they will use the information from the online file system or depending on the process, update or delete information at in the online file system location. Kianda has the ability to **extract** files, **navigate** subfolders and **write** new files into the online directory. Any operation performed using the FTP data connector will directly change files within the online file system.
 
+## When to use
+
+You can use the FTP connector when you want **access** or **modify** data or files within any **folder** in your FTP server. You can perform Create, Read, Update and Delete (**CRUD**) operations on any files within the FTP server that you have access to.
+
 ## How to get started
 
 1. From the Kianda home page, click on **Administration** > **Data sources**.
