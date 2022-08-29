@@ -12,7 +12,9 @@ Security settings for a process can be set statically by going to **Settings** f
 
 ![Process security settings](/images/process-security-settings.jpg)
 
-This setting is static and applies to every instance of the process.  However the Process security rule is **dynamic** and changes the security settings for a particular instance. For example if there is a Finance process with a Payroll request form containing personal data like employee salary, this request form  should only be visible to an assigned person. An **Assign form** rule could be used to give form ownership to an assigned person, allowing them to edit the form in a process instance, and if the rule is combined with the **Process security** rule then only the assigned person can view the request form for the process instance. If there are multiple process instances listed in a dashboard, then **process security** will allow only those who have the designated access, to view those process instances. 
+This setting is static and applies to every instance of the process.  However the Process security rule is **dynamic** and changes the security settings for a particular instance. For example if there is a Finance process with a Payroll request form containing personal data like employee salary, this request form  should only be visible to an assigned person. An **Assign form** rule could be used to give form ownership to an assigned person, allowing them to edit the form in a process instance, and if the rule is combined with the **Process security** rule then only the assigned person can view the request form for the process instance. 
+
+If there are multiple process instances listed in a dashboard, then **process security** will allow only those who have the designated access, to view those process instances. 
 
 
 
@@ -42,7 +44,7 @@ To dynamically set security for process instances:
 5. Under **Action** create one or more actions for the rule by filling out the following:
 
    - **Add to process security users** - choose from the radio buttons:
-     - **Any user** - choose from **Users**, **Groups** and/or **Partners** in the drop-down list. All users must be predefined in the system, see [Users and Groups](/docs/platform/administration/users/) for more details. 
+     - **Any user** - choose from **Users**, **Groups** and/or **Partners** in the drop-down list. All users and groups must be predefined in the system, see [Users and Groups](/docs/platform/administration/users/) for more details. Partners must also be predefined within the [Invite partners](/docs/platform/administration/b2b-portals/) section under Administration.
      - **Current user** - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.
      - **Defined in a user field** - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them. 
      - **Form owner(s)** - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see [Form owners](/docs/platform/application-designer/forms/form-owners/) for more details on what form ownership is and how to create form owners.
@@ -52,7 +54,7 @@ To dynamically set security for process instances:
      - If **Defined in a user field** or **Form owner(s)** is chosen then a **Select form field** appears prompting you to select a user picker field for the former, and a form with form owners for the latter.  
 
    - **Existing user(s)** - choose from:
-     -  **Override** - this means that this rule will override form ownership, making those referenced in the **Edit rule dialog** box**, the form owners**.
+     -  **Override** - this means that this rule will override form ownership, making those referenced in the **Edit rule dialog** box the form owners.
      -  **Append** - this means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the **Edit rule dialog** box. 
    
    - **Override security settings** - choose from **Yes** or **No**.
@@ -71,7 +73,7 @@ To dynamically set security for process instances:
 
 8. When you click on the field or form that has the rule attached, the rule will appear in the right-hand pane under **Rules**. 
 
-   The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.
+The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.
 
 
 
@@ -95,10 +97,16 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 This rule can be used multiple times in sequence.  You can use the first rule to override the existing users and the following rule(s) to append users.
 
-You can override the process security settings by setting Override security settings to **Yes**. Tick **Enable security** to see the options for setting the security level.  These options are identical to those in the static Process settings see [Introduction](#introduction) for details.
+You can override the process security settings by setting Override security settings to **Yes**. Tick **Enable security** to see the options for setting the security level.  These options are identical to those in the static **Process settings** as mentioned in the [Introduction](#introduction).
 
-> **Warning** 
+**Warning!**
 >
-> Setting Override security settings to **Yes** with Enable security ***not* ticked** will disable all security settings.
+> Setting Override security settings to **Yes** with Enable security **<u>not ticked</u>** will disable all security settings.
 
-![Process security rule dialog box 2](/images/ProcessSecurity2.png)
+![Process security rule dialog box 2](/images/override-security-settings.jpg)
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+To find out more about other workflow rules go to [Workflow](/docs/platform/rules/workflow/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).

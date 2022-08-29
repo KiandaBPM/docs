@@ -49,7 +49,7 @@ To dynamically assign a form to a user:
    - **Select form** - click on the field and select a form from the process. Click on the **Plus/Add** button ![Add/Plus button](/images/add-plus-action.jpg) to add more forms to assign. If you change your mind and want to delete a form, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 
    - **Assign to** - choose from the radio buttons:
-     - **Any user** - choose from **Users**, **Groups** and/or **Partners** in the drop-down list. All users must be predefined in the system, see [Users and Groups](/docs/platform/administration/users/) for more details. 
+     - **Any user** - choose from **Users**, **Groups** and/or **Partners** in the drop-down list. All users and groups must be predefined in the system, see [Users and Groups](/docs/platform/administration/users/) for more details. Partners must also be predefined within the [Invite partners](/docs/platform/administration/b2b-portals/) section under Administration.
      - **Current user** - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.
      - **Defined in a user field** - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them. 
      - **Form owner(s)** - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see [Form owners](/docs/platform/application-designer/forms/form-owners/) for more details on what form ownership is and how to create form owners.

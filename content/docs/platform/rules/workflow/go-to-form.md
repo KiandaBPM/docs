@@ -8,9 +8,10 @@ The **Go to form** rule is used to control how a user moves between forms. As me
 
 ## When to use
 
-This rule may only be added to a **button**.
+This rule can only be added to a **button**.
 
-> **Warning** 
+**Warning!** 
+
 >
 > The **Close form** and **Go to form** rules **cannot** be applied to the same button as both rules control which form comes next.  
 >
