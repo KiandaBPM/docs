@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction ##
 
-Use the **Hide or Disable** rule to hide, disable, show or enable a field or a component in a Kianda form. This rule is very useful if you want different parts of a form, a complete form or multiple forms, to appear or hide based on how the user of the form completes the form.  
+Use the **Hide or Disable** rule to hide, disable, show or enable a field or a component in a Kianda form. This rule is very useful if you want different parts of a form, a complete form or multiple forms, to appear or hide based on how the form user completes the form.  
 
 There are seven possible actions within this rule that can be applied to fields or forms:
 
@@ -35,13 +35,13 @@ You can add this rule:
 
 The following steps illustrate a scenario to **hide** and **show** fields. The same steps can be applied to enable, disable, toggle enable and so on. To dynamically hide a field:
 
-1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button,  **Pen** button ![Pen button](/images/penicon.png).
+1. If you have the role **Administrator** or **Design business process** go to **Administration** > **Designer**, open an existing process or create a new process and decide which form or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button,  **Pen** button ![Pen button](/images/penicon.png).
 
 2. Click on **Add a rule** > **Workflow** > **Hide or Disable**. 
 
 3. In the **Edit rule - Hide or Disable** dialog box, give the rule a title in the **Title** field.
 
-   ![Edit rule - Hide or Disable dialog box](/../content/docs/hide-or-disable.jpg)
+   ![Edit rule - Hide or Disable dialog box](/images/hide-or-disable.jpg)
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
@@ -49,21 +49,21 @@ The following steps illustrate a scenario to **hide** and **show** fields. The s
 
    ![Hide or disable example - Hide or show](/images/hide-example.jpg)
 
-   For example in the image above, a **Feedback** field will be hidden, using **Hide**, based on a condition, when a field **Management decision** equals **Yes**.
+   For example in the image above, a **Feedback** field will be hidden, using **Hide**, based on a condition, when a field **Management decision** equals a value **'Yes'**.
 
 6. To add more actions, click on **Add**. At any time remove an action by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png) beside the name of the action.
 
-7. Like an 'if..else' statement you can add alternative/elsewise actions, based on different conditions by clicking on **Add otherwise action**.
+7. Just like an 'if..else' statement, you can add alternative/elsewise actions, based on different conditions by clicking on **Add otherwise action**.
 
    ![Hide or show example](/images/hide-or-show-example.jpg)
 
-   In the example above, **Signature** and **Training materials** field will show and a **Feedback** field will hide, while a **Management decision** field has a value of **Yes**, otherwise the shown fields will hide, while the **Feedback** field shows. The result is a dynamic form that will reveal particular fields based on user input for the Management decision field. 
+   In the example above, **Signature** and **Training materials** field will show and a **Feedback** field will hide, while a **Management decision** field has a value of **Yes**, otherwise the shown fields will hide, while the **Feedback** field shows **No**. The result is a dynamic form that will reveal particular fields based on user input for the Management decision field. 
 
 8. To remove the otherwise action(s) click on the **Remove otherwise action** fields.
 
 9. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
-10. If the rule is attached to a field within a form, a notification will appear within the form design, for example the field **Management decision** as shown in the image below.
+10. If the rule is attached to a field within a form, a rule notification will appear within the form design, for example a rule is applied to the field **Management decision** as shown in the image below.
 
     ![Rule on a form field](/images/rule-in-form-example.jpg)
 

@@ -8,15 +8,17 @@ Business rules are what makes Kianda forms come alive. They represent the actual
 
 There are two key principles to consider when working with forms:
 
-1. Rule design - what type of rule you are going to apply and where, for example to a button, field or form
+1. [Rule design](#rule-design) - what type of rule you are going to apply and where, for example to a button, field or form
 
-2. Rule order - if there are several rules attached to an item like a button, then the order of execution is important and can be modified to suit your needs.
+2. [Rule order](#rule-order) - if there are several rules attached to an item like a button, then the order of execution is important and can be modified to suit your needs.
+
+These principles are explained in more detail following the [How to get started](#how-to-get-started) section.
 
    
 
 ## How to get started ##
 
-If you go to **Administration** > **Designer** and click on a process or create a new process, the predefined rules are found in the left-hand pane under **Add a rule**.
+If you have the role **Administrator** or **Design business process** go to **Administration** > **Designer** and click on a process or create a new process, the predefined rules are found in the left-hand pane under **Add a rule**.
 
 ![Rules](/images/rulesgeneral.png) 
 
@@ -37,15 +39,25 @@ There are 10 categories of rules:
 
 ## Rule design ###
 
-1. Click on an existing process by going to **Administration** > **Designer** and decide which form or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Pen button,  **Pen** button ![Pen button](/images/penicon.png) for example a form Training Approval or Submit button.
+You can apply rules at buttons, fields, and form level. At form level, rule(s) execute 'on load', that is when a process instance is initiated or kicked off for example as a result of a user creating a new instance from a [dashboard](/docs/platform/pages/), or automated through a [scheduled task](/docs/platform/administration/scheduledtasks/), then the rules are triggered into action when the form(s) within that process becomes the active form(s). 
+
+To get started with rule design:
+
+1. Click on an existing process or create a new process by going to **Administration** in the left-hand side menu and then click on **Designer**.
+
+2. For existing processes and forms, decide which process, form or field you will apply the rule to. by clicking on that item so that it is in **edit mode** so you can see the Pen button,  **Pen** button ![Pen button](/images/penicon.png) for example a form Training Approval or Submit button. For new processes add in forms and fields and select an element to add a rule to.
 
    ![Edit mode for forms and fields](/images/formvsbutton.png) 
 
-2. Click on **Add a rule** in the right-hand pane and click on a category of choice, such as **Communications** and then a rule **User alert**.
+3. Click on **Add a rule** in the left-hand pane and click on a category of choice, such as **Communications** and then a rule, for example **User alert**.
 
- 
+   ![Rule design example](/images/rule-design-example.jpg)
 
+4. When you have chosen your rule an **Edit rule** dialog box opens, allowing you to configure the rule to execute a particular action, which can be according to [conditions](/docs/platform/rules/general/add-conditions/) if you wish.
 
+The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the **Edit rule** dialog box for each rule.
+
+   
 
 ## Rule order ###
 
