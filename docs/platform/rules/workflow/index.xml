@@ -168,9 +168,9 @@
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Go to form</title><link>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</guid><description>
 &lt;p>The &lt;strong>Go to form&lt;/strong> rule is used to control how a user moves between forms. As mentioned in &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Form basics&lt;/a> by default the first form in a process is the &lt;strong>current form&lt;/strong>. Once submitted, control passes to the next form and the user is not allowed to go back to the previous form. The &lt;strong>Go to form&lt;/strong> rule allows you to redirect the user to any form. The user can then navigate back and forth between those forms.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>This rule may only be added to a &lt;strong>button&lt;/strong>.&lt;/p>
+&lt;p>This rule can only be added to a &lt;strong>button&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Warning!&lt;/strong>&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;strong>Warning&lt;/strong>&lt;/p>
 &lt;p>The &lt;strong>Close form&lt;/strong> and &lt;strong>Go to form&lt;/strong> rules &lt;strong>cannot&lt;/strong> be applied to the same button as both rules control which form comes next.&lt;/p>
 &lt;p>The &lt;strong>Save form&lt;/strong> rule must be used &lt;strong>and&lt;/strong> must &lt;strong>appear before the Go to form&lt;/strong> rule in the list of rules.&lt;/p>
 &lt;/blockquote>
@@ -295,7 +295,7 @@
 &lt;li>
 &lt;p>&lt;strong>Assign to&lt;/strong> - choose from the radio buttons:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details.&lt;/li>
+&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users and groups must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details. Partners must also be predefined within the &lt;a href="https://docs.kianda.com/docs/platform/administration/b2b-portals/">Invite partners&lt;/a> section under Administration.&lt;/li>
 &lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.&lt;/li>
 &lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them.&lt;/li>
 &lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
@@ -358,7 +358,8 @@
 &lt;p>The &lt;strong>Process security&lt;/strong> rule dynamically changes the &lt;strong>security settings of a process instance&lt;/strong>.&lt;/p>
 &lt;p>Security settings for a process can be set statically by going to &lt;strong>Settings&lt;/strong> for the process in Kianda Designer. If you check the checkbox for &lt;strong>Enable process security&lt;/strong>, you can then select users, groups, and/or partners and set their access level, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/settings/">Process settings&lt;/a> for more details.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-security-settings.jpg" alt="Process security settings">&lt;/p>
-&lt;p>This setting is static and applies to every instance of the process. However the Process security rule is &lt;strong>dynamic&lt;/strong> and changes the security settings for a particular instance. For example if there is a Finance process with a Payroll request form containing personal data like employee salary, this request form should only be visible to an assigned person. An &lt;strong>Assign form&lt;/strong> rule could be used to give form ownership to an assigned person, allowing them to edit the form in a process instance, and if the rule is combined with the &lt;strong>Process security&lt;/strong> rule then only the assigned person can view the request form for the process instance. If there are multiple process instances listed in a dashboard, then &lt;strong>process security&lt;/strong> will allow only those who have the designated access, to view those process instances.&lt;/p>
+&lt;p>This setting is static and applies to every instance of the process. However the Process security rule is &lt;strong>dynamic&lt;/strong> and changes the security settings for a particular instance. For example if there is a Finance process with a Payroll request form containing personal data like employee salary, this request form should only be visible to an assigned person. An &lt;strong>Assign form&lt;/strong> rule could be used to give form ownership to an assigned person, allowing them to edit the form in a process instance, and if the rule is combined with the &lt;strong>Process security&lt;/strong> rule then only the assigned person can view the request form for the process instance.&lt;/p>
+&lt;p>If there are multiple process instances listed in a dashboard, then &lt;strong>process security&lt;/strong> will allow only those who have the designated access, to view those process instances.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -388,7 +389,7 @@
 &lt;li>
 &lt;p>&lt;strong>Add to process security users&lt;/strong> - choose from the radio buttons:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details.&lt;/li>
+&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users and groups must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details. Partners must also be predefined within the &lt;a href="https://docs.kianda.com/docs/platform/administration/b2b-portals/">Invite partners&lt;/a> section under Administration.&lt;/li>
 &lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.&lt;/li>
 &lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them.&lt;/li>
 &lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
@@ -408,7 +409,7 @@
 &lt;li>
 &lt;p>&lt;strong>Existing user(s)&lt;/strong> - choose from:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Override&lt;/strong> - this means that this rule will override form ownership, making those referenced in the &lt;strong>Edit rule dialog&lt;/strong> box**, the form owners**.&lt;/li>
+&lt;li>&lt;strong>Override&lt;/strong> - this means that this rule will override form ownership, making those referenced in the &lt;strong>Edit rule dialog&lt;/strong> box the form owners.&lt;/li>
 &lt;li>&lt;strong>Append&lt;/strong> - this means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the &lt;strong>Edit rule dialog&lt;/strong> box.&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -436,9 +437,9 @@
 &lt;/li>
 &lt;li>
 &lt;p>When you click on the field or form that has the rule attached, the rule will appear in the right-hand pane under &lt;strong>Rules&lt;/strong>.&lt;/p>
-&lt;p>The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.&lt;/p>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
@@ -457,12 +458,15 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>This rule can be used multiple times in sequence. You can use the first rule to override the existing users and the following rule(s) to append users.&lt;/p>
-&lt;p>You can override the process security settings by setting Override security settings to &lt;strong>Yes&lt;/strong>. Tick &lt;strong>Enable security&lt;/strong> to see the options for setting the security level. These options are identical to those in the static Process settings see &lt;a href="#introduction">Introduction&lt;/a> for details.&lt;/p>
+&lt;p>You can override the process security settings by setting Override security settings to &lt;strong>Yes&lt;/strong>. Tick &lt;strong>Enable security&lt;/strong> to see the options for setting the security level. These options are identical to those in the static &lt;strong>Process settings&lt;/strong> as mentioned in the &lt;a href="#introduction">Introduction&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Warning!&lt;/strong>&lt;/p>
 &lt;blockquote>
-&lt;p>&lt;strong>Warning&lt;/strong>&lt;/p>
-&lt;p>Setting Override security settings to &lt;strong>Yes&lt;/strong> with Enable security &lt;strong>&lt;em>not&lt;/em> ticked&lt;/strong> will disable all security settings.&lt;/p>
+&lt;p>Setting Override security settings to &lt;strong>Yes&lt;/strong> with Enable security &lt;strong>&lt;u>not ticked&lt;/u>&lt;/strong> will disable all security settings.&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;img src="https://docs.kianda.com/images/ProcessSecurity2.png" alt="Process security rule dialog box 2">&lt;/p></description></item><item><title>Docs: Start a process</title><link>https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/</guid><description>
+&lt;p>&lt;img src="https://docs.kianda.com/images/override-security-settings.jpg" alt="Process security rule dialog box 2">&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Start a process</title><link>https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Start a process&lt;/strong> rule allows you to dynamically &lt;strong>start a new instance&lt;/strong> of a different process, or a new instance of the same process. You can &lt;strong>transfer field data&lt;/strong> from the current process instance to a new process instance.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
