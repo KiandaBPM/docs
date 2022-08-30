@@ -57,7 +57,7 @@ The 'Widget Code' defines the logics and functions.
 
 The two images below display the default code for 'Widget UI' and 'Widget Code'.
 
-![Rule widget UI](/images/rulewidgetui150.png)
+![Rule widget UI](/images/rulewidgetui150.PNG)
 
 
 
