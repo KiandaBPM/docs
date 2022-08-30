@@ -35,7 +35,65 @@
 &lt;p>Emphasize benefits to potential clients who are frequently operating in remote areas with no access to the internet.&lt;/p>
 &lt;h2 id="performance">Performance&lt;/h2>
 &lt;p>Progressive web apps are faster because of the way the underlying technology caches and serves text, stylesheets, images and other content on the websites. As a result user experience, consistency and conversion rate increase.&lt;/p>
-&lt;p>Progressive web apps utilize service workers, which are JavaScript files that run independently from the main browser thread and efficiently control caching, this is how progressive web apps enhance better performance than traditional web apps.&lt;/p></description></item><item><title>Docs: Why choose low-code development?</title><link>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</guid><description/></item><item><title>Docs: Templating basics</title><link>https://docs.kianda.com/docs/low-code/templating-basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/templating-basics/</guid><description>
+&lt;p>Progressive web apps utilize service workers, which are JavaScript files that run independently from the main browser thread and efficiently control caching, this is how progressive web apps enhance better performance than traditional web apps.&lt;/p></description></item><item><title>Docs: Why choose low-code development?</title><link>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Kianda’s low code development environment provides developers with a graphical user interface to quickly create customised applications that can be used in automated processes.&lt;/p>
+&lt;p>Kianda Developer can be utilised to implement HTTP requests and &lt;a href="https://docs.kianda.com/docs/apis/">API&lt;/a> calls to allow for real-time data interactions. To learn more about low-code development, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is Low-Code Development?&lt;/a>.&lt;/p>
+&lt;h2 id="why-choose-low-code-development">Why choose low-code development?&lt;/h2>
+&lt;p>Providing you have some software development and/or coding knowledge, low-code development can allow you to implement customised Kianda widgets to meet user-specific needs such as creating custom ‘Field’, ‘Rule’ or ‘Dashboard widget’ elements.&lt;/p>
+&lt;p>There are 16 predefined fields and 60 rules available for non-developers to use in a no-code form design GUI. However if these do not suit, then Kianda’s low-code development solution provides near limitless room for process expansion. As the Kianda platform offers access to any data source (including real-time synchronisation of the data) and integration with many other software tools and applications, the implementation of low-code can provide your business processes with extreme scalability and room for improvement.&lt;/p>
+&lt;p>You can also build upon pre-defined field, rule and dashboard code to offer the developer a shortcut in creating something new and beneficial for the organisation. For example, you can see a rule widget user interface being designed below, using HTML, handlers, expressions and more.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rulewidgetui150.PNG" alt="Rule widget UI">&lt;/p>
+&lt;h2 id="how-to-implement-low-code-development">How to implement low-code development&lt;/h2>
+&lt;p>If you are an experienced developer with an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role (see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>), you can create a new custom widget within Kianda by doing the following:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to &lt;strong>Administration &amp;gt; Developer &amp;gt; New widget&lt;/strong> to begin creating a new custom widget.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Edit widget&lt;/strong>, you must fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> – The name of your new custom widget&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Unique Id&lt;/strong> – The unique identifier used within the code to refer to this widget (It should be noted that this field is filled out automatically based on the entered Title, however it can be edited).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Widget Icon&lt;/strong> – The icon image that the custom widget will be associated with&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Widget type&lt;/strong> – choose from &lt;strong>Field&lt;/strong>, &lt;strong>Rule&lt;/strong>, and &lt;strong>Dashboard Widget&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-widget-holiday.jpg" alt="Edit widget screen">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>From here, you can select:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Widget UI&lt;/strong> – a coding environment that allows you to define HTML handlers (&lt;em>link&lt;/em>), expressions and more.&lt;/li>
+&lt;li>&lt;strong>Widget Code&lt;/strong> – a coding environment that allows you to define the logic and functions behind the custom widget.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are complete, click on the OK button &lt;img src="https://docs.kianda.com/images/ok.png" alt="update button"> to save the changes made. The newly created custom widget can be displayed in the view widget pane. You can use the version history button &lt;img src="https://docs.kianda.com/images/version-history-btn.jpg" alt="version history button">, edit button &lt;img src="https://docs.kianda.com/images/edit_orig.png" alt="edit button"> and delete button &lt;img src="https://docs.kianda.com/images/delete-btn.jpg" alt="delete button"> to visualise and perform any necessary changes.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>Depending on the type of newly created custom widget, they can be accessed by:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Field widget&lt;/strong> - Navigate to &lt;strong>Administration &amp;gt; Designer &amp;gt; &lt;em>Your Process&lt;/em> &amp;gt; Controls.&lt;/strong> Under &lt;strong>Custom&lt;/strong>, your field widget will be displayed and is now ready for use.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Rule widget&lt;/strong> - Navigate to &lt;strong>Administration &amp;gt; Designer &amp;gt; &lt;em>Your Process&lt;/em> &amp;gt; Add a rule.&lt;/strong> Under &lt;strong>Custom&lt;/strong>, your rule widget will be displayed and is now ready for use.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Dashboard widget&lt;/strong> - Navigate to &lt;strong>Dashboard &amp;gt; &lt;em>Your Dashboard&lt;/em> &amp;gt; Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editpage.PNG" alt="edit current page button">. From there, you click the drop-down list button and you will have access to the created custom dashboard widgets.&lt;/p>
+&lt;p>To learn more about widgets, see &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">Custom form control development&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="whats-next">What&amp;rsquo;s next&lt;/h2>
+&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Templating basics</title><link>https://docs.kianda.com/docs/low-code/templating-basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/templating-basics/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Low-code customisation options for the list widget</title><link>https://docs.kianda.com/docs/low-code/list-widget-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/list-widget-template/</guid><description>
