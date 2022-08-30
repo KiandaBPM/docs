@@ -130,7 +130,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-system-details.jpg" alt="File system detail page">&lt;/p>
 &lt;p>Choose from the edit options:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your file sytem connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your file system connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
 &lt;li>&lt;strong>Root folder path&lt;/strong> - type in manually the file path to the folder of your connector, for example C:\Documents\GreenITR. The connector will be able to access data only in this folder and folders within.&lt;/li>
 &lt;li>&lt;strong>File search pattern&lt;/strong> - this options can be used to limit the type of files for interaction, by using file extensions. For example typing in &lt;code>*.txt&lt;/code> will only output the .txt files within the folder path, it will ignore all other path endings and will not display them. To set pattern you need to type in &lt;code>*&lt;/code> followed by &lt;code>.extenstion&lt;/code> for example &lt;code>*.txt&lt;/code> , &lt;code>*.docx&lt;/code> or &lt;code>*.pdf&lt;/code>&lt;/li>
 &lt;li>&lt;strong>Search options&lt;/strong> - this only allows you to search the files of the top directory that is set in the &lt;strong>Root folder path&lt;/strong> or all other files of other directories within.
@@ -434,9 +434,52 @@
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: SAP connector</title><link>https://docs.kianda.com/docs/platform/connectors/sap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sap/</guid><description>
+&lt;p>One of the data connectors that you can connect to is &lt;strong>Salesforce&lt;/strong>. Salesforce provides customer relationship management software and applications focused on sales, customer service, marketing automation, and analytics.&lt;/p>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the Salesforce data connector, you must have an account with Salesforce which is used to obtain information for a successful connection. If you have an account with Salesforce&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>Salesforce&lt;/strong> from the list of data sources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will be automatically brought to the &lt;strong>Salesforce details&lt;/strong> page, where you can start setting up the connection.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/salesforce-details.jpg" alt="File system detail page">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Display name&lt;/strong> - type in the name for your Salesforce connector. This is used to distinguish between different data connectors on your platform.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Client Id&lt;/strong> -&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Client Secret&lt;/strong> -&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Salesforce Environment -&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Authorize -&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added File system details, you are ready to test your connection and add security. At the bottom of the &lt;strong>File system details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: SAP connector</title><link>https://docs.kianda.com/docs/platform/connectors/sap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sap/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: SharePoint connector</title><link>https://docs.kianda.com/docs/platform/connectors/sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sharepoint/</guid><description>
