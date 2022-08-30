@@ -22,7 +22,7 @@ Using this type of datasource is useful when you want Kianda to have access to y
 
    Choose from the edit options:
 
-   - **Display name** - type in the name for your file sytem connector. This is used to distinguish between different data connectors on your platform.
+   - **Display name** - type in the name for your file system connector. This is used to distinguish between different data connectors on your platform.
    - **Root folder path** - type in manually the file path to the folder of your connector, for example C:\Documents\GreenITR. The connector will be able to access data only in this folder and folders within.
    - **File search pattern** - this options can be used to limit the type of files for interaction, by using file extensions. For example typing in `*.txt` will only output the .txt files within the folder path, it will ignore all other path endings and will not display them. To set pattern you need to type in `*` followed by `.extenstion` for example `*.txt` , `*.docx` or `*.pdf`
    - **Search options** - this only allows you to search the files of the top directory that is set in the **Root folder path** or all other files of other directories within. 
