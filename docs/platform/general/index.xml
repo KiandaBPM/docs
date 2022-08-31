@@ -48,6 +48,7 @@
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about other support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/support/">Support&lt;/a>.&lt;/p>
 &lt;p>To find out about other platform features, go to &lt;a href="https://docs.kianda.com/docs/platform/">Platform&lt;/a>.&lt;/p></description></item><item><title>Docs: Quick action menu</title><link>https://docs.kianda.com/docs/platform/general/quickaction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/general/quickaction/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Quick action menu&lt;/strong> contains all the shortcuts that you need to manage your pages efficiently. The menu is found in the top right-hand corner of your Kianda workspace.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/quick-action-menu.jpg" alt="Quick action menu">&lt;/p>
 &lt;p>If you have an &lt;strong>Administrator&lt;/strong> role you will see five buttons from your workspace &lt;strong>home&lt;/strong> page, other roles will see three buttons listed below:&lt;/p>
@@ -60,7 +61,7 @@
 &lt;li>&lt;a href="#user-profile">User profile&lt;/a> &lt;img src="https://docs.kianda.com/images/userprofile.png" alt="User profile">allows &lt;strong>all users&lt;/strong> to change profile details, such as working offline or changing password.&lt;/li>
 &lt;/ul>
 &lt;p>Click on each link above to find out more about each button.&lt;/p>
-&lt;h3 id="create-a-new-page">Create a new page&lt;/h3>
+&lt;h2 id="create-a-new-page">Create a new page&lt;/h2>
 &lt;p>Administrators can create a new dashboard page that connects to a chosen process. Users can view this dashboard to monitor how processes are performing and gain business insights to improve the business.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -89,7 +90,7 @@
 &lt;p>From there you are in the main dashboard view where you can add dashboard &lt;strong>widgets&lt;/strong> to display lists or charts or edit the &lt;strong>settings&lt;/strong> for the dashboard page. To find out more about dashboards go to the &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> section of the documentation.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="edit-current-page">Edit current page&lt;/h3>
+&lt;h2 id="edit-current-page">Edit current page&lt;/h2>
 &lt;p>Administrators can edit an existing dashboard page by clicking on the dashboards button when on a selected page.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -103,7 +104,7 @@
 &lt;p>In Edit mode you can add new &lt;strong>dashboard widgets&lt;/strong>, edit &lt;strong>Settings&lt;/strong>, or &lt;strong>Delete&lt;/strong> the dashboard page. To read more about Edit mode go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="online-session-refresh">Online session refresh&lt;/h3>
+&lt;h2 id="online-session-refresh">Online session refresh&lt;/h2>
 &lt;p>You can use Kianda offline for example to view dashboards even without internet access. To synchronise dashboards with system data:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -118,12 +119,12 @@
 &lt;/li>
 &lt;/ol>
 &lt;p>&lt;strong>Note&lt;/strong>: You can switch to offline mode by clicking on your profile and slide the &lt;strong>work offline&lt;/strong> toggle to &amp;lsquo;on&amp;rsquo; see &lt;a href="#user-profile">User profile&lt;/a> below.&lt;/p>
-&lt;h3 id="user-notifications">User notifications&lt;/h3>
+&lt;h2 id="user-notifications">User notifications&lt;/h2>
 &lt;p>This icon alerts you when actions happen associated with processes, for example if a form has been assigned to you. Any new notifications will be seen as a number beside the &lt;strong>user notification&lt;/strong> icon/bell symbol.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-notification.jpg" alt="User notification">&lt;/p>
 &lt;p>You will receive a configured message indicating the title of the notification and a short piece of text explaining what has happened, for example if a process design has been published and existing process instances have been updated, or the message could be as a result of a &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/user-alert/">User alert rule&lt;/a> as seen below. In this example, the user can click on the alert and they are brought to the form that they have to complete.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-example.jpg" alt="User alert example">&lt;/p>
-&lt;h3 id="user-profile">User profile&lt;/h3>
+&lt;h2 id="user-profile">User profile&lt;/h2>
 &lt;p>The information found under User profile includes your name, email, role for example Administrator and options to update your information.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/myaccount.png" alt="My account information">&lt;/p>
 &lt;p>To update your information, you can:&lt;/p>
