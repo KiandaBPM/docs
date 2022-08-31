@@ -338,15 +338,38 @@
 &lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Scheduled tasks&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You can view current tasks scheduled via this function in the &lt;strong>Task automation&lt;/strong> main tasks view. This is a subset of all tasks, see Step 3 below.&lt;/p>
+&lt;p>You can view scheduled tasks via this function in the &lt;strong>Task automation&lt;/strong> main tasks view. The current tasks listed is a subset of all tasks, see Step 4 below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-tasks-view.jpg" alt="Scheduled tasks view">&lt;/p>
-&lt;p>In this view you can see the &lt;strong>Name&lt;/strong> of the task, the &lt;strong>Schedule&lt;/strong> for example weekly or monthly, when the task was &lt;strong>last run&lt;/strong>, when the task will &lt;strong>next run&lt;/strong>, the &lt;strong>status&lt;/strong> of the task, the name of the associated &lt;strong>process&lt;/strong> and process &lt;strong>instance&lt;/strong> where relevant, and &lt;strong>who&lt;/strong> is the administrator of the task/who has created the task.&lt;/p>
+&lt;p>In this main view you can see:&lt;/p>
+&lt;ul>
+&lt;li>the &lt;strong>Name&lt;/strong> of the task&lt;/li>
+&lt;li>the &lt;strong>Schedule&lt;/strong> for example weekly or monthly&lt;/li>
+&lt;li>when the task was &lt;strong>last run&lt;/strong>&lt;/li>
+&lt;li>when the task will &lt;strong>next run&lt;/strong>&lt;/li>
+&lt;li>the &lt;strong>status&lt;/strong> of the task such as &amp;lsquo;Complete&amp;rsquo;&lt;/li>
+&lt;li>the name of the associated &lt;strong>process&lt;/strong> and process &lt;strong>instance&lt;/strong> where relevant, and&lt;/li>
+&lt;li>&lt;strong>who&lt;/strong> is the administrator of the task/who has created the task.&lt;/li>
+&lt;/ul>
+&lt;p>The buttons beside each task are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Trigger task manually&lt;/strong> &lt;img src="https://docs.kianda.com/images/trigger-task-manually.jpg" alt="Trigger task manually"> - clicking on this button instantly creates a new process instance/record by executing the task or process. This process instance can be viewed in a list widget in a dashboard.&lt;/li>
+&lt;li>&lt;strong>Show task history&lt;/strong> &lt;img src="https://docs.kianda.com/images/show-task-history.jpg" alt="Show task history"> - when you click on this button, a dialog box opens showing a list of all the past executions of the task, listed by date and time and status, for example if there was an error or if the task completed.&lt;/li>
+&lt;li>&lt;strong>Delete task&lt;/strong> &lt;img src="https://docs.kianda.com/images/delete-task.jpg" alt="Delete task"> - to delete a task from the list, click on this button. A popup will appear asking you to confirm if you want to remove the task or not. To continue with the deletion click on &lt;strong>OK&lt;/strong>, otherwise click on &lt;strong>Cancel&lt;/strong>.&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>To see a complete list of scheduled tasks click on &lt;strong>Show All&lt;/strong> &lt;img src="https://docs.kianda.com/images/show-all.jpg" alt="Show All button">. This list will include all tasks that are running as a result of processes, for example scheduled reminders that are running as a result of rules in a process. To see the shorter list again of tasks created via this function, click on &lt;strong>Show All&lt;/strong> again.&lt;/p>
+&lt;p>Click on the name of a task to see the details of the task&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To schedule a new task, click on the &lt;strong>Schedule a task&lt;/strong> button.&lt;/p>
+&lt;p>To see a complete list of scheduled tasks click on &lt;strong>Show All&lt;/strong> &lt;img src="https://docs.kianda.com/images/show-all.jpg" alt="Show All button">. This list will include all tasks that are running as a result of processes, for example scheduled reminders that are running as a result of rules in a process. Each item listed is a process instance related to a process, for example as shown in the image below. The process instances can be viewed in a &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">list widget&lt;/a> in a dashboard.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/scheduled-tasks.jpg" alt="Scheduled tasks list">&lt;/p>
+&lt;p>To see the shorter list again of tasks created via this function, click on &lt;strong>Show All&lt;/strong> again.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="scheduling-a-task">Scheduling a task&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>To schedule a new task, click on the &lt;strong>Schedule a task&lt;/strong> button &lt;img src="https://docs.kianda.com/images/schedule-a-task.jpg" alt="Schedule a task button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Schedule a task&lt;/strong> dialog box, select a &lt;strong>Task name&lt;/strong> for the task and then a &lt;strong>schedule&lt;/strong> choosing from &lt;strong>One time&lt;/strong>, or a periodic schedule from: &lt;strong>Minutes&lt;/strong>, &lt;strong>Hourly&lt;/strong>, &lt;strong>Daily&lt;/strong>, &lt;strong>Weekly&lt;/strong>, &lt;strong>Monthly&lt;/strong> or &lt;strong>On demand&lt;/strong>.&lt;/p>
@@ -374,17 +397,24 @@
 &lt;li>
 &lt;p>&lt;strong>Monthly&lt;/strong> - enter a numeric value in the &lt;strong>Day&lt;/strong> field to set what day of the month, or choose values to set when the task should happen for example, the &lt;strong>First&lt;/strong> &lt;strong>Monday&lt;/strong> of a month, as shown in the image below. Also select a time in the &lt;strong>At&lt;/strong> field, and a numeric value in the &lt;strong>Every&lt;/strong> field.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-monthly.jpg" alt="Monthly schedule option">&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>On demand&lt;/strong> - if you choose this option then a &lt;strong>Task Webhook URL&lt;/strong> field will appear. If you click on &lt;strong>OK&lt;/strong> the URL is generated by the system. This will send a POST request to the generated URL to trigger the task on demand. If you add an optional instanceID parameter you can run the task on a specific instance.&lt;/li>
-&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>On demand&lt;/strong> - if you choose this option then a &lt;strong>Task Webhook URL&lt;/strong> field will appear. If you click on &lt;strong>OK&lt;/strong> the URL is generated by the system. This will send a POST request to the generated URL to trigger the task on demand. If you add an optional instanceID parameter you can run the task on a specific instance.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Select a process from the &lt;strong>Process design&lt;/strong> dropdown list.&lt;/p>
+&lt;p>For each time mode chosen, you can check the &lt;strong>Expire&lt;/strong> checkbox, and from there set if you want the schedule to end &lt;strong>By&lt;/strong> a particular date and time or &lt;strong>After&lt;/strong> a set number of occurrences.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/task-expiry.jpg" alt="Set task expiry">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>For &lt;strong>Process ID&lt;/strong> leave the field empty if it is a new task or enter the process ID for a given record/process instance.&lt;/p>
+&lt;p>For each time mode chosen, select a process from the &lt;strong>Process design&lt;/strong> dropdown list.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For each time mode chosen, for &lt;strong>Process ID&lt;/strong> leave the field empty if it is a new task or enter the process ID for a given record/process instance.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you have finished editing the &lt;strong>Schedule a task&lt;/strong> dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
@@ -430,7 +460,7 @@
 &lt;p>To read about other parts of the platform go to &lt;a href="https://docs.kianda.com/docs/platform/administration/">Administration&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Users &amp; Groups</title><link>https://docs.kianda.com/docs/platform/administration/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/users/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Users&lt;/strong> function is available to users with the &lt;strong>Administrator&lt;/strong> role and is found in the left-hand side pane under &lt;strong>Administration&lt;/strong>. This function allows you to manage users and groups in your Kianda workspace.&lt;/p>
+&lt;p>The &lt;strong>Users&lt;/strong> function is available to users with the &lt;strong>Administrator&lt;/strong> role and is found in the left-hand side menu under &lt;strong>Administration&lt;/strong>. This function allows you to manage users and groups in your Kianda workspace.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To access the &lt;strong>Users&lt;/strong> function:&lt;/p>
 &lt;ol>
@@ -438,7 +468,7 @@
 &lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Users&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You can view any existing users and groups in the main view pane.&lt;/p>
+&lt;p>You can view any existing users and groups that have been created in the main view pane.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-main-view.jpg" alt="Users main view">&lt;/p>
 &lt;p>The two main areas are &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong>. These two areas are explained in more detail below.&lt;/p>
 &lt;/li>
