@@ -7,7 +7,7 @@ typora-root-url: ..\..\..\..\static
 
 ## Introduction
 
-The **Users** function is available to users with the **Administrator** role and is found in the left-hand side pane under **Administration**. This function allows you to manage users and groups in your Kianda workspace.
+The **Users** function is available to users with the **Administrator** role and is found in the left-hand side menu under **Administration**. This function allows you to manage users and groups in your Kianda workspace.
 
 
 ## How to get started
@@ -16,7 +16,7 @@ To access the **Users** function:
 
 1. Click on **Administration** in the left-hand side pane and then click on **Users**. 
 
-2. You can view any existing users and groups in the main view pane. 
+2. You can view any existing users and groups that have been created in the main view pane. 
 
    ![Users main view](/images/user-main-view.jpg)
 
