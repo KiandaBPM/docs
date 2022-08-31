@@ -4,7 +4,24 @@ weight: 2
 typora-root-url: ..\..\..\..\static
 ---
 
-Creating your first **process** or application in Kianda starts with designing your first **form**. Forms can connect to any number of **data sources** or connectors at the same time. The form might be a simple contact form or something else more complex, and you can add more forms like "Follow-up form" or even a "Closure form".
+## Introduction
+
+Creating your first **process** or application in Kianda starts with designing your first **form**. Users with the role **Administrator** or **Design business process** can create **forms** that can connect to any number of **data sources** at the same time. The form might be a simple contact form or something else more complex, and you can add more forms like "Follow-up form" or even a "Closure form". To the form you can add predefined **controls** or fields, and **business rules** to define how the processes can behave. 
+
+<img src="/images/process-elements.jpg" alt="process-forms-controls-rules" style="zoom:70%;" />
+
+These process elements, **processes**, **forms**, **controls** and **rules** are explained in the sections below:
+
+- [Creating your first process](#creating-your-first-process)
+- [Forms](forms)
+- [Controls or form fields](#form-fields)
+- [Rules](#rules)
+
+Forms, fields and rules are created and edited using Kianda [Designer](#kianda-designer-introduction) explained in further on this page.
+
+
+
+## How to get started ##
 
 Although Kianda aims to be intuitive and easy to get started, it is never difficult to over-engineer. So at Kianda we always recommend doing some simple planning before you design your first form. It could be something as simple as a quick flow chart or a spreadsheet where you can quickly log the key components, fields or rules that are needed in the process.
 
@@ -22,11 +39,12 @@ In general there are three key steps to build a process in an agile manner:
     </source>
 </video>
 
+
 ## Creating your first process ##
 
 To help you plan your process, go to [Plan your process](/docs/getting-started/create-first-process/plan-your-process/) to get started. When you have planned what you want to do, it couldn't be simpler to start creating your new process by following the steps below:
 
-1. Go to the left- hand **side menu** and click on **Administration** > **Designer**.
+1. Using your **Administrator** or **Design business process** role, go to the left- hand **side menu** and click on **Administration** > **Designer**.
 
 2. You are now in the main process view. From here, you can click on **Import** or **Export** to import or export processes once created. There is also an option to use Kianda's predefined processes available in the **App Store.** 
 
@@ -62,13 +80,13 @@ To help you plan your process, go to [Plan your process](/docs/getting-started/c
 
 5. Click on **OK** ![OK button](/images/ok.png) when complete. 
 
-6. You are now in the Process **Design** page, that is Kianda Designer. From here, you can add forms.
+6. You are now in the Process **Design** page, that is [Kianda Designer](#kianda-designer-introduction). From here, you can add forms, fields and rules, change [process settings](#process-settings) and properties and manage your process design.
 
    
 
 ## Kianda Designer introduction
 
-Kianda process designer provides an intuitive interface where you can quickly start building forms for any use case.
+Kianda Process **Designer** provides an intuitive interface where you can quickly start building forms for any use case.
 
 The key components of the form designer are:
 
@@ -82,6 +100,8 @@ The key components of the form designer are:
 
 The following headings highlight the key features of Designer that allow you to build slick, progressive, responsive and customised forms and processes. 
 
+
+
 ## Forms
 
 Forms are an important component of any process. They might be used as stages of a process and could be made active individually or at the same time known as **parallel** forms.
@@ -92,7 +112,7 @@ The key rules related to designing forms for user interaction are:
 2. When a form is created, as a designer you can configure form owners. **Only form owners can edit** a given form in a process instance by default. Any other user with access to view the form will see it in read-only mode.
 3. Processes that have several steps use the concept of **current form**, where only the current form is **editable** in a process instance. Forms become the current form as the process executes sequentially. Rules like [Go to form](/docs/platform/rules/workflow/go-to-form/) can be used to make forms the current form. Other forms can be configured to **activate with** the current form. This means it is also possible to edit these forms at the same point in process execution and togther the forms form a form group.
 
-The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal [business rules](business-rules.md) such as [Assign form](/docs/platform/rules/workflow/assign-form/), [Go to form](/docs/platform/rules/workflow/go-to-form/) and [Submit form](/docs/platform/rules/form-actions/submit-form/) to dynamically control the ability for end-users to edit a particular form or a section of a form.
+The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal [business rules](/docs/platform/rules/) such as [Assign form](/docs/platform/rules/workflow/assign-form/), [Go to form](/docs/platform/rules/workflow/go-to-form/) and [Submit form](/docs/platform/rules/form-actions/submit-form/) to dynamically control the ability for end-users to edit a particular form or a section of a form.
 
 <video width="100%" style="width:100%" controls>
     <source src="/videos/How to add new form 2.mp4">
@@ -121,7 +141,7 @@ As you create forms, there are some important features to note that will help yo
 - [Form fields](#form-fields)
 - [Responsive form layout](#responsive-form-layout)
 - [Input validation](#input-validation)
-- [Process settings and anonymous forms](#process-settings-and-anonymous-forms)
+- [Process settings and anonymous forms](#process-settings)
 - [Cloning](#cloning)
 - [Custom fields](#custom-fields)
 - [Advanced techniques](#advanced-techniques)
@@ -134,21 +154,36 @@ Click on the links above or browse through the following headings to read more.
 
 Kianda form usability is brought to life with the help of the various input fields or controls that are specifically adapted to work in mobile, tablet or desktop modes. Fields include textbox, date picker, numeric input, file upload and table, to name a few. Kianda offers a flexible array of controls that can be adjusted to work with a myriad of scenarios.
 
-Each field comes with its own set of settings like autofill for textbox and currency format for numeric input. The following are some of the common settings of input fields:
+***Example of a form in a process with a text box field***
+![Textbox example](/images/textbox-example.jpg)
 
-- **Title** - every field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user.
+Each field comes with its own set of:
 
-- **Required** - this Boolean property allows a form designer to make a field mandatory or not.
+a) **settings** like autofill for textbox and currency format for numeric input 
 
-- **Visible** - Displays the field in the form or not.
+b) **properties** that determine how the field will display. 
 
-- **Layout** - Defines both desktop or mobile layout.
+The following are some of the common **properties** of input fields. Field properties **appear when the field is selected** within a form, as shown in the image above for the text box field. The properties appear on the right:
 
-  ![Textbox example](/images/textbox-example.jpg)
+- **Title** - every field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user
 
-Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of [development](/docs/platform/administration/developer/) skills you can always create your custom field widget.
+- **Show title** - check this property to show the title of a field in a form
 
-### Categories of fields
+- **Required** - this Boolean property allows a form designer to make a field mandatory or not
+
+- **Enabled** - check this property to make the field appear in a form for a user to use
+
+- **Visible** - displays the field in the form or not depending on checking the checkbox
+
+- **Layout** - defines both desktop or mobile layout by selecting a size from the blue bar presented, see [Responsive form layout](#responsive-form-layout) for more details.
+
+In addition to the field properties, each field has it's own settings that you can change simply by selecting the field and clicking on the **Edit/Pen** button ![Edit/pen button](/images/penicon.png). This will open an **Edit field** dialog box where you can change settings.
+
+In total there are 16 predefined field widgets, see [Categories of fields](#categories-of-fields) below. In case none of these satisfies your specific needs and if you have some level of [development](/docs/platform/administration/developer/) skills you can always create your custom field widget.
+
+
+
+## Categories of fields
 
 Currently the default fields fall into four main categories of fields:
 
@@ -157,7 +192,7 @@ Currently the default fields fall into four main categories of fields:
 3. **Action** - Action fields are fields that allow user interface actions like buttons, links or even signature components.
 4. **Custom**  - Under custom fields, you will find any custom-developed fields available under your developer section.
 
-The following headings showcase examples of fields and how they can be used to play an important role when building a modern user interface while allowing you to achieve the pixel perfect layout you want. The examples shown are [Modal dialogs](#modal-dialogs) and [Cascading dropdown lists](#cascading-dropdown-lists)
+The following headings showcase examples of fields and how they can be used to play an important role when building a modern user interface while allowing you to achieve the pixel perfect layout you want. The examples shown are [Modal dialogs](#modal-dialogs) and [Cascading dropdown lists](#cascading-dropdown-lists) in the following sections.
 
 ### Model dialogs
 
@@ -173,13 +208,13 @@ Typically dialogs are used for to create alerts for example a user confirmation 
     </source>
 </video>
 
-In the example above, we use a modal dialog to display a simple *warning to the user*. The following are the steps involved to create this:
+In the example above, we use a modal dialog to display a simple **warning to the user**. The following are the steps involved to create this:
 
 1. Choose a process, or create a new process, and select a form in that process to add fields to. In the left-hand pane of Kianda Designer, click on **Controls** > **Layout** > **Dialog**.
 
 2. Click on the **dialog component** to edit the dialog, for example give the dialog a **Title** and then **insert** other fields within it. You can add any field to your dialog, for example add Richtext by clicking on **Controls** > **Layout** > **Richtext**.
 
-3. Give your Richtext field a **title**, and add a **message** in the Richtext body text and use other configurations as needed. Click on **OK** when complete or click on **Close** at any time to exit the dialog box.
+3. Give your Richtext field a **title**, and add a **message** in the Richtext body text and change other settings as needed. Click on **OK** when complete or click on **Close** at any time to exit the dialog box.
 
 4. To preview how your dialog box will be displayed, you can use the **Preview** button, on the dialog component.
 
@@ -187,7 +222,7 @@ In the example above, we use a modal dialog to display a simple *warning to the 
 
 
 
-### Cascading dropdown
+### Cascading dropdown lists
 
 Using the **List field** provides the opportunity to define an unlimited level cascading dropdown hierarchy very easily. For example in the form below, if a user chooses Denmark as a country from the drop-down list, then Danish cities are displayed, while if another country is chosen, the other cities for that country are displayed. 
 
@@ -208,7 +243,11 @@ In the example above, the condition used is that a filter is applied if data fro
 </video>
 
 
-## Responsive form layout
+## Easy to customise form features
+
+Remember with Kianda **Designer** you don't need any coding experience, so anyone with **Administrator** or **Design business process** access can use Kianda's easy to use interface to add fields to forms and customise forms to create the desired effects for an optimum user experience. The Kianda interface makes it easy to create sophisticated forms that follow modern web design principles, all at the click of a button. Examples of ways to customise forms are shown in the following sections, [Responsive form layout](#responsive-form-layout) and [Input validation](#input-validation) . 
+
+### Responsive form layout
 
 When designing forms, its easy to change the layout of fields to make the field display the way you want. Form fields are made with a mobile-first approach giving you a 'design once and deploy everywhere' opportunity. 
 
@@ -220,7 +259,7 @@ Clicking on **Collapse or expand responsive layout** button ![Collapse responsiv
 
 Click on the blue bar for both **Layout** and **Mobile Layout** to adjust the size of the field. This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS  framework that allows designing web interfaces with a mobile-first approach.
 
-## Input validation
+### Input validation
 
 As with editing the layout of fields, it is easy to validate input, making fields mandatory for users to fill in or not. Go to **Field properties** in the right-hand pane of Kianda Designer and click on the **Required** option. If already ticked, uncheck this to make the field not required.
 
@@ -230,15 +269,23 @@ Simply enable the checking the **Required** property in this way will automatica
 
 Another way of validating input is to use the **validate input rule** this allows greater flexibility in terms of when or what to validate, see [Validate input](/docs/platform/rules/form-actions/validate-input/) for more information.
 
-## Process settings and anonymous forms
+In addition to changing field properties, you can configure [settings](#process-settings) to make processes perform the way you want.
 
-In addition to **changing field properties** shown in the [previous section](#input-validation), you can edit process **Settings**, also found in the right-hand side pane of Kianda Designer. 
+## Process settings
+
+In addition to **changing field properties** like [Input validation](#input-validation), you can edit process **Settings**, also found in the right-hand side pane of Kianda **Designer**. 
 
 ![Process settings](/images/process-settings.jpg)
 
 There are many options within **Settings** to manage for example process security and set process instance settings. Enabling anonymous sharing of forms is another option within Settings. 
 
 ![Process settings](/images/process-settings-anonymous.jpg)
+
+
+
+[Enable anonymous sharing](#anonymous-forms) is explained in more detail below, as an example of one particular **process setting**. **Form settings** and **control settings** are configurable by clicking on the relevant form or field within the process, so that the **Edit/Pen** button ![Edit/Pen button](/images/penicon.png). Form settings are shown in the [Form basics](/docs/platform/application-designer/forms/) page, and go to [Controls](/docs/platform/controls/) to navigate to individual control pages to find out more about each control type settings.
+
+### Anonymous forms ###
 
 **Anonymous forms** are a great way of **allowing people outside of your organisation** to interact with your processes. It could be something as simple as a feedback form or a GDPR data request but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission, or person assigned to manage the form.
 
@@ -270,12 +317,6 @@ The following are some of the key options of the anonymous link rule:
 - Message to display on submission.
 
 **Important**: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically expire the previous of the same type if a link existed.
-
-
-
-
-
-
 
 ## Cloning
 
