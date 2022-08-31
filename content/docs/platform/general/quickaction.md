@@ -3,6 +3,7 @@ title: "Quick action menu"
 typora-root-url: ..\..\..\..\static
 ---
 
+## Introduction ##
 The **Quick action menu** contains all the shortcuts that you need to manage your pages efficiently. The menu is found in the top right-hand corner of your Kianda workspace. 
 
 ![Quick action menu](/images/quick-action-menu.jpg)
@@ -21,7 +22,7 @@ Click on each link above to find out more about each button.
 
 
 
-### Create a new page ##
+## Create a new page ##
 Administrators can create a new dashboard page that connects to a chosen process. Users can view this dashboard to monitor how processes are performing and gain business insights to improve the business. 
 1. Click on the **Create new page** ![Create new page button](/images/new-page-button.jpg) button.
 
@@ -45,7 +46,7 @@ Administrators can create a new dashboard page that connects to a chosen process
 
  
 
-### Edit current page ##
+## Edit current page ##
 
 Administrators can edit an existing dashboard page by clicking on the dashboards button when on a selected page.
 
@@ -60,7 +61,7 @@ Administrators can edit an existing dashboard page by clicking on the dashboards
 
 
 
-### Online session refresh ##
+## Online session refresh ##
 
 You can use Kianda offline for example to view dashboards even without internet access. To synchronise dashboards with system data:
 1. Click on the **Online session** button ![Online session refresh button](/images/refresh.png) to synchronise data. 
@@ -74,7 +75,7 @@ You can use Kianda offline for example to view dashboards even without internet 
 
    
 
-### User notifications ##
+## User notifications ##
 
 This icon alerts you when actions happen associated with processes, for example if a form has been assigned to you. Any new notifications will be seen as a number beside the **user notification** icon/bell symbol. 
 
@@ -84,7 +85,7 @@ You will receive a configured message indicating the title of the notification a
 
 ![User alert example](/images/user-alert-example.jpg)
 
-### User profile ##
+## User profile ##
 
 The information found under User profile includes your name, email, role for example Administrator and options to update your information.
 

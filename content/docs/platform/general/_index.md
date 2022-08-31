@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\static
 
 When you login to Kianda for the first time, you are presented with an easy-to-use interface, your Kianda **workspace**, that contains all the functions you need for your role.
 
-The main navigation is driven from the left-hand **side menu**. Here you will find shared **dashboards** linked to processes. Depending on your role you may have **Administration** functions like **Designer** that allows you to design processes, or **Invite partner** that allows you to manage B2B shared processes and dashboards for example with third party contractors. 
+The main navigation is driven from the left-hand **side menu**. Here you will find shared **dashboards** linked to processes. **Depending on your role** you may have **Administration** functions like **Designer** that allows you to design processes, or **Invite partner** that allows you to manage B2B shared processes and dashboards for example with third party contractors. 
 
 ## How to get started ##
 

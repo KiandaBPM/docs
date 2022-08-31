@@ -6,7 +6,12 @@ typora-root-url: ..\..\..\static
 
 ## What is Kianda? ##
 
-Kianda is the most flexible no-code / low-code platform that you can use to create digital business processes. You can use the easy to use Kianda **Designer** to create forms to look and work the way you want. Choose from 18 predefined field types and 60 rules to create your forms within your processes. And if you don't like those, use the no-code part of the platform to create customised field and rule widgets. Then monitor process execution in a dashboard using seven widget types, from lists to chart, or create your own dashboard widget using Kianda **Developer**. 
+Kianda is the most flexible no-code / low-code platform that you can use to create automated digital business processes. Kianda can be used in two ways:
+
+- As a **Designer or Administrator** you can use the platform to **design digital applications** to drive your business. Prototypes can be built quickly and easily without the need for coding experience using Kianda **Designer** to create processes and forms to look and work the way you want.  Choose from 16 predefined field types and 60 rules to create your forms within your processes. And if you don't like those and have some coding experience, use the no-code part of the platform Kianda **Developer** to create customised field, rule and dashboard widgets. 
+- As a **platform user**, use the platform to **input data**, or gather and **use data from external datasources** like Salesforce or SAP, and then **monitor process execution in a dashboard** using seven widget types, from lists to chart, to get an at-a-glance overview of efficiencies or bottlenecks in your organisation. Forms and processes can also be shared with partner organisations or sent as anonymous links for third parties to complete.
+
+
 
 ## How does Kianda work?
 

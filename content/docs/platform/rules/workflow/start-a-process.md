@@ -36,7 +36,7 @@ To dynamically set start a new process:
 5. Under **Action** create one or more actions for the rule by filling out the following:
 
    - **Process source** - choose from the radio buttons:
-     - **Own process** 
+     - **Own process** - choose from a list of processes 
      - **Partner process** 
    
    - **Select a process design** - choose a target process design from the drop-down list
