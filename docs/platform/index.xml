@@ -24,7 +24,18 @@
 &lt;p>Go to &lt;a href="https://docs.kianda.com/docs/getting-started/logging-in/personalise-workspace/">Personalise your workspace&lt;/a> to find out how to change the look and feel of your workspace and to set regional settings.&lt;/p>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about other ways to get help and support, click on the links below:&lt;/p></description></item><item><title>Docs: Application designer</title><link>https://docs.kianda.com/docs/platform/application-designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/</guid><description>
-&lt;p>Creating your first &lt;strong>process&lt;/strong> or application in Kianda starts with designing your first &lt;strong>form&lt;/strong>. Forms can connect to any number of &lt;strong>data sources&lt;/strong> or connectors at the same time. The form might be a simple contact form or something else more complex, and you can add more forms like &amp;ldquo;Follow-up form&amp;rdquo; or even a &amp;ldquo;Closure form&amp;rdquo;.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Creating your first &lt;strong>process&lt;/strong> or application in Kianda starts with designing your first &lt;strong>form&lt;/strong>. Users with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Design business process&lt;/strong> can create &lt;strong>forms&lt;/strong> that can connect to any number of &lt;strong>data sources&lt;/strong> at the same time. The form might be a simple contact form or something else more complex, and you can add more forms like &amp;ldquo;Follow-up form&amp;rdquo; or even a &amp;ldquo;Closure form&amp;rdquo;. To the form you can add predefined &lt;strong>controls&lt;/strong> or fields, and &lt;strong>business rules&lt;/strong> to define how the processes can behave.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/process-elements.jpg" alt="process-forms-controls-rules" style="zoom:70%;" />
+&lt;p>These process elements, &lt;strong>processes&lt;/strong>, &lt;strong>forms&lt;/strong>, &lt;strong>controls&lt;/strong> and &lt;strong>rules&lt;/strong> are explained in the sections below:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="#creating-your-first-process">Creating your first process&lt;/a>&lt;/li>
+&lt;li>&lt;a href="forms">Forms&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#form-fields">Controls or form fields&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#rules">Rules&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Forms, fields and rules are created and edited using Kianda &lt;a href="#kianda-designer-introduction">Designer&lt;/a> explained in further on this page.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>Although Kianda aims to be intuitive and easy to get started, it is never difficult to over-engineer. So at Kianda we always recommend doing some simple planning before you design your first form. It could be something as simple as a quick flow chart or a spreadsheet where you can quickly log the key components, fields or rules that are needed in the process.&lt;/p>
 &lt;p>In general there are three key steps to build a process in an agile manner:&lt;/p>
 &lt;ol>
@@ -42,7 +53,7 @@ Your browser does not support the video tag.
 &lt;p>To help you plan your process, go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">Plan your process&lt;/a> to get started. When you have planned what you want to do, it couldn&amp;rsquo;t be simpler to start creating your new process by following the steps below:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Go to the left- hand &lt;strong>side menu&lt;/strong> and click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong>.&lt;/p>
+&lt;p>Using your &lt;strong>Administrator&lt;/strong> or &lt;strong>Design business process&lt;/strong> role, go to the left- hand &lt;strong>side menu&lt;/strong> and click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>You are now in the main process view. From here, you can click on &lt;strong>Import&lt;/strong> or &lt;strong>Export&lt;/strong> to import or export processes once created. There is also an option to use Kianda&amp;rsquo;s predefined processes available in the &lt;strong>App Store.&lt;/strong>&lt;/p>
@@ -82,11 +93,11 @@ Your browser does not support the video tag.
 &lt;p>Click on &lt;strong>OK&lt;/strong> &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when complete.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You are now in the Process &lt;strong>Design&lt;/strong> page, that is Kianda Designer. From here, you can add forms.&lt;/p>
+&lt;p>You are now in the Process &lt;strong>Design&lt;/strong> page, that is &lt;a href="#kianda-designer-introduction">Kianda Designer&lt;/a>. From here, you can add forms, fields and rules, change &lt;a href="#process-settings">process settings&lt;/a> and properties and manage your process design.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="kianda-designer-introduction">Kianda Designer introduction&lt;/h2>
-&lt;p>Kianda process designer provides an intuitive interface where you can quickly start building forms for any use case.&lt;/p>
+&lt;p>Kianda Process &lt;strong>Designer&lt;/strong> provides an intuitive interface where you can quickly start building forms for any use case.&lt;/p>
 &lt;p>The key components of the form designer are:&lt;/p>
 &lt;ol>
 &lt;li>Left side panel containing both &lt;strong>controls&lt;/strong> and &lt;strong>rules&lt;/strong> that can be added to forms.&lt;/li>
@@ -104,7 +115,7 @@ Your browser does not support the video tag.
 &lt;li>When a form is created, as a designer you can configure form owners. &lt;strong>Only form owners can edit&lt;/strong> a given form in a process instance by default. Any other user with access to view the form will see it in read-only mode.&lt;/li>
 &lt;li>Processes that have several steps use the concept of &lt;strong>current form&lt;/strong>, where only the current form is &lt;strong>editable&lt;/strong> in a process instance. Forms become the current form as the process executes sequentially. Rules like &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/">Go to form&lt;/a> can be used to make forms the current form. Other forms can be configured to &lt;strong>activate with&lt;/strong> the current form. This means it is also possible to edit these forms at the same point in process execution and togther the forms form a form group.&lt;/li>
 &lt;/ol>
-&lt;p>The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal &lt;a href="business-rules.md">business rules&lt;/a> such as &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/">Go to form&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/">Submit form&lt;/a> to dynamically control the ability for end-users to edit a particular form or a section of a form.&lt;/p>
+&lt;p>The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal &lt;a href="https://docs.kianda.com/docs/platform/rules/">business rules&lt;/a> such as &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/">Go to form&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/submit-form/">Submit form&lt;/a> to dynamically control the ability for end-users to edit a particular form or a section of a form.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/How to add new form 2.mp4">
 Your browser does not support the video tag.
@@ -134,7 +145,7 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="#form-fields">Form fields&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#responsive-form-layout">Responsive form layout&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#input-validation">Input validation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#process-settings-and-anonymous-forms">Process settings and anonymous forms&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#process-settings">Process settings and anonymous forms&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#cloning">Cloning&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#custom-fields">Custom fields&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#advanced-techniques">Advanced techniques&lt;/a>&lt;/li>
@@ -142,24 +153,35 @@ Your browser does not support the video tag.
 &lt;p>Click on the links above or browse through the following headings to read more.&lt;/p>
 &lt;h2 id="form-fields">Form fields&lt;/h2>
 &lt;p>Kianda form usability is brought to life with the help of the various input fields or controls that are specifically adapted to work in mobile, tablet or desktop modes. Fields include textbox, date picker, numeric input, file upload and table, to name a few. Kianda offers a flexible array of controls that can be adjusted to work with a myriad of scenarios.&lt;/p>
-&lt;p>Each field comes with its own set of settings like autofill for textbox and currency format for numeric input. The following are some of the common settings of input fields:&lt;/p>
+&lt;p>&lt;em>&lt;strong>Example of a form in a process with a text box field&lt;/strong>&lt;/em>
+&lt;img src="https://docs.kianda.com/images/textbox-example.jpg" alt="Textbox example">&lt;/p>
+&lt;p>Each field comes with its own set of:&lt;/p>
+&lt;p>a) &lt;strong>settings&lt;/strong> like autofill for textbox and currency format for numeric input&lt;/p>
+&lt;p>b) &lt;strong>properties&lt;/strong> that determine how the field will display.&lt;/p>
+&lt;p>The following are some of the common &lt;strong>properties&lt;/strong> of input fields. Field properties &lt;strong>appear when the field is selected&lt;/strong> within a form, as shown in the image above for the text box field. The properties appear on the right:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - every field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user.&lt;/p>
+&lt;p>&lt;strong>Title&lt;/strong> - every field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Required&lt;/strong> - this Boolean property allows a form designer to make a field mandatory or not.&lt;/p>
+&lt;p>&lt;strong>Show title&lt;/strong> - check this property to show the title of a field in a form&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Visible&lt;/strong> - Displays the field in the form or not.&lt;/p>
+&lt;p>&lt;strong>Required&lt;/strong> - this Boolean property allows a form designer to make a field mandatory or not&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Layout&lt;/strong> - Defines both desktop or mobile layout.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-example.jpg" alt="Textbox example">&lt;/p>
+&lt;p>&lt;strong>Enabled&lt;/strong> - check this property to make the field appear in a form for a user to use&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Visible&lt;/strong> - displays the field in the form or not depending on checking the checkbox&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout&lt;/strong> - defines both desktop or mobile layout by selecting a size from the blue bar presented, see &lt;a href="#responsive-form-layout">Responsive form layout&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>Kianda comes with several pre-defined field widgets. In case none of these satisfies your specific needs and if you have some level of &lt;a href="https://docs.kianda.com/docs/platform/administration/developer/">development&lt;/a> skills you can always create your custom field widget.&lt;/p>
-&lt;h3 id="categories-of-fields">Categories of fields&lt;/h3>
+&lt;p>In addition to the field properties, each field has it&amp;rsquo;s own settings that you can change simply by selecting the field and clicking on the &lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit/pen button">. This will open an &lt;strong>Edit field&lt;/strong> dialog box where you can change settings.&lt;/p>
+&lt;p>In total there are 16 predefined field widgets, see &lt;a href="#categories-of-fields">Categories of fields&lt;/a> below. In case none of these satisfies your specific needs and if you have some level of &lt;a href="https://docs.kianda.com/docs/platform/administration/developer/">development&lt;/a> skills you can always create your custom field widget.&lt;/p>
+&lt;h2 id="categories-of-fields">Categories of fields&lt;/h2>
 &lt;p>Currently the default fields fall into four main categories of fields:&lt;/p>
 &lt;ol>
 &lt;li>&lt;strong>Input&lt;/strong> - Input fields include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.&lt;/li>
@@ -167,7 +189,7 @@ Your browser does not support the video tag.
 &lt;li>&lt;strong>Action&lt;/strong> - Action fields are fields that allow user interface actions like buttons, links or even signature components.&lt;/li>
 &lt;li>&lt;strong>Custom&lt;/strong> - Under custom fields, you will find any custom-developed fields available under your developer section.&lt;/li>
 &lt;/ol>
-&lt;p>The following headings showcase examples of fields and how they can be used to play an important role when building a modern user interface while allowing you to achieve the pixel perfect layout you want. The examples shown are &lt;a href="#modal-dialogs">Modal dialogs&lt;/a> and &lt;a href="#cascading-dropdown-lists">Cascading dropdown lists&lt;/a>&lt;/p>
+&lt;p>The following headings showcase examples of fields and how they can be used to play an important role when building a modern user interface while allowing you to achieve the pixel perfect layout you want. The examples shown are &lt;a href="#modal-dialogs">Modal dialogs&lt;/a> and &lt;a href="#cascading-dropdown-lists">Cascading dropdown lists&lt;/a> in the following sections.&lt;/p>
 &lt;h3 id="model-dialogs">Model dialogs&lt;/h3>
 &lt;p>Model dialogs are a special form of &lt;strong>layout&lt;/strong> fields. It allows a form designer to define an interface with the key intention of grabbing users&amp;rsquo; attention to something important.&lt;/p>
 &lt;p>Typically dialogs are used for to create alerts for example a user confirmation or to help users make a final decision in a process.&lt;/p>
@@ -177,7 +199,7 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-&lt;p>In the example above, we use a modal dialog to display a simple &lt;em>warning to the user&lt;/em>. The following are the steps involved to create this:&lt;/p>
+&lt;p>In the example above, we use a modal dialog to display a simple &lt;strong>warning to the user&lt;/strong>. The following are the steps involved to create this:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Choose a process, or create a new process, and select a form in that process to add fields to. In the left-hand pane of Kianda Designer, click on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Layout&lt;/strong> &amp;gt; &lt;strong>Dialog&lt;/strong>.&lt;/p>
@@ -186,14 +208,14 @@ Your browser does not support the video tag.
 &lt;p>Click on the &lt;strong>dialog component&lt;/strong> to edit the dialog, for example give the dialog a &lt;strong>Title&lt;/strong> and then &lt;strong>insert&lt;/strong> other fields within it. You can add any field to your dialog, for example add Richtext by clicking on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Layout&lt;/strong> &amp;gt; &lt;strong>Richtext&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Give your Richtext field a &lt;strong>title&lt;/strong>, and add a &lt;strong>message&lt;/strong> in the Richtext body text and use other configurations as needed. Click on &lt;strong>OK&lt;/strong> when complete or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;p>Give your Richtext field a &lt;strong>title&lt;/strong>, and add a &lt;strong>message&lt;/strong> in the Richtext body text and change other settings as needed. Click on &lt;strong>OK&lt;/strong> when complete or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To preview how your dialog box will be displayed, you can use the &lt;strong>Preview&lt;/strong> button, on the dialog component.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/preview-dialog.jpg" alt="Preview dialog">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="cascading-dropdown">Cascading dropdown&lt;/h3>
+&lt;h3 id="cascading-dropdown-lists">Cascading dropdown lists&lt;/h3>
 &lt;p>Using the &lt;strong>List field&lt;/strong> provides the opportunity to define an unlimited level cascading dropdown hierarchy very easily. For example in the form below, if a user chooses Denmark as a country from the drop-down list, then Danish cities are displayed, while if another country is chosen, the other cities for that country are displayed.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dropdown-cascading-lists.jpg" alt="Dropdown cascading lists">&lt;/p>
 &lt;p>To achieve the effect you can connect your list to a data source for example a SharePoint list or table, then use the list data source &lt;strong>conditions&lt;/strong> options to filter content based on a parent list.&lt;/p>
@@ -205,22 +227,27 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-&lt;h2 id="responsive-form-layout">Responsive form layout&lt;/h2>
+&lt;h2 id="easy-to-customise-form-features">Easy to customise form features&lt;/h2>
+&lt;p>Remember with Kianda &lt;strong>Designer&lt;/strong> you don&amp;rsquo;t need any coding experience, so anyone with &lt;strong>Administrator&lt;/strong> or &lt;strong>Design business process&lt;/strong> access can use Kianda&amp;rsquo;s easy to use interface to add fields to forms and customise forms to create the desired effects for an optimum user experience. The Kianda interface makes it easy to create sophisticated forms that follow modern web design principles, all at the click of a button. Examples of ways to customise forms are shown in the following sections, &lt;a href="#responsive-form-layout">Responsive form layout&lt;/a> and &lt;a href="#input-validation">Input validation&lt;/a> .&lt;/p>
+&lt;h3 id="responsive-form-layout">Responsive form layout&lt;/h3>
 &lt;p>When designing forms, its easy to change the layout of fields to make the field display the way you want. Form fields are made with a mobile-first approach giving you a &amp;lsquo;design once and deploy everywhere&amp;rsquo; opportunity.&lt;/p>
 &lt;p>When you select a field, you can go to &lt;strong>Field properties&lt;/strong> in the right-hand pane of Kianda Designer and click on the &lt;strong>Layout&lt;/strong> option.&lt;/p>
 &lt;p>Clicking on &lt;strong>Collapse or expand responsive layout&lt;/strong> button &lt;img src="https://docs.kianda.com/images/collapse-responsive-button.jpg" alt="Collapse responsive layout button"> uncovers the layout mode for desktop and mobile.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/layout-mode.png" alt="Layout mode">&lt;/p>
 &lt;p>Click on the blue bar for both &lt;strong>Layout&lt;/strong> and &lt;strong>Mobile Layout&lt;/strong> to adjust the size of the field. This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS framework that allows designing web interfaces with a mobile-first approach.&lt;/p>
-&lt;h2 id="input-validation">Input validation&lt;/h2>
+&lt;h3 id="input-validation">Input validation&lt;/h3>
 &lt;p>As with editing the layout of fields, it is easy to validate input, making fields mandatory for users to fill in or not. Go to &lt;strong>Field properties&lt;/strong> in the right-hand pane of Kianda Designer and click on the &lt;strong>Required&lt;/strong> option. If already ticked, uncheck this to make the field not required.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/field-properties-example.jpg" alt="Field properties for the field &amp;amp;lsquo;City&amp;amp;rsquo;">&lt;/p>
 &lt;p>Simply enable the checking the &lt;strong>Required&lt;/strong> property in this way will automatically prevent users from submitting forms with an empty field. The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.&lt;/p>
 &lt;p>Another way of validating input is to use the &lt;strong>validate input rule&lt;/strong> this allows greater flexibility in terms of when or what to validate, see &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/">Validate input&lt;/a> for more information.&lt;/p>
-&lt;h2 id="process-settings-and-anonymous-forms">Process settings and anonymous forms&lt;/h2>
-&lt;p>In addition to &lt;strong>changing field properties&lt;/strong> shown in the &lt;a href="#input-validation">previous section&lt;/a>, you can edit process &lt;strong>Settings&lt;/strong>, also found in the right-hand side pane of Kianda Designer.&lt;/p>
+&lt;p>In addition to changing field properties, you can configure &lt;a href="#process-settings">settings&lt;/a> to make processes perform the way you want.&lt;/p>
+&lt;h2 id="process-settings">Process settings&lt;/h2>
+&lt;p>In addition to &lt;strong>changing field properties&lt;/strong> like &lt;a href="#input-validation">Input validation&lt;/a>, you can edit process &lt;strong>Settings&lt;/strong>, also found in the right-hand side pane of Kianda &lt;strong>Designer&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-settings.jpg" alt="Process settings">&lt;/p>
 &lt;p>There are many options within &lt;strong>Settings&lt;/strong> to manage for example process security and set process instance settings. Enabling anonymous sharing of forms is another option within Settings.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-settings-anonymous.jpg" alt="Process settings">&lt;/p>
+&lt;p>&lt;a href="#anonymous-forms">Enable anonymous sharing&lt;/a> is explained in more detail below, as an example of one particular &lt;strong>process setting&lt;/strong>. &lt;strong>Form settings&lt;/strong> and &lt;strong>control settings&lt;/strong> are configurable by clicking on the relevant form or field within the process, so that the &lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit/Pen button">. Form settings are shown in the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Form basics&lt;/a> page, and go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a> to navigate to individual control pages to find out more about each control type settings.&lt;/p>
+&lt;h3 id="anonymous-forms">Anonymous forms&lt;/h3>
 &lt;p>&lt;strong>Anonymous forms&lt;/strong> are a great way of &lt;strong>allowing people outside of your organisation&lt;/strong> to interact with your processes. It could be something as simple as a feedback form or a GDPR data request but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission, or person assigned to manage the form.&lt;/p>
 &lt;p>Anonymous forms can be embedded in iframes and safely displayed within other web-based applications. In Kianda there are effectively two types of anonymous forms:&lt;/p>
 &lt;ul>
