@@ -32,36 +32,36 @@ If you are an experienced developer with an **Administrator** or **Developer** r
 
 2. Under **Edit widget**, you must fill out the following: 
 
-   * **Title** – The name of your new custom widget
+   * **Title** – the name of your new custom widget
 
-   * **Unique Id** – The unique identifier used within the code to refer to this widget (It should be noted that this field is filled out automatically based on the entered Title, however it can be edited).
+   * **Unique Id** – the unique identifier used within the code to refer to this widget. It should be noted that this field is filled out automatically based on the entered Title, however it can be edited.
 
-   * **Widget Icon** – The icon image that the custom widget will be associated with
+   * **Widget Icon** – the icon image that the custom widget will be associated with
 
    * **Widget type** – choose from **Field**, **Rule**, and **Dashboard Widget**
 
      ![Edit widget screen](/images/dashboard-widget-holiday.jpg) 
 
 3. From here, you can select:
-   * **Widget UI** – a coding environment that allows you to define HTML handlers (*link*), expressions and more.
+   * **Widget UI** – a coding environment that allows you to define HTML handlers, expressions and more.
    * **Widget Code** – a coding environment that allows you to define the logic and functions behind the custom widget.
-4. When you are complete, click on the OK button ![update button](/images/ok.png) to save the changes made. The newly created custom widget can be displayed in the view widget pane. You can use the version history button ![version history button](/images/version-history-btn.jpg), edit button ![edit button](/images/edit_orig.png) and delete button ![delete button](/images/delete-btn.jpg) to visualise and perform any necessary changes.
+4. When you are complete, click on the **OK** button ![update button](/images/ok.png) to save the changes made. The newly created custom widget can be displayed in the view widget pane. You can use the **version history** button ![version history button](/images/version-history-btn.jpg), **edit** button ![edit button](/images/edit_orig.png) and **delete** button ![delete button](/images/delete-btn.jpg) to visualise and perform any necessary changes.
 
 
 
 Depending on the type of newly created custom widget, they can be accessed by:
 
-* **Field widget** - Navigate to **Administration > Designer > *Your Process* > Controls.** Under **Custom**, your field widget will be displayed and is now ready for use.
+* **Field widget** - navigate to **Administration > Designer > *Your Process* > Controls.** Under **Custom**, your field widget will be displayed and is now ready for use. To learn more about field widgets, see [Custom form control development](/docs/low-code/field-widget/).
 
-* **Rule widget** - Navigate to **Administration > Designer > *Your Process* > Add a rule.** Under **Custom**, your rule widget will be displayed and is now ready for use.
+* **Rule widget** - navigate to **Administration > Designer > *Your Process* > Add a rule.** Under **Custom**, your rule widget will be displayed and is now ready for use. To learn more about rule widgets, see [Custom rule widget development](/docs/low-code/rule-widget/).
 
-* **Dashboard widget** - Navigate to **Dashboard > *Your Dashboard* > Edit current page** button ![edit current page button](/images/editpage.PNG). From there, you click the drop-down list button and you will have access to the created custom dashboard widgets.
+* **Dashboard widget** - navigate to **Dashboard > *Your Dashboard* > Edit current page** button ![edit current page button](/images/editpage.PNG). From there, you click the drop-down list button and you will have access to the created custom dashboard widgets. To learn more about dashboard widgets, see [Custom dashboard widget development](/docs/low-code/dashboard-widget/).
 
-  To learn more about widgets, see [Custom form control development](/docs/low-code/field-widget/).
+  
 
 
 
-## What's next
+## What's next ![Idea icon](/images/18.png)
 
 To continue with low-code development, you can view [Templating basics](/docs/low-code/templating-basics/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/docs/getting-started/welcome/no-code/) and [What is low-code?](/docs/getting-started/welcome/low-code/). 
 
