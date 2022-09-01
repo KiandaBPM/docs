@@ -109,7 +109,7 @@ A **JavaScript** **function** can be called to **display** a page in a **form** 
 ```html
 <div style="padding-top:5px;">
  <h5>Environments</h5>
- <a data-subid="95b8e990-21a8-47e0-5f03bcae85c9" onclick="showFormModal(this.dataset.subid, false, '&formName=dev'); return false; title="DEV Environment" class="btn btn-xs created"> == $0
+ <a data-subid="https://green-itr.kianda.com/admin/designer/new-training-process" onclick="showFormModal(false, '&formName=dev'); return false; title="DEV Environment" class="btn btn-xs created"> == $0
  <div class="badge created">DEV</div>
  </a>
 ```
