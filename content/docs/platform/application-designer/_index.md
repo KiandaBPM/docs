@@ -80,7 +80,7 @@ To help you plan your process, go to [Plan your process](/docs/getting-started/c
 
 5. Click on **OK** ![OK button](/images/ok.png) when complete. 
 
-6. You are now in the Process **Design** page, that is [Kianda Designer](#kianda-designer-introduction). From here, you can add forms, fields and rules, change [process settings](#process-settings) and properties and manage your process design.
+6. You are now in the Process **Design** page, that is [Kianda Designer](#kianda-designer-introduction). From here, you can add forms, fields and rules, change [settings](#settings) and properties and manage your process design.
 
    
 
@@ -141,7 +141,7 @@ As you create forms, there are some important features to note that will help yo
 - [Form fields](#form-fields)
 - [Responsive form layout](#responsive-form-layout)
 - [Input validation](#input-validation)
-- [Process settings and anonymous forms](#process-settings)
+- [Settings](#settings)
 - [Cloning](#cloning)
 - [Custom fields](#custom-fields)
 - [Advanced techniques](#advanced-techniques)
@@ -269,23 +269,23 @@ Simply enable the checking the **Required** property in this way will automatica
 
 Another way of validating input is to use the **validate input rule** this allows greater flexibility in terms of when or what to validate, see [Validate input](/docs/platform/rules/form-actions/validate-input/) for more information.
 
-In addition to changing field properties, you can configure [settings](#process-settings) to make processes perform the way you want.
+In addition to changing field properties, you can configure [settings](#settings) to make processes perform the way you want.
 
-## Process settings
+## Settings
 
-In addition to **changing field properties** like [Input validation](#input-validation), you can edit process **Settings**, also found in the right-hand side pane of Kianda **Designer**. 
+In addition to **changing field properties** like [Input validation](#input-validation), you can edit process, form and field **settings**. Having settings at each level will allow you to tweak your process design in minute.
+
+At the highest level, **process settings**  are found in the right-hand side pane of Kianda **Designer**. 
 
 ![Process settings](/images/process-settings.jpg)
 
-There are many options within **Settings** to manage for example process security and set process instance settings. Enabling anonymous sharing of forms is another option within Settings. 
+There are many options within **Settings** to manage for example process security and set process instance settings. One setting example is **Enabling anonymous sharing of forms** explained in more detail below.
 
 ![Process settings](/images/process-settings-anonymous.jpg)
 
 
 
-[Enable anonymous sharing](#anonymous-forms) is explained in more detail below, as an example of one particular **process setting**. **Form settings** and **control settings** are configurable by clicking on the relevant form or field within the process, so that the **Edit/Pen** button ![Edit/Pen button](/images/penicon.png). Form settings are shown in the [Form basics](/docs/platform/application-designer/forms/) page, and go to [Controls](/docs/platform/controls/) to navigate to individual control pages to find out more about each control type settings.
-
-### Anonymous forms ###
+### ### Anonymous forms ###
 
 **Anonymous forms** are a great way of **allowing people outside of your organisation** to interact with your processes. It could be something as simple as a feedback form or a GDPR data request but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission, or person assigned to manage the form.
 
@@ -294,27 +294,29 @@ Anonymous forms can be embedded in iframes and safely displayed within other web
 - [New process instance anonymous form URL](#new-process-instance-anonymous-form-url)
 - [Existing process anonymous form URL](#existing-instance-anonymous-form-url)
 
-### New process instance anonymous form URL
+#### New process instance anonymous form URL
 
 To set up a **globally available link** to allow external users to create a new process instance, perform the following steps within Kianda designer:
 
 1. Within a chosen process, in the top right click on **Settings**.
-2. Then click the option "Enable anonymous sharing of forms" to Yes.
-3. Click the button "New Link" to generate a new anonymous link.
+2. Then beside **Enable anonymous sharing of forms** select **Yes**.
+3. Click the button **New Link** to generate a new anonymous link.
 
-![Anonymous Form Settings](/images/anonymous-Forms.png)
+![Anonymous Form Settings](/images/enable-anonymous-sharing.jpg)
 
-### Existing instance anonymous form URL
+The generated link can be shared to allow sharing of the form 
 
-To setup existing instance anonymous form one needs to use the anonymous form rule to generate a new anonymous link at the runtime that will point to an existing process record that can then be shared with external users.
+#### Existing instance anonymous form URL
 
-Note that for this to work steps 1 and 2 of New Instance Anonymous form is still required.
+To setup an **existing instance** **anonymous form** you need to use the **Anonymous form rule** to generate a new anonymous link at the runtime that will point to an existing process record that can then be shared with external users.
+
+Note that for this to work steps 1 and 2 of [New Instance Anonymous form](#new-process-instance-anonymous-form-url) are still required.
 
 The following are some of the key options of the anonymous link rule:
 
-- Form to share (any form within an existing process).
-- Link expires settings: Number of uses, time-based or never expire.
-- Message to display on submission.
+- Choose a Form to share (any form within an existing process).
+- Link expires settings: choose from an expiry parameter like number of uses, time-based or never expire.
+- Select a Message to display on submission.
 
 **Important**: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically expire the previous of the same type if a link existed.
 

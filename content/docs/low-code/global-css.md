@@ -107,10 +107,8 @@ In addition to styling forms and form elements, **modals** provide a useful way 
 A **JavaScript** **function** can be called to **display** a page in a **form** **modal**. This function also allows you to **pass** **data** into the modal for use within that form.
 
 ```html
-<div style="padding-top:5px;">
- <h5>Environments</h5>
- <a data-subid="https://green-itr.kianda.com/admin/designer/new-training-process" onclick="showFormModal(false, '&formName=dev'); return false; title="DEV Environment" class="btn btn-xs created"> == $0
- <div class="badge created">DEV</div>
+
+ <a data-processname="new-training-process" onclick="showFormModal(this.dataset.processname,true, '&formName=SignUpform'); return false;" title="New training process" class="btn btn-xs created"> Create new training process
  </a>
 ```
 
