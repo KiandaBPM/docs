@@ -300,7 +300,67 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;p>To learn more about dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard pages&lt;/a>.&lt;/p></description></item><item><title>Docs: Global JavaScript file</title><link>https://docs.kianda.com/docs/low-code/global-javascript-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-javascript-file/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Custom form control development</title><link>https://docs.kianda.com/docs/low-code/field-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/field-widget/</guid><description/></item><item><title>Docs: Custom rule widget development</title><link>https://docs.kianda.com/docs/low-code/rule-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/rule-widget/</guid><description/></item><item><title>Docs: Custom dashboard widget development</title><link>https://docs.kianda.com/docs/low-code/dashboard-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/dashboard-widget/</guid><description/></item><item><title>Docs: Low-Code development best practices</title><link>https://docs.kianda.com/docs/low-code/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/best-practices/</guid><description>
+&lt;/div></description></item><item><title>Docs: Custom form control development</title><link>https://docs.kianda.com/docs/low-code/field-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/field-widget/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>There are currently 16 predefined field or control widgets available to use in forms and processes, covering 3 categories: &lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/">Layout&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a>. Click on the relevant links to find out more about each area. However if customised fields have been created, they are available to those with the role &lt;strong>Administration&lt;/strong> and &lt;strong>Design business process&lt;/strong> to use in process and form design in Kianda &lt;strong>Designer&lt;/strong>. Customised fields are available under the &lt;strong>Custom controls&lt;/strong> category.&lt;/p>
+&lt;p>Custom controls are created by &lt;strong>Administrators&lt;/strong> or &lt;strong>Developers&lt;/strong> who have coding experience to use Kianda&amp;rsquo;s low-code development feature, Kianda &lt;strong>Developer&lt;/strong>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>If you are an experienced developer with an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role (see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>), you can create a new custom widget within Kianda by doing the following:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to &lt;strong>Administration&lt;/strong> in the left-hand side menu, and click on &lt;strong>Developer&lt;/strong>. This will bring you to the &lt;strong>Developer resources&lt;/strong> page.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Widget view&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/widgetview2.jpg" alt="Widget view">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>New widget&lt;/strong> to create a new field/control widget.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out the &lt;strong>Edit widget&lt;/strong> dialog box - that is &lt;strong>Title&lt;/strong>, &lt;strong>Unique Id&lt;/strong> (which is autofilled from the title), &lt;strong>Widget Icon&lt;/strong>, where you can select from hundreds of icons, and then &lt;strong>Widget type&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/editwidget.gif" alt="Edit widget">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when complete.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you create a custom field widget, the &lt;strong>Widget UI&lt;/strong> and &lt;strong>Widget Code&lt;/strong> tabs are displayed. These two screenshots show the default code for &amp;lsquo;Widget UI&amp;rsquo; and &amp;lsquo;Widget Code&amp;rsquo;.&lt;/p>
+&lt;p>The &amp;lsquo;Widget UI&amp;rsquo; defines the HTML, handlers, expressions and more.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Field widget UI&lt;/strong>&lt;/em>
+&lt;img src="https://docs.kianda.com/images/widgetfieldui.gif" alt="Widget UI">&lt;/p>
+&lt;p>The &amp;lsquo;Widget Code&amp;rsquo; defines the logic and functions.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Field widget code&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/widgetcodefield.png" alt="Widget code">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Widgets created are visible in the main widget view. From here, you can edit a widget by clicking on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bluepen.png" alt="Pen button"> (Pen icon), delete a widget by clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin button"> and restore earlier versions of a widget by clicking on the &lt;strong>Version restore&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bluerestore.png" alt="Restore">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Custom field widgets you create will be available for use in Kianda Designer by going to &lt;strong>Side menu&lt;/strong> &amp;gt; &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> &amp;gt; &lt;strong>click on an existing process&lt;/strong> or &lt;strong>Add new&lt;/strong> to add a new process (then click on a form to edit it), and see the Custom fields added under &lt;strong>Controls&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/customcontrol.png" alt="Custom fields">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;a href="#webhooks">Webhooks&lt;/a> can be created to send a message to a specific URL by clicking on the &lt;strong>Webhooks&lt;/strong> button. Click the link for more information.&lt;/p>
+&lt;h3 id="webhooks">Webhooks&lt;/h3>
+&lt;p>To create webhooks:&lt;/p>
+&lt;ol>
+&lt;li>Click on the &lt;strong>Webhooks&lt;/strong> button from the main widget view to add a webhook.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/webhooks50.gif" alt="Webhooks">&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>Use the slider to turn on &lt;strong>Enable Created Callback&lt;/strong>, &lt;strong>Enable Updated Callback&lt;/strong>, &lt;strong>Enable Deleted Callback&lt;/strong> and &lt;strong>type in the URL&lt;/strong> in each case to respond to process instance create, update and deleted events.&lt;/p>
+&lt;p>For example, choosing &lt;strong>Enable Created Callback&lt;/strong> will enable a URL callback every time a process instance is updated. This results in a HTTP GET request with parameters instanceID={instanceID}, processName={processName} and eventType=created being issued to the give URL.&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong> Callback has a timeout of 10 seconds.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Help&lt;/strong> button &lt;img src="https://docs.kianda.com/images/webhookhelp.PNG" alt="Help button"> for clarification.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when done.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="whats-next">What&amp;rsquo;s next&lt;/h2>
+&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Custom rule widget development</title><link>https://docs.kianda.com/docs/low-code/rule-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/rule-widget/</guid><description/></item><item><title>Docs: Custom dashboard widget development</title><link>https://docs.kianda.com/docs/low-code/dashboard-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/dashboard-widget/</guid><description/></item><item><title>Docs: Low-Code development best practices</title><link>https://docs.kianda.com/docs/low-code/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/best-practices/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item></channel></rss>
