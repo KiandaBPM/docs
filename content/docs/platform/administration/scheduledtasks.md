@@ -8,7 +8,7 @@ The **Scheduled tasks** function is available to **administrators** and is found
 
 ## How to get started
 
-To view use the Scheduled tasks function:
+To use the Scheduled tasks function:
 
 1. Click on **Administration** in the left-hand side pane and then click on **Scheduled tasks**. 
 
@@ -32,7 +32,7 @@ To view use the Scheduled tasks function:
    - **Show task history** ![Show task history](/images/show-task-history.jpg) - when you click on this button, a dialog box opens showing a list of all the past executions of the task, listed by date and time and status, for example if there was an error or if the task completed.
    - **Delete task** ![Delete task](/images/delete-task.jpg) - to delete a task from the list, click on this button. A popup will appear asking you to confirm if you want to remove the task or not. To continue with the deletion click on **OK**, otherwise click on **Cancel**.
 
-3. Click on the name of a task to see the details of the task
+3. Click on the name of a task to see the details of the task.
 
 4. To see a complete list of scheduled tasks click on **Show All** ![Show All button](/images/show-all.jpg). This list will include all tasks that are running as a result of processes, for example scheduled reminders that are running as a result of rules in a process. Each item listed is a process instance related to a process, for example as shown in the image below. The process instances can be viewed in a [list widget](/docs/platform/pages/list/) in a dashboard.
 
