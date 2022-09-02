@@ -9,7 +9,7 @@ The **Help** function is available to all users of all roles and is found in the
 
 ## How to get started ##
 
-1. Go to the left-hand side menu and click on **Help.**
+1. Go to the left-hand side menu and click on **Help**.
 
 2. In the main view you will see a list of FAQs as well as a search facility and filter to drill down to the information you need.
 
@@ -21,7 +21,7 @@ The **Help** function is available to all users of all roles and is found in the
 
    ![Example of a help topic on cascading lists](/images/help-cascading-dropdown.jpg)
 
-4. Alternatively click on **Select a topic** and filter from a selection of topics: Rules, User, Designer, Data Sources, Security, Dashboard, General and Configuration as shown below.
+4. Alternatively, click on **Select a topic** and filter from a selection of topics: Rules, User, Designer, Data Sources, Security, Dashboard, General and Configuration as shown below.
 
 ![Help topics](/images/helptopics.png)
 
@@ -45,7 +45,7 @@ In addition to getting support, we welcome your feedback. Your thoughts and sugg
 
 3. Click on **OK** to submit your feedback or **Close** to close the dialog box. 
 
-**Note**: We also welcome feedback on this **documentation**. Please feel free to indicate if this or other pages are helpful by using the **Yes** and **No** buttons at the bottom of the page. Alternatively you can provide feedback/comments via github by clicking on the **documentation issue** button ![Documentation issue button](/images/documentation-issue.jpg) in the right-hand pane of this and other documentation pages.
+**Note**: We also welcome feedback on this **documentation**. Please feel free to indicate if this or other pages are helpful by using the **Yes** and **No** buttons at the bottom of the page. Alternatively you can provide feedback/comments via GitHub by clicking on the **documentation issue** button ![Documentation issue button](/images/documentation-issue.jpg) in the right-hand pane of this and other documentation pages.
 
 ![Feedback via github](/images/feedback-github.jpg)
 

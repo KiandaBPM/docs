@@ -57,7 +57,7 @@ When you login the layout of the user interface is as follows:
 
 1. **Company logo** - the top left-hand corner is reserved uploading your company logos. If you click on the **Collapse navigation** button ![Collapse navigation button](/images/navigation_frame.png) you will see the collapsed version of the company logo and collapsed side menu, giving you more real estate in the central view panel.
 
-2. **Side menu** - This left-hand pane contains all the key functions for process management. Features include:
+2. **Side menu** - this left-hand pane contains all the key functions for process management. Features include:
    - Home - home page for the workspace
    
    - User defined pages - these are defined by you the user depending on what features you want to showcase, for example **Dashboard** could contain all the process dashboards and **Inspection Checklist** could be a dashboard of inspection lists.

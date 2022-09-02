@@ -32,6 +32,6 @@ The layout of the Kianda workspace is as follows:
 
 Go to [Personalise your workspace](/docs/getting-started/logging-in/personalise-workspace/) to find out how to change the look and feel of your workspace and to set regional settings.
 
-To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
+To read more about how to create processes and forms, go to [Application Designer](/docs/platform/application-designer/).
 
 To find out about other ways to get help and support, click on the links below:

@@ -7,7 +7,7 @@ The **Support** function is available to users with a designated role, for examp
 
 ## How to get started
 
-To view use the **Support** function:
+To use the **Support** function:
 
 1. Click on **More** in the left-hand side pane and then click on **Support**. 
 
@@ -41,9 +41,11 @@ Existing support tickets appear within this section, showing the **title** of th
 
    ![Post comment](/images/post-comment.jpg)
 
-​	Here you can add a comment in the **Description** box which can be styled in various way, for example to change the font colour, paragraph layout, add 	tables, links or images. There is also a **Help** button ![Help button](/images/help-button.jpg)that gives you Keyboard shortcuts to change the style. 
+   Here you can add a comment in the **Description** box which can be styled in various way, for example to change the font colour, paragraph layout, add tables, links or images. There is also a **Help** button ![Help button](/images/help-button.jpg) that gives you Keyboard shortcuts to change the style. 
 
-​	Click on **Close** to exit without saving or **OK** to submit changes.
+   
+
+   Click on **Close** to exit without saving or **OK** to submit changes.
 
 
 
@@ -76,4 +78,4 @@ System logs appear in this section when you click on **Load errors**. Logs are l
 
 To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
 
-To find out about other ways to get help and support, go to [Help](/docs/platform/administration/help).
+To find out about other ways to get help and support, go to [Help](/docs/platform/general/help).
