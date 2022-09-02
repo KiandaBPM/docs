@@ -152,4 +152,82 @@
 &lt;li>Layout - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the text box for mobile use.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize-frame.png" alt="Changing text box width">&lt;/p>
-&lt;p>Underneath field properties you will see &lt;strong>Rules&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about Field rules.&lt;/p></description></item></channel></rss>
+&lt;p>Underneath field properties you will see &lt;strong>Rules&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about Field rules.&lt;/p></description></item><item><title>Docs: Process common fields</title><link>https://docs.kianda.com/docs/platform/application-designer/process/common-fields/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/common-fields/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Within every process, there are forms and forms contain &lt;strong>fields&lt;/strong>. The fields you add in, such as a text box, list or button are called &lt;strong>Design fields&lt;/strong>. For example as seen in &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/properties/#field-properties">Field properties&lt;/a> you can change properties for a textbox field, like making the field &lt;strong>Required&lt;/strong> and &lt;strong>Visible&lt;/strong> for form users as shown in the image below for the Training Request form field called &amp;lsquo;Employee Name&amp;rsquo;&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/settingsprocess.png" alt=".">&lt;/p>
+&lt;p>These design fields are also apparent when creating &lt;strong>dashboards&lt;/strong>, for example &lt;strong>list&lt;/strong> widgets. In the example below we can see the &lt;strong>Design fields&lt;/strong> highlighted that are found in the Training Request form. These highlighted fields like &lt;strong>Employee Name&lt;/strong> will appear in the list widget in the dashboard.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/design-fields-example.jpg" alt="Example of design fields in a list widget">&lt;/p>
+&lt;p>Clicking on &lt;strong>List fields&lt;/strong> in list widget shown above will &lt;strong>show all the fields&lt;/strong> that will appear in the widget.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/list-field-defaults.jpg" alt="List field example">&lt;/p>
+&lt;p>Note that non Design fields are also included in the fields to display, namely &lt;strong>ID&lt;/strong>, &lt;strong>Process Name&lt;/strong> and &lt;strong>Modified&lt;/strong> fields. These fields are part of the set of &lt;strong>Common fields&lt;/strong> associated with all Kianda processes.&lt;/p>
+&lt;h2 id="common-fields">Common fields&lt;/h2>
+&lt;p>The non-design fields associated with all Kianda processes are listed below. It is useful to keep these fields in mind when designing forms, as they can be used to retrieve, store or display values from &lt;strong>process instances&lt;/strong> for example &lt;strong>Status&lt;/strong> which is the status of a process instance. Using these &amp;lsquo;internal values&amp;rsquo; could be useful where the status of one process could be used as a condition to trigger the start of another process, for example using the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/">&lt;strong>Start a process&lt;/strong>&lt;/a> rule.&lt;/p>
+&lt;p>The common fields associated with process instances are:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Field name&lt;/th>
+&lt;th>Explanation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>ID&lt;/strong>&lt;/td>
+&lt;td>This is the &lt;strong>process instance ID&lt;/strong>, labelled as &amp;lsquo;process-name-number&amp;rsquo;, for example &amp;lsquo;safety-inspection-8&amp;rsquo;. This ID is part of the URL that brings you to the process instance/record held on the system when information is either submitted or saved. For example clicking on the process instance ID &amp;lsquo;safety-inspection-8&amp;rsquo; in a dashboard brings you to the form &lt;a href="https://green-itr.kianda.com/forms/safety-inspection-8">https://green-itr.kianda.com/forms/safety-inspection-8&lt;/a>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Unique ID&lt;/strong>&lt;/td>
+&lt;td>This is a &lt;strong>system generated ID&lt;/strong> for each process instance, a 32 letter and number generated value.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Status&lt;/strong>&lt;/td>
+&lt;td>This is the status for the process instance, that is either a &amp;lsquo;&lt;strong>form name&lt;/strong>&amp;rsquo; or &amp;lsquo;&lt;strong>Completed&lt;/strong>&amp;rsquo;. Completed indicates that all forms in a process have been submitted, while &amp;lsquo;form name&amp;rsquo; indicates what the active form is in the process, that is, where the process is &amp;lsquo;at&amp;rsquo;. For example in a process of two forms, a Request form and an Approval form. Once the Request form has been submitted then the status for a process is &amp;lsquo;Approval form&amp;rsquo; indicating that this form needs to be completed.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Version&lt;/strong>&lt;/td>
+&lt;td>This is the &lt;strong>process instance version number&lt;/strong> that starts as 1.0. If a process instance is updated, for example if a process design is updated and published and process instances are updated with the change, then the next version of the instance will be 2.0.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Process Version&lt;/strong>&lt;/td>
+&lt;td>This is the &lt;strong>process design version&lt;/strong>, that is the version of the process design that has been used as a template for the process instance.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Process Name&lt;/strong>&lt;/td>
+&lt;td>This is the &lt;strong>Unique ID name&lt;/strong> that comes from the process design that is the template for the process instance. The ID is created when the process is created. The ID field autofills from the title of the process as shown in &lt;a href="https://docs.kianda.com/docs/platform/application-designer/#creating-your-first-process">Create your first process&lt;/a>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Process Title&lt;/strong>&lt;/td>
+&lt;td>This is the &lt;strong>Process title&lt;/strong> that comes from the process design title, created when the process is created or updated, for example see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/#creating-your-first-process">Create your first process&lt;/a>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Created&lt;/strong>&lt;/td>
+&lt;td>This is a &lt;strong>date and time stamp&lt;/strong> when the process instance is created.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Created by&lt;/strong>&lt;/td>
+&lt;td>This is the &lt;strong>user name&lt;/strong> of the user who &lt;strong>created&lt;/strong> the process instance.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Modified&lt;/strong>&lt;/td>
+&lt;td>This is the &lt;strong>date and time stamp&lt;/strong> when the process instance is modified, for example after a process design is published and existing process instances are updated.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Modified by&lt;/strong>&lt;/td>
+&lt;td>This is the &lt;strong>user name&lt;/strong> of the user who &lt;strong>modified&lt;/strong> the process instance.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Assign to&lt;/strong>&lt;/td>
+&lt;td>This is the &lt;strong>user name&lt;/strong> of the user who a process is &lt;strong>assigned&lt;/strong> to. Process designs may have a static option for reassignment in their design so that process instances can be reassigned using &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/#how-to-get-started">Quick actions&lt;/a>. Alternatively the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a> rule can be used to dynamically assign form ownership to another user. That user is named in the &lt;strong>Assign to&lt;/strong> field.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Security users&lt;/strong>&lt;/td>
+&lt;td>These are the named security users, defined using &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/settings/#process-settings">&lt;strong>Process settings&lt;/strong>&lt;/a> by selecting &lt;strong>Enable process security&lt;/strong> and naming &lt;strong>Process security users&lt;/strong> which can be &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong>.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;ul>
+&lt;li>To learn more about design controls that can be applied to forms go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">&lt;strong>Controls&lt;/strong>&lt;/a>.&lt;/li>
+&lt;li>To learn more about how common fields are displayed in dashboards in a list widget go to &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">&lt;strong>List widget&lt;/strong>&lt;/a>.&lt;/li>
+&lt;/ul></description></item></channel></rss>
