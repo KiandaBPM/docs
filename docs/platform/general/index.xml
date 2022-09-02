@@ -3,7 +3,7 @@
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>Go to the left-hand side menu and click on &lt;strong>Help.&lt;/strong>&lt;/p>
+&lt;p>Go to the left-hand side menu and click on &lt;strong>Help&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the main view you will see a list of FAQs as well as a search facility and filter to drill down to the information you need.&lt;/p>
@@ -15,7 +15,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/help-cascading-dropdown.jpg" alt="Example of a help topic on cascading lists">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Alternatively click on &lt;strong>Select a topic&lt;/strong> and filter from a selection of topics: Rules, User, Designer, Data Sources, Security, Dashboard, General and Configuration as shown below.&lt;/p>
+&lt;p>Alternatively, click on &lt;strong>Select a topic&lt;/strong> and filter from a selection of topics: Rules, User, Designer, Data Sources, Security, Dashboard, General and Configuration as shown below.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/helptopics.png" alt="Help topics">&lt;/p>
@@ -42,7 +42,7 @@
 &lt;p>Click on &lt;strong>OK&lt;/strong> to submit your feedback or &lt;strong>Close&lt;/strong> to close the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;strong>Note&lt;/strong>: We also welcome feedback on this &lt;strong>documentation&lt;/strong>. Please feel free to indicate if this or other pages are helpful by using the &lt;strong>Yes&lt;/strong> and &lt;strong>No&lt;/strong> buttons at the bottom of the page. Alternatively you can provide feedback/comments via github by clicking on the &lt;strong>documentation issue&lt;/strong> button &lt;img src="https://docs.kianda.com/images/documentation-issue.jpg" alt="Documentation issue button"> in the right-hand pane of this and other documentation pages.&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: We also welcome feedback on this &lt;strong>documentation&lt;/strong>. Please feel free to indicate if this or other pages are helpful by using the &lt;strong>Yes&lt;/strong> and &lt;strong>No&lt;/strong> buttons at the bottom of the page. Alternatively you can provide feedback/comments via GitHub by clicking on the &lt;strong>documentation issue&lt;/strong> button &lt;img src="https://docs.kianda.com/images/documentation-issue.jpg" alt="Documentation issue button"> in the right-hand pane of this and other documentation pages.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/feedback-github.jpg" alt="Feedback via github">&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
@@ -72,22 +72,36 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/new-dashboard-page.jpg" alt="Create dashboard page">&lt;/p>
 &lt;p>In this dialog box fill out the following fields:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong> - give the dashboard a title.&lt;/li>
-&lt;li>&lt;strong>Name&lt;/strong> - this field is autofilled from the title field and creates a unique ID for the dashboard page.&lt;/li>
-&lt;li>&lt;strong>Visible to&lt;/strong> - choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> of users who will see this dashboard. In this way you are setting the first level of security for the dashboard, see &lt;a href="https://docs.kianda.com/docs/security/process-level-security/#dashboard-security">Dashboard security&lt;/a> for more details.&lt;/li>
-&lt;li>&lt;strong>Icon&lt;/strong> - choose from hundreds of icons to represent your dashboard in the left-hand pane.&lt;/li>
-&lt;li>&lt;strong>Sort order&lt;/strong> - enter a numeric value to set the order of display in a dashboard group, for example a dashboard called &lt;strong>Induction&lt;/strong> has a sort order value of &amp;lsquo;1&amp;rsquo;, while a dashboard called &lt;strong>Annual leave&lt;/strong> has a value of &amp;lsquo;2&amp;rsquo;. The dashboards will display in chronological order according to the values associated with them.&lt;/li>
-&lt;li>&lt;strong>Group&lt;/strong> - choose an existing group or create a new group to add the dashboard to. As soon as two dashboard pages are added to a group, then the group will appear in the left-hand pane, for example see &lt;strong>HR dashboards group&lt;/strong> below with 2 dashboards: &lt;strong>Induction&lt;/strong> and &lt;strong>Annual leave&lt;/strong>.
-&lt;img src="https://docs.kianda.com/images/dashboard-group.jpg" alt="Dashboard group">&lt;/li>
-&lt;li>&lt;strong>Enable favourites&lt;/strong> - allows you to set this dashboard as a &amp;lsquo;favourite&amp;rsquo;. If you check the checkbox then users will see a &lt;strong>Add to favourites&lt;/strong> button in the &lt;strong>Quick actions menu&lt;/strong>, allowing them to add this dashboard to a &amp;lsquo;favourites&amp;rsquo; catalog.&lt;/li>
-&lt;li>&lt;img src="https://docs.kianda.com/images/favourite-dashboard.jpg" alt="Favourite dashboard">&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - give the dashboard a title.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Name&lt;/strong> - this field is autofilled from the title field and creates a unique ID for the dashboard page.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Visible to&lt;/strong> - choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> of users who will see this dashboard. In this way you are setting the first level of security for the dashboard, see &lt;a href="https://docs.kianda.com/docs/security/process-level-security/#dashboard-security">Dashboard security&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Icon&lt;/strong> - choose from hundreds of icons to represent your dashboard in the left-hand pane.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Sort order&lt;/strong> - enter a numeric value to set the order of display in a dashboard group, for example a dashboard called &lt;strong>Induction&lt;/strong> has a sort order value of &amp;lsquo;1&amp;rsquo;, while a dashboard called &lt;strong>Annual leave&lt;/strong> has a value of &amp;lsquo;2&amp;rsquo;. The dashboards will display in chronological order according to the values associated with them.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Group&lt;/strong> - choose an existing group or create a new group to add the dashboard to. As soon as two dashboard pages are added to a group, then the group will appear in the left-hand pane, for example see &lt;strong>HR dashboards group&lt;/strong> below with 2 dashboards: &lt;strong>Induction&lt;/strong> and &lt;strong>Annual leave&lt;/strong>.
+&lt;img src="https://docs.kianda.com/images/dashboard-group.jpg" alt="Dashboard group">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable favourites&lt;/strong> - allows you to set this dashboard as a &amp;lsquo;favourite&amp;rsquo;. If you check the checkbox, then users will see a &lt;strong>Add to favourites&lt;/strong> button in the &lt;strong>Quick actions menu&lt;/strong>, allowing them to add this dashboard to a &amp;lsquo;favourites&amp;rsquo; catalog.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/favourite-dashboard.jpg" alt="Favourite dashboard">&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>From there you are in the main dashboard view where you can add dashboard &lt;strong>widgets&lt;/strong> to display lists or charts or edit the &lt;strong>settings&lt;/strong> for the dashboard page. To find out more about dashboards go to the &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> section of the documentation.&lt;/p>
+&lt;p>From there you are in the main dashboard view where you can add dashboard &lt;strong>widgets&lt;/strong> to display lists or charts or edit the &lt;strong>settings&lt;/strong> for the dashboard page. To find out more about dashboards, go to the &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> section of the documentation.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="edit-current-page">Edit current page&lt;/h2>
@@ -125,12 +139,12 @@
 &lt;p>You will receive a configured message indicating the title of the notification and a short piece of text explaining what has happened, for example if a process design has been published and existing process instances have been updated, or the message could be as a result of a &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/user-alert/">User alert rule&lt;/a> as seen below. In this example, the user can click on the alert and they are brought to the form that they have to complete.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-example.jpg" alt="User alert example">&lt;/p>
 &lt;h2 id="user-profile">User profile&lt;/h2>
-&lt;p>The information found under User profile includes your name, email, role for example Administrator and options to update your information.&lt;/p>
+&lt;p>The information found under User profile includes your name, email, role for example Administrator, and options to update your information.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/myaccount.png" alt="My account information">&lt;/p>
 &lt;p>To update your information, you can:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Add your photo by clicking on the &lt;strong>Update profile picture&lt;/strong> button &lt;img src="https://docs.kianda.com/images/profilepic.png" alt="Update profile picture button">&lt;/p>
+&lt;p>Add your photo by clicking on the &lt;strong>Update profile picture&lt;/strong> button &lt;img src="https://docs.kianda.com/images/profilepic.png" alt="Update profile picture button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Change your password by clicking on &lt;strong>Change Password&lt;/strong>. You need to type in your current password and then your new password twice and click on &lt;strong>Change Password&lt;/strong> or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
@@ -143,7 +157,7 @@
 &lt;p>Logout of Kianda by clicking on &lt;strong>Sign-Out&lt;/strong>. Then click on &lt;strong>Ok&lt;/strong> to confirm that you want to logout or click on &lt;strong>Cancel&lt;/strong> to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Work offline by clicking moving the slider button across. When you do this you will get a message to say &lt;strong>Offline mode&lt;/strong> is &lt;strong>enabled.&lt;/strong>&lt;/p>
+&lt;p>Work offline by clicking on the slider button, moving it across. When you do this you will get a message to say &lt;strong>Offline mode&lt;/strong> is &lt;strong>enabled.&lt;/strong>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/workoffline.png" alt="Work offline">&lt;/p>
 &lt;p>If you move the slider back then Offline mode is disabled.&lt;/p>
 &lt;/li>
@@ -158,7 +172,7 @@
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Support</title><link>https://docs.kianda.com/docs/platform/general/support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/general/support/</guid><description>
 &lt;p>The &lt;strong>Support&lt;/strong> function is available to users with a designated role, for example, &lt;strong>Manage partners&lt;/strong>, &lt;strong>Designer&lt;/strong> or &lt;strong>Administrator&lt;/strong> and is found in the left-hand side pane, under &lt;strong>More&lt;/strong>. This function allows you to log support tickets and view application logs.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To view use the &lt;strong>Support&lt;/strong> function:&lt;/p>
+&lt;p>To use the &lt;strong>Support&lt;/strong> function:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Click on &lt;strong>More&lt;/strong> in the left-hand side pane and then click on &lt;strong>Support&lt;/strong>.&lt;/p>
@@ -186,10 +200,10 @@
 &lt;li>
 &lt;p>Click on &lt;strong>reply&lt;/strong> to add a comment to the ticket. The &lt;strong>Post a reply&lt;/strong> dialog box opens.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/post-comment.jpg" alt="Post comment">&lt;/p>
+&lt;p>Here you can add a comment in the &lt;strong>Description&lt;/strong> box which can be styled in various way, for example to change the font colour, paragraph layout, add tables, links or images. There is also a &lt;strong>Help&lt;/strong> button &lt;img src="https://docs.kianda.com/images/help-button.jpg" alt="Help button"> that gives you Keyboard shortcuts to change the style.&lt;/p>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to exit without saving or &lt;strong>OK&lt;/strong> to submit changes.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>​ Here you can add a comment in the &lt;strong>Description&lt;/strong> box which can be styled in various way, for example to change the font colour, paragraph layout, add tables, links or images. There is also a &lt;strong>Help&lt;/strong> button &lt;img src="https://docs.kianda.com/images/help-button.jpg" alt="Help button">that gives you Keyboard shortcuts to change the style.&lt;/p>
-&lt;p>​ Click on &lt;strong>Close&lt;/strong> to exit without saving or &lt;strong>OK&lt;/strong> to submit changes.&lt;/p>
 &lt;h3 id="to-create-a-new-ticket">To create a new ticket&lt;/h3>
 &lt;ol>
 &lt;li>
@@ -209,4 +223,4 @@
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
-&lt;p>To find out about other ways to get help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/help">Help&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>To find out about other ways to get help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help">Help&lt;/a>.&lt;/p></description></item></channel></rss>
