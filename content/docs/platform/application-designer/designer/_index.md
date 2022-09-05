@@ -182,9 +182,21 @@ Within a form like the one shown above you can:
 
 ## Settings and Properties ## 
 
-In addition to the edits above, there are a number other actions and settings that you can implement to your process and forms. 
+In addition to the edits above, there are a number other configurations that you can implement to your process and forms. 
 
-![Process and form properties](/images/processproperties.png)
+![Process and form properties](/images/process-properties.jpg)
+
+You can set **properties and settings at property, form and field level**. Properties at all levels are visible in the **right-hand pane** of Kianda designer, along with the:
+
+- **Import** button ![Import button](/images/importform.png) to allow you to import forms and form elements like fields
+
+- **Version history** button ![Version history example](/images/version-history-example.jpg) to allow you to manage version of the process design
+
+- **Settings** button ![Settings button](/images/settings-button.jpg) to allow you to apply process security settings amongst other options
+
+  
+
+### Process properties
 
 Settings are available from the right-hand pane and give you the ability to:
 
