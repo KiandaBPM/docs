@@ -8,9 +8,9 @@
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>DocuSign&lt;/strong>. DocuSign enables organisations to manage electronic agreements by offering electronic signatures also know as &lt;strong>eSignatures&lt;/strong>. eSignatures are a way to sign different types of documents electronically on many different devices.&lt;/p>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself so that the DocuSign &lt;strong>Application Programming Interface (API)&lt;/strong> can be used. There are two types of accounts that you can create in DocuSign. An ordinary account and a developer account. Take note which account you have created as this information will be used to create a different connection within Kianda.&lt;/p>
+&lt;p>In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself so that the DocuSign &lt;strong>Application Programming Interface (API)&lt;/strong> can be used. There are two types of accounts that you can create in DocuSign. An &lt;strong>ordinary&lt;/strong> account and a &lt;strong>developer&lt;/strong> account. Take note which account you have created as this information will be used to create a different connection within Kianda.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>You can use the DocuSign data connector when a process your have created requires you to send individual documents or envelopes to get them signed electronically. With the connector you can access different types of templates that you have created within your DocuSign account, download documents, access already existing envelopes to see their status or summary.&lt;/p>
+&lt;p>You can use the DocuSign data connector when a process your have created requires you to send individual documents or envelopes to get them signed &lt;strong>electronically&lt;/strong>. With the connector you can access different types of &lt;strong>templates&lt;/strong> that you have created within your DocuSign account, &lt;strong>download&lt;/strong> documents, access already existing envelopes to see their &lt;strong>status&lt;/strong> or &lt;strong>summary&lt;/strong>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -21,7 +21,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>You will be automatically brought to the &lt;strong>DocuSign details&lt;/strong> page, where you can start setting up the connection.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/docusign-details.jpg" alt="Add new data connector button">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/docusign-details.jpg" alt="DocuSign details page">&lt;/p>
 &lt;p>Choose from the edit options:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -56,6 +56,42 @@
 &lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;h3 id="docusign-functions">DocuSign functions&lt;/h3>
+&lt;p>When you use the DocuSign data connector within Kianda, there are &lt;strong>default functions&lt;/strong> that are invoked from DocuSign&amp;rsquo;s API. These functions enable you to access a number of DocuSign&amp;rsquo;s functionalities. You can use each DocuSign function by using the &lt;strong>Data&lt;/strong> set of rules to learn more about Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>. With each DocuSign function you use, data needs to be passed into the function know as &lt;strong>payload&lt;/strong> and data is returned known as &lt;strong>response&lt;/strong>. When using the Data rules, you are presented with &lt;strong>Input mapping&lt;/strong> which is equivalent to the &lt;strong>payload&lt;/strong>, this is used to pass data into the function, for example you need to pass in a document file to be signed. The &lt;strong>Results mapping&lt;/strong> is equivalent to the &lt;strong>response&lt;/strong>, this is used to populate your form fields when a DocuSign function returns data, for example &lt;strong>status&lt;/strong> of an envelope.&lt;/p>
+&lt;p>Take the function &lt;strong>listTemplates&lt;/strong> as an example. The &lt;strong>listTemplates&lt;/strong> function &lt;strong>returns (response)&lt;/strong> an &lt;strong>ID&lt;/strong> and the &lt;strong>Name&lt;/strong> of all templates that you have created in your DocuSign account. To use this function effectively, you can use the &lt;strong>Find items&lt;/strong> rule with combination of the &lt;strong>table&lt;/strong> input. The &lt;strong>Find items&lt;/strong> rule will access all templates and map the results into the table. For each template in your DocuSign account, the &lt;strong>Find items&lt;/strong> rule will add a table row with the appropriate &lt;strong>Template IDs&lt;/strong> and &lt;strong>Template Names&lt;/strong> of each template, here is the steps to achieve this:&lt;/p>
+&lt;p>To show case the functionality explained above we will apply the &lt;strong>Find items&lt;/strong> rule to a &lt;strong>button&lt;/strong> but it can be applied to a form field, a form or a process (the rule will be executed when the process loads). Each time we press this button, a table will be populated with a list of &lt;strong>Template IDs&lt;/strong> and &lt;strong>Template Names&lt;/strong> from our DocuSign account.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Create a button in your process, to learn how to create a button go to &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button/">Button control&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Create a table with two columns and call them &lt;strong>ID&lt;/strong> and &lt;strong>Name&lt;/strong>. To learn how to create a table and add columns go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Apply the &lt;strong>Find items&lt;/strong> rule to the button by following the steps from &lt;a href="https://docs.kianda.com/docs/platform/rules/data/find-items/">Find items rule&lt;/a>. When following the steps of the &lt;strong>Find items&lt;/strong> rule, make sure the following to:&lt;/p>
+&lt;ul>
+&lt;li>Select the &lt;strong>Map results to table&lt;/strong> option and select the table you created. This way the &lt;strong>Find items&lt;/strong> rule will create as many rows as there is templates in your DocuSign account.&lt;/li>
+&lt;li>The &lt;strong>listTemplates&lt;/strong> function does not require any &lt;strong>payload (Input mapping)&lt;/strong>, so delete all fields from the &lt;strong>input mapping&lt;/strong> section.&lt;/li>
+&lt;li>Select &lt;strong>listTemplates&lt;/strong> as your data source from your DocuSign connector.&lt;/li>
+&lt;li>Select the appropriate column field from your table and results field from your data source in the Results mapping section.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/docusign-find-items.jpg" alt="Find items rule ">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the Click on &lt;strong>Select data source&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>&lt;strong>sendDocument&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>sendEnvelope&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>listTemplates&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>getEnvelope&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>getEnvelopeSummary&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>listEnvelopeDocuments&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>downloadDocument&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>listTemplateSigners&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>getSigningUrl&lt;/strong> -&lt;/li>
+&lt;/ul>
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Your &lt;strong>SharePoint service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Dropbox</title><link>https://docs.kianda.com/docs/platform/connectors/dropbox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/dropbox/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
@@ -541,7 +577,7 @@
 &lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="finding-consumer-key-and-consumer-secret">Finding Consumer Key and Consumer Secret&lt;/h3>
+&lt;h3 id="acquiring-consumer-key-and-consumer-secret">Acquiring Consumer Key and Consumer Secret&lt;/h3>
 &lt;ol>
 &lt;li>Log into your Salesforce account.&lt;/li>
 &lt;li>On the top right-hand side of the screen, click on the &lt;strong>cogwheel&lt;/strong> and select &lt;strong>Setup&lt;/strong>.&lt;/li>
