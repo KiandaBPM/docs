@@ -50,32 +50,32 @@ When you use the DocuSign data connector within Kianda, there are **default func
 
 Take the function **listTemplates** as an example. The **listTemplates** function **returns (response)** an **ID** and the **Name** of all templates that you have created in your DocuSign account. To use this function effectively, you can use the **Find items** rule with combination of the **table** input. The **Find items** rule will access all templates and map the results into the table. For each template in your DocuSign account, the **Find items** rule will add a table row with the appropriate **Template IDs** and **Template Names** of each template, here is the steps to achieve this:
 
-To show case the functionality explained above we will apply the **Find items** rule to a **button** but it can be applied to a form field, a form or a process (the rule will be executed when the process loads). Each time we press this button, a table will be populated with a list of **Template IDs** and **Template Names** from our DocuSign account.
+To show case the functionality explained above, we will apply the **Find items** rule to a **button** but it can be applied to a form field, a form or a process (the rule will be executed when the process loads). Each time we press this button, a table will be populated with a list of **Template IDs** and **Template Names** from our DocuSign account.
 
 1. Create a button in your process, to learn how to create a button go to [Button control](/docs/platform/controls/actions/button/).
 
 2. Create a table with two columns and call them **ID** and **Name**. To learn how to create a table and add columns go to [Table control](/docs/platform/controls/input/table/).
 
-3. Apply the **Find items** rule to the button by following the steps from [Find items rule](/docs/platform/rules/data/find-items/). When following the steps of the **Find items** rule, make sure the following to:
+3. Apply the **Find items** rule to the button by following the steps from [Find items rule](/docs/platform/rules/data/find-items/). When following the steps of the **Find items** rule, make sure to do the following:
 
    - Select the **Map results to table** option and select the table you created. This way the **Find items** rule will create as many rows as there is templates in your DocuSign account. 
    - The **listTemplates** function does not require any **payload (Input mapping)**, so delete all fields from the **input mapping** section.
    - Select **listTemplates** as your data source from your DocuSign connector.
-   - Select the appropriate column field from your table and results field from your data source in the Results mapping section.
+   - Select the appropriate column field from your table and results field from your data source in the **Results mapping** section.
 
    ![Find items rule ](/images/docusign-find-items.jpg)
 
-4. In the Click on **Select data source**
+Here is a list of all functions available when using the DocuSign data connector. To learn more about the **payload** and **response** for the available functions go to the [DocuSign API Reference](https://developers.docusign.com/docs/esign-rest-api/reference/).
 
-- **sendDocument** - 
-- **sendEnvelope** - 
-- **listTemplates** - 
-- **getEnvelope** - 
-- **getEnvelopeSummary** - 
-- **listEnvelopeDocuments** - 
-- **downloadDocument** - 
-- **listTemplateSigners** - 
-- **getSigningUrl** - 
+- **sendDocument** - allows you to send one or more documents to a recipient to get them signed.
+- **sendEnvelope** - allows you to send a document to a recipient using one of your DocuSign templates.
+- **listTemplates** - retrieves the **templateID** and **templateName** of all templates from your DocuSign account.
+- **getEnvelope** - retrieves information from an envelope using an **envelopeID**.
+- **getEnvelopeSummary** - retrieves a summary of an envelope using an **envelopeID**.
+- **listEnvelopeDocuments** - retrieves any documents that are contained within an envelope using an **envelopeID**.
+- **downloadDocument** - allows you to download a specific document using a **documentID** from an envelope using an **envelopeID**.
+- **listTemplateSigners** - retrieves the name, role and **recipientID** of all signers from a template using a **templateID**
+- **getSigningUrl** - retrieves a URL to a signature made on an envelope using an **envelopeID**.
 
 ## What's next  ![Idea icon](/images/18.png)
 
