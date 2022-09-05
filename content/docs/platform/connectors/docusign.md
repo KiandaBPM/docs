@@ -10,11 +10,11 @@ One of the data connectors within Kianda that you can connect to is **DocuSign**
 
 ## Before you get started
 
-In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself so that the DocuSign **Application Programming Interface (API)** can be used. There are two types of accounts that you can create in DocuSign. An ordinary account and a developer account. Take note which account you have created as this information will be used to create a different connection within Kianda.
+In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself so that the DocuSign **Application Programming Interface (API)** can be used. There are two types of accounts that you can create in DocuSign. An **ordinary** account and a **developer** account. Take note which account you have created as this information will be used to create a different connection within Kianda.
 
 ## When to use
 
-You can use the DocuSign data connector when a process your have created requires you to send individual documents or envelopes to get them signed electronically. With the connector you can access different types of templates that you have created within your DocuSign account, download documents, access already existing envelopes to see their status or summary. 
+You can use the DocuSign data connector when a process your have created requires you to send individual documents or envelopes to get them signed **electronically**. With the connector you can access different types of **templates** that you have created within your DocuSign account, **download** documents, access already existing envelopes to see their **status** or **summary**. 
 
 ## How to get started
 
@@ -24,7 +24,7 @@ You can use the DocuSign data connector when a process your have created require
 
 3. You will be automatically brought to the **DocuSign details** page, where you can start setting up the connection.
 
-   ![Add new data connector button](/images/docusign-details.jpg) 
+   ![DocuSign details page](/images/docusign-details.jpg) 
 
    Choose from the edit options:
 
@@ -44,7 +44,38 @@ You can use the DocuSign data connector when a process your have created require
 
 7. Click on **Close** to close the details page and return to the data source management main view.
 
+### DocuSign functions
 
+When you use the DocuSign data connector within Kianda, there are **default functions** that are invoked from DocuSign's API. These functions enable you to access a number of DocuSign's functionalities. You can use each DocuSign function by using the **Data** set of rules to learn more about Data rules go to [Data rules](/docs/platform/rules/data/). With each DocuSign function you use, data needs to be passed into the function know as **payload** and data is returned known as **response**. When using the Data rules, you are presented with **Input mapping** which is equivalent to the **payload**, this is used to pass data into the function, for example you need to pass in a document file to be signed. The **Results mapping** is equivalent to the **response**, this is used to populate your form fields when a DocuSign function returns data, for example **status** of an envelope.
+
+Take the function **listTemplates** as an example. The **listTemplates** function **returns (response)** an **ID** and the **Name** of all templates that you have created in your DocuSign account. To use this function effectively, you can use the **Find items** rule with combination of the **table** input. The **Find items** rule will access all templates and map the results into the table. For each template in your DocuSign account, the **Find items** rule will add a table row with the appropriate **Template IDs** and **Template Names** of each template, here is the steps to achieve this:
+
+To show case the functionality explained above we will apply the **Find items** rule to a **button** but it can be applied to a form field, a form or a process (the rule will be executed when the process loads). Each time we press this button, a table will be populated with a list of **Template IDs** and **Template Names** from our DocuSign account.
+
+1. Create a button in your process, to learn how to create a button go to [Button control](/docs/platform/controls/actions/button/).
+
+2. Create a table with two columns and call them **ID** and **Name**. To learn how to create a table and add columns go to [Table control](/docs/platform/controls/input/table/).
+
+3. Apply the **Find items** rule to the button by following the steps from [Find items rule](/docs/platform/rules/data/find-items/). When following the steps of the **Find items** rule, make sure the following to:
+
+   - Select the **Map results to table** option and select the table you created. This way the **Find items** rule will create as many rows as there is templates in your DocuSign account. 
+   - The **listTemplates** function does not require any **payload (Input mapping)**, so delete all fields from the **input mapping** section.
+   - Select **listTemplates** as your data source from your DocuSign connector.
+   - Select the appropriate column field from your table and results field from your data source in the Results mapping section.
+
+   ![Find items rule ](/images/docusign-find-items.jpg)
+
+4. In the Click on **Select data source**
+
+- **sendDocument** - 
+- **sendEnvelope** - 
+- **listTemplates** - 
+- **getEnvelope** - 
+- **getEnvelopeSummary** - 
+- **listEnvelopeDocuments** - 
+- **downloadDocument** - 
+- **listTemplateSigners** - 
+- **getSigningUrl** - 
 
 ## What's next  ![Idea icon](/images/18.png)
 
