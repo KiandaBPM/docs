@@ -273,7 +273,7 @@ In addition to changing field properties, you can configure [settings](#settings
 
 ## Settings
 
-In addition to **changing field properties** like [Input validation](#input-validation), you can edit process, form and field **settings**. Having settings at each level will allow you to tweak your process design in minute.
+In addition to **changing field properties** like [Input validation](#input-validation), you can **edit process, form and field** **settings**. Having settings at each level will allow you to tweak your process design in minute.
 
 At the highest level, **process settings**  are found in the right-hand side pane of Kianda **Designer**. 
 
@@ -285,7 +285,7 @@ There are many options within **Settings** to manage for example process securit
 
 
 
-### ### Anonymous forms ###
+### Anonymous forms ###
 
 **Anonymous forms** are a great way of **allowing people outside of your organisation** to interact with your processes. It could be something as simple as a feedback form or a GDPR data request but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission, or person assigned to manage the form.
 
