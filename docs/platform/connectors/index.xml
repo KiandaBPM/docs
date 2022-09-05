@@ -28,14 +28,18 @@
 &lt;p>&lt;strong>Display name&lt;/strong> - type in the name for your DocuSign connector. This is used to distinguish between different data connectors on your platform.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>DocuSign Environment - indicates which environment you have your account created in. There are two types of accounts that you can create in DocuSign. A &lt;strong>developer&lt;/strong> account and an &lt;strong>ordinary&lt;/strong> account. If you have an ordinary account and your trying to connect to DocuSign, you need to select the &lt;strong>Live&lt;/strong> option, and if your account is a developer account, then select the &lt;strong>Demo&lt;/strong> option. This is important as the authentication of the account is different for those two types of account.&lt;/p>
+&lt;p>&lt;strong>DocuSign Environment&lt;/strong> - indicates which environment you have your account created in. There are two types of accounts that you can create in DocuSign. A &lt;strong>developer&lt;/strong> account and an &lt;strong>ordinary&lt;/strong> account. If you have an ordinary account and your trying to connect to DocuSign, you need to select the &lt;strong>Live&lt;/strong> option, and if your account is a developer account, then select the &lt;strong>Demo&lt;/strong> option. This is important as the authentication of the account is different for those two types of account.&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Demo&lt;/strong> - indicates that your DocuSign account is a &lt;strong>developer&lt;/strong> account.&lt;/li>
-&lt;li>&lt;strong>Live&lt;/strong> - indicates that your DocuSign account is an &lt;strong>ordinary&lt;/strong> account.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Demo&lt;/strong> - indicates that your DocuSign account is a &lt;strong>developer&lt;/strong> account.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Live&lt;/strong> - indicates that your DocuSign account is an &lt;strong>ordinary&lt;/strong> account.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Authorize&lt;/strong> - allows you to authorize the connection with your DocuSign account and Kianda. When you click this button, a DocuSign window will open allowing you to log in into your DocuSign to authenticate your account.&lt;/p>
+&lt;p>&lt;strong>Authorize&lt;/strong> - allows you to &lt;strong>authorize&lt;/strong> the connection with your DocuSign account and Kianda. When you click this button, a DocuSign window will open allowing you to log in into your DocuSign to &lt;strong>authenticate&lt;/strong> your account.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -480,6 +484,7 @@
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>One of the data connectors that you can connect to is &lt;strong>Salesforce&lt;/strong>. Salesforce provides customer relationship management software and applications focused on sales, customer service, marketing automation, and analytics. The Salesforce data connector allows you to access information from your Salesforce account which can then be used within your Kianda subscription.&lt;/p>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
 &lt;p>In advance of using the Salesforce data connector, you must have an account with Salesforce which is used to obtain information for a successful connection. If you have an account with Salesforce, all you need to create within the Salesforce application is a &lt;strong>Connected App&lt;/strong>. These connected apps within Salesforce enable external applications to integrate together using its APIs. The connected app will provide you with a &lt;strong>Consumer Key&lt;/strong> and a &lt;strong>Consumer Secret&lt;/strong>. These are then used to establish the connection between your Connected app in Sales force and your Kianda subscription.&lt;/p>
