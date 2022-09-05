@@ -29,11 +29,12 @@ You can use the DocuSign data connector when a process your have created require
    Choose from the edit options:
 
    - **Display name** - type in the name for your DocuSign connector. This is used to distinguish between different data connectors on your platform.
-   - DocuSign Environment - indicates which environment you have your account created in. There are two types of accounts that you can create in DocuSign. A **developer** account and an **ordinary** account. If you have an ordinary account and your trying to connect to DocuSign, you need to select the **Live** option, and if your account is a developer account, then select the **Demo** option. This is important as the authentication of the account is different for those two types of account.
+   - **DocuSign Environment** - indicates which environment you have your account created in. There are two types of accounts that you can create in DocuSign. A **developer** account and an **ordinary** account. If you have an ordinary account and your trying to connect to DocuSign, you need to select the **Live** option, and if your account is a developer account, then select the **Demo** option. This is important as the authentication of the account is different for those two types of account.
      - **Demo** - indicates that your DocuSign account is a **developer** account.
+
      - **Live** - indicates that your DocuSign account is an **ordinary** account.
 
-   - **Authorize** - allows you to authorize the connection with your DocuSign account and Kianda. When you click this button, a DocuSign window will open allowing you to log in into your DocuSign to authenticate your account.
+   - **Authorize** - allows you to **authorize** the connection with your DocuSign account and Kianda. When you click this button, a DocuSign window will open allowing you to log in into your DocuSign to **authenticate** your account.
 
 4. When you have added File system details, you are ready to test your connection and add security. At the bottom of the **File system details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
 
@@ -42,6 +43,8 @@ You can use the DocuSign data connector when a process your have created require
 6. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
 
 7. Click on **Close** to close the details page and return to the data source management main view.
+
+
 
 ## What's next  ![Idea icon](/images/18.png)
 
