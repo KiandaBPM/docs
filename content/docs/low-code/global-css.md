@@ -104,13 +104,19 @@ In addition to styling forms and form elements, **modals** provide a useful way 
 
 ![Modal example](/images/modal-design-example.jpg)
 
-A **JavaScript** **function** can be called to **display** a page in a **form** **modal**. This function also allows you to **pass** **data** into the modal for use within that form.
+A **JavaScript** **function** called `showModalForm` can be called to **display** a page in a **form** **modal**. 
 
 ```html
-
- <a data-processname="new-training-process" onclick="showFormModal(this.dataset.processname,true, '&formName=SignUpform'); return false;" title="New training process" class="btn btn-xs created"> Create new training process
- </a>
+<a onclick="showModalForm('demo-process',true, '&formName=SignUpform')">Open Demo Process</a>
 ```
+
+This function also allows you to **pass** **data** into the modal for use within that form, for example:
+
+- **`nameOrUrl`** -  you can add in the **name of a process or add in a URL**, where the URL might be a website to open in the modal
+- `isNew` parameter - where **`true` -  creates a new process instance**, otherwise choose **`false` to open an existing process instance in preview mode**
+- **`params`** - **URL parameters** appended to the URL, for example 'SignUpform' as used above where formName parameter is reserved; if the form is active, the user can be directed to the specified form
+
+
 
 Now that you have been introduced to a variety of design considerations, go to the next section to learn how to use the [Global CSS Editor](#how-to-get-started-with-global-css).
 

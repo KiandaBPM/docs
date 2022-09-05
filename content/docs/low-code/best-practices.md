@@ -1,7 +1,7 @@
 ---
 title: "Low-Code development best practices"
 linkTitle: "Best practices"
-weight: 11
+weight: 12
 typora-root-url: ..\..\..\static
 ---
 

@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction ##
 
-The **Start a process** rule allows you to dynamically **start a new instance** of a different process, or a new instance of the same process. You can **transfer field data** from the current process instance to a new process instance. 
+The **Start a process** rule allows you to dynamically **start a new instance** of a different process, or a new instance of the same process. You can **transfer field data** from the current process instance to a new process instance and vice versa, typically in the case of the latter by using a second **Start a process** rule. 
 
 
 
@@ -21,7 +21,7 @@ You can add this rule:
 
 ## How to get started
 
-To dynamically set start a new process:
+To dynamically start a new process:
 
 1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item for example the **Submit** button so that it is in **edit mode** so you can see the Edit/pen button,  **Pen** button ![Pen button](/images/penicon.png).
 
@@ -45,7 +45,23 @@ To dynamically set start a new process:
 7. Click On success mapping. On the right side, type a message;  on the left side, choose a field to store the message.  Here data is being mapped back from the target process to the current process.
 8. Click OK.
 
-## Notes
+## 
+
+### Editing, deleting or duplicating rules
+
+When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
+
+1. To **disable** a rule click the slider across beside the rule name. 
+
+2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
+
+3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
+
+4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
+
+
+
+### User tip ![Target icon](/images/05.png) ###
 
 The target process can be a **Partner process**.  The partner organisation must have enabled process security (in the Process settings for the target process) to allow your process to interact with the target process.
 
@@ -57,3 +73,16 @@ Use **Trigger rules in target instance** to select a field or rule to trigger in
 
 Another feature of this rule is that you can **read data from another process** instance.  In this case it is advisable to give the title of the rule a title such as Read data from Process X.  Here you click On success mapping and use this area to copy data from the target process to the current process.
 
+Typically the **Start a process** rule is used in the following way: 
+
+- One rule to **initiate a new process instance**
+
+- **Another Start a process rule** to retrieve information from the new process instance
+
+  
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+To find out more about other workflow rules go to [Workflow](/docs/platform/rules/workflow/).
+
+To find out more about other rules go to [Rules](/docs/platform/rules/).

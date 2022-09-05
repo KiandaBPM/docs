@@ -1,5 +1,5 @@
 ---
-title: "Custom form control development"
+title: "Custom field widget development"
 weight: 8
 typora-root-url: ..\..\..\static
 ---
@@ -46,29 +46,6 @@ If you are an experienced developer with an **Administrator** or **Developer** r
 7. Custom field widgets you create will be available for use in Kianda Designer by going to **Side menu** > **Administration** > **Designer** > **click on an existing process** or **Add new** to add a new process (then click on a form to edit it), and see the Custom fields added under **Controls**.
 
       ![Custom fields](/images/customcontrol.png)
-
-
-[Webhooks](#webhooks) can be created to send a message to a specific URL by clicking on the **Webhooks** button. Click the link for more information.  
-
-   ### Webhooks
-
-   To create webhooks:
-
-   1. Click on the **Webhooks** button from the main widget view to add a webhook. 
-
-   ![Webhooks](/images/webhooks50.gif)
-
-   2. Use the slider to turn on **Enable Created Callback**, **Enable Updated Callback**, **Enable Deleted Callback** and **type in the URL** in each case to respond to process instance create, update and deleted events. 
-
-      For example, choosing **Enable Created Callback** will enable a URL callback every time a process instance is updated. This results in a HTTP GET request with parameters instanceID={instanceID}, processName={processName} and eventType=created being issued to the give URL.
-
-      **Note:** Callback has a timeout of 10 seconds.
-
-   3. Click on the **Help** button ![Help button](/images/webhookhelp.PNG) for clarification. 
-
-   4. Click on **OK** when done.
-
-   
 
 
 
