@@ -436,7 +436,9 @@
 &lt;/div></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
 &lt;p>One of the data connectors that you can connect to is &lt;strong>Salesforce&lt;/strong>. Salesforce provides customer relationship management software and applications focused on sales, customer service, marketing automation, and analytics.&lt;/p>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using the Salesforce data connector, you must have an account with Salesforce which is used to obtain information for a successful connection. If you have an account with Salesforce&lt;/p>
+&lt;p>In advance of using the Salesforce data connector, you must have an account with Salesforce which is used to obtain information for a successful connection. If you have an account with Salesforce, all you need to create within the Salesforce application is a &lt;strong>Connected App&lt;/strong>. These connected apps within Salesforce enable external applications to integrate together using its APIs. The connected app will provide you with a &lt;strong>Consumer Key&lt;/strong> and a &lt;strong>Consumer Secret&lt;/strong>. These are then used to establish the connection between your Connected app in Sales force and your Kianda subscription.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use a connected app to integrate external applications with the Salesforce API, such as a process that pulls in order status data from your Salesforce organisation into your Kianda subscription.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -454,16 +456,24 @@
 &lt;p>&lt;strong>Display name&lt;/strong> - type in the name for your Salesforce connector. This is used to distinguish between different data connectors on your platform.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Client Id&lt;/strong> -&lt;/p>
+&lt;p>&lt;strong>Client Id&lt;/strong> - used to identify the &lt;strong>Connected App&lt;/strong> created in your salesforce account. In salesforce this Client ID is called &lt;strong>Consumer Key&lt;/strong> and can be found in your Connected App &lt;strong>settings&lt;/strong>. To learn more about on how to find the &lt;strong>Consumer Key&lt;/strong> in sales force go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/salesforce/#finding-consumer-key-and-consumer-secret">Finding Consumer Key and Consumer Secret&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Client Secret&lt;/strong> -&lt;/p>
+&lt;p>&lt;strong>Client Secret&lt;/strong> - used to identify the &lt;strong>Connected App&lt;/strong> created in your salesforce account. In salesforce this Client ID is called &lt;strong>Consumer Secret&lt;/strong> and can be found in your Connected App &lt;strong>settings&lt;/strong>. To learn more about on how to find the &lt;strong>Consumer Secret&lt;/strong> in Salesforce go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/salesforce/#finding-consumer-key-and-consumer-secret">Finding Consumer Key and Consumer Secret&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Salesforce Environment -&lt;/p>
+&lt;p>&lt;strong>Salesforce Environment&lt;/strong> - indicates which environment you have your account created in. There are two types of accounts that you can create in Salesforce. A &lt;strong>developer&lt;/strong> account and an &lt;strong>ordinary&lt;/strong> account. If you have an ordinary account and your trying to connect a salesforce app, you need to select the &lt;strong>Live&lt;/strong> option and if your account is a developer account, then select the &lt;strong>Sandbox&lt;/strong> option.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Live&lt;/strong> - indicates that your Salesforce account is an &lt;strong>ordinary&lt;/strong> account.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Authorize -&lt;/p>
+&lt;p>&lt;strong>Sandbox&lt;/strong> - indicates that your salesforce account is a &lt;strong>developer&lt;/strong> account.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Authorize&lt;/strong> - allows you to authorize the connection with your Connected App and Kianda. When you click this button, a Salesforce window will open allowing you to log in into Salesforce to authenticate your account.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -479,7 +489,20 @@
 &lt;li>
 &lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Docs: SAP connector</title><link>https://docs.kianda.com/docs/platform/connectors/sap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sap/</guid><description>
+&lt;/ol>
+&lt;h3 id="finding-consumer-key-and-consumer-secret">Finding Consumer Key and Consumer Secret&lt;/h3>
+&lt;ol>
+&lt;li>Log into your Salesforce account.&lt;/li>
+&lt;li>On the top right-hand side of the screen, click on the &lt;strong>cogwheel&lt;/strong> and select &lt;strong>Setup&lt;/strong>.&lt;/li>
+&lt;li>In the left-hand pane go to &lt;strong>Apps &amp;gt; App Manager&lt;/strong>.&lt;/li>
+&lt;li>From the list of apps, find your &lt;strong>Connected App&lt;/strong> that you want to connect with Kianda and click on the &lt;strong>drop-down&lt;/strong> list on the right-hand side. Select &lt;strong>View&lt;/strong>.&lt;/li>
+&lt;li>Under API (Enable OAuth Settings), click on &lt;strong>Manage Consumer Details&lt;/strong>. A &lt;strong>Verify Your Identity&lt;/strong> window opens.&lt;/li>
+&lt;li>Enter in the &lt;strong>Verification code&lt;/strong> that was sent to your email that you used to sign up to Salesforce.&lt;/li>
+&lt;li>Click on &lt;strong>Verify&lt;/strong>.&lt;/li>
+&lt;li>Once verified, your will be brought to a page where you can find the &lt;strong>Consumer Key&lt;/strong> and &lt;strong>Consumer Secret&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>Your &lt;strong>SharePoint service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: SAP connector</title><link>https://docs.kianda.com/docs/platform/connectors/sap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sap/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: SharePoint connector</title><link>https://docs.kianda.com/docs/platform/connectors/sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sharepoint/</guid><description>
