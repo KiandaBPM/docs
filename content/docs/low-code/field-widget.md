@@ -49,7 +49,7 @@ If you are an experienced developer with an **Administrator** or **Developer** r
 
 
 
-## What's next
+## What's next ![Idea icon](/images/18.png)
 
 To continue with low-code development, you can view [Templating basics](/docs/low-code/templating-basics/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/docs/getting-started/welcome/no-code/) and [What is low-code?](/docs/getting-started/welcome/low-code/). 
 
