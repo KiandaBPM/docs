@@ -5,9 +5,55 @@
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: DocuSign</title><link>https://docs.kianda.com/docs/platform/connectors/docusign/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/docusign/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Dropbox</title><link>https://docs.kianda.com/docs/platform/connectors/dropbox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/dropbox/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>DocuSign&lt;/strong>. DocuSign enables organisations to manage electronic agreements by offering electronic signatures also know as &lt;strong>eSignatures&lt;/strong>. eSignatures are a way to sign different types of documents electronically on many different devices.&lt;/p>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself so that the DocuSign &lt;strong>Application Programming Interface (API)&lt;/strong> can be used. There are two types of accounts that you can create in DocuSign. An ordinary account and a developer account. Take note which account you have created as this information will be used to create a different connection within Kianda.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use the DocuSign data connector when a process your have created requires you to send individual documents or envelopes to get them signed electronically. With the connector you can access different types of templates that you have created within your DocuSign account, download documents, access already existing envelopes to see their status or summary.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>DocuSign&lt;/strong> from the list of data sources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will be automatically brought to the &lt;strong>DocuSign details&lt;/strong> page, where you can start setting up the connection.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/docusign-details.jpg" alt="Add new data connector button">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Display name&lt;/strong> - type in the name for your DocuSign connector. This is used to distinguish between different data connectors on your platform.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>DocuSign Environment - indicates which environment you have your account created in. There are two types of accounts that you can create in DocuSign. A &lt;strong>developer&lt;/strong> account and an &lt;strong>ordinary&lt;/strong> account. If you have an ordinary account and your trying to connect to DocuSign, you need to select the &lt;strong>Live&lt;/strong> option, and if your account is a developer account, then select the &lt;strong>Demo&lt;/strong> option. This is important as the authentication of the account is different for those two types of account.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Demo&lt;/strong> - indicates that your DocuSign account is a &lt;strong>developer&lt;/strong> account.&lt;/li>
+&lt;li>&lt;strong>Live&lt;/strong> - indicates that your DocuSign account is an &lt;strong>ordinary&lt;/strong> account.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Authorize&lt;/strong> - allows you to authorize the connection with your DocuSign account and Kianda. When you click this button, a DocuSign window will open allowing you to log in into your DocuSign to authenticate your account.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added File system details, you are ready to test your connection and add security. At the bottom of the &lt;strong>File system details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>Your &lt;strong>SharePoint service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Dropbox</title><link>https://docs.kianda.com/docs/platform/connectors/dropbox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/dropbox/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Email connector</title><link>https://docs.kianda.com/docs/platform/connectors/email/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/email/</guid><description>
