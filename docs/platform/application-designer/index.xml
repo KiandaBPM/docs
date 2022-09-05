@@ -13,9 +13,9 @@ Your browser does not support the video tag.
 &lt;li>Form &lt;strong>interaction&lt;/strong> - how users can use forms depending on certain sequences happening&lt;/li>
 &lt;li>Form &lt;strong>management&lt;/strong> - who can edit and access forms&lt;/li>
 &lt;/ol>
-&lt;p>This page presents the information you need related to form design, that is what a form looks like, and what it contains. By default, form designers can edit forms, but they can also set how other people interact with forms, for example to make forms viewable as &lt;strong>read-only&lt;/strong>. Go to &lt;a href="platform/form_management.md">Form management&lt;/a> to find out more about how form ownership works, and &lt;a href="platform/form_interaction.md">Form interaction&lt;/a> to find out how a complete process flow works once forms are designed and assigned. Read the steps below to find out more about Form design.&lt;/p>
+&lt;p>This page presents the information you need related to &lt;strong>form design&lt;/strong>, that is what a form looks like, and what it contains. By default, &lt;strong>Administrators&lt;/strong> and those with &lt;strong>Design business process&lt;/strong> role can edit forms, but they can also set how other people interact with forms, for example to make forms viewable as &lt;strong>read-only&lt;/strong>. Go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> to find out more about how form ownership works, and &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/">Form display modes&lt;/a> to find out out more about how forms display.&lt;/p>
 &lt;h2 id="designer-layout">Designer layout&lt;/h2>
-&lt;p>To access processes, go to the left-hand pane and &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process that you have created or imported, see &lt;a href="platform/process.md">Getting started with Kianda processes&lt;/a>.&lt;/p>
+&lt;p>To access processes, go to the left-hand pane and &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process that you have created or imported, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/#creating-your-first-process">Create your first process&lt;/a>.&lt;/p>
 &lt;p>From the main process view, click on any process to add forms.
 &lt;img src="https://docs.kianda.com/images/clickonprocess.png" alt="Clicking on a process">&lt;/p>
 &lt;p>The designer window opens and is made up of 3 main parts.&lt;/p>
@@ -23,8 +23,8 @@ Your browser does not support the video tag.
 &lt;p>The key components of the designer are:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Left-hand pane contains both &lt;strong>controls&lt;/strong> and &lt;strong>rules&lt;/strong> that can be added to forms. Go to &lt;a href="https://docs.kianda.com/docs/controls/">Controls&lt;/a> and &lt;a href="https://docs.kianda.com/docs/rules/">Rules&lt;/a> to find out more. The left-hand pane also houses the &lt;strong>Exit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/exitdesign.png" alt="Exit process"> to go back to the process list, the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> to save your work, the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview"> to preview what you have created and the &lt;strong>Publish&lt;/strong> button &lt;img src="https://docs.kianda.com/images/publish.png" alt="Publish button"> to publish your work.&lt;/p>
-&lt;p>Note that clicking on &lt;strong>Save&lt;/strong> saves a &lt;strong>draft&lt;/strong> which is not available to users until you click on &lt;strong>Publish&lt;/strong>.&lt;/p>
+&lt;p>Left-hand pane contains both &lt;strong>controls&lt;/strong> and &lt;strong>rules&lt;/strong> that can be added to forms. Go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more. The left-hand pane also houses the &lt;strong>Exit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/exitdesign.png" alt="Exit process"> to go back to the process list, the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> to save your work, the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview"> to preview what you have created and the &lt;strong>Publish&lt;/strong> button &lt;img src="https://docs.kianda.com/images/publish.png" alt="Publish button"> to publish your work.&lt;/p>
+&lt;p>Note that clicking on &lt;strong>Save&lt;/strong> saves a &lt;strong>draft&lt;/strong> of a process design which is not available to users until you click on &lt;strong>Publish&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The central area is where the current &lt;strong>form canvas&lt;/strong> is displayed. The canvas also houses 3 buttons by default: &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> and &lt;strong>Close&lt;/strong>. Go to &lt;a href="#adding-form-elements">Adding form elements&lt;/a> to find out more about editing these buttons and adding elements to the canvas.&lt;/p>
@@ -139,29 +139,29 @@ Your browser does not support the video tag.
 &lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button">.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>You are now ready to start adding &lt;a href="fields/README.md">Controls&lt;/a> and &lt;a href="rules/README.md">Rules&lt;/a> to your form. To implement additional settings, see &lt;a href="#process-settings">Process Settings&lt;/a>.&lt;/p>
+&lt;p>You are now ready to start adding &lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to your form. To implement additional settings, see &lt;a href="#process-settings">Process Settings&lt;/a>.&lt;/p>
 &lt;h3 id="import-forms">Import forms&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>You can import a previously designed form by clicking on the &lt;strong>Import&lt;/strong> button &lt;img src="https://docs.kianda.com/images/importform.png" alt="Import button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the arrow to select from the drop down list to &lt;strong>Select a process design&lt;/strong>.&lt;/p>
+&lt;p>Click on the arrow to select from the drop-down list to &lt;strong>Select a process design&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on a process of interest and then click on the forms to import. Forms are indicated by a + symbol and can be expanded to show elements within a form for example a panel containing different fields such as lists and text boxes. This means you can import a whole form, or just elements of a form. In this way you can very quickly reuse some or all parts of an existing form.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/importprocessdetails.png" alt="Import from another process">&lt;/p>
+&lt;p>Click on a process of interest and then click on the forms to import under &lt;strong>Select fields or forms to import&lt;/strong>. &lt;strong>Forms&lt;/strong> are indicated by a &lt;strong>+ symbol&lt;/strong> and can be expanded to show elements within a form for example a panel containing different fields such as lists and text boxes. This means you can import a whole form, or just elements of a form. In this way you can very quickly reuse some or all parts of an existing form.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/importing-form-example.jpg" alt="Import from another process">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="adding-form-elements">Adding form elements&lt;/h2>
-&lt;p>If you have added a new form during the form creation process, then a blank canvas with 3 default buttons are available to you: &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> and &lt;strong>Close&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/formbuttonedit.png" alt="Form button edit">&lt;/p>
-&lt;p>You can:&lt;/p>
+&lt;p>If you have added a new form during the form creation process, then a blank canvas with three default buttons are available to you: &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> and &lt;strong>Close&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/form-buttons-example.jpg" alt="Form button edit">&lt;/p>
+&lt;p>Within a form like the one shown above you can:&lt;/p>
 &lt;ol>
-&lt;li>Add elements to this canvas by clicking on &lt;a href="fields/README.md">Controls&lt;/a> and &lt;a href="rules/README.md">Rules&lt;/a> in the left-hand pane. Click on each link to find out more about the 16 Control fields and&lt;/li>
+&lt;li>Add elements to this canvas by clicking on &lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> in the left-hand pane. Click on each link to find out more about the 16 Control fields and 60 rule types.&lt;/li>
 &lt;li>Move elements by clicking on the &lt;strong>Drag Handle&lt;/strong> &lt;img src="https://docs.kianda.com/images/move.png" alt="Drag handle"> beside the item and dragging it to where you want to place it.&lt;/li>
 &lt;li>Edit elements by clicking on each item and clicking on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">, for example if you click on the &lt;strong>Close button&lt;/strong>, there are a number of options to choose from when editing see &lt;a href="#form-buttons">Form buttons&lt;/a>.&lt;/li>
 &lt;/ol>
@@ -265,7 +265,7 @@ Your browser does not support the video tag.
 &lt;/ol>
 &lt;p>Go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about &lt;strong>Form rules&lt;/strong>.&lt;/p>
 &lt;h3 id="form-buttons">Form buttons&lt;/h3>
-&lt;p>By default there are 3 buttons on all forms, &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> and &lt;strong>Close&lt;/strong>, but you can change these to buttons in a myriad of ways to customise your users&amp;rsquo; experience. See sections &lt;a href="#editing-a-button">Editing a button&lt;/a>, &lt;a href="#copying--a-button">Copying a button&lt;/a>, &lt;a href="#changing-button-properties">Changing button properties&lt;/a> and &lt;a href="#deleting-a-button">Deleting a button&lt;/a> below.&lt;/p>
+&lt;p>By default there are 3 buttons on all forms, &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> and &lt;strong>Close&lt;/strong>, but you can change these to buttons in a myriad of ways to customise your users&amp;rsquo; experience. See sections &lt;a href="#editing-a-button">Editing a button&lt;/a>, &lt;a href="#copying-a-button">Copying a button&lt;/a>, &lt;a href="#changing-button-properties">Changing button properties&lt;/a> and &lt;a href="#deleting-a-button-or-field">Deleting a button&lt;/a> below.&lt;/p>
 &lt;h4 id="editing-a-button">Editing a button&lt;/h4>
 &lt;p>To edit a button:&lt;/p>
 &lt;ol>
@@ -302,7 +302,7 @@ Your browser does not support the video tag.
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You can change the button to a different field type by clicking on the button itself and the &lt;strong>Change field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/changefield.png" alt="Change field">in the right-hand pane. Then choose from one of 18 field types and edit the field chosen. See &lt;a href="fields/README.md">Controls&lt;/a> for more information on field types.&lt;/p>
+&lt;p>You can change the button to a different field type by clicking on the button itself and the &lt;strong>Change field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/changefield.png" alt="Change field">in the right-hand pane. Then choose from one of 18 field types and edit the field chosen. See &lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a> for more information on field types.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h4 id="changing-button-properties">Changing button properties&lt;/h4>
@@ -320,7 +320,7 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize.png" alt="Changing text box width">&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Rules&lt;/strong> - rules for input fields. These are covered in details in &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Rules&lt;/strong> - rules for input fields. These are covered in details in &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h4 id="copying-a-button-or-field">Copying a button or field&lt;/h4>
 &lt;p>To copy a button you can click on &lt;strong>Clone&lt;/strong> button &lt;img src="https://docs.kianda.com/images/clone.png" alt="Clone button">in the right-hand pane and choose from the options:&lt;/p>

@@ -264,7 +264,7 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/enable-anonymous-sharing.jpg" alt="Anonymous Form Settings">&lt;/p>
 &lt;p>The generated link can be shared to allow sharing of the form&lt;/p>
 &lt;h4 id="existing-instance-anonymous-form-url">Existing instance anonymous form URL&lt;/h4>
-&lt;p>To setup an &lt;strong>existing instance&lt;/strong> &lt;strong>anonymous form&lt;/strong> you need to use the &lt;strong>Anonymous form rule&lt;/strong> to generate a new anonymous link at the runtime that will point to an existing process record that can then be shared with external users.&lt;/p>
+&lt;p>To setup an &lt;strong>existing instance&lt;/strong> &lt;strong>anonymous form&lt;/strong> you need to use the &lt;strong>Anonymous form link rule&lt;/strong> to generate a new anonymous link at runtime that will point to an existing process record that can then be shared with external users.&lt;/p>
 &lt;p>Note that for this to work steps 1 and 2 of &lt;a href="#new-process-instance-anonymous-form-url">New Instance Anonymous form&lt;/a> are still required.&lt;/p>
 &lt;p>The following are some of the key options of the anonymous link rule:&lt;/p>
 &lt;ul>
@@ -272,9 +272,43 @@ Your browser does not support the video tag.
 &lt;li>Link expires settings: choose from an expiry parameter like number of uses, time-based or never expire.&lt;/li>
 &lt;li>Select a Message to display on submission.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Important&lt;/strong>: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically expire the previous of the same type if a link existed.&lt;/p>
+&lt;p>&lt;strong>Important&lt;/strong>: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically expire a previous link of the same type if the link existed.&lt;/p>
+&lt;h2 id="rules">Rules&lt;/h2>
+&lt;p>Kianda &lt;strong>rules&lt;/strong> allow for dynamic actions within processes that can be used to change the workflow, send automated emails or notifications, as well as manipulate data in data sources.&lt;/p>
+&lt;p>There are 60 predefined rules, across 10 categories that allow you to drive your business processes in a myriad of ways. Go to the &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to navigate to each of the different field categories.&lt;/p>
+&lt;p>Rules can be driven by &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">conditions&lt;/a> for example based on user input, form fields will dynamically appear or hide according to how the user navigates a form, and all rules are &lt;strong>actions&lt;/strong> which can involve for example retrieving values from a datasource, storing data in a field or automating user addition to Salesforce.&lt;/p>
+&lt;p>One example of rules already mentioned is the &lt;strong>Anonymous form link&lt;/strong> rule which will dynamically generate and send a link from a form in a process to an external user, without the need for a Kianda account.&lt;/p>
+&lt;p>If the current suite of predefined rules do not meet your needs, you can use Kianda &lt;strong>Developer&lt;/strong> to create your own rule widget. In a similar fashion you can use this function to create &lt;a href="#custom-fields">custom controls or fields&lt;/a>, see more below.&lt;/p>
+&lt;h2 id="custom-fields">Custom fields&lt;/h2>
+&lt;p>In case any of the previously mentioned control types don&amp;rsquo;t suit, you can use Kianda to build your own customised control widgets. The Custom fields section provides access to fields that are built for extensibility of Kianda capabilities. It is particularly useful in those situations where existing fields or rules will not provide the required functionality.&lt;/p>
+&lt;p>Custom fields have the purpose of providing a user interface for end-users. These &lt;strong>custom fields can be built by developers&lt;/strong>. It allows a developer to build a reusable component that would then be used by process designers in real processes. Check-out the &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">development&lt;/a> section for more details on how to build custom widgets in Kianda.&lt;/p>
+&lt;h3 id="advanced-techniques">Advanced techniques&lt;/h3>
+&lt;p>Like the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/#cascading-dropdown-lists">cascading drop-down list&lt;/a> discussed above, several other advanced scenarios can be easily configured in Kianda. Here is a short-list to give you an idea what is possible:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Repeating section&lt;/strong> - A repeating section can be created by adding a &lt;strong>panel&lt;/strong> to a table field. This table can be configured to include a single column made of the panel that itself will include the repeating fields of your repeating section.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>The capture of media&lt;/strong> - Kianda enables mobile users to directly capture pictures, video or audio just like a native application.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Background save&lt;/strong> - By making use of PWA principles (Progressive Web Application), Kianda allows the ability to perform background operations. This is useful when, for example, a mobile user picks-up their phone to perform a quick action and places it back in his pocket. Operations will continue in the background allowing all data to be captured.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Image annotation&lt;/strong> - Kianda allows for image annotation online or offline.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Multi-column / row layout&lt;/strong> - Making multi-column responsive interfaces is quite easy. Simply add two panels into a form that only use half of the screen (6 columns) then add fields inside panels and you have multiple column layouts. Adding a panel using 12 columns gives you a row.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form tab colour and icon&lt;/strong> - Form tabs can be quickly customised to display their icons or tab colours, it is also possible to define custom colours for selected and completed form tabs.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Hide form tab and left nav&lt;/strong> - This is self-explanatory, yes you can hide the default navigation elements.&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="cloning">Cloning&lt;/h2>
-&lt;p>In the form designer, almost any of the components can be cloned. This will increase your productivity considerably and will make creating multi-step processes a breeze.&lt;/p>
+&lt;p>In Kianda &lt;strong>Designer&lt;/strong>, almost any of the components can be cloned. This will increase your productivity considerably and will make creating multi-step processes a breeze.&lt;/p>
 &lt;p>To clone either a field, a panel or even a form, simply select the component then click the clone button in the properties panel in the right-hand side of the panel.&lt;/p>
 &lt;p>If cloning a field, the cloning dialog box will prompt for the destination of the new cloned field, once your choice is made, simply click ok.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Cloning a form&lt;/strong>&lt;/em>&lt;/p>
@@ -283,20 +317,8 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-&lt;h2 id="custom-fields">Custom fields&lt;/h2>
-&lt;p>The Custom fields section provides access to fields that are built for extensibility of Kianda capabilities. It is particularly useful in those situations where existing fields or rules will not provide the required functionality.&lt;/p>
-&lt;p>Custom fields have the purpose of providing a user interface for end-users. These custom fields can be built by developers. It allows a developer to build a reusable component that would then be used by process designers in real processes. Check-out the &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">development&lt;/a> section for more details on how to build custom widgets in Kianda.&lt;/p>
-&lt;h2 id="advanced-techniques">Advanced techniques&lt;/h2>
-&lt;p>Like the cascading dropdown discussed above, several other advanced scenarios can be easily configured in Kianda. Here is a short-list:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Repeating section&lt;/strong> - A repeating section can be created by adding a &lt;strong>panel&lt;/strong> to a table field. This table can be configured to include a single column made of the panel that itself will include the repeating fields of your repeating section.&lt;/li>
-&lt;li>&lt;strong>The capture of media&lt;/strong> - Kianda enables mobile users to directly capture pictures, video or audio just like a native application.&lt;/li>
-&lt;li>&lt;strong>Background save&lt;/strong> - By making use of PWA principles (Progressive Web Application), Kianda allows the ability to perform background operations. This is useful when, for example, a mobile user picks-up their phone to perform a quick action and places it back in his pocket. Operations will continue in the background allowing all data to be captured.&lt;/li>
-&lt;li>&lt;strong>Image annotation&lt;/strong> - Kianda allows for image annotation online or offline.&lt;/li>
-&lt;li>&lt;strong>Multi-column / row layout&lt;/strong> - Making multi-column responsive interfaces is quite easy. Simply add two panels into a form that only use half of the screen (6 columns) then add fields inside panels and you have multiple column layouts. Adding a panel using 12 columns gives you a row.&lt;/li>
-&lt;li>&lt;strong>Form tab colour and icon&lt;/strong> - Form tabs can be quickly customised to display their icons or tab colours, it is also possible to define custom colours for selected and completed form tabs.&lt;/li>
-&lt;li>&lt;strong>Hide form tab and left nav&lt;/strong> - This is self-explanatory, yes you can hide the default navigation elements.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Controls</title><link>https://docs.kianda.com/docs/platform/controls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/</guid><description>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about process and forms, go to the link below:&lt;/p></description></item><item><title>Docs: Controls</title><link>https://docs.kianda.com/docs/platform/controls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/</guid><description>
 &lt;p>&lt;strong>Controls&lt;/strong> (commonly called &lt;strong>fields&lt;/strong>) are predefined field widgets that allow you to add specific elements to your forms and processes, such as lists, text boxes, buttons and tables. There are 16 types of controls (fields) you can add to a form - see &lt;a href="#controls-list">Controls list&lt;/a> for details.&lt;/p>
 &lt;p>If you have developer skills, you can create your own custom field widget - see &lt;a href="https://docs.kianda.com/docs/low-code/">Development&lt;/a> for more information.&lt;/p>
 &lt;h2 id="getting-started-with-controls">Getting started with Controls&lt;/h2>
