@@ -49,7 +49,7 @@ You can use a connected app to integrate external applications with the Salesfor
 
 7. Click on **Close** to close the details page and return to the data source management main view.
 
-### Finding Consumer Key and Consumer Secret
+### Acquiring Consumer Key and Consumer Secret
 
 1. Log into your Salesforce account.
 2. On the top right-hand side of the screen, click on the **cogwheel** and select **Setup**.
