@@ -4,7 +4,7 @@ weight: 14
 typora-root-url: ..\..\..\..\static
 ---
 
-One of the data connectors that you can connect to is **Salesforce**. Salesforce provides customer relationship management software and applications focused on sales, customer service, marketing automation, and analytics.
+One of the data connectors that you can connect to is **Salesforce**. Salesforce provides customer relationship management software and applications focused on sales, customer service, marketing automation, and analytics. The Salesforce data connector allows you to access information from your Salesforce account which can then be used within your Kianda subscription.
 
 ## Before you get started
 
