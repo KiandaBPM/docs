@@ -158,11 +158,15 @@
 &lt;h3 id="using-modals-in-form-design">Using modals in form design&lt;/h3>
 &lt;p>In addition to styling forms and form elements, &lt;strong>modals&lt;/strong> provide a useful way to communicate with users by displaying information in front of page content requiring the user to engage with an action within the modal . In the example below, you can see how the Transfer assets modal appears on the page, requiring users to view and interact with functionality &lt;strong>contained&lt;/strong> &lt;strong>within&lt;/strong> &lt;strong>the modal&lt;/strong> without having to navigate away from the &lt;strong>current&lt;/strong> &lt;strong>page&lt;/strong> they are on. This is not only &lt;strong>convenient&lt;/strong> for the user but it adds a &lt;strong>layered&lt;/strong> &lt;strong>design&lt;/strong> to your Kianda platform and its aesthetically pleasing to view.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/modal-design-example.jpg" alt="Modal example">&lt;/p>
-&lt;p>A &lt;strong>JavaScript&lt;/strong> &lt;strong>function&lt;/strong> can be called to &lt;strong>display&lt;/strong> a page in a &lt;strong>form&lt;/strong> &lt;strong>modal&lt;/strong>. This function also allows you to &lt;strong>pass&lt;/strong> &lt;strong>data&lt;/strong> into the modal for use within that form.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">a&lt;/span> &lt;span style="color:#c4a000">data-processname&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;new-training-process&amp;#34;&lt;/span> &lt;span style="color:#c4a000">onclick&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;showFormModal(this.dataset.processname,true, &amp;#39;&amp;amp;formName=SignUpform&amp;#39;); return false;&amp;#34;&lt;/span> &lt;span style="color:#c4a000">title&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;New training process&amp;#34;&lt;/span> &lt;span style="color:#c4a000">class&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;btn btn-xs created&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span> Create new training process
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">a&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now that you have been introduced to a variety of design considerations, go to the next section to learn how to use the &lt;a href="#how-to-get-started-with-global-css">Global CSS Editor&lt;/a>.&lt;/p>
+&lt;p>A &lt;strong>JavaScript&lt;/strong> &lt;strong>function&lt;/strong> called &lt;code>showModalForm&lt;/code> can be called to &lt;strong>display&lt;/strong> a page in a &lt;strong>form&lt;/strong> &lt;strong>modal&lt;/strong>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">a&lt;/span> &lt;span style="color:#c4a000">onclick&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;showModalForm(&amp;#39;demo-process&amp;#39;,true, &amp;#39;&amp;amp;formName=SignUpform&amp;#39;)&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>Open Demo Process&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">a&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This function also allows you to &lt;strong>pass&lt;/strong> &lt;strong>data&lt;/strong> into the modal for use within that form, for example:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>&lt;code>nameOrUrl&lt;/code>&lt;/strong> - you can add in the &lt;strong>name of a process or add in a URL&lt;/strong>, where the URL might be a website to open in the modal&lt;/li>
+&lt;li>&lt;code>isNew&lt;/code> parameter - where &lt;strong>&lt;code>true&lt;/code> - creates a new process instance&lt;/strong>, otherwise choose &lt;strong>&lt;code>false&lt;/code> to open an existing process instance in preview mode&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>&lt;code>params&lt;/code>&lt;/strong> - &lt;strong>URL parameters&lt;/strong> appended to the URL, for example &amp;lsquo;SignUpform&amp;rsquo; as used above where formName parameter is reserved; if the form is active, the user can be directed to the specified form&lt;/li>
+&lt;/ul>
+&lt;p>Now that you have been introduced to a variety of design considerations, go to the next section to learn how to use the &lt;a href="#how-to-get-started-with-global-css">Global CSS Editor&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started-with-global-css">How to get started with Global CSS&lt;/h2>
 &lt;p>To use a Global CSS file:&lt;/p>
 &lt;ol>
@@ -297,7 +301,7 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;p>To learn more about dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard pages&lt;/a>.&lt;/p></description></item><item><title>Docs: Global JavaScript file</title><link>https://docs.kianda.com/docs/low-code/global-javascript-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-javascript-file/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Custom form control development</title><link>https://docs.kianda.com/docs/low-code/field-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/field-widget/</guid><description>
+&lt;/div></description></item><item><title>Docs: Custom field widget development</title><link>https://docs.kianda.com/docs/low-code/field-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/field-widget/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>There are currently 16 predefined field or control widgets available to use in forms and processes, covering 3 categories: &lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/">Layout&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a>. Click on the relevant links to find out more about each area. However if customised fields have been created, they are available to those with the role &lt;strong>Administration&lt;/strong> and &lt;strong>Design business process&lt;/strong> to use in process and form design in Kianda &lt;strong>Designer&lt;/strong>. Customised fields are available under the &lt;strong>Custom controls&lt;/strong> category.&lt;/p>
 &lt;p>Custom controls are created by &lt;strong>Administrators&lt;/strong> or &lt;strong>Developers&lt;/strong> who have coding experience to use Kianda&amp;rsquo;s low-code development feature, Kianda &lt;strong>Developer&lt;/strong>.&lt;/p>
@@ -336,28 +340,47 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;p>&lt;img src="https://docs.kianda.com/images/customcontrol.png" alt="Custom fields">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;a href="#webhooks">Webhooks&lt;/a> can be created to send a message to a specific URL by clicking on the &lt;strong>Webhooks&lt;/strong> button. Click the link for more information.&lt;/p>
-&lt;h3 id="webhooks">Webhooks&lt;/h3>
-&lt;p>To create webhooks:&lt;/p>
-&lt;ol>
-&lt;li>Click on the &lt;strong>Webhooks&lt;/strong> button from the main widget view to add a webhook.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/webhooks50.gif" alt="Webhooks">&lt;/p>
-&lt;ol start="2">
-&lt;li>
-&lt;p>Use the slider to turn on &lt;strong>Enable Created Callback&lt;/strong>, &lt;strong>Enable Updated Callback&lt;/strong>, &lt;strong>Enable Deleted Callback&lt;/strong> and &lt;strong>type in the URL&lt;/strong> in each case to respond to process instance create, update and deleted events.&lt;/p>
-&lt;p>For example, choosing &lt;strong>Enable Created Callback&lt;/strong> will enable a URL callback every time a process instance is updated. This results in a HTTP GET request with parameters instanceID={instanceID}, processName={processName} and eventType=created being issued to the give URL.&lt;/p>
+&lt;h2 id="whats-next">What&amp;rsquo;s next&lt;/h2>
+&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Custom rule widget development</title><link>https://docs.kianda.com/docs/low-code/rule-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/rule-widget/</guid><description/></item><item><title>Docs: Custom dashboard widget development</title><link>https://docs.kianda.com/docs/low-code/dashboard-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/dashboard-widget/</guid><description/></item><item><title>Docs: Webhooks</title><link>https://docs.kianda.com/docs/low-code/webhooks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/webhooks/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Kianda &lt;strong>Developer&lt;/strong> includes a &lt;strong>webhooks&lt;/strong> function. A &lt;strong>webhook&lt;/strong> or web &lt;strong>callback&lt;/strong> allows information to be pushed from Kianda to your applications in real time when &lt;strong>process instances are created, deleted or updated&lt;/strong>. This provides an efficient way to execute event reactions, thereby eliminating the need to continuously poll for data.&lt;/p>
+&lt;p>The Kianda &lt;strong>webhooks&lt;/strong> function allows you to configure URLs that can respond to process instance creation, deletion and update events. When these events happen, the webhook will then make a HTTP request to your application, including variables like the process instance name, querying the provided URL, so your application can be updated.&lt;/p>
 &lt;p>&lt;strong>Note:&lt;/strong> Callback has a timeout of 10 seconds.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>You must have an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a> for more details on roles. Then to get started with webhooks:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to &lt;strong>Administration&lt;/strong> in the left-hand side menu, and click on &lt;strong>Developer&lt;/strong>. This will bring you to the &lt;strong>Developer resources&lt;/strong> page.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Developer resources page&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/widgetview2.jpg" alt="Widget view">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Webhooks&lt;/strong> to create a process instance callback.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Instance Callback URLs&lt;/strong> dialog box appears.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/webhooks50.gif" alt="Webhooks">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Use the slider to turn on the relevant callback:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Enable Created Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>updated&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;code>**eventType=created**&lt;/code> being issued to the given URL.&lt;/li>
+&lt;li>&lt;strong>Enable Updated Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>updated&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;code>**eventType=updated**&lt;/code> being issued to the given URL.&lt;/li>
+&lt;li>&lt;strong>Enable Deleted Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>deleted&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;code>**eventType=deleted**&lt;/code> being issued to the given URL.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>In each case &lt;strong>type in the URL&lt;/strong> to respond to process instance create, update and deleted events.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Help&lt;/strong> button &lt;img src="https://docs.kianda.com/images/webhookhelp.PNG" alt="Help button"> for clarification.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> when done.&lt;/p>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when done or click on &lt;strong>Close&lt;/strong> at any stage to close the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="whats-next">What&amp;rsquo;s next&lt;/h2>
-&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Custom rule widget development</title><link>https://docs.kianda.com/docs/low-code/rule-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/rule-widget/</guid><description/></item><item><title>Docs: Custom dashboard widget development</title><link>https://docs.kianda.com/docs/low-code/dashboard-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/dashboard-widget/</guid><description/></item><item><title>Docs: Low-Code development best practices</title><link>https://docs.kianda.com/docs/low-code/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/best-practices/</guid><description>
+&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Low-Code development best practices</title><link>https://docs.kianda.com/docs/low-code/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/best-practices/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item></channel></rss>
