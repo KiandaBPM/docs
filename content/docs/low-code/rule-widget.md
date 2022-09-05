@@ -19,7 +19,7 @@ There are currently 60 predefined rules available to use in forms and processes,
 - [SharePoint](/docs/platform/rules/sharepoint/)
 - [KiandaAI](/docs/platform/rules/kianda-ai/)
 
-Click on the relevant links to find out more about each area. However if customised rules have been created, they are available to those with the role **Administration** and **Design business process** to use in process and form design in Kianda **Designer**. Customised fields are available under the **Custom rules** category.
+Click on the relevant links to find out more about each area. However if customised rules have been created, they are available to those with the role **Administration** and **Design business process** to use in process and form design in Kianda **Designer**. Customised rules are available under the **Custom rules** category under **Add a rule**.
 
 Custom controls are created by **Administrators** or **Developers** who have coding experience to use Kianda's low-code development feature, Kianda **Developer**. 
 
@@ -64,4 +64,6 @@ If you are an experienced developer with an **Administrator** or **Developer** r
 
 ## What's next ![Idea icon](/images/18.png)
 
-To continue with low-code development, you can view [Templating basics](/docs/low-code/templating-basics/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/docs/getting-started/welcome/no-code/) and [What is low-code?](/docs/getting-started/welcome/low-code/). 
+To continue with low-code development, you can view [Templating basics](/docs/low-code/templating-basics/). If you would like to learn more about low-code go to the [Low-code development](/docs/low-code/) page and from there navigate to other pages on low-code practices.
+
+To create other widgets go to [Custom field widget](/docs/low-code/field-widget/) and [Custom dashboard widget](/docs/low-code/dashboard-widget/) pages to find out more.
