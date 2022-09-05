@@ -242,12 +242,12 @@ Your browser does not support the video tag.
 &lt;p>Another way of validating input is to use the &lt;strong>validate input rule&lt;/strong> this allows greater flexibility in terms of when or what to validate, see &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/validate-input/">Validate input&lt;/a> for more information.&lt;/p>
 &lt;p>In addition to changing field properties, you can configure &lt;a href="#settings">settings&lt;/a> to make processes perform the way you want.&lt;/p>
 &lt;h2 id="settings">Settings&lt;/h2>
-&lt;p>In addition to &lt;strong>changing field properties&lt;/strong> like &lt;a href="#input-validation">Input validation&lt;/a>, you can edit process, form and field &lt;strong>settings&lt;/strong>. Having settings at each level will allow you to tweak your process design in minute.&lt;/p>
+&lt;p>In addition to &lt;strong>changing field properties&lt;/strong> like &lt;a href="#input-validation">Input validation&lt;/a>, you can &lt;strong>edit process, form and field&lt;/strong> &lt;strong>settings&lt;/strong>. Having settings at each level will allow you to tweak your process design in minute.&lt;/p>
 &lt;p>At the highest level, &lt;strong>process settings&lt;/strong> are found in the right-hand side pane of Kianda &lt;strong>Designer&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-settings.jpg" alt="Process settings">&lt;/p>
 &lt;p>There are many options within &lt;strong>Settings&lt;/strong> to manage for example process security and set process instance settings. One setting example is &lt;strong>Enabling anonymous sharing of forms&lt;/strong> explained in more detail below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-settings-anonymous.jpg" alt="Process settings">&lt;/p>
-&lt;h3 id="-anonymous-forms">### Anonymous forms&lt;/h3>
+&lt;h3 id="anonymous-forms">Anonymous forms&lt;/h3>
 &lt;p>&lt;strong>Anonymous forms&lt;/strong> are a great way of &lt;strong>allowing people outside of your organisation&lt;/strong> to interact with your processes. It could be something as simple as a feedback form or a GDPR data request but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission, or person assigned to manage the form.&lt;/p>
 &lt;p>Anonymous forms can be embedded in iframes and safely displayed within other web-based applications. In Kianda there are effectively two types of anonymous forms:&lt;/p>
 &lt;ul>
