@@ -356,7 +356,7 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/rules/sharepoint/">SharePoint&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/rules/kianda-ai/">KiandaAI&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>Click on the relevant links to find out more about each area. However if customised rules have been created, they are available to those with the role &lt;strong>Administration&lt;/strong> and &lt;strong>Design business process&lt;/strong> to use in process and form design in Kianda &lt;strong>Designer&lt;/strong>. Customised fields are available under the &lt;strong>Custom rules&lt;/strong> category.&lt;/p>
+&lt;p>Click on the relevant links to find out more about each area. However if customised rules have been created, they are available to those with the role &lt;strong>Administration&lt;/strong> and &lt;strong>Design business process&lt;/strong> to use in process and form design in Kianda &lt;strong>Designer&lt;/strong>. Customised rules are available under the &lt;strong>Custom rules&lt;/strong> category under &lt;strong>Add a rule&lt;/strong>.&lt;/p>
 &lt;p>Custom controls are created by &lt;strong>Administrators&lt;/strong> or &lt;strong>Developers&lt;/strong> who have coding experience to use Kianda&amp;rsquo;s low-code development feature, Kianda &lt;strong>Developer&lt;/strong>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>If you are an experienced developer with an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>, you can create a new rule widget within Kianda by doing the following:&lt;/p>
@@ -394,7 +394,69 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Custom dashboard widget development</title><link>https://docs.kianda.com/docs/low-code/dashboard-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/dashboard-widget/</guid><description/></item><item><title>Docs: Webhooks</title><link>https://docs.kianda.com/docs/low-code/webhooks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/webhooks/</guid><description>
+&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about low-code go to the &lt;a href="https://docs.kianda.com/docs/low-code/">Low-code development&lt;/a> page and from there navigate to other pages on low-code practices.&lt;/p>
+&lt;p>To create other widgets go to &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">Custom field widget&lt;/a> and &lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">Custom dashboard widget&lt;/a> pages to find out more.&lt;/p></description></item><item><title>Docs: Custom dashboard widget development</title><link>https://docs.kianda.com/docs/low-code/dashboard-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/dashboard-widget/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>There are currently 7 predefined dashboard widgets available to use to create illustrative and responsive pages to show how your processes are performing at a glance. These widgets are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Richtext&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List&lt;/a>&lt;/li>
+&lt;li>&lt;a href="//docs/platform/pages/chart/">Chart&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walk-through&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Click on the relevant links to find out more about each area. However if customised dashboards have been created, they are available to those with the &lt;strong>Administration&lt;/strong> role to use in dashboard management in Kianda. Customised dashboards are available in the drop-down list for widgets when creating or editing dashboard pages.&lt;/p>
+&lt;p>Custom dashboards are created by &lt;strong>Administrators&lt;/strong> or &lt;strong>Developers&lt;/strong> who have coding experience to use Kianda&amp;rsquo;s low-code development feature, Kianda &lt;strong>Developer&lt;/strong>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>If you are an experienced developer with an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>, you can create a new dashboard widget within Kianda by doing the following:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to &lt;strong>Administration&lt;/strong> in the left-hand side menu, and click on &lt;strong>Developer&lt;/strong>. This will bring you to the &lt;strong>Developer resources&lt;/strong> page. Dashboard widgets are of type &amp;lsquo;Widget&amp;rsquo; in this list.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Widget view&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/widgetview2.jpg" alt="Widget view">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>New widget&lt;/strong> to create a new rule widget.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out the &lt;strong>Edit widget&lt;/strong> dialog box - that is &lt;strong>Title&lt;/strong>, &lt;strong>Unique Id&lt;/strong> (which is autofilled from the title), &lt;strong>Widget Icon&lt;/strong>, where you can select from hundreds of icons, and then &lt;strong>Widget type&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-dashboard-widget.jpg" alt="Edit widget">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when complete.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you create a custom field widget, the &lt;strong>Widget UI&lt;/strong> and &lt;strong>Widget Code&lt;/strong> tabs are displayed. These two screenshots show the default code for &amp;lsquo;Widget UI&amp;rsquo; and &amp;lsquo;Widget Code&amp;rsquo;.&lt;/p>
+&lt;p>The &amp;lsquo;Widget UI&amp;rsquo; defines the HTML, handlers, expressions and more.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Dashboard widget UI&lt;/strong>&lt;/em>
+&lt;img src="https://docs.kianda.com/images/dashboard-widget-ui.jpg" alt="Widget UI">&lt;/p>
+&lt;p>The &amp;lsquo;Widget Code&amp;rsquo; defines the logic and functions.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Dashboard widget code&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-widget-code.jpg" alt="Widget code">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Widgets created are visible in the main widget view. From here, you can edit a widget by clicking on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bluepen.png" alt="Pen button"> (Pen icon), delete a widget by clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin button"> and restore earlier versions of a widget by clicking on the &lt;strong>Version restore&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bluerestore.png" alt="Restore">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Custom rule widgets you create will be available for use in dashboard pages for &lt;strong>Administrators&lt;/strong> by going to &lt;strong>Side menu&lt;/strong> &amp;gt; &lt;strong>Home&lt;/strong> &amp;gt; and click on the &lt;strong>Create a new page&lt;/strong> to create a new dashboard page, or click on an existing dashboard in the left-hand pane.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit page button"> to make the widget menu appear.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The newly created custom dashboard widget will be available in the drop-down menu by clicking on the down arrow.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-dashboard-widgets.jpg" alt="Custom dashboard widgets drop-down list">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then click on the new widget design name to implement the widget, starting with editing the widget and then change settings, see &lt;a href="https://docs.kianda.com/docs/platform/pages/#how-to-edit-dashboard-page-settings">Edit dashboard page settings&lt;/a> for more information on general settings.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about low-code go to the &lt;a href="https://docs.kianda.com/docs/low-code/">Low-code development&lt;/a> page and from there navigate to other pages on low-code practices.&lt;/p>
+&lt;p>To create other widgets go to &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">Custom field widget&lt;/a> and &lt;a href="https://docs.kianda.com/docs/low-code/rule-widget/">Custom rule widget&lt;/a> pages to find out more.&lt;/p>
+&lt;p>Go to the link on &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> to learn more about dashboard pages.&lt;/p></description></item><item><title>Docs: Webhooks</title><link>https://docs.kianda.com/docs/low-code/webhooks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/webhooks/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Kianda &lt;strong>Developer&lt;/strong> includes a &lt;strong>webhooks&lt;/strong> function. A &lt;strong>webhook&lt;/strong> or web &lt;strong>callback&lt;/strong> allows information to be pushed from Kianda to your applications in real time when &lt;strong>process instances are created, deleted or updated&lt;/strong>. This provides an efficient way to execute event reactions, thereby eliminating the need to continuously poll for data.&lt;/p>
 &lt;p>The Kianda &lt;strong>webhooks&lt;/strong> function allows you to configure URLs that can respond to process instance creation, deletion and update events. When these events happen, the webhook will then make a HTTP request to your application, including variables like the process instance name, querying the provided URL, so your application can be updated.&lt;/p>
