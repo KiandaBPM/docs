@@ -12,7 +12,7 @@ You can use the Dropbox connector when you want a process within your Kianda sub
 
 ## Before getting started
 
-
+In advance of using the Dropbox data connector, you must have an account with Dropbox. The account is used to authorise a connection between your Kianda subscription and your Dropbox account.  
 
 ## How to get started
 

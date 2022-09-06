@@ -12,7 +12,7 @@ You can use the DocuSign data connector when a process your have created require
 
 ## Before you get started
 
-In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself so that the DocuSign **Application Programming Interface (API)** can be used. There are two types of accounts that you can create in DocuSign. An **ordinary** account and a **developer** account. Take note which account you have created as this information will be used to create a different connection within Kianda.
+In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself, so that the DocuSign **Application Programming Interface (API)** can be used. There are two types of accounts that you can create in DocuSign. An **ordinary** account and a **developer** account. Take note which account you have created as this information will be used to create a different connection within Kianda.
 
 ## How to get started
 
