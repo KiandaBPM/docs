@@ -6,13 +6,13 @@ typora-root-url: ..\..\..\..\static
 
 One of the data connectors within Kianda that you can connect to is **DocuSign**. DocuSign enables organisations to manage electronic agreements by offering electronic signatures also know as **eSignatures**. eSignatures are a way to sign different types of documents electronically on many different devices.  
 
-## Before you get started
-
-In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself so that the DocuSign **Application Programming Interface (API)** can be used. There are two types of accounts that you can create in DocuSign. An **ordinary** account and a **developer** account. Take note which account you have created as this information will be used to create a different connection within Kianda.
-
 ## When to use
 
 You can use the DocuSign data connector when a process your have created requires you to send individual documents or envelopes to get them signed **electronically**. With the connector you can access different types of **templates** that you have created within your DocuSign account, **download** documents, access already existing envelopes to see their **status** or **summary**. 
+
+## Before you get started
+
+In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself so that the DocuSign **Application Programming Interface (API)** can be used. There are two types of accounts that you can create in DocuSign. An **ordinary** account and a **developer** account. Take note which account you have created as this information will be used to create a different connection within Kianda.
 
 ## How to get started
 
