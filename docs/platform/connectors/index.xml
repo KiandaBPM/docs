@@ -198,7 +198,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/email-connector-global-settings.jpg" alt="Global settings">&lt;/p>
 &lt;/li>
 &lt;/ol></description></item><item><title>Docs: File system</title><link>https://docs.kianda.com/docs/platform/connectors/file-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/file-system/</guid><description>
-&lt;p>A &lt;strong>File system&lt;/strong> data connector allows you to use your local file system as a data source for your Kianda forms or dashboards. This means that as your processes are running they will use the information from the local file system or depending on the process, update or delete information at in the local file system location. Kianda has the ability to extract files, navigate subfolders and write new files into the directory. This includes local file and internet file systems.&lt;/p>
+&lt;p>A &lt;strong>File system&lt;/strong> data connector allows you to use your local file system as a data source for your Kianda forms or dashboards. This means that as your processes are running, they will use the information from the local file system or depending on the process, update or delete information at the local file system location. Kianda has the ability to extract files, navigate subfolders and write new files into the directory, this includes local file and internet file systems.&lt;/p>
 &lt;p>Using this type of datasource is useful when you want Kianda to have access to your directory, to extract and read files as well as writing files to the directory.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
