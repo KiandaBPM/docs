@@ -414,9 +414,59 @@
 &lt;p>The connector is now established and can be used when designing processes.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about how to build processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a> .&lt;/p></description></item><item><title>Docs: MySql</title><link>https://docs.kianda.com/docs/platform/connectors/mysql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/mysql/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Office 365</title><link>https://docs.kianda.com/docs/platform/connectors/office-365/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/office-365/</guid><description>
+&lt;p>One of the datasources available in Kianda is a &lt;strong>MySQL Server&lt;/strong> datasource. MySQL is a relational database management system (&lt;strong>RDBMS&lt;/strong>) used to manage structured collections of data. This data can consist of anything from a simple to do list to a more complex organisation network. Using the MySQL server as your datasource, you can perform any Create, Read, Update and Delete (&lt;strong>CRUD&lt;/strong>) operations using the &lt;strong>Data&lt;/strong> rules provided in the Kianda platform, to learn more about data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>. Using the MySQL server connector, you have access to all tables within your database from your server, keep in mind that you can perform CRUD operations on data within a &lt;strong>table&lt;/strong> of the database, but you &lt;strong>cannot&lt;/strong> create or delete &lt;strong>tables themselves&lt;/strong>.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use the MySQL Server connector when you want &lt;strong>access&lt;/strong> or &lt;strong>modify&lt;/strong> data within a &lt;strong>table&lt;/strong> in your MySQL server. You can connect the MySQL server connector to a &lt;strong>List&lt;/strong> field as its datasource, meaning you can access information from a table and display the information that are stored in the table. For example if your MySQL server contains tables such as &lt;strong>Employees&lt;/strong>, &lt;strong>Purchases&lt;/strong> and &lt;strong>Standing Orders&lt;/strong>, you will be able to connect the list field to one of those tables giving you CRUD access to its data.&lt;/p>
+&lt;p>Take a table &lt;strong>Employees&lt;/strong> as an example, if this employee table contains data about the employees in your company such as name, phone number, email address and home address. You can &lt;strong>create&lt;/strong> a new employee by providing necessary information, you can &lt;strong>read&lt;/strong> (display) employee data, &lt;strong>update&lt;/strong> employees information for example when a home address has changed and you can &lt;strong>delete&lt;/strong> an employee from the table. Those are the CRUD operations you can perform on MySQL server through a process within Kianda.&lt;/p>
+&lt;h2 id="before-getting-started">Before getting started&lt;/h2>
+&lt;p>When establishing a connection using MySQL data connector, you are creating a connection with a &lt;strong>Database&lt;/strong> from a server, not the &lt;strong>server&lt;/strong> itself. Before continuing make sure that your MySQL server has a &lt;strong>database&lt;/strong> you can connect to. A database can represent type of data you want to access and with in this database, you need to create a &lt;strong>table&lt;/strong> representing the actual data you will have CRUD access to. For example creating a database of your company name such as &lt;strong>GreenITR&lt;/strong>, and within this database you can create tables to represent your &lt;strong>Employees&lt;/strong>, &lt;strong>Purchases&lt;/strong> and &lt;strong>Standing Orders&lt;/strong>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>MySQL&lt;/strong> from the list of datasources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out fields in the &lt;strong>MySQL Server details&lt;/strong> screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/mysql-details.jpg" alt="SQL Server details page">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your MySQL server connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
+&lt;li>&lt;strong>Server&lt;/strong> - the name of the server you want to access or the IP address where the server is hosted. When you are running a local server on your machine you can use &lt;code>localhost&lt;/code> as the server name. If you are connecting to a public server, enter in the name of the server.&lt;/li>
+&lt;li>&lt;strong>Database&lt;/strong> - the name of the database from your server that you want to connect to.&lt;/li>
+&lt;li>&lt;strong>User&lt;/strong> - username used to log into the server.&lt;/li>
+&lt;li>&lt;strong>Password&lt;/strong> - password used to log into the server.&lt;/li>
+&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is disabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between a &lt;strong>locally run MySQL server&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>. Check this option if you want to connect to a server that is running on your local machine. When &lt;strong>Use Kianda Cloud Connect&lt;/strong> is enabled, a &lt;strong>Connectors&lt;/strong> option appears.
+&lt;ul>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that &lt;strong>runs&lt;/strong> the &lt;strong>local MySQL server&lt;/strong> that you want to connect to.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Status&lt;/strong> - represents the current status of the connection.
+&lt;ul>
+&lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed&lt;/li>
+&lt;li>&lt;strong>test failed&lt;/strong> - means that the details of the connector are incorrect and the connection has failed.&lt;/li>
+&lt;li>&lt;strong>ready&lt;/strong> - means that the connector has successfully connected and its ready to be used.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added the MySQL server details, you are ready to test your connection and add security. At the bottom of the &lt;strong>MySQL Server details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>Your &lt;strong>SQL Server connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Office 365</title><link>https://docs.kianda.com/docs/platform/connectors/office-365/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/office-365/</guid><description>
 &lt;p>One of the datasources available in Kianda is a connector to Office 365. Kianda has the ability to read users’ profiles, extract data, update users and groups and enable Single Sign-On (SSO). The Office 365 datasource can be used for example to automatically import users using a scheduled task within Kianda or with individual Kianda processes to update the configuration of users and groups within Office 365.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>If you have an Office 365 subscription, you can create an Office 365 data connector so that Kianda can access data and manipulate data at that data source.&lt;/p>
