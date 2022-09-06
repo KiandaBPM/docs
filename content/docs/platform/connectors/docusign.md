@@ -4,8 +4,6 @@ weight: 3
 typora-root-url: ..\..\..\..\static
 ---
 
-## Introduction
-
 One of the data connectors within Kianda that you can connect to is **DocuSign**. DocuSign enables organisations to manage electronic agreements by offering electronic signatures also know as **eSignatures**. eSignatures are a way to sign different types of documents electronically on many different devices.  
 
 ## Before you get started
