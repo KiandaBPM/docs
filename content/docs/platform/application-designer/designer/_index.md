@@ -23,13 +23,13 @@ There are 3 key principles to consider when working with forms:
 2) Form **interaction** - how users can use forms depending on certain sequences happening
 3) Form **management** - who can edit and access forms
 
-This page presents the information you need related to form design, that is what a form looks like, and what it contains. By default, form designers can edit forms, but they can also set how other people interact with forms, for example to make forms viewable as **read-only**. Go to [Form management](platform/form_management.md) to find out more about how form ownership works, and [Form interaction](platform/form_interaction.md) to find out how a complete process flow works once forms are designed and assigned. Read the steps below to find out more about Form design.
+This page presents the information you need related to **form design**, that is what a form looks like, and what it contains. By default, **Administrators** and those with **Design business process** role can edit forms, but they can also set how other people interact with forms, for example to make forms viewable as **read-only**. Go to [Form owners](/docs/platform/application-designer/forms/form-owners/) to find out more about how form ownership works, and [Form display modes](/docs/platform/application-designer/forms/form-display-modes/) to find out out more about how forms display. 
 
 
 
 ## Designer layout ##
 
-To access processes, go to the left-hand pane and **Administration** > **Designer** and click on a process that you have created or imported, see [Getting started with Kianda processes](platform/process.md).
+To access processes, go to the left-hand pane and **Administration** > **Designer** and click on a process that you have created or imported, see [Create your first process](/docs/platform/application-designer/#creating-your-first-process).
 
 From the main process view, click on any process to add forms.
 ![Clicking on a process](/images/clickonprocess.png)
@@ -40,9 +40,9 @@ The designer window opens and is made up of 3 main parts.
 
 The key components of the designer are:
 
-1. Left-hand pane contains both **controls** and **rules** that can be added to forms. Go to [Controls](/docs/controls/) and [Rules](/docs/rules/) to find out more. The left-hand pane also houses the **Exit** button ![Exit process](/images/exitdesign.png) to go back to the process list, the **Save** button ![Save button](/images/save.png) to save your work, the **Preview** button ![Preview](/images/preview.png) to preview what you have created and the **Publish** button ![Publish button](/images/publish.png) to publish your work. 
+1. Left-hand pane contains both **controls** and **rules** that can be added to forms. Go to [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) to find out more. The left-hand pane also houses the **Exit** button ![Exit process](/images/exitdesign.png) to go back to the process list, the **Save** button ![Save button](/images/save.png) to save your work, the **Preview** button ![Preview](/images/preview.png) to preview what you have created and the **Publish** button ![Publish button](/images/publish.png) to publish your work. 
 
-   Note that clicking on **Save** saves a **draft** which is not available to users until you click on **Publish**.
+   Note that clicking on **Save** saves a **draft** of a process design which is not available to users until you click on **Publish**.
 
 2. The central area is where the current **form canvas** is displayed. The canvas also houses 3 buttons by default: **Submit**, **Save** and **Close**. Go to [Adding form elements](#adding-form-elements) to find out more about editing these buttons and adding elements to the canvas.
 
@@ -145,11 +145,10 @@ Note: as you change any of the options in the dialog box, the impact will be sho
    
    - As a form designer, you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If **Edit mode** is chosen, then the button will only appear when the form is being **edited**. In this way you can create dynamic forms that suit user interactions.
    
-
 9. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 10. To save your changes to the form, click on the **Save** button ![Save button](/images/save.png). 
 
-You are now ready to start adding [Controls](fields/README.md) and [Rules](rules/README.md) to your form. To implement additional settings, see [Process Settings](#process-settings).
+You are now ready to start adding [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) to your form. To implement additional settings, see [Process Settings](#process-settings).
 
 
 
@@ -157,11 +156,11 @@ You are now ready to start adding [Controls](fields/README.md) and [Rules](rules
 
 1. You can import a previously designed form by clicking on the **Import** button ![Import button](/images/importform.png).
 
-2. Click on the arrow to select from the drop down list to **Select a process design**. 
+2. Click on the arrow to select from the drop-down list to **Select a process design**. 
 
-3. Click on a process of interest and then click on the forms to import. Forms are indicated by a + symbol and can be expanded to show elements within a form for example a panel containing different fields such as lists and text boxes. This means you can import a whole form, or just elements of a form. In this way you can very quickly reuse some or all parts of an existing form. 
+3. Click on a process of interest and then click on the forms to import under **Select fields or forms to import**. **Forms** are indicated by a **+ symbol** and can be expanded to show elements within a form for example a panel containing different fields such as lists and text boxes. This means you can import a whole form, or just elements of a form. In this way you can very quickly reuse some or all parts of an existing form. 
 
-   ![Import from another process](/images/importprocessdetails.png)
+   ![Import from another process](/images/importing-form-example.jpg)
 
 4. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 
@@ -169,13 +168,13 @@ You are now ready to start adding [Controls](fields/README.md) and [Rules](rules
 
 ## Adding form elements ##
 
-If you have added a new form during the form creation process, then a blank canvas with 3 default buttons are available to you: **Submit**, **Save** and **Close**. 
+If you have added a new form during the form creation process, then a blank canvas with three default buttons are available to you: **Submit**, **Save** and **Close**. 
 
-![Form button edit](/images/formbuttonedit.png)
+![Form button edit](/images/form-buttons-example.jpg)
 
-You can:
+Within a form like the one shown above you can:
 
-1) Add elements to this canvas by clicking on [Controls](fields/README.md) and [Rules](rules/README.md) in the left-hand pane. Click on each link to find out more about the 16 Control fields and 
+1) Add elements to this canvas by clicking on [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) in the left-hand pane. Click on each link to find out more about the 16 Control fields and 60 rule types.
 2) Move elements by clicking on the **Drag Handle** ![Drag handle](/images/move.png) beside the item and dragging it to where you want to place it. 
 3) Edit elements by clicking on each item and clicking on the **Pen** button ![Pen icon](/images/penicon.png), for example if you click on the **Close button**, there are a number of options to choose from when editing see [Form buttons](#form-buttons).
 
@@ -183,9 +182,21 @@ You can:
 
 ## Settings and Properties ## 
 
-In addition to the edits above, there are a number other actions and settings that you can implement to your process and forms. 
+In addition to the edits above, there are a number other configurations that you can implement to your process and forms. 
 
-![Process and form properties](/images/processproperties.png)
+![Process and form properties](/images/process-properties.jpg)
+
+You can set **properties and settings at property, form and field level**. Properties at all levels are visible in the **right-hand pane** of Kianda designer, along with the:
+
+- **Import** button ![Import button](/images/importform.png) to allow you to import forms and form elements like fields
+
+- **Version history** button ![Version history example](/images/version-history-example.jpg) to allow you to manage version of the process design
+
+- **Settings** button ![Settings button](/images/settings-button.jpg) to allow you to apply process security settings amongst other options
+
+  
+
+### Process properties
 
 Settings are available from the right-hand pane and give you the ability to:
 
@@ -269,7 +280,7 @@ Go to [Rules](/docs/platform/rules/) to find out more about **Form rules**.
 
 ### Form buttons ###
 
-By default there are 3 buttons on all forms, **Submit**, **Save** and **Close**, but you can change these to buttons in a myriad of ways to customise your users' experience. See sections [Editing a button](#editing-a-button), [Copying a button](#copying--a-button), [Changing button properties](#changing-button-properties) and [Deleting a button](#deleting-a-button) below.
+By default there are 3 buttons on all forms, **Submit**, **Save** and **Close**, but you can change these to buttons in a myriad of ways to customise your users' experience. See sections [Editing a button](#editing-a-button), [Copying a button](#copying-a-button), [Changing button properties](#changing-button-properties) and [Deleting a button](#deleting-a-button-or-field) below.
 
 #### Editing a button
 
@@ -295,7 +306,7 @@ To edit a button:
 
 3. Click on the **OK** button ![OK button](/images/ok.png) when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 
-3. You can change the button to a different field type by clicking on the button itself and the **Change field** button ![Change field](/images/changefield.png)in the right-hand pane. Then choose from one of 18 field types and edit the field chosen. See [Controls](fields/README.md) for more information on field types.
+3. You can change the button to a different field type by clicking on the button itself and the **Change field** button ![Change field](/images/changefield.png)in the right-hand pane. Then choose from one of 18 field types and edit the field chosen. See [Controls](/docs/platform/controls/) for more information on field types.
 
    
 
@@ -317,7 +328,7 @@ The options within properties are:
 
 ![Changing text box width](/images/textboxsize.png)
 
-- **Rules** - rules for input fields. These are covered in details in [Rules](/platform/rules/). 
+- **Rules** - rules for input fields. These are covered in details in [Rules](/docs/platform/rules/). 
 
 
 

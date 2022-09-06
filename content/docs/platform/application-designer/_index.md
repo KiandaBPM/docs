@@ -284,7 +284,6 @@ There are many options within **Settings** to manage for example process securit
 ![Process settings](/images/process-settings-anonymous.jpg)
 
 
-
 ### Anonymous forms ###
 
 **Anonymous forms** are a great way of **allowing people outside of your organisation** to interact with your processes. It could be something as simple as a feedback form or a GDPR data request but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission, or person assigned to manage the form.
@@ -308,7 +307,7 @@ The generated link can be shared to allow sharing of the form
 
 #### Existing instance anonymous form URL
 
-To setup an **existing instance** **anonymous form** you need to use the **Anonymous form rule** to generate a new anonymous link at the runtime that will point to an existing process record that can then be shared with external users.
+To setup an **existing instance** **anonymous form** you need to use the **Anonymous form link rule** to generate a new anonymous link at runtime that will point to an existing process record that can then be shared with external users.
 
 Note that for this to work steps 1 and 2 of [New Instance Anonymous form](#new-process-instance-anonymous-form-url) are still required.
 
@@ -318,11 +317,54 @@ The following are some of the key options of the anonymous link rule:
 - Link expires settings: choose from an expiry parameter like number of uses, time-based or never expire.
 - Select a Message to display on submission.
 
-**Important**: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically expire the previous of the same type if a link existed.
+**Important**: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically expire a previous link of the same type if the link existed.
+
+
+
+## Rules
+Kianda **rules** allow for dynamic actions within processes that can be used to change the workflow, send automated emails or notifications, as well as manipulate data in data sources.
+
+There are 60 predefined rules, across 10 categories that allow you to drive your business processes in a myriad of ways. Go to the [Rules](/docs/platform/rules/) to navigate to each of the different field categories.
+
+Rules can be driven by [conditions](/docs/platform/rules/general/add-conditions/) for example based on user input, form fields will dynamically appear or hide according to how the user navigates a form, and all rules are **actions** which can involve for example retrieving values from a datasource, storing data in a field or automating user addition to Salesforce.
+
+One example of rules already mentioned is the **Anonymous form link** rule which will dynamically generate and send a link from a form in a process to an external user, without the need for a Kianda account. 
+
+If the current suite of predefined rules do not meet your needs, you can use Kianda **Developer** to create your own rule widget. In a similar fashion you can use this function to create [custom controls or fields](#custom-fields), see more below.
+
+
+
+## Custom fields
+
+In case any of the previously mentioned control types don't suit, you can use Kianda to build your own customised control widgets. The Custom fields section provides access to fields that are built for extensibility of Kianda capabilities. It is particularly useful in those situations where existing fields or rules will not provide the required functionality.
+
+Custom fields have the purpose of providing a user interface for end-users. These **custom fields can be built by developers**. It allows a developer to build a reusable component that would then be used by process designers in real processes. Check-out the [development](/docs/getting-started/welcome/low-code/) section for more details on how to build custom widgets in Kianda.
+
+
+
+### Advanced techniques
+
+Like the [cascading drop-down list](/docs/platform/application-designer/#cascading-dropdown-lists) discussed above, several other advanced scenarios can be easily configured in Kianda. Here is a short-list to give you an idea what is possible:
+
+- **Repeating section** - A repeating section can be created by adding a **panel** to a table field. This table can be configured to include a single column made of the panel that itself will include the repeating fields of your repeating section.
+
+- **The capture of media** - Kianda enables mobile users to directly capture pictures, video or audio just like a native application.
+
+- **Background save** - By making use of PWA principles (Progressive Web Application), Kianda allows the ability to perform background operations. This is useful when, for example, a mobile user picks-up their phone to perform a quick action and places it back in his pocket. Operations will continue in the background allowing all data to be captured.
+
+- **Image annotation** - Kianda allows for image annotation online or offline.
+
+- **Multi-column / row layout** - Making multi-column responsive interfaces is quite easy. Simply add two panels into a form that only use half of the screen (6 columns) then add fields inside panels and you have multiple column layouts. Adding a panel using 12 columns gives you a row.
+
+- **Form tab colour and icon** - Form tabs can be quickly customised to display their icons or tab colours, it is also possible to define custom colours for selected and completed form tabs.
+
+- **Hide form tab and left nav** - This is self-explanatory, yes you can hide the default navigation elements.
+
+  
 
 ## Cloning
 
-In the form designer, almost any of the components can be cloned. This will increase your productivity considerably and will make creating multi-step processes a breeze.
+In Kianda **Designer**, almost any of the components can be cloned. This will increase your productivity considerably and will make creating multi-step processes a breeze.
 
 To clone either a field, a panel or even a form, simply select the component then click the clone button in the  properties panel in the right-hand side of the panel.
 
@@ -337,21 +379,6 @@ If cloning a field, the cloning dialog box will prompt for the destination of th
 </video>
 
 
+### What's next  ![Idea icon](/images/18.png) ###
 
-## Custom fields
-
-The Custom fields section provides access to fields that are built for extensibility of Kianda capabilities. It is particularly useful in those situations where existing fields or rules will not provide the required functionality.
-
-Custom fields have the purpose of providing a user interface for end-users. These custom fields can be built by developers. It allows a developer to build a reusable component that would then be used by process designers in real processes. Check-out the [development](/docs/getting-started/welcome/low-code/) section for more details on how to build custom widgets in Kianda.
-
-## Advanced techniques
-
-Like the cascading dropdown discussed above, several other advanced scenarios can be easily configured in Kianda. Here is a short-list:
-
-- **Repeating section** - A repeating section can be created by adding a **panel** to a table field. This table can be configured to include a single column made of the panel that itself will include the repeating fields of your repeating section.
-- **The capture of media** - Kianda enables mobile users to directly capture pictures, video or audio just like a native application.
--  **Background save** - By making use of PWA principles (Progressive Web Application), Kianda allows the ability to perform background operations. This is useful when, for example, a mobile user picks-up their phone to perform a quick action and places it back in his pocket. Operations will continue in the background allowing all data to be captured.
-- **Image annotation** - Kianda allows for image annotation online or offline.
-- **Multi-column / row layout** - Making multi-column responsive interfaces is quite easy. Simply add two panels into a form that only use half of the screen (6 columns) then add fields inside panels and you have multiple column layouts. Adding a panel using 12 columns gives you a row.
-- **Form tab colour and icon** - Form tabs can be quickly customised to display their icons or tab colours, it is also possible to define custom colours for selected and completed form tabs.
-- **Hide form tab and left nav** - This is self-explanatory, yes you can hide the default navigation elements.
+To read more about process and forms, go to the link below:
