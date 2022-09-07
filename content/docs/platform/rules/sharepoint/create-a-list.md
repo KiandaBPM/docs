@@ -38,7 +38,7 @@ To apply this rule, first choose an item to attach the rule to and have a ShareP
 
 5. Once these fields are set you can also set conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more information.
 
-6. The final two sections are optional: : **On success mapping** and **Error mapping**. See [Success and Error Mapping](/docs/platform/rules/general/success-error-mapping/) for more information. 
+6. The final two sections are optional: **On success mapping** and **Error mapping**. See [Success and Error Mapping](/docs/platform/rules/general/success-error-mapping/) for more information. 
 
 7. Click on **OK** when complete.
 

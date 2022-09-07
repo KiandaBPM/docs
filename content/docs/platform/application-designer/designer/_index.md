@@ -34,25 +34,25 @@ To access processes, go to the left-hand pane and **Administration** > **Designe
 From the main process view, click on any process to add forms.
 ![Clicking on a process](/images/clickonprocess.png)
 
-The designer window opens and is made up of 3 main parts.
+The **Designer** window opens and is made up of 3 main parts.
 
-![Form Designer](/images/formlayout.png)
+![Form Designer](/images/designer-3-parts.jpg)
 
 The key components of the designer are:
 
 1. Left-hand pane contains both **controls** and **rules** that can be added to forms. Go to [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) to find out more. The left-hand pane also houses the **Exit** button ![Exit process](/images/exitdesign.png) to go back to the process list, the **Save** button ![Save button](/images/save.png) to save your work, the **Preview** button ![Preview](/images/preview.png) to preview what you have created and the **Publish** button ![Publish button](/images/publish.png) to publish your work. 
 
-   Note that clicking on **Save** saves a **draft** of a process design which is not available to users until you click on **Publish**.
+   Note that clicking on **Save** saves a **draft** of a process design. Click on **Publish** to publish the design and update changes to existing process instances.
 
 2. The central area is where the current **form canvas** is displayed. The canvas also houses 3 buttons by default: **Submit**, **Save** and **Close**. Go to [Adding form elements](#adding-form-elements) to find out more about editing these buttons and adding elements to the canvas.
 
-3. The right-hand pane is where the **properties** and **rules** are displayed for the selected item, see [Properties](/docs/platform/controls/properties/) for more information. From this pane you can also [Import forms](#import-forms), see the [Version history](/docs/platform/application-designer/designer/version-history/) for a process and set process [Settings](/docs/platform/application-designer/process/settings/). Click on the links to find out more.
+3. The right-hand pane is where the **properties** and **rules** are displayed for the selected item, see [Properties](#properties) for more information. From this pane you can also [Import forms](#import-forms), see the [Version history](/docs/platform/application-designer/designer/version-history/) for a process and set process [Settings](/docs/platform/application-designer/process/settings/). Click on the links to find out more.
 
 Note the name of the process you are working on is shown in the top menu bar, for example Quarterly Training Request. 
 
 
 
-## How to get started
+## How to get started with forms
 
 1. How you get started with forms depends on:
 
@@ -85,8 +85,6 @@ Note the name of the process you are working on is shown in the top menu bar, fo
     Your browser does not support the video tag.
     </source>
 </video>
-
-
 
 
 If you have created a process from scratch, an empty form is added to your process by default, called "form 1". This is the first form. Click on this form and the **Edit/Pen** button ![Pen icon](/images/penicon.png) to customise it. You can also click on the **Add form** button to add a new form.
@@ -148,7 +146,7 @@ Note: as you change any of the options in the dialog box, the impact will be sho
 9. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
 10. To save your changes to the form, click on the **Save** button ![Save button](/images/save.png). 
 
-You are now ready to start adding [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) to your form. To implement additional settings, see [Process Settings](#process-settings).
+You are now ready to start adding [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) to your form. To implement additional settings, see [Process Settings](/docs/platform/application-designer/process/settings/).
 
 
 
@@ -174,180 +172,60 @@ If you have added a new form during the form creation process, then a blank canv
 
 Within a form like the one shown above you can:
 
-1) Add elements to this canvas by clicking on [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) in the left-hand pane. Click on each link to find out more about the 16 Control fields and 60 rule types.
+1) Add elements to this canvas by clicking on [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) in the left-hand pane. Click on each link to find out more about the 16 control fields and 60 rule types.
 2) Move elements by clicking on the **Drag Handle** ![Drag handle](/images/move.png) beside the item and dragging it to where you want to place it. 
-3) Edit elements by clicking on each item and clicking on the **Pen** button ![Pen icon](/images/penicon.png), for example if you click on the **Close button**, there are a number of options to choose from when editing see [Form buttons](#form-buttons).
+3) Edit elements by clicking on each item and clicking on the **Edit/Pen** button ![Pen icon](/images/penicon.png), for example if you click on the **Close button**, there are a number of options to choose from when editing, see [Button control](/docs/platform/controls/actions/button/) for more information.
 
 
 
-## Settings and Properties ## 
+## Properties ## 
 
-In addition to the edits above, there are a number other configurations that you can implement to your process and forms. 
+In addition to adding fields/controls and rules, there are a number of ways to create the form and process design you want. You can set **properties at property, form and field level**. Properties represent how an element presents itself, for example the title and layout of the element.
 
-![Process and form properties](/images/process-properties.jpg)
+![Process and form properties](/images/right-hand-pane-designer.jpg)
 
-You can set **properties and settings at property, form and field level**. Properties at all levels are visible in the **right-hand pane** of Kianda designer, along with the:
+Properties at all levels are visible in the **right-hand pane** of Kianda designer, along with the:
 
 - **Import** button ![Import button](/images/importform.png) to allow you to import forms and form elements like fields
-
 - **Version history** button ![Version history example](/images/version-history-example.jpg) to allow you to manage version of the process design
-
 - **Settings** button ![Settings button](/images/settings-button.jpg) to allow you to apply process security settings amongst other options
 
-  
+### Process level properties
 
-### Process properties
+When you click on a process from the main process view, straight away you will see the **Process properties** in the right-hand pane as shown in the image above. To find out more about process go to the [Process properties](/docs/platform/application-designer/process/properties/) page. 
 
-Settings are available from the right-hand pane and give you the ability to:
+When you click on a form within a process, then the properties view changes to show **Form properties**, as shown in the image below.
 
-- View [Design version history](/docs/platform/application-designer/designer/version-history/)
+![Form properties view](/images/form-properties-view.jpg)
 
-- Change [Process settings](#process-settings)
+If you want to **return to Process properties,** click on the **process name** beside the Designer and chevron symbol, that is:
 
-- Create a duplicate form by selecting a form, clicking on the **Clone** button ![Clone button](/images/clone.png)and then click on **Ok**. A version called 'Form Name Copy' is created and available to edit on the canvas. The **Clone** button can also be used to clone form elements like controls or buttons. 
+![Process name](/images/process-name-chevron.jpg)
 
-- Edit form information by selecting a form and clicking on the **Pen** button ![Pen icon](/images/penicon.png).
+### Form level properties
 
-- Delete a form by selecting a form, clicking on the **Bin/Trash** button ![Bin icon](/images/binicon-16397581516591.png) and then click on **Ok** after you have reviewed the form title and you are sure this is what you want to delete. Click on **Cancel** if you wish to cancel the deletion.
+When you click on a form in Kianda **Designer**, the properties for that form appear. To find out more about form properties go to the [Form properties](/docs/platform/application-designer/forms/#form-properties) page. 
 
-- View and edit [Form properties and rules](#form-properties-and-rules)
+To find out more about form properties, go to the [Form properties](/docs/platform/application-designer/forms/#form-properties) page. Field properties will be described within the information page for each field, go to [Controls](/docs/platform/controls/) to start navigating to individual control pages.
 
-- Edit form buttons by clicking on a button of choice and then **Change field**, see [Form buttons](#form-buttons).
 
-  
+
+
+## Settings ## 
+
+In addition to [Properties](#properties), you can use **Settings** at process, form and field level to give you the type of processes and forms you want. 
 
 ### Process settings
 
-You can edit process settings by clicking on the **Settings** button ![Settings button](/images/settings.png)in the right-hand pane. 
+**Basic process information**, such as deciding who the process administrators are is available at the main process level, by exiting **Designer** clicking on the **Exit** button ![Exit process](/images/exitdesign.png) to go the main process view, and then click on the process name to bring up the **Edit process** dialog box.
 
-Choose from the settings:
+![Edit process dialog box](/images/edit-process-dialog-box.jpg)
 
-1. **Process id settings** - choose from a) Default or b) Custom and use a combination of [ProcessName]-[UniqueNumber]-[FieldName]
+More detailed **process settings** are available within Kianda **Designer** in the right-hand pane by clicking on the **Settings** button![Process settings button](/images/settings-button.jpg) and from here use the parameters available in the **Process settings** dialog box to enable process security, anonymous sharing of forms and custom process ID, amongst other options. Go to [Process settings](/docs/platform/application-designer/process/settings/) to find out more.
 
-2. **Enable process security** - if you tick the checkbox, you can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.
+### Form and field settings
 
-   ![Process security](/images/process_security.png)
-
-   The default setting is **Security users can create, assign to can update, everyone else can view**.
-
-3. **On load rules execution mode** - options are a) **Always** b) **When in edit mode** or c) **When open new**. The default setting is **Always**. 
-
-4. **Hide form tabs** - gives you the ability to hide form tabs, options are a) **Yes** or b) **No**.
-
-5. **Hide left nav** - gives you the ability to hide navigation elements, options are a) **Yes** or b) **No**.
-
-6. **Enable anonymous sharing of forms** - gives you the ability to share forms with people outside your organisation for example a feedback form or GDPR subject access request. Options are a) **Yes** or b) **No**. If you click on **Yes** there are various options that you can add:
-
-   - **Message to display after anonymous submission** - to add a display message
-
-   ![Link for external users](/images/anonlink.png)
-
-   - **Hide form topbar** - checkbox to allow you to hide the form form topbar.
-   - **Force log out** - options are a) Yes or b) No to force user logout once the form is submitted
-   - Click on **New link** to generate a new anonymous form link to share with users and click on **Edit** to change the link.
-
-7. **Enable mobile bottom navigation** - options are a) **Yes** or b) **No**.
-
-8. **Instance delete settings** - options are a) Any user can delete b) Creator can delete c) "Current form owner" can delete d) "Security users" can delete e) "Admins only" can delete. The default setting is **Creator can delete**.
-
-9. **Enable form assignment notification** - options are a) **Yes** or b) **No**.
-
-10. **Prevent closing instance with unsaved data** - options are a) **Yes** or b) **No**.
-
-11. **Selected tab theme** - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is selected.
-
-12. **Completed tab theme** - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is completed.
-
-13. Click on the **OK** button ![OK button](/images/ok.png) when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
-
-14. Click on the **Exit** button ![Exit process](/images/exitdesign.png) to go back to the process list, the Save button ![Save button](/images/save.png)to save your work, the **Preview** button ![Preview](/images/preview.png)to preview what you have created and the **Publish** button ![Publish button](/images/publish.png)to publish your work.
-
-
-
-### Form properties and rules
-
-**Form properties** are visible in the right-hand pane and show:
-
-1. **Title** - the form title, for example Employee Request Form
-
-2. **Visible** - click on this checkbox if you want the form to be visible to users
-
-3. **Show info** - click on this checkbox if you want to show information about form metadata at runtime like process version, owners and last modified by
-
-Go to [Rules](/docs/platform/rules/) to find out more about **Form rules**.
-
-
-
-### Form buttons ###
-
-By default there are 3 buttons on all forms, **Submit**, **Save** and **Close**, but you can change these to buttons in a myriad of ways to customise your users' experience. See sections [Editing a button](#editing-a-button), [Copying a button](#copying-a-button), [Changing button properties](#changing-button-properties) and [Deleting a button](#deleting-a-button-or-field) below.
-
-#### Editing a button
-
-To edit a button:
-
-1. Click on the button and then the **Pen** button ![Pen icon](/images/penicon.png).
-
-2. Choose from the edit options:
-
-   1. **Title** - the button name, for example Close
-
-   2. **Name** - this is a unique name for the button
-
-   3. **Help text** - information to help the form user
-
-   4. **Color scheme** - choose from Navy, Green, Blue, Amber, Red or White Colours for your button colour
-
-   5. **Icon** - click on the arrow in the dropdown list to select from several hundred icons 
-
-   6. **Show in form body** - options are a) Yes or b) No
-
-   7. **Enable button security** - options are a) Yes or b) No
-
-3. Click on the **OK** button ![OK button](/images/ok.png) when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
-
-3. You can change the button to a different field type by clicking on the button itself and the **Change field** button ![Change field](/images/changefield.png)in the right-hand pane. Then choose from one of 18 field types and edit the field chosen. See [Controls](/docs/platform/controls/) for more information on field types.
-
-   
-
-#### Changing button properties ####
-
-To edit button properties, click on the button itself and the properties appear in the right-hand pane.
-
-![Button properties](/images/buttonproperties.png)
-
-The options within properties are:
-
-- **Title** - the name of the button, for example Close
-- **Show title** - show the title of the button
-- **Enabled** - the field is enabled for users to use
-- **Visible** - the button is visible to users
-- **Perform validation** 
-- **Show in display mode** 
-- **Layout** - change the width of the field by clicking on the bar in the Layout box until you see the desired size, from 1 to 12 columns. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width for mobile use.
-
-![Changing text box width](/images/textboxsize.png)
-
-- **Rules** - rules for input fields. These are covered in details in [Rules](/docs/platform/rules/). 
-
-
-
-#### Copying a button or field ####
-
-To copy a button you can click on **Clone** button ![Clone button](/images/clone.png)in the right-hand pane and choose from the options:
-
-   - **Select destination** - click into the field and then choose from another form associated to that process or a panel within another form
-   - **Move field instead** - the box to move the field instead of copying
-
-   ![Cloning](/images/clonefield.png)
-
-Click on the **OK** button ![OK button](/images/ok.png) when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
-
-
-
-#### Deleting a button or field ####
-
-Click on the on the **Bin/Trash** button ![Bin icon](/images/binicon-16397581516591.png) and then click on **Ok** after you have reviewed the form title and you are sure this is what you want to delete. Click on **Cancel** if you wish to cancel the deletion.
+**Form and field settings** are available when you **select** an item in the form **canvas** so that the **Edit**/**Pen** icon ![Edit/pen button](/images/penicon.png) is available. An **Edit** dialog box appears allowing you to make the necessary changes to that item. Edit form dialog box is shown in [Editing forms](#editing-forms). Field settings will be described within the information page for each field, go to [Controls](/docs/platform/controls/) to start navigating to individual control pages.
 
 
 

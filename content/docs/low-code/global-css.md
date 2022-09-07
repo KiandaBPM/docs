@@ -134,11 +134,11 @@ To use a Global CSS file:
 
    ![Custom CSS Url file](/images/custom-css-url.jpg)
 
-4. The **CSS Editor** opens, allowing you to make edits to default code, see example below.
+4. The **CSS Editor** opens, allowing you to add CSS, or edit code if your organisation has already added in styling. The image below shows an example of code that has been added in.
 
    ![CSS Editor](/images/css-editor.jpg)
 
-5. Within the file there may already be some items added that can be expanded upon, or you can create your own, for example:
+5. Within the file you can create your own styling, for example:
 
    - **Class selectors** example
 
@@ -267,7 +267,7 @@ The steps above can be used to edit any element in a **process or dashboard** us
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To review the range of fields available in Kianda that can have styling applied go to [Controls](/docs/platform/controls/)
+To review the range of fields available in Kianda that can have styling applied go to [Controls](/docs/platform/controls/).
 
 To learn more about designing processes go to [Application designer](/docs/platform/application-designer/).
 
