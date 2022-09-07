@@ -1,9 +1,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Designer</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/</link><description>Recent content in Designer on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/application-designer/designer/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Version history</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/version-history/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/designer/version-history/</guid><description>
-&lt;p>The &lt;strong>current or active version&lt;/strong> of a process is always visible in the right-hand pane, for example V0.2 for the process &amp;lsquo;Quarterly Training Request&amp;rsquo; as shown below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/formlayout2_resized.png" alt="Process version history">&lt;/p>
-&lt;p>The &lt;strong>first version&lt;/strong> of a process is &lt;strong>0.1&lt;/strong> and will increment to 0.2 and so on, each time a process is saved. Once the process is &lt;strong>published&lt;/strong> the version changes to &lt;strong>1.0&lt;/strong> and increments with each publication. This makes it is easy to keep track of who and when changes were made and to restore an older version if needed.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/processproperties_frame.png" alt="Right-hand pane">&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>As an &lt;strong>Administrator&lt;/strong> or someone with the role &lt;strong>Design business process&lt;/strong> you can update &lt;strong>process designs&lt;/strong> as often as you need. The &lt;strong>Version number&lt;/strong> of a process will be updated every time a process design is saved by clicking on the &lt;strong>Save&lt;/strong> button ![Save button](/images/save - Copy.png).&lt;/p>
+&lt;p>The &lt;strong>current or active version&lt;/strong> of a process is always visible in the right-hand pane, for example V0.34 for the &amp;lsquo;Inspection Process&amp;rsquo; as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/version-history-button.jpg" alt="Process version history">&lt;/p>
+&lt;p>The &lt;strong>first version&lt;/strong> of a process is &lt;strong>0.1&lt;/strong> and will increment to 0.2 and so on, each time a process is saved. Once the process is &lt;strong>published&lt;/strong> the version changes to &lt;strong>1.0&lt;/strong> and increments with each publication.&lt;/p>
+&lt;p>So for example a first click on the &lt;strong>Publish&lt;/strong> button &lt;img src="https://docs.kianda.com/images/publish.png" alt="Publish button"> for the process above will make the version &lt;strong>V1.0&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/version-updated-after-publish.jpg" alt="Right-hand pane">&lt;/p>
+&lt;p>If the process is subsequently &lt;strong>saved&lt;/strong>, then the next version will be &lt;strong>V1.1&lt;/strong> and the next &lt;strong>published version&lt;/strong> will be &lt;strong>V2.0&lt;/strong>.&lt;/p>
+&lt;p>Using versioning makes it is easy to keep track of changes and to restore the design to an older version if needed.&lt;/p>
+&lt;h2 id="how-to-get-started-with-version-history">How to get started with Version history&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>To view the version history click on the &lt;strong>Design version history&lt;/strong> button which may look like V0.1 or whatever is the current version for your process, for example &lt;img src="https://docs.kianda.com/images/version.png" alt="View design version history"> or &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version 0.8">&lt;/p>
@@ -11,12 +16,23 @@
 &lt;li>
 &lt;p>A pop-up shows the version history details including when the version was created and who created it.&lt;/p>
 &lt;p>In the example below, there are 8 versions of the process, all are &lt;strong>drafts&lt;/strong> indicated by the 0 in front, such as 0.8.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/versiondetails_frame.png" alt="Version history details">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/version-history-details.jpg" alt="Version history details">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on a particular version to see the version information, for example forms, fields and rules that were added, modified or removed.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/version-history-details-example.jpg" alt="Version history details example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> or &lt;strong>Close&lt;/strong> to exit the dialog box, or click on the &lt;strong>arrow&lt;/strong> button &lt;img src="https://docs.kianda.com/images/back-arrow.jpg" alt="Back arrow"> to go back to the full list of versions.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Restore&lt;/strong> button &lt;img src="https://docs.kianda.com/images/restore.png" alt="Restore button"> beside a particular version and then click on &lt;strong>Ok&lt;/strong> to confirm that you want to restore to that version.&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong> the new version of the process will increment following a &amp;lsquo;restore&amp;rsquo; in this example to V0.9, however the &lt;strong>Version history details&lt;/strong> dialog box will denote that the version is a restored version.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/restored-version.jpg" alt="Restored version">&lt;/p>
 &lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;li>
+&lt;p>When you are ready to exit the &lt;strong>Version history details&lt;/strong> dialog box, click on &lt;strong>OK&lt;/strong> or &lt;strong>Close&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Click on the links to find out more about aspects of Kianda &lt;strong>Designer&lt;/strong>, namely &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/">Processes&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Forms&lt;/a>.&lt;/p></description></item></channel></rss>
