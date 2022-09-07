@@ -718,8 +718,26 @@
 &lt;p>In the &lt;strong>Callback URL&lt;/strong> text box enter &lt;code>https://app.kianda.com/index.html&lt;/code>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>On a second line of the &lt;strong>Callback URL&lt;/strong> text box enter &lt;code>https://{company}.kianda.com/index.html&lt;/code> where &lt;code>company&lt;/code> is the name of your company&amp;rsquo;s subscription, for example &lt;code>https://green-itr.kianda.com/index.html&lt;/code>. The callback URL should look as follows when the company&amp;rsquo;s name is &lt;code>green-itr&lt;/code>:&lt;/p>
+&lt;p>On a second line of the &lt;strong>Callback URL&lt;/strong> text box enter &lt;code>https://{company}.kianda.com/index.html&lt;/code> where &lt;code>company&lt;/code> is the name of your company&amp;rsquo;s subscription, for example &lt;code>https://green-itr.kianda.com/index.html&lt;/code>. The &lt;strong>Callback URL&lt;/strong> should look as follows when the company&amp;rsquo;s name is &lt;code>green-itr&lt;/code>:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/salesforce-callback.jpg" alt="Callback textbox">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Selected OAuth Scopes&lt;/strong> section, move all of the scopes from &lt;strong>Available OAuth Scopes&lt;/strong> to &lt;strong>Selected OAuth Scopes&lt;/strong> window by selecting them and clicking &lt;strong>Add&lt;/strong>. Here you can add scopes that you want your Connected App to have access to from within Kianda.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From your Connected App screen, click on &lt;strong>Manage&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the manage connected app screen, click on &lt;strong>Edit Policies&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>OAuth Policies&lt;/strong> section, go to &lt;strong>Permitted Users&lt;/strong> and select &lt;strong>All users may self-authorize&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>IP Relaxation&lt;/strong> select the &lt;strong>Relax IP restrictions&lt;/strong> option.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
