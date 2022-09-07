@@ -628,7 +628,7 @@
 &lt;/div></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
 &lt;p>One of the data connectors that you can connect to is &lt;strong>Salesforce&lt;/strong>. Salesforce provides customer relationship management software and applications focused on sales, customer service, marketing automation, and analytics. The Salesforce data connector allows you to access information from your Salesforce account which can then be used within your Kianda subscription.&lt;/p>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using the Salesforce data connector, you must have an account with Salesforce which is used to obtain information for a successful connection. If you have an account with Salesforce, all you need to create within the Salesforce application is a &lt;strong>Connected App&lt;/strong>. These connected apps within Salesforce enable external applications to integrate together using its APIs. The connected app will provide you with a &lt;strong>Consumer Key&lt;/strong> and a &lt;strong>Consumer Secret&lt;/strong>. These are then used to establish the connection between your Connected app in Sales force and your Kianda subscription.&lt;/p>
+&lt;p>In advance of using the Salesforce data connector, you must have an account with Salesforce which is used to obtain information for a successful connection. If you have an account with Salesforce, all you need to create within the Salesforce application is a &lt;strong>Connected App&lt;/strong>. These connected apps within Salesforce enable external applications to integrate together using its APIs. The connected app will provide you with a &lt;strong>Consumer Key&lt;/strong> and a &lt;strong>Consumer Secret&lt;/strong>. These consumer information are used to establish the connection between your Connected app in Sales force and your Kianda subscription, to learn how to acquire the Consumer Key and Consumer Secret go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/salesforce/#acquiring-consumer-key-and-consumer-secret">Acquiring Consumer Key and Consumer Secret&lt;/a>. In order to successfully connect your Connected App and Kianda, the &lt;strong>settings&lt;/strong> of the Connected App in your salesforce account need to be &lt;strong>configured&lt;/strong>, to learn how to configure your Connected App in Salesforce go to &lt;a href="">Configuring Salesforce Connected App&lt;/a>.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can use a connected app to integrate external applications with the Salesforce API, such as a process that pulls in order status data from your Salesforce organisation into your Kianda subscription.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -692,6 +692,35 @@
 &lt;li>Enter in the &lt;strong>Verification code&lt;/strong> that was sent to your email that you used to sign up to Salesforce.&lt;/li>
 &lt;li>Click on &lt;strong>Verify&lt;/strong>.&lt;/li>
 &lt;li>Once verified, your will be brought to a page where you can find the &lt;strong>Consumer Key&lt;/strong> and &lt;strong>Consumer Secret&lt;/strong>.&lt;/li>
+&lt;/ol>
+&lt;h3 id="configuring-salesforce-connected-app">Configuring Salesforce Connected App&lt;/h3>
+&lt;p>Before starting going through the steps below you must ensure that you have a Connected App created in your Salesforce account, to learn how to do that go to &lt;a href="https://help.salesforce.com/s/articleView?id=sf.connected_app_create.htm&amp;amp;type=5">Create a Connected App&lt;/a>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Log into your Salesforce account.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On the top right-hand side of the screen, click on the &lt;strong>cogwheel&lt;/strong> and select &lt;strong>Setup&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the left-hand pane go to &lt;strong>Apps &amp;gt; App Manager&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From the list of apps, find your &lt;strong>Connected App&lt;/strong> that you want to connect with Kianda and click on the &lt;strong>drop-down&lt;/strong> list located on the right-hand side. Select &lt;strong>View&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From your Connected App screen, click on &lt;strong>Edit&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Scroll down to &lt;strong>API (Enable OAuth Settings)&lt;/strong>. Check the Enable OAuth Settings checkbox.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Callback URL&lt;/strong> text box enter &lt;code>https://app.kianda.com/index.html&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On a second line of the &lt;strong>Callback URL&lt;/strong> text box enter &lt;code>https://{company}.kianda.com/index.html&lt;/code> where &lt;code>company&lt;/code> is the name of your company&amp;rsquo;s subscription, for example &lt;code>https://green-itr.kianda.com/index.html&lt;/code>. The callback URL should look as follows when the company&amp;rsquo;s name is &lt;code>green-itr&lt;/code>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/salesforce-callback.jpg" alt="Callback textbox">&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Your &lt;strong>SharePoint service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: SAP connector</title><link>https://docs.kianda.com/docs/platform/connectors/sap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sap/</guid><description>
