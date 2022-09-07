@@ -242,13 +242,7 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>To add success mapping, click on &lt;strong>On success mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button:&lt;/p>
-&lt;ul>
-&lt;li>In the &lt;strong>Form field&lt;/strong> select a form field which will store information in your Kianda form&lt;/li>
-&lt;li>In the &lt;strong>Data source field or text&lt;/strong> select a data source field that is used in the mapping&lt;/li>
-&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping&lt;/li>
-&lt;/ul>
+&lt;p>To add success mapping, click on &lt;strong>On success mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success mapping&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>For &lt;strong>On error mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button:&lt;/p>
@@ -266,5 +260,16 @@ Your browser does not support the video tag.
 &lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;h3 id="on-success-mapping">On Success Mapping&lt;/h3>
+&lt;p>Success mapping is a concept of &lt;strong>populating&lt;/strong> your form fields with &lt;strong>data&lt;/strong> that is &lt;strong>retrieved&lt;/strong> from a &lt;strong>datasource&lt;/strong> using a &lt;strong>data connector&lt;/strong>, to learn more about data connectors go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a>. This retrieved data from the datasource is known as a &lt;strong>response&lt;/strong>. Using this response data, you can populate a field within your form, for example you can retrieve a file which is stored in your SharePoint or Dropbox datasource and populate the retrieved file into a &lt;strong>File field&lt;/strong>. This will give you the ability to access the retrieved file in your process.&lt;/p>
+&lt;p>All data connectors within Kianda may have different response data that can be used to populate fields in a form. You can use the &lt;strong>Success mapping&lt;/strong> in the rules mentioned in the &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#when-to-use">When to use&lt;/a> section. Take one of the SharePoint rules &lt;strong>Create Site&lt;/strong> as an example, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/sharepoint/create-a-site/">Create a site&lt;/a> for more details. When all information is filled out in the rule, open the on success mapping section. in this specific Create a site rule, you can access three different data properties from the response as shown below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/success-mapping.jpg" alt="Success mapping example">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Form field&lt;/strong> - this field allows you to select a field in your form that you want to store the value from the datasource.&lt;/li>
+&lt;li>&lt;strong>Data source field or text&lt;/strong> - this field allows you to select a data from the datasource select which property of the response data you want to use when populating a field in your Kianda form.&lt;/li>
+&lt;li>&lt;strong>Add mapping&lt;/strong> - Click on the &lt;strong>Add mapping&lt;/strong> to add more fields for mapping results from the datasource to form fields.&lt;/li>
+&lt;li>&lt;strong>Bin/Trash&lt;/strong> &lt;strong>&lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">&lt;/strong> - Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mappings.&lt;/li>
+&lt;/ul>
+&lt;h3 id="on-error-mapping">On Error Mapping&lt;/h3>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item></channel></rss>
