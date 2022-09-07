@@ -47,12 +47,7 @@ Success and Error mapping should be with rule execution, displaying values that 
 
    - **Quick Launch menu** -  options are **Yes** or **No**. Choosing **Yes** allows the created list to be displayed in the Quick Launch menu, containing a link to the list.
 
-7. To add success mapping, click on **On success mapping** and click on the **Add mapping** button:
-
-   - In the **Form field** select a form field which will store information in your Kianda form
-   - In the **Data source field or text** select a data source field that is used in the mapping
-   - Click on the **Add mapping** to add further mappings
-   - Click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png) to delete a mapping
+7. To add success mapping, click on **On success mapping** and click on the **Add mapping** button. See [On Success mapping](/docs/platform/rules/general/success-error-mapping/#on-success-mapping) for more details.
 
 8. For **On error mapping** and click on the **Add mapping** button:
 
@@ -65,8 +60,23 @@ Success and Error mapping should be with rule execution, displaying values that 
 
 10. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box. 
 
+### On Success Mapping
+
+Success mapping is a concept of **populating** your form fields with **data** that is **retrieved** from a **datasource** using a **data connector**, to learn more about data connectors go to [Data connectors](/docs/platform/connectors/). This retrieved data from the datasource is known as a **response**. Using this response data, you can populate a field within your form, for example you can retrieve a file which is stored in your SharePoint or Dropbox datasource and populate the retrieved file into a **File field**. This will give you the ability to access the retrieved file in your process. 
+
+All data connectors within Kianda may have different response data that can be used to populate fields in a form. You can use the **Success mapping** in the rules mentioned in the [When to use](/docs/platform/rules/general/success-error-mapping/#when-to-use) section. Take one of the SharePoint rules **Create Site** as an example, go to [Create a site](/docs/platform/rules/sharepoint/create-a-site/) for more details. When all information is filled out in the rule, open the on success mapping section. in this specific Create a site rule, you can access three different data properties from the response as shown below:
+
+![Success mapping example](/images/success-mapping.jpg)
+
+- **Form field** - this field allows you to select a field in your form that you want to store the value from the datasource.
+- **Data source field or text** - this field allows you to select a data from the datasource select which property of the response data you want to use when populating a field in your Kianda form.
+- **Add mapping** - Click on the **Add mapping** to add more fields for mapping results from the datasource to form fields.
+- **Bin/Trash** **![Bin/Trash button](/images/bin.png)** - Click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png) to delete a mappings.
+
+### On Error Mapping
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+
+## What's next  ![Idea icon](/images/18.png) ##
 
 To find out more about rule implementation, go to the main [Rules](/docs/platform/rules/) page and then click on the links to the different rule categories.
