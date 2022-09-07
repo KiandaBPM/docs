@@ -8,7 +8,7 @@ One of the data connectors that you can connect to is **Salesforce**. Salesforce
 
 ## Before you get started
 
-In advance of using the Salesforce data connector, you must have an account with Salesforce which is used to obtain information for a successful connection. If you have an account with Salesforce, all you need to create within the Salesforce application is a **Connected App**. These connected apps within Salesforce enable external applications to integrate together using its APIs. The connected app will provide you with a **Consumer Key** and a **Consumer Secret**. These are then used to establish the connection between your Connected app in Sales force and your Kianda subscription.
+In advance of using the Salesforce data connector, you must have an account with Salesforce which is used to obtain information for a successful connection. If you have an account with Salesforce, all you need to create within the Salesforce application is a **Connected App**. These connected apps within Salesforce enable external applications to integrate together using its APIs. The connected app will provide you with a **Consumer Key** and a **Consumer Secret**. These consumer information are used to establish the connection between your Connected app in Sales force and your Kianda subscription, to learn how to acquire the Consumer Key and Consumer Secret go to [Acquiring Consumer Key and Consumer Secret](/docs/platform/connectors/salesforce/#acquiring-consumer-key-and-consumer-secret). In order to successfully connect your Connected App and Kianda, the **settings** of the Connected App in your salesforce account need to be **configured**, to learn how to configure your Connected App in Salesforce go to [Configuring Salesforce Connected App]().
 
 ## When to use
 
@@ -57,6 +57,40 @@ You can use a connected app to integrate external applications with the Salesfor
 6. Enter in the **Verification code** that was sent to your email that you used to sign up to Salesforce.
 7. Click on **Verify**.
 8. Once verified, your will be brought to a page where you can find the **Consumer Key** and **Consumer Secret**.
+
+### Configuring Salesforce Connected App
+
+Before starting going through the steps below you must ensure that you have a Connected App created in your Salesforce account, to learn how to do that go to [Create a Connected App](https://help.salesforce.com/s/articleView?id=sf.connected_app_create.htm&type=5).
+
+1. Log into your Salesforce account.
+
+2. On the top right-hand side of the screen, click on the **cogwheel** and select **Setup**.
+
+3. In the left-hand pane go to **Apps > App Manager**.
+
+4. From the list of apps, find your **Connected App** that you want to connect with Kianda and click on the **drop-down** list located on the right-hand side. Select **View**.
+
+5. From your Connected App screen, click on **Edit**.
+
+6. Scroll down to **API (Enable OAuth Settings)**. Check the Enable OAuth Settings checkbox.
+
+7. In the **Callback URL** text box enter `https://app.kianda.com/index.html`.
+
+8. On a second line of the **Callback URL** text box enter `https://{company}.kianda.com/index.html` where `company` is the name of your company's subscription, for example `https://green-itr.kianda.com/index.html`. The **Callback URL** should look as follows when the company's name is `green-itr`:
+
+   ![Callback textbox](/images/salesforce-callback.jpg)
+
+9. In the **Selected OAuth Scopes** section, move all of the scopes from **Available OAuth Scopes** to **Selected OAuth Scopes** window by selecting them and clicking **Add**. Here you can add scopes that you want your Connected App to have access to from within Kianda.
+
+10. From your Connected App screen, click on **Manage**.
+
+11. From the manage connected app screen, click on **Edit Policies**.
+
+12. In the **OAuth Policies** section, go to **Permitted Users** and select **All users may self-authorize**.
+
+13. In the **IP Relaxation** select the **Relax IP restrictions** option.
+
+14. Click on **Save**.
 
 ## What's next  ![Idea icon](/images/18.png) ##
 
