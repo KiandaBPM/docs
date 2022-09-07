@@ -55,7 +55,7 @@ Depending on the type of newly created custom widget, they can be accessed by:
 
 * **Rule widget** - navigate to **Administration > Designer > *Your Process* > Add a rule.** Under **Custom**, your rule widget will be displayed and is now ready for use. To learn more about rule widgets, see [Custom rule widget development](/docs/low-code/rule-widget/).
 
-* **Dashboard widget** - navigate to **Dashboard > *Your Dashboard* > Edit current page** button ![edit current page button](/images/editpage.PNG). From there, you click the drop-down list button and you will have access to the created custom dashboard widgets. To learn more about dashboard widgets, see [Custom dashboard widget development](/docs/low-code/dashboard-widget/).
+* **Dashboard widget** - navigate to **Dashboard > *Your Dashboard* > Edit current page** button ![edit current page button](/images/editpage.png). From there, click the drop-down list button and you will have access to the created custom dashboard widgets. To learn more about dashboard widgets, see [Custom dashboard widget development](/docs/low-code/dashboard-widget/).
 
   
 
