@@ -170,19 +170,61 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/right-hand-pane-designer.jpg" alt="Process and form properties">&lt;/p>
 &lt;p>Properties at all levels are visible in the &lt;strong>right-hand pane&lt;/strong> of Kianda designer, along with the:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Import&lt;/strong> button &lt;img src="https://docs.kianda.com/images/importform.png" alt="Import button"> to allow you to import forms and form elements like fields&lt;/li>
-&lt;li>&lt;strong>Version history&lt;/strong> button &lt;img src="https://docs.kianda.com/images/version-history-example.jpg" alt="Version history example"> to allow you to manage version of the process design&lt;/li>
-&lt;li>&lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings-button.jpg" alt="Settings button"> to allow you to apply process security settings amongst other options&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Import&lt;/strong> button &lt;img src="https://docs.kianda.com/images/importform.png" alt="Import button"> to allow you to import forms and form elements like fields&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Version history&lt;/strong> button &lt;img src="https://docs.kianda.com/images/version-history-example.jpg" alt="Version history example"> to allow you to manage version of the process design&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings-button.jpg" alt="Settings button"> to allow you to apply process security settings amongst other options&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;h3 id="process-level-properties">Process level properties&lt;/h3>
 &lt;p>When you click on a process from the main process view, straight away you will see the &lt;strong>Process properties&lt;/strong> in the right-hand pane as shown in the image above. To find out more about process go to the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/properties/">Process properties&lt;/a> page.&lt;/p>
-&lt;p>When you click on a form within a process, then the properties view changes to show &lt;strong>Form properties&lt;/strong>, as shown in the image below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/form-properties-view.jpg" alt="Form properties view">&lt;/p>
+&lt;p>When you click on a form within a process, then the properties view changes to show &lt;strong>Form properties&lt;/strong>, as shown in the image in &lt;a href="#form-level-properties">Form level properties&lt;/a>.&lt;/p>
 &lt;p>If you want to &lt;strong>return to Process properties,&lt;/strong> click on the &lt;strong>process name&lt;/strong> beside the Designer and chevron symbol, that is:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-name-chevron.jpg" alt="Process name">&lt;/p>
 &lt;h3 id="form-level-properties">Form level properties&lt;/h3>
-&lt;p>When you click on a form in Kianda &lt;strong>Designer&lt;/strong>, the properties for that form appear. To find out more about form properties go to the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/#form-properties">Form properties&lt;/a> page.&lt;/p>
-&lt;p>To find out more about form properties, go to the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/#form-properties">Form properties&lt;/a> page. Field properties will be described within the information page for each field, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a> to start navigating to individual control pages.&lt;/p>
+&lt;p>When you click on a form in Kianda &lt;strong>Designer&lt;/strong>, the properties for that form appear.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/form-properties-view.jpg" alt="Form properties view">&lt;/p>
+&lt;p>To find out more about form properties go to the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/#form-properties">Form properties&lt;/a> page.&lt;/p>
+&lt;p>Note that at form level, addition buttons appear above &lt;strong>Form properties&lt;/strong> namely:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit/pen button"> where clicking on this button opens the &lt;strong>Edit&lt;/strong> dialog box for the chosen item, for example a form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Clone&lt;/strong> button &lt;img src="https://docs.kianda.com/images/clone.png" alt="Clone button"> that allows you to make a duplicate form. Click on &lt;strong>OK&lt;/strong> to make a copy or &lt;strong>Close&lt;/strong> to close the dialog box and cancel the copy.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Bin/trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin button"> where clicking on this button opens a popup asking you to confirm that you want to &lt;strong>delete&lt;/strong> the selected form. Click on &lt;strong>OK&lt;/strong> to make a copy or &lt;strong>Close&lt;/strong> to close the dialog box and cancel the deletion.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="field-level-properties">Field level properties&lt;/h3>
+&lt;p>When you add controls to forms Kianda &lt;strong>Designer&lt;/strong>, and select a field/control, the properties for that field appear in the right-hand pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/field-properties-view.jpg" alt="Field properties view">&lt;/p>
+&lt;p>The type of field/control is listed in the properties pane, for example &amp;lsquo;Text box&amp;rsquo; as shown in the image above. How the field appears is easy to control simply by checking/unchecking a number of boxes. To find out more about field/control properties go to the &lt;a href="https://docs.kianda.com/docs/platform/controls/properties/">Control properties&lt;/a> page.&lt;/p>
+&lt;h4 id="change-field-button">Change field button&lt;/h4>
+&lt;p>Note that at field level, in addition to the buttons visible at &lt;a href="#form-level-properties">Form level&lt;/a>, a &lt;strong>Change field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/change-field-button.jpg" alt="Change field button">is visible. To change field type:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select a field in a form by clicking on it.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Change field&lt;/strong> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A pop-up box appears allowing you to choose from the full range of field types, including &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">customised field widgets&lt;/a> created in Kianda &lt;strong>Developer&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/change-name-dialog-box.jpg" alt="Change field dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>radio button&lt;/strong> beside the field type of choice and click on &lt;strong>OK&lt;/strong> to make the change, or &lt;strong>Close&lt;/strong> to close the dialog box and cancel the change.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>An &lt;strong>Edit field&lt;/strong> dialog box appears allowing you to change settings for that new field type.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h2 id="settings">Settings&lt;/h2>
 &lt;p>In addition to &lt;a href="#properties">Properties&lt;/a>, you can use &lt;strong>Settings&lt;/strong> at process, form and field level to give you the type of processes and forms you want.&lt;/p>
 &lt;h3 id="process-settings">Process settings&lt;/h3>
@@ -192,6 +234,7 @@ Your browser does not support the video tag.
 &lt;h3 id="form-and-field-settings">Form and field settings&lt;/h3>
 &lt;p>&lt;strong>Form and field settings&lt;/strong> are available when you &lt;strong>select&lt;/strong> an item in the form &lt;strong>canvas&lt;/strong> so that the &lt;strong>Edit&lt;/strong>/&lt;strong>Pen&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit/pen button"> is available. An &lt;strong>Edit&lt;/strong> dialog box appears allowing you to make the necessary changes to that item. Edit form dialog box is shown in &lt;a href="#editing-forms">Editing forms&lt;/a>. Field settings will be described within the information page for each field, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a> to start navigating to individual control pages.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Click on the links to find out more about aspects of Kianda &lt;strong>Designer&lt;/strong>, namely &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/">Processes&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Forms&lt;/a>.&lt;/p>
 &lt;p>To read about managing versions of forms, go to the link below:&lt;/p></description></item><item><title>Docs: Form basics</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/</guid><description>
 &lt;p>Processes in Kianda are made up of &lt;strong>forms&lt;/strong>. Forms contain all the buttons, fields, and rule triggers needed to execute your process.&lt;/p>
 &lt;p>There are three principles to consider when working with forms:&lt;/p>
