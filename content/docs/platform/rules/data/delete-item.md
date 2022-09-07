@@ -36,9 +36,9 @@ You can add this rule:
 
 6. **Data source filter** - works on condition bases where by you can filter the specific item that you want to delete from your data source. The condition uses a field from within your form and therefore it is good practice to create a field and connect it to your data source to have the ability of selecting an item that you want to delete. To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
 
-7. **On success mapping** - select the field(s) in the form which will store information and populate the **data source field or text** field with the respective data source value. To learn more about success mapping go to [Success/Error Mapping](/docs/platform/rules/general/success-error-mapping/).
+7. **On success mapping** - select the field(s) in the form which will store information and populate the **data source field or text** field with the respective data source value. To learn more about success mapping go to [On Success Mapping](/docs/platform/rules/general/success-error-mapping/#on-success-mapping).
 
-8. **On error mapping** - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to [Success/Error Mapping](/docs/platform/rules/general/success-error-mapping/).
+8. **On error mapping** - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to [On Error Mapping](/docs/platform/rules/general/success-error-mapping/#on-error-mapping).
 
 ### Editing, deleting or duplicating rules
 
