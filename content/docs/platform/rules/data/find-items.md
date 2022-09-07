@@ -53,9 +53,9 @@ You can add this rule:
 
    - **No** - selecting this option will only pull the first occurrence from your data source.
 
-8. **Results mapping** - is used to set fields within your form from the datasource itself. To learn more about results mapping go to [Success/Error Mapping](/docs/platform/rules/general/success-error-mapping/).
+8. **Results mapping** - is used to set fields within your form from the datasource itself. To learn more about results mapping go to [On Success Mapping](/docs/platform/rules/general/success-error-mapping/#on-success-mapping).
 
-9. **On error mapping** - you can expand this option by clicking on it, then add fields where you can display any error message that may have occurred during the mapping process. To learn more about error mapping go to [Success/Error Mapping](/docs/platform/rules/general/success-error-mapping/).
+9. **On error mapping** - you can expand this option by clicking on it, then add fields where you can display any error message that may have occurred during the mapping process. To learn more about error mapping go to [On Error Mapping](/docs/platform/rules/general/success-error-mapping/#on-error-mapping).
 
 10. **Max rows** - will allow you to set a number of fields to be displayed within a table.
 
