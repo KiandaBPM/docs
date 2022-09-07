@@ -242,16 +242,10 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>To add success mapping, click on &lt;strong>On success mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success mapping&lt;/a> for more details.&lt;/p>
+&lt;p>To add success mapping, click on &lt;strong>On success mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success Mapping&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>For &lt;strong>On error mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button:&lt;/p>
-&lt;ul>
-&lt;li>In the &lt;strong>Form field&lt;/strong> select a form field which will store information in your Kianda form&lt;/li>
-&lt;li>In the &lt;strong>Error message or text&lt;/strong> enter a error message that you want to appear in the event of errors or leave empty to use a system generated error indicating what has gone wrong when the rule executed.&lt;/li>
-&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping&lt;/li>
-&lt;/ul>
+&lt;p>For &lt;strong>On error mapping&lt;/strong> and click on the &lt;strong>Add mapping&lt;/strong> button. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-error-mapping">On Error Mapping&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>you simply need to select the field within the form which will store the error message&lt;/p>
@@ -268,8 +262,16 @@ Your browser does not support the video tag.
 &lt;li>&lt;strong>Form field&lt;/strong> - this field allows you to select a field in your form that you want to store the value from the datasource.&lt;/li>
 &lt;li>&lt;strong>Data source field or text&lt;/strong> - this field allows you to select a data from the datasource select which property of the response data you want to use when populating a field in your Kianda form.&lt;/li>
 &lt;li>&lt;strong>Add mapping&lt;/strong> - Click on the &lt;strong>Add mapping&lt;/strong> to add more fields for mapping results from the datasource to form fields.&lt;/li>
-&lt;li>&lt;strong>Bin/Trash&lt;/strong> &lt;strong>&lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">&lt;/strong> - Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mappings.&lt;/li>
+&lt;li>&lt;strong>Bin/Trash&lt;/strong> &lt;strong>&lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">&lt;/strong> - Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping.&lt;/li>
 &lt;/ul>
 &lt;h3 id="on-error-mapping">On Error Mapping&lt;/h3>
+&lt;p>Error mapping is a concept of populating a form field in your Kianda process when using the rules from the &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#when-to-use">When to use&lt;/a> section. When using those rules, you get presented with ability to map an &lt;strong>error&lt;/strong> when there is an &lt;strong>issue&lt;/strong> as the rule is executing. You might get an error when some details from the rule is not filled out properly or some details are missing. You have no way of telling what kind of error it is but the details of the error message will come from the datasource that you are trying to use. To see the error message, you need to create a separate text box field in your form and map the error to that field. Open the &lt;strong>On error mapping&lt;/strong> section and add a mapping by clicking on &lt;strong>Add mapping&lt;/strong> button:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/error-mapping.jpg" alt="Error mapping example">&lt;/p>
+&lt;ul>
+&lt;li>In the &lt;strong>Form field&lt;/strong> select a form field which will store the error message in your Kianda form.&lt;/li>
+&lt;li>In the &lt;strong>Error message or text&lt;/strong> enter a error message that you want to appear in the event of errors or click on the text box and select the &lt;strong>Error message&lt;/strong> option to use a system generated error indicating what has gone wrong when the rule executed.&lt;/li>
+&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings.&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping.&lt;/li>
+&lt;/ul>
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item></channel></rss>
