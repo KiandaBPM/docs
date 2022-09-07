@@ -101,10 +101,10 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Results mapping&lt;/strong> - is used to set fields within your form from the datasource itself. To learn more about results mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Results mapping&lt;/strong> - is used to set fields within your form from the datasource itself. To learn more about results mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success Mapping&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>On error mapping&lt;/strong> - you can expand this option by clicking on it, then add fields where you can display any error message that may have occurred during the mapping process. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>On error mapping&lt;/strong> - you can expand this option by clicking on it, then add fields where you can display any error message that may have occurred during the mapping process. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-error-mapping">On Error Mapping&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Max rows&lt;/strong> - will allow you to set a number of fields to be displayed within a table.&lt;/p>
@@ -210,7 +210,7 @@
 &lt;p>&lt;strong>Data source filter&lt;/strong> - works on condition bases where by you can filter the specific item that you want to update within your data source. The condition uses a field from within your form and therefore it is good practice to create a field and connect it to your data source to have the ability of selecting an item that you want to update. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Input mapping&lt;/strong> - used to update an item inside of the data source that you selected. Within this section the following fields are visible:&lt;/p>
+&lt;p>&lt;strong>Input mapping&lt;/strong> - used to update an item inside of the datasource that you selected. Within this section the following fields are visible:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Form field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value you want your updated item to contain.&lt;/li>
 &lt;li>&lt;strong>Data source field&lt;/strong> - select a field in your data source to hold the new value.&lt;/li>
@@ -218,10 +218,10 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>On success mapping&lt;/strong> - select the field(s) in the form which will store information and populate the &lt;strong>data source field or text&lt;/strong> field with the respective data source value. To learn more about success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>On success mapping&lt;/strong> - select the field(s) in the form which will store information and populate the &lt;strong>data source field or text&lt;/strong> field with the respective data source value. To learn more about success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success Mapping&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>On error mapping&lt;/strong> - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>On error mapping&lt;/strong> - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-error-mapping">On Error Mapping&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Ignore mapping for blank fields&lt;/strong> - used to check if there are any blank field that need to be updated on the datasource. For example, if there are two fields to be updated and the user wants to update only one, and leaves the other blank, then the filled out field is updated and the other field is left unchanged.&lt;/p>
@@ -272,10 +272,10 @@
 &lt;p>&lt;strong>Data source filter&lt;/strong> - works on condition bases where by you can filter the specific item that you want to delete from your data source. The condition uses a field from within your form and therefore it is good practice to create a field and connect it to your data source to have the ability of selecting an item that you want to delete. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>On success mapping&lt;/strong> - select the field(s) in the form which will store information and populate the &lt;strong>data source field or text&lt;/strong> field with the respective data source value. To learn more about success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>On success mapping&lt;/strong> - select the field(s) in the form which will store information and populate the &lt;strong>data source field or text&lt;/strong> field with the respective data source value. To learn more about success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success Mapping&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>On error mapping&lt;/strong> - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>On error mapping&lt;/strong> - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-error-mapping">On Error Mapping&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
