@@ -67,6 +67,6 @@ Success and Error mapping should be with rule execution, displaying values that 
 
 
 
-### What's next  ![Idea icon](/../content/docs/platform/rules/general/success-error-mapping.assets/18.png) ###
+### What's next  ![Idea icon](/images/18.png) ###
 
 To find out more about rule implementation, go to the main [Rules](/docs/platform/rules/) page and then click on the links to the different rule categories.
