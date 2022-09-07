@@ -4,17 +4,15 @@ weight: 3
 typora-root-url: ..\..\..\..\static
 ---
 
-## Introduction
-
 One of the data connectors within Kianda that you can connect to is **DocuSign**. DocuSign enables organisations to manage electronic agreements by offering electronic signatures also know as **eSignatures**. eSignatures are a way to sign different types of documents electronically on many different devices.  
-
-## Before you get started
-
-In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself so that the DocuSign **Application Programming Interface (API)** can be used. There are two types of accounts that you can create in DocuSign. An **ordinary** account and a **developer** account. Take note which account you have created as this information will be used to create a different connection within Kianda.
 
 ## When to use
 
 You can use the DocuSign data connector when a process your have created requires you to send individual documents or envelopes to get them signed **electronically**. With the connector you can access different types of **templates** that you have created within your DocuSign account, **download** documents, access already existing envelopes to see their **status** or **summary**. 
+
+## Before you get started
+
+In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself, so that the DocuSign **Application Programming Interface (API)** can be used. There are two types of accounts that you can create in DocuSign. An **ordinary** account and a **developer** account. Take note which account you have created as this information will be used to create a different connection within Kianda.
 
 ## How to get started
 
@@ -44,9 +42,23 @@ You can use the DocuSign data connector when a process your have created require
 
 7. Click on **Close** to close the details page and return to the data source management main view.
 
-### DocuSign functions
+## DocuSign functions
 
-When you use the DocuSign data connector within Kianda, there are **default functions** that are invoked from DocuSign's API. These functions enable you to access a number of DocuSign's functionalities. You can use each DocuSign function by using the **Data** set of rules to learn more about Data rules go to [Data rules](/docs/platform/rules/data/). With each DocuSign function you use, data needs to be passed into the function know as **payload** and data is returned known as **response**. When using the Data rules, you are presented with **Input mapping** which is equivalent to the **payload**, this is used to pass data into the function, for example you need to pass in a document file to be signed. The **Results mapping** is equivalent to the **response**, this is used to populate your form fields when a DocuSign function returns data, for example **status** of an envelope.
+When you use the DocuSign data connector within Kianda, there are **default functions** that are invoked from DocuSign's API. These functions enable you to access a number of DocuSign's functionalities. You can use each DocuSign function by using the **Data** set of rules, to learn more about Data rules go to [Data rules](/docs/platform/rules/data/). With each DocuSign function you use, data needs to be passed into the function know as **payload** and data is also returned, known as **response**. When using the Data rules, you are presented with **Input mapping** which is equivalent to the **payload**, this is used to pass data into the function, for example when you need a document signed, you need to pass in a document file to be signed, in other words, the document file you pass in is the **payload**. The **Results mapping** is equivalent to the **response**, this is used to populate your form fields when a DocuSign function returns data, for example **status** of an envelope.
+
+Here is a list of all functions available when using the DocuSign data connector. To learn more about the **payload** and **response** for the available functions go to the [DocuSign API Reference](https://developers.docusign.com/docs/esign-rest-api/reference/).
+
+- **sendDocument** - allows you to send one or more documents to a recipient to get them signed.
+- **sendEnvelope** - allows you to send a document to a recipient using one of your DocuSign templates.
+- **listTemplates** - retrieves the **templateID** and **templateName** of all templates from your DocuSign account.
+- **getEnvelope** - retrieves information from an envelope using an **envelopeID**.
+- **getEnvelopeSummary** - retrieves a summary of an envelope using an **envelopeID**.
+- **listEnvelopeDocuments** - retrieves any documents that are contained within an envelope using an **envelopeID**.
+- **downloadDocument** - allows you to download a specific document using a **documentID** from an envelope using an **envelopeID**.
+- **listTemplateSigners** - retrieves the name, role and **recipientID** of all signers from a template using a **templateID**
+- **getSigningUrl** - retrieves a URL to a signature made on an envelope using an **envelopeID**.
+
+### Example use case of DocuSign function
 
 Take the function **listTemplates** as an example. The **listTemplates** function **returns (response)** an **ID** and the **Name** of all templates that you have created in your DocuSign account. To use this function effectively, you can use the **Find items** rule with combination of the **table** input. The **Find items** rule will access all templates and map the results into the table. For each template in your DocuSign account, the **Find items** rule will add a table row with the appropriate **Template IDs** and **Template Names** of each template, here is the steps to achieve this:
 
@@ -64,18 +76,6 @@ To show case the functionality explained above, we will apply the **Find items**
    - Select the appropriate column field from your table and results field from your data source in the **Results mapping** section.
 
    ![Find items rule ](/images/docusign-find-items.jpg)
-
-Here is a list of all functions available when using the DocuSign data connector. To learn more about the **payload** and **response** for the available functions go to the [DocuSign API Reference](https://developers.docusign.com/docs/esign-rest-api/reference/).
-
-- **sendDocument** - allows you to send one or more documents to a recipient to get them signed.
-- **sendEnvelope** - allows you to send a document to a recipient using one of your DocuSign templates.
-- **listTemplates** - retrieves the **templateID** and **templateName** of all templates from your DocuSign account.
-- **getEnvelope** - retrieves information from an envelope using an **envelopeID**.
-- **getEnvelopeSummary** - retrieves a summary of an envelope using an **envelopeID**.
-- **listEnvelopeDocuments** - retrieves any documents that are contained within an envelope using an **envelopeID**.
-- **downloadDocument** - allows you to download a specific document using a **documentID** from an envelope using an **envelopeID**.
-- **listTemplateSigners** - retrieves the name, role and **recipientID** of all signers from a template using a **templateID**
-- **getSigningUrl** - retrieves a URL to a signature made on an envelope using an **envelopeID**.
 
 ## What's next  ![Idea icon](/images/18.png)
 

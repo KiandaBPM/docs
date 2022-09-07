@@ -4,11 +4,9 @@ weight: 6
 typora-root-url: ..\..\..\..\static
 ---
 
-A **File system** data connector allows you to use your local file system as a data source for your Kianda forms or dashboards. This means that as your processes are running they will use the information from the local file system or depending on the process, update or delete information at in the local file system location. Kianda has the ability to extract files, navigate subfolders and write new files into the directory. This includes local file and internet file systems.
+A **File system** data connector allows you to use your local file system as a data source for your Kianda forms or dashboards. This means that as your processes are running, they will use the information from the local file system or depending on the process, update or delete information at the local file system location. Kianda has the ability to extract files, navigate subfolders and write new files into the directory, this includes local file and internet file systems.
 
 Using this type of datasource is useful when you want Kianda to have access to your directory, to extract and read files as well as writing files to the directory.
-
-
 
 ## How to get started
 
@@ -38,8 +36,6 @@ Using this type of datasource is useful when you want Kianda to have access to y
 6. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
 
 7. Click on **Close** to close the details page and return to the data source management main view.
-
-
 
 ## File system parameters
 

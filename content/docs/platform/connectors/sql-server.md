@@ -4,10 +4,6 @@ weight: 18
 typora-root-url: ..\..\..\..\static
 ---
 
-
-
-## SQL Server connector
-
 One of the datasources available in Kianda is a Structured Query Language **(SQL) Server** datasource. Using the SQL server as your datasource, you can perform any Create, Read, Update and Delete (**CRUD**) operations using the **Data** rules provided in the Kianda platform, to learn more about data rules go to [Data rules](/docs/platform/rules/data/). Using the SQL server connector, you have access to all tables within your database from your server, keep in mind that you can perform CRUD operations on data within a **table** of the database, but you **cannot** create or delete **tables themselves**.
 
 ## When to use
