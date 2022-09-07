@@ -37,8 +37,8 @@ You can add this rule:
      - **Form field or text** - you can select a field within your form or type in text manually to represent the value you want to your new item to contain.
      - **Data source field** -  select a field in your data source to hold the new value.
      - **Add mapping** - you can choose to create multiple items in your data source by clicking on **Add mapping** button. You can also remove fields by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png).
-   - **On success mapping** - select the field(s) in the form which will store information and populate the **data source field or text** field with the respective data source value. To learn more about success mapping go to [Success/Error Mapping](/docs/platform/rules/general/success-error-mapping/).
-   - **On error mapping** - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to [Success/Error Mapping](/docs/platform/rules/general/success-error-mapping/).
+   - **On success mapping** - select the field(s) in the form which will store information and populate the **data source field or text** field with the respective data source value. To learn more about success mapping go to [On Success Mapping](/docs/platform/rules/general/success-error-mapping/#on-success-mapping).
+   - **On error mapping** - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to [On Error Mapping](/docs/platform/rules/general/success-error-mapping/#on-error-mapping).
 
 ### Editing, deleting or duplicating rules
 
