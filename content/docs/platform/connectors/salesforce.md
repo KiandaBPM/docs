@@ -76,9 +76,21 @@ Before starting going through the steps below you must ensure that you have a Co
 
 7. In the **Callback URL** text box enter `https://app.kianda.com/index.html`.
 
-8. On a second line of the **Callback URL** text box enter `https://{company}.kianda.com/index.html` where `company` is the name of your company's subscription, for example `https://green-itr.kianda.com/index.html`. The callback URL should look as follows when the company's name is `green-itr`:
+8. On a second line of the **Callback URL** text box enter `https://{company}.kianda.com/index.html` where `company` is the name of your company's subscription, for example `https://green-itr.kianda.com/index.html`. The **Callback URL** should look as follows when the company's name is `green-itr`:
 
    ![Callback textbox](/images/salesforce-callback.jpg)
+
+9. In the **Selected OAuth Scopes** section, move all of the scopes from **Available OAuth Scopes** to **Selected OAuth Scopes** window by selecting them and clicking **Add**. Here you can add scopes that you want your Connected App to have access to from within Kianda.
+
+10. From your Connected App screen, click on **Manage**.
+
+11. From the manage connected app screen, click on **Edit Policies**.
+
+12. In the **OAuth Policies** section, go to **Permitted Users** and select **All users may self-authorize**.
+
+13. In the **IP Relaxation** select the **Relax IP restrictions** option.
+
+14. Click on **Save**.
 
 ## What's next  ![Idea icon](/images/18.png) ##
 
