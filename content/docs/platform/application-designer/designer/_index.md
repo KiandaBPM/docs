@@ -187,16 +187,18 @@ In addition to adding fields/controls and rules, there are a number of ways to c
 Properties at all levels are visible in the **right-hand pane** of Kianda designer, along with the:
 
 - **Import** button ![Import button](/images/importform.png) to allow you to import forms and form elements like fields
+
 - **Version history** button ![Version history example](/images/version-history-example.jpg) to allow you to manage version of the process design
+
 - **Settings** button ![Settings button](/images/settings-button.jpg) to allow you to apply process security settings amongst other options
+
+  
 
 ### Process level properties
 
 When you click on a process from the main process view, straight away you will see the **Process properties** in the right-hand pane as shown in the image above. To find out more about process go to the [Process properties](/docs/platform/application-designer/process/properties/) page. 
 
-When you click on a form within a process, then the properties view changes to show **Form properties**, as shown in the image below.
-
-![Form properties view](/images/form-properties-view.jpg)
+When you click on a form within a process, then the properties view changes to show **Form properties**, as shown in the image in [Form level properties](#form-level-properties).
 
 If you want to **return to Process properties,** click on the **process name** beside the Designer and chevron symbol, that is:
 
@@ -204,9 +206,45 @@ If you want to **return to Process properties,** click on the **process name** b
 
 ### Form level properties
 
-When you click on a form in Kianda **Designer**, the properties for that form appear. To find out more about form properties go to the [Form properties](/docs/platform/application-designer/forms/#form-properties) page. 
+When you click on a form in Kianda **Designer**, the properties for that form appear. 
 
-To find out more about form properties, go to the [Form properties](/docs/platform/application-designer/forms/#form-properties) page. Field properties will be described within the information page for each field, go to [Controls](/docs/platform/controls/) to start navigating to individual control pages.
+![Form properties view](/images/form-properties-view.jpg)
+
+To find out more about form properties go to the [Form properties](/docs/platform/application-designer/forms/#form-properties) page. 
+
+Note that at form level, addition buttons appear above **Form properties** namely:
+
+- **Edit/Pen** button ![Edit/pen button](/images/penicon.png) where clicking on this button opens the **Edit** dialog box for the chosen item, for example a form.
+
+- **Clone** button ![Clone button](/images/clone.png) that allows you to make a duplicate form. Click on **OK** to make a copy or **Close** to close the dialog box and cancel the copy.
+
+- **Bin/trash** button ![Bin button](/images/binicon.png) where clicking on this button opens a popup asking you to confirm that you want to **delete** the selected form. Click on **OK** to make a copy or **Close** to close the dialog box and cancel the deletion.
+
+  
+
+### Field level properties
+
+When you add controls to forms Kianda **Designer**, and select a field/control, the properties for that field appear in the right-hand pane.
+
+![Field properties view](/images/field-properties-view.jpg)
+
+The type of field/control is listed in the properties pane, for example 'Text box' as shown in the image above. How the field appears is easy to control simply by checking/unchecking a number of boxes. To find out more about field/control properties go to the [Control properties](/docs/platform/controls/properties/) page. 
+
+#### Change field button
+
+Note that at field level, in addition to the buttons visible at [Form level](#form-level-properties), a **Change field** button ![Change field button](/images/change-field-button.jpg)is visible. To change field type:
+
+1. Select a field in a form by clicking on it.
+
+2. Click on the **Change field** button.
+
+3. A pop-up box appears allowing you to choose from the full range of field types, including [customised field widgets](/docs/low-code/field-widget/) created in Kianda **Developer**. 
+
+   ![Change field dialog box](/images/change-name-dialog-box.jpg)
+
+4. Click on the **radio button** beside the field type of choice and click on **OK** to make the change, or **Close** to close the dialog box and cancel the change.
+
+5. An **Edit field** dialog box appears allowing you to change settings for that new field type.
 
 
 
@@ -230,5 +268,7 @@ More detailed **process settings** are available within Kianda **Designer** in t
 
 
 ### What's next  ![Idea icon](/images/18.png) ###
+
+Click on the links to find out more about aspects of Kianda **Designer**, namely [Processes](/docs/platform/application-designer/process/) and [Forms](/docs/platform/application-designer/forms/).
 
 To read about managing versions of forms, go to the link below:
