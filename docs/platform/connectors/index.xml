@@ -94,7 +94,7 @@
 &lt;p>Your &lt;strong>SharePoint service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Dropbox</title><link>https://docs.kianda.com/docs/platform/connectors/dropbox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/dropbox/</guid><description>
 &lt;p>A &lt;strong>Dropbox&lt;/strong> data system connector allows you to the Dropbox cloud file system as a data source for your Kianda forms or dashboards. Dropbox is a personal cloud based file system with many subscriptions including team subscriptions. This allows you to store files online and share them with your team or use it as a backup. This means that as your processes are running they will use the information from the cloud file system or depending on the process, update or delete information at the Dropbox cloud file system.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>You can use the Dropbox connector when you want a process within your Kianda subscription to have &lt;strong>access&lt;/strong> to your Dropbox cloud file directory. You can &lt;strong>extract&lt;/strong> files from Dropbox into Kianda by using the &lt;strong>List&lt;/strong> field by connecting your Dropbox connector to the List fields datasource, to learn more about the List field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>. You can also use the Dropbox data connector within the &lt;strong>Data&lt;/strong> set of rules, these rules allow you to perform **Create, Read, Update ** and &lt;strong>Delete&lt;/strong> (&lt;strong>CRUD&lt;/strong>) operations. To learn more about the Data rules, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
+&lt;p>You can use the Dropbox connector when you want a process within your Kianda subscription to have &lt;strong>access&lt;/strong> to your Dropbox cloud file directory. You can &lt;strong>extract&lt;/strong> files from Dropbox into Kianda by using a &lt;strong>List&lt;/strong> field control. Set the datasource of the List field to be your Dropbox connector allowing you to access files from you Dropbox account, to learn more about the List field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>. You can also use the Dropbox data connector within the &lt;strong>Data&lt;/strong> set of rules, these rules allow you to perform **Create, Read, Update ** and &lt;strong>Delete&lt;/strong> (&lt;strong>CRUD&lt;/strong>) operations. To learn more about the Data rules, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
 &lt;h2 id="before-getting-started">Before getting started&lt;/h2>
 &lt;p>In advance of using the Dropbox data connector, you must have an account with Dropbox. The account is used to authorise a connection between your Kianda subscription and your Dropbox account.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -122,7 +122,10 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>When you have added the MySQL server details, you are ready to test your connection and add security. At the bottom of the &lt;strong>MySQL Server details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;p>A Dropbox authentication window will open. Enter your login details to &lt;strong>authenticate&lt;/strong> the connection.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added the Dropbox details, you are ready to test your connection and add security. At the bottom of the &lt;strong>Dropbox details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
@@ -134,8 +137,22 @@
 &lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;h2 id="dropbox-parameters">Dropbox parameters&lt;/h2>
+&lt;p>When you use the &lt;strong>Dropbox&lt;/strong> datasource, there are &lt;strong>default parameters&lt;/strong> invoked from the files that you can access. For example when you create a &lt;strong>list&lt;/strong> filed in a Kianda form and use Dropbox as its datasource, these Dropbox parameters will appear in &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and &lt;strong>Sort by&lt;/strong> field in the &lt;strong>Edit field dialog box&lt;/strong>, see &lt;strong>Name&lt;/strong> for example in the image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dropbox-parameters.jpg" alt="File system parameters">&lt;/p>
+&lt;p>The File system parameters that appear in those three dropdown fields are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Name&lt;/strong> - name of the file including the extension.&lt;/li>
+&lt;li>&lt;strong>NameNoExtension&lt;/strong> - name of the file without the extension.&lt;/li>
+&lt;li>&lt;strong>Path&lt;/strong> - displays the full path to the file.&lt;/li>
+&lt;li>&lt;strong>Extension&lt;/strong> - displays just the extension of the file.&lt;/li>
+&lt;li>&lt;strong>Modified&lt;/strong> - displays the date and time when the file was last modified.&lt;/li>
+&lt;li>&lt;strong>Created&lt;/strong> - displays the date and time when the file was created.&lt;/li>
+&lt;li>&lt;strong>ParentFolderName&lt;/strong> - name of the folder that contains the file.&lt;/li>
+&lt;li>&lt;strong>ParentFolderPath&lt;/strong> - path of the folder that contains the file.&lt;/li>
+&lt;/ul>
 &lt;h2 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>Your &lt;strong>SQL Server connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Email connector</title><link>https://docs.kianda.com/docs/platform/connectors/email/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/email/</guid><description>
+&lt;p>Your &lt;strong>Dropbox connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Email connector</title><link>https://docs.kianda.com/docs/platform/connectors/email/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/email/</guid><description>
 &lt;p>In your company&amp;rsquo;s Kianda platform you can connect an emailing service such as Outlook or Gmail. This allows you to send automated emails from a specified email account such as support@ or info@. The email connector feature It is mostly used when applying the &lt;strong>Send email&lt;/strong> rule, which allows you to set a &lt;strong>From&lt;/strong> field. For example setting up a payroll &lt;strong>Email connector&lt;/strong> would be used to send automated emails to employees with their payslips attached. To learn more about send email rule go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
