@@ -479,9 +479,9 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;li>
 &lt;p>Use the slider to turn on the relevant callback:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Enable Created Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>updated&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;code>**eventType=created**&lt;/code> being issued to the given URL.&lt;/li>
-&lt;li>&lt;strong>Enable Updated Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>updated&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;code>**eventType=updated**&lt;/code> being issued to the given URL.&lt;/li>
-&lt;li>&lt;strong>Enable Deleted Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>deleted&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;code>**eventType=deleted**&lt;/code> being issued to the given URL.&lt;/li>
+&lt;li>&lt;strong>Enable Created Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>updated&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;strong>&lt;code>eventType=created&lt;/code>&lt;/strong> being issued to the given URL.&lt;/li>
+&lt;li>&lt;strong>Enable Updated Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>updated&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;strong>&lt;code>eventType=updated&lt;/code>&lt;/strong> being issued to the given URL.&lt;/li>
+&lt;li>&lt;strong>Enable Deleted Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>deleted&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;strong>&lt;code>eventType=deleted&lt;/code>&lt;/strong> being issued to the given URL.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -494,8 +494,9 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;p>Click on &lt;strong>OK&lt;/strong> when done or click on &lt;strong>Close&lt;/strong> at any stage to close the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="whats-next">What&amp;rsquo;s next&lt;/h2>
-&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Low-Code development best practices</title><link>https://docs.kianda.com/docs/low-code/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/best-practices/</guid><description>
+&lt;h2 id="-whats-next-idea-iconimages18png">## What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p>
+&lt;p>To return to the main &lt;a href="https://docs.kianda.com/docs/low-code/">Low-code development&lt;/a> page, click on the link.&lt;/p></description></item><item><title>Docs: Low-Code development best practices</title><link>https://docs.kianda.com/docs/low-code/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/best-practices/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item></channel></rss>
