@@ -160,8 +160,8 @@
 &lt;li>&lt;strong>Add mapping&lt;/strong> - you can choose to create multiple items in your data source by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>On success mapping&lt;/strong> - select the field(s) in the form which will store information and populate the &lt;strong>data source field or text&lt;/strong> field with the respective data source value. To learn more about success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>On error mapping&lt;/strong> - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success/Error Mapping&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>On success mapping&lt;/strong> - select the field(s) in the form which will store information and populate the &lt;strong>data source field or text&lt;/strong> field with the respective data source value. To learn more about success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success Mapping&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>On error mapping&lt;/strong> - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-error-mapping">On Error Mapping&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
