@@ -8,7 +8,7 @@ One of the datasources available in Kianda is a Structured Query Language **(SQL
 
 ## When to use
 
-You can use the SQL Server connector when you want **access** or **modify** data within any **table** in your SQL server. When connecting a SQL server datasource to a field, you can only connect and display information of a **table** from your server, not the  information of the **server** itself. For example if your SQL server contains tables such as **Employees**, **Purchases** and **Standing Orders**, you will be able to connect the list field to **only one** of those tables giving you CRUD access.
+You can use the SQL Server connector when you want **access**, **modify** or **retrieve** data within a **table** in your SQL server. When connecting a SQL server datasource to a [List field](/docs/platform/controls/input/list/), you can only connect and display information from a **table**, not the information of the **server** itself. For example if your SQL server contains **tables** such as **Employees**, **Purchases** and **Standing Orders**, you will be able to connect the list field to **only one** of those tables giving you CRUD access.
 
 ## Before getting started
 
