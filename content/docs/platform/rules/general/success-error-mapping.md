@@ -59,12 +59,12 @@ Success and Error mapping should be with rule execution, displaying values that 
 
 Success mapping is a concept of **populating** your form fields with **data** that is **retrieved** from a **datasource** using a **data connector**, to learn more about data connectors go to [Data connectors](/docs/platform/connectors/). This retrieved data from the datasource is known as a **response**. Using this response data, you can populate a field within your form, for example you can retrieve a file which is stored in your SharePoint or Dropbox datasource and populate the retrieved file into a **File field**. This will give you the ability to access the retrieved file in your process. 
 
-All data connectors within Kianda may have different response data that can be used to populate fields in a form. You can use the **Success mapping** in the rules mentioned in the [When to use](/docs/platform/rules/general/success-error-mapping/#when-to-use) section. Take one of the SharePoint rules **Create Site** as an example, go to [Create a site](/docs/platform/rules/sharepoint/create-a-site/) for more details. When all information is filled out in the rule, open the on success mapping section. in this specific Create a site rule, you can access three different data properties from the response as shown below:
+All data connectors within Kianda may have different response data that can be used to populate fields in a form. You can use the **Success mapping** in the rules mentioned in the [When to use](/docs/platform/rules/general/success-error-mapping/#when-to-use) section. Take one of the SharePoint rules [**Create a site**](/docs/platform/rules/sharepoint/create-a-site/) as an example. When all information is filled out in the rule, in the **On success mapping** section you can assess the **data object** (response) called **Site properties**. From the **Site properties** data object you can access three different pieces of data; **Site Name**, **Site Id** and **Site URL**. You can map (populate) those piece of data into fields in your form by selecting a field in the **Form field** section: 
 
 ![Success mapping example](/images/success-mapping.jpg)
 
-- **Form field** - this field allows you to select a field in your form that you want to store the value from the datasource.
-- **Data source field or text** - this field allows you to select a data from the datasource select which property of the response data you want to use when populating a field in your Kianda form.
+- **Form field** - this field allows you to select a field in your form to store the value from the datasource.
+- **Data source field or text** - this field allows you to select which piece of data your want to retrieve from the datasource, and store it in a form field.
 - **Add mapping** - Click on the **Add mapping** to add more fields for mapping results from the datasource to form fields.
 - **Bin/Trash** **![Bin/Trash button](/images/bin.png)** - Click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png) to delete a mapping.
 
