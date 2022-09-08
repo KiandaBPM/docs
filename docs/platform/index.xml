@@ -954,7 +954,21 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/doc-gen-template-outline.jpg" alt="Template outline">&lt;/p>
 &lt;p>We have briefly introduced the concept of document generation in Kianda. Now let’s look at the following areas in more detail:&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3></description></item><item><title>Docs: Task Automation with Kianda</title><link>https://docs.kianda.com/docs/platform/automation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/automation/</guid><description>
-&lt;p>Kianda could automate any tasks in few simple steps. Tasks could be something like sending reminder emails, having a background check, action with respect data source or scheduling a sub-process.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Automation in Kianda happens at various level and in various ways, all of which you can control using the click of a button, or configuring a parameter. To help you recognise how automation can happen, we&amp;rsquo;ve broken it down for you into different sections:&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="process-level-automation">Process level automation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="field-level-automation">Field level automation&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;h2 id="process-level-automation">Process level automation&lt;/h2>
+&lt;p>Process level automation, means that new &lt;strong>process instances are created automatically&lt;/strong> without requiring a user action to initiate the process.&lt;/p>
+&lt;p>This can happen in a number of ways:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="scheduled-tasks-function">Scheduled tasks function&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/">Start a process rule&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="scheduled-tasks-function">Scheduled tasks function&lt;/h3>
+&lt;p>As an &lt;strong>administrator&lt;/strong> you can use Kianda to automate any tasks in few simple steps. Tasks could be something like sending reminder emails, having a background check, action with respect data source or scheduling a sub-process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/kianda-schedule-tasks.JPG" alt="Scheduled tasks list">&lt;/p>
 &lt;p>Scheduling a task from the left navigation panel in a few simple steps:&lt;/p>
 &lt;ol>
@@ -982,5 +996,4 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="re-occurrence">Re-occurrence&lt;/h2>
-&lt;p>The Kianda schedule tasks can be triggered for re-occurrence. The re-occurrence could be by minutes, hours, days, weeks or months. Further, the schedule tasks could be configured easily to run at a specific minute of the hour, weekdays only, specific day of the week or specific day of the month.&lt;/p>
-&lt;h2 id="heading">&lt;/h2></description></item></channel></rss>
+&lt;p>The Kianda schedule tasks can be triggered for re-occurrence. The re-occurrence could be by minutes, hours, days, weeks or months. Further, the schedule tasks could be configured easily to run at a specific minute of the hour, weekdays only, specific day of the week or specific day of the month.&lt;/p></description></item></channel></rss>
