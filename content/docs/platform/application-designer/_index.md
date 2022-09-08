@@ -62,7 +62,7 @@ To help you plan your process, go to [Plan your process](/docs/getting-started/c
 
    - **Title** - the title for your process
 
-   - **ID** - this is a unique Name that autofills from the title. 
+   - **ID** - this is a unique Name that is autofilled from the title, however you can manually edit it. 
 
    - **Description** - a short description for your process
 
@@ -122,7 +122,7 @@ The rules above work together to determine if the form is in edit mode or displa
 
 ### How to add a form
 
-1. To get started with processes go to the left-hand side menu > **Administration** >  **Designer**. There are options to import processes, or use the App Store or create a new process from scratch by clicking on the **Add new** button, see [How to get started with processes](/docs/platform/application-designer/designer/#how-to-get-started) for more information.
+1. To get started with processes, go to the left-hand side menu > **Administration** >  **Designer**. There are options to import processes, use the App Store or create a new process from scratch by clicking on the **Add new** button. To learn more about this, see [How to get started with processes](/docs/platform/application-designer/designer/#how-to-get-started).
 
 2. When you open a process or create a new process you are automatically brought into **Kianda Designer**. In new processes, by default a **new form** is automatically added to your process called **form 1**. 
 
@@ -130,7 +130,7 @@ The rules above work together to determine if the form is in edit mode or displa
 
    
 
-3. The form is automatically selected and ready to add **controls** and **rules** to using the options in the left-hand pane. You can edit the form by clicking on the **edit/pen** button ![Edit button](/images/penicon.png) highlighted above. This will open an **Edit form** dialog box, see [Editing forms](/docs/platform/application-designer/designer/#editing-forms) for more details.
+3. The form is automatically selected, and **controls** and **rules** are ready to be added using the options in the left-hand pane. You can edit the form by clicking on the **edit/pen** button ![Edit button](/images/penicon.png) highlighted above. This will open an **Edit form** dialog box, see [Editing forms](/docs/platform/application-designer/designer/#editing-forms) for more details.
 
 4. To add another form, click on the **Add form** button at the top of the page.
 
@@ -198,7 +198,7 @@ The following headings showcase examples of fields and how they can be used to p
 
 Model dialogs are a special form of **layout** fields. It allows a form designer to define an interface with the key intention of grabbing users' attention to something important.
 
-Typically dialogs are used for to create alerts for example a user confirmation or to help users make a final decision in a process.
+Typically dialogs are used to create alerts, for example a user confirmation or to help users make a final decision in a process.
 
 ***How to use a model dialog***
 
@@ -228,7 +228,7 @@ Using the **List field** provides the opportunity to define an unlimited level c
 
 ![Dropdown cascading lists](/images/dropdown-cascading-lists.jpg)
 
-To achieve the effect you can connect your list to a data source for example a SharePoint list or table, then use the list data source **conditions** options to filter content based on a parent list. 
+To achieve this effect, you can connect your list to a data source, for example a SharePoint list or table. Then use the list data source [conditions](/docs/platform/rules/general/add-conditions/) options to filter content based on a parent list. 
 
 ![Cascading dropdown](/images/cascading-list-conditions.jpg)
 
@@ -245,7 +245,7 @@ In the example above, the condition used is that a filter is applied if data fro
 
 ## Easy to customise form features
 
-Remember with Kianda **Designer** you don't need any coding experience, so anyone with **Administrator** or **Design business process** access can use Kianda's easy to use interface to add fields to forms and customise forms to create the desired effects for an optimum user experience. The Kianda interface makes it easy to create sophisticated forms that follow modern web design principles, all at the click of a button. Examples of ways to customise forms are shown in the following sections, [Responsive form layout](#responsive-form-layout) and [Input validation](#input-validation) . 
+Remember with Kianda **Designer** you don't need any coding experience, so anyone with **Administrator** or **Design business process** access can use Kianda's easy to use interface to add fields to forms and customise forms to create the desired effects for an optimum user experience. The Kianda interface makes it easy to create sophisticated forms that follow modern web design principles, all at the click of a button. Examples of ways to customise forms are shown in the following sections, [Responsive form layout](#responsive-form-layout) and [Input validation](#input-validation).
 
 ### Responsive form layout
 
@@ -257,7 +257,7 @@ Clicking on **Collapse or expand responsive layout** button ![Collapse responsiv
 
 ![Layout mode](/images/layout-mode.png)
 
-Click on the blue bar for both **Layout** and **Mobile Layout** to adjust the size of the field. This allows you to specify a layout made of 1 to 12 columns and is based on bootstrap, a popular CSS  framework that allows designing web interfaces with a mobile-first approach.
+Click on the blue bar for both **Layout** and **Mobile Layout** to adjust the size of the field. This allows you to specify a layout made of 1 to 12 columns and is based on Bootstrap, a popular CSS framework that allows designing web interfaces with a mobile-first approach.
 
 ### Input validation
 
@@ -267,13 +267,13 @@ As with editing the layout of fields, it is easy to validate input, making field
 
 Simply enable the checking the **Required** property in this way will automatically prevent users from submitting forms with an empty field. The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.
 
-Another way of validating input is to use the **validate input rule** this allows greater flexibility in terms of when or what to validate, see [Validate input](/docs/platform/rules/form-actions/validate-input/) for more information.
+Another way of validating input is to use the **validate input rule** which allows for greater flexibility in terms of when or what to validate. See [Validate input](/docs/platform/rules/form-actions/validate-input/) for more information.
 
 In addition to changing field properties, you can configure [settings](#settings) to make processes perform the way you want.
 
 ## Settings
 
-In addition to **changing field properties** like [Input validation](#input-validation), you can **edit process, form and field** **settings**. Having settings at each level will allow you to tweak your process design in minute.
+In addition to **changing field properties** like [Input validation](#input-validation), you can **edit process, form and field** **settings**. Having settings at each level will allow you to tweak your process design in minutes.
 
 At the highest level, **process settings**  are found in the right-hand side pane of Kianda **Designer**. 
 
@@ -288,7 +288,7 @@ There are many options within **Settings** to manage for example process securit
 
 **Anonymous forms** are a great way of **allowing people outside of your organisation** to interact with your processes. It could be something as simple as a feedback form or a GDPR data request but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission, or person assigned to manage the form.
 
-Anonymous forms can be embedded in iframes and safely displayed within other web-based applications. In Kianda there are effectively two types of anonymous forms:
+Anonymous forms can be embedded using iframes or inline frames, a HTML tag that allows for external document nesting and safe displaying within other web-based applications. In Kianda there are effectively two types of anonymous forms:
 
 - [New process instance anonymous form URL](#new-process-instance-anonymous-form-url)
 - [Existing process anonymous form URL](#existing-instance-anonymous-form-url)
@@ -324,7 +324,7 @@ The following are some of the key options of the anonymous link rule:
 ## Rules
 Kianda **rules** allow for dynamic actions within processes that can be used to change the workflow, send automated emails or notifications, as well as manipulate data in data sources.
 
-There are 60 predefined rules, across 10 categories that allow you to drive your business processes in a myriad of ways. Go to the [Rules](/docs/platform/rules/) to navigate to each of the different field categories.
+There are 60 predefined rules, across 10 categories that allow you to drive your business processes in a myriad of ways. Go to the [Rules](/docs/platform/rules/) section to navigate to each of the different field categories.
 
 Rules can be driven by [conditions](/docs/platform/rules/general/add-conditions/) for example based on user input, form fields will dynamically appear or hide according to how the user navigates a form, and all rules are **actions** which can involve for example retrieving values from a datasource, storing data in a field or automating user addition to Salesforce.
 
