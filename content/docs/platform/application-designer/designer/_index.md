@@ -23,7 +23,7 @@ There are 3 key principles to consider when working with forms:
 2) Form **interaction** - how users can use forms depending on certain sequences happening
 3) Form **management** - who can edit and access forms
 
-This page presents the information you need related to **form design**, that is what a form looks like, and what it contains. By default, **Administrators** and those with **Design business process** role can edit forms, but they can also set how other people interact with forms, for example to make forms viewable as **read-only**. Go to [Form owners](/docs/platform/application-designer/forms/form-owners/) to find out more about how form ownership works, and [Form display modes](/docs/platform/application-designer/forms/form-display-modes/) to find out out more about how forms display. 
+This page presents the information you need related to **form design**, that is what a form looks like, and what it contains. By default, **Administrators** and those with the **Design business process** role can edit forms, but they can also set how other people interact with forms, for example to make forms viewable as **read-only**. Go to [Form owners](/docs/platform/application-designer/forms/form-owners/) to find out more about how form ownership works, and [Form display modes](/docs/platform/application-designer/forms/form-display-modes/) to find out out more about how forms display. 
 
 
 
@@ -48,23 +48,23 @@ The key components of the designer are:
 
 3. The right-hand pane is where the **properties** and **rules** are displayed for the selected item, see [Properties](#properties) for more information. From this pane you can also [Import forms](#import-forms), see the [Version history](/docs/platform/application-designer/designer/version-history/) for a process and set process [Settings](/docs/platform/application-designer/process/settings/). Click on the links to find out more.
 
-Note the name of the process you are working on is shown in the top menu bar, for example Quarterly Training Request. 
+Note that the name of the process you are working on is shown in the top menu bar, for example Quarterly Training Request. 
 
 
 
 ## How to get started with forms
 
-1. How you get started with forms depends on:
+1. How you get started with forms depends on if you:
 
-   - if you have created a process using the App Store, see [Predefined forms](#predefined-forms)
+   - have created a process using the App Store, see [Predefined forms](#predefined-forms)
 
-   - if you have created a process from scratch or want to create a form from scratch, see [New forms](#new-forms)
+   - have created a process from scratch or want to create a form from scratch, see [New forms](#new-forms)
 
-   - if you import forms that have already been created, see [Import forms](#import-forms)
+   - import forms that have already been created, see [Import forms](#import-forms)
 
 2. Once your form is created, you are ready to start adding elements to your form, see [Adding form elements](#adding-form-elements). 
 
-2. In addition there are a number of settings you can change, see [Settings and Properties](#settings-and-properties). 
+2. In addition there are a number of settings you can change, see [Properties](#properties) and [Settings](#settings). 
 
    
 
@@ -131,7 +131,7 @@ Note: as you change any of the options in the dialog box, the impact will be sho
 
      Other options include a checkbox for **When editing auto hide form footer buttons** and **Trigger rules on save**.
    
-     - If you check **Trigger rules on save** then click into the **Save action field** to choose from an action trigger as to when the form is saved, for example Submit, Save or Close. These can be other actions depending on what you have defined.
+     - If you check **Trigger rules on save** then click into the **Save action field**, you can choose an action trigger from the drop-down list as to when the form is saved, for example on execution of the Submit, Save or Close buttons. These can be other actions depending on what you have defined.
    
      ![Edit action settings](/images/editactions_resized.png)
    
@@ -180,7 +180,7 @@ Within a form like the one shown above you can:
 
 ## Properties ## 
 
-In addition to adding fields/controls and rules, there are a number of ways to create the form and process design you want. You can set **properties at property, form and field level**. Properties represent how an element presents itself, for example the title and layout of the element.
+In addition to adding fields/controls and rules, there are a number of ways to create the form and process design you want. You can set **properties** at **property, form** and **field level**. Properties represent how an element presents itself, for example the title and layout of the element.
 
 ![Process and form properties](/images/right-hand-pane-designer.jpg)
 
@@ -212,7 +212,7 @@ When you click on a form in Kianda **Designer**, the properties for that form ap
 
 To find out more about form properties go to the [Form properties](/docs/platform/application-designer/forms/#form-properties) page. 
 
-Note that at form level, addition buttons appear above **Form properties** namely:
+Note that at form level, additional buttons appear above **Form properties** namely:
 
 - **Edit/Pen** button ![Edit/pen button](/images/penicon.png) where clicking on this button opens the **Edit** dialog box for the chosen item, for example a form.
 
@@ -232,7 +232,7 @@ The type of field/control is listed in the properties pane, for example 'Text bo
 
 #### Change field button
 
-Note that at field level, in addition to the buttons visible at [Form level](#form-level-properties), a **Change field** button ![Change field button](/images/change-field-button.jpg)is visible. To change field type:
+Note that at field level, in addition to the buttons visible at [Form level](#form-level-properties), a **Change field** button ![Change field button](/images/change-field-button.jpg) is visible. To change field type:
 
 1. Select a field in a form by clicking on it.
 
