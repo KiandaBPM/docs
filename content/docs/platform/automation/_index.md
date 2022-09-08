@@ -4,7 +4,25 @@ linkTitle: "Task Automation"
 typora-root-url: ..\..\..\..\static
 ---
 
-Kianda could automate any tasks in few simple steps. Tasks could be something like sending reminder emails, having a background check, action with respect data source or scheduling a sub-process. 
+## Introduction
+
+Automation in Kianda happens at various level and in various ways, all of which you can control using the click of a button, or configuring a parameter. To help you recognise how automation can happen, we've broken it down for you into different sections:
+
+1. [Process level automation](process-level-automation)
+2. [Field level automation](field-level-automation)
+
+## Process level automation
+
+Process level automation, means that new **process instances are created automatically** without requiring a user action to initiate the process.
+
+This can happen in a number of ways:
+
+- [Scheduled tasks function](scheduled-tasks-function)
+- [Start a process rule](/docs/platform/rules/workflow/start-a-process/)
+
+### Scheduled tasks function
+
+As an **administrator** you can use Kianda to automate any tasks in few simple steps. Tasks could be something like sending reminder emails, having a background check, action with respect data source or scheduling a sub-process. 
 
 ![Scheduled tasks list](/images/kianda-schedule-tasks.JPG)
 
@@ -30,5 +48,5 @@ Scheduling a task from the left navigation panel in a few simple steps:
 
 The Kianda schedule tasks can be triggered for re-occurrence. The re-occurrence could be by minutes, hours, days, weeks or months. Further, the schedule tasks could be configured easily to run at a specific minute of the hour, weekdays only, specific day of the week or specific day of the month.
 
-## 
+
 

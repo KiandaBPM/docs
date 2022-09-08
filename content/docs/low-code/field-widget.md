@@ -30,7 +30,7 @@ If you are an experienced developer with an **Administrator** or **Developer** r
 
 5. When you create a custom field widget, the **Widget UI** and **Widget Code** tabs are displayed. These two screenshots show the default code for 'Widget UI' and 'Widget Code'.
 
-      The 'Widget UI' defines the HTML, handlers, expressions and more.
+      The 'Widget UI' defines the HTML, handlers, expressions and more, see [Sample widget UI code](#sample-widget-ui-code) for an example of code that creates an interactive image display field. The code below uses Ember templating library, Handlebars JS as seen by {{}} below.
 
       ***Field widget UI***
       ![Widget UI](/images/widgetfieldui.gif)
@@ -48,6 +48,80 @@ If you are an experienced developer with an **Administrator** or **Developer** r
       ![Custom fields](/images/customcontrol.png)
 
 
+
+## Sample widget text
+
+The following sample widget code creates a custom field that can be used to create an interactive form design. You will find commented code that you can try out in the UI tab and code tab of the **field widget** editor in Kianda **Developer**.
+
+**Sample Custom field Widget UI** code is as follows:
+
+```javascript
+{{#if (eq displayMode "design")}}
+    <select class="form-control" id="entityType">
+  	<option value="">Please configure my settings before use</option> {{! Prompt the user to set the custom fields settings when in design mode}}
+	</select>
+{{/if}}
+
+{{#if (eq displayMode "edit")}}
+  <select class="form-control" id="entityType" onchange={{action 'frameSelected' value="target.value"}}> {{! Dropdown with a call to an action in widget code to change the picture on select}}
+  	<option value="">Select</option>
+    <option value="https://i.etsystatic.com/9126655/r/il/9e5871/1570989181/il_fullxfull.1570989181_monu.jpg">Green</option> {{! Dropdown is populated with frames to put in the image field}}
+    <option value="https://i.etsystatic.com/9126655/r/il/a99539/2385100329/il_570xN.2385100329_l7ju.jpg">Red</option>
+    <option value="https://i.etsystatic.com/9126655/r/il/a31b15/2339396272/il_570xN.2339396272_kai0.jpg">Yellow</option>
+    <option value="https://i.etsystatic.com/9126655/r/il/b36fd3/3101702890/il_570xN.3101702890_51ek.jpg">Purple</option>
+	</select>
+{{/if}}
+
+{{#if (eq displayMode "settings")}}
+	<div class="form-group">
+	<label class="control-label">Image to place pictures into</label>
+    {{field-picker process=process required=true allowText=false includes='["fields/field-image"]' value=field.settings.imageDestination}} {{! Allow the user to select an image field to put the frame into}}
+    <label class="control-label">Field to display warning message in</label>
+	{{field-picker process=process required=true allowText=false value=field.settings.warningMessage}} {{! Allow the user to select a text field to display the warning message in}}
+</div>
+{{/if}}
+	
+{{#if (eq displayMode "display")}}
+    <select class="form-control" onchange={{action 'frameSelected' value="target.value"}} > {{! Dropdown with a call to an action in widget code to change the picture on select}}
+  	<option value="">Select</option>
+    <option value="https://i.etsystatic.com/9126655/r/il/9e5871/1570989181/il_fullxfull.1570989181_monu.jpg">Green</option> {{! Dropdown is populated with frames to put in the image field}}
+    <option value="https://i.etsystatic.com/9126655/r/il/a99539/2385100329/il_570xN.2385100329_l7ju.jpg">Red</option>
+	</select>
+{{/if}} 
+```
+
+**Sample Custom field widget code **
+
+```javascript
+{
+ edit:function(){
+	var field = this.get('field');
+    var process = this.get('field.process');
+    var warningMessage = process.findFieldByName(this.get("field.settings.warningMessage.name")); //Retrieve the warning message field
+    warningMessage.set("visible", true); //Set warning messsage field to visible as we are in edit mode
+    warningMessage.set("enabled", false); //Set warning message field to disabled to avoid a user editing the text in it
+    warningMessage.set("text", "Preview mode: Not actual process"); //Set the warning message field text
+ },
+ display:function(){
+    var field = this.get('field');
+    var process = this.get('field.process');
+    var warningMessage = process.findFieldByName(this.get("field.settings.warningMessage.name")); //Retrieve the warning message field
+	warningMessage.set("visible", false); //Set warning messsage field to invisible as we are in display mode
+ },
+  actions: {
+    frameSelected: function(image) {
+       var field = this.get('field');
+       var process = this.get('field.process');
+       var imageDestination = process.findFieldByName(this.get("field.settings.imageDestination.name")); //Retrieve the image field selected as the destination
+       imageDestination.set("text", image);
+     },
+  }
+}
+```
+
+The outcome from this code used in a Kianda form can be seen in the next section [Field output](#field-output).
+
+### Field output
 
 ## What's next ![Idea icon](/images/18.png)
 
