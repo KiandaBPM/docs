@@ -620,9 +620,54 @@
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Your &lt;strong>Office 365 connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Oracle database</title><link>https://docs.kianda.com/docs/platform/connectors/oracle-database/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/oracle-database/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: PowerShell</title><link>https://docs.kianda.com/docs/platform/connectors/powershell/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/powershell/</guid><description>
+&lt;p>One of the datasources available in Kianda is an &lt;strong>Oracle&lt;/strong> datasource. Oracle is a relational database management system (&lt;strong>RDBMS&lt;/strong>) used to manage structured collections of data. This data can consist of a collection of data from a simple to do list to a more complex organisation network. The Oracle database is a structured format consisting of rows and columns. Using the Oracle connector as your datasource, you can perform any &lt;strong>Create&lt;/strong>, &lt;strong>Read&lt;/strong>, &lt;strong>Update&lt;/strong> and &lt;strong>Delete&lt;/strong> (&lt;strong>CRUD&lt;/strong>) operations using the &lt;strong>Data&lt;/strong> rules provided in the Kianda platform, to learn more about data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>. Using the Oracle connector, you have access to all tables within your database from your server, keep in mind that you can perform CRUD operations on the data from a &lt;strong>table&lt;/strong> of the database, but you &lt;strong>cannot&lt;/strong> create or delete &lt;strong>tables themselves&lt;/strong>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>Oracle&lt;/strong> from the list of datasources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out fields in the &lt;strong>Oracle details&lt;/strong> screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/oracle-details.jpg" alt="SQL Server details page">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your Oracle server connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
+&lt;li>&lt;strong>Data Source&lt;/strong> - this field is used to provide the name of your host that you want to connect to. When accessing a public Oracle server, the host name must follow a URL style format, for example &lt;code>https:/{host}:{port}&lt;/code>. When connecting to a server that is run on your local machine, you can use &lt;code>localhost&lt;/code> or the IP address.&lt;/li>
+&lt;li>&lt;strong>Schema&lt;/strong> - the name of the database from your server that you want to connect to.&lt;/li>
+&lt;li>&lt;strong>User&lt;/strong> - username used to log into the server.&lt;/li>
+&lt;li>&lt;strong>Password&lt;/strong> - password used to log into the server.&lt;/li>
+&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is disabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between a &lt;strong>locally run Oracle server&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>. Check this option if you want to connect to a server that is running on your local machine. When &lt;strong>Use Kianda Cloud Connect&lt;/strong> is enabled, a &lt;strong>Connectors&lt;/strong> option appears.
+&lt;ul>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that &lt;strong>runs&lt;/strong> the &lt;strong>local Oracle server&lt;/strong> that you want to connect to.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Status&lt;/strong> - represents the current status of the connection.
+&lt;ul>
+&lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed&lt;/li>
+&lt;li>&lt;strong>test failed&lt;/strong> - means that the details of the connector are incorrect and the connection has failed.&lt;/li>
+&lt;li>&lt;strong>ready&lt;/strong> - means that the connector has successfully connected and its ready to be used.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added the Oracle details, you are ready to test your connection and add security. At the bottom of the &lt;strong>Oracle details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>Your &lt;strong>SQL Server connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: PowerShell</title><link>https://docs.kianda.com/docs/platform/connectors/powershell/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/powershell/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
