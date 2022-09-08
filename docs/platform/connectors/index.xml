@@ -954,7 +954,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/sql-server-details.jpg" alt="SQL Server details page">&lt;/p>
 &lt;p>Choose from the edit options:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your SQL server connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in a name for your SQL server connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
 &lt;li>&lt;strong>Server&lt;/strong> - the name of the server you want to access or the IP address where the server is hosted. When you are running a local server on your machine you can use &lt;code>localhost&lt;/code> as the server name.&lt;/li>
 &lt;li>&lt;strong>Database&lt;/strong> - the name of the database from your server that you want to connect to.&lt;/li>
 &lt;li>&lt;strong>Trusted connection&lt;/strong> - enable windows trusted connection. Only available when using with Kianda cloud connector, enabling this will automatically enable the &lt;strong>Use Kianda Cloud Connect&lt;/strong> option. this option will use the connector service credentials to connect to the destination datasource. Having this option enabled will automatically hide the &lt;strong>User&lt;/strong> and &lt;strong>Password&lt;/strong> fields.&lt;/li>
