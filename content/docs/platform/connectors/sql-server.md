@@ -28,7 +28,7 @@ In order to successfully establish this connection with your server, a user is n
 
    Choose from the edit options:
 
-   - **Display name** - type in the name for your SQL server connector. This is used to distinguish between different data connectors on your platform.
+   - **Display name** - type in a name for your SQL server connector. This is used to distinguish between different data connectors on your platform.
    - **Server** - the name of the server you want to access or the IP address where the server is hosted. When you are running a local server on your machine you can use `localhost` as the server name.
    - **Database** - the name of the database from your server that you want to connect to.
    - **Trusted connection** - enable windows trusted connection. Only available when using with Kianda cloud connector, enabling this will automatically enable the **Use Kianda Cloud Connect** option. this option will use the connector service credentials to connect to the destination datasource. Having this option enabled will automatically hide the **User** and **Password** fields.
