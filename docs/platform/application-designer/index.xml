@@ -13,7 +13,7 @@ Your browser does not support the video tag.
 &lt;li>Form &lt;strong>interaction&lt;/strong> - how users can use forms depending on certain sequences happening&lt;/li>
 &lt;li>Form &lt;strong>management&lt;/strong> - who can edit and access forms&lt;/li>
 &lt;/ol>
-&lt;p>This page presents the information you need related to &lt;strong>form design&lt;/strong>, that is what a form looks like, and what it contains. By default, &lt;strong>Administrators&lt;/strong> and those with &lt;strong>Design business process&lt;/strong> role can edit forms, but they can also set how other people interact with forms, for example to make forms viewable as &lt;strong>read-only&lt;/strong>. Go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> to find out more about how form ownership works, and &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/">Form display modes&lt;/a> to find out out more about how forms display.&lt;/p>
+&lt;p>This page presents the information you need related to &lt;strong>form design&lt;/strong>, that is what a form looks like, and what it contains. By default, &lt;strong>Administrators&lt;/strong> and those with the &lt;strong>Design business process&lt;/strong> role can edit forms, but they can also set how other people interact with forms, for example to make forms viewable as &lt;strong>read-only&lt;/strong>. Go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> to find out more about how form ownership works, and &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/">Form display modes&lt;/a> to find out out more about how forms display.&lt;/p>
 &lt;h2 id="designer-layout">Designer layout&lt;/h2>
 &lt;p>To access processes, go to the left-hand pane and &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process that you have created or imported, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/#creating-your-first-process">Create your first process&lt;/a>.&lt;/p>
 &lt;p>From the main process view, click on any process to add forms.
@@ -33,20 +33,20 @@ Your browser does not support the video tag.
 &lt;p>The right-hand pane is where the &lt;strong>properties&lt;/strong> and &lt;strong>rules&lt;/strong> are displayed for the selected item, see &lt;a href="#properties">Properties&lt;/a> for more information. From this pane you can also &lt;a href="#import-forms">Import forms&lt;/a>, see the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/version-history/">Version history&lt;/a> for a process and set process &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/settings/">Settings&lt;/a>. Click on the links to find out more.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>Note the name of the process you are working on is shown in the top menu bar, for example Quarterly Training Request.&lt;/p>
+&lt;p>Note that the name of the process you are working on is shown in the top menu bar, for example Quarterly Training Request.&lt;/p>
 &lt;h2 id="how-to-get-started-with-forms">How to get started with forms&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>How you get started with forms depends on:&lt;/p>
+&lt;p>How you get started with forms depends on if you:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>if you have created a process using the App Store, see &lt;a href="#predefined-forms">Predefined forms&lt;/a>&lt;/p>
+&lt;p>have created a process using the App Store, see &lt;a href="#predefined-forms">Predefined forms&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>if you have created a process from scratch or want to create a form from scratch, see &lt;a href="#new-forms">New forms&lt;/a>&lt;/p>
+&lt;p>have created a process from scratch or want to create a form from scratch, see &lt;a href="#new-forms">New forms&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>if you import forms that have already been created, see &lt;a href="#import-forms">Import forms&lt;/a>&lt;/p>
+&lt;p>import forms that have already been created, see &lt;a href="#import-forms">Import forms&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -54,7 +54,7 @@ Your browser does not support the video tag.
 &lt;p>Once your form is created, you are ready to start adding elements to your form, see &lt;a href="#adding-form-elements">Adding form elements&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In addition there are a number of settings you can change, see &lt;a href="#settings-and-properties">Settings and Properties&lt;/a>.&lt;/p>
+&lt;p>In addition there are a number of settings you can change, see &lt;a href="#properties">Properties&lt;/a> and &lt;a href="#settings">Settings&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="predefined-forms">Predefined forms&lt;/h3>
@@ -118,7 +118,7 @@ Your browser does not support the video tag.
 &lt;p>If you click on &lt;strong>Enable edit&lt;/strong>, you can allow certain Users, Groups or Partners to edit the form, along with form owners by clicking on &lt;strong>Allow form owners&lt;/strong>.&lt;/p>
 &lt;p>Other options include a checkbox for &lt;strong>When editing auto hide form footer buttons&lt;/strong> and &lt;strong>Trigger rules on save&lt;/strong>.&lt;/p>
 &lt;ul>
-&lt;li>If you check &lt;strong>Trigger rules on save&lt;/strong> then click into the &lt;strong>Save action field&lt;/strong> to choose from an action trigger as to when the form is saved, for example Submit, Save or Close. These can be other actions depending on what you have defined.&lt;/li>
+&lt;li>If you check &lt;strong>Trigger rules on save&lt;/strong> then click into the &lt;strong>Save action field&lt;/strong>, you can choose an action trigger from the drop-down list as to when the form is saved, for example on execution of the Submit, Save or Close buttons. These can be other actions depending on what you have defined.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/editactions_resized.png" alt="Edit action settings">&lt;/p>
 &lt;/li>
@@ -166,7 +166,7 @@ Your browser does not support the video tag.
 &lt;li>Edit elements by clicking on each item and clicking on the &lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">, for example if you click on the &lt;strong>Close button&lt;/strong>, there are a number of options to choose from when editing, see &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button/">Button control&lt;/a> for more information.&lt;/li>
 &lt;/ol>
 &lt;h2 id="properties">Properties&lt;/h2>
-&lt;p>In addition to adding fields/controls and rules, there are a number of ways to create the form and process design you want. You can set &lt;strong>properties at property, form and field level&lt;/strong>. Properties represent how an element presents itself, for example the title and layout of the element.&lt;/p>
+&lt;p>In addition to adding fields/controls and rules, there are a number of ways to create the form and process design you want. You can set &lt;strong>properties&lt;/strong> at &lt;strong>property, form&lt;/strong> and &lt;strong>field level&lt;/strong>. Properties represent how an element presents itself, for example the title and layout of the element.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/right-hand-pane-designer.jpg" alt="Process and form properties">&lt;/p>
 &lt;p>Properties at all levels are visible in the &lt;strong>right-hand pane&lt;/strong> of Kianda designer, along with the:&lt;/p>
 &lt;ul>
@@ -189,7 +189,7 @@ Your browser does not support the video tag.
 &lt;p>When you click on a form in Kianda &lt;strong>Designer&lt;/strong>, the properties for that form appear.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/form-properties-view.jpg" alt="Form properties view">&lt;/p>
 &lt;p>To find out more about form properties go to the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/#form-properties">Form properties&lt;/a> page.&lt;/p>
-&lt;p>Note that at form level, addition buttons appear above &lt;strong>Form properties&lt;/strong> namely:&lt;/p>
+&lt;p>Note that at form level, additional buttons appear above &lt;strong>Form properties&lt;/strong> namely:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Edit/Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit/pen button"> where clicking on this button opens the &lt;strong>Edit&lt;/strong> dialog box for the chosen item, for example a form.&lt;/p>
@@ -206,7 +206,7 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/field-properties-view.jpg" alt="Field properties view">&lt;/p>
 &lt;p>The type of field/control is listed in the properties pane, for example &amp;lsquo;Text box&amp;rsquo; as shown in the image above. How the field appears is easy to control simply by checking/unchecking a number of boxes. To find out more about field/control properties go to the &lt;a href="https://docs.kianda.com/docs/platform/controls/properties/">Control properties&lt;/a> page.&lt;/p>
 &lt;h4 id="change-field-button">Change field button&lt;/h4>
-&lt;p>Note that at field level, in addition to the buttons visible at &lt;a href="#form-level-properties">Form level&lt;/a>, a &lt;strong>Change field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/change-field-button.jpg" alt="Change field button">is visible. To change field type:&lt;/p>
+&lt;p>Note that at field level, in addition to the buttons visible at &lt;a href="#form-level-properties">Form level&lt;/a>, a &lt;strong>Change field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/change-field-button.jpg" alt="Change field button"> is visible. To change field type:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Select a field in a form by clicking on it.&lt;/p>
