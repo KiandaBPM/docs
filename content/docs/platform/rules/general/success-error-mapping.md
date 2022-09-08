@@ -70,12 +70,12 @@ All data connectors within Kianda may have different response data that can be u
 
 ### On Error Mapping
 
-Error mapping is a concept of populating a form field in your Kianda process when using the rules from the [When to use](/docs/platform/rules/general/success-error-mapping/#when-to-use) section. When using those rules, you get presented with ability to map an **error** when there is an **issue** as the rule is executing. You might get an error when some details from the rule is not filled out properly or some details are missing. You have no way of telling what kind of error it is but the details of the error message will come from the datasource that you are trying to use. To see the error message, you need to create a separate text box field in your form and map the error to that field. Open the **On error mapping** section and add a mapping by clicking on **Add mapping** button:
+Error mapping is a concept of populating a form field in your Kianda process when using the rules from the [When to use](/docs/platform/rules/general/success-error-mapping/#when-to-use) section. When using those rules, you get presented with the ability to map an **error** when there is an **issue** as the rule is executing, for example incorrectly filling out a parameter. It is useful to know the details of the error message that comes from the datasource your are connecting with. To see the error message, you need to create a **separate [Text box](/docs/platform/controls/input/textbox/) field** in your form and map the error to that field. Open the **On error mapping** section and add a mapping by clicking on **Add mapping** button:
 
 ![Error mapping example](/images/error-mapping.jpg)
 
 - In the **Form field** select a form field which will store the error message in your Kianda form.
-- In the **Error message or text** enter a error message that you want to appear in the event of errors or click on the text box and select the **Error message** option to use a system generated error indicating what has gone wrong when the rule executed.
+- In the **Error message or text** enter an error message that you want to appear in the event of errors or click on the text box and select the **Error message** option to use a system generated error indicating what has gone wrong when the rule executed.
 - Click on the **Add mapping** to add further mappings.
 - Click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png) to delete a mapping.
 
