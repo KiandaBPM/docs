@@ -8,7 +8,7 @@ One of the datasources available in Kianda is a Structured Query Language **(SQL
 
 ## When to use
 
-You can use the SQL Server connector when you want **access** or **modify** data within any **table** in your SQL server. When connecting a SQL server datasource to a field, you can only connect and display information of a **table** from your server, not the  information of the **server** itself. For example if your SQL server contains tables such as **Employees**, **Purchases** and **Standing Orders**, you will be able to connect the list field to **only one** of those tables giving you CRUD access.
+You can use the SQL Server connector when you want **access**, **modify** or **retrieve** data within a **table** in your SQL server. When connecting a SQL server datasource to a [List field](/docs/platform/controls/input/list/), you can only connect and display information from a **table**, not the information of the **server** itself. For example if your SQL server contains **tables** such as **Employees**, **Purchases** and **Standing Orders**, you will be able to connect the list field to **only one** of those tables giving you CRUD access.
 
 ## Before getting started
 
@@ -28,7 +28,7 @@ In order to successfully establish this connection with your server, a user is n
 
    Choose from the edit options:
 
-   - **Display name** - type in the name for your SQL server connector. This is used to distinguish between different data connectors on your platform.
+   - **Display name** - type in a name for your SQL server connector. This is used to distinguish between different data connectors on your platform.
    - **Server** - the name of the server you want to access or the IP address where the server is hosted. When you are running a local server on your machine you can use `localhost` as the server name.
    - **Database** - the name of the database from your server that you want to connect to.
    - **Trusted connection** - enable windows trusted connection. Only available when using with Kianda cloud connector, enabling this will automatically enable the **Use Kianda Cloud Connect** option. this option will use the connector service credentials to connect to the destination datasource. Having this option enabled will automatically hide the **User** and **Password** fields.

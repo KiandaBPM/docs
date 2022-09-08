@@ -7,7 +7,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction ##
 
-As an **Administrator** or someone with the role **Design business process** you can update **process designs** as often as you need. The **Version number** of a process will be updated every time a process design is saved by clicking on the **Save** button ![Save button](/images/save - Copy.png).
+As an **Administrator** or someone with the role **Design business process**, you can update **process designs** as often as you need. The **Version number** of a process will be updated every time a process design is saved by clicking on the **Save** button ![Save button](/images/saveprocess.png).
 
 The **current or active version** of a process is always visible in the right-hand pane, for example V0.34 for the 'Inspection Process' as shown below.
 
@@ -27,7 +27,7 @@ Using versioning makes it is easy to keep track of changes and to restore the de
 
 ## How to get started with Version history ##
 
-1. To view the version history click on the **Design version history** button which may look like V0.1 or whatever is the current version for your process, for example ![View design version history](/images/version.png) or ![Version 0.8](/images/version8.png)
+1. To view the version history click on the **Design version history** button which may look like V0.1 or whatever is the current version for your process, for example ![View design version history](/images/version.png) or ![Version 0.8](/images/version8.png).
 
 2. A pop-up shows the version history details including when the version was created and who created it. 
 
