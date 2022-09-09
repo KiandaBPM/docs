@@ -599,8 +599,9 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-send-email.jpg" alt="Schedule a send email rule">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Schedule&lt;/strong> - allows you to choose a time of schedule. For this example we will select to send the email &lt;strong>Weekly&lt;/strong> at 10 am every 2 weeks&lt;/p>
+&lt;p>&lt;strong>Schedule&lt;/strong> - allows you to choose a time of schedule. For this example we will select to send the email &lt;strong>Weekly&lt;/strong> at 10 am every 2 weeks.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-weekly.jpg" alt="Schedule a send email rule">&lt;/p>
+&lt;p>You can select different type of schedule that is suited to your rule, here are the options:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>One time&lt;/strong> - Select &lt;strong>Time mode&lt;/strong> as &lt;strong>Absolute&lt;/strong> or &lt;strong>Relative&lt;/strong> from now. If &lt;strong>Absolute&lt;/strong>, you can select the time using the clock icon and the date using the calendar icon or you can select a form field (where the date is stored) by clicking on the icon with black discs &lt;img src="https://docs.kianda.com/images/icon-blackdisks.jpg" alt="Disks">. If &lt;strong>Relative&lt;/strong> from now, enter the days, hours and minutes directly.&lt;/li>
 &lt;li>&lt;strong>Minutes&lt;/strong> - select the number of minutes you want the scheduled rule to reoccur.&lt;/li>
@@ -612,7 +613,9 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Expire&lt;/strong> - It is possible to set the schedule rule to expire by enabling &lt;strong>Expire&lt;/strong> checkbox. There are three options:&lt;/p>
+&lt;p>&lt;strong>Expire&lt;/strong> - It is possible to set the schedule rule to expire by enabling &lt;strong>Expire&lt;/strong> checkbox. For this example we will use the &lt;strong>When&lt;/strong> option and apply a condition. The goal of the reminder is to send it every two weeks until the status of the process is completed. In the &lt;strong>condition&lt;/strong> of the &lt;strong>When&lt;/strong> option, select &lt;strong>Status&lt;/strong> from the &lt;strong>Common fields&lt;/strong> and make it &lt;strong>equals&lt;/strong> to &lt;strong>completed&lt;/strong> as shown in the image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-status.jpg" alt="Schedule a send email rule">&lt;/p>
+&lt;p>There are three options when to expire the scheduled rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>By&lt;/strong> - the rule will expire by the date and time given. Either select the time using the clock icon and the date using the calendar icon OR select a form field (where the date is stored) by clicking on the icon with black discs.&lt;/li>
 &lt;li>&lt;strong>After&lt;/strong> - the rule will expire after a set number of occurrences. Select the number of occurrences in the blank field or click on the icon with black discs to choose a field where the number of occurrences is stored.&lt;/li>
@@ -627,4 +630,27 @@
 &lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
