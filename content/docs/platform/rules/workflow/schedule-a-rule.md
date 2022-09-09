@@ -1,11 +1,14 @@
 ---
 title: "Schedule a rule"
+weight: 7
+typora-root-url: ..\..\..\..\..\static
 ---
 
-This rule allows you to schedule a rule (or field e.g. a button with rules) to be triggered either immediately or at some point in the future. 
+## Introduction
 
-![Schedule a Rule](/images/ScheduleaRule1.png)
+The **Schedule a rule** allows you to schedule a rule or a field to be triggered **immediately**, at some **point in the future** or **recurrently**. When a form field is selected with **multiple** rules attached to it, all rules will be triggered **one by one**. You can also select a specific rule from a form field that has multiple rules attached to it, by expanding the field and selecting the desired rule you want to schedule. For example if you have a **Text box** field with multiple rules, you can expand the textbox field and there you will see a **Rules** tab which stores all rule that are attached to the field, see image below showcasing that a Text box field called **First Name** contains two rules in the **Rules** tab called **Set field** and **Make required**, you can select one of those rules if you want only one rule to be triggered:
 
+![Selecting one rule to be triggered](/images/schedule-rule-single-rule.jpg)
 
 ## When to use 
 
@@ -14,18 +17,53 @@ You can add this rule:
 - [x] to a form 
 - [x] to a process (the rule will run on load)
 
-## How to use
+## How to get started
 
-To schedule a daily reminder:
-1. Select Controls > Actions > Button to add a button to the bottom of the form.  Change the title of the button to Reminder.  Go to the field property settings and make the button not visible to the user.  You can add rules to this button that will be triggered daily e.g. send an email.
-2. Click on another button e.g. the Submit button.
-3. Select Add a rule > Workflow > Schedule a Rule.
-4. Under Action, select the new Reminder button as the field to be triggered.
-5. Under Schedule, click on Daily.  
-6. Set **At** to 09:00 and **Every** to 1.  The Reminder button will be triggered at 9am every day.
-7. Click OK.
+The following step illustrates a scenario to schedule a [Send email rule](/docs/platform/rules/communications/send-email/) as a reminder after a form has been submitted:
 
-When the form is submitted, a new scheduled task is created.  You can view all of the scheduled tasks in the system by selecting Administration > Scheduled Tasks and clicking on Show All in the top right hand corner of your screen.
+1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button,  **Pen** button ![Pen button](/images/penicon.png).
+
+2. Click on **Add a rule** > **Workflow** > **Schedule a rule**. 
+
+3. In the **Edit rule - Schedule a rule** dialog box, give the rule a title in the **Title** field.
+
+   ![Go to form rule](/images/schedule-rule-details.jpg)
+
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+
+5. Under **Action** fill out the following:
+
+   - **Select the field or rule to trigger on schedule** - allows you to select a field or rule you want to trigger. By selecting a field with multiple options, all rules will be triggered one after another. You can also select a specific rule from a field with multiple rules by drilling down and selecting the desired rule. In this example we want to select a rule called **Send email** which is attached to the **Submit** button.
+
+      ![Schedule a send email rule](/images/schedule-rule-send-email.jpg)
+
+   - **Schedule** - allows you to choose a time of schedule. For this example we will select to send the email **Weekly** at 10 am every 2 weeks 
+
+     ![Schedule a send email rule](/images/schedule-rule-weekly.jpg)
+
+     - **One time** - Select **Time mode** as **Absolute** or **Relative** from now.  If **Absolute**, you can select the time using the clock icon and the date using the calendar icon or you can select a form field (where the date is stored) by clicking on the icon with black discs ![Disks](/images/icon-blackdisks.jpg).  If **Relative** from now, enter the days, hours and minutes directly.
+     - **Minutes** - select the number of minutes you want the scheduled rule to reoccur.
+     - **Hourly** - select the number of minutes and hours you want the scheduled rule to reoccur.
+     - **Daily** - select the time of day and the number of days you want to scheduled rule to reoccur. You can select that the rule will trigger only on week days by enabling the **Week days only** checkbox.
+     - **Weekly** - select a day of the week, time of the day and the number of weeks that you want the scheduled rule to reoccur.
+     - **Monthly** - select the date of the month or **First, Second, Third, Fourth, Last** weekday of the month. You can also select a specific time that you want the scheduled rule to reoccur.
+     - **Immediately** -
+
+   - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###### Notes
 | Schedule    | Options                                                      |
