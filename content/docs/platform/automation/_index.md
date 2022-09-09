@@ -19,6 +19,7 @@ This can happen in a number of ways:
 
 - [Scheduled tasks function](scheduled-tasks-function)
 - [Start a process rule](/docs/platform/rules/workflow/start-a-process/)
+- [Schedule a Rule rule](/docs/platform/rules/workflow/schedule-a-rule/)
 
 ### Scheduled tasks function
 

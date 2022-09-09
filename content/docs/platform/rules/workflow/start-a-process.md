@@ -6,7 +6,9 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction ##
 
-The **Start a process** rule allows you to dynamically **start a new instance** of a different process, or a new instance of the same process. You can **transfer field data** from the current process instance to a new process instance and vice versa, typically in the case of the latter by using a second **Start a process** rule. 
+The **Start a process** rule allows you to dynamically **start a new instance** of a different process, or a new instance of the same process, or **update an existing process instance** from a chosen process. 
+
+For example if we have an 'Onboarding' process, our **primary process** that involves many different tasks like generating documentation, and sending out emails to managers, HR and new trainers, we could have a **secondary process** called 'Send email process' which sends out these automated emails for a new user once the 'Onboarding process'  starts. You can **transfer field data** from the Onboarding process to the new process instance for 'Send email process'. You can also **update the secondary process instance**, once you have the **ID** for the process instance, see step 5 below in [How to get started].
 
 
 
@@ -33,19 +35,46 @@ To dynamically start a new process:
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. Under **Action** create one or more actions for the rule by filling out the following:
+5. Under **Action** create one or more actions for the rule. For the **Process source** list choose from **Own process** or **Partner process**. If you choose **Own process** then choose from a list of processes already created in the system under **Select a process design** using the drop-down list or start to type in the name of a process and the list will autofill
 
-   - **Process source** - choose from the radio buttons:
-     - **Own process** - choose from a list of processes 
-     - **Partner process** 
-   
-   - **Select a process design** - choose a target process design from the drop-down list
-   
-6. Under Input mapping, click on Add mapping.  On the left side, choose a field from the current process.  On the right side, select a destination field in the target process.
-7. Click On success mapping. On the right side, type a message;  on the left side, choose a field to store the message.  Here data is being mapped back from the target process to the current process.
-8. Click OK.
+   ![Select process design](/images/select-process-design.jpg)
 
-## 
+   When the design is chosen, other options will appear in the **Edit rule** dialog box, these include: 
+
+   - **Lookup existing process** - options are **Yes** or **No**
+     - If you choose **Yes** - then that means you are creating a **new process instance** from that process design.
+     - If you choose **No** then that means you are **updating an existing process instance** and you must provide the target process name. You then need to provide the ID for the existing process instance. This can be done using the **On success mapping**
+   - [Input mapping](#input-mapping) 
+   - [Table mapping](#table-mapping)
+   - [On success mapping](#on-success-mapping)
+
+   ![Edit rule dialog box options](/images/lookup-existing-process.jpg)
+
+6. For the **Process source** if you choose **Partner process** then choose from a list of predefined partner processes under **Select a process design** using the drop-down list or start to type in the name of a process and the list will autofill
+
+7. The remaining options in the **Edit rule** dialog box are explained below.
+
+9. Click **OK** when you are finished editing the dialog box, or **Close** at any time to exit the dialog box.
+
+
+
+### Input mapping
+
+For Input mapping you can map fields from one process to another. For example in an Onboarding process, if a user fills out their Name, then that Name will be mapped to a field in a form
+
+![Input mapping example](/images/input-mapping-example.jpg)
+
+Click on **Add mapping** to add more mappings to map fields from one process form to another. 
+
+Click on the **Bin/Trash** button to delete mappings.
+
+### Table mapping
+
+If you use a **table** in your process you can map fields from the table in one process to another in a similar way to the fields in [Input mapping](#input-mapping).
+
+### On success mapping
+
+Success mapping can be used to map internal values like **Process ID** from one process, your secondary process, to your primary process. 
 
 ### Editing, deleting or duplicating rules
 

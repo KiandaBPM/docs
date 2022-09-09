@@ -24,7 +24,7 @@ You can add this rule:
 
 - [x] to a field
 
-The rule can be added at other levels, but it is most commonly used in the method outlined in the [Introduction](#introduction).
+The rule can be added at other levels (process, form), but it is most commonly used in the method outlined in the [Introduction](#introduction).
 
 
 
@@ -40,17 +40,27 @@ To dynamically make a field required:
 
    ![Make required rule example](/images/make-required-rule.jpg)
 
-4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+4. To add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+
+   For example to make one field required based on another field being completed, the condition would look like this:
+
+   ![Make required example condition](/images/make-required-condition.jpg)
+
+   As shown on the [Conditions](/docs/platform/rules/general/add-conditions/) page there are a multitude of options to choose from where **Not blank** is just one option shown above.
 
 5. Under **Action** create one or more actions for the rule by clicking on the **empty field** to add a form or form field, and then choose an option from the action drop-down list, choosing from **Required**, **Not required** or **Toggle required**. 
+
+   Using the example from the [Introduction](#introduction), where a condition is used that if one field is not blank, then another becomes required would look like this:
+
+   ![Make required example dialog box](/images/make-required-example-dialog.jpg)
 
 6. To add more actions, click on **Add**. At any time remove an action by clicking on the **Bin/Trash** icon ![Bin/Trash button](/images/bin.png) beside the name of the action.
 
 7. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
-8. If the rule is attached to a field within a form, a notification will appear within the form design, for example the field **Management decision** as shown in the image below.
+8. If the rule is attached to a field within a form, a notification will appear within the form design, for example the field **Customer name** as shown in the image below.
 
-   ![Rule on a form field](/images/rule-in-form-example.jpg)
+   ![Rule on a form field](/images/rule-on-field.jpg)
 
 9. When you click on the field or form that has the rule attached, the rule will appear in the right-hand pane under **Rules**. 
 
