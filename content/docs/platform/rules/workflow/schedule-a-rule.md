@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction
 
-The **Schedule a rule** allows you to schedule a rule or a field to be triggered **immediately**, at some **point in the future** or **recurrently**. When a form field is selected with **multiple** rules attached to it, all rules will be triggered **one by one**. You can also select a specific rule from a form field that has multiple rules attached to it, by expanding the field and selecting the desired rule you want to schedule. For example if you have a **Text box** field with multiple rules, you can expand the textbox field and there you will see a **Rules** tab which stores all rule that are attached to the field, see image below showcasing that a Text box field called **First Name** contains two rules in the **Rules** tab called **Set field** and **Make required**, you can select one of those rules if you want only one rule to be triggered:
+The **Schedule a rule** allows you to schedule a rule or a field to be triggered **immediately**, at some **point in the future** or **recurrently**. When a form field is selected with **multiple** rules attached to it, all rules will be triggered **one by one**. You can also select a specific rule from a form field that has multiple rules attached to it. You can do this by expanding the field and selecting the desired rule you want to schedule. For example if you have a **Text box** field with multiple rules, you can expand the Text box field and there you will see a **Rules** tab which stores all rules that are attached to the field, see image below showcasing that a **Text box** field called **First Name** contains two rules in the **Rules** tab called **Set field** and **Make required**, you can select one of those rules if you want only one rule to be triggered:
 
 ![Selecting one rule to be triggered](/images/schedule-rule-single-rule.jpg)
 
@@ -61,8 +61,12 @@ The following step illustrates a scenario to schedule a [Send email rule](/docs/
      - **After** - the rule will expire after a set number of occurrences.  Select the number of occurrences in the blank field or click on the icon with black discs to choose a field where the number of occurrences is stored.
      - **When** - add a condition which will cause the rule to expire when it is true.
 
-   - **Make task unique** - enable this option to prevent a second identical task being created for this instance of the process
+   You are also presented with **two more options** when selecting any of the **Schedule** options except **Immediately**, the options are:
 
+   ![Extra options for the schedule a rule](/images/schedule-rule-extra-options.jpg)
+   
+   - **Make task unique** - enable this option to prevent a second identical task being created for this instance of the process
+   
    - **Execute in series** - if you want the server-side execution to be in series rather than in parallel.
    
 6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
