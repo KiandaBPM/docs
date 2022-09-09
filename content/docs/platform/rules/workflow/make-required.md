@@ -6,7 +6,15 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction ##
 
-The **Make required** rule is used to dynamically make form elements required or mandatory for users to fill in, or not required or to toggle between both states.
+The **Make required** rule is used to **dynamically** make form elements required or mandatory for users to fill in, or not required or to toggle between both states.
+
+It is possible to make fields **statically** mandatory for users to fill in by checking the **Required** property for the field. However using this rule gives a greater degree of flexibility to cause an action based on user input using a [**Condition**](/docs/platform/rules/general/add-conditions/).
+
+Take the example of a feedback form, where there is an option for a customer to fill in their name or not. If they do fill in their name however, then a Customer Account Number field becomes mandatory. 
+
+![Make required rule example](/images/make-required-example.jpg)
+
+As soon as Maddie fills out her name in the example above, then and only then the Customer Account Number becomes required, indicated by an asterix. This rule could be combined with [Hide or Disable](/docs/platform/rules/workflow/hide-or-disable/) rule to make fields appear/hidden based on user input.
 
 
 
@@ -16,11 +24,9 @@ You can add this rule:
 
 - [x] to a field
 
-- [x] to a form 
+The rule can be added at other levels, but it is most commonly used in the method outlined in the [Introduction](#introduction).
 
-- [x] to a process (the rule will run on load)
 
-  
 
 ## How to get started
 
