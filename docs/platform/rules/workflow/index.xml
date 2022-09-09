@@ -565,8 +565,9 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Schedule a rule</title><link>https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/</guid><description>
-&lt;p>This rule allows you to schedule a rule (or field e.g. a button with rules) to be triggered either immediately or at some point in the future.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/ScheduleaRule1.png" alt="Schedule a Rule">&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Schedule a rule&lt;/strong> allows you to schedule a rule or a field to be triggered &lt;strong>immediately&lt;/strong>, at some &lt;strong>point in the future&lt;/strong> or &lt;strong>recurrently&lt;/strong>. When a form field is selected with &lt;strong>multiple&lt;/strong> rules attached to it, all rules will be triggered &lt;strong>one by one&lt;/strong>. You can also select a specific rule from a form field that has multiple rules attached to it, by expanding the field and selecting the desired rule you want to schedule. For example if you have a &lt;strong>Text box&lt;/strong> field with multiple rules, you can expand the textbox field and there you will see a &lt;strong>Rules&lt;/strong> tab which stores all rule that are attached to the field, see image below showcasing that a Text box field called &lt;strong>First Name&lt;/strong> contains two rules in the &lt;strong>Rules&lt;/strong> tab called &lt;strong>Set field&lt;/strong> and &lt;strong>Make required&lt;/strong>, you can select one of those rules if you want only one rule to be triggered:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-single-rule.jpg" alt="Selecting one rule to be triggered">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -574,18 +575,46 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h2 id="how-to-use">How to use&lt;/h2>
-&lt;p>To schedule a daily reminder:&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>The following step illustrates a scenario to schedule a &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email rule&lt;/a> as a reminder after a form has been submitted:&lt;/p>
 &lt;ol>
-&lt;li>Select Controls &amp;gt; Actions &amp;gt; Button to add a button to the bottom of the form. Change the title of the button to Reminder. Go to the field property settings and make the button not visible to the user. You can add rules to this button that will be triggered daily e.g. send an email.&lt;/li>
-&lt;li>Click on another button e.g. the Submit button.&lt;/li>
-&lt;li>Select Add a rule &amp;gt; Workflow &amp;gt; Schedule a Rule.&lt;/li>
-&lt;li>Under Action, select the new Reminder button as the field to be triggered.&lt;/li>
-&lt;li>Under Schedule, click on Daily.&lt;/li>
-&lt;li>Set &lt;strong>At&lt;/strong> to 09:00 and &lt;strong>Every&lt;/strong> to 1. The Reminder button will be triggered at 9am every day.&lt;/li>
-&lt;li>Click OK.&lt;/li>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Schedule a rule&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Schedule a rule&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-details.jpg" alt="Go to form rule">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Action&lt;/strong> fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select the field or rule to trigger on schedule&lt;/strong> - allows you to select a field or rule you want to trigger. By selecting a field with multiple options, all rules will be triggered one after another. You can also select a specific rule from a field with multiple rules by drilling down and selecting the desired rule. In this example we want to select a rule called &lt;strong>Send email&lt;/strong> which is attached to the &lt;strong>Submit&lt;/strong> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-send-email.jpg" alt="Schedule a send email rule">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Schedule&lt;/strong> - allows you to choose a time of schedule. For this example we will select to send the email &lt;strong>Weekly&lt;/strong> at 10 am every 2 weeks&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-weekly.jpg" alt="Schedule a send email rule">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>One time&lt;/strong> - Select &lt;strong>Time mode&lt;/strong> as &lt;strong>Absolute&lt;/strong> or &lt;strong>Relative&lt;/strong> from now. If &lt;strong>Absolute&lt;/strong>, you can select the time using the clock icon and the date using the calendar icon or you can select a form field (where the date is stored) by clicking on the icon with black discs &lt;img src="https://docs.kianda.com/images/icon-blackdisks.jpg" alt="Disks">. If &lt;strong>Relative&lt;/strong> from now, enter the days, hours and minutes directly.&lt;/li>
+&lt;li>&lt;strong>Minutes&lt;/strong> - select the number of minutes you want the scheduled rule to reoccur.&lt;/li>
+&lt;li>&lt;strong>Hourly&lt;/strong> - select the number of minutes and hours you want the scheduled rule to reoccur.&lt;/li>
+&lt;li>&lt;strong>Daily&lt;/strong> - select the time of day and the number of days you want to scheduled rule to reoccur. You can select that the rule will trigger only on week days by enabling the &lt;strong>Week days only&lt;/strong> checkbox.&lt;/li>
+&lt;li>&lt;strong>Weekly&lt;/strong> - select a day of the week, time of the day and the number of weeks that you want the scheduled rule to reoccur.&lt;/li>
+&lt;li>&lt;strong>Monthly&lt;/strong> - select the date of the month or &lt;strong>First, Second, Third, Fourth, Last&lt;/strong> weekday of the month. You can also select a specific time that you want the scheduled rule to reoccur.&lt;/li>
+&lt;li>&lt;strong>Immediately&lt;/strong> -&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;/ol>
-&lt;p>When the form is submitted, a new scheduled task is created. You can view all of the scheduled tasks in the system by selecting Administration &amp;gt; Scheduled Tasks and clicking on Show All in the top right hand corner of your screen.&lt;/p>
 &lt;h6 id="notes">Notes&lt;/h6>
 &lt;table>
 &lt;thead>
