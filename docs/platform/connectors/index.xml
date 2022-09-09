@@ -635,7 +635,7 @@
 &lt;p>Choose from the edit options:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your Oracle server connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
-&lt;li>&lt;strong>Data Source&lt;/strong> - this field is used to provide the name of your host that you want to connect to. When accessing a public Oracle server, the host name must follow a URL style format, for example &lt;code>https:/{host}:{port}&lt;/code>. When connecting to a server that is run on your local machine, you can use &lt;code>localhost&lt;/code> or the IP address.&lt;/li>
+&lt;li>&lt;strong>Data Source&lt;/strong> - this field is used to provide the name of your host that you want to connect to. When accessing a public Oracle server, the host name must follow a URL style format, for example &lt;code>https:/{host}:{port}&lt;/code>. When connecting to a server that is run on your local machine, you can use &lt;code>localhost&lt;/code> as well as the &lt;strong>Kianda Cloud Connect&lt;/strong> .&lt;/li>
 &lt;li>&lt;strong>Schema&lt;/strong> - the name of the database from your server that you want to connect to.&lt;/li>
 &lt;li>&lt;strong>User&lt;/strong> - username used to log into the server.&lt;/li>
 &lt;li>&lt;strong>Password&lt;/strong> - password used to log into the server.&lt;/li>
