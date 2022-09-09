@@ -99,20 +99,17 @@
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Make required</title><link>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/make-required/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Make required&lt;/strong> rule is used to dynamically make form elements required or mandatory for users to fill in, or not required or to toggle between both states.&lt;/p>
+&lt;p>The &lt;strong>Make required&lt;/strong> rule is used to &lt;strong>dynamically&lt;/strong> make form elements required or mandatory for users to fill in, or not required or to toggle between both states.&lt;/p>
+&lt;p>It is possible to make fields &lt;strong>statically&lt;/strong> mandatory for users to fill in by checking the &lt;strong>Required&lt;/strong> property for the field. However using this rule gives a greater degree of flexibility to cause an action based on user input using a &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">&lt;strong>Condition&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>Take the example of a feedback form, where there is an option for a customer to fill in their name or not. If they do fill in their name however, then a Customer Account Number field becomes mandatory.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/make-required-example.jpg" alt="Make required rule example">&lt;/p>
+&lt;p>As soon as Maddie fills out her name in the example above, then and only then the Customer Account Number becomes required, indicated by an asterix. This rule could be combined with &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/">Hide or Disable&lt;/a> rule to make fields appear/hidden based on user input.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/p>
-&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;/ul>
+&lt;p>The rule can be added at other levels, but it is most commonly used in the method outlined in the &lt;a href="#introduction">Introduction&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To dynamically make a field required:&lt;/p>
 &lt;ol>
