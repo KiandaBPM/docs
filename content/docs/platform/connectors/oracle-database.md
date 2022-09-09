@@ -19,7 +19,7 @@ One of the datasources available in Kianda is an **Oracle** datasource. Oracle i
    Choose from the edit options:
 
    - **Display name** - type in the name for your Oracle server connector. This is used to distinguish between different data connectors on your platform.
-   - **Data Source** - this field is used to provide the name of your host that you want to connect to. When accessing a public Oracle server, the host name must follow a URL style format, for example `https:/{host}:{port}`.  When connecting to a server that is run on your local machine, you can use `localhost` or the IP address.
+   - **Data Source** - this field is used to provide the name of your host that you want to connect to. When accessing a public Oracle server, the host name must follow a URL style format, for example `https:/{host}:{port}`.  When connecting to a server that is run on your local machine, you can use `localhost` as well as the **Kianda Cloud Connect** .
    - **Schema** - the name of the database from your server that you want to connect to.
    - **User** - username used to log into the server. 
    - **Password** - password used to log into the server.
