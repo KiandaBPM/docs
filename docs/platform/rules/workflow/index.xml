@@ -109,7 +109,7 @@
 &lt;ul>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;/ul>
-&lt;p>The rule can be added at other levels, but it is most commonly used in the method outlined in the &lt;a href="#introduction">Introduction&lt;/a>.&lt;/p>
+&lt;p>The rule can be added at other levels (process, form), but it is most commonly used in the method outlined in the &lt;a href="#introduction">Introduction&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To dynamically make a field required:&lt;/p>
 &lt;ol>
@@ -124,10 +124,15 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/make-required-rule.jpg" alt="Make required rule example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>To add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>For example to make one field required based on another field being completed, the condition would look like this:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/make-required-condition.jpg" alt="Make required example condition">&lt;/p>
+&lt;p>As shown on the &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> page there are a multitude of options to choose from where &lt;strong>Not blank&lt;/strong> is just one option shown above.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by clicking on the &lt;strong>empty field&lt;/strong> to add a form or form field, and then choose an option from the action drop-down list, choosing from &lt;strong>Required&lt;/strong>, &lt;strong>Not required&lt;/strong> or &lt;strong>Toggle required&lt;/strong>.&lt;/p>
+&lt;p>Using the example from the &lt;a href="#introduction">Introduction&lt;/a>, where a condition is used that if one field is not blank, then another becomes required would look like this:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/make-required-example-dialog.jpg" alt="Make required example dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To add more actions, click on &lt;strong>Add&lt;/strong>. At any time remove an action by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> beside the name of the action.&lt;/p>
@@ -136,8 +141,8 @@
 &lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If the rule is attached to a field within a form, a notification will appear within the form design, for example the field &lt;strong>Management decision&lt;/strong> as shown in the image below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/rule-in-form-example.jpg" alt="Rule on a form field">&lt;/p>
+&lt;p>If the rule is attached to a field within a form, a notification will appear within the form design, for example the field &lt;strong>Customer name&lt;/strong> as shown in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-on-field.jpg" alt="Rule on a form field">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>When you click on the field or form that has the rule attached, the rule will appear in the right-hand pane under &lt;strong>Rules&lt;/strong>.&lt;/p>
@@ -465,7 +470,8 @@
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Start a process</title><link>https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Start a process&lt;/strong> rule allows you to dynamically &lt;strong>start a new instance&lt;/strong> of a different process, or a new instance of the same process. You can &lt;strong>transfer field data&lt;/strong> from the current process instance to a new process instance and vice versa, typically in the case of the latter by using a second &lt;strong>Start a process&lt;/strong> rule.&lt;/p>
+&lt;p>The &lt;strong>Start a process&lt;/strong> rule allows you to dynamically &lt;strong>start a new instance&lt;/strong> of a different process, or a new instance of the same process, or &lt;strong>update an existing process instance&lt;/strong> from a chosen process.&lt;/p>
+&lt;p>For example if we have an &amp;lsquo;Onboarding&amp;rsquo; process, our &lt;strong>primary process&lt;/strong> that involves many different tasks like generating documentation, and sending out emails to managers, HR and new trainers, we could have a &lt;strong>secondary process&lt;/strong> called &amp;lsquo;Send email process&amp;rsquo; which sends out these automated emails for a new user once the &amp;lsquo;Onboarding process&amp;rsquo; starts. You can &lt;strong>transfer field data&lt;/strong> from the Onboarding process to the new process instance for &amp;lsquo;Send email process&amp;rsquo;. You can also &lt;strong>update the secondary process instance&lt;/strong>, once you have the &lt;strong>ID&lt;/strong> for the process instance, see step 5 below in [How to get started].&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -490,31 +496,41 @@
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by filling out the following:&lt;/p>
+&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule. For the &lt;strong>Process source&lt;/strong> list choose from &lt;strong>Own process&lt;/strong> or &lt;strong>Partner process&lt;/strong>. If you choose &lt;strong>Own process&lt;/strong> then choose from a list of processes already created in the system under &lt;strong>Select a process design&lt;/strong> using the drop-down list or start to type in the name of a process and the list will autofill&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/select-process-design.jpg" alt="Select process design">&lt;/p>
+&lt;p>When the design is chosen, other options will appear in the &lt;strong>Edit rule&lt;/strong> dialog box, these include:&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Process source&lt;/strong> - choose from the radio buttons:&lt;/p>
+&lt;li>&lt;strong>Lookup existing process&lt;/strong> - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>
 &lt;ul>
-&lt;li>&lt;strong>Own process&lt;/strong> - choose from a list of processes&lt;/li>
-&lt;li>&lt;strong>Partner process&lt;/strong>&lt;/li>
+&lt;li>If you choose &lt;strong>Yes&lt;/strong> - then that means you are creating a &lt;strong>new process instance&lt;/strong> from that process design.&lt;/li>
+&lt;li>If you choose &lt;strong>No&lt;/strong> then that means you are &lt;strong>updating an existing process instance&lt;/strong> and you must provide the target process name. You then need to provide the ID for the existing process instance. This can be done using the &lt;strong>On success mapping&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Select a process design&lt;/strong> - choose a target process design from the drop-down list&lt;/p>
-&lt;/li>
+&lt;li>&lt;a href="#input-mapping">Input mapping&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#table-mapping">Table mapping&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#on-success-mapping">On success mapping&lt;/a>&lt;/li>
 &lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/lookup-existing-process.jpg" alt="Edit rule dialog box options">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under Input mapping, click on Add mapping. On the left side, choose a field from the current process. On the right side, select a destination field in the target process.&lt;/p>
+&lt;p>For the &lt;strong>Process source&lt;/strong> if you choose &lt;strong>Partner process&lt;/strong> then choose from a list of predefined partner processes under &lt;strong>Select a process design&lt;/strong> using the drop-down list or start to type in the name of a process and the list will autofill&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click On success mapping. On the right side, type a message; on the left side, choose a field to store the message. Here data is being mapped back from the target process to the current process.&lt;/p>
+&lt;p>The remaining options in the &lt;strong>Edit rule&lt;/strong> dialog box are explained below.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click OK.&lt;/p>
+&lt;p>Click &lt;strong>OK&lt;/strong> when you are finished editing the dialog box, or &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="heading">&lt;/h2>
+&lt;h3 id="input-mapping">Input mapping&lt;/h3>
+&lt;p>For Input mapping you can map fields from one process to another. For example in an Onboarding process, if a user fills out their Name, then that Name will be mapped to a field in a form&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/input-mapping-example.jpg" alt="Input mapping example">&lt;/p>
+&lt;p>Click on &lt;strong>Add mapping&lt;/strong> to add more mappings to map fields from one process form to another.&lt;/p>
+&lt;p>Click on the &lt;strong>Bin/Trash&lt;/strong> button to delete mappings.&lt;/p>
+&lt;h3 id="table-mapping">Table mapping&lt;/h3>
+&lt;p>If you use a &lt;strong>table&lt;/strong> in your process you can map fields from the table in one process to another in a similar way to the fields in &lt;a href="#input-mapping">Input mapping&lt;/a>.&lt;/p>
+&lt;h3 id="on-success-mapping">On success mapping&lt;/h3>
+&lt;p>Success mapping can be used to map internal values like &lt;strong>Process ID&lt;/strong> from one process, your secondary process, to your primary process.&lt;/p>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
