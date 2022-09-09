@@ -566,7 +566,7 @@
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Schedule a rule</title><link>https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Schedule a rule&lt;/strong> allows you to schedule a rule or a field to be triggered &lt;strong>immediately&lt;/strong>, at some &lt;strong>point in the future&lt;/strong> or &lt;strong>recurrently&lt;/strong>. When a form field is selected with &lt;strong>multiple&lt;/strong> rules attached to it, all rules will be triggered &lt;strong>one by one&lt;/strong>. You can also select a specific rule from a form field that has multiple rules attached to it, by expanding the field and selecting the desired rule you want to schedule. For example if you have a &lt;strong>Text box&lt;/strong> field with multiple rules, you can expand the textbox field and there you will see a &lt;strong>Rules&lt;/strong> tab which stores all rule that are attached to the field, see image below showcasing that a Text box field called &lt;strong>First Name&lt;/strong> contains two rules in the &lt;strong>Rules&lt;/strong> tab called &lt;strong>Set field&lt;/strong> and &lt;strong>Make required&lt;/strong>, you can select one of those rules if you want only one rule to be triggered:&lt;/p>
+&lt;p>The &lt;strong>Schedule a rule&lt;/strong> allows you to schedule a rule or a field to be triggered &lt;strong>immediately&lt;/strong>, at some &lt;strong>point in the future&lt;/strong> or &lt;strong>recurrently&lt;/strong>. When a form field is selected with &lt;strong>multiple&lt;/strong> rules attached to it, all rules will be triggered &lt;strong>one by one&lt;/strong>. You can also select a specific rule from a form field that has multiple rules attached to it. You can do this by expanding the field and selecting the desired rule you want to schedule. For example if you have a &lt;strong>Text box&lt;/strong> field with multiple rules, you can expand the Text box field and there you will see a &lt;strong>Rules&lt;/strong> tab which stores all rules that are attached to the field, see image below showcasing that a &lt;strong>Text box&lt;/strong> field called &lt;strong>First Name&lt;/strong> contains two rules in the &lt;strong>Rules&lt;/strong> tab called &lt;strong>Set field&lt;/strong> and &lt;strong>Make required&lt;/strong>, you can select one of those rules if you want only one rule to be triggered:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-single-rule.jpg" alt="Selecting one rule to be triggered">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
@@ -622,6 +622,10 @@
 &lt;li>&lt;strong>When&lt;/strong> - add a condition which will cause the rule to expire when it is true.&lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;/ul>
+&lt;p>You are also presented with &lt;strong>two more options&lt;/strong> when selecting any of the &lt;strong>Schedule&lt;/strong> options except &lt;strong>Immediately&lt;/strong>, the options are:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-extra-options.jpg" alt="Extra options for the schedule a rule">&lt;/p>
+&lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Make task unique&lt;/strong> - enable this option to prevent a second identical task being created for this instance of the process&lt;/p>
 &lt;/li>
