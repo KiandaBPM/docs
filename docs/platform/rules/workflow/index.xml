@@ -608,58 +608,23 @@
 &lt;li>&lt;strong>Daily&lt;/strong> - select the time of day and the number of days you want to scheduled rule to reoccur. You can select that the rule will trigger only on week days by enabling the &lt;strong>Week days only&lt;/strong> checkbox.&lt;/li>
 &lt;li>&lt;strong>Weekly&lt;/strong> - select a day of the week, time of the day and the number of weeks that you want the scheduled rule to reoccur.&lt;/li>
 &lt;li>&lt;strong>Monthly&lt;/strong> - select the date of the month or &lt;strong>First, Second, Third, Fourth, Last&lt;/strong> weekday of the month. You can also select a specific time that you want the scheduled rule to reoccur.&lt;/li>
-&lt;li>&lt;strong>Immediately&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>Immediately&lt;/strong> - the rule will trigger immediately.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Expire&lt;/strong> - It is possible to set the schedule rule to expire by enabling &lt;strong>Expire&lt;/strong> checkbox. There are three options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>By&lt;/strong> - the rule will expire by the date and time given. Either select the time using the clock icon and the date using the calendar icon OR select a form field (where the date is stored) by clicking on the icon with black discs.&lt;/li>
+&lt;li>&lt;strong>After&lt;/strong> - the rule will expire after a set number of occurrences. Select the number of occurrences in the blank field or click on the icon with black discs to choose a field where the number of occurrences is stored.&lt;/li>
+&lt;li>&lt;strong>When&lt;/strong> - add a condition which will cause the rule to expire when it is true.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ol>
-&lt;h6 id="notes">Notes&lt;/h6>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align:left">Schedule&lt;/th>
-&lt;th style="text-align:left">Options&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align:left">One time&lt;/td>
-&lt;td style="text-align:left">Select &lt;strong>Time mode&lt;/strong> as Absolute or Relative from now. If &lt;em>Absolute&lt;/em>, you can select the time using the clock icon and the date using the calendar icon OR you can select a form field (where the date is stored) by clicking on the icon with black discs. If &lt;em>Relative from now&lt;/em>, enter the days, hours and minutes directly.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Minutes&lt;/td>
-&lt;td style="text-align:left">Every &amp;lt;select number of minutes&amp;gt; minutes.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Hourly&lt;/td>
-&lt;td style="text-align:left">Minutes of hour &amp;lt;select number of minutes after the hour&amp;gt; Every &amp;lt;select number of hours&amp;gt;.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Daily&lt;/td>
-&lt;td style="text-align:left">At &amp;lt;click on clock icon to select time&amp;gt; Every &amp;lt;select number of days&amp;gt;. Tick Week days to exclude Saturday and Sunday.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Weekly&lt;/td>
-&lt;td style="text-align:left">Weekday &amp;lt;select day&amp;gt; At &amp;lt;click on clock icon to select time&amp;gt; Every &amp;lt;select the number of weeks&amp;gt;.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Monthly&lt;/td>
-&lt;td style="text-align:left">Select &lt;strong>Day&lt;/strong>, &amp;lt;select the day&amp;gt; or &lt;strong>The&lt;/strong> &amp;lt;select which day e.g. First Monday&amp;gt;. At &amp;lt;click on clock icon to select time&amp;gt; Every &amp;lt;select number of months&amp;gt;.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">Immediately&lt;/td>
-&lt;td style="text-align:left">None&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>Note that all of the Schedule options are executed on the server side except the Immediately option.&lt;/p>
-&lt;p>It is possible to set the schedule rule to expire by ticking &lt;strong>Expire&lt;/strong>. There are three options:&lt;/p>
-&lt;ol>
-&lt;li>By: the rule will expire by the date and time given. Either select the time using the clock icon and the date using the calendar icon OR select a form field (where the date is stored) by clicking on the icon with black discs.&lt;/li>
-&lt;li>After: the rule will expire after a set number of occurrences. Select the number of occurrences in the blank field or click on the icon with black discs to choose a field where the number of occurrences is stored.&lt;/li>
-&lt;li>When: add a condition which will cause the rule to expire when it is true.&lt;/li>
-&lt;/ol>
-&lt;p>Select &lt;strong>Make task unique&lt;/strong> if you want to prevent a second identical task being created for this instance of the process.&lt;/p>
-&lt;p>Select &lt;strong>Execute in series&lt;/strong> if you want the server-side execution to be in series rather than in parallel.&lt;/p></description></item></channel></rss>
+&lt;li>
+&lt;p>&lt;strong>Make task unique&lt;/strong> - enable this option to prevent a second identical task being created for this instance of the process&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Execute in series&lt;/strong> - if you want the server-side execution to be in series rather than in parallel.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>
