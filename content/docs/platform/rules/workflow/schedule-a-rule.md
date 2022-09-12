@@ -51,7 +51,7 @@ The following step illustrates a scenario to schedule a reminder email using the
      - **Monthly** - select the date of the month or **First, Second, Third, Fourth, Last** weekday of the month. You can also select a specific time that you want the scheduled rule to reoccur.
      - **Immediately** - the rule will trigger immediately.
 
-   - **Expire** - It is possible to set the schedule rule to expire by enabling **Expire** checkbox. For this example we will use the **When** option and apply a condition. The goal of the reminder is to send it every two weeks until the status of the process is completed. In the **condition** of the **When** option, select **Status** from the **Common fields** and make it **equals** to **completed** as shown in the image below:
+   - **Expire** - It is possible to set the schedule rule to expire by enabling **Expire** checkbox. For this example we will use the **When** option and apply a condition. The goal of the reminder is to send it every two weeks until the status of the process is completed. In the **condition** of the **When** option, select **Status** from the [Common fields](/docs/platform/application-designer/process/common-fields/) and make it **equals** to **completed** as shown in the image below:
 
      ![Schedule a send email rule](/images/schedule-rule-status.jpg)
 
