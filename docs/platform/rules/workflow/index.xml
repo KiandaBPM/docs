@@ -613,7 +613,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Expire&lt;/strong> - It is possible to set the schedule rule to expire by enabling &lt;strong>Expire&lt;/strong> checkbox. For this example we will use the &lt;strong>When&lt;/strong> option and apply a condition. The goal of the reminder is to send it every two weeks until the status of the process is completed. In the &lt;strong>condition&lt;/strong> of the &lt;strong>When&lt;/strong> option, select &lt;strong>Status&lt;/strong> from the &lt;strong>Common fields&lt;/strong> and make it &lt;strong>equals&lt;/strong> to &lt;strong>completed&lt;/strong> as shown in the image below:&lt;/p>
+&lt;p>&lt;strong>Expire&lt;/strong> - It is possible to set the schedule rule to expire by enabling &lt;strong>Expire&lt;/strong> checkbox. For this example we will use the &lt;strong>When&lt;/strong> option and apply a condition. The goal of the reminder is to send it every two weeks until the status of the process is completed. In the &lt;strong>condition&lt;/strong> of the &lt;strong>When&lt;/strong> option, select &lt;strong>Status&lt;/strong> from the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/common-fields/">Common fields&lt;/a> and make it &lt;strong>equals&lt;/strong> to &lt;strong>completed&lt;/strong> as shown in the image below:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-status.jpg" alt="Schedule a send email rule">&lt;/p>
 &lt;p>There are three options when to expire the scheduled rule:&lt;/p>
 &lt;ul>
