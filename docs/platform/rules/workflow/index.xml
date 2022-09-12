@@ -566,7 +566,7 @@
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Schedule a rule</title><link>https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Schedule a rule&lt;/strong> allows you to schedule a rule or a field to be triggered &lt;strong>immediately&lt;/strong>, at some &lt;strong>point in the future&lt;/strong> or &lt;strong>recurrently&lt;/strong>. When a form field is selected with &lt;strong>multiple&lt;/strong> rules attached to it, all rules will be triggered &lt;strong>one by one&lt;/strong>. You can also select a specific rule from a form field that has multiple rules attached to it. You can do this by expanding the field and selecting the desired rule you want to schedule. For example if you have a &lt;strong>Text box&lt;/strong> field with multiple rules, you can expand the Text box field and there you will see a &lt;strong>Rules&lt;/strong> tab which stores all rules that are attached to the field, see image below showcasing that a &lt;strong>Text box&lt;/strong> field called &lt;strong>First Name&lt;/strong> contains two rules in the &lt;strong>Rules&lt;/strong> tab called &lt;strong>Set field&lt;/strong> and &lt;strong>Make required&lt;/strong>, you can select one of those rules if you want only one rule to be triggered:&lt;/p>
+&lt;p>The &lt;strong>Schedule a rule&lt;/strong> allows you to schedule a rule or a field to be triggered &lt;strong>immediately&lt;/strong>, at some &lt;strong>point in the future&lt;/strong> or &lt;strong>recurring&lt;/strong>. If a form field has &lt;strong>multiple&lt;/strong> rules attached to it, that include the &lt;strong>Schedule a rule&lt;/strong> rule, rules can execute sequentially and you can change the order of the rule execution, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> for details. You can also select a specific rule to execute. For example in the image below, the text box field &lt;strong>First Name&lt;/strong> is expanded to show two rules. You can select all or just one rule to be triggered. You can select all rules by selecting the &lt;strong>First Name&lt;/strong> text box itself or to select just one rule you can expand the field and selecting the desired rule you want to schedule:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-single-rule.jpg" alt="Selecting one rule to be triggered">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
@@ -576,7 +576,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>The following step illustrates a scenario to schedule a &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email rule&lt;/a> as a reminder after a form has been submitted:&lt;/p>
+&lt;p>The following step illustrates a scenario to schedule a reminder email using the &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email rule&lt;/a> when a form is submitted:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
@@ -595,7 +595,7 @@
 &lt;p>Under &lt;strong>Action&lt;/strong> fill out the following:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Select the field or rule to trigger on schedule&lt;/strong> - allows you to select a field or rule you want to trigger. By selecting a field with multiple options, all rules will be triggered one after another. You can also select a specific rule from a field with multiple rules by drilling down and selecting the desired rule. In this example we want to select a rule called &lt;strong>Send email&lt;/strong> which is attached to the &lt;strong>Submit&lt;/strong> button.&lt;/p>
+&lt;p>&lt;strong>Select the field or rule to trigger on schedule&lt;/strong> - allows you to select a field or rule you want to trigger. If a field has multiple rules, they will be triggered sequentially and you can change the order of the rule execution, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> for details. You can also select a specific rule from a field with multiple rules by drilling down and selecting the desired rule. In this example we want to select a rule called &lt;strong>Send email&lt;/strong> which is attached to the &lt;strong>Submit&lt;/strong> button.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-send-email.jpg" alt="Schedule a send email rule">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -630,7 +630,7 @@
 &lt;p>&lt;strong>Make task unique&lt;/strong> - enable this option to prevent a second identical task being created for this instance of the process&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Execute in series&lt;/strong> - if you want the server-side execution to be in series rather than in parallel.&lt;/p>
+&lt;p>&lt;strong>Execute in series&lt;/strong> - select &lt;strong>Yes&lt;/strong> if you want the server-side execution to be in series rather than in parallel.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
