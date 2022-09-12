@@ -19,7 +19,7 @@ You can add this rule:
 
 ## Before you get started
 
-In advance of using the **Add a user to a group** rule, you need to have created one or more forms. In the forms you must have created two separate fields which are needed when using the rule:
+In advance of using the **Add a user to a group** rule, you need to have created one or more forms. In the forms you must have created two separate fields which are needed for:
 
 - Field which represents the **title** of the group you are adding the user to. This field can for example be a **Text box** field. To learn more about how to create a text box field go to [Text box control](/docs/platform/controls/input/textbox/).
 - Field which represents the **Username** or **User Id**  of the user you want to add to the group, this can also be a text box field.

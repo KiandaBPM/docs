@@ -5,7 +5,7 @@ typora-root-url: ..\..\..\..\..\static
 
 This rule allows you to remove a user from a SharePoint group using Kianda.
 
-### When to use
+## When to use
 
 This rule should be used when a user within Kianda should be removed from a SharePoint Group, for example, an employee leaving a company and to ensure they are removed from team groups.
 
@@ -15,9 +15,7 @@ You can add this rule:
 - [x] to a form 
 - [x] to a process (the rule will run on load)
 
- 
-
-### How to use
+## How to use
 
 To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with **Data sources** under **Administration**. 
 
@@ -25,7 +23,7 @@ To apply this rule, first choose an item to attach the rule to and have a ShareP
 
 2. Click on **Add a rule** > **SharePoint** > **Remove a user from a group**.
 
-3. 3. In the **Edit rule - Remove a user from a group** dialog box, give the rule a **Title**. Then select a SharePoint data source from the drop-down list.
+3. In the **Edit rule - Remove a user from a group** dialog box, give the rule a **Title**. Then select a SharePoint data source from the drop-down list.
 
     ![Remove a user from a group dialog box](/images/remove-user-group-rule.jpg)
 
@@ -49,7 +47,7 @@ If you have multiple rules attached to the field or other item, you may wish to 
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+## What's next  ![Idea icon](/images/18.png) ##
 
 Now that you've learned about **Remove a user from a group**, return to the [SharePoint rules](/docs/platform/rules/SharePoint/) page to find out about other SharePoint rules. 
 
