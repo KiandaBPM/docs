@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – SharePoint rules</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/</link><description>Recent content in SharePoint rules on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/rules/sharepoint/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Add a user to a group</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/add-a-user-to-a-group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/add-a-user-to-a-group/</guid><description>
 &lt;p>This rule allows you to add a user into a SharePoint group using Kianda.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>This rule should be used when a user within Kianda should be added to SharePoint Group, for example, a new hire being added to a team group during their onboarding phase.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/p>
-&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Add a user to a group&lt;/strong> rule, you need to have created one or more forms. In the forms you must have created two separate fields which are needed when using the rule:&lt;/p>
+&lt;ul>
+&lt;li>Field which represents the &lt;strong>title&lt;/strong> of the group you are adding the user to. This field can for example be a &lt;strong>Text box&lt;/strong> field. To learn more about how to create a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;li>Field which represents the &lt;strong>Username&lt;/strong> or &lt;strong>User Id&lt;/strong> of the user you want to add to the group, this can also be a text box field.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
 &lt;p>To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with &lt;strong>Data sources&lt;/strong> under &lt;strong>Administration&lt;/strong>.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -101,7 +101,7 @@ For &lt;strong>Username or User Id&lt;/strong>, select the field where the Usern
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using the Create a group rule, you need to have created one or more forms and in those forms you need two prerequisite fields:&lt;/p>
+&lt;p>In advance of using the &lt;strong>Create a group&lt;/strong> rule, you need to have created one or more forms and in those forms you need two prerequisite fields:&lt;/p>
 &lt;ul>
 &lt;li>Field which will represent the &lt;strong>title&lt;/strong> of the group, for example a &lt;strong>Text box&lt;/strong> field. To learn more about how to create a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
 &lt;li>Field which will represent the &lt;strong>description&lt;/strong> of the group, this can also be a text box field.&lt;/li>
