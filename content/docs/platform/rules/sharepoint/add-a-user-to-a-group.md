@@ -7,22 +7,25 @@ This rule allows you to add a user into a SharePoint group using Kianda.
 
 
 
-### When to use
+## When to use
 
 This rule should be used when a user within Kianda should be added to SharePoint Group, for example, a new hire being added to a team group during their onboarding phase.
 
 You can add this rule:
 
 - [x] to a field
-
 - [x] to a form 
-
 - [x] to a process (the rule will run on load)
 
-  
+## Before you get started
+
+In advance of using the **Add a user to a group** rule, you need to have created one or more forms. In the forms you must have created two separate fields which are needed when using the rule:
+
+- Field which represents the **title** of the group you are adding the user to. This field can for example be a **Text box** field. To learn more about how to create a text box field go to [Text box control](/docs/platform/controls/input/textbox/).
+- Field which represents the **Username** or **User Id**  of the user you want to add to the group, this can also be a text box field.
 
 
-### How to use
+## How to use
 
 To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with **Data sources** under **Administration**. 
 

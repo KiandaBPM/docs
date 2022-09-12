@@ -17,7 +17,7 @@ You can add this rule:
 
 ## Before you get started
 
-In advance of using the Create a group rule, you need to have created one or more forms and in those forms you need two prerequisite fields:
+In advance of using the **Create a group** rule, you need to have created one or more forms and in those forms you need two prerequisite fields:
 
 - Field which will represent the **title** of the group, for example a **Text box** field. To learn more about how to create a text box field go to [Text box control](/docs/platform/controls/input/textbox/).
 - Field which will represent the **description** of the group, this can also be a text box field.
