@@ -9,7 +9,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using the &lt;strong>Add a user to a group&lt;/strong> rule, you need to have created one or more forms. In the forms you must have created two separate fields which are needed when using the rule:&lt;/p>
+&lt;p>In advance of using the &lt;strong>Add a user to a group&lt;/strong> rule, you need to have created one or more forms. In the forms you must have created two separate fields which are needed for:&lt;/p>
 &lt;ul>
 &lt;li>Field which represents the &lt;strong>title&lt;/strong> of the group you are adding the user to. This field can for example be a &lt;strong>Text box&lt;/strong> field. To learn more about how to create a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
 &lt;li>Field which represents the &lt;strong>Username&lt;/strong> or &lt;strong>User Id&lt;/strong> of the user you want to add to the group, this can also be a text box field.&lt;/li>
@@ -101,7 +101,7 @@ For &lt;strong>Username or User Id&lt;/strong>, select the field where the Usern
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using the &lt;strong>Create a group&lt;/strong> rule, you need to have created one or more forms and in those forms you need two prerequisite fields:&lt;/p>
+&lt;p>In advance of using the &lt;strong>Create a group&lt;/strong> rule, you need to have created one or more forms. In the forms you must have created two separate fields which are needed for:&lt;/p>
 &lt;ul>
 &lt;li>Field which will represent the &lt;strong>title&lt;/strong> of the group, for example a &lt;strong>Text box&lt;/strong> field. To learn more about how to create a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
 &lt;li>Field which will represent the &lt;strong>description&lt;/strong> of the group, this can also be a text box field.&lt;/li>
@@ -369,7 +369,7 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Get attachments&lt;/strong>, return to the &lt;a href="https://docs.kianda.com/docs/platform/rules/SharePoint/">SharePoint rules&lt;/a> page to find out about other SharePoint rules.&lt;/p></description></item><item><title>Docs: Remove a user from a group</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/remove-a-user-from-a-group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/remove-a-user-from-a-group/</guid><description>
 &lt;p>This rule allows you to remove a user from a SharePoint group using Kianda.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>This rule should be used when a user within Kianda should be removed from a SharePoint Group, for example, an employee leaving a company and to ensure they are removed from team groups.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -377,7 +377,7 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
 &lt;p>To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with &lt;strong>Data sources&lt;/strong> under &lt;strong>Administration&lt;/strong>.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -387,9 +387,7 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>SharePoint&lt;/strong> &amp;gt; &lt;strong>Remove a user from a group&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;ol start="3">
-&lt;li>In the &lt;strong>Edit rule - Remove a user from a group&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>. Then select a SharePoint data source from the drop-down list.&lt;/li>
-&lt;/ol>
+&lt;p>In the &lt;strong>Edit rule - Remove a user from a group&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>. Then select a SharePoint data source from the drop-down list.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/remove-user-group-rule.jpg" alt="Remove a user from a group dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -409,7 +407,7 @@ For &lt;strong>Username or User Id&lt;/strong>, select the field where the Usern
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>If you have multiple rules attached to the field or other item, you may wish to reorder the rules to change the order of rule execution. Go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> to find out more.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Remove a user from a group&lt;/strong>, return to the &lt;a href="https://docs.kianda.com/docs/platform/rules/SharePoint/">SharePoint rules&lt;/a> page to find out about other SharePoint rules.&lt;/p></description></item><item><title>Docs: Reset permissions</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/reset-an-item-permissions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/reset-an-item-permissions/</guid><description>
 &lt;p>This rule allows you to reset permissions for a user/group within a SharePoint site/list/item using Kianda.&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
