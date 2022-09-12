@@ -15,6 +15,13 @@ You can add this rule:
 - [x] to a form 
 - [x] to a process (the rule will run on load)
 
+## Before you get started
+
+In advance of using the **Remove a user from a group** rule, you need to have created one or more forms in your process. In the forms you must have created two separate fields which are needed for:
+
+- Field which will represent the **title** of the group you want to remove a user from, for example a **Text box** field. To learn more about how to create a text box field go to [Text box control](/docs/platform/controls/input/textbox/).
+- Field which will represent the **description** of the group, this can also be a text box field.
+
 ## How to use
 
 To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with **Data sources** under **Administration**. 

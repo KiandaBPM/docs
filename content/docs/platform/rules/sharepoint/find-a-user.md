@@ -17,7 +17,7 @@ You can add this rule:
 
 ## Before you get started
 
-In advance of using the **Find a user** rule, you need to have created one or more forms. When looking up a user from share point, you can retrieve two pieces of data from a user, a **Username **and a **User Id**. You can store the retrieved data in a field within your form for example a **Text box** field, to learn more about text box field go to [Text box control](/docs/platform/controls/input/textbox/).
+In advance of using the **Find a user** rule, you need to have created one or more forms within your process. When looking up a user from SharePoint, you can retrieve two pieces of data from a user, a **Username** and a **User Id**. You can store the retrieved data in a field within your form, for example in a [Text box field](/docs/platform/controls/input/textbox/). 
 
 ## How to use
 
@@ -40,7 +40,7 @@ To apply this rule, first choose an item to attach the rule to and have a ShareP
 
 6. Once these fields are set you can also set conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more information. 
 
-7. On success mapping is used to retrieve data from the user we are searching for. The two pieces of data you can retrieve is a **Username** and **User Id**. Go to [On success mapping](/docs/platform/rules/general/success-error-mapping/#on-success-mapping) to learn how to retrieve data and populate it in a form field.
+7. **On success mapping** is used to retrieve data from the user we are searching for. The two pieces of data you can retrieve is a **Username** and **User Id**. Go to [On success mapping](/docs/platform/rules/general/success-error-mapping/#on-success-mapping) to learn how to retrieve data and populate it in a form field.
 
 8. The final section is optional: **Error mapping**. See [On error Mapping](/docs/platform/rules/general/success-error-mapping/#on-error-mapping) for more information. 
 
