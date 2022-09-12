@@ -282,7 +282,7 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Create anonymous link&lt;/strong>, return to the &lt;a href="https://docs.kianda.com/docs/platform/rules/SharePoint/">SharePoint rules&lt;/a> page to find out about other SharePoint rules.&lt;/p></description></item><item><title>Docs: Find a user</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/find-a-user/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/find-a-user/</guid><description>
 &lt;p>This rule allows you to find a user from a data source using a Kianda process.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Use this rule to pull user data into a Kianda form for example when someone wants to add employee information to a form using SharePoint details.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -290,7 +290,9 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Find a user&lt;/strong> rule, you need to have created one or more forms. When looking up a user from share point, you can retrieve two pieces of data from a user, a **Username **and a &lt;strong>User Id&lt;/strong>. You can store the retrieved data in a field within your form for example a &lt;strong>Text box&lt;/strong> field, to learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
 &lt;p>To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with &lt;strong>Data sources&lt;/strong> under &lt;strong>Administration&lt;/strong>.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -301,22 +303,29 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Edit rule - Find a user&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>. Then select a SharePoint data source from the drop-down list.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/find-a-user-rule.jpg" alt="Find a user dialog box">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You will be presented with two options within the dialog box:&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/find-a-user-rule.jpg" alt="Find a user dialog box">&lt;/p>
+&lt;ol start="5">
+&lt;li>
+&lt;p>You will be presented with two options within the dialog box:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Find user by&lt;/strong> provides the search criteria to find the user that is, &lt;strong>display name&lt;/strong>, &lt;strong>email&lt;/strong>, or &lt;strong>ID&lt;/strong>. These are all SharePoint parameters.&lt;/li>
-&lt;li>&lt;strong>Search term field&lt;/strong> is used to select the Kianda form field which will be used to lookup the user details from the data source.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Find user by&lt;/strong> provides the search criteria to find the user that is, &lt;strong>display name&lt;/strong>, &lt;strong>email&lt;/strong>, or &lt;strong>ID&lt;/strong>. These are all SharePoint parameters.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Search term field&lt;/strong> is used to select the Kianda form field which will be used to lookup the user details from the data source.&lt;/p>
+&lt;/li>
 &lt;/ul>
-&lt;ol start="6">
+&lt;/li>
 &lt;li>
 &lt;p>Once these fields are set you can also set conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The final two sections are optional: &lt;strong>On success mapping&lt;/strong> and &lt;strong>Error mapping&lt;/strong>. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success and Error Mapping&lt;/a> for more information.&lt;/p>
+&lt;p>On success mapping is used to retrieve data from the user we are searching for. The two pieces of data you can retrieve is a &lt;strong>Username&lt;/strong> and &lt;strong>User Id&lt;/strong>. Go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On success mapping&lt;/a> to learn how to retrieve data and populate it in a form field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The final section is optional: &lt;strong>Error mapping&lt;/strong>. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-error-mapping">On error Mapping&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> when complete.&lt;/p>
