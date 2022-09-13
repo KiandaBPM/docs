@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction ##
 
-The **Start a process** rule allows you to dynamically **start a new instance** of a different process, or a new instance of the same process, or **update an existing process instance** from a chosen process. 
+The **Start a process** rule allows you to dynamically **start a new instance** of a different process, or a new instance of the same process, or **updates an existing process instance** from a chosen process. 
 
 For example if we have an 'Onboarding' process, our **primary process** that involves many different tasks like generating documentation, and sending out emails to managers, HR and new trainers, we could have a **secondary process** called 'Send email process' which sends out these automated emails for a new user once the 'Onboarding process'  starts. You can **transfer field data** from the Onboarding process to the new process instance for 'Send email process'. You can also **update the secondary process instance**, once you have the **ID** for the process instance, see step 5 below in [How to get started].
 
@@ -20,6 +20,23 @@ You can add this rule:
 - [x] to a process (the rule will run on load)
 
 
+
+## Before getting started
+
+In advance of using the this rule, in your process you need to have created at least one or more forms as well as creating:
+
+- **Two processes**, one process that acts as your primary process, that then triggers a secondary process also called your **target process**.
+- A **text box** field which can be hidden, to hold your **target process ID** if you wish **to update an existing process**.
+
+
+
+The rule also requires you to select a **user profile source**, the source can be the **current user** of the form or a user chosen within a **User picker** field. When selecting the **current user** option, you will target the **property** of the user that is **currently** using the form. When you pick the **user picker field**, you need to create a **User picker** field which is used to select a user to target when **retrieving** a property.  The rule also requires a **text box** field which is used as a **container** to store the **retrieved value** of the property.
+
+- **User picker (required)** - field used to select a user for which you want to update a property. To learn more about user picker field go to [User picker control](/docs/platform/controls/input/user-picker/).
+
+- **Text box (required)** - field used as a container to store the value of the property. To learn more about text box field go to [Text box control](/docs/platform/controls/input/textbox/).
+
+  
 
 ## How to get started
 
@@ -35,15 +52,17 @@ To dynamically start a new process:
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. Under **Action** create one or more actions for the rule. For the **Process source** list choose from **Own process** or **Partner process**. If you choose **Own process** then choose from a list of processes already created in the system under **Select a process design** using the drop-down list or start to type in the name of a process and the list will autofill
+5. Under **Action** create one or more actions for the rule. For the **Process source** list choose from **Own process** or **Partner process**. 
+
+   - If you choose **Own process** then choose from a list of processes already created in the system under **Select a process design** using the drop-down list or start to type in the name of a process and the list will autofill
 
    ![Select process design](/images/select-process-design.jpg)
 
    When the design is chosen, other options will appear in the **Edit rule** dialog box, these include: 
 
-   - **Lookup existing process** - options are **Yes** or **No**
+   - **Lookup existing process** - options are **Yes** or **No** - in both cases you need to provide the **target process name**. 
      - If you choose **Yes** - then that means you are creating a **new process instance** from that process design.
-     - If you choose **No** then that means you are **updating an existing process instance** and you must provide the target process name. You then need to provide the ID for the existing process instance. This can be done using the **On success mapping**
+     - If you choose **No** then that means you are **updating an existing process instance** and you must provide the target process name. You will also need to **provide the ID** for the existing process instance. This can be done using the [**On success mapping**](#on-success-mapping) section, see below.
    - [Input mapping](#input-mapping) 
    - [Table mapping](#table-mapping)
    - [On success mapping](#on-success-mapping)
@@ -54,7 +73,7 @@ To dynamically start a new process:
 
 7. The remaining options in the **Edit rule** dialog box are explained below.
 
-9. Click **OK** when you are finished editing the dialog box, or **Close** at any time to exit the dialog box.
+8. Click **OK** when you are finished editing the dialog box, or **Close** at any time to exit the dialog box.
 
 
 
@@ -68,13 +87,48 @@ Click on **Add mapping** to add more mappings to map fields from one process for
 
 Click on the **Bin/Trash** button to delete mappings.
 
+
+
 ### Table mapping
 
 If you use a **table** in your process you can map fields from the table in one process to another in a similar way to the fields in [Input mapping](#input-mapping).
 
+
+
 ### On success mapping
 
-Success mapping can be used to map internal values like **Process ID** from one process, your secondary process, to your primary process. 
+If you wish to **update an existing process instance** you can use mapping within the **On success mapping** to retrieve the **Process ID** of that process instance, and then trigger rules in the target process instance. A **text box** field within the form can be created to hold the Process ID value, see [Before getting started](#before-getting-started). The ID for the existing process instance, is one of the [Common fields](/docs/platform/application-designer/process/common-fields/) that can be pulled from the system. 
+
+To use On success mapping:
+
+1. Click on the green bar of **On success mapping** to reveal primary and secondary/target process form fields. For example in the image below, the primary process is called **Onboarding HR** and the secondary process is called **Send email process**. Both of these appear automatically below when the green bar is clicked on. 
+
+   - From here you can choose to add in form fields, for example a text box field called **Sales Onboarding Process ID** that will hold a common field **Process ID** from the target process. 
+
+   ![On success mapping options](/images/success-mapping-start-rule.jpg)
+
+   - Click on the **Bin/Trash** button ![Bin button](/images/bin-button.jpg)to delete a mapping.
+   - Click on the **Add mapping** button ![Add mapping button](/images/add-mapping-button.jpg)to add further mappings from the secondary/target process to the primary process. Ensure that form fields are already precreated to hold these values.
+
+2. Further options exist under this section, starting with **Trigger rules in target instance** allowing you to kick off business rules enabling actions in the target process. Options are:
+
+   - **No** where triggering rules is disabled, and no further options appear.
+
+   - **Yes** where triggering rules is enabled, and further options appear:
+
+     - **Select a field or rule to trigger on target process** - clicking on this field allows you to choose a **form** from the target process and from there you can drill down to a **field** to trigger **all the rules** attached to that field, or drill down to a particular **rule** so that only that rule will be triggered as shown in the example below.
+
+       ![Trigger rule target process](/images/trigger-rule-target-process.jpg)
+
+     - **Enable real-time rule execution**? - options are **Yes** or **No**. If you choose **Yes** then rules in the secondary/target process instance will trigger without any delay in the server. 
+
+     - **Execute in series**? - options are **Yes** or **No**. If you choose **No** then the server side execution of rules will happen in series or in sequence, instead of in parallel. 
+
+
+
+Go to the link for more details and ideas for on [On success mapping](/docs/platform/rules/general/success-error-mapping/).
+
+
 
 ### Editing, deleting or duplicating rules
 
