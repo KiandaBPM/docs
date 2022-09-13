@@ -326,7 +326,7 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using the &lt;strong>Find a user&lt;/strong> rule, you need to have created one or more forms within your process. When looking up a user from SharePoint, you can retrieve two pieces of data from a user, a &lt;strong>Username&lt;/strong> and a &lt;strong>User Id&lt;/strong>. You can store the retrieved data in a field within your form, for example in a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box field&lt;/a>.&lt;/p>
+&lt;p>In advance of using the &lt;strong>Find a user&lt;/strong> rule, you need to have created at least one or more forms within your process. The find a user rule also requires you to create a field which is used as the &lt;strong>search term&lt;/strong>. You can retrieve two pieces of data from a user that you are looking for, a &lt;strong>Username&lt;/strong> and a &lt;strong>User Id&lt;/strong>. You can store the retrieved data in a field within your form, for example in a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box field&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-use">How to use&lt;/h2>
 &lt;p>To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with &lt;strong>Data sources&lt;/strong> under &lt;strong>Administration&lt;/strong>.&lt;/p>
 &lt;ol>
