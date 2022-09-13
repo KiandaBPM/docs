@@ -75,7 +75,7 @@ For &lt;strong>Username or User Id&lt;/strong>, select the field where the Usern
 &lt;p>Three options are presented:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>List&lt;/strong> - select the list where the item is present which is needed to be checked in/out.&lt;/li>
-&lt;li>&lt;strong>Operation&lt;/strong> - choose from &lt;strong>Check in&lt;/strong> or &lt;strong>Check out&lt;/strong>. If you choose &lt;strong>Check in&lt;/strong> then select also a field from a Kianda form which will serve as a &lt;strong>Check in comment field&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Operation&lt;/strong> - choose from &lt;strong>Check in&lt;/strong> or &lt;strong>Check out&lt;/strong>. If you choose &lt;strong>Check in&lt;/strong>, then select also a field from a Kianda form which will serve as a &lt;strong>Check in comment field&lt;/strong>.&lt;/li>
 &lt;li>&lt;strong>Item Id field&lt;/strong> - this will be used to determine which item is being checked in/out. Select the appropriate field from a Kianda form.&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -141,7 +141,7 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Create a group&lt;/strong>, return to the &lt;a href="https://docs.kianda.com/docs/platform/rules/sharepoint/">SharePoint rules&lt;/a> page to find out about other SharePoint rules.&lt;/p></description></item><item><title>Docs: Create a list</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/create-a-list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/create-a-list/</guid><description>
 &lt;p>This rule allows you to create a SharePoint List from within Kianda.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>This rule should be used when within your Kianda process you wish to create a new SharePoint list, for example as part of a new project you want to create a list in SharePoint to store information pertaining to that project such as invoice numbers.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -149,7 +149,20 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Create a list&lt;/strong> rule, you need to have created one or more forms within your process and within the process you need to create three separate fields which will be used when setting up the rule:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>A field which will represent the &lt;strong>Name&lt;/strong> of the list, for example a text box field. To learn more about a text box field, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A field which will represent the &lt;strong>Description&lt;/strong> of the newly created list. This field can also be a text box field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A field which will be used when creating the &lt;strong>URL&lt;/strong> for the list. You can also use a text box field.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
 &lt;p>To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with &lt;strong>Data sources&lt;/strong> under &lt;strong>Administration&lt;/strong>.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -184,7 +197,7 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>If you have multiple rules attached to the field or other item, you may wish to reorder the rules to change the order of rule execution. Go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> to find out more.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Create a list&lt;/strong>, return to the &lt;a href="https://docs.kianda.com/docs/platform/rules/sharepoint/">SharePoint rules&lt;/a> page to find out about other SharePoint rules.&lt;/p></description></item><item><title>Docs: Create a site</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/create-a-site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/create-a-site/</guid><description>
 &lt;p>This rule allows you to create a SharePoint site from within Kianda.&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
