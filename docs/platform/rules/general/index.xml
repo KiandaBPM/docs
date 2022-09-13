@@ -49,7 +49,7 @@
 &lt;p>Remember you can assign rules at:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Process level&lt;/strong> - onload rules that execute when a new process instance is initiated&lt;/p>
+&lt;p>&lt;strong>Process level&lt;/strong> - onload rules that execute when a new process instance is initiated.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-level-rule-example.jpg" alt="Process level rule example">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -60,7 +60,7 @@
 &lt;p>&lt;strong>Button/field level&lt;/strong> - rules attached to buttons or fields within forms, or at the end of a form, for example a Submit button. An example of rule order is given at this level in the section below &lt;a href="#rule-order-example">Rule order example&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>Rules are typically synchronously executed in Kianda, so for example when using a &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/">Start a process&lt;/a> rule, when the rule is executed first any mappings from a secondary/target process are mapped into a primary process, and from there if there are any rules to trigger on the secondary/target process those are executed, but a rule will only execute when the previous rule has completed. This is different to asynchronous execution where the system will execute rules without waiting for the previous rule execution to finish. Within time defined rules, like &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/">Start a process&lt;/a> and &lt;a href="">Schedule a rule&lt;/a>(/docs/platform/rules/workflow/schedule-a-rule/) there is an option to choose between synchronous/in-series or asynchronous/in-parallel where the latter may be useful for rules without dependency.&lt;/p>
+&lt;p>Rules are typically synchronously executed in Kianda, so for example when using a &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/">Start a process&lt;/a> rule, when the rule is executed first any mappings from a secondary/target process are mapped into a primary process, and from there if there are any rules to trigger on the secondary/target process those are executed, but a rule will only execute when the previous rule has completed. This is different to asynchronous execution where the system will execute rules without waiting for the previous rule execution to finish. Within time defined rules, like &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/">Start a process&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/">Schedule a rule&lt;/a> there is an option to choose between synchronous/in-series or asynchronous/in-parallel where the latter may be useful for rules without dependency.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/execute-in-series.jpg" alt="Execute in series option on rules">&lt;/p>
 &lt;h2 id="rule-order-example">Rule order example&lt;/h2>
 &lt;p>For example, you may want a process to send automated emails to a safety manager, where the email includes submitted form data. In this case a &lt;strong>Send email rule&lt;/strong> could be attached to a form &lt;strong>Submit&lt;/strong> button so an email is sent once the button is clicked. This will result in an automated email to a designated person. To generate a report of the completed form you can use the &lt;strong>Generate word&lt;/strong> &lt;strong>document&lt;/strong> &lt;strong>rule&lt;/strong> triggered again when the &lt;strong>Submit&lt;/strong> button is clicked. In this example the &lt;strong>Generate word document rule&lt;/strong> has to be executed &lt;u>before&lt;/u> the &lt;strong>Send email rule&lt;/strong>, so that the Word document can be generated and then attached to the email.&lt;/p>
@@ -276,19 +276,35 @@ Your browser does not support the video tag.
 &lt;p>All data connectors within Kianda may have different response data that can be used to populate fields in a form. You can use the &lt;strong>Success mapping&lt;/strong> in the rules mentioned in the &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#when-to-use">When to use&lt;/a> section. Take one of the SharePoint rules &lt;a href="https://docs.kianda.com/docs/platform/rules/sharepoint/create-a-site/">&lt;strong>Create a site&lt;/strong>&lt;/a> as an example. When all information is filled out in the rule, in the &lt;strong>On success mapping&lt;/strong> section you can assess the &lt;strong>data object&lt;/strong> (response) called &lt;strong>Site properties&lt;/strong>. From the &lt;strong>Site properties&lt;/strong> data object you can access three different pieces of data; &lt;strong>Site Name&lt;/strong>, &lt;strong>Site Id&lt;/strong> and &lt;strong>Site URL&lt;/strong>. You can map (populate) those piece of data into fields in your form by selecting a field in the &lt;strong>Form field&lt;/strong> section:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/success-mapping.jpg" alt="Success mapping example">&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Form field&lt;/strong> - this field allows you to select a field in your form to store the value from the datasource.&lt;/li>
-&lt;li>&lt;strong>Data source field or text&lt;/strong> - this field allows you to select which piece of data your want to retrieve from the datasource, and store it in a form field.&lt;/li>
-&lt;li>&lt;strong>Add mapping&lt;/strong> - Click on the &lt;strong>Add mapping&lt;/strong> to add more fields for mapping results from the datasource to form fields.&lt;/li>
-&lt;li>&lt;strong>Bin/Trash&lt;/strong> &lt;strong>&lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">&lt;/strong> - Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form field&lt;/strong> - this field allows you to select a field in your form to store the value from the datasource.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Data source field or text&lt;/strong> - this field allows you to select which piece of data your want to retrieve from the datasource, and store it in a form field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add mapping&lt;/strong> - Click on the &lt;strong>Add mapping&lt;/strong> to add more fields for mapping results from the datasource to form fields.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Bin/Trash&lt;/strong> &lt;strong>&lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">&lt;/strong> - Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;h3 id="on-error-mapping">On Error Mapping&lt;/h3>
 &lt;p>Error mapping is a concept of populating a form field in your Kianda process when using the rules from the &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#when-to-use">When to use&lt;/a> section. When using those rules, you get presented with the ability to map an &lt;strong>error&lt;/strong> when there is an &lt;strong>issue&lt;/strong> as the rule is executing, for example incorrectly filling out a parameter. It is useful to know the details of the error message that comes from the datasource your are connecting with. To see the error message, you need to create a &lt;strong>separate &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box&lt;/a> field&lt;/strong> in your form and map the error to that field. Open the &lt;strong>On error mapping&lt;/strong> section and add a mapping by clicking on &lt;strong>Add mapping&lt;/strong> button:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/error-mapping.jpg" alt="Error mapping example">&lt;/p>
 &lt;ul>
-&lt;li>In the &lt;strong>Form field&lt;/strong> select a form field which will store the error message in your Kianda form.&lt;/li>
-&lt;li>In the &lt;strong>Error message or text&lt;/strong> enter an error message that you want to appear in the event of errors or click on the text box and select the &lt;strong>Error message&lt;/strong> option to use a system generated error indicating what has gone wrong when the rule executed.&lt;/li>
-&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings.&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping.&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Form field&lt;/strong> select a form field which will store the error message in your Kianda form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Error message or text&lt;/strong> enter an error message that you want to appear in the event of errors or click on the text box and select the &lt;strong>Error message&lt;/strong> option to use a system generated error indicating what has gone wrong when the rule executed.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item></channel></rss>
