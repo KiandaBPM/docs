@@ -3822,33 +3822,63 @@ Your browser does not support the video tag.
 &lt;li>To learn more about rules and controls that can be applied to forms go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">&lt;strong>Controls&lt;/strong>&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>.&lt;/li>
 &lt;li>To learn more about properties, go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/properties/">&lt;strong>Properties&lt;/strong>&lt;/a>.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Progressive Web Application (PWA)</title><link>https://docs.kianda.com/docs/low-code/pwa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/pwa/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Progressive web applications are the next great trend for the mobile web.&lt;/p>
-&lt;p>Kianda is a progressive web application. This means with Kianda you get a digital experience that is native-like while maintaining online web benefits.&lt;/p>
+&lt;p>As the Kianda platform is a progressive web application, you can access your businesses&amp;rsquo; Kianda workspace as if it were a mobile application. Instead of having to download an application through your device&amp;rsquo;s native application store, the PWA can be formatted and installed on your device so that you can easily access the website via a URL shortcut. This means with Kianda you get a digital experience that is native-like while maintaining online web benefits.&lt;/p>
 &lt;blockquote>
 &lt;p>&lt;em>Access your digital workspace PWA by going to https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/em>&lt;/p>
 &lt;/blockquote>
 &lt;p>There are several benefits of using a PWA app when comparing to a web app or even a native only app.&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Reliable&lt;/strong> - Apps keep working with or without network access. Even when your users are going through a tunnel or in a lift, changes are automatically queued offline and then synchronised when connectivity is restored.&lt;/li>
-&lt;li>&lt;strong>Fast&lt;/strong> - App loads quickly thanks to having the app installed locally, app resources are available offline.&lt;/li>
-&lt;li>&lt;strong>Engaging&lt;/strong> - When installing on your home screen with your brand icons users receive timely push notifications that help them stay engaged.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Reliable&lt;/strong> - apps keep working with or without network access, allowing for offline availability of resources. Even when your users are going through a tunnel or in a lift, changes are automatically queued offline and then synchronised when connectivity is restored.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Fast&lt;/strong> - the app loads quickly thanks to having it installed locally on your device. This provides you with an increased ease of access experience as you are not required to download the application via your device&amp;rsquo;s native application store.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Engaging&lt;/strong> - when installing on your home screen with your brand icons, users receive timely push notifications that help them stay engaged. If you would prefer to not receive notifications, you can disable them and relevant updates will be executed in the background silently.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Secure&lt;/strong> - PWAs make use of HTTP requests to transfer data, which minimises potential security threats.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Responsive&lt;/strong> - the Kianda platform is designed to be responsive on a myriad of mobile devices which reduces any future developmental costs.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;h2 id="installing-your-pwa-on-a-mobile">Installing your PWA on a mobile&lt;/h2>
 &lt;p>There are a few options to install your Kianda PWA workspace into mobile devices. The quickest is to let your users manually use the option &amp;ldquo;Add to home screen&amp;rdquo; in their mobile devices.&lt;/p>
 &lt;h3 id="android">Android&lt;/h3>
-&lt;p>Android users are automatically prompted to install the PWA when they navigate to your digital workspace URL. Then can quickly choose to install by clicking the install banner prompt.&lt;/p>
+&lt;p>The primary method for android users to install the PWA onto their device is by:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On the platform login screen, you will be prompted to install the PWA by clicking on the &lt;strong>Add &lt;em>[Business Name]&lt;/em>&lt;/strong> &lt;strong>to Home screen&lt;/strong>. In the prompt box that appears, click on &lt;strong>Install&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android1.jpg" alt="Android PWA Add to Home screen">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Following this, you will receive an on screen notification stating that the PWA was &lt;strong>Added to Home screen.&lt;/strong> A shortcut icon with your brand image will also show amongst the device&amp;rsquo;s installed applications.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android2.jpg" alt="PWA android notification">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once you click on the PWA icon to access your Kianda workspace, you will be presented with your custom loading screen with your chosen brand image, name and theme colour. Shortly afterwards, you will be prompted to login to your account which will grant you access to the workspace.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android3.jpg" alt="PWA android access">&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>Optionally users can manually install it by following the steps:&lt;/p>
 &lt;ol>
-&lt;li>Navigate to https://&amp;lt;businessName&amp;gt;.kianda.com.&lt;/li>
-&lt;li>Click&lt;img src="images/android-nav.png" alt="1567866702202">then tap on &amp;ldquo;Add to Home screen&amp;rdquo;.&lt;/li>
+&lt;li>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em>.&lt;/li>
+&lt;li>Click &lt;img src="https://docs.kianda.com/images/android-nav.png" alt="1567866702202"> then tap on &amp;ldquo;Add to Home screen&amp;rdquo;.&lt;/li>
 &lt;li>On the confirm dialog tap &amp;ldquo;Add&amp;rdquo;.&lt;/li>
 &lt;/ol>
 &lt;h3 id="ios">iOS&lt;/h3>
 &lt;p>iOS users are not yet automatically prompted to install PWA&amp;rsquo;s but it is something that can also very quickly be done by iOS users.&lt;/p>
 &lt;ol>
-&lt;li>Navigate to https://&amp;lt;businessName&amp;gt;.kianda.com.&lt;/li>
-&lt;li>Tap the action button&lt;img src="images/ios-action.png" alt="1567867653481">then tap &amp;ldquo;Add to Home screen&amp;rdquo;.&lt;/li>
-&lt;li>On the &amp;ldquo;Add to Home Screen&amp;rdquo; tap &amp;ldquo;Add&amp;rdquo;.&lt;/li>
+&lt;li>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em>.&lt;/li>
+&lt;li>Tap the action button &lt;img src="https://docs.kianda.com/images/ios-action.png" alt="1567867653481"> then tap &lt;strong>Add to Home screen&lt;/strong>.&lt;/li>
+&lt;li>On the Add to Home Screen, tap &lt;strong>Add&lt;/strong>.&lt;/li>
 &lt;/ol>
 &lt;h2 id="offline-or-online">Offline or online&lt;/h2>
 &lt;p>As we know in some cases, when there is no internet connection, websites are completely constrained to be shown appropriately. On the other hand, progressive web applications are regularly independent, enabling users to browse the app when not online, this increases engagement and availability greatly. With an offline mode, any information can be saved automatically during the last online access.&lt;/p>
