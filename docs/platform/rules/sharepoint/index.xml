@@ -48,7 +48,7 @@ For &lt;strong>Username or User Id&lt;/strong>, select the field where the Usern
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Add a user to a group&lt;/strong>, return to the &lt;a href="https://docs.kianda.com/docs/platform/rules/SharePoint/">SharePoint rules&lt;/a> page to find out about other SharePoint rules.&lt;/p></description></item><item><title>Docs: Check in or out an item</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/check-in-out-an-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/check-in-out-an-item/</guid><description>
 &lt;p>This rule allows you to check in or check out an item within SharePoint using Kianda.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>This rule should be used when a user within Kianda wanted to check in or check out an item from SharePoint&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -56,7 +56,9 @@ For &lt;strong>Username or User Id&lt;/strong>, select the field where the Usern
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Check in or out an item&lt;/strong> rule, you need to have created one or more forms within your process. When using the check in or out function of the rule, you are required to have a field within your process that specifies an &lt;strong>Id&lt;/strong> of an item you want to check in or out. For example the &lt;strong>Item Id&lt;/strong> field can be a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box field&lt;/a>. When using the &lt;strong>Check in&lt;/strong> functionality of the rule, you are required to create a field which is used to store a comment for the check in, the field type of the comment can also be a text box.&lt;/p>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
 &lt;p>To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with &lt;strong>Data sources&lt;/strong> under &lt;strong>Administration&lt;/strong>.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -89,7 +91,7 @@ For &lt;strong>Username or User Id&lt;/strong>, select the field where the Usern
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>If you have multiple rules attached to the field or other item, you may wish to reorder the rules to change the order of rule execution. Go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> to find out more.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Check in/out an item&lt;/strong>, return to the &lt;a href="https://docs.kianda.com/docs/platform/rules/SharePoint/">SharePoint rules&lt;/a> page to find out about other SharePoint rules.&lt;/p></description></item><item><title>Docs: Create a group</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/create-a-group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/create-a-group/</guid><description>
 &lt;p>This rule allows you to create a SharePoint group from within Kianda.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
