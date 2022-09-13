@@ -259,7 +259,7 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Create a site&lt;/strong>, return to the &lt;a href="https://docs.kianda.com/docs/platform/rules/sharepoint/">SharePoint rules&lt;/a> page to find out about other SharePoint rules.&lt;/p></description></item><item><title>Docs: Create an anonymous link</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/create-anonymous-link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/create-anonymous-link/</guid><description>
 &lt;p>This rule allows you to create an anonymous link for a file within SharePoint from a Kianda form. This can be useful for example to share with contractors who don&amp;rsquo;t need to be set up as SharePoint users, but may need access to a file in SharePoint.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>This rule should be used when a file within SharePoint should be shared with an individual via an anonymous link.&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -273,7 +273,14 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;p>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Create anonymous link&lt;/strong>, in your process you need to have created at least one or more forms. The create anonymous link rule also requires two control fields. A &lt;strong>file control&lt;/strong> in order to store a file which you want to share and a &lt;strong>text box control&lt;/strong> for storing the generated link. You can also create another text box or a number field to store the link duration, this field is optional but can be a good idea if you want to customise the duration of the link dynamically.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> - used to store the file which you want to create a link to. To learn how to create a file filed go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box field&lt;/strong> - used to store the generated anonymous link which can be shared with other users. To learn how to create a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box or Number field (optional)&lt;/strong> - allows you to determine the duration of the link in hours. To learn hot to create a number field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
 &lt;p>To apply this rule, first choose an item to attach the rule to, for example a file field within a form in Kianda.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -307,7 +314,7 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>If you have multiple rules attached to the field or other item, you may wish to reorder the rules to change the order of rule execution. Go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> to find out more.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Create anonymous link&lt;/strong>, return to the &lt;a href="https://docs.kianda.com/docs/platform/rules/SharePoint/">SharePoint rules&lt;/a> page to find out about other SharePoint rules.&lt;/p></description></item><item><title>Docs: Find a user</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/find-a-user/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/find-a-user/</guid><description>
 &lt;p>This rule allows you to find a user from a data source using a Kianda process.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
