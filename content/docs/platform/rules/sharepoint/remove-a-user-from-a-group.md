@@ -34,8 +34,6 @@ To apply this rule, first choose an item to attach the rule to and have a ShareP
 
     ![Remove a user from a group dialog box](/images/remove-user-group-rule.jpg)
 
-   
-
 4. Two new fields will appear: **Username** and **Group name**. These are used to confirm the user which is to be removed and the group they are to be removed from. 
    For **Group title** **field**, select the field where the group title is stored for example, a list field.
    For **Username or User Id**, select the field where the Username or User id is stored.
