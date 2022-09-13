@@ -10,7 +10,7 @@ When working with rules in forms, a key principle to consider is **rule order**.
 
 Remember you can assign rules at:
 
-- **Process level** - onload rules that execute when a new process instance is initiated
+- **Process level** - onload rules that execute when a new process instance is initiated.
 
   ![Process level rule example](/images/process-level-rule-example.jpg)
 
@@ -20,7 +20,7 @@ Remember you can assign rules at:
 
 - **Button/field level** - rules attached to buttons or fields within forms, or at the end of a form, for example a Submit button. An example of rule order is given at this level in the section below [Rule order example](#rule-order-example).
 
-Rules are typically synchronously executed in Kianda, so for example when using a [Start a process](/docs/platform/rules/workflow/start-a-process/) rule, when the rule is executed first any mappings from a secondary/target process are mapped into a primary process, and from there if there are any rules to trigger on the secondary/target process those are executed, but a rule will only execute when the previous rule has completed. This is different to asynchronous execution where the system will execute rules without waiting for the previous rule execution to finish. Within time defined rules, like [Start a process](/docs/platform/rules/workflow/start-a-process/) and [Schedule a rule]()(/docs/platform/rules/workflow/schedule-a-rule/) there is an option to choose between synchronous/in-series or asynchronous/in-parallel where the latter may be useful for rules without dependency.
+Rules are typically synchronously executed in Kianda, so for example when using a [Start a process](/docs/platform/rules/workflow/start-a-process/) rule, when the rule is executed first any mappings from a secondary/target process are mapped into a primary process, and from there if there are any rules to trigger on the secondary/target process those are executed, but a rule will only execute when the previous rule has completed. This is different to asynchronous execution where the system will execute rules without waiting for the previous rule execution to finish. Within time defined rules, like [Start a process](/docs/platform/rules/workflow/start-a-process/) and [Schedule a rule](/docs/platform/rules/workflow/schedule-a-rule/) there is an option to choose between synchronous/in-series or asynchronous/in-parallel where the latter may be useful for rules without dependency.
 
 ![Execute in series option on rules](/images/execute-in-series.jpg)
 

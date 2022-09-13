@@ -79,19 +79,57 @@ To dynamically start a new process:
 
 ### Input mapping
 
-For Input mapping you can map fields from one process to another. For example in an Onboarding process, if a user fills out their Name, then that Name will be mapped to a field in a form
+For Input mapping you can map field values from one process to another. For example in an 'Onboarding HR process', if a user fills out their name in a **Name** field, then that name/value will be mapped to a field in a form in the secondary/target process 'Send email process' called **New request Name** as shown in the example below. Your forms must already have precreated fields to capture the values from process or user input.
 
 ![Input mapping example](/images/input-mapping-example.jpg)
 
-Click on **Add mapping** to add more mappings to map fields from one process form to another. 
+To use **Input mapping,** click on the blue bar for **Input mapping**:
 
-Click on the **Bin/Trash** button to delete mappings.
+1. The process names will automatically appear in the left and right columns once a process design is selected see step 5 in [How to get started](#how-to-get-started) above. Within each field, choose a form and then a field that you would like to map the values from one process to another.
 
+2. Click on the **Bin/Trash** button ![Bin button](/images/bin-button.jpg)to delete a mapping.
 
+3. Click on the **Add mapping** button ![Add mapping button](/images/add-mapping-button.jpg)to add further mappings from the secondary/target process to the primary process. Ensure that form fields are already precreated to hold these values.
+
+   
 
 ### Table mapping
 
-If you use a **table** in your process you can map fields from the table in one process to another in a similar way to the fields in [Input mapping](#input-mapping).
+If you use a **table** in your process you can map fields from a table in one process to another in a similar way to the fields in [Input mapping](#input-mapping) but this section includes additional parameters to give you a range of options. 
+
+To use table mapping, you must already have tables created in your primary and secondary processes. Then click on the blue bar for **Table mapping**:
+
+1. The process names will automatically appear in the left and right columns once a process design is selected see step 5 in [How to get started](#how-to-get-started) above. 
+
+   ![Table mapping example within Start a Process rule](/images/table-mapping-example.jpg)
+
+2. Click on **Add table mapping** to and add input and output tables for each process. Click on a form and then a table of choice.
+
+   ![Table mapping adding tables](/images/table-mapping-adding-tables.jpg)
+
+3. Click on the **ellipsis** button ![Ellipsis button](/images/ellipsis-button.jpg) to open the **Table mappings** dialog box.
+
+   ![Table mappings dialog box](/images/table-mappings-dialog-box.jpg)
+
+   Options within this dialog box are:
+
+   - **Operation** - choose from:
+
+     - **Copy rows** which allows you to copy row data from one process to another. You can also add conditions to the copying process by clicking on **Copy row conditions** to allow you to have conditions on which rows are copied over to the target process. We can add fields or text to the conditions. Click on [Conditions](/docs/platform/rules/general/add-conditions/) to read more about conditions in Kianda.
+
+       If you click on the **Action** button ![Action button](/images/action-button.jpg) then column titles from the primary and secondary processes are automatically listed under **Column mapping** as shown below, where **Need** and **Reason** are column headings in the table in the primary process and **Customer need** and **Reason given** are column headings in the table in the secondary/target process. In the example below, a condition has been set so that if **Need** equals the text 'Broadband connection' then the values input into the columns listed will be copied over.
+
+       ![Table mappings example](/images/table-mappings-example.jpg)
+
+     - **Update rows** - if you choose **Update rows** then contents of the target process table will be updated. Similar to copy rows, an **Update row conditions** button appears allowing you to set conditions for what content is updated. 
+
+4. Click on the **Bin/Trash** button ![Bin button](/images/bin-button.jpg)to delete a mapping.
+
+5. Click on the **Add table mapping** button to add more tables. 
+
+There are some additional 
+
+**Table mapping** allows you copy the contents of a table in the current process to a table in the target process.  Click on Table mapping.  On the right side, select a table in the current process;  on the left side, choose a table in the target process.  Click on the three dots icon to set the table mappings. If you select Copy rows and click on Copy row conditions you can control which rows are copied over to the target process.  If you select Update rows and click on Update row conditions, then you can control which rows are updated with new data.
 
 
 
@@ -120,13 +158,15 @@ To use On success mapping:
 
        ![Trigger rule target process](/images/trigger-rule-target-process.jpg)
 
-     - **Enable real-time rule execution**? - options are **Yes** or **No**. If you choose **Yes** then rules in the secondary/target process instance will trigger without any delay in the server. 
+     - **Enable real-time rule execution**? - options are **Yes** or **No**. If you choose **Yes** rules in the secondary/target process instance will trigger without any delay in the server. If you choose **No** then a second option becomes available to allow you to choose to **Execute in series?** 
 
-     - **Execute in series**? - options are **Yes** or **No**. If you choose **No** then the server side execution of rules will happen in series or in sequence, instead of in parallel. 
+       ![Rule execution options](/images/rule-execution-options.jpg)
+     
+       - **Execute in series**? - options are **Yes** or **No**. If you choose **No** then the server side execution of rules will happen in series or in sequence, instead of in parallel. In series or in sequence refers to synchronous execution, where a rule will only execute when the previous rule has completed. In parallel refers to asynchronous execution whereby rules execute without waiting for the previous rule to finish. This type of execution is useful when rules are not dependent on each other, for example the output of one rule is not used as input for another.
 
+3. When you are finished editing the dialog box click on **OK** or click on **Close** at any time to exit the dialog box.
 
-
-Go to the link for more details and ideas for on [On success mapping](/docs/platform/rules/general/success-error-mapping/).
+For more details on using **On success mapping** with other rules click on [On success mapping](/docs/platform/rules/general/success-error-mapping/).
 
 
 
@@ -149,8 +189,6 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 The target process can be a **Partner process**.  The partner organisation must have enabled process security (in the Process settings for the target process) to allow your process to interact with the target process.
 
 Use the **Lookup existing process** flag to find a particular instance of the target process at runtime.  If you select Yes, then you can select a field in the current process which contains the id of the target instance.
-
-**Table mapping** allows you copy the contents of a table in the current process to a table in the target process.  Click on Table mapping.  On the right side, select a table in the current process;  on the left side, choose a table in the target process.  Click on the three dots icon to set the table mappings. If you select Copy rows and click on Copy row conditions you can control which rows are copied over to the target process.  If you select Update rows and click on Update row conditions, then you can control which rows are updated with new data.
 
 Use **Trigger rules in target instance** to select a field or rule to trigger in the target process.  Set Execute in series to Yes to ensure server side execution is performed in series instead of in parallel.  
 
