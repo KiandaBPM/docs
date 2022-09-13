@@ -17,7 +17,7 @@ You can add this rule:
 
 ## Before you get started
 
-In advance of using the **Find a user** rule, you need to have created at least one or more forms within your process. The find a user rule also requires you to create a field which is used as the **search term**. You can retrieve two pieces of data from a user that you are looking for, a **Username** and a **User Id**. You can store the retrieved data in a field within your form, for example in a [Text box field](/docs/platform/controls/input/textbox/). 
+In advance of using the **Find a user** rule, you need to have created at least one or more forms within your process. The find a user rule also requires you to create a field which is used as the **search term** for the user. You can retrieve two pieces of data from a user that you are looking for, a **Username** and a **User Id**. You can store the retrieved data in a field within your form, for example in a [Text box field](/docs/platform/controls/input/textbox/). 
 
 ## How to use
 
