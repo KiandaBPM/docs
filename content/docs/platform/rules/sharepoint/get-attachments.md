@@ -5,7 +5,7 @@ typora-root-url: ..\..\..\..\..\static
 
 This rule allows you to retrieve an attachment from a SharePoint list for use in a Kianda process.
 
-### When to use
+## When to use
 
 This rule should be used when an attachment needs to be extracted from SharePoint and displayed within a Kianda process, for example a SharePoint list with attachment as seen in the image below.
 
@@ -21,21 +21,24 @@ You can add this rule:
 
 - [x] to a process (the rule will run on load)
 
-  
+## Before you get stared
 
+In advance of using the **Get attachments** rule, in your process you need to have created at least one or more forms. The get attachments rule also requires one **file field** which is used to store the attachment that you want to **retrieve** from your SharePoint. To learn more about file filed in Kianda, go to [File upload control](/docs/platform/controls/input/file-upload/).
 
-### How to use
+## How to use
 
 To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with **Data sources** under **Administration**. 
 
 1. Select the field or other item to attach the rule to.
 2. Click on **Add a rule** > **SharePoint** > **Get attachments**.
-3.  In the **Edit rule - Get attachments** dialog box, give the rule a **Title**. Then select a SharePoint data source by clicking on **Select data source**.
-	  ![Get attachments dialog box](/images/get-attachments-rule.jpg)
-4. Click on **Data source filter** to create a filter to find that data source. The filter works the same as a condition, see [Conditions](/docs/platform/rules/general/add-conditions/) for more information.
-5. For the field **Select a destination file input** select the file field within Kianda where the file should be available.
-6. Once these fields are set, you can set a condition on the rule to determine which file is pulled from SharePoint. The simplest way of doing this is to use a condition on the name of the attachment within SharePoint that equals a value that is set on the condition, for example, “filename.csv”. See [Conditions](/docs/platform/rules/general/add-conditions/) for more information.
-7. Click on **OK** when complete.
+3. In the **Edit rule - Get attachments** dialog box, give the rule a **Title**.
+     ![Get attachments dialog box](/images/get-attachments-rule.jpg)
+4. If you want to add conditions for the rule, click on **Edit conditions** button ![Edit conditions button](/images/editconditions.png) You create a condition for a rule if you want it to be triggered when a condition is true or false, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+5. Under the **Action** section fill out the following:
+   - **Select data source** - this button when pressed is used to select a SharePoint datasource that you want to use when retrieving an attachment. 
+   - **Data source filter** - this is used to filter data within your datasource. It works on condition bases which allows you to pull wanted and unwanted data back into the process. To learn more about conditions go to [Conditions](/docs/platform/rules/general/add-conditions/).
+   - **Select a destination file input** - this drop-down field is used to select a **file field** from your process. The selected file filed will store the attachment retrieved from the datasource. 
+6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
 This rule can then be run for example on a button which is manually triggered by a user, or automatically on load of the process. From here the file can be utilised to populate data fields, tables and so on. Go to the [Rules](/docs/platform/rules/) page to navigate to other rules. 
 
