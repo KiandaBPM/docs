@@ -470,7 +470,7 @@
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Start a process</title><link>https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Start a process&lt;/strong> rule allows you to dynamically &lt;strong>start a new instance&lt;/strong> of a different process, or a new instance of the same process, or &lt;strong>update an existing process instance&lt;/strong> from a chosen process.&lt;/p>
+&lt;p>The &lt;strong>Start a process&lt;/strong> rule allows you to dynamically &lt;strong>start a new instance&lt;/strong> of a different process, or a new instance of the same process, or &lt;strong>updates an existing process instance&lt;/strong> from a chosen process.&lt;/p>
 &lt;p>For example if we have an &amp;lsquo;Onboarding&amp;rsquo; process, our &lt;strong>primary process&lt;/strong> that involves many different tasks like generating documentation, and sending out emails to managers, HR and new trainers, we could have a &lt;strong>secondary process&lt;/strong> called &amp;lsquo;Send email process&amp;rsquo; which sends out these automated emails for a new user once the &amp;lsquo;Onboarding process&amp;rsquo; starts. You can &lt;strong>transfer field data&lt;/strong> from the Onboarding process to the new process instance for &amp;lsquo;Send email process&amp;rsquo;. You can also &lt;strong>update the secondary process instance&lt;/strong>, once you have the &lt;strong>ID&lt;/strong> for the process instance, see step 5 below in [How to get started].&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
@@ -478,6 +478,21 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-getting-started">Before getting started&lt;/h2>
+&lt;p>In advance of using the this rule, in your process you need to have created at least one or more forms as well as creating:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Two processes&lt;/strong>, one process that acts as your primary process, that then triggers a secondary process also called your &lt;strong>target process&lt;/strong>.&lt;/li>
+&lt;li>A &lt;strong>text box&lt;/strong> field which can be hidden, to hold your &lt;strong>target process ID&lt;/strong> if you wish &lt;strong>to update an existing process&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;p>The rule also requires you to select a &lt;strong>user profile source&lt;/strong>, the source can be the &lt;strong>current user&lt;/strong> of the form or a user chosen within a &lt;strong>User picker&lt;/strong> field. When selecting the &lt;strong>current user&lt;/strong> option, you will target the &lt;strong>property&lt;/strong> of the user that is &lt;strong>currently&lt;/strong> using the form. When you pick the &lt;strong>user picker field&lt;/strong>, you need to create a &lt;strong>User picker&lt;/strong> field which is used to select a user to target when &lt;strong>retrieving&lt;/strong> a property. The rule also requires a &lt;strong>text box&lt;/strong> field which is used as a &lt;strong>container&lt;/strong> to store the &lt;strong>retrieved value&lt;/strong> of the property.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>User picker (required)&lt;/strong> - field used to select a user for which you want to update a property. To learn more about user picker field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Text box (required)&lt;/strong> - field used as a container to store the value of the property. To learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To dynamically start a new process:&lt;/p>
@@ -496,14 +511,17 @@
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule. For the &lt;strong>Process source&lt;/strong> list choose from &lt;strong>Own process&lt;/strong> or &lt;strong>Partner process&lt;/strong>. If you choose &lt;strong>Own process&lt;/strong> then choose from a list of processes already created in the system under &lt;strong>Select a process design&lt;/strong> using the drop-down list or start to type in the name of a process and the list will autofill&lt;/p>
+&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule. For the &lt;strong>Process source&lt;/strong> list choose from &lt;strong>Own process&lt;/strong> or &lt;strong>Partner process&lt;/strong>.&lt;/p>
+&lt;ul>
+&lt;li>If you choose &lt;strong>Own process&lt;/strong> then choose from a list of processes already created in the system under &lt;strong>Select a process design&lt;/strong> using the drop-down list or start to type in the name of a process and the list will autofill&lt;/li>
+&lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/select-process-design.jpg" alt="Select process design">&lt;/p>
 &lt;p>When the design is chosen, other options will appear in the &lt;strong>Edit rule&lt;/strong> dialog box, these include:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Lookup existing process&lt;/strong> - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>
+&lt;li>&lt;strong>Lookup existing process&lt;/strong> - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong> - in both cases you need to provide the &lt;strong>target process name&lt;/strong>.
 &lt;ul>
 &lt;li>If you choose &lt;strong>Yes&lt;/strong> - then that means you are creating a &lt;strong>new process instance&lt;/strong> from that process design.&lt;/li>
-&lt;li>If you choose &lt;strong>No&lt;/strong> then that means you are &lt;strong>updating an existing process instance&lt;/strong> and you must provide the target process name. You then need to provide the ID for the existing process instance. This can be done using the &lt;strong>On success mapping&lt;/strong>&lt;/li>
+&lt;li>If you choose &lt;strong>No&lt;/strong> then that means you are &lt;strong>updating an existing process instance&lt;/strong> and you must provide the target process name. You will also need to &lt;strong>provide the ID&lt;/strong> for the existing process instance. This can be done using the &lt;a href="#on-success-mapping">&lt;strong>On success mapping&lt;/strong>&lt;/a> section, see below.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a href="#input-mapping">Input mapping&lt;/a>&lt;/li>
@@ -530,7 +548,45 @@
 &lt;h3 id="table-mapping">Table mapping&lt;/h3>
 &lt;p>If you use a &lt;strong>table&lt;/strong> in your process you can map fields from the table in one process to another in a similar way to the fields in &lt;a href="#input-mapping">Input mapping&lt;/a>.&lt;/p>
 &lt;h3 id="on-success-mapping">On success mapping&lt;/h3>
-&lt;p>Success mapping can be used to map internal values like &lt;strong>Process ID&lt;/strong> from one process, your secondary process, to your primary process.&lt;/p>
+&lt;p>If you wish to &lt;strong>update an existing process instance&lt;/strong> you can use mapping within the &lt;strong>On success mapping&lt;/strong> to retrieve the &lt;strong>Process ID&lt;/strong> of that process instance, and then trigger rules in the target process instance. A &lt;strong>text box&lt;/strong> field within the form can be created to hold the Process ID value, see &lt;a href="#before-getting-started">Before getting started&lt;/a>. The ID for the existing process instance, is one of the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/common-fields/">Common fields&lt;/a> that can be pulled from the system.&lt;/p>
+&lt;p>To use On success mapping:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the green bar of &lt;strong>On success mapping&lt;/strong> to reveal primary and secondary/target process form fields. For example in the image below, the primary process is called &lt;strong>Onboarding HR&lt;/strong> and the secondary process is called &lt;strong>Send email process&lt;/strong>. Both of these appear automatically below when the green bar is clicked on.&lt;/p>
+&lt;ul>
+&lt;li>From here you can choose to add in form fields, for example a text box field called &lt;strong>Sales Onboarding Process ID&lt;/strong> that will hold a common field &lt;strong>Process ID&lt;/strong> from the target process.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/success-mapping-start-rule.jpg" alt="On success mapping options">&lt;/p>
+&lt;ul>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-button.jpg" alt="Bin button">to delete a mapping.&lt;/li>
+&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-mapping-button.jpg" alt="Add mapping button">to add further mappings from the secondary/target process to the primary process. Ensure that form fields are already precreated to hold these values.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Further options exist under this section, starting with &lt;strong>Trigger rules in target instance&lt;/strong> allowing you to kick off business rules enabling actions in the target process. Options are:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>No&lt;/strong> where triggering rules is disabled, and no further options appear.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Yes&lt;/strong> where triggering rules is enabled, and further options appear:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select a field or rule to trigger on target process&lt;/strong> - clicking on this field allows you to choose a &lt;strong>form&lt;/strong> from the target process and from there you can drill down to a &lt;strong>field&lt;/strong> to trigger &lt;strong>all the rules&lt;/strong> attached to that field, or drill down to a particular &lt;strong>rule&lt;/strong> so that only that rule will be triggered as shown in the example below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/trigger-rule-target-process.jpg" alt="Trigger rule target process">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable real-time rule execution&lt;/strong>? - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> then rules in the secondary/target process instance will trigger without any delay in the server.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Execute in series&lt;/strong>? - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>No&lt;/strong> then the server side execution of rules will happen in series or in sequence, instead of in parallel.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>Go to the link for more details and ideas for on &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">On success mapping&lt;/a>.&lt;/p>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
