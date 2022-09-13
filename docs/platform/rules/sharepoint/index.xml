@@ -371,7 +371,7 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Find a user&lt;/strong>, return to the &lt;a href="https://docs.kianda.com/docs/platform/rules/sharepoint/">SharePoint rules&lt;/a> page to find out about other SharePoint rules.&lt;/p></description></item><item><title>Docs: Get List item attachments</title><link>https://docs.kianda.com/docs/platform/rules/sharepoint/get-attachments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/sharepoint/get-attachments/</guid><description>
 &lt;p>This rule allows you to retrieve an attachment from a SharePoint list for use in a Kianda process.&lt;/p>
-&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>This rule should be used when an attachment needs to be extracted from SharePoint and displayed within a Kianda process, for example a SharePoint list with attachment as seen in the image below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-attachment.jpg" alt="List attachment example">&lt;/p>
 &lt;p>You can add this rule:&lt;/p>
@@ -386,17 +386,24 @@ For &lt;strong>Group Description field&lt;/strong>, create a description for the
 &lt;p>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="how-to-use">How to use&lt;/h3>
+&lt;h2 id="before-you-get-stared">Before you get stared&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Get attachments&lt;/strong> rule, in your process you need to have created at least one or more forms. The get attachments rule also requires one &lt;strong>file field&lt;/strong> which is used to store the attachment that you want to &lt;strong>retrieve&lt;/strong> from your SharePoint. To learn more about file filed in Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-use">How to use&lt;/h2>
 &lt;p>To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with &lt;strong>Data sources&lt;/strong> under &lt;strong>Administration&lt;/strong>.&lt;/p>
 &lt;ol>
 &lt;li>Select the field or other item to attach the rule to.&lt;/li>
 &lt;li>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>SharePoint&lt;/strong> &amp;gt; &lt;strong>Get attachments&lt;/strong>.&lt;/li>
-&lt;li>In the &lt;strong>Edit rule - Get attachments&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>. Then select a SharePoint data source by clicking on &lt;strong>Select data source&lt;/strong>.
+&lt;li>In the &lt;strong>Edit rule - Get attachments&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.
 &lt;img src="https://docs.kianda.com/images/get-attachments-rule.jpg" alt="Get attachments dialog box">&lt;/li>
-&lt;li>Click on &lt;strong>Data source filter&lt;/strong> to create a filter to find that data source. The filter works the same as a condition, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/li>
-&lt;li>For the field &lt;strong>Select a destination file input&lt;/strong> select the file field within Kianda where the file should be available.&lt;/li>
-&lt;li>Once these fields are set, you can set a condition on the rule to determine which file is pulled from SharePoint. The simplest way of doing this is to use a condition on the name of the attachment within SharePoint that equals a value that is set on the condition, for example, “filename.csv”. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> when complete.&lt;/li>
+&lt;li>If you want to add conditions for the rule, click on &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> You create a condition for a rule if you want it to be triggered when a condition is true or false, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/li>
+&lt;li>Under the &lt;strong>Action&lt;/strong> section fill out the following:
+&lt;ul>
+&lt;li>&lt;strong>Select data source&lt;/strong> - this button when pressed is used to select a SharePoint datasource that you want to use when retrieving an attachment.&lt;/li>
+&lt;li>&lt;strong>Data source filter&lt;/strong> - this is used to filter data within your datasource. It works on condition bases which allows you to pull wanted and unwanted data back into the process. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Select a destination file input&lt;/strong> - this drop-down field is used to select a &lt;strong>file field&lt;/strong> from your process. The selected file filed will store the attachment retrieved from the datasource.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/li>
 &lt;/ol>
 &lt;p>This rule can then be run for example on a button which is manually triggered by a user, or automatically on load of the process. From here the file can be utilised to populate data fields, tables and so on. Go to the &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page to navigate to other rules.&lt;/p>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
