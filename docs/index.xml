@@ -3524,7 +3524,24 @@ The Safety Team
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
-&lt;p>When working with rules in forms, a key principle to consider is &lt;strong>rule order&lt;/strong>. Rule order is important if there are &lt;strong>multiple rules&lt;/strong> attached to an item like a button to determine the sequence of rule execution. As a form designer you can change the order of execution is important and modified form and process designs, including rule order to suit your needs.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>When working with rules in forms, a key principle to consider is &lt;strong>rule order&lt;/strong>. Rule order is important if there are &lt;strong>multiple rules&lt;/strong> attached to an item like a button or form field to determine the sequence of rule execution. As a form designer you can change the order of execution is important and modified form and process designs, including rule order to suit your needs.&lt;/p>
+&lt;p>Remember you can assign rules at:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Process level&lt;/strong> - onload rules that execute when a new process instance is initiated&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/process-level-rule-example.jpg" alt="Process level rule example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form level&lt;/strong> - onload rules that execute when a form is submitted.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/form-level-rule.jpg" alt="Form level rules">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Button/field level&lt;/strong> - rules attached to buttons or fields within forms, or at the end of a form, for example a Submit button. An example of rule order is given at this level in the section below &lt;a href="#rule-order-example">Rule order example&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Rules are typically synchronously executed in Kianda, so for example when using a &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/">Start a process&lt;/a> rule, when the rule is executed first any mappings from a secondary/target process are mapped into a primary process, and from there if there are any rules to trigger on the secondary/target process those are executed, but a rule will only execute when the previous rule has completed. This is different to asynchronous execution where the system will execute rules without waiting for the previous rule execution to finish. Within time defined rules, like &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/">Start a process&lt;/a> and &lt;a href="">Schedule a rule&lt;/a>(/docs/platform/rules/workflow/schedule-a-rule/) there is an option to choose between synchronous/in-series or asynchronous/in-parallel where the latter may be useful for rules without dependency.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/execute-in-series.jpg" alt="Execute in series option on rules">&lt;/p>
 &lt;h2 id="rule-order-example">Rule order example&lt;/h2>
 &lt;p>For example, you may want a process to send automated emails to a safety manager, where the email includes submitted form data. In this case a &lt;strong>Send email rule&lt;/strong> could be attached to a form &lt;strong>Submit&lt;/strong> button so an email is sent once the button is clicked. This will result in an automated email to a designated person. To generate a report of the completed form you can use the &lt;strong>Generate word&lt;/strong> &lt;strong>document&lt;/strong> &lt;strong>rule&lt;/strong> triggered again when the &lt;strong>Submit&lt;/strong> button is clicked. In this example the &lt;strong>Generate word document rule&lt;/strong> has to be executed &lt;u>before&lt;/u> the &lt;strong>Send email rule&lt;/strong>, so that the Word document can be generated and then attached to the email.&lt;/p>
 &lt;p>The rule order consideration is therefore particularly important when rules are &lt;strong>dependent&lt;/strong> on each other - where the output of one rule is the input of another rule.&lt;/p>
