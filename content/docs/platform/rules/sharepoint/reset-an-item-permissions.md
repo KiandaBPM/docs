@@ -39,7 +39,7 @@ To apply this rule, first choose an item to attach the rule to and have a ShareP
    - **Existing permissions** allows you to either append or override the permissions of the user/group within SharePoint. Choose from the options: **Add to existing** or **Replace existing**. If it is set to **Add to existing** it will append the permissions and if it is set to **Replace existing** it will override the current permissions and only reflect the new permissions assigned via this rule. 
    
 5. Under **Input mapping** section, click on **Add mapping**. This setting is used to determine what level of permissions the user/group will be assigned.
-   For **User or Group id**, select the field where the user is stored.  This could be either a  User Picker field or a text field.
+   For **User or Group id**, select the field where the user is stored. This could be either a User Picker field or a text field.
    Select the **Permission level** from the drop-down list.  
 
     ![Permissions in SharePoint dialog box](/images/permissions-rule.jpg)
