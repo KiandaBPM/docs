@@ -8,7 +8,7 @@ A **Dropbox** data system connector allows you to the Dropbox cloud file system 
 
 ## When to use
 
-You can use the Dropbox connector when you want a process within your Kianda subscription to have **access** to your Dropbox cloud file directory. You can **extract** files from Dropbox into Kianda by using a **List** field control. Set the datasource of the List field to be your Dropbox connector allowing you to access files from you Dropbox account, to learn more about the List field go to [List control](/docs/platform/controls/input/list/). You can also use the Dropbox data connector within the **Data** set of rules, these rules allow you to perform **Create, Read, Update ** and **Delete** (**CRUD**) operations. To learn more about the Data rules, go to [Data rules](/docs/platform/rules/data/).
+You can use the Dropbox connector when you want a process within your Kianda subscription to have **access** to your Dropbox cloud file directory. You can **extract** files from Dropbox into Kianda by using a **List** field control. Set the datasource of the List field to be your Dropbox connector allowing you to access files from you Dropbox account, to learn more about the List field go to [List control](/docs/platform/controls/input/list/). You can also use the Dropbox data connector within the **Data** set of rules, these rules allow you to perform **Create, Read, Update** and **Delete** (**CRUD**) operations. To learn more about the Data rules, go to [Data rules](/docs/platform/rules/data/).
 
 ## Before getting started
 
