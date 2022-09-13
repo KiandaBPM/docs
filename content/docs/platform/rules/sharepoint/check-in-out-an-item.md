@@ -36,7 +36,7 @@ To apply this rule, first choose an item to attach the rule to and have a ShareP
 4. Three options are presented:
 
     - **List** - select the list where the item is present which is needed to be checked in/out.
-    - **Operation** - choose from **Check in** or **Check out**. If you choose **Check in** then select also a field from a Kianda form which will serve as a **Check in comment field**.
+    - **Operation** - choose from **Check in** or **Check out**. If you choose **Check in**, then select also a field from a Kianda form which will serve as a **Check in comment field**.
     - **Item Id field** - this will be used to determine which item is being checked in/out. Select the appropriate field from a Kianda form.
 
 5. Once these fields are set you can also set conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more information. 

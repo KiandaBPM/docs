@@ -5,7 +5,7 @@ typora-root-url: ..\..\..\..\..\static
 
 This rule allows you to create a SharePoint List from within Kianda.
 
-### When to use
+## When to use
 
 This rule should be used when within your Kianda process you wish to create a new SharePoint list, for example as part of a new project you want to create a list in SharePoint to store information pertaining to that project such as invoice numbers.
 
@@ -15,8 +15,16 @@ You can add this rule:
 - [x] to a form 
 - [x] to a process (the rule will run on load)
 
+## Before you get started
 
-### How to use
+In advance of using the **Create a list** rule, you need to have created one or more forms within your process and within the process you need to create three separate fields which will be used when setting up the rule:
+
+- A field which will represent the **Name** of the list, for example a text box field. To learn more about a text box field, go to [Text box control](/docs/platform/controls/input/textbox/).
+
+- A field which will represent the **Description** of the newly created list. This field can also be a text box field.
+- A field which will be used when creating the **URL** for the list. You can also use a text box field.
+
+## How to use
 
 To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with **Data sources** under **Administration**. 
 
@@ -51,6 +59,6 @@ If you have multiple rules attached to the field or other item, you may wish to 
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+## What's next  ![Idea icon](/images/18.png) ##
 
 Now that you've learned about **Create a list**, return to the [SharePoint rules](/docs/platform/rules/sharepoint/) page to find out about other SharePoint rules. 
