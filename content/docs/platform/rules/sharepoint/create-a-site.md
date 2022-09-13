@@ -5,7 +5,7 @@ typora-root-url: ..\..\..\..\..\static
 
 This rule allows you to create a SharePoint site from within Kianda.
 
-### When to use
+## When to use
 
 This rule should be used when within your Kianda process you wish to create a new SharePoint site, for example, as part of a new project you want to create a site in SharePoint to store information pertaining to that project, to include all lists and other documentation that you need. 
 
@@ -15,7 +15,14 @@ You can add this rule:
 - [x] to a form 
 - [x] to a process (the rule will run on load)
 
- 
+## Before you get stared
+
+In advance of using the **Create a site** rule, you need to have created one or more forms within your process and within the process you need to create three separate fields. Those fields that you create will be used when filling out the rule details:
+
+- A field which will represent the **Name** of the site, for example a **text box** field. To learn more about a text box field, go to [Text box control](/docs/platform/controls/input/textbox/).
+
+- A field which will represent the **Description** of the newly created site, for example a text box field.
+- A field which will be used when creating the **URL** for the site, for example a text box field.
 
 ### How to use
 
