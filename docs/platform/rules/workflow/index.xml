@@ -488,6 +488,9 @@
 &lt;li>
 &lt;p>A &lt;strong>text box&lt;/strong> field which can be hidden, to hold your &lt;strong>target process ID&lt;/strong> if you wish &lt;strong>to update an existing process&lt;/strong>. To learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
 &lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Predefined partners&lt;/strong> set up in the &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/">Invite partners&lt;/a> section of Kianda if you wish to execute rules related to partner processes.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To dynamically start a new process:&lt;/p>
@@ -513,7 +516,8 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/select-process-design.jpg" alt="Select process design">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you choose &lt;strong>Partner process&lt;/strong> then choose from a list of predefined partner processes under &lt;strong>Select a process design&lt;/strong> using the drop-down list.&lt;/p>
+&lt;p>If you choose &lt;strong>Partner process&lt;/strong> then choose from a list of predefined partners under &lt;strong>Select a process design&lt;/strong>. Click on the drop-down list to add &lt;strong>Partners&lt;/strong>. To read more about how to define partners in Kianda go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/">Invite partners&lt;/a> section of Kianda.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/partner-process-start-process.jpg" alt="Partner process">&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>When the design is chosen, other options will appear in the &lt;strong>Edit rule&lt;/strong> dialog box, the &lt;strong>Lookup existing process&lt;/strong> option appears, where you can choose &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>.&lt;/p>
