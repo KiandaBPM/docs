@@ -29,9 +29,9 @@ In advance of using the this rule, in your process you need to have created at l
 
 - A **text box** field which can be hidden, to hold your **target process ID** if you wish **to update an existing process**. To learn more about text box field go to [Text box control](/docs/platform/controls/input/textbox/).
 
-- **Predefined partners** set up in the [Invite partners](/docs/platform/b2b-portals/partner-profile/) section of Kianda if you wish to execute rules related to partner processes. 
+- **Predefined partners** must be set up in the [Invite partners](/docs/platform/b2b-portals/partner-profile/) section of Kianda if you wish to execute rules related to partner processes. **Process security must be enabled** in the target process to allow your process to interact with it. Go to [Process security](/docs/security/process-level-security/#process-security-settings) to see where this checkbox is.
 
-  
+   
 
 ## How to get started
 
@@ -53,7 +53,7 @@ To dynamically start a new process:
 
      ![Select process design](/images/select-process-design.jpg)
 
-   - If you choose **Partner process** then choose from a list of predefined partners under **Select a process design**. Click on the drop-down list to add **Partners**. To read more about how to define partners in Kianda go to [Invite partners](/docs/platform/b2b-portals/partner-profile/) section of Kianda.
+   - If you choose **Partner process** then choose from a list of predefined partners under **Select a process design**. Click on the drop-down list to add **Partners**. To read more about how to define partners in Kianda go to [Invite partners](/docs/platform/b2b-portals/partner-profile/) section of Kianda. Note, the partner organisation **must have enabled process security** to allow your process to interact with the target process, go to [Process security](/docs/security/process-level-security/#process-security-settings) to see where this checkbox is.
 
      ![Partner process](/images/partner-process-start-process.jpg)
      
@@ -88,7 +88,7 @@ For Input mapping you can map field values from one process to another. For exam
 
 To use **Input mapping,** click on the blue bar for **Input mapping**:
 
-1. The process names will automatically appear in the left and right columns once a process design is selected see step 5 in [How to get started](#how-to-get-started) above. Within each field, choose a form and then a field that you would like to map the values from one process to another.
+1. The process names will automatically appear in the left and right columns once a process design is selected see step 5 in [How to get started](#how-to-get-started) above. Within each field, choose a **form** and **then a field** that you would like to map the values from one process to another. Alternatively **type in text** to pass from the primary process to a field in the secondary process.
 
 2. Click on the **Bin/Trash** button ![Bin button](/images/bin-button.jpg)to delete a mapping.
 
@@ -155,12 +155,14 @@ To use On success mapping:
 
    - **Yes** where triggering rules is enabled, and further options appear:
 
-     - **Select a field or rule to trigger on target process** - clicking on this field allows you to choose a **form** from the target process and from there you can drill down to a **field** to trigger **all the rules** attached to that field, or drill down to a particular **rule** so that only that rule will be triggered as shown in the example below.
+     - **Select a field or rule to trigger on target process** - clicking on this field allows you to choose a **form** from the target process and from there you can drill down to a **field** to trigger **all the rules** attached to that field, or drill down to a particular **rule** so that only that rule will be triggered as shown in the example below. 
 
        ![Trigger rule target process](/images/trigger-rule-target-process.jpg)
 
-     - **Enable real-time rule execution**? - options are **Yes** or **No**. If you choose **Yes** rules in the secondary/target process instance will trigger without any delay in the server. If you choose **No** then a second option becomes available to allow you to choose to **Execute in series?** 
+       If you want to **save values passed** under [Input mapping](#input-mapping) then trigger the **Save** button (that contains the **Save process** and **Close** rules) found by default in all Kianda forms. 
 
+     - **Enable real-time rule execution**? - options are **Yes** or **No**. If you choose **Yes** rules in the secondary/target process instance will trigger without any delay in the server. If you choose **No** then a second option becomes available to allow you to choose to **Execute in series?** 
+     
        ![Rule execution options](/images/rule-execution-options.jpg)
      
        - **Execute in series**? - options are **Yes** or **No**. If you choose **No** then the server side execution of rules will happen in series or in sequence, instead of in parallel. In series or in sequence refers to synchronous execution, where a rule will only execute when the previous rule has completed. In parallel refers to asynchronous execution whereby rules execute without waiting for the previous rule to finish. This type of execution is useful when rules are not dependent on each other, for example the output of one rule is not used as input for another.
@@ -187,10 +189,10 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png) ###
 
-1. Remember the target process can be a **Partner process**.  The partner organisation **must have enabled process security** (in the Process settings for the target process) to allow your process to interact with the target process.
+1. Remember the target process can be a **Partner process** and in this case, the partner organisation **must have enabled process security** (in the Process settings for the target process) to allow your process to interact with the target process.
 2. Use the **Lookup existing process** flag to find a particular instance of the target process at runtime.  If you select **Yes**, then you can select a field in the current process which contains the id of the target instance.
 3. Use **Trigger rules in target instance** to select a field or rule to trigger in the target process.  Set **Execute in series** to **Yes** to ensure server side execution is performed in series instead of in parallel.  
-4. Another feature of this rule is that you can **read data from another process** instance.  In this case it is advisable to give the title of the rule a title such as 'Read data from Process X'.  Here you click **On success mapping** and use this area to copy data from the target process to the current process.
+4. Another feature of this rule is that you can **read data from another process** instance.  In this case it is advisable to give the title of the rule a title such as 'Read data from Process X'.  Click on the green bar of **On success mapping** and use this area to copy data from the target process to the current process.
 
 
 
