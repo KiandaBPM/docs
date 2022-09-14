@@ -1,15 +1,22 @@
 ---
 title: "SharePoint rules"
 weight: 9
+typora-root-url: ..\..\..\..\..\static
 ---
 
-**SharePoint** rules are associated with SharePoint specific functionality. These rules are typically used to perform actions with SharePoint connectors that are not related with data, for example resetting SharePoint permissions or adding a user into a group on SharePoint.
+**SharePoint** rules is a category of rules within Kianda that are associated with SharePoint specific functionality. These rules are using SharePoint Application Programming Interface (**API**) to perform Create, Read, Update and Delete (**CRUD**) operations within your SharePoint connector. The SharePoint rules are designed to **manage** your SharePoint connector instead of populating it with data. With these rules you can create a site, a list or a group on your SharePoint connector along with adding users to groups, removing them from groups or changing user or group permissions.
 
-![Sharepoint rules](/images/sharepoint-rules-all.jpg)
+Take an example of a **Find a user** rule. Implementing this rule will result in acquiring a **Username** or **User Id** of a particular user which is part of your SharePoint users group. When using SharePoint rules that are managing users, the **Find a user** rule is very useful as rules such as **Add user to a group** or **remove user from a group** require a **User Id** that can be retrieved from the **Find a user** rule.
 
-### Getting started with SharePoint rules
+## Before getting started
+
+In advance of using the SharePoint rules you must have created a SharePoint data connector and establish a connection with your SharePoint site. The data connector is used as part of the SharePoint rules to perform CRUD operations on a site you established a connection with. To learn more about the SharePoint data connector go to [SharePoint connector](/docs/platform/connectors/sharepoint/).
+
+## Getting started with SharePoint rules
 
 If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the **Sharepoint** rules are found in the left-hand pane when you click on **Sharepoint**.
+
+![Sharepoint rules](/images/sharepoint-rules-all.jpg)
 
 There are 10 **SharePoint** rules as follows:
 
