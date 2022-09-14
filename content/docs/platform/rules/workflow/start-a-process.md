@@ -187,21 +187,14 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 ### User tip ![Target icon](/images/05.png) ###
 
-The target process can be a **Partner process**.  The partner organisation must have enabled process security (in the Process settings for the target process) to allow your process to interact with the target process.
+1. Remember the target process can be a **Partner process**.  The partner organisation **must have enabled process security** (in the Process settings for the target process) to allow your process to interact with the target process.
+2. Use the **Lookup existing process** flag to find a particular instance of the target process at runtime.  If you select **Yes**, then you can select a field in the current process which contains the id of the target instance.
+3. Use **Trigger rules in target instance** to select a field or rule to trigger in the target process.  Set **Execute in series** to **Yes** to ensure server side execution is performed in series instead of in parallel.  
+4. Another feature of this rule is that you can **read data from another process** instance.  In this case it is advisable to give the title of the rule a title such as 'Read data from Process X'.  Here you click **On success mapping** and use this area to copy data from the target process to the current process.
 
-Use the **Lookup existing process** flag to find a particular instance of the target process at runtime.  If you select Yes, then you can select a field in the current process which contains the id of the target instance.
 
-Use **Trigger rules in target instance** to select a field or rule to trigger in the target process.  Set Execute in series to Yes to ensure server side execution is performed in series instead of in parallel.  
 
-Another feature of this rule is that you can **read data from another process** instance.  In this case it is advisable to give the title of the rule a title such as Read data from Process X.  Here you click On success mapping and use this area to copy data from the target process to the current process.
 
-Typically the **Start a process** rule is used in the following way: 
-
-- One rule to **initiate a new process instance**
-
-- **Another Start a process rule** to retrieve information from the new process instance
-
-  
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
