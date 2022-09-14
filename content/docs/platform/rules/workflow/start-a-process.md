@@ -26,15 +26,8 @@ You can add this rule:
 In advance of using the this rule, in your process you need to have created at least one or more forms as well as creating:
 
 - **Two processes**, one process that acts as your primary process, that then triggers a secondary process also called your **target process**.
-- A **text box** field which can be hidden, to hold your **target process ID** if you wish **to update an existing process**.
 
-
-
-The rule also requires you to select a **user profile source**, the source can be the **current user** of the form or a user chosen within a **User picker** field. When selecting the **current user** option, you will target the **property** of the user that is **currently** using the form. When you pick the **user picker field**, you need to create a **User picker** field which is used to select a user to target when **retrieving** a property.  The rule also requires a **text box** field which is used as a **container** to store the **retrieved value** of the property.
-
-- **User picker (required)** - field used to select a user for which you want to update a property. To learn more about user picker field go to [User picker control](/docs/platform/controls/input/user-picker/).
-
-- **Text box (required)** - field used as a container to store the value of the property. To learn more about text box field go to [Text box control](/docs/platform/controls/input/textbox/).
+- A **text box** field which can be hidden, to hold your **target process ID** if you wish **to update an existing process**. To learn more about text box field go to [Text box control](/docs/platform/controls/input/textbox/).
 
   
 
@@ -52,28 +45,34 @@ To dynamically start a new process:
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. Under **Action** create one or more actions for the rule. For the **Process source** list choose from **Own process** or **Partner process**. 
+5. Under **Action** create one or more actions for the rule starting with choosing the **Process source** for the secondary/target process. Choose from **Own process** or **Partner process**. 
 
-   - If you choose **Own process** then choose from a list of processes already created in the system under **Select a process design** using the drop-down list or start to type in the name of a process and the list will autofill
+   - If you choose **Own process** then choose from a list of processes already created in the system under **Select a process design** using the drop-down list or start to type in the name of a process and the list will autofill as shown below.
 
-   ![Select process design](/images/select-process-design.jpg)
+     ![Select process design](/images/select-process-design.jpg)
 
-   When the design is chosen, other options will appear in the **Edit rule** dialog box, these include: 
+   - If you choose **Partner process** then choose from a list of predefined partner processes under **Select a process design** using the drop-down list.
 
-   - **Lookup existing process** - options are **Yes** or **No** - in both cases you need to provide the **target process name**. 
-     - If you choose **Yes** - then that means you are creating a **new process instance** from that process design.
-     - If you choose **No** then that means you are **updating an existing process instance** and you must provide the target process name. You will also need to **provide the ID** for the existing process instance. This can be done using the [**On success mapping**](#on-success-mapping) section, see below.
-   - [Input mapping](#input-mapping) 
-   - [Table mapping](#table-mapping)
-   - [On success mapping](#on-success-mapping)
+     - When the design is chosen, other options will appear in the **Edit rule** dialog box, the **Lookup existing process** option appears, where you can choose **Yes** or **No**. 
+     
+       ![Lookup existing process option Yes](/images/lookup-existing-process-yes.jpg)
+     
+       - If you choose **No** then that means you are creating a **new process instance** from that process design.
+       - If you choose **Yes** then that means you are **updating an existing process instance** and you must provide a field the target process name. You will also need to **provide ** for the existing process instance. This can be done using the [**On success mapping**](#on-success-mapping) section, see below.
+
+6. An [Input mapping](#input-mapping) section allows you to map values for fields from the primary process to the secondary/target process fields, read more below.
+
+7. A [Table mapping](#table-mapping) section allows you to map values from a table(s) in the primary process to the secondary/target process table(s), see below.
+
+8. Use [On success mapping](#on-success-mapping) to retrieve values from the secondary process, showing success in process execution. Click on the link to read more.
 
    ![Edit rule dialog box options](/images/lookup-existing-process.jpg)
 
-6. For the **Process source** if you choose **Partner process** then choose from a list of predefined partner processes under **Select a process design** using the drop-down list or start to type in the name of a process and the list will autofill
+   
 
-7. The remaining options in the **Edit rule** dialog box are explained below.
+9. The remaining options in the **Edit rule** dialog box are explained below.
 
-8. Click **OK** when you are finished editing the dialog box, or **Close** at any time to exit the dialog box.
+10. Click **OK** when you are finished editing the dialog box, or **Close** at any time to exit the dialog box.
 
 
 
@@ -121,15 +120,13 @@ To use table mapping, you must already have tables created in your primary and s
 
        ![Table mappings example](/images/table-mappings-example.jpg)
 
-     - **Update rows** - if you choose **Update rows** then contents of the target process table will be updated. Similar to copy rows, an **Update row conditions** button appears allowing you to set conditions for what content is updated. 
+     - **Update rows** - if you choose **Update rows** then contents of the target process table will be updated. Similar to copy rows, an **Update row conditions** button appears allowing you to set conditions for what content is updated. As with **Copy row conditions** you can set [conditions](/docs/platform/rules/general/add-conditions/) to control how values are mapped from one process to another.
+     
+       An **Action** button ![Action button](/images/action-button.jpg) is available beside **Column mapping** to allow you to autofill field names from processes under **Field or text** and **To table** fields.
 
 4. Click on the **Bin/Trash** button ![Bin button](/images/bin-button.jpg)to delete a mapping.
 
 5. Click on the **Add table mapping** button to add more tables. 
-
-There are some additional 
-
-**Table mapping** allows you copy the contents of a table in the current process to a table in the target process.  Click on Table mapping.  On the right side, select a table in the current process;  on the left side, choose a table in the target process.  Click on the three dots icon to set the table mappings. If you select Copy rows and click on Copy row conditions you can control which rows are copied over to the target process.  If you select Update rows and click on Update row conditions, then you can control which rows are updated with new data.
 
 
 
