@@ -6,29 +6,43 @@ typora-root-url: ..\..\..\static
 
 ## Introduction
 
-Progressive web applications are the next great trend for the mobile web. 
+**Progressive web applications** are the next great trend for the mobile web. As the Kianda platform is a progressive web application, you can access your businesses' Kianda workspace as if it were a mobile application. 
 
-As the Kianda platform is a progressive web application, you can access your businesses' Kianda workspace as if it were a mobile application. Instead of having to download an application through your device's native application store, the PWA can be formatted and installed on your device so that you can easily access the website via a URL shortcut. This means with Kianda you get a digital experience that is native-like while maintaining online web benefits. 
+Instead of having to download an application through your device's native application store, the PWA can be formatted and installed on your device so that you can easily access the website via a URL shortcut. This means with Kianda you get a digital experience that is native-like while maintaining online web benefits. When you have a Kianda subscription, you gain the ability to access your workspace via a PWA. Seen below is the accessing of the Kianda platform via a PWA on an android device.
 
-> *Access your digital workspace PWA by going to https://&lt;businessName&gt;.kianda.com*
+
+
+![PWA Gif](/videos/gifs/common/pwa-gif-smaller.gif)
+
+## Benefits
 
 There are several benefits of using a PWA app when comparing to a web app or even a native only app.
 
-- **Reliable** - apps keep working with or without network access, allowing for offline availability of resources. Even when your users are going through a tunnel or in a lift, changes are automatically queued offline and then synchronised when connectivity is restored.
+### Reliable
 
-- **Fast** - the app loads quickly thanks to having it installed locally on your device. This provides you with an increased ease of access experience as you are not required to download the application via your device's native application store.
+Apps keep working with or without network access, allowing for **offline availability** of resources. Even when your users are going through a tunnel or in a lift, changes are automatically queued offline and then **synchronised** when connectivity is restored. This can be extremely useful when completing process instances in remote locations, for example filling out an inspection form in an area with no internet coverage.
 
-- **Engaging** - when installing on your home screen with your brand icons, users receive timely push notifications that help them stay engaged. If you would prefer to not receive notifications, you can disable them and relevant updates will be executed in the background silently.
+### Fast
 
-- **Secure** - PWAs make use of HTTP requests to transfer data, which minimises potential security threats.
+The app loads quickly thanks to having it installed locally on your device. This provides you with an increased **ease of access** experience as you are not required to download the application via your device's native application store. Progressive web apps are faster because of the way the underlying technology **caches** and serves text, stylesheets, images and other content on the websites. As a result user experience, consistency and conversion rate increase.
 
-- **Responsive** - the Kianda platform is designed to be responsive on a myriad of mobile devices which reduces any future developmental costs.
+### Engaging
 
-  
+When installing on your home screen with your brand icons, users receive **timely push notifications** that help them stay engaged. If you would prefer to not receive notifications, you can disable them and relevant updates will be executed in the background silently.
+
+### Secure
+
+PWAs make use of **HTTPS requests** to transfer data, which minimises potential security threats. As these applications access your Kianda workspace through your chosen web browser, PWAs utilise the added security features of these web browsers such as **SSL encryption**. 
+
+### Responsive
+
+The Kianda platform is designed to be responsive on a myriad of mobile devices which reduces any future developmental costs. PWAs employ the **adaptive** nature of HTML, CSS and JavaScript so that your Kianda workspace will consistently maintain a neat display of features.
+
+
 
 ## Installing your PWA on a mobile
 
-There are a few options to install your Kianda PWA workspace into mobile devices. The quickest is to let your users manually use the option "Add to home screen" in their mobile devices.
+There are a few options to install your Kianda PWA workspace into mobile devices. The quickest is to let your users manually use the option **Add to Home screen** in their mobile devices.
 
 ### Android
 
@@ -64,14 +78,11 @@ iOS users are not yet automatically prompted to install PWA's but it is somethin
 2. Tap the action button ![1567867653481](/images/ios-action.png)  then tap **Add to Home screen**.
 3. On the Add to Home Screen, tap **Add**.
 
-## Offline or online
 
-As we know in some cases, when there is no internet connection, websites are completely constrained to be shown appropriately. On the other hand, progressive web applications are regularly independent, enabling users to browse the app when not online, this increases engagement and availability greatly. With an offline mode, any information can be saved automatically during the last online access.
 
-Emphasize benefits to potential clients who are frequently operating in remote areas with no access to the internet.
+## What's next ![Idea icon](/images/18.png)
 
-## Performance
+To continue with low-code development, you can view [Why choose low-code development?](/docs/low-code/why-choose-lowcode). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/docs/getting-started/welcome/no-code/) and [What is low-code?](/docs/getting-started/welcome/low-code/). 
 
-Progressive web apps are faster because of the way the underlying technology caches and serves text, stylesheets, images and other content on the websites. As a result user experience, consistency and conversion rate increase.
 
-Progressive web apps utilize service workers, which are JavaScript files that run independently from the main browser thread and efficiently control caching, this is how progressive web apps enhance better performance than traditional web apps. 
+
