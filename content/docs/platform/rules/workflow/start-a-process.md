@@ -29,6 +29,8 @@ In advance of using the this rule, in your process you need to have created at l
 
 - A **text box** field which can be hidden, to hold your **target process ID** if you wish **to update an existing process**. To learn more about text box field go to [Text box control](/docs/platform/controls/input/textbox/).
 
+- **Predefined partners** set up in the [Invite partners](/docs/platform/b2b-portals/partner-profile/) section of Kianda if you wish to execute rules related to partner processes. 
+
   
 
 ## How to get started
@@ -51,8 +53,10 @@ To dynamically start a new process:
 
      ![Select process design](/images/select-process-design.jpg)
 
-   - If you choose **Partner process** then choose from a list of predefined partner processes under **Select a process design** using the drop-down list.
+   - If you choose **Partner process** then choose from a list of predefined partners under **Select a process design**. Click on the drop-down list to add **Partners**. To read more about how to define partners in Kianda go to [Invite partners](/docs/platform/b2b-portals/partner-profile/) section of Kianda.
 
+     ![Partner process](/images/partner-process-start-process.jpg)
+     
      - When the design is chosen, other options will appear in the **Edit rule** dialog box, the **Lookup existing process** option appears, where you can choose **Yes** or **No**. 
      
        ![Lookup existing process option Yes](/images/lookup-existing-process-yes.jpg)

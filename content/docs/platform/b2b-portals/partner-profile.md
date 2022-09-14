@@ -57,8 +57,6 @@ In order to begin a user with an **Administrator** role or **Manage partner** ro
 
 2. In the next page configure the name of the subscription for the **B2B Portal.** Enter your **Company name**, an **Identity** that will form the beginning of your URL, the **Company Size**, **Industry**, **Address**, **Country** and **City**. Click **Start Trial** when ready to proceed. This will create and automatically log you into your subscription.
 
-![Signin to Kianda as an invited partner example](/images/kianda-partner-signup.jpg)
-
 3. Return back to the email you received. Click on the **Accept Invite** button again. Now that your subscription is created and you are logged in the **invite** will be changed and will instead ask you to **Accept Invite**.
 
 	![Accept invite as a partner example](/images/accept-invite-2.jpg)
