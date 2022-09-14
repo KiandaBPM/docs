@@ -489,7 +489,7 @@
 &lt;p>A &lt;strong>text box&lt;/strong> field which can be hidden, to hold your &lt;strong>target process ID&lt;/strong> if you wish &lt;strong>to update an existing process&lt;/strong>. To learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Predefined partners&lt;/strong> set up in the &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/">Invite partners&lt;/a> section of Kianda if you wish to execute rules related to partner processes.&lt;/p>
+&lt;p>&lt;strong>Predefined partners&lt;/strong> must be set up in the &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/">Invite partners&lt;/a> section of Kianda if you wish to execute rules related to partner processes. &lt;strong>Process security must be enabled&lt;/strong> in the target process to allow your process to interact with it. Go to &lt;a href="https://docs.kianda.com/docs/security/process-level-security/#process-security-settings">Process security&lt;/a> to see where this checkbox is.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -516,7 +516,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/select-process-design.jpg" alt="Select process design">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you choose &lt;strong>Partner process&lt;/strong> then choose from a list of predefined partners under &lt;strong>Select a process design&lt;/strong>. Click on the drop-down list to add &lt;strong>Partners&lt;/strong>. To read more about how to define partners in Kianda go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/">Invite partners&lt;/a> section of Kianda.&lt;/p>
+&lt;p>If you choose &lt;strong>Partner process&lt;/strong> then choose from a list of predefined partners under &lt;strong>Select a process design&lt;/strong>. Click on the drop-down list to add &lt;strong>Partners&lt;/strong>. To read more about how to define partners in Kianda go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/">Invite partners&lt;/a> section of Kianda. Note, the partner organisation &lt;strong>must have enabled process security&lt;/strong> to allow your process to interact with the target process, go to &lt;a href="https://docs.kianda.com/docs/security/process-level-security/#process-security-settings">Process security&lt;/a> to see where this checkbox is.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/partner-process-start-process.jpg" alt="Partner process">&lt;/p>
 &lt;ul>
 &lt;li>
@@ -554,7 +554,7 @@
 &lt;p>To use &lt;strong>Input mapping,&lt;/strong> click on the blue bar for &lt;strong>Input mapping&lt;/strong>:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>The process names will automatically appear in the left and right columns once a process design is selected see step 5 in &lt;a href="#how-to-get-started">How to get started&lt;/a> above. Within each field, choose a form and then a field that you would like to map the values from one process to another.&lt;/p>
+&lt;p>The process names will automatically appear in the left and right columns once a process design is selected see step 5 in &lt;a href="#how-to-get-started">How to get started&lt;/a> above. Within each field, choose a &lt;strong>form&lt;/strong> and &lt;strong>then a field&lt;/strong> that you would like to map the values from one process to another. Alternatively &lt;strong>type in text&lt;/strong> to pass from the primary process to a field in the secondary process.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-button.jpg" alt="Bin button">to delete a mapping.&lt;/p>
@@ -630,6 +630,7 @@
 &lt;li>
 &lt;p>&lt;strong>Select a field or rule to trigger on target process&lt;/strong> - clicking on this field allows you to choose a &lt;strong>form&lt;/strong> from the target process and from there you can drill down to a &lt;strong>field&lt;/strong> to trigger &lt;strong>all the rules&lt;/strong> attached to that field, or drill down to a particular &lt;strong>rule&lt;/strong> so that only that rule will be triggered as shown in the example below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/trigger-rule-target-process.jpg" alt="Trigger rule target process">&lt;/p>
+&lt;p>If you want to &lt;strong>save values passed&lt;/strong> under &lt;a href="#input-mapping">Input mapping&lt;/a> then trigger the &lt;strong>Save&lt;/strong> button (that contains the &lt;strong>Save process&lt;/strong> and &lt;strong>Close&lt;/strong> rules) found by default in all Kianda forms.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Enable real-time rule execution&lt;/strong>? - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> rules in the secondary/target process instance will trigger without any delay in the server. If you choose &lt;strong>No&lt;/strong> then a second option becomes available to allow you to choose to &lt;strong>Execute in series?&lt;/strong>&lt;/p>
@@ -665,10 +666,10 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;ol>
-&lt;li>Remember the target process can be a &lt;strong>Partner process&lt;/strong>. The partner organisation &lt;strong>must have enabled process security&lt;/strong> (in the Process settings for the target process) to allow your process to interact with the target process.&lt;/li>
+&lt;li>Remember the target process can be a &lt;strong>Partner process&lt;/strong> and in this case, the partner organisation &lt;strong>must have enabled process security&lt;/strong> (in the Process settings for the target process) to allow your process to interact with the target process.&lt;/li>
 &lt;li>Use the &lt;strong>Lookup existing process&lt;/strong> flag to find a particular instance of the target process at runtime. If you select &lt;strong>Yes&lt;/strong>, then you can select a field in the current process which contains the id of the target instance.&lt;/li>
 &lt;li>Use &lt;strong>Trigger rules in target instance&lt;/strong> to select a field or rule to trigger in the target process. Set &lt;strong>Execute in series&lt;/strong> to &lt;strong>Yes&lt;/strong> to ensure server side execution is performed in series instead of in parallel.&lt;/li>
-&lt;li>Another feature of this rule is that you can &lt;strong>read data from another process&lt;/strong> instance. In this case it is advisable to give the title of the rule a title such as &amp;lsquo;Read data from Process X&amp;rsquo;. Here you click &lt;strong>On success mapping&lt;/strong> and use this area to copy data from the target process to the current process.&lt;/li>
+&lt;li>Another feature of this rule is that you can &lt;strong>read data from another process&lt;/strong> instance. In this case it is advisable to give the title of the rule a title such as &amp;lsquo;Read data from Process X&amp;rsquo;. Click on the green bar of &lt;strong>On success mapping&lt;/strong> and use this area to copy data from the target process to the current process.&lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
