@@ -119,9 +119,44 @@ The following sample widget code creates a custom field that can be used to crea
 }
 ```
 
-The outcome from this code used in a Kianda form can be seen in the next section [Field output](#field-output).
+This particular example is saved using the steps in [How to get started](#how-to-get-started) as a field widget called 'Image display'. The widget is then used in a Kianda form as seen in the next section [Field output](#field-output). 
+
+![Image display widget](/images/image-display-widget.jpg)
+
+
 
 ### Field output
+
+Users with the role **Designer** or **Administrator** can access the new control/field widget within Kianda Designer by going to the left-hand side pane, then **Administration** and **Designer**.
+
+In this example, a process called 'Support Query' is created, with a first form called 'Query'. Three controls are added:
+
+- A **text box** called 'Warning'
+- An **image ** field called 'Image 1'
+
+To use the new widget:
+
+1. Go to **Controls** > **Custom** > **Widget name** in this example 'Image display'.
+
+![Adding custom widget](/images/adding-image-display-widget.jpg) 
+
+2. Configure or edit the custom control by clicking on it and completing the **Edit field** dialog box as follows, mapping the **text box** and **image** fields.
+
+   ![Editing custom control widget](/images/editing-custom-widget.jpg)
+
+3. Click on **OK** and click on **Save** ![Save button](/images/save.png)to save the process.
+
+4. Click on the **Preview** button ![Preview button](/images/preview.png)to see the new control in action.
+
+5. When in **Preview mode** a warning appears telling you you are in 'Preview mode'. A drop-down list is available allowing you to choose an image by colour.
+
+   ![Image display control in preview mode](/images/image-display-preview-mode.jpg)
+
+6. A coloured image appears.
+
+   ![Custom field ouput](/images/custom-field-output.jpg)
+
+7. From here the user can change to another colour, upload an image, click on **Submit**, **Save** or **Close**.
 
 
 
