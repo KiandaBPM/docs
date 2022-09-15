@@ -55,7 +55,7 @@ The following sample widget code creates a custom field that can be used to crea
 
 **Sample Custom field Widget UI** code is as follows:
 
-```javascript
+```handlebars
 {{#if (eq displayMode "design")}}
     <select class="form-control" id="entityType">
   	<option value="">Please configure my settings before use</option> {{! Prompt the user to set the custom fields settings when in design mode}}
