@@ -420,8 +420,43 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The outcome from this code used in a Kianda form can be seen in the next section &lt;a href="#field-output">Field output&lt;/a>.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This particular example is saved using the steps in &lt;a href="#how-to-get-started">How to get started&lt;/a> as a field widget called &amp;lsquo;Image display&amp;rsquo;. The widget is then used in a Kianda form as seen in the next section &lt;a href="#field-output">Field output&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/image-display-widget.jpg" alt="Image display widget">&lt;/p>
 &lt;h3 id="field-output">Field output&lt;/h3>
+&lt;p>Users with the role &lt;strong>Designer&lt;/strong> or &lt;strong>Administrator&lt;/strong> can access the new control/field widget within Kianda Designer by going to the left-hand side pane, then &lt;strong>Administration&lt;/strong> and &lt;strong>Designer&lt;/strong>.&lt;/p>
+&lt;p>In this example, a process called &amp;lsquo;Support Query&amp;rsquo; is created, with a first form called &amp;lsquo;Query&amp;rsquo;. Three controls are added:&lt;/p>
+&lt;ul>
+&lt;li>A &lt;strong>text box&lt;/strong> called &amp;lsquo;Warning&amp;rsquo;&lt;/li>
+&lt;li>An **image ** field called &amp;lsquo;Image 1&amp;rsquo;&lt;/li>
+&lt;/ul>
+&lt;p>To use the new widget:&lt;/p>
+&lt;ol>
+&lt;li>Go to &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Custom&lt;/strong> &amp;gt; &lt;strong>Widget name&lt;/strong> in this example &amp;lsquo;Image display&amp;rsquo;.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/adding-image-display-widget.jpg" alt="Adding custom widget">&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>Configure or edit the custom control by clicking on it and completing the &lt;strong>Edit field&lt;/strong> dialog box as follows, mapping the &lt;strong>text box&lt;/strong> and &lt;strong>image&lt;/strong> fields.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/editing-custom-widget.jpg" alt="Editing custom control widget">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> and click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button">to save the process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">to see the new control in action.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When in &lt;strong>Preview mode&lt;/strong> a warning appears telling you you are in &amp;lsquo;Preview mode&amp;rsquo;. A drop-down list is available allowing you to choose an image by colour.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/image-display-preview-mode.jpg" alt="Image display control in preview mode">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A coloured image appears.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-output.jpg" alt="Custom field ouput">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From here the user can change to another colour, upload an image, click on &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> or &lt;strong>Close&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Custom rule widget development</title><link>https://docs.kianda.com/docs/low-code/rule-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/rule-widget/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
