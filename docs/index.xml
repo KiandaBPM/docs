@@ -3824,12 +3824,12 @@ Your browser does not support the video tag.
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>&lt;strong>Progressive web applications&lt;/strong> are the next great trend for the mobile web. As the Kianda platform is a progressive web application, you can access your businesses&amp;rsquo; Kianda workspace as if it were a mobile application.&lt;/p>
 &lt;p>Instead of having to download an application through your device&amp;rsquo;s native application store, the PWA can be formatted and installed on your device so that you can easily access the website via a URL shortcut. This means with Kianda you get a digital experience that is native-like while maintaining online web benefits. When you have a Kianda subscription, you gain the ability to access your workspace via a PWA. Seen below is the accessing of the Kianda platform via a PWA on an android device.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/videos/gifs/common/pwa-gif-smaller.gif" alt="PWA Gif">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/videos/gifs/common/pwav2-gif-smaller.gif" alt="PWA Gif">&lt;/p>
 &lt;h2 id="benefits">Benefits&lt;/h2>
 &lt;p>There are several benefits of using a PWA app when comparing to a web app or even a native only app.&lt;/p>
-&lt;h3 id="reliable">Reliable&lt;/h3>
+&lt;h3 id="offline-use">Offline Use&lt;/h3>
 &lt;p>Apps keep working with or without network access, allowing for &lt;strong>offline availability&lt;/strong> of resources. Even when your users are going through a tunnel or in a lift, changes are automatically queued offline and then &lt;strong>synchronised&lt;/strong> when connectivity is restored. This can be extremely useful when completing process instances in remote locations, for example filling out an inspection form in an area with no internet coverage.&lt;/p>
-&lt;h3 id="fast">Fast&lt;/h3>
+&lt;h3 id="fast-performance">Fast Performance&lt;/h3>
 &lt;p>The app loads quickly thanks to having it installed locally on your device. This provides you with an increased &lt;strong>ease of access&lt;/strong> experience as you are not required to download the application via your device&amp;rsquo;s native application store. Progressive web apps are faster because of the way the underlying technology &lt;strong>caches&lt;/strong> and serves text, stylesheets, images and other content on the websites. As a result user experience, consistency and conversion rate increase.&lt;/p>
 &lt;h3 id="engaging">Engaging&lt;/h3>
 &lt;p>When installing on your home screen with your brand icons, users receive &lt;strong>timely push notifications&lt;/strong> that help them stay engaged. If you would prefer to not receive notifications, you can disable them and relevant updates will be executed in the background silently.&lt;/p>
@@ -3861,7 +3861,7 @@ Your browser does not support the video tag.
 &lt;p>Optionally users can manually install it by following the steps:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em>.&lt;/p>
+&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click &lt;img src="https://docs.kianda.com/images/android-nav.png" alt="1567866702202"> then tap on &lt;strong>Add to Home screen&lt;/strong>.&lt;/p>
@@ -3874,7 +3874,7 @@ Your browser does not support the video tag.
 &lt;p>iOS users are not yet automatically prompted to install PWA&amp;rsquo;s but it is something that can also very quickly be done by iOS users.&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em>.&lt;/p>
+&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/pwa-ios1.jpg" alt="iOS PWA Navigate to business domain">&lt;/p>
 &lt;/li>
 &lt;li>
