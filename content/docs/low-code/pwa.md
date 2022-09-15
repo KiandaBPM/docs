@@ -67,16 +67,28 @@ The primary method for android users to install the PWA onto their device is by:
 Optionally users can manually install it by following the steps:
 
 1. Navigate to ***https://&lt;businessName&gt;.kianda.com***.
-2. Click ![1567866702202](/images/android-nav.png) then tap on "Add to Home screen".
-3. On the confirm dialog tap "Add".
+
+2. Click ![1567866702202](/images/android-nav.png) then tap on **Add to Home screen**.
+
+3. On the confirm dialog tap **Add**.
+
+   
 
 ### iOS
 
 iOS users are not yet automatically prompted to install PWA's but it is something that can also very quickly be done by iOS users.
 
 1. Navigate to ***https://&lt;businessName&gt;.kianda.com***.
+
+   ![iOS PWA Navigate to business domain](/images/pwa-ios1.jpg)
+
 2. Tap the action button ![1567867653481](/images/ios-action.png)  then tap **Add to Home screen**.
-3. On the Add to Home Screen, tap **Add**.
+
+   ![iOS PWA Add to Home screen](/images/pwa-ios2.jpg)
+
+3. On the Add to Home Screen, tap **Add**. Once you click on the PWA icon to access your Kianda workspace, you will be presented with your custom loading screen with your chosen brand image, name and theme colour. Shortly afterwards, you will be prompted to login to your account which will grant you access to the workspace.
+
+   ![PWA iOS logging in using app](/images/pwa-ios3.jpg)
 
 
 
