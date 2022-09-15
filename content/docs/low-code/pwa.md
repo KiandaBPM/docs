@@ -12,17 +12,17 @@ Instead of having to download an application through your device's native applic
 
 
 
-![PWA Gif](/videos/gifs/common/pwa-gif-smaller.gif)
+![PWA Gif](/videos/gifs/common/pwav2-gif-smaller.gif)
 
 ## Benefits
 
 There are several benefits of using a PWA app when comparing to a web app or even a native only app.
 
-### Reliable
+### Offline Use
 
 Apps keep working with or without network access, allowing for **offline availability** of resources. Even when your users are going through a tunnel or in a lift, changes are automatically queued offline and then **synchronised** when connectivity is restored. This can be extremely useful when completing process instances in remote locations, for example filling out an inspection form in an area with no internet coverage.
 
-### Fast
+### Fast Performance
 
 The app loads quickly thanks to having it installed locally on your device. This provides you with an increased **ease of access** experience as you are not required to download the application via your device's native application store. Progressive web apps are faster because of the way the underlying technology **caches** and serves text, stylesheets, images and other content on the websites. As a result user experience, consistency and conversion rate increase.
 
@@ -66,7 +66,7 @@ The primary method for android users to install the PWA onto their device is by:
 
 Optionally users can manually install it by following the steps:
 
-1. Navigate to ***https://&lt;businessName&gt;.kianda.com***.
+1. Navigate to ***https://&lt;businessName&gt;.kianda.com*** via your chosen web browser application.
 
 2. Click ![1567866702202](/images/android-nav.png) then tap on **Add to Home screen**.
 
@@ -78,7 +78,7 @@ Optionally users can manually install it by following the steps:
 
 iOS users are not yet automatically prompted to install PWA's but it is something that can also very quickly be done by iOS users.
 
-1. Navigate to ***https://&lt;businessName&gt;.kianda.com***.
+1. Navigate to ***https://&lt;businessName&gt;.kianda.com*** via your chosen web browser application.
 
    ![iOS PWA Navigate to business domain](/images/pwa-ios1.jpg)
 
