@@ -267,7 +267,7 @@ As with editing the layout of fields, it is easy to validate input, making field
 
 Simply enable the checking the **Required** property in this way will automatically prevent users from submitting forms with an empty field. The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.
 
-Another way of validating input is to use the **validate input rule** which allows for greater flexibility in terms of when or what to validate. See [Validate input](/docs/platform/rules/form-actions/validate-input/) for more information.
+Another way of validating input is to use the **validate input rule** which allows for greater flexibility in terms of when or what to validate. [Rules](#rules) are explained below, but click on [Validate input](/docs/platform/rules/form-actions/validate-input/) for more information specifically on this rule.
 
 In addition to changing field properties, you can configure [settings](#settings) to make processes perform the way you want.
 
@@ -288,7 +288,7 @@ There are many options within **Settings** to manage for example process securit
 
 **Anonymous forms** are a great way of **allowing people outside of your organisation** to interact with your processes. It could be something as simple as a feedback form or a GDPR data request but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission, or person assigned to manage the form.
 
-Anonymous forms can be embedded using iframes or inline frames, a HTML tag that allows for external document nesting and safe displaying within other web-based applications. In Kianda there are effectively two types of anonymous forms:
+Anonymous forms can be embedded using iframes or inline frames. Inline frames are HTML elements that allow another HTML page(s) to be loaded within the document, basically allowing one webpage within another. In Kianda there are effectively two types of anonymous forms:
 
 - [New process instance anonymous form URL](#new-process-instance-anonymous-form-url)
 - [Existing process anonymous form URL](#existing-instance-anonymous-form-url)
@@ -303,7 +303,7 @@ To set up a **globally available link** to allow external users to create a new 
 
 ![Anonymous Form Settings](/images/enable-anonymous-sharing.jpg)
 
-The generated link can be shared to allow sharing of the form 
+The generated link can be shared to allow sharing of the form to users without the need for a Kianda account.
 
 #### Existing instance anonymous form URL
 
@@ -317,7 +317,7 @@ The following are some of the key options of the anonymous link rule:
 - Link expires settings: choose from an expiry parameter like number of uses, time-based or never expire.
 - Select a Message to display on submission.
 
-**Important**: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically expire a previous link of the same type if the link existed.
+**Important**: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically cause an expiry of a previous link of the same type.
 
 
 
@@ -360,6 +360,7 @@ Like the [cascading drop-down list](/docs/platform/application-designer/#cascadi
 
 - **Hide form tab and left nav** - This is self-explanatory, yes you can hide the default navigation elements.
 
+Once you have started creating elements in Kianda forms it is easy to replicate elements and make process design happen even faster, see [Cloning](#cloning) below.
   
 
 ## Cloning
