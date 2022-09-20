@@ -766,6 +766,47 @@ the developer can use any of the parameters to alter the query going to the micr
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p>
 &lt;p>To return to the main &lt;a href="https://docs.kianda.com/docs/low-code/">Low-code development&lt;/a> page, click on the link.&lt;/p></description></item><item><title>Docs: Low-Code development best practices</title><link>https://docs.kianda.com/docs/low-code/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/best-practices/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item></channel></rss>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Kianda uses front-end technologies like CSS and JavaScript and more specifically a framework called &lt;strong>Ember.js&lt;/strong> that is an open-source Javascript web application that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner. Ember UIs use HTML meaning that everything you see on screen in Kianda is defined in a HTML template. Ember allows you &lt;strong>customise components&lt;/strong> found in &lt;a href="docs/platform/application-designer/forms/">Kianda forms&lt;/a> on screen for example a button, a rule, a panel and so on.&lt;/p>
+&lt;p>Using your &lt;strong>administrator&lt;/strong> role, there are several ways you can customise the Kianda platform as a developer, typically by:&lt;/p>
+&lt;ol>
+&lt;li>Editing the &lt;strong>Global JavaScript file&lt;/strong>&lt;/li>
+&lt;li>Editing the &lt;strong>Global CSS file&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Building widgets&lt;/strong> for rules, fields, dashboards and data connectors&lt;/li>
+&lt;li>&lt;strong>Customising list widgets&lt;/strong> to present data in dashboards&lt;/li>
+&lt;/ol>
+&lt;p>To get the make the most out of your Kianda customisation we recommend installing and using the &lt;strong>Ember inspector&lt;/strong> to help you understand what Kianda components are available, what their properties are and how they are used. The next section details how you can get started with Ember.&lt;/p>
+&lt;h2 id="how-to-get-started-with-ember-inspector">How to get started with Ember Inspector&lt;/h2>
+&lt;p>The Ember inspector is a Chrome plug-in that allows you to investigate and understand your Ember.js. This browser add-on can be installed on Google Chrome, Firefox and other browsers. For example to install the add-on in Chrome, go to the Chrome web store, search for &amp;lsquo;Ember inspector&amp;rsquo; and then in the search results click on the add-on and &lt;strong>Add to Chrome&lt;/strong>.&lt;/p>
+&lt;p>To get started using the Ember inspector:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Add extension&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Open your Kianda workspace, for example &lt;a href="https://your-organisation.kianda.com">https://your-organisation.kianda.com&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Log in to Kianda, then navigate to a form, and open the Ember inspector by right-clicking on a page for example in Google Chrome and click on &lt;strong>Inspect&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then click on the &lt;strong>Ember&lt;/strong> tab.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the left-hand pane you will see &lt;strong>Components&lt;/strong>, &lt;strong>View Tree&lt;/strong>, &lt;strong>Routes&lt;/strong>, &lt;strong>Data&lt;/strong> and &lt;strong>Depreciations&lt;/strong> amongst other options.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the central pane you can drill down to a particular component, for example, in the form below, a &lt;strong>Hide or disable rule&lt;/strong> is about to be added. You can see what the components are within this modal/edit rule dialog box by scrolling over the components in the central pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ember-rule-editor.jpg" alt="Inspecting a rule modal using Ember inspector">&lt;/p>
+&lt;p>By highlighting the &lt;strong>rule editor component&lt;/strong> we can see the template used appear on screen.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you click on the component itself, then the properties of that component appear in the right-hand pane. For example the properties of a field-picker component are seen in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ember-properties-example.jpg" alt="Component properties in Ember inspector">&lt;/p>
+&lt;p>In this way you can view all the components within Kianda and the properties associated, for example by default the field-picker component used in the modal in step 6 has a property &amp;lsquo;allowText&amp;rsquo; false, that is text is not typed in but the user chooses form elements from a drop-down list.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/field-picker-example.jpg" alt="Field picker example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To read more about Ember.js go to &lt;a href="https://guides.emberjs.com/release/">https://guides.emberjs.com/release/&lt;/a> in particular the &lt;a href="https://guides.emberjs.com/release/components/">Components pages&lt;/a> as well as other &lt;strong>Core concepts&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>
