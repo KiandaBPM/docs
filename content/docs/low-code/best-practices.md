@@ -7,14 +7,7 @@ typora-root-url: ..\..\..\static
 
 ## Introduction
 
-Kianda uses front-end technologies like CSS and JavaScript and more specifically a framework called **Ember.js** that is an open-source Javascript web application that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner. Ember UIs use HTML meaning that everything you see on screen in Kianda is defined in a HTML template. Ember allows you **customise components** found in [Kianda forms](docs/platform/application-designer/forms/) on screen for example a button, a rule, a panel and so on.
-
-Using your **administrator** role, there are several ways you can customise the Kianda platform as a developer, typically by:
-
-1. Editing the **Global JavaScript file**
-2. Editing the **Global CSS file**
-3. **Building widgets** for rules, fields, dashboards and data connectors
-4. **Customising list widgets** to present data in dashboards
+Kianda uses front-end technologies like CSS and JavaScript and more specifically a framework called **Ember.js** that is an open-source Javascript web application that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner. Ember UIs use HTML meaning that everything you see on screen in Kianda is defined in a HTML template somewhere within the Kianda application. Ember allows you **inspect components** found in [Kianda forms](docs/platform/application-designer/forms/) on screen for example a button, a rule, a panel and so on. You can use this knowledge to create your own rule, field, dashboard and data connector widgets.
 
 To get the make the most out of your Kianda customisation we recommend installing and using the **Ember inspector** to help you understand what Kianda components are available, what their properties are and how they are used. The next section details how you can get started with Ember.
 

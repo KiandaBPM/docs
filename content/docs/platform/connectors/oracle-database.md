@@ -1,6 +1,6 @@
 ---
 title: "Oracle database"
-weight: 12
+weight: 13
 typora-root-url: ..\..\..\..\static
 ---
 

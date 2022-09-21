@@ -1,6 +1,6 @@
 ---
-title: "Cloud gateway"
-weight: 2
+title: "Global payments"
+weight: 8
 typora-root-url: ..\..\..\..\static
 ---
 

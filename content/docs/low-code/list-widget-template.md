@@ -15,3 +15,4 @@ The [List widget](docs/platform/pages/list/) is introduced within the dashboard 
 
 It is easy to configure this widget to have it filter and display data the way you want by following the steps at [Configure your widget](/docs/platform/pages/list/#configure-your-widget). However in addition to these steps you can use HTML to change the display. The next section [How to get started](#how-to-get-started) runs through an example of how to change the look and feel of a list widget.
 
+## How to get started with list 

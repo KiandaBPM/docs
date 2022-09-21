@@ -1,6 +1,6 @@
 ---
 title: "PowerShell"
-weight: 13
+weight: 14
 typora-root-url: ..\..\..\..\static
 ---
 
