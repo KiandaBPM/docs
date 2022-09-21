@@ -1,7 +1,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Example Use Cases</title><link>https://docs.kianda.com/docs/examples/</link><description>Recent content in Example Use Cases on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/examples/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Non-Conformance Report</title><link>https://docs.kianda.com/docs/examples/ncr-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/ncr-app/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Simple Inspection process</title><link>https://docs.kianda.com/docs/examples/inspection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This introduction describes:&lt;/p>
+&lt;ul>
+&lt;li>who is involved in the process&lt;/li>
+&lt;li>how the process flows&lt;/li>
+&lt;li>the user perspective of the process&lt;/li>
+&lt;/ul>
+&lt;h2 id="non-conformance-details-form">Non conformance details form&lt;/h2>
+&lt;p>This section describes the purpose of this form, and an outline kind of information that is captured.&lt;/p>
+&lt;p>Key things to note:&lt;/p>
+&lt;ul>
+&lt;li>Configuration panel&lt;/li>
+&lt;li>Assign form flow &amp;gt; see Assign form rule and Send email rule&lt;/li>
+&lt;/ul>
+&lt;h2 id="auditor-review">Auditor review&lt;/h2>
+&lt;p>This section describes the purpose of this form, and an outline kind of information that is captured.&lt;/p>
+&lt;p>Key things to note:&lt;/p>
+&lt;ul>
+&lt;li>Action list&lt;/li>
+&lt;li>Add new action button&lt;/li>
+&lt;/ul>
+&lt;h2 id="action-confirmation">Action confirmation&lt;/h2>
+&lt;p>This section describes the purpose of this form, and an outline kind of information that is captured.&lt;/p>
+&lt;p>Key things to note:&lt;/p>
+&lt;ul>
+&lt;li>Use of field group to fill out information&lt;/li>
+&lt;/ul>
+&lt;h2 id="closure">Closure&lt;/h2>
+&lt;p>This section describes the purpose of this form, and an outline kind of information that is captured.&lt;/p>
+&lt;p>Key things to note:&lt;/p>
+&lt;ul>
+&lt;li>Generating the pdf &amp;gt; see Document generation&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>You can create a &lt;strong>Dashboard page&lt;/strong> to show the status completion of the process.&lt;/p></description></item><item><title>Docs: Simple Inspection process</title><link>https://docs.kianda.com/docs/examples/inspection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/</guid><description>
 &lt;p>In this example we will step through how to create a simple Inspection process made up of two forms:&lt;/p>
 &lt;ul>
 &lt;li>a &lt;strong>Request form&lt;/strong> which is completed by a company employee, requesting an engineer to visit a specific location to perform an inspection&lt;/li>
