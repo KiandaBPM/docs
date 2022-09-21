@@ -1,12 +1,11 @@
 ---
-title: "Client Connector"
-weight: 11
-typora-root-url: ..\..\..\static
+title: "How to use the client connector"
+linkTitle: "Using the Client Connector"
+weight: 2
+typora-root-url: ..\..\..\..\static
 ---
 
 # Introduction 
-## What is a Client Connector?
-
 The new client connector is designed to allow users to create custom datasources to meet business requirements, and allow more flexibility by providing an editor to edit the ui and javascript for the connector
 
 ## Settings page
