@@ -1,7 +1,7 @@
 ---
 title: "Client Connector"
 linkTitle: "Client Connector"
-weight: 1
+weight: 9
 typora-root-url: ..\..\..\..\static
 
 ---
@@ -10,9 +10,9 @@ typora-root-url: ..\..\..\..\static
 
 The new client connector is designed to allow users to have customized data source connectors.
 
-Client Connectors will be available for use in the next release 2.20.
+**Client Connectors will be available for use in the next release 2.20.**
 
-**Please note that administrator privilege's will be required for creating a client connector, using the connector as a data source and in processes will be available to any user under the subscription**
+Please note that administrator privilege's will be required for creating a client connector, using the connector as a data source and in processes will be available to any user under the subscription.
 
 ## Features
 
