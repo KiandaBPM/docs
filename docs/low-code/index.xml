@@ -84,25 +84,6 @@
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Kianda’s low code development environment provides developers with a graphical user interface to quickly create customised applications that can be used in automated processes.&lt;/p>
 &lt;p>Kianda Developer can be utilised to implement HTTP requests and &lt;a href="https://docs.kianda.com/docs/apis/">API&lt;/a> calls to allow for real-time data interactions. To learn more about low-code development, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is Low-Code Development?&lt;/a>.&lt;/p>
-&lt;p>Using your &lt;strong>administrator&lt;/strong> role, there are several ways you can customise the Kianda platform as a developer, typically by:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Editing the &lt;strong>Global JavaScript file&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Editing the &lt;strong>Global CSS file&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Building widgets&lt;/strong> for rules, fields, dashboards and data connectors&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Customising list widgets&lt;/strong> to present data in dashboards&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Creating beautiful &lt;strong>rich text&lt;/strong> for emails and forms&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>In addition to the above customisations, you can use your JavaScript knowledge to create smart &lt;strong>expressions&lt;/strong> that can be used in text box, number and rich text fields, as well as &lt;strong>anywhere that uses rich text&lt;/strong> like Send email rule body text for emails, Meeting request rule and rich text widget for dashboards.&lt;/p>
 &lt;h2 id="why-choose-low-code-development">Why choose low-code development?&lt;/h2>
 &lt;p>Providing you have some software development and/or coding knowledge, low-code development can allow you to implement customised Kianda widgets to meet user-specific needs such as creating custom ‘Field’, ‘Rule’ or ‘Dashboard widget’ elements.&lt;/p>
 &lt;p>There are 16 predefined fields and 60 rules available for non-developers to use in a no-code form design GUI. However if these do not suit, then Kianda’s low-code development solution provides near limitless room for process expansion. As the Kianda platform offers access to any data source (including real-time synchronisation of the data) and integration with many other software tools and applications, the implementation of low-code can provide your business processes with extreme scalability and room for improvement.&lt;/p>
@@ -159,18 +140,89 @@
 &lt;/ul>
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Templating basics</title><link>https://docs.kianda.com/docs/low-code/templating-basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/templating-basics/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Low-code customisation options for the list widget</title><link>https://docs.kianda.com/docs/low-code/list-widget-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/list-widget-template/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Kianda uses &lt;strong>Ember.js&lt;/strong> to build modern web applications for your business, and in particular the &lt;strong>Handlebars&lt;/strong> templating library to power the application&amp;rsquo;s user interface. Handlesbars is simply a templating language that generates HTML or other text formats to build web pages.&lt;/p>
+&lt;p>Handlebar templates are written as expressions using double curly braces {{}} for example:&lt;/p>
+&lt;p>&lt;code>&amp;lt;p&amp;gt;{{firstname}} {{surname}}&amp;lt;/p&amp;gt;&lt;/code>&lt;/p>
+&lt;p>When the template is executed, the expressions above between the braces is replaced with values from an input object. For example in a Kianda form if a &lt;strong>user types in values&lt;/strong> or a &lt;strong>rule dynamically assigns values&lt;/strong> to text boxes for example, the values are applied to the input object as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-handlebars" data-lang="handlebars">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">{&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> firstname: &amp;#34;Ryan&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> surname: &amp;#34;B&amp;#39;Oul&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">}
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The expressions will be replaced by the values resulting in:&lt;/p>
+&lt;p>&lt;code>&amp;lt;p&amp;gt;Ryan B'Oul&amp;lt;/p&amp;gt;&lt;/code>&lt;/p>
+&lt;p>If the input objects contains other objects or arrays, for example:&lt;/p>
+&lt;pre tabindex="0">&lt;code>{
+person: {
+firstname: &amp;#34;Ryan&amp;#34;
+surname: &amp;#34;B&amp;#39;Oul&amp;#34;
+},
+}
+&lt;/code>&lt;/pre>&lt;p>A dot notation can be used to access the nested property as follows:&lt;/p>
+&lt;p>&lt;code>&amp;lt;p&amp;gt;{{person.firstname}} {{person.surname}}&amp;lt;/p&amp;gt;&lt;/code>&lt;/p>
+&lt;h2 id="handlebar-basics">Handlebar basics&lt;/h2>
+&lt;p>As shown above, Handlebar templates contain &lt;strong>static HTML&lt;/strong> and &lt;strong>dynamic content&lt;/strong> inside Handlebars expressions.&lt;/p>
+&lt;p>Dynamic content inside a Handlebars expression is rendered with data-binding. This means if you update a property, your usage of that property in a template will be automatically updated to the latest value.&lt;/p>
+&lt;h3 id="helpers">Helpers&lt;/h3>
+&lt;p>Ember gives the ability to write your helpers, to bring a minimum of logic into Ember templating. For example, let&amp;rsquo;s say you would like the ability to add a few numbers together, without needing to define a computed property everywhere you would like to do so.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Helper example&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/write-our-own-helpers.png" alt="Helpers">&lt;/p>
+&lt;h4 id="conditionals">Conditionals&lt;/h4>
+&lt;p>Statements like &lt;strong>if&lt;/strong> and &lt;strong>unless&lt;/strong> are implemented as built-in helpers. Helpers can be invoked three ways; inline invocation, nested invocation and block invocation. For more details, click on the following link &lt;a href="https://guides.emberjs.com/v2.18.0/templates/conditionals/">https://guides.emberjs.com/v2.18.0/templates/conditionals/&lt;/a>.&lt;/p></description></item><item><title>Docs: Low-code customisation options for the list widget</title><link>https://docs.kianda.com/docs/low-code/list-widget-template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/list-widget-template/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>In the &lt;a href="https://docs.kianda.com/docs/platform/pages/">dashboard pages&lt;/a> how to create a dashboard page is described, so that you can display data from your processes and monitor how processes are performing, for example number of requests submitted, use of the &lt;a href="https://docs.kianda.com/platform/rules/kianda-ai/text-analysis/">KiandaAI rule&lt;/a> to extract a sentiment score from user input, number of &amp;lsquo;completed&amp;rsquo; processes and so on.&lt;/p>
 &lt;p>The &lt;a href="docs/platform/pages/list/">List widget&lt;/a> is introduced within the dashboard pages section. Where the list widget displays the process instances or records of selected process(es) in the dashboard. An example of a &lt;strong>list widget&lt;/strong> is shown in the image below, where the &amp;lsquo;Training Requests&amp;rsquo; list displays the ID of a process instance, the status of that process instance and employee name of the person who submitted the initial request, amongst other data.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-page-example.jpg" alt="Dashboard page example with Training Requests list widget">&lt;/p>
-&lt;p>It is easy to configure this widget to have it filter and display data the way you want by following the steps at &lt;a href="https://docs.kianda.com/docs/platform/pages/list/#configure-your-widget">Configure your widget&lt;/a>. However in addition to these steps you can use HTML to change the display. The next section &lt;a href="#how-to-get-started">How to get started&lt;/a> runs through an example of how to change the look and feel of a list widget.&lt;/p>
-&lt;h2 id="how-to-get-started-with-list">How to get started with list&lt;/h2></description></item><item><title>Docs: Javascript expressions</title><link>https://docs.kianda.com/docs/low-code/javascript-expressions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/javascript-expressions/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Global CSS file</title><link>https://docs.kianda.com/docs/low-code/global-css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-css/</guid><description>
+&lt;p>It is easy to configure this widget to have it filter and display data the way you want by following the steps at &lt;a href="https://docs.kianda.com/docs/platform/pages/list/#configure-your-widget">Configure your widget&lt;/a>. However in addition to these steps you can use HTML to change the display. The next section &lt;a href="#how-to-get-started-with-list-widget-customisation">How to get started&lt;/a> runs through an example of how to change the look and feel of a list widget.&lt;/p>
+&lt;h2 id="how-to-get-started-with-list-widget-customisation">How to get started with List widget customisation&lt;/h2>
+&lt;p>As with any of the seven pre-defined dashboard widgets, it is easy to add a &lt;strong>List widget&lt;/strong> to your dashboard simply by clicking on a widget of choice, see &lt;a href="https://docs.kianda.com/docs/platform/pages/#how-to-add-widgets-to-a-dashboard-page">How to add widgets to a dashboard page&lt;/a>. The &lt;strong>List widget&lt;/strong> as it is offers a huge range of configuration options from using &lt;a href="https://docs.kianda.com/docs/platform/pages/conditions/">conditions&lt;/a> to display the desired data which can include both design fields and Kianda&amp;rsquo;s built-in &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/common-fields/">process fields&lt;/a> to display as well as enabling sorting, filtering and searching.&lt;/p>
+&lt;p>In addition if you have an &lt;strong>administration&lt;/strong> role, you can customise how the list widget displays as follows:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select a dashboard page and click on &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> to go into &lt;strong>Edit mode&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>List&lt;/strong> from the dashboard widgets menu if a list widget doesn&amp;rsquo;t exist.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-seven-widgets.jpg" alt="Dashboard widgets menu in Edit mode">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If a list widget already exists click on the &lt;strong>Edit/pen&lt;/strong> button to edit the list widget.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box opens. Follow the steps in &lt;a href="https://docs.kianda.com/docs/platform/pages/list/#configure-your-widget">Configure your widget&lt;/a> to configure the widget the way you want.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you have chosen the fields you want to display they will appear in the List fields section of the dialog box, by clicking on &lt;strong>List fields&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>At the bottom of the &lt;strong>List fields&lt;/strong> section there are two buttons:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Add column&lt;/strong> - clicking on this button allows you to add another column to your widget and add styling in the editor section, see step 7.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add action&lt;/strong> - clicking on this button allows you to select a &lt;strong>field&lt;/strong> that has rules attached to trigger or rule to trigger, see step 8.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-column-action-buttons.jpg" alt="Add column and Add action buttons">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Clicking on &lt;strong>Add column&lt;/strong> allows you to add in code to create your own look and feel on the widget.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Javascript expressions</title><link>https://docs.kianda.com/docs/low-code/javascript-expressions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/javascript-expressions/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>&lt;strong>Expressions&lt;/strong> are available for use extensively throughout the Kianda platform, both in &lt;strong>controls&lt;/strong> like text box, number and rich text, as well as &lt;strong>rules&lt;/strong> like Send email and Set form field.&lt;/p>
+&lt;p>The use of expressions allows you to cleverly manipulate data to create new constructs that can be used within processes. For example if an &amp;lsquo;Onboarding process&amp;rsquo; requires that a new hire completes a &amp;rsquo;new employee form&amp;rsquo; filling out their &amp;lsquo;firstname&amp;rsquo; and &amp;rsquo;lastname&amp;rsquo;, it may be useful to combine the two input strings to create a new ID for the employee that combines the data from each field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/expression-id-example.jpg" alt="Expression new employee ID example">&lt;/p>
+&lt;p>The page &lt;a href="docs/platform/rules/general/expression-builder/">Expression builder&lt;/a> provides an introduction to expressions and shows one example of Expressions in use in a Send email rule to automate how emails are sent. The example simply uses the &lt;strong>[identifier]&lt;/strong> or unique name from form fields to populate the body text of the email.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/expression-example.gif" alt="Expression example">&lt;/p>
+&lt;p>&lt;strong>ProcessLink()&lt;/strong> is a function that will return a link to that particular process instance. You can use JavaScript functions to make advanced expressions throughout your Kianda forms, see below for how to get started.&lt;/p>
+&lt;h2 id="how-to-get-started-with-javascript-expressions">How to get started with Javascript expressions&lt;/h2>
+&lt;p>Expressions are recognisable in Kianda from the &lt;strong>Expressions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png" alt="Expressions"> found in &lt;strong>Edit rule dialog boxes&lt;/strong> and controls like &lt;strong>text box&lt;/strong>, &lt;strong>number&lt;/strong> and &lt;strong>rich text&lt;/strong>.&lt;/p>
+&lt;p>Within rules, expressions can be created using the &lt;strong>Expression builder&lt;/strong> where you can &lt;strong>Add field to an expression&lt;/strong> or use the handy &lt;strong>Reference&lt;/strong> guide to get a list of commonly used functions, such as &lt;strong>ProcessLink()&lt;/strong>.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Expression builder&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/expression-builder-eg.gif" alt="Expression builder example in action">&lt;/p>
+&lt;p>We can also insert JavaScript such as JavaScript Strings into the expression.&lt;/p></description></item><item><title>Docs: Global CSS file</title><link>https://docs.kianda.com/docs/low-code/global-css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-css/</guid><description>
 &lt;p>Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace &lt;strong>Administrator&lt;/strong> you can add a &lt;strong>Global CSS File&lt;/strong> to make changes to the look and feel of the site as well as processes. The &lt;strong>Global CSS file editor&lt;/strong> exists within the &lt;strong>Look and Feel&lt;/strong> section of the Subscription, within the &lt;strong>Administration&lt;/strong> section of the site, see &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/">Subscription&lt;/a> for an introduction to the &lt;strong>Subscription&lt;/strong> function.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Remember the visual style of processes and individual controls like buttons, can be heavily customised using Kianda &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">&lt;strong>Designer&lt;/strong>&lt;/a> to achieve a unique look that is both appealing to the eye and practical. Many of these changes can be achieved simply by using the provided customisation controls within &lt;strong>Designer&lt;/strong>, for example selecting a button, and clicking on the &lt;strong>Edit/pen&lt;/strong> icon to make changes.&lt;/p>
@@ -368,14 +420,54 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;p>To review the range of fields available in Kianda that can have styling applied go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a>.&lt;/p>
 &lt;p>To learn more about designing processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application designer&lt;/a>.&lt;/p>
 &lt;p>To learn more about dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard pages&lt;/a>.&lt;/p></description></item><item><title>Docs: Global JavaScript file</title><link>https://docs.kianda.com/docs/low-code/global-javascript-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-javascript-file/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Custom field widget development</title><link>https://docs.kianda.com/docs/low-code/field-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/field-widget/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>As a workspace &lt;strong>Administrator&lt;/strong> you can add a &lt;strong>Global JavaScript&lt;/strong> file to add new functionality to your organisation&amp;rsquo;s workspace that is &lt;strong>globally available&lt;/strong>, for example a helper class or a helper method that is can be called from different parts of the platform. Your function could also bind to an onscreen element, for example if a user clicks on a particular element on screen you may want that a specific action happens using JavaScript.&lt;/p>
+&lt;p>The &lt;strong>Global JavaScript editor&lt;/strong> exists within the &lt;strong>Subscription details&lt;/strong> section of the Subscription function, within the &lt;strong>Administration&lt;/strong> section of the site, see &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/">Subscription&lt;/a> for an introduction to the &lt;strong>Subscription&lt;/strong> function.&lt;/p>
+&lt;h2 id="how-to-get-started-with-global-javascript-file">How to get started with Global JavaScript file&lt;/h2>
+&lt;p>To use a Global JavaScript file:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>As an &lt;strong>administrator&lt;/strong>, go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Subscription Details&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Within the &lt;strong>Subscription Details&lt;/strong> page, under &lt;strong>General Settings&lt;/strong> there is a field for the &lt;strong>Global JavaScript file&lt;/strong>. If a file has already been uploaded it will be named here.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/global-javascript-file.jpg" alt="Global Javascript file in General Settings">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/expression.jpg" alt="Ellipsis button"> beside the &lt;strong>Global JavaScript&lt;/strong> field to access the file details. Alternatively click on &lt;strong>Browse&lt;/strong> to browse for a file on a PC or network.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>JavaScript Editor&lt;/strong> opens, allowing you to add new code or edit code if your organisation has already added in functions. Click on the Editor screen to show the code. The image below shows how a sample of code can be added/created.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/javascript-editor.jpg" alt="Javascript editor sample code">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add or modify code as needed and when complete click on &lt;strong>OK&lt;/strong> or alternatively click on &lt;strong>Close&lt;/strong> at any time to close the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save Changes&lt;/strong> to save changes for the Subscription Details page and click on &lt;strong>Back&lt;/strong> to go back to the Subscription main page.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: Custom field development</title><link>https://docs.kianda.com/docs/low-code/field-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/field-widget/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>There are currently 16 predefined field or control widgets available to use in forms and processes, covering 3 categories: &lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/">Layout&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a>. Click on the relevant links to find out more about each area. However if customised fields have been created, they are available to those with the role &lt;strong>Administration&lt;/strong> and &lt;strong>Design business process&lt;/strong> to use in process and form design in Kianda &lt;strong>Designer&lt;/strong>. Customised fields are available under the &lt;strong>Custom controls&lt;/strong> category.&lt;/p>
-&lt;p>Custom controls are created by &lt;strong>Administrators&lt;/strong> or &lt;strong>Developers&lt;/strong> who have coding experience to use Kianda&amp;rsquo;s low-code development feature, Kianda &lt;strong>Developer&lt;/strong>.&lt;/p>
+&lt;p>Custom controls are created by &lt;strong>Administrators&lt;/strong> or &lt;strong>Developers&lt;/strong> who have coding experience to use Kianda&amp;rsquo;s low-code development feature, Kianda &lt;strong>Developer&lt;/strong>. Kianda Developer uses two tabs for each widget created, one for &lt;strong>widget UI&lt;/strong> and one for the &lt;strong>widget code&lt;/strong>. There is a short explanation of the widget UI syntax below.&lt;/p>
+&lt;h3 id="handlebars-syntax">Handlebars syntax&lt;/h3>
+&lt;p>The widget UI uses syntax called &lt;strong>handlebars&lt;/strong> that can be used by multiple languages. Kianda uses &lt;strong>Ember.js&lt;/strong> framework which uses the &lt;strong>handlebars templating library&lt;/strong> to make changes to the user interface. For example in the code block below, a &lt;strong>component&lt;/strong> called &amp;lsquo;field-picker&amp;rsquo; is called using Ember and the properties are also shown below, for example &amp;lsquo;allowText=false&amp;rsquo; meaning text cannot be typed in by the user as the user must choose a field or form.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-handlebars" data-lang="handlebars">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">#if&lt;/span> &lt;span style="color:#a40000">(&lt;/span>&lt;span style="color:#000">eq&lt;/span> &lt;span style="color:#000">displayMode&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;settings&amp;#34;&lt;/span>&lt;span style="color:#a40000">)&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;label class=&amp;#34;control-label&amp;#34;&amp;gt;Image to place pictures into&amp;lt;/label&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#000">field-picker&lt;/span> &lt;span style="color:#c4a000">process&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">process&lt;/span> &lt;span style="color:#c4a000">required&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">true&lt;/span> &lt;span style="color:#c4a000">allowText&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">false&lt;/span> &lt;span style="color:#204a87;font-weight:bold">in&lt;/span>&lt;span style="color:#c4a000">cludes&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;[&amp;#34;fields/field-image&amp;#34;]&amp;#39;&lt;/span> &lt;span style="color:#c4a000">value&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">field.settings.imageDestination&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{! Allow the user to select an image field to put the frame into}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;label class=&amp;#34;control-label&amp;#34;&amp;gt;Field to display warning message in&amp;lt;/label&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#000">field-picker&lt;/span> &lt;span style="color:#c4a000">process&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">process&lt;/span> &lt;span style="color:#c4a000">required&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">true&lt;/span> &lt;span style="color:#c4a000">allowText&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">false&lt;/span> &lt;span style="color:#c4a000">value&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">field.settings.warningMessage&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{! Allow the user to select a text field to display the warning message in}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">&lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">/if&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The field picker for example is typically seen in &lt;strong>edit rule&lt;/strong> dialog boxes to allow uses to choose a form field that will be used in rule execution, for example as shown for the &lt;strong>Hide or disable&lt;/strong> rule below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/field-picker-modal-example.jpg" alt="Field picker component example">&lt;/p>
+&lt;p>Other field-related components include field-date, field-group, field-textbox and so on for the 16 predefined fields that exist. These components can be investigated using the &lt;strong>Ember inspector&lt;/strong> add-in, see &lt;a href="https://docs.kianda.com/docs/low-code/best-practices/#how-to-get-started-with-ember-inspector">Best practices&lt;/a> for details.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>If you are an experienced developer with an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role (see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>), you can create a new custom widget within Kianda by doing the following:&lt;/p>
+&lt;p>If you are an experienced developer with an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role (see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>), you can create a new custom field/control within Kianda by doing the following:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Navigate to &lt;strong>Administration&lt;/strong> in the left-hand side menu, and click on &lt;strong>Developer&lt;/strong>. This will bring you to the &lt;strong>Developer resources&lt;/strong> page.&lt;/p>
@@ -394,7 +486,7 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;/li>
 &lt;li>
 &lt;p>When you create a custom field widget, the &lt;strong>Widget UI&lt;/strong> and &lt;strong>Widget Code&lt;/strong> tabs are displayed. These two screenshots show the default code for &amp;lsquo;Widget UI&amp;rsquo; and &amp;lsquo;Widget Code&amp;rsquo;.&lt;/p>
-&lt;p>The &amp;lsquo;Widget UI&amp;rsquo; defines the HTML, handlers, expressions and more, see &lt;a href="#sample-widget-ui-code">Sample widget UI code&lt;/a> for an example of code that creates an interactive image display field. The code below uses Ember templating library, Handlebars JS as seen by {{}} below.&lt;/p>
+&lt;p>The &amp;lsquo;Widget UI&amp;rsquo; defines the HTML, handlers, expressions and more, see &lt;a href="#sample-widget-ui-code">Sample widget UI code&lt;/a> for an example of code that creates an interactive image display field. The code below uses Ember templating library, &lt;strong>Handlebars&lt;/strong> JS as seen by &lt;strong>{{}}&lt;/strong> below.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Field widget UI&lt;/strong>&lt;/em>
 &lt;img src="https://docs.kianda.com/images/widgetfieldui.gif" alt="Widget UI">&lt;/p>
 &lt;p>The &amp;lsquo;Widget Code&amp;rsquo; defines the logic and functions.&lt;/p>
@@ -410,8 +502,9 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="sample-widget-text">Sample widget text&lt;/h2>
-&lt;p>The following sample widget code creates a custom field that can be used to create an interactive form design. You will find commented code that you can try out in the UI tab and code tab of the &lt;strong>field widget&lt;/strong> editor in Kianda &lt;strong>Developer&lt;/strong>.&lt;/p>
-&lt;p>&lt;strong>Sample Custom field Widget UI&lt;/strong> code is as follows:&lt;/p>
+&lt;p>The following sample widget code creates a custom field that can be used to create an &lt;strong>interactive form design&lt;/strong>, see &lt;a href="#field-output">Field output&lt;/a> to see how the custom field displays.&lt;/p>
+&lt;p>You will find commented code that you can try out in the UI tab and code tab of the &lt;strong>field widget&lt;/strong> editor in Kianda &lt;strong>Developer&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Sample Custom field Widget UI&lt;/strong> code is as follows.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-handlebars" data-lang="handlebars">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">#if&lt;/span> &lt;span style="color:#a40000">(&lt;/span>&lt;span style="color:#000">eq&lt;/span> &lt;span style="color:#000">displayMode&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;design&amp;#34;&lt;/span>&lt;span style="color:#a40000">)&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;select class=&amp;#34;form-control&amp;#34; id=&amp;#34;entityType&amp;#34;&amp;gt;
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;option value=&amp;#34;&amp;#34;&amp;gt;Please configure my settings before use&amp;lt;/option&amp;gt; &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{! Prompt the user to set the custom fields settings when in design mode}}&lt;/span>&lt;span style="color:#000">
@@ -444,7 +537,7 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;option value=&amp;#34;https://i.etsystatic.com/9126655/r/il/a99539/2385100329/il_570xN.2385100329_l7ju.jpg&amp;#34;&amp;gt;Red&amp;lt;/option&amp;gt;
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;/select&amp;gt;
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">&lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">/if&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>**Sample Custom field widget code **&lt;/p>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Sample Custom field widget code&lt;/strong> is as follows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">edit&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span>&lt;span style="color:#204a87;font-weight:bold">function&lt;/span>&lt;span style="color:#000;font-weight:bold">(){&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">field&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;field&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
@@ -469,45 +562,51 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This particular example is saved using the steps in &lt;a href="#how-to-get-started">How to get started&lt;/a> as a field widget called &amp;lsquo;Image display&amp;rsquo;. The widget is then used in a Kianda form as seen in the next section &lt;a href="#field-output">Field output&lt;/a>.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Using the steps in the &lt;a href="#how-to-get-started">How to get started&lt;/a> section, the sample code above is saved as a field widget called &amp;lsquo;Image display&amp;rsquo;. This widget is then available in the widget list under &lt;strong>Developer resources&lt;/strong> as shown below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/image-display-widget.jpg" alt="Image display widget">&lt;/p>
+&lt;p>The widget is then used in a Kianda form as seen in the next section &lt;a href="#field-output">Field output&lt;/a>.&lt;/p>
 &lt;h3 id="field-output">Field output&lt;/h3>
-&lt;p>Users with the role &lt;strong>Designer&lt;/strong> or &lt;strong>Administrator&lt;/strong> can access the new control/field widget within Kianda Designer by going to the left-hand side pane, then &lt;strong>Administration&lt;/strong> and &lt;strong>Designer&lt;/strong>.&lt;/p>
-&lt;p>In this example, a process called &amp;lsquo;Support Query&amp;rsquo; is created, with a first form called &amp;lsquo;Query&amp;rsquo;. Three controls are added:&lt;/p>
+&lt;p>Users with the role &lt;strong>Designer&lt;/strong> or &lt;strong>Administrator&lt;/strong> can access the new control/field widget within Kianda Designer by going to the left-hand side pane, then &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong>.&lt;/p>
+&lt;p>In this example, a process called &amp;lsquo;Support Query&amp;rsquo; is created, with a first form called &amp;lsquo;Query&amp;rsquo;. Two controls are added:&lt;/p>
 &lt;ul>
-&lt;li>A &lt;strong>text box&lt;/strong> called &amp;lsquo;Warning&amp;rsquo;&lt;/li>
-&lt;li>An **image ** field called &amp;lsquo;Image 1&amp;rsquo;&lt;/li>
+&lt;li>A &lt;strong>text box&lt;/strong> called &amp;lsquo;Warning&amp;rsquo; - this field will hold a warning from the customised field when &lt;strong>Preview mode&lt;/strong> is used.&lt;/li>
+&lt;li>An &lt;strong>image&lt;/strong> field called &amp;lsquo;Image 1&amp;rsquo; - this field will hold an image from the customised field.&lt;/li>
 &lt;/ul>
+&lt;p>When the new widget is added, it will add a third customised field of field type &amp;lsquo;Image display&amp;rsquo; that will populate the other fields in the form.&lt;/p>
 &lt;p>To use the new widget:&lt;/p>
 &lt;ol>
-&lt;li>Go to &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Custom&lt;/strong> &amp;gt; &lt;strong>Widget name&lt;/strong> in this example &amp;lsquo;Image display&amp;rsquo;.&lt;/li>
+&lt;li>Go to &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Custom&lt;/strong> &amp;gt; &lt;strong>Widget name&lt;/strong> in this example &amp;lsquo;Image display&amp;rsquo;. Click on &amp;lsquo;Image display&amp;rsquo; to add it to the form.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/adding-image-display-widget.jpg" alt="Adding custom widget">&lt;/p>
 &lt;ol start="2">
 &lt;li>
-&lt;p>Configure or edit the custom control by clicking on it and completing the &lt;strong>Edit field&lt;/strong> dialog box as follows, mapping the &lt;strong>text box&lt;/strong> and &lt;strong>image&lt;/strong> fields.&lt;/p>
+&lt;p>Configure the custom control by clicking on it and completing the &lt;strong>Edit field&lt;/strong> dialog box as follows, mapping the &lt;strong>text box&lt;/strong> and &lt;strong>image&lt;/strong> fields from the form as placeholders for text and images.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/editing-custom-widget.jpg" alt="Editing custom control widget">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> and click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button">to save the process.&lt;/p>
+&lt;p>Click on &lt;strong>OK&lt;/strong> to exit the dialog box and then click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> to save the process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">to see the new control in action.&lt;/p>
+&lt;p>Click on the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button"> to see the new control in action.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>When in &lt;strong>Preview mode&lt;/strong> a warning appears telling you you are in &amp;lsquo;Preview mode&amp;rsquo;. A drop-down list is available allowing you to choose an image by colour.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/image-display-preview-mode.jpg" alt="Image display control in preview mode">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>A coloured image appears.&lt;/p>
+&lt;p>When you choose an option from the drop-down list, then a coloured image appears.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-output.jpg" alt="Custom field ouput">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>From here the user can change to another colour, upload an image, click on &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> or &lt;strong>Close&lt;/strong>.&lt;/p>
+&lt;p>From here the user can change to another colour and when complete click on &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> or &lt;strong>Close&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The process design as seen in &lt;strong>Kianda Designer&lt;/strong> is shown in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-control-form-example.jpg" alt="Custom control form example">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Custom rule widget development</title><link>https://docs.kianda.com/docs/low-code/rule-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/rule-widget/</guid><description>
+&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Custom rule development</title><link>https://docs.kianda.com/docs/low-code/rule-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/rule-widget/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>There are currently 60 predefined rules available to use in forms and processes, across 10 categories:&lt;/p>
 &lt;ul>
@@ -561,7 +660,7 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;/ol>
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about low-code go to the &lt;a href="https://docs.kianda.com/docs/low-code/">Low-code development&lt;/a> page and from there navigate to other pages on low-code practices.&lt;/p>
-&lt;p>To create other widgets go to &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">Custom field widget&lt;/a> and &lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">Custom dashboard widget&lt;/a> pages to find out more.&lt;/p></description></item><item><title>Docs: Custom dashboard widget development</title><link>https://docs.kianda.com/docs/low-code/dashboard-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/dashboard-widget/</guid><description>
+&lt;p>To create other widgets go to &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">Custom field widget&lt;/a> and &lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">Custom dashboard widget&lt;/a> pages to find out more.&lt;/p></description></item><item><title>Docs: Custom dashboard development</title><link>https://docs.kianda.com/docs/low-code/dashboard-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/dashboard-widget/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>There are currently 7 predefined dashboard widgets available to use to create illustrative and responsive pages to show how your processes are performing at a glance. These widgets are:&lt;/p>
 &lt;ul>
@@ -688,15 +787,129 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;li>
 &lt;p>In the central pane you can drill down to a particular component, for example, in the form below, a &lt;strong>Hide or disable rule&lt;/strong> is about to be added. You can see what the components are within this modal/edit rule dialog box by scrolling over the components in the central pane.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/ember-rule-editor.jpg" alt="Inspecting a rule modal using Ember inspector">&lt;/p>
-&lt;p>By highlighting the &lt;strong>rule editor component&lt;/strong> we can see the template used appear on screen.&lt;/p>
+&lt;p>By highlighting the &lt;strong>rule editor component&lt;/strong> we can see the template used.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you click on the component itself, then the properties of that component appear in the right-hand pane. For example the properties of a field-picker component are seen in the image below.&lt;/p>
+&lt;p>If you click on the component itself, then the properties of that component appear in the right-hand pane. For example the properties of a &lt;strong>field-picker component&lt;/strong> are seen in the image below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/ember-properties-example.jpg" alt="Component properties in Ember inspector">&lt;/p>
-&lt;p>In this way you can view all the components within Kianda and the properties associated, for example by default the field-picker component used in the modal in step 6 has a property &amp;lsquo;allowText&amp;rsquo; false, that is text is not typed in but the user chooses form elements from a drop-down list.&lt;/p>
+&lt;p>Using the Ember inspector you can view all the components within Kianda and the properties associated, for example by default the field-picker component used in the modal in step 6 has a property &amp;lsquo;allowText&amp;rsquo; false, that is text is not typed in but the user chooses form elements from a drop-down list.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/field-picker-example.jpg" alt="Field picker example">&lt;/p>
 &lt;/li>
-&lt;li>
-&lt;p>To read more about Ember.js go to &lt;a href="https://guides.emberjs.com/release/">https://guides.emberjs.com/release/&lt;/a> in particular the &lt;a href="https://guides.emberjs.com/release/components/">Components pages&lt;/a> as well as other &lt;strong>Core concepts&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;/ol>
+&lt;p>Further information is given on the field-picker component below. To read more about Ember.js go to &lt;a href="https://guides.emberjs.com/release/">https://guides.emberjs.com/release/&lt;/a> in particular the &lt;a href="https://guides.emberjs.com/release/components/">Components pages&lt;/a> as well as other &lt;strong>Core concepts&lt;/strong>.&lt;/p>
+&lt;h2 id="component-example">Component example&lt;/h2>
+&lt;p>The widget UI uses syntax called &lt;strong>handlebars&lt;/strong> that can be used by multiple languages. Kianda uses &lt;strong>Ember.js&lt;/strong> framework which uses the &lt;strong>handlebars templating library&lt;/strong> to make changes to the user interface. For example in the code block below, the &amp;lsquo;field-picker&amp;rsquo; component is called using Ember and the properties are also shown below, such as &amp;lsquo;allowText=false&amp;rsquo; and &amp;lsquo;required=true&amp;rsquo;, where the field has to be filled out for the form to be submitted.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-handlebars" data-lang="handlebars">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">#if&lt;/span> &lt;span style="color:#a40000">(&lt;/span>&lt;span style="color:#000">eq&lt;/span> &lt;span style="color:#000">displayMode&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;settings&amp;#34;&lt;/span>&lt;span style="color:#a40000">)&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;label class=&amp;#34;control-label&amp;#34;&amp;gt;Image to place pictures into&amp;lt;/label&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#000">field-picker&lt;/span> &lt;span style="color:#c4a000">process&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">process&lt;/span> &lt;span style="color:#c4a000">required&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">true&lt;/span> &lt;span style="color:#c4a000">allowText&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">false&lt;/span> &lt;span style="color:#204a87;font-weight:bold">in&lt;/span>&lt;span style="color:#c4a000">cludes&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;[&amp;#34;fields/field-image&amp;#34;]&amp;#39;&lt;/span> &lt;span style="color:#c4a000">value&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">field.settings.imageDestination&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{! Allow the user to select an image field to put the frame into}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;label class=&amp;#34;control-label&amp;#34;&amp;gt;Field to display warning message in&amp;lt;/label&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#000">field-picker&lt;/span> &lt;span style="color:#c4a000">process&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">process&lt;/span> &lt;span style="color:#c4a000">required&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">true&lt;/span> &lt;span style="color:#c4a000">allowText&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">false&lt;/span> &lt;span style="color:#c4a000">value&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">field.settings.warningMessage&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{! Allow the user to select a text field to display the warning message in}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">&amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">&lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">/if&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The field picker for example is typically seen in &lt;strong>edit rule&lt;/strong> dialog boxes to allow uses to choose a form field that will be used in rule execution, for example as shown for the &lt;strong>Hide or disable&lt;/strong> rule below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/field-picker-modal-example.jpg" alt="Field picker component example">&lt;/p>
+&lt;p>Other field-related components include field-date, field-group, field-textbox and so on for the 16 predefined fields that exist. A table of field-related components is listed below with attributes that can be found using &lt;strong>Ember inspector&lt;/strong>.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Field-related components&lt;/strong>&lt;/em>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Component&lt;/strong>&lt;/th>
+&lt;th>Example of attributes&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>field-base&lt;/td>
+&lt;td>field: , displayMode: design &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-button&lt;/td>
+&lt;td>isFooter: true, field: &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-component&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-date&lt;/td>
+&lt;td>tagName: , field: [Object] &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-dialog&lt;/td>
+&lt;td>tagName: , field: [Object] &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-file&lt;/td>
+&lt;td>tagName: , field: [Object] &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-globalpayments&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-group&lt;/td>
+&lt;td>tagName: , field: [Object] &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-image&lt;/td>
+&lt;td>tagName: , field: [Object] &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-imagegallery&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-link&lt;/td>
+&lt;td>tagName: , field: [Object] &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-list&lt;/td>
+&lt;td>tagName: , field: [Object] &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-number&lt;/td>
+&lt;td>tagName: , field: [Object] &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-panel&lt;/td>
+&lt;td>field: [Object], displayMode: design &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-picker&lt;/td>
+&lt;td>required: true, selectForms: true &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-signature&lt;/td>
+&lt;td>tagName: , field: [Object] &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-table-row&lt;/td>
+&lt;td>tagName: tr, field: &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-table&lt;/td>
+&lt;td>tagName: , field: [Object], &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-text&lt;/td>
+&lt;td>placeholder: [Object], required: [Object] &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-textbox&lt;/td>
+&lt;td>tagName: , field: [Object] &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-toggle&lt;/td>
+&lt;td>tagName: , field: [Object], &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>field-userpicker&lt;/td>
+&lt;td>tagName: , field: [Object], &amp;hellip;&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>table-row&lt;/td>
+&lt;td>tagName: tr, field: &amp;hellip;.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>
