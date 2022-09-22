@@ -36,7 +36,7 @@ If the input objects contains other objects or arrays, for example:
 }
 ```
 
-A dot notation can be used to access the nested property as follows:
+A dot notation can be used to access the property of the 'person' object as follows:
 
 `<p>{{person.firstname}} {{person.surname}}</p>`
 

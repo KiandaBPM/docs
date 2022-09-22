@@ -16,7 +16,7 @@ The page [Expression builder](docs/platform/rules/general/expression-builder/) p
 
 ![Expression example](/images/expression-example.gif)
 
- **ProcessLink()** is a function that will return a link to that particular process instance. You can use JavaScript functions to make advanced expressions throughout your Kianda forms, see below for how to get started.
+ **ProcessLink()** is a function that will return a link to that particular process instance. You can use **any JavaScript functions** in the expression field to make advanced expressions throughout your Kianda forms, see below for how to get started.
 
 ## How to get started with Javascript expressions ##
 

@@ -77,8 +77,6 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 1. To **disable** a rule click the slider across beside the rule name. 
 
-![Disable a rule](/images/disable-rule.jpg)
-
 2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
 
 3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
