@@ -146,7 +146,7 @@ firstname: &amp;#34;Ryan&amp;#34;
 surname: &amp;#34;B&amp;#39;Oul&amp;#34;
 },
 }
-&lt;/code>&lt;/pre>&lt;p>A dot notation can be used to access the nested property as follows:&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>A dot notation can be used to access the property of the &amp;lsquo;person&amp;rsquo; object as follows:&lt;/p>
 &lt;p>&lt;code>&amp;lt;p&amp;gt;{{person.firstname}} {{person.surname}}&amp;lt;/p&amp;gt;&lt;/code>&lt;/p>
 &lt;h2 id="handlebar-basics">Handlebar basics&lt;/h2>
 &lt;p>As shown above, Handlebar templates contain &lt;strong>static HTML&lt;/strong> and &lt;strong>dynamic content&lt;/strong> inside Handlebars expressions.&lt;/p>
@@ -195,16 +195,107 @@ surname: &amp;#34;B&amp;#39;Oul&amp;#34;
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Clicking on &lt;strong>Add column&lt;/strong> allows you to add in code to create your own look and feel on the widget.&lt;/p>
+&lt;p>Clicking on &lt;strong>Add column&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-column-button.jpg" alt="Add column button"> opens a code editor that allows you to add in code/modify existing code.&lt;/p>
+&lt;ul>
+&lt;li>In the &lt;strong>Edit List Column&lt;/strong> dialog box, give the new column a &lt;strong>Title&lt;/strong> and add in/change code by clicking in the central panel.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-column-code.jpg" alt="Edit column code">&lt;/p>
+&lt;ul>
+&lt;li>There is an option to &lt;strong>Hide column&lt;/strong> by checking the checkbox. The example above is explained in more detail in the section below &lt;a href="#example-of-list-widget-customisation">Example of list widget customisation&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;/li>
-&lt;/ol></description></item><item><title>Docs: Javascript expressions</title><link>https://docs.kianda.com/docs/low-code/javascript-expressions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/javascript-expressions/</guid><description>
+&lt;li>
+&lt;p>Clicking on &lt;strong>Add action&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-action-button.jpg" alt="Add action button"> opens the &lt;strong>Add List Action&lt;/strong> dialog box. This box allows you to add a dashboard button that when clicked will trigger rule execution.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-list-action.jpg" alt="Add List Action dialog box">&lt;/p>
+&lt;p>The dialog box has four fields:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select the field or rule to trigger&lt;/strong> - here you can select a form field or rule attached to a field to execute rules from the dashboard by clicking on a button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Button icon&lt;/strong> - choose from hundreds of icons for your dashboard button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Button color&lt;/strong> - choose from a range of colours for your dashboard button.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>​ For example if the &amp;lsquo;Submit&amp;rsquo; button for a form is chosen for the above, then all rules attached to that button can be executed by the click of a button from the dashboard.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-action-button-example.jpg" alt="Add action button example">&lt;/p>
+&lt;p>​ For example for the process instance &amp;lsquo;po-approval-8&amp;rsquo; above, even though this process is completed, rules/actions linked to a form field can be triggered again simply by clicking on the button in the dashboard.&lt;/p>
+&lt;ol start="9">
+&lt;li>
+&lt;p>When you are finished editing code, click on &lt;strong>OK&lt;/strong> or alternatively click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Make sure to save changes to the dashboard page by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button">in the top menu. A pop-up message saying &amp;lsquo;&lt;strong>Page saved successfully&lt;/strong>&amp;rsquo; will display.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="example-of-list-widget-customisation">Example of list widget customisation&lt;/h2>
+&lt;p>In the image above for step 8, &lt;strong>Add column&lt;/strong>, you can add code that adds a button to a dashboard display.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-handlebars" data-lang="handlebars">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">&amp;lt;div class=&amp;#34;panel panel-primary&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;button class=&amp;#34;btn btn-warning&amp;#34;&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">#if&lt;/span> &lt;span style="color:#a40000">(&lt;/span>&lt;span style="color:#000">eq&lt;/span> &lt;span style="color:#000">row.properties.InternalStatus&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;completed&amp;#34;&lt;/span>&lt;span style="color:#a40000">)&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;span class=&amp;#34;fa fa-check-circle&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">else&lt;/span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#a40000">(&lt;/span>&lt;span style="color:#000">eq&lt;/span> &lt;span style="color:#000">row.properties.InternalStatus&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;PO Request&amp;#34;&lt;/span>&lt;span style="color:#a40000">)&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;span class=&amp;#34;fa fa-question-circle&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">else&lt;/span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#a40000">(&lt;/span>&lt;span style="color:#000">eq&lt;/span> &lt;span style="color:#000">row.properties.InternalStatus&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Approval&amp;#34;&lt;/span>&lt;span style="color:#a40000">)&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;span class=&amp;#34;fa fa-thumbs-up&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">else&lt;/span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#a40000">(&lt;/span>&lt;span style="color:#000">eq&lt;/span> &lt;span style="color:#000">row.properties.InternalStatus&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Supplier Invoice&amp;#34;&lt;/span>&lt;span style="color:#a40000">)&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;span class=&amp;#34;fa fa-newspaper-o&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">else&lt;/span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#a40000">(&lt;/span>&lt;span style="color:#000">eq&lt;/span> &lt;span style="color:#000">row.properties.InternalStatus&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Payment&amp;#34;&lt;/span>&lt;span style="color:#a40000">)&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;span class=&amp;#34;fa fa-money&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">/if&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;/button&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In the code above the new column will show a button based on a field that returns the status of a process instance. This particular process has 5 different states:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Four states&lt;/strong> that &lt;strong>relate to the current form&lt;/strong> that the process instance is in, these four forms are named above: &amp;lsquo;PO Request&amp;rsquo;, &amp;lsquo;Approval&amp;rsquo;, &amp;lsquo;Supplier Invoice&amp;rsquo;, &amp;lsquo;Payment&amp;rsquo;&lt;/li>
+&lt;li>&lt;strong>One state&lt;/strong> that indicates that a process instance is complete, that is all four forms have been completed, so the process status is &amp;lsquo;&lt;strong>completed&lt;/strong>&amp;rsquo;.&lt;/li>
+&lt;/ul>
+&lt;p>These states are derived from the system field &amp;lsquo;Status&amp;rsquo; (see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/common-fields/">Process Common Fields&lt;/a> which is mapped to a process form field called &amp;lsquo;Internal status&amp;rsquo;. The &lt;strong>unique ID/name&lt;/strong> of this form field is &lt;code>InternalStatus&lt;/code> as seen in the code above.&lt;/p>
+&lt;h3 id="use-of-font-awesome-icons">Use of Font Awesome icons&lt;/h3>
+&lt;p>As &lt;a href="https://fontawesome.com/v4/icons/">Font Awesome icons&lt;/a> are already loaded into Kianda, then we can take advantage of the iconography and map imagery to process instance states. Depending on the process instance status described in the section above, then different icons will appear. The icons chosen in this example are:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Dashboard Icon&lt;/th>
+&lt;th>Process Instance Status&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;img src="https://docs.kianda.com/images/question-circle-icon.jpg" alt="Question circle icon">&lt;/td>
+&lt;td>PO Request&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://docs.kianda.com/images/thumbs-up-icon.jpg" alt="Thumbs up icon">&lt;/td>
+&lt;td>Approval&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://docs.kianda.com/images/news-icon.jpg" alt="Newspaper icon">&lt;/td>
+&lt;td>Supplier Invoice&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://docs.kianda.com/images/money-icon.jpg" alt="Money icon">&lt;/td>
+&lt;td>Payment&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;img src="https://docs.kianda.com/images/check-circle-icon.jpg" alt="Check circle icon">&lt;/td>
+&lt;td>Completed&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>When the steps in &lt;a href="#how-to-get-started-with-list-widget-customisation">How to get started&lt;/a> are followed and the code is added using the &lt;strong>Add column&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-column-button.jpg" alt="Add column button"> button then the resulting dashboard looks like this.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/customised-list-widget.jpg" alt="Customised list widget">&lt;/p>
+&lt;p>You could also use JavaScript to add actions to the buttons in the dashboard. These could be functions set in the Global JavaScript file, see &lt;a href="https://docs.kianda.com/docs/low-code/global-javascript-file/">Global JavaScript file&lt;/a> for details.&lt;/p></description></item><item><title>Docs: Javascript expressions</title><link>https://docs.kianda.com/docs/low-code/javascript-expressions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/javascript-expressions/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>&lt;strong>Expressions&lt;/strong> are available for use extensively throughout the Kianda platform, both in &lt;strong>controls&lt;/strong> like text box, number and rich text, as well as &lt;strong>rules&lt;/strong> like Send email and Set form field.&lt;/p>
 &lt;p>The use of expressions allows you to cleverly manipulate data to create new constructs that can be used within processes. For example if an &amp;lsquo;Onboarding process&amp;rsquo; requires that a new hire completes a &amp;rsquo;new employee form&amp;rsquo; filling out their &amp;lsquo;firstname&amp;rsquo; and &amp;rsquo;lastname&amp;rsquo;, it may be useful to combine the two input strings to create a new ID for the employee that combines the data from each field.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/expression-id-example.jpg" alt="Expression new employee ID example">&lt;/p>
 &lt;p>The page &lt;a href="docs/platform/rules/general/expression-builder/">Expression builder&lt;/a> provides an introduction to expressions and shows one example of Expressions in use in a Send email rule to automate how emails are sent. The example simply uses the &lt;strong>[identifier]&lt;/strong> or unique name from form fields to populate the body text of the email.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/expression-example.gif" alt="Expression example">&lt;/p>
-&lt;p>&lt;strong>ProcessLink()&lt;/strong> is a function that will return a link to that particular process instance. You can use JavaScript functions to make advanced expressions throughout your Kianda forms, see below for how to get started.&lt;/p>
+&lt;p>&lt;strong>ProcessLink()&lt;/strong> is a function that will return a link to that particular process instance. You can use &lt;strong>any JavaScript functions&lt;/strong> in the expression field to make advanced expressions throughout your Kianda forms, see below for how to get started.&lt;/p>
 &lt;h2 id="how-to-get-started-with-javascript-expressions">How to get started with Javascript expressions&lt;/h2>
 &lt;p>Expressions are recognisable in Kianda from the &lt;strong>Expressions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png" alt="Expressions"> found in &lt;strong>Edit rule dialog boxes&lt;/strong> and controls like &lt;strong>text box&lt;/strong>, &lt;strong>number&lt;/strong> and &lt;strong>rich text&lt;/strong>.&lt;/p>
 &lt;p>Within rules, expressions can be created using the &lt;strong>Expression builder&lt;/strong> where you can &lt;strong>Add field to an expression&lt;/strong> or use the handy &lt;strong>Reference&lt;/strong> guide to get a list of commonly used functions, such as &lt;strong>ProcessLink()&lt;/strong>.&lt;/p>
