@@ -120,13 +120,10 @@ The 'Widget Code' is written in JavaScript and defines the logics and functions.
 ```javascript
 {
  edit:function(){
- 
  },
  display:function(){
- 
  },
  settings:function(){
- 
  }
 }
 ```
