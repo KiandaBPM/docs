@@ -10,19 +10,7 @@ Kianda’s low code development environment provides developers with a graphical
 
 Kianda Developer can be utilised to implement HTTP requests and [API](/docs/apis/) calls to allow for real-time data interactions. To learn more about low-code development, see [What is Low-Code Development?](/docs/getting-started/welcome/low-code/).
 
-Using your **administrator** role, there are several ways you can customise the Kianda platform as a developer, typically by:
 
-1. Editing the **Global JavaScript file**
-
-2. Editing the **Global CSS file**
-
-3. **Building widgets** for rules, fields, dashboards and data connectors
-
-4. **Customising list widgets** to present data in dashboards
-
-5. Creating beautiful **rich text** for emails and forms
-
-In addition to the above customisations, you can use your JavaScript knowledge to create smart **expressions** that can be used in text box, number and rich text fields, as well as **anywhere that uses rich text** like Send email rule body text for emails, Meeting request rule and rich text widget for dashboards. 
 
 
 ## Why choose low-code development? 

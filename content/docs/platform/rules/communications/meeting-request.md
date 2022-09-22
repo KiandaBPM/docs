@@ -82,9 +82,9 @@ In advance of using this rule, you need to have **created one or more forms, com
 
 
         - If you choose **Yes** then you must click into the field under **Field to store tracking event (Open, Click, Bounce, Spam)** and choose a field from a form to store the event.
-
+    
           ![Enable tracking](/images/send-email-tracking.jpg)
-
+    
         * This option allows you to track the email after it is sent. All of these events, Open, Click, Bounce and Spam will be tracked.
 
 

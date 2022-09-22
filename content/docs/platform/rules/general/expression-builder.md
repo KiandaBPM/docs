@@ -16,7 +16,7 @@ For example, expressions could be used in the body of an automated email sent us
 
 ***Expression example***
 
-![img](https://academy.kianda.com/wp-content/uploads/2022/03/expressioneg-1.gif)
+![Expression example](/images/expression-example.gif)
 
 In the example above, **[RequesterName]** and **[category]** are identifiers, that is unique IDs for form fields. **ProcessLink()** is a function that will return a link to that process instance. Using the expressions above in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient.
 
@@ -28,7 +28,7 @@ Within rules, expressions can be created using the **Expression builder** where 
 
 ***Expression builder***
 
-![img](https://academy.kianda.com/wp-content/uploads/2022/03/expressionbuilder2.gif)
+![Expression builder example in action](/images/expression-builder-eg.gif)
 
 Let's look at an example of using an expression in the **Body** section of an email being sent using the **Send email** rule:
 
@@ -58,7 +58,7 @@ Let's look at an example of using an expression in the **Body** section of an em
 
 ## Expression functions
 
-All JavaScript expressions and functions can be used in the Expression builder to create the impact you want.
+All JavaScript expressions and functions can be used in the Expression builder to create the impact you want, see [Javascript expressions](/docs/low-code/javascript-expressions/) for more details.
 
 In addition to defining your own expressions there is a set list of expressions found under **References**, see table below for meaning.
 
@@ -88,6 +88,8 @@ In addition to defining your own expressions there is a set list of expressions 
 To find out more about rule implementation, go to the main [Rules](/docs/platform/rules/) page and then click on the links to the different rule categories.
 
 To see how expressions are used in controls such as Number fields, go to [Number control](/docs/platform/controls/input/number/).
+
+To learn more about how to use JavaScript expressions in expression builder go to [Javascript expressions](/docs/low-code/javascript-expressions/) for more details.
 
 
 

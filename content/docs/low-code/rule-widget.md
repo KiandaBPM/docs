@@ -1,5 +1,5 @@
 ---
-title: "Custom rule widget development"
+title: "Custom rule development"
 weight: 9
 typora-root-url: ..\..\..\static
 ---

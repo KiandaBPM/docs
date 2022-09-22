@@ -60,3 +60,5 @@ Key things to note:
 ### What's next  ![Idea icon](/images/18.png) ###
 
 You can create a **Dashboard page** to show the status completion of the process.
+
+This process is available as a downloadable .kianda file here. 

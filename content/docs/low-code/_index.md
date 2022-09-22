@@ -5,31 +5,41 @@ weight: 4
 typora-root-url: ..\..\..\static
 ---
 
-Kianda comes with several pre-defined field, rule and dashboard widgets. In case you want to create something else to satisfy your specific needs you can create your own custom widget if you have some level of development skills. Kianda uses EmberJS to build modern web applications, and in particular the Handlebars templating library to power the application's user interface.
+## Introduction ##
+
+As Kianda is built using front-end technologies like **CSS** and **JavaScript**, you can use your software development skills to tweak your given workspace design and functionality by editing files found under the [Subscription](/docs/platform/administration/subscription/) function. More specifically, Kianda uses **Ember.js**, an open-source JavaScript web framework used to allow you to build highly interactive applications that work on any device. Ember uses the **Handlebars** templating library to build the user interface using static HTML and dynamic content, see [Best practices](/docs/low-code/best-practices/) and [Templating basics](/docs/low-code/templating-basics/) for more information.
+
+***Front-end technology stack***
+
+<img src="/images/tech-stack.jpg" alt="Front-end technology stack" style="zoom:25%;" />
+
+You don't need to be an expert in Ember or Handlebars to develop content in Kianda. Kianda's low-code development user interface allows you to build new customised widgets without having to write extensive pieces of code. Kianda's **Developer** resources provide the possibility to create these custom widgets for example, a new field type, by building on Kianda's existing library of components. 
+
+## Ways of customising your organisation's workspace
+
+Building custom widgets is just one example of how you can use your skills to change your organisation's workspace. Using your **administrator** role, and accessing **Administration** functions there are several ways you can customise the Kianda platform as a developer, typically by:
+
+1. Editing the [**Global JavaScript file**](/docs/low-code/global-javascript-file/)
+
+2. Editing the [**Global CSS file**](/docs/low-code/global-css/)
+
+3. **Building widgets** for [rules](/docs/low-code/rule-widget/), [fields](/docs/low-code/field-widget/), [dashboards](/docs/low-code/dashboard-widget/) and [data connectors](/docs/low-code/client-connector/)
+
+4. [**Customising list widgets**](/docs/low-code/list-widget-template/) to present data in dashboards
+
+5. Creating beautiful [**rich text**](/docs/low-code/global-css/#process-and-dashboard-specific-css) for emails and forms
+
+In addition to the above customisations, you can use your JavaScript knowledge to create smart [**expressions**](/docs/low-code/javascript-expressions/) that can be used in text box, number and rich text fields, as well as **anywhere that uses rich text** like [Send email rule](/docs/platform/rules/communications/send-email/) body text for emails, [Meeting request rule](/docs/platform/rules/communications/meeting-request/) and rich text widget for dashboards. 
+
+Click on the links above to get more information on the areas mentioned. Building custom widgets is introduced below.
 
 
 
-## EmberJS templating basics
+### Widget development basics
 
-With Handlebars you can quickly build web applications that are made up of different components. Handlebar templates contain static HTML and dynamic content inside Handlebars expressions, which are summoned with double curly braces: {{ }}
+Kianda comes with several pre-defined field, rule, data connector and dashboard widgets. In case you want to create something else to satisfy your specific needs you can create your own custom widget if you have some level of development skills.
 
-Dynamic content inside a Handlebars expression is rendered with data-binding. This means if you update a property, your usage of that property in a template will be automatically updated to the latest value.
-
-### Helpers 
-
-Ember gives the ability to write your helpers, to bring a minimum of logic into Ember templating. For example, let's say you would like the ability to add a few numbers together, without needing to define a computed property everywhere you would like to do so.
-
-***Helper example***![Helpers](/images/write-our-own-helpers.png)
-
-#### Conditionals
-
-Statements like **if** and **unless** are implemented as built-in helpers. Helpers can be invoked three ways; inline invocation, nested invocation and block invocation. For more details, click on the following link https://guides.emberjs.com/v2.18.0/templates/conditionals/.
-
-
-
-## Widget development basics
-
-Kianda offers a user-friendly interface to create custom widgets in a few minutes. A custom widget could be a 'Field' widget or a 'Rule widget'. Below we have an introduction video on how to create a custom field widget and following to this video we explain with an example on how to build a custom widget.
+Kianda offers a user-friendly interface, **Developer**, to create custom widgets in a few minutes. A custom widget could be a 'Field' widget or a 'Rule widget'. Below we have an introduction video on how to create a custom field widget.
 
 <video width="100%" style="width:100%" controls>
     <source src="/videos/Creating a widget.mp4">
@@ -39,31 +49,52 @@ Kianda offers a user-friendly interface to create custom widgets in a few minute
 
 
 
-### Field widget
+### Example: Field widget
 
-The two images below display the default code for 'Widget UI' and 'Widget Code'.
+The code blocks below display the default code for 'Widget UI' and 'Widget Code'.
 
-The 'Widget UI' defines the HTML, handlers, expressions and more.
+The 'Widget UI' uses [Handlebars](/docs/low-code/templating-basics/) syntax and defines the HTML, handlers, expressions and more.
 
-![Widget-UI](/images/widget-ui.PNG)
+```handlebars
+{{#if (eq displayMode "design")}}
+	{{input required=field.required maxlength="4" type="text" value=field.text class="form-control"}}
+{{/if}}
 
-The 'Widget Code' defines the logics and functions.
+{{#if (eq displayMode "edit")}}
+	{{input required=field.required maxlength="4" type="text" value=field.text class="form-control"}}
+{{/if}}
 
-![Widget-code](/images/widget-code.PNG)
+{{#if (eq displayMode "settings")}}
+	
+{{/if}}
+
+{{#if (eq displayMode "display")}}
+	<p class="text-muted">{{field.text}}</p>
+{{/if}}
+```
 
 
 
-### Rule widget
+The 'Widget Code' is written in JavaScript and defines the logics and functions.
 
-The two images below display the default code for 'Widget UI' and 'Widget Code'.
+```javascript
+{
+ edit:function(){
+ 
+ },
+ display:function(){
+ 
+ },
+ settings:function(){
+ 
+ }
+}
+```
 
-![Rule widget UI](/images/rulewidgetui150.PNG)
 
 
+For more information on the other areas of customisation/widget development, click on the links below:
 
-## List widget custom fields
-
-The other widget types are:
-
-- Rules
-- Dashboards
+- [Rule development](/docs/low-code/rule-widget/)
+- [Dashboards](/docs/low-code/dashboard-widget/)
+- [Data connectors](/docs/low-code/client-connector/)

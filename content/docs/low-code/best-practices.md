@@ -31,15 +31,68 @@ To get started using the Ember inspector:
 
    ![Inspecting a rule modal using Ember inspector](/images/ember-rule-editor.jpg)
 
-   By highlighting the **rule editor component** we can see the template used appear on screen. 
+   By highlighting the **rule editor component** we can see the template used.
 
-7. If you click on the component itself, then the properties of that component appear in the right-hand pane. For example the properties of a field-picker component are seen in the image below.
+7. If you click on the component itself, then the properties of that component appear in the right-hand pane. For example the properties of a **field-picker component** are seen in the image below.
 
    ![Component properties in Ember inspector](/images/ember-properties-example.jpg)
 
-   In this way you can view all the components within Kianda and the properties associated, for example by default the field-picker component used in the modal in step 6 has a property 'allowText' false, that is text is not typed in but the user chooses form elements from a drop-down list.
+   Using the Ember inspector you can view all the components within Kianda and the properties associated, for example by default the field-picker component used in the modal in step 6 has a property 'allowText' false, that is text is not typed in but the user chooses form elements from a drop-down list.
 
    ![Field picker example](/images/field-picker-example.jpg)
 
-8. To read more about Ember.js go to https://guides.emberjs.com/release/ in particular the [Components pages](https://guides.emberjs.com/release/components/) as well as other **Core concepts**.
+Further information is given on the field-picker component below. To read more about Ember.js go to https://guides.emberjs.com/release/ in particular the [Components pages](https://guides.emberjs.com/release/components/) as well as other **Core concepts**.
+
+## Component example
+
+The widget UI uses syntax called **handlebars** that can be used by multiple languages. Kianda uses **Ember.js** framework which uses the **handlebars templating library** to make changes to the user interface. For example in the code block below, the 'field-picker' component is called using Ember and the properties are also shown below, such as 'allowText=false' and 'required=true', where the field has to be filled out for the form to be submitted.
+
+   ```handlebars
+   {{#if (eq displayMode "settings")}}
+   	<div class="form-group">
+   	<label class="control-label">Image to place pictures into</label>
+       {{field-picker process=process required=true allowText=false includes='["fields/field-image"]' value=field.settings.imageDestination}} {{! Allow the user to select an image field to put the frame into}}
+       <label class="control-label">Field to display warning message in</label>
+   	{{field-picker process=process required=true allowText=false value=field.settings.warningMessage}} {{! Allow the user to select a text field to display the warning message in}}
+   </div>
+   {{/if}}
+   ```
+
+The field picker for example is typically seen in **edit rule** dialog boxes to allow uses to choose a form field that will be used in rule execution, for example as shown for the **Hide or disable** rule below.
+
+   ![Field picker component example](/images/field-picker-modal-example.jpg)
+
+Other field-related components include field-date, field-group, field-textbox and so on for the 16 predefined fields that exist. A table of field-related components is listed below with attributes that can be found using **Ember inspector**.
+
+***Field-related components***
+
+| **Component**        | Example of attributes                         |
+| -------------------- | --------------------------------------------- |
+| field-base           | field: , displayMode: design ...              |
+| field-button         | isFooter: true, field:  ...                   |
+| field-component      |                                               |
+| field-date           | tagName: , field: [Object] ...                |
+| field-dialog         | tagName: , field: [Object] ...                |
+| field-file           | tagName: , field: [Object] ...                |
+| field-globalpayments |                                               |
+| field-group          | tagName: , field: [Object] ...                |
+| field-image          | tagName: , field: [Object] ...                |
+| field-imagegallery   |                                               |
+| field-link           | tagName: , field: [Object] ...                |
+| field-list           | tagName: , field: [Object] ...                |
+| field-number         | tagName: , field: [Object] ...                |
+| field-panel          | field: [Object], displayMode: design ...      |
+| field-picker         | required: true, selectForms: true ...         |
+| field-signature      | tagName: , field: [Object] ...                |
+| field-table-row      | tagName: tr, field: ...                       |
+| field-table          | tagName: , field: [Object], ...               |
+| field-text           | placeholder: [Object], required: [Object] ... |
+| field-textbox        | tagName: , field: [Object] ...                |
+| field-toggle         | tagName: , field: [Object], ...               |
+| field-userpicker     | tagName: , field: [Object], ...               |
+| table-row            | tagName: tr, field: ....                      |
+
+   
+
+
 

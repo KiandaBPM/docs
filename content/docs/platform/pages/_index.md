@@ -181,7 +181,7 @@ To add a layout container to a Dashboard:
 
 
 
-### How to add widgets to a Dashboard page ###
+## How to add widgets to a Dashboard page ##
 
 To add a widget to a Dashboard page:
 
