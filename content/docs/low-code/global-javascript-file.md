@@ -24,12 +24,38 @@ To use a Global JavaScript file:
 
 4. Click on the **ellipsis** button ![Ellipsis button](/images/expression.jpg) beside the **Global JavaScript** field to access the file details. Alternatively click on **Browse** to browse for a file on a PC or network.
 
-5. The **JavaScript Editor** opens, allowing you to add new code or edit code if your organisation has already added in functions. Click on the Editor screen to show the code. The image below shows how a sample of code can be added/created.
+5. The **JavaScript Editor** opens, allowing you to add new code or edit code if your organisation has already added in functions. Click on the Editor screen to show the code or to start adding code. The image below shows how a sample of code can be added/created.
 
    ![Javascript editor sample code](/images/javascript-editor.jpg)
 
 6. Add or modify code as needed and when complete click on **OK** or alternatively click on **Close** at any time to close the dialog box.
 
-7. Click on **Save Changes** to save changes for the Subscription Details page and click on **Back** to go back to the Subscription main page.
+7. A **URL is generated** for the Global JavaScript file found in the Global JavaScript file field.
 
+8. Click on **Save Changes** to save changes for the Subscription Details page and click on **Back** to go back to the Subscription main page.
+
+By adding functions added to the file will are creating a library of reusable functions that can be made available globally within your application.
+
+### Using your JavaScript global functions
+
+Here is an example of code found in a JavaScript file:
+
+```javascript
+function setProjectHeader(elementId) {
+  var dropdown # $('filter.dropdown [data-role=dropdownlist]').data("OrgDropDownList");
+  dropdown.bind("cascade", function () {
+    var value = dropdown.value();
+    var text = dropdown.text();
+    var headerElement = document.getElementById(elementId);
+    if (headerElement) {
+      headerElement.innerHTML = text;
+    }
    
+  }
+  );
+}
+```
+
+The function `setProjectHeader`is used to locate an element on screen using JQuery where the function locates the element and sets a specific header ID. The function is used in combination with a filter drop-down list and will allow you to set the header. This can be used for example when selecting a particular filter in a dashboard, to set text on a particular header element in that dashboard.
+
+This function can be attached to a page so when the page loads, the `setProjectHeader` function executes and automatically changes the header of the project.

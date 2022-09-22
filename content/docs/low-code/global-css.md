@@ -4,7 +4,20 @@ weight: 6
 typora-root-url: ..\..\..\static
 ---
 
-Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace **Administrator** you can add a **Global CSS File** to make changes to the look and feel of the site as well as processes. The **Global CSS file editor** exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site, see [Subscription](/docs/platform/administration/subscription/) for an introduction to the **Subscription** function.
+Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace **Administrator** you can add a **Global CSS File** to make changes to the **look and feel** of the site as well as the **functionality of processes**. You can use the file to **target** very specific details, for example a button in a particular process as shown below. This code will create specific styling for a button that is defined in a form in a process using Kianda **Designer**.
+
+```css
+`div[data-name="btn-manager-Approve"], div[data-name="btn_approve"]{
+    color: red;
+    background-color: pink;
+    padding-bottom: 1px;
+    padding-top: 18px
+}
+```
+
+CSS can be used not just for look and feel but for functionality within a process, for example to hide a button via CSS and then create a button via JavaScript for a particular action.
+
+The **Global CSS file editor** exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site, see [Subscription](/docs/platform/administration/subscription/) for an introduction to the **Subscription** function.
 
 
 
@@ -116,15 +129,13 @@ This function also allows you to **pass** **data** into the modal for use within
 - `isNew` parameter - where **`true` -  creates a new process instance**, otherwise choose **`false` to open an existing process instance in preview mode**
 - **`params`** - **URL parameters** appended to the URL, for example 'SignUpform' as used above where formName parameter is reserved; if the form is active, the user can be directed to the specified form
 
-
-
 Now that you have been introduced to a variety of design considerations, go to the next section to learn how to use the [Global CSS Editor](#how-to-get-started-with-global-css).
 
 
 
 ## How to get started with Global CSS ##
 
-To use a Global CSS file:
+To create a global design and give you the flexibility to change the workspace, use the Global CSS file. You can use the file to target for example buttons in a particular application.
 
 1. As an **administrator**, go to **Administration** > **Subscription**.
 
