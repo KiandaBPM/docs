@@ -21,3 +21,38 @@ Take a table **Employees** as an example, if this employee table contains data a
 When establishing a connection using SAP data connector, you are creating a connection with a **Schema** from you SAP system. Before continuing make sure that your SAP system has a **schema** you can connect to. 
 
 You also need to create a Kianda Cloud Connect connection with your device which will be used in the settings when filling out the SAP connector settings. To learn how to create a connection with you device using Kianda Cloud Connect, visit [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
+
+## How to get started
+
+1. From the Kianda home page, click on **Administration** > **Data sources**.
+
+2. Click on **+ Add new** button ![Add new data connector button](/images/addnew.png) and choose **SAP** from the list of datasources provided.
+
+3. Fill out fields in the **SAP system details** screen.
+
+   ![SQL Server details page](/images/sap-details.jpg)
+
+   Choose from the edit options:
+
+   - **Application server** -
+   - **Instance number** -
+   - **System ID** - 
+   - **Client** - 
+   - **Username** - 
+   - **Password** - 
+   - **SAP BAPIs** - 
+   - **SAP Tables** - 
+   - **Use Kianda Cloud Connect** - by default this option is disabled, the cloud connect is used to **create a connection** between your **local device** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/). This option must be enabled to successfully establish a connection between a SAP system and Kianda.
+     - **Connectors** - displays all available connector PC's that have a **connection established** with your **Kianda** subscription. 
+   - **Status** - represents the current status of the connection.
+     - **incomplete** - means that the details of the connector were not fully completed
+     - **test failed** - means that the details of the connector are incorrect and the connection has failed.
+     - **ready** - means that the connector has successfully connected and its ready to be used.
+
+4. When you have added the SAP system details, you are ready to test your connection and add security. At the bottom of the **SAP system details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
+
+5. Click on **Save** ![Save connection button](/images/save-connection.jpg) to save the connection and you will receive a notification saying **Details saved successfully**.
+
+6. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
+
+7. Click on **Close** to close the details page and return to the data source management main view.
