@@ -38,10 +38,10 @@ You also need to create a Kianda Cloud Connect connection with your device which
    - **Instance number** -
    - **System ID** - 
    - **Client** - 
-   - **Username** - 
-   - **Password** - 
-   - **SAP BAPIs** - 
-   - **SAP Tables** - 
+   - **Username** - enter a username used to connect to your SAP system.
+   - **Password** - enter in the password used to connect to your SAP system.
+   - **SAP BAPIs** - enter in BAPI functions that you want access too when performing BAPI functionalities on your SAP system.
+   - **SAP Tables** - enter in SAP tables you want to have access too when performing CRUD operations from your SAP system.
    - **Use Kianda Cloud Connect** - by default this option is disabled, the cloud connect is used to **create a connection** between your **local device** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/). This option must be enabled to successfully establish a connection between a SAP system and Kianda.
      - **Connectors** - displays all available connector PC's that have a **connection established** with your **Kianda** subscription. 
    - **Status** - represents the current status of the connection.
