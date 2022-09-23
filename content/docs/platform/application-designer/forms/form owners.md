@@ -11,19 +11,17 @@ When creating forms, it is important to consider **form access** during the desi
 
 There are two key principles to keep in mind in terms of **form access**:
 
-1. Forms are **assignable** - this means that only a form assignee, that is, someone that is assigned to a form, can **edit** a particular form in a process instance. The 'assignee' can be a combination of users and groups. There are various ways a form can be assigned to a user 
+1. Forms are **assignable** - this means that only a form assignee, that is, someone that is assigned to a form, can **edit** a particular form in a process instance. The 'assignee' can be a combination of users and groups. There are various ways a form can be assigned to a user: 
 
-   ​	a) Using **Rules**, in particular the Workflow rule Assign form, see [Assign form](/docs/platform/rules/workflow/assign-form/) for details 
+   ​	a) Using **Rules**, in particular the Workflow rule **Assign form**, see [Assign form](/docs/platform/rules/workflow/assign-form/) for details 
 
    ​	b) Using **Quick actions**, see [Form Quick action](/docs/platform/application-designer/forms/form-quick-action/) for details
 
    ​	c) Creating **form owners** when creating or updating a process design, see [Creating form owners](#creating-form-owners) for details
 
-2. **Only form owners** can edit a given form by **default**. Any other user with access to view the form will see it in read-only mode.
+2. **Only form owners** can edit a given form when it is a **current form** in a process flow by **default**. Any other user with access to view the form will see it in read-only mode.
 
-So what is **form owner**? A form owner is assigned when a form is created in Kianda Designer or form owners can be added to a process design at a later stage. Only the form owner will be able to edit **process instances** (records). 
-
-Once a process has been designed and users can initiate new process instances or records from a dashboard page, then the only people who can edit process records are the form owners or someone who has had the record assigned to them. For example, a line manager who is a form owner may need to add additional information about work goals in an appraisal form that their employee has already filled out.
+So what is **form owner**? A form owner is assigned when a form is created in Kianda Designer. Form owners can also be added to a form design at a later stage by editing the form. Only the form owner will be able to **edit current forms** in **process instances** (records), see below.
 
 ## Getting started with Form owners
 
