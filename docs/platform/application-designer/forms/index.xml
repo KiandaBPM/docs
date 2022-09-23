@@ -4,7 +4,7 @@
 &lt;p>There are two key principles to keep in mind in terms of &lt;strong>form access&lt;/strong>:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Forms are &lt;strong>assignable&lt;/strong> - this means that only a form assignee, that is, someone that is assigned to a form, can &lt;strong>edit&lt;/strong> a particular form in a process instance. The &amp;lsquo;assignee&amp;rsquo; can be a combination of users and groups. There are various ways a form can be assigned to a user:&lt;/p>
+&lt;p>Forms are &lt;strong>assignable&lt;/strong> - this means that forms can be assigned to individuals and/or groups, and then only they can &lt;strong>edit&lt;/strong> a the form, when it is the current form, in a process instance. The &amp;lsquo;assignee&amp;rsquo; can be a combination of users and groups. There are various ways a form can be assigned to a user:&lt;/p>
 &lt;p>​ a) Using &lt;strong>Rules&lt;/strong>, in particular the Workflow rule &lt;strong>Assign form&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a> for details&lt;/p>
 &lt;p>​ b) Using &lt;strong>Quick actions&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/">Form Quick action&lt;/a> for details&lt;/p>
 &lt;p>​ c) Creating &lt;strong>form owners&lt;/strong> when creating or updating a process design, see &lt;a href="#creating-form-owners">Creating form owners&lt;/a> for details&lt;/p>
@@ -13,7 +13,7 @@
 &lt;p>&lt;strong>Only form owners&lt;/strong> can edit a given form when it is a &lt;strong>current form&lt;/strong> in a process flow by &lt;strong>default&lt;/strong>. Any other user with access to view the form will see it in read-only mode.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>So what is &lt;strong>form owner&lt;/strong>? A form owner is assigned when a form is created in Kianda Designer. Form owners can also be added to a form design at a later stage by editing the form. Only the form owner will be able to &lt;strong>edit current forms&lt;/strong> in &lt;strong>process instances&lt;/strong> (records), see below.&lt;/p>
+&lt;p>So what is &lt;strong>form owner&lt;/strong>? A form owner is assigned when a form is created in Kianda &lt;strong>Designer&lt;/strong>. Form owners can also be added to a form design at a later stage by editing the form. Only the form owner will be able to &lt;strong>edit current forms&lt;/strong> in &lt;strong>process instances&lt;/strong> (records), see below.&lt;/p>
 &lt;h2 id="getting-started-with-form-owners">Getting started with Form owners&lt;/h2>
 &lt;h3 id="creating-form-owners">Creating form owners&lt;/h3>
 &lt;ol>
@@ -32,8 +32,32 @@
 &lt;li>If you make a mistake, or form owners need to be changed in an existing process, click on the &lt;strong>x&lt;/strong> beside the name of the &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or &lt;strong>Partners&lt;/strong> to remove them and choose from the dropdown list again.&lt;/li>
 &lt;li>Add to or edit the remaining parameters in the dialog box as desired, see &lt;a href="#editing-forms/docs/platform/application-designer/designer/">Editing forms&lt;/a> and click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/li>
 &lt;/ol>
-&lt;h3 id="form-ownership-and-process-instances">Form ownership and process instances&lt;/h3>
-&lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to &lt;strong>when the the form is created&lt;/strong>. By default, only this person or group &lt;strong>can edit the form&lt;/strong>. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups.&lt;/p></description></item><item><title>Docs: Form display modes</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</guid><description>
+&lt;h3 id="changing-form-ownership">Changing form ownership&lt;/h3>
+&lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to using the &lt;strong>default owner field&lt;/strong> in the &lt;strong>new form&lt;/strong> dialog box as shown above. By default, only this person or group &lt;strong>can edit the current form&lt;/strong> in a process instance. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups. You can change form ownership in the following ways: [Changing default owners](#changing default owners), using the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign rule&lt;/a>, using &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/">Quick actions&lt;/a>.&lt;/p>
+&lt;h4 id="changing-default-owners">Changing default owners&lt;/h4>
+&lt;ol>
+&lt;li>
+&lt;p>Using your &lt;strong>Administration&lt;/strong> or &lt;strong>Design business process&lt;/strong> role go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> &amp;gt; select a process &amp;gt; select a form in the process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the form so the &lt;strong>Edit/Pen&lt;/strong> button appears in the form name.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/select-form-to-edit.jpg" alt="Select form to edit">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then click on the &lt;strong>Edit/Pen&lt;/strong> button itself to edit the form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>An &lt;strong>Edit form&lt;/strong> dialog box opens which has the same layout as the &lt;strong>New form&lt;/strong> dialog box seen in &lt;a href="#creating-form-owners">Creating form owners&lt;/a> above.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-form-dialog-box.jpg" alt="Edit form dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Here you can change the default owner choosing from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong> as before.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h4 id="using-quick-actions">Using quick actions&lt;/h4>
+&lt;p>As seen in the image above, there is an &lt;strong>Enable quick actions&lt;/strong> checkbox that can be checked. When this is checked there are 3 further checkboxes that appear.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/quick-action-checkboxes.jpg" alt="Quick action checkboxes">&lt;/p>
+&lt;p>If you check &lt;strong>Enable re-assign&lt;/strong> for instance and click the &lt;strong>ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button"> then you can select &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong> who to reassign the form to.&lt;/p></description></item><item><title>Docs: Form display modes</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Remember there are three principles to consider when working with forms:&lt;/p>
 &lt;ul>
