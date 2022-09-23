@@ -798,7 +798,55 @@
 &lt;p>Take a table &lt;strong>Employees&lt;/strong> as an example, if this employee table contains data about the employees in your company such as name, phone number, email address and home address. You can &lt;strong>create&lt;/strong> a new employee by providing necessary information, you can &lt;strong>read&lt;/strong> (display) employee data, &lt;strong>update&lt;/strong> employees information for example when a home address has changed. You can also &lt;strong>delete&lt;/strong> an employee from the table. Those are the CRUD operations you can perform on SAP system through a process within Kianda.&lt;/p>
 &lt;h2 id="before-getting-started">Before getting started&lt;/h2>
 &lt;p>When establishing a connection using SAP data connector, you are creating a connection with a &lt;strong>Schema&lt;/strong> from you SAP system. Before continuing make sure that your SAP system has a &lt;strong>schema&lt;/strong> you can connect to.&lt;/p>
-&lt;p>You also need to create a Kianda Cloud Connect connection with your device which will be used in the settings when filling out the SAP connector settings. To learn how to create a connection with you device using Kianda Cloud Connect, visit &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/p></description></item><item><title>Docs: SharePoint connector</title><link>https://docs.kianda.com/docs/platform/connectors/sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sharepoint/</guid><description>
+&lt;p>You also need to create a Kianda Cloud Connect connection with your device which will be used in the settings when filling out the SAP connector settings. To learn how to create a connection with you device using Kianda Cloud Connect, visit &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>SAP&lt;/strong> from the list of datasources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out fields in the &lt;strong>SAP system details&lt;/strong> screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sap-details.jpg" alt="SQL Server details page">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Application server&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>Instance number&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>System ID&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>Client&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>Username&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>Password&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>SAP BAPIs&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>SAP Tables&lt;/strong> -&lt;/li>
+&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is disabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between your &lt;strong>local device&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>. This option must be enabled to successfully establish a connection between a SAP system and Kianda.
+&lt;ul>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Status&lt;/strong> - represents the current status of the connection.
+&lt;ul>
+&lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed&lt;/li>
+&lt;li>&lt;strong>test failed&lt;/strong> - means that the details of the connector are incorrect and the connection has failed.&lt;/li>
+&lt;li>&lt;strong>ready&lt;/strong> - means that the connector has successfully connected and its ready to be used.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added the SAP system details, you are ready to test your connection and add security. At the bottom of the &lt;strong>SAP system details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item><item><title>Docs: SharePoint connector</title><link>https://docs.kianda.com/docs/platform/connectors/sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sharepoint/</guid><description>
 &lt;p>A SharePoint data connector allows you to use SharePoint data sources as part of your Kianda forms or dashboards. This means that as your processes are running they will use the information at the data source or depending on the process, update information at a data source location.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
