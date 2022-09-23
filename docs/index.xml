@@ -480,17 +480,16 @@ Your browser does not support the video tag.
 &lt;p>There are two key principles to keep in mind in terms of &lt;strong>form access&lt;/strong>:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Forms are &lt;strong>assignable&lt;/strong> - this means that only a form assignee, that is, someone that is assigned to a form, can &lt;strong>edit&lt;/strong> a particular form in a process instance. The &amp;lsquo;assignee&amp;rsquo; can be a combination of users and groups. There are various ways a form can be assigned to a user&lt;/p>
-&lt;p>​ a) Using &lt;strong>Rules&lt;/strong>, in particular the Workflow rule Assign form, see &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a> for details&lt;/p>
+&lt;p>Forms are &lt;strong>assignable&lt;/strong> - this means that only a form assignee, that is, someone that is assigned to a form, can &lt;strong>edit&lt;/strong> a particular form in a process instance. The &amp;lsquo;assignee&amp;rsquo; can be a combination of users and groups. There are various ways a form can be assigned to a user:&lt;/p>
+&lt;p>​ a) Using &lt;strong>Rules&lt;/strong>, in particular the Workflow rule &lt;strong>Assign form&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a> for details&lt;/p>
 &lt;p>​ b) Using &lt;strong>Quick actions&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/">Form Quick action&lt;/a> for details&lt;/p>
 &lt;p>​ c) Creating &lt;strong>form owners&lt;/strong> when creating or updating a process design, see &lt;a href="#creating-form-owners">Creating form owners&lt;/a> for details&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Only form owners&lt;/strong> can edit a given form by &lt;strong>default&lt;/strong>. Any other user with access to view the form will see it in read-only mode.&lt;/p>
+&lt;p>&lt;strong>Only form owners&lt;/strong> can edit a given form when it is a &lt;strong>current form&lt;/strong> in a process flow by &lt;strong>default&lt;/strong>. Any other user with access to view the form will see it in read-only mode.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>So what is &lt;strong>form owner&lt;/strong>? A form owner is assigned when a form is created in Kianda Designer or form owners can be added to a process design at a later stage. Only the form owner will be able to edit &lt;strong>process instances&lt;/strong> (records).&lt;/p>
-&lt;p>Once a process has been designed and users can initiate new process instances or records from a dashboard page, then the only people who can edit process records are the form owners or someone who has had the record assigned to them. For example, a line manager who is a form owner may need to add additional information about work goals in an appraisal form that their employee has already filled out.&lt;/p>
+&lt;p>So what is &lt;strong>form owner&lt;/strong>? A form owner is assigned when a form is created in Kianda Designer. Form owners can also be added to a form design at a later stage by editing the form. Only the form owner will be able to &lt;strong>edit current forms&lt;/strong> in &lt;strong>process instances&lt;/strong> (records), see below.&lt;/p>
 &lt;h2 id="getting-started-with-form-owners">Getting started with Form owners&lt;/h2>
 &lt;h3 id="creating-form-owners">Creating form owners&lt;/h3>
 &lt;ol>
