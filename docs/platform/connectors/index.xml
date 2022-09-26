@@ -794,10 +794,9 @@
 &lt;p>Data in the SAP system are represented with schemas and tables. Each &lt;strong>schema&lt;/strong> represents an &lt;strong>area&lt;/strong> of your business and &lt;strong>tables&lt;/strong> represent &lt;strong>data&lt;/strong> within that business area. Using SAP as your datasource, you can perform Create, Read, Update and Delete (&lt;strong>CRUD&lt;/strong>) operations on &lt;strong>tables&lt;/strong> within your SAP system using the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">&lt;strong>Data rules&lt;/strong>&lt;/a> provided in the Kianda platform. When using the SAP connector, keep in mind that you can perform CRUD operations on data within a &lt;strong>tables&lt;/strong> of the system, but you &lt;strong>cannot&lt;/strong> perform CRUD operations on &lt;strong>tables themselves&lt;/strong>, this mean are unable to &lt;strong>create&lt;/strong> or &lt;strong>delete&lt;/strong> tables.&lt;/p>
 &lt;p>SAP connector also has the ability to use Business Application Programming Interface (&lt;strong>BAPI&lt;/strong>) functions through Kianda. This allows you to perform particular business tasks in your SAP system by calling BAPI functions using the Data rules provided.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>You can use the SAP connector when you want &lt;strong>access&lt;/strong> or &lt;strong>modify&lt;/strong> data within a &lt;strong>table&lt;/strong> in your SAP system. You can connect the SAP connector to a &lt;strong>List&lt;/strong> field as its datasource, meaning you can access information from a table and display the information that is stored in the table. For example if your SAP system contains a table called &lt;strong>HR&lt;/strong> and within, tables such as &lt;strong>Employees&lt;/strong>, &lt;strong>Departments&lt;/strong> and &lt;strong>Jobs&lt;/strong>. You will be able to connect the list field to one of those tables giving you CRUD access to its data.&lt;/p>
+&lt;p>You can use the SAP connector when you want &lt;strong>access&lt;/strong> or &lt;strong>modify&lt;/strong> data within a standard SAP or custom &lt;strong>table&lt;/strong> in your SAP system. You can connect the SAP connector to a &lt;strong>List&lt;/strong> field as its datasource, meaning you can access information from a table and display the information that is stored in the table. Take a standard SAP table &lt;strong>MARA&lt;/strong> as an example, using this table you can display information on your Kianda forms using the data within the MARA table. You can also display information of your custom made tables within your SAP system.&lt;/p>
 &lt;h2 id="before-getting-started">Before getting started&lt;/h2>
-&lt;p>When establishing a connection using SAP data connector, you are creating a connection with a &lt;strong>Schema&lt;/strong> from you SAP system. Before continuing make sure that your SAP system has a &lt;strong>schema&lt;/strong> you can connect to.&lt;/p>
-&lt;p>You also need to create a Kianda Cloud Connect connection with your device which will be used in the settings when filling out the SAP connector settings. To learn how to create a connection with you device using Kianda Cloud Connect, visit &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/p>
+&lt;p>You need to create a Kianda Cloud Connect connection with your device which will be used in the settings when filling out the SAP connector settings. To learn how to create a connection with you device using Kianda Cloud Connect, visit &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -808,23 +807,43 @@
 &lt;/li>
 &lt;li>
 &lt;p>Fill out fields in the &lt;strong>SAP system details&lt;/strong> screen.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/sap-details.jpg" alt="SQL Server details page">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sap-details.jpg" alt="SAP Details page">&lt;/p>
 &lt;p>Choose from the edit options:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Application server&lt;/strong> -&lt;/li>
-&lt;li>&lt;strong>Instance number&lt;/strong> -&lt;/li>
-&lt;li>&lt;strong>System ID&lt;/strong> -&lt;/li>
-&lt;li>&lt;strong>Client&lt;/strong> -&lt;/li>
-&lt;li>&lt;strong>Username&lt;/strong> - enter a username used to connect to your SAP system.&lt;/li>
-&lt;li>&lt;strong>Password&lt;/strong> - enter in the password used to connect to your SAP system.&lt;/li>
-&lt;li>&lt;strong>SAP BAPIs&lt;/strong> - enter in BAPI functions that you want access too when performing BAPI functionalities on your SAP system.&lt;/li>
-&lt;li>&lt;strong>SAP Tables&lt;/strong> - enter in SAP tables you want to have access too when performing CRUD operations from your SAP system.&lt;/li>
-&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is disabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between your &lt;strong>local device&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>. This option must be enabled to successfully establish a connection between a SAP system and Kianda.
+&lt;li>
+&lt;p>&lt;strong>Application server&lt;/strong> - enter in the IP address that your SAP system is run on.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Instance number&lt;/strong> - enter in the Instance number that you want to connect to from your SAP server.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>System ID&lt;/strong> - enter in the ID of your SAP system. A system ID has three characters.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Client&lt;/strong> - enter in the Client your want to connect to from your SAP system.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Username&lt;/strong> - enter a username used to connect to your SAP system.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Password&lt;/strong> - enter in the password used to connect to your SAP system.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>SAP BAPIs&lt;/strong> - enter in BAPI functions that you want access too when performing BAPI functionalities on your SAP system. Each BAPI must be on a separate line with no spaces, see image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sap-bapi.jpg" alt="SAP BAPIs">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>SAP Tables&lt;/strong> - enter in SAP tables you want to have access to when performing CRUD operations from your SAP system. Each table must be on a separate line with no spaces, see image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sap-tables.jpg" alt="SAP tables">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is disabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between your &lt;strong>local device&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>. This option must be enabled to successfully establish a connection between a SAP system and Kianda.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Status&lt;/strong> - represents the current status of the connection.
+&lt;li>
+&lt;p>&lt;strong>Status&lt;/strong> - represents the current status of the connection.&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed&lt;/li>
 &lt;li>&lt;strong>test failed&lt;/strong> - means that the details of the connector are incorrect and the connection has failed.&lt;/li>
@@ -845,7 +864,17 @@
 &lt;li>
 &lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
 &lt;/li>
-&lt;/ol></description></item><item><title>Docs: SharePoint connector</title><link>https://docs.kianda.com/docs/platform/connectors/sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sharepoint/</guid><description>
+&lt;/ol>
+&lt;h2 id="sap-table-parameters">SAP Table parameters&lt;/h2>
+&lt;p>When you use a &lt;strong>SAP&lt;/strong> datasource, unlike some of the other data connectors in Kianda, SAP does not have &lt;strong>default&lt;/strong> parameters. When you connect a SAP connector as your datasource, you can choose which &lt;strong>Table&lt;/strong> or &lt;strong>BAPI&lt;/strong> you want to use when performing CRUD operations. For example when connecting a SQL datasource to a &lt;strong>List&lt;/strong> field and selecting a table you want to use, the parameters will depend on what &lt;strong>data&lt;/strong> are present in the &lt;strong>tables&lt;/strong>. Take standard SAP Table &lt;strong>MARA&lt;/strong> as an example. We have an &lt;strong>Employee&lt;/strong> table which we select when connecting a datasource to a &lt;strong>List&lt;/strong> field, to learn how to a datasource to a list field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>, see image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sap-mara.jpg" alt="Connecting MARA table to list field">&lt;/p>
+&lt;p>The list of parameters displayed in the the &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and &lt;strong>Sort by&lt;/strong> field will match the columns that we have in the &lt;strong>Employee&lt;/strong> table, see image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sap-mara-list-field.jpg" alt="columns in a table">&lt;/p>
+&lt;h2 id="sap-bapi-functions">SAP BAPI functions&lt;/h2>
+&lt;p>In order to use &lt;strong>BAPI functions&lt;/strong> from your SAP system &lt;strong>effectively&lt;/strong>, the &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>&lt;/strong> within Kianda can be used. Data rules allow you to &lt;strong>send&lt;/strong> data as well as &lt;strong>receive&lt;/strong> it. For example if your BAPI function needs data when calling it, you can use any of the Data rules for example &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/rules/data/create-item/">Create item rule&lt;/a>&lt;/strong> to send data using the &lt;strong>input mapping&lt;/strong> section or when receiving data you can use the &lt;strong>on success mapping&lt;/strong>.&lt;/p>
+&lt;p>Take a BAPI function which retrieves a list from your SAP system as an example. You can use the on success mapping to store the list in a Kianda field. If for example this BAPI function takes an argument where you want to specify how many items from the list it retrieves, you can input that information in to the input mapping section of the data rules. To learn more about on success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success Mapping&lt;/a>.&lt;/p>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Your &lt;strong>SAP system connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: SharePoint connector</title><link>https://docs.kianda.com/docs/platform/connectors/sharepoint/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/sharepoint/</guid><description>
 &lt;p>A SharePoint data connector allows you to use SharePoint data sources as part of your Kianda forms or dashboards. This means that as your processes are running they will use the information at the data source or depending on the process, update information at a data source location.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
