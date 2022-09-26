@@ -82,8 +82,6 @@ In order to use **BAPI functions** from your SAP system **effectively**, the **[
 
 Take a BAPI function which retrieves a list from your SAP system as an example. You can use the on success mapping to store the list in a Kianda field. If for example this BAPI function takes an argument where you want to specify how many items from the list it retrieves, you can input that information in to the input mapping section of the data rules. To learn more about on success mapping go to [On Success Mapping](/docs/platform/rules/general/success-error-mapping/#on-success-mapping).
 
-
-
 ### What’s next ![Idea icon](/images/18.png)
 
 Your **SAP system connector** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).
