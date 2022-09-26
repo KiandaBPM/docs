@@ -6,9 +6,9 @@ typora-root-url: ..\..\..\static
 
 ## Introduction 
 
-Kianda uses **Ember.js** to build modern web applications for your business, and in particular the **Handlebars** templating library to power the application's user interface. Handlesbars is simply a templating language that generates HTML or other text formats to build web pages. 
+Kianda uses **Ember.js** to build modern web applications for your business, and in particular the **Handlebars** templating library to power the application's user interface. Handlesbars is a templating language that generates HTML or other text formats to build web pages. Handlebars allows two-way binding so that you can write data into models, and that data can be used by HTML to generate the final interface/screen. 
 
-Handlebar templates are written as expressions using double curly braces {{}} for example:
+Handlebar templates are written as **expressions** using **double curly braces {{}}** for example:
 
 `<p>{{firstname}} {{surname}}</p>`
 
