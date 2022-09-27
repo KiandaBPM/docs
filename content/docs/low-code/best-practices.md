@@ -45,7 +45,7 @@ Further information is given on the field-picker component below. To read more a
 
 ## Component example
 
-The widget UI uses syntax called **handlebars** that can be used by multiple languages. Kianda uses **Ember.js** framework which uses the **handlebars templating library** to make changes to the user interface. 
+The widget UI uses syntax called **Handlebars** that can be used by multiple languages. Kianda is built using **Ember.js** framework which in turn uses the **Handlebars templating library** to make changes to the user interface. The following is an example of widget UI code:
 
    ```handlebars
    {{#if (eq displayMode "settings")}}
@@ -58,13 +58,13 @@ The widget UI uses syntax called **handlebars** that can be used by multiple lan
    {{/if}}
    ```
 
-For example in the code block above, the '`field-picker`' component is called using Ember and the associated component properties include:
+In the example code block above, the **'`field-picker`' component** is called using Ember and the associated component properties include:
 
 -  '`allowText=false`' meaning text is not entered into the field picker by a user
 -  '`required=true`' meaning the field has to be completed, that is a field chosen, for the form to be submitted
 - '`value=field.settings.warningMessage`' meaning an input value will be stored in the `warningMessage` field 
 
-The **field picker** for example is typically seen in **edit rule** dialog boxes to allow users to choose a form field that will be used in rule execution, for example as shown for the **Hide or disable** rule below.
+The **field picker** for example is typically seen in **Edit rule** dialog boxes to allow users to choose a form field that will be used in rule execution, for example as shown for the **Hide or disable** rule below.
 
    ![Field picker component example](/images/field-picker-modal-example.jpg)
 

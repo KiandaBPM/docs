@@ -21,7 +21,7 @@ The beauty of Ember.js is that it allows you can create advanced web application
 
 ### Handlebars ![Handlebars](/images/handlebars.png)
 
-Ember.js uses the **Handlebars templating library** to build the user interface for applications. Handlebars uses a template and an input object to **dynamically generate HTML** or other text formats. Handlebars also **includes built-in helper** functions and allows you to **build your own custom helper** functions. See [Templating basics](/docs/low-code/templating-basics/) for more information.
+Ember.js uses the **Handlebars templating library** to build the user interface for applications. Handlebars uses a template and an input object to **dynamically generate HTML** or other text formats. Handlebars also **includes built-in helper** functions and allows you to **build your own custom helper** functions. To read more about Handlebars go to https://handlebarsjs.com/guide/  and also [Templating basics](/docs/low-code/templating-basics/) for more information.
 
 
 

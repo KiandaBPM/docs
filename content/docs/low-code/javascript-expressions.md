@@ -12,11 +12,11 @@ The use of expressions allows you to cleverly manipulate data to create new cons
 
 ![Expression new employee ID example](/images/expression-id-example.jpg)
 
-The page [Expression builder](docs/platform/rules/general/expression-builder/) provides an introduction to expressions and shows one example of Expressions in use in a Send email rule to automate how emails are sent. The example simply uses the **[identifier]** or unique name from form fields to populate the body text of the email.
+The [Expression builder](docs/platform/rules/general/expression-builder/) page provides an introduction to expressions and shows one example of expressions in use in a **Send email rule** to automate how emails are sent. The example simply uses the **[identifier]** or unique name from form fields to populate the body text of the email.
 
 ![Expression example](/images/expression-example.gif)
 
- **ProcessLink()** is a function that will return a link to that particular process instance. You can use **any JavaScript functions** in the expression field to make advanced expressions throughout your Kianda forms, see below for how to get started.
+**ProcessLink()** is a function that will return a link to that particular process instance. You can use **any JavaScript functions** in the expression field to make advanced expressions throughout your Kianda forms, see below for how to get started.
 
 ## How to get started with Javascript expressions ##
 
@@ -27,6 +27,10 @@ Within rules, expressions can be created using the **Expression builder** where 
 ***Expression builder***
 
 ![Expression builder example in action](/images/expression-builder-eg.gif)
+
+To create a field in a form that concatenates the values from two text boxes, we could start using expressions as follows:
+
+1. In a simple form made up of three fields, we choose one field which is going to act as the trigger for an action. 
 
 We can also insert JavaScript such as JavaScript Strings into the expression.
 
