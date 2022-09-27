@@ -11,11 +11,13 @@ As Kianda is built using front-end technologies like **CSS** and **JavaScript**,
 
 #### Ember.js ![Ember logo](/images/ember-logo.png) ####
 
-More specifically, Kianda uses **Ember.js**, an open-source JavaScript web framework used to allow you to build highly interactive applications that work on any device. To read more about Ember go to https://guides.emberjs.com/release/.
+In addition to the technologies mentioned above, Kianda uses **Ember.js**, an **open-source JavaScript web framework** used to build highly interactive applications that work on any device. Ember is built using **JavaScript** hence the .js extension. The Ember.js environment provides you with the tools to develop your applications, like libraries, templates, models and so on. One of the tools used more specifically used when building Kianda form components is **Handlebars** described below. 
+
+The beauty of Ember.js is that it allows you can create advanced web applications with less code. To read more about Ember go to https://guides.emberjs.com/release/.
 
 #### Handlebars ![Handlebars](/images/handlebars.png)
 
-Ember uses the **Handlebars** templating library to build the user interface using static HTML and dynamic content, see [Best practices](/docs/low-code/best-practices/) and [Templating basics](/docs/low-code/templating-basics/) for more information.
+Ember uses the **Handlebars templating library** to build the user interface using static HTML and dynamic content, see [Best practices](/docs/low-code/best-practices/) and [Templating basics](/docs/low-code/templating-basics/) for more information. 
 
 You don't need to be an expert in Ember or Handlebars to develop content in Kianda. Kianda's low-code development user interface allows you to build new customised widgets without having to write extensive pieces of code. Kianda's **Developer** resources provide the possibility to create these custom widgets for example, a new field type, by building on Kianda's existing library of components. 
 
