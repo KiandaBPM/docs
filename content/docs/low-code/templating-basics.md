@@ -92,11 +92,43 @@ The **dynamically generated output** is the following HTML:
 
 For more information on Handlebars see https://handlebarsjs.com/guide/, for more information on [Helpers](#helpers) see below.
 
-### Helpers 
+## Helpers 
 
-In the section above an example of `each`-helper was shown. This is an example of a built-in helper
+In the section above an example of `each`-helper was shown. This is an example of a built-in helper block that is available amongst other built-in helpers that you can use, see https://handlebarsjs.com/guide/builtin-helpers.html#if for other examples. Helpers are functions that can work out values and be used in templates. Helpers are written in JavaScript using Ember.js framework and used by Handlebars. 
 
-**Ember** gives the ability to write your own helpers, to bring a minimum of logic into Ember templating. For example, let's say you would like the ability to add a few numbers together, without needing to define a computed property everywhere you would like to do so, you could create the following JavaScript code:
+For example if we look  the **`if` built-in helper** block,  `if` can be used in a **Handlebars expression** as follows:
+
+```handlebars
+<div class="department"
+{{#if manager}}
+<h1>{{firstName}} {{lastName}}</h1>
+{{/if}}
+</div>
+```
+
+Properties can be passed through as follows:
+
+```javascript
+{
+  manager: true, 
+  firstName: "Mike",
+  lastName: "Balcoome",
+}
+```
+
+When the `manager` property is true, then the generated HTML output will be:
+
+```html
+<div class="department">
+<h1>Mike Balcoome</h1>
+</div>
+```
+
+If the `manager` property is set to false, then the `firstName lastName` part will not display, in this way the helper is used to **dynamically** generate or hide the HTML output.
+
+### Creating your own helpers ###
+
+Using **Ember.js** gives you the ability to write your own helpers, to bring a minimum of logic into Ember templating. For example, let's say you would like the ability to add a few numbers together, without needing to define a computed property everywhere you would like to do so, you could create the following JavaScript code:
 
 ***Helper example***
 
