@@ -165,27 +165,54 @@
 &lt;p>Kianda uses &lt;strong>Ember.js&lt;/strong> to build modern web applications for your business, and in particular the &lt;strong>Handlebars&lt;/strong> templating library to power the application&amp;rsquo;s user interface. Handlesbars is a templating language that generates HTML or other text formats to build web pages. Handlebars allows two-way binding so that you can write data into models, and that data can be used by HTML to generate the final interface/screen.&lt;/p>
 &lt;p>Handlebar templates are written as &lt;strong>expressions&lt;/strong> using &lt;strong>double curly braces {{}}&lt;/strong> for example:&lt;/p>
 &lt;p>&lt;code>&amp;lt;p&amp;gt;{{firstname}} {{surname}}&amp;lt;/p&amp;gt;&lt;/code>&lt;/p>
-&lt;p>When the template is executed, the expressions above between the braces is replaced with values from an input object. For example in a Kianda form if a &lt;strong>user types in values&lt;/strong> or a &lt;strong>rule dynamically assigns values&lt;/strong> to text boxes for example, the values are applied to the input object as follows:&lt;/p>
+&lt;p>When the template is executed, the expressions above between the braces are replaced with values from an input object. For example in a Kianda form if a &lt;strong>user types in values&lt;/strong> or a &lt;strong>rule dynamically assigns values&lt;/strong> to text boxes for example, the values are applied to the input object as follows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-handlebars" data-lang="handlebars">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">{&lt;/span>&lt;span style="color:#000">
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> firstname: &amp;#34;Ryan&amp;#34;
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> surname: &amp;#34;B&amp;#39;Oul&amp;#34;
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">}
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The expressions will be replaced by the values resulting in:&lt;/p>
 &lt;p>&lt;code>&amp;lt;p&amp;gt;Ryan B'Oul&amp;lt;/p&amp;gt;&lt;/code>&lt;/p>
-&lt;p>If the input objects contains other objects or arrays, for example:&lt;/p>
-&lt;pre tabindex="0">&lt;code>{
-person: {
-firstname: &amp;#34;Ryan&amp;#34;
-surname: &amp;#34;B&amp;#39;Oul&amp;#34;
-},
-}
-&lt;/code>&lt;/pre>&lt;p>A dot notation can be used to access the property of the &amp;lsquo;person&amp;rsquo; object as follows:&lt;/p>
+&lt;p>In this way you can &lt;strong>define a JavaScript object&lt;/strong> like &amp;lsquo;person&amp;rsquo; below, with &lt;strong>properties&lt;/strong> &amp;lsquo;firstname&amp;rsquo; and &amp;lsquo;surname&amp;rsquo;:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">person&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">firstname&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Ryan&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">surname&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;B&amp;#39;Oul&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>A dot notation can be used in the &lt;strong>Handlebars expression&lt;/strong> to access the property of the &amp;lsquo;person&amp;rsquo; object:&lt;/p>
 &lt;p>&lt;code>&amp;lt;p&amp;gt;{{person.firstname}} {{person.surname}}&amp;lt;/p&amp;gt;&lt;/code>&lt;/p>
+&lt;p>In this way the properties of the JavaScript object can be leveraged within the template above so that the generated HTML output is: &lt;code>Ryan B'Oul&lt;/code>.&lt;/p>
 &lt;h2 id="handlebar-basics">Handlebar basics&lt;/h2>
-&lt;p>As shown above, Handlebar templates contain &lt;strong>static HTML&lt;/strong> and &lt;strong>dynamic content&lt;/strong> inside Handlebars expressions.&lt;/p>
-&lt;p>Dynamic content inside a Handlebars expression is rendered with data-binding. This means if you update a property, your usage of that property in a template will be automatically updated to the latest value.&lt;/p>
+&lt;p>Handlebar templates contain &lt;strong>static HTML&lt;/strong> and &lt;strong>dynamic content&lt;/strong> inside Handlebars expressions. The advantage of this is that if the property changes, for example &amp;lsquo;firstname&amp;rsquo; shown in the &lt;a href="#introduction">Introduction&lt;/a> above, then the value dynamically changes in real time. This is because dynamic content inside a Handlebars expression is rendered with data-binding. This means if you update a property, your usage of that property in a template will be automatically updated to the latest value.&lt;/p>
+&lt;p>You can also use HTML with the Handlebars &lt;strong>template&lt;/strong> as follows:&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;lt;h1&amp;gt;
+{{person.firstname}}{{person.lastname}}
+&amp;lt;/h1&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>In this way you can define the logic that you want and then update the properties of the objects as before.&lt;/p>
+&lt;p>You can also use &lt;strong>built-in block-helpers&lt;/strong> with Handlebars to apply functionality that is not part of the Handlebars language. For example a built-in helper like &lt;code>each&lt;/code> allows you to access the properties of objects using Handlebars expressions. For example you can have simple expression using an &lt;strong>&lt;code>each&lt;/code> statement&lt;/strong> as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-handlebars" data-lang="handlebars">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">&amp;lt;ul class=&amp;#34;employee_list&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">#each&lt;/span> &lt;span style="color:#000">employee&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;li&amp;gt;&lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#000">this&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">&amp;lt;/li&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">/each&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">&amp;lt;/ul&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can have an list of employees:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">employee&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;Ryan B&amp;#39;Oul&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;Mike Balcoome&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;Maddie Lehane&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;strong>dynamically generated output&lt;/strong> is the following HTML:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">ul&lt;/span> &lt;span style="color:#c4a000">class&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;employee_list&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a40000">&amp;lt;&lt;/span>&lt;span style="color:#c4a000">li&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>Ryan B&amp;#39;Oul&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">li&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">li&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>Mike Balcoome&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">li&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">li&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>Maddie Lehane&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">li&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">ul&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>For more information on Handlebars see &lt;a href="https://handlebarsjs.com/guide/">https://handlebarsjs.com/guide/&lt;/a>, for more information on &lt;a href="#helpers">Helpers&lt;/a> see below.&lt;/p>
 &lt;h3 id="helpers">Helpers&lt;/h3>
-&lt;p>Ember gives the ability to write your helpers, to bring a minimum of logic into Ember templating. For example, let&amp;rsquo;s say you would like the ability to add a few numbers together, without needing to define a computed property everywhere you would like to do so.&lt;/p>
+&lt;p>In the section above an example of &lt;code>each&lt;/code>-helper was shown. This is an example of a built-in helper&lt;/p>
+&lt;p>&lt;strong>Ember&lt;/strong> gives the ability to write your own helpers, to bring a minimum of logic into Ember templating. For example, let&amp;rsquo;s say you would like the ability to add a few numbers together, without needing to define a computed property everywhere you would like to do so, you could create the following JavaScript code:&lt;/p>
 &lt;p>&lt;em>&lt;strong>Helper example&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/write-our-own-helpers.png" alt="Helpers">&lt;/p>
 &lt;h4 id="conditionals">Conditionals&lt;/h4>
