@@ -8,6 +8,7 @@ hide_summary: true
 ---
 
 # Introduction 
+
 This section will detail how to create a new client connector. Feel free to try follow along and use the demo code, more detail will be provided in the how-to-use section.
 
 **Please Note - you must be an administrator to create a client connector.**
