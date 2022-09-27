@@ -21,7 +21,7 @@ The release will be based on semantic versioning specification, for more informa
 
 #### Release summary
 
-  7 Bug fixes         <i class="fa fa-wrench" style="color:lightgray"></i>
+ 7 Bug fixes         <i class="fa fa-wrench" style="color:lightgray"></i>
 
 4 Enhancements  <i class="fa fa-star" style="color:orange"></i> &nbsp; 
 
