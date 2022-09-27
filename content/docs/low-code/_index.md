@@ -5,39 +5,43 @@ weight: 4
 typora-root-url: ..\..\..\static
 ---
 
-## Introduction ##
+## Introduction to the technologies used ##
 
 As Kianda is built using front-end technologies like **CSS** and **JavaScript**, you can use your software development skills to tweak your given workspace design and functionality by editing files found under the [Subscription](/docs/platform/administration/subscription/) function. 
 
-#### Ember.js ![Ember logo](/images/ember-logo.png) ####
+However more specifically **Ember.js** and **Handlebars** are used as the building blocks of the Kianda platform. These are explained in more detail below and are important to be aware of when creating custom widgets for dashboards, data connectors, fields and rules as part of Kianda's **low-code** development interface, Kianda **Developer**.
 
-More specifically, Kianda uses **Ember.js**, an open-source JavaScript web framework used to allow you to build highly interactive applications that work on any device. To read more about Ember go to https://guides.emberjs.com/release/.
+### Ember.js ![Ember logo](/images/ember-logo.png) ####
 
-#### Handlebars ![Handlebars](/images/handlebars.png)
+In addition to the technologies mentioned above, Kianda uses **Ember.js**, an **open-source JavaScript web framework** used to build highly interactive applications that work on any device. Ember is built using **JavaScript** hence the .js extension. 
 
-Ember uses the **Handlebars** templating library to build the user interface using static HTML and dynamic content, see [Best practices](/docs/low-code/best-practices/) and [Templating basics](/docs/low-code/templating-basics/) for more information.
+The Ember.js environment provides you with the **tools** to develop your applications, like libraries, templates, models and so on. One of the tools used more specifically used building Kianda form components is the **Handlebars templating library** described below. 
 
-You don't need to be an expert in Ember or Handlebars to develop content in Kianda. Kianda's low-code development user interface allows you to build new customised widgets without having to write extensive pieces of code. Kianda's **Developer** resources provide the possibility to create these custom widgets for example, a new field type, by building on Kianda's existing library of components. 
+The beauty of Ember.js is that it allows you can create advanced web applications with less code. To read more about Ember.js go to https://guides.emberjs.com/release/ and also [Best practices](/docs/low-code/best-practices/) for information on using the Ember inspector to view existing code.
 
-## Ways of customising your organisation's workspace
+### Handlebars ![Handlebars](/images/handlebars.png)
 
-Building custom widgets is just one example of how you can use your skills to change your organisation's workspace. Using your **administrator** role, and accessing **Administration** functions there are several ways you can customise the Kianda platform as a developer, typically by:
+Ember.js uses the **Handlebars templating library** to build the user interface for applications. Handlebars uses a template and an input object to **dynamically generate HTML** or other text formats. Handlebars also **includes built-in helper** functions and allows you to **build your own custom helper** functions. See [Templating basics](/docs/low-code/templating-basics/) for more information.
 
-1. Editing the [**Global JavaScript file**](/docs/low-code/global-javascript-file/)
 
-2. Editing the [**Global CSS file**](/docs/low-code/global-css/)
 
-3. **Building widgets** for [rules](/docs/low-code/rule-widget/), [fields](/docs/low-code/field-widget/), [dashboards](/docs/low-code/dashboard-widget/) and [data connectors](/docs/low-code/client-connector/)
+## What can you do as a developer
 
-4. [**Customising list widgets**](/docs/low-code/list-widget-template/) to present data in dashboards
+Using your **administrator** role, and accessing **Administration** functions there are several ways you can customise the Kianda platform as a developer, typically by:
 
-5. Creating beautiful [**rich text**](/docs/low-code/global-css/#process-and-dashboard-specific-css) for emails and forms
+1. Editing the [Global JavaScript file](/docs/low-code/global-javascript-file/)
 
-In addition to the above customisations, you can use your JavaScript knowledge to create smart [**expressions**](/docs/low-code/javascript-expressions/) that can be used in text box, number and rich text fields, as well as **anywhere that uses rich text** like [Send email rule](/docs/platform/rules/communications/send-email/) body text for emails, [Meeting request rule](/docs/platform/rules/communications/meeting-request/) and rich text widget for dashboards. 
+2. Editing the [Global CSS file](/docs/low-code/global-css/)
+
+3. Building widgets for [rules](/docs/low-code/rule-widget/), [fields](/docs/low-code/field-widget/), [dashboards](/docs/low-code/dashboard-widget/) and [data connectors](/docs/low-code/client-connector/)
+
+4. [Customising list widgets](/docs/low-code/list-widget-template/) to present data in dashboards
+
+5. Creating beautiful [rich text](/docs/low-code/global-css/#process-and-dashboard-specific-css) for emails and forms
+
+In addition to the above customisations, you can use your JavaScript knowledge to create smart [expressions](/docs/low-code/javascript-expressions/) that can be used in text box, number and rich text fields, as well as **anywhere that uses rich text** like [Send email rule](/docs/platform/rules/communications/send-email/) body text for emails, [Meeting request rule](/docs/platform/rules/communications/meeting-request/) and rich text widget for dashboards. 
 
 Click on the links above to get more information on the areas mentioned. Building custom widgets is introduced below.
-
-
 
 ### Kianda Developer
 
