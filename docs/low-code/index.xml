@@ -384,7 +384,9 @@
 &lt;li>In a simple form made up of three fields, we choose one field which is going to act as the trigger for an action.&lt;/li>
 &lt;/ol>
 &lt;p>We can also insert JavaScript such as JavaScript Strings into the expression.&lt;/p></description></item><item><title>Docs: Global CSS file</title><link>https://docs.kianda.com/docs/low-code/global-css/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/global-css/</guid><description>
-&lt;p>Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace &lt;strong>Administrator&lt;/strong> you can add a &lt;strong>Global CSS File&lt;/strong> to make changes to the &lt;strong>look and feel&lt;/strong> of the site as well as the &lt;strong>functionality of processes&lt;/strong>. You can use the file to &lt;strong>target&lt;/strong> very specific details, for example a button in a particular process as shown below. This code will create specific styling for a button that is defined in a form in a process using Kianda &lt;strong>Designer&lt;/strong>.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace &lt;strong>Administrator&lt;/strong> you can add a &lt;strong>Global CSS File&lt;/strong> to make changes to the &lt;strong>look and feel&lt;/strong> of the site as well as the &lt;strong>functionality of processes&lt;/strong>.&lt;/p>
+&lt;p>You can use the file to &lt;strong>target&lt;/strong> very specific details, for example a button in a particular process as shown below. This code will create specific styling for a button that is defined in a form in a process using Kianda &lt;strong>Designer&lt;/strong>.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">`&lt;/span>&lt;span style="color:#204a87;font-weight:bold">div&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>&lt;span style="color:#204a87;font-weight:bold">data-name&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;btn-manager-Approve&amp;#34;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">],&lt;/span> &lt;span style="color:#204a87;font-weight:bold">div&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>&lt;span style="color:#204a87;font-weight:bold">data-name&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;btn_approve&amp;#34;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">color&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">white&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">background-color&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">black&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
@@ -449,13 +451,13 @@
 &lt;p>In addition to styling forms and form elements, &lt;strong>modals&lt;/strong> provide a useful way to communicate with users by displaying information in front of page content requiring the user to engage with an action within the modal . In the example below, you can see how the Transfer assets modal appears on the page, requiring users to view and interact with functionality &lt;strong>contained&lt;/strong> &lt;strong>within&lt;/strong> &lt;strong>the modal&lt;/strong> without having to navigate away from the &lt;strong>current&lt;/strong> &lt;strong>page&lt;/strong> they are on. This is not only &lt;strong>convenient&lt;/strong> for the user but it adds a &lt;strong>layered&lt;/strong> &lt;strong>design&lt;/strong> to your Kianda platform and its aesthetically pleasing to view.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/modal-design-example.jpg" alt="Modal example">&lt;/p>
 &lt;p>A &lt;strong>JavaScript&lt;/strong> &lt;strong>function&lt;/strong> called &lt;code>showModalForm&lt;/code> can be called to &lt;strong>display&lt;/strong> a page in a &lt;strong>form&lt;/strong> &lt;strong>modal&lt;/strong>.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">a&lt;/span> &lt;span style="color:#c4a000">onclick&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;showModalForm(&amp;#39;demo-process&amp;#39;,true, &amp;#39;&amp;amp;formName=SignUpform&amp;#39;)&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>Open Demo Process&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">a&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This function also allows you to &lt;strong>pass&lt;/strong> &lt;strong>data&lt;/strong> into the modal for use within that form, for example:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>&lt;code>nameOrUrl&lt;/code>&lt;/strong> - you can add in the &lt;strong>name of a process or add in a URL&lt;/strong>, where the URL might be a website to open in the modal&lt;/li>
-&lt;li>&lt;code>isNew&lt;/code> parameter - where &lt;strong>&lt;code>true&lt;/code> - creates a new process instance&lt;/strong>, otherwise choose &lt;strong>&lt;code>false&lt;/code> to open an existing process instance in preview mode&lt;/strong>&lt;/li>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#204a87;font-weight:bold">a&lt;/span> &lt;span style="color:#c4a000">onclick&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;showModalForm(&amp;#39;demo-process&amp;#39;,&amp;#39;demo-process-1&amp;#39;,true, &amp;#39;&amp;amp;formName=SignUpform&amp;#39;)&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>Open Demo Process&lt;span style="color:#000;font-weight:bold">&amp;lt;/&lt;/span>&lt;span style="color:#204a87;font-weight:bold">a&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This function also allows you to &lt;strong>pass&lt;/strong> &lt;strong>data&lt;/strong> into the modal for use within that form, typically:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>&lt;code>nameOrUrl&lt;/code>&lt;/strong> - you can add in a) &lt;strong>name of a process&lt;/strong> for example &lt;code>demo-process&lt;/code> or b) &lt;strong>a process instance&lt;/strong> for example &lt;code>demo-process-1&lt;/code> if you want to go to an existing process instance, see point 2 below, or c) &lt;strong>add in a URL&lt;/strong>, where the URL might be a website to open in the modal&lt;/li>
+&lt;li>&lt;code>isNew&lt;/code> parameter - where &lt;strong>&lt;code>true&lt;/code> creates a new process instance&lt;/strong>, otherwise choose &lt;strong>&lt;code>false&lt;/code> to open an existing process instance in preview mode&lt;/strong> and provide the name of the instance as mentioned in b) above.&lt;/li>
 &lt;li>&lt;strong>&lt;code>params&lt;/code>&lt;/strong> - &lt;strong>URL parameters&lt;/strong> appended to the URL, for example &amp;lsquo;SignUpform&amp;rsquo; as used above where formName parameter is reserved; if the form is active, the user can be directed to the specified form&lt;/li>
-&lt;/ul>
+&lt;/ol>
 &lt;p>Now that you have been introduced to a variety of design considerations, go to the next section to learn how to use the &lt;a href="#how-to-get-started-with-global-css">Global CSS Editor&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started-with-global-css">How to get started with Global CSS&lt;/h2>
 &lt;p>To create a global design and give you the flexibility to change the workspace, use the Global CSS file. You can use the file to target for example buttons in a particular application.&lt;/p>
@@ -935,14 +937,14 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;li>
 &lt;p>Navigate to &lt;strong>Administration&lt;/strong> in the left-hand side menu, and click on &lt;strong>Developer&lt;/strong>. This will bring you to the &lt;strong>Developer resources&lt;/strong> page.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Developer resources page&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/widgetview2.jpg" alt="Widget view">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/widgetview.gif" alt="Widget view">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Webhooks&lt;/strong> to create a process instance callback.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Instance Callback URLs&lt;/strong> dialog box appears.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/webhooks50.gif" alt="Webhooks">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/webhooks-oneurl.jpg" alt="Webhooks">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Use the slider to turn on the relevant callback:&lt;/p>
@@ -953,10 +955,11 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>In each case &lt;strong>type in the URL&lt;/strong> to respond to process instance create, update and deleted events.&lt;/p>
+&lt;p>In each case &lt;strong>type in the URL&lt;/strong> to respond to process instance create, update and deleted events. Note that in each case, you can add more than one function, but use only &lt;strong>one URL per line&lt;/strong>, using enter/return key to move to the next line. This will allow you to update multiple services using the callback operation above.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Help&lt;/strong> button &lt;img src="https://docs.kianda.com/images/webhookhelp.PNG" alt="Help button"> for clarification.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/callback-helptext.jpg" alt="Callback helptext">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> when done or click on &lt;strong>Close&lt;/strong> at any stage to close the dialog box.&lt;/p>
