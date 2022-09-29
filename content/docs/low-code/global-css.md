@@ -4,7 +4,11 @@ weight: 6
 typora-root-url: ..\..\..\static
 ---
 
-Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace **Administrator** you can add a **Global CSS File** to make changes to the **look and feel** of the site as well as the **functionality of processes**. You can use the file to **target** very specific details, for example a button in a particular process as shown below. This code will create specific styling for a button that is defined in a form in a process using Kianda **Designer**.
+## Introduction
+
+Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace **Administrator** you can add a **Global CSS File** to make changes to the **look and feel** of the site as well as the **functionality of processes**. 
+
+You can use the file to **target** very specific details, for example a button in a particular process as shown below. This code will create specific styling for a button that is defined in a form in a process using Kianda **Designer**.
 
 ```css
 `div[data-name="btn-manager-Approve"], div[data-name="btn_approve"]{
@@ -120,14 +124,14 @@ In addition to styling forms and form elements, **modals** provide a useful way 
 A **JavaScript** **function** called `showModalForm` can be called to **display** a page in a **form** **modal**. 
 
 ```html
-<a onclick="showModalForm('demo-process',true, '&formName=SignUpform')">Open Demo Process</a>
+<a onclick="showModalForm('demo-process','demo-process-1',true, '&formName=SignUpform')">Open Demo Process</a>
 ```
 
-This function also allows you to **pass** **data** into the modal for use within that form, for example:
+This function also allows you to **pass** **data** into the modal for use within that form, typically:
 
-- **`nameOrUrl`** -  you can add in the **name of a process or add in a URL**, where the URL might be a website to open in the modal
-- `isNew` parameter - where **`true` -  creates a new process instance**, otherwise choose **`false` to open an existing process instance in preview mode**
-- **`params`** - **URL parameters** appended to the URL, for example 'SignUpform' as used above where formName parameter is reserved; if the form is active, the user can be directed to the specified form
+1. **`nameOrUrl`** -  you can add in a) **name of a process** for example `demo-process` or b) **a process instance** for example `demo-process-1` if you want to go to an existing process instance, see point 2 below, or c) **add in a URL**, where the URL might be a website to open in the modal
+2. `isNew` parameter - where **`true`  creates a new process instance**, otherwise choose **`false` to open an existing process instance in preview mode** and provide the name of the instance as mentioned in b) above.
+3. **`params`** - **URL parameters** appended to the URL, for example 'SignUpform' as used above where formName parameter is reserved; if the form is active, the user can be directed to the specified form
 
 Now that you have been introduced to a variety of design considerations, go to the next section to learn how to use the [Global CSS Editor](#how-to-get-started-with-global-css).
 

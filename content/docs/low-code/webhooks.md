@@ -20,21 +20,25 @@ You must have an **Administrator** or **Developer** role see [Users & Groups](/d
 
    ***Developer resources page***
 
-   ![Widget view](/images/widgetview2.jpg)
+   ![Widget view](/images/widgetview.gif)
 
 2. Click on **Webhooks** to create a process instance callback.
 
 3. The **Instance Callback URLs** dialog box appears.
 
-   ![Webhooks](/images/webhooks50.gif)
+   ![Webhooks](/images/webhooks-oneurl.jpg)
 
 4. Use the slider to turn on the relevant callback:
    - **Enable Created Callback** - this will enable a URL callback every time a process instance is **updated**. This results in a **HTTP GET request** with parameters `instanceID={instanceID}, processName={processName}` and **`eventType=created`** being issued to the given URL.
    - **Enable Updated Callback** - this will enable a URL callback every time a process instance is **updated**. This results in a **HTTP GET request** with parameters `instanceID={instanceID}, processName={processName}` and **`eventType=updated`** being issued to the given URL.
    - **Enable Deleted Callback** - this will enable a URL callback every time a process instance is **deleted**. This results in a **HTTP GET request** with parameters `instanceID={instanceID}, processName={processName}` and **`eventType=deleted`** being issued to the given URL.
-5. In each case **type in the URL** to respond to process instance create, update and deleted events. 
+
+5. In each case **type in the URL** to respond to process instance create, update and deleted events. Note that in each case, you can add more than one function, but use only **one URL per line**,  using enter/return key to move to the next line. This will allow you to update multiple services using the callback operation above.
 
 6. Click on the **Help** button ![Help button](/images/webhookhelp.PNG) for clarification. 
+
+   ![Callback helptext](/images/callback-helptext.jpg)
+
 7. Click on **OK** when done or click on **Close** at any stage to close the dialog box.
 
    
