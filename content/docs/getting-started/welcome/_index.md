@@ -1,6 +1,5 @@
 ---
 title: "Welcome to Kianda"
-linkTitle: "Welcome to Kianda"
 weight: 1
 typora-root-url: ..\..\..\..\static
 ---
