@@ -25,6 +25,12 @@ Key things to note:
 - Assign form flow > see Assign form rule and Send email rule
 
 
+<video width="100%" style="width:100%" controls>
+    <source src="/videos/Examples/Nonconformity-details/NonconformityDetailsForm.mp4">
+    Your browser does not support the video tag.
+    </source>
+</video>
+
 
 ## Auditor review
 
@@ -34,6 +40,12 @@ Key things to note:
 
 - Action list
 - Add new action button
+
+<video width="100%" style="width:100%" controls>
+    <source src="/videos/Examples/AuditorReviewForm.mp4">
+    Your browser does not support the video tag.
+    </source>
+</video>
 
 
 
@@ -45,7 +57,11 @@ Key things to note:
 
 - Use of field group to fill out information
 
-  
+<video width="100%" style="width:100%" controls>
+    <source src="/videos/Examples/ActionConfirmationForm-Retake.mp4">
+    Your browser does not support the video tag.
+    </source>
+</video>
 
 ## Closure
 
