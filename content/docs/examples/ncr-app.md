@@ -33,7 +33,7 @@ Key things to note:
 
 
 <video width="100%" style="width:100%" controls>
-    <source src="/videos/Examples/Nonconformity-details/NonconformityDetailsForm.mp4">
+    <source src="/videos/Examples/NonconformityDetailsForm.mp4">
     Your browser does not support the video tag.
     </source>
 </video>
