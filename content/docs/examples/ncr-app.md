@@ -1,6 +1,6 @@
 ---
 title: "Non-Conformance Report"
-linkTitle: "Example use cases"
+linkTitle: "Nonconformance Report"
 weight: 6
 typora-root-url: ..\..\..\static
 ---
@@ -13,7 +13,14 @@ This introduction describes:
 - how the process flows
 - the user perspective of the process 
 
+<video width="100%" style="width:100%" controls>
+    <source src="/videos/Examples/Slide-show.mp4">
+    Your browser does not support the video tag.
+    </source>
+</video>
 
+
+<script src="/videos/Examples/Nonconformity-details/scripts/embedded-smart-player.min.js"></script>
 
 ## Non conformance details form
 
