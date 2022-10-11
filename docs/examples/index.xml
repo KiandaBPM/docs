@@ -1,58 +1,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Example Use Cases</title><link>https://docs.kianda.com/docs/examples/</link><description>Recent content in Example Use Cases on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/examples/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Non-Conformance Report</title><link>https://docs.kianda.com/docs/examples/ncr-app/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/ncr-app/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>This introduction describes:&lt;/p>
+&lt;p>In this example we will show how we can create a Nonconformance Process and step through the logic behind the rules and fields within each of the forms:&lt;/p>
 &lt;ul>
-&lt;li>who is involved in the process&lt;/li>
-&lt;li>how the process flows&lt;/li>
-&lt;li>the user perspective of the process&lt;/li>
+&lt;li>a &lt;strong>Nonconformity Details Form&lt;/strong> which is completed by a company employee, reporting a nonconformance within a company.&lt;/li>
+&lt;li>an &lt;strong>Auditor Review Form&lt;/strong> which will be completed by an &lt;strong>Auditor&lt;/strong> that reviews the nonconformance and has the ability to create an action plan along with individual actions that will be sent via email to responsibly employees.&lt;/li>
+&lt;li>an &lt;strong>Action Confirmation Form&lt;/strong> which will be completed by a supervisor within in the company. This form is used to confirm that all actions from the auditor review form were completed.&lt;/li>
+&lt;li>a &lt;strong>Closure Form&lt;/strong> which is completed by a manager within the company. This form is used to select the outcome of the plan to resolve the nonconformance.&lt;/li>
 &lt;/ul>
+&lt;p>The result at the end of the process is an email to both the originator and a site manager, who receive a &lt;strong>PDF&lt;/strong> report of the nonconformance.&lt;/p>
+&lt;p>The process will use &lt;strong>utility panels&lt;/strong> to hold form fields and values, not visible to the end user, but these will be used with rules to automate the process.&lt;/p>
+&lt;p>You can download the process file which you will be able to import to your own subscription and examine the process in full detail. Click on the following link to download the &lt;strong>.kianda&lt;/strong> file: &lt;a download="non-conformance-process.kianda" href="https://docs.kianda.com/files" title="Nonconformance Process">Nonconformance Process
+&lt;/a>&lt;/p>
+&lt;p>The following image is a step by step roadmap of our process:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ncr-roadmap.jpg" alt="Nonconformance Process Roadmap">&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Nonconformance introductory video going through the idea of the process and what can be done with it. We are also introducing staff that will help to understand the process and the workflow between users and its forms.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/Examples/Slide-show.mp4">
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-&lt;script src="https://docs.kianda.com/videos/Examples/Nonconformity-details/scripts/embedded-smart-player.min.js">&lt;/script>
 &lt;h2 id="non-conformance-details-form">Non conformance details form&lt;/h2>
-&lt;p>This section describes the purpose of this form, and an outline kind of information that is captured.&lt;/p>
-&lt;p>Key things to note:&lt;/p>
-&lt;ul>
-&lt;li>Configuration panel&lt;/li>
-&lt;li>Assign form flow &amp;gt; see Assign form rule and Send email rule&lt;/li>
-&lt;/ul>
+&lt;p>This section describes the purpose of the &lt;strong>Nonconformance details&lt;/strong> form, and an outline kind of information that is captured. In this form we will focus our attention to a &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email&lt;/a> rules. We will be using the send email rule across the process and therefore the logic behind implementing it will be the same. We will also focus on a &lt;strong>Configuration&lt;/strong> panel that will be invisible to users. Will use the panel to store a template for our report and have a few fields that will help us when creating a name for the report. In combination with our &lt;strong>Closure&lt;/strong> form, we will also take a quick look at the &lt;a href="https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/">Kianda Word add-in&lt;/a> to create a template for our report.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/Examples/NonconformityDetailsForm.mp4">
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
 &lt;h2 id="auditor-review">Auditor review&lt;/h2>
-&lt;p>This section describes the purpose of this form, and an outline kind of information that is captured.&lt;/p>
-&lt;p>Key things to note:&lt;/p>
-&lt;ul>
-&lt;li>Action list&lt;/li>
-&lt;li>Add new action button&lt;/li>
-&lt;/ul>
+&lt;p>This section describes the purpose of the &lt;strong>Auditor review&lt;/strong> form, and an outline kind of information that is captured. In this form we will focus our attention individual actions that the &lt;strong>Auditor&lt;/strong> can create to match his &lt;strong>Plan&lt;/strong> and &lt;strong>Implementation&lt;/strong>. We will use a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table&lt;/a> and a &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/dialog/">Dialog&lt;/a> fields as well as a &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/loop-table/">Loop table&lt;/a> rule to create the desired functionality.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/Examples/AuditorReviewForm.mp4">
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
 &lt;h2 id="action-confirmation">Action confirmation&lt;/h2>
-&lt;p>This section describes the purpose of this form, and an outline kind of information that is captured.&lt;/p>
-&lt;p>Key things to note:&lt;/p>
-&lt;ul>
-&lt;li>Use of field group to fill out information&lt;/li>
-&lt;/ul>
+&lt;p>This section describes the purpose of the &lt;strong>Action confirmation&lt;/strong> form, and an outline kind of information that is captured. In this form we will focus our attention on a &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/field-group/">Field group&lt;/a> that allows us to mirror fields from different forms within our process and group them together. The &lt;strong>Field group&lt;/strong> prevents us from &lt;strong>re-creating&lt;/strong> fields as the values from the original field will be copied into the field inside of the field group.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/Examples/ActionConfirmationForm-Retake.mp4">
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
 &lt;h2 id="closure">Closure&lt;/h2>
-&lt;p>This section describes the purpose of this form, and an outline kind of information that is captured.&lt;/p>
-&lt;p>Key things to note:&lt;/p>
-&lt;ul>
-&lt;li>Generating the pdf &amp;gt; see Document generation&lt;/li>
-&lt;/ul>
+&lt;p>This section describes the purpose of the &lt;strong>Closure&lt;/strong> form, and an outline kind of information that is captured. In this form we will focus our attention on a &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/">Schedule a rule&lt;/a> and a &lt;a href="https://docs.kianda.com/docs/platform/rules/files/generate-word-document/">Generate word document&lt;/a> rules. We will use those rules in combination with the resources from our &lt;strong>Nonconformity details&lt;/strong> form and more specifically the template that is stored within a configuration panel.&lt;/p>
+&lt;video width="100%" style="width:100%" controls>
+&lt;source src="https://docs.kianda.com/videos/Examples/Closure.mp4">
+Your browser does not support the video tag.
+&lt;/source>
+&lt;/video>
+&lt;h2 id="dashboard">Dashboard&lt;/h2>
+&lt;p>Kianda &lt;strong>dashboards&lt;/strong> deliver a convenient way to provide insights into how your business processes are performing. Kianda dashboards offer easy reporting, permissions management, quick build, condition-based filtering and many more features.&lt;/p>
+&lt;p>From lists to tiles, filter and charts, dashboards allow you to build full digital experiences to monitor your real-time processes in a few minutes. To learn more about dashboards go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard pages&lt;/a>.&lt;/p>
+&lt;p>You can also examine how a dashboard was made for our Inspection process example by going to &lt;a href="https://docs.kianda.com/docs/examples/inspection/dashboard/">Simple Inspection process&lt;/a>.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>You can create a &lt;strong>Dashboard page&lt;/strong> to show the status completion of the process.&lt;/p>
 &lt;p>This process is available as a downloadable .kianda file here.&lt;/p></description></item><item><title>Docs: Simple Inspection process</title><link>https://docs.kianda.com/docs/examples/inspection/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/</guid><description>
