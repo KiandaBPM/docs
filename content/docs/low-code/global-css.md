@@ -11,7 +11,7 @@ Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that form
 You can use the file to **target** very specific details, for example a button in a particular process as shown below. This code will create specific styling for a button that is defined in a form in a process using Kianda **Designer**.
 
 ```css
-`div[data-name="btn-manager-Approve"], div[data-name="btn_approve"]{
+div[data-name="btn-manager-Approve"], div[data-name="btn_approve"]{
     color: white;
     background-color: black;
     padding-bottom: 1px;
@@ -129,7 +129,7 @@ A **JavaScript** **function** called `showModalForm` can be called to **display*
 
 This function also allows you to **pass** **data** into the modal for use within that form, typically:
 
-1. **`nameOrUrl`** -  you can add in a) **name of a process** for example `demo-process` or b) **a process instance** for example `demo-process-1` if you want to go to an existing process instance, see point 2 below, or c) **add in a URL**, where the URL might be a website to open in the modal
+1. **`nameOrUrl`** -  you can add in a) **name of a process** for example `demo-process` or b) **a process instance** for example `demo-process-1` if you want to go to an existing process instance, and set the next parameter to `false` see point 2 below, or c) **add in a URL**, where the URL might be a website to open in the modal.
 2. `isNew` parameter - where **`true`  creates a new process instance**, otherwise choose **`false` to open an existing process instance in preview mode** and provide the name of the instance as mentioned in b) above.
 3. **`params`** - **URL parameters** appended to the URL, for example 'SignUpform' as used above where formName parameter is reserved; if the form is active, the user can be directed to the specified form
 
