@@ -39,7 +39,7 @@ You can use a connected app to integrate external applications with the Salesfor
 
    - **Authorize** - allows you to authorize the connection with your Connected App and Kianda. When you click this button, a Salesforce window will open allowing you to log in into Salesforce to authenticate your account.
 
-4. When you have added File system details, you are ready to test your connection and add security. At the bottom of the **File system details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
+4. When you have added Salesforce details, you are ready to test your connection and add security. At the bottom of the **Salesforce details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
 
 5. Click on **Save** ![Save connection button](/images/save-connection.jpg) to save the connection and you will receive a notification saying **Details saved successfully**.
 
