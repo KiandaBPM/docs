@@ -14,13 +14,19 @@ You can use the PowerShell connector when you want run a PowerShell script from 
 
 In advance of using the PowerShell data connector, there are a couple of prerequisites to establish a working connection between your PowerShell scripts and Kianda.
 
+1. [Downloading Kianda Cloud Connect](/docs/platform/connectors/powershell/#downloading-kianda-cloud-connect)
+2. [Creating a new local PowerShell user](/docs/platform/connectors/powershell/#creating-a-new-local-powershell-user)
+3. [Changing user rights assignment](/docs/platform/connectors/powershell/#changing-user-rights-assignment)
+4. [Changing Execution Policy for the new user](/docs/platform/connectors/powershell/#changing-execution-policy-for-the-new-user)
+5. [Running Kianda Cloud Connect as PowerShell user](/docs/platform/connectors/powershell/#running-kianda-cloud-connect-as-powershell-user)
+
 ### Downloading Kianda Cloud Connect
 
 **Kianda Cloud Connect** is a piece of software that **establishes a connection** between your **local machine** and your **Kianda subscription**. This lightweight app will sit on your PC or server where files reside that you need to use in Kianda processes. It allows the data to **travel** from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example **Deleting** a file or **Creating** one. 
 
 To learn more about how to download and create a connection between your Kianda subscription and Kianda Cloud Connect go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
 
-### Creating a PowerShell new local user
+### Creating a new local PowerShell user
 
 We need to create a local user on your computer and designate it when running the Kianda Cloud Connect app on your computer. On the newly created local user, we will enable the ability to run PowerShell scripts and use this user as a link between Kianda Cloud Connect and your PowerShell scripts. Follow the steps bellow:
 
@@ -40,7 +46,7 @@ We need to create a local user on your computer and designate it when running th
 
 
 
-### Changing User Rights Assignment
+### Changing user rights assignment
 
 In order for PowerShell and Kianda Cloud Connect to work successfully, we need to add our new user to the Rights Assignment list.
 
