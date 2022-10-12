@@ -665,11 +665,203 @@
 &lt;/ol>
 &lt;h2 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Your &lt;strong>SQL Server connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: PowerShell</title><link>https://docs.kianda.com/docs/platform/connectors/powershell/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/powershell/</guid><description>
-&lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>PowerShell&lt;/strong>. With the PowerShell connector you are able to use PowerShell scripts from within Kianda. You can call your scripts with the &lt;strong>Data rules&lt;/strong> that are available in Kianda, use &lt;strong>input mapping&lt;/strong> to pass &lt;strong>parameters&lt;/strong> to your PowerShell script and &lt;strong>receive&lt;/strong> the &lt;strong>outcome&lt;/strong> of the script using results mapping. To learn more about input and result mapping visit one of the Data rules, for example &lt;a href="https://docs.kianda.com/docs/platform/rules/data/create-item/">Create Item&lt;/a>.&lt;/p>
+&lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>PowerShell&lt;/strong>. PowerShell is a command-line interface &lt;strong>(CLI)&lt;/strong> based tool that allows to automate tasks and configurations using code. With PowerShell you are able to create scripts and functionality to automate tasks within your organisation and the PowerShell connector allows you to call those PowerShell scripts from within Kianda. You can call your scripts with the &lt;strong>Data rules&lt;/strong> that are available, use &lt;strong>input mapping&lt;/strong> to pass &lt;strong>parameters&lt;/strong> to your PowerShell script and &lt;strong>receive&lt;/strong> the &lt;strong>outcome&lt;/strong> of the script using results mapping. To learn more about input and result mapping visit one of the Data rules, for example &lt;a href="https://docs.kianda.com/docs/platform/rules/data/create-item/">Create Item&lt;/a>.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
-&lt;p>You can use the DocuSign data connector when a process your have created requires you to send individual documents or envelopes to get them signed &lt;strong>electronically&lt;/strong>. With the connector you can access different types of &lt;strong>templates&lt;/strong> that you have created within your DocuSign account, &lt;strong>download&lt;/strong> documents, access already existing envelopes to see their &lt;strong>status&lt;/strong> or &lt;strong>summary&lt;/strong>.&lt;/p>
+&lt;p>You can use the PowerShell connector when you want run a PowerShell script from within your Kianda subscription. Any data that you to be passed into a script can be passed in using the input mapping functionality from Data rules. This allows you to have dynamic usage of your PowerShell scripts as you can have different value each time you call a script from Kianda.&lt;/p>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using the DocuSign data connector, you must have an account with DocuSign. This account is used to authorise a connection between your Kianda subscription and your DocuSign account itself, so that the DocuSign &lt;strong>Application Programming Interface (API)&lt;/strong> can be used. There are two types of accounts that you can create in DocuSign. An &lt;strong>ordinary&lt;/strong> account and a &lt;strong>developer&lt;/strong> account. Take note which account you have created as this information will be used to create a different connection within Kianda.&lt;/p></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
+&lt;p>In advance of using the PowerShell data connector, there are a couple of prerequisites to establish a working connection between your PowerShell scripts and Kianda.&lt;/p>
+&lt;h3 id="downloading-kianda-cloud-connect">Downloading Kianda Cloud Connect&lt;/h3>
+&lt;p>&lt;strong>Kianda Cloud Connect&lt;/strong> is a piece of software that &lt;strong>establishes a connection&lt;/strong> between your &lt;strong>local machine&lt;/strong> and your &lt;strong>Kianda subscription&lt;/strong>. This lightweight app will sit on your PC or server where files reside that you need to use in Kianda processes. It allows the data to &lt;strong>travel&lt;/strong> from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example &lt;strong>Deleting&lt;/strong> a file or &lt;strong>Creating&lt;/strong> one.&lt;/p>
+&lt;p>To learn more about how to download and create a connection between your Kianda subscription and Kianda Cloud Connect go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/p>
+&lt;h3 id="creating-a-powershell-new-local-user">Creating a PowerShell new local user&lt;/h3>
+&lt;p>We need to create a local user on your computer and designate it when running the Kianda Cloud Connect app on your computer. On the newly created local user, we will enable the ability to run PowerShell scripts and use this user as a link between Kianda Cloud Connect and your PowerShell scripts. Follow the steps bellow:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Go to start, search and open &lt;strong>Computer Management&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Go to &lt;strong>System Tools &amp;gt; Local Users and Groups &amp;gt; Users&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/powershell-pc-management.jpg" alt="New User dialog">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Users&lt;/strong> screen, &lt;strong>right click&lt;/strong> your mouse and select &lt;strong>New User&amp;hellip;&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out the &lt;strong>New User&lt;/strong> dialog box. Uncheck &lt;strong>User must change password at next login&lt;/strong> and check &lt;strong>Password never expires&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;strong>Create&lt;/strong> and then &lt;strong>Close&lt;/strong>. The new user should be added to the list.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/powershell-user.jpg" alt="New User dialog">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="changing-user-rights-assignment">Changing User Rights Assignment&lt;/h3>
+&lt;p>In order for PowerShell and Kianda Cloud Connect to work successfully, we need to add our new user to the Rights Assignment list.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Go to Start on your computer, search and open &lt;strong>Window Administrative Tools&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the Window Administrative Tools, search and open &lt;strong>Local Security Policy.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the left-hand pane go to &lt;strong>Local Policies &amp;gt; User Rights Assignment.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the right-hand pane of User Rights Assignment, search and double left-click &lt;strong>Log on as a service&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/powershell-lsp.jpg" alt="Local Security Policy">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Log on as a service Properties&lt;/strong> dialog box, click on &lt;strong>Add User or Group&amp;hellip;&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select Users or Groups&lt;/strong> dialog box, under the &lt;strong>Enter the object names to select&lt;/strong> text box, enter your new user and click on &lt;strong>Check Names&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Log on as a service Properties&lt;/strong> dialog box, click &lt;strong>Apply&lt;/strong> and then &lt;strong>OK&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="changing-execution-policy-for-the-new-user">Changing Execution Policy for the new user&lt;/h3>
+&lt;p>With our new user created, we also need to allow PowerShell scripts to be executed by it and therefore we need to change Execution Policy for our newly created user. This will allow Kianda Cloud Connect to run scripts using the user that was created.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Log in to your computer as your new PowerShell user.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Go to &lt;strong>Start&lt;/strong> and search for &lt;strong>Windows PowerShell&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Right-click on &lt;strong>Windows PowerShell&lt;/strong> and select &lt;strong>run as administrator&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/powershell-cli.jpg" alt="Windows PowerShell run as admin">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the PowerShell window run the following command: &lt;code> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Answer yes to change of policy question by entering &lt;code>y&lt;/code> into the PowerShell console.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can now close the PowerShell console and log back into your original user.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="running-kianda-cloud-connect-as-powershell-user">Running Kianda Cloud Connect as PowerShell user&lt;/h3>
+&lt;p>Now when we have our user created, the rights and policy have been changed, we need to set up our Kianda Cloud Connect service to run as our newly created user. Log into your original user and follow the steps below:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Go to Start, search and open &lt;strong>Services&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Look for &lt;strong>Kianda Cloud Connect&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/powershell-services.jpg" alt="Local Security Policy">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Right click on the Kianda Cloud Connect service and open the &lt;strong>properties&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Kianda Cloud Connect Properties (Local Computer)&lt;/strong> dialog box, go to &lt;strong>Log on&lt;/strong> tab.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/powershell-KCC.jpg" alt="Local Security Policy">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select &lt;strong>This account&lt;/strong> radio button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Browse&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the Select User dialog box, in the &lt;strong>Enter the object names to select&lt;/strong> text box, enter the name of your user and click &lt;strong>Check Names&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Kianda Cloud Connect Properties (Local Computer)&lt;/strong> dialog box, enter the password for your user, click &lt;strong>Apply&lt;/strong> and then &lt;strong>OK&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Your Kianda Cloud Connect should be logged on as your new user. You can see this in the Log on as tab in the Services window. In the Services window, &lt;strong>stop&lt;/strong> and &lt;strong>start&lt;/strong> Kianda Cloud Connect.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/powershell-services2.jpg" alt="Local Security Policy">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>Salesforce&lt;/strong> from the list of data sources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will be automatically brought to the &lt;strong>Salesforce details&lt;/strong> page, where you can start setting up the connection.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/powershell-details.jpg" alt="File system detail page">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your PowerShell connector. The display name is used to identify your connector.&lt;/li>
+&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is enabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between the &lt;strong>PowerShell connector&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.
+&lt;ul>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that contains your PowerShell scripts and &lt;code>config.json&lt;/code> file&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Status&lt;/strong> - represents the current status of the connection.
+&lt;ul>
+&lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed.&lt;/li>
+&lt;li>&lt;strong>test failed&lt;/strong> - means that the details of the connector are incorrect and the connection has failed.&lt;/li>
+&lt;li>&lt;strong>ready&lt;/strong> - means that the connector has successfully connected and its ready to be used.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added PowerShell details, you are ready to test your connection and add security. At the bottom of the &lt;strong>PowerShell Connector&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="adding-new-powershell-scripts-to-your-connector">Adding new PowerShell scripts to your connector&lt;/h3>
+&lt;p>When installing Kianda Cloud Connect, a folder called &lt;strong>PowerShellScripts&lt;/strong> should be located at:&lt;/p>
+&lt;p>&lt;code>C:/Program Files (x86)/Kianda Technologies&lt;/code>&lt;/p>
+&lt;p>This folder will be used to store your a &lt;code>config.json&lt;/code>. The &lt;code>config.json&lt;/code> file is used to define new PowerShell scripts in the &lt;strong>Scripts&lt;/strong> array. &lt;strong>Import to note&lt;/strong> is to put the correct path to your script in the &lt;code>Path&lt;/code> parameter of your script object and to set the &lt;code>Enabled&lt;/code> parameter to &lt;code>true&lt;/code>. In the image below, you can see an example of a &lt;code>config.json&lt;/code> file that contains one &lt;strong>Script Object&lt;/strong> in the &lt;code>Scripts&lt;/code> array. To define more scripts in the array, simply add another &lt;strong>Script Object&lt;/strong> to your array by separating them with a &lt;code>,&lt;/code> (comma).&lt;/p>
+&lt;h6 id="configjson-file">&lt;em>config.json file:&lt;/em>&lt;/h6>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Notes&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;This is the PowerShell manifest file. System administrators can define new PowerShell scripts under the &amp;#39;Scripts&amp;#39; array&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Scripts&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Description&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Sample PowerShell module used to add days to now date&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;AddDaysToNow&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Path&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;C:\\Program Files (x86)\\Kianda Technologies\\PowerShellScripts/AddDaysToNow.ps1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Enabled&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">true&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Parameters&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Description&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Days&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;NUMBER&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Value&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>Parameters&lt;/code> array is used to define dynamic &lt;strong>parameters&lt;/strong> for example to pass in values from Kianda into your PowerShell script. Taking the above &lt;code>config.json&lt;/code> file and the below &lt;code>AddDaysToNow.ps1&lt;/code> file as an example:&lt;/p>
+&lt;h6 id="adddaystonowps1-file">&lt;em>AddDaysToNow.ps1 file:&lt;/em>&lt;/h6>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-powershell" data-lang="powershell">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">Param&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">[int]&lt;/span>&lt;span style="color:#000">$Days&lt;/span> &lt;span style="color:#000;font-weight:bold">=&lt;/span> &lt;span style="color:#000">2&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">$Now&lt;/span> &lt;span style="color:#000;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87">Get-Date&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">$Date&lt;/span> &lt;span style="color:#000;font-weight:bold">=&lt;/span> &lt;span style="color:#000">$Now&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">AddDays&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">$Days&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">$Date&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">ToString&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;dd/MM/yyyy&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In our Script Object of our &lt;code>config.json&lt;/code> file we have a parameter called &lt;strong>Days&lt;/strong>. We also define a &lt;strong>Days&lt;/strong> parameter in our &lt;code>AddDaysToNow.ps1&lt;/code> file. This allows us to then access the &lt;strong>Days&lt;/strong> parameter from a Kianda process. We will use a &lt;a href="https://docs.kianda.com/docs/platform/rules/data/create-item/">Create Item&lt;/a> rule and its input and results mapping to assign a value to the &lt;strong>Days&lt;/strong> parameter and return an &lt;strong>Outcome&lt;/strong> of the script.&lt;/p>
+&lt;p>Here we have a simple Kianda process that uses the &lt;strong>PowerShell connector&lt;/strong> and uses the &lt;a href="https://docs.kianda.com/docs/platform/connectors/powershell/#configjson-file">&lt;code>config.json&lt;/code>&lt;/a> file and &lt;a href="https://docs.kianda.com/docs/platform/connectors/powershell/#adddaystonowps1-file">&lt;code>AddDaysToNow.ps1&lt;/code>&lt;/a> script from above to add a number of days to todays date.&lt;/p>
+&lt;p>In the form we have &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date field&lt;/a> to specify todays date, a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number&lt;/a> field to specify how many days we want to add to todays date, and a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box&lt;/a> field to see the &lt;strong>Outcome&lt;/strong> of the script, see the video below:&lt;/p>
+&lt;video width="100%" style="width:100%" controls>
+&lt;source src="https://docs.kianda.com/videos/connectors/powershell-create-item.mp4">
+Your browser does not support the video tag.
+&lt;/source>
+&lt;/video></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
 &lt;p>One of the data connectors that you can connect to is &lt;strong>Salesforce&lt;/strong>. Salesforce provides customer relationship management software and applications focused on sales, customer service, marketing automation, and analytics. The Salesforce data connector allows you to access information from your Salesforce account which can then be used within your Kianda subscription.&lt;/p>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
 &lt;p>In advance of using the Salesforce data connector, you must have an account with Salesforce which is used to obtain information for a successful connection. If you have an account with Salesforce, all you need to create within the Salesforce application is a &lt;strong>Connected App&lt;/strong>. These connected apps within Salesforce enable external applications to integrate together using its APIs. The connected app will provide you with a &lt;strong>Consumer Key&lt;/strong> and a &lt;strong>Consumer Secret&lt;/strong>. These consumer information are used to establish the connection between your Connected app in Sales force and your Kianda subscription, to learn how to acquire the Consumer Key and Consumer Secret go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/salesforce/#acquiring-consumer-key-and-consumer-secret">Acquiring Consumer Key and Consumer Secret&lt;/a>. In order to successfully connect your Connected App and Kianda, the &lt;strong>settings&lt;/strong> of the Connected App in your salesforce account need to be &lt;strong>configured&lt;/strong>, to learn how to configure your Connected App in Salesforce go to &lt;a href="">Configuring Salesforce Connected App&lt;/a>.&lt;/p>
@@ -714,7 +906,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>When you have added File system details, you are ready to test your connection and add security. At the bottom of the &lt;strong>File system details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;p>When you have added Salesforce details, you are ready to test your connection and add security. At the bottom of the &lt;strong>Salesforce details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
