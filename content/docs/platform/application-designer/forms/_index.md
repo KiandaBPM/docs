@@ -35,7 +35,7 @@ As you work with Kianda **Designer** you are designing the 'user interface' for 
    
      Only the form that has the status ‘**current form’** **is editable** by a form owner (see point 3 below). In a complex multi-step process, several forms can be configured to **activate with** the current form, meaning they are also editable at the same time, creating a **form group**, see section 2 of [New form creation](#new-f		orm-creation). Rules can also be used to change the workflow and make other forms the 'current form'.
    
-     Also note that all **first forms** in a process flow add the current user as a 'form owner' allowing all users to edit the first form, since clicking on 'submit' or 'save' in the first form results in a new process instance.
+     Also note that **all first forms** in a process flow add the current user as a 'form owner' therefore allowing **all users** to edit the first form, as clicking on 'submit' or 'save' in the first form results in a new process instance.
 
 3. **Form owner**: The **default owner** is the person or group that the form is assigned to, this means they can **edit the <u>current</u> form(s) in a process instance**. Default owners are typically set when a form is created, see section 1 of [New form creation](#new-form-creation) below. By default, **only this person or group can edit the <u>current</u> form** in a process instance. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups. Form ownership can also be assigned dynamically using the [Assign form](/docs/platform/rules/workflow/assign-form/) rule.
 
