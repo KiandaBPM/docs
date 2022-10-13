@@ -239,34 +239,35 @@ Your browser does not support the video tag.
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Processes in Kianda are made up of &lt;strong>forms&lt;/strong>. Forms contain all the buttons, fields, and rule triggers needed to execute your process.&lt;/p>
 &lt;p>Using your &lt;strong>Administrator&lt;/strong> or &lt;strong>Design business process&lt;/strong> role, you will use Kianda &lt;strong>Designer&lt;/strong> to design &lt;strong>forms&lt;/strong> for &lt;strong>end users&lt;/strong> who will use the platform to submit, save and review information, either as named users in the platform, users who receive a link to an anonymous form, or partners who can access shared processes. These end users will create new &lt;strong>process instances&lt;/strong> or records in the system, or access &lt;strong>existing process instances&lt;/strong> which shows information that has either been &lt;strong>saved or submitted&lt;/strong> in a form.&lt;/p>
-&lt;p>When discussing forms we&amp;rsquo;ll talk about &lt;strong>form design&lt;/strong> that is creating and updating forms within a process using Kianda Designer as well &lt;strong>form use&lt;/strong> which refers to editing or reading forms in a process instance/record in the system built using the form design.&lt;/p>
-&lt;h2 id="form-principles">Form principles&lt;/h2>
-&lt;p>There are three principles to consider when working with form design:&lt;/p>
+&lt;p>When discussing forms we&amp;rsquo;ll talk about &lt;strong>form design&lt;/strong> that is creating and updating forms within a process using Kianda &lt;strong>Designer&lt;/strong> as well &lt;strong>form use&lt;/strong> which refers to end users who will edit or read forms in a process instance/record in the system, built using the &lt;strong>Designer&lt;/strong>.&lt;/p>
+&lt;h2 id="form-design-principles">Form design principles&lt;/h2>
+&lt;p>As you work with Kianda &lt;strong>Designer&lt;/strong> you are designing the &amp;lsquo;user interface&amp;rsquo; for users to interact with a particular process. Keeping the end user in mind, there are three design principles:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;strong>Reading modes&lt;/strong>: &lt;strong>Form users&lt;/strong> can either use/access forms in &lt;strong>edit&lt;/strong> mode or &lt;strong>read&lt;/strong> mode. Edit mode means that users can submit information, while read mode means that users can only view forms. The latter may be useful for example for certain staff to review customer feedback in a form, but not be able to change/edit it.&lt;/p>
+&lt;p>&lt;strong>Reading modes&lt;/strong>: &lt;strong>Form users&lt;/strong> can either use/access forms in &lt;strong>edit&lt;/strong> mode or &lt;strong>read&lt;/strong> mode. Edit mode means that users can submit information, while read mode means that users can only view forms. The latter may be useful for example for certain staff to review customer feedback in a form, but not be able to change/edit the feedback form.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Current form&lt;/strong>: Typically there are several forms in a process, and by default, the &lt;strong>first form&lt;/strong> in a process is the &lt;strong>current form&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Current form&lt;/strong>: Typically there are several forms in a process, and by default the &lt;strong>first form&lt;/strong> in a process is the &lt;strong>current form&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/3-form-example.jpg" alt="Three form process example">&lt;/p>
-&lt;p>For example in the Training Attendance Process above, the process flow would be:&lt;/p>
+&lt;p>For example in the Training Attendance Process above, the process flow is as follows:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>be an employee initiates a process instance by filling out the &lt;strong>Training Request&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Training Request&lt;/strong> - an employee initiates a process instance by filling out this form&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>a manager approves the request via a &lt;strong>Training Approval&lt;/strong> form&lt;/p>
+&lt;p>&lt;strong>Training Approval&lt;/strong> - the manager approves the request using this form&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>when training approval occurs, a trainer invites the employee to training and training is complete, the trainer completes a &lt;strong>Training Attendance&lt;/strong> evaluation of the employee.&lt;/p>
+&lt;p>&lt;strong>Training Attendance&lt;/strong> - when training approval occurs, a trainer invites the employee to attend training and once complete, the trainer completes a this form to evaluate the employee&amp;rsquo;s participation.&lt;/p>
+&lt;p>Therefore when a process instance is initiated upon submission of the &lt;strong>Training Request&lt;/strong> form, then the next form in the process becomes the &lt;strong>current form&lt;/strong>, in this case the &lt;strong>Training Approval&lt;/strong> form.&lt;/p>
+&lt;p>Only the form that has the status ‘&lt;strong>current form’&lt;/strong> &lt;strong>is editable&lt;/strong> by a form owner (see point 3 below). In a complex multi-step process, several forms can be configured to &lt;strong>activate with&lt;/strong> the current form, meaning they are also editable at the same time, creating a &lt;strong>form group&lt;/strong>, see section 2 of [New form creation](#new-f orm-creation). Rules can also be used to change the workflow and make other forms the &amp;lsquo;current form&amp;rsquo;.&lt;/p>
+&lt;p>Also note that all &lt;strong>first forms&lt;/strong> in a process flow add the current user as a &amp;lsquo;form owner&amp;rsquo; allowing all users to edit the first form, since clicking on &amp;lsquo;submit&amp;rsquo; or &amp;lsquo;save&amp;rsquo; in the first form results in a new process instance.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ol>
-&lt;p>​ Therefore when a process instance is initiated as a result of an employee submitting a request, then the next form in the process becomes the &lt;strong>current form&lt;/strong>, in this case the &lt;strong>Training Approval&lt;/strong> form.&lt;/p>
-&lt;p>​ Only the form that has the status ‘&lt;strong>current form’&lt;/strong> &lt;strong>is editable&lt;/strong>. However, in a complex multi-step process, other forms can be configured to &lt;strong>activate with&lt;/strong> the current form, meaning they are also editable at the same time, creating a &lt;strong>form group&lt;/strong>, see section 2 of [New form creation](#new-f orm-creation). Rules can also be used to make forms the &amp;lsquo;current form&amp;rsquo;.&lt;/p>
-&lt;ol start="3">
-&lt;li>&lt;strong>Form owner&lt;/strong>: The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to, this means they can &lt;strong>edit the &lt;u>current&lt;/u> form(s) in a process instance&lt;/strong>. Default owners are typically set when a form is created, see section 1 of &lt;a href="#new-form-creation">New form creation&lt;/a> below . By default, &lt;strong>only this person or group can edit the &lt;u>current&lt;/u> form&lt;/strong> in a process instance. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups. Form ownership can also be assigned dynamically using the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a> rule.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form owner&lt;/strong>: The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to, this means they can &lt;strong>edit the &lt;u>current&lt;/u> form(s) in a process instance&lt;/strong>. Default owners are typically set when a form is created, see section 1 of &lt;a href="#new-form-creation">New form creation&lt;/a> below. By default, &lt;strong>only this person or group can edit the &lt;u>current&lt;/u> form&lt;/strong> in a process instance. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups. Form ownership can also be assigned dynamically using the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a> rule.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;p>These three considerations are established when the form is created, as seen in the dialog box below, and these parameters can be updated at any time by editing the form design. These properties can also change &lt;strong>dynamically&lt;/strong> as a result of &lt;strong>implementing rules&lt;/strong>, for example the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/">Go to form&lt;/a> rule can change the workflow in a process.&lt;/p>
 &lt;h3 id="new-form-creation">New form creation&lt;/h3>
