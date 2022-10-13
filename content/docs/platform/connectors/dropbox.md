@@ -49,7 +49,7 @@ When you use the **Dropbox** datasource, there are **default parameters** invoke
 
 ![File system parameters](/images/dropbox-parameters.jpg)
 
-The File system parameters that appear in those three dropdown fields are:
+The Dropbox parameters that appear in those three dropdown fields are:
 
 - **Name** - name of the file including the extension.
 - **NameNoExtension** - name of the file without the extension.
