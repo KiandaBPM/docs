@@ -1,5 +1,5 @@
 ---
-title: "Google drive"
+title: "Google Drive"
 weight: 9
 typora-root-url: ..\..\..\..\static
 ---

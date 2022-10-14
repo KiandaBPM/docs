@@ -124,9 +124,9 @@ Now when we have our user created, the rights and policy have been changed, we n
 
 1. From the Kianda home page, click on **Administration** > **Data sources**.
 
-2. Click on **+ Add new** button ![Add new data connector button](/images/addnew.png) and choose **Salesforce** from the list of data sources provided.
+2. Click on **+ Add new** button ![Add new data connector button](/images/addnew.png) and choose **PowerShell** from the list of data sources provided.
 
-3. You will be automatically brought to the **Salesforce details** page, where you can start setting up the connection. 
+3. You will be automatically brought to the **PowerShell details** page, where you can start setting up the connection. 
 
    ![File system detail page](/images/powershell-details.jpg)
 

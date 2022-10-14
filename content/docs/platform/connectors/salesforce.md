@@ -94,4 +94,4 @@ Before starting going through the steps below you must ensure that you have a Co
 
 ## What's next  ![Idea icon](/images/18.png) ##
 
-Your **SharePoint service** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).
+Your **Salesforce service** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).
