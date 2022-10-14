@@ -1,7 +1,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Welcome to Kianda</title><link>https://docs.kianda.com/docs/</link><description>Recent content in Welcome to Kianda on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Active directory</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Add time to date</title><link>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</guid><description>
+&lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>Active Directory&lt;/strong> (&lt;strong>AD&lt;/strong>) also known as &lt;strong>Active Directory Domain Services&lt;/strong> (&lt;strong>AD DS&lt;/strong>). AD is a logical and hierarchical structured data store of objects which are mostly accounts. Accounts such as &lt;strong>Users, Computers, Groups&lt;/strong> and other objects such as &lt;strong>Printers&lt;/strong> or &lt;strong>Group Policy Objects&lt;/strong> (GPO). You can store information about user accounts within AD such as &lt;strong>Name, Password, Job title&lt;/strong> and &lt;strong>Permissions&lt;/strong>. Having an AD connector will allow you to access information defined from your AD from your Kianda subscription.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>Active Directory&lt;/strong> from the list of data sources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will be automatically brought to the &lt;strong>Active Directory details&lt;/strong> page, where you can start setting up the connection.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-details.jpg" alt="File system detail page">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your PowerShell connector. The display name is used to identify your connector.&lt;/li>
+&lt;li>&lt;strong>Directory path&lt;/strong> - enter in the path to the directory. The path must be LDAP or GC.&lt;/li>
+&lt;li>&lt;strong>AD User&lt;/strong> - enter in the domain and user that you want to connect to. To specify the domain and user correctly use the following format: &lt;code>&amp;lt;domain&amp;gt;/&amp;lt;username&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Password&lt;/strong> - enter in the password used to login for the desired user.&lt;/li>
+&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is enabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between the &lt;strong>Active Directory connector&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.
+&lt;ul>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that is running the Active Director server.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Status&lt;/strong> - represents the current status of the connection.
+&lt;ul>
+&lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed.&lt;/li>
+&lt;li>&lt;strong>test failed&lt;/strong> - means that the details of the connector are incorrect and the connection has failed.&lt;/li>
+&lt;li>&lt;strong>ready&lt;/strong> - means that the connector has successfully connected and its ready to be used.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added PowerShell details, you are ready to test your connection and add security. At the bottom of the &lt;strong>PowerShell Connector&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Add time to date</title><link>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Add time to date&lt;/strong> rule allows you to add time to a date field in order to have a future date set within your form. This rule can remind users through set intervals to complete a process instance before a set time. An example of this rule would be entering a numeric value of &lt;strong>1&lt;/strong> into the &lt;strong>Time to add or a field&lt;/strong>, selecting &lt;strong>Days&lt;/strong> from the &lt;strong>Time unit&lt;/strong> drop-down list, and selecting &lt;strong>Today()&lt;/strong> from the &lt;strong>To date&lt;/strong> radio button options.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-screen.jpg" alt="Date rules add time to date screen">&lt;/p>
