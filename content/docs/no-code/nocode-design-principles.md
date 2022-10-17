@@ -1,6 +1,8 @@
 ---
 title: "No-code design principles"
 typora-root-url: ..\..\..\static
+toc_hide: true
+hide_summary: true
 ---
 
 ##  Getting started with the Kianda platform
@@ -13,7 +15,7 @@ Some of the underlying technologies used within the platform include CSS3, HTML5
 
 Using a MVC approach allows that data, captured within forms and fields, to instantly react or trigger declarative rules defined on fields, forms or at process level via the **rules engine**. This combined with conditional logic is used by designers to build ambitious progressive web applications or end-to-end digital business processes that offer both a great UI and high performance.
 
-![Platform areas](/images/platform-areas.png)
+![Platform areas](/images/Platform-areas.png)
 
 
 
@@ -27,8 +29,6 @@ Using a MVC approach allows that data, captured within forms and fields, to inst
 These two components (rule blocks and conditional logic) are used extensively and recursively by designers to build the required orchestration of actions or rules that react of interact with data to provide the required functionality for your apps or processes.
 
 In summary the Kianda platform provides an ideal interface for rapid prototyping and delivering outcomes quickly.
-
-
 
 > ### What makes Kianda great is the simplicity and unbounded flexibility it gives citizen developers and low-code developers alike
 
