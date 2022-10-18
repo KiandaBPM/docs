@@ -32,8 +32,9 @@
 &lt;li>If you make a mistake, or form owners need to be changed in an existing process, click on the &lt;strong>x&lt;/strong> beside the name of the &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or &lt;strong>Partners&lt;/strong> to remove them and choose from the dropdown list again.&lt;/li>
 &lt;li>Add to or edit the remaining parameters in the dialog box as desired, see &lt;a href="#editing-forms/docs/platform/application-designer/designer/">Editing forms&lt;/a> and click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/li>
 &lt;/ol>
-&lt;h2 id="changing-access">Changing access&lt;/h2>
-&lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to using the &lt;strong>default owner field&lt;/strong> in the &lt;strong>new form&lt;/strong> dialog box as shown above. By default, only this person or group &lt;strong>can edit the current form&lt;/strong> in a process instance. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups. You can change form ownership or enable access in the following ways: [Changing default owners](#changing default owners), using the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign rule&lt;/a>, using &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/">Quick actions&lt;/a>.&lt;/p>
+&lt;h2 id="changing-form-access">Changing form access&lt;/h2>
+&lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to using the &lt;strong>default owner field&lt;/strong> in the &lt;strong>new form&lt;/strong> dialog box as shown above. By default, only this person or group &lt;strong>can edit the current form&lt;/strong> in a process instance. All other users can only view forms in read mode. The next section details how to [change default owners](#changing default owners).&lt;/p>
+&lt;p>It is also possible to allow other users to have edit access to forms using the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign rule&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/">Quick actions&lt;/a>.&lt;/p>
 &lt;h3 id="changing-default-owners">Changing default owners&lt;/h3>
 &lt;ol>
 &lt;li>
@@ -54,13 +55,9 @@
 &lt;p>Here you can change the default owner choosing from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong> as before.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="using-quick-actions-to-enable-access">Using quick actions to enable access&lt;/h3>
-&lt;p>As seen in the image above, there is an &lt;strong>Enable quick actions&lt;/strong> checkbox that can be checked. When this is checked there are three further checkboxes that appear.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/quick-action-checkboxes.jpg" alt="Quick action checkboxes">&lt;/p>
-&lt;p>If you check &lt;strong>Enable re-assign&lt;/strong> for instance and click the &lt;strong>ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button"> then you can select &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong> who to reassign the form to. There is also a checkbox to allow &lt;strong>form owners&lt;/strong> to reassign forms to other users.&lt;/p>
-&lt;p>If you check &lt;strong>Enable edit&lt;/strong> a user that has users who have been selected using the &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong> option, will be able to edit a form. There are also options to &lt;strong>Allow form owners&lt;/strong> to assign edit actions to other users, as well as options &lt;strong>auto hide form footer buttons&lt;/strong> when editing and &lt;strong>Trigger rules on save&lt;/strong> so that rules are triggered for that form.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/enable-edit-action-box.jpg" alt="Enable edit options">&lt;/p>
-&lt;p>If you check &lt;strong>Enable custom action&lt;/strong> a user that has users who have been selected using the &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong> option, will be able to edit a form.&lt;/p></description></item><item><title>Docs: Form display modes</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</guid><description>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To learn more about rules including &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign rule&lt;/a> go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
+&lt;p>To find out how forms work within processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/">Process&lt;/a>.&lt;/p></description></item><item><title>Docs: Form display modes</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/form-display-modes/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Remember there are three principles to consider when working with forms:&lt;/p>
 &lt;ul>
@@ -103,10 +100,11 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about form ownership go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owner&lt;/a>.
 To read more about quick actions, go to &lt;a href="docs/platform/application-designer/forms/form-quick-action/">Form quick actions menu&lt;/a>.&lt;/p></description></item><item><title>Docs: Form quick actions menu</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/</guid><description>
-&lt;p>&lt;strong>Form quick action&lt;/strong> menu will appear to designated users as a quick action menu option in the top right-hand corner of a form.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Form quick action&lt;/strong> menu will appear to designated users as a quick action menu option in the top right-hand corner of a form.&lt;/p>
 &lt;p>Depending on what type of quick actions are enabled and if you are assigned quick actions as a form user,, then you will see options when you click on the &lt;strong>quick action&lt;/strong> button &lt;img src="https://docs.kianda.com/images/quick-action-button.jpg" alt="Quick action menu">, for example to reassign a form to someone else, or to perform a custom action like signing off on a purchase order.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/quick-action-view.jpg" alt="Quick action menu">&lt;/p>
-&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To enable quick actions, click on a process with Kianda Designer and then a form of choice so that the &lt;strong>Edit&lt;/strong> (Pen) icon is visible.&lt;/p>
 &lt;ol>
 &lt;li>
@@ -123,27 +121,23 @@ To read more about quick actions, go to &lt;a href="docs/platform/application-de
 &lt;li>&lt;strong>Enable custom action&lt;/strong> - allows a form in a process instance to have customised actions associated with it, and these actions are assigned to a designated person/group&lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/setting-quick-actions.jpg" alt="Quick action menu">&lt;/p>
-&lt;p>Check the checkbox beside the desired action as necessary.&lt;/p>
+&lt;p>Check the checkbox beside the desired action as necessary. Each option is further explored below.&lt;/p>
 &lt;/li>
-&lt;li>
-&lt;p>When you check a checkbox for example &lt;strong>Enable edit&lt;/strong> then you can click on the &lt;strong>Ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis-frame" alt="Ellipsis button"> to assign users to the quick action. This opens the &lt;strong>Action settings&lt;/strong> dialog box, such as the &lt;strong>Edit action settings&lt;/strong> box shown in the image below.&lt;/p>
+&lt;/ol>
+&lt;h3 id="enable-reassignment">Enable reassignment&lt;/h3>
+&lt;p>When you check a checkbox for example &lt;strong>Enable re-assign&lt;/strong> then you can click on the &lt;strong>Ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis-frame" alt="Ellipsis button">then you can select &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong> who can be chosen to reassign the form to. There is also a checkbox to allow &lt;strong>form owners&lt;/strong> to reassign forms to other users.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/reassign-action-settings.jpg" alt="Re-assign action settings">&lt;/p>
+&lt;h3 id="enable-edit">Enable edit&lt;/h3>
+&lt;p>This opens the &lt;strong>Action settings&lt;/strong> dialog box, such as the &lt;strong>Edit action settings&lt;/strong> box shown in the image below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/edit-action-settings.jpg" alt="Edit action settings">&lt;/p>
-&lt;/li>
+&lt;ol>
 &lt;li>
-&lt;p>Options in the &lt;strong>action settings&lt;/strong> dialog box are:&lt;/p>
+&lt;p>Choose from the options in the &lt;strong>action settings&lt;/strong> dialog box:&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Action users&lt;/strong> - select the users, groups or partners who will use the action&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Allow form owners&lt;/strong> - allows form owners to use the action&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>When editing auto hide form footer buttons&lt;/strong> - hides form footer buttons when users are editing forms in a process instance&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Trigger rules on save&lt;/strong> - allows rules to be triggered when a form is saved/submitted. In this case, select the button name used as the trigger in the &lt;strong>Save action field&lt;/strong>&lt;/p>
-&lt;/li>
+&lt;li>&lt;strong>Edit action users&lt;/strong> - select the &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or &lt;strong>Partners&lt;/strong> who will use the action&lt;/li>
+&lt;li>&lt;strong>Allow form owners&lt;/strong> - allows form owners to use the action&lt;/li>
+&lt;li>&lt;strong>When editing auto hide form footer buttons&lt;/strong> - hides form footer buttons when users are editing forms in a process instance&lt;/li>
+&lt;li>&lt;strong>Trigger rules on save&lt;/strong> - allows rules to be triggered when a form is saved/submitted. In this case, select the button name used as the trigger in the &lt;strong>Save action field&lt;/strong>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -151,7 +145,8 @@ To read more about quick actions, go to &lt;a href="docs/platform/application-de
 &lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/trigger-rule-quick-action.jpg" alt="Trigger rule quick action">&lt;/p>
-&lt;p>​&lt;/p>
+&lt;h3 id="enable-custom-action">Enable custom action&lt;/h3>
+&lt;p>If you check &lt;strong>Enable custom action&lt;/strong> users who have been selected using the &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong> option, will be able to perform a customised action on a form, defined using the dialog box within this section.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/help">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Form responsive layout</title><link>https://docs.kianda.com/docs/platform/application-designer/forms/responsive-layout/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/forms/responsive-layout/</guid><description>
