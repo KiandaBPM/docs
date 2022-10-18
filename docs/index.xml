@@ -2885,9 +2885,12 @@ The Safety Team
 &lt;p>By default the &lt;strong>Submit mode&lt;/strong> for forms is &lt;strong>Only this form&lt;/strong> meaning that when a process instance is running you can choose &lt;u>only&lt;/u> that particular form can have details submitted or saved. Alternatively you can choose &lt;strong>all forms in edit mode&lt;/strong> this means that several forms can have their details submitted or saved. For example if several forms are activated together and all are in &lt;strong>edit mode&lt;/strong> then the details of all these forms can be submitted together in the database.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Forms can be statically set to allow &lt;strong>Quick actions&lt;/strong> including allowing &lt;strong>editing&lt;/strong>. When a form is created or edited using the &lt;strong>New form/Edit form&lt;/strong> dialog box, clicking on &lt;strong>Enable quick actions&lt;/strong> allows you to &lt;strong>statically&lt;/strong> enable a) &lt;strong>reassignment&lt;/strong>, b) &lt;strong>edit&lt;/strong>, and c) &lt;strong>custom actions&lt;/strong> on any form.&lt;/p>
+&lt;p>Forms can be statically set to allow &lt;strong>Quick actions&lt;/strong> including allowing &lt;strong>editing&lt;/strong>. When a form is created or edited using the &lt;strong>New form/Edit form&lt;/strong> dialog box, clicking on &lt;strong>Enable quick actions&lt;/strong> allows you to &lt;strong>statically&lt;/strong> enable:&lt;/p>
+&lt;p>a) &lt;strong>reassignment&lt;/strong> of forms&lt;/p>
+&lt;p>b) &lt;strong>editing&lt;/strong> of forms&lt;/p>
+&lt;p>c) &lt;strong>custom actions&lt;/strong> on any form&lt;/p>
 &lt;p>For a) and b) you can choose individuals and/or groups who can reassign or edit forms. In the case of b) edit there are options to &lt;strong>hide form footer buttons&lt;/strong> when editing, and to &lt;strong>trigger rules on save&lt;/strong> against a set field when saving edits.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/../content/docs/enable-edit-action.jpg" alt="Enable edit action">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/enable-edit-action.jpg" alt="Enable edit action">&lt;/p>
 &lt;p>For c) custom actions, you can set your own custom action and create an action label against a particular form field. This means the user(s) assigns the custom action will see the labelled action designated for them. As a designer you can choose the &lt;strong>action display mode&lt;/strong> as read-only, edit or both, so you can decide what type of access the user(s) will have.&lt;/p>
 &lt;/li>
 &lt;/ol>
