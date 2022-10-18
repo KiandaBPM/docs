@@ -40,7 +40,7 @@ The result is a flexible process workflow that will result in desired actions ba
 
 To create **actions** and where applicable, **otherwise actions**, the **action will depend on the rule** that is chosen. All Kianda rules use a natural language structure to make it is easy to apply actions. For example, for the **Workflow rule**, **Hide or Disable**, you can choose forms and fields from your process and then apply seven possible actions (as shown below).
 
-***Action elements for Hide or Disable\***
+**Action elements for Hide or Disable**
 
 ![7 actions for Hide or Disable](https://academy.kianda.com/wp-content/uploads/2022/02/hideoptions-1024x477.gif)
 
