@@ -3,7 +3,9 @@ title: "Form quick actions menu"
 typora-root-url: ..\..\..\..\..\static
 ---
 
-**Form quick action** menu will appear to designated users as a quick action menu option in the top right-hand corner of a form.
+## Introduction
+
+The **Form quick action** menu will appear to designated users as a quick action menu option in the top right-hand corner of a form.
 
 Depending on what type of quick actions are enabled and if you are assigned quick actions as a form user,, then you will see options when you click on the **quick action** button ![Quick action menu](/images/quick-action-button.jpg), for example to reassign a form to someone else, or to perform a custom action like signing off on a purchase order.
 
@@ -11,7 +13,7 @@ Depending on what type of quick actions are enabled and if you are assigned quic
 
 
 
-### How to get started
+## How to get started
 
 To enable quick actions, click on a process with Kianda Designer and then a form of choice so that the **Edit** (Pen) icon is visible.
 
@@ -27,31 +29,37 @@ To enable quick actions, click on a process with Kianda Designer and then a form
 
     ![Quick action menu](/images/setting-quick-actions.jpg)
 
-    Check the checkbox beside the desired action as necessary.
+    Check the checkbox beside the desired action as necessary. Each option is further explored below.
 
-4. When you check a checkbox for example **Enable edit** then you can click on the **Ellipsis** button  ![Ellipsis button](/images/ellipsis-frame) to assign users to the quick action. This opens the **Action settings** dialog box, such as the **Edit action settings** box shown in the image below.
 
-    ![Edit action settings](/images/edit-action-settings.jpg)
+### Enable reassignment
 
-    
+When you check a checkbox for example **Enable re-assign** then you can click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis-frame)then you can select **Users**, **Groups** and **Partners** who can be chosen to reassign the form to. There is also a checkbox to allow **form owners** to reassign forms to other users. 
 
-5. Options in the **action settings** dialog box are:
+![Re-assign action settings](/images/reassign-action-settings.jpg)
 
-    - **Action users** - select the users, groups or partners who will use the action
+### Enable edit
 
-    - **Allow form owners** - allows form owners to use the action
+This opens the **Action settings** dialog box, such as the **Edit action settings** box shown in the image below.
 
-    - **When editing auto hide form footer buttons** - hides form footer buttons when users are editing forms in a process instance
+![Edit action settings](/images/edit-action-settings.jpg)
 
-    - **Trigger rules on save** - allows rules to be triggered when a form is saved/submitted. In this case, select the button name used as the trigger in the **Save action field** 
 
-6. Click on **OK** when complete or **Close** to exit the dialog box. 
+
+1. Choose from the options in the **action settings** dialog box:
+
+   - **Edit action users** - select the **Users**, **Groups** or **Partners** who will use the action
+   - **Allow form owners** - allows form owners to use the action
+   - **When editing auto hide form footer buttons** - hides form footer buttons when users are editing forms in a process instance
+   - **Trigger rules on save** - allows rules to be triggered when a form is saved/submitted. In this case, select the button name used as the trigger in the **Save action field** 
+
+2. Click on **OK** when complete or **Close** to exit the dialog box. 
 
   ![Trigger rule quick action](/images/trigger-rule-quick-action.jpg)
 
-​    
+### Enable custom action 
 
-
+If you check **Enable custom action** users who have been selected using the **Users**, **Groups** and **Partners** option, will be able to perform a customised action on a form, defined using the dialog box within this section.
 
 
 
@@ -60,3 +68,4 @@ To enable quick actions, click on a process with Kianda Designer and then a form
 To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
 
 To find out about help and support, go to [Help](/docs/platform/administration/help).
+

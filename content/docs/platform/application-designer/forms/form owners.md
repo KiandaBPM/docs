@@ -42,9 +42,11 @@ So what is **form owner**? A form owner is assigned when a form is created in Ki
 4. If you make a mistake, or form owners need to be changed in an existing process, click on the **x** beside the name of the **Users**, **Groups** or **Partners** to remove them and choose from the dropdown list again.
 5. Add to or edit the remaining parameters in the dialog box as desired, see [Editing forms](#editing-forms/docs/platform/application-designer/designer/) and click on **OK** when complete, or **Close** to exit the dialog box at any time.
 
-## Changing access
+## Changing form access
 
-The **default owner** is the person or group that the form is assigned to using the **default owner field** in the **new form** dialog box  as shown above. By default, only this person or group **can edit the current form** in a process instance. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups. You can change form ownership or enable access in the following ways: [Changing default owners](#changing default owners), using the [Assign rule](/docs/platform/rules/workflow/assign-form/), using [Quick actions](/docs/platform/application-designer/forms/form-quick-action/).
+The **default owner** is the person or group that the form is assigned to using the **default owner field** in the **new form** dialog box  as shown above. By default, only this person or group **can edit the current form** in a process instance. All other users can only view forms in read mode. The next section details how to [change default owners](#changing default owners).
+
+It is also possible to allow other users to have edit access to forms using the [Assign rule](/docs/platform/rules/workflow/assign-form/) and [Quick actions](/docs/platform/application-designer/forms/form-quick-action/). 
 
 ### Changing default owners
 
@@ -62,16 +64,11 @@ The **default owner** is the person or group that the form is assigned to using 
 
 5. Here you can change the default owner choosing from **Users**, **Groups** and **Partners** as before.
 
-### Using quick actions to enable access
 
-As seen in the image above, there is an **Enable quick actions** checkbox that can be checked. When this is checked there are three further checkboxes that appear.
 
-![Quick action checkboxes](/images/quick-action-checkboxes.jpg)
+### What's next  ![Idea icon](/images/18.png) ###
 
-If you check **Enable re-assign** for instance and click the **ellipsis** button ![Ellipsis button](/images/ellipsis.png) then you can select **Users**, **Groups** and **Partners** who to reassign the form to. There is also a checkbox to allow **form owners** to reassign forms to other users. 
+To learn more about rules including [Assign rule](/docs/platform/rules/workflow/assign-form/) go to [Rules](/docs/platform/rules/).
 
-If you check **Enable edit** a user that has users who have been selected using the **Users**, **Groups** and **Partners** option, will be able to edit a form. There are also options to **Allow form owners** to assign edit actions to other users, as well as options **auto hide form footer buttons** when editing and **Trigger rules on save** so that rules are triggered for that form. 
+To find out how forms work within processes go to [Process](/docs/platform/application-designer/process/).
 
-![Enable edit options](/images/enable-edit-action-box.jpg)
-
-If you check **Enable custom action** a user that has users who have been selected using the **Users**, **Groups** and **Partners** option, will be able to edit a form. 
