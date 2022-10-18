@@ -12,7 +12,7 @@ There are two key principles to consider when working with forms:
 
 2. [Rule order](#rule-order) - if there are several rules attached to an item like a button, then the order of execution is important and can be modified to suit your needs.
 
-These principles are explained in more detail following the [How to get started](#how-to-get-started) section.
+These principles are explained in more in the next section on [How to get started](#how-to-get-started).
 
    
 
