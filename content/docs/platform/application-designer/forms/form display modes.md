@@ -31,11 +31,17 @@ Remember forms in process instances are either in **edit mode** meaning they can
 
 3. By default the **Submit mode** for forms is **Only this form** meaning that when a process instance is running you can choose <u>only</u> that particular form can have details submitted or saved. Alternatively you can choose **all forms in edit mode** this means that several forms can have their details submitted or saved. For example if several forms are activated together and all are in **edit mode** then the details of all these forms can be submitted together in the database.
 
-4. Forms can be statically set to allow **Quick actions** including allowing **editing**. When a form is created or edited using the **New form/Edit form** dialog box, clicking on **Enable quick actions** allows you to **statically** enable a) **reassignment**, b) **edit**, and c) **custom actions** on any form. 
+4. Forms can be statically set to allow **Quick actions** including allowing **editing**. When a form is created or edited using the **New form/Edit form** dialog box, clicking on **Enable quick actions** allows you to **statically** enable: 
+
+   a) **reassignment** of forms
+
+   b) **editing** of forms 
+
+   c) **custom actions** on any form
 
    For a) and b) you can choose individuals and/or groups who can reassign or edit forms. In the case of b) edit there are options to **hide form footer buttons** when editing, and to **trigger rules on save** against a set field when saving edits. 
 
-   ![Enable edit action](/../content/docs/enable-edit-action.jpg)
+   ![Enable edit action](/images/enable-edit-action.jpg)
 
    For c) custom actions, you can set your own custom action and create an action label against a particular form field. This means the user(s) assigns the custom action will see the labelled action designated for them. As a designer you can choose the **action display mode** as read-only, edit or both, so you can decide what type of access the user(s) will have.
 
