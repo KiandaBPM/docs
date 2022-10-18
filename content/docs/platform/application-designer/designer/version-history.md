@@ -7,7 +7,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction ##
 
-As an **Administrator** or someone with the role **Design business process**, you can update **process designs** as often as you need. The **Version number** of a process will be updated every time a process design is saved by clicking on the **Save** button ![Save button](/images/saveprocess.png).
+As an **Administrator** or someone with the role **Design business process**, you can update **process designs** as often as you need. The **Version number** of a process will be updated every time a process design is saved by clicking on **Save** ![Save button](/images/saveprocess.png).
 
 The **current or active version** of a process is always visible in the right-hand pane, for example V0.34 for the 'Inspection Process' as shown below.
 
