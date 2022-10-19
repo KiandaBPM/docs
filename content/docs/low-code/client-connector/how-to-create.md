@@ -3,8 +3,8 @@ title: "How to create a client connector"
 linkTitle: "How to create"
 weight: 1
 typora-root-url: ..\..\..\..\static
-toc_hide: false
-hide_summary: false
+toc_hide: true
+hide_summary: true
 ---
 
 # Introduction 
