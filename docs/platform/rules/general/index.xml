@@ -45,7 +45,7 @@
 &lt;p>Depending on how the rule is applied, for example to a &lt;strong>Submit&lt;/strong> button, the rule order is important to consider, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Multiple rules</title><link>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/multiple-rules/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>When working with rules in forms, a key principle to consider is &lt;strong>rule order&lt;/strong>. Rule order is important if there are &lt;strong>multiple rules&lt;/strong> attached to an item like a button or form field to determine the sequence of rule execution. As a form designer you can change the order of execution is important and modified form and process designs, including rule order to suit your needs.&lt;/p>
+&lt;p>When working with rules in forms, a key principle to consider is &lt;strong>rule order&lt;/strong>. Rule order is important if there are &lt;strong>multiple rules&lt;/strong> attached to an item like a button or form field to determine the sequence of rule execution. As a form designer, you can change the order of execution to suit your specific process design.&lt;/p>
 &lt;p>Remember you can assign rules at:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -63,7 +63,7 @@
 &lt;p>Rules are typically synchronously executed in Kianda, so for example when using a &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/">Start a process&lt;/a> rule, when the rule is executed first any mappings from a secondary/target process are mapped into a primary process, and from there if there are any rules to trigger on the secondary/target process those are executed, but a rule will only execute when the previous rule has completed. This is different to asynchronous execution where the system will execute rules without waiting for the previous rule execution to finish. Within time defined rules, like &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/">Start a process&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/">Schedule a rule&lt;/a> there is an option to choose between synchronous/in-series or asynchronous/in-parallel where the latter may be useful for rules without dependency.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/execute-in-series.jpg" alt="Execute in series option on rules">&lt;/p>
 &lt;h2 id="rule-order-example">Rule order example&lt;/h2>
-&lt;p>For example, you may want a process to send automated emails to a safety manager, where the email includes submitted form data. In this case a &lt;strong>Send email rule&lt;/strong> could be attached to a form &lt;strong>Submit&lt;/strong> button so an email is sent once the button is clicked. This will result in an automated email to a designated person. To generate a report of the completed form you can use the &lt;strong>Generate word&lt;/strong> &lt;strong>document&lt;/strong> &lt;strong>rule&lt;/strong> triggered again when the &lt;strong>Submit&lt;/strong> button is clicked. In this example the &lt;strong>Generate word document rule&lt;/strong> has to be executed &lt;u>before&lt;/u> the &lt;strong>Send email rule&lt;/strong>, so that the Word document can be generated and then attached to the email.&lt;/p>
+&lt;p>For example, you may want a process to send automated emails to a safety manager, where the email includes submitted form data. In this case a &lt;strong>Send email rule&lt;/strong> could be attached to a form &lt;strong>Submit&lt;/strong> button so an email is sent once the button is clicked. This will result in an automated email to a designated person. To generate a report of the completed form, you can use the &lt;strong>Generate word&lt;/strong> &lt;strong>document&lt;/strong> &lt;strong>rule&lt;/strong> triggered again when the &lt;strong>Submit&lt;/strong> button is clicked. In this example the &lt;strong>Generate word document rule&lt;/strong> has to be executed &lt;u>before&lt;/u> the &lt;strong>Send email rule&lt;/strong>, so that the Word document can be generated and then attached to the email.&lt;/p>
 &lt;p>The rule order consideration is therefore particularly important when rules are &lt;strong>dependent&lt;/strong> on each other - where the output of one rule is the input of another rule.&lt;/p>
 &lt;h2 id="changing-the-rule-order-of-multiple-rules">Changing the rule order of multiple rules&lt;/h2>
 &lt;p>In the example below we will look at changing the rule order of a Send email rule attached to a Submit button. The &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> and &lt;strong>Close&lt;/strong> buttons by default already have &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> and &lt;strong>Close&lt;/strong> process rules attached, in order to allow form shutdown.&lt;/p>
@@ -88,7 +88,7 @@ Your browser does not support the video tag.
 &lt;p>For example, expressions could be used in the body of an automated email sent using the &lt;strong>Send email&lt;/strong> rule, as shown here:&lt;/p>
 &lt;p>&lt;em>&lt;strong>Expression example&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/expression-example.gif" alt="Expression example">&lt;/p>
-&lt;p>In the example above, &lt;strong>[RequesterName]&lt;/strong> and &lt;strong>[category]&lt;/strong> are identifiers, that is unique IDs for form fields. &lt;strong>ProcessLink()&lt;/strong> is a function that will return a link to that process instance. Using the expressions above in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient.&lt;/p>
+&lt;p>In the example above, &lt;strong>[RequesterName]&lt;/strong> and &lt;strong>[category]&lt;/strong> are identifiers, that are unique IDs for form fields. &lt;strong>ProcessLink()&lt;/strong> is a function that will return a link to that process instance. Using the expressions above in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient.&lt;/p>
 &lt;h2 id="getting-started-with-expressions--example-email-body-text">Getting started with expressions – example Email body text&lt;/h2>
 &lt;p>Expressions are recognisable in Kianda from the &lt;strong>Expressions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png" alt="Expressions"> found in &lt;strong>Edit rule dialog boxes&lt;/strong> and &lt;strong>other menu items&lt;/strong>, such as enabling &lt;strong>quick actions&lt;/strong> for processes and &lt;strong>number fields&lt;/strong>.&lt;/p>
 &lt;p>Within rules, expressions can be created using the &lt;strong>Expression builder&lt;/strong> where you can &lt;strong>Add field to an expression&lt;/strong> or use the handy &lt;strong>Reference&lt;/strong> guide to get a list of commonly used functions.&lt;/p>
@@ -209,7 +209,7 @@ Your browser does not support the video tag.
 &lt;p>To see how expressions are used in controls such as Number fields, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/p>
 &lt;p>To learn more about how to use JavaScript expressions in expression builder go to &lt;a href="https://docs.kianda.com/docs/low-code/javascript-expressions/">Javascript expressions&lt;/a> for more details.&lt;/p></description></item><item><title>Docs: Success/Error Mapping</title><link>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Success and Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As a user with a &lt;strong>administrator&lt;/strong> or &lt;strong>designer&lt;/strong> role, you can use Kianda &lt;strong>Designer&lt;/strong> to populate fields within the Kianda form, using the &lt;strong>Edit rule&lt;/strong> dialog box to set parameters for success and error mapping.&lt;/p>
+&lt;p>Success and Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As a user with an &lt;strong>administrator&lt;/strong> or &lt;strong>designer&lt;/strong> role, you can use Kianda &lt;strong>Designer&lt;/strong> to populate fields within the Kianda form, using the &lt;strong>Edit rule&lt;/strong> dialog box to set parameters for success and error mapping.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Success and Error mapping should be with rule execution, displaying values that you want for rule execution success or failure.&lt;/p>
 &lt;p>&lt;strong>You can use mapping with the following rules:&lt;/strong>&lt;/p>
@@ -226,7 +226,7 @@ Your browser does not support the video tag.
 &lt;p>Select the field that will have the rule attached, for example a button at the end of a form, or a field within a form.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane and select one of the rules that uses mapping as shown in the &lt;a href="#wehn-to-use">When to use&lt;/a> list above, for example the &lt;strong>SharePoint rule&lt;/strong> called &lt;strong>Create list&lt;/strong>, used to create a list in SharePoint dynamically using Kianda form data.&lt;/p>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane and select one of the rules that uses mapping as shown in the &lt;a href="#when-to-use">When to use&lt;/a> list above, for example the &lt;strong>SharePoint rule&lt;/strong> called &lt;strong>Create list&lt;/strong>, used to create a list in SharePoint dynamically using Kianda form data.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/create-a-list-eg.jpg" alt="(Example of a rule with mapping)">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -295,13 +295,13 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/error-mapping.jpg" alt="Error mapping example">&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>In the &lt;strong>Form field&lt;/strong> select a form field which will store the error message in your Kianda form.&lt;/p>
+&lt;p>In the &lt;strong>Form field&lt;/strong>, select a form field which will store the error message in your Kianda form.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the &lt;strong>Error message or text&lt;/strong> enter an error message that you want to appear in the event of errors or click on the text box and select the &lt;strong>Error message&lt;/strong> option to use a system generated error indicating what has gone wrong when the rule executed.&lt;/p>
+&lt;p>In the &lt;strong>Error message or text&lt;/strong> field, enter an error message that you want to appear in the event of errors or click on the text box and select the &lt;strong>Error message&lt;/strong> option to use a system generated error indicating what has gone wrong when the rule executed.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Add mapping&lt;/strong> to add further mappings.&lt;/p>
+&lt;p>Click on the &lt;strong>Add mapping&lt;/strong> button to add further mappings.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> to delete a mapping.&lt;/p>
