@@ -4,7 +4,7 @@
 &lt;p>There are two key principles to keep in mind in terms of &lt;strong>form access&lt;/strong>:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Forms are &lt;strong>assignable&lt;/strong> - this means that forms can be assigned to individuals and/or groups, and then only they can &lt;strong>edit&lt;/strong> a the form, when it is the current form, in a process instance. The &amp;lsquo;assignee&amp;rsquo; can be a combination of users and groups. There are various ways a form can be assigned to a user:&lt;/p>
+&lt;p>Forms are &lt;strong>assignable&lt;/strong> - this means that forms can be assigned to individuals and/or groups, and then only they can &lt;strong>edit&lt;/strong> the form, when it is the current form, in a process instance. The &amp;lsquo;assignee&amp;rsquo; can be a combination of users and groups. There are various ways a form can be assigned to a user:&lt;/p>
 &lt;p>​ a) Using &lt;strong>Rules&lt;/strong>, in particular the Workflow rule &lt;strong>Assign form&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a> for details&lt;/p>
 &lt;p>​ b) Using &lt;strong>Quick actions&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/">Form Quick action&lt;/a> for details&lt;/p>
 &lt;p>​ c) Creating &lt;strong>form owners&lt;/strong> when creating or updating a process design, see &lt;a href="#creating-form-owners">Creating form owners&lt;/a> for details&lt;/p>
@@ -30,15 +30,15 @@
 &lt;/ul>
 &lt;ol start="4">
 &lt;li>If you make a mistake, or form owners need to be changed in an existing process, click on the &lt;strong>x&lt;/strong> beside the name of the &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or &lt;strong>Partners&lt;/strong> to remove them and choose from the dropdown list again.&lt;/li>
-&lt;li>Add to or edit the remaining parameters in the dialog box as desired, see &lt;a href="#editing-forms/docs/platform/application-designer/designer/">Editing forms&lt;/a> and click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/li>
+&lt;li>Add to or edit the remaining parameters in the dialog box as desired, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/#editing-forms">Editing forms&lt;/a> and click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/li>
 &lt;/ol>
 &lt;h2 id="changing-form-access">Changing form access&lt;/h2>
-&lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to using the &lt;strong>default owner field&lt;/strong> in the &lt;strong>new form&lt;/strong> dialog box as shown above. By default, only this person or group &lt;strong>can edit the current form&lt;/strong> in a process instance. All other users can only view forms in read mode. The next section details how to [change default owners](#changing default owners).&lt;/p>
+&lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to using the &lt;strong>default owner field&lt;/strong> in the &lt;strong>new form&lt;/strong> dialog box as shown above. By default, only this person or group &lt;strong>can edit the current form&lt;/strong> in a process instance. All other users can only view forms in read mode. The next section details how to &lt;a href="#changing-default-owners">change default owners&lt;/a>.&lt;/p>
 &lt;p>It is also possible to allow other users to have edit access to forms using the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign rule&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/">Quick actions&lt;/a>.&lt;/p>
 &lt;h3 id="changing-default-owners">Changing default owners&lt;/h3>
 &lt;ol>
 &lt;li>
-&lt;p>Using your &lt;strong>Administration&lt;/strong> or &lt;strong>Design business process&lt;/strong> role go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> &amp;gt; select a process &amp;gt; select a form in the process.&lt;/p>
+&lt;p>Using your &lt;strong>Administration&lt;/strong> or &lt;strong>Design business process&lt;/strong> role, go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> &amp;gt; select a process &amp;gt; select a form in the process.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the form so the &lt;strong>Edit/Pen&lt;/strong> button appears in the form name.&lt;/p>

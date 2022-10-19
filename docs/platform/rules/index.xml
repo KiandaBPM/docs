@@ -48,7 +48,7 @@
 &lt;p>If rules have already been created&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select the field or form that contains a rule, for example a button at the end of a form. If a field within a form which rules attached this will be indicated within the form, as shown in the example below where the column &lt;strong>Instances&lt;/strong> has &lt;strong>1 rule&lt;/strong> attached.&lt;/p>
+&lt;p>Select the field or form that contains a rule, for example a button at the end of a form. If a field within a form has rules attached to it, this will be indicated within the form, as shown in the example below where the column &lt;strong>Instances&lt;/strong> has &lt;strong>1 rule&lt;/strong> attached.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-on-a-field.jpg" alt="Rule attached to a form field">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -60,7 +60,7 @@
 &lt;img src="https://docs.kianda.com/images/rule-details-examples.jpg" alt="Rule details">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>You can view rule conditions by clicking on &lt;strong>Edit conditions&lt;/strong> and actions to be performed as part of the rule are under &lt;strong>Action&lt;/strong>. Other features to note in the dialog box are:&lt;/p>
+&lt;p>You can view rule &lt;a href="#conditions">conditions&lt;/a> by clicking on &lt;strong>Edit conditions&lt;/strong> and actions to be performed as part of the rule are under &lt;strong>Action&lt;/strong>. Other features to note in the dialog box are:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Expression&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis_frame.png" alt="Expression button"> used to add expressions to rules so that dynamic values can be returned based on calculations or form IDs, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder/">Expressions&lt;/a> for more details.&lt;/li>
 &lt;li>&lt;strong>Mapping&lt;/strong> - mapping is used within rule actions, for example in the &lt;strong>Set form field&lt;/strong> rule shown in the image above, the rule updates a form field based on a given value or expression. In many other fields mapping can be used to determine &lt;strong>success&lt;/strong> or &lt;strong>error&lt;/strong> during rule execution, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">Success and error mapping&lt;/a> for more details.&lt;/li>
@@ -106,7 +106,7 @@
 &lt;p>Disabling a rule means that the rule is not active but is still visible in the &lt;strong>Rules&lt;/strong> pane. The rule can be activated at any time again by clicking on the toggle button.&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select the field that contains a rule, for example a button at the end of a form, or a field within a form which if it has rules attached.&lt;/p>
+&lt;p>Select the field that contains a rule, for example a button at the end of a form, or a field within a form that has rules attached.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under &lt;strong>Rules&lt;/strong> in the right-hand pane, beside the given &lt;strong>rule name&lt;/strong> slide the toggle button from &amp;lsquo;on&amp;rsquo; to &amp;lsquo;off&amp;rsquo; to view the rule details, for example a &amp;lsquo;Set form&amp;rsquo; rule called &amp;lsquo;Set link&amp;rsquo; as shown below.&lt;/p>
@@ -146,7 +146,7 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;p>For more information on Conditions, go to the &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> page.&lt;/p>
 &lt;h2 id="custom-rules">Custom rules&lt;/h2>
 &lt;p>Under custom rules, you will find any custom-developed rules available under your developer section. Custom rules provide access to rules that are built for extensibility of Kianda capabilities. This is particularly used in situations when existing rules do not provide the required functionality.&lt;/p>
-&lt;p>Custom rules have the purpose of providing a user interface for the end-users. If you need to build &amp;ldquo;a rule&amp;rdquo; then you should use a custom rule widget.&lt;/p>
+&lt;p>Custom rules have the purpose of providing a user interface for the end-users. If you need to &lt;strong>build a rule&lt;/strong> then you should use a custom rule widget.&lt;/p>
 &lt;p>It allows a developer to quickly build a reusable component that would then be used by process designers in real processes.&lt;/p>
 &lt;p>Check-out the &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">development&lt;/a> section for more details on how to build custom widgets in Kianda.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
