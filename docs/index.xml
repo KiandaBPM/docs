@@ -738,7 +738,8 @@ Your browser does not support the video tag.
 &lt;p>below is the output on the datasource settings&lt;/p>
 &lt;img src="https://docs.kianda.com/images/Connector-datasource-created.png" style="zoom:50%; border:1px solid black"/>
 &lt;h4 id="query-code">Query Code&lt;/h4>
-&lt;p>The following screenshot shows the query code that comes as default when the connector is created&lt;/p>
+&lt;p>In the query code tab there are 3 methods that can be customized for your needs, some default code is provided to get you started.&lt;/p>
+&lt;p>This section covers each of the hooks in detail.&lt;/p>
 &lt;img src="https://docs.kianda.com/images/connector-query-code.png" style="border:1px solid black"/>
 &lt;p>The metadata hook is where return of the tree/metadata call can be altered.
 This is where the tree function gets triggered as can be seen in the network tab calls when a datasource is selected the tree function is queryed and the response is then rendered as a tree view.&lt;/p>
@@ -866,7 +867,12 @@ This is where the tree function gets triggered as can be seen in the network tab
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="up-next">Up Next&lt;/h3>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="security">Security&lt;/h2>
+&lt;p>&lt;strong>AES256:&lt;/strong> We use AES 256 to encrypt and decrypt to secure the data in the request and response so that even if the data is exposed, it cannot be decrypted without the right key. This is a symmetric encryption technique, which means the same key is used to encrypt and decrypt the data it is also a 2-way encryption algorithm.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/AES_encryption.png" style="zoom: 150%;" />
+&lt;p>&lt;strong>HMAC:&lt;/strong> We use HMAC to sign the signature to make sure the response is coming from the correct end point. HMAC is also an encryption algorithm but unlike AES it’s a one-way encryption, meaning it isn’t decrypted on the other side. It’s used for verification, for example if we encrypt with HMAC our secret key with a request id and then do the same in the response, we can verify that we have got the response back from the correct endpoint and it has not been tampered with because both hashes will match. HMAC stands for &lt;strong>H&lt;/strong>ash based &lt;strong>M&lt;/strong>essage &lt;strong>A&lt;/strong>uthentication &lt;strong>C&lt;/strong>ode and the hash used is SHA256.&lt;/p>
+&lt;p>The main difference between the two is that AES we are encrypting and decrypting data, this is fast and secure for large data, with HMAC we use it to simultaneously verify both the data integrity and authenticity of a message.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/Sha256_Hashing.png" style="zoom:67%;" />
 &lt;p>After creating the client connector and the datasource, the next step is to look at how the connector can be used.&lt;/p></description></item><item><title>Docs: Instances</title><link>https://docs.kianda.com/docs/apis/instances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/apis/instances/</guid><description>
 &lt;hr>
 &lt;h2 id="introduction">Introduction&lt;/h2>
@@ -4441,7 +4447,21 @@ the developer can use any of the parameters to alter the query going to the micr
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;partner&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">null&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;owners&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[]&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Version history</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/version-history/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/version-history/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;div id="ohpen_swagger_ui">&lt;/div>
+&lt;script>
+window.onload = function () {
+const ui = SwaggerUIBundle({
+url: "/swagger/connectorAPI.yaml",
+dom_id: '#ohpen_swagger_ui',
+presets: [
+SwaggerUIBundle.presets.apis,
+SwaggerUIStandalonePreset
+]
+});
+window.ui = ui;
+};
+&lt;/script></description></item><item><title>Docs: Version history</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/version-history/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/version-history/</guid><description>
 &lt;p>The &lt;strong>current or active version&lt;/strong> of a process is always visible in the right-hand pane, for example V0.8 for the process as shown below.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Process version&lt;/strong>&lt;/em>&lt;img src="https://docs.kianda.com/images/Process_Version.jpg" alt="Process version history">&lt;/p>
 &lt;p>The &lt;strong>first version&lt;/strong> of a process is &lt;strong>0.1&lt;/strong> and will increment to 0.2 and so on, each time a process is saved. Once the process is &lt;strong>published&lt;/strong> the version changes to &lt;strong>1.0&lt;/strong> and increments with each publication. This makes it is easy to keep track of who made changes and when, and to restore an older version if needed.&lt;/p>
