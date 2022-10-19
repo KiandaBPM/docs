@@ -11,7 +11,7 @@ When creating forms, it is important to consider **form access** during the desi
 
 There are two key principles to keep in mind in terms of **form access**:
 
-1. Forms are **assignable** - this means that forms can be assigned to individuals and/or groups, and then only they can **edit** a the form, when it is the current form, in a process instance. The 'assignee' can be a combination of users and groups. There are various ways a form can be assigned to a user: 
+1. Forms are **assignable** - this means that forms can be assigned to individuals and/or groups, and then only they can **edit** the form, when it is the current form, in a process instance. The 'assignee' can be a combination of users and groups. There are various ways a form can be assigned to a user: 
 
    ​	a) Using **Rules**, in particular the Workflow rule **Assign form**, see [Assign form](/docs/platform/rules/workflow/assign-form/) for details 
 
@@ -40,17 +40,17 @@ So what is **form owner**? A form owner is assigned when a form is created in Ki
 - **Partners** - Partners must be already in the system and active, see [B2B portals](/docs/platform/administration/b2b-portals/)
 
 4. If you make a mistake, or form owners need to be changed in an existing process, click on the **x** beside the name of the **Users**, **Groups** or **Partners** to remove them and choose from the dropdown list again.
-5. Add to or edit the remaining parameters in the dialog box as desired, see [Editing forms](#editing-forms/docs/platform/application-designer/designer/) and click on **OK** when complete, or **Close** to exit the dialog box at any time.
+5. Add to or edit the remaining parameters in the dialog box as desired, see [Editing forms](/docs/platform/application-designer/designer/#editing-forms) and click on **OK** when complete, or **Close** to exit the dialog box at any time.
 
 ## Changing form access
 
-The **default owner** is the person or group that the form is assigned to using the **default owner field** in the **new form** dialog box  as shown above. By default, only this person or group **can edit the current form** in a process instance. All other users can only view forms in read mode. The next section details how to [change default owners](#changing default owners).
+The **default owner** is the person or group that the form is assigned to using the **default owner field** in the **new form** dialog box  as shown above. By default, only this person or group **can edit the current form** in a process instance. All other users can only view forms in read mode. The next section details how to [change default owners](#changing-default-owners).
 
 It is also possible to allow other users to have edit access to forms using the [Assign rule](/docs/platform/rules/workflow/assign-form/) and [Quick actions](/docs/platform/application-designer/forms/form-quick-action/). 
 
 ### Changing default owners
 
-1. Using your **Administration** or **Design business process** role go to **Administration** > **Designer** > select a process > select a form in the process. 
+1. Using your **Administration** or **Design business process** role, go to **Administration** > **Designer** > select a process > select a form in the process. 
 
 2. Click on the form so the **Edit/Pen** button appears in the form name. 
 

@@ -4,9 +4,9 @@ typora-root-url: ..\..\..\..\..\static
 weight: 1
 ---
 
-Conditions are a key component of Kianda **rules**. They are the **triggers** that result in fully dynamic forms. They enable you to enables you to create natural language conditions when rules should be triggered.
+Conditions are a key component of Kianda **rules**. They are the **triggers** that result in fully dynamic forms. Conditions enable you to create natural language conditions when rules should be triggered.
 
-The **Conditions** button ![img](https://academy.kianda.com/wp-content/uploads/2022/02/condition.png) is found within all **rules** as well as [dashboard widgets](docs/platform/pages/). Conditions can also be set when setting data source security levels for [B2B portals](/docs/platform/b2b-portals/data-access/).
+The **Conditions** button ![img](https://academy.kianda.com/wp-content/uploads/2022/02/condition.png) is found within all **rules** as well as [dashboard widgets](/docs/platform/pages/). Conditions can also be set when setting data source security levels for [B2B portals](/docs/platform/b2b-portals/data-access/).
 
 Conditions add an important level of interactivity, creating dynamic pathways within a process. These pathways could result from user interaction or from other events that happen.
 
@@ -60,7 +60,7 @@ The actions within **Hide or disable** are:
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-Depending on how the rule is applied, for example to a **Submit** button, the rule order is important to consider, see [Multiple rules](/docs/platform/rules/general/mutiple-rules/).
+Depending on how the rule is applied, for example to a **Submit** button, the rule order is important to consider, see [Multiple rules](/docs/platform/rules/general/multiple-rules/).
 
 To find out more about rule implementation, go to the main [Rules](/docs/platform/rules/) page and then click on the links to the different rule categories.
 

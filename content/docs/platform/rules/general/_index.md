@@ -48,7 +48,7 @@ The following headings step through how to view, add, copy, edit and disable rul
 
 If rules have already been created 
 
-1. Select the field or form that contains a rule, for example a button at the end of a form. If a field within a form which rules attached this will be indicated within the form, as shown in the example below where the column **Instances** has **1 rule** attached.
+1. Select the field or form that contains a rule, for example a button at the end of a form. If a field within a form has rules attached to it, this will be indicated within the form, as shown in the example below where the column **Instances** has **1 rule** attached.
 
    ![Rule attached to a form field](/images/rule-on-a-field.jpg)
 
@@ -59,7 +59,7 @@ If rules have already been created
 3. Details of the rule are available in the **Edit rule** dialog box, for example the **Set form field** rule is shown below.  
    ![Rule details](/images/rule-details-examples.jpg)
 
-You can view rule conditions by clicking on **Edit conditions** and actions to be performed as part of the rule are under **Action**. Other features to note in the dialog box are:
+You can view rule [conditions](#conditions) by clicking on **Edit conditions** and actions to be performed as part of the rule are under **Action**. Other features to note in the dialog box are:
 
 - **Expression** button ![Expression button](/images/ellipsis_frame.png) used to add expressions to rules so that dynamic values can be returned based on calculations or form IDs, see [Expressions](/docs/platform/rules/general/expression-builder/) for more details.
 - **Mapping** - mapping is used within rule actions, for example in the **Set form field** rule shown in the image above, the rule updates a form field based on a given value or expression. In many other fields mapping can be used to determine **success** or **error** during rule execution, see [Success and error mapping](/docs/platform/rules/general/success-error-mapping/) for more details. 
@@ -108,7 +108,7 @@ In the Edit rule dialog box, you can change:
 
 Disabling a rule means that the rule is not active but is still visible in the **Rules** pane. The rule can be activated at any time again by clicking on the toggle button.
 
-1. Select the field that contains a rule, for example a button at the end of a form, or a field within a form which if it has rules attached.
+1. Select the field that contains a rule, for example a button at the end of a form, or a field within a form that has rules attached.
 
 2. Under **Rules** in the right-hand pane, beside the given **rule name** slide the toggle button from 'on' to 'off' to view the rule details, for example a 'Set form' rule called 'Set link' as shown below.
 
@@ -158,7 +158,7 @@ For more information on Conditions, go to the [Conditions](/docs/platform/rules/
 
 Under custom rules, you will find any custom-developed rules available under your developer section. Custom rules provide access to rules that are built for extensibility of Kianda capabilities. This is particularly used in situations when existing rules do not provide the required functionality.
 
-Custom rules have the purpose of providing a user interface for the end-users. If you need to build "a rule" then you should use a custom rule widget.
+Custom rules have the purpose of providing a user interface for the end-users. If you need to **build a rule** then you should use a custom rule widget.
 
 It allows a developer to quickly build a reusable component that would then be used by process designers in real processes.
 
