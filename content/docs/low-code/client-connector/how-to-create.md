@@ -3,8 +3,8 @@ title: "How to create a client connector"
 linkTitle: "How to create"
 weight: 1
 typora-root-url: ..\..\..\..\static
-toc_hide: true
-hide_summary: true
+toc_hide: false
+hide_summary: false
 ---
 
 # Introduction 
@@ -73,7 +73,9 @@ below is the output on the datasource settings
 
 #### Query Code 
 
-The following screenshot shows the query code that comes as default when the connector is created
+In the query code tab there are 3 methods that can be customized for your needs, some default code is provided to get you started.
+
+This section covers each of the hooks in detail.
 
 <img src="/images/connector-query-code.png" style="border:1px solid black"/>
 
@@ -232,9 +234,23 @@ public static string DecryptStringWithAES256(string key, string cipherText)
 
 
 
+## Security
+
+ **AES256:** We use AES 256 to encrypt and decrypt to secure the data in the request and response so that even if the data is exposed, it cannot be decrypted without the right key. This is a symmetric encryption technique, which means the same key is used to encrypt and decrypt the data it is also a 2-way encryption algorithm.
+
+<img src="/images/AES_encryption.png" style="zoom: 150%;" />
 
 
-### Up Next  
+
+**HMAC:** We use HMAC to sign the signature to make sure the response is coming from the correct end point. HMAC is also an encryption algorithm but unlike AES it’s a one-way encryption, meaning it isn’t decrypted on the other side. It’s used for verification, for example if we encrypt with HMAC our secret key with a request id and then do the same in the response, we can verify that we have got the response back from the correct endpoint and it has not been tampered with because both hashes will match. HMAC stands for **H**ash based **M**essage **A**uthentication **C**ode and the hash used is SHA256. 
+
+The main difference between the two is that AES we are encrypting and decrypting data, this is fast and secure for large data, with HMAC we use it to simultaneously verify both the data integrity and authenticity of a message.
+
+
+
+
+
+<img src="/images/Sha256_Hashing.png" style="zoom:67%;" />
 
 After creating the client connector and the datasource, the next step is to look at how the connector can be used.  
 

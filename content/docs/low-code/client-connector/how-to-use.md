@@ -3,8 +3,8 @@ title: "How to use the client connector"
 linkTitle: "Using the Client Connector"
 weight: 2
 typora-root-url: ..\..\..\..\static
-toc_hide: true
-hide_summary: true
+toc_hide: false
+hide_summary: false
 ---
 
 # Introduction 
@@ -163,5 +163,4 @@ the developer can use any of the parameters to alter the query going to the micr
 }
 ```
 
-
-
+{{< swaggerui src="/swagger/connectorAPI.yaml" >}}

@@ -1,0 +1,598 @@
+openapi: 3.0.0
+info:
+  title: Connector API
+  version: 1.0.0
+servers:
+  - url: http://localhost:4171
+  - url: http://{{base_url}}
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+tags:
+  - name: Authorization
+  - name: Connector API
+paths:
+  /Token:
+    post:
+      tags:
+        - Authorization
+      summary: Token
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              properties:
+                grant_type:
+                  type: string
+                  example: password
+                username:
+                  type: string
+                  example: basic@kianda.com
+                password:
+                  type: string
+                  example: Testing123!
+      responses:
+        '200':
+          description: OK
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache,no-cache, no-store
+            Pragma:
+              schema:
+                type: string
+                example: no-cache,no-cache
+            Content-Type:
+              schema:
+                type: string
+                example: application/json;charset=UTF-8
+            Content-Encoding:
+              schema:
+                type: string
+                example: gzip
+            Expires:
+              schema:
+                type: string
+                example: '-1,-1'
+            Vary:
+              schema:
+                type: string
+                example: Accept-Encoding
+            Set-Cookie:
+              schema:
+                type: string
+                example: >-
+                  .AspNet.Cookies=IUANjmm4KeZsjianIRreSRXvkSgCkcvQ9Kcu-PCQ-asFInuTR6YcXv9WJtnyxEtlp1J1WliRdDrqE1Bli6vX_8ak0uPsIxG-dywhhIU6m3R_EIPA0xzgEijz9s4Scg_vtFtYnmYtCSXd4HGCK1PbfPxfa4HJxQolJ_zAfTaC0fHI4fx4VOfbxbEtuQpbYRRCFQvRAo5mwq8rZxn5QxPHB6fbbLJIsuEFmdrwGg5A38wRtcF_FtSHso3srrD9ai1SxC3NP1dAd4-FOeZgcQhADtcPr960wkuPhjRXzonrjvjj4AwV2sZZRh2NTRRmC-6-OKyp_w7QxgWfbVWOSeej5cfH55w1fDthFO1_3qPB3WElWdztMc2qMb70FX1RGsHHCIst8yT7yFsWvQNQkG9y3isBPk2Xsumnok2MK9ptk-fe2AfxAe8OVrPc-vQXDoKD7V8040kQWJZ9NSju8xpYoBG04YnsLyf94OZi3En57RlNqNn0esOE2z8F91lwxnvtcOR990P1eP44MVwepeAgsOf-pU09x0zG_uxWBBpaszqA-wK-1X8imnElxISsmw7BEDsUMcCSKLtFvdgZGu8CKw;
+                  path=/; HttpOnly
+            X-SourceFiles:
+              schema:
+                type: string
+                example: >-
+                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXFRva2Vu?=
+            X-Powered-By:
+              schema:
+                type: string
+                example: ASP.NET
+            Access-Control-Expose-Headers:
+              schema:
+                type: string
+                example: Total-Items
+            Date:
+              schema:
+                type: string
+                example: Wed, 28 Sep 2022 14:37:57 GMT
+            Content-Length:
+              schema:
+                type: integer
+                example: '1051'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                access_token: >-
+                  xrDoEDmmagKHljulPyPMd5TLw33V1rNCfyHdEaz_sFFiSQjS8ZFfRn_zJoNLGHhaZrmTIXJCxsb-fDu76XSWW8c6qdhq-t-sBhC4ECFJ-WkhJq4kJ5f_U8_y6jgWrFwD6l0icTIELNVKG1VPgS2zU9q4Y5DV09Suxr-0URhCWvpM4iKt9RkyrqeFRzSqENl90kS0T5zQThiYSWJCmQdAtaM70Dcn9nGsfxl5O4gUUCUeM4BzPVVQG5YjSoSU1Ra-3XgEmOKQ54IKCkUHqx6FhnQcBxx9e9fFhTRx6-4EQCjxe-mlrmvLyX1mWjyimtoNq4jznw2H1y6hul_9s6rwJ1W5BvuB0xrRFbJlFRdNuP8xMdb9NOpo4azD-Nt6MKPN4rpX0oIVZV5WZfyDq_V0-jRdCW9FSQs-q9zkpk-t6DZIiQm9RLjI8lzFYNcRZ0WeG-44JT5R_KUd5pWdkRgNRnHentOY0os5JYWmNGBgfdALdg4l66nEFcZJbspXVDfHf-ezHRj9XQMLnKz6XZZ5-45mUhAnsV1URMZz6aVRWh47CqPN0eSBP2dWlWM8N-JZHAeciOn2koLLY4UPfYNGGg
+                token_type: bearer
+                expires_in: 299
+                userName: basic@kianda.com
+                userId: 797392a1-bc76-45a3-8cde-ee8976ec0df1
+                subscriptionId: 322f14a6-63a0-4c68-b53e-4ca041c0e9ae
+                securityStamp: fc471464-1df8-4f58-a9d7-d414d6f1d5c6
+                .issued: Wed, 28 Sep 2022 14:37:57 GMT
+                .expires: Wed, 28 Sep 2022 14:42:57 GMT
+        '400':
+          description: Bad Request
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+                example: private,no-cache, no-store
+            Pragma:
+              schema:
+                type: string
+                example: no-cache,no-cache
+            Content-Type:
+              schema:
+                type: string
+                example: application/json;charset=UTF-8
+            Expires:
+              schema:
+                type: string
+                example: '-1,-1'
+            Set-Cookie:
+              schema:
+                type: number
+                example: >-
+                  UserSessionTime="2022-09-28T14:38:50.042181Z"; expires=Wed,
+                  28-Sep-2022 14:53:50 GMT; path=/
+            X-SourceFiles:
+              schema:
+                type: string
+                example: >-
+                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXFRva2Vu?=
+            X-Powered-By:
+              schema:
+                type: string
+                example: ASP.NET
+            Access-Control-Expose-Headers:
+              schema:
+                type: string
+                example: Total-Items
+            Date:
+              schema:
+                type: string
+                example: Wed, 28 Sep 2022 14:38:50 GMT
+            Content-Length:
+              schema:
+                type: integer
+                example: '34'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                error: unsupported_grant_type
+  /api/datasources/{id}/query:
+    post:
+      tags:
+        - Connector API
+      summary: Query
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                id: null
+                action: select
+                info:
+                  text: Get Countries
+                  name: Get Countries
+                  type: STRUCTURE
+                  filter: ''
+                orderBy: null
+                orderAscending: false
+                paging: null
+                rowLimit: 50
+                fields:
+                  - Country
+                  - Country
+                conditions: []
+                mappings: {}
+                filter: ''
+                filterBy: Country
+                filterMode: startswith
+                signature: null
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache,no-cache, no-store
+            Pragma:
+              schema:
+                type: string
+                example: no-cache,no-cache
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Encoding:
+              schema:
+                type: string
+                example: gzip
+            Expires:
+              schema:
+                type: string
+                example: '-1,-1'
+            Vary:
+              schema:
+                type: string
+                example: Accept-Encoding
+            X-SourceFiles:
+              schema:
+                type: string
+                example: >-
+                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1wyZmUyZDJjNy00ZmViLTRjOTItYWM0Yy1mZWQ0NjIzZDJkNmVccXVlcnk=?=
+            X-Powered-By:
+              schema:
+                type: string
+                example: ASP.NET
+            Access-Control-Expose-Headers:
+              schema:
+                type: string
+                example: Total-Items
+            Date:
+              schema:
+                type: string
+                example: Wed, 28 Sep 2022 14:16:48 GMT
+            Content-Length:
+              schema:
+                type: integer
+                example: '173'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                items:
+                  - Country: England
+                  - Country: Ireland
+        '500':
+          description: Internal Server Error
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache,no-cache, no-store
+            Pragma:
+              schema:
+                type: string
+                example: no-cache,no-cache
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Expires:
+              schema:
+                type: string
+                example: '-1,-1'
+            X-SourceFiles:
+              schema:
+                type: string
+                example: >-
+                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1wyZmUyZDJjNy00ZmViLTRjOTItYWM0Yy1mZWQ0NjIzZDJkNmVccXVlcnk=?=
+            X-Powered-By:
+              schema:
+                type: string
+                example: ASP.NET
+            Access-Control-Expose-Headers:
+              schema:
+                type: string
+                example: Total-Items
+            Date:
+              schema:
+                type: string
+                example: Wed, 28 Sep 2022 14:13:07 GMT
+            Content-Length:
+              schema:
+                type: integer
+                example: '36'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                Message: An error has occurred.
+  /api/datasources/{id}/tree:
+    post:
+      tags:
+        - Connector API
+      summary: Metadata
+      requestBody:
+        content: {}
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache,no-cache, no-store
+            Pragma:
+              schema:
+                type: string
+                example: no-cache,no-cache
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Encoding:
+              schema:
+                type: string
+                example: gzip
+            Expires:
+              schema:
+                type: string
+                example: '-1,-1'
+            Vary:
+              schema:
+                type: string
+                example: Accept-Encoding
+            X-SourceFiles:
+              schema:
+                type: string
+                example: >-
+                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1wyZmUyZDJjNy00ZmViLTRjOTItYWM0Yy1mZWQ0NjIzZDJkNmVcdHJlZQ==?=
+            X-Powered-By:
+              schema:
+                type: string
+                example: ASP.NET
+            Access-Control-Expose-Headers:
+              schema:
+                type: string
+                example: Total-Items
+            Date:
+              schema:
+                type: string
+                example: Wed, 28 Sep 2022 13:54:34 GMT
+            Content-Length:
+              schema:
+                type: integer
+                example: '332'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                message: Metadata Action Completed
+                items:
+                  - name: Get Countries
+                    text: Get Countries
+                    title: Get Countries
+                    icon: fa fa-globe
+                    type: STRUCTURE
+                    nodes:
+                      - name: Country
+                        text: Country
+                        title: Country
+                        icon: ''
+                        type: text
+                    fields:
+                      - name: Country
+                        text: Country
+                        title: Country
+                        icon: ''
+                        type: text
+                    selectable: true
+                  - name: Get Cities
+                    text: Get Cities
+                    title: Get Cities
+                    icon: fa fa-globe
+                    type: STRUCTURE
+                    nodes:
+                      - name: Country
+                        text: Country
+                        title: Country
+                        icon: ''
+                        type: text
+                      - name: City
+                        text: City
+                        title: City
+                        icon: ''
+                        type: text
+                    fields:
+                      - name: Country
+                        text: Country
+                        title: Country
+                        icon: ''
+                        type: text
+                      - name: City
+                        text: City
+                        title: City
+                        icon: ''
+                        type: text
+                    selectable: true
+        '401':
+          description: Unauthorized
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache,no-cache, no-store
+            Pragma:
+              schema:
+                type: string
+                example: no-cache,no-cache
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Expires:
+              schema:
+                type: string
+                example: '-1,-1'
+            WWW-Authenticate:
+              schema:
+                type: string
+                example: Bearer
+            Set-Cookie:
+              schema:
+                type: number
+                example: >-
+                  UserSessionTime="2022-09-28T14:12:06.1881992Z"; expires=Wed,
+                  28-Sep-2022 14:27:06 GMT; path=/
+            X-SourceFiles:
+              schema:
+                type: string
+                example: >-
+                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1wyZmUyZDJjNy00ZmViLTRjOTItYWM0Yy1mZWQ0NjIzZDJkNmVcdHJlZQ==?=
+            X-Powered-By:
+              schema:
+                type: string
+                example: ASP.NET
+            Access-Control-Expose-Headers:
+              schema:
+                type: string
+                example: Total-Items
+            Date:
+              schema:
+                type: string
+                example: Wed, 28 Sep 2022 14:12:06 GMT
+            Content-Length:
+              schema:
+                type: integer
+                example: '61'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                Message: Authorization has been denied for this request.
+  /api/datasources/{id}/test:
+    post:
+      tags:
+        - Connector API
+      summary: Test
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              properties: {}
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache,no-cache, no-store
+            Pragma:
+              schema:
+                type: string
+                example: no-cache,no-cache
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Encoding:
+              schema:
+                type: string
+                example: gzip
+            Expires:
+              schema:
+                type: string
+                example: '-1,-1'
+            Vary:
+              schema:
+                type: string
+                example: Accept-Encoding
+            X-SourceFiles:
+              schema:
+                type: string
+                example: >-
+                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1wyZmUyZDJjNy00ZmViLTRjOTItYWM0Yy1mZWQ0NjIzZDJkNmVcdGVzdA==?=
+            X-Powered-By:
+              schema:
+                type: string
+                example: ASP.NET
+            Access-Control-Expose-Headers:
+              schema:
+                type: string
+                example: Total-Items
+            Date:
+              schema:
+                type: string
+                example: Wed, 28 Sep 2022 13:53:50 GMT
+            Content-Length:
+              schema:
+                type: integer
+                example: '165'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                message: Test completed successfully
+        '401':
+          description: Unauthorized
+          headers:
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache,no-cache, no-store
+            Pragma:
+              schema:
+                type: string
+                example: no-cache,no-cache
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Expires:
+              schema:
+                type: string
+                example: '-1,-1'
+            WWW-Authenticate:
+              schema:
+                type: string
+                example: Bearer
+            X-SourceFiles:
+              schema:
+                type: string
+                example: >-
+                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1x7aWR9XHRlc3Q=?=
+            X-Powered-By:
+              schema:
+                type: string
+                example: ASP.NET
+            Access-Control-Expose-Headers:
+              schema:
+                type: string
+                example: Total-Items
+            Date:
+              schema:
+                type: string
+                example: Wed, 28 Sep 2022 13:47:00 GMT
+            Content-Length:
+              schema:
+                type: integer
+                example: '61'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                Message: Authorization has been denied for this request.
