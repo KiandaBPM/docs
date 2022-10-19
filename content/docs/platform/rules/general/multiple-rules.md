@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction ##
 
-When working with rules in forms, a key principle to consider is **rule order**. Rule order is important if there are **multiple rules** attached to an item like a button or form field to determine the sequence of rule execution. As a form designer you can change the order of execution is important and modified form and process designs, including rule order to suit your needs.
+When working with rules in forms, a key principle to consider is **rule order**. Rule order is important if there are **multiple rules** attached to an item like a button or form field to determine the sequence of rule execution. As a form designer, you can change the order of execution to suit your specific process design.
 
 Remember you can assign rules at:
 
@@ -26,7 +26,7 @@ Rules are typically synchronously executed in Kianda, so for example when using 
 
 ## Rule order example ##
 
-For example, you may want a process to send automated emails to a safety manager, where the email includes submitted form data. In this case a **Send email rule** could be attached to a form **Submit** button so an email is sent once the button is clicked. This will result in an automated email to a designated person. To generate a report of the completed form you can use the **Generate word** **document** **rule** triggered again when the **Submit** button is clicked. In this example the **Generate word document rule** has to be executed <u>before</u> the **Send email rule**, so that the Word document can be generated and then attached to the email. 
+For example, you may want a process to send automated emails to a safety manager, where the email includes submitted form data. In this case a **Send email rule** could be attached to a form **Submit** button so an email is sent once the button is clicked. This will result in an automated email to a designated person. To generate a report of the completed form, you can use the **Generate word** **document** **rule** triggered again when the **Submit** button is clicked. In this example the **Generate word document rule** has to be executed <u>before</u> the **Send email rule**, so that the Word document can be generated and then attached to the email. 
 
 The rule order consideration is therefore particularly important when rules are **dependent** on each other - where the output of one rule is the input of another rule.
 

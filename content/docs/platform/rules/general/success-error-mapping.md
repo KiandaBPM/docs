@@ -5,7 +5,7 @@ weight: 3
 ---
 
 ## Introduction
-Success and Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As a user with a **administrator** or **designer** role, you can use Kianda **Designer** to populate fields within the Kianda form, using the **Edit rule** dialog box to set parameters for success and error mapping.
+Success and Error mapping is used to denote the success or failure of certain rules being executed where data is being transferred or a rule is connected to a data connector. As a user with an **administrator** or **designer** role, you can use Kianda **Designer** to populate fields within the Kianda form, using the **Edit rule** dialog box to set parameters for success and error mapping.
 
 
 ## When to use
@@ -23,7 +23,7 @@ Success and Error mapping should be with rule execution, displaying values that 
 
 1. Select the field that will have the rule attached, for example a button at the end of a form, or a field within a form.
 
-2. Click on **Add a rule** in the left-hand pane and select one of the rules that uses mapping as shown in the [When to use](#wehn-to-use) list above, for example the **SharePoint rule** called **Create list**, used to create a list in SharePoint dynamically using Kianda form data.
+2. Click on **Add a rule** in the left-hand pane and select one of the rules that uses mapping as shown in the [When to use](#when-to-use) list above, for example the **SharePoint rule** called **Create list**, used to create a list in SharePoint dynamically using Kianda form data.
 
    ![(Example of a rule with mapping)](/images/create-a-list-eg.jpg)
 
@@ -81,11 +81,11 @@ Error mapping is a concept of populating a form field in your Kianda process whe
 
 ![Error mapping example](/images/error-mapping.jpg)
 
-- In the **Form field** select a form field which will store the error message in your Kianda form.
+- In the **Form field**, select a form field which will store the error message in your Kianda form.
 
-- In the **Error message or text** enter an error message that you want to appear in the event of errors or click on the text box and select the **Error message** option to use a system generated error indicating what has gone wrong when the rule executed.
+- In the **Error message or text** field, enter an error message that you want to appear in the event of errors or click on the text box and select the **Error message** option to use a system generated error indicating what has gone wrong when the rule executed.
 
-- Click on the **Add mapping** to add further mappings.
+- Click on the **Add mapping** button to add further mappings.
 
 - Click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png) to delete a mapping.
 

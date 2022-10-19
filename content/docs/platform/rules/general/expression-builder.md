@@ -18,7 +18,7 @@ For example, expressions could be used in the body of an automated email sent us
 
 ![Expression example](/images/expression-example.gif)
 
-In the example above, **[RequesterName]** and **[category]** are identifiers, that is unique IDs for form fields. **ProcessLink()** is a function that will return a link to that process instance. Using the expressions above in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient.
+In the example above, **[RequesterName]** and **[category]** are identifiers, that are unique IDs for form fields. **ProcessLink()** is a function that will return a link to that process instance. Using the expressions above in an email will mean that every time an instance of the process runs, the values will be presented in an automated email, creating greater efficiencies and personalising the email for the recipient.
 
 ## Getting started with expressions – example Email body text
 

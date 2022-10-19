@@ -29,7 +29,7 @@ Remember forms in process instances are either in **edit mode** meaning they can
 
 2. By default the **first form** in a process becomes the **current form**, so only this form will be **editable**. However if several forms are **activated with** the current form when the form is created or edited in the **New form/Edit form** dialog box shown above, then **all forms in that group** will be editable by the form owner in a process instance.
 
-3. By default the **Submit mode** for forms is **Only this form** meaning that when a process instance is running you can choose <u>only</u> that particular form can have details submitted or saved. Alternatively you can choose **all forms in edit mode** this means that several forms can have their details submitted or saved. For example if several forms are activated together and all are in **edit mode** then the details of all these forms can be submitted together in the database.
+3. By default the **Submit mode** for forms is **Only this form** meaning that when a process instance is running you can choose <u>only</u> that particular form can have details submitted or saved. Alternatively you can choose **all forms in edit mode**, meaning that several forms can have their details submitted or saved. For example if several forms are activated together and all are in **edit mode** then the details of all these forms can be submitted together in the database.
 
 4. Forms can be statically set to allow **Quick actions** including allowing **editing**. When a form is created or edited using the **New form/Edit form** dialog box, clicking on **Enable quick actions** allows you to **statically** enable: 
 
@@ -43,10 +43,10 @@ Remember forms in process instances are either in **edit mode** meaning they can
 
    ![Enable edit action](/images/enable-edit-action.jpg)
 
-   For c) custom actions, you can set your own custom action and create an action label against a particular form field. This means the user(s) assigns the custom action will see the labelled action designated for them. As a designer you can choose the **action display mode** as read-only, edit or both, so you can decide what type of access the user(s) will have.
+   For c) custom actions, you can set your own custom action and create an action label against a particular form field. This means that the user(s) assigning the custom action will see the labelled action designated for them. As a designer you can choose the **action display mode** as read-only, edit or both, so you can decide what type of access the user(s) will have.
 
 ### Changing form display dynamically with rules
-If you use the **Form action** rule called **Field display mode** you can change how a field or form displays **dynamically**. For example you have a condition set that the display will change based on the condition being present or not.
+If you use the **Form action** rule called **Field display mode**, you can change how a field or form displays **dynamically**. For example you have a condition set that the display will change based on the condition being present or not.
 
 When you add this rule, under **Action** you can choose a field or form and choose from **Edit mode** or **Read mode**. 
 
@@ -59,4 +59,4 @@ Other rules can be used in other ways to change process workflow and therefore h
 ### What's next  ![Idea icon](/images/18.png) ###
 
 To read more about form ownership go to [Form owner](/docs/platform/application-designer/forms/form-owners/).
-To read more about quick actions, go to [Form quick actions menu](docs/platform/application-designer/forms/form-quick-action/).
+To read more about quick actions, go to [Form quick actions menu](/docs/platform/application-designer/forms/form-quick-action/).
