@@ -19,7 +19,7 @@
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-&lt;h2 id="non-conformance-details-form">Non conformance details form&lt;/h2>
+## Non conformance details form
 &lt;p>This section describes the purpose of the &lt;strong>Nonconformance details&lt;/strong> form, and an outline kind of information that is captured. In this form we will focus our attention to a &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email&lt;/a> rules. We will be using the send email rule across the process and therefore the logic behind implementing it will be the same. We will also focus on a &lt;strong>Configuration&lt;/strong> panel that will be invisible to users. Will use the panel to store a template for our report and have a few fields that will help us when creating a name for the report. In combination with our &lt;strong>Closure&lt;/strong> form, we will also take a quick look at the &lt;a href="https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/">Kianda Word add-in&lt;/a> to create a template for our report.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/Examples/NonconformityDetailsForm.mp4">
@@ -28,11 +28,12 @@ Your browser does not support the video tag.
 &lt;/video>
 &lt;h2 id="auditor-review">Auditor review&lt;/h2>
 &lt;p>This section describes the purpose of the &lt;strong>Auditor review&lt;/strong> form, and an outline kind of information that is captured. In this form we will focus our attention individual actions that the &lt;strong>Auditor&lt;/strong> can create to match his &lt;strong>Plan&lt;/strong> and &lt;strong>Implementation&lt;/strong>. We will use a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table&lt;/a> and a &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/dialog/">Dialog&lt;/a> fields as well as a &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/loop-table/">Loop table&lt;/a> rule to create the desired functionality.&lt;/p>
-&lt;video width="100%" style="width:100%" controls>
-&lt;source src="https://docs.kianda.com/videos/Examples/AuditorReviewForm.mp4">
-Your browser does not support the video tag.
-&lt;/source>
-&lt;/video>
+&lt;div width="100%" style="width:100%; height:589px;" controls>
+&lt;div class="smart-player-embed-container" style="height:100%">
+&lt;iframe class="smart-player-embed-iframe" id="embeddedSmartPlayerInstance" style="width:100%;height:100%" src="https://docs.kianda.com/videos/smart-player/auditor-review/AuditorReviewFormead3fb6.autosave_player.html" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>&lt;/iframe>
+&lt;/div>
+&lt;script src="scripts/embedded-smart-player.min.js">&lt;/script>
+&lt;/div>
 &lt;h2 id="action-confirmation">Action confirmation&lt;/h2>
 &lt;p>This section describes the purpose of the &lt;strong>Action confirmation&lt;/strong> form, and an outline kind of information that is captured. In this form we will focus our attention on a &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/field-group/">Field group&lt;/a> that allows us to mirror fields from different forms within our process and group them together. The &lt;strong>Field group&lt;/strong> prevents us from &lt;strong>re-creating&lt;/strong> fields as the values from the original field will be copied into the field inside of the field group.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
