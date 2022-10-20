@@ -32,8 +32,6 @@ Nonconformance introductory video going through the idea of the process and what
     Your browser does not support the video tag.
     </source>
 </video>
-
-
 ## Non conformance details form
 
 This section describes the purpose of the **Nonconformance details** form, and an outline kind of information that is captured. In this form we will focus our attention to a [Assign form](/docs/platform/rules/workflow/assign-form/) and [Send email](/docs/platform/rules/communications/send-email/) rules. We will be using the send email rule across the process and therefore the logic behind implementing it will be the same. We will also focus on a **Configuration** panel that will be invisible to users. Will use the panel to store a template for our report and have a few fields that will help us when creating a name for the report. In combination with our **Closure** form, we will also take a quick look at the [Kianda Word add-in](/docs/platform/document-generation/word-document-add-in/) to create a template for our report.
@@ -50,11 +48,12 @@ This section describes the purpose of the **Nonconformance details** form, and a
 
 This section describes the purpose of the **Auditor review** form, and an outline kind of information that is captured. In this form we will focus our attention individual actions that the **Auditor** can create to match his **Plan** and **Implementation**. We will use a [Table](/docs/platform/controls/input/table/) and a [Dialog](/docs/platform/controls/layout/dialog/) fields as well as a [Loop table](/docs/platform/rules/tables/loop-table/) rule to create the desired functionality.
 
-<video width="100%" style="width:100%" controls>
-    <source src="/videos/Examples/AuditorReviewForm.mp4">
-    Your browser does not support the video tag.
-    </source>
-</video>
+<div width="100%" style="width:100%; height:589px;" controls>
+<div class="smart-player-embed-container" style="height:100%">
+<iframe class="smart-player-embed-iframe" id="embeddedSmartPlayerInstance" style="width:100%;height:100%" src="/videos/smart-player/auditor-review/AuditorReviewFormead3fb6.autosave_player.html" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
+<script src="scripts/embedded-smart-player.min.js"></script>
+</div>
 
 
 
