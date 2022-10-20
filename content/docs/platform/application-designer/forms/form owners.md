@@ -44,7 +44,7 @@ So what is **form owner**? A form owner is assigned when a form is created in Ki
 
 ## Changing form access
 
-The **default owner** is the person or group that the form is assigned to using the **default owner field** in the **new form** dialog box  as shown above. By default, only this person or group **can edit the current form** in a process instance. All other users can only view forms in read mode. The next section details how to [change default owners](#changing-default-owners).
+The **default owner** is the person or group that the form is assigned to using the **default owner field** in the **new form** dialog box  as shown above. By default, only this person or group **can edit the current form** in a process instance. All other users can only view forms in read mode. The next section details how to [Change default owners](#changing-default-owners).
 
 It is also possible to allow other users to have edit access to forms using the [Assign rule](/docs/platform/rules/workflow/assign-form/) and [Quick actions](/docs/platform/application-designer/forms/form-quick-action/). 
 
