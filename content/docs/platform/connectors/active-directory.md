@@ -1,12 +1,20 @@
 ---
-title: "Active directory"
+title: "Active Directory"
 weight: 1
 typora-root-url: ..\..\..\..\static
 ---
 
-One of the data connectors within Kianda that you can connect to is **Active Directory** (**AD**) also known as **Active Directory Domain Services** (**AD DS**). AD is a logical and hierarchical structured data store of objects which are mostly accounts. Accounts such as **Users, Computers, Groups** and other objects such as **Printers** or **Group Policy Objects** (GPO). You can store information about user accounts within AD such as **Name, Password, Job title** and **Permissions**. Having an AD connector will allow you to access information defined from your AD from your Kianda subscription. 
+One of the data connectors within Kianda that you can connect to is **Active Directory** (**AD**) also known as **Active Directory Domain Services** (**AD DS**). AD is a logical and hierarchical structured data store of objects which are mostly accounts. Accounts such as **Users, Computers, Groups** and other objects such as **Printers** or **Group Policy Objects** (GPO). For example, you can store information about user accounts within an AD such as **Name, Password, Job title** and **Permissions**. 
 
+## When to use
 
+Having an AD connector will allow you to access information that is stored there within your Kianda subscription. You will be able to use **User** related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the [Data](/docs/platform/rules/data/) rules that are predefined within Kianda.
+
+## Before you get started
+
+Before you can create a connection with your Active Directory and your Kianda subscription, you need to download Kianda Cloud Connect. **Kianda Cloud Connect** is a piece of software that **establishes a connection** between your **local machine** and your **Kianda subscription**. This lightweight app will sit on your PC or server where files reside that you need to use in Kianda processes. It allows the data to **travel** from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example **Deleting** a file or **Creating** one. 
+
+To learn more about how to download and create a connection between your Kianda subscription and Kianda Cloud Connect go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
 
 ## How to get started
 
@@ -38,6 +46,35 @@ One of the data connectors within Kianda that you can connect to is **Active Dir
 6. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
 
 7. Click on **Close** to close the details page and return to the data source management main view.
+
+## Active Directory functions
+
+Active Directory functions are **Users** related and to use them you have to use the [Data](/docs/platform/rules/data/) rules that predefined within Kianda. The functions that are available are:
+
+![Active Directory list of functions](/images/ad-functions.jpg)
+
+- **FindUsers** - allows you to look for a user within your directory by defining a user attribute as a means of searching for them.
+- **IsMemberOf** - allows you to see if a user is member of a group. You need to specify both a user and a group.
+- **CreateUser** - allows you to create a user within your directory. You need to specify a **username**, **first name, last name, email and password** to create a user successfully.
+- **UpdateUser** - allows you to update user attributes. You need to specify what user to update by providing their **sAMAccountName** and **distinguishedName** (DN).
+- **AddUserToGroup** - allows you to add a user to a group by providing the group name and both the **distinguishedName** and **sAMAccountName** of the user.
+- **RemoveUserFromGroup** - allows you to remove a user from a group by providing the group name and both the **distinguishedName** and **sAMAccountName** of the user.
+- **Enable User** - allows you to enable or disable a user by providing the enable parameter and both the **distinguishedName** and **sAMAccountName** of the user. The enable parameter is either **true** or **false**.
+- **MoveUser** - allows you to move a user to a specific path in your directory by providing the destination path and both the **distinguishedName** and **sAMAccountName** of the user.
+
+Lets take the **CreateUser** function as an example to show how these functions work. As mentioned earlier, we need to use the Data rules to use these functions and for this example we use the **Create item** rule which is available from the Data rules. 
+
+1. When creating a user in Active Directory, there are some required properties that we need to provide. Those properties are a **username**, **givenName** (first name), **surname** (last name), **email** and **password**. There are also extra properties that can be provided by expanding a properties tab within the function:
+
+   ![Active Directory list of functions](/images/ad-create-user.jpg)
+
+2. We need to create at least five fields that will be used to provide a value as the required properties. We will use a text box field for each one:
+
+   ![Active Directory list of functions](/images/ad-fields.jpg)
+
+3. Use the create item rule to use the function. We need to map the text box fields to the appropriate properties as follow:
+
+
 
 ### What’s next ![Idea icon](/images/18.png)
 

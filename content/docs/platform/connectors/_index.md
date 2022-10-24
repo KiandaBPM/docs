@@ -57,7 +57,7 @@ Only those with the role **Administrator** or **Manage data sources** have acces
    - **Display name** - the name of the data source as it will display in your system. Choose something meaningful, as you will use this name in process design to connect your forms to your data source.
    - **Information about the data source** - this could be a URL, Server name, Client ID, root folder path etc. 
    - **Authentication details** - this could be a username, password, client secret etc.
-   - Option to use **Kianda Cloud Connect** - you enable this feature and download a zip file which you can install on your server, allowing the Kianda system to reach your server and get access to data, for example SQL Server, making system integration quick and efficient.
+   - Option to use **[Kianda Cloud Connect](#kianda-cloud-connect)**. This software allows you to connect a local system for example a file system, to Kianda. If you enable this feature and download a zip file, you can install the software on your server, allowing the Kianda system to reach your server and get access to data, for example SQL Server, making system integration quick and efficient. 
    - **Test connection** - all data source detail pages will allow you to test your connection using this button to ensure data exchange can happen.
    - **Save** - at any time you can save details, even if some parameters need to be completed, allowing you to return to the configuration at any point.
    - **Security** - all data sources can have different levels of security set up, including administrators for the connection, and users of the connection, see [Setting security for data sources](#setting-security-for-data-sources) for more details.
@@ -76,9 +76,7 @@ The video below demonstrates how to create a datasource for SharePoint. The proc
     Your browser does not support the video tag.
     </source>
 </video>
-
-
-
+There is also an option to create a **customised data source connector** using the Kianda Developer [Client Connector](/docs/low-code/client-connector/). 
 
 ### Kianda Cloud Connect
 
@@ -104,7 +102,7 @@ You can enable KCC when you **add a new** data source from the main by datasourc
 3. A link appears to **Download Kianda Cloud Connect**. Click on this link to download the software.
 4. Click on the **setup file** in the zip package and step through the wizard to install Kianda Cloud Connect.
 
-
+For more information go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
 
 ### Setting security for data sources ###
 
