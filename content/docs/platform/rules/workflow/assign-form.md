@@ -44,7 +44,7 @@ To dynamically assign a form to a user:
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. Under **Action** create one or more actions for the rule by filling out the following:
+5. Under **Action**, create one or more actions for the rule by filling out the following:
 
    - **Select form** - click on the field and select a form from the process. Click on the **Plus/Add** button ![Add/Plus button](/images/add-plus-action.jpg) to add more forms to assign. If you change your mind and want to delete a form, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 
@@ -79,7 +79,7 @@ To dynamically assign a form to a user:
 
 When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
 
-1. To **disable** a rule click the slider across beside the rule name. 
+1. To **disable** a rule, click the slider across beside the rule name. 
 
 2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
 
@@ -97,8 +97,8 @@ To view the default owners for the form, click on the form itself within the pro
 
 Note: a form displays in edit mode if:
 
-1) The user is the owner of the form and
-2) The form is the current form 
+1) The user is the owner of the form, and
+2) The selected form is the current form, and
 3) The form is not submitted or in a completed state, that is being worked on. The **Go to form** rule can reset the submitted state of a form, see [Go to form](/docs/platform/rules/workflow/go-to-form/) for details. 
 
 

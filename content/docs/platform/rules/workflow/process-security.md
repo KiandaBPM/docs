@@ -41,14 +41,15 @@ To dynamically set security for process instances:
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. Under **Action** create one or more actions for the rule by filling out the following:
+5. Under **Action**, create one or more actions for the rule by filling out the following:
 
    - **Add to process security users** - choose from the radio buttons:
+     
      - **Any user** - choose from **Users**, **Groups** and/or **Partners** in the drop-down list. All users and groups must be predefined in the system, see [Users and Groups](/docs/platform/administration/users/) for more details. Partners must also be predefined within the [Invite partners](/docs/platform/administration/b2b-portals/) section under Administration.
-     - **Current user** - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.
-     - **Defined in a user field** - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them. 
-     - **Form owner(s)** - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see [Form owners](/docs/platform/application-designer/forms/form-owners/) for more details on what form ownership is and how to create form owners.
-   - Depending on the option chosen for **Assign to**, different fields will display: 
+     - **Current user** - make the current user of the form, whoever is submitting or saving information, as the person that is added to the form process security.
+     - **Defined in a user field** - choose a user picker field from the process, where the selected users, groups or partners will be added to the form process security.
+     - **Form owner(s)** - selecting this option means that the form owner(s) defined during form creation/editing will be added to the form process security, see [Form owners](/docs/platform/application-designer/forms/form-owners/) for more details on what form ownership is and how to create form owners.
+   - Depending on the option chosen for **Add to process security users**, different fields will display: 
      - For example if **Any user** is chosen, then a **Select user(s)** field appears as shown in the image above. Choose from **Users**, **Groups** and/or **Partners**.
 
      - If **Defined in a user field** or **Form owner(s)** is chosen then a **Select form field** appears prompting you to select a user picker field for the former, and a form with form owners for the latter.  
@@ -56,15 +57,15 @@ To dynamically set security for process instances:
    - **Existing user(s)** - choose from:
      -  **Override** - this means that this rule will override form ownership, making those referenced in the **Edit rule dialog** box the form owners.
      -  **Append** - this means that for a current list of form owners, for example those defined during form creation, that list will be appended with any users referenced in the **Edit rule dialog** box. 
-   
+
    - **Override security settings** - choose from **Yes** or **No**.
-   
+
      - If you choose **Yes** then a checkbox appears allowing you to **Enable security**. 
-   
+
        ![Process security enabled security example](/images/process-security-rule-enabled.jpg)
-   
+
      - If you check the checkbox, then you can choose the **Process security mode** which lists the following options:
-   
+
        -  **Security users can create, assign to, can update, everyone else can view** - this is the lowest level of security, allowing the assigned user(s) the ability to view, edit and assign process instances, while others can view the process instances.
        -  **Security users can create, assign to, can view and update** - this allows the assigned user(s) the ability to view, edit and assign process instances
        -  **Security users only can create, view and update** - this is the highest level of security where only the named users, that is those defined as **Line Manager** in a user picker field, will be able to view and edit process instances. No other users will have access to the process instances.
@@ -81,7 +82,7 @@ The next section will cover how to use the buttons visible in the right-hand pan
 
 When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
 
-1. To **disable** a rule click the slider across beside the rule name. 
+1. To **disable** a rule, click the slider across beside the rule name. 
 
 2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
 
