@@ -761,7 +761,7 @@ Your browser does not support the video tag.
 &lt;li>&lt;strong>Display name&lt;/strong> - the name of the data source as it will display in your system. Choose something meaningful, as you will use this name in process design to connect your forms to your data source.&lt;/li>
 &lt;li>&lt;strong>Information about the data source&lt;/strong> - this could be a URL, Server name, Client ID, root folder path etc.&lt;/li>
 &lt;li>&lt;strong>Authentication details&lt;/strong> - this could be a username, password, client secret etc.&lt;/li>
-&lt;li>Option to use &lt;strong>Kianda Cloud Connect&lt;/strong> - you enable this feature and download a zip file which you can install on your server, allowing the Kianda system to reach your server and get access to data, for example SQL Server, making system integration quick and efficient.&lt;/li>
+&lt;li>Option to use &lt;strong>&lt;a href="#kianda-cloud-connect">Kianda Cloud Connect&lt;/a>&lt;/strong>. This software allows you to connect a local system for example a file system, to Kianda. If you enable this feature and download a zip file, you can install the software on your server, allowing the Kianda system to reach your server and get access to data, for example SQL Server, making system integration quick and efficient.&lt;/li>
 &lt;li>&lt;strong>Test connection&lt;/strong> - all data source detail pages will allow you to test your connection using this button to ensure data exchange can happen.&lt;/li>
 &lt;li>&lt;strong>Save&lt;/strong> - at any time you can save details, even if some parameters need to be completed, allowing you to return to the configuration at any point.&lt;/li>
 &lt;li>&lt;strong>Security&lt;/strong> - all data sources can have different levels of security set up, including administrators for the connection, and users of the connection, see &lt;a href="#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/li>
@@ -777,6 +777,7 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
+There is also an option to create a **customised data source connector** using the Kianda Developer [Client Connector](/docs/low-code/client-connector/).
 &lt;h3 id="kianda-cloud-connect">Kianda Cloud Connect&lt;/h3>
 &lt;p>Kianda Cloud Connect (KCC) is available with the following data sources, allowing you to streamline data system integration:&lt;/p>
 &lt;ul>
@@ -800,6 +801,7 @@ Your browser does not support the video tag.
 &lt;li>A link appears to &lt;strong>Download Kianda Cloud Connect&lt;/strong>. Click on this link to download the software.&lt;/li>
 &lt;li>Click on the &lt;strong>setup file&lt;/strong> in the zip package and step through the wizard to install Kianda Cloud Connect.&lt;/li>
 &lt;/ol>
+&lt;p>For more information go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/p>
 &lt;h3 id="setting-security-for-data-sources">Setting security for data sources&lt;/h3>
 &lt;p>All data sources can have security added at different levels, for example at a role level and even database query level.&lt;/p>
 &lt;p>To enable security for datasources:&lt;/p>
