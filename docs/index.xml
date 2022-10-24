@@ -1814,7 +1814,7 @@ The Safety Team
 &lt;p>The following steps illustrate a scenario to &lt;strong>hide&lt;/strong> and &lt;strong>show&lt;/strong> fields. The same steps can be applied to enable, disable, toggle enable and so on. To dynamically hide a field:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>If you have the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Design business process&lt;/strong> go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong>, open an existing process or create a new process and decide which form or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;p>If you have the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Design business process&lt;/strong>, go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong>, open an existing process or create a new process and decide which form or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Hide or Disable&lt;/strong>.&lt;/p>
@@ -1840,7 +1840,7 @@ The Safety Team
 &lt;p>In the example above, &lt;strong>Signature&lt;/strong> and &lt;strong>Training materials&lt;/strong> field will show and a &lt;strong>Feedback&lt;/strong> field will hide, while a &lt;strong>Management decision&lt;/strong> field has a value of &lt;strong>Yes&lt;/strong>, otherwise the shown fields will hide, while the &lt;strong>Feedback&lt;/strong> field shows &lt;strong>No&lt;/strong>. The result is a dynamic form that will reveal particular fields based on user input for the Management decision field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To remove the otherwise action(s) click on the &lt;strong>Remove otherwise action&lt;/strong> fields.&lt;/p>
+&lt;p>To remove the otherwise action(s), click on the &lt;strong>Remove otherwise action&lt;/strong> fields.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
@@ -1858,10 +1858,10 @@ The Safety Team
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
-&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule, click the slider across beside the rule name.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
-&lt;ol start="2">
+&lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
 &lt;/li>

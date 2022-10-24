@@ -28,7 +28,7 @@
 &lt;p>The following steps illustrate a scenario to &lt;strong>hide&lt;/strong> and &lt;strong>show&lt;/strong> fields. The same steps can be applied to enable, disable, toggle enable and so on. To dynamically hide a field:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>If you have the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Design business process&lt;/strong> go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong>, open an existing process or create a new process and decide which form or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;p>If you have the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Design business process&lt;/strong>, go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong>, open an existing process or create a new process and decide which form or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Hide or Disable&lt;/strong>.&lt;/p>
@@ -54,7 +54,7 @@
 &lt;p>In the example above, &lt;strong>Signature&lt;/strong> and &lt;strong>Training materials&lt;/strong> field will show and a &lt;strong>Feedback&lt;/strong> field will hide, while a &lt;strong>Management decision&lt;/strong> field has a value of &lt;strong>Yes&lt;/strong>, otherwise the shown fields will hide, while the &lt;strong>Feedback&lt;/strong> field shows &lt;strong>No&lt;/strong>. The result is a dynamic form that will reveal particular fields based on user input for the Management decision field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To remove the otherwise action(s) click on the &lt;strong>Remove otherwise action&lt;/strong> fields.&lt;/p>
+&lt;p>To remove the otherwise action(s), click on the &lt;strong>Remove otherwise action&lt;/strong> fields.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
@@ -72,10 +72,10 @@
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
-&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule, click the slider across beside the rule name.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/disable-rule.jpg" alt="Disable a rule">&lt;/p>
-&lt;ol start="2">
+&lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
 &lt;/li>
@@ -168,7 +168,7 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Go to form</title><link>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/</guid><description>
-&lt;p>The &lt;strong>Go to form&lt;/strong> rule is used to control how a user moves between forms. As mentioned in &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Form basics&lt;/a> by default the first form in a process is the &lt;strong>current form&lt;/strong>. Once submitted, control passes to the next form and the user is not allowed to go back to the previous form. The &lt;strong>Go to form&lt;/strong> rule allows you to redirect the user to any form. The user can then navigate back and forth between those forms.&lt;/p>
+&lt;p>The &lt;strong>Go to form&lt;/strong> rule is used to control how a user moves between forms. As mentioned in &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Form basics&lt;/a>, by default the first form in a process is the &lt;strong>current form&lt;/strong>. Once submitted, control passes to the next form and the user is not allowed to go back to the previous form. The &lt;strong>Go to form&lt;/strong> rule allows you to redirect the user to any form. The user can then navigate back and forth between those forms.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>This rule can only be added to a &lt;strong>button&lt;/strong>.&lt;/p>
 &lt;p>&lt;strong>Warning!&lt;/strong>&lt;/p>
@@ -193,7 +193,7 @@
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by filling out the following:&lt;/p>
+&lt;p>Under &lt;strong>Action&lt;/strong>, create one or more actions for the rule by filling out the following:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Select form&lt;/strong> - click on the field and select a form from the process.&lt;/p>
@@ -233,7 +233,7 @@
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule, click the slider across beside the rule name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
@@ -289,7 +289,7 @@
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by filling out the following:&lt;/p>
+&lt;p>Under &lt;strong>Action&lt;/strong>, create one or more actions for the rule by filling out the following:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Select form&lt;/strong> - click on the field and select a form from the process. Click on the &lt;strong>Plus/Add&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-plus-action.jpg" alt="Add/Plus button"> to add more forms to assign. If you change your mind and want to delete a form, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
@@ -332,7 +332,7 @@
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule, click the slider across beside the rule name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
@@ -349,8 +349,8 @@
 &lt;p>To view the default owners for the form, click on the form itself within the process in Designer and in the &lt;strong>Edit form&lt;/strong> dialog box, see named owners in the &lt;strong>Default owner(s)&lt;/strong> field. See &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details.&lt;/p>
 &lt;p>Note: a form displays in edit mode if:&lt;/p>
 &lt;ol>
-&lt;li>The user is the owner of the form and&lt;/li>
-&lt;li>The form is the current form&lt;/li>
+&lt;li>The user is the owner of the form, and&lt;/li>
+&lt;li>The selected form is the current form, and&lt;/li>
 &lt;li>The form is not submitted or in a completed state, that is being worked on. The &lt;strong>Go to form&lt;/strong> rule can reset the submitted state of a form, see &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/">Go to form&lt;/a> for details.&lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
@@ -386,19 +386,19 @@
 &lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by filling out the following:&lt;/p>
+&lt;p>Under &lt;strong>Action&lt;/strong>, create one or more actions for the rule by filling out the following:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Add to process security users&lt;/strong> - choose from the radio buttons:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users and groups must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details. Partners must also be predefined within the &lt;a href="https://docs.kianda.com/docs/platform/administration/b2b-portals/">Invite partners&lt;/a> section under Administration.&lt;/li>
-&lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.&lt;/li>
-&lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them.&lt;/li>
-&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
+&lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that is added to the form process security.&lt;/li>
+&lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will be added to the form process security.&lt;/li>
+&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will be added to the form process security, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Depending on the option chosen for &lt;strong>Assign to&lt;/strong>, different fields will display:&lt;/p>
+&lt;p>Depending on the option chosen for &lt;strong>Add to process security users&lt;/strong>, different fields will display:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>For example if &lt;strong>Any user&lt;/strong> is chosen, then a &lt;strong>Select user(s)&lt;/strong> field appears as shown in the image above. Choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong>.&lt;/p>
@@ -446,7 +446,7 @@
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule, click the slider across beside the rule name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
