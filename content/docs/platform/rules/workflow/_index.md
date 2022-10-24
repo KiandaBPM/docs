@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\..\..\static
 
    ![Three form process example](/images/3-form-example.jpg)
 
-In the example above, the workflow for this process would be completion of the forms in this order: **Training Request** > **Training Approval** > **Training Attendance** however using Workflow rules, you could use **Go to form** to force the **Training Attendance** form to be the current form after the Training Request form has been completed. 
+In the example above, the workflow for this process would be completion of the forms in this order: **Training Request** > **Training Approval** > **Training Attendance**, however using Workflow rules, you could use **Go to form** to force the **Training Attendance** form to be the current form after the Training Request form has been completed. 
 
 You could also use the **Assign form** rule to assign editing rights to particular users so they can edit forms. See more about Go to form and Assign form below.
 
@@ -18,7 +18,7 @@ Using rules in this way changes the flow of the process, and additional levels o
 
 ## Getting started with Workflow rules ##
 
-If you have the role **Administrator** or **Design business process** go to **Administration** in the left-hand side menu and then **Designer** and click on an existing process or create a new process, then decide on a form or field to add the rule to by clicking on that item and click on **Add a rule**. 
+If you have the role **Administrator** or **Design business process**, go to **Administration** in the left-hand side menu and then **Designer** and click on an existing process or create a new process. Then decide on a form or field to add the rule to by clicking on that item and click on **Add a rule**. 
 
 The **Workflow** rules are found in the left-hand pane when you click on **Workflow**.
 

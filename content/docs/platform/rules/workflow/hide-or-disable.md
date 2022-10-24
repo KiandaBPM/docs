@@ -35,7 +35,7 @@ You can add this rule:
 
 The following steps illustrate a scenario to **hide** and **show** fields. The same steps can be applied to enable, disable, toggle enable and so on. To dynamically hide a field:
 
-1. If you have the role **Administrator** or **Design business process** go to **Administration** > **Designer**, open an existing process or create a new process and decide which form or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button,  **Pen** button ![Pen button](/images/penicon.png).
+1. If you have the role **Administrator** or **Design business process**, go to **Administration** > **Designer**, open an existing process or create a new process and decide which form or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](/images/penicon.png).
 
 2. Click on **Add a rule** > **Workflow** > **Hide or Disable**. 
 
@@ -59,7 +59,7 @@ The following steps illustrate a scenario to **hide** and **show** fields. The s
 
    In the example above, **Signature** and **Training materials** field will show and a **Feedback** field will hide, while a **Management decision** field has a value of **Yes**, otherwise the shown fields will hide, while the **Feedback** field shows **No**. The result is a dynamic form that will reveal particular fields based on user input for the Management decision field. 
 
-8. To remove the otherwise action(s) click on the **Remove otherwise action** fields.
+8. To remove the otherwise action(s), click on the **Remove otherwise action** fields.
 
 9. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
@@ -79,9 +79,9 @@ The following steps illustrate a scenario to **hide** and **show** fields. The s
 
 When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
 
-1. To **disable** a rule click the slider across beside the rule name. 
+1. To **disable** a rule, click the slider across beside the rule name. 
 
-![Disable a rule](/images/disable-rule.jpg)
+   ![Disable a rule](/images/disable-rule.jpg)
 
 2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
 

@@ -4,7 +4,7 @@ weight: 3
 typora-root-url: ..\..\..\..\..\static
 ---
 
-The **Go to form** rule is used to control how a user moves between forms. As mentioned in [Form basics](/docs/platform/application-designer/forms/) by default the first form in a process is the **current form**. Once submitted, control passes to the next form and the user is not allowed to go back to the previous form.  The **Go to form** rule allows you to redirect the user to any form.  The user can then navigate back and forth between those forms.
+The **Go to form** rule is used to control how a user moves between forms. As mentioned in [Form basics](/docs/platform/application-designer/forms/), by default the first form in a process is the **current form**. Once submitted, control passes to the next form and the user is not allowed to go back to the previous form.  The **Go to form** rule allows you to redirect the user to any form.  The user can then navigate back and forth between those forms.
 
 ## When to use
 
@@ -33,7 +33,7 @@ To dynamically redirect a user to a form:
 
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
-5. Under **Action** create one or more actions for the rule by filling out the following:
+5. Under **Action**, create one or more actions for the rule by filling out the following:
 
    - **Select form** - click on the field and select a form from the process. 
 
@@ -67,7 +67,7 @@ The next section will cover how to use the buttons visible in the right-hand pan
 
    When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
 
-   1. To **disable** a rule click the slider across beside the rule name. 
+   1. To **disable** a rule, click the slider across beside the rule name. 
 
    2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
 
