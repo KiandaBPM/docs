@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\static
 
 **Kianda Cloud Connect** is a piece of software that **establishes a connection** between your **local machine** and your **Kianda subscription**. This lightweight app will sit on your PC or server where files reside that you need to use in Kianda processes. It allows the data to **travel** from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example **Deleting** a file or **Creating** one.
 
-Kianda Cloud Connect authenticates with a user created in Kianda, see [User management](/docs/platform/administration/users/) for more details on users and send information to and from Kianda using port 80. See details below on how to set up the connection.
+Kianda Cloud Connect authenticates with a user created in Kianda, see [User management](/docs/platform/administration/users/) for more details on users, and sends information to and from Kianda using port 80. See details below on how to set up the connection.
 
 ## Downloading Kianda Cloud Connect
 
@@ -48,7 +48,7 @@ You can download **Kianda Cloud Connect** software in any details page of data s
 
 ## Connecting your PC to Kianda Cloud Connect
 
-To **establish a connection** between your **Kianda subscription** and your l**ocal machine**, you need to login using a **Kianda** **username** (email) and **password**. Note that the **user** you are trying to establish a connection with **must be an administrator** and needs to be a **unique username** (email). The username you want to establish the connection **<u>cannot</u>** be used in **more than one Kianda subscriptions** as Kianda Cloud Connect will not be able to tell which subscription you want to connect to.
+To **establish a connection** between your **Kianda subscription** and your l**ocal machine**, you need to login using a **Kianda** **username** (email) and **password**. Note that the **user** you are trying to establish a connection with **must be an administrator** and needs to be a **unique username** (email). The username you want to establish the connection with **<u>cannot</u>** be used in **more than one Kianda subscriptions** as Kianda Cloud Connect will not be able to tell which subscription you want to connect to.
 
 ![Kianda Cloud Connect](/images/kianda-cloud-connect-app.jpg)
 
@@ -75,4 +75,4 @@ The connector is now established and can be used when designing processes.
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To find out more about how to build processes go to [Application Designer](/docs/platform/application-designer/) .
+To find out more about how to build processes go to [Application Designer](/docs/platform/application-designer/).
