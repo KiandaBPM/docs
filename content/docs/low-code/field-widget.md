@@ -41,7 +41,7 @@ If you are an experienced developer with an **Administrator** or **Developer** r
 
    ***Widget view***
 
-   ![Widget view](/images/widgetview2.jpg)
+   ![Developer view](/images/developer-view.jpg)
 
 2. Click on **New widget** to create a new field/control widget.
 

@@ -11,7 +11,7 @@ Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that form
 You can use the file to **target** very specific details, for example a button in a particular process as shown below. This code will create specific styling for a button that is defined in a form in a process using Kianda **Designer**.
 
 ```css
-div[data-name="btn-manager-Approve"], div[data-name="btn_approve"]{
+div[data-name="btn_user_manager_approve"], div[data-name="btn_approve"]{
     color: white;
     background-color: black;
     padding-bottom: 1px;
@@ -19,7 +19,7 @@ div[data-name="btn-manager-Approve"], div[data-name="btn_approve"]{
 }
 ```
 
-CSS can be used not just for to change the look and feel of applications but for functionality within a process, for example to hide a button via CSS and then create a button via JavaScript for a particular action.
+CSS can be used not just for to change the look and feel of applications but for functionality within a process, for example to hide a button via CSS and then create a button via JavaScript for a particular action. 
 
 The **Global CSS file editor** exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site, see [Subscription](/docs/platform/administration/subscription/) for an introduction to the **Subscription** function.
 
