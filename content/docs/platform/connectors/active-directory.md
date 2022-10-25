@@ -68,11 +68,15 @@ Lets take the **CreateUser** function as an example to show how these functions 
 
    ![Active Directory list of functions](/images/ad-create-user.jpg)
 
-2. We need to create at least five fields that will be used to provide a value as the required properties. We will use a text box field for each one:
+2. We need to create at least five fields that will be used to provide a value as the required properties. We will use a [text box field](/docs/platform/controls/input/textbox/) for each one:
 
-   ![Active Directory list of functions](/images/ad-fields.jpg)
+   ![Required fields for the required properties](/images/ad-fields.jpg)
 
-3. Use the create item rule to use the function. We need to map the text box fields to the appropriate properties as follow:
+3. Use the [create item](docs/platform/rules/data/create-item/) rule to use the function. We need to map the text box fields to the appropriate properties as follow:
+
+   ![Mapping the required fields to create item rule](/images/ad-create-user-rule.jpg)
+
+You can apply the create item rule to a button, for example, the submit button. This will result in a user being created in your AD whenever the submit button will be clicked.
 
 
 
