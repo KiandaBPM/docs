@@ -69,13 +69,15 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/ad-create-user.jpg" alt="Active Directory list of functions">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>We need to create at least five fields that will be used to provide a value as the required properties. We will use a text box field for each one:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/ad-fields.jpg" alt="Active Directory list of functions">&lt;/p>
+&lt;p>We need to create at least five fields that will be used to provide a value as the required properties. We will use a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">text box field&lt;/a> for each one:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-fields.jpg" alt="Required fields for the required properties">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Use the create item rule to use the function. We need to map the text box fields to the appropriate properties as follow:&lt;/p>
+&lt;p>Use the &lt;a href="docs/platform/rules/data/create-item/">create item&lt;/a> rule to use the function. We need to map the text box fields to the appropriate properties as follow:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-create-user-rule.jpg" alt="Mapping the required fields to create item rule">&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>You can apply the create item rule to a button, for example, the submit button. This will result in a user being created in your AD whenever the submit button will be clicked.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Add time to date</title><link>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/dates/add-time-to-date/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
