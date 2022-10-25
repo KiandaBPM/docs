@@ -28,7 +28,7 @@ One of the datasources available in Kianda is an **Oracle** datasource. Oracle i
    - **Status** - represents the current status of the connection.
      - **incomplete** - means that the details of the connector were not fully completed
      - **test failed** - means that the details of the connector are incorrect and the connection has failed.
-     - **ready** - means that the connector has successfully connected and its ready to be used.
+     - **ready** - means that the connector has successfully connected and it is ready to be used.
 
 4. When you have added the Oracle details, you are ready to test your connection and add security. At the bottom of the **Oracle details** page, click on **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
 
@@ -40,4 +40,4 @@ One of the datasources available in Kianda is an **Oracle** datasource. Oracle i
 
 ## What’s next ![Idea icon](/images/18.png)
 
-Your **SQL Server connector** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).
+Your **Oracle database connector** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).

@@ -4,7 +4,7 @@ weight: 19
 typora-root-url: ..\..\..\..\static
 ---
 
-One of the datasources available in Kianda is a Structured Query Language **(SQL) Server** datasource. Using the SQL server as your datasource, you can perform any Create, Read, Update and Delete (**CRUD**) operations using the **Data** rules provided in the Kianda platform, to learn more about data rules go to [Data rules](/docs/platform/rules/data/). Using the SQL server connector, you have access to all tables within your database from your server, keep in mind that you can perform CRUD operations on data within a **table** of the database, but you **cannot** create or delete **tables themselves**.
+One of the datasources available in Kianda is a Structured Query Language **(SQL) Server** datasource. Using the SQL server as your datasource, you can perform any Create, Read, Update and Delete (**CRUD**) operations using the **Data** rules provided in the Kianda platform, to learn more about data rules go to [Data rules](/docs/platform/rules/data/). Using the SQL server connector, you have access to all tables within your database from your server. Keep in mind that you can perform CRUD operations on data within a **table** of the database, but you **cannot** create or delete **tables themselves**.
 
 ## When to use
 
@@ -31,7 +31,7 @@ In order to successfully establish this connection with your server, a user is n
    - **Display name** - type in a name for your SQL server connector. This is used to distinguish between different data connectors on your platform.
    - **Server** - the name of the server you want to access or the IP address where the server is hosted. When you are running a local server on your machine you can use `localhost` as the server name.
    - **Database** - the name of the database from your server that you want to connect to.
-   - **Trusted connection** - enable windows trusted connection. Only available when using with Kianda cloud connector, enabling this will automatically enable the **Use Kianda Cloud Connect** option. this option will use the connector service credentials to connect to the destination datasource. Having this option enabled will automatically hide the **User** and **Password** fields.
+   - **Trusted connection** - enable windows trusted connection. Only available when using with Kianda cloud connector, enabling this will automatically enable the **Use Kianda Cloud Connect** option. This option will use the connector service credentials to connect to the destination datasource. Having this option enabled will automatically hide the **User** and **Password** fields.
    - **User** - username used to log into the server. Note that in order to log into a server with a username and password, the user must be a **system admin** for the connection to be successful.
    - **Password** - password used to log into the server.
    - **Use Kianda Cloud Connect** - by default this option is disabled, the cloud connect is used to **create a connection** between a **locally run SQL server** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/). Check this option if you want to connect to a server that is running on your local machine. When **Use Kianda Cloud Connect** is enabled, a **Connectors** option appears.
@@ -60,7 +60,7 @@ Here we will go step by step on how to create a connection between your locally 
 5. In the **Database** text box type in the name of your database you want to connect from your server. For this example we will connect to a **GreenITR** database from our server. 
 6. Enable the **Trusted connection** checkbox.
 7. Enable the **Use Kianda Cloud Connect** checkbox.
-8. In the **Connectors** radio checklist, select the PC that you are running the local server on, For this example we are using **PC31**. To establish a connection between your Kianda subscription and your PC go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
+8. In the **Connectors** radio checklist, select the PC that you are running the local server on. For this example we are using **PC31**. To establish a connection between your Kianda subscription and your PC go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
 9. Click on **Test connection**.
 10. A notification **Connection test succeeded** shows up. Now you are ready to use the SQL connector that is run on your local machine.
 
