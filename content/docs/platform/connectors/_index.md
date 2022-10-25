@@ -42,7 +42,7 @@ Only those with the role **Administrator** or **Manage data sources** have acces
 
    ![Existing data connectors](/images/datasource-list.jpg)
 
-   Data sources are listed by: **Name**, **Type and icon**, **Modified** (as in the date the connector was modified), **Modified By** (the person who last made changes) and the **Status**, for example **ready** means the connection has been tested and is working, while **incomplete** means that more details still need to be added. 
+   Data sources are listed by: **Name**, **Type and icon**, **Modified** (as in the date the connector was last modified), **Modified By** (the person who last made changes) and the **Status**, for example **ready** means the connection has been tested and is working, while **incomplete** means that more details still need to be added. 
 
 3. To **search** for a data source, type in the name or type of data source in the **search box**.
 
