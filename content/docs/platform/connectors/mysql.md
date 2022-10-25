@@ -8,13 +8,13 @@ One of the datasources available in Kianda is a **MySQL Server** datasource. MyS
 
 ## When to use
 
-You can use the MySQL Server connector when you want **access** or **modify** data within a **table** in your MySQL server. You can connect the MySQL server connector to a **List** field as its datasource, meaning you can access information from a table and display the information that are stored in the table. For example if your MySQL server contains tables such as **Employees**, **Purchases** and **Standing Orders**, you will be able to connect the list field to one of those tables giving you CRUD access to its data. 
+You can use the MySQL Server connector when you want **access** or **modify** data within a **table** in your MySQL server. You can connect the MySQL server connector to a **List** field as its datasource, meaning you can access information from a table and display the information that is stored in the table. For example if your MySQL server contains tables such as **Employees**, **Purchases** and **Standing Orders**, you will be able to connect the list field to one of those tables giving you CRUD access to its data. 
 
 Take a table **Employees** as an example, if this employee table contains data about the employees in your company such as name, phone number, email address and home address. You can **create** a new employee by providing necessary information, you can **read** (display) employee data, **update** employees information for example when a home address has changed and you can **delete** an employee from the table. Those are the CRUD operations you can perform on MySQL server through a process within Kianda. 
 
 ## Before getting started
 
-When establishing a connection using MySQL data connector, you are creating a connection with a **Database** from a server, not the **server** itself. Before continuing make sure that your MySQL server has a **database** you can connect to. A database can represent type of data you want to access and with in this database, you need to create a **table** representing the actual data you will have CRUD access to. For example creating a database of your company name such as **GreenITR**, and within this database you can create tables to represent your **Employees**, **Purchases** and **Standing Orders**.
+When establishing a connection using MySQL data connector, you are creating a connection with a **Database** from a server, not the **server** itself. Before continuing make sure that your MySQL server has a **database** you can connect to. A database can represent any type of data you want to access, and within this database, you need to create a **table** representing the actual data you will have CRUD access to. For example creating a database of your company name such as **GreenITR**, and within this database you can create tables to represent your **Employees**, **Purchases** and **Standing Orders**.
 
 ## How to get started
 
@@ -50,5 +50,5 @@ When establishing a connection using MySQL data connector, you are creating a co
 
 ## What’s next ![Idea icon](/images/18.png)
 
-Your **SQL Server connector** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).
+Your **MySQL Server connector** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).
 
