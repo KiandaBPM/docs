@@ -33,7 +33,7 @@ To learn more about how to download and create a connection between your Kianda 
    - **AD User** - enter in the domain and user that you want to connect to. To specify the domain and user correctly use the following format: `<domain>/<username>`
    - **Password** - enter in the password used to login for the desired user.
    - **Use Kianda Cloud Connect** - by default this option is enabled, the cloud connect is used to **create a connection** between the **Active Directory connector** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/). 
-     - **Connectors** - displays all available connector PC's that have a **connection established** with your **Kianda** subscription. This option is used to select the PC **connection** that is running the Active Director server.
+     - **Connectors** - displays all available connector PC's that have a **connection established** with your **Kianda** subscription. This option is used to select the PC **connection** that is running the Active Directory server.
    - **Status** - represents the current status of the connection.
      - **incomplete** - means that the details of the connector were not fully completed.
      - **test failed** - means that the details of the connector are incorrect and the connection has failed.
@@ -49,12 +49,12 @@ To learn more about how to download and create a connection between your Kianda 
 
 ## Active Directory functions
 
-Active Directory functions are **Users** related and to use them you have to use the [Data](/docs/platform/rules/data/) rules that predefined within Kianda. The functions that are available are:
+Active Directory functions are **Users** related and to use them you have to use the [Data](/docs/platform/rules/data/) rules that are predefined within Kianda. The functions that are available are:
 
 ![Active Directory list of functions](/images/ad-functions.jpg)
 
 - **FindUsers** - allows you to look for a user within your directory by defining a user attribute as a means of searching for them.
-- **IsMemberOf** - allows you to see if a user is member of a group. You need to specify both a user and a group.
+- **IsMemberOf** - allows you to see if a user is a member of a group. You need to specify both a user and a group.
 - **CreateUser** - allows you to create a user within your directory. You need to specify a **username**, **first name, last name, email and password** to create a user successfully.
 - **UpdateUser** - allows you to update user attributes. You need to specify what user to update by providing their **sAMAccountName** and **distinguishedName** (DN).
 - **AddUserToGroup** - allows you to add a user to a group by providing the group name and both the **distinguishedName** and **sAMAccountName** of the user.
@@ -72,7 +72,7 @@ Lets take the **CreateUser** function as an example to show how these functions 
 
    ![Required fields for the required properties](/images/ad-fields.jpg)
 
-3. Use the [create item](docs/platform/rules/data/create-item/) rule to use the function. We need to map the text box fields to the appropriate properties as follow:
+3. Use the [create item](/docs/platform/rules/data/create-item/) rule to use the function. We need to map the text box fields to the appropriate properties as follow:
 
    ![Mapping the required fields to create item rule](/images/ad-create-user-rule.jpg)
 
