@@ -24,7 +24,7 @@
 &lt;li>&lt;strong>Password&lt;/strong> - enter in the password used to login for the desired user.&lt;/li>
 &lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is enabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between the &lt;strong>Active Directory connector&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.
 &lt;ul>
-&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that is running the Active Director server.&lt;/li>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that is running the Active Directory server.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;strong>Status&lt;/strong> - represents the current status of the connection.
@@ -50,11 +50,11 @@
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="active-directory-functions">Active Directory functions&lt;/h2>
-&lt;p>Active Directory functions are &lt;strong>Users&lt;/strong> related and to use them you have to use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that predefined within Kianda. The functions that are available are:&lt;/p>
+&lt;p>Active Directory functions are &lt;strong>Users&lt;/strong> related and to use them you have to use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda. The functions that are available are:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/ad-functions.jpg" alt="Active Directory list of functions">&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>FindUsers&lt;/strong> - allows you to look for a user within your directory by defining a user attribute as a means of searching for them.&lt;/li>
-&lt;li>&lt;strong>IsMemberOf&lt;/strong> - allows you to see if a user is member of a group. You need to specify both a user and a group.&lt;/li>
+&lt;li>&lt;strong>IsMemberOf&lt;/strong> - allows you to see if a user is a member of a group. You need to specify both a user and a group.&lt;/li>
 &lt;li>&lt;strong>CreateUser&lt;/strong> - allows you to create a user within your directory. You need to specify a &lt;strong>username&lt;/strong>, &lt;strong>first name, last name, email and password&lt;/strong> to create a user successfully.&lt;/li>
 &lt;li>&lt;strong>UpdateUser&lt;/strong> - allows you to update user attributes. You need to specify what user to update by providing their &lt;strong>sAMAccountName&lt;/strong> and &lt;strong>distinguishedName&lt;/strong> (DN).&lt;/li>
 &lt;li>&lt;strong>AddUserToGroup&lt;/strong> - allows you to add a user to a group by providing the group name and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user.&lt;/li>
@@ -73,7 +73,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/ad-fields.jpg" alt="Required fields for the required properties">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Use the &lt;a href="docs/platform/rules/data/create-item/">create item&lt;/a> rule to use the function. We need to map the text box fields to the appropriate properties as follow:&lt;/p>
+&lt;p>Use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/create-item/">create item&lt;/a> rule to use the function. We need to map the text box fields to the appropriate properties as follow:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/ad-create-user-rule.jpg" alt="Mapping the required fields to create item rule">&lt;/p>
 &lt;/li>
 &lt;/ol>
