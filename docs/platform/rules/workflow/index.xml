@@ -426,7 +426,7 @@
 &lt;p>If you check the checkbox, then you can choose the &lt;strong>Process security mode&lt;/strong> which lists the following options:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Security users can create, assign to, can update, everyone else can view&lt;/strong> - this is the lowest level of security, allowing the assigned user(s) the ability to view, edit and assign process instances, while others can view the process instances.&lt;/li>
-&lt;li>&lt;strong>Security users can create, assign to, can view and update&lt;/strong> - this allows the assigned user(s) the ability to view, edit and assign process instances&lt;/li>
+&lt;li>&lt;strong>Security users can create, assign to, can view and update&lt;/strong> - this allows the assigned user(s) the ability to view, edit and assign process instances.&lt;/li>
 &lt;li>&lt;strong>Security users only can create, view and update&lt;/strong> - this is the highest level of security where only the named users, that is those defined as &lt;strong>Line Manager&lt;/strong> in a user picker field, will be able to view and edit process instances. No other users will have access to the process instances.&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -512,7 +512,7 @@
 &lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule starting with choosing the &lt;strong>Process source&lt;/strong> for the secondary/target process. Choose from &lt;strong>Own process&lt;/strong> or &lt;strong>Partner process&lt;/strong>.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>If you choose &lt;strong>Own process&lt;/strong> then choose from a list of processes already created in the system under &lt;strong>Select a process design&lt;/strong> using the drop-down list or start to type in the name of a process and the list will autofill as shown below.&lt;/p>
+&lt;p>If you choose &lt;strong>Own process&lt;/strong> then choose from a list of processes already created in the system under &lt;strong>Select a process design&lt;/strong> using the drop-down list, or start to type in the name of a process and the list will autofill as shown below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/select-process-design.jpg" alt="Select process design">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -524,7 +524,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/lookup-existing-process-yes.jpg" alt="Lookup existing process option Yes">&lt;/p>
 &lt;ul>
 &lt;li>If you choose &lt;strong>No&lt;/strong> then that means you are creating a &lt;strong>new process instance&lt;/strong> from that process design.&lt;/li>
-&lt;li>If you choose &lt;strong>Yes&lt;/strong> then that means you are &lt;strong>updating an existing process instance&lt;/strong> and you must provide a field the target process name. You will also need to **provide ** for the existing process instance. This can be done using the &lt;a href="#on-success-mapping">&lt;strong>On success mapping&lt;/strong>&lt;/a> section, see below.&lt;/li>
+&lt;li>If you choose &lt;strong>Yes&lt;/strong> then that means you are &lt;strong>updating an existing process instance&lt;/strong> and you must provide a field containing the target process name. You will also need to &lt;strong>provide&lt;/strong> for the existing process instance. This can be done using the &lt;a href="#on-success-mapping">&lt;strong>On success mapping&lt;/strong>&lt;/a> section, see below.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -554,21 +554,21 @@
 &lt;p>To use &lt;strong>Input mapping,&lt;/strong> click on the blue bar for &lt;strong>Input mapping&lt;/strong>:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>The process names will automatically appear in the left and right columns once a process design is selected see step 5 in &lt;a href="#how-to-get-started">How to get started&lt;/a> above. Within each field, choose a &lt;strong>form&lt;/strong> and &lt;strong>then a field&lt;/strong> that you would like to map the values from one process to another. Alternatively &lt;strong>type in text&lt;/strong> to pass from the primary process to a field in the secondary process.&lt;/p>
+&lt;p>The process names will automatically appear in the left and right columns once a process design is selected from the drop-down list, see step 5 in &lt;a href="#how-to-get-started">How to get started&lt;/a> above. Within each field, choose a &lt;strong>form&lt;/strong> and &lt;strong>then a field&lt;/strong> that you would like to map the values from one process to another. Alternatively, you can &lt;strong>type in text&lt;/strong> to pass from the primary process to a field in the secondary process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-button.jpg" alt="Bin button">to delete a mapping.&lt;/p>
+&lt;p>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin button"> to delete a mapping.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Add mapping&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-mapping-button.jpg" alt="Add mapping button">to add further mappings from the secondary/target process to the primary process. Ensure that form fields are already precreated to hold these values.&lt;/p>
+&lt;p>Click on the &lt;strong>Add mapping&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-mapping-button.jpg" alt="Add mapping button"> to add further mappings from the secondary/target process to the primary process. Ensure that form fields are already precreated to hold these values.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="table-mapping">Table mapping&lt;/h3>
-&lt;p>If you use a &lt;strong>table&lt;/strong> in your process you can map fields from a table in one process to another in a similar way to the fields in &lt;a href="#input-mapping">Input mapping&lt;/a> but this section includes additional parameters to give you a range of options.&lt;/p>
+&lt;p>If you use a &lt;strong>table&lt;/strong> in your process you can map fields from a table in one process to another in a similar way to the fields in &lt;a href="#input-mapping">Input mapping&lt;/a>, but this section includes additional parameters to give you a range of options.&lt;/p>
 &lt;p>To use table mapping, you must already have tables created in your primary and secondary processes. Then click on the blue bar for &lt;strong>Table mapping&lt;/strong>:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>The process names will automatically appear in the left and right columns once a process design is selected see step 5 in &lt;a href="#how-to-get-started">How to get started&lt;/a> above.&lt;/p>
+&lt;p>The process names will automatically appear in the left and right columns once a process design is selected from the drop-down list, see step 5 in &lt;a href="#how-to-get-started">How to get started&lt;/a> above.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-mapping-example.jpg" alt="Table mapping example within Start a Process rule">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -597,14 +597,14 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-button.jpg" alt="Bin button">to delete a mapping.&lt;/p>
+&lt;p>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin button"> to delete a mapping.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Add table mapping&lt;/strong> button to add more tables.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="on-success-mapping">On success mapping&lt;/h3>
-&lt;p>If you wish to &lt;strong>update an existing process instance&lt;/strong> you can use mapping within the &lt;strong>On success mapping&lt;/strong> to retrieve the &lt;strong>Process ID&lt;/strong> of that process instance, and then trigger rules in the target process instance. A &lt;strong>text box&lt;/strong> field within the form can be created to hold the Process ID value, see &lt;a href="#before-getting-started">Before getting started&lt;/a>. The ID for the existing process instance, is one of the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/common-fields/">Common fields&lt;/a> that can be pulled from the system.&lt;/p>
+&lt;p>If you wish to &lt;strong>update an existing process instance&lt;/strong> you can use mapping within the &lt;strong>On success mapping&lt;/strong> section to retrieve the &lt;strong>Process ID&lt;/strong> of that process instance, and then trigger rules in the target process instance. A &lt;strong>text box&lt;/strong> field within the form can be created to hold the Process ID value, see &lt;a href="#before-getting-started">Before getting started&lt;/a>. The ID for the existing process instance, is one of the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/common-fields/">Common fields&lt;/a> that can be pulled from the system.&lt;/p>
 &lt;p>To use On success mapping:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -614,8 +614,8 @@
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/success-mapping-start-rule.jpg" alt="On success mapping options">&lt;/p>
 &lt;ul>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-button.jpg" alt="Bin button">to delete a mapping.&lt;/li>
-&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-mapping-button.jpg" alt="Add mapping button">to add further mappings from the secondary/target process to the primary process. Ensure that form fields are already precreated to hold these values.&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin button"> to delete a mapping.&lt;/li>
+&lt;li>Click on the &lt;strong>Add mapping&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-mapping-button.jpg" alt="Add mapping button"> to add further mappings from the secondary/target process to the primary process. Ensure that form fields are already precreated to hold these values.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -633,7 +633,7 @@
 &lt;p>If you want to &lt;strong>save values passed&lt;/strong> under &lt;a href="#input-mapping">Input mapping&lt;/a> then trigger the &lt;strong>Save&lt;/strong> button (that contains the &lt;strong>Save process&lt;/strong> and &lt;strong>Close&lt;/strong> rules) found by default in all Kianda forms.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Enable real-time rule execution&lt;/strong>? - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong> rules in the secondary/target process instance will trigger without any delay in the server. If you choose &lt;strong>No&lt;/strong> then a second option becomes available to allow you to choose to &lt;strong>Execute in series?&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Enable real-time rule execution&lt;/strong>? - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>Yes&lt;/strong>, rules in the secondary/target process instance will trigger without any delay in the server. If you choose &lt;strong>No&lt;/strong> then a second option becomes available to allow you to choose to &lt;strong>Execute in series?&lt;/strong>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-execution-options.jpg" alt="Rule execution options">&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Execute in series&lt;/strong>? - options are &lt;strong>Yes&lt;/strong> or &lt;strong>No&lt;/strong>. If you choose &lt;strong>No&lt;/strong> then the server side execution of rules will happen in series or in sequence, instead of in parallel. In series or in sequence refers to synchronous execution, where a rule will only execute when the previous rule has completed. In parallel refers to asynchronous execution whereby rules execute without waiting for the previous rule to finish. This type of execution is useful when rules are not dependent on each other, for example the output of one rule is not used as input for another.&lt;/li>
@@ -652,7 +652,7 @@
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule, click the slider across beside the rule name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>
@@ -675,7 +675,7 @@
 &lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Schedule a rule</title><link>https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Schedule a rule&lt;/strong> allows you to schedule a rule or a field to be triggered &lt;strong>immediately&lt;/strong>, at some &lt;strong>point in the future&lt;/strong> or &lt;strong>recurring&lt;/strong>. If a form field has &lt;strong>multiple&lt;/strong> rules attached to it, that include the &lt;strong>Schedule a rule&lt;/strong> rule, rules can execute sequentially and you can change the order of the rule execution, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> for details. You can also select a specific rule to execute. For example in the image below, the text box field &lt;strong>First Name&lt;/strong> is expanded to show two rules. You can select all or just one rule to be triggered. You can select all rules by selecting the &lt;strong>First Name&lt;/strong> text box itself or to select just one rule you can expand the field and selecting the desired rule you want to schedule:&lt;/p>
+&lt;p>&lt;strong>Schedule a rule&lt;/strong> allows you to schedule a rule or a field to be triggered &lt;strong>immediately&lt;/strong>, at some &lt;strong>point in the future&lt;/strong> or &lt;strong>recurring&lt;/strong>. If a form field has &lt;strong>multiple&lt;/strong> rules attached to it, that include the &lt;strong>Schedule a rule&lt;/strong> rule, rules can execute sequentially and you can change the order of the rule execution, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> for details. You can also select a specific rule to execute. For example in the image below, the text box field &lt;strong>First Name&lt;/strong> is expanded to show two rules. You can select all or just one rule to be triggered. You can select all rules by selecting the &lt;strong>First Name&lt;/strong> text box itself or to select just one rule you can expand the field and selecting the desired rule you want to schedule:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-single-rule.jpg" alt="Selecting one rule to be triggered">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
@@ -710,12 +710,12 @@
 &lt;li>
 &lt;p>&lt;strong>Schedule&lt;/strong> - allows you to choose a time of schedule. For this example we will select to send the email &lt;strong>Weekly&lt;/strong> at 10 am every 2 weeks.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-weekly.jpg" alt="Schedule a send email rule">&lt;/p>
-&lt;p>You can select different type of schedule that is suited to your rule, here are the options:&lt;/p>
+&lt;p>You can select a different type of schedule that is suited to your rule, here are the options:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>One time&lt;/strong> - Select &lt;strong>Time mode&lt;/strong> as &lt;strong>Absolute&lt;/strong> or &lt;strong>Relative&lt;/strong> from now. If &lt;strong>Absolute&lt;/strong>, you can select the time using the clock icon and the date using the calendar icon or you can select a form field (where the date is stored) by clicking on the icon with black discs &lt;img src="https://docs.kianda.com/images/icon-blackdisks.jpg" alt="Disks">. If &lt;strong>Relative&lt;/strong> from now, enter the days, hours and minutes directly.&lt;/li>
 &lt;li>&lt;strong>Minutes&lt;/strong> - select the number of minutes you want the scheduled rule to reoccur.&lt;/li>
 &lt;li>&lt;strong>Hourly&lt;/strong> - select the number of minutes and hours you want the scheduled rule to reoccur.&lt;/li>
-&lt;li>&lt;strong>Daily&lt;/strong> - select the time of day and the number of days you want to scheduled rule to reoccur. You can select that the rule will trigger only on week days by enabling the &lt;strong>Week days only&lt;/strong> checkbox.&lt;/li>
+&lt;li>&lt;strong>Daily&lt;/strong> - select the time of day and the number of days you want the scheduled rule to reoccur. You can select that the rule will trigger only on week days by enabling the &lt;strong>Week days only&lt;/strong> checkbox.&lt;/li>
 &lt;li>&lt;strong>Weekly&lt;/strong> - select a day of the week, time of the day and the number of weeks that you want the scheduled rule to reoccur.&lt;/li>
 &lt;li>&lt;strong>Monthly&lt;/strong> - select the date of the month or &lt;strong>First, Second, Third, Fourth, Last&lt;/strong> weekday of the month. You can also select a specific time that you want the scheduled rule to reoccur.&lt;/li>
 &lt;li>&lt;strong>Immediately&lt;/strong> - the rule will trigger immediately.&lt;/li>
@@ -751,7 +751,7 @@
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/p>
+&lt;p>To &lt;strong>disable&lt;/strong> a rule, click the slider across beside the rule name.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/p>

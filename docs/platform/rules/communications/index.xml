@@ -543,7 +543,7 @@
 &lt;p>&lt;strong>Send alert to&lt;/strong> - choose from the radio buttons:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details.&lt;/li>
-&lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that thealert is being sent to.&lt;/li>
+&lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that the alert is being sent to.&lt;/li>
 &lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will have an alert sent to.&lt;/li>
 &lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the alert sent to, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
 &lt;/ul>
@@ -558,7 +558,7 @@
 &lt;p>&lt;strong>Alert Status&lt;/strong> - choose from four different colours to be applied to the tile of the alert.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Alert icon&lt;/strong> - choose an icon from the dropdown list.&lt;/p>
+&lt;p>&lt;strong>Alert icon&lt;/strong> - choose an icon from the drop-down list.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-settings.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
 &lt;p>The resulting alert design looks like this:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-reminder.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>

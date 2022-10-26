@@ -228,7 +228,7 @@
 &lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Template)&lt;/strong> - used as a container to store the Excel template used to generate the workbook.&lt;/li>
 &lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Generated Excel workbook)&lt;/strong> - used as a container to store the generated Excel workbook.&lt;/li>
 &lt;/ul>
-&lt;p>A Excel template that is used to generate the Excel workbook also needs to be &lt;strong>pre-created&lt;/strong> using the &lt;strong>Kianda add-in for Excel&lt;/strong>. You can make each generated Excel workbook very &lt;strong>dynamic&lt;/strong> by using the &lt;strong>smart tags&lt;/strong> that Kianda add-in uses to &lt;strong>retrieve&lt;/strong> information for your form fields and places the values into the Excel workbook when generating it. To learn more about how to install and use Kianda add-in in Excel, go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/">Excel workbook add-in&lt;/a>.&lt;/p>
+&lt;p>An Excel template that is used to generate the Excel workbook also needs to be &lt;strong>pre-created&lt;/strong> using the &lt;strong>Kianda add-in for Excel&lt;/strong>. You can make each generated Excel workbook very &lt;strong>dynamic&lt;/strong> by using the &lt;strong>smart tags&lt;/strong> that Kianda add-in uses to &lt;strong>retrieve&lt;/strong> information for your form fields and places the values into the Excel workbook when generating it. To learn more about how to install and use Kianda add-in in Excel, go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/">Excel workbook add-in&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -242,7 +242,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/generate-excel-edit-rule.jpg" alt="Edit rule - copy file">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
@@ -263,14 +263,14 @@
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
-&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule, click the slider across beside the rule name.&lt;/li>
 &lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
 &lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
 &lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;ul>
-&lt;li>When using this rule, create a &lt;strong>utility panel&lt;/strong> and make it &lt;strong>invisible&lt;/strong> to other users. You can then &lt;strong>move&lt;/strong> the Excel template file filed and the generated Excel workbook file field inside the utility panel. This way other users will not be able to see the &lt;strong>unnecessary&lt;/strong> file fields and will not be able to &lt;strong>tamper&lt;/strong> with them. To see an example of a utility panel, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/inspect-form/#creating-a-utility-panel">Creating a utility panel&lt;/a>.&lt;/li>
+&lt;li>When using this rule, create a &lt;strong>utility panel&lt;/strong> and make it &lt;strong>invisible&lt;/strong> to other users. You can then &lt;strong>move&lt;/strong> the Excel template file field and the generated Excel workbook file field inside the utility panel. This way other users will not be able to see the &lt;strong>unnecessary&lt;/strong> file fields and will not be able to &lt;strong>tamper&lt;/strong> with them. To see an example of a utility panel, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/inspect-form/#creating-a-utility-panel">Creating a utility panel&lt;/a>.&lt;/li>
 &lt;li>Use this rule when working with &lt;strong>tables&lt;/strong> inside of Kianda. It is very easy to create an Excel spreadsheet by &lt;strong>transferring data&lt;/strong> from your processes into Excel using the &lt;strong>Excel add-in&lt;/strong>. Use &lt;strong>smart tags&lt;/strong> from the add-in to add a table, the data from your table will be transferred into the Excel spreadsheet without manually typing them. See &lt;a href="https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/">Excel workbook add-in&lt;/a> for more detail.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
