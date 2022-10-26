@@ -25,7 +25,7 @@ In advance of using the **Create a group** rule, you need to have created one or
 
 ## How to use
 
-To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with **Data sources** under **Administration**. 
+To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the group to be located. This data source should be a predefined data connector created with **Data sources** under **Administration**. 
 
 1. Select the field or other item to attach the rule to.
 

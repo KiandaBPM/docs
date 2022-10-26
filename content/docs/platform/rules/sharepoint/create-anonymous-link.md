@@ -21,9 +21,9 @@ You can add this rule:
 
 In advance of using the **Create anonymous link**, in your process you need to have created at least one or more forms. The create anonymous link rule also requires two control fields. A **file control** in order to store a file which you want to share and a **text box control** for storing the generated link. You can also create another text box or a number field to store the link duration, this field is optional but can be a good idea if you want to customise the duration of the link dynamically.
 
-- **File field** - used to store the file which you want to create a link to. To learn how to create a file filed go to [File upload control](/docs/platform/controls/input/file-upload/).
+- **File field** - used to store the file which you want to create a link to. To learn how to create a file field go to [File upload control](/docs/platform/controls/input/file-upload/).
 - **Text box field** - used to store the generated anonymous link which can be shared with other users. To learn how to create a text box field go to [Text box control](/docs/platform/controls/input/textbox/).
-- **Text box or Number field (optional)** - allows you to determine  the duration of the link in hours. To learn hot to create a number field go to [Number control](/docs/platform/controls/input/number/).
+- **Text box or Number field (optional)** - allows you to determine  the duration of the link in hours. To learn how to create a number field go to [Number control](/docs/platform/controls/input/number/).
 
 ## How to use
 
@@ -59,4 +59,4 @@ If you have multiple rules attached to the field or other item, you may wish to 
 
 ## What's next  ![Idea icon](/images/18.png) ##
 
-Now that you've learned about **Create anonymous link**, return to the [SharePoint rules](/docs/platform/rules/SharePoint/) page to find out about other SharePoint rules. 
+Now that you've learned about **Create anonymous link**, return to the [SharePoint rules](/docs/platform/rules/sharepoint/) page to find out about other SharePoint rules. 

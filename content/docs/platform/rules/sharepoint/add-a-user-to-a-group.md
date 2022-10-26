@@ -27,7 +27,7 @@ In advance of using the **Add a user to a group** rule, you need to have created
 
 ## How to use
 
-To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with **Data sources** under **Administration**. 
+To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the user to be located. This data source should be a predefined data connector created with **Data sources** under **Administration**. 
 
 1. Select the field or other item to attach the rule to.
 
@@ -38,7 +38,7 @@ To apply this rule, first choose an item to attach the rule to and have a ShareP
     ![Add a user to a group dialog box](/images/add-user-group-rule.jpg)
 
 4. Two new fields will appear: 
-   For **Group title** field, select the field where the group title is stored for example, a list field.
+   For **Group title field**, select the field where the group title is stored for example, a list field.
    For **Username or User Id**, select the field where the Username or User id is stored.
 
 5. Once these fields are set you can also set conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more information. 
@@ -60,5 +60,5 @@ If you have multiple rules attached to the field or other item, you may wish to 
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-Now that you've learned about **Add a user to a group**, return to the [SharePoint rules](/docs/platform/rules/SharePoint/) page to find out about other SharePoint rules. 
+Now that you've learned about **Add a user to a group**, return to the [SharePoint rules](/docs/platform/rules/sharepoint/) page to find out about other SharePoint rules. 
 

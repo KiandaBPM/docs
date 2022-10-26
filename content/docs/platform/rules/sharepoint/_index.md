@@ -14,7 +14,7 @@ In advance of using the SharePoint rules you must have created a SharePoint data
 
 ## Getting started with SharePoint rules
 
-If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the **Sharepoint** rules are found in the left-hand pane when you click on **Sharepoint**.
+If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule**, the **SharePoint** rules are found in the left-hand pane when you click on **SharePoint**.
 
 ![Sharepoint rules](/images/sharepoint-rules-all.jpg)
 

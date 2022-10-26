@@ -21,7 +21,7 @@ In advance of using the **Find a user** rule, you need to have created at least 
 
 ## How to use
 
-To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you want the list to be located. This data source should be a predefined data connector created with **Data sources** under **Administration**. 
+To apply this rule, first choose an item to attach the rule to and have a SharePoint data source ready where you have your user located. This data source should be a predefined data connector created with **Data sources** under **Administration**. 
 
 1. Select a field or other item to attach the rule to.
 
