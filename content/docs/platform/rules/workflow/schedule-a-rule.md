@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction
 
-The **Schedule a rule** allows you to schedule a rule or a field to be triggered **immediately**, at some **point in the future** or **recurring**. If a form field has **multiple** rules attached to it, that include the **Schedule a rule** rule, rules can execute sequentially and you can change the order of the rule execution, see [Multiple rules](/docs/platform/rules/general/multiple-rules/) for details. You can also select a specific rule to execute. For example in the image below, the text box field **First Name** is expanded to show two rules. You can select all or just one rule to be triggered. You can select all rules by selecting the **First Name** text box itself or to select just one rule you can expand the field and selecting the desired rule you want to schedule:
+**Schedule a rule** allows you to schedule a rule or a field to be triggered **immediately**, at some **point in the future** or **recurring**. If a form field has **multiple** rules attached to it, that include the **Schedule a rule** rule, rules can execute sequentially and you can change the order of the rule execution, see [Multiple rules](/docs/platform/rules/general/multiple-rules/) for details. You can also select a specific rule to execute. For example in the image below, the text box field **First Name** is expanded to show two rules. You can select all or just one rule to be triggered. You can select all rules by selecting the **First Name** text box itself or to select just one rule you can expand the field and selecting the desired rule you want to schedule:
 
 ![Selecting one rule to be triggered](/images/schedule-rule-single-rule.jpg)
 
@@ -41,12 +41,12 @@ The following step illustrates a scenario to schedule a reminder email using the
 
      ![Schedule a send email rule](/images/schedule-rule-weekly.jpg)
 
-     You can select different type of schedule that is suited to your rule, here are the options:
+     You can select a different type of schedule that is suited to your rule, here are the options:
 
      - **One time** - Select **Time mode** as **Absolute** or **Relative** from now.  If **Absolute**, you can select the time using the clock icon and the date using the calendar icon or you can select a form field (where the date is stored) by clicking on the icon with black discs ![Disks](/images/icon-blackdisks.jpg).  If **Relative** from now, enter the days, hours and minutes directly.
      - **Minutes** - select the number of minutes you want the scheduled rule to reoccur.
      - **Hourly** - select the number of minutes and hours you want the scheduled rule to reoccur.
-     - **Daily** - select the time of day and the number of days you want to scheduled rule to reoccur. You can select that the rule will trigger only on week days by enabling the **Week days only** checkbox.
+     - **Daily** - select the time of day and the number of days you want the scheduled rule to reoccur. You can select that the rule will trigger only on week days by enabling the **Week days only** checkbox.
      - **Weekly** - select a day of the week, time of the day and the number of weeks that you want the scheduled rule to reoccur.
      - **Monthly** - select the date of the month or **First, Second, Third, Fourth, Last** weekday of the month. You can also select a specific time that you want the scheduled rule to reoccur.
      - **Immediately** - the rule will trigger immediately.
@@ -75,7 +75,7 @@ The following step illustrates a scenario to schedule a reminder email using the
 
 When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
 
-1. To **disable** a rule click the slider across beside the rule name. 
+1. To **disable** a rule, click the slider across beside the rule name. 
 
 2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
 

@@ -67,7 +67,7 @@ To dynamically set security for process instances:
      - If you check the checkbox, then you can choose the **Process security mode** which lists the following options:
 
        -  **Security users can create, assign to, can update, everyone else can view** - this is the lowest level of security, allowing the assigned user(s) the ability to view, edit and assign process instances, while others can view the process instances.
-       -  **Security users can create, assign to, can view and update** - this allows the assigned user(s) the ability to view, edit and assign process instances
+       -  **Security users can create, assign to, can view and update** - this allows the assigned user(s) the ability to view, edit and assign process instances.
        -  **Security users only can create, view and update** - this is the highest level of security where only the named users, that is those defined as **Line Manager** in a user picker field, will be able to view and edit process instances. No other users will have access to the process instances.
 
 6. When you are finished editing the dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.

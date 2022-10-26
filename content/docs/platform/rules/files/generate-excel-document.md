@@ -27,7 +27,7 @@ In advance of using the **Generate Excel workbook** rule, in your process you ne
 - **File field** **(Template)** - used as a container to store the Excel template used to generate the workbook.
 - **File field** **(Generated Excel workbook)** - used as a container to store the generated Excel workbook.
 
-A Excel template that is used to generate the Excel workbook also needs to be **pre-created** using the **Kianda add-in for Excel**. You can make each generated Excel workbook very **dynamic** by using the **smart tags** that Kianda add-in uses to **retrieve** information for your form fields and places the values into the Excel workbook when generating it. To learn more about how to install and use Kianda add-in in Excel, go to [Excel workbook add-in](/docs/platform/document-generation/excel-workbook-add-in/).
+An Excel template that is used to generate the Excel workbook also needs to be **pre-created** using the **Kianda add-in for Excel**. You can make each generated Excel workbook very **dynamic** by using the **smart tags** that Kianda add-in uses to **retrieve** information for your form fields and places the values into the Excel workbook when generating it. To learn more about how to install and use Kianda add-in in Excel, go to [Excel workbook add-in](/docs/platform/document-generation/excel-workbook-add-in/).
 
 ## How to get started
 
@@ -39,7 +39,7 @@ A Excel template that is used to generate the Excel workbook also needs to be **
 
    ![Edit rule - copy file](/images/generate-excel-edit-rule.jpg)
 
-4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png), see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 
 5. Under the **Action** section fill out the following:
 
@@ -55,14 +55,14 @@ A Excel template that is used to generate the Excel workbook also needs to be **
 
 When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
 
-1. To **disable** a rule click the slider across beside the rule name.
+1. To **disable** a rule, click the slider across beside the rule name.
 2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name.
 3. To **delete** a rule, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin.png).
 4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
 
 ### User tip ![Target icon](/images/05.png)
 
-- When using this rule, create a **utility panel** and make it **invisible** to other users. You can then **move** the Excel template file filed and the generated Excel workbook file field inside the utility panel. This way other users will not be able to see the **unnecessary** file fields and will not be able to **tamper** with them. To see an example of a utility panel, go to [Creating a utility panel](/docs/examples/inspection/inspect-form/#creating-a-utility-panel).
+- When using this rule, create a **utility panel** and make it **invisible** to other users. You can then **move** the Excel template file field and the generated Excel workbook file field inside the utility panel. This way other users will not be able to see the **unnecessary** file fields and will not be able to **tamper** with them. To see an example of a utility panel, go to [Creating a utility panel](/docs/examples/inspection/inspect-form/#creating-a-utility-panel).
 - Use this rule when working with **tables** inside of Kianda. It is very easy to create an Excel spreadsheet by **transferring data** from your processes into Excel using the **Excel add-in**. Use **smart tags** from the add-in to add a table, the data from your table will be transferred into the Excel spreadsheet without manually typing them. See [Excel workbook add-in](/docs/platform/document-generation/excel-workbook-add-in/) for more detail.
 
 ### What’s next ![Idea icon](/images/18.png)

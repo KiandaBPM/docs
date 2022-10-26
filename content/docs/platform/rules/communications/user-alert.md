@@ -40,7 +40,7 @@ You can add this rule:
 5. **Send alert to** - choose from the radio buttons:
 
    - **Any user** - choose from **Users**, **Groups** and/or **Partners** in the drop-down list. All users must be predefined in the system, see [Users and Groups](/docs/platform/administration/users/) for more details.
-   - **Current user** - make the current user of the form, whoever is submitting or saving information, as the person that thealert is being sent to.
+   - **Current user** - make the current user of the form, whoever is submitting or saving information, as the person that the alert is being sent to.
    - **Defined in a user field** - choose a user picker field from the process, where the selected users, groups or partners will have an alert sent to.
    - **Form owner(s)** - selecting this option means that the form owner(s) defined during form creation/editing will have the alert sent to, see [Form owners](https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/) for more details on what form ownership is and how to create form owners.
 
@@ -50,7 +50,7 @@ You can add this rule:
 
 8. **Alert Status** - choose from four different colours to be applied to the tile of the alert.
 
-9. **Alert icon** - choose an icon from the dropdown list.
+9. **Alert icon** - choose an icon from the drop-down list.
 
    ![Edit rule - Anonymous link dialog box](/images/user-alert-settings.jpg)
 

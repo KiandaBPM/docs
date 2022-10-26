@@ -49,7 +49,7 @@ To dynamically start a new process:
 
 5. Under **Action** create one or more actions for the rule starting with choosing the **Process source** for the secondary/target process. Choose from **Own process** or **Partner process**. 
 
-   - If you choose **Own process** then choose from a list of processes already created in the system under **Select a process design** using the drop-down list or start to type in the name of a process and the list will autofill as shown below.
+   - If you choose **Own process** then choose from a list of processes already created in the system under **Select a process design** using the drop-down list, or start to type in the name of a process and the list will autofill as shown below.
 
      ![Select process design](/images/select-process-design.jpg)
 
@@ -62,7 +62,7 @@ To dynamically start a new process:
        ![Lookup existing process option Yes](/images/lookup-existing-process-yes.jpg)
      
        - If you choose **No** then that means you are creating a **new process instance** from that process design.
-       - If you choose **Yes** then that means you are **updating an existing process instance** and you must provide a field the target process name. You will also need to **provide ** for the existing process instance. This can be done using the [**On success mapping**](#on-success-mapping) section, see below.
+       - If you choose **Yes** then that means you are **updating an existing process instance** and you must provide a field containing the target process name. You will also need to **provide** for the existing process instance. This can be done using the [**On success mapping**](#on-success-mapping) section, see below.
 
 6. An [Input mapping](#input-mapping) section allows you to map values for fields from the primary process to the secondary/target process fields, read more below.
 
@@ -88,21 +88,21 @@ For Input mapping you can map field values from one process to another. For exam
 
 To use **Input mapping,** click on the blue bar for **Input mapping**:
 
-1. The process names will automatically appear in the left and right columns once a process design is selected see step 5 in [How to get started](#how-to-get-started) above. Within each field, choose a **form** and **then a field** that you would like to map the values from one process to another. Alternatively **type in text** to pass from the primary process to a field in the secondary process.
+1. The process names will automatically appear in the left and right columns once a process design is selected from the drop-down list, see step 5 in [How to get started](#how-to-get-started) above. Within each field, choose a **form** and **then a field** that you would like to map the values from one process to another. Alternatively, you can **type in text** to pass from the primary process to a field in the secondary process.
 
-2. Click on the **Bin/Trash** button ![Bin button](/images/bin-button.jpg)to delete a mapping.
+2. Click on the **Bin/Trash** button ![Bin button](/images/binicon.png) to delete a mapping.
 
-3. Click on the **Add mapping** button ![Add mapping button](/images/add-mapping-button.jpg)to add further mappings from the secondary/target process to the primary process. Ensure that form fields are already precreated to hold these values.
+3. Click on the **Add mapping** button ![Add mapping button](/images/add-mapping-button.jpg) to add further mappings from the secondary/target process to the primary process. Ensure that form fields are already precreated to hold these values.
 
    
 
 ### Table mapping
 
-If you use a **table** in your process you can map fields from a table in one process to another in a similar way to the fields in [Input mapping](#input-mapping) but this section includes additional parameters to give you a range of options. 
+If you use a **table** in your process you can map fields from a table in one process to another in a similar way to the fields in [Input mapping](#input-mapping), but this section includes additional parameters to give you a range of options. 
 
 To use table mapping, you must already have tables created in your primary and secondary processes. Then click on the blue bar for **Table mapping**:
 
-1. The process names will automatically appear in the left and right columns once a process design is selected see step 5 in [How to get started](#how-to-get-started) above. 
+1. The process names will automatically appear in the left and right columns once a process design is selected from the drop-down list, see step 5 in [How to get started](#how-to-get-started) above. 
 
    ![Table mapping example within Start a Process rule](/images/table-mapping-example.jpg)
 
@@ -128,7 +128,7 @@ To use table mapping, you must already have tables created in your primary and s
      
        An **Action** button ![Action button](/images/action-button.jpg) is available beside **Column mapping** to allow you to autofill field names from processes under **Field or text** and **To table** fields.
 
-4. Click on the **Bin/Trash** button ![Bin button](/images/bin-button.jpg)to delete a mapping.
+4. Click on the **Bin/Trash** button ![Bin button](/images/binicon.png) to delete a mapping.
 
 5. Click on the **Add table mapping** button to add more tables. 
 
@@ -136,7 +136,7 @@ To use table mapping, you must already have tables created in your primary and s
 
 ### On success mapping
 
-If you wish to **update an existing process instance** you can use mapping within the **On success mapping** to retrieve the **Process ID** of that process instance, and then trigger rules in the target process instance. A **text box** field within the form can be created to hold the Process ID value, see [Before getting started](#before-getting-started). The ID for the existing process instance, is one of the [Common fields](/docs/platform/application-designer/process/common-fields/) that can be pulled from the system. 
+If you wish to **update an existing process instance** you can use mapping within the **On success mapping** section to retrieve the **Process ID** of that process instance, and then trigger rules in the target process instance. A **text box** field within the form can be created to hold the Process ID value, see [Before getting started](#before-getting-started). The ID for the existing process instance, is one of the [Common fields](/docs/platform/application-designer/process/common-fields/) that can be pulled from the system. 
 
 To use On success mapping:
 
@@ -146,8 +146,8 @@ To use On success mapping:
 
    ![On success mapping options](/images/success-mapping-start-rule.jpg)
 
-   - Click on the **Bin/Trash** button ![Bin button](/images/bin-button.jpg)to delete a mapping.
-   - Click on the **Add mapping** button ![Add mapping button](/images/add-mapping-button.jpg)to add further mappings from the secondary/target process to the primary process. Ensure that form fields are already precreated to hold these values.
+   - Click on the **Bin/Trash** button ![Bin button](/images/binicon.png) to delete a mapping.
+   - Click on the **Add mapping** button ![Add mapping button](/images/add-mapping-button.jpg) to add further mappings from the secondary/target process to the primary process. Ensure that form fields are already precreated to hold these values.
 
 2. Further options exist under this section, starting with **Trigger rules in target instance** allowing you to kick off business rules enabling actions in the target process. Options are:
 
@@ -161,7 +161,7 @@ To use On success mapping:
 
        If you want to **save values passed** under [Input mapping](#input-mapping) then trigger the **Save** button (that contains the **Save process** and **Close** rules) found by default in all Kianda forms. 
 
-     - **Enable real-time rule execution**? - options are **Yes** or **No**. If you choose **Yes** rules in the secondary/target process instance will trigger without any delay in the server. If you choose **No** then a second option becomes available to allow you to choose to **Execute in series?** 
+     - **Enable real-time rule execution**? - options are **Yes** or **No**. If you choose **Yes**, rules in the secondary/target process instance will trigger without any delay in the server. If you choose **No** then a second option becomes available to allow you to choose to **Execute in series?** 
      
        ![Rule execution options](/images/rule-execution-options.jpg)
      
@@ -177,7 +177,7 @@ For more details on using **On success mapping** with other rules click on [On s
 
 When you have clicked on an existing rule, and the rule is visible in the right-hand pane under **Rules**, there are a number of options available to you.
 
-1. To **disable** a rule click the slider across beside the rule name. 
+1. To **disable** a rule, click the slider across beside the rule name. 
 
 2. To **copy** a rule, click on the **Duplicate** button ![Duplicate button](/images/duplicate-button.jpg) beside the rule name. 
 
