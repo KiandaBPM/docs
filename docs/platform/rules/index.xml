@@ -428,7 +428,7 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;h2 id="before-getting-started">Before getting started&lt;/h2>
 &lt;p>In advance of using the SharePoint rules you must have created a SharePoint data connector and establish a connection with your SharePoint site. The data connector is used as part of the SharePoint rules to perform CRUD operations on a site you established a connection with. To learn more about the SharePoint data connector go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/sharepoint/">SharePoint connector&lt;/a>.&lt;/p>
 &lt;h2 id="getting-started-with-sharepoint-rules">Getting started with SharePoint rules&lt;/h2>
-&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong> the &lt;strong>Sharepoint&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>Sharepoint&lt;/strong>.&lt;/p>
+&lt;p>If you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process or create a new process, then click on &lt;strong>Add a rule&lt;/strong>, the &lt;strong>SharePoint&lt;/strong> rules are found in the left-hand pane when you click on &lt;strong>SharePoint&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/sharepoint-rules-all.jpg" alt="Sharepoint rules">&lt;/p>
 &lt;p>There are 10 &lt;strong>SharePoint&lt;/strong> rules as follows:&lt;/p>
 &lt;ul>
