@@ -18,7 +18,7 @@ In summary the Kianda platform provides an ideal interface for **rapid prototypi
 
 ## Possibilities with Kianda ## 
 
-This video demonstrates how Kianda platform can be used in a wide variety of ways and receive user input such as QR codes, file uploads, video and images to name a few examples. The video also introduces Kianda Designer as a place to create your own widgets. 
+This video demonstrates how the Kianda platform can be used in a wide variety of ways and receive user input such as QR codes, file uploads, video and images to name a few examples. The video also introduces Kianda Designer as a place to create your own widgets. 
 
 <video width="100%" style="width:100%" controls>
     <source src="/videos/possibilities.mp4">
@@ -42,3 +42,9 @@ The flexible nature of Kianda allowing custom-coding and no-coding development p
 > 2. [**Design** and build your process](/docs/getting-started/create-first-process/design-and-build/)
 > 3. [**Publish** your process](/docs/getting-started/create-first-process/publish-your-process/)
 {{% /alert %}}
+
+
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+Click on the links below to learn more about the platform:

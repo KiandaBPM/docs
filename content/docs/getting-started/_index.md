@@ -23,7 +23,8 @@ typora-root-url: ..\..\..\static
 
 
 
-#### To find out more about Kianda, go to 'Welcome to Kianda' and to get started logging in visit 'Logging in to Kianda' and the other links below.  ![Idea icon](/images/18.png) 
+### What's next  ![Idea icon](/images/18.png) ###
+To find out more about Kianda, go to 'Welcome to Kianda' and to get started logging in visit 'Logging in to Kianda' in addition to the other links below.
 
 [**Welcome to Kianda**](/docs/getting-started/welcome/)
 
