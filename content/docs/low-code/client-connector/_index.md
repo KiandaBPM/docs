@@ -10,17 +10,17 @@ typora-root-url: ..\..\..\..\static
 
 The new client connector is designed to allow users to have customized data source connectors.
 
-**Client Connectors will be available for use in the next release 2.20.**
+**Client Connectors are now available for use in beta mode.**
 
 Please note that administrator privilege's will be required for creating a client connector, using the connector as a data source and in processes will be available to any user under the subscription.
 
 ## Features
 
-- Customized client connector 
+- Customizable data source connector
 - Editable UI and JS code similar to custom rules/widgets/fields
-- Microservice integration
 - Ability to alter the query payload 
 - Add new custom data source settings 
+- Sensitive data encryption in each call
 
 
 

@@ -3,8 +3,8 @@ title: "How to create a client connector"
 linkTitle: "How to create"
 weight: 1
 typora-root-url: ..\..\..\..\static
-toc_hide: true
-hide_summary: true
+toc_hide: false
+hide_summary: false
 ---
 
 # Introduction 
@@ -55,7 +55,7 @@ Make sure to **copy the secret key** to a safe location where you will find it a
 
 4. Switch to the settings UI tab and notice that some sample code has been included here, this code will be rendered when the datasource for this connector is created. See [create a connector datasource](/low-code/client-connector/how-to-create/#create-a-connector-datasource).
 
-   <img src="/images/settings-ui-tab.png" style="zoom:200%"/>
+   <img src="/images/settings-ui-tab.png"/>
 
 A quick runthrough of what this code does, 
 
@@ -77,7 +77,7 @@ In the query code tab there are 3 methods that can be customized for your needs,
 
 This section covers each of the hooks in detail.
 
-<img src="/images/connector-query-code.png" style="border:1px solid black"/>
+<img src="/images/connector-query-code.png" style="zoom:100%;border:1px solid black"/>
 
 The metadata hook is where return of the tree/metadata call can be altered. 
 This is where the tree function gets triggered as can be seen in the network tab calls when a datasource is selected the tree function is queryed and the response is then rendered as a tree view.
@@ -175,39 +175,176 @@ Click **add new** select the newly created connector, in this case the demo conn
 
   
 
-## Microservice Development
+## Create a microservice
 
 ### Requirements
 
-The microservice requires 3 functions to be implemented.
+The microservice should implement the following 3 functions.
 
 1. Metadata
+
 2. Query
-3.  Test
+
+3. Test
+
+### Test 
+
+
+
+### Metadata 
+
+The metadata function provides the list of available endpoints in the microservice and is called when selecting the datasource in kianda
+
+The steps for the metadata function is as follows:
+
+1. Get the client connector request 
+
+2. Decrypt the encrypted settings property bag recieved in the request 
+
+3. Create the Client connector response and include the tree 
+
+   The following is an example of how to create the tree object in c#
+
+```c#
+List<JObject> CityFields = new List<JObject> { };
+
+CityFields.Add(new JObject{["name"] = "Country", ["text"] = "Country", ["title"] = "Country", ["icon"] = "",["type"] = "text"});
+
+CityFields.Add(new JObject { ["name"] = "City", ["text"] = "City", ["title"] ="City", ["icon"] = "", ["type"] = "text" });
+
+List<JObject> CountryFields = new List<JObject> { };
+CountryFields.Add(new JObject{["name"] = "Country", ["text"] = "Country", ["title"] = "Country",["icon"] = "",["type"]="text"});
+
+List<JObject> nodes = new List<JObject> { };
+nodes.Add(new JObject { ["name"] = "Get Countries", ["text"] = "Get Countries", ["title"] = "Get Countries", ["icon"] = "fa fa-globe", ["type"] = "STRUCTURE", ["nodes"] = new JArray { CountryFields }, ["fields"]=new JArray { CountryFields}, ["selectable"] = true });
+nodes.Add(new JObject{ 
+              ["name"] = "Get Cities", 
+              ["text"] = "Get Cities", 
+              ["title"] = "Get Cities", 
+              ["icon"] = "fa fa-globe", 
+              ["type"] = "STRUCTURE", 
+              ["nodes"] = new JArray { CityFields }, 
+              ["fields"] = new JArray { CityFields }, 
+              ["selectable"] = true 
+          });
+//create the tree root to be returned
+var root = new JObject {
+["text"] = "Function",
+["icon"] = "fa fa-bolt",
+["nodes"] = new JArray { nodes }
+};
+```
+
+
+
+The above code renders the following result
+
+<img src="/images/example-tree-result.png"/>
+
+### Query
+
+
+
+
+
+
+## Schemas
+
+### ClientConnectorRequest
 
 Each function will receive a clientConnectorRequest payload.
 
-The following is an example request to the Test function, the test function does not require a query.
+Note, the Encrypted settings property bag will contain the encrypted datasource settings, it can only be decrypted using the secret key recieved when creating the client connector.
 
-The encrypted settings property bag will be an object containing the datasource settings, settings would include the client key, and the environment settings. 
+```c#
+       public class ClientConnectorRequest
+        {
+            public string subscriptionId { get; set; }
+            public string userId { get; set; }
+            public string requestId { get; set; }
+            public string action { get; set; }
+            public string encryptedSettingsPropertyBag { get; set; }
+            public Query query { get; set; }
+        }
 
-```json
-{
-    "subscriptionId":"322f14a6-63a0-4c68-b53e-4ca041c0e9ae",
-    "userId":"5650d471-8c41-49b6-8f72-b77dddf3b956",
-    "requestId":"9b26abcf-fddb-485b-9600-5505ff5d8256",
-    "action":"select",
-    "encryptedSettingsPropertyBag":null,
-    "Query":null
-}
+
+```
+### Query
+The query object is included in the Client Connector Request
+
+```c#
+   public class Query {
+        public string id { get; set; }
+        public string action { get; set; }
+        public JObject info { get; set; }
+        public string orderBy { get; set; }
+        public bool orderAscending { get; set; }
+        public string paging { get; set; }
+        public int rowLimit { get; set; }
+        public List<string> fields { get; set; }
+        public Dictionary<string, object> mappings { get; set; }
+        public string filter { get; set; }
+        public string filterBy { get; set; }
+        public string filterMode { get; set; }
+        public string signature { get; set; }
+
+    }
 ```
 
-The an example of the query property would like this.
+### ClientConnectorResponse
+
+The Response again includes the encrypted settings property bag, the encrypt and decrypt functions are provided below. 
+
+```c#
+public class ClientConnectorResponse
+    {
+        public string requestId { get; set; }
+        public string signature { get; set; }
+        public string encryptedSettingsPropertyBag { get; set; }
+        public QueryResult queryResult { get; set; }
+    }
+```
+### QueryResult
+``` c#
+public class QueryResult
+        {
+            public bool success { get; set; }
+            public string message { get; set; }
+            public JObject data { set; get; }
+            public List<JObject> items { get; set; }
+            public string resultCount { get; set; }
+            public string signature { get; set; }
+        }
+```
+The query result contains typical response paramaters, Note the signature string needs to be created using hmac for validation. 
+
+
+
+## Encryption/Decryption Functions 
+
+### Encrypt Data with HMACSHA256 
+
+
+``` c#
+private static string EncryptDataWithHMACSHA256(string key, string value)
+        {
+            using (var hash = new HMACSHA256(Encoding.UTF8.GetBytes(key)))
+            {
+                var hashedByte = hash.ComputeHash(Encoding.UTF8.GetBytes(value));
+                var hashed = Convert.ToBase64String(hashedByte);
+                return hashed;
+            }
+        }
+
+```
+
+### Decrypt String With AES256 
 
 Since the settings property bag is encrypted and is sent with every request, a decryption function is provided below in C#
 
 ```c#
-public static string DecryptStringWithAES256(string key, string cipherText)
+public static string DecryptStringWithAES256(string key, string cipherText) 
+// Where key is the unique secret key recieved when creating the client connector and cipherText is the encryptedSettingsPropertBag
         {
             byte[] iv = new byte[16];
             byte[] buffer = Convert.FromBase64String(cipherText);
@@ -232,8 +369,37 @@ public static string DecryptStringWithAES256(string key, string cipherText)
         }
 ```
 
+### Encrypt String With AES256 
+```c#
+public static string EncryptStringWithAES256(string key, string plainText)
+        {
+            byte[] iv = new byte[16];
+            byte[] array;
 
+            using (Aes aes = Aes.Create())
+            {
+                aes.Key = Encoding.UTF8.GetBytes(key);
+                aes.IV = iv;
 
+                ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
+
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    using (CryptoStream cryptoStream = new CryptoStream((Stream)memoryStream, encryptor, CryptoStreamMode.Write))
+                    {
+                        using (StreamWriter streamWriter = new StreamWriter((Stream)cryptoStream))
+                        {
+                            streamWriter.Write(plainText);
+                        }
+
+                        array = memoryStream.ToArray();
+                    }
+                }
+            }
+
+            return Convert.ToBase64String(array);
+        }
+```
 ## Security
 
  **AES256:** We use AES 256 to encrypt and decrypt to secure the data in the request and response so that even if the data is exposed, it cannot be decrypted without the right key. This is a symmetric encryption technique, which means the same key is used to encrypt and decrypt the data it is also a 2-way encryption algorithm.
