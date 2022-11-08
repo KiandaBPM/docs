@@ -53,21 +53,18 @@ Make sure to **copy the secret key** to a safe location where you will find it a
 
    ![](/images/connector-tabs.png)
 
+4. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](#create-a-microservice) for more details.
 4. Switch to the settings UI tab and notice that some sample code has been included here, this code will be rendered when the datasource for this connector is created. See [create a connector datasource](/low-code/client-connector/how-to-create/#create-a-connector-datasource).
 
-   <img src="/images/settings-ui-tab.png"/>
+Note the code on the left produces the screen on the right, there is some code included by default, the buttons at the bottom and the title at the top.
+ <div class="row">
+ <div class="col"><img src="/images/settings-ui-tab.png" class="zoom:200%" alt="Settings UI   Code" title="Settings UI Code"/></div>
+ <div class="col"> <img src="/images/Connector-datasource-created.png"  alt="Rendered settings UI" title="Rendered settings UI" /></div>
+ </div>
 
-A quick runthrough of what this code does, 
 
-lines 1-4 is a Client Key field
 
-lines 6-9 is a list of radio buttons for environment selection, the options are demo and live
 
-lines 12-29 is a button for authorizing the user of the datasource
-
-below is the output on the datasource settings
-
- <img src="/images/Connector-datasource-created.png" style="zoom:50%; border:1px solid black"/>
 
 
 
@@ -188,14 +185,77 @@ The microservice should implement the following 3 functions.
 3. Test
 
 ### Test 
+The test function authenticates the user making the request and creates a token for any further requests to the datasource. 
 
+The steps for the test function are as follows
 
+1. Get the data from the [client connector request](#clientconnectorrequest) 
+
+2. Decrypt the encrypted settings property bag using your secret key and the [Decrypt function](#decrypt-string-with-aes256)
+
+3. Authorize the user and create bearer token using oauth for example
+
+4. Add the oauth token to the settings property bag and [encrypt](#encrypt-string-with-aes256) using your secret key.
+
+5. Create [client connector response](#clientconnectorresponse) and include success message to indicate test succeeded/failed.
+
+6. Sign the response using the  [EncryptdatawithHMACSHA256 function](#encrypt-data-with-hmacsha256) and include in the client connector response. 
+
+   Below shows an example connector test function from the Kianda demo microservice
+```c#
+ 		[FunctionName("connectorTest")]
+        public static async Task<ClientConnectorResponse> connectorTest(
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] [FromForm]HttpRequest req,
+            ILogger log)
+        {
+            // { SubscriptionID, UserID, RequestID, Action, EncryptedSettingsPropertyBag, RequestObject}
+
+            string signature = string.Empty;
+            ClientConnectorResponse result = new ClientConnectorResponse();
+            result.queryResult = new QueryResult();
+            try
+            {
+                string testBody = await new StreamReader(req.Body).ReadToEndAsync();
+                ClientConnectorRequest data = JsonConvert.DeserializeObject<ClientConnectorRequest>(testBody);
+                var settings = JsonConvert.DeserializeObject<JObject>(DecryptStringWithAES256(SECRET_KEY, data.encryptedSettingsPropertyBag));
+                var accessCode = settings["accessCode"];                 
+                var clientID = settings["client_key"];
+                JObject tokenRequestObj = new JObject
+                {
+                    ["grant_type"] = "authorization_code",
+                    ["client_id"] = clientID,
+                    ["redirect_uri"] = "https://app.kianda.com/index.html",
+                    ["code"] = accessCode
+                };
+                settings = GetToken(tokenRequestObj, settings); //This is an example function that makes a request to oauth
+
+                signature = EncryptDataWithHMACSHA256(SECRET_KEY, data.requestId); //sign using the secret key and requestid 
+                var settingsobj = EncryptStringWithAES256(SECRET_KEY, JsonConvert.SerializeObject(settings)); //encrypt the settings
+                result.encryptedSettingsPropertyBag = settingsobj;
+                result.queryResult.signature = signature;
+                result.queryResult.success = true;
+                result.queryResult.message = "Test completed successfully";
+            }
+            catch (Exception ex) //dont forget to catch any exceptions and send them back with success false
+            {
+                log.LogError(ex.Message);
+                ClientConnectorResponse result1 = new ClientConnectorResponse();
+                result1.queryResult.success = false;
+                result1.queryResult.signature=signature;
+                result.queryResult.message = "Test has failed";
+                return result1;
+            }
+
+            return result;
+        }
+
+```
 
 ### Metadata 
 
-The metadata function provides the list of available endpoints in the microservice and is called when selecting the datasource in kianda
+The metadata function provides the list of available endpoints in the microservice and is called when selecting the datasource in a kianda process.
 
-The steps for the metadata function is as follows:
+The steps for the metadata function are as follows:
 
 1. Get the client connector request 
 
@@ -243,14 +303,108 @@ The above code renders the following result
 
 ### Query
 
+The Query function is where the . 
 
+The steps for the query function are as follows
+
+1. Get the data from the [client connector request](#clientconnectorrequest) 
+
+2. Decrypt the encrypted settings property bag using your secret key and the [Decrypt function](#decrypt-string-with-aes256)
+
+3. Get the [query object](#query-1) from the request and call the function related to the query in the datasource. 
+
+4. Create [client connector response](#clientconnectorresponse) and include success message to indicate query succeeded/failed.
+
+5. Create the [query result](#queryresult) object and include in the response
+
+6. Sign the response using the  [EncryptdatawithHMACSHA256 function](#encrypt-data-with-hmacsha256) and include in the client connector response. 
+
+Below is a code sample of the connector query function, it includes a check for filters sent from the query and a response.
+
+This is just sample code and a fully featured connector would include sperate functions where the query would be executed and return a response.
+
+A user can query this function for the list of countries, list of cities or pass a filter value which will return a list of cities for a specific country.
+
+```c#
+        [FunctionName("connectorQuery")]
+        public static async Task<ClientConnectorResponse> connectorQuery(
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
+            ILogger log)
+        {
+            ClientConnectorResponse result = new ClientConnectorResponse();
+            QueryResult resultQuery = new QueryResult();
+            result.queryResult = resultQuery;
+            string signature = string.Empty;
+            var myresponsestring = string.Empty;
+            try
+            {
+                string testBody = await new StreamReader(req.Body).ReadToEndAsync();
+                ClientConnectorRequest data = JsonConvert.DeserializeObject<ClientConnectorRequest>(testBody);
+                Query query = data.query;
+                var settings = JsonConvert.DeserializeObject<JObject>(DecryptStringWithAES256(SECRET_KEY, data.encryptedSettingsPropertyBag));
+                //demo object list creation
+                result.queryResult.items = new List<JObject>();
+                if (query.info.Value<string>("text") == "Get Countries")
+                {
+                    List<JObject> CountriesList = new List<JObject>();
+                    var country1 = new JObject { ["Country"] = "England" };
+                    var country2 = new JObject { ["Country"] = "Ireland" };
+                    CountriesList.Add(country1);
+                    CountriesList.Add(country2);
+                    result.queryResult.items = CountriesList;
+                }
+                else
+                {
+                    List<JObject> CitysList = new List<JObject>(); //create a list of jobjects 
+                    var city1 = new JObject { ["Country"] = "England", ["City"] = "London" };
+                    var city2 = new JObject { ["Country"] = "England", ["City"] = "Liverpool" };
+                    var city3 = new JObject { ["Country"] = "Ireland", ["City"] = "Dublin" };
+                    var city4 = new JObject { ["Country"] = "Ireland", ["City"] = "Cork" };
+                    CitysList.Add(city1);
+                    CitysList.Add(city2);
+                    CitysList.Add(city3);
+                    CitysList.Add(city4);
+
+                    //check for conditions then return accordingly
+                    if (query != null && !string.IsNullOrEmpty(query.filter))
+                    {
+                        //filtering the city list depending on the filter 
+                        var j = CitysList.Where(x => x.GetValue("Country").Value<string>() == query.filter).ToList();
+                        result.queryResult.items = j;
+                    }
+                    else
+                    {
+                        // if no filter return the full list of citys
+                        result.queryResult.items = CitysList;
+                    }
+                }
+
+                var settingsobj = EncryptStringWithAES256(SECRET_KEY, JsonConvert.SerializeObject(settings)); //encrypt the settings
+                result.encryptedSettingsPropertyBag = settingsobj;
+                result.signature = EncryptDataWithHMACSHA256(SECRET_KEY, data.requestId);
+                result.queryResult.success = true;
+
+            }
+            catch (Exception ex)
+            {
+                ClientConnectorResponse resultExc = new ClientConnectorResponse();
+                QueryResult resultQueryExc = new QueryResult();
+                resultExc.queryResult.success = false;
+                resultExc.queryResult.message = "Exception occured; " + ex.Message;
+                resultExc.signature = signature;
+                return resultExc;
+            }
+
+            return result;
+        }
+```
 
 
 
 
 ## Schemas
 
-### ClientConnectorRequest
+#### ClientConnectorRequest
 
 Each function will receive a clientConnectorRequest payload.
 
@@ -269,7 +423,7 @@ Note, the Encrypted settings property bag will contain the encrypted datasource 
 
 
 ```
-### Query
+#### Query
 The query object is included in the Client Connector Request
 
 ```c#
@@ -291,7 +445,7 @@ The query object is included in the Client Connector Request
     }
 ```
 
-### ClientConnectorResponse
+#### ClientConnectorResponse
 
 The Response again includes the encrypted settings property bag, the encrypt and decrypt functions are provided below. 
 
@@ -304,7 +458,7 @@ public class ClientConnectorResponse
         public QueryResult queryResult { get; set; }
     }
 ```
-### QueryResult
+#### QueryResult
 ``` c#
 public class QueryResult
         {

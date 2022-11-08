@@ -10,7 +10,8 @@ typora-root-url: ..\..\..\..\static
 
 The new client connector is designed to allow users to have customized data source connectors.
 
-**Client Connectors are now available for use in beta mode.**
+**Client Connectors are now available for use in beta mode .**
+
 
 Please note that administrator privilege's will be required for creating a client connector, using the connector as a data source and in processes will be available to any user under the subscription.
 
