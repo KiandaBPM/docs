@@ -801,13 +801,14 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Client Connector</title><link>https://docs.kianda.com/docs/low-code/client-connector/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/client-connector/</guid><description>
 &lt;h1 id="introduction">Introduction&lt;/h1>
-&lt;p>The new client connector is designed to allow users to have customized data source connectors.&lt;/p>
-&lt;p>&lt;strong>Client Connectors are now available for use in beta mode .&lt;/strong>&lt;/p>
-&lt;p>Please note that administrator privilege&amp;rsquo;s will be required for creating a client connector, using the connector as a data source and in processes will be available to any user under the subscription.&lt;/p>
+&lt;p>The Client connector function allows Kianda users to create customised data source connectors thereby allowing Kianda to push to, use and pull information from external data sources.&lt;/p>
+&lt;p>Please note: Client Connectors are now available for use in &lt;strong>beta mode&lt;/strong> .&lt;/p>
+&lt;p>Please note that you must have an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role to access the &lt;strong>Developer&lt;/strong> function under &lt;strong>Administration&lt;/strong> to a) create a client connector, b) have an &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage datasources&lt;/strong> role to access &lt;strong>Data sources&lt;/strong> to configure the customised connector and c) have an &lt;strong>Administrator&lt;/strong> or &lt;strong>Design business process&lt;/strong> role to utilise the customised configured connector within a process design.&lt;/p>
 &lt;h2 id="features">Features&lt;/h2>
+&lt;p>The new Client connector function has the following features:&lt;/p>
 &lt;ul>
 &lt;li>Customizable data source connector&lt;/li>
-&lt;li>Editable UI and JS code similar to custom rules/widgets/fields&lt;/li>
+&lt;li>Editable UI and JavaScript code similar to custom rules/widgets/fields&lt;/li>
 &lt;li>Ability to alter the query payload&lt;/li>
 &lt;li>Add new custom data source settings&lt;/li>
 &lt;li>Sensitive data encryption in each call&lt;/li>
