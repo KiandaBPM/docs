@@ -6,13 +6,20 @@ typora-root-url: ..\..\..\static
 
 ## Introduction
 
-The framework used for authentication in Kianda is **OAuth 2.0**. It is a framework that uses industry-standard protocol for authorisation which focuses on simplifying client developer practices, while providing specific authorisation flows for applications. **OAuth 2.0** framework uses **Bearer** type tokens to authorise access to the platform for individual users. This token is required by Kianda to preform any **Create, Read, Update and Delete** (CRUD) requests to the **Application Programming Interface** (API).
+The framework used for authentication in Kianda is **OAuth 2.0**. This framework uses industry-standard protocol for authorisation focusing on simplifying client developer practices, and at the same time providing specific authorisation flows for applications. The **OAuth 2.0** framework uses **Bearer** type tokens to authorise access to the platform for individual users. This type of token is required by Kianda to perform any **Create, Read, Update and Delete** (CRUD) requests to external **Application Programming Interfaces** (APIs).
 
-When working within Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved from the user being logged in. If you may want to create an application outside of Kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There are two ways for retrieving the Bearer token:
+When working **within** Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved as part of a user login. If you may want to create an application outside of Kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There are two methods to retrieve the Bearer token:
 
-### Retrieving Bearer token using a POST request with the Content-type set to application/x-www-form-urlencoded
+- [Using a POST request](#retrieving-a-bearer-token-using-a-post-request)
+- [Using DevTools](#retrieving-a-bearer-token-usin-devtools)
 
-To retrieve your token you need to make a **POST** request that looks like `https://domain.com/token` where the domain is your company, for example `https://green-itr.kianda.com/token` . For the request to be valid, you need to pass the following form parameters to the body of the request:
+Click on the links above to go the the relevant sections.
+
+### Retrieving Bearer token using a POST request 
+
+You can retrieve a bearer token using a **POST** request where the **content body type** is is set to **application**, **x-www-form-urlencoded**.
+
+The request will look like `https://domain.com/token` where the domain is your company, for example `https://green-itr.kianda.com/token` . For the request to be valid, you need to pass the following form parameters to the body of the request:
 
 | Parameter     | Value                       |
 | :------------ | --------------------------- |
@@ -41,9 +48,9 @@ You can obtain the `scope` value by going to **Administration** > **Subscription
 
 ![Subscription Id](/images/subscription-details.jpg)
 
-### Retrieving Bearer token using devtools
+### Retrieving Bearer token using DevTools
 
-To retrieve your Bearer token using devtools, first you need to log into Kianda. When logged in, open the devtools by:
+You can retrieve your Bearer token using Chrome DevTools, making sure you are logged into Kianda. When logged in, open Chrome DevTools by:
 
 1. Right clicking your mouse anywhere on the screen. 
 2. Click on **Inspect** in the dialog box.
