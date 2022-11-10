@@ -2,8 +2,8 @@
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The framework used for authentication in Kianda is &lt;strong>OAuth 2.0&lt;/strong>. It is a framework that uses industry-standard protocol for authorisation which focuses on simplifying client developer practices, while providing specific authorisation flows for applications. &lt;strong>OAuth 2.0&lt;/strong> framework uses &lt;strong>Bearer&lt;/strong> type tokens to authorise access to the platform for individual users. This token is required by Kianda to preform any &lt;strong>Create, Read, Update and Delete&lt;/strong> (CRUD) requests to the &lt;strong>Application Programming Interface&lt;/strong> (API).&lt;/p>
 &lt;p>When working within Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved from the user being logged in. If you may want to create an application outside of Kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There are two ways for retrieving the Bearer token:&lt;/p>
-&lt;h3 id="retrieving-bearer-token-using-a-get-request">Retrieving Bearer token using a GET request&lt;/h3>
-&lt;p>To retrieve your token you need to make the a &lt;strong>GET&lt;/strong> request looking like &lt;code>https://domain.com/token&lt;/code> where the domain is your company&amp;rsquo;s, for example &lt;code>https://green-itr.kianda.com/token&lt;/code> . For the request to be valid, you need to pass the following parameters to the header of the request:&lt;/p>
+&lt;h3 id="retrieving-bearer-token-using-a-post-request">Retrieving Bearer token using a POST request&lt;/h3>
+&lt;p>To retrieve your token you need to make a &lt;strong>POST&lt;/strong> request that looks like &lt;code>https://domain.com/token&lt;/code> where the domain is your company, for example &lt;code>https://green-itr.kianda.com/token&lt;/code> . For the request to be valid, you need to pass the following parameters to the header of the request:&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
