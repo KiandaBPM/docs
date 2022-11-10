@@ -10,9 +10,9 @@ The framework used for authentication in Kianda is **OAuth 2.0**. It is a framew
 
 When working within Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved from the user being logged in. If you may want to create an application outside of Kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There are two ways for retrieving the Bearer token:
 
-### Retrieving Bearer token using a GET request
+### Retrieving Bearer token using a POST request
 
-To retrieve your token you need to make the a **GET** request looking like `https://domain.com/token` where the domain is your company's, for example `https://green-itr.kianda.com/token` . For the request to be valid, you need to pass the following parameters to the header of the request:
+To retrieve your token you need to make a **POST** request that looks like `https://domain.com/token` where the domain is your company, for example `https://green-itr.kianda.com/token` . For the request to be valid, you need to pass the following parameters to the header of the request:
 
 | Parameter     | Value                       |
 | :------------ | --------------------------- |
