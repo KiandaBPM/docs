@@ -56,10 +56,11 @@ This request creates a process instance/new record. To use POST:
 
 3. Pass parameters into the body of the request, for example to create a new instance of a process called 'new-training-process' where a textbox field called 'Reason' will be prepopulated with a value:
 
-   ```
+   ```json
    {
     "processName" :"new-training-process",
     "instanceID" : "new-training-process",
+    "TriggerField":"",
     "FieldsMappings":[{
       "fieldname":"reason",
       "text":"New employee",
