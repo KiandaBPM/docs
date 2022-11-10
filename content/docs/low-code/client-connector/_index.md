@@ -8,17 +8,19 @@ typora-root-url: ..\..\..\..\static
 
 # Introduction 
 
-The new client connector is designed to allow users to have customized data source connectors.
+The Client connector function allows Kianda users to create customised data source connectors thereby allowing Kianda to push to, use and pull information from external data sources.
 
-**Client Connectors are now available for use in beta mode .**
+Please note: Client Connectors are now available for use in  **beta mode** .
 
 
-Please note that administrator privilege's will be required for creating a client connector, using the connector as a data source and in processes will be available to any user under the subscription.
+Please note that you must have an **Administrator** or **Developer** role to access the **Developer** function under **Administration** to a) create a client connector, b) have an **Administrator** or **Manage datasources** role to access **Data sources** to configure the customised connector and c) have an **Administrator** or **Design business process** role to utilise the customised configured connector within a process design.
 
 ## Features
 
+The new Client connector function has the following features:
+
 - Customizable data source connector
-- Editable UI and JS code similar to custom rules/widgets/fields
+- Editable UI and JavaScript code similar to custom rules/widgets/fields
 - Ability to alter the query payload 
 - Add new custom data source settings 
 - Sensitive data encryption in each call
