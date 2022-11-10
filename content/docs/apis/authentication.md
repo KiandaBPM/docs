@@ -10,9 +10,9 @@ The framework used for authentication in Kianda is **OAuth 2.0**. It is a framew
 
 When working within Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved from the user being logged in. If you may want to create an application outside of Kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There are two ways for retrieving the Bearer token:
 
-### Retrieving Bearer token using a POST request
+### Retrieving Bearer token using a POST request with the Content-type set to application/x-www-form-urlencoded
 
-To retrieve your token you need to make a **POST** request that looks like `https://domain.com/token` where the domain is your company, for example `https://green-itr.kianda.com/token` . For the request to be valid, you need to pass the following parameters to the header of the request:
+To retrieve your token you need to make a **POST** request that looks like `https://domain.com/token` where the domain is your company, for example `https://green-itr.kianda.com/token` . For the request to be valid, you need to pass the following form parameters to the body of the request:
 
 | Parameter     | Value                       |
 | :------------ | --------------------------- |
@@ -20,8 +20,23 @@ To retrieve your token you need to make a **POST** request that looks like `http
 | `password:`   | your Kianda password        |
 | `scope:`      | your Kianda subscription ID |
 | `grant_type:` | `password`                  |
-| `remember:`   | `yes`                       |
 
+The **Response Body** will be as follows:
+
+```json
+{
+    "access_token": "<Bearer access_token",
+    "token_type": "bearer",
+    "expires_in": 299,
+    "userName": "<Provided username>",
+    "userId": "<Application userId>",
+    "subscriptionId": "<SubscriptionID>",
+    "securityStamp": "<Token Security token (Guid)>",
+    "hostURL": "<Your kianda domain>",
+    ".issued": "<Token Issued Date and time>",
+    ".expires": "<Token Issued Date and time>"
+}
+```
 You can obtain the `scope` value by going to **Administration** > **Subscription** > **Subscription Details** > **Subscription Id**.
 
 ![Subscription Id](/images/subscription-details.jpg)
