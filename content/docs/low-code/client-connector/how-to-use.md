@@ -8,7 +8,9 @@ hide_summary: true
 ---
 
 # Introduction 
-The new client connector is designed to allow users to create custom datasources to meet business requirements, and allow more flexibility by providing an editor to edit the ui and javascript for the connector
+The **Client connector** is designed to allow users to create custom datasources to meet business requirements, and allow more flexibility by providing a built-in editor to edit the UI and JavaScript code for the connector. Kianda users with **Administrator** or **Developer** roles, who have some experience of coding will be able to use and access this new feature. 
+
+To access the **Client connector** go to the left-hand **side menu**, and click on **Administration** and **Developer**. 
 
 ## Settings page
 
