@@ -47,7 +47,7 @@ To create a new customised connector, follow the steps below:
 
 ### Connector Settings tab
 
-**Connector Settings:** This is where the connector title and icon can be changed. The URL for metadata, test and query  can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](#create-a-microservice) for more details.
+This is where the connector title and icon can be changed. The URL for metadata, test and query  can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](#create-a-microservice) for more details.
 
 ### Settings UI tab
 If you click on the **Settings UI** tab you will see that some sample code has been included here. This code will be rendered when the datasource for this connector is created, see [create a connector datasource](/low-code/client-connector/how-to-create/#create-a-connector-datasource) for more details.
@@ -98,7 +98,7 @@ There is some default code provided to help you get started. Click on each of th
 
 #### Metadata hook ####
 
-The **Metadata hook** is where *return of the tree/metadata call can be altered.* 
+The **Metadata hook** is where *return of the tree/metadata call can be altered. - where you can change what appears in the data connector tree as shown in the image below.
 This is where the tree function gets triggered as can be seen in the network tab calls when a datasource is selected the tree function is queryed and the response is then rendered as a tree view in Kianda.
 
 <img src="/images/trigger-tree-function.png"/>
