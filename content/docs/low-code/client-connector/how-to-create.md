@@ -78,7 +78,7 @@ In this tab the custom handlebars can be added for the settings of the connector
 
  This code creates the content on the screen seen below, available in the **Data sources** function on the **Datasource details** page. 
 
-   ![Connector for datasource created](/images/connector-datasource-created.png)
+   ![Connector for datasource created](/images/Connector-datasource-created.png)
 
 ### Settings Code ###
 
@@ -89,8 +89,8 @@ This is the JavaScript code for the settings UI.
 The Query Code section contains three methods that can be customised for your needs:
 
 - [Metadata hook](#metadata-hook)
-- Query code
-- querySuccess code
+- [Query hook](#query-hook)
+- [querySuccess hook](#querysuccess-hook)
 
 There is some default code provided to help you get started. Click on each of the links above to see further details. 
 
@@ -103,10 +103,10 @@ This is where the tree function gets triggered as can be seen in the network tab
 
 <img src="/images/trigger-tree-function.png"/>
 
-Below is an example of what the json response from the tree function looks like.
+Below is an example of what the tree parameter looks like.
 
 ```json
-[
+tree:[
   {
     "name": "Get Countries",
     "text": "Get Countries",
@@ -176,6 +176,41 @@ Below is an example of what the json response from the tree function looks like.
 ]
 ```
 
+### Query Hook
+
+The query hook is where the query to the datasource can be customised, the parameters passed into this function allow this to happen.
+
+We will use the countries and cities example scenario to explain the query hook, two list fields datasoure as the value have been set up in a process, the first list field will call the get countries function and when a user selects a country from the list the second list will have a condition to get the cities related to the selected country.
+
+The below query hook takes in 4 parameters, [sample schemas are for each are available here](#sample-schemas).
+
+Thinking of the scenario above when a list is populated from a datasource it needs to query the datasource each time, in a standard connector the query is handled by default but in this case the query is going to be handled using our custom connector. Using the passed in parameters we can check for various things such as rules and conditions. in the example below the filter will be captured by drilling into the query conditions and taking the value of the right hand argument or arg2, this should be the country that has been selected in the dropdown, by setting query.filter **we are altering the query before it is executed **. 
+
+This ties in with the [query success hook](#querysuccess-hook) which handles the result which is returned from the datasource, which can also be customized. 
+
+```javascript
+query(datasource, query, rule, process)
+{
+	if(query.conditions)
+    {
+    	query.filter = query.conditions[0].conditions[0].arg2.value;
+    }
+  	return query;
+}
+```
+
+
+
+### QuerySuccess hook
+
+The idea of the query success hook is to be able to customize the response of a datasource query for example drill into a complicated json response based on a condition.  
+
+```c#
+querySuccess(datasource,result,rule,process) {
+    // this.get("dataservice").mapSuccess(result,rule,process); //uncomment to use default mapping behaviour
+   return result;
+  }
+```
 Once the connector is created, the connector is available from the **Data sources** function under **Administration**, see next section for details. 
 
 ## Create a connector datasource
@@ -195,15 +230,15 @@ Click **add new** select the newly created connector, in this case the demo conn
 
 ## Create a microservice
 
+Note that a microservice can be created in any programming language, the examples below are in c#, more languages will be added soon. 
+
 ### Requirements
 
 The microservice should implement the following 3 functions.
 
-1. Metadata
-
-2. Query
-
-3. Test
+1. Test
+2. MetaData
+3. Query
 
 ### Test 
 The test function authenticates the user making the request and creates a token for any further requests to the datasource. 
@@ -597,9 +632,246 @@ After creating the client connector and the datasource, the next step is to look
 
 
 
+## Sample schemas
+
+### Related to metaData hook
+
+#### Tree schema
+```json
+[
+  {
+    "name": "Get Countries",
+    "text": "Get Countries",
+    "title": "Get Countries",
+    "icon": "fa fa-globe",
+    "type": "STRUCTURE",
+    "nodes": [
+      {
+        "name": "Country",
+        "text": "Country",
+        "title": "Country",
+        "icon": "",
+        "type": "text"
+      }
+    ],
+    "fields": [
+      {
+        "name": "Country",
+        "text": "Country",
+        "title": "Country",
+        "icon": "",
+        "type": "text"
+      }
+    ],
+    "selectable": true
+  },
+  {
+    "name": "Get Cities",
+    "text": "Get Cities",
+    "title": "Get Cities",
+    "icon": "fa fa-globe",
+    "type": "STRUCTURE",
+    "nodes": [
+      {
+        "name": "Country",
+        "text": "Country",
+        "title": "Country",
+        "icon": "",
+        "type": "text"
+      },
+      {
+        "name": "City",
+        "text": "City",
+        "title": "City",
+        "icon": "",
+        "type": "text"
+      }
+    ],
+    "fields": [
+      {
+        "name": "Country",
+        "text": "Country",
+        "title": "Country",
+        "icon": "",
+        "type": "text"
+      },
+      {
+        "name": "City",
+        "text": "City",
+        "title": "City",
+        "icon": "",
+        "type": "text"
+      }
+    ],
+    "selectable": true
+  }
+]
+```
 
 
+#### Datasource schema 
+same structure used in both query and query success data will vary slightly
+```json
+{
+  "id": "2fe2d2c7-4feb-4c92-ac4c-fed4623d2d6e",
+  "title": "Demo Connector",
+  "type": "client",
+  "typeIcon": "http://localhost:4171/public-file/322f14a6-63a0-4c68-b53e-4ca041c0e9ae/Geo-Connector-Icon.png",
+  "typeTitle": "Demo Connector",
+  "candelete": false,
+  "readOnly": false,
+  "status": "ready",
+  "useConnector": false,
+  "connectorId": "",
+  "clientConnectorId": "19275478-68a9-43be-b8fb-54dc310cc0d6",
+  "settings": {},
+  "modified": "2022-11-11T15:12:44.173Z",
+  "enableB2B": true,
+  "enableFiltering": false,
+  "b2bMappings": [],
+  "modifiedBy": "5650d471-8c41-49b6-8f72-b77dddf3b956",
+  "admins": [],
+  "allowedUsers": [],
+  "exclusionUsers": []
+}
+```
 
+
+### Related to query hook
+
+#### Query schema
+```json
+{
+  "action": "select",
+  "info": {
+    "text": "Get Countries",
+    "name": "Get Countries",
+    "type": "STRUCTURE",
+    "filter": "England"
+  },
+  "fields": [
+    "Country",
+    "Country"
+  ],
+  "filter": "England",
+  "filterBy": "Country",
+  "filterMode": "startswith",
+  "rowLimit": 50,
+  "orderAscending": false
+}
+```
+
+#### Rule schema 
+Will be similar in the query success hook
+```json
+{
+  "title": "Country Selection",
+  "name": "countriesSelect",
+  "help": null,
+  "type": "fields/field-list",
+  "text": "England",
+  "value": "England",
+  "showTitle": true,
+  "visible": true,
+  "enabled": true,
+  "submitOffline": false,
+  "required": false,
+  "settings": {
+    "listsource": "datasource",
+    "displayformat": "dropdownlist",
+    "choices": "Choice 1\nChoice 2\nChoice 3",
+    "filterMode": "startswith",
+    "nativeMobile": "no",
+    "offlineCache": "no",
+    "list": {
+      "text": "Get Countries",
+      "name": "Get Countries",
+      "type": "STRUCTURE",
+      "filter": "England"
+    },
+    "valueField": "Country",
+    "displayField": "Country"
+  },
+  "class": null,
+  "customCssClass": null,
+  "usersValue": [],
+  "parentField": null,
+  "parentForm": "5af0c34e-28ea-4404-bba3-a8cf2df8eaff",
+  "datasource": "2fe2d2c7-4feb-4c92-ac4c-fed4623d2d6e"
+}
+```
+#### Process schema 
+Will be similar in the query success hook
+```json
+{
+  "processVersion": "1.1",
+  "processName": "connector-example",
+  "isCreated": false,
+  "isOfflineCreated": false,
+  "isOfflineUpdated": false,
+  "uniqueID": "45758d2b-f713-44c9-81dc-0e4cb7618902",
+  "title": "connector example",
+  "type": "Process",
+  "name": "connector-example",
+  "desc": "",
+  "version": "1.0",
+  "modified": "2022-11-14T09:33:46.254Z",
+  "created": "2022-11-11T15:13:28.108Z",
+  "status": "form 1",
+  "securityMode": null,
+  "enableSecurity": false,
+  "deleted": false,
+  "rejected": false,
+  "completed": false,
+  "settings": {
+    "keepRuleExecutionOrder": "yes",
+    "buttonDisplayFlag": true,
+    "mobileNav": "yes",
+    "comments": "",
+    "offline-tag": "45758d2b-f713-44c9-81dc-0e4cb7618902"
+  },
+  "partnerId": null,
+  "instanceIDFormat": null,
+  "customInstanceIDFormat": null,
+  "isPartner": false,
+  "isDraft": true,
+  "publish": false,
+  "allowNew": false,
+  "visMode": null,
+  "group": null,
+  "fieldsUpdated": null,
+  "modifiedBy": null,
+  "createdBy": null,
+  "currentForm": "5af0c34e-28ea-4404-bba3-a8cf2df8eaff",
+  "partner": null
+}
+```
+
+### Related to query success hook 
+
+#### Datasource schema
+
+#### Result schema
+```json
+{
+  "success": true,
+  "items": [
+    {
+      "Country": "England"
+    },
+    {
+      "Country": "Ireland"
+    }
+  ],
+  "meta": {
+    "cache-control": "no-cache,no-cache, no-store",
+    "content-length": "173",
+    "content-type": "application/json; charset=utf-8",
+    "expires": "-1,-1",
+    "pragma": "no-cache,no-cache"
+  }
+}
+```
 
 
 
