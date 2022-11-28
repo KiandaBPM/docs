@@ -867,13 +867,13 @@ Your browser does not support the video tag.
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The default code contains three &lt;strong>hooks&lt;/strong> that allow you to tap in to a module to trigger certain behaviours or actions. These hooks are:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="#metadata-hook">Metadata hook&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#metadata-hook">metaData hook&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#query-hook">Query hook&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#querysuccess-hook">querySuccess hook&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Click on each of the links above to see further details.&lt;/p>
 &lt;p>In Ember, &lt;strong>bubbling&lt;/strong> will search for each of the actions in the code above, and if not found, then a default action is used, but if found the default is overwritten. This principle is useful when something is created multiple times which is the case when creating custom data connectors.&lt;/p>
-&lt;h4 id="metadata-hook">Metadata hook&lt;/h4>
+&lt;h4 id="metadata-hook">metaData hook&lt;/h4>
 &lt;p>The &lt;strong>Metadata hook&lt;/strong> is where the return of the tree or metadata call can be altered for a chosen datasource used in Kianda form design.&lt;/p>
 &lt;p>The &lt;strong>&lt;code>tree&lt;/code>parameter&lt;/strong> as part of this hook is seen in the sample code snippet below.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">metaData&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">tree&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">datasource&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
