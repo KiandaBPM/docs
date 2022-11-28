@@ -161,7 +161,7 @@ When using a data source, all data sources will have built-in **metadata**, **qu
 
 The default code contains three **hooks** that allow you to tap in to a module to trigger certain behaviours or actions. These hooks are: 
 
-- [Metadata hook](#metadata-hook)
+- [metaData hook](#metadata-hook)
 - [Query hook](#query-hook)
 - [querySuccess hook](#querysuccess-hook)
 
@@ -169,7 +169,7 @@ Click on each of the links above to see further details.
 
 In Ember, **bubbling** will search for each of the actions in the code above, and if not found, then a default action is used, but if found the default is overwritten. This principle is useful when something is created multiple times which is the case when creating custom data connectors.
 
-#### Metadata hook ####
+#### metaData hook ####
 
 The **Metadata hook** is where the return of the tree or metadata call can be altered for a chosen datasource used in Kianda form design.  
 
