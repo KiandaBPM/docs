@@ -83,8 +83,6 @@ This code creates the content on the screen seen below, available in the **Data 
 
 Other details on the screen above, like the name of the page **Datasource details**, **Use Kianda Cloud Connect** and buttons **Test connection**, **Save**, **Security** and **Close** are automatically part of the UI for customised data connectors. However, custom handlebars can be added for the **settings** of the connector datasource using code in the **Settings UI** tab, namely fields like **Datasource Name** and **Client Key** as shown in the image above. This principles works the same **Widget UI** seen when creating custom [rule widgets](/docs/low-code/rule-widget/) or [field widgets](/docs/low-code/field-widget/) for example.
 
-
-
 ### Settings Code ###
 
 In a similar manner to creating custom [rule widgets](/docs/low-code/rule-widget/) or [field widgets](/docs/low-code/field-widget/) where there are **Widget code** tabs, the connector widget has a tab called **Settings Code** which is used to create the JavaScript code for the settings UI.
@@ -140,9 +138,9 @@ Other aspects to note in this sample code are the datasource settings, for examp
 
 ### Query Code ###
 
-When using a data source, all data sources will have built-in **metadata**, **query** and **querySuccess** functions to allow content searches, including metadata content or information about the content, such as title, author and creation date. The **Query code** tab contains the code needed for these three functions. Default code is provided to help you get started. 
+When using a data source, all data sources will have built-in **metadata**, **query** and **querySuccess** functions to allow content searches, including metadata content or information about the content, such as title, author and creation date. The **Query code** tab contains the code needed for these three functions. Default code is provided to help you get started, see below.
 
-```
+```javascript
 {
   metaData(tree, datasource) {
     return tree;
@@ -161,24 +159,29 @@ When using a data source, all data sources will have built-in **metadata**, **qu
 }
 ```
 
-The Query Code section contains three methods that can be customised for your needs:
+The default code contains three **hooks** that allow you to tap in to a module to trigger certain behaviours or actions. These hooks are: 
 
 - [Metadata hook](#metadata-hook)
 - [Query hook](#query-hook)
 - [querySuccess hook](#querysuccess-hook)
 
-There is some default code provided to help you get started. Click on each of the links above to see further details. 
+Click on each of the links above to see further details. 
 
-<img src="/images/connector-query-code.png" style="zoom:100%;border:1px solid black"/>
+In Ember, **bubbling** will search for each of the actions in the code above, and if not found, then a default action is used, but if found the default is overwritten. This principle is useful when something is created multiple times which is the case when creating custom data connectors.
 
 #### Metadata hook ####
 
-The **Metadata hook** is where *return of the tree/metadata call can be altered. - where you can change what appears in the data connector tree as shown in the image below.
-This is where the tree function gets triggered as can be seen in the network tab calls when a datasource is selected the tree function is queryed and the response is then rendered as a tree view in Kianda.
+The **Metadata hook** is where the return of the tree or metadata call can be altered for a chosen datasource used in Kianda form design.  
 
-<img src="/images/trigger-tree-function.png"/>
+The **`tree`parameter** as part of this hook is seen in the sample code snippet below.
 
-Below is an example of what the tree parameter looks like.
+```javascript
+  metaData(tree, datasource) {
+    return tree;
+  }
+```
+
+This **tree parameter** could be defined and structured as follows using nested objects 'Get Countries'  and 'Get Cities'  which are associated with **nodes** 'Country' and 'Country' and 'City'. See [Bootstrap Tree View package documentation](https://github.com/jonmiles/bootstrap-treeview#bootstrap-tree-view) for more details on hierarchical tree structures.
 
 ```json
 tree:[
@@ -251,9 +254,29 @@ tree:[
 ]
 ```
 
+This structure will result in the output as shown in the image below, when a data source is chosen for use in form design that uses a new data connector called 'Demo Connector'. 
+
+![Datasource tree and network tab](/images/trigger-tree-function-copy.jpg)
+
+So when the data source is selected,  the tree function is triggered as seen in the **Network** tab calls. The function is queried and the response is rendered as a tree view in the **datasource tree** box in Kianda. 
+
+The other parameter named in this **metadata hook**, namely `datasource` , defines properties used in the data connector settings like Title and Icon for the data connector.  A sample schema is available at [Datasource schema](/docs/low-code/client-connector/sample-schemas/#datasource-schema).
+
 ### Query Hook
 
-The query hook is where the query to the datasource can be customised, the parameters passed into this function allow this to happen.
+The **Query hook** allows a query to the datasource to be customised. Parameters are passed into this function to allow customisation to happen. These parameters are: `datasource`, `query`, `rule` and `process`; sample schemas are available for each at the [Sample schema]() link.
+
+```javascript
+ query(datasource, query, rule, process) {
+    if(query.conditions)
+    {
+      query.filter = query.conditions[0].conditions[0].arg2.value;
+    }
+    return query;
+  }
+```
+
+
 
 We will use the countries and cities example scenario to explain the query hook, two list fields datasoure as the value have been set up in a process, the first list field will call the get countries function and when a user selects a country from the list the second list will have a condition to get the cities related to the selected country.
 
@@ -704,267 +727,6 @@ The main difference between the two is that AES we are encrypting and decrypting
 <img src="/images/Sha256_Hashing.png" style="zoom:67%;" />
 
 After creating the client connector and the datasource, the next step is to look at how the connector can be used.  
-
-
-
-## Sample schemas
-
-### Related to metaData hook
-
-#### Tree schema
-```json
-[
-  {
-    "name": "Get Countries",
-    "text": "Get Countries",
-    "title": "Get Countries",
-    "icon": "fa fa-globe",
-    "type": "STRUCTURE",
-    "nodes": [
-      {
-        "name": "Country",
-        "text": "Country",
-        "title": "Country",
-        "icon": "",
-        "type": "text"
-      }
-    ],
-    "fields": [
-      {
-        "name": "Country",
-        "text": "Country",
-        "title": "Country",
-        "icon": "",
-        "type": "text"
-      }
-    ],
-    "selectable": true
-  },
-  {
-    "name": "Get Cities",
-    "text": "Get Cities",
-    "title": "Get Cities",
-    "icon": "fa fa-globe",
-    "type": "STRUCTURE",
-    "nodes": [
-      {
-        "name": "Country",
-        "text": "Country",
-        "title": "Country",
-        "icon": "",
-        "type": "text"
-      },
-      {
-        "name": "City",
-        "text": "City",
-        "title": "City",
-        "icon": "",
-        "type": "text"
-      }
-    ],
-    "fields": [
-      {
-        "name": "Country",
-        "text": "Country",
-        "title": "Country",
-        "icon": "",
-        "type": "text"
-      },
-      {
-        "name": "City",
-        "text": "City",
-        "title": "City",
-        "icon": "",
-        "type": "text"
-      }
-    ],
-    "selectable": true
-  }
-]
-```
-
-
-#### Datasource schema 
-same structure used in both query and query success data will vary slightly
-```json
-{
-  "id": "2fe2d2c7-4feb-4c92-ac4c-fed4623d2d6e",
-  "title": "Demo Connector",
-  "type": "client",
-  "typeIcon": "http://localhost:4171/public-file/322f14a6-63a0-4c68-b53e-4ca041c0e9ae/Geo-Connector-Icon.png",
-  "typeTitle": "Demo Connector",
-  "candelete": false,
-  "readOnly": false,
-  "status": "ready",
-  "useConnector": false,
-  "connectorId": "",
-  "clientConnectorId": "19275478-68a9-43be-b8fb-54dc310cc0d6",
-  "settings": {},
-  "modified": "2022-11-11T15:12:44.173Z",
-  "enableB2B": true,
-  "enableFiltering": false,
-  "b2bMappings": [],
-  "modifiedBy": "5650d471-8c41-49b6-8f72-b77dddf3b956",
-  "admins": [],
-  "allowedUsers": [],
-  "exclusionUsers": []
-}
-```
-
-
-### Related to query hook
-
-#### Query schema
-```json
-{
-  "action": "select",
-  "info": {
-    "text": "Get Countries",
-    "name": "Get Countries",
-    "type": "STRUCTURE",
-    "filter": "England"
-  },
-  "fields": [
-    "Country",
-    "Country"
-  ],
-  "filter": "England",
-  "filterBy": "Country",
-  "filterMode": "startswith",
-  "rowLimit": 50,
-  "orderAscending": false
-}
-```
-
-#### Rule schema 
-Will be similar in the query success hook
-```json
-{
-  "title": "Country Selection",
-  "name": "countriesSelect",
-  "help": null,
-  "type": "fields/field-list",
-  "text": "England",
-  "value": "England",
-  "showTitle": true,
-  "visible": true,
-  "enabled": true,
-  "submitOffline": false,
-  "required": false,
-  "settings": {
-    "listsource": "datasource",
-    "displayformat": "dropdownlist",
-    "choices": "Choice 1\nChoice 2\nChoice 3",
-    "filterMode": "startswith",
-    "nativeMobile": "no",
-    "offlineCache": "no",
-    "list": {
-      "text": "Get Countries",
-      "name": "Get Countries",
-      "type": "STRUCTURE",
-      "filter": "England"
-    },
-    "valueField": "Country",
-    "displayField": "Country"
-  },
-  "class": null,
-  "customCssClass": null,
-  "usersValue": [],
-  "parentField": null,
-  "parentForm": "5af0c34e-28ea-4404-bba3-a8cf2df8eaff",
-  "datasource": "2fe2d2c7-4feb-4c92-ac4c-fed4623d2d6e"
-}
-```
-#### Process schema 
-Will be similar in the query success hook
-```json
-{
-  "processVersion": "1.1",
-  "processName": "connector-example",
-  "isCreated": false,
-  "isOfflineCreated": false,
-  "isOfflineUpdated": false,
-  "uniqueID": "45758d2b-f713-44c9-81dc-0e4cb7618902",
-  "title": "connector example",
-  "type": "Process",
-  "name": "connector-example",
-  "desc": "",
-  "version": "1.0",
-  "modified": "2022-11-14T09:33:46.254Z",
-  "created": "2022-11-11T15:13:28.108Z",
-  "status": "form 1",
-  "securityMode": null,
-  "enableSecurity": false,
-  "deleted": false,
-  "rejected": false,
-  "completed": false,
-  "settings": {
-    "keepRuleExecutionOrder": "yes",
-    "buttonDisplayFlag": true,
-    "mobileNav": "yes",
-    "comments": "",
-    "offline-tag": "45758d2b-f713-44c9-81dc-0e4cb7618902"
-  },
-  "partnerId": null,
-  "instanceIDFormat": null,
-  "customInstanceIDFormat": null,
-  "isPartner": false,
-  "isDraft": true,
-  "publish": false,
-  "allowNew": false,
-  "visMode": null,
-  "group": null,
-  "fieldsUpdated": null,
-  "modifiedBy": null,
-  "createdBy": null,
-  "currentForm": "5af0c34e-28ea-4404-bba3-a8cf2df8eaff",
-  "partner": null
-}
-```
-
-### Related to query success hook 
-
-#### Datasource schema
-
-#### Result schema
-```json
-{
-  "success": true,
-  "items": [
-    {
-      "Country": "England"
-    },
-    {
-      "Country": "Ireland"
-    }
-  ],
-  "meta": {
-    "cache-control": "no-cache,no-cache, no-store",
-    "content-length": "173",
-    "content-type": "application/json; charset=utf-8",
-    "expires": "-1,-1",
-    "pragma": "no-cache,no-cache"
-  }
-}
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

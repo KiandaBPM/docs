@@ -1,5 +1,5 @@
 ---
-title: "Low-Code development best practices"
+title: "Using the Ember Inspector"
 linkTitle: "Best practices"
 weight: 12
 typora-root-url: ..\..\..\static
