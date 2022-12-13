@@ -156,6 +156,13 @@
 &lt;li>
 &lt;p>When you have completed your edits, click on &lt;strong>Save Changes&lt;/strong> or click on the &lt;strong>Back&lt;/strong> button at any time to exit the page without saving.&lt;/p>
 &lt;/li>
+&lt;/ol>
+&lt;h2 id="saml-assertion-attributes">SAML assertion attributes&lt;/h2>
+&lt;p>For successful authentication the following attributes must be passed to Kianda.&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>NameID&lt;/strong> The existance of the NameID property following a emailAddress format is required&lt;/li>
+&lt;li>&lt;strong>UPN&lt;/strong> The upn (user principal name) is a recommended&lt;/li>
+&lt;li>&lt;strong>emailaddress&lt;/strong> property is recommended&lt;/li>
 &lt;/ol></description></item><item><title>Docs: Data residency</title><link>https://docs.kianda.com/docs/security/data-residency/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/data-residency/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>&lt;strong>Data residency&lt;/strong> refers to the actual physical location where data is held or stored for an organisation. For example data could be submitted by a user in Australia to a cloud application, but the servers that hold and process the data are in Europe, so the data residency in this case refers to the European location.&lt;/p>
