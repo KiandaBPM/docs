@@ -15,7 +15,7 @@ These process properties are visible:
 
 - Title - the title of process for example Training Request.
 
-- Page layout - you can click on **Wide** ![Wide button](/images/wide_resized.png)or **Narrow**  ![Narrow button](/images/narrow_resized.png) to change the layout.
+- Page layout - you can click on **Wide** <img src="/images/wide_orig.png" alt="Wide button" style="zoom:50%;" />or **Narrow**  <img src="/images/narrow_orig.png" alt="Narrow button" style="zoom:50%;" /> to change the layout.
 
   ***Process properties***
 
