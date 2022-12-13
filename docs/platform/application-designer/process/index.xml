@@ -110,6 +110,104 @@
 &lt;ul>
 &lt;li>To learn more about rules and controls that can be applied to forms go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">&lt;strong>Controls&lt;/strong>&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>.&lt;/li>
 &lt;li>To learn more about properties, go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/properties/">&lt;strong>Properties&lt;/strong>&lt;/a>.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Process settings copy</title><link>https://docs.kianda.com/docs/platform/application-designer/process/settings-copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/settings-copy/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>There are a number of properties and settings that you can implement to your process and forms.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Settings and properties&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/settingsprocess.png" alt="Process and form properties">&lt;/p>
+&lt;p>Settings are available from the right-hand pane and give you the ability to:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="#import-forms">Import processes&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>View &lt;a href="getting-started/create_process/version_history.md">Version history&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change &lt;a href="#process-settings">Process settings&lt;/a> &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Edit form information by selecting a form and clicking on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change a field to another field by clicking on &lt;strong>Change field&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Create a duplicate form by selecting a form, clicking on the &lt;strong>Clone&lt;/strong> button &lt;img src="https://docs.kianda.com/images/clone.png" alt="Clone button"> and then click on &lt;strong>Ok&lt;/strong>. A version called &amp;lsquo;Form Name Copy&amp;rsquo; is created and available to edit on the canvas. The &lt;strong>Clone&lt;/strong> button can also be used to clone form elements like controls or buttons.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Delete a form by selecting a form, clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>Ok&lt;/strong> after you have reviewed the form title and you are sure this is what you want to delete. Click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>View and edit &lt;a href="getting-started/create_process/properties.md">Form properties&lt;/a> and &lt;a href="getting-started/rcreate_process/rules">rules&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="process-settings">Process settings&lt;/h3>
+&lt;p>You can edit process settings by clicking on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings button"> in the right-hand pane.&lt;/p>
+&lt;p>Choose from the settings:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Process id settings&lt;/strong> - choose from a) Default or b) Custom and use a combination of [ProcessName]-[UniqueNumber]-[FieldName]&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable process security&lt;/strong> - if you tick the checkbox, can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Enable process security&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/process_security.png" alt="Process security">&lt;/p>
+&lt;p>The default setting is &lt;strong>Security users can create, assign to can update, everyone else can view&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>On load rules execution mode&lt;/strong> - options are a) Always b) When in edit mode or c) When open new. The default setting is &lt;strong>Always&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Hide form tabs&lt;/strong> - gives you the ability to hide form tabs, options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Hide left nav&lt;/strong> - gives you the ability to hide navigation elements, options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable anonymous sharing of forms&lt;/strong> - gives you the ability to share forms with people outside your organisation for example a feedback form or GDPR subject access request. Options are a) Yes or b) No. If you click on &lt;strong>Yes&lt;/strong> there are various options that you can add:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Message to display after anonymous submission&lt;/strong> - to add a display message&lt;/p>
+&lt;p>&lt;em>&lt;strong>Enabling anonymous sharing&lt;/strong>&lt;/em>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonlink.png" alt="Link for external users">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Hide form topbar&lt;/strong> - checkbox to hide the form topbar.&lt;/li>
+&lt;li>&lt;strong>Force log out&lt;/strong> - options are a) Yes or b) No to force user logout once the form is submitted&lt;/li>
+&lt;li>Click on &lt;strong>New link&lt;/strong> to generate a new anonymous form link to share with users and click on &lt;strong>Edit&lt;/strong> to change the link.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable mobile bottom navigation&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Instance delete settings&lt;/strong> - options are a) Any user can delete b) Creator can delete c) &amp;ldquo;Current form owner&amp;rdquo; can delete d) &amp;ldquo;Security users&amp;rdquo; can delete e) &amp;ldquo;Admins only&amp;rdquo; can delete. The default setting is &lt;strong>Creator can delete&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable form assignment notification&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Prevent closing instance with unsaved data&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Selected tab theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is selected.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Completed tab theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is completed.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Exit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/exitdesign.png" alt="Exit process"> to go back to the process list, the Save button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> to save your work, the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview"> to preview what you have created and the &lt;strong>Publish&lt;/strong> button &lt;img src="https://docs.kianda.com/images/publish.png" alt="Publish button"> to publish your work.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;ul>
+&lt;li>To learn more about rules and controls that can be applied to forms go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">&lt;strong>Controls&lt;/strong>&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>.&lt;/li>
+&lt;li>To learn more about properties, go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/properties/">&lt;strong>Properties&lt;/strong>&lt;/a>.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Process properties</title><link>https://docs.kianda.com/docs/platform/application-designer/process/properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/properties/</guid><description>
 &lt;p>Every process, form and control, such as text boxes and lists, will have &lt;strong>properties&lt;/strong> visible in the right-hand pane of the &lt;a href="platform/form_designer2.md">Designer&lt;/a> view.&lt;/p>
 &lt;h2 id="process-properties">Process properties&lt;/h2>

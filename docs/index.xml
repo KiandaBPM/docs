@@ -4035,6 +4035,104 @@ Your browser does not support the video tag.
 &lt;ul>
 &lt;li>To learn more about rules and controls that can be applied to forms go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">&lt;strong>Controls&lt;/strong>&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>.&lt;/li>
 &lt;li>To learn more about properties, go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/properties/">&lt;strong>Properties&lt;/strong>&lt;/a>.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Process settings copy</title><link>https://docs.kianda.com/docs/platform/application-designer/process/settings-copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/settings-copy/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>There are a number of properties and settings that you can implement to your process and forms.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Settings and properties&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/settingsprocess.png" alt="Process and form properties">&lt;/p>
+&lt;p>Settings are available from the right-hand pane and give you the ability to:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="#import-forms">Import processes&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>View &lt;a href="getting-started/create_process/version_history.md">Version history&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change &lt;a href="#process-settings">Process settings&lt;/a> &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Edit form information by selecting a form and clicking on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change a field to another field by clicking on &lt;strong>Change field&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Create a duplicate form by selecting a form, clicking on the &lt;strong>Clone&lt;/strong> button &lt;img src="https://docs.kianda.com/images/clone.png" alt="Clone button"> and then click on &lt;strong>Ok&lt;/strong>. A version called &amp;lsquo;Form Name Copy&amp;rsquo; is created and available to edit on the canvas. The &lt;strong>Clone&lt;/strong> button can also be used to clone form elements like controls or buttons.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Delete a form by selecting a form, clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>Ok&lt;/strong> after you have reviewed the form title and you are sure this is what you want to delete. Click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>View and edit &lt;a href="getting-started/create_process/properties.md">Form properties&lt;/a> and &lt;a href="getting-started/rcreate_process/rules">rules&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="process-settings">Process settings&lt;/h3>
+&lt;p>You can edit process settings by clicking on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings button"> in the right-hand pane.&lt;/p>
+&lt;p>Choose from the settings:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Process id settings&lt;/strong> - choose from a) Default or b) Custom and use a combination of [ProcessName]-[UniqueNumber]-[FieldName]&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable process security&lt;/strong> - if you tick the checkbox, can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Enable process security&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/process_security.png" alt="Process security">&lt;/p>
+&lt;p>The default setting is &lt;strong>Security users can create, assign to can update, everyone else can view&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>On load rules execution mode&lt;/strong> - options are a) Always b) When in edit mode or c) When open new. The default setting is &lt;strong>Always&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Hide form tabs&lt;/strong> - gives you the ability to hide form tabs, options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Hide left nav&lt;/strong> - gives you the ability to hide navigation elements, options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable anonymous sharing of forms&lt;/strong> - gives you the ability to share forms with people outside your organisation for example a feedback form or GDPR subject access request. Options are a) Yes or b) No. If you click on &lt;strong>Yes&lt;/strong> there are various options that you can add:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Message to display after anonymous submission&lt;/strong> - to add a display message&lt;/p>
+&lt;p>&lt;em>&lt;strong>Enabling anonymous sharing&lt;/strong>&lt;/em>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonlink.png" alt="Link for external users">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Hide form topbar&lt;/strong> - checkbox to hide the form topbar.&lt;/li>
+&lt;li>&lt;strong>Force log out&lt;/strong> - options are a) Yes or b) No to force user logout once the form is submitted&lt;/li>
+&lt;li>Click on &lt;strong>New link&lt;/strong> to generate a new anonymous form link to share with users and click on &lt;strong>Edit&lt;/strong> to change the link.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable mobile bottom navigation&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Instance delete settings&lt;/strong> - options are a) Any user can delete b) Creator can delete c) &amp;ldquo;Current form owner&amp;rdquo; can delete d) &amp;ldquo;Security users&amp;rdquo; can delete e) &amp;ldquo;Admins only&amp;rdquo; can delete. The default setting is &lt;strong>Creator can delete&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable form assignment notification&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Prevent closing instance with unsaved data&lt;/strong> - options are a) Yes or b) No&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Selected tab theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is selected.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Completed tab theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is completed.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Exit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/exitdesign.png" alt="Exit process"> to go back to the process list, the Save button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> to save your work, the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview"> to preview what you have created and the &lt;strong>Publish&lt;/strong> button &lt;img src="https://docs.kianda.com/images/publish.png" alt="Publish button"> to publish your work.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;ul>
+&lt;li>To learn more about rules and controls that can be applied to forms go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">&lt;strong>Controls&lt;/strong>&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>.&lt;/li>
+&lt;li>To learn more about properties, go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/properties/">&lt;strong>Properties&lt;/strong>&lt;/a>.&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Progressive Web Application (PWA)</title><link>https://docs.kianda.com/docs/low-code/pwa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/pwa/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>&lt;strong>Progressive web applications&lt;/strong> are the next great trend for the mobile web. As the Kianda platform is a progressive web application, you can access your businesses&amp;rsquo; Kianda workspace as if it were a mobile application.&lt;/p>
@@ -4347,96 +4445,4 @@ Your browser does not support the video tag.
 &lt;p>To start your no-code development journey, follow these simple steps:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/one.png" alt="1"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">&lt;strong>Plan your process&lt;/strong>&lt;/a>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/two.png" alt="2"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/">&lt;strong>Design and build your process&lt;/strong>&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/three.png" alt="3"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/publish-your-process/">&lt;strong>Publish your process&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Docs: Why choose low-code development?</title><link>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Kianda’s low code development environment provides developers with a graphical user interface to quickly create customised applications that can be used in automated processes. Kianda &lt;strong>Developer&lt;/strong> allows you to quickly build &lt;strong>reusable widgets&lt;/strong> allowing you to extend the functionality of the system. You can define the functionality or module that you want to define and deliver that module for inclusion in an application design, without the need to invent all the code from scratch. For example you could create a custom control that allows you to display images in a particular way, see &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">Custom field development&lt;/a>.&lt;/p>
-&lt;p>Kianda &lt;strong>Developer&lt;/strong> can be utilised to implement &lt;a href="https://docs.kianda.com/docs/low-code/webhooks/">HTTP requests&lt;/a> and &lt;a href="https://docs.kianda.com/docs/apis/">API&lt;/a> calls to allow for real-time data interactions, click on the links to get more details.&lt;/p>
-&lt;h2 id="why-choose-low-code-development">Why choose low-code development?&lt;/h2>
-&lt;p>Providing you have some software development and/or coding knowledge, low-code development can allow you to implement customised Kianda widgets to meet user-specific needs such as creating custom ‘Field’, ‘Rule’ or ‘Dashboard widget’ elements.&lt;/p>
-&lt;p>There are 16 predefined fields and 60 rules available for non-developers to use in a no-code form design GUI. However if these do not suit, then Kianda’s low-code development solution provides near limitless room for process expansion. As the Kianda platform offers access to any data source (including real-time synchronisation of the data) and integration with many other software tools and applications, the implementation of low-code can provide your business processes with extreme scalability and room for improvement.&lt;/p>
-&lt;p>You can also build upon pre-defined field, rule. data connector and dashboard code to offer the developer a shortcut in creating something new and beneficial for the organisation. For example, you can see a &lt;strong>rule widget user interface&lt;/strong> being designed below, using HTML, handlers, expressions and more.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/rulewidgetui150.PNG" alt="Rule widget UI">&lt;/p>
-&lt;h2 id="how-to-implement-low-code-development">How to implement low-code development&lt;/h2>
-&lt;p>If you are an experienced developer with an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role (see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>), you can create a new custom widget within Kianda by doing the following:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Navigate to &lt;strong>Administration &amp;gt; Developer &amp;gt; New widget&lt;/strong> to begin creating a new custom widget.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Under &lt;strong>Edit widget&lt;/strong>, you must fill out the following:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> – the name of your new custom widget&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Unique Id&lt;/strong> – the unique identifier used within the code to refer to this widget. It should be noted that this field is filled out automatically based on the entered Title, however it can be edited.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Widget Icon&lt;/strong> – the icon image that the custom widget will be associated with&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Widget type&lt;/strong> – choose from &lt;strong>Field&lt;/strong>, &lt;strong>Rule&lt;/strong>, and &lt;strong>Dashboard Widget&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-widget-holiday.jpg" alt="Edit widget screen">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>From here the following tabs are available:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Widget UI&lt;/strong> – a coding environment that allows you to define the widget user interface. The widget UI uses &lt;strong>HTML&lt;/strong> and &lt;strong>Handlebars&lt;/strong> templating language, that uses curly brackets {{}}. Go to &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a> for more information on Handlesbars.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-handlebars" data-lang="handlebars">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#204a87;font-weight:bold">#if&lt;/span> &lt;span style="color:#a40000">(&lt;/span>&lt;span style="color:#000">eq&lt;/span> &lt;span style="color:#000">displayMode&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;settings&amp;#34;&lt;/span>&lt;span style="color:#a40000">)&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;div class=&amp;#34;form-group&amp;#34;&amp;gt;
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;label class=&amp;#34;control-label&amp;#34;&amp;gt;QR Code result field&amp;lt;/label&amp;gt;
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &lt;/span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#000">field-picker&lt;/span> &lt;span style="color:#204a87;font-weight:bold">in&lt;/span>&lt;span style="color:#c4a000">cludes&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;[&amp;#34;fields/field-text&amp;#34;, &amp;#34;fields/field-textbox&amp;#34;]&amp;#39;&lt;/span> &lt;span style="color:#c4a000">required&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">true&lt;/span> &lt;span style="color:#c4a000">process&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">process&lt;/span> &lt;span style="color:#c4a000">value&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">field.settings.resultField&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000"> &amp;lt;/div&amp;gt;
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>For example in the sample code above, the condition is set so that a static HTML label &amp;lsquo;&lt;code>QR code result field&lt;/code>&amp;rsquo; captured in a form binds to a &lt;strong>Kianda component&lt;/strong> &lt;code>field-picker&lt;/code>. The &lt;code>field-picker&lt;/code> component shows a tree view at runtime that allows a user to pick a particular field from the form design.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Widget Code&lt;/strong> – a coding environment that allows you to define the logic and functions behind the custom widget. The widget code uses &lt;strong>JavaScript&lt;/strong>.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">display&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span>&lt;span style="color:#204a87;font-weight:bold">function&lt;/span>&lt;span style="color:#000;font-weight:bold">(){&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">field&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;field&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">process&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;field.process&amp;#39;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">warningMessage&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">process&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">findFieldByName&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;field.settings.warningMessage.name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">));&lt;/span> &lt;span style="color:#8f5902;font-style:italic">//Retrieve the warning message field
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#000">warningMessage&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">set&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;visible&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#204a87;font-weight:bold">false&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span> &lt;span style="color:#8f5902;font-style:italic">//Set warning messsage field to invisible as we are in display mode
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">&lt;/span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>For example in the sample code above, the function gets a field and a process from the component and retrieves the value held in a form warning message field and sets this to invisible in display mode.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>When you are finished editing, click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="update button"> to save the changes made. The newly created custom widget can be displayed in the view widget pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/developer-resources-view.jpg" alt="Main widget view">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the main view you can see who &lt;strong>modified&lt;/strong> the widget and when and the type of widget created, such as field or rule. You can also:&lt;/p>
-&lt;ul>
-&lt;li>use the &lt;strong>version history&lt;/strong> button &lt;img src="https://docs.kianda.com/images/version-history-btn.jpg" alt="version history button"> to view and manage version&lt;/li>
-&lt;li>use the &lt;strong>edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-widget-button.jpg" alt="Edit widget button"> to edit the name and details of the widget&lt;/li>
-&lt;li>use the &lt;strong>delete&lt;/strong> button &lt;img src="https://docs.kianda.com/images/delete-btn.jpg" alt="delete button"> to delete the widget. Clicking on this button which cause a pop-up to appear asking you to confirm the deletion by clicking on &lt;strong>OK&lt;/strong> or cancel by clicking on &lt;strong>Cancel&lt;/strong>.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;p>Depending on the type of newly created custom widget, they can be accessed by:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Field widget&lt;/strong> - navigate to &lt;strong>Administration &amp;gt; Designer &amp;gt; &lt;em>Your Process&lt;/em> &amp;gt; Controls.&lt;/strong> Under &lt;strong>Custom&lt;/strong>, your field widget will be displayed and is now ready for use. To learn more about field widgets, see &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">Custom field development&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Rule widget&lt;/strong> - navigate to &lt;strong>Administration &amp;gt; Designer &amp;gt; &lt;em>Your Process&lt;/em> &amp;gt; Add a rule.&lt;/strong> Under &lt;strong>Custom&lt;/strong>, your rule widget will be displayed and is now ready for use. To learn more about rule widgets, see &lt;a href="https://docs.kianda.com/docs/low-code/rule-widget/">Custom rule development&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Dashboard widget&lt;/strong> - navigate to &lt;strong>Dashboard &amp;gt; &lt;em>Your Dashboard&lt;/em> &amp;gt; Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit_orig.png" alt="edit current page button">. From there, click the drop-down list button and you will have access to the created custom dashboard widgets.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/custom-dashboard-widgets.jpg" alt="Custom dashboard widgets drop-down list">&lt;/p>
-&lt;p>To learn more about dashboard widgets, see &lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">Custom dashboard development&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p>
-&lt;p>To read more how to create the different widget types go to:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">Custom field development&lt;/a> to read about field widgets&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/rule-widget/">Custom rule development&lt;/a> to read about rule widgets&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">Custom dashboard development&lt;/a> to read about dashboard widgets&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/client-connector/">Client connector&lt;/a> to read about data connector widgets&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;p>&lt;img src="https://docs.kianda.com/images/three.png" alt="3"> &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/publish-your-process/">&lt;strong>Publish your process&lt;/strong>&lt;/a>&lt;/p></description></item></channel></rss>
