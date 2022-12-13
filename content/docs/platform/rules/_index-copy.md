@@ -2,6 +2,8 @@
 title: "Rules"
 weight: 4
 typora-root-url: ..\..\..\..\static
+toc_hide: true
+hide_summary: true
 ---
 
 Business rules are what makes Kianda forms come alive. They represent the actual actions users intend to perform when they interact with form components. There are 60 rules you can apply to forms, see [Rules list](#rules-list).
@@ -57,7 +59,15 @@ To get started with rule design:
 
 The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the **Edit rule** dialog box for each rule.
 
+### Rule level ###
+As introduced in the section above, rules can be added at process, form and control/field level.
+Whenever a rule is added, the rule dialog box will remind you where and at what level the rule is being applied, for example in the image below a **Send email** rule is being added to a button/control called **Submit**.
 
+![Where a rule is applied notice in an Edit rule dialog box](/images/rule-applied-dialog-box.jpg)
+
+**Note:** Make sure that you save the process before adding the rule so that the names of the processes, forms or controls is committed to the Kianda database so that the dialog box above can then 'apply' the name as shown above.
+
+The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the **Edit rule** dialog box for each rule.
 
 ## Rule order ###
 
