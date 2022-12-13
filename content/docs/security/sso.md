@@ -42,4 +42,8 @@ To enable Single-Sign-On, follow the steps below:
 
 7. When you have completed your edits, click on **Save Changes** or click on the **Back** button at any time to exit the page without saving. 
 
-   
+## SAML assertion attributes
+For successful authentication the following attributes must be passed to Kianda.
+1. **NameID** The existance of the NameID property following a emailAddress format is required
+2. **UPN** The upn (user principal name) is a recommended
+3. **emailaddress** property is recommended 
