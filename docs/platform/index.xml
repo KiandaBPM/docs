@@ -394,7 +394,7 @@ Your browser does not support the video tag.
 &lt;p>There are two key principles to consider when working with forms:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;a href="#rule-design">Rule design&lt;/a> - what type of rule you are going to apply and where, for example to a button, field or form&lt;/p>
+&lt;p>&lt;a href="#rule-design">Rule design&lt;/a> - what type of rule you are going to apply and where, for example you can apply a rule at field/control level, form level and process level. For the latter the rule will execute &amp;lsquo;onload&amp;rsquo; that is when the process instance is initiated.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;a href="#rule-order">Rule order&lt;/a> - if there are several rules attached to an item like a button, then the order of execution is important and can be modified to suit your needs.&lt;/p>
@@ -425,7 +425,7 @@ Your browser does not support the video tag.
 &lt;p>Click on an existing process or create a new process by going to &lt;strong>Administration&lt;/strong> in the left-hand side menu and then click on &lt;strong>Designer&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>For existing processes and forms, decide which process, form or field you will apply the rule to by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button"> for example a form Training Approval or Submit button. For new processes, add in forms and fields and select an element to add a rule to.&lt;/p>
+&lt;p>For existing processes and forms, decide which &lt;strong>process&lt;/strong>, &lt;strong>form&lt;/strong> or &lt;strong>field&lt;/strong> you will apply the rule to by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button"> for example a form Training Approval or Submit button. For new processes, add in forms and fields and select an element to add a rule to.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/formvsbutton.png" alt="Edit mode for forms and fields">&lt;/p>
 &lt;/li>
 &lt;li>
