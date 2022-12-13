@@ -316,7 +316,7 @@
 &lt;p>You will learn more about the Field properties associated with Panels in &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/panel#how-to-edit-panel-field-properties">How to edit Panel Field properties&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Name (unique)&lt;/strong> - This is a unique name for the Panel field.&lt;/p>
+&lt;p>&lt;strong>Name (unique)&lt;/strong> - This is a unique name for the Panel field and inherits a camel case version of the entered Title.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user to complete the Panel.&lt;/p>
@@ -324,6 +324,23 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-help-text.jpg" alt="Panel help text">&lt;/p>
 &lt;p>If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the Panel title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-help-text-shown.jpg" alt="Panel help text displayed">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the panel to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Card design?&lt;/strong> - This option allows you to add a border radius to your panel, which rounds the edges. If you select the &lt;strong>Yes&lt;/strong> radio button, you can choose between defining:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>The total border radius in pixels by clicking the all corners button &lt;img src="https://docs.kianda.com/images/card-design-all-symbol.jpg" alt="Card design all symbol"> and entering a value into the input field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Each corner&amp;rsquo;s border radius individually in pixels by clicking on the individual corners button &lt;img src="https://docs.kianda.com/images/card-design-individual-symbol.jpg" alt="individual corners button"> and entering values for each corner in the four input fields&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/card-design-individual-pixels.jpg" alt="individual corners border radius">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>This feature can give your forms an added level of unique styling.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/card-detail.jpg" alt="card detail">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout columns&lt;/strong> - Here you can decide how wide you want your Panel to be in your form - choose from 1 to 12 columns in width. For example click half-way across the blue bar to create a panel that is 6 columns wide, or click at the far right side of the blue bar to create a column that is 12 columns wide.&lt;/p>
