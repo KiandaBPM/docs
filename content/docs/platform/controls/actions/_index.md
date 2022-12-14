@@ -49,7 +49,7 @@ To add an **Action field** to a Kianda form:
    - A **New field - Image** dialog box opens automatically, giving you a range of options for your new **Image field**. 
    - Once you complete this dialog box and click **OK**, the new Image field is inserted into your form. To learn more about the Image field, go to [Image control](/docs/platform/controls/actions/image/).
 
-	![Image dialog box](/images/image-dialog.jpg)
+	![Image dialog box](/images/image-dialog2.jpg)
 
 
 
@@ -57,9 +57,9 @@ To add an **Action field** to a Kianda form:
 
 To edit whatever type of **Action field** you have added to your form:
 
-1. Select the field (by either clicking on the field name or on the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+1. Select the field (by either clicking on the field name or on the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
 
-2. Click on the **Edit Field** button (Pen icon) ![Pen button](/images/penicon.png)
+2. Click on the **Edit Field** button (Pen icon) ![Pen button](/images/penicon.png).
 
 3. The **Edit Field** dialog box will open, giving you a different range of options to make changes to the Action field - such as changing the Title of the field - depending on the type of Action field you are working with.
 
@@ -67,7 +67,7 @@ To edit whatever type of **Action field** you have added to your form:
 
 To move an **Action field**, simply:
 
-1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png). 
 
 2. Drag and drop the Action field wherever you want to move it within your form.
 
@@ -79,8 +79,8 @@ To move an **Action field**, simply:
 
 To delete an **Action field** from your form:
 
-1. Select the Action field (by either clicking on the field's title or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+1. Select the Action field (by either clicking on the field's title or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png). 
 3. Click on **OK** to confirm.
 
 

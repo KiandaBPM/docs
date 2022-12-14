@@ -36,29 +36,29 @@ To add a **Link field** to a Kianda form:
 
 6. A **New field - Link** dialog box will automatically open, giving you options for your new Link field.
 
-   ![Link field dialog box](/images/link-dialog.jpg)
+   ![Link field dialog box](/images/link-dialog2.jpg)
 
-   The options available in the **New field - Link** dialog box include:
+7. **Title** - You can change the name of the Link field from the default '**Link 1**'. In our example, we will change the title to 'Employee Handbook'.
 
-   - **Title** - You can change the name of the Link field from the default '**Link 1**'. In our example, we will change the title to 'Employee Handbook'.
+8. **Name (Unique)** - This is a unique name for the new field and inherits a camel case version of the entered Title.
 
-   - **Name (Unique)** - This is a unique name for the new field.
+9. **Help text** - You can insert text to help the form user. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-   - **Help text** - You can insert text to help the form user. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
+   In our example, we could insert this help text:
 
-     In our example, we could insert this help text:
+   ![Link field help text "Click here to open the latest version of the Employee Handbook"](/images/link-help-text.jpg)
 
-     ![Link field help text "Click here to open the latest version of the Employee Handbook"](/images/link-help-text.jpg)
+   The user will then be able to view this help text by clicking on the question mark icon ![Help text icon](/images/help-icon.jpg) next to the Link field title:
 
-     The user will then be able to view this help text by clicking on the question mark icon ![Help text icon](/images/help-icon.jpg) next to the Link field title:
+   ![Link field sample help text](/images/link-help-text-example.jpg)
 
-     ![Link field sample help text](/images/link-help-text-example.jpg)
+10. **Custom CSS class name** - You can type the name of a CSS class to allow the Link to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
-   - **Link target** - You can choose to have the link either open as a **New tab** or open in the **Same tab** the form user is currently in.
+11. **Link target** - You can choose to have the link either open as a **New tab** or open in the **Same tab** the form user is currently in.
 
-   - **Default URL** - This is where you can insert the URL you want the user to be brought to when they click on the Link field.
+12. **Default URL** - This is where you can insert the URL you want the user to be brought to when they click on the Link field.
 
-7. Once you complete the **New field - Link** dialog box, click **OK** and the new **Link field** is added to your form. 
+13. Once you complete the **New field - Link** dialog box, click **OK** and the new **Link field** is added to your form. 
 
    In our example, if we changed the default Link field title to 'Employee Handbook'  and inserted help text (as shown previously), our new Link field could look like this when added to our 'Performance Plan' form:
 
@@ -70,21 +70,21 @@ To add a **Link field** to a Kianda form:
 
 To edit a **Link field**:
 
-1. Select the Link field (by either clicking on the field name or on the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+1. Select the Link field (by either clicking on the field name or on the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
 
-2. Click on the **Edit Field** button (Pen icon) ![Pen button](/images/penicon.png)
+2. Click on the **Edit Field** button (Pen icon) ![Pen button](/images/penicon.png).
 
    ![Edit Link field](/images/link-edit.jpg)
 
 3. The **Edit Field - Link** dialog box will open (with the Link field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the **New field - Link** dialog box (as already discussed in [How to get started](/docs/platform/controls/actions/link#how-to-get-started)).
 
-   ![Link field Edit field dialog box](/images/link-edit-dialog.jpg)
+   ![Link field Edit field dialog box](/images/link-edit-dialog2.jpg)
 
    
 
 To move a **Link field**, simply:
 
-1. Select the Link field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+1. Select the Link field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
 
 2. Drag and drop the Link field wherever you want to move it within your form.
 
@@ -96,8 +96,8 @@ To move a **Link field**, simply:
 
 To delete a **Link field** from your form:
 
-1. Select the Link field (by either clicking on its title or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+1. Select the Link field (by either clicking on its title or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png).
 3. Click on **OK** to confirm.
 
 
