@@ -26,25 +26,36 @@
 &lt;/li>
 &lt;li>
 &lt;p>A &lt;strong>New field - Button&lt;/strong> dialog box will automatically open, giving you options for your new Button field:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog.jpg" alt="Button field dialog box">&lt;/p>
-&lt;p>The options available in the &lt;strong>New field - Button&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog-new.jpg" alt="Button field dialog box">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the Button from the default &amp;lsquo;&lt;strong>Button 1&lt;/strong>&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the new field.&lt;/p>
+&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the Button and inherits a camel case version of the entered Title.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Button to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Button size&lt;/strong> - You can choose the size of the Button ranging from XL (extra large) to XS (extra small). By default, the Button size is medium.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Block button&lt;/strong> - If you choose &lt;strong>Yes&lt;/strong>, the button will span the entire width of the button&amp;rsquo;s allocated space. If you choose &lt;strong>No&lt;/strong>, an additional field called &lt;strong>Align button&lt;/strong> will appear that allows you to select what direction the Button aligns to. By default, the Button is aligned to the center.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/align-button.jpg" alt="align button">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Color scheme&lt;/strong> - You can choose a colour for your new Button field from six options.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Icon&lt;/strong> - You can choose an icon to appear on your Button by clicking on the down arrow to the right and scrolling to select the icon you want to use (or can opt not to add an icon).&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog-icon.jpg" alt="Button dialog box icon options">&lt;/p>
 &lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog-icon.jpg" alt="Button dialog box icon options">&lt;/p>
+&lt;ol start="15">
 &lt;li>
 &lt;p>&lt;strong>Show in form body&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want your Button to be shown in the Form.&lt;/p>
 &lt;/li>
@@ -73,38 +84,38 @@
 &lt;/ul>
 &lt;p>Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda. To learn more about how you can create anonymous links to a form that can be shared with external users, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/anonymous-form-link/">Anonymous form link&lt;/a>.&lt;/p>
 &lt;/li>
-&lt;/ul>
-&lt;/li>
 &lt;li>
 &lt;p>Once you complete the &lt;strong>New field - Button&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong> and the new &lt;strong>Button field&lt;/strong> is added to your form.&lt;/p>
-&lt;p>In our example, if we changed the Button field title to &amp;lsquo;Schedule Meeting&amp;rsquo; and chose a green colour scheme and &amp;lsquo;people&amp;rsquo; icon, our new Button could look like this when added to our &amp;lsquo;Performance Plan&amp;rsquo; form:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/button-example-meeting.jpg" alt="Button example titled Schedule Meeting">&lt;/p>
 &lt;/li>
+&lt;/ol>
+&lt;p>In our example, if we changed the Button field title to &amp;lsquo;Schedule Meeting&amp;rsquo; and chose a green colour scheme and &amp;lsquo;people&amp;rsquo; icon, set button size to small and aligned the button to the right, our new Button could look like this when added to our &amp;lsquo;Performance Plan&amp;rsquo; form:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-example-meeting.jpg" alt="Button example titled Schedule Meeting">&lt;/p>
+&lt;ul>
 &lt;li>
 &lt;p>You may then decide to add rules to your new &lt;strong>Button field&lt;/strong> - to learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>. The rules we add will be executed in the order in which they are listed under &lt;strong>Rules&lt;/strong> in the right hand pane.&lt;/p>
 &lt;p>For example, we could add a series of rules to our new &lt;strong>Schedule Meeting&lt;/strong> button:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/button-example-rules.jpg" alt="Button field example with rules">&lt;/p>
 &lt;p>In our example, the sixth rule is a Meeting Request rule which will mean that, once the &lt;strong>Schedule Meeting&lt;/strong> button is clicked, an automated email will be sent to the employee scheduling a performance review meeting - to learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/meeting-request/">Meeting request rule&lt;/a>.&lt;/p>
 &lt;/li>
-&lt;/ol>
+&lt;/ul>
 &lt;h3 id="how-to-edit-move-and-delete-button-fields">How to edit, move and delete Button fields&lt;/h3>
 &lt;p>To edit a &lt;strong>Button field&lt;/strong>:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select the Button field (by either clicking on the field name or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/p>
+&lt;p>Select the Button field (by either clicking on the field name or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">&lt;/p>
+&lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Edit Field&lt;/strong> dialog box will open (with the Button title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Button&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button#how-to-get-started">How to get started&lt;/a>).&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/button-edit-field-dialog.jpg" alt="Button edit field dialog box">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog.jpg" alt="Button field dialog box">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>To move a &lt;strong>Button&lt;/strong>, simply:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select the Button&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/p>
+&lt;p>Select the Button&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Drag and drop the Button wherever you want to move it within your form.&lt;/p>
@@ -114,8 +125,8 @@
 &lt;/ol>
 &lt;p>To delete a &lt;strong>Button&lt;/strong> from your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the Button (by either clicking on the Button&amp;rsquo;s title or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Select the Button (by either clicking on the Button&amp;rsquo;s title or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
 &lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-view-and-edit-button-field-properties">How to view and edit Button field properties&lt;/h3>
