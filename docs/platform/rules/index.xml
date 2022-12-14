@@ -301,7 +301,7 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;p>As introduced in the section above, rules can be added at process, form and control/field level.
 Whenever a rule is added, the rule dialog box will remind you where and at what level the rule is being applied, for example in the image below a &lt;strong>Send email&lt;/strong> rule is being added to a button/control called &lt;strong>Submit&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-applied-dialog-box.jpg" alt="Where a rule is applied notice in an Edit rule dialog box">&lt;/p>
-&lt;p>&lt;strong>Note:&lt;/strong> Make sure that you save the process before adding the rule so that the names of the processes, forms or controls is committed to the Kianda database so that the dialog box above can then &amp;lsquo;apply&amp;rsquo; the name as shown above.&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong> Make sure that you save the process before adding the rule so that the names of the processes, forms or controls are committed to the Kianda database so that the dialog box above can then retrieve the name for use as shown above.&lt;/p>
 &lt;p>The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the &lt;strong>Edit rule&lt;/strong> dialog box for each rule.&lt;/p>
 &lt;h2 id="rule-order">Rule order&lt;/h2>
 &lt;p>If there is more than one rule for an item like a field or button, then the order of execution must be considered.&lt;/p>
