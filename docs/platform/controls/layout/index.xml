@@ -297,17 +297,14 @@
 &lt;p>To edit a &lt;strong>Panel&lt;/strong>:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select the field&lt;/p>
+&lt;p>Select the field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/p>
+&lt;p>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-edit.jpg" alt="Select Panel to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - Panel&lt;/strong> dialog box will open, enabling you to choose from a range of options:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-edit-dialog.jpg" alt="Edit Panel dialog box">&lt;/p>
-&lt;p>The options within the &lt;strong>Edit field - Panel&lt;/strong> dialog box include:&lt;/p>
 &lt;/li>
-&lt;/ol>
-&lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - You can change the title of the Panel from the default &amp;lsquo;&lt;strong>Panel 1&lt;/strong>&amp;rsquo;.&lt;/p>
 &lt;p>In our example, after inserting two panels into our form, we could edit each of them in turn and change their titles to &amp;lsquo;Employee Details&amp;rsquo; and &amp;lsquo;Training Details&amp;rsquo;.&lt;/p>
@@ -335,12 +332,12 @@
 &lt;p>The total border radius in pixels by clicking the all corners button &lt;img src="https://docs.kianda.com/images/card-design-all-symbol.jpg" alt="Card design all symbol"> and entering a value into the input field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Each corner&amp;rsquo;s border radius individually in pixels by clicking on the individual corners button &lt;img src="https://docs.kianda.com/images/card-design-individual-symbol.jpg" alt="individual corners button"> and entering values for each corner in the four input fields&lt;/p>
+&lt;p>Each corner&amp;rsquo;s border radius individually in pixels by clicking on the individual corners button &lt;img src="https://docs.kianda.com/images/card-design-individual-symbol.jpg" alt="individual corners button"> and entering values for each corner in the four input fields.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/card-design-individual-pixels.jpg" alt="individual corners border radius">&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;p>This feature can give your forms an added level of unique styling.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/card-detail.jpg" alt="card detail">&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout columns&lt;/strong> - Here you can decide how wide you want your Panel to be in your form - choose from 1 to 12 columns in width. For example click half-way across the blue bar to create a panel that is 6 columns wide, or click at the far right side of the blue bar to create a column that is 12 columns wide.&lt;/p>
@@ -373,21 +370,21 @@
 &lt;/ul>
 &lt;p>Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda. To learn more about how you can create anonymous links to a form that can be shared with external users, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/anonymous-form-link/">Anonymous form link&lt;/a>.&lt;/p>
 &lt;/li>
-&lt;/ul>
-&lt;ol start="3">
-&lt;li>Once you are finished editing the &lt;strong>Panel&lt;/strong> in the &lt;strong>Edit field&lt;/strong> dialog box, click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/li>
+&lt;li>
+&lt;p>Once you are finished editing the &lt;strong>Panel&lt;/strong> in the &lt;strong>Edit field&lt;/strong> dialog box, click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h4 id="how-to-add-fields-to-a-panel">How to add fields to a Panel&lt;/h4>
 &lt;p>Once you have inserted a Panel and completed the &lt;strong>Edit field - Panel&lt;/strong> dialog box, you can then start to add the elements you need into the Panel - such as text boxes, lists, tables, number fields or date fields. Go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a> to see the full list of fields available and &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to learn about different categories of rules that can be applied.&lt;/p>
 &lt;p>To add fields to your Panel:&lt;/p>
 &lt;ol>
-&lt;li>Select the Panel (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) so that the &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible&lt;/li>
+&lt;li>Select the Panel (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) so that the &lt;strong>Edit field&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit form button"> is visible.&lt;/li>
 &lt;li>Click on whatever type of field you want to insert from the &lt;strong>Controls&lt;/strong> menu in the left-hand pane.&lt;/li>
 &lt;/ol>
 &lt;p>Let&amp;rsquo;s take the example of our first Panel, titled &amp;lsquo;&lt;strong>Employee Details&lt;/strong>&amp;rsquo;. To add a Text box field to this Panel we can:&lt;/p>
 &lt;ol>
 &lt;li>Select the Panel by clicking on the &amp;lsquo;Employee Details&amp;rsquo; field Drag handle.&lt;/li>
-&lt;li>Click on &lt;strong>Controls&lt;/strong>&amp;gt;&lt;strong>Input&lt;/strong>&amp;gt;&lt;strong>Text box&lt;/strong> in the &lt;strong>Controls&lt;/strong> menu to insert a Text box. A pop-up message says &amp;lsquo;Field added&amp;rsquo; and a new Text box, titled &amp;lsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;, is added to the &amp;lsquo;Employee Details&amp;rsquo; panel:&lt;/li>
+&lt;li>Click on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Input&lt;/strong> &amp;gt; &lt;strong>Text box&lt;/strong> in the &lt;strong>Controls&lt;/strong> menu to insert a Text box. A pop-up message says &amp;lsquo;Field added&amp;rsquo; and a new Text box, titled &amp;lsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;, is added to the &amp;lsquo;Employee Details&amp;rsquo; panel:&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-insert-fields.jpg" alt="Insert text box field into a Panel">&lt;/p>
 &lt;ol start="3">
@@ -397,14 +394,14 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-example-mobile.jpg" alt="Panel example on mobile phone">&lt;/p>
 &lt;p>To see how your form or field will look on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by using the &lt;strong>Preview&lt;/strong> option which can be opened by clicking the play button icon &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">. You also have the options to see how it will look on a PC or tablet.&lt;/p>
 &lt;h4 id="how-to-move-a-panel">How to move a Panel&lt;/h4>
-&lt;p>To move a Panel, simply&lt;/p>
+&lt;p>To move a Panel, simply:&lt;/p>
 &lt;ol>
-&lt;li>Select the Panel field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Select the Panel field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/li>
 &lt;li>Drag and drop it wherever you want to move it within your form.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/panel-move.jpg" alt="Move a Panel">&lt;/p>
 &lt;h4 id="how-to-delete-a-panel">How to delete a Panel&lt;/h4>
-&lt;p>To delete a Panel from your form&lt;/p>
+&lt;p>To delete a Panel from your form:&lt;/p>
 &lt;ol>
 &lt;li>Select it (by either clicking on the Panel field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">), click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
 &lt;li>Click on &lt;strong>OK&lt;/strong> to confirm or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/li>
@@ -417,8 +414,8 @@
 &lt;ul>
 &lt;li>&lt;strong>Field type&lt;/strong> - the type of field. In this case, Panel.&lt;/li>
 &lt;li>&lt;strong>Title&lt;/strong> - the title of the Panel field (default name &amp;lsquo;&lt;strong>Panel 1&lt;/strong>&amp;rsquo; unless you change it). In this case, &amp;lsquo;Employee Details&amp;rsquo;.&lt;/li>
-&lt;li>&lt;strong>Show title&lt;/strong> - this is selected, which means that the Panel title will be shown in the form&lt;/li>
-&lt;li>&lt;strong>Visible&lt;/strong> - this is selected, so the Panel will be visible to form users&lt;/li>
+&lt;li>&lt;strong>Show title&lt;/strong> - this is selected, which means that the Panel title will be shown in the form.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - this is selected, so the Panel will be visible to form users.&lt;/li>
 &lt;li>&lt;strong>Layout&lt;/strong> - the width of the blue bars can be adjusted to change the width of the Richtext field on PC or mobile. To view the mobile width, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right of the Layout option.&lt;/li>
 &lt;/ul>
 &lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
