@@ -65,7 +65,7 @@ Whenever a rule is added, the rule dialog box will remind you where and at what 
 
 ![Where a rule is applied notice in an Edit rule dialog box](/images/rule-applied-dialog-box.jpg)
 
-**Note:** Make sure that you save the process before adding the rule so that the names of the processes, forms or controls is committed to the Kianda database so that the dialog box above can then 'apply' the name as shown above.
+**Note:** Make sure that you save the process before adding the rule so that the names of the processes, forms or controls are committed to the Kianda database so that the dialog box above can then retrieve the name for use as shown above.
 
 The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the **Edit rule** dialog box for each rule.
 
