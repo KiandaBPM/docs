@@ -58,33 +58,36 @@ The **Richtext field** is a very flexible option to use for the body of the pop-
 
 2. A  **New field - Richtext** dialog box will open:
 
-   ![Richtext dialog box](/images/richtext-dialog.jpg)
+   ![Richtext dialog box](/images/richtext-dialog2.jpg)
 
-	The options within the **New field - Richtext** dialog box include:
+	
 
-- **Title** - You can change the title of the Richtext field from the default '**Richtext 1**'. **Note**: It is the **Dialog field** title that will show as the heading of the pop-up Dialog, not the Richtext title.
+3. **Title** - You can change the title of the Richtext field from the default '**Richtext 1**'. **Note**: It is the **Dialog field** title that will show as the heading of the pop-up Dialog, not the Richtext title.
 
-- **Name** - This is a unique name for the field.
+4. **Name** - This is a unique name for the field and inherits a camel case version of the entered Title.
 
-- **Helptext** - You can insert text to help the form user to complete the field - if you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted. This option is not as relevant to the Dialog field as it is to other fields, as the Dialog field is not a field the user needs to complete.
+5. **Helptext** - You can insert text to help the form user to complete the field - if you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted. This option is not as relevant to the Dialog field as it is to other fields, as the Dialog field is not a field the user needs to complete.
+6. **Custom CSS class name** - You can type the name of a CSS class to allow the Richtext to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
-- **Richtext** - Type the text that you want to be shown as the main body text in the pop-up Dialog into this field and format it as you want - there are options to highlight text, change the font style and font colour, bold, underline, increase or decrease font size, use a bulleted or numbered list, format the text to align left/centre/right, insert a table or a link, insert an image or to switch to code view. 
+7. **Richtext** - Type the text that you want to be shown as the main body text in the pop-up Dialog into this field and format it as you want - there are options to highlight text, change the font style and font colour, bold, underline, increase or decrease font size, use a bulleted or numbered list, format the text to align left/centre/right, insert a table or a link, insert an image or to switch to code view. 
 
-- **Colour scheme** - You can choose from five colour options for the colour that will appear in the background behind the Dialog richtext body text.
+8. **Colour scheme** - You can choose from five colour options for the colour that will appear in the background behind the Dialog richtext body text.
 
-  For our example of the Training Request form, we will insert text to remind the employee completing the form to check that they have completed all fields before submitting it and will choose an orange background colour:
+   For our example of the Training Request form, we will insert text to remind the employee completing the form to check that they have completed all fields before submitting it and will choose an orange background colour:
 
-  ![Example richtext for Dialog field](/images/dialog-richtext-example.jpg)
+   ![Example richtext for Dialog field](/images/dialog-richtext-example.jpg)
 
-3. Once you have completed the **New field - Richtext** dialog box, click **OK**. You will now see the body text of your Dialog field in the Richtext field you added to it:
 
-	![Dialog example](/images/dialog-example.jpg)
 
-4. To preview how the pop-up Dialog will look tp users, either click on the Dialog **Preview** button ![Dialog field preview button](/images/dialog-preview-button.jpg) or click on the eye symbol ![Eye symbol](/images/eye-symbol.jpg):
+9. Once you have completed the **New field - Richtext** dialog box, click **OK**. You will now see the body text of your Dialog field in the Richtext field you added to it:
 
-	![Preview example of Dialog](/images/dialog-example-preview.jpg)
+![Dialog example](/images/dialog-example.jpg)
 
-5. Click on **Close** or **OK** to close the preview.
+10. To preview how the pop-up Dialog will look tp users, either click on the Dialog **Preview** button ![Dialog field preview button](/images/dialog-preview-button.jpg) or click on the eye symbol ![Eye symbol](/images/eye-symbol.jpg):
+
+![Preview example of Dialog](/images/dialog-example-preview.jpg)
+
+11. Click on **Close** or **OK** to close the preview.
 
 ### How to edit, move and delete Modal dialog fields
 
@@ -96,15 +99,15 @@ As we go through the options available for editing, moving or deleting a Modal d
 
 To edit a **Modal dialog field**:
 
-1. Select the Dialog field (by either clicking on the drag handle ![Drag handle button](/images/draghandlewhite-frame.png) or clicking in the area of the Dialog field)
+1. Select the Dialog field (by either clicking on the drag handle ![Drag handle button](/images/draghandlewhite-frame.png) or clicking in the area of the Dialog field).
 
-2. Then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
+2. Then click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
 
 	![Select Dialog to edit](/images/dialog-select-to-edit.jpg)
 
 3. The **Edit field - Dialog** dialog box will open, enabling you to choose from a range of options (we already changed the Dialog field title to 'Reminder' so this name will be shown in the dialog box name):
 
-	![Edit Modal Dialog field dialog box](/images/dialog-dialog-box.jpg)
+	![Edit Modal Dialog field dialog box](/images/dialog-dialog-box2.jpg)
 
 	The options within the **Edit field - Dialog** dialog box include:
 
@@ -113,6 +116,8 @@ To edit a **Modal dialog field**:
 - **Name** - This is a unique name for the field
 
 - **Help text** - You can insert text to help the form user. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted. This option is less relevant for the Dialog field as it is for other field types, as the Dialog field is not a field the user needs to complete.
+
+- **Custom CSS class name** - You can type the name of a CSS class to allow the Dialog to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
 - **Hide "OK" button** - Select **Yes** if you do not want the user to see an 'OK' button at the bottom of the Dialog message.
 
@@ -132,8 +137,8 @@ To edit a **Modal dialog field**:
 
 To move a Modal dialog field:
 
-1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
-2. Drag and drop it wherever you want to move it within your form
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
+2. Drag and drop it wherever you want to move it within your form.
 
 	![Move a Dialog field](/images/dialog-example-move.jpg)
 
@@ -143,8 +148,8 @@ To move a Modal dialog field:
 
 To delete a Modal dialog field from your form:
 
-1. Select it (by either clicking on the Panel field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+1. Select it (by either clicking on the Panel field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png).
 3. Click on **OK** to confirm the deletion (or click **Cancel** if you wish to cancel the deletion).
 
 

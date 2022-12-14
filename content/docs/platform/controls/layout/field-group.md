@@ -24,37 +24,39 @@ For example, in an Education Request Process - where employees can request train
 
 4. A **New field - Field group** dialog box will open with a range of options you can choose from for your new Field group: 
 
-   ![New field group dialog box](/images/field-group-dialog.jpg)
+   ![New field group dialog box](/images/field-group-dialog2.jpg)
 
-   ​	The options available in the **New field - Field group** dialog box include:
+   
 
-   - **Title** - You can change the title of the Field group from the default title of '**Field group 1**'
+5. **Title** - You can change the title of the Field group from the default title of '**Field group 1**'.
 
-   - **Name** - This is a unique name for the field
+6. **Name** - This is a unique name for the field and inherits a camel case version of the entered Title.
 
-   - **Help text** - You can insert text to help the form user to complete the Field group - if you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
+7. **Help text** - You can insert text to help the form user to complete the Field group - if you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-   - **Select fields to group or mirror** - You can choose one or more fields from the current process to group or mirror by clicking on the field or fields to select them. You can expand forms (listed with a plus sign beside them) to view all of the fields within them by clicking on the form title in the list. Select as many fields as you want.
+8. **Custom CSS class name** - You can type the name of a CSS class to allow the Field group to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
-     In our example, we will select three fields in the 'Training Request' form that we want to be shown on the 'Training Approval' form - Employee Name, Type of Training and Reason:
-     
-     ![Select fields to mirror in Field group](/images/field-group-select-fields-mirror.jpg)
+9. **Select fields to group or mirror** - You can choose one or more fields from the current process to group or mirror by clicking on the field or fields to select them. You can expand forms (listed with a plus sign beside them) to view all of the fields within them by clicking on the form title in the list. Select as many fields as you want.
 
-   - **Grouped fields** - The field(s) you select will automatically be grouped together in the **Grouped fields** section at the bottom of the dialog box - click on Grouped fields so that it expands to show the list of fields you have chosen:
+   In our example, we will select three fields in the 'Training Request' form that we want to be shown on the 'Training Approval' form - Employee Name, Type of Training and Reason:
 
-      ![Field group grouped fields](/images/field-group-grouped-fields.jpg)
-      		
-      	The fields you have chosen being 'grouped' together will mean that you will be able to edit them and move them around your form as a group (rather than as individual fields). 
-      		
-      	If there is a field or fields you do not want to be grouped, simply click on the **Bin/Trash icon** ![Grouped fields blue bin icon](/images/field-group-blue-bin.jpg) to the right and that field will no longer be grouped with the others. 
-      		
-      	You can also change the order of the fields within the Field group by simply clicking on the field's **drag handle** button and dragging and dropping the field where you want it to be.
-      	
-      	![Move field within Field group](/images/field-group-grouped-move.jpg)
-      		
-      	Note that selected fields grouped under the current field group are not copied only referenced.
+   ![Select fields to mirror in Field group](/images/field-group-select-fields-mirror.jpg)
 
-5. Once you have completed the **New field - Field group** dialog box, click **OK** and the new **Field group** will be added to your form. 
+10. **Grouped fields** - The field(s) you select will automatically be grouped together in the **Grouped fields** section at the bottom of the dialog box - click on Grouped fields so that it expands to show the list of fields you have chosen:
+
+    ![Field group grouped fields](/images/field-group-grouped-fields.jpg)
+
+    The fields you have chosen being 'grouped' together will mean that you will be able to edit them and move them around your form as a group (rather than as individual fields). 
+    	
+    If there is a field or fields you do not want to be grouped, simply click on the **Bin/Trash icon** ![Grouped fields blue bin icon](/images/field-group-blue-bin.jpg) to the right and that field will no longer be grouped with the others. 
+    	
+    You can also change the order of the fields within the Field group by simply clicking on the field's **drag handle** button and dragging and dropping the field where you want it to be.
+
+    ![Move field within Field group](/images/field-group-grouped-move.jpg)
+    	
+    Note that selected fields grouped under the current field group are not copied only referenced.		
+
+11. Once you have completed the **New field - Field group** dialog box, click **OK** and the new **Field group** will be added to your form. 
 
   By default, the **Title** of the new Field group will not be shown (unless you choose to display it, by selecting the **Show title** checkbox in the Field properties menu to the right). 
 
@@ -68,27 +70,27 @@ For example, in an Education Request Process - where employees can request train
 
 To edit a **Field group**:
 
-1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) 
-2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)). 
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
 
 ![Select field group to edit](/images/field-group-select-to-edit.jpg)
 
-The **Edit field - Field group** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - Field group** dialog box (as already discussed in [How to get started](/docs/platform/controls/layout/field-group#how-to-get-started)).
+3. The **Edit field - Field group** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - Field group** dialog box (as already discussed in [How to get started](/docs/platform/controls/layout/field-group#how-to-get-started)).
 
-![Field group edit dialog box](/images/field-group-edit-dialog.jpg)
+![Field group edit dialog box](/images/field-group-edit-dialog2.jpg)
 
 
 
 To move a **Field group**:
 
-1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png). 
 2. Drag and drop the field wherever you want to move it to within your form. Note that the grouped fields are available to move and edit as a group within the form.
 
 To delete a **Field group** from your form:
 
-1. Select the group by clicking on the group's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
-3. Click on **OK** to confirm (or click on **Cancel** if you wish to cancel the deletion)
+1. Select the group by clicking on the group's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png). 
+3. Click on **OK** to confirm (or click on **Cancel** if you wish to cancel the deletion).
 
 
 

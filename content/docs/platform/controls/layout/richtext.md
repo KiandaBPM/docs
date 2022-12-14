@@ -21,68 +21,69 @@ For example, we may want to insert some colourful headings into a Training Appro
 
 3. To insert a **Richtext field** into the first panel in the form:
 
-   - Select that panel by clicking on the drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)
+   - Select that panel by clicking on the drag handle button ![Drag handle button](/images/draghandlewhite-frame.png).
 
-   - Then click on **Controls** in the left-hand pane to expand the Controls menu and select **Layout** to view the range of Layout controls
+   - Then click on **Controls** in the left-hand pane to expand the Controls menu and select **Layout** to view the range of Layout controls.
 
-   - Click on **Richtext**
+   - Click on **Richtext**.
 
    ![Insert Richtext field](/images/richtext-insert.jpg)
 
 4. A **New field - Richtext** dialog box will open with a range of options you can choose from for your new Richtext field:
 
-	![Richtext dialog box](/images/richtext-dialog.jpg)
+	![Richtext dialog box](/images/richtext-dialog2.jpg)
 
-	The options available in the **New field - Richtext** dialog box include:
+	
 
-  - **Title** - You can change the title of the Richtext field from the default title of '**Richtext 1**'.
+5. **Title** - You can change the title of the Richtext field from the default title of '**Richtext 1**'.
 
-  - **Name** - This is a unique name for the field.
+6. **Name** - This is a unique name for the field and inherits a camel case version of the entered Title.
 
-  - **Help text** - You can insert text to help the form user - if you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
+7. **Help text** - You can insert text to help the form user - if you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
+8. **Custom CSS class name** - You can type the name of a CSS class to allow the Richtext to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
-  - **Richtext** - Here you can insert the text you want to appear and can choose from an wide array of styles and formats, including **Style,** **Colour**, **Bold**, **Underline**, **Remove font style**, **Font size**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, and **Table**. You can also choose to insert a **Link** or **Picture** or to switch to **Code view**. For example, if you click on **Code view** button ![Code view button](/images/code.png)you can copy HTML code directly into the text. 
+9. **Richtext** - Here you can insert the text you want to appear and can choose from an wide array of styles and formats, including **Style,** **Colour**, **Bold**, **Underline**, **Remove font style**, **Font size**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, and **Table**. You can also choose to insert a **Link** or **Picture** or to switch to **Code view**. For example, if you click on **Code view** button ![Code view button](/images/code.png)you can copy HTML code directly into the text. 
 
-    Type in the text you want to use into the body of the Richtext box - in our example, we will insert the text 'Training Details' (the title we want to use for the first panel in our form), bold it, choose font size 14 and a blue colour scheme:
+   Type in the text you want to use into the body of the Richtext box - in our example, we will insert the text 'Training Details' (the title we want to use for the first panel in our form), bold it, choose font size 14 and a blue colour scheme:
 
-    ![Example of Richtext body text](/images/richtext-example-body-text.jpg)
+   ![Example of Richtext body text](/images/richtext-example-body-text.jpg)
 
-    You can click on the **Help** button ![Help button](/images/help.png) to get a list of over 20 keyboard shortcuts that you can use to style your text.
+   You can click on the **Help** button ![Help button](/images/help.png) to get a list of over 20 keyboard shortcuts that you can use to style your text.
 
-    ![Richtext help](/images/richtext-help-shortcuts.jpg)
+   ![Richtext help](/images/richtext-help-shortcuts.jpg)
 
-    Click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis-16401854043731.png) if you want to add an expression - see [Expression builder](/docs/platform/rules/general/expression-builder/) for more details.
+   Click on the **Ellipsis** button ![Ellipsis button](/images/ellipsis-16401854043731.png) if you want to add an expression - see [Expression builder](/docs/platform/rules/general/expression-builder/) for more details.
 
-  - **Colour scheme** - You can choose from Navy, Green, Blue, Amber, Red or White Colours for your rich text background.
+10. **Colour scheme** - You can choose from Navy, Green, Blue, Amber, Red or White Colours for your rich text background.
 
-5. Once you have completed the **New field - Richtext** dialog box, click **OK** ![OK button](/images/ok.png) and the new **Richtext field** will be added to your form.
+11. Once you have completed the **New field - Richtext** dialog box, click **OK** ![OK button](/images/ok.png) and the new **Richtext field** will be added to your form.
 
-   In our example, it is inserted at the bottom of the panel we added it to. The same steps can be repeated in order to insert a Richtext heading in the second panel, titled 'Approval Decision'.
+In our example, it is inserted at the bottom of the panel we added it to. The same steps can be repeated in order to insert a Richtext heading in the second panel, titled 'Approval Decision'.
 
-   ![Richtext field inserted](/images/richtext-inserted.jpg)
+![Richtext field inserted](/images/richtext-inserted.jpg)
 
-   By default, the Richtext **Title** will not be shown (unless you choose to display it, by selecting the **Show title** checkbox in the Field properties menu to the right).
+By default, the Richtext **Title** will not be shown (unless you choose to display it, by selecting the **Show title** checkbox in the Field properties menu to the right).
 
-   
+
 
 ### How to edit, move and delete Richtext fields
 
 To edit a **Richtext field**:
 
-1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
 
 ![Select Richtext field to edit](/images/richtext-select-to-edit.jpg)
 
 The **Edit field - Richtext** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - Richtext** dialog box (as already discussed in [How to get started](/docs/platform/controls/layout/richtext#how-to-get-started)).
 
-![Richtext field edit dialog box](/images/richtext-edit-dialog.jpg)
+![Richtext field edit dialog box](/images/richtext-edit-dialog2.jpg)
 
 
 
 To move a **Richtext field**:
 
-1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png). 
 2. Drag and drop the field wherever you want to move it to within your form. 
 
 In our example, we can move the new Richtext heading to the top of the first panel in the Training Approval form:
@@ -93,9 +94,9 @@ In our example, we can move the new Richtext heading to the top of the first pan
 
 To delete a **Richtext field** from your form:
 
-1. Select the field (by clicking on the **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+1. Select the field (by clicking on the **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
 
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png). 
 
 3. Click on **OK** to confirm. Click on **Cancel** if you wish to cancel the deletion.
 
