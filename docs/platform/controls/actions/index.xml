@@ -186,17 +186,19 @@
 &lt;/li>
 &lt;li>
 &lt;p>A &lt;strong>New field - Image&lt;/strong> dialog box will automatically open, giving you options for your new Image field:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/image-dialog.jpg" alt="Image field dialog box">&lt;/p>
-&lt;p>The options available in the &lt;strong>New field - Image&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/image-dialog2.jpg" alt="Image field dialog box">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the Image field from the default &amp;lsquo;&lt;strong>Image 1&lt;/strong>&amp;rsquo;. In our example, we could change the title to &amp;lsquo;Employees&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the new field.&lt;/p>
+&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the new field and inherits a camel case version of the entered Title.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Image to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Image source&lt;/strong> - You can choose to insert the image either from an &lt;strong>Image URL&lt;/strong> or from a &lt;strong>File field&lt;/strong> within the form. Different additional options will be available to you, dependent on the Image source you choose.&lt;/p>
@@ -211,10 +213,8 @@
 &lt;p>&lt;strong>Image max width&lt;/strong> - Insert the maximum width (in pixels) for your new Image field by either manually inserting a number or using the up down arrows &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up down arrows buttons"> to the right of the field.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>When you&amp;rsquo;ve completed the New field - Image dialog box and clicked &lt;strong>OK&lt;/strong>, your new Image field will be inserted at the bottom of the area you selected - in our case, at the bottom of the first panel in the Training Approval form:
-&lt;img src="https://docs.kianda.com/images/image-url-example.jpg" alt="Image field inserted with URL as Image source">&lt;/p>
+&lt;p>When you&amp;rsquo;ve completed the New field - Image dialog box and clicked &lt;strong>OK&lt;/strong>, your new Image field will be inserted at the bottom of the area you selected - in our case, at the bottom of the first panel in the Training Approval form:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/image-url-example.jpg" alt="Image field inserted with URL as Image source">&lt;/p>
 &lt;p>(ii) If you choose &lt;strong>File field&lt;/strong> as the &lt;strong>Image source&lt;/strong>, three additional options will be displayed below the &amp;lsquo;Image max height&amp;rsquo; and &amp;lsquo;Image max width&amp;rsquo; options - &lt;strong>Enable image annotations&lt;/strong>, &lt;strong>Display images inline&lt;/strong> and &lt;strong>Enable quick remove image&lt;/strong>:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/image-file-field-options.jpg" alt="Image source File field">&lt;/p>
 &lt;p>To use a &lt;strong>File field&lt;/strong> as the &lt;strong>Image source&lt;/strong>, you must first have inserted a &lt;strong>File Upload field&lt;/strong> into your form and it must hold an image file.&lt;/p>
@@ -244,8 +244,8 @@
 &lt;p>​ - &lt;strong>Draw a circle&lt;/strong> &lt;img src="https://docs.kianda.com/images/image-annotate-circle.jpg" alt="Image annotation draw a circle">&lt;/p>
 &lt;p>​ - &lt;strong>Write some text&lt;/strong> &lt;img src="https://docs.kianda.com/images/image-annotate-text.jpg" alt="Image annotation Write some text button">&lt;/p>
 &lt;p>​ - &lt;strong>Draw an arrow&lt;/strong> &lt;img src="https://docs.kianda.com/images/image-annotate-arrow.jpg" alt="Image annotation draw an arrow button">&lt;/p>
-&lt;p>​ - &lt;strong>Pen tool&lt;/strong> &lt;img src="https://docs.kianda.com/images/image-annotate-pen.jpg" alt="Image annotation pen tool button">(which allows you to do a free hand drawing on the image)&lt;/p>
-&lt;p>​ - &lt;strong>Redo the last undone annotation&lt;/strong> &lt;img src="https://docs.kianda.com/images/image-annotate-redo.jpg" alt="Image annotation Redo last undone annotation button">.&lt;/p>
+&lt;p>​ - &lt;strong>Pen tool&lt;/strong> &lt;img src="https://docs.kianda.com/images/image-annotate-pen.jpg" alt="Image annotation pen tool button"> (which allows you to do a free hand drawing on the image)&lt;/p>
+&lt;p>​ - &lt;strong>Redo the last undone annotation&lt;/strong> &lt;img src="https://docs.kianda.com/images/image-annotate-redo.jpg" alt="Image annotation Redo last undone annotation button">&lt;/p>
 &lt;p>An end user completing the form will be able to make annotations to the image in the same way - by clicking on the Image in the form and then clicking the Annotate Image button to view the menu.&lt;/p>
 &lt;p>When you have made the changes you want to the image, click on the green &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/image-annotate-save.jpg" alt="Image annotation green Save button">. This annotation will then be visible in the image in your form.&lt;/p>
 &lt;p>If you choose &lt;strong>Yes&lt;/strong> to &lt;strong>Enable image annotations&lt;/strong>, another option is shown - &lt;strong>Keep original image&lt;/strong>:&lt;/p>
@@ -275,10 +275,10 @@
 &lt;p>To edit an &lt;strong>Image field&lt;/strong>:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select the Image field (by either clicking on the field name or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/p>
+&lt;p>Select the Image field (by either clicking on the field name or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">&lt;/p>
+&lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/image-edit-button.jpg" alt="Edit Image field">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -289,7 +289,7 @@
 &lt;p>To move an &lt;strong>Image field&lt;/strong>, simply:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select the Image field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/p>
+&lt;p>Select the Image field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Drag and drop the Image field wherever you want to move it within your form.&lt;/p>
@@ -299,8 +299,8 @@
 &lt;/ol>
 &lt;p>To delete an &lt;strong>Image field&lt;/strong> from your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the Image field (by either clicking on the field&amp;rsquo;s title or &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Select the Image field (by either clicking on the field&amp;rsquo;s title or &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
 &lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-view-and-edit-image-control-field-properties">How to view and edit Image control Field properties&lt;/h3>
@@ -375,14 +375,13 @@
 &lt;/li>
 &lt;li>
 &lt;p>A &lt;strong>New field - Link&lt;/strong> dialog box will automatically open, giving you options for your new Link field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/link-dialog.jpg" alt="Link field dialog box">&lt;/p>
-&lt;p>The options available in the &lt;strong>New field - Link&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-dialog2.jpg" alt="Link field dialog box">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the Link field from the default &amp;lsquo;&lt;strong>Link 1&lt;/strong>&amp;rsquo;. In our example, we will change the title to &amp;lsquo;Employee Handbook&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the new field.&lt;/p>
+&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the new field and inherits a camel case version of the entered Title.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
@@ -392,38 +391,39 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/link-help-text-example.jpg" alt="Link field sample help text">&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Link to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>&lt;strong>Link target&lt;/strong> - You can choose to have the link either open as a &lt;strong>New tab&lt;/strong> or open in the &lt;strong>Same tab&lt;/strong> the form user is currently in.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Default URL&lt;/strong> - This is where you can insert the URL you want the user to be brought to when they click on the Link field.&lt;/p>
 &lt;/li>
-&lt;/ul>
-&lt;/li>
 &lt;li>
 &lt;p>Once you complete the &lt;strong>New field - Link&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong> and the new &lt;strong>Link field&lt;/strong> is added to your form.&lt;/p>
-&lt;p>In our example, if we changed the default Link field title to &amp;lsquo;Employee Handbook&amp;rsquo; and inserted help text (as shown previously), our new Link field could look like this when added to our &amp;lsquo;Performance Plan&amp;rsquo; form:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/link-example.jpg" alt="Link field example titled Employee Handbook">&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>In our example, if we changed the default Link field title to &amp;lsquo;Employee Handbook&amp;rsquo; and inserted help text (as shown previously), our new Link field could look like this when added to our &amp;lsquo;Performance Plan&amp;rsquo; form:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-example.jpg" alt="Link field example titled Employee Handbook">&lt;/p>
 &lt;h3 id="how-to-edit-move-and-delete-link-fields">How to edit, move and delete Link fields&lt;/h3>
 &lt;p>To edit a &lt;strong>Link field&lt;/strong>:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select the Link field (by either clicking on the field name or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/p>
+&lt;p>Select the Link field (by either clicking on the field name or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">&lt;/p>
+&lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/link-edit.jpg" alt="Edit Link field">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Edit Field - Link&lt;/strong> dialog box will open (with the Link field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Link&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link#how-to-get-started">How to get started&lt;/a>).&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/link-edit-dialog.jpg" alt="Link field Edit field dialog box">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/link-edit-dialog2.jpg" alt="Link field Edit field dialog box">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>To move a &lt;strong>Link field&lt;/strong>, simply:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select the Link field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/p>
+&lt;p>Select the Link field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Drag and drop the Link field wherever you want to move it within your form.&lt;/p>
@@ -433,8 +433,8 @@
 &lt;/ol>
 &lt;p>To delete a &lt;strong>Link field&lt;/strong> from your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the Link field (by either clicking on its title or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Select the Link field (by either clicking on its title or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
 &lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-view-and-edit-link-control-field-properties">How to view and edit Link control Field properties&lt;/h3>
@@ -500,14 +500,13 @@
 &lt;/li>
 &lt;li>
 &lt;p>A &lt;strong>New field - Signature&lt;/strong> dialog box will automatically open, giving you options for your new Signature field:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/signature-dialog.jpg" alt="Signature field dialog box">&lt;/p>
-&lt;p>The options available in the &lt;strong>New field - Signature&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-dialog2.jpg" alt="Signature field dialog box">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the Signature field from the default &amp;lsquo;&lt;strong>Signature 1&lt;/strong>&amp;rsquo;. In our example, we can change it to &amp;lsquo;Manager Signature&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the new field.&lt;/p>
+&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the new field and inherits a camel case version of the entered Title.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
@@ -515,10 +514,13 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-help.jpg" alt="Signature field help text">&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Signature to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>&lt;strong>Signature pad height (pixels)&lt;/strong> - You can choose the height of the signature in pixels. To do this, either manually type in the number of pixels you want the height to be or use the up and down arrows &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up down arrows"> to the right.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Signature color&lt;/strong> - You can choose the colour for the signature itself, i.e. the name of the user electronically signing the form. To do this, click on the field and then either&lt;/p>
+&lt;p>&lt;strong>Signature color&lt;/strong> - You can choose the colour for the signature itself, i.e. the name of the user electronically signing the form. To do this, click on the field and then either:&lt;/p>
 &lt;p>(i) use the slider to move between colours and click on the palette to choose a particular hue&lt;/p>
 &lt;p>(ii) click on the dropper icon &lt;img src="https://docs.kianda.com/images/signature-dropper.jpg" alt="Signature colour dropper icon"> and then choose a colour from your open PC window(s)&lt;/p>
 &lt;p>(iii) type in the R G B value if you know the colour you want to use&lt;/p>
@@ -574,8 +576,6 @@
 &lt;li>
 &lt;p>&lt;strong>Sign dialog button text&lt;/strong> - You can choose the text to appear on the button at the bottom right of the Signature dialog box. By default, the text is &amp;lsquo;OK&amp;rsquo; but you can change this to whatever you want.&lt;/p>
 &lt;/li>
-&lt;/ul>
-&lt;/li>
 &lt;li>
 &lt;p>Once you complete the &lt;strong>New field - Signature&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong> and the new &lt;strong>Signature field&lt;/strong> will be added to your form.&lt;/p>
 &lt;p>In our example, if we insert a new Signature field titled &amp;lsquo;Manager Signature&amp;rsquo;, it will be added to the bottom of the Performance Plan form and look like this:&lt;/p>
@@ -591,11 +591,11 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-preview-dialog.jpg" alt="Signature preview dialog box">&lt;/p>
 &lt;p>The user can choose between a system-created &lt;strong>Signature&lt;/strong> or to &lt;strong>Draw or Upload&lt;/strong> their own version. If you click on &lt;strong>Draw or Upload&lt;/strong> you can see how the user can either sign on the dotted line (and click on &lt;strong>Clear&lt;/strong> at any stage to erase a mistake) or click on &lt;strong>Upload handwritten signature&lt;/strong> and browse for a file.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-draw-or-upload.jpg" alt="Signature Draw or Upload option">&lt;/p>
-&lt;/li>
-&lt;/ol>
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button to close the dialog box.&lt;/p>
-&lt;ol start="10">
-&lt;li>You may decide to add rules to your &lt;strong>Signature field&lt;/strong> - to learn more about the different categories of rules available, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>. The rules we add will be executed in the order in which they are listed under &lt;strong>Rules&lt;/strong> in the right hand pane.&lt;/li>
+&lt;/li>
+&lt;li>
+&lt;p>You may decide to add rules to your &lt;strong>Signature field&lt;/strong> - to learn more about the different categories of rules available, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>. The rules we add will be executed in the order in which they are listed under &lt;strong>Rules&lt;/strong> in the right hand pane.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-move-and-delete-signature-fields">How to edit, move and delete Signature fields&lt;/h3>
 &lt;p>To edit a &lt;strong>Signature field&lt;/strong>:&lt;/p>
@@ -609,13 +609,13 @@
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Edit Field&lt;/strong> dialog box will open (with the Signature field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Signature&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature#how-to-get-started">How to get started&lt;/a>).&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/signature-edit-dialog.jpg" alt="Signature edit field dialog box">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/signature-edit-dialog2.jpg" alt="Signature edit field dialog box">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>To move a &lt;strong>Signature field&lt;/strong>, simply:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Select the Signature field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/p>
+&lt;p>Select the Signature field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Drag and drop the Signature field wherever you want to move it within your form.&lt;/p>
@@ -627,8 +627,8 @@
 &lt;/ol>
 &lt;p>To delete a &lt;strong>Signature field&lt;/strong> from your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the Signature field (by either clicking on the field&amp;rsquo;s title or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Select the Signature field (by either clicking on the field&amp;rsquo;s title or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
 &lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-view-and-edit-signature-field-properties">How to view and edit Signature field properties&lt;/h3>
