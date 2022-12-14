@@ -36,75 +36,85 @@ To add a **Button field** to a Kianda form:
 
 6. A **New field - Button** dialog box will automatically open, giving you options for your new Button field: 
 
-   ![Button field dialog box](/images/button-dialog.jpg)
+   ![Button field dialog box](/images/button-dialog-new.jpg)
 
-   The options available in the **New field - Button** dialog box include:
-
-   - **Title** - You can change the name of the Button from the default '**Button 1**'.
-
-   - **Name (Unique)** - This is a unique name for the new field.
-
-   - **Help text** - You can insert text to help the form user. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
-
-   - **Color scheme** - You can choose a colour for your new Button field from six options.
-
-   - **Icon** - You can choose an icon to appear on your Button by clicking on the down arrow to the right and scrolling to select the icon you want to use (or can opt not to add an icon).
-
-     ![Button dialog box icon options](/images/button-dialog-icon.jpg)
-
-   - **Show in form body** - Select **Yes** if you want your Button to be shown in the Form.
-
-   - **Enable button security** - Select **Yes** if you want to limit who can see the Button you are adding to the form.
-
-     ![Button dialog box enable button security](/images/button-dialog-security.jpg)
-
-     If you select **Yes**, two additional options are displayed: **Add security** and **Allow anonymous link**.
-
-     When you click on **Add security**, a new line appears with the options **Field security** and **Select user(s) or groups**:
-
-     ![Buttons add security](/images/button-dialog-add-security.jpg)
-
-     In **Field security**, you can choose from **three options in terms of who will be able to view the Button you are inserting**:
-
-     ![Button visibility options](/images/button-dialog-visibility.jpg)
-
-     (i) If you choose to limit the Button visibility to a '**User or group**', you can then select the user(s) or groups you want to be able to see the Button in the 'Select user(s) or groups' box.
-
-     (ii) If you choose to limit the Button visibility to a '**User picker field**', you then select the User picker field in the 'Select a userpicker field' box:
-
-     ![Button visibility limited to User picker field](/images/button-dialog-user-picker.jpg)
-
-     This will limit the visibility of the Button to the user(s) selected in that User picker field.
-
-     (iii) If you choose to limit the Button visibility to '**Form owner(s)**', you then select the form in the 'Select a form' box - only the owner(s) of the selected form will be able to view the new Button you are inserting:
-
-     ![Button visibility limited to Form owners](/images/button-security-form-owner.jpg)
-
-	  
    
-     The second main option in terms of Button security is '**Allow anonymous link**':
-   
-     - If you choose **Yes**, this will mean that the Button field will be visible when the form is accessed via an anonymous link. 
-   
-     - If you choose **No**, anyone accessing the form from an anonymous link will not be able to see the Button field. 
-   
-     Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda. To learn more about how you can create anonymous links to a form that can be shared with external users, see [Anonymous form link](/docs/platform/rules/communications/anonymous-form-link/).
-   
-      
-   
-7. Once you complete the **New field - Button** dialog box, click **OK** and the new **Button field** is added to your form. 
 
-   In our example, if we changed the Button field title to 'Schedule Meeting' and chose a green colour scheme and 'people' icon, our new Button could look like this when added to our 'Performance Plan' form:
+7. **Title** - You can change the name of the Button from the default '**Button 1**'.
 
-   ![Button example titled Schedule Meeting](/images/button-example-meeting.jpg)
+8. **Name (Unique)** - This is a unique name for the Button and inherits a camel case version of the entered Title.
 
-8. You may then decide to add rules to your new **Button field** - to learn more, go to [Rules](/docs/platform/rules/). The rules we add will be executed in the order in which they are listed under **Rules** in the right hand pane.
+9. **Help text** - You can insert text to help the form user. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-	For example, we could add a series of rules to our new **Schedule Meeting** button:
+10. **Custom CSS class name** - You can type the name of a CSS class to allow the Button to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
-	![Button field example with rules](/images/button-example-rules.jpg)
+11. **Button size** - You can choose the size of the Button ranging from XL (extra large) to XS (extra small). By default, the Button size is medium.
 
-	In our example, the sixth rule is a Meeting Request rule which will mean that, once the **Schedule Meeting** button is clicked, an automated email will be sent to the employee scheduling a performance review meeting - to learn more, go to [Meeting request rule](/docs/platform/rules/communications/meeting-request/).
+12. **Block button** - If you choose **Yes**, the button will span the entire width of the button's allocated space. If you choose **No**, an additional field called **Align button** will appear that allows you to select what direction the Button aligns to. By default, the Button is aligned to the center.
+
+    ![align button](/images/align-button.jpg)
+
+13. **Color scheme** - You can choose a colour for your new Button field from six options.
+
+14. **Icon** - You can choose an icon to appear on your Button by clicking on the down arrow to the right and scrolling to select the icon you want to use (or can opt not to add an icon).
+
+![Button dialog box icon options](/images/button-dialog-icon.jpg)
+
+15. **Show in form body** - Select **Yes** if you want your Button to be shown in the Form.
+
+16. **Enable button security** - Select **Yes** if you want to limit who can see the Button you are adding to the form.
+
+    ![Button dialog box enable button security](/images/button-dialog-security.jpg)
+
+    If you select **Yes**, two additional options are displayed: **Add security** and **Allow anonymous link**.
+
+    When you click on **Add security**, a new line appears with the options **Field security** and **Select user(s) or groups**:
+
+    ![Buttons add security](/images/button-dialog-add-security.jpg)
+
+    In **Field security**, you can choose from **three options in terms of who will be able to view the Button you are inserting**:
+
+    ![Button visibility options](/images/button-dialog-visibility.jpg)
+
+    (i) If you choose to limit the Button visibility to a '**User or group**', you can then select the user(s) or groups you want to be able to see the Button in the 'Select user(s) or groups' box.
+
+    (ii) If you choose to limit the Button visibility to a '**User picker field**', you then select the User picker field in the 'Select a userpicker field' box:
+
+    ![Button visibility limited to User picker field](/images/button-dialog-user-picker.jpg)
+
+    This will limit the visibility of the Button to the user(s) selected in that User picker field.
+
+    (iii) If you choose to limit the Button visibility to '**Form owner(s)**', you then select the form in the 'Select a form' box - only the owner(s) of the selected form will be able to view the new Button you are inserting:
+
+    ![Button visibility limited to Form owners](/images/button-security-form-owner.jpg)
+
+    
+
+    The second main option in terms of Button security is '**Allow anonymous link**':
+
+    - If you choose **Yes**, this will mean that the Button field will be visible when the form is accessed via an anonymous link. 
+
+    - If you choose **No**, anyone accessing the form from an anonymous link will not be able to see the Button field. 
+
+    Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda. To learn more about how you can create anonymous links to a form that can be shared with external users, see [Anonymous form link](/docs/platform/rules/communications/anonymous-form-link/).
+
+
+
+ 
+
+17. Once you complete the **New field - Button** dialog box, click **OK** and the new **Button field** is added to your form. 
+
+In our example, if we changed the Button field title to 'Schedule Meeting' and chose a green colour scheme and 'people' icon, set button size to small and aligned the button to the right, our new Button could look like this when added to our 'Performance Plan' form:
+
+![Button example titled Schedule Meeting](/images/button-example-meeting.jpg)
+
+- You may then decide to add rules to your new **Button field** - to learn more, go to [Rules](/docs/platform/rules/). The rules we add will be executed in the order in which they are listed under **Rules** in the right hand pane.
+
+  For example, we could add a series of rules to our new **Schedule Meeting** button:
+
+  ![Button field example with rules](/images/button-example-rules.jpg)
+
+  In our example, the sixth rule is a Meeting Request rule which will mean that, once the **Schedule Meeting** button is clicked, an automated email will be sent to the employee scheduling a performance review meeting - to learn more, go to [Meeting request rule](/docs/platform/rules/communications/meeting-request/).
 
   
 
@@ -112,19 +122,19 @@ To add a **Button field** to a Kianda form:
 
 To edit a **Button field**:
 
-1. Select the Button field (by either clicking on the field name or on the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+1. Select the Button field (by either clicking on the field name or on the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
 
-2. Click on the **Edit Field** button (Pen icon) ![Pen button](/images/penicon.png)
+2. Click on the **Edit Field** button (Pen icon) ![Pen button](/images/penicon.png).
 
 3. The **Edit Field** dialog box will open (with the Button title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the **New field - Button** dialog box (as already discussed in [How to get started](/docs/platform/controls/actions/button#how-to-get-started)).
 
-   ![Button edit field dialog box](/images/button-edit-field-dialog.jpg)
+   ![Button field dialog box](/images/button-dialog.jpg)
 
    
 
 To move a **Button**, simply:
 
-1. Select the Button's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+1. Select the Button's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
 
 2. Drag and drop the Button wherever you want to move it within your form.
 
@@ -136,8 +146,8 @@ To move a **Button**, simply:
 
 To delete a **Button** from your form:
 
-1. Select the Button (by either clicking on the Button's title or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+1. Select the Button (by either clicking on the Button's title or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png).
 3. Click on **OK** to confirm.
 
 
