@@ -254,7 +254,7 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;p>There are two key principles to consider when working with forms:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>&lt;a href="#rule-design">Rule design&lt;/a> - what type of rule you are going to apply and where, for example you can apply a rule at field/control level, form level and process level. For the latter the rule will execute &amp;lsquo;onload&amp;rsquo; that is when the process instance is initiated.&lt;/p>
+&lt;p>&lt;a href="#rule-design">Rule design&lt;/a> - you can decide what type of rule you are going to apply and where, as a rule can be applied at field/control level, form level and process level. For the latter the rule will execute &amp;lsquo;onload&amp;rsquo; that is when the process instance is initiated.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;a href="#rule-order">Rule order&lt;/a> - if there are several rules attached to an item like a button, then the order of execution is important and can be modified to suit your needs.&lt;/p>
@@ -296,15 +296,27 @@ the order of rules on a &lt;strong>Submit&lt;/strong> button could be: Set Statu
 &lt;p>When you have chosen your rule, an &lt;strong>Edit rule&lt;/strong> dialog box opens allowing you to configure the rule to execute a particular action, which can be according to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">conditions&lt;/a> if you wish.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the &lt;strong>Edit rule&lt;/strong> dialog box for each rule.&lt;/p>
-&lt;h3 id="rule-level">Rule level&lt;/h3>
-&lt;p>As introduced in the section above, rules can be added at process, form and control/field level.
-Whenever a rule is added, the rule dialog box will remind you where and at what level the rule is being applied, for example in the image below a &lt;strong>Send email&lt;/strong> rule is being added to a button/control called &lt;strong>Submit&lt;/strong>.&lt;/p>
+&lt;p>The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the &lt;strong>Edit rule&lt;/strong> dialog box for each rule. The next section highlights where rules can be applied.&lt;/p>
+&lt;h3 id="where-to-apply-rules">Where to apply rules&lt;/h3>
+&lt;p>As introduced in the section above, rules can be added at &lt;strong>process&lt;/strong>, &lt;strong>form&lt;/strong> and &lt;strong>control/field&lt;/strong> level, and are typically used as follows, bearing in mind that &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> can be applied to rules to control how the rules are executed:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>A rule applied at &lt;strong>process level&lt;/strong> executes &amp;lsquo;onload&amp;rsquo; meaning that when a new process instance is initiated, the rule will automatically execute, for example when someone opens a form, a &amp;lsquo;Send email&amp;rsquo; rule could be used to send an email to someone notifying them that a form has been opened.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A rule applied at &lt;strong>form level&lt;/strong> executes when the form is submitted.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A rule applied at &lt;strong>control level&lt;/strong> executes when the chosen field is clicked on, or involved in user or system interaction.&lt;/p>
+&lt;p>As with all rules, &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> within the rule determine how the rule is triggered, for example a rule applied to a control like a date field, may be executed only if a certain value is input into another field within a form.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="edit-rule-dialog-box">Edit rule dialog box&lt;/h4>
+&lt;p>Whenever a rule is added, the &lt;strong>Edit rule dialog box&lt;/strong> will remind you where and at what level the rule is being applied, for example in the image below a &lt;strong>Send email&lt;/strong> rule is being added to a button/control called &lt;strong>Submit&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-applied-dialog-box.jpg" alt="Where a rule is applied notice in an Edit rule dialog box">&lt;/p>
-&lt;p>&lt;strong>Note:&lt;/strong> Make sure that you save the process before adding the rule so that the names of the processes, forms or controls are committed to the Kianda database so that the dialog box above can then retrieve the name for use as shown above.&lt;/p>
-&lt;p>The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the &lt;strong>Edit rule&lt;/strong> dialog box for each rule.&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong> Make sure that you save the process after adding forms and/or controls and before adding rules so that the names of the processes, forms or controls are committed to the Kianda database. Then the dialog box above can then retrieve the name(s) for use as shown above.&lt;/p>
 &lt;h2 id="rule-order">Rule order&lt;/h2>
-&lt;p>If there is more than one rule for an item like a field or button, then the order of execution must be considered.&lt;/p>
+&lt;p>If there is more than one rule for an item like a field or process, then the order of execution must be considered.&lt;/p>
 &lt;p>For example for a &lt;strong>Submit&lt;/strong> button on a form, you may want a &lt;strong>Send email rule&lt;/strong> to be executed first before any other rule is executed, that is an automated email will be sent before anything else. To ensure this happens, click on the &lt;strong>Submit&lt;/strong> button to make sure you are in &lt;strong>Edit&lt;/strong> mode, and under &lt;strong>Rules&lt;/strong> in the right-hand pane, drag the &lt;strong>Send email&lt;/strong> rule to the top of the list by clicking on the rule and dragging it to the top of the list of rules.&lt;/p>
 &lt;img src="https://docs.kianda.com/images/ruleorder.png" alt="Rule order" style="zoom:70%;" />
 &lt;p>Go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> to read more about using multiple rules on a field or other item.&lt;/p>
