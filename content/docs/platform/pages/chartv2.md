@@ -1,8 +1,6 @@
 ---
 title: "Chart v2 widget"
 typora-root-url: ..\..\..\..\static
-toc_hide: true
-hide_summary: true
 ---
 
 A dashboard **Chart v2 widget** enables you to create pie charts, bar charts, line charts, radar charts, doughnut and polar area charts on your dashboard page. These charts can be used to represent various conditions or values in a process.
@@ -64,7 +62,7 @@ To create a **Chart widget** on a dashboard using the wizard:
 
 1. Once you are in the **chart wizard**, first you need to choose a type of chart you want to create. There are six option:
 
-   - **Pie chart** - A pie chart is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice is proportional to the quantity it represents.
+   - **Pie chart** - A pie chart is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice is proportional to the quantity it represents. Visit [How to create a Pie Chart](How to create a Pie Chart) to learn how to create a pie chart.
    - **Bar chart** - A bar chart or bar graph is a chart or graph that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. The bars can be plotted vertically or horizontally. A vertical bar chart is sometimes called a column chart.
    - **Line chart** - A line chart or line graph or curve chart is a type of chart which displays information as a series of data points called 'markers' connected by straight line segments. It is a basic type of chart common in many fields.
    - **Radar chart** - Radar Charts are used to compare two or more items or groups on various features or characteristics. Example: Compare two anti-depressant drugs on features such as: efficacy for severe depression, prevalence of specific side effects, interaction with alcohol, continuation of relief over time, cost to the consumer etc.
@@ -167,6 +165,122 @@ You will be directed to different data sources where you can search in the **dat
 ![Select data source](/images/selectdatasource.png)
 
 Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
+
+## How to create a Pie Chart
+
+1. Create a Chart v2 widget in a dashboard of your choice.
+
+2. In the Chart Wizard, select **Pie chart** radio button and click on ![Continue 1](/images/chart-wizard-continue1.jpg) to move to the next step.
+
+   ![Chart type: Radar chart](/images/chart-type-pie.jpg)
+
+3. In this step of the wizard, click on ![Chart wizard add dataset](/images/chart-wizard-add-dataset.jpg) The first dataset will represent a segment of the pie chart.
+
+4. As an example, we will link the first dataset to the number of jobs in a building site project. We will display the **Project** as a label and **Jobs** as the value.
+
+   ![Chart wizard add dataset](/images/pie-chart-dataset1.jpg)
+
+   - First, link the dataset to our Building completion process in the **Business process** drop-down list. 
+   - Select the **Projects** as the **Labels field**.
+   - Select **Jobs** in the values field 1 and select **Count** from the radio list. This will result in presenting the number of jobs in each project.
+   - Click on **OK** in the **Add or Edit dataset** dialog to save your dataset.
+   - To have multiple pie representations in one chart, follow the same step described in step 4.
+
+5. Click **Continue** to move to the next step. Here select a colour scheme for your datasets.
+
+6. When you are finished with your colour scheme, click on **Continue** to move to the last section of the wizard.
+
+7. Follow step 10 of [How to create a chart from the wizard](/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard) to complete your chart. To display each segment as a percentage, select **No** in the **Show values?** option in the last section of the chart wizard.
+
+## How to create a Bar Chart
+
+1. Create a Chart v2 widget in a dashboard of your choice.
+
+2. In the Chart Wizard, select **Bar chart** radio button and click on ![Continue 1](/images/chart-wizard-continue1.jpg) to move to the next step.
+
+   ![Chart type: Radar chart](/images/chart-type-bar.jpg)
+
+3. In this step of the wizard, click on ![Chart wizard add dataset](/images/chart-wizard-add-dataset.jpg) The first dataset will represent a segment of the pie chart.
+
+4. As an example, we will link the first dataset to the number of jobs in a building site project. We will display the **Year** as a label and **Salary** as the value.
+
+   ![Chart wizard add dataset](/images/line-chart-dataset1.jpg)
+
+   - First, link the dataset to our Salary process in the **Business process** drop-down list. 
+   - Select the **Projects** as the **Labels field**.
+   - Select **Jobs** in the values field 1 and select **Count** from the radio list. This will result in presenting the number of jobs in each project.
+   - Click on **OK** in the **Add or Edit dataset** dialog to save your dataset.
+   - To have multiple pie representations in one chart, follow the same step described in step 4.
+
+5. Click **Continue** to move to the next step. Here select a colour scheme for your datasets.
+
+6. When you are finished with your colour scheme, click on **Continue** to move to the last section of the wizard.
+
+7. Follow step 10 of [How to create a chart from the wizard](/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard) to complete your chart. To display each segment as a percentage, select **No** in the **Show values?** option in the last section of the chart wizard.
+
+## How to create a Line Chart
+
+1. Create a Chart v2 widget in a dashboard of your choice.
+
+2. In the Chart Wizard, select **Line chart** radio button and click on ![Continue 1](/images/chart-wizard-continue1.jpg) to move to the next step.
+
+   ![Chart type: Radar chart](/images/chart-type-line.jpg)
+
+3. In this step of the wizard, click on ![Chart wizard add dataset](/images/chart-wizard-add-dataset.jpg) The first dataset will represent the first piece of data and its label will be visible on the bottom of the line chart.
+
+4. As an example, we will link the first dataset to display a salary number depending on the year. We will display the **Year** as a label and **Salary** as the value.
+
+   ![Chart wizard add dataset](/images/line-chart-dataset1.jpg)
+
+   - First, link the dataset to our Salary process in the **Business process** drop-down list. 
+   - Select the **Projects** as the **Labels field**.
+   - Select **Year** in the values field 1 and select **Sum** from the radio list. This will result in presenting the total number of the salary earned each year.
+   - Click on **OK** in the **Add or Edit dataset** dialog to save your dataset.
+   - To have multiple pie representations in one chart, follow the same step described in step 4.
+
+5. Click **Continue** to move to the next step. Here select a colour scheme for your datasets.
+
+6. When you are finished with your colour scheme, click on **Continue** to move to the last section of the wizard.
+
+7. Follow step 10 of [How to create a chart from the wizard](/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard) to complete your chart. To display each segment as a percentage, select **No** in the **Show values?** option in the last section of the chart wizard.
+
+## How to create a Radar Chart
+
+1. Create a Chart v2 widget in a dashboard of your choice.
+
+2. In the Chart Wizard, select Radar chart radio button and click on ![Continue 1](/images/chart-wizard-continue1.jpg) to move to the next step.
+
+   ![Chart type: Radar chart](/images/chart-type-radar.jpg)
+
+3. In this step of the wizard, click on ![Chart wizard add dataset](/images/chart-wizard-add-dataset.jpg) The first dataset represents your labels. The labels on a radar chart is each point on the outer part of the radar.
+
+4. As an example, we will link the first dataset to one of our sites from a process. We will display the **Risk** as a label and **Percentage** as the value.
+
+   ![Chart wizard add dataset](/images/radar-risk.jpg)
+
+   - Link the dataset to our risk assessment process in the **Business process** drop-down list. 
+
+   - Click on ![Conditions icon](/images/condition-icon.jpg) button to set a condition. Here we'll set a condition to only display the percentage of a risk if a **site** is **equal** to **Dublin Bay** (one of our existing sites in the process). This is our first radar diagram.  
+
+     ![Chart wizard add dataset](/images/radar-dublin.jpg)
+
+   - Select the **Risk** as the **Labels field**.
+
+   - Select **Percentage** in the values field 1 and select **sum** from the radio list. This will result in displaying the percentage of each risk of **Dublin Bay**.
+
+   - Click on **OK** in the **Add or Edit dataset** dialog to save your dataset.
+
+   - To have multiple radar diagram in one chart, follow the same step described in step 4.
+
+5. Click **Continue** to move to the next step. Here select a colour scheme for your datasets.
+
+6. When you are finished with your colour scheme, click on **Continue** to move to the last section of the wizard.
+
+7. Follow step 10 of [How to create a chart from the wizard](/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard) to complete your chart.
+
+## How to create a Doughnut Chart
+
+## How to create a Polar area Chart
 
 ### How to move Chart widgets
 
