@@ -11,7 +11,7 @@ Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that form
 You can use the file to **target** very specific details, for example a button in a particular process as shown below. This code will create specific styling for a button that is defined in a form in a process using Kianda **Designer**.
 
 ```css
-div[data-name="btn_user_manager_approve"], div[data-name="btn_approve"]{
+.buttonWhite{
     color: white;
     background-color: black;
     padding-bottom: 1px;
@@ -47,12 +47,12 @@ Bootstrap has released a **library** that can be imported into Adobe XD that all
 
 The **mock**-**up** was then used as a plan to **create** **this** **process**. You don’t have to create processes or workspaces exactly the same as the mock-ups to create during the **planning** **stage**, but they act as a great **reference** and allow you to have a **solid** **foundation** to build off of whilst still being able to **deviate** from the **design** when the need arises. Go to [Create your first Kianda process](/docs/getting-started/create-first-process/) for advice and tips on planning processes. To help you in planning your CSS design, see the sections below.
 
-### Effective use of CSS classes
+### Effective use of CSS classes in Kianda
 
-Although you may be familiar with the concept of using **CSS** **classes** to apply styling to several methods, you may not be familiar with the concept of using the **name** **field** of a Kianda element to **instantly** **apply** **styes** to that element that you have already developed. Within the **global** **CSS** file, we can create **style** **rules** and have them to apply to any **data**-**name** that contains a name that we precede with a **question** **mark**.
+You may be familiar with the concept of using **CSS** **classes** to apply styling to several elements, Kianda works on the same premises. Simply define a class within the Global CSS file, put some styling into the class and finally apply the same class to a Kianda element.
 
 ```css
-div[data-name$="?tile"].form-group{
+.tile {
      border-radius: 12px;
      border: 1px solid #e7eaee;
      background: white;
@@ -63,23 +63,23 @@ div[data-name$="?tile"].form-group{
 }
 ```
 
-It is good practice to use **relevant** and **descriptive** names for these style rules. In the example above we have a “?tile” section with styling rules to style an element to that the **appearance** of a tile.
+It is good practice to use **relevant** and **descriptive** names for these style rules. In the example above we have a “tile” section with styling rules to style an element to that the **appearance** of a tile.
 
-We can then add "**?tile**" to the end of the name of any form **element** for example a panel that we want to take the apply that **appearance** to.
+When your class style is defined and ready to apply, add "**tile**" in the **Custom CSS class name** field of any Kianda **element** you want to take the apply that **appearance** to.
 
-![Tile example in a panel](/images/destination-panel-tile.jpg)
+![Tile example in a panel](/images/destination-panel-tile2.jpg)
 
-In the image below “**?tile**” was used to style these two panels into two **tiles** aligned **side** **by** **side**. 
+In the image below “**tile**” was used to style these two panels into two **tiles** aligned **side** **by** **side**. 
 
 ![Table styling example](/images/table-styling-customised.png)
 
 The benefit of this method is that styles can be **created** **once** and very quickly applied to **elements** anywhere in your Kianda platform. This saves process designers having to revisit the **CSS** **file** every time they are creating a new process or dashboard.
 
 #### Small touches example
-Here is another example of that demonstrates how you can create a **defined** and **recognizable** design without bloating the visuals of your workspace. In this example the below a style rule is used to add a gold underline to the **header** **titles** of processes to separate the title of the page and the specific course you are currently viewing. 
+Here is another example of that demonstrates how you can create a **defined** and **recognizable** design without bloating the visuals of your workspace. In this example the below style rule is used to add a gold underline to the **header** **titles** of processes to separate the title of the page and the specific course you are currently viewing. 
 
 ```css
-div[data-name$="?headerTitle"]:not(.is-design) .header-prefix {
+.headerTitle {
   font-size: medium;
   text-transform: uppercase;
   color: #004B8B
@@ -213,7 +213,7 @@ Remember additional items can be added to the file whenever you wish. Best pract
 For example, if you have a button in a process and you want to change background colour and text colour, first you need to note down the **Unique Name.** Next, because you only want to target the button in a specific process and not all buttons in the system, use the **Element and attribute** selector. This will take the form of: 
 
 ```css
-button[data-name$="?pinkButton"]:not(.is-design) {}
+.pinkButton {}
 ```
 
 1. Within the **Global CSS File** add the necessary details, for example the above along with the necessary CSS properties, for example:
