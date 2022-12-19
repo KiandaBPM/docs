@@ -331,6 +331,38 @@ hide_summary: true -->
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="how-to-create-a-doughnut-chart">How to create a Doughnut Chart&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Create a Chart v2 widget in a dashboard of your choice.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the Chart Wizard, select Radar chart radio button and click on &lt;img src="https://docs.kianda.com/images/chart-wizard-continue1.jpg" alt="Continue 1"> to move to the next step.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/chart-type-doughnut.jpg" alt="Chart type: Radar chart">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In this step of the wizard, click on &lt;img src="https://docs.kianda.com/images/chart-wizard-add-dataset.jpg" alt="Chart wizard add dataset"> The first dataset represents your most outer doughnut.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>As an example, we will link the process to our &lt;strong>Building process&lt;/strong>. We will display the &lt;strong>Projects&lt;/strong> as a label. The value field for this dataset is set to &lt;strong>jobs&lt;/strong> which will result in the doughnut displaying number of jobs for each project.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/doughnut-jobs.jpg" alt="Chart wizard add dataset">&lt;/p>
+&lt;ul>
+&lt;li>Link the dataset to our risk assessment process in the &lt;strong>Business process&lt;/strong> drop-down list.&lt;/li>
+&lt;li>Select the &lt;strong>Projects&lt;/strong> as the &lt;strong>Labels field&lt;/strong>.&lt;/li>
+&lt;li>Select &lt;strong>Jobs&lt;/strong> in the values field 1 and select &lt;strong>Count&lt;/strong> from the radio list.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> in the &lt;strong>Add or Edit dataset&lt;/strong> dialog to save your dataset.&lt;/li>
+&lt;li>To have multiple doughnut diagram in one chart, follow the same step described in step 4.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;strong>Continue&lt;/strong> to move to the next step. Here select a colour scheme for your datasets.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished with your colour scheme, click on &lt;strong>Continue&lt;/strong> to move to the last section of the wizard.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h2 id="how-to-create-a-polar-area-chart">How to create a Polar area Chart&lt;/h2>
 &lt;h3 id="how-to-move-chart-widgets">How to move Chart widgets&lt;/h3>
 &lt;p>To move a &lt;strong>Chart widget&lt;/strong> on a dashboard:&lt;/p>
