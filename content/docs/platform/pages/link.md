@@ -27,13 +27,15 @@ To add a **Link widget** to a dashboard:
 
 4. The **Add widget** dialog box opens with a range of options for your new **Link widget**.
 
-   ![Dashboard Add widget dialog box](/images/dashboard-add-widget-link2.jpg)
+   ![Dashboard Add widget dialog box](/images/dashboard-add-widget-link3.jpg)
 
    Choose the options you want:
 
    - **Title** - You can insert the title you want for your **Link widget**. In our example, we'll call it 'Start New Process'.
 
    - **Layout columns** - You can choose how wide you want your **Link widget** to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example click half-way across the blue bar to create a widget that is 6 columns wide, or click to the very end of the bar to create a column that is 12 columns wide.
+
+   - **Custom CSS** - You can add a custom CSS class name to your link widget which you can use this to style the link. To learn more on adding CSS to your platform, visit [Global CSS](https://docs.kianda.com/docs/low-code/global-css/).
 
    - **Colour scheme** - You can choose from six colour options for the header of the widget (Navy, Green, Blue, Amber, Red or White), if you choose to display it.
 
@@ -47,14 +49,6 @@ To add a **Link widget** to a dashboard:
        
        See [Dashboard security](/docs/security/process-level-security#dashboard-security) and [Widget security](/docs/security/process-level-security#widget-security) for more information.
 
-   - **Layout container** - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new **Link widget** to be placed in.
-
-     A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to [How to add layout containers to a Dashboard page](/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page).
-     
-     In this example, we can select to place our new Link widget into one of three layout containers - Top, Middle or Bottom:
-     
-		![Dashboard Add widget dialog box select Layout container](/images/dashboard-select-layout-container.jpg)
-     
    - **Device visibility** - You can choose what devices and types of internet connections the dashboard **Link widget** will be visible on - select all the options you want from Desktop, Tablet, Mobile, Wi-Fi and Flight mode as to when the device can view the dashboards. By default, all options are selected.
 
      ![Device visibility](/images/devicevisibility.png)
@@ -71,7 +65,7 @@ To add a **Link widget** to a dashboard:
 
 7. Select the options you want for this link button in your **Link widget** in the **Edit link** dialog box.
 
-   ![Dashboard Link widget Edit link dialog box](/images/dashboard-link-edit-link-dialog.jpg)
+   ![Dashboard Link widget Edit link dialog box](/images/dashboard-link-edit-link-dialog2.jpg)
 
    The options available for your **Link widget** include:
 
@@ -107,17 +101,17 @@ To add a **Link widget** to a dashboard:
 	
    ##### 
    
-   - **QueryString parameters** - Complete this field if you want to pass a query string when the user clicks on the link. For example, you may want the current user's email address to be pre-populated in a form you are linking to.
+   - **QueryString parameters** - QueryString parameters can be added to the URL of the destination selected. You must define a process or dashboard as a destination to add a QueryString to the URL.
    
         - As an example, let's say that when the user clicks on the link in the Link widget, you want the First Name field of the new Annual Leave Request form they are brought to to be pre-populated with the name 'John'.
    
         - To do this, insert the unique name of that field, as well as the value you want that field to be pre-populated with into the **QueryString parameters** box - in this case that will be '**firstName=John**'. [The grey text that appears in the QueryString parameters field when you open the dialog box - param1=value1 is just placeholder text.]
 	
-          ![Dashboard Link widget query string parameters example](/images/dashboard-link-query-string-parameters.jpg)
+          ![Dashboard Link widget query string parameters example](/images/dashboard-link-query-string-parameters2.jpg)
 	
         - **Note**: The unique name of a field can be found by selecting the field in the form it is in and clicking on the **Edit field** button. The field's unique name can then be copied from the **Name (Unique)** field. 
 	
-          In our example, the unique name of the 'First Name' field in the 'Annual Leave Request' form is '**firstName**':
+          In our example, the unique name of the 'First Name' field in the 'Leave Request' form is '**firstName**':
           
           ![Dashboard Link widget example of field unique name](/images/field-unique-name.jpg)
           
@@ -132,6 +126,8 @@ To add a **Link widget** to a dashboard:
         	![Dashboard Link widget query string on load rule example](/images/dashboard-link-query-string-onload.jpg)
           
           To learn more about the **Set form field** rule, go to [Set form field rule](/docs/platform/rules/data/set-form-field/) or to learn more about Rules in general, see [Rules](/docs/platform/rules/).
+          
+        - **Append Query** - select this checkbox if you wish to append a QueryString parameter. If you leave this checkbox unchecked, the existing query string parameter will be overwritten. You can use the append functionality to store multiple query string parameters and populate multiple fields within a process or dashboard.
    
     - **Link icon** - You can choose the icon you want to appear on your Link widget button. Click on the down arrow and select the icon you want to use from the large number of options available.
    
