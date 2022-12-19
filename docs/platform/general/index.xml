@@ -179,7 +179,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>You can view any current tickets or logs in the main view pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/support-function.jpg" alt="Support view">&lt;/p>
+&lt;p>&lt;img src="images/support-function-updated.jpg" alt="Support view">&lt;/p>
 &lt;p>These are two main areas: &lt;a href="#support-tickets">&lt;strong>Support tickets&lt;/strong>&lt;/a> and &lt;a href="#application-logs">&lt;strong>Application logs&lt;/strong>&lt;/a>. These areas are explained in more detail below.&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -217,9 +217,16 @@
 &lt;h2 id="application-logs">Application logs&lt;/h2>
 &lt;p>System logs appear in this section when you click on &lt;strong>Load errors&lt;/strong>. Logs are listed by &lt;strong>date&lt;/strong>, &lt;strong>url/area&lt;/strong>, for example a User update, a system generated Message, User and &lt;strong>Browser&lt;/strong> involved in the log entry.&lt;/p>
 &lt;ol>
-&lt;li>Click in the &lt;strong>search box&lt;/strong> and enter text to search for logs based on key word entry.&lt;/li>
-&lt;li>If there are several pages of logs, click on the &lt;strong>page number&lt;/strong> to see entries for that page.&lt;/li>
-&lt;li>Click on &lt;strong>Clear errors&lt;/strong> to clear all existing logs from the system. Any changes after this time will be added to the logs again and visible to users.&lt;/li>
+&lt;li>
+&lt;p>Click in the &lt;strong>search box&lt;/strong> and enter text to search for logs based on key word entry.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If there are several pages of logs, click on the &lt;strong>page number&lt;/strong> to see entries for that page.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Clear errors&lt;/strong> to clear &lt;strong>&lt;u>all existing logs&lt;/u>&lt;/strong> from the system. Any changes after this time will be added to the logs again and visible to users. To clear existing logs click on &lt;strong>Confirm&lt;/strong> in the Remove all errors from log dialog box, or else click on &lt;strong>Cancel&lt;/strong> to cancel the deletion.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/remove-all-errors-confirm.jpg" alt="Remove all errors from log dialog box">&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
