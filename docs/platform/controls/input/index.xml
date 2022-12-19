@@ -130,8 +130,8 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong>: You can insert text to help the form user to complete the File upload field - if you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
-&lt;pre tabindex="0">&lt;code>![File upload help text example](/images/file-upload-help-text.jpg)
-&lt;/code>&lt;/pre>&lt;/li>
+&lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-help-text.jpg" alt="File upload help text example">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the File upload to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
@@ -488,19 +488,19 @@
 &lt;p>&lt;strong>Table controls&lt;/strong> (fields) can be inserted in a form if you want form users to complete a table, if you want display data pulled from external sources in a table, or if you want a table to be autofilled as part of a rule. Tables can include different types of fields, such as text boxes, date fields, number fields, and list fields.&lt;/p>
 &lt;p>For example, in a Purchase Order Request form, you may want to use a Table field to display certain information about items or suppliers and/or to capture details the user inputs about items being ordered. In addition, you could apply rules to some of the fields within the table to, for example, automatically calculate totals or percentages or to pull in data from external data sources.&lt;/p>
 &lt;p>For more information about applying rules to fields and forms go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and for more specific information about applying rules to &lt;strong>Table fields&lt;/strong> see &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
-&lt;p>We will now go through&lt;/p>
+&lt;p>We will now go through:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-get-started">how to add a Table field to a form&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-column-fields-in-a-table">how to edit column fields in a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-change-the-title-of-a-table-column">how to change the title of a Table colulmn&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-delete-a-column-from-a-table">how to delete a column from a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-change-the-field-type-of-an-existing-table-column">how to change the field type of an existing Table column&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-insert-new-columns-in-a-table">how to insert new columns in a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-move-columns-in-a-table">how to move columns in a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-the-table-field">how to edit the Table field&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-move-table-fields">how to move Table fields&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-delete-table-fields">how to delete Table fields&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-table-field-properties">how to edit Table field properties&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-get-started">How to add a Table field to a form&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-column-fields-in-a-table">How to edit column fields in a Table&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-change-the-title-of-a-table-column">How to change the title of a Table colulmn&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-delete-a-column-from-a-table">How to delete a column from a Table&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-change-the-field-type-of-an-existing-table-column">How to change the field type of an existing Table column&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-insert-new-columns-in-a-table">How to insert new columns in a Table&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-move-columns-in-a-table">How to move columns in a Table&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-the-table-field">How to edit the Table field&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-move-table-fields">How to move Table fields&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-delete-table-fields">How to delete Table fields&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-table-field-properties">How to edit Table field properties&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -580,20 +580,27 @@
 &lt;h2 id="how-to-edit-the-table-field">How to edit the Table field&lt;/h2>
 &lt;p>To edit the &lt;strong>Table field&lt;/strong> itself:&lt;/p>
 &lt;ol>
-&lt;li>Select the Table (by either clicking on the Table title or on the table&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
-&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>Select the Table (by either clicking on the Table title or on the table&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-edit.jpg" alt="Select table field to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - Table&lt;/strong> dialog box will open, enabling you to choose from a range of options:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/table-edit-dialog.jpg" alt="Edit table field dialog box">&lt;/p>
-&lt;p>The options within the &lt;strong>Edit field - Table&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/table-edit-dialog2.jpg" alt="Edit table field dialog box">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the Table from the default &amp;lsquo;&lt;strong>Table 1&lt;/strong>&amp;rsquo;. In our example, we could change the name of the table to &amp;lsquo;Existing Qualifications&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>&lt;strong>Name&lt;/strong> - This is a unique name for the field and inherits a camel case version of the entered Title.&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong> - you can insert text to help the form user to complete the Table. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-helptext.jpg" alt="Table help text example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Table to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Add row text&lt;/strong> - you can insert the text you want to appear with the Add Row button &lt;img src="https://docs.kianda.com/images/table-add-row.jpg" alt="Table add row button">. By default, this will be &amp;lsquo;add row&amp;rsquo;.&lt;/p>
@@ -628,22 +635,22 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-export-csv-button.jpg" alt="Table export to CSV button">&lt;/p>
 &lt;p>The &lt;strong>Columns to export&lt;/strong> will automatically show the columns in your table&lt;/p>
 &lt;/li>
-&lt;/ul>
-&lt;ol start="3">
-&lt;li>Make whatever changes you want to make to the table in the &lt;strong>Edit field - Table&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>Make whatever changes you want to make to the table in the &lt;strong>Edit field - Table&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
 &lt;p>If you want to make your table more dynamic - for example, so that calculations are made or information is autofilled into part of the table - you can add rules to it. To learn about applying rules to fields and forms go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and for more specific information about applying rules to &lt;strong>Table fields&lt;/strong> see &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="how-to-move-table-fields">How to move Table fields&lt;/h3>
 &lt;p>To move a &lt;strong>Table field&lt;/strong> within your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/li>
 &lt;li>Drag and drop the field wherever you want to move it to.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-move.jpg" alt="Table field drag handle">&lt;/p>
 &lt;h3 id="how-to-delete-table-fields">How to delete Table fields&lt;/h3>
 &lt;p>To delete a &lt;strong>Table field&lt;/strong> from your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
 &lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
 &lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
 &lt;/ol>
@@ -695,7 +702,7 @@
 &lt;p>A Text box field will be added to your form with the default title of &amp;lsquo;&amp;rsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;&amp;rsquo; and a pop-up message will say &amp;lsquo;Field added&amp;rsquo;.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textbox-inserted.jpg" alt="Text box inserted">&lt;/p>
 &lt;p>In the example shown here, a Text box field has been added to a form called &amp;lsquo;Training Request&amp;rsquo; in a process called &amp;lsquo;Training Process&amp;rsquo;, as the first step in adding two Text box fields (which will be used to capture the first name and surname of the user who is completing the form).&lt;/p>
-&lt;p>You can also place a Text box within an element - such as within a panel in a form. In the example above, the Text box was inserted outside the panel in the form. If you wanted to insert it &lt;em>within&lt;/em> the panel, simply select the panel itself by clicking on its drag handle &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag Handle icon"> and then click on &lt;strong>Controls&amp;gt;Input&amp;gt;Text box&lt;/strong> - this will result in the new Text box being added inside the panel, as shown here:&lt;/p>
+&lt;p>You can also place a Text box within an element - such as within a panel in a form. In the example above, the Text box was inserted outside the panel in the form. If you wanted to insert it &lt;em>within&lt;/em> the panel, simply select the panel itself by clicking on its drag handle &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag Handle icon"> and then click on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Input&lt;/strong> &amp;gt; &lt;strong>Text box&lt;/strong> - this will result in the new Text box being added inside the panel, as shown here:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textbox-inside-panel.jpg" alt="Text box inside a panel">&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -704,23 +711,27 @@
 &lt;h4 id="how-to-edit-a-text-box-field">How to edit a Text box field&lt;/h4>
 &lt;p>To edit a &lt;strong>Text box field&lt;/strong>:&lt;/p>
 &lt;ol>
-&lt;li>Select the Text box (by either clicking on its title or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
-&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>Select the Text box (by either clicking on its title or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textbox-edit-button.jpg" alt="Select text box edit button">&lt;/p>
 &lt;p>The &lt;strong>Edit field - Text box&lt;/strong> dialog box will open, enabling you to choose from a range of options:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-edit-dialog.jpg" alt="Edit table field dialog box">&lt;/p>
-&lt;p>The options within the &lt;strong>Edit field - Text box&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/textbox-edit-dialog2.jpg" alt="Edit table field dialog box">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the Text box from the default &amp;lsquo;&lt;strong>Text box 1&lt;/strong>&amp;rsquo;. In our example, we could change the name of the first Text box to &amp;lsquo;First Name&amp;rsquo; and the second Text box to &amp;lsquo;Surname&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Name (unique)&lt;/strong> - this is a unique name for the Text box field&lt;/p>
+&lt;p>&lt;strong>Name&lt;/strong> - This is a unique name for the field and inherits a camel case version of the entered Title.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong> - you can insert text to help the form user to complete the Table. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textbox-help-text.jpg" alt="Table help text example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Textbox to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Mode&lt;/strong> - you can decide whether your Text box is limited to a &lt;strong>Single line of text&lt;/strong> or will allow for &lt;strong>Multiple lines of text&lt;/strong> or can choose &lt;strong>Rich text&lt;/strong>. Different additional options will then be shown, depending on the Mode you have chosen.&lt;/p>
@@ -767,11 +778,11 @@
 &lt;p>&lt;strong>Expression&lt;/strong> - If you want to use your Text box field in a way that is more dynamic, you could decide to add an expression to it. For example, an Expression can be used to return a value - if you apply the Expression &amp;lsquo;&lt;strong>Date()&lt;/strong>&amp;rsquo; to your Text box field, it will return the current date and time.&lt;/p>
 &lt;p>To add an Expression to your Text box field, click on the ellipsis button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button in the Expression box"> to the right. This will open the &lt;strong>Expression builder&lt;/strong> dialog box:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/expression-builder.jpg" alt="Expression builder dialog box">&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;p>You can click on the &lt;strong>Reference&lt;/strong> button &lt;img src="https://docs.kianda.com/images/reference.png" alt="Reference button in the Expression builder dialog box"> to see some of the most commonly used Expressions. To learn more about using Expressions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
-&lt;ol start="3">
-&lt;li>Make whatever changes you want to make to the Text box field in the &lt;strong>Edit field - Text box&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;/li>
+&lt;li>
+&lt;p>Make whatever changes you want to make to the Text box field in the &lt;strong>Edit field - Text box&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h4 id="how-to-move-text-box-fields">How to move Text box fields&lt;/h4>
 &lt;p>To move a &lt;strong>Text box&lt;/strong> within your form:&lt;/p>
@@ -788,8 +799,8 @@
 &lt;h4 id="how-to-delete-text-box-fields">How to delete Text box fields&lt;/h4>
 &lt;p>To delete a &lt;strong>Text box field&lt;/strong> from your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
 &lt;li>Click on &lt;strong>OK&lt;/strong> to confirm (or click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion).&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-text-box-field-properties">How to edit Text box field properties&lt;/h3>
@@ -807,7 +818,7 @@
 &lt;p>&lt;strong>Show title&lt;/strong> - If this is selected, the Text box field title will be shown in the form.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Required&lt;/strong> - If this is selected, the Text box field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).&lt;/p>
+&lt;p>&lt;strong>Required&lt;/strong> - If this is selected, the Text box field will be a mandatory field that users must complete (denoted by a red asterisk next to the field title).&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Enabled&lt;/strong> - If this is selected, the user will be able to edit or interact with the field.&lt;/p>
@@ -852,19 +863,23 @@
 &lt;/li>
 &lt;li>
 &lt;p>A &lt;strong>New field - Toggle&lt;/strong> dialog box will open with a range of options you can choose from for your new Toggle field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-dialog.jpg" alt="New toggle field dialog box">&lt;/p>
-&lt;p>The options available in the &lt;strong>New field - Toggle&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-dialog2.jpg" alt="New toggle field dialog box">&lt;/p>
+&lt;ol start="5">
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the Toggle field from the default title &lt;strong>Toggle 1&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Name&lt;/strong> - This is a unique name for the field.&lt;/p>
+&lt;p>&lt;strong>Name&lt;/strong> - This is a unique name for the field and inherits a camel case version of the entered Title.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to explain to the form user what selecting the toggle/checkbox means. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted. In this example, the Toggle field is titled &amp;lsquo;Approve Training&amp;rsquo; and has associated help text:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/toggle-approve-training.jpg" alt="Toggle field help text icon">&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/toggle-helptext-example.jpg" alt="List field help text example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Toggle to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Value when enabled&lt;/strong> - You can set the value for when the user selects the toggle/checkbox. For example, the value when it is selected could be &amp;lsquo;Yes&amp;rsquo;.&lt;/p>
@@ -874,8 +889,6 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Display mode&lt;/strong> - You can choose to have the Toggle field display as either a &lt;strong>Toggle button&lt;/strong> &lt;img src="https://docs.kianda.com/images/toggle-icon.jpg" alt="Toggle button icon"> or &lt;strong>Checkbox&lt;/strong> &lt;img src="https://docs.kianda.com/images/toggle-checkbox-icon.jpg" alt="Checkbox icon">.&lt;/p>
-&lt;/li>
-&lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>Once you complete the &lt;strong>New field - Toggle&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong> button, a new &lt;strong>Toggle field&lt;/strong> is added to your form, with the name you inserted as the &lt;strong>Title&lt;/strong> in the dialog box (by default, the title is &lt;strong>Toggle 1&lt;/strong> unless you change it).&lt;/p>
@@ -889,14 +902,18 @@
 &lt;h4 id="how-to-edit-a-toggle-field">How to edit a Toggle field&lt;/h4>
 &lt;p>To edit a &lt;strong>Toggle field&lt;/strong>:&lt;/p>
 &lt;ol>
-&lt;li>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/toggle-edit.jpg" alt="Select toggle field to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - Toggle&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - Toggle&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle#how-to-get-started">How to get started&lt;/a>).&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-example-dialog.jpg" alt="Edit toggle field dialog box">&lt;/p>
-&lt;ol start="3">
-&lt;li>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
+&lt;p>&lt;img src="https://docs.kianda.com/images/toggle-example-dialog2.jpg" alt="Edit toggle field dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;p>You can apply rules to a &lt;strong>Toggle field&lt;/strong> to make it more dynamic so that, for example, it generates information that is automatically inserted into another field.&lt;/p>
 &lt;p>For example, you could apply a &amp;lsquo;&lt;strong>Set date&lt;/strong>&amp;rsquo; rule to your &amp;lsquo;&amp;rsquo;&lt;strong>Order Received&lt;/strong>&amp;rsquo; toggle field so that it generates a date to be displayed in a &amp;lsquo;&lt;strong>Date received&lt;/strong>&amp;rsquo; field when &lt;strong>Order received&lt;/strong> is selected by the user - this will mean that when the user selects the Order Received toggle field, this automatically generates a date stamp for when the order was received:&lt;/p>
@@ -905,15 +922,15 @@
 &lt;h4 id="how-to-move-a-toggle-field">How to move a Toggle field&lt;/h4>
 &lt;p>To move a &lt;strong>Toggle field&lt;/strong>:&lt;/p>
 &lt;ol>
-&lt;li>Simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
-&lt;li>Drag and drop the field wherever you want to move it to within your form&lt;/li>
+&lt;li>Simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/li>
+&lt;li>Drag and drop the field wherever you want to move it to within your form.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/toggle-move.jpg" alt="Toggle field drag handle">&lt;/p>
 &lt;h4 id="how-to-delete-a-toggle-field">How to delete a Toggle field&lt;/h4>
 &lt;p>To delete a &lt;strong>Toggle field&lt;/strong> from your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
 &lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-toggle-field-properties">How to edit Toggle field properties&lt;/h3>
@@ -973,24 +990,28 @@
 &lt;/li>
 &lt;li>
 &lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>User picker&lt;/strong>. If you want to insert the new field into a panel in your form, first select the panel by clicking on the drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and then insert the new User picker field from the Controls menu.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-insert.jpg" alt="Insert User picker field">&lt;/p>
 &lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-insert.jpg" alt="Insert User picker field">&lt;/p>
+&lt;ol start="5">
 &lt;li>
 &lt;p>A &lt;strong>New field - User picker&lt;/strong> dialog box will open with a range of options you can choose from for your new User picker field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-dialog.jpg" alt="New field user picker dialog box">&lt;/p>
-&lt;p>The options available include:&lt;/p>
-&lt;ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-dialog2.jpg" alt="New field user picker dialog box">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - You can change the name of the User picker field from the default &amp;lsquo;&amp;rsquo;&lt;strong>User picker 1&lt;/strong>&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Name (Unique)&lt;/strong> - This is a unique name for the field.&lt;/p>
+&lt;p>&lt;strong>Name&lt;/strong> - This is a unique name for the field and inherits a camel case version of the entered Title.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user to complete the User Picker field. Taking the example of the &amp;lsquo;Manager&amp;rsquo; User picker field in a &amp;lsquo;Training Request&amp;rsquo; form, you could insert help text to this effect:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-helptext-example.jpg" alt="User picker field help text example dialog box">&lt;/p>
 &lt;p>If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-helptext-shown.jpg" alt="User picker field help text example icon">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the User picker to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Selection Mode&lt;/strong> - You can choose whether the user will only be able to select one user from the User Picker list (by selecting &lt;strong>Single&lt;/strong>) or whether the user will be able to select multiple users (by selecting &lt;strong>Multiple&lt;/strong>).&lt;/p>
@@ -1026,8 +1047,6 @@
 &lt;p>If you choose &lt;strong>Yes&lt;/strong>, a selection option menu will be available to the form user to click (to change the list of users they can select from):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-options.jpg" alt="User picker field with selection option menu">&lt;/p>
 &lt;/li>
-&lt;/ul>
-&lt;/li>
 &lt;li>
 &lt;p>Once you complete the &lt;strong>New field - User picker&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong>, a new &lt;strong>User picker field&lt;/strong> is added to your form, with the name you inserted as the &lt;strong>Title&lt;/strong> in the dialog box (by default the title is &lt;strong>User picker 1&lt;/strong> unless you change it).&lt;/p>
 &lt;p>In the example of our Training Request Form, the new User picker field (titled &lt;strong>Manager&lt;/strong>) added to the form could look like this when a user views it on their mobile phone:&lt;/p>
@@ -1040,12 +1059,12 @@
 &lt;h4 id="how-to-edit-a-user-picker-field">How to edit a User picker field&lt;/h4>
 &lt;p>To edit a &lt;strong>User picker field&lt;/strong>:&lt;/p>
 &lt;ol>
-&lt;li>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/li>
+&lt;li>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-edit.jpg" alt="Select User picker field to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - User picker&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - User picker&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker#how-to-get-started">How to get started&lt;/a>).&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-edit-dialog.jpg" alt="Edit User picker field dialog box">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-edit-dialog2.jpg" alt="Edit User picker field dialog box">&lt;/p>
 &lt;p>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
 &lt;h4 id="how-to-move-a-user-picker-field">How to move a User picker field&lt;/h4>
 &lt;p>To move a &lt;strong>User picker field&lt;/strong> simply select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button"> and drag and drop the field wherever you want to move it to within your form.&lt;/p>
@@ -1053,9 +1072,9 @@
 &lt;h4 id="how-to-delete-a-user-picker-field">How to delete a User picker field&lt;/h4>
 &lt;p>To delete a &lt;strong>User picker field&lt;/strong> from your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s title or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm&lt;/li>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s title or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-user-picker-field-properties">How to edit User picker field properties&lt;/h3>
 &lt;p>To view or edit the field properties associated with a &lt;strong>User picker field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>

@@ -2550,8 +2550,8 @@ The Safety Team
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong>: You can insert text to help the form user to complete the File upload field - if you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
-&lt;pre tabindex="0">&lt;code>![File upload help text example](/images/file-upload-help-text.jpg)
-&lt;/code>&lt;/pre>&lt;/li>
+&lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-help-text.jpg" alt="File upload help text example">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the File upload to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
