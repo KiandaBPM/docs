@@ -4,7 +4,7 @@ weight: 9
 typora-root-url: ..\..\..\..\static
 ---
 
-Kianda **Developer** is available to **administrators** and those users with the role **Developer**. The Developer function is found in the left-hand side pane, under **Administration**. The function allows you to create customised field, rule and dashboard widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.
+Kianda **Developer** is available to **administrators** and those users with the role **Developer**. The Developer function is found in the left-hand side pane, under **Administration**. The function allows you to create customised field, rule, dashboard and data connector widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.
 
 You can also quickly use Kianda **Developer** to add webhooks, providing an efficient way to push GET requests to other applications in real-time as the Kianda process(es) runs and avoiding the need to poll for data. 
 
@@ -16,15 +16,17 @@ To start using **Developer**:
 
 1. Click on **Administration** in the left-hand side pane and then click on **Developer**.
 
-2. Any customised widgets that have been created will be visible in the **Developer resources** main widget view. 
+2. Any customised widgets that have been created will be visible in the **Developer resources** view below. **Field**, **rule** and **dashboard** widgets are visible in the left-hand **Widgets** pane and customised **connectors** are available in the right-hand **Connectors** pane.
 
-   ![Developer view](/images/developer-view.jpg)
+   Note that **widgets** can be **grouped** into folders as shown in the image below. This is explained in step 6.
+
+   ![Developer view](/images/developer-view-updated.jpg)
 
 3. To view details for existing widgets, click on the widget name.
 
    ![Widget example](/images/widget-example.jpg)
 
-4. In the **Widget** page you can update existing Widget UI and Widget Code within the editor and then click on **Update** ![Update button](/images/update-button.jpg). Alternatively click on **Close** to exit the page at any time.
+4. In the **Widget** pane you can update existing Widget UI and Widget Code within the editor and then click on **Update** ![Update button](/images/update-button.jpg). Alternatively click on **Close** to exit the page at any time.
 
 5. From the **Developer resources** main widget view you can:
 
@@ -34,7 +36,7 @@ To start using **Developer**:
 
 6. To create a new widget click on **New widget** ![New widget button](/images/new-widget-button.jpg). This will open the **Edit widget** dialog box.
 
-   ![Edit widget example](/images/edit-widget-page.jpg)
+   ![Edit widget example](/images/edit-widget-dialog-box.jpg)
 
    Fill out details as follows:
 
@@ -44,16 +46,20 @@ To start using **Developer**:
 
    - **Widget Icon** - choose an appropriate icon from the drop-down list.
 
+   - **Group** - add in a group name to group widgets together in a folder in the main widget view.
+
    - **Widget type** - choose from **Field**, **Rule** or **Dashboard widget**.
 
    Go to [EmberJS templating basics](#emberjs-templating-basics) to find out more about EmberJS to build widgets.
 
    When you are finished editing the dialog box click on **OK** or click on **Close** at any time to exit.
 
-7. Click on **Webhooks** to configure URLs to respond to process instance create, update and delete events. 
+7. To create a new customised connector click on the **New Connector** button ![New connector button](/images/new-connector-button.jpg) and populate the four tabs that appear. Details on how to create a customised connector are found at [Custom connectors](//docs/low-code/custom-connector/).
+
+8. To create your own webhooks, click on **Webhooks** to configure URLs to respond to process instance create, update and delete events. 
 
    ![Instance Callback URLs](/images/webhook-edit.jpg)
-   
+
    - Move the slider across for each type of operation (Create, Update, Delete) to add in a URL to enable callback. 
      - For example for **Enable Deleted Callback**, will enable the URL callback every time a process instance is updated. 
      - HTTP GET with parameters `instanceID={instanceID}, processName={processName}` and `eventType=deleted` will be issued to the provided URL.

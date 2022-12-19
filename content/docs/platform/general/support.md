@@ -13,7 +13,7 @@ To use the **Support** function:
 
 2. You can view any current tickets or logs in the main view pane. 
 
-   ![Support view](/images/support-function.jpg)
+   ![Support view](images/support-function-updated.jpg)
 
    
 
@@ -68,8 +68,12 @@ Existing support tickets appear within this section, showing the **title** of th
 System logs appear in this section when you click on **Load errors**. Logs are listed by **date**, **url/area**, for example a User update, a system generated Message, User and **Browser** involved in the log entry. 
 
 1. Click in the **search box** and enter text to search for logs based on key word entry. 
+
 2. If there are several pages of logs, click on the **page number** to see entries for that page. 
-3. Click on **Clear errors** to clear all existing logs from the system. Any changes after this time will be added to the logs again and  visible to users. 
+
+3. Click on **Clear errors** to clear **<u>all existing logs</u>** from the system. Any changes after this time will be added to the logs again and visible to users. To clear existing logs click on **Confirm** in the Remove all errors from log dialog box, or else click on **Cancel** to cancel the deletion.
+
+   ![Remove all errors from log dialog box](/images/remove-all-errors-confirm.jpg)
 
 
 

@@ -51,11 +51,11 @@ To create custom widgets:
 
 1. Go to the **Side menu** > **Administration** > **Developer**
 
-2. Click on **New widget**.
+2. Click on **Add widget**.
 
-3. Fill out the **Edit widget** dialog box - that is **Title**, **Unique Id** (which is autofilled from the title), **Widget Icon**, where you can select from hundreds of icons, and then **Widget type**. There are 3 options: **[Field](#field-widget)**, **[Rule](#rule-widget)** or **[Dashboard widget](#dashboard-widget)** - click on each link for more details. 
+3. Fill out the **Edit widget** dialog box - that is **Title**, **Unique Id** (which is autofilled from the title), **Widget Icon**, where you can select from hundreds of icons, **Group** where you can specify what widget folder you would like the new widget to be added to, and then **Widget type**. There are 3 options: **[Field](#field-widget)**, **[Rule](#rule-widget)** or **[Dashboard widget](#dashboard-widget)** - click on each link for more details. 
 
-   ![Edit widget](/images/editwidget.gif)
+   ![Edit widget](/images/edit-widget2.jpg)
 
 4. Click on **OK** when complete.
 
@@ -63,7 +63,7 @@ To create custom widgets:
 
    ***Widget view***
 
-   ![Widget view](/images/widgetview2.jpg)
+   ![Widget view](/images/widgetview.gif)
 
 6. [Webhooks](#webhooks) can be created to send a message to a specific URL by clicking on the **Webhooks** button. Click the link for more information.
 
@@ -126,7 +126,7 @@ To create webhooks:
 
 1. Click on the **Webhooks** button from the main widget view to add a webhook. 
 
-![Webhooks](/images/webhooks50.gif)
+   ![Webhooks](/images/webhooks50.gif)
 
 2. Use the slider to turn on **Enable Created Callback**, **Enable Updated Callback**, **Enable Deleted Callback** and **type in the URL** in each case to respond to process instance create, update and deleted events. 
 

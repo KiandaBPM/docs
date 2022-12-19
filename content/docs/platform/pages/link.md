@@ -101,33 +101,33 @@ To add a **Link widget** to a dashboard:
 	
    ##### 
    
-   - **QueryString parameters** - QueryString parameters can be added to the URL of the destination selected. You must define a process or dashboard as a destination to add a QueryString to the URL.
+   - **QueryString parameters** - QueryString parameters can be added to the URL of the destination selected. You must define a process or dashboard as a destination to add a QueryString to the URL. 
+   
+        - **Append Query** - there are two ways the append query works, that depends whether it redirects you to a **Process** or a **Dashboard**. When redirecting to a **process**, you should always check this box as the query will not automatically append to your URL. When redirecting to a dashboard and the checkbox is checked, the query will append to the existing query string. But if the checkbox is unchecked, the query string will be overwritten. This is useful when working with multiple dashboards.
    
         - As an example, let's say that when the user clicks on the link in the Link widget, you want the First Name field of the new Annual Leave Request form they are brought to to be pre-populated with the name 'John'.
-   
+	
         - To do this, insert the unique name of that field, as well as the value you want that field to be pre-populated with into the **QueryString parameters** box - in this case that will be '**firstName=John**'. [The grey text that appears in the QueryString parameters field when you open the dialog box - param1=value1 is just placeholder text.]
 	
           ![Dashboard Link widget query string parameters example](/images/dashboard-link-query-string-parameters2.jpg)
 	
         - **Note**: The unique name of a field can be found by selecting the field in the form it is in and clicking on the **Edit field** button. The field's unique name can then be copied from the **Name (Unique)** field. 
-	
-          In our example, the unique name of the 'First Name' field in the 'Leave Request' form is '**firstName**':
-          
-          ![Dashboard Link widget example of field unique name](/images/field-unique-name.jpg)
-          
-        - For our query string parameter example to work, we now need to add an On load **Set form field rule** (that is, a rule that is executed when the form is opened that will run a query string to automatically populate a field in the form).
    
+          In our example, the unique name of the 'First Name' field in the 'Leave Request' form is '**firstName**':
+   
+          ![Dashboard Link widget example of field unique name](/images/field-unique-name.jpg)
+   
+        - For our query string parameter example to work, we now need to add an On load **Set form field rule** (that is, a rule that is executed when the form is opened that will run a query string to automatically populate a field in the form).
+	
           To do this, we go to Designer, and add a **Set form field** rule to execute when the form is loaded. In our example, the rule will set the 'First Name' field when the form is loaded:
-	       
+	
           ![Dashboard Link widget query string form on load rule example](/images/dashboard-link-query-string-set-form-field.jpg)
-	       
+   
           Once the rule has been saved, it can be viewed in the **On load rules** section of the right side menu when the process is opened:
    
-        	![Dashboard Link widget query string on load rule example](/images/dashboard-link-query-string-onload.jpg)
-          
+          ![Dashboard Link widget query string on load rule example](/images/dashboard-link-query-string-onload.jpg)
+   
           To learn more about the **Set form field** rule, go to [Set form field rule](/docs/platform/rules/data/set-form-field/) or to learn more about Rules in general, see [Rules](/docs/platform/rules/).
-          
-        - **Append Query** - select this checkbox if you wish to append a QueryString parameter. If you leave this checkbox unchecked, the existing query string parameter will be overwritten. You can use the append functionality to store multiple query string parameters and populate multiple fields within a process or dashboard.
    
     - **Link icon** - You can choose the icon you want to appear on your Link widget button. Click on the down arrow and select the icon you want to use from the large number of options available.
    

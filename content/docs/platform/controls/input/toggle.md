@@ -23,27 +23,31 @@ For example, in a Training Request form, a Toggle field could be used to record 
 
 4. A **New field - Toggle** dialog box will open with a range of options you can choose from for your new Toggle field.
 
-	![New toggle field dialog box](/images/toggle-dialog.jpg)
+  
 
-   The options available in the **New field - Toggle** dialog box include:
+  ![New toggle field dialog box](/images/toggle-dialog2.jpg)
 
-   - **Title** - You can change the name of the Toggle field from the default title **Toggle 1**. 
+  
 
-   - **Name** - This is a unique name for the field.
+5. **Title** - You can change the name of the Toggle field from the default title **Toggle 1**. 
 
-   - **Help text** - You can insert text to explain to the form user what selecting the toggle/checkbox means. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted. In this example, the Toggle field is titled 'Approve Training' and has associated help text:
+6. **Name** - This is a unique name for the field and inherits a camel case version of the entered Title.
 
-     ![Toggle field help text icon](/images/toggle-approve-training.jpg)
+7. **Help text** - You can insert text to explain to the form user what selecting the toggle/checkbox means. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted. In this example, the Toggle field is titled 'Approve Training' and has associated help text:
 
-     ![List field help text example](/images/toggle-helptext-example.jpg)
+   ![Toggle field help text icon](/images/toggle-approve-training.jpg)
 
-   - **Value when enabled** - You can set the value for when the user selects the toggle/checkbox. For example, the value when it is selected could be 'Yes'.
+   ![List field help text example](/images/toggle-helptext-example.jpg)
 
-   - **Value when disabled** - You can set the value for when the user does *not* select the toggle/checkbox. For example, the value when it is not selected could be 'No'.
+8. **Custom CSS class name** - You can type the name of a CSS class to allow the Toggle to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
-   - **Display mode** - You can choose to have the Toggle field display as either a **Toggle button** ![Toggle button icon](/images/toggle-icon.jpg) or **Checkbox** ![Checkbox icon](/images/toggle-checkbox-icon.jpg).
+9. **Value when enabled** - You can set the value for when the user selects the toggle/checkbox. For example, the value when it is selected could be 'Yes'.
 
-5. Once you complete the **New field - Toggle** dialog box and click **OK** button, a new **Toggle field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default, the title is **Toggle 1** unless you change it).
+10. **Value when disabled** - You can set the value for when the user does *not* select the toggle/checkbox. For example, the value when it is not selected could be 'No'.
+
+11. **Display mode** - You can choose to have the Toggle field display as either a **Toggle button** ![Toggle button icon](/images/toggle-icon.jpg) or **Checkbox** ![Checkbox icon](/images/toggle-checkbox-icon.jpg).
+
+12. Once you complete the **New field - Toggle** dialog box and click **OK** button, a new **Toggle field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default, the title is **Toggle 1** unless you change it).
 
 
 If we take the example of the Training Request form we already discussed, with a Toggle field called 'Approve Training Request' that is formatted to be a checkbox, the Toggle field could look like this when a user views it on their mobile phone:
@@ -62,14 +66,15 @@ As we go through the options available for editing a Toggle field, we will keep 
 
 To edit a **Toggle field**:
 
-1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
 
-![Select toggle field to edit](/images/toggle-edit.jpg)
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
 
-The **Edit field - Toggle** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - Toggle** dialog box (as already discussed in [How to get started](/docs/platform/controls/input/toggle#how-to-get-started)).
+   ![Select toggle field to edit](/images/toggle-edit.jpg)
 
-![Edit toggle field dialog box](/images/toggle-example-dialog.jpg)
+   The **Edit field - Toggle** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - Toggle** dialog box (as already discussed in [How to get started](/docs/platform/controls/input/toggle#how-to-get-started)).
+
+   ![Edit toggle field dialog box](/images/toggle-example-dialog2.jpg)
 
 3. You can make any changes you wish in this dialog box and then click **OK** to confirm. 
 
@@ -85,8 +90,8 @@ To learn more about applying rules to fields, see [Rules](/docs/platform/rules/)
 
 To move a **Toggle field**:
 
-1. Simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
-2. Drag and drop the field wherever you want to move it to within your form
+1. Simply select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
+2. Drag and drop the field wherever you want to move it to within your form.
 
 ![Toggle field drag handle](/images/toggle-move.jpg)
 
@@ -94,8 +99,8 @@ To move a **Toggle field**:
 
 To delete a **Toggle field** from your form:
 
-1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png). 
 3. Click on **OK** to confirm.
 
 
