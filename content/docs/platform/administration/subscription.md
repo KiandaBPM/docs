@@ -18,7 +18,7 @@ To view, use the Subscription function as an administrator:
 
 2. The main Subscription page opens.
 
-   ![Subscription view](/images/subscription-page.jpg)
+   ![Subscription view](/images/subscription-page-new.jpg)
 
    In this view you can typically make changes to six areas:
 
@@ -39,6 +39,8 @@ Details on each area are available below.
 
 ## Look and Feel
 You can access this section by clicking on **Open Wizard** > **Look and Feel** or by clicking on **Look and Feel** in the main **Subscription** page. 
+
+Alternatively you can access this section by clicking on the **Look and Feel** shortcut found in the [**Administration**](/docs/platform/administration/) menu.
 
  ![Look and feel](/images/look-and-feel.jpg)
 
