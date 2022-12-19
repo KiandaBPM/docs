@@ -2,13 +2,15 @@
 title: "Rules"
 weight: 4
 typora-root-url: ..\..\..\..\static
+toc_hide: true
+hide_summary: true
 ---
 
 Business rules are what makes Kianda forms come alive. They represent the actual actions users intend to perform when they interact with form components. There are 60 rules you can apply to forms, see [Rules list](#rules-list).
 
 There are two key principles to consider when working with forms:
 
-1. [Rule design](#rule-design) - what type of rule you are going to apply and where, for example you can apply a rule at field/control level, form level and process level. For the latter the rule will execute 'onload' that is when the process instance is initiated. 
+1. [Rule design](#rule-design) - you can decide what type of rule you are going to apply and where, as a rule can be applied at field/control level, form level and process level. For the latter the rule will execute 'onload' that is when the process instance is initiated. 
 
 2. [Rule order](#rule-order) - if there are several rules attached to an item like a button, then the order of execution is important and can be modified to suit your needs.
 
@@ -55,13 +57,32 @@ To get started with rule design:
 
 4. When you have chosen your rule, an **Edit rule** dialog box opens allowing you to configure the rule to execute a particular action, which can be according to [conditions](/docs/platform/rules/general/add-conditions/) if you wish.
 
-The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the **Edit rule** dialog box for each rule.
+The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the **Edit rule** dialog box for each rule. The next section highlights where rules can be applied.
+
+### Where to apply rules ###
+As introduced in the section above, rules can be added at **process**, **form** and **control/field** level, and are typically used as follows, bearing in mind that [Conditions](/docs/platform/rules/general/add-conditions/) can be applied to rules to control how the rules are executed:
+
+- A rule applied at **process level** executes 'onload' meaning that when a new process instance is initiated, the rule will automatically execute, for example when someone opens a form, a 'Send email' rule could be used to send an email to someone notifying them that a form has been opened.
+
+- A rule applied at **form level** executes when the form is submitted. 
+
+- A rule applied at **control level** executes when the chosen field is clicked on, or involved in user or system interaction.
+
+  As with all rules, [Conditions](/docs/platform/rules/general/add-conditions/) within the rule determine how the rule is triggered, for example a rule applied to a control like a date field, may be executed only if a certain value is input into another field within a form.
+
+#### Edit rule dialog box ####
+
+Whenever a rule is added, the **Edit rule dialog box** will remind you where and at what level the rule is being applied, for example in the image below a **Send email** rule is being added to a button/control called **Submit**.
+
+![Where a rule is applied notice in an Edit rule dialog box](/images/rule-applied-dialog-box.jpg)
+
+**Note:** Make sure that you save the process after adding forms and/or controls and before adding rules so that the names of the processes, forms or controls are committed to the Kianda database. Then the dialog box above can then retrieve the name(s) for use as shown above.
 
 
 
 ## Rule order ###
 
-If there is more than one rule for an item like a field or button, then the order of execution must be considered. 
+If there is more than one rule for an item like a field or process, then the order of execution must be considered. 
 
 For example for a **Submit** button on a form, you may want a **Send email rule** to be executed first before any other rule is executed, that is an automated email will be sent before anything else. To ensure this happens, click on the **Submit** button to make sure you are in **Edit** mode, and under **Rules** in the right-hand pane,  drag the **Send email** rule to the top of the list by clicking on the rule and dragging it to the top of the list of rules.
 
