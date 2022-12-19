@@ -1198,7 +1198,7 @@ hide_summary: true -->
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Add widget&lt;/strong> dialog box opens with a range of options for your new &lt;strong>Link widget&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-add-widget-link2.jpg" alt="Dashboard Add widget dialog box">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-add-widget-link3.jpg" alt="Dashboard Add widget dialog box">&lt;/p>
 &lt;p>Choose the options you want:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -1206,6 +1206,9 @@ hide_summary: true -->
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout columns&lt;/strong> - You can choose how wide you want your &lt;strong>Link widget&lt;/strong> to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example click half-way across the blue bar to create a widget that is 6 columns wide, or click to the very end of the bar to create a column that is 12 columns wide.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom CSS&lt;/strong> - You can add a custom CSS class name to your link widget which you can use this to style the link. To learn more on adding CSS to your platform, visit &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Colour scheme&lt;/strong> - You can choose from six colour options for the header of the widget (Navy, Green, Blue, Amber, Red or White), if you choose to display it.&lt;/p>
@@ -1224,12 +1227,6 @@ hide_summary: true -->
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Layout container&lt;/strong> - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new &lt;strong>Link widget&lt;/strong> to be placed in.&lt;/p>
-&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
-&lt;p>In this example, we can select to place our new Link widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
-&lt;/li>
-&lt;li>
 &lt;p>&lt;strong>Device visibility&lt;/strong> - You can choose what devices and types of internet connections the dashboard &lt;strong>Link widget&lt;/strong> will be visible on - select all the options you want from Desktop, Tablet, Mobile, Wi-Fi and Flight mode as to when the device can view the dashboards. By default, all options are selected.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/devicevisibility.png" alt="Device visibility">&lt;/p>
 &lt;/li>
@@ -1246,7 +1243,7 @@ hide_summary: true -->
 &lt;/li>
 &lt;li>
 &lt;p>Select the options you want for this link button in your &lt;strong>Link widget&lt;/strong> in the &lt;strong>Edit link&lt;/strong> dialog box.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-edit-link-dialog.jpg" alt="Dashboard Link widget Edit link dialog box">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-edit-link-dialog2.jpg" alt="Dashboard Link widget Edit link dialog box">&lt;/p>
 &lt;p>The options available for your &lt;strong>Link widget&lt;/strong> include:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -1296,18 +1293,18 @@ hide_summary: true -->
 &lt;h5 id="heading">&lt;/h5>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>QueryString parameters&lt;/strong> - Complete this field if you want to pass a query string when the user clicks on the link. For example, you may want the current user&amp;rsquo;s email address to be pre-populated in a form you are linking to.&lt;/p>
+&lt;p>&lt;strong>QueryString parameters&lt;/strong> - QueryString parameters can be added to the URL of the destination selected. You must define a process or dashboard as a destination to add a QueryString to the URL.&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>As an example, let&amp;rsquo;s say that when the user clicks on the link in the Link widget, you want the First Name field of the new Annual Leave Request form they are brought to to be pre-populated with the name &amp;lsquo;John&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To do this, insert the unique name of that field, as well as the value you want that field to be pre-populated with into the &lt;strong>QueryString parameters&lt;/strong> box - in this case that will be &amp;lsquo;&lt;strong>firstName=John&lt;/strong>&amp;rsquo;. [The grey text that appears in the QueryString parameters field when you open the dialog box - param1=value1 is just placeholder text.]&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-parameters.jpg" alt="Dashboard Link widget query string parameters example">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-parameters2.jpg" alt="Dashboard Link widget query string parameters example">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Note&lt;/strong>: The unique name of a field can be found by selecting the field in the form it is in and clicking on the &lt;strong>Edit field&lt;/strong> button. The field&amp;rsquo;s unique name can then be copied from the &lt;strong>Name (Unique)&lt;/strong> field.&lt;/p>
-&lt;p>In our example, the unique name of the &amp;lsquo;First Name&amp;rsquo; field in the &amp;lsquo;Annual Leave Request&amp;rsquo; form is &amp;lsquo;&lt;strong>firstName&lt;/strong>&amp;rsquo;:&lt;/p>
+&lt;p>In our example, the unique name of the &amp;lsquo;First Name&amp;rsquo; field in the &amp;lsquo;Leave Request&amp;rsquo; form is &amp;lsquo;&lt;strong>firstName&lt;/strong>&amp;rsquo;:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/field-unique-name.jpg" alt="Dashboard Link widget example of field unique name">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1317,6 +1314,9 @@ hide_summary: true -->
 &lt;p>Once the rule has been saved, it can be viewed in the &lt;strong>On load rules&lt;/strong> section of the right side menu when the process is opened:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-onload.jpg" alt="Dashboard Link widget query string on load rule example">&lt;/p>
 &lt;p>To learn more about the &lt;strong>Set form field&lt;/strong> rule, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field/">Set form field rule&lt;/a> or to learn more about Rules in general, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Append Query&lt;/strong> - select this checkbox if you wish to append a QueryString parameter. If you leave this checkbox unchecked, the existing query string parameter will be overwritten. You can use the append functionality to store multiple query string parameters and populate multiple fields within a process or dashboard.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
