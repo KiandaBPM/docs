@@ -66,7 +66,7 @@ To create a new Custom Widget, the Developer/Administrator clicks on the **New w
 
 An **Edit widget** dialog box opens, in which the Title, Unique ID, Widget icon and Widget type can be chosen:
 
-![Edit widget dialog box](/images/custom-field-edit-widget.jpg)
+![Edit widget dialog box](/images/custom-field-edit-widget2.jpg)
 
 When the Developer/Administrator completes the dialog box and clicks on **OK**, a workspace opens where they can create their Custom widget:
 

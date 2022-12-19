@@ -28,10 +28,8 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 
 7. **Help text**: You can insert text to help the form user to complete the File upload field - if you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-   ```
    ![File upload help text example](/images/file-upload-help-text.jpg)
-   ```
-
+   
 8. **Custom CSS class name** - You can type the name of a CSS class to allow the File upload to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
 9. **Save location**: This is the location the file will be saved to. When you click on the **Destination** button, a **Select datasource** dialog box opens in which you can choose where to save the file(s):

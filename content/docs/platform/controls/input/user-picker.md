@@ -22,87 +22,89 @@ For example, in a 'Training Request' form, you may insert a **User picker field*
 
 4. Select **Input** to view the range of Input controls and click on **User picker**. If you want to insert the new field into a panel in your form, first select the panel by clicking on the drag handle button ![Drag handle button](/images/draghandlewhite-frame.png) and then insert the new User picker field from the Controls menu.
 
-	![Insert User picker field](/images/user-picker-insert.jpg)
+  ![Insert User picker field](/images/user-picker-insert.jpg)
 
 5. A **New field - User picker** dialog box will open with a range of options you can choose from for your new User picker field.
 
-   ![New field user picker dialog box](/images/user-picker-dialog.jpg)
+   ![New field user picker dialog box](/images/user-picker-dialog2.jpg)
 
    
 
-   The options available include:
+6. **Title** - You can change the name of the User picker field from the default ''**User picker 1**'.
 
-   - **Title** - You can change the name of the User picker field from the default ''**User picker 1**'.
+7. **Name** - This is a unique name for the field and inherits a camel case version of the entered Title.
 
-   - **Name (Unique)** - This is a unique name for the field.
+8. **Help text** - You can insert text to help the form user to complete the User Picker field. Taking the example of the 'Manager' User picker field in a 'Training Request' form, you could insert help text to this effect:
 
-   - **Help text** - You can insert text to help the form user to complete the User Picker field. Taking the example of the 'Manager' User picker field in a 'Training Request' form, you could insert help text to this effect:
+   ![User picker field help text example dialog box](/images/user-picker-helptext-example.jpg)
 
-      ![User picker field help text example dialog box](/images/user-picker-helptext-example.jpg)
+   If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-      If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
+   ![User picker field help text example icon](/images/user-picker-helptext-shown.jpg)
 
-      ![User picker field help text example icon](/images/user-picker-helptext-shown.jpg)
-
-      
-
-   - **Selection Mode** - You can choose whether the user will only be able to select one user from the User Picker list (by selecting **Single**) or whether the user will be able to select multiple users (by selecting **Multiple**). 
-
-      If you choose to allow the user to select multiple users, by selecting **Multiple** as the Selection mode, an additional option then displays - **Max users to select**. Here you can set a maximum number of users that can be selected - you can do this by either manually typing the number into the box or by clicking on the up/down buttons ![Up down buttons](/images/up-down-arrows.jpg) at the right-hand side of the box.
-
-      ![User picker multiple](/images/user-picker-multiple.jpg)
-
-      
-
-   - **Default to current user** - You can choose to have the current user display in the User picker field once the form is opened to be edited. If you select '**Yes**', so the User picker field shows the current user by default, an additional option then displays - **Allow override picker value**.  
-
-      ![User picker default to current user](/images/user-picker-default-current-user.jpg)
-
-      If you choose **Yes** for **Allow override picker value**, this automatically allows the override of the user in the User Picker field.
-
-      For example, in an 'Annual Leave Request' form, there could be an 'Employee Name' User picker field that defaults to the current user; but we may want the Employee's Manager to be able to override the name in this field if they are submitting an annual leave request on behalf of an employee.
-
-   - **Member of group** - You can choose to restrict the users available to be selected in the User picker field to a certain group - for example, only users in the HR Team. Alternatively, you can leave this field blank.
-
-      When you click into the **Member of group** field, you will see a drop-down list of all of the Groups you can select:
-
-      ![User picker field select Member of group](/images/user-picker-member-of-group.jpg)
-
-      In Kianda, Groups can be configured under the Administration menu - to learn more about how you can set up and manage Groups, go to [Users & Groups](/docs/platform/administration/users/).
-
-      For example, if you select 'HR Team', the end user completing the form will only be able to select users who are members of the 'HR Team' group in this User picker field.
-
-   - **Selection options** - You can choose what selection options are available to the form user to the right of the User picker field. You can choose to show as many of these three selection options as like: **Users** (all users), **Groups** (such as HR) and **Partners**.
-
-      For example, if you choose to make all three selection options available, your User picker field will have a drop-down menu to the right where the form user can switch between Users, Groups and Partners:
-
-      ![Selection options in a User picker field](/images/user-picker-selection-options.jpg)
-
-      **Note**: If you have inserted a Group in the **Member of group** field, this selection will limit the users or groups available to be selected in the User picker field, regardless of what **Selection options** you choose to make available to the form user.
-
-   - **Default selection option** - You can choose to have a certain selection option displayed to the right of the User picker field by default - either **Users**, **Groups** or **Partners**.
-
-   - **Show selection option menu** - You can choose whether or not the selection option menu (where the form user can switch between **Users**, **Groups** and **Partners**) is shown on the right-hand side of the User picker field.
-
-     If you choose **No**, there will not be a selection option menu:
-     
-     ![User picker without selection option menu](/images/user-picker-no-options.jpg)
-     
-     If you choose **Yes**, a selection option menu will be available to the form user to click (to change the list of users they can select from):
-     
-      ![User picker field with selection option menu](/images/user-picker-options.jpg)
-     
-     
-
-6. Once you complete the **New field - User picker** dialog box and click **OK**, a new **User picker field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default the title is **User picker 1** unless you change it). 
-
-   In the example of our Training Request Form, the new User picker field (titled **Manager**) added to the form could look like this when a user views it on their mobile phone:
-
-     ![File upload example mobile phone](/images/user-picker-mobile-example.jpg)
+9. **Custom CSS class name** - You can type the name of a CSS class to allow the User picker to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
    
 
-   To see how your form or field will look on a mobile, view it in **Mobile preview** by using the **Preview** option which can be opened by clicking the play button icon ![Preview](/images/preview.png). You also have the options to see how it will look on a PC or tablet.
+10. **Selection Mode** - You can choose whether the user will only be able to select one user from the User Picker list (by selecting **Single**) or whether the user will be able to select multiple users (by selecting **Multiple**). 
+
+    If you choose to allow the user to select multiple users, by selecting **Multiple** as the Selection mode, an additional option then displays - **Max users to select**. Here you can set a maximum number of users that can be selected - you can do this by either manually typing the number into the box or by clicking on the up/down buttons ![Up down buttons](/images/up-down-arrows.jpg) at the right-hand side of the box.
+
+    ![User picker multiple](/images/user-picker-multiple.jpg)
+
+    
+
+11. **Default to current user** - You can choose to have the current user display in the User picker field once the form is opened to be edited. If you select '**Yes**', so the User picker field shows the current user by default, an additional option then displays - **Allow override picker value**.  
+
+    ![User picker default to current user](/images/user-picker-default-current-user.jpg)
+
+    If you choose **Yes** for **Allow override picker value**, this automatically allows the override of the user in the User Picker field.
+
+    For example, in an 'Annual Leave Request' form, there could be an 'Employee Name' User picker field that defaults to the current user; but we may want the Employee's Manager to be able to override the name in this field if they are submitting an annual leave request on behalf of an employee.
+
+12. **Member of group** - You can choose to restrict the users available to be selected in the User picker field to a certain group - for example, only users in the HR Team. Alternatively, you can leave this field blank.
+
+    When you click into the **Member of group** field, you will see a drop-down list of all of the Groups you can select:
+
+    ![User picker field select Member of group](/images/user-picker-member-of-group.jpg)
+
+    In Kianda, Groups can be configured under the Administration menu - to learn more about how you can set up and manage Groups, go to [Users & Groups](/docs/platform/administration/users/).
+
+    For example, if you select 'HR Team', the end user completing the form will only be able to select users who are members of the 'HR Team' group in this User picker field.
+
+    
+
+13. **Selection options** - You can choose what selection options are available to the form user to the right of the User picker field. You can choose to show as many of these three selection options as like: **Users** (all users), **Groups** (such as HR) and **Partners**.
+
+    For example, if you choose to make all three selection options available, your User picker field will have a drop-down menu to the right where the form user can switch between Users, Groups and Partners:
+
+    ![Selection options in a User picker field](/images/user-picker-selection-options.jpg)
+
+    **Note**: If you have inserted a Group in the **Member of group** field, this selection will limit the users or groups available to be selected in the User picker field, regardless of what **Selection options** you choose to make available to the form user.
+
+14. **Default selection option** - You can choose to have a certain selection option displayed to the right of the User picker field by default - either **Users**, **Groups** or **Partners**.
+
+15. **Show selection option menu** - You can choose whether or not the selection option menu (where the form user can switch between **Users**, **Groups** and **Partners**) is shown on the right-hand side of the User picker field.
+
+    If you choose **No**, there will not be a selection option menu:
+
+    ![User picker without selection option menu](/images/user-picker-no-options.jpg)
+
+    If you choose **Yes**, a selection option menu will be available to the form user to click (to change the list of users they can select from):
+
+     ![User picker field with selection option menu](/images/user-picker-options.jpg)
+
+    
+
+16. Once you complete the **New field - User picker** dialog box and click **OK**, a new **User picker field** is added to your form, with the name you inserted as the **Title** in the dialog box (by default the title is **User picker 1** unless you change it). 
+
+    In the example of our Training Request Form, the new User picker field (titled **Manager**) added to the form could look like this when a user views it on their mobile phone:
+
+      ![File upload example mobile phone](/images/user-picker-mobile-example.jpg)
+
+    
+
+    To see how your form or field will look on a mobile, view it in **Mobile preview** by using the **Preview** option which can be opened by clicking the play button icon ![Preview](/images/preview.png). You also have the options to see how it will look on a PC or tablet.
 
 
 
@@ -114,8 +116,8 @@ As we go through the options available for editing a User picker field, we will 
 
 To edit a **User picker field**:
 
-1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png)
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
 
 ![Select User picker field to edit](/images/user-picker-edit.jpg)
 
@@ -123,7 +125,7 @@ To edit a **User picker field**:
 
 The **Edit field - User picker** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - User picker** dialog box (as already discussed in [How to get started](/docs/platform/controls/input/user-picker#how-to-get-started)).
 
-![Edit User picker field dialog box](/images/user-picker-edit-dialog.jpg)
+![Edit User picker field dialog box](/images/user-picker-edit-dialog2.jpg)
 
 You can make any changes you wish in this dialog box and then click **OK** to confirm. 
 
@@ -139,9 +141,9 @@ To move a **User picker field** simply select the field's **Drag handle** button
 
 To delete a **User picker field** from your form:
 
-1. Select the field (by either clicking on the field's title or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png)
-3. Click on **OK** to confirm
+1. Select the field (by either clicking on the field's title or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png).
+3. Click on **OK** to confirm.
 
 
 
