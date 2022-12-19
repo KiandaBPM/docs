@@ -52,7 +52,7 @@ To edit a control:
 
 3. Fill out the fields within the dialog box as necessary. All controls need a **Title** from which a **Unique Name** is auto-created. This Unique ID is used in [expressions](/docs/platform/rules/general/expression-builder/) to create automated emails for example. 
 
-   ![Edit textbox name](/images/edit-field-name.jpg)
+   ![Edit textbox name](/images/edit-field-name2.jpg)
 
    Additional syntax can be added to the **Unique** **name** to attribute customised styling, see [User tips](#user-tips).
 
@@ -70,27 +70,26 @@ This table lists out the full range of available field types.
 
 ### User tip ![Target icon](/images/05.png)
 
-If customised styling has been applied in a **Global CSS file,** available to administrators under **Administration** > **Subscription**, then these attributes can be applied to controls by using "?attribute selector" after the Unique name of the field/control, as shown below. 
+If customised styling has been applied in a **Global CSS file,** available to administrators under **Administration** > **Subscription**, then these attributes can be applied to controls by using entering the desired class name into the **Custom CSS class name** field, as shown below. 
 
-![Textbox with attributes](/images/textbox-attribute.jpg)
+![Textbox with attributes](/images/textbox-attribute2.jpg)
 
-In the example above **highlight** is defined in the **Global CSS file** as follows:
+In the example above, **redField** is defined in the **Global CSS file** as follows:
 
 ```css
-div[data-name$="highlight"].form-group{
-     border-radius: 15px;
-     border: 10px solid #c71104;
-     background: white;
-     margin-bottom: 20px;
-     padding-bottom: 18px;
-     padding-top: 18px;
-     padding-right: 15px;
+.redField{
+    background-color: red;
+  	color: white;
+  	border-radius: 15px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    padding-right: 15px;
 }
 ```
 
-When applied to a textbox in forms, a particular colour border with padding is applied as follows:
+When applied to a textbox in forms, a particular colour border with padding is applied to the field, as well as white font colour, as seen below:
 
-![Applied styling example](/images/applied-styling-example.jpg)
+![Applied styling example](/images/applied-styling-example2.jpg)
 
 Go to [Global CSS file](/docs/low-code/global-css/) for more details.
 
