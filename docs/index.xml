@@ -4413,10 +4413,10 @@ Your browser does not support the video tag.
 &lt;p>Each field comes with its own range of settings like autofill for textbox and currency format for numeric input.&lt;/p>
 &lt;p>These are some of the common properties of input fields:&lt;/p>
 &lt;ul>
-&lt;li>Title - Each field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - Each field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user.&lt;/li>
 &lt;li>Required - Using this checkbox makes a field mandatory for form users to fill in.&lt;/li>
-&lt;li>Visible - Displays the field in the form if checked.&lt;/li>
-&lt;li>Layout - Defines both desktop or mobile layout.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - Displays the field in the form if checked.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - Defines both desktop or mobile layout.&lt;/li>
 &lt;/ul>
 &lt;p>In addition to these common properties, each field also has its own range of settings. For example, a &lt;strong>list&lt;/strong> can have data entered manually, via a form, or from an external data source such as SharePoint or Salesforce and that list can be displayed as a dropdown, radio, multiselect or checkbox list.&lt;/p>
 &lt;h2 id="connecting-to-datasources">Connecting to datasources&lt;/h2>

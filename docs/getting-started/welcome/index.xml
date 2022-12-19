@@ -103,10 +103,10 @@ Your browser does not support the video tag.
 &lt;p>Each field comes with its own range of settings like autofill for textbox and currency format for numeric input.&lt;/p>
 &lt;p>These are some of the common properties of input fields:&lt;/p>
 &lt;ul>
-&lt;li>Title - Each field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user.&lt;/li>
+&lt;li>&lt;strong>Title&lt;/strong> - Each field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user.&lt;/li>
 &lt;li>Required - Using this checkbox makes a field mandatory for form users to fill in.&lt;/li>
-&lt;li>Visible - Displays the field in the form if checked.&lt;/li>
-&lt;li>Layout - Defines both desktop or mobile layout.&lt;/li>
+&lt;li>&lt;strong>Visible&lt;/strong> - Displays the field in the form if checked.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - Defines both desktop or mobile layout.&lt;/li>
 &lt;/ul>
 &lt;p>In addition to these common properties, each field also has its own range of settings. For example, a &lt;strong>list&lt;/strong> can have data entered manually, via a form, or from an external data source such as SharePoint or Salesforce and that list can be displayed as a dropdown, radio, multiselect or checkbox list.&lt;/p>
 &lt;h2 id="connecting-to-datasources">Connecting to datasources&lt;/h2>
@@ -194,11 +194,11 @@ Your browser does not support the video tag.
 &lt;p>Go to the &lt;strong>Side menu&lt;/strong> &amp;gt; &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Developer&lt;/strong>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>New widget&lt;/strong>.&lt;/p>
+&lt;p>Click on &lt;strong>Add widget&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Fill out the &lt;strong>Edit widget&lt;/strong> dialog box - that is &lt;strong>Title&lt;/strong>, &lt;strong>Unique Id&lt;/strong> (which is autofilled from the title), &lt;strong>Widget Icon&lt;/strong>, where you can select from hundreds of icons, and then &lt;strong>Widget type&lt;/strong>. There are 3 options: &lt;strong>&lt;a href="#field-widget">Field&lt;/a>&lt;/strong>, &lt;strong>&lt;a href="#rule-widget">Rule&lt;/a>&lt;/strong> or &lt;strong>&lt;a href="#dashboard-widget">Dashboard widget&lt;/a>&lt;/strong> - click on each link for more details.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/editwidget.gif" alt="Edit widget">&lt;/p>
+&lt;p>Fill out the &lt;strong>Edit widget&lt;/strong> dialog box - that is &lt;strong>Title&lt;/strong>, &lt;strong>Unique Id&lt;/strong> (which is autofilled from the title), &lt;strong>Widget Icon&lt;/strong>, where you can select from hundreds of icons, &lt;strong>Group&lt;/strong> where you can specify what widget folder you would like the new widget to be added to, and then &lt;strong>Widget type&lt;/strong>. There are 3 options: &lt;strong>&lt;a href="#field-widget">Field&lt;/a>&lt;/strong>, &lt;strong>&lt;a href="#rule-widget">Rule&lt;/a>&lt;/strong> or &lt;strong>&lt;a href="#dashboard-widget">Dashboard widget&lt;/a>&lt;/strong> - click on each link for more details.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-widget2.jpg" alt="Edit widget">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> when complete.&lt;/p>
@@ -206,7 +206,7 @@ Your browser does not support the video tag.
 &lt;li>
 &lt;p>Widgets created are visible in the main widget view. From here, you can edit a widget by clicking on the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bluepen.png" alt="Pen button"> (Pen icon), delete a widget by clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin button"> and restore earlier versions of a widget by clicking on the &lt;strong>Version restore&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bluerestore.png" alt="Restore">.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Widget view&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/widgetview2.jpg" alt="Widget view">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/widgetview.gif" alt="Widget view">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;a href="#webhooks">Webhooks&lt;/a> can be created to send a message to a specific URL by clicking on the &lt;strong>Webhooks&lt;/strong> button. Click the link for more information.&lt;/p>
@@ -240,10 +240,10 @@ The &amp;lsquo;Widget UI&amp;rsquo; defines the HTML, handlers, expressions and 
 &lt;h3 id="webhooks">Webhooks&lt;/h3>
 &lt;p>To create webhooks:&lt;/p>
 &lt;ol>
-&lt;li>Click on the &lt;strong>Webhooks&lt;/strong> button from the main widget view to add a webhook.&lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Webhooks&lt;/strong> button from the main widget view to add a webhook.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/webhooks50.gif" alt="Webhooks">&lt;/p>
-&lt;ol start="2">
+&lt;/li>
 &lt;li>
 &lt;p>Use the slider to turn on &lt;strong>Enable Created Callback&lt;/strong>, &lt;strong>Enable Updated Callback&lt;/strong>, &lt;strong>Enable Deleted Callback&lt;/strong> and &lt;strong>type in the URL&lt;/strong> in each case to respond to process instance create, update and deleted events.&lt;/p>
 &lt;p>For example, choosing &lt;strong>Enable Created Callback&lt;/strong> will enable a URL callback every time a process instance is updated. This results in a HTTP GET request with parameters instanceID={instanceID}, processName={processName} and eventType=created being issued to the give URL.&lt;/p>
@@ -303,7 +303,7 @@ The &amp;lsquo;Widget UI&amp;rsquo; defines the HTML, handlers, expressions and 
 &lt;p>The Kianda platform allows admin users to personalise dashboards based on the unique needs of users or user groups based on hierarchy - for example, only project managers see their forms status and admin users may see the full picture.&lt;/p>
 &lt;p>Multiple dashboards can be created and customised as required per project, per department or other configurations. &lt;strong>Access to the dashboards can be set at a high level for the entire dashboard or certain links&lt;/strong>, lists or widgets in a dashboard and can be made accessible to certain user groups defined in the system.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Dashboard page&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/IT_dashboard2.jpg" alt="Dashboard page">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/IT_dashboard2-blurred.jpg" alt="Dashboard page">&lt;/p>
 &lt;p>Examples of some of our dashboard features include:&lt;/p>
 &lt;ul>
 &lt;li>Number of forms awaiting approval&lt;/li>
