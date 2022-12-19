@@ -1296,6 +1296,9 @@ hide_summary: true -->
 &lt;p>&lt;strong>QueryString parameters&lt;/strong> - QueryString parameters can be added to the URL of the destination selected. You must define a process or dashboard as a destination to add a QueryString to the URL.&lt;/p>
 &lt;ul>
 &lt;li>
+&lt;p>&lt;strong>Append Query&lt;/strong> - there are two ways the append query works, that depends whether it redirects you to a &lt;strong>Process&lt;/strong> or a &lt;strong>Dashboard&lt;/strong>. When redirecting to a &lt;strong>process&lt;/strong>, you should always check this box as the query will not automatically append to your URL. When redirecting to a dashboard and the checkbox is checked, the query will append to the existing query string. But if the checkbox is unchecked, the query string will be overwritten. This is useful when working with multiple dashboards.&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>As an example, let&amp;rsquo;s say that when the user clicks on the link in the Link widget, you want the First Name field of the new Annual Leave Request form they are brought to to be pre-populated with the name &amp;lsquo;John&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1314,9 +1317,6 @@ hide_summary: true -->
 &lt;p>Once the rule has been saved, it can be viewed in the &lt;strong>On load rules&lt;/strong> section of the right side menu when the process is opened:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-onload.jpg" alt="Dashboard Link widget query string on load rule example">&lt;/p>
 &lt;p>To learn more about the &lt;strong>Set form field&lt;/strong> rule, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field/">Set form field rule&lt;/a> or to learn more about Rules in general, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Append Query&lt;/strong> - select this checkbox if you wish to append a QueryString parameter. If you leave this checkbox unchecked, the existing query string parameter will be overwritten. You can use the append functionality to store multiple query string parameters and populate multiple fields within a process or dashboard.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
