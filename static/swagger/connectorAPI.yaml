@@ -3,8 +3,8 @@ info:
   title: Connector API
   version: 1.0.0
 servers:
+  - url: https://kianda-test.kianda.com
   - url: http://localhost:4171
-  - url: http://{{base_url}}
 components:
   securitySchemes:
     bearerAuth:
@@ -29,65 +29,13 @@ paths:
                   example: password
                 username:
                   type: string
-                  example: basic@kianda.com
+                  example: demo-user@kianda.com
                 password:
                   type: string
-                  example: Testing123!
+                  example: Demo-Password2022
       responses:
         '200':
           description: OK
-          headers:
-            Cache-Control:
-              schema:
-                type: string
-                example: no-cache,no-cache, no-store
-            Pragma:
-              schema:
-                type: string
-                example: no-cache,no-cache
-            Content-Type:
-              schema:
-                type: string
-                example: application/json;charset=UTF-8
-            Content-Encoding:
-              schema:
-                type: string
-                example: gzip
-            Expires:
-              schema:
-                type: string
-                example: '-1,-1'
-            Vary:
-              schema:
-                type: string
-                example: Accept-Encoding
-            Set-Cookie:
-              schema:
-                type: string
-                example: >-
-                  .AspNet.Cookies=IUANjmm4KeZsjianIRreSRXvkSgCkcvQ9Kcu-PCQ-asFInuTR6YcXv9WJtnyxEtlp1J1WliRdDrqE1Bli6vX_8ak0uPsIxG-dywhhIU6m3R_EIPA0xzgEijz9s4Scg_vtFtYnmYtCSXd4HGCK1PbfPxfa4HJxQolJ_zAfTaC0fHI4fx4VOfbxbEtuQpbYRRCFQvRAo5mwq8rZxn5QxPHB6fbbLJIsuEFmdrwGg5A38wRtcF_FtSHso3srrD9ai1SxC3NP1dAd4-FOeZgcQhADtcPr960wkuPhjRXzonrjvjj4AwV2sZZRh2NTRRmC-6-OKyp_w7QxgWfbVWOSeej5cfH55w1fDthFO1_3qPB3WElWdztMc2qMb70FX1RGsHHCIst8yT7yFsWvQNQkG9y3isBPk2Xsumnok2MK9ptk-fe2AfxAe8OVrPc-vQXDoKD7V8040kQWJZ9NSju8xpYoBG04YnsLyf94OZi3En57RlNqNn0esOE2z8F91lwxnvtcOR990P1eP44MVwepeAgsOf-pU09x0zG_uxWBBpaszqA-wK-1X8imnElxISsmw7BEDsUMcCSKLtFvdgZGu8CKw;
-                  path=/; HttpOnly
-            X-SourceFiles:
-              schema:
-                type: string
-                example: >-
-                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXFRva2Vu?=
-            X-Powered-By:
-              schema:
-                type: string
-                example: ASP.NET
-            Access-Control-Expose-Headers:
-              schema:
-                type: string
-                example: Total-Items
-            Date:
-              schema:
-                type: string
-                example: Wed, 28 Sep 2022 14:37:57 GMT
-            Content-Length:
-              schema:
-                type: integer
-                example: '1051'
           content:
             application/json:
               schema:
@@ -105,50 +53,6 @@ paths:
                 .expires: Wed, 28 Sep 2022 14:42:57 GMT
         '400':
           description: Bad Request
-          headers:
-            Cache-Control:
-              schema:
-                type: string
-                example: private,no-cache, no-store
-            Pragma:
-              schema:
-                type: string
-                example: no-cache,no-cache
-            Content-Type:
-              schema:
-                type: string
-                example: application/json;charset=UTF-8
-            Expires:
-              schema:
-                type: string
-                example: '-1,-1'
-            Set-Cookie:
-              schema:
-                type: number
-                example: >-
-                  UserSessionTime="2022-09-28T14:38:50.042181Z"; expires=Wed,
-                  28-Sep-2022 14:53:50 GMT; path=/
-            X-SourceFiles:
-              schema:
-                type: string
-                example: >-
-                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXFRva2Vu?=
-            X-Powered-By:
-              schema:
-                type: string
-                example: ASP.NET
-            Access-Control-Expose-Headers:
-              schema:
-                type: string
-                example: Total-Items
-            Date:
-              schema:
-                type: string
-                example: Wed, 28 Sep 2022 14:38:50 GMT
-            Content-Length:
-              schema:
-                type: integer
-                example: '34'
           content:
             application/json:
               schema:
@@ -159,7 +63,7 @@ paths:
     post:
       tags:
         - Connector API
-      summary: Query
+      summary: Send a datasource query
       requestBody:
         content:
           application/json:
@@ -196,53 +100,7 @@ paths:
           required: true
       responses:
         '200':
-          description: OK
-          headers:
-            Cache-Control:
-              schema:
-                type: string
-                example: no-cache,no-cache, no-store
-            Pragma:
-              schema:
-                type: string
-                example: no-cache,no-cache
-            Content-Type:
-              schema:
-                type: string
-                example: application/json; charset=utf-8
-            Content-Encoding:
-              schema:
-                type: string
-                example: gzip
-            Expires:
-              schema:
-                type: string
-                example: '-1,-1'
-            Vary:
-              schema:
-                type: string
-                example: Accept-Encoding
-            X-SourceFiles:
-              schema:
-                type: string
-                example: >-
-                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1wyZmUyZDJjNy00ZmViLTRjOTItYWM0Yy1mZWQ0NjIzZDJkNmVccXVlcnk=?=
-            X-Powered-By:
-              schema:
-                type: string
-                example: ASP.NET
-            Access-Control-Expose-Headers:
-              schema:
-                type: string
-                example: Total-Items
-            Date:
-              schema:
-                type: string
-                example: Wed, 28 Sep 2022 14:16:48 GMT
-            Content-Length:
-              schema:
-                type: integer
-                example: '173'
+          description: Successful Operation
           content:
             application/json:
               schema:
@@ -254,44 +112,6 @@ paths:
                   - Country: Ireland
         '500':
           description: Internal Server Error
-          headers:
-            Cache-Control:
-              schema:
-                type: string
-                example: no-cache,no-cache, no-store
-            Pragma:
-              schema:
-                type: string
-                example: no-cache,no-cache
-            Content-Type:
-              schema:
-                type: string
-                example: application/json; charset=utf-8
-            Expires:
-              schema:
-                type: string
-                example: '-1,-1'
-            X-SourceFiles:
-              schema:
-                type: string
-                example: >-
-                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1wyZmUyZDJjNy00ZmViLTRjOTItYWM0Yy1mZWQ0NjIzZDJkNmVccXVlcnk=?=
-            X-Powered-By:
-              schema:
-                type: string
-                example: ASP.NET
-            Access-Control-Expose-Headers:
-              schema:
-                type: string
-                example: Total-Items
-            Date:
-              schema:
-                type: string
-                example: Wed, 28 Sep 2022 14:13:07 GMT
-            Content-Length:
-              schema:
-                type: integer
-                example: '36'
           content:
             application/json:
               schema:
@@ -316,52 +136,6 @@ paths:
       responses:
         '200':
           description: OK
-          headers:
-            Cache-Control:
-              schema:
-                type: string
-                example: no-cache,no-cache, no-store
-            Pragma:
-              schema:
-                type: string
-                example: no-cache,no-cache
-            Content-Type:
-              schema:
-                type: string
-                example: application/json; charset=utf-8
-            Content-Encoding:
-              schema:
-                type: string
-                example: gzip
-            Expires:
-              schema:
-                type: string
-                example: '-1,-1'
-            Vary:
-              schema:
-                type: string
-                example: Accept-Encoding
-            X-SourceFiles:
-              schema:
-                type: string
-                example: >-
-                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1wyZmUyZDJjNy00ZmViLTRjOTItYWM0Yy1mZWQ0NjIzZDJkNmVcdHJlZQ==?=
-            X-Powered-By:
-              schema:
-                type: string
-                example: ASP.NET
-            Access-Control-Expose-Headers:
-              schema:
-                type: string
-                example: Total-Items
-            Date:
-              schema:
-                type: string
-                example: Wed, 28 Sep 2022 13:54:34 GMT
-            Content-Length:
-              schema:
-                type: integer
-                example: '332'
           content:
             application/json:
               schema:
@@ -418,54 +192,7 @@ paths:
                     selectable: true
         '401':
           description: Unauthorized
-          headers:
-            Cache-Control:
-              schema:
-                type: string
-                example: no-cache,no-cache, no-store
-            Pragma:
-              schema:
-                type: string
-                example: no-cache,no-cache
-            Content-Type:
-              schema:
-                type: string
-                example: application/json; charset=utf-8
-            Expires:
-              schema:
-                type: string
-                example: '-1,-1'
-            WWW-Authenticate:
-              schema:
-                type: string
-                example: Bearer
-            Set-Cookie:
-              schema:
-                type: number
-                example: >-
-                  UserSessionTime="2022-09-28T14:12:06.1881992Z"; expires=Wed,
-                  28-Sep-2022 14:27:06 GMT; path=/
-            X-SourceFiles:
-              schema:
-                type: string
-                example: >-
-                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1wyZmUyZDJjNy00ZmViLTRjOTItYWM0Yy1mZWQ0NjIzZDJkNmVcdHJlZQ==?=
-            X-Powered-By:
-              schema:
-                type: string
-                example: ASP.NET
-            Access-Control-Expose-Headers:
-              schema:
-                type: string
-                example: Total-Items
-            Date:
-              schema:
-                type: string
-                example: Wed, 28 Sep 2022 14:12:06 GMT
-            Content-Length:
-              schema:
-                type: integer
-                example: '61'
+          
           content:
             application/json:
               schema:
@@ -493,52 +220,6 @@ paths:
       responses:
         '200':
           description: OK
-          headers:
-            Cache-Control:
-              schema:
-                type: string
-                example: no-cache,no-cache, no-store
-            Pragma:
-              schema:
-                type: string
-                example: no-cache,no-cache
-            Content-Type:
-              schema:
-                type: string
-                example: application/json; charset=utf-8
-            Content-Encoding:
-              schema:
-                type: string
-                example: gzip
-            Expires:
-              schema:
-                type: string
-                example: '-1,-1'
-            Vary:
-              schema:
-                type: string
-                example: Accept-Encoding
-            X-SourceFiles:
-              schema:
-                type: string
-                example: >-
-                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1wyZmUyZDJjNy00ZmViLTRjOTItYWM0Yy1mZWQ0NjIzZDJkNmVcdGVzdA==?=
-            X-Powered-By:
-              schema:
-                type: string
-                example: ASP.NET
-            Access-Control-Expose-Headers:
-              schema:
-                type: string
-                example: Total-Items
-            Date:
-              schema:
-                type: string
-                example: Wed, 28 Sep 2022 13:53:50 GMT
-            Content-Length:
-              schema:
-                type: integer
-                example: '165'
           content:
             application/json:
               schema:
@@ -548,48 +229,6 @@ paths:
                 message: Test completed successfully
         '401':
           description: Unauthorized
-          headers:
-            Cache-Control:
-              schema:
-                type: string
-                example: no-cache,no-cache, no-store
-            Pragma:
-              schema:
-                type: string
-                example: no-cache,no-cache
-            Content-Type:
-              schema:
-                type: string
-                example: application/json; charset=utf-8
-            Expires:
-              schema:
-                type: string
-                example: '-1,-1'
-            WWW-Authenticate:
-              schema:
-                type: string
-                example: Bearer
-            X-SourceFiles:
-              schema:
-                type: string
-                example: >-
-                  =?UTF-8?B?QzpcRGV2XERldmVsb3BtZW50XEtpYW5kYUZvcm1zLldlYlxQcm9jZXNzRm9ybXMuV2ViXGFwaVxkYXRhc291cmNlc1x7aWR9XHRlc3Q=?=
-            X-Powered-By:
-              schema:
-                type: string
-                example: ASP.NET
-            Access-Control-Expose-Headers:
-              schema:
-                type: string
-                example: Total-Items
-            Date:
-              schema:
-                type: string
-                example: Wed, 28 Sep 2022 13:47:00 GMT
-            Content-Length:
-              schema:
-                type: integer
-                example: '61'
           content:
             application/json:
               schema:
