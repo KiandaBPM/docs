@@ -11,18 +11,18 @@ For example, in a Purchase Order Request form, you may want to use a Table field
 
 For more information about applying rules to fields and forms go to [Rules](/docs/platform/rules/) and for more specific information about applying rules to **Table fields** see [Table rules](/docs/platform/rules/tables/).
 
-We will now go through
-- [how to add a Table field to a form](/docs/platform/controls/input/table#how-to-get-started)
-- [how to edit column fields in a Table](/docs/platform/controls/input/table#how-to-edit-column-fields-in-a-table)
-- [how to change the title of a Table colulmn](/docs/platform/controls/input/table#how-to-change-the-title-of-a-table-column)
-- [how to delete a column from a Table](/docs/platform/controls/input/table#how-to-delete-a-column-from-a-table)
-- [how to change the field type of an existing Table column](/docs/platform/controls/input/table#how-to-change-the-field-type-of-an-existing-table-column)
-- [how to insert new columns in a Table](/docs/platform/controls/input/table#how-to-insert-new-columns-in-a-table)
-- [how to move columns in a Table](/docs/platform/controls/input/table#how-to-move-columns-in-a-table)
-- [how to edit the Table field](/docs/platform/controls/input/table#how-to-edit-the-table-field)
-- [how to move Table fields](/docs/platform/controls/input/table#how-to-move-table-fields)
-- [how to delete Table fields](/docs/platform/controls/input/table#how-to-delete-table-fields)
-- [how to edit Table field properties](/docs/platform/controls/input/table#how-to-edit-table-field-properties)
+We will now go through:
+- [How to add a Table field to a form](/docs/platform/controls/input/table#how-to-get-started)
+- [How to edit column fields in a Table](/docs/platform/controls/input/table#how-to-edit-column-fields-in-a-table)
+- [How to change the title of a Table colulmn](/docs/platform/controls/input/table#how-to-change-the-title-of-a-table-column)
+- [How to delete a column from a Table](/docs/platform/controls/input/table#how-to-delete-a-column-from-a-table)
+- [How to change the field type of an existing Table column](/docs/platform/controls/input/table#how-to-change-the-field-type-of-an-existing-table-column)
+- [How to insert new columns in a Table](/docs/platform/controls/input/table#how-to-insert-new-columns-in-a-table)
+- [How to move columns in a Table](/docs/platform/controls/input/table#how-to-move-columns-in-a-table)
+- [How to edit the Table field](/docs/platform/controls/input/table#how-to-edit-the-table-field)
+- [How to move Table fields](/docs/platform/controls/input/table#how-to-move-table-fields)
+- [How to delete Table fields](/docs/platform/controls/input/table#how-to-delete-table-fields)
+- [How to edit Table field properties](/docs/platform/controls/input/table#how-to-edit-table-field-properties)
 
 ## How to get started
 
@@ -122,55 +122,60 @@ To re-order columns in a Table, simply
 To edit the **Table field** itself:
 
 1. Select the Table (by either clicking on the Table title or on the table's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+
 2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png).
 
-![Select table field to edit](/images/table-edit.jpg)
+   ![Select table field to edit](/images/table-edit.jpg)
 
-The **Edit field - Table** dialog box will open, enabling you to choose from a range of options:
+   The **Edit field - Table** dialog box will open, enabling you to choose from a range of options:
 
-![Edit table field dialog box](/images/table-edit-dialog.jpg)
+   ![Edit table field dialog box](/images/table-edit-dialog2.jpg)
 
-The options within the **Edit field - Table** dialog box include:
 
-- **Title** - you can change the title of the Table from the default '**Table 1**'. In our example, we could change the name of the table to 'Existing Qualifications'.
 
-- **Help text** - you can insert text to help the form user to complete the Table. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
+3. **Title** - you can change the title of the Table from the default '**Table 1**'. In our example, we could change the name of the table to 'Existing Qualifications'.
 
-  ![Table help text example](/images/table-helptext.jpg)
+4. **Name** - This is a unique name for the field and inherits a camel case version of the entered Title.
 
-- **Add row text** - you can insert the text you want to appear with the Add Row button ![Table add row button](/images/table-add-row.jpg). By default, this will be 'add row'.
+5. **Help text** - you can insert text to help the form user to complete the Table. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-- **Page size** - you can increase or decrease the number of row items you will see per page by clicking the up/down arrow buttons ![Up and down arrows](/images/up-down-arrows.jpg) at the right of the field. By default, it is set to show 10 row items per page.
+   ![Table help text example](/images/table-helptext.jpg)
 
-- **Enable adding rows** - selecting 'Yes' enables the user to add rows to the table when they are completing it and displays the **Add row** button ![Table add row button](/images/table-add-row.jpg) and selecting 'No' removes this option. By default, this option is set to 'Yes'.
+6. **Custom CSS class name** - You can type the name of a CSS class to allow the Table to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
-- **Enable removing rows** - selecting 'Yes' enables the user to remove rows from the table as they are completing it (by clicking on the **Bin/Trash** button ![Bin icon](/images/binicon.png) at the end of each table row) and selecting 'No' removes this option. By default, this option is set to 'Yes'.
+7. **Add row text** - you can insert the text you want to appear with the Add Row button ![Table add row button](/images/table-add-row.jpg). By default, this will be 'add row'.
 
-- **Show row count** - you can choose to display text showing the number of rows in the table. This text will appear below the **Add row** button:
+8. **Page size** - you can increase or decrease the number of row items you will see per page by clicking the up/down arrow buttons ![Up and down arrows](/images/up-down-arrows.jpg) at the right of the field. By default, it is set to show 10 row items per page.
 
-  ![Number field with placeholder text](/images/table-row-count.jpg)
+9. **Enable adding rows** - selecting 'Yes' enables the user to add rows to the table when they are completing it and displays the **Add row** button ![Table add row button](/images/table-add-row.jpg) and selecting 'No' removes this option. By default, this option is set to 'Yes'.
 
-- **Enable sorting** - you can select 'Yes' to enable the form user to sort the data in the table 
+10. **Enable removing rows** - selecting 'Yes' enables the user to remove rows from the table as they are completing it (by clicking on the **Bin/Trash** button ![Bin icon](/images/binicon.png) at the end of each table row) and selecting 'No' removes this option. By default, this option is set to 'Yes'.
 
-- **Enable search** - you can select 'Yes' to enable the form user to search the data in the table. If you choose this option, the form user will see a search field at the top of the table:
+11. **Show row count** - you can choose to display text showing the number of rows in the table. This text will appear below the **Add row** button:
 
-  ![Table search field](/images/table-search.jpg)
+    ![Number field with placeholder text](/images/table-row-count.jpg)
 
-- **Add first row onload** -  by default, this is set to 'Yes', meaning that when the form is loaded the first row is automatically shown.
+12. **Enable sorting** - you can select 'Yes' to enable the form user to sort the data in the table 
 
-- **Enable export to csv** - you can select 'Yes' to enable the form user to export the table contents to a csv file. If you select 'Yes', some additional options appear in the **Edit field - Table** dialog box: 
+13. **Enable search** - you can select 'Yes' to enable the form user to search the data in the table. If you choose this option, the form user will see a search field at the top of the table:
 
-  ![Table enable export to csv](/images/table-export-csv.jpg)
+    ![Table search field](/images/table-search.jpg)
 
-  The **CSV Separator** is set to be a comma by default (but you can change this) and you can insert text you want to appear on the **Export CSV** button. For example, if you insert 'Export to CSV' as the text to appear on the button, it will appear like this in the form to the user:
+14. **Add first row onload** -  by default, this is set to 'Yes', meaning that when the form is loaded the first row is automatically shown.
 
-  ![Table export to CSV button](/images/table-export-csv-button.jpg)
-  
-  The **Columns to export** will automatically show the columns in your table
+15. **Enable export to csv** - you can select 'Yes' to enable the form user to export the table contents to a csv file. If you select 'Yes', some additional options appear in the **Edit field - Table** dialog box: 
 
-3. Make whatever changes you want to make to the table in the **Edit field - Table** dialog box and then click **OK** to confirm. 
+    ![Table enable export to csv](/images/table-export-csv.jpg)
 
-If you want to make your table more dynamic - for example, so that calculations are made or information is autofilled into part of the table - you can add rules to it. To learn about applying rules to fields and forms go to [Rules](/docs/platform/rules/) and for more specific information about applying rules to **Table fields** see [Table rules](/docs/platform/rules/tables/).
+    The **CSV Separator** is set to be a comma by default (but you can change this) and you can insert text you want to appear on the **Export CSV** button. For example, if you insert 'Export to CSV' as the text to appear on the button, it will appear like this in the form to the user:
+
+    ![Table export to CSV button](/images/table-export-csv-button.jpg)
+
+    The **Columns to export** will automatically show the columns in your table
+
+16. Make whatever changes you want to make to the table in the **Edit field - Table** dialog box and then click **OK** to confirm. 
+
+    If you want to make your table more dynamic - for example, so that calculations are made or information is autofilled into part of the table - you can add rules to it. To learn about applying rules to fields and forms go to [Rules](/docs/platform/rules/) and for more specific information about applying rules to **Table fields** see [Table rules](/docs/platform/rules/tables/).
 
 
 
@@ -178,7 +183,7 @@ If you want to make your table more dynamic - for example, so that calculations 
 
 To move a **Table field** within your form:
 
-1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png) 
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png). 
 2. Drag and drop the field wherever you want to move it to.
 
 ![Table field drag handle](/images/table-move.jpg)
@@ -189,7 +194,7 @@ To move a **Table field** within your form:
 
 To delete a **Table field** from your form:
 
-1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
 2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png).
 3. Click on **OK** to confirm.
 

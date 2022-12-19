@@ -28,7 +28,7 @@ There are various options available when creating a Text box field, such as form
 
    In the example shown here, a Text box field has been added to a form called 'Training Request' in a process called 'Training Process', as the first step in adding two Text box fields (which will be used to capture the first name and surname of the user who is completing the form). 
 
-   You can also place a Text box within an element - such as within a panel in a form. In the example above, the Text box was inserted outside the panel in the form. If you wanted to insert it *within* the panel, simply select the panel itself by clicking on its drag handle ![Drag Handle icon](/images/draghandlewhite-frame.png) and then click on **Controls>Input>Text box** - this will result in the new Text box being added inside the panel, as shown here:
+   You can also place a Text box within an element - such as within a panel in a form. In the example above, the Text box was inserted outside the panel in the form. If you wanted to insert it *within* the panel, simply select the panel itself by clicking on its drag handle ![Drag Handle icon](/images/draghandlewhite-frame.png) and then click on **Controls** > **Input** > **Text box** - this will result in the new Text box being added inside the panel, as shown here:
 
    ![Text box inside a panel](/images/textbox-inside-panel.jpg)
 
@@ -42,73 +42,81 @@ As we go through the options available for editing a Text box, we will keep in m
 To edit a **Text box field**:
 
 1. Select the Text box (by either clicking on its title or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+
 2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
 
-![Select text box edit button](/images/textbox-edit-button.jpg)
+   ![Select text box edit button](/images/textbox-edit-button.jpg)
 
-The **Edit field - Text box** dialog box will open, enabling you to choose from a range of options:
+   The **Edit field - Text box** dialog box will open, enabling you to choose from a range of options:
 
-![Edit table field dialog box](/images/textbox-edit-dialog.jpg)
+   ![Edit table field dialog box](/images/textbox-edit-dialog2.jpg)
 
-The options within the **Edit field - Text box** dialog box include:
+3. **Title** - you can change the title of the Text box from the default '**Text box 1**'. In our example, we could change the name of the first Text box to 'First Name' and the second Text box to 'Surname'.
 
-- **Title** - you can change the title of the Text box from the default '**Text box 1**'. In our example, we could change the name of the first Text box to 'First Name' and the second Text box to 'Surname'.
+4. **Name** - This is a unique name for the field and inherits a camel case version of the entered Title.
 
-- **Name (unique)** - this is a unique name for the Text box field
+5. **Help text** - you can insert text to help the form user to complete the Table. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-- **Help text** - you can insert text to help the form user to complete the Table. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
+   ![Table help text example](/images/textbox-help-text.jpg)
 
-  ![Table help text example](/images/textbox-help-text.jpg)
+6. **Custom CSS class name** - You can type the name of a CSS class to allow the Textbox to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
-- **Mode** - you can decide whether your Text box is limited to a **Single line of text** or will allow for **Multiple lines of text** or can choose **Rich text**. Different additional options will then be shown, depending on the Mode you have chosen. 
+7. **Mode** - you can decide whether your Text box is limited to a **Single line of text** or will allow for **Multiple lines of text** or can choose **Rich text**. Different additional options will then be shown, depending on the Mode you have chosen. 
 
-  If you choose '**Single line of text**' as the Mode for your Text box - as in the example shown above -  these additional options will be shown:
+   If you choose '**Single line of text**' as the Mode for your Text box - as in the example shown above -  these additional options will be shown:
 
-  - **Max length** - choose the maximum number of characters for the text inserted in your Text box by either typing in a number or by clicking the up/down arrow buttons ![Up down arrow buttons](/images/up-down-arrows.jpg) at the right side of the blank field beneath it
+   - **Max length** - choose the maximum number of characters for the text inserted in your Text box by either typing in a number or by clicking the up/down arrow buttons ![Up down arrow buttons](/images/up-down-arrows.jpg) at the right side of the blank field beneath it
 
-  - **Text style** - choose **Normal**, **Capitalise**, **Uppercase** or **Lowercase**, depending on how you want the text input in the Text box to appear
 
-  - **Control type** - choose either **Text** or **Password**. If you choose Password, then the text input by the user in the Text box will not be visible:
+   - **Text style** - choose **Normal**, **Capitalise**, **Uppercase** or **Lowercase**, depending on how you want the text input in the Text box to appear
 
-    ![Text box formatted as a password](/images/textbox-password.jpg)
 
-  - **Autofill type** - you can choose between **Default**, **Off**, **Password**, **Address**, **Email** and **Phone**. If, for example, you select Address, this means that when the user is completing this Text box field, it will automatically populate with the user's saved address information (if the user has that saved information on their PC or mobile phone).
+   - **Control type** - choose either **Text** or **Password**. If you choose Password, then the text input by the user in the Text box will not be visible:
 
-  - **Placeholder** - you can insert placeholder text to appear in the Text box field to assist the user. For example, this Text box field titled 'Address 1' has placeholder text:
+     ![Text box formatted as a password](/images/textbox-password.jpg)
 
-    ![Example of Text box placeholder text](/images/textbox-placeholder.jpg)
 
-  
+   - **Autofill type** - you can choose between **Default**, **Off**, **Password**, **Address**, **Email** and **Phone**. If, for example, you select Address, this means that when the user is completing this Text box field, it will automatically populate with the user's saved address information (if the user has that saved information on their PC or mobile phone).
 
-  If you choose '**Multiple lines of text**' as the Mode for your Text box, these additional options will be shown:
 
-  ![Text box multiple lines of text options](/images/textbox-multiple-lines-options.jpg)
+   - **Placeholder** - you can insert placeholder text to appear in the Text box field to assist the user. For example, this Text box field titled 'Address 1' has placeholder text:
 
-  - **Rows** - you can decide how many rows of text you want your Text box to have. Either manually type in a number or use the up/down arrows ![Up down arrow buttons](/images/up-down-arrows.jpg) on the right-side of the field
+     ![Example of Text box placeholder text](/images/textbox-placeholder.jpg)
 
-  - **Max length** - you can set a maximum number of characters for the Text box
+   If you choose '**Multiple lines of text**' as the Mode for your Text box, these additional options will be shown:
 
-  - **Text style** - choose from **Normal**, **Capitalise**, **Uppercase** or **Lowercase**
+   ![Text box multiple lines of text options](/images/textbox-multiple-lines-options.jpg)
 
-  - **Placeholder** - you can insert placeholder text to appear in the Text box field to assist the user.
+   - **Rows** - you can decide how many rows of text you want your Text box to have. Either manually type in a number or use the up/down arrows ![Up down arrow buttons](/images/up-down-arrows.jpg) on the right-side of the field
 
-    
 
-  If you choose '**Rich text**' as the Mode for your Text box, you will have the additional options of setting a **Max length** (maximum number of characters that can be input in the field) and choosing a **Text style**, as shown here:
+   - **Max length** - you can set a maximum number of characters for the Text box
 
-  ![Text box Rich text options](/images/textbox-richtext-options.jpg)
 
-  
+   - **Text style** - choose from **Normal**, **Capitalise**, **Uppercase** or **Lowercase**
 
-- **Expression** - If you want to use your Text box field in a way that is more dynamic, you could decide to add an expression to it. For example, an Expression can be used to return a value - if you apply the Expression '**Date()**' to your Text box field, it will return the current date and time. 
 
-  To add an Expression to your Text box field, click on the ellipsis button ![Ellipsis button in the Expression box](/images/ellipsis.png) to the right. This will open the **Expression builder** dialog box:
+   - **Placeholder** - you can insert placeholder text to appear in the Text box field to assist the user.
 
-  ![Expression builder dialog box](/images/expression-builder.jpg)
+     
 
-You can click on the **Reference** button ![Reference button in the Expression builder dialog box](/images/reference.png) to see some of the most commonly used Expressions. To learn more about using Expressions, go to [Expression builder](/docs/platform/rules/general/expression-builder). 
+   If you choose '**Rich text**' as the Mode for your Text box, you will have the additional options of setting a **Max length** (maximum number of characters that can be input in the field) and choosing a **Text style**, as shown here:
 
-3. Make whatever changes you want to make to the Text box field in the **Edit field - Text box** dialog box and then click **OK** to confirm. 
+   ![Text box Rich text options](/images/textbox-richtext-options.jpg)
+
+   
+
+8. **Expression** - If you want to use your Text box field in a way that is more dynamic, you could decide to add an expression to it. For example, an Expression can be used to return a value - if you apply the Expression '**Date()**' to your Text box field, it will return the current date and time. 
+
+   To add an Expression to your Text box field, click on the ellipsis button ![Ellipsis button in the Expression box](/images/ellipsis.png) to the right. This will open the **Expression builder** dialog box:
+
+   ![Expression builder dialog box](/images/expression-builder.jpg)
+
+   You can click on the **Reference** button ![Reference button in the Expression builder dialog box](/images/reference.png) to see some of the most commonly used Expressions. To learn more about using Expressions, go to [Expression builder](/docs/platform/rules/general/expression-builder). 
+
+
+
+9. Make whatever changes you want to make to the Text box field in the **Edit field - Text box** dialog box and then click **OK** to confirm. 
 
 
 
@@ -131,8 +139,8 @@ To move a **Text box** within your form:
 
 To delete a **Text box field** from your form:
 
-1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png)
+1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png).
 3. Click on **OK** to confirm (or click on **Cancel** if you wish to cancel the deletion).
 
 
@@ -151,7 +159,7 @@ For example, the **Field Properties** associated with a **Text box field** title
 
 - **Show title** - If this is selected, the Text box field title will be shown in the form.
 
-- **Required** - If this is selected, the Text box field will be a mandatory field that users must complete (denoted by a red asterix next to the field title).
+- **Required** - If this is selected, the Text box field will be a mandatory field that users must complete (denoted by a red asterisk next to the field title).
 
 - **Enabled** - If this is selected, the user will be able to edit or interact with the field.
 
