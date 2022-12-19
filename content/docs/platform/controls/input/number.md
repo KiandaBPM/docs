@@ -36,81 +36,91 @@ For example, in a Purchase Order Request form, you may want to use Number fields
 
 To edit a **Number field**:
 
-1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
 2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
 
 	![Select number field to edit](/images/number-field-edit2.jpg)
 
 	The **Edit field - Number** dialog box will open, enabling you to choose from a range of options:
 
-	![Edit number field dialog box](/images/number-edit-dialog.jpg)
+	![Edit number field dialog box](/images/number-edit-dialog2.jpg)
 
-	The options within the **Edit field - Number** dialog box include:
+	
 
-- **Title** - you can change the title of the Number field from the default '**Number 1**'
+3. **Title** - you can change the title of the Number field from the default '**Number 1**'.
 
-- **Help text** - you can insert text to help the form user to complete the Number field. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
+4. **Name** - This is a unique name for the field and inherits a camel case version of the entered Title.
 
-  ![File upload help text example](/images/number-help-text.jpg)
+5. **Help text** - you can insert text to help the form user to complete the Number field. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-- **Display format** - you can choose whether the number inserted by the user is formatted to be an integer (whole number), currency or a percentage. 
+   ![File upload help text example](/images/number-help-text.jpg)
 
-  If you select **Currency** as the Display format, a new option will appear - **Currency format** - where you can select the currency you want to use.
+6. **Custom CSS class name** - You can type the name of a CSS class to allow the Number to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
-  ![Number field currency options](/images/number-currency.jpg)
+7. **Display format** - you can choose whether the number inserted by the user is formatted to be an integer (whole number), currency or a percentage. 
 
-  If you select **Euro** as the Currency format, a new format option called **Country format** appears to the right. This is a drop-down list from which you can choose from three different ways that Euro amounts can be displayed: 
+   If you select **Currency** as the Display format, a new option will appear - **Currency format** - where you can select the currency you want to use.
 
-  ![Euro format options](/images/number-euro-format.jpg)
+   ![Number field currency options](/images/number-currency.jpg)
 
-  - If you choose **Ireland** as the Country format, Euro amounts will be displayed like this:
+   If you select **Euro** as the Currency format, a new format option called **Country format** appears to the right. This is a drop-down list from which you can choose from three different ways that Euro amounts can be displayed: 
 
-    ![Euro Ireland currency format](/images/number-euro-Ireland.jpg)
+   ![Euro format options](/images/number-euro-format.jpg)
 
-  - If you choose **Portugal** as the Country format, Euro amounts will be displayed like this:
+   If you choose **Ireland** as the Country format, Euro amounts will be displayed like this:
 
-    ![Euro Portugal currency format](/images/number-euro-portugal.jpg)
+   ![Euro Ireland currency format](/images/number-euro-Ireland.jpg)
 
-  - If you choose **France** as the Country format, Euro amounts will be displayed like this:
+   If you choose **Portugal** as the Country format, Euro amounts will be displayed like this:
 
-    ![Euro France currency format](/images/number-euro-france.jpg)
+   ![Euro Portugal currency format](/images/number-euro-portugal.jpg)
 
-- **Show number up/down arrows** - you can choose whether or not you want the Number field to have up/down arrow buttons ![Up and down arrows](/images/up-down-arrows.jpg) that enable the user to increase or decrease the number in the field
+   If you choose **France** as the Country format, Euro amounts will be displayed like this:
 
-- **Enable native number input on mobile** - you can select this to enable native number input when a user is completing the Number field on their mobile phone
+   ![Euro France currency format](/images/number-euro-france.jpg)
 
-- **Decimal places** - you can insert the number of decimal places you want the figure in the Number field to have
 
-- **Placeholder** - you can insert placeholder text to appear in the Number field to assist the user. For example, this Number field titled 'Salary' has placeholder text:
 
-  ![Number field with placeholder text](/images/number-placeholder.jpg)
+8. **Show number up/down arrows** - you can choose whether or not you want the Number field to have up/down arrow buttons ![Up and down arrows](/images/up-down-arrows.jpg) that enable the user to increase or decrease the number in the field.
 
-- **Expression** - you can add an expression to your Number field if, for example, you want the field to contain a calculation based on another field or want it to pull values from other fields. To add an expression, click on the expression button (ellipsis) ![Expression button ellipsis](/images/ellipsis.png) to open the **Expression builder** dialog box - here you can add expressions to perform math operations and various other actions. 
+9. **Enable native number input on mobile** - you can select this to enable native number input when a user is completing the Number field on their mobile phone.
 
-  For example, let's say you have a Number field called 'Salary' where the user inputs their salary and another Number field called 'Bonus' which you want to be automatically populated with a figure that is 20% of the 'Salary' figure. To do this, you add an Expression to the 'Bonus' field:
+10. **Decimal places** - you can insert the number of decimal places you want the figure in the Number field to have.
 
-  ![Expression builder](/images/number-expression-example.jpg)
+11. **Placeholder** - you can insert placeholder text to appear in the Number field to assist the user. For example, this Number field titled 'Salary' has placeholder text:
 
-	Now when a user completes the 'Salary' field, the Bonus field automatically populates with a figure that is 20% of their salary:
+    ![Number field with placeholder text](/images/number-placeholder.jpg)
 
-	![Number expression example](/images/number-expression-example2.jpg)
+12. **Expression** - you can add an expression to your Number field if, for example, you want the field to contain a calculation based on another field or want it to pull values from other fields. To add an expression, click on the expression button (ellipsis) ![Expression button ellipsis](/images/ellipsis.png) to open the **Expression builder** dialog box - here you can add expressions to perform math operations and various other actions. 
 
-	To learn more about applying rules and expressions to Number fields, go to [Rules](/docs/platform/rules/) and [Expression builder](/docs/platform/rules/general/expression-builder).
+    For example, let's say you have a Number field called 'Salary' where the user inputs their salary and another Number field called 'Bonus' which you want to be automatically populated with a figure that is 20% of the 'Salary' figure. To do this, you add an Expression to the 'Bonus' field:
 
-3. Make whatever changes you want in this **Edit field - Number** dialog box and then click **OK** to confirm. 
+    ![Expression builder](/images/number-expression-example.jpg)
+
+    Now when a user completes the 'Salary' field, the Bonus field automatically populates with a figure that is 20% of their salary:
+
+    ![Number expression example](/images/number-expression-example2.jpg)
+
+    To learn more about applying rules and expressions to Number fields, go to [Rules](/docs/platform/rules/) and [Expression builder](/docs/platform/rules/general/expression-builder).
+
+
+
+13. Make whatever changes you want in this **Edit field - Number** dialog box and then click **OK** to confirm. 
+
+    
 
 
 To move a **Number field**:
 
-1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
-2. Drag and drop the field wherever you want to move it to within your form
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
+2. Drag and drop the field wherever you want to move it to within your form.
 
 ![Date field drag handle](/images/number-move.jpg)
 
 To delete a **Number field** from your form:
 
-1. Select the field (by either clicking on the field's name or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+1. Select the field (by either clicking on the field's name or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png). 
 3. Click on **OK** to confirm.
 
 ### How to edit Number field properties ###
