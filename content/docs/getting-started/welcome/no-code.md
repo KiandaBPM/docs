@@ -116,10 +116,10 @@ Each field comes with its own range of settings like autofill for textbox and cu
 
 These are some of the common properties of input fields:
 
-- Title - Each field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user.
+- **Title** - Each field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user.
 - Required - Using this checkbox makes a field mandatory for form users to fill in.
-- Visible - Displays the field in the form if checked.
-- Layout - Defines both desktop or mobile layout.
+- **Visible** - Displays the field in the form if checked.
+- **Layout** - Defines both desktop or mobile layout.
 
 In addition to these common properties, each field also has its own range of settings. For example, a **list** can have data entered manually, via a form, or from an external data source such as SharePoint or Salesforce and that list can be displayed as a dropdown, radio, multiselect or checkbox list. 
 

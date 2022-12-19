@@ -78,7 +78,7 @@ Multiple dashboards can be created and customised as required per project, per d
 
 ***Dashboard page***
 
-![Dashboard page](/images/IT_dashboard2.jpg)
+![Dashboard page](/images/IT_dashboard2-blurred.jpg)
 
 Examples of some of our dashboard features include: 
 
