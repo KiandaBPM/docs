@@ -36,38 +36,44 @@ To edit a **Date field**:
 
 3. The **Edit field** dialog box will open, enabling you to choose from a range of options.
 
-![Edit date field dialog box](/images/edit-date-field-dialog-box.jpg)
+![Edit date field dialog box](/images/edit-date-field-dialog-box2.jpg)
 
-​	The options within the **Edit date field dialog box** include:
 
-- **Title** - you can change the title of the date field.
 
-- **Help text** - you can insert help text a user can view when completing the date field. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
+4. **Title** - you can change the title of the date field.
 
-- **Display format** - you can choose whether the date field shows the date only or the date and time.
+5. **Name** - This is a unique name for the field and inherits a camel case version of the entered Title.
 
-- **Adjust to user timezone** - you can select this if you want the date field to adjust to the time zone of the form user.
+6. **Help text** - you can insert help text a user can view when completing the date field. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-- **Set default date onload** - if you choose '**Yes**', this means that the date field will automatically be populated (with a date stamp) when a user opens the form to start completing it; by default, the date that will be inserted is today's date. If you choose '**No**', then the user will need to manually complete the date field. 
-  
-  If you choose 'Yes', two additional options then appear in the dialog box: 
+7. **Custom CSS class name** - You can type the name of a CSS class to allow the Date to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
-  - **Default date** - this is where you can choose the default date that will be automatically inserted in the form when a user opens it. You can choose from '**Now**', '**Today**' (which inserts today's date and a time of 00:00 midnight) or '**Relative from now'** (you can insert the date you want to use, in terms of the number of days, hours and minutes from now).
-  - **Always set date even if not empty** - if you select this option, this means that the default date you've chosen to be automatically inserted when a user opens the form will be updated/changed *each time* the user goes into the form. In other words, the initial date that was inserted when the form was first opened will be replaced/updated when the user goes back into the form. If you want the date field to retain the initial date the user started to complete the form, do not tick this checkbox.
-  
-- **Enable native picker on mobile** - you can choose to allow users who are completing the date field on a mobile phone to use the default pop-up date picker associated with their mobile phone.
+8. **Display format** - you can choose whether the date field shows the date only or the date and time.
+
+9. **Adjust to user timezone** - you can select this if you want the date field to adjust to the time zone of the form user.
+
+10. **Set default date onload** - if you choose '**Yes**', this means that the date field will automatically be populated (with a date stamp) when a user opens the form to start completing it; by default, the date that will be inserted is today's date. If you choose '**No**', then the user will need to manually complete the date field. 
+
+    If you choose 'Yes', two additional options then appear in the dialog box: 
+
+    - **Default date** - this is where you can choose the default date that will be automatically inserted in the form when a user opens it. You can choose from '**Now**', '**Today**' (which inserts today's date and a time of 00:00 midnight) or '**Relative from now'** (you can insert the date you want to use, in terms of the number of days, hours and minutes from now).
+    - **Always set date even if not empty** - if you select this option, this means that the default date you've chosen to be automatically inserted when a user opens the form will be updated/changed *each time* the user goes into the form. In other words, the initial date that was inserted when the form was first opened will be replaced/updated when the user goes back into the form. If you want the date field to retain the initial date the user started to complete the form, do not tick this checkbox.
+
+    - **Enable native picker on mobile** - you can choose to allow users who are completing the date field on a mobile phone to use the default pop-up date picker associated with their mobile phone.
+
+
 
 To move a **Date field**, simply
 
-1.  Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
+1.  Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
 2. Drag and drop the field wherever you want to move it to within your form.
 
 ![Date field drag handle](/images/move-date-field-drag-handle.jpg)
 
 To delete a **Date field** from your form:
 
-1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
-2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
+1. Select the field (by either clicking on the field's name or its **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png). 
 3. Click on **OK** to confirm.
 
 ### How to edit Date field properties ###
