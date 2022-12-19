@@ -882,7 +882,7 @@ There is also an option to create a **customised data source connector** using t
 &lt;p>We have briefly introduced the concept of B2B Portals within &lt;strong>Administration&lt;/strong>. Now let&amp;rsquo;s look at the following areas in more detail:&lt;/p></description></item><item><title>Docs: Administration</title><link>https://docs.kianda.com/docs/platform/administration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/</guid><description>
 &lt;p>The &lt;strong>Administration&lt;/strong> menu contains all the functions you need to maintain your Kianda workspace.&lt;/p>
 &lt;p>The menu is found in the left-hand side pane when you log in to Kianda. This menu will only appear if you have a certain role, for example &lt;strong>Administrators&lt;/strong> will see all items shown in the image below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/admin-view.jpg" alt="Administration menu">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/admin-view-new.jpg" alt="Administration menu">&lt;/p>
 &lt;p>Other roles like &lt;strong>Developer&lt;/strong>, or &lt;strong>Design business process role&lt;/strong> will have access to the Administration menu, but will only see role-related items within the menu. For example a Developer will only see &lt;strong>Developer&lt;/strong> within Administration, while a person with a Design business process role will only see &lt;strong>Designer&lt;/strong> within Administration. User roles are set by Administrator who will have access to the &lt;strong>Users&lt;/strong> function within administration, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more information.&lt;/p>
 &lt;p>If you have full administration access then you will see nine functions by default within administration. These are:&lt;/p>
 &lt;ul>
@@ -911,11 +911,14 @@ There is also an option to create a **customised data source connector** using t
 &lt;p>&lt;strong>Invite partner&lt;/strong> - users with the Manage partners role and administrators can access this function to invite business partners to view processes.&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>&lt;strong>Look and Feel&lt;/strong> - this provides a shortcut to the &lt;strong>Look and Feel&lt;/strong> section of &lt;strong>Subscription&lt;/strong> to allow developers make changes to areas like global CSS file for a customised environment.&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>&lt;strong>Developer&lt;/strong> - developers and administrators can access this function to create customised field, rule and dashboard widgets.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>We have briefly introduced each of the nine functions within &lt;strong>Administration&lt;/strong>. Now let&amp;rsquo;s look at each of these functions in more detail:&lt;/p></description></item><item><title>Docs: Document generation</title><link>https://docs.kianda.com/docs/platform/document-generation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/</guid><description>
+&lt;p>We have briefly introduced each of the nine functions within &lt;strong>Administration&lt;/strong>, including the shortcut &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/#look-and-feel">Look and Feel&lt;/a>&lt;/strong> also found within &lt;strong>Subscription&lt;/strong>. Now let&amp;rsquo;s look at each of these functions in more detail:&lt;/p></description></item><item><title>Docs: Document generation</title><link>https://docs.kianda.com/docs/platform/document-generation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/</guid><description>
 &lt;p>&lt;strong>Document generation&lt;/strong> refers to the use of Kianda Add-ins for Word, and also Excel, that you can use to &lt;strong>generate reports&lt;/strong> within Kianda processes and &lt;strong>populate&lt;/strong> the reports with &lt;strong>data captured&lt;/strong> within each process instance. This could be useful, for example, for inspection reports where a report template can be used to show the information the engineer input to a &lt;strong>Kianda form&lt;/strong> during his inspection. Each time an inspection is performed, a report is generated based on a Word template and the report shows the relevant information that was captured during that particular inspection.&lt;/p>
 &lt;p>&lt;em>Microsoft Word template with Kianda form fields&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/word-template.jpg" alt="MS Word template containing Kianda form fields">&lt;/p>
