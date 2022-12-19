@@ -882,7 +882,7 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about creating process designs in Designer and how to use the interface to create forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Developer</title><link>https://docs.kianda.com/docs/platform/administration/developer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/developer/</guid><description>
-&lt;p>Kianda &lt;strong>Developer&lt;/strong> is available to &lt;strong>administrators&lt;/strong> and those users with the role &lt;strong>Developer&lt;/strong>. The Developer function is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The function allows you to create customised field, rule and dashboard widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.&lt;/p>
+&lt;p>Kianda &lt;strong>Developer&lt;/strong> is available to &lt;strong>administrators&lt;/strong> and those users with the role &lt;strong>Developer&lt;/strong>. The Developer function is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The function allows you to create customised field, rule, dashboard and data connector widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.&lt;/p>
 &lt;p>You can also quickly use Kianda &lt;strong>Developer&lt;/strong> to add webhooks, providing an efficient way to push GET requests to other applications in real-time as the Kianda process(es) runs and avoiding the need to poll for data.&lt;/p>
 &lt;p>Kianda uses EmberJS to build widgets, and in particular the Handlebars templating library, to power the application&amp;rsquo;s user interface. See &lt;a href="#emberjs-templating-basics">templating basics&lt;/a> to get started.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -892,15 +892,16 @@
 &lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Developer&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Any customised widgets that have been created will be visible in the &lt;strong>Developer resources&lt;/strong> main widget view.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/developer-view.jpg" alt="Developer view">&lt;/p>
+&lt;p>Any customised widgets that have been created will be visible in the &lt;strong>Developer resources&lt;/strong> view below. &lt;strong>Field&lt;/strong>, &lt;strong>rule&lt;/strong> and &lt;strong>dashboard&lt;/strong> widgets are visible in the left-hand &lt;strong>Widgets&lt;/strong> pane and customised &lt;strong>connectors&lt;/strong> are available in the right-hand &lt;strong>Connectors&lt;/strong> pane.&lt;/p>
+&lt;p>Note that &lt;strong>widgets&lt;/strong> can be &lt;strong>grouped&lt;/strong> into folders as shown in the image below. This is explained in step 6.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/developer-view-updated.jpg" alt="Developer view">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To view details for existing widgets, click on the widget name.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/widget-example.jpg" alt="Widget example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the &lt;strong>Widget&lt;/strong> page you can update existing Widget UI and Widget Code within the editor and then click on &lt;strong>Update&lt;/strong> &lt;img src="https://docs.kianda.com/images/update-button.jpg" alt="Update button">. Alternatively click on &lt;strong>Close&lt;/strong> to exit the page at any time.&lt;/p>
+&lt;p>In the &lt;strong>Widget&lt;/strong> pane you can update existing Widget UI and Widget Code within the editor and then click on &lt;strong>Update&lt;/strong> &lt;img src="https://docs.kianda.com/images/update-button.jpg" alt="Update button">. Alternatively click on &lt;strong>Close&lt;/strong> to exit the page at any time.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>From the &lt;strong>Developer resources&lt;/strong> main widget view you can:&lt;/p>
@@ -912,7 +913,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>To create a new widget click on &lt;strong>New widget&lt;/strong> &lt;img src="https://docs.kianda.com/images/new-widget-button.jpg" alt="New widget button">. This will open the &lt;strong>Edit widget&lt;/strong> dialog box.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/edit-widget-page.jpg" alt="Edit widget example">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-widget-dialog-box.jpg" alt="Edit widget example">&lt;/p>
 &lt;p>Fill out details as follows:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -925,6 +926,9 @@
 &lt;p>&lt;strong>Widget Icon&lt;/strong> - choose an appropriate icon from the drop-down list.&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>&lt;strong>Group&lt;/strong> - add in a group name to group widgets together in a folder in the main widget view.&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>&lt;strong>Widget type&lt;/strong> - choose from &lt;strong>Field&lt;/strong>, &lt;strong>Rule&lt;/strong> or &lt;strong>Dashboard widget&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;/ul>
@@ -932,7 +936,10 @@
 &lt;p>When you are finished editing the dialog box click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Webhooks&lt;/strong> to configure URLs to respond to process instance create, update and delete events.&lt;/p>
+&lt;p>To create a new customised connector click on the &lt;strong>New Connector&lt;/strong> button &lt;img src="https://docs.kianda.com/images/new-connector-button.jpg" alt="New connector button"> and populate the four tabs that appear. Details on how to create a customised connector are found at &lt;a href="//docs/low-code/custom-connector/">Custom connectors&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To create your own webhooks, click on &lt;strong>Webhooks&lt;/strong> to configure URLs to respond to process instance create, update and delete events.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/webhook-edit.jpg" alt="Instance Callback URLs">&lt;/p>
 &lt;ul>
 &lt;li>Move the slider across for each type of operation (Create, Update, Delete) to add in a URL to enable callback.
