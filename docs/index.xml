@@ -502,14 +502,19 @@ Your browser does not support the video tag.
 &lt;ol start="3">
 &lt;li>The &lt;strong>Edit field&lt;/strong> dialog box will open, enabling you to choose from a range of options.&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/edit-date-field-dialog-box.jpg" alt="Edit date field dialog box">&lt;/p>
-&lt;p>​ The options within the &lt;strong>Edit date field dialog box&lt;/strong> include:&lt;/p>
-&lt;ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-date-field-dialog-box2.jpg" alt="Edit date field dialog box">&lt;/p>
+&lt;ol start="4">
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the date field.&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>&lt;strong>Name&lt;/strong> - This is a unique name for the field and inherits a camel case version of the entered Title.&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong> - you can insert help text a user can view when completing the date field. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Date to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Display format&lt;/strong> - you can choose whether the date field shows the date only or the date and time.&lt;/p>
@@ -521,24 +526,28 @@ Your browser does not support the video tag.
 &lt;p>&lt;strong>Set default date onload&lt;/strong> - if you choose &amp;lsquo;&lt;strong>Yes&lt;/strong>&amp;rsquo;, this means that the date field will automatically be populated (with a date stamp) when a user opens the form to start completing it; by default, the date that will be inserted is today&amp;rsquo;s date. If you choose &amp;lsquo;&lt;strong>No&lt;/strong>&amp;rsquo;, then the user will need to manually complete the date field.&lt;/p>
 &lt;p>If you choose &amp;lsquo;Yes&amp;rsquo;, two additional options then appear in the dialog box:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Default date&lt;/strong> - this is where you can choose the default date that will be automatically inserted in the form when a user opens it. You can choose from &amp;lsquo;&lt;strong>Now&lt;/strong>&amp;rsquo;, &amp;lsquo;&lt;strong>Today&lt;/strong>&amp;rsquo; (which inserts today&amp;rsquo;s date and a time of 00:00 midnight) or &amp;lsquo;&lt;strong>Relative from now&amp;rsquo;&lt;/strong> (you can insert the date you want to use, in terms of the number of days, hours and minutes from now).&lt;/li>
-&lt;li>&lt;strong>Always set date even if not empty&lt;/strong> - if you select this option, this means that the default date you&amp;rsquo;ve chosen to be automatically inserted when a user opens the form will be updated/changed &lt;em>each time&lt;/em> the user goes into the form. In other words, the initial date that was inserted when the form was first opened will be replaced/updated when the user goes back into the form. If you want the date field to retain the initial date the user started to complete the form, do not tick this checkbox.&lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>&lt;strong>Default date&lt;/strong> - this is where you can choose the default date that will be automatically inserted in the form when a user opens it. You can choose from &amp;lsquo;&lt;strong>Now&lt;/strong>&amp;rsquo;, &amp;lsquo;&lt;strong>Today&lt;/strong>&amp;rsquo; (which inserts today&amp;rsquo;s date and a time of 00:00 midnight) or &amp;lsquo;&lt;strong>Relative from now&amp;rsquo;&lt;/strong> (you can insert the date you want to use, in terms of the number of days, hours and minutes from now).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Always set date even if not empty&lt;/strong> - if you select this option, this means that the default date you&amp;rsquo;ve chosen to be automatically inserted when a user opens the form will be updated/changed &lt;em>each time&lt;/em> the user goes into the form. In other words, the initial date that was inserted when the form was first opened will be replaced/updated when the user goes back into the form. If you want the date field to retain the initial date the user started to complete the form, do not tick this checkbox.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Enable native picker on mobile&lt;/strong> - you can choose to allow users who are completing the date field on a mobile phone to use the default pop-up date picker associated with their mobile phone.&lt;/p>
 &lt;/li>
 &lt;/ul>
+&lt;/li>
+&lt;/ol>
 &lt;p>To move a &lt;strong>Date field&lt;/strong>, simply&lt;/p>
 &lt;ol>
-&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/li>
 &lt;li>Drag and drop the field wherever you want to move it to within your form.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/move-date-field-drag-handle.jpg" alt="Date field drag handle">&lt;/p>
 &lt;p>To delete a &lt;strong>Date field&lt;/strong> from your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
 &lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-date-field-properties">How to edit Date field properties&lt;/h3>
@@ -2531,15 +2540,20 @@ The Safety Team
 &lt;/li>
 &lt;li>
 &lt;p>Select &lt;strong>Input&lt;/strong> to view the range of Input controls and click on &lt;strong>File&lt;/strong>. A &lt;strong>New field - File&lt;/strong> dialog box will open with a range of options you can choose from for your new File upload field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/new-file-field.jpg" alt="Edit file upload field dialog box">&lt;/p>
-&lt;p>The options available in the &lt;strong>New field - File&lt;/strong> dialog box include:&lt;/p>
-&lt;ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/new-file-field2.jpg" alt="Edit file upload field dialog box">&lt;/p>
+&lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Title&lt;/strong>: You can change the name of the File upload field from the default &amp;lsquo;&lt;strong>File 1&lt;/strong>&amp;rsquo;&lt;/p>
+&lt;p>&lt;strong>Title&lt;/strong>: You can change the name of the File upload field from the default &amp;lsquo;&lt;strong>File 1&lt;/strong>&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Name&lt;/strong> - This is a unique name for the field and inherits a camel case version of the entered Title.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Help text&lt;/strong>: You can insert text to help the form user to complete the File upload field - if you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-help-text.jpg" alt="File upload help text example">&lt;/p>
+&lt;pre tabindex="0">&lt;code>![File upload help text example](/images/file-upload-help-text.jpg)
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the File upload to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Save location&lt;/strong>: This is the location the file will be saved to. When you click on the &lt;strong>Destination&lt;/strong> button, a &lt;strong>Select datasource&lt;/strong> dialog box opens in which you can choose where to save the file(s):&lt;/p>
@@ -2588,41 +2602,39 @@ The Safety Team
 &lt;p>This opens the &lt;strong>Edit rule - Save form&lt;/strong> dialog box - check the &lt;strong>Perform background save&lt;/strong> option and then click &lt;strong>OK&lt;/strong>:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/save-process-rule-perform-background.jpg" alt="Edit rule dialog box perform background save">&lt;/p>
 &lt;p>If the &lt;strong>Enable background upload&lt;/strong> and &lt;strong>Enable chunked upload&lt;/strong> options are chosen and a user completes a form while they are in an area with poor coverage, once the user re-establishes internet connection they will need to go back into Kianda and click the &lt;strong>Force refresh&lt;/strong> button &lt;img src="https://docs.kianda.com/images/refresh.png" alt="Refresh button"> at the top right of the &lt;strong>Home&lt;/strong> page.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Show uploaded files count&lt;/strong>: Select &lt;strong>Yes&lt;/strong> to show the number of uploaded files.&lt;/p>
-&lt;/li>
+&lt;ul>
+&lt;li>&lt;strong>Show uploaded files count&lt;/strong>: Select &lt;strong>Yes&lt;/strong> to show the number of uploaded files.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>Once you complete the &lt;strong>New field - File&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong>, a new &lt;strong>File upload field&lt;/strong> is added to your form, with the name you inserted as the &lt;strong>Title&lt;/strong> in the dialog box (by default the title is &lt;strong>File 1&lt;/strong> unless you change it).&lt;/p>
-&lt;p>In the example of our Inspection Form, the new File upload field (titled &lt;strong>Upload photos&lt;/strong>) added to the form could look like this when a user views it on a mobile phone (to see how your form or field will look on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by using the &lt;strong>Preview&lt;/strong> option which can be opened by clicking the play button icon &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">):&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>In the example of our Inspection Form, the new File upload field (titled &lt;strong>Upload photos&lt;/strong>) added to the form could look like this when a user views it on a mobile phone (to see how your form or field will look on a mobile, view it in &lt;strong>Mobile preview&lt;/strong> by using the &lt;strong>Preview&lt;/strong> option which can be opened by clicking the play button icon &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview">):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-example-mobile.jpg" alt="File upload example mobile phone">&lt;/p>
 &lt;h3 id="how-to-edit-move-and-delete-file-upload-fields">How to edit, move and delete File upload fields&lt;/h3>
 &lt;p>To edit a &lt;strong>File upload field&lt;/strong>:&lt;/p>
 &lt;ol>
-&lt;li>Select the File upload field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">&lt;/li>
+&lt;li>Select the File upload field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-edit-field.jpg" alt="Select file upload field to edit">&lt;/p>
 &lt;ol start="3">
 &lt;li>The &lt;strong>Edit field - File&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - File&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload#how-to-get-started">How to get started&lt;/a>).&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-edit-field-dialog.jpg" alt="Edit date field dialog box">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-edit-field-dialog2.jpg" alt="Edit date field dialog box">&lt;/p>
 &lt;p>​ You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
 &lt;p>To move a &lt;strong>File upload field&lt;/strong>, simply:&lt;/p>
 &lt;ol>
-&lt;li>Select the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">&lt;/li>
+&lt;li>Select the field&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/li>
 &lt;li>Drag and drop the field wherever you want to move it to within your form.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/upload-file-draghandle.jpg" alt="Date field drag handle">&lt;/p>
 &lt;p>To delete a &lt;strong>File upload field&lt;/strong> from your form:&lt;/p>
 &lt;ol>
-&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
-&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm&lt;/li>
+&lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>
+&lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-file-upload-field-properties">How to edit File upload field properties&lt;/h3>
 &lt;p>To view or edit the field properties associated with a &lt;strong>File upload field&lt;/strong>, select the field (by clicking on the field title or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - the &lt;strong>Field properties&lt;/strong> menu will appear in the right-hand pane.&lt;/p>
