@@ -1,10 +1,9 @@
 ---
-title: "Process settings copy"
+title: "Process settings"
 weight: "2"
-linkTitle: "Process settings copy"
+linkTitle: "Process settings"
 typora-root-url: ..\..\..\..\..\static
-toc_hide: true
-hide_summary: true
+
 ---
 
  ## Introduction ## 
@@ -46,29 +45,39 @@ Within process settings, there are four tabs to navigate to:
 
 1. **General**:
 
+   ![Process settings general tab](/images/process-settings-general.jpg)
+
    * **Process ID Settings** - choose from a) Default or b) Custom and use a combination of [ProcessName]-[UniqueNumber]-[FieldName]
 
    * **On load rules execution mode** - options are a) Always b) When in edit mode or c) When open new. The default setting is **Always**.
 
    *  **Enable form assignment notification?** - options are a) Yes or b) No
 
-   *  **Prevent closing instance with unsaved data?** - options are a) Yes or b) No
+   * **Prevent closing instance with unsaved data?** - options are a) Yes or b) No
+
+   * **Enable process navigator?** - options are a) Yes or b) No. If you select Yes, the Process navigator tab will appear in the right hand panel, allowing you to quickly snap to and view desired form controls and rules.
+
+      ![Process navigator panel](/images/process-navigator-panel.jpg)
+
+     ![Process navigator selection](/images/process-navigator-selection.jpg)
+
+     
 
      
 
 2. **Security**:
 
-   * **Enable process security** - if you tick the checkbox, can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.
+   ![Process settings security tab](/images/process-settings-security.jpg)
 
-     ![Process security](/images/process_security.png)
-
-     The default setting is **Security users can create, assign to can update, everyone else can view**.
+   * **Enable process security** - if you tick the checkbox, can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below. The default setting is **Security users can create, assign to can update, everyone else can view**.
 
    * **Instance delete settings** - options are a) Any user can delete b) Creator can delete c) "Current form owner" can delete d) "Security users" can delete e) "Admins only" can delete. The default setting is **Creator can delete**.
 
      
 
-3. **Tabs**: 
+3. **Tabs**:
+
+   ![Process settings tabs tab](/images/process-settings-tabs2.jpg) 
 
    * **Hide form tabs** - gives you the ability to hide form tabs, options are a) Yes or b) No 
 
@@ -84,12 +93,12 @@ Within process settings, there are four tabs to navigate to:
 
 4. **Anonymous Form**:
 
+   ![Link for external users](/images/process-settings-anonymous2.jpg)
+
    * **Enable anonymous sharing of forms** - gives you the ability to share forms with people outside your organisation for example a feedback form or GDPR subject access request. Options are a) Yes or b) No. If you click on **Yes** there are various options that you can add:
 
      * Click on **New link** to generate a new anonymous form link to share with users and click on **Edit** to change the link. 
      * **Message to display after anonymous submission** - to add a display message.
-
-     ![Link for external users](/images/anonlink2.jpg)
 
      - **Hide form topbar** - checkbox to hide the form topbar.
      - **Force authenticated user to log out** - options are a) Yes or b) No to force the authenticated user to log out once the form is submitted. If **No** is selected, you can choose to **Redirect authenticated user to**:
