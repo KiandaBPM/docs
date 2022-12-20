@@ -122,7 +122,7 @@ Your browser does not support the video tag.
 &lt;li>
 &lt;p>Fill out the details in the &lt;strong>Edit field&lt;/strong> dialog box - that is &lt;strong>Title&lt;/strong>, &lt;strong>Name&lt;/strong>, and choose options further options like &lt;strong>Mode&lt;/strong> to have users input a &lt;strong>single line of text&lt;/strong>, &lt;strong>multiple lines of text&lt;/strong> or &lt;strong>rich text&lt;/strong>.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Edit field dialog box&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/editfield.gif" alt="Edit field">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-text.jpg" alt="Edit field">&lt;/p>
 &lt;p>There are other options like &lt;strong>Text style&lt;/strong> where you can choose to Capitalise or have lowercase text only. Click on &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when complete.&lt;/p>
 &lt;/li>
 &lt;li>
@@ -131,7 +131,7 @@ Your browser does not support the video tag.
 &lt;li>
 &lt;p>Click on &lt;strong>Controls&lt;/strong> &amp;gt; &lt;strong>Input&lt;/strong> &amp;gt; &lt;strong>User picker&lt;/strong>. Choose from the options in the &lt;strong>New field - User picker&lt;/strong> dialog box. Click on &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when complete.&lt;/p>
 &lt;p>&lt;em>&lt;strong>New field - User picker dialog box&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/userpicker.gif" alt="New field - User picker">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/new-user-picker.jpg" alt="New field - User picker">&lt;/p>
 &lt;p>The user picker field will be used in this example, to allow the form user to pick from a list of users. This could be a pre-defined group, or individual users. The user picker field could also be connected to an external &lt;a href="https://docs.kianda.com/docs/platform/connectors/">datasource&lt;/a> like a list of line managers from SalesForce.&lt;/p>
 &lt;/li>
 &lt;li>
@@ -335,7 +335,7 @@ Your browser does not support the video tag.
 &lt;li>
 &lt;p>Click on the &lt;strong>Datasource&lt;/strong> button &lt;img src="https://docs.kianda.com/images/datasource.png" alt="Datasource button"> and choose the appropriate datasource, in this case a SharePoint list called Training Site. Choose the appropriate &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and choose a field to &lt;strong>Sort by&lt;/strong>.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Edit field dialog box&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/traininglist.gif" alt="SharePoint list example">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/new-user-picker2.jpg" alt="SharePoint list example">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The result is a dropdown list called Types of training which is available for use in our Training Request Form.&lt;/p>
