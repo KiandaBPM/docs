@@ -82,7 +82,7 @@ To create a **Chart widget** on a dashboard using the wizard:
    - **Dataset label** - enter the label for your dataset. This label will appear when you hover over the chart.
    - **Data from** - Choose from a) Process b) Partner process or c) Data source. Depending on which option you choose go to the relevant area to read more on [Choosing data from a Process](#choosing-data-from-a-process), [Choosing data from a Partner process](#choosing-data-from-a-partner-process) and [Choosing data from a Data source](#choosing-data-from-a-data-source).
    - **Labels field** - use the drop-down list to select the label of the data you want displayed. This can be any field from your process.
-   - **Values field** - use the drop-down list to select the value of the data you want displayed. This can be any field from your process.
+   - **Values field** - use the drop-down list to select the value of the data you want displayed. This can be any field from your process. **Count** represents the total amount that the chosen value has appeared in a process. **Sum** is only available if your process contains a number field. Selecting sum, will add up all value for each process instance. **Average** is also only available for number fields which will return the average of all instances added up.
    -  ![Conditions icon](/images/condition-icon.jpg) - add conditions to your chart. Go to [Conditions](/docs/platform/pages/conditions/) to read more about conditions.
 
 5. When you are finished choosing options in the **Add or edit dataset** dialog box, click on the **OK** button to save your changes.
