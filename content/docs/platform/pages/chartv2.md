@@ -306,6 +306,38 @@ Click on the **OK** button when you are finished editing to save your changes or
 
 ## How to create a Polar area Chart
 
+1. Create a Chart v2 widget in a dashboard of your choice.
+
+2. In the Chart Wizard, select Radar chart radio button and click on ![Continue 1](/images/chart-wizard-continue1.jpg) to move to the next step.
+
+   ![Chart type: Radar chart](/images/chart-type-polar.jpg)
+
+3. In this step of the wizard, click on ![Chart wizard add dataset](/images/chart-wizard-add-dataset.jpg) The first dataset represents your labels. The labels on a radar chart is each point on the outer part of the radar.
+
+4. As an example, we will link the first dataset to one of our sites from a process. We will display the **Risk** as a label and **Percentage** as the value.
+
+   ![Chart wizard add dataset](/images/radar-risk.jpg)
+
+   - Link the dataset to our risk assessment process in the **Business process** drop-down list. 
+
+   - Click on ![Conditions icon](/images/condition-icon.jpg) button to set a condition. Here we'll set a condition to only display the percentage of a risk if a **site** is **equal** to **Dublin Bay** (one of our existing sites in the process). This is our first radar diagram.  
+
+     ![Chart wizard add dataset](/images/radar-dublin.jpg)
+
+   - Select the **Risk** as the **Labels field**.
+
+   - Select **Percentage** in the values field 1 and select **sum** from the radio list. This will result in displaying the percentage of each risk of **Dublin Bay**.
+
+   - Click on **OK** in the **Add or Edit dataset** dialog to save your dataset.
+
+   - To have multiple radar diagram in one chart, follow the same step described in step 4.
+
+5. Click **Continue** to move to the next step. Here select a colour scheme for your datasets.
+
+6. When you are finished with your colour scheme, click on **Continue** to move to the last section of the wizard.
+
+7. Follow step 10 of [How to create a chart from the wizard](/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard) to complete your chart.
+
 ### How to move Chart widgets
 
 To move a **Chart widget** on a dashboard:

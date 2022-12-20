@@ -210,19 +210,19 @@ Remember additional items can be added to the file whenever you wish. Best pract
 
 ### Customised button example
 
-For example, if you have a button in a process and you want to change background colour and text colour, first you need to note down the **Unique Name.** Next, because you only want to target the button in a specific process and not all buttons in the system, use the **Element and attribute** selector. This will take the form of: 
+For example, if you have a button in a process and you want to change background colour and text colour, first you need to note add a Custom CSS name to the provided text box within the button options. Next, because you only want to target the button in a specific process, you will need to use aa **element selector**. This will take the form of: 
 
 ```css
-.pinkButton {}
+.pinkButton > button {}
 ```
 
 1. Within the **Global CSS File** add the necessary details, for example the above along with the necessary CSS properties, for example:
 
    ```css
-    button[data-name$="?pinkButton"]:not(.is-design) {
-         color: green;
+   .pinkButton > button {
+       color: green;
        background-color:pink;
-     }
+   }
    ```
 
 2. When you are finished making changes click on **OK** or else click on **Close** at any time to close the dialog box. 
