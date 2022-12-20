@@ -24,7 +24,7 @@ The video below introduces version control and the section [How to get started](
 
 ## How to get started ##
 
-1. To view the version history click on the **Design version history** button which may look like V0.1 or whatever the current version is for your process, for example ![View design version history](/images/version1.png) or ![Version 0.8](/images/version8.png)
+1. To view the version history click on the **Design version history** button which may look like V0.1 or whatever the current version is for your process, for example ![View design version history](/images/version1.png) or ![Version 0.8](/images/version8.png).
 
 2. A pop-up shows the version history details including when the version was created and who created it. 
 

@@ -8,9 +8,9 @@ Kianda **Designer** provides an intuitive interface where you can quickly start 
 
 There are 3 key principles to consider when working with forms:
 
-1) Form **design** - what a form looks like, what elements it contains, for example controls and rules, see [**Designer layout**](#designer-layout)
-2) Form **interaction**- how users can use forms depending on certain sequences happening, see [**Rules**](/docs/getting-started/create-first-process/plan-your-process/rules/) 
-3) Form **management** - who can edit and access forms is set when creating a new form, see [**New forms**](#new-forms)
+1) Form **design** - what a form looks like, what elements it contains, for example controls and rules, see [**Designer layout**](#designer-layout).
+2) Form **interaction**- how users can use forms depending on certain sequences happening, see [**Rules**](/docs/getting-started/create-first-process/plan-your-process/rules/). 
+3) Form **management** - who can edit and access forms is set when creating a new form, see [**New forms**](#new-forms).
 
 
 
@@ -167,7 +167,7 @@ If you have added a new form during the form creation process, then a blank canv
 
 1. Go to [Add controls and rules](/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/) to find out more about adding form elements.
 1. Move elements by clicking on the **Drag Handle** ![Drag handle](/images/move.png) beside the item and dragging it to where you want to place it. 
-1. Edit elements by clicking on each item and clicking on the **Pen** button ![Pen icon](/images/penicon.png) see [Settings and properties](#settings-and-properties)
+1. Edit elements by clicking on each item and clicking on the **Pen** button ![Pen icon](/images/penicon.png) see [Settings and properties](#settings-and-properties).
 
 
 
@@ -189,7 +189,7 @@ Settings are available from the right-hand pane and give you the ability to:
 
 - Edit form information by selecting a form and clicking on the **Pen** button ![Pen icon](/images/penicon.png).
 
-- Change a field to another field by clicking on  **Change field**
+- Change a field to another field by clicking on  **Change field**.
 
 - Create a duplicate form by selecting a form, clicking on the **Clone** button ![Clone button](/images/clone.png) and then click on **Ok**. A version called 'Form Name Copy' is created and available to edit on the canvas. The **Clone** button can also be used to clone form elements like controls or buttons. 
 

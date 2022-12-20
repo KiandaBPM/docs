@@ -71,7 +71,7 @@ The first field we are going to add in our example is a textbox field to accept 
 
    ***Edit field dialog box***
 
-   ![Edit field](/images/editfield.gif)
+   ![Edit field](/images/edit-text.jpg)
 
    There are other options like **Text style** where you can choose to Capitalise or have lowercase text only. Click on **OK** button ![OK button](/images/ok.png) when complete.
 
@@ -81,7 +81,7 @@ The first field we are going to add in our example is a textbox field to accept 
 
    ***New field - User picker dialog box***
 
-   ![New field - User picker](/images/userpicker.gif)
+   ![New field - User picker](/images/new-user-picker.jpg)
 
    The user picker field will be used in this example, to allow the form user to pick from a list of users. This could be a pre-defined group, or individual users. The user picker field could also be connected to an external [datasource](/docs/platform/connectors/) like a list of line managers from SalesForce. 
 

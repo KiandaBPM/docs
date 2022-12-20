@@ -51,7 +51,7 @@ In this example, we will connect to a SharePoint list called 'Types of Training'
 
 	***Edit field dialog box***
 
-	![SharePoint list example](/images/traininglist.gif)
+	![SharePoint list example](/images/new-user-picker2.jpg)
 	
 7. The result is a dropdown list called Types of training which is available for use in our Training Request Form. 
 

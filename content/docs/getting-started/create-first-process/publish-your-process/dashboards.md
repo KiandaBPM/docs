@@ -23,12 +23,12 @@ Before you begin it is important to be aware that there are two modes involved i
 
 When using dashboards there are two modes: **Edit mode** and **View mode**.
 
-When you are in **View mode**, the **Edit** button ![Edit button](/images/edit2.PNG) will be visible in the top menu bar.
+When you are in **View mode**, the **Edit** button ![Edit button](/images/edit.png) will be visible in the top menu bar.
 
 ***Clicking on the Edit button to go into Edit mode***
 ![View mode](/images/dashboardgeneral.png)
 
-When you click on the **Edit** button ![Edit button](/images/edit2.PNG) you will be in **Edit mode**, which means that the **Widget menu** is available at the top of the dashboard page, along with the **Settings** button ![Settings](/images/settings2.png) to make changes to the page, and **Bin/Trash** button ![Bin button](/images/binicon.png) to delete the page.
+When you click on the **Edit** button ![Edit button](/images/edit.png) you will be in **Edit mode**, which means that the **Widget menu** is available at the top of the dashboard page, along with the **Settings** button ![Settings](/images/settings2.png) to make changes to the page, and **Bin/Trash** button ![Bin button](/images/binicon.png) to delete the page.
 
 ***Edit mode***
 ![Edit mode](/images/editmode.png)
@@ -81,7 +81,7 @@ Kianda offers a user-friendly interface to create dashboards in a few minutes. P
 
 1. Save any changes you make by clicking on the **Save** button ![Save button](/images/savepage.png) in the top menu to ensure your dashboard changes are saved and you will see a pop-up message **Page saved successfully**. 
 
-1. You are now in **View mode**. To make further changes to the dashboard page, return to **Edit mode** by clicking on the **Edit** button ![Edit button](/images/edit2.PNG) in the top menu.
+1. You are now in **View mode**. To make further changes to the dashboard page, return to **Edit mode** by clicking on the **Edit** button ![Edit button](/images/edit-current-page.jpg) in the top menu.
 
    
 
