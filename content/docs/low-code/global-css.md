@@ -33,7 +33,7 @@ Remember the visual style of processes and individual controls like buttons, can
 
 Selecting the button in this way to edit it, will allow you to select the colour scheme of the control and assign an icon to it from a large library of available icons. 
 
-However, you may want to achieve a **deeper level of customisation**. There are several methods available to combine practicality and ease of user with an aesthetically pleasing design. One option is to modify the **Global CSS File** when you want to change the look and feel of the **site or your processes**. You can do this by applying a **Custom CSS class name**  to any of the **controls fields** and creating a class selector within the **Global CSS File** available globally in the **Subscription** function within **Administration**. 
+However, you may want to achieve a **deeper level of customisation**. There are several methods available to combine practicality and ease of user with an aesthetically pleasing design. One option is to modify the **Global CSS File** when you want to change the look and feel of the **site or your processes**. You can do this by applying a **Custom CSS class name**  to any of the **controls fields** available in Kianda, and creating a class selector within the **Global CSS File** available globally in the **Subscription** function within **Administration**.
 
 
 
