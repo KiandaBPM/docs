@@ -751,6 +751,7 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;p>Click on each of the links above to find out more about each data connector.&lt;/p>
 &lt;p>If you have a data source that is not on the list above, you can use SOAP or REST to easily connect to your data source, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/soap">SOAP&lt;/a> or &lt;a href="https://docs.kianda.com/docs/platform/connectors/rest/">REST&lt;/a> for more information.&lt;/p>
+&lt;p>If you are an experienced developer, you can also create your own &lt;strong>Custom connector&lt;/strong> customising pre- and post-processing of queries, see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector">Custom connector&lt;/a>.&lt;/p>
 &lt;h2 id="viewing-existing-data-sources">Viewing existing data sources&lt;/h2>
 &lt;p>Only those with the role &lt;strong>Administrator&lt;/strong> or &lt;strong>Manage data sources&lt;/strong> have access to the &lt;strong>Datasource management&lt;/strong> function. To view any existing data sources:&lt;/p>
 &lt;ol>
@@ -794,7 +795,7 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video>
-There is also an option to create a **customised data source connector** using the Kianda Developer [Client Connector](/docs/low-code/client-connector/).
+There is also an option to create a **custom data connector** using the Kianda Developer [Custom Connector](/docs/low-code/custom-connector/).
 &lt;h3 id="kianda-cloud-connect">Kianda Cloud Connect&lt;/h3>
 &lt;p>Kianda Cloud Connect (KCC) is available with the following data sources, allowing you to streamline data system integration:&lt;/p>
 &lt;ul>
@@ -818,7 +819,7 @@ There is also an option to create a **customised data source connector** using t
 &lt;li>A link appears to &lt;strong>Download Kianda Cloud Connect&lt;/strong>. Click on this link to download the software.&lt;/li>
 &lt;li>Click on the &lt;strong>setup file&lt;/strong> in the zip package and step through the wizard to install Kianda Cloud Connect.&lt;/li>
 &lt;/ol>
-&lt;p>For more information go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/p>
+&lt;p>​ For more information go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/p>
 &lt;h3 id="setting-security-for-data-sources">Setting security for data sources&lt;/h3>
 &lt;p>All data sources can have security added at different levels, for example at a role level and even database query level.&lt;/p>
 &lt;p>To enable security for datasources:&lt;/p>
@@ -841,7 +842,7 @@ There is also an option to create a **customised data source connector** using t
 &lt;ul>
 &lt;li>&lt;strong>Connection administrators&lt;/strong> - click on the dropdown list to choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> who can edit the connection settings. If left blank any user with the role &lt;strong>Administrator&lt;/strong> can edit the connection. See &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and groups&lt;/a> for more details on how to add users and groups to the workspace.&lt;/li>
 &lt;li>&lt;strong>Connection users&lt;/strong> - click on the dropdown list to choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> who are allowed to query data using this connection. If left blank any user can query data using the datasource.&lt;/li>
-&lt;li>**Enable B2B ** - if you check the checkbox, this allows B2B external users to query the connection. The &lt;strong>Enable partner default query parameters&lt;/strong> checkbox appears.&lt;/li>
+&lt;li>&lt;strong>Enable B2B&lt;/strong> - if you check the checkbox, this allows B2B external users to query the connection. The &lt;strong>Enable partner default query parameters&lt;/strong> checkbox appears.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>

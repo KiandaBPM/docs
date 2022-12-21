@@ -1289,7 +1289,7 @@ This is just one example of how the query can be customized before being process
 &lt;p>Process - use the custom connector to bring data into a process and use the query hook to filter the data.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="register-new-connector">Register new connector&lt;/h2>
+&lt;h2 id="register-a-new-connector">Register a new connector&lt;/h2>
 &lt;p>To create a new customised connector, follow the steps below:&lt;/p>
 &lt;ol>
 &lt;li>From the left-hand &lt;strong>side menu&lt;/strong>, go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Developer&lt;/strong> then within the &lt;strong>Connectors&lt;/strong> panel click on &lt;strong>New Connector&lt;/strong>.&lt;/li>
@@ -1500,15 +1500,20 @@ This is just one example of how the query can be customized before being process
 &lt;p>Custom connectors provide the infrastructure to allow developers to create a custom datasource, it provides hooks for pre- and post-processing of the query and the ability to customise the datasource settings for the connector.&lt;/p>
 &lt;h2 id="custom-connector-vs-datasource">Custom Connector VS Datasource&lt;/h2>
 &lt;p>As previously mentioned, the Kianda platform provides a list of predefined datasource connectors, such as SharePoint, SQL server and SAP. These however cannot be customized for an individual companies needs.&lt;/p>
-&lt;p>Custom Connectors provide end-to-end customisation for Datasource Connections. The custom Connector provides the architecture to allow customization pre and post processing of the query.&lt;/p>
-&lt;p>Data sources currently require specific parameters for example SharePoint requires selection of the environment and user credentials, but what if there is an extra parameter required? this is where the custom connector can provide an advantage.&lt;/p>
-&lt;h2 id="high-level-steps-for-creating-a-custom-connector">High-level steps for creating a custom connector&lt;/h2>
+&lt;p>Custom Connectors provide end-to-end customisation for datasource connections. The Custom Connector provides the architecture to allow customisation of pre- and post-processing of database queries.&lt;/p>
+&lt;p>For example when using a SharePoint data source you can use parameters for example selection of the environment and user credentials, but if you needed extra parameter, you could use the custom connector to provide this ability.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>There are three key steps that need to be implemented in order to create and use a customised connector as follows:&lt;/p>
 &lt;ol>
-&lt;li>Register custom connector and store secret key. &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/steps-to-create/#register-new-connector">See how to register a connector here &lt;/a>&lt;/li>
-&lt;li>Implement settings UI&lt;/li>
-&lt;li>Develop remote microservice** with Query, Test and Metadata endpoints &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/create-microservice/">See how to create a microservice here&lt;/a>&lt;/li>
-&lt;li>Adjust query code in connector.&lt;/li>
+&lt;li>
+&lt;p>Microservice - create a &lt;strong>microservice&lt;/strong> that will implement metadata, query and test functions, click on the &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/create-microservice/">Microservice&lt;/a> link to get further details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Use Kianda features to create and test your customised connector - use &lt;strong>Developer&lt;/strong> to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/#register-a-new-connector">register a new connector&lt;/a> and use &lt;strong>Data sources&lt;/strong> to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#creating-a-datasource">create a datasource&lt;/a> for the newly customised connector. Both of these features are available under &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/administration/">Administration&lt;/a>&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Process - use the custom connector to bring data into a process and use the &lt;strong>query hook&lt;/strong> to filter the data. Use Kianda &lt;strong>Designer&lt;/strong> to connect your data source to Kianda forms, for example a List control can connect to a datasource, see step 9 in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/#how-to-get-started">List control&lt;/a>.&lt;/p>
+&lt;/li>
 &lt;/ol>
-&lt;p>** Remote: using a cloud service such as Azure or AWS&lt;/p>
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To learn how to create a custom connector view the &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/steps-to-create/">steps to create a custom connector&lt;/a>.&lt;/p></description></item></channel></rss>
