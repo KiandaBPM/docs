@@ -32,6 +32,8 @@ Click on each of the links above to find out more about each data connector.
 
 If you have a data source that is not on the list above, you can use SOAP or REST to easily connect to your data source, go to [SOAP](/docs/platform/connectors/soap) or [REST](https://docs.kianda.com/docs/platform/connectors/rest/) for more information.
 
+If you are an experienced developer, you can also create your own **Custom connector** customising pre- and post-processing of queries, see [Custom connector](/docs/low-code/custom-connector).
+
 ## Viewing existing data sources ##
 
 Only those with the role **Administrator** or **Manage data sources** have access to the **Datasource management** function. To view any existing data sources:
@@ -76,7 +78,7 @@ The video below demonstrates how to create a datasource for SharePoint. The proc
     Your browser does not support the video tag.
     </source>
 </video>
-There is also an option to create a **customised data source connector** using the Kianda Developer [Client Connector](/docs/low-code/client-connector/). 
+There is also an option to create a **custom data connector** using the Kianda Developer [Custom Connector](/docs/low-code/custom-connector/). 
 
 ### Kianda Cloud Connect
 
@@ -102,7 +104,7 @@ You can enable KCC when you **add a new** data source from the main by datasourc
 3. A link appears to **Download Kianda Cloud Connect**. Click on this link to download the software.
 4. Click on the **setup file** in the zip package and step through the wizard to install Kianda Cloud Connect.
 
-For more information go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
+​	For more information go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
 
 ### Setting security for data sources ###
 
@@ -124,7 +126,7 @@ To enable security for datasources:
 
    - **Connection administrators** - click on the dropdown list to choose from **Users** and/or **Groups** who can edit the connection settings. If left blank any user with the role **Administrator** can edit the connection. See [Users and groups](/docs/platform/administration/users/) for more details on how to add users and groups to the workspace.
    - **Connection users** - click on the dropdown list to choose from **Users** and/or **Groups** who are allowed to query data using this connection. If left blank any user can query data using the datasource.
-   - **Enable B2B ** - if you check the checkbox, this allows B2B external users to query the connection. The **Enable partner default query parameters** checkbox appears.
+   - **Enable B2B** - if you check the checkbox, this allows B2B external users to query the connection. The **Enable partner default query parameters** checkbox appears.
 
 6. Check/Uncheck **Enable partner default query parameters**. If you check the checkbox, you can define default query parameters that are applied to any partner originated query. Parameters defined here take precedence over any design time queries. Click on **Add mapping** to choose a query type and table/operation as follows:
 

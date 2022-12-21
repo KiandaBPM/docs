@@ -26,7 +26,7 @@ Please note before you begin that there are three key steps that need to be impl
 
    
 
-## Register new connector
+## Register a new connector
 
 To create a new customised connector, follow the steps below:
 
