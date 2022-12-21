@@ -10,7 +10,7 @@ hide_summary: true -->
 
 ## How to get started ##
 
-1. After creating a dashboard page, make sure you are in Edit mode, by clicking on the **Edit** button ![Edit button](/images/edit.png) at the top of the page, so the Widget menu with 7 widget types is available. Then click on the Chart widget ![Chart widget](/images/chart-v2.jpg)
+1. After creating a dashboard page, make sure you are in Edit mode, by clicking on the **Edit** button ![Edit button](/images/edit.png) at the top of the page, so the Widget menu with 7 widget types is available. Then click on the Chart widget ![Chart widget](/images/chart-v2.jpg).
 
 2. The **Add widget** dialog box opens.
 
@@ -73,7 +73,7 @@ To create a **Chart widget** on a dashboard using the wizard:
 
    ![Chart wizard step 1](/images/dashboard-chart-wizard1.jpg)
 
-3. In this step of the wizard, click on ![Chart wizard add dataset](/images/chart-wizard-add-dataset.jpg) 
+3. In this step of the wizard, click on ![Chart wizard add dataset](/images/chart-wizard-add-dataset.jpg). 
 
 4. An **Add or edit dataset** dialog will open, fill in the following details:
 
@@ -91,9 +91,9 @@ To create a **Chart widget** on a dashboard using the wizard:
 
    ![Dataset sport example](/images/chart-dataset-sport.jpg)
 
-   To add more datasets, click on ![Add new dataset button](/images/add-new-dataset-button.jpg) 
+   To add more datasets, click on ![Add new dataset button](/images/add-new-dataset-button.jpg). 
 
-7. When you added all the datasets you require, click on ![Continue 2](/images/chart-wizard-continue2.jpg) 
+7. When you added all the datasets you require, click on ![Continue 2](/images/chart-wizard-continue2.jpg). 
 
 8. In the **Chart labels** section of the wizard, fill in the following information:
 
@@ -106,7 +106,7 @@ To create a **Chart widget** on a dashboard using the wizard:
 
    - **Labels colour** - here will be displayed the number of labels from your process. Select a colour for a specific piece of data from your process.
 
-9. When you complete the **chart labels** section, click on ![Continue 2](/images/chart-continue3.jpg) 
+9. When you complete the **chart labels** section, click on ![Continue 2](/images/chart-continue3.jpg). 
 
 10. The final step in the wizard is **Chart option**, fill in the following information:
 
@@ -123,7 +123,7 @@ To create a **Chart widget** on a dashboard using the wizard:
     - **Connect to List Widget** - select yes or no to connect an existing list widget in your dashboard to the chart.
       - **List Widget** - from the drop-down list, select the list widget you want to connect to the chart.
 
-11. When you are finished with the **Chart options** section, click on ![Continue 2](/images/chart-finish4jpg.jpg) 
+11. When you are finished with the **Chart options** section, click on ![Continue 2](/images/chart-finish4jpg.jpg). 
 
 
 
@@ -174,7 +174,7 @@ Click on the **OK** button when you are finished editing to save your changes or
 
    ![Chart type: Radar chart](/images/chart-type-pie.jpg)
 
-3. In this step of the wizard, click on ![Chart wizard add dataset](/images/chart-wizard-add-dataset.jpg) The first dataset will represent a segment of the pie chart.
+3. In this step of the wizard, click on ![Chart wizard add dataset](/images/chart-wizard-add-dataset.jpg). The first dataset will represent a segment of the pie chart.
 
 4. As an example, we will link the first dataset to the number of jobs in a building site project. We will display the **Project** as a label and **Jobs** as the value.
 
