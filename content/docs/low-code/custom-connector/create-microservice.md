@@ -190,6 +190,7 @@ The steps for the query function are as follows
             public string requestId { get; set; }
             public string action { get; set; }
             public string encryptedSettingsPropertyBag { get; set; }
+        	public byte[] iv { get; set; }
             public Query query { get; set; }
         }
 ```
