@@ -12,6 +12,94 @@ hide_summary: true
 
 The following sections provide some sample code to help you get started in creating **Test**, **Metadata** and **Query** functions for your Microservice so that you can test and deploy a Custom Connector in Kianda, allowing you to connect forms and use data from any data source. 
 
+### Encryption and Decryption sample code
+
+```C#
+        public static string HashWithHMACSHA256(string key, string value)
+        {
+
+            using (var hash = new HMACSHA256(Convert.FromBase64String(key)))
+            {
+                var hashedByte = hash.ComputeHash(Encoding.UTF8.GetBytes(value));
+                var hashed = Convert.ToBase64String(hashedByte);
+                return hashed;
+            }
+        }
+
+        public static string AESEncrypt(string key, string plainData, out byte[] iv)
+        {
+            var _key = Convert.FromBase64String(key);
+            //using (AesCryptoServiceProvider aes = new AesCryptoServiceProvider() { Mode = CipherMode.CBC, KeySize = 256, Key = _key })
+            using (Aes aes = Aes.Create())
+            {
+                aes.GenerateIV(); //Generate a ramdom IV.
+                aes.Mode = CipherMode.CBC;
+                iv = aes.IV;
+                aes.KeySize = 256;
+                aes.Key = _key;
+                using (var encryptor = aes.CreateEncryptor())
+                {
+                    using (MemoryStream ms = new MemoryStream())
+                    {
+                        using (CryptoStream cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write))
+                        {
+
+                            using (StreamWriter sw = new StreamWriter(cs))
+                                sw.Write(plainData);
+                        }
+                        return Convert.ToBase64String(ms.ToArray());
+                    }
+                }
+
+            }
+        }
+
+
+        public static string AESDecrypt(string key, string encryptedData, byte[] iv)
+        {
+            var buffer = Convert.FromBase64String(encryptedData);
+            var _key = Convert.FromBase64String(key);
+
+            // using (AesCryptoServiceProvider aes = new AesCryptoServiceProvider() { KeySize = 256, Mode = CipherMode.CBC, Key = _key, IV = iv })
+            using (Aes aes = Aes.Create())
+            {
+                aes.KeySize = 256;
+                aes.Mode = CipherMode.CBC;
+                aes.Key = _key;
+                aes.IV = iv;
+                using (var decryptor = aes.CreateDecryptor())
+                {
+                    using (MemoryStream ms = new MemoryStream(buffer))
+                    using (CryptoStream cs = new CryptoStream(ms, decryptor, CryptoStreamMode.Read))
+                    {
+                        using (StreamReader sw = new StreamReader(cs))
+                            return sw.ReadToEnd();
+                    }
+                }
+            }
+
+        }
+
+        public static string GenerateAESKey()
+        {
+            using (Aes aes = Aes.Create())
+            {
+                aes.KeySize = 256;
+                aes.GenerateKey();
+                return Convert.ToBase64String(aes.Key);
+            }
+        }
+
+        private static string GetSecretKey()
+        {
+            return "{secret key generated from Kianda}"; //REPLACE ME
+        }
+```
+
+To return to Microservice development, click on the [Microservice](/docs/low-code/custom-connector/create-microservice) link.
+
+
+
 ### Test sample code
 
 ```c#
@@ -21,7 +109,7 @@ The following sections provide some sample code to help you get started in creat
             ILogger log)
         {
             // { SubscriptionID, UserID, RequestID, Action, EncryptedSettingsPropertyBag, RequestObject}
-            string SECRET_KEY = GetSecretKey();
+            string SECRET_KEY = GetSecretKey(); //Returns Secret Key as a string
             string signature = string.Empty;
             CustomConnectorResponse response = new CustomConnectorResponse();
             response.queryResult = new QueryResult();

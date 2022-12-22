@@ -40,7 +40,16 @@ To create a new customised connector, follow the steps below:
 
 3. Make sure to **copy the secret key** to a safe location where you will find it as it will be needed later. You can do this by a) clicking on **Download TXT** which will result in the Secret Key being downloaded as a CSV file or b) clicking on **Copy Key to Clipboard**, then click on **OK** when done. 
 
-4. After populating the initial dialog box, the next screen will show you the title of the connector and contains four tabs: [Connector Settings](#connector-settings-tab), [Settings UI](#settings-ui-tab), [Settings Code](#settings-code-tab) and [Query Code](#query-code-tab).
+4. Ensure that this secret key is added to your Microservice code, see [Encryption and Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code), where you need to replace the string in the `GetSecretKey` function as shown below:
+
+   ```c#
+    private static string GetSecretKey()
+           {
+               return "{secret key generated from Kianda}"; //REPLACE ME
+           }
+   ```
+
+5. After populating the initial dialog box, the next screen will show you the title of the connector and contains four tabs: [Connector Settings](#connector-settings-tab), [Settings UI](#settings-ui-tab), [Settings Code](#settings-code-tab) and [Query Code](#query-code-tab).
 
    ![Tabs to create a customised connector](/images/connector-settings-demo.jpg)
 
@@ -54,7 +63,7 @@ This is where the Connector **Title** and **Icon** can be changed. These details
 
 The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/docs/low-code/custom-connector/create-microservice/) link for more details.
 
-For example when your Microservice is running you should receive an output similar to the following shown using Azure functions:
+For example when your Microservice is running you should receive an output similar to the following shown using Azure functions and use these URLs in the **Connector Settings tab**.
 
 ![Azure function URLs](/images/azure-function-urls.jpg)
 

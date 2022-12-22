@@ -71,9 +71,9 @@ The Test function ensures that the user is authorized to use the datasource. If 
 
 The steps involved in creating the test function are as follows:
 
-1. Deserialize the data in the [custom connector request](#Custom-Connector-Request) - see schema for details.
+1. Deserialize the data in the [custom connector request](#Custom-Connector-Request) - see schema for details and [Test sample code](/docs/low-code/custom-connector/sample-code/#test-sample-code).
 
-2. Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function, see [Test sample code](/docs/low-code/custom-connector/sample-code/#test-sample-code) for an example.
+2. Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function, see [Encryption/Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code) for an example.
 
 3. **Authorize the user and retrieve bearer token for subsequent requests and save the token to the settings property bag**.
 
@@ -81,7 +81,7 @@ The steps involved in creating the test function are as follows:
 
 5. Create [custom connector response](#Custom-Connector-Response) and include success message to indicate test succeeded/failed.
 
-6. Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response. 
+6. Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see [Encryption/Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code) for an example.
 
 To help you get started, see **sample code for the Test function** by going to [Test sample code](/docs/low-code/custom-connector/sample-code/#test-sample-code).
 
@@ -97,10 +97,10 @@ The steps involved in creating the metadata function are as follows:
 
 1. Deserialize the data in the [custom connector request](#Custom-Connector-Request) - see schema for details.
 
-2. Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see [Metadata sample code](/docs/low-code/custom-connector/sample-code/#metadata-sample-code) for an example.
+2. Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see [Encryption/Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code) for an example.
 3. Create a JSON tree structure similar to the one found at [Tree schema](). 
 4. Create [custom connector response](#Custom-Connector-Response) and include success message to indicate success/failure.
-5. Create a signature string using the EncryptdatawithHMACSHA256 method and include in the custom connector response. 
+5. Create a signature string using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see [Encryption/Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code) for an example. 
 
 To help you get started, see **sample code for the Metadata function** by going to [Metadata sample code](/docs/low-code/custom-connector/sample-code/#metadata-sample-code).
 
@@ -114,14 +114,14 @@ The steps involved in creating the query function are as follows:
 
 1. Deserialize the data in the [custom connector request](#Custom-Connector-Request) - see schema for details.
 
-2. Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see [Query sample code](/docs/low-code/custom-connector/sample-code/#query-sample-code) for an example.
+2. Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see [Encryption/Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code) for an example.
 3. Get the [query object](#request-query-object) from the request - see schema for details, and call the function related to the query in the datasource .
 
 4. Create [custom connector response](#custom-connector-response) and include success message to indicate query succeeded/failed.
 
 5. **Create the [query result object](#response-queryresult) - see schema for details, and include in the custom connector response response**.
 
-6. Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response. 
+6. Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see [Encryption/Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code) for an example.
 
 To help you get started, see **sample code for the Query function** by going to [Query sample code](/docs/low-code/custom-connector/sample-code/#query-sample-code).       
 

@@ -48,7 +48,11 @@ To create a new customised connector, follow the steps below:
 
 ### Connector Settings tab
 
-This is where the Connector **Title** and **Icon** can be changed. These details will be seen in the [Data connectors](/docs/platform/connectors/) function, once the customised connector is created. The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/docs/low-code/custom-connector/create-microservice/) link for more details.
+This is where the Connector **Title** and **Icon** can be changed. These details will be seen in the [Data connectors](/docs/platform/connectors/) function, once the customised connector is created. 
+
+![Connector Settings tab](/images/connector-settings-tab.jpg)
+
+The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/docs/low-code/custom-connector/create-microservice/) link for more details.
 
 For example when your Microservice is running you should receive an output similar to the following shown using Azure functions:
 
@@ -270,10 +274,6 @@ This is just one example of how the query can be customized before being process
     return query;
   }
 ```
-
-
-
-
 
 
 This ties in with the [query success hook](#querysuccess-hook) which handles the result which is returned from the datasource, which can also be customized. 
