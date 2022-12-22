@@ -29,10 +29,9 @@ The following sections provide some sample code to help you get started in creat
         public static string AESEncrypt(string key, string plainData, out byte[] iv)
         {
             var _key = Convert.FromBase64String(key);
-            //using (AesCryptoServiceProvider aes = new AesCryptoServiceProvider() { Mode = CipherMode.CBC, KeySize = 256, Key = _key })
             using (Aes aes = Aes.Create())
             {
-                aes.GenerateIV(); //Generate a ramdom IV.
+                aes.GenerateIV(); 
                 aes.Mode = CipherMode.CBC;
                 iv = aes.IV;
                 aes.KeySize = 256;
@@ -59,8 +58,6 @@ The following sections provide some sample code to help you get started in creat
         {
             var buffer = Convert.FromBase64String(encryptedData);
             var _key = Convert.FromBase64String(key);
-
-            // using (AesCryptoServiceProvider aes = new AesCryptoServiceProvider() { KeySize = 256, Mode = CipherMode.CBC, Key = _key, IV = iv })
             using (Aes aes = Aes.Create())
             {
                 aes.KeySize = 256;
@@ -108,8 +105,7 @@ To return to Microservice development, click on the [Microservice](/docs/low-cod
             [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)][FromForm] HttpRequest req,
             ILogger log)
         {
-            // { SubscriptionID, UserID, RequestID, Action, EncryptedSettingsPropertyBag, RequestObject}
-            string SECRET_KEY = GetSecretKey(); //Returns Secret Key as a string
+            string SECRET_KEY = GetSecretKey(); 
             string signature = string.Empty;
             CustomConnectorResponse response = new CustomConnectorResponse();
             response.queryResult = new QueryResult();
@@ -127,8 +123,7 @@ To return to Microservice development, click on the [Microservice](/docs/low-cod
                     ["client_id"] = clientID,
                     ["redirect_uri"] = "https://app.kianda.com/index.html",
                     ["code"] = accessCode
-                //settings = GetToken(tokenRequestObj, settings);
-
+                }
                 signature = HashWithHMACSHA256(SECRET_KEY, data.requestId);
                 byte[] iv;
                 var encryptedSettings = JsonConvert.SerializeObject(settings);

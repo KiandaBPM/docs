@@ -40,7 +40,16 @@ To create a new customised connector, follow the steps below:
 
 3. Make sure to **copy the secret key** to a safe location where you will find it as it will be needed later. You can do this by a) clicking on **Download TXT** which will result in the Secret Key being downloaded as a CSV file or b) clicking on **Copy Key to Clipboard**, then click on **OK** when done. 
 
-4. After populating the initial dialog box, the next screen will show you the title of the connector and contains four tabs: [Connector Settings](#connector-settings-tab), [Settings UI](#settings-ui-tab), [Settings Code](#settings-code-tab) and [Query Code](#query-code-tab).
+4. Ensure that this secret key is added to your Microservice code, see [Encryption and Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code), where you need to replace the string in the `GetSecretKey` function as shown below:
+
+   ```c#
+    private static string GetSecretKey()
+           {
+               return "{secret key generated from Kianda}"; //REPLACE ME
+           }
+   ```
+
+5. After populating the initial dialog box, the next screen will show you the title of the connector and contains four tabs: [Connector Settings](#connector-settings-tab), [Settings UI](#settings-ui-tab), [Settings Code](#settings-code-tab) and [Query Code](#query-code-tab).
 
    ![Tabs to create a customised connector](/images/connector-settings-demo.jpg)
 
@@ -54,7 +63,7 @@ This is where the Connector **Title** and **Icon** can be changed. These details
 
 The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/docs/low-code/custom-connector/create-microservice/) link for more details.
 
-For example when your Microservice is running you should receive an output similar to the following shown using Azure functions:
+For example when your Microservice is running you should receive an output similar to the following shown using Azure functions and use these URLs in the **Connector Settings tab**.
 
 ![Azure function URLs](/images/azure-function-urls.jpg)
 
@@ -170,7 +179,7 @@ When using a data source, all data sources will have built-in **metadata**, **qu
     return query;
   },
   querySuccess(datasource,rule,result,process) {
-     this.get("dataservice").mapSuccess(result,rule,process); //uncomment to use default mapping behaviour
+     //this.get("dataservice").mapSuccess(result,rule,process); //uncomment to use default mapping behaviour
     return result;
   }
 }
@@ -204,52 +213,90 @@ The tree follows the structure that there is a root node, in this example Countr
 
 ```json
 {
-    "text": "Countries And Cities",
-    "name": "countriesAndCities",
-    "icon": "fa fa-database",
-    "selectable": false,
-    "nodes": [
+  "text": "Countries And Cities",
+  "name": "countriesAndCities",
+  "icon": "fa fa-database",
+  "selectable": false,
+  "nodes": [
+    {
+      "text": "Countries",
+      "icon": "",
+      "desc": "",
+      "nodes": [
         {
-            "text": "Countries",
-            "icon": "",
-            "desc": "",
-            "nodes": [
-                {
-                    "text": "Country Name",
-                    "name": "countryName",
-                    "type": "string",
-                    "desc": "",
-                },
-                {
-                    "text": "ISO Country Code",
-                    "name": "ISOCode",
-                    "type": "string",
-                    "desc": ""
-                }
-            ]
+          "text": "Country Name",
+          "title": "Country Name",
+          "name": "countryName",
+          "type": "string",
+          "desc": ""
         },
         {
-            "text": "Cities",
-            "name": "cities",
-            "icon": "",
-            "desc": "",
-            "nodes": [
-                {
-                    "text": "City Name",
-                    "name": "cityName",
-                    "type": "string",
-                    "desc": ""
-                },
-                {
-                    "text": "ISO Country Code",
-                    "name": "ISOCode",
-                    "type": "string",
-                    "desc": ""
-                }
-            ]
+          "text": "ISO Country Code",
+          "title": "ISO Country Code",
+          "name": "ISOCode",
+          "type": "string",
+          "desc": ""
         }
-    ]
+      ],
+      "fields": [
+        {
+          "text": "Country Name",
+          "title": "Country Name",
+          "name": "countryName",
+          "type": "string",
+          "desc": ""
+        },
+        {
+          "text": "ISO Country Code",
+          "title": "ISO Country Code",
+          "name": "ISOCode",
+          "type": "string",
+          "desc": ""
+        }
+      ]
+
+    },
+    {
+      "text": "Cities",
+      "name": "cities",
+      "icon": "",
+      "desc": "",
+      "nodes": [
+        {
+          "text": "City Name",
+          "title": "ISO Country Code",
+          "name": "cityName",
+          "type": "string",
+          "desc": ""
+        },
+        {
+          "text": "ISO Country Code",
+          "title": "ISO Country Code",
+          "name": "ISOCode",
+          "type": "string",
+          "desc": ""
+        }
+      ],
+      "fields": [
+        {
+          "text": "City Name",
+          "title": "ISO Country Code",
+          "name": "cityName",
+          "type": "string",
+          "desc": ""
+        },
+        {
+          "text": "ISO Country Code",
+          "title": "ISO Country Code",
+          "name": "ISOCode",
+          "type": "string",
+          "desc": ""
+        }
+      ]
+    }
+  ]
 }
+
 ```
 
 This structure will result in the output as shown in the image below, 
@@ -258,7 +305,7 @@ This structure will result in the output as shown in the image below,
 
 
 
-### Query Hook
+#### Query Hook
 
 The **Query hook** allows a query to the datasource to be customised. Parameters are passed into this function to allow customisation to happen. These parameters are: `datasource`, `query`, `rule` and `process`; sample schemas are available for each at the [Sample schema]() link.
 
@@ -278,7 +325,7 @@ This is just one example of how the query can be customized before being process
 
 This ties in with the [query success hook](#querysuccess-hook) which handles the result which is returned from the datasource, which can also be customized. 
 
-### QuerySuccess hook
+#### QuerySuccess hook
 
 The idea of the query success hook is to be able to customize the response of a datasource query for example drill into a complicated json response based on a condition.  
 
@@ -288,4 +335,4 @@ querySuccess(datasource,result,rule,process) {
    return result;
   }
 ```
-Once the connector is created, the connector is available from the **Data sources** function under **Administration**, see next section for details. 
+Once the connector is created, the connector is available from the **Data sources** function under **Administration**, see [Creating a datasource](/docs/platform/connectors/#creating-a-datasource) for details. 
