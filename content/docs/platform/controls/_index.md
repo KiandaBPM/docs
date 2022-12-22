@@ -70,7 +70,7 @@ This table lists out the full range of available field types.
 
 ### User tip ![Target icon](/images/05.png)
 
-If customised styling has been applied in a **Global CSS file,** available to administrators under **Administration** > **Subscription**, then these attributes can be applied to controls by using entering the desired class name into the **Custom CSS class name** field, as shown below. 
+If customised styling has been applied in a **Global CSS file,** available to administrators under **Administration** > **Subscription**, then these attributes can be applied to controls by entering the desired class name into the **Custom CSS class name** field, as shown below. 
 
 ![Textbox with attributes](/images/textbox-attribute2.jpg)
 
