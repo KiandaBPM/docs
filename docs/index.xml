@@ -2297,10 +2297,10 @@ The Safety Team
 &lt;p>The steps involved in creating the test function are as follows:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details.&lt;/p>
+&lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details and &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#test-sample-code">Test sample code&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function, see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#test-sample-code">Test sample code&lt;/a> for an example.&lt;/p>
+&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function, see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Authorize the user and retrieve bearer token for subsequent requests and save the token to the settings property bag&lt;/strong>.&lt;/p>
@@ -2312,7 +2312,7 @@ The Safety Team
 &lt;p>Create &lt;a href="#Custom-Connector-Response">custom connector response&lt;/a> and include success message to indicate test succeeded/failed.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response.&lt;/p>
+&lt;p>Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>To help you get started, see &lt;strong>sample code for the Test function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#test-sample-code">Test sample code&lt;/a>.&lt;/p>
@@ -2325,7 +2325,7 @@ The Safety Team
 &lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#metadata-sample-code">Metadata sample code&lt;/a> for an example.&lt;/p>
+&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Create a JSON tree structure similar to the one found at &lt;a href="">Tree schema&lt;/a>.&lt;/p>
@@ -2334,7 +2334,7 @@ The Safety Team
 &lt;p>Create &lt;a href="#Custom-Connector-Response">custom connector response&lt;/a> and include success message to indicate success/failure.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Create a signature string using the EncryptdatawithHMACSHA256 method and include in the custom connector response.&lt;/p>
+&lt;p>Create a signature string using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>To help you get started, see &lt;strong>sample code for the Metadata function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#metadata-sample-code">Metadata sample code&lt;/a>.&lt;/p>
@@ -2346,7 +2346,7 @@ The Safety Team
 &lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#query-sample-code">Query sample code&lt;/a> for an example.&lt;/p>
+&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Get the &lt;a href="#request-query-object">query object&lt;/a> from the request - see schema for details, and call the function related to the query in the datasource .&lt;/p>
@@ -2358,7 +2358,7 @@ The Safety Team
 &lt;p>&lt;strong>Create the &lt;a href="#response-queryresult">query result object&lt;/a> - see schema for details, and include in the custom connector response response&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response.&lt;/p>
+&lt;p>Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>To help you get started, see &lt;strong>sample code for the Query function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#query-sample-code">Query sample code&lt;/a>.&lt;/p>
