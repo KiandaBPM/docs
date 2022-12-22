@@ -2251,166 +2251,118 @@ The Safety Team
 &lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
 &lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Microservice Creation</title><link>https://docs.kianda.com/docs/low-code/custom-connector/create-microservice-copy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/custom-connector/create-microservice-copy/</guid><description>
 &lt;h2 id="what-is-a-microservice">What is a Microservice&lt;/h2>
-&lt;p>A microservice is a self contained independent service, usually hosted in the cloud, which can integrate with applications through rest apis.&lt;/p>
-&lt;p>Microservices allow developers to focus on developing a service without worrying about dependencies.&lt;/p>
-&lt;p>A microservice can be developed using almost any programming language&lt;/p>
+&lt;p>A microservice is a self contained independent service, usually hosted in the cloud, which can integrate with applications through REST APIs. Microservices allow developers to focus on developing a service without worrying about dependencies.&lt;/p>
+&lt;p>A microservice can be developed using almost any programming language.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>Before you get started, check that the following prerequisites are in place:&lt;/p>
 &lt;ul>
-&lt;li>Ability/permissions to create resources with a cloud platform, e.g. Google Cloud, AWS or Azure&lt;/li>
-&lt;li>Admin/Developer permissions within Kianda.&lt;/li>
-&lt;li>Visual studio or text editor for the chosen language&lt;/li>
+&lt;li>&lt;strong>Ability/permissions&lt;/strong> to create resources with a cloud platform, for example, Google Cloud, AWS or Azure&lt;/li>
+&lt;li>&lt;strong>Administration&lt;/strong> role or permissions within an Admin group within Kianda, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more information&lt;/li>
+&lt;li>&lt;strong>Visual Studio&lt;/strong> installed or other text editor for your chosen programming language&lt;/li>
 &lt;/ul>
-&lt;h3 id="requirements">Requirements&lt;/h3>
-&lt;p>The microservice should implement the following 3 functions.&lt;/p>
+&lt;h3 id="microservice-requirements">Microservice Requirements&lt;/h3>
+&lt;p>Your microservice should implement the following three functions:&lt;/p>
 &lt;ol>
-&lt;li>Test&lt;/li>
-&lt;li>Metadata&lt;/li>
-&lt;li>Query&lt;/li>
+&lt;li>&lt;a href="#test">Test&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#metadata">Metadata&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#query">Query&lt;/a>&lt;/li>
 &lt;/ol>
-&lt;p>It is required that the microservice uses security best practices, to encrypt sensitive data using &lt;a href="#AES256">AES&lt;/a> encryption and verify that each request and response is secure using an &lt;a href="#HMAC">HMAC&lt;/a> signature.&lt;/p>
+&lt;p>It is required that the microservice uses &lt;a href="#security">security&lt;/a> best practices, to encrypt sensitive data using &lt;a href="#aes256">AES&lt;/a> encryption and verify that each request and response is secure using a &lt;a href="#hmac">HMAC&lt;/a> signature. See next section for more information on security or click on the link &lt;a href="#microservice-development">Microservice Development&lt;/a>to get started with development.&lt;/p>
 &lt;h2 id="security">Security&lt;/h2>
-&lt;h4 id="aes256">AES256:&lt;/h4>
-&lt;p>AES(Advanced Encryption Standard), will be the technique used to encrypt sensitive data. This is a symmetric encryption technique, which means the same key is used to encrypt and decrypt the data it is also a 2-way encryption algorithm.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/AES_encryption.png" style="zoom: 150%;" />
-&lt;h4 id="hmac">HMAC:&lt;/h4>
-&lt;p>We use HMAC to sign the signature to make sure the response is coming from the correct end point. HMAC is also an encryption algorithm but unlike AES it’s a one-way encryption, meaning it isn’t decrypted on the other side. It’s used for verification, for example if we encrypt with HMAC our secret key with a request id and then do the same in the response, we can verify that we have got the response back from the correct endpoint and it has not been tampered with because both hashes will match. HMAC stands for &lt;strong>H&lt;/strong>ash based &lt;strong>M&lt;/strong>essage &lt;strong>A&lt;/strong>uthentication &lt;strong>C&lt;/strong>ode and the hash used is SHA256.&lt;/p>
-&lt;p>The main difference between the two is that AES we are encrypting and decrypting data, this is fast and secure for large data, with HMAC we use it to simultaneously verify both the data integrity and authenticity of a message.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/Sha256_Hashing.png" style="zoom:67%;" />
-&lt;h3 id="microservice-development">Microservice Development&lt;/h3>
-&lt;p>In this example the Microsoft Azure cloud will be used, the same features are available in other clouds but may have different naming conventions.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Create a serverless Azure function app in visual studio. (Visual studio provides a template to get you started).&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Implement the following functions Test, Metadata and Query&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Debug locally and test using a tool such as postman or the Kianda cloud connect&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Deploy to azure&lt;/p>
-&lt;p>The steps highlighted in bold are unique to the functions, the other steps are repeated in all three.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="test">Test&lt;/h3>
-&lt;p>The Test function ensures that the user is authorized to use the datasource, if they are not authorized then this function can be used to authorize the user and retrieve an access token for any further requests&lt;/p>
-&lt;p>The steps for the test function are as follows&lt;/p>
+&lt;h3 id="aes256">AES256&lt;/h3>
+&lt;p>&lt;strong>Advanced Encryption Standard&lt;/strong> (AES) is the technique used to encrypt sensitive data. This is a symmetric encryption technique, which means the same key is used to encrypt and decrypt the data, it is also a 2-way encryption algorithm.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/aes-symmetric-encrypt.jpg" alt="AES Symmetric Encryption">&lt;/p>
+&lt;h3 id="hmac">HMAC&lt;/h3>
+&lt;p>&lt;strong>Hash based Message Authentication Code&lt;/strong> (HMAC) is used to ensure query responses are coming from the correct end point. HMAC is also an encryption algorithm but unlike AES it’s one-way encryption, meaning it isn’t decrypted on the other side. It is used for verification, for example if we encrypt a secret key using HMAC with a request id and then do the same in the response, we can verify that we have got the response back from the correct endpoint and know that it has not been tampered with because both hashes will match. The hash used is &lt;strong>SHA256&lt;/strong>.&lt;/p>
+&lt;p>With AES we are encrypting and decrypting data and this method is fast and secure for large data, while with HMAC we use it to simultaneously verify both the data integrity and authenticity of a message.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/what-is-hmac.jpg" alt="What is HMAC">&lt;/p>
+&lt;h2 id="microservice-development">Microservice Development&lt;/h2>
+&lt;p>The following steps for development will use Microsoft Azure cloud as an example, however, other cloud computing platforms with similar features can be used resulting in different naming conventions. The key steps are:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a>&lt;/p>
+&lt;p>Create a serverless &lt;strong>Azure function app&lt;/strong> in Visual Studio by creating a new project, searching for Azure functions and using this as a template to get started.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the &lt;a href="#decrypt-string-with-aes256">Decrypt function&lt;/a>&lt;/p>
+&lt;p>Implement the functions for &lt;a href="#test">Test&lt;/a>, &lt;a href="#metadata">Metadata&lt;/a> and &lt;a href="#query">Query&lt;/a>. Click on each of the links to read more. The steps highlighted in bold are unique to the specific function, while the other steps are repeated in all three functions.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>**Authorize the user and retrieve bearer token for subsequent requests, save the token to the settings property bag **&lt;/p>
+&lt;p>Debug locally and test using a tool such as Postman or download &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Add the oauth token to the settings property bag and &lt;a href="#encrypt-string-with-aes256">encrypt&lt;/a> using your secret key.&lt;/strong>&lt;/p>
+&lt;p>Deploy to Azure.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="test">Test&lt;/h3>
+&lt;p>The Test function ensures that the user is authorized to use the datasource. If they are not authorized then this function can be used to authorize the user and retrieve an access token for any further requests.&lt;/p>
+&lt;p>The steps involved in creating the test function are as follows:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function, see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#test-sample-code">Test sample code&lt;/a> for an example.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Authorize the user and retrieve bearer token for subsequent requests and save the token to the settings property bag&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add the oauth token to the settings property bag and encrypt using your secret key.&lt;/strong>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Create &lt;a href="#Custom-Connector-Response">custom connector response&lt;/a> and include success message to indicate test succeeded/failed.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Sign the response using the &lt;a href="#encrypt-data-with-hmacsha256">EncryptdatawithHMACSHA256&lt;/a> methodand include in the custom connector response.&lt;/p>
-&lt;p>Below shows an example connector test function from the Kianda demo microservice&lt;/p>
+&lt;p>Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c#" data-lang="c#">&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="metadata">Metadata&lt;/h3>
-&lt;p>The metadata function provides the list of available endpoints in the microservice and is called when selecting the datasource in a kianda process.&lt;/p>
-&lt;p>The steps for the metadata function are as follows:&lt;/p>
+&lt;p>To help you get started, see &lt;strong>sample code for the Test function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#test-sample-code">Test sample code&lt;/a>.&lt;/p>
+&lt;h3 id="metadata">Metadata&lt;/h3>
+&lt;p>The Metadata function provides the list of available endpoints in the microservice and is called when selecting the datasource in a Kianda process, for example use a particular datasource to populate a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List field&lt;/a> in a Kianda form.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/tree-function-output.jpg" alt="Connector tree">&lt;/p>
+&lt;p>The steps involved in creating the metadata function are as follows:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a>&lt;/p>
+&lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the &lt;a href="#decrypt-string-with-aes256">Decrypt function&lt;/a>&lt;/p>
+&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#metadata-sample-code">Metadata sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Create a JSON tree structure similar to the one below.&lt;/strong>&lt;/p>
+&lt;p>Create a JSON tree structure similar to the one found at &lt;a href="">Tree schema&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Create &lt;a href="#Custom-Connector-Response">custom connector response&lt;/a> and include success message to indicate success/failure.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Create a signature string using the &lt;a href="#encrypt-data-with-hmacsha256">EncryptdatawithHMACSHA256&lt;/a> method and include in the custom connector response.&lt;/p>
+&lt;p>Create a signature string using the EncryptdatawithHMACSHA256 method and include in the custom connector response.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Countries And Cities&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;countriesAndCities&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;icon&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;fa fa-database&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;selectable&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">false&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;nodes&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Countries&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;icon&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;desc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;nodes&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Country Name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;countryName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;string&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;desc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ISO Country Code&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ISOCode&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;string&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;desc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Cities&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;cities&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;icon&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;desc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;nodes&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;City Name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;cityName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;string&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;desc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ISO Country Code&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ISOCode&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;string&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;desc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="query">Query&lt;/h3>
+&lt;p>To help you get started, see &lt;strong>sample code for the Metadata function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#metadata-sample-code">Metadata sample code&lt;/a>.&lt;/p>
+&lt;h3 id="query">Query&lt;/h3>
 &lt;p>The Query function is where the execution of the datasource methods occurs, the metadata function provides the list of available methods.&lt;/p>
-&lt;p>The steps for the query function are as follows&lt;/p>
+&lt;p>The steps involved in creating the query function are as follows:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a>&lt;/p>
+&lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the &lt;a href="#decrypt-string-with-aes256">Decrypt function&lt;/a>&lt;/p>
+&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#query-sample-code">Query sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Get the &lt;a href="#query-1">query object&lt;/a> from the request and call the function related to the query in the datasource.&lt;/p>
+&lt;p>Get the &lt;a href="#request-query-object">query object&lt;/a> from the request - see schema for details, and call the function related to the query in the datasource .&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Create &lt;a href="#Custom-Connector-Response">custom connector response&lt;/a> and include success message to indicate query succeeded/failed.&lt;/p>
+&lt;p>Create &lt;a href="#custom-connector-response">custom connector response&lt;/a> and include success message to indicate query succeeded/failed.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Create the &lt;a href="#queryresult">query result&lt;/a> object and include in the custom connector response response&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Create the &lt;a href="#response-queryresult">query result object&lt;/a> - see schema for details, and include in the custom connector response response&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Sign the response using the &lt;a href="#encrypt-data-with-hmacsha256">EncryptdatawithHMACSHA256&lt;/a> method and include in the custom connector response.&lt;/p>
+&lt;p>Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c#" data-lang="c#">&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="schemas-required-for-custom-connectors">Schemas required for Custom Connectors&lt;/h2>
+&lt;p>To help you get started, see &lt;strong>sample code for the Query function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#query-sample-code">Query sample code&lt;/a>.&lt;/p>
+&lt;h3 id="schemas-required-for-custom-connectors">Schemas required for Custom Connectors&lt;/h3>
 &lt;h4 id="custom-connector-request">Custom Connector Request&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c#" data-lang="c#">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">class&lt;/span> &lt;span style="color:#000">CustomConnectorRequest&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
@@ -2457,7 +2409,12 @@ The Safety Team
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">string&lt;/span> &lt;span style="color:#000">resultCount&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span> &lt;span style="color:#204a87;font-weight:bold">get&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">set&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">string&lt;/span> &lt;span style="color:#000">signature&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span> &lt;span style="color:#204a87;font-weight:bold">get&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">set&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: Microservice Creation</title><link>https://docs.kianda.com/docs/low-code/custom-connector/create-microservice/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/custom-connector/create-microservice/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="retrieving-urls-for-custom-connector-settings">Retrieving URLs for Custom Connector settings&lt;/h3>
+&lt;p>When you have created the Test, Metadata and Query functions and your microservice is running, you should receive an output similar to the following shown using Azure functions:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/azure-function-urls.jpg" alt="Azure function URLs">&lt;/p>
+&lt;p>These URLs will be used in the &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/steps-to-create/#connector-settings-tab">&lt;strong>Connector Settings tab&lt;/strong>&lt;/a> when creating the Custom Connector.&lt;/p>
+&lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>Once your Microservice is deployed, you are ready to start creating a custom connector go to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/steps-to-create/">steps to create a custom connector&lt;/a>.&lt;/p></description></item><item><title>Docs: Microservice Creation</title><link>https://docs.kianda.com/docs/low-code/custom-connector/create-microservice/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/custom-connector/create-microservice/</guid><description>
 &lt;h2 id="what-is-a-microservice">What is a Microservice&lt;/h2>
 &lt;p>A microservice is a self contained independent service, usually hosted in the cloud, which can integrate with applications through rest apis.&lt;/p>
 &lt;p>Microservices allow developers to focus on developing a service without worrying about dependencies.&lt;/p>
@@ -4685,7 +4642,8 @@ Your browser does not support the video tag.
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="datasource-schema">Datasource schema&lt;/h3>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To return to Microservice development, click on the &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/create-microservice">Microservice&lt;/a> link.&lt;/p>
+&lt;h3 id="datasource-schema">Datasource schema&lt;/h3>
 &lt;p>&lt;strong>Note&lt;/strong>: The same structure below can be used used in both &lt;strong>Query hooks&lt;/strong> and &lt;strong>Query success hooks&lt;/strong>, although data will vary slightly.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;id&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;2fe2d2c7-4feb-4c92-ac4c-fed4623d2d6e&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
@@ -4942,6 +4900,6 @@ Your browser does not support the video tag.
 &lt;p>To create other widgets go to &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">Custom field widget&lt;/a>, &lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">Custom dashboard widget&lt;/a> and &lt;a href="https://docs.kianda.com/docs/low-code/rule-widget/">Custom rule widget&lt;/a> pages to find out more.&lt;/p>
 &lt;h3 id="to-return-to-the-previous-pages-click-on-the-links-below--idea-iconimages10png">&lt;strong>To return to the previous pages click on the links below&lt;/strong> &lt;img src="https://docs.kianda.com/images/10.png" alt="Idea icon">&lt;/h3>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/client-connector/how-to-create/">How to create a client connector&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/client-connector/create-microservice/">Create a microservice&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/steps-to-create">How to create a client connector&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/create-microservice/">Create a microservice&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>
