@@ -373,7 +373,7 @@ Your browser does not support the video tag.
 &lt;p>This table lists out the full range of available field types.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/fields-controls-list-table.jpg" alt="Form controls">&lt;/p>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;p>If customised styling has been applied in a &lt;strong>Global CSS file,&lt;/strong> available to administrators under &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong>, then these attributes can be applied to controls by using entering the desired class name into the &lt;strong>Custom CSS class name&lt;/strong> field, as shown below.&lt;/p>
+&lt;p>If customised styling has been applied in a &lt;strong>Global CSS file,&lt;/strong> available to administrators under &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong>, then these attributes can be applied to controls by entering the desired class name into the &lt;strong>Custom CSS class name&lt;/strong> field, as shown below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textbox-attribute2.jpg" alt="Textbox with attributes">&lt;/p>
 &lt;p>In the example above, &lt;strong>redField&lt;/strong> is defined in the &lt;strong>Global CSS file&lt;/strong> as follows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">redField&lt;/span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
