@@ -3,8 +3,6 @@ title: "Sample schemas"
 linkTitle: "Sample schemas"
 weight: 2
 typora-root-url: ..\..\..\..\static
-toc_hide: true
-hide_summary: true
 ---
 
 # Introduction 

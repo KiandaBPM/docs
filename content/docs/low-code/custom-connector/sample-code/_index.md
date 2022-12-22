@@ -4,8 +4,6 @@ linkTitle: "Sample code for a microservice"
 description: Learn about custom connectors, what they are and why they are used
 weight: 9
 typora-root-url: ..\..\..\..\..\static
-toc_hide: true
-hide_summary: true
 
 ---
 ## Sample code

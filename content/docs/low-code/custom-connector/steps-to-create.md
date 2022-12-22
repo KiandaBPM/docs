@@ -3,8 +3,6 @@ title: "Steps to create a custom connector"
 linkTitle: "Steps to create a custom connector"
 weight: 2
 typora-root-url: ..\..\..\..\static
-toc_hide: true
-hide_summary: true
 ---
 
 
