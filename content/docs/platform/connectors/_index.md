@@ -78,7 +78,7 @@ The video below demonstrates how to create a datasource for SharePoint. The proc
     Your browser does not support the video tag.
     </source>
 </video>
-There is also an option to create a **custom data connector** using the Kianda Developer [Custom Connector](/docs/low-code/custom-connector/). 
+There is also an option to create a **custom data connector** using the Kianda Developer [Custom Connector](/docs/low-code/custom-connector/steps-to-create). 
 
 ### Kianda Cloud Connect
 

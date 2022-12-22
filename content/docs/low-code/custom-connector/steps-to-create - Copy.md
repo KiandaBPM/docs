@@ -297,4 +297,4 @@ querySuccess(datasource,result,rule,process) {
    return result;
   }
 ```
-Once the connector is created, the connector is available from the **Data sources** function under **Administration**, see next section for details. 
+Once the connector is created, the connector is available from the **Data sources** function under **Administration**, see [Creating a datasource](/docs/platform/connectors/#creating-a-datasource) for details. 
