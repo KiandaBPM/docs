@@ -37,4 +37,4 @@ There are three key steps that need to be implemented in order to create and use
 
 ## What's next ![Idea icon](/images/18.png)
 
-To learn how to create a custom connector view the [steps to create a custom connector](/docs/low-code/custom-connector/steps-to-create/).
+To create a test service, follow the 3 steps above, or if you have already created a microservice go straight to [steps to create a custom connector](/docs/low-code/custom-connector/steps-to-create/) to learn how to create a custom connector.

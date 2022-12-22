@@ -13,7 +13,7 @@ To use the **Support** function:
 
 2. You can view any current tickets or logs in the main view pane. 
 
-   ![Support view](images/support-function-updated.jpg)
+   ![Support view](/images/support-function-updated.jpg)
 
    
 

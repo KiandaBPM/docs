@@ -81,6 +81,7 @@ This sample tree schema is based on the github repository documentation [Bootstr
 }
 ```
 
+To return to Microservice development, click on the [Microservice](/docs/low-code/custom-connector/create-microservice) link.
 
 ### Datasource schema 
 
@@ -387,6 +388,6 @@ To create other widgets go to [Custom field widget](/docs/low-code/field-widget/
 
 ### **To return to the previous pages click on the links below**  ![Idea icon](/images/10.png) 
 
-- [How to create a client connector](/docs/low-code/client-connector/how-to-create/)  
-- [Create a microservice](/docs/low-code/client-connector/create-microservice/)  
+- [How to create a client connector](/docs/low-code/custom-connector/steps-to-create)  
+- [Create a microservice](/docs/low-code/custom-connector/create-microservice/)  
 

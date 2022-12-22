@@ -48,7 +48,11 @@ To create a new customised connector, follow the steps below:
 
 ### Connector Settings tab
 
-This is where the Connector **Title** and **Icon** can be changed. These details will be seen in the [Data connectors](/docs/platform/connectors/) function, once the customised connector is created. The URL for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/docs/low-code/client-connector/create-microservice/) link for more details.
+This is where the Connector **Title** and **Icon** can be changed. These details will be seen in the [Data connectors](/docs/platform/connectors/) function, once the customised connector is created. The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/docs/low-code/custom-connector/create-microservice/) link for more details.
+
+For example when your Microservice is running you should receive an output similar to the following shown using Azure functions:
+
+![Azure function URLs](/images/azure-function-urls.jpg)
 
 To save details click on **Update**, then click on **Close** to return to the **Developer resources** page.
 

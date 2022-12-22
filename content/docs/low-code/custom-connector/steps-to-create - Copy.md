@@ -26,7 +26,7 @@ Please note before you begin that there are three key steps that need to be impl
 
    
 
-## Register new connector
+## Register a new connector
 
 To create a new customised connector, follow the steps below:
 
@@ -48,7 +48,15 @@ To create a new customised connector, follow the steps below:
 
 ### Connector Settings tab
 
-This is where the Connector **Title** and **Icon** can be changed. These details will be seen in the [Data connectors](/docs/platform/connectors/) function, once the customised connector is created. The URL for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/docs/low-code/client-connector/create-microservice/) link for more details.
+This is where the Connector **Title** and **Icon** can be changed. These details will be seen in the [Data connectors](/docs/platform/connectors/) function, once the customised connector is created. 
+
+![Connector Settings tab](/images/connector-settings-tab.jpg)
+
+The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/docs/low-code/custom-connector/create-microservice/) link for more details.
+
+For example when your Microservice is running you should receive an output similar to the following shown using Azure functions:
+
+![Azure function URLs](/images/azure-function-urls.jpg)
 
 To save details click on **Update**, then click on **Close** to return to the **Developer resources** page.
 
@@ -250,7 +258,7 @@ This structure will result in the output as shown in the image below,
 
 
 
-### Query Hook
+#### Query Hook
 
 The **Query hook** allows a query to the datasource to be customised. Parameters are passed into this function to allow customisation to happen. These parameters are: `datasource`, `query`, `rule` and `process`; sample schemas are available for each at the [Sample schema]() link.
 
@@ -268,13 +276,9 @@ This is just one example of how the query can be customized before being process
 ```
 
 
-
-
-
-
 This ties in with the [query success hook](#querysuccess-hook) which handles the result which is returned from the datasource, which can also be customized. 
 
-### QuerySuccess hook
+#### QuerySuccess hook
 
 The idea of the query success hook is to be able to customize the response of a datasource query for example drill into a complicated json response based on a condition.  
 
