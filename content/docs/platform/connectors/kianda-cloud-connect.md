@@ -50,6 +50,8 @@ You can download **Kianda Cloud Connect** software in any details page of data s
 
 To **establish a connection** between your **Kianda subscription** and your l**ocal machine**, you need to login using a **Kianda** **username** (email) and **password**. Note that the **user** you are trying to establish a connection with **must be an administrator** and needs to be a **unique username** (email). The username you want to establish the connection with **<u>cannot</u>** be used in **more than one Kianda subscriptions** as Kianda Cloud Connect will not be able to tell which subscription you want to connect to.
 
+To **open** Kianda Cloud Connect on your PC, open the **Kianda Cloud Connect app** installed on your PC, and the dialog box below will open. Note the **version** of Cloud Connect is visible in this dialog box, in this example 2.11.5.
+
 ![Kianda Cloud Connect](/images/kianda-cloud-connect-app.jpg)
 
 1. To establish a connection fill out the following:
