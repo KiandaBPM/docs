@@ -35,7 +35,15 @@ It is required that the microservice uses [security](#security) best practices, 
 
 The following steps for development will use Microsoft Azure cloud as an example, however, other cloud computing platforms with similar features can be used resulting in different naming conventions. The key steps are:
 
-1. Create a serverless **Azure function app** in Visual Studio by creating a new project, searching for Azure functions and using this as a template to get started. 
+1. Create a serverless **Azure function app** in Visual Studio by creating a new project, searching for Azure functions and using this as a template to get started. As well as the pre-defined libraries in the template, you must also add the following:
+
+   ```c#
+   using System.Security.Cryptography;
+   using System.Text;
+   using Newtonsoft.Json.Linq;
+   using System.Collections.Generic;
+   using System.Linq;
+   ```
 
 2. Implement the functions for [Test](#test), [Metadata](#metadata) and [Query](#query). Click on each of the links to read more. The steps highlighted in bold are unique to the specific function, while the other steps are repeated in all three functions.
 
