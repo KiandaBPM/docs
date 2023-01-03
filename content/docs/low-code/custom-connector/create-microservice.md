@@ -78,7 +78,7 @@ The steps involved in creating the metadata function are as follows:
 1. Deserialize the data in the [custom connector request](#Custom-Connector-Request) - see schema for details.
 
 2. Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see [Encryption/Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code) for an example.
-3. Create a JSON tree structure similar to the one found at [Tree schema](). 
+3. Create a JSON tree structure similar to the one found at [Tree schema](/docs/low-code/custom-connector/sample-schemas/#tree-schema). 
 4. Create [custom connector response](#Custom-Connector-Response) and include success message to indicate success/failure.
 5. Create a signature string using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see [Encryption/Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code) for an example. 
 
@@ -94,7 +94,7 @@ The steps involved in creating the query function are as follows:
 
 1. Deserialize the data in the [custom connector request](#Custom-Connector-Request) - see schema for details.
 
-2. Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see [Encryption/Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code) for an example.
+2. Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function - see [Encryption/Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code) for an example.
 3. Get the [query object](#request-query-object) from the request - see schema for details, and call the function related to the query in the datasource .
 
 4. Create [custom connector response](#custom-connector-response) and include success message to indicate query succeeded/failed.
@@ -173,6 +173,7 @@ public class CustomConnectorResponse
         public string requestId { get; set; }
         public string signature { get; set; }
         public string encryptedSettingsPropertyBag { get; set; }
+    	public byte[] iv { get; set; }
         public QueryResult queryResult { get; set; }
     }
 ```
