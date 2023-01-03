@@ -29,7 +29,7 @@ There are three key steps that need to be implemented in order to create and use
 
 1. Microservice - create a **microservice** that will implement metadata, query and test functions, click on the [Microservice](/docs/low-code/custom-connector/create-microservice/) link to get further details.
 
-2. Use Kianda features to create and test your customised connector - use **Developer** to [register a new connector](/docs/low-code/custom-connector/#register-a-new-connector) and use **Data sources** to [create a datasource](/docs/platform/connectors/#creating-a-datasource) for the newly customised connector. Both of these features are available under **[Administration](/docs/platform/administration/)**
+2. Use Kianda features to create and test your customised connector - use **Developer** to [register a new connector](/docs/low-code/custom-connector/steps-to-create/#register-a-new-connector) and use **Data sources** to [create a datasource](/docs/platform/connectors/#creating-a-datasource) for the newly customised connector. Both of these features are available under **[Administration](/docs/platform/administration/)**
 
 3. Process - use the custom connector to bring data into a process and use the **query hook** to filter the data. Use Kianda **Designer** to connect your data source to Kianda forms, for example a List control can connect to a datasource, see step 9 in [List control](/docs/platform/controls/input/list/#how-to-get-started).
 
