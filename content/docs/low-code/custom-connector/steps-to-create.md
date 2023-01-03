@@ -91,11 +91,11 @@ The **Settings UI** sets the user interface for a customised data connector with
    </div>
    ```
 
-This code creates the content on the screen seen below, available in the **Data sources** function on the **Datasource details** page, within the class **form-group** listed in the code above there is an **Environment** setting with labels 'Demo' and 'Live' which can be seen in the screen below. Also note an **Authorize** button added in the code above which has an action **'authorize'** which is handled by the code in the [Settings Code tab](#settings-code-tab).
+This code creates the content on the screen seen below, available in the **Data sources** function on the **Datasource details** page. Within the class **form-group** listed in the code above there is an **Environment** setting with labels 'Demo' and 'Live' which can be seen in the screen below. Also note an **Authorize** button added in the code above which has an action **'authorize'** which is handled by the code in the [Settings Code tab](#settings-code-tab).
 
 ![Datasources details created from Settings UI tab](/images/settings-ui-datasources.jpg)
 
-Other details on the screen above, like the name of the page **Datasource details**, **Use Kianda Cloud Connect** and buttons **Test connection**, **Save**, **Security** and **Close** are automatically part of the UI for customised data connectors. However, custom handlebars can be added for the **settings** of the connector datasource using code in the **Settings UI** tab, namely fields like **Datasource Name** and **Client Key** as shown in the image above. This principles works the same **Widget UI** seen when creating custom [rule widgets](/docs/low-code/rule-widget/) or [field widgets](/docs/low-code/field-widget/) for example.
+Other details on the screen above, like the name of the page **Datasource details**, **Use Kianda Cloud Connect** and buttons **Test connection**, **Save**, **Security** and **Close** are automatically part of the UI for customised data connectors. However, custom handlebars can be added for the **settings** of the connector datasource using code in the **Settings UI** tab, namely fields like **Datasource Name** and **Client Key** as shown in the image above. This principle works the same as **Widget UI**, which is seen when creating custom [rule widgets](/docs/low-code/rule-widget/) or [field widgets](/docs/low-code/field-widget/) for example.
 
 ### Settings Code ###
 
@@ -162,7 +162,7 @@ By default there is code in this tab, for example the **Authorize** button shown
 }
 ```
 
-Other aspects to note in this sample code are the datasource settings, for example `datasource.settings.accessToken` and  `datasource.settings.environment` denoting that you can add whatever **settings** you want to the UI within the **Datasources details** page using this type of code. These settings could be then used in a [Microservice](/docs/low-code/client-connector/create-microservice/) to create an action based on a chosen setting.
+Other aspects to note in this sample code are the datasource settings, for example `datasource.settings.accessToken` and  `datasource.settings.environment` denoting that you can add whatever **settings** you want to the UI within the **Datasources details** page using this type of code. These settings could be then used in a [Microservice](/docs/low-code/custom-connector/create-microservice/) to create an action based on a chosen setting.
 
 ### Query Code ###
 
@@ -305,10 +305,10 @@ This structure will result in the output as shown in the image below,
 
 #### Query Hook
 
-The **Query hook** allows a query to the datasource to be customised. Parameters are passed into this function to allow customisation to happen. These parameters are: `datasource`, `query`, `rule` and `process`; sample schemas are available for each at the [Sample schema]() link.
+The **Query hook** allows a query to the datasource to be customised. Parameters are passed into this function to allow customisation to happen. These parameters are: `datasource`, `query`, `rule` and `process`; sample schemas are available for each at the [Sample schema](/docs/low-code/custom-connector/sample-schemas/) link.
 
 In the sample code below, the filter is obtained by drilling into the query conditions object.
-This is just one example of how the query can be customized before being processed, which is an advantage of using custom connectors. Take a look at the [query schema](/docs/low-code/client-connector/sample-schemas/#query-hook-related-schemas) for more information
+This is just one example of how the query can be customized before being processed, which is an advantage of using custom connectors. Take a look at the [query schema](/docs/low-code/custom-connector/sample-schemas/#query-success-hook-related-schemas) for more information
 
 ```javascript
  query(datasource, query, rule, process) {

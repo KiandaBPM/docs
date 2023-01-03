@@ -120,7 +120,7 @@ To return to Microservice development, click on the [Microservice](/docs/low-cod
                     ["client_id"] = clientID,
                     ["redirect_uri"] = "https://app.kianda.com/index.html",
                     ["code"] = accessCode
-                }
+                };
                 signature = HashWithHMACSHA256(SECRET_KEY, data.requestId);
                 byte[] iv;
                 var encryptedSettings = JsonConvert.SerializeObject(settings);
