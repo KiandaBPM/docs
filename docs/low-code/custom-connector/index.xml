@@ -69,7 +69,7 @@
 &lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Create a JSON tree structure similar to the one found at &lt;a href="">Tree schema&lt;/a>.&lt;/p>
+&lt;p>Create a JSON tree structure similar to the one found at &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-schemas/#tree-schema">Tree schema&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Create &lt;a href="#Custom-Connector-Response">custom connector response&lt;/a> and include success message to indicate success/failure.&lt;/p>
@@ -87,7 +87,7 @@
 &lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
+&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function - see &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Get the &lt;a href="#request-query-object">query object&lt;/a> from the request - see schema for details, and call the function related to the query in the datasource .&lt;/p>
@@ -146,6 +146,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">string&lt;/span> &lt;span style="color:#000">requestId&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span> &lt;span style="color:#204a87;font-weight:bold">get&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">set&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">string&lt;/span> &lt;span style="color:#000">signature&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span> &lt;span style="color:#204a87;font-weight:bold">get&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">set&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">string&lt;/span> &lt;span style="color:#000">encryptedSettingsPropertyBag&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span> &lt;span style="color:#204a87;font-weight:bold">get&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">set&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">byte&lt;/span>&lt;span style="color:#000;font-weight:bold">[]&lt;/span> &lt;span style="color:#000">iv&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span> &lt;span style="color:#204a87;font-weight:bold">get&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">set&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#000">QueryResult&lt;/span> &lt;span style="color:#000">queryResult&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span> &lt;span style="color:#204a87;font-weight:bold">get&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">set&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h5 id="response-queryresult">Response QueryResult&lt;/h5>
@@ -494,7 +495,7 @@
 &lt;p>Microservice - create a &lt;strong>microservice&lt;/strong> that will implement metadata, query and test functions, click on the &lt;a href="https://docs.kianda.com/docs/low-code/client-connector/create-microservice/">Microservice&lt;/a> link to get further details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Use Kianda features to create and test your customised connector - use &lt;strong>Developer&lt;/strong> to &lt;a href="#create-a-new-connector">create a new connector&lt;/a> and use &lt;strong>Data sources&lt;/strong> to &lt;a href="#create-a-connector-datasource">create a connector datasource&lt;/a> for the newly customised connector.&lt;/p>
+&lt;p>Use Kianda features to create and test your customised connector - use &lt;strong>Developer&lt;/strong> to &lt;a href="#register-a-new-connector">register a new connector&lt;/a> and use &lt;strong>Data sources&lt;/strong> to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#creating-a-datasource">create a connector datasource&lt;/a> for the newly customised connector.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Process - use the custom connector to bring data into a process and use the query hook to filter the data.&lt;/p>
