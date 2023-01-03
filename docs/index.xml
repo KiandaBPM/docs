@@ -2272,8 +2272,13 @@ The Safety Team
 &lt;p>The following steps for development will use Microsoft Azure cloud as an example, however, other cloud computing platforms with similar features can be used resulting in different naming conventions. The key steps are:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Create a serverless &lt;strong>Azure function app&lt;/strong> in Visual Studio by creating a new project, searching for Azure functions and using this as a template to get started.&lt;/p>
-&lt;/li>
+&lt;p>Create a serverless &lt;strong>Azure function app&lt;/strong> in Visual Studio by creating a new project, searching for Azure functions and using this as a template to get started. As well as the pre-defined libraries in the template, you must also add the following:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c#" data-lang="c#">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">using&lt;/span> &lt;span style="color:#000">System.Security.Cryptography&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">using&lt;/span> &lt;span style="color:#000">System.Text&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">using&lt;/span> &lt;span style="color:#000">Newtonsoft.Json.Linq&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">using&lt;/span> &lt;span style="color:#000">System.Collections.Generic&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">using&lt;/span> &lt;span style="color:#000">System.Linq&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;li>
 &lt;p>Implement the functions for &lt;a href="#test">Test&lt;/a>, &lt;a href="#metadata">Metadata&lt;/a> and &lt;a href="#query">Query&lt;/a>. Click on each of the links to read more. The steps highlighted in bold are unique to the specific function, while the other steps are repeated in all three functions.&lt;/p>
 &lt;/li>
