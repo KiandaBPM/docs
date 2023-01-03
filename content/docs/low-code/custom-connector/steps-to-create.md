@@ -101,7 +101,7 @@ Other details on the screen above, like the name of the page **Datasource detail
 
 In a similar manner to creating custom [rule widgets](/docs/low-code/rule-widget/) or [field widgets](/docs/low-code/field-widget/) where there are **Widget code** tabs, the connector widget has a tab called **Settings Code** which is used to create the JavaScript code for the settings UI.
 
-By default there is code in this tab, for example the **Authorize** button shown in the **Datasource details** page above has an 'authorize' function which is the first segment of code below. As this sample code, 'OAuth playground' is used as a sandbox.
+By default there is code in this tab, for example the **Authorize** button shown in the **Datasource details** page above has an 'authorize' function which is the first segment of code below. 
 
 ```JavaScript
 {
