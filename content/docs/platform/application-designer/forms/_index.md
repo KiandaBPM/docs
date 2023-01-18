@@ -33,7 +33,7 @@ As you work with Kianda **Designer** you are designing the 'user interface' for 
    
      Therefore when a process instance is initiated upon submission of the **Training Request** form, then the next form in the process becomes the **current form**, in this case the **Training Approval** form.
    
-     Only the form that has the status ‘**current form’** **is editable** by a form owner (see point 3 below). In a complex multi-step process, several forms can be configured to **activate with** the current form, meaning they are also editable at the same time, creating a **form group**, see section 2 of [New form creation](#new-f		orm-creation). Rules can also be used to change the workflow and make other forms the 'current form'.
+     Only the form that has the status ‘**current form’** **is editable** by a form owner (see point 3 below). In a complex multi-step process, several forms can be configured to **activate with** the current form, meaning they are also editable at the same time, creating a **form group**, see section 2 of [New form creation](#new-form-creation). Rules can also be used to change the workflow and make other forms the 'current form'.
    
      Also note that **all first forms** in a process flow add the current user as a 'form owner' therefore allowing **all users** to edit the first form, as clicking on 'submit' or 'save' in the first form results in a new process instance.
 
