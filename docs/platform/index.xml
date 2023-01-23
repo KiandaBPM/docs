@@ -694,9 +694,9 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;li>
 &lt;p>An &lt;strong>Edit dashboard page&lt;/strong> dialog box opens:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-dialog.jpg" alt="Edit dashboard page dialog box">&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-dialog2.jpg" alt="Edit dashboard page dialog box">&lt;/p>
 &lt;p>The options available are the same as those available in the &lt;strong>Create dashboard page&lt;/strong> dialog box used to create a new dashboard page - see &lt;a href="#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a> - but there are also &lt;strong>two&lt;/strong> additional options:&lt;/p>
 &lt;ul>
 &lt;li>
@@ -709,8 +709,16 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;/ul>
 &lt;ol start="4">
-&lt;li>Click on the &lt;strong>OK&lt;/strong> button to save the changes you have made in the &lt;strong>Edit dashboard page&lt;/strong> dialog box (or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving).&lt;/li>
-&lt;li>Click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the top dashboard menu to save the changes to the page.&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Version history information&lt;/strong> button &lt;img src="https://docs.kianda.com/images/information-btn.jpg" alt="information button" style="zoom:80%;" /> to view the version history of the dashboard. This allows you to view the &lt;strong>current dashboard version&lt;/strong> as well as all the previously saved dashboard versions, when they were &lt;strong>modified&lt;/strong>, and &lt;strong>by who&lt;/strong> they were saved. Clicking on the &lt;strong>Restore page version&lt;/strong> button &lt;img src="https://docs.kianda.com/images/restore-page-version-btn.jpg" alt="restore page version button"> allows you to rollback to that version, which changes all the current dashboard widgets and settings to reflect the version selected. It should be noted that when rolling back to a previous version for example version 2.0 from version 5.0, you can still restore a version that succeeds version 2.0 if necessary as the version numbers are incremental.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-version-history.jpg" alt="dashboard version history">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>OK&lt;/strong> button to save the changes you have made in the &lt;strong>Edit dashboard page&lt;/strong> dialog box (or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the top dashboard menu to save the changes to the page.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h3 id="enabling-data-export-from-dashboards">Enabling data export from dashboards&lt;/h3>
 &lt;p>Kianda allows users to export the data from dashboards with a simple click.&lt;/p>
