@@ -232,23 +232,35 @@ When you have added one or more dashboard widgets, you can move the widgets arou
 To edit a Dashboard page:
 
 1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) to go into **Edit mode**. 
+
 2. Click on the **Settings** button ![Settings](/images/settings.png).
+
 3. An **Edit dashboard page** dialog box opens:
 
-	![Edit dashboard page dialog box](/images/dashboard-edit-dialog.jpg)
+  ![Edit dashboard page dialog box](/images/dashboard-edit-dialog2.jpg)
 
-The options available are the same as those available in the **Create dashboard page** dialog box used to create a new dashboard page  - see [How to create a dashboard page](#how-to-create-a-dashboard-page) - but there are also **two** additional options:
+  The options available are the same as those available in the **Create dashboard page** dialog box used to create a new dashboard page - see [How to create a dashboard page](#how-to-create-a-dashboard-page) - but there are also **two** additional options:
 
-- **Display in mobile footer** - Select this checkbox to display a link to the dashboard in the footer of a mobile phone when the Kianda workspace is accessed on a mobile. Here we can see the example of a link to a dashboard page called 'Staff onboarding' available in the footer of a mobile phone:
+  - **Display in mobile footer** - Select this checkbox to display a link to the dashboard in the footer of a mobile phone when the Kianda workspace is accessed on a mobile. Here we can see the example of a link to a dashboard page called 'Staff onboarding' available in the footer of a mobile phone:
 
-  ![Display dashboard in mobile phone footer](/images/dashboard-mobile-footer.jpg)
+    ![Display dashboard in mobile phone footer](/images/dashboard-mobile-footer.jpg)
 
-- **Hide from navigation** - Select this checkbox if you want to hide this dashboard from the navigation in the left side menu. 
 
-  **Note**: Selecting this option will override whatever options you may have inserted in the '**Visible to**' option in the **Create dashboard page** dialog box (which allows you to restrict who can see the dashboard). Selecting **Hide from navigation** will mean the dashboard page will not be visible to anyone in the main side menu.
+  - **Hide from navigation** - Select this checkbox if you want to hide this dashboard from the navigation in the left side menu. 
 
-4. Click on the **OK** button to save the changes you have made in the **Edit dashboard page** dialog box (or click on **Close** to exit the dialog box without saving).
-4. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the top dashboard menu to save the changes to the page.
+    **Note**: Selecting this option will override whatever options you may have inserted in the '**Visible to**' option in the **Create dashboard page** dialog box (which allows you to restrict who can see the dashboard). Selecting **Hide from navigation** will mean the dashboard page will not be visible to anyone in the main side menu.
+    
+    
+
+4. Click on the **Version history information** button <img src="/images/information-btn.jpg" alt="information button" style="zoom:80%;" /> to view the version history of the dashboard. This allows you to view the **current dashboard version** as well as all the previously saved dashboard versions, when they were **modified**, and **by who** they were saved. Clicking on the **Restore page version** button ![restore page version button](/images/restore-page-version-btn.jpg) allows you to rollback to that version, which changes all the current dashboard widgets and settings to reflect the version selected. It should be noted that when rolling back to a previous version for example version 2.0 from version 5.0, you can still restore a version that succeeds version 2.0 if necessary as the version numbers are incremental.
+
+   ![dashboard version history](/images/dashboard-version-history.jpg)
+
+   
+
+5. Click on the **OK** button to save the changes you have made in the **Edit dashboard page** dialog box (or click on **Close** to exit the dialog box without saving).
+
+6. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the top dashboard menu to save the changes to the page.
 
 
 
