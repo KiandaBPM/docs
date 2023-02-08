@@ -1,3 +1,0 @@
-# Support #
-
-Page under construction

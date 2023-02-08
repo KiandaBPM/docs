@@ -1,2 +1,0 @@
-# Nocode design principles
-

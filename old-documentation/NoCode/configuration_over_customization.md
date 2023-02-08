@@ -1,2 +1,0 @@
-# Configuration over cutomization principle
-

@@ -1,2 +1,0 @@
-# Why choose no-code
-

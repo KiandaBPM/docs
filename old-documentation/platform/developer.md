@@ -1,3 +1,0 @@
-# Developer #
-
-Page under construction

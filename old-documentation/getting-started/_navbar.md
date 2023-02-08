@@ -1,3 +1,0 @@
-- [Welcome](/getting-started/welcome/)
-- [Logging in to Kianda](/getting-started/logging_in/)
-- [Create your first process](/getting-started/create_process/)
