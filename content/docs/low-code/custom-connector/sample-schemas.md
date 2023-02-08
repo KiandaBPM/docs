@@ -26,7 +26,6 @@ Sample schemas for [`tree`](#tree-schema) and [`datasource`](#datasource-schema)
 
 ### Tree schema
 
-This sample tree schema is based on the github repository documentation [Bootstrap Tree View package](https://github.com/jonmiles/bootstrap-treeview#bootstrap-tree-view). Click on the link for more details on hierarchical tree structures.
 
 ```json
 {
