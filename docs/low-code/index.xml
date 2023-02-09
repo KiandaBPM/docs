@@ -1,74 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – What is Low-Code Development?</title><link>https://docs.kianda.com/docs/low-code/</link><description>Recent content in What is Low-Code Development? on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/low-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Application design principles</title><link>https://docs.kianda.com/docs/low-code/application-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/application-design/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Progressive Web Application (PWA)</title><link>https://docs.kianda.com/docs/low-code/pwa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/pwa/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>Progressive web applications&lt;/strong> are the next great trend for the mobile web. As the Kianda platform is a progressive web application, you can access your businesses&amp;rsquo; Kianda workspace as if it were a mobile application.&lt;/p>
-&lt;p>Instead of having to download an application through your device&amp;rsquo;s native application store, the PWA can be formatted and installed on your device so that you can easily access the website via a URL shortcut. This means with Kianda you get a digital experience that is native-like while maintaining online web benefits. When you have a Kianda subscription, you gain the ability to access your workspace via a PWA. Seen below is the accessing of the Kianda platform via a PWA on an android device.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/videos/gifs/common/pwav2-gif-smaller.gif" alt="PWA Gif">&lt;/p>
-&lt;h2 id="benefits">Benefits&lt;/h2>
-&lt;p>There are several benefits of using a PWA app when comparing to a web app or even a native only app.&lt;/p>
-&lt;h3 id="offline-use">Offline Use&lt;/h3>
-&lt;p>Apps keep working with or without network access, allowing for &lt;strong>offline availability&lt;/strong> of resources. Even when your users are going through a tunnel or in a lift, changes are automatically queued offline and then &lt;strong>synchronised&lt;/strong> when connectivity is restored. This can be extremely useful when completing process instances in remote locations, for example filling out an inspection form in an area with no internet coverage.&lt;/p>
-&lt;h3 id="fast-performance">Fast Performance&lt;/h3>
-&lt;p>The app loads quickly thanks to having it installed locally on your device. This provides you with an increased &lt;strong>ease of access&lt;/strong> experience as you are not required to download the application via your device&amp;rsquo;s native application store. Progressive web apps are faster because of the way the underlying technology &lt;strong>caches&lt;/strong> and serves text, stylesheets, images and other content on the websites. As a result user experience, consistency and conversion rate increase.&lt;/p>
-&lt;h3 id="engaging">Engaging&lt;/h3>
-&lt;p>When installing on your home screen with your brand icons, users receive &lt;strong>timely push notifications&lt;/strong> that help them stay engaged. If you would prefer to not receive notifications, you can disable them and relevant updates will be executed in the background silently.&lt;/p>
-&lt;h3 id="secure">Secure&lt;/h3>
-&lt;p>PWAs make use of &lt;strong>HTTPS requests&lt;/strong> to transfer data, which minimises potential security threats. As these applications access your Kianda workspace through your chosen web browser, PWAs utilise the added security features of these web browsers such as &lt;strong>SSL encryption&lt;/strong>.&lt;/p>
-&lt;h3 id="responsive">Responsive&lt;/h3>
-&lt;p>The Kianda platform is designed to be responsive on a myriad of mobile devices which reduces any future developmental costs. PWAs employ the &lt;strong>adaptive&lt;/strong> nature of HTML, CSS and JavaScript so that your Kianda workspace will consistently maintain a neat display of features.&lt;/p>
-&lt;h2 id="installing-your-pwa-on-a-mobile">Installing your PWA on a mobile&lt;/h2>
-&lt;p>There are a few options to install your Kianda PWA workspace into mobile devices. The quickest is to let your users manually use the option &lt;strong>Add to Home screen&lt;/strong> in their mobile devices.&lt;/p>
-&lt;h3 id="android">Android&lt;/h3>
-&lt;p>The primary method for android users to install the PWA onto their device is by:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>On the platform login screen, you will be prompted to install the PWA by clicking on the &lt;strong>Add &lt;em>[Business Name]&lt;/em>&lt;/strong> &lt;strong>to Home screen&lt;/strong>. In the prompt box that appears, click on &lt;strong>Install&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android1.jpg" alt="Android PWA Add to Home screen">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Following this, you will receive an on screen notification stating that the PWA was &lt;strong>Added to Home screen.&lt;/strong> A shortcut icon with your brand image will also show amongst the device&amp;rsquo;s installed applications.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android2.jpg" alt="PWA android notification">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Once you click on the PWA icon to access your Kianda workspace, you will be presented with your custom loading screen with your chosen brand image, name and theme colour. Shortly afterwards, you will be prompted to login to your account which will grant you access to the workspace.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android3.jpg" alt="PWA android access">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>Optionally users can manually install it by following the steps:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click &lt;img src="https://docs.kianda.com/images/android-nav.png" alt="1567866702202"> then tap on &lt;strong>Add to Home screen&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>On the confirm dialog tap &lt;strong>Add&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="ios">iOS&lt;/h3>
-&lt;p>iOS users are not yet automatically prompted to install PWA&amp;rsquo;s but it is something that can also very quickly be done by iOS users.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-ios1.jpg" alt="iOS PWA Navigate to business domain">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Tap the action button &lt;img src="https://docs.kianda.com/images/ios-action.png" alt="1567867653481"> then tap &lt;strong>Add to Home screen&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-ios2.jpg" alt="iOS PWA Add to Home screen">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>On the Add to Home Screen, tap &lt;strong>Add&lt;/strong>. Once you click on the PWA icon to access your Kianda workspace, you will be presented with your custom loading screen with your chosen brand image, name and theme colour. Shortly afterwards, you will be prompted to login to your account which will grant you access to the workspace.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-ios3.jpg" alt="PWA iOS logging in using app">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/why-choose-lowcode">Why choose low-code development?&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Why choose low-code development?</title><link>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/why-choose-lowcode/</guid><description>
+&lt;/div></description></item><item><title>Docs: Overview of low-code</title><link>https://docs.kianda.com/docs/low-code/overview-of-low-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/overview-of-low-code/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Kianda’s low code development environment provides developers with a graphical user interface to quickly create customised applications that can be used in automated processes. Kianda &lt;strong>Developer&lt;/strong> allows you to quickly build &lt;strong>reusable widgets&lt;/strong> allowing you to extend the functionality of the system. You can define the functionality or module that you want to define and deliver that module for inclusion in an application design, without the need to invent all the code from scratch. For example you could create a custom control that allows you to display images in a particular way, see &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">Custom field development&lt;/a>.&lt;/p>
 &lt;p>Kianda &lt;strong>Developer&lt;/strong> can be utilised to implement &lt;a href="https://docs.kianda.com/docs/low-code/webhooks/">HTTP requests&lt;/a> and &lt;a href="https://docs.kianda.com/docs/apis/">API&lt;/a> calls to allow for real-time data interactions, click on the links to get more details.&lt;/p>
@@ -160,7 +93,74 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/rule-widget/">Custom rule development&lt;/a> to read about rule widgets&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">Custom dashboard development&lt;/a> to read about dashboard widgets&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/client-connector/">Client connector&lt;/a> to read about data connector widgets&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Templating basics</title><link>https://docs.kianda.com/docs/low-code/templating-basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/templating-basics/</guid><description>
+&lt;/ul></description></item><item><title>Docs: Progressive Web Application (PWA)</title><link>https://docs.kianda.com/docs/low-code/pwa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/pwa/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>&lt;strong>Progressive web applications&lt;/strong> are the next great trend for the mobile web. As the Kianda platform is a progressive web application, you can access your businesses&amp;rsquo; Kianda workspace as if it were a mobile application.&lt;/p>
+&lt;p>Instead of having to download an application through your device&amp;rsquo;s native application store, the PWA can be formatted and installed on your device so that you can easily access the website via a URL shortcut. This means with Kianda you get a digital experience that is native-like while maintaining online web benefits. When you have a Kianda subscription, you gain the ability to access your workspace via a PWA. Seen below is the accessing of the Kianda platform via a PWA on an android device.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/videos/gifs/common/pwav2-gif-smaller.gif" alt="PWA Gif">&lt;/p>
+&lt;h2 id="benefits">Benefits&lt;/h2>
+&lt;p>There are several benefits of using a PWA app when comparing to a web app or even a native only app.&lt;/p>
+&lt;h3 id="offline-use">Offline Use&lt;/h3>
+&lt;p>Apps keep working with or without network access, allowing for &lt;strong>offline availability&lt;/strong> of resources. Even when your users are going through a tunnel or in a lift, changes are automatically queued offline and then &lt;strong>synchronised&lt;/strong> when connectivity is restored. This can be extremely useful when completing process instances in remote locations, for example filling out an inspection form in an area with no internet coverage.&lt;/p>
+&lt;h3 id="fast-performance">Fast Performance&lt;/h3>
+&lt;p>The app loads quickly thanks to having it installed locally on your device. This provides you with an increased &lt;strong>ease of access&lt;/strong> experience as you are not required to download the application via your device&amp;rsquo;s native application store. Progressive web apps are faster because of the way the underlying technology &lt;strong>caches&lt;/strong> and serves text, stylesheets, images and other content on the websites. As a result user experience, consistency and conversion rate increase.&lt;/p>
+&lt;h3 id="engaging">Engaging&lt;/h3>
+&lt;p>When installing on your home screen with your brand icons, users receive &lt;strong>timely push notifications&lt;/strong> that help them stay engaged. If you would prefer to not receive notifications, you can disable them and relevant updates will be executed in the background silently.&lt;/p>
+&lt;h3 id="secure">Secure&lt;/h3>
+&lt;p>PWAs make use of &lt;strong>HTTPS requests&lt;/strong> to transfer data, which minimises potential security threats. As these applications access your Kianda workspace through your chosen web browser, PWAs utilise the added security features of these web browsers such as &lt;strong>SSL encryption&lt;/strong>.&lt;/p>
+&lt;h3 id="responsive">Responsive&lt;/h3>
+&lt;p>The Kianda platform is designed to be responsive on a myriad of mobile devices which reduces any future developmental costs. PWAs employ the &lt;strong>adaptive&lt;/strong> nature of HTML, CSS and JavaScript so that your Kianda workspace will consistently maintain a neat display of features.&lt;/p>
+&lt;h2 id="installing-your-pwa-on-a-mobile">Installing your PWA on a mobile&lt;/h2>
+&lt;p>There are a few options to install your Kianda PWA workspace into mobile devices. The quickest is to let your users manually use the option &lt;strong>Add to Home screen&lt;/strong> in their mobile devices.&lt;/p>
+&lt;h3 id="android">Android&lt;/h3>
+&lt;p>The primary method for android users to install the PWA onto their device is by:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On the platform login screen, you will be prompted to install the PWA by clicking on the &lt;strong>Add &lt;em>[Business Name]&lt;/em>&lt;/strong> &lt;strong>to Home screen&lt;/strong>. In the prompt box that appears, click on &lt;strong>Install&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android1.jpg" alt="Android PWA Add to Home screen">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Following this, you will receive an on screen notification stating that the PWA was &lt;strong>Added to Home screen.&lt;/strong> A shortcut icon with your brand image will also show amongst the device&amp;rsquo;s installed applications.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android2.jpg" alt="PWA android notification">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once you click on the PWA icon to access your Kianda workspace, you will be presented with your custom loading screen with your chosen brand image, name and theme colour. Shortly afterwards, you will be prompted to login to your account which will grant you access to the workspace.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android3.jpg" alt="PWA android access">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>Optionally users can manually install it by following the steps:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;img src="https://docs.kianda.com/images/android-nav.png" alt="1567866702202"> then tap on &lt;strong>Add to Home screen&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On the confirm dialog tap &lt;strong>Add&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="ios">iOS&lt;/h3>
+&lt;p>iOS users are not yet automatically prompted to install PWA&amp;rsquo;s but it is something that can also very quickly be done by iOS users.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-ios1.jpg" alt="iOS PWA Navigate to business domain">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Tap the action button &lt;img src="https://docs.kianda.com/images/ios-action.png" alt="1567867653481"> then tap &lt;strong>Add to Home screen&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-ios2.jpg" alt="iOS PWA Add to Home screen">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On the Add to Home Screen, tap &lt;strong>Add&lt;/strong>. Once you click on the PWA icon to access your Kianda workspace, you will be presented with your custom loading screen with your chosen brand image, name and theme colour. Shortly afterwards, you will be prompted to login to your account which will grant you access to the workspace.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-ios3.jpg" alt="PWA iOS logging in using app">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/why-choose-lowcode">Why choose low-code development?&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Templating basics</title><link>https://docs.kianda.com/docs/low-code/templating-basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/templating-basics/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Kianda uses &lt;strong>Ember.js&lt;/strong> to build modern web applications for your business, and in particular the &lt;strong>Handlebars&lt;/strong> templating library to power the application&amp;rsquo;s user interface. Handlesbars is a templating language that generates HTML or other text formats to build web pages. Handlebars allows two-way binding so that you can write data into models, and that data can be used by HTML to generate the final interface/screen.&lt;/p>
 &lt;p>Handlebar templates are written as &lt;strong>expressions&lt;/strong> using &lt;strong>double curly braces {{}}&lt;/strong> for example:&lt;/p>
