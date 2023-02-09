@@ -1,5 +1,5 @@
 ---
-title: "Why choose low-code development?"
+title: "Overview of low-code"
 weight: 2
 typora-root-url: ..\..\..\static
 ---
