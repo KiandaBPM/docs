@@ -3,6 +3,8 @@ title: "Custom Connectors"
 linkTitle: "Custom Connector development"
 description: Learn about custom connectors, what they are and why they are used
 weight: 9
+toc_hide: true
+hide_summary: true
 typora-root-url: ..\..\..\..\static
 ---
 ## What are Custom Connectors? 
