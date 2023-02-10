@@ -45,6 +45,6 @@ The flexible nature of Kianda allowing custom-coding and no-coding development p
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next <img src="/images/18.png" alt="Idea icon" width="41px" height="41px"/>
 
 Click on the links below to learn more about the platform:

@@ -26,19 +26,12 @@ typora-root-url: ..\..\..\static
 ### What's next  ![Idea icon](/images/18.png) ###
 To find out more about Kianda, go to 'Welcome to Kianda' and to get started logging in visit 'Logging in to Kianda' in addition to the other links below.
 
-[**Welcome to Kianda**](/docs/getting-started/welcome/)
 
-[**Logging in to Kianda**](/docs/getting-started/logging-in/) 
-
-[**Create your first Kianda process in 3 steps**](/docs/getting-started/create-first-process/)
-
-![plan your your process](/images/one.png)  [**Plan your process**](/docs/getting-started/create-first-process/plan-your-process/) 
-
-![2](/images/two.png)  [**Design and build your process**](/docs/getting-started/create-first-process/design-and-build/)
-
-![3](/images/three.png)  [**Publish your process**](/docs/getting-started/create-first-process/publish-your-process/)
-
-
+{{% alert title="Steps to build your first business process" %}}
+> 1. [**Plan** your process](/docs/getting-started/create-first-process/plan-your-process/)
+> 2. [**Design** and build your process](/docs/getting-started/create-first-process/design-and-build/)
+> 3. [**Publish** your process](/docs/getting-started/create-first-process/publish-your-process/)
+{{% /alert %}}
 
 
 
