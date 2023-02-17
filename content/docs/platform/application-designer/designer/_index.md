@@ -44,6 +44,10 @@ The key components of the designer are:
 
    Note that clicking on **Save** saves a **draft** of a process design. Click on **Publish** to publish the design and update changes to existing process instances.
 
+   If you click on the **Exit** button ![Exit process](/images/exitdesign.png) to go back to the process list <u>without</u> clicking on the **Save** button you will be prompted with a dialog box detecting **Unsaved changes** prompting you to Abandon changes if desired. Click on **Yes** to exit **Designer** without saving, or **No** to exit and save.
+
+   ![Unsaved changes detected popup](/images/unsaved-changes.jpg)
+
 2. The central area is where the current **form canvas** is displayed. The canvas also houses 3 buttons by default: **Submit**, **Save** and **Close**. Go to [Adding form elements](#adding-form-elements) to find out more about editing these buttons and adding elements to the canvas.
 
 3. The right-hand pane is where the **properties** and **rules** are displayed for the selected item, see [Properties](#properties) for more information. From this pane you can also [Import forms](#import-forms), see the [Version history](/docs/platform/application-designer/designer/version-history/) for a process and set process [Settings](/docs/platform/application-designer/process/settings/). Click on the links to find out more.
@@ -130,20 +134,21 @@ Note: as you change any of the options in the dialog box, the impact will be sho
    - If you click on **Enable edit**, you can allow certain Users, Groups or Partners to edit the form, along with form owners by clicking on **Allow form owners**. 
 
      Other options include a checkbox for **When editing auto hide form footer buttons** and **Trigger rules on save**.
-   
+
      - If you check **Trigger rules on save** then click into the **Save action field**, you can choose an action trigger from the drop-down list as to when the form is saved, for example on execution of the Submit, Save or Close buttons. These can be other actions depending on what you have defined.
-   
+
      ![Edit action settings](/images/editactions_resized.png)
-   
+
    - If you click on **Enable custom action**, you can allow certain Users, Groups or Partners to edit the form, along with form owners by clicking on **Allow form owners**. 
-   
+
      Other options include **Action label**, **Target action field** and **Action display mode**, for example **Read-only mode**, **Edit mode** or **Both**.  
 
      ![Custom action settings](/images/customsetting_resized.png)
-   
+
    - As a form designer, you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If **Edit mode** is chosen, then the button will only appear when the form is being **edited**. In this way you can create dynamic forms that suit user interactions.
-   
+
 9. Click on the **OK** button when you are finished editing to save your changes or click on **Close** to exit the dialog box without saving.
+
 10. To save your changes to the form, click on the **Save** button ![Save button](/images/save.png). 
 
 You are now ready to start adding [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) to your form. To implement additional settings, see [Process Settings](/docs/platform/application-designer/process/settings/).

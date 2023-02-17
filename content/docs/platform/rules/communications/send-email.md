@@ -64,12 +64,16 @@ In advance of using this rule, you need to have **created one or more forms, com
 
       
 
+      If you click on the **Picture** button ![Picture button](/images/picture-button.jpg)you will be redirected to the **File storage** area where you can search for existing images stored in the Kianda file system, create a folder, or upload a file. 
+
+      ![Storage files management area](/images/storage-files-upload.jpg)
+
       To find out more about how to attach a file, see [Attachments](/docs/platform/rules/communications/send-email/#attachments) for more details.
 
       To add a message to your email, click on the **Body** text box. You can personalise automated emails using fields from the process by clicking on the **Ellipsis** button ![Ellipsis button](/images/ellipsis.png) to add an expression, see [Expression builder](/docs/platform/rules/general/expression-builder/) for more details. 
-
+   
    9. **Send via connector** - options are a) **No** or b) **Yes** 
-
+   
       If you choose **Yes** then you must choose an **Email connector** and decide if you want to **Save Sent Items** (Yes or No) which means sent emails are saved in a sent items folder in your email account. For more information go to [Email connector](/docs/platform/rules/communications/send-email/#email-connector)
       ![Email connector options](/images/send-email-connector-yes.jpg)
    
