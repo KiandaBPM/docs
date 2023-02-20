@@ -18,7 +18,7 @@ To view, use the Subscription function as an administrator:
 
 2. The main Subscription page opens.
 
-   ![Subscription view](/images/subscription-page-new.jpg)
+   ![Subscription view](/images/subscription-main.jpg)
 
    In this view you can typically make changes to six areas:
 
@@ -27,7 +27,7 @@ To view, use the Subscription function as an administrator:
    - **Regional Settings** allows you to set your operational **time zone** and **regional settings**, such as English Ireland for language.
    - **Mobile Settings** allows you to customise how the Kianda workspace will appear as a mobile app.
    - **Subscription Details** allows you to view your company details and enable a Global SMTP Mail connector for sending automated emails.
-   - **Single Sign-On (SSO)** allows you to enable Single sign-on so that a user can access Kianda using the same credentials they use everyday for example logging into Office 365.
+   - **Storage Files** allows you upload, delete and view public and private files within your subscription. You can also create folders to organise your files.
 
    These areas are covered in more detail in the sections below.
 
@@ -203,13 +203,29 @@ In this section you can make the following changes:
 
 When you are finished making changes click on **Save Changes** ![Save changes button](/images/save-changes.jpg)to save any changes made and click on **Back** to go back to the **Subscription** page.
 
+## Storage files
+
+You can access this section by clicking on **Storage Files** in the main **Administration > Subscription** page. Here you can see all public and private files that are in your platforms storage. You can search for files using the search box and navigate between **Public** and **Private** files using the provided tabs.
+
+![Single Sign-On Details](/images/storage-files.jpg)
+
+### Upload file(s)
+
+To upload a file to Storage files, click on the ![upload file](/images/upload-file.jpg) button.
+
+![upload file](/images/storage-file-upload.jpg)
+
+A file explorer will open in which you can select multiple files to upload to you platform.
+
+### Create folder
+
+To create a folder, click on the ![upload file](/images/file-storage-create-folder.jpg) button.
+
+![create folder](/images/create-folder.jpg)
+
+The folder will appear alphabetically in the main view where you can see all your files. To upload a file into folder, first, you need to click on the folder name to open it and then click on ![upload file](/images/upload-file.jpg) button.
 
 
-## Single Sign-On (SSO)
-
-Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. When you click on **Single Sign-On** in **Subscription** page, you are brought to the **Single Sign-on Details** page. See [Single Sign On](/docs/security/sso/) for more details.
-
-![Single Sign-On Details](/images/single-sign-on-details.jpg)
 
 At any time, you can go to left-hand side menu and click on **Subscription** to edit any of the settings for the headings above.
 
