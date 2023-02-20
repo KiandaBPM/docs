@@ -64,7 +64,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>The main Subscription page opens.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/subscription-page-new.jpg" alt="Subscription view">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/subscription-main.jpg" alt="Subscription view">&lt;/p>
 &lt;p>In this view you can typically make changes to six areas:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Look and Feel&lt;/strong> allows you to change the look and feel for your workspace, for example adding company logos.&lt;/li>
@@ -72,7 +72,7 @@
 &lt;li>&lt;strong>Regional Settings&lt;/strong> allows you to set your operational &lt;strong>time zone&lt;/strong> and &lt;strong>regional settings&lt;/strong>, such as English Ireland for language.&lt;/li>
 &lt;li>&lt;strong>Mobile Settings&lt;/strong> allows you to customise how the Kianda workspace will appear as a mobile app.&lt;/li>
 &lt;li>&lt;strong>Subscription Details&lt;/strong> allows you to view your company details and enable a Global SMTP Mail connector for sending automated emails.&lt;/li>
-&lt;li>&lt;strong>Single Sign-On (SSO)&lt;/strong> allows you to enable Single sign-on so that a user can access Kianda using the same credentials they use everyday for example logging into Office 365.&lt;/li>
+&lt;li>&lt;strong>Storage Files&lt;/strong> allows you upload, delete and view public and private files within your subscription. You can also create folders to organise your files.&lt;/li>
 &lt;/ul>
 &lt;p>These areas are covered in more detail in the sections below.&lt;/p>
 &lt;/li>
@@ -208,9 +208,17 @@
 &lt;/li>
 &lt;/ul>
 &lt;p>When you are finished making changes click on &lt;strong>Save Changes&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-changes.jpg" alt="Save changes button">to save any changes made and click on &lt;strong>Back&lt;/strong> to go back to the &lt;strong>Subscription&lt;/strong> page.&lt;/p>
-&lt;h2 id="single-sign-on-sso">Single Sign-On (SSO)&lt;/h2>
-&lt;p>Enabling Single-Sign-On allows the user to login via a Single-Sign-On connector. This connector could be Office365 or SAML 2.0. When you click on &lt;strong>Single Sign-On&lt;/strong> in &lt;strong>Subscription&lt;/strong> page, you are brought to the &lt;strong>Single Sign-on Details&lt;/strong> page. See &lt;a href="https://docs.kianda.com/docs/security/sso/">Single Sign On&lt;/a> for more details.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/single-sign-on-details.jpg" alt="Single Sign-On Details">&lt;/p>
+&lt;h2 id="storage-files">Storage files&lt;/h2>
+&lt;p>You can access this section by clicking on &lt;strong>Storage Files&lt;/strong> in the main &lt;strong>Administration &amp;gt; Subscription&lt;/strong> page. Here you can see all public and private files that are in your platforms storage. You can search for files using the search box and navigate between &lt;strong>Public&lt;/strong> and &lt;strong>Private&lt;/strong> files using the provided tabs.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/storage-files.jpg" alt="Single Sign-On Details">&lt;/p>
+&lt;h3 id="upload-files">Upload file(s)&lt;/h3>
+&lt;p>To upload a file to Storage files, click on the &lt;img src="https://docs.kianda.com/images/upload-file.jpg" alt="upload file"> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/storage-file-upload.jpg" alt="upload file">&lt;/p>
+&lt;p>A file explorer will open in which you can select multiple files to upload to you platform.&lt;/p>
+&lt;h3 id="create-folder">Create folder&lt;/h3>
+&lt;p>To create a folder, click on the &lt;img src="https://docs.kianda.com/images/file-storage-create-folder.jpg" alt="upload file"> button.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-folder.jpg" alt="create folder">&lt;/p>
+&lt;p>The folder will appear alphabetically in the main view where you can see all your files. To upload a file into folder, first, you need to click on the folder name to open it and then click on &lt;img src="https://docs.kianda.com/images/upload-file.jpg" alt="upload file"> button.&lt;/p>
 &lt;p>At any time, you can go to left-hand side menu and click on &lt;strong>Subscription&lt;/strong> to edit any of the settings for the headings above.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
