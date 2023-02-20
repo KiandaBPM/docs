@@ -346,7 +346,7 @@ Your browser does not support the video tag.
 &lt;p>Imported processes are available to view and edit from the main process view.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>When you have created your process go to &lt;a href="platform/form_designer2.md">Designer&lt;/a> to find out more on how to add and change forms within your process(es).&lt;/p>
+&lt;p>When you have created your process go to &lt;a href="platform/application-designer/designer/">Designer&lt;/a> to find out more on how to add and change forms within your process(es).&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="creating-your-own-processes">Creating your own processes&lt;/h3>
@@ -403,33 +403,37 @@ Your browser does not support the video tag.
 &lt;p>If you already have Kianda processes, you can also import these by clicking on the &lt;strong>Import&lt;/strong> button &lt;img src="https://docs.kianda.com/images/import_frame.png" alt="Import process button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Browse Process App&lt;/strong> to browse for Kianda files.&lt;/p>
+&lt;p>Click on the &lt;strong>Browse Process App&lt;/strong> button &lt;img src="https://docs.kianda.com/images/browse-process-app-btn.jpg" alt="browse brocess app button"> to browse for Kianda files.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Select the files you want, for example holiday-request.kianda and click on Open.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/importkianda.png" alt="Importing processes">&lt;/p>
+&lt;p>Select the files you want, for example quarterly-training-request.kianda and click on Open.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/importkianda2.png" alt="Importing processes" style="zoom:80%;" />
 &lt;/li>
 &lt;li>
-&lt;p>If the process is an existing process you choose to override the existing process by clicking &lt;strong>Yes&lt;/strong> or if not click &lt;strong>No&lt;/strong>. Change the Title and Name of the process as needed and click on &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/overrideprocess.png" alt="Override existing processes">&lt;/p>
+&lt;p>If the process name is an already existing process in your environment, then this new process will override it. However, if the process name does not match any current process, a new process will be created. Change the Title and Name of the process as needed and click on &lt;strong>Next&lt;/strong>.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/overrideprocess2.jpg" alt="Override existing processes" style="zoom:67%;" />
 &lt;/li>
 &lt;li>
-&lt;p>The system will report datasources being imported. Click on &lt;strong>Next&lt;/strong>.&lt;/p>
+&lt;p>The system will report any datasources being imported. Click on &lt;strong>Next&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/importbusinessprocess.png" alt="Import business processes">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Select dashboards to be included by checking the checkbox beside dashboards you want to import. In each case you can decide to override the existing dashboards by clicking on &lt;strong>Yes&lt;/strong> or if not, click &lt;strong>No&lt;/strong>. Click on &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/importdashboards.png" alt="Import dashboards">&lt;/p>
+&lt;p>Under &lt;strong>Dashboards to be included&lt;/strong>, you can view the Title and Name of the dashboards that are present in the Kianda file. If this dashboard already exists in your environment, then including this dashboard in your upload will overwrite it. If this dashboard does not currently exist, then it will create a new dashboard. When finished, click on &lt;strong>Next&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/importdashboards2.png" alt="Import dashboards">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Included custom widgets&lt;/strong>, you can view the title of the custom widgets that are included within the Kianda file being imported. In this example, a &lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a> is included for use within the User Training Dashboard. Click on &lt;strong>Next&lt;/strong> to continue.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/import-custom-widgets.png" alt="User Training Dashboard Widget">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>You will see a summary of what is about to be imported. Click on &lt;strong>Import&lt;/strong> to execute the import.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/importsummary.png" alt="Import summary">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/importsummary2.png" alt="Import summary">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Imported processes are available to view and edit from the main process view.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>When you have imported your process(es) go to &lt;a href="platform/form_designer2.md">Designer&lt;/a> to find out more on how to edit or add forms to your process(es).&lt;/p>
+&lt;p>When you have imported your process(es) go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a> to find out more on how to edit or add forms to your process(es).&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="editing-processes">Editing processes&lt;/h2>
@@ -449,17 +453,14 @@ Your browser does not support the video tag.
 &lt;p>At any time you can delete a process by clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>Ok&lt;/strong> after you have reviewed the process title and you are sure that this is what you want to delete. Click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Once you have created your process, you are ready to add forms. Go to &lt;a href="platform/form_designer2.md">Designer&lt;/a> to find out more on how to add and change forms within your process(es).&lt;/p>
+&lt;p>Once you have created your process, you are ready to add forms. Go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a> to find out more on how to add and change forms within your process(es).&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="exporting-processes">Exporting processes&lt;/h2>
 &lt;ol>
 &lt;li>
-&lt;p>You can export any processes, by clicking on the &lt;strong>Export&lt;/strong> button &lt;img src="https://docs.kianda.com/images/export_frame.png" alt="Export Process"> and select a process to export from the dropdown list.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/exportprocesses_frame.png" alt="Export processes">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Next&lt;/strong>.&lt;/p>
+&lt;p>You can export any processes, by clicking on the &lt;strong>Export&lt;/strong> button &lt;img src="https://docs.kianda.com/images/export_frame.png" alt="Export Process"> and select a process to export from the dropdown list. Click on &lt;strong>Next&lt;/strong> when you have selected your desired process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/exportprocesses_frame2.png" alt="Export processes">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>The system will report what datasources are included. Click on &lt;strong>Next&lt;/strong>.&lt;/p>
@@ -467,14 +468,18 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;li>
 &lt;p>Select dashboards to be included by checking the checkbox beside dashboards you want to export. Click on &lt;strong>Next&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/exportingprocesses_frame.png" alt="Export business processes">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/exportingprocesses_frame2.png" alt="Export business processes">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Export&lt;/strong>.&lt;/p>
+&lt;p>Under &lt;strong>Include custom widgets?&lt;/strong>, you check the checkbox beside the displayed custom widget(s) to include this custom widget within the exported Kianda file. In this example, a &lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a> is included for use within the User Training Dashboard. Click on &lt;strong>Next&lt;/strong> to continue.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/include-custom-widgets.png" alt="Custom widget include">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The result is a downloadable file of type .kianda. This can be kept as a backup on a separate system and imported into other Kianda instances as needed.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/kiandafiles_frame.png" alt="Exported files">&lt;/p>
+&lt;p>The final screen displays a confirmation message communicating that the process is now ready for export. Click on the &lt;strong>Export&lt;/strong> button &lt;img src="https://docs.kianda.com/images/export-btn.png" alt="Export button"> to export the Kianda file.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The result is a downloadable file of type .kianda. This can be kept as a backup on a separate system and &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/#importing-processes">imported&lt;/a> into other Kianda instances as needed.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/kianda-downloadable.png" alt="Exported files">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
