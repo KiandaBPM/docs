@@ -106,6 +106,8 @@ You can access Kianda Developer if you have an **administration** or **developer
 
 7. When you are finished editing the dialog box click on **OK** or click on **Close** at any time to exit. The output is shown in the next section.
 
+When a custom widget is created it can be exported within a Kianda file along with process design and/or dashboards, or on its own. This file can then be imported into the same or different Kianda environments of your choosing, giving you flexible access to your custom widgets. To learn more about this, see [Exporting processes](/docs/platform/application-designer/process/#exporting-processes) and [Importing processes](/docs/platform/application-designer/process/#importing-processes).
+
 
 ### Example of a Field widget
 
