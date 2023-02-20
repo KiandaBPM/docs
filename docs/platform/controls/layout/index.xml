@@ -460,8 +460,10 @@
 &lt;/li>
 &lt;li>
 &lt;p>A &lt;strong>New field - Richtext&lt;/strong> dialog box will open with a range of options you can choose from for your new Richtext field:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/richtext-dialog2.jpg" alt="Richtext dialog box">&lt;/p>
 &lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://docs.kianda.com/images/richtext-dialog2.jpg" alt="Richtext dialog box">&lt;/p>
+&lt;ol start="5">
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - You can change the title of the Richtext field from the default title of &amp;lsquo;&lt;strong>Richtext 1&lt;/strong>&amp;rsquo;.&lt;/p>
 &lt;/li>
@@ -475,7 +477,9 @@
 &lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Richtext to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Richtext&lt;/strong> - Here you can insert the text you want to appear and can choose from an wide array of styles and formats, including &lt;strong>Style,&lt;/strong> &lt;strong>Colour&lt;/strong>, &lt;strong>Bold&lt;/strong>, &lt;strong>Underline&lt;/strong>, &lt;strong>Remove font style&lt;/strong>, &lt;strong>Font size&lt;/strong>, &lt;strong>Font family&lt;/strong>, &lt;strong>Unordered list&lt;/strong>, &lt;strong>Ordered list&lt;/strong>, &lt;strong>Paragraph&lt;/strong>, and &lt;strong>Table&lt;/strong>. You can also choose to insert a &lt;strong>Link&lt;/strong> or &lt;strong>Picture&lt;/strong> or to switch to &lt;strong>Code view&lt;/strong>. For example, if you click on &lt;strong>Code view&lt;/strong> button &lt;img src="https://docs.kianda.com/images/code.png" alt="Code view button">you can copy HTML code directly into the text.&lt;/p>
+&lt;p>&lt;strong>Richtext&lt;/strong> - Here you can insert the text you want to appear and can choose from an wide array of styles and formats, including &lt;strong>Style,&lt;/strong> &lt;strong>Colour&lt;/strong>, &lt;strong>Bold&lt;/strong>, &lt;strong>Underline&lt;/strong>, &lt;strong>Remove font style&lt;/strong>, &lt;strong>Font size&lt;/strong>, &lt;strong>Font family&lt;/strong>, &lt;strong>Unordered list&lt;/strong>, &lt;strong>Ordered list&lt;/strong>, &lt;strong>Paragraph&lt;/strong>, and &lt;strong>Table&lt;/strong>. You can also choose to insert a &lt;strong>Link&lt;/strong> or &lt;strong>Picture&lt;/strong>, if you click on the &lt;strong>Picture&lt;/strong> button &lt;img src="https://docs.kianda.com/images/picture-button.jpg" alt="Picture button">you will be redirected to the &lt;strong>File storage&lt;/strong> area where you can search for existing images stored in the Kianda file system. Here you can create a folder, upload a file and delete files.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/storage-files-upload.jpg" alt="Storage files management area">&lt;/p>
+&lt;p>You can also switch to &lt;strong>Code view&lt;/strong>. For example, if you click on &lt;strong>Code view&lt;/strong> button &lt;img src="https://docs.kianda.com/images/code.png" alt="Code view button">you can copy HTML code directly into the text.&lt;/p>
 &lt;p>Type in the text you want to use into the body of the Richtext box - in our example, we will insert the text &amp;lsquo;Training Details&amp;rsquo; (the title we want to use for the first panel in our form), bold it, choose font size 14 and a blue colour scheme:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/richtext-example-body-text.jpg" alt="Example of Richtext body text">&lt;/p>
 &lt;p>You can click on the &lt;strong>Help&lt;/strong> button &lt;img src="https://docs.kianda.com/images/help.png" alt="Help button"> to get a list of over 20 keyboard shortcuts that you can use to style your text.&lt;/p>
