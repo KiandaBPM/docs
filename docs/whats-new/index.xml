@@ -227,5 +227,9 @@
 &lt;td>2&lt;/td>
 &lt;td>Add Picture Button in send email rule, widget-html and rich-text - If you click on the &lt;strong>Picture&lt;/strong> button for example in the Body of a Send email rule, you will be redirected to the &lt;strong>File storage&lt;/strong> area where you can search for existing images stored in the Kianda file system, create a folder, or upload a file.&lt;/td>
 &lt;/tr>
+&lt;tr>
+&lt;td>3&lt;/td>
+&lt;td>Include Custom widgets when exporting - When you click on &lt;strong>Export&lt;/strong> on the &lt;strong>Process designer&lt;/strong> page, you can now choose if you would like to include the custom widget that is associated with the selected dashboard/process within the exported Kianda file. The included custom widgets are then recognised when importing the Kianda file. To learn more about this, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/#exporting-processes">Exporting processes&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/#importing-processes">Importing processes&lt;/a>.&lt;/td>
+&lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item></channel></rss>
