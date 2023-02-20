@@ -74,9 +74,9 @@ To add a **Rich Text widget** to a dashboard:
 
    - You can also choose to insert a **Link** or **Picture** or to switch to **Code view** (if you click on **Code view** button ![Code view button](/images/code.png)you can copy HTML code directly into the text). 
 
-   - If you click on **Picture** an **Insert Picture** dialog box opens, allowing you to either browse to select an image file or to insert an image URL (as shown here):
+   - If you click on the **Picture** button ![Picture button](/images/picture-button.jpg)you will be redirected to the **File storage** area where you can search for existing images stored in the Kianda file system, you can also create a folder, upload or delete a file. 
 
-   ![Dashboard Rich Text widget insert image dialog box](/images/dashboard-richtext-image.jpg)
+   ![Storage files management area](/images/storage-files-upload.jpg)
 
    
 
