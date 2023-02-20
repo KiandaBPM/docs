@@ -31,18 +31,23 @@ For example, we may want to insert some colourful headings into a Training Appro
 
 4. A **New field - Richtext** dialog box will open with a range of options you can choose from for your new Richtext field:
 
-	![Richtext dialog box](/images/richtext-dialog2.jpg)
+  ![Richtext dialog box](/images/richtext-dialog2.jpg)
 
-	
+  
 
 5. **Title** - You can change the title of the Richtext field from the default title of '**Richtext 1**'.
 
 6. **Name** - This is a unique name for the field and inherits a camel case version of the entered Title.
 
 7. **Help text** - You can insert text to help the form user - if you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
+
 8. **Custom CSS class name** - You can type the name of a CSS class to allow the Richtext to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
 
-9. **Richtext** - Here you can insert the text you want to appear and can choose from an wide array of styles and formats, including **Style,** **Colour**, **Bold**, **Underline**, **Remove font style**, **Font size**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, and **Table**. You can also choose to insert a **Link** or **Picture** or to switch to **Code view**. For example, if you click on **Code view** button ![Code view button](/images/code.png)you can copy HTML code directly into the text. 
+9. **Richtext** - Here you can insert the text you want to appear and can choose from an wide array of styles and formats, including **Style,** **Colour**, **Bold**, **Underline**, **Remove font style**, **Font size**, **Font family**, **Unordered list**, **Ordered list**, **Paragraph**, and **Table**. You can also choose to insert a **Link** or **Picture**, if you click on the **Picture** button ![Picture button](/images/picture-button.jpg)you will be redirected to the **File storage** area where you can search for existing images stored in the Kianda file system. Here you can create a folder, upload a file and delete files. 
+
+   ![Storage files management area](/images/storage-files-upload.jpg)
+
+   You can also switch to **Code view**. For example, if you click on **Code view** button ![Code view button](/images/code.png)you can copy HTML code directly into the text. 
 
    Type in the text you want to use into the body of the Richtext box - in our example, we will insert the text 'Training Details' (the title we want to use for the first panel in our form), bold it, choose font size 14 and a blue colour scheme:
 
