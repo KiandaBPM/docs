@@ -102,7 +102,6 @@ To read more how to create the different widget types go to:
 - [Custom field development](/docs/low-code/field-widget/) to read about field widgets
 - [Custom rule development](/docs/low-code/rule-widget/) to read about rule widgets
 - [Custom dashboard development](/docs/low-code/dashboard-widget/) to read about dashboard widgets
-- [Client connector](/docs/low-code/client-connector/) to read about data connector widgets
 
 
 

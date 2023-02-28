@@ -1,5 +1,5 @@
 ---
-title: "Javascript expressions"
+title: "JavaScript expressions"
 Weight: 5
 typora-root-url: ..\..\..\static
 ---
@@ -12,13 +12,13 @@ The use of expressions allows you to cleverly manipulate data to create new cons
 
 ![Expression new employee ID example](/images/expression-id-example.jpg)
 
-The [Expression builder](docs/platform/rules/general/expression-builder/) page provides an introduction to expressions and shows one example of expressions in use in a **Send email rule** to automate how emails are sent. The example simply uses the **[identifier]** or unique name from form fields to populate the body text of the email.
+The [Expression builder](/docs/platform/rules/general/expression-builder/) page provides an introduction to expressions and shows one example of expressions in use in a **Send email rule** to automate how emails are sent. The example simply uses the **[identifier]** or unique name from form fields to populate the body text of the email.
 
 ![Expression example](/images/expression-example.gif)
 
 **ProcessLink()** is a function that will return a link to that particular process instance. You can use **any JavaScript functions** in the expression field to make advanced expressions throughout your Kianda forms, see below for how to get started.
 
-## How to get started with Javascript expressions ##
+## How to get started with JavaScript expressions ##
 
 Expressions are recognisable in Kianda from the **Expressions** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png) found in **Edit rule dialog boxes** and controls like **text box**, **number** and **rich text**. 
 

@@ -83,7 +83,7 @@ Here is another example of that demonstrates how you can create a **defined** an
   font-size: medium;
   text-transform: uppercase;
   color: #004B8B
-    margin-right: 10px;
+  margin-right: 10px;
   border-bottom: 3px solid #F9DCC1;
 }
 ```
@@ -106,7 +106,7 @@ You can have icons display before or after the controls by using a CSS rule, for
 a:before {
     font-family:"Font Awesome 5 Free";
     content: "\f007"
-        display: inline-block;
+    display: inline-block;
     padding-right: 10px;
     vertical-align: middle;
     font-weight: 900;
@@ -206,11 +206,11 @@ The next section deals with [Adding items](#adding-items-to-global-css) to the f
 
 ## Adding items to Global CSS
 
-Remember additional items can be added to the file whenever you wish. Best practice is to update only individual items based on the **Unique Name** which becomes an attribute. The example below uses the concept shown of **CSS classes** as shown in the section [Effective use of CSS classes](#effective-use-of-css-classes)
+Remember additional items can be added to the file whenever you wish. Best practice is to update only individual items based on the **Unique Name** which becomes an attribute. The example below uses the concept shown of **CSS classes** as shown in the section [Effective use of CSS classes](#effective-use-of-css-classes-in-kianda).
 
 ### Customised button example
 
-For example, if you have a button in a process and you want to change background colour and text colour, first you need to note add a Custom CSS name to the provided text box within the button options. Next, because you only want to target the button in a specific process, you will need to use aa **element selector**. This will take the form of: 
+For example, if you have a button in a process and you want to change its background colour and text colour, first you need to add a **Custom CSS class name** to the provided text box within the button options. Next, because you only want to target the button in a specific process, you will need to use an **element selector**. This will take the form of: 
 
 ```css
 .pinkButton > button {}
@@ -235,9 +235,9 @@ For example, if you have a button in a process and you want to change background
 
 4. Click on **Back** to return to the **Subscription** page and go to **Administration** and **Designer** to navigate to the desired process. Within that process **select the button** that needs the custom CSS.
 
-5. Click on the **Edit/Pen** button to edit the field and enter the attribute name into the **Unique Name** field.
+5. Click on the **Edit/Pen** button to edit the field and enter the attribute name into the **Custom CSS class name** field.
 
-   ![Unique Name field change](/images/send-email-pink-name.jpg)
+   ![Unique Name field change](/images/css-class-name.png)
 
 6. Click on **OK** to submit changes or click on **Close** at any time to exit the dialog box.
 

@@ -27,11 +27,11 @@ Custom rules are created by **Administrators** or **Developers** who have coding
 
 If you are an experienced developer with an **Administrator** or **Developer** role, see [Users & Groups](/docs/platform/administration/users/), you can create a new rule widget within Kianda by doing the following: 
 
-1. Navigate to **Administration** in the left-hand side menu, and click on **Developer**. This will bring you to the **Developer resources** page.
+1. Navigate to **Administration** in the left-hand side menu, and click on **Developer**. This will bring you to the **Developer resources** page. Rule widgets are of type 'Rule' in this list.
 
    ***Widget view***
 
-   ![Widget view](/images/widgetview2.jpg)
+   ![Widget view](/images/developer-view.jpg)
 
 2. Click on **New widget** to create a new rule widget.
 

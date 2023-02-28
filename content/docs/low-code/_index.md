@@ -153,5 +153,8 @@ The 'Widget Code' is written in JavaScript and defines the logics and functions.
 For more information on the other areas of customisation/widget development, click on the links below:
 
 - [Rule development](/docs/low-code/rule-widget/)
+
 - [Dashboards](/docs/low-code/dashboard-widget/)
-- [Client connectors](/docs/low-code/client-connector/)
+
+  
+

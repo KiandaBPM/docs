@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\static
 
 ## Introduction
 
-Kianda **Developer** includes a **webhooks** function.  A **webhook** or web **callback** allows information to be pushed from Kianda to your applications in real time when **process instances are created, deleted or updated**. This provides an efficient way to execute event reactions, thereby eliminating the need to continuously poll for data. The information that is posted includes variables like the process name and instance ID. 
+Kianda **Developer** includes a **webhooks** function. A **webhook** or web **callback** allows information to be pushed from Kianda to your applications in real time when **process instances are created, deleted or updated**. This provides an efficient way to execute event reactions, thereby eliminating the need to continuously poll for data. The information that is posted includes variables like the process name and instance ID. 
 
 The Kianda **webhooks** function allows you to configure URLs that can respond to process instance creation, deletion and update events. When these events happen, the webhook will then make a HTTP request to your application/service, including variables like the process instance name, querying the provided URL, so your application can be updated.
 
@@ -29,7 +29,7 @@ You must have an **Administrator** or **Developer** role see [Users & Groups](/d
    ![Webhooks](/images/webhooks-oneurl.jpg)
 
 4. Use the slider to turn on the relevant callback:
-   - **Enable Created Callback** - this will enable a URL callback every time a process instance is **updated**. This results in a **HTTP GET request** with parameters `instanceID={instanceID}, processName={processName}` and **`eventType=created`** being issued to the given URL.
+   - **Enable Created Callback** - this will enable a URL callback every time a process instance is **created**. This results in a **HTTP GET request** with parameters `instanceID={instanceID}, processName={processName}` and **`eventType=created`** being issued to the given URL.
    - **Enable Updated Callback** - this will enable a URL callback every time a process instance is **updated**. This results in a **HTTP GET request** with parameters `instanceID={instanceID}, processName={processName}` and **`eventType=updated`** being issued to the given URL.
    - **Enable Deleted Callback** - this will enable a URL callback every time a process instance is **deleted**. This results in a **HTTP GET request** with parameters `instanceID={instanceID}, processName={processName}` and **`eventType=deleted`** being issued to the given URL.
 

@@ -37,7 +37,7 @@ Other field-related components include field-date, field-group, field-textbox an
 
 If you are an experienced developer with an **Administrator** or **Developer** role (see [Users & Groups](/docs/platform/administration/users/)), you can create a new custom field/control within Kianda by doing the following: 
 
-1. Navigate to **Administration** in the left-hand side menu, and click on **Developer**. This will bring you to the **Developer resources** page.
+1. Navigate to **Administration** in the left-hand side menu, and click on **Developer**. This will bring you to the **Developer resources** page. Field widgets are of type 'Field' in this list.
 
    ***Widget view***
 

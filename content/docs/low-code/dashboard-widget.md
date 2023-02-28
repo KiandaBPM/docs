@@ -29,7 +29,7 @@ If you are an experienced developer with an **Administrator** or **Developer** r
 
    ***Widget view***
 
-   ![Widget view](/images/widgetview2.jpg)
+   ![Widget view](/images/developer-view.jpg)
 
 2. Click on **New widget** to create a new rule widget.
 
