@@ -92,7 +92,6 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">Custom field development&lt;/a> to read about field widgets&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/rule-widget/">Custom rule development&lt;/a> to read about rule widgets&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">Custom dashboard development&lt;/a> to read about dashboard widgets&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/low-code/client-connector/">Client connector&lt;/a> to read about data connector widgets&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Progressive Web Application (PWA)</title><link>https://docs.kianda.com/docs/low-code/pwa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/pwa/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>&lt;strong>Progressive web applications&lt;/strong> are the next great trend for the mobile web. As the Kianda platform is a progressive web application, you can access your businesses&amp;rsquo; Kianda workspace as if it were a mobile application.&lt;/p>
@@ -162,7 +161,7 @@
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/why-choose-lowcode">Why choose low-code development?&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Templating basics</title><link>https://docs.kianda.com/docs/low-code/templating-basics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/templating-basics/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Kianda uses &lt;strong>Ember.js&lt;/strong> to build modern web applications for your business, and in particular the &lt;strong>Handlebars&lt;/strong> templating library to power the application&amp;rsquo;s user interface. Handlesbars is a templating language that generates HTML or other text formats to build web pages. Handlebars allows two-way binding so that you can write data into models, and that data can be used by HTML to generate the final interface/screen.&lt;/p>
+&lt;p>Kianda uses &lt;strong>Ember.js&lt;/strong> to build modern web applications for your business, and in particular the &lt;strong>Handlebars&lt;/strong> templating library to power the application&amp;rsquo;s user interface. Handlebars is a templating language that generates HTML or other text formats to build web pages. Handlebars allows two-way binding so that you can write data into models, and that data can be used by HTML to generate the final interface/screen.&lt;/p>
 &lt;p>Handlebar templates are written as &lt;strong>expressions&lt;/strong> using &lt;strong>double curly braces {{}}&lt;/strong> for example:&lt;/p>
 &lt;p>&lt;code>&amp;lt;p&amp;gt;{{firstname}} {{surname}}&amp;lt;/p&amp;gt;&lt;/code>&lt;/p>
 &lt;p>When the template is executed, the expressions above between the braces are replaced with values from an input object. For example in a Kianda form if a &lt;strong>user types in values&lt;/strong> or a &lt;strong>rule dynamically assigns values&lt;/strong> to text boxes for example, the values are applied to the input object as follows:&lt;/p>
@@ -366,15 +365,15 @@
 &lt;/table>
 &lt;p>When the steps in &lt;a href="#how-to-get-started-with-list-widget-customisation">How to get started&lt;/a> are followed and the code is added using the &lt;strong>Add column&lt;/strong> &lt;img src="https://docs.kianda.com/images/add-column-button.jpg" alt="Add column button"> button then the resulting dashboard looks like this.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/customised-list-widget.jpg" alt="Customised list widget">&lt;/p>
-&lt;p>You could also use JavaScript to add actions to the buttons in the dashboard. These could be functions set in the Global JavaScript file, see &lt;a href="https://docs.kianda.com/docs/low-code/global-javascript-file/">Global JavaScript file&lt;/a> for details.&lt;/p></description></item><item><title>Docs: Javascript expressions</title><link>https://docs.kianda.com/docs/low-code/javascript-expressions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/javascript-expressions/</guid><description>
+&lt;p>You could also use JavaScript to add actions to the buttons in the dashboard. These could be functions set in the Global JavaScript file, see &lt;a href="https://docs.kianda.com/docs/low-code/global-javascript-file/">Global JavaScript file&lt;/a> for details.&lt;/p></description></item><item><title>Docs: JavaScript expressions</title><link>https://docs.kianda.com/docs/low-code/javascript-expressions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/javascript-expressions/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>&lt;strong>Expressions&lt;/strong> are available for use extensively throughout the Kianda platform, both in &lt;strong>controls&lt;/strong> like text box, number and rich text, as well as &lt;strong>rules&lt;/strong> like Send email and Set form field.&lt;/p>
 &lt;p>The use of expressions allows you to cleverly manipulate data to create new constructs that can be used within processes. For example if an &amp;lsquo;Onboarding process&amp;rsquo; requires that a new hire completes a &amp;rsquo;new employee form&amp;rsquo; filling out their &amp;lsquo;firstname&amp;rsquo; and &amp;rsquo;lastname&amp;rsquo;, it may be useful to combine the two input strings to create a new ID for the employee that combines the data from each field.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/expression-id-example.jpg" alt="Expression new employee ID example">&lt;/p>
-&lt;p>The &lt;a href="docs/platform/rules/general/expression-builder/">Expression builder&lt;/a> page provides an introduction to expressions and shows one example of expressions in use in a &lt;strong>Send email rule&lt;/strong> to automate how emails are sent. The example simply uses the &lt;strong>[identifier]&lt;/strong> or unique name from form fields to populate the body text of the email.&lt;/p>
+&lt;p>The &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder/">Expression builder&lt;/a> page provides an introduction to expressions and shows one example of expressions in use in a &lt;strong>Send email rule&lt;/strong> to automate how emails are sent. The example simply uses the &lt;strong>[identifier]&lt;/strong> or unique name from form fields to populate the body text of the email.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/expression-example.gif" alt="Expression example">&lt;/p>
 &lt;p>&lt;strong>ProcessLink()&lt;/strong> is a function that will return a link to that particular process instance. You can use &lt;strong>any JavaScript functions&lt;/strong> in the expression field to make advanced expressions throughout your Kianda forms, see below for how to get started.&lt;/p>
-&lt;h2 id="how-to-get-started-with-javascript-expressions">How to get started with Javascript expressions&lt;/h2>
+&lt;h2 id="how-to-get-started-with-javascript-expressions">How to get started with JavaScript expressions&lt;/h2>
 &lt;p>Expressions are recognisable in Kianda from the &lt;strong>Expressions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png" alt="Expressions"> found in &lt;strong>Edit rule dialog boxes&lt;/strong> and controls like &lt;strong>text box&lt;/strong>, &lt;strong>number&lt;/strong> and &lt;strong>rich text&lt;/strong>.&lt;/p>
 &lt;p>Within rules, expressions can be created using the &lt;strong>Expression builder&lt;/strong> where you can &lt;strong>Add field to an expression&lt;/strong> or use the handy &lt;strong>Reference&lt;/strong> guide to get a list of commonly used functions, such as &lt;strong>ProcessLink()&lt;/strong>.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Expression builder&lt;/strong>&lt;/em>&lt;/p>
@@ -520,9 +519,9 @@
 &lt;/ol>
 &lt;p>The next section deals with &lt;a href="#adding-items-to-global-css">Adding items&lt;/a> to the file.&lt;/p>
 &lt;h2 id="adding-items-to-global-css">Adding items to Global CSS&lt;/h2>
-&lt;p>Remember additional items can be added to the file whenever you wish. Best practice is to update only individual items based on the &lt;strong>Unique Name&lt;/strong> which becomes an attribute. The example below uses the concept shown of &lt;strong>CSS classes&lt;/strong> as shown in the section &lt;a href="#effective-use-of-css-classes">Effective use of CSS classes&lt;/a>&lt;/p>
+&lt;p>Remember additional items can be added to the file whenever you wish. Best practice is to update only individual items based on the &lt;strong>Unique Name&lt;/strong> which becomes an attribute. The example below uses the concept shown of &lt;strong>CSS classes&lt;/strong> as shown in the section &lt;a href="#effective-use-of-css-classes-in-kianda">Effective use of CSS classes&lt;/a>.&lt;/p>
 &lt;h3 id="customised-button-example">Customised button example&lt;/h3>
-&lt;p>For example, if you have a button in a process and you want to change background colour and text colour, first you need to note add a Custom CSS name to the provided text box within the button options. Next, because you only want to target the button in a specific process, you will need to use aa &lt;strong>element selector&lt;/strong>. This will take the form of:&lt;/p>
+&lt;p>For example, if you have a button in a process and you want to change its background colour and text colour, first you need to add a &lt;strong>Custom CSS class name&lt;/strong> to the provided text box within the button options. Next, because you only want to target the button in a specific process, you will need to use an &lt;strong>element selector&lt;/strong>. This will take the form of:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-css" data-lang="css">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">pinkButton&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;gt;&lt;/span> &lt;span style="color:#204a87;font-weight:bold">button&lt;/span> &lt;span style="color:#000;font-weight:bold">{}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol>
 &lt;li>
@@ -544,8 +543,8 @@
 &lt;p>Click on &lt;strong>Back&lt;/strong> to return to the &lt;strong>Subscription&lt;/strong> page and go to &lt;strong>Administration&lt;/strong> and &lt;strong>Designer&lt;/strong> to navigate to the desired process. Within that process &lt;strong>select the button&lt;/strong> that needs the custom CSS.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit/Pen&lt;/strong> button to edit the field and enter the attribute name into the &lt;strong>Unique Name&lt;/strong> field.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-pink-name.jpg" alt="Unique Name field change">&lt;/p>
+&lt;p>Click on the &lt;strong>Edit/Pen&lt;/strong> button to edit the field and enter the attribute name into the &lt;strong>Custom CSS class name&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/css-class-name.png" alt="Unique Name field change">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>OK&lt;/strong> to submit changes or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
@@ -663,7 +662,7 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;p>If you are an experienced developer with an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role (see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>), you can create a new custom field/control within Kianda by doing the following:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Navigate to &lt;strong>Administration&lt;/strong> in the left-hand side menu, and click on &lt;strong>Developer&lt;/strong>. This will bring you to the &lt;strong>Developer resources&lt;/strong> page.&lt;/p>
+&lt;p>Navigate to &lt;strong>Administration&lt;/strong> in the left-hand side menu, and click on &lt;strong>Developer&lt;/strong>. This will bring you to the &lt;strong>Developer resources&lt;/strong> page. Field widgets are of type &amp;lsquo;Field&amp;rsquo; in this list.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Widget view&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/developer-view.jpg" alt="Developer view">&lt;/p>
 &lt;/li>
@@ -844,9 +843,9 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;p>If you are an experienced developer with an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>, you can create a new rule widget within Kianda by doing the following:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Navigate to &lt;strong>Administration&lt;/strong> in the left-hand side menu, and click on &lt;strong>Developer&lt;/strong>. This will bring you to the &lt;strong>Developer resources&lt;/strong> page.&lt;/p>
+&lt;p>Navigate to &lt;strong>Administration&lt;/strong> in the left-hand side menu, and click on &lt;strong>Developer&lt;/strong>. This will bring you to the &lt;strong>Developer resources&lt;/strong> page. Rule widgets are of type &amp;lsquo;Rule&amp;rsquo; in this list.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Widget view&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/widgetview2.jpg" alt="Widget view">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/developer-view.jpg" alt="Widget view">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>New widget&lt;/strong> to create a new rule widget.&lt;/p>
@@ -897,7 +896,7 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;li>
 &lt;p>Navigate to &lt;strong>Administration&lt;/strong> in the left-hand side menu, and click on &lt;strong>Developer&lt;/strong>. This will bring you to the &lt;strong>Developer resources&lt;/strong> page. Dashboard widgets are of type &amp;lsquo;Widget&amp;rsquo; in this list.&lt;/p>
 &lt;p>&lt;em>&lt;strong>Widget view&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/widgetview2.jpg" alt="Widget view">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/developer-view.jpg" alt="Widget view">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>New widget&lt;/strong> to create a new rule widget.&lt;/p>
@@ -961,7 +960,7 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;li>
 &lt;p>Use the slider to turn on the relevant callback:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Enable Created Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>updated&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;strong>&lt;code>eventType=created&lt;/code>&lt;/strong> being issued to the given URL.&lt;/li>
+&lt;li>&lt;strong>Enable Created Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>created&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;strong>&lt;code>eventType=created&lt;/code>&lt;/strong> being issued to the given URL.&lt;/li>
 &lt;li>&lt;strong>Enable Updated Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>updated&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;strong>&lt;code>eventType=updated&lt;/code>&lt;/strong> being issued to the given URL.&lt;/li>
 &lt;li>&lt;strong>Enable Deleted Callback&lt;/strong> - this will enable a URL callback every time a process instance is &lt;strong>deleted&lt;/strong>. This results in a &lt;strong>HTTP GET request&lt;/strong> with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;strong>&lt;code>eventType=deleted&lt;/code>&lt;/strong> being issued to the given URL.&lt;/li>
 &lt;/ul>
