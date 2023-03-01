@@ -1,6 +1,6 @@
 ---
 title: "SharePoint connector"
-weight: 17
+weight: 18
 typora-root-url: ..\..\..\..\static
 ---
 

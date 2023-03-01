@@ -1,6 +1,6 @@
 ---
 title: "SQL Server connector"
-weight: 19
+weight: 20
 typora-root-url: ..\..\..\..\static
 ---
 
