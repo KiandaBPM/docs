@@ -79,7 +79,32 @@
 &lt;/ol>
 &lt;p>You can apply the create item rule to a button, for example, the submit button. This will result in a user being created in your AD whenever the submit button will be clicked.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: DocuSign</title><link>https://docs.kianda.com/docs/platform/connectors/docusign/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/docusign/</guid><description>
+&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Coins Connector</title><link>https://docs.kianda.com/docs/platform/connectors/coins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/coins/</guid><description>
+&lt;p>A data connector available within Kianda is the &lt;strong>Coins connector&lt;/strong>. Coins provide general construction management solutions from budgeting and time management, to communications logs and operations management. This data connector allows you to seamlessly integrate your Coins data within your Kianda process, to increase workflow productivity from one central Kianda workspace.&lt;/p>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the Coins data connector, you must have an account with Coins which is used to obtain information for a successful connection.&lt;/p>
+&lt;h2 id="how-to-get-started-add-new-data-connector-buttonimagescoins-logopng">How to get started &lt;img src="https://docs.kianda.com/images/coins-logo.png" alt="Add new data connector button">&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>Coins&lt;/strong> from the list of data sources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will be automatically brought to the &lt;strong>Coins details&lt;/strong> page, where you can start setting up the connection.&lt;/p>
+&lt;p>&lt;strong>PICTURE HERE&lt;/strong>&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your Coins connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="coins-parameters">Coins parameters&lt;/h2>
+&lt;p>When you use the &lt;strong>Coins&lt;/strong> datasource, there are &lt;strong>default parameters&lt;/strong> invoked from the files that you can access. For example when you create a &lt;strong>list&lt;/strong> filed in a Kianda form and use Coins as its datasource, these Coins parameters will appear in &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and &lt;strong>Sort by&lt;/strong> field in the &lt;strong>Edit field dialog box&lt;/strong>, see &lt;strong>Name&lt;/strong> for example in the image below:&lt;/p>
+&lt;p>&lt;strong>PICTURE HERE&lt;/strong>&lt;/p>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>Your &lt;strong>Coins service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: DocuSign</title><link>https://docs.kianda.com/docs/platform/connectors/docusign/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/docusign/</guid><description>
 &lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>DocuSign&lt;/strong>. DocuSign enables organisations to manage electronic agreements by offering electronic signatures also know as &lt;strong>eSignatures&lt;/strong>. eSignatures are a way to sign different types of documents electronically on many different devices.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can use the DocuSign data connector when a process you have created requires you to send individual documents or envelopes to get them signed &lt;strong>electronically&lt;/strong>. With the connector, you can access different types of &lt;strong>templates&lt;/strong> that you have created within your DocuSign account, &lt;strong>download&lt;/strong> documents, and access already existing envelopes to see their &lt;strong>status&lt;/strong> or &lt;strong>summary&lt;/strong>.&lt;/p>
@@ -1013,7 +1038,32 @@
 &lt;source src="https://docs.kianda.com/videos/connectors/powershell-create-item.mp4">
 Your browser does not support the video tag.
 &lt;/source>
-&lt;/video></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
+&lt;/video></description></item><item><title>Docs: Procore Connector</title><link>https://docs.kianda.com/docs/platform/connectors/procore/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/procore/</guid><description>
+&lt;p>A data connector available within Kianda is the &lt;strong>Procore connector&lt;/strong>. Procore provide a widely used construction management software to streamline project communication, documentation and analysis. Procore also has project management and financial features, as well as tender management and builder information modeling (BIM) designers. Kianda allows you to connect to Procore as a data connector, providing an easy and seamless way of integrating all your Procore data gathered from these features into your Kianda process.&lt;/p>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the Procore data connector, you must have an account with Procore which is used to obtain information for a successful connection.&lt;/p>
+&lt;h2 id="how-to-get-started-add-new-data-connector-buttonimagesprocore-logopng">How to get started &lt;img src="https://docs.kianda.com/images/procore-logo.png" alt="Add new data connector button">&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>Procore&lt;/strong> from the list of data sources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will be automatically brought to the &lt;strong>Procore details&lt;/strong> page, where you can start setting up the connection.&lt;/p>
+&lt;p>&lt;strong>PICTURE HERE&lt;/strong>&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your Procore connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="procore-parameters">Procore parameters&lt;/h2>
+&lt;p>When you use the &lt;strong>Procore&lt;/strong> datasource, there are &lt;strong>default parameters&lt;/strong> invoked from the files that you can access. For example when you create a &lt;strong>list&lt;/strong> filed in a Kianda form and use Procore as its datasource, these Procore parameters will appear in &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and &lt;strong>Sort by&lt;/strong> field in the &lt;strong>Edit field dialog box&lt;/strong>, see &lt;strong>Name&lt;/strong> for example in the image below:&lt;/p>
+&lt;p>&lt;strong>PICTURE HERE&lt;/strong>&lt;/p>
+&lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>Your &lt;strong>Procore service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
 &lt;p>One of the data connectors that you can connect to is &lt;strong>Salesforce&lt;/strong>. Salesforce provides customer relationship management software and applications focused on sales, customer service, marketing automation, and analytics. The Salesforce data connector allows you to access information from your Salesforce account which can then be used within your Kianda subscription.&lt;/p>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
 &lt;p>In advance of using the Salesforce data connector, you must have an account with Salesforce which is used to obtain information for a successful connection. If you have an account with Salesforce, all you need to create within the Salesforce application is a &lt;strong>Connected App&lt;/strong>. These connected apps within Salesforce enable external applications to integrate together using its APIs. The connected app will provide you with a &lt;strong>Consumer Key&lt;/strong> and a &lt;strong>Consumer Secret&lt;/strong>. These consumer information are used to establish the connection between your Connected app in Sales force and your Kianda subscription, to learn how to acquire the Consumer Key and Consumer Secret go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/salesforce/#acquiring-consumer-key-and-consumer-secret">Acquiring Consumer Key and Consumer Secret&lt;/a>. In order to successfully connect your Connected App and Kianda, the &lt;strong>settings&lt;/strong> of the Connected App in your salesforce account need to be &lt;strong>configured&lt;/strong>, to learn how to configure your Connected App in Salesforce go to &lt;a href="">Configuring Salesforce Connected App&lt;/a>.&lt;/p>
