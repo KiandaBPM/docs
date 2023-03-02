@@ -31,11 +31,13 @@ To implement the rule:
 4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) to create conditions for the rule, see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
 5. Under Action, **Set process status** choose from **Auto (Current form title)** or **Manual**. If you choose **Manual** then type in the desired text to appear to users in the **Status text after submit** field.
 
-​		Each process contains an internal status value, this is automatically set to the name of the active form. For example there are two forms in a Incident 		process, a **Incident form**, a **Review form** and the **Auto (Current form title)** is selected in the **Set process status** option. When the **Incident form** 		is completed and submitted, the internal status will be set to the next active form, in this case the **Review form**. When all forms are completed and 		submitted, the internal status is set to **completed**. The image below shows how the internal status of the process can be reflected in a dashboard to 		keep track of the current stage of a process. 
+Each process contains an internal status value, this is automatically set to the name of the active form. For example there are two forms in a Incident process, a **Incident form**, a **Review form** and the **Auto (Current form title)** is selected in the **Set process status** option. When the **Incident form** is completed and submitted, the internal status will be set to the next active form, in this case the **Review form**. When all forms are completed and submitted, the internal status is set to **completed**. The image below shows how the internal status of the process can be reflected in a dashboard to keep track of the current stage of a process. 
 
 ![Submit form read only](/images/examples-submit-form-status.jpg)
 
+We can also set our own value for the internal status by changing the **Set process status** option to **Manual**. This will open a textbox field in which you can enter in a custom status after a form is submitted. For example, after submitting the first form, we will set the status to open: 
 
+![Submit form read only](/images/submit-rule.jpg)
 
 ### Editing, deleting or duplicating rules
 
