@@ -3,11 +3,11 @@ title: "Portal"
 linkTitle: "Portal"
 weight: 3
 typora-root-url: ..\..\..\static
-
+toc_hide: true
+hide_summary: true
 ---
 
-<!--toc_hide: true
-hide_summary: true-->
+<!---->
 
 As a **subscription owner** you will gain access to the portal at **portal.kianda.com**. The portal subscription is created in mind of all **subscription owners** where they can manage their own subscription environments. A subscription owner is one individual which is the main owner of a Kianda subscription. 
 
