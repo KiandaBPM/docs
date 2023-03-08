@@ -2,6 +2,8 @@
 title: "REST Service and Access Token refresh"
 linkTitle: "REST Service and Access Token refresh"
 typora-root-url: ..\..\..\..\..\static
+toc_hide: true
+hide_summary: true
 ---
 
 **Introduction**
