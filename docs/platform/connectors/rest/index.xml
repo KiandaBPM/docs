@@ -1,19 +1,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – REST Web Service</title><link>https://docs.kianda.com/docs/platform/connectors/rest/</link><description>Recent content in REST Web Service on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/connectors/rest/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: REST Service and Access Token refresh</title><link>https://docs.kianda.com/docs/platform/connectors/rest/rest-access-token/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/rest/rest-access-token/</guid><description>
-&lt;p>&lt;strong>Introduction&lt;/strong>&lt;/p>
-&lt;p>When creating a &lt;strong>REST Service datasource&lt;/strong> that utilises oAuth to authenticate you may want to create the refresh functionality within Kianda. This is possible by creating a &lt;strong>Process&lt;/strong> and scheduling it to run before the Access Token expires.&lt;/p>
-&lt;p>&lt;strong>How to get started&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>Create the datasource&lt;/strong>&lt;/p>
-&lt;p>First you will need to create the &lt;strong>datasource&lt;/strong>. For example, see a sample &lt;strong>REST Service&lt;/strong> below with two &lt;strong>REST Methods. The&lt;/strong> method titled &lt;strong>Get/Refresh Auth Token&lt;/strong> is what will be used to refresh the Access Token with the scheduled task. For more information on how to create &lt;strong>REST Services&lt;/strong> go to the &lt;strong>REST Service&lt;/strong> page &lt;em>&lt;strong>LINK&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" alt="img">&lt;/p>
-&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" alt="img">&lt;/p>
-&lt;p>&lt;strong>Create the process&lt;/strong>&lt;/p>
-&lt;p>Next, the process to contain fields for the parameters for the request body and fields to hold the parameters from the response.&lt;/p>
-&lt;p>In the request body there are five parameters which need to be populated, the grant_type, client_id, client_secret, redirect_url and refresh token. Each of these parameters get a corresponding field.&lt;/p>
-&lt;p>In the response there are five fields as well, the Access token, Token type, expiry time, Refresh token and creation time. The only fields I require are the Access Token, expiry and creation times. Each field has a corresponding field.&lt;/p>
-&lt;p>Separately, I have gotten the Access Token so I can enter these details into the designer directly.&lt;/p>
-&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img">&lt;/p>
-&lt;p>Create a button called &lt;strong>Refresh&lt;/strong>. Within this button there are three buttons.&lt;/p>
-&lt;p>\1. &lt;strong>Set Form Field&lt;/strong> - Clear the Access Token field.&lt;/p>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>When creating a &lt;strong>REST Service datasource&lt;/strong> that uses OAuth for authentication, you may want to create a &amp;lsquo;refresh functionality&amp;rsquo; within Kianda. This is achieved by creating a &lt;strong>process&lt;/strong> and scheduling the process to run before the Access Token expires.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;h3 id="create-a-datasource">Create a datasource&lt;/h3>
+&lt;p>First you will need to create the &lt;strong>datasource&lt;/strong> to connect to the application, for example, creating a &lt;strong>REST Service&lt;/strong> with &lt;strong>two REST Methods&lt;/strong>. The method titled &lt;strong>Get/Refresh Auth Token&lt;/strong> will be used to refresh the Access Token with the scheduled task. For more information on how to create &lt;strong>REST Services&lt;/strong> go to the &lt;a href="docs/platform/connectors/rest/">REST Service page&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sample-rest-service.gif" alt="Sample REST service">&lt;/p>
+&lt;p>There are five parameters to pass into the request body: &lt;code>grant_type&lt;/code>, &lt;code>client_id&lt;/code>, &lt;code>client_secret&lt;/code>, &lt;code>redirect_url&lt;/code> and &lt;code>refresh token&lt;/code>, shown below as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/refresh-token-body.jpg" alt="Get/Refresh Auth Token">&lt;/p>
+&lt;p>These parameters need to be &amp;lsquo;held&amp;rsquo; in a process &amp;hellip;so that???? see &lt;a href="#create-a-process">Create a process&lt;/a>.&lt;/p>
+&lt;h3 id="create-a-process">Create a process&lt;/h3>
+&lt;p>Once a datasource is created, a process is created which will contain fields for the parameters for the request body, and will hold fields from the response parameters.&lt;/p>
+&lt;p>As shown in the image above there are five parameters in the request body which need to be populated, and &lt;strong>each of these parameters must correspond to a field&lt;/strong> in a process.&lt;/p>
+&lt;p>In the response body there are five parameters : &lt;code>access_token&lt;/code>, &lt;code>token_type&lt;/code>, &lt;code>expires_in&lt;/code>, &lt;code>refresh_token&lt;/code> and &lt;code>created_at&lt;/code>, although only &lt;code>access_token&lt;/code>, &lt;code>expires_in&lt;/code> and &lt;code>created_at&lt;/code> is needed. &lt;strong>&lt;strong>&lt;strong>&lt;strong>? Separately, I have gotten the Access Token so I can enter these details into the designer directly.&lt;/strong>&lt;/strong>&lt;/strong>&lt;/strong>*?&lt;/p>
+&lt;p>A form is created using &lt;a href="docs/platform/application-designer/designer/">Kianda Designer&lt;/a> with &lt;strong>textbox fields&lt;/strong> as well as a button called &lt;strong>Refresh&lt;/strong> as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/parameters-as-fields.jpg" alt="Response parameters corresponding to form fields to hold values">&lt;/p>
+&lt;h4 id="form-rules">Form rules&lt;/h4>
+&lt;p>Rules are applied to both the AccessToken textbox field and the Refresh button as follows:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On the &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Data rule&lt;/strong> &amp;gt; &lt;strong>Set Form Field&lt;/strong> which will be used to clear the AccessToken field. Map a &amp;lsquo;blank&amp;rsquo; value to the Access Token field as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/clear-access-token.jpg" alt="Set form field rule to Clear Access Token field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On the same &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Data rule&lt;/strong> &amp;gt; &lt;strong>Create item&lt;/strong> which will be used to invoke the REST Service to get a new token and map the response back to the process.&lt;/p>
+&lt;ul>
+&lt;li>Within the rule, select the datasource created within &lt;a href="#create-a-datasource">Create a datasource&lt;/a>, in the example below &amp;lsquo;Sample Rest Service&amp;rsquo;.&lt;/li>
+&lt;/ul>
+&lt;img src="https://docs.kianda.com/images/get-new-token.jpg" alt="Create item rule to get a new token and map response back to a Kianda process" style="zoom:80%;" />
+&lt;/li>
+&lt;li>
+&lt;p>sdf&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>&lt;strong>2.&lt;/strong> &lt;strong>Create Item –&lt;/strong> This rule will invoke the REST Service and map the response back to the process.&lt;/p>
 &lt;p>&lt;strong>a.&lt;/strong> Click on the Select data source button. In the following dialog box select the &lt;strong>Rest Service&lt;/strong> and select the &lt;strong>Get/Refresh Auth Token REST Method.&lt;/strong>&lt;/p>
 &lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img">&lt;/p>
