@@ -234,9 +234,28 @@ You can create cascading filters by connecting them together using the Widget co
 Following the above example of country and city filters, follow the steps below to create a cascading filter. 
 
 1. In your dashboard, create a **Country** and a **City** filter.
+
 2. For the **Filter option**, select **Data source**.
+
 3. For the country filter, select the datasource which contains the list of all your countries. For the city filter, select the datasource which contains all your cities.
-4. For the two filters to be 
+
+4. For the two filters to be cascading, we need to add a connection to the FIRST (Country) filter. Open the settings to the country filter and click on add connection.
+
+5. In the filter connection dialog, select your SECOND(City) filter.
+
+   ![Countries/Cities list](/images/city-filter.jpg)
+
+6. In the filter connection dialog, click on **datasource filter**.
+
+7. In the edit conditions dialog, Click on **add a condition group**.
+
+8. The left drop-down list represents values you can pull from the connecting filter (see step 5) and the Right drop-down represents the value from the original filter (Country, see step 4).
+
+   ![Countries/Cities list](/images/cascading-filter.jpg)
+
+9. Click **OK** on every dialog box to confirm your settings. you can now see the cascading drop-down list.
+
+   
 
 ## How to edit Filter widgets
 
