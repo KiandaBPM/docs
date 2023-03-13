@@ -1477,10 +1477,35 @@ hide_summary: true -->
 &lt;p>&lt;img src="https://docs.kianda.com/images/country-city-list.jpg" alt="Countries/Cities list">&lt;/p>
 &lt;p>Following the above example of country and city filters, follow the steps below to create a cascading filter.&lt;/p>
 &lt;ol>
-&lt;li>In your dashboard, create a &lt;strong>Country&lt;/strong> and a &lt;strong>City&lt;/strong> filter.&lt;/li>
-&lt;li>For the &lt;strong>Filter option&lt;/strong>, select &lt;strong>Data source&lt;/strong>.&lt;/li>
-&lt;li>For the country filter, select the datasource which contains the list of all your countries. For the city filter, select the datasource which contains all your cities.&lt;/li>
-&lt;li>For the two filters to be&lt;/li>
+&lt;li>
+&lt;p>In your dashboard, create a &lt;strong>Country&lt;/strong> and a &lt;strong>City&lt;/strong> filter.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For the &lt;strong>Filter option&lt;/strong>, select &lt;strong>Data source&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For the country filter, select the datasource which contains the list of all your countries. For the city filter, select the datasource which contains all your cities.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>For the two filters to be cascading, we need to add a connection to the FIRST (Country) filter. Open the settings to the country filter and click on add connection.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the filter connection dialog, select your SECOND(City) filter.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/city-filter.jpg" alt="Countries/Cities list">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the filter connection dialog, click on &lt;strong>datasource filter&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the edit conditions dialog, Click on &lt;strong>add a condition group&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The left drop-down list represents values you can pull from the connecting filter (see step 5) and the Right drop-down represents the value from the original filter (Country, see step 4).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/cascading-filter.jpg" alt="Countries/Cities list">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;strong>OK&lt;/strong> on every dialog box to confirm your settings. you can now see the cascading drop-down list.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h2 id="how-to-edit-filter-widgets">How to edit Filter widgets&lt;/h2>
 &lt;p>To edit a &lt;strong>Filter widget&lt;/strong> on a dashboard:&lt;/p>
