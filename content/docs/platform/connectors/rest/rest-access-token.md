@@ -30,45 +30,41 @@ Once a datasource is created, a process is created which will contain fields for
 
 As shown in the image above there are five parameters in the request body which need to be populated, and **each of these parameters must correspond to a field** in a process. 
 
-In the response body there are five parameters : `access_token`, `token_type`, `expires_in`, `refresh_token` and `created_at`, although only `access_token`, `expires_in` and `created_at` is needed. ********? Separately, I have gotten the Access Token so I can enter these details into the designer directly.*********?
+In the response body there are five parameters : `access_token`, `token_type`, `expires_in`, `refresh_token` and `created_at`, although only `access_token`, `expires_in` and `created_at` is needed. ********? Separately, I have gotten the Access Token so I can enter these details into the designer directly. How*********?
 
 A form is created using [Kianda Designer](docs/platform/application-designer/designer/) with **textbox fields** as well as a button called **Refresh** as follows:
 
 ![Response parameters corresponding to form fields to hold values](/images/parameters-as-fields.jpg)
 
-
+Form rules are applied to fields in the form in the next section.
 
 #### Form rules ####
 
 Rules are applied to both the AccessToken textbox field and the Refresh button as follows:
 
-1. On the **Refresh button** add a **Data rule** > **Set Form Field** which will be used to clear the AccessToken field. Map a 'blank' value to the Access Token field as follows:
+1. On the **Refresh button** add a **Data rule** > **Set Form Field** which will be used to clear the AccessToken field. Give the rule a title for example 'Clear Access Token' and map a 'blank' value to the Access Token field as shown below:
 
    ![Set form field rule to Clear Access Token field](/images/clear-access-token.jpg)
 
-2. On the same **Refresh button** add a **Data rule** > **Create item** which will be used to invoke the REST Service to get a new token and map the response back to the process. 
+2. On the **Refresh button** add a **Data rule** > **Create item** which will be used to invoke the REST Service to get a new token and map the response back to the process. 
 
-   - Within the rule, select the datasource created within [Create a datasource](#create-a-datasource), in the example below 'Sample Rest Service'.
+   - Within the rule, click on **Select data source** and select the datasource created within [Create a datasource](#create-a-datasource), in the example on this page, 'Sample Rest Service'.
 
-   <img src="/images/get-new-token.jpg" alt="Create item rule to get a new token and map response back to a Kianda process" style="zoom:80%;" />
+   - Then select the 'Get/Refresh Auth Token REST Method' as shown below.
 
-3. sdf
+     ![Selecting Get/Refresh Auth Token REST Method in Sample REST Service data source](/images/select-rest-method.jpg)
 
-**2.**   **Create Item –** This rule will invoke the REST Service and map the response back to the process.
+   - Under **Input mapping** map the values from the process into the request body. The left-hand column, **Form field or text**, represents the fields within the process or hard coded values. The right-hand column, **Data source field**, represents the values within the **REST Service,** be it the request header, request body, response header or response body**.** For example choose the form field such as grant_type and then in the data source field drill down to the value you want from the REST method. 
 
-**a.**   Click on the Select data source button. In the following dialog box select the **Rest Service** and select the **Get/Refresh Auth Token REST Method.**
+     <img src="/images/select-data-source-field.jpg" alt="Selecting data source field" style="zoom:80%;" />
 
-![img](file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+   - In addition to the parameters defined with the **REST Service** the **urlPath** can be defined in the process and passed into the datasource. Map the form fields `grant_type`, `client_id`, `client_secret`, `redirect_url` and `refresh token`, into the form fields. 
 
-b.   In the Input mapping, map the values from the process into the request body. The left-hand column, Form field or text, represents the fields within the process or hard coded values. The right-hand column, Data source field, represent the values within the **REST Service,** be it the request header, request body, response header or response body**.** In addition to the parameters defined with the **REST Service** the **urlPath** can be defined in the process and passed into the datasource.
+     <img src="/images/get-new-token.jpg" alt="Create item rule to get a new token and map response back to a Kianda process" style="zoom:80%;" />
 
-![img](file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg)
+   - The **On Success Mapping section** is used to **map the result from the API call back into the process**. Map `access_token`, `refresh_token`, `expires_in` and `created_at`, to the relative form fields. 
 
-![img](file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image011.png)
-
-c.    The On Success Mapping section is used to map the result from the API call back into the Process. The left-hand column, Form field or text, represents the fields within the process or hard coded values. The right-hand column, Data source field, represent the values within the **REST Service,** be it the request header, request body, response header or response body
-
-![img](file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg)
+3. The 
 
 \3.   The last rule must be a save rule.
 
