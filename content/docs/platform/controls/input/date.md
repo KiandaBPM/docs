@@ -29,16 +29,15 @@ The Date field has a small calendar icon on the right hand side - when the user 
 
 To edit a **Date field**:
 
-1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png))
+1. Select the field (by either clicking on the field title or on the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
+
 2. Click on the **Edit field** button (Pen icon) ![Edit field button](/images/penicon.png). 
 
-![Select date field to edit](/images/select-date-field-to-edit.jpg)
+   ![Select date field to edit](/images/select-date-field-to-edit.jpg)
 
 3. The **Edit field** dialog box will open, enabling you to choose from a range of options.
 
-![Edit date field dialog box](/images/edit-date-field-dialog-box2.jpg)
-
-
+   ![Edit date field dialog box](/images/edit-date-field-dialog-box3.png)
 
 4. **Title** - you can change the title of the date field.
 
@@ -50,9 +49,11 @@ To edit a **Date field**:
 
 8. **Display format** - you can choose whether the date field shows the date only or the date and time.
 
-9. **Adjust to user timezone** - you can select this if you want the date field to adjust to the time zone of the form user.
+9. **Allow manual entry of date format?** - choosing yes will allow you to manually type in the date into the field, whereas choosing no will only allow you to utilise the date drop-down feature.
 
-10. **Set default date onload** - if you choose '**Yes**', this means that the date field will automatically be populated (with a date stamp) when a user opens the form to start completing it; by default, the date that will be inserted is today's date. If you choose '**No**', then the user will need to manually complete the date field. 
+10. **Adjust to user timezone** - you can select this if you want the date field to adjust to the time zone of the form user.
+
+11. **Set default date onload** - if you choose '**Yes**', this means that the date field will automatically be populated (with a date stamp) when a user opens the form to start completing it; by default, the date that will be inserted is today's date. If you choose '**No**', then the user will need to manually complete the date field. 
 
     If you choose 'Yes', two additional options then appear in the dialog box: 
 
@@ -65,10 +66,11 @@ To edit a **Date field**:
 
 To move a **Date field**, simply
 
-1.  Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
+1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png).
+
 2. Drag and drop the field wherever you want to move it to within your form.
 
-![Date field drag handle](/images/move-date-field-drag-handle.jpg)
+   ![Date field drag handle](/images/move-date-field-drag-handle.jpg)
 
 To delete a **Date field** from your form:
 

@@ -58,7 +58,7 @@ To help you plan your process, go to [Plan your process](/docs/getting-started/c
 
    ***Add new process dialog box***
 
-   ![Create a process](/images/createprocess2.png)
+   ![Create a process](/images/createprocess3.png)
 
    - **Title** - the title for your process
 
@@ -66,9 +66,11 @@ To help you plan your process, go to [Plan your process](/docs/getting-started/c
 
    - **Description** - a short description for your process
 
-   - **Group** - type in a name of a new group or an existing group , for example 'Training' to create a 'folder' for your processes, see examples below.
+   - **Group** - you can click on the fields drop-down button ![drop-down-button](/images/drop-down-btn.png) to browse for existing groups to add your new process to or alternatively, you can select **Create new group** to create a new folder group for your process to go in. If Create new group is selected, a field **New group name** will be displayed where you will enter the name of the new group. See below an example of creating a new group labelled 'Training'.
 
-     ![Process group examples](/images/process-groups.jpg)
+     ![creating a new group](/images/new-group.png)
+
+     ![Process group examples](/images/process-groups2.png)
 
    - **Administrators** - these are **process administrators** or people who will be able to **change the process design**. Process administrators must have the role **administrator** or **design business process** so that they can access **Designer** to modify the process design. Choose from **Users** and/or **Groups** in the drop-down list, or leave blank to allow all those with an administrator role, to have access to this process design. 
 
@@ -361,7 +363,7 @@ Like the [cascading drop-down list](/docs/platform/application-designer/#cascadi
 - **Hide form tab and left nav** - This is self-explanatory, yes you can hide the default navigation elements.
 
 Once you have started creating elements in Kianda forms it is easy to replicate elements and make process design happen even faster, see [Cloning](#cloning) below.
-  
+
 
 ## Cloning
 
