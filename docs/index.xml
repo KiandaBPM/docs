@@ -495,15 +495,17 @@ Your browser does not support the video tag.
 &lt;h3 id="how-to-edit-move-and-delete-date-fields">How to edit, move and delete Date fields&lt;/h3>
 &lt;p>To edit a &lt;strong>Date field&lt;/strong>:&lt;/p>
 &lt;ol>
-&lt;li>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">)&lt;/li>
-&lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>Select the field (by either clicking on the field title or on the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/select-date-field-to-edit.jpg" alt="Select date field to edit">&lt;/p>
-&lt;ol start="3">
-&lt;li>The &lt;strong>Edit field&lt;/strong> dialog box will open, enabling you to choose from a range of options.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/edit-date-field-dialog-box2.jpg" alt="Edit date field dialog box">&lt;/p>
-&lt;ol start="4">
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Edit field&lt;/strong> dialog box will open, enabling you to choose from a range of options.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-date-field-dialog-box3.png" alt="Edit date field dialog box">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - you can change the title of the date field.&lt;/p>
 &lt;/li>
@@ -518,6 +520,9 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Display format&lt;/strong> - you can choose whether the date field shows the date only or the date and time.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Allow manual entry of date format?&lt;/strong> - choosing yes will allow you to manually type in the date into the field, whereas choosing no will only allow you to utilise the date drop-down feature.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Adjust to user timezone&lt;/strong> - you can select this if you want the date field to adjust to the time zone of the form user.&lt;/p>
@@ -540,10 +545,14 @@ Your browser does not support the video tag.
 &lt;/ol>
 &lt;p>To move a &lt;strong>Date field&lt;/strong>, simply&lt;/p>
 &lt;ol>
-&lt;li>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/li>
-&lt;li>Drag and drop the field wherever you want to move it to within your form.&lt;/li>
-&lt;/ol>
+&lt;li>
+&lt;p>Select the field&amp;rsquo;s &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Drag and drop the field wherever you want to move it to within your form.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/move-date-field-drag-handle.jpg" alt="Date field drag handle">&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>To delete a &lt;strong>Date field&lt;/strong> from your form:&lt;/p>
 &lt;ol>
 &lt;li>Select the field (by either clicking on the field&amp;rsquo;s name or its &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">).&lt;/li>

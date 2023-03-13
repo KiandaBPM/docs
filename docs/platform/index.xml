@@ -66,7 +66,7 @@ Your browser does not support the video tag.
 &lt;li>
 &lt;p>Fill out the details in the &lt;strong>Add new process&lt;/strong> dialog box:&lt;/p>
 &lt;p>&lt;em>&lt;strong>Add new process dialog box&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/createprocess2.png" alt="Create a process">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/createprocess3.png" alt="Create a process">&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Title&lt;/strong> - the title for your process&lt;/p>
@@ -78,8 +78,9 @@ Your browser does not support the video tag.
 &lt;p>&lt;strong>Description&lt;/strong> - a short description for your process&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Group&lt;/strong> - type in a name of a new group or an existing group , for example &amp;lsquo;Training&amp;rsquo; to create a &amp;lsquo;folder&amp;rsquo; for your processes, see examples below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/process-groups.jpg" alt="Process group examples">&lt;/p>
+&lt;p>&lt;strong>Group&lt;/strong> - you can click on the fields drop-down button &lt;img src="https://docs.kianda.com/images/drop-down-btn.png" alt="drop-down-button"> to browse for existing groups to add your new process to or alternatively, you can select &lt;strong>Create new group&lt;/strong> to create a new folder group for your process to go in. If Create new group is selected, a field &lt;strong>New group name&lt;/strong> will be displayed where you will enter the name of the new group. See below an example of creating a new group labelled &amp;lsquo;Training&amp;rsquo;.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/new-group.png" alt="creating a new group">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/process-groups2.png" alt="Process group examples">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Administrators&lt;/strong> - these are &lt;strong>process administrators&lt;/strong> or people who will be able to &lt;strong>change the process design&lt;/strong>. Process administrators must have the role &lt;strong>administrator&lt;/strong> or &lt;strong>design business process&lt;/strong> so that they can access &lt;strong>Designer&lt;/strong> to modify the process design. Choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> in the drop-down list, or leave blank to allow all those with an administrator role, to have access to this process design.&lt;/p>
