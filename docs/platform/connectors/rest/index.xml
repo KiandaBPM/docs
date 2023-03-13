@@ -11,35 +11,44 @@
 &lt;h3 id="create-a-process">Create a process&lt;/h3>
 &lt;p>Once a datasource is created, a process is created which will contain fields for the parameters for the request body, and will hold fields from the response parameters.&lt;/p>
 &lt;p>As shown in the image above there are five parameters in the request body which need to be populated, and &lt;strong>each of these parameters must correspond to a field&lt;/strong> in a process.&lt;/p>
-&lt;p>In the response body there are five parameters : &lt;code>access_token&lt;/code>, &lt;code>token_type&lt;/code>, &lt;code>expires_in&lt;/code>, &lt;code>refresh_token&lt;/code> and &lt;code>created_at&lt;/code>, although only &lt;code>access_token&lt;/code>, &lt;code>expires_in&lt;/code> and &lt;code>created_at&lt;/code> is needed. &lt;strong>&lt;strong>&lt;strong>&lt;strong>? Separately, I have gotten the Access Token so I can enter these details into the designer directly.&lt;/strong>&lt;/strong>&lt;/strong>&lt;/strong>*?&lt;/p>
+&lt;p>In the response body there are five parameters : &lt;code>access_token&lt;/code>, &lt;code>token_type&lt;/code>, &lt;code>expires_in&lt;/code>, &lt;code>refresh_token&lt;/code> and &lt;code>created_at&lt;/code>, although only &lt;code>access_token&lt;/code>, &lt;code>expires_in&lt;/code> and &lt;code>created_at&lt;/code> is needed. &lt;strong>&lt;strong>&lt;strong>&lt;strong>? Separately, I have gotten the Access Token so I can enter these details into the designer directly. How&lt;/strong>&lt;/strong>&lt;/strong>&lt;/strong>*?&lt;/p>
 &lt;p>A form is created using &lt;a href="docs/platform/application-designer/designer/">Kianda Designer&lt;/a> with &lt;strong>textbox fields&lt;/strong> as well as a button called &lt;strong>Refresh&lt;/strong> as follows:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/parameters-as-fields.jpg" alt="Response parameters corresponding to form fields to hold values">&lt;/p>
+&lt;p>Form rules are applied to fields in the form in the next section.&lt;/p>
 &lt;h4 id="form-rules">Form rules&lt;/h4>
 &lt;p>Rules are applied to both the AccessToken textbox field and the Refresh button as follows:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On the &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Data rule&lt;/strong> &amp;gt; &lt;strong>Set Form Field&lt;/strong> which will be used to clear the AccessToken field. Map a &amp;lsquo;blank&amp;rsquo; value to the Access Token field as follows:&lt;/p>
+&lt;p>On the &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Data rule&lt;/strong> &amp;gt; &lt;strong>Set Form Field&lt;/strong> which will be used to clear the AccessToken field. Give the rule a title for example &amp;lsquo;Clear Access Token&amp;rsquo; and map a &amp;lsquo;blank&amp;rsquo; value to the Access Token field as shown below:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/clear-access-token.jpg" alt="Set form field rule to Clear Access Token field">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>On the same &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Data rule&lt;/strong> &amp;gt; &lt;strong>Create item&lt;/strong> which will be used to invoke the REST Service to get a new token and map the response back to the process.&lt;/p>
+&lt;p>On the &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Data rule&lt;/strong> &amp;gt; &lt;strong>Create item&lt;/strong> which will be used to invoke the REST Service to get a new token and map the response back to the process.&lt;/p>
 &lt;ul>
-&lt;li>Within the rule, select the datasource created within &lt;a href="#create-a-datasource">Create a datasource&lt;/a>, in the example below &amp;lsquo;Sample Rest Service&amp;rsquo;.&lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>Within the rule, click on &lt;strong>Select data source&lt;/strong> and select the datasource created within &lt;a href="#create-a-datasource">Create a datasource&lt;/a>, in the example on this page, &amp;lsquo;Sample Rest Service&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then select the &amp;lsquo;Get/Refresh Auth Token REST Method&amp;rsquo; as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/select-rest-method.jpg" alt="Selecting Get/Refresh Auth Token REST Method in Sample REST Service data source">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Input mapping&lt;/strong> map the values from the process into the request body. The left-hand column, &lt;strong>Form field or text&lt;/strong>, represents the fields within the process or hard coded values. The right-hand column, &lt;strong>Data source field&lt;/strong>, represents the values within the &lt;strong>REST Service,&lt;/strong> be it the request header, request body, response header or response body**.** For example choose the form field such as grant_type and then in the data source field drill down to the value you want from the REST method.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/select-data-source-field.jpg" alt="Selecting data source field" style="zoom:80%;" />
+&lt;/li>
+&lt;li>
+&lt;p>In addition to the parameters defined with the &lt;strong>REST Service&lt;/strong> the &lt;strong>urlPath&lt;/strong> can be defined in the process and passed into the datasource. Map the form fields &lt;code>grant_type&lt;/code>, &lt;code>client_id&lt;/code>, &lt;code>client_secret&lt;/code>, &lt;code>redirect_url&lt;/code> and &lt;code>refresh token&lt;/code>, into the form fields.&lt;/p>
 &lt;img src="https://docs.kianda.com/images/get-new-token.jpg" alt="Create item rule to get a new token and map response back to a Kianda process" style="zoom:80%;" />
 &lt;/li>
 &lt;li>
-&lt;p>sdf&lt;/p>
+&lt;p>The &lt;strong>On Success Mapping section&lt;/strong> is used to &lt;strong>map the result from the API call back into the process&lt;/strong>. Map &lt;code>access_token&lt;/code>, &lt;code>refresh_token&lt;/code>, &lt;code>expires_in&lt;/code> and &lt;code>created_at&lt;/code>, to the relative form fields.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>The&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;strong>2.&lt;/strong> &lt;strong>Create Item –&lt;/strong> This rule will invoke the REST Service and map the response back to the process.&lt;/p>
-&lt;p>&lt;strong>a.&lt;/strong> Click on the Select data source button. In the following dialog box select the &lt;strong>Rest Service&lt;/strong> and select the &lt;strong>Get/Refresh Auth Token REST Method.&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img">&lt;/p>
-&lt;p>b. In the Input mapping, map the values from the process into the request body. The left-hand column, Form field or text, represents the fields within the process or hard coded values. The right-hand column, Data source field, represent the values within the &lt;strong>REST Service,&lt;/strong> be it the request header, request body, response header or response body**.** In addition to the parameters defined with the &lt;strong>REST Service&lt;/strong> the &lt;strong>urlPath&lt;/strong> can be defined in the process and passed into the datasource.&lt;/p>
-&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg" alt="img">&lt;/p>
-&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image011.png" alt="img">&lt;/p>
-&lt;p>c. The On Success Mapping section is used to map the result from the API call back into the Process. The left-hand column, Form field or text, represents the fields within the process or hard coded values. The right-hand column, Data source field, represent the values within the &lt;strong>REST Service,&lt;/strong> be it the request header, request body, response header or response body&lt;/p>
-&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg" alt="img">&lt;/p>
 &lt;p>\3. The last rule must be a save rule.&lt;/p>
 &lt;p>Finally; run the Process in preview mode, ensure the details you want to pass into the &lt;strong>REST Service&lt;/strong> are correct and save the process. Take note of the Process ID as this will be needed for setting up the Scheduled Task&lt;/p>
 &lt;p>&lt;strong>Create the Scheduled Task&lt;/strong>&lt;/p>
