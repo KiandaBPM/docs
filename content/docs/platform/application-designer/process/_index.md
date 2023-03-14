@@ -87,7 +87,7 @@ Before you begin, we at Kianda recommend doing some simple planning before you d
 
    - **Description** - a description of the process
 
-   - **Group** - a defined group of users for example HR Managers
+   - **Group** - a defined group of users for example HR Managers. If you choose 'Create new group', a further field **New group name** will be displayed, where you will enter the new group's name.
 
    - **Administrators** - choose from a) Users or b) Groups
 
