@@ -22,7 +22,7 @@ There are five parameters to pass into the request body: `grant_type`, `client_i
 
 ![Get/Refresh Auth Token](/images/refresh-token-body.jpg)
 
-These parameters need to be 'held' in a process ...so that???? see [Create a process](#create-a-process).
+These parameters need to be 'held' in a process ...**so that????** see [Create a process](#create-a-process).
 
 ### Create a process
 
@@ -42,7 +42,7 @@ Form rules are applied to fields in the form in the next section.
 
 Rules are applied to both the AccessToken textbox field and the Refresh button as follows:
 
-1. On the **Refresh button** add a **Data rule** > **Set Form Field** which will be used to clear the AccessToken field. Give the rule a title for example 'Clear Access Token' and map a 'blank' value to the Access Token field as shown below:
+1. On the **Refresh button** add a **Data rule** > **Set Form Field** which will be used to clear the AccessToken field. Give the rule a title for example 'Clear Access Token' and map a 'blank' value to the Access Token field **(by 'pressing space bar key'??)** as shown below:
 
    ![Set form field rule to Clear Access Token field](/images/clear-access-token.jpg)
 
@@ -64,9 +64,9 @@ Rules are applied to both the AccessToken textbox field and the Refresh button a
 
    - The **On Success Mapping section** is used to **map the result from the API call back into the process**. Map `access_token`, `refresh_token`, `expires_in` and `created_at`, to the relative form fields. 
 
-3. The 
+3. In addition to the parameters defined with the **REST Service** the **urlPath** can be defined in the process and passed into the datasource. **Where*********?
 
-\3.   The last rule must be a save rule.
+4. On the **Refresh button** add a **Form action rule** > **Save form** so that the details from the process are saved to the system database. The rule order then is as follows:
 
 Finally; run the Process in preview mode, ensure the details you want to pass into the **REST Service** are correct and save the process. Take note of the Process ID as this will be needed for setting up the Scheduled Task
 
