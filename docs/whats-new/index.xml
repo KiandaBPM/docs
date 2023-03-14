@@ -1,4 +1,91 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – What's new</title><link>https://docs.kianda.com/docs/whats-new/</link><description>Recent content in What's new on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/whats-new/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Release notes for Version 2.11.6</title><link>https://docs.kianda.com/docs/whats-new/v2.11.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/whats-new/v2.11.6/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – What's new</title><link>https://docs.kianda.com/docs/whats-new/</link><description>Recent content in What's new on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/whats-new/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Release notes for Version 2.11.10</title><link>https://docs.kianda.com/docs/whats-new/v2.11.10/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/whats-new/v2.11.10/</guid><description>
+&lt;blockquote>
+&lt;p>Release Notes March 2023&lt;/p>
+&lt;p>Minor release 2.11.10&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="v21110">V2.11.10&lt;/h3>
+&lt;h3 id="bug-fixes">Bug Fixes&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Description&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">Connectors can be created without a title&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Fixed filtering issues on designer and developer&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Update email token message recover password&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Filtering issues fixed for isProc datasources&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Groups can be created without trailing space&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Renames form on import if exists in destination&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">SharePoint UTC issue&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Widgets can be created with special characters&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Rule schedule is losing the ID of its targeted rule when imported&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Exporting list widget to OData sources results in 00:00:00 for created property&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Caching datasource lists connected to Kianda process data&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Boxing/Unboxing Fix and Async issue Fix&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="new-features">New Features&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>1&lt;/td>
+&lt;td>Navigating away from design with changes - If you click on the &lt;strong>Exit&lt;/strong> button to go back to the process list &lt;u>without&lt;/u> clicking on the &lt;strong>Save&lt;/strong> button you will be prompted with a dialog box detecting &lt;strong>Unsaved changes&lt;/strong> prompting you to Abandon changes if desired. Click on &lt;strong>Yes&lt;/strong> to exit &lt;strong>Designer&lt;/strong> without saving, or &lt;strong>No&lt;/strong> to exit and save.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2&lt;/td>
+&lt;td>Add Picture Button in send email rule, widget-html and rich-text - If you click on the &lt;strong>Picture&lt;/strong> button for example in the Body of a Send email rule, you will be redirected to the &lt;strong>File storage&lt;/strong> area where you can search for existing images stored in the Kianda file system, create a folder, or upload a file.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3&lt;/td>
+&lt;td>Include Custom widgets when exporting - When you click on &lt;strong>Export&lt;/strong> on the &lt;strong>Process designer&lt;/strong> page, you can now choose if you would like to include the custom widget that is associated with the selected dashboard/process within the exported Kianda file. The included custom widgets are then recognised when importing the Kianda file. To learn more about this, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/#exporting-processes">Exporting processes&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/#importing-processes">Importing processes&lt;/a>.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Docs: Release notes for Version 2.11.6</title><link>https://docs.kianda.com/docs/whats-new/v2.11.6/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/whats-new/v2.11.6/</guid><description>
 &lt;blockquote>
 &lt;p>Release Notes September 2022&lt;/p>
 &lt;p>Minor release 2.11.6&lt;/p>

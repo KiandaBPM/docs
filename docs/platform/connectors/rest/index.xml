@@ -7,7 +7,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/sample-rest-service.gif" alt="Sample REST service">&lt;/p>
 &lt;p>There are five parameters to pass into the request body: &lt;code>grant_type&lt;/code>, &lt;code>client_id&lt;/code>, &lt;code>client_secret&lt;/code>, &lt;code>redirect_url&lt;/code> and &lt;code>refresh token&lt;/code>, shown below as follows:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/refresh-token-body.jpg" alt="Get/Refresh Auth Token">&lt;/p>
-&lt;p>These parameters need to be &amp;lsquo;held&amp;rsquo; in a process &amp;hellip;so that???? see &lt;a href="#create-a-process">Create a process&lt;/a>.&lt;/p>
+&lt;p>These parameters need to be &amp;lsquo;held&amp;rsquo; in a process &amp;hellip;&lt;strong>so that????&lt;/strong> see &lt;a href="#create-a-process">Create a process&lt;/a>.&lt;/p>
 &lt;h3 id="create-a-process">Create a process&lt;/h3>
 &lt;p>Once a datasource is created, a process is created which will contain fields for the parameters for the request body, and will hold fields from the response parameters.&lt;/p>
 &lt;p>As shown in the image above there are five parameters in the request body which need to be populated, and &lt;strong>each of these parameters must correspond to a field&lt;/strong> in a process.&lt;/p>
@@ -19,7 +19,7 @@
 &lt;p>Rules are applied to both the AccessToken textbox field and the Refresh button as follows:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On the &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Data rule&lt;/strong> &amp;gt; &lt;strong>Set Form Field&lt;/strong> which will be used to clear the AccessToken field. Give the rule a title for example &amp;lsquo;Clear Access Token&amp;rsquo; and map a &amp;lsquo;blank&amp;rsquo; value to the Access Token field as shown below:&lt;/p>
+&lt;p>On the &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Data rule&lt;/strong> &amp;gt; &lt;strong>Set Form Field&lt;/strong> which will be used to clear the AccessToken field. Give the rule a title for example &amp;lsquo;Clear Access Token&amp;rsquo; and map a &amp;lsquo;blank&amp;rsquo; value to the Access Token field &lt;strong>(by &amp;lsquo;pressing space bar key&amp;rsquo;??)&lt;/strong> as shown below:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/clear-access-token.jpg" alt="Set form field rule to Clear Access Token field">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -46,10 +46,12 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>The&lt;/p>
+&lt;p>In addition to the parameters defined with the &lt;strong>REST Service&lt;/strong> the &lt;strong>urlPath&lt;/strong> can be defined in the process and passed into the datasource. &lt;strong>Where&lt;/strong>*******?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On the &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Form action rule&lt;/strong> &amp;gt; &lt;strong>Save form&lt;/strong> so that the details from the process are saved to the system database. The rule order then is as follows:&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>\3. The last rule must be a save rule.&lt;/p>
 &lt;p>Finally; run the Process in preview mode, ensure the details you want to pass into the &lt;strong>REST Service&lt;/strong> are correct and save the process. Take note of the Process ID as this will be needed for setting up the Scheduled Task&lt;/p>
 &lt;p>&lt;strong>Create the Scheduled Task&lt;/strong>&lt;/p>
 &lt;p>The final step will be to create the scheduled task that will run before the refresh token expires. Navigate to the &lt;strong>Scheduled tasks&lt;/strong> within the &lt;strong>Administration&lt;/strong> section in the site. Click on the &lt;strong>Schedule a task&lt;/strong> button and fill in the dialog box.&lt;/p>
