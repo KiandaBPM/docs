@@ -957,20 +957,20 @@ hide_summary: true -->
 &lt;p>You can create four types of filters:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter">Manual/datasource filter&lt;/a> - for these types of filters, you can enter your filter options manually or pull your filter options from a data source. There are two styles of manual/datasource filter:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Dropdown list.&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Radio list.&lt;/strong>&lt;/li>
-&lt;/ul>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter">Manual/datasource filter&lt;/a> - this filter will allow you to search for data by selecting an option which can be entered in &lt;strong>manually&lt;/strong> or &lt;strong>pulled from a datasource&lt;/strong>. By entering options, you are limiting the type of filtering by a user oppose to a free text filter which has no limitations. There are two styles of manual/datasource filters; A &lt;strong>Dropdown&lt;/strong> or a &lt;strong>Radio&lt;/strong> list:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/manual-entry-filter.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-a-date-range-filter">Date range filter&lt;/a> - with this filter you will be able to enter two sets of dates which can be then used to filter your data based on a date input.&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-a-date-range-filter">Date range filter&lt;/a> - this filter allows you to enter &lt;strong>two sets of dates&lt;/strong> which can be then used to filter your data based on a date input in a connected dashboard widget.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-range-filter.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-free-text-filter">Free text filter&lt;/a> - is used to filter data by typing text freely into the search bar.&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-free-text-filter">Free text filter&lt;/a> - this filter allows you to filter data in a connected dashboard widget by &lt;strong>typing text freely&lt;/strong> into the search bar. &lt;strong>Note&lt;/strong> - by default you are &lt;strong>required&lt;/strong> to connect this filter to another dashboard widget so that the filter knows which widget your are searching for data.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/free-text-filter.jpg" alt="free text filter">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-current-user-filter">Current user filter&lt;/a> - filter which will be automatically set to the currently logged in user.&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-current-user-filter">Current user filter&lt;/a> - this filter allows you to pull a &lt;strong>profile attribute&lt;/strong> from the &lt;strong>currently logged in user&lt;/strong> which can be then used to filter data in another dashboard widget. For example you can pull the &lt;strong>display name&lt;/strong> attribute form the user and based on that, you could filter data in other widgets that belong to the current user. To learn more about users and profile attributes visit &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/current-user-filter.jpg" alt="Current user filter">&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -1036,187 +1036,175 @@ hide_summary: true -->
 &lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the Filter settings dialog, select &lt;strong>Dropdown list&lt;/strong> or &lt;strong>Radio list&lt;/strong>.&lt;/p>
+&lt;p>In the Filter settings dialog, select &lt;strong>Dropdown list&lt;/strong> or &lt;strong>Radio list&lt;/strong> as your &lt;strong>Filter type&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Filter options&lt;/strong> select from:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Manual entries&lt;/strong> - this option will provide you a text box in which you can specify your filter options. Each option need to be on a separate line of the text box, see image below:&lt;/p>
+&lt;p>&lt;strong>Manual entries&lt;/strong> - this option will provide you a text box in which you can specify your filter options. Each option needs to be on a separate line of the text box, see image below:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/filter-widget-manualjpg.jpg" alt="manual entries filter option">&lt;/p>
-&lt;p>Your filter will display those filter options in a different manner depeding on the style you chose: &lt;strong>Dropdown&lt;/strong> or &lt;strong>Radio list&lt;/strong>.&lt;/p>
+&lt;p>Your filter will display filter options in a different manner depending on the style you choose: &lt;strong>Dropdown&lt;/strong> or &lt;strong>Radio list&lt;/strong>. Dropdown list displays one additional setting (explained below).&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/dropdown-radio-lists-filter.jpg" alt="Dropdown vs Radio list filter">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Data source&lt;/strong> - once you select this option, additional settings will apear:&lt;/p>
+&lt;p>&lt;strong>Data source&lt;/strong> - once you select this option, additional settings will appear:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/filter-widget-datasource.jpg" alt="datasource entries">&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Datasource button&lt;/strong> - this button will allow you to connect to datasource which will pull the filter options from. For example, you can connect to a SharePoint list that contains all your filter options or any other datasource that has been created within your system. See &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for a full list of datasources you can create.&lt;/li>
-&lt;li>&lt;strong>Edit condtition button&lt;/strong> - this button allows you to create a condition to pull data from the datasource, once the condition is matched the data will be pulled from the datasource. See&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Datasource button&lt;/strong> - this button will allow you to connect to datasource which will allow you to pull the filter options. For example, you can connect to a SharePoint list that contains all your filter options or any other datasource that has been created within your system. See &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for a full list of datasources you can create.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Edit condition button&lt;/strong> - this button allows you to create a condition to pull data from the datasource, once the condition is matched the data will be pulled from the datasource. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> to learn more.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Display field &amp;amp; Value field&lt;/strong> - &lt;strong>Display field&lt;/strong> will be the option &lt;strong>visible&lt;/strong> to the user while the &lt;strong>Value field&lt;/strong> will be the &lt;strong>actual value&lt;/strong> when the option is selected. For example, if you are pulling your filter options form a SharePoint list which has multiple columns, you can select one of those columns to be displayed for the user and use another column for the value. To further extend the example, you could have the &lt;strong>display field&lt;/strong> set to a &lt;strong>username (title)&lt;/strong> and in the background pull the users &lt;strong>role as the value.&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/display-value-fields.jpg" alt="Display and value fields">&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Depending on you choice, a &lt;strong>dropdown&lt;/strong> list will have an additional option in the settings, a &lt;strong>Filter mode.&lt;/strong> Filter mode will eaither filter your target that starts with the selected option or contains the selected option.&lt;/p>
+&lt;p>If you choose to create &lt;strong>Dropdown list&lt;/strong> filter, an additional option in the settings will be required to fill out:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Filter mode&lt;/strong> - this options will allow you to search either the beginning of a string by selecting &lt;strong>Starts With&lt;/strong> or by selecting &lt;strong>Contains&lt;/strong>, the filter will search if the chosen option is contained in a string.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>You can set a default value of your filter by typing one of your options into the &lt;strong>Default value&lt;/strong> text box. This means that whenever your dashboard is loaded, the text you enter in the &lt;strong>Default value&lt;/strong> will be automatically set as the default option.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable query string - needs and explanation and a link&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add connection&lt;/strong> to connect your filter to another dashboard widget which you want to target while filtering data based on the &lt;strong>option&lt;/strong> selected.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/filter-connection.jpg" alt="filter connection">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Click on the &lt;strong>Widget&lt;/strong> dropdown list to select an existing dashboard widget. Once a widget is selected a &lt;strong>Data source filter&lt;/strong> button will appear.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Data source filter button&lt;/strong> is used to create a condition. Once this condition is met, the connected widget will then display data that matches the condition.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/filter-condition.jpg" alt="filter condition">&lt;/p>
+&lt;p>​&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>left dropdown&lt;/strong> is the value from the widget you&amp;rsquo;re connecting to, while the &lt;strong>right most textbox&lt;/strong> is the value chosen in the filter.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Confirm your settings of the filter by clicking &lt;strong>OK&lt;/strong> on all dialog boxes and click on save dashboard button to see all changes to the filter widget.&lt;img src="https://docs.kianda.com/images/save-dashboard.jpg" alt="save dashboard button">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-create-a-date-range-filter">How to create a Date range filter&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the Filter settings dialog, select &lt;strong>Date range&lt;/strong> as your &lt;strong>Filter type&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the filter options select a &lt;strong>Date format&lt;/strong>, once your date range filter is set up, the filter will allow you to:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Date&lt;/strong> - allows you to select a date from a date picker.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Date and time&lt;/strong> - allows you to select a date from a date picker and a time from a time picker.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date&amp;amp;time-filter.jpg" alt="date and time filter difference">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add connection&lt;/strong> to connect your filter to another dashboard widget which you want to target while filtering data based on the &lt;strong>date&lt;/strong> selected.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/filter-connection.jpg" alt="filter connection">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Click on the &lt;strong>Widget&lt;/strong> dropdown list to select an existing dashboard widget. Once a widget is selected a &lt;strong>Data source filter&lt;/strong> button will appear.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Data source filter button&lt;/strong> is used to create a condition. Once this condition is met, the connected widget will then display data that matches the condition. &lt;strong>Note&lt;/strong> that because you are using a date filter, the widget you are targeting must contain a date value. See the below image of a condition that allows us to filter a &lt;strong>last modified date&lt;/strong> field (available in common fields of each process instance) between the range of our two inputs on &lt;strong>List widget&lt;/strong> which is attached to a process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/between-date-range.jpg" alt="filter condition">&lt;/p>
+&lt;p>In the image below, you can see that the list only displays process instances between the dates we provided in the date filter.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/date-range-example.jpg" alt="Date range example">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Confirm your settings of the filter by clicking &lt;strong>OK&lt;/strong> on all dialog boxes and click on save dashboard button to see all changes to the date filter widget.&lt;img src="https://docs.kianda.com/images/save-dashboard.jpg" alt="save dashboard button">&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h3 id="how-to-create-free-text-filter">How to create Free text filter&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the Filter settings dialog, select &lt;strong>Free text&lt;/strong> as your &lt;strong>Filter type&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can set a default value of your filter by typing one into the &lt;strong>Default value&lt;/strong> text box. This means that whenever your dashboard is loaded, the text you enter in the &lt;strong>Default value&lt;/strong> will be automatically set as the default option. If you don&amp;rsquo;t need a default value, you can also create a placeholder by typing text into the placeholder provided:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/free-text-filter-placeholder.jpg" alt="save dashboard button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable query string - needs and explanation and a link&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add connection&lt;/strong> to connect your filter to another dashboard widget which you want to target while filtering data based on the &lt;strong>free text&lt;/strong> provided by a user.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/filter-connection.jpg" alt="filter connection">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Click on the &lt;strong>Widget&lt;/strong> dropdown list to select an existing dashboard widget. Once a widget is selected a &lt;strong>Data source filter&lt;/strong> button will appear.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Data source filter button&lt;/strong> is used to create a condition. Once this condition is met, the connected widget will then display data that matches the condition.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/filter-condition.jpg" alt="filter condition">&lt;/p>
+&lt;p>​&lt;/p>
+&lt;ul>
+&lt;li>The &lt;strong>left dropdown&lt;/strong> is the value from the widget you&amp;rsquo;re connecting to, while the &lt;strong>right most textbox&lt;/strong> is the &lt;strong>free text value&lt;/strong>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Confirm your settings of the filter by clicking &lt;strong>OK&lt;/strong> on all dialog boxes and click on save dashboard button to see all changes to the filter widget.&lt;img src="https://docs.kianda.com/images/save-dashboard.jpg" alt="save dashboard button">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="heading">&lt;/h3>
 &lt;h3 id="how-to-create-current-user-filter">How to create Current user filter&lt;/h3>
 &lt;ol>
 &lt;li>
-&lt;p>A &lt;strong>Filter settings&lt;/strong> dialog box automatically opens showing the options for the Filter widget:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-settings-dialog.jpg" alt="Dashboard Link widget Edit button links dialog box">&lt;/p>
-&lt;p>Select the options you want for your &lt;strong>Filter widget&lt;/strong>:&lt;/p>
+&lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the Filter settings dialog, select &lt;strong>Current user&lt;/strong> as your &lt;strong>Filter type&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Current user property&lt;/strong> dropdown list, select the property you want to extract as the value of your filter. To learn more about users and profile attributes visit &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/current-user-filter-property.jpg" alt="Dashboard Filter widget filter by Current User filter options">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add connection&lt;/strong> to connect your filter to another dashboard widget which you want to target while filtering data based on the &lt;strong>Current user property&lt;/strong> value.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/filter-connection.jpg" alt="filter connection">&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Filter type&lt;/strong>: You can choose the way you want the filter options to be displayed for the end user. The options are &lt;strong>Dropdown list&lt;/strong>, &lt;strong>Radio list&lt;/strong>, &lt;strong>Date range&lt;/strong>, &lt;strong>Free text&lt;/strong> or &lt;strong>Current user&lt;/strong>.&lt;/p>
+&lt;p>Click on the &lt;strong>Widget&lt;/strong> dropdown list to select an existing dashboard widget. Once a widget is selected a &lt;strong>Data source filter&lt;/strong> button will appear.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Data source filter button&lt;/strong> is used to create a condition. Once this condition is met, the connected widget will then display data that matches the condition.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/filter-condition.jpg" alt="filter condition">&lt;/p>
+&lt;p>​&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Dropdown list&lt;/strong> - Select this option if you want the filter options to be shown in a dropdown list.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Radio list&lt;/strong> - Select this option if you want the filter options to be shown in a radio list.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Date range&lt;/strong> - Select this option if you want the filter options to be shown as date ranges. If you select &lt;strong>Date range&lt;/strong> as the Filter type, you then have two filter options - &lt;strong>Date&lt;/strong> or &lt;strong>Date and time&lt;/strong>:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-date-range-options.jpg" alt="Dashboard Filter Widget date range filter options">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Free text&lt;/strong> - Select this option if you want the filter options to consist of free text.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Current user&lt;/strong> - Select this option if you want to filter by current user. If you select &lt;strong>Current user&lt;/strong> as the Filter type, you then need to choose the &lt;strong>Current user property&lt;/strong> from a drop-down list:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-current-user.jpg" alt="Dashboard Filter widget filter by Current User filter options">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Filter options&lt;/strong> - Once you have chosen the &lt;strong>Filter type&lt;/strong> you want - let&amp;rsquo;s say drop-down list - you can then decide whether the options that the end user can filter are &lt;strong>Manual entries&lt;/strong> (that you input by typing them into the box with the &amp;lsquo;Options one per line&amp;rsquo; placeholder text) or are pulled from a &lt;strong>Data source&lt;/strong>.&lt;/p>
-&lt;p>If you select &lt;strong>Data source&lt;/strong> to pull the filter options from a data source, four additional options will be shown:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-data-source.jpg" alt="Dashboard Filter widget Data source options">&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Data source&lt;/strong> - If you select &amp;lsquo;&lt;strong>Data source&lt;/strong>&amp;rsquo; for creating your filter options, next click on the &lt;strong>Data source&lt;/strong> button. The &lt;strong>Select data source&lt;/strong> dialog box automatically opens:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-select-datasource.jpg" alt="Dashboard Filter widget select datasource dialog box">&lt;/p>
-&lt;p>Select the data source you want to use by selecting one of the available Data sources listed on the left.&lt;/p>
-&lt;p>For our example, we will select &lt;strong>Kianda&lt;/strong> as our data source and then select the &amp;lsquo;Annual leave request and approval process&amp;rsquo;. We can do this by either&lt;/p>
-&lt;p>&lt;strong>(a)&lt;/strong> typing the start of this process name into the &amp;lsquo;&lt;strong>data source tree&lt;/strong>&amp;rsquo; search field and selecting it when it is displayed below it, or&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-datasource-example.jpg" alt="Dashboard Filter widget Select datasource example">&lt;/p>
-&lt;p>&lt;strong>(b)&lt;/strong> by clicking on &lt;strong>Processes&lt;/strong> to show the full list of Kianda processes and scrolling and selecting the one we want.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-datasource-process.jpg" alt="Dashboard Filter widget Select datasource Kianda process">&lt;/p>
-&lt;p>Click &lt;strong>OK&lt;/strong> when you have selected the data source you want to use. The source you selected will now be shown beneath the &lt;strong>Data source&lt;/strong> button in the &lt;strong>Filter settings&lt;/strong> dialog box.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-datasource-shown.jpg" alt="Dashboard Filter widget data source shown in Filter settings dialog box">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Edit conditions&lt;/strong> - If you want to add a condition to your filter&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Click the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/Edit_Conditions_button.jpg" alt="Edit Conditions button"> and the &lt;strong>Edit conditions&lt;/strong> dialog box will open.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click the &lt;strong>Add conditions group&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addconditions.png" alt="Dashboard Filter widget Add a conditions group button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Add the condition you want and click on &lt;strong>OK&lt;/strong>.&lt;/p>
-&lt;p>&lt;strong>Note&lt;/strong>: To see an example of adding a condition to a filter, see the &amp;lsquo;&lt;strong>Add connections&lt;/strong>&amp;rsquo; option further down.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Display field&lt;/strong> - Choose the field you want displayed as the field options.&lt;/p>
-&lt;p>In our example - setting up a Filter widget to filter annual leave requests by employee name - we chose a Kianda process as the data source for the filter options, so when we click on the Display field, we can then expand the relevant form (Request form) and select the field we want to filter by:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-display-field-example.jpg" alt="Dashboard filter widget select Display field example">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Value field&lt;/strong> - Choose the value you want displayed as the field options. Typically, the same field will be chosen as both the Display field and Value field (but you could choose different fields as needed).&lt;/p>
-&lt;p>In our example, we will select the &amp;lsquo;&lt;strong>Employee Name&lt;/strong>&amp;rsquo; field from the &amp;lsquo;Request form&amp;rsquo; in the &amp;lsquo;Annual leave request and approval process&amp;rsquo; for both the Display field and Value field:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-display-field.jpg" alt="Dashboard filter select Display field and Value field">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Filter mode&lt;/strong> - You can choose whether the filter widget displays options that &lt;strong>start with&lt;/strong> the letters or words the user types into the filter widget search box, or shows filter options that &lt;strong>contain&lt;/strong> the letters or words the user inputs.&lt;/p>
-&lt;h5 id="heading">&lt;/h5>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Default value&lt;/strong> - You can choose a Default value to appear in the Filter widget.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Enable query string&lt;/strong> - This option appears for all Filter types except for Date range and Current user.&lt;/p>
-&lt;p>To enable a query string:&lt;/p>
-&lt;ol>
-&lt;li>Select the &amp;lsquo;&lt;strong>Enable query string&lt;/strong>&amp;rsquo; checkbox.&lt;/li>
-&lt;li>Insert the &lt;strong>unique field name&lt;/strong> of the field you want to filter by into the box with the &amp;lsquo;Parameter name&amp;rsquo; placeholder text.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-enable-query-string.jpg" alt="Dashboard Filter widget Enable query string option">&lt;/p>
-&lt;p>&lt;strong>Note&lt;/strong> - You can find the unique field name by going to the form that contains the field and clicking on the &lt;strong>Edit field&lt;/strong> button to open the &lt;strong>Edit field&lt;/strong> dialog box and copying the unique field name from the &amp;lsquo;&lt;strong>Name (Unique)&lt;/strong>&amp;rsquo; field.&lt;/p>
-&lt;p>In our example, we can find the &lt;strong>unique field name&lt;/strong> we need to enable a query string by:&lt;/p>
-&lt;ol>
-&lt;li>Opening the Annual Leave process&lt;/li>
-&lt;li>Selecting the &amp;lsquo;Employee Name&amp;rsquo; field in the Annual Leave Request form - the field we want to filter by in our Filter widget.&lt;/li>
-&lt;li>Opening the &lt;strong>Edit field&lt;/strong> dialog box to find the field&amp;rsquo;s unique name:&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-uniquename.jpg" alt="Dashboard Filter widget Query string example field unique name">&lt;/p>
-&lt;ol start="4">
-&lt;li>In our &lt;strong>Filter settings&lt;/strong> dialog box, we can now select the &amp;lsquo;&lt;strong>Enable query string&lt;/strong>&amp;rsquo; checkbox and insert this unique field name into the Parameter name box - we will also select the &amp;lsquo;&lt;strong>Auto update URL&lt;/strong>&amp;rsquo; option (which will dynamically construct a URL, meaning that the URL at the top of the page will automatically change when we choose a filter option):&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-example.jpg" alt="Dashboard filter widget Enable query string example">&lt;/p>
-&lt;ol start="5">
-&lt;li>Once you complete the &lt;strong>Filter settings&lt;/strong> dialog box and click &lt;strong>OK&lt;/strong> and then click the &lt;strong>Save&lt;/strong> button in the top menu, you will now see that when you select an employee in the Filter widget, the URL at the top updates:&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-url.jpg" alt="Dashboard Filter widget enable query string Auto update URL example">&lt;/p>
-&lt;p>Setting the filter up like this to automatically update the URL when a filter option is selected, enables you to make any of the filter selections a &lt;strong>dashboard favourite&lt;/strong> page.&lt;/p>
-&lt;p>For example, we could now choose to make this filter selection - Maddy Leenane&amp;rsquo;s annual leave requests - a favourited dashboard page by clicking on the &lt;strong>Add to favourites&lt;/strong> button in the top menu and completing the &lt;strong>Add to favourite&lt;/strong> dialog box that opens:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-query-string-favourited.jpg" alt="Dashboard Filter widget enable query string auto update URL add to favourites example">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Add connections&lt;/strong> - Click on the &lt;strong>Add connections&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-filter-add-connection.jpg" alt="Dashboard Link widget Add connection button"> if you want to &lt;strong>add a filter connection to an existing widget on the dashboard&lt;/strong>, so that the data displayed in that widget is filtered based on the option selected in the Filter widget.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>The &lt;strong>Filter connection&lt;/strong> dialog box opens - click on the down arrow and select the dashboard widget you want to connect to:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-widget-connection.jpg" alt="Dashboard Filter widget Widget Filter connection dialog box">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You can then choose to add filter conditions to the widget filter connection by:&lt;/p>
-&lt;p>(a) clicking on the &lt;strong>Add filter conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-filter-add-filter-conditions.jpg" alt="Dashboard Filter widget Widget filter connection Add filter conditions button">,&lt;/p>
-&lt;p>(b) clicking the &lt;strong>Add a conditions group&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addconditions.png" alt="Dashboard Filter widget Widget filter connection Add a conditions group button"> in the &lt;strong>Edit conditions&lt;/strong> dialog box that opens, or&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-widget-connection-conditions.jpg" alt="Dashboard Filter widget Widget filter connection Edit conditions dialog box">&lt;/p>
-&lt;p>(c) completing the &lt;strong>Edit conditions&lt;/strong> dialog box to apply conditions to the widget filter connection and then clicking on &lt;strong>OK&lt;/strong>.&lt;/p>
-&lt;p>In our example, we would add a filter condition to the widget filter connection by selecting &amp;lsquo;Employee Name&amp;rsquo; in the field on the left and &amp;lsquo;Filter value&amp;rsquo; in the field on the right. This will ensure that the &amp;lsquo;Employee Name&amp;rsquo; field will display as the filter value.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-widget-connection-conditionex.jpg" alt="Dashboard Filter widget Widget connection filter condition example">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Once you have completed the &lt;strong>Filter connection&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong>. The widget you have connected to the new Filter widget will now be shown under &lt;strong>Widget connections&lt;/strong>:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-widget-connection-example.jpg" alt="Dashboard Filter widget Widget connections example">&lt;/p>
-&lt;/li>
+&lt;li>The &lt;strong>left dropdown&lt;/strong> is the value from the widget you&amp;rsquo;re connecting to, while the &lt;strong>right most textbox&lt;/strong> is the &lt;strong>free text value&lt;/strong>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished choosing the options you want for your &lt;strong>Filter widget&lt;/strong> in the &lt;strong>Filter settings&lt;/strong> dialog box (or click on &lt;strong>Close&lt;/strong> to exit the &lt;strong>Edit link&lt;/strong> dialog box without saving).&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the top dashboard menu to save the insertion of the new Filter widget.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Your new &lt;strong>Filter widget&lt;/strong> will now be displayed on your dashboard.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Our example of a &lt;strong>Filter widget&lt;/strong> for the &amp;lsquo;Annual Leave&amp;rsquo; dashboard - where the filter allows users to filter the Annual Leave Request records in the existing List Widget by employee name - could look like this:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-example.jpg" alt="Dashboard Filter widget example">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When the user clicks on the down arrow button in the Filter widget, the names of employees who have submitted an Annual Leave Request are shown in a drop-down list.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The user can then select an employee name from the drop-down list and the List widget to the right will automatically update to only show Annual Leave Request records (process instances) submitted by that employee. This is because we used the &lt;strong>Widget connection&lt;/strong> option to connect that List widget to the new Filter widget.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-filter-example2.jpg" alt="Dashboard Filter widget example connected to a List widget">&lt;/p>
-&lt;/li>
-&lt;/ul>
+&lt;p>Confirm your settings of the filter by clicking &lt;strong>OK&lt;/strong> on all dialog boxes and click on save dashboard button to see all changes to the filter widget.&lt;img src="https://docs.kianda.com/images/save-dashboard.jpg" alt="save dashboard button">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-filter-widgets">How to edit Filter widgets&lt;/h3>
