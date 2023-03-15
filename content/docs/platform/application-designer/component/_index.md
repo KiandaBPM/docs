@@ -2,6 +2,8 @@
 title: "Component"
 typora-root-url: ..\..\..\..\..\static
 weight: 4
+toc_hide: true
+hide_summary: true
 ---
 
 ## Introduction
