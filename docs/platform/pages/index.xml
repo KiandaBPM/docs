@@ -953,11 +953,11 @@ hide_summary: true -->
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Filter Pages</title><link>https://docs.kianda.com/docs/platform/pages/filter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/pages/filter/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>In your dashboards you can create a &lt;strong>Filter Widget&lt;/strong> which is typically used to filter data in other dashboard widgets, for example, a &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List Widget&lt;/a>. You can use the filter to search for specific type of data within other widgets helping you to breakdown information without having to look for it manually.&lt;/p>
+&lt;p>In your dashboards you can create a &lt;strong>Filter Widget&lt;/strong>. This widget is typically used to &lt;strong>filter&lt;/strong> data in other dashboard widgets, for example, a &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List Widget&lt;/a>, so your filter choice will influence how the list widget displays. You can use the filter to search for specific type of data within other widgets helping you to breakdown information without having to look for it manually.&lt;/p>
 &lt;p>You can create four types of filters:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter">Manual/datasource filter&lt;/a> - this filter will allow you to search for data by selecting an option which can be entered in &lt;strong>manually&lt;/strong> or &lt;strong>pulled from a datasource&lt;/strong>. By entering options, you are limiting the type of filtering by a user oppose to a free text filter which has no limitations. There are two styles of manual/datasource filters; A &lt;strong>Dropdown&lt;/strong> or a &lt;strong>Radio&lt;/strong> list:&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter">Manual/datasource filter&lt;/a> - this filter will allow you to search for data by selecting an option which can be entered in &lt;strong>manually&lt;/strong> or &lt;strong>pulled from a datasource&lt;/strong>. By entering options, you are limiting the type of filtering &lt;em>by a user oppose to a free text filter which has no limitations&lt;/em>. There are two styles of manual/datasource filters: a &lt;strong>Dropdown&lt;/strong> or a &lt;strong>Radio&lt;/strong> list:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/manual-entry-filter.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -969,7 +969,7 @@ hide_summary: true -->
 &lt;p>&lt;img src="https://docs.kianda.com/images/free-text-filter.jpg" alt="free text filter">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-current-user-filter">Current user filter&lt;/a> - this filter allows you to pull a &lt;strong>profile attribute&lt;/strong> from the &lt;strong>currently logged in user&lt;/strong> which can be then used to filter data in another dashboard widget. For example you can pull the &lt;strong>display name&lt;/strong> attribute form the user and based on that, you could filter data in other widgets that belong to the current user. To learn more about users and profile attributes visit &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-current-user-filter">Current user filter&lt;/a> - this filter allows you to pull a &lt;strong>profile attribute&lt;/strong> from the &lt;strong>currently logged in user&lt;/strong> which can be then used to filter data in another dashboard widget. For example you can pull the &lt;strong>display name&lt;/strong> attribute from the user and based on that, you could filter data in other widgets that belong to the current user. To learn more about users and profile attributes visit &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/current-user-filter.jpg" alt="Current user filter">&lt;/p>
 &lt;/li>
 &lt;/ul>
