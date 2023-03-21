@@ -957,7 +957,7 @@ hide_summary: true -->
 &lt;p>You can create four types of filters:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter">Manual/datasource filter&lt;/a> - this filter will allow you to search for data by selecting an option which can be entered in &lt;strong>manually&lt;/strong> or &lt;strong>pulled from a datasource&lt;/strong>. By entering options, you are limiting the type of filtering &lt;em>by a user oppose to a free text filter which has no limitations&lt;/em>. There are two styles of manual/datasource filters: a &lt;strong>Dropdown&lt;/strong> or a &lt;strong>Radio&lt;/strong> list:&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter">Manual/datasource filter&lt;/a> - this filter will allow you to search for data by selecting an option which can be entered in &lt;strong>manually&lt;/strong> or &lt;strong>pulled from a datasource&lt;/strong>. There are two styles of manual/datasource filters: a &lt;strong>Dropdown&lt;/strong> or a &lt;strong>Radio&lt;/strong> list:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/manual-entry-filter.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -965,7 +965,8 @@ hide_summary: true -->
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-range-filter.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-free-text-filter">Free text filter&lt;/a> - this filter allows you to filter data in a connected dashboard widget by &lt;strong>typing text freely&lt;/strong> into the search bar. &lt;strong>Note&lt;/strong> - by default you are &lt;strong>required&lt;/strong> to connect this filter to another dashboard widget so that the filter knows which widget your are searching for data.&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-free-text-filter">Free text filter&lt;/a> - this filter allows you to filter data in a connected dashboard widget by &lt;strong>typing text freely&lt;/strong> into the search bar.&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong> by default you are &lt;strong>required&lt;/strong> to connect this filter to another dashboard widget so that the filter knows which widget your are searching for data.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/free-text-filter.jpg" alt="free text filter">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1163,9 +1164,7 @@ hide_summary: true -->
 &lt;p>&lt;strong>Data source filter button&lt;/strong> is used to create a condition. Once this condition is met, the connected widget will then display data that matches the condition.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/filter-condition.jpg" alt="filter condition">&lt;/p>
 &lt;p>​&lt;/p>
-&lt;ul>
-&lt;li>The &lt;strong>left dropdown&lt;/strong> is the value from the widget you&amp;rsquo;re connecting to, while the &lt;strong>right most textbox&lt;/strong> is the &lt;strong>free text value&lt;/strong>.&lt;/li>
-&lt;/ul>
+&lt;p>The &lt;strong>left dropdown&lt;/strong> is the value from the widget you&amp;rsquo;re connecting to, while the &lt;strong>right most textbox&lt;/strong> is the &lt;strong>free text value&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -1173,7 +1172,6 @@ hide_summary: true -->
 &lt;p>Confirm your settings of the filter by clicking &lt;strong>OK&lt;/strong> on all dialog boxes and click on save dashboard button to see all changes to the filter widget.&lt;img src="https://docs.kianda.com/images/save-dashboard.jpg" alt="save dashboard button">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;h3 id="heading">&lt;/h3>
 &lt;h3 id="how-to-create-current-user-filter">How to create Current user filter&lt;/h3>
 &lt;ol>
 &lt;li>
@@ -1197,9 +1195,7 @@ hide_summary: true -->
 &lt;p>&lt;strong>Data source filter button&lt;/strong> is used to create a condition. Once this condition is met, the connected widget will then display data that matches the condition.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/filter-condition.jpg" alt="filter condition">&lt;/p>
 &lt;p>​&lt;/p>
-&lt;ul>
-&lt;li>The &lt;strong>left dropdown&lt;/strong> is the value from the widget you&amp;rsquo;re connecting to, while the &lt;strong>right most textbox&lt;/strong> is the &lt;strong>free text value&lt;/strong>.&lt;/li>
-&lt;/ul>
+&lt;p>The &lt;strong>left dropdown&lt;/strong> is the value from the widget you&amp;rsquo;re connecting to, while the &lt;strong>right most textbox&lt;/strong> is the &lt;strong>free text value&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
