@@ -11,7 +11,7 @@ In your dashboards you can create a **Filter Widget**. This widget is typically 
 
 You can create four types of filters:
 
-- [Manual/datasource filter](/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter) - this filter will allow you to search for data by selecting an option which can be entered in **manually** or **pulled from a datasource**. By entering options, you are limiting the type of filtering *by a user oppose to a free text filter which has no limitations*. There are two styles of manual/datasource filters: a **Dropdown** or a **Radio** list:
+- [Manual/datasource filter](/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter) - this filter will allow you to search for data by selecting an option which can be entered in **manually** or **pulled from a datasource**. There are two styles of manual/datasource filters: a **Dropdown** or a **Radio** list:
   
   ![Click Edit current page button to go into Edit mode](/images/manual-entry-filter.jpg)
 
@@ -21,7 +21,9 @@ You can create four types of filters:
 
   ![Click Edit current page button to go into Edit mode](/images/date-range-filter.jpg)
 
-- [Free text filter](/docs/platform/pages/filter/#how-to-create-free-text-filter) - this filter allows you to filter data in a connected dashboard widget by **typing text freely** into the search bar. **Note** - by default you are **required** to connect this filter to another dashboard widget so that the filter knows which widget your are searching for data.
+- [Free text filter](/docs/platform/pages/filter/#how-to-create-free-text-filter) - this filter allows you to filter data in a connected dashboard widget by **typing text freely** into the search bar. 
+
+  **Note:** by default you are **required** to connect this filter to another dashboard widget so that the filter knows which widget your are searching for data.
 
   ![free text filter](/images/free-text-filter.jpg)
 
@@ -189,11 +191,11 @@ To add a **Filter widget** to a dashboard:
 
      ​	
 
-     - The **left dropdown** is the value from the widget you're connecting to, while the **right most textbox** is the **free text value**.
+     The **left dropdown** is the value from the widget you're connecting to, while the **right most textbox** is the **free text value**.
 
 6. Confirm your settings of the filter by clicking **OK** on all dialog boxes and click on save dashboard button to see all changes to the filter widget.![save dashboard button](/images/save-dashboard.jpg)
 
-### 
+
 
 ### How to create Current user filter
 
@@ -217,7 +219,7 @@ To add a **Filter widget** to a dashboard:
 
      ​	
 
-     - The **left dropdown** is the value from the widget you're connecting to, while the **right most textbox** is the **free text value**.
+     The **left dropdown** is the value from the widget you're connecting to, while the **right most textbox** is the **free text value**.
 
 5. Confirm your settings of the filter by clicking **OK** on all dialog boxes and click on save dashboard button to see all changes to the filter widget.![save dashboard button](/images/save-dashboard.jpg)
 
@@ -239,6 +241,8 @@ To edit a **Filter widget** on a dashboard:
 
 5. The updated **Filter widget** will be shown on the Dashboard. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made.
 
+   
+
 ### How to move Filter widgets
 
 To move a **Filter widget** on a dashboard:
@@ -252,8 +256,6 @@ To move a **Filter widget** on a dashboard:
    In our example, we could move the new Filter widget to the top left of the dashboard:  ![Move a Dashboard Link widget](/images/dashboard-filter-move.jpg)
 
 4. Click on **Save** ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu to save the changes you've made.
-
-
 
 
 
