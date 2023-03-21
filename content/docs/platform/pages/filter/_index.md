@@ -7,11 +7,11 @@ hide_summary: true
 
 ## Introduction
 
-In your dashboards you can create a **Filter Widget** which is typically used to filter data in other dashboard widgets, for example, a [List Widget](/docs/platform/pages/list/). You can use the filter to search for specific type of data within other widgets helping you to breakdown information without having to look for it manually.
+In your dashboards you can create a **Filter Widget**. This widget is typically used to **filter** data in other dashboard widgets, for example, a [List Widget](/docs/platform/pages/list/), so your filter choice will influence how the list widget displays. You can use the filter to search for specific type of data within other widgets helping you to breakdown information without having to look for it manually.
 
 You can create four types of filters:
 
-- [Manual/datasource filter](/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter) - this filter will allow you to search for data by selecting an option which can be entered in **manually** or **pulled from a datasource**. By entering options, you are limiting the type of filtering by a user oppose to a free text filter which has no limitations. There are two styles of manual/datasource filters; A **Dropdown** or a **Radio** list:
+- [Manual/datasource filter](/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter) - this filter will allow you to search for data by selecting an option which can be entered in **manually** or **pulled from a datasource**. By entering options, you are limiting the type of filtering *by a user oppose to a free text filter which has no limitations*. There are two styles of manual/datasource filters: a **Dropdown** or a **Radio** list:
   
   ![Click Edit current page button to go into Edit mode](/images/manual-entry-filter.jpg)
 
@@ -25,7 +25,7 @@ You can create four types of filters:
 
   ![free text filter](/images/free-text-filter.jpg)
 
-- [Current user filter](/docs/platform/pages/filter/#how-to-create-current-user-filter) - this filter allows you to pull a **profile attribute** from the **currently logged in user** which can be then used to filter data in another dashboard widget. For example you can pull the **display name** attribute form the user and based on that, you could filter data in other widgets that belong to the current user. To learn more about users and profile attributes visit [Modify profile attributes](/docs/platform/administration/users/#modify-profile-attributes).
+- [Current user filter](/docs/platform/pages/filter/#how-to-create-current-user-filter) - this filter allows you to pull a **profile attribute** from the **currently logged in user** which can be then used to filter data in another dashboard widget. For example you can pull the **display name** attribute from the user and based on that, you could filter data in other widgets that belong to the current user. To learn more about users and profile attributes visit [Modify profile attributes](/docs/platform/administration/users/#modify-profile-attributes).
 
   ![Current user filter](/images/current-user-filter.jpg)
 
