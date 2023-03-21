@@ -1,9 +1,10 @@
 ---
-title: "Filter Pages"
-typora-root-url: ..\..\..\..\..\static
-toc_hide: true
-hide_summary: true
+title: "Filter widget"
+typora-root-url: ..\..\..\..\static
 ---
+
+<!-- toc_hide: true
+hide_summary: true -->
 
 ## Introduction
 
@@ -12,11 +13,11 @@ In your dashboards you can create a **Filter Widget**. This widget is typically 
 You can create four types of filters:
 
 - [Manual/datasource filter](/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter) - this filter will allow you to search for data by selecting an option which can be entered in **manually** or **pulled from a datasource**. There are two styles of manual/datasource filters: a **Dropdown** or a **Radio** list:
-  
+
   ![Click Edit current page button to go into Edit mode](/images/manual-entry-filter.jpg)
 
   
-  
+
 - [Date range filter](/docs/platform/pages/filter/#how-to-create-a-date-range-filter) - this filter allows you to enter **two sets of dates** which can be then used to filter your data based on a date input in a connected dashboard widget.
 
   ![Click Edit current page button to go into Edit mode](/images/date-range-filter.jpg)
@@ -106,11 +107,11 @@ To add a **Filter widget** to a dashboard:
      ![datasource entries](/images/filter-widget-datasource.jpg)
 
      - **Datasource button** - this button will allow you to connect to datasource which will allow you to pull the filter options. For example, you can connect to a SharePoint list that contains all your filter options or any other datasource that has been created within your system. See [Data connectors](/docs/platform/connectors/) for a full list of datasources you can create.
-     
+
      - **Edit condition button** - this button allows you to create a condition to pull data from the datasource, once the condition is matched the data will be pulled from the datasource. See [Conditions](/docs/platform/rules/general/add-conditions/) to learn more.
-     
+
      - **Display field  & Value field** - **Display field** will be the option **visible** to the user while the **Value field** will be the **actual value** when the option is selected. For example, if you are pulling your filter options form a SharePoint list which has multiple columns, you can select one of those columns to be displayed for the user and use another column for the value. To further extend the example, you could have the **display field** set to a **username (title)** and in the background pull the users **role as the value.**
-     
+
        ![Display and value fields](/images/display-value-fields.jpg)
 
 4. If you choose to create **Dropdown list** filter, an additional option in the settings will be required to fill out:
@@ -119,7 +120,7 @@ To add a **Filter widget** to a dashboard:
 
 5. You can set a default value of your filter by typing one of your options into the **Default value** text box. This means that whenever your dashboard is loaded, the text you enter in the **Default value** will be automatically set as the default option.
 
-6. **Enable query string - needs and explanation and a link**
+6. **Enable query string** - check this checkbox if you wish to include a query string when filtering data. When enabled, an additional textbox will appear under the Default value textbox: ![filter connection](/images/filter-query-strings.jpg) Type the name of your parameter into the textbox provided (where the place holder says "Parameter name").  Check the Auto update URL checkbox to allow the URL be updated automatically when you select an option. To learn more about query strings within Kianda, visit [Query Strings](/docs/platform/pages/querystrings/) and for an additional example of query strings within the Filter widget, visit [Filter Widget Query Strings](/docs/platform/pages/querystrings/#filter-widget-query-strings).
 
 7. Click on **Add connection** to connect your filter to another dashboard widget which you want to target while filtering data based on the **option** selected.
 
@@ -177,7 +178,7 @@ To add a **Filter widget** to a dashboard:
 
    ![save dashboard button](/images/free-text-filter-placeholder.jpg)
 
-4. **Enable query string - needs and explanation and a link**
+4. **Enable query string** - check this checkbox if you wish to include a query string when filtering data. When enabled, an additional textbox will appear under the Default value textbox: ![filter connection](/images/free-text-querystring.jpg) Type the name of your parameter into the textbox provided (where the place holder says "Parameter name").  Check the **Auto update URL** checkbox to allow the URL be updated automatically when you select an option. To learn more about query strings within Kianda, visit [Query Strings](/docs/platform/pages/querystrings/) and for an additional example of query strings within the Filter widget, visit [Filter Widget Query Strings](/docs/platform/pages/querystrings/#filter-widget-query-strings).
 
 5. Click on **Add connection** to connect your filter to another dashboard widget which you want to target while filtering data based on the **free text** provided by a user.
 
