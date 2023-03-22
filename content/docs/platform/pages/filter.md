@@ -1,6 +1,7 @@
 ---
 title: "Filter widget"
 typora-root-url: ..\..\..\..\static
+weight: 6
 ---
 
 <!-- toc_hide: true

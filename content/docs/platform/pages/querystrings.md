@@ -1,6 +1,7 @@
 ---
 title: "Query Strings"
 typora-root-url: ..\..\..\..\static
+weight: 11
 ---
 
 ## What is a Query String?
@@ -13,7 +14,7 @@ By using query string in Kianda, you are able to transfer information and data e
 
 ### How to use Query Strings in Dashboard pages
 
-In dashboard pages you can use query strings in a [Filter](/docs/platform/pages/filter/) and [Link](/docs/platform/pages/link/) widgets. 
+Query strings are used in dashboards to **transfer** data into **processes** or you can also use them by **navigating** from **dashboard to dashboard** while also passing data. In dashboard pages you can create query strings by using the [Filter](/docs/platform/pages/filter/) and [Link](/docs/platform/pages/link/) widgets.
 
 #### Link Widget Query Strings
 
@@ -66,4 +67,14 @@ To retrieve a query string parameter from the URL, you can use the expression bu
 
 ![Return to dashboard option](/images/rule-close-return-dashboard.jpg)
 
-You can pass a query string parameter when using the Close rule. To do so
+You can create query strings using the [Close rule](/docs/platform/rules/form-actions/close-form/) available from the **Action forms** set of rules. The close rule query strings are typically used when **navigating** to a **dashboard** when a process instance is completed and submitted. The idea is that when you're navigated to a dashboard after completing a process, you can pass some information from the process into a dashboard to display certain data in that dashboard. You can also use the close rule to start a new **process** and pass some data from the process itself to **populate** process fields that you're starting. Passing parameters in both scenarios works the same:
+
+1. In the **On form close navigate to** option, select **Return to a dashboard** or **Go to process**.
+
+2. In the dropdown above the **Query string parameters** option, select the respective dashboard or process you wish to navigate to. To learn more about the **close rule**, visit [Close rule](/docs/platform/rules/form-actions/close-form/).
+
+3. In the Query string parameters dropdown/textbox you can select a process field as a parameter. This will force the system to use the fields unique name as a parameter name and the value of that field will be the value of the parameter. For example, when a fields unique name is `firstName` and the value of that field is `John`, the final URL will look something like this: `https://green-itr.kianda.com/some/ulr/path?firstName=John`. See image below for the setup of the example: 
+
+   ![Query string and close rule example](/images/qs-close-rule-example.jpg)
+
+   

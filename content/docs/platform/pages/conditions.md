@@ -1,6 +1,7 @@
 ---
 title: "Conditions"
 typora-root-url: ..\..\..\..\static
+weight: 10
 ---
 
 Conditions allow you to make forms and dashboards fully dynamic. They are easy to configure in the Kianda platform, using natural language to create triggers for rule execution.

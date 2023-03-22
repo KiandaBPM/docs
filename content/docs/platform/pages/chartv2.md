@@ -1,6 +1,7 @@
 ---
 title: "Chart v2 widget"
 typora-root-url: ..\..\..\..\static
+weight: 5
 ---
 
 A dashboard **Chart v2 widget** enables you to create pie charts, bar charts, line charts, radar charts, doughnut and polar area charts on your dashboard page. These charts can be used to represent various conditions or values in a process.

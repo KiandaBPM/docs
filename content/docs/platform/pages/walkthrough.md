@@ -1,6 +1,7 @@
 ---
 title: "Walk-through widget"
 typora-root-url: ..\..\..\..\static
+weight: 8
 ---
 
 A dashboard **Walk-through widget** can be used to walk a user through the features of a dashboard or steps in a process by displaying a series of prompts. 

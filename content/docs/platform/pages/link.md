@@ -1,6 +1,7 @@
 ---
 title: "Link widget"
 typora-root-url: ..\..\..\..\static
+weight: 7
 ---
 
 A dashboard **Link widget** can be used to create a button link on a dashboard page that initiates a new process instance (by bringing the user straight into the first form of a particular process), links to another dashboard or links to an external website.

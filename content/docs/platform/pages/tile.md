@@ -1,6 +1,7 @@
 ---
 title: "Tile widget"
 typora-root-url: ..\..\..\..\static
+weight: 2
 ---
 
 A dashboard **Tile widget** allows you to display a count of instances. This is a really useful way to showcase whole numbers - for example, the total budget requested through Purchase Orders, the number of customer queries solved in a week or the number of training requests that have been approved.
