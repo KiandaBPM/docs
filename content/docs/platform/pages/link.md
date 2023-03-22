@@ -98,7 +98,7 @@ To add a **Link widget** to a dashboard:
        1. Insert the URL you want the user to be brought to when they click on the Link widget.
        2. Select the '**Open in new window?**' checkbox if you want the external website to open in a new window.
    
-   - **QueryString parameters** - QueryString parameters can be added to the URL of the destination selected. You must define a process or dashboard as a destination to add a QueryString to the URL. 
+   - **QueryString parameters** - QueryString parameters can be added to the URL of the destination selected. You must define a process or dashboard as a destination to add a QueryString to the URL. To learn more about query strings, visit [Query Strings](/docs/platform/pages/querystrings/).
 	
         - **Append Query** - there are two ways the append query works, that depends whether it redirects you to a **Process** or a **Dashboard**. When redirecting to a **process**, you should always check this box as the query will not automatically append to your URL. When redirecting to a dashboard and the checkbox is checked, the query will append to the existing query string. But if the checkbox is unchecked, the query string will be overwritten. This is useful when working when passing query string parameters through multiple dashboards.
    

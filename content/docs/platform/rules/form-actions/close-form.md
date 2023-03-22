@@ -58,7 +58,7 @@ By default all forms come with a Close button, and therefore a **Close form** ru
    
      ![Edit process - ID field](/images/rule-close-instance-id.jpg)
 
-   **Query string parameters** are used to populate form or fields when a given form is loaded. To learn more about query parameters go to [Query parameters](/docs/platform/pages/link/#heading).
+   **Query string parameters** are used to populate form or fields when a given form is loaded. To learn more about query strings, visit [Query Strings](/docs/platform/pages/querystrings/) and for a more specific example visit [Close rule Query Strings](/docs/platform/pages/querystrings/#close-rule-query-strings).
 
    
 
