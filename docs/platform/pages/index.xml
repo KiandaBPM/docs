@@ -1774,7 +1774,7 @@ hide_summary: true -->
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>QueryString parameters&lt;/strong> - QueryString parameters can be added to the URL of the destination selected. You must define a process or dashboard as a destination to add a QueryString to the URL.&lt;/p>
+&lt;p>&lt;strong>QueryString parameters&lt;/strong> - QueryString parameters can be added to the URL of the destination selected. You must define a process or dashboard as a destination to add a QueryString to the URL. To learn more about query strings, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/">Query Strings&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Append Query&lt;/strong> - there are two ways the append query works, that depends whether it redirects you to a &lt;strong>Process&lt;/strong> or a &lt;strong>Dashboard&lt;/strong>. When redirecting to a &lt;strong>process&lt;/strong>, you should always check this box as the query will not automatically append to your URL. When redirecting to a dashboard and the checkbox is checked, the query will append to the existing query string. But if the checkbox is unchecked, the query string will be overwritten. This is useful when working when passing query string parameters through multiple dashboards.&lt;/p>
