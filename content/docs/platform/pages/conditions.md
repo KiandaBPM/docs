@@ -6,7 +6,7 @@ weight: 10
 
 Conditions allow you to make forms and dashboards fully dynamic. They are easy to configure in the Kianda platform, using natural language to create triggers for rule execution.
 
-Conditions can be applied to [Tile](/docs/platform/pages/tile/), [List](/docs/platform/pages/list/) and [Chart](/docs/platform/pages/chart/) dashboard widgets.
+Conditions can be applied to [Tile](/docs/platform/pages/tile/), [List](/docs/platform/pages/list/), [Chart](/docs/platform/pages/chart/) [Chat v2](/docs/platform/pages/chartv2/) and [Filter](/docs/platform/pages/filter/) widgets.
 
 
 
@@ -16,15 +16,19 @@ Conditions can be applied to [Tile](/docs/platform/pages/tile/), [List](/docs/pl
 
    ![Pen button in a widget](/images/penbutton_frame.png) 
 
-2. Click on the **Update configuration** or **Pen** button for any Tile, List or Chart widget.
+2. Click on the **Update configuration** or **Pen** button for any of the above mentioned widgets.
 
-3. Click on the **Conditions** button ![Conditions button](/images/conditions.png) in the dialog box that opens.
+3. In the edit dialog box of the Tile, List and Chart widgets, click on the **Conditions** button ![Conditions button](/images/conditions.png) after it opens. 
+
+   - To add conditions in the Filter widget, visit [Filter](/docs/platform/pages/filter/).
+
+   - To add conditions to Chart v2, visit [Chart v2](/docs/platform/pages/chartv2/).
 
 4. Click on **Add a conditions group** ![Add conditions button](/images/addconditions.png) button to add a condition.
 
 5. The **Edit conditions** dialog box opens. 
 
-   ![Edit conditions](/images/editconditions.png)
+   ![Edit conditions](/images/conditions-dialog.jpg)
 
    Click into the first empty field to choose a field to filter on. This field can be a **Common field** or a **Design field** as found in a form. Click on the + symbol to drill down to the relevant fields to use. Click on a field to use, for example the Common field, 'Status'. If you want to replace the field with a different one, click on the ![X](/images/x.png) beside the field name.
 
