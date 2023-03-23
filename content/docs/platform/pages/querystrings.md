@@ -8,31 +8,70 @@ weight: 11
 
 Before we explain how and where you can use query strings within Kianda, you'll need to understand what a **query string** is, to help your understanding of how to use them. To put it simply, a query string is a **set of characters** that gets **appended onto the end of a URL path** beginning with a question mark `?`. 
 
-A query string contains **parameters** with values assigned to them separated by an **equal** sign `=`. An example of such query string is: 
+A query string contains **parameters** also know as a key & value pair. Each key and value is separated by an **equal** sign `=`. An example of such query string with a single parameter is: 
 
 `?name=John` 
 
-You can have **multiple parameters** within a query string and those parameters are **separated by an ampersand** `&`, an example of multiple parameters in a query string  would be: 
+You can have **multiple parameters** within a query string and those parameters are **separated by an ampersand** `&`. You can have single or multiple parameters within a query string, an example of **multiple parameters** in a query string would be: 
 
 `?firstName=John&lastName=Rea`
 
 A full example of a **URL and a query string** would for instance look like this: 
 
+`https://green-itr.kianda.com/some/ulr/path?firstName=John`
+
+or
+
 `https://green-itr.kianda.com/some/ulr/path?firstName=John&lastName=Rea`
+
+**Both** of the examples above **classify as a query string**, the only **difference** is the amount of **parameters** they hold. 
+
+`https://green-itr.kianda.com/some/ulr/path?firstName=John` holds one parameter in its query string, and that's `firstName=John` 
+
+`https://green-itr.kianda.com/some/ulr/path?firstName=John&lastName=Rea` holds two parameters which are a) `firstName=John` and b) `lastName=Rea`.
 
 ## Query Strings in Kianda
 
-By using query string in Kianda, you are able to transfer information and data easily within different areas of the platform such as [Dashboards pages](/docs/platform/pages/) and [Processes](/docs/platform/application-designer/process/). Query strings **allow you to pass data from a dashboard page into a processes or vice versa** if required depending on your needs. Those two areas where you can use query strings are split further into more particular and specific areas which are explained in How to use [Query Strings in Dashboard pages](/docs/platform/pages/querystrings/#how-to-use-query-strings-in-dashboard-pages) and [How to use Query Strings in Processes](/docs/platform/pages/querystrings/#how-to-use-query-strings-in-processes).
+By using query string in Kianda, you are able to transfer information and data easily within different areas of the platform such as [Dashboards pages](/docs/platform/pages/) and [Processes](/docs/platform/application-designer/process/). Query strings **allow you to pass data from a dashboard page into a processes or vice versa** if required depending on your needs. Those two areas where you can use query strings are split further into more particular and specific areas which are explained in [How to use Query Strings in Dashboard pages](/docs/platform/pages/querystrings/#how-to-use-query-strings-in-dashboard-pages) and [How to use Query Strings in Processes](/docs/platform/pages/querystrings/#how-to-use-query-strings-in-processes).
 
 ### How to use Query Strings in Dashboard pages
 
-Query strings are used in dashboards to **transfer** data into **processes** or you can also use them by **navigating** from **dashboard to dashboard** while also passing data. In dashboard pages you can create query strings by using the [Filter](/docs/platform/pages/filter/) and [Link](/docs/platform/pages/link/) widgets.
+When working with **query strings** in Kianda, we need to **create** a one and **append** it to the **URL**, and the **main** area where you can create **query strings** is in the [Dashboard pages](/docs/platform/pages/) of your Kianda subscription. Once a query string is **created** and **appended** onto the **URL**, you can then use them in [Processes](/docs/platform/application-designer/process/) or other Dashboard pages. 
+
+You can **create query strings** in a dashboard by utilising the [Filter](/docs/platform/pages/filter/) and [Link](/docs/platform/pages/link/) widgets which you can then use to **navigate** from a **dashboard to a process** or from a **dashboard to another dashboard**, while **keeping** the query string in order to **use** its **parameters**. You can read more on how to do so under [Link Widget Query Strings](/docs/platform/pages/querystrings/#link-widget-query-strings) and [Filter Widget Query Strings](/docs/platform/pages/querystrings/#filter-widget-query-strings). 
 
 #### Link Widget Query Strings
 
+With the Link widget, we create parameters and assign them values which are then added into the URL creating a query string. To learn what a query string is, go to [What is a Query String](/docs/platform/pages/querystrings/#what-is-a-query-string).
+
+To **create** a query string using the **Link** widget, first, you need to create the **Link Widget** in your dashboard, to do so follow steps 1 - 6 under [How to get started](/docs/platform/pages/link/#how-to-get-started) so that the **Edit link** dialog opens as shown in the image below.
+
 ![Dashboard Link widget Edit link dialog box](/images/dashboard-link-edit-link-dialog2.jpg)
 
-There are two ways the append query works within the Link Widget, and that depends whether you want it to redirect you to a **Process** or a **Dashboard**. To learn more about the Link Widget, visit [Link Widget](/docs/platform/pages/link/). When redirecting to a **process**, you should always check the **Append query?** checkbox as the query will not automatically append to your URL and the query string parameter(s) will be lost. When redirecting to a dashboard with the **Append query?** checkbox checked, the query will append to the existing query string to the URL. But if the checkbox is unchecked, the query string will be overwritten. This is useful when working when passing query string parameters through multiple dashboards. To pass a query string parameter, in the **QueryString parameters textbox**, type in the name of your parameter and the value separated by an equals sign `=`. If you want to pass in more than one parameter, separate them by using an ampersand `&`, for example, `firstName=John&surname=Smith`. When the link will be clicked from the dashboard widget, the query string parameter will be passed into the URL which can be then used within your process. To learn more on how to retrieve a query string parameter in a process, go to [Expression builder Query Strings](/docs/platform/pages/querystrings/#expression-builder-query-strings).
+The **QueryString parameters** textbox in the **Edit link** dialog box is where you can create **parameters** and **assign** them **values**. When the link is clicked, the parameter with the value will be added to the query string. For instance,when a link is clicked and we want to create a **country** parameter with a value of **Ireland**, our **QueryString parameters** textbox will look like this: ![Dashboard Link widget Edit link dialog box](/images/qs-country-example.jpg) Once we click on the link widget, our URL will be updated to `https://{website-domain}/some/ulr/path?country=Ireland`. 
+
+The **Append query?** checkbox is used when you want to have the ability for the link to add another parameter with its value to the query string. We'll explain this concept in two examples, an **unchecked** version and **checked** version. 
+
+**Note**: we will use our **QueryString parameter** set as `country=Ireland` for both examples.
+
+##### Append query Unchecked
+
+![Dashboard Link widget Edit link dialog box](/images/qs-country-example.jpg)
+
+When the **Append query** checkbox is **unchecked**  we have two ways the functionality will work: 
+
+- If the URL **does not contain a query string**, the click of the link will **create a new** query string with the given **parameter and value**. For example if the URL looks like this before clicking the link: `https://{website-domain}/some/ulr/path`. Then after the link is clicked, the URL will look like this: `https://{website-domain}/some/ulr/path?country=Ireland`. The question mark is added automatically by the system so there is no need to add it into the textbox.
+
+- If the URL **already contains a query string**, the **existing** query string will be **overwritten**. This means that, for example, if the URL already holds parameters in the query string such as this: `https://{website-domain}/some/ulr/path?firstName=John&lastName=Rea`. After the link is clicked, the URL will be overwritten to:   `https://{website-domain}/some/ulr/path?country=Ireland`
+
+##### Append query Checked
+
+![Dashboard Link widget Edit link dialog box](/images/qs-country-checked.jpg)
+
+- If the URL **does not contain a query string**, the click of the link will **create a new** query string with the given **parameter and value**. For example if the URL looks like this before clicking the link: `https://{website-domain}/some/ulr/path`. Then after the link is clicked, the URL will look like this: `https://{website-domain}/some/ulr/path?country=Ireland`. The question mark is added automatically by the system so there is no need to add it into the textbox.
+- If the URL **already contains a query string**, the parameter with its value will be appended to the query string. For example, if the URL already holds parameters in the query string such as this: `https://{website-domain}/some/ulr/path?firstName=John&lastName=Rea`. After the link is clicked, the URL will be updated to:   `https://{website-domain}/some/ulr/path?firstName=John&lastName=Rea&country=Ireland`
+
+By using the link to navigate to a **process**, you can then use the query string parameters by populating their values into a process field, to learn how to do so, visit [Expression builder Query Strings](/docs/platform/pages/querystrings/#expression-builder-query-strings).
 
 #### Filter Widget Query Strings
 
