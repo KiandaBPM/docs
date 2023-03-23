@@ -6,11 +6,23 @@ weight: 11
 
 ## What is a Query String?
 
-Before we explain how and where you can use query strings within Kianda, you'll need to understand what a query string is. This way you'll have a good understanding in which ways you can use them. To put it simply, a query string is a set of characters that gets appended onto the end of a URL path beginning with a question mark `?`. A query string contains parameters with values assigned to them separated with an equals sign `=`. An example of such query string is: `?name=John` . You can have multiple parameters within a query string and those parameters are separated by an ampersand `&`, an example of multiple parameters in a query string  would be: `?firstName=John&lastName=Rea`. A full example of a URL and a query string would for instance look like this: `https://green-itr.kianda.com/some/ulr/path?firstName=John&lastName=Rea`
+Before we explain how and where you can use query strings within Kianda, you'll need to understand what a **query string** is, to help your understanding of how to use them. To put it simply, a query string is a **set of characters** that gets **appended onto the end of a URL path** beginning with a question mark `?`. 
+
+A query string contains **parameters** with values assigned to them separated by an **equal** sign `=`. An example of such query string is: 
+
+`?name=John` 
+
+You can have **multiple parameters** within a query string and those parameters are **separated by an ampersand** `&`, an example of multiple parameters in a query string  would be: 
+
+`?firstName=John&lastName=Rea`
+
+A full example of a **URL and a query string** would for instance look like this: 
+
+`https://green-itr.kianda.com/some/ulr/path?firstName=John&lastName=Rea`
 
 ## Query Strings in Kianda
 
-By using query string in Kianda, you are able to transfer information and data easily within different areas of the platform such as [Dashboards pages](/docs/platform/pages/) and [Processes](/docs/platform/application-designer/process/). They allow you to pass data from a dashboard page into a processes or vice versa if required depending on your needs. Those two areas where you can use query strings are split further into more particular and specific areas which are explained in How to use [Query Strings in Dashboard pages](/docs/platform/pages/querystrings/#how-to-use-query-strings-in-dashboard-pages) and [How to use Query Strings in Processes](/docs/platform/pages/querystrings/#how-to-use-query-strings-in-processes).
+By using query string in Kianda, you are able to transfer information and data easily within different areas of the platform such as [Dashboards pages](/docs/platform/pages/) and [Processes](/docs/platform/application-designer/process/). Query strings **allow you to pass data from a dashboard page into a processes or vice versa** if required depending on your needs. Those two areas where you can use query strings are split further into more particular and specific areas which are explained in How to use [Query Strings in Dashboard pages](/docs/platform/pages/querystrings/#how-to-use-query-strings-in-dashboard-pages) and [How to use Query Strings in Processes](/docs/platform/pages/querystrings/#how-to-use-query-strings-in-processes).
 
 ### How to use Query Strings in Dashboard pages
 
