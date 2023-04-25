@@ -490,17 +490,20 @@
 &lt;p>Enter a number in &lt;strong>Items per page&lt;/strong> for the number items you wish to load at a time. The default value is &amp;lsquo;20&amp;rsquo;.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Show &amp;lsquo;Add process&amp;rsquo; button&lt;/strong> - choose from a) Yes or b) No if you wish to Add process to your dashboard. If you click on &lt;strong>Yes&lt;/strong>, then you can decide on what text should appear on screen, by typing the text in the &lt;strong>&amp;lsquo;Add process&amp;rsquo; button text&lt;/strong> field.&lt;/p>
+&lt;p>&lt;strong>Show &amp;lsquo;Add process&amp;rsquo; button?&lt;/strong> - choose from a) Yes or b) No if you wish to Add process to your dashboard. If you click on &lt;strong>Yes&lt;/strong>, then you can decide on what text should appear on screen, by typing the text in the &lt;strong>&amp;lsquo;Add process&amp;rsquo; button text&lt;/strong> field.&lt;/p>
 &lt;p>By default, the process used to generate the data is added, click on &lt;strong>No&lt;/strong> beside the Add &amp;lsquo;Process Name&amp;rsquo; by default if you don&amp;rsquo;t wish to add the input process.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Show delete button&lt;/strong> - choose from a) Yes or b) No if you wish to add a Delete button to your dashboard. If you choose &lt;strong>Yes&lt;/strong>, then the option &lt;strong>Enable bulk delete&lt;/strong> appears allowing you to choose a) Yes or b) No to enable bulk deletion of records.&lt;/p>
+&lt;p>&lt;strong>Show delete button?&lt;/strong> - choose from a) Yes or b) No if you wish to add a Delete button to your dashboard. If you choose &lt;strong>Yes&lt;/strong>, then the option &lt;strong>Enable bulk delete&lt;/strong> appears allowing you to choose a) Yes or b) No to enable bulk deletion of records.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Enable show history&lt;/strong> - choose from a) Yes or b) No if you wish to show the history of the dashboard.&lt;/p>
+&lt;p>&lt;strong>Enable show history?&lt;/strong> - choose from a) Yes or b) No if you wish to show the history of the dashboard.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Enable data export&lt;/strong> - choose from a) Yes or b) No if you wish to allow data export.&lt;/p>
+&lt;p>&lt;strong>Enable data export?&lt;/strong> - choose from a) Yes or b) No if you wish to allow data export. If you select Yes, a new option will appear:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Enable data format?&lt;/strong> - choose from a) OData, b) CSV or c) Excel. To watch a video tutorial about exporting your process data from a list widget using OData, &lt;a href="https://docs.kianda.com/docs/how-to/exporting-odata/">click here.&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>Sort by - click into the Sort By field and choose from options a) Common fields or b) fields within a form.&lt;/p>
