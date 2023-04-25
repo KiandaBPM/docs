@@ -52,7 +52,17 @@ The key components of the designer are:
 
 3. The right-hand pane is where the **properties** and **rules** are displayed for the selected item, see [Properties](#properties) for more information. From this pane you can also [Import forms](#import-forms), see the [Version history](/docs/platform/application-designer/designer/version-history/) for a process and set process [Settings](/docs/platform/application-designer/process/settings/). Click on the links to find out more.
 
-Note that the name of the process you are working on is shown in the top menu bar, for example Quarterly Training Request. 
+**Note**: The name of the process you are working on is shown in the top menu bar, for example Quarterly Training Request.
+
+**Note**: Multiple users can view and design a process synchronously, allowing for seamless collaboration on your processess. The below error message is displayed in the bottom right corner when another user(s) is/are **viewing/editing** the current process.
+
+![Another user editing process image](/images/another-user-editing-notification.png)
+
+When another user **saves a change** to the process design that you are currently viewing, the below error message is displayed in the bottom right corner.
+
+![Another user save changes notification image](/images/another-user-save-changes-notification.png)
+
+
 
 
 
