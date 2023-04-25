@@ -144,15 +144,17 @@ Once you have chosen where the dashboard data will come from then there are a nu
 
      Enter a number in **Items per page** for the number items you wish to load at a time. The default value is '20'.
 
-   - **Show 'Add process' button** - choose from a) Yes or b) No if you wish to Add process to your dashboard. If you click on **Yes**, then you can decide on what text should appear on screen, by typing the text in the **'Add process' button text** field. 
+   - **Show 'Add process' button?** - choose from a) Yes or b) No if you wish to Add process to your dashboard. If you click on **Yes**, then you can decide on what text should appear on screen, by typing the text in the **'Add process' button text** field. 
 
      By default, the process used to generate the data is added, click on **No** beside the Add 'Process Name' by default if you don't wish to add the input process.
 
-   - **Show delete button** - choose from a) Yes or b) No if you wish to add a Delete button to your dashboard. If you choose **Yes**, then the option **Enable bulk delete** appears allowing you to choose a) Yes or b) No to enable bulk deletion of records.
+   - **Show delete button?** - choose from a) Yes or b) No if you wish to add a Delete button to your dashboard. If you choose **Yes**, then the option **Enable bulk delete** appears allowing you to choose a) Yes or b) No to enable bulk deletion of records.
 
-   - **Enable show history** - choose from a) Yes or b) No if you wish to show the history of the dashboard.
+   - **Enable show history?** - choose from a) Yes or b) No if you wish to show the history of the dashboard.
 
-   - **Enable data export** - choose from a) Yes or b) No if you wish to allow data export.
+   - **Enable data export?** - choose from a) Yes or b) No if you wish to allow data export. If you select Yes, a new option will appear: 
+
+     - **Enable data format?** - choose from a) OData, b) CSV or c) Excel. To watch a video tutorial about exporting your process data from a list widget using OData, [click here.](/docs/how-to/exporting-odata/)
 
    - Sort by - click into the Sort By field and choose from options a) Common fields or b) fields within a form.
 
