@@ -33,13 +33,23 @@
 &lt;p>In the example shown here, the Employee Name field has been selected and the &lt;strong>Field properties&lt;/strong> associated with it include the &lt;strong>Field type&lt;/strong> (&lt;strong>Text box&lt;/strong> in this case) and the &lt;strong>Title&lt;/strong> of the field.&lt;/p>
 &lt;p>The options within the Field properties menu are:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Show Title&lt;/strong> - show the title of the field&lt;/li>
-&lt;li>&lt;strong>Required&lt;/strong> - tick this checkbox to make this field mandatory for users to fill out (this will be denoted by an asterix beside the field name)&lt;/li>
-&lt;li>&lt;strong>Enabled&lt;/strong> - tick this checkbox to make the field enabled for users to fill out&lt;/li>
-&lt;li>&lt;strong>Visible&lt;/strong> - tick this checkbox to make the field visible to users&lt;/li>
-&lt;li>&lt;strong>Layout&lt;/strong> - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the field when viewed on a mobile phone.&lt;/li>
-&lt;/ul>
+&lt;li>
+&lt;p>&lt;strong>Show Title&lt;/strong> - show the title of the field&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Required&lt;/strong> - tick this checkbox to make this field mandatory for users to fill out (this will be denoted by an asterix beside the field name)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enabled&lt;/strong> - tick this checkbox to make the field enabled for users to fill out&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Visible&lt;/strong> - tick this checkbox to make the field visible to users&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Layout&lt;/strong> - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the field when viewed on a mobile phone. The layout is split into 12 different bootstrap grid columns (a responsive CSS framework) - for example, a layout set to 6 columns would make the element span half of the screen.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize-frame.png" alt="Changing text box width">&lt;/p>
+&lt;/li>
+&lt;/ul>
 &lt;p>Underneath the Field properties menu, you will see &lt;strong>Rules&lt;/strong> - go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about the rules that can be applied to fields.&lt;/p>
 &lt;h2 id="saving-changes-and-version-history">Saving changes and version history&lt;/h2>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
