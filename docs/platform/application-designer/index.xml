@@ -40,7 +40,11 @@ Your browser does not support the video tag.
 &lt;p>The right-hand pane is where the &lt;strong>properties&lt;/strong> and &lt;strong>rules&lt;/strong> are displayed for the selected item, see &lt;a href="#properties">Properties&lt;/a> for more information. From this pane you can also &lt;a href="#import-forms">Import forms&lt;/a>, see the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/version-history/">Version history&lt;/a> for a process and set process &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/settings/">Settings&lt;/a>. Click on the links to find out more.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>Note that the name of the process you are working on is shown in the top menu bar, for example Quarterly Training Request.&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: The name of the process you are working on is shown in the top menu bar, for example Quarterly Training Request.&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: Multiple users can view and design a process synchronously, allowing for seamless collaboration on your processess. The below error message is displayed in the bottom right corner when another user(s) is/are &lt;strong>viewing/editing&lt;/strong> the current process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/another-user-editing-notification.png" alt="Another user editing process image">&lt;/p>
+&lt;p>When another user &lt;strong>saves a change&lt;/strong> to the process design that you are currently viewing, the below error message is displayed in the bottom right corner.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/another-user-save-changes-notification.png" alt="Another user save changes notification image">&lt;/p>
 &lt;h2 id="how-to-get-started-with-forms">How to get started with forms&lt;/h2>
 &lt;ol>
 &lt;li>
