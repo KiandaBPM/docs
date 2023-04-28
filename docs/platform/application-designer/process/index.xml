@@ -44,12 +44,10 @@
 &lt;p>View and edit &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/properties/">Form properties&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/">rules&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="process-settings">Process settings&lt;/h3>
+&lt;h2 id="process-settings">Process settings&lt;/h2>
 &lt;p>You can edit process settings by clicking on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings button"> in the right-hand pane. &lt;img src="https://docs.kianda.com/images/process-settings-tabs.jpg" alt="Process settings">&lt;/p>
 &lt;p>Within process settings, there are four tabs to navigate to:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>General&lt;/strong>:&lt;/p>
+&lt;h3 id="1-general">1. &lt;strong>General&lt;/strong>:&lt;/h3>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-settings-general.jpg" alt="Process settings general tab">&lt;/p>
 &lt;ul>
 &lt;li>
@@ -70,9 +68,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-navigator-selection.jpg" alt="Process navigator selection">&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Security&lt;/strong>:&lt;/p>
+&lt;h3 id="2-security">2. &lt;strong>Security&lt;/strong>:&lt;/h3>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-settings-security.jpg" alt="Process settings security tab">&lt;/p>
 &lt;ul>
 &lt;li>
@@ -82,9 +78,7 @@
 &lt;p>&lt;strong>Instance delete settings&lt;/strong> - options are a) Any user can delete b) Creator can delete c) &amp;ldquo;Current form owner&amp;rdquo; can delete d) &amp;ldquo;Security users&amp;rdquo; can delete e) &amp;ldquo;Admins only&amp;rdquo; can delete. The default setting is &lt;strong>Creator can delete&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Tabs&lt;/strong>:&lt;/p>
+&lt;h3 id="3-tabs">3. &lt;strong>Tabs&lt;/strong>:&lt;/h3>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-settings-tabs2.jpg" alt="Process settings tabs tab">&lt;/p>
 &lt;ul>
 &lt;li>
@@ -103,9 +97,7 @@
 &lt;p>&lt;strong>Completed tab theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is completed.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Anonymous Form&lt;/strong>:&lt;/p>
+&lt;h3 id="4-anonymous-form">4. &lt;strong>Anonymous Form&lt;/strong>:&lt;/h3>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-settings-anonymous2.jpg" alt="Link for external users">&lt;/p>
 &lt;ul>
 &lt;li>
@@ -120,13 +112,12 @@
 &lt;ul>
 &lt;li>&lt;strong>Process URL&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Workspace Home&lt;/strong>&lt;/li>
+&lt;li>The result is a globally available link to allow external users to create a &lt;strong>new instance&lt;/strong>. You can use the &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/anonymous-form-link/">&lt;strong>Anonymous form link Rule&lt;/strong>&lt;/a> to generate a new anonymous link at runtime that will point to an &lt;strong>existing process instance&lt;/strong> that can be shared with external users.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;/ol>
 &lt;p>When you are finished editing the process settings:&lt;/p>
 &lt;ol>
 &lt;li>Click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/li>
