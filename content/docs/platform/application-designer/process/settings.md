@@ -35,7 +35,7 @@ Settings are available from the right-hand pane and give you the ability to:
   
 
 
-### Process settings
+## Process settings
 
 You can edit process settings by clicking on the **Settings** button ![Settings button](/images/settings.png) in the right-hand pane. ![Process settings](/images/process-settings-tabs.jpg) 
 
@@ -43,7 +43,7 @@ Within process settings, there are four tabs to navigate to:
 
 
 
-1. **General**:
+### 1. **General**:
 
    ![Process settings general tab](/images/process-settings-general.jpg)
 
@@ -65,7 +65,7 @@ Within process settings, there are four tabs to navigate to:
 
      
 
-2. **Security**:
+### 2. **Security**:
 
    ![Process settings security tab](/images/process-settings-security.jpg)
 
@@ -75,7 +75,7 @@ Within process settings, there are four tabs to navigate to:
 
      
 
-3. **Tabs**:
+### 3. **Tabs**:
 
    ![Process settings tabs tab](/images/process-settings-tabs2.jpg) 
 
@@ -91,7 +91,7 @@ Within process settings, there are four tabs to navigate to:
 
      
 
-4. **Anonymous Form**:
+### 4. **Anonymous Form**:
 
    ![Link for external users](/images/process-settings-anonymous2.jpg)
 
@@ -104,6 +104,7 @@ Within process settings, there are four tabs to navigate to:
      - **Force authenticated user to log out** - options are a) Yes or b) No to force the authenticated user to log out once the form is submitted. If **No** is selected, you can choose to **Redirect authenticated user to**:
        - **Process URL**
        - **Workspace Home** 
+       - The result is a globally available link to allow external users to create a **new instance**. You can use the [**Anonymous form link Rule**](/docs/platform/rules/communications/anonymous-form-link/) to generate a new anonymous link at runtime that will point to an **existing process instance** that can be shared with external users.
 
 When you are finished editing the process settings:
 
