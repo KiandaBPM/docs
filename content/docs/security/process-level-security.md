@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\static
 
 ## Introduction
 
-In addition to [Workspace security](, se/docs/security/workspace-security/) that is setting levels of access by role and form ownership, there are a multitude of ways to set access at a process, field and dashboard level. The following sections describe security at different levels. 
+In addition to [Workspace security](/docs/security/workspace-security/) that is setting levels of access by role and form ownership, there are a multitude of ways to set access at a process, field and dashboard level. The following sections describe security at different levels. 
 
 ## Process security settings
 
