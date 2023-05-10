@@ -1065,7 +1065,12 @@ Your browser does not support the video tag.
 &lt;img src="https://docs.kianda.com/images/procore-log-in.png" alt="Procore log in window" style="zoom:50%;" />
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Procore Environment&lt;/strong> - select one of the three radio buttons to choose your desired Procore Environment. The options are a) &lt;em>Live&lt;/em>, b) &lt;em>Monthly Sandbox&lt;/em>, and c) &lt;em>Developer Sandbox&lt;/em>.&lt;/p>
+&lt;p>&lt;strong>Procore Environment&lt;/strong> - select one of the three radio buttons to choose your desired &lt;a href="https://developers.procore.com/documentation/development-environments">Procore Environment&lt;/a>. The options are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Live&lt;/strong> - live feed of Procore data.&lt;/li>
+&lt;li>&lt;strong>Monthly Sandbox&lt;/strong> - refreshed with current production data on a regularly scheduled basis once each month. Data you create, update, or manipulate within a Monthly Sandbox environment will never affect the original production data and will exist solely in the context of that environment.&lt;/li>
+&lt;li>&lt;strong>Developer Sandbox&lt;/strong> - automatically generated for third-party developers in their Developer Portal account and includes seed project data that can be used for testing purposes. The Development Sandbox environment does not refresh with production data at any time.&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is disabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between your &lt;strong>local device&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>. When &lt;strong>Use Kianda Cloud Connect&lt;/strong> is enabled, a &lt;strong>Connectors&lt;/strong> option appears.&lt;/p>
@@ -1076,7 +1081,7 @@ Your browser does not support the video tag.
 &lt;li>
 &lt;p>&lt;strong>Status&lt;/strong> - represents the current status of the connection.&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed&lt;/li>
+&lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed.&lt;/li>
 &lt;li>&lt;strong>test failed&lt;/strong> - means that the details of the connector are incorrect and the connection has failed.&lt;/li>
 &lt;li>&lt;strong>ready&lt;/strong> - means that the connector has successfully connected and its ready to be used.&lt;/li>
 &lt;/ul>
