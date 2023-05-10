@@ -40,17 +40,21 @@ You can use the Procore connector when you want a process within your Kianda sub
    
      <img src="/images/procore-log-in.png" alt="Procore log in window" style="zoom:50%;" />
    
-   - **Procore Environment** - select one of the three radio buttons to choose your desired Procore Environment. The options are a) *Live*, b) *Monthly Sandbox*, and c) *Developer Sandbox*.
+   - **Procore Environment** - select one of the three radio buttons to choose your desired [Procore Environment](https://developers.procore.com/documentation/development-environments). The options are: 
+   
+     - **Live** - live feed of Procore data.
+     - **Monthly Sandbox** - refreshed with current production data on a regularly scheduled basis once each month. Data you create, update, or manipulate within a Monthly Sandbox environment will never affect the original production data and will exist solely in the context of that environment.
+     - **Developer Sandbox** - automatically generated for third-party developers in their Developer Portal account and includes seed project data that can be used for testing purposes. The Development Sandbox environment does not refresh with production data at any time.
    
    - **Use Kianda Cloud Connect** - by default this option is disabled, the cloud connect is used to **create a connection** between your **local device** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/). When **Use Kianda Cloud Connect** is enabled, a **Connectors** option appears.
-     
+   
      - **Connectors** - displays all available connector PC's that have a **connection established** with your **Kianda** subscription. This option is used to select the PC **connection** that **runs** the **Procore account** that you want to connect to.
-     
+   
    - **Status** - represents the current status of the connection.
-     - **incomplete** - means that the details of the connector were not fully completed
+     - **incomplete** - means that the details of the connector were not fully completed.
      - **test failed** - means that the details of the connector are incorrect and the connection has failed.
      - **ready** - means that the connector has successfully connected and its ready to be used.
-     
+   
    - When you have added the Procore account details, you are ready to test your connection and add security. At the bottom of the **Procore datasource details** page, click on the **Test connection** button ![Test connection for REST Service](/images/test-connection.jpg) and if the service has been correctly configured, then you should receive a notification saying **Connection test succeeded**.
    
    - Click on **Save** ![Save connection button](/images/save-connection.jpg) to save the connection and you will receive a notification saying **Details saved successfully**.
