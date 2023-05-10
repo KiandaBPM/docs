@@ -1039,9 +1039,11 @@
 Your browser does not support the video tag.
 &lt;/source>
 &lt;/video></description></item><item><title>Docs: Procore Connector</title><link>https://docs.kianda.com/docs/platform/connectors/procore/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/procore/</guid><description>
-&lt;p>A data connector available within Kianda is the &lt;strong>Procore connector&lt;/strong>. Procore provide a widely used construction management software to streamline project communication, documentation and analysis. Procore also has project management and financial features, as well as tender management and builder information modeling (BIM) designers. Kianda allows you to connect to Procore as a data connector, providing an easy and seamless way of integrating all your Procore data gathered from these features into your Kianda process.&lt;/p>
+&lt;p>A data connector available within Kianda is the &lt;strong>Procore connector&lt;/strong>. Procore provide a widely used construction management software to streamline project communication, documentation and analysis. Procore also has project management and financial features, as well as tender management and builder information modelling (BIM) designers. Kianda allows you to connect to Procore as a data connector, providing an easy and seamless way of integrating all your Procore data gathered from these features into your Kianda process. For more information, see &lt;a href="https://developers.procore.com/documentation/introduction">Procore Developer Documentation&lt;/a>.&lt;/p>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
 &lt;p>In advance of using the Procore data connector, you must have an account with Procore which is used to obtain information for a successful connection.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use the Procore connector when you want a process within your Kianda subscription to have &lt;strong>access&lt;/strong> to your Procore data. You can perform &lt;strong>Create, Read, Update&lt;/strong> and &lt;strong>Delete&lt;/strong> (&lt;strong>CRUD&lt;/strong>) operations on your Procore data once the connection has been established and configured.&lt;/p>
 &lt;h2 id="how-to-get-started-add-new-data-connector-buttonimagesprocore-logopng">How to get started &lt;img src="https://docs.kianda.com/images/procore-logo.png" alt="Add new data connector button">&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -1052,16 +1054,51 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;li>
 &lt;p>You will be automatically brought to the &lt;strong>Procore details&lt;/strong> page, where you can start setting up the connection.&lt;/p>
-&lt;p>&lt;strong>PICTURE HERE&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/procore-connector-details.png" alt="Procore connection details">&lt;/p>
 &lt;p>Choose from the edit options:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your Procore connector. This is used to distinguish between different data connectors on your platform.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Datasource Name&lt;/strong> - type in the name for your Procore connector. This is used to distinguish between different data connectors on your platform.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Procore Company Id&lt;/strong> - type in the Company ID that is assigned to your Procore account. When you enter your Procore Company ID, the &lt;strong>Authorize&lt;/strong> button &lt;img src="https://docs.kianda.com/images/authorize.jpg" alt="authorize button" style="zoom:150%;" /> will appear. This allows you to &lt;strong>authorize&lt;/strong> the connection with your Procore account and Kianda. When you click this button, a Procore window will open allowing you to log in into your Procore to &lt;strong>authenticate&lt;/strong> your account.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/procore-log-in.png" alt="Procore log in window" style="zoom:50%;" />
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Procore Environment&lt;/strong> - select one of the three radio buttons to choose your desired Procore Environment. The options are a) &lt;em>Live&lt;/em>, b) &lt;em>Monthly Sandbox&lt;/em>, and c) &lt;em>Developer Sandbox&lt;/em>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is disabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between your &lt;strong>local device&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>. When &lt;strong>Use Kianda Cloud Connect&lt;/strong> is enabled, a &lt;strong>Connectors&lt;/strong> option appears.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that &lt;strong>runs&lt;/strong> the &lt;strong>Procore account&lt;/strong> that you want to connect to.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Status&lt;/strong> - represents the current status of the connection.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed&lt;/li>
+&lt;li>&lt;strong>test failed&lt;/strong> - means that the details of the connector are incorrect and the connection has failed.&lt;/li>
+&lt;li>&lt;strong>ready&lt;/strong> - means that the connector has successfully connected and its ready to be used.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added the Procore account details, you are ready to test your connection and add security. At the bottom of the &lt;strong>Procore datasource details&lt;/strong> page, click on the &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="procore-parameters">Procore parameters&lt;/h2>
 &lt;p>When you use the &lt;strong>Procore&lt;/strong> datasource, there are &lt;strong>default parameters&lt;/strong> invoked from the files that you can access. For example when you create a &lt;strong>list&lt;/strong> filed in a Kianda form and use Procore as its datasource, these Procore parameters will appear in &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and &lt;strong>Sort by&lt;/strong> field in the &lt;strong>Edit field dialog box&lt;/strong>, see &lt;strong>Name&lt;/strong> for example in the image below:&lt;/p>
-&lt;p>&lt;strong>PICTURE HERE&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>PICTURE HERE - NEED PROCORE CONNECTION TO BE ESTABLISHED TO CAPTURE THIS IMAGE&lt;/strong>&lt;/p>
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Your &lt;strong>Procore service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Salesforce</title><link>https://docs.kianda.com/docs/platform/connectors/salesforce/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/salesforce/</guid><description>
 &lt;p>One of the data connectors that you can connect to is &lt;strong>Salesforce&lt;/strong>. Salesforce provides customer relationship management software and applications focused on sales, customer service, marketing automation, and analytics. The Salesforce data connector allows you to access information from your Salesforce account which can then be used within your Kianda subscription.&lt;/p>
