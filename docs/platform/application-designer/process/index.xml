@@ -247,4 +247,59 @@
 &lt;ul>
 &lt;li>To learn more about design controls that can be applied to forms go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">&lt;strong>Controls&lt;/strong>&lt;/a>.&lt;/li>
 &lt;li>To learn more about how common fields are displayed in dashboards in a list widget go to &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">&lt;strong>List widget&lt;/strong>&lt;/a>.&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Process navigator</title><link>https://docs.kianda.com/docs/platform/application-designer/process/navigator/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/navigator/</guid><description>
+&lt;p>&lt;strong>Process navigator&lt;/strong> can be found in each &lt;strong>process design&lt;/strong> in the right-hand pane. The navigator is used to help you navigate to &lt;strong>fields&lt;/strong> and &lt;strong>rules&lt;/strong> that are present within you process. By clicking on a field for example, you will be navigated specifically to where the field is within your process while also &lt;strong>highlighting&lt;/strong> the field with a &lt;strong>border&lt;/strong> for a &lt;strong>short period&lt;/strong> of time. You can also do the same for &lt;strong>rules&lt;/strong>, once you click on a rule in the navigator, you will be brought to the form where the rule is located and it will highlight the specific field that the rule is attached to.&lt;/p>
+&lt;p>The very useful &lt;strong>feature&lt;/strong> of the &lt;strong>process navigator&lt;/strong> is its &lt;strong>search bar&lt;/strong>. With big processes that contain many &lt;strong>forms, fields and rules&lt;/strong> can be overwhelming and time consuming to look for a particular filed or rule. You can simply &lt;strong>type&lt;/strong> in the &lt;strong>name&lt;/strong> of the filed/rule and options will appear under the Process Navigator&lt;/p>
+&lt;h2 id="how-to-turn-on-the-process-navigator">How to turn on the process navigator&lt;/h2>
+&lt;p>By default the &lt;strong>process navigator&lt;/strong> is turned &lt;strong>off&lt;/strong> within each process design. To turn the process navigator on:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>First, navigate to the desired process by going to &lt;strong>Administrator&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> &amp;gt; click on desired process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Go to &lt;strong>Settings&lt;/strong> of the process found on the right-hand pane.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/designer-settings.png" alt="Process settings">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the General tab of the &lt;strong>Process Settings&lt;/strong> dialog box, select &lt;strong>Yes&lt;/strong> on the &lt;strong>Enable process navigator&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;strong>OK&lt;/strong> on the dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click process &lt;strong>save&lt;/strong> &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Process and form properties"> button.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="how-to-use-the-process-navigator">How to use the process navigator&lt;/h2>
+&lt;p>When you have your process navigator turned on, you will be able to see it on the &lt;strong>right-hand pane&lt;/strong> underneath the &lt;strong>rules tab&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/process-navigator-tab.png" alt="Process and form properties">&lt;/p>
+&lt;h3 id="how-to-navigate-to-a-fieldrule">How to navigate to a field/rule&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Process navigator tab&lt;/strong> to expand it. This will allow you to see all forms that are present within your process.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Expand&lt;/strong> a form in which the desired field is located by clicking on the plus, or simply type in the name of the field into the process navigator search bar.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/navigator-expand-from.jpg" alt="expand form in process navigator">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the field you wish to &lt;strong>navigate&lt;/strong> to. The navigator will &lt;strong>jump straight&lt;/strong> into the form that the field is in and the field itself will be &lt;strong>highlighted&lt;/strong> for a &lt;strong>brief period&lt;/strong> of time. See the image below for an example when navigating to a &lt;strong>Comments&lt;/strong> field within a process design:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/navigator-field-highlight.jpg" alt="Filed highlight from a process navigator">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="how-to-search-for-a-filedrule">How to search for a filed/rule&lt;/h3>
+&lt;p>The very useful &lt;strong>feature&lt;/strong> of the &lt;strong>process navigator&lt;/strong> is its &lt;strong>search bar&lt;/strong>. With big processes that contain many &lt;strong>forms, fields and rules&lt;/strong> can be overwhelming and time consuming to look for a particular filed or rule. You can simply &lt;strong>type&lt;/strong> in the &lt;strong>name&lt;/strong> of the filed/rule and options will appear under the Process navigator.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>In the provided search textbox of the process navigator, type in the &lt;strong>Name&lt;/strong> of the filed or rule your trying to navigate to.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Once you start typing, fields and rules will start to &lt;strong>show&lt;/strong> that &lt;strong>contain&lt;/strong> the &lt;strong>text&lt;/strong> within the search textbox.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/navigator-search.jpg" alt="Search function of the process navigator">&lt;/p>
+&lt;p>In the above image you can see that when the word &lt;strong>date&lt;/strong> is entered, all fields and rules that contain the word &lt;strong>date&lt;/strong> will show in the process navigator. You can then click on the desired field/rule for the navigator to navigate you to the location.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;ul>
+&lt;li>To learn more about design controls that can be applied to forms go to &lt;a href="http://localhost:1313/docs/platform/controls/">&lt;strong>Controls&lt;/strong>&lt;/a>.&lt;/li>
 &lt;/ul></description></item></channel></rss>
