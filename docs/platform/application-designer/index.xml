@@ -1,98 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Application designer</title><link>https://docs.kianda.com/docs/platform/application-designer/</link><description>Recent content in Application designer on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/application-designer/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Component</title><link>https://docs.kianda.com/docs/platform/application-designer/component/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/component/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>A Kianda &lt;strong>components&lt;/strong> acts as a smaller version of a &lt;strong>process&lt;/strong> made up of &lt;strong>various&lt;/strong> control fields and rules. You can &lt;strong>reuse&lt;/strong> the component in your process designs to save you time and effort of creating each field and rule combination from the beginning. To the component you can add all control type fields and rules to match your needs. Creating a component will &lt;strong>significantly&lt;/strong> &lt;strong>speed up&lt;/strong> your process &lt;strong>creation time&lt;/strong> if some of your processes demand &lt;strong>same fields and logic&lt;/strong>. For example if a lot of your process designs have a &lt;strong>Personal Details&lt;/strong> section where a user needs to fill in their &lt;strong>first&lt;/strong> and &lt;strong>last&lt;/strong> &lt;strong>name&lt;/strong>, &lt;strong>email&lt;/strong>, &lt;strong>job role&lt;/strong>, &lt;strong>phone&lt;/strong> &lt;strong>number&lt;/strong> and whatever it may be. To save time on process creation time, you can create &lt;strong>one&lt;/strong> component with those exact fields you need and use the component it in various types of process designs.&lt;/p>
-&lt;p>The component you create can be updated at any time if it needs improvement or to better match your requirements. Once you publish your component it can be used in any process of your choice and any processes that already use your component will be automatically updated.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;h5 id="how-to-create-a-new-component">How to create a new component:&lt;/h5>
-&lt;ol>
-&lt;li>
-&lt;p>From the home page, navigate to &lt;strong>Administrator &amp;gt; Designer.&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When you are in the &lt;strong>Process designer&lt;/strong> screen navigate your mouse to the &lt;img src="https://docs.kianda.com/images/addnew-component.jpg" alt="Idea icon"> button and click the small &lt;strong>down arrow.&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/component-addnew.jpg" alt="Idea icon">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the dropdown menu click on &lt;strong>Component&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/component-create-new.jpg" alt="Idea icon">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Add new component&lt;/strong> dialog box, fill in the following detail:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/component-add-new-dialog.jpg" alt="Idea icon">&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong> - represents the title of your component.&lt;/li>
-&lt;li>&lt;strong>ID&lt;/strong> - represents the &lt;strong>unique&lt;/strong> id of the component. Ensure that the ID entered here is unique across all components and processes.&lt;/li>
-&lt;li>&lt;strong>Description&lt;/strong> - enter a valid description of the component you are creating.&lt;/li>
-&lt;li>&lt;strong>Group&lt;/strong> - using this drop-down list, you can add your component to a existing group or create a new one.&lt;/li>
-&lt;li>&lt;strong>Administrators&lt;/strong> - select the component administrators, to read more about process and component administrators visit, [&lt;strong>LINK TO SECURITY&lt;/strong>]&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> when you are finished filling out the detail. You will be automatically moved to the component designer screen.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h5 id="to-edit-details-of-an-existing-component">To edit details of an existing component:&lt;/h5>
-&lt;ol>
-&lt;li>
-&lt;p>From the home page, navigate to &lt;strong>Administrator &amp;gt; Designer.&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Process designer&lt;/strong> screen, navigate to the folder you stored your component and click the &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Idea icon">. Make note that the type will state &lt;strong>Component&lt;/strong> within the list of all processes and components.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/component-edit-details.jpg" alt="Edit component">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The Edit component dialog will appear allowing you to change some of the detail which include:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Description&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Group&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Administrators&lt;/strong>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>When you are happy with the changes made to the details, click on &lt;strong>OK&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h5 id="how-to-access-an-existing-component">How to access an existing component:&lt;/h5>
-&lt;ol>
-&lt;li>
-&lt;p>From the home page, navigate to &lt;strong>Administrator &amp;gt; Designer.&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Process designer&lt;/strong> screen, in the list of processes, components and folders, navigate to the until you see your component and click on the &lt;strong>title&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/component-access-edit.jpg" alt="Edit component">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You will be navigated to the component designer screen.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="how-to-add-move-or-remove-fields">How to add, move or remove fields&lt;/h2>
-&lt;p>Adding, moving and removing fields from a component works exactly the same as within a process. There are three categories of controls (fields):&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Input&lt;/strong> - There are eight types of Input fields. These include the most commonly used data fields such as text box, user picker, date field, table, checkbox, drop-down and number field. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Layout&lt;/strong> - There are four Layout fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields - see &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/">Layout&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Action&lt;/strong> - There are four Action fields that allow user interface actions like buttons, links or even signature components - see &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a> for more information.&lt;/li>
-&lt;/ol>
-&lt;p>To start &lt;strong>adding&lt;/strong> controls or fields to a form:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Select the form you want to work on so that the &lt;strong>Edit Form&lt;/strong> button (Pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">) appears.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on a Controls &lt;strong>category&lt;/strong> (Input, Layout or Action) and control type in the left-hand pane. For example, you could choose the &lt;strong>Input&lt;/strong> category and select &lt;strong>Text box&lt;/strong> to insert a text box into your form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>move&lt;/strong> a control, click on the &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>remove&lt;/strong> a control from your form, select the field you want to remove, then click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and click on &lt;strong>OK&lt;/strong> to confirm removal.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;ul>
-&lt;li>To read more about field control visit &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/">Controls&lt;/a>.&lt;/li>
-&lt;li>To read more about rules visit &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/designer/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Application designer</title><link>https://docs.kianda.com/docs/platform/application-designer/</link><description>Recent content in Application designer on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/platform/application-designer/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/designer/</guid><description>
 &lt;p>Kianda &lt;strong>Designer&lt;/strong> provides an intuitive interface where you can quickly start building &lt;strong>forms&lt;/strong> for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).&lt;/p>
 &lt;h2 id="how-designer-works">How Designer works&lt;/h2>
 &lt;p>This video introduces Kianda Designer and demonstrates how to start creating a form and add fields.&lt;/p>
@@ -581,4 +487,98 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>We have briefly introduced how to create, edit and export processes. To read more about process instances and settings go to the links below:&lt;/p></description></item></channel></rss>
+&lt;p>We have briefly introduced how to create, edit and export processes. To read more about process instances and settings go to the links below:&lt;/p></description></item><item><title>Docs: Component</title><link>https://docs.kianda.com/docs/platform/application-designer/component/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/component/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>A Kianda &lt;strong>components&lt;/strong> acts as a smaller version of a &lt;strong>process&lt;/strong> made up of &lt;strong>various&lt;/strong> control fields and rules. You can &lt;strong>reuse&lt;/strong> the component in your process designs to save you time and effort of creating each field and rule combination from the beginning. To the component you can add all control type fields and rules to match your needs. Creating a component will &lt;strong>significantly&lt;/strong> &lt;strong>speed up&lt;/strong> your process &lt;strong>creation time&lt;/strong> if some of your processes demand &lt;strong>same fields and logic&lt;/strong>. For example if a lot of your process designs have a &lt;strong>Personal Details&lt;/strong> section where a user needs to fill in their &lt;strong>first&lt;/strong> and &lt;strong>last&lt;/strong> &lt;strong>name&lt;/strong>, &lt;strong>email&lt;/strong>, &lt;strong>job role&lt;/strong>, &lt;strong>phone&lt;/strong> &lt;strong>number&lt;/strong> and whatever it may be. To save time on process creation time, you can create &lt;strong>one&lt;/strong> component with those exact fields you need and use the component it in various types of process designs.&lt;/p>
+&lt;p>The component you create can be updated at any time if it needs improvement or to better match your requirements. Once you publish your component it can be used in any process of your choice and any processes that already use your component will be automatically updated.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;h5 id="how-to-create-a-new-component">How to create a new component:&lt;/h5>
+&lt;ol>
+&lt;li>
+&lt;p>From the home page, navigate to &lt;strong>Administrator &amp;gt; Designer.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are in the &lt;strong>Process designer&lt;/strong> screen navigate your mouse to the &lt;img src="https://docs.kianda.com/images/addnew-component.jpg" alt="Idea icon"> button and click the small &lt;strong>down arrow.&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/component-addnew.jpg" alt="Idea icon">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the dropdown menu click on &lt;strong>Component&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/component-create-new.jpg" alt="Idea icon">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Add new component&lt;/strong> dialog box, fill in the following detail:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/component-add-new-dialog.jpg" alt="Idea icon">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> - represents the title of your component.&lt;/li>
+&lt;li>&lt;strong>ID&lt;/strong> - represents the &lt;strong>unique&lt;/strong> id of the component. Ensure that the ID entered here is unique across all components and processes.&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong> - enter a valid description of the component you are creating.&lt;/li>
+&lt;li>&lt;strong>Group&lt;/strong> - using this drop-down list, you can add your component to a existing group or create a new one.&lt;/li>
+&lt;li>&lt;strong>Administrators&lt;/strong> - select the component administrators, to read more about process and component administrators visit, [&lt;strong>LINK TO SECURITY&lt;/strong>]&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when you are finished filling out the detail. You will be automatically moved to the component designer screen.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h5 id="to-edit-details-of-an-existing-component">To edit details of an existing component:&lt;/h5>
+&lt;ol>
+&lt;li>
+&lt;p>From the home page, navigate to &lt;strong>Administrator &amp;gt; Designer.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Process designer&lt;/strong> screen, navigate to the folder you stored your component and click the &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Idea icon">. Make note that the type will state &lt;strong>Component&lt;/strong> within the list of all processes and components.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/component-edit-details.jpg" alt="Edit component">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The Edit component dialog will appear allowing you to change some of the detail which include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Group&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Administrators&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are happy with the changes made to the details, click on &lt;strong>OK&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h5 id="how-to-access-an-existing-component">How to access an existing component:&lt;/h5>
+&lt;ol>
+&lt;li>
+&lt;p>From the home page, navigate to &lt;strong>Administrator &amp;gt; Designer.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Process designer&lt;/strong> screen, in the list of processes, components and folders, navigate to the until you see your component and click on the &lt;strong>title&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/component-access-edit.jpg" alt="Edit component">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will be navigated to the component designer screen.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="how-to-add-move-or-remove-fields">How to add, move or remove fields&lt;/h2>
+&lt;p>Adding, moving and removing fields from a component works exactly the same as within a process. There are three categories of controls (fields):&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Input&lt;/strong> - There are eight types of Input fields. These include the most commonly used data fields such as text box, user picker, date field, table, checkbox, drop-down and number field. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - There are four Layout fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields - see &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/">Layout&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Action&lt;/strong> - There are four Action fields that allow user interface actions like buttons, links or even signature components - see &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a> for more information.&lt;/li>
+&lt;/ol>
+&lt;p>To start &lt;strong>adding&lt;/strong> controls or fields to a form:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Select the form you want to work on so that the &lt;strong>Edit Form&lt;/strong> button (Pen icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">) appears.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on a Controls &lt;strong>category&lt;/strong> (Input, Layout or Action) and control type in the left-hand pane. For example, you could choose the &lt;strong>Input&lt;/strong> category and select &lt;strong>Text box&lt;/strong> to insert a text box into your form.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>move&lt;/strong> a control, click on the &lt;strong>Drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To &lt;strong>remove&lt;/strong> a control from your form, select the field you want to remove, then click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and click on &lt;strong>OK&lt;/strong> to confirm removal.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;ul>
+&lt;li>To read more about field control visit &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/">Controls&lt;/a>.&lt;/li>
+&lt;li>To read more about rules visit &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/li>
+&lt;/ul></description></item></channel></rss>
