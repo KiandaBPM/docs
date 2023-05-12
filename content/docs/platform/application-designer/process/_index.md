@@ -2,6 +2,7 @@
 title: "Getting started with Kianda processes"
 linkTitle: "Process"
 typora-root-url: ..\..\..\..\..\static
+weight: 3
 ---
 
 The power of Kianda lies in giving anyone, even those without coding experience, the ability to design a **business application or process** quickly and efficiently, for example, this process could be a Quality Assurance checklist that installation engineers must follow on site using a mobile app or it could be a HR process to allow employees to submit annual leave requests and approve these online. Processes can connect to your data sources like Sharepoint or SalesForce allowing for the flexibility of your applications to grow as your business grows.
