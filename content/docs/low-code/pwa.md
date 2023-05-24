@@ -44,6 +44,8 @@ The Kianda platform is designed to be responsive on a myriad of mobile devices w
 
 There are a few options to install your Kianda PWA workspace into mobile devices. The quickest is to let your users manually use the option **Add to Home screen** in their mobile devices.
 
+**Note:**  Please ensure you have the latest version of operating system installed on your device to ensure full functionality.
+
 ### Android
 
 The primary method for android users to install the PWA onto their device is by:
