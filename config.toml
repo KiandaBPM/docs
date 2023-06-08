@@ -19,9 +19,14 @@ theme = ["docsy"]
 enableGitInfo = false
 
 [[menu.main]]
-    name = "Get Started"
+    name = "Free Trial"
     weight = 50
     url = "https://portal.kianda.com/public/signup"
+
+[[menu.main]]
+    name = "Kianda.com"
+    weight = 51
+    url = "https://www.kianda.com/"
 
 # Comment out to enable taxonomies in Docsy
 # disableKinds = ["taxonomy", "taxonomyTerm"]
