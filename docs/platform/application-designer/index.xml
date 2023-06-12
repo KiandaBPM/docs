@@ -581,4 +581,40 @@ Your browser does not support the video tag.
 &lt;ul>
 &lt;li>To read more about field control visit &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/">Controls&lt;/a>.&lt;/li>
 &lt;li>To read more about rules visit &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>Docs: Create from datasource</title><link>https://docs.kianda.com/docs/platform/application-designer/create-from-datasource/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/create-from-datasource/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Create from Datasource&lt;/strong> feature allows you to create a process with a &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Datasource&lt;/a> of your choice, so long as the datasource is already created and connected from within your platform. It serves as a way of swiftly populating your process with the relevant fields of your datasource&amp;rsquo;s lists so that you can increase design productivity from the beginning.&lt;/p>
+&lt;p>Examples of fields that can be populated instantly into your processes include &lt;strong>ProcessID&lt;/strong>, &lt;strong>Title&lt;/strong>, &lt;strong>Description&lt;/strong>, and other fields such as an associated utility panel - important hidden metadata relating to your list.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;h5 id="how-to-create-a-new-process-from-a-datasource">How to create a new process from a datasource:&lt;/h5>
+&lt;ol>
+&lt;li>
+&lt;p>From the home page, navigate to &lt;strong>Administrator &amp;gt; Designer.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are in the &lt;strong>Process designer&lt;/strong> screen navigate your mouse to the &lt;img src="https://docs.kianda.com/images/addnew-component.jpg" alt="Idea icon"> button and click the small &lt;strong>down arrow.&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/component-addnew.jpg" alt="Idea icon">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the dropdown menu click on &lt;strong>Create from datasource&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-from-datasource-new.png" alt="Idea icon">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select datasource&lt;/strong> dialog box, fill in the following details:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/select-datasource-create-from-datasource.png" alt="Idea icon">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Replace list form with Kianda forms?&lt;/strong> - select &lt;em>yes&lt;/em> to &amp;hellip;. and select &lt;em>no&lt;/em> to&amp;hellip;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Datasources&lt;/strong> - select your datasource of choice that you would like to create the process with. These displayed datasources are the datasources that are already created and connected within your Kianda platform. For more information, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Datasources&lt;/a>. In this example we will choose a &lt;a href="https://docs.kianda.com/docs/platform/connectors/sharepoint/">SharePoint&lt;/a> datasource.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Datasource tree&lt;/strong> - once a datasource has been selected, select which elements in that datasource to be displayed as fields in your process. For example a list or a folder. You can drill down into the tree by clicking on the main datasource node at the top and select the relevant element, and you can search the tree by using the search bar in the top right.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> when you are finished filling out the details. You will be automatically moved to the process designer screen. Alternatively you can click &lt;strong>Close&lt;/strong> to exit the creation dialog.&lt;/p>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>
