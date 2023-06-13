@@ -544,6 +544,7 @@
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-edit-field.jpg" alt="Table select field to edit">&lt;/p>
 &lt;p>The &lt;strong>Edit field - Text&lt;/strong> dialog box will open and you can change the title of the field here. There are also a number of other options available to you - see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a> for more information on how you can edit text box fields.&lt;/p>
+&lt;p>&lt;strong>Note&lt;/strong>: The unique names of fields outside of a table do not conflict with the unique names of fields &lt;em>within&lt;/em> a table. Fields with duplicate unique names within the same table &lt;em>are not&lt;/em> allowed however.&lt;/p>
 &lt;h5 id="how-to-delete-a-column-from-a-table">How to delete a column from a Table&lt;/h5>
 &lt;p>To delete a column from a Table field:&lt;/p>
 &lt;ol>

@@ -15,6 +15,10 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/training-folder.jpg" alt="Training folder of processes">&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>You can search for a specific process or process group by typing into the process design &lt;strong>Search bar&lt;/strong>, found above the list of processes. Click on the &lt;strong>cancel&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cancel-btn.png" alt="Cancel button" style="zoom:80%;" /> to clear your search query.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/searching-processes.png" alt="Searching for a process">&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>Click on a process name to see the process design. You are then brought into &lt;strong>Kianda Designer&lt;/strong>, see &lt;a href="#designer-view">Designer view&lt;/a> details below.&lt;/p>
 &lt;/li>
 &lt;li>
@@ -519,7 +523,7 @@
 &lt;ul>
 &lt;li>&lt;strong>First name&lt;/strong> - user&amp;rsquo;s first name&lt;/li>
 &lt;li>&lt;strong>Last name&lt;/strong> - user&amp;rsquo;s last name&lt;/li>
-&lt;li>&lt;strong>Display name&lt;/strong> - how their name will display in the system&lt;/li>
+&lt;li>&lt;strong>Display name&lt;/strong> - how their name will display in the system. The display name is autofilled based off of the user&amp;rsquo;s entered first and last names, which can be changed if necessary.&lt;/li>
 &lt;li>&lt;strong>Primary role&lt;/strong> - click on &lt;strong>More roles&lt;/strong> to see additional roles and choose from six system defined roles.
 &lt;ul>
 &lt;li>
@@ -905,6 +909,10 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/developer-view-updated.jpg" alt="Developer view">&lt;/p>
 &lt;/li>
 &lt;li>
+&lt;p>You can search for a specific field, rule or dashboard widget by typing into the widget &lt;strong>Search bar&lt;/strong>, found above the list of widgets on the top left. Click on the &lt;strong>cancel&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cancel-btn.png" alt="Cancel button" style="zoom:80%;" /> to clear your search query.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/searching-widgets.png" alt="Searching for a process">&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>To view details for existing widgets, click on the widget name.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/widget-example.jpg" alt="Widget example">&lt;/p>
 &lt;/li>
@@ -944,10 +952,16 @@
 &lt;p>When you are finished editing the dialog box click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To create a new customised connector click on the &lt;strong>New Connector&lt;/strong> button &lt;img src="https://docs.kianda.com/images/new-connector-button.jpg" alt="New connector button"> and populate the four tabs that appear. Details on how to create a customised connector are found at &lt;a href="//docs/low-code/custom-connector/">Custom connectors&lt;/a>.&lt;/p>
+&lt;p>To create a new customised connector click on the &lt;strong>New Connector&lt;/strong> button &lt;img src="https://docs.kianda.com/images/new-connector-button.jpg" alt="New connector button"> and populate the four tabs that appear. Details on how to create a customised connector are found at &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/">Custom connectors&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can search for a specific connector by typing into the connector &lt;strong>Search bar&lt;/strong>, found above the list of connectors on the top right. Click on the &lt;strong>cancel&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cancel-btn.png" alt="Cancel button" style="zoom:80%;" /> to clear your search query.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/connector-searching.png" alt="Searching for connectors">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To create your own webhooks, click on &lt;strong>Webhooks&lt;/strong> to configure URLs to respond to process instance create, update and delete events.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/webhook-edit.jpg" alt="Instance Callback URLs">&lt;/p>
 &lt;ul>
 &lt;li>Move the slider across for each type of operation (Create, Update, Delete) to add in a URL to enable callback.
@@ -958,8 +972,6 @@
 &lt;/li>
 &lt;li>When you are finished editing the dialog box click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit.&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;/ol>
 &lt;h2 id="emberjs-templating-basics">EmberJS templating basics&lt;/h2>
 &lt;p>With Handlebars you can quickly build web applications that are made up of different components. Handlebar templates contain static HTML and dynamic content inside Handlebars expressions, which are summoned with double curly braces: {{ }}&lt;/p>
 &lt;p>Dynamic content inside a Handlebars expression is rendered with data-binding. This means if you update a property, your usage of that property in a template will be automatically updated to the latest value.&lt;/p>

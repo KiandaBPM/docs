@@ -279,7 +279,7 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/common-fields-in-condition.jpg" alt="Common fields used in the process element part of a condition">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Next, depending on whether the rule is applied to a &lt;strong>text-based fields, date fields or user picker fields&lt;/strong>, choose from 13 text operators, 25 date operators and one additional user picker operator, as shown in the image below.&lt;/p>
+&lt;p>Next, depending on whether the rule is applied to &lt;strong>text-based fields, date fields or user picker fields&lt;/strong>, choose from 13 text operators, 25 date operators and one additional user picker operator, as shown in the image below.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Then choose a &lt;strong>value&lt;/strong>, this could be typed in text, number(s), date(s), form(s) or field(s).&lt;/p>
@@ -2655,6 +2655,10 @@ The Safety Team
 &lt;li>
 &lt;p>Processes may be arranged in folders or groups. Click on the folder name to see processes within that group, for example a group like &lt;strong>Training&lt;/strong> as shown in the image.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/training-folder.jpg" alt="Training folder of processes">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can search for a specific process or process group by typing into the process design &lt;strong>Search bar&lt;/strong>, found above the list of processes. Click on the &lt;strong>cancel&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cancel-btn.png" alt="Cancel button" style="zoom:80%;" /> to clear your search query.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/searching-processes.png" alt="Searching for a process">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on a process name to see the process design. You are then brought into &lt;strong>Kianda Designer&lt;/strong>, see &lt;a href="#designer-view">Designer view&lt;/a> details below.&lt;/p>

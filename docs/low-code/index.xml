@@ -813,10 +813,10 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;p>There are three key steps that need to be implemented in order to create and use a customised connector as follows:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Microservice - create a &lt;strong>microservice&lt;/strong> that will implement metadata, query and test functions, click on the &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/create-microservice/">Microservice&lt;/a> link to get further details.&lt;/p>
+&lt;p>Microservice - create a &lt;strong>microservice&lt;/strong> that will implement metadata, query and test functions. &lt;!-- click on the [Microservice](/docs/low-code/custom-connector/create-microservice/) link to get further details. -->&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Use Kianda features to create and test your customised connector - use &lt;strong>Developer&lt;/strong> to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/steps-to-create/#register-a-new-connector">register a new connector&lt;/a> and use &lt;strong>Data sources&lt;/strong> to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#creating-a-datasource">create a datasource&lt;/a> for the newly customised connector. Both of these features are available under &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/administration/">Administration&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>Use Kianda features to create and test your customised connector - use &lt;strong>Developer&lt;/strong> to register a new connector&lt;!-- [register a new connector](/docs/low-code/custom-connector/steps-to-create/#register-a-new-connector) --> and use &lt;strong>Data sources&lt;/strong> to &lt;!-- [create a datasource](/docs/platform/connectors/#creating-a-datasource) --> create a datasource for the newly customised connector. Both of these features are available under &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/administration/">Administration&lt;/a>&lt;/strong>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Process - use the custom connector to bring data into a process and use the &lt;strong>query hook&lt;/strong> to filter the data. Use Kianda &lt;strong>Designer&lt;/strong> to connect your data source to Kianda forms, for example a List control can connect to a datasource, see step 9 in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/#how-to-get-started">List control&lt;/a>.&lt;/p>
