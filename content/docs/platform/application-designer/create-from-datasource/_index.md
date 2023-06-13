@@ -11,7 +11,9 @@ The **Create from Datasource** feature allows you to create a process using a [D
 
 Using this feature serves as a way of swiftly populating your process with the relevant fields from your datasource lists so that you can increase design productivity from the beginning.
 
-Examples of fields that can be populated instantly into your processes include **ProcessID**, **Title**, **Description**, and other fields such as an associated utility panel - important hidden metadata relating to your list.
+See below for an example of SharePoint columns being populated into the Kianda process as fields:
+
+![SharePoint list as datasource](/images/datasource-sharepoint-process.png)
 
 
 
