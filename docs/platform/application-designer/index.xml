@@ -563,7 +563,8 @@ Your browser does not support the video tag.
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Create from Datasource&lt;/strong> feature allows you to create a process using a &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Datasource&lt;/a> of your choice where the datasource elements will populate your Kianda form. Note that the datasource is already created within your platform within the &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong> section.&lt;/p>
 &lt;p>Using this feature serves as a way of swiftly populating your process with the relevant fields from your datasource lists so that you can increase design productivity from the beginning.&lt;/p>
-&lt;p>Examples of fields that can be populated instantly into your processes include &lt;strong>ProcessID&lt;/strong>, &lt;strong>Title&lt;/strong>, &lt;strong>Description&lt;/strong>, and other fields such as an associated utility panel - important hidden metadata relating to your list.&lt;/p>
+&lt;p>See below for an example of SharePoint columns being populated into the Kianda process as fields:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-sharepoint-process.png" alt="SharePoint list as datasource">&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;h3 id="creating-a-process-from-a-datasource">Creating a process from a datasource&lt;/h3>
 &lt;ol>
