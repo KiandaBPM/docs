@@ -279,14 +279,14 @@ Your browser does not support the video tag.
 &lt;p>&lt;img src="https://docs.kianda.com/images/common-fields-in-condition.jpg" alt="Common fields used in the process element part of a condition">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Next, depending on whether the rule is applied to a &lt;strong>text-based field or date-based field&lt;/strong>, choose from 13 text operators or 25 date operators (see image below).&lt;/p>
+&lt;p>Next, depending on whether the rule is applied to a &lt;strong>text-based fields, date fields or user picker fields&lt;/strong>, choose from 13 text operators, 25 date operators and one additional user picker operator, as shown in the image below.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Then choose a &lt;strong>value&lt;/strong>, this could be typed in text, number(s), date(s), form(s) or field(s).&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>&lt;em>&lt;strong>Condition elements&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/conditions3-2.gif" alt="img">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/condition-operators.jpg" alt="Condition elements">&lt;/p>
 &lt;p>In the case of &lt;strong>multiple conditions&lt;/strong>, you can use &lt;strong>And&lt;/strong> or &lt;strong>Or&lt;/strong> to create a group of compound conditions:&lt;/p>
 &lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/editconditions-1.gif" alt="img">&lt;/p>
 &lt;p>The result is a flexible process workflow that will result in desired actions based on any number of conditions.&lt;/p>
