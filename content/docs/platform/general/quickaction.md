@@ -102,7 +102,9 @@ The information found under User profile includes your name, email, role for exa
 
 To update your information, you can:
 
-1. Add your photo by clicking on the **Update profile picture** button ![Update profile picture button](/images/profilepic.png).
+1. Add your photo by clicking on the **Update profile picture** button ![Update profile picture button](/images/profilepic.png) then in the **Update your profile picture** dialog box browse for an image to add to the **Profile picture URL** by clicking on **Browse**. Note that the recommended size is 300px x 300px and larger images will take time to upload.
+
+   ![Update your profile picture](/images/update-profile-picture.jpg)
 
 2. Change your password by clicking on **Change Password**. You need to type in your current password and then your new password twice and click on **Change Password** or click on **Close** to exit the dialog box.
 
