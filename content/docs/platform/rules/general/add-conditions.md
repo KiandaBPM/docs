@@ -22,7 +22,7 @@ Conditions work on the ‘if…then’ principle: ‘if’ the condition exists 
 
    ![Common fields used in the process element part of a condition](/images/common-fields-in-condition.jpg)
 
-2. Next, depending on whether the rule is applied to a **text-based fields, date fields or user picker fields**, choose from 13 text operators, 25 date operators and one additional user picker operator, as shown in the image below.
+2. Next, depending on whether the rule is applied to **text-based fields, date fields or user picker fields**, choose from 13 text operators, 25 date operators and one additional user picker operator, as shown in the image below.
 
 3. Then choose a **value**, this could be typed in text, number(s), date(s), form(s) or field(s).
 
