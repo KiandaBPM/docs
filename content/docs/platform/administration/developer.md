@@ -22,19 +22,23 @@ To start using **Developer**:
 
    ![Developer view](/images/developer-view-updated.jpg)
 
-3. To view details for existing widgets, click on the widget name.
+3. You can search for a specific field, rule or dashboard widget by typing into the widget **Search bar**, found above the list of widgets on the top left. Click on the **cancel** button <img src="/images/cancel-btn.png" alt="Cancel button" style="zoom:80%;" /> to clear your search query.
+
+   ![Searching for a process](/images/searching-widgets.png)
+
+4. To view details for existing widgets, click on the widget name.
 
    ![Widget example](/images/widget-example.jpg)
 
-4. In the **Widget** pane you can update existing Widget UI and Widget Code within the editor and then click on **Update** ![Update button](/images/update-button.jpg). Alternatively click on **Close** to exit the page at any time.
+5. In the **Widget** pane you can update existing Widget UI and Widget Code within the editor and then click on **Update** ![Update button](/images/update-button.jpg). Alternatively click on **Close** to exit the page at any time.
 
-5. From the **Developer resources** main widget view you can:
+6. From the **Developer resources** main widget view you can:
 
    - View the widget creation history by clicking on the **Version History** button ![Version History button](/images/widget-version-history.jpg)
    - Edit a widget by clicking on the **Edit** (Pen) button  ![Edit widget button](/images/widget-edit.jpg)
    - Delete a widget by clicking on the **Bin/Trash** button  ![Delete widget button](/images/widget-delete.jpg)
 
-6. To create a new widget click on **New widget** ![New widget button](/images/new-widget-button.jpg). This will open the **Edit widget** dialog box.
+7. To create a new widget click on **New widget** ![New widget button](/images/new-widget-button.jpg). This will open the **Edit widget** dialog box.
 
    ![Edit widget example](/images/edit-widget-dialog-box.jpg)
 
@@ -54,9 +58,13 @@ To start using **Developer**:
 
    When you are finished editing the dialog box click on **OK** or click on **Close** at any time to exit.
 
-7. To create a new customised connector click on the **New Connector** button ![New connector button](/images/new-connector-button.jpg) and populate the four tabs that appear. Details on how to create a customised connector are found at [Custom connectors](//docs/low-code/custom-connector/).
+8. To create a new customised connector click on the **New Connector** button ![New connector button](/images/new-connector-button.jpg) and populate the four tabs that appear. Details on how to create a customised connector are found at [Custom connectors](/docs/low-code/custom-connector/). 
 
-8. To create your own webhooks, click on **Webhooks** to configure URLs to respond to process instance create, update and delete events. 
+9. You can search for a specific connector by typing into the connector **Search bar**, found above the list of connectors on the top right. Click on the **cancel** button <img src="/images/cancel-btn.png" alt="Cancel button" style="zoom:80%;" /> to clear your search query.
+
+   ![Searching for connectors](/images/connector-searching.png)
+
+10. To create your own webhooks, click on **Webhooks** to configure URLs to respond to process instance create, update and delete events. 
 
    ![Instance Callback URLs](/images/webhook-edit.jpg)
 

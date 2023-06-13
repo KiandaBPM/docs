@@ -2,6 +2,8 @@
 title: "Sample code for a microservice"
 linkTitle: "Sample code for a microservice"
 weight: 9
+toc_hide: true
+hide_summary: true
 typora-root-url: ..\..\..\..\..\static
 
 ---

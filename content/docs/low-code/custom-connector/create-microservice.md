@@ -2,6 +2,8 @@
 title: "Microservice Creation"
 linkTitle: "Creating a microservice"
 weight: 2
+toc_hide: true
+hide_summary: true
 typora-root-url: ..\..\..\..\static
 ---
 

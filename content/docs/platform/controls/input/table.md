@@ -68,6 +68,8 @@ To change the default title of the first column texbox field from **Text 1**:
 
 The **Edit field - Text** dialog box will open and you can change the title of the field here. There are also a number of other options available to you - see [Text box control](/docs/platform/controls/input/textbox/) for more information on how you can edit text box fields.
 
+**Note**: The unique names of fields outside of a table do not conflict with the unique names of fields *within* a table. Fields with duplicate unique names within the same table *are not* allowed however.
+
 ##### How to delete a column from a Table
 
 To delete a column from a Table field:
