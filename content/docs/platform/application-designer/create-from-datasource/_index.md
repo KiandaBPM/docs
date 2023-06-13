@@ -30,12 +30,27 @@ Examples of fields that can be populated instantly into your processes include *
 
 4. In the **Select datasource** dialog box, fill in the following details:
 
-   ![Idea icon](/images/select-datasource-create-from-datasource.png)
+   ![Idea icon](/images/select-datasource-create-from-datasource2.png)
 
-   - **Replace list form with Kianda forms?** - select *yes* to .... and select *no* to....
+   - **Replace list form with Kianda forms?** - select between *yes* or *no*, the default option being yes. [FIND OUT MORE ABOUT THIS]
 
    - **Datasources** - select your datasource of choice that you would like to create the process with. These displayed datasources are the datasources that are already created and connected within your Kianda platform. For more information, see [Datasources](/docs/platform/connectors/). In this example we will choose a [SharePoint](/docs/platform/connectors/sharepoint/) datasource.
-   - **Datasource tree** - once a datasource has been selected, select which elements in that datasource to be displayed as fields in your process. For example a list or a folder. You can drill down into the tree by clicking on the main datasource node at the top and select the relevant element, and you can search the tree by using the search bar in the top right.
+   - **Datasource tree** - once a datasource has been selected, select which elements in that datasource to be displayed as fields in your process, for example a list or a folder. You can drill down into the tree by clicking on the main datasource node at the top and select the relevant element, and you can search the tree by using the search bar in the top right. In this example we will choose **Accounts**.
 
-5. Click on **OK** when you are finished filling out the details. You will be automatically moved to the process designer screen. Alternatively you can click **Close** to exit the creation dialog.
+5. Click on **OK** when you are finished filling out the details. Alternatively you can click **Close** to exit the creation dialog.
 
+   **Note**: When creating a new process from a datasource, ensure that there is not already a process with the name of the datasource list as this may cause conflicts in the unique names of the processes.
+
+
+
+Your process will then be opened and it will detect all the fields of your selected datasource node and populate them into a form of the same name.
+
+![Idea icon](/images/create-from-datasource-process.png)
+
+**Note**: If you create new list columns within your chosen datasource, these options will not be reflected within the design unless you repeat the creation process.
+
+### What's next  ![Idea icon](/images/18.png) ###
+
+- To read more about field control visit [Controls](/docs/platform/application-designer/process/).
+- To read more about rules visit [Rules](/docs/platform/rules/).
+- To read more about datasources visit [Datasources](/docs/platform/connectors/).
