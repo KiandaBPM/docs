@@ -68,7 +68,7 @@ Click on each of the links below to read more about each function. In addition t
 
    - **First name** - user's first name
    - **Last name** - user's last name
-   - **Display name** - how their name will display in the system
+   - **Display name** - how their name will display in the system. The display name is autofilled based off of the user's entered first and last names, which can be changed if necessary.
    - **Primary role** - click on **More roles** to see additional roles and choose from six system defined roles.
      - **User** - lowest level of access where users with this role can access dashboards and forms, Help and Account details
 

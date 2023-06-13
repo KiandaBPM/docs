@@ -20,15 +20,19 @@ Using your Administration or Design business process role, start creating or edi
 
     ![Training folder of processes](/images/training-folder.jpg)
 
-4. Click on a process name to see the process design. You are then brought into **Kianda Designer**, see [Designer view](#designer-view) details below.
+4. You can search for a specific process or process group by typing into the process design **Search bar**, found above the list of processes. Click on the **cancel** button <img src="/images/cancel-btn.png" alt="Cancel button" style="zoom:80%;" /> to clear your search query.
 
-5. To import a process created for example in another workspace, click on **Import** ![Import button](/images/import_frame.png). Also note that from the main process view you can also export processes listed here for use in another workspace, by clicking on **Export** ![Export process](/images/export_frame.png).
+    ![Searching for a process](/images/searching-processes.png)
 
-6. To create a process using a predefined template, click on the **App Store**.
+5. Click on a process name to see the process design. You are then brought into **Kianda Designer**, see [Designer view](#designer-view) details below.
 
-7. To create a new process, click on the **Add new** button ![Add new button](/images/addnew.png).
+6. To import a process created for example in another workspace, click on **Import** ![Import button](/images/import_frame.png). Also note that from the main process view you can also export processes listed here for use in another workspace, by clicking on **Export** ![Export process](/images/export_frame.png).
 
-8. The **Add new process** dialog box appears where you can fill out details for your new process.
+7. To create a process using a predefined template, click on the **App Store**.
+
+8. To create a new process, click on the **Add new** button ![Add new button](/images/addnew.png).
+
+9. The **Add new process** dialog box appears where you can fill out details for your new process.
 
    ![New process view](/images/new-process.jpg)
 
@@ -40,7 +44,7 @@ Using your Administration or Design business process role, start creating or edi
    - **Group** - choose an existing group/folder to add the new process to, or type in a new group name to create a new group of processes
    - **Administrators** - choose from **Users**, **Groups** or a mix of both users and groups for people who will be administrators of this process. The process administrator(s) is the only person/people who can edit **draft** process designs. Once the process design is published, workspace administrators will be able to access the process design.
 
-9. Once a process is opened, you are brought straight into Kianda **Designer**, see [Designer view](#designer-view) below.
+10. Once a process is opened, you are brought straight into Kianda **Designer**, see [Designer view](#designer-view) below.
 
 
 
