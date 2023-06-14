@@ -1,7 +1,41 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Troubleshooting</title><link>https://docs.kianda.com/docs/troubleshooting/</link><description>Recent content in Troubleshooting on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://docs.kianda.com/docs/troubleshooting/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Custom widget debugging</title><link>https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/</guid><description>
-&lt;div class="pageinfo pageinfo-primary">
-&lt;p>Page under construction&lt;/p>
-&lt;/div></description></item><item><title>Docs: Rule debugger</title><link>https://docs.kianda.com/docs/troubleshooting/rule-debugger/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/rule-debugger/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Troubleshooting</title><link>https://docs.kianda.com/docs/troubleshooting/</link><description>Recent content in Troubleshooting on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://docs.kianda.com/docs/troubleshooting/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Rule debugger</title><link>https://docs.kianda.com/docs/troubleshooting/rule-debugger/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/rule-debugger/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Rule debugger&lt;/strong> is a troubleshooting feature that allows you to visualise each rule being executed in your process design within the preview window. It provides an insight into the process&amp;rsquo; logical flow, and serves as an important troubleshooting feature if your process does not work as expected. As well as this, it states what rule is being executed and on what field it is acting upon, alongisde any associated conditions.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>Before getting started, you must open a completed process design of your choice that features rules that require debugging.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To access the rule debugger feature:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to the left-hand pane of the designer screen and click on the &lt;strong>Run and preview process&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="run and preview process button" style="zoom:150%;" />.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/preview-process-left-hand-pane.png" alt="Left hand pane clicking the preview button">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the preview window, click on the &lt;strong>Enable / Disable Rule debugging&lt;/strong> button &lt;img src="https://docs.kianda.com/images/rule-debugger-btn.png" alt="rule debugger button"> in the top right corner of the window.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/rule-debugger-preview2.png" alt="rule debugger in the preview window" style="zoom:80%;" />
+&lt;/li>
+&lt;li>
+&lt;p>Begin entering data into your process as expected until the rule debugger modal dialog appears in the bottom right of the preview window. This appears as soon as the first rule is encountered in the design&amp;rsquo;s logical workflow.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-debugger-modal.png" alt="Rule debugger dialog box">&lt;/p>
+&lt;p>The rule debugger dialog displays information such as the &lt;strong>Rule&lt;/strong> currently being executed, any &lt;strong>Conditions&lt;/strong> associated with the rule and the &lt;strong>Field&lt;/strong> the rule is being enacted upon. Three buttons are also displayed, allowing you to:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Execute rule&lt;/strong> - executes the currently displayed rule on the currently displayed field, along with any conditions specified. Depending on the flow of your process, either another rule will appear, or the dialog box will disappear and await further data input into the form&amp;rsquo;s fields. The next rule will be paused to allow for an incremental troubleshooting experience.&lt;/li>
+&lt;li>&lt;strong>Resume&lt;/strong> - resumes the execution of all rules in a chain. The rule debug dialog will only then reappear when new data is entered into another field in the process flow.&lt;/li>
+&lt;li>&lt;strong>Stop debug&lt;/strong> - exits the debugging mode and the rule debug dialog box disappears. You will receive no more messages about current rule execution, but will still be in the process preview window.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>You can alter the conditions on the currently displayed rule (if any), by clicking on the &lt;strong>Conditions&lt;/strong> filter button &lt;img src="https://docs.kianda.com/images/conditions-filter-btn.png" alt="Conditions filter button image">. This will display another modal dialog box, which gives you the option to change the conditon being applied to the rule, add further conditions, remove some conditons and more - allowing for the troubleshooting of different use cases within your process. To learn more about this, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-debugger-conditions.png" alt="Conditions dialog for rule debugger">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>To exit the debugging process, you can click on the &lt;strong>Stop debug&lt;/strong> button &lt;img src="https://docs.kianda.com/images/stop-debug-btn.png" alt="stop debug button">, or alternatively click on the &lt;strong>Enable / Disable Rule debugging&lt;/strong> button &lt;img src="https://docs.kianda.com/images/rule-debugger-btn.png" alt="rule debugger button" style="zoom:80%;" />, or click on the &lt;strong>Exit preview mode&lt;/strong> button &lt;img src="https://docs.kianda.com/images/exit-preview-window-btn.png" alt="exit window preview button" style="zoom:80%;" />.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Rule debugger&lt;/strong>, find out more about other troubleshooting features:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/">Custom widget debugging&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing">Version history and Auditing&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Custom widget debugging</title><link>https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
 &lt;p>Page under construction&lt;/p>
 &lt;/div></description></item><item><title>Docs: Version history and auditing</title><link>https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing/</guid><description>
