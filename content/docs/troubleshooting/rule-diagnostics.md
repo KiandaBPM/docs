@@ -54,7 +54,7 @@ To access the rule diagnostics feature:
 
    ![Rule diagnostics other buttons](/images/rule-diagnostics-other-btns.png)
 
-6. To change the current form in your process instance, you can click on the **Chance current active form** button ![change current active form button](/images/change-current-active-form-btn.png) below the nested list. This will allow you to troubleshoot different forms and how they behave when changed to the active form in the process.
+6. To change the current form in your process instance, you can click on the **Change current active form** button ![change current active form button](/images/change-current-active-form-btn.png) below the nested list. This will allow you to troubleshoot different forms and how they behave when changed to the active form in the process.
 
    ![other debug features](/images/current-form-screen.png)
 
@@ -70,8 +70,8 @@ To access the rule diagnostics feature:
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-Now that you've learned about the **Rule diagnostics**, find out more about other troubleshooting features:
+Now that you've learned about the **Rule Diagnostics**, find out more about other troubleshooting features:
 
-- [Custom widget debugging](/docs/troubleshooting/custom-widget-debugging/)
-- [Rule debugger](/docs/troubleshooting/rule-debugger/)
-- [Version history and Auditing](/docs/troubleshooting/version-history-and-auditing)
+- [Custom Widget Debugging](/docs/troubleshooting/custom-widget-debugging/)
+- [Rule Debugger](/docs/troubleshooting/rule-debugger/)
+- [Version History and Auditing](/docs/troubleshooting/version-history-and-auditing)
