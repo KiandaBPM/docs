@@ -34,6 +34,63 @@
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Rule debugger&lt;/strong>, find out more about other troubleshooting features:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/">Custom widget debugging&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing">Version history and Auditing&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Rule diagnostics</title><link>https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>&lt;strong>Rule diagnostics&lt;/strong> is a troubleshooting feature within Kianda that allows you to view a nested list of all forms, fields and rules - the purpose being that you can choose to manually trigger these rules for diagnostic purposes, as well as toggle field visibility, re-assign forms, and more.&lt;/p>
+&lt;p>The rule diagnostics feature is available for troubleshooting specific &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Process instances&lt;/a> where as the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a> feature focuses more so on troubleshooting a process design pre-publishing.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>Before getting started, you must open a process instance of any status that you would like to perform rule diagnostics on.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To access the rule diagnostics feature:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>On your chosen process instance, click on the &lt;strong>Process history&lt;/strong> button &lt;img src="https://docs.kianda.com/images/process-history-button.jpg" alt="process history button" style="zoom:150%;" /> in the top right-hand corner of the screen. This will open the Process history modal dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/process-history-btn2.png" alt="Process history">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>On the process history dialog, navigate to the &lt;strong>Rule diagnostics&lt;/strong> tab. From here, you can view a nested list of all forms, fields and rules. In the example below, you can view rules and fields across three different forms in the process, as well as expand the onload rules. You can search for a specific element in your process by utilising the search bar.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/process-history-modal1.png" alt="rule diagnostics tab">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>There are many possibilities for testing your process instance, however in this example we will try to troubleshoot the &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email rule&lt;/a> to ensure that the line manager receives the correctly formatted email during this process.&lt;/p>
+&lt;p>To do this, we will drill down into the following path: &lt;em>Asset request&lt;/em> form &amp;gt; &lt;em>Submit&lt;/em> button &amp;gt; &lt;em>Rules&lt;/em> &amp;gt; &lt;em>Email Line Manager&lt;/em>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/expanding-process-instance.png" alt="Drill down into line manager">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Beside the &lt;em>Email Line Manager&lt;/em> rule, click on the orange &lt;strong>Trigger&lt;/strong> bolt button &lt;img src="https://docs.kianda.com/images/trigger-btn.png" alt="trigger bolt button" style="zoom:150%;" /> to manually trigger the rule. This is a powerful feature as you do not need to fill out an entire process from start to finish to troubleshoot this. You will then see a &lt;em>Rule executed&lt;/em> alert at the top of the page, and the specific rule should perform as expected.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/request-assets-email.png" alt="Request assets email sent to the line manager" style="zoom:67%;" />
+&lt;/li>
+&lt;li>
+&lt;p>There are other features you can troubleshoot in the &lt;strong>Rule diagnostics&lt;/strong> tab such as clicking:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Toggle form visibility&lt;/strong> button &lt;img src="https://docs.kianda.com/images/toggle-visibility-btn.png" alt="toggle visibility button"> - to hide or show the selected form&lt;/li>
+&lt;li>&lt;strong>Make editable&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editable-btn.png" alt="Editable button"> - make the current field/form editable&lt;/li>
+&lt;li>&lt;strong>Re-assign form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/re-assign-btn.png" alt="re-assign button"> - to assign the form to a different person&lt;/li>
+&lt;li>&lt;strong>Go to form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/go-to-form-btn.png" alt="go to form button"> - snaps to the selected form&lt;/li>
+&lt;li>&lt;strong>Toggle field enable&lt;/strong> button &lt;img src="https://docs.kianda.com/images/toggle-field-enable-btn.png" alt="toggle field enable"> - to enable/disable the selected field&lt;/li>
+&lt;/ul>
+&lt;p>As well as this, the &lt;strong>Rule executed status&lt;/strong> can be seen beside each rule - a green tick &lt;img src="https://docs.kianda.com/images/green-tick.png" alt="green tick"> for executed, and a grey tick &lt;img src="https://docs.kianda.com/images/grey-tick.png" alt="grey tick"> for not executed.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-diagnostics-other-btns.png" alt="Rule diagnostics other buttons">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To change the current form in your process instance, you can click on the &lt;strong>Chance current active form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/change-current-active-form-btn.png" alt="change current active form button"> below the nested list. This will allow you to troubleshoot different forms and how they behave when changed to the active form in the process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/current-form-screen.png" alt="other debug features">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can also choose to &lt;strong>Enable rule debugging&lt;/strong> by choosing the &lt;em>Yes&lt;/em> radio button, also below the nested list. This will enable the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a> feature, however instead of executing within a process design preview window, it will enact upon your selected process instance. The rule debugger modal dialog will appear in the bottom right-hand corner of the screen.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-debugger-within-rule-diagnostics.png" alt="Rule debugger modal dialog within rule diagnostics">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When finished troubleshooting, click the &lt;strong>Close&lt;/strong> button to close the process history dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Rule diagnostics&lt;/strong>, find out more about other troubleshooting features:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/">Custom widget debugging&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger/">Rule debugger&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing">Version history and Auditing&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Custom widget debugging</title><link>https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/</guid><description>
 &lt;div class="pageinfo pageinfo-primary">
