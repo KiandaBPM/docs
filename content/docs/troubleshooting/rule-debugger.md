@@ -55,4 +55,5 @@ To exit the debugging process, you can click on the **Stop debug** button ![stop
 Now that you've learned about the **Rule debugger**, find out more about other troubleshooting features:
 
 - [Custom widget debugging](/docs/troubleshooting/custom-widget-debugging/)
+- [Rule diagnostics](/docs/troubleshooting/rule-diagnostics/)
 - [Version history and Auditing](/docs/troubleshooting/version-history-and-auditing)
