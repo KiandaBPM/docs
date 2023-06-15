@@ -1,4 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Troubleshooting</title><link>https://docs.kianda.com/docs/troubleshooting/</link><description>Recent content in Troubleshooting on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://docs.kianda.com/docs/troubleshooting/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Version history and auditing</title><link>https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>There are a number of built-in features in Kianda that your organisation can take advantage of to monitor processes in detail and troubleshoot as needed. Your Kianda workspace cleverly allows you to manage &lt;strong>process design&lt;/strong> and &lt;strong>process instance versioning&lt;/strong> so that &lt;strong>administrators&lt;/strong> can see what has happened at specific moments during process execution and roll-back to earlier versions if needed.&lt;/p>
+&lt;p>The features you can use for troubleshooting are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="#design-version-history">Design version history&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#process-instance-version-history">Process instance version history&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="design-version-history">Design version history&lt;/h2>
 &lt;p>Kianda &lt;strong>Designer&lt;/strong> allows &lt;strong>administrators&lt;/strong> or those with the &lt;strong>design business process&lt;/strong> role, to update process designs. The platform keeps a record of all versions previously created. The &lt;strong>current or active version&lt;/strong> of a process is always visible in the right-hand pane, for example V1.0 for the &amp;lsquo;Inspection Process&amp;rsquo; as shown below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/published-version.jpg" alt="Process version history">&lt;/p>
@@ -16,9 +23,11 @@
 &lt;p>&lt;img src="https://docs.kianda.com/../content/docs/process-instance-view.jpg" alt="Process instance view">&lt;/p>
 &lt;p>&lt;strong>Administrators&lt;/strong> have access to the process instance history feature highlighted above, to manage process instance versions. By clicking on the &lt;strong>process history&lt;/strong> button.&lt;/p></description></item><item><title>Docs: Rule debugger</title><link>https://docs.kianda.com/docs/troubleshooting/rule-debugger/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/rule-debugger/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Rule debugger&lt;/strong> is a troubleshooting feature that allows you to visualise each rule being executed in your process design within the preview window. It provides an insight into the process&amp;rsquo; logical flow, and serves as an important troubleshooting feature if your process does not work as expected. As well as this, it states what rule is being executed and on what field it is acting upon, alongisde any associated conditions.&lt;/p>
+&lt;p>The &lt;strong>Rule debugger&lt;/strong> is a troubleshooting feature that allows you to visualise each rule being executed in your process design within the preview window. It provides an insight into the logical flow of a process logical and serves as an important troubleshooting feature if your process does not work as expected. As well as this, it states what rule is being executed and on what field it is acting upon, alongside any associated conditions.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rule-debugger-example.jpg" alt="Rule debugger in action example">&lt;/p>
+&lt;p>The &lt;strong>Rule Debugger&lt;/strong> can be turned on at any point, for example when starting a new process or using the Previewer. We look at the Previewer in the steps below, however you can also access this feature via [XYYYYYYYYYYYYZ].&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>Before getting started, you must open a completed process design of your choice that features rules that require debugging.&lt;/p>
+&lt;p>Before getting started, you must open a process design of your choice that features rules that require debugging.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To access the rule debugger feature:&lt;/p>
 &lt;ol>
@@ -35,13 +44,13 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-debugger-modal.png" alt="Rule debugger dialog box">&lt;/p>
 &lt;p>The rule debugger dialog displays information such as the &lt;strong>Rule&lt;/strong> currently being executed, any &lt;strong>Conditions&lt;/strong> associated with the rule and the &lt;strong>Field&lt;/strong> the rule is being enacted upon. Three buttons are also displayed, allowing you to:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Execute rule&lt;/strong> - executes the currently displayed rule on the currently displayed field, along with any conditions specified. Depending on the flow of your process, either another rule will appear, or the dialog box will disappear and await further data input into the form&amp;rsquo;s fields. The next rule will be paused to allow for an incremental troubleshooting experience.&lt;/li>
-&lt;li>&lt;strong>Resume&lt;/strong> - resumes the execution of all rules in a chain. The rule debug dialog will only then reappear when new data is entered into another field in the process flow.&lt;/li>
+&lt;li>&lt;strong>Execute rule&lt;/strong> - executes the &lt;strong>currently displayed rule&lt;/strong> on the currently displayed field, along with any conditions specified where you have two or more rules attached to a field, form or process. Once all the rules are executed for that field, then the dialog box will disappear and the system awaits further data input into the form&amp;rsquo;s fields until the next rule or block of rules attached to a field are met.&lt;/li>
+&lt;li>&lt;strong>Resume&lt;/strong> - resumes the execution of all rules in a block where there are two or more rules attached to a field, form or process. The rule debug dialog will only then reappear when new data is entered into another field in the process flow.&lt;/li>
 &lt;li>&lt;strong>Stop debug&lt;/strong> - exits the debugging mode and the rule debug dialog box disappears. You will receive no more messages about current rule execution, but will still be in the process preview window.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>You can alter the conditions on the currently displayed rule (if any), by clicking on the &lt;strong>Conditions&lt;/strong> filter button &lt;img src="https://docs.kianda.com/images/conditions-filter-btn.png" alt="Conditions filter button image">. This will display another modal dialog box, which gives you the option to change the conditon being applied to the rule, add further conditions, remove some conditons and more - allowing for the troubleshooting of different use cases within your process. To learn more about this, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;p>You can alter the conditions on the currently displayed rule (if any), by clicking on the &lt;strong>Conditions&lt;/strong> filter button &lt;img src="https://docs.kianda.com/images/conditions-filter-btn.png" alt="Conditions filter button image">. This will display another modal dialog box, which gives you the option to change the condition being applied to the rule, add further conditions, remove some conditions and more - allowing for the troubleshooting of different use cases within your process. To learn more about this, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-debugger-conditions.png" alt="Conditions dialog for rule debugger">&lt;/p>
 &lt;/li>
 &lt;/ol>
