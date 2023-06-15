@@ -4,6 +4,14 @@ weight: 8
 typora-root-url: ..\..\..\static
 ---
 
+## Introduction
+There are a number of built-in features in Kianda that your organisation can take advantage of to monitor processes in detail and troubleshoot as needed. Your Kianda workspace cleverly allows you to manage **process design** and **process instance versioning** so that **administrators** can see what has happened at specific moments during process execution and roll-back to earlier versions if needed.  
+
+The features you can use for troubleshooting are:
+
+- [Design version history](#design-version-history)
+- [Process instance version history](#process-instance-version-history)
+
 ## Design version history
 
 Kianda **Designer** allows **administrators** or those with the **design business process** role, to update process designs. The platform keeps a record of all versions previously created. The **current or active version** of a process is always visible in the right-hand pane, for example V1.0 for the 'Inspection Process' as shown below.

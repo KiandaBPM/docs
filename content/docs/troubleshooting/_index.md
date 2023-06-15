@@ -6,10 +6,14 @@ toc_hide: true
 hide_summary: true
 ---
 
-There are a number of built-in features in Kianda that your organisation can take advantage of to monitor processes in detail and troubleshoot as needed. Your Kianda workspace cleverly allows you to manage **process design** and **process instance versioning** so that **administrators** can see what has happened at specific moments during process execution and roll-back to earlier versions if needed.  
+## Introduction
+
+Your Kianda environment is designed to be an intuitive, user-friendly workspace with built-in features like Kianda **Previewer** that support quick prototyping and testing. To support your work there are also a number of additional features that you can use to troubleshoot issues. Click on each of the pages below to discover more details. There are a number of built-in features in Kianda that your organisation can take advantage of to monitor processes in detail and troubleshoot as needed. Your Kianda workspace cleverly allows you to manage **process design** and **process instance versioning** so that **administrators** can see what has happened at specific moments during process execution and roll-back to earlier versions if needed.  
 
 The features you can use for troubleshooting are:
 
+- [Previewer]
+- [Rule debugger]
 - [Design version history](#design-version-history)
 - [Process instance version history](#process-instance-version-history)
 
