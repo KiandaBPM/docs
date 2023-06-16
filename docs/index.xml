@@ -4266,7 +4266,57 @@ Your browser does not support the video tag.
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Within your subscription you will be able to see if an invited partner has accepted their &lt;strong>invitation&lt;/strong> based on the &lt;strong>status&lt;/strong>. &lt;strong>Pending&lt;/strong> means they have not accepted the &lt;strong>invite&lt;/strong>, &lt;strong>active&lt;/strong> means they have accepted the &lt;strong>invite&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/pending-invites.jpg" alt="Invite partner status">&lt;/p>
-&lt;p>Once an invite is accepted, your client’s/invited partner&amp;rsquo;s employees can now access the B2B Portal and interact with the Dashboards and Processes that have been shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/#shared-dashboards">Shared dashboards&lt;/a> for information on dashboards, and &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared processes&lt;/a> for information on processes.&lt;/p></description></item><item><title>Docs: Process security</title><link>https://docs.kianda.com/docs/security/process-level-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/process-level-security/</guid><description>
+&lt;p>Once an invite is accepted, your client’s/invited partner&amp;rsquo;s employees can now access the B2B Portal and interact with the Dashboards and Processes that have been shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/#shared-dashboards">Shared dashboards&lt;/a> for information on dashboards, and &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared processes&lt;/a> for information on processes.&lt;/p></description></item><item><title>Docs: Previewer</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/previewer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/designer/previewer/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>As an &lt;strong>Administrator&lt;/strong> or someone with the role &lt;strong>Design business process&lt;/strong>, you can preview your &lt;strong>process designs&lt;/strong> at any time using the &lt;strong>Run and preview process&lt;/strong> button &lt;img src="https://docs.kianda.com/images/previewer-btn.png" alt="previewer button" style="zoom:75%;" />. This is a useful Kianda feature that allows you to trial out your process, and visualise the logical flow of your design without publishing it yet for your organisation to view/use. Within the preview window, you can also troubleshoot your fields, rules and conditions by utilising the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger/">Rule debugger&lt;/a> feature.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/preview-window.png" alt="Preview window" style="zoom: 50%;" />
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>Before getting started, you must open a process design of your choice that you would like to perform a trial run on before publishing it to your organisation.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To access the previewer feature:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to the left-hand pane of the designer screen and click on the &lt;strong>Run and preview process&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="run and preview process button" style="zoom:150%;" />. From here, your process will display in a preview window only to you or to other Process/workspace security users that have access to the design. For more on this, see &lt;a href="https://docs.kianda.com/docs/security/workspace-security/">Security&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/preview-process-left-hand-pane.png" alt="Process preview button in left hand pane">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Within the process preview window, you can enter information as expected and the rules will execute on fields/buttons - the window displaying as a process instance, similar to when it will when published.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can utilise the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a> feature for troubleshooting purposes by clicking on the &lt;strong>Enable / Disable Rule debugging&lt;/strong> button &lt;img src="https://docs.kianda.com/images/rule-debugger-btn.png" alt="rule debugger button" style="zoom:80%;" /> in the top right corner of the window.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/rule-debugger-preview2.png" alt="rule debugger in the preview window" style="zoom:80%;" />
+&lt;/li>
+&lt;li>
+&lt;p>You can preview the process design from the perspective of different devices by clicking on the &lt;strong>Device preview&lt;/strong> buttons to the right of the &lt;strong>Rule debugger&lt;/strong> button. This feature will visualise how your process design is dynamic and responsive on a myriad of devices.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/preview-devices.png" alt="Preview devices buttons">&lt;/p>
+&lt;p>The buttons are as follows:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Desktop preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/desktop-preview-btn.png" alt="desktop preview button" style="zoom:80%;" /> - displays the process instance as it would look on a desktop device.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Tablet preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/tablet-preview-btn.png" alt="Tablet preview button"> - displays the process instance as it would look on a tablet device.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/tablet-preview-screen.png" alt="tablet preview screen" style="zoom:50%;" />
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Mobile preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/mobile-preview-btn.png" alt="Mobile preview button"> - displays the process instance as it would look on a mobile device.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/mobile-preview-screen.png" alt="Mobile preview screen" style="zoom:50%;" />
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Note&lt;/strong>: If you select &lt;strong>Tablet preview&lt;/strong> or &lt;strong>Mobile preview&lt;/strong>, a &lt;strong>Rotate device&lt;/strong> button &lt;img src="https://docs.kianda.com/images/rotate-btn.png" alt="rotate device button"> will appear in the top right-hand corner. Clicking on this button will rotate the device screen from portrait to landscape and vice versa in the preview window.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rotated-phone.png" alt="Rotate screen">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished previewing your process design, click on the &lt;strong>Exit preview mode&lt;/strong> button &lt;img src="https://docs.kianda.com/images/exit-preview-window-btn.png" alt="Exit preview mode button"> in the top right-hand corner of the previewer window.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>You can then choose to make further changes to your process, or continue to save and publish your design for your organisation to view/use.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Previewer&lt;/strong>, find out more about other designer features:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/version-history/">Version history&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Process security</title><link>https://docs.kianda.com/docs/security/process-level-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/process-level-security/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>In addition to &lt;a href="https://docs.kianda.com/docs/security/workspace-security/">Workspace security&lt;/a> that is setting levels of access by role and form ownership, there are a multitude of ways to set access at a process, field and dashboard level. The following sections describe security at different levels.&lt;/p>
 &lt;h2 id="process-security-settings">Process security settings&lt;/h2>
@@ -4531,73 +4581,4 @@ Your browser does not support the video tag.
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/why-choose-lowcode">Why choose low-code development?&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Business rules</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/</guid><description>
-&lt;p>Business rules are what make Kianda forms come alive. They represent the actual actions users intend to perform when they interact with form components - for example, sending automated emails, revealing certain parts of a form based on user interactions and automatically generating Word and PDF documents from completed forms.&lt;/p>
-&lt;p>There are 60 predefined rules across 10 categories and they can be applied to fields (controls), forms, groups of forms or even to a whole process - see &lt;a href="#rules-list">Rules list&lt;/a> for more details.&lt;/p>
-&lt;p>There are two key principles to consider when working with rules:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;a href="#rule-design">Rule design&lt;/a> - Consider the type of rule you are going to apply and what you are going to apply it to - for example, to a button, field or form. As part of your design considerations it is important to know what you can do with rules, in particular, the use of &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/conditions/">conditions&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/">expressions&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="#rule-order">Rule order&lt;/a> - If there are several rules attached to an item like a button, then the order the rules are going to be executed in becomes important. You can change the rule execution order to suit your needs.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>If you go to &lt;strong>Side menu&lt;/strong> &amp;gt; &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong>, click on a process or create a new process, and then select a form within the process so that the &lt;strong>Edit form&lt;/strong> button (&lt;strong>Pen&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">) appears. The predefined rules will can then be found in the left-hand pane under &lt;strong>Add a rule&lt;/strong>.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Rule categories&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/ruleslist80.png" alt="Rules list">&lt;/p>
-&lt;p>There are 10 categories of rules available (see &lt;a href="#rules-list">Rules list&lt;/a> for the full list of names of the 60 predefined rules):&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Workflow&lt;/strong> - There are seven workflow rules that represent the actions a user intends to perform when they interact with form components.&lt;/li>
-&lt;li>&lt;strong>Communications&lt;/strong> - There are four communication rules associated with user communication - for example, sending an email or triggering a user alert.&lt;/li>
-&lt;li>&lt;strong>Data&lt;/strong> - There are five data rules associated with database operations like create, update and delete.&lt;/li>
-&lt;li>&lt;strong>Users&lt;/strong> - There are four user rules associated with user properties, allowing user lookup or to update a user.&lt;/li>
-&lt;li>&lt;strong>File management&lt;/strong> - There are seven file management rules concerned with generating documents such as Word, Excel or converting to PDF.&lt;/li>
-&lt;li>&lt;strong>Tables&lt;/strong> - There are 12 table rules associated with table operations such as updating, adding and removing table rows.&lt;/li>
-&lt;li>&lt;strong>Dates&lt;/strong> - There are four date rules to calculate time and format dates.&lt;/li>
-&lt;li>&lt;strong>Form actions&lt;/strong> - There are six form rules linked to actions that are part of forms - for example, submit, close or save.&lt;/li>
-&lt;li>&lt;strong>SharePoint&lt;/strong> - There are 10 SharePoint associated rules such as adding, finding or removing users.&lt;/li>
-&lt;li>&lt;strong>KiandaAI&lt;/strong> - there is one KiandaAI rule related to text analysis.&lt;/li>
-&lt;/ol>
-&lt;p>An additional &lt;strong>Custom&lt;/strong> category exists if Kianda &lt;strong>Developer&lt;/strong> has been used to create custom rule widgets - see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">Developer&lt;/a> for more details.&lt;/p>
-&lt;h2 id="when-to-use-rules">When to use rules&lt;/h2>
-&lt;p>You can add rules:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
-&lt;/ul>
-&lt;h3 id="rule-design">Rule design&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form or field you want to apply the rule to by clicking on that item so that you&amp;rsquo;re viewing it in &lt;strong>edit mode&lt;/strong> (so the &lt;strong>Pen&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button"> appears) - for example, you could select a form called Training Approval or could select a button like Submit to apply a rule or rules to.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Field editing&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/submitedit.png" alt="Edit mode for forms and fields">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Add a rule&lt;/strong> in the left-hand pane and select the category of rule you want, such as &lt;strong>Communications&lt;/strong>, and then click the particular rule you want to insert within that category, for example &lt;strong>User alert&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="rule-order">Rule order&lt;/h3>
-&lt;p>If there is more than one rule for an item like a field or button, then you need to consider the order of execution.&lt;/p>
-&lt;p>For example, for a Submit button on a form you may want a &lt;strong>Send email rule&lt;/strong> to be executed first before any other rule is executed. To do this, click on the &lt;strong>Submit&lt;/strong> button to make sure you are in &lt;strong>Edit&lt;/strong> mode, and under &lt;strong>Rules&lt;/strong> in the right-hand pane, drag the &lt;strong>Send email&lt;/strong> rule to the top of the list of rules by clicking on the rule and dragging it to the top.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Rule order&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/ruleorder.png" alt="Rule order">&lt;/p>
-&lt;h2 id="rules-list">Rules list&lt;/h2>
-&lt;p>This table contains a full list of the available predefined rules.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Rules by category and title&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/Rules_Categories_List_Table.jpg" alt="Rules list">&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To learn more about control fields, go to &lt;a href="../controls/">&lt;strong>Controls&lt;/strong>&lt;/a>.&lt;/p>
-&lt;p>To find out how to get the most out of rules, see &lt;a href="../conditions/">&lt;strong>Conditions&lt;/strong>&lt;/a> and &lt;a href="../expressions/">&lt;strong>Expressions&lt;/strong>&lt;/a>.&lt;/p>
-&lt;h3 id="to-return-to-the-previous-pages-click-on-the-links-below--idea-iconimages10png">&lt;strong>To return to the previous pages click on the links below&lt;/strong> &lt;img src="https://docs.kianda.com/images/10.png" alt="Idea icon">&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/">&lt;strong>How Kianda works&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">&lt;strong>Plan your process&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/">&lt;strong>Design and build your process&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/">&lt;strong>Add forms&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/">&lt;strong>Designer&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties/">&lt;strong>Properties&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a>&lt;/strong>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/why-choose-lowcode">Why choose low-code development?&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item></channel></rss>

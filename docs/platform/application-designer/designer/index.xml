@@ -1,4 +1,54 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Designer</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/</link><description>Recent content in Designer on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://docs.kianda.com/docs/platform/application-designer/designer/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Version history</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/version-history/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/designer/version-history/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Designer</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/</link><description>Recent content in Designer on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://docs.kianda.com/docs/platform/application-designer/designer/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Previewer</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/previewer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/designer/previewer/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>As an &lt;strong>Administrator&lt;/strong> or someone with the role &lt;strong>Design business process&lt;/strong>, you can preview your &lt;strong>process designs&lt;/strong> at any time using the &lt;strong>Run and preview process&lt;/strong> button &lt;img src="https://docs.kianda.com/images/previewer-btn.png" alt="previewer button" style="zoom:75%;" />. This is a useful Kianda feature that allows you to trial out your process, and visualise the logical flow of your design without publishing it yet for your organisation to view/use. Within the preview window, you can also troubleshoot your fields, rules and conditions by utilising the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger/">Rule debugger&lt;/a> feature.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/preview-window.png" alt="Preview window" style="zoom: 50%;" />
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>Before getting started, you must open a process design of your choice that you would like to perform a trial run on before publishing it to your organisation.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To access the previewer feature:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to the left-hand pane of the designer screen and click on the &lt;strong>Run and preview process&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="run and preview process button" style="zoom:150%;" />. From here, your process will display in a preview window only to you or to other Process/workspace security users that have access to the design. For more on this, see &lt;a href="https://docs.kianda.com/docs/security/workspace-security/">Security&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/preview-process-left-hand-pane.png" alt="Process preview button in left hand pane">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Within the process preview window, you can enter information as expected and the rules will execute on fields/buttons - the window displaying as a process instance, similar to when it will when published.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can utilise the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a> feature for troubleshooting purposes by clicking on the &lt;strong>Enable / Disable Rule debugging&lt;/strong> button &lt;img src="https://docs.kianda.com/images/rule-debugger-btn.png" alt="rule debugger button" style="zoom:80%;" /> in the top right corner of the window.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/rule-debugger-preview2.png" alt="rule debugger in the preview window" style="zoom:80%;" />
+&lt;/li>
+&lt;li>
+&lt;p>You can preview the process design from the perspective of different devices by clicking on the &lt;strong>Device preview&lt;/strong> buttons to the right of the &lt;strong>Rule debugger&lt;/strong> button. This feature will visualise how your process design is dynamic and responsive on a myriad of devices.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/preview-devices.png" alt="Preview devices buttons">&lt;/p>
+&lt;p>The buttons are as follows:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Desktop preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/desktop-preview-btn.png" alt="desktop preview button" style="zoom:80%;" /> - displays the process instance as it would look on a desktop device.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Tablet preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/tablet-preview-btn.png" alt="Tablet preview button"> - displays the process instance as it would look on a tablet device.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/tablet-preview-screen.png" alt="tablet preview screen" style="zoom:50%;" />
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Mobile preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/mobile-preview-btn.png" alt="Mobile preview button"> - displays the process instance as it would look on a mobile device.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/mobile-preview-screen.png" alt="Mobile preview screen" style="zoom:50%;" />
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Note&lt;/strong>: If you select &lt;strong>Tablet preview&lt;/strong> or &lt;strong>Mobile preview&lt;/strong>, a &lt;strong>Rotate device&lt;/strong> button &lt;img src="https://docs.kianda.com/images/rotate-btn.png" alt="rotate device button"> will appear in the top right-hand corner. Clicking on this button will rotate the device screen from portrait to landscape and vice versa in the preview window.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/rotated-phone.png" alt="Rotate screen">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished previewing your process design, click on the &lt;strong>Exit preview mode&lt;/strong> button &lt;img src="https://docs.kianda.com/images/exit-preview-window-btn.png" alt="Exit preview mode button"> in the top right-hand corner of the previewer window.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>You can then choose to make further changes to your process, or continue to save and publish your design for your organisation to view/use.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Previewer&lt;/strong>, find out more about other designer features:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/version-history/">Version history&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: Version history</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/version-history/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/designer/version-history/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>As an &lt;strong>Administrator&lt;/strong> or someone with the role &lt;strong>Design business process&lt;/strong>, you can update &lt;strong>process designs&lt;/strong> as often as you need. The &lt;strong>Version number&lt;/strong> of a process will be updated every time a process design is saved by clicking on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save button">.&lt;/p>
 &lt;p>The &lt;strong>current or active version&lt;/strong> of a process is always visible in the right-hand pane, for example V0.34 for the &amp;lsquo;Inspection Process&amp;rsquo; as shown below.&lt;/p>
