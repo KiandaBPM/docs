@@ -12,7 +12,7 @@ The **Rule debugger** is a troubleshooting feature that allows you to visualise 
 
 ![Rule debugger in action example](/images/rule-debugger-example.jpg)
 
-The **Rule Debugger** can be turned on at any point, for example when starting a new process or using the Previewer. We look at the Previewer in the steps below, however you can also access this feature via [XYYYYYYYYYYYYZ].
+The **Rule Debugger** can be turned on at any point, for example when starting a new process or using the Previewer. We look at the [Previewer](/docs/platform/application-designer/designer/previewer/) in the steps below, however you can also access this feature via [Rule diagnostics](/docs/troubleshooting/rule-diagnostics/).
 
 
 
