@@ -8,7 +8,7 @@ hide_summary: true
 
 ## Introduction
 
-**Rule diagnostics** is a troubleshooting feature within Kianda that allows you to view a nested list of all forms, fields and rules - the purpose being that you can choose to manually trigger these rules for diagnostic purposes, as well as toggle field visibility, re-assign forms, and more.
+**Rule diagnostics** is a troubleshooting feature within Kianda that allows you to view a nested list of all forms, fields and rules - the purpose being that you can choose to **manually trigger** these rules for diagnostic purposes, as well as **toggle field visibility**, **re-assign forms**, and more.
 
 The rule diagnostics feature is available for troubleshooting specific [Process instances](/docs/platform/rules/general/add-conditions/) where as the [Rule debugger](/docs/troubleshooting/rule-debugger) feature focuses more so on troubleshooting a process design pre-publishing.
 
@@ -16,7 +16,7 @@ The rule diagnostics feature is available for troubleshooting specific [Process 
 
 ## Prerequisites
 
-Before getting started, you must open a process instance of any status that you would like to perform rule diagnostics on.
+Before getting started, you must open a process instance that you would like to perform rule diagnostics on.
 
 
 
@@ -38,7 +38,7 @@ To access the rule diagnostics feature:
 
    ![Drill down into line manager](/images/expanding-process-instance.png)
 
-4. Beside the *Email Line Manager* rule, click on the orange **Trigger** bolt button <img src="/images/trigger-btn.png" alt="trigger bolt button" style="zoom:150%;" /> to manually trigger the rule. This is a powerful feature as you do not need to fill out an entire process from start to finish to troubleshoot this. You will then see a *Rule executed* alert at the top of the page, and the specific rule should perform as expected.
+4. Beside the *Email Line Manager* rule, click on the orange **Trigger** bolt button <img src="/images/trigger-btn.png" alt="trigger bolt button" style="zoom:150%;" /> to **manually trigger** the rule. This is a powerful feature as you do not need to fill out an entire process from start to finish to troubleshoot this. You will then see a *Rule executed* alert at the top of the page, and the specific rule should perform as expected.
 
    <img src="/images/request-assets-email.png" alt="Request assets email sent to the line manager" style="zoom:67%;" />
 
@@ -54,7 +54,7 @@ To access the rule diagnostics feature:
 
    ![Rule diagnostics other buttons](/images/rule-diagnostics-other-btns.png)
 
-6. To change the current form in your process instance, you can click on the **Change current active form** button ![change current active form button](/images/change-current-active-form-btn.png) below the nested list. This will allow you to troubleshoot different forms and how they behave when changed to the active form in the process.
+6. To change the current form in your process instance, you can click on the **Change current active form** button ![change current active form button](/images/change-current-active-form-btn.png) below the form list. This will allow you to troubleshoot different forms and how they behave when changed to the active form in the process.
 
    ![other debug features](/images/current-form-screen.png)
 
