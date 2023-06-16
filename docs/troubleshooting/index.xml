@@ -63,10 +63,10 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing">Version history and Auditing&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Rule diagnostics</title><link>https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>Rule diagnostics&lt;/strong> is a troubleshooting feature within Kianda that allows you to view a nested list of all forms, fields and rules - the purpose being that you can choose to manually trigger these rules for diagnostic purposes, as well as toggle field visibility, re-assign forms, and more.&lt;/p>
+&lt;p>&lt;strong>Rule diagnostics&lt;/strong> is a troubleshooting feature within Kianda that allows you to view a nested list of all forms, fields and rules - the purpose being that you can choose to &lt;strong>manually trigger&lt;/strong> these rules for diagnostic purposes, as well as &lt;strong>toggle field visibility&lt;/strong>, &lt;strong>re-assign forms&lt;/strong>, and more.&lt;/p>
 &lt;p>The rule diagnostics feature is available for troubleshooting specific &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Process instances&lt;/a> where as the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a> feature focuses more so on troubleshooting a process design pre-publishing.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>Before getting started, you must open a process instance of any status that you would like to perform rule diagnostics on.&lt;/p>
+&lt;p>Before getting started, you must open a process instance that you would like to perform rule diagnostics on.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To access the rule diagnostics feature:&lt;/p>
 &lt;ol>
@@ -84,7 +84,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/expanding-process-instance.png" alt="Drill down into line manager">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Beside the &lt;em>Email Line Manager&lt;/em> rule, click on the orange &lt;strong>Trigger&lt;/strong> bolt button &lt;img src="https://docs.kianda.com/images/trigger-btn.png" alt="trigger bolt button" style="zoom:150%;" /> to manually trigger the rule. This is a powerful feature as you do not need to fill out an entire process from start to finish to troubleshoot this. You will then see a &lt;em>Rule executed&lt;/em> alert at the top of the page, and the specific rule should perform as expected.&lt;/p>
+&lt;p>Beside the &lt;em>Email Line Manager&lt;/em> rule, click on the orange &lt;strong>Trigger&lt;/strong> bolt button &lt;img src="https://docs.kianda.com/images/trigger-btn.png" alt="trigger bolt button" style="zoom:150%;" /> to &lt;strong>manually trigger&lt;/strong> the rule. This is a powerful feature as you do not need to fill out an entire process from start to finish to troubleshoot this. You will then see a &lt;em>Rule executed&lt;/em> alert at the top of the page, and the specific rule should perform as expected.&lt;/p>
 &lt;img src="https://docs.kianda.com/images/request-assets-email.png" alt="Request assets email sent to the line manager" style="zoom:67%;" />
 &lt;/li>
 &lt;li>
@@ -100,7 +100,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-diagnostics-other-btns.png" alt="Rule diagnostics other buttons">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To change the current form in your process instance, you can click on the &lt;strong>Change current active form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/change-current-active-form-btn.png" alt="change current active form button"> below the nested list. This will allow you to troubleshoot different forms and how they behave when changed to the active form in the process.&lt;/p>
+&lt;p>To change the current form in your process instance, you can click on the &lt;strong>Change current active form&lt;/strong> button &lt;img src="https://docs.kianda.com/images/change-current-active-form-btn.png" alt="change current active form button"> below the form list. This will allow you to troubleshoot different forms and how they behave when changed to the active form in the process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/current-form-screen.png" alt="other debug features">&lt;/p>
 &lt;/li>
 &lt;li>
