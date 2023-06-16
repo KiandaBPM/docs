@@ -119,6 +119,11 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing">Version History and Auditing&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Custom widget debugging</title><link>https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Within your Kianda platform, you have the option to create your own custom widgets if the many pre-configured fields, rules or dashboard elements do not suit. Naturally, you might want to troubleshoot your created code if it does not perform as expected. This page will outline and detail several important code debugging practices you can implement in your custom widget to ensure correct operation.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;p>Before getting started, you must open a custom widget of your choice in code edit mode that features rules/fields/dashboard elements that require debugging.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2></description></item></channel></rss>
+&lt;h2 id="custom-widget-debugging-practices">Custom widget debugging practices&lt;/h2>
+&lt;p>There are several methods of debugging your custom rule, field and dashboard widgets.&lt;/p>
+&lt;h3 id="debugger-function">Debugger function&lt;/h3>
+&lt;p>The debugger function is a JavaScript function that allows for troubleshooting your code.&lt;/p>
+&lt;h3 id="print-outs">Print outs&lt;/h3></description></item></channel></rss>
