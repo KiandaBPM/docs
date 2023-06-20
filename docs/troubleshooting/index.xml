@@ -119,11 +119,11 @@
 &lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing">Version History and Auditing&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Custom widget debugging</title><link>https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Within your Kianda platform, you have the option to create your own custom widgets if the many pre-configured fields, rules or dashboard elements do not suit. Naturally, you might want to troubleshoot your created code if it does not perform as expected. This page will outline and detail several important code debugging practices you can implement in your custom widget to ensure correct operation.&lt;/p>
+&lt;p>Within your Kianda platform, you have the option to create your own &lt;strong>custom widgets&lt;/strong> if the many pre-configured fields, rules or dashboard elements do not suit. Naturally, you might want to troubleshoot your created code if it does not perform as expected. This page will outline and detail several important code debugging practices you can implement in your custom widget to ensure correct operation.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;p>Before getting started, you must open a custom widget of your choice in code edit mode that features rules/fields/dashboard elements that require debugging, and/or have the custom widget opened in its related process/dashboard in view mode.&lt;/p>
 &lt;h2 id="custom-widget-debugging-practices">Custom widget debugging practices&lt;/h2>
-&lt;p>There are several methods of debugging your custom &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">field&lt;/a>, &lt;a href="https://docs.kianda.com/docs/low-code/rule-widget/">rule&lt;/a>, and &lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">dashboard&lt;/a> widgets listed below. You can also investigate and understand Ember.js on your Kianda platform via the &lt;a href="https://docs.kianda.com/docs/low-code/using-the-ember-inspector/">Ember.js inspector&lt;/a>, an an open-source JavaScript web application framework that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner.&lt;/p>
+&lt;p>There are several methods of debugging your custom &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">field&lt;/a>, &lt;a href="https://docs.kianda.com/docs/low-code/rule-widget/">rule&lt;/a>, and &lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">dashboard&lt;/a> widgets listed below. You can also investigate and understand &lt;strong>Ember.js&lt;/strong> on your Kianda platform via the &lt;a href="https://docs.kianda.com/docs/low-code/using-the-ember-inspector/">Ember.js inspector&lt;/a>, an an open-source JavaScript web application framework that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner.&lt;/p>
 &lt;p>On this page, we will look at using &lt;a href="https://developer.chrome.com/docs/devtools/">Google Chrome Developer Tools&lt;/a>, however most web browsers provide web analysis and debugging tools such as &lt;a href="https://www.mozilla.org/en-US/firefox/developer/">Mozilla Firefox Developer Tools&lt;/a> and &lt;a href="https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40017576-CH1-SW1">Safari Web Inspector&lt;/a>.&lt;/p>
 &lt;h3 id="developer-console">Developer console&lt;/h3>
 &lt;p>You can simply print information relating to your widget within the developer console by utilising JavaScript methods such as &lt;strong>&lt;code>getElementsByClassName&lt;/code>&lt;/strong> on the document object. Depending on the code you have written, this method can be useful in returning attributes of your chosen array of classes.&lt;/p>
@@ -134,7 +134,7 @@
 &lt;p>Navigate to a process that features the &lt;strong>custom field&lt;/strong> or &lt;strong>rule&lt;/strong> you would like to troubleshoot, or alternatively in this case, navigate to the dashboard that features the &lt;strong>custom dashboard widget&lt;/strong> you would like to troubleshoot.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Right click on the page and select &lt;strong>inspect&lt;/strong>.&lt;/p>
+&lt;p>Right click on the page and select &lt;strong>Inspect&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/inspect.png" alt="inspect page">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -171,7 +171,7 @@
 &lt;p>Navigate to a process that features the &lt;strong>custom field&lt;/strong> or &lt;strong>rule&lt;/strong> you would like to troubleshoot.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Right click on the page and select &lt;strong>inspect&lt;/strong>.&lt;/p>
+&lt;p>Right click on the page and select &lt;strong>Inspect&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/inspect.png" alt="inspect page">&lt;/p>
 &lt;/li>
 &lt;li>
