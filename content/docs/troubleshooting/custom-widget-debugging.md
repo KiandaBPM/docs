@@ -8,7 +8,7 @@ hide_summary: true
 
 ## Introduction
 
-Within your Kianda platform, you have the option to create your own **custom widgets** if the many pre-configured fields, rules or dashboard elements do not suit. Naturally, you might want to troubleshoot your created code if it does not perform as expected. This page will outline and detail several important code debugging practices you can implement in your custom widget to ensure correct operation.
+Within your Kianda platform, you have the option to create your own **custom widgets** if the many pre-configured fields, rules or dashboard elements do not suit. Naturally, you might want to troubleshoot your created code if it does not perform as expected. This page will outline and detail several important code debugging practices you can implement in your custom widget to ensure correct operation. As well as this, some of these methods can be applied to troubleshoot your own **custom connectors** within your platform.
 
 ## Prerequisites
 
@@ -96,7 +96,7 @@ To use the debugger function:
 
    As seen in the image below:
 
-   ![sources tab look](/images/sources-tab3.png)
+   ![sources tab look](/images/sources-tab4.png)
 
    1. Clicking on the **Play/pause** button will begin executing the code. 
    2. The code execution pauses when it reaches the **debugger** function. If you would like to execute the code until the next debugger function, click on the Play/pause button again.
@@ -114,7 +114,7 @@ To use the debugger function:
    1. **Console.error()** - this method similar to console.log() outputs an error message to the developer console with a red warning symbol.
    2. **Try - catch statements** - you can wrap your code in a try - catch block so that expected errors are handled appropriately. This is a preventative measure for certain scenarios such as a user entering invalid data. 
    3. Other developer tools like:
-      * **Network** tab to monitor and analyse network activity between the client and server - useful for investigating bottlenecks and throttling such as uploading large files.
+      * **Network** tab to monitor and analyse network activity between the client and server - useful for investigating bottlenecks and throttling such as uploading large files. Throttling is described as intentionally slowing down your network speed to imitate scenarios where a poor network connection might occur.
       * **Elements** tab allows you to inspect the nested HTML structure of your page and visualise any applied CSS styles, as well as allowing manipulation via the box model visualiser.
       * **Performance** tab showcases JavaScript execution, memory usage and more. It differs from the network tab in that it analyses overall performance as opposed to specific requests.
 
