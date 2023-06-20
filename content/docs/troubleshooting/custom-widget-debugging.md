@@ -8,7 +8,7 @@ hide_summary: true
 
 ## Introduction
 
-Within your Kianda platform, you have the option to create your own custom widgets if the many pre-configured fields, rules or dashboard elements do not suit. Naturally, you might want to troubleshoot your created code if it does not perform as expected. This page will outline and detail several important code debugging practices you can implement in your custom widget to ensure correct operation.
+Within your Kianda platform, you have the option to create your own **custom widgets** if the many pre-configured fields, rules or dashboard elements do not suit. Naturally, you might want to troubleshoot your created code if it does not perform as expected. This page will outline and detail several important code debugging practices you can implement in your custom widget to ensure correct operation.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ Before getting started, you must open a custom widget of your choice in code edi
 
 ## Custom widget debugging practices
 
-There are several methods of debugging your custom [field](/docs/low-code/field-widget/), [rule](/docs/low-code/rule-widget/),  and [dashboard](/docs/low-code/dashboard-widget/) widgets listed below. You can also investigate and understand Ember.js on your Kianda platform via the [Ember.js inspector](/docs/low-code/using-the-ember-inspector/), an an open-source JavaScript web application framework that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner.
+There are several methods of debugging your custom [field](/docs/low-code/field-widget/), [rule](/docs/low-code/rule-widget/),  and [dashboard](/docs/low-code/dashboard-widget/) widgets listed below. You can also investigate and understand **Ember.js** on your Kianda platform via the [Ember.js inspector](/docs/low-code/using-the-ember-inspector/), an an open-source JavaScript web application framework that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner.
 
 On this page, we will look at using [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/), however most web browsers provide web analysis and debugging tools such as [Mozilla Firefox Developer Tools](https://www.mozilla.org/en-US/firefox/developer/) and [Safari Web Inspector](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40017576-CH1-SW1).
 
@@ -34,7 +34,7 @@ To print debugging messages to the console:
 
 1. Navigate to a process that features the **custom field** or **rule** you would like to troubleshoot, or alternatively in this case, navigate to the dashboard that features the **custom dashboard widget** you would like to troubleshoot.
 
-2. Right click on the page and select **inspect**.
+2. Right click on the page and select **Inspect**.
 
    ![inspect page](/images/inspect.png)
 
@@ -84,7 +84,7 @@ To use the debugger function:
 
 1. Navigate to a process that features the **custom field** or **rule** you would like to troubleshoot.
 
-2. Right click on the page and select **inspect**.
+2. Right click on the page and select **Inspect**.
 
    ![inspect page](/images/inspect.png)
 
