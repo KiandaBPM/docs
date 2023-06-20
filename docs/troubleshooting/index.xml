@@ -121,9 +121,93 @@
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Within your Kianda platform, you have the option to create your own custom widgets if the many pre-configured fields, rules or dashboard elements do not suit. Naturally, you might want to troubleshoot your created code if it does not perform as expected. This page will outline and detail several important code debugging practices you can implement in your custom widget to ensure correct operation.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>Before getting started, you must open a custom widget of your choice in code edit mode that features rules/fields/dashboard elements that require debugging.&lt;/p>
+&lt;p>Before getting started, you must open a custom widget of your choice in code edit mode that features rules/fields/dashboard elements that require debugging, and/or have the custom widget opened in its related process/dashboard in view mode.&lt;/p>
 &lt;h2 id="custom-widget-debugging-practices">Custom widget debugging practices&lt;/h2>
-&lt;p>There are several methods of debugging your custom rule, field and dashboard widgets.&lt;/p>
+&lt;p>There are several methods of debugging your custom &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">field&lt;/a>, &lt;a href="https://docs.kianda.com/docs/low-code/rule-widget/">rule&lt;/a>, and &lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">dashboard&lt;/a> widgets listed below. You can also investigate and understand Ember.js on your Kianda platform via the &lt;a href="https://docs.kianda.com/docs/low-code/using-the-ember-inspector/">Ember.js inspector&lt;/a>, an an open-source JavaScript web application framework that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner.&lt;/p>
+&lt;p>On this page, we will look at using &lt;a href="https://developer.chrome.com/docs/devtools/">Google Chrome Developer Tools&lt;/a>, however most web browsers provide web analysis and debugging tools such as &lt;a href="https://www.mozilla.org/en-US/firefox/developer/">Mozilla Firefox Developer Tools&lt;/a> and &lt;a href="https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40017576-CH1-SW1">Safari Web Inspector&lt;/a>.&lt;/p>
+&lt;h3 id="developer-console">Developer console&lt;/h3>
+&lt;p>You can simply print information relating to your widget within the developer console by utilising JavaScript methods such as &lt;strong>&lt;code>getElementsByClassName&lt;/code>&lt;/strong> on the document object. Depending on the code you have written, this method can be useful in returning attributes of your chosen array of classes.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/developer-console-debug.png" alt="Printing to the developer console">&lt;/p>
+&lt;p>To print debugging messages to the console:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to a process that features the &lt;strong>custom field&lt;/strong> or &lt;strong>rule&lt;/strong> you would like to troubleshoot, or alternatively in this case, navigate to the dashboard that features the &lt;strong>custom dashboard widget&lt;/strong> you would like to troubleshoot.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Right click on the page and select &lt;strong>inspect&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/inspect.png" alt="inspect page">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Within the developer tools window, click on the &lt;strong>Console&lt;/strong> tab. From here you can write various queries and debugging snippets that can aid in the troubleshooting process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/console-tab.png" alt="console tab">&lt;/p>
+&lt;p>In this example, we are looking at a custom dashboard widget that features a frequently asked questions (FAQ) accordion. Each question division has the class name of &lt;em>accordionTrainingDashboard&lt;/em>, so to obtain the attributes of each division, we query a chosen index of the array of divisions and add the &lt;em>.attributes&lt;/em> element to the end:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">document&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">getElementsByClassName&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;accordionTrainingDashboard&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)[&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">2&lt;/span>&lt;span style="color:#000;font-weight:bold">].&lt;/span>&lt;span style="color:#000">attributes&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ce5c00;font-weight:bold">&amp;gt;&lt;/span> &lt;span style="color:#000">NamedNodeMap&lt;/span>&lt;span style="color:#a40000"> &lt;/span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">class&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">data&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">ember&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">action&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">2&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">data&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">ember&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">action&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1163&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">class&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">class&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">data&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">ember&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">action&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">data&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">ember&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">action&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">data&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">ember&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">action&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1163&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">data&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">ember&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">action&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1163&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">length&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">3&lt;/span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This code displays various attributes relating to the third question in the FAQ accordion, however other properties and methods can be called in the developer console instead of &lt;em>.attributes&lt;/em>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>.style&lt;/strong> - to view the custom CSS that is being applied to the HTML. For more on this, see &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS File&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>.focus()&lt;/strong> - if your HTML elements appear to be hidden or out of focus, the &lt;em>.focus()&lt;/em> method snaps the browser view to the elements position.&lt;/li>
+&lt;li>&lt;strong>.innerHTML&lt;/strong> - returns the HTML content within the selected element, useful for analysing and manipulating content.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="consolelog-method">Console.log() method&lt;/h3>
+&lt;p>The &lt;strong>console.log()&lt;/strong> method is a useful JavaScript method that prints out values that are passed into it as a parameter. This is useful for troubleshooting logical problems within your code at any point to ensure the correct operation of your widget.&lt;/p>
+&lt;p>For example within a custom field widget&amp;rsquo;s actual source code, you might want to confirm the value of a file URL field by adding a console.log() statement after the variable is declared and initialised:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">var&lt;/span> &lt;span style="color:#000">fileURLField&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">process&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">findFieldByName&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;rule.settings.fileURL.name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">console&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">log&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">fileURLField&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">fileURLField&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">set&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;https://xyz.kianda.com/api/file/kianda-data/?file=&amp;#34;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span>&lt;span style="color:#000">sourceField&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">data&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">value&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>&lt;span style="color:#000;font-weight:bold">].&lt;/span>&lt;span style="color:#000">fileUrl&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In this example, the URL will be printed to the developer console before calling the &lt;em>.set&lt;/em> method to it to ensure the correct URL is being set.&lt;/p>
 &lt;h3 id="debugger-function">Debugger function&lt;/h3>
-&lt;p>The debugger function is a JavaScript function that allows for troubleshooting your code.&lt;/p>
-&lt;h3 id="print-outs">Print outs&lt;/h3></description></item></channel></rss>
+&lt;p>The &lt;strong>debugger&lt;/strong> function is a JavaScript function that allows for troubleshooting your code in a step-by-step process using code breakpoints. When the debugger function is called, any values that were declared and initialised, or any calculations that were made will be highlighted and displayed in the developer tools tab &lt;strong>Sources&lt;/strong>.&lt;/p>
+&lt;p>To use the debugger function:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Navigate to a process that features the &lt;strong>custom field&lt;/strong> or &lt;strong>rule&lt;/strong> you would like to troubleshoot.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Right click on the page and select &lt;strong>inspect&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/inspect.png" alt="inspect page">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Within the developer tools window, click on the &lt;strong>Sources&lt;/strong> tab.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/source-tab.png" alt="console tab">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>From here, execute your code/begin entering data into your custom widget.&lt;/p>
+&lt;p>As seen in the image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sources-tab3.png" alt="sources tab look">&lt;/p>
+&lt;ol>
+&lt;li>Clicking on the &lt;strong>Play/pause&lt;/strong> button will begin executing the code.&lt;/li>
+&lt;li>The code execution pauses when it reaches the &lt;strong>debugger&lt;/strong> function. If you would like to execute the code until the next debugger function, click on the Play/pause button again.&lt;/li>
+&lt;li>The values/calculations are displayed under the &lt;strong>Script&lt;/strong> heading in the bottom right-hand corner and will be updated on each iteration.&lt;/li>
+&lt;li>You can choose to select further code &lt;strong>Breakpoints&lt;/strong> by ticking the checkboxes beside &lt;em>Pause on uncaught exceptions&lt;/em> and &lt;em>Pause on caught exceptions&lt;/em>.&lt;/li>
+&lt;/ol>
+&lt;p>The debugger function operates similarly to the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a> with its iterative, step-by-step stage based troubleshooting flow.&lt;/p>
+&lt;h3 id="other-debugging-practices">Other debugging practices&lt;/h3>
+&lt;p>There are several other useful debugging practices you can implement within your Kianda platform:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Console.error()&lt;/strong> - this method similar to console.log() outputs an error message to the developer console with a red warning symbol.&lt;/li>
+&lt;li>&lt;strong>Try - catch statements&lt;/strong> - you can wrap your code in a try - catch block so that expected errors are handled appropriately. This is a preventative measure for certain scenarios such as a user entering invalid data.&lt;/li>
+&lt;li>Other developer tools like:
+&lt;ul>
+&lt;li>&lt;strong>Network&lt;/strong> tab to monitor and analyse network activity between the client and server - useful for investigating bottlenecks and throttling such as uploading large files.&lt;/li>
+&lt;li>&lt;strong>Elements&lt;/strong> tab allows you to inspect the nested HTML structure of your page and visualise any applied CSS styles, as well as allowing manipulation via the box model visualiser.&lt;/li>
+&lt;li>&lt;strong>Performance&lt;/strong> tab showcases JavaScript execution, memory usage and more. It differs from the network tab in that it analyses overall performance as opposed to specific requests.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Custom widget debugging&lt;/strong>, find out more about other troubleshooting features:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing">Version history and Auditing&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

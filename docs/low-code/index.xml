@@ -799,31 +799,7 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Custom Connectors</title><link>https://docs.kianda.com/docs/low-code/custom-connector/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/custom-connector/</guid><description>
-&lt;h2 id="what-are-custom-connectors">What are Custom Connectors?&lt;/h2>
-&lt;p>Kianda provides predefined datasource connectors such as the SQL server and SharePoint to allow you to connect your Kianda forms to particular data sources. A complete list of these predefined datasources is available at &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a>. In addition to these predefined connectors, you can also create &lt;strong>Custom connectors&lt;/strong> to enable you to configure your own connector to suit your needs.&lt;/p>
-&lt;p>Custom connectors work in the same way as other Kianda connectors, but with the added benefit of customisation.&lt;/p>
-&lt;h2 id="what-are-custom-connectors-used-for">What are Custom Connectors used for?&lt;/h2>
-&lt;p>Custom connectors provide the infrastructure to allow developers to create a custom datasource, it provides hooks for pre- and post-processing of the query and the ability to customise the datasource settings for the connector.&lt;/p>
-&lt;h2 id="custom-connector-vs-datasource">Custom Connector VS Datasource&lt;/h2>
-&lt;p>As previously mentioned, the Kianda platform provides a list of predefined datasource connectors, such as SharePoint, SQL server and SAP. These however cannot be customized for an individual companies needs.&lt;/p>
-&lt;p>Custom Connectors provide end-to-end customisation for datasource connections. The Custom Connector provides the architecture to allow customisation of pre- and post-processing of database queries.&lt;/p>
-&lt;p>For example when using a SharePoint data source you can use parameters for example selection of the environment and user credentials, but if you needed extra parameter, you could use the custom connector to provide this ability.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>There are three key steps that need to be implemented in order to create and use a customised connector as follows:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Microservice - create a &lt;strong>microservice&lt;/strong> that will implement metadata, query and test functions. &lt;!-- click on the [Microservice](/docs/low-code/custom-connector/create-microservice/) link to get further details. -->&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Use Kianda features to create and test your customised connector - use &lt;strong>Developer&lt;/strong> to register a new connector&lt;!-- [register a new connector](/docs/low-code/custom-connector/steps-to-create/#register-a-new-connector) --> and use &lt;strong>Data sources&lt;/strong> to &lt;!-- [create a datasource](/docs/platform/connectors/#creating-a-datasource) --> create a datasource for the newly customised connector. Both of these features are available under &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/administration/">Administration&lt;/a>&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Process - use the custom connector to bring data into a process and use the &lt;strong>query hook&lt;/strong> to filter the data. Use Kianda &lt;strong>Designer&lt;/strong> to connect your data source to Kianda forms, for example a List control can connect to a datasource, see step 9 in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/#how-to-get-started">List control&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>To create a test service, follow the 3 steps above, or if you have already created a microservice go straight to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/steps-to-create/">steps to create a custom connector&lt;/a> to learn how to create a custom connector.&lt;/p></description></item><item><title>Docs: Custom rule development</title><link>https://docs.kianda.com/docs/low-code/rule-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/rule-widget/</guid><description>
+&lt;p>To continue with low-code development, you can view &lt;a href="https://docs.kianda.com/docs/low-code/templating-basics/">Templating basics&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item><item><title>Docs: Custom rule development</title><link>https://docs.kianda.com/docs/low-code/rule-widget/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/rule-widget/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>There are currently 60 predefined rules available to use in forms and processes, across 10 categories:&lt;/p>
 &lt;ul>
@@ -1136,4 +1112,28 @@ For example, if you want to change all buttons in the process to have a backgrou
 &lt;td>tagName: tr, field: &amp;hellip;.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item></channel></rss>
+&lt;/table></description></item><item><title>Docs: Custom Connectors</title><link>https://docs.kianda.com/docs/low-code/custom-connector/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/custom-connector/</guid><description>
+&lt;h2 id="what-are-custom-connectors">What are Custom Connectors?&lt;/h2>
+&lt;p>Kianda provides predefined datasource connectors such as the SQL server and SharePoint to allow you to connect your Kianda forms to particular data sources. A complete list of these predefined datasources is available at &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a>. In addition to these predefined connectors, you can also create &lt;strong>Custom connectors&lt;/strong> to enable you to configure your own connector to suit your needs.&lt;/p>
+&lt;p>Custom connectors work in the same way as other Kianda connectors, but with the added benefit of customisation.&lt;/p>
+&lt;h2 id="what-are-custom-connectors-used-for">What are Custom Connectors used for?&lt;/h2>
+&lt;p>Custom connectors provide the infrastructure to allow developers to create a custom datasource, it provides hooks for pre- and post-processing of the query and the ability to customise the datasource settings for the connector.&lt;/p>
+&lt;h2 id="custom-connector-vs-datasource">Custom Connector VS Datasource&lt;/h2>
+&lt;p>As previously mentioned, the Kianda platform provides a list of predefined datasource connectors, such as SharePoint, SQL server and SAP. These however cannot be customized for an individual companies needs.&lt;/p>
+&lt;p>Custom Connectors provide end-to-end customisation for datasource connections. The Custom Connector provides the architecture to allow customisation of pre- and post-processing of database queries.&lt;/p>
+&lt;p>For example when using a SharePoint data source you can use parameters for example selection of the environment and user credentials, but if you needed extra parameter, you could use the custom connector to provide this ability.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>There are three key steps that need to be implemented in order to create and use a customised connector as follows:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Microservice - create a &lt;strong>microservice&lt;/strong> that will implement metadata, query and test functions. &lt;!-- click on the [Microservice](/docs/low-code/custom-connector/create-microservice/) link to get further details. -->&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Use Kianda features to create and test your customised connector - use &lt;strong>Developer&lt;/strong> to register a new connector&lt;!-- [register a new connector](/docs/low-code/custom-connector/steps-to-create/#register-a-new-connector) --> and use &lt;strong>Data sources&lt;/strong> to &lt;!-- [create a datasource](/docs/platform/connectors/#creating-a-datasource) --> create a datasource for the newly customised connector. Both of these features are available under &lt;strong>&lt;a href="https://docs.kianda.com/docs/platform/administration/">Administration&lt;/a>&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Process - use the custom connector to bring data into a process and use the &lt;strong>query hook&lt;/strong> to filter the data. Use Kianda &lt;strong>Designer&lt;/strong> to connect your data source to Kianda forms, for example a List control can connect to a datasource, see step 9 in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/#how-to-get-started">List control&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
+&lt;p>To create a test service, follow the 3 steps above, or if you have already created a microservice go straight to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/steps-to-create/">steps to create a custom connector&lt;/a> to learn how to create a custom connector.&lt;/p></description></item></channel></rss>
