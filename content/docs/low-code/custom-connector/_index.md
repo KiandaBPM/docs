@@ -2,7 +2,7 @@
 title: "Custom Connectors"
 linkTitle: "Custom Connector development"
 description: Learn about custom connectors, what they are and why they are used
-weight: 9
+weight: 13
 
 typora-root-url: ..\..\..\..\static
 ---
