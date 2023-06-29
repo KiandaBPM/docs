@@ -9,7 +9,7 @@ typora-root-url: ..\..\..\static
 Your Kianda environment is designed to be an intuitive, user-friendly workspace with built-in features like Kianda [**Previewer**](/docs/platform/application-designer/designer/previewer/) that support quick prototyping and testing. To support your work there are also a number of additional features that you can use to troubleshoot issues. The categories of troubleshooting include:
 
 - Using the [Previewer](/docs/platform/application-designer/designer/previewer/) to test designs
-- Using the [Rule debugger](/docs/troubleshooting/rule-debugger) and [Rule diagnostics](/docs/troubleshooting/rule-debugger) to troubleshoot process instance flow
+- Using the [Rule debugger](/docs/troubleshooting/rule-debugger) and [Rule diagnostics](/docs/troubleshooting/rule-diagnostics) to troubleshoot process instance flow
 - [Custom widget debugging](/docs/troubleshooting/custom-widget-debugging/) 
 - [Version history management](/docs/troubleshooting/version-history-and-auditing)
 

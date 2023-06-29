@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\static
 
 **Rule diagnostics** is a troubleshooting feature within Kianda that allows you to view a nested list of all forms, fields and rules - the purpose being that you can choose to **manually trigger** these rules for diagnostic purposes, as well as **toggle field visibility**, **re-assign forms**, and more.
 
-The rule diagnostics feature is available for troubleshooting specific [Process instances](/docs/platform/rules/general/add-conditions/) where as the [Rule debugger](/docs/troubleshooting/rule-debugger) feature focuses more so on troubleshooting a process design pre-publishing.
+The rule diagnostics feature is available for troubleshooting specific [Process instances](/docs/troubleshooting/version-history-and-auditing/) where as the [Rule debugger](/docs/troubleshooting/rule-debugger) feature focuses more so on troubleshooting a process design pre-publishing.
 
 
 

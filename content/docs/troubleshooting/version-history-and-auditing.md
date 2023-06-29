@@ -51,7 +51,7 @@ For example by clicking on a process ID like 'asset-request-3' as seen in the li
 
    A good knowledge of the process design as seen in Kianda [Designer](/docs/platform/application-designer/designer/) is necessary to support troubleshooting changes in process instances. 
 
-4. Click on the **Back** button ![Back button](/images/back-process-history.jpg)or **Close** to return to the list of process instance versions. 
+4. Click on the **Back** button ![Back button](/images/back-process-history.jpg) or **Close** to return to the list of process instance versions. 
 
 
 
