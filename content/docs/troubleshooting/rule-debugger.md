@@ -2,8 +2,6 @@
 title: "Rule debugger"
 weight: 10
 typora-root-url: ..\..\..\static
-toc_hide: true
-hide_summary: true
 ---
 
 ## Introduction
@@ -41,8 +39,8 @@ To access the rule debugger feature:
    The rule debugger dialog displays information such as the **Rule** currently being executed, any **Conditions** associated with the rule and the **Field** the rule is being enacted upon. Three buttons are also displayed, allowing you to:
 
    * **Execute rule** - executes the **currently displayed rule** on the currently displayed field, along with any conditions specified where you have two or more rules attached to a field, form or process. Once all the rules are executed for that field, then the dialog box will disappear and the system awaits further data input into the form's fields until the next rule or block of rules attached to a field are met. 
-   * **Resume** - resumes the execution of all rules in a block where there are two or more rules attached to a field, form or process. The rule debug dialog will only then reappear when new data is entered into another field in the process flow.
-   * **Stop debug** - exits the debugging mode and the rule debug dialog box disappears. You will receive no more messages about current rule execution, but will still be in the process preview window.
+   * **Resume** - resumes the **execution of all rules in a block** where there are two or more rules attached to a field, form or process. The rule debug dialog will only then reappear when new data is entered into another field in the process flow.
+   * **Stop debug** - **exits the debugging mode** and the rule debug dialog box disappears. You will not receive messages about current rule execution, but will remain in the process preview window.
 
 4. You can alter the conditions on the currently displayed rule (if any), by clicking on the **Conditions** filter button ![Conditions filter button image](/images/conditions-filter-btn.png). This will display another modal dialog box, which gives you the option to change the condition being applied to the rule, add further conditions, remove some conditions and more - allowing for the troubleshooting of different use cases within your process. To learn more about this, see [Conditions](/docs/platform/rules/general/add-conditions/).
 

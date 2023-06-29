@@ -2,23 +2,21 @@
 title: "Custom widget debugging"
 weight: 13
 typora-root-url: ..\..\..\static
-toc_hide: true
-hide_summary: true
 ---
 
 ## Introduction
 
-Within your Kianda platform, you have the option to create your own **custom widgets** if the many pre-configured fields, rules or dashboard elements do not suit. Naturally, you might want to troubleshoot your created code if it does not perform as expected. This page will outline and detail several important code debugging practices you can implement in your custom widget to ensure correct operation. As well as this, some of these methods can be applied to troubleshoot your own **custom connectors** within your platform.
+Within your Kianda platform, you have the option to create your own **custom widgets** if the many pre-configured fields, rules or dashboard elements do not suit. Naturally, you might want to troubleshoot your created code if it does not perform as expected. This page will outline and detail several important code **debugging practices** you can implement in your custom widget to ensure correct operation. As well as this, some of these methods can be applied to troubleshoot your own **custom connectors** within your platform.
 
 ## Prerequisites
 
-Before getting started, you must open a custom widget of your choice in code edit mode that features rules/fields/dashboard elements that require debugging, and/or have the custom widget opened in its related process/dashboard in view mode.
+Before getting started, open a custom widget of your choice in code edit mode within Kianda [Developer](/docs/platform/administration/developer/). For example choose features within rule, field, dashboard elements that require debugging.
 
 
 
 ## Custom widget debugging practices
 
-There are several methods of debugging your custom [field](/docs/low-code/field-widget/), [rule](/docs/low-code/rule-widget/),  and [dashboard](/docs/low-code/dashboard-widget/) widgets listed below. You can also investigate and understand **Ember.js** on your Kianda platform via the [Ember.js inspector](/docs/low-code/using-the-ember-inspector/), an an open-source JavaScript web application framework that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner.
+There are several methods of debugging your custom [field](/docs/low-code/field-widget/), [rule](/docs/low-code/rule-widget/), and [dashboard](/docs/low-code/dashboard-widget/) widgets listed below. You can also investigate and understand **Ember.js** on your Kianda platform via the [Ember.js inspector](/docs/low-code/using-the-ember-inspector/), an an open-source JavaScript web application framework that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner.
 
 On this page, we will look at using [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/), however most web browsers provide web analysis and debugging tools such as [Mozilla Firefox Developer Tools](https://www.mozilla.org/en-US/firefox/developer/) and [Safari Web Inspector](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40017576-CH1-SW1).
 

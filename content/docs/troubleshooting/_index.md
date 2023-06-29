@@ -2,24 +2,26 @@
 title: "Troubleshooting"
 weight: 8
 typora-root-url: ..\..\..\static
-toc_hide: true
-hide_summary: true
 ---
 
 ## Introduction
 
-Your Kianda environment is designed to be an intuitive, user-friendly workspace with built-in features like Kianda **Previewer** that support quick prototyping and testing. To support your work there are also a number of additional features that you can use to troubleshoot issues. Click on each of the pages below to discover more details. There are a number of built-in features in Kianda that your organisation can take advantage of to monitor processes in detail and troubleshoot as needed. Your Kianda workspace cleverly allows you to manage **process design** and **process instance versioning** so that **administrators** can see what has happened at specific moments during process execution and roll-back to earlier versions if needed.  
+Your Kianda environment is designed to be an intuitive, user-friendly workspace with built-in features like Kianda [**Previewer**](/docs/platform/application-designer/designer/previewer/) that support quick prototyping and testing. To support your work there are also a number of additional features that you can use to troubleshoot issues. The categories of troubleshooting include:
 
-The features you can use for troubleshooting are:
+- Using the [Previewer](/docs/platform/application-designer/designer/previewer/) to test designs
+- Using the [Rule debugger](/docs/troubleshooting/rule-debugger) and [Rule diagnostics](/docs/troubleshooting/rule-debugger) to troubleshoot process instance flow
+- [Custom widget debugging](/docs/troubleshooting/custom-widget-debugging/) 
+- [Version history management](/docs/troubleshooting/version-history-and-auditing)
 
-- [Previewer]
-- [Rule debugger]
-- [Design version history](#design-version-history)
-- [Process instance version history](#process-instance-version-history)
+Click on each of the links above to read more. Version history management is introduced below.
 
 
 
-## Design version history
+## Version history management
+
+Version history management is useful for troubleshooting but also during audits, to see specifically changes made and who executed those changes. 
+
+Your Kianda workspace cleverly allows you to manage **process design** and **process instance versioning** so that **administrators** can see what has happened at specific moments during process execution and roll-back to earlier versions if needed.  
 
 Kianda **Designer** allows **administrators** or those with the **design business process** role, to update process designs. The platform keeps a record of all versions previously created. The **current or active version** of a process is always visible in the right-hand pane, for example V1.0 for the 'Inspection Process' as shown below.
 
@@ -39,14 +41,14 @@ At any time an older version of the design can be reinstated by clicking on the 
 
 This level of detail provides a precise way to monitor what is happening with a process design and to control which version should be the current version in an easy-to-use interface. The [Version history](/docs/platform/application-designer/designer/version-history/) page provides a step-by-step guide on how to view version history. 
 
-## Process instance version history
+When a process design has been published, and data captured using that design, then the [Process instance version history](/docs/troubleshooting/version-history-and-auditing) provides a useful way to see how and when a process design has been used and who has captured data using that design. Click on the link to read more details. 
 
-**Process instances** can be accessed from a list widget in a dashboard page linked to the process design. Access to the dashboard and list widget can be set using security settings, see [Dashboard security](/docs/security/process-level-security/#dashboard-security).
+### What's next  ![Idea icon](/images/18.png) ###
 
-![Process instance example](/images/process-instance-example.jpg)
+Find out more about other troubleshooting features:
 
-For example by clicking on a process ID like 'inspection-process-10' as seen in the list widget above, we can then see the actual record/process instance held in the system. In the Inspection process example below, a 'Request form' has had information submitted.
+- [Rule debugger](/docs/troubleshooting/rule-debugger)
+- [Rule diagnostics](/docs/troubleshooting/rule-diagnostics/)
+- [Custom widget debugging](/docs/troubleshooting/custom-widget-debugging/)
+- [Version history and Auditing](/docs/troubleshooting/version-history-and-auditing)
 
-![Process instance view](/../content/docs/process-instance-view.jpg)
-
-**Administrators** have access to the process instance history feature highlighted above, to manage process instance versions. By clicking on the **process history** button. 
