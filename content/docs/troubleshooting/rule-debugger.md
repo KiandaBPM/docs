@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\static
 
 ## Introduction
 
-The **Rule debugger** is a troubleshooting feature that allows you to visualise each rule being executed in your process design within the preview window. It provides an insight into the logical flow of a process logical and serves as an important troubleshooting feature if your process does not work as expected. As well as this, it states what rule is being executed and on what field it is acting upon, alongside any associated conditions.
+The **Rule debugger** is a troubleshooting feature that allows you to visualise each rule being executed in your process design within the preview window. It provides an insight into the logical flow of a process and serves as an important troubleshooting feature if your process does not work as expected. As well as this, it states what rule is being executed and on what field it is acting upon, alongside any associated conditions.
 
 ![Rule debugger in action example](/images/rule-debugger-example.jpg)
 

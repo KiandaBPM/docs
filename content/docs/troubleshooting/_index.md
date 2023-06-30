@@ -27,7 +27,7 @@ Kianda **Designer** allows **administrators** or those with the **design busines
 
 ![Process version history](/images/published-version.jpg)
 
-The **first version** of a process is always **0.1** and each time the **Save** button ![Save button](/images/saveprocess.png)is clicked, the version will increment to 0.2 and so on. Once the process is **published** the version changes to **1.0** and increments to 2.0 and so on with each publication. 
+The **first version** of a process is always **0.1** and each time the **Save** button ![Save button](/images/saveprocess.png) is clicked, the version will increment to 0.2 and so on. Once the process is **published** the version changes to **1.0** and increments to 2.0 and so on with each publication. 
 
 Clicking on the **Design version history** button itself opens the **Version history details** dialog box. 
 

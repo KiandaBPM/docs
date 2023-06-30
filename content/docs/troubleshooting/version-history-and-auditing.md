@@ -57,7 +57,7 @@ For example by clicking on a process ID like 'asset-request-3' as seen in the li
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-Now that you've learned about the **Custom widget debugging**, find out more about other troubleshooting features:
+Now that you've learned about **Version history and auditing**, find out more about other troubleshooting features:
 
 - [Rule debugger](/docs/troubleshooting/rule-debugger)
 - [Rule diagnostics](/docs/troubleshooting/rule-diagnostics/)
