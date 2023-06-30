@@ -34,14 +34,14 @@
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Custom widget debugging&lt;/strong>, find out more about other troubleshooting features:&lt;/p>
+&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Version history and auditing&lt;/strong>, find out more about other troubleshooting features:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/">Custom widget debugging&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Rule debugger</title><link>https://docs.kianda.com/docs/troubleshooting/rule-debugger/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/troubleshooting/rule-debugger/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Rule debugger&lt;/strong> is a troubleshooting feature that allows you to visualise each rule being executed in your process design within the preview window. It provides an insight into the logical flow of a process logical and serves as an important troubleshooting feature if your process does not work as expected. As well as this, it states what rule is being executed and on what field it is acting upon, alongside any associated conditions.&lt;/p>
+&lt;p>The &lt;strong>Rule debugger&lt;/strong> is a troubleshooting feature that allows you to visualise each rule being executed in your process design within the preview window. It provides an insight into the logical flow of a process and serves as an important troubleshooting feature if your process does not work as expected. As well as this, it states what rule is being executed and on what field it is acting upon, alongside any associated conditions.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-debugger-example.jpg" alt="Rule debugger in action example">&lt;/p>
 &lt;p>The &lt;strong>Rule Debugger&lt;/strong> can be turned on at any point, for example when starting a new process or using the Previewer. We look at the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/previewer/">Previewer&lt;/a> in the steps below, however you can also access this feature via &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
