@@ -28,4 +28,4 @@ Within Kianda Designer, click on a process, then a form of choice so that the **
 
 To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
 
-To find out about help and support, go to [Help](/docs/platform/administration/help).
+To find out about help and support, go to [Help](/docs/platform/general/help/).

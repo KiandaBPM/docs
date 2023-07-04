@@ -2,8 +2,6 @@
 title: "REST Service and Access Token refresh"
 linkTitle: "REST Service and Access Token refresh"
 typora-root-url: ..\..\..\..\..\static
-toc_hide: true
-hide_summary: true
 ---
 
 ## Introduction
@@ -22,7 +20,7 @@ There are five parameters to pass into the request body: `grant_type`, `client_i
 
 ![Get/Refresh Auth Token](/images/refresh-token-body.jpg)
 
-These parameters need to be 'held' in a process ...**so that????** see [Create a process](#create-a-process).
+These parameters need to be 'held' in a process, see [Create a process](#create-a-process) below.
 
 ### Create a process
 
@@ -30,7 +28,7 @@ Once a datasource is created, a process is created which will contain fields for
 
 As shown in the image above there are five parameters in the request body which need to be populated, and **each of these parameters must correspond to a field** in a process. 
 
-In the response body there are five parameters : `access_token`, `token_type`, `expires_in`, `refresh_token` and `created_at`, although only `access_token`, `expires_in` and `created_at` is needed. ********? Separately, I have gotten the Access Token so I can enter these details into the designer directly. How*********?
+In the response body there are five parameters : `access_token`, `token_type`, `expires_in`, `refresh_token` and `created_at`, although only `access_token`, `expires_in` and `created_at` is needed. You can obtain the Access Token via the Developer console so details can be entered into Designer directly. 
 
 A form is created using [Kianda Designer](docs/platform/application-designer/designer/) with **textbox fields** as well as a button called **Refresh** as follows:
 
@@ -42,7 +40,7 @@ Form rules are applied to fields in the form in the next section.
 
 Rules are applied to both the AccessToken textbox field and the Refresh button as follows:
 
-1. On the **Refresh button** add a **Data rule** > **Set Form Field** which will be used to clear the AccessToken field. Give the rule a title for example 'Clear Access Token' and map a 'blank' value to the Access Token field **(by 'pressing space bar key'??)** as shown below:
+1. On the **Refresh button** add a **Data rule** > **Set Form Field** which will be used to clear the AccessToken field. Give the rule a title for example 'Clear Access Token' and map a 'blank' value to the Access Token field by 'pressing space bar key' as shown below:
 
    ![Set form field rule to Clear Access Token field](/images/clear-access-token.jpg)
 
@@ -64,7 +62,7 @@ Rules are applied to both the AccessToken textbox field and the Refresh button a
 
    - The **On Success Mapping section** is used to **map the result from the API call back into the process**. Map `access_token`, `refresh_token`, `expires_in` and `created_at`, to the relative form fields. 
 
-3. In addition to the parameters defined with the **REST Service** the **urlPath** can be defined in the process and passed into the datasource. **Where*********?
+3. In addition to the parameters defined with the **REST Service** the **urlPath** can be defined in the process and passed into the datasource. 
 
 4. On the **Refresh button** add a **Form action rule** > **Save form** so that the details from the process are saved to the system database. The rule order then is as follows:
 
@@ -76,23 +74,18 @@ Finally; run the Process in preview mode, ensure the details you want to pass in
 
 The final step will be to create the scheduled task that will run before the refresh token expires. Navigate to the **Scheduled tasks** within the **Administration** section in the site. Click on the **Schedule a task** button and fill in the dialog box.
 
-![img](file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image015.jpg)
+1. Enter a name for the task in the **Task Name** field.
 
-\1.   Enter a name for the task in the **Task Name** field.
+2. Under **Schedule** select the **Minutes** option. In the **Every** **Minutes** field enter a numerical value. For example, if the Access Token expires every 60 minutes, enter 55, meaning the schedule will run every 55 minutes.
 
-\2.   Under **Schedule** select the **Minutes** option. In the **Every** **Minutes** field enter a numerical value. For example, if the Access Token expires every 60 minutes, enter 55, meaning the schedule will run every 55 minutes.
+3. Leave the **Expire** checkbox blank as this schedule should never stop.
+4. Under **Process Design** select the name of the process that you created in the step above. This will expose a new field called **Select the field or rule to trigger on schedule.**
 
-\3.   Leave the **Expire** checkbox blank as this schedule should never stop.
+5. In **Process ID** enter the ID of the process that you created in preview mode. 
 
-\4.   Under **Process Design** select the name of the process that you created in the step above. This will expose a new field called **Select the field or rule to trigger on schedule.**
+6. In **Select the field or rule to trigger on schedule** select the **Refresh** button.
 
-\5.   In **Process ID** enter the ID of the process that you created in preview mode. 
-
-\6.   In **Select the field or rule to trigger on schedule** select the **Refresh** button**.**
-
-![img](file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image017.jpg)
-
-\7.   Click **OK** to save.
+7. Click **OK** to save.
 
 The Schedule is now set up and will refresh the access token as frequently as the time entered in the minutes field.
 
@@ -102,11 +95,9 @@ The Schedule is now set up and will refresh the access token as frequently as th
 
 The Schedule is now set up and will refresh the access token as frequently as the time entered in the minutes field. This will run indefinitely until a user chooses to delete the schedule.
 
-The datasource is now available to used and the Access Token is being kept current. The Access Token can be pulled into different **Processes** and used to send further **REST APIs**. Check out the below articles on how to build processes and how to add more **REST Methods** to the datasource.
+The datasource is now available to used and the Access Token is being kept current. The Access Token can be pulled into different **Processes** and used to send further **REST APIs**. Check out the articles below on how to build processes:
 
-https://docs.kianda.com/docs/platform/administration/designer/
-
-https://docs.kianda.com/docs/platform/connectors/webservices/
+**[Using Kianda Designer]**(/docs/platform/administration/users/#view-and-edit-existing-user-details)
 
  
 

@@ -92,7 +92,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
    12. Note when your rule is complete you may want to change the order of rules for the particular field or form that it has been applied to. Drag the new **Meeting request** rule to where you want, so the order of execution of rules is correct. 
 
-       For example for a **Submit** button on a form I may want my **Meeting request** rule to be executed first before any other rule is executed. To do this click on the **Submit** button to make sure you are in **Edit** mode so that the Edit/pen button ![Pen button](/images/penicon.png)appears, and under **Rules** in the right-hand pane, drag the **Meeting request** rule to the top of the list by clicking on the rule and dragging it. For more information on rules, see [Rules](rules/Readme.md).
+       For example for a **Submit** button on a form I may want my **Meeting request** rule to be executed first before any other rule is executed. To do this click on the **Submit** button to make sure you are in **Edit** mode so that the Edit/pen button ![Pen button](/images/penicon.png)appears, and under **Rules** in the right-hand pane, drag the **Meeting request** rule to the top of the list by clicking on the rule and dragging it. For more information on rules, see [Rules](/docs/platform/rules/).
 
        ![Rule order](/images/`meeting-request-rule-order.jpg)
 
@@ -160,13 +160,13 @@ In advance of using this rule, you need to have **created one or more forms, com
 
 ![select email users](/images/send-email-email-address.jpg)
 
-   In all cases when you have made your selection, click on **OK** button to save your changes or click on **Close** to exit the dialog box without saving.
+In all cases when you have made your selection, click on **OK** button to save your changes or click on **Close** to exit the dialog box without saving.
 
    
 
    ### Expression builder
 
-   The expression builder is a useful and efficient way to use existing form fields as part of automated emails that you want to send out.
+The expression builder is a useful and efficient way to use existing form fields as part of automated emails that you want to send out.
 
    For example if you have a form Annual Leave request that contains a text box field 'Employee Name' you can use this field in an automated email to let a manager know that an employee has submitted a request. 
 
@@ -208,7 +208,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
    ### Attachments ###
 
-   To attach a file into the **Send email** rule, you must first contain a file field in your process. To learn more about file control go to [File upload control](/docs/platform/controls/input/file-upload/). 
+To attach a file into the **Send email** rule, you must first contain a file field in your process. To learn more about file control go to [File upload control](/docs/platform/controls/input/file-upload/). 
 
    1. To attach a file to an email, click on the **Attach a file** button ![Attach a file button](/images/attachfile.png). The **Attach file to email** dialog box opens. 
 
@@ -220,7 +220,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
    4. Click on **Insert attachment**. There is an option to attach a link to the file rather than the file itself.
 
-   In the **Attachments** section of the **Send email** dialog box, the name of the **File** field will appear indicating that attachments will come from the specified field. You can delete the specified File field by clicking the red bin/trash icon.
+In the **Attachments** section of the **Send email** dialog box, the name of the **File** field will appear indicating that attachments will come from the specified field. You can delete the specified File field by clicking the red bin/trash icon.
 
    ![s](/images/send-email-attachment.jpg)
 

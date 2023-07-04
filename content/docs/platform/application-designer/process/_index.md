@@ -59,7 +59,7 @@ Before you begin, we at Kianda recommend doing some simple planning before you d
 
 8. Imported processes are available to view and edit from the main process view.
 
-9. When you have created your process go to [Designer](platform/application-designer/designer/) to find out more on how to add and change forms within your process(es).
+9. When you have created your process go to [Designer](/docs/platform/application-designer/designer/) to find out more on how to add and change forms within your process(es).
 
    
 
@@ -98,7 +98,7 @@ Before you begin, we at Kianda recommend doing some simple planning before you d
 
 3. Click on the **OK** button when you are finished to save your work, or click on **Close** to exit the dialog box.
 
-3. When you have created your process go to [Designer](platform/form_designer2.md) to find out more on how to add forms to your process(es).
+3. When you have created your process go to [Designer](/docs/platform/application-designer/designer/) to find out more on how to add forms to your process(es).
 
    
 

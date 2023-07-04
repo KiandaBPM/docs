@@ -34,7 +34,7 @@ A REST API data connector can be configured by users with the role **Administrat
 
    - **Display name –** This is the name of the data source. Use an appropriate name, as this will be used within your process(es). 
 
-   - **Rest server base URL –** This is the base URL of the REST API. Ensure there are no trailing characters, for example https://api.mywebsite.com   
+   - **Rest server base URL –** This is the base URL of the REST API. Ensure there are no trailing characters, for example "(https:)//api.mywebsite.com"   
 
    - **Enable Certificate Authentication –** By default this option is set to **No**. By Selecting **Yes** this will display two new fields:
      

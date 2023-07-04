@@ -35,7 +35,7 @@ This allows you to specify a layout made of 1 to 12 columns and is based on boot
 
 ## Forms & layout fields
 
-Kianda comes with several pre-defined field widgets. In case none of them satisfies your specific needs and if you have some level of [development](development.md) skills you can always create your custom field widget.
+Kianda comes with several pre-defined field widgets. In case none of them satisfies your specific needs and if you have some level of development skills you can always create your custom field widget.
 
 At the time of writing, the default fields fall into four main categories of fields:
 
@@ -80,7 +80,7 @@ The key rules for working with forms are:
 3. Multi-step processes use the concept of "current form". Only the form matching the process status will be made editable.
 4. In a multi-step process, other forms that are not "current form" can be configured to **activate with** the current form. Meaning they might also be editable and will form a form group.
 
-The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal [business rules](business-rules.md) such as *assign form*, *go to form* and *submit rule* to dynamically control the ability for end-users to edit a particular form or a section of a form.
+The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal [business rules](/docs/platform/rules/) such as *assign form*, *go to form* and *submit rule* to dynamically control the ability for end-users to edit a particular form or a section of a form.
 
 ***How to add new form***
 

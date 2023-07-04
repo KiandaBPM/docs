@@ -4,7 +4,7 @@ typora-root-url: ..\..\..\..\..\static
 weight: 5
 ---
 
-**File management** rules is one category of [rules](rules/Readme.md) to enable operations such as the generation of Word documents, conversion to PDF format and merging PDF files together. These operations are useful when creating Word/Excel where the structure of those documents is the same for every instance but values are different. You can also use the **File management** rules for creating anonymous links which give access to files without permissions.
+**File management** rules is one category of [rules](/docs/platform/rules/) to enable operations such as the generation of Word documents, conversion to PDF format and merging PDF files together. These operations are useful when creating Word/Excel where the structure of those documents is the same for every instance but values are different. You can also use the **File management** rules for creating anonymous links which give access to files without permissions.
 
 Take an example of a **Create a file anonymous link** rule. Implementing this rule will result in a **randomly generated link** which will lead to a file that you want to share. This link can be opened in **any browser** and can be **accessible** by anyone and there is **no need for authentication** when opening the link. You can also set the expiry time of the created link which will cause the link not to exist after the specified time. See images below for an example of the **Create a file anonymous link** rule:
 

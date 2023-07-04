@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction ##
 
-**Communication** rules is one category of [rules](rules/Readme.md) to enable automated communications with process users, for example sending meeting requests or even user push notifications. 
+**Communication** rules is one category of [rules](/docs/platform/rules/) to enable automated communications with process users, for example sending meeting requests or even user push notifications. 
 
 Take an example of a **User alert** rule. Implementing this rule will result in a new item in the **user notification** in the [**Quick action menu**](/docs/platform/general/quickaction/), for example a rule that alerts a user to complete a form. The user notification icon will look like this when the alert comes in, indicating there is one new notification: ![New user notification](/images/user-notification-new-item.jpg)
 

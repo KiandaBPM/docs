@@ -29,7 +29,7 @@ The field picker for example is typically seen in **edit rule** dialog boxes to 
 
 ![Field picker component example](/images/field-picker-modal-example.jpg)
 
-Other field-related components include field-date, field-group, field-textbox and so on for the 16 predefined fields that exist. These components can be investigated using the **Ember inspector** add-in, see [Best practices](/docs/low-code/best-practices/#how-to-get-started-with-ember-inspector) for details.
+Other field-related components include field-date, field-group, field-textbox and so on for the 16 predefined fields that exist. These components can be investigated using the [**Ember inspector**](/docs/low-code/using-the-ember-inspector/) add-in, click on the link for details.
 
 
 

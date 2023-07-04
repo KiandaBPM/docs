@@ -8,8 +8,8 @@ typora-root-url: ..\..\..\..\static
 
 Automation in Kianda happens at various level and in various ways, all of which you can control using the click of a button, or configuring a parameter. To help you recognise how automation can happen, we've broken it down for you into different sections:
 
-1. [Process level automation](process-level-automation)
-2. [Field level automation](field-level-automation)
+1. [Process level automation](#process-level-automation)
+2. Field level automation
 
 ## Process level automation
 
@@ -17,7 +17,7 @@ Process level automation, means that new **process instances are created automat
 
 This can happen in a number of ways:
 
-- [Scheduled tasks function](scheduled-tasks-function)
+- [Scheduled tasks function](#scheduled-tasks-function)
 - [Start a process rule](/docs/platform/rules/workflow/start-a-process/)
 - [Schedule a Rule rule](/docs/platform/rules/workflow/schedule-a-rule/)
 

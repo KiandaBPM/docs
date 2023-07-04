@@ -26,7 +26,6 @@ Connecting to data in Kianda is a breeze. You can quickly connect to a data sour
 - [SAP](sap/)
 - [SharePoint](sharepoint/)
 - [SQL Server](sql-server/) 
-- [Web services](webservices/) 
 
 Click on each of the links above to find out more about each data connector. 
 

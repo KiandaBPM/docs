@@ -17,7 +17,7 @@ Kianda uses **Ember.js**, an **open-source JavaScript web framework** used to bu
 
 The Ember.js environment provides you with the **tools** to develop your applications, like libraries, templates, models and so on. One of the tools used more specifically used building Kianda form components is the **Handlebars templating library** described below. 
 
-The beauty of Ember.js is that it allows you can create advanced web applications with less code. To read more about Ember.js go to https://guides.emberjs.com/release/ and also [Best practices](/docs/low-code/best-practices/) for information on using the Ember inspector to view existing code.
+The beauty of Ember.js is that it allows you can create advanced web applications with less code. To read more about Ember.js go to https://guides.emberjs.com/release/ and also best practices [Using the Ember Inspector](/docs/low-code/using-the-ember-inspector/) for information on using the Ember inspector to view existing code.
 
 ### Handlebars ![Handlebars](/images/handlebars.png)
 
@@ -33,7 +33,7 @@ Using your **administrator** role, and accessing **Administration** functions th
 
 2. Editing the [Global CSS file](/docs/low-code/global-css/)
 
-3. Building widgets for [rules](/docs/low-code/rule-widget/), [fields](/docs/low-code/field-widget/), [dashboards](/docs/low-code/dashboard-widget/) and [data connectors](/docs/low-code/client-connector/) using [Kianda Developer](#kianda-developer)
+3. Building widgets for [rules](/docs/low-code/rule-widget/), [fields](/docs/low-code/field-widget/), [dashboards](/docs/low-code/dashboard-widget/) and data connectors using [Kianda Developer](#kianda-developer)
 
 4. [Customising list widgets](/docs/low-code/list-widget-template/) to present data in dashboards
 
@@ -59,7 +59,7 @@ Using Kianda Developer you can create reusable widgets, allowing you to extend t
 - **[Field](/docs/low-code/field-widget/)** or control widgets - that allow you to create elements that will appear on screen to user
 - **[Rule](/docs/low-code/rule-widget/)** widget - these are used to automate actions, like extracting data from a form or setting a particular status within a process
 - **[Dashboard](/docs/low-code/dashboard-widget/)** widget - used to create a particular type of display in a dashboard page
-- **[Data connector](/docs/low-code/client-connector/)** widget - used to connect to a particular data source so that Kianda can push or pull information to/from that data source
+- **Data connector** widget - used to connect to a particular data source so that Kianda can push or pull information to/from that data source
 
 ### Using Kianda developer
 You can access Kianda Developer if you have an **administration** or **developer** role. To use **Developer:**
@@ -100,7 +100,7 @@ You can access Kianda Developer if you have an **administration** or **developer
 
    - **Widget Icon** - choose an appropriate icon from the drop-down list.
 
-   - **Widget type** - choose from **[Field](/docs/low-code/field-widget/)**, **[Rule](/docs/low-code/rule-widget/)**, **[Dashboard widget](/docs/low-code/dashboard-widget/)** or **[Data connector](/docs/low-code/client-connector/)** widgets.
+   - **Widget type** - choose from **[Field](/docs/low-code/field-widget/)**, **[Rule](/docs/low-code/rule-widget/)**, **[Dashboard widget](/docs/low-code/dashboard-widget/)** or data connector widgets.
 
      Click on the links above to learn more about building specific types of widgets.
 

@@ -96,7 +96,7 @@ iOS users are not yet automatically prompted to install PWA's but it is somethin
 
 ## What's next ![Idea icon](/images/18.png)
 
-To continue with low-code development, you can view [Why choose low-code development?](/docs/low-code/why-choose-lowcode). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/docs/getting-started/welcome/no-code/) and [What is low-code?](/docs/getting-started/welcome/low-code/). 
+To continue with low-code development, return to [Low-code development](/docs/low-code/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/docs/getting-started/welcome/no-code/) and [What is low-code?](/docs/getting-started/welcome/low-code/). 
 
 
 

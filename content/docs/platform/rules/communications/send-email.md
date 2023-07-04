@@ -97,7 +97,7 @@ In advance of using this rule, you need to have **created one or more forms, com
        
        ![Rule order](/images/ruleorder.png)
        
-       For more information on rule order, see [Rules](rules/Readme.md).
+       For more information on rule order, see [Multiple Rules](/docs/platform/rules/general/multiple-rules/).
 
 
 ### Email connector ###

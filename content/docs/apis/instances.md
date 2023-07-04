@@ -17,7 +17,7 @@ Kianda's REST Application Programming Interface (API) for **instances** allows y
 
 Before you get started, there are three things to keep in mind:
 
-1. To use API methods in Kianda you must have an **administrator** role, go to [View and edit user details](/administration/users/#view-and-edit-existing-user-details) to see information on how to set roles.
+1. To use API methods in Kianda you must have an **administrator** role, go to [View and edit user details](/docs/platform/administration/users/) to see information on how to set roles.
 
 2. Each API method requires a **Bearer token**, see [Authentication](/docs/apis/authentication/) for more details.
 

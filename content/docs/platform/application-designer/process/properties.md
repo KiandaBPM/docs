@@ -5,7 +5,7 @@ linkTitle: "Process properties"
 typora-root-url: ..\..\..\..\..\static
 ---
 
-Every process, form and control, such as text boxes and lists, will have **properties** visible in the right-hand pane of the [Designer](platform/form_designer2.md) view. 
+Every process, form and control, such as text boxes and lists, will have **properties** visible in the right-hand pane of the [Designer](/docs/platform/application-designer/designer/) view. 
 
 ## Process properties ##
 When you go to **Administration** > **Designer** > click on a process > **Process properties** in the right-hand pane, you will see the properties for the chosen process.
