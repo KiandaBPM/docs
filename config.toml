@@ -18,10 +18,10 @@ theme = ["docsy"]
 # Will give values to .Lastmod etc.
 enableGitInfo = false
 
-[[menu.main]]
-    name = "Free Trial"
-    weight = 50
-    url = "https://portal.kianda.com/public/signup"
+#[[menu.main]]
+  #  name = "Free Trial"
+   # weight = 50
+   # url = "https://portal.kianda.com/public/signup"
 
 [[menu.main]]
     name = "Kianda.com"
@@ -195,7 +195,7 @@ enable = false
 #   desc = "Discussion and help from your fellow users"
 [[params.links.user]]
   name ="Twitter"
-  url = "https://twitter.com/kiandaBPM"
+  url = "https://twitter.com/kianda_tech"
   icon = "fab fa-twitter"
   desc = "Follow us on Twitter to get the latest news!"
 # [[params.links.user]]
