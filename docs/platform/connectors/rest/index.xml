@@ -7,11 +7,11 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/sample-rest-service.gif" alt="Sample REST service">&lt;/p>
 &lt;p>There are five parameters to pass into the request body: &lt;code>grant_type&lt;/code>, &lt;code>client_id&lt;/code>, &lt;code>client_secret&lt;/code>, &lt;code>redirect_url&lt;/code> and &lt;code>refresh token&lt;/code>, shown below as follows:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/refresh-token-body.jpg" alt="Get/Refresh Auth Token">&lt;/p>
-&lt;p>These parameters need to be &amp;lsquo;held&amp;rsquo; in a process &amp;hellip;&lt;strong>so that????&lt;/strong> see &lt;a href="#create-a-process">Create a process&lt;/a>.&lt;/p>
+&lt;p>These parameters need to be &amp;lsquo;held&amp;rsquo; in a process, see &lt;a href="#create-a-process">Create a process&lt;/a> below.&lt;/p>
 &lt;h3 id="create-a-process">Create a process&lt;/h3>
 &lt;p>Once a datasource is created, a process is created which will contain fields for the parameters for the request body, and will hold fields from the response parameters.&lt;/p>
 &lt;p>As shown in the image above there are five parameters in the request body which need to be populated, and &lt;strong>each of these parameters must correspond to a field&lt;/strong> in a process.&lt;/p>
-&lt;p>In the response body there are five parameters : &lt;code>access_token&lt;/code>, &lt;code>token_type&lt;/code>, &lt;code>expires_in&lt;/code>, &lt;code>refresh_token&lt;/code> and &lt;code>created_at&lt;/code>, although only &lt;code>access_token&lt;/code>, &lt;code>expires_in&lt;/code> and &lt;code>created_at&lt;/code> is needed. &lt;strong>&lt;strong>&lt;strong>&lt;strong>? Separately, I have gotten the Access Token so I can enter these details into the designer directly. How&lt;/strong>&lt;/strong>&lt;/strong>&lt;/strong>*?&lt;/p>
+&lt;p>In the response body there are five parameters : &lt;code>access_token&lt;/code>, &lt;code>token_type&lt;/code>, &lt;code>expires_in&lt;/code>, &lt;code>refresh_token&lt;/code> and &lt;code>created_at&lt;/code>, although only &lt;code>access_token&lt;/code>, &lt;code>expires_in&lt;/code> and &lt;code>created_at&lt;/code> is needed. You can obtain the Access Token via the Developer console so details can be entered into Designer directly.&lt;/p>
 &lt;p>A form is created using &lt;a href="docs/platform/application-designer/designer/">Kianda Designer&lt;/a> with &lt;strong>textbox fields&lt;/strong> as well as a button called &lt;strong>Refresh&lt;/strong> as follows:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/parameters-as-fields.jpg" alt="Response parameters corresponding to form fields to hold values">&lt;/p>
 &lt;p>Form rules are applied to fields in the form in the next section.&lt;/p>
@@ -19,7 +19,7 @@
 &lt;p>Rules are applied to both the AccessToken textbox field and the Refresh button as follows:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On the &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Data rule&lt;/strong> &amp;gt; &lt;strong>Set Form Field&lt;/strong> which will be used to clear the AccessToken field. Give the rule a title for example &amp;lsquo;Clear Access Token&amp;rsquo; and map a &amp;lsquo;blank&amp;rsquo; value to the Access Token field &lt;strong>(by &amp;lsquo;pressing space bar key&amp;rsquo;??)&lt;/strong> as shown below:&lt;/p>
+&lt;p>On the &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Data rule&lt;/strong> &amp;gt; &lt;strong>Set Form Field&lt;/strong> which will be used to clear the AccessToken field. Give the rule a title for example &amp;lsquo;Clear Access Token&amp;rsquo; and map a &amp;lsquo;blank&amp;rsquo; value to the Access Token field by &amp;lsquo;pressing space bar key&amp;rsquo; as shown below:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/clear-access-token.jpg" alt="Set form field rule to Clear Access Token field">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -46,7 +46,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>In addition to the parameters defined with the &lt;strong>REST Service&lt;/strong> the &lt;strong>urlPath&lt;/strong> can be defined in the process and passed into the datasource. &lt;strong>Where&lt;/strong>*******?&lt;/p>
+&lt;p>In addition to the parameters defined with the &lt;strong>REST Service&lt;/strong> the &lt;strong>urlPath&lt;/strong> can be defined in the process and passed into the datasource.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>On the &lt;strong>Refresh button&lt;/strong> add a &lt;strong>Form action rule&lt;/strong> &amp;gt; &lt;strong>Save form&lt;/strong> so that the details from the process are saved to the system database. The rule order then is as follows:&lt;/p>
@@ -55,18 +55,31 @@
 &lt;p>Finally; run the Process in preview mode, ensure the details you want to pass into the &lt;strong>REST Service&lt;/strong> are correct and save the process. Take note of the Process ID as this will be needed for setting up the Scheduled Task&lt;/p>
 &lt;p>&lt;strong>Create the Scheduled Task&lt;/strong>&lt;/p>
 &lt;p>The final step will be to create the scheduled task that will run before the refresh token expires. Navigate to the &lt;strong>Scheduled tasks&lt;/strong> within the &lt;strong>Administration&lt;/strong> section in the site. Click on the &lt;strong>Schedule a task&lt;/strong> button and fill in the dialog box.&lt;/p>
-&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image015.jpg" alt="img">&lt;/p>
-&lt;p>\1. Enter a name for the task in the &lt;strong>Task Name&lt;/strong> field.&lt;/p>
-&lt;p>\2. Under &lt;strong>Schedule&lt;/strong> select the &lt;strong>Minutes&lt;/strong> option. In the &lt;strong>Every&lt;/strong> &lt;strong>Minutes&lt;/strong> field enter a numerical value. For example, if the Access Token expires every 60 minutes, enter 55, meaning the schedule will run every 55 minutes.&lt;/p>
-&lt;p>\3. Leave the &lt;strong>Expire&lt;/strong> checkbox blank as this schedule should never stop.&lt;/p>
-&lt;p>\4. Under &lt;strong>Process Design&lt;/strong> select the name of the process that you created in the step above. This will expose a new field called &lt;strong>Select the field or rule to trigger on schedule.&lt;/strong>&lt;/p>
-&lt;p>\5. In &lt;strong>Process ID&lt;/strong> enter the ID of the process that you created in preview mode.&lt;/p>
-&lt;p>\6. In &lt;strong>Select the field or rule to trigger on schedule&lt;/strong> select the &lt;strong>Refresh&lt;/strong> button**.**&lt;/p>
-&lt;p>&lt;img src="file:///C:/Users/CAITRI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image017.jpg" alt="img">&lt;/p>
-&lt;p>\7. Click &lt;strong>OK&lt;/strong> to save.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Enter a name for the task in the &lt;strong>Task Name&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Schedule&lt;/strong> select the &lt;strong>Minutes&lt;/strong> option. In the &lt;strong>Every&lt;/strong> &lt;strong>Minutes&lt;/strong> field enter a numerical value. For example, if the Access Token expires every 60 minutes, enter 55, meaning the schedule will run every 55 minutes.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Leave the &lt;strong>Expire&lt;/strong> checkbox blank as this schedule should never stop.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under &lt;strong>Process Design&lt;/strong> select the name of the process that you created in the step above. This will expose a new field called &lt;strong>Select the field or rule to trigger on schedule.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In &lt;strong>Process ID&lt;/strong> enter the ID of the process that you created in preview mode.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In &lt;strong>Select the field or rule to trigger on schedule&lt;/strong> select the &lt;strong>Refresh&lt;/strong> button.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;strong>OK&lt;/strong> to save.&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;p>The Schedule is now set up and will refresh the access token as frequently as the time entered in the minutes field.&lt;/p>
 &lt;p>&lt;strong>Next Steps&lt;/strong>&lt;/p>
 &lt;p>The Schedule is now set up and will refresh the access token as frequently as the time entered in the minutes field. This will run indefinitely until a user chooses to delete the schedule.&lt;/p>
-&lt;p>The datasource is now available to used and the Access Token is being kept current. The Access Token can be pulled into different &lt;strong>Processes&lt;/strong> and used to send further &lt;strong>REST APIs&lt;/strong>. Check out the below articles on how to build processes and how to add more &lt;strong>REST Methods&lt;/strong> to the datasource.&lt;/p>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/administration/designer/">https://docs.kianda.com/docs/platform/administration/designer/&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/connectors/webservices/">https://docs.kianda.com/docs/platform/connectors/webservices/&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>The datasource is now available to used and the Access Token is being kept current. The Access Token can be pulled into different &lt;strong>Processes&lt;/strong> and used to send further &lt;strong>REST APIs&lt;/strong>. Check out the articles below on how to build processes:&lt;/p>
+&lt;p>&lt;strong>[Using Kianda Designer]&lt;/strong>(/docs/platform/administration/users/#view-and-edit-existing-user-details)&lt;/p></description></item></channel></rss>

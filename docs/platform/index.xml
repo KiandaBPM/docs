@@ -756,7 +756,6 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="sap/">SAP&lt;/a>&lt;/li>
 &lt;li>&lt;a href="sharepoint/">SharePoint&lt;/a>&lt;/li>
 &lt;li>&lt;a href="sql-server/">SQL Server&lt;/a>&lt;/li>
-&lt;li>&lt;a href="webservices/">Web services&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Click on each of the links above to find out more about each data connector.&lt;/p>
 &lt;p>If you have a data source that is not on the list above, you can use SOAP or REST to easily connect to your data source, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/soap">SOAP&lt;/a> or &lt;a href="https://docs.kianda.com/docs/platform/connectors/rest/">REST&lt;/a> for more information.&lt;/p>
@@ -990,14 +989,14 @@ Your browser does not support the video tag.
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Automation in Kianda happens at various level and in various ways, all of which you can control using the click of a button, or configuring a parameter. To help you recognise how automation can happen, we&amp;rsquo;ve broken it down for you into different sections:&lt;/p>
 &lt;ol>
-&lt;li>&lt;a href="process-level-automation">Process level automation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="field-level-automation">Field level automation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#process-level-automation">Process level automation&lt;/a>&lt;/li>
+&lt;li>Field level automation&lt;/li>
 &lt;/ol>
 &lt;h2 id="process-level-automation">Process level automation&lt;/h2>
 &lt;p>Process level automation, means that new &lt;strong>process instances are created automatically&lt;/strong> without requiring a user action to initiate the process.&lt;/p>
 &lt;p>This can happen in a number of ways:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="scheduled-tasks-function">Scheduled tasks function&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#scheduled-tasks-function">Scheduled tasks function&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/start-a-process/">Start a process rule&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/">Schedule a Rule rule&lt;/a>&lt;/li>
 &lt;/ul>

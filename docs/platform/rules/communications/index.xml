@@ -89,7 +89,7 @@
 &lt;p>Note when your rule is complete you may want to change the order of rules for the particular field or form that it has been applied to. Drag the new Send email rule to where you want, so the order of execution of rules is correct.&lt;/p>
 &lt;p>For example for a Submit button on a form I may want my &lt;strong>Send email rule&lt;/strong> to be executed first before any other rule is executed. To do this click on the &lt;strong>Submit&lt;/strong> button to make sure you are in &lt;strong>Edit&lt;/strong> mode, and under &lt;strong>Rules&lt;/strong> in the right-hand pane, drag the &lt;strong>Send email&lt;/strong> rule to the top of the list by clicking on the rule and dragging it.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/ruleorder.png" alt="Rule order">&lt;/p>
-&lt;p>For more information on rule order, see &lt;a href="rules/Readme.md">Rules&lt;/a>.&lt;/p>
+&lt;p>For more information on rule order, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple Rules&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/li>
@@ -311,7 +311,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>Note when your rule is complete you may want to change the order of rules for the particular field or form that it has been applied to. Drag the new &lt;strong>Meeting request&lt;/strong> rule to where you want, so the order of execution of rules is correct.&lt;/p>
-&lt;p>For example for a &lt;strong>Submit&lt;/strong> button on a form I may want my &lt;strong>Meeting request&lt;/strong> rule to be executed first before any other rule is executed. To do this click on the &lt;strong>Submit&lt;/strong> button to make sure you are in &lt;strong>Edit&lt;/strong> mode so that the Edit/pen button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">appears, and under &lt;strong>Rules&lt;/strong> in the right-hand pane, drag the &lt;strong>Meeting request&lt;/strong> rule to the top of the list by clicking on the rule and dragging it. For more information on rules, see &lt;a href="rules/Readme.md">Rules&lt;/a>.&lt;/p>
+&lt;p>For example for a &lt;strong>Submit&lt;/strong> button on a form I may want my &lt;strong>Meeting request&lt;/strong> rule to be executed first before any other rule is executed. To do this click on the &lt;strong>Submit&lt;/strong> button to make sure you are in &lt;strong>Edit&lt;/strong> mode so that the Edit/pen button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">appears, and under &lt;strong>Rules&lt;/strong> in the right-hand pane, drag the &lt;strong>Meeting request&lt;/strong> rule to the top of the list by clicking on the rule and dragging it. For more information on rules, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/%60meeting-request-rule-order.jpg" alt="Rule order">&lt;/p>
 &lt;/li>
 &lt;/ol>
