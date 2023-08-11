@@ -167,7 +167,7 @@ To add a layout container to a Dashboard:
 
 3. Complete the **Create a layout container** dialog box that opens by inserting a name and then selecting the width you want for the layout container (by selecting how wide the blue bar is):
 
-   ![Dashboard Create a layout container dialog box](/images/dashboard-create-layout-container.jpg)
+   ![Dashboard Create a layout container dialog box](/images/dashboard-create-layout-container2.png)
 
 **Note**: 
 
@@ -178,8 +178,29 @@ To add a layout container to a Dashboard:
 - For example, for this existing widget, by opening the **Edit widget** dialog box, we can now choose to assign it to any of the four available **layout containers**:
 
 	![Dashboard widget assign to layout container](/images/dashboard-edit-widget-layout-container.jpg)
-
-
+	
+	#### How to edit and delete a layout container
+	
+	To edit a layout container:
+	
+	1. Find the layout container you would like to edit and click on the **Edit layout container** button ![Edit layout container button image](/images/edit-current-page.jpg) in the bottom left corner of the layout container.
+	
+	2. In the **Create a layout container** dialog box, apply any necessary changes to the fields.
+	
+	   <img src="/images/dashboard-create-layout-container2-edit.png" alt="Editing a layout container image" style="zoom:80%;" />
+	
+	3. When finished click on **OK** to confirm your changes, or click on **Close** to cancel your changes.
+	
+	4. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the top dashboard menu to save the changes to the page.
+	
+	   
+	
+	To delete a layout container:
+	
+	1. Find the layout container you would like to edit and click on the **Delete** button ![Delete button image](/images/delete-btn-layout.png).
+	2. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the top dashboard menu to save the changes to the page.
+	
+	The widgets that were previously within that layout container will then be appended to the end of the dashboard page.
 
 ## How to add widgets to a Dashboard page ##
 

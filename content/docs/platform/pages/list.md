@@ -174,7 +174,7 @@ Once you have chosen where the dashboard data will come from then there are a nu
 
 When you choose the List widget for your dashboard, there are a number of ways to select fields that you want to view.
 
-1. Click on the **Pen** button ![Pen button](/images/pen.png)n the widget you have created, to see the **List view fields** visible in the right-hand pane.
+1. Click on the **Pen** button ![Pen button](/images/penwhite_orig.png) on the widget you have created, to see the **List view fields** visible in the right-hand pane.
 
    ![List view fields](/images/listconfig_frame.png)
 

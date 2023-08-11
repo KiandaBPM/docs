@@ -56,7 +56,7 @@ For example, you could insert a list field in your form that will show a drop-do
 
    ![List field list source datasource](/images/list-source-datasource.jpg)
 
-   Then click on the **Datasource** button ![Data source button](/images/datasource.png) to open the **Select datasource** dialog box and choose the data source you want to connect to - for example, SharePoint. For more information on how to connect to data sources in Kianda, go to [Data connectors](/docs/platform/connectors/).
+   Then click on the **Datasource** button ![Data source button](/images/datasource.png) to open the **Select datasource** dialog box and choose the data source you want to connect to - for example, SharePoint. From there you can drill down into the datasource tree and select a specific data item to pull into the list. For more information on how to connect to data sources in Kianda, go to [Data connectors](/docs/platform/connectors/).
 
    ![List field select data source dialog box](/images/list-select-data-source.jpg)
 
@@ -64,7 +64,7 @@ For example, you could insert a list field in your form that will show a drop-do
 
    ![List field Data source options example](/images/list-datasource-options.jpg)
 
-   Select the **Display field**, **Value field** and a field to **Sort by** (the 'Sort by' option appears once you've selected a data source). Once you've chosen a field to sort by, an additional option - **Direction** - appears, enabling you to choose to sort values in **Ascending** or **Descending** order. In the example shown here, Kianda has been chosen as the data source and a field titled 'Type of Training' from a form called 'Training Request' has been chosen as both the Display field and Value field.
+   Select the **Display field**, **Value field** and a field to **Sort by** (the 'Sort by' option appears once you've selected a data source). As the datasource chosen in the example is a Kianda process, the fields will appear as form fields. Once you've chosen a field to sort by, an additional option - **Direction** - appears, enabling you to choose to sort values in **Ascending** or **Descending** order. In the example shown here, Kianda has been chosen as the data source and a field titled 'Type of Training' from a form called 'Training Request' has been chosen as both the Display field and Value field.
 
    Click on the **Edit conditions** button if you want to add a condition to your List field - for example, if you want to create a cascading list where the options available in a second list are dependent upon the option the user has chosen from a first list. To learn more about applying conditions, go to [**Conditions**](/docs/platform/rules/general/add-conditions/) and to find out more about creating cascading lists, watch the video on [**How to create cascading dropdown lists**](/docs/how-to/create-cascading-dropdown-lists/).
 
@@ -74,7 +74,7 @@ For example, you could insert a list field in your form that will show a drop-do
 
    Once you've selected your **List source** and the various options associated with it, complete the remaining options in the **New field - List** dialog box:
 
-10. **Enable offline cache** - You can choose this option to make list data available when offline (only available for lists with less than 500 options). 
+10. **Enable offline cache** - You can choose this option to make list data available when offline (only available for lists with less than 500 options). This can be useful if you know you are going to be working in areas with poor connectivity such as remote environments with known dead zones.
 
 11. **Display format** - You can choose to have your list field appear as either a Drop-down list, a Radio list, Multi-select or a Checkbox list.
 
