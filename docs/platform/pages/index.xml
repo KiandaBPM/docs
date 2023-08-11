@@ -246,7 +246,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/edittile.png" alt="Tile widget edit">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>A dialog box opens with filter options in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions">in the middle of the box, and tile view fields in the right-hand pane. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions you can apply to dashboard widgets, and go to Tile view fields to read more about changing how a tile looks.&lt;/p>
+&lt;p>A dialog box opens with filter options in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions"> in the middle of the box, and tile view fields and &lt;strong>Key performance indicators&lt;/strong> in the right-hand pane. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions you can apply to dashboard widgets, and go to Tile view fields to read more about changing how a tile looks.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/edittilebox.png" alt="Editing a tile widget">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -263,7 +263,25 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/connecttolist.png" alt="Connect to List widget">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Go to Tile view fields to read about options in the right-hand pane of this dialog box to make changes to your tile like icons and colours.&lt;/p>
+&lt;p>&lt;strong>Tile expression&lt;/strong> allows you to select if the displayed number in the tile is a &lt;em>count&lt;/em>, &lt;em>sum&lt;/em>, or &lt;em>average&lt;/em> of the data.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Tile icon&lt;/strong> is where you can choose what icon will be displayed in the tile to suit your specific needs.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Change color or text of tile based on condition/s&lt;/strong> - this section allows you to add key performance indicators (KPI) to your tile widget. For example, if the value you&amp;rsquo;re monitoring rises above 10, the colour and icon can be changed to indicate. This can draw your attention to key indicators such as emergencies or unacceptable levels of non-conformance within your organisation.&lt;/p>
+&lt;p>To create a KPI, click on the white &lt;strong>Plus&lt;/strong> button &lt;img src="https://docs.kianda.com/images/white-plus-btn.png" alt="White plus button image" style="zoom: 50%;" /> to bring up the &lt;strong>Add Tile KPI&lt;/strong> screen.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/kpi.png" alt="KPI image" style="zoom:80%;" />
+&lt;p>On the Add Tile KPI screen, fill out:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>KPI condition&lt;/strong> - choose an operator such as &lt;em>greater than&lt;/em>, &lt;em>equal to&lt;/em> - followed by a value. When this condition is met, the tile will change to the below properties:&lt;/li>
+&lt;li>&lt;strong>Tile title&lt;/strong> - the new title of the tile&lt;/li>
+&lt;li>&lt;strong>Tile icon&lt;/strong> - the new icon of the tile&lt;/li>
+&lt;li>&lt;strong>Tile colour&lt;/strong> - the new colour of the tile&lt;/li>
+&lt;/ul>
+&lt;p>When finished, click &lt;strong>OK&lt;/strong> to save your changes, or click &lt;strong>Close&lt;/strong> to cancel your changes.&lt;/p>
+&lt;p>All KPIS will be displayed in the modal dialog, and can be deleted by clicking on the Bin/Trash icon button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/kpi-example.png" alt="KPIs all view image">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>When you are finished choosing options, click on the &lt;strong>OK&lt;/strong> button to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>

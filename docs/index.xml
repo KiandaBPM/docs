@@ -338,7 +338,7 @@ Your browser does not support the video tag.
 &lt;p>Click on one particular field (control) in the form - for example a text box - to see the &lt;a href="#field-properties">&lt;strong>Field properties&lt;/strong>&lt;/a> associated with that field.&lt;/p>
 &lt;h2 id="field-properties">Field properties&lt;/h2>
 &lt;p>When you select any field within a form (by clicking on the field name or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - such as User picker, list or text box - the &lt;strong>Field properties&lt;/strong> associated with that field will appear in the right-hand pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/field-properties-trainingprocess.jpg" alt="Field properties">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/field-properties-trainingprocess2.png" alt="Field properties">&lt;/p>
 &lt;p>In the example shown here, the Employee Name field has been selected and the &lt;strong>Field properties&lt;/strong> associated with it include the &lt;strong>Field type&lt;/strong> (&lt;strong>Text box&lt;/strong> in this case) and the &lt;strong>Title&lt;/strong> of the field.&lt;/p>
 &lt;p>The options within the Field properties menu are:&lt;/p>
 &lt;ul>
@@ -355,8 +355,8 @@ Your browser does not support the video tag.
 &lt;p>&lt;strong>Visible&lt;/strong> - tick this checkbox to make the field visible to users&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Layout&lt;/strong> - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the field when viewed on a mobile phone. The layout is split into 12 different bootstrap grid columns (a responsive CSS framework) - for example, a layout set to 6 columns would make the element span half of the screen.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize-frame.png" alt="Changing text box width">&lt;/p>
+&lt;p>&lt;strong>Layout&lt;/strong> - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the field when viewed on a mobile phone. The layout is split into 12 different bootstrap grid columns (a responsive CSS framework) - for example, a layout set to 6 columns would make the element span half of the screen/canvas.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize-frame2.png" alt="Changing text box width">&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;p>Underneath the Field properties menu, you will see &lt;strong>Rules&lt;/strong> - go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about the rules that can be applied to fields.&lt;/p>

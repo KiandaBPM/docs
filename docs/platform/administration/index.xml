@@ -482,13 +482,13 @@
 &lt;/li>
 &lt;li>
 &lt;p>You can view any existing users and groups that have been created in the main view pane.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/user-main-view.jpg" alt="Users main view">&lt;/p>
-&lt;p>The two main areas are &lt;strong>Users&lt;/strong> and &lt;strong>Groups&lt;/strong>. These two areas are explained in more detail below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-main-view3.png" alt="Users main view">&lt;/p>
+&lt;p>The two main areas are 1. &lt;strong>Users&lt;/strong> and 2. &lt;strong>Groups&lt;/strong>. These two areas are explained in more detail below.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="users">Users&lt;/h2>
 &lt;p>Existing users appear within this section, showing the &lt;strong>name&lt;/strong> of the user, &lt;strong>email&lt;/strong>, &lt;strong>role&lt;/strong> and whether they are &lt;strong>active&lt;/strong> or not in the system.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/user-mgmt-view.jpg" alt="User management main user view">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-mgmt-view2.png" alt="User management main user view">&lt;/p>
 &lt;p>From this main view, you can:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="#view-and-edit-existing-user-details">&lt;strong>view and edit&lt;/strong> existing user details&lt;/a>&lt;/li>
@@ -497,7 +497,7 @@
 &lt;li>&lt;a href="#importing-and-exporting-users">bulk &lt;strong>import and export&lt;/strong> users&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#groups">&lt;strong>add and remove users&lt;/strong> to/from groups&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>Click on each of the links below to read more about each function. In addition to the above administrative functions, you can also set passwords and delete users from this main view as follows:&lt;/p>
+&lt;p>Click on each of the links above to read more about each function. In addition to the above administrative functions, you can also set passwords and delete users from this main view as follows:&lt;/p>
 &lt;ul>
 &lt;li>To &lt;strong>reset a password&lt;/strong> for a user, click on the &lt;strong>Reset password/key&lt;/strong> button &lt;img src="https://docs.kianda.com/images/reset-password.jpg" alt="Reset password/key button"> beside a user name. This will open the &lt;strong>reset password&lt;/strong> dialog box where you can type in a new password for the user.&lt;/li>
 &lt;/ul>
@@ -512,11 +512,15 @@
 &lt;p>Then click on &lt;strong>OK&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;/ul>
+&lt;h3 id="licenses">Licenses&lt;/h3>
+&lt;p>Before managing the user accounts on your platform, you will need to understand the concept of &lt;strong>Licenses&lt;/strong>. Depending on your subscription type, you will be allocated a certain number of licenses, which allow your users to be active on your platform.&lt;/p>
+&lt;p>A single license is used by each individual active user within your platform, for example if your platform has 250 total licenses and you have 19 activated accounts, you will have 231 remaining licenses. If a user license is &lt;strong>issued&lt;/strong>, the total number of licenses will &lt;strong>decrease&lt;/strong>, and if a user license is &lt;strong>revoked&lt;/strong>, the total number of licenses will &lt;strong>increase&lt;/strong>. If there are no more remaining licenses, new users will be deactivated. You can get more licenses by deactivating users or purchasing additional licenses.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/licenses.png" alt="Licenses image">&lt;/p>
 &lt;h3 id="view-and-edit-existing-user-details">View and edit existing user details&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>Click on the &lt;strong>name&lt;/strong> of a user and the user details appear.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/user-profile.jpg" alt="User details view">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-profile2.png" alt="User details view">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the details box you can edit a user&amp;rsquo;s:&lt;/p>
@@ -524,6 +528,7 @@
 &lt;li>&lt;strong>First name&lt;/strong> - user&amp;rsquo;s first name&lt;/li>
 &lt;li>&lt;strong>Last name&lt;/strong> - user&amp;rsquo;s last name&lt;/li>
 &lt;li>&lt;strong>Display name&lt;/strong> - how their name will display in the system. The display name is autofilled based off of the user&amp;rsquo;s entered first and last names, which can be changed if necessary.&lt;/li>
+&lt;li>&lt;strong>License activation status&lt;/strong> - Checking this box will create the user as active. This will consume a license from your subscription. If you are out of licenses you will be prompted to purchase an additional license.&lt;/li>
 &lt;li>&lt;strong>Primary role&lt;/strong> - click on &lt;strong>More roles&lt;/strong> to see additional roles and choose from six system defined roles.
 &lt;ul>
 &lt;li>
@@ -546,9 +551,7 @@
 &lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>Phone number&lt;/strong> - user&amp;rsquo;s phone number (mobile or office)&lt;/li>
 &lt;li>&lt;strong>Profile picture URL&lt;/strong> - click on &lt;strong>Browse&lt;/strong> to browse for a profile picture on a laptop or network drive to add a profile photo for the user.&lt;/li>
-&lt;li>&lt;strong>Active&lt;/strong> checkbox - by default this checkbox is checked but you can &lt;strong>uncheck it to disable&lt;/strong> a user&amp;rsquo;s account.&lt;/li>
 &lt;li>&lt;strong>Profile properties&lt;/strong> - click on this option to see additional properties that you can define, see &lt;a href="#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>Group membership&lt;/strong> - click on this option to see the groups that a user is added to. Click on the red x button &lt;img src="https://docs.kianda.com/images/redx.jpg" alt="Red x"> to remove a user from a group.&lt;/li>
 &lt;/ul>
@@ -559,21 +562,31 @@
 &lt;/ol>
 &lt;h3 id="create-a-new-user">Create a new user&lt;/h3>
 &lt;ol>
-&lt;li>Click on the &lt;strong>Create new user&lt;/strong> button &lt;img src="https://docs.kianda.com/images/create-new-user-button.jpg" alt="Create new user button">.&lt;/li>
-&lt;li>Complete the fields as listed in Step 2 in &lt;a href="#view-and-edit-existing-user-details">View and edit existing user details&lt;/a> above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the &lt;strong>Profile attributes&lt;/strong> button, see &lt;a href="#modify-profile-attributes">Modify profile attributes&lt;/a> section.&lt;/li>
-&lt;li>Check the &lt;strong>Send welcome email&lt;/strong> check box if you wish to have a system generated email sent to the new user.&lt;/li>
-&lt;li>Click on &lt;strong>Group membership&lt;/strong> to view a user&amp;rsquo;s group membership, see &lt;a href="#groups">Groups&lt;/a> for more details.&lt;/li>
-&lt;li>When you are finished editing a user&amp;rsquo;s details, click on &lt;strong>OK&lt;/strong>, or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/create-new-user.jpg" alt="User profile properties and group membership">&lt;/p>
-&lt;ol start="6">
-&lt;li>When the user is created they will appear in the main Users view.&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Create new user&lt;/strong> button &lt;img src="https://docs.kianda.com/images/create-new-user-button.jpg" alt="Create new user button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Complete the fields as listed in Step 2 in &lt;a href="#view-and-edit-existing-user-details">View and edit existing user details&lt;/a> above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the &lt;strong>Profile attributes&lt;/strong> button, see &lt;a href="#modify-profile-attributes">Modify profile attributes&lt;/a> section.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Check the &lt;strong>Send welcome email&lt;/strong> check box if you wish to have a system generated email sent to the new user.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Group membership&lt;/strong> to view a user&amp;rsquo;s group membership, see &lt;a href="#groups">Groups&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing a user&amp;rsquo;s details, click on &lt;strong>Save&lt;/strong>, or click on &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-new-user2.png" alt="User profile properties and group membership">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When the user is created they will appear in the main Users view.&lt;/p>
+&lt;/li>
 &lt;/ol>
 &lt;h3 id="modify-profile-attributes">Modify profile attributes&lt;/h3>
 &lt;p>As an administrator you can set profile attributes for workspace users within your organisation. For example if your organisation uses particular grade levels for roles, then these can be set using this feature. To modify attributes:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Click on the &lt;strong>Profile attributes&lt;/strong> button in the main &lt;strong>Users&lt;/strong> section.&lt;img src="https://docs.kianda.com/images/profile-attributes.jpg" alt="Profile attributes button">&lt;/p>
+&lt;p>Click on the &lt;strong>Profile attributes&lt;/strong> button in the main &lt;strong>Users&lt;/strong> section.&lt;img src="https://docs.kianda.com/images/modify-user-attributes2.png" alt="Profile attributes button">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the &lt;strong>Modify user attributes&lt;/strong> dialog box, any existing attributes will be listed under &lt;strong>Property&lt;/strong>. To remove an attribute, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin/Trash button">.&lt;/p>
@@ -594,7 +607,17 @@
 &lt;li>Click on &lt;strong>Browse User Import Excel File&lt;/strong> to browse for a file of users to add.&lt;/li>
 &lt;li>Click on &lt;strong>Download sample user import Excel file&lt;/strong> to see the file structure needed to import users. The key user fields here are: Email, First Name, Last Name, Display Name and optional is Telephone number.&lt;/li>
 &lt;/ul>
-&lt;p>You can &lt;strong>export&lt;/strong> a list of users by clicking on the &lt;strong>Export to csv&lt;/strong> button &lt;img src="https://docs.kianda.com/images/export-to-csv.jpg" alt="Export to csv">. The resulting file will list users by &lt;strong>display name&lt;/strong>, &lt;strong>email&lt;/strong>, &lt;strong>primary role&lt;/strong> and &lt;strong>groups&lt;/strong> they are members of.&lt;/p>
+&lt;p>You can &lt;strong>export&lt;/strong> a list of users by clicking on the &lt;strong>Export to csv&lt;/strong> button &lt;img src="https://docs.kianda.com/images/export-to-csv.jpg" alt="Export to csv">. The resulting file will list users by:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Email&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Primary role&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Groups&lt;/strong> - they are members of&lt;/li>
+&lt;li>&lt;strong>Active&lt;/strong> - if the user is active and is currently using a license&lt;/li>
+&lt;li>&lt;strong>Last active&lt;/strong> - when the user was last active&lt;/li>
+&lt;/ul>
+&lt;p>Seen below is an example CSV output in excel:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/csv-file-export.png" alt="exported csv image">&lt;/p>
 &lt;h2 id="groups">Groups&lt;/h2>
 &lt;p>When you create predefined &lt;strong>groups,&lt;/strong> you can use these group names in a myriad of ways, for example to create a set of finance managers who can then be listed as &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">form owners&lt;/a> to edit forms in process instances for procurement, or a set of contractors in an &lt;a href="https://docs.kianda.com/docs/security/sso/">SSO bypass group&lt;/a> who can go the workspace login page to login to Kianda.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/groups.jpg" alt="Groups in User Management">&lt;/p>
@@ -608,16 +631,16 @@
 &lt;/ul>
 &lt;h3 id="viewing-and-editing-group-members">Viewing and editing group members&lt;/h3>
 &lt;ol>
-&lt;li>Click on the radio button beside the &lt;strong>group name&lt;/strong> in the main view to see the group members.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/group-members.jpg" alt="Group membership">&lt;/p>
-&lt;ol start="2">
+&lt;li>
+&lt;p>Click on the radio button beside the &lt;strong>group name&lt;/strong> in the main view to see the group members.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/group-members2.png" alt="Group membership">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>From this view, you can &lt;strong>remove a user from the group&lt;/strong> by checking the checkbox beside a user name and click on &lt;strong>Remove user(s) from group&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>You can also change &lt;strong>users&lt;/strong> from the current group &lt;strong>to another group&lt;/strong> by clicking on the dropdown list of group names, by choosing a group, checking the checkbox beside the username.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/add-user-to-group.jpg" alt="Add user to group">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-user-to-group2.png" alt="Add user to group">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add user(s) to group&lt;/strong>.&lt;/p>
