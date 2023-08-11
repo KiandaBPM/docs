@@ -44,7 +44,7 @@ Click on one particular field (control) in the form - for example a text box - t
 ## Field properties ##
 When you select any field within a form (by clicking on the field name or field drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - such as User picker, list or text box - the **Field properties** associated with that field will appear in the right-hand pane.
 
-![Field properties](/images/field-properties-trainingprocess.jpg)
+![Field properties](/images/field-properties-trainingprocess2.png)
 
 In the example shown here, the Employee Name field has been selected and the **Field properties** associated with it include the **Field type** (**Text box** in this case) and the **Title** of the field.
 
@@ -58,9 +58,9 @@ The options within the Field properties menu are:
 
 - **Visible** - tick this checkbox to make the field visible to users
 
-- **Layout** - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the field when viewed on a mobile phone. The layout is split into 12 different bootstrap grid columns (a responsive CSS framework) - for example, a layout set to 6 columns  would make the element span half of the screen.
+- **Layout** - change the width of the field by clicking on the bar in the Layout box until you see the desired size. Click on the arrow beside Layout to see the Mobile Layout and click on the bar to change the width of the field when viewed on a mobile phone. The layout is split into 12 different bootstrap grid columns (a responsive CSS framework) - for example, a layout set to 6 columns  would make the element span half of the screen/canvas.
 
-  ![Changing text box width](/images/textboxsize-frame.png) 
+  ![Changing text box width](/images/textboxsize-frame2.png) 
 
 Underneath the Field properties menu, you will see **Rules** - go to [Rules](/docs/platform/rules/) to find out more about the rules that can be applied to fields.
 

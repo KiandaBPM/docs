@@ -73,7 +73,7 @@ A dashboard **Tile widget** allows you to display a count of instances. This is 
 
    ![Tile widget edit](/images/edittile.png)
 
-2. A dialog box opens with filter options in the left-hand pane,  a **Conditions** button ![Conditions](/images/conditions.png)in the middle of the box, and tile view fields in the right-hand pane. Go to [Conditions](/docs/platform/pages/conditions/) to read more about conditions you can apply to dashboard widgets, and go to Tile view fields to read more about changing how a tile looks.
+2. A dialog box opens with filter options in the left-hand pane,  a **Conditions** button ![Conditions](/images/conditions.png) in the middle of the box, and tile view fields and **Key performance indicators** in the right-hand pane. Go to [Conditions](/docs/platform/pages/conditions/) to read more about conditions you can apply to dashboard widgets, and go to Tile view fields to read more about changing how a tile looks.
 
    ![Editing a tile widget](/images/edittilebox.png)
 
@@ -87,9 +87,30 @@ A dashboard **Tile widget** allows you to display a count of instances. This is 
 
    ![Connect to List widget](/images/connecttolist.png)
 
-6. Go to Tile view fields to read about options in the right-hand pane of this dialog box to make changes to your tile like icons and colours.
+7. **Tile expression** allows you to select if the displayed number in the tile is a *count*, *sum*, or *average* of the data.
 
-7. When you are finished choosing options, click on the **OK** button to save your changes or click on **Close** to exit the dialog box without saving.
+8. **Tile icon** is where you can choose what icon will be displayed in the tile to suit your specific needs.
+
+9. **Change color or text of tile based on condition/s** - this section allows you to add key performance indicators (KPI) to your tile widget. For example, if the value you're monitoring rises above 10, the colour and icon can be changed to indicate. This can draw your attention to key indicators such as emergencies or unacceptable levels of non-conformance within your organisation. 
+
+   To create a KPI, click on the white **Plus** button <img src="/images/white-plus-btn.png" alt="White plus button image" style="zoom: 50%;" /> to bring up the **Add Tile KPI** screen.
+
+   <img src="/images/kpi.png" alt="KPI image" style="zoom:80%;" />
+
+   On the Add Tile KPI screen, fill out:
+
+   * **KPI condition** - choose an operator such as *greater than*, *equal to* - followed by a value. When this condition is met, the tile will change to the below properties:
+   * **Tile title** - the new title of the tile
+   * **Tile icon** - the new icon of the tile
+   * **Tile colour** - the new colour of the tile
+
+   When finished, click **OK** to save your changes, or click **Close** to cancel your changes.
+
+   All KPIS will be displayed in the modal dialog, and can be deleted by clicking on the Bin/Trash icon button ![Bin icon](/images/binicon.png).
+
+   ![KPIs all view image](/images/kpi-example.png)
+
+10. When you are finished choosing options, click on the **OK** button to save your changes or click on **Close** to exit the dialog box without saving.
 
 
 

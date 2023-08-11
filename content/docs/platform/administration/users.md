@@ -18,11 +18,11 @@ To access the **Users** function:
 
 2. You can view any existing users and groups that have been created in the main view pane. 
 
-   ![Users main view](/images/user-main-view.jpg)
+   ![Users main view](/images/user-main-view3.png)
 
    
 
-   The two main areas are **Users** and **Groups**. These two areas are explained in more detail below. 
+   The two main areas are 1. **Users** and 2. **Groups**. These two areas are explained in more detail below. 
 
    
 
@@ -30,7 +30,7 @@ To access the **Users** function:
 
 Existing users appear within this section, showing the **name** of the user, **email**, **role** and whether they are **active** or not in the system.  
 
-![User management main user view](/images/user-mgmt-view.jpg)
+![User management main user view](/images/user-mgmt-view2.png)
 
 From this main view, you can:
 
@@ -40,7 +40,7 @@ From this main view, you can:
 - [bulk **import and export** users](#importing-and-exporting-users)
 - [**add and remove users** to/from groups](#groups)
 
-Click on each of the links below to read more about each function. In addition to the above administrative functions, you can also set passwords and delete users from this main view as follows:
+Click on each of the links above to read more about each function. In addition to the above administrative functions, you can also set passwords and delete users from this main view as follows:
 
 - To **reset a password** for a user, click on the **Reset password/key** button ![Reset password/key button](/images/reset-password.jpg) beside a user name. This will open the **reset password** dialog box where you can type in a new password for the user.
 
@@ -56,19 +56,28 @@ Click on each of the links below to read more about each function. In addition t
 
 
 
+### Licenses
+
+Before managing the user accounts on your platform, you will need to understand the concept of **Licenses**.  Depending on your subscription type, you will be allocated a certain number of licenses, which allow your users to be active on your platform. 
+
+A single license is used by each individual active user within your platform, for example if your platform has 250 total licenses and you have 19 activated accounts, you will have 231 remaining licenses. If a user license is **issued**, the total number of licenses will **decrease**, and if a user license is **revoked**, the total number of licenses will **increase**. If there are no more remaining licenses, new users will be deactivated. You can get more licenses by deactivating users or purchasing additional licenses.
+
+![Licenses image](/images/licenses.png)
+
 
 
 ### View and edit existing user details
 
 1. Click on the **name** of a user and the user details appear.
 
-   ![User details view](/images/user-profile.jpg)
+   ![User details view](/images/user-profile2.png)
 
 2. In the details box you can edit a user's:
 
    - **First name** - user's first name
    - **Last name** - user's last name
    - **Display name** - how their name will display in the system. The display name is autofilled based off of the user's entered first and last names, which can be changed if necessary.
+   - **License activation status** - Checking this box will create the user as active. This will consume a license from your subscription. If you are out of licenses you will be prompted to purchase an additional license.
    - **Primary role** - click on **More roles** to see additional roles and choose from six system defined roles.
      - **User** - lowest level of access where users with this role can access dashboards and forms, Help and Account details
 
@@ -81,9 +90,7 @@ Click on each of the links below to read more about each function. In addition t
      - **Manage datasources** - users with this role can access the same areas as **User** as well as the **Data sources** function under **Administration** to create and manage data sources such as connections to SAP, Dropbox, SharePoint and Salesforce.
 
      - **Developer** - users with this role can access the same areas as **User** as well as the **Developes** function under **Administration** to create custom widgets for fields/controls, rules and dashboards.
-   - **Phone number** - user's phone number (mobile or office)
    - **Profile picture URL** - click on **Browse** to browse for a profile picture on a laptop or network drive to add a profile photo for the user.
-   - **Active** checkbox - by default this checkbox is checked but you can **uncheck it to disable** a user's account.
    - **Profile properties** - click on this option to see additional properties that you can define, see [Modify profile attributes](#modify-profile-attributes).
    - **Group membership** - click on this option to see the groups that a user is added to. Click on the red x button  ![Red x](/images/redx.jpg) to remove a user from a group. 
 
@@ -94,12 +101,18 @@ Click on each of the links below to read more about each function. In addition t
 ### Create a new user
 
 1. Click on the **Create new user** button ![Create new user button](/images/create-new-user-button.jpg).
-2. Complete the fields as listed in Step 2 in [View and edit existing user details](#view-and-edit-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the **Profile attributes** button, see [Modify profile attributes](#modify-profile-attributes) section.
-3. Check the **Send welcome email** check box if you wish to have a system generated email sent to the new user. 
-4. Click on **Group membership** to view a user's group membership, see [Groups](#groups) for more details.
-5. When you are finished editing a user's details, click on **OK**, or click on **Close** to exit the dialog box. 
 
-![User profile properties and group membership](/images/create-new-user.jpg)
+2. Complete the fields as listed in Step 2 in [View and edit existing user details](#view-and-edit-existing-user-details) above. If additional profile properties have been set for the workspace, add in details for those properties. These properties can be set by clicking on the **Profile attributes** button, see [Modify profile attributes](#modify-profile-attributes) section.
+
+3. Check the **Send welcome email** check box if you wish to have a system generated email sent to the new user.
+
+4. Click on **Group membership** to view a user's group membership, see [Groups](#groups) for more details.
+
+5. When you are finished editing a user's details, click on **Save**, or click on **Close** to exit the dialog box.
+
+   ![User profile properties and group membership](/images/create-new-user2.png)
+
+
 
 6. When the user is created they will appear in the main Users view. 
 
@@ -109,7 +122,7 @@ Click on each of the links below to read more about each function. In addition t
 
 As an administrator you can set profile attributes for workspace users within your organisation. For example if your organisation uses particular grade levels for roles, then these can be set using this feature. To modify attributes:
 
-1. Click on the **Profile attributes** button in the main **Users** section.![Profile attributes button](/images/profile-attributes.jpg)
+1. Click on the **Profile attributes** button in the main **Users** section.![Profile attributes button](/images/modify-user-attributes2.png)
 
 2. In the **Modify user attributes** dialog box, any existing attributes will be listed under **Property**. To remove an attribute, click on the **Bin/Trash** button ![Bin/Trash button](/images/bin-shared-process.jpg). 
 
@@ -132,7 +145,18 @@ In the **Import users** dialog box you can:
 - Click on **Browse User Import Excel File** to browse for a file of users to add. 
 - Click on **Download sample user import Excel file** to see the file structure needed to import users. The key user fields here are: Email, First Name, Last Name, Display Name and optional is Telephone number.
 
-You can **export** a list of users by clicking on the **Export to csv** button ![Export to csv](/images/export-to-csv.jpg). The resulting file will list users by **display name**, **email**, **primary role** and **groups** they are members of.
+You can **export** a list of users by clicking on the **Export to csv** button ![Export to csv](/images/export-to-csv.jpg). The resulting file will list users by:
+
+* **Display name** 
+* **Email** 
+* **Primary role** 
+* **Groups** - they are members of
+* **Active** - if the user is active and is currently using a license
+* **Last active** - when the user was last active
+
+Seen below is an example CSV output in excel:
+
+![exported csv image](/images/csv-file-export.png)
 
 
 
@@ -158,13 +182,13 @@ From this main view you can:
 
 1. Click on the radio button beside the **group name** in the main view to see the group members. 
 
-![Group membership](/images/group-members.jpg)
+   ![Group membership](/images/group-members2.png)
 
 2. From this view, you can **remove a user from the group** by checking the checkbox beside a user name and click on **Remove user(s) from group**. 
 
 3. You can also change **users** from the current group **to another group** by clicking on the dropdown list of group names, by choosing a group, checking the checkbox beside the username.
 
-   ![Add user to group](/images/add-user-to-group.jpg)
+   ![Add user to group](/images/add-user-to-group2.png)
 
 4. Click on **Add user(s) to group**.
    
