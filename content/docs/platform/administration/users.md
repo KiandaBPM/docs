@@ -152,7 +152,7 @@ You can **export** a list of users by clicking on the **Export to csv** button !
 * **Primary role** 
 * **Groups** - they are members of
 * **Active** - if the user is active and is currently using a license
-* **Last active** - when the user was last active
+* **Last active** - when the user was last active in the platform
 
 Seen below is an example CSV output in excel:
 
@@ -211,19 +211,21 @@ From this main view you can:
 
    - **Group member sync** - options are **No** or **Yes**. By choosing **Yes** this allows synchronisation of the Kianda group with Active Directory or other databases connected to Kianda as data sources. As a result of choosing Yes, other parameters appear:
 
-     - **Override group members** - choose from **No** or **Yes**. By choosing **Yes**, a full synchronisation is enabled between the Kianda group and the data source of users. Any users that are not listed in the data source, will be removed from this group in Kianda.
+     - **Create new user account** - If switched on new user accounts will be created for any users that are listed in the data source but not present in Kianda.
 
-       ![Group member synch](/images/group-sync.jpg)
+       ![Group member synch](/images/group-sync2.png)
+
+     - **Override group members** - choose from **No** or **Yes**. By choosing **Yes**, a full synchronisation is enabled between the Kianda group and the data source of users. Any users that are not listed in the data source, will be removed from this group in Kianda.
 
      - **Datasource** - choose a data source from the dropdown list. This data source must be already created, see [Data connectors](/docs/platform/connectors/) for more details.
 
      - **Group name** - choose a name for the group if desired.
 
      - **Auto disable previously imported users that are missing on re-import** - choose from **No** or **Yes**. By choosing **Yes**, any previously imported users that no longer exist in the data source, will be disabled in Kianda when re-synchronisation is executed. Their account will still exist in the system, but they will no longer be able to login to Kianda. 
-
-     - **Auto remove previously imported users that are missing on re-import** - choose from **No** or **Yes**. By choosing **Yes**, any previously imported users that no longer exist in the data source, will be removed from Kianda when re-synchronisation is executed. They will no longer be able to login to Kianda as their account will be removed from the system. 
      
-	    Note: When a group is synchronised, a **scheduled task** is created to import users from the data source group every one hour by default. This can be changed by going to **Administration** > **Scheduled tasks**. Go to [Scheduled tasks](/docs/platform/administration/scheduledtasks/) to find out more about different schedules.
+	  - **Auto remove previously imported users that are missing on re-import** - choose from **No** or **Yes**. By choosing **Yes**, any previously imported users that no longer exist in the data source, will be removed from Kianda when re-synchronisation is executed. They will no longer be able to login to Kianda as their account will be removed from the system. 
+     
+       Note: When a group is synchronised, a **scheduled task** is created to import users from the data source group every one hour by default. This can be changed by going to **Administration** > **Scheduled tasks**. Go to [Scheduled tasks](/docs/platform/administration/scheduledtasks/) to find out more about different schedules.
      
    - **Group administrators** - only **Users** or **Groups** listed here can manage the group; if you leave the field blank then Kianda administrators can manage the group.
    
