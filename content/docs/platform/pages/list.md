@@ -190,7 +190,7 @@ When you choose the List widget for your dashboard, there are a number of ways t
 
    Click on **Design fields** again to close the options.
 
-4. Clicking on **List fields** shows you a list of all the fields you have already chosen from **Common fields** and **Design fields**. There is also an option to **Add column** and **Add action**. You can change the order of the fields as they appear in the list from left to right by clicking on the Drag handle button ![Drag handle](/images/draghandlewhite.png). 
+4. Clicking on **List fields** shows you a list of all the fields you have already chosen from **Common fields** and **Design fields**. There is also an option to [**Add column**](#add-column) and [**Add action**](#add-action). You can change the order of the fields as they appear in the list from left to right by clicking on the Drag handle button ![Drag handle](/images/draghandlewhite.png). 
 
    ![List fields](/images/listfields.png)
 
@@ -206,7 +206,47 @@ When you choose the List widget for your dashboard, there are a number of ways t
 
 9. When you have completed your changes, click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) to save your changes or **X** to quit without saving.
 
+#### Add column
 
+If the numerous Common fields and Design fields are not enough, you can add your own columns using the **Add column** button in List view fields pane. To add a new column:
+
+1. Click on the **Add column** button <img src="/images/add-column-button.png" alt="add column button" style="zoom:80%;" /> to display a HTML and CSS code editor that allows you to design the custom column.
+
+2. In the code editor, enter the **Title** of your new column add the **code** to achieve the desired look and effect for your new column. For example, a common practice would be to code a conditional function checking the internal status of each row's record - if it's equal to 'Open', create a red button to draw attention to records that are still open, and vice versa with the closed records. You can interact with and perform operations on the list's fields by utilising the **row.properties.*enterFieldName*** method. The conditional statement uses Ember.js, learn more by clicking [here](/docs/low-code/using-the-ember-inspector/).
+
+   ![Add column code editor](/images/add-column-code-editor.png)
+
+3. When finished, click on **OK** to save your changes, or click on **Close** to cancel your changes.
+
+Your new column will then appear to the right of your previously added column. To learn how to move these columns, see [here](#how-to-move-list-widgets).
+
+![custom status column](/images/custom-status-column.png)
+
+
+
+#### Add action
+
+You can also add an action to your list widget, which will trigger a field or rule to be executed within the list's associated process. To add an action:
+
+1. Click on the **Add action** button <img src="/images/add-action-btn.png" alt="add action button" style="zoom:80%;" /> to display the **Add List Action** dialog box.
+
+2. Fill out the following fields:
+
+   * **Select the field or rule to trigger** - when the action button is clicked, which field or rule will be executed.
+   * **Button icon** - the visual icon associated with the button
+   * **Button color**
+
+3. When finished, click on **OK** to save your changes, or click on **Close** to cancel your changes.
+
+   ![add list action pic](/images/add-list-action-pic.png)
+
+Your new action will now appear as a button to the right of previously added column. To learn how to move these columns/actions, see [here](#how-to-move-list-widgets).
+
+![action button in list](/images/trigger-report.png)
+
+The code for the new action is automatically generated upon creating the action, as seen below with the created action generating a PDF report relating to the record in the same row. You can view the code and program extra features if desired by [editing](#how-to-edit-list-widget-settings) the action.
+
+![action code](/images/actions-code.png)
 
 ### How to move List widgets
 
