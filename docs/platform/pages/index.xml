@@ -562,7 +562,7 @@
 &lt;p>Click on &lt;strong>Design fields&lt;/strong> again to close the options.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Clicking on &lt;strong>List fields&lt;/strong> shows you a list of all the fields you have already chosen from &lt;strong>Common fields&lt;/strong> and &lt;strong>Design fields&lt;/strong>. There is also an option to &lt;strong>Add column&lt;/strong> and &lt;strong>Add action&lt;/strong>. You can change the order of the fields as they appear in the list from left to right by clicking on the Drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite.png" alt="Drag handle">.&lt;/p>
+&lt;p>Clicking on &lt;strong>List fields&lt;/strong> shows you a list of all the fields you have already chosen from &lt;strong>Common fields&lt;/strong> and &lt;strong>Design fields&lt;/strong>. There is also an option to &lt;a href="#add-column">&lt;strong>Add column&lt;/strong>&lt;/a> and &lt;a href="#add-action">&lt;strong>Add action&lt;/strong>&lt;/a>. You can change the order of the fields as they appear in the list from left to right by clicking on the Drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite.png" alt="Drag handle">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/listfields.png" alt="List fields">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -582,6 +582,45 @@
 &lt;p>When you have completed your changes, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> to save your changes or &lt;strong>X&lt;/strong> to quit without saving.&lt;/p>
 &lt;/li>
 &lt;/ol>
+&lt;h4 id="add-column">Add column&lt;/h4>
+&lt;p>If the numerous Common fields and Design fields are not enough, you can add your own columns using the &lt;strong>Add column&lt;/strong> button in List view fields pane. To add a new column:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Add column&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-column-button.png" alt="add column button" style="zoom:80%;" /> to display a HTML and CSS code editor that allows you to design the custom column.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the code editor, enter the &lt;strong>Title&lt;/strong> of your new column add the &lt;strong>code&lt;/strong> to achieve the desired look and effect for your new column. For example, a common practice would be to code a conditional function checking the internal status of each row&amp;rsquo;s record - if it&amp;rsquo;s equal to &amp;lsquo;Open&amp;rsquo;, create a red button to draw attention to records that are still open, and vice versa with the closed records. You can interact with and perform operations on the list&amp;rsquo;s fields by utilising the &lt;strong>row.properties.&lt;em>enterFieldName&lt;/em>&lt;/strong> method. The conditional statement uses Ember.js, learn more by clicking &lt;a href="https://docs.kianda.com/docs/low-code/using-the-ember-inspector/">here&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-column-code-editor.png" alt="Add column code editor">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When finished, click on &lt;strong>OK&lt;/strong> to save your changes, or click on &lt;strong>Close&lt;/strong> to cancel your changes.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>Your new column will then appear to the right of your previously added column. To learn how to move these columns, see &lt;a href="#how-to-move-list-widgets">here&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/custom-status-column.png" alt="custom status column">&lt;/p>
+&lt;h4 id="add-action">Add action&lt;/h4>
+&lt;p>You can also add an action to your list widget, which will trigger a field or rule to be executed within the list&amp;rsquo;s associated process. To add an action:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the &lt;strong>Add action&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-action-btn.png" alt="add action button" style="zoom:80%;" /> to display the &lt;strong>Add List Action&lt;/strong> dialog box.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Fill out the following fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Select the field or rule to trigger&lt;/strong> - when the action button is clicked, which field or rule will be executed.&lt;/li>
+&lt;li>&lt;strong>Button icon&lt;/strong> - the visual icon associated with the button&lt;/li>
+&lt;li>&lt;strong>Button color&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When finished, click on &lt;strong>OK&lt;/strong> to save your changes, or click on &lt;strong>Close&lt;/strong> to cancel your changes.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-list-action-pic.png" alt="add list action pic">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>Your new action will now appear as a button to the right of previously added column. To learn how to move these columns/actions, see &lt;a href="#how-to-move-list-widgets">here&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/trigger-report.png" alt="action button in list">&lt;/p>
+&lt;p>The code for the new action is automatically generated upon creating the action, as seen below with the created action generating a PDF report relating to the record in the same row. You can view the code and program extra features if desired by &lt;a href="#how-to-edit-list-widget-settings">editing&lt;/a> the action.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/actions-code.png" alt="action code">&lt;/p>
 &lt;h3 id="how-to-move-list-widgets">How to move List widgets&lt;/h3>
 &lt;p>To move a &lt;strong>List widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
