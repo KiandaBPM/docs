@@ -45,7 +45,7 @@
         $searchInput.on("change", async function(){
            
           if(window.lunrLoaded === false){ 
-                console.log("will load lunr");   
+                //console.log("will load lunr");   
                 window.lunrLoaded = true;       
                 await initLunr();           
            }
