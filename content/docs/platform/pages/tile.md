@@ -75,7 +75,7 @@ A dashboard **Tile widget** allows you to display a count of instances. This is 
 
 2. A dialog box opens with filter options in the left-hand pane,  a **Conditions** button ![Conditions](/images/conditions.png) in the middle of the box, and tile view fields and **Key performance indicators** in the right-hand pane. Go to [Conditions](/docs/platform/pages/conditions/) to read more about conditions you can apply to dashboard widgets, and go to Tile view fields to read more about changing how a tile looks.
 
-   ![Editing a tile widget](/images/edittilebox.png)
+   ![Editing a tile widget](/images/edittilebox2.png)
 
 3. The first option on the left is to choose is where the data should originate from using the **Data from** radio buttons. Choose from a) Process b) Partner process c) Data source. Depending on which option you choose go to the relevant area to read more on [Choosing data from a Process](#choosing-data-from-a-process), [Choosing data from a Partner process](#choosing-data-from-a-partner-process) and [Choosing data from a Data source](#choosing-data-from-a-data-source).
 
@@ -106,9 +106,9 @@ A dashboard **Tile widget** allows you to display a count of instances. This is 
 
    When finished, click **OK** to save your changes, or click **Close** to cancel your changes.
 
-   All KPIS will be displayed in the modal dialog, and can be deleted by clicking on the Bin/Trash icon button ![Bin icon](/images/binicon.png).
+   All KPIS will be displayed in the modal dialog, and can be deleted by clicking on the Bin/Trash icon button ![Bin icon](/images/binicon.png). You can click on pen edit icon ![pen icon image](/images/edit-pen.png) to edit the associated KPI also.
 
-   ![KPIs all view image](/images/kpi-example.png)
+   ![KPIs all view image](/images/kpi-example2.png)
 
 10. When you are finished choosing options, click on the **OK** button to save your changes or click on **Close** to exit the dialog box without saving.
 
