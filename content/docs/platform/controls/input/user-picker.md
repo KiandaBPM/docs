@@ -185,7 +185,25 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 ### User tips ![Target icon](/images/05.png) ###
 Rules can be applied to User picker fields to make your form dynamic. Rules allow actions based upon conditions resulting from user interaction with fields. To learn about the different types of rules you can apply, go to [Rules](/docs/platform/rules/). 
 
-For example, you could apply a [Set form field](/docs/platform/rules/data/set-form-field) rule so that the User picker field is set to be the current user or the user who started the process off.
+For example, you could apply a [Set form field](/docs/platform/rules/data/set-form-field) rule so that the User picker field is set to be the current user or the user who started the process off. The section below describes how to use a User picker field in forms with two rules in order to extract a value from a datasource. 
+
+
+
+## Example of User Picker use with Find Items and Lookup User rules
+
+The steps below detail how to use a User Picker field to **pull a value from a datasource** and **use properties within the Kianda** system associated with that value **within a Kianda form** to **auto-populate a user picker field**. This procedure is used when you need to populate **more than one value** in a user picker. Two rules are applied [Find Items rule](/docs/platform/rules/data/find-items) and [Lookup user by property](/docs/platform/rules/users/lookup-user-by-property). 
+
+For example we start with a SharePoint list or other **datasource** that has a list of values, for example we could use a Kianda process as a datasource that holds values called 'Employee number' and 'Employee' in the system.
+
+![Example of a process acting as a datasource](/images/process-datasource.png)
+
+In the image above an Employee number or code is entered via a process for 3 system users, in this example the number '400' represents 3 users, Bartosz, Caitriona and Cian. More records could be created with Employee numbers representing other employees or combinations of users.
+
+We will use the values from the first process which acts as a datasource in a second process called 'User Lookup' where fields will be auto-populated based on the Employee No. value entered.
+
+![Display names based on datasource value](/images/populate-find-items.png)
+
+For example if '400' is entered into this process, then the fields 'Display names' and 'User picker 1' are auto-filled. This is as a result of 2 rules on the Employee No. field the system **property** to display a value linked to these 3 users. 
 
 
 
