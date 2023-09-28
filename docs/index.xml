@@ -1,4 +1,246 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Welcome to Kianda</title><link>https://docs.kianda.com/docs/</link><description>Recent content in Welcome to Kianda on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://docs.kianda.com/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Active Directory</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Welcome to Kianda</title><link>https://docs.kianda.com/docs/</link><description>Recent content in Welcome to Kianda on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://docs.kianda.com/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Active Directory</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/create-user/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/create-user/</guid><description>
+&lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>Active Directory&lt;/strong> (&lt;strong>AD&lt;/strong>) also known as &lt;strong>Active Directory Domain Services&lt;/strong> (&lt;strong>AD DS&lt;/strong>). AD is a logical and hierarchical structured data store of objects which are mostly accounts. Accounts such as &lt;strong>Users, Computers, Groups&lt;/strong> and other objects such as &lt;strong>Printers&lt;/strong> or &lt;strong>Group Policy Objects&lt;/strong> (GPO). For example, you can store information about user accounts within an AD such as &lt;strong>Name, Password, Job title&lt;/strong> and &lt;strong>Permissions&lt;/strong>.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Having an AD connector will allow you to access information that is stored there within your Kianda subscription. You will be able to use &lt;strong>User&lt;/strong> related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda.&lt;/p>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>Before you can create a connection with your Active Directory and your Kianda subscription, you need to download Kianda Cloud Connect. &lt;strong>Kianda Cloud Connect&lt;/strong> is a piece of software that &lt;strong>establishes a connection&lt;/strong> between your &lt;strong>local machine&lt;/strong> and your &lt;strong>Kianda subscription&lt;/strong>. This lightweight app will sit on your PC or server where files reside that you need to use in Kianda processes. It allows the data to &lt;strong>travel&lt;/strong> from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example &lt;strong>Deleting&lt;/strong> a file or &lt;strong>Creating&lt;/strong> one.&lt;/p>
+&lt;p>To learn more about how to download and create a connection between your Kianda subscription and Kianda Cloud Connect go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>Active Directory&lt;/strong> from the list of data sources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will be automatically brought to the &lt;strong>Active Directory details&lt;/strong> page, where you can start setting up the connection.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-details.jpg" alt="File system detail page">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your PowerShell connector. The display name is used to identify your connector.&lt;/li>
+&lt;li>&lt;strong>Directory path&lt;/strong> - enter in the path to the directory. The path must be LDAP or GC.&lt;/li>
+&lt;li>&lt;strong>AD User&lt;/strong> - enter in the domain and user that you want to connect to. To specify the domain and user correctly use the following format: &lt;code>&amp;lt;domain&amp;gt;/&amp;lt;username&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Password&lt;/strong> - enter in the password used to login for the desired user.&lt;/li>
+&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is enabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between the &lt;strong>Active Directory connector&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.
+&lt;ul>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that is running the Active Directory server.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Status&lt;/strong> - represents the current status of the connection.
+&lt;ul>
+&lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed.&lt;/li>
+&lt;li>&lt;strong>test failed&lt;/strong> - means that the details of the connector are incorrect and the connection has failed.&lt;/li>
+&lt;li>&lt;strong>ready&lt;/strong> - means that the connector has successfully connected and its ready to be used.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added PowerShell details, you are ready to test your connection and add security. At the bottom of the &lt;strong>PowerShell Connector&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="active-directory-functions">Active Directory functions&lt;/h2>
+&lt;p>Active Directory functions are &lt;strong>Users&lt;/strong> related and to use them you have to use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda. The functions that are available are:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-functions.jpg" alt="Active Directory list of functions">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>FindUsers&lt;/strong> - allows you to look for a user within your directory by defining a user attribute as a means of searching for them.&lt;/li>
+&lt;li>&lt;strong>IsMemberOf&lt;/strong> - allows you to see if a user is a member of a group. You need to specify both a user and a group.&lt;/li>
+&lt;li>&lt;strong>CreateUser&lt;/strong> - allows you to create a user within your directory. You need to specify a &lt;strong>username&lt;/strong>, &lt;strong>first name, last name, email and password&lt;/strong> to create a user successfully.&lt;/li>
+&lt;li>&lt;strong>UpdateUser&lt;/strong> - allows you to update user attributes. You need to specify what user to update by providing their &lt;strong>sAMAccountName&lt;/strong> and &lt;strong>distinguishedName&lt;/strong> (DN).&lt;/li>
+&lt;li>&lt;strong>AddUserToGroup&lt;/strong> - allows you to add a user to a group by providing the group name and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user.&lt;/li>
+&lt;li>&lt;strong>RemoveUserFromGroup&lt;/strong> - allows you to remove a user from a group by providing the group name and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user.&lt;/li>
+&lt;li>&lt;strong>Enable User&lt;/strong> - allows you to enable or disable a user by providing the enable parameter and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user. The enable parameter is either &lt;strong>true&lt;/strong> or &lt;strong>false&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>MoveUser&lt;/strong> - allows you to move a user to a specific path in your directory by providing the destination path and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user.&lt;/li>
+&lt;/ul>
+&lt;p>Lets take the &lt;strong>CreateUser&lt;/strong> function as an example to show how these functions work. As mentioned earlier, we need to use the Data rules to use these functions and for this example we use the &lt;strong>Create item&lt;/strong> rule which is available from the Data rules.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>When creating a user in Active Directory, there are some required properties that we need to provide. Those properties are a &lt;strong>username&lt;/strong>, &lt;strong>givenName&lt;/strong> (first name), &lt;strong>surname&lt;/strong> (last name), &lt;strong>email&lt;/strong> and &lt;strong>password&lt;/strong>. There are also extra properties that can be provided by expanding a properties tab within the function:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-create-user.jpg" alt="Active Directory list of functions">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>We need to create at least five fields that will be used to provide a value as the required properties. We will use a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">text box field&lt;/a> for each one:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-fields.jpg" alt="Required fields for the required properties">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/create-item/">create item&lt;/a> rule to use the function. We need to map the text box fields to the appropriate properties as follow:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-create-user-rule.jpg" alt="Mapping the required fields to create item rule">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>You can apply the create item rule to a button, for example, the submit button. This will result in a user being created in your AD whenever the submit button will be clicked.&lt;/p>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Active Directory</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/find-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/find-users/</guid><description>
+&lt;p>The &lt;strong>Find Users&lt;/strong> remote procedure allows you to look for a user within your directory by defining a user attribute as a means of searching for them.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Having an AD connector will allow you to access information that is stored there within your Kianda subscription. You will be able to use &lt;strong>User&lt;/strong> related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda.&lt;/p>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>Create a data connector to your AD database by following the steps detailed in the &lt;a href="https://docs.kianda.com/docs/platform/connectors/active-directory/#how-to-get-started">Active Directory data connector page&lt;/a> .&lt;/p>
+&lt;h2 id="remote-procedure-inputs">Remote procedure inputs&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>Active Directory&lt;/strong> from the list of data sources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will be automatically brought to the &lt;strong>Active Directory details&lt;/strong> page, where you can start setting up the connection.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-details.jpg" alt="File system detail page">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your PowerShell connector. The display name is used to identify your connector.&lt;/li>
+&lt;li>&lt;strong>Directory path&lt;/strong> - enter in the path to the directory. The path must be LDAP or GC.&lt;/li>
+&lt;li>&lt;strong>AD User&lt;/strong> - enter in the domain and user that you want to connect to. To specify the domain and user correctly use the following format: &lt;code>&amp;lt;domain&amp;gt;/&amp;lt;username&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Password&lt;/strong> - enter in the password used to login for the desired user.&lt;/li>
+&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is enabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between the &lt;strong>Active Directory connector&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.
+&lt;ul>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that is running the Active Directory server.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Status&lt;/strong> - represents the current status of the connection.
+&lt;ul>
+&lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed.&lt;/li>
+&lt;li>&lt;strong>test failed&lt;/strong> - means that the details of the connector are incorrect and the connection has failed.&lt;/li>
+&lt;li>&lt;strong>ready&lt;/strong> - means that the connector has successfully connected and its ready to be used.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added PowerShell details, you are ready to test your connection and add security. At the bottom of the &lt;strong>PowerShell Connector&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="active-directory-functions">Active Directory functions&lt;/h2>
+&lt;p>Active Directory functions are &lt;strong>Users&lt;/strong> related and to use them you have to use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda. The functions that are available are:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-functions.jpg" alt="Active Directory list of functions">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>FindUsers&lt;/strong> - allows you to look for a user within your directory by defining a user attribute as a means of searching for them.&lt;/li>
+&lt;li>&lt;strong>IsMemberOf&lt;/strong> - allows you to see if a user is a member of a group. You need to specify both a user and a group.&lt;/li>
+&lt;li>&lt;strong>CreateUser&lt;/strong> - allows you to create a user within your directory. You need to specify a &lt;strong>username&lt;/strong>, &lt;strong>first name, last name, email and password&lt;/strong> to create a user successfully.&lt;/li>
+&lt;li>&lt;strong>UpdateUser&lt;/strong> - allows you to update user attributes. You need to specify what user to update by providing their &lt;strong>sAMAccountName&lt;/strong> and &lt;strong>distinguishedName&lt;/strong> (DN).&lt;/li>
+&lt;li>&lt;strong>AddUserToGroup&lt;/strong> - allows you to add a user to a group by providing the group name and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user.&lt;/li>
+&lt;li>&lt;strong>RemoveUserFromGroup&lt;/strong> - allows you to remove a user from a group by providing the group name and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user.&lt;/li>
+&lt;li>&lt;strong>Enable User&lt;/strong> - allows you to enable or disable a user by providing the enable parameter and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user. The enable parameter is either &lt;strong>true&lt;/strong> or &lt;strong>false&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>MoveUser&lt;/strong> - allows you to move a user to a specific path in your directory by providing the destination path and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user.&lt;/li>
+&lt;/ul>
+&lt;p>Lets take the &lt;strong>CreateUser&lt;/strong> function as an example to show how these functions work. As mentioned earlier, we need to use the Data rules to use these functions and for this example we use the &lt;strong>Create item&lt;/strong> rule which is available from the Data rules.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>When creating a user in Active Directory, there are some required properties that we need to provide. Those properties are a &lt;strong>username&lt;/strong>, &lt;strong>givenName&lt;/strong> (first name), &lt;strong>surname&lt;/strong> (last name), &lt;strong>email&lt;/strong> and &lt;strong>password&lt;/strong>. There are also extra properties that can be provided by expanding a properties tab within the function:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-create-user.jpg" alt="Active Directory list of functions">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>We need to create at least five fields that will be used to provide a value as the required properties. We will use a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">text box field&lt;/a> for each one:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-fields.jpg" alt="Required fields for the required properties">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/create-item/">create item&lt;/a> rule to use the function. We need to map the text box fields to the appropriate properties as follow:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-create-user-rule.jpg" alt="Mapping the required fields to create item rule">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>You can apply the create item rule to a button, for example, the submit button. This will result in a user being created in your AD whenever the submit button will be clicked.&lt;/p>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Active Directory</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/is-member-of/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/is-member-of/</guid><description>
+&lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>Active Directory&lt;/strong> (&lt;strong>AD&lt;/strong>) also known as &lt;strong>Active Directory Domain Services&lt;/strong> (&lt;strong>AD DS&lt;/strong>). AD is a logical and hierarchical structured data store of objects which are mostly accounts. Accounts such as &lt;strong>Users, Computers, Groups&lt;/strong> and other objects such as &lt;strong>Printers&lt;/strong> or &lt;strong>Group Policy Objects&lt;/strong> (GPO). For example, you can store information about user accounts within an AD such as &lt;strong>Name, Password, Job title&lt;/strong> and &lt;strong>Permissions&lt;/strong>.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Having an AD connector will allow you to access information that is stored there within your Kianda subscription. You will be able to use &lt;strong>User&lt;/strong> related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda.&lt;/p>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>Before you can create a connection with your Active Directory and your Kianda subscription, you need to download Kianda Cloud Connect. &lt;strong>Kianda Cloud Connect&lt;/strong> is a piece of software that &lt;strong>establishes a connection&lt;/strong> between your &lt;strong>local machine&lt;/strong> and your &lt;strong>Kianda subscription&lt;/strong>. This lightweight app will sit on your PC or server where files reside that you need to use in Kianda processes. It allows the data to &lt;strong>travel&lt;/strong> from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example &lt;strong>Deleting&lt;/strong> a file or &lt;strong>Creating&lt;/strong> one.&lt;/p>
+&lt;p>To learn more about how to download and create a connection between your Kianda subscription and Kianda Cloud Connect go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>From the Kianda home page, click on &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Data sources&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and choose &lt;strong>Active Directory&lt;/strong> from the list of data sources provided.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You will be automatically brought to the &lt;strong>Active Directory details&lt;/strong> page, where you can start setting up the connection.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-details.jpg" alt="File system detail page">&lt;/p>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Display name&lt;/strong> - type in the name for your PowerShell connector. The display name is used to identify your connector.&lt;/li>
+&lt;li>&lt;strong>Directory path&lt;/strong> - enter in the path to the directory. The path must be LDAP or GC.&lt;/li>
+&lt;li>&lt;strong>AD User&lt;/strong> - enter in the domain and user that you want to connect to. To specify the domain and user correctly use the following format: &lt;code>&amp;lt;domain&amp;gt;/&amp;lt;username&amp;gt;&lt;/code>&lt;/li>
+&lt;li>&lt;strong>Password&lt;/strong> - enter in the password used to login for the desired user.&lt;/li>
+&lt;li>&lt;strong>Use Kianda Cloud Connect&lt;/strong> - by default this option is enabled, the cloud connect is used to &lt;strong>create a connection&lt;/strong> between the &lt;strong>Active Directory connector&lt;/strong> and &lt;strong>Kianda&lt;/strong> itself. To learn more about &lt;strong>Kianda Cloud Connect&lt;/strong> and how to create a connection between Kianda and your PC, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/kianda-cloud-connect/">Kianda Cloud Connect&lt;/a>.
+&lt;ul>
+&lt;li>&lt;strong>Connectors&lt;/strong> - displays all available connector PC&amp;rsquo;s that have a &lt;strong>connection established&lt;/strong> with your &lt;strong>Kianda&lt;/strong> subscription. This option is used to select the PC &lt;strong>connection&lt;/strong> that is running the Active Directory server.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Status&lt;/strong> - represents the current status of the connection.
+&lt;ul>
+&lt;li>&lt;strong>incomplete&lt;/strong> - means that the details of the connector were not fully completed.&lt;/li>
+&lt;li>&lt;strong>test failed&lt;/strong> - means that the details of the connector are incorrect and the connection has failed.&lt;/li>
+&lt;li>&lt;strong>ready&lt;/strong> - means that the connector has successfully connected and its ready to be used.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you have added PowerShell details, you are ready to test your connection and add security. At the bottom of the &lt;strong>PowerShell Connector&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the data source management main view.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="active-directory-functions">Active Directory functions&lt;/h2>
+&lt;p>Active Directory functions are &lt;strong>Users&lt;/strong> related and to use them you have to use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda. The functions that are available are:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-functions.jpg" alt="Active Directory list of functions">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>FindUsers&lt;/strong> - allows you to look for a user within your directory by defining a user attribute as a means of searching for them.&lt;/li>
+&lt;li>&lt;strong>IsMemberOf&lt;/strong> - allows you to see if a user is a member of a group. You need to specify both a user and a group.&lt;/li>
+&lt;li>&lt;strong>CreateUser&lt;/strong> - allows you to create a user within your directory. You need to specify a &lt;strong>username&lt;/strong>, &lt;strong>first name, last name, email and password&lt;/strong> to create a user successfully.&lt;/li>
+&lt;li>&lt;strong>UpdateUser&lt;/strong> - allows you to update user attributes. You need to specify what user to update by providing their &lt;strong>sAMAccountName&lt;/strong> and &lt;strong>distinguishedName&lt;/strong> (DN).&lt;/li>
+&lt;li>&lt;strong>AddUserToGroup&lt;/strong> - allows you to add a user to a group by providing the group name and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user.&lt;/li>
+&lt;li>&lt;strong>RemoveUserFromGroup&lt;/strong> - allows you to remove a user from a group by providing the group name and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user.&lt;/li>
+&lt;li>&lt;strong>Enable User&lt;/strong> - allows you to enable or disable a user by providing the enable parameter and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user. The enable parameter is either &lt;strong>true&lt;/strong> or &lt;strong>false&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>MoveUser&lt;/strong> - allows you to move a user to a specific path in your directory by providing the destination path and both the &lt;strong>distinguishedName&lt;/strong> and &lt;strong>sAMAccountName&lt;/strong> of the user.&lt;/li>
+&lt;/ul>
+&lt;p>Lets take the &lt;strong>CreateUser&lt;/strong> function as an example to show how these functions work. As mentioned earlier, we need to use the Data rules to use these functions and for this example we use the &lt;strong>Create item&lt;/strong> rule which is available from the Data rules.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>When creating a user in Active Directory, there are some required properties that we need to provide. Those properties are a &lt;strong>username&lt;/strong>, &lt;strong>givenName&lt;/strong> (first name), &lt;strong>surname&lt;/strong> (last name), &lt;strong>email&lt;/strong> and &lt;strong>password&lt;/strong>. There are also extra properties that can be provided by expanding a properties tab within the function:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-create-user.jpg" alt="Active Directory list of functions">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>We need to create at least five fields that will be used to provide a value as the required properties. We will use a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">text box field&lt;/a> for each one:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-fields.jpg" alt="Required fields for the required properties">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/create-item/">create item&lt;/a> rule to use the function. We need to map the text box fields to the appropriate properties as follow:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ad-create-user-rule.jpg" alt="Mapping the required fields to create item rule">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>You can apply the create item rule to a button, for example, the submit button. This will result in a user being created in your AD whenever the submit button will be clicked.&lt;/p>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Active Directory</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/update-user/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/update-user/</guid><description>
 &lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>Active Directory&lt;/strong> (&lt;strong>AD&lt;/strong>) also known as &lt;strong>Active Directory Domain Services&lt;/strong> (&lt;strong>AD DS&lt;/strong>). AD is a logical and hierarchical structured data store of objects which are mostly accounts. Accounts such as &lt;strong>Users, Computers, Groups&lt;/strong> and other objects such as &lt;strong>Printers&lt;/strong> or &lt;strong>Group Policy Objects&lt;/strong> (GPO). For example, you can store information about user accounts within an AD such as &lt;strong>Name, Password, Job title&lt;/strong> and &lt;strong>Permissions&lt;/strong>.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Having an AD connector will allow you to access information that is stored there within your Kianda subscription. You will be able to use &lt;strong>User&lt;/strong> related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda.&lt;/p>
@@ -4316,269 +4558,4 @@ Your browser does not support the video tag.
 &lt;ul>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/version-history/">Version history&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Process security</title><link>https://docs.kianda.com/docs/security/process-level-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/security/process-level-security/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>In addition to &lt;a href="https://docs.kianda.com/docs/security/workspace-security/">Workspace security&lt;/a> that is setting levels of access by role and form ownership, there are a multitude of ways to set access at a process, field and dashboard level. The following sections describe security at different levels.&lt;/p>
-&lt;h2 id="process-security-settings">Process security settings&lt;/h2>
-&lt;p>When you are creating or editing a process in Kianda Designer, you can set security settings for that process. This setting will &lt;strong>apply to every record (instance)&lt;/strong> created from that process. To do this, click on the process in Designer and then, in the right-hand pane, click on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/settings.png" alt="Process settings button"> and select the checkbox beside &lt;strong>Enable process security.&lt;/strong>&lt;/p>
-&lt;p>Choose an individual user, groups or partner or combination, to be ‘security users’ and then choose from one of three security modes, as shown in here.&lt;/p>
-&lt;p>&lt;em>Process security settings&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/04/process-security-settings.gif" alt="img">&lt;/p>
-&lt;p>The three available security levels are listed from lowest to highest. For example, if you choose &lt;strong>Security users only can create, view and update&lt;/strong> means that only the users listed as &lt;strong>Process security users&lt;/strong> – in the example shown here, Mike Balcoome and the Management Team – will be able to access and view process records. No other users will have access to the process records generated by this process.&lt;/p>
-&lt;h2 id="process-security-rule">Process security rule&lt;/h2>
-&lt;p>Another way to set security is to use one of the &lt;strong>Workflow&lt;/strong> rules called &lt;strong>Process security&lt;/strong> to &lt;strong>dynamically change&lt;/strong> the security settings for a process record (instance). Using this rule allows you to set the same security modes shown in the process settings above, but this can happen based on a particular condition or trigger – for example, clicking the Submit button.&lt;/p>
-&lt;p>To add this rule, open your process in Kianda Designer and select the relevant form. Then, in the left-hand pane, go to &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Workflow&lt;/strong> &amp;gt; &lt;strong>Process security&lt;/strong>. In the Edit rule – Process security dialog box, create a condition if desired, and then choose from the type of users who will become security users. Choose from the options: &lt;strong>Override&lt;/strong> to override existing security, or &lt;strong>Append&lt;/strong> if you want to add a new level of access. Click the &lt;strong>Enable security&lt;/strong> checkbox to choose a Process security mode.&lt;/p>
-&lt;p>&lt;em>Edit rule – Process security dialog box&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/04/security-rule.jpg" alt="img">&lt;/p>
-&lt;h2 id="panel-and-button-security">Panel and button security&lt;/h2>
-&lt;p>In addition to process and form level security, you can set panel and button security by clicking on a panel or button within a form. Click on the panel or button of choice, click the &lt;strong>Edit&lt;/strong> button (Pen icon) and choose &lt;strong>Yes&lt;/strong> beside &lt;strong>Enable security&lt;/strong>. Click on the &lt;strong>Add security&lt;/strong> button to add users or groups to enable access to the button or panel.&lt;/p>
-&lt;p>&lt;em>Panel security within the edit field dialog box&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/04/panel-security.jpg" alt="img">&lt;/p>
-&lt;h2 id="dashboard-security">Dashboard security&lt;/h2>
-&lt;p>As an end user, when you login to Kianda, you are presented with dashboards and widgets for different processes. The dashboard is made of multiple widgets like tiles, charts, links and lists. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard&lt;/a> to find out more about each widget type. You can set security at both a) dashboard level and b) widget level, see &lt;a href="#widget-security">Widget security&lt;/a> for more details. This section will deal with dashboard level security.&lt;/p>
-&lt;p>Dashboard level security can only be applied if you have the &lt;strong>Administrator&lt;/strong> role to allow visibility of &lt;strong>dashboards and widgets.&lt;/strong>&lt;/p>
-&lt;p>To apply security to dashboards:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Go to the existing dashboard page by clicking on &lt;strong>Dashboard&lt;/strong> and the page name in the left-hand side menu.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> visible in the top menu bar.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Now in &lt;strong>Edit mode&lt;/strong>, the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings2.png" alt="Settings button"> is visible. Click on the &lt;strong>Settings&lt;/strong> button.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The &lt;strong>Edit dashboard page&lt;/strong> dialog box appears where you can find the &lt;strong>Visible to&lt;/strong> user picker with an option to select &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/edit-dashboard-users.jpg" alt="Edit dashboard visible to parameter">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Select the correct &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> using the dropdown menu.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Make any other changes you need to the dashboard, see &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboard&lt;/a> for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> when you are finished editing the dialog box or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Save the changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-dash.png" alt="Save button"> at the top of the page.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="widget-security">Widget security&lt;/h3>
-&lt;p>Similarly, you can set the visibility for an individual widget on the dashboard like a tile, chart, or list, for example, if you want the dashboard to be visible to everyone and a particular chart on the dashboard only visible to management. This can be achieved by setting the &lt;strong>visible to&lt;/strong> field to the management group as shown below.&lt;/p>
-&lt;p>To apply security to a dashboard widget:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Go to the existing dashboard page by clicking on &lt;strong>Dashboard&lt;/strong> and the page name in the left-hand side menu.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click the &lt;strong>Edit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit.png" alt="Edit button"> visible in the top menu bar.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Now in &lt;strong>Edit mode&lt;/strong>, click on the &lt;strong>Cog/settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/widget-cog.jpg" alt="Widget settings"> of the widget.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box appears where you can find the &lt;strong>Visible to&lt;/strong> user picker with an option to select &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong>. The example below shows the dialog box for a &lt;strong>List&lt;/strong> widget.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/edit-widget-eg.jpg" alt="Edit widget dialog box">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the &lt;strong>Visible to&lt;/strong> field select the correct &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> from the dropdown menu.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> when you are finished editing the dialog box or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Save the changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save-dash.png" alt="Save button"> at the top of the page.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Process level security&lt;/strong>, find out more about other security access levels:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/security/workspace-security/">Workspace security&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/security/sso/">Single Sign-On&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/security/data-residency/">Data residency&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Process settings</title><link>https://docs.kianda.com/docs/platform/application-designer/process/settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/process/settings/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>There are a number of properties and settings that you can implement to your process and forms.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Settings and properties&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/settingsprocess.png" alt="Process and form properties">&lt;/p>
-&lt;p>Settings are available from the right-hand pane and give you the ability to:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/how-to/reuse-or-clone-process-elements/">Import processes&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>View &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/version-history/">Version history&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Change &lt;a href="#process-settings">Process settings&lt;/a> &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Edit form information by selecting a form and clicking on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Change a field to another field by clicking on &lt;strong>Change field&lt;/strong>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Create a duplicate form by selecting a form, clicking on the &lt;strong>Clone&lt;/strong> button &lt;img src="https://docs.kianda.com/images/clone.png" alt="Clone button"> and then click on &lt;strong>Ok&lt;/strong>. A version called &amp;lsquo;Form Name Copy&amp;rsquo; is created and available to edit on the canvas. The &lt;strong>Clone&lt;/strong> button can also be used to clone form elements like controls or buttons.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Delete a form by selecting a form, clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>Ok&lt;/strong> after you have reviewed the form title and you are sure this is what you want to delete. Click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>View and edit &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/properties/">Form properties&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/">rules&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="process-settings">Process settings&lt;/h2>
-&lt;p>You can edit process settings by clicking on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings button"> in the right-hand pane. &lt;img src="https://docs.kianda.com/images/process-settings-tabs.jpg" alt="Process settings">&lt;/p>
-&lt;p>Within process settings, there are four tabs to navigate to:&lt;/p>
-&lt;h3 id="1-general">1. &lt;strong>General&lt;/strong>:&lt;/h3>
-&lt;p>&lt;img src="https://docs.kianda.com/images/process-settings-general.jpg" alt="Process settings general tab">&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Process ID Settings&lt;/strong> - choose from a) Default or b) Custom and use a combination of [ProcessName]-[UniqueNumber]-[FieldName]&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>On load rules execution mode&lt;/strong> - options are a) Always b) When in edit mode or c) When open new. The default setting is &lt;strong>Always&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable form assignment notification?&lt;/strong> - options are a) Yes or b) No&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Prevent closing instance with unsaved data?&lt;/strong> - options are a) Yes or b) No&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable process navigator?&lt;/strong> - options are a) Yes or b) No. If you select Yes, the Process navigator tab will appear in the right hand panel, allowing you to quickly snap to and view desired form controls and rules.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/process-navigator-panel.jpg" alt="Process navigator panel">&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/process-navigator-selection.jpg" alt="Process navigator selection">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="2-security">2. &lt;strong>Security&lt;/strong>:&lt;/h3>
-&lt;p>&lt;img src="https://docs.kianda.com/images/process-settings-security.jpg" alt="Process settings security tab">&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Enable process security&lt;/strong> - if you tick the checkbox, can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below. The default setting is &lt;strong>Security users can create, assign to can update, everyone else can view&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Instance delete settings&lt;/strong> - options are a) Any user can delete b) Creator can delete c) &amp;ldquo;Current form owner&amp;rdquo; can delete d) &amp;ldquo;Security users&amp;rdquo; can delete e) &amp;ldquo;Admins only&amp;rdquo; can delete. The default setting is &lt;strong>Creator can delete&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="3-tabs">3. &lt;strong>Tabs&lt;/strong>:&lt;/h3>
-&lt;p>&lt;img src="https://docs.kianda.com/images/process-settings-tabs2.jpg" alt="Process settings tabs tab">&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Hide form tabs&lt;/strong> - gives you the ability to hide form tabs, options are a) Yes or b) No&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Hide left nav&lt;/strong> - gives you the ability to hide navigation elements, options are a) Yes or b) No&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable mobile navigation?&lt;/strong> - options are a) Yes or b) No&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Selected tab theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is selected.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Completed tab theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is completed.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="4-anonymous-form">4. &lt;strong>Anonymous Form&lt;/strong>:&lt;/h3>
-&lt;p>&lt;img src="https://docs.kianda.com/images/process-settings-anonymous2.jpg" alt="Link for external users">&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Enable anonymous sharing of forms&lt;/strong> - gives you the ability to share forms with people outside your organisation for example a feedback form or GDPR subject access request. Options are a) Yes or b) No. If you click on &lt;strong>Yes&lt;/strong> there are various options that you can add:&lt;/p>
-&lt;ul>
-&lt;li>Click on &lt;strong>New link&lt;/strong> to generate a new anonymous form link to share with users and click on &lt;strong>Edit&lt;/strong> to change the link.&lt;/li>
-&lt;li>&lt;strong>Message to display after anonymous submission&lt;/strong> - to add a display message.&lt;/li>
-&lt;/ul>
-&lt;ul>
-&lt;li>&lt;strong>Hide form topbar&lt;/strong> - checkbox to hide the form topbar.&lt;/li>
-&lt;li>&lt;strong>Force authenticated user to log out&lt;/strong> - options are a) Yes or b) No to force the authenticated user to log out once the form is submitted. If &lt;strong>No&lt;/strong> is selected, you can choose to &lt;strong>Redirect authenticated user to&lt;/strong>:
-&lt;ul>
-&lt;li>&lt;strong>Process URL&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Workspace Home&lt;/strong>&lt;/li>
-&lt;li>The result is a globally available link to allow external users to create a &lt;strong>new instance&lt;/strong>. You can use the &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/anonymous-form-link/">&lt;strong>Anonymous form link Rule&lt;/strong>&lt;/a> to generate a new anonymous link at runtime that will point to an &lt;strong>existing process instance&lt;/strong> that can be shared with external users.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;p>When you are finished editing the process settings:&lt;/p>
-&lt;ol>
-&lt;li>Click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/li>
-&lt;li>Click on the &lt;strong>Exit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/exitdesign.png" alt="Exit process"> to go back to the process list, the Save button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> to save your work, the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview"> to preview what you have created and the &lt;strong>Publish&lt;/strong> button &lt;img src="https://docs.kianda.com/images/publish.png" alt="Publish button"> to publish your work.&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;ul>
-&lt;li>To learn more about rules and controls that can be applied to forms go to &lt;a href="https://docs.kianda.com/docs/platform/controls/">&lt;strong>Controls&lt;/strong>&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>.&lt;/li>
-&lt;li>To learn more about properties, go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/properties/">&lt;strong>Properties&lt;/strong>&lt;/a>.&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Progressive Web Application (PWA)</title><link>https://docs.kianda.com/docs/low-code/pwa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/low-code/pwa/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>Progressive web applications&lt;/strong> are the next great trend for the mobile web. As the Kianda platform is a progressive web application, you can access your businesses&amp;rsquo; Kianda workspace as if it were a mobile application.&lt;/p>
-&lt;p>Instead of having to download an application through your device&amp;rsquo;s native application store, the PWA can be formatted and installed on your device so that you can easily access the website via a URL shortcut. This means with Kianda you get a digital experience that is native-like while maintaining online web benefits. When you have a Kianda subscription, you gain the ability to access your workspace via a PWA. Seen below is the accessing of the Kianda platform via a PWA on an android device.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/videos/gifs/common/pwav2-gif-smaller.gif" alt="PWA Gif">&lt;/p>
-&lt;h2 id="benefits">Benefits&lt;/h2>
-&lt;p>There are several benefits of using a PWA app when comparing to a web app or even a native only app.&lt;/p>
-&lt;h3 id="offline-use">Offline Use&lt;/h3>
-&lt;p>Apps keep working with or without network access, allowing for &lt;strong>offline availability&lt;/strong> of resources. Even when your users are going through a tunnel or in a lift, changes are automatically queued offline and then &lt;strong>synchronised&lt;/strong> when connectivity is restored. This can be extremely useful when completing process instances in remote locations, for example filling out an inspection form in an area with no internet coverage.&lt;/p>
-&lt;h3 id="fast-performance">Fast Performance&lt;/h3>
-&lt;p>The app loads quickly thanks to having it installed locally on your device. This provides you with an increased &lt;strong>ease of access&lt;/strong> experience as you are not required to download the application via your device&amp;rsquo;s native application store. Progressive web apps are faster because of the way the underlying technology &lt;strong>caches&lt;/strong> and serves text, stylesheets, images and other content on the websites. As a result user experience, consistency and conversion rate increase.&lt;/p>
-&lt;h3 id="engaging">Engaging&lt;/h3>
-&lt;p>When installing on your home screen with your brand icons, users receive &lt;strong>timely push notifications&lt;/strong> that help them stay engaged. If you would prefer to not receive notifications, you can disable them and relevant updates will be executed in the background silently.&lt;/p>
-&lt;h3 id="secure">Secure&lt;/h3>
-&lt;p>PWAs make use of &lt;strong>HTTPS requests&lt;/strong> to transfer data, which minimises potential security threats. As these applications access your Kianda workspace through your chosen web browser, PWAs utilise the added security features of these web browsers such as &lt;strong>SSL encryption&lt;/strong>.&lt;/p>
-&lt;h3 id="responsive">Responsive&lt;/h3>
-&lt;p>The Kianda platform is designed to be responsive on a myriad of mobile devices which reduces any future developmental costs. PWAs employ the &lt;strong>adaptive&lt;/strong> nature of HTML, CSS and JavaScript so that your Kianda workspace will consistently maintain a neat display of features.&lt;/p>
-&lt;h2 id="installing-your-pwa-on-a-mobile">Installing your PWA on a mobile&lt;/h2>
-&lt;p>There are a few options to install your Kianda PWA workspace into mobile devices. The quickest is to let your users manually use the option &lt;strong>Add to Home screen&lt;/strong> in their mobile devices.&lt;/p>
-&lt;p>&lt;strong>Note:&lt;/strong> Please ensure you have the latest version of operating system installed on your device to ensure full functionality.&lt;/p>
-&lt;h3 id="android">Android&lt;/h3>
-&lt;p>The primary method for android users to install the PWA onto their device is by:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>On the platform login screen, you will be prompted to install the PWA by clicking on the &lt;strong>Add &lt;em>[Business Name]&lt;/em>&lt;/strong> &lt;strong>to Home screen&lt;/strong>. In the prompt box that appears, click on &lt;strong>Install&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android1.jpg" alt="Android PWA Add to Home screen">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Following this, you will receive an on screen notification stating that the PWA was &lt;strong>Added to Home screen.&lt;/strong> A shortcut icon with your brand image will also show amongst the device&amp;rsquo;s installed applications.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android2.jpg" alt="PWA android notification">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Once you click on the PWA icon to access your Kianda workspace, you will be presented with your custom loading screen with your chosen brand image, name and theme colour. Shortly afterwards, you will be prompted to login to your account which will grant you access to the workspace.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-android3.jpg" alt="PWA android access">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>Optionally users can manually install it by following the steps:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click &lt;img src="https://docs.kianda.com/images/android-nav.png" alt="1567866702202"> then tap on &lt;strong>Add to Home screen&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>On the confirm dialog tap &lt;strong>Add&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="ios">iOS&lt;/h3>
-&lt;p>iOS users are not yet automatically prompted to install PWA&amp;rsquo;s but it is something that can also very quickly be done by iOS users.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Navigate to &lt;em>&lt;strong>https://&amp;lt;businessName&amp;gt;.kianda.com&lt;/strong>&lt;/em> via your chosen web browser application.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-ios1.jpg" alt="iOS PWA Navigate to business domain">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Tap the action button &lt;img src="https://docs.kianda.com/images/ios-action.png" alt="1567867653481"> then tap &lt;strong>Add to Home screen&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-ios2.jpg" alt="iOS PWA Add to Home screen">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>On the Add to Home Screen, tap &lt;strong>Add&lt;/strong>. Once you click on the PWA icon to access your Kianda workspace, you will be presented with your custom loading screen with your chosen brand image, name and theme colour. Shortly afterwards, you will be prompted to login to your account which will grant you access to the workspace.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/pwa-ios3.jpg" alt="PWA iOS logging in using app">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>To continue with low-code development, return to &lt;a href="https://docs.kianda.com/docs/low-code/">Low-code development&lt;/a>. If you would like to learn more about ‘no-code versus low-code’ in general, see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code/">What is no-code?&lt;/a> and &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low-code?&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;/ul></description></item></channel></rss>
