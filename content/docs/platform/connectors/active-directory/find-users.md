@@ -8,7 +8,7 @@ The **Find Users** remote procedure allows you to look for a user within your di
 
 ## When to use
 
-Having an AD connector will allow you to access information that is stored there within your Kianda subscription. You will be able to use **User** related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the [Data](/docs/platform/rules/data/) rules that are predefined within Kianda.
+Having an AD connector will allow you to access information that is stored  within your Kianda subscription. You will be able to use **User** related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the [Data](/docs/platform/rules/data/) rules that are predefined within Kianda.
 
 ## Before you get started
 
