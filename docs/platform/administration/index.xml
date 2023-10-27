@@ -182,18 +182,18 @@
 &lt;h2 id="subscription-details">Subscription Details&lt;/h2>
 &lt;p>General settings include details like your company name, subscription ID, renewal date and business identity (your workspace URL, for example, green-itr.kianda.com). You can also enable a Global SMTP Mail Connector to enable email flow to/from your Kianda workspace.&lt;/p>
 &lt;p>Within general settings, administrators can set who the Global Administrator is, or the main administrator for the workspace.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/company-details.jpg" alt="Subscription details" style="zoom:80%;" />
+&lt;p>&lt;img src="https://docs.kianda.com/images/subscription-details2.png" alt="Subscription details">&lt;/p>
 &lt;h3 id="company-details">Company details&lt;/h3>
-&lt;p>in this section you can make the following changes:&lt;/p>
+&lt;p>In this section you can make the following changes:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Company Name&lt;/strong> - add in your company name.&lt;/li>
 &lt;li>&lt;strong>Business identity&lt;/strong> - the business identity for your company workspace is automatically added in.&lt;/li>
 &lt;li>&lt;strong>Country&lt;/strong> - choose a country from the drop-down list.&lt;/li>
-&lt;li>&lt;strong>City&lt;/strong> - choose a city from the drop-down list.&lt;/li>
+&lt;li>&lt;strong>City&lt;/strong> - enter a city into the text field&lt;/li>
 &lt;li>&lt;strong>Address&lt;/strong> - add in your company address.&lt;/li>
 &lt;li>&lt;strong>Renewal date&lt;/strong> - your subscription renewal date is automatically added in.&lt;/li>
 &lt;li>&lt;strong>Subscription Id&lt;/strong> - your company subscription identity is automatically generated. This is needed when you need to perform authorisation to use Instance API.&lt;/li>
-&lt;li>&lt;strong>Address&lt;/strong> - add in your company address.&lt;/li>
+&lt;li>&lt;strong>Plan Id&lt;/strong> - your plan Id is automatically added in. For example free, premium and enterprise.&lt;/li>
 &lt;/ul>
 &lt;h3 id="general-settings">General settings&lt;/h3>
 &lt;p>In this section you can make the following changes:&lt;/p>
@@ -202,7 +202,14 @@
 &lt;p>&lt;strong>Enable Global SMTP Mail Connector&lt;/strong> - click on &lt;strong>Yes&lt;/strong> to set a global Simple Mail Transfer Protocol (SMTP) connector used to send emails.&lt;/p>
 &lt;p>The global connector will ignore all other connectors and will no longer use &lt;a href="mailto:no-reply@kianda.com">no-reply@kianda.com&lt;/a> as a sender. To enable this you must have an email connector set up in advance. To learn more about email connectors go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/">Email connector&lt;/a>.&lt;/p>
 &lt;p>In addition you can choose &lt;strong>Yes&lt;/strong> for &lt;strong>Enable save to Sent Items&lt;/strong> so that sent email are automatically saved in a &amp;lsquo;Sent items folder&amp;rsquo;.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/global-smtp-email-connector.jpg" alt="Enabling Global SMTP Mail Connector">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/general-settings.png" alt="Enabling Global SMTP Mail Connector">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Show administration menu on top menu?&lt;/strong> - selecting &amp;lsquo;Yes&amp;rsquo; positions the administration menu on the top right toolbar beside the My profile section, and is then removed from the left hand navigational pane.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/new-admin-menu.png" alt="new admin menu" style="zoom:80%;" />
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Load widgets offline first?&lt;/strong> - selecting &amp;lsquo;Yes&amp;rsquo; will prompt the platform to load widgets in offline mode first. This is an optional flag that enables dashboard and process widgets to be loaded faster from the offline cache. It can be useful if you consistently interact with your environment when you are in areas of poor network connectivity.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Global Administrator&lt;/strong> - change the global administrator of your company&amp;rsquo;s Kianda platform from the list of users that are in it.&lt;/p>
