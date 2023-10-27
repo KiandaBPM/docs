@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\static
 
 The **Administration** menu contains all the functions you need to maintain your Kianda workspace.
 
-The menu is found in the left-hand side pane when you log in to Kianda. This menu will only appear if you have a certain role, for example **Administrators** will see all items shown in the image below.
+The menu is found in the left-hand side pane when you log in to Kianda, or on the top right toolbar depending on the chosen orientation. This menu will only appear if you have a certain role, for example **Administrators** will see all items shown in the image below.
 
 ![Administration menu](/images/admin-view-new.jpg)
 

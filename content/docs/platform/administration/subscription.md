@@ -168,20 +168,20 @@ General settings include details like your company name, subscription ID, renewa
 
 Within general settings, administrators can set who the Global Administrator is, or the main administrator for the workspace.
 
-<img src="/images/company-details.jpg" alt="Subscription details" style="zoom:80%;" />
+![Subscription details](/images/subscription-details2.png)
 
 ### Company details
 
-in this section you can make the following changes:
+In this section you can make the following changes:
 
 - **Company Name** - add in your company name.
 - **Business identity** - the business identity for your company workspace is automatically added in. 
 - **Country** - choose a country from the drop-down list.
-- **City** - choose a city from the drop-down list.
+- **City** - enter a city into the text field
 - **Address** - add in your company address.
 - **Renewal date** - your subscription renewal date is automatically added in.
 - **Subscription Id** - your company subscription identity is automatically generated. This is needed when you need to perform authorisation to use Instance API.
-- **Address** - add in your company address.
+- **Plan Id** - your plan Id is automatically added in. For example free, premium and enterprise.
 
 
 
@@ -195,7 +195,13 @@ In this section you can make the following changes:
 
   In addition you can choose **Yes** for **Enable save to Sent Items** so that sent email are automatically saved in a 'Sent items folder'.
 
-  ![Enabling Global SMTP Mail Connector](/images/global-smtp-email-connector.jpg)
+  ![Enabling Global SMTP Mail Connector](/images/general-settings.png)
+
+- **Show administration menu on top menu?** - selecting 'Yes' positions the administration menu on the top right toolbar beside the My profile section, and is then removed from the left hand navigational pane.
+
+  <img src="/images/new-admin-menu.png" alt="new admin menu" style="zoom:80%;" />
+
+- **Load widgets offline first?** - selecting 'Yes' will prompt the platform to load widgets in offline mode first. This is an optional flag that enables dashboard and process widgets to be loaded faster from the offline cache. It can be useful if you consistently interact with your environment when you are in areas of poor network connectivity.
 
 - **Global Administrator** - change the global administrator of your company's Kianda platform from the list of users that are in it.
 
