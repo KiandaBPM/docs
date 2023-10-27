@@ -83,7 +83,7 @@ To add a **Filter widget** to a dashboard:
 
 5. Click on **OK** when you've completed the **Add widget** dialog box. A **Filter settings** dialog will open automatically:
 
-   ![filter widget settings](/images/filter-widget-settings.jpg)
+   ![filter widget settings](/images/filter-widget-settings2.png)
 
 
 
@@ -97,15 +97,15 @@ To add a **Filter widget** to a dashboard:
 
    - **Manual entries** - this option will provide you a text box in which you can specify your filter options. Each option needs to be on a separate line of the text box, see image below:
 
-     ![manual entries filter option](/images/filter-widget-manualjpg.jpg)
+     ![manual entries filter option](/images/filter-widget-manualjpg2.png)
 
      Your filter will display filter options in a different manner depending on the style you choose: **Dropdown** or **Radio list**. Dropdown list displays one additional setting (explained below).
 
-     ![Dropdown vs Radio list filter](/images/dropdown-radio-lists-filter.jpg)
+     ![Dropdown vs Radio list filter](/images/dropdown-radio-lists-filter2.PNG)
 
    - **Data source** - once you select this option, additional settings will appear:
 
-     ![datasource entries](/images/filter-widget-datasource.jpg)
+     ![datasource entries](/images/filter-widget-datasource2.png)
 
      - **Datasource button** - this button will allow you to connect to datasource which will allow you to pull the filter options. For example, you can connect to a SharePoint list that contains all your filter options or any other datasource that has been created within your system. See [Data connectors](/docs/platform/connectors/) for a full list of datasources you can create.
 
@@ -113,7 +113,7 @@ To add a **Filter widget** to a dashboard:
 
      - **Display field  & Value field** - **Display field** will be the option **visible** to the user while the **Value field** will be the **actual value** when the option is selected. For example, if you are pulling your filter options form a SharePoint list which has multiple columns, you can select one of those columns to be displayed for the user and use another column for the value. To further extend the example, you could have the **display field** set to a **username (title)** and in the background pull the users **role as the value.**
 
-       ![Display and value fields](/images/display-value-fields.jpg)
+       ![Display and value fields](/images/display-value-fields2.png)
 
 4. If you choose to create **Dropdown list** filter, an additional option in the settings will be required to fill out:
 
@@ -121,9 +121,17 @@ To add a **Filter widget** to a dashboard:
 
 5. You can set a default value of your filter by typing one of your options into the **Default value** text box. This means that whenever your dashboard is loaded, the text you enter in the **Default value** will be automatically set as the default option.
 
-6. **Enable query string** - check this checkbox if you wish to include a query string when filtering data. When enabled, an additional textbox will appear under the Default value textbox: ![filter connection](/images/filter-query-strings.jpg) Type the name of your parameter into the textbox provided (where the place holder says "Parameter name").  Check the Auto update URL checkbox to allow the URL be updated automatically when you select an option. To learn more about query strings within Kianda, visit [Query Strings](/docs/platform/pages/querystrings/) and for an additional example of query strings within the Filter widget, visit [Filter Widget Query Strings](/docs/platform/pages/querystrings/#filter-widget-query-strings).
+6. **Enable query string** - check this checkbox if you wish to include a query string when filtering data. When enabled, an additional textbox will appear under the Default value textbox:
 
-7. Click on **Add connection** to connect your filter to another dashboard widget which you want to target while filtering data based on the **option** selected.
+    ![filter connection](/images/filter-query-strings2.png) 
+
+   Type the name of your parameter into the textbox provided (where the place holder says "Parameter name").  Check the Auto update URL checkbox to allow the URL be updated automatically when you select an option. To learn more about query strings within Kianda, visit [Query Strings](/docs/platform/pages/querystrings/) and for an additional example of query strings within the Filter widget, visit [Filter Widget Query Strings](/docs/platform/pages/querystrings/#filter-widget-query-strings).
+
+7. **Control placeholder** - if you select **Dropdown list** as your filter type, an additional text field will appear called Control placeholder. The text entered here will appear as the placeholder text for your dropdown filter.
+
+   ![Filter placeholder text](/images/filter-placeholder-text.png)
+
+8. Click on **Add connection** to connect your filter to another dashboard widget which you want to target while filtering data based on the **option** selected.
 
    ![filter connection](/images/filter-connection.jpg)
 
@@ -137,7 +145,9 @@ To add a **Filter widget** to a dashboard:
 
      - The **left dropdown** is the value from the widget you're connecting to, while the **right most textbox** is the value chosen in the filter.
 
-8. Confirm your settings of the filter by clicking **OK** on all dialog boxes and click on save dashboard button to see all changes to the filter widget.![save dashboard button](/images/save-dashboard.jpg)
+9. Confirm your settings of the filter by clicking **OK** on all dialog boxes and click on save dashboard button to see all changes to the filter widget.
+
+   ![save dashboard button](/images/save-dashboard.jpg)
 
 ### How to create a Date range filter
 
@@ -167,7 +177,9 @@ To add a **Filter widget** to a dashboard:
 
       ![Date range example](/images/date-range-example.jpg)
 
-5. Confirm your settings of the filter by clicking **OK** on all dialog boxes and click on save dashboard button to see all changes to the date filter widget.![save dashboard button](/images/save-dashboard.jpg)
+5. Confirm your settings of the filter by clicking **OK** on all dialog boxes and click on save dashboard button to see all changes to the date filter widget.
+
+   ![save dashboard button](/images/save-dashboard.jpg)
 
 ### How to create Free text filter
 
@@ -179,7 +191,11 @@ To add a **Filter widget** to a dashboard:
 
    ![save dashboard button](/images/free-text-filter-placeholder.jpg)
 
-4. **Enable query string** - check this checkbox if you wish to include a query string when filtering data. When enabled, an additional textbox will appear under the Default value textbox: ![filter connection](/images/free-text-querystring.jpg) Type the name of your parameter into the textbox provided (where the place holder says "Parameter name").  Check the **Auto update URL** checkbox to allow the URL be updated automatically when you select an option. To learn more about query strings within Kianda, visit [Query Strings](/docs/platform/pages/querystrings/) and for an additional example of query strings within the Filter widget, visit [Filter Widget Query Strings](/docs/platform/pages/querystrings/#filter-widget-query-strings).
+4. **Enable query string** - check this checkbox if you wish to include a query string when filtering data. When enabled, an additional textbox will appear under the Default value textbox: 
+
+   ![filter connection](/images/free-text-querystring.jpg) 
+
+   Type the name of your parameter into the textbox provided (where the place holder says "Parameter name").  Check the **Auto update URL** checkbox to allow the URL be updated automatically when you select an option. To learn more about query strings within Kianda, visit [Query Strings](/docs/platform/pages/querystrings/) and for an additional example of query strings within the Filter widget, visit [Filter Widget Query Strings](/docs/platform/pages/querystrings/#filter-widget-query-strings).
 
 5. Click on **Add connection** to connect your filter to another dashboard widget which you want to target while filtering data based on the **free text** provided by a user.
 
@@ -195,7 +211,9 @@ To add a **Filter widget** to a dashboard:
 
      The **left dropdown** is the value from the widget you're connecting to, while the **right most textbox** is the **free text value**.
 
-6. Confirm your settings of the filter by clicking **OK** on all dialog boxes and click on save dashboard button to see all changes to the filter widget.![save dashboard button](/images/save-dashboard.jpg)
+6. Confirm your settings of the filter by clicking **OK** on all dialog boxes and click on save dashboard button to see all changes to the filter widget.
+
+   ![save dashboard button](/images/save-dashboard.jpg)
 
 
 
@@ -223,7 +241,9 @@ To add a **Filter widget** to a dashboard:
 
      The **left dropdown** is the value from the widget you're connecting to, while the **right most textbox** is the **free text value**.
 
-5. Confirm your settings of the filter by clicking **OK** on all dialog boxes and click on save dashboard button to see all changes to the filter widget.![save dashboard button](/images/save-dashboard.jpg)
+5. Confirm your settings of the filter by clicking **OK** on all dialog boxes and click on save dashboard button to see all changes to the filter widget.
+
+   ![save dashboard button](/images/save-dashboard.jpg)
 
 
 
