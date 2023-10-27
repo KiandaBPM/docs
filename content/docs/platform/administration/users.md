@@ -70,7 +70,7 @@ A single license is used by each individual active user within your platform, fo
 
 1. Click on the **name** of a user and the user details appear.
 
-   ![User details view](/images/user-profile2.png)
+   ![User details view](/images/user-profile3.png)
 
 2. In the details box you can edit a user's:
 
@@ -93,6 +93,12 @@ A single license is used by each individual active user within your platform, fo
    - **Profile picture URL** - click on **Browse** to browse for a profile picture on a laptop or network drive to add a profile photo for the user.
    - **Profile properties** - click on this option to see additional properties that you can define, see [Modify profile attributes](#modify-profile-attributes).
    - **Group membership** - click on this option to see the groups that a user is added to. Click on the red x button  ![Red x](/images/redx.jpg) to remove a user from a group. 
+
+   As well as this, you can view:
+
+   * **User Id** - this string is useful for applying user security and for low code development applications.
+
+   * **Last Active** - the date and time that this user was last active within the platform.
 
 3. When you are finished editing a user's details, click on **OK**, or click on **Close** to exit the dialog box. 
 
@@ -199,21 +205,22 @@ From this main view you can:
 ### Viewing and editing group details
 
 1. Click on the **group name** in the main view to see details for a group.
+
 2. The **Edit group 'Name'** dialog box appears. 
 
-![Edit group dialog box](/images/edit-group.jpg)
+   ![Edit group dialog box](/images/edit-group2.png)
 
 3. In this dialog box you can edit:
 
    - **Group name** - the name of the group
 
-   - **Primary role** - the primary role of the group
+   - **Primary role** - the primary role of the group. You can learn more about them [here](#view-and-edit-existing-user-details).
 
    - **Group member sync** - options are **No** or **Yes**. By choosing **Yes** this allows synchronisation of the Kianda group with Active Directory or other databases connected to Kianda as data sources. As a result of choosing Yes, other parameters appear:
 
      - **Create new user account** - If switched on new user accounts will be created for any users that are listed in the data source but not present in Kianda.
 
-       ![Group member synch](/images/group-sync2.png)
+       ![Group member synch](/images/group-sync3.png)
 
      - **Override group members** - choose from **No** or **Yes**. By choosing **Yes**, a full synchronisation is enabled between the Kianda group and the data source of users. Any users that are not listed in the data source, will be removed from this group in Kianda.
 
@@ -222,13 +229,19 @@ From this main view you can:
      - **Group name** - choose a name for the group if desired.
 
      - **Auto disable previously imported users that are missing on re-import** - choose from **No** or **Yes**. By choosing **Yes**, any previously imported users that no longer exist in the data source, will be disabled in Kianda when re-synchronisation is executed. Their account will still exist in the system, but they will no longer be able to login to Kianda. 
-     
-	  - **Auto remove previously imported users that are missing on re-import** - choose from **No** or **Yes**. By choosing **Yes**, any previously imported users that no longer exist in the data source, will be removed from Kianda when re-synchronisation is executed. They will no longer be able to login to Kianda as their account will be removed from the system. 
-     
+
+     - **Auto remove previously imported users that are missing on re-import** - choose from **No** or **Yes**. By choosing **Yes**, any previously imported users that no longer exist in the data source, will be removed from Kianda when re-synchronisation is executed. They will no longer be able to login to Kianda as their account will be removed from the system. 
+
        Note: When a group is synchronised, a **scheduled task** is created to import users from the data source group every one hour by default. This can be changed by going to **Administration** > **Scheduled tasks**. Go to [Scheduled tasks](/docs/platform/administration/scheduledtasks/) to find out more about different schedules.
-     
+
    - **Group administrators** - only **Users** or **Groups** listed here can manage the group; if you leave the field blank then Kianda administrators can manage the group.
-   
+
+   As well as this, you can view:
+
+   * **Group Id** - this string is useful for applying group security and for low code development applications.
+
+   * **Member Count** - the amount of current members within this group.
+
    
 
 ### Deleting groups
