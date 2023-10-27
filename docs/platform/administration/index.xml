@@ -520,7 +520,7 @@
 &lt;ol>
 &lt;li>
 &lt;p>Click on the &lt;strong>name&lt;/strong> of a user and the user details appear.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/user-profile2.png" alt="User details view">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-profile3.png" alt="User details view">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the details box you can edit a user&amp;rsquo;s:&lt;/p>
@@ -554,6 +554,15 @@
 &lt;li>&lt;strong>Profile picture URL&lt;/strong> - click on &lt;strong>Browse&lt;/strong> to browse for a profile picture on a laptop or network drive to add a profile photo for the user.&lt;/li>
 &lt;li>&lt;strong>Profile properties&lt;/strong> - click on this option to see additional properties that you can define, see &lt;a href="#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>Group membership&lt;/strong> - click on this option to see the groups that a user is added to. Click on the red x button &lt;img src="https://docs.kianda.com/images/redx.jpg" alt="Red x"> to remove a user from a group.&lt;/li>
+&lt;/ul>
+&lt;p>As well as this, you can view:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>User Id&lt;/strong> - this string is useful for applying user security and for low code development applications.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Last Active&lt;/strong> - the date and time that this user was last active within the platform.&lt;/p>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -649,11 +658,13 @@
 &lt;/ol>
 &lt;h3 id="viewing-and-editing-group-details">Viewing and editing group details&lt;/h3>
 &lt;ol>
-&lt;li>Click on the &lt;strong>group name&lt;/strong> in the main view to see details for a group.&lt;/li>
-&lt;li>The &lt;strong>Edit group &amp;lsquo;Name&amp;rsquo;&lt;/strong> dialog box appears.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/edit-group.jpg" alt="Edit group dialog box">&lt;/p>
-&lt;ol start="3">
+&lt;li>
+&lt;p>Click on the &lt;strong>group name&lt;/strong> in the main view to see details for a group.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Edit group &amp;lsquo;Name&amp;rsquo;&lt;/strong> dialog box appears.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/edit-group2.png" alt="Edit group dialog box">&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>In this dialog box you can edit:&lt;/p>
 &lt;ul>
@@ -661,14 +672,14 @@
 &lt;p>&lt;strong>Group name&lt;/strong> - the name of the group&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Primary role&lt;/strong> - the primary role of the group&lt;/p>
+&lt;p>&lt;strong>Primary role&lt;/strong> - the primary role of the group. You can learn more about them &lt;a href="#view-and-edit-existing-user-details">here&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Group member sync&lt;/strong> - options are &lt;strong>No&lt;/strong> or &lt;strong>Yes&lt;/strong>. By choosing &lt;strong>Yes&lt;/strong> this allows synchronisation of the Kianda group with Active Directory or other databases connected to Kianda as data sources. As a result of choosing Yes, other parameters appear:&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Create new user account&lt;/strong> - If switched on new user accounts will be created for any users that are listed in the data source but not present in Kianda.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/group-sync2.png" alt="Group member synch">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/group-sync3.png" alt="Group member synch">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Override group members&lt;/strong> - choose from &lt;strong>No&lt;/strong> or &lt;strong>Yes&lt;/strong>. By choosing &lt;strong>Yes&lt;/strong>, a full synchronisation is enabled between the Kianda group and the data source of users. Any users that are not listed in the data source, will be removed from this group in Kianda.&lt;/p>
@@ -684,12 +695,21 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Auto remove previously imported users that are missing on re-import&lt;/strong> - choose from &lt;strong>No&lt;/strong> or &lt;strong>Yes&lt;/strong>. By choosing &lt;strong>Yes&lt;/strong>, any previously imported users that no longer exist in the data source, will be removed from Kianda when re-synchronisation is executed. They will no longer be able to login to Kianda as their account will be removed from the system.&lt;/p>
+&lt;p>Note: When a group is synchronised, a &lt;strong>scheduled task&lt;/strong> is created to import users from the data source group every one hour by default. This can be changed by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Scheduled tasks&lt;/strong>. Go to &lt;a href="https://docs.kianda.com/docs/platform/administration/scheduledtasks/">Scheduled tasks&lt;/a> to find out more about different schedules.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>Note: When a group is synchronised, a &lt;strong>scheduled task&lt;/strong> is created to import users from the data source group every one hour by default. This can be changed by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Scheduled tasks&lt;/strong>. Go to &lt;a href="https://docs.kianda.com/docs/platform/administration/scheduledtasks/">Scheduled tasks&lt;/a> to find out more about different schedules.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Group administrators&lt;/strong> - only &lt;strong>Users&lt;/strong> or &lt;strong>Groups&lt;/strong> listed here can manage the group; if you leave the field blank then Kianda administrators can manage the group.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>As well as this, you can view:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Group Id&lt;/strong> - this string is useful for applying group security and for low code development applications.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Member Count&lt;/strong> - the amount of current members within this group.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
