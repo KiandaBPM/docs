@@ -140,7 +140,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-example.jpg" alt="User alert example">&lt;/p>
 &lt;h2 id="user-profile">User profile&lt;/h2>
 &lt;p>The information found under User profile includes your name, email, role for example Administrator, and options to update your information.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/myaccount.png" alt="My account information">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/myaccount2.jpg" alt="My account information">&lt;/p>
 &lt;p>To update your information, you can:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -164,6 +164,10 @@
 &lt;/li>
 &lt;li>
 &lt;p>View the system version of Kianda, for example System version 2.11.3 as shown in the image above.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Clicking on the &lt;strong>Push notifications&lt;/strong> slider will enable push notifications to mobile devices and other devices where push notifications are applicable. For example, if you have a process that utilises an &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/user-alert/">Alert&lt;/a> rule, when push notifications are turned on, you will receive a notification similar to below.&lt;/p>
+&lt;img src="https://docs.kianda.com/images/push-notification-gif2.gif" alt="Push notifications gif" style="zoom:50%;" />
 &lt;/li>
 &lt;li>
 &lt;p>Collapse account information by clicking on the &lt;strong>User profile&lt;/strong> button &lt;img src="https://docs.kianda.com/images/userprofile.png" alt="User profile"> again.&lt;/p>

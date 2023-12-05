@@ -554,7 +554,7 @@
 &lt;p>&lt;strong>Alert title&lt;/strong> - select a field from the process to be the title or type one in.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Alert message&lt;/strong> - select a field from the process for the message of the alert or type one in.&lt;/p>
+&lt;p>&lt;strong>Alert message&lt;/strong> - select a field from the process for the message of the alert or type one in. &lt;em>Note: Maximum of 200 characters allowed in message.&lt;/em>&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Alert Status&lt;/strong> - choose from four different colours to be applied to the tile of the alert.&lt;/p>
