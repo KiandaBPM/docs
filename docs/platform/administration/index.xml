@@ -1,5 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Administration</title><link>https://docs.kianda.com/docs/platform/administration/</link><description>Recent content in Administration on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://docs.kianda.com/docs/platform/administration/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/platform/administration/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/designer/</guid><description>
-&lt;p>Kianda &lt;strong>Designer&lt;/strong> is available to administrators and those users with the role &lt;strong>Design business process&lt;/strong>. Designer is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer, you can create forms, add controls and add rules to create processes to work the way you want.&lt;/p>
+&lt;p>Kianda &lt;strong>Designer&lt;/strong> is available to administrators and those users with the role &lt;strong>Design business process&lt;/strong>. Designer is found in the left-hand side pane, or on the top right toolbar depending on the &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/#general-settings">chosen orientation&lt;/a>, under &lt;strong>Administration&lt;/strong>. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer, you can create forms, add controls and add rules to create processes to work the way you want.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>Using your Administration or Design business process role, start creating or editing a process so that Kianda Designer will open:&lt;/p>
 &lt;ol>
@@ -58,7 +58,7 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about Designer in detail and how to use the interface to create forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Subscription</title><link>https://docs.kianda.com/docs/platform/administration/subscription/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/subscription/</guid><description>
-&lt;p>The &lt;strong>Subscription&lt;/strong> function is available to &lt;strong>administrators&lt;/strong> and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. This function allows you to update the look and feel of your workspace, set regional, mobile and single sign-on settings and design the login page.&lt;/p>
+&lt;p>The &lt;strong>Subscription&lt;/strong> function is available to &lt;strong>administrators&lt;/strong> and is found in the left-hand side pane or on the top right toolbar depending on the &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/#general-settings">chosen orientation&lt;/a>, under &lt;strong>Administration&lt;/strong>. This function allows you to update the look and feel of your workspace, set regional, mobile and single sign-on settings and design the login page.&lt;/p>
 &lt;p>For &lt;strong>developers&lt;/strong> who wish to &lt;strong>customise and style&lt;/strong> their Kianda workspace and processes, there are options to support you in achieving a high level of design that is instantly recognisable for users. These options include creating a &lt;strong>custom branding style&lt;/strong>, customised &lt;strong>login page&lt;/strong> and option to control how your platform will look on &lt;strong>mobile devices&lt;/strong>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To view, use the Subscription function as an administrator:&lt;/p>
@@ -235,7 +235,7 @@
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Data sources</title><link>https://docs.kianda.com/docs/platform/administration/datasources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/datasources/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Data sources&lt;/strong> function is available to administrators and those users with the role &lt;strong>Manage datasources&lt;/strong>. Data sources is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The data sources function allows you to connect your processes to external data sources like SharePoint, Salesforce or SAP.&lt;/p>
+&lt;p>The &lt;strong>Data sources&lt;/strong> function is available to administrators and those users with the role &lt;strong>Manage datasources&lt;/strong>. Data sources is found in the left-hand side pane, or on the top right toolbar depending on the &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/#general-settings">chosen orientation&lt;/a>, under &lt;strong>Administration&lt;/strong>. The data sources function allows you to connect your processes to external data sources like SharePoint, Salesforce or SAP.&lt;/p>
 &lt;p>Connecting your data sources in this way allows real-time scalability, so as your organisation and data grows, the processes created in Kianda will continue to operate with these data sources, providing sustainable, flexible growth.&lt;/p>
 &lt;p>Kianda comes with 19 predefined &lt;strong>data connectors&lt;/strong> allowing you to connect to these data sources. These are listed below:&lt;/p>
 &lt;ul>
@@ -350,7 +350,7 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about data connectors and how to use them, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data Connectors&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Scheduled tasks</title><link>https://docs.kianda.com/docs/platform/administration/scheduledtasks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/scheduledtasks/</guid><description>
-&lt;p>The &lt;strong>Scheduled tasks&lt;/strong> function is available to &lt;strong>administrators&lt;/strong> and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The Scheduled tasks function allows you to schedule a task, that could be a process or a rule for example to send reminder emails.&lt;/p>
+&lt;p>The &lt;strong>Scheduled tasks&lt;/strong> function is available to &lt;strong>administrators&lt;/strong> and is found in the left-hand side pane, or on the top right toolbar depending on the &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/#general-settings">chosen orientation&lt;/a>, under &lt;strong>Administration&lt;/strong>. The Scheduled tasks function allows you to schedule a task, that could be a process or a rule for example to send reminder emails.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To use the Scheduled tasks function:&lt;/p>
 &lt;ol>
@@ -441,7 +441,7 @@
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Recycle bin</title><link>https://docs.kianda.com/docs/platform/administration/recyclebin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/recyclebin/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Recycle bin&lt;/strong> function is available to &lt;strong>administrators&lt;/strong> and is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The recycle bin holds deleted process instances, dashboard pages and process designs. Deleted items are held for 30 days and are permanently deleted after this time.&lt;/p>
+&lt;p>The &lt;strong>Recycle bin&lt;/strong> function is available to &lt;strong>administrators&lt;/strong> and is found in the left-hand side pane, or on the top right toolbar depending on the &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/#general-settings">chosen orientation&lt;/a>, under &lt;strong>Administration&lt;/strong>. The recycle bin holds deleted process instances, dashboard pages and process designs. Deleted items are held for 30 days and are permanently deleted after this time.&lt;/p>
 &lt;h3 id="how-to-get-started">How to get started&lt;/h3>
 &lt;p>To view items in the Recycle bin:&lt;/p>
 &lt;ol>
@@ -480,7 +480,7 @@
 &lt;p>To read about other parts of the platform go to &lt;a href="https://docs.kianda.com/docs/platform/administration/">Administration&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Users &amp; Groups</title><link>https://docs.kianda.com/docs/platform/administration/users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/users/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Users&lt;/strong> function is available to users with the &lt;strong>Administrator&lt;/strong> role and is found in the left-hand side menu under &lt;strong>Administration&lt;/strong>. This function allows you to manage users and groups in your Kianda workspace.&lt;/p>
+&lt;p>The &lt;strong>Users&lt;/strong> function is available to users with the &lt;strong>Administrator&lt;/strong> role and is found in the left-hand side menu, or on the top right toolbar depending on the &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/#general-settings">chosen orientation&lt;/a>, under &lt;strong>Administration&lt;/strong>. This function allows you to manage users and groups in your Kianda workspace.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To access the &lt;strong>Users&lt;/strong> function:&lt;/p>
 &lt;ol>
@@ -768,7 +768,7 @@
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: B2B Portals</title><link>https://docs.kianda.com/docs/platform/administration/b2b-portals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/b2b-portals/</guid><description>
-&lt;p>&lt;strong>B2B Portals&lt;/strong> is available within the &lt;strong>Invite partners&lt;/strong> function and available to administrators and those users with the role &lt;strong>Manage partners&lt;/strong>. &lt;strong>Invite partners&lt;/strong> is found in the left-hand side pane, under &lt;strong>Administration&lt;/strong>. The function allows you to share business processes processes to select business partners as external links.&lt;/p>
+&lt;p>&lt;strong>B2B Portals&lt;/strong> is available within the &lt;strong>Invite partners&lt;/strong> function and available to administrators and those users with the role &lt;strong>Manage partners&lt;/strong>. &lt;strong>Invite partners&lt;/strong> is found in the left-hand side pane, or on the top right toolbar depending on the &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/#general-settings">chosen orientation&lt;/a>, under &lt;strong>Administration&lt;/strong>. The function allows you to share business processes processes to select business partners as external links.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To access B2B portals:&lt;/p>
 &lt;ol>
@@ -957,7 +957,7 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about creating process designs in Designer and how to use the interface to create forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
 &lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Developer</title><link>https://docs.kianda.com/docs/platform/administration/developer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/developer/</guid><description>
-&lt;p>Kianda &lt;strong>Developer&lt;/strong> is available to &lt;strong>administrators&lt;/strong> and those users with the role &lt;strong>Developer&lt;/strong>. The Developer function is found in the left-hand side pane or on the top right toolbar depending on the chosen orientation, under &lt;strong>Administration&lt;/strong>. The function allows you to create customised field, rule, dashboard and data connector widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.&lt;/p>
+&lt;p>Kianda &lt;strong>Developer&lt;/strong> is available to &lt;strong>administrators&lt;/strong> and those users with the role &lt;strong>Developer&lt;/strong>. The Developer function is found in the left-hand side pane or on the top right toolbar depending on the &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/#general-settings">chosen orientation&lt;/a>, under &lt;strong>Administration&lt;/strong>. The function allows you to create customised field, rule, dashboard and data connector widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.&lt;/p>
 &lt;p>You can also quickly use Kianda &lt;strong>Developer&lt;/strong> to add webhooks, providing an efficient way to push GET requests to other applications in real-time as the Kianda process(es) runs and avoiding the need to poll for data.&lt;/p>
 &lt;p>Kianda uses EmberJS to build widgets, and in particular the Handlebars templating library, to power the application&amp;rsquo;s user interface. See &lt;a href="#emberjs-templating-basics">templating basics&lt;/a> to get started.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -1018,13 +1018,13 @@
 &lt;p>In the &lt;strong>Widget&lt;/strong> pane you can:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>Edit the visual user interface of the widget via HTML and CSS by clicking on the &lt;strong>Widget UI&lt;/strong> code editor tab.&lt;/p>
+&lt;p>Edit the &lt;strong>visual user interface&lt;/strong> of the widget via HTML and CSS by clicking on the &lt;strong>Widget UI&lt;/strong> code editor tab.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Edit the logic of the widget via JavaScript and Ember.js by clicking on the &lt;strong>Widget Code&lt;/strong> code editor tab. As previously mentioned, you can find out more about widget construction on the &lt;a href="#emberjs-templating-basics">EmberJS templating basics&lt;/a> page.&lt;/p>
+&lt;p>Edit the &lt;strong>logic of the widget&lt;/strong> via JavaScript and Ember.js by clicking on the &lt;strong>Widget Code&lt;/strong> code editor tab. As previously mentioned, you can find out more about widget construction on the &lt;a href="#emberjs-templating-basics">EmberJS templating basics&lt;/a> page.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Tidy and nest the code correctly by clicking on the &lt;strong>Format&lt;/strong> button &lt;img src="https://docs.kianda.com/images/format-code-btn.jpg" alt="format button" style="zoom:80%;" />.&lt;/p>
+&lt;p>&lt;strong>Tidy and nest&lt;/strong> the code correctly by clicking on the &lt;strong>Format&lt;/strong> button &lt;img src="https://docs.kianda.com/images/format-code-btn.jpg" alt="format button" style="zoom:80%;" />.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Update existing Widget UI and Widget Code within the editor and then click on the &lt;strong>Update&lt;/strong> button &lt;img src="https://docs.kianda.com/images/update-button.jpg" alt="Update button">.&lt;/p>
@@ -1060,7 +1060,7 @@
 &lt;li>
 &lt;p>Move the slider across for each type of operation (Create, Update, Delete) to add in a URL to enable callback.&lt;/p>
 &lt;ul>
-&lt;li>For example for &lt;strong>Enable Deleted Callback&lt;/strong>, will enable the URL callback every time a process instance is updated.&lt;/li>
+&lt;li>For example, clicking the &lt;strong>Enable Deleted Callback&lt;/strong> slider will enable the URL callback every time a process instance is deleted.&lt;/li>
 &lt;/ul>
 &lt;ul>
 &lt;li>HTTP GET with parameters &lt;code>instanceID={instanceID}, processName={processName}&lt;/code> and &lt;code>eventType=deleted&lt;/code> will be issued to the provided URL.&lt;/li>
