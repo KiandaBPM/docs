@@ -4,7 +4,7 @@ weight: 3
 typora-root-url: ..\..\..\..\static
 ---
 
-The **Subscription** function is available to **administrators** and is found in the left-hand side pane, under **Administration**. This function allows you to update the look and feel of your workspace, set regional, mobile and single sign-on settings and design the login page. 
+The **Subscription** function is available to **administrators** and is found in the left-hand side pane or on the top right toolbar depending on the [chosen orientation](/docs/platform/administration/subscription/#general-settings), under **Administration**. This function allows you to update the look and feel of your workspace, set regional, mobile and single sign-on settings and design the login page. 
 
 For **developers** who wish to **customise and style** their Kianda workspace and processes, there are options to support you in achieving a high level of design that is instantly recognisable for users. These options include creating a **custom branding style**, customised **login page** and option to control how your platform will look on **mobile devices**. 
 

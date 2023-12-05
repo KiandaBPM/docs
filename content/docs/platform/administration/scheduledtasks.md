@@ -4,7 +4,7 @@ weight: 5
 typora-root-url: ..\..\..\..\static
 ---
 
-The **Scheduled tasks** function is available to **administrators** and is found in the left-hand side pane, under **Administration**. The Scheduled tasks function allows you to schedule a task, that could be a process or a rule for example to send reminder emails.
+The **Scheduled tasks** function is available to **administrators** and is found in the left-hand side pane, or on the top right toolbar depending on the [chosen orientation](/docs/platform/administration/subscription/#general-settings), under **Administration**. The Scheduled tasks function allows you to schedule a task, that could be a process or a rule for example to send reminder emails.
 
 ## How to get started
 

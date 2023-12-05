@@ -4,7 +4,7 @@ weight: 8
 typora-root-url: ..\..\..\..\static
 ---
 
-**B2B Portals** is available within the **Invite partners** function and available to administrators and those users with the role **Manage partners**. **Invite partners** is found in the left-hand side pane, under **Administration**. The function allows you to share business processes processes to select business partners as external links.
+**B2B Portals** is available within the **Invite partners** function and available to administrators and those users with the role **Manage partners**. **Invite partners** is found in the left-hand side pane, or on the top right toolbar depending on the [chosen orientation](/docs/platform/administration/subscription/#general-settings), under **Administration**. The function allows you to share business processes processes to select business partners as external links.
 
 ## How to get started
 

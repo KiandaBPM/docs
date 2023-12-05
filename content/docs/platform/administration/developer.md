@@ -4,7 +4,7 @@ weight: 9
 typora-root-url: ..\..\..\..\static
 ---
 
-Kianda **Developer** is available to **administrators** and those users with the role **Developer**. The Developer function is found in the left-hand side pane or on the top right toolbar depending on the chosen orientation, under **Administration**. The function allows you to create customised field, rule, dashboard and data connector widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.
+Kianda **Developer** is available to **administrators** and those users with the role **Developer**. The Developer function is found in the left-hand side pane or on the top right toolbar depending on the [chosen orientation](/docs/platform/administration/subscription/#general-settings), under **Administration**. The function allows you to create customised field, rule, dashboard and data connector widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.
 
 You can also quickly use Kianda **Developer** to add webhooks, providing an efficient way to push GET requests to other applications in real-time as the Kianda process(es) runs and avoiding the need to poll for data. 
 
@@ -64,10 +64,10 @@ To start using **Developer**:
 
    5. In the **Widget** pane you can:
 
-      * Edit the visual user interface of the widget via HTML and CSS by clicking on the **Widget UI** code editor tab.
-      * Edit the logic of the widget via JavaScript and Ember.js by clicking on the **Widget Code** code editor tab. As previously mentioned, you can find out more about widget construction on the  [EmberJS templating basics](#emberjs-templating-basics) page.
+      * Edit the **visual user interface** of the widget via HTML and CSS by clicking on the **Widget UI** code editor tab.
+      * Edit the **logic of the widget** via JavaScript and Ember.js by clicking on the **Widget Code** code editor tab. As previously mentioned, you can find out more about widget construction on the  [EmberJS templating basics](#emberjs-templating-basics) page.
 
-      * Tidy and nest the code correctly by clicking on the **Format** button <img src="/images/format-code-btn.jpg" alt="format button" style="zoom:80%;" />.
+      * **Tidy and nest** the code correctly by clicking on the **Format** button <img src="/images/format-code-btn.jpg" alt="format button" style="zoom:80%;" />.
 
       * Update existing Widget UI and Widget Code within the editor and then click on the **Update** button ![Update button](/images/update-button.jpg).
 
@@ -101,7 +101,7 @@ To start using **Developer**:
 
    2. Move the slider across for each type of operation (Create, Update, Delete) to add in a URL to enable callback. 
 
-      * For example for **Enable Deleted Callback**, will enable the URL callback every time a process instance is updated. 
+      * For example, clicking the **Enable Deleted Callback** slider will enable the URL callback every time a process instance is deleted. 
 
       - HTTP GET with parameters `instanceID={instanceID}, processName={processName}` and `eventType=deleted` will be issued to the provided URL.
       - When you are finished editing the dialog box click on **OK** or click on **Close** at any time to exit.

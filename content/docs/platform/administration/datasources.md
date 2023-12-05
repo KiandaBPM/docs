@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\static
 
 ## Introduction
 
-The **Data sources** function is available to administrators and those users with the role **Manage datasources**. Data sources is found in the left-hand side pane, under **Administration**. The data sources function allows you to connect your processes to external data sources like SharePoint, Salesforce or SAP. 
+The **Data sources** function is available to administrators and those users with the role **Manage datasources**. Data sources is found in the left-hand side pane, or on the top right toolbar depending on the [chosen orientation](/docs/platform/administration/subscription/#general-settings), under **Administration**. The data sources function allows you to connect your processes to external data sources like SharePoint, Salesforce or SAP. 
 
 Connecting your data sources in this way allows real-time scalability, so as your organisation and data grows, the processes created in Kianda will continue to operate with these data sources, providing sustainable, flexible growth.
 
