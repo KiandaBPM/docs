@@ -18,7 +18,7 @@ Clicking on the Reminder itself will bring the user to that form within the proc
 
 Depending on how you configure the alert, you can create an alert message which appears as a warning in a user's workspace as shown in the image below.
 
-![User alert warning](/../content/docs/user-alert-warning.jpg)
+![user alert warning](/images/user-alert-warning2.jpg)
 
 
 

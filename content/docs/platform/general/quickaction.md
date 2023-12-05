@@ -98,7 +98,7 @@ You will receive a configured message indicating the title of the notification a
 
 The information found under User profile includes your name, email, role for example Administrator, and options to update your information.
 
-![My account information](/images/myaccount.png)
+![My account information](/images/myaccount2.jpg)
 
 To update your information, you can:
 
@@ -122,7 +122,11 @@ To update your information, you can:
 
 6. View the system version of Kianda, for example System version 2.11.3 as shown in the image above.
 
-7. Collapse account information by clicking on the **User profile** button ![User profile](/images/userprofile.png) again. 
+7. Clicking on the **Push notifications** slider will enable push notifications to mobile devices and other devices where push notifications are applicable. For example, if you have a process that utilises an [Alert](/docs/platform/rules/communications/user-alert/) rule, when push notifications are turned on, you will receive a notification similar to below.
+
+   <img src="/images/push-notification-gif2.gif" alt="Push notifications gif" style="zoom:50%;" />
+
+8. Collapse account information by clicking on the **User profile** button ![User profile](/images/userprofile.png) again. 
 
 
 

@@ -46,7 +46,7 @@ You can add this rule:
 
 6. **Alert title** - select a field from the process to be the title or type one in.
 
-7. **Alert message** - select a field from the process for the message of the alert or type one in.
+7. **Alert message** - select a field from the process for the message of the alert or type one in. *Note: Maximum of 200 characters allowed in message.*
 
 8. **Alert Status** - choose from four different colours to be applied to the tile of the alert.
 

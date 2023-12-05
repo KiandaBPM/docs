@@ -18,7 +18,7 @@ To access the **Users** function:
 
 2. You can view any existing users and groups that have been created in the main view pane. 
 
-   ![Users main view](/images/user-main-view3.png)
+   ![Users main view](/images/user-main-view5.jpg)
 
    
 
@@ -30,23 +30,30 @@ To access the **Users** function:
 
 Existing users appear within this section, showing the **name** of the user, **email**, **role** and whether they are **active** or not in the system.  
 
-![User management main user view](/images/user-mgmt-view2.png)
+![User management main user view](/images/user-view.jpg)
 
 From this main view, you can:
 
-- [**view and edit** existing user details](#view-and-edit-existing-user-details)
-- [**create a new user**](#create-a-new-user)
-- [create new **profile attributes**](#modify-profile-attributes)
-- [bulk **import and export** users](#importing-and-exporting-users)
-- [**add and remove users** to/from groups](#groups)
+* [Add and remove **licenses**](#licenses)
+* [**View and edit** existing user details](#view-and-edit-existing-user-details)
+* [**Create a new user**](#create-a-new-user)
+* [Create new **profile attributes**](#modify-profile-attributes)
+* [Bulk **import and export** users](#importing-and-exporting-users)
+* [**Add and remove users** to/from groups](#groups)
 
 Click on each of the links above to read more about each function. In addition to the above administrative functions, you can also set passwords and delete users from this main view as follows:
 
 - To **reset a password** for a user, click on the **Reset password/key** button ![Reset password/key button](/images/reset-password.jpg) beside a user name. This will open the **reset password** dialog box where you can type in a new password for the user.
 
-![Reset password dialog box](/images/reset-password-box.jpg)
+  ![Reset password dialog box](/images/reset-password-box.jpg)
 
-​		When you are finished adding the new password, click on **OK**, or click on **Close** to exit the dialog box. 
+  When you are finished adding the new password, click on **OK**, or click on **Close** to exit the dialog box. 
+
+* To **view the user's platform history**, click on the **User History** button ![user history button](/images/user-history-btn.jpg) beside a user name. This will open up a dialog box displaying a list of all actions carried out by that user, as well as successful/unsuccessful login attempts, when an admin user changes what group they are in, and other useful information when debugging and auditing.
+
+  ![User history](/images/user-history-dialog.jpg)
+
+  As well as this, you can search the user's history by type or detail. Click on the **Close** button to return to the users and groups page.
 
 - To **delete an existing user**, click on the **Bin/Trash** button beside a user name. 
 
