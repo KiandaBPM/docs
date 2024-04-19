@@ -4,7 +4,7 @@ weight: 1
 typora-root-url: ..\..\..\static
 toc_hide: true
 hide_summary: true
-description: "Application design principles"
+description: "Low-code application design principles"
 ---
 
 {{% pageinfo color="primary" %}}
