@@ -1,5 +1,5 @@
 ---
-title: "Conditions"
+title: "Adding Conditions"
 typora-root-url: ..\..\..\..\..\static
 weight: 1
 ---

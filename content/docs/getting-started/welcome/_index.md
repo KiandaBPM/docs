@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Kianda"
+title: "Kianda Getting Started"
 weight: 1
 typora-root-url: ..\..\..\..\static
 ---
@@ -10,7 +10,7 @@ You can also use Kianda to make **dashboards** to monitor how your processes are
 
 The Kianda platform provides an ideal interface for **rapid prototyping** and delivering outcomes quickly. But don't just take our word for it, see what our customers have to say. In this video, one of our customers outlines how Kianda has benefited their organisation due to it being user friendly and how the platform's flexibility means their use of Kianda has expanded into more areas.
 
-***What is possible with Kianda: DEME example***
+***What is possible with Kianda: DEME Customer Success Story***
 
 <video width="100%" style="width:100%" controls>
     <source src="/videos/deme_narration.mp4">

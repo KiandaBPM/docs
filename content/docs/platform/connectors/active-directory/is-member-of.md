@@ -1,5 +1,5 @@
 ---
-title: "Active Directory"
+title: "Active Directory Connectors - Permissions"
 weight: 1
 typora-root-url: ..\..\..\..\static
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Kianda no-code development platform documentation"
+title: "Welcome to Kianda"
 linkTitle: "Documentation"
 menu:
   main:
@@ -8,7 +8,7 @@ type: "docs"
 typora-root-url: ..\..\static
 ---
 
-The Kianda platform is a modern **low-code** and **no-code** **development platform** providing citizen developers a modern way to digitise business **processes** and build no-code or low-code elegant mobile-ready web applications. You can also use the platform to create simple forms that can quickly evolve into an end-to-end process complete with multiple integrations task automation and real-time process monitoring. 
+The Kianda platform is a modern **low-code** and **no-code** **development platform** providing citizen developers an easy way to digitise business **processes** and build no-code or low-code elegant mobile-ready web applications. You can also use the platform to create simple forms that can quickly evolve into an end-to-end process complete with multiple integrations task automation and real-time process monitoring. 
 
 **Dashboards** enable an easy way to monitor how processes are performing and gain key insights to improve your business overall. As a citizen developer you can **customise** any components provided by the platform to best suit your needs. However if you have coding experience, you can use the platform to build your own widgets too. 
 

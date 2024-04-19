@@ -1,5 +1,5 @@
 ---
-title: "Active Directory"
+title: "Active Directory Connector - Find users"
 weight: 1
 typora-root-url: ..\..\..\..\..\static
 ---

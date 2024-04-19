@@ -1,5 +1,5 @@
 ---
-title: "Controls"
+title: "Getting Started - Controls"
 weight: 1
 typora-root-url: ..\..\..\..\..\static
 ---

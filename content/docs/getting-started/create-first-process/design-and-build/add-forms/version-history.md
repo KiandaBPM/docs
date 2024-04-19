@@ -1,5 +1,5 @@
 ---
-title: "Version history"
+title: "Getting Started - Version history"
 weight: 2
 typora-root-url: ..\..\..\..\..\..\static
 ---
