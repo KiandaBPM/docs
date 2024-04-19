@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Welcome to Kianda</title><link>https://docs.kianda.com/docs/</link><description>Recent content in Welcome to Kianda on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://docs.kianda.com/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Active Directory</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/create-user/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/create-user/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda no-code platform for business process automation – Welcome to Kianda</title><link>https://docs.kianda.com/docs/</link><description>Recent content in Welcome to Kianda on Kianda no-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: Active Directory Connector - Create user</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/create-user/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/create-user/</guid><description>
 &lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>Active Directory&lt;/strong> (&lt;strong>AD&lt;/strong>) also known as &lt;strong>Active Directory Domain Services&lt;/strong> (&lt;strong>AD DS&lt;/strong>). AD is a logical and hierarchical structured data store of objects which are mostly accounts. Accounts such as &lt;strong>Users, Computers, Groups&lt;/strong> and other objects such as &lt;strong>Printers&lt;/strong> or &lt;strong>Group Policy Objects&lt;/strong> (GPO). For example, you can store information about user accounts within an AD such as &lt;strong>Name, Password, Job title&lt;/strong> and &lt;strong>Permissions&lt;/strong>.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Having an AD connector will allow you to access information that is stored there within your Kianda subscription. You will be able to use &lt;strong>User&lt;/strong> related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda.&lt;/p>
@@ -79,7 +79,7 @@
 &lt;/ol>
 &lt;p>You can apply the create item rule to a button, for example, the submit button. This will result in a user being created in your AD whenever the submit button will be clicked.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Active Directory</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/find-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/find-users/</guid><description>
+&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Active Directory Connector - Find users</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/find-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/find-users/</guid><description>
 &lt;p>The &lt;strong>Find Users&lt;/strong> remote procedure allows you to look for a user within your directory by defining a user attribute as a means of searching for them.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Having an AD connector will allow you to access information that is stored within your Kianda subscription. You will be able to use &lt;strong>User&lt;/strong> related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda.&lt;/p>
@@ -159,7 +159,7 @@
 &lt;/ol>
 &lt;p>You can apply the create item rule to a button, for example, the submit button. This will result in a user being created in your AD whenever the submit button will be clicked.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Active Directory</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/is-member-of/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/is-member-of/</guid><description>
+&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Active Directory Connector - Update user</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/update-user/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/update-user/</guid><description>
 &lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>Active Directory&lt;/strong> (&lt;strong>AD&lt;/strong>) also known as &lt;strong>Active Directory Domain Services&lt;/strong> (&lt;strong>AD DS&lt;/strong>). AD is a logical and hierarchical structured data store of objects which are mostly accounts. Accounts such as &lt;strong>Users, Computers, Groups&lt;/strong> and other objects such as &lt;strong>Printers&lt;/strong> or &lt;strong>Group Policy Objects&lt;/strong> (GPO). For example, you can store information about user accounts within an AD such as &lt;strong>Name, Password, Job title&lt;/strong> and &lt;strong>Permissions&lt;/strong>.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Having an AD connector will allow you to access information that is stored there within your Kianda subscription. You will be able to use &lt;strong>User&lt;/strong> related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda.&lt;/p>
@@ -240,7 +240,7 @@
 &lt;/ol>
 &lt;p>You can apply the create item rule to a button, for example, the submit button. This will result in a user being created in your AD whenever the submit button will be clicked.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Active Directory</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/update-user/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/update-user/</guid><description>
+&lt;p>Your &lt;strong>Active Directory connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Docs: Active Directory Connectors - Permissions</title><link>https://docs.kianda.com/docs/platform/connectors/active-directory/is-member-of/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/connectors/active-directory/is-member-of/</guid><description>
 &lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>Active Directory&lt;/strong> (&lt;strong>AD&lt;/strong>) also known as &lt;strong>Active Directory Domain Services&lt;/strong> (&lt;strong>AD DS&lt;/strong>). AD is a logical and hierarchical structured data store of objects which are mostly accounts. Accounts such as &lt;strong>Users, Computers, Groups&lt;/strong> and other objects such as &lt;strong>Printers&lt;/strong> or &lt;strong>Group Policy Objects&lt;/strong> (GPO). For example, you can store information about user accounts within an AD such as &lt;strong>Name, Password, Job title&lt;/strong> and &lt;strong>Permissions&lt;/strong>.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Having an AD connector will allow you to access information that is stored there within your Kianda subscription. You will be able to use &lt;strong>User&lt;/strong> related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data&lt;/a> rules that are predefined within Kianda.&lt;/p>
@@ -431,7 +431,52 @@
 &lt;p>The Add time to date rule is commonly used with the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/">Schedule a rule&lt;/a> rule to apply the specified time to a rule on a button, for example. This can be used like a clock to countdown to an event such as sending a reminder email.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Adding rules to a process</title><link>https://docs.kianda.com/docs/how-to/adding-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/adding-rules/</guid><description>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Adding Conditions</title><link>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</guid><description>
+&lt;p>Conditions are a key component of Kianda &lt;strong>rules&lt;/strong>. They are the &lt;strong>triggers&lt;/strong> that result in fully dynamic forms. Conditions enable you to create natural language conditions when rules should be triggered.&lt;/p>
+&lt;p>The &lt;strong>Conditions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/condition.png" alt="img"> is found within all &lt;strong>rules&lt;/strong> as well as &lt;a href="https://docs.kianda.com/docs/platform/pages/">dashboard widgets&lt;/a>. Conditions can also be set when setting data source security levels for &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">B2B portals&lt;/a>.&lt;/p>
+&lt;p>Conditions add an important level of interactivity, creating dynamic pathways within a process. These pathways could result from user interaction or from other events that happen.&lt;/p>
+&lt;p>Conditions work on the ‘if…then’ principle: ‘if’ the condition exists ‘then’ an action happens, and where applicable, if the condition does not exist, then another action can happen. You can use these principles as steps to implementing conditions:&lt;/p>
+&lt;ol>
+&lt;li>Create the &lt;strong>condition(s)&lt;/strong>&lt;/li>
+&lt;li>Create the &lt;strong>action(s)&lt;/strong> that will be applied as a result of the first condition being in place.&lt;/li>
+&lt;li>Where applicable, create the &lt;strong>otherwise action(s)&lt;/strong> based on other conditions being in place.&lt;/li>
+&lt;/ol>
+&lt;h2 id="create-the-condition">Create the condition&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>To create &lt;strong>conditions&lt;/strong>, first choose the &lt;strong>process element&lt;/strong> you want the condition to apply to – such as a form, set of forms, a field/control or set of fields. This could also be a set of common fields associated with all process instances, such as &lt;strong>Process ID&lt;/strong>, &lt;strong>Status&lt;/strong> or &lt;strong>Modified by&lt;/strong>, see image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/common-fields-in-condition.jpg" alt="Common fields used in the process element part of a condition">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Next, depending on whether the rule is applied to &lt;strong>text-based fields, date fields or user picker fields&lt;/strong>, choose from 13 text operators, 25 date operators and one additional user picker operator, as shown in the image below.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Then choose a &lt;strong>value&lt;/strong>, this could be typed in text, number(s), date(s), form(s) or field(s).&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;em>&lt;strong>Condition elements&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/condition-operators.jpg" alt="Condition elements">&lt;/p>
+&lt;p>In the case of &lt;strong>multiple conditions&lt;/strong>, you can use &lt;strong>And&lt;/strong> or &lt;strong>Or&lt;/strong> to create a group of compound conditions:&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/editconditions-1.gif" alt="img">&lt;/p>
+&lt;p>The result is a flexible process workflow that will result in desired actions based on any number of conditions.&lt;/p>
+&lt;h3 id="rule-actions--example-hide-or-disable-rule">Rule action(s) – example Hide or Disable rule&lt;/h3>
+&lt;p>To create &lt;strong>actions&lt;/strong> and where applicable, &lt;strong>otherwise actions&lt;/strong>, the &lt;strong>action will depend on the rule&lt;/strong> that is chosen. All Kianda rules use a natural language structure to make it is easy to apply actions. For example, for the &lt;strong>Workflow rule&lt;/strong>, &lt;strong>Hide or Disable&lt;/strong>, you can choose forms and fields from your process and then apply seven possible actions (as shown below).&lt;/p>
+&lt;p>&lt;strong>Action elements for Hide or Disable&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/hideoptions-1024x477.gif" alt="7 actions for Hide or Disable">&lt;/p>
+&lt;p>The actions within &lt;strong>Hide or disable&lt;/strong> are:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Hide&lt;/strong> will hide a process element (forms or fields) from view.&lt;/li>
+&lt;li>&lt;strong>Show&lt;/strong> will show the element.&lt;/li>
+&lt;li>&lt;strong>Disable&lt;/strong> blocks a user from editing an element.&lt;/li>
+&lt;li>&lt;strong>Enable&lt;/strong> allows a user to add a value to an element.&lt;/li>
+&lt;li>&lt;strong>Toggle visible&lt;/strong> will toggle between showing an element or not, based on subsequent clicks of a field that the rule is applied to.&lt;/li>
+&lt;li>&lt;strong>Toggle enable&lt;/strong> will toggle between allowing an element to be edited or not, based on subsequent clicks of a field that the rule is applied to.&lt;/li>
+&lt;li>&lt;strong>Hide and clear&lt;/strong> will allow you to hide a process element and clear the details. For example, if a toggle button has this rule applied, with an &lt;strong>otherwise action&lt;/strong> of &lt;strong>show&lt;/strong> on a textbox, then if one value is chosen on the toggle button, the user is allowed enter details into the textbox. The otherwise action is that the field is hidden and cleared of data, so that no data can be retrieved. This might be useful, for example, when sensitive information is used, like a social security number on a form.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Note&lt;/strong>: You can use rules to create &lt;strong>actions&lt;/strong> &lt;strong>without conditions&lt;/strong> too. In this case the rule will simply execute, for example when a form or field is clicked on.&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>Depending on how the rule is applied, for example to a &lt;strong>Submit&lt;/strong> button, the rule order is important to consider, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Adding rules to a process</title><link>https://docs.kianda.com/docs/how-to/adding-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/adding-rules/</guid><description>
 &lt;p>This video introduces Kianda rules and demonstrates how to add a Send email Communications rule to a form.&lt;/p>
 &lt;video width="100%" style="width:100%" controls>
 &lt;source src="https://docs.kianda.com/videos/rules.mp4">
@@ -504,52 +549,7 @@ Your browser does not support the video tag.
 &lt;li>In the &lt;strong>Header&lt;/strong> tab, scroll down to &lt;strong>authorisation&lt;/strong>. You can find your &lt;strong>Bearer&lt;/strong> token here.&lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To learn more about Kianda&amp;rsquo;s API go to &lt;a href="https://docs.kianda.com/docs/apis/instances/">Instance API&lt;/a>.&lt;/p></description></item><item><title>Docs: Conditions</title><link>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/general/add-conditions/</guid><description>
-&lt;p>Conditions are a key component of Kianda &lt;strong>rules&lt;/strong>. They are the &lt;strong>triggers&lt;/strong> that result in fully dynamic forms. Conditions enable you to create natural language conditions when rules should be triggered.&lt;/p>
-&lt;p>The &lt;strong>Conditions&lt;/strong> button &lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/condition.png" alt="img"> is found within all &lt;strong>rules&lt;/strong> as well as &lt;a href="https://docs.kianda.com/docs/platform/pages/">dashboard widgets&lt;/a>. Conditions can also be set when setting data source security levels for &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">B2B portals&lt;/a>.&lt;/p>
-&lt;p>Conditions add an important level of interactivity, creating dynamic pathways within a process. These pathways could result from user interaction or from other events that happen.&lt;/p>
-&lt;p>Conditions work on the ‘if…then’ principle: ‘if’ the condition exists ‘then’ an action happens, and where applicable, if the condition does not exist, then another action can happen. You can use these principles as steps to implementing conditions:&lt;/p>
-&lt;ol>
-&lt;li>Create the &lt;strong>condition(s)&lt;/strong>&lt;/li>
-&lt;li>Create the &lt;strong>action(s)&lt;/strong> that will be applied as a result of the first condition being in place.&lt;/li>
-&lt;li>Where applicable, create the &lt;strong>otherwise action(s)&lt;/strong> based on other conditions being in place.&lt;/li>
-&lt;/ol>
-&lt;h2 id="create-the-condition">Create the condition&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>To create &lt;strong>conditions&lt;/strong>, first choose the &lt;strong>process element&lt;/strong> you want the condition to apply to – such as a form, set of forms, a field/control or set of fields. This could also be a set of common fields associated with all process instances, such as &lt;strong>Process ID&lt;/strong>, &lt;strong>Status&lt;/strong> or &lt;strong>Modified by&lt;/strong>, see image below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/common-fields-in-condition.jpg" alt="Common fields used in the process element part of a condition">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Next, depending on whether the rule is applied to &lt;strong>text-based fields, date fields or user picker fields&lt;/strong>, choose from 13 text operators, 25 date operators and one additional user picker operator, as shown in the image below.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Then choose a &lt;strong>value&lt;/strong>, this could be typed in text, number(s), date(s), form(s) or field(s).&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;em>&lt;strong>Condition elements&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/condition-operators.jpg" alt="Condition elements">&lt;/p>
-&lt;p>In the case of &lt;strong>multiple conditions&lt;/strong>, you can use &lt;strong>And&lt;/strong> or &lt;strong>Or&lt;/strong> to create a group of compound conditions:&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/03/editconditions-1.gif" alt="img">&lt;/p>
-&lt;p>The result is a flexible process workflow that will result in desired actions based on any number of conditions.&lt;/p>
-&lt;h3 id="rule-actions--example-hide-or-disable-rule">Rule action(s) – example Hide or Disable rule&lt;/h3>
-&lt;p>To create &lt;strong>actions&lt;/strong> and where applicable, &lt;strong>otherwise actions&lt;/strong>, the &lt;strong>action will depend on the rule&lt;/strong> that is chosen. All Kianda rules use a natural language structure to make it is easy to apply actions. For example, for the &lt;strong>Workflow rule&lt;/strong>, &lt;strong>Hide or Disable&lt;/strong>, you can choose forms and fields from your process and then apply seven possible actions (as shown below).&lt;/p>
-&lt;p>&lt;strong>Action elements for Hide or Disable&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://academy.kianda.com/wp-content/uploads/2022/02/hideoptions-1024x477.gif" alt="7 actions for Hide or Disable">&lt;/p>
-&lt;p>The actions within &lt;strong>Hide or disable&lt;/strong> are:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Hide&lt;/strong> will hide a process element (forms or fields) from view.&lt;/li>
-&lt;li>&lt;strong>Show&lt;/strong> will show the element.&lt;/li>
-&lt;li>&lt;strong>Disable&lt;/strong> blocks a user from editing an element.&lt;/li>
-&lt;li>&lt;strong>Enable&lt;/strong> allows a user to add a value to an element.&lt;/li>
-&lt;li>&lt;strong>Toggle visible&lt;/strong> will toggle between showing an element or not, based on subsequent clicks of a field that the rule is applied to.&lt;/li>
-&lt;li>&lt;strong>Toggle enable&lt;/strong> will toggle between allowing an element to be edited or not, based on subsequent clicks of a field that the rule is applied to.&lt;/li>
-&lt;li>&lt;strong>Hide and clear&lt;/strong> will allow you to hide a process element and clear the details. For example, if a toggle button has this rule applied, with an &lt;strong>otherwise action&lt;/strong> of &lt;strong>show&lt;/strong> on a textbox, then if one value is chosen on the toggle button, the user is allowed enter details into the textbox. The otherwise action is that the field is hidden and cleared of data, so that no data can be retrieved. This might be useful, for example, when sensitive information is used, like a social security number on a form.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Note&lt;/strong>: You can use rules to create &lt;strong>actions&lt;/strong> &lt;strong>without conditions&lt;/strong> too. In this case the rule will simply execute, for example when a form or field is clicked on.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Depending on how the rule is applied, for example to a &lt;strong>Submit&lt;/strong> button, the rule order is important to consider, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about rule implementation, go to the main &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> page and then click on the links to the different rule categories.&lt;/p></description></item><item><title>Docs: Control properties</title><link>https://docs.kianda.com/docs/platform/controls/properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/properties/</guid><description>
+&lt;p>To learn more about Kianda&amp;rsquo;s API go to &lt;a href="https://docs.kianda.com/docs/apis/instances/">Instance API&lt;/a>.&lt;/p></description></item><item><title>Docs: Control properties</title><link>https://docs.kianda.com/docs/platform/controls/properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/controls/properties/</guid><description>
 &lt;p>Each process, form and control (field) will have the properties associated with it displayed in the right-hand pane of the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a> view.&lt;/p>
 &lt;h2 id="process-properties">Process properties&lt;/h2>
 &lt;p>When you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and then click on a process, you will see the &lt;strong>Process properties&lt;/strong> for that process in the right-hand pane.&lt;/p>
@@ -611,37 +611,6 @@ Your browser does not support the video tag.
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/layout/">Layout controls&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/custom/">Custom controls&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs: Controls</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/controls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/controls/</guid><description>
-&lt;p>&lt;strong>Controls&lt;/strong> are predefined field widgets that allow you to add specific elements to your forms and processes, such as buttons, lists, text boxes and tables. There are 16 different types of controls (fields) to choose from - see &lt;a href="#controls-list">Controls list&lt;/a>.&lt;/p>
-&lt;p>If you have developer skills, you can create your own custom field widget - see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome//low-code/#how-to-get-started-with-developer">Developer&lt;/a> for more information.&lt;/p>
-&lt;h2 id="getting-started-with-controls">Getting started with Controls&lt;/h2>
-&lt;p>If you go to &lt;strong>Side menu&lt;/strong> &amp;gt;&lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on an existing process or create a new process and then select a form within that process (so that the Edit form buttton - Pen icon - is visible), you will see the pre-defined &lt;strong>Controls&lt;/strong> options in the left-hand pane. If the Controls menu is collapsed, click on it to expand it.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Control categories&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/access-controlsmenu-select-form.jpg" alt="Form controls">&lt;/p>
-&lt;p>By default, there are three categories of fields:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Input&lt;/strong> - There are eight types of Input fields. They include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.&lt;/li>
-&lt;li>&lt;strong>Layout&lt;/strong> - There are four Layout fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields.&lt;/li>
-&lt;li>&lt;strong>Action&lt;/strong> - There are four Action fields that allow you to insert user interface actions like buttons, links or even signature components. By default, three buttons are automatically added to each new form created - Submit, Save and Close.&lt;/li>
-&lt;/ol>
-&lt;p>A fourth category, &lt;strong>Custom&lt;/strong> fields, exists if Kianda &lt;strong>Developer&lt;/strong> has been used to create custom field widgets - see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/#how-to-get-started-with-developer">Developer&lt;/a> for more details.&lt;/p>
-&lt;p>All fields will have edit options when you start creating the field, as well as &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties/#field-properties">field properties&lt;/a> that you can edit. Each field can also have &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/">rules&lt;/a> applied to it.&lt;/p>
-&lt;h2 id="controls-list">Controls list&lt;/h2>
-&lt;p>A full list of controls (fields) is shown here.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Control categories, with field names and purpose&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/fields-controls-list-table.jpg" alt="Form controls">&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To learn more about rules that can be applied to fields go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>.&lt;/p>
-&lt;p>To learn more about field properties, go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties/">&lt;strong>Field properties&lt;/strong>&lt;/a>.&lt;/p>
-&lt;h3 id="to-return-to-the-previous-pages-click-on-the-links-below--idea-iconimages10png">&lt;strong>To return to the previous pages click on the links below&lt;/strong> &lt;img src="https://docs.kianda.com/images/10.png" alt="Idea icon">&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works">&lt;strong>How Kianda works&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code">&lt;strong>What is no-code development&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">&lt;strong>Plan your process&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/">&lt;strong>Design and build your process&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/">&lt;strong>Add forms&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/">&lt;strong>Designer&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a>&lt;/strong>&lt;/li>
 &lt;/ul></description></item><item><title>Docs: Copy file</title><link>https://docs.kianda.com/docs/platform/rules/files/copy-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/files/copy-file/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Copy file&lt;/strong> rule allows you to &lt;strong>copy a file&lt;/strong> from one field in your form into another field in a different form. You can use this rule to copy files from &lt;strong>one datasource&lt;/strong> into &lt;strong>another&lt;/strong>, by using &lt;strong>different&lt;/strong> file fields for where you are copying &lt;strong>to&lt;/strong> and &lt;strong>from&lt;/strong>. For example if you want to copy a file from your &lt;strong>local file system&lt;/strong> to a &lt;strong>SharePoint&lt;/strong> location, set file fields for these locations, see gif below:&lt;/p>
@@ -973,7 +942,38 @@ Your browser does not support the video tag.
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: How does Kianda work?</title><link>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</guid><description>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Docs: Getting Started - Controls</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/controls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/controls/</guid><description>
+&lt;p>&lt;strong>Controls&lt;/strong> are predefined field widgets that allow you to add specific elements to your forms and processes, such as buttons, lists, text boxes and tables. There are 16 different types of controls (fields) to choose from - see &lt;a href="#controls-list">Controls list&lt;/a>.&lt;/p>
+&lt;p>If you have developer skills, you can create your own custom field widget - see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome//low-code/#how-to-get-started-with-developer">Developer&lt;/a> for more information.&lt;/p>
+&lt;h2 id="getting-started-with-controls">Getting started with Controls&lt;/h2>
+&lt;p>If you go to &lt;strong>Side menu&lt;/strong> &amp;gt;&lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on an existing process or create a new process and then select a form within that process (so that the Edit form buttton - Pen icon - is visible), you will see the pre-defined &lt;strong>Controls&lt;/strong> options in the left-hand pane. If the Controls menu is collapsed, click on it to expand it.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Control categories&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/access-controlsmenu-select-form.jpg" alt="Form controls">&lt;/p>
+&lt;p>By default, there are three categories of fields:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Input&lt;/strong> - There are eight types of Input fields. They include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.&lt;/li>
+&lt;li>&lt;strong>Layout&lt;/strong> - There are four Layout fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields.&lt;/li>
+&lt;li>&lt;strong>Action&lt;/strong> - There are four Action fields that allow you to insert user interface actions like buttons, links or even signature components. By default, three buttons are automatically added to each new form created - Submit, Save and Close.&lt;/li>
+&lt;/ol>
+&lt;p>A fourth category, &lt;strong>Custom&lt;/strong> fields, exists if Kianda &lt;strong>Developer&lt;/strong> has been used to create custom field widgets - see &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/#how-to-get-started-with-developer">Developer&lt;/a> for more details.&lt;/p>
+&lt;p>All fields will have edit options when you start creating the field, as well as &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties/#field-properties">field properties&lt;/a> that you can edit. Each field can also have &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/">rules&lt;/a> applied to it.&lt;/p>
+&lt;h2 id="controls-list">Controls list&lt;/h2>
+&lt;p>A full list of controls (fields) is shown here.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Control categories, with field names and purpose&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/fields-controls-list-table.jpg" alt="Form controls">&lt;/p>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To learn more about rules that can be applied to fields go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>To learn more about field properties, go to &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties/">&lt;strong>Field properties&lt;/strong>&lt;/a>.&lt;/p>
+&lt;h3 id="to-return-to-the-previous-pages-click-on-the-links-below--idea-iconimages10png">&lt;strong>To return to the previous pages click on the links below&lt;/strong> &lt;img src="https://docs.kianda.com/images/10.png" alt="Idea icon">&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works">&lt;strong>How Kianda works&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/welcome/no-code">&lt;strong>What is no-code development&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/">&lt;strong>Plan your process&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/">&lt;strong>Design and build your process&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/">&lt;strong>Add forms&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/">&lt;strong>Designer&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a>&lt;/strong>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: How does Kianda work?</title><link>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/welcome/how-kianda-works/</guid><description>
 &lt;p>The Kianda no-code / low-code (NCLC) platform has been created with the ultimate flexibility and agility in mind, allowing simple user interactions to build complex processes.&lt;/p>
 &lt;p>Kianda has been constructed using an &lt;strong>Model, View, Controller (MVC) approach&lt;/strong>. This approach allows designers to build mobile-responsive applications via &lt;strong>rapid User Interface (UI) prototyping&lt;/strong>. The UI provides an easy way to build an application by clicking, scrolling, and dragging and dropping fields. The layout both provides a way to build the application or process schema, and to capture and monitor data at run-time.&lt;/p>
 &lt;h2 id="whats-under-the-hood">What&amp;rsquo;s under the &amp;lsquo;hood&amp;rsquo;?&lt;/h2>
@@ -3334,7 +3334,47 @@ The Safety Team
 &lt;p>Other rules can be used in other ways to change process workflow and therefore how forms behave. For example using the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/assign-form/">Assign form rule&lt;/a> you can assign a form to a particular user, making them the form owner, and therefore giving them edit access to the form.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about form ownership go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owner&lt;/a>.
-To read more about quick actions, go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/">Form quick actions menu&lt;/a>.&lt;/p></description></item><item><title>Docs: How to create cascading dropdown lists</title><link>https://docs.kianda.com/docs/how-to/create-cascading-dropdown-lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/create-cascading-dropdown-lists/</guid><description>
+To read more about quick actions, go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-quick-action/">Form quick actions menu&lt;/a>.&lt;/p></description></item><item><title>Docs: Getting Started - Version history</title><link>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/version-history/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/version-history/</guid><description>
+&lt;p>The &lt;strong>current or active version&lt;/strong> of a process is always visible in the right-hand pane, for example V0.8 for the process as shown below.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Process version&lt;/strong>&lt;/em>&lt;img src="https://docs.kianda.com/images/Process_Version.jpg" alt="Process version history">&lt;/p>
+&lt;p>The &lt;strong>first version&lt;/strong> of a process is &lt;strong>0.1&lt;/strong> and will increment to 0.2 and so on, each time a process is saved. Once the process is &lt;strong>published&lt;/strong> the version changes to &lt;strong>1.0&lt;/strong> and increments with each publication. This makes it is easy to keep track of who made changes and when, and to restore an older version if needed.&lt;/p>
+&lt;p>The video below introduces version control and the section &lt;a href="#how-to-get-started">How to get started&lt;/a> runs through how to view process versions and restore an older version.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Version control&lt;/strong>&lt;/em>&lt;/p>
+&lt;video width="100%" style="width:100%" controls>
+&lt;source src="https://docs.kianda.com/videos/versioncontrol.mp4">
+Your browser does not support the video tag.
+&lt;/source>
+&lt;/video>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>To view the version history click on the &lt;strong>Design version history&lt;/strong> button which may look like V0.1 or whatever the current version is for your process, for example &lt;img src="https://docs.kianda.com/images/version1.png" alt="View design version history"> or &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version 0.8">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A pop-up shows the version history details including when the version was created and who created it.&lt;/p>
+&lt;p>In the example below, there are 8 versions of the process, all are &lt;strong>drafts&lt;/strong> indicated by the 0 in front, such as 0.8.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Version history&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/versions.png" alt="Version history details">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on a particular version to see the version information, for example forms, fields and rules that were added, modified or removed.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Version details&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/Version_History_Details.jpg" alt="Version details">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To restore an earlier version, click on the &lt;strong>Restore&lt;/strong> button &lt;img src="https://docs.kianda.com/images/restore.png" alt="Restore button"> beside a particular version and then click on &lt;strong>Ok&lt;/strong> to confirm that you want to restore to that version.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To learn more about adding different elements to your form go to &lt;strong>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a>&lt;/strong>.&lt;/p>
+&lt;h3 id="to-return-to-the-previous-pages-click-on-the-links-below--idea-iconimages10png">&lt;strong>To return to the previous pages click on the links below&lt;/strong> &lt;img src="https://docs.kianda.com/images/10.png" alt="Idea icon">&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/">&lt;strong>Design and build your process&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/">&lt;strong>Add forms&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-forms/designer/">&lt;strong>Designer&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/">&lt;strong>Add controls and rules&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/design-and-build/preview-your-process/">&lt;strong>Preview the design&lt;/strong>&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Docs: How to create cascading dropdown lists</title><link>https://docs.kianda.com/docs/how-to/create-cascading-dropdown-lists/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/how-to/create-cascading-dropdown-lists/</guid><description>
 &lt;div style="padding:50.84% 0 0 0;position:relative;">&lt;iframe src="https://player.vimeo.com/video/774319265?h=7f62c2d7f2&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="cascadinglists.mp4">
 &lt;p>Back to &lt;a href="../">How to videos&lt;/a>&lt;/p></description></item><item><title>Docs: Inspection Form</title><link>https://docs.kianda.com/docs/examples/inspection/inspect-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/examples/inspection/inspect-form/</guid><description>
 &lt;!-- The **Inspection Form** for this process will be used by an engineer from our **Request Form**. The engineer will have the ability to access and edit the form. When the engineer submits the **Inspection Form**, we will generate a word document, convert it to a PDF file and send it to our **Safety Manager** from our **Request Form**. For this we will use **Generate a word document** rule along with **Convert to PDF** rule. We will also then use **Send email** rule to send. -->
@@ -4508,54 +4548,4 @@ Your browser does not support the video tag.
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Within your subscription you will be able to see if an invited partner has accepted their &lt;strong>invitation&lt;/strong> based on the &lt;strong>status&lt;/strong>. &lt;strong>Pending&lt;/strong> means they have not accepted the &lt;strong>invite&lt;/strong>, &lt;strong>active&lt;/strong> means they have accepted the &lt;strong>invite&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/pending-invites.jpg" alt="Invite partner status">&lt;/p>
-&lt;p>Once an invite is accepted, your client’s/invited partner&amp;rsquo;s employees can now access the B2B Portal and interact with the Dashboards and Processes that have been shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/#shared-dashboards">Shared dashboards&lt;/a> for information on dashboards, and &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared processes&lt;/a> for information on processes.&lt;/p></description></item><item><title>Docs: Previewer</title><link>https://docs.kianda.com/docs/platform/application-designer/designer/previewer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/application-designer/designer/previewer/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>As an &lt;strong>Administrator&lt;/strong> or someone with the role &lt;strong>Design business process&lt;/strong>, you can preview your &lt;strong>process designs&lt;/strong> at any time using the &lt;strong>Run and preview process&lt;/strong> button &lt;img src="https://docs.kianda.com/images/previewer-btn.png" alt="previewer button" style="zoom:75%;" />. This is a useful Kianda feature that allows you to trial out your process, and visualise the logical flow of your design without publishing it yet for your organisation to view/use. Within the preview window, you can also troubleshoot your fields, rules and conditions by utilising the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger/">Rule debugger&lt;/a> feature.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/preview-window.png" alt="Preview window" style="zoom: 50%;" />
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>Before getting started, you must open a process design of your choice that you would like to perform a trial run on before publishing it to your organisation.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To access the previewer feature:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Navigate to the left-hand pane of the designer screen and click on the &lt;strong>Run and preview process&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="run and preview process button" style="zoom:150%;" />. From here, your process will display in a preview window only to you or to other Process/workspace security users that have access to the design. For more on this, see &lt;a href="https://docs.kianda.com/docs/security/workspace-security/">Security&lt;/a>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/preview-process-left-hand-pane.png" alt="Process preview button in left hand pane">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Within the process preview window, you can enter information as expected and the rules will execute on fields/buttons - the window displaying as a process instance, similar to when it will when published.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You can utilise the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a> feature for troubleshooting purposes by clicking on the &lt;strong>Enable / Disable Rule debugging&lt;/strong> button &lt;img src="https://docs.kianda.com/images/rule-debugger-btn.png" alt="rule debugger button" style="zoom:80%;" /> in the top right corner of the window.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/rule-debugger-preview2.png" alt="rule debugger in the preview window" style="zoom:80%;" />
-&lt;/li>
-&lt;li>
-&lt;p>You can preview the process design from the perspective of different devices by clicking on the &lt;strong>Device preview&lt;/strong> buttons to the right of the &lt;strong>Rule debugger&lt;/strong> button. This feature will visualise how your process design is dynamic and responsive on a myriad of devices.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/preview-devices.png" alt="Preview devices buttons">&lt;/p>
-&lt;p>The buttons are as follows:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Desktop preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/desktop-preview-btn.png" alt="desktop preview button" style="zoom:80%;" /> - displays the process instance as it would look on a desktop device.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Tablet preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/tablet-preview-btn.png" alt="Tablet preview button"> - displays the process instance as it would look on a tablet device.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/tablet-preview-screen.png" alt="tablet preview screen" style="zoom:50%;" />
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Mobile preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/mobile-preview-btn.png" alt="Mobile preview button"> - displays the process instance as it would look on a mobile device.&lt;/p>
-&lt;img src="https://docs.kianda.com/images/mobile-preview-screen.png" alt="Mobile preview screen" style="zoom:50%;" />
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Note&lt;/strong>: If you select &lt;strong>Tablet preview&lt;/strong> or &lt;strong>Mobile preview&lt;/strong>, a &lt;strong>Rotate device&lt;/strong> button &lt;img src="https://docs.kianda.com/images/rotate-btn.png" alt="rotate device button"> will appear in the top right-hand corner. Clicking on this button will rotate the device screen from portrait to landscape and vice versa in the preview window.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/rotated-phone.png" alt="Rotate screen">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>When you are finished previewing your process design, click on the &lt;strong>Exit preview mode&lt;/strong> button &lt;img src="https://docs.kianda.com/images/exit-preview-window-btn.png" alt="Exit preview mode button"> in the top right-hand corner of the previewer window.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>You can then choose to make further changes to your process, or continue to save and publish your design for your organisation to view/use.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Previewer&lt;/strong>, find out more about other designer features:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/version-history/">Version history&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;p>Once an invite is accepted, your client’s/invited partner&amp;rsquo;s employees can now access the B2B Portal and interact with the Dashboards and Processes that have been shared with them. For more information on how &lt;strong>B2B Portal&lt;/strong> users access shared data go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/data-access/">Data access&lt;/a>, as well as &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/#shared-dashboards">Shared dashboards&lt;/a> for information on dashboards, and &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared processes&lt;/a> for information on processes.&lt;/p></description></item></channel></rss>
