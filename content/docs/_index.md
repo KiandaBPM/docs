@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Kianda"
+title: "Welcome to Kianda no-code development platform documentation"
 linkTitle: "Documentation"
 menu:
   main:
