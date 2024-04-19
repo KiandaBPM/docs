@@ -2,6 +2,7 @@
 title: "Designer"
 typora-root-url: ..\..\..\..\..\static
 weight: 1
+description: "Kianda no-code low-code development platform - workflows process designer"
 ---
 
 Kianda **Designer** provides an intuitive interface where you can quickly start building **forms** for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).

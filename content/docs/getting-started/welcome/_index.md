@@ -2,6 +2,7 @@
 title: "Kianda Getting Started"
 weight: 1
 typora-root-url: ..\..\..\..\static
+description: "Kianda low-code development platform for business process automation"
 ---
 
 The Kianda platform is a modern [**low-code** and **no-code** **development platform**](#kianda-is-a-no-code-and-low-code-development-platform) providing anyone, including those without coding experience, the ability to digitise business **processes** and create beautiful, mobile-ready web applications. This type of development, called **citizen development** makes it more accessible for everyone to play a role in digital transformation. 

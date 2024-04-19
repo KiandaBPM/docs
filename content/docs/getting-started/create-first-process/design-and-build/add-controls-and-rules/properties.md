@@ -1,6 +1,7 @@
 ---
 title: "Properties"
 typora-root-url: ..\..\..\..\..\..\static
+description: "Kianda low-code development platform - Process, Form, Control Properties"
 ---
 
 Every process, form and control, such as text boxes and lists, will have properties visible in the right-hand pane of the [Designer](/docs/getting-started/create-first-process/design-and-build/add-forms/designer/) view. 

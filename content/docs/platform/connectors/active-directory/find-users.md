@@ -2,6 +2,7 @@
 title: "Active Directory Connector - Find users"
 weight: 1
 typora-root-url: ..\..\..\..\..\static
+description: "Kianda Active Directory Connector - find users"
 ---
 
 The **Find Users** remote procedure allows you to look for a user within your directory by defining a user attribute as a means of searching for them.

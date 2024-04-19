@@ -2,9 +2,10 @@
 title: "Getting Started - Designer"
 weight: 3
 typora-root-url: ..\..\..\..\..\..\static
+description: "Kianda low-code development platform - process designer"
 ---
 
-Kianda **Designer** provides an intuitive interface where you can quickly start building **forms** for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).
+Kianda process **Designer** empowers you to easily start building **forms** and workflows for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).
 
 There are 3 key principles to consider when working with forms:
 

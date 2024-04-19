@@ -1,9 +1,10 @@
 ---
 title: "Dashboards"
 typora-root-url: ..\..\..\..\..\static
+description: "Kianda dashboards for reporting"
 ---
 
-Kianda **dashboards** deliver a convenient way to provide insights into how your business processes are performing. Kianda dashboards offer easy reporting, permissions management, quick build, condition-based filtering and many more features.
+Kianda provides customisable **dashboards** for reporting, delivering a convenient way to provide insights into how your business processes are performing. Kianda dashboards offer easy reporting, permissions management, quick build, condition-based filtering and many more features.
 
 From lists to tiles, filter and charts, dashboards allow you to build full digital experiences to monitor your real-time processes in a few minutes. 
 

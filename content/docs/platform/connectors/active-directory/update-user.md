@@ -2,6 +2,7 @@
 title: "Active Directory Connector - Update user"
 weight: 1
 typora-root-url: ..\..\..\..\static
+description: "Kianda Active Directory Connector - update users"
 ---
 
 One of the data connectors within Kianda that you can connect to is **Active Directory** (**AD**) also known as **Active Directory Domain Services** (**AD DS**). AD is a logical and hierarchical structured data store of objects which are mostly accounts. Accounts such as **Users, Computers, Groups** and other objects such as **Printers** or **Group Policy Objects** (GPO). For example, you can store information about user accounts within an AD such as **Name, Password, Job title** and **Permissions**. 
