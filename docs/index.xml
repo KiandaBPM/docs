@@ -2879,66 +2879,7 @@ The Safety Team
 &lt;p>&lt;img src="https://docs.kianda.com/images/azure-function-urls.jpg" alt="Azure function URLs">&lt;/p>
 &lt;p>These URLs will be used in the &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/steps-to-create/#connector-settings-tab">&lt;strong>Connector Settings tab&lt;/strong>&lt;/a> when creating the Custom Connector.&lt;/p>
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>Once your Microservice is deployed, you are ready to start creating a custom connector go to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/steps-to-create/">steps to create a custom connector&lt;/a>.&lt;/p></description></item><item><title>Docs: Designer</title><link>https://docs.kianda.com/docs/platform/administration/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/designer/</guid><description>
-&lt;p>Kianda &lt;strong>Designer&lt;/strong> is available to administrators and those users with the role &lt;strong>Design business process&lt;/strong>. Designer is found in the left-hand side pane, or on the top right toolbar depending on the &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/#general-settings">chosen orientation&lt;/a>, under &lt;strong>Administration&lt;/strong>. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer, you can create forms, add controls and add rules to create processes to work the way you want.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>Using your Administration or Design business process role, start creating or editing a process so that Kianda Designer will open:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Designer&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You can view any existing created processes in the main &lt;strong>Process design&lt;/strong> view.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/main-process-view.jpg" alt="Process view">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Processes may be arranged in folders or groups. Click on the folder name to see processes within that group, for example a group like &lt;strong>Training&lt;/strong> as shown in the image.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/training-folder.jpg" alt="Training folder of processes">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You can search for a specific process or process group by typing into the process design &lt;strong>Search bar&lt;/strong>, found above the list of processes. Click on the &lt;strong>cancel&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cancel-btn.png" alt="Cancel button" style="zoom:80%;" /> to clear your search query.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/searching-processes.png" alt="Searching for a process">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on a process name to see the process design. You are then brought into &lt;strong>Kianda Designer&lt;/strong>, see &lt;a href="#designer-view">Designer view&lt;/a> details below.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To import a process created for example in another workspace, click on &lt;strong>Import&lt;/strong> &lt;img src="https://docs.kianda.com/images/import_frame.png" alt="Import button">. Also note that from the main process view you can also export processes listed here for use in another workspace, by clicking on &lt;strong>Export&lt;/strong> &lt;img src="https://docs.kianda.com/images/export_frame.png" alt="Export process">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To create a process using a predefined template, click on the &lt;strong>App Store&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To create a new process, click on the &lt;strong>Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The &lt;strong>Add new process&lt;/strong> dialog box appears where you can fill out details for your new process.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/new-process.jpg" alt="New process view">&lt;/p>
-&lt;p>In this dialog box fill out the following fields:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Title&lt;/strong> - give the new process a title&lt;/li>
-&lt;li>&lt;strong>ID&lt;/strong> - the Unique ID field is autofilled from the title field. Note that this ID is unique for each process.&lt;/li>
-&lt;li>&lt;strong>Description&lt;/strong> - a short description that describes the new process&lt;/li>
-&lt;li>&lt;strong>Group&lt;/strong> - choose an existing group/folder to add the new process to, or type in a new group name to create a new group of processes&lt;/li>
-&lt;li>&lt;strong>Administrators&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or a mix of both users and groups for people who will be administrators of this process. The process administrator(s) is the only person/people who can edit &lt;strong>draft&lt;/strong> process designs. Once the process design is published, workspace administrators will be able to access the process design.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Once a process is opened, you are brought straight into Kianda &lt;strong>Designer&lt;/strong>, see &lt;a href="#designer-view">Designer view&lt;/a> below.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="designer-view">Designer view&lt;/h2>
-&lt;p>Kianda &lt;strong>Designer&lt;/strong> allows you to create forms within your process, add in fields, rules and set out exactly how you want your form to appear, for example mandatory fields, help text, connection to a data source that pulls in information into the form as well as using &lt;strong>settings&lt;/strong> to control who has access to forms and fields.&lt;/p>
-&lt;p>Kianda &lt;strong>Designer&lt;/strong> is made up of three panes.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/design-view.jpg" alt="Designer view">&lt;/p>
-&lt;ol>
-&lt;li>In the left-hand pane, you will find the &lt;strong>Controls&lt;/strong> and &lt;strong>Rules&lt;/strong> as well as buttons to &lt;strong>Save&lt;/strong>, &lt;strong>Preview&lt;/strong> and &lt;strong>Publish&lt;/strong> processes, as well as exiting Kianda Designer to return to the main process view.&lt;/li>
-&lt;li>In the centre pane, also called the &lt;strong>canvas&lt;/strong>, you can view form details and manipulate form fields.&lt;/li>
-&lt;li>In the right-hand pane, you can view and edit process and field &lt;strong>properties&lt;/strong> as well as viewing rules assigned to fields, forms and processes.&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about Designer in detail and how to use the interface to create forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
-&lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Excel workbook add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</guid><description>
+&lt;p>Once your Microservice is deployed, you are ready to start creating a custom connector go to &lt;a href="https://docs.kianda.com/docs/low-code/custom-connector/steps-to-create/">steps to create a custom connector&lt;/a>.&lt;/p></description></item><item><title>Docs: Excel workbook add-in</title><link>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>You can &lt;strong>generate excel workbooks&lt;/strong> within Kianda processes and &lt;strong>populate&lt;/strong> the workbooks with &lt;strong>data captured&lt;/strong> within each process instance. This could be useful, for example, when working with a lot of table data within Kianda. The add-in will &lt;strong>automatically&lt;/strong> populate excel cells with the data from a table within your process. Each time value changes inside of a table, those values will be reflected in the Excel workbook every time you generate a new workbook.&lt;/p>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
@@ -3968,7 +3909,66 @@ The Safety Team
 &lt;h2 id="inspection-form-summary">Inspection Form Summary&lt;/h2>
 &lt;p>To summarise our &lt;strong>Inspection From&lt;/strong>, we created all fields, buttons and rules that we stated in our &lt;a href="https://docs.kianda.com/docs/examples/inspection/#planning-form-requirements">requirements&lt;/a>. Our Engineer can fill out our &lt;strong>Inspection Checklist&lt;/strong> and submit the form which automatically sends an email to an &lt;strong>Safety Manager&lt;/strong> with the generated PDF file of the report. We are also updating our &lt;strong>Status&lt;/strong> field to &lt;strong>Completed&lt;/strong>.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/dashboard/">Creating Dashboard&lt;/a>.&lt;/p></description></item><item><title>Docs: Lookup user by property</title><link>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</guid><description>
+&lt;p>To follow a step by step guide on creating our &lt;strong>Inspection From&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/dashboard/">Creating Dashboard&lt;/a>.&lt;/p></description></item><item><title>Docs: Kianda Process Designer</title><link>https://docs.kianda.com/docs/platform/administration/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/administration/designer/</guid><description>
+&lt;p>Kianda &lt;strong>Designer&lt;/strong> is available to administrators and those users with the role &lt;strong>Design business process&lt;/strong>. Designer is found in the left-hand side pane, or on the top right toolbar depending on the &lt;a href="https://docs.kianda.com/docs/platform/administration/subscription/#general-settings">chosen orientation&lt;/a>, under &lt;strong>Administration&lt;/strong>. The Designer function allows you to create processes and forms using the intuitive easy-to-use no-code interface. Within Designer, you can create forms, add controls and add rules to create processes to work the way you want.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>Using your Administration or Design business process role, start creating or editing a process so that Kianda Designer will open:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on &lt;strong>Administration&lt;/strong> in the left-hand side pane and then click on &lt;strong>Designer&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can view any existing created processes in the main &lt;strong>Process design&lt;/strong> view.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/main-process-view.jpg" alt="Process view">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Processes may be arranged in folders or groups. Click on the folder name to see processes within that group, for example a group like &lt;strong>Training&lt;/strong> as shown in the image.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/training-folder.jpg" alt="Training folder of processes">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You can search for a specific process or process group by typing into the process design &lt;strong>Search bar&lt;/strong>, found above the list of processes. Click on the &lt;strong>cancel&lt;/strong> button &lt;img src="https://docs.kianda.com/images/cancel-btn.png" alt="Cancel button" style="zoom:80%;" /> to clear your search query.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/searching-processes.png" alt="Searching for a process">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on a process name to see the process design. You are then brought into &lt;strong>Kianda Designer&lt;/strong>, see &lt;a href="#designer-view">Designer view&lt;/a> details below.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To import a process created for example in another workspace, click on &lt;strong>Import&lt;/strong> &lt;img src="https://docs.kianda.com/images/import_frame.png" alt="Import button">. Also note that from the main process view you can also export processes listed here for use in another workspace, by clicking on &lt;strong>Export&lt;/strong> &lt;img src="https://docs.kianda.com/images/export_frame.png" alt="Export process">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To create a process using a predefined template, click on the &lt;strong>App Store&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To create a new process, click on the &lt;strong>Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Add new process&lt;/strong> dialog box appears where you can fill out details for your new process.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/new-process.jpg" alt="New process view">&lt;/p>
+&lt;p>In this dialog box fill out the following fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> - give the new process a title&lt;/li>
+&lt;li>&lt;strong>ID&lt;/strong> - the Unique ID field is autofilled from the title field. Note that this ID is unique for each process.&lt;/li>
+&lt;li>&lt;strong>Description&lt;/strong> - a short description that describes the new process&lt;/li>
+&lt;li>&lt;strong>Group&lt;/strong> - choose an existing group/folder to add the new process to, or type in a new group name to create a new group of processes&lt;/li>
+&lt;li>&lt;strong>Administrators&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or a mix of both users and groups for people who will be administrators of this process. The process administrator(s) is the only person/people who can edit &lt;strong>draft&lt;/strong> process designs. Once the process design is published, workspace administrators will be able to access the process design.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Once a process is opened, you are brought straight into Kianda &lt;strong>Designer&lt;/strong>, see &lt;a href="#designer-view">Designer view&lt;/a> below.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="designer-view">Designer view&lt;/h2>
+&lt;p>Kianda &lt;strong>Designer&lt;/strong> allows you to create forms within your process, add in fields, rules and set out exactly how you want your form to appear, for example mandatory fields, help text, connection to a data source that pulls in information into the form as well as using &lt;strong>settings&lt;/strong> to control who has access to forms and fields.&lt;/p>
+&lt;p>Kianda &lt;strong>Designer&lt;/strong> is made up of three panes.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/design-view.jpg" alt="Designer view">&lt;/p>
+&lt;ol>
+&lt;li>In the left-hand pane, you will find the &lt;strong>Controls&lt;/strong> and &lt;strong>Rules&lt;/strong> as well as buttons to &lt;strong>Save&lt;/strong>, &lt;strong>Preview&lt;/strong> and &lt;strong>Publish&lt;/strong> processes, as well as exiting Kianda Designer to return to the main process view.&lt;/li>
+&lt;li>In the centre pane, also called the &lt;strong>canvas&lt;/strong>, you can view form details and manipulate form fields.&lt;/li>
+&lt;li>In the right-hand pane, you can view and edit process and field &lt;strong>properties&lt;/strong> as well as viewing rules assigned to fields, forms and processes.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To read more about Designer in detail and how to use the interface to create forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
+&lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Docs: Lookup user by property</title><link>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Lookup user by property&lt;/strong> rule allows you to look up a user from your &lt;strong>subscription&lt;/strong> using one of the &lt;strong>properties&lt;/strong> in their &lt;strong>profile&lt;/strong> for example first name, last name, email or department. Using this rule you can also look up &lt;strong>groups&lt;/strong> or &lt;strong>partners&lt;/strong> by specifying one of the properties available. When looking up a user, group or a partner you can use the following properties:&lt;/p>
 &lt;ul>
