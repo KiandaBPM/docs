@@ -1,0 +1,127 @@
+<!doctype html><html lang=en class=no-js>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=generator content="Hugo 0.93.3">
+<link rel=canonical type=text/html href=https://docs.kianda.com/quick-start/connect-your-data/>
+<link rel=alternate type=application/rss+xml href=https://docs.kianda.com/quick-start/connect-your-data/index.xml>
+<meta name=robots content="noindex, nofollow">
+<link rel="shortcut icon" href=/favicons/favicon.ico>
+<link rel=apple-touch-icon href=/favicons/apple-touch-icon-180x180.png sizes=180x180>
+<link rel=icon type=image/png href=/favicons/favicon-16x16.png sizes=16x16>
+<link rel=icon type=image/png href=/favicons/favicon-32x32.png sizes=32x32>
+<link rel=icon type=image/png href=/favicons/android-36x36.png sizes=36x36>
+<link rel=icon type=image/png href=/favicons/android-48x48.png sizes=48x48>
+<link rel=icon type=image/png href=/favicons/android-72x72.png sizes=72x72>
+<link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
+<link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
+<link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
+<title>Connect to data sources | Kianda low-code platform for business process automation</title><meta name=description content="Connect your process apps to data sources. Enhance functionality and relevance of your forms, automate data-driven tasks">
+<meta property="og:title" content="Connect to data sources">
+<meta property="og:description" content="Connect your process apps to data sources. Enhance functionality and relevance of your forms, automate data-driven tasks">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://docs.kianda.com/quick-start/connect-your-data/">
+<meta itemprop=name content="Connect to data sources">
+<meta itemprop=description content="Connect your process apps to data sources. Enhance functionality and relevance of your forms, automate data-driven tasks"><meta name=twitter:card content="summary">
+<meta name=twitter:title content="Connect to data sources">
+<meta name=twitter:description content="Connect your process apps to data sources. Enhance functionality and relevance of your forms, automate data-driven tasks">
+<link rel=preload href=/scss/main.min.4e176ceb52f44eb40598d11186b678009cb6075871067348c792c1cc9f5efe00.css as=style>
+<link href=/scss/main.min.4e176ceb52f44eb40598d11186b678009cb6075871067348c792c1cc9f5efe00.css rel=stylesheet integrity>
+<script src=https://code.jquery.com/jquery-3.5.1.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
+<script src=https://unpkg.com/lunr@2.3.8/lunr.min.js integrity=sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY crossorigin=anonymous></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2463M5RV55"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-2463M5RV55",{anonymize_ip:!1})}</script>
+</head><body class=td-section>
+<header>
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+<a class=navbar-brand href=/ title="Kianda Low-code Platform documentation">
+<span class=navbar-logo><svg width="124" height="26" viewBox="0 0 124 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M47.0114 22.8609 39.9609 12.543l6.7638-9.80049H41.5085L35.3752 11.4796V2.74251H30.7895V22.8609h4.5857V13.549l6.4199 9.3119h5.2163z" fill="#fff"/><path d="M50.7365 7.22603c1.4044.0 2.5795-1.17836 2.5795-2.58665.0-1.40828-1.1751-2.58665-2.5795-2.58665-1.4043.0-2.5794 1.17837-2.5794 2.58665.0 1.40829 1.1751 2.58665 2.5794 2.58665zM48.587 22.8609h4.2991V8.49062H48.587V22.8609z" fill="#fff"/><path d="M66.4358 8.49062v1.3508C65.49 8.74928 64.0856 8.08825 62.1654 8.08825c-3.7545.0-6.8499 3.30515-6.8499 7.58755.0 4.2823 3.0954 7.5875 6.8499 7.5875C64.0856 23.2633 65.49 22.6022 66.4358 21.5101v1.3508h4.2991V8.49062H66.4358zM63.0252 19.1821c-1.9776.0-3.4106-1.3508-3.4106-3.5063.0-2.1556 1.433-3.5064 3.4106-3.5064s3.4106 1.3508 3.4106 3.5064c0 2.1555-1.43300000000001 3.5063-3.4106 3.5063z" fill="#fff"/><path d="M82.2864 8.08825C80.3948 8.08825 78.9618 8.77802 78.188 9.84142V8.49062H73.8889V22.8609H78.188V15.0147C78.188 12.9741 79.2771 12.0544 80.8534 12.0544 82.2291 12.0544 83.3469 12.8879 83.3469 14.6698v8.1911H87.6459V14.0375c0-3.8799-2.4648-5.94925-5.3595-5.94925z" fill="#fff"/><path d="M101.002 2.74251V9.84142C100.056 8.74928 98.6518 8.08825 96.7316 8.08825 92.977 8.08825 89.8817 11.3934 89.8817 15.6758 89.8817 19.9581 92.977 23.2633 96.7316 23.2633 98.6518 23.2633 100.056 22.6022 101.002 21.5101v1.3508H105.301V2.74251H101.002zM97.5914 19.1821C95.6138 19.1821 94.1808 17.8313 94.1808 15.6758 94.1808 13.5202 95.6138 12.1694 97.5914 12.1694 99.569 12.1694 101.002 13.5202 101.002 15.6758 101.002 17.8313 99.569 19.1821 97.5914 19.1821z" fill="#fff"/><path d="M118.859 8.49062v1.3508C117.913 8.74928 116.509 8.08825 114.588 8.08825 110.834 8.08825 107.739 11.3934 107.739 15.6758c0 4.2823 3.095 7.5875 6.84899999999999 7.5875C116.509 23.2633 117.913 22.6022 118.859 21.5101v1.3508H123.158V8.49062H118.859zM115.448 19.1821c-1.97699999999999.0-3.41-1.3508-3.41-3.5063.0-2.1556 1.43300000000001-3.5064 3.41-3.5064 1.97800000000001.0 3.411 1.3508 3.411 3.5064.0 2.1555-1.43299999999999 3.5063-3.411 3.5063z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.28125C0 2.3645 2.3645.0 5.28125.0H20.7188C23.6355.0 26 2.3645 26 5.28125V20.7188C26 23.6355 23.6355 26 20.7188 26H5.28125C2.3645 26 0 23.6355.0 20.7188V5.28125zM23.4063 7.40596C22.6063 5.00596 12.7397 5.7393 7.90634 6.40596c2.83336.16663 8.89996.89989 10.49996 2.49989 1.6 1.60005-2 6.33335-4 8.50005 3.3334-2.3333 9.8-7.59994 9-9.99994zM18.9742 19.4062C14.1409 20.0729 4.27421 20.8062 3.47421 18.4062c-.8-2.4 5.66667-7.6666 8.99999-9.99986-2 2.16666-5.59999 6.89996-3.99999 8.49996 1.59999 1.6 7.66669 2.3333 10.49999 2.4999z" fill="#fff"/></svg></span><span class="text-uppercase font-weight-bold">Kianda low-code platform for business process automation</span>
+</a>
+<div class="td-navbar-nav-scroll ml-md-auto" id=main_navbar>
+<ul class="navbar-nav mt-2 mt-lg-0">
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class="nav-link active" href=/><span class=active>Documentation</span></a>
+</li><li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class=nav-link href=https://portal.kianda.com/public/signup target=_blank><span>Low-code Sign-up</span></a>
+</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.2f8afde0deff3327f52e8f1b999f4f06.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+</div></nav></header><div class="container-fluid td-outer">
+<div class=td-main>
+<div class="row flex-xl-nowrap">
+<main class="col-12 col-md-9 col-xl-8 pl-md-5" role=main>
+<div class=td-content>
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href=# onclick="return print(),!1">Click here to print</a>.
+</p><p>
+<a href=/quick-start/connect-your-data/>Return to the regular view of this page</a>.
+</p></div><h1 class=title>Connect to data sources</h1><div class=lead>Connect your process apps to data sources. Enhance functionality and relevance of your forms, automate data-driven tasks</div><ul>
+</ul><div class=content>
+<h2 id=1-introduction>1. Introduction</h2><p>Connecting to data sources is a crucial aspect of building robust and dynamic process applications in Kianda. By integrating external data, you can enhance the functionality and relevance of your forms, automate data-driven tasks, and ensure seamless communication between different systems within your organization. This section will guide you through the basics of managing data sources in Kianda, enabling you to create more powerful and efficient applications.</p><p>In this guide, you will learn how to access and configure data sources using Kianda’s administration menu. We will cover the process of registering new data sources, integrating them into your process apps, and utilizing them effectively to meet your business needs. Additionally, you will gain insights into best practices for maintaining and optimizing data source connections, ensuring your applications run smoothly and securely.</p><p>Before you begin, ensure you have admin privileges within your Kianda workspace, as managing data sources requires access to administrative functions. A basic understanding of the types of data sources you will be working with (such as databases, web services, or file systems) will also be beneficial. With these prerequisites in place, you are ready to start leveraging the full potential of Kianda&rsquo;s data source integration capabilities.</p><h2 id=2-accessing-and-registering-data-sources>2. Accessing and Registering Data Sources</h2><p>To manage and integrate data sources within Kianda, you need to access the Data Sources administration menu. This section will guide you through the steps to navigate the admin menu, understand the data sources landing page, and register a new data source in your workspace.</p><h4 id=navigating-to-the-data-sources-admin-menu>Navigating to the Data Sources Admin Menu</h4><ol>
+<li>Access the Admin Menu
+<ul>
+<li>Click on the cog icon located at the top right corner of the screen to open the admin menu.</li></ul></li><li>Select Data Sources
+<ul>
+<li>From the admin menu, select the &ldquo;Data Sources&rdquo; option to access the Data Sources management page.</li></ul></li></ol><p>The Data sources management page displays a list of all registered data sources in your workspace that can be managed centrally.</p><h4 id=registering-a-new-data-source>Registering a New Data Source</h4><ol>
+<li>
+<p>Click on the &ldquo;Add new&rdquo; button located at the top of the Data Sources management page.</p></li><li>
+<p>Select a Data Source Type. Choose from a variety of supported data sources such as:</p><ul>
+<li>Office 365, SharePoint, SQL Server, Salesforce, DocuSign, MySQL, Oracle, SAP, Active Directory, SOAP Service, REST Service, File System, Email, FTP, Dropbox, PowerShell, Global Payments, Google Drive, Stripe, Autodesk, Procore.</li></ul></li><li>
+<p>Configuring a New Data Source</p><p>After selecting the type of data source, you will be prompted to enter the necessary configuration details.</p><ul>
+<li>Example: Configuring a MySQL Data Source
+<ul>
+<li><strong>Display Name</strong>: Enter a descriptive name for the data source.</li><li><strong>Server</strong>: Enter the server address (e.g., <code>serverA.company.com</code>).</li><li><strong>Database</strong>: Enter the database name (e.g., <code>products</code>).</li><li><strong>User</strong>: Enter the username for accessing the database.</li><li><strong>Password</strong>: Enter the corresponding password.</li><li><strong>Test Connection</strong>: Click to verify that the connection details are correct.</li></ul></li></ul></li></ol><p>By following these steps, you can efficiently access and manage data sources in Kianda. This foundational step is crucial for integrating external data into your process applications, enabling you to build more dynamic and data-driven solutions. Once your data sources are registered and configured, you can start integrating them into your process apps using list controls and CRUD rules, which will be covered in the next section.</p><video class=inline-video-player loading=lazy muted loop playsinline autoplay poster>
+<source src=/videos/Register-a-datasource.mp4>
+Your browser does not support the video tag.
+</source>
+</video>
+<h2 id=3-integrating-data-sources-with-process-apps>3. Integrating Data Sources with Process Apps</h2><p>Integrating data sources with your process apps in Kianda allows you to dynamically read and display data from external databases directly within your forms. There are two primary methods to achieve this: using the List control for direct binding to data sources and utilizing the Find Items rule. These tools enable you to create forms that interact seamlessly with your data sources, providing real-time access to essential data.</p><p>The List control in Kianda can be directly bound to a data source, making it a powerful tool for displaying data within your forms. When configuring the List control, you can select the desired data source using the data source picker. Once selected, additional fields are provided to fine-tune the data binding. The Display field specifies the column from the data source that will be shown to users as the display value, while the Value field determines the column that will hold the actual value. This setup is particularly useful for dropdown lists, radio buttons, multi-select options, and checkbox lists, allowing you to populate these controls with data directly from your databases without requiring additional coding.</p><p>By leveraging the List control and the Find Items rule, you can effectively integrate data sources with your Kianda process apps, providing a dynamic and interactive experience for users. These tools enable you to seamlessly read data from external databases, enhancing the functionality and usability of your forms. In the next section, we will explore how to configure and utilize these controls and rules in detail, ensuring you can implement these integrations smoothly and efficiently.</p><h3 id=31-list-control-data-binding>3.1. List Control Data Binding</h3><video class=inline-video-player loading=lazy muted loop playsinline autoplay poster>
+<source src=/videos/List-control-datasource.mp4>
+Your browser does not support the video tag.
+</source>
+</video>
+<h3 id=32-find-items-rule-data-query>3.2. Find Items Rule (Data Query)</h3><p>Another robust method for reading data into your forms is the Find Items rule. This rule is used to execute a data retrieval (Select) operation from any configured data source and map the results into various controls within your form. The Find Items rule allows you to set conditions for filtering data and specify how the retrieved data should be mapped to form fields or table controls. When mapping to a non-table control, only the first result of the query is mapped. Additionally, the Find Items rule includes a max rows setting to limit the number of results returned. This feature is particularly useful for displaying query results in a table control, providing a dynamic way to present and manage data within your forms.</p><video class=inline-video-player loading=lazy muted loop playsinline autoplay poster>
+<source src=/videos/Find-Items-Rule.mp4>
+Your browser does not support the video tag.
+</source>
+</video>
+<h3 id=33-saving-form-inputs-to-data-sources>3.3. Saving Form Inputs to Data Sources</h3><p>Writing data to data sources in Kianda is a crucial functionality that allows users to take input from forms and persist it into various external systems. This can be achieved using the Create Item rule, Update Item rule, and Delete Item rule, which together with the Find Items rule, provide full CRUD (Create, Read, Update, Delete) operations. These rules are not limited to databases but can also be applied to non-database data sources such as REST APIs or third-party services, making them extremely versatile for various integration needs.</p><p>The Create Item rule is used to insert new records into a data source based on user input from a form. This rule supports the creation of one item at a time and, when working with databases, it translates into an INSERT statement. The rule employs a visual transactional logic represented by three panels: Input Mapping, Success Mapping, and Error Mapping. These panels allow you to define what data should be sent to the data source, how to handle successful transactions, and how to manage errors. This conditional logic enables complex workflows where subsequent actions can be triggered based on the success or failure of the initial data write operation.</p><p>Similarly, the Update Item rule is used to modify existing records in a data source. It can update multiple items in a single operation, which corresponds to an UPDATE statement in database terms. This rule includes a flag to automatically ignore blank values, ensuring that only specified fields are updated. Like the Create Item rule, the Update Item rule uses the same transactional logic with Input Mapping, Success Mapping, and Error Mapping panels. This allows developers to conditionally execute additional logic based on the outcome of the update operation. The Delete Item rule completes the set of CRUD operations by allowing the removal of records from a data source. Together, these rules provide a robust framework for interacting with external data sources, enabling dynamic and responsive process applications.</p><p>By combining these data rules with the Find Items rule, Kianda users can create comprehensive data management workflows within their forms. For example, a process could begin with a Find Items rule to retrieve existing records, followed by an Update Item rule to modify those records, or a Create Item rule to add new records based on user input. This seamless integration of reading and writing data ensures that Kianda forms can handle complex business scenarios, making your process applications both powerful and flexible.</p><h2 id=4-best-practices>4. Best Practices</h2><p>Implementing best practices when integrating and managing data sources in Kianda ensures that your process applications are secure, efficient, and maintainable. Here are some key recommendations to follow:</p><h3 id=performance-optimization>Performance Optimization</h3><p>Optimizing the performance of your data interactions is crucial for maintaining responsive and efficient applications. When designing forms, use server-side filtering and pagination to manage large datasets effectively, avoiding the need to load extensive data sets into the client-side. For frequent data interactions, enable caching where appropriate to reduce the load on your data sources and improve response times. Additionally, optimize your queries and rules to retrieve only the necessary data, and use indexed columns in your databases to speed up search operations.</p><p>Kianda automatically performs server side paging and filtering under the hood to ensure that the application is fast and responsive to users.</p><h3 id=security-considerations>Security Considerations</h3><p>Securing your data connections is paramount. Restrict access to data sources based on the principle of least privilege, ensuring that only authorized users and services can read or write data. Utilize Kianda’s security features, such as data source security, enabling security settings for panels and buttons, to further control access and actions within your forms.</p><h3 id=managing-data-source-changes>Managing Data Source Changes</h3><p>Change management is an essential aspect of maintaining data source integrations. Document your data source configurations and changes meticulously. Before making changes to live data sources, test them thoroughly in a development or staging environment to ensure they do not disrupt existing processes. Implement fallback mechanisms and error handling in your forms to manage unexpected issues gracefully. Regularly review and audit your data source configurations to ensure they remain aligned with your organizational policies and performance standards.</p><h2 id=5-data-source-connectors-in-kianda>5. Data source connectors in Kianda</h2><table>
+<thead>
+<tr>
+<th><strong>Data Source</strong></th><th><strong>Description</strong></th></tr></thead><tbody>
+<tr>
+<td>Office 365</td><td>Microsoft&rsquo;s cloud-based suite for office applications, including email and collaboration tools.</td></tr><tr>
+<td>SharePoint</td><td>Microsoft&rsquo;s platform for document management and collaboration.</td></tr><tr>
+<td>SQL Server</td><td>Microsoft&rsquo;s relational database management system.</td></tr><tr>
+<td>Salesforce</td><td>Cloud-based customer relationship management (CRM) platform.</td></tr><tr>
+<td>DocuSign</td><td>Electronic signature and digital transaction management service.</td></tr><tr>
+<td>MySQL</td><td>Open-source relational database management system.</td></tr><tr>
+<td>Oracle</td><td>Comprehensive database management system.</td></tr><tr>
+<td>SAP</td><td>Enterprise resource planning (ERP) software to manage business operations and customer relations.</td></tr><tr>
+<td>Active Directory</td><td>Microsoft&rsquo;s directory service for Windows domain networks.</td></tr><tr>
+<td>SOAP Service</td><td>Protocol for exchanging structured information in the implementation of web services.</td></tr><tr>
+<td>REST Service</td><td>Architectural style for designing networked applications.</td></tr><tr>
+<td>File System</td><td>System that controls how data is stored and retrieved on a computer.</td></tr><tr>
+<td>Email</td><td>Email protocol support for sending and receiving messages.</td></tr><tr>
+<td>FTP</td><td>Protocol for transferring files between systems over a network.</td></tr><tr>
+<td>Dropbox</td><td>Cloud storage service for file sharing and collaboration.</td></tr><tr>
+<td>PowerShell</td><td>Task automation framework from Microsoft, consisting of a command-line shell and scripting language.</td></tr><tr>
+<td>GlobalPayments</td><td>Payment technology services for processing transactions.</td></tr><tr>
+<td>Google Drive</td><td>Cloud storage service from Google for file storage and synchronization.</td></tr><tr>
+<td>Stripe</td><td>Online payment processing for internet businesses.</td></tr><tr>
+<td>Autodesk</td><td>Software applications for 3D design, engineering, and entertainment.</td></tr><tr>
+<td>Procore</td><td>Construction management software for project management, scheduling, and collaboration.</td></tr><tr>
+<td>Custom</td><td>Developers can develop their own data connectors using micro-services and common schema.</td></tr></tbody></table><p>This table provides a brief description of each data source, helping you understand the various integration options available in Kianda.</p><h2 id=6-summary>6. Summary</h2><p>In this guide, we covered the essential steps to connect and integrate data sources with your Kianda process applications. From accessing and registering data sources to reading and writing data, these functionalities enable you to create dynamic, data-driven forms. By following the best practices outlined, you can ensure your applications are secure, efficient, and maintainable. With these skills, you are well-equipped to leverage Kianda&rsquo;s powerful data integration capabilities to build comprehensive business solutions.</p></div></div></main></div></div><footer class="bg-dark py-5 row d-print-none">
+<div class="container-fluid mx-sm-5">
+<div class=row>
+<div class="col-6 col-sm-4 text-xs-center order-sm-2">
+</div><div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+</div><div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+<small class=text-white>&copy; 2024 Kianda Technologies All Rights Reserved</small>
+<small class=ml-1><a href=https://www.kianda.com/privacy target=_blank rel=noopener>Privacy Policy</a></small>
+</div></div></div></footer></div><script src=https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js integrity=sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin=anonymous></script>
+<script src=/js/tabpane-persist.js></script>
+<script src=/js/main.min.e969fcc6c6f4a5f274732e5cfc9517216922476c3623b07b387618dcb82a2ada.js integrity="sha256-6Wn8xsb0pfJ0cy5c/JUXIWkiR2w2I7B7OHYY3LgqKto=" crossorigin=anonymous></script>
+<script type=text/javascript language=javascript>$(document).ready(function(){var e=$("#td-sidebar-menu a.active");e&&e.length>0&&e[0].scrollIntoView({behavior:"auto",block:"center",inline:"nearest"})})</script>
+</body></html>

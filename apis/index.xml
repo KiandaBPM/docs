@@ -1,0 +1,178 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – REST APIs</title><link>https://docs.kianda.com/apis/</link><description>Recent content in REST APIs on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/apis/index.xml" rel="self" type="application/rss+xml"/><item><title>Apis: Authentication</title><link>https://docs.kianda.com/apis/authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/apis/authentication/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The framework used for authentication in Kianda is &lt;strong>OAuth 2.0&lt;/strong>. This framework uses industry-standard protocol for authorisation focusing on simplifying client developer practices, and at the same time providing specific authorisation flows for applications. The &lt;strong>OAuth 2.0&lt;/strong> framework uses &lt;strong>Bearer&lt;/strong> type tokens to authorise access to the platform for individual users. This type of token is required by Kianda to perform any &lt;strong>Create, Read, Update and Delete&lt;/strong> (CRUD) requests to external &lt;strong>Application Programming Interfaces&lt;/strong> (APIs).&lt;/p>
+&lt;p>When working &lt;strong>within&lt;/strong> Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved as part of a user login. If you may want to create an application outside of Kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There are two methods to retrieve the Bearer token:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="#retrieving-a-bearer-token-using-a-post-request">Using a POST request&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#retrieving-a-bearer-token-usin-devtools">Using DevTools&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Click on the links above to go the the relevant sections.&lt;/p>
+&lt;h3 id="retrieving-bearer-token-using-a-post-request">Retrieving Bearer token using a POST request&lt;/h3>
+&lt;p>You can retrieve a bearer token using a &lt;strong>POST&lt;/strong> request where the &lt;strong>content body type&lt;/strong> is is set to &lt;strong>application&lt;/strong>, &lt;strong>x-www-form-urlencoded&lt;/strong>.&lt;/p>
+&lt;p>The request will look like &lt;code>https://domain.com/token&lt;/code> where the domain is your company, for example &lt;code>https://green-itr.kianda.com/token&lt;/code> . For the request to be valid, you need to pass the following form parameters to the body of the request:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Parameter&lt;/th>
+&lt;th>Value&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>username:&lt;/code>&lt;/td>
+&lt;td>your Kianda username&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>password:&lt;/code>&lt;/td>
+&lt;td>your Kianda password&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>scope:&lt;/code>&lt;/td>
+&lt;td>your Kianda subscription ID&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;code>grant_type:&lt;/code>&lt;/td>
+&lt;td>&lt;code>password&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;access_token&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Bearer access_token&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;token_type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;bearer&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;expires_in&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">299&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;userName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Provided username&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;userId&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Application userId&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;subscriptionId&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;SubscriptionID&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;securityStamp&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Token Security token (Guid)&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;hostURL&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Your kianda domain&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;.issued&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Token Issued Date and time&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;.expires&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Token Issued Date and time&amp;gt;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can obtain the &lt;code>scope&lt;/code> value by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> &amp;gt; &lt;strong>Subscription Id&lt;/strong>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/subscription-details.jpg" alt="Subscription Id">&lt;/p>
+&lt;h3 id="retrieving-bearer-token-using-devtools">Retrieving Bearer token using DevTools&lt;/h3>
+&lt;p>You can retrieve your Bearer token using Chrome DevTools, making sure you are logged into Kianda. When logged in, open Chrome DevTools by:&lt;/p>
+&lt;ol>
+&lt;li>Right clicking your mouse anywhere on the screen.&lt;/li>
+&lt;li>Click on &lt;strong>Inspect&lt;/strong> in the dialog box.&lt;/li>
+&lt;li>Open the &lt;strong>Network&lt;/strong> tab.&lt;/li>
+&lt;li>Click on the &lt;strong>info&lt;/strong> request.&lt;/li>
+&lt;li>In the &lt;strong>Header&lt;/strong> tab, scroll down to &lt;strong>authorisation&lt;/strong>. You can find your &lt;strong>Bearer&lt;/strong> token here.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To learn more about Kianda&amp;rsquo;s API go to &lt;a href="https://docs.kianda.com/docs/apis/instances/">Instance API&lt;/a>.&lt;/p></description></item><item><title>Apis: Instances</title><link>https://docs.kianda.com/apis/instances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/apis/instances/</guid><description>
+&lt;hr>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Kianda&amp;rsquo;s REST Application Programming Interface (API) for &lt;strong>instances&lt;/strong> allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on &lt;strong>process instances&lt;/strong>. A process instance is created every time data is either saved or submitted to Kianda&amp;rsquo;s database for a given process design, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/process-instance/">Process instance&lt;/a> for more details.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>Before you get started, there are three things to keep in mind:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To use API methods in Kianda you must have an &lt;strong>administrator&lt;/strong> role, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">View and edit user details&lt;/a> to see information on how to set roles.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Each API method requires a &lt;strong>Bearer token&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/apis/authentication/">Authentication&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Each of the following methods can be used on &lt;strong>process instances&lt;/strong> or records, where &lt;strong>{name}&lt;/strong> is the name of a process instance, such as &amp;rsquo;training-approval-request-1'.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="rest-api-methods">REST API Methods&lt;/h2>
+&lt;p>You can perform Create, Read, and Update operations on Kianda resources using standard HTTP method requests, as summarised below:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Method&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a href="#create-a-process-instance-post">POST&lt;/a>&lt;/td>
+&lt;td>Create a process instance&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#read/retrieve-a-process-instance-get">GET&lt;/a>&lt;/td>
+&lt;td>Read/Retrieve process instance fields&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="#update-a-process-instance-put">PUT&lt;/a>&lt;/td>
+&lt;td>Update a process instance&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>PATCH&lt;/td>
+&lt;td>Partially update a process instance&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Before any of the requests are used, you must have the bearer access token inserted into the request header, see &lt;a href="https://docs.kianda.com/docs/apis/authentication/">Authentication&lt;/a> for details.&lt;/p>
+&lt;h2 id="create-a-process-instance---post">Create a process instance - POST&lt;/h2>
+&lt;p>This request creates a process instance/new record. To use POST:&lt;/p>
+&lt;ol>
+&lt;li>Use the following request format:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/create
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>
+&lt;p>Ensure that the &lt;strong>bearer&lt;/strong> token is inserted into the authorisation header&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-instance.jpg" alt="Create instance example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Pass parameters into the body of the request, for example to create a new instance of a process called &amp;rsquo;new-training-process&amp;rsquo; where a textbox field called &amp;lsquo;Reason&amp;rsquo; will be prepopulated with a value:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;processName&amp;#34;&lt;/span> &lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;new-training-process&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;instanceID&amp;#34;&lt;/span> &lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;new-training-process&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;TriggerField&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;FieldsMappings&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:[{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;fieldname&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;reason&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;New employee&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;value&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;New employee&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;success&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#204a87;font-weight:bold">true&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;instanceID&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;new-training-process-70&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In the example above a new instance is created with an ID &amp;rsquo;new-training-process-70&amp;rsquo;. The new instance can be see in a List widget in a dashboard as follows.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/instance-api-example.jpg" alt="New instance example using Instance API">&lt;/p>
+&lt;p>In this example the &lt;strong>Reason&lt;/strong> text box is populated from the POST request.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/new-training-process-70.jpg" alt="New training process instance with field populated">&lt;/p>
+&lt;h2 id="readretrieve-process-instance-fields---get">Read/Retrieve process instance fields - GET&lt;/h2>
+&lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/{name}/fields?names=field1,field2..
+&lt;/code>&lt;/pre>&lt;pre>&lt;code>where `{name}`is the name of the process instance.
+&lt;/code>&lt;/pre>
+&lt;p>This request retrieves the values of multiple fields by name.&lt;/p>
+&lt;p>No Request Body is required.&lt;/p>
+&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;value&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="update-a-process-instance---put">Update a process instance - PUT&lt;/h2>
+&lt;pre tabindex="0">&lt;code>{{domain}}/api/instances/{name}
+&lt;/code>&lt;/pre>&lt;pre>&lt;code>where `{name}`is the name of the process instance.
+&lt;/code>&lt;/pre>
+&lt;p>This request updates all fields in the instance by performing a comparison based on version number, to ensure there are no duplicate process instances.&lt;/p>
+&lt;p>The &lt;strong>Request Body&lt;/strong> for the PUT request is:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ProcessName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;FieldsMappings&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;TriggerField&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ProcessName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;FieldsMappings&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;TriggerField&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;Status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

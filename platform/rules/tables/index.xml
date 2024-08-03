@@ -1,0 +1,832 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – Table rules</title><link>https://docs.kianda.com/platform/rules/tables/</link><description>Recent content in Table rules on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/platform/rules/tables/index.xml" rel="self" type="application/rss+xml"/><item><title>Platform: Loop table</title><link>https://docs.kianda.com/platform/rules/tables/loop-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/loop-table/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Loop table&lt;/strong> rule allows you to loop through table rows within a table of choice from within your process. When selected the rule allows you to trigger fields or rules to perform a particular action within the specified table. For example if a button is added to the table with an associated action, you can then trigger that action while looping through the table.&lt;/p>
+&lt;p>For example in the table below, there is a &lt;strong>Calculate total&lt;/strong> button in a Calculate total column. This button has a rule that will set a value in the field in the &lt;strong>Total&lt;/strong> column. Using the &lt;strong>Loop table&lt;/strong> rule every row is looped through and this &lt;strong>Calculate total&lt;/strong> button rule is triggered, completing the fields for each row in the &lt;strong>Total&lt;/strong> column.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/loop-table-purchase-table.jpg" alt="Edit rule - purchase table">&lt;/p>
+&lt;p>If the &lt;strong>Loop table&lt;/strong> rule isn&amp;rsquo;t used, the user has to manually click on the &lt;strong>Calculate Total&lt;/strong> button for each row, to populate the field in the &lt;strong>Total&lt;/strong> column.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>This rule is often used when the same action must be performed for multiple rows within a table.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>To demonstrate this rule, we will loop through a simple &lt;strong>Purchase table&lt;/strong> described in the introduction above, in which we will calculate the total price spent on each item bought. To learn more on how to add a table into your form go to In the table we will have the following columns:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Item&lt;/strong> - text box field representing the name of the item bought. To learn how to add a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Price&lt;/strong> - number field representing the price of the item. To learn how to add a number field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Quantity&lt;/strong> - number field representing the quantity of the item.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Total&lt;/strong> - number field representing the total quantity spent on the item.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Calculate total&lt;/strong> - a button with a &lt;strong>Set form field&lt;/strong> rule attached. To learn more on how to add and how to use the &lt;strong>Set form field&lt;/strong> go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field/">Set form field rule&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/loop-table-purchase-table.jpg" alt="Edit rule - purchase table">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>The goal in this example is to loop though the table and trigger the &lt;strong>Calculate total&lt;/strong> button so that for each item purchased, the total can be calculated depending on its quantity.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Loop table&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Loop table&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a table&lt;/strong> option, select the table you want to loop through.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a column field or rule to trigger&lt;/strong> option, select a field or rule you want to trigger when looping through the table. In this example, we will select the &lt;strong>Calculate total&lt;/strong> button from the table column.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/loop-table-edit-rule.jpg" alt="Edit rule - loop table">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable start action&lt;/strong> gives you two options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Yes&lt;/strong> - allows you to select a field that will execute before the loop starts.&lt;/li>
+&lt;li>&lt;strong>No&lt;/strong> - means no changes are made, the loop will execute straight away.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable end action&lt;/strong> gives you two options:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Yes&lt;/strong> - allows you to select a field that will execute after the loop finishes.&lt;/li>
+&lt;li>&lt;strong>No&lt;/strong> - means no changes are made, the loop will end without any action.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Add table row</title><link>https://docs.kianda.com/platform/rules/tables/add-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/add-table-row/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Add table row&lt;/strong> rule allows you to add rows within a specified table. You can set values for each field within the newly created row by mapping values into them. &lt;strong>For assigning values to each field&lt;/strong> in a row, you can use &lt;strong>manually typed text&lt;/strong> or use &lt;strong>other fields from your process&lt;/strong>. By default you need to give a value to a field in the newly created row, but can also add rows with &lt;strong>no values&lt;/strong>. You can do that by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button"> in the &lt;strong>New row mapping&lt;/strong> as shown in the image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-row-delete-mapping.jpg" alt="Add table row - delete mapping">&lt;/p>
+&lt;p>This will delete the mapping fields and allow you to add the rule without assigning values to a field in the new row. The new row mapping should look as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-row-empty-mapping.jpg" alt="Empty new row mapping">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule if you want more dynamic and more automated tables. By removing the original &lt;strong>add row&lt;/strong> button from the table and adding a new button with the &lt;strong>Add table row&lt;/strong> rule attached, you can map specific row fields to automatically appear with values when adding the rows. Take a look below how to add and use the &lt;strong>Add table row&lt;/strong> rule.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Add table row&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Add table row&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-row-edit-rule.jpg" alt="Edit rule - Add table row">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a table&lt;/strong> option, select the table you want to add a new row to. &lt;strong>New mapping options&lt;/strong> are presented when you select a table.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>New row mapping&lt;/strong> you have the option to assign values to newly created rows and the fields within it.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-row-mapping.jpg" alt="Add table row - mapping">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Table row field&lt;/strong> - allows you to select a field from the row which you want to map a value to.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value you want your row field to contain.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add mapping&lt;/strong> - you can choose to assign values to multiple row in your row by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">. &lt;strong>To add a row without any values&lt;/strong>, delete all mapping fields as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/add-row-empty-mapping.jpg" alt="Empty new row mapping">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Remove table row</title><link>https://docs.kianda.com/platform/rules/tables/remove-table-row/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/remove-table-row/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Remove table row&lt;/strong> rule allows you to remove rows within a specified table. The rule targets &lt;strong>only the last row&lt;/strong> in a table and will do nothing when there are no rows present in a table. You can apply conditions to this rule which will allow you to perform checks and only remove rows when a certain condition is met.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule paired up with the &lt;strong>Add table row&lt;/strong> rule. The add table rule will allow you to add a row with data in its columns and remove table row rule could be applied to a button, used to remove a row if wrong data has been entered. This gives the user the ability to add a row and remove rows. Give the remove table row rule a condition to make sure not to delete valuable data, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more detail. To learn more about &lt;strong>Add table row&lt;/strong> rule go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/add-table-row/">Add table row&lt;/a>.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to target when removing rows. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Remove table row&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Remove table row&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/remove-row-edit-rule.jpg" alt="Edit rule - Remove table row">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details. It is a good idea to add condition to this rule to prevent deleting valuable information from the table.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a table&lt;/strong> option, select the table you want to remove a row from.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Import CSV or Excel into Table</title><link>https://docs.kianda.com/platform/rules/tables/import-csv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/import-csv/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Import CSV&lt;/strong> rule allows you import a Comma-Separated Values (CSV) file and populate a specified table within your process. Using this rule automates and speeds up the process of populating a table when a lot of data is present. CSV files may look different depending on what program you will open it with, here is an example of a CSV file opened with &lt;strong>Excel&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/csv-file-excel.jpg" alt="CSV file - excel">&lt;/p>
+&lt;p>Here is the same file opened using &lt;strong>Notepad&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/csv-file-notepad.jpg" alt="CSV file - notepad">&lt;/p>
+&lt;p>As shown in the two images above, the format changes depending on what &lt;strong>program&lt;/strong> you &lt;strong>open&lt;/strong> the file with. Using the &lt;strong>Notepad&lt;/strong>, each column is &lt;strong>separated&lt;/strong> with a &lt;strong>comma&lt;/strong> and &lt;strong>each new line is a row&lt;/strong>. &lt;strong>Excel&lt;/strong> formats commas and new lines automatically and creates &lt;strong>numbers for rows&lt;/strong> and &lt;strong>letters for columns&lt;/strong>. The CSV file can be separated using &lt;strong>different separators&lt;/strong> other than comma. For example you can use &lt;code>;&lt;/code> as a separator, keep in mind that &lt;strong>Excel&lt;/strong> does &lt;strong>not format non-comma separated values correctly&lt;/strong> and the file will look as follows when opened using &lt;strong>Excel&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-semicolon.jpg" alt="CSV file - excel">&lt;/p>
+&lt;p>Here is the same file opened using &lt;strong>Notepad&lt;/strong>:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/csv-file-notepad-semicolon.jpg" alt="CSV file - excel">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule to populate a table when there is a lot of data present in a CSV file. Apply this rule to a process so that your table is populated &lt;strong>automatically&lt;/strong> when a process has been loaded.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work there are a couple of prerequisites needed inside of your process:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Table&lt;/strong> - needed to let the rule know which table will be populated using the csv file, for more detail on how to add a table go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>File&lt;/strong> - needed as a container to hold your csv file. Using a file control, you can upload a csv file and use that csv file to populate a table. For more detail on how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>Keep in mind that in order to populate a table within your process correctly, you need to have the &lt;strong>same amount of columns&lt;/strong> in the table as inside of the CSV file. For example a table looking as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-table.jpg" alt="Import CSV rule - Sample table">&lt;/p>
+&lt;p>This indicates that the CSV file that we want to import should have three columns:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-file.jpg" alt="CSV file">&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Import CSV&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Import CSV&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-edit-rule.jpg" alt="Edit rule - Import CSV">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select the CSV file field&lt;/strong> - select a file field containing a csv file. This file field needs to be &lt;strong>pre-created&lt;/strong> as it is a required field when using this rule. the csv file attached to this field will be used to populate the table.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>CSV separator&lt;/strong> - the default separator is a comma ( &lt;strong>,&lt;/strong> ) but you can set it to any character, number or symbol you want. Keep in mind that the separator fields separates each column of a row. For example you can have a file that looks as follows:&lt;/p>
+&lt;p>&lt;em>This image represents how a table looks like applying the Import CSV rule with a sample file and when the CSV separator is set to a comma ( &lt;strong>,&lt;/strong> ) see below:&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-comma.jpg" alt="Comma separated CSV file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Num cols. in CSV&lt;/strong> - this field represents the number of columns in your CSV file. From the example and image above, this field is set to three.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Skip first line&lt;/strong> - radio button asking whether to skip the first line or add the first line of the CSV file. If the first line of your CSV file represents the title of the column, you can select &lt;strong>Yes&lt;/strong> and the line will not be included in your table.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Destination table&lt;/strong> - field that allows you to select the table you want to target when populating data from the CSV file. New mapping options are presented when selecting a table.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-mapping.jpg" alt="Import CSV mapping options">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Table row field&lt;/strong> - select the row you want to target when setting a value.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>CSV field or text&lt;/strong> - you can select a field/column within your CSV file or type in text manually to represent the value you want your field to contain.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add mapping&lt;/strong> - you can choose to assign values to multiple fields in your row by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;p>Going back to the CSV separator example image, to achieve the correct mapping, we need to add three fields as shown below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/import-csv-mapping-fields.jpg" alt="Import CSV mapping options">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Existing rows behavior&lt;/strong> - you have two options when populating data into your selected table:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Override&lt;/strong> - will override all existing rows of your table with the new data from your CSV file.&lt;/li>
+&lt;li>&lt;strong>Append&lt;/strong> - will ignore the existing rows inside of your table and simply append all the new rows from your CSV file to the end of the table.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>CSV Date format&lt;/strong> - type in manually the data format that you have set in your CSV file. This applies to a column when it is of type &lt;strong>Date&lt;/strong>. The formatting of the date specified in tis field must be the same as in your CSV file. For example when your date format in the CSV file is DD/MM/YYYY and &lt;strong>CSV Date format&lt;/strong> option is set to YYYY/DD/MM, you can encounter date bugs in your table.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Export table as CSV</title><link>https://docs.kianda.com/platform/rules/tables/export-csv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/export-csv/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Export CSV&lt;/strong> rule allows you export a specified table from within your process into a CSV (Comma Separated Values) file. In the edit rule dialog box you can format how each value is separated and which columns to include and exclude when exporting. Keep in mind when exporting a table into a CSV format, it will export data for the following field types:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Text box&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Number&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Date&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Any other field types will be ignored, for example all control types from within &lt;strong>Layout&lt;/strong> and &lt;strong>Actions&lt;/strong> will be ignored.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule when you want to open the table with a notepad or excel. This rule is also useful when you want to share a table with other users, you can do that by exporting the table into a &lt;strong>File&lt;/strong> field and attaching the file into an email using the &lt;strong>Send email&lt;/strong> rule. To learn more about attaching a file into an email go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#attachments">Attachments&lt;/a>.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work there are a couple of prerequisites needed inside of your process:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Table&lt;/strong> - needed to let the rule know which table will be used to export into the CSV file, for more detail on how to add a table go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>File&lt;/strong> - needed as a container to hold your exported CSV file. When the table is exported into this file field, you can downloaded by clicking on the file name. For more detail on how to add a file field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Export CSV&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Export CSV&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/export-csv-edit-rule.jpg" alt="Edit rule - Export CSV">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details. It is a good idea to add condition to this rule to prevent exporting incomplete tables.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Origin table&lt;/strong> - field that allows you to select the table you want to target when exporting into a CSV file. When selecting a table, new options appear:&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Columns to export&lt;/strong> - this is a checklist allowing you to select or deselect columns from a table that you want to keep or dismiss from exporting into the CSV file. These fields will correspond to field names given in your table, see below image for an example.&lt;/p>
+&lt;p>&lt;em>Table with three columns will correspond to &lt;strong>Columns to export&lt;/strong> option in the export CSV edit rule dialog box.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/export-csv-columns.jpg" alt="Export to export checklist">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>CSV separator&lt;/strong> - the default separator is a comma &lt;code> ,&lt;/code> but you can set it to any character, number or symbol you want. Keep in mind that the separator fields separates each column of a row. For example you can have a file that looks as follows when setting this field with a semi-colon &lt;code>;&lt;/code>as shown with Notepad below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/export-csv-semicolon.jpg" alt="Semicolon separated csv file">&lt;/p>
+&lt;p>Keep in mind when exporting a table using a separator other than a comma &lt;code>,&lt;/code> and open it in Excel, the data will not be formatted correctly within Excel as it recognises columns when only separated by commas &lt;code>,&lt;/code> for example the above file is opened with Notepad while the image below shows the same exported file opened with Excel:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/export-csv-semicolon-excel.jpg" alt="Semicolon separated csv file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Include header row&lt;/strong> - radio button asking whether to include the header row meaning that the column title will be included or not.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Destination file field&lt;/strong> - field specifying the container which hold the csv file of the exported table. When the CSV file is present in the file field, the name of the file will be the same as the title of the table specified to export. For example if the title of a table is &lt;strong>Countries&lt;/strong>, the file will be called &lt;strong>Countrie.csv&lt;/strong>. You can download the file by clicking on the file name.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Copy table rows</title><link>https://docs.kianda.com/platform/rules/tables/copy-table-rows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/copy-table-rows/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Copy table rows&lt;/strong> rule allows you copy any field from within a specified table into another table within your process. You can select the same tables which will act similar to &lt;strong>Add table row&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/add-table-row/">Add table row&lt;/a> for more detail.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule when you want to copy specific fields from one table to another. You do not need to copy all columns from a row. For example, from a table row that has &lt;strong>Country&lt;/strong>, &lt;strong>City&lt;/strong>, &lt;strong>Currency&lt;/strong> columns, you can just copy the &lt;strong>City&lt;/strong> column.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table to copy from and to. It is possible to have only one table in your process but that will limit you to copy a row from the specific table to the same table.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Copy table rows&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Copy table rows&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-row-edit-rule.jpg" alt="Edit rule - Copy table rows">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Table to copy rows from&lt;/strong> - select the table you wish to copy fields from. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show.&lt;/li>
+&lt;li>&lt;strong>Table to copy rows to&lt;/strong> - select the table you wish to copy fields to. This field must be pre-created before adding this rule. You can select the same table as in the &lt;strong>Table to copy from&lt;/strong> section. This will act similar to add table row rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/add-table-row/">Add table row&lt;/a> for more detail.&lt;/li>
+&lt;/ul>
+&lt;p>When both the &lt;strong>Table to copy rows from&lt;/strong> and &lt;strong>Table to copy rows to&lt;/strong> are assigned, more options are presented.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Copy row conditions&lt;/strong> - allows you to add conditions to the fields you want to copy into the new table. These conditions work like filters. For example if a table looks like this:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-row-country-example.jpg" alt="Copy row table example">&lt;/p>
+&lt;p>We can set a condition using the &lt;strong>Copy row condition&lt;/strong> to copy only specific rows. For example we only want to copy the rows which contain the word &amp;ldquo;land&amp;rdquo; in the country field. To achieve this, the &lt;strong>Copy row condition&lt;/strong> would look as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-rows-copy-conditions.jpg" alt="Copy row mapping">&lt;/p>
+&lt;p>&lt;strong>Box 1&lt;/strong> represents the field from the table which you are copying from.&lt;/p>
+&lt;p>&lt;strong>Box 2&lt;/strong> represents the conditional check.&lt;/p>
+&lt;p>&lt;em>This is an example of the output using the conditions shown above. Note we are only copying the country and currency into the new table:&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-row-output-table.jpg" alt="Example output table">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Column mapping&lt;/strong> - allows you to assign values from fields within your process into the newly copied row.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-row-mapping.jpg" alt="Copy row mapping">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value you want your field in the new row to contain.&lt;/li>
+&lt;li>&lt;strong>To table&lt;/strong> - select the field from the table you are copying to, to contain the value specified in the &lt;strong>Field or text&lt;/strong> section.&lt;/li>
+&lt;li>&lt;strong>Add mapping&lt;/strong> - you can choose to set multiple fields of a row by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Clear table rows</title><link>https://docs.kianda.com/platform/rules/tables/clear-table-rows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/clear-table-rows/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Clear table rows&lt;/strong> rule allows you clear/delete all or some rows from a specified table in your process. This rule acts similar to &lt;strong>Remove table row&lt;/strong> except with the &lt;strong>Clear table rows&lt;/strong>, you can delete multiple rows and filter out which rows to delete by adding conditions. To learn more about &lt;strong>Remove table row&lt;/strong> go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/remove-table-row/">Remove table row&lt;/a>.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule when you want clear all rows from a table or by adding criteria to delete rows, you can filter out which rows to clear from the table.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to clear rows in. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Clear table rows&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Clear table rows&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/clear-rows-edit-rule.jpg" alt="Edit rule - Clear table rows">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Table to clear rows from&lt;/strong> - select the table you wish target when clearing rows from. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show. When the &lt;strong>Table to clear rows from&lt;/strong> is assigned, the &lt;strong>Criteria to delete rows&lt;/strong> is presented.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Criteria to delete rows&lt;/strong> - allows you to add a condition which works like a filter. Adding a condition will allow you to filter out which rows to delete and which to keep when using the &lt;strong>Clear table rows&lt;/strong> rule. For example if a table looks like this:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-row-country-example.jpg" alt="Copy row table example">&lt;/p>
+&lt;p>We can set a condition using the &lt;strong>Criteria to delete rows&lt;/strong> button. For example if we want to delete all rows in which the &lt;strong>Country&lt;/strong> field contains the word &amp;ldquo;land&amp;rdquo;. To achieve this, the &lt;strong>Criteria to delete rows&lt;/strong> would look as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-rows-copy-conditions.jpg" alt="Copy row mapping">&lt;/p>
+&lt;p>&lt;strong>Box 1&lt;/strong> represents the field from the table which you are clearing rows in.&lt;/p>
+&lt;p>&lt;strong>Box 2&lt;/strong> represents the conditional check.&lt;/p>
+&lt;p>&lt;em>This is an example of the output using the conditions shown above:&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/clear-rows-output-table.jpg" alt="Example output table">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Lookup value from table</title><link>https://docs.kianda.com/platform/rules/tables/lookup-value-from-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/lookup-value-from-table/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Lookup value from table&lt;/strong> rule allows you look for a column field within a row that contains a value specified in a lookup condition. When the lookup condition is met, you can extract any column value from that row and set a different field from within your process with that value.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule when you want to extract values from the first row when a condition is met.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you wanttarget when looking up values. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Lookup value from table&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Lookup value from table&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/lookup-table-edit-rule.jpg" alt="Edit rule - Lookup value from table">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Table to lookup value from&lt;/strong> - select the table you wish target when looking up values from. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show. When the &lt;strong>Table to lookup value from&lt;/strong> is assigned, two more options are presented:&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Table lookup conditions&lt;/strong> - allows you to add a condition that works like a filter. Adding a condition will allow you to target a column of a row and check if it has a specific value. For example checking if a currency column is equals to Euro, the condition will look as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/lookup-table-condition.jpg" alt="Copy row mapping">&lt;/p>
+&lt;p>&lt;strong>Box 1&lt;/strong> represents the column from a row which you are looking up.&lt;/p>
+&lt;p>&lt;strong>Box 2&lt;/strong> represents the value you are making the check against.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Lookup mapping&lt;/strong> - allows you to extract a value from the row that met the lookup condition.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Column to extract&lt;/strong> - select the specific column from the row to extract the value.&lt;/li>
+&lt;li>&lt;strong>Field to store extracted value&lt;/strong> - select a pre-created field to store the value from the selected column in the &lt;strong>Column to extract&lt;/strong> section.&lt;/li>
+&lt;li>&lt;strong>Add mapping&lt;/strong> - you can choose to extract multiple values from a row by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Update table values</title><link>https://docs.kianda.com/platform/rules/tables/update-table-values/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/update-table-values/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Update table values&lt;/strong> rule loops through a table allowing you to update column values. You can update all values in a selected column or update just the columns that match a condition.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule when you want to update a column value in rows that match the condition specified inside the rule.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to update values in. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Update table values&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Update table values&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/update-table-edit-rule.jpg" alt="Edit rule - Update table values">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Table to update&lt;/strong> - select the table you wish target to update values in. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show. When the &lt;strong>Table to update&lt;/strong> is assigned, three more options are presented:&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Table lookup conditions&lt;/strong> - allows you to add a condition that works like a filter. Adding a condition will allow you to target the specific row that the condition specifies. For example checking if a currency column is equal to Euro, the condition will look as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/lookup-table-condition.jpg" alt="Copy row mapping">&lt;/p>
+&lt;p>&lt;strong>Box 1&lt;/strong> represents the column from a row which you are looking up.&lt;/p>
+&lt;p>&lt;strong>Box 2&lt;/strong> represents the value you are making the check against.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Table column to update&lt;/strong> - allows you to select a column you want to update when a condition in the &lt;strong>Table lookup conditions&lt;/strong> option is met. This field will be updated with the value given in &lt;strong>Field or text to update table column with&lt;/strong> section.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Field or text to update table column with&lt;/strong> - you can select a field within your form or type in text manually to represent the value you want your updated column to contain.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Sort table</title><link>https://docs.kianda.com/platform/rules/tables/sort-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/sort-table/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Sort table&lt;/strong> rule loops through a table allowing you to sort data in an &lt;strong>ascending&lt;/strong> or &lt;strong>descending&lt;/strong> manner. In the rule options, you can select which column of the table to sort by. The column you select can be any of the &lt;strong>Control input&lt;/strong> fields, the sorting algorithm takes the numerical or text value of each field and sorts it accordingly. For example if there is a &lt;strong>User picker&lt;/strong> column in the table like shown below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sort-table-user-before.jpg" alt="Sort table users before sort">&lt;/p>
+&lt;p>The sorting algorithm will use the &lt;strong>text&lt;/strong> value or in this case the name of each user and sort it in an alphabetical order as the order is set to &lt;strong>ascending&lt;/strong>. Take note that the &lt;strong>Favorite Image&lt;/strong> column has also changes the order to the matching user as the sorting rule targets the whole row, &lt;strong>not just the column&lt;/strong>. The result of the sort is as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sort-table-user-after.jpg" alt="Sort table users before sort">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule when you want to sort a table in an ascending or descending manner. The rule allows you to select the column by which you want to sort it, a field which identifies that column will make your table dynamic and very versatile. For example having a &lt;strong>List&lt;/strong> field with options for all columns in your table.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table that you want to be sorted. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Sort table&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Sort table&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sort-table-edit-rule.jpg" alt="Edit rule - Sort table">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select a table&lt;/strong> - select the table you wish target when sorting values in. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Column to sort&lt;/strong> - allows you to select a column within your table you wish to sort by.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Sort order&lt;/strong> - radio button selection of the sorting order:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Asc&lt;/strong> - Ascending order. For example sorting number in an ascending order will look as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sort-table-asc.jpg" alt="Numbers Ascending">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Desc&lt;/strong> - Descending order. For example sorting number in an descending order will look as follows:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/sort-table-desc.jpg" alt="Numbers Descending">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add Sort&lt;/strong> - you can choose to set multiple columns to sort your table by clicking on &lt;strong>Add Sort&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Aggregate table</title><link>https://docs.kianda.com/platform/rules/tables/aggregate-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/aggregate-table/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Aggregate table&lt;/strong> rule loops through a table allowing you to aggregate a specific column and store the value in another field from within you process. There are three functions of the &lt;strong>Aggregate table&lt;/strong> rule which are &lt;strong>Sum&lt;/strong>, &lt;strong>Average&lt;/strong> and &lt;strong>Count&lt;/strong>. &lt;strong>Sum and Average&lt;/strong> only work on &lt;strong>number fields&lt;/strong> while &lt;strong>Count&lt;/strong> will &lt;strong>count the number of rows&lt;/strong> it looped through.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule to sum up all the values in a column or get the average. &lt;strong>Sum&lt;/strong> and &lt;strong>Average&lt;/strong> functions of the aggregate rule work only on number fields. The &lt;strong>Count&lt;/strong> function can be used to count the rows that the aggregate rule looped through.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work there are a couple of prerequisites needed inside of your process:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Table&lt;/strong> - needed to let the rule know which table will be used to aggregate columns together, for more detail on how to add a table go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box&lt;/strong> - needed as a container to hold the result from the aggregate. For more detail on how to add a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Aggregate table&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Aggregate table&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/aggregate-table-edit-rule.jpg" alt="Edit rule - Aggregate table">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select a table field&lt;/strong> - select the table you wish target when aggregating values. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Table aggregate conditions&lt;/strong> - allows you to add a condition that works like a filter. Adding a condition will allow you to target the specific row that the condition matches. For example, you want to aggregate all rows that the avarage score is more than 50%.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Operation&lt;/strong> - radio selection of the operation that you want performed on the aggregate rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Sum&lt;/strong> - counts all fields together and outputs the total(only works with numbers). Requires a &lt;strong>Number&lt;/strong> field within your table. To lean more on Number field, got to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Average&lt;/strong> - gets the average from all the values provided in a column(only works with numbers). Requires a &lt;strong>Number&lt;/strong> field within your table. To lean more on Number field, got to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Count&lt;/strong> - counts all row instances that the aggregate rule looped through.&lt;/li>
+&lt;li>&lt;strong>Select a number field to aggregate&lt;/strong> - allows you to select a number field within your table. It is only used with the &lt;strong>Sum&lt;/strong> and &lt;strong>Average&lt;/strong> operations.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Result field&lt;/strong> - select the field you want to store the value of the aggregation.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Auto update result&lt;/strong> - checkbox allowing you to enable or disable auto update. This will determine if the result field will be updated when more rows are added after the aggregation.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Hide or Show table column</title><link>https://docs.kianda.com/platform/rules/tables/hide-show-column/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/tables/hide-show-column/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Hide / Show column&lt;/strong> rule allows you change the visibility of a selected column within a table in a process. You can either disable or enable the property, you can also toggle between both of the visible states.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule to hide or show specific columns in your table. This rule is often used when hiding private data from users that do not need access to it. For example you can choose to show total earning column of a table to your managers but not other employees. You can also apply this rule to a button and give it the toggle function which will allow you to toggle the visible property of a column.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>For this rule to work you need to have one or more tables in your process. This will allow you to select a table in which you want to hide or show a column in. To learn how to add a table to your process go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Table&lt;/strong> &amp;gt; &lt;strong>Hide/Show column&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Hide/Show column&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/hide-show-table.jpg" alt="Edit rule - Aggregate table">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select a table to hide / show columns from&lt;/strong> - select the table you wish target. This table needs to be pre-created before adding this rule. If no table is selected in this field, an error message will show. When the table is selected, an &lt;strong>+ Add&lt;/strong> button appears. Click on it to add a field where you can select the column you wish to hide or show.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/hide-show-select-fields.jpg" alt="Select field and visible property">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>[1] Column to hide / show&lt;/strong> - select the column you want to target you want the &lt;strong>hide / show&lt;/strong> rule to apply to.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>[2] Visible&lt;/strong> - select to which visible property you want the column to be set to.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Hide&lt;/strong> - will set the visible property to disabled.&lt;/li>
+&lt;li>&lt;strong>Show&lt;/strong>- will set the visible property to enabled.&lt;/li>
+&lt;li>&lt;strong>Toggle visible&lt;/strong> - will set the visible property as the opposite of what it is. For example if the current state of the visible property is enabled, when this rule is triggered, it will set the visible property to disabled.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Add&lt;/strong> - you can choose to change visibile property of multiple columns in your table by clicking on &lt;strong>+ Add&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Table rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>

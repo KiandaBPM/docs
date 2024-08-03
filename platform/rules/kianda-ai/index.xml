@@ -1,0 +1,80 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – AI rules</title><link>https://docs.kianda.com/platform/rules/kianda-ai/</link><description>Recent content in AI rules on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/platform/rules/kianda-ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Platform: Text Analysis</title><link>https://docs.kianda.com/platform/rules/kianda-ai/text-analysis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/kianda-ai/text-analysis/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Text analysis&lt;/strong> rule allows you to analyse small or large amounts of text. There are &lt;strong>two functions&lt;/strong> for analysis with the &lt;strong>Text analysis&lt;/strong> rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Sentiment analysis&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Extract key phrases&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>With each function, the AI is programmed to distil information and meaning from a text block. For example, &lt;strong>extract key phrases&lt;/strong> function is programmed to extract most relevant words or expressions from a block of text. &lt;strong>Sentiment analysis&lt;/strong> on the other hand can be used to give a &lt;strong>Positive&lt;/strong> or &lt;strong>Negative&lt;/strong> result on feedback forms or item reviews and presented in a dashboard, see image below for an example dashboard sentiment analysis:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ai-rule-dashboard.jpg" alt="sentiment dashboard displaying score and feedback.">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule when you want to analyse large blocks of text into a &lt;strong>Positive&lt;/strong> or &lt;strong>Negative&lt;/strong> result with a percentage score, or when you want to extract key phrases.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>To be able to use the Text analysis rule, there a couple of prerequisites needed in your process. To use both functions, your process needs a &lt;strong>Text box field&lt;/strong> which will represent the text that is &lt;strong>targeted&lt;/strong> during &lt;strong>Text analysis&lt;/strong>. To learn more on how to add a text box to your process, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;p>To use the &lt;strong>Sentiment analysis&lt;/strong> function, you need the following:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Text box field&lt;/strong> - container which will store the computed sentiment result. &lt;strong>Positive&lt;/strong> or &lt;strong>Negative&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Number field&lt;/strong> - container used to store the &lt;strong>percentage score&lt;/strong> of the result. To learn on how to add a number field to your process, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>To use the &lt;strong>Extract key phrases&lt;/strong> function, you will need the following:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Text box field&lt;/strong> - container which will store all of the most relevant words or expressions.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Kianda AI&lt;/strong> &amp;gt; &lt;strong>Text analysis&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Text analysis&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/text-analysis-edit-rule.jpg" alt="Text analysis edit rule dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Input field containing text for analysis&lt;/strong> - select a field from within your process that you wish to target when analysing text.&lt;/li>
+&lt;li>&lt;strong>Text analysis function&lt;/strong> - from the radio list, select the desired text analysis function.
+&lt;ul>
+&lt;li>&lt;strong>Sentimental analysis&lt;/strong> - analysis text while giving it a positive or negative result along with the percentage score of the result.&lt;/li>
+&lt;li>&lt;strong>Extract key phrases&lt;/strong> - extract most relevant words or expressions from a block of text.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Text input language&lt;/strong> - select the language in which the targeted text is in. The choices are as follows:
+&lt;ul>
+&lt;li>&lt;strong>English&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>French&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>German&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Portuguese&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>When the &lt;strong>Sentiment analysis&lt;/strong> function is selected, fill out the following fields:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/text-analysis-sentiment.jpg" alt="Sentiment function options">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field to store computed sentiment (Negative or Positive)&lt;/strong> - select a field from your process to store the result of the analysis.&lt;/li>
+&lt;li>&lt;strong>Fields to store the sentiment score&lt;/strong> - select a field from your process to store the percentage score of the analysis.&lt;/li>
+&lt;/ul>
+&lt;p>When the Extract key phrases function is selected, fill out the following:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/text-analysis-phrases.jpg" alt="Extract key phrases function options">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Field to store computed key phrases&lt;/strong> - select a field from your process to store all of the most relevant words or expressions of the analysis.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>

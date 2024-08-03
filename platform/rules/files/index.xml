@@ -1,0 +1,478 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – File management rules</title><link>https://docs.kianda.com/platform/rules/files/</link><description>Recent content in File management rules on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/platform/rules/files/index.xml" rel="self" type="application/rss+xml"/><item><title>Platform: Copy file</title><link>https://docs.kianda.com/platform/rules/files/copy-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/files/copy-file/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Copy file&lt;/strong> rule allows you to &lt;strong>copy a file&lt;/strong> from one field in your form into another field in a different form. You can use this rule to copy files from &lt;strong>one datasource&lt;/strong> into &lt;strong>another&lt;/strong>, by using &lt;strong>different&lt;/strong> file fields for where you are copying &lt;strong>to&lt;/strong> and &lt;strong>from&lt;/strong>. For example if you want to copy a file from your &lt;strong>local file system&lt;/strong> to a &lt;strong>SharePoint&lt;/strong> location, set file fields for these locations, see gif below:&lt;/p>
+&lt;img src="https://docs.kianda.com/videos/gifs/common/copy-file.gif"/>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule when you need to copy files from one form to another or to transfer files from one datasource into a different one.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Copy file&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires two file fields in order to select the original file and the other is used to store the copied version. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Original version)&lt;/strong> - used to hold the file that you want to copy.&lt;/li>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Copied version)&lt;/strong> - used to store the copied version of the original file.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Copy file&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Copy file&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-edit-rule.jpg" alt="Edit rule - copy file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Copy from&lt;/strong> - select a file field which holds the file that you want to copy.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Copy to&lt;/strong> - select a file field which will store the copied version of the original file.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Copy mode&lt;/strong> - you have two options when copying a file from one field into another:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Override&lt;/strong> - when a file already exists in the &lt;strong>Copy to&lt;/strong> file filed and the copy rule is triggered again, the &lt;strong>Copy to&lt;/strong> file filed will get overridden by the new file from &lt;strong>Copy from&lt;/strong>. See example below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-override.jpg" alt="Override example">&lt;/p>
+&lt;p>When the &lt;strong>Copy file&lt;/strong> rule is triggered, the file &lt;strong>README.md&lt;/strong> in the &lt;strong>SharePoint datasource&lt;/strong> field will be &lt;strong>overridden&lt;/strong> by the &lt;strong>access_frame.png&lt;/strong> file in the &lt;strong>Local file system&lt;/strong> field. See below to see the result when &lt;strong>Copy file&lt;/strong> rule is triggered again:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-override-result.jpg" alt="Override example - result">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Append&lt;/strong> - when a file already exists in the &lt;strong>Copy to&lt;/strong> file filed and the copy rule is triggered again, the &lt;strong>Copy to&lt;/strong> file filed will be appended resulting in &lt;strong>multiple files&lt;/strong> in the &lt;strong>Copy to&lt;/strong> filed. See example below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-override.jpg" alt="Override example">&lt;/p>
+&lt;p>When the &lt;strong>Copy file&lt;/strong> rule is triggered, the file &lt;strong>access_frame.png&lt;/strong> in the &lt;strong>Local file system&lt;/strong> field will be &lt;strong>appended&lt;/strong> to the already existing &lt;strong>README.md&lt;/strong> file in the &lt;strong>SharePoint datasource&lt;/strong> field. See below to see the result when &lt;strong>Copy file&lt;/strong> rule is triggered again:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/copy-file-append-result.jpg" alt="Override example - result">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>You can use this rule to copy files &lt;strong>from one datasource into another&lt;/strong>. In the file field options of the &lt;strong>Copy to&lt;/strong> field, set the &lt;strong>destination&lt;/strong> to a datasource you want to copy a file into. To learn how to &lt;strong>change the destination&lt;/strong> option in a file field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
+&lt;p>​&lt;/p></description></item><item><title>Platform: Convert to PDF</title><link>https://docs.kianda.com/platform/rules/files/convert-to-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/files/convert-to-pdf/</guid><description>
+&lt;p>The &lt;strong>Convert to PDF&lt;/strong> rule allows you to convert a Word document (.doc or .docx) into a PDF (.pdf) file. This rule is very useful when sharing Word documents using the &lt;strong>send email&lt;/strong> rule, the &lt;strong>Convert to PDF&lt;/strong> rule will convert a file into PDF which can be &lt;strong>attached&lt;/strong> to an email. This will allow other users to open the PDF file on any device.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can use this rule when you need to convert a .doc or .docx file into a PDF. PDF files are very useful as they can be opened on any device.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Convert to PDF&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires two file fields in order to select a &lt;strong>Word document&lt;/strong> file and the other is used to store the &lt;strong>converted PDF version&lt;/strong>. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Word document)&lt;/strong> - used to hold the Word document file that you want to convert.&lt;/li>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Converted PDF file)&lt;/strong> - used to store the converted PDF version of the original Word document file.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Convert to PDF&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Convert to PDF&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/convert-to-pdf-edit-rule.jpg" alt="Edit rule - convert to PDF">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Convert Word File&lt;/strong> - used to hold the Word document file that you want to convert.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Converted PDF File&lt;/strong> - used to store the converted PDF version of the original Word document file.&lt;/p>
+&lt;p>See below for an example of a Word document before and after conversion, note the file extension in the &lt;strong>Word file&lt;/strong> field before converting into a PDF:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/convert-to-pdf-example-before.jpg" alt="Convert to pdf before">&lt;/p>
+&lt;p>Below is an image representing the result after converting the Word document file into a PDF, note the file extension in the &lt;strong>Converted PDF file&lt;/strong> field:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/convert-to-pdf-example.jpg" alt="Edit rule - convert to PDF">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>When converting files to a &lt;strong>PDF format&lt;/strong>, you can set the &lt;strong>destination&lt;/strong> of the &lt;strong>converted file field&lt;/strong> to a location where you want to &lt;strong>store&lt;/strong> the PDF. This will save you some time as you will not have to &lt;strong>download&lt;/strong> the converted file because the &lt;strong>destination&lt;/strong> that you choose in the file field will keep a separate copy.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Generate Word document</title><link>https://docs.kianda.com/platform/rules/files/generate-word-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/files/generate-word-document/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This rule generates a Word document from data &lt;strong>stored in the process&lt;/strong> using a Word &lt;code>.docx&lt;/code> template. The Word &lt;strong>template&lt;/strong> needs to be &lt;strong>pre-created&lt;/strong> before using this rule and must be &lt;strong>attached to a file field&lt;/strong>, this way the rule will know which template you want to use when creating the document. The &lt;strong>Generate&lt;/strong> &lt;strong>Word document&lt;/strong> rule can also convert the Word document into a PDF right after generating the document.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule when your process requires &lt;strong>dynamic document generation&lt;/strong> where the structure of those documents is the same for every instance but the values are different. This rule will use a &lt;strong>Word template&lt;/strong> previously mapped with &lt;strong>smart tags&lt;/strong>. Smart tags are created in Word when a field is selected using the Kianda add-in task pane, and then inserted into the document, see image below for more details:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/word-add-in-smart-tag.jpg" alt="Smart tag explanation">&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Generate Word document&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires &lt;strong>two file fields&lt;/strong>, one for storing the Word template and the other for storing the generated Word document or PDF. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Template)&lt;/strong> - used as a container to store the Word template used to generate the Word document.&lt;/li>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Generated Word Document)&lt;/strong> - used as a container to store the generated Word document.&lt;/li>
+&lt;/ul>
+&lt;p>A Word template that is used to generate the Word document also needs to be &lt;strong>pre-created&lt;/strong> using the &lt;strong>Kianda add-in for Word&lt;/strong>. You can make each generated Word document very &lt;strong>dynamic&lt;/strong> by using the &lt;strong>smart tags&lt;/strong> that Kianda add-in uses to &lt;strong>retrieve&lt;/strong> information for your form fields and places the values into the word document when generating it. To learn more about how to install and use Kianda add-in, go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/word-document-add-in/">Word document add-in&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Generate Word document&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Generate Word document&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/word-doc-rule-edit.jpg" alt="Edit rule - copy file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select a document template&lt;/strong> - select a file field that stores the word template. Your template can pull all values from &lt;strong>Input&lt;/strong> fields in the &lt;strong>Controls&lt;/strong> section of Kianda. For example if a text box field contains &amp;ldquo;This is a test&amp;rdquo; text, the value pulled into the generated word document is &amp;ldquo;This is a test&amp;rdquo;, see image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/word-doc-fields2.jpg" alt="word document example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Select a document destination&lt;/strong> - select a file field that will store the generated word document.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Convert to PDF&lt;/strong> - radio button list which indicates whether you want to convert the generated document into a PDF file or not.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>When using this rule, create a &lt;strong>utility panel&lt;/strong> and make it &lt;strong>invisible&lt;/strong> to other users. You can then &lt;strong>move&lt;/strong> the Word template file filed and the generated word document file field inside the utility panel. This way other users will not be able to see the &lt;strong>unnecessary&lt;/strong> file fields and will not be able to &lt;strong>tamper&lt;/strong> with them. To see an example of a utility panel, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/inspect-form/#creating-a-utility-panel">Creating a utility panel&lt;/a>.&lt;/li>
+&lt;li>You can use the &lt;strong>Convert to PDF&lt;/strong> function of the rule to convert the generated word document into a PDF file &lt;strong>instead&lt;/strong> of using the &lt;strong>Convert to PDF rule&lt;/strong> which is also available in the &lt;strong>File management&lt;/strong> rules.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Generate excel workbook</title><link>https://docs.kianda.com/platform/rules/files/generate-excel-document/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/files/generate-excel-document/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This rule generates an Excel workbook from data &lt;strong>stored in a process&lt;/strong> using an Excel &lt;code>.xlsx&lt;/code> template. The Excel &lt;strong>template&lt;/strong> needs to be &lt;strong>pre-created&lt;/strong> before using this rule and must be &lt;strong>attached to a file field&lt;/strong>, this way the rule will know which template you want to use when creating the workbook.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule when your process requires &lt;strong>dynamic workbook generation&lt;/strong> where the structure of those workbooks is the same for every instance, but the values of fields are different. Use this rule with combination of the &lt;strong>Table&lt;/strong> control to output big tables and transfer them into the Excel workbook, to learn more about table control go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>. This rule will use an &lt;strong>Excel template&lt;/strong> previously mapped with &lt;strong>smart tags&lt;/strong>. Smart tags are created in Excel when a field is selected using the Kianda add-in task pane, and then inserted into the document, see image below for more details.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/excel-add-in-smart-tag.jpg" alt="Smart tag explanation">&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Generate Excel workbook&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires &lt;strong>two file fields&lt;/strong>, one for storing the Excel template and the other for storing the generated Excel workbook. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Template)&lt;/strong> - used as a container to store the Excel template used to generate the workbook.&lt;/li>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Generated Excel workbook)&lt;/strong> - used as a container to store the generated Excel workbook.&lt;/li>
+&lt;/ul>
+&lt;p>An Excel template that is used to generate the Excel workbook also needs to be &lt;strong>pre-created&lt;/strong> using the &lt;strong>Kianda add-in for Excel&lt;/strong>. You can make each generated Excel workbook very &lt;strong>dynamic&lt;/strong> by using the &lt;strong>smart tags&lt;/strong> that Kianda add-in uses to &lt;strong>retrieve&lt;/strong> information for your form fields and places the values into the Excel workbook when generating it. To learn more about how to install and use Kianda add-in in Excel, go to &lt;a href="https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/">Excel workbook add-in&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Generate excel workbook&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Generate excel workbook&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/generate-excel-edit-rule.jpg" alt="Edit rule - copy file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Excel workbook template&lt;/strong> - select a file field that stores the Excel template. Your template can pull all values from &lt;strong>Input&lt;/strong> fields in the &lt;strong>Controls&lt;/strong> section of Kianda. For example if a text box field contains &amp;ldquo;This is a test&amp;rdquo; text, the value pulled into the generated Excel workbook is &amp;ldquo;This is a test&amp;rdquo;.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/generate-excel-example.jpg" alt="word document example">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Generated workbook destination&lt;/strong> - select a file field that will store the generated word document.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule, click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>When using this rule, create a &lt;strong>utility panel&lt;/strong> and make it &lt;strong>invisible&lt;/strong> to other users. You can then &lt;strong>move&lt;/strong> the Excel template file field and the generated Excel workbook file field inside the utility panel. This way other users will not be able to see the &lt;strong>unnecessary&lt;/strong> file fields and will not be able to &lt;strong>tamper&lt;/strong> with them. To see an example of a utility panel, go to &lt;a href="https://docs.kianda.com/docs/examples/inspection/inspect-form/#creating-a-utility-panel">Creating a utility panel&lt;/a>.&lt;/li>
+&lt;li>Use this rule when working with &lt;strong>tables&lt;/strong> inside of Kianda. It is very easy to create an Excel spreadsheet by &lt;strong>transferring data&lt;/strong> from your processes into Excel using the &lt;strong>Excel add-in&lt;/strong>. Use &lt;strong>smart tags&lt;/strong> from the add-in to add a table, the data from your table will be transferred into the Excel spreadsheet without manually typing them. See &lt;a href="https://docs.kianda.com/docs/platform/document-generation/excel-workbook-add-in/">Excel workbook add-in&lt;/a> for more detail.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Set existing file</title><link>https://docs.kianda.com/platform/rules/files/set-file-field/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/files/set-file-field/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Set existing file&lt;/strong> rule allows a user to &lt;strong>create&lt;/strong> a file and &lt;strong>assign&lt;/strong> it into a &lt;strong>file field&lt;/strong> based on a provided file &lt;strong>URL path&lt;/strong>. For example if you have access to a file &lt;strong>stored&lt;/strong> in the &lt;strong>cloud&lt;/strong> and have the URL, you can use this URL to &lt;strong>download&lt;/strong> the file from the internet and place it in a file field with a name. The &lt;strong>name&lt;/strong> you give to the &lt;strong>downloaded&lt;/strong> file must &lt;strong>contain the extension&lt;/strong>, for example if the file stored in the cloud is a PDF file and you want the name of the file to be &amp;ldquo;Workbook&amp;rdquo;, then you need to set the name of the file to &lt;code>Workbook.pdf&lt;/code>. You must provide the &lt;strong>correct extension&lt;/strong> for the file otherwise the created file will &lt;strong>not be downloadable.&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/set-file-extension2.jpg" alt="Correct file extension">&lt;/p>
+&lt;h3 id="when-to-use">When to use&lt;/h3>
+&lt;p>Use this rule when your process requires you to bring an existing file that you have a link to but not the file itself. For example if you have a &lt;strong>link&lt;/strong> that &lt;strong>leads&lt;/strong> to a file that is &lt;strong>stored&lt;/strong> in a &lt;strong>SharePoint&lt;/strong> datasource, you can bring this file into your process by using this rule and storing it in a file field.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Set existing file&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires &lt;strong>one file field&lt;/strong> in order to &lt;strong>store&lt;/strong> the file which is created from the given URL.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(required)&lt;/strong> - used to store the created file from the given URL. To learn more on &lt;strong>File&lt;/strong> fields go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Set existing file&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Set existing file&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/set-file-edit-rule.jpg" alt="Edit rule - set existing file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>f you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Set File&lt;/strong> - file field used as a container to &lt;strong>store&lt;/strong> the created file using the given URL.&lt;/li>
+&lt;li>&lt;strong>FileName field or text&lt;/strong> - you can select a field within your form or type in text manually to &lt;strong>represent&lt;/strong> the &lt;strong>name&lt;/strong> you want your created file to have.&lt;/li>
+&lt;li>&lt;strong>File URL field or text&lt;/strong> - you can select a field within your form or type in text manually to &lt;strong>represent&lt;/strong> the &lt;strong>URL&lt;/strong> used to create the file.&lt;/li>
+&lt;/ul>
+&lt;p>Using a field for the &lt;strong>name&lt;/strong> and a field for the &lt;strong>URL&lt;/strong> will allow you to create a &lt;strong>different files&lt;/strong> with a &lt;strong>different names&lt;/strong> every time you use this rule, see the image below and note how the &lt;strong>File name&lt;/strong> field corresponds to the created file in the &lt;strong>File&lt;/strong> field:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/set-file-result.jpg" alt="created file ussing fields">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>Create a &lt;strong>Text box field&lt;/strong> that can be used to change the URL every time you want to create a file. This will make the rule dynamic and versatile. To laern more about text box field and how to create one, got to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;li>Create another &lt;strong>Text box field&lt;/strong> that can be used to change the name of the file every time you want to create it from a URL.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Merge PDF</title><link>https://docs.kianda.com/platform/rules/files/merge-pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/files/merge-pdf/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Merge PDF&lt;/strong> rule allows you to &lt;strong>combine&lt;/strong> two or more &lt;code>.pdf&lt;/code> files together. It is also possible to &lt;strong>combine&lt;/strong> image files to the PDF file, for example &lt;code>.png&lt;/code> or &lt;code>jpg&lt;/code>. This rule can be useful when creating one large PDF document from smaller files. The generated file name will be the same as the first file used to merge, see image below for an example:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/merge-pdf-name.jpg" alt="Generated PDF file name">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule when your process requires you to merge &lt;strong>dynamically&lt;/strong> two or more PDF files. For example &lt;strong>automatically&lt;/strong> merge expense receipts submitted by users into a single PDF files containing all images or PDF receipts.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Merge PDF&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires at least 3 file fields, which are used to select files that you want to merge and a file field to store the &lt;strong>merged PDF&lt;/strong>. To learn how to add a file go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(To be merged file #1)&lt;/strong> - used to hold the first file that you want to merge.&lt;/li>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(To be merged file #2)&lt;/strong> - used to hold the second file that you want to merge.&lt;/li>
+&lt;li>&lt;strong>File field&lt;/strong> &lt;strong>(Merged PDF file)&lt;/strong> - used to store the merged PDF version of the two files.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Merge PDF&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Merge PDF&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/merge-pdf-edit-rule.jpg" alt="Edit rule - copy file">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Files to be merged (PDF OR Images)&lt;/strong> - select a file field which contains a PDF file or an image. Note that in order to merge PDF and image files, your first merging file must be a &lt;code>.pdf&lt;/code> file followed by other image files, see image below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/merge-pdf-images.jpg" alt="PDF files merged with images">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>+Add more files&lt;/strong> - you can choose to merge multiple PDF or image files together by clicking on &lt;strong>Add more files&lt;/strong> button. You can also remove file fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">. Adding more file fields will allow you to attach more PDF or images files that you want to merge, see below image as an example:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/merge-pdf-mulitiple-files.jpg" alt="Multiple files to be merged">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Merged PDF file&lt;/strong> - select a file field from your process that you want use to store your merged PDF file.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>When merging file with this rule, you need to place the &lt;code>.pdf&lt;/code> file first followed by the image files.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Create a file anonymous link</title><link>https://docs.kianda.com/platform/rules/files/create-a-file-anonymous/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/files/create-a-file-anonymous/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>The &lt;strong>Create a file anonymous link&lt;/strong> rule enables you to create a link to a file from your process. The link is &lt;strong>fully anonymous&lt;/strong> which means anybody can &lt;strong>access&lt;/strong> the file if they have the link. You can set an expiry time of the link (in hours), the count down will start from the time the link was created. It is possible to create anonymous link for multiple files as long as your file field supports it, see image below for an example:&lt;/p>
+&lt;p>&lt;em>Multiple files uploaded to a file field.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-file-multiple-files.jpg" alt="Multiple files in a file field">&lt;/p>
+&lt;p>&lt;em>File field settings to allow multiple files to be uploaded.&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-file-settings.jpg" alt="Multiple files in a file field">&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>Use this rule when your process or application requires sharing anonymously a file stored in one of the supported file connectors. For example when sharing a file link to a report stored behind an authenticated file system.&lt;/p>
+&lt;p>Add this rule to any form element.&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Anonymous form link&lt;/strong>, in your process you need to have created at least one or more forms. The create a file anonymous link rule also requires two control fields in order to store a file which you want to share and a text box control for storing the link. You can also create another text box or a number field to store the link duration, this field is optional but can be a good idea if you want to customise the duration of the link dynamically.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>File field&lt;/strong> - used to store the file which you want to create a link to. To learn how to create a file filed go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box field&lt;/strong> - used to store the generated anonymous link which can be shared with other users. To learn how to create a text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box or Number field (optional)&lt;/strong> - allows you to determine the duration of the link in hours. To learn hot to create a number field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>File management&lt;/strong> &amp;gt; &lt;strong>Create a file anonymous link&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Create a file anonymous link&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-file-edit-rule.jpg" alt="Edit rule -Create a file anonymous link">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Select a file field to create anonymous link(s) for&lt;/strong> - select the field that contain the file that you want to create the link for.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Link duration in hours (Default is 6 hours)&lt;/strong> - an optional field indicating the link expiry in hours.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Select a filed to store resulting anonymous link(s)&lt;/strong> - field to store the generated link. When there are multiple files uploaded to create the links for, the resulted links will be displayed between square brackets&lt;code>[]&lt;/code> and separated by a &lt;code>,&lt;/code> see below image:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-file-links.jpg" alt="Multiple links result">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>When you are finished editing the dialog box, click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>When sharing an anonymous link with someone, use the send email rule and attach the link in the body of the email. Make sure to generate the link before sending the email.&lt;/li>
+&lt;li>To make the rule versatile with setting the duration time, create a text box or a number field and select it in the &lt;strong>Link duration in hours&lt;/strong> field. This way you can set the expiry of the link every time you create one.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other File management rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/files/">File management rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>

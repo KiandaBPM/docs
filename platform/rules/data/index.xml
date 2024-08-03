@@ -1,0 +1,291 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – Data rules</title><link>https://docs.kianda.com/platform/rules/data/</link><description>Recent content in Data rules on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/platform/rules/data/index.xml" rel="self" type="application/rss+xml"/><item><title>Platform: Set form field rule</title><link>https://docs.kianda.com/platform/rules/data/set-form-field/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/data/set-form-field/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Using the &lt;strong>Set form field&lt;/strong> rule you have the ability to select a field within your process and assign it a value using manually typed text or an expression. With the &lt;strong>Set form field&lt;/strong> rule you can set multiple fields at once by adding more fields to the value mapping within the rule.&lt;/p>
+&lt;p>This rule is useful when automating processes with previously provided information from other forms. You can apply this rule to a form which will activate the rule when the form is loaded. You can pass query strings and apply the Set form field rule assign values to fields when opening form for the first time. To learn more about query strings go to &lt;a href="https://docs.kianda.com/docs/platform/pages/link/#heading">Query strings&lt;/a>.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Data&lt;/strong> &amp;gt; &lt;strong>Set form field&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Set form field&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/set-field-edit-rule.jpg" alt="Edit rule - Set form field dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Field value mapping&lt;/strong> section, you can select which fields to set and what values to give them. You can do that with the following fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Form field to set&lt;/strong> - this dropdown list is used to select a field from within your process that you want to set.&lt;/li>
+&lt;li>&lt;strong>Value or expression&lt;/strong> - in this field you are able to type in text manually to set the value for a desired field. To make this rule dynamic and use other fields as values, you can use expressions. To learn more about expressions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder/">Expression builder&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Add mapping&lt;/strong> - you can choose to set multiple fields in your process by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Find items data rule</title><link>https://docs.kianda.com/platform/rules/data/find-items/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/data/find-items/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This rule implements the Read function which is one of the four CRUD (Create, Read, Update and Database) functions. The rule will read one or more items of data from a chosen data source, for example SharePoint, SAP or Oracle databases, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for more details.&lt;/p>
+&lt;p>This rule is used to find an item from your data connections. To find an item, you could use a data source filter which acts as a conditional bridge between Kianda and data connections. If the condition is true, you could map the data source field or text to the Kianda form field.&lt;/p>
+&lt;p>This rule is used to perform a query and return data for use in the form. The data may be stored locally or in one of the data sources&lt;/p>
+&lt;p>The Data source filter is useful when you want to query data from a specific user using a unique identifier like an Id, name or email.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Data&lt;/strong> &amp;gt; &lt;strong>Find items&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Find items&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/find-items-edit-rule.jpg" alt="Edit rule - Assign form dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Select data source&lt;/strong> button &lt;img src="https://docs.kianda.com/images/button-select-data-source.jpg" alt="Select data source"> to select the desired data source. When you select your data source, new mappings options are presented.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/find-items-mapping.jpg" alt="Find items - mapping">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Data source filter&lt;/strong> - this is used to filter data within your datasource. It works on condition bases which allows you to pull wanted and unwanted data back into the process. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Map results to table&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Yes&lt;/strong> - selecting this option will allow you to map results to a table and opens the following options below:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/find-items-table-map.jpg" alt="Find items - mapping">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Select a table&lt;/strong> - allows you to select a table from within your process which will be populated by mapping. This is useful when you want to display a lot of data from the datasource.&lt;/li>
+&lt;li>&lt;strong>Existing rows behaviour&lt;/strong>:
+&lt;ul>
+&lt;li>&lt;strong>Override&lt;/strong> - will override any duplicate date therefore will keep the last duplicate inside of the table.&lt;/li>
+&lt;li>&lt;strong>Append&lt;/strong> - will add any duplicate data to the table and therefore all occurrence of data will be displayed in the table.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Enable server paging&lt;/strong> - enables the server paging configurations. For example if your data source has 10 row per page, enabling this option will force the table to have 10 rows per page.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>No&lt;/strong> - selecting this option will only pull the first occurrence from your data source.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Results mapping&lt;/strong> - is used to set fields within your form from the datasource itself. To learn more about results mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success Mapping&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>On error mapping&lt;/strong> - you can expand this option by clicking on it, then add fields where you can display any error message that may have occurred during the mapping process. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-error-mapping">On Error Mapping&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Max rows&lt;/strong> - will allow you to set a number of fields to be displayed within a table.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Sort By&lt;/strong> - allows you to sort the results of your datasource within the mapped rows of the table.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Create data item rule</title><link>https://docs.kianda.com/platform/rules/data/create-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/data/create-item/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This rule implements the Create function which is one of the four CRUD (Create, Read, Update and Database) functions. The rule will create one or more items of data from a chosen data source, for example SharePoint, SAP or Oracle databases, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for more details.&lt;/p>
+&lt;p>The &lt;strong>Create item&lt;/strong> rule allows you to create an item of any type in the specified data connector. When applying this rule, you must select a data source in which you want to create the item. When the data source is connecter, you can map inputs from your form fields into your source. Also, you could map a data source field or text back to Kianda on success or store an error message on failure.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Data&lt;/strong> &amp;gt; &lt;strong>Create item&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Create item&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-item-edit-rule.jpg" alt="Edit rule - Assign form dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Select data source&lt;/strong> button &lt;img src="https://docs.kianda.com/images/button-select-data-source.jpg" alt="Select data source">to select the data source you want to create a new item in. When you select your data source, new mapping options are presented.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/create-item-mapping.jpg" alt="create item - mapping options">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Input mapping&lt;/strong> - used to create an item inside of the data source that you selected.
+&lt;ul>
+&lt;li>&lt;strong>Form field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value you want to your new item to contain.&lt;/li>
+&lt;li>&lt;strong>Data source field&lt;/strong> - select a field in your data source to hold the new value.&lt;/li>
+&lt;li>&lt;strong>Add mapping&lt;/strong> - you can choose to create multiple items in your data source by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>On success mapping&lt;/strong> - select the field(s) in the form which will store information and populate the &lt;strong>data source field or text&lt;/strong> field with the respective data source value. To learn more about success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success Mapping&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>On error mapping&lt;/strong> - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-error-mapping">On Error Mapping&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Update data item rule</title><link>https://docs.kianda.com/platform/rules/data/update-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/data/update-item/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This rule implements the Update function which is one of the four CRUD (Create, Read, Update and Database) functions. The rule will read one or more items of data from a chosen data source, for example SharePoint, SAP or Oracle databases, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for more details.&lt;/p>
+&lt;p>The &lt;strong>Data source filter&lt;/strong> in this rule is used for targeting specific data item in your data connection. The item you want to update within your data source is targeted by filtering it out using a field within your form. It is a good idea to connect a dummy field to your data source first and then use that field to filter for the item you want to update. The actual value used to update the item in your data source can also use a field or text filled out in your mapping section (see below for more detail). To make your &lt;strong>Update item&lt;/strong> rule extremely dynamic, it is recommended to create field for filtering an item and a separate field for the new value you want your item to hold.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>The Update item rule should be used whenever you want to update an existing item within a data source of your choice.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the &lt;strong>Edit/pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Data&lt;/strong> &amp;gt; &lt;strong>Update item&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Update item&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/update-item-edit-dialog.jpg" alt="Edit rule - Update form dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Select data source&lt;/strong> button &lt;img src="https://docs.kianda.com/images/button-select-data-source.jpg" alt="Select data source">to select the data source you want to update an item in. When you select your data source, new mapping options are presented.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/update-item-mapping.jpg" alt="update item - mapping options">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Data source filter&lt;/strong> - works on condition bases where by you can filter the specific item that you want to update within your data source. The condition uses a field from within your form and therefore it is good practice to create a field and connect it to your data source to have the ability of selecting an item that you want to update. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Input mapping&lt;/strong> - used to update an item inside of the datasource that you selected. Within this section the following fields are visible:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Form field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value you want your updated item to contain.&lt;/li>
+&lt;li>&lt;strong>Data source field&lt;/strong> - select a field in your data source to hold the new value.&lt;/li>
+&lt;li>&lt;strong>Add mapping&lt;/strong> - you can choose to create multiple items in your data source by clicking on &lt;strong>Add mapping&lt;/strong> button. You can also remove fields by clicking on the &lt;strong>Bin/Trash&lt;/strong> icon &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>On success mapping&lt;/strong> - select the field(s) in the form which will store information and populate the &lt;strong>data source field or text&lt;/strong> field with the respective data source value. To learn more about success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success Mapping&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>On error mapping&lt;/strong> - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-error-mapping">On Error Mapping&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Ignore mapping for blank fields&lt;/strong> - used to check if there are any blank field that need to be updated on the datasource. For example, if there are two fields to be updated and the user wants to update only one, and leaves the other blank, then the filled out field is updated and the other field is left unchanged.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Delete data item rule</title><link>https://docs.kianda.com/platform/rules/data/delete-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/data/delete-item/</guid><description>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>This rule implements the Delete function which is one of the CRUD (Create, Read, Update and Database) functions. The rule will delete an item data from a chosen data source, for example SharePoint, SAP or Oracle databases, see &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for more details.&lt;/p>
+&lt;p>The &lt;strong>Data source filter&lt;/strong> in this rule is used for targeting specific data item in your data connection. The item you want to delete within your data source is targeted by filtering it out using a field within your form. It is a good idea to connect a dummy field to your data source first and then use that field to filter for the item you want to delete.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>The Delete item rule should be used whenever you want to delete an existing item within a data source of your choice.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Data&lt;/strong> &amp;gt; &lt;strong>Delete item&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Delete item&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/delete-item-edit-rule.jpg" alt="Edit rule - Delete item dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Select data source&lt;/strong> button &lt;img src="https://docs.kianda.com/images/button-select-data-source.jpg" alt="Select data source">to select the data source you want to update an item in. When you select your data source, new mapping options are presented.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/delete-item-mapping.jpg" alt="Delete item - mapping options">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Data source filter&lt;/strong> - works on condition bases where by you can filter the specific item that you want to delete from your data source. The condition uses a field from within your form and therefore it is good practice to create a field and connect it to your data source to have the ability of selecting an item that you want to delete. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>On success mapping&lt;/strong> - select the field(s) in the form which will store information and populate the &lt;strong>data source field or text&lt;/strong> field with the respective data source value. To learn more about success mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-success-mapping">On Success Mapping&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>On error mapping&lt;/strong> - select the field(s) in the form which will store error messages. Then type in a value or use Error message, to create a system generated error message if an error occurs during rule execution. To learn more about error mapping go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/#on-error-mapping">On Error Mapping&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
+&lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
+&lt;ol>
+&lt;li>To &lt;strong>disable&lt;/strong> a rule click the slider across beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>copy&lt;/strong> a rule, click on the &lt;strong>Duplicate&lt;/strong> button &lt;img src="https://docs.kianda.com/images/duplicate-button.jpg" alt="Duplicate button"> beside the rule name.&lt;/li>
+&lt;li>To &lt;strong>delete&lt;/strong> a rule, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin/Trash button">.&lt;/li>
+&lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other Data rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>

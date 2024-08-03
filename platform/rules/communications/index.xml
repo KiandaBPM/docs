@@ -1,0 +1,582 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – Communication rules</title><link>https://docs.kianda.com/platform/rules/communications/</link><description>Recent content in Communication rules on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/platform/rules/communications/index.xml" rel="self" type="application/rss+xml"/><item><title>Platform: Send email</title><link>https://docs.kianda.com/platform/rules/communications/send-email/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/communications/send-email/</guid><description>
+&lt;p>This rule sends an email according to a predefined template. Each element of the email is configurable. The body of the email can include text, images and attachments. Data stored in fields in the current form can be copied in dynamically.&lt;/p>
+&lt;h2 id="when-to-use-the-send-email-rule">When to use the Send email rule&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example a text box control with an employee&amp;rsquo;s &amp;lsquo;Name&amp;rsquo; may be part of a form &amp;lsquo;Annual Leave Request&amp;rsquo;. Then this &amp;lsquo;Name&amp;rsquo; field can be used as an &lt;strong>expression&lt;/strong> in the email to send personalised emails, so these aspects must be set up in advance.&lt;/p>
+&lt;ol>
+&lt;li>Decide how the rule will be implemented, for example will an email be sent once a form is saved or submitted. In the example of form submit, then click on that form in the process &amp;gt; &lt;strong>Submit&lt;/strong> button &amp;gt; &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Send email&lt;/strong>.&lt;/li>
+&lt;li>Decide who the automated email will be sent from, for example a no-reply type email. If you leave the From field empty, the email will be sent from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>. If you want your email to come from a different sender, then go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#email-connector">Email connector&lt;/a> for more details on how to set that up.&lt;/li>
+&lt;li>Any email addresses to send To, From, CC or BCC must be set up in advance. This could be a textbox in a form called &amp;lsquo;Email address&amp;rsquo; with a unique Name like &amp;rsquo;emailAddress&amp;rsquo;, or it could be a user picker field associated with particular users, groups or partners.&lt;/li>
+&lt;li>If you want to track the emails, then you must set up a field in your form to store email tracking.&lt;/li>
+&lt;li>If you want to attach any files to an email, files must first be stored in a File field in one of the forms.&lt;/li>
+&lt;/ol>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">. For example selecting the &lt;strong>Submit&lt;/strong> as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-page-select-submit.jpg" alt="Form and button edit mode">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the left-hand side pane, click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Communications&lt;/strong> &amp;gt; &lt;strong>Send email&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Choose from the edit options:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Title&lt;/strong> - of the email for example &amp;lsquo;Send email to Training Managers&amp;rsquo;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Edit conditions&lt;/strong> - click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to set conditions for sending an email, for example while a process has a &amp;lsquo;status&amp;rsquo; of &amp;lsquo;open&amp;rsquo;, send reminder emails. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>From&lt;/strong> - who the email is from, click on &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button"> and choose from the appropriate &lt;strong>Selection mode&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#selection-mode">Selection mode&lt;/a> below.&lt;/p>
+&lt;p>&lt;strong>Warning&lt;/strong>&lt;/p>
+&lt;p>&lt;em>If you add an email address to the &lt;strong>From&lt;/strong> field, you must specify an Email connector, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#email-connector">Email connector&lt;/a>. If a connector is not specified, the emails will come from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>. If a Global SMTP connector is configured, all emails will be sent from the global connector.&lt;/em>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>To&lt;/strong> - who the email is to, click on &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button"> and choose from the appropriate Selection mode, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#selection-mode">Selection mode&lt;/a> below.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>CC&lt;/strong> - who will be copied on the email, as with &lt;strong>To&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>BCC&lt;/strong> - who will be blind copied on the email, as with &lt;strong>To&lt;/strong> field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Subject&lt;/strong> - type in your email subject and click on the &lt;strong>Ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button"> to add an expression, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder/">Expression builder&lt;/a> for more information. The &lt;strong>Subject&lt;/strong> cannot be left empty.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Body&lt;/strong> - choose from an array of styles and formats to create your email including &lt;strong>Style,&lt;/strong> &lt;strong>Colour&lt;/strong>, &lt;strong>Font size&lt;/strong>, &lt;strong>Remove font style&lt;/strong>, &lt;strong>Font family&lt;/strong>, &lt;strong>Unordered list&lt;/strong>, &lt;strong>Ordered list&lt;/strong>, &lt;strong>Paragraph&lt;/strong>, &lt;strong>Table&lt;/strong>, &lt;strong>Link&lt;/strong>, &lt;strong>Picture&lt;/strong>, &lt;strong>Attach a File&lt;/strong> and &lt;strong>Code view&lt;/strong>. For example if you click on &lt;strong>Code view&lt;/strong> button &lt;img src="https://docs.kianda.com/images/code.png" alt="Code view button"> you can copy HTML code directly into the body text.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-edit-box.jpg" alt="Send email">&lt;/p>
+&lt;p>If you click on the &lt;strong>Picture&lt;/strong> button &lt;img src="https://docs.kianda.com/images/picture-button.jpg" alt="Picture button">you will be redirected to the &lt;strong>File storage&lt;/strong> area where you can search for existing images stored in the Kianda file system, create a folder, or upload a file.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/storage-files-upload.jpg" alt="Storage files management area">&lt;/p>
+&lt;p>To find out more about how to attach a file, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#attachments">Attachments&lt;/a> for more details.&lt;/p>
+&lt;p>To add a message to your email, click on the &lt;strong>Body&lt;/strong> text box. You can personalise automated emails using fields from the process by clicking on the &lt;strong>Ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button"> to add an expression, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder/">Expression builder&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Send via connector&lt;/strong> - options are a) &lt;strong>No&lt;/strong> or b) &lt;strong>Yes&lt;/strong>&lt;/p>
+&lt;p>If you choose &lt;strong>Yes&lt;/strong> then you must choose an &lt;strong>Email connector&lt;/strong> and decide if you want to &lt;strong>Save Sent Items&lt;/strong> (Yes or No) which means sent emails are saved in a sent items folder in your email account. For more information go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#email-connector">Email connector&lt;/a>
+&lt;img src="https://docs.kianda.com/images/send-email-connector-yes.jpg" alt="Email connector options">&lt;/p>
+&lt;p>Note that if &lt;strong>Global SMTP Mail connector&lt;/strong> has been configured, all emails sent will use the Global connector settings instead, including &lt;a href="mailto:no-reply@kianda.como">no-reply@kianda.como&lt;/a> find out more, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector">Setting up a Global SMTP mail connector&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable tracking&lt;/strong> - options are a) &lt;strong>No&lt;/strong> or b) &lt;strong>Yes&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>
+&lt;p>Note that this option is only available if &lt;strong>Send via connector&lt;/strong> is set to &lt;strong>No&lt;/strong> and the email is being sent from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you choose &lt;strong>Yes&lt;/strong> then you must click into the field under &lt;strong>Field to store tracking event (Open, Click, Bounce, Spam)&lt;/strong> and choose a field from a form to store the event.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-tracking.jpg" alt="Enable tracking">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>This option allows you to track the email after it is sent. All of these events, Open, Click, Bounce and Spam will be tracked.&lt;/li>
+&lt;/ul>
+&lt;ol start="11">
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Note when your rule is complete you may want to change the order of rules for the particular field or form that it has been applied to. Drag the new Send email rule to where you want, so the order of execution of rules is correct.&lt;/p>
+&lt;p>For example for a Submit button on a form I may want my &lt;strong>Send email rule&lt;/strong> to be executed first before any other rule is executed. To do this click on the &lt;strong>Submit&lt;/strong> button to make sure you are in &lt;strong>Edit&lt;/strong> mode, and under &lt;strong>Rules&lt;/strong> in the right-hand pane, drag the &lt;strong>Send email&lt;/strong> rule to the top of the list by clicking on the rule and dragging it.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/ruleorder.png" alt="Rule order">&lt;/p>
+&lt;p>For more information on rule order, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple Rules&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="email-connector">Email connector&lt;/h3>
+&lt;p>The &lt;strong>Email connector&lt;/strong> is a mailing tool that allows you to send emails with a specified email account, for example support@ or info@. An email connector must be set up in advance, to learn how to set up an &lt;strong>Email connector&lt;/strong> go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/">Email connector&lt;/a>.&lt;/p>
+&lt;p>If you leave the &lt;strong>From&lt;/strong> field empty, the email will be sent from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>. If you want your email to come from a different sender, follow these steps when you are editing the Send email rule:&lt;/p>
+&lt;ol>
+&lt;li>Set &lt;strong>Send via connector&lt;/strong> to &lt;strong>Yes&lt;/strong>.&lt;/li>
+&lt;li>Click into the field under &lt;strong>Email connector&lt;/strong> and select a connector.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/li>
+&lt;/ol>
+&lt;p>Note that if &lt;strong>Global SMTP Mail connector&lt;/strong> has been configured, all emails sent will use the Global connector settings instead of what is specified in the &lt;strong>send email&lt;/strong> rule. Go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> to check for a global setting or to find out more, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector">Setting up a Global SMTP mail connector&lt;/a>.&lt;/p>
+&lt;h3 id="selection-mode">Selection mode&lt;/h3>
+&lt;p>When you are filling out the &lt;strong>To&lt;/strong>, &lt;strong>From&lt;/strong>, &lt;strong>CC&lt;/strong> or &lt;strong>BCC&lt;/strong> fields and click on the &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button">you have the following selection mode options to choose from:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>Any user or partner&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>User(s) defined in a user field&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>Form owner(s)&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>Email address in a field&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;strong>Note&lt;/strong>; You can reset user/ field you selected by clicking &lt;strong>Clear&lt;/strong>&lt;img src="https://docs.kianda.com/images/clearx.png" alt="Clear field"> on the dropdown field in the &lt;strong>Select email users&lt;/strong> dialog box.&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-selection-mode.jpg" alt="Select email users dialog box">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Any user or partner&lt;/strong> - With this &lt;strong>Selection mode&lt;/strong> selected. On the right-hand side of the &lt;strong>Select users&lt;/strong> dropdown list, you can choose to select from &lt;strong>Users, Groups&lt;/strong> and &lt;strong>Partners&lt;/strong>. This allows you to distinguish which users are picked for this field. For example a single user, or a group of users.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>User(s) defined in a user field&lt;/strong> - if you choose this option, it means the user name is already defined in a form. By clicking into the &lt;strong>Select a user field&lt;/strong>, you can select a field from the process you are working in.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Click on the desired &lt;strong>User&lt;/strong> field in your process to add to the &lt;strong>Select a user field&lt;/strong> box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-select-user.jpg" alt="Select user">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;img src="https://docs.kianda.com/images/userpicker.png" alt="User picker button"> to add more selection fields.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-add-user-field.jpg" alt="Add user field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Remove a field clicking on the &lt;strong>Bin/Trash&lt;/strong> button&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-remove-user-field.jpg" alt="User defined field">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form owner(s)&lt;/strong> - With this option selected, by clicking into the field under &lt;strong>Form owner of selected form&lt;/strong> and choose from the forms within that process. This automatically uses the form owner(s) email address. To learn more about forms and form owners go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Form basics&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-form-owner.jpg" alt="Form owner of selected form">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Email address in a field&lt;/strong> - With this option selected, by clicking into the field under &lt;strong>Type the address or select from a field&lt;/strong>, you can either type in an email address or choose from a field within the process you are working in.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-email-address.jpg" alt="select email users">&lt;/p>
+&lt;p>In all cases when you have made your selection, click on &lt;strong>OK&lt;/strong> button to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;h3 id="expression-builder">Expression builder&lt;/h3>
+&lt;p>The expression builder is a useful and efficient way to use existing form fields as part of automated emails that you want to send out.&lt;/p>
+&lt;p>For example if you have a form Annual Leave request that contains a text box field &amp;lsquo;Employee Name&amp;rsquo; you can use this field in an automated email to let a manager know that an employee has submitted a request.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Before you begin have your message inserted into the &lt;strong>Body&lt;/strong> of the email and position your cursor where you want to add an expression, for example an Employee Name after &amp;lsquo;Your employee&amp;rsquo; as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/bodytext.png" alt="Body text">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button">on the right-hand side of the email &lt;strong>Body&lt;/strong>. An &lt;strong>Expression&lt;/strong> &lt;strong>builder&lt;/strong> dialog box opens.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click into the field under &lt;strong>Add field to expression&lt;/strong>. Forms and fields that are part of your process appear where you can expand elements to drill down to find the field that you want, for example &amp;lsquo;Employee Name&amp;rsquo;. Click on the field to add field to the expression.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/expressionaddfield.png" alt="Expression builder">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Add to expression&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addtoexpression.png" alt="Add to expression">to add the field as an expression. Note that the expression is the &lt;strong>Name(unique)&lt;/strong> of that field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/expressionadded.png" alt="Expression added">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The result is the expression is now part of the automated email.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/expressionin.png" alt="Text box expression added">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To add more expressions, firstly position your cursor in your body text where you want to add the expression, then click on the &lt;strong>Ellipsis&lt;/strong> button and under &lt;strong>Add field to expression&lt;/strong> clear any existing fields by clicking on the &lt;strong>Clear&lt;/strong> button. This appears when you hover over the Add field box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/clearexpression.png" alt="Clear field">&lt;/p>
+&lt;p>Then search for other fields, for example lists or links, and use the Expression reference functions, see step 7.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Reference&lt;/strong> &lt;img src="https://docs.kianda.com/images/reference.png" alt="Expression reference"> to find out how to use particular functions in your email. For example &lt;strong>ProcessLink()&lt;/strong> returns the html link to the current process. Copy this function into the Expression box and click on &lt;strong>OK&lt;/strong> to add the function. Then in the &lt;strong>Body&lt;/strong> type in the text you want associated with this link for example &amp;ldquo;click here&amp;rdquo; into the brackets of the function:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/clickhere.png" alt="Click here text">&lt;/p>
+&lt;p>In this way you can build personalised automated emails that provide a link back to a process instance, for example that a manager can view, update or approve. For more information on References and Expressions see &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/">Expressions&lt;/a> for more information.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="attachments">Attachments&lt;/h3>
+&lt;p>To attach a file into the &lt;strong>Send email&lt;/strong> rule, you must first contain a file field in your process. To learn more about file control go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To attach a file to an email, click on the &lt;strong>Attach a file&lt;/strong> button &lt;img src="https://docs.kianda.com/images/attachfile.png" alt="Attach a file button">. The &lt;strong>Attach file to email&lt;/strong> dialog box opens.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select a &lt;strong>File&lt;/strong> field from your process to attach the file, for example an &lt;strong>Image&lt;/strong> filed as shown in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-attach-file.jpg" alt="Attach file dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click in the &lt;strong>File&lt;/strong> field, find and select the desired field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Insert attachment&lt;/strong>. There is an option to attach a link to the file rather than the file itself.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>In the &lt;strong>Attachments&lt;/strong> section of the &lt;strong>Send email&lt;/strong> dialog box, the name of the &lt;strong>File&lt;/strong> field will appear indicating that attachments will come from the specified field. You can delete the specified File field by clicking the red bin/trash icon.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-attachment.jpg" alt="Send email dialog box - attachment section">&lt;/p>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Meeting request</title><link>https://docs.kianda.com/platform/rules/communications/meeting-request/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/communications/meeting-request/</guid><description>
+&lt;p>The &lt;strong>Meeting request&lt;/strong> rule sends an email according to a predefined template. It works exactly like the &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email&lt;/a> rule with three additional fields to which are used to set up the date and time of the meeting. The three additional fields are as follow:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Start time&lt;/strong> - indicating the starting date and time of the meeting.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>End time&lt;/strong> - indicating the ending date and time of the meeting.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Location&lt;/strong> - indicating the location of the meeting.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/meeting-request-fields.jpg" alt="">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>If you are using an email connector, a meeting request will appear in the calendar of the receiver(s). Otherwise the meeting request will appear as a calendar file (.ics file type) attached to an email. to learn more about email connector go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/">Email connector&lt;/a>.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a> with an employee’s ‘Name’ may be part of a form ‘Meeting request’. Then this ‘Name’ field can be used as an &lt;strong>expression&lt;/strong> in the email to send personalised emails, so these aspects must be set up in advance. The Meeting request rule must also contain three specific fields which are the &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for both the &lt;strong>Start&lt;/strong> and &lt;strong>End&lt;/strong> time fields, as well as textbox control or a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a> a field for the &lt;strong>Location&lt;/strong>.&lt;/p>
+&lt;ol>
+&lt;li>Decide how the rule will be implemented, for example will an email be sent once a form is saved or submitted. In the example of form submit, then click on that form in the process &amp;gt; &lt;strong>Submit&lt;/strong> button &amp;gt; &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Send email&lt;/strong>.&lt;/li>
+&lt;li>Decide who the automated email will be sent from, for example a no-reply type email. If you leave the From field empty, the email will be sent from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>. If you want your email to come from a different sender, then go to &lt;a href="http://localhost:1313/docs/platform/rules/communications/send-email/#email-connector">Email connector&lt;/a> for more details on how to set that up.&lt;/li>
+&lt;li>Any email addresses to send To, From, CC or BCC must be set up in advance. This could be a textbox in a form called ‘Email address’ with a unique Name like ’emailAddress’, or it could be a user picker field associated with particular users, groups or partners.&lt;/li>
+&lt;li>If you want to track the emails, then you must set up a field in your form to store email tracking.&lt;/li>
+&lt;li>If you want to attach any files to an email, files must first be stored in a File field in one of the forms.&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>Note; the start and end time fields are both required on the request meeting rule therefore you should make the start and end fields required on your form too. To learn more about required fields go to&lt;a href="https://docs.kianda.com/docs/platform/controls/properties/#field-properties"> Control properties&lt;/a>.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">. For example selecting the &lt;strong>Submit&lt;/strong> as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-page-select-submit.jpg" alt="Form and button edit mode">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the left-hand side pane, click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Communications&lt;/strong> &amp;gt; &lt;strong>Meeting request rule&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Meeting request&lt;/strong> dialog box, fill out the following details:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/meeting-request-rule.jpg" alt="Edit rule Meeting request dialog box">&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Title&lt;/strong> - of the email for example &amp;lsquo;Send meeting request&amp;rsquo;&lt;/li>
+&lt;li>&lt;strong>Edit conditions&lt;/strong> - click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to set conditions for sending an email, for example while a process has a &amp;lsquo;status&amp;rsquo; of &amp;lsquo;open&amp;rsquo;, send reminder emails. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Start time&lt;/strong> - select a pre-defined date field from your form. This is a &lt;strong>required&lt;/strong> field.&lt;/li>
+&lt;li>&lt;strong>End time&lt;/strong> - select a pre-defined date field from your form. This is a &lt;strong>required&lt;/strong> field.&lt;/li>
+&lt;li>&lt;strong>From&lt;/strong> - who the email is from, click on &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button"> and choose from the appropriate &lt;strong>Selection mode&lt;/strong>, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#selection-mode">Selection mode&lt;/a> below.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Warning&lt;/strong>&lt;/p>
+&lt;p>&lt;em>If you add an email address to the &lt;strong>From&lt;/strong> field, you must specify an Email connector, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#email-connector">Email connector&lt;/a>. If a connector is not specified, the emails will come from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>. If a Global SMTP connector is configured, all emails will be sent from the global connector.&lt;/em>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>To&lt;/strong> - who the email is to, click on &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button"> and choose from the appropriate Selection mode, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#selection-mode">Selection mode&lt;/a> below. This is a **required **field.&lt;/li>
+&lt;li>&lt;strong>BCC&lt;/strong> - who will be blind copied on the email, as with &lt;strong>To&lt;/strong> field.&lt;/li>
+&lt;li>&lt;strong>Subject&lt;/strong> - type in your email subject and click on the &lt;strong>Ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button"> to add an expression, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder/">Expression builder&lt;/a> for more information. This is a **required **field.&lt;/li>
+&lt;li>&lt;strong>Body&lt;/strong> - choose from an array of styles and formats to create your email including &lt;strong>Style,&lt;/strong> &lt;strong>Colour&lt;/strong>, &lt;strong>Font size&lt;/strong>, &lt;strong>Remove font style&lt;/strong>, &lt;strong>Font family&lt;/strong>, &lt;strong>Unordered list&lt;/strong>, &lt;strong>Ordered list&lt;/strong>, &lt;strong>Paragraph&lt;/strong>, &lt;strong>Table&lt;/strong>, &lt;strong>Link&lt;/strong>, &lt;strong>Picture&lt;/strong>, &lt;strong>Attach a File&lt;/strong> and &lt;strong>Code view&lt;/strong>. For example if you click on &lt;strong>Code view&lt;/strong> button &lt;img src="https://docs.kianda.com/images/code.png" alt="Code view button"> you can copy HTML code directly into the body text. This is a &lt;strong>required&lt;/strong> field.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/meeting-request-body.jpg" alt="Body of email">&lt;/p>
+&lt;p>​ To find out more about how to attach a file, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#attachments">Attachments&lt;/a> for more details.&lt;/p>
+&lt;p>​ To add a message to your email, click on the &lt;strong>Body&lt;/strong> text box. You can personalise automated emails using fields from the process by clicking on the &lt;strong>Ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button"> to add an expression, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder/">Expression builder&lt;/a> for more details.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Send via connector&lt;/strong> - options are a) No or b) Yes&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>If you choose &lt;strong>Yes&lt;/strong> then you must choose an &lt;strong>Email connector&lt;/strong> and decide if you want to &lt;strong>Save Sent Items&lt;/strong> (Yes or No) which means sent emails are saved in a sent items folder in your email account. For more information go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/#email-connector">Email connector&lt;/a>
+&lt;img src="https://docs.kianda.com/images/send-email-connector-yes.jpg" alt="Email connector options">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Note that if &lt;strong>Global SMTP Mail connector&lt;/strong> has been configured, all emails sent will use the Global connector settings instead, including &lt;a href="mailto:no-reply@kianda.como">no-reply@kianda.como&lt;/a> find out more, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector">Setting up a Global SMTP mail connector&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Enable tracking&lt;/strong> - options are a) No or b) Yes&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Note that this option is only available if &lt;strong>Send via connector&lt;/strong> is set to &lt;strong>No&lt;/strong> and the email is being sent from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you choose &lt;strong>Yes&lt;/strong> then you must click into the field under &lt;strong>Field to store tracking event (Open, Click, Bounce, Spam)&lt;/strong> and choose a field from a form to store the event.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-tracking.jpg" alt="Enable tracking">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>This option allows you to track the email after it is sent. All of these events, Open, Click, Bounce and Spam will be tracked.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;ol start="11">
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Note when your rule is complete you may want to change the order of rules for the particular field or form that it has been applied to. Drag the new &lt;strong>Meeting request&lt;/strong> rule to where you want, so the order of execution of rules is correct.&lt;/p>
+&lt;p>For example for a &lt;strong>Submit&lt;/strong> button on a form I may want my &lt;strong>Meeting request&lt;/strong> rule to be executed first before any other rule is executed. To do this click on the &lt;strong>Submit&lt;/strong> button to make sure you are in &lt;strong>Edit&lt;/strong> mode so that the Edit/pen button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">appears, and under &lt;strong>Rules&lt;/strong> in the right-hand pane, drag the &lt;strong>Meeting request&lt;/strong> rule to the top of the list by clicking on the rule and dragging it. For more information on rules, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/%60meeting-request-rule-order.jpg" alt="Rule order">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="email-connector">Email connector&lt;/h3>
+&lt;p>The &lt;strong>Email connector&lt;/strong> is a mailing tool that allows you to send emails with a specified email account, for example support@ or info@. An email connector must be set up in advance, to learn how to do that go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/">Email connector&lt;/a>.&lt;/p>
+&lt;p>If you leave the &lt;strong>From&lt;/strong> field empty, the email will be sent from &lt;a href="mailto:noreply@kianda.com">noreply@kianda.com&lt;/a>. If you want your email to come from a different sender, follow these steps when you are editing the &lt;strong>Meeting request&lt;/strong> rule:&lt;/p>
+&lt;ol>
+&lt;li>Set &lt;strong>Send via connector&lt;/strong> to &lt;strong>Yes&lt;/strong>.&lt;/li>
+&lt;li>Click into the field under &lt;strong>Email connector&lt;/strong> and select a connector.&lt;/li>
+&lt;li>Click on &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/li>
+&lt;/ol>
+&lt;p>Note that if &lt;strong>Global SMTP Mail connector&lt;/strong> has been configured, all emails sent will use the Global connector settings instead of what is specified in the &lt;strong>send email&lt;/strong> rule. Go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> to check for a global setting or to find out more, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/email/#setting-up-a-global-smtp-mail-connector">Setting up a Global SMTP mail connector&lt;/a>.&lt;/p>
+&lt;h3 id="selection-mode">Selection mode&lt;/h3>
+&lt;p>When you are filling out the &lt;strong>To&lt;/strong>, &lt;strong>From&lt;/strong>, or &lt;strong>BCC&lt;/strong> fields and click on the &lt;strong>Person&lt;/strong> button &lt;img src="https://docs.kianda.com/images/person.png" alt="Person button">you have the following selection mode options to choose from:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>Any user or partner&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>User(s) defined in a user field&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>Form owner(s)&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;input checked="" disabled="" type="checkbox"> &lt;strong>Email address in a field&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>&lt;strong>Note&lt;/strong>; You can reset user/ field you selected by clicking &lt;strong>Clear&lt;/strong>&lt;img src="https://docs.kianda.com/images/clearx.png" alt="Clear field"> on the dropdown field in the &lt;strong>Select email users&lt;/strong> dialog box.&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-selection-mode.jpg" alt="Select email users dialog box">&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Any user or partner&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>User(s) defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will be assigned to the &lt;strong>To, From or BCC&lt;/strong> respectively.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Click on the desired &lt;strong>User&lt;/strong> field in your process to add to the &lt;strong>Select a user field&lt;/strong> box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-select-user.jpg" alt="Select user">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;img src="https://docs.kianda.com/images/userpicker.png" alt="User picker button"> to add more selection fields.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-add-user-field.jpg" alt="Add user field">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Remove a field clicking on the &lt;strong>Bin/Trash&lt;/strong> button&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-remove-user-field.jpg" alt="User defined field">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Form owner(s)&lt;/strong> - selecting this option allows you to click into the field under &lt;strong>Form owner of selected form&lt;/strong> and choose from the forms within that process. This automatically uses the form owner(s) email address. To learn more about forms and form owners go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Form basics&lt;/a>.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-form-owner.jpg" alt="Form owner of selected form">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>&lt;strong>Email address in a field&lt;/strong> - With this option selected, by clicking into the field under &lt;strong>Type the address or select from a field&lt;/strong>, you can either type in an email address manually or choose from a field within the process you are working in.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-email-address.jpg" alt="select email users">&lt;/p>
+&lt;p>In all cases when you have made your selection, click on &lt;strong>OK&lt;/strong> button to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;h3 id="expression-builder">Expression builder&lt;/h3>
+&lt;p>The expression builder is a useful and efficient way to use existing form fields as part of automated emails that you want to send out.&lt;/p>
+&lt;p>For example if you have a form Annual Leave request that contains a text box field &amp;lsquo;Employee Name&amp;rsquo; you can use this field in an automated email to let a manager know that an employee has submitted a request.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Before you begin have your message inserted into the &lt;strong>Body&lt;/strong> of the email and position your cursor where you want to add an expression, for example an Employee Name after &amp;lsquo;Your employee&amp;rsquo; as shown below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/bodytext.png" alt="Body text">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button">on the right-hand side of the email &lt;strong>Body&lt;/strong>. An &lt;strong>Expression&lt;/strong> &lt;strong>builder&lt;/strong> dialog box opens.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click into the field under &lt;strong>Add field to expression&lt;/strong>. Forms and fields that are part of your process appear where you can expand elements to drill down to find the field that you want, for example &amp;lsquo;Employee Name&amp;rsquo;. Click on the field to add field to the expression.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/expressionaddfield.png" alt="Expression builder">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on the &lt;strong>Add to expression&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addtoexpression.png" alt="Add to expression">to add the field as an expression. Note that the expression is the &lt;strong>Name(unique)&lt;/strong> of that field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/expressionadded.png" alt="Expression added">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The result is the expression is now part of the automated email.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/expressionin.png" alt="Text box expression added">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>To add more expressions, firstly position your cursor in your body text where you want to add the expression, then click on the &lt;strong>Ellipsis&lt;/strong> button and under &lt;strong>Add field to expression&lt;/strong> clear any existing fields by clicking on the &lt;strong>Clear&lt;/strong> button. This appears when you hover over the Add field box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/clearexpression.png" alt="Clear field">&lt;/p>
+&lt;p>Then search for other fields, for example lists or links, and use the Expression reference functions, see step 7.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Reference&lt;/strong> &lt;img src="https://docs.kianda.com/images/reference.png" alt="Expression reference"> to find out how to use particular functions in your email. For example &lt;strong>ProcessLink()&lt;/strong> returns the html link to the current process. Copy this function into the Expression box and click on &lt;strong>OK&lt;/strong> to add the function. Then in the &lt;strong>Body&lt;/strong> type in the text you want associated with this link for example &amp;ldquo;click here&amp;rdquo; into the brackets of the function:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/clickhere.png" alt="Click here text">&lt;/p>
+&lt;p>In this way you can build personalised automated emails that provide a link back to a process instance, for example that a manager can view, update or approve. For more information on References and Expressions see &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/plan-your-process/expressions/">Expressions&lt;/a> for more information.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="attachments">Attachments&lt;/h3>
+&lt;p>To attach a file into the &lt;strong>Send email&lt;/strong> rule, you must first contain a file field in your process. To learn more about file control go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>To attach a file to an email, click on the &lt;strong>Attach a file&lt;/strong> button &lt;img src="https://docs.kianda.com/images/attachfile.png" alt="Attach a file button">. The &lt;strong>Attach file to email&lt;/strong> dialog box opens.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Select a &lt;strong>File&lt;/strong> field from your process to attach the file, for example an &lt;strong>Image&lt;/strong> filed as shown in the image below.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-attach-file.jpg" alt="Attach file dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click in the &lt;strong>File&lt;/strong> field, find and select the desired field.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Insert attachment&lt;/strong>. There is an option to attach a link to the file rather than the file itself.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>In the &lt;strong>Attachments&lt;/strong> section of the &lt;strong>Send email&lt;/strong> dialog box, the name of the &lt;strong>File&lt;/strong> field will appear indicating that attachments will come from the specified field. You can delete the specified File field by clicking the red bin/trash icon.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/send-email-attachment.jpg" alt="s">&lt;/p>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Anonymous form link</title><link>https://docs.kianda.com/platform/rules/communications/anonymous-form-link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/communications/anonymous-form-link/</guid><description>
+&lt;p>The &lt;strong>Anonymous form&lt;/strong> rule creates a link to a selected form from the process which can be sent to an external user. The user can open the form without the need for authentication into the Kianda platform.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>To use the &lt;strong>Anonymous form&lt;/strong> rule effectively, you would typically apply it to a &lt;strong>Submit&lt;/strong> button along side &lt;strong>Send email&lt;/strong> rule so that you can attach the link into an email and share the specified form with an external user.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
+&lt;p>In advance of using the &lt;strong>Anonymous form link&lt;/strong>, in your process you need to have created at least one or more forms. This rule also requires a link to be stored inside of a field, for example text box control. To learn more about text box control go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;p>To send an anonymous form link to an external user:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Communications&lt;/strong> &amp;gt; &lt;strong>Anonymous form link&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - Anonymous form link&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-edit-box.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Select a form&lt;/strong> dropdown, select the desired form to create a link to.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Link expire settings contains three options:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Never expires&lt;/strong> - Indicating that the link will never expire and will always be active.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Expire after a number of uses&lt;/strong> - the link will expire after the specified number of uses in the &lt;strong>Expire link after number of uses&lt;/strong> text box.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-expire-uses.jpg" alt="Link expire settings - number of uses">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Expire in time&lt;/strong> - the link will expire after the specified &lt;strong>Days&lt;/strong>, &lt;strong>Hours&lt;/strong> and &lt;strong>Minutes&lt;/strong> from the time it was created.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-expire-time.jpg" alt="Link expire settings - time">&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Field to store the generated anonymous link&lt;/strong> dropdown, select a field in which you want the link to be stored in.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Message to display after anonymous submission&lt;/strong> text box, type in a message your want users to see after they submit the form.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-message-box.jpg" alt="Link expire settings - time">&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/anonymous-link-message.jpg" alt="Link expire settings - time">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Selecting the &lt;strong>Hide form topbar&lt;/strong> will hide all form tiles from the users view.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Force logout:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Yes&lt;/strong> - users will be logged out after submitting the form.&lt;/li>
+&lt;li>&lt;strong>No&lt;/strong> - users will stay logged in after submitting the form.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Create a &lt;strong>Send email&lt;/strong> rule and apply the link expression to the body of the email. To learn more about &lt;strong>Send email&lt;/strong> rule and how to add expressions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
+&lt;ul>
+&lt;li>The field used to store the Anonymous Link can be made invisible to the user of the current form. Go to the field properties and set the field to &lt;strong>not visible&lt;/strong>.&lt;/li>
+&lt;li>Each record or instance of a process can have only one active link. If a second anonymous link is created for an instance of a process, the first link will not exist anymore. Users clicking on the first link will get an error message.&lt;/li>
+&lt;/ul>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: User alert</title><link>https://docs.kianda.com/platform/rules/communications/user-alert/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/communications/user-alert/</guid><description>
+&lt;p>The &lt;strong>User alert&lt;/strong> rule sends an alert to a user who can click on the alert to open the process instance, for example to a form that needs to be completed by a given user. A user can view all alerts by clicking on the &lt;strong>notifications&lt;/strong> or bell icon on the top right-hand corner of their screen.&lt;/p>
+&lt;p>For example in the image below there is one new notification.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-notification.jpg" alt="User notification">&lt;/p>
+&lt;p>When the user clicks on the icon, the alert created using the &lt;strong>User alert&lt;/strong> rule appears.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-example.jpg" alt="User alert example">&lt;/p>
+&lt;p>In this example clicking on the alert itself, will bring the user to a form that they need to fill out.&lt;/p>
+&lt;h2 id="when-to-use">When to use&lt;/h2>
+&lt;p>There are a lot of uses for the user alert rule. For example, the rule can be used as a reminder to complete a form or when a form is submitted and the form needs to be reviewed, a manger can receive the alert to review the information in the form.&lt;/p>
+&lt;p>You can add this rule:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a field&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a form&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Communications&lt;/strong> &amp;gt; &lt;strong>Anonymous form link&lt;/strong>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &lt;strong>Edit rule - User alert&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-edit-box.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Send alert to&lt;/strong> - choose from the radio buttons:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details.&lt;/li>
+&lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that the alert is being sent to.&lt;/li>
+&lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will have an alert sent to.&lt;/li>
+&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the alert sent to, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Alert title&lt;/strong> - select a field from the process to be the title or type one in.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Alert message&lt;/strong> - select a field from the process for the message of the alert or type one in. &lt;em>Note: Maximum of 200 characters allowed in message.&lt;/em>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Alert Status&lt;/strong> - choose from four different colours to be applied to the tile of the alert.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Alert icon&lt;/strong> - choose an icon from the drop-down list.&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-settings.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
+&lt;p>The resulting alert design looks like this:&lt;/p>
+&lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-reminder.jpg" alt="Edit rule - Anonymous link dialog box">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Process ID&lt;/strong> - when the user receives an alert and clicks on it, he will open the process instance defined in the Process ID field.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>If left blank, this field will contain the current Process ID.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A different process ID can be added by typing or copying in the ID (or if the Process ID is stored in a field, then that field can be selected).&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
+&lt;p>To find out more about other communication rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/">Communication rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
