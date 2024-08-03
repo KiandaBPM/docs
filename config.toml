@@ -1,5 +1,5 @@
 baseURL = "https://docs.kianda.com/"
-title = "Kianda no-code platform for business process automation"
+title = "Kianda low-code platform for business process automation"
 
 # Language settings
 contentDir = "content"
@@ -24,9 +24,9 @@ enableGitInfo = false
    # url = "https://portal.kianda.com/public/signup"
 
 [[menu.main]]
-    name = "Kianda.com"
+    name = "Low-code Sign-up"
     weight = 51
-    url = "https://www.kianda.com/"
+    url = "https://portal.kianda.com/public/signup"
 
 # Comment out to enable taxonomies in Docsy
 # disableKinds = ["taxonomy", "taxonomyTerm"]
@@ -186,34 +186,34 @@ no = 'Sorry to hear that. Please <a href="https://github.com/KiandaBPM/docs/issu
 [params.ui.readingtime]
 enable = false
 
-[params.links]
+# [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 # [[params.links.user]]
 #   name = "User mailing list"
 #   url = "https://example.org/mail"
 #   icon = "fa fa-envelope"
 #   desc = "Discussion and help from your fellow users"
-[[params.links.user]]
-  name ="Twitter"
-  url = "https://twitter.com/kianda_tech"
-  icon = "fab fa-twitter"
-  desc = "Follow us on Twitter to get the latest news!"
+# [[params.links.user]]
+#   name ="Twitter"
+#   url = "https://twitter.com/kianda_tech"
+#   icon = "fab fa-twitter"
+#   desc = "Follow us on Twitter to get the latest news!"
 # [[params.links.user]]
 #   name = "Stack Overflow"
 #   url = "https://example.org/stack"
 #   icon = "fab fa-stack-overflow"
 #   desc = "Practical questions and curated answers"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-[[params.links.developer]]
-  name = "GitHub"
-  url = "https://github.com/kiandaBPM"
-  icon = "fab fa-github"
-  desc = "Development takes place here!"
-[[params.links.developer]]
-  name = "Discord"
-  url = "https://discord.gg/uDSW6qcYub"
-  icon = "fab fa-discord"
-  desc = "Chat with other developers"
+# [[params.links.developer]]
+#   name = "GitHub"
+#   url = "https://github.com/kiandaBPM"
+#   icon = "fab fa-github"
+#   desc = "Development takes place here!"
+# [[params.links.developer]]
+#   name = "Discord"
+#   url = "https://discord.gg/uDSW6qcYub"
+#   icon = "fab fa-discord"
+#   desc = "Chat with other developers"
 # [[params.links.developer]]
 #   name = "Developer mailing list"
 #   url = "https://example.org/mail"

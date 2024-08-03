@@ -37,3 +37,18 @@ $primary : #063680;
 .alert blockquote li{
     padding: 10px;
 }
+
+
+
+.inline-video-player {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+@media only screen and (max-width: 668px) {
+.inline-video-player {
+        width: 100%;
+        margin: auto;
+    }
+}
