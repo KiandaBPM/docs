@@ -10,7 +10,7 @@ typora-root-url: ..\..\static
 
 # Create Process Apps, One Form At a Time
 
-The Kianda is a forms based **low-code** **development platform**. It enables developers to build beautiful business web based multi-form process apps to digitise any business processes. 
+The Kianda platform is a forms based **low-code** **development platform**. It enables developers to build beautiful business web based multi-form process apps to digitise any business processes. 
 
 From simple forms to multi-forms and multiple processes kianda can handle any business scenarios that require user input capture, integrate with back-end data,  task automation and real-time process monitoring. 
 
