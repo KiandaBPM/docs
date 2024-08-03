@@ -5,7 +5,7 @@ menu:
   main:
     weight: 30
 type: "docs"
-typora-root-url: ..\..\static
+typora-root-url: ..\static
 ---
 
 # Create Process Apps, One Form At a Time
@@ -60,3 +60,5 @@ Kianda Pages allows the integration of multiple related processes into a single,
 ### Automate process tasks with scheduled tasks
 
 Kianda offers robust automation capabilities, enabling developers to schedule tasks that execute user-defined process rules. Scheduled tasks can run based on various time intervals—one-time, every few minutes, hourly, daily, weekly, monthly, or on-demand via HTTP callbacks. Automate repetitive tasks, such as sending notifications, updating records, or triggering subprocesses, to improve efficiency and reduce manual workload. With Kianda, automating business processes is simple and highly customizable to fit any requirement.
+
+## [Quick Start Guide](/quick-start/)
