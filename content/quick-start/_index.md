@@ -4,10 +4,15 @@ weight: 1
 typora-root-url: ..\..\static
 description: "Platform quick start guide. Start from here to learn how to use the platform quickly"
 ---
+1. [Forms and controls](form-controls-layout/)
+2. [Connect to data sources](connect-your-data/)
+3. [Process logic with rules](plan-your-process/)
+4. [Publish a process with pages](publish-your-process/)
+
 ## Welcome to the Kianda Quick Start Guide
+
 Welcome to the Kianda Quick Start Guide! This guide is designed to help you quickly learn how to build, connect, automate, and publish process apps using the Kianda platform. Kianda is a modern form-based low-code development platform that enables you to create beautiful web-based business process applications.
 
-## Getting Started
 ### Prerequisites
 - Admin access to Kianda
 - Basic knowledge of web development

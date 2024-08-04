@@ -6,6 +6,11 @@ weight: 3
 typora-root-url: ..\..\..\static
 ---
 
+1. [Forms and controls](../form-controls-layout/)
+2. [Connect to data sources](../connect-your-data/)
+3. **Process logic with rules**
+4. [Publish a process with pages](../publish-your-process/)
+
 ## 1. Introduction
 
 In Kianda, rules form the backbone of dynamic and robust process applications. They enable you to define logic that responds to user inputs, automates tasks, and integrates with various data sources and external systems. By leveraging more than 60 built-in rules, along with the ability to create custom rules using JavaScript, Handlebars, and HTML, you can design process apps that are both flexible and powerful.

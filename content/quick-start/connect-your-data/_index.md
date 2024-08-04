@@ -6,6 +6,11 @@ weight: 2
 typora-root-url: ..\..\..\static
 ---
 
+1. [Forms and controls](../form-controls-layout/)
+2. **Connect to data sources**
+3. [Process logic with rules](../plan-your-process/)
+4. [Publish a process with pages](../publish-your-process/)
+
 ## 1. Introduction
 
 Connecting to data sources is a crucial aspect of building robust and dynamic process applications in Kianda. By integrating external data, you can enhance the functionality and relevance of your forms, automate data-driven tasks, and ensure seamless communication between different systems within your organization. This section will guide you through the basics of managing data sources in Kianda, enabling you to create more powerful and efficient applications.

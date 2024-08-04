@@ -6,7 +6,10 @@ weight: 1
 typora-root-url: ..\..\..\static
 ---
 
-
+1. **Forms and controls**
+2. [Connect to data sources](../connect-your-data/)
+3. [Process logic with rules](../plan-your-process/)
+4. [Publish a process with pages](../publish-your-process/)
 
 This guide aims to provide you with a clear understanding of how to use Kianda's forms and controls features to build the process layout for user input capture and to automate tasks.
 

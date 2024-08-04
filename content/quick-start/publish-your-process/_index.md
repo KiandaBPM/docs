@@ -6,6 +6,11 @@ weight: 3
 typora-root-url: ..\..\..\static
 ---
 
+1. [Forms and controls](../form-controls-layout/)
+2. [Connect to data sources](../connect-your-data/)
+3. [Process logic with rules](../plan-your-process/)
+4. **Publish a process with pages**
+
 ## 1. Introduction
 
 In Kianda, pages serve as the essential interface for delivering process applications to end-users. They act as dashboards, landing pages, and reporting tools, allowing users to interact with and manage business processes efficiently. By leveraging pages, you can create intuitive and dynamic interfaces that facilitate user interaction with your process apps.
