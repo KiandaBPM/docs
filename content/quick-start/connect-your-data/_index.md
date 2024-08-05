@@ -146,3 +146,12 @@ This table provides a brief description of each data source, helping you underst
 ## 6. Summary
 
 In this guide, we covered the essential steps to connect and integrate data sources with your Kianda process applications. From accessing and registering data sources to reading and writing data, these functionalities enable you to create dynamic, data-driven forms. By following the best practices outlined, you can ensure your applications are secure, efficient, and maintainable. With these skills, you are well-equipped to leverage Kianda's powerful data integration capabilities to build comprehensive business solutions.
+
+
+
+#### Quick Start
+
+1. [Forms and controls](../form-controls-layout/)
+2. **Connect to data sources**
+3. [Process logic with rules](../plan-your-process/)
+4. [Publish a process with pages](../publish-your-process/)

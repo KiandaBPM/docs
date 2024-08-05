@@ -180,3 +180,11 @@ Keeping your pages up-to-date and well-maintained is crucial for long-term succe
 
 By following these best practices, you can design pages in Kianda that are user-friendly, performant, and visually appealing. These practices help ensure that your pages provide a positive experience for your users and effectively support your business processes.
 
+
+
+#### Quick Start 
+
+1. [Forms and controls](../form-controls-layout/)
+2. [Connect to data sources](../connect-your-data/)
+3. [Process logic with rules](../plan-your-process/)
+4. **Publish a process with pages**

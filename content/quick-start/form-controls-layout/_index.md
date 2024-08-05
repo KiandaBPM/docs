@@ -199,3 +199,12 @@ The Previewer allows true iterative development, by providing a testing mechanis
 - **Debugging Common Issues**
 
   To debug and step through the form the user might click the debug button 
+  
+  
+
+#### Quick Start 
+
+1. **Forms and controls**
+2. [Connect to data sources](../connect-your-data/)
+3. [Process logic with rules](../plan-your-process/)
+4. [Publish a process with pages](../publish-your-process/)

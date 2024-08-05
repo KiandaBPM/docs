@@ -541,3 +541,10 @@ By adhering to these best practices, you can ensure that your rules in Kianda ar
 
 
 
+#### Quick Start 
+
+1. [Forms and controls](../form-controls-layout/)
+2. [Connect to data sources](../connect-your-data/)
+3. **Process logic with rules**
+4. [Publish a process with pages](../publish-your-process/)
+
