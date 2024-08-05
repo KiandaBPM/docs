@@ -15,9 +15,11 @@ This guide aims to provide you with a clear understanding of how to use Kianda's
 
 ## 1. Introduction
 
-Welcome to the Kianda Quick Start Guide for Forms and Controls. Kianda is a low-code development platform that enables developers to create and manage web-based business applications efficiently. Using Kianda's form builder, you can quickly design dynamic forms and controls to streamline various business processes. 
+Using Kianda's form builder, you can quickly design dynamic forms and controls to streamline various business processes. 
 
-In this section, we will cover the basics of Kianda forms and controls. You will learn how to navigate the platform, access the form builder, and create new process designs. We will also discuss the different types of controls available, such as input controls, layout controls, actions, and custom controls, and how they can be used to build interactive and responsive forms. By the end of this section, you will be ready to start creating forms that meet your specific business requirements.
+In this section, we will cover the basics of Kianda forms and controls. You will learn how to navigate the platform, access the form builder, and create new process designs. 
+
+We will also discuss the different types of controls available, such as input controls, layout controls, actions, and custom controls, and how they can be used to build interactive and responsive forms. By the end of this section, you will be ready to start creating forms that meet your specific business requirements.
 
 Before we begin, ensure you have the necessary admin rights within your Kianda workspace and a basic understanding of HTML, CSS, and JavaScript, especially for creating custom controls. This guide will provide step-by-step instructions and visual aids to help you get started quickly. Whether you are building a simple form or a multi-step process application, Kianda's form builder and versatile controls will help you achieve your goals with minimal coding effort.
 
@@ -27,7 +29,11 @@ Before we begin, ensure you have the necessary admin rights within your Kianda w
 
 ## 2. Accessing the Form Builder
 
-To access the form builder in Kianda, ensure you have admin rights within your workspace. Once logged in, navigate to the top right corner of the screen and click the cog icon to open the admin menu. From there, select the "Designer" menu to open the designer page where all process designs are listed. You can either click on an existing design or create a new one by filling out the necessary details in the dialog box. Watch the video below for a visual guide on accessing the designer and selecting a process form design to start building your forms.
+To access the form builder in Kianda, ensure you have admin rights within your workspace. Once logged in, navigate to the top right corner of the screen and click the cog icon to open the admin menu. 
+
+From there, select the "Designer" menu to open the designer page where all process designs are listed. You can either click on an existing design or create a new one by filling out the necessary details in the dialog box. 
+
+Watch the video below for a visual guide on accessing the designer and selecting a process form design to start building your forms.
 
 <video class="inline-video-player" loading="lazy" muted loop playsinline autoplay poster>
     <source src="/videos/Accessing-The-Form-Designer.mp4">
@@ -37,7 +43,9 @@ To access the form builder in Kianda, ensure you have admin rights within your w
 
 ## 3. Understanding Controls
 
-In Kianda, controls are the building blocks of your forms. They allow you to capture user inputs, organize the layout, perform actions, and even create custom functionality. Controls are grouped into four main categories: Input, Layout, Actions, and Custom. Each category serves a distinct purpose, helping you create interactive and responsive forms tailored to your business needs. The table below lists the controls available under each category.
+In Kianda, controls are the building blocks of your forms. They allow you to capture user inputs, organize the layout, perform actions, and even create custom functionality. 
+
+Controls are grouped into four main categories: Input, Layout, Actions, and Custom. Each category serves a distinct purpose, helping you create interactive and responsive forms tailored to your business needs. The table below lists the controls available under each category.
 
 | **Input Controls**                                    | **Layout Controls** | **Action Controls** | **Custom Controls**                                          |
 | ----------------------------------------------------- | ------------------- | ------------------- | ------------------------------------------------------------ |
@@ -53,7 +61,9 @@ In Kianda, controls are the building blocks of your forms. They allow you to cap
 
 ## 4. Adding Controls to a Form
 
-Adding controls to a form in Kianda is a straightforward process. Once you have accessed the form builder, you can drag and drop the desired controls from the control panel onto your form canvas. Each control can be customized through its properties, which are displayed on the right side of the screen. You can configure settings such as visibility, required fields, responsiveness, and more. This intuitive interface allows you to quickly build and modify forms to suit your specific needs, ensuring an efficient and user-friendly experience for end-users.
+Adding controls to a form in Kianda is a straightforward process. Once you have accessed the form builder, you can drag and drop the desired controls from the control panel onto your form canvas. 
+
+Each control can be customized through its properties, which are displayed on the right side of the screen. You can configure settings such as visibility, required fields, responsiveness, and more. This intuitive interface allows you to quickly build and modify forms to suit your specific needs, ensuring an efficient and user-friendly experience for end-users.
 
 <video class="inline-video-player" loading="lazy" muted loop playsinline autoplay poster>
     <source src="/videos/Add-Controls.mp4">
@@ -65,9 +75,11 @@ Adding controls to a form in Kianda is a straightforward process. Once you have 
 
 Ensuring that your forms are mobile responsive is essential for providing a seamless user experience across different devices. Kianda's form builder allows you to design forms that automatically adjust to various screen sizes, from desktops to tablets and smartphones. Using the responsive layout options available in the form builder, you can define how each control should behave on different devices. This ensures that your forms remain accessible and user-friendly, regardless of the screen size.
 
-To make a form mobile responsive, start by configuring the layout settings of each control. In the properties panel, you can specify the number of columns a control should span on different screen sizes, following the Bootstrap grid system. For example, you might set a text box to take up half the width of the screen on a desktop (6 columns) but adjust it to full width (12 columns) on a mobile device. This flexibility allows you to optimize the layout for better readability and ease of use on smaller screens.
+To make a form mobile responsive, start by configuring the layout settings of each control. In the properties panel, you can specify the number of columns a control should span on different screen sizes, following the Bootstrap grid system. 
 
-Additionally, you can group controls using layout elements like panels and field groups to maintain a clean and organized structure. These grouping elements can also be configured for responsiveness, ensuring that related controls stay together and display cohesively on all devices. By leveraging Kianda's responsive design features, you can create forms that provide a consistent and efficient user experience, enhancing usability and satisfaction for mobile users.
+For example, you might set a text box to take up half the width of the screen on a desktop (6 columns) but adjust it to full width (12 columns) on a mobile device. This flexibility allows you to optimize the layout for better readability and ease of use on smaller screens.
+
+Additionally, you can group controls using layout elements like panels and field groups to maintain a clean and organized structure. These grouping elements can also be configured for responsiveness, ensuring that related controls stay together and display cohesively on all devices. By leveraging Kianda's responsive design features, you can create forms that provide a consistent and efficient user experience, enhancing usability and satisfaction for both desktop and mobile users.
 
 ## 6. Advanced Control Configuration
 
@@ -124,7 +136,24 @@ The list control is a versatile control that can bind directly to data sources s
 - **Enable background upload**: Allows files to be uploaded in the background.
 - **Enable chunked upload**: Allows large files to be uploaded in chunks.
 
+#### User picker Control
+
+- **Selection mode**: Single, multiple - Specifies if multiple users can be selected.
+- **Member of group**: Limits the selection of users from single group.
+- **Selection options**: Users, Groups, Partners (External users) - Defines what type of principals can be selected.
+- **Default to current user**: Yes / No - Auto select the current user in the picker control.
+
+#### Toggle Control
+
+Toggle control allows the capture of Boolean type of content using (Yes / No by default)
+
+- **Value when enabled**:  Specifies specifies the value when the toggle or checkbox is selected.
+- **Value when disabled**: Specifies specifies the value when the toggle or checkbox is un-selected.
+- **Display mode**: Toggle, Checkbox - Defines what type of control will be used (Checkbox or a toggle control).
+
 #### Table Control
+
+Allows the capture of tabular or repeating data. Table control can include panel as the single column that in itself can contain other controls. This makes the table controls a flexible control for both tabular format data as well as for repeating data structures.
 
 - **Add row text**: The button text for the add new row button of the table - Customizes the text for the add row button.
 - **Page size**: Table paging size - Sets the number of rows per page.
@@ -140,6 +169,11 @@ The list control is a versatile control that can bind directly to data sources s
 
 - **Enable panel security**: Enables settings to apply dynamic security to a panel - Secures panel content based on conditions.
 - **Color scheme**: Options to choose color for the panel - Customizes the panel color.
+
+#### Dialog Control
+
+- **Dialog size**: Default, Large - Defines the size of the modal dialog.
+- **Hide Ok, Hide Close**: Options to choose hide the default modal dialog buttons.
 
 #### Button Control
 
