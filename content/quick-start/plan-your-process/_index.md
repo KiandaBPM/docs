@@ -13,15 +13,25 @@ typora-root-url: ..\..\..\static
 
 ## 1. Introduction
 
-In Kianda, rules form the backbone of dynamic and robust process applications. They enable you to define logic that responds to user inputs, automates tasks, and integrates with various data sources and external systems. By leveraging more than 60 built-in rules, along with the ability to create custom rules using JavaScript, Handlebars, and HTML, you can design process apps that are both flexible and powerful.
+In Kianda, rules form the backbone of dynamic and robust process applications. They enable you to define logic that responds to user inputs, automates tasks, and integrates with various data sources and external systems. 
 
-This guide will introduce you to the concept of process logic within Kianda, emphasizing the critical role rules play in creating responsive and efficient workflows. You'll learn how to use rules to control the behavior of forms and fields, automate communications, manage data, and integrate with user and file management systems. Whether you are hiding a field based on user input, sending automated emails, or updating a database, rules provide the necessary logic to make these actions possible.
+By leveraging more than 60 built-in rules, along with the ability to create custom rules using JavaScript, Handlebars, and HTML, you can design process apps that are both flexible and powerful.
 
-Before diving into the specifics, ensure that you have a basic understanding of Kianda's interface and permissions, as well as familiarity with the types of data sources and systems you plan to integrate. This foundation will help you navigate the various rule configurations and make the most of Kianda's process automation capabilities. By the end of this guide, you will be well-equipped to implement dynamic process logic that meets your business needs efficiently and effectively.
+This guide will introduce you to the concept of process logic within Kianda, emphasizing the critical role rules play in creating responsive and efficient workflows. You'll learn how to use rules to control the behavior of forms and fields, automate communications, manage data, and integrate with user and file management systems. 
+
+Whether you are hiding a field based on user input, sending automated emails, or updating a database, rules provide the necessary logic to make these actions possible.
+
+Before diving into the specifics, ensure that you have a basic understanding of Kianda's interface and permissions, as well as familiarity with the types of [data sources](../connect-your-data/) and systems you plan to integrate. 
+
+This foundation will help you navigate the various rule configurations and make the most of Kianda's process automation capabilities. 
+
+By the end of this guide, you will be well-equipped to implement dynamic process logic that meets your business needs efficiently and effectively.
 
 ## 2. Understanding Rules in Kianda
 
-Rules in Kianda are essential components that drive the behavior and logic of process applications. They provide the dynamic capabilities needed to respond to user actions, automate processes, and interact with external systems and data sources. Understanding the different types of rules and how they can be utilized is crucial for building effective and robust process applications.
+Rules in Kianda are essential components that drive the behavior and logic of process applications. They provide the dynamic capabilities needed to respond to user actions, automate processes, and interact with external systems and data sources. 
+
+Understanding the different types of rules and how they can be utilized is crucial for building effective and robust process applications.
 
 #### Types of Rules
 
@@ -39,7 +49,9 @@ Kianda offers a wide range of built-in rules that cater to various needs, groupe
 
 #### Custom Rules
 
-In addition to the default rules, Kianda allows developers to create custom rules using JavaScript, Handlebars, and HTML. This feature provides the flexibility to implement bespoke logic and functionalities tailored to your specific business requirements. Custom rules can be used to extend the capabilities of your process applications, offering advanced control over how your processes operate.
+In addition to the default rules, Kianda allows developers to create custom rules using JavaScript, Handlebars, and HTML. This feature provides the flexibility to implement bespoke logic and functionalities tailored to your specific business requirements. 
+
+Custom rules can be used to extend the capabilities of your process applications, offering advanced control over how your processes operate.
 
 #### Rule Categories and Their Uses
 
@@ -93,7 +105,7 @@ Form submission rules are executed when a form is submitted and marked as comple
 
 The "Submit Form Rule" rules can be added to a submit button to initiate the submit form event.
 
-#### Process Load Rules
+#### Process OnLoad Rules
 
 Process load rules are executed when a process is loaded. These rules are useful for pre-loading data, initializing form fields, or performing any setup operations required when the users opens the process. Here’s how to configure process load rules:
 
