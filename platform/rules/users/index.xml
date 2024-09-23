@@ -12,8 +12,8 @@
 &lt;h2 id="before-getting-started">Before getting started&lt;/h2>
 &lt;p>In advance of using the &lt;strong>Get user property&lt;/strong> rule, in your process you need to have created at least one or more forms. The rule also requires you to select a &lt;strong>user profile source&lt;/strong>, the source can be the &lt;strong>current user&lt;/strong> of the form or a user chosen within a &lt;strong>User picker&lt;/strong> field. When selecting the &lt;strong>current user&lt;/strong> option, you will target the &lt;strong>property&lt;/strong> of the user that is &lt;strong>currently&lt;/strong> using the form. When you pick the &lt;strong>user picker field&lt;/strong>, you need to create a &lt;strong>User picker&lt;/strong> field which is used to select a user to target when &lt;strong>retrieving&lt;/strong> a property. The rule also requires a &lt;strong>text box&lt;/strong> field which is used as a &lt;strong>container&lt;/strong> to store the &lt;strong>retrieved value&lt;/strong> of the property.&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>User picker (required)&lt;/strong> - field used to select a user for which you want to update a property. To learn more about user picker field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Text box (required)&lt;/strong> - field used as a container to store the value of the property. To learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>User picker (required)&lt;/strong> - field used to select a user for which you want to update a property. To learn more about user picker field go to &lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box (required)&lt;/strong> - field used as a container to store the value of the property. To learn more about text box field go to &lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -28,7 +28,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/get-property-edit-rule.jpg" alt="Get user property - edit rule dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
@@ -49,7 +49,7 @@
 &lt;p>&lt;strong>Field to store user profile property&lt;/strong> - you can select a field within your process to store the value of the retrieved property.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>User profile property&lt;/strong> - list of profile properties and profile attributes that you can retrieve. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>User profile property&lt;/strong> - list of profile properties and profile attributes that you can retrieve. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -74,8 +74,8 @@
 &lt;li>Use this rule to &lt;strong>automate&lt;/strong> processes when a form &lt;strong>requires&lt;/strong> information from a &lt;strong>users profile&lt;/strong>. For example when a form contains field such as name, phone number or email address, you can use this rule to automatically set those fields by &lt;strong>retrieving&lt;/strong> the users name, phone number and email address &lt;strong>properties&lt;/strong>.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Lookup user by property</title><link>https://docs.kianda.com/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/users/lookup-user-by-property/</guid><description>
+&lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/platform/rules/users/">User rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Lookup user by property</title><link>https://docs.kianda.com/platform/rules/users/lookup-user-by-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/users/lookup-user-by-property/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Lookup user by property&lt;/strong> rule allows you to look up a user from your &lt;strong>subscription&lt;/strong> using one of the &lt;strong>properties&lt;/strong> in their &lt;strong>profile&lt;/strong> for example first name, last name, email or department. Using this rule you can also look up &lt;strong>groups&lt;/strong> or &lt;strong>partners&lt;/strong> by specifying one of the properties available. When looking up a user, group or a partner you can use the following properties:&lt;/p>
 &lt;ul>
@@ -89,7 +89,7 @@
 &lt;li>&lt;strong>Partner language&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Partner region&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>UserId&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Custom&lt;/strong> &lt;strong>profile attributes&lt;/strong>, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Custom&lt;/strong> &lt;strong>profile attributes&lt;/strong>, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Use this rule when your process requires to &lt;strong>filter&lt;/strong> a &lt;strong>user&lt;/strong> using a profile property, for example, when a user fills out his email address, a user picker field is assigned with the user that &lt;strong>matches&lt;/strong> the entered email address. This rule is used to &lt;strong>automate&lt;/strong> a &lt;strong>user picker&lt;/strong> field when property input is provided.&lt;/p>
@@ -102,8 +102,8 @@
 &lt;h2 id="before-getting-started">Before getting started&lt;/h2>
 &lt;p>In advance of using the &lt;strong>Lookup user by property&lt;/strong> rule, in your process you need to have created at least one or more forms. The lookup user by property rule also requires a &lt;strong>User picker&lt;/strong> field which is used to store the user that matches the property you have entered. For best practice, you can also create a &lt;strong>text box&lt;/strong> field which holds the &lt;strong>value&lt;/strong> of the property that you want to look by, for example the email address of a user.&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>User picker (required)&lt;/strong> - field to store the user when the look up is performed. To learn more about user picker field, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Text box (optional)&lt;/strong> - value of the property you want to look by. To learn more about text box field, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>User picker (required)&lt;/strong> - field to store the user when the look up is performed. To learn more about user picker field, go to &lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box (optional)&lt;/strong> - value of the property you want to look by. To learn more about text box field, go to &lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -118,7 +118,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/lookup-user-edit-rule.jpg" alt="Lookup user by property - edit rule dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
@@ -130,7 +130,7 @@
 &lt;li>&lt;strong>Partner&lt;/strong> - user that is part of your subscription with partner rights.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>&lt;strong>User property to locate user by&lt;/strong> - list of profile properties and profile attributes that you want the user to be looked up by. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>User property to locate user by&lt;/strong> - list of profile properties and profile attributes that you want the user to be looked up by. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>Field value or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value of the property you want to look up by.&lt;/li>
 &lt;li>&lt;strong>User field to store lookup result&lt;/strong> - field to store the user that the property you searched by matches.&lt;/li>
 &lt;/ul>
@@ -148,10 +148,10 @@
 &lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;p>Create a &lt;strong>datasource&lt;/strong> with all users and their &lt;strong>properties&lt;/strong>, you can create a &lt;strong>list&lt;/strong> field and set the field to the created datasource. You can set the display of the list field to the property value of the data source. With that you will have a &lt;strong>selection&lt;/strong> of &lt;strong>user properties&lt;/strong> which you can use as a search mechanism for users. For example search users that are based in a specific location. To learn more about list field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>.&lt;/p>
+&lt;p>Create a &lt;strong>datasource&lt;/strong> with all users and their &lt;strong>properties&lt;/strong>, you can create a &lt;strong>list&lt;/strong> field and set the field to the created datasource. You can set the display of the list field to the property value of the data source. With that you will have a &lt;strong>selection&lt;/strong> of &lt;strong>user properties&lt;/strong> which you can use as a search mechanism for users. For example search users that are based in a specific location. To learn more about list field go to &lt;a href="https://docs.kianda.com/platform/controls/input/list/">List control&lt;/a>.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Invite partner</title><link>https://docs.kianda.com/platform/rules/users/invite-partner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/users/invite-partner/</guid><description>
+&lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/platform/rules/users/">User rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Invite partner</title><link>https://docs.kianda.com/platform/rules/users/invite-partner/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/users/invite-partner/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Invite partner&lt;/strong> rule allows you to &lt;strong>dynamically&lt;/strong> send out an email to a partner organisation with an &lt;strong>invitation&lt;/strong> to &lt;strong>share&lt;/strong> a process from your subscription. This rule &lt;strong>creates a profile&lt;/strong> for the partner as well as shares a process specified in the rule. You can choose to &lt;strong>generate&lt;/strong> an invite link and store the link in a text box field if needed instead of sending out an automatic email.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
@@ -163,7 +163,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-getting-started">Before getting started&lt;/h2>
-&lt;p>Before you get started with this rule, you need to create a &lt;strong>shared process instance&lt;/strong> of the process you intend to share with the partner. To learn more how to create a shared process instance, go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/shared-process/">Shared processes&lt;/a>.&lt;/p>
+&lt;p>Before you get started with this rule, you need to create a &lt;strong>shared process instance&lt;/strong> of the process you intend to share with the partner. To learn more how to create a shared process instance, go to &lt;a href="https://docs.kianda.com/platform/b2b-portals/shared-process/">Shared processes&lt;/a>.&lt;/p>
 &lt;p>In advance of using the &lt;strong>Invite partner&lt;/strong> rule, in your process you need to have created at least one or more forms. The &lt;strong>Invite partner&lt;/strong> rule also requires you to create a list of fields that are used to hold information about the partner and which process you want to share. See below for the list of fields required in your process before using the invite partner rule:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Partner organisation&lt;/strong> - text box field representing the name of the organisation that the partner is part of.&lt;/li>
@@ -187,7 +187,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/invite-partner-edit-rule.jpg" alt="Invite partner - edit rule dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
@@ -245,15 +245,15 @@
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>Prior to inviting a partner, create a &lt;strong>shared process instance&lt;/strong> of a process that you intend your partner to use. Give it a unique name for example use the original process name followed by the partners name. If you have a process called &lt;strong>Inspection Checklist&lt;/strong> and your partners name is &lt;strong>Windmill Inspections&lt;/strong>, call your shared process instance &lt;strong>Inspection Checklist - Windmill Inspections&lt;/strong>. This will help you differentiate between your original process and the shared process.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Update user property</title><link>https://docs.kianda.com/platform/rules/users/update-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/users/update-user-property/</guid><description>
+&lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/platform/rules/users/">User rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Update user property</title><link>https://docs.kianda.com/platform/rules/users/update-user-property/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/users/update-user-property/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Update user property&lt;/strong> rule allows you to &lt;strong>change/update&lt;/strong> a profile property of a user within your subscription. When updating a property of a user, you can choose to select between the &lt;strong>current user&lt;/strong> of the form or a user that can be selected from a &lt;strong>user picker&lt;/strong> field. To learn more about a user picker field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>. You can update the following properties of a user:&lt;/p>
+&lt;p>The &lt;strong>Update user property&lt;/strong> rule allows you to &lt;strong>change/update&lt;/strong> a profile property of a user within your subscription. When updating a property of a user, you can choose to select between the &lt;strong>current user&lt;/strong> of the form or a user that can be selected from a &lt;strong>user picker&lt;/strong> field. To learn more about a user picker field go to &lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>. You can update the following properties of a user:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Phone number&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Partner language&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>Partner region&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Custom profile attributes&lt;/strong>, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Custom profile attributes&lt;/strong>, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Use this rule when you need to update a profile &lt;strong>property&lt;/strong> or a profile &lt;strong>attribute&lt;/strong> of a user. Select the &lt;strong>current user&lt;/strong> option to update a property of the user that is &lt;strong>currently&lt;/strong> filling out a form, or create a &lt;strong>user picker&lt;/strong> field to have more &lt;strong>flexibility&lt;/strong> with user selection.&lt;/p>
@@ -266,8 +266,8 @@
 &lt;h2 id="before-getting-started">Before getting started&lt;/h2>
 &lt;p>In advance of using the &lt;strong>Update user property&lt;/strong> rule, in your process you need to have created at least one or more forms. The update user property rule also requires you to select a &lt;strong>user profile source&lt;/strong>, the source can be the &lt;strong>Current user&lt;/strong> or a &lt;strong>User picker&lt;/strong> field. When selecting the &lt;strong>current user&lt;/strong> option, you will target the &lt;strong>property&lt;/strong> of the user that is &lt;strong>currently&lt;/strong> using the form. When you pick the &lt;strong>user picker field&lt;/strong>, you need to create a &lt;strong>User picker&lt;/strong> field which is used to specify a user when updating a property. For best practices you can create a text box field which will represent the new value of the property you want to update.&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>User picker (required)&lt;/strong> - field used to select a user for which you want to update a property. To learn more about user picker field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Text box (optional)&lt;/strong> - field representing the &lt;strong>new value&lt;/strong> of the property you want to update. To learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>User picker (required)&lt;/strong> - field used to select a user for which you want to update a property. To learn more about user picker field go to &lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Text box (optional)&lt;/strong> - field representing the &lt;strong>new value&lt;/strong> of the property you want to update. To learn more about text box field go to &lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -282,7 +282,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/update-property-edit-rule.jpg" alt="Update user property - edit rule dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under the &lt;strong>Action&lt;/strong> section fill out the following:&lt;/p>
@@ -303,7 +303,7 @@
 &lt;p>&lt;strong>Field or text&lt;/strong> - you can select a field within your form or type in text manually to represent the value of the property you want to update.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>User property to update&lt;/strong> - list of profile properties and profile attributes that you want the update. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>User property to update&lt;/strong> - list of profile properties and profile attributes that you want the update. Note that you can create your own profile attributes which also appear in the list, to learn more about profile attributes go to &lt;a href="https://docs.kianda.com/platform/administration/users/#modify-profile-attributes">Profile attributes&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -324,7 +324,7 @@
 &lt;li>To &lt;strong>view&lt;/strong> a rule, click on the &lt;strong>rule name&lt;/strong> to open the &lt;strong>Edit rule&lt;/strong> dialog box.&lt;/li>
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;p>When updating multiple properties at once, create a text box field for each property you want to update. This way you have more control of the value you want to assign to each property. To learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">Text box control&lt;/a>.&lt;/p>
+&lt;p>When updating multiple properties at once, create a text box field for each property you want to update. This way you have more control of the value you want to assign to each property. To learn more about text box field go to &lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">Text box control&lt;/a>.&lt;/p>
 &lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/users/">User rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>To find out more about other User rules go to &lt;a href="https://docs.kianda.com/platform/rules/users/">User rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>

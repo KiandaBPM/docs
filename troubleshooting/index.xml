@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – Troubleshooting</title><link>https://docs.kianda.com/troubleshooting/</link><description>Recent content in Troubleshooting on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/troubleshooting/index.xml" rel="self" type="application/rss+xml"/><item><title>Troubleshooting: Version history and auditing</title><link>https://docs.kianda.com/troubleshooting/version-history-and-auditing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/troubleshooting/version-history-and-auditing/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>As an &lt;strong>administrator&lt;/strong> you can test &lt;strong>process designs&lt;/strong> using the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/previewer/">Previewer&lt;/a> and &lt;strong>roll-back to earlier versions&lt;/strong> using the steps in &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/version-history/">Version history&lt;/a> page. In addition to managing process design version history, as an administrator you can manage process instance history using the &lt;strong>Process history&lt;/strong> feature. This will allow administrators to view when data has been saved for a particular record, who has saved the data and the changes made going from one version of the record to another.&lt;/p>
+&lt;p>As an &lt;strong>administrator&lt;/strong> you can test &lt;strong>process designs&lt;/strong> using the &lt;a href="https://docs.kianda.com/platform/application-designer/designer/previewer/">Previewer&lt;/a> and &lt;strong>roll-back to earlier versions&lt;/strong> using the steps in &lt;a href="https://docs.kianda.com/platform/application-designer/designer/version-history/">Version history&lt;/a> page. In addition to managing process design version history, as an administrator you can manage process instance history using the &lt;strong>Process history&lt;/strong> feature. This will allow administrators to view when data has been saved for a particular record, who has saved the data and the changes made going from one version of the record to another.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>Before getting started, consider a particular process that requires investigation, using the name of the process design found in the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Process designer&lt;/a> page, for example Asset Request is a chosen process design as shown in the image below.&lt;/p>
+&lt;p>Before getting started, consider a particular process that requires investigation, using the name of the process design found in the &lt;a href="https://docs.kianda.com/platform/application-designer/">Process designer&lt;/a> page, for example Asset Request is a chosen process design as shown in the image below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-design-example.jpg" alt="Process design example">&lt;/p>
-&lt;p>Then check the records or instances of the process design by going to or creating a dashboard page and viewing a &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List&lt;/a> widget that is linked to that process design. For example in the image below there are six process instances for the Asset Request design. We can investigate one of these in the steps below.&lt;/p>
+&lt;p>Then check the records or instances of the process design by going to or creating a dashboard page and viewing a &lt;a href="https://docs.kianda.com/platform/pages/list/">List&lt;/a> widget that is linked to that process design. For example in the image below there are six process instances for the Asset Request design. We can investigate one of these in the steps below.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-of-instances-example.jpg" alt="List of process instances for Asset Request process design">&lt;/p>
 &lt;h2 id="process-instance-version-history">Process instance version history&lt;/h2>
-&lt;p>&lt;strong>Process instances&lt;/strong> can be accessed from a &lt;strong>list widget&lt;/strong> in a dashboard page linked to the process design. Access to the dashboard and list widget can be set using security settings, see &lt;a href="https://docs.kianda.com/docs/security/process-level-security/#dashboard-security">Dashboard security&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Process instances&lt;/strong> can be accessed from a &lt;strong>list widget&lt;/strong> in a dashboard page linked to the process design. Access to the dashboard and list widget can be set using security settings, see &lt;a href="https://docs.kianda.com/security/process-level-security/#dashboard-security">Dashboard security&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/chosen-instance-example.jpg" alt="Example of a chosen process instance">&lt;/p>
 &lt;p>For example by clicking on a process ID like &amp;lsquo;asset-request-3&amp;rsquo; as seen in the list widget above, we can then see the actual record/process instance held in the system. In the Asset Request example below, all forms have had data submitted, including the last form in the process, the Order form.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/accessing-process-history.jpg" alt="Accessing process history within a record">&lt;/p>
@@ -27,7 +27,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-history-details.jpg" alt="Process instance history details">&lt;/p>
 &lt;p>You can also see &lt;strong>changes&lt;/strong> in values, for example by default the Approval Status field in Kianda Designer is set to &amp;lsquo;False&amp;rsquo;, but when a user choose a Management Decision value of &amp;lsquo;Yes&amp;rsquo;, a Set form field rule will execute a rule to set a value in the field to &amp;lsquo;True&amp;rsquo;. This rule can be seen when the process design is viewed.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/set-form-field-eg.jpg" alt="Set form field rule example">&lt;/p>
-&lt;p>A good knowledge of the process design as seen in Kianda &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a> is necessary to support troubleshooting changes in process instances.&lt;/p>
+&lt;p>A good knowledge of the process design as seen in Kianda &lt;a href="https://docs.kianda.com/platform/application-designer/designer/">Designer&lt;/a> is necessary to support troubleshooting changes in process instances.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Back&lt;/strong> button &lt;img src="https://docs.kianda.com/images/back-process-history.jpg" alt="Back button"> or &lt;strong>Close&lt;/strong> to return to the list of process instance versions.&lt;/p>
@@ -36,14 +36,14 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Version history and auditing&lt;/strong>, find out more about other troubleshooting features:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/">Custom widget debugging&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/rule-debugger">Rule debugger&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/custom-widget-debugging/">Custom widget debugging&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Troubleshooting: Rule debugger</title><link>https://docs.kianda.com/troubleshooting/rule-debugger/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/troubleshooting/rule-debugger/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Rule debugger&lt;/strong> is a troubleshooting feature that allows you to visualise each rule being executed in your process design within the preview window. It provides an insight into the logical flow of a process and serves as an important troubleshooting feature if your process does not work as expected. As well as this, it states what rule is being executed and on what field it is acting upon, alongside any associated conditions.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-debugger-example.jpg" alt="Rule debugger in action example">&lt;/p>
-&lt;p>The &lt;strong>Rule Debugger&lt;/strong> can be turned on at any point, for example when starting a new process or using the Previewer. We look at the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/previewer/">Previewer&lt;/a> in the steps below, however you can also access this feature via &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>.&lt;/p>
+&lt;p>The &lt;strong>Rule Debugger&lt;/strong> can be turned on at any point, for example when starting a new process or using the Previewer. We look at the &lt;a href="https://docs.kianda.com/platform/application-designer/designer/previewer/">Previewer&lt;/a> in the steps below, however you can also access this feature via &lt;a href="https://docs.kianda.com/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;p>Before getting started, you must open a process design of your choice that features rules that require debugging.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -68,7 +68,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>You can alter the conditions on the currently displayed rule (if any), by clicking on the &lt;strong>Conditions&lt;/strong> filter button &lt;img src="https://docs.kianda.com/images/conditions-filter-btn.png" alt="Conditions filter button image">. This will display another modal dialog box, which gives you the option to change the condition being applied to the rule, add further conditions, remove some conditions and more - allowing for the troubleshooting of different use cases within your process. To learn more about this, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;p>You can alter the conditions on the currently displayed rule (if any), by clicking on the &lt;strong>Conditions&lt;/strong> filter button &lt;img src="https://docs.kianda.com/images/conditions-filter-btn.png" alt="Conditions filter button image">. This will display another modal dialog box, which gives you the option to change the condition being applied to the rule, add further conditions, remove some conditions and more - allowing for the troubleshooting of different use cases within your process. To learn more about this, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-debugger-conditions.png" alt="Conditions dialog for rule debugger">&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -76,13 +76,13 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Rule debugger&lt;/strong>, find out more about other troubleshooting features:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/">Custom widget debugging&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing">Version history and Auditing&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/custom-widget-debugging/">Custom widget debugging&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/version-history-and-auditing">Version history and Auditing&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Troubleshooting: Rule diagnostics</title><link>https://docs.kianda.com/troubleshooting/rule-diagnostics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/troubleshooting/rule-diagnostics/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>&lt;strong>Rule diagnostics&lt;/strong> is a troubleshooting feature within Kianda that allows you to view a nested list of all forms, fields and rules - the purpose being that you can choose to &lt;strong>manually trigger&lt;/strong> these rules for diagnostic purposes, as well as &lt;strong>toggle field visibility&lt;/strong>, &lt;strong>re-assign forms&lt;/strong>, and more.&lt;/p>
-&lt;p>The rule diagnostics feature is available for troubleshooting specific &lt;a href="https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing/">Process instances&lt;/a> where as the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a> feature focuses more so on troubleshooting a process design pre-publishing.&lt;/p>
+&lt;p>The rule diagnostics feature is available for troubleshooting specific &lt;a href="https://docs.kianda.com/troubleshooting/version-history-and-auditing/">Process instances&lt;/a> where as the &lt;a href="https://docs.kianda.com/troubleshooting/rule-debugger">Rule debugger&lt;/a> feature focuses more so on troubleshooting a process design pre-publishing.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;p>Before getting started, you must open a process instance that you would like to perform rule diagnostics on.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -97,7 +97,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-history-modal1.png" alt="rule diagnostics tab">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>There are many possibilities for testing your process instance, however in this example we will try to troubleshoot the &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email rule&lt;/a> to ensure that the line manager receives the correctly formatted email during this process.&lt;/p>
+&lt;p>There are many possibilities for testing your process instance, however in this example we will try to troubleshoot the &lt;a href="https://docs.kianda.com/platform/rules/communications/send-email/">Send email rule&lt;/a> to ensure that the line manager receives the correctly formatted email during this process.&lt;/p>
 &lt;p>To do this, we will drill down into the following path: &lt;em>Asset request&lt;/em> form &amp;gt; &lt;em>Submit&lt;/em> button &amp;gt; &lt;em>Rules&lt;/em> &amp;gt; &lt;em>Email Line Manager&lt;/em>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/expanding-process-instance.png" alt="Drill down into line manager">&lt;/p>
 &lt;/li>
@@ -122,7 +122,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/current-form-screen.png" alt="other debug features">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You can also choose to &lt;strong>Enable rule debugging&lt;/strong> by choosing the &lt;em>Yes&lt;/em> radio button, also below the nested list. This will enable the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a> feature, however instead of executing within a process design preview window, it will enact upon your selected process instance. The rule debugger modal dialog will appear in the bottom right-hand corner of the screen.&lt;/p>
+&lt;p>You can also choose to &lt;strong>Enable rule debugging&lt;/strong> by choosing the &lt;em>Yes&lt;/em> radio button, also below the nested list. This will enable the &lt;a href="https://docs.kianda.com/troubleshooting/rule-debugger">Rule debugger&lt;/a> feature, however instead of executing within a process design preview window, it will enact upon your selected process instance. The rule debugger modal dialog will appear in the bottom right-hand corner of the screen.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-debugger-within-rule-diagnostics.png" alt="Rule debugger modal dialog within rule diagnostics">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -132,17 +132,17 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Rule Diagnostics&lt;/strong>, find out more about other troubleshooting features:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/custom-widget-debugging/">Custom Widget Debugging&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger/">Rule Debugger&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing">Version History and Auditing&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/custom-widget-debugging/">Custom Widget Debugging&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/rule-debugger/">Rule Debugger&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/version-history-and-auditing">Version History and Auditing&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Troubleshooting: Custom widget debugging</title><link>https://docs.kianda.com/troubleshooting/custom-widget-debugging/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/troubleshooting/custom-widget-debugging/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Within your Kianda platform, you have the option to create your own &lt;strong>custom widgets&lt;/strong> if the many pre-configured fields, rules or dashboard elements do not suit. Naturally, you might want to troubleshoot your created code if it does not perform as expected. This page will outline and detail several important code &lt;strong>debugging practices&lt;/strong> you can implement in your custom widget to ensure correct operation. As well as this, some of these methods can be applied to troubleshoot your own &lt;strong>custom connectors&lt;/strong> within your platform.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>Before getting started, open a custom widget of your choice in code edit mode within Kianda &lt;a href="https://docs.kianda.com/docs/platform/administration/developer/">Developer&lt;/a>. For example choose features within rule, field, dashboard elements that require debugging.&lt;/p>
+&lt;p>Before getting started, open a custom widget of your choice in code edit mode within Kianda &lt;a href="https://docs.kianda.com/platform/administration/developer/">Developer&lt;/a>. For example choose features within rule, field, dashboard elements that require debugging.&lt;/p>
 &lt;h2 id="custom-widget-debugging-practices">Custom widget debugging practices&lt;/h2>
-&lt;p>There are several methods of debugging your custom &lt;a href="https://docs.kianda.com/docs/low-code/field-widget/">field&lt;/a>, &lt;a href="https://docs.kianda.com/docs/low-code/rule-widget/">rule&lt;/a>, and &lt;a href="https://docs.kianda.com/docs/low-code/dashboard-widget/">dashboard&lt;/a> widgets listed below. You can also investigate and understand &lt;strong>Ember.js&lt;/strong> on your Kianda platform via the &lt;a href="https://docs.kianda.com/docs/low-code/using-the-ember-inspector/">Ember.js inspector&lt;/a>, an an open-source JavaScript web application framework that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner.&lt;/p>
-&lt;p>On this page, we will look at using &lt;a href="https://developer.chrome.com/docs/devtools/">Google Chrome Developer Tools&lt;/a>, however most web browsers provide web analysis and debugging tools such as &lt;a href="https://www.mozilla.org/en-US/firefox/developer/">Mozilla Firefox Developer Tools&lt;/a> and &lt;a href="https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40017576-CH1-SW1">Safari Web Inspector&lt;/a>.&lt;/p>
+&lt;p>There are several methods of debugging your custom &lt;a href="https://docs.kianda.com/low-code/field-widget/">field&lt;/a>, &lt;a href="https://docs.kianda.com/low-code/rule-widget/">rule&lt;/a>, and &lt;a href="https://docs.kianda.com/low-code/dashboard-widget/">dashboard&lt;/a> widgets listed below. You can also investigate and understand &lt;strong>Ember.js&lt;/strong> on your Kianda platform via the &lt;a href="https://docs.kianda.com/low-code/using-the-ember-inspector/">Ember.js inspector&lt;/a>, an an open-source JavaScript web application framework that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner.&lt;/p>
+&lt;p>On this page, we will look at using &lt;a href="https://developer.chrome.com/devtools/">Google Chrome Developer Tools&lt;/a>, however most web browsers provide web analysis and debugging tools such as &lt;a href="https://www.mozilla.org/en-US/firefox/developer/">Mozilla Firefox Developer Tools&lt;/a> and &lt;a href="https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40017576-CH1-SW1">Safari Web Inspector&lt;/a>.&lt;/p>
 &lt;h3 id="developer-console">Developer console&lt;/h3>
 &lt;p>You can simply print information relating to your widget within the developer console by utilising JavaScript methods such as &lt;strong>&lt;code>getElementsByClassName&lt;/code>&lt;/strong> on the document object. Depending on the code you have written, this method can be useful in returning attributes of your chosen array of classes.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/developer-console-debug.png" alt="Printing to the developer console">&lt;/p>
@@ -166,7 +166,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">data&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">ember&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">action&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1163&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">data&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">ember&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#000">action&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">-&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">1163&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">length&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">3&lt;/span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This code displays various attributes relating to the third question in the FAQ accordion, however other properties and methods can be called in the developer console instead of &lt;em>.attributes&lt;/em>:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>.style&lt;/strong> - to view the custom CSS that is being applied to the HTML. For more on this, see &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS File&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>.style&lt;/strong> - to view the custom CSS that is being applied to the HTML. For more on this, see &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS File&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>.focus()&lt;/strong> - if your HTML elements appear to be hidden or out of focus, the &lt;em>.focus()&lt;/em> method snaps the browser view to the elements position.&lt;/li>
 &lt;li>&lt;strong>.innerHTML&lt;/strong> - returns the HTML content within the selected element, useful for analysing and manipulating content.&lt;/li>
 &lt;/ul>
@@ -206,7 +206,7 @@
 &lt;li>The values/calculations are displayed under the &lt;strong>Script&lt;/strong> heading in the bottom right-hand corner and will be updated on each iteration.&lt;/li>
 &lt;li>You can choose to select further code &lt;strong>Breakpoints&lt;/strong> by ticking the checkboxes beside &lt;em>Pause on uncaught exceptions&lt;/em> and &lt;em>Pause on caught exceptions&lt;/em>.&lt;/li>
 &lt;/ol>
-&lt;p>The debugger function operates similarly to the &lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a> with its iterative, step-by-step stage based troubleshooting flow.&lt;/p>
+&lt;p>The debugger function operates similarly to the &lt;a href="https://docs.kianda.com/troubleshooting/rule-debugger">Rule debugger&lt;/a> with its iterative, step-by-step stage based troubleshooting flow.&lt;/p>
 &lt;h3 id="other-debugging-practices">Other debugging practices&lt;/h3>
 &lt;p>There are several other useful debugging practices you can implement within your Kianda platform:&lt;/p>
 &lt;ol>
@@ -225,7 +225,7 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Custom widget debugging&lt;/strong>, find out more about other troubleshooting features:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-debugger">Rule debugger&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/troubleshooting/version-history-and-auditing">Version history and Auditing&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/rule-debugger">Rule debugger&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/rule-diagnostics/">Rule diagnostics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/troubleshooting/version-history-and-auditing">Version history and Auditing&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>

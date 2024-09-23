@@ -45,9 +45,9 @@
 &lt;p>&lt;strong>Note&lt;/strong>: We also welcome feedback on this &lt;strong>documentation&lt;/strong>. Please feel free to indicate if this or other pages are helpful by using the &lt;strong>Yes&lt;/strong> and &lt;strong>No&lt;/strong> buttons at the bottom of the page. Alternatively you can provide feedback/comments via GitHub by clicking on the &lt;strong>documentation issue&lt;/strong> button &lt;img src="https://docs.kianda.com/images/documentation-issue.jpg" alt="Documentation issue button"> in the right-hand pane of this and other documentation pages.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/feedback-github.jpg" alt="Feedback via github">&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
-&lt;p>To find out about other support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/support/">Support&lt;/a>.&lt;/p>
-&lt;p>To find out about other platform features, go to &lt;a href="https://docs.kianda.com/docs/platform/">Platform&lt;/a>.&lt;/p></description></item><item><title>Platform: Quick action menu</title><link>https://docs.kianda.com/platform/general/quickaction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/general/quickaction/</guid><description>
+&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
+&lt;p>To find out about other support, go to &lt;a href="https://docs.kianda.com/platform/general/support/">Support&lt;/a>.&lt;/p>
+&lt;p>To find out about other platform features, go to &lt;a href="https://docs.kianda.com/platform/">Platform&lt;/a>.&lt;/p></description></item><item><title>Platform: Quick action menu</title><link>https://docs.kianda.com/platform/general/quickaction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/general/quickaction/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Quick action menu&lt;/strong> contains all the shortcuts that you need to manage your pages efficiently. The menu is found in the top right-hand corner of your Kianda workspace.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/quick-action-menu.jpg" alt="Quick action menu">&lt;/p>
@@ -79,7 +79,7 @@
 &lt;p>&lt;strong>Name&lt;/strong> - this field is autofilled from the title field and creates a unique ID for the dashboard page.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Visible to&lt;/strong> - choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> of users who will see this dashboard. In this way you are setting the first level of security for the dashboard, see &lt;a href="https://docs.kianda.com/docs/security/process-level-security/#dashboard-security">Dashboard security&lt;/a> for more details.&lt;/p>
+&lt;p>&lt;strong>Visible to&lt;/strong> - choose from &lt;strong>Users&lt;/strong> and/or &lt;strong>Groups&lt;/strong> of users who will see this dashboard. In this way you are setting the first level of security for the dashboard, see &lt;a href="https://docs.kianda.com/security/process-level-security/#dashboard-security">Dashboard security&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Icon&lt;/strong> - choose from hundreds of icons to represent your dashboard in the left-hand pane.&lt;/p>
@@ -101,7 +101,7 @@
 &lt;p>Click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>From there you are in the main dashboard view where you can add dashboard &lt;strong>widgets&lt;/strong> to display lists or charts or edit the &lt;strong>settings&lt;/strong> for the dashboard page. To find out more about dashboards, go to the &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a> section of the documentation.&lt;/p>
+&lt;p>From there you are in the main dashboard view where you can add dashboard &lt;strong>widgets&lt;/strong> to display lists or charts or edit the &lt;strong>settings&lt;/strong> for the dashboard page. To find out more about dashboards, go to the &lt;a href="https://docs.kianda.com/platform/pages/">Dashboards&lt;/a> section of the documentation.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="edit-current-page">Edit current page&lt;/h2>
@@ -115,7 +115,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/editing-page.jpg" alt="Editing page">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In Edit mode you can add new &lt;strong>dashboard widgets&lt;/strong>, edit &lt;strong>Settings&lt;/strong>, or &lt;strong>Delete&lt;/strong> the dashboard page. To read more about Edit mode go to &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards&lt;/a>.&lt;/p>
+&lt;p>In Edit mode you can add new &lt;strong>dashboard widgets&lt;/strong>, edit &lt;strong>Settings&lt;/strong>, or &lt;strong>Delete&lt;/strong> the dashboard page. To read more about Edit mode go to &lt;a href="https://docs.kianda.com/platform/pages/">Dashboards&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="online-session-refresh">Online session refresh&lt;/h2>
@@ -136,7 +136,7 @@
 &lt;h2 id="user-notifications">User notifications&lt;/h2>
 &lt;p>This icon alerts you when actions happen associated with processes, for example if a form has been assigned to you. Any new notifications will be seen as a number beside the &lt;strong>user notification&lt;/strong> icon/bell symbol.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-notification.jpg" alt="User notification">&lt;/p>
-&lt;p>You will receive a configured message indicating the title of the notification and a short piece of text explaining what has happened, for example if a process design has been published and existing process instances have been updated, or the message could be as a result of a &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/user-alert/">User alert rule&lt;/a> as seen below. In this example, the user can click on the alert and they are brought to the form that they have to complete.&lt;/p>
+&lt;p>You will receive a configured message indicating the title of the notification and a short piece of text explaining what has happened, for example if a process design has been published and existing process instances have been updated, or the message could be as a result of a &lt;a href="https://docs.kianda.com/platform/rules/communications/user-alert/">User alert rule&lt;/a> as seen below. In this example, the user can click on the alert and they are brought to the form that they have to complete.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-alert-example.jpg" alt="User alert example">&lt;/p>
 &lt;h2 id="user-profile">User profile&lt;/h2>
 &lt;p>The information found under User profile includes your name, email, role for example Administrator, and options to update your information.&lt;/p>
@@ -166,7 +166,7 @@
 &lt;p>View the system version of Kianda, for example System version 2.11.3 as shown in the image above.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Clicking on the &lt;strong>Push notifications&lt;/strong> slider will enable push notifications to mobile devices and other devices where push notifications are applicable. For example, if you have a process that utilises an &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/user-alert/">Alert&lt;/a> rule, when push notifications are turned on, you will receive a notification similar to below.&lt;/p>
+&lt;p>Clicking on the &lt;strong>Push notifications&lt;/strong> slider will enable push notifications to mobile devices and other devices where push notifications are applicable. For example, if you have a process that utilises an &lt;a href="https://docs.kianda.com/platform/rules/communications/user-alert/">Alert&lt;/a> rule, when push notifications are turned on, you will receive a notification similar to below.&lt;/p>
 &lt;img src="https://docs.kianda.com/images/push-notification-gif2.gif" alt="Push notifications gif" style="zoom:50%;" />
 &lt;/li>
 &lt;li>
@@ -174,7 +174,7 @@
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Platform: Support</title><link>https://docs.kianda.com/platform/general/support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/general/support/</guid><description>
+&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Platform: Support</title><link>https://docs.kianda.com/platform/general/support/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/general/support/</guid><description>
 &lt;p>The &lt;strong>Support&lt;/strong> function is available to users with a designated role, for example, &lt;strong>Manage partners&lt;/strong>, &lt;strong>Designer&lt;/strong> or &lt;strong>Administrator&lt;/strong> and is found in the left-hand side pane, under &lt;strong>More&lt;/strong>. This function allows you to log support tickets and view application logs.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To use the &lt;strong>Support&lt;/strong> function:&lt;/p>
@@ -234,5 +234,5 @@
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/docs/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
-&lt;p>To find out about other ways to get help and support, go to &lt;a href="https://docs.kianda.com/docs/platform/general/help">Help&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
+&lt;p>To find out about other ways to get help and support, go to &lt;a href="https://docs.kianda.com/platform/general/help">Help&lt;/a>.&lt;/p></description></item></channel></rss>

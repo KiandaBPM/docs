@@ -1,5 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – Controls</title><link>https://docs.kianda.com/platform/controls/</link><description>Recent content in Controls on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/platform/controls/index.xml" rel="self" type="application/rss+xml"/><item><title>Platform: Control properties</title><link>https://docs.kianda.com/platform/controls/properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/properties/</guid><description>
-&lt;p>Each process, form and control (field) will have the properties associated with it displayed in the right-hand pane of the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/designer/">Designer&lt;/a> view.&lt;/p>
+&lt;p>Each process, form and control (field) will have the properties associated with it displayed in the right-hand pane of the &lt;a href="https://docs.kianda.com/platform/application-designer/designer/">Designer&lt;/a> view.&lt;/p>
 &lt;h2 id="process-properties">Process properties&lt;/h2>
 &lt;p>When you go to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and then click on a process, you will see the &lt;strong>Process properties&lt;/strong> for that process in the right-hand pane.&lt;/p>
 &lt;p>The Process properties include:&lt;/p>
@@ -25,7 +25,7 @@
 &lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/form-properties-show-info-version.jpg" alt="Form information">&lt;/p>
-&lt;p>Underneath the Form properties you will see &lt;strong>Form submit rules&lt;/strong> - go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about the rules that can be applied to forms.&lt;/p>
+&lt;p>Underneath the Form properties you will see &lt;strong>Form submit rules&lt;/strong> - go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a> to find out more about the rules that can be applied to forms.&lt;/p>
 &lt;p>Click on one particular field (control) in the form - for example a text box - to see the &lt;a href="#field-properties">&lt;strong>Field properties&lt;/strong>&lt;/a> associated with that field.&lt;/p>
 &lt;h2 id="field-properties">Field properties&lt;/h2>
 &lt;p>When you select any field within a form (by clicking on the field name or field drag handle button &lt;img src="https://docs.kianda.com/images/draghandlewhite-frame.png" alt="Drag handle button">) - such as User picker, list or text box - the &lt;strong>Field properties&lt;/strong> associated with that field will appear in the right-hand pane.&lt;/p>
@@ -50,22 +50,22 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/textboxsize-frame2.png" alt="Changing text box width">&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>Underneath the Field properties menu, you will see &lt;strong>Rules&lt;/strong> - go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> to find out more about the rules that can be applied to fields.&lt;/p>
+&lt;p>Underneath the Field properties menu, you will see &lt;strong>Rules&lt;/strong> - go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a> to find out more about the rules that can be applied to fields.&lt;/p>
 &lt;h2 id="saving-changes-and-version-history">Saving changes and version history&lt;/h2>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Properties&lt;/strong> associated with processes, forms and fields, find out more about the different categories and types of fields (controls):&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input controls&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/layout/">Layout controls&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/custom/">Custom controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/">Input controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/layout/">Layout controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/actions/">Actions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/custom/">Custom controls&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Input controls</title><link>https://docs.kianda.com/platform/controls/input/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/input/</guid><description>
 &lt;p>&lt;strong>Input fields&lt;/strong> are one category of &lt;a href="../">controls&lt;/a> and include the most common data fields used to obtain user input - for example text boxes, lists and tables.&lt;/p>
 &lt;h2 id="getting-started-with-input-controls">Getting started with Input controls&lt;/h2>
 &lt;p>To start adding Input controls (fields) to your Kianda forms:&lt;/p>
 &lt;ol>
-&lt;li>First, either open an existing process or create a new process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/li>
+&lt;li>First, either open an existing process or create a new process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu. See &lt;a href="https://docs.kianda.com/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/administration-designer-inputcont.jpg" alt="Opening Designer from left side menu by choosing Administration&amp;gt;Designer">&lt;/p>
 &lt;ol start="2">
@@ -79,14 +79,14 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/input-menu-controls.jpg" alt="Input fields">&lt;/p>
 &lt;p>The eight types of input fields are:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Text box&lt;/strong> - A text box field is a section in your form where users can enter text, for example, an Address field. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>List&lt;/strong> - A list field lists information, for example from a SharePoint data source. This is particularly useful for drop-down menus, when you want a user to fill out a form and choose an item from a list. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Number&lt;/strong> - A number field provides an input box that only allows numeric input, such as currencies or percentages. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Date&lt;/strong> - A date field provides a date and time picker that allows users to input both date and time. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>File&lt;/strong> - A file field allows users to upload multiple files. Uploaded files are stored within the configured data structures or folders. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Table&lt;/strong> - A table field creates a table for input in a form. This table can be filled by the user, or autofilled as part of a rule. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>User picker&lt;/strong> - A user picker field allows users to choose from a list of users. This can be a preconfigured group (like HR Managers) or a list of users - see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a> for more information.&lt;/li>
-&lt;li>&lt;strong>Toggle&lt;/strong> - A toggle field can be used as a toggle or checkbox that allows users to turn on/off components of the form. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Text box&lt;/strong> - A text box field is a section in your form where users can enter text, for example, an Address field. See &lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>List&lt;/strong> - A list field lists information, for example from a SharePoint data source. This is particularly useful for drop-down menus, when you want a user to fill out a form and choose an item from a list. See &lt;a href="https://docs.kianda.com/platform/controls/input/list/">List control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Number&lt;/strong> - A number field provides an input box that only allows numeric input, such as currencies or percentages. See &lt;a href="https://docs.kianda.com/platform/controls/input/number/">Number control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Date&lt;/strong> - A date field provides a date and time picker that allows users to input both date and time. See &lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>File&lt;/strong> - A file field allows users to upload multiple files. Uploaded files are stored within the configured data structures or folders. See &lt;a href="https://docs.kianda.com/platform/controls/input/file-upload/">File upload control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Table&lt;/strong> - A table field creates a table for input in a form. This table can be filled by the user, or autofilled as part of a rule. See &lt;a href="https://docs.kianda.com/platform/controls/input/table/">Table control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>User picker&lt;/strong> - A user picker field allows users to choose from a list of users. This can be a preconfigured group (like HR Managers) or a list of users - see &lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a> for more information.&lt;/li>
+&lt;li>&lt;strong>Toggle&lt;/strong> - A toggle field can be used as a toggle or checkbox that allows users to turn on/off components of the form. See &lt;a href="https://docs.kianda.com/platform/controls/input/toggle/">Toggle control&lt;/a> for more information.&lt;/li>
 &lt;/ul>
 &lt;h3 id="how-to-add-edit-move-and-delete-input-fields">How to add, edit, move and delete Input fields&lt;/h3>
 &lt;p>To insert an &lt;strong>Input field&lt;/strong> into your form click on the field type you want to add from the &lt;strong>Input&lt;/strong> menu.&lt;/p>
@@ -111,15 +111,15 @@
 &lt;li>Click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">&lt;/li>
 &lt;li>Click on &lt;strong>OK&lt;/strong> to confirm.&lt;/li>
 &lt;/ol>
-&lt;p>You can also view and edit an input field&amp;rsquo;s &lt;strong>Field Properties&lt;/strong> by selecting the field - for more details, see &lt;a href="https://docs.kianda.com/docs/platform/controls/properties/#field-properties/">Field Properties&lt;/a>.&lt;/p>
+&lt;p>You can also view and edit an input field&amp;rsquo;s &lt;strong>Field Properties&lt;/strong> by selecting the field - for more details, see &lt;a href="https://docs.kianda.com/platform/controls/properties/#field-properties/">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced each of the eight types of &lt;strong>Input controls&lt;/strong>. Now let&amp;rsquo;s look at each of these types of input fields in more detail:&lt;/p></description></item><item><title>Platform: Layout controls</title><link>https://docs.kianda.com/platform/controls/layout/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/layout/</guid><description>
-&lt;p>Layout fields are one category of &lt;a href="https://docs.kianda.com/docs/platform/controls/">controls&lt;/a> (fields). They are fields that can be used to enhance the layout of your form - for example, responsive panels, dialog boxes and rich text fields.&lt;/p>
+&lt;p>Layout fields are one category of &lt;a href="https://docs.kianda.com/platform/controls/">controls&lt;/a> (fields). They are fields that can be used to enhance the layout of your form - for example, responsive panels, dialog boxes and rich text fields.&lt;/p>
 &lt;h2 id="getting-started-with-layout-fields">Getting started with Layout fields&lt;/h2>
 &lt;ol>
-&lt;li>To insert a &lt;strong>Layout field&lt;/strong> into a form, first open an existing process or create a new process by going to &lt;strong>Administration&lt;/strong>&amp;gt;&lt;strong>Designer&lt;/strong> in the left side menu. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/li>
+&lt;li>To insert a &lt;strong>Layout field&lt;/strong> into a form, first open an existing process or create a new process by going to &lt;strong>Administration&lt;/strong>&amp;gt;&lt;strong>Designer&lt;/strong> in the left side menu. See &lt;a href="https://docs.kianda.com/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/administration-designer-inputcont.jpg" alt="Opening Designer from left side menu by choosing Administration&amp;gt;Designer">&lt;/p>
 &lt;ol start="2">
@@ -138,16 +138,16 @@
 &lt;/code>&lt;/pre>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Panel&lt;/strong> - The Panel field provides responsive panels to hold elements of your form like text boxes and lists and enables flexible layout options for better design. To learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/panel/">Panel control&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Panel&lt;/strong> - The Panel field provides responsive panels to hold elements of your form like text boxes and lists and enables flexible layout options for better design. To learn more, go to &lt;a href="https://docs.kianda.com/platform/controls/layout/panel/">Panel control&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Dialog&lt;/strong> - The Dialog field is used to create modal dialogs to alert or prompt form users. For example, a warning message could display to remind the user to complete part of a form before they proceed to the next section. To learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/dialog/">Modal Dialog control&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Dialog&lt;/strong> - The Dialog field is used to create modal dialogs to alert or prompt form users. For example, a warning message could display to remind the user to complete part of a form before they proceed to the next section. To learn more, go to &lt;a href="https://docs.kianda.com/platform/controls/layout/dialog/">Modal Dialog control&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Richtext&lt;/strong> - The Richtext field is used to create rich content in forms, such as an attractive banner or static html, and provides optimum formatting options. To learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/richtext/">Richtext control&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Richtext&lt;/strong> - The Richtext field is used to create rich content in forms, such as an attractive banner or static html, and provides optimum formatting options. To learn more, go to &lt;a href="https://docs.kianda.com/platform/controls/layout/richtext/">Richtext control&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Field group&lt;/strong> - The Field Group control can be used to mirror a group of fields from another form or location and reference those fields in your new form, making process design sleeker and more efficient. To learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/layout/field-group/">Field group control&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Field group&lt;/strong> - The Field Group control can be used to mirror a group of fields from another form or location and reference those fields in your new form, making process design sleeker and more efficient. To learn more, go to &lt;a href="https://docs.kianda.com/platform/controls/layout/field-group/">Field group control&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="how-to-add-edit-move-and-delete-layout-fields">How to add, edit, move and delete Layout fields&lt;/h3>
@@ -210,32 +210,32 @@
 &lt;p>&lt;strong>Layout&lt;/strong> - The width of the field is denoted by the width of the blue bar. Click on the bar to change the width of the field as it will appear on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced each of the four types of &lt;strong>Layout controls&lt;/strong>. Now let&amp;rsquo;s look at each of these types of Layout controls in more detail:&lt;/p></description></item><item><title>Platform: Actions</title><link>https://docs.kianda.com/platform/controls/actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/actions/</guid><description>
-&lt;p>&lt;strong>Action fields&lt;/strong> are one category of &lt;a href="https://docs.kianda.com/docs/platform/controls/">controls&lt;/a> and include the fields that allow user interface actions like buttons or links.&lt;/p>
+&lt;p>&lt;strong>Action fields&lt;/strong> are one category of &lt;a href="https://docs.kianda.com/platform/controls/">controls&lt;/a> and include the fields that allow user interface actions like buttons or links.&lt;/p>
 &lt;h2 id="getting-started-with-action-controls">Getting started with Action controls&lt;/h2>
 &lt;p>There are four types of &lt;strong>Action fields&lt;/strong>:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Button&lt;/strong> - Buttons can be used to allow user interaction and to enable rules to be applied to actions taken by users. Applying rules to buttons can help to create smart, dynamic forms that follow business logic, without the need for coding. See &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button/">Button control&lt;/a> to learn more.&lt;/p>
+&lt;p>&lt;strong>Button&lt;/strong> - Buttons can be used to allow user interaction and to enable rules to be applied to actions taken by users. Applying rules to buttons can help to create smart, dynamic forms that follow business logic, without the need for coding. See &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/platform/controls/actions/button/">Button control&lt;/a> to learn more.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Link&lt;/strong> - Link fields can be used to create custom links to forms. These can be external links. See &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link/">Link control&lt;/a> for more information.&lt;/p>
+&lt;p>&lt;strong>Link&lt;/strong> - Link fields can be used to create custom links to forms. These can be external links. See &lt;a href="https://docs.kianda.com/platform/controls/actions/link/">Link control&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Image&lt;/strong> - Image fields can be used to display images, either statically or from file fields. Go to &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image control&lt;/a> to find out more.&lt;/p>
+&lt;p>&lt;strong>Image&lt;/strong> - Image fields can be used to display images, either statically or from file fields. Go to &lt;a href="https://docs.kianda.com/platform/controls/actions/image/">Image control&lt;/a> to find out more.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Signature&lt;/strong> - Signature fields provide a very neat way to electronically sign-off on a form or process. To learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature/">Signature control&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Signature&lt;/strong> - Signature fields provide a very neat way to electronically sign-off on a form or process. To learn more, go to &lt;a href="https://docs.kianda.com/platform/controls/actions/signature/">Signature control&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;p>To add an &lt;strong>Action field&lt;/strong> to a Kianda form:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/designer-open-process.jpg" alt="Open process in Designer">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -256,7 +256,7 @@
 &lt;ul>
 &lt;li>Click on &lt;strong>Image&lt;/strong>&lt;/li>
 &lt;li>A &lt;strong>New field - Image&lt;/strong> dialog box opens automatically, giving you a range of options for your new &lt;strong>Image field&lt;/strong>.&lt;/li>
-&lt;li>Once you complete this dialog box and click &lt;strong>OK&lt;/strong>, the new Image field is inserted into your form. To learn more about the Image field, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image control&lt;/a>.&lt;/li>
+&lt;li>Once you complete this dialog box and click &lt;strong>OK&lt;/strong>, the new Image field is inserted into your form. To learn more about the Image field, go to &lt;a href="https://docs.kianda.com/platform/controls/actions/image/">Image control&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="https://docs.kianda.com/images/image-dialog2.jpg" alt="Image dialog box">&lt;/p>
 &lt;/li>
@@ -312,17 +312,17 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
-&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>We have briefly introduced each of the four types of &lt;strong>Action fields&lt;/strong>. Now let&amp;rsquo;s look at each of these Action fields in more detail:&lt;/p></description></item><item><title>Platform: Custom controls</title><link>https://docs.kianda.com/platform/controls/custom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/custom/</guid><description>
-&lt;p>&lt;strong>Custom fields&lt;/strong> are a fourth category of &lt;a href="https://docs.kianda.com/docs/platform/controls/">controls&lt;/a> that are only available to you as a Designer in Kianda if Custom controls have been created by an Administrator or Designer in your Kianda workspace.&lt;/p>
+&lt;p>&lt;strong>Custom fields&lt;/strong> are a fourth category of &lt;a href="https://docs.kianda.com/platform/controls/">controls&lt;/a> that are only available to you as a Designer in Kianda if Custom controls have been created by an Administrator or Designer in your Kianda workspace.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To add a &lt;strong>Custom field&lt;/strong> to a Kianda form:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/designer-open-process.jpg" alt="Open process in Designer">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -364,7 +364,7 @@
 &lt;p>When the Developer/Administrator completes the dialog box and clicks on &lt;strong>OK&lt;/strong>, a workspace opens where they can create their Custom widget:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/custom-field-new-widget-workspace.jpg" alt="Custom widget workspace">&lt;/p>
 &lt;p>Once a &lt;strong>Custom field widget&lt;/strong> has been created, Designers will then be able to see and use that Custom field widget in the &lt;strong>Custom&lt;/strong> section of the &lt;strong>Controls&lt;/strong> menu when designing Kianda forms.&lt;/p>
-&lt;p>To learn more about how to create &lt;strong>Custom field widgets&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code#how-to-get-started-as-a-kianda-low-code-developer">Creating a custom field widget&lt;/a>.&lt;/p>
+&lt;p>To learn more about how to create &lt;strong>Custom field widgets&lt;/strong>, go to &lt;a href="https://docs.kianda.com/getting-started/welcome/low-code#how-to-get-started-as-a-kianda-low-code-developer">Creating a custom field widget&lt;/a>.&lt;/p>
 &lt;h3 id="how-to-edit-move-and-delete-custom-fields">How to edit, move and delete Custom fields&lt;/h3>
 &lt;p>To edit a &lt;strong>Custom field&lt;/strong>:&lt;/p>
 &lt;ol>
@@ -411,7 +411,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Custom field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
-&lt;p>For more details, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>For more details, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
@@ -419,9 +419,9 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Custom controls&lt;/strong>, find out more about how you can use Controls, how you can get started as a Kianda low-code developer, and more about the three other categories of &lt;strong>Controls&lt;/strong> you can add to a Kianda process:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/">Controls&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code/">What is low code?&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input controls&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/layout/">Layout controls&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/">Actions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/">Controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/getting-started/welcome/low-code/">What is low code?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/">Input controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/layout/">Layout controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/actions/">Actions&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>

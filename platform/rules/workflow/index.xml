@@ -38,7 +38,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/hide-or-disable.jpg" alt="Edit rule - Hide or Disable dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by clicking on the &lt;strong>empty field&lt;/strong> to add a form or form field, and then choose an option from the action drop-down list, choosing from &lt;strong>Hide&lt;/strong>, &lt;strong>Show&lt;/strong>, &lt;strong>Disable&lt;/strong>, &lt;strong>Enable&lt;/strong>, &lt;strong>Toggle visible&lt;/strong>, &lt;strong>Toggle enable&lt;/strong>, or &lt;strong>Hide and clear&lt;/strong>, see &lt;a href="#introduction">Introduction&lt;/a> for an explanation of each action.&lt;/p>
@@ -96,14 +96,14 @@
 &lt;/ul>
 &lt;p>If a rule causes a mandatory field to be hidden or disabled, this will not stop the form from being submitted.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Make required</title><link>https://docs.kianda.com/platform/rules/workflow/make-required/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/make-required/</guid><description>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Make required</title><link>https://docs.kianda.com/platform/rules/workflow/make-required/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/make-required/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Make required&lt;/strong> rule is used to &lt;strong>dynamically&lt;/strong> make form elements required or mandatory for users to fill in, or not required or to toggle between both states.&lt;/p>
-&lt;p>It is possible to make fields &lt;strong>statically&lt;/strong> mandatory for users to fill in by checking the &lt;strong>Required&lt;/strong> property for the field. However using this rule gives a greater degree of flexibility to cause an action based on user input using a &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">&lt;strong>Condition&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>It is possible to make fields &lt;strong>statically&lt;/strong> mandatory for users to fill in by checking the &lt;strong>Required&lt;/strong> property for the field. However using this rule gives a greater degree of flexibility to cause an action based on user input using a &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">&lt;strong>Condition&lt;/strong>&lt;/a>.&lt;/p>
 &lt;p>Take the example of a feedback form, where there is an option for a customer to fill in their name or not. If they do fill in their name however, then a Customer Account Number field becomes mandatory.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/make-required-example.jpg" alt="Make required rule example">&lt;/p>
-&lt;p>As soon as Maddie fills out her name in the example above, then and only then the Customer Account Number becomes required, indicated by an asterix. This rule could be combined with &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable/">Hide or Disable&lt;/a> rule to make fields appear/hidden based on user input.&lt;/p>
+&lt;p>As soon as Maddie fills out her name in the example above, then and only then the Customer Account Number becomes required, indicated by an asterix. This rule could be combined with &lt;a href="https://docs.kianda.com/platform/rules/workflow/hide-or-disable/">Hide or Disable&lt;/a> rule to make fields appear/hidden based on user input.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
 &lt;ul>
@@ -124,10 +124,10 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/make-required-rule.jpg" alt="Make required rule example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>To add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;p>For example to make one field required based on another field being completed, the condition would look like this:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/make-required-condition.jpg" alt="Make required example condition">&lt;/p>
-&lt;p>As shown on the &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> page there are a multitude of options to choose from where &lt;strong>Not blank&lt;/strong> is just one option shown above.&lt;/p>
+&lt;p>As shown on the &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> page there are a multitude of options to choose from where &lt;strong>Not blank&lt;/strong> is just one option shown above.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule by clicking on the &lt;strong>empty field&lt;/strong> to add a form or form field, and then choose an option from the action drop-down list, choosing from &lt;strong>Required&lt;/strong>, &lt;strong>Not required&lt;/strong> or &lt;strong>Toggle required&lt;/strong>.&lt;/p>
@@ -166,9 +166,9 @@
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Go to form</title><link>https://docs.kianda.com/platform/rules/workflow/go-to-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/go-to-form/</guid><description>
-&lt;p>The &lt;strong>Go to form&lt;/strong> rule is used to control how a user moves between forms. As mentioned in &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/">Form basics&lt;/a>, by default the first form in a process is the &lt;strong>current form&lt;/strong>. Once submitted, control passes to the next form and the user is not allowed to go back to the previous form. The &lt;strong>Go to form&lt;/strong> rule allows you to redirect the user to any form. The user can then navigate back and forth between those forms.&lt;/p>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Go to form</title><link>https://docs.kianda.com/platform/rules/workflow/go-to-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/go-to-form/</guid><description>
+&lt;p>The &lt;strong>Go to form&lt;/strong> rule is used to control how a user moves between forms. As mentioned in &lt;a href="https://docs.kianda.com/platform/application-designer/forms/">Form basics&lt;/a>, by default the first form in a process is the &lt;strong>current form&lt;/strong>. Once submitted, control passes to the next form and the user is not allowed to go back to the previous form. The &lt;strong>Go to form&lt;/strong> rule allows you to redirect the user to any form. The user can then navigate back and forth between those forms.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>This rule can only be added to a &lt;strong>button&lt;/strong>.&lt;/p>
 &lt;p>&lt;strong>Warning!&lt;/strong>&lt;/p>
@@ -190,7 +190,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/Gotoform.png" alt="Go to form rule">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under &lt;strong>Action&lt;/strong>, create one or more actions for the rule by filling out the following:&lt;/p>
@@ -227,7 +227,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/resolved-go-to-form-eg.jpg" alt="Rule on a form field">&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>See example above, for a &lt;strong>Go to form&lt;/strong> rule, called &amp;lsquo;Go to User Review&amp;rsquo; for a resolved button. Note there are 11 rules attached to that button so the order of execution is important, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> to learn more about how to change rule order.&lt;/p>
+&lt;p>See example above, for a &lt;strong>Go to form&lt;/strong> rule, called &amp;lsquo;Go to User Review&amp;rsquo; for a resolved button. Note there are 11 rules attached to that button so the order of execution is important, go to &lt;a href="https://docs.kianda.com/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> to learn more about how to change rule order.&lt;/p>
 &lt;p>The next section will cover how to use the buttons visible in the right-hand pane to manipulate the rule.&lt;/p>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
@@ -246,8 +246,8 @@
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Assign form</title><link>https://docs.kianda.com/platform/rules/workflow/assign-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/assign-form/</guid><description>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Assign form</title><link>https://docs.kianda.com/platform/rules/workflow/assign-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/assign-form/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Assign form&lt;/strong> rule is used to assign a form to a user or to a group of users, making them the &lt;strong>form owners&lt;/strong>. This means that when a process instance is created, a form owner can &lt;strong>edit&lt;/strong> the form in the process instance, for example a manager who needs to add comments on an appraisal form that has been submitted by an employee.&lt;/p>
 &lt;p>You can use this rule to override the existing form owners, or to add users or groups to the list of existing form owners. When assigning forms you can choose from:&lt;/p>
@@ -286,7 +286,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/assign-rule.jpg" alt="Edit rule - Assign form dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under &lt;strong>Action&lt;/strong>, create one or more actions for the rule by filling out the following:&lt;/p>
@@ -297,10 +297,10 @@
 &lt;li>
 &lt;p>&lt;strong>Assign to&lt;/strong> - choose from the radio buttons:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users and groups must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details. Partners must also be predefined within the &lt;a href="https://docs.kianda.com/docs/platform/administration/b2b-portals/">Invite partners&lt;/a> section under Administration.&lt;/li>
+&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users and groups must be predefined in the system, see &lt;a href="https://docs.kianda.com/platform/administration/users/">Users and Groups&lt;/a> for more details. Partners must also be predefined within the &lt;a href="https://docs.kianda.com/platform/administration/b2b-portals/">Invite partners&lt;/a> section under Administration.&lt;/li>
 &lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that the form(s) is/are assigned to.&lt;/li>
 &lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will have the forms assigned to them.&lt;/li>
-&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
+&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will have the form(s) assigned to them, see &lt;a href="https://docs.kianda.com/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -346,19 +346,19 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>This rule can be used multiple times in sequence. A typical use case is that the first rule overrides the existing users and the following rule(s) appends users.&lt;/p>
-&lt;p>To view the default owners for the form, click on the form itself within the process in Designer and in the &lt;strong>Edit form&lt;/strong> dialog box, see named owners in the &lt;strong>Default owner(s)&lt;/strong> field. See &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details.&lt;/p>
+&lt;p>To view the default owners for the form, click on the form itself within the process in Designer and in the &lt;strong>Edit form&lt;/strong> dialog box, see named owners in the &lt;strong>Default owner(s)&lt;/strong> field. See &lt;a href="https://docs.kianda.com/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details.&lt;/p>
 &lt;p>Note: a form displays in edit mode if:&lt;/p>
 &lt;ol>
 &lt;li>The user is the owner of the form, and&lt;/li>
 &lt;li>The selected form is the current form, and&lt;/li>
-&lt;li>The form is not submitted or in a completed state, that is being worked on. The &lt;strong>Go to form&lt;/strong> rule can reset the submitted state of a form, see &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/go-to-form/">Go to form&lt;/a> for details.&lt;/li>
+&lt;li>The form is not submitted or in a completed state, that is being worked on. The &lt;strong>Go to form&lt;/strong> rule can reset the submitted state of a form, see &lt;a href="https://docs.kianda.com/platform/rules/workflow/go-to-form/">Go to form&lt;/a> for details.&lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Process security</title><link>https://docs.kianda.com/platform/rules/workflow/process-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/process-security/</guid><description>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Process security</title><link>https://docs.kianda.com/platform/rules/workflow/process-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/process-security/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Process security&lt;/strong> rule dynamically changes the &lt;strong>security settings of a process instance&lt;/strong>.&lt;/p>
-&lt;p>Security settings for a process can be set statically by going to &lt;strong>Settings&lt;/strong> for the process in Kianda Designer. If you check the checkbox for &lt;strong>Enable process security&lt;/strong>, you can then select users, groups, and/or partners and set their access level, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/settings/">Process settings&lt;/a> for more details.&lt;/p>
+&lt;p>Security settings for a process can be set statically by going to &lt;strong>Settings&lt;/strong> for the process in Kianda Designer. If you check the checkbox for &lt;strong>Enable process security&lt;/strong>, you can then select users, groups, and/or partners and set their access level, see &lt;a href="https://docs.kianda.com/platform/application-designer/process/settings/">Process settings&lt;/a> for more details.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-security-settings.jpg" alt="Process security settings">&lt;/p>
 &lt;p>This setting is static and applies to every instance of the process. However the Process security rule is &lt;strong>dynamic&lt;/strong> and changes the security settings for a particular instance. For example if there is a Finance process with a Payroll request form containing personal data like employee salary, this request form should only be visible to an assigned person. An &lt;strong>Assign form&lt;/strong> rule could be used to give form ownership to an assigned person, allowing them to edit the form in a process instance, and if the rule is combined with the &lt;strong>Process security&lt;/strong> rule then only the assigned person can view the request form for the process instance.&lt;/p>
 &lt;p>If there are multiple process instances listed in a dashboard, then &lt;strong>process security&lt;/strong> will allow only those who have the designated access, to view those process instances.&lt;/p>
@@ -383,7 +383,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-security-rule.jpg" alt="Edit rule - Process security dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under &lt;strong>Action&lt;/strong>, create one or more actions for the rule by filling out the following:&lt;/p>
@@ -391,10 +391,10 @@
 &lt;li>
 &lt;p>&lt;strong>Add to process security users&lt;/strong> - choose from the radio buttons:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users and groups must be predefined in the system, see &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users and Groups&lt;/a> for more details. Partners must also be predefined within the &lt;a href="https://docs.kianda.com/docs/platform/administration/b2b-portals/">Invite partners&lt;/a> section under Administration.&lt;/li>
+&lt;li>&lt;strong>Any user&lt;/strong> - choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and/or &lt;strong>Partners&lt;/strong> in the drop-down list. All users and groups must be predefined in the system, see &lt;a href="https://docs.kianda.com/platform/administration/users/">Users and Groups&lt;/a> for more details. Partners must also be predefined within the &lt;a href="https://docs.kianda.com/platform/administration/b2b-portals/">Invite partners&lt;/a> section under Administration.&lt;/li>
 &lt;li>&lt;strong>Current user&lt;/strong> - make the current user of the form, whoever is submitting or saving information, as the person that is added to the form process security.&lt;/li>
 &lt;li>&lt;strong>Defined in a user field&lt;/strong> - choose a user picker field from the process, where the selected users, groups or partners will be added to the form process security.&lt;/li>
-&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will be added to the form process security, see &lt;a href="https://docs.kianda.com/docs/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
+&lt;li>&lt;strong>Form owner(s)&lt;/strong> - selecting this option means that the form owner(s) defined during form creation/editing will be added to the form process security, see &lt;a href="https://docs.kianda.com/platform/application-designer/forms/form-owners/">Form owners&lt;/a> for more details on what form ownership is and how to create form owners.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -467,8 +467,8 @@
 &lt;/blockquote>
 &lt;p>&lt;img src="https://docs.kianda.com/images/override-security-settings.jpg" alt="Process security rule dialog box 2">&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Start a process</title><link>https://docs.kianda.com/platform/rules/workflow/start-a-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/start-a-process/</guid><description>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Start a process</title><link>https://docs.kianda.com/platform/rules/workflow/start-a-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/start-a-process/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Start a process&lt;/strong> rule allows you to dynamically &lt;strong>start a new instance&lt;/strong> of a different process, or a new instance of the same process, or &lt;strong>updates an existing process instance&lt;/strong> from a chosen process.&lt;/p>
 &lt;p>For example if we have an &amp;lsquo;Onboarding&amp;rsquo; process, our &lt;strong>primary process&lt;/strong> that involves many different tasks like generating documentation, and sending out emails to managers, HR and new trainers, we could have a &lt;strong>secondary process&lt;/strong> called &amp;lsquo;Send email process&amp;rsquo; which sends out these automated emails for a new user once the &amp;lsquo;Onboarding process&amp;rsquo; starts. You can &lt;strong>transfer field data&lt;/strong> from the Onboarding process to the new process instance for &amp;lsquo;Send email process&amp;rsquo;. You can also &lt;strong>update the secondary process instance&lt;/strong>, once you have the &lt;strong>ID&lt;/strong> for the process instance, see step 5 below in [How to get started].&lt;/p>
@@ -486,10 +486,10 @@
 &lt;p>&lt;strong>Two processes&lt;/strong>, one process that acts as your primary process, that then triggers a secondary process also called your &lt;strong>target process&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>A &lt;strong>text box&lt;/strong> field which can be hidden, to hold your &lt;strong>target process ID&lt;/strong> if you wish &lt;strong>to update an existing process&lt;/strong>. To learn more about text box field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
+&lt;p>A &lt;strong>text box&lt;/strong> field which can be hidden, to hold your &lt;strong>target process ID&lt;/strong> if you wish &lt;strong>to update an existing process&lt;/strong>. To learn more about text box field go to &lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Predefined partners&lt;/strong> must be set up in the &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/">Invite partners&lt;/a> section of Kianda if you wish to execute rules related to partner processes. &lt;strong>Process security must be enabled&lt;/strong> in the target process to allow your process to interact with it. Go to &lt;a href="https://docs.kianda.com/docs/security/process-level-security/#process-security-settings">Process security&lt;/a> to see where this checkbox is.&lt;/p>
+&lt;p>&lt;strong>Predefined partners&lt;/strong> must be set up in the &lt;a href="https://docs.kianda.com/platform/b2b-portals/partner-profile/">Invite partners&lt;/a> section of Kianda if you wish to execute rules related to partner processes. &lt;strong>Process security must be enabled&lt;/strong> in the target process to allow your process to interact with it. Go to &lt;a href="https://docs.kianda.com/security/process-level-security/#process-security-settings">Process security&lt;/a> to see where this checkbox is.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -506,7 +506,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/start-a-process.jpg" alt="Start a process rule">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under &lt;strong>Action&lt;/strong> create one or more actions for the rule starting with choosing the &lt;strong>Process source&lt;/strong> for the secondary/target process. Choose from &lt;strong>Own process&lt;/strong> or &lt;strong>Partner process&lt;/strong>.&lt;/p>
@@ -516,7 +516,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/select-process-design.jpg" alt="Select process design">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you choose &lt;strong>Partner process&lt;/strong> then choose from a list of predefined partners under &lt;strong>Select a process design&lt;/strong>. Click on the drop-down list to add &lt;strong>Partners&lt;/strong>. To read more about how to define partners in Kianda go to &lt;a href="https://docs.kianda.com/docs/platform/b2b-portals/partner-profile/">Invite partners&lt;/a> section of Kianda. Note, the partner organisation &lt;strong>must have enabled process security&lt;/strong> to allow your process to interact with the target process, go to &lt;a href="https://docs.kianda.com/docs/security/process-level-security/#process-security-settings">Process security&lt;/a> to see where this checkbox is.&lt;/p>
+&lt;p>If you choose &lt;strong>Partner process&lt;/strong> then choose from a list of predefined partners under &lt;strong>Select a process design&lt;/strong>. Click on the drop-down list to add &lt;strong>Partners&lt;/strong>. To read more about how to define partners in Kianda go to &lt;a href="https://docs.kianda.com/platform/b2b-portals/partner-profile/">Invite partners&lt;/a> section of Kianda. Note, the partner organisation &lt;strong>must have enabled process security&lt;/strong> to allow your process to interact with the target process, go to &lt;a href="https://docs.kianda.com/security/process-level-security/#process-security-settings">Process security&lt;/a> to see where this checkbox is.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/partner-process-start-process.jpg" alt="Partner process">&lt;/p>
 &lt;ul>
 &lt;li>
@@ -584,12 +584,12 @@
 &lt;p>&lt;strong>Operation&lt;/strong> - choose from:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Copy rows&lt;/strong> which allows you to copy row data from one process to another. You can also add conditions to the copying process by clicking on &lt;strong>Copy row conditions&lt;/strong> to allow you to have conditions on which rows are copied over to the target process. We can add fields or text to the conditions. Click on &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> to read more about conditions in Kianda.&lt;/p>
+&lt;p>&lt;strong>Copy rows&lt;/strong> which allows you to copy row data from one process to another. You can also add conditions to the copying process by clicking on &lt;strong>Copy row conditions&lt;/strong> to allow you to have conditions on which rows are copied over to the target process. We can add fields or text to the conditions. Click on &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> to read more about conditions in Kianda.&lt;/p>
 &lt;p>If you click on the &lt;strong>Action&lt;/strong> button &lt;img src="https://docs.kianda.com/images/action-button.jpg" alt="Action button"> then column titles from the primary and secondary processes are automatically listed under &lt;strong>Column mapping&lt;/strong> as shown below, where &lt;strong>Need&lt;/strong> and &lt;strong>Reason&lt;/strong> are column headings in the table in the primary process and &lt;strong>Customer need&lt;/strong> and &lt;strong>Reason given&lt;/strong> are column headings in the table in the secondary/target process. In the example below, a condition has been set so that if &lt;strong>Need&lt;/strong> equals the text &amp;lsquo;Broadband connection&amp;rsquo; then the values input into the columns listed will be copied over.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-mappings-example.jpg" alt="Table mappings example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Update rows&lt;/strong> - if you choose &lt;strong>Update rows&lt;/strong> then contents of the target process table will be updated. Similar to copy rows, an &lt;strong>Update row conditions&lt;/strong> button appears allowing you to set conditions for what content is updated. As with &lt;strong>Copy row conditions&lt;/strong> you can set &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">conditions&lt;/a> to control how values are mapped from one process to another.&lt;/p>
+&lt;p>&lt;strong>Update rows&lt;/strong> - if you choose &lt;strong>Update rows&lt;/strong> then contents of the target process table will be updated. Similar to copy rows, an &lt;strong>Update row conditions&lt;/strong> button appears allowing you to set conditions for what content is updated. As with &lt;strong>Copy row conditions&lt;/strong> you can set &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">conditions&lt;/a> to control how values are mapped from one process to another.&lt;/p>
 &lt;p>An &lt;strong>Action&lt;/strong> button &lt;img src="https://docs.kianda.com/images/action-button.jpg" alt="Action button"> is available beside &lt;strong>Column mapping&lt;/strong> to allow you to autofill field names from processes under &lt;strong>Field or text&lt;/strong> and &lt;strong>To table&lt;/strong> fields.&lt;/p>
 &lt;/li>
 &lt;/ul>
@@ -604,7 +604,7 @@
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="on-success-mapping">On success mapping&lt;/h3>
-&lt;p>If you wish to &lt;strong>update an existing process instance&lt;/strong> you can use mapping within the &lt;strong>On success mapping&lt;/strong> section to retrieve the &lt;strong>Process ID&lt;/strong> of that process instance, and then trigger rules in the target process instance. A &lt;strong>text box&lt;/strong> field within the form can be created to hold the Process ID value, see &lt;a href="#before-getting-started">Before getting started&lt;/a>. The ID for the existing process instance, is one of the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/common-fields/">Common fields&lt;/a> that can be pulled from the system.&lt;/p>
+&lt;p>If you wish to &lt;strong>update an existing process instance&lt;/strong> you can use mapping within the &lt;strong>On success mapping&lt;/strong> section to retrieve the &lt;strong>Process ID&lt;/strong> of that process instance, and then trigger rules in the target process instance. A &lt;strong>text box&lt;/strong> field within the form can be created to hold the Process ID value, see &lt;a href="#before-getting-started">Before getting started&lt;/a>. The ID for the existing process instance, is one of the &lt;a href="https://docs.kianda.com/platform/application-designer/process/common-fields/">Common fields&lt;/a> that can be pulled from the system.&lt;/p>
 &lt;p>To use On success mapping:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -647,7 +647,7 @@
 &lt;p>When you are finished editing the dialog box click on &lt;strong>OK&lt;/strong> or click on &lt;strong>Close&lt;/strong> at any time to exit the dialog box.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>For more details on using &lt;strong>On success mapping&lt;/strong> with other rules click on &lt;a href="https://docs.kianda.com/docs/platform/rules/general/success-error-mapping/">On success mapping&lt;/a>.&lt;/p>
+&lt;p>For more details on using &lt;strong>On success mapping&lt;/strong> with other rules click on &lt;a href="https://docs.kianda.com/platform/rules/general/success-error-mapping/">On success mapping&lt;/a>.&lt;/p>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
@@ -672,10 +672,10 @@
 &lt;li>Another feature of this rule is that you can &lt;strong>read data from another process&lt;/strong> instance. In this case it is advisable to give the title of the rule a title such as &amp;lsquo;Read data from Process X&amp;rsquo;. Click on the green bar of &lt;strong>On success mapping&lt;/strong> and use this area to copy data from the target process to the current process.&lt;/li>
 &lt;/ol>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Schedule a rule</title><link>https://docs.kianda.com/platform/rules/workflow/schedule-a-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/schedule-a-rule/</guid><description>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Schedule a rule</title><link>https://docs.kianda.com/platform/rules/workflow/schedule-a-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/workflow/schedule-a-rule/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>Schedule a rule&lt;/strong> allows you to schedule a rule or a field to be triggered &lt;strong>immediately&lt;/strong>, at some &lt;strong>point in the future&lt;/strong> or &lt;strong>recurring&lt;/strong>. If a form field has &lt;strong>multiple&lt;/strong> rules attached to it, that include the &lt;strong>Schedule a rule&lt;/strong> rule, rules can execute sequentially and you can change the order of the rule execution, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> for details. You can also select a specific rule to execute. For example in the image below, the text box field &lt;strong>First Name&lt;/strong> is expanded to show two rules. You can select all or just one rule to be triggered. You can select all rules by selecting the &lt;strong>First Name&lt;/strong> text box itself or to select just one rule you can expand the field and selecting the desired rule you want to schedule:&lt;/p>
+&lt;p>&lt;strong>Schedule a rule&lt;/strong> allows you to schedule a rule or a field to be triggered &lt;strong>immediately&lt;/strong>, at some &lt;strong>point in the future&lt;/strong> or &lt;strong>recurring&lt;/strong>. If a form field has &lt;strong>multiple&lt;/strong> rules attached to it, that include the &lt;strong>Schedule a rule&lt;/strong> rule, rules can execute sequentially and you can change the order of the rule execution, see &lt;a href="https://docs.kianda.com/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> for details. You can also select a specific rule to execute. For example in the image below, the text box field &lt;strong>First Name&lt;/strong> is expanded to show two rules. You can select all or just one rule to be triggered. You can select all rules by selecting the &lt;strong>First Name&lt;/strong> text box itself or to select just one rule you can expand the field and selecting the desired rule you want to schedule:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-single-rule.jpg" alt="Selecting one rule to be triggered">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
@@ -685,7 +685,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>The following step illustrates a scenario to schedule a reminder email using the &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email rule&lt;/a> when a form is submitted:&lt;/p>
+&lt;p>The following step illustrates a scenario to schedule a reminder email using the &lt;a href="https://docs.kianda.com/platform/rules/communications/send-email/">Send email rule&lt;/a> when a form is submitted:&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
@@ -698,13 +698,13 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-details.jpg" alt="Go to form rule">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under &lt;strong>Action&lt;/strong> fill out the following:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Select the field or rule to trigger on schedule&lt;/strong> - allows you to select a field or rule you want to trigger. If a field has multiple rules, they will be triggered sequentially and you can change the order of the rule execution, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> for details. You can also select a specific rule from a field with multiple rules by drilling down and selecting the desired rule. In this example we want to select a rule called &lt;strong>Send email&lt;/strong> which is attached to the &lt;strong>Submit&lt;/strong> button.&lt;/p>
+&lt;p>&lt;strong>Select the field or rule to trigger on schedule&lt;/strong> - allows you to select a field or rule you want to trigger. If a field has multiple rules, they will be triggered sequentially and you can change the order of the rule execution, see &lt;a href="https://docs.kianda.com/platform/rules/general/multiple-rules/">Multiple rules&lt;/a> for details. You can also select a specific rule from a field with multiple rules by drilling down and selecting the desired rule. In this example we want to select a rule called &lt;strong>Send email&lt;/strong> which is attached to the &lt;strong>Submit&lt;/strong> button.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-send-email.jpg" alt="Schedule a send email rule">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -722,7 +722,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Expire&lt;/strong> - It is possible to set the schedule rule to expire by enabling &lt;strong>Expire&lt;/strong> checkbox. For this example we will use the &lt;strong>When&lt;/strong> option and apply a condition. The goal of the reminder is to send it every two weeks until the status of the process is completed. In the &lt;strong>condition&lt;/strong> of the &lt;strong>When&lt;/strong> option, select &lt;strong>Status&lt;/strong> from the &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/common-fields/">Common fields&lt;/a> and make it &lt;strong>equals&lt;/strong> to &lt;strong>completed&lt;/strong> as shown in the image below:&lt;/p>
+&lt;p>&lt;strong>Expire&lt;/strong> - It is possible to set the schedule rule to expire by enabling &lt;strong>Expire&lt;/strong> checkbox. For this example we will use the &lt;strong>When&lt;/strong> option and apply a condition. The goal of the reminder is to send it every two weeks until the status of the process is completed. In the &lt;strong>condition&lt;/strong> of the &lt;strong>When&lt;/strong> option, select &lt;strong>Status&lt;/strong> from the &lt;a href="https://docs.kianda.com/platform/application-designer/process/common-fields/">Common fields&lt;/a> and make it &lt;strong>equals&lt;/strong> to &lt;strong>completed&lt;/strong> as shown in the image below:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/schedule-rule-status.jpg" alt="Schedule a send email rule">&lt;/p>
 &lt;p>There are three options when to expire the scheduled rule:&lt;/p>
 &lt;ul>
@@ -764,5 +764,5 @@
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>To find out more about other workflow rules go to &lt;a href="https://docs.kianda.com/platform/rules/workflow/">Workflow&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>

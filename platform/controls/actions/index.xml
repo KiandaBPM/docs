@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – Actions</title><link>https://docs.kianda.com/platform/controls/actions/</link><description>Recent content in Actions on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/platform/controls/actions/index.xml" rel="self" type="application/rss+xml"/><item><title>Platform: Button control</title><link>https://docs.kianda.com/platform/controls/actions/button/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/actions/button/</guid><description>
-&lt;p>&lt;strong>Button fields&lt;/strong> can be used in forms to allow user interface actions. Often, rules are applied to buttons so that actions are automatically executed once the user clicks on the button. In this way, Button fields with rules can be used to trigger a sequence of events. To learn more about rules, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Button fields&lt;/strong> can be used in forms to allow user interface actions. Often, rules are applied to buttons so that actions are automatically executed once the user clicks on the button. In this way, Button fields with rules can be used to trigger a sequence of events. To learn more about rules, go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p>
 &lt;p>For example, as part of an Employee Appraisal Process, a manager may complete a Performance Plan form for each employee, setting out their Key Performance Areas and goals. It could be useful to add a button to this form - titled &amp;lsquo;Schedule Meeting&amp;rsquo; - that will automatically schedule a performance review meeting between the manager and the employee at a pre-determined date in the future. We will keep this example in mind as we learn more about using &lt;strong>Button controls&lt;/strong>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To add a &lt;strong>Button field&lt;/strong> to a Kianda form:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/designer-open-process.jpg" alt="Open process in Designer">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -38,7 +38,7 @@
 &lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Button to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Button to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Button size&lt;/strong> - You can choose the size of the Button ranging from XL (extra large) to XS (extra small). By default, the Button size is medium.&lt;/p>
@@ -82,7 +82,7 @@
 &lt;p>If you choose &lt;strong>No&lt;/strong>, anyone accessing the form from an anonymous link will not be able to see the Button field.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda. To learn more about how you can create anonymous links to a form that can be shared with external users, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/anonymous-form-link/">Anonymous form link&lt;/a>.&lt;/p>
+&lt;p>Anonymous links can be useful if, for example, you want members of the public to complete your form without needing to log into Kianda. To learn more about how you can create anonymous links to a form that can be shared with external users, see &lt;a href="https://docs.kianda.com/platform/rules/communications/anonymous-form-link/">Anonymous form link&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Once you complete the &lt;strong>New field - Button&lt;/strong> dialog box, click &lt;strong>OK&lt;/strong> and the new &lt;strong>Button field&lt;/strong> is added to your form.&lt;/p>
@@ -92,10 +92,10 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/button-example-meeting.jpg" alt="Button example titled Schedule Meeting">&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>You may then decide to add rules to your new &lt;strong>Button field&lt;/strong> - to learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>. The rules we add will be executed in the order in which they are listed under &lt;strong>Rules&lt;/strong> in the right hand pane.&lt;/p>
+&lt;p>You may then decide to add rules to your new &lt;strong>Button field&lt;/strong> - to learn more, go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>. The rules we add will be executed in the order in which they are listed under &lt;strong>Rules&lt;/strong> in the right hand pane.&lt;/p>
 &lt;p>For example, we could add a series of rules to our new &lt;strong>Schedule Meeting&lt;/strong> button:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/button-example-rules.jpg" alt="Button field example with rules">&lt;/p>
-&lt;p>In our example, the sixth rule is a Meeting Request rule which will mean that, once the &lt;strong>Schedule Meeting&lt;/strong> button is clicked, an automated email will be sent to the employee scheduling a performance review meeting - to learn more, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/meeting-request/">Meeting request rule&lt;/a>.&lt;/p>
+&lt;p>In our example, the sixth rule is a Meeting Request rule which will mean that, once the &lt;strong>Schedule Meeting&lt;/strong> button is clicked, an automated email will be sent to the employee scheduling a performance review meeting - to learn more, go to &lt;a href="https://docs.kianda.com/platform/rules/communications/meeting-request/">Meeting request rule&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="how-to-edit-move-and-delete-button-fields">How to edit, move and delete Button fields&lt;/h3>
@@ -108,7 +108,7 @@
 &lt;p>Click on the &lt;strong>Edit Field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Edit Field&lt;/strong> dialog box will open (with the Button title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Button&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>The &lt;strong>Edit Field&lt;/strong> dialog box will open (with the Button title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Button&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/platform/controls/actions/button#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/button-dialog.jpg" alt="Button field dialog box">&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -150,22 +150,22 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
-&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Button controls&lt;/strong>, find out more about the other types of &lt;strong>Action fields&lt;/strong> you can add to Kianda forms:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image controls&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link/">Link controls&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature/">Signature controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/actions/image/">Image controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/actions/link/">Link controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/actions/signature/">Signature controls&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Image control</title><link>https://docs.kianda.com/platform/controls/actions/image/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/actions/image/</guid><description>
-&lt;p>&lt;strong>Image fields&lt;/strong> can be used to insert and display images, either statically or images captured from &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload fields&lt;/a>. For example, you may wish to insert an image at the top of your form or may wish to enable form users to annotate an image.&lt;/p>
+&lt;p>&lt;strong>Image fields&lt;/strong> can be used to insert and display images, either statically or images captured from &lt;a href="https://docs.kianda.com/platform/controls/input/file-upload/">File upload fields&lt;/a>. For example, you may wish to insert an image at the top of your form or may wish to enable form users to annotate an image.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To add an &lt;strong>Image field&lt;/strong> to a Kianda form:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/designer-open-process.jpg" alt="Open process in Designer">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -198,7 +198,7 @@
 &lt;p>&lt;strong>Help text&lt;/strong> - You can insert text to help the form user. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Image to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Image to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Image source&lt;/strong> - You can choose to insert the image either from an &lt;strong>Image URL&lt;/strong> or from a &lt;strong>File field&lt;/strong> within the form. Different additional options will be available to you, dependent on the Image source you choose.&lt;/p>
@@ -221,7 +221,7 @@
 &lt;p>In our example, you could insert a File Upload field titled &amp;lsquo;Image file&amp;rsquo; into the panel where you want to insert the new Image field and then browse to find an image you have saved on your computer:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/image-file-upload-field.jpg" alt="Insert File upload field to hold an image">&lt;/p>
 &lt;p>You could choose to make this File Upload field &lt;strong>invisible to form users&lt;/strong>, by ensuring the &lt;strong>Visible&lt;/strong> checkbox is not selected in the Field Properties menu to the right.&lt;/p>
-&lt;p>If you want to allow form users to make annotations on the Image, make sure to select &lt;strong>Yes&lt;/strong> to the &lt;strong>Allow file override&lt;/strong> option in the &lt;strong>New field - File&lt;/strong> dialog box. To learn more about File Upload fields, see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File Upload field&lt;/a>.&lt;/p>
+&lt;p>If you want to allow form users to make annotations on the Image, make sure to select &lt;strong>Yes&lt;/strong> to the &lt;strong>Allow file override&lt;/strong> option in the &lt;strong>New field - File&lt;/strong> dialog box. To learn more about File Upload fields, see &lt;a href="https://docs.kianda.com/platform/controls/input/file-upload/">File Upload field&lt;/a>.&lt;/p>
 &lt;p>Once the File Upload field has been added to the form and it contains the image file you want to use, you can then insert an &lt;strong>Image field&lt;/strong> and, in the dialog box, choose &lt;strong>File field&lt;/strong> as your &lt;strong>Image source&lt;/strong>, click into the File field and select the field containing the image:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/image-file-field-select.jpg" alt="Image with File field as Image source">&lt;/p>
 &lt;p>Then complete the &lt;strong>Image max height&lt;/strong> and &lt;strong>Image max width&lt;/strong> fields:&lt;/p>
@@ -282,7 +282,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/image-edit-button.jpg" alt="Edit Image field">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Edit Field - Image&lt;/strong> dialog box will open (with the Image field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Image&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>The &lt;strong>Edit Field - Image&lt;/strong> dialog box will open (with the Image field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Image&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/platform/controls/actions/image#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/image-edit-dialog.jpg" alt="Image edit field dialog box">&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -334,7 +334,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Image field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
-&lt;p>For more details, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>For more details, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -344,9 +344,9 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Image controls&lt;/strong>, find out more about the other types of &lt;strong>Action fields&lt;/strong> you can add to Kianda forms:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button/">Button controls&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link/">Link controls&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature/">Signature controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/actions/button/">Button controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/actions/link/">Link controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/actions/signature/">Signature controls&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Link control</title><link>https://docs.kianda.com/platform/controls/actions/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/actions/link/</guid><description>
 &lt;p>&lt;strong>Link fields&lt;/strong> can be used to add custom links to forms, including external links.&lt;/p>
 &lt;p>For example, as part of an Employee Appraisal Process, a manager may complete a Performance Plan form for each employee, setting out their Key Performance Areas and goals. It could be useful to add a Link Field to this form that links to the company&amp;rsquo;s Employee Handbook. We will keep this example in mind as we learn more about using &lt;strong>Link controls&lt;/strong>.&lt;/p>
@@ -354,7 +354,7 @@
 &lt;p>To add a &lt;strong>Link field&lt;/strong> to a Kianda form:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/designer-open-process.jpg" alt="Open process in Designer">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -391,7 +391,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/link-help-text-example.jpg" alt="Link field sample help text">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Link to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Link to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Link target&lt;/strong> - You can choose to have the link either open as a &lt;strong>New tab&lt;/strong> or open in the &lt;strong>Same tab&lt;/strong> the form user is currently in.&lt;/p>
@@ -416,7 +416,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/link-edit.jpg" alt="Edit Link field">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Edit Field - Link&lt;/strong> dialog box will open (with the Link field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Link&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>The &lt;strong>Edit Field - Link&lt;/strong> dialog box will open (with the Link field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Link&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/platform/controls/actions/link#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/link-edit-dialog2.jpg" alt="Link field Edit field dialog box">&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -458,18 +458,18 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
-&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="user-tips-target-iconimages05png">User tips &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>If you want the &lt;strong>Link to be automatically emailed&lt;/strong> to someone once the form user clicks on the Submit button, for example, you could apply a &lt;strong>Send email rule&lt;/strong> to the Submit button and reference the Link field in an &lt;strong>expression&lt;/strong> in the email.&lt;/p>
-&lt;p>Rules allow actions based upon conditions resulting from user interaction with fields. To learn about the different types of rules that you can apply go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>, to learn about expressions see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder/">Expression builder&lt;/a> or for more information specifically about the Send email rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/communications/send-email/">Send email&lt;/a>.&lt;/p>
+&lt;p>Rules allow actions based upon conditions resulting from user interaction with fields. To learn about the different types of rules that you can apply go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>, to learn about expressions see &lt;a href="https://docs.kianda.com/platform/rules/general/expression-builder/">Expression builder&lt;/a> or for more information specifically about the Send email rule, see &lt;a href="https://docs.kianda.com/platform/rules/communications/send-email/">Send email&lt;/a>.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Link controls&lt;/strong>, find out more about the other types of &lt;strong>Action fields&lt;/strong> you can add to Kianda forms:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button/">Button controls&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image controls&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature/">Signature controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/actions/button/">Button controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/actions/image/">Image controls&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/actions/signature/">Signature controls&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Signature control</title><link>https://docs.kianda.com/platform/controls/actions/signature/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/actions/signature/</guid><description>
 &lt;p>A &lt;strong>Signature control&lt;/strong> can be used in a form to capture a user&amp;rsquo;s electronic signature. This can be particularly useful in a form that needs to be signed off as part of an approval process.&lt;/p>
 &lt;p>For example, a manager may complete a Performance Plan form for each employee, setting out their Key Performance Areas and goals. It could be useful to add two &lt;strong>Signature fields&lt;/strong> to this form - titled &amp;lsquo;Manager Signature&amp;rsquo; and &amp;lsquo;Employee Signature&amp;rsquo; - to record the Manager and Employee each signing off on the Performance Plan. We will keep this example in mind as we learn more about using Signature fields.&lt;/p>
@@ -479,7 +479,7 @@
 &lt;p>To add a &lt;strong>Signature field&lt;/strong> to a Kianda form:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/docs/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
+&lt;p>Open an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> in the left side menu and clicking on a process, or create a new process in Designer. See &lt;a href="https://docs.kianda.com/getting-started/create-first-process/">Create First Process&lt;/a> to learn how to create your first process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/designer-open-process.jpg" alt="Open process in Designer">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -514,7 +514,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-help.jpg" alt="Signature field help text">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Signature to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Signature to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Signature pad height (pixels)&lt;/strong> - You can choose the height of the signature in pixels. To do this, either manually type in the number of pixels you want the height to be or use the up and down arrows &lt;img src="https://docs.kianda.com/images/up-down-arrows.jpg" alt="Up down arrows"> to the right.&lt;/p>
@@ -557,7 +557,7 @@
 &lt;li>
 &lt;p>&lt;strong>Allow override sign by&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to allow override of the signature inserted in the Signature field. If you choose Yes, an additional option will be shown - &lt;strong>Default title of sign by&lt;/strong>:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-override.jpg" alt="Signature field allow override sign by option">&lt;/p>
-&lt;p>If you select &lt;strong>Yes&lt;/strong> to &amp;lsquo;Allow override sign by&amp;rsquo; and then click into the &amp;lsquo;&lt;strong>Default title of sign by&lt;/strong>&amp;rsquo; field, you can then select a field to be used to populate the default name in the Signature field. For example, you could select a &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker field&lt;/a> within your form as the &amp;lsquo;Default title of sign by&amp;rsquo; - this would then mean that the user that is selected in that User picker field will be the default name shown in the Signature field.&lt;/p>
+&lt;p>If you select &lt;strong>Yes&lt;/strong> to &amp;lsquo;Allow override sign by&amp;rsquo; and then click into the &amp;lsquo;&lt;strong>Default title of sign by&lt;/strong>&amp;rsquo; field, you can then select a field to be used to populate the default name in the Signature field. For example, you could select a &lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker field&lt;/a> within your form as the &amp;lsquo;Default title of sign by&amp;rsquo; - this would then mean that the user that is selected in that User picker field will be the default name shown in the Signature field.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Hide default signature tab&lt;/strong> - Select &lt;strong>Yes&lt;/strong> if you want to hide the default signature tab (where an electronic signature is automatically generated). If you choose Yes, the next option - &lt;strong>Auto save signature&lt;/strong> - will no longer be available to you.&lt;/p>
@@ -594,7 +594,7 @@
 &lt;p>Click on the &lt;strong>OK&lt;/strong> button to close the dialog box.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You may decide to add rules to your &lt;strong>Signature field&lt;/strong> - to learn more about the different categories of rules available, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>. The rules we add will be executed in the order in which they are listed under &lt;strong>Rules&lt;/strong> in the right hand pane.&lt;/p>
+&lt;p>You may decide to add rules to your &lt;strong>Signature field&lt;/strong> - to learn more about the different categories of rules available, go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>. The rules we add will be executed in the order in which they are listed under &lt;strong>Rules&lt;/strong> in the right hand pane.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-move-and-delete-signature-fields">How to edit, move and delete Signature fields&lt;/h3>
@@ -608,7 +608,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-edit.jpg" alt="Edit Signature field">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Edit Field&lt;/strong> dialog box will open (with the Signature field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Signature&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/actions/signature#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>The &lt;strong>Edit Field&lt;/strong> dialog box will open (with the Signature field title you chose reflected in the dialog box name), enabling you to choose from the same range of options as appear in the &lt;strong>New field - Signature&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/platform/controls/actions/signature#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/signature-edit-dialog2.jpg" alt="Signature edit field dialog box">&lt;/p>
 &lt;/li>
 &lt;/ol>
@@ -652,20 +652,20 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
-&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>​ For more details, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Signature control&lt;/strong>, find out more about the other types of &lt;strong>Action fields&lt;/strong> you can add to Kianda forms:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/button/">Button control&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/platform/controls/actions/button/">Button control&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/image/">Image control&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/platform/controls/actions/image/">Image control&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/controls/actions/link/">Link controls&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/platform/controls/actions/link/">Link controls&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>

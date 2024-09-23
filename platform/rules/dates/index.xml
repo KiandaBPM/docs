@@ -11,7 +11,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the Add time to date rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the Add time to date rule can be applied to. See &lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -25,7 +25,7 @@
 &lt;p>In the &lt;strong>Edit rule - Add time to date&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-add-time-to-date-screen-conditions.jpg" alt="Date rules edit conditions">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -105,14 +105,14 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>Multiple &lt;strong>Special dates&lt;/strong> can be loaded at once to allow you to select a number of specific dates to exclude from the rule.&lt;/p>
-&lt;p>The Add time to date rule is commonly used with the &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/schedule-a-rule/">Schedule a rule&lt;/a> rule to apply the specified time to a rule on a button, for example. This can be used like a clock to countdown to an event such as sending a reminder email.&lt;/p>
+&lt;p>The Add time to date rule is commonly used with the &lt;a href="https://docs.kianda.com/platform/rules/workflow/schedule-a-rule/">Schedule a rule&lt;/a> rule to apply the specified time to a rule on a button, for example. This can be used like a clock to countdown to an event such as sending a reminder email.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Calculate time</title><link>https://docs.kianda.com/platform/rules/dates/calculate-time/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/dates/calculate-time/</guid><description>
+&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Calculate time</title><link>https://docs.kianda.com/platform/rules/dates/calculate-time/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/dates/calculate-time/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Calculate time&lt;/strong> rule allows you to calculate the difference in time units between one date field and another, or from the current date and a chosen date field. The resulting number is then stored within a separate field within a Kianda form. An example of this rule would be entering a date under &lt;strong>From date&lt;/strong>, selecting the &lt;strong>Now()&lt;/strong> radio button, and entering a field under &lt;strong>destination field&lt;/strong>. This will display the amount of days that are between the entered date field, and now.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-calculate-time-screen.jpg" alt="Calculate Time Screen">&lt;/p>
-&lt;p>For example, the resulting number could be utilised as a countdown feature to communicate to the user that an important date is approaching, and that a task needs to be completed (as seen below). In this instance, there are 20 days before a deadline. To learn more about dates, see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>.&lt;/p>
+&lt;p>For example, the resulting number could be utilised as a countdown feature to communicate to the user that an important date is approaching, and that a task needs to be completed (as seen below). In this instance, there are 20 days before a deadline. To learn more about dates, see &lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-time-calculate-result.jpg" alt="Calculate Time Results">&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>The &lt;strong>Calculate time&lt;/strong> rule should be used when a user wishes to calculate the time difference between a date field and another date/time. For example, creating a countdown function that returns the amount of time units between two set dates.&lt;/p>
@@ -123,7 +123,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the &lt;strong>Calculate time&lt;/strong> rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the &lt;strong>Calculate time&lt;/strong> rule can be applied to. See &lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -137,7 +137,7 @@
 &lt;p>In the &lt;strong>Edit rule - Calculate time&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-calculate-time-screen-conditions.jpg" alt="Selecting Calculate Time">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -219,8 +219,8 @@
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>Multiple &lt;strong>Special dates&lt;/strong> can be loaded at once to allow you to select a number of specific dates to exclude from the rule.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Compare dates</title><link>https://docs.kianda.com/platform/rules/dates/compare-dates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/dates/compare-dates/</guid><description>
+&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Compare dates</title><link>https://docs.kianda.com/platform/rules/dates/compare-dates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/dates/compare-dates/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Compare dates&lt;/strong> rule is utilised to compare two date fields. Depending on the selected comparison function, the result of this rule will be saved as a boolean value (true/false) in another Kianda form field.&lt;/p>
 &lt;p>In the below example, the Compare dates rule is applied to a date field input in a form. If the date entered is after a set deadline, the field &lt;strong>Status - After Deadline?&lt;/strong> in this process is set to Yes. You could use this to ensure that process instances must be completed before an upcoming deadline.&lt;/p>
@@ -234,7 +234,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the Compare dates rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the Compare dates rule can be applied to. See &lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -248,7 +248,7 @@
 &lt;p>In the &lt;strong>Edit rule - Compare dates&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-compare-dates-screen-conditions.jpg" alt="Compare dates screen conditions">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -288,7 +288,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Value when false&lt;/strong> - if the result of the comparison function is &lt;em>false&lt;/em>, enter what string of text you would like to return to your form.&lt;/p>
-&lt;p>The resulting value can be used in a Kianda &lt;strong>Condition&lt;/strong> to control other parameters. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>The resulting value can be used in a Kianda &lt;strong>Condition&lt;/strong> to control other parameters. See &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-compare-date-result.jpg" alt="Compare dates result">&lt;/p>
 &lt;/li>
 &lt;/ul>
@@ -307,10 +307,10 @@
 &lt;/ol>
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>Selecting the &lt;strong>Compare to date&lt;/strong> function displays an additional field where you can select two different dates, and determine if your Date to compare is within.&lt;/p>
-&lt;p>The resulting boolean value can be used within other Kianda &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;p>The resulting boolean value can be used within other Kianda &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Format date</title><link>https://docs.kianda.com/platform/rules/dates/format-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/dates/format-date/</guid><description>
+&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Format date</title><link>https://docs.kianda.com/platform/rules/dates/format-date/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/dates/format-date/</guid><description>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>The &lt;strong>Format date&lt;/strong> rule is used to reformat a selected date field within your Kianda form, and send it to a destination field. You can choose from a range of date formats where month or day leads, and time is also included, see step 5 in &lt;a href="#how-to-get-started">How to get started&lt;/a>.&lt;/p>
 &lt;p>In the below example, the Format date rule is applied to a selected field from the drop-down list and is formatted to the &lt;em>MM/DD/YYYY&lt;/em> format. The resulting formatted date is then displayed in the &lt;strong>Formatted Date&lt;/strong> field that is selected under &lt;strong>Select a destination field for the formatted date&lt;/strong>. You can utilise this rule to format the entered date so that it matches various national date formatting standards. The default formatting for Kianda dates are &lt;em>DD/MM/YYYY&lt;/em>, so in the below example an entered date of &lt;em>23/08/2022&lt;/em> would become &lt;em>08/23/2022&lt;/em>.&lt;/p>
@@ -324,7 +324,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="before-you-get-started">Before you get started&lt;/h2>
-&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the Format date rule can be applied to. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
+&lt;p>In advance of using this rule, you need to have &lt;strong>created one or more forms, complete with control fields&lt;/strong>. For example, you must have a created field in your form that the Format date rule can be applied to. See &lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a> for more information on using date fields.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -338,7 +338,7 @@
 &lt;p>In the &lt;strong>Edit rule - Format date&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">. See &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-rules-format-date-screen-conditions.jpg" alt="Format date screen conditions">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -371,5 +371,5 @@
 &lt;h3 id="user-tip-target-iconimages05png">User tip &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
 &lt;p>This rule can be utilised to format a date to various national date formatting standards.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>To find out more about other date rules go to &lt;a href="https://docs.kianda.com/platform/rules/dates/">Dates&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>

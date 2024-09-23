@@ -44,7 +44,7 @@
 &lt;p>&lt;strong>Help text&lt;/strong> - you can insert help text a user can view when completing the date field. If you add help text, a question mark &lt;img src="https://docs.kianda.com/images/help-icon.jpg" alt="Help text icon"> icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Date to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Date to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Display format&lt;/strong> - you can choose whether the date field shows the date only or the date and time.&lt;/p>
@@ -100,21 +100,21 @@
 &lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Date field will be visible in the form.&lt;/li>
 &lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Date field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
 &lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Date controls&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/list/">List control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: File upload control</title><link>https://docs.kianda.com/platform/controls/input/file-upload/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/input/file-upload/</guid><description>
-&lt;p>&lt;strong>File upload controls&lt;/strong> (fields) can be inserted in a form if you want form users to be able to upload or store a file(s). File upload fields can also be useful if you want a file to be generated from the information entered in a form or if you want a file to be sent as part of your process - see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> for more information.&lt;/p>
+&lt;p>&lt;strong>File upload controls&lt;/strong> (fields) can be inserted in a form if you want form users to be able to upload or store a file(s). File upload fields can also be useful if you want a file to be generated from the information entered in a form or if you want a file to be sent as part of your process - see &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a> for more information.&lt;/p>
 &lt;p>For example, in an Inspection process, you may want the user (an inspector) to be able to upload the details of their inspection as a PDF file or photos as they complete an Inspection Form; or you may want the Kianda system to generate a report based on the information in the Inspection Form and to email this as a PDF file to a supervisor.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -142,7 +142,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-help-text.jpg" alt="File upload help text example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the File upload to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the File upload to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Save location&lt;/strong>: This is the location the file will be saved to. When you click on the &lt;strong>Destination&lt;/strong> button, a &lt;strong>Select datasource&lt;/strong> dialog box opens in which you can choose where to save the file(s):&lt;/p>
@@ -209,7 +209,7 @@
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-edit-field.jpg" alt="Select file upload field to edit">&lt;/p>
 &lt;ol start="3">
-&lt;li>The &lt;strong>Edit field - File&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - File&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload#how-to-get-started">How to get started&lt;/a>).&lt;/li>
+&lt;li>The &lt;strong>Edit field - File&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - File&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/platform/controls/input/file-upload#how-to-get-started">How to get started&lt;/a>).&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-edit-field-dialog2.jpg" alt="Edit date field dialog box">&lt;/p>
 &lt;p>​ You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
@@ -238,19 +238,19 @@
 &lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the File upload field will be visible in the form.&lt;/li>
 &lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the File upload field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
 &lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>File upload control&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/list/">List control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: List control</title><link>https://docs.kianda.com/platform/controls/input/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/input/list/</guid><description>
 &lt;p>&lt;strong>List fields&lt;/strong> (controls) can be manually entered into a form or can be linked to from an external site like SharePoint. There are different display options - from drop-down lists to checklists - as well as other options (like the ability to make a list field mandatory for a user to complete).&lt;/p>
 &lt;p>For example, you could insert a list field in your form that will show a drop-down list of Types of Training that is maintained on SharePoint. The &lt;strong>advantage&lt;/strong> of linking to an external data source like this is that your list will stay &lt;strong>up-to-date&lt;/strong> with any changes made to the list on SharePoint.&lt;/p>
@@ -282,7 +282,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-field-help-text.jpg" alt="List field help text example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the List to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the List to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>List source&lt;/strong> - You have three main options in terms of the source of the choices that will appear in your List field:&lt;/p>
@@ -297,12 +297,12 @@
 &lt;p>Click into the &lt;strong>List source&lt;/strong> box and select the form field you wish to use as your &lt;strong>List source&lt;/strong> and then choose a &lt;strong>Display field&lt;/strong> (the field used to display values) and &lt;strong>Value field&lt;/strong> to specify how you want to map the values from your data source into your list field.&lt;/p>
 &lt;p>Select the &lt;strong>Data source&lt;/strong> checkbox if you want to use an external data source as the source for the choices to appear in your list:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-source-datasource.jpg" alt="List field list source datasource">&lt;/p>
-&lt;p>Then click on the &lt;strong>Datasource&lt;/strong> button &lt;img src="https://docs.kianda.com/images/datasource.png" alt="Data source button"> to open the &lt;strong>Select datasource&lt;/strong> dialog box and choose the data source you want to connect to - for example, SharePoint. From there you can drill down into the datasource tree and select a specific data item to pull into the list. For more information on how to connect to data sources in Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a>.&lt;/p>
+&lt;p>Then click on the &lt;strong>Datasource&lt;/strong> button &lt;img src="https://docs.kianda.com/images/datasource.png" alt="Data source button"> to open the &lt;strong>Select datasource&lt;/strong> dialog box and choose the data source you want to connect to - for example, SharePoint. From there you can drill down into the datasource tree and select a specific data item to pull into the list. For more information on how to connect to data sources in Kianda, go to &lt;a href="https://docs.kianda.com/platform/connectors/">Data connectors&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-select-data-source.jpg" alt="List field select data source dialog box">&lt;/p>
 &lt;p>Once you&amp;rsquo;ve selected a data source, click &lt;strong>OK&lt;/strong> - a range of new options will now be shown below the &lt;strong>Datasource&lt;/strong> button in the &lt;strong>New field - List&lt;/strong> dialog box.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-datasource-options.jpg" alt="List field Data source options example">&lt;/p>
 &lt;p>Select the &lt;strong>Display field&lt;/strong>, &lt;strong>Value field&lt;/strong> and a field to &lt;strong>Sort by&lt;/strong> (the &amp;lsquo;Sort by&amp;rsquo; option appears once you&amp;rsquo;ve selected a data source). As the datasource chosen in the example is a Kianda process, the fields will appear as form fields. Once you&amp;rsquo;ve chosen a field to sort by, an additional option - &lt;strong>Direction&lt;/strong> - appears, enabling you to choose to sort values in &lt;strong>Ascending&lt;/strong> or &lt;strong>Descending&lt;/strong> order. In the example shown here, Kianda has been chosen as the data source and a field titled &amp;lsquo;Type of Training&amp;rsquo; from a form called &amp;lsquo;Training Request&amp;rsquo; has been chosen as both the Display field and Value field.&lt;/p>
-&lt;p>Click on the &lt;strong>Edit conditions&lt;/strong> button if you want to add a condition to your List field - for example, if you want to create a cascading list where the options available in a second list are dependent upon the option the user has chosen from a first list. To learn more about applying conditions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">&lt;strong>Conditions&lt;/strong>&lt;/a> and to find out more about creating cascading lists, watch the video on &lt;a href="https://docs.kianda.com/docs/how-to/create-cascading-dropdown-lists/">&lt;strong>How to create cascading dropdown lists&lt;/strong>&lt;/a>.&lt;/p>
+&lt;p>Click on the &lt;strong>Edit conditions&lt;/strong> button if you want to add a condition to your List field - for example, if you want to create a cascading list where the options available in a second list are dependent upon the option the user has chosen from a first list. To learn more about applying conditions, go to &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">&lt;strong>Conditions&lt;/strong>&lt;/a> and to find out more about creating cascading lists, watch the video on &lt;a href="https://docs.kianda.com/how-to/create-cascading-dropdown-lists/">&lt;strong>How to create cascading dropdown lists&lt;/strong>&lt;/a>.&lt;/p>
 &lt;p>If you choose Kianda as the data source for your list field, two additional options will be displayed - &lt;strong>Query any process&lt;/strong> (checks all processes within Kianda for the field you have selected as the source for your list) and &lt;strong>Query type&lt;/strong> (you can select anything created by or assigned to a particular user).&lt;/p>
 &lt;p>Once you&amp;rsquo;ve selected your &lt;strong>List source&lt;/strong> and the various options associated with it, complete the remaining options in the &lt;strong>New field - List&lt;/strong> dialog box:&lt;/p>
 &lt;/li>
@@ -329,7 +329,7 @@
 &lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-select-to-edit.jpg" alt="Select file upload file to edit">&lt;/p>
-&lt;p>The &lt;strong>Edit field - List&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - List&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/list#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>The &lt;strong>Edit field - List&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - List&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/platform/controls/input/list#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/list-edit-dialog-example2.jpg" alt="Edit date field dialog box">&lt;/p>
 &lt;p>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
 &lt;p>To move a &lt;strong>List field&lt;/strong>, simply&lt;/p>
@@ -357,22 +357,22 @@
 &lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the List field will be visible in the form.&lt;/li>
 &lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the List field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
 &lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>List controls&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Number control</title><link>https://docs.kianda.com/platform/controls/input/number/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/input/number/</guid><description>
 &lt;p>&lt;strong>Number controls&lt;/strong> (fields) can be inserted in a form if you want form users to insert a numerical value. Number fields can be formatted to be integers (whole numbers), currency or percentages.&lt;/p>
-&lt;p>For example, in a Purchase Order Request form, you may want to use Number fields to allow the user to insert the number, unit price and total cost of items being ordered and you may apply rules to some of those fields so that they perform calculations or pull values from other fields or forms. Go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a> for more information on how you make your forms dynamic.&lt;/p>
+&lt;p>For example, in a Purchase Order Request form, you may want to use Number fields to allow the user to insert the number, unit price and total cost of items being ordered and you may apply rules to some of those fields so that they perform calculations or pull values from other fields or forms. Go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/platform/rules/general/expression-builder">Expression builder&lt;/a> for more information on how you make your forms dynamic.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -415,7 +415,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-help-text.jpg" alt="File upload help text example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Number to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Number to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Display format&lt;/strong> - you can choose whether the number inserted by the user is formatted to be an integer (whole number), currency or a percentage.&lt;/p>
@@ -449,7 +449,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-expression-example.jpg" alt="Expression builder">&lt;/p>
 &lt;p>Now when a user completes the &amp;lsquo;Salary&amp;rsquo; field, the Bonus field automatically populates with a figure that is 20% of their salary:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/number-expression-example2.jpg" alt="Number expression example">&lt;/p>
-&lt;p>To learn more about applying rules and expressions to Number fields, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
+&lt;p>To learn more about applying rules and expressions to Number fields, go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Make whatever changes you want in this &lt;strong>Edit field - Number&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
@@ -480,36 +480,36 @@
 &lt;li>&lt;strong>Visible&lt;/strong> - If this is selected, the Number field will be visible in the form.&lt;/li>
 &lt;li>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Number field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/li>
 &lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Number control&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/list/">List control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Table control</title><link>https://docs.kianda.com/platform/controls/input/table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/input/table/</guid><description>
 &lt;p>&lt;strong>Table controls&lt;/strong> (fields) can be inserted in a form if you want form users to complete a table, if you want display data pulled from external sources in a table, or if you want a table to be autofilled as part of a rule. Tables can include different types of fields, such as text boxes, date fields, number fields, and list fields.&lt;/p>
 &lt;p>For example, in a Purchase Order Request form, you may want to use a Table field to display certain information about items or suppliers and/or to capture details the user inputs about items being ordered. In addition, you could apply rules to some of the fields within the table to, for example, automatically calculate totals or percentages or to pull in data from external data sources.&lt;/p>
-&lt;p>For more information about applying rules to fields and forms go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and for more specific information about applying rules to &lt;strong>Table fields&lt;/strong> see &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>For more information about applying rules to fields and forms go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a> and for more specific information about applying rules to &lt;strong>Table fields&lt;/strong> see &lt;a href="https://docs.kianda.com/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;p>We will now go through:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-get-started">How to add a Table field to a form&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-column-fields-in-a-table">How to edit column fields in a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-change-the-title-of-a-table-column">How to change the title of a Table colulmn&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-delete-a-column-from-a-table">How to delete a column from a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-change-the-field-type-of-an-existing-table-column">How to change the field type of an existing Table column&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-insert-new-columns-in-a-table">How to insert new columns in a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-move-columns-in-a-table">How to move columns in a Table&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-the-table-field">How to edit the Table field&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-move-table-fields">How to move Table fields&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-delete-table-fields">How to delete Table fields&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table#how-to-edit-table-field-properties">How to edit Table field properties&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table#how-to-get-started">How to add a Table field to a form&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table#how-to-edit-column-fields-in-a-table">How to edit column fields in a Table&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table#how-to-change-the-title-of-a-table-column">How to change the title of a Table colulmn&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table#how-to-delete-a-column-from-a-table">How to delete a column from a Table&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table#how-to-change-the-field-type-of-an-existing-table-column">How to change the field type of an existing Table column&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table#how-to-insert-new-columns-in-a-table">How to insert new columns in a Table&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table#how-to-move-columns-in-a-table">How to move columns in a Table&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table#how-to-edit-the-table-field">How to edit the Table field&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table#how-to-move-table-fields">How to move Table fields&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table#how-to-delete-table-fields">How to delete Table fields&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table#how-to-edit-table-field-properties">How to edit Table field properties&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -532,7 +532,7 @@
 &lt;h2 id="how-to-edit-move-and-delete-table-fields">How to edit, move and delete Table fields&lt;/h2>
 &lt;p>As we go through the options available for editing a Table, we will keep in mind the example of the table we added to the &amp;lsquo;Training Request&amp;rsquo; form above.&lt;/p>
 &lt;h3 id="how-to-edit-column-fields-in-a-table">How to edit column fields in a Table&lt;/h3>
-&lt;p>First, decide &lt;strong>how many columns&lt;/strong> you need in your table and &lt;strong>what type of input field&lt;/strong> you want to use for each column. To learn more about the eight different types of Input fields that you can use, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/">Input controls&lt;/a>.&lt;/p>
+&lt;p>First, decide &lt;strong>how many columns&lt;/strong> you need in your table and &lt;strong>what type of input field&lt;/strong> you want to use for each column. To learn more about the eight different types of Input fields that you can use, go to &lt;a href="https://docs.kianda.com/platform/controls/input/">Input controls&lt;/a>.&lt;/p>
 &lt;p>In our example, we want to change the default table that was inserted - titled &lt;strong>Table 1&lt;/strong> with two columns of text box fields - into a table called &amp;lsquo;&lt;strong>Existing Qualifications&lt;/strong>&amp;rsquo; to capture the existing qualifications of the user who is requesting further training.&lt;/p>
 &lt;p>We want our table to have three columns: the first column will be a text box field titled &amp;lsquo;&lt;strong>Qualification Description&lt;/strong>&amp;rsquo; where the user will manually type in the name of a qualification, the second column will be a drop-down list titled &amp;lsquo;&lt;strong>Educational Institution&lt;/strong>&amp;rsquo; (which could link to an external data source) where the user will choose the relevant institution, and the third column will be a date field titled &amp;lsquo;&lt;strong>Date Qualification Obtained&lt;/strong>&amp;rsquo;, as shown here:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-training-example.jpg" alt="Table example training">&lt;/p>
@@ -543,7 +543,7 @@
 &lt;li>Click the Edit field button.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-edit-field.jpg" alt="Table select field to edit">&lt;/p>
-&lt;p>The &lt;strong>Edit field - Text&lt;/strong> dialog box will open and you can change the title of the field here. There are also a number of other options available to you - see &lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a> for more information on how you can edit text box fields.&lt;/p>
+&lt;p>The &lt;strong>Edit field - Text&lt;/strong> dialog box will open and you can change the title of the field here. There are also a number of other options available to you - see &lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a> for more information on how you can edit text box fields.&lt;/p>
 &lt;p>&lt;strong>Note&lt;/strong>: The unique names of fields outside of a table do not conflict with the unique names of fields &lt;em>within&lt;/em> a table. Fields with duplicate unique names within the same table &lt;em>are not&lt;/em> allowed however.&lt;/p>
 &lt;h5 id="how-to-delete-a-column-from-a-table">How to delete a column from a Table&lt;/h5>
 &lt;p>To delete a column from a Table field:&lt;/p>
@@ -610,7 +610,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-helptext.jpg" alt="Table help text example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Table to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Table to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Add row text&lt;/strong> - you can insert the text you want to appear with the Add Row button &lt;img src="https://docs.kianda.com/images/table-add-row.jpg" alt="Table add row button">. By default, this will be &amp;lsquo;add row&amp;rsquo;.&lt;/p>
@@ -647,7 +647,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>Make whatever changes you want to make to the table in the &lt;strong>Edit field - Table&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
-&lt;p>If you want to make your table more dynamic - for example, so that calculations are made or information is autofilled into part of the table - you can add rules to it. To learn about applying rules to fields and forms go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and for more specific information about applying rules to &lt;strong>Table fields&lt;/strong> see &lt;a href="https://docs.kianda.com/docs/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
+&lt;p>If you want to make your table more dynamic - for example, so that calculations are made or information is autofilled into part of the table - you can add rules to it. To learn about applying rules to fields and forms go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a> and for more specific information about applying rules to &lt;strong>Table fields&lt;/strong> see &lt;a href="https://docs.kianda.com/platform/rules/tables/">Table rules&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-move-table-fields">How to move Table fields&lt;/h3>
@@ -680,22 +680,22 @@
 &lt;p>You can then check how the Table will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">. Our sample table, &lt;strong>Existing Qualifications&lt;/strong> could look like this when viewed on a PC:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/table-preview-example.jpg" alt="Sample table in preview">&lt;/p>
 &lt;p>You can also view and edit the &lt;strong>properties of the individual column fields&lt;/strong> within the Table by selecting the column field.&lt;/p>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Table control&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/list/">List control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Text box control</title><link>https://docs.kianda.com/platform/controls/input/textbox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/input/textbox/</guid><description>
 &lt;p>The &lt;strong>Text box control&lt;/strong> can be used if you want a user to manually input text into a form. For example, in a Training Request form, you may want the user to insert their first name and surname and may want those fields to be mandatory for the user to complete.&lt;/p>
-&lt;p>There are various options available when creating a Text box field, such as formatting it to allow multiple lines of text, to contain a password (text input is not shown) or to autofill with saved information such as the user&amp;rsquo;s address or email. More advanced options include applying a rule or expression to a Text box field - for more information, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
+&lt;p>There are various options available when creating a Text box field, such as formatting it to allow multiple lines of text, to contain a password (text input is not shown) or to autofill with saved information such as the user&amp;rsquo;s address or email. More advanced options include applying a rule or expression to a Text box field - for more information, see &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -741,7 +741,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/textbox-help-text.jpg" alt="Table help text example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Textbox to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Textbox to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Mode&lt;/strong> - you can decide whether your Text box is limited to a &lt;strong>Single line of text&lt;/strong> or will allow for &lt;strong>Multiple lines of text&lt;/strong> or can choose &lt;strong>Rich text&lt;/strong>. Different additional options will then be shown, depending on the Mode you have chosen.&lt;/p>
@@ -788,7 +788,7 @@
 &lt;p>&lt;strong>Expression&lt;/strong> - If you want to use your Text box field in a way that is more dynamic, you could decide to add an expression to it. For example, an Expression can be used to return a value - if you apply the Expression &amp;lsquo;&lt;strong>Date()&lt;/strong>&amp;rsquo; to your Text box field, it will return the current date and time.&lt;/p>
 &lt;p>To add an Expression to your Text box field, click on the ellipsis button &lt;img src="https://docs.kianda.com/images/ellipsis.png" alt="Ellipsis button in the Expression box"> to the right. This will open the &lt;strong>Expression builder&lt;/strong> dialog box:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/expression-builder.jpg" alt="Expression builder dialog box">&lt;/p>
-&lt;p>You can click on the &lt;strong>Reference&lt;/strong> button &lt;img src="https://docs.kianda.com/images/reference.png" alt="Reference button in the Expression builder dialog box"> to see some of the most commonly used Expressions. To learn more about using Expressions, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
+&lt;p>You can click on the &lt;strong>Reference&lt;/strong> button &lt;img src="https://docs.kianda.com/images/reference.png" alt="Reference button in the Expression builder dialog box"> to see some of the most commonly used Expressions. To learn more about using Expressions, go to &lt;a href="https://docs.kianda.com/platform/rules/general/expression-builder">Expression builder&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Make whatever changes you want to make to the Text box field in the &lt;strong>Edit field - Text box&lt;/strong> dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
@@ -840,7 +840,7 @@
 &lt;p>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Text box field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;p>You can check how the Text box will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview button">. Our simple example of the &amp;lsquo;First Name&amp;rsquo; and &amp;lsquo;Surname&amp;rsquo; fields in a Training Request form could look like this when viewed on a user&amp;rsquo;s mobile phone:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/textbox-preview-mobile.jpg" alt="Sample table in preview">&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
@@ -848,17 +848,17 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Text box control&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/list/">List control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Toggle control</title><link>https://docs.kianda.com/platform/controls/input/toggle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/input/toggle/</guid><description>
 &lt;p>&lt;strong>Toggle fields&lt;/strong> (controls) can be used in a form to record a decision, confirm that an action has been taken or an item has been received, or to record a yes/no type answer. They can be used as either a toggle or as a checkbox - for example, Toggle fields could be used to create a series of checkboxes in an Onboarding Form to record whether a new employee has received required training, been assigned an employee number and so on.&lt;/p>
 &lt;p>Rules can be applied to &lt;strong>Toggle fields&lt;/strong> to make your form more dynamic. One such rule, the &lt;strong>Show, hide or disable rule&lt;/strong> can be applied to a Toggle field to have the effect of showing or hiding remaining options/sections in the form dependent on whether the toggle/checkbox is selected or not.&lt;/p>
-&lt;p>For example, in a Training Request form, a Toggle field could be used to record a manager&amp;rsquo;s decision to either approve or reject an employee&amp;rsquo;s training request - by applying the &lt;strong>Show, hide or disable&lt;/strong> rule to this field, a different last section of the form will display based on the manager&amp;rsquo;s decision. If the manager select&amp;rsquo;s to approve the training, a sign-off button then appears; if the manager reject&amp;rsquo;s the request, a &amp;lsquo;Reason&amp;rsquo; text box appears for them to insert their feedback. To learn more about applying rules to fields, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>. To find out more about this specific rule, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/workflow/hide-or-disable">Show, hide or disable&lt;/a>.&lt;/p>
+&lt;p>For example, in a Training Request form, a Toggle field could be used to record a manager&amp;rsquo;s decision to either approve or reject an employee&amp;rsquo;s training request - by applying the &lt;strong>Show, hide or disable&lt;/strong> rule to this field, a different last section of the form will display based on the manager&amp;rsquo;s decision. If the manager select&amp;rsquo;s to approve the training, a sign-off button then appears; if the manager reject&amp;rsquo;s the request, a &amp;lsquo;Reason&amp;rsquo; text box appears for them to insert their feedback. To learn more about applying rules to fields, see &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/platform/rules/general/expression-builder">Expression builder&lt;/a>. To find out more about this specific rule, go to &lt;a href="https://docs.kianda.com/platform/rules/workflow/hide-or-disable">Show, hide or disable&lt;/a>.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -889,7 +889,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/toggle-helptext-example.jpg" alt="List field help text example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Toggle to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the Toggle to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Value when enabled&lt;/strong> - You can set the value for when the user selects the toggle/checkbox. For example, the value when it is selected could be &amp;lsquo;Yes&amp;rsquo;.&lt;/p>
@@ -918,7 +918,7 @@
 &lt;li>
 &lt;p>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/toggle-edit.jpg" alt="Select toggle field to edit">&lt;/p>
-&lt;p>The &lt;strong>Edit field - Toggle&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - Toggle&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>The &lt;strong>Edit field - Toggle&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - Toggle&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/platform/controls/input/toggle#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/toggle-example-dialog2.jpg" alt="Edit toggle field dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -928,7 +928,7 @@
 &lt;p>You can apply rules to a &lt;strong>Toggle field&lt;/strong> to make it more dynamic so that, for example, it generates information that is automatically inserted into another field.&lt;/p>
 &lt;p>For example, you could apply a &amp;lsquo;&lt;strong>Set date&lt;/strong>&amp;rsquo; rule to your &amp;lsquo;&amp;rsquo;&lt;strong>Order Received&lt;/strong>&amp;rsquo; toggle field so that it generates a date to be displayed in a &amp;lsquo;&lt;strong>Date received&lt;/strong>&amp;rsquo; field when &lt;strong>Order received&lt;/strong> is selected by the user - this will mean that when the user selects the Order Received toggle field, this automatically generates a date stamp for when the order was received:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/toggle-rule-date.jpg" alt="Toggle example date rule">&lt;/p>
-&lt;p>To learn more about applying rules to fields, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/general/expression-builder">Expression builder&lt;/a>. To find out more about the specific rule added in our example - where a date is automatically populated in another field - go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field">Set form field&lt;/a>.&lt;/p>
+&lt;p>To learn more about applying rules to fields, see &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a> and &lt;a href="https://docs.kianda.com/platform/rules/general/expression-builder">Expression builder&lt;/a>. To find out more about the specific rule added in our example - where a date is automatically populated in another field - go to &lt;a href="https://docs.kianda.com/platform/rules/data/set-form-field">Set form field&lt;/a>.&lt;/p>
 &lt;h4 id="how-to-move-a-toggle-field">How to move a Toggle field&lt;/h4>
 &lt;p>To move a &lt;strong>Toggle field&lt;/strong>:&lt;/p>
 &lt;ol>
@@ -970,22 +970,22 @@
 &lt;p>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the Toggle field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Toggle controls&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/list/">List control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: User picker control</title><link>https://docs.kianda.com/platform/controls/input/user-picker/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/controls/input/user-picker/</guid><description>
 &lt;p>The &lt;strong>User picker field&lt;/strong> can be used in a form if you want the form user to select a user, multiple users or a group of users. You can format the User picker field so that, for example, the form user can choose any user, can only choose a user or users from a pre-configured group - for example, users in the HR Department - or can choose multiple users.&lt;/p>
-&lt;p>You can pre-define Groups on Kianda by using the Users function under Kianda Administration. To learn more about how you can set up and manage Groups, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;p>You can pre-define Groups on Kianda by using the Users function under Kianda Administration. To learn more about how you can set up and manage Groups, go to &lt;a href="https://docs.kianda.com/platform/users-groups/">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;p>For example, in a &amp;lsquo;Training Request&amp;rsquo; form, you may insert a &lt;strong>User picker field&lt;/strong> titled &amp;lsquo;Manager&amp;rsquo; so that the user can select their manager (who will subsequently need to approve or reject their training request once it has been submitted).&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
@@ -1021,7 +1021,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-helptext-shown.jpg" alt="User picker field help text example icon">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the User picker to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS class name&lt;/strong> - You can type the name of a CSS class to allow the User picker to inherit specific styles defined in the &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Selection Mode&lt;/strong> - You can choose whether the user will only be able to select one user from the User Picker list (by selecting &lt;strong>Single&lt;/strong>) or whether the user will be able to select multiple users (by selecting &lt;strong>Multiple&lt;/strong>).&lt;/p>
@@ -1038,7 +1038,7 @@
 &lt;p>&lt;strong>Member of group&lt;/strong> - You can choose to restrict the users available to be selected in the User picker field to a certain group - for example, only users in the HR Team. Alternatively, you can leave this field blank.&lt;/p>
 &lt;p>When you click into the &lt;strong>Member of group&lt;/strong> field, you will see a drop-down list of all of the Groups you can select:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-member-of-group.jpg" alt="User picker field select Member of group">&lt;/p>
-&lt;p>In Kianda, Groups can be configured under the Administration menu - to learn more about how you can set up and manage Groups, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users/">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;p>In Kianda, Groups can be configured under the Administration menu - to learn more about how you can set up and manage Groups, go to &lt;a href="https://docs.kianda.com/platform/administration/users/">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;p>For example, if you select &amp;lsquo;HR Team&amp;rsquo;, the end user completing the form will only be able to select users who are members of the &amp;lsquo;HR Team&amp;rsquo; group in this User picker field.&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1073,7 +1073,7 @@
 &lt;li>Click on the &lt;strong>Edit field&lt;/strong> button (Pen icon) &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit field button">.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-edit.jpg" alt="Select User picker field to edit">&lt;/p>
-&lt;p>The &lt;strong>Edit field - User picker&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - User picker&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>The &lt;strong>Edit field - User picker&lt;/strong> dialog box will open, enabling you to choose from the same range of options as appear in the &lt;strong>New field - User picker&lt;/strong> dialog box (as already discussed in &lt;a href="https://docs.kianda.com/platform/controls/input/user-picker#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/user-picker-edit-dialog2.jpg" alt="Edit User picker field dialog box">&lt;/p>
 &lt;p>You can make any changes you wish in this dialog box and then click &lt;strong>OK&lt;/strong> to confirm.&lt;/p>
 &lt;h4 id="how-to-move-a-user-picker-field">How to move a User picker field&lt;/h4>
@@ -1113,14 +1113,14 @@
 &lt;p>&lt;strong>Layout&lt;/strong> - The width of the blue bar can be adjusted to change the width of the User picker field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button &lt;img src="https://docs.kianda.com/images/expand-icon.jpg" alt="Expand button"> to the right).&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/docs/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
+&lt;p>To learn more about the different options within the Field properties menu, go to &lt;a href="https://docs.kianda.com/platform/controls/properties#field-properties">Field Properties&lt;/a>.&lt;/p>
 &lt;h3 id="saving-changes-and-version-history">Saving changes and version history&lt;/h3>
 &lt;p>Make sure to save any changes you make by clicking on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/saveprocess.png" alt="Save">. You will always have the option to revert back to previous versions of your form by clicking the &lt;strong>Design Version History&lt;/strong> &lt;img src="https://docs.kianda.com/images/version8.png" alt="Version button"> button in the top right corner.&lt;/p>
 &lt;h3 id="user-tips-target-iconimages05png">User tips &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;p>Rules can be applied to User picker fields to make your form dynamic. Rules allow actions based upon conditions resulting from user interaction with fields. To learn about the different types of rules you can apply, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
-&lt;p>For example, you could apply a &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field">Set form field&lt;/a> rule so that the User picker field is set to be the current user or the user who started the process off. The section below describes how to use a User picker field in forms with two rules in order to extract a value from a datasource.&lt;/p>
+&lt;p>Rules can be applied to User picker fields to make your form dynamic. Rules allow actions based upon conditions resulting from user interaction with fields. To learn about the different types of rules you can apply, go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p>
+&lt;p>For example, you could apply a &lt;a href="https://docs.kianda.com/platform/rules/data/set-form-field">Set form field&lt;/a> rule so that the User picker field is set to be the current user or the user who started the process off. The section below describes how to use a User picker field in forms with two rules in order to extract a value from a datasource.&lt;/p>
 &lt;h2 id="example-of-user-picker-use-with-find-items-and-lookup-user-rules">Example of User Picker use with Find Items and Lookup User rules&lt;/h2>
-&lt;p>The steps below detail how to use a User Picker field to &lt;strong>pull a value from a datasource&lt;/strong> and &lt;strong>use properties within the Kianda&lt;/strong> system associated with that value &lt;strong>within a Kianda form&lt;/strong> to &lt;strong>auto-populate a user picker field&lt;/strong>. This procedure is used when you need to populate &lt;strong>more than one value&lt;/strong> in a user picker. Two rules are applied &lt;a href="https://docs.kianda.com/docs/platform/rules/data/find-items">Find Items rule&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/rules/users/lookup-user-by-property">Lookup user by property&lt;/a>.&lt;/p>
+&lt;p>The steps below detail how to use a User Picker field to &lt;strong>pull a value from a datasource&lt;/strong> and &lt;strong>use properties within the Kianda&lt;/strong> system associated with that value &lt;strong>within a Kianda form&lt;/strong> to &lt;strong>auto-populate a user picker field&lt;/strong>. This procedure is used when you need to populate &lt;strong>more than one value&lt;/strong> in a user picker. Two rules are applied &lt;a href="https://docs.kianda.com/platform/rules/data/find-items">Find Items rule&lt;/a> and &lt;a href="https://docs.kianda.com/platform/rules/users/lookup-user-by-property">Lookup user by property&lt;/a>.&lt;/p>
 &lt;p>For example we start with a SharePoint list or other &lt;strong>datasource&lt;/strong> that has a list of values, for example we could use a Kianda process as a datasource that holds values called &amp;lsquo;Employee number&amp;rsquo; and &amp;lsquo;Employee&amp;rsquo; in the system.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/process-datasource.png" alt="Example of a process acting as a datasource">&lt;/p>
 &lt;p>In the image above an Employee number or code is entered via a process for 3 system users, in this example the number &amp;lsquo;400&amp;rsquo; represents 3 users, Bartosz, Caitriona and Cian. More records could be created with Employee numbers representing other employees or combinations of users.&lt;/p>
@@ -1130,11 +1130,11 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>User picker control&lt;/strong>, find out more about the other types of &lt;strong>Input fields&lt;/strong> you can add to a Kianda process:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/list/">List control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/date/">Date control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/file-upload/">File upload control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/list/">List control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/number/">Number control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/table/">Table control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/textbox/">Text box control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/controls/input/toggle/">Toggle control&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>

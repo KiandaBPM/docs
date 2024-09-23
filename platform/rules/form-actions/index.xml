@@ -21,7 +21,7 @@
 &lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit Conditions button"> to add a validation condition. To learn more about conditions go to &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
+&lt;p>Click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit Conditions button"> to add a validation condition. To learn more about conditions go to &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Select the field you want the condition check to be performed on. In this example it is the &lt;strong>Date of Incident&lt;/strong> field.&lt;/p>
@@ -62,8 +62,8 @@
 &lt;li>When validating a field, form or a process, think of conditions. When a condition is met, an action must follow. For example an error message is displayed (&lt;strong>Action&lt;/strong>) when the wrong date is entered (&lt;strong>Condition&lt;/strong>).&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Field Display mode</title><link>https://docs.kianda.com/platform/rules/form-actions/field-display-mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/form-actions/field-display-mode/</guid><description>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Field Display mode</title><link>https://docs.kianda.com/platform/rules/form-actions/field-display-mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/form-actions/field-display-mode/</guid><description>
 &lt;p>The &lt;strong>Field display mode&lt;/strong> rule temporarily changes the display mode of a field or form creating a temporary form or field display mode. This rule forces the display mode to override the automatically calculated display mode of fields and forms.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can add this rule:&lt;/p>
@@ -73,7 +73,7 @@
 &lt;li>&lt;input checked="" disabled="" type="checkbox"> to a process (the rule will run on load)&lt;/li>
 &lt;/ul>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To showcase the &lt;strong>Field display mode&lt;/strong> in action, we will change the display mode of a user picker field to &lt;strong>Read mode&lt;/strong> after a user has been chosen. To learn more about &lt;strong>User picker&lt;/strong> field go to &lt;a href="https://docs.kianda.com/docs/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/p>
+&lt;p>To showcase the &lt;strong>Field display mode&lt;/strong> in action, we will change the display mode of a user picker field to &lt;strong>Read mode&lt;/strong> after a user has been chosen. To learn more about &lt;strong>User picker&lt;/strong> field go to &lt;a href="https://docs.kianda.com/platform/controls/input/user-picker/">User picker control&lt;/a>.&lt;/p>
 &lt;p>To implement the rule:&lt;/p>
 &lt;ol>
 &lt;li>
@@ -86,7 +86,7 @@
 &lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>To demonstrate how this rule works, we will add a condition to a field. Select the field you want the condition to be applied to. In this example it is the &lt;strong>Employee&lt;/strong> field.&lt;/p>
@@ -133,8 +133,8 @@
 &lt;li>Form state (Edit / Read) will not be saved. It is recommended that display mode is reverted once no longer needed.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Submit form</title><link>https://docs.kianda.com/platform/rules/form-actions/submit-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/form-actions/submit-form/</guid><description>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Submit form</title><link>https://docs.kianda.com/platform/rules/form-actions/submit-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/form-actions/submit-form/</guid><description>
 &lt;p>The &lt;strong>Submit form&lt;/strong> rule marks the current form as complete and makes it read-only. By default upon submit of a form, the next form in the process is activated.&lt;/p>
 &lt;p>This rule is automatically attached to &lt;strong>Submit&lt;/strong> button which is added to all forms by default.&lt;/p>
 &lt;h3 id="when-to-use">When to use&lt;/h3>
@@ -158,7 +158,7 @@
 &lt;p>In the &lt;strong>Edit rule - Field display mode&lt;/strong> dialog box, give the rule a title in the &lt;strong>Title&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
+&lt;p>If you want to add conditions for the rule, click on the &lt;strong>Edit conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button"> to create conditions for the rule, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more details.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Under Action, &lt;strong>Set process status&lt;/strong> choose from &lt;strong>Auto (Current form title)&lt;/strong> or &lt;strong>Manual&lt;/strong>. If you choose &lt;strong>Manual&lt;/strong> then type in the desired text to appear to users in the &lt;strong>Status text after submit&lt;/strong> field.&lt;/p>
@@ -189,8 +189,8 @@
 &lt;li>You can display the internal status of a process in a list widget on your dashboard. This can help you keep track of the current state the process instance is. For example when the process is complete or which form in the process is currently active.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Save form</title><link>https://docs.kianda.com/platform/rules/form-actions/save-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/form-actions/save-form/</guid><description>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Save form</title><link>https://docs.kianda.com/platform/rules/form-actions/save-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/form-actions/save-form/</guid><description>
 &lt;p>The &lt;strong>Save form&lt;/strong> rule saves changes made in a form. This is particularly useful if a user needs to complete a long form, or is offsite, so that initial changes to the form are saved and then all changes can be submitted later on. The rule commits a record in the server.&lt;/p>
 &lt;p>This rule is automatically attached to &lt;strong>Submit&lt;/strong> and &lt;strong>Save&lt;/strong> buttons which are added to forms by default.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
@@ -217,7 +217,7 @@
 &lt;p>Under Action, check the box for &lt;strong>Perform background save&lt;/strong> if you want to perform background save of forms. This option &lt;strong>MUST&lt;/strong> be &lt;strong>enabled&lt;/strong> to allow background upload and chunked upload to be possible in the &lt;strong>File upload control&lt;/strong>.&lt;/p>
 &lt;p>&lt;em>Edit rule - Save form dialog box&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-save-process-background-save.jpg" alt="File upload - Upload rules">&lt;/p>
-&lt;p>For example if you are offsite or don&amp;rsquo;t have a good internet connection and need to upload files to forms, then it is useful to allow &amp;lsquo;chunked&amp;rsquo; and &amp;lsquo;background upload&amp;rsquo; so that the file can be transmitted in resumable chunks. See &lt;a href="https://docs.kianda.com/docs/platform/controls/input/file-upload/">File upload control&lt;/a> for more information on file upload.&lt;/p>
+&lt;p>For example if you are offsite or don&amp;rsquo;t have a good internet connection and need to upload files to forms, then it is useful to allow &amp;lsquo;chunked&amp;rsquo; and &amp;lsquo;background upload&amp;rsquo; so that the file can be transmitted in resumable chunks. See &lt;a href="https://docs.kianda.com/platform/controls/input/file-upload/">File upload control&lt;/a> for more information on file upload.&lt;/p>
 &lt;p>&lt;em>File upload - background and chunked upload options&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/file-upload-upload-option.jpg" alt="File upload - Upload rules">&lt;/p>
 &lt;/li>
@@ -229,7 +229,7 @@
 &lt;p>You can also create a notification to display to users when a save has been successful by typing a message in the &lt;strong>Save notification&lt;/strong> field.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>You can create conditions for the actions to happen, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
+&lt;p>You can create conditions for the actions to happen, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
@@ -253,8 +253,8 @@
 &lt;li>You can add a condition to the &lt;strong>Save form&lt;/strong> rule to make sure that users fill out certain pieces of information in your form before they can actually save it.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Close form</title><link>https://docs.kianda.com/platform/rules/form-actions/close-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/form-actions/close-form/</guid><description>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Close form</title><link>https://docs.kianda.com/platform/rules/form-actions/close-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/form-actions/close-form/</guid><description>
 &lt;p>The &lt;strong>Close form&lt;/strong> rule closes the form and allows users to navigate back to home page of Kianda platform or to another resource. This rule is automatically attached to &lt;strong>Close&lt;/strong>, &lt;strong>Submit&lt;/strong> and &lt;strong>Save&lt;/strong> buttons which are added to forms by default.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Together with the &lt;strong>Submit&lt;/strong>, and &lt;strong>Save&lt;/strong> rules, the &lt;strong>Close form&lt;/strong> rule forms the shutdown procedures for forms and should not be deleted from &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> or &lt;strong>Close&lt;/strong> buttons.&lt;/p>
@@ -285,7 +285,7 @@
 &lt;li>
 &lt;p>&lt;strong>Return to a dashboard&lt;/strong> - This option will redirect the user to a dashboard of choice. To navigate to a specific dashboard, in the &lt;strong>Please choose a dashboard&lt;/strong> option select the desired dashboard.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-close-return-dashboard.jpg" alt="Return to dashboard option">&lt;/p>
-&lt;p>In the dashboard &lt;strong>Query string parameters&lt;/strong> are used to populate the &lt;strong>Filter&lt;/strong> &lt;strong>widget&lt;/strong> when a given dashboard is loaded. To learn more about query parameters go to &lt;a href="https://docs.kianda.com/docs/platform/pages/link/#heading">Query parameters&lt;/a>. To learn more about Filter widget and how to use query strings there, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#heading">Filter widget - query strings&lt;/a>.&lt;/p>
+&lt;p>In the dashboard &lt;strong>Query string parameters&lt;/strong> are used to populate the &lt;strong>Filter&lt;/strong> &lt;strong>widget&lt;/strong> when a given dashboard is loaded. To learn more about query parameters go to &lt;a href="https://docs.kianda.com/platform/pages/link/#heading">Query parameters&lt;/a>. To learn more about Filter widget and how to use query strings there, go to &lt;a href="https://docs.kianda.com/platform/pages/filter/#heading">Filter widget - query strings&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Return to URL&lt;/strong> - This option will redirect the user to any URL specified in the &lt;strong>Please choose a field or type the URL&lt;/strong> text box.&lt;/p>
@@ -308,7 +308,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/rule-close-instance-id.jpg" alt="Edit process - ID field">&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Query string parameters&lt;/strong> are used to populate form or fields when a given form is loaded. To learn more about query strings, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/">Query Strings&lt;/a> and for a more specific example visit &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#close-rule-query-strings">Close rule Query Strings&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Query string parameters&lt;/strong> are used to populate form or fields when a given form is loaded. To learn more about query strings, visit &lt;a href="https://docs.kianda.com/platform/pages/querystrings/">Query Strings&lt;/a> and for a more specific example visit &lt;a href="https://docs.kianda.com/platform/pages/querystrings/#close-rule-query-strings">Close rule Query Strings&lt;/a>.&lt;/p>
 &lt;h3 id="editing-deleting-or-duplicating-rules">Editing, deleting or duplicating rules&lt;/h3>
 &lt;p>When you have clicked on an existing rule, and the rule is visible in the right-hand pane under &lt;strong>Rules&lt;/strong>, there are a number of options available to you.&lt;/p>
 &lt;ol>
@@ -336,8 +336,8 @@
 &lt;li>if the rule is applied to a &lt;em>process&lt;/em>, then the rule will be triggered on load, that is when the process is initiated.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Delete form</title><link>https://docs.kianda.com/platform/rules/form-actions/delete-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/form-actions/delete-form/</guid><description>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item><item><title>Platform: Delete form</title><link>https://docs.kianda.com/platform/rules/form-actions/delete-form/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/rules/form-actions/delete-form/</guid><description>
 &lt;p>The &lt;strong>Delete form&lt;/strong> rule marks a process instance to be deleted. This rule can be used for example for General Data Protection Regulation (GDPR) reasons whereby a process instance with personal data is deleted.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>Use this rule with the &lt;strong>Save form&lt;/strong> rule to commit the deletion request in the server.&lt;/p>
@@ -354,7 +354,7 @@
 &lt;li>Click on an existing process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and decide which form, or field you will apply the rule to, by clicking on that item so that it is in &lt;strong>edit mode&lt;/strong> so you can see the Edit/pen button, &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen button">.&lt;/li>
 &lt;li>Click on &lt;strong>Add a rule&lt;/strong> &amp;gt; &lt;strong>Form actions&lt;/strong> &amp;gt; &lt;strong>Delete form&lt;/strong>.&lt;/li>
 &lt;li>In the &lt;strong>Edit rule - Delete form&lt;/strong> dialog box, give the rule a &lt;strong>Title&lt;/strong>.&lt;/li>
-&lt;li>There is no action on the Delete form rule that can be specified. The internal action of this rule is to delete the process instance if a condition becomes true, see &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/li>
+&lt;li>There is no action on the Delete form rule that can be specified. The internal action of this rule is to delete the process instance if a condition becomes true, see &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> for more information.&lt;/li>
 &lt;li>To apply a condition to the &lt;strong>Delete form&lt;/strong> rule, in the &lt;strong>Edit rule - Delete form&lt;/strong> dialog box click on &lt;strong>Edit conditions&lt;/strong> &lt;img src="https://docs.kianda.com/images/editconditions.png" alt="Edit conditions button">.&lt;/li>
 &lt;/ol>
 &lt;h3 id="gdpr-example-use-case">GDPR example use case&lt;/h3>
@@ -408,5 +408,5 @@
 &lt;li>When adding the &lt;strong>Delete form&lt;/strong> rule to a process, make sure to change the rule order of execution of the &lt;strong>Delete form&lt;/strong> to be after &lt;strong>Submit form&lt;/strong>. Remember that you can&amp;rsquo;t submit a deleted form.&lt;/li>
 &lt;/ul>
 &lt;h3 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
-&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>To find our more about other form action rules go to &lt;a href="https://docs.kianda.com/platform/rules/form-actions/">Form Action rules&lt;/a>.&lt;/p>
+&lt;p>To find out more about other rules go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p></description></item></channel></rss>

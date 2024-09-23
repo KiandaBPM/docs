@@ -23,18 +23,18 @@
 &lt;p>&lt;strong>Show header&lt;/strong> checkbox - tick this checkbox if you wish to show a header on your dashboard.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>List widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>List widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
 &lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as a dashboard List widget, in this case).&lt;/p>
-&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout container&lt;/strong> - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new &lt;strong>List widget&lt;/strong> to be placed in.&lt;/p>
-&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
+&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
 &lt;p>In this example, we can select to place our new List widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
 &lt;/li>
@@ -71,7 +71,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/penbutton.png" alt="Chart widget edit">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>A dialog box opens with filter options in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions">in the middle of the box, and list view fields in the right-hand pane. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions you can apply to dashboard widgets and go to &lt;a href="#list-view-fields">List view fields&lt;/a> to read more about how to apply fields to your list view.&lt;/p>
+&lt;p>A dialog box opens with filter options in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions">in the middle of the box, and list view fields in the right-hand pane. Go to &lt;a href="https://docs.kianda.com/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions you can apply to dashboard widgets and go to &lt;a href="#list-view-fields">List view fields&lt;/a> to read more about how to apply fields to your list view.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/listconfig.png" alt="Editing options">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -151,7 +151,7 @@
 &lt;li>
 &lt;p>&lt;strong>Enable data export?&lt;/strong> - choose from a) Yes or b) No if you wish to allow data export. If you select Yes, a new option will appear:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Enable data format?&lt;/strong> - choose from a) OData, b) CSV or c) Excel. To watch a video tutorial about exporting your process data from a list widget using OData, &lt;a href="https://docs.kianda.com/docs/how-to/exporting-odata/">click here.&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Enable data format?&lt;/strong> - choose from a) OData, b) CSV or c) Excel. To watch a video tutorial about exporting your process data from a list widget using OData, &lt;a href="https://docs.kianda.com/how-to/exporting-odata/">click here.&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -220,7 +220,7 @@
 &lt;p>Click on the &lt;strong>Add column&lt;/strong> button &lt;img src="https://docs.kianda.com/images/add-column-button.png" alt="add column button" style="zoom:80%;" /> to display a HTML and CSS code editor that allows you to design the custom column.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the code editor, enter the &lt;strong>Title&lt;/strong> of your new column add the &lt;strong>code&lt;/strong> to achieve the desired look and effect for your new column. For example, a common practice would be to code a conditional function checking the internal status of each row&amp;rsquo;s record - if it&amp;rsquo;s equal to &amp;lsquo;Open&amp;rsquo;, create a red button to draw attention to records that are still open, and vice versa with the closed records. You can interact with and perform operations on the list&amp;rsquo;s fields by utilising the &lt;strong>row.properties.&lt;em>enterFieldName&lt;/em>&lt;/strong> method. The conditional statement uses Ember.js, learn more by clicking &lt;a href="https://docs.kianda.com/docs/low-code/using-the-ember-inspector/">here&lt;/a>.&lt;/p>
+&lt;p>In the code editor, enter the &lt;strong>Title&lt;/strong> of your new column add the &lt;strong>code&lt;/strong> to achieve the desired look and effect for your new column. For example, a common practice would be to code a conditional function checking the internal status of each row&amp;rsquo;s record - if it&amp;rsquo;s equal to &amp;lsquo;Open&amp;rsquo;, create a red button to draw attention to records that are still open, and vice versa with the closed records. You can interact with and perform operations on the list&amp;rsquo;s fields by utilising the &lt;strong>row.properties.&lt;em>enterFieldName&lt;/em>&lt;/strong> method. The conditional statement uses Ember.js, learn more by clicking &lt;a href="https://docs.kianda.com/low-code/using-the-ember-inspector/">here&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/add-column-code-editor.png" alt="Add column code editor">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -255,7 +255,7 @@
 &lt;h3 id="how-to-move-list-widgets">How to move List widgets&lt;/h3>
 &lt;p>To move a &lt;strong>List widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
-&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
+&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
 &lt;li>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/li>
 &lt;li>Drag and drop the widget where you want it to go on your dashboard.&lt;/li>
 &lt;li>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/li>
@@ -264,7 +264,7 @@
 &lt;p>To delete a &lt;strong>List widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
@@ -281,7 +281,7 @@
 &lt;p>To update or edit your &lt;strong>List widget&lt;/strong> settings:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
@@ -302,13 +302,13 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Dashboard List widget&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Tile widget</title><link>https://docs.kianda.com/platform/pages/tile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/pages/tile/</guid><description>
 &lt;p>A dashboard &lt;strong>Tile widget&lt;/strong> allows you to display a count of instances. This is a really useful way to showcase whole numbers - for example, the total budget requested through Purchase Orders, the number of customer queries solved in a week or the number of training requests that have been approved.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -335,18 +335,18 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Visible to&lt;/strong> - You can determine who will be able to see the &lt;strong>Tile widget&lt;/strong>. You can select single or multiple Users or Groups, or a combination of the two. You can select Users or Groups in the right-hand menu so that the options shown in the drop-down list are either individual users or Groups.&lt;/p>
-&lt;p>To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;p>To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
 &lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as the Tile widget, in this case).&lt;/p>
-&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout container&lt;/strong> - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new &lt;strong>Tile widget&lt;/strong> to be placed in.&lt;/p>
-&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
+&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
 &lt;p>In this example, we can select to place our new Tile widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
 &lt;/li>
@@ -383,7 +383,7 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/edittile.png" alt="Tile widget edit">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>A dialog box opens with filter options in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions"> in the middle of the box, and tile view fields and &lt;strong>Key performance indicators&lt;/strong> in the right-hand pane. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions you can apply to dashboard widgets, and go to Tile view fields to read more about changing how a tile looks.&lt;/p>
+&lt;p>A dialog box opens with filter options in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions"> in the middle of the box, and tile view fields and &lt;strong>Key performance indicators&lt;/strong> in the right-hand pane. Go to &lt;a href="https://docs.kianda.com/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions you can apply to dashboard widgets, and go to Tile view fields to read more about changing how a tile looks.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/edittilebox2.png" alt="Editing a tile widget">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -450,7 +450,7 @@
 &lt;h3 id="how-to-move-tile-widgets">How to move Tile widgets&lt;/h3>
 &lt;p>To move a &lt;strong>Tile widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
-&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
+&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
 &lt;li>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/li>
 &lt;li>Drag and drop the widget where you want it to go on your dashboard.&lt;/li>
 &lt;li>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/li>
@@ -459,7 +459,7 @@
 &lt;p>To delete a &lt;strong>Tile widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
@@ -476,7 +476,7 @@
 &lt;p>To update or edit your &lt;strong>Tile widget&lt;/strong> settings:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
@@ -497,25 +497,25 @@
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Dashboard Tile widgets&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: HTML widget</title><link>https://docs.kianda.com/platform/pages/richtext/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/pages/richtext/</guid><description>
 &lt;p>A dashboard &lt;strong>Rich Text widget&lt;/strong> can be used to create custom rich text content on a dashboard page, such as an attractive banner or heading. It can provide optimum formatting options, such as bold and italics and the option to insert images or links.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To add a &lt;strong>Rich Text widget&lt;/strong> to a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
-&lt;p>For this example, we&amp;rsquo;ll open a dashboard page called &amp;lsquo;Annual Leave&amp;rsquo; that currently only has a &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a> on it:&lt;/p>
+&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
+&lt;p>For this example, we&amp;rsquo;ll open a dashboard page called &amp;lsquo;Annual Leave&amp;rsquo; that currently only has a &lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a> on it:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-annual-leave-example.jpg" alt="Annual Leave dashboard page example">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-button.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -541,18 +541,18 @@
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Visible to&lt;/strong> - You can determine who will be able to see the &lt;strong>Rich Text widget&lt;/strong>. You can select single or multiple Users or Groups, or a combination of the two. You can select Users or Groups in the right-hand menu so that the options shown in the drop-down list are either individual users or Groups.&lt;/p>
-&lt;p>To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;p>To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
 &lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as the Rich Text widget, in this case).&lt;/p>
-&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout container&lt;/strong> - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new &lt;strong>Link widget&lt;/strong> to be placed in.&lt;/p>
-&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
+&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
 &lt;p>In this example, we can select to place our new Rich Text widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
 &lt;/li>
@@ -600,14 +600,14 @@
 &lt;p>To edit a &lt;strong>Rich Text widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
+&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the Rich Text widget&amp;rsquo;s &lt;strong>Update configuration&lt;/strong> (Edit) button &lt;img src="https://docs.kianda.com/images/dashboard-update-configuration.jpg" alt="Dashboard update configuration button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-richtext-edit-example.jpg" alt="Select Dashboard Rich Text widget Update configuration button">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Edit content&lt;/strong> dialog box opens, enabling you to make whatever changes you want to the content of the Rich Text widget using the same range of options as outlined in Step 6 of &lt;a href="https://docs.kianda.com/docs/platform/pages/richtext#how-to-get-started">How to get started&lt;/a>.&lt;/p>
+&lt;p>The &lt;strong>Edit content&lt;/strong> dialog box opens, enabling you to make whatever changes you want to the content of the Rich Text widget using the same range of options as outlined in Step 6 of &lt;a href="https://docs.kianda.com/platform/pages/richtext#how-to-get-started">How to get started&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Making the changes you want and then click &lt;strong>OK&lt;/strong>.&lt;/p>
@@ -619,7 +619,7 @@
 &lt;h3 id="how-to-move-rich-text-widgets">How to move Rich Text widgets&lt;/h3>
 &lt;p>To move a &lt;strong>Rich Text widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
-&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
+&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
 &lt;li>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/li>
 &lt;li>Drag and drop the widget where you want it to go on your dashboard.&lt;/li>
 &lt;li>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/li>
@@ -630,7 +630,7 @@
 &lt;p>To delete a &lt;strong>Rich Text widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
@@ -648,14 +648,14 @@
 &lt;p>To update or edit your &lt;strong>Rich Text widget&lt;/strong> settings:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-richtext-edit-widget-settings.jpg" alt="Dashboard Update widget settings button">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box will open, enabling you to make changes to any of the available options (the same options as were available in the &lt;strong>Create widget&lt;/strong> dialog box discussed in Step 4 of &lt;a href="https://docs.kianda.com/docs/platform/pages/richtext#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box will open, enabling you to make changes to any of the available options (the same options as were available in the &lt;strong>Create widget&lt;/strong> dialog box discussed in Step 4 of &lt;a href="https://docs.kianda.com/platform/pages/richtext#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-richtext-edit-widget-dialog.jpg" alt="Dashboard Rich Text widget Edit widget dialog box">&lt;/p>
 &lt;p>In our example, we could choose to make increase the width of the &lt;strong>Rich Text widget&lt;/strong> to be 7 columns wide, by clicking to the right of the existing blue bar.&lt;/p>
 &lt;/li>
@@ -671,13 +671,13 @@
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Dashboard Rich Text widget&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widget&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Chart widget</title><link>https://docs.kianda.com/platform/pages/chart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/pages/chart/</guid><description>
 &lt;p>A dashboard &lt;strong>Chart widget&lt;/strong> enables you to create pie charts, bar charts or line charts on your dashboard page. These charts can be used to represent various conditions or values in a process.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
@@ -703,18 +703,18 @@
 &lt;p>&lt;strong>Show header&lt;/strong> - You can choose whether or not you want the header of your Chart widget to be displayed in the dashboard. This checkbox is selected by default, so de-select it if you don&amp;rsquo;t want the header to be displayed.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Chart widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Chart widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
 &lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as the Chart widget, in this case).&lt;/p>
-&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout container&lt;/strong>: This option will only display if you have already created layout containers for your Dashboard page. Here, you can select the layout container you want to place your new &lt;strong>Chart widget&lt;/strong> in.&lt;/p>
-&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
+&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
 &lt;p>In this example, we can select to place our new Chart widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
 &lt;/li>
@@ -746,7 +746,7 @@
 &lt;p>To edit a &lt;strong>Chart widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
+&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the Chart widget&amp;rsquo;s &lt;strong>Update configuration&lt;/strong> (Edit) button &lt;img src="https://docs.kianda.com/images/dashboard-update-configuration.jpg" alt="Dashboard update configuration button">.&lt;/p>
@@ -754,7 +754,7 @@
 &lt;/li>
 &lt;li>
 &lt;p>The &lt;strong>Edit chart&lt;/strong> dialog box opens, enabling you to choose from a range of options for your Chart widget. Filter options are shown in the left-hand pane, a &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions button"> in the middle of the dialog box, and chart edit fields in the right-hand pane.&lt;/p>
-&lt;p>Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions you can apply to data and go to &lt;a href="#chart-view-fields">Chart view fields&lt;/a> to read more about changing how a chart looks.&lt;/p>
+&lt;p>Go to &lt;a href="https://docs.kianda.com/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions you can apply to data and go to &lt;a href="#chart-view-fields">Chart view fields&lt;/a> to read more about changing how a chart looks.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/editchart.png" alt="Editing a chart widget">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -857,7 +857,7 @@
 &lt;h3 id="how-to-move-chart-widgets">How to move Chart widgets&lt;/h3>
 &lt;p>To move a &lt;strong>Chart widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
-&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
+&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
 &lt;li>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/li>
 &lt;li>Drag and drop the widget where you want it to go on your dashboard.&lt;/li>
 &lt;li>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/li>
@@ -866,7 +866,7 @@
 &lt;p>To delete a &lt;strong>Chart widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
@@ -883,7 +883,7 @@
 &lt;p>To update or edit your &lt;strong>Chart widget&lt;/strong> settings:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
@@ -904,13 +904,13 @@
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Dashboard Chart widget&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walk-through widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/walkthrough/">Walk-through widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Chart v2 widget</title><link>https://docs.kianda.com/platform/pages/chartv2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/pages/chartv2/</guid><description>
 &lt;p>A dashboard &lt;strong>Chart v2 widget&lt;/strong> enables you to create pie charts, bar charts, line charts, radar charts, doughnut and polar area charts on your dashboard page. These charts can be used to represent various conditions or values in a process.&lt;/p>
 &lt;!--toc_hide: true
@@ -932,7 +932,7 @@ hide_summary: true -->
 &lt;p>&lt;strong>Layout columns&lt;/strong> - You can choose how wide you want your &lt;strong>Chart widget&lt;/strong> to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example, click half-way across the blue bar to create a widget that is 6 columns wide.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS&lt;/strong> - here you can assign a class name for your widget. You can create or edit the CSS for your custom class in the global CSS file. To learn more about the global CSS visit &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS&lt;/strong> - here you can assign a class name for your widget. You can create or edit the CSS for your custom class in the global CSS file. To learn more about the global CSS visit &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS file&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Colour scheme&lt;/strong> - You can choose from six colour options for the header of the widget (Navy, Green, Blue, Amber, Red or White), if you choose to display it.&lt;/p>
@@ -941,12 +941,12 @@ hide_summary: true -->
 &lt;p>&lt;strong>Show header&lt;/strong> - You can choose whether or not you want the header of your Chart widget to be displayed in the dashboard. This checkbox is selected by default, so de-select it if you don&amp;rsquo;t want the header to be displayed.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Chart widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Chart widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
 &lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as the Chart widget, in this case).&lt;/p>
-&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -980,12 +980,12 @@ hide_summary: true -->
 &lt;li>
 &lt;p>Once you are in the &lt;strong>chart wizard&lt;/strong>, first you need to choose a type of chart you want to create. There are six option:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Pie chart&lt;/strong> - A pie chart is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice is proportional to the quantity it represents. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-pie-chart">How to create a Pie Chart&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Bar chart&lt;/strong> - A bar chart or bar graph is a chart or graph that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. The bars can be plotted vertically or horizontally. A vertical bar chart is sometimes called a column chart. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-bar-chart">How to create a Bar Chart&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Line chart&lt;/strong> - A line chart or line graph or curve chart is a type of chart which displays information as a series of data points called &amp;lsquo;markers&amp;rsquo; connected by straight line segments. It is a basic type of chart common in many fields. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-line-chart">How to create a Line Chart&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Radar chart&lt;/strong> - Radar Charts are used to compare two or more items or groups on various features or characteristics. Example: Compare two anti-depressant drugs on features such as: efficacy for severe depression, prevalence of specific side effects, interaction with alcohol, continuation of relief over time, cost to the consumer etc. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-radar-chart">How to create a Radar Chart&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Doughnut chart&lt;/strong> - Donut charts are used to show the proportions of categorical data, with the size of each piece representing the proportion of each category. A donut chart is created using a string field and a count of features, number, or rate/ratio field. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-doughnut-chart">How to create a Doughnut Chart&lt;/a>.&lt;/li>
-&lt;li>&lt;strong>Polar area chart&lt;/strong> - Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value. This type of chart is often useful when we want to show a comparison data similar to a pie chart, but also show a scale of values for context. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-polar-area-chart">How to create a Polar area Chart&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Pie chart&lt;/strong> - A pie chart is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice is proportional to the quantity it represents. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-pie-chart">How to create a Pie Chart&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Bar chart&lt;/strong> - A bar chart or bar graph is a chart or graph that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. The bars can be plotted vertically or horizontally. A vertical bar chart is sometimes called a column chart. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-bar-chart">How to create a Bar Chart&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Line chart&lt;/strong> - A line chart or line graph or curve chart is a type of chart which displays information as a series of data points called &amp;lsquo;markers&amp;rsquo; connected by straight line segments. It is a basic type of chart common in many fields. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-line-chart">How to create a Line Chart&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Radar chart&lt;/strong> - Radar Charts are used to compare two or more items or groups on various features or characteristics. Example: Compare two anti-depressant drugs on features such as: efficacy for severe depression, prevalence of specific side effects, interaction with alcohol, continuation of relief over time, cost to the consumer etc. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-radar-chart">How to create a Radar Chart&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Doughnut chart&lt;/strong> - Donut charts are used to show the proportions of categorical data, with the size of each piece representing the proportion of each category. A donut chart is created using a string field and a count of features, number, or rate/ratio field. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-doughnut-chart">How to create a Doughnut Chart&lt;/a>.&lt;/li>
+&lt;li>&lt;strong>Polar area chart&lt;/strong> - Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value. This type of chart is often useful when we want to show a comparison data similar to a pie chart, but also show a scale of values for context. To learn how to create a pie chart using Chart v2, visit &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-polar-area-chart">How to create a Polar area Chart&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -1003,7 +1003,7 @@ hide_summary: true -->
 &lt;li>&lt;strong>Data from&lt;/strong> - Choose from a) Process b) Partner process or c) Data source. Depending on which option you choose go to the relevant area to read more on &lt;a href="#choosing-data-from-a-process">Choosing data from a Process&lt;/a>, &lt;a href="#choosing-data-from-a-partner-process">Choosing data from a Partner process&lt;/a> and &lt;a href="#choosing-data-from-a-data-source">Choosing data from a Data source&lt;/a>.&lt;/li>
 &lt;li>&lt;strong>Labels field&lt;/strong> - use the drop-down list to select the label of the data you want displayed. This can be any field from your process.&lt;/li>
 &lt;li>&lt;strong>Values field&lt;/strong> - use the drop-down list to select the value of the data you want displayed. This can be any field from your process. &lt;strong>Count&lt;/strong> represents the total amount that the chosen value has appeared in a process. &lt;strong>Sum&lt;/strong> is only available if your process contains a number field. Selecting sum, will add up all value for each process instance. &lt;strong>Average&lt;/strong> is also only available for number fields which will return the average of all instances added up.&lt;/li>
-&lt;li>&lt;img src="https://docs.kianda.com/images/condition-icon.jpg" alt="Conditions icon"> - add conditions to your chart. Go to &lt;a href="https://docs.kianda.com/docs/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions.&lt;/li>
+&lt;li>&lt;img src="https://docs.kianda.com/images/condition-icon.jpg" alt="Conditions icon"> - add conditions to your chart. Go to &lt;a href="https://docs.kianda.com/platform/pages/conditions/">Conditions&lt;/a> to read more about conditions.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
@@ -1127,7 +1127,7 @@ hide_summary: true -->
 &lt;p>When you are finished with your colour scheme, click on &lt;strong>Continue&lt;/strong> to move to the last section of the wizard.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart. To display each segment as a percentage, select &lt;strong>No&lt;/strong> in the &lt;strong>Show values?&lt;/strong> option in the last section of the chart wizard.&lt;/p>
+&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart. To display each segment as a percentage, select &lt;strong>No&lt;/strong> in the &lt;strong>Show values?&lt;/strong> option in the last section of the chart wizard.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="how-to-create-a-bar-chart">How to create a Bar Chart&lt;/h2>
@@ -1160,7 +1160,7 @@ hide_summary: true -->
 &lt;p>When you are finished with your colour scheme, click on &lt;strong>Continue&lt;/strong> to move to the last section of the wizard.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart. To display each segment as a percentage, select &lt;strong>No&lt;/strong> in the &lt;strong>Show values?&lt;/strong> option in the last section of the chart wizard.&lt;/p>
+&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart. To display each segment as a percentage, select &lt;strong>No&lt;/strong> in the &lt;strong>Show values?&lt;/strong> option in the last section of the chart wizard.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="how-to-create-a-line-chart">How to create a Line Chart&lt;/h2>
@@ -1193,7 +1193,7 @@ hide_summary: true -->
 &lt;p>When you are finished with your colour scheme, click on &lt;strong>Continue&lt;/strong> to move to the last section of the wizard.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart. To display each segment as a percentage, select &lt;strong>No&lt;/strong> in the &lt;strong>Show values?&lt;/strong> option in the last section of the chart wizard.&lt;/p>
+&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart. To display each segment as a percentage, select &lt;strong>No&lt;/strong> in the &lt;strong>Show values?&lt;/strong> option in the last section of the chart wizard.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="how-to-create-a-radar-chart">How to create a Radar Chart&lt;/h2>
@@ -1240,7 +1240,7 @@ hide_summary: true -->
 &lt;p>When you are finished with your colour scheme, click on &lt;strong>Continue&lt;/strong> to move to the last section of the wizard.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart.&lt;/p>
+&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="how-to-create-a-doughnut-chart">How to create a Doughnut Chart&lt;/h2>
@@ -1273,7 +1273,7 @@ hide_summary: true -->
 &lt;p>When you are finished with your colour scheme, click on &lt;strong>Continue&lt;/strong> to move to the last section of the wizard.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart.&lt;/p>
+&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="how-to-create-a-polar-area-chart">How to create a Polar area Chart&lt;/h2>
@@ -1320,13 +1320,13 @@ hide_summary: true -->
 &lt;p>When you are finished with your colour scheme, click on &lt;strong>Continue&lt;/strong> to move to the last section of the wizard.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart.&lt;/p>
+&lt;p>Follow step 10 of &lt;a href="https://docs.kianda.com/platform/pages/chartv2/#how-to-create-a-chart-from-the-wizard">How to create a chart from the wizard&lt;/a> to complete your chart.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-move-chart-widgets">How to move Chart widgets&lt;/h3>
 &lt;p>To move a &lt;strong>Chart widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
-&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
+&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
 &lt;li>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/li>
 &lt;li>Drag and drop the widget where you want it to go on your dashboard.&lt;/li>
 &lt;li>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/li>
@@ -1335,7 +1335,7 @@ hide_summary: true -->
 &lt;p>To delete a &lt;strong>Chart widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
@@ -1352,7 +1352,7 @@ hide_summary: true -->
 &lt;p>To update or edit your &lt;strong>Chart widget&lt;/strong> settings:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
@@ -1372,35 +1372,35 @@ hide_summary: true -->
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Dashboard Chart widget&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walk-through widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/walkthrough/">Walk-through widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Filter widget</title><link>https://docs.kianda.com/platform/pages/filter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/pages/filter/</guid><description>
 &lt;!-- toc_hide: true
 hide_summary: true -->
 &lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>In your dashboards you can create a &lt;strong>Filter Widget&lt;/strong>. This widget is typically used to &lt;strong>filter&lt;/strong> data in other dashboard widgets, for example, a &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List Widget&lt;/a>, so your filter choice will influence how the list widget displays. You can use the filter to search for specific type of data within other widgets helping you to breakdown information without having to look for it manually.&lt;/p>
+&lt;p>In your dashboards you can create a &lt;strong>Filter Widget&lt;/strong>. This widget is typically used to &lt;strong>filter&lt;/strong> data in other dashboard widgets, for example, a &lt;a href="https://docs.kianda.com/platform/pages/list/">List Widget&lt;/a>, so your filter choice will influence how the list widget displays. You can use the filter to search for specific type of data within other widgets helping you to breakdown information without having to look for it manually.&lt;/p>
 &lt;p>You can create four types of filters:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-a-manualdatasource-filter">Manual/datasource filter&lt;/a> - this filter will allow you to search for data by selecting an option which can be entered in &lt;strong>manually&lt;/strong> or &lt;strong>pulled from a datasource&lt;/strong>. There are two styles of manual/datasource filters: a &lt;strong>Dropdown&lt;/strong> or a &lt;strong>Radio&lt;/strong> list:&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-create-a-manualdatasource-filter">Manual/datasource filter&lt;/a> - this filter will allow you to search for data by selecting an option which can be entered in &lt;strong>manually&lt;/strong> or &lt;strong>pulled from a datasource&lt;/strong>. There are two styles of manual/datasource filters: a &lt;strong>Dropdown&lt;/strong> or a &lt;strong>Radio&lt;/strong> list:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/manual-entry-filter.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-a-date-range-filter">Date range filter&lt;/a> - this filter allows you to enter &lt;strong>two sets of dates&lt;/strong> which can be then used to filter your data based on a date input in a connected dashboard widget.&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-create-a-date-range-filter">Date range filter&lt;/a> - this filter allows you to enter &lt;strong>two sets of dates&lt;/strong> which can be then used to filter your data based on a date input in a connected dashboard widget.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/date-range-filter.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-free-text-filter">Free text filter&lt;/a> - this filter allows you to filter data in a connected dashboard widget by &lt;strong>typing text freely&lt;/strong> into the search bar.&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-create-free-text-filter">Free text filter&lt;/a> - this filter allows you to filter data in a connected dashboard widget by &lt;strong>typing text freely&lt;/strong> into the search bar.&lt;/p>
 &lt;p>&lt;strong>Note:&lt;/strong> by default you are &lt;strong>required&lt;/strong> to connect this filter to another dashboard widget so that the filter knows which widget your are searching for data.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/free-text-filter.jpg" alt="free text filter">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-create-current-user-filter">Current user filter&lt;/a> - this filter allows you to pull a &lt;strong>profile attribute&lt;/strong> from the &lt;strong>currently logged in user&lt;/strong> which can be then used to filter data in another dashboard widget. For example you can pull the &lt;strong>display name&lt;/strong> attribute from the user and based on that, you could filter data in other widgets that belong to the current user. To learn more about users and profile attributes visit &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/p>
+&lt;p>&lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-create-current-user-filter">Current user filter&lt;/a> - this filter allows you to pull a &lt;strong>profile attribute&lt;/strong> from the &lt;strong>currently logged in user&lt;/strong> which can be then used to filter data in another dashboard widget. For example you can pull the &lt;strong>display name&lt;/strong> attribute from the user and based on that, you could filter data in other widgets that belong to the current user. To learn more about users and profile attributes visit &lt;a href="https://docs.kianda.com/platform/administration/users/#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/current-user-filter.jpg" alt="Current user filter">&lt;/p>
 &lt;/li>
 &lt;/ul>
@@ -1408,10 +1408,10 @@ hide_summary: true -->
 &lt;p>To add a &lt;strong>Filter widget&lt;/strong> to a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
+&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-button.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1437,18 +1437,18 @@ hide_summary: true -->
 &lt;p>&lt;img src="https://docs.kianda.com/images/header-deselected.jpg" alt="show header">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Filter widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Filter widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
 &lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as the Filter widget, in this case).&lt;/p>
-&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout container&lt;/strong>: This option will only display if you have already created layout containers for your Dashboard page. Here, you can select the layout container you want to place your new &lt;strong>Filter widget&lt;/strong> in.&lt;/p>
-&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
+&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/platform/pages/#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Device visibility&lt;/strong> - You can choose what devices and types of internet connections the dashboard &lt;strong>Filter widget&lt;/strong> will be visible on - select all the options you want from Desktop, Tablet, Mobile, Wi-Fi and Flight mode as to when the device can view the dashboards. By default, all options are selected.&lt;/p>
@@ -1464,7 +1464,7 @@ hide_summary: true -->
 &lt;h3 id="how-to-create-a-manualdatasource-filter">How to create a Manual/datasource filter&lt;/h3>
 &lt;ol>
 &lt;li>
-&lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
+&lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the Filter settings dialog, select &lt;strong>Dropdown list&lt;/strong> or &lt;strong>Radio list&lt;/strong> as your &lt;strong>Filter type&lt;/strong>.&lt;/p>
@@ -1483,10 +1483,10 @@ hide_summary: true -->
 &lt;p>&lt;img src="https://docs.kianda.com/images/filter-widget-datasource2.png" alt="datasource entries">&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Datasource button&lt;/strong> - this button will allow you to connect to datasource which will allow you to pull the filter options. For example, you can connect to a SharePoint list that contains all your filter options or any other datasource that has been created within your system. See &lt;a href="https://docs.kianda.com/docs/platform/connectors/">Data connectors&lt;/a> for a full list of datasources you can create.&lt;/p>
+&lt;p>&lt;strong>Datasource button&lt;/strong> - this button will allow you to connect to datasource which will allow you to pull the filter options. For example, you can connect to a SharePoint list that contains all your filter options or any other datasource that has been created within your system. See &lt;a href="https://docs.kianda.com/platform/connectors/">Data connectors&lt;/a> for a full list of datasources you can create.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Edit condition button&lt;/strong> - this button allows you to create a condition to pull data from the datasource, once the condition is matched the data will be pulled from the datasource. See &lt;a href="https://docs.kianda.com/docs/platform/rules/general/add-conditions/">Conditions&lt;/a> to learn more.&lt;/p>
+&lt;p>&lt;strong>Edit condition button&lt;/strong> - this button allows you to create a condition to pull data from the datasource, once the condition is matched the data will be pulled from the datasource. See &lt;a href="https://docs.kianda.com/platform/rules/general/add-conditions/">Conditions&lt;/a> to learn more.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Display field &amp;amp; Value field&lt;/strong> - &lt;strong>Display field&lt;/strong> will be the option &lt;strong>visible&lt;/strong> to the user while the &lt;strong>Value field&lt;/strong> will be the &lt;strong>actual value&lt;/strong> when the option is selected. For example, if you are pulling your filter options form a SharePoint list which has multiple columns, you can select one of those columns to be displayed for the user and use another column for the value. To further extend the example, you could have the &lt;strong>display field&lt;/strong> set to a &lt;strong>username (title)&lt;/strong> and in the background pull the users &lt;strong>role as the value.&lt;/strong>&lt;/p>
@@ -1508,7 +1508,7 @@ hide_summary: true -->
 &lt;li>
 &lt;p>&lt;strong>Enable query string&lt;/strong> - check this checkbox if you wish to include a query string when filtering data. When enabled, an additional textbox will appear under the Default value textbox:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/filter-query-strings2.png" alt="filter connection">&lt;/p>
-&lt;p>Type the name of your parameter into the textbox provided (where the place holder says &amp;ldquo;Parameter name&amp;rdquo;). Check the Auto update URL checkbox to allow the URL be updated automatically when you select an option. To learn more about query strings within Kianda, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/">Query Strings&lt;/a> and for an additional example of query strings within the Filter widget, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#filter-widget-query-strings">Filter Widget Query Strings&lt;/a>.&lt;/p>
+&lt;p>Type the name of your parameter into the textbox provided (where the place holder says &amp;ldquo;Parameter name&amp;rdquo;). Check the Auto update URL checkbox to allow the URL be updated automatically when you select an option. To learn more about query strings within Kianda, visit &lt;a href="https://docs.kianda.com/platform/pages/querystrings/">Query Strings&lt;/a> and for an additional example of query strings within the Filter widget, visit &lt;a href="https://docs.kianda.com/platform/pages/querystrings/#filter-widget-query-strings">Filter Widget Query Strings&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Control placeholder&lt;/strong> - if you select &lt;strong>Dropdown list&lt;/strong> as your filter type, an additional text field will appear called Control placeholder. The text entered here will appear as the placeholder text for your dropdown filter.&lt;/p>
@@ -1539,7 +1539,7 @@ hide_summary: true -->
 &lt;h3 id="how-to-create-a-date-range-filter">How to create a Date range filter&lt;/h3>
 &lt;ol>
 &lt;li>
-&lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
+&lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the Filter settings dialog, select &lt;strong>Date range&lt;/strong> as your &lt;strong>Filter type&lt;/strong>.&lt;/p>
@@ -1579,7 +1579,7 @@ hide_summary: true -->
 &lt;h3 id="how-to-create-free-text-filter">How to create Free text filter&lt;/h3>
 &lt;ol>
 &lt;li>
-&lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
+&lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the Filter settings dialog, select &lt;strong>Free text&lt;/strong> as your &lt;strong>Filter type&lt;/strong>.&lt;/p>
@@ -1591,7 +1591,7 @@ hide_summary: true -->
 &lt;li>
 &lt;p>&lt;strong>Enable query string&lt;/strong> - check this checkbox if you wish to include a query string when filtering data. When enabled, an additional textbox will appear under the Default value textbox:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/free-text-querystring.jpg" alt="filter connection">&lt;/p>
-&lt;p>Type the name of your parameter into the textbox provided (where the place holder says &amp;ldquo;Parameter name&amp;rdquo;). Check the &lt;strong>Auto update URL&lt;/strong> checkbox to allow the URL be updated automatically when you select an option. To learn more about query strings within Kianda, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/">Query Strings&lt;/a> and for an additional example of query strings within the Filter widget, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#filter-widget-query-strings">Filter Widget Query Strings&lt;/a>.&lt;/p>
+&lt;p>Type the name of your parameter into the textbox provided (where the place holder says &amp;ldquo;Parameter name&amp;rdquo;). Check the &lt;strong>Auto update URL&lt;/strong> checkbox to allow the URL be updated automatically when you select an option. To learn more about query strings within Kianda, visit &lt;a href="https://docs.kianda.com/platform/pages/querystrings/">Query Strings&lt;/a> and for an additional example of query strings within the Filter widget, visit &lt;a href="https://docs.kianda.com/platform/pages/querystrings/#filter-widget-query-strings">Filter Widget Query Strings&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on &lt;strong>Add connection&lt;/strong> to connect your filter to another dashboard widget which you want to target while filtering data based on the &lt;strong>free text&lt;/strong> provided by a user.&lt;/p>
@@ -1616,13 +1616,13 @@ hide_summary: true -->
 &lt;h3 id="how-to-create-current-user-filter">How to create Current user filter&lt;/h3>
 &lt;ol>
 &lt;li>
-&lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
+&lt;p>First, follow the steps in &lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-get-started">How to get started&lt;/a> to create a filter widget or edit an existing filter, to edit an existing filter, see &lt;a href="https://docs.kianda.com/platform/pages/filter/#how-to-edit-filter-widgets">How to edit Filter widgets&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>In the Filter settings dialog, select &lt;strong>Current user&lt;/strong> as your &lt;strong>Filter type&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>In the &lt;strong>Current user property&lt;/strong> dropdown list, select the property you want to extract as the value of your filter. To learn more about users and profile attributes visit &lt;a href="https://docs.kianda.com/docs/platform/administration/users/#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/p>
+&lt;p>In the &lt;strong>Current user property&lt;/strong> dropdown list, select the property you want to extract as the value of your filter. To learn more about users and profile attributes visit &lt;a href="https://docs.kianda.com/platform/administration/users/#modify-profile-attributes">Modify profile attributes&lt;/a>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/current-user-filter-property.jpg" alt="Dashboard Filter widget filter by Current User filter options">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1649,7 +1649,7 @@ hide_summary: true -->
 &lt;p>To edit a &lt;strong>Filter widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
+&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the Filter widget&amp;rsquo;s &lt;strong>Update configuration&lt;/strong> (Edit) button &lt;img src="https://docs.kianda.com/images/dashboard-update-configuration.jpg" alt="Dashboard update configuration button">.&lt;/p>
@@ -1669,7 +1669,7 @@ hide_summary: true -->
 &lt;p>To move a &lt;strong>Filter widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/p>
@@ -1686,7 +1686,7 @@ hide_summary: true -->
 &lt;p>To delete a &lt;strong>Filter widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
@@ -1704,7 +1704,7 @@ hide_summary: true -->
 &lt;p>To update or edit your &lt;strong>Filter widget&lt;/strong> settings:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
@@ -1727,25 +1727,25 @@ hide_summary: true -->
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Dashboard Filter widget&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Link widget</title><link>https://docs.kianda.com/platform/pages/link/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/pages/link/</guid><description>
 &lt;p>A dashboard &lt;strong>Link widget&lt;/strong> can be used to create a button link on a dashboard page that initiates a new process instance (by bringing the user straight into the first form of a particular process), links to another dashboard or links to an external website.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To add a &lt;strong>Link widget&lt;/strong> to a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
-&lt;p>For this example, we&amp;rsquo;ll open a dashboard page called &amp;lsquo;Annual Leave&amp;rsquo; that currently has a &lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a> on it:&lt;/p>
+&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
+&lt;p>For this example, we&amp;rsquo;ll open a dashboard page called &amp;lsquo;Annual Leave&amp;rsquo; that currently has a &lt;a href="https://docs.kianda.com/platform/pages/richtext/">Rich Text widget&lt;/a> and &lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a> on it:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-annual-leave-example2.jpg" alt="Annual Leave dashboard page example 2">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-button.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -1764,7 +1764,7 @@ hide_summary: true -->
 &lt;p>&lt;strong>Layout columns&lt;/strong> - You can choose how wide you want your &lt;strong>Link widget&lt;/strong> to be. You can choose from 1 to 12 columns in width by clicking on the blue bar. For example click half-way across the blue bar to create a widget that is 6 columns wide, or click to the very end of the bar to create a column that is 12 columns wide.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Custom CSS&lt;/strong> - You can add a custom CSS class name to your link widget which you can use this to style the link. To learn more on adding CSS to your platform, visit &lt;a href="https://docs.kianda.com/docs/low-code/global-css/">Global CSS&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Custom CSS&lt;/strong> - You can add a custom CSS class name to your link widget which you can use this to style the link. To learn more on adding CSS to your platform, visit &lt;a href="https://docs.kianda.com/low-code/global-css/">Global CSS&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Colour scheme&lt;/strong> - You can choose from six colour options for the header of the widget (Navy, Green, Blue, Amber, Red or White), if you choose to display it.&lt;/p>
@@ -1773,12 +1773,12 @@ hide_summary: true -->
 &lt;p>&lt;strong>Show header&lt;/strong> - You can choose whether or not you want the header of your Dashboard widget to be shown. You will need to select this checkbox if you want the Link widget header to be displayed, as it is not selected by default. If the widget header is not shown, the user will just see the link button.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Link widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Link widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
 &lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as a Link widget, in this case).&lt;/p>
-&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -1846,7 +1846,7 @@ hide_summary: true -->
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>QueryString parameters&lt;/strong> - QueryString parameters can be added to the URL of the destination selected. You must define a process or dashboard as a destination to add a QueryString to the URL. To learn more about query strings, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/">Query Strings&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>QueryString parameters&lt;/strong> - QueryString parameters can be added to the URL of the destination selected. You must define a process or dashboard as a destination to add a QueryString to the URL. To learn more about query strings, visit &lt;a href="https://docs.kianda.com/platform/pages/querystrings/">Query Strings&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Append Query&lt;/strong> - there are two ways the append query works, that depends whether it redirects you to a &lt;strong>Process&lt;/strong> or a &lt;strong>Dashboard&lt;/strong>. When redirecting to a &lt;strong>process&lt;/strong>, you should always check this box as the query will not automatically append to your URL. When redirecting to a dashboard and the checkbox is checked, the query will append to the existing query string. But if the checkbox is unchecked, the query string will be overwritten. This is useful when working when passing query string parameters through multiple dashboards.&lt;/p>
@@ -1864,7 +1864,7 @@ hide_summary: true -->
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-set-form-field.jpg" alt="Dashboard Link widget query string form on load rule example">&lt;/p>
 &lt;p>Once the rule has been saved, it can be viewed in the &lt;strong>On load rules&lt;/strong> section of the right side menu when the process is opened:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-query-string-onload.jpg" alt="Dashboard Link widget query string on load rule example">&lt;/p>
-&lt;p>To learn more about the &lt;strong>Set form field&lt;/strong> rule, go to &lt;a href="https://docs.kianda.com/docs/platform/rules/data/set-form-field/">Set form field rule&lt;/a> or to learn more about Rules in general, see &lt;a href="https://docs.kianda.com/docs/platform/rules/">Rules&lt;/a>.&lt;/p>
+&lt;p>To learn more about the &lt;strong>Set form field&lt;/strong> rule, go to &lt;a href="https://docs.kianda.com/platform/rules/data/set-form-field/">Set form field rule&lt;/a> or to learn more about Rules in general, see &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -1901,14 +1901,14 @@ hide_summary: true -->
 &lt;p>To edit a &lt;strong>Link widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
+&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the Link widget&amp;rsquo;s &lt;strong>Update configuration&lt;/strong> (Edit) button &lt;img src="https://docs.kianda.com/images/dashboard-update-configuration.jpg" alt="Dashboard update configuration button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-update-configuration.jpg" alt="Select Dashboard Link widget Update configuration button">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Edit button links&lt;/strong> dialog box opens, enabling you to make whatever changes you want to the link button(s) in the Link widget using the same range of options as outlined in Step 6 of &lt;a href="https://docs.kianda.com/docs/platform/pages/link#how-to-get-started">How to get started&lt;/a>.&lt;/p>
+&lt;p>The &lt;strong>Edit button links&lt;/strong> dialog box opens, enabling you to make whatever changes you want to the link button(s) in the Link widget using the same range of options as outlined in Step 6 of &lt;a href="https://docs.kianda.com/platform/pages/link#how-to-get-started">How to get started&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Making the changes you want and then click &lt;strong>OK&lt;/strong>.&lt;/p>
@@ -1920,7 +1920,7 @@ hide_summary: true -->
 &lt;h3 id="how-to-move-link-widgets">How to move Link widgets&lt;/h3>
 &lt;p>To move a &lt;strong>Link widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
-&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
+&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
 &lt;li>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/li>
 &lt;li>Drag and drop the widget where you want it to go on your dashboard.&lt;/li>
 &lt;li>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/li>
@@ -1931,7 +1931,7 @@ hide_summary: true -->
 &lt;p>To delete a &lt;strong>Link widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
@@ -1949,14 +1949,14 @@ hide_summary: true -->
 &lt;p>To update or edit your &lt;strong>Link widget&lt;/strong> settings:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-edit-widget-settings.jpg" alt="Dashboard Update widget settings button">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box will open, enabling you to make changes to any of the available options (the same options as were available in the &lt;strong>Add widget&lt;/strong> dialog box discussed in Step 4 of &lt;a href="https://docs.kianda.com/docs/platform/pages/link#how-to-get-started">How to get started&lt;/a>).&lt;/p>
+&lt;p>The &lt;strong>Edit widget&lt;/strong> dialog box will open, enabling you to make changes to any of the available options (the same options as were available in the &lt;strong>Add widget&lt;/strong> dialog box discussed in Step 4 of &lt;a href="https://docs.kianda.com/platform/pages/link#how-to-get-started">How to get started&lt;/a>).&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-edit-widget.jpg" alt="Dashboard Link widget Edit widget dialog box">&lt;/p>
 &lt;p>In our example, we could choose to reduce the width of the &lt;strong>Link widget&lt;/strong> to be 4 columns wide, by clicking to the left of the existing blue bar.&lt;/p>
 &lt;/li>
@@ -1972,26 +1972,26 @@ hide_summary: true -->
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Dashboard Link widget&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Walk-through widget</title><link>https://docs.kianda.com/platform/pages/walkthrough/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/pages/walkthrough/</guid><description>
 &lt;p>A dashboard &lt;strong>Walk-through widget&lt;/strong> can be used to walk a user through the features of a dashboard or steps in a process by displaying a series of prompts.&lt;/p>
-&lt;p>For example, if you have a Procurement dashboard page that displays key information relating to your procurement process (using &lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widgets&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widgets&lt;/a>, a &lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a> and a &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>), it could be useful to insert a Walk-through widget that can bring a new user through the various features of the page or through steps in the procurement process.&lt;/p>
+&lt;p>For example, if you have a Procurement dashboard page that displays key information relating to your procurement process (using &lt;a href="https://docs.kianda.com/platform/pages/chart/">Chart widgets&lt;/a>, &lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile widgets&lt;/a>, a &lt;a href="https://docs.kianda.com/platform/pages/link/">Link widget&lt;/a> and a &lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a>), it could be useful to insert a Walk-through widget that can bring a new user through the various features of the page or through steps in the procurement process.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;p>To add a &lt;strong>Walk-through widget&lt;/strong> to a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
+&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
 &lt;p>For this example, we&amp;rsquo;ll open a dashboard page called &amp;lsquo;All Procurement&amp;rsquo; that has several widgets on it displaying various information relating to a procurement process.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-all-procurement-example.jpg" alt="Annual Leave dashboard page example 2">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-button.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -2016,18 +2016,18 @@ hide_summary: true -->
 &lt;p>&lt;strong>Show header&lt;/strong> - You can choose whether or not you want the header of your Dashboard widget to be shown. This checkbox is &lt;em>not&lt;/em> selected by default, so select it if you want the widget header to be displayed.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Walk-through widget&lt;/strong>. You can select single or multiple Users or Groups, or a combination of the two. Use the menu on the right to filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Walk-through widget&lt;/strong>. You can select single or multiple Users or Groups, or a combination of the two. Use the menu on the right to filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
 &lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as the Walk-through widget, in this case).&lt;/p>
-&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout container&lt;/strong>: This option will only display if you have already created layout containers for your Dashboard page. Here, you can select the layout container you want to place your new &lt;strong>Walk-through widget&lt;/strong> in.&lt;/p>
-&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
+&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
 &lt;p>In this example, we can select to place our new Walk-through widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
 &lt;/li>
@@ -2148,7 +2148,7 @@ hide_summary: true -->
 &lt;p>To edit a &lt;strong>Walk-through widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available).&lt;/p>
+&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available).&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the Walk-through widget&amp;rsquo;s &lt;strong>Update configuration&lt;/strong> (Edit) button &lt;img src="https://docs.kianda.com/images/dashboard-update-configuration.jpg" alt="Dashboard update configuration button">.&lt;/p>
@@ -2167,7 +2167,7 @@ hide_summary: true -->
 &lt;h3 id="how-to-move-walk-through-widgets">How to move Walk-through widgets&lt;/h3>
 &lt;p>To move a &lt;strong>Walk-through widget&lt;/strong> on a dashboard:&lt;/p>
 &lt;ol>
-&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
+&lt;li>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/li>
 &lt;li>Select the widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/li>
 &lt;li>Drag and drop the widget where you want it to go on your dashboard.&lt;/li>
 &lt;li>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/dashboard-save-button.jpg" alt="Dashboard Save button"> in the dashboard top menu to save the changes you&amp;rsquo;ve made.&lt;/li>
@@ -2178,7 +2178,7 @@ hide_summary: true -->
 &lt;p>To delete a &lt;strong>Walk-through widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
@@ -2196,7 +2196,7 @@ hide_summary: true -->
 &lt;p>To update or edit your &lt;strong>Walk-through widget&lt;/strong> settings:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
@@ -2219,12 +2219,12 @@ hide_summary: true -->
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Dashboard Walk-through widget&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Custom dashboard widgets</title><link>https://docs.kianda.com/platform/pages/custom/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/pages/custom/</guid><description>
 &lt;p>There are currently seven pre-defined dashboard widgets that you can add to your dashboard page. However, you can also create and use your own &lt;strong>customised dashboard widgets&lt;/strong>.&lt;/p>
 &lt;p>&lt;strong>Custom dashboard widgets&lt;/strong> will only be available to add to your dashboard page from the widget menu if custom widgets have been created by an Administrator or Designer in your Kianda workspace.&lt;/p>
@@ -2232,12 +2232,12 @@ hide_summary: true -->
 &lt;p>To add a &lt;strong>Custom widget&lt;/strong> to a Kianda dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
-&lt;p>For this example, we&amp;rsquo;ll open a dashboard page called &amp;lsquo;Annual Leave&amp;rsquo; that currently has a &lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a> on it:&lt;/p>
+&lt;p>Open the relevant dashboard page. To learn how to create your first dashboard page, go to &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a dashboard page&lt;/a>.&lt;/p>
+&lt;p>For this example, we&amp;rsquo;ll open a dashboard page called &amp;lsquo;Annual Leave&amp;rsquo; that currently has a &lt;a href="https://docs.kianda.com/platform/pages/richtext/">Rich Text widget&lt;/a> and &lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a> on it:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-annual-leave-example2.jpg" alt="Annual Leave dashboard page example 2">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
+&lt;p>Click on the &lt;strong>Edit current page&lt;/strong> button from the top dashboard menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings">, &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> and &lt;strong>Add layout container&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-add-layout-container.jpg" alt="Dashboard Add layout container button"> are available):&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-edit-button.jpg" alt="Click Edit current page button to go into Edit mode">&lt;/p>
 &lt;/li>
 &lt;li>
@@ -2264,18 +2264,18 @@ hide_summary: true -->
 &lt;p>&lt;strong>Show header&lt;/strong> - You can choose whether or not you want the header of your Custom widget to be shown in the dashboard. In our example, we will de-select the &amp;lsquo;Show header&amp;rsquo; option so that the header is not shown.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Custom widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/docs/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Visible to&lt;/strong> - You can choose who will be able to see the &lt;strong>Custom widget&lt;/strong>. Select single or multiple Users or Groups, or a combination of the two. You can use the menu on the right to either filter the drop-down list by Users or Groups. To find out more about pre-defined Groups on Kianda, go to &lt;a href="https://docs.kianda.com/platform/administration/users">Users &amp;amp; Groups&lt;/a>.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
+&lt;p>&lt;strong>Note - Dashboard page security&lt;/strong>: When a dashboard page is first created, the users(s)/group(s) who will be able to view the dashboard are selected in the &amp;lsquo;&lt;strong>Visible to&lt;/strong>&amp;rsquo; option in the &lt;strong>Create dashboard page&lt;/strong> dialog box (see Step 3 in &lt;a href="https://docs.kianda.com/platform/pages#how-to-create-a-dashboard-page">How to create a Dashboard page&lt;/a>).&lt;/p>
 &lt;p>You can also edit or update this setting at any point to change who has permission to view a particular dashboard page. This higher dashboard-level security setting will take precedence over the security settings (&amp;lsquo;Visible to&amp;rsquo;) that are applied to the &lt;em>individual widgets&lt;/em> within the dashboard (such as a Custom dashboard widget, in this case).&lt;/p>
-&lt;p>See &lt;a href="https://docs.kianda.com/docs/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/docs/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
+&lt;p>See &lt;a href="https://docs.kianda.com/security/process-level-security#dashboard-security">Dashboard security&lt;/a> and &lt;a href="https://docs.kianda.com/security/process-level-security#widget-security">Widget security&lt;/a> for more information.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Layout container&lt;/strong> - This option will only display if you have already created layout containers for your Dashboard page. Here, you can select which layout container you want your new &lt;strong>Custom widget&lt;/strong> to be placed in.&lt;/p>
-&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/docs/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
+&lt;p>A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. To learn more about layout containers, go to &lt;a href="https://docs.kianda.com/platform/pages#how-to-add-layout-containers-to-a-dashboard-page">How to add layout containers to a Dashboard page&lt;/a>.&lt;/p>
 &lt;p>In this example, we can select to place our new Custom dashboard widget into one of three layout containers - Top, Middle or Bottom:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-select-layout-container.jpg" alt="Dashboard Add widget dialog box select Layout container">&lt;/p>
 &lt;/li>
@@ -2330,14 +2330,14 @@ hide_summary: true -->
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-widget-listed.jpg" alt="Custom dashboard widget listed in Widgets in Developer">&lt;/p>
 &lt;p>Designers will now be able to see and use the new custom dashboard widget from the &lt;strong>Custom&lt;/strong> section of the &lt;strong>Dashboard Widgets menu&lt;/strong> when they are adding widgets to dashboard pages.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-custom-widget-menu.jpg" alt="Custom dashboard widget example in the widget menu">&lt;/p>
-&lt;p>To learn more about how to create &lt;strong>Custom dashboard widgets&lt;/strong>, go to &lt;a href="https://docs.kianda.com/docs/getting-started/welcome/low-code#dashboard-widget">Creating a custom Dashboard widget&lt;/a>.&lt;/p>
+&lt;p>To learn more about how to create &lt;strong>Custom dashboard widgets&lt;/strong>, go to &lt;a href="https://docs.kianda.com/getting-started/welcome/low-code#dashboard-widget">Creating a custom Dashboard widget&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="how-to-edit-custom-dashboard-widgets">How to edit Custom dashboard widgets&lt;/h3>
 &lt;p>To edit a &lt;strong>Custom dashboard widget&lt;/strong> on a dashboard page:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
+&lt;p>In the dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to view the page in &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a> (in which the &lt;strong>Widget menu&lt;/strong>, &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings"> and &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin.png" alt="Bin trash button"> are available).&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the Custom dashboard widget&amp;rsquo;s &lt;strong>Update configuration&lt;/strong> (Edit) button &lt;img src="https://docs.kianda.com/images/dashboard-update-configuration.jpg" alt="Dashboard update configuration button">.&lt;/p>
@@ -2357,7 +2357,7 @@ hide_summary: true -->
 &lt;p>To move a &lt;strong>Custom widget&lt;/strong> on a dashboard page:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboard Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Select the Custom dashboard widget&amp;rsquo;s &lt;strong>drag handle&lt;/strong> button &lt;img src="https://docs.kianda.com/images/dashboard-widget-draghandle.jpg" alt="Dashboard widget drag handle button">.&lt;/p>
@@ -2371,7 +2371,7 @@ hide_summary: true -->
 &lt;p>To delete a &lt;strong>Custom dashboard widget&lt;/strong> from your dashboard:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the widget&amp;rsquo;s &lt;strong>Remove widget&lt;/strong> (Bin/Trash icon) button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon">.&lt;/p>
@@ -2386,7 +2386,7 @@ hide_summary: true -->
 &lt;p>To update or edit your &lt;strong>Custom dashboard widget&lt;/strong> settings:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/docs/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
+&lt;p>On your dashboard, click on the &lt;strong>Edit current page&lt;/strong> button &lt;img src="https://docs.kianda.com/images/edit-current-page.jpg" alt="Edit button"> in the top menu to go into &lt;a href="https://docs.kianda.com/platform/pages#dashboards-edit-mode">Dashboards Edit mode&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Click on the &lt;strong>Update widget settings&lt;/strong> (Cog) button &lt;img src="https://docs.kianda.com/images/cog-shared-process.jpg" alt="Dashboard Update widget settings button">.&lt;/p>
@@ -2409,17 +2409,17 @@ hide_summary: true -->
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about &lt;strong>Custom dashboard widgets&lt;/strong>, find out more about the other types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Platform: Conditions</title><link>https://docs.kianda.com/platform/pages/conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/pages/conditions/</guid><description>
 &lt;p>Conditions allow you to make forms and dashboards fully dynamic. They are easy to configure in the Kianda platform, using natural language to create triggers for rule execution.&lt;/p>
-&lt;p>Conditions can be applied to &lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List&lt;/a>, &lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart&lt;/a> &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/">Chat v2&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter&lt;/a> widgets.&lt;/p>
+&lt;p>Conditions can be applied to &lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile&lt;/a>, &lt;a href="https://docs.kianda.com/platform/pages/list/">List&lt;/a>, &lt;a href="https://docs.kianda.com/platform/pages/chart/">Chart&lt;/a> &lt;a href="https://docs.kianda.com/platform/pages/chartv2/">Chat v2&lt;/a> and &lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter&lt;/a> widgets.&lt;/p>
 &lt;h2 id="how-to-get-started">How to get started&lt;/h2>
 &lt;ol>
 &lt;li>
@@ -2433,10 +2433,10 @@ hide_summary: true -->
 &lt;p>In the edit dialog box of the Tile, List and Chart widgets, click on the &lt;strong>Conditions&lt;/strong> button &lt;img src="https://docs.kianda.com/images/conditions.png" alt="Conditions button"> after it opens.&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>To add conditions in the Filter widget, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter&lt;/a>.&lt;/p>
+&lt;p>To add conditions in the Filter widget, visit &lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>To add conditions to Chart v2, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/chartv2/">Chart v2&lt;/a>.&lt;/p>
+&lt;p>To add conditions to Chart v2, visit &lt;a href="https://docs.kianda.com/platform/pages/chartv2/">Chart v2&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -2477,113 +2477,12 @@ hide_summary: true -->
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>Now that you&amp;rsquo;ve learned about the &lt;strong>Conditions&lt;/strong> that can be applied to Tile, List and Chart widgets, find out more about all of the types of &lt;strong>Dashboard widgets&lt;/strong> you can add to your Kianda dashboard:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/list/">List widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Platform: Query Strings</title><link>https://docs.kianda.com/platform/pages/querystrings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/pages/querystrings/</guid><description>
-&lt;h2 id="what-is-a-query-string">What is a Query String?&lt;/h2>
-&lt;p>Before we explain how and where you can use query strings within Kianda, you&amp;rsquo;ll need to understand what a &lt;strong>query string&lt;/strong> is, to help your understanding of how to use them. To put it simply, a query string is a &lt;strong>set of characters&lt;/strong> that gets &lt;strong>appended onto the end of a URL path&lt;/strong> beginning with a question mark &lt;code>?&lt;/code>.&lt;/p>
-&lt;p>A query string contains &lt;strong>parameters&lt;/strong> also know as a key and value pair. Each key and value is separated by an &lt;strong>equal&lt;/strong> sign &lt;code>=&lt;/code>. An example of such query string with a single parameter is:&lt;/p>
-&lt;p>&lt;code>?name=John&lt;/code>&lt;/p>
-&lt;p>where &lt;code>name&lt;/code> is the key or object and &lt;code>John&lt;/code> is a particular value assigned to &lt;code>name&lt;/code>.&lt;/p>
-&lt;p>You can have &lt;strong>multiple parameters&lt;/strong> within a query string and those parameters are &lt;strong>separated by an ampersand&lt;/strong> &lt;code>&amp;amp;&lt;/code> for example:&lt;/p>
-&lt;p>&lt;code>?firstName=John&amp;amp;lastName=Rea&lt;/code>&lt;/p>
-&lt;p>A full example of a &lt;strong>URL and a query string&lt;/strong> would for instance look like this:&lt;/p>
-&lt;p>&lt;code>https://green-itr.kianda.com/some/ulr/path?firstName=John&lt;/code>&lt;/p>
-&lt;p>or&lt;/p>
-&lt;p>&lt;code>https://green-itr.kianda.com/some/ulr/path?firstName=John&amp;amp;lastName=Rea&lt;/code>&lt;/p>
-&lt;p>&lt;strong>Both&lt;/strong> of the examples above &lt;strong>classify as a query string&lt;/strong>, the only &lt;strong>difference&lt;/strong> is the amount of &lt;strong>parameters&lt;/strong> they hold, for example the latter holds two parameters which are a) &lt;code>firstName=John&lt;/code> and b) &lt;code>lastName=Rea&lt;/code>.&lt;/p>
-&lt;h2 id="query-strings-in-kianda">Query Strings in Kianda&lt;/h2>
-&lt;p>By using query string in Kianda, you are able to &lt;strong>transfer information&lt;/strong> and data easily within different areas of the platform such as &lt;a href="https://docs.kianda.com/docs/platform/pages/">Dashboards pages&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/">Processes&lt;/a>. Query strings allow you to pass data from a dashboard page into a processes or vice versa if required depending on your needs. How query strings are used in both areas are explained as follows:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#how-to-use-query-strings-in-dashboard-pages">How to use Query Strings in Dashboard pages&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#how-to-use-query-strings-in-processes">How to use Query Strings in Processes&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;h3 id="how-to-use-query-strings-in-dashboard-pages">How to use Query Strings in Dashboard pages&lt;/h3>
-&lt;p>When working with &lt;strong>query strings&lt;/strong> in Kianda dashboard pages, we need to &lt;strong>create&lt;/strong> a query string and &lt;strong>append&lt;/strong> it to the &lt;strong>URL&lt;/strong>. Once a query string is &lt;strong>created&lt;/strong> and &lt;strong>appended&lt;/strong> onto the &lt;strong>URL&lt;/strong>, you can then use them in &lt;a href="https://docs.kianda.com/docs/platform/application-designer/process/">Processes&lt;/a> or other Dashboard pages.&lt;/p>
-&lt;p>You can &lt;strong>create query strings&lt;/strong> in a dashboard by utilising the &lt;a href="https://docs.kianda.com/docs/platform/pages/filter/">Filter&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/pages/link/">Link&lt;/a> widgets which you can then use to &lt;strong>navigate&lt;/strong> from a &lt;strong>dashboard to a process&lt;/strong> or from a &lt;strong>dashboard to another dashboard&lt;/strong>, while keeping the query string in order to &lt;strong>use&lt;/strong> its &lt;strong>parameters&lt;/strong>. Read more on specific widgets under &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#link-widget-query-strings">Link Widget Query Strings&lt;/a> and &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#filter-widget-query-strings">Filter Widget Query Strings&lt;/a>.&lt;/p>
-&lt;h4 id="link-widget-query-strings">Link Widget Query Strings&lt;/h4>
-&lt;p>Within the Link widget, we create parameters and assign them values which are then added into the URL creating a query string. To learn what a query string is, go to &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#what-is-a-query-string">What is a Query String&lt;/a>.&lt;/p>
-&lt;p>To &lt;strong>create&lt;/strong> a query string using the Link widget, first, you need to create the &lt;strong>Link Widget&lt;/strong> in your dashboard, to do so follow steps 1 - 6 under &lt;a href="https://docs.kianda.com/docs/platform/pages/link/#how-to-get-started">How to get started&lt;/a> so that the &lt;strong>Edit link&lt;/strong> dialog opens as shown in the image below.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/dashboard-link-edit-link-dialog2.jpg" alt="Dashboard Link widget Edit link dialog box">&lt;/p>
-&lt;p>The &lt;strong>QueryString parameters&lt;/strong> textbox in the &lt;strong>Edit link&lt;/strong> dialog box is where you can create &lt;strong>parameters&lt;/strong> and &lt;strong>assign&lt;/strong> them &lt;strong>values&lt;/strong>. For example we want to create a &lt;strong>country&lt;/strong> parameter with a value of &lt;strong>Ireland&lt;/strong>, our &lt;strong>QueryString parameters&lt;/strong> textbox will look like this: &lt;img src="https://docs.kianda.com/images/qs-country-example.jpg" alt="Dashboard Link widget Edit link dialog box">&lt;/p>
-&lt;p>Once we click on the link in our link widget, our URL will be updated to &lt;code>https://{website-domain}/some/ulr/path?country=Ireland&lt;/code>.&lt;/p>
-&lt;p>The &lt;strong>Append query?&lt;/strong> checkbox is used when you want to have the ability for the link to add another parameter with its value to the query string. We&amp;rsquo;ll explain this concept in two examples, an &lt;strong>unchecked&lt;/strong> version and &lt;strong>checked&lt;/strong> version.&lt;/p>
-&lt;h5 id="uappend-query-uncheckedu">&lt;u>Append query Unchecked&lt;/u>&lt;/h5>
-&lt;p>&lt;img src="https://docs.kianda.com/images/qs-country-example.jpg" alt="Dashboard Link widget Edit link dialog box">&lt;/p>
-&lt;p>When the &lt;strong>Append query&lt;/strong> checkbox is &lt;strong>unchecked&lt;/strong> we have two ways the functionality will work:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>If the URL &lt;strong>does not contain a query string&lt;/strong>, the click of the link will &lt;strong>create a new&lt;/strong> query string with the given &lt;strong>parameter and value&lt;/strong>. For example if the URL looks like this before clicking the link: &lt;code>https://{website-domain}/some/ulr/path&lt;/code>. Then after the link is clicked, the URL will look like this: &lt;code>https://{website-domain}/some/ulr/path?country=Ireland&lt;/code>. The question mark is added automatically by the system so there is no need to add it into the textbox.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If the URL &lt;strong>already contains a query string&lt;/strong>, the &lt;strong>existing&lt;/strong> query string will be &lt;strong>overwritten&lt;/strong>. This means that, for example, if the URL already holds parameters in the query string such as this:&lt;/p>
-&lt;p>&lt;code>https://{website-domain}/some/ulr/path?firstName=John&amp;amp;lastName=Rea&lt;/code>.&lt;/p>
-&lt;p>After the link is clicked, the URL will be overwritten to: &lt;code>https://{website-domain}/some/ulr/path?country=Ireland&lt;/code>&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h5 id="uappend-query-checkedu">&lt;u>Append query Checked&lt;/u>&lt;/h5>
-&lt;p>&lt;img src="https://docs.kianda.com/images/qs-country-checked.jpg" alt="Dashboard Link widget Edit link dialog box">&lt;/p>
-&lt;p>When the &lt;strong>Append query&lt;/strong> checkbox is &lt;strong>checked&lt;/strong> we have two ways the functionality will work:&lt;/p>
-&lt;ul>
-&lt;li>If the URL &lt;strong>does not contain a query string&lt;/strong>, the click of the link will &lt;strong>create a new&lt;/strong> query string with the given &lt;strong>parameter and value&lt;/strong>. For example if the URL looks like this before clicking the link: &lt;code>https://{website-domain}/some/ulr/path&lt;/code>. Then after the link is clicked, the URL will look like this: &lt;code>https://{website-domain}/some/ulr/path?country=Ireland&lt;/code>. The question mark is added automatically by the system so there is no need to add it into the textbox.&lt;/li>
-&lt;li>If the URL &lt;strong>already contains a query string&lt;/strong>, the &lt;strong>parameter with its value will be appended&lt;/strong> to the query string. For example, if the URL already holds parameters in the query string such as this: &lt;code>https://{website-domain}/some/ulr/path?firstName=John&amp;amp;lastName=Rea&lt;/code>. After the link is clicked, the URL will be updated to: &lt;code>https://{website-domain}/some/ulr/path?firstName=John&amp;amp;lastName=Rea&amp;amp;country=Ireland&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;p>By using the link to navigate to a &lt;strong>process&lt;/strong>, you can then use the query string parameters by populating their values into a process field, to learn how to do so, visit &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#expression-builder-query-strings">Expression builder Query Strings&lt;/a>.&lt;/p>
-&lt;h4 id="filter-widget-query-strings">Filter Widget Query Strings&lt;/h4>
-&lt;p>To &lt;strong>create&lt;/strong> a query string using the Filter widget, first, you need to create the &lt;strong>Filter Widget&lt;/strong> in your dashboard, to do so follow steps 1 - 6 under &lt;a href="https://docs.kianda.com/docs/platform/pages/link/#how-to-get-started">How to get started&lt;/a> so that the &lt;strong>Edit link&lt;/strong> dialog opens as shown in the image below. You can use a query string with the &lt;strong>Dropdown list&lt;/strong>, &lt;strong>Radio list&lt;/strong> and &lt;strong>Free text&lt;/strong> Filter types.&lt;/p>
-&lt;p>To add a query string to your filter, you must check the &lt;strong>Enable query string?&lt;/strong> checkbox. This will allow you to specify a parameter in the textbox with the place holder text that says &amp;ldquo;Parameter name&amp;rdquo;. In the example below a parameter called &amp;lsquo;&lt;code>name&lt;/code>&amp;rsquo; is used which will have the values &amp;lsquo;&lt;code>Paul&lt;/code>&amp;rsquo;, &amp;lsquo;&lt;code>John&lt;/code>&amp;rsquo; or &amp;lsquo;&lt;code>David&lt;/code>&amp;rsquo; assigned to it by user interaction.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/enable-query-string.jpg" alt="Filter widget query string example">&lt;/p>
-&lt;p>The &lt;strong>Auto update URL&lt;/strong> checkbox is used to automatically update URL in real time when an option is selected and therefore it is recommended if other dashboard widgets require query strings based on the input of the filter.&lt;/p>
-&lt;p>When working with a &lt;strong>Dropdown&lt;/strong> or a &lt;strong>Radio&lt;/strong> list filter type, the specified parameter name will hold the value of the option you select. For example if the parameter name is &lt;code>name&lt;/code> and the option &lt;code>John&lt;/code> is chosen, the query string will be &lt;code>?name=John&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/filter-example2.jpg" alt="Filter widget query string example">&lt;/p>
-&lt;p>When working with a Free text filter type, the idea of the parameter name is exactly the same as explained when working with &lt;strong>Dropdown&lt;/strong> or &lt;strong>Radio&lt;/strong> list, the only difference is that the value of your parameter will be the text you type into the filter search bar. The URL will be updated when you click away from the filter search bar which signals the system to update the query string parameter:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/free-text-filter-example.jpg" alt="Free text filter widget query string example">&lt;/p>
-&lt;h3 id="how-to-use-query-strings-in-processes">How to use Query Strings in Processes&lt;/h3>
-&lt;p>To use query strings in a process, you first need to create query strings from a dashboard and pass parameters from your dashboard into a process, to learn more on how create query strings in a dashboard, see &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#how-to-use-query-strings-in-dashboard-pages">How to use Query Strings in Dashboard pages&lt;/a> above.&lt;/p>
-&lt;p>You can use query strings within a process in a number of ways namely:&lt;/p>
-&lt;p>a) retrieve the query string parameters from the URL within a process using an expression builder which is explained in more detail under &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#expression-builder-query-strings">Expression builder Query Strings&lt;/a>&lt;/p>
-&lt;p>b) create query string parameter from a process and pass it on into a dashboard using the &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/close-form/">Close rule&lt;/a> available from the &lt;strong>Form actions&lt;/strong> set of rules. Passing query strings using the close rule is explained in more detail under &lt;a href="https://docs.kianda.com/docs/platform/pages/querystrings/#close-rule-query-strings">Close rule Query Strings&lt;/a>.&lt;/p>
-&lt;h4 id="expression-builder-query-strings">Expression builder Query Strings&lt;/h4>
-&lt;p>&lt;img src="https://docs.kianda.com/images/expression-builder.jpg" alt="Expression builder">&lt;/p>
-&lt;p>To retrieve a query string parameter from the URL, you can use the &lt;strong>expression builder&lt;/strong> which is available for use using the &lt;strong>Set form&lt;/strong> field. Typically the retrieval of a query string parameter is done using in the &lt;strong>Onload rules section&lt;/strong> of a process so that the query string parameter will automatically (onload of a process) load the parameters value into a desired process field. To achieve this follow the steps below:&lt;/p>
-&lt;ol>
-&lt;li>Attach a &lt;strong>Set form field&lt;/strong> into the &lt;strong>Onload rules&lt;/strong> and select a form field from your process in the &lt;strong>From field to set&lt;/strong> dropdown.&lt;/li>
-&lt;li>Open the expression builder using the Ellipsis button:&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/set-form-field-exp-builder.jpg" alt="Expression builder">&lt;/p>
-&lt;ol start="2">
-&lt;li>
-&lt;p>In the Expression builder dialog box click on the &lt;strong>Reference&lt;/strong> button &lt;img src="https://docs.kianda.com/images/reference.png" alt="reference button">to open a menu of reference to functions available in the expression builder.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Copy the &lt;strong>QueryString(&amp;lsquo;parameter&amp;rsquo;)&lt;/strong> function and paste it into the expression text box.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Replace the &amp;lsquo;parameter&amp;rsquo; text within the brackets of the function with the query string parameter you want to retrieve. For example if your URL contains a &lt;code>name&lt;/code> parameter like this: &lt;img src="https://docs.kianda.com/images/URL-qs.jpg" alt="Expression builder">. Then to retrieve the value, the expression textbox will look as follows:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/qs-expbuilder-name.jpg" alt="Expression builder">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>OK&lt;/strong> in the expression builder dialog box.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h4 id="close-rule-query-strings">Close rule Query Strings&lt;/h4>
-&lt;p>&lt;img src="https://docs.kianda.com/images/rule-close-return-dashboard.jpg" alt="Return to dashboard option">&lt;/p>
-&lt;p>You can create query strings using the &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/close-form/">Close rule&lt;/a> available from the &lt;strong>Action forms&lt;/strong> set of rules. The close rule query strings are typically used when &lt;strong>navigating&lt;/strong> to a &lt;strong>dashboard&lt;/strong> when a process instance is completed and submitted. The idea is that when you&amp;rsquo;re navigated to a dashboard after completing a process, you can pass some information from the process into a dashboard to display certain data in that dashboard. You can also use the close rule to start a new &lt;strong>process&lt;/strong> and pass some data from the process itself to &lt;strong>populate&lt;/strong> process fields that you&amp;rsquo;re starting. Passing parameters in both scenarios works the same:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>In the &lt;strong>On form close navigate to&lt;/strong> option, select &lt;strong>Return to a dashboard&lt;/strong> or &lt;strong>Go to process&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the dropdown above the &lt;strong>Query string parameters&lt;/strong> option, select the respective dashboard or process you wish to navigate to. To learn more about the &lt;strong>close rule&lt;/strong>, visit &lt;a href="https://docs.kianda.com/docs/platform/rules/form-actions/close-form/">Close rule&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the Query string parameters dropdown/textbox you can select a process field as a parameter. This will force the system to use the fields unique name as a parameter name and the value of that field will be the value of the parameter. For example, when a fields unique name is &lt;code>firstName&lt;/code> and the value of that field is &lt;code>John&lt;/code>, the final URL will look something like this: &lt;code>https://green-itr.kianda.com/some/ulr/path?firstName=John&lt;/code>. See image below for the setup of the example:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/qs-close-rule-example.jpg" alt="Query string and close rule example">&lt;/p>
-&lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/richtext/">Rich Text widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/link/">Link widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/walkthrough/">Walkthrough widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/custom/">Custom dashboard widget&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
