@@ -46,7 +46,7 @@ A REST API data connector can be configured by users with the role **Administrat
 ![Enable Certificate Authentication](/images/rest-cert-authentication.jpg)
 
 
-7. Under the Service details section, is a the **REST Methods** section. If there are any existing methods created, for example to find and retrieve particular information using HTTP GET, the method will be listed here. Go to [REST Methods](#rest-methods) to find out more about how to add a method. To find out more about Kianda REST APIs, go to [APIs](/docs/apis/).
+7. Under the Service details section, is a the **REST Methods** section. If there are any existing methods created, for example to find and retrieve particular information using HTTP GET, the method will be listed here. Go to [REST Methods](#rest-methods) to find out more about how to add a method. To find out more about Kianda REST APIs, go to [APIs](/apis/).
 
 8. Under the REST Methods on the REST Service details page, there is a check box to **Use Kianda Cloud Connect?** If you check this checkbox it gives you an option to Download Kianda Cloud Connect. Click on **Download Kianda Cloud Connect** to download a zip file.
 
@@ -64,7 +64,7 @@ A REST API data connector can be configured by users with the role **Administrat
 
 10. Click on **Save** ![Save connection button](/images/save-connection.jpg)to save the connection and you will receive a notification saying **Details saved successfully**.
 
-11. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
+11. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/platform/connectors/#setting-security-for-data-sources) for more details.
 
 Here is an example of a data connector for a REST Service called 'Cat facts'. We will use this example to create a [REST method](#rest-methods), see section below.
 
@@ -165,9 +165,9 @@ To see how 'catfacts' are mapped into Kianda processes, create a new process, ad
 
 1. To create a new process by going to the left-hand side menu > **Administration** > **Designer** and click on **Add new** ![Add new button](/images/addnew.png) and fill out details for the process, such as a **Title** and **Description**. Click on **OK** when complete.
 
-2. Kianda Designer opens and in the first form, **form1**, add in a new text box by going to the left-hand pane and click on **Controls** > **Input** > **Text box**. This field will hold the value of the 'fact' from catfacts. To read more about Input controls go to [Input controls](/docs/platform/controls/input/).
+2. Kianda Designer opens and in the first form, **form1**, add in a new text box by going to the left-hand pane and click on **Controls** > **Input** > **Text box**. This field will hold the value of the 'fact' from catfacts. To read more about Input controls go to [Input controls](/platform/controls/input/).
 
-3. Add a button to initiate the call from catfacts by going to the left-hand pane **Controls** > **Actions** > **Button**. Give the button a **title** for example 'Get Cat Fact', and choose **No** for **Show in form body** so the button appears at the bottom of the form. To read more about Action controls go to [Actions](/docs/platform/controls/actions/).
+3. Add a button to initiate the call from catfacts by going to the left-hand pane **Controls** > **Actions** > **Button**. Give the button a **title** for example 'Get Cat Fact', and choose **No** for **Show in form body** so the button appears at the bottom of the form. To read more about Action controls go to [Actions](/platform/controls/actions/).
 
    ![Get cat fact button](/images/get-cat-fact-button.jpg)
 
@@ -185,7 +185,7 @@ To see how 'catfacts' are mapped into Kianda processes, create a new process, ad
 
    ![Results mapping example for 'facts'](/images/results-mapping-example.jpg)
 
-9. Add Error mapping if desired. Click on the links to read more about [Error mapping](/docs/platform/rules/general/success-error-mapping/) and [Find items rule](/docs/platform/rules/data/find-items/).
+9. Add Error mapping if desired. Click on the links to read more about [Error mapping](/platform/rules/general/success-error-mapping/) and [Find items rule](/platform/rules/data/find-items/).
 
 10. Save the process by clicking on the **Save** button ![Save button](/images/save-button.jpg) and preview the process by clicking on **Preview** ![Preview button](/images/preview.png). In the previewed instance, click on the 'Get Cat Fact' button to populate the textbox.
 
@@ -195,9 +195,9 @@ To see how 'catfacts' are mapped into Kianda processes, create a new process, ad
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-Your **REST Service** is now set up and ready to be used in your **processes**. Check out the following article on how to implement a **REST Service** in order to [refresh an Access token](/docs/platform/connectors/rest/rest-access-token/).
+Your **REST Service** is now set up and ready to be used in your **processes**. Check out the following article on how to implement a **REST Service** in order to [refresh an Access token](/platform/connectors/rest/rest-access-token/).
 
-To read more about APIs, go to [APIs](/docs/apis/).
+To read more about APIs, go to [APIs](/apis/).
 
-To read more about processes and forms, go to [Application designer](/docs/platform/application-designer/designer/).
+To read more about processes and forms, go to [Application designer](/platform/application-designer/designer/).
 

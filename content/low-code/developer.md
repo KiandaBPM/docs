@@ -4,7 +4,7 @@ weight: 9
 typora-root-url: ..\..\..\..\static
 ---
 
-Kianda **Developer** is available to **administrators** and those users with the role **Developer**. The Developer function is found in the left-hand side pane or on the top right toolbar depending on the [chosen orientation](/docs/platform/administration/subscription/#general-settings), under **Administration**. The function allows you to create customised field, rule, dashboard and data connector widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.
+Kianda **Developer** is available to **administrators** and those users with the role **Developer**. The Developer function is found in the left-hand side pane or on the top right toolbar depending on the [chosen orientation](/platform/administration/subscription/#general-settings), under **Administration**. The function allows you to create customised field, rule, dashboard and data connector widgets using pre-defined widget UI and code templates that you can add your own code to, to create the effects you want.
 
 You can also quickly use Kianda **Developer** to add webhooks, providing an efficient way to push GET requests to other applications in real-time as the Kianda process(es) runs and avoiding the need to poll for data. 
 
@@ -81,7 +81,7 @@ To start using **Developer**:
 
    Inside the external connections page, you will see a list of all current connections within your platform:
 
-   1. To create a new customised connector click on the **New Connector** button ![New connector button](/images/new-connector-button.jpg) and populate the four tabs that appear. Details on how to create a customised connector are found at [Custom connectors](/docs/low-code/custom-connector/). 
+   1. To create a new customised connector click on the **New Connector** button ![New connector button](/images/new-connector-button.jpg) and populate the four tabs that appear. Details on how to create a customised connector are found at [Custom connectors](/low-code/custom-connector/). 
 
    2. You can search for a specific connector by typing into the connector **Search bar**, found above the list of connectors on the top right. Click on the **cancel** button <img src="/images/cancel-btn.png" alt="Cancel button" style="zoom:80%;" /> to clear your search query.
 
@@ -110,7 +110,7 @@ To start using **Developer**:
 
    ### Global Styling
 
-   The fourth section is **Global Styling**, where you can edit your global CSS file, allowing you to fine tune your subscription's look and feel. This section is different from the [Look and Feel](/docs/platform/administration/subscription/#look-and-feel) section within Subscription as it provides a larger code editing screen amongst other features.
+   The fourth section is **Global Styling**, where you can edit your global CSS file, allowing you to fine tune your subscription's look and feel. This section is different from the [Look and Feel](/platform/administration/subscription/#look-and-feel) section within Subscription as it provides a larger code editing screen amongst other features.
 
    <img src="/images/global-styling-btn.jpg" alt="custom elements button" style="zoom:50%;" />
 
@@ -132,7 +132,7 @@ To start using **Developer**:
 
    ### Global Resources
 
-   The fifth section is **Global Resources**, where you can edit your global JavaScript file, allowing you to fine tune your subscription's global functionality. This section is different from the [Subscription Details](/docs/platform/administration/subscription/#subscription-details) section within Subscription as it provides a larger code editing screen amongst other features.
+   The fifth section is **Global Resources**, where you can edit your global JavaScript file, allowing you to fine tune your subscription's global functionality. This section is different from the [Subscription Details](/platform/administration/subscription/#subscription-details) section within Subscription as it provides a larger code editing screen amongst other features.
 
    <img src="/images/global-resources-btn.jpg" alt="custom elements button" style="zoom:50%;" />
 
@@ -158,7 +158,7 @@ To start using **Developer**:
 
    <img src="/images/developer-docs-btn.jpg" alt="custom elements button" style="zoom:50%;" />
 
-   Clicking on this link will open a new tab and navigate you specifically to the [Low-Code Development](/docs/low-code/) section of the docs.
+   Clicking on this link will open a new tab and navigate you specifically to the [Low-Code Development](/low-code/) section of the docs.
 
 
 
@@ -184,6 +184,6 @@ Statements like **if** and **unless** are implemented as built-in helpers. Helpe
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To read more about Developer and how to use the platform for low-code development, go to [Low code development](/docs/low-code/).
+To read more about Developer and how to use the platform for low-code development, go to [Low code development](/low-code/).
 
-To find out about help and support, go to [Help](/docs/platform/general/help/).
+To find out about help and support, go to [Help](/platform/general/help/).

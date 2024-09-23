@@ -42,7 +42,7 @@ In general there are three key steps to build a process in an agile manner:
 
 ## Creating your first process ##
 
-To help you plan your process, go to [Plan your process](/docs/getting-started/create-first-process/plan-your-process/) to get started. When you have planned what you want to do, it couldn't be simpler to start creating your new process by following the steps below:
+To help you plan your process, go to [Plan your process](/getting-started/create-first-process/plan-your-process/) to get started. When you have planned what you want to do, it couldn't be simpler to start creating your new process by following the steps below:
 
 1. Using your **Administrator** or **Design business process** role, go to the left- hand **side menu** and click on **Administration** > **Designer**.
 
@@ -74,7 +74,7 @@ To help you plan your process, go to [Plan your process](/docs/getting-started/c
 
    - **Administrators** - these are **process administrators** or people who will be able to **change the process design**. Process administrators must have the role **administrator** or **design business process** so that they can access **Designer** to modify the process design. Choose from **Users** and/or **Groups** in the drop-down list, or leave blank to allow all those with an administrator role, to have access to this process design. 
 
-     Users and groups must be already defined in the system by a user with an **administrator** role, see [User management](/docs/platform/administration/users/).
+     Users and groups must be already defined in the system by a user with an **administrator** role, see [User management](/platform/administration/users/).
 
      Note that there is a limit of 10 names in the drop-down list, displayed alphabetically from the list of users and groups, but you can type in a user or group name to see them appear in the list, for example as shown below.
 
@@ -112,9 +112,9 @@ The key rules related to designing forms for user interaction are:
 
 1. Forms are **assignable**, this means that **only a form assignee can edit** a particular form in a process instance. The form assignee can be a combination of users and groups.
 2. When a form is created, as a designer you can configure form owners. **Only form owners can edit** a given form in a process instance by default. Any other user with access to view the form will see it in read-only mode.
-3. Processes that have several steps use the concept of **current form**, where only the current form is **editable** in a process instance. Forms become the current form as the process executes sequentially. Rules like [Go to form](/docs/platform/rules/workflow/go-to-form/) can be used to make forms the current form. Other forms can be configured to **activate with** the current form. This means it is also possible to edit these forms at the same point in process execution and togther the forms form a form group.
+3. Processes that have several steps use the concept of **current form**, where only the current form is **editable** in a process instance. Forms become the current form as the process executes sequentially. Rules like [Go to form](/platform/rules/workflow/go-to-form/) can be used to make forms the current form. Other forms can be configured to **activate with** the current form. This means it is also possible to edit these forms at the same point in process execution and togther the forms form a form group.
 
-The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal [business rules](/docs/platform/rules/) such as [Assign form](/docs/platform/rules/workflow/assign-form/), [Go to form](/docs/platform/rules/workflow/go-to-form/) and [Submit form](/docs/platform/rules/form-actions/submit-form/) to dynamically control the ability for end-users to edit a particular form or a section of a form.
+The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal [business rules](/platform/rules/) such as [Assign form](/platform/rules/workflow/assign-form/), [Go to form](/platform/rules/workflow/go-to-form/) and [Submit form](/platform/rules/form-actions/submit-form/) to dynamically control the ability for end-users to edit a particular form or a section of a form.
 
 <video width="100%" style="width:100%" controls>
     <source src="/videos/How to add new form 2.mp4">
@@ -124,7 +124,7 @@ The rules above work together to determine if the form is in edit mode or displa
 
 ### How to add a form
 
-1. To get started with processes, go to the left-hand side menu > **Administration** >  **Designer**. There are options to import processes, use the App Store or create a new process from scratch by clicking on the **Add new** button. To learn more about this, see [How to get started with processes](/docs/platform/application-designer/designer/#how-to-get-started).
+1. To get started with processes, go to the left-hand side menu > **Administration** >  **Designer**. There are options to import processes, use the App Store or create a new process from scratch by clicking on the **Add new** button. To learn more about this, see [How to get started with processes](/platform/application-designer/designer/#how-to-get-started).
 
 2. When you open a process or create a new process you are automatically brought into **Kianda Designer**. In new processes, by default a **new form** is automatically added to your process called **form 1**. 
 
@@ -132,11 +132,11 @@ The rules above work together to determine if the form is in edit mode or displa
 
    
 
-3. The form is automatically selected, and **controls** and **rules** are ready to be added using the options in the left-hand pane. You can edit the form by clicking on the **edit/pen** button ![Edit button](/images/penicon.png) highlighted above. This will open an **Edit form** dialog box, see [Editing forms](/docs/platform/application-designer/designer/#editing-forms) for more details.
+3. The form is automatically selected, and **controls** and **rules** are ready to be added using the options in the left-hand pane. You can edit the form by clicking on the **edit/pen** button ![Edit button](/images/penicon.png) highlighted above. This will open an **Edit form** dialog box, see [Editing forms](/platform/application-designer/designer/#editing-forms) for more details.
 
 4. To add another form, click on the **Add form** button at the top of the page.
 
-5. A **new form** dialog box appears. See [Editing forms](/docs/platform/application-designer/designer/#editing-forms) for more details for example how to add form owners and enable quick actions. 
+5. A **new form** dialog box appears. See [Editing forms](/platform/application-designer/designer/#editing-forms) for more details for example how to add form owners and enable quick actions. 
 
 As you create forms, there are some important features to note that will help you get the most out of your form design:
 
@@ -181,7 +181,7 @@ The following are some of the common **properties** of input fields. Field prope
 
 In addition to the field properties, each field has it's own settings that you can change simply by selecting the field and clicking on the **Edit/Pen** button ![Edit/pen button](/images/penicon.png). This will open an **Edit field** dialog box where you can change settings.
 
-In total there are 16 predefined field widgets, see [Categories of fields](#categories-of-fields) below. In case none of these satisfies your specific needs and if you have some level of [development](/docs/platform/administration/developer/) skills you can always create your custom field widget.
+In total there are 16 predefined field widgets, see [Categories of fields](#categories-of-fields) below. In case none of these satisfies your specific needs and if you have some level of [development](/platform/administration/developer/) skills you can always create your custom field widget.
 
 
 
@@ -230,7 +230,7 @@ Using the **List field** provides the opportunity to define an unlimited level c
 
 ![Dropdown cascading lists](/images/dropdown-cascading-lists.jpg)
 
-To achieve this effect, you can connect your list to a data source, for example a SharePoint list or table. Then use the list data source [conditions](/docs/platform/rules/general/add-conditions/) options to filter content based on a parent list. 
+To achieve this effect, you can connect your list to a data source, for example a SharePoint list or table. Then use the list data source [conditions](/platform/rules/general/add-conditions/) options to filter content based on a parent list. 
 
 ![Cascading dropdown](/images/cascading-list-conditions.jpg)
 
@@ -269,7 +269,7 @@ As with editing the layout of fields, it is easy to validate input, making field
 
 Simply enable the checking the **Required** property in this way will automatically prevent users from submitting forms with an empty field. The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.
 
-Another way of validating input is to use the **validate input rule** which allows for greater flexibility in terms of when or what to validate. [Rules](#rules) are explained below, but click on [Validate input](/docs/platform/rules/form-actions/validate-input/) for more information specifically on this rule.
+Another way of validating input is to use the **validate input rule** which allows for greater flexibility in terms of when or what to validate. [Rules](#rules) are explained below, but click on [Validate input](/platform/rules/form-actions/validate-input/) for more information specifically on this rule.
 
 In addition to changing field properties, you can configure [settings](#settings) to make processes perform the way you want.
 
@@ -326,9 +326,9 @@ The following are some of the key options of the anonymous link rule:
 ## Rules
 Kianda **rules** allow for dynamic actions within processes that can be used to change the workflow, send automated emails or notifications, as well as manipulate data in data sources.
 
-There are 60 predefined rules, across 10 categories that allow you to drive your business processes in a myriad of ways. Go to the [Rules](/docs/platform/rules/) section to navigate to each of the different field categories.
+There are 60 predefined rules, across 10 categories that allow you to drive your business processes in a myriad of ways. Go to the [Rules](/platform/rules/) section to navigate to each of the different field categories.
 
-Rules can be driven by [conditions](/docs/platform/rules/general/add-conditions/) for example based on user input, form fields will dynamically appear or hide according to how the user navigates a form, and all rules are **actions** which can involve for example retrieving values from a datasource, storing data in a field or automating user addition to Salesforce.
+Rules can be driven by [conditions](/platform/rules/general/add-conditions/) for example based on user input, form fields will dynamically appear or hide according to how the user navigates a form, and all rules are **actions** which can involve for example retrieving values from a datasource, storing data in a field or automating user addition to Salesforce.
 
 One example of rules already mentioned is the **Anonymous form link** rule which will dynamically generate and send a link from a form in a process to an external user, without the need for a Kianda account. 
 
@@ -340,13 +340,13 @@ If the current suite of predefined rules do not meet your needs, you can use Kia
 
 In case any of the previously mentioned control types don't suit, you can use Kianda to build your own customised control widgets. The Custom fields section provides access to fields that are built for extensibility of Kianda capabilities. It is particularly useful in those situations where existing fields or rules will not provide the required functionality.
 
-Custom fields have the purpose of providing a user interface for end-users. These **custom fields can be built by developers**. It allows a developer to build a reusable component that would then be used by process designers in real processes. Check-out the [development](/docs/getting-started/welcome/low-code/) section for more details on how to build custom widgets in Kianda.
+Custom fields have the purpose of providing a user interface for end-users. These **custom fields can be built by developers**. It allows a developer to build a reusable component that would then be used by process designers in real processes. Check-out the [development](/getting-started/welcome/low-code/) section for more details on how to build custom widgets in Kianda.
 
 
 
 ### Advanced techniques
 
-Like the [cascading drop-down list](/docs/platform/application-designer/#cascading-dropdown-lists) discussed above, several other advanced scenarios can be easily configured in Kianda. Here is a short-list to give you an idea what is possible:
+Like the [cascading drop-down list](/platform/application-designer/#cascading-dropdown-lists) discussed above, several other advanced scenarios can be easily configured in Kianda. Here is a short-list to give you an idea what is possible:
 
 - **Repeating section** - A repeating section can be created by adding a **panel** to a table field. This table can be configured to include a single column made of the panel that itself will include the repeating fields of your repeating section.
 

@@ -61,8 +61,8 @@ If rules have already been created
 
 You can view rule [conditions](#conditions) by clicking on **Edit conditions** and actions to be performed as part of the rule are under **Action**. Other features to note in the dialog box are:
 
-- **Expression** button ![Expression button](/images/ellipsis_frame.png) used to add expressions to rules so that dynamic values can be returned based on calculations or form IDs, see [Expressions](/docs/platform/rules/general/expression-builder/) for more details.
-- **Mapping** - mapping is used within rule actions, for example in the **Set form field** rule shown in the image above, the rule updates a form field based on a given value or expression. In many other fields mapping can be used to determine **success** or **error** during rule execution, see [Success and error mapping](/docs/platform/rules/general/success-error-mapping/) for more details. 
+- **Expression** button ![Expression button](/images/ellipsis_frame.png) used to add expressions to rules so that dynamic values can be returned based on calculations or form IDs, see [Expressions](/platform/rules/general/expression-builder/) for more details.
+- **Mapping** - mapping is used within rule actions, for example in the **Set form field** rule shown in the image above, the rule updates a form field based on a given value or expression. In many other fields mapping can be used to determine **success** or **error** during rule execution, see [Success and error mapping](/platform/rules/general/success-error-mapping/) for more details. 
 
 
 
@@ -133,7 +133,7 @@ The rule order refers to the order of execution of multiple rules. To change the
    **Note:** Rule order becomes important when the output of one rule impacts the execution of another, for example if a process remains 'open' because a user must perform a particular action, then it is useful to have an automated email reminder sent to the user while the process is open. For example 
    the order of rules on a **Submit** button could be: Set Status, Send Email, Submit, Save, Close, whereby the status of the process instance is set first, before an automated email and then the form shutdown rules of Submit, Save and Close occur.
 
-   To read more about multiple rules, go to [Multiple rules](/docs/platform/rules/general/multiple-rules/).
+   To read more about multiple rules, go to [Multiple rules](/platform/rules/general/multiple-rules/).
    
    
 
@@ -150,7 +150,7 @@ To configure a rule to conditionally execute an action:
 3. Click on **Edit conditions** button within the rule.
 4. Add the conditions that satisfy your scenario. Multiple conditions can be grouped with condition groups.
 
-For more information on Conditions, go to the [Conditions](/docs/platform/rules/general/add-conditions/) page.
+For more information on Conditions, go to the [Conditions](/platform/rules/general/add-conditions/) page.
 
 
 
@@ -162,7 +162,7 @@ Custom rules have the purpose of providing a user interface for the end-users. I
 
 It allows a developer to quickly build a reusable component that would then be used by process designers in real processes.
 
-Check-out the [development](/docs/getting-started/welcome/low-code/) section for more details on how to build custom widgets in Kianda.
+Check-out the [development](/getting-started/welcome/low-code/) section for more details on how to build custom widgets in Kianda.
 
 
 

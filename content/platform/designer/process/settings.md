@@ -16,9 +16,9 @@ There are a number of properties and settings that you can implement to your pro
 
 Settings are available from the right-hand pane and give you the ability to:
 
-- [Import processes](/docs/how-to/reuse-or-clone-process-elements/)
+- [Import processes](/how-to/reuse-or-clone-process-elements/)
 
-- View [Version history](/docs/platform/application-designer/designer/version-history/)
+- View [Version history](/platform/application-designer/designer/version-history/)
 
 - Change [Process settings](#process-settings) ![Settings button](/images/settings.png).
 
@@ -30,7 +30,7 @@ Settings are available from the right-hand pane and give you the ability to:
 
 - Delete a form by selecting a form, clicking on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **Ok** after you have reviewed the form title and you are sure this is what you want to delete. Click on **Cancel** if you wish to cancel the deletion.
 
-- View and edit [Form properties](/docs/platform/application-designer/process/properties/) and [rules](/docs/platform/rules/).
+- View and edit [Form properties](/platform/application-designer/process/properties/) and [rules](/platform/rules/).
 
   
 
@@ -104,7 +104,7 @@ Within process settings, there are four tabs to navigate to:
      - **Force authenticated user to log out** - options are a) Yes or b) No to force the authenticated user to log out once the form is submitted. If **No** is selected, you can choose to **Redirect authenticated user to**:
        - **Process URL**
        - **Workspace Home** 
-       - The result is a globally available link to allow external users to create a **new instance**. You can use the [**Anonymous form link Rule**](/docs/platform/rules/communications/anonymous-form-link/) to generate a new anonymous link at runtime that will point to an **existing process instance** that can be shared with external users.
+       - The result is a globally available link to allow external users to create a **new instance**. You can use the [**Anonymous form link Rule**](/platform/rules/communications/anonymous-form-link/) to generate a new anonymous link at runtime that will point to an **existing process instance** that can be shared with external users.
 
 When you are finished editing the process settings:
 
@@ -115,5 +115,5 @@ When you are finished editing the process settings:
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-- To learn more about rules and controls that can be applied to forms go to [**Controls**](/docs/platform/controls/) and [**Rules**](/docs/platform/rules/). 
-- To learn more about properties, go to [**Properties**](/docs/platform/application-designer/process/properties/).
+- To learn more about rules and controls that can be applied to forms go to [**Controls**](/platform/controls/) and [**Rules**](/platform/rules/). 
+- To learn more about properties, go to [**Properties**](/platform/application-designer/process/properties/).

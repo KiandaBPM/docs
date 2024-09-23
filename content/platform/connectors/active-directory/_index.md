@@ -11,7 +11,7 @@ The Kianda AD connector uses Lightweight Directory Access Protocol (**LDAP**) al
 
 ## When to use
 
-Having an AD connector will allow you to access and update information that is stored in your AD database from your Kianda subscription. You will be able to use **User-related** AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the [Data](/docs/platform/rules/data/) rules that are predefined within Kianda.
+Having an AD connector will allow you to access and update information that is stored in your AD database from your Kianda subscription. You will be able to use **User-related** AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the [Data](/platform/rules/data/) rules that are predefined within Kianda.
 
 
 
@@ -35,7 +35,7 @@ You must create an **account in your AD service** which will serve as the connec
 this account must correspond. Note that this account can only be used to manage the connector for one subscription and **cannot** be used in **more than one Kianda subscriptions** as Kianda Cloud Connect will not be able to tell which subscription you want to connect to.
 
 
-To learn more about how to download and create a connection between your Kianda subscription and Kianda Cloud Connect go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
+To learn more about how to download and create a connection between your Kianda subscription and Kianda Cloud Connect go to [Kianda Cloud Connect](/platform/connectors/kianda-cloud-connect/).
 
 
 
@@ -55,7 +55,7 @@ To learn more about how to download and create a connection between your Kianda 
    - **Directory path** - enter in the path to the directory. The path must be **LDAP or GC** (Global Connector).
    - **AD User** - enter in the domain and user that you want to connect to. To specify the domain and user correctly use the following format: `<domain>/<username>`
    - **Password** - enter in the password used to login for the desired user.
-   - **Use Kianda Cloud Connect** - by default this option is enabled, the cloud connect is used to **create a connection** between the **Active Directory connector** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/). 
+   - **Use Kianda Cloud Connect** - by default this option is enabled, the cloud connect is used to **create a connection** between the **Active Directory connector** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/platform/connectors/kianda-cloud-connect/). 
      - **Connectors** - displays all available connector PC's that have a **connection established** with your **Kianda** subscription. This option is used to select the PC **connection** that is running the Active Directory server.
    - **Status** - represents the current status of the connection.
      - **incomplete** - means that the details of the connector were not fully completed.
@@ -70,7 +70,7 @@ To learn more about how to download and create a connection between your Kianda 
 
 5. Click on **Save** ![Save connection button](/images/save-connection.jpg) to save the connection and you will receive a notification saying **Details saved successfully**.
 
-6. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
+6. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/platform/connectors/#setting-security-for-data-sources) for more details.
 
 7. Click on **Close** to close the details page and return to the data source management main view.
 
@@ -78,11 +78,11 @@ To learn more about how to download and create a connection between your Kianda 
 
 ## Active Directory Remote Procedures
 
-Active Directory functions are **User-related** **remote procedures** and to use them you have to use the [Data](/docs/platform/rules/data/) rules that are predefined within Kianda. The remote procedures that are available are listed below. To give you an idea of how they work, some of these procedures are detailed on other pages, click on the links below to find out more.
+Active Directory functions are **User-related** **remote procedures** and to use them you have to use the [Data](/platform/rules/data/) rules that are predefined within Kianda. The remote procedures that are available are listed below. To give you an idea of how they work, some of these procedures are detailed on other pages, click on the links below to find out more.
 
 ![Active Directory list of functions](/images/ad-functions.jpg)
 
-- [**FindUsers**](/docs/platform/connectors/active-directory/find-users) - allows you to look for a user within your directory by defining a user attribute as a means of searching for them.
+- [**FindUsers**](/platform/connectors/active-directory/find-users) - allows you to look for a user within your directory by defining a user attribute as a means of searching for them.
 - **IsMemberOf** - allows you to see if a user is a member of a group. You need to specify both a user and a group.
 - **CreateUser** - allows you to create a user within your directory. You need to specify a **username**, **first name, last name, email and password** to create a user successfully.
 - **UpdateUser** - allows you to update user attributes. You need to specify what user to update by providing their **sAMAccountName** and **distinguishedName** (DN).
@@ -98,11 +98,11 @@ Lets take the **CreateUser** function as an example to show how these functions 
 
    ![Active Directory list of functions](/images/ad-create-user.jpg)
 
-2. We need to create at least five fields that will be used to provide a value as the required properties. We will use a [text box field](/docs/platform/controls/input/textbox/) for each one:
+2. We need to create at least five fields that will be used to provide a value as the required properties. We will use a [text box field](/platform/controls/input/textbox/) for each one:
 
    ![Required fields for the required properties](/images/ad-fields.jpg)
 
-3. Use the [create item](/docs/platform/rules/data/create-item/) rule to use the function. We need to map the text box fields to the appropriate properties as follow:
+3. Use the [create item](/platform/rules/data/create-item/) rule to use the function. We need to map the text box fields to the appropriate properties as follow:
 
    ![Mapping the required fields to create item rule](/images/ad-create-user-rule.jpg)
 
@@ -110,11 +110,11 @@ You can apply the create item rule to a button, for example, the submit button. 
 
 ### AD Use case example - User synchronisation
 
-Using AD you can perform user synchronisation for user groups in Kianda. For example by creating a specific group in Kianda, we can allow Group member synchronisation for that group, by choosing the option shown in the image below with, using the AD data connector. See [Groups](/docs/platform/administration/users/#groups) for more details on group creation. 
+Using AD you can perform user synchronisation for user groups in Kianda. For example by creating a specific group in Kianda, we can allow Group member synchronisation for that group, by choosing the option shown in the image below with, using the AD data connector. See [Groups](/platform/administration/users/#groups) for more details on group creation. 
 
 ![Group member sync](/images/group-member-sync.jpg)
 
-In the example above, the Kianda environment is synchronised with AD, so that any users added to or deleted from the AD database will be added to or removed from the users of the group 'Company Users'. This kind of **user synchronisation** is also possible with [Office 365](/docs/platform/connectors/office-365/), [SharePoint](/docs/platform/connectors/sharepoint/) as well as AD.
+In the example above, the Kianda environment is synchronised with AD, so that any users added to or deleted from the AD database will be added to or removed from the users of the group 'Company Users'. This kind of **user synchronisation** is also possible with [Office 365](/platform/connectors/office-365/), [SharePoint](/platform/connectors/sharepoint/) as well as AD.
 
 By clicking on the Filter button <img src="/images/filter-button.jpg" alt="Filter button" style="zoom:80%;" />within Groups, an **LDAP Filter** can be applied. The LDAP filter is an open format that allows you to perform queries with AD. For example the query below is used to query for users in the IT department with an account that is not disabled (=2). 
 
@@ -130,4 +130,4 @@ https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/ldap-re
 
 ### What’s next ![Idea icon](/images/18.png)
 
-When you have created your **Active Directory connector** you can start to use the connector data in **processes**. To find out more about how to design processes, go to [Designer](/docs/platform/application-designer/designer/).
+When you have created your **Active Directory connector** you can start to use the connector data in **processes**. To find out more about how to design processes, go to [Designer](/platform/application-designer/designer/).

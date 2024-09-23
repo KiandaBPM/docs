@@ -51,6 +51,6 @@ Select the **Enable quick actions** checkbox, then select one or more of the che
 
 Now that you've learned about **Workspace security**, find out more about other security access levels:
 
-- [Process level security](/docs/security/process-level-security/)
-- [Single Sign-On](/docs/security/sso/)
-- [Data residency](/docs/security/data-residency/)
+- [Process level security](/security/process-level-security/)
+- [Single Sign-On](/security/sso/)
+- [Data residency](/security/data-residency/)

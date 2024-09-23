@@ -30,7 +30,7 @@ For example, you could insert a list field in your form that will show a drop-do
 
    ![List field help text example](/images/list-field-help-text.jpg)
 
-8. **Custom CSS class name** - You can type the name of a CSS class to allow the List to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
+8. **Custom CSS class name** - You can type the name of a CSS class to allow the List to inherit specific styles defined in the [Global CSS file](/low-code/global-css/).
 
 9. **List source** - You have three main options in terms of the source of the choices that will appear in your List field: 
 
@@ -56,7 +56,7 @@ For example, you could insert a list field in your form that will show a drop-do
 
    ![List field list source datasource](/images/list-source-datasource.jpg)
 
-   Then click on the **Datasource** button ![Data source button](/images/datasource.png) to open the **Select datasource** dialog box and choose the data source you want to connect to - for example, SharePoint. From there you can drill down into the datasource tree and select a specific data item to pull into the list. For more information on how to connect to data sources in Kianda, go to [Data connectors](/docs/platform/connectors/).
+   Then click on the **Datasource** button ![Data source button](/images/datasource.png) to open the **Select datasource** dialog box and choose the data source you want to connect to - for example, SharePoint. From there you can drill down into the datasource tree and select a specific data item to pull into the list. For more information on how to connect to data sources in Kianda, go to [Data connectors](/platform/connectors/).
 
    ![List field select data source dialog box](/images/list-select-data-source.jpg)
 
@@ -66,7 +66,7 @@ For example, you could insert a list field in your form that will show a drop-do
 
    Select the **Display field**, **Value field** and a field to **Sort by** (the 'Sort by' option appears once you've selected a data source). As the datasource chosen in the example is a Kianda process, the fields will appear as form fields. Once you've chosen a field to sort by, an additional option - **Direction** - appears, enabling you to choose to sort values in **Ascending** or **Descending** order. In the example shown here, Kianda has been chosen as the data source and a field titled 'Type of Training' from a form called 'Training Request' has been chosen as both the Display field and Value field.
 
-   Click on the **Edit conditions** button if you want to add a condition to your List field - for example, if you want to create a cascading list where the options available in a second list are dependent upon the option the user has chosen from a first list. To learn more about applying conditions, go to [**Conditions**](/docs/platform/rules/general/add-conditions/) and to find out more about creating cascading lists, watch the video on [**How to create cascading dropdown lists**](/docs/how-to/create-cascading-dropdown-lists/).
+   Click on the **Edit conditions** button if you want to add a condition to your List field - for example, if you want to create a cascading list where the options available in a second list are dependent upon the option the user has chosen from a first list. To learn more about applying conditions, go to [**Conditions**](/platform/rules/general/add-conditions/) and to find out more about creating cascading lists, watch the video on [**How to create cascading dropdown lists**](/how-to/create-cascading-dropdown-lists/).
 
    If you choose Kianda as the data source for your list field, two additional options will be displayed - **Query any process** (checks all processes within Kianda for the field you have selected as the source for your list) and **Query type** (you can select anything created by or assigned to a particular user).
 
@@ -107,7 +107,7 @@ To edit a **List field**:
 
 ![Select file upload file to edit](/images/list-select-to-edit.jpg)
 
-The **Edit field - List** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - List** dialog box (as already discussed in [How to get started](/docs/platform/controls/input/list#how-to-get-started)).
+The **Edit field - List** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - List** dialog box (as already discussed in [How to get started](/platform/controls/input/list#how-to-get-started)).
 	
 ![Edit date field dialog box](/images/list-edit-dialog-example2.jpg)
 	
@@ -143,7 +143,7 @@ For example, the **Field Properties** associated with a **List field** titled 'T
 - **Visible** - If this is selected, the List field will be visible in the form.
 - **Layout** - The width of the blue bar can be adjusted to change the width of the List field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
-To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
 
 
@@ -156,10 +156,10 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 
 Now that you've learned about **List controls**, find out more about the other types of **Input fields** you can add to a Kianda process:
 
-- [Date control](/docs/platform/controls/input/date/)
-- [File upload control](/docs/platform/controls/input/file-upload/)
-- [Number control](/docs/platform/controls/input/number/)
-- [Table control](/docs/platform/controls/input/table/)
-- [Text box control](/docs/platform/controls/input/textbox/)
-- [Toggle control](/docs/platform/controls/input/toggle/)
-- [User picker control](/docs/platform/controls/input/user-picker/)
+- [Date control](/platform/controls/input/date/)
+- [File upload control](/platform/controls/input/file-upload/)
+- [Number control](/platform/controls/input/number/)
+- [Table control](/platform/controls/input/table/)
+- [Text box control](/platform/controls/input/textbox/)
+- [Toggle control](/platform/controls/input/toggle/)
+- [User picker control](/platform/controls/input/user-picker/)

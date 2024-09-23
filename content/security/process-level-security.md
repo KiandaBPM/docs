@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\static
 
 ## Introduction
 
-In addition to [Workspace security](/docs/security/workspace-security/) that is setting levels of access by role and form ownership, there are a multitude of ways to set access at a process, field and dashboard level. The following sections describe security at different levels. 
+In addition to [Workspace security](/security/workspace-security/) that is setting levels of access by role and form ownership, there are a multitude of ways to set access at a process, field and dashboard level. The following sections describe security at different levels. 
 
 ## Process security settings
 
@@ -40,7 +40,7 @@ In addition to process and form level security, you can set panel and button sec
 
 ## Dashboard security
 
-As an end user, when you login to Kianda, you are presented with dashboards and widgets for different processes. The dashboard is made of multiple widgets like tiles, charts, links and lists. Go to [Dashboard](/docs/platform/pages/) to find out more about each widget type. You can set security at both a) dashboard level and b) widget level, see [Widget security](#widget-security) for more details. This section will deal with dashboard level security.
+As an end user, when you login to Kianda, you are presented with dashboards and widgets for different processes. The dashboard is made of multiple widgets like tiles, charts, links and lists. Go to [Dashboard](/platform/pages/) to find out more about each widget type. You can set security at both a) dashboard level and b) widget level, see [Widget security](#widget-security) for more details. This section will deal with dashboard level security.
 
 Dashboard level security can only be applied if you have the **Administrator** role to allow visibility of **dashboards and widgets.**
 
@@ -58,7 +58,7 @@ To apply security to dashboards:
 
 5. Select the correct **Users** and/or **Groups** using the dropdown menu.
 
-6. Make any other changes you need to the dashboard, see [Dashboard](/docs/platform/pages/) for more details. 
+6. Make any other changes you need to the dashboard, see [Dashboard](/platform/pages/) for more details. 
 
 7. Click on **OK** when you are finished editing the dialog box or **Close** to exit the dialog box at any time.
 
@@ -90,6 +90,6 @@ To apply security to a dashboard widget:
 
 Now that you've learned about **Process level security**, find out more about other security access levels:
 
-- [Workspace security](/docs/security/workspace-security/)
-- [Single Sign-On](/docs/security/sso/)
-- [Data residency](/docs/security/data-residency/)
+- [Workspace security](/security/workspace-security/)
+- [Single Sign-On](/security/sso/)
+- [Data residency](/security/data-residency/)

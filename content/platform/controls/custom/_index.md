@@ -4,7 +4,7 @@ linkTitle: "Custom controls"
 typora-root-url: ..\..\..\..\..\static
 ---
 
-**Custom fields** are a fourth category of [controls](/docs/platform/controls/) that are only available to you as a Designer in Kianda if Custom controls have been created by an Administrator or Designer in your Kianda workspace.
+**Custom fields** are a fourth category of [controls](/platform/controls/) that are only available to you as a Designer in Kianda if Custom controls have been created by an Administrator or Designer in your Kianda workspace.
 
 
 
@@ -12,7 +12,7 @@ typora-root-url: ..\..\..\..\..\static
 
 To add a **Custom field** to a Kianda form:
 
-1. Open an existing process by going to **Administration** > **Designer** in the left side menu and clicking on a process, or create a new process in Designer. See [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
+1. Open an existing process by going to **Administration** > **Designer** in the left side menu and clicking on a process, or create a new process in Designer. See [Create First Process](/getting-started/create-first-process/) to learn how to create your first process.
 
    ![Open process in Designer](/images/designer-open-process.jpg)
 
@@ -74,7 +74,7 @@ When the Developer/Administrator completes the dialog box and clicks on **OK**, 
 
 Once a **Custom field widget** has been created, Designers will then be able to see and use that Custom field widget in the **Custom** section of the **Controls** menu when designing Kianda forms.
 
-To learn more about how to create **Custom field widgets**, go to [Creating a custom field widget](/docs/getting-started/welcome/low-code#how-to-get-started-as-a-kianda-low-code-developer).
+To learn more about how to create **Custom field widgets**, go to [Creating a custom field widget](/getting-started/welcome/low-code#how-to-get-started-as-a-kianda-low-code-developer).
 
 
 
@@ -133,7 +133,7 @@ In the example shown here, a **Custom field** titled '**Field widget 1**' has be
 
 - **Layout** - The width of the blue bar can be adjusted to change the width of the Custom field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
-  For more details, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+  For more details, go to [Field Properties](/platform/controls/properties#field-properties).
 
 
 
@@ -147,8 +147,8 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 
 Now that you've learned about **Custom controls**, find out more about how you can use Controls, how you can get started as a Kianda low-code developer, and more about the three other categories of **Controls** you can add to a Kianda process:
 
-- [Controls](/docs/platform/controls/)
-- [What is low code?](/docs/getting-started/welcome/low-code/)
-- [Input controls](/docs/platform/controls/input/)
-- [Layout controls](/docs/platform/controls/layout/)
-- [Actions](/docs/platform/controls/actions/)
+- [Controls](/platform/controls/)
+- [What is low code?](/getting-started/welcome/low-code/)
+- [Input controls](/platform/controls/input/)
+- [Layout controls](/platform/controls/layout/)
+- [Actions](/platform/controls/actions/)

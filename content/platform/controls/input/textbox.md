@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 The **Text box control** can be used if you want a user to manually input text into a form. For example, in a Training Request form, you may want the user to insert their first name and surname and may want those fields to be mandatory for the user to complete.
 
-There are various options available when creating a Text box field, such as formatting it to allow multiple lines of text, to contain a password (text input is not shown) or to autofill with saved information such as the user's address or email. More advanced options include applying a rule or expression to a Text box field - for more information, see [Rules](/docs/platform/rules/) and [Expression builder](/docs/platform/rules/general/expression-builder).
+There are various options available when creating a Text box field, such as formatting it to allow multiple lines of text, to contain a password (text input is not shown) or to autofill with saved information such as the user's address or email. More advanced options include applying a rule or expression to a Text box field - for more information, see [Rules](/platform/rules/) and [Expression builder](/platform/rules/general/expression-builder).
 
 
 
@@ -59,7 +59,7 @@ To edit a **Text box field**:
 
    ![Table help text example](/images/textbox-help-text.jpg)
 
-6. **Custom CSS class name** - You can type the name of a CSS class to allow the Textbox to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
+6. **Custom CSS class name** - You can type the name of a CSS class to allow the Textbox to inherit specific styles defined in the [Global CSS file](/low-code/global-css/).
 
 7. **Mode** - you can decide whether your Text box is limited to a **Single line of text** or will allow for **Multiple lines of text** or can choose **Rich text**. Different additional options will then be shown, depending on the Mode you have chosen. 
 
@@ -112,7 +112,7 @@ To edit a **Text box field**:
 
    ![Expression builder dialog box](/images/expression-builder.jpg)
 
-   You can click on the **Reference** button ![Reference button in the Expression builder dialog box](/images/reference.png) to see some of the most commonly used Expressions. To learn more about using Expressions, go to [Expression builder](/docs/platform/rules/general/expression-builder). 
+   You can click on the **Reference** button ![Reference button in the Expression builder dialog box](/images/reference.png) to see some of the most commonly used Expressions. To learn more about using Expressions, go to [Expression builder](/platform/rules/general/expression-builder). 
 
 
 
@@ -167,7 +167,7 @@ For example, the **Field Properties** associated with a **Text box field** title
 
 - **Layout** - The width of the blue bar can be adjusted to change the width of the Text box field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
-To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
 You can check how the Text box will appear to users on their PC or mobile phone by first saving your form and then clicking on the Preview button ![Preview button](/images/preview.png). Our simple example of the 'First Name' and 'Surname' fields in a Training Request form could look like this when viewed on a user's mobile phone:
 
@@ -185,10 +185,10 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 
 Now that you've learned about the **Text box control**, find out more about the other types of **Input fields** you can add to a Kianda process:
 
-- [Date control](/docs/platform/controls/input/date/)
-- [File upload control](/docs/platform/controls/input/file-upload/)
-- [List control](/docs/platform/controls/input/list/)
-- [Number control](/docs/platform/controls/input/number/)
-- [Table control](/docs/platform/controls/input/table/)
-- [Toggle control](/docs/platform/controls/input/toggle/)
-- [User picker control](/docs/platform/controls/input/user-picker/)
+- [Date control](/platform/controls/input/date/)
+- [File upload control](/platform/controls/input/file-upload/)
+- [List control](/platform/controls/input/list/)
+- [Number control](/platform/controls/input/number/)
+- [Table control](/platform/controls/input/table/)
+- [Toggle control](/platform/controls/input/toggle/)
+- [User picker control](/platform/controls/input/user-picker/)

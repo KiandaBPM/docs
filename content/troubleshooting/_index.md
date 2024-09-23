@@ -6,12 +6,12 @@ typora-root-url: ..\..\..\static
 
 ## Introduction
 
-Your Kianda environment is designed to be an intuitive, user-friendly workspace with built-in features like Kianda [**Previewer**](/docs/platform/application-designer/designer/previewer/) that support quick prototyping and testing. To support your work there are also a number of additional features that you can use to troubleshoot issues. The categories of troubleshooting include:
+Your Kianda environment is designed to be an intuitive, user-friendly workspace with built-in features like Kianda [**Previewer**](/platform/application-designer/designer/previewer/) that support quick prototyping and testing. To support your work there are also a number of additional features that you can use to troubleshoot issues. The categories of troubleshooting include:
 
-- Using the [Previewer](/docs/platform/application-designer/designer/previewer/) to test designs
-- Using the [Rule debugger](/docs/troubleshooting/rule-debugger) and [Rule diagnostics](/docs/troubleshooting/rule-diagnostics) to troubleshoot process instance flow
-- [Custom widget debugging](/docs/troubleshooting/custom-widget-debugging/) 
-- [Version history management](/docs/troubleshooting/version-history-and-auditing)
+- Using the [Previewer](/platform/application-designer/designer/previewer/) to test designs
+- Using the [Rule debugger](/troubleshooting/rule-debugger) and [Rule diagnostics](/troubleshooting/rule-diagnostics) to troubleshoot process instance flow
+- [Custom widget debugging](/troubleshooting/custom-widget-debugging/) 
+- [Version history management](/troubleshooting/version-history-and-auditing)
 
 Click on each of the links above to read more. Version history management is introduced below.
 
@@ -39,16 +39,16 @@ Here you can see when a process design was modified and by whom. Clicking on the
 
 At any time an older version of the design can be reinstated by clicking on the **Restore** button ![Restore button](/images/restore.png) beside a particular version.
 
-This level of detail provides a precise way to monitor what is happening with a process design and to control which version should be the current version in an easy-to-use interface. The [Version history](/docs/platform/application-designer/designer/version-history/) page provides a step-by-step guide on how to view version history. 
+This level of detail provides a precise way to monitor what is happening with a process design and to control which version should be the current version in an easy-to-use interface. The [Version history](/platform/application-designer/designer/version-history/) page provides a step-by-step guide on how to view version history. 
 
-When a process design has been published, and data captured using that design, then the [Process instance version history](/docs/troubleshooting/version-history-and-auditing) provides a useful way to see how and when a process design has been used and who has captured data using that design. Click on the link to read more details. 
+When a process design has been published, and data captured using that design, then the [Process instance version history](/troubleshooting/version-history-and-auditing) provides a useful way to see how and when a process design has been used and who has captured data using that design. Click on the link to read more details. 
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
 Find out more about other troubleshooting features:
 
-- [Rule debugger](/docs/troubleshooting/rule-debugger)
-- [Rule diagnostics](/docs/troubleshooting/rule-diagnostics/)
-- [Custom widget debugging](/docs/troubleshooting/custom-widget-debugging/)
-- [Version history and Auditing](/docs/troubleshooting/version-history-and-auditing)
+- [Rule debugger](/troubleshooting/rule-debugger)
+- [Rule diagnostics](/troubleshooting/rule-diagnostics/)
+- [Custom widget debugging](/troubleshooting/custom-widget-debugging/)
+- [Version history and Auditing](/troubleshooting/version-history-and-auditing)
 

@@ -26,6 +26,6 @@ Within Kianda Designer, click on a process, then a form of choice so that the **
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
+To read more about how to create processes and forms go to [Application Designer](/platform/application-designer/).
 
-To find out about help and support, go to [Help](/docs/platform/general/help/).
+To find out about help and support, go to [Help](/platform/general/help/).

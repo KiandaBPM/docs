@@ -8,16 +8,16 @@ typora-root-url: ..\..\..\static
 
 There are currently 60 predefined rules available to use in forms and processes, across 10 categories:
 
-- [Workflow](/docs/platform/rules/workflow/)
-- [Communications](/docs/platform/rules/communications/)
-- [Data](/docs/platform/rules/data/)
-- [Users](/docs/platform/rules/users/)
-- [File management](/docs/platform/rules/files/)
-- [Tables](/docs/platform/rules/tables/)
-- [Dates](/docs/platform/rules/dates/)
-- [Form actions](/docs/platform/rules/form-actions/)
-- [SharePoint](/docs/platform/rules/sharepoint/)
-- [KiandaAI](/docs/platform/rules/kianda-ai/)
+- [Workflow](/platform/rules/workflow/)
+- [Communications](/platform/rules/communications/)
+- [Data](/platform/rules/data/)
+- [Users](/platform/rules/users/)
+- [File management](/platform/rules/files/)
+- [Tables](/platform/rules/tables/)
+- [Dates](/platform/rules/dates/)
+- [Form actions](/platform/rules/form-actions/)
+- [SharePoint](/platform/rules/sharepoint/)
+- [KiandaAI](/platform/rules/kianda-ai/)
 
 Click on the relevant links to find out more about each area. However if customised rules have been created, they are available to those with the role **Administration** and **Design business process** to use in process and form design in Kianda **Designer**. Customised rules are available under the **Custom rules** category under **Add a rule**.
 
@@ -25,7 +25,7 @@ Custom rules are created by **Administrators** or **Developers** who have coding
 
 ## How to get started
 
-If you are an experienced developer with an **Administrator** or **Developer** role, see [Users & Groups](/docs/platform/administration/users/), you can create a new rule widget within Kianda by doing the following: 
+If you are an experienced developer with an **Administrator** or **Developer** role, see [Users & Groups](/platform/administration/users/), you can create a new rule widget within Kianda by doing the following: 
 
 1. Navigate to **Administration** in the left-hand side menu, and click on **Developer**. This will bring you to the **Developer resources** page. Rule widgets are of type 'Rule' in this list.
 
@@ -64,6 +64,6 @@ If you are an experienced developer with an **Administrator** or **Developer** r
 
 ## What's next ![Idea icon](/images/18.png)
 
-To continue with low-code development, you can view [Templating basics](/docs/low-code/templating-basics/). If you would like to learn more about low-code go to the [Low-code development](/docs/low-code/) page and from there navigate to other pages on low-code practices.
+To continue with low-code development, you can view [Templating basics](/low-code/templating-basics/). If you would like to learn more about low-code go to the [Low-code development](/low-code/) page and from there navigate to other pages on low-code practices.
 
-To create other widgets go to [Custom field widget](/docs/low-code/field-widget/) and [Custom dashboard widget](/docs/low-code/dashboard-widget/) pages to find out more.
+To create other widgets go to [Custom field widget](/low-code/field-widget/) and [Custom dashboard widget](/low-code/dashboard-widget/) pages to find out more.

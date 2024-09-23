@@ -4,7 +4,7 @@ weight: 5
 typora-root-url: ..\..\..\..\static
 ---
 
-The **Scheduled tasks** function is available to **administrators** and is found in the left-hand side pane, or on the top right toolbar depending on the [chosen orientation](/docs/platform/administration/subscription/#general-settings), under **Administration**. The Scheduled tasks function allows you to schedule a task, that could be a process or a rule for example to send reminder emails.
+The **Scheduled tasks** function is available to **administrators** and is found in the left-hand side pane, or on the top right toolbar depending on the [chosen orientation](/platform/administration/subscription/#general-settings), under **Administration**. The Scheduled tasks function allows you to schedule a task, that could be a process or a rule for example to send reminder emails.
 
 ## How to get started
 
@@ -34,7 +34,7 @@ To use the Scheduled tasks function:
 
 3. Click on the name of a task to see the details of the task.
 
-4. To see a complete list of scheduled tasks click on **Show All** ![Show All button](/images/show-all.jpg). This list will include all tasks that are running as a result of processes, for example scheduled reminders that are running as a result of rules in a process. Each item listed is a process instance related to a process, for example as shown in the image below. The process instances can be viewed in a [list widget](/docs/platform/pages/list/) in a dashboard.
+4. To see a complete list of scheduled tasks click on **Show All** ![Show All button](/images/show-all.jpg). This list will include all tasks that are running as a result of processes, for example scheduled reminders that are running as a result of rules in a process. Each item listed is a process instance related to a process, for example as shown in the image below. The process instances can be viewed in a [list widget](/platform/pages/list/) in a dashboard.
 
    ![Scheduled tasks list](/images/scheduled-tasks.jpg)
 
@@ -82,7 +82,7 @@ To use the Scheduled tasks function:
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
+To read more about how to create processes and forms go to [Application Designer](/platform/application-designer/).
 
-To find out about help and support, go to [Help](/docs/platform/general/help/).
+To find out about help and support, go to [Help](/platform/general/help/).
 

@@ -13,9 +13,9 @@ There are two key principles to keep in mind in terms of **form access**:
 
 1. Forms are **assignable** - this means that forms can be assigned to individuals and/or groups, and then only they can **edit** the form, when it is the current form, in a process instance. The 'assignee' can be a combination of users and groups. There are various ways a form can be assigned to a user: 
 
-   ​	a) Using **Rules**, in particular the Workflow rule **Assign form**, see [Assign form](/docs/platform/rules/workflow/assign-form/) for details 
+   ​	a) Using **Rules**, in particular the Workflow rule **Assign form**, see [Assign form](/platform/rules/workflow/assign-form/) for details 
 
-   ​	b) Using **Quick actions**, see [Form Quick action](/docs/platform/application-designer/forms/form-quick-action/) for details
+   ​	b) Using **Quick actions**, see [Form Quick action](/platform/application-designer/forms/form-quick-action/) for details
 
    ​	c) Creating **form owners** when creating or updating a process design, see [Creating form owners](#creating-form-owners) for details
 
@@ -35,18 +35,18 @@ So what is **form owner**? A form owner is assigned when a form is created in Ki
 
 ​	Using the dropdown list choose from:
 
-- **Users** - Users must already be in the system, see [Users & Groups](/docs/platform/administration/users/)
-- **Groups** - Groups must be defined in advance, see [Users & Groups](/docs/platform/administration/users/)
-- **Partners** - Partners must be already in the system and active, see [B2B portals](/docs/platform/administration/b2b-portals/)
+- **Users** - Users must already be in the system, see [Users & Groups](/platform/administration/users/)
+- **Groups** - Groups must be defined in advance, see [Users & Groups](/platform/administration/users/)
+- **Partners** - Partners must be already in the system and active, see [B2B portals](/platform/administration/b2b-portals/)
 
 4. If you make a mistake, or form owners need to be changed in an existing process, click on the **x** beside the name of the **Users**, **Groups** or **Partners** to remove them and choose from the dropdown list again.
-5. Add to or edit the remaining parameters in the dialog box as desired, see [Editing forms](/docs/platform/application-designer/designer/#editing-forms) and click on **OK** when complete, or **Close** to exit the dialog box at any time.
+5. Add to or edit the remaining parameters in the dialog box as desired, see [Editing forms](/platform/application-designer/designer/#editing-forms) and click on **OK** when complete, or **Close** to exit the dialog box at any time.
 
 ## Changing form access
 
 The **default owner** is the person or group that the form is assigned to using the **default owner field** in the **new form** dialog box  as shown above. By default, only this person or group **can edit the current form** in a process instance. All other users can only view forms in read mode. The next section details how to [Change default owners](#changing-default-owners).
 
-It is also possible to allow other users to have edit access to forms using the [Assign rule](/docs/platform/rules/workflow/assign-form/) and [Quick actions](/docs/platform/application-designer/forms/form-quick-action/). 
+It is also possible to allow other users to have edit access to forms using the [Assign rule](/platform/rules/workflow/assign-form/) and [Quick actions](/platform/application-designer/forms/form-quick-action/). 
 
 ### Changing default owners
 
@@ -68,7 +68,7 @@ It is also possible to allow other users to have edit access to forms using the 
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To learn more about rules including [Assign rule](/docs/platform/rules/workflow/assign-form/) go to [Rules](/docs/platform/rules/).
+To learn more about rules including [Assign rule](/platform/rules/workflow/assign-form/) go to [Rules](/platform/rules/).
 
-To find out how forms work within processes go to [Process](/docs/platform/application-designer/process/).
+To find out how forms work within processes go to [Process](/platform/application-designer/process/).
 

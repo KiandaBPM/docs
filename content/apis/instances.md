@@ -9,7 +9,7 @@ typora-root-url: ..\..\..\static
 Introduction
 ---
 
-Kianda's REST Application Programming Interface (API) for **instances** allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on **process instances**. A process instance is created every time data is either saved or submitted to Kianda's database for a given process design, see [Process instance](/docs/platform/application-designer/process/process-instance/) for more details.
+Kianda's REST Application Programming Interface (API) for **instances** allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on **process instances**. A process instance is created every time data is either saved or submitted to Kianda's database for a given process design, see [Process instance](/platform/application-designer/process/process-instance/) for more details.
 
 
 
@@ -17,9 +17,9 @@ Kianda's REST Application Programming Interface (API) for **instances** allows y
 
 Before you get started, there are three things to keep in mind:
 
-1. To use API methods in Kianda you must have an **administrator** role, go to [View and edit user details](/docs/platform/administration/users/) to see information on how to set roles.
+1. To use API methods in Kianda you must have an **administrator** role, go to [View and edit user details](/platform/administration/users/) to see information on how to set roles.
 
-2. Each API method requires a **Bearer token**, see [Authentication](/docs/apis/authentication/) for more details.
+2. Each API method requires a **Bearer token**, see [Authentication](/apis/authentication/) for more details.
 
 3. Each of the following methods can be used on **process instances** or records, where **{name}** is the name of a process instance, such as 'training-approval-request-1'.
 
@@ -36,7 +36,7 @@ You can perform Create, Read, and Update operations on Kianda resources using st
 | [PUT](#update-a-process-instance-put)        | Update a process instance             |
 | PATCH                                        | Partially update a process instance   |
 
-Before any of the requests are used, you must have the bearer access token inserted into the request header, see [Authentication](/docs/apis/authentication/) for details.
+Before any of the requests are used, you must have the bearer access token inserted into the request header, see [Authentication](/apis/authentication/) for details.
 
 
 

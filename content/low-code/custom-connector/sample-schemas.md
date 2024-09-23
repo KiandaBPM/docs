@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\..\static
 ---
 
 # Introduction 
-This page features sample schemas for parameters used in the [Query Code](/docs/low-code/client-connector/how-to-create/#query-code) tab when creating a customised data connector. 
+This page features sample schemas for parameters used in the [Query Code](/low-code/client-connector/how-to-create/#query-code) tab when creating a customised data connector. 
 
 Each section below features exemplar schemas and parameters to help you when creating code for your hooks in the **Query Code** tab.
 
@@ -16,7 +16,7 @@ Each section below features exemplar schemas and parameters to help you when cre
 
 ## Metadata hook related schemas
 
-The **Metadata hook** in the [Query Code](/docs/low-code/client-connector/how-to-create/#query-code) tab typically looks like the following, using two parameters: `tree` and `datasource`.
+The **Metadata hook** in the [Query Code](/low-code/client-connector/how-to-create/#query-code) tab typically looks like the following, using two parameters: `tree` and `datasource`.
 
 ```handlebars
 metaData(tree, datasource) {
@@ -80,7 +80,7 @@ Sample schemas for [`tree`](#tree-schema) and [`datasource`](#datasource-schema)
 }
 ```
 
-To return to Microservice development, click on the [Microservice](/docs/low-code/custom-connector/create-microservice) link.
+To return to Microservice development, click on the [Microservice](/low-code/custom-connector/create-microservice) link.
 
 ### Datasource schema 
 
@@ -115,7 +115,7 @@ To return to Microservice development, click on the [Microservice](/docs/low-cod
 
 ## Query hook related schemas
 
-The **Query hook** in the [Query Code](/docs/low-code/client-connector/how-to-create/#query-code) tab typically looks like the following, using four parameters: `datasource, query`, `rule`  and `process`.
+The **Query hook** in the [Query Code](/low-code/client-connector/how-to-create/#query-code) tab typically looks like the following, using four parameters: `datasource, query`, `rule`  and `process`.
 
 ```javascript
  query(datasource, query, rule, process) {
@@ -345,7 +345,7 @@ The following sample rule schema is for a find-items rule which maps the respons
 
 ## Query success hook related schemas
 
-The **Query success hook** in the [Query Code](/docs/low-code/client-connector/how-to-create/#query-code) tab typically looks like the following, using four parameters: `datasource, result`, `rule`  and `process`.
+The **Query success hook** in the [Query Code](/low-code/client-connector/how-to-create/#query-code) tab typically looks like the following, using four parameters: `datasource, result`, `rule`  and `process`.
 
 ```c#
  querySuccess(datasource,result,rule,process) {
@@ -378,15 +378,15 @@ Sample schemas each are available by clicking on the relevant links: [`datasourc
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To discover how to use your customised data connector widget in Kianda process design, go to [Kianda application designer](/docs/platform/application-designer/). 
+To discover how to use your customised data connector widget in Kianda process design, go to [Kianda application designer](/platform/application-designer/). 
 
-To create other widgets go to [Custom field widget](/docs/low-code/field-widget/), [Custom dashboard widget](/docs/low-code/dashboard-widget/) and [Custom rule widget](/docs/low-code/rule-widget/) pages to find out more.
+To create other widgets go to [Custom field widget](/low-code/field-widget/), [Custom dashboard widget](/low-code/dashboard-widget/) and [Custom rule widget](/low-code/rule-widget/) pages to find out more.
 
 
 
 
 ### **To return to the previous pages click on the links below**  ![Idea icon](/images/10.png) 
 
-- [How to create a client connector](/docs/low-code/custom-connector/steps-to-create)  
-- [Create a microservice](/docs/low-code/custom-connector/create-microservice/)  
+- [How to create a client connector](/low-code/custom-connector/steps-to-create)  
+- [Create a microservice](/low-code/custom-connector/create-microservice/)  
 

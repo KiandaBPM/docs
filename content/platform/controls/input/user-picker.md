@@ -1,12 +1,12 @@
 ---
 title: "User picker control"
 weight: 8
-typora-root-url: ..\..\..\..\..\static
+typora-root-url: ..\..\..\..\static
 ---
 
 The **User picker field** can be used in a form if you want the form user to select a user, multiple users or a group of users. You can format the User picker field so that, for example, the form user can choose any user, can only choose a user or users from a pre-configured group - for example, users in the HR Department - or can choose multiple users.
 
-You can pre-define Groups on Kianda by using the Users function under Kianda Administration. To learn more about how you can set up and manage Groups, go to [Users & Groups](/docs/platform/administration/users/).
+You can pre-define Groups on Kianda by using the Users function under Kianda Administration. To learn more about how you can set up and manage Groups, go to [Users & Groups](/platform/users-groups/).
 
 For example, in a 'Training Request' form, you may insert a **User picker field** titled 'Manager' so that the user can select their manager (who will subsequently need to approve or reject their training request once it has been submitted). 
 
@@ -42,7 +42,7 @@ For example, in a 'Training Request' form, you may insert a **User picker field*
 
    ![User picker field help text example icon](/images/user-picker-helptext-shown.jpg)
 
-9. **Custom CSS class name** - You can type the name of a CSS class to allow the User picker to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
+9. **Custom CSS class name** - You can type the name of a CSS class to allow the User picker to inherit specific styles defined in the [Global CSS file](/low-code/global-css/).
 
    
 
@@ -68,7 +68,7 @@ For example, in a 'Training Request' form, you may insert a **User picker field*
 
     ![User picker field select Member of group](/images/user-picker-member-of-group.jpg)
 
-    In Kianda, Groups can be configured under the Administration menu - to learn more about how you can set up and manage Groups, go to [Users & Groups](/docs/platform/administration/users/).
+    In Kianda, Groups can be configured under the Administration menu - to learn more about how you can set up and manage Groups, go to [Users & Groups](/platform/administration/users/).
 
     For example, if you select 'HR Team', the end user completing the form will only be able to select users who are members of the 'HR Team' group in this User picker field.
 
@@ -123,7 +123,7 @@ To edit a **User picker field**:
 
 
 
-The **Edit field - User picker** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - User picker** dialog box (as already discussed in [How to get started](/docs/platform/controls/input/user-picker#how-to-get-started)).
+The **Edit field - User picker** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - User picker** dialog box (as already discussed in [How to get started](/platform/controls/input/user-picker#how-to-get-started)).
 
 ![Edit User picker field dialog box](/images/user-picker-edit-dialog2.jpg)
 
@@ -172,7 +172,7 @@ For example, the **Field Properties** associated with a **User picker** field ti
 
 - **Layout** - The width of the blue bar can be adjusted to change the width of the User picker field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
-To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
 
 
@@ -183,15 +183,15 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 
 
 ### User tips ![Target icon](/images/05.png) ###
-Rules can be applied to User picker fields to make your form dynamic. Rules allow actions based upon conditions resulting from user interaction with fields. To learn about the different types of rules you can apply, go to [Rules](/docs/platform/rules/). 
+Rules can be applied to User picker fields to make your form dynamic. Rules allow actions based upon conditions resulting from user interaction with fields. To learn about the different types of rules you can apply, go to [Rules](/platform/rules/). 
 
-For example, you could apply a [Set form field](/docs/platform/rules/data/set-form-field) rule so that the User picker field is set to be the current user or the user who started the process off. The section below describes how to use a User picker field in forms with two rules in order to extract a value from a datasource. 
+For example, you could apply a [Set form field](/platform/rules/data/set-form-field) rule so that the User picker field is set to be the current user or the user who started the process off. The section below describes how to use a User picker field in forms with two rules in order to extract a value from a datasource. 
 
 
 
 ## Example of User Picker use with Find Items and Lookup User rules
 
-The steps below detail how to use a User Picker field to **pull a value from a datasource** and **use properties within the Kianda** system associated with that value **within a Kianda form** to **auto-populate a user picker field**. This procedure is used when you need to populate **more than one value** in a user picker. Two rules are applied [Find Items rule](/docs/platform/rules/data/find-items) and [Lookup user by property](/docs/platform/rules/users/lookup-user-by-property). 
+The steps below detail how to use a User Picker field to **pull a value from a datasource** and **use properties within the Kianda** system associated with that value **within a Kianda form** to **auto-populate a user picker field**. This procedure is used when you need to populate **more than one value** in a user picker. Two rules are applied [Find Items rule](/platform/rules/data/find-items) and [Lookup user by property](/platform/rules/users/lookup-user-by-property). 
 
 For example we start with a SharePoint list or other **datasource** that has a list of values, for example we could use a Kianda process as a datasource that holds values called 'Employee number' and 'Employee' in the system.
 
@@ -211,10 +211,10 @@ For example if '400' is entered into this process, then the fields 'Display name
 
 Now that you've learned about the **User picker control**, find out more about the other types of **Input fields** you can add to a Kianda process:
 
-- [Date control](/docs/platform/controls/input/date/)
-- [File upload control](/docs/platform/controls/input/file-upload/)
-- [List control](/docs/platform/controls/input/list/)
-- [Number control](/docs/platform/controls/input/number/)
-- [Table control](/docs/platform/controls/input/table/)
-- [Text box control](/docs/platform/controls/input/textbox/)
-- [Toggle control](/docs/platform/controls/input/toggle/)
+- [Date control](/platform/controls/input/date/)
+- [File upload control](/platform/controls/input/file-upload/)
+- [List control](/platform/controls/input/list/)
+- [Number control](/platform/controls/input/number/)
+- [Table control](/platform/controls/input/table/)
+- [Text box control](/platform/controls/input/textbox/)
+- [Toggle control](/platform/controls/input/toggle/)

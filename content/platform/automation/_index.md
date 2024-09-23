@@ -18,8 +18,8 @@ Process level automation, means that new **process instances are created automat
 This can happen in a number of ways:
 
 - [Scheduled tasks function](#scheduled-tasks-function)
-- [Start a process rule](/docs/platform/rules/workflow/start-a-process/)
-- [Schedule a Rule rule](/docs/platform/rules/workflow/schedule-a-rule/)
+- [Start a process rule](/platform/rules/workflow/start-a-process/)
+- [Schedule a Rule rule](/platform/rules/workflow/schedule-a-rule/)
 
 ### Scheduled tasks function
 

@@ -21,13 +21,13 @@ You can use the file to **target** very specific details, for example a button i
 
 CSS can be used not just for to change the look and feel of applications but for functionality within a process, for example to hide a button via CSS and then create a button via JavaScript for a particular action. 
 
-The **Global CSS file editor** exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site, see [Subscription](/docs/platform/administration/subscription/) for an introduction to the **Subscription** function.
+The **Global CSS file editor** exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site, see [Subscription](/platform/administration/subscription/) for an introduction to the **Subscription** function.
 
 
 
 ## When to use ##
 
-Remember the visual style of processes and individual controls like buttons, can be heavily customised using Kianda [**Designer**](/docs/platform/application-designer/designer/) to achieve a unique look that is both appealing to the eye and practical. Many of these changes can be achieved simply by using the provided customisation controls within **Designer**, for example selecting a button, and clicking on the **Edit/pen** icon to make changes. 
+Remember the visual style of processes and individual controls like buttons, can be heavily customised using Kianda [**Designer**](/platform/application-designer/designer/) to achieve a unique look that is both appealing to the eye and practical. Many of these changes can be achieved simply by using the provided customisation controls within **Designer**, for example selecting a button, and clicking on the **Edit/pen** icon to make changes. 
 
 ![Selected button example](/images/button-example.jpg)
 
@@ -45,7 +45,7 @@ The key to building functional and aesthetically pleasing workspaces and process
 
 Bootstrap has released a **library** that can be imported into Adobe XD that allows you to create designs using **bootstrap** **elements**. This allows you to see all of the **available** **components** you have to create your processes and workspaces, and then create **visually** **pleasing** and **functional** **designs** using these elements. 
 
-The **mock**-**up** was then used as a plan to **create** **this** **process**. You don’t have to create processes or workspaces exactly the same as the mock-ups to create during the **planning** **stage**, but they act as a great **reference** and allow you to have a **solid** **foundation** to build off of whilst still being able to **deviate** from the **design** when the need arises. Go to [Create your first Kianda process](/docs/getting-started/create-first-process/) for advice and tips on planning processes. To help you in planning your CSS design, see the sections below.
+The **mock**-**up** was then used as a plan to **create** **this** **process**. You don’t have to create processes or workspaces exactly the same as the mock-ups to create during the **planning** **stage**, but they act as a great **reference** and allow you to have a **solid** **foundation** to build off of whilst still being able to **deviate** from the **design** when the need arises. Go to [Create your first Kianda process](/getting-started/create-first-process/) for advice and tips on planning processes. To help you in planning your CSS design, see the sections below.
 
 ### Effective use of CSS classes in Kianda
 
@@ -113,7 +113,7 @@ a:before {
 }
 ```
 
-For more information on Font Awesome icons go to this [documentation](https://fontawesome.com/docs/web/setup/upgrade/pseudo-elements) link or see this [cheatsheet of Unicode IDs](https://fontawesome.com/docs/web/setup/upgrade/pseudo-elements) for icons, for example F007 used in the code snippet above is a user icon, while F015 is the home icon, seen in the image above. You can test out designs using this [JSFiddle](http://jsfiddle.net/z2eakghc/9/) or code playground. 
+For more information on Font Awesome icons go to this [documentation](https://fontawesome.com/web/setup/upgrade/pseudo-elements) link or see this [cheatsheet of Unicode IDs](https://fontawesome.com/web/setup/upgrade/pseudo-elements) for icons, for example F007 used in the code snippet above is a user icon, while F015 is the home icon, seen in the image above. You can test out designs using this [JSFiddle](http://jsfiddle.net/z2eakghc/9/) or code playground. 
 
 ### Using modals in form design
 
@@ -282,8 +282,8 @@ The steps above can be used to edit any element in a **process or dashboard** us
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To review the range of fields available in Kianda that can have styling applied go to [Controls](/docs/platform/controls/).
+To review the range of fields available in Kianda that can have styling applied go to [Controls](/platform/controls/).
 
-To learn more about designing processes go to [Application designer](/docs/platform/application-designer/).
+To learn more about designing processes go to [Application designer](/platform/application-designer/).
 
-To learn more about dashboards go to [Dashboard pages](/docs/platform/pages/).
+To learn more about dashboards go to [Dashboard pages](/platform/pages/).

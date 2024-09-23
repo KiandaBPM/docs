@@ -6,7 +6,7 @@ weight: 2
 
 ## Introduction ##
 
-As an **Administrator** or someone with the role **Design business process**, you can preview your **process designs** at any time using the **Run and preview process** button <img src="/images/previewer-btn.png" alt="previewer button" style="zoom:75%;" />. This is a useful Kianda feature that allows you to trial out your process, and visualise the logical flow of your design without publishing it yet for your organisation to view/use. Within the preview window, you can also troubleshoot your fields, rules and conditions by utilising the [Rule debugger](/docs/troubleshooting/rule-debugger/)  feature.
+As an **Administrator** or someone with the role **Design business process**, you can preview your **process designs** at any time using the **Run and preview process** button <img src="/images/previewer-btn.png" alt="previewer button" style="zoom:75%;" />. This is a useful Kianda feature that allows you to trial out your process, and visualise the logical flow of your design without publishing it yet for your organisation to view/use. Within the preview window, you can also troubleshoot your fields, rules and conditions by utilising the [Rule debugger](/troubleshooting/rule-debugger/)  feature.
 
 <img src="/images/preview-window.png" alt="Preview window" style="zoom: 50%;" />
 
@@ -20,13 +20,13 @@ Before getting started, you must open a process design of your choice that you w
 
 To access the previewer feature:
 
-1. Navigate to the left-hand pane of the designer screen and click on the **Run and preview process** button <img src="/images/preview.png" alt="run and preview process button" style="zoom:150%;" />. From here, your process will display in a preview window only to you or to other Process/workspace security users that have access to the design. For more on this, see [Security](/docs/security/workspace-security/).
+1. Navigate to the left-hand pane of the designer screen and click on the **Run and preview process** button <img src="/images/preview.png" alt="run and preview process button" style="zoom:150%;" />. From here, your process will display in a preview window only to you or to other Process/workspace security users that have access to the design. For more on this, see [Security](/security/workspace-security/).
 
    ![Process preview button in left hand pane](/images/preview-process-left-hand-pane.png)
 
 2. Within the process preview window, you can enter information as expected and the rules will execute on fields/buttons - the window displaying as a process instance, similar to when it will when published.
 
-3. You can utilise the [Rule debugger](/docs/troubleshooting/rule-debugger) feature for troubleshooting purposes by clicking on the **Enable / Disable Rule debugging** button <img src="/images/rule-debugger-btn.png" alt="rule debugger button" style="zoom:80%;" /> in the top right corner of the window.
+3. You can utilise the [Rule debugger](/troubleshooting/rule-debugger) feature for troubleshooting purposes by clicking on the **Enable / Disable Rule debugging** button <img src="/images/rule-debugger-btn.png" alt="rule debugger button" style="zoom:80%;" /> in the top right corner of the window.
 
    <img src="/images/rule-debugger-preview2.png" alt="rule debugger in the preview window" style="zoom:80%;" />
 
@@ -62,6 +62,6 @@ You can then choose to make further changes to your process, or continue to save
 
 Now that you've learned about the **Previewer**, find out more about other designer features:
 
-- [Designer](/docs/platform/application-designer/designer/)
-- [Version history](/docs/platform/application-designer/designer/version-history/)
+- [Designer](/platform/application-designer/designer/)
+- [Version history](/platform/application-designer/designer/version-history/)
 

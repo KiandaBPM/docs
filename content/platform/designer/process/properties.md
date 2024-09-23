@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 description: "Kianda low-code development platform - Process Properties"
 ---
 
-In Kianda every process, every form and every control field such as text boxes and lists, will have **properties** visible in the right-hand pane of the [Designer](/docs/platform/application-designer/designer/) view.
+In Kianda every process, every form and every control field such as text boxes and lists, will have **properties** visible in the right-hand pane of the [Designer](/platform/application-designer/designer/) view.
 
 ## Process properties ##
 When you go to **Administration** > **Designer** > click on a process > **Process properties** in the right-hand pane, you will see the properties for the chosen process.
@@ -36,7 +36,7 @@ The following properties are visible:
 
   ![Form information](/images/forminfo_resized.png)
 
-Underneath form properties you will see **Form submit rules**, go to [Rules](/docs/platform/rules/) to find out more about Form rules.
+Underneath form properties you will see **Form submit rules**, go to [Rules](/platform/rules/) to find out more about Form rules.
 
 Click on a control field, for example a text box, in the form to see [Field properties](#field-properties). 
 
@@ -58,4 +58,4 @@ The options within properties are:
 
 ![Changing text box width](/images/textboxsize-frame.png) 
 
-Underneath field properties you will see **Rules**, go to [Rules](/docs/platform/rules/) to find out more about Field rules.
+Underneath field properties you will see **Rules**, go to [Rules](/platform/rules/) to find out more about Field rules.

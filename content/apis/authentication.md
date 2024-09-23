@@ -60,4 +60,4 @@ You can retrieve your Bearer token using Chrome DevTools, making sure you are lo
 
 ### What’s next ![Idea icon](/images/18.png)
 
-To learn more about Kianda's API go to [Instance API](/docs/apis/instances/).
+To learn more about Kianda's API go to [Instance API](/apis/instances/).

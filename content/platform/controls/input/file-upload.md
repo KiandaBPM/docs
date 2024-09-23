@@ -4,7 +4,7 @@ weight: 2
 typora-root-url: ..\..\..\..\..\static
 ---
 
-**File upload controls** (fields) can be inserted in a form if you want form users to be able to upload or store a file(s). File upload fields can also be useful if you want a file to be generated from the information entered in a form or if you want a file to be sent as part of your process - see [Rules](/docs/platform/rules/) for more information. 
+**File upload controls** (fields) can be inserted in a form if you want form users to be able to upload or store a file(s). File upload fields can also be useful if you want a file to be generated from the information entered in a form or if you want a file to be sent as part of your process - see [Rules](/platform/rules/) for more information. 
 
 For example, in an Inspection process, you may want the user (an inspector) to be able to upload the details of their inspection as a PDF file or photos as they complete an Inspection Form; or you may want the Kianda system to generate a report based on the information in the Inspection Form and to email this as a PDF file to a supervisor.
 
@@ -30,7 +30,7 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 
    ![File upload help text example](/images/file-upload-help-text.jpg)
    
-8. **Custom CSS class name** - You can type the name of a CSS class to allow the File upload to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
+8. **Custom CSS class name** - You can type the name of a CSS class to allow the File upload to inherit specific styles defined in the [Global CSS file](/low-code/global-css/).
 
 9. **Save location**: This is the location the file will be saved to. When you click on the **Destination** button, a **Select datasource** dialog box opens in which you can choose where to save the file(s):
 
@@ -95,7 +95,7 @@ To edit a **File upload field**:
 
 ![Select file upload field to edit](/images/file-upload-edit-field.jpg)
 
-3. The **Edit field - File** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - File** dialog box (as already discussed in [How to get started](/docs/platform/controls/input/file-upload#how-to-get-started)).
+3. The **Edit field - File** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - File** dialog box (as already discussed in [How to get started](/platform/controls/input/file-upload#how-to-get-started)).
 
 ![Edit date field dialog box](/images/file-upload-edit-field-dialog2.jpg)
 
@@ -129,7 +129,7 @@ For example, the **Field Properties** associated with a **File upload field** ti
 - **Visible** - If this is selected, the File upload field will be visible in the form.
 - **Layout** - The width of the blue bar can be adjusted to change the width of the File upload field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
-To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
 ### Saving changes and version history ###
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
@@ -140,10 +140,10 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 
 Now that you've learned about the **File upload control**, find out more about the other types of **Input fields** you can add to a Kianda process:
 
-- [Date control](/docs/platform/controls/input/date/)
-- [List control](/docs/platform/controls/input/list/)
-- [Number control](/docs/platform/controls/input/number/)
-- [Table control](/docs/platform/controls/input/table/)
-- [Text box control](/docs/platform/controls/input/textbox/)
-- [Toggle control](/docs/platform/controls/input/toggle/)
-- [User picker control](/docs/platform/controls/input/user-picker/)
+- [Date control](/platform/controls/input/date/)
+- [List control](/platform/controls/input/list/)
+- [Number control](/platform/controls/input/number/)
+- [Table control](/platform/controls/input/table/)
+- [Text box control](/platform/controls/input/textbox/)
+- [Toggle control](/platform/controls/input/toggle/)
+- [User picker control](/platform/controls/input/user-picker/)

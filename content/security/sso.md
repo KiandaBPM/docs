@@ -26,7 +26,7 @@ To enable Single-Sign-On, follow the steps below:
 
    **Secure Assertion Markup Language (SAML) 2.0** enables individuals to access numerous web applications using one set of login credentials. It works by passing authentication data between an identity provider (IdP) and a service provider such as Kianda.
 
-   - If you choose **Office 365**, you must choose an **Office 365 Connector** from a dropdown list. This will show Office 365 datasources already created in the **Data sources** function under **Administration**. Go to [Office 365 data connector](/docs/platform/connectors/office-365/) to learn how to create a data source if one doesn't exist.
+   - If you choose **Office 365**, you must choose an **Office 365 Connector** from a dropdown list. This will show Office 365 datasources already created in the **Data sources** function under **Administration**. Go to [Office 365 data connector](/platform/connectors/office-365/) to learn how to create a data source if one doesn't exist.
 
      ​     ![Office 365 data connector](/images/office365-signon.jpg)
 
@@ -36,7 +36,7 @@ To enable Single-Sign-On, follow the steps below:
 
 5. For **Auto redirect to SSO** choose from **No** or **Yes**. If you choose **Yes** then users cannot login with their Kianda username and password directly, and are automatically redirected to the configured SSO provider for authentication.
 
-   - However if you have an external set of users, for example contractor who need access to Kianda, you can set a **SSO bypass group.** You must define a group of users in advance, using the group creation option within the [**Users**](/docs/platform/administration/users/) function under **Administration**. From here you can define a group of users that can login using Kianda's username and password. Use this option for users that are external for the configured SSO provider, so they can go directly to the workspace login page to login.
+   - However if you have an external set of users, for example contractor who need access to Kianda, you can set a **SSO bypass group.** You must define a group of users in advance, using the group creation option within the [**Users**](/platform/administration/users/) function under **Administration**. From here you can define a group of users that can login using Kianda's username and password. Use this option for users that are external for the configured SSO provider, so they can go directly to the workspace login page to login.
 
 6. For the option **Default "Remember Me" to false** choose from **No** or **Yes**, to remember the login credentials.
 

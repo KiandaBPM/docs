@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\static
 
 **Rule diagnostics** is a troubleshooting feature within Kianda that allows you to view a nested list of all forms, fields and rules - the purpose being that you can choose to **manually trigger** these rules for diagnostic purposes, as well as **toggle field visibility**, **re-assign forms**, and more.
 
-The rule diagnostics feature is available for troubleshooting specific [Process instances](/docs/troubleshooting/version-history-and-auditing/) where as the [Rule debugger](/docs/troubleshooting/rule-debugger) feature focuses more so on troubleshooting a process design pre-publishing.
+The rule diagnostics feature is available for troubleshooting specific [Process instances](/troubleshooting/version-history-and-auditing/) where as the [Rule debugger](/troubleshooting/rule-debugger) feature focuses more so on troubleshooting a process design pre-publishing.
 
 
 
@@ -30,7 +30,7 @@ To access the rule diagnostics feature:
 
    ![rule diagnostics tab](/images/process-history-modal1.png)
 
-3. There are many possibilities for testing your process instance, however in this example we will try to troubleshoot the [Send email rule](/docs/platform/rules/communications/send-email/) to ensure that the line manager receives the correctly formatted email during this process. 
+3. There are many possibilities for testing your process instance, however in this example we will try to troubleshoot the [Send email rule](/platform/rules/communications/send-email/) to ensure that the line manager receives the correctly formatted email during this process. 
 
    To do this, we will drill down into the following path: *Asset request* form > *Submit* button > *Rules* > *Email Line Manager*. 
 
@@ -56,7 +56,7 @@ To access the rule diagnostics feature:
 
    ![other debug features](/images/current-form-screen.png)
 
-7. You can also choose to **Enable rule debugging** by choosing the *Yes* radio button, also below the nested list. This will enable the [Rule debugger](/docs/troubleshooting/rule-debugger) feature, however instead of executing within a process design preview window, it will enact upon your selected process instance. The rule debugger modal dialog will appear in the bottom right-hand corner of the screen.
+7. You can also choose to **Enable rule debugging** by choosing the *Yes* radio button, also below the nested list. This will enable the [Rule debugger](/troubleshooting/rule-debugger) feature, however instead of executing within a process design preview window, it will enact upon your selected process instance. The rule debugger modal dialog will appear in the bottom right-hand corner of the screen.
 
    ![Rule debugger modal dialog within rule diagnostics](/images/rule-debugger-within-rule-diagnostics.png)
 
@@ -70,6 +70,6 @@ To access the rule diagnostics feature:
 
 Now that you've learned about the **Rule Diagnostics**, find out more about other troubleshooting features:
 
-- [Custom Widget Debugging](/docs/troubleshooting/custom-widget-debugging/)
-- [Rule Debugger](/docs/troubleshooting/rule-debugger/)
-- [Version History and Auditing](/docs/troubleshooting/version-history-and-auditing)
+- [Custom Widget Debugging](/troubleshooting/custom-widget-debugging/)
+- [Rule Debugger](/troubleshooting/rule-debugger/)
+- [Version History and Auditing](/troubleshooting/version-history-and-auditing)

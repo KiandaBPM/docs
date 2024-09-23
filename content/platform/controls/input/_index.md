@@ -12,7 +12,7 @@ typora-root-url: ..\..\..\..\..\static
 
 To start adding Input controls (fields) to your Kianda forms:
 
-1. First, either open an existing process or create a new process by going to **Administration** > **Designer** in the left side menu. See [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
+1. First, either open an existing process or create a new process by going to **Administration** > **Designer** in the left side menu. See [Create First Process](/getting-started/create-first-process/) to learn how to create your first process.
 
 ![Opening Designer from left side menu by choosing Administration>Designer](/images/administration-designer-inputcont.jpg)
 
@@ -27,14 +27,14 @@ To start adding Input controls (fields) to your Kianda forms:
 
 The eight types of input fields are:
 
-- **Text box** - A text box field is a section in your form where users can enter text, for example, an Address field. See [Text box control](/docs/platform/controls/input/textbox/) for more information. 
-- **List** - A list field lists information, for example from a SharePoint data source. This is particularly useful for drop-down menus, when you want a user to fill out a form and choose an item from a list. See [List control](/docs/platform/controls/input/list/) for more information.
-- **Number** - A number field provides an input box that only allows numeric input, such as currencies or percentages. See [Number control](/docs/platform/controls/input/number/) for more information.
-- **Date** - A date field provides a date and time picker that allows users to input both date and time. See [Date control](/docs/platform/controls/input/date/) for more information.
-- **File** - A file field allows users to upload multiple files. Uploaded files are stored within the configured data structures or folders. See [File upload control](/docs/platform/controls/input/file-upload/) for more information.
-- **Table** - A table field creates a table for input in a form. This table can be filled by the user, or autofilled as part of a rule. See [Table control](/docs/platform/controls/input/table/) for more information.
-- **User picker** - A user picker field allows users to choose from a list of users. This can be a preconfigured group (like HR Managers) or a list of users - see [User picker control](/docs/platform/controls/input/user-picker/) for more information.
-- **Toggle** - A toggle field can be used as a toggle or checkbox that allows users to turn on/off components of the form. See [Toggle control](/docs/platform/controls/input/toggle/) for more information.
+- **Text box** - A text box field is a section in your form where users can enter text, for example, an Address field. See [Text box control](/platform/controls/input/textbox/) for more information. 
+- **List** - A list field lists information, for example from a SharePoint data source. This is particularly useful for drop-down menus, when you want a user to fill out a form and choose an item from a list. See [List control](/platform/controls/input/list/) for more information.
+- **Number** - A number field provides an input box that only allows numeric input, such as currencies or percentages. See [Number control](/platform/controls/input/number/) for more information.
+- **Date** - A date field provides a date and time picker that allows users to input both date and time. See [Date control](/platform/controls/input/date/) for more information.
+- **File** - A file field allows users to upload multiple files. Uploaded files are stored within the configured data structures or folders. See [File upload control](/platform/controls/input/file-upload/) for more information.
+- **Table** - A table field creates a table for input in a form. This table can be filled by the user, or autofilled as part of a rule. See [Table control](/platform/controls/input/table/) for more information.
+- **User picker** - A user picker field allows users to choose from a list of users. This can be a preconfigured group (like HR Managers) or a list of users - see [User picker control](/platform/controls/input/user-picker/) for more information.
+- **Toggle** - A toggle field can be used as a toggle or checkbox that allows users to turn on/off components of the form. See [Toggle control](/platform/controls/input/toggle/) for more information.
 
 
 
@@ -67,7 +67,7 @@ To **delete** an Input field from your form:
 2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png) 
 3. Click on **OK** to confirm.
 
-You can also view and edit an input field's **Field Properties** by selecting the field - for more details, see [Field Properties](/docs/platform/controls/properties/#field-properties/).
+You can also view and edit an input field's **Field Properties** by selecting the field - for more details, see [Field Properties](/platform/controls/properties/#field-properties/).
 
 ### Saving changes and version history ###
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.

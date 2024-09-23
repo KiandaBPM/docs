@@ -59,7 +59,7 @@ Before you begin, we at Kianda recommend doing some simple planning before you d
 
 8. Imported processes are available to view and edit from the main process view.
 
-9. When you have created your process go to [Designer](/docs/platform/application-designer/designer/) to find out more on how to add and change forms within your process(es).
+9. When you have created your process go to [Designer](/platform/application-designer/designer/) to find out more on how to add and change forms within your process(es).
 
    
 
@@ -98,7 +98,7 @@ Before you begin, we at Kianda recommend doing some simple planning before you d
 
 3. Click on the **OK** button when you are finished to save your work, or click on **Close** to exit the dialog box.
 
-3. When you have created your process go to [Designer](/docs/platform/application-designer/designer/) to find out more on how to add forms to your process(es).
+3. When you have created your process go to [Designer](/platform/application-designer/designer/) to find out more on how to add forms to your process(es).
 
    
 
@@ -124,7 +124,7 @@ Before you begin, we at Kianda recommend doing some simple planning before you d
 
    ![Import dashboards](/images/importdashboards2.png)
 
-7. Under **Included custom widgets**, you can view the title of the custom widgets that are included within the Kianda file being imported. In this example, a [Custom dashboard widget](/docs/platform/pages/custom/) is included for use within the User Training Dashboard. Click on **Next** to continue.
+7. Under **Included custom widgets**, you can view the title of the custom widgets that are included within the Kianda file being imported. In this example, a [Custom dashboard widget](/platform/pages/custom/) is included for use within the User Training Dashboard. Click on **Next** to continue.
 
    ![User Training Dashboard Widget](/images/import-custom-widgets.png)
 
@@ -134,7 +134,7 @@ Before you begin, we at Kianda recommend doing some simple planning before you d
 
 9. Imported processes are available to view and edit from the main process view.
 
-10. When you have imported your process(es) go to [Designer](/docs/platform/application-designer/designer/) to find out more on how to edit or add forms to your process(es).
+10. When you have imported your process(es) go to [Designer](/platform/application-designer/designer/) to find out more on how to edit or add forms to your process(es).
 
 
 
@@ -153,7 +153,7 @@ Before you begin, we at Kianda recommend doing some simple planning before you d
 
 4. At any time you can delete a process by clicking on the **Bin/Trash** button ![Bin icon](/images/binicon.png) and then click on **Ok** after you have reviewed the process title and you are sure that this is what you want to delete. Click on **Cancel** if you wish to cancel the deletion.
 
-4. Once you have created your process, you are ready to add forms. Go to [Designer](/docs/platform/application-designer/designer/) to find out more on how to add and change forms within your process(es).
+4. Once you have created your process, you are ready to add forms. Go to [Designer](/platform/application-designer/designer/) to find out more on how to add and change forms within your process(es).
 
 
 
@@ -171,13 +171,13 @@ Before you begin, we at Kianda recommend doing some simple planning before you d
 
    ![Export business processes](/images/exportingprocesses_frame2.png)
 
-4. Under **Include custom widgets?**, you check the checkbox beside the displayed custom widget(s) to include this custom widget within the exported Kianda file. In this example, a [Custom dashboard widget](/docs/platform/pages/custom/) is included for use within the User Training Dashboard. Click on **Next** to continue.
+4. Under **Include custom widgets?**, you check the checkbox beside the displayed custom widget(s) to include this custom widget within the exported Kianda file. In this example, a [Custom dashboard widget](/platform/pages/custom/) is included for use within the User Training Dashboard. Click on **Next** to continue.
 
    ![Custom widget include](/images/include-custom-widgets.png)
 
 5. The final screen displays a confirmation message communicating that the process is now ready for export. Click on the **Export** button ![Export button](/images/export-btn.png) to export the Kianda file.
 
-6. The result is a downloadable file of type .kianda. This can be kept as a backup on a separate system and [imported](/docs/platform/application-designer/process/#importing-processes) into other Kianda instances as needed.
+6. The result is a downloadable file of type .kianda. This can be kept as a backup on a separate system and [imported](/platform/application-designer/process/#importing-processes) into other Kianda instances as needed.
 
    ![Exported files](/images/kianda-downloadable.png)
 

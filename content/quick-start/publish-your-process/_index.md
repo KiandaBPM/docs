@@ -17,7 +17,9 @@ In Kianda, pages serve as the essential interface for delivering process applica
 
 Pages are constructed using a variety of specialized widgets, which are components designed to display data, charts, lists, links, and more. These widgets follow a responsive layout system based on Bootstrap, ensuring that your pages look great and function well across different devices and screen sizes. This flexibility allows you to build customized dashboards that can handle millions of records and present data in a meaningful way.
 
-Creating and configuring pages in Kianda is straightforward and user-friendly. With just a few clicks, you can add and arrange widgets, set up data connections, and define the layout to match your requirements. This guide will walk you through the process of creating a new page, adding and configuring widgets, and publishing your pages to make your process apps accessible to users. By the end of this guide, you will have the knowledge needed to design and deploy powerful and interactive pages in Kianda.
+Creating and configuring pages in Kianda is straightforward and user-friendly. With just a few clicks, you can add and arrange widgets, set up data connections, and define the layout to match your requirements. 
+
+This guide will walk you through the process of creating a new page, adding and configuring widgets, and publishing your pages to make your process apps accessible to users. By the end of this guide, you will have the knowledge needed to design and deploy powerful and interactive pages in Kianda.
 
 ## 2. Creating a New Page
 

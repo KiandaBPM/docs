@@ -80,6 +80,6 @@ System logs appear in this section when you click on **Load errors**. Logs are l
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
+To read more about how to create processes and forms go to [Application Designer](/platform/application-designer/).
 
-To find out about other ways to get help and support, go to [Help](/docs/platform/general/help).
+To find out about other ways to get help and support, go to [Help](/platform/general/help).

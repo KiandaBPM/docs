@@ -21,7 +21,7 @@ Connecting to data in Kianda is a breeze. You can quickly connect to a data sour
 - [Office 365](office-365/) 
 - [Oracle](oracle-database/) 
 - [PowerShell](powershell/) 
-- [REST Service](/docs/platform/connectors/rest/)
+- [REST Service](/platform/connectors/rest/)
 - [Salesforce](salesforce/)
 - [SAP](sap/)
 - [SharePoint](sharepoint/)
@@ -29,9 +29,9 @@ Connecting to data in Kianda is a breeze. You can quickly connect to a data sour
 
 Click on each of the links above to find out more about each data connector. 
 
-If you have a data source that is not on the list above, you can use SOAP or REST to easily connect to your data source, go to [SOAP](/docs/platform/connectors/soap) or [REST](https://docs.kianda.com/docs/platform/connectors/rest/) for more information.
+If you have a data source that is not on the list above, you can use SOAP or REST to easily connect to your data source, go to [SOAP](/platform/connectors/soap) or [REST](https://docs.kianda.com/platform/connectors/rest/) for more information.
 
-If you are an experienced developer, you can also create your own **Custom connector** customising pre- and post-processing of queries, see [Custom connector](/docs/low-code/custom-connector).
+If you are an experienced developer, you can also create your own **Custom connector** customising pre- and post-processing of queries, see [Custom connector](/low-code/custom-connector).
 
 ## Viewing existing data sources ##
 
@@ -79,7 +79,7 @@ The video below demonstrates how to create a datasource for SharePoint. The proc
 </video>
 
 
-There is also an option to create a **customised data connector** using the Kianda Developer [Custom Connector](/docs/low-code/custom-connector/steps-to-create). 
+There is also an option to create a **customised data connector** using the Kianda Developer [Custom Connector](/low-code/custom-connector/steps-to-create). 
 
 ### Kianda Cloud Connect
 
@@ -105,7 +105,7 @@ You can enable KCC when you **add a new** data source from the main by datasourc
 3. A link appears to **Download Kianda Cloud Connect**. Click on this link to download the software.
 4. Click on the **setup file** in the zip package and step through the wizard to install Kianda Cloud Connect.
 
-​	For more information go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/).
+​	For more information go to [Kianda Cloud Connect](/platform/connectors/kianda-cloud-connect/).
 
 ### Setting security for data sources ###
 
@@ -125,7 +125,7 @@ To enable security for datasources:
 
 5. Fill out the details:
 
-   - **Connection administrators** - click on the dropdown list to choose from **Users** and/or **Groups** who can edit the connection settings. If left blank any user with the role **Administrator** can edit the connection. See [Users and groups](/docs/platform/administration/users/) for more details on how to add users and groups to the workspace.
+   - **Connection administrators** - click on the dropdown list to choose from **Users** and/or **Groups** who can edit the connection settings. If left blank any user with the role **Administrator** can edit the connection. See [Users and groups](/platform/administration/users/) for more details on how to add users and groups to the workspace.
    - **Connection users** - click on the dropdown list to choose from **Users** and/or **Groups** who are allowed to query data using this connection. If left blank any user can query data using the datasource.
    - **Enable B2B** - if you check the checkbox, this allows B2B external users to query the connection. The **Enable partner default query parameters** checkbox appears.
 
@@ -143,11 +143,11 @@ To enable security for datasources:
 
 7. If you choose to set conditions using the steps above, then in the **Edit conditions** dialog box, you can set conditions based on data source parameters, operators and form fields.
 
-   - The parameter on the left comes from the **data source**, for example for SharePoint, there are 18 possible values listed in [SharePoint parameters](/docs/platform/connectors/sharepoint/#sharepoint-parameters). See [Data sources](/docs/platform/connectors/) for information about other data connectors.
+   - The parameter on the left comes from the **data source**, for example for SharePoint, there are 18 possible values listed in [SharePoint parameters](/platform/connectors/sharepoint/#sharepoint-parameters). See [Data sources](/platform/connectors/) for information about other data connectors.
 
    ![Edit conditions dialog box in Security settings](/images/edit-conditions.jpg)
 
-   - Within this dialog box you can also use different operators, for example **Equals** as shown above. See [Conditions](/docs/platform/rules/general/add-conditions/) for more details on using conditions in Kianda. 
+   - Within this dialog box you can also use different operators, for example **Equals** as shown above. See [Conditions](/platform/rules/general/add-conditions/) for more details on using conditions in Kianda. 
 
    - The right-most field relates to the B2B Portal and B2B User. There are standard options listed below:
 

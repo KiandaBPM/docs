@@ -10,7 +10,7 @@ You can **generate reports** within Kianda processes and **populate** the report
 
 ## Before you get started
 
-In advance of creating a template, you need to install Kianda add-in for word. Go to [Installing Kianda add-in for Word or Excel](/docs/platform/document-generation/#installing-kianda-add-in-to-word-or-excel) and follow the steps of installation. You also need to create an template outline before starting, to learn more about what a template outline is, go to [template outline](/docs/platform/document-generation/#heading).
+In advance of creating a template, you need to install Kianda add-in for word. Go to [Installing Kianda add-in for Word or Excel](/platform/document-generation/#installing-kianda-add-in-to-word-or-excel) and follow the steps of installation. You also need to create an template outline before starting, to learn more about what a template outline is, go to [template outline](/platform/document-generation/#heading).
 
 ### Using the Kianda Add-in for Word
 
@@ -44,11 +44,11 @@ You can use different types of input controls when creating your template for an
 
 ![Example form representing all input controls of Kianda](/images/excel-add-in-inputs.jpg)
 
-*Word template used to represent all values from the above [form](/docs/platform/document-generation/word-document-add-in/#example-form-with-all-input-controls-in-kianda).*
+*Word template used to represent all values from the above [form](/platform/document-generation/word-document-add-in/#example-form-with-all-input-controls-in-kianda).*
 
 ![Excel template](/images/word-add-in-template.jpg)
 
-*Word document result for the example values from the above [form](/docs/platform/document-generation/word-document-add-in/#example-form-with-all-input-controls-in-kianda).*
+*Word document result for the example values from the above [form](/platform/document-generation/word-document-add-in/#example-form-with-all-input-controls-in-kianda).*
 
 ![Excel workbook result from a process instance](/images/word-add-in-result.jpg)
 
@@ -76,7 +76,7 @@ You can use different types of input controls when creating your template for an
 
 ### What's next ![Idea icon](/images/18.png) 
 
-With Kianda word add-in you can create templates which can be then used to generate dynamic word documents from the created template, to learn more how to generate a word document go to [Generate word document](/docs/platform/rules/files/generate-word-document/).
+With Kianda word add-in you can create templates which can be then used to generate dynamic word documents from the created template, to learn more how to generate a word document go to [Generate word document](/platform/rules/files/generate-word-document/).
 
-There is a Kianda Add-in for Excel that is added in the same way as the Kianda Add-in for Word. Usage is very similar allowing you to connect an Excel spreadsheet to Kianda processes to create a template that can be used within processes. To learn more about adding Kianda to excel go to [Excel workbook add-in](/docs/platform/document-generation/excel-workbook-add-in/).
+There is a Kianda Add-in for Excel that is added in the same way as the Kianda Add-in for Word. Usage is very similar allowing you to connect an Excel spreadsheet to Kianda processes to create a template that can be used within processes. To learn more about adding Kianda to excel go to [Excel workbook add-in](/platform/document-generation/excel-workbook-add-in/).
 

@@ -7,7 +7,7 @@ typora-root-url: ..\..\..\..\static
 
 ## Introduction
 
-The **Users** function is available to users with the **Administrator** role and is found in the left-hand side menu, or on the top right toolbar depending on the [chosen orientation](/docs/platform/administration/subscription/#general-settings), under **Administration**. This function allows you to manage users and groups in your Kianda workspace.
+The **Users** function is available to users with the **Administrator** role and is found in the left-hand side menu, or on the top right toolbar depending on the [chosen orientation](/platform/administration/subscription/#general-settings), under **Administration**. This function allows you to manage users and groups in your Kianda workspace.
 
 
 ## How to get started
@@ -175,7 +175,7 @@ Seen below is an example CSV output in excel:
 
 ## Groups ##
 
-When you create predefined **groups,** you can use these group names in a myriad of ways, for example to create a set of finance managers who can then be listed as [form owners](/docs/platform/application-designer/forms/form-owners/) to edit forms in process instances for procurement, or a set of contractors in an [SSO bypass group](/docs/security/sso/) who can go the workspace login page to login to Kianda.
+When you create predefined **groups,** you can use these group names in a myriad of ways, for example to create a set of finance managers who can then be listed as [form owners](/platform/application-designer/forms/form-owners/) to edit forms in process instances for procurement, or a set of contractors in an [SSO bypass group](/security/sso/) who can go the workspace login page to login to Kianda.
 
 ![Groups in User Management](/images/groups.jpg)
 
@@ -231,7 +231,7 @@ From this main view you can:
 
      - **Override group members** - choose from **No** or **Yes**. By choosing **Yes**, a full synchronisation is enabled between the Kianda group and the data source of users. Any users that are not listed in the data source, will be removed from this group in Kianda.
 
-     - **Datasource** - choose a data source from the dropdown list. This data source must be already created, see [Data connectors](/docs/platform/connectors/) for more details.
+     - **Datasource** - choose a data source from the dropdown list. This data source must be already created, see [Data connectors](/platform/connectors/) for more details.
 
      - **Group name** - choose a name for the group if desired.
 
@@ -239,7 +239,7 @@ From this main view you can:
 
      - **Auto remove previously imported users that are missing on re-import** - choose from **No** or **Yes**. By choosing **Yes**, any previously imported users that no longer exist in the data source, will be removed from Kianda when re-synchronisation is executed. They will no longer be able to login to Kianda as their account will be removed from the system. 
 
-       Note: When a group is synchronised, a **scheduled task** is created to import users from the data source group every one hour by default. This can be changed by going to **Administration** > **Scheduled tasks**. Go to [Scheduled tasks](/docs/platform/administration/scheduledtasks/) to find out more about different schedules.
+       Note: When a group is synchronised, a **scheduled task** is created to import users from the data source group every one hour by default. This can be changed by going to **Administration** > **Scheduled tasks**. Go to [Scheduled tasks](/platform/administration/scheduledtasks/) to find out more about different schedules.
 
    - **Group administrators** - only **Users** or **Groups** listed here can manage the group; if you leave the field blank then Kianda administrators can manage the group.
 
@@ -282,6 +282,6 @@ From this main view you can:
 
 ## What's next  ![Idea icon](/images/18.png) ###
 
-To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
+To read more about how to create processes and forms go to [Application Designer](/platform/application-designer/).
 
-To find out about help and support, go to [Help](/docs/platform/general/help/).
+To find out about help and support, go to [Help](/platform/general/help/).

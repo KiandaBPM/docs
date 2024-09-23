@@ -1,20 +1,20 @@
 ---
 title: "Pages"
 weight: 5
-typora-root-url: ..\..\..\..\static
+typora-root-url: ..\..\..\static
 ---
 
-Kianda **dashboards** deliver a convenient way to provide insights into how your business processes are performing. Dashboards offer easy reporting, permissions management, quick build, condition-based filtering and many more useful features.
+Kianda **pages** deliver a convenient way to provide insights into how your business processes are performing. Pages offer easy reporting, permissions management, quick build, condition-based filtering and many more useful features.
 
 From lists to tiles, filters and charts, dashboards allow you to build full digital experiences to monitor your real-time processes in a few minutes. 
 
 There are 3 steps involved in creating a dashboard:
 
-1. Create a dashboard page.
+1. Create a page.
 2. Add one or more widgets.
 3. Configure or edit the widgets to make the page look the way you want.
 
-This page covers how to [create](#how-to-create-a-dashboard-page), [edit](#how-to-edit-a-dashboard-page), and [delete](#how-to-delete-a-dashboard-page) dashboards and give an overview of [how to add widgets to a dashboard page](#how-to-add-widgets-to-a-dashboard-page).
+This page covers how to create, edit, and delete dashboards and give an overview of [how to add widgets to a page](#how-to-add-widgets-to-a-dashboard-page).
 
 If you are using Kianda predefined processes from the App Store, then dashboards have already been created for you! These are available by clicking on **Dashboard** from the main side menu or left-hand pane.
 
@@ -26,12 +26,10 @@ Before you begin, it is important to be aware that there are **two modes** invol
 
 When using dashboards, there are two modes: **Edit mode** and **View mode**.
 
-### Dashboards View mode ###
+### View mode ###
 When you are in **View mode**, the **Edit** button ![Edit button](/images/edit-current-page.jpg) will be visible to the right in the top menu bar.
 
-![View mode](/images/dashboard-edit-overview.jpg)
-
-### Dashboards Edit mode ###
+### Edit mode ###
 When you click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) you will be in **Edit mode**. When you are viewing a page in **Edit mode**, these options will be available to you along the top of the dashboard page:
 
 - the **Widget menu** where you can insert any of the seven available dashboard widgets
@@ -48,7 +46,7 @@ If you want to create a dashboard page from scratch go to [How to create a dashb
 
 
 
-## How to create a Dashboard page ##
+## How to create a page ##
 
 Kianda offers a user-friendly interface to create dashboards in minutes. This video covers the steps for creating a new dashboard:
 
@@ -80,7 +78,7 @@ The options in the **Create dashboard page** dialog box include:
 
   **Note**: **Levels of Security**
 
-  - **Dashboard-level security** can only be applied if you are an **Administrator** and can set the visibility of dashboards and widgets.  The dashboard page-level security you are setting here - who can see the dashboard page - will override any security you set for the visibility of individual widgets on that dashboard. See [Dashboard security](/docs/security/process-level-security#dashboard-security) and [Widget security](/docs/security/process-level-security#widget-security) for more information.
+  - **Dashboard-level security** can only be applied if you are an **Administrator** and can set the visibility of dashboards and widgets.  The dashboard page-level security you are setting here - who can see the dashboard page - will override any security you set for the visibility of individual widgets on that dashboard. See [Dashboard security](/security/process-level-security#dashboard-security) and [Widget security](/security/process-level-security#widget-security) for more information.
 
   - **Widget security**: You will also be able to set security for each of the *individual widgets* that you add to the dashboard, i.e. who can view each dashboard widget.
 
@@ -131,14 +129,6 @@ The options in the **Create dashboard page** dialog box include:
 7. You are now in **View mode**. To make further changes to the dashboard page, return to **Edit mode** by clicking on the **Edit** button ![Edit button](/images/edit-current-page.jpg) in the top menu.
 
 
-
-### How to edit a Dashboard page ###
-
-1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) to go into **Edit mode**. 
-1. Click on the **Settings** button ![Settings](/images/settings.png) - see [How to edit Dashboard page settings](#how-to-edit-dashboard-page-settings) for more details.
-1. Click on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the top dashboard menu to save the changes to the page.
-
-
 ### How to delete a Dashboard page ###
 
 1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) to go into **Edit mode**. 
@@ -157,7 +147,7 @@ The options in the **Create dashboard page** dialog box include:
 
 ### How to add layout containers to a Dashboard page ###
 
-A layout container is a simple way to organise, arrange and move the widgets you add to your dashboard. It works in a way that is similar to how a [Panel layout control](/docs/platform/controls/layout/panel/) is used in a form to organise the fields in a form.
+A layout container is a simple way to organise, arrange the page layout using a bootstrap columns layout style and move the widgets you add to your dashboard. It works in a way that is similar to how a [Panel layout control](/platform/controls/layout/panel/) is used in a form to organise the fields in a form.
 
 To add a layout container to a Dashboard:
 
@@ -227,19 +217,19 @@ Kianda comes with **7 predefined dashboard widgets** that you can add to a dashb
 
 To learn more about each widget type and how to add it to a dashboard, click on the name of the widget:
 
-- [**Rich Text widget**](/docs/platform/pages/richtext/): The Rich Text widget can be used to display text, links or images in a dashboard.
+- [**Rich Text widget**](/platform/pages/richtext/): The Rich Text widget can be used to display text, links or images in a dashboard.
 
-- **[Tile widget](/docs/platform/pages/tile/)**: The Tile widget can be used to display a count of instances with different colour schemes. You could also add conditions to a display count - for example, you could add a condition of “Status” equals “In-progress” so that the count of process instances with a status of “In-progress” is displayed.
+- **[Tile widget](/platform/pages/tile/)**: The Tile widget can be used to display a count of instances with different colour schemes. You could also add conditions to a display count - for example, you could add a condition of “Status” equals “In-progress” so that the count of process instances with a status of “In-progress” is displayed.
 
-- **[Chart widget](/docs/platform/pages/chart/)**: Using a Chart widget, you could display a pie chart, bar chart or a line chart in your dashboard. These charts can be used to represent various conditions in a process.
+- **[Chart widget](/platform/pages/chart/)**: Using a Chart widget, you could display a pie chart, bar chart or a line chart in your dashboard. These charts can be used to represent various conditions in a process.
 
-- [**List widget**](/docs/platform/pages/list/): The List widget displays the instances (individual records) of the selected process. It can also be used to connect with any other widget to display the filtered items.
+- [**List widget**](/platform/pages/list/): The List widget displays the instances (individual records) of the selected process. It can also be used to connect with any other widget to display the filtered items.
 
-- [**Filter widget**](/docs/platform/pages/filter/): The Filter widget can be used to filter process instances based on a field. For example, process instances could be filtered by status.
+- [**Filter widget**](/platform/pages/filter/): The Filter widget can be used to filter process instances based on a field. For example, process instances could be filtered by status.
 
-- [**Link widget**](/docs/platform/pages/link/): The Link widget can be used to add a link to a new process, dashboard or any external sources (such as SharePoint or a website).
+- [**Link widget**](/platform/pages/link/): The Link widget can be used to add a link to a new process, dashboard or any external sources (such as SharePoint or a website).
 
-- [**Walk-through widget**](/docs/platform/pages/walkthrough/): The Walk-through widget allows you to create a walk-through of a process quickly which could be made available to a user, group or organisation.
+- [**Walk-through widget**](/platform/pages/walkthrough/): The Walk-through widget allows you to create a walk-through of a process quickly which could be made available to a user, group or organisation.
 
 When you have added one or more dashboard widgets, you can move the widgets around the dashboard page using the **Drag handle** button. This is possible when you are in **Edit mode**, see [Edit mode and View mode](#edit-mode-and-view-mode).
 

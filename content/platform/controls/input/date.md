@@ -45,7 +45,7 @@ To edit a **Date field**:
 
 6. **Help text** - you can insert help text a user can view when completing the date field. If you add help text, a question mark ![Help text icon](/images/help-icon.jpg) icon will appear next to the field title and, if the user clicks on this, they will see the help text you have inserted.
 
-7. **Custom CSS class name** - You can type the name of a CSS class to allow the Date to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
+7. **Custom CSS class name** - You can type the name of a CSS class to allow the Date to inherit specific styles defined in the [Global CSS file](/low-code/global-css/).
 
 8. **Display format** - you can choose whether the date field shows the date only or the date and time.
 
@@ -93,7 +93,7 @@ For example, the **Field Properties** associated with a **Date field** titled 'D
 - **Visible** - If this is selected, the Date field will be visible in the form.
 - **Layout** - The width of the blue bar can be adjusted to change the width of the Date field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
-To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
 ### Saving changes and version history ###
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
@@ -104,10 +104,10 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 
 Now that you've learned about **Date controls**, find out more about the other types of **Input fields** you can add to a Kianda process:
 
-- [File upload control](/docs/platform/controls/input/file-upload/)
-- [List control](/docs/platform/controls/input/list/)
-- [Number control](/docs/platform/controls/input/number/)
-- [Table control](/docs/platform/controls/input/table/)
-- [Text box control](/docs/platform/controls/input/textbox/)
-- [Toggle control](/docs/platform/controls/input/toggle/)
-- [User picker control](/docs/platform/controls/input/user-picker/)
+- [File upload control](/platform/controls/input/file-upload/)
+- [List control](/platform/controls/input/list/)
+- [Number control](/platform/controls/input/number/)
+- [Table control](/platform/controls/input/table/)
+- [Text box control](/platform/controls/input/textbox/)
+- [Toggle control](/platform/controls/input/toggle/)
+- [User picker control](/platform/controls/input/user-picker/)

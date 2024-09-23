@@ -36,7 +36,7 @@ Administrators can create a new dashboard page that connects to a chosen process
     
     - **Name** - this field is autofilled from the title field and creates a unique ID for the dashboard page.
     
-    - **Visible to** - choose from **Users** and/or **Groups** of users who will see this dashboard. In this way you are setting the first level of security for the dashboard, see [Dashboard security](/docs/security/process-level-security/#dashboard-security) for more details.
+    - **Visible to** - choose from **Users** and/or **Groups** of users who will see this dashboard. In this way you are setting the first level of security for the dashboard, see [Dashboard security](/security/process-level-security/#dashboard-security) for more details.
     
     - **Icon** - choose from hundreds of icons to represent your dashboard in the left-hand pane.
     
@@ -51,7 +51,7 @@ Administrators can create a new dashboard page that connects to a chosen process
     
 3. Click on **OK** when complete, or **Close** to exit the dialog box. 
 
-4. From there you are in the main dashboard view where you can add dashboard **widgets** to display lists or charts or edit the **settings** for the dashboard page. To find out more about dashboards, go to the [Dashboards](/docs/platform/pages/) section of the documentation. 
+4. From there you are in the main dashboard view where you can add dashboard **widgets** to display lists or charts or edit the **settings** for the dashboard page. To find out more about dashboards, go to the [Dashboards](/platform/pages/) section of the documentation. 
 
  
 
@@ -65,7 +65,7 @@ Administrators can edit an existing dashboard page by clicking on the dashboards
 
    ![Editing page](/images/editing-page.jpg)
 
-3. In Edit mode you can add new **dashboard widgets**, edit **Settings**, or **Delete** the dashboard page. To read more about Edit mode go to [Dashboards](/docs/platform/pages/).
+3. In Edit mode you can add new **dashboard widgets**, edit **Settings**, or **Delete** the dashboard page. To read more about Edit mode go to [Dashboards](/platform/pages/).
 
 
 
@@ -90,7 +90,7 @@ This icon alerts you when actions happen associated with processes, for example 
 
 ![User notification](/images/user-alert-notification.jpg)
 
-You will receive a configured message indicating the title of the notification and a short piece of text explaining what has happened, for example if a process design has been published and existing process instances have been updated, or the message could be as a result of a [User alert rule](/docs/platform/rules/communications/user-alert/) as seen below. In this example, the user can click on the alert and they are brought to the form that they have to complete. 
+You will receive a configured message indicating the title of the notification and a short piece of text explaining what has happened, for example if a process design has been published and existing process instances have been updated, or the message could be as a result of a [User alert rule](/platform/rules/communications/user-alert/) as seen below. In this example, the user can click on the alert and they are brought to the form that they have to complete. 
 
 ![User alert example](/images/user-alert-example.jpg)
 
@@ -122,7 +122,7 @@ To update your information, you can:
 
 6. View the system version of Kianda, for example System version 2.11.3 as shown in the image above.
 
-7. Clicking on the **Push notifications** slider will enable push notifications to mobile devices and other devices where push notifications are applicable. For example, if you have a process that utilises an [Alert](/docs/platform/rules/communications/user-alert/) rule, when push notifications are turned on, you will receive a notification similar to below.
+7. Clicking on the **Push notifications** slider will enable push notifications to mobile devices and other devices where push notifications are applicable. For example, if you have a process that utilises an [Alert](/platform/rules/communications/user-alert/) rule, when push notifications are turned on, you will receive a notification similar to below.
 
    <img src="/images/push-notification-gif2.gif" alt="Push notifications gif" style="zoom:50%;" />
 
@@ -133,4 +133,4 @@ To update your information, you can:
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To read more about how to create processes and forms go to [Application Designer](/docs/platform/application-designer/).
+To read more about how to create processes and forms go to [Application Designer](/platform/application-designer/).

@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\..\static
 ---
 ## What are Custom Connectors? 
 
-Kianda provides predefined datasource connectors such as the SQL server and SharePoint to allow you to connect your Kianda forms to particular data sources. A complete list of these predefined datasources is available at [Data connectors](/docs/platform/connectors/). In addition to these predefined connectors, you can also create **Custom connectors** to enable you to configure your own connector to suit your needs. 
+Kianda provides predefined datasource connectors such as the SQL server and SharePoint to allow you to connect your Kianda forms to particular data sources. A complete list of these predefined datasources is available at [Data connectors](/platform/connectors/). In addition to these predefined connectors, you can also create **Custom connectors** to enable you to configure your own connector to suit your needs. 
 
 Custom connectors work in the same way as other Kianda connectors, but with the added benefit of customisation.
 
@@ -28,12 +28,12 @@ For example when using a SharePoint data source you can use parameters for examp
 
 There are three key steps that need to be implemented in order to create and use a customised connector as follows:
 
-1. Microservice - create a **microservice** that will implement metadata, query and test functions. <!-- click on the [Microservice](/docs/low-code/custom-connector/create-microservice/) link to get further details. -->
+1. Microservice - create a **microservice** that will implement metadata, query and test functions. <!-- click on the [Microservice](/low-code/custom-connector/create-microservice/) link to get further details. -->
 
-2. Use Kianda features to create and test your customised connector - use **Developer** to register a new connector<!-- [register a new connector](/docs/low-code/custom-connector/steps-to-create/#register-a-new-connector) --> and use **Data sources** to <!-- [create a datasource](/docs/platform/connectors/#creating-a-datasource) --> create a datasource for the newly customised connector. Both of these features are available under **[Administration](/docs/platform/administration/)**
+2. Use Kianda features to create and test your customised connector - use **Developer** to register a new connector<!-- [register a new connector](/low-code/custom-connector/steps-to-create/#register-a-new-connector) --> and use **Data sources** to <!-- [create a datasource](/platform/connectors/#creating-a-datasource) --> create a datasource for the newly customised connector. Both of these features are available under **[Administration](/platform/administration/)**
 
-3. Process - use the custom connector to bring data into a process and use the **query hook** to filter the data. Use Kianda **Designer** to connect your data source to Kianda forms, for example a List control can connect to a datasource, see step 9 in [List control](/docs/platform/controls/input/list/#how-to-get-started).
+3. Process - use the custom connector to bring data into a process and use the **query hook** to filter the data. Use Kianda **Designer** to connect your data source to Kianda forms, for example a List control can connect to a datasource, see step 9 in [List control](/platform/controls/input/list/#how-to-get-started).
 
 ## What's next ![Idea icon](/images/18.png)
 
-To create a test service, follow the 3 steps above, or if you have already created a microservice go straight to [steps to create a custom connector](/docs/low-code/custom-connector/steps-to-create/) to learn how to create a custom connector.
+To create a test service, follow the 3 steps above, or if you have already created a microservice go straight to [steps to create a custom connector](/low-code/custom-connector/steps-to-create/) to learn how to create a custom connector.

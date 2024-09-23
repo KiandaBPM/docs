@@ -10,7 +10,7 @@ You can **generate excel workbooks** within Kianda processes and **populate** th
 
 ## Before you get started
 
-In advance of creating a template, you need to install Kianda add-in for word. Go to [Installing Kianda add-in for Word or Excel](/docs/platform/document-generation/#installing-kianda-add-in-to-word-or-excel) and follow the steps of installation. You also need to create a template outline before starting, to learn more about what a template outline is, go to [template outline](/docs/platform/document-generation/#heading).
+In advance of creating a template, you need to install Kianda add-in for word. Go to [Installing Kianda add-in for Word or Excel](/platform/document-generation/#installing-kianda-add-in-to-word-or-excel) and follow the steps of installation. You also need to create a template outline before starting, to learn more about what a template outline is, go to [template outline](/platform/document-generation/#heading).
 
 ### Using the Kianda Add-in for Excel
 
@@ -75,7 +75,7 @@ You can use different types of input controls when creating your template for an
 
 ### What's next ![Idea icon](/images/18.png) 
 
-With Kianda Excel add-in you can create templates which can be then used to generate dynamic Excel workbooks, to learn more on how to generate a Excel workbooks go to [Generate excel workbooks](/docs/platform/rules/files/generate-excel-document/).
+With Kianda Excel add-in you can create templates which can be then used to generate dynamic Excel workbooks, to learn more on how to generate a Excel workbooks go to [Generate excel workbooks](/platform/rules/files/generate-excel-document/).
 
-There is a Kianda Add-in for Word that is added in the same way as the Kianda Add-in for Excel. Usage is very similar allowing you to connect a Word document to Kianda processes to create a templates that can pull data from specific process instances. To learn more about adding Kianda to excel go to [Word document add-in](/docs/platform/document-generation/word-document-add-in/).
+There is a Kianda Add-in for Word that is added in the same way as the Kianda Add-in for Excel. Usage is very similar allowing you to connect a Word document to Kianda processes to create a templates that can pull data from specific process instances. To learn more about adding Kianda to excel go to [Word document add-in](/platform/document-generation/word-document-add-in/).
 

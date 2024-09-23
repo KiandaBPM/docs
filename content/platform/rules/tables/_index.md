@@ -4,7 +4,7 @@ typora-root-url: ..\..\..\..\..\static
 weight: 6
 ---
 
-**Table** rules is one category of [rules](/docs/platform/rules/) to enable table operations such as sorting, copying table rows to another table, exporting and importing table data as .csv files and adding and removing table rows. These operations are useful to implement in external data sources, automating actions using Kianda processes.
+**Table** rules is one category of [rules](/platform/rules/) to enable table operations such as sorting, copying table rows to another table, exporting and importing table data as .csv files and adding and removing table rows. These operations are useful to implement in external data sources, automating actions using Kianda processes.
 
 Take an example of a **Sort table** rule. Implementing this rule will result in a table being sorted in an **ascending** or **descending** manner depending on what column of the table you want to sort by. For an example, take the image below as your table.
 

@@ -5,7 +5,7 @@ linkTitle: "Actions"
 typora-root-url: ..\..\..\..\..\static
 ---
 
-**Action fields** are one category of [controls](/docs/platform/controls/) and include the fields that allow user interface actions like buttons or links. 
+**Action fields** are one category of [controls](/platform/controls/) and include the fields that allow user interface actions like buttons or links. 
 
 
 
@@ -13,19 +13,19 @@ typora-root-url: ..\..\..\..\..\static
 
 There are four types of **Action fields**:
 
-- **Button** - Buttons can be used to allow user interaction and to enable rules to be applied to actions taken by users. Applying rules to buttons can help to create smart, dynamic forms that follow business logic, without the need for coding. See [Rules](/docs/platform/rules/) and [Button control](/docs/platform/controls/actions/button/) to learn more.
+- **Button** - Buttons can be used to allow user interaction and to enable rules to be applied to actions taken by users. Applying rules to buttons can help to create smart, dynamic forms that follow business logic, without the need for coding. See [Rules](/platform/rules/) and [Button control](/platform/controls/actions/button/) to learn more.
 
-- **Link** - Link fields can be used to create custom links to forms. These can be external links. See [Link control](/docs/platform/controls/actions/link/) for more information.
+- **Link** - Link fields can be used to create custom links to forms. These can be external links. See [Link control](/platform/controls/actions/link/) for more information.
 
-- **Image** -  Image fields can be used to display images, either statically or from file fields. Go to [Image control](/docs/platform/controls/actions/image/) to find out more.
+- **Image** -  Image fields can be used to display images, either statically or from file fields. Go to [Image control](/platform/controls/actions/image/) to find out more.
 
-- **Signature** - Signature fields provide a very neat way to electronically sign-off on a form or process. To learn more, go to [Signature control](/docs/platform/controls/actions/signature/).
+- **Signature** - Signature fields provide a very neat way to electronically sign-off on a form or process. To learn more, go to [Signature control](/platform/controls/actions/signature/).
 
 
 
 To add an **Action field** to a Kianda form:
 
-1. Open an existing process by going to **Administration** > **Designer** in the left side menu and clicking on a process, or create a new process in Designer. See [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
+1. Open an existing process by going to **Administration** > **Designer** in the left side menu and clicking on a process, or create a new process in Designer. See [Create First Process](/getting-started/create-first-process/) to learn how to create your first process.
 
 	![Open process in Designer](/images/designer-open-process.jpg)
 
@@ -47,7 +47,7 @@ To add an **Action field** to a Kianda form:
 
    - Click on **Image**
    - A **New field - Image** dialog box opens automatically, giving you a range of options for your new **Image field**. 
-   - Once you complete this dialog box and click **OK**, the new Image field is inserted into your form. To learn more about the Image field, go to [Image control](/docs/platform/controls/actions/image/).
+   - Once you complete this dialog box and click **OK**, the new Image field is inserted into your form. To learn more about the Image field, go to [Image control](/platform/controls/actions/image/).
 
 	![Image dialog box](/images/image-dialog2.jpg)
 
@@ -104,7 +104,7 @@ To view or edit an Action control's **Field properties**:
    - **Visible** - If this is selected, the field will be visible in the form.
    - **Layout** - The width of the blue bar can be adjusted to change the width of the field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
-​		For more details, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+​		For more details, go to [Field Properties](/platform/controls/properties#field-properties).
 
 
 

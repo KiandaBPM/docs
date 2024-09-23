@@ -61,4 +61,4 @@ The very useful **feature** of the **process navigator** is its **search bar**. 
 
 ## What’s next ![Idea icon](/images/18.png)
 
-- To learn more about design controls that can be applied to forms go to [**Controls**](http://localhost:1313/docs/platform/controls/).
+- To learn more about design controls that can be applied to forms go to [**Controls**](http://localhost:1313/platform/controls/).

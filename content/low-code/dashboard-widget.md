@@ -9,13 +9,13 @@ typora-root-url: ..\..\..\static
 
 There are currently 7 predefined dashboard widgets available to use to create illustrative and responsive pages to show how your processes are performing at a glance. These widgets are:
 
-- [Richtext](/docs/platform/pages/richtext/)
-- [Tile](/docs/platform/pages/tile/)
-- [List](/docs/platform/pages/list/)
-- [Chart](//docs/platform/pages/chart/)
-- [Filter](/docs/platform/pages/filter/)
-- [Link](/docs/platform/pages/link/)
-- [Walk-through](/docs/platform/pages/walkthrough/)
+- [Richtext](/platform/pages/richtext/)
+- [Tile](/platform/pages/tile/)
+- [List](/platform/pages/list/)
+- [Chart](//platform/pages/chart/)
+- [Filter](/platform/pages/filter/)
+- [Link](/platform/pages/link/)
+- [Walk-through](/platform/pages/walkthrough/)
 
 Click on the relevant links to find out more about each area. However if customised dashboards have been created, they are available to those with the  **Administration** role to use in dashboard management in Kianda. Customised dashboards are available in the drop-down list for widgets when creating or editing dashboard pages.
 
@@ -23,7 +23,7 @@ Custom dashboards are created by **Administrators** or **Developers** who have c
 
 ## How to get started
 
-If you are an experienced developer with an **Administrator** or **Developer** role, see [Users & Groups](/docs/platform/administration/users/), you can create a new dashboard widget within Kianda by doing the following: 
+If you are an experienced developer with an **Administrator** or **Developer** role, see [Users & Groups](/platform/administration/users/), you can create a new dashboard widget within Kianda by doing the following: 
 
 1. Navigate to **Administration** in the left-hand side menu, and click on **Developer**. This will bring you to the **Developer resources** page. Dashboard widgets are of type 'Widget' in this list.
 
@@ -62,14 +62,14 @@ If you are an experienced developer with an **Administrator** or **Developer** r
 
       ![Custom dashboard widgets drop-down list](/images/custom-dashboard-widgets.jpg)
 
-10. Then click on the new widget design name to implement the widget, starting with editing the widget and then change settings, see [Edit dashboard page settings](/docs/platform/pages/#how-to-edit-dashboard-page-settings) for more information on general settings.
+10. Then click on the new widget design name to implement the widget, starting with editing the widget and then change settings, see [Edit dashboard page settings](/platform/pages/#how-to-edit-dashboard-page-settings) for more information on general settings.
 
 
 
 ## What's next ![Idea icon](/images/18.png)
 
-To continue with low-code development, you can view [Templating basics](/docs/low-code/templating-basics/). If you would like to learn more about low-code go to the [Low-code development](/docs/low-code/) page and from there navigate to other pages on low-code practices.
+To continue with low-code development, you can view [Templating basics](/low-code/templating-basics/). If you would like to learn more about low-code go to the [Low-code development](/low-code/) page and from there navigate to other pages on low-code practices.
 
-To create other widgets go to [Custom field widget](/docs/low-code/field-widget/) and [Custom rule widget](/docs/low-code/rule-widget/) pages to find out more.
+To create other widgets go to [Custom field widget](/low-code/field-widget/) and [Custom rule widget](/low-code/rule-widget/) pages to find out more.
 
-Go to the link on [Dashboards](/docs/platform/pages/) to learn more about dashboard pages.
+Go to the link on [Dashboards](/platform/pages/) to learn more about dashboard pages.

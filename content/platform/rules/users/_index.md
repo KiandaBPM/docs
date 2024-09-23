@@ -6,17 +6,17 @@ typora-root-url: ..\..\..\..\..\static
 
 ## Introduction
 
-**User rules** is one of the category of [rules](/docs/platform/rules/) available in Kianda, that enables user-based operations associated with user **properties**, for example **updating** a user property, **retrieving** a user property and **finding** a user based on a property. The user rules also allow you to **invite partners** and **share** a particular process with them. These rules are very useful when you want to do any property actions on a user like find a user or update a property of a specific user.
+**User rules** is one of the category of [rules](/platform/rules/) available in Kianda, that enables user-based operations associated with user **properties**, for example **updating** a user property, **retrieving** a user property and **finding** a user based on a property. The user rules also allow you to **invite partners** and **share** a particular process with them. These rules are very useful when you want to do any property actions on a user like find a user or update a property of a specific user.
 
 Take an example of a **Look up user by property** rule. Implementing this rule will allow you to store a user in a **User picker** field by providing a property of a user, for example user role or email address. See image below when a location is being chosen, a trainer is found that is assigned to the location:
 
 ![User rules](/images/lookup-user-location.jpg)
 
-In this example the **Location of training** is a **List** control is connected to a **SQL Server connector**. The Display field, Value field and Sort by  of the List control is set to **Location**. With the list control set up that way, we are provided with a list based on our Location column in the database. For more information on how to create a List control and set its datasource go to [List control](/docs/platform/controls/input/list/). See image below to see how the **Location of training** field is set up:
+In this example the **Location of training** is a **List** control is connected to a **SQL Server connector**. The Display field, Value field and Sort by  of the List control is set to **Location**. With the list control set up that way, we are provided with a list based on our Location column in the database. For more information on how to create a List control and set its datasource go to [List control](/platform/controls/input/list/). See image below to see how the **Location of training** field is set up:
 
 ![User rules](/images/users-list-control-example.jpg)
 
-With all of our users, we have set up a **Location property** and each user is assigned a different locations based on where they operate and provide training. The **lookup user by property** is set to **Location** which we provide to the rule by selecting our **Location of training**  field. The outcome of this combination will set our **Trainer** field with the user that the **Location property** matches the value specified in the **Location of training** field. To learn more about how to create your own user properties and attributes go to [Modifying profile attributes](/docs/platform/administration/users/#modify-profile-attributes). See image below of the Lookup user by property rule:
+With all of our users, we have set up a **Location property** and each user is assigned a different locations based on where they operate and provide training. The **lookup user by property** is set to **Location** which we provide to the rule by selecting our **Location of training**  field. The outcome of this combination will set our **Trainer** field with the user that the **Location property** matches the value specified in the **Location of training** field. To learn more about how to create your own user properties and attributes go to [Modifying profile attributes](/platform/administration/users/#modify-profile-attributes). See image below of the Lookup user by property rule:
 
 ![User rules](/images/users-lookup.jpg)
 

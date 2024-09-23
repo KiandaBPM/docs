@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\static
 
 As a workspace **Administrator** you can add a **Global JavaScript** file to add new functionality to your organisation's workspace that is **globally available**, for example a helper class or a helper method that can be called from different parts of the platform. Your function could also bind to an onscreen element, for example if a user clicks on a particular element on screen you may want a specific action to happen using JavaScript.
 
-The **Global JavaScript editor** exists within the **Subscription details** section of the Subscription function, within the **Administration** section of the site, see [Subscription](/docs/platform/administration/subscription/) for an introduction to the **Subscription** function.
+The **Global JavaScript editor** exists within the **Subscription details** section of the Subscription function, within the **Administration** section of the site, see [Subscription](/platform/administration/subscription/) for an introduction to the **Subscription** function.
 
 The benefit of this file is that any functions listed within it become **globally available** across the site. Therefore you are creating a library of reusable functions that can be called upon anywhere in the processes you create. The file loads immediately when the application starts.
 

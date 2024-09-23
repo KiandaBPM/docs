@@ -14,7 +14,7 @@ The Kianda **webhooks** function allows you to configure URLs that can respond t
 
 ## How to get started
 
-You must have an **Administrator** or **Developer** role see [Users & Groups](/docs/platform/administration/users/) for more details on roles. Then to get started with webhooks:
+You must have an **Administrator** or **Developer** role see [Users & Groups](/platform/administration/users/) for more details on roles. Then to get started with webhooks:
 
 1. Navigate to **Administration** in the left-hand side menu, and click on **Developer**. This will bring you to the **Developer resources** page.
 
@@ -45,9 +45,9 @@ You must have an **Administrator** or **Developer** role see [Users & Groups](/d
 
 ## What's next ![Idea icon](/images/18.png)
 
-To continue with low-code development, you can view [Templating basics](/docs/low-code/templating-basics/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/docs/getting-started/welcome/no-code/) and [What is low-code?](/docs/getting-started/welcome/low-code/). 
+To continue with low-code development, you can view [Templating basics](/low-code/templating-basics/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/getting-started/welcome/no-code/) and [What is low-code?](/getting-started/welcome/low-code/). 
 
-To return to the main [Low-code development](/docs/low-code/) page, click on the link.
+To return to the main [Low-code development](/low-code/) page, click on the link.
 
 
 

@@ -34,7 +34,7 @@ The component you create can be updated at any time. Once you publish your compo
    - **ID** - represents the **unique** id of the component. Ensure that the ID entered here is unique across all components and processes.
    - **Description** - enter a valid description of the component you are creating.
    - **Group** - using this drop-down list, you can add your component to a existing group or create a new one.
-   - **Administrators** - select the appropriate component administrators from , to read more about process and component administrators visit [Process security](/docs/security/process-level-security).
+   - **Administrators** - select the appropriate component administrators from , to read more about process and component administrators visit [Process security](/security/process-level-security).
 
 5. Click on **OK** when you are finished filling out the detail. You will be automatically moved to the component designer screen. 
 
@@ -67,5 +67,5 @@ The component you create can be updated at any time. Once you publish your compo
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-- To read more about field control visit [Controls](/docs/platform/application-designer/process/).
-- To read more about rules visit [Rules](/docs/platform/rules/).
+- To read more about field control visit [Controls](/platform/application-designer/process/).
+- To read more about rules visit [Rules](/platform/rules/).

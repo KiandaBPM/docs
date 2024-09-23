@@ -9,20 +9,20 @@ typora-root-url: ..\..\..\..\..\static
 
 For example, in a Purchase Order Request form, you may want to use a Table field to display certain information about items or suppliers and/or to capture details the user inputs about items being ordered. In addition, you could apply rules to some of the fields within the table to, for example, automatically calculate totals or percentages or to pull in data from external data sources. 
 
-For more information about applying rules to fields and forms go to [Rules](/docs/platform/rules/) and for more specific information about applying rules to **Table fields** see [Table rules](/docs/platform/rules/tables/).
+For more information about applying rules to fields and forms go to [Rules](/platform/rules/) and for more specific information about applying rules to **Table fields** see [Table rules](/platform/rules/tables/).
 
 We will now go through:
-- [How to add a Table field to a form](/docs/platform/controls/input/table#how-to-get-started)
-- [How to edit column fields in a Table](/docs/platform/controls/input/table#how-to-edit-column-fields-in-a-table)
-- [How to change the title of a Table colulmn](/docs/platform/controls/input/table#how-to-change-the-title-of-a-table-column)
-- [How to delete a column from a Table](/docs/platform/controls/input/table#how-to-delete-a-column-from-a-table)
-- [How to change the field type of an existing Table column](/docs/platform/controls/input/table#how-to-change-the-field-type-of-an-existing-table-column)
-- [How to insert new columns in a Table](/docs/platform/controls/input/table#how-to-insert-new-columns-in-a-table)
-- [How to move columns in a Table](/docs/platform/controls/input/table#how-to-move-columns-in-a-table)
-- [How to edit the Table field](/docs/platform/controls/input/table#how-to-edit-the-table-field)
-- [How to move Table fields](/docs/platform/controls/input/table#how-to-move-table-fields)
-- [How to delete Table fields](/docs/platform/controls/input/table#how-to-delete-table-fields)
-- [How to edit Table field properties](/docs/platform/controls/input/table#how-to-edit-table-field-properties)
+- [How to add a Table field to a form](/platform/controls/input/table#how-to-get-started)
+- [How to edit column fields in a Table](/platform/controls/input/table#how-to-edit-column-fields-in-a-table)
+- [How to change the title of a Table colulmn](/platform/controls/input/table#how-to-change-the-title-of-a-table-column)
+- [How to delete a column from a Table](/platform/controls/input/table#how-to-delete-a-column-from-a-table)
+- [How to change the field type of an existing Table column](/platform/controls/input/table#how-to-change-the-field-type-of-an-existing-table-column)
+- [How to insert new columns in a Table](/platform/controls/input/table#how-to-insert-new-columns-in-a-table)
+- [How to move columns in a Table](/platform/controls/input/table#how-to-move-columns-in-a-table)
+- [How to edit the Table field](/platform/controls/input/table#how-to-edit-the-table-field)
+- [How to move Table fields](/platform/controls/input/table#how-to-move-table-fields)
+- [How to delete Table fields](/platform/controls/input/table#how-to-delete-table-fields)
+- [How to edit Table field properties](/platform/controls/input/table#how-to-edit-table-field-properties)
 
 ## How to get started
 
@@ -49,7 +49,7 @@ As we go through the options available for editing a Table, we will keep in mind
 
 ### How to edit column fields in a Table
 
-First, decide **how many columns** you need in your table and **what type of input field** you want to use for each column. To learn more about the eight different types of Input fields that you can use, go to [Input controls](/docs/platform/controls/input/).
+First, decide **how many columns** you need in your table and **what type of input field** you want to use for each column. To learn more about the eight different types of Input fields that you can use, go to [Input controls](/platform/controls/input/).
 
 In our example, we want to change the default table that was inserted - titled **Table 1** with two columns of text box fields - into a table called '**Existing Qualifications**' to capture the existing qualifications of the user who is requesting further training. 
 
@@ -66,7 +66,7 @@ To change the default title of the first column texbox field from **Text 1**:
 
 ![Table select field to edit](/images/table-edit-field.jpg)
 
-The **Edit field - Text** dialog box will open and you can change the title of the field here. There are also a number of other options available to you - see [Text box control](/docs/platform/controls/input/textbox/) for more information on how you can edit text box fields.
+The **Edit field - Text** dialog box will open and you can change the title of the field here. There are also a number of other options available to you - see [Text box control](/platform/controls/input/textbox/) for more information on how you can edit text box fields.
 
 **Note**: The unique names of fields outside of a table do not conflict with the unique names of fields *within* a table. Fields with duplicate unique names within the same table *are not* allowed however.
 
@@ -143,7 +143,7 @@ To edit the **Table field** itself:
 
    ![Table help text example](/images/table-helptext.jpg)
 
-6. **Custom CSS class name** - You can type the name of a CSS class to allow the Table to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
+6. **Custom CSS class name** - You can type the name of a CSS class to allow the Table to inherit specific styles defined in the [Global CSS file](/low-code/global-css/).
 
 7. **Add row text** - you can insert the text you want to appear with the Add Row button ![Table add row button](/images/table-add-row.jpg). By default, this will be 'add row'.
 
@@ -177,7 +177,7 @@ To edit the **Table field** itself:
 
 16. Make whatever changes you want to make to the table in the **Edit field - Table** dialog box and then click **OK** to confirm. 
 
-    If you want to make your table more dynamic - for example, so that calculations are made or information is autofilled into part of the table - you can add rules to it. To learn about applying rules to fields and forms go to [Rules](/docs/platform/rules/) and for more specific information about applying rules to **Table fields** see [Table rules](/docs/platform/rules/tables/).
+    If you want to make your table more dynamic - for example, so that calculations are made or information is autofilled into part of the table - you can add rules to it. To learn about applying rules to fields and forms go to [Rules](/platform/rules/) and for more specific information about applying rules to **Table fields** see [Table rules](/platform/rules/tables/).
 
 
 
@@ -226,7 +226,7 @@ You can then check how the Table will appear to users on their PC or mobile phon
 
 You can also view and edit the **properties of the individual column fields** within the Table by selecting the column field.
 
-To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
 ### Saving changes and version history ###
 
@@ -238,10 +238,10 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 
 Now that you've learned about the **Table control**, find out more about the other types of **Input fields** you can add to a Kianda process:
 
-- [Date control](/docs/platform/controls/input/date/)
-- [File upload control](/docs/platform/controls/input/file-upload/)
-- [List control](/docs/platform/controls/input/list/)
-- [Number control](/docs/platform/controls/input/number/)
-- [Text box control](/docs/platform/controls/input/textbox/)
-- [Toggle control](/docs/platform/controls/input/toggle/)
-- [User picker control](/docs/platform/controls/input/user-picker/)
+- [Date control](/platform/controls/input/date/)
+- [File upload control](/platform/controls/input/file-upload/)
+- [List control](/platform/controls/input/list/)
+- [Number control](/platform/controls/input/number/)
+- [Text box control](/platform/controls/input/textbox/)
+- [Toggle control](/platform/controls/input/toggle/)
+- [User picker control](/platform/controls/input/user-picker/)

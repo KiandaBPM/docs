@@ -7,7 +7,7 @@ typora-root-url: ..\..\..\..\..\static
 
 **Number controls** (fields) can be inserted in a form if you want form users to insert a numerical value. Number fields can be formatted to be integers (whole numbers), currency or percentages. 
 
-For example, in a Purchase Order Request form, you may want to use Number fields to allow the user to insert the number, unit price and total cost of items being ordered and you may apply rules to some of those fields so that they perform calculations or pull values from other fields or forms. Go to [Rules](/docs/platform/rules/) and [Expression builder](/docs/platform/rules/general/expression-builder) for more information on how you make your forms dynamic.
+For example, in a Purchase Order Request form, you may want to use Number fields to allow the user to insert the number, unit price and total cost of items being ordered and you may apply rules to some of those fields so that they perform calculations or pull values from other fields or forms. Go to [Rules](/platform/rules/) and [Expression builder](/platform/rules/general/expression-builder) for more information on how you make your forms dynamic.
 
 ## How to get started
 
@@ -55,7 +55,7 @@ To edit a **Number field**:
 
    ![File upload help text example](/images/number-help-text.jpg)
 
-6. **Custom CSS class name** - You can type the name of a CSS class to allow the Number to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
+6. **Custom CSS class name** - You can type the name of a CSS class to allow the Number to inherit specific styles defined in the [Global CSS file](/low-code/global-css/).
 
 7. **Display format** - you can choose whether the number inserted by the user is formatted to be an integer (whole number), currency or a percentage. 
 
@@ -101,7 +101,7 @@ To edit a **Number field**:
 
     ![Number expression example](/images/number-expression-example2.jpg)
 
-    To learn more about applying rules and expressions to Number fields, go to [Rules](/docs/platform/rules/) and [Expression builder](/docs/platform/rules/general/expression-builder).
+    To learn more about applying rules and expressions to Number fields, go to [Rules](/platform/rules/) and [Expression builder](/platform/rules/general/expression-builder).
 
 
 
@@ -139,7 +139,7 @@ For example, the **Field Properties** associated with a **Number field** titled 
 - **Visible** - If this is selected, the Number field will be visible in the form.
 - **Layout** - The width of the blue bar can be adjusted to change the width of the Number field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
-To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
 ### Saving changes and version history ###
 
@@ -151,10 +151,10 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 
 Now that you've learned about the **Number control**, find out more about the other types of **Input fields** you can add to a Kianda process:
 
-- [Date control](/docs/platform/controls/input/date/)
-- [File upload control](/docs/platform/controls/input/file-upload/)
-- [List control](/docs/platform/controls/input/list/)
-- [Table control](/docs/platform/controls/input/table/)
-- [Text box control](/docs/platform/controls/input/textbox/)
-- [Toggle control](/docs/platform/controls/input/toggle/)
-- [User picker control](/docs/platform/controls/input/user-picker/)
+- [Date control](/platform/controls/input/date/)
+- [File upload control](/platform/controls/input/file-upload/)
+- [List control](/platform/controls/input/list/)
+- [Table control](/platform/controls/input/table/)
+- [Text box control](/platform/controls/input/textbox/)
+- [Toggle control](/platform/controls/input/toggle/)
+- [User picker control](/platform/controls/input/user-picker/)

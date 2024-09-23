@@ -4,7 +4,7 @@ weight: 1
 typora-root-url: ..\..\..\..\..\static
 ---
 
-**Workflow** rules is one category of [rules](/docs/platform/rules/) that relates to user interactions with form components. Using Workflow rules will allow you to change the flow of information within a process. For example in a simple Training Process that is made up of three forms by default, the **first form** in a process is the **current form**. 
+**Workflow** rules is one category of [rules](/platform/rules/) that relates to user interactions with form components. Using Workflow rules will allow you to change the flow of information within a process. For example in a simple Training Process that is made up of three forms by default, the **first form** in a process is the **current form**. 
 
    ![Three form process example](/images/3-form-example.jpg)
 

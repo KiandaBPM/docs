@@ -10,15 +10,15 @@ Within your Kianda platform, you have the option to create your own **custom wid
 
 ## Prerequisites
 
-Before getting started, open a custom widget of your choice in code edit mode within Kianda [Developer](/docs/platform/administration/developer/). For example choose features within rule, field, dashboard elements that require debugging.
+Before getting started, open a custom widget of your choice in code edit mode within Kianda [Developer](/platform/administration/developer/). For example choose features within rule, field, dashboard elements that require debugging.
 
 
 
 ## Custom widget debugging practices
 
-There are several methods of debugging your custom [field](/docs/low-code/field-widget/), [rule](/docs/low-code/rule-widget/), and [dashboard](/docs/low-code/dashboard-widget/) widgets listed below. You can also investigate and understand **Ember.js** on your Kianda platform via the [Ember.js inspector](/docs/low-code/using-the-ember-inspector/), an an open-source JavaScript web application framework that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner.
+There are several methods of debugging your custom [field](/low-code/field-widget/), [rule](/low-code/rule-widget/), and [dashboard](/low-code/dashboard-widget/) widgets listed below. You can also investigate and understand **Ember.js** on your Kianda platform via the [Ember.js inspector](/low-code/using-the-ember-inspector/), an an open-source JavaScript web application framework that allows you to build highly interactive applications that use JavaScript in a quick and efficient manner.
 
-On this page, we will look at using [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/), however most web browsers provide web analysis and debugging tools such as [Mozilla Firefox Developer Tools](https://www.mozilla.org/en-US/firefox/developer/) and [Safari Web Inspector](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40017576-CH1-SW1).
+On this page, we will look at using [Google Chrome Developer Tools](https://developer.chrome.com/devtools/), however most web browsers provide web analysis and debugging tools such as [Mozilla Firefox Developer Tools](https://www.mozilla.org/en-US/firefox/developer/) and [Safari Web Inspector](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/Web_Inspector_Tutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40017576-CH1-SW1).
 
 
 
@@ -52,7 +52,7 @@ To print debugging messages to the console:
 
    This code displays various attributes relating to the third question in the FAQ accordion, however other properties and methods can be called in the developer console instead of *.attributes*:
    
-   * **.style** - to view the custom CSS that is being applied to the HTML. For more on this, see [Global CSS File](/docs/low-code/global-css/).
+   * **.style** - to view the custom CSS that is being applied to the HTML. For more on this, see [Global CSS File](/low-code/global-css/).
    * **.focus()** - if your HTML elements appear to be hidden or out of focus, the *.focus()* method snaps the browser view to the elements position.
    * **.innerHTML** - returns the HTML content within the selected element, useful for analysing and manipulating content.
 
@@ -101,7 +101,7 @@ To use the debugger function:
    3. The values/calculations are displayed under the **Script** heading in the bottom right-hand corner and will be updated on each iteration.
    4. You can choose to select further code **Breakpoints** by ticking the checkboxes beside *Pause on uncaught exceptions* and *Pause on caught exceptions*.
    
-   The debugger function operates similarly to the [Rule debugger](/docs/troubleshooting/rule-debugger) with its iterative, step-by-step stage based troubleshooting flow.
+   The debugger function operates similarly to the [Rule debugger](/troubleshooting/rule-debugger) with its iterative, step-by-step stage based troubleshooting flow.
    
    
    
@@ -120,7 +120,7 @@ To use the debugger function:
 
 Now that you've learned about the **Custom widget debugging**, find out more about other troubleshooting features:
 
-- [Rule debugger](/docs/troubleshooting/rule-debugger)
-- [Rule diagnostics](/docs/troubleshooting/rule-diagnostics/)
-- [Version history and Auditing](/docs/troubleshooting/version-history-and-auditing)
+- [Rule debugger](/troubleshooting/rule-debugger)
+- [Rule diagnostics](/troubleshooting/rule-diagnostics/)
+- [Version history and Auditing](/troubleshooting/version-history-and-auditing)
 

@@ -10,7 +10,7 @@ Take an example of a **Find a user** rule. Implementing this rule will result in
 
 ## Before getting started
 
-In advance of using the SharePoint rules you must have created a SharePoint data connector and establish a connection with your SharePoint site. The data connector is used as part of the SharePoint rules to perform CRUD operations on a site you established a connection with. To learn more about the SharePoint data connector go to [SharePoint connector](/docs/platform/connectors/sharepoint/).
+In advance of using the SharePoint rules you must have created a SharePoint data connector and establish a connection with your SharePoint site. The data connector is used as part of the SharePoint rules to perform CRUD operations on a site you established a connection with. To learn more about the SharePoint data connector go to [SharePoint connector](/platform/connectors/sharepoint/).
 
 ## Getting started with SharePoint rules
 

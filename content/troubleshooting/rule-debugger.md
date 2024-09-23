@@ -10,7 +10,7 @@ The **Rule debugger** is a troubleshooting feature that allows you to visualise 
 
 ![Rule debugger in action example](/images/rule-debugger-example.jpg)
 
-The **Rule Debugger** can be turned on at any point, for example when starting a new process or using the Previewer. We look at the [Previewer](/docs/platform/application-designer/designer/previewer/) in the steps below, however you can also access this feature via [Rule diagnostics](/docs/troubleshooting/rule-diagnostics/).
+The **Rule Debugger** can be turned on at any point, for example when starting a new process or using the Previewer. We look at the [Previewer](/platform/application-designer/designer/previewer/) in the steps below, however you can also access this feature via [Rule diagnostics](/troubleshooting/rule-diagnostics/).
 
 
 
@@ -42,7 +42,7 @@ To access the rule debugger feature:
    * **Resume** - resumes the **execution of all rules in a block** where there are two or more rules attached to a field, form or process. The rule debug dialog will only then reappear when new data is entered into another field in the process flow.
    * **Stop debug** - **exits the debugging mode** and the rule debug dialog box disappears. You will not receive messages about current rule execution, but will remain in the process preview window.
 
-4. You can alter the conditions on the currently displayed rule (if any), by clicking on the **Conditions** filter button ![Conditions filter button image](/images/conditions-filter-btn.png). This will display another modal dialog box, which gives you the option to change the condition being applied to the rule, add further conditions, remove some conditions and more - allowing for the troubleshooting of different use cases within your process. To learn more about this, see [Conditions](/docs/platform/rules/general/add-conditions/).
+4. You can alter the conditions on the currently displayed rule (if any), by clicking on the **Conditions** filter button ![Conditions filter button image](/images/conditions-filter-btn.png). This will display another modal dialog box, which gives you the option to change the condition being applied to the rule, add further conditions, remove some conditions and more - allowing for the troubleshooting of different use cases within your process. To learn more about this, see [Conditions](/platform/rules/general/add-conditions/).
 
    ![Conditions dialog for rule debugger](/images/rule-debugger-conditions.png)
 
@@ -56,6 +56,6 @@ To exit the debugging process, you can click on the **Stop debug** button ![stop
 
 Now that you've learned about the **Rule debugger**, find out more about other troubleshooting features:
 
-- [Custom widget debugging](/docs/troubleshooting/custom-widget-debugging/)
-- [Rule diagnostics](/docs/troubleshooting/rule-diagnostics/)
-- [Version history and Auditing](/docs/troubleshooting/version-history-and-auditing)
+- [Custom widget debugging](/troubleshooting/custom-widget-debugging/)
+- [Rule diagnostics](/troubleshooting/rule-diagnostics/)
+- [Version history and Auditing](/troubleshooting/version-history-and-auditing)

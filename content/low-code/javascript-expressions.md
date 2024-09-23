@@ -12,7 +12,7 @@ The use of expressions allows you to cleverly manipulate data to create new cons
 
 ![Expression new employee ID example](/images/expression-id-example.jpg)
 
-The [Expression builder](/docs/platform/rules/general/expression-builder/) page provides an introduction to expressions and shows one example of expressions in use in a **Send email rule** to automate how emails are sent. The example simply uses the **[identifier]** or unique name from form fields to populate the body text of the email.
+The [Expression builder](/platform/rules/general/expression-builder/) page provides an introduction to expressions and shows one example of expressions in use in a **Send email rule** to automate how emails are sent. The example simply uses the **[identifier]** or unique name from form fields to populate the body text of the email.
 
 ![Expression example](/images/expression-example.gif)
 

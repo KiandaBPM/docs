@@ -6,9 +6,9 @@ typora-root-url: ..\..\..\static
 
 ## Introduction
 
-Kianda’s low code development environment provides developers with a graphical user interface to quickly create customised applications that can be used in automated processes. Kianda **Developer** allows you to quickly build **reusable widgets** allowing you to extend the functionality of the system. You can define the functionality or module that you want to define and deliver that module for inclusion in an application design, without the need to invent all the code from scratch. For example you could create a custom control that allows you to display images in a particular way, see [Custom field development](/docs/low-code/field-widget/).
+Kianda’s low code development environment provides developers with a graphical user interface to quickly create customised applications that can be used in automated processes. Kianda **Developer** allows you to quickly build **reusable widgets** allowing you to extend the functionality of the system. You can define the functionality or module that you want to define and deliver that module for inclusion in an application design, without the need to invent all the code from scratch. For example you could create a custom control that allows you to display images in a particular way, see [Custom field development](/low-code/field-widget/).
 
-Kianda **Developer** can be utilised to implement [HTTP requests](/docs/low-code/webhooks/) and [API](/docs/apis/) calls to allow for real-time data interactions, click on the links to get more details.
+Kianda **Developer** can be utilised to implement [HTTP requests](/low-code/webhooks/) and [API](/apis/) calls to allow for real-time data interactions, click on the links to get more details.
 
 
 ## Why choose low-code development? 
@@ -25,7 +25,7 @@ You can also build upon pre-defined field, rule. data connector and dashboard co
 
 ## How to implement low-code development 
 
-If you are an experienced developer with an **Administrator** or **Developer** role (see [Users & Groups](/docs/platform/administration/users/)), you can create a new custom widget within Kianda by doing the following: 
+If you are an experienced developer with an **Administrator** or **Developer** role (see [Users & Groups](/platform/administration/users/)), you can create a new custom widget within Kianda by doing the following: 
 
 1. Navigate to **Administration > Developer > New widget** to begin creating a new custom widget.
 
@@ -42,7 +42,7 @@ If you are an experienced developer with an **Administrator** or **Developer** r
      ![Edit widget screen](/images/dashboard-widget-holiday.jpg) 
 
 3. From here the following tabs are available:
-   * **Widget UI** – a coding environment that allows you to define the widget user interface. The widget UI uses **HTML** and **Handlebars** templating language,  that uses curly brackets {{}}. Go to [Templating basics](/docs/low-code/templating-basics/) for more information on Handlesbars.
+   * **Widget UI** – a coding environment that allows you to define the widget user interface. The widget UI uses **HTML** and **Handlebars** templating language,  that uses curly brackets {{}}. Go to [Templating basics](/low-code/templating-basics/) for more information on Handlesbars.
 
      ```handlebars
      {{#if (eq displayMode "settings")}}
@@ -79,15 +79,15 @@ If you are an experienced developer with an **Administrator** or **Developer** r
 
 Depending on the type of newly created custom widget, they can be accessed by:
 
-* **Field widget** - navigate to **Administration > Designer > *Your Process* > Controls.** Under **Custom**, your field widget will be displayed and is now ready for use. To learn more about field widgets, see [Custom field development](/docs/low-code/field-widget/).
+* **Field widget** - navigate to **Administration > Designer > *Your Process* > Controls.** Under **Custom**, your field widget will be displayed and is now ready for use. To learn more about field widgets, see [Custom field development](/low-code/field-widget/).
 
-* **Rule widget** - navigate to **Administration > Designer > *Your Process* > Add a rule.** Under **Custom**, your rule widget will be displayed and is now ready for use. To learn more about rule widgets, see [Custom rule development](/docs/low-code/rule-widget/).
+* **Rule widget** - navigate to **Administration > Designer > *Your Process* > Add a rule.** Under **Custom**, your rule widget will be displayed and is now ready for use. To learn more about rule widgets, see [Custom rule development](/low-code/rule-widget/).
 
 * **Dashboard widget** - navigate to **Dashboard > *Your Dashboard* > Edit current page** button ![edit current page button](/images/edit_orig.png). From there, click the drop-down list button and you will have access to the created custom dashboard widgets. 
 
   ![Custom dashboard widgets drop-down list](/images/custom-dashboard-widgets.jpg)
   
-  To learn more about dashboard widgets, see [Custom dashboard development](/docs/low-code/dashboard-widget/).
+  To learn more about dashboard widgets, see [Custom dashboard development](/low-code/dashboard-widget/).
   
   
 
@@ -95,13 +95,13 @@ Depending on the type of newly created custom widget, they can be accessed by:
 
 ## What's next ![Idea icon](/images/18.png)
 
-To continue with low-code development, you can view [Templating basics](/docs/low-code/templating-basics/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/docs/getting-started/welcome/no-code/) and [What is low-code?](/docs/getting-started/welcome/low-code/). 
+To continue with low-code development, you can view [Templating basics](/low-code/templating-basics/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/getting-started/welcome/no-code/) and [What is low-code?](/getting-started/welcome/low-code/). 
 
 To read more how to create the different widget types go to:
 
-- [Custom field development](/docs/low-code/field-widget/) to read about field widgets
-- [Custom rule development](/docs/low-code/rule-widget/) to read about rule widgets
-- [Custom dashboard development](/docs/low-code/dashboard-widget/) to read about dashboard widgets
+- [Custom field development](/low-code/field-widget/) to read about field widgets
+- [Custom rule development](/low-code/rule-widget/) to read about rule widgets
+- [Custom dashboard development](/low-code/dashboard-widget/) to read about dashboard widgets
 
 
 

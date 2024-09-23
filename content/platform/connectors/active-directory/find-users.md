@@ -9,11 +9,11 @@ The **Find Users** remote procedure allows you to look for a user within your di
 
 ## When to use
 
-Having an AD connector will allow you to access information that is stored  within your Kianda subscription. You will be able to use **User** related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the [Data](/docs/platform/rules/data/) rules that are predefined within Kianda.
+Having an AD connector will allow you to access information that is stored  within your Kianda subscription. You will be able to use **User** related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the [Data](/platform/rules/data/) rules that are predefined within Kianda.
 
 ## Before you get started
 
-Create a data connector to your AD database by following the steps detailed in the [Active Directory data connector page](/docs/platform/connectors/active-directory/#how-to-get-started) .
+Create a data connector to your AD database by following the steps detailed in the [Active Directory data connector page](/platform/connectors/active-directory/#how-to-get-started) .
 
 ## Remote procedure inputs
 
@@ -31,7 +31,7 @@ Create a data connector to your AD database by following the steps detailed in t
    - **Directory path** - enter in the path to the directory. The path must be LDAP or GC.
    - **AD User** - enter in the domain and user that you want to connect to. To specify the domain and user correctly use the following format: `<domain>/<username>`
    - **Password** - enter in the password used to login for the desired user.
-   - **Use Kianda Cloud Connect** - by default this option is enabled, the cloud connect is used to **create a connection** between the **Active Directory connector** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/docs/platform/connectors/kianda-cloud-connect/). 
+   - **Use Kianda Cloud Connect** - by default this option is enabled, the cloud connect is used to **create a connection** between the **Active Directory connector** and **Kianda** itself. To learn more about **Kianda Cloud Connect** and how to create a connection between Kianda and your PC, go to [Kianda Cloud Connect](/platform/connectors/kianda-cloud-connect/). 
      - **Connectors** - displays all available connector PC's that have a **connection established** with your **Kianda** subscription. This option is used to select the PC **connection** that is running the Active Directory server.
    - **Status** - represents the current status of the connection.
      - **incomplete** - means that the details of the connector were not fully completed.
@@ -42,13 +42,13 @@ Create a data connector to your AD database by following the steps detailed in t
 
 5. Click on **Save** ![Save connection button](/images/save-connection.jpg) to save the connection and you will receive a notification saying **Details saved successfully**.
 
-6. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
+6. Add Security settings by clicking on the **Security** button, go to [Setting security for data sources](/platform/connectors/#setting-security-for-data-sources) for more details.
 
 7. Click on **Close** to close the details page and return to the data source management main view.
 
 ## Active Directory functions
 
-Active Directory functions are **Users** related and to use them you have to use the [Data](/docs/platform/rules/data/) rules that are predefined within Kianda. The functions that are available are:
+Active Directory functions are **Users** related and to use them you have to use the [Data](/platform/rules/data/) rules that are predefined within Kianda. The functions that are available are:
 
 ![Active Directory list of functions](/images/ad-functions.jpg)
 
@@ -67,11 +67,11 @@ Lets take the **CreateUser** function as an example to show how these functions 
 
    ![Active Directory list of functions](/images/ad-create-user.jpg)
 
-2. We need to create at least five fields that will be used to provide a value as the required properties. We will use a [text box field](/docs/platform/controls/input/textbox/) for each one:
+2. We need to create at least five fields that will be used to provide a value as the required properties. We will use a [text box field](/platform/controls/input/textbox/) for each one:
 
    ![Required fields for the required properties](/images/ad-fields.jpg)
 
-3. Use the [create item](/docs/platform/rules/data/create-item/) rule to use the function. We need to map the text box fields to the appropriate properties as follow:
+3. Use the [create item](/platform/rules/data/create-item/) rule to use the function. We need to map the text box fields to the appropriate properties as follow:
 
    ![Mapping the required fields to create item rule](/images/ad-create-user-rule.jpg)
 
@@ -81,4 +81,4 @@ You can apply the create item rule to a button, for example, the submit button. 
 
 ### What’s next ![Idea icon](/images/18.png)
 
-Your **Active Directory connector** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/docs/platform/application-designer/designer/).
+Your **Active Directory connector** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/platform/application-designer/designer/).

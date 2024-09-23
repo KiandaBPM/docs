@@ -25,22 +25,22 @@ If you have the role **Administrator** or **Design business process**, go to **A
 
 There are 10 categories of rules:
 
-1. **Workflow** - rules that represent the actions a user intends to perform when they interact with form components. These rules enable you to execute actions that can change the flow of information within a process. There are 7 workflow rules, see [Workflow](/docs/platform/rules/workflow/) for more information.
-2. **Communications** - rules associated with user communication for example sending an email, meeting request or triggering a user alert. There are 4 communication rules, see [Communications](/docs/platform/rules/communications/) for more information. 
-3. **Data** - rules associated with database operations such as Create, Read, Update and Delete (CRUD) allowing these actions to occur on configured data sources. There are 5 data rules, see [Data](/docs/platform/rules/data/) for more information.
-4. **Users** - rules associated with user properties, allowing user lookup based on a user attribute or retrieve a user property. There are 4 user rules, see [Users](/docs/platform/rules/users/) for more information. 
-5. **File management** - rules concerned with generating documents such as Word, Excel or converting to PDF. There are 7 file management rules, see [File Management](/docs/platform/rules/files/) for more information. 
-6. **Tables** - rules associated with table operations such as sorting, copying table rows to another table, adding and removing table rows. There are 12 table rules, see [Tables](/docs/platform/rules/tables/) for more information. 
-7. **Dates** - date rules to calculate time and format dates with advanced filter options like omitting weekends or special dates. There are 4 date rules, see [Dates](/docs/platform/rules/dates/) for more information. 
-8. **Form actions** - rules linked to actions that are part of forms, for example submit, close or save. There are 6 form rules, see [Form actions](/docs/platform/rules/form-actions/) for more information. 
-9. **SharePoint** - SharePoint associated rules such as adding, finding or removing users, defining permissions and check-in/checkout of an item. There are 10 SharePoint rules, see [SharePoint](/docs/platform/rules/sharepoint/) for more information. 
-10. **Kianda AI** - there is 1 Kianda AI rule related to text analysis, see [Kianda AI](/docs/platform/rules/kianda-ai/) for more information. 
+1. **Workflow** - rules that represent the actions a user intends to perform when they interact with form components. These rules enable you to execute actions that can change the flow of information within a process. There are 7 workflow rules, see [Workflow](/platform/rules/workflow/) for more information.
+2. **Communications** - rules associated with user communication for example sending an email, meeting request or triggering a user alert. There are 4 communication rules, see [Communications](/platform/rules/communications/) for more information. 
+3. **Data** - rules associated with database operations such as Create, Read, Update and Delete (CRUD) allowing these actions to occur on configured data sources. There are 5 data rules, see [Data](/platform/rules/data/) for more information.
+4. **Users** - rules associated with user properties, allowing user lookup based on a user attribute or retrieve a user property. There are 4 user rules, see [Users](/platform/rules/users/) for more information. 
+5. **File management** - rules concerned with generating documents such as Word, Excel or converting to PDF. There are 7 file management rules, see [File Management](/platform/rules/files/) for more information. 
+6. **Tables** - rules associated with table operations such as sorting, copying table rows to another table, adding and removing table rows. There are 12 table rules, see [Tables](/platform/rules/tables/) for more information. 
+7. **Dates** - date rules to calculate time and format dates with advanced filter options like omitting weekends or special dates. There are 4 date rules, see [Dates](/platform/rules/dates/) for more information. 
+8. **Form actions** - rules linked to actions that are part of forms, for example submit, close or save. There are 6 form rules, see [Form actions](/platform/rules/form-actions/) for more information. 
+9. **SharePoint** - SharePoint associated rules such as adding, finding or removing users, defining permissions and check-in/checkout of an item. There are 10 SharePoint rules, see [SharePoint](/platform/rules/sharepoint/) for more information. 
+10. **Kianda AI** - there is 1 Kianda AI rule related to text analysis, see [Kianda AI](/platform/rules/kianda-ai/) for more information. 
 
 
 
 ## Rule design ###
 
-You can apply rules at button, field, and form level. At form level, rule(s) execute 'on load', that is when a process instance is initiated or kicked off for example as a result of a user creating a new instance from a [dashboard](/docs/platform/pages/), or automated through a [scheduled task](/docs/platform/administration/scheduledtasks/), then the rules are triggered into action when the form(s) within that process becomes the active form(s). 
+You can apply rules at button, field, and form level. At form level, rule(s) execute 'on load', that is when a process instance is initiated or kicked off for example as a result of a user creating a new instance from a [dashboard](/platform/pages/), or automated through a [scheduled task](/platform/administration/scheduledtasks/), then the rules are triggered into action when the form(s) within that process becomes the active form(s). 
 
 To get started with rule design:
 
@@ -54,12 +54,12 @@ To get started with rule design:
 
    ![Rule design example](/images/rule-design-example.jpg)
 
-4. When you have chosen your rule, an **Edit rule** dialog box opens allowing you to configure the rule to execute a particular action, which can be according to [conditions](/docs/platform/rules/general/add-conditions/) if you wish.
+4. When you have chosen your rule, an **Edit rule** dialog box opens allowing you to configure the rule to execute a particular action, which can be according to [conditions](/platform/rules/general/add-conditions/) if you wish.
 
 The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the **Edit rule** dialog box for each rule. The next section highlights where rules can be applied.
 
 ### Where to apply rules ###
-As introduced in the section above, rules can be added at **process**, **form** and **control/field** level, and are typically used as follows, bearing in mind that [Conditions](/docs/platform/rules/general/add-conditions/) can be applied to rules to control how the rules are executed:
+As introduced in the section above, rules can be added at **process**, **form** and **control/field** level, and are typically used as follows, bearing in mind that [Conditions](/platform/rules/general/add-conditions/) can be applied to rules to control how the rules are executed:
 
 - A rule applied at **process level** executes 'onload' meaning that when a new process instance is initiated, the rule will automatically execute, for example when someone opens a form, a 'Send email' rule could be used to send an email to someone notifying them that a form has been opened.
 
@@ -67,7 +67,7 @@ As introduced in the section above, rules can be added at **process**, **form** 
 
 - A rule applied at **control level** executes when the chosen field is clicked on, or involved in user or system interaction.
 
-  As with all rules, [Conditions](/docs/platform/rules/general/add-conditions/) within the rule determine how the rule is triggered, for example a rule applied to a control like a date field, may be executed only if a certain value is input into another field within a form.
+  As with all rules, [Conditions](/platform/rules/general/add-conditions/) within the rule determine how the rule is triggered, for example a rule applied to a control like a date field, may be executed only if a certain value is input into another field within a form.
 
 #### Edit rule dialog box ####
 
@@ -89,7 +89,7 @@ For example for a **Submit** button on a form, you may want a **Send email rule*
 
 
 
-Go to [Multiple rules](/docs/platform/rules/general/multiple-rules/) to read more about using multiple rules on a field or other item.
+Go to [Multiple rules](/platform/rules/general/multiple-rules/) to read more about using multiple rules on a field or other item.
 
 
 

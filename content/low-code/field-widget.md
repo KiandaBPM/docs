@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\static
 
 ## Introduction
 
-There are currently 16 predefined field or control widgets available to use in forms and processes, covering 3 categories: [Input](/docs/platform/controls/input/), [Layout](/docs/platform/controls/layout/) and [Actions](/docs/platform/controls/actions/). Click on the relevant links to find out more about each area. However if customised fields have been created, they are available to those with the role **Administration** and **Design business process** to use in process and form design in Kianda **Designer**. Customised fields are available under the **Custom controls** category.
+There are currently 16 predefined field or control widgets available to use in forms and processes, covering 3 categories: [Input](/platform/controls/input/), [Layout](/platform/controls/layout/) and [Actions](/platform/controls/actions/). Click on the relevant links to find out more about each area. However if customised fields have been created, they are available to those with the role **Administration** and **Design business process** to use in process and form design in Kianda **Designer**. Customised fields are available under the **Custom controls** category.
 
 Custom controls are created by **Administrators** or **Developers** who have coding experience to use Kianda's low-code development feature, Kianda **Developer**. Kianda Developer uses two tabs for each widget created, one for **widget UI** and one for the **widget code**. There is a short explanation of the widget UI syntax below.
 
@@ -29,13 +29,13 @@ The field picker for example is typically seen in **edit rule** dialog boxes to 
 
 ![Field picker component example](/images/field-picker-modal-example.jpg)
 
-Other field-related components include field-date, field-group, field-textbox and so on for the 16 predefined fields that exist. These components can be investigated using the [**Ember inspector**](/docs/low-code/using-the-ember-inspector/) add-in, click on the link for details.
+Other field-related components include field-date, field-group, field-textbox and so on for the 16 predefined fields that exist. These components can be investigated using the [**Ember inspector**](/low-code/using-the-ember-inspector/) add-in, click on the link for details.
 
 
 
 ## How to get started
 
-If you are an experienced developer with an **Administrator** or **Developer** role (see [Users & Groups](/docs/platform/administration/users/)), you can create a new custom field/control within Kianda by doing the following: 
+If you are an experienced developer with an **Administrator** or **Developer** role (see [Users & Groups](/platform/administration/users/)), you can create a new custom field/control within Kianda by doing the following: 
 
 1. Navigate to **Administration** in the left-hand side menu, and click on **Developer**. This will bring you to the **Developer resources** page. Field widgets are of type 'Field' in this list.
 
@@ -197,7 +197,7 @@ To use the new widget:
 
 ## What's next ![Idea icon](/images/18.png)
 
-To continue with low-code development, you can view [Templating basics](/docs/low-code/templating-basics/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/docs/getting-started/welcome/no-code/) and [What is low-code?](/docs/getting-started/welcome/low-code/). 
+To continue with low-code development, you can view [Templating basics](/low-code/templating-basics/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/getting-started/welcome/no-code/) and [What is low-code?](/getting-started/welcome/low-code/). 
 
 
 

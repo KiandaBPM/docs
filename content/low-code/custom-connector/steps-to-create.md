@@ -18,9 +18,9 @@ This section will detail how to create a new **Custom Connector** which is a cus
 
 Please note before you begin that there are three key steps that need to be implemented in order to create and use a customised connector. 
 
-1. Microservice - create a **microservice** that will implement metadata, query and test functions, click on the [Microservice](/docs/low-code/client-connector/create-microservice/) link to get further details.
+1. Microservice - create a **microservice** that will implement metadata, query and test functions, click on the [Microservice](/low-code/client-connector/create-microservice/) link to get further details.
 
-2. Use Kianda features to create and test your customised connector - use **Developer** to [register a new connector](#register-a-new-connector) and use **Data sources** to [create a connector datasource](/docs/platform/connectors/#creating-a-datasource) for the newly customised connector.
+2. Use Kianda features to create and test your customised connector - use **Developer** to [register a new connector](#register-a-new-connector) and use **Data sources** to [create a connector datasource](/platform/connectors/#creating-a-datasource) for the newly customised connector.
 
 3. Process - use the custom connector to bring data into a process and use the query hook to filter the data.
 
@@ -40,7 +40,7 @@ To create a new customised connector, follow the steps below:
 
 3. Make sure to **copy the secret key** to a safe location where you will find it as it will be needed later. You can do this by a) clicking on **Download TXT** which will result in the Secret Key being downloaded as a CSV file or b) clicking on **Copy Key to Clipboard**, then click on **OK** when done. 
 
-4. Ensure that this secret key is added to your Microservice code, see [Encryption and Decryption sample code](/docs/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code), where you need to replace the string in the `GetSecretKey` function as shown below:
+4. Ensure that this secret key is added to your Microservice code, see [Encryption and Decryption sample code](/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code), where you need to replace the string in the `GetSecretKey` function as shown below:
 
    ```c#
     private static string GetSecretKey()
@@ -57,11 +57,11 @@ To create a new customised connector, follow the steps below:
 
 ### Connector Settings tab
 
-This is where the Connector **Title** and **Icon** can be changed. These details will be seen in the [Data connectors](/docs/platform/connectors/) function, once the customised connector is created. 
+This is where the Connector **Title** and **Icon** can be changed. These details will be seen in the [Data connectors](/platform/connectors/) function, once the customised connector is created. 
 
 ![Connector Settings tab](/images/connector-settings-tab.jpg)
 
-The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/docs/low-code/custom-connector/create-microservice/) link for more details.
+The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/low-code/custom-connector/create-microservice/) link for more details.
 
 For example when your Microservice is running you should receive an output similar to the following shown using Azure functions and use these URLs in the **Connector Settings tab**.
 
@@ -97,11 +97,11 @@ This code creates the content on the screen seen below, available in the **Data 
 
 ![Datasources details created from Settings UI tab](/images/settings-ui-datasources.jpg)
 
-Other details on the screen above, like the name of the page **Datasource details**, **Use Kianda Cloud Connect** and buttons **Test connection**, **Save**, **Security** and **Close** are automatically part of the UI for customised data connectors. However, custom handlebars can be added for the **settings** of the connector datasource using code in the **Settings UI** tab, namely fields like **Datasource Name** and **Client Key** as shown in the image above. This principle works the same as **Widget UI**, which is seen when creating custom [rule widgets](/docs/low-code/rule-widget/) or [field widgets](/docs/low-code/field-widget/) for example.
+Other details on the screen above, like the name of the page **Datasource details**, **Use Kianda Cloud Connect** and buttons **Test connection**, **Save**, **Security** and **Close** are automatically part of the UI for customised data connectors. However, custom handlebars can be added for the **settings** of the connector datasource using code in the **Settings UI** tab, namely fields like **Datasource Name** and **Client Key** as shown in the image above. This principle works the same as **Widget UI**, which is seen when creating custom [rule widgets](/low-code/rule-widget/) or [field widgets](/low-code/field-widget/) for example.
 
 ### Settings Code ###
 
-In a similar manner to creating custom [rule widgets](/docs/low-code/rule-widget/) or [field widgets](/docs/low-code/field-widget/) where there are **Widget code** tabs, the connector widget has a tab called **Settings Code** which is used to create the JavaScript code for the settings UI.
+In a similar manner to creating custom [rule widgets](/low-code/rule-widget/) or [field widgets](/low-code/field-widget/) where there are **Widget code** tabs, the connector widget has a tab called **Settings Code** which is used to create the JavaScript code for the settings UI.
 
 By default there is code in this tab, for example the **Authorize** button shown in the **Datasource details** page above has an 'authorize' function which is the first segment of code below. 
 
@@ -164,7 +164,7 @@ By default there is code in this tab, for example the **Authorize** button shown
 }
 ```
 
-Other aspects to note in this sample code are the datasource settings, for example `datasource.settings.accessToken` and  `datasource.settings.environment` denoting that you can add whatever **settings** you want to the UI within the **Datasources details** page using this type of code. These settings could be then used in a [Microservice](/docs/low-code/custom-connector/create-microservice/) to create an action based on a chosen setting.
+Other aspects to note in this sample code are the datasource settings, for example `datasource.settings.accessToken` and  `datasource.settings.environment` denoting that you can add whatever **settings** you want to the UI within the **Datasources details** page using this type of code. These settings could be then used in a [Microservice](/low-code/custom-connector/create-microservice/) to create an action based on a chosen setting.
 
 ### Query Code ###
 
@@ -307,10 +307,10 @@ This structure will result in the output as shown in the image below,
 
 #### Query Hook
 
-The **Query hook** allows a query to the datasource to be customised. Parameters are passed into this function to allow customisation to happen. These parameters are: `datasource`, `query`, `rule` and `process`; sample schemas are available for each at the [Sample schema](/docs/low-code/custom-connector/sample-schemas/) link.
+The **Query hook** allows a query to the datasource to be customised. Parameters are passed into this function to allow customisation to happen. These parameters are: `datasource`, `query`, `rule` and `process`; sample schemas are available for each at the [Sample schema](/low-code/custom-connector/sample-schemas/) link.
 
 In the sample code below, the filter is obtained by drilling into the query conditions object.
-This is just one example of how the query can be customized before being processed, which is an advantage of using custom connectors. Take a look at the [query schema](/docs/low-code/custom-connector/sample-schemas/#query-success-hook-related-schemas) for more information
+This is just one example of how the query can be customized before being processed, which is an advantage of using custom connectors. Take a look at the [query schema](/low-code/custom-connector/sample-schemas/#query-success-hook-related-schemas) for more information
 
 ```javascript
  query(datasource, query, rule, process) {
@@ -335,4 +335,4 @@ querySuccess(datasource,result,rule,process) {
    return result;
   }
 ```
-Once the connector is created, the connector is available from the **Data sources** function under **Administration**, see [Creating a datasource](/docs/platform/connectors/#creating-a-datasource) for details. 
+Once the connector is created, the connector is available from the **Data sources** function under **Administration**, see [Creating a datasource](/platform/connectors/#creating-a-datasource) for details. 

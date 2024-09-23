@@ -19,7 +19,7 @@ These three considerations are established when the form is created, as seen in 
 
 ![New form dialog box](/images/newformsegments-1.gif)
 
-These properties can also change **dynamically** as a result of **rules being applied**, see [Rules](/docs/platform/rules/).
+These properties can also change **dynamically** as a result of **rules being applied**, see [Rules](/platform/rules/).
 
 ### Setting display modes statically
 
@@ -52,11 +52,11 @@ When you add this rule, under **Action** you can choose a field or form and choo
 
 ![Field display rule](/images/field-display-rule.jpg)
 
-For more information on this rule go to [Field Display mode rule](/docs/platform/rules/form-actions/field-display-mode/).
+For more information on this rule go to [Field Display mode rule](/platform/rules/form-actions/field-display-mode/).
 
-Other rules can be used in other ways to change process workflow and therefore how forms behave. For example using the [Assign form rule](/docs/platform/rules/workflow/assign-form/) you can assign a form to a particular user, making them the form owner, and therefore giving them edit access to the form.
+Other rules can be used in other ways to change process workflow and therefore how forms behave. For example using the [Assign form rule](/platform/rules/workflow/assign-form/) you can assign a form to a particular user, making them the form owner, and therefore giving them edit access to the form.
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To read more about form ownership go to [Form owner](/docs/platform/application-designer/forms/form-owners/).
-To read more about quick actions, go to [Form quick actions menu](/docs/platform/application-designer/forms/form-quick-action/).
+To read more about form ownership go to [Form owner](/platform/application-designer/forms/form-owners/).
+To read more about quick actions, go to [Form quick actions menu](/platform/application-designer/forms/form-quick-action/).

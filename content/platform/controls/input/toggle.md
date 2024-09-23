@@ -7,7 +7,7 @@ weight: 7
 
 Rules can be applied to **Toggle fields** to make your form more dynamic. One such rule, the **Show, hide or disable rule** can be applied to a Toggle field to have the effect of showing or hiding remaining options/sections in the form dependent on whether the toggle/checkbox is selected or not. 
 
-For example, in a Training Request form, a Toggle field could be used to record a manager's decision to either approve or reject an employee's training request - by applying the **Show, hide or disable** rule to this field, a different last section of the form will display based on the manager's decision. If the manager select's to approve the training, a sign-off button then appears; if the manager reject's the request, a 'Reason' text box appears for them to insert their feedback. To learn more about applying rules to fields, see [Rules](/docs/platform/rules/) and [Expression builder](/docs/platform/rules/general/expression-builder). To find out more about this specific rule, go to [Show, hide or disable](/docs/platform/rules/workflow/hide-or-disable).
+For example, in a Training Request form, a Toggle field could be used to record a manager's decision to either approve or reject an employee's training request - by applying the **Show, hide or disable** rule to this field, a different last section of the form will display based on the manager's decision. If the manager select's to approve the training, a sign-off button then appears; if the manager reject's the request, a 'Reason' text box appears for them to insert their feedback. To learn more about applying rules to fields, see [Rules](/platform/rules/) and [Expression builder](/platform/rules/general/expression-builder). To find out more about this specific rule, go to [Show, hide or disable](/platform/rules/workflow/hide-or-disable).
 
 
 
@@ -39,7 +39,7 @@ For example, in a Training Request form, a Toggle field could be used to record 
 
    ![List field help text example](/images/toggle-helptext-example.jpg)
 
-8. **Custom CSS class name** - You can type the name of a CSS class to allow the Toggle to inherit specific styles defined in the [Global CSS file](/docs/low-code/global-css/).
+8. **Custom CSS class name** - You can type the name of a CSS class to allow the Toggle to inherit specific styles defined in the [Global CSS file](/low-code/global-css/).
 
 9. **Value when enabled** - You can set the value for when the user selects the toggle/checkbox. For example, the value when it is selected could be 'Yes'.
 
@@ -72,7 +72,7 @@ To edit a **Toggle field**:
 
    ![Select toggle field to edit](/images/toggle-edit.jpg)
 
-   The **Edit field - Toggle** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - Toggle** dialog box (as already discussed in [How to get started](/docs/platform/controls/input/toggle#how-to-get-started)).
+   The **Edit field - Toggle** dialog box will open, enabling you to choose from the same range of options as appear in the **New field - Toggle** dialog box (as already discussed in [How to get started](/platform/controls/input/toggle#how-to-get-started)).
 
    ![Edit toggle field dialog box](/images/toggle-example-dialog2.jpg)
 
@@ -84,7 +84,7 @@ For example, you could apply a '**Set date**' rule to your ''**Order Received**'
 
 ![Toggle example date rule](/images/toggle-rule-date.jpg)
 
-To learn more about applying rules to fields, see [Rules](/docs/platform/rules/) and [Expression builder](/docs/platform/rules/general/expression-builder). To find out more about the specific rule added in our example - where a date is automatically populated in another field - go to [Set form field](/docs/platform/rules/data/set-form-field).
+To learn more about applying rules to fields, see [Rules](/platform/rules/) and [Expression builder](/platform/rules/general/expression-builder). To find out more about the specific rule added in our example - where a date is automatically populated in another field - go to [Set form field](/platform/rules/data/set-form-field).
 
 #### How to move a Toggle field
 
@@ -126,7 +126,7 @@ For example, the **Field Properties** associated with a **Toggle field** titled 
 
 - **Layout** - The width of the blue bar can be adjusted to change the width of the Toggle field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
-To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
 
 
@@ -140,10 +140,10 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 
 Now that you've learned about **Toggle controls**, find out more about the other types of **Input fields** you can add to a Kianda process:
 
-- [Date control](/docs/platform/controls/input/date/)
-- [File upload control](/docs/platform/controls/input/file-upload/)
-- [List control](/docs/platform/controls/input/list/)
-- [Number control](/docs/platform/controls/input/number/)
-- [Table control](/docs/platform/controls/input/table/)
-- [Text box control](/docs/platform/controls/input/textbox/)
-- [User picker control](/docs/platform/controls/input/user-picker/)
+- [Date control](/platform/controls/input/date/)
+- [File upload control](/platform/controls/input/file-upload/)
+- [List control](/platform/controls/input/list/)
+- [Number control](/platform/controls/input/number/)
+- [Table control](/platform/controls/input/table/)
+- [Text box control](/platform/controls/input/textbox/)
+- [User picker control](/platform/controls/input/user-picker/)

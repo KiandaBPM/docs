@@ -25,13 +25,13 @@ There are 3 key principles to consider when working with forms:
 2) Form **interaction** - how users can use forms depending on certain sequences happening
 3) Form **management** - who can edit and access forms
 
-This page presents the information you need related to **form design**, that is what a form looks like, and what it contains. By default, **Administrators** and those with the **Design business process** role can edit forms, but they can also set how other people interact with forms, for example to make forms viewable as **read-only**. Go to [Form owners](/docs/platform/application-designer/forms/form-owners/) to find out more about how form ownership works, and [Form display modes](/docs/platform/application-designer/forms/form-display-modes/) to find out out more about how forms display. 
+This page presents the information you need related to **form design**, that is what a form looks like, and what it contains. By default, **Administrators** and those with the **Design business process** role can edit forms, but they can also set how other people interact with forms, for example to make forms viewable as **read-only**. Go to [Form owners](/platform/application-designer/forms/form-owners/) to find out more about how form ownership works, and [Form display modes](/platform/application-designer/forms/form-display-modes/) to find out out more about how forms display. 
 
 
 
 ## Designer layout ##
 
-To access processes, go to the left-hand pane and **Administration** > **Designer** and click on a process that you have created or imported, see [Create your first process](/docs/platform/application-designer/#creating-your-first-process).
+To access processes, go to the left-hand pane and **Administration** > **Designer** and click on a process that you have created or imported, see [Create your first process](/platform/application-designer/#creating-your-first-process).
 
 From the main process view, click on any process to add forms.
 ![Clicking on a process](/images/clickonprocess.png)
@@ -42,7 +42,7 @@ The **Designer** window opens and is made up of 3 main parts.
 
 The key components of the designer are:
 
-1. Left-hand pane contains both **controls** and **rules** that can be added to forms. Go to [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) to find out more. The left-hand pane also houses the **Exit** button ![Exit process](/images/exitdesign.png) to go back to the process list, the **Save** button ![Save button](/images/save.png) to save your work, the **Preview** button ![Preview](/images/preview.png) to preview what you have created and the **Publish** button ![Publish button](/images/publish.png) to publish your work. 
+1. Left-hand pane contains both **controls** and **rules** that can be added to forms. Go to [Controls](/platform/controls/) and [Rules](/platform/rules/) to find out more. The left-hand pane also houses the **Exit** button ![Exit process](/images/exitdesign.png) to go back to the process list, the **Save** button ![Save button](/images/save.png) to save your work, the **Preview** button ![Preview](/images/preview.png) to preview what you have created and the **Publish** button ![Publish button](/images/publish.png) to publish your work. 
 
    Note that clicking on **Save** saves a **draft** of a process design. Click on **Publish** to publish the design and update changes to existing process instances.
 
@@ -52,7 +52,7 @@ The key components of the designer are:
 
 2. The central area is where the current **form canvas** is displayed. The canvas also houses 3 buttons by default: **Submit**, **Save** and **Close**. Go to [Adding form elements](#adding-form-elements) to find out more about editing these buttons and adding elements to the canvas.
 
-3. The right-hand pane is where the **properties** and **rules** are displayed for the selected item, see [Properties](#properties) for more information. From this pane you can also [Import forms](#import-forms), see the [Version history](/docs/platform/application-designer/designer/version-history/) for a process and set process [Settings](/docs/platform/application-designer/process/settings/). Click on the links to find out more.
+3. The right-hand pane is where the **properties** and **rules** are displayed for the selected item, see [Properties](#properties) for more information. From this pane you can also [Import forms](#import-forms), see the [Version history](/platform/application-designer/designer/version-history/) for a process and set process [Settings](/platform/application-designer/process/settings/). Click on the links to find out more.
 
 **Note**: The name of the process you are working on is shown in the top menu bar, for example Quarterly Training Request.
 
@@ -163,7 +163,7 @@ Note: as you change any of the options in the dialog box, the impact will be sho
 
 10. To save your changes to the form, click on the **Save** button ![Save button](/images/save.png). 
 
-You are now ready to start adding [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) to your form. To implement additional settings, see [Process Settings](/docs/platform/application-designer/process/settings/).
+You are now ready to start adding [Controls](/platform/controls/) and [Rules](/platform/rules/) to your form. To implement additional settings, see [Process Settings](/platform/application-designer/process/settings/).
 
 
 
@@ -189,9 +189,9 @@ If you have added a new form during the form creation process, then a blank canv
 
 Within a form like the one shown above you can:
 
-1) Add elements to this canvas by clicking on [Controls](/docs/platform/controls/) and [Rules](/docs/platform/rules/) in the left-hand pane. Click on each link to find out more about the 16 control fields and 60 rule types.
+1) Add elements to this canvas by clicking on [Controls](/platform/controls/) and [Rules](/platform/rules/) in the left-hand pane. Click on each link to find out more about the 16 control fields and 60 rule types.
 2) Move elements by clicking on the **Drag Handle** ![Drag handle](/images/move.png) beside the item and dragging it to where you want to place it. 
-3) Edit elements by clicking on each item and clicking on the **Edit/Pen** button ![Pen icon](/images/penicon.png), for example if you click on the **Close button**, there are a number of options to choose from when editing, see [Button control](/docs/platform/controls/actions/button/) for more information.
+3) Edit elements by clicking on each item and clicking on the **Edit/Pen** button ![Pen icon](/images/penicon.png), for example if you click on the **Close button**, there are a number of options to choose from when editing, see [Button control](/platform/controls/actions/button/) for more information.
 
 
 
@@ -213,7 +213,7 @@ Properties at all levels are visible in the **right-hand pane** of Kianda design
 
 ### Process level properties
 
-When you click on a process from the main process view, straight away you will see the **Process properties** in the right-hand pane as shown in the image above. To find out more about process go to the [Process properties](/docs/platform/application-designer/process/properties/) page. 
+When you click on a process from the main process view, straight away you will see the **Process properties** in the right-hand pane as shown in the image above. To find out more about process go to the [Process properties](/platform/application-designer/process/properties/) page. 
 
 When you click on a form within a process, then the properties view changes to show **Form properties**, as shown in the image in [Form level properties](#form-level-properties).
 
@@ -227,7 +227,7 @@ When you click on a form in Kianda **Designer**, the properties for that form ap
 
 ![Form properties view](/images/form-properties-view.jpg)
 
-To find out more about form properties go to the [Form properties](/docs/platform/application-designer/forms/#form-properties) page. 
+To find out more about form properties go to the [Form properties](/platform/application-designer/forms/#form-properties) page. 
 
 Note that at form level, additional buttons appear above **Form properties** namely:
 
@@ -245,7 +245,7 @@ When you add controls to forms Kianda **Designer**, and select a field/control, 
 
 ![Field properties view](/images/field-properties-view.jpg)
 
-The type of field/control is listed in the properties pane, for example 'Text box' as shown in the image above. How the field appears is easy to control simply by checking/unchecking a number of boxes. To find out more about field/control properties go to the [Control properties](/docs/platform/controls/properties/) page. 
+The type of field/control is listed in the properties pane, for example 'Text box' as shown in the image above. How the field appears is easy to control simply by checking/unchecking a number of boxes. To find out more about field/control properties go to the [Control properties](/platform/controls/properties/) page. 
 
 #### Change field button
 
@@ -255,7 +255,7 @@ Note that at field level, in addition to the buttons visible at [Form level](#fo
 
 2. Click on the **Change field** button.
 
-3. A pop-up box appears allowing you to choose from the full range of field types, including [customised field widgets](/docs/low-code/field-widget/) created in Kianda **Developer**. 
+3. A pop-up box appears allowing you to choose from the full range of field types, including [customised field widgets](/low-code/field-widget/) created in Kianda **Developer**. 
 
    ![Change field dialog box](/images/change-name-dialog-box.jpg)
 
@@ -276,16 +276,16 @@ In addition to [Properties](#properties), you can use **Settings** at process, f
 
 ![Edit process dialog box](/images/edit-process-dialog-box.jpg)
 
-More detailed **process settings** are available within Kianda **Designer** in the right-hand pane by clicking on the **Settings** button![Process settings button](/images/settings-button.jpg) and from here use the parameters available in the **Process settings** dialog box to enable process security, anonymous sharing of forms and custom process ID, amongst other options. Go to [Process settings](/docs/platform/application-designer/process/settings/) to find out more.
+More detailed **process settings** are available within Kianda **Designer** in the right-hand pane by clicking on the **Settings** button![Process settings button](/images/settings-button.jpg) and from here use the parameters available in the **Process settings** dialog box to enable process security, anonymous sharing of forms and custom process ID, amongst other options. Go to [Process settings](/platform/application-designer/process/settings/) to find out more.
 
 ### Form and field settings
 
-**Form and field settings** are available when you **select** an item in the form **canvas** so that the **Edit**/**Pen** icon ![Edit/pen button](/images/penicon.png) is available. An **Edit** dialog box appears allowing you to make the necessary changes to that item. Edit form dialog box is shown in [Editing forms](#editing-forms). Field settings will be described within the information page for each field, go to [Controls](/docs/platform/controls/) to start navigating to individual control pages.
+**Form and field settings** are available when you **select** an item in the form **canvas** so that the **Edit**/**Pen** icon ![Edit/pen button](/images/penicon.png) is available. An **Edit** dialog box appears allowing you to make the necessary changes to that item. Edit form dialog box is shown in [Editing forms](#editing-forms). Field settings will be described within the information page for each field, go to [Controls](/platform/controls/) to start navigating to individual control pages.
 
 
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-Click on the links to find out more about aspects of Kianda **Designer**, namely [Processes](/docs/platform/application-designer/process/) and [Forms](/docs/platform/application-designer/forms/).
+Click on the links to find out more about aspects of Kianda **Designer**, namely [Processes](/platform/application-designer/process/) and [Forms](/platform/application-designer/forms/).
 
 To read about managing versions of forms, go to the link below:

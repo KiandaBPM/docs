@@ -97,7 +97,7 @@ The Schedule is now set up and will refresh the access token as frequently as th
 
 The datasource is now available to used and the Access Token is being kept current. The Access Token can be pulled into different **Processes** and used to send further **REST APIs**. Check out the articles below on how to build processes:
 
-**[Using Kianda Designer]**(/docs/platform/administration/users/#view-and-edit-existing-user-details)
+**[Using Kianda Designer]**(/platform/administration/users/#view-and-edit-existing-user-details)
 
  
 

@@ -4,13 +4,13 @@ weight: 2
 typora-root-url: ..\..\..\..\..\static
 ---
 
-Layout fields are one category of [controls](/docs/platform/controls/) (fields). They are fields that can be used to enhance the layout of your form - for example, responsive panels, dialog boxes and rich text fields.
+Layout fields are one category of [controls](/platform/controls/) (fields). They are fields that can be used to enhance the layout of your form - for example, responsive panels, dialog boxes and rich text fields.
 
 
 
 ## Getting started with Layout fields ##
 
-1. To insert a **Layout field** into a form, first open an existing process or create a new process by going to **Administration**>**Designer** in the left side menu. See [Create First Process](/docs/getting-started/create-first-process/) to learn how to create your first process.
+1. To insert a **Layout field** into a form, first open an existing process or create a new process by going to **Administration**>**Designer** in the left side menu. See [Create First Process](/getting-started/create-first-process/) to learn how to create your first process.
 
   ![Opening Designer from left side menu by choosing Administration>Designer](/images/administration-designer-inputcont.jpg)
 
@@ -26,13 +26,13 @@ Layout fields are one category of [controls](/docs/platform/controls/) (fields).
 
 	There are 4 types of layout fields:
 
-- **Panel** - The Panel field provides responsive panels to hold elements of your form like text boxes and lists and enables flexible layout options for better design. To learn more, go to [Panel control](/docs/platform/controls/layout/panel/).
+- **Panel** - The Panel field provides responsive panels to hold elements of your form like text boxes and lists and enables flexible layout options for better design. To learn more, go to [Panel control](/platform/controls/layout/panel/).
 
-- **Dialog** - The Dialog field is used to create modal dialogs to alert or prompt form users. For example, a warning message could display to remind the user to complete part of a form before they proceed to the next section. To learn more, go to [Modal Dialog control](/docs/platform/controls/layout/dialog/).
+- **Dialog** - The Dialog field is used to create modal dialogs to alert or prompt form users. For example, a warning message could display to remind the user to complete part of a form before they proceed to the next section. To learn more, go to [Modal Dialog control](/platform/controls/layout/dialog/).
 
-- **Richtext** - The Richtext field is used to create rich content in forms, such as an attractive banner or static html, and provides optimum formatting options. To learn more, go to [Richtext control](/docs/platform/controls/layout/richtext/).
+- **Richtext** - The Richtext field is used to create rich content in forms, such as an attractive banner or static html, and provides optimum formatting options. To learn more, go to [Richtext control](/platform/controls/layout/richtext/).
 
-- **Field group** - The Field Group control can be used to mirror a group of fields from another form or location and reference those fields in your new form, making process design sleeker and more efficient. To learn more, go to [Field group control](/docs/platform/controls/layout/field-group/).
+- **Field group** - The Field Group control can be used to mirror a group of fields from another form or location and reference those fields in your new form, making process design sleeker and more efficient. To learn more, go to [Field group control](/platform/controls/layout/field-group/).
 
 
 
@@ -99,7 +99,7 @@ For example, the **Field Properties** associated with a **Panel field** titled '
 
 - **Layout** - The width of the field is denoted by the width of the blue bar. Click on the bar to change the width of the field as it will appear on a PC or mobile phone (to view the Mobile layout, click on the expand button ![Expand button](/images/expand-icon.jpg) to the right).
 
-To learn more about the different options within the Field properties menu, go to [Field Properties](/docs/platform/controls/properties#field-properties).
+To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
 
 

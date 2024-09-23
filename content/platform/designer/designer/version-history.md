@@ -54,4 +54,4 @@ Using versioning makes it is easy to keep track of changes and to restore the de
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-Click on the links to find out more about aspects of Kianda **Designer**, namely [Processes](/docs/platform/application-designer/process/) and [Forms](/docs/platform/application-designer/forms/).
+Click on the links to find out more about aspects of Kianda **Designer**, namely [Processes](/platform/application-designer/process/) and [Forms](/platform/application-designer/forms/).

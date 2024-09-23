@@ -27,12 +27,12 @@ You can add this rule:
 
 ## Before you get started
 
-To be able to use the Text analysis rule, there a couple of prerequisites needed in your process. To use both functions, your process needs a **Text box field** which will represent the text that is **targeted** during **Text analysis**. To learn more on how to add a text box to your process, go to [Text box control](/docs/platform/controls/input/textbox/).
+To be able to use the Text analysis rule, there a couple of prerequisites needed in your process. To use both functions, your process needs a **Text box field** which will represent the text that is **targeted** during **Text analysis**. To learn more on how to add a text box to your process, go to [Text box control](/platform/controls/input/textbox/).
 
 To use the **Sentiment analysis** function, you need the following:
 
 - **Text box field** - container which will store the computed sentiment result. **Positive** or **Negative**.
-- **Number field** - container used to store the **percentage score** of the result. To learn on how to add a number field to your process, go to [Number control](/docs/platform/controls/input/number/).
+- **Number field** - container used to store the **percentage score** of the result. To learn on how to add a number field to your process, go to [Number control](/platform/controls/input/number/).
 
 To use the **Extract key phrases** function, you will need the following:
 
@@ -48,7 +48,7 @@ To use the **Extract key phrases** function, you will need the following:
 
    ![Text analysis edit rule dialog box](/images/text-analysis-edit-rule.jpg)
 
-4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/docs/platform/rules/general/add-conditions/) for more details.
+4. If you want to add conditions for the rule, click on the **Edit conditions** button ![Edit conditions button](/images/editconditions.png) see [Conditions](/platform/rules/general/add-conditions/) for more details.
 
 5. Under the **Action** section fill out the following:
 
@@ -79,4 +79,4 @@ To use the **Extract key phrases** function, you will need the following:
 
 ### What’s next ![Idea icon](/images/18.png)
 
-To find out more about other rules go to [Rules](/docs/platform/rules/).
+To find out more about other rules go to [Rules](/platform/rules/).

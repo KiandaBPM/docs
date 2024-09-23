@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\static
 
 ## Introduction
 
-The **Data sources** function is available to administrators and those users with the role **Manage datasources**. Data sources is found in the left-hand side pane, or on the top right toolbar depending on the [chosen orientation](/docs/platform/administration/subscription/#general-settings), under **Administration**. The data sources function allows you to connect your processes to external data sources like SharePoint, Salesforce or SAP. 
+The **Data sources** function is available to administrators and those users with the role **Manage datasources**. Data sources is found in the left-hand side pane, or on the top right toolbar depending on the [chosen orientation](/platform/administration/subscription/#general-settings), under **Administration**. The data sources function allows you to connect your processes to external data sources like SharePoint, Salesforce or SAP. 
 
 Connecting your data sources in this way allows real-time scalability, so as your organisation and data grows, the processes created in Kianda will continue to operate with these data sources, providing sustainable, flexible growth.
 
@@ -66,7 +66,7 @@ To start viewing existing data sources:
    - Option to use **Kianda Cloud Connect** - you enable this feature and download a zip file which you can install on your server, allowing the Kianda system to reach your server and get access to data, for example SQL Server, making system integration quick and efficient.
    - **Test connection** - all data source detail pages will allow you to test your connection using this button to ensure data exchange can happen.
    - **Save** - at any time you can save details, even if some parameters need to be completed, allowing you to return to the configuration at any point.
-   - **Security** - all data sources can have different levels of security set up, including administrators for the connection, and users of the connection, see [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
+   - **Security** - all data sources can have different levels of security set up, including administrators for the connection, and users of the connection, see [Setting security for data sources](/platform/connectors/#setting-security-for-data-sources) for more details.
    - **Close** - allows you to exit from the data source details page.
 
 
@@ -101,7 +101,7 @@ The following uses **SharePoint as an example** when creating a new datasource. 
 
 5. Click on **Save** ![Save connection button](/images/save-connection.jpg) to save the connection and you will receive a notification saying **Details saved successfully**.
 
-6. Add Security settings by clicking on the **Security** button ![Security button](/images/security-button.jpg), go to [Setting security for data sources](/docs/platform/connectors/#setting-security-for-data-sources) for more details.
+6. Add Security settings by clicking on the **Security** button ![Security button](/images/security-button.jpg), go to [Setting security for data sources](/platform/connectors/#setting-security-for-data-sources) for more details.
 
 7. Click on **Close** to close the details page and return to the datasource management main view.
 
@@ -114,9 +114,9 @@ Once the data connector is created, this can be used with controls like lists an
 
 ### What's next  ![Idea icon](/images/18.png) ###
 
-To read more about data connectors and how to use them, go to [Data Connectors](/docs/platform/connectors/).
+To read more about data connectors and how to use them, go to [Data Connectors](/platform/connectors/).
 
-To find out about help and support, go to [Help](/docs/platform/general/help/).
+To find out about help and support, go to [Help](/platform/general/help/).
 
 
 

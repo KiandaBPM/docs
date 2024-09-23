@@ -92,7 +92,7 @@ The following sections provide some sample code to help you get started in creat
         }
 ```
 
-To return to Microservice development, click on the [Microservice](/docs/low-code/custom-connector/create-microservice) link.
+To return to Microservice development, click on the [Microservice](/low-code/custom-connector/create-microservice) link.
 
 
 
@@ -146,7 +146,7 @@ To return to Microservice development, click on the [Microservice](/docs/low-cod
         }
 ```
 
-To return to Microservice development, click on the [Microservice](/docs/low-code/custom-connector/create-microservice) link.
+To return to Microservice development, click on the [Microservice](/low-code/custom-connector/create-microservice) link.
 
 
 
@@ -231,7 +231,7 @@ To return to Microservice development, click on the [Microservice](/docs/low-cod
         }
 ```
 
-To return to Microservice development, click on the [Microservice](/docs/low-code/custom-connector/create-microservice) link.
+To return to Microservice development, click on the [Microservice](/low-code/custom-connector/create-microservice) link.
 
 
 
@@ -318,11 +318,11 @@ To return to Microservice development, click on the [Microservice](/docs/low-cod
 ```
 
 
-To return to Microservice development, click on the [Microservice](/docs/low-code/custom-connector/create-microservice) link.
+To return to Microservice development, click on the [Microservice](/low-code/custom-connector/create-microservice) link.
 
 
 
 
 ## What's next ![Idea icon](/images/18.png)
 
-To learn how to create a custom connector view the [steps to create a custom connector](/docs/low-code/custom-connector/steps-to-create/).
+To learn how to create a custom connector view the [steps to create a custom connector](/low-code/custom-connector/steps-to-create/).

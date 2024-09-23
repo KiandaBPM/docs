@@ -2,14 +2,32 @@
 title: "Controls"
 linkTitle: "Controls"
 weight: 3
-typora-root-url: ..\..\..\..\static
+typora-root-url: ..\..\..\static
 ---
 
-**Controls** (commonly called **fields**) are predefined field widgets that allow you to add specific elements to your forms and processes, such as lists, text boxes, buttons and tables. There are 16 types of controls (fields) you can add to a form - see [Controls list](#controls-list) for details.
-
-If you have developer skills,  you can create your own custom field widget - see [Development](/docs/low-code/) for more information.
+**Controls** (commonly called **fields**) are predefined field widgets that allow you to add specific elements to your forms and processes, such as lists, text boxes, buttons and tables. There are 16 types of controls (fields) you can add to a form - see the controls list below for details.
 
 
+| Category | Field Name   | Purpose                                                                                                                    |
+|----------|--------------|----------------------------------------------------------------------------------------------------------------------------|
+| **Input** | Text box      | Allows users to enter text. Help text and placeholder options guide users when filling out a form.                         |
+|          | List          | Displays info as dropdown, radio, multiselect or checkbox lists. Users select values from these lists.                     |
+|          | Number        | Allows users to enter numbers as integers, currency, or percentages.                                                       |
+|          | Date          | Allows users to enter dates, with options for default date, user time zone adjustment, and data display.                   |
+|          | File          | Allows file upload with options like override, multiple file uploads, and file deletion.                                    |
+|          | Table         | Enables data entry in table format with options to add/remove rows and sorting/searching.                                  |
+|          | User picker   | Lets users choose from a predefined set of users/groups/partners. Supports selection mode for single or multiple users.    |
+|          | Toggle        | Allows a user to slide a toggle or check a checkbox, with preassigned values based on user input.                          |
+| **Layout** | Panel         | Creates an area for fields. Panels can be used to create sections within a form and be visible only to specific users.     |
+|          | Dialog        | Creates a pop-up dialog box prompting users for information.                                                               |
+|          | Richtext      | Creates text with formats, images, and links that can be displayed in forms.                                               |
+|          | Field group   | Mirrors a group of fields already created, allowing for easier form linking and reuse by process designers.                |
+| **Actions** | Button        | Creates custom buttons with various display/control options, including security settings for specific users.               |
+|          | Link          | Creates a hyperlink for users to click, with options to open in a new or the same tab.                                     |
+|          | Image         | Allows images to be added to forms.                                                                                        |
+|          | Signature     | Adds electronic signatures with options for authentication or manual/drawn signature uploads.                              |
+
+If you have developer skills,  you can create your own custom field widget - see [Development](/low-code/) for more information.
 
 ## Getting started with Controls ##
 
@@ -21,9 +39,9 @@ If you go to **Administration** > **Designer** and click on an existing process 
 
 There are three categories of controls (fields):
 
-1. **Input** - There are eight types of Input fields. These include the most commonly used data fields such as text box, user picker, date field, table, checkbox, drop-down and number field. See [Input](/docs/platform/controls/input/) for more information. 
-2. **Layout** - There are four Layout fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields - see [Layout](/docs/platform/controls/layout/) for more information.
-3. **Action** - There are four Action fields that allow user interface actions like buttons, links or even signature components - see [Actions](/docs/platform/controls/actions/) for more information.
+1. **Input** - There are eight types of Input fields. These include the most commonly used data fields such as text box, user picker, date field, table, checkbox, drop-down and number field. See [Input](/platform/controls/input/) for more information. 
+2. **Layout** - There are four Layout fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields - see [Layout](/platform/controls/layout/) for more information.
+3. **Action** - There are four Action fields that allow user interface actions like buttons, links or even signature components - see [Actions](/platform/controls/actions/) for more information.
 
 If you develop custom fields, they will be available to form designers under a fourth category of controls called **Custom**.
 
@@ -40,7 +58,7 @@ To start **adding** controls or fields to a form:
 
 ### Editing controls
 
-All controls/fields will have edit options when you start creating the field, as well as [Field properties](/docs/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties#field-properties) that you can edit to tailor the field (control) to make it work the way you want. Each field can also have rules applied to it to make your processes dynamic.
+All controls/fields will have edit options when you start creating the field, as well as Field properties that you can edit to tailor the field (control) to make it work the way you want. Each field can also have rules applied to it to make your processes dynamic.
 
 To edit a control:
 
@@ -50,27 +68,19 @@ To edit a control:
 
    ![Edit textbox example](/images/edit-textbox-example.jpg)
 
-3. Fill out the fields within the dialog box as necessary. All controls need a **Title** from which a **Unique Name** is auto-created. This Unique ID is used in [expressions](/docs/platform/rules/general/expression-builder/) to create automated emails for example. 
+3. Fill out the fields within the dialog box as necessary. All controls need a **Title** from which a **Unique Name** is auto-created. This Unique ID is used in [expressions](/platform/rules/general/expression-builder/) to create automated emails for example. 
 
    ![Edit textbox name](/images/edit-field-name2.jpg)
 
-   Additional syntax can be added to the **Unique** **name** to attribute customised styling, see [User tips](#user-tips).
+   Additional syntax can be added to the **Unique** **name** to attribute customised styling, see User tips.
 
-4. The remaining fields within the dialog box will depend on the type of control implemented, where different fields and values can be selected, see [Controls list](#controls-list) for a full set of controls. Links available at the end of this page will also bring you to each control category and from there you can find out what each parameter means for each control type.
+4. The remaining fields within the dialog box will depend on the type of control implemented, where different fields and values can be selected, see Controls list for a full set of controls. Links available at the end of this page will also bring you to each control category and from there you can find out what each parameter means for each control type.
 
    
 
-## Controls list ##
+### Control customization with CSS 
 
-This table lists out the full range of available field types.
-
-![Form controls](/images/fields-controls-list-table.jpg)
-
-
-
-### User tip ![Target icon](/images/05.png)
-
-If customised styling has been applied in a **Global CSS file,** available to administrators under **Administration** > **Subscription**, then these attributes can be applied to controls by entering the desired class name into the **Custom CSS class name** field, as shown below. 
+If customised styling has been applied in a **Global CSS file,** available to administrators under **Administration** > **Developer**, then these attributes can be applied to controls by entering the desired class name into the **Custom CSS class name** field, as shown below. 
 
 ![Textbox with attributes](/images/textbox-attribute2.jpg)
 
@@ -91,10 +101,4 @@ When applied to a textbox in forms, a particular colour border with padding is a
 
 ![Applied styling example](/images/applied-styling-example2.jpg)
 
-Go to [Global CSS file](/docs/low-code/global-css/) for more details.
-
-
-
-### What's next  ![Idea icon](/images/18.png) ###
-
-Now that you know what **Controls** are, the different types of Controls (fields) and how to add them to a form, find out more about the properties associated with Controls and more about each of the three categories of Controls, as well as Custom controls:
+Go to [Global CSS file](/low-code/global-css/) for more details.
