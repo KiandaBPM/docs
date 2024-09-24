@@ -24,9 +24,9 @@ enableGitInfo = false
    # url = "https://portal.kianda.com/public/signup"
 
 [[menu.main]]
-    name = "Low-code Sign-up"
+    name = "Developer Sign-up"
     weight = 51
-    url = "https://portal.kianda.com/public/signup"
+    url = "https://portal.kianda.com/public/signup?type=free-developer-account"
 
 # Comment out to enable taxonomies in Docsy
 # disableKinds = ["taxonomy", "taxonomyTerm"]
