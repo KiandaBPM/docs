@@ -1,16 +1,14 @@
 ---
-title: "Form basics"
-typora-root-url: ..\..\..\..\..\static
+title: "Forms"
+typora-root-url: ..\..\..\..\static
 weight: 2
 ---
-
-
 
 ## Introduction
 
 Processes in Kianda are made up of **forms**. Forms contain all the buttons, fields, and rule triggers needed to execute your process.
 
-Using your **Administrator** or **Design business process** role, you will use Kianda **Designer** to design **forms** for **end users** who will use the platform to submit, save and review information, either as named users in the platform, users who receive a link to an anonymous form, or partners who can access shared processes. These end users will create new **process instances** or records in the system, or access **existing process instances** which shows information that has either been **saved or submitted** in a form.
+You can use the **Designer** to design **forms** for **end users** who will use the platform to submit, save and review information, either as named users in the platform, users who receive a link to an anonymous form, or partners who can access shared processes. These end users will create new **process instances** or records in the system, or access **existing process instances** which shows information that has either been **saved or submitted** in a form.
 
 When discussing forms we'll talk about **form design** that is creating and updating forms within a process using Kianda **Designer** as well **form use** which refers to end users who will edit or read forms in a process instance/record in the system, built using the **Designer**.
 
@@ -42,11 +40,9 @@ As you work with Kianda **Designer** you are designing the 'user interface' for 
 
 These three considerations are established when the form is created, as seen in the dialog box below, and these parameters can be updated at any time by editing the form design. These properties can also change **dynamically** as a result of **implementing rules**, for example the [Go to form](/platform/rules/workflow/go-to-form/) rule can change the workflow in a process.
 
-
-
 ### New form creation
 
-As mentioned in the [Introduction](#introduction) there are certain considerations to keep in mind when working with forms. The image below shows a **New form** dialog box that is created when the **Add form** button is clicked in Kianda Designer. At any time if you click on a form and then the **Edit/pen** button ![Edit/pen button](/images/penicon.png) an **Edit form** dialog box appears which has the same parameters as the one shown in the image below.
+As mentioned above there are certain considerations to keep in mind when working with forms. The image below shows a **New form** dialog box that is created when the **Add form** button is clicked in Kianda Designer. At any time if you click on a form and then the **Edit/pen** button ![Edit/pen button](/images/penicon.png) an **Edit form** dialog box appears which has the same parameters as the one shown in the image below.
 
 ***New form dialog box***
 
@@ -59,8 +55,9 @@ As mentioned in the [Introduction](#introduction) there are certain consideratio
 3. **Submit mode** means that when a process instance is running you can choose **only this form** to be submitted, or you can choose **all forms in edit mode** meaning that several forms could have their details submitted or saved.
 4. **Enable quick actions** allows you to **statically** enable a) reassignment, b) edit, and c) custom actions on any form. For a) and b) you can choose individuals and/or groups who can reassign or edit forms. In the case of b) edit there are options to **hide form footer buttons** when editing, and to **trigger rules on save** against a set field when saving edits. For c) custom actions, you can set your own custom action and create an action label against a particular form field. This means that the user(s) assigning the custom action will see the labelled action designated for them. As a designer you can choose the **action display mode** as read-only, edit or both, so you can decide what type of access the user(s) will have.
 
-
-
-### What's next  ![Idea icon](/images/18.png) ###
-
-We have briefly introduced the principles of working with forms. To read more about working with forms, click on the links below:
+## Related rules
+The following are rules that are directly associated with working with forms and form state.
+1. **Go to form**: This rule enables the designer to provide a way for users navigate to any form within the process. 
+2. **Assign form**: This rule allows designers to dynamically change the default form owners of forms from user picker fields or other means.
+3. **Submit form**: This rule marks the form as complete or submited and allows the process to progress the workflow to the next available form.
+4. **Field display mode**: This rule forces the form display mode to be editable or read only even when the current user is not a form owner.

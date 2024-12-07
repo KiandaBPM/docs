@@ -1,18 +1,14 @@
 ---
-title: "Component"
-typora-root-url: ..\..\..\..\..\static
+title: "Components"
+typora-root-url: ..\..\..\..\static
 weight: 4
 ---
 
-## Introduction
+A process **component** acts like a reusable part of a **process** made up of **various** control **fields and rules**. You can **reuse** the component in your process designs to save you time and effort when creating each field and rule combination from the beginning.  Within the component you can add all preconfigured control types and rules to match your needs, as well as customised field and rules found under **Custom**. 
 
-A Kianda **component** acts like a smaller version of a **process** made up of **various** control **fields and rules**. You can **reuse** the component in your process designs to save you time and effort when creating each field and rule combination from the beginning.  Within the component you can add all preconfigured control types and rules to match your needs, as well as customised field and rules found under **Custom**. Creating a component will **significantly** **speed up** your process **creation time** if some of your processes demand the **same fields and logic**. For example if a lot of your processes have sections in common, for example a **Personal Details** section where a user needs to fill in their **first** and **last** **name**, **email**, **job role**, and **phone** **number**. To save process creation time, you can create a component with those exact fields and rules you need and then use the component in various process designs.
+Creating a component will **significantly** **speed up** your process **creation time** if some of your processes demand the **same fields and logic**. For example if a lot of your processes have sections in common, for example a **Personal Details** section where a user needs to fill in their **first** and **last** **name**, **email**, **job role**, and **phone** **number**. To save process creation time, you can create a component with those exact fields and rules you need and then use the component in various process designs.
 
 The component you create can be updated at any time. Once you publish your component it can be used in any process of your choice and any processes that already use your component will be automatically updated.
-
-
-
-## How to get started
 
 ### How to create a new component
 
@@ -65,7 +61,8 @@ The component you create can be updated at any time. Once you publish your compo
 
 3. You will be navigated to the component designer screen.
 
-### What's next  ![Idea icon](/images/18.png) ###
+### Adding a component to a process
 
-- To read more about field control visit [Controls](/platform/application-designer/process/).
-- To read more about rules visit [Rules](/platform/rules/).
+Once you publish a process it will be able to be included in your process design just like any other form fields.
+
+Under the Design controls expand components then choose your component to include it in your process. 

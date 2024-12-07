@@ -15,7 +15,7 @@ If you have full administration access then you will see nine functions by defau
 
 - **Designer** - users with the Designer business process role and administrators can access this function to design business processes. Designer is the main feature that allows you to design process apps using the form designer.
 
-- **Settings** - administrators can update an organisation's subscription details, including Single Sign On, workspace look and feel, mobile app login design and regional settings.
+- **Settings** - administrators can update an organisation's subscription details, including Single Sign On, workspace look and feel, mobile app login design, storage files and regional settings.
 
 - **Data sources** - users with the **Manage data sources** role and administrators can access this function to manage centrally data sources in the workspace. These connectors can be used to retrieve data for processes and processes can automate the update and manipulation at the data source location.
 

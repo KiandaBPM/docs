@@ -1,9 +1,7 @@
 ---
-title: "Form quick actions menu"
+title: "Form quick actions"
 typora-root-url: ..\..\..\..\..\static
 ---
-
-## Introduction
 
 The **Form quick action** menu will appear to designated users as a quick action menu option in the top right-hand corner of a form.
 
@@ -60,12 +58,4 @@ This opens the **Action settings** dialog box, such as the **Edit action setting
 ### Enable custom action 
 
 If you check **Enable custom action** users who have been selected using the **Users**, **Groups** and **Partners** option, will be able to perform a customised action on a form, defined using the dialog box within this section.
-
-
-
-### What's next  ![Idea icon](/images/18.png) ###
-
-To read more about how to create processes and forms go to [Application Designer](/platform/application-designer/).
-
-To find out about help and support, go to [Help](/platform/general/help/).
 

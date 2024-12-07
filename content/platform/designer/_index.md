@@ -1,387 +1,206 @@
 ---
 title: "Designer"
-weight: 2
-typora-root-url: ..\..\..\..\static
+typora-root-url: ..\..\..\static
+weight: 1
+description: "Kianda no-code low-code development platform - workflows process designer"
 ---
 
-## Introduction
+The process **designer** provides an intuitive interface where you can quickly start building a process app together with forms, fields and rules for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).
 
-Creating your first **process** or application in Kianda starts with designing your first **form**. Users with the role **Administrator** or **Design business process** can create **forms** that can connect to any number of **data sources** at the same time. The form might be a simple contact form or something else more complex, and you can add more forms like "Follow-up form" or even a "Closure form". To the form you can add predefined **controls** or fields, and **business rules** to define how the processes can behave. 
+A **process design** is a JSON document that encapsulate the visual layout and logic that renders into a fully functional process app and allows users to perform all sort of tasks. The process designer allows process designers to easily compose the process JSON schema without ever requiring the user to write a single line of code.
 
-<img src="/images/process-elements.jpg" alt="process-forms-controls-rules" style="zoom:70%;" />
+## Designer introduction ##
 
-These process elements, **processes**, **forms**, **controls** and **rules** are explained in the sections below:
-
-- [Creating your first process](#creating-your-first-process)
-- [Forms](forms)
-- [Controls or form fields](#form-fields)
-- [Rules](#rules)
-
-Forms, fields and rules are created and edited using Kianda [Designer](#kianda-designer-introduction) explained in further on this page.
-
-
-
-## How to get started ##
-
-Although Kianda aims to be intuitive and easy to get started, it is never difficult to over-engineer. So at Kianda we always recommend doing some simple planning before you design your first form. It could be something as simple as a quick flow chart or a spreadsheet where you can quickly log the key components, fields or rules that are needed in the process.
-
-In general there are three key steps to build a process in an agile manner:
-
-1. **Plan** process design, forms, fields, rules, log into design spreadsheet.
-2. **Build** forms and fields connecting to data where applicable.
-3. **Publish** to dashboards, launch anonymous forms or publish to data sources for end-user distribution.
-
-***Platform getting started video***
+This video introduces the process designer and demonstrates how to start creating a form and add fields to a process.
 
 <video width="100%" style="width:100%" controls>
-    <source src="/videos/Kianda-get-started.mp4">
+    <source src="/videos/designerintro.mp4">
     Your browser does not support the video tag.
     </source>
 </video>
 
+## Preview a process ##
 
-## Creating your first process ##
+As an **Administrator** or someone with the role **Design business process**, you can preview your **process designs** at any time using the **Run and preview process** button <img src="/images/previewer-btn.png" alt="previewer button" style="zoom:75%;" />. This is a useful feature that allows you to preview your process, and visualise the logical flow of your design without publishing it yet for your users to view/use. Within the preview window, you can also troubleshoot your fields, rules and conditions by utilising the rule debugger feature.
 
-To help you plan your process, go to [Plan your process](/getting-started/create-first-process/plan-your-process/) to get started. When you have planned what you want to do, it couldn't be simpler to start creating your new process by following the steps below:
+<img src="/images/preview-window.png" alt="Preview window" style="zoom: 50%;" />
 
-1. Using your **Administrator** or **Design business process** role, go to the left- hand **side menu** and click on **Administration** > **Designer**.
+### How to launch the process preview
 
-2. You are now in the main process view. From here, you can click on **Import** or **Export** to import or export processes once created. There is also an option to use Kianda's predefined processes available in the **App Store.** 
+1. Navigate to the left-hand pane of the designer screen and click on the **Run and preview process** button <img src="/images/preview.png" alt="run and preview process button" style="zoom:150%;" />. From here, your process will display in a preview window only to you or to other Process/workspace security users that have access to the design.
 
-   ***Adding a new process***
+2. Within the process preview window, you can interact with controls and enter information as expected and the rules will execute on fields/buttons - the window displaying as a process instance, similar to when it will when published.
 
-   ![Main process view](/images/mainprocessview.png)
+3. You can utilise the Rule debugger feature for troubleshooting purposes by clicking on the **Enable / Disable Rule debugging** button <img src="/images/rule-debugger-btn.png" alt="rule debugger button" style="zoom:80%;" /> in the top right corner of the window.
 
-3. Click on the **Add new** button to create a process from scratch.
+4. You can preview the process design from the perspective of different devices by clicking on the **Device preview** buttons to the right of the **Rule debugger** button. This feature will visualise how your process design is dynamic and responsive on a myriad of devices.
+   The options for device emulation are as follows:
 
-4. Fill out the details in the **Add new process** dialog box:
+   * **Desktop preview** <img src="/images/desktop-preview-btn.png" alt="desktop preview button" style="zoom:80%;" /> - displays the process instance as it would look on a desktop device.
 
-   ***Add new process dialog box***
+   * **Tablet preview** ![Tablet preview button](/images/tablet-preview-btn.png) - displays the process instance as it would look on a tablet device.
 
-   ![Create a process](/images/createprocess3.png)
+     <img src="/images/tablet-preview-screen.png" alt="tablet preview screen" style="zoom:50%;" />
 
-   - **Title** - the title for your process
+   * **Mobile preview** ![Mobile preview button](/images/mobile-preview-btn.png) - displays the process instance as it would look on a mobile device.
 
-   - **ID** - this is a unique Name that is autofilled from the title, however you can manually edit it. 
+     <img src="/images/mobile-preview-screen.png" alt="Mobile preview screen" style="zoom:50%;" />
 
-   - **Description** - a short description for your process
+   **Note**: If you select **Tablet preview** or **Mobile preview**, a **Rotate device** button ![rotate device button](/images/rotate-btn.png) will appear in the top right-hand corner. Clicking on this button will rotate the device screen from portrait to landscape and vice versa in the preview window.
 
-   - **Group** - you can click on the fields drop-down button ![drop-down-button](/images/drop-down-btn.png) to browse for existing groups to add your new process to or alternatively, you can select **Create new group** to create a new folder group for your process to go in. If Create new group is selected, a field **New group name** will be displayed where you will enter the name of the new group. See below an example of creating a new group labelled 'Training'.
+   ![Rotate screen](/images/rotated-phone.png)
 
-     ![creating a new group](/images/new-group.png)
+5.  When you are finished previewing your process design, click on the **Exit preview mode** button ![Exit preview mode button](/images/exit-preview-window-btn.png) in the top right-hand corner of the previewer window.
 
-     ![Process group examples](/images/process-groups2.png)
 
-   - **Administrators** - these are **process administrators** or people who will be able to **change the process design**. Process administrators must have the role **administrator** or **design business process** so that they can access **Designer** to modify the process design. Choose from **Users** and/or **Groups** in the drop-down list, or leave blank to allow all those with an administrator role, to have access to this process design. 
 
-     Users and groups must be already defined in the system by a user with an **administrator** role, see [User management](/platform/administration/users/).
+## Add new forms
+Add new forms by clicking the **add form** button on the top of the designer screen. Options will be displayed to allow you to configure how the form should work.
 
-     Note that there is a limit of 10 names in the drop-down list, displayed alphabetically from the list of users and groups, but you can type in a user or group name to see them appear in the list, for example as shown below.
+## Editing forms
+Click on the form tab on top of the designer to reveal the form edit button (pencil) clicking this button will open the form editor and reveal its properties.
 
-     ![Administrator user example](/images/administrator-example.jpg)
+## Import forms
+Within the process designer you can import forms and other fields from other process designs within your workspace. Click the import button to the top right of the process designer to import parts of other process designs into your process.
 
-5. Click on **OK** ![OK button](/images/ok.png) when complete. 
+## Properties pane
 
-6. You are now in the Process **Design** page, that is [Kianda Designer](#kianda-designer-introduction). From here, you can add forms, fields and rules, change [settings](#settings) and properties and manage your process design.
+In addition to adding fields/controls and rules, there are a number of ways to create the form and process design you want. You can set **properties** at **property, form** and **field level**. Properties represent how an element presents itself, for example the title and layout of the element.
 
-   
+![Process and form properties](/images/right-hand-pane-designer.jpg)
 
-## Kianda Designer introduction
+Properties at all levels are visible in the **right-hand pane** of Kianda designer, along with the:
 
-Kianda Process **Designer** provides an intuitive interface where you can quickly start building forms for any use case.
+- **Import** button ![Import button](/images/importform.png) to allow you to import forms and form elements like fields
 
-The key components of the form designer are:
+- **Version history** button ![Version history example](/images/version-history-example.jpg) to allow you to manage version of the process design
 
-1. Left side panel containing both **controls** and **rules** that can be added to forms.
-2. The central area is where the current **form canvas** is displayed.
-3. The right panel is where the currently selected component **properties** and **rules** are displayed.
+- **Settings** button ![Settings button](/images/settings-button.jpg) to allow you to apply process security settings amongst other options
+  
 
-***Form designer key components***
+### Process level properties
 
-![Form designer components](/images/form-designer.png)
+When you click on a process from the main process view, straight away you will see the **Process properties** in the right-hand pane as shown in the image above. To find out more about process go to the [Process properties](/platform/application-designer/process/properties/) page. 
 
-The following headings highlight the key features of Designer that allow you to build slick, progressive, responsive and customised forms and processes. 
+When you click on a form within a process, then the properties view changes to show **Form properties**, as shown in the image in [Form level properties](#form-level-properties).
 
+If you want to **return to Process properties,** click on the **process name** beside the Designer and chevron symbol, that is:
 
 
-## Forms
+### Form level properties
 
-Forms are an important component of any process. They might be used as stages of a process and could be made active individually or at the same time known as **parallel** forms.
+When you click on a form in Kianda **Designer**, the properties for that form appear. 
 
-The key rules related to designing forms for user interaction are:
+![Form properties view](/images/form-properties-view.jpg)
 
-1. Forms are **assignable**, this means that **only a form assignee can edit** a particular form in a process instance. The form assignee can be a combination of users and groups.
-2. When a form is created, as a designer you can configure form owners. **Only form owners can edit** a given form in a process instance by default. Any other user with access to view the form will see it in read-only mode.
-3. Processes that have several steps use the concept of **current form**, where only the current form is **editable** in a process instance. Forms become the current form as the process executes sequentially. Rules like [Go to form](/platform/rules/workflow/go-to-form/) can be used to make forms the current form. Other forms can be configured to **activate with** the current form. This means it is also possible to edit these forms at the same point in process execution and togther the forms form a form group.
+To find out more about form properties go to the [Form properties](/platform/application-designer/forms/#form-properties) page. 
 
-The rules above work together to determine if the form is in edit mode or display mode. Form designers have at their disposal [business rules](/platform/rules/) such as [Assign form](/platform/rules/workflow/assign-form/), [Go to form](/platform/rules/workflow/go-to-form/) and [Submit form](/platform/rules/form-actions/submit-form/) to dynamically control the ability for end-users to edit a particular form or a section of a form.
+Note that at form level, additional buttons appear above **Form properties** namely:
 
-<video width="100%" style="width:100%" controls>
-    <source src="/videos/How to add new form 2.mp4">
-    Your browser does not support the video tag.
-    </source>
-</video>
+- **Edit/Pen** button ![Edit/pen button](/images/penicon.png) where clicking on this button opens the **Edit** dialog box for the chosen item, for example a form.
 
-### How to add a form
+- **Clone** button ![Clone button](/images/clone.png) that allows you to make a duplicate form. Click on **OK** to make a copy or **Close** to close the dialog box and cancel the copy.
 
-1. To get started with processes, go to the left-hand side menu > **Administration** >  **Designer**. There are options to import processes, use the App Store or create a new process from scratch by clicking on the **Add new** button. To learn more about this, see [How to get started with processes](/platform/application-designer/designer/#how-to-get-started).
+- **Bin/trash** button ![Bin button](/images/binicon.png) where clicking on this button opens a popup asking you to confirm that you want to **delete** the selected form. Click on **OK** to make a copy or **Close** to close the dialog box and cancel the deletion.
 
-2. When you open a process or create a new process you are automatically brought into **Kianda Designer**. In new processes, by default a **new form** is automatically added to your process called **form 1**. 
+  
 
-   ![New process with new form 1](/images/new-process-new-form.jpg)
+### Field level properties
 
-   
+When you add controls to forms Kianda **Designer**, and select a field/control, the properties for that field appear in the right-hand pane.
 
-3. The form is automatically selected, and **controls** and **rules** are ready to be added using the options in the left-hand pane. You can edit the form by clicking on the **edit/pen** button ![Edit button](/images/penicon.png) highlighted above. This will open an **Edit form** dialog box, see [Editing forms](/platform/application-designer/designer/#editing-forms) for more details.
+![Field properties view](/images/field-properties-view.jpg)
 
-4. To add another form, click on the **Add form** button at the top of the page.
+The type of field/control is listed in the properties pane, for example 'Text box' as shown in the image above. How the field appears is easy to control simply by checking/unchecking a number of boxes. To find out more about field/control properties go to the [Control properties](/platform/controls/properties/) page. 
 
-5. A **new form** dialog box appears. See [Editing forms](/platform/application-designer/designer/#editing-forms) for more details for example how to add form owners and enable quick actions. 
+## Version History
+The process design in Kianda maintains a compreensive version history of any changes made to the platform. The **Version number** of a process will be updated every time a process design is saved by clicking on **Save button**.
 
-As you create forms, there are some important features to note that will help you get the most out of your form design:
+The designer maintans two types of versions: Draft and published. Draft versions are only visible to administrators and designers while the last published version is visible to end users.
 
-- [Form fields](#form-fields)
-- [Responsive form layout](#responsive-form-layout)
-- [Input validation](#input-validation)
-- [Settings](#settings)
-- [Cloning](#cloning)
-- [Custom fields](#custom-fields)
-- [Advanced techniques](#advanced-techniques)
+A design without a published version cannot be used by an end-user to create a new record.
 
-Click on the links above or browse through the following headings to read more.
+The **current or active version** of a process is always visible in the right-hand pane, for example V0.34.
 
+The **first version** of a process is **0.1** and will increment to 0.2 and so on, each time a process is saved. Once the process is **published** the version changes to **1.0** and increments with each publication. 
 
+If the process is subsequently **saved**, then the next version will be **V1.1** and the next **published version** will be **V2.0**.
 
-## Form fields
+Using versioning makes it is easy to keep track of changes and to restore the design to an older version if needed. 
 
-Kianda form usability is brought to life with the help of the various input fields or controls that are specifically adapted to work in mobile, tablet or desktop modes. Fields include textbox, date picker, numeric input, file upload and table, to name a few. Kianda offers a flexible array of controls that can be adjusted to work with a myriad of scenarios.
+## Process Settings 
 
-***Example of a form in a process with a text box field***
-![Textbox example](/images/textbox-example.jpg)
+You can use **Settings** to control process wide settings for the current process design and control things like behavious of form tabs, process security and anonymous access of the process.
 
-Each field comes with its own set of:
+### General settings
+**Process ID Settings**: Use this to control how the process record ID generation. The default record ID is a combination of the process ID and the record ID,example: process-1.
 
-a) **settings** like autofill for textbox and currency format for numeric input 
+With this setting designers can use any combination of fields or expression to generate the record unique ID.
 
-b) **properties** that determine how the field will display. 
+**Onload rules execution mode**: Controls when onload rules execute. The options are: Always, when in edit mode and When its a new record
 
-The following are some of the common **properties** of input fields. Field properties **appear when the field is selected** within a form, as shown in the image above for the text box field. The properties appear on the right:
+**Enable form assignment notification**: Enables automatic push notifications to be send to assigee user when a record is assigned to them.
 
-- **Title** - every field comes with a title property that is usually displayed on top of the field and can serve as a prompt to a user
+**Prevent closing an instance with unsaved data**: This allows the system to prompt to save unsaved changes to a form record if the user attempts to navigate away without saving first.
 
-- **Show title** - check this property to show the title of a field in a form
+**Enable process chat**: Enables process level chat features for a given process record.
 
-- **Required** - this Boolean property allows a form designer to make a field mandatory or not
+### Security
+Use the security tab to configure security settings for the process.
 
-- **Enabled** - check this property to make the field appear in a form for a user to use
+**Enable process security**: Enables or disables process level security. Users without access to the record receive access denied error.
 
-- **Visible** - displays the field in the form or not depending on checking the checkbox
+The following are the available security modes:
+1. **Restricted creator**: With this security mode only indicated users can create a new record of the process, users assigned to the record can update it and everyone else can only view it.
+2. **Restricted assign to**: With this security mode only indicated users can create a new record, assign to users can view or modify it, everyone else cannot view the record.
+3. **Restricted**: This is the most restricted security mode. Only directly indicated users can create, view or update records. 
 
-- **Layout** - defines both desktop or mobile layout by selecting a size from the blue bar presented, see [Responsive form layout](#responsive-form-layout) for more details.
+### Tabs
+Use the tabs to configure how the process tabs will behave including its look & feel. Control here setttings such hidding the form tabs altogether, hidding the workspace left nav and enabling the mobile footer navbar.
 
-In addition to the field properties, each field has it's own settings that you can change simply by selecting the field and clicking on the **Edit/Pen** button ![Edit/pen button](/images/penicon.png). This will open an **Edit field** dialog box where you can change settings.
+You can also configure here the colours for the selected tab and trhe completed (submited) tab.
 
-In total there are 16 predefined field widgets, see [Categories of fields](#categories-of-fields) below. In case none of these satisfies your specific needs and if you have some level of [development](/platform/administration/developer/) skills you can always create your custom field widget.
+### Anonymous form
+Use the anonymous form tab to enable at process level anonymous form submission. 
 
+When enabled the user has the option to create the **new record anonymous link**. This is a unique link that allows users to submit new records without authentication.
+## Process instances
 
+When your process is created in Designer, you can save the process, and then **submit data** to that process. When you save or submit data, then an **instance** of the process is created. Another name for a process instance is a **record**. This instance is tied to user data or calculated values, or to whatever the process is designed to do.
 
-## Categories of fields
+The instance has a unique ID which can be seen in a list widget in a **dashboard**. For example, this List widget displays the individual records of various training requests submitted by employees. The unique ID for each record is shown in the first column. Form owners or those with security access can click on ID ‘training-request-and-feedback-process-26’ to view the training request form completed and submitted by employee Mark Donnelli.
 
-Currently the default fields fall into four main categories of fields:
+***List widget in a dashboard showing process instances***
 
-1. **Input** - Input fields include the most common data fields such as textbox, user picker, date field, table, checkbox, drop-down and number fields.
-2. **Layout** - Layout fields are the fields that serve the purpose of perfecting the layout of your form. They include responsive panels, dialog box, field groups and rich text fields.
-3. **Action** - Action fields are fields that allow user interface actions like buttons, links or even signature components.
-4. **Custom**  - Under custom fields, you will find any custom-developed fields available under your developer section.
+![Process instance example](/images/process-instance.jpg)
 
-The following headings showcase examples of fields and how they can be used to play an important role when building a modern user interface while allowing you to achieve the pixel perfect layout you want. The examples shown are [Modal dialogs](#modal-dialogs) and [Cascading dropdown lists](#cascading-dropdown-lists) in the following sections.
 
-### Model dialogs
+This means that each new record generated by a process will have its own unique URL that can be shared with those who have the required security access and need to be involved in that **particular process instance**. For example, in this case, the training request submitted by Mark (an employee) may be viewed and approved by his line manager:
 
-Model dialogs are a special form of **layout** fields. It allows a form designer to define an interface with the key intention of grabbing users' attention to something important.
+You can create a link on your dashboard – in the example shown above, the **Start new process** button at the top right of the Training Requests list widget – that enables you to create a **new record** by bringing you into the relevant form. For information on creating list widgets go to [List widget](/platform/pages/list/).
 
-Typically dialogs are used to create alerts, for example a user confirmation or to help users make a final decision in a process.
+If you commit to the process by **submitting or saving information**, then the result is a new process instance – that is, a new unique record – which will be seen in a list widget in the dashboard, as seen in the image above.
 
-***How to use a model dialog***
+Keeping in mind that Designer is used to create processes, and that each ‘run’ of the process design results in a unique process instance or record, will help you later on when designing forms and dashboards. 
 
-<video width="100%" style="width:100%" controls>
-    <source src="/videos/How to use a model dialog.mp4">
-    Your browser does not support the video tag.
-    </source>
-</video>
+### Instance Common fields
 
-In the example above, we use a modal dialog to display a simple **warning to the user**. The following are the steps involved to create this:
+The non-design fields associated with all Kianda processes are listed below. It is useful to keep these fields in mind when designing forms, as they can be used to retrieve, store or display values from **process instances** for example **Status** which is the status of a process instance. Using these 'internal values' could be useful where the status of one process could be used as a condition to trigger the start of another process, for example using the [**Start a process**](/platform/rules/workflow/start-a-process/) rule.
 
-1. Choose a process, or create a new process, and select a form in that process to add fields to. In the left-hand pane of Kianda Designer, click on **Controls** > **Layout** > **Dialog**.
+The common fields associated with process instances are:
 
-2. Click on the **dialog component** to edit the dialog, for example give the dialog a **Title** and then **insert** other fields within it. You can add any field to your dialog, for example add Richtext by clicking on **Controls** > **Layout** > **Richtext**.
-
-3. Give your Richtext field a **title**, and add a **message** in the Richtext body text and change other settings as needed. Click on **OK** when complete or click on **Close** at any time to exit the dialog box.
-
-4. To preview how your dialog box will be displayed, you can use the **Preview** button, on the dialog component.
-
-   ![Preview dialog](/images/preview-dialog.jpg)
-
-
-
-### Cascading dropdown lists
-
-Using the **List field** provides the opportunity to define an unlimited level cascading dropdown hierarchy very easily. For example in the form below, if a user chooses Denmark as a country from the drop-down list, then Danish cities are displayed, while if another country is chosen, the other cities for that country are displayed. 
-
-![Dropdown cascading lists](/images/dropdown-cascading-lists.jpg)
-
-To achieve this effect, you can connect your list to a data source, for example a SharePoint list or table. Then use the list data source [conditions](/platform/rules/general/add-conditions/) options to filter content based on a parent list. 
-
-![Cascading dropdown](/images/cascading-list-conditions.jpg)
-
-In the example above, the condition used is that a filter is applied if data from the **SharePoint list column** called **Country** is chosen as input for the **form list field** called **Country**, then data from the SharePoint list column called Cities is displayed, see video below.
-
-***How to create cascading dropdowns***
-
-<video width="100%" style="width:100%" controls>
-    <source src="/videos/How to create cascading dropdowns.mp4">
-    Your browser does not support the video tag.
-    </source>
-</video>
-
-
-## Easy to customise form features
-
-Remember with Kianda **Designer** you don't need any coding experience, so anyone with **Administrator** or **Design business process** access can use Kianda's easy to use interface to add fields to forms and customise forms to create the desired effects for an optimum user experience. The Kianda interface makes it easy to create sophisticated forms that follow modern web design principles, all at the click of a button. Examples of ways to customise forms are shown in the following sections, [Responsive form layout](#responsive-form-layout) and [Input validation](#input-validation).
-
-### Responsive form layout
-
-When designing forms, its easy to change the layout of fields to make the field display the way you want. Form fields are made with a mobile-first approach giving you a 'design once and deploy everywhere' opportunity. 
-
-When you select a field, you can go to **Field properties** in the right-hand pane of Kianda Designer and click on the **Layout** option.
-
-Clicking on **Collapse or expand responsive layout** button ![Collapse responsive layout button](/images/collapse-responsive-button.jpg) uncovers the layout mode for desktop and mobile.
-
-![Layout mode](/images/layout-mode.png)
-
-Click on the blue bar for both **Layout** and **Mobile Layout** to adjust the size of the field. This allows you to specify a layout made of 1 to 12 columns and is based on Bootstrap, a popular CSS framework that allows designing web interfaces with a mobile-first approach.
-
-### Input validation
-
-As with editing the layout of fields, it is easy to validate input, making fields mandatory for users to fill in or not. Go to **Field properties** in the right-hand pane of Kianda Designer and click on the **Required** option. If already ticked, uncheck this to make the field not required.
-
-![Field properties for the field 'City'](/images/field-properties-example.jpg)
-
-Simply enable the checking the **Required** property in this way will automatically prevent users from submitting forms with an empty field. The required flag will conveniently be ignored in case the field is not visible, this will allow you to configure conditionally mandatory fields.
-
-Another way of validating input is to use the **validate input rule** which allows for greater flexibility in terms of when or what to validate. [Rules](#rules) are explained below, but click on [Validate input](/platform/rules/form-actions/validate-input/) for more information specifically on this rule.
-
-In addition to changing field properties, you can configure [settings](#settings) to make processes perform the way you want.
-
-## Settings
-
-In addition to **changing field properties** like [Input validation](#input-validation), you can **edit process, form and field** **settings**. Having settings at each level will allow you to tweak your process design in minutes.
-
-At the highest level, **process settings**  are found in the right-hand side pane of Kianda **Designer**. 
-
-![Process settings](/images/process-settings.jpg)
-
-There are many options within **Settings** to manage for example process security and set process instance settings. One setting example is **Enabling anonymous sharing of forms** explained in more detail below.
-
-![Process settings](/images/process-settings-anonymous.jpg)
-
-
-### Anonymous forms ###
-
-**Anonymous forms** are a great way of **allowing people outside of your organisation** to interact with your processes. It could be something as simple as a feedback form or a GDPR data request but as we all know a contact form never ends with the contact submission. There is always a process or a series of steps behind each public/anonymous form that might culminate with an actionable result back to the person that started the submission, or person assigned to manage the form.
-
-Anonymous forms can be embedded using iframes or inline frames. Inline frames are HTML elements that allow another HTML page(s) to be loaded within the document, basically allowing one webpage within another. In Kianda there are effectively two types of anonymous forms:
-
-- [New process instance anonymous form URL](#new-process-instance-anonymous-form-url)
-- [Existing process anonymous form URL](#existing-instance-anonymous-form-url)
-
-#### New process instance anonymous form URL
-
-To set up a **globally available link** to allow external users to create a new process instance, perform the following steps within Kianda designer:
-
-1. Within a chosen process, in the top right click on **Settings**.
-2. Then beside **Enable anonymous sharing of forms** select **Yes**.
-3. Click the button **New Link** to generate a new anonymous link.
-
-![Anonymous Form Settings](/images/enable-anonymous-sharing.jpg)
-
-The generated link can be shared to allow sharing of the form to users without the need for a Kianda account.
-
-#### Existing instance anonymous form URL
-
-To setup an **existing instance** **anonymous form** you need to use the **Anonymous form link rule** to generate a new anonymous link at runtime that will point to an existing process record that can then be shared with external users.
-
-Note that for this to work steps 1 and 2 of [New Instance Anonymous form](#new-process-instance-anonymous-form-url) are still required.
-
-The following are some of the key options of the anonymous link rule:
-
-- Choose a Form to share (any form within an existing process).
-- Link expires settings: choose from an expiry parameter like number of uses, time-based or never expire.
-- Select a Message to display on submission.
-
-**Important**: There can be only one active link of each type for a given process. Once a new anonymous link is created for a process it will automatically cause an expiry of a previous link of the same type.
-
-
-
-## Rules
-Kianda **rules** allow for dynamic actions within processes that can be used to change the workflow, send automated emails or notifications, as well as manipulate data in data sources.
-
-There are 60 predefined rules, across 10 categories that allow you to drive your business processes in a myriad of ways. Go to the [Rules](/platform/rules/) section to navigate to each of the different field categories.
-
-Rules can be driven by [conditions](/platform/rules/general/add-conditions/) for example based on user input, form fields will dynamically appear or hide according to how the user navigates a form, and all rules are **actions** which can involve for example retrieving values from a datasource, storing data in a field or automating user addition to Salesforce.
-
-One example of rules already mentioned is the **Anonymous form link** rule which will dynamically generate and send a link from a form in a process to an external user, without the need for a Kianda account. 
-
-If the current suite of predefined rules do not meet your needs, you can use Kianda **Developer** to create your own rule widget. In a similar fashion you can use this function to create [custom controls or fields](#custom-fields), see more below.
-
-
-
-## Custom fields
-
-In case any of the previously mentioned control types don't suit, you can use Kianda to build your own customised control widgets. The Custom fields section provides access to fields that are built for extensibility of Kianda capabilities. It is particularly useful in those situations where existing fields or rules will not provide the required functionality.
-
-Custom fields have the purpose of providing a user interface for end-users. These **custom fields can be built by developers**. It allows a developer to build a reusable component that would then be used by process designers in real processes. Check-out the [development](/getting-started/welcome/low-code/) section for more details on how to build custom widgets in Kianda.
-
-
-
-### Advanced techniques
-
-Like the [cascading drop-down list](/platform/application-designer/#cascading-dropdown-lists) discussed above, several other advanced scenarios can be easily configured in Kianda. Here is a short-list to give you an idea what is possible:
-
-- **Repeating section** - A repeating section can be created by adding a **panel** to a table field. This table can be configured to include a single column made of the panel that itself will include the repeating fields of your repeating section.
-
-- **The capture of media** - Kianda enables mobile users to directly capture pictures, video or audio just like a native application.
-
-- **Background save** - By making use of PWA principles (Progressive Web Application), Kianda allows the ability to perform background operations. This is useful when, for example, a mobile user picks-up their phone to perform a quick action and places it back in his pocket. Operations will continue in the background allowing all data to be captured.
-
-- **Image annotation** - Kianda allows for image annotation online or offline.
-
-- **Multi-column / row layout** - Making multi-column responsive interfaces is quite easy. Simply add two panels into a form that only use half of the screen (6 columns) then add fields inside panels and you have multiple column layouts. Adding a panel using 12 columns gives you a row.
-
-- **Form tab colour and icon** - Form tabs can be quickly customised to display their icons or tab colours, it is also possible to define custom colours for selected and completed form tabs.
-
-- **Hide form tab and left nav** - This is self-explanatory, yes you can hide the default navigation elements.
-
-Once you have started creating elements in Kianda forms it is easy to replicate elements and make process design happen even faster, see [Cloning](#cloning) below.
-
-
-## Cloning
-
-In Kianda **Designer**, almost any of the components can be cloned. This will increase your productivity considerably and will make creating multi-step processes a breeze.
-
-To clone either a field, a panel or even a form, simply select the component then click the clone button in the  properties panel in the right-hand side of the panel.
-
-If cloning a field, the cloning dialog box will prompt for the destination of the new cloned field, once your choice is made, simply click ok.
-
-***Cloning a form***
-
-<video width="100%" style="width:100%" controls>
-    <source src="/videos/Cloning a form updated.mp4">
-    Your browser does not support the video tag.
-    </source>
-</video>
-
-
-### What's next  ![Idea icon](/images/18.png) ###
-
-To read more about process and forms, go to the link below:
+| Field name          | Explanation                                                  |
+| ------------------- | ------------------------------------------------------------ |
+| **ID**              | This is the **process instance ID**, labelled as 'process-name-number', for example 'safety-inspection-8'. This ID is part of the URL that brings you to the process instance/record held on the system when information is either submitted or saved. For example clicking on the process instance ID 'safety-inspection-8' in a dashboard brings you to the form. |
+| **Unique ID**       | This is a **system generated ID** for each process instance, a 32 letter and number generated value. |
+| **Status**          | This is the status for the process instance, that is either a '**form name**' or '**Completed**'. Completed indicates that all forms in a process have been submitted, while 'form name' indicates what the active form is in the process, that is, where the process is 'at'. For example in a process of two forms, a Request form and an Approval form. Once the Request form has been submitted then the status for a process is 'Approval form' indicating that this form needs to be completed. |
+| **Version**         | This is the **process instance version number** that starts as 1.0. If a process instance is updated, for example if a process design is updated and published and process instances are updated with the change, then the next version of the instance will be 2.0. |
+| **Process Version** | This is the **process design version**, that is the version of the process design that has been used as a template for the process instance. |
+| **Process Name**    | This is the **Unique ID name** that comes from the process design that is the template for the process instance. The ID is created when the process is created. The ID field autofills from the title of the process as shown in [Create your first process](/platform/application-designer/#creating-your-first-process). |
+| **Process Title**   | This is the **Process title** that comes from the process design title, created when the process is created or updated, for example see [Create your first process](/platform/application-designer/#creating-your-first-process). |
+| **Created**         | This is a **date and time stamp** when the process instance is created. |
+| **Created by**      | This is the **user name** of the user who **created** the process instance. |
+| **Modified**        | This is the **date and time stamp** when the process instance is modified, for example after a process design is published and existing process instances are updated. |
+| **Modified by**     | This is the **user name** of the user who **modified** the process instance. |
+| **Assign to**       | This is the **user name** of the user who a process is **assigned** to. Process designs may have a static option for reassignment in their design so that process instances can be reassigned using [Quick actions](/platform/application-designer/forms/form-quick-action/#how-to-get-started). Alternatively the [Assign form](/platform/rules/workflow/assign-form/) rule can be used to dynamically assign form ownership to another user. That user is named in the **Assign to** field. |
+| **Security users**  | These are the named security users, defined using [**Process settings**](/platform/application-designer/process/settings/#process-settings) by selecting **Enable process security** and naming **Process security users** which can be **Users**, **Groups** and/or **Partners**. |
