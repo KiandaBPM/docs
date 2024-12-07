@@ -16,14 +16,14 @@
 <link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
-<title>Form control widget development | Kianda low-code platform for business process automation</title><meta name=description content="There are currently 16 predefined field or control widgets available to use in forms and processes, covering 3 categories: Input, Layout and Actions. …">
-<meta property="og:title" content="Form control widget development">
+<title>Field widget development | Kianda low-code platform for business process automation</title><meta name=description content="There are currently 16 predefined field or control widgets available to use in forms and processes, covering 3 categories: Input, Layout and Actions. …">
+<meta property="og:title" content="Field widget development">
 <meta property="og:description" content>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://docs.kianda.com/low-code/field-widget/">
-<meta itemprop=name content="Form control widget development">
+<meta itemprop=name content="Field widget development">
 <meta itemprop=description content><meta name=twitter:card content="summary">
-<meta name=twitter:title content="Form control widget development">
+<meta name=twitter:title content="Field widget development">
 <meta name=twitter:description content>
 <link rel=preload href=/scss/main.min.216ba436abab1abc7b86a0c734ab1d0f5857261e34a7a8727b80bd7728953357.css as=style>
 <link href=/scss/main.min.216ba436abab1abc7b86a0c734ab1d0f5857261e34a7a8727b80bd7728953357.css rel=stylesheet integrity>
@@ -43,14 +43,14 @@
 <a class="nav-link active" href=/><span class=active>Documentation</span></a>
 </li><li class="nav-item mr-4 mb-2 mb-lg-0">
 <a class=nav-link href="https://portal.kianda.com/public/signup?type=free-developer-account" target=_blank><span>Developer Sign-up</span></a>
-</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.ed75968b09c9ecfb6ec7b03e6cacc579.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.efd5eca6649b5166508c95ebfbc4567a.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 </div></nav></header><div class="container-fluid td-outer">
 <div class=td-main>
 <div class="row flex-xl-nowrap">
 <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.ed75968b09c9ecfb6ec7b03e6cacc579.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.efd5eca6649b5166508c95ebfbc4567a.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form><nav class="collapse td-sidebar-nav foldable-nav" id=td-section-nav>
@@ -563,30 +563,30 @@
 <input type=checkbox id=m-low-code-check checked>
 <label for=m-low-code-check><a href=/low-code/ title="How does Kianda Low-Code Development Work?" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-code><span>Low-code development</span></a></label>
 <ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codepwa-li>
-<input type=checkbox id=m-low-codepwa-check>
-<label for=m-low-codepwa-check><a href=/low-code/pwa/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codepwa><span>Kianda is a Progressive Web Application (PWA)</span></a></label>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-low-codefield-widget-li>
+<input type=checkbox id=m-low-codefield-widget-check checked>
+<label for=m-low-codefield-widget-check><a href=/low-code/field-widget/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id=m-low-codefield-widget><span class=td-sidebar-nav-active-item>Field widget development</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-coderule-widget-li>
+<input type=checkbox id=m-low-coderule-widget-check>
+<label for=m-low-coderule-widget-check><a href=/low-code/rule-widget/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-coderule-widget><span>Rule widget development</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codeemberjs-li>
 <input type=checkbox id=m-low-codeemberjs-check>
 <label for=m-low-codeemberjs-check><a href=/low-code/emberjs/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codeemberjs><span>EmberJS</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codelist-widget-template-li>
-<input type=checkbox id=m-low-codelist-widget-template-check>
-<label for=m-low-codelist-widget-template-check><a href=/low-code/list-widget-template/ title="Low-code customisation options for the list widget" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codelist-widget-template><span>Low-code list widget customisation</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codepage-widget-li>
+<input type=checkbox id=m-low-codepage-widget-check>
+<label for=m-low-codepage-widget-check><a href=/low-code/page-widget/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codepage-widget><span>Page widget development</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codeglobal-css-li>
 <input type=checkbox id=m-low-codeglobal-css-check>
 <label for=m-low-codeglobal-css-check><a href=/low-code/global-css/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codeglobal-css><span>Global CSS file</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codeglobal-javascript-li>
 <input type=checkbox id=m-low-codeglobal-javascript-check>
 <label for=m-low-codeglobal-javascript-check><a href=/low-code/global-javascript/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codeglobal-javascript><span>Global JavaScript file</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-low-codefield-widget-li>
-<input type=checkbox id=m-low-codefield-widget-check checked>
-<label for=m-low-codefield-widget-check><a href=/low-code/field-widget/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id=m-low-codefield-widget><span class=td-sidebar-nav-active-item>Form control widget development</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-coderule-widget-li>
-<input type=checkbox id=m-low-coderule-widget-check>
-<label for=m-low-coderule-widget-check><a href=/low-code/rule-widget/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-coderule-widget><span>Rule widget development</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codepage-widget-li>
-<input type=checkbox id=m-low-codepage-widget-check>
-<label for=m-low-codepage-widget-check><a href=/low-code/page-widget/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codepage-widget><span>Page widget development</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codelist-widget-template-li>
+<input type=checkbox id=m-low-codelist-widget-template-check>
+<label for=m-low-codelist-widget-template-check><a href=/low-code/list-widget-template/ title="List widget template customisation" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codelist-widget-template><span>List widget templating</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codepwa-li>
+<input type=checkbox id=m-low-codepwa-check>
+<label for=m-low-codepwa-check><a href=/low-code/pwa/ title="Kianda is a Progressive Web Application (PWA)" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codepwa><span>PWA</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codewebhooks-li>
 <input type=checkbox id=m-low-codewebhooks-check>
 <label for=m-low-codewebhooks-check><a href=/low-code/webhooks/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codewebhooks><span>Webhooks</span></a></label>
@@ -698,7 +698,7 @@
 <a href=https://github.com/KiandaBPM/docs/tree/main/content/low-code/field-widget/_index.md class="btn btn-default" title="View on github" target=_blank rel=noopener>
 <i class="fa fa-edit fa-lg"></i>
 </a>
-<a href="https://github.com/KiandaBPM/docs/issues/new?title=Form%20control%20widget%20development" class="btn btn-default" title="Create a new documentation issue" target=_blank rel=noopener>
+<a href="https://github.com/KiandaBPM/docs/issues/new?title=Field%20widget%20development" class="btn btn-default" title="Create a new documentation issue" target=_blank rel=noopener>
 <i class="fa fa-comment-dots fa-lg"></i>
 </a>
 <a id=print class="btn btn-default" href=https://docs.kianda.com/low-code/field-widget/_print/>
@@ -717,9 +717,9 @@
 <li class=breadcrumb-item>
 <a href=https://docs.kianda.com/low-code/>Low-code development</a>
 </li><li class="breadcrumb-item active" aria-current=page>
-<a href=https://docs.kianda.com/low-code/field-widget/>Form control widget development</a>
+<a href=https://docs.kianda.com/low-code/field-widget/>Field widget development</a>
 </li></ol></nav><div class=td-content>
-<h1>Form control widget development</h1><header class=article-meta>
+<h1>Field widget development</h1><header class=article-meta>
 </header><p>There are currently 16 predefined field or control widgets available to use in forms and processes, covering 3 categories: <a href=/platform/controls/input/>Input</a>, <a href=/platform/controls/layout/>Layout</a> and <a href=/platform/controls/actions/>Actions</a>. Click on the relevant links to find out more about each area. However if customised fields have been created, they are available to those with the role <strong>Administration</strong> and <strong>Design business process</strong> to use in process and form design in Kianda <strong>Designer</strong>. Customised fields are available under the <strong>Custom controls</strong> category.</p><p>Custom controls are created by <strong>Administrators</strong> or <strong>Developers</strong> who have coding experience to use Kianda&rsquo;s low-code development feature, Kianda <strong>Developer</strong>. Kianda Developer uses two tabs for each widget created, one for <strong>widget UI</strong> and one for the <strong>widget code</strong>. There is a short explanation of the widget UI syntax below.</p><h3 id=handlebars-syntax>Handlebars syntax</h3><p>The widget UI uses syntax called <strong>handlebars</strong> that can be used by multiple languages. Kianda uses <strong>Ember.js</strong> framework which uses the <strong>handlebars templating library</strong> to make changes to the user interface. For example in the code block below, a <strong>component</strong> called &lsquo;field-picker&rsquo; is called using Ember and the properties are also shown below, for example &lsquo;allowText=false&rsquo; meaning text cannot be typed in by the user as the user must choose a field or form.</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-handlebars data-lang=handlebars><span style=display:flex><span><span style=color:#8f5902;font-style:italic>{{</span><span style=color:#204a87;font-weight:700>#if</span> <span style=color:#a40000>(</span><span style=color:#000>eq</span> <span style=color:#000>displayMode</span> <span style=color:#4e9a06>&#34;settings&#34;</span><span style=color:#a40000>)</span><span style=color:#8f5902;font-style:italic>}}</span><span style=color:#000>
 </span></span></span><span style=display:flex><span><span style=color:#000>	&lt;div class=&#34;form-group&#34;&gt;
 </span></span></span><span style=display:flex><span><span style=color:#000>	&lt;label class=&#34;control-label&#34;&gt;Image to place pictures into&lt;/label&gt;
