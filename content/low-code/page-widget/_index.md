@@ -1,7 +1,7 @@
 ---
 title: "Page widget development"
 linkTitle: "Page widget development"
-weight: 10
+weight: 3
 typora-root-url: ..\..\..\static
 ---
 

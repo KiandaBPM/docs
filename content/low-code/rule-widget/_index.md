@@ -1,6 +1,6 @@
 ---
 title: "Rule widget development"
-weight: 9
+weight: 2
 typora-root-url: ..\..\..\static
 ---
 
@@ -56,5 +56,4 @@ If you are an experienced developer with an **Administrator** or **Developer** r
 7. Custom rule widgets you create will be available for use in Kianda Designer by going to **Side menu** > **Administration** > **Designer** > **click on an existing process** or **Add new** to add a new process, then click on **Add a rule** to see the **Custom** rule category added under **Rules**.
 
       ![Custom fields](/images/custom-rule-category.jpg)
-
 

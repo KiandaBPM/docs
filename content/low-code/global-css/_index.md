@@ -1,6 +1,6 @@
 ---
 title: "Global CSS file"
-weight: 6
+weight: 4
 typora-root-url: ..\..\..\static
 ---
 

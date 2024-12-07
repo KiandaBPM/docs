@@ -1,6 +1,7 @@
 ---
 title: "Kianda is a Progressive Web Application (PWA)"
-weight: 2
+linkTitle: "PWA"
+weight: 7
 typora-root-url: ..\..\..\static
 ---
 

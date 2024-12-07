@@ -1,7 +1,7 @@
 ---
-title: "Low-code customisation options for the list widget"
-linkTitle: "Low-code list widget customisation"
-weight: 4
+title: "List widget template customisation"
+linkTitle: "List widget templating"
+weight: 6
 typora-root-url: ..\..\..\static
 ---
 

@@ -12,8 +12,6 @@ More specifically the building blocks of the Kianda platform include **Ember.js*
 
 To get started as a developer in Kianda the only requisite is to have CSS and JavaScript working knowledge. Familiarity with Handlebars or Emberjs is a plus but any web developer could pick this quickly.
 
-
-
 ## Why choose low-code development? 
 
 Kianda’s low code development environment provides developers with a graphical user interface to quickly create customised applications that can be used in automated processes. Kianda **Developer** allows you to quickly build **reusable widgets** allowing you to extend the functionality of the system. You can define the functionality or module that you want to define and deliver that module for inclusion in an application design, without the need to invent all the code from scratch. For example you could create a custom control that allows you to display images in a particular way, see [Custom field development](/low-code/field-widget/).
