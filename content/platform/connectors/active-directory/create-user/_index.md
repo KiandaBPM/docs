@@ -1,13 +1,10 @@
 ---
-title: "Active Directory Connector - Create user"
+title: "Create user"
 weight: 1
 typora-root-url: ..\..\..\..\static
-description: "Kianda Active Directory Connector - create user"
 ---
 
 One of the data connectors within Kianda that you can connect to is **Active Directory** (**AD**) also known as **Active Directory Domain Services** (**AD DS**). AD is a logical and hierarchical structured data store of objects which are mostly accounts. Accounts such as **Users, Computers, Groups** and other objects such as **Printers** or **Group Policy Objects** (GPO). For example, you can store information about user accounts within an AD such as **Name, Password, Job title** and **Permissions**. 
-
-## When to use
 
 Having an AD connector will allow you to access information that is stored there within your Kianda subscription. You will be able to use **User** related AD functions which will allow you to use the connector when manipulating users within your AD. For example creating users, updating their permissions, moving them between groups or removing them from the directory. To use the AD functions, you can use the [Data](/platform/rules/data/) rules that are predefined within Kianda.
 
@@ -80,7 +77,3 @@ Lets take the **CreateUser** function as an example to show how these functions 
 You can apply the create item rule to a button, for example, the submit button. This will result in a user being created in your AD whenever the submit button will be clicked.
 
 
-
-### What’s next ![Idea icon](/images/18.png)
-
-Your **Active Directory connector** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/platform/application-designer/designer/).

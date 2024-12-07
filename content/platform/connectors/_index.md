@@ -66,9 +66,9 @@ Only those with the role **Administrator** or **Manage data sources** have acces
 
    
 
-## Creating a datasource
+## Registering a datasource
 
-The video below demonstrates how to create a datasource for SharePoint. The procedure shown is similar for other data connectors. Click on the links in [Predefined data connectors](#predefined-data-connectors) to read more on how to connect to different data sources.
+The video below demonstrates how to create or register a datasource for SharePoint. The procedure shown is similar for other data connectors. Click on the links in [Predefined data connectors](#predefined-data-connectors) to read more on how to connect to different data sources.
 
 **Connecting to SharePoint Data (On-premises or Online) example**
 
@@ -162,8 +162,3 @@ To enable security for datasources:
    - When you have added conditions click on **OK**, or click on **Close** at any time to exit the dialog box.
 
 8. When you are finished editing the security settings dialog box, click on **OK**, or click on **Close** at any time to exit the dialog box.
-
-
-### What's next  ![Idea icon](/images/18.png) ###
-
-We have introduced the data sources management function within **Administration**. Now let's look at each of the data connector types in more detail:

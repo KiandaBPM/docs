@@ -1,12 +1,12 @@
 ---
-title: "Progressive Web Application (PWA)"
+title: "Kianda is a Progressive Web Application (PWA)"
 weight: 2
 typora-root-url: ..\..\..\static
 ---
 
-## Introduction
+Kianda is a **Progressive web application**. PWA's are the next generally the recommended way for deploying mobile applications for enterprise use. They do not require publishing to app stores but provide all the advantages of native mobile applications like push notifications and offline availability. 
 
-**Progressive web applications** are the next great trend for the mobile web. As the Kianda platform is a progressive web application, you can access your businesses' Kianda workspace as if it were a mobile application. 
+The Kianda platform is a progressive web application, you can access your businesses' Kianda workspace as if it were a native mobile application. 
 
 Instead of having to download an application through your device's native application store, the PWA can be formatted and installed on your device so that you can easily access the website via a URL shortcut. This means with Kianda you get a digital experience that is native-like while maintaining online web benefits. When you have a Kianda subscription, you gain the ability to access your workspace via a PWA. Seen below is the accessing of the Kianda platform via a PWA on an android device.
 
@@ -93,10 +93,6 @@ iOS users are not yet automatically prompted to install PWA's but it is somethin
    ![PWA iOS logging in using app](/images/pwa-ios3.jpg)
 
 
-
-## What's next ![Idea icon](/images/18.png)
-
-To continue with low-code development, return to [Low-code development](/low-code/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/getting-started/welcome/no-code/) and [What is low-code?](/getting-started/welcome/low-code/). 
 
 
 

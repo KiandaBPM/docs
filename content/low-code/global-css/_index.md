@@ -4,14 +4,12 @@ weight: 6
 typora-root-url: ..\..\..\static
 ---
 
-## Introduction
-
-Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole site. However as a workspace **Administrator** you can add a **Global CSS File** to make changes to the **look and feel** of the site as well as the **functionality of processes**. 
+Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole workspace. However as a workspace **Administrator** you can add a **Global CSS File** to make changes to the **look and feel** of the site as well as the **functionality of processes**. 
 
 You can use the file to **target** very specific details, for example a button in a particular process as shown below. This code will create specific styling for a button that is defined in a form in a process using Kianda **Designer**.
 
 ```css
-.buttonWhite{
+.button-white{
     color: white;
     background-color: black;
     padding-bottom: 1px;
@@ -39,13 +37,7 @@ However, you may want to achieve a **deeper level of customisation**. There are 
 
 ## Before you get started
 
-The key to building functional and aesthetically pleasing workspaces and processes within Kianda is to **plan ahead** and create a design in advance that you can then use as your vision and mould your process or workspace into. **Design** **tools** can be used to create **visual** **mock**-**ups** of the processes and workspaces you would like to create, for example the mock-up below was created using **Adobe** **XD**. 
-
-<img src="/images/mock-up-design.jpg" alt="Mock-up design example" style="zoom:80%;" />
-
-Bootstrap has released a **library** that can be imported into Adobe XD that allows you to create designs using **bootstrap** **elements**. This allows you to see all of the **available** **components** you have to create your processes and workspaces, and then create **visually** **pleasing** and **functional** **designs** using these elements. 
-
-The **mock**-**up** was then used as a plan to **create** **this** **process**. You don’t have to create processes or workspaces exactly the same as the mock-ups to create during the **planning** **stage**, but they act as a great **reference** and allow you to have a **solid** **foundation** to build off of whilst still being able to **deviate** from the **design** when the need arises. Go to [Create your first Kianda process](/getting-started/create-first-process/) for advice and tips on planning processes. To help you in planning your CSS design, see the sections below.
+The key to building functional and aesthetically pleasing workspaces and processes within Kianda is to **plan ahead** and create a design in advance that you can then use as your vision and mould your process or workspace into. **Design** **tools** can be used to create **visual** **mock**-**ups** of the processes and workspaces you would like to create. 
 
 ### Effective use of CSS classes in Kianda
 
@@ -71,15 +63,13 @@ When your class style is defined and ready to apply, add "**tile**" in the **Cus
 
 In the image below “**tile**” was used to style these two panels into two **tiles** aligned **side** **by** **side**. 
 
-![Table styling example](/images/table-styling-customised.png)
-
-The benefit of this method is that styles can be **created** **once** and very quickly applied to **elements** anywhere in your Kianda platform. This saves process designers having to revisit the **CSS** **file** every time they are creating a new process or dashboard.
+The benefit of this method is that styles can be **created** **once** and very quickly applied to **elements** anywhere in your workspace. This saves process designers having to revisit the **CSS** **file** every time they are creating a new process or dashboard.
 
 #### Small touches example
 Here is another example of that demonstrates how you can create a **defined** and **recognizable** design without bloating the visuals of your workspace. In this example the below style rule is used to add a gold underline to the **header** **titles** of processes to separate the title of the page and the specific course you are currently viewing. 
 
 ```css
-.headerTitle {
+.header-title {
   font-size: medium;
   text-transform: uppercase;
   color: #004B8B
@@ -87,10 +77,6 @@ Here is another example of that demonstrates how you can create a **defined** an
   border-bottom: 3px solid #F9DCC1;
 }
 ```
-
-![Gold underline styling example](/images/gold-underline-example.jpg)
-
-Adding small details like this can have a great affect on the **aesthetic** of your Kianda platform.
 
 ### Using Font Awesome icons
 
@@ -118,24 +104,6 @@ For more information on Font Awesome icons go to this [documentation](https://fo
 ### Using modals in form design
 
 In addition to styling forms and form elements, **modals** provide a useful way to communicate with users by displaying information in front of page content requiring the user to engage with an action within the modal . In the example below, you can see how the Transfer assets modal appears on the page, requiring users to view and interact with functionality **contained** **within** **the modal** without having to navigate away from the **current** **page** they are on. This is not only **convenient** for the user but it adds a **layered** **design** to your Kianda platform and its aesthetically pleasing to view.
-
-![Modal example](/images/modal-design-example.jpg)
-
-A **JavaScript** **function** called `showModalForm` can be called to **display** a page in a **form** **modal**. 
-
-```html
-<a onclick="showModalForm('demo-process','demo-process-1',true, '&formName=SignUpform')">Open Demo Process</a>
-```
-
-This function also allows you to **pass** **data** into the modal for use within that form, typically:
-
-1. **`nameOrUrl`** -  you can add in a) **name of a process** for example `demo-process` or b) **a process instance** for example `demo-process-1` if you want to go to an existing process instance, and set the next parameter to `false` see point 2 below, or c) **add in a URL**, where the URL might be a website to open in the modal.
-2. `isNew` parameter - where **`true`  creates a new process instance**, otherwise choose **`false` to open an existing process instance in preview mode** and provide the name of the instance as mentioned in b) above.
-3. **`params`** - **URL parameters** appended to the URL, for example 'SignUpform' as used above where formName parameter is reserved; if the form is active, the user can be directed to the specified form
-
-Now that you have been introduced to a variety of design considerations, go to the next section to learn how to use the [Global CSS Editor](#how-to-get-started-with-global-css).
-
-
 
 ## How to get started with Global CSS ##
 
@@ -277,13 +245,3 @@ For example, if you want to change all buttons in the process to have a backgrou
    ![Richtext button styling example](/images/button-color-change.jpg)
 
 The steps above can be used to edit any element in a **process or dashboard** using any standard CSS syntax. 
-
-   
-
-### What's next  ![Idea icon](/images/18.png) ###
-
-To review the range of fields available in Kianda that can have styling applied go to [Controls](/platform/controls/).
-
-To learn more about designing processes go to [Application designer](/platform/application-designer/).
-
-To learn more about dashboards go to [Dashboard pages](/platform/pages/).

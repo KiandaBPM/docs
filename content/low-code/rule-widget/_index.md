@@ -1,10 +1,8 @@
 ---
-title: "Custom rule development"
+title: "Rule widget development"
 weight: 9
 typora-root-url: ..\..\..\static
 ---
-
-## Introduction
 
 There are currently 60 predefined rules available to use in forms and processes, across 10 categories:
 
@@ -17,7 +15,6 @@ There are currently 60 predefined rules available to use in forms and processes,
 - [Dates](/platform/rules/dates/)
 - [Form actions](/platform/rules/form-actions/)
 - [SharePoint](/platform/rules/sharepoint/)
-- [KiandaAI](/platform/rules/kianda-ai/)
 
 Click on the relevant links to find out more about each area. However if customised rules have been created, they are available to those with the role **Administration** and **Design business process** to use in process and form design in Kianda **Designer**. Customised rules are available under the **Custom rules** category under **Add a rule**.
 
@@ -61,9 +58,3 @@ If you are an experienced developer with an **Administrator** or **Developer** r
       ![Custom fields](/images/custom-rule-category.jpg)
 
 
-
-## What's next ![Idea icon](/images/18.png)
-
-To continue with low-code development, you can view [Templating basics](/low-code/templating-basics/). If you would like to learn more about low-code go to the [Low-code development](/low-code/) page and from there navigate to other pages on low-code practices.
-
-To create other widgets go to [Custom field widget](/low-code/field-widget/) and [Custom dashboard widget](/low-code/dashboard-widget/) pages to find out more.

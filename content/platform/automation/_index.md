@@ -1,12 +1,10 @@
 ---
-title: "Task Automation with Kianda"
+title: "Task Automation"
 linkTitle: "Task Automation"
 typora-root-url: ..\..\..\..\static
 ---
 
-## Introduction
-
-Automation in Kianda happens at various level and in various ways, all of which you can control using the click of a button, or configuring a parameter. To help you recognise how automation can happen, we've broken it down for you into different sections:
+Automation in Kianda happens at various levels and in various ways, all of which you can control using the click of a button, or configuring a parameter. To help you recognise how automation can happen, we've broken it down for you into different sections:
 
 1. [Process level automation](#process-level-automation)
 2. Field level automation

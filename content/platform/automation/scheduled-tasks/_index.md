@@ -78,11 +78,3 @@ To use the Scheduled tasks function:
 
 7. When you have finished editing the **Schedule a task** dialog box, click on **OK** or click on **Close** at any time to exit the dialog box.
 
-   
-
-### What's next  ![Idea icon](/images/18.png) ###
-
-To read more about how to create processes and forms go to [Application Designer](/platform/application-designer/).
-
-To find out about help and support, go to [Help](/platform/general/help/).
-

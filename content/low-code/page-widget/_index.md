@@ -1,11 +1,9 @@
 ---
-title: "Custom dashboard development"
-linkTitle: "Custom dashboard widget"
+title: "Page widget development"
+linkTitle: "Page widget development"
 weight: 10
 typora-root-url: ..\..\..\static
 ---
-
-## Introduction
 
 There are currently 7 predefined dashboard widgets available to use to create illustrative and responsive pages to show how your processes are performing at a glance. These widgets are:
 
@@ -21,7 +19,7 @@ Click on the relevant links to find out more about each area. However if customi
 
 Custom dashboards are created by **Administrators** or **Developers** who have coding experience to use Kianda's low-code development feature, Kianda **Developer**. 
 
-## How to get started
+## How to develop a new page widget
 
 If you are an experienced developer with an **Administrator** or **Developer** role, see [Users & Groups](/platform/administration/users/), you can create a new dashboard widget within Kianda by doing the following: 
 
@@ -63,13 +61,3 @@ If you are an experienced developer with an **Administrator** or **Developer** r
       ![Custom dashboard widgets drop-down list](/images/custom-dashboard-widgets.jpg)
 
 10. Then click on the new widget design name to implement the widget, starting with editing the widget and then change settings, see [Edit dashboard page settings](/platform/pages/#how-to-edit-dashboard-page-settings) for more information on general settings.
-
-
-
-## What's next ![Idea icon](/images/18.png)
-
-To continue with low-code development, you can view [Templating basics](/low-code/templating-basics/). If you would like to learn more about low-code go to the [Low-code development](/low-code/) page and from there navigate to other pages on low-code practices.
-
-To create other widgets go to [Custom field widget](/low-code/field-widget/) and [Custom rule widget](/low-code/rule-widget/) pages to find out more.
-
-Go to the link on [Dashboards](/platform/pages/) to learn more about dashboard pages.

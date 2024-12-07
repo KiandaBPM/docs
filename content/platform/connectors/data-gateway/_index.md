@@ -1,12 +1,12 @@
 ---
-title: "Kianda Cloud Connect"
+title: "Data gateway"
 weight: 10
 typora-root-url: ..\..\..\..\static
 ---
 
-**Kianda Cloud Connect** is a piece of software that **establishes a connection** between your **local machine** and your **Kianda subscription**. This lightweight app will sit on your PC or server where files reside that you need to use in Kianda processes. It allows the data to **travel** from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example **Deleting** a file or **Creating** one.
+**Kianda Cloud Connect** is a piece of software that **establishes a connection** between your **local machine** and your **workspace**. This lightweight service will sit on your PC or server where files reside that you need to use in processes. It allows the data to **travel** from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your subscription. This data transfer works both ways depending on what operation you are performing for example **Deleting** a file or **Creating** one.
 
-Kianda Cloud Connect authenticates with a user created in Kianda, see [User management](/platform/administration/users/) for more details on users, and sends information to and from Kianda using port 80. See details below on how to set up the connection.
+Kianda Cloud Connect authenticates with a user created in Kianda, see [User management](/platform/administration/users/) for more details on users, and sends information to and from Kianda using port 443. See details below on how to set up the connection.
 
 ## Downloading Kianda Cloud Connect
 
@@ -74,7 +74,3 @@ To **open** Kianda Cloud Connect on your PC, open the **Kianda Cloud Connect app
 ![Kianda Cloud Connect Connectors section](/images/kianda-cloud-connect-connector.jpg)
 
 The connector is now established and can be used when designing processes. 
-
-### What's next  ![Idea icon](/images/18.png) ###
-
-To find out more about how to build processes go to [Application Designer](/platform/application-designer/).

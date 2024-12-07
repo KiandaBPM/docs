@@ -127,7 +127,3 @@ https://ldap.com/ldap-filters/
 https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol
 
 https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/ldap-reference
-
-### What’s next ![Idea icon](/images/18.png)
-
-When you have created your **Active Directory connector** you can start to use the connector data in **processes**. To find out more about how to design processes, go to [Designer](/platform/application-designer/designer/).

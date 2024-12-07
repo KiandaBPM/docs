@@ -1,10 +1,8 @@
 ---
-title: "Custom field development"
+title: "Form control widget development"
 weight: 8
 typora-root-url: ..\..\..\static
 ---
-
-## Introduction
 
 There are currently 16 predefined field or control widgets available to use in forms and processes, covering 3 categories: [Input](/platform/controls/input/), [Layout](/platform/controls/layout/) and [Actions](/platform/controls/actions/). Click on the relevant links to find out more about each area. However if customised fields have been created, they are available to those with the role **Administration** and **Design business process** to use in process and form design in Kianda **Designer**. Customised fields are available under the **Custom controls** category.
 
@@ -192,14 +190,4 @@ To use the new widget:
    ![Custom control form example](/images/custom-control-form-example.jpg)
 
    
-
-
-
-## What's next ![Idea icon](/images/18.png)
-
-To continue with low-code development, you can view [Templating basics](/low-code/templating-basics/). If you would like to learn more about ‘no-code versus low-code’ in general, see [What is no-code?](/getting-started/welcome/no-code/) and [What is low-code?](/getting-started/welcome/low-code/). 
-
-
-
-
 

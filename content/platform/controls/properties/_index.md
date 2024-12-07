@@ -69,17 +69,6 @@ Make sure to save any changes you make by clicking on the **Save** button ![Save
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
-
-Now that you've learned about the **Properties** associated with processes, forms and fields, find out more about the different categories and types of fields (controls):
-
-- [Input controls](/platform/controls/input/)
-- [Layout controls](/platform/controls/layout/)
-- [Actions](/platform/controls/actions/)
-- [Custom controls](/platform/controls/custom/)
-
-
-
 
 
 

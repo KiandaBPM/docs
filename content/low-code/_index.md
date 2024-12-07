@@ -6,11 +6,23 @@ typora-root-url: ..\..\..\static
 description: "Low-code development guides. Developers start here"
 ---
 
-## Introduction to the technologies used ##
+As Kianda is built using open web technologies based on **CSS** and **JavaScript** and **micro-services**, you can use your existing web software development skills to build amazing apps with your given workspace. 
 
-As Kianda is built using front-end technologies like **CSS** and **JavaScript**, you can use your software development skills to customise your given workspace design and functionality by editing files found under the [Subscription](/platform/administration/subscription/) function. 
+More specifically the building blocks of the Kianda platform include **Ember.js** and **Bootstrap** and other front-end technologies like web sockets, AJAX and more. From a back-end point of view Kianda is powered by highly scalable micro-services that use a variety of technologies like .NET, NodeJS and more.
 
-More specifically the building blocks of the Kianda platform are **Ember.js** and **Handlebars**. These are explained in more detail below. It is important to have some knowledge of **Ember.js** and **Handlebars** when creating custom widgets for dashboards, data connectors, fields and rules as part of Kianda's **low-code** development interface, Kianda **Developer**.
+To get started as a developer in Kianda the only requisite is to have CSS and JavaScript working knowledge. Familiarity with Handlebars or Emberjs is a plus but any web developer could pick this quickly.
+
+
+
+## Why choose low-code development? 
+
+Kianda’s low code development environment provides developers with a graphical user interface to quickly create customised applications that can be used in automated processes. Kianda **Developer** allows you to quickly build **reusable widgets** allowing you to extend the functionality of the system. You can define the functionality or module that you want to define and deliver that module for inclusion in an application design, without the need to invent all the code from scratch. For example you could create a custom control that allows you to display images in a particular way, see [Custom field development](/low-code/field-widget/).
+
+Providing you have some software development and/or coding experience, low-code development can allow you to implement customised Kianda widgets to meet user-specific needs such as creating custom ‘Field’, ‘Rule’ or ‘Dashboard widget’ elements.
+
+There are 16 predefined fields and 60 rules available for non-developers to use in a no-code form design GUI. However if these do not suit, then Kianda’s low-code development solution provides near limitless room for process expansion. As the Kianda platform offers access to any data source (including real-time synchronisation of the data) and integration with many other software tools and applications, the implementation of low-code can provide your business processes with extreme scalability and room for improvement.
+
+You can also build upon pre-defined field, rule. data connector and dashboard code to offer the developer a shortcut in creating something new and beneficial for the organisation. For example, you can see a **rule widget user interface** being designed below, using HTML, handlers, expressions and more.
 
 ### Ember.js ![Ember logo](/images/ember-logo.png) ####
 
@@ -34,11 +46,11 @@ Using your **administrator** role, and accessing **Administration** functions th
 
 2. Editing the [Global CSS file](/low-code/global-css/)
 
-3. Building widgets for [rules](/low-code/rule-widget/), [fields](/low-code/field-widget/), [dashboards](/low-code/dashboard-widget/) and data connectors using [Kianda Developer](#kianda-developer)
+3. Building widgets for [rules](/low-code/rule-widget/), [fields](/low-code/field-widget/), [pages](/low-code/dashboard-widget/) and data connectors
 
 4. [Customising list widgets](/low-code/list-widget-template/) to present data in dashboards
 
-5. Creating beautiful [rich text](/low-code/global-css/#process-and-dashboard-specific-css) for emails and forms
+5. Creating [rich text](/low-code/global-css/#process-and-dashboard-specific-css) for emails and forms
 
 In addition to the above customisations, you can use your JavaScript knowledge to create smart [expressions](/low-code/javascript-expressions/) that can be used in text box, number and rich text fields, as well as **anywhere that uses rich text** like [Send email rule](/platform/rules/communications/send-email/) body text for emails, [Meeting request rule](/platform/rules/communications/meeting-request/) and rich text widget for dashboards. 
 
@@ -149,13 +161,33 @@ The 'Widget Code' is written in JavaScript and defines the logics and functions.
 }
 ```
 
+### JavaScript Expressions
 
+Expressions are available for use extensively throughout the platform, both in **controls** like text box, number and rich text, as well as **rules** like Send email and Set form field. 
 
-For more information on the other areas of customisation/widget development, click on the links below:
+The use of expressions allows you to cleverly manipulate data to create new constructs that can be used within processes. For example if an 'Onboarding process' requires that a new hire completes a 'new employee form' filling out their 'firstname' and 'lastname', it may be useful to combine the two input strings to create a new ID for the employee that combines the data from each field.
 
-- [Rule development](/low-code/rule-widget/)
+![Expression new employee ID example](/images/expression-id-example.jpg)
 
-- [Dashboards](/low-code/dashboard-widget/)
+The [Expression builder](/platform/rules/general/expression-builder/) page provides an introduction to expressions and shows one example of expressions in use in a **Send email rule** to automate how emails are sent. The example simply uses the **[identifier]** or unique name from form fields to populate the body text of the email.
 
-  
+![Expression example](/images/expression-example.gif)
+
+**ProcessLink()** is a function that will return a link to that particular process instance. You can use **any JavaScript functions** in the expression field to make advanced expressions throughout your Kianda forms, see below for how to get started.
+
+## How to get started with JavaScript expressions ##
+
+Expressions are recognisable in Kianda from the **Expressions** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png) found in **Edit rule dialog boxes** and controls like **text box**, **number** and **rich text**. 
+
+Within rules, expressions can be created using the **Expression builder** where you can **Add field to an expression** or use the handy **Reference** guide to get a list of commonly used functions, such as **ProcessLink()**.
+
+***Expression builder***
+
+![Expression builder example in action](/images/expression-builder-eg.gif)
+
+To create a field in a form that concatenates the values from two text boxes, we could start using expressions as follows:
+
+1. In a simple form made up of three fields, we choose one field which is going to act as the trigger for an action. 
+
+We can also insert JavaScript such as JavaScript Strings into the expression.
 

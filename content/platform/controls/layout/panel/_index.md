@@ -203,13 +203,3 @@ To learn more about the different options within the Field properties menu, go t
 ### Saving changes and version history ###
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
-
-
-
-### What's next  ![Idea icon](/images/18.png) ###
-
-Now that you've learned about the **Panel control**, find out more about the other types of **Layout fields** you can add to a Kianda process:
-
-- [Field group control](/platform/controls/layout/field-group/)
-- [Modal dialog control](/platform/controls/layout/dialog/)
-- [Richtext control](/platform/controls/layout/richtext/)
