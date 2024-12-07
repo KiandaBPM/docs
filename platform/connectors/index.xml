@@ -99,9 +99,7 @@
 &lt;p>LDAP queries and more information on LDAP can be found in many pages such as:&lt;/p>
 &lt;p>&lt;a href="https://ldap.com/ldap-filters/">https://ldap.com/ldap-filters/&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/ldap-reference">https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/ldap-reference&lt;/a>&lt;/p>
-&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>When you have created your &lt;strong>Active Directory connector&lt;/strong> you can start to use the connector data in &lt;strong>processes&lt;/strong>. To find out more about how to design processes, go to &lt;a href="https://docs.kianda.com/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Platform: DocuSign</title><link>https://docs.kianda.com/platform/connectors/docusign/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/connectors/docusign/</guid><description>
+&lt;p>&lt;a href="https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/ldap-reference">https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/ldap-reference&lt;/a>&lt;/p></description></item><item><title>Platform: DocuSign</title><link>https://docs.kianda.com/platform/connectors/docusign/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/connectors/docusign/</guid><description>
 &lt;p>One of the data connectors within Kianda that you can connect to is &lt;strong>DocuSign&lt;/strong>. DocuSign enables organisations to manage electronic agreements by offering electronic signatures also know as &lt;strong>eSignatures&lt;/strong>. eSignatures are a way to sign different types of documents electronically on many different devices.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can use the DocuSign data connector when a process you have created requires you to send individual documents or envelopes to get them signed &lt;strong>electronically&lt;/strong>. With the connector, you can access different types of &lt;strong>templates&lt;/strong> that you have created within your DocuSign account, &lt;strong>download&lt;/strong> documents, and access already existing envelopes to see their &lt;strong>status&lt;/strong> or &lt;strong>summary&lt;/strong>.&lt;/p>
@@ -188,123 +186,7 @@
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>Your &lt;strong>DocuSign service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Platform: Data sources</title><link>https://docs.kianda.com/platform/connectors/datasources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/connectors/datasources/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The &lt;strong>Data sources&lt;/strong> function is available to administrators and those users with the role &lt;strong>Manage datasources&lt;/strong>. Data sources is found in the left-hand side pane, or on the top right toolbar depending on the &lt;a href="https://docs.kianda.com/platform/administration/subscription/#general-settings">chosen orientation&lt;/a>, under &lt;strong>Administration&lt;/strong>. The data sources function allows you to connect your processes to external data sources like SharePoint, Salesforce or SAP.&lt;/p>
-&lt;p>Connecting your data sources in this way allows real-time scalability, so as your organisation and data grows, the processes created in Kianda will continue to operate with these data sources, providing sustainable, flexible growth.&lt;/p>
-&lt;p>Kianda comes with 19 predefined &lt;strong>data connectors&lt;/strong> allowing you to connect to these data sources. These are listed below:&lt;/p>
-&lt;ul>
-&lt;li>Active Directory&lt;/li>
-&lt;li>DocuSign&lt;/li>
-&lt;li>Dropbox&lt;/li>
-&lt;li>Dynamics CRM&lt;/li>
-&lt;li>Email&lt;/li>
-&lt;li>File system&lt;/li>
-&lt;li>FTP&lt;/li>
-&lt;li>GlobalPayments&lt;/li>
-&lt;li>Google Drive&lt;/li>
-&lt;li>MySQL&lt;/li>
-&lt;li>Office 365&lt;/li>
-&lt;li>Oracle database&lt;/li>
-&lt;li>PowerShell&lt;/li>
-&lt;li>Salesforce&lt;/li>
-&lt;li>SAP&lt;/li>
-&lt;li>SharePoint&lt;/li>
-&lt;li>SOAP Service&lt;/li>
-&lt;li>SQL Server&lt;/li>
-&lt;li>REST Service&lt;/li>
-&lt;/ul>
-&lt;p>If you are a developer and want to connect to a datasource that is not included in the predefined set, you can use SOAP or REST to create your own API for data transfer.&lt;/p>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;p>To start viewing existing data sources:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>To see the datasource management function, select &lt;strong>Administration&lt;/strong> from the left-hand side pane and then click &lt;strong>Data sources&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Any existing data sources that have been created for your workspace are shown in the main view under &lt;strong>Datasource management&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-list.jpg" alt="Existing data connectors">&lt;/p>
-&lt;p>Data sources are listed by:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Name&lt;/strong> - assigned title&lt;/li>
-&lt;li>&lt;strong>Type and icon&lt;/strong> - assigned data connector type and icon image&lt;/li>
-&lt;li>&lt;strong>Modified&lt;/strong> - the date the connector was modified&lt;/li>
-&lt;li>&lt;strong>Modified By&lt;/strong> - the person who last made changes&lt;/li>
-&lt;li>&lt;strong>Status&lt;/strong> - for example &lt;strong>ready&lt;/strong> means the connection has been tested and is working, while &lt;strong>incomplete&lt;/strong> means that more details still need to be added.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>search&lt;/strong> for a data source, type in the name or type of data source in the &lt;strong>search box&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>delete&lt;/strong> a data source, click on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/bin-shared-process.jpg" alt="Bin/Trash button"> beside the name of the datasource. You will receive a popup asking to you to confirm deletion by clicking &lt;strong>OK&lt;/strong>, or you can exit the deletion by clicking on &lt;strong>Cancel&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To &lt;strong>see the details&lt;/strong> of a data source, click on the &lt;strong>name&lt;/strong> of the Data source and from there you are brought to the &lt;strong>Data source details&lt;/strong> page:&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/datasource-details-eg.jpg" alt="Data source details example">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>The details will vary depending on the data source, but there are some common elements:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Display name&lt;/strong> - the name of the data source as it will display in your system. Choose something meaningful, as you will use this name in process design to connect your forms to your data source.&lt;/li>
-&lt;li>&lt;strong>Information about the data source&lt;/strong> - this could be a URL, Server name, Client ID, root folder path etc.&lt;/li>
-&lt;li>&lt;strong>Authentication details&lt;/strong> - this could be a username, password, client secret etc.&lt;/li>
-&lt;li>Option to use &lt;strong>Kianda Cloud Connect&lt;/strong> - you enable this feature and download a zip file which you can install on your server, allowing the Kianda system to reach your server and get access to data, for example SQL Server, making system integration quick and efficient.&lt;/li>
-&lt;li>&lt;strong>Test connection&lt;/strong> - all data source detail pages will allow you to test your connection using this button to ensure data exchange can happen.&lt;/li>
-&lt;li>&lt;strong>Save&lt;/strong> - at any time you can save details, even if some parameters need to be completed, allowing you to return to the configuration at any point.&lt;/li>
-&lt;li>&lt;strong>Security&lt;/strong> - all data sources can have different levels of security set up, including administrators for the connection, and users of the connection, see &lt;a href="https://docs.kianda.com/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/li>
-&lt;li>&lt;strong>Close&lt;/strong> - allows you to exit from the data source details page.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="how-to-create-a-new-datasource">How to create a new datasource&lt;/h2>
-&lt;p>The following uses &lt;strong>SharePoint as an example&lt;/strong> when creating a new datasource. The main steps for any datasource will be similar, that is: click on the &lt;strong>Add new&lt;/strong> button, fill out the &lt;strong>datasource details&lt;/strong> page, &lt;strong>test the connection&lt;/strong>, &lt;strong>save&lt;/strong> and &lt;strong>add security&lt;/strong>.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>From the main datasource management view, click on &lt;strong>+ Add new&lt;/strong> button &lt;img src="https://docs.kianda.com/images/addnew.png" alt="Add new data connector button"> and then one of 19 data connectors that appear, for example &lt;strong>SharePoint&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Fill out fields in the &lt;strong>SharePoint details&lt;/strong> screen.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/sharepoint-connector.jpg" alt="Sharepoint datasources">&lt;/p>
-&lt;p>Choose from the edit options:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Display name&lt;/strong> - the name of the data source, for example SharePoint HR&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Site URL&lt;/strong> - this is the link to your SharePoint data&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>SharePoint version&lt;/strong> - choose from a) SharePoint Online (also known as SharePoint in Microsoft 365) b) SharePoint 2016 or c) SharePoint 2013&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Scope&lt;/strong> - choose from a) Site for example a particular SharePoint website or b) Site Collection, a collection of SharePoint sites&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Authentication mode&lt;/strong> - options are a) SharePoint Online Authorisation and b) System User Credentials&lt;/p>
-&lt;p>If you choose a) SharePoint Online Authorisation then click on &lt;strong>Authorize&lt;/strong> button &lt;img src="https://docs.kianda.com/images/authorize.png" alt="Authorize button"> in this instance you will need SharePoint administration rights&lt;/p>
-&lt;p>If you choose b) System User Credentials then fill out your username and password. In this instance you do not need SharePoint administration rights.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>When you have added SharePoint details, you are ready to test your connection and add security. At the bottom of the &lt;strong>SharePoint details&lt;/strong> page, click on &lt;strong>Test connection&lt;/strong> button &lt;img src="https://docs.kianda.com/images/test-connection.jpg" alt="Test connection for REST Service"> and if the service has been correctly configured, then you should receive a notification saying &lt;strong>Connection test succeeded&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save-connection.jpg" alt="Save connection button"> to save the connection and you will receive a notification saying &lt;strong>Details saved successfully&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Add Security settings by clicking on the &lt;strong>Security&lt;/strong> button &lt;img src="https://docs.kianda.com/images/security-button.jpg" alt="Security button">, go to &lt;a href="https://docs.kianda.com/platform/connectors/#setting-security-for-data-sources">Setting security for data sources&lt;/a> for more details.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on &lt;strong>Close&lt;/strong> to close the details page and return to the datasource management main view.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>Once the data connector is created, this can be used with controls like lists and rules, for example in the image below, a SharePoint data connector called &amp;lsquo;SharePoint Training Test&amp;rsquo; has been setup within the datasources function. Lists within SharePoint can then be linked to list fields in Kianda, by clicking on &lt;strong>Datasource&lt;/strong> in the Edit list dialog box. In the example below, a list called &lt;strong>Companies&lt;/strong> is the data source for the list.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/list-datasource-example.jpg" alt="Datasource">&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about data connectors and how to use them, go to &lt;a href="https://docs.kianda.com/platform/connectors/">Data Connectors&lt;/a>.&lt;/p>
-&lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Platform: Dropbox</title><link>https://docs.kianda.com/platform/connectors/dropbox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/connectors/dropbox/</guid><description>
+&lt;p>Your &lt;strong>DocuSign service&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Platform: Dropbox</title><link>https://docs.kianda.com/platform/connectors/dropbox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/connectors/dropbox/</guid><description>
 &lt;p>A &lt;strong>Dropbox&lt;/strong> data system connector allows you to the Dropbox cloud file system as a data source for your Kianda forms or dashboards. Dropbox is a personal cloud based file system with many subscriptions including team subscriptions. This allows you to store files online and share them with your team or use it as a backup. This means that as your processes are running they will use the information from the cloud file system or depending on the process, update or delete information at the Dropbox cloud file system.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can use the Dropbox connector when you want a process within your Kianda subscription to have &lt;strong>access&lt;/strong> to your Dropbox cloud file directory. You can &lt;strong>extract&lt;/strong> files from Dropbox into Kianda by using a &lt;strong>List&lt;/strong> field control. Set the datasource of the List field to be your Dropbox connector allowing you to access files from you Dropbox account, to learn more about the List field go to &lt;a href="https://docs.kianda.com/platform/controls/input/list/">List control&lt;/a>. You can also use the Dropbox data connector within the &lt;strong>Data&lt;/strong> set of rules, these rules allow you to perform &lt;strong>Create, Read, Update&lt;/strong> and &lt;strong>Delete&lt;/strong> (&lt;strong>CRUD&lt;/strong>) operations. To learn more about the Data rules, go to &lt;a href="https://docs.kianda.com/platform/rules/data/">Data rules&lt;/a>.&lt;/p>
@@ -673,9 +555,9 @@
 &lt;li>&lt;strong>ParentFolderPath&lt;/strong> - path of the folder that contains the file.&lt;/li>
 &lt;/ul>
 &lt;h2 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>Your &lt;strong>Dropbox connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Platform: Kianda Cloud Connect</title><link>https://docs.kianda.com/platform/connectors/data-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/connectors/data-gateway/</guid><description>
-&lt;p>&lt;strong>Kianda Cloud Connect&lt;/strong> is a piece of software that &lt;strong>establishes a connection&lt;/strong> between your &lt;strong>local machine&lt;/strong> and your &lt;strong>Kianda subscription&lt;/strong>. This lightweight app will sit on your PC or server where files reside that you need to use in Kianda processes. It allows the data to &lt;strong>travel&lt;/strong> from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your Kianda subscription. This data transfer works both ways depending on what operation you are performing for example &lt;strong>Deleting&lt;/strong> a file or &lt;strong>Creating&lt;/strong> one.&lt;/p>
-&lt;p>Kianda Cloud Connect authenticates with a user created in Kianda, see &lt;a href="https://docs.kianda.com/platform/administration/users/">User management&lt;/a> for more details on users, and sends information to and from Kianda using port 80. See details below on how to set up the connection.&lt;/p>
+&lt;p>Your &lt;strong>Dropbox connector&lt;/strong> is now set up and ready to be used in your &lt;strong>processes&lt;/strong>. To find out more about how to design processes go to &lt;a href="https://docs.kianda.com/platform/application-designer/designer/">Designer&lt;/a>.&lt;/p></description></item><item><title>Platform: Data gateway</title><link>https://docs.kianda.com/platform/connectors/data-gateway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/connectors/data-gateway/</guid><description>
+&lt;p>&lt;strong>Kianda Cloud Connect&lt;/strong> is a piece of software that &lt;strong>establishes a connection&lt;/strong> between your &lt;strong>local machine&lt;/strong> and your &lt;strong>workspace&lt;/strong>. This lightweight service will sit on your PC or server where files reside that you need to use in processes. It allows the data to &lt;strong>travel&lt;/strong> from your local machine to the Kianda Cloud Connect service, and then the Kianda Cloud Connect service sends data to your subscription. This data transfer works both ways depending on what operation you are performing for example &lt;strong>Deleting&lt;/strong> a file or &lt;strong>Creating&lt;/strong> one.&lt;/p>
+&lt;p>Kianda Cloud Connect authenticates with a user created in Kianda, see &lt;a href="https://docs.kianda.com/platform/administration/users/">User management&lt;/a> for more details on users, and sends information to and from Kianda using port 443. See details below on how to set up the connection.&lt;/p>
 &lt;h2 id="downloading-kianda-cloud-connect">Downloading Kianda Cloud Connect&lt;/h2>
 &lt;p>You can download &lt;strong>Kianda Cloud Connect&lt;/strong> software in any details page of data source that might use it, for example in a &lt;strong>File system&lt;/strong> data connector:&lt;/p>
 &lt;ol>
@@ -750,9 +632,7 @@
 &lt;/li>
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/kianda-cloud-connect-connector.jpg" alt="Kianda Cloud Connect Connectors section">&lt;/p>
-&lt;p>The connector is now established and can be used when designing processes.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To find out more about how to build processes go to &lt;a href="https://docs.kianda.com/platform/application-designer/">Application Designer&lt;/a>.&lt;/p></description></item><item><title>Platform: MySql</title><link>https://docs.kianda.com/platform/connectors/mysql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/connectors/mysql/</guid><description>
+&lt;p>The connector is now established and can be used when designing processes.&lt;/p></description></item><item><title>Platform: MySql</title><link>https://docs.kianda.com/platform/connectors/mysql/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/connectors/mysql/</guid><description>
 &lt;p>One of the datasources available in Kianda is a &lt;strong>MySQL Server&lt;/strong> datasource. MySQL is a relational database management system (&lt;strong>RDBMS&lt;/strong>) used to manage structured collections of data. This data can consist of anything from a simple to do list to a more complex organisation network. Using the MySQL server as your datasource, you can perform any Create, Read, Update and Delete (&lt;strong>CRUD&lt;/strong>) operations using the &lt;strong>Data&lt;/strong> rules provided in the Kianda platform, to learn more about data rules go to &lt;a href="https://docs.kianda.com/platform/rules/data/">Data rules&lt;/a>. Using the MySQL server connector, you have access to all tables within your database from your server, keep in mind that you can perform CRUD operations on data within a &lt;strong>table&lt;/strong> of the database, but you &lt;strong>cannot&lt;/strong> create or delete &lt;strong>tables themselves&lt;/strong>.&lt;/p>
 &lt;h2 id="when-to-use">When to use&lt;/h2>
 &lt;p>You can use the MySQL Server connector when you want &lt;strong>access&lt;/strong> or &lt;strong>modify&lt;/strong> data within a &lt;strong>table&lt;/strong> in your MySQL server. You can connect the MySQL server connector to a &lt;strong>List&lt;/strong> field as its datasource, meaning you can access information from a table and display the information that is stored in the table. For example if your MySQL server contains tables such as &lt;strong>Employees&lt;/strong>, &lt;strong>Purchases&lt;/strong> and &lt;strong>Standing Orders&lt;/strong>, you will be able to connect the list field to one of those tables giving you CRUD access to its data.&lt;/p>

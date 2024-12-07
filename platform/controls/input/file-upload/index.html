@@ -3,6 +3,8 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=generator content="Hugo 0.93.3">
+<link rel=alternate type=text/html href=https://docs.kianda.com/platform/controls/input/file-upload/_print/>
+<link rel=alternate type=application/rss+xml href=https://docs.kianda.com/platform/controls/input/file-upload/index.xml>
 <meta name=robots content="index, follow">
 <link rel="shortcut icon" href=/favicons/favicon.ico>
 <link rel=apple-touch-icon href=/favicons/apple-touch-icon-180x180.png sizes=180x180>
@@ -16,25 +18,20 @@
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
 <title>File upload control | Kianda low-code platform for business process automation</title><meta name=description content="File upload controls (fields) can be inserted in a form if you want form users to be able to upload or store a file(s). File upload fields can also be …">
 <meta property="og:title" content="File upload control">
-<meta property="og:description" content="File upload controls (fields) can be inserted in a form if you want form users to be able to upload or store a file(s). File upload fields can also be useful if you want a file to be generated from the information entered in a form or if you want a file to be sent as part of your process - see Rules for more information.
-For example, in an Inspection process, you may want the user (an inspector) to be able to upload the details of their inspection as a PDF file or photos as they complete an Inspection Form; or you may want the Kianda system to generate a report based on the information in the Inspection Form and to email this as a PDF file to a supervisor.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://docs.kianda.com/platform/controls/input/file-upload/"><meta property="article:section" content="platform">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://docs.kianda.com/platform/controls/input/file-upload/">
 <meta itemprop=name content="File upload control">
-<meta itemprop=description content="File upload controls (fields) can be inserted in a form if you want form users to be able to upload or store a file(s). File upload fields can also be useful if you want a file to be generated from the information entered in a form or if you want a file to be sent as part of your process - see Rules for more information.
-For example, in an Inspection process, you may want the user (an inspector) to be able to upload the details of their inspection as a PDF file or photos as they complete an Inspection Form; or you may want the Kianda system to generate a report based on the information in the Inspection Form and to email this as a PDF file to a supervisor.">
-<meta itemprop=wordCount content="1715">
-<meta itemprop=keywords content><meta name=twitter:card content="summary">
+<meta itemprop=description content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="File upload control">
-<meta name=twitter:description content="File upload controls (fields) can be inserted in a form if you want form users to be able to upload or store a file(s). File upload fields can also be useful if you want a file to be generated from the information entered in a form or if you want a file to be sent as part of your process - see Rules for more information.
-For example, in an Inspection process, you may want the user (an inspector) to be able to upload the details of their inspection as a PDF file or photos as they complete an Inspection Form; or you may want the Kianda system to generate a report based on the information in the Inspection Form and to email this as a PDF file to a supervisor.">
+<meta name=twitter:description content>
 <link rel=preload href=/scss/main.min.216ba436abab1abc7b86a0c734ab1d0f5857261e34a7a8727b80bd7728953357.css as=style>
 <link href=/scss/main.min.216ba436abab1abc7b86a0c734ab1d0f5857261e34a7a8727b80bd7728953357.css rel=stylesheet integrity>
 <script src=https://code.jquery.com/jquery-3.5.1.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
 <script src=https://unpkg.com/lunr@2.3.8/lunr.min.js integrity=sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY crossorigin=anonymous></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2463M5RV55"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-2463M5RV55",{anonymize_ip:!1})}</script>
-</head><body class=td-page>
+</head><body class=td-section>
 <header>
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
 <a class=navbar-brand href=/ title="Kianda Low-code Platform documentation">
@@ -46,14 +43,14 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 <a class="nav-link active" href=/><span class=active>Documentation</span></a>
 </li><li class="nav-item mr-4 mb-2 mb-lg-0">
 <a class=nav-link href="https://portal.kianda.com/public/signup?type=free-developer-account" target=_blank><span>Developer Sign-up</span></a>
-</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.a8b7c7baae6bebf903ac10a606bf904f.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.74e30b0ff59cc3f3c5883de0be1c2c7d.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 </div></nav></header><div class="container-fluid td-outer">
 <div class=td-main>
 <div class="row flex-xl-nowrap">
 <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.a8b7c7baae6bebf903ac10a606bf904f.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.74e30b0ff59cc3f3c5883de0be1c2c7d.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form><nav class="collapse td-sidebar-nav foldable-nav" id=td-section-nav>
@@ -117,28 +114,28 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 <ul class="ul-4 foldable">
 <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformcontrolsinputdate-li>
 <input type=checkbox id=m-platformcontrolsinputdate-check>
-<label for=m-platformcontrolsinputdate-check><a href=/platform/controls/input/date/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformcontrolsinputdate><span>Date control</span></a></label>
+<label for=m-platformcontrolsinputdate-check><a href=/platform/controls/input/date/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformcontrolsinputdate><span>Date control</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id=m-platformcontrolsinputfile-upload-li>
 <input type=checkbox id=m-platformcontrolsinputfile-upload-check checked>
-<label for=m-platformcontrolsinputfile-upload-check><a href=/platform/controls/input/file-upload/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id=m-platformcontrolsinputfile-upload><span class=td-sidebar-nav-active-item>File upload control</span></a></label>
+<label for=m-platformcontrolsinputfile-upload-check><a href=/platform/controls/input/file-upload/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id=m-platformcontrolsinputfile-upload><span class=td-sidebar-nav-active-item>File upload control</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformcontrolsinputlist-li>
 <input type=checkbox id=m-platformcontrolsinputlist-check>
-<label for=m-platformcontrolsinputlist-check><a href=/platform/controls/input/list/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformcontrolsinputlist><span>List control</span></a></label>
+<label for=m-platformcontrolsinputlist-check><a href=/platform/controls/input/list/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformcontrolsinputlist><span>List control</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformcontrolsinputnumber-li>
 <input type=checkbox id=m-platformcontrolsinputnumber-check>
-<label for=m-platformcontrolsinputnumber-check><a href=/platform/controls/input/number/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformcontrolsinputnumber><span>Number control</span></a></label>
+<label for=m-platformcontrolsinputnumber-check><a href=/platform/controls/input/number/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformcontrolsinputnumber><span>Number control</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformcontrolsinputtable-li>
 <input type=checkbox id=m-platformcontrolsinputtable-check>
-<label for=m-platformcontrolsinputtable-check><a href=/platform/controls/input/table/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformcontrolsinputtable><span>Table control</span></a></label>
+<label for=m-platformcontrolsinputtable-check><a href=/platform/controls/input/table/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformcontrolsinputtable><span>Table control</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformcontrolsinputtextbox-li>
 <input type=checkbox id=m-platformcontrolsinputtextbox-check>
-<label for=m-platformcontrolsinputtextbox-check><a href=/platform/controls/input/textbox/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformcontrolsinputtextbox><span>Text box control</span></a></label>
+<label for=m-platformcontrolsinputtextbox-check><a href=/platform/controls/input/textbox/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformcontrolsinputtextbox><span>Text box control</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformcontrolsinputtoggle-li>
 <input type=checkbox id=m-platformcontrolsinputtoggle-check>
-<label for=m-platformcontrolsinputtoggle-check><a href=/platform/controls/input/toggle/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformcontrolsinputtoggle><span>Toggle control</span></a></label>
+<label for=m-platformcontrolsinputtoggle-check><a href=/platform/controls/input/toggle/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformcontrolsinputtoggle><span>Toggle control</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformcontrolsinputuser-picker-li>
 <input type=checkbox id=m-platformcontrolsinputuser-picker-check>
-<label for=m-platformcontrolsinputuser-picker-check><a href=/platform/controls/input/user-picker/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformcontrolsinputuser-picker><span>User picker control</span></a></label>
+<label for=m-platformcontrolsinputuser-picker-check><a href=/platform/controls/input/user-picker/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformcontrolsinputuser-picker><span>User picker control</span></a></label>
 </li></ul></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-platformcontrolslayout-li>
 <input type=checkbox id=m-platformcontrolslayout-check>
 <label for=m-platformcontrolslayout-check><a href=/platform/controls/layout/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformcontrolslayout><span>Layout controls</span></a></label>
@@ -456,10 +453,7 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 <input type=checkbox id=m-platformconnectorsactive-directory-check>
 <label for=m-platformconnectorsactive-directory-check><a href=/platform/connectors/active-directory/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformconnectorsactive-directory><span>Active Directory Connector</span></a></label>
 <ul class="ul-4 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformconnectorsactive-directorycreate-user-li>
-<input type=checkbox id=m-platformconnectorsactive-directorycreate-user-check>
-<label for=m-platformconnectorsactive-directorycreate-user-check><a href=/platform/connectors/active-directory/create-user/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformconnectorsactive-directorycreate-user><span>Active Directory Connector - Create user</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformconnectorsactive-directoryfind-users-li>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformconnectorsactive-directoryfind-users-li>
 <input type=checkbox id=m-platformconnectorsactive-directoryfind-users-check>
 <label for=m-platformconnectorsactive-directoryfind-users-check><a href=/platform/connectors/active-directory/find-users/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformconnectorsactive-directoryfind-users><span>Active Directory Connector - Find users</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformconnectorsactive-directoryupdate-user-li>
@@ -468,12 +462,12 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformconnectorsactive-directoryis-member-of-li>
 <input type=checkbox id=m-platformconnectorsactive-directoryis-member-of-check>
 <label for=m-platformconnectorsactive-directoryis-member-of-check><a href=/platform/connectors/active-directory/is-member-of/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformconnectorsactive-directoryis-member-of><span>Active Directory Connectors - Permissions</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformconnectorsactive-directorycreate-user-li>
+<input type=checkbox id=m-platformconnectorsactive-directorycreate-user-check>
+<label for=m-platformconnectorsactive-directorycreate-user-check><a href=/platform/connectors/active-directory/create-user/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformconnectorsactive-directorycreate-user><span>Create user</span></a></label>
 </li></ul></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformconnectorsdocusign-li>
 <input type=checkbox id=m-platformconnectorsdocusign-check>
 <label for=m-platformconnectorsdocusign-check><a href=/platform/connectors/docusign/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformconnectorsdocusign><span>DocuSign</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformconnectorsdatasources-li>
-<input type=checkbox id=m-platformconnectorsdatasources-check>
-<label for=m-platformconnectorsdatasources-check><a href=/platform/connectors/datasources/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformconnectorsdatasources><span>Data sources</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformconnectorsdropbox-li>
 <input type=checkbox id=m-platformconnectorsdropbox-check>
 <label for=m-platformconnectorsdropbox-check><a href=/platform/connectors/dropbox/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformconnectorsdropbox><span>Dropbox</span></a></label>
@@ -491,7 +485,7 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 <label for=m-platformconnectorsgoogle-drive-check><a href=/platform/connectors/google-drive/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformconnectorsgoogle-drive><span>Google Drive</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformconnectorsdata-gateway-li>
 <input type=checkbox id=m-platformconnectorsdata-gateway-check>
-<label for=m-platformconnectorsdata-gateway-check><a href=/platform/connectors/data-gateway/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformconnectorsdata-gateway><span>Kianda Cloud Connect</span></a></label>
+<label for=m-platformconnectorsdata-gateway-check><a href=/platform/connectors/data-gateway/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformconnectorsdata-gateway><span>Data gateway</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformconnectorsmysql-li>
 <input type=checkbox id=m-platformconnectorsmysql-check>
 <label for=m-platformconnectorsmysql-check><a href=/platform/connectors/mysql/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformconnectorsmysql><span>MySql</span></a></label>
@@ -560,54 +554,42 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 <label for=m-platformsettings-check><a href=/platform/settings/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformsettings><span>Settings</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-platformautomation-li>
 <input type=checkbox id=m-platformautomation-check>
-<label for=m-platformautomation-check><a href=/platform/automation/ title="Task Automation with Kianda" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformautomation><span>Task Automation</span></a></label>
+<label for=m-platformautomation-check><a href=/platform/automation/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformautomation><span>Task Automation</span></a></label>
 <ul class="ul-3 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformautomationscheduledtasks-li>
-<input type=checkbox id=m-platformautomationscheduledtasks-check>
-<label for=m-platformautomationscheduledtasks-check><a href=/platform/automation/scheduledtasks/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-platformautomationscheduledtasks><span>Scheduled tasks</span></a></label>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-platformautomationscheduled-tasks-li>
+<input type=checkbox id=m-platformautomationscheduled-tasks-check>
+<label for=m-platformautomationscheduled-tasks-check><a href=/platform/automation/scheduled-tasks/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-platformautomationscheduled-tasks><span>Scheduled tasks</span></a></label>
 </li></ul></li></ul></li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-low-code-li>
 <input type=checkbox id=m-low-code-check>
 <label for=m-low-code-check><a href=/low-code/ title="How does Kianda Low-Code Development Work?" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-code><span>Low-code development</span></a></label>
 <ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codeoverview-of-low-code-li>
-<input type=checkbox id=m-low-codeoverview-of-low-code-check>
-<label for=m-low-codeoverview-of-low-code-check><a href=/low-code/overview-of-low-code/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codeoverview-of-low-code><span>Overview of low-code</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codepwa-li>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codepwa-li>
 <input type=checkbox id=m-low-codepwa-check>
-<label for=m-low-codepwa-check><a href=/low-code/pwa/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codepwa><span>Progressive Web Application (PWA)</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codetemplating-basics-li>
-<input type=checkbox id=m-low-codetemplating-basics-check>
-<label for=m-low-codetemplating-basics-check><a href=/low-code/templating-basics/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codetemplating-basics><span>Templating basics</span></a></label>
+<label for=m-low-codepwa-check><a href=/low-code/pwa/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codepwa><span>Kianda is a Progressive Web Application (PWA)</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codeemberjs-li>
+<input type=checkbox id=m-low-codeemberjs-check>
+<label for=m-low-codeemberjs-check><a href=/low-code/emberjs/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codeemberjs><span>EmberJS</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codelist-widget-template-li>
 <input type=checkbox id=m-low-codelist-widget-template-check>
-<label for=m-low-codelist-widget-template-check><a href=/low-code/list-widget-template/ title="Low-code customisation options for the list widget" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codelist-widget-template><span>Low-code list widget customisation</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codejavascript-expressions-li>
-<input type=checkbox id=m-low-codejavascript-expressions-check>
-<label for=m-low-codejavascript-expressions-check><a href=/low-code/javascript-expressions/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codejavascript-expressions><span>JavaScript expressions</span></a></label>
+<label for=m-low-codelist-widget-template-check><a href=/low-code/list-widget-template/ title="Low-code customisation options for the list widget" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codelist-widget-template><span>Low-code list widget customisation</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codeglobal-css-li>
 <input type=checkbox id=m-low-codeglobal-css-check>
-<label for=m-low-codeglobal-css-check><a href=/low-code/global-css/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codeglobal-css><span>Global CSS file</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codeglobal-javascript-file-li>
-<input type=checkbox id=m-low-codeglobal-javascript-file-check>
-<label for=m-low-codeglobal-javascript-file-check><a href=/low-code/global-javascript-file/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codeglobal-javascript-file><span>Global JavaScript file</span></a></label>
+<label for=m-low-codeglobal-css-check><a href=/low-code/global-css/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codeglobal-css><span>Global CSS file</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codeglobal-javascript-li>
+<input type=checkbox id=m-low-codeglobal-javascript-check>
+<label for=m-low-codeglobal-javascript-check><a href=/low-code/global-javascript/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codeglobal-javascript><span>Global JavaScript file</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codefield-widget-li>
 <input type=checkbox id=m-low-codefield-widget-check>
-<label for=m-low-codefield-widget-check><a href=/low-code/field-widget/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codefield-widget><span>Custom field development</span></a></label>
+<label for=m-low-codefield-widget-check><a href=/low-code/field-widget/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codefield-widget><span>Form control widget development</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-coderule-widget-li>
 <input type=checkbox id=m-low-coderule-widget-check>
-<label for=m-low-coderule-widget-check><a href=/low-code/rule-widget/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-coderule-widget><span>Custom rule development</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codedeveloper-li>
-<input type=checkbox id=m-low-codedeveloper-check>
-<label for=m-low-codedeveloper-check><a href=/low-code/developer/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codedeveloper><span>Developer</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codedashboard-widget-li>
-<input type=checkbox id=m-low-codedashboard-widget-check>
-<label for=m-low-codedashboard-widget-check><a href=/low-code/dashboard-widget/ title="Custom dashboard development" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codedashboard-widget><span>Custom dashboard widget</span></a></label>
+<label for=m-low-coderule-widget-check><a href=/low-code/rule-widget/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-coderule-widget><span>Rule widget development</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codepage-widget-li>
+<input type=checkbox id=m-low-codepage-widget-check>
+<label for=m-low-codepage-widget-check><a href=/low-code/page-widget/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codepage-widget><span>Page widget development</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codewebhooks-li>
 <input type=checkbox id=m-low-codewebhooks-check>
-<label for=m-low-codewebhooks-check><a href=/low-code/webhooks/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codewebhooks><span>Webhooks</span></a></label>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codeusing-the-ember-inspector-li>
-<input type=checkbox id=m-low-codeusing-the-ember-inspector-check>
-<label for=m-low-codeusing-the-ember-inspector-check><a href=/low-code/using-the-ember-inspector/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-low-codeusing-the-ember-inspector><span>Using the Ember Inspector</span></a></label>
+<label for=m-low-codewebhooks-check><a href=/low-code/webhooks/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codewebhooks><span>Webhooks</span></a></label>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-low-codecustom-connector-li>
 <input type=checkbox id=m-low-codecustom-connector-check>
 <label for=m-low-codecustom-connector-check><a href=/low-code/custom-connector/ title="Custom Connectors" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-low-codecustom-connector><span>Custom Connector development</span></a></label>
@@ -713,13 +695,13 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 <label for=m-troubleshootingcustom-widget-debugging-check><a href=/troubleshooting/custom-widget-debugging/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-troubleshootingcustom-widget-debugging><span>Custom widget debugging</span></a></label>
 </li></ul></li></ul></li></ul></nav></div></aside><aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0 btn-group">
-<a href=https://github.com/KiandaBPM/docs/tree/main/content/platform/controls/input/file-upload.md class="btn btn-default" title="View on github" target=_blank rel=noopener>
+<a href=https://github.com/KiandaBPM/docs/tree/main/content/platform/controls/input/file-upload/_index.md class="btn btn-default" title="View on github" target=_blank rel=noopener>
 <i class="fa fa-edit fa-lg"></i>
 </a>
 <a href="https://github.com/KiandaBPM/docs/issues/new?title=File%20upload%20control" class="btn btn-default" title="Create a new documentation issue" target=_blank rel=noopener>
 <i class="fa fa-comment-dots fa-lg"></i>
 </a>
-<a id=print class="btn btn-default" href=https://docs.kianda.com/platform/controls/input/_print/>
+<a id=print class="btn btn-default" href=https://docs.kianda.com/platform/controls/input/file-upload/_print/>
 <i class="fa fa-print fa-lg"></i>
 </a>
 </div><hr>
@@ -770,16 +752,10 @@ For example, in an Inspection process, you may want the user (an inspector) to b
 <li>Select the field&rsquo;s <strong>drag handle</strong> button <img src=/images/draghandlewhite-frame.png alt="Drag handle button">.</li><li>Drag and drop the field wherever you want to move it to within your form.</li></ol><p><img src=/images/upload-file-draghandle.jpg alt="Date field drag handle"></p><p>To delete a <strong>File upload field</strong> from your form:</p><ol>
 <li>Select the field (by either clicking on the field&rsquo;s name or its <strong>drag handle</strong> button <img src=/images/draghandlewhite-frame.png alt="Drag handle button">).</li><li>Click on the <strong>Bin/Trash</strong> button <img src=/images/binicon.png alt="Bin icon">.</li><li>Click on <strong>OK</strong> to confirm.</li></ol><h3 id=how-to-edit-file-upload-field-properties>How to edit File upload field properties</h3><p>To view or edit the field properties associated with a <strong>File upload field</strong>, select the field (by clicking on the field title or field drag handle button <img src=/images/draghandlewhite-frame.png alt="Drag handle button">) - the <strong>Field properties</strong> menu will appear in the right-hand pane.</p><p><img src=/images/file-upload-field-prop.jpg alt="Field properties"></p><p>For example, the <strong>Field Properties</strong> associated with a <strong>File upload field</strong> titled &lsquo;Upload photos&rsquo; are shown here and include:</p><ul>
 <li><strong>Field type</strong> - The type of field, in this case a <strong>File</strong> field.</li><li><strong>Title</strong> - The Title of the field, in this case &lsquo;Upload photos&rsquo;.</li><li><strong>Show title</strong> - If this is selected, the File upload field title will be shown in the form.</li><li><strong>Required</strong> - If this is selected, the File upload field will be mandatory for the form user.</li><li><strong>Enabled</strong> - If this is selected, the user will be able to edit or interact with the field.</li><li><strong>Visible</strong> - If this is selected, the File upload field will be visible in the form.</li><li><strong>Layout</strong> - The width of the blue bar can be adjusted to change the width of the File upload field as it appears on a PC or mobile phone (to view the Mobile layout, click on the expand button <img src=/images/expand-icon.jpg alt="Expand button"> to the right).</li></ul><p>To learn more about the different options within the Field properties menu, go to <a href=/platform/controls/properties#field-properties>Field Properties</a>.</p><h3 id=saving-changes-and-version-history>Saving changes and version history</h3><p>Make sure to save any changes you make by clicking on the <strong>Save</strong> button <img src=/images/saveprocess.png alt=Save>. You will always have the option to revert back to previous versions of your form by clicking the <strong>Design Version History</strong> <img src=/images/version8.png alt="Version button"> button in the top right corner.</p><h3 id=whats-next--idea-iconimages18png>What&rsquo;s next <img src=/images/18.png alt="Idea icon"></h3><p>Now that you&rsquo;ve learned about the <strong>File upload control</strong>, find out more about the other types of <strong>Input fields</strong> you can add to a Kianda process:</p><ul>
-<li><a href=/platform/controls/input/date/>Date control</a></li><li><a href=/platform/controls/input/list/>List control</a></li><li><a href=/platform/controls/input/number/>Number control</a></li><li><a href=/platform/controls/input/table/>Table control</a></li><li><a href=/platform/controls/input/textbox/>Text box control</a></li><li><a href=/platform/controls/input/toggle/>Toggle control</a></li><li><a href=/platform/controls/input/user-picker/>User picker control</a></li></ul></div><ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
+<li><a href=/platform/controls/input/date/>Date control</a></li><li><a href=/platform/controls/input/list/>List control</a></li><li><a href=/platform/controls/input/number/>Number control</a></li><li><a href=/platform/controls/input/table/>Table control</a></li><li><a href=/platform/controls/input/textbox/>Text box control</a></li><li><a href=/platform/controls/input/toggle/>Toggle control</a></li><li><a href=/platform/controls/input/user-picker/>User picker control</a></li></ul><div class=section-index>
+</div></div><ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
 <li>
-<a class="btn btn-outline-primary" href=/platform/controls/input/date/>
-<span class=mr-1>←</span>
-Date control
-</a>
 </li><li>
-<a class="btn btn-outline-primary" href=/platform/controls/input/list/>
-List control <span class=ml-1>→</span>
-</a>
 </li></ul></main></div></div></div><script src=https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js integrity=sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN crossorigin=anonymous></script>
 <script src=https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin=anonymous></script>
 <script src=/js/tabpane-persist.js></script>
