@@ -1,8 +1,8 @@
 ---
-title: "Designer"
+title: "Process Designer"
+linkTitle: "Designer"
 typora-root-url: ..\..\..\static
 weight: 1
-description: "Kianda no-code low-code development platform - workflows process designer"
 ---
 
 The process **designer** provides an intuitive interface where you can quickly start building a process app together with forms, fields and rules for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).
