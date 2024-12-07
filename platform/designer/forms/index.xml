@@ -1,5 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – Form basics</title><link>https://docs.kianda.com/platform/designer/forms/</link><description>Recent content in Form basics on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/platform/designer/forms/index.xml" rel="self" type="application/rss+xml"/><item><title>Platform: Form owners</title><link>https://docs.kianda.com/platform/designer/forms/form-owners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/designer/forms/form-owners/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – Forms</title><link>https://docs.kianda.com/platform/designer/forms/</link><description>Recent content in Forms on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/platform/designer/forms/index.xml" rel="self" type="application/rss+xml"/><item><title>Platform: Form owners</title><link>https://docs.kianda.com/platform/designer/forms/owners/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/designer/forms/owners/</guid><description>
 &lt;p>When creating forms, it is important to consider &lt;strong>form access&lt;/strong> during the design phase, that is who can access and edit forms &lt;strong>in a process instance&lt;/strong>. For example if an employee submits a performance review form, a line manager may wish to access that submitted process instance/record and edit the form, adding in comments and performance grades.&lt;/p>
 &lt;p>There are two key principles to keep in mind in terms of &lt;strong>form access&lt;/strong>:&lt;/p>
 &lt;ol>
@@ -14,24 +13,6 @@
 &lt;/li>
 &lt;/ol>
 &lt;p>So what is &lt;strong>form owner&lt;/strong>? A form owner is assigned when a form is created in Kianda &lt;strong>Designer&lt;/strong>. Form owners can also be added to a form design at a later stage by editing the form. Only the form owner will be able to &lt;strong>edit current forms&lt;/strong> in &lt;strong>process instances&lt;/strong> (records), see below.&lt;/p>
-&lt;h2 id="getting-started-with-form-owners">Getting started with Form owners&lt;/h2>
-&lt;h3 id="creating-form-owners">Creating form owners&lt;/h3>
-&lt;ol>
-&lt;li>Click on a process by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on an existing process or create a new process by clicking on &lt;strong>Add new&lt;/strong> and complete the &lt;strong>Add new process&lt;/strong> dialog box.&lt;/li>
-&lt;li>Then within Kianda &lt;strong>Designer&lt;/strong> click on a form of interest and then click on the &lt;strong>Edit/(Pen)&lt;/strong> &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit/Pen button"> button for that form.&lt;/li>
-&lt;li>In the &lt;strong>New form/Edit form&lt;/strong> dialog box you can add form owners in the &lt;strong>Default owner(s)&lt;/strong> field.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://docs.kianda.com/images/new-form-owners.jpg" alt="Partner account details attributes">&lt;/p>
-&lt;p>​ Using the dropdown list choose from:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Users&lt;/strong> - Users must already be in the system, see &lt;a href="https://docs.kianda.com/platform/administration/users/">Users &amp;amp; Groups&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Groups&lt;/strong> - Groups must be defined in advance, see &lt;a href="https://docs.kianda.com/platform/administration/users/">Users &amp;amp; Groups&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Partners&lt;/strong> - Partners must be already in the system and active, see &lt;a href="https://docs.kianda.com/platform/administration/b2b-portals/">B2B portals&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;ol start="4">
-&lt;li>If you make a mistake, or form owners need to be changed in an existing process, click on the &lt;strong>x&lt;/strong> beside the name of the &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or &lt;strong>Partners&lt;/strong> to remove them and choose from the dropdown list again.&lt;/li>
-&lt;li>Add to or edit the remaining parameters in the dialog box as desired, see &lt;a href="https://docs.kianda.com/platform/application-designer/designer/#editing-forms">Editing forms&lt;/a> and click on &lt;strong>OK&lt;/strong> when complete, or &lt;strong>Close&lt;/strong> to exit the dialog box at any time.&lt;/li>
-&lt;/ol>
 &lt;h2 id="changing-form-access">Changing form access&lt;/h2>
 &lt;p>The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to using the &lt;strong>default owner field&lt;/strong> in the &lt;strong>new form&lt;/strong> dialog box as shown above. By default, only this person or group &lt;strong>can edit the current form&lt;/strong> in a process instance. All other users can only view forms in read mode. The next section details how to &lt;a href="#changing-default-owners">Change default owners&lt;/a>.&lt;/p>
 &lt;p>It is also possible to allow other users to have edit access to forms using the &lt;a href="https://docs.kianda.com/platform/rules/workflow/assign-form/">Assign rule&lt;/a> and &lt;a href="https://docs.kianda.com/platform/application-designer/forms/form-quick-action/">Quick actions&lt;/a>.&lt;/p>
@@ -52,16 +33,12 @@
 &lt;p>&lt;img src="https://docs.kianda.com/images/edit-form-dialog-box.jpg" alt="Edit form dialog box">&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Here you can change the default owner choosing from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong> as before.&lt;/p>
+&lt;p>Here you can change the default owner choosing from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> as before.&lt;/p>
 &lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To learn more about rules including &lt;a href="https://docs.kianda.com/platform/rules/workflow/assign-form/">Assign rule&lt;/a> go to &lt;a href="https://docs.kianda.com/platform/rules/">Rules&lt;/a>.&lt;/p>
-&lt;p>To find out how forms work within processes go to &lt;a href="https://docs.kianda.com/platform/application-designer/process/">Process&lt;/a>.&lt;/p></description></item><item><title>Platform: Form display modes</title><link>https://docs.kianda.com/platform/designer/forms/form-display-modes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/designer/forms/form-display-modes/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;/ol></description></item><item><title>Platform: Form display modes</title><link>https://docs.kianda.com/platform/designer/forms/display-mode/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/designer/forms/display-mode/</guid><description>
 &lt;p>Remember there are three principles to consider when working with forms:&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Reading modes&lt;/strong>: &lt;strong>Form users&lt;/strong> can either use forms in &lt;strong>edit&lt;/strong> mode or &lt;strong>read&lt;/strong> mode. Edit mode means that users can submit information, while read mode means that users can only view forms. The latter may be useful for example for certain staff to review feedback in a form, but not be able to edit/update it.&lt;/li>
+&lt;li>&lt;strong>Display mode&lt;/strong>: &lt;strong>Form users&lt;/strong> can either use forms in &lt;strong>edit&lt;/strong> mode or &lt;strong>read&lt;/strong> mode. Edit mode means that users can submit information, while read mode means that users can only view forms. The latter may be useful for example for certain staff to review feedback in a form, but not be able to edit/update it.&lt;/li>
 &lt;li>&lt;strong>Form owner&lt;/strong>: The &lt;strong>default owner&lt;/strong> is the person or group that the form is assigned to &lt;strong>when the the form is created&lt;/strong>. By default, only this person or group &lt;strong>can edit the current form&lt;/strong>. All other users can only view forms in read mode. The default owner however can reassign forms to other individuals and/or groups.&lt;/li>
 &lt;li>&lt;strong>Current form&lt;/strong>: Typically there are several forms in a process, and only the form that has the status ‘&lt;strong>current form’&lt;/strong> is &lt;strong>editable&lt;/strong>. However, in a complex multi-step process, other forms can be configured to &lt;strong>activate with&lt;/strong> the current form, meaning they can also become editable at the same time, creating a form group.&lt;/li>
 &lt;/ul>
@@ -99,285 +76,7 @@
 &lt;p>Other rules can be used in other ways to change process workflow and therefore how forms behave. For example using the &lt;a href="https://docs.kianda.com/platform/rules/workflow/assign-form/">Assign form rule&lt;/a> you can assign a form to a particular user, making them the form owner, and therefore giving them edit access to the form.&lt;/p>
 &lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
 &lt;p>To read more about form ownership go to &lt;a href="https://docs.kianda.com/platform/application-designer/forms/form-owners/">Form owner&lt;/a>.
-To read more about quick actions, go to &lt;a href="https://docs.kianda.com/platform/application-designer/forms/form-quick-action/">Form quick actions menu&lt;/a>.&lt;/p></description></item><item><title>Platform: Getting Started - Designer</title><link>https://docs.kianda.com/platform/designer/forms/designer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/designer/forms/designer/</guid><description>
-&lt;p>Kianda process &lt;strong>Designer&lt;/strong> empowers you to easily start building &lt;strong>forms&lt;/strong> and workflows for any business use case. Forms are an important component of any process. They might be used as a stage of a process and can be made active individually or at the same time (parallel forms).&lt;/p>
-&lt;p>There are 3 key principles to consider when working with forms:&lt;/p>
-&lt;ol>
-&lt;li>Form &lt;strong>design&lt;/strong> - what a form looks like, what elements it contains, for example controls and rules, see &lt;a href="#designer-layout">&lt;strong>Designer layout&lt;/strong>&lt;/a>.&lt;/li>
-&lt;li>Form &lt;strong>interaction&lt;/strong>- how users can use forms depending on certain sequences happening, see &lt;a href="https://docs.kianda.com/getting-started/create-first-process/plan-your-process/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>.&lt;/li>
-&lt;li>Form &lt;strong>management&lt;/strong> - who can edit and access forms is set when creating a new form, see &lt;a href="#new-forms">&lt;strong>New forms&lt;/strong>&lt;/a>.&lt;/li>
-&lt;/ol>
-&lt;h2 id="designer-layout">Designer layout&lt;/h2>
-&lt;p>To access processes, go to the left-hand pane and &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Designer&lt;/strong> and click on a process that you have created or imported, see &lt;a href="https://docs.kianda.com/getting-started/create-first-process/design-and-build/">Design and build your process&lt;/a>.&lt;/p>
-&lt;p>From the main process view, click on any process to add forms, for example Training process as seen below.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Main process view&lt;/strong>&lt;/em>
-&lt;img src="https://docs.kianda.com/images/clickonprocess.png" alt="Clicking on a process">&lt;/p>
-&lt;p>The designer window opens and is made up of 3 main parts.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Kianda Designer&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/Kianda_Designer_frames.jpg" alt="Form designer">&lt;/p>
-&lt;p>The key components of the designer are:&lt;/p>
-&lt;ol>
-&lt;li>Left-hand pane is used to add form elements like &lt;strong>controls&lt;/strong> and &lt;strong>rules&lt;/strong>. This pane also houses the &lt;strong>Exit&lt;/strong> Designer &lt;img src="https://docs.kianda.com/images/exitdesign.png" alt="Exit"> &lt;strong>Save&lt;/strong> &lt;img src="https://docs.kianda.com/images/save.png" alt="Save"> &lt;strong>Preview&lt;/strong> &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview"> and &lt;strong>Publish&lt;/strong> &lt;img src="https://docs.kianda.com/images/publish.png" alt="Publish"> buttons.&lt;/li>
-&lt;li>Central &lt;strong>form canvas&lt;/strong> displays the current form you are working on.&lt;/li>
-&lt;li>Right-hand pane is used to view and edit process, form and field &lt;strong>properties&lt;/strong>.&lt;/li>
-&lt;/ol>
-&lt;p>Note the name of the process you are working on is shown in the top menu bar, for example Training Process.&lt;/p>
-&lt;p>The video below demonstrates how to get started using Kianda Designer, and go to &lt;a href="#how-to-get-started">How to get started&lt;/a> to follow through on different ways to import forms or start from scratch.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Introduction to Kianda Designer&lt;/strong>&lt;/em>&lt;/p>
-&lt;video width="100%" style="width:100%" controls>
-&lt;source src="https://docs.kianda.com/videos/designerintro.mp4">
-Your browser does not support the video tag.
-&lt;/source>
-&lt;/video>
-&lt;h2 id="how-to-get-started">How to get started&lt;/h2>
-&lt;ol>
-&lt;li>
-&lt;p>How you get started with forms depends on:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>if you have created a process using the App Store, see &lt;a href="#predefined-forms">Predefined forms&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>if you have created a process from scratch or want to create a form from scratch, see &lt;a href="#new-forms">New forms&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>if you import forms that have already been created, see &lt;a href="#import-forms">Import forms&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Once your form is created, you are ready to start adding elements to your form, see &lt;a href="https://docs.kianda.com/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In addition there are a number of settings you can change, see &lt;a href="#settings-and-properties">Settings and Properties&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="predefined-forms">Predefined forms&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>If you have created a process using the &lt;strong>App Store,&lt;/strong> then a number of forms will already be part of the process. For example the process Security Incident Management has 5 forms attached: Incident detail, Data breach, Malware outbreak, Root cause remedy and Caller review.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To edit form details, simply click on a form and click on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to edit the form. You can also click on the &lt;strong>Add form&lt;/strong> button to add a new form. Edit options are shown under &lt;a href="#new-forms">New forms&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="new-forms">New forms&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>If you have created a process from scratch, an empty form is added to your process by default, called &amp;ldquo;form 1&amp;rdquo;. This is the first form. Click on this form and the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> to customise it. You can also click on the &lt;strong>Add form&lt;/strong> button to add a new form.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Adding a form&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/createnewform.png" alt="Edit form">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>There are a number of edit options below.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Editing a form&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/editform.png" alt="Edit form options">&lt;/p>
-&lt;p>Note: as you change any of the options in the dialog box, the impact will be shown in real-time on the form in the background, for example a title, or colour form theme.&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>Title&lt;/strong> - the form title, for example Employee Request Form&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Name&lt;/strong> - this is a unique name for the form&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Default owner(s)&lt;/strong> - by default the form creator is an owner. You can remove this owner by clicking on &lt;img src="https://docs.kianda.com/images/x.png" alt="x"> and add other owners by clicking on the arrow and choose from &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> or &lt;strong>Partners&lt;/strong>.&lt;/p>
-&lt;ul>
-&lt;li>Users - allows you to choose individual owners&lt;/li>
-&lt;li>Groups - allows you to choose from defined groups for example HR Team or Management Team&lt;/li>
-&lt;li>Partners - allows you to choose predefined partner organisations that you want to share with or provide permissions&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Activate with&lt;/strong> - will decide when the form will be active. If you have several forms attached to a process, then select from a dropdown list the form you want to activate with the current form. If you leave the field blank, the new form will be activated &lt;strong>sequentially&lt;/strong> after the first form is submitted.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Submit mode&lt;/strong> - options are a) Only this form (the current form) or b) All forms in edit mode&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Form icon&lt;/strong> - click on the arrow to choose from hundreds of icons to attach to your form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Form theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White Colours for your form.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable quick actions&lt;/strong> - if you tick the checkbox, you can select from the options a) Enable re-assign b) Enable edit and c) Enable custom action. Click on &lt;strong>Ellipsis&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ellipsis_frame.png" alt="Ellipsis button"> to further modify the action settings.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>If you click on &lt;strong>Enable re-assign&lt;/strong>, you can reassign action settings to particular Users, Groups or Partners. Click on &lt;strong>Allow form owners&lt;/strong> if you want form owners to be able to reassign actions.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you click on &lt;strong>Enable edit&lt;/strong>, you can allow certain Users, Groups or Partners to edit the form, along with form owners by clicking on &lt;strong>Allow form owners&lt;/strong>.&lt;/p>
-&lt;p>Other options include a checkbox for &lt;strong>When editing auto hide form footer buttons&lt;/strong> and &lt;strong>Trigger rules on save&lt;/strong>.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>If you check &lt;strong>Trigger rules on save&lt;/strong> then click into the &lt;strong>Save action field&lt;/strong> to choose from an action trigger as to when the form is saved, for example Submit, Save or Close. These can be other actions depending on what you have defined.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Edit action settings&lt;/strong>&lt;/em>&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://docs.kianda.com/images/editactions.png" alt="Edit action settings">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>If you click on &lt;strong>Enable custom action&lt;/strong>, you can allow certain Users, Groups or Partners to edit the form, along with form owners by clicking on &lt;strong>Allow form owners&lt;/strong>.&lt;/p>
-&lt;p>Other options include &lt;strong>Action label&lt;/strong>, &lt;strong>Target action field&lt;/strong> and &lt;strong>Action display mode&lt;/strong>, for example &lt;strong>Read-only mode&lt;/strong>, &lt;strong>Edit mode&lt;/strong> or &lt;strong>Both&lt;/strong>.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Custom action settings&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/customactionsettings.png" alt="Custom action settings">&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ol>
-&lt;p>As a form designer you can set up actions dependent on certain conditions, for example an Action label that targets a certain button appearing for example Close button, only when a certain display mode is chosen, for example Read-only mode. If &lt;strong>Edit mode&lt;/strong> is chosen, then the button will only appear when the form is being &lt;strong>edited&lt;/strong>. In this way you can create dynamic forms that suit user interactions.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>To save your changes to the form, click on the &lt;strong>Save&lt;/strong> button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>You are now ready to start adding &lt;a href="https://docs.kianda.com/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Controls and rules&lt;/a> to your form. You can also implement additional settings see &lt;a href="#process-settings">Process Settings&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="import-forms">Import forms&lt;/h3>
-&lt;ol>
-&lt;li>
-&lt;p>You can import a previously designed form by clicking on the &lt;strong>Import&lt;/strong> button &lt;img src="https://docs.kianda.com/images/importform.png" alt="Import button">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the arrow to select from the drop down list to &lt;strong>Select a process design&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on a &lt;strong>process&lt;/strong> of interest and then click on the forms to import. Forms are indicated by a + symbol and can be expanded to show elements within a form for example a panel containing different fields such as lists and text boxes. This means you can import a whole form, or just elements of a form. In this way you can very quickly reuse some or all parts of an existing form.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Importing from another process&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/importfromprocess.png" alt="Import from another process">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="adding-form-elements">Adding form elements&lt;/h2>
-&lt;p>If you have added a new form during the form creation process, then a blank canvas with 3 default buttons are available to you: &lt;strong>Submit&lt;/strong>, &lt;strong>Save&lt;/strong> and &lt;strong>Close&lt;/strong>.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Default form buttons&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/defaultbuttons.png" alt="Form button edit">&lt;/p>
-&lt;ol>
-&lt;li>Go to &lt;a href="https://docs.kianda.com/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a> to find out more about adding form elements.&lt;/li>
-&lt;li>Move elements by clicking on the &lt;strong>Drag Handle&lt;/strong> &lt;img src="https://docs.kianda.com/images/move.png" alt="Drag handle"> beside the item and dragging it to where you want to place it.&lt;/li>
-&lt;li>Edit elements by clicking on each item and clicking on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon"> see &lt;a href="#settings-and-properties">Settings and properties&lt;/a>.&lt;/li>
-&lt;/ol>
-&lt;h2 id="settings-and-properties">Settings and Properties&lt;/h2>
-&lt;p>In addition to the edits above, there are a number other actions and settings that you can implement to your process and forms.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Settings and properties&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/settingsprocess.png" alt="Process and form properties">&lt;/p>
-&lt;p>Settings are available from the right-hand pane and give you the ability to:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;a href="#import-forms">Import processes&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>View &lt;a href="https://docs.kianda.com/getting-started/create-first-process/design-and-build/add-forms/version-history/">Version history&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Change &lt;a href="#process-settings">Process settings&lt;/a> &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings button">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Edit form information by selecting a form and clicking on the &lt;strong>Pen&lt;/strong> button &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Pen icon">.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Change a field to another field by clicking on &lt;strong>Change field&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Create a duplicate form by selecting a form, clicking on the &lt;strong>Clone&lt;/strong> button &lt;img src="https://docs.kianda.com/images/clone.png" alt="Clone button"> and then click on &lt;strong>Ok&lt;/strong>. A version called &amp;lsquo;Form Name Copy&amp;rsquo; is created and available to edit on the canvas. The &lt;strong>Clone&lt;/strong> button can also be used to clone form elements like controls or buttons.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Delete a form by selecting a form, clicking on the &lt;strong>Bin/Trash&lt;/strong> button &lt;img src="https://docs.kianda.com/images/binicon.png" alt="Bin icon"> and then click on &lt;strong>Ok&lt;/strong> after you have reviewed the form title and you are sure this is what you want to delete. Click on &lt;strong>Cancel&lt;/strong> if you wish to cancel the deletion.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>View and edit &lt;a href="https://docs.kianda.com/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties#form-properties">Form properties&lt;/a> and &lt;a href="https://docs.kianda.com/getting-started/create-first-process/plan-your-process/rules/">rules&lt;/a>.&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="process-settings">Process settings&lt;/h3>
-&lt;p>You can edit process settings by clicking on the &lt;strong>Settings&lt;/strong> button &lt;img src="https://docs.kianda.com/images/settings.png" alt="Settings button"> in the right-hand pane.&lt;/p>
-&lt;p>Choose from the settings:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>Process id settings&lt;/strong> - choose from a) Default or b) Custom and use a combination of [ProcessName]-[UniqueNumber]-[FieldName]&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable process security&lt;/strong> - if you tick the checkbox, can allow certain Users, Groups or Partners to have certain privileges related to the radio button options to create, assign and view as shown below.&lt;/p>
-&lt;p>&lt;em>&lt;strong>Enable process security&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/process_security.png" alt="Process security">&lt;/p>
-&lt;p>The default setting is &lt;strong>Security users can create, assign to can update, everyone else can view&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>On load rules execution mode&lt;/strong> - options are a) Always b) When in edit mode or c) When open new. The default setting is &lt;strong>Always&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Hide form tabs&lt;/strong> - gives you the ability to hide form tabs, options are a) Yes or b) No&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Hide left nav&lt;/strong> - gives you the ability to hide navigation elements, options are a) Yes or b) No&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable anonymous sharing of forms&lt;/strong> - gives you the ability to share forms with people outside your organisation for example a feedback form or GDPR subject access request. Options are a) Yes or b) No. If you click on &lt;strong>Yes&lt;/strong> there are various options that you can add:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Message to display after anonymous submission&lt;/strong> - to add a display message&lt;/p>
-&lt;p>&lt;em>&lt;strong>Enabling anonymous sharing&lt;/strong>&lt;/em>&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://docs.kianda.com/images/Enable_Anonymous_Sharing.jpg" alt="Link for external users">&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Hide form topbar&lt;/strong> - checkbox to hide the form topbar.&lt;/li>
-&lt;li>&lt;strong>Force log out&lt;/strong> - options are a) Yes or b) No to force user logout once the form is submitted&lt;/li>
-&lt;li>Click on &lt;strong>New link&lt;/strong> to generate a new anonymous form link to share with users and click on &lt;strong>Edit&lt;/strong> to change the link.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable mobile bottom navigation&lt;/strong> - options are a) Yes or b) No&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Instance delete settings&lt;/strong> - options are a) Any user can delete b) Creator can delete c) &amp;ldquo;Current form owner&amp;rdquo; can delete d) &amp;ldquo;Security users&amp;rdquo; can delete e) &amp;ldquo;Admins only&amp;rdquo; can delete. The default setting is &lt;strong>Creator can delete&lt;/strong>.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Enable form assignment notification&lt;/strong> - options are a) Yes or b) No&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Prevent closing instance with unsaved data&lt;/strong> - options are a) Yes or b) No&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Selected tab theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is selected.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Completed tab theme&lt;/strong> - choose from Navy, Green, Blue, Amber, Red or White as a colour when a form is completed.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>OK&lt;/strong> button &lt;img src="https://docs.kianda.com/images/ok.png" alt="OK button"> when you are finished editing to save your changes or click on &lt;strong>Close&lt;/strong> to exit the dialog box without saving.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click on the &lt;strong>Exit&lt;/strong> button &lt;img src="https://docs.kianda.com/images/exitdesign.png" alt="Exit process"> to go back to the process list, the Save button &lt;img src="https://docs.kianda.com/images/save.png" alt="Save button"> to save your work, the &lt;strong>Preview&lt;/strong> button &lt;img src="https://docs.kianda.com/images/preview.png" alt="Preview"> to preview what you have created and the &lt;strong>Publish&lt;/strong> button &lt;img src="https://docs.kianda.com/images/publish.png" alt="Publish button"> to publish your work.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;ul>
-&lt;li>To learn more about rules and controls that can be applied to forms go to &lt;a href="https://docs.kianda.com/getting-started/create-first-process/plan-your-process/controls/">&lt;strong>Controls&lt;/strong>&lt;/a> and &lt;a href="https://docs.kianda.com/getting-started/create-first-process/plan-your-process/rules/">&lt;strong>Rules&lt;/strong>&lt;/a>.&lt;/li>
-&lt;li>To learn more about properties, go to &lt;a href="https://docs.kianda.com/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties#field-properties">&lt;strong>Field properties&lt;/strong>&lt;/a>.&lt;/li>
-&lt;/ul>
-&lt;h3 id="user-tips-target-iconimages05png">User tips &lt;img src="https://docs.kianda.com/images/05.png" alt="Target icon">&lt;/h3>
-&lt;ol>
-&lt;li>There are many ways to then reuse elements within forms, see the video &lt;a href="https://docs.kianda.com/how-to/reuse-or-clone-process-elements/">&lt;strong>Reusability&lt;/strong>&lt;/a>.&lt;/li>
-&lt;li>There are many ways to manage who has access to a process, or form, see the video &lt;a href="https://docs.kianda.com/how-to/control-form-user-security/">&lt;strong>User management&lt;/strong>&lt;/a>.&lt;/li>
-&lt;/ol>
-&lt;h3 id="to-return-to-the-previous-pages-click-on-the-links-below--idea-iconimages10png">&lt;strong>To return to the previous pages click on the links below&lt;/strong> &lt;img src="https://docs.kianda.com/images/10.png" alt="Idea icon">&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/getting-started/welcome/how-kianda-works/">&lt;strong>How Kianda works&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/getting-started/welcome/low-code/">&lt;strong>What is low-code development&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/getting-started/welcome/no-code/">&lt;strong>What is no-code development&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/getting-started/create-first-process/design-and-build/">&lt;strong>Design and build your process&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/getting-started/create-first-process/design-and-build/add-forms/">&lt;strong>Add forms&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;strong>&lt;a href="https://docs.kianda.com/getting-started/create-first-process/design-and-build/add-controls-and-rules/">Add controls and rules&lt;/a>&lt;/strong>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/getting-started/create-first-process/design-and-build/add-controls-and-rules/properties/">&lt;strong>Properties&lt;/strong>&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Platform: Form quick actions menu</title><link>https://docs.kianda.com/platform/designer/forms/form-quick-action/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/designer/forms/form-quick-action/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
+To read more about quick actions, go to &lt;a href="https://docs.kianda.com/platform/application-designer/forms/form-quick-action/">Form quick actions menu&lt;/a>.&lt;/p></description></item><item><title>Platform: Form quick actions</title><link>https://docs.kianda.com/platform/designer/forms/quick-actions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/designer/forms/quick-actions/</guid><description>
 &lt;p>The &lt;strong>Form quick action&lt;/strong> menu will appear to designated users as a quick action menu option in the top right-hand corner of a form.&lt;/p>
 &lt;p>Depending on what type of quick actions are enabled and if you are assigned quick actions as a form user,, then you will see options when you click on the &lt;strong>quick action&lt;/strong> button &lt;img src="https://docs.kianda.com/images/quick-action-button.jpg" alt="Quick action menu">, for example to reassign a form to someone else, or to perform a custom action like signing off on a purchase order.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/quick-action-view.jpg" alt="Quick action menu">&lt;/p>
@@ -423,22 +122,4 @@ Your browser does not support the video tag.
 &lt;/ol>
 &lt;p>&lt;img src="https://docs.kianda.com/images/trigger-rule-quick-action.jpg" alt="Trigger rule quick action">&lt;/p>
 &lt;h3 id="enable-custom-action">Enable custom action&lt;/h3>
-&lt;p>If you check &lt;strong>Enable custom action&lt;/strong> users who have been selected using the &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong> option, will be able to perform a customised action on a form, defined using the dialog box within this section.&lt;/p>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
-&lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/platform/general/help/">Help&lt;/a>.&lt;/p></description></item><item><title>Platform: Form responsive layout</title><link>https://docs.kianda.com/platform/designer/forms/responsive-layout/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/platform/designer/forms/responsive-layout/</guid><description>
-&lt;p>Responsive layout refers to the fact that all forms will display equally well on laptop screens, tablets and mobile phone screens. As a form designer you can set the appearance of form fields using the layout function.&lt;/p>
-&lt;h3 id="how-to-get-started">How to get started&lt;/h3>
-&lt;p>Within Kianda Designer, click on a process, then a form of choice so that the &lt;strong>Edit&lt;/strong> (Pen) icon is visible.&lt;/p>
-&lt;ol>
-&lt;li>Click on a &lt;strong>field&lt;/strong> of choice within the form so the &lt;strong>Edit&lt;/strong> (Pen) icon &lt;img src="https://docs.kianda.com/images/penicon.png" alt="Edit pen icon"> is visible for the field.&lt;/li>
-&lt;li>Click on the &lt;strong>Edit&lt;/strong> (Pen) icon button for the field.&lt;/li>
-&lt;li>Click on &lt;strong>Layout&lt;/strong> under Field properties in the right-hand pane.
-&lt;img src="https://docs.kianda.com/images/layout.jpg" alt="Layout property">&lt;/li>
-&lt;li>Click on the &lt;strong>Expand&lt;/strong>&lt;img src="https://docs.kianda.com/images/layout-arrow.jpg" alt="Layout expand"> button within Layout to see desktop layout see &lt;strong>Layout&lt;/strong> bar and &lt;strong>Mobile Layout&lt;/strong> for the field.&lt;/li>
-&lt;li>Click on the blue bars to extend the size of the field, for example in the image above, the desktop layout is 50% of the maximum width available, so the field &amp;lsquo;Department Manager&amp;rsquo; would only take up half the width of the form. The mobile layout however is set to 100% and the field would take up the maximum width available. There are 12 possible width options that can be used within these bars.&lt;/li>
-&lt;li>Click on the &lt;strong>Collapse&lt;/strong> button to minimise the Layout property.&lt;/li>
-&lt;/ol>
-&lt;h3 id="whats-next--idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To read more about how to create processes and forms go to &lt;a href="https://docs.kianda.com/platform/application-designer/">Application Designer&lt;/a>.&lt;/p>
-&lt;p>To find out about help and support, go to &lt;a href="https://docs.kianda.com/platform/general/help/">Help&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;p>If you check &lt;strong>Enable custom action&lt;/strong> users who have been selected using the &lt;strong>Users&lt;/strong>, &lt;strong>Groups&lt;/strong> and &lt;strong>Partners&lt;/strong> option, will be able to perform a customised action on a form, defined using the dialog box within this section.&lt;/p></description></item></channel></rss>
