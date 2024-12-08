@@ -4,40 +4,61 @@ weight: 11
 typora-root-url: ..\..\..\static
 ---
 
-The developer page includes a **webhooks** function. A **webhook** or web **callback** allows information to be pushed from Kianda to your applications in real time when **process instances are created, deleted or updated**. This provides an efficient way to execute event reactions, thereby eliminating the need to continuously poll for data. The information that is posted includes variables like the process name and instance ID. 
+**Webhooks** in Kianda provide a straightforward way to notify external applications in real time when certain events occur within your workspace. Rather than constantly polling Kianda for updates, webhooks allow you to react immediately whenever **process instances are created, updated, or deleted**. This makes event handling efficient and responsive.
 
-The Kianda **webhooks** function allows you to configure URLs that can respond to process instance creation, deletion and update events. When these events happen, the webhook will then make a HTTP request to your application/service, including variables like the process instance name, querying the provided URL, so your application can be updated.
+When a webhook event fires, Kianda sends an HTTP GET request to the configured URL(s), passing along essential details such as the process name, instance ID, and the type of event. Your external application can then use this information to update its own records, trigger workflows, or perform any other actions needed.
 
-**Note:** Callback has a timeout of 10 seconds.
+**Note:** The callback request has a timeout of 10 seconds. If your external service does not respond within this time, the request may fail.
 
-## How to implement webhooks in your Kianda workspace
+## Setting Up Webhooks in Kianda
 
-You must have an **Administrator** or **Developer** role see [Users & Groups](/platform/administration/users/) for more details on roles. Then to get started with webhooks:
+To implement webhooks, you need an **Administrator** or **Developer** role. For more details on roles, see [Users & Groups](/platform/administration/users/).
 
-1. Navigate to **Administration** in the left-hand side menu, and click on **Developer**. This will bring you to the **Developer resources** page.
+1. **Open the Developer Resources:**
+   - Go to **Administration** in the left-hand sidebar.
+   - Click on **Developer** to open the **Developer resources** page.
+   
+   ![Developer resources page](/images/widgetview.gif)
 
-   ***Developer resources page***
+2. **Access Webhooks:**
+   - Click on **Webhooks** to configure callback URLs.
 
-   ![Widget view](/images/widgetview.gif)
+3. **Configure Instance Callback URLs:**
+   - The **Instance Callback URLs** dialog box appears.
+   
+     ![Webhooks dialog](/images/webhooks-oneurl.jpg)
 
-2. Click on **Webhooks** to create a process instance callback.
+4. **Enable and Specify Callbacks:**
+   Turn on the relevant callback(s) using the sliders, then provide the URL(s) that Kianda should call when the selected event occurs.
+   
+   - **Created Callback:** Fires whenever a new process instance is created.  
+     - Kianda sends a **HTTP GET** request with parameters:  
+       `instanceID={instanceID}&processName={processName}&eventType=created`
+   
+   - **Updated Callback:** Fires whenever a process instance is updated.  
+     - Kianda sends a **HTTP GET** request with parameters:  
+       `instanceID={instanceID}&processName={processName}&eventType=updated`
+   
+   - **Deleted Callback:** Fires whenever a process instance is deleted.  
+     - Kianda sends a **HTTP GET** request with parameters:  
+       `instanceID={instanceID}&processName={processName}&eventType=deleted`
 
-3. The **Instance Callback URLs** dialog box appears.
+   For each event type, you can enter one or more URLs (one URL per line) to notify multiple services simultaneously.
 
-   ![Webhooks](/images/webhooks-oneurl.jpg)
-
-4. Use the slider to turn on the relevant callback:
-   - **Enable Created Callback** - this will enable a URL callback every time a process instance is **created**. This results in a **HTTP GET request** with parameters `instanceID={instanceID}, processName={processName}` and **`eventType=created`** being issued to the given URL.
-   - **Enable Updated Callback** - this will enable a URL callback every time a process instance is **updated**. This results in a **HTTP GET request** with parameters `instanceID={instanceID}, processName={processName}` and **`eventType=updated`** being issued to the given URL.
-   - **Enable Deleted Callback** - this will enable a URL callback every time a process instance is **deleted**. This results in a **HTTP GET request** with parameters `instanceID={instanceID}, processName={processName}` and **`eventType=deleted`** being issued to the given URL.
-
-5. In each case **type in the URL** to respond to process instance create, update and deleted events. Note that in each case, you can add more than one function, but use only **one URL per line**,  using enter/return key to move to the next line. This will allow you to update **multiple services** using the callback operation above.
-
-6. Click on the **Help** button ![Help button](/images/webhookhelp.PNG) for clarification. 
+5. **Help and Guidance:**
+   If you need more details, click the **Help** button ![Help button](/images/webhookhelp.PNG) to see additional instructions and examples.
 
    ![Callback helptext](/images/callback-helptext.jpg)
 
-7. Click on **OK** when done or click on **Close** at any stage to close the dialog box.
+6. **Save Your Settings:**
+   - Click **OK** to confirm your settings.
+   - Click **Close** if you want to exit without saving.
+
+Once configured, Kianda will send HTTP GET requests to the specified URLs whenever the corresponding event occurs. You can then build logic in your external application(s) to handle these events—updating records, triggering other workflows, or integrating with third-party services.
+
+---
+
+**In summary**, Kianda’s webhook functionality allows your workspace to seamlessly connect with external applications in real time, reducing the need for constant polling and making it easier to maintain synchronized data and processes across systems.
 
    
 

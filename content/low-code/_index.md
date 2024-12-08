@@ -1,191 +1,107 @@
 ---
-title: "How does Kianda Low-Code Development Work?"
+title: "Building Apps with Kianda’s Low-Code Platform"
 linkTitle: "Low-code development"
 weight: 4
 typora-root-url: ..\..\..\static
 description: "Low-code development guides. Developers start here"
 ---
 
-As Kianda is built using open web technologies based on **CSS** and **JavaScript** and **micro-services**, you can use your existing web software development skills to build amazing apps with your given workspace. 
+Kianda is a low-code development platform designed for web developers who want to create robust business process applications without getting bogged down in complex coding tasks. Because Kianda is built on open web technologies—primarily **CSS**, **JavaScript**, and micro-services—you can put your existing skills to work right away. Instead of grappling with proprietary systems, you’ll find familiar tools and frameworks, making it straightforward to build and customize applications to meet your organization’s needs.
 
-More specifically the building blocks of the Kianda platform include **Ember.js** and **Bootstrap** and other front-end technologies like web sockets, AJAX and more. From a back-end point of view Kianda is powered by highly scalable micro-services that use a variety of technologies like .NET, NodeJS and more.
+## Key Technologies Under the Hood
 
-To get started as a developer in Kianda the only requisite is to have CSS and JavaScript working knowledge. Familiarity with Handlebars or Emberjs is a plus but any web developer could pick this quickly.
+Kianda’s front-end leverages established, open-source tools including **Ember.js**, **Bootstrap**, and features like web sockets and AJAX for real-time, responsive interfaces. This front-end stack lets you quickly create modern, dynamic user experiences using the same skills you apply every day in web development.
 
-## Why choose low-code development? 
+On the back-end, Kianda’s architecture is powered by scalable micro-services running on top of widely used technologies like **.NET** and **Node.js**, ensuring that your applications are both reliable and easy to maintain. By embracing these open standards, Kianda allows you to integrate seamlessly with other systems and tools in your ecosystem.
 
-Kianda’s low code development environment provides developers with a graphical user interface to quickly create customised applications that can be used in automated processes. Kianda **Developer** allows you to quickly build **reusable widgets** allowing you to extend the functionality of the system. You can define the functionality or module that you want to define and deliver that module for inclusion in an application design, without the need to invent all the code from scratch. For example you could create a custom control that allows you to display images in a particular way, see [Custom field development](/low-code/field-widget/).
+### Ember.js and Handlebars
 
-Providing you have some software development and/or coding experience, low-code development can allow you to implement customised Kianda widgets to meet user-specific needs such as creating custom ‘Field’, ‘Rule’ or ‘Dashboard widget’ elements.
+Kianda’s user interface is built using **Ember.js**, an open-source JavaScript framework well-known for its convention-over-configuration approach. This means you can write less boilerplate code while still delivering high-quality, maintainable applications. Ember.js works hand-in-hand with the **Handlebars** templating library. Handlebars makes it simple to bind data to templates, dynamically generate HTML, and reuse common UI patterns.
 
-There are 16 predefined fields and 60 rules available for non-developers to use in a no-code form design GUI. However if these do not suit, then Kianda’s low-code development solution provides near limitless room for process expansion. As the Kianda platform offers access to any data source (including real-time synchronisation of the data) and integration with many other software tools and applications, the implementation of low-code can provide your business processes with extreme scalability and room for improvement.
+If you’re already comfortable with JavaScript and modern CSS frameworks, you’ll find working with Ember.js and Handlebars an easy step forward. For more on best practices, see our [Ember Inspector guide](/low-code/using-the-ember-inspector/) and explore [Ember.js documentation](https://guides.emberjs.com/release/) and [Handlebars documentation](https://handlebarsjs.com/guide/).
 
-You can also build upon pre-defined field, rule. data connector and dashboard code to offer the developer a shortcut in creating something new and beneficial for the organisation. For example, you can see a **rule widget user interface** being designed below, using HTML, handlers, expressions and more.
+## Why Choose Low-Code with Kianda?
 
-### Ember.js ![Ember logo](/images/ember-logo.png) ####
+Low-code development reduces the time and effort needed to build enterprise applications. By using Kianda’s graphical interface and predefined building blocks, you can rapidly assemble process apps that integrate with your company’s workflows. At the same time, Kianda’s openness means you’re never locked in. If a standard component isn’t a perfect fit, you can dive into the code and craft a solution that suits your exact requirements.
 
-Kianda uses **Ember.js**, an **open-source JavaScript web framework** used to build highly interactive applications that work on any device. Ember is built using **JavaScript** hence the .js extension. 
+Kianda provides a large selection of ready-to-use fields and rules, so non-developers can create forms and workflows without writing code. But when you need something more advanced, Kianda’s low-code approach lets you implement custom logic and UI widgets using the CSS and JavaScript skills you already have.
 
-The Ember.js environment provides you with the **tools** to develop your applications, like libraries, templates, models and so on. One of the tools used more specifically used building Kianda form components is the **Handlebars templating library** described below. 
+For example, you might create a new field type that displays images in a custom layout or build a bespoke rule widget for integrating with an external data source. You can also fine-tune list widgets for dashboards or write JavaScript expressions to automate tasks like generating unique IDs or formatting text.
 
-The beauty of Ember.js is that it allows you can create advanced web applications with less code. To read more about Ember.js go to https://guides.emberjs.com/release/ and also best practices [Using the Ember Inspector](/low-code/using-the-ember-inspector/) for information on using the Ember inspector to view existing code.
+## What You Can Do as a Developer
 
-### Handlebars ![Handlebars](/images/handlebars.png)
+With an **administrator** role, you have access to **Administration** functions that let you tailor the platform:
 
-Ember.js uses the **Handlebars templating library** to build the user interface for applications. Handlebars uses a template and an input object to **dynamically generate HTML** or other text formats. Handlebars also **includes built-in helper** functions and allows you to **build your own custom helper** functions. To read more about Handlebars go to https://handlebarsjs.com/guide/  and also [Templating basics](/low-code/templating-basics/) for more information.
+- Modify the [Global JavaScript](/low-code/global-javascript-file/) and [Global CSS](/low-code/global-css/) files to set application-wide styles or logic.
+- Create custom [Field](/low-code/field-widget/), [Rule](/low-code/rule-widget/), [Dashboard](/low-code/dashboard-widget/), or data connector widgets to extend the platform’s capabilities.
+- Integrate external data sources and use your own JavaScript expressions in fields, rules, or anywhere rich text is used, like in emails and dashboards.
+- Customize list widgets to display data in dashboards in a way that makes sense for your organization’s metrics and KPIs.
+- Incorporate HTML and custom styling in forms and emails to produce richer user experiences.
 
+These options give you the flexibility to shape Kianda to fit your exact business processes, without leaving the familiar territory of open web development.
 
+## Kianda Developer: Your Interface for Custom Widgets
 
-## What can you do as a developer
+**Kianda Developer** is a user-friendly interface that lets you build and manage reusable widgets. Instead of starting from scratch, you can focus on your core logic or design. You can create:
 
-Using your **administrator** role, and accessing **Administration** functions there are several ways you can **customise** your Kianda environment as a developer, typically by:
+- **Field widgets**: Custom UI elements that appear on-screen, such as specialized inputs or interactive controls.
+- **Rule widgets**: Automated logic components that manipulate data, set statuses, or initiate actions.
+- **Dashboard widgets**: Dynamic visualizations or layouts for presenting information on dashboard pages.
+- **Data connector widgets**: Integrations for sending and receiving data from external sources.
 
-1. Editing the [Global JavaScript file](/low-code/global-javascript-file/)
+### Getting Started with Kianda Developer
 
-2. Editing the [Global CSS file](/low-code/global-css/)
+1. Open **Administration** > **Developer** to see all custom widgets in your environment.
+2. Browse existing widgets, review version histories, edit or delete widgets, and easily restore previous versions.
+3. To create a new widget, click **New widget**, provide a title, pick an icon, and choose a widget type. Then add your HTML, Handlebars, and JavaScript logic.
+4. Once you’re done, you can export your custom widget as part of a Kianda file and import it into another environment. This portability ensures you can reuse and share your work seamlessly.
 
-3. Building widgets for [rules](/low-code/rule-widget/), [fields](/low-code/field-widget/), [pages](/low-code/dashboard-widget/) and data connectors
+### Example of a Field Widget
 
-4. [Customising list widgets](/low-code/list-widget-template/) to present data in dashboards
+Below is an example of a simple field widget’s Handlebar and JavaScript code. The Handlebar template adapts based on the widget’s display mode (design, edit, settings, display), and the JavaScript object defines functions for each mode.
 
-5. Creating [rich text](/low-code/global-css/#process-and-dashboard-specific-css) for emails and forms
-
-In addition to the above customisations, you can use your JavaScript knowledge to create smart [expressions](/low-code/javascript-expressions/) that can be used in text box, number and rich text fields, as well as **anywhere that uses rich text** like [Send email rule](/platform/rules/communications/send-email/) body text for emails, [Meeting request rule](/platform/rules/communications/meeting-request/) and rich text widget for dashboards. 
-
-Click on the links above to get more information on the areas mentioned. Building custom widgets is introduced below.
-
-## Kianda Developer
-
-Kianda comes with several pre-defined field, rule, data connector and dashboard widgets. In case you want to create something else to satisfy your specific needs you can create your own custom widget if you have some level of development skills in JavaScript and HTML.
-
-Kianda offers a user-friendly interface, **Developer**, to create custom widgets in a few minutes. A custom widget could be a 'Field' widget or a 'Rule widget', for example getting started to create a custom field widget as shown in the video below.
-
-<video width="100%" style="width:100%" controls>
-    <source src="/videos/Creating a widget.mp4">
-    Your browser does not support the video tag.
-    </source>
-</video>
-Using Kianda Developer you can create reusable widgets, allowing you to extend the functionality of the system. There are four types of widgets you can create:
-
-- **[Field](/low-code/field-widget/)** or control widgets - that allow you to create elements that will appear on screen to user
-- **[Rule](/low-code/rule-widget/)** widget - these are used to automate actions, like extracting data from a form or setting a particular status within a process
-- **[Dashboard](/low-code/dashboard-widget/)** widget - used to create a particular type of display in a dashboard page
-- **Data connector** widget - used to connect to a particular data source so that Kianda can push or pull information to/from that data source
-
-### Using Kianda developer
-You can access Kianda Developer if you have an **administration** or **developer** role. To use **Developer:**
-
-1. In the left-hand side pane click on **Administration** and then click on **Developer**.
-
-2. Any customised widgets that have been created within your organisation will be visible in the **Developer resources** main widget view. Here you can see widgets by name, when the widget was **last modified**, **who modified** it, and the widget **type**.
-
-   ![Developer view](/images/developer-view.jpg)
-
-3. From the **Developer resources** main widget view you can:
-
-   - View the widget creation history by clicking on the **Version History** button ![Version History button](/images/widget-version-history.jpg)
-
-     The **Version history** dialog box opens showing the different versions of the widget. From here you can **restore** a version of the widget by clicking on the **Restore** button ![Restore button](/images/restore.png). Click on **Close** to exit the dialog box.
-
-     ![Widget version history dialog box](/images/widget-version-history-dialog.jpg)
-
-   - Edit a widget by clicking on the **Edit** (Pen) button  ![Edit widget button](/images/widget-edit.jpg)
-
-   - Delete a widget by clicking on the **Bin/Trash** button  ![Delete widget button](/images/widget-delete.jpg)
-
-4. To view details for existing widgets, click on the widget name such as 'Dashboard Number widget' as shown in the list above.
-
-   ![Widget example](/images/widget-example.jpg)
-
-5. In the **Widget** page you can update existing Widget UI and Widget Code within the editor and then click on **Update** ![Update button](/images/update-button.jpg). Alternatively click on **Close** to exit the page at any time.
-
-6. To create a new widget click on **New widget** ![New widget button](/images/new-widget-button.jpg). This will open the **Edit widget** dialog box.
-
-   ![Edit widget example](/images/edit-widget-page.jpg)
-
-   Fill out details as follows:
-
-   - **Title** - fill out a title for the widget.
-
-   - **Unique Id** - this is a unique value that is autofilled from the Title.
-
-   - **Widget Icon** - choose an appropriate icon from the drop-down list.
-
-   - **Widget type** - choose from **[Field](/low-code/field-widget/)**, **[Rule](/low-code/rule-widget/)**, **[Dashboard widget](/low-code/dashboard-widget/)** or data connector widgets.
-
-     Click on the links above to learn more about building specific types of widgets.
-
-7. When you are finished editing the dialog box click on **OK** or click on **Close** at any time to exit. The output is shown in the next section.
-
-When a custom widget is created it can be exported within a Kianda file along with process design and/or dashboards, or on its own. This file can then be imported into the same or different Kianda environments of your choosing, giving you flexible access to your custom widgets. To learn more about this, see [Exporting processes](/platform/application-designer/process/#exporting-processes) and [Importing processes](/platform/application-designer/process/#importing-processes).
-
-
-### Example of a Field widget
-
-The code blocks below display the default code for 'Widget UI' and 'Widget Code'.
-
-The 'Widget UI' uses [Handlebars](/low-code/templating-basics/) syntax and defines the HTML, handlers, expressions and more.
-
+**Handlebars UI:**
 ```handlebars
 {{#if (eq displayMode "design")}}
-	{{input required=field.required maxlength="4" type="text" value=field.text class="form-control"}}
+  {{input required=field.required maxlength="4" type="text" value=field.text class="form-control"}}
 {{/if}}
 
 {{#if (eq displayMode "edit")}}
-	{{input required=field.required maxlength="4" type="text" value=field.text class="form-control"}}
+  {{input required=field.required maxlength="4" type="text" value=field.text class="form-control"}}
 {{/if}}
 
 {{#if (eq displayMode "settings")}}
-	
+  <!-- Add UI for settings here if needed -->
 {{/if}}
 
 {{#if (eq displayMode "display")}}
-	<p class="text-muted">{{field.text}}</p>
+  <p class="text-muted">{{field.text}}</p>
 {{/if}}
 ```
 
-
-
-The 'Widget Code' is written in JavaScript and defines the logics and functions.
-
+**JavaScript Logic:**
 ```javascript
 {
- edit:function(){
- },
- display:function(){
- },
- settings:function(){
- }
+  edit: function() {
+    // Code for edit mode
+  },
+  display: function() {
+    // Code for display mode
+  },
+  settings: function() {
+    // Code for settings mode
+  }
 }
 ```
 
-### JavaScript Expressions
+This structure allows you to cleanly separate your UI and logic, making development and maintenance straightforward.
 
-Expressions are available for use extensively throughout the platform, both in **controls** like text box, number and rich text, as well as **rules** like Send email and Set form field. 
+### JavaScript Expressions Everywhere
 
-The use of expressions allows you to cleverly manipulate data to create new constructs that can be used within processes. For example if an 'Onboarding process' requires that a new hire completes a 'new employee form' filling out their 'firstname' and 'lastname', it may be useful to combine the two input strings to create a new ID for the employee that combines the data from each field.
+Kianda supports using JavaScript expressions throughout its platform—inside fields, rules, and email templates. For instance, you can combine multiple field values to generate new strings, format data dynamically, or even create direct links to specific process instances with functions like `ProcessLink()`.
 
-![Expression new employee ID example](/images/expression-id-example.jpg)
+To learn more, visit our [Expression builder guide](/platform/rules/general/expression-builder/) and explore how to inject logic and dynamic content anywhere you need it.
 
-The [Expression builder](/platform/rules/general/expression-builder/) page provides an introduction to expressions and shows one example of expressions in use in a **Send email rule** to automate how emails are sent. The example simply uses the **[identifier]** or unique name from form fields to populate the body text of the email.
+---
 
-![Expression example](/images/expression-example.gif)
-
-**ProcessLink()** is a function that will return a link to that particular process instance. You can use **any JavaScript functions** in the expression field to make advanced expressions throughout your Kianda forms, see below for how to get started.
-
-## How to get started with JavaScript expressions ##
-
-Expressions are recognisable in Kianda from the **Expressions** button ![Expressions](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis.png) found in **Edit rule dialog boxes** and controls like **text box**, **number** and **rich text**. 
-
-Within rules, expressions can be created using the **Expression builder** where you can **Add field to an expression** or use the handy **Reference** guide to get a list of commonly used functions, such as **ProcessLink()**.
-
-***Expression builder***
-
-![Expression builder example in action](/images/expression-builder-eg.gif)
-
-To create a field in a form that concatenates the values from two text boxes, we could start using expressions as follows:
-
-1. In a simple form made up of three fields, we choose one field which is going to act as the trigger for an action. 
-
-We can also insert JavaScript such as JavaScript Strings into the expression.
-
+By building on open technologies like CSS, JavaScript, Ember.js, and Handlebars, Kianda lets you apply the full range of your web development experience. Whether you’re creating simple apps or highly customized widgets, Kianda’s low-code approach helps you deliver results faster—without sacrificing flexibility or control.

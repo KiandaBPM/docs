@@ -4,244 +4,108 @@ weight: 4
 typora-root-url: ..\..\..\static
 ---
 
-Within Kianda there is standard site-wide Cascading Style Sheets (CSS) that forms the default styling on the whole workspace. However as a workspace **Administrator** you can add a **Global CSS File** to make changes to the **look and feel** of the site as well as the **functionality of processes**. 
+Kianda’s visual style is built on standard web technologies—primarily CSS and the **Bootstrap** framework. By default, Kianda applies a site-wide style that gives your workspace a consistent look and feel. However, as a workspace **Administrator**, you can override these defaults by using the **Global CSS file**. This lets you adjust aesthetics, tweak layouts, and even enhance functionality for your forms, processes, and dashboards.
 
-You can use the file to **target** very specific details, for example a button in a particular process as shown below. This code will create specific styling for a button that is defined in a form in a process using Kianda **Designer**.
+## Why Use the Global CSS File?
 
-```css
-.button-white{
-    color: white;
-    background-color: black;
-    padding-bottom: 1px;
-    padding-top: 18px
-}
-```
+**Global CSS** lets you implement style changes that appear throughout your entire Kianda workspace. Rather than adjusting individual elements in each process or dashboard, you can create a unified look or add distinctive branding across all pages at once.
 
-CSS can be used not just for to change the look and feel of applications but for functionality within a process, for example to hide a button via CSS and then create a button via JavaScript for a particular action. 
+For example, you can:
 
-The **Global CSS file editor** exists within the **Look and Feel** section of the Subscription, within the **Administration** section of the site, see [Subscription](/platform/administration/subscription/) for an introduction to the **Subscription** function.
+- **Apply consistent branding:** Match your company’s color palette, typography, and visual identity.
+- **Improve usability:** Make key buttons larger, adjust spacing for better readability, or change how messages are highlighted.
+- **Add functional styling:** Hide certain elements until triggered by JavaScript, or highlight form fields based on conditions.
 
+## Before You Begin
 
+**Plan your design.** Decide in advance what changes you want to make, and consider creating mock-ups to visualize the final look. Having a clear design direction helps ensure your CSS changes are cohesive and meaningful.
 
-## When to use ##
+If you’re new to CSS or Bootstrap, you might review basic CSS and Bootstrap documentation first. Since Kianda is built on Bootstrap, you can use familiar classes, breakpoints, and responsive utilities to craft a user-friendly layout.
 
-Remember the visual style of processes and individual controls like buttons, can be heavily customised using Kianda [**Designer**](/platform/application-designer/designer/) to achieve a unique look that is both appealing to the eye and practical. Many of these changes can be achieved simply by using the provided customisation controls within **Designer**, for example selecting a button, and clicking on the **Edit/pen** icon to make changes. 
+## Where to Find and Edit the Global CSS File
 
-![Selected button example](/images/button-example.jpg)
-
-Selecting the button in this way to edit it, will allow you to select the colour scheme of the control and assign an icon to it from a large library of available icons. 
-
-However, you may want to achieve a **deeper level of customisation**. There are several methods available to combine practicality and ease of user with an aesthetically pleasing design. One option is to modify the **Global CSS File** when you want to change the look and feel of the **site or your processes**. You can do this by applying a **Custom CSS class name**  to any of the **controls fields** available in Kianda, and creating a class selector within the **Global CSS File** available globally in the **Subscription** function within **Administration**.
-
-
-
-## Before you get started
-
-The key to building functional and aesthetically pleasing workspaces and processes within Kianda is to **plan ahead** and create a design in advance that you can then use as your vision and mould your process or workspace into. **Design** **tools** can be used to create **visual** **mock**-**ups** of the processes and workspaces you would like to create. 
-
-### Effective use of CSS classes in Kianda
-
-You may be familiar with the concept of using **CSS** **classes** to apply styling to several elements, Kianda works on the same premises. Simply define a class within the Global CSS file, put some styling into the class and finally apply the same class to a Kianda element.
-
-```css
-.tile {
-     border-radius: 12px;
-     border: 1px solid #e7eaee;
-     background: white;
-     margin-bottom: 15px;
-     padding-bottom: 2px;
-     padding-top: 18px;
-     padding-right: 15px;
-}
-```
-
-It is good practice to use **relevant** and **descriptive** names for these style rules. In the example above we have a “tile” section with styling rules to style an element to that the **appearance** of a tile.
-
-When your class style is defined and ready to apply, add "**tile**" in the **Custom CSS class name** field of any Kianda **element** you want to take the apply that **appearance** to.
-
-![Tile example in a panel](/images/destination-panel-tile2.jpg)
-
-In the image below “**tile**” was used to style these two panels into two **tiles** aligned **side** **by** **side**. 
-
-The benefit of this method is that styles can be **created** **once** and very quickly applied to **elements** anywhere in your workspace. This saves process designers having to revisit the **CSS** **file** every time they are creating a new process or dashboard.
-
-#### Small touches example
-Here is another example of that demonstrates how you can create a **defined** and **recognizable** design without bloating the visuals of your workspace. In this example the below style rule is used to add a gold underline to the **header** **titles** of processes to separate the title of the page and the specific course you are currently viewing. 
-
-```css
-.header-title {
-  font-size: medium;
-  text-transform: uppercase;
-  color: #004B8B
-  margin-right: 10px;
-  border-bottom: 3px solid #F9DCC1;
-}
-```
-
-### Using Font Awesome icons
-
-In addition to creating customised styling, you can add icons to your controls, such as buttons, or to your dashboard display as shown in the image below, to make your workspace features stand out.
-
-<img src="/images/icon-examples.jpg" alt="Icon examples" style="zoom:80%;" />
-
-Icons from the [**Font** **Awesome**](https://fontawesome.com/) icon library can be added using HTML to act as **buttons**. This creates a more visually appealing layout and the **function** can be instantly recognizable to users by the **icon** you choose. Once you have found an icon you wish to use you can then use the provided **HTML** on the website to add it to your **Kianda** **workspace**, it can then be wrapped in a [HTML link tag](https://www.w3schools.com/tags/tag_a.asp) to turn it into a **usable** **button**.
-
-You can have icons display before or after the controls by using a CSS rule, for example use a 'before' selector in CSS to make the icons display as shown in the image above. The CSS rule can be given the Unicode ID of the Font Awesome icon you wish to display and the browser will render the icon at runtime.
-
-```css
-a:before {
-    font-family:"Font Awesome 5 Free";
-    content: "\f007"
-    display: inline-block;
-    padding-right: 10px;
-    vertical-align: middle;
-    font-weight: 900;
-}
-```
-
-For more information on Font Awesome icons go to this [documentation](https://fontawesome.com/web/setup/upgrade/pseudo-elements) link or see this [cheatsheet of Unicode IDs](https://fontawesome.com/web/setup/upgrade/pseudo-elements) for icons, for example F007 used in the code snippet above is a user icon, while F015 is the home icon, seen in the image above. You can test out designs using this [JSFiddle](http://jsfiddle.net/z2eakghc/9/) or code playground. 
-
-### Using modals in form design
-
-In addition to styling forms and form elements, **modals** provide a useful way to communicate with users by displaying information in front of page content requiring the user to engage with an action within the modal . In the example below, you can see how the Transfer assets modal appears on the page, requiring users to view and interact with functionality **contained** **within** **the modal** without having to navigate away from the **current** **page** they are on. This is not only **convenient** for the user but it adds a **layered** **design** to your Kianda platform and its aesthetically pleasing to view.
-
-## How to get started with Global CSS ##
-
-To create a global design and give you the flexibility to change the workspace, use the Global CSS file. You can use the file to target for example buttons in a particular application.
-
-1. As an **administrator**, go to **Administration** > **Subscription**.
-
-2. Click on **Look and Feel**.
-
-3. On the **Look and Feel** page, click on the **ellipsis** button ![Ellipsis button](/images/expression.jpg) beside the **Custom CSS Url** to access the Global CSS file.
-
-   ![Custom CSS Url file](/images/custom-css-url.jpg)
-
-4. The **CSS Editor** opens, allowing you to add CSS, or edit code if your organisation has already added in styling. The image below shows an example of code that has been added in.
+1. As an **Administrator**, go to **Administration** > **Developer**.
+2. Click on **Edit Global CSS**.
+3. The global CSS file editor opens allowing a developer to edit the global CSS file.
 
    ![CSS Editor](/images/css-editor.jpg)
 
-5. Within the file you can create your own styling, for example:
+5. When finished, click **OK**, then **Save Changes** in the Look and Feel section. Refresh Kianda to ensure the changes load.
 
-   - **Class selectors** example
+## Effective Use of CSS Classes
 
-   ```css
-   .widget-list-row {
-     border-radius: 5px;
-     background-color: #ffffff;
-     padding: 10px;
-     transition: background-color 100ms ease-out;
-   }
-   ```
-   
-   - **Class selector and element** example:
-   
-   ```css
-     .pagination > .active > a {
-      background-color: #101641;
-      border-color: #101641;
-     }
-   ```
-   
-   - **Elements and attributes** example:
-   
-     ```css
-     .field-panel[data-name$="?tile-view"].form-group {
-      border-radius: 12px;
-      border: 1px solid #e7eaee;
-      background: white;
-      margin-bottom: 15px;
-      padding-bottom: 0px 
-      padding-top: 18px;
-      padding-right: 15px;
-     }
-     ```
-   
-   - **Media controls** example:
-   
-   ```css
-   @media only screen and (max-width: 767px) {
-     .field-panel[data-name$="?tile-view"].form-group:not(.is-design) {
-      background: whitesmoke;
-     }
-   }
-   ```
-   
-
-The next section deals with [Adding items](#adding-items-to-global-css) to the file.
-
-
-
-## Adding items to Global CSS
-
-Remember additional items can be added to the file whenever you wish. Best practice is to update only individual items based on the **Unique Name** which becomes an attribute. The example below uses the concept shown of **CSS classes** as shown in the section [Effective use of CSS classes](#effective-use-of-css-classes-in-kianda).
-
-### Customised button example
-
-For example, if you have a button in a process and you want to change its background colour and text colour, first you need to add a **Custom CSS class name** to the provided text box within the button options. Next, because you only want to target the button in a specific process, you will need to use an **element selector**. This will take the form of: 
+CSS classes let you define a style rule once and apply it to multiple elements. For instance, to create a “tile” style that you can reuse across many forms:
 
 ```css
-.pinkButton > button {}
+.tile {
+  border-radius: 12px;
+  border: 1px solid #e7eaee;
+  background: white;
+  margin-bottom: 15px;
+  padding: 18px 15px 2px 15px;
+}
 ```
 
-1. Within the **Global CSS File** add the necessary details, for example the above along with the necessary CSS properties, for example:
+Next, apply this class to any element in Kianda by typing “tile” into the **Custom CSS class name** field in the process designer.
 
-   ```css
-   .pinkButton > button {
-       color: green;
-       background-color:pink;
-   }
-   ```
+**Tip:** Use clear, descriptive class names. They help you maintain consistency and make future adjustments easier.
 
-2. When you are finished making changes click on **OK** or else click on **Close** at any time to close the dialog box. 
+## Beyond Look and Feel: Using CSS for Functionality
 
-3. Ensure to save changes to the file by clicking on the **Save Changes** button in **Look and Feel**. You should see a notification to say **Subscription settings updated**.
+While CSS is primarily for styling, you can also pair it with JavaScript to achieve functional effects. For example, you could:
 
-   ![Subscription settings updated](/images/subscription-settings.jpg)
+- **Hide elements:** Use `display:none;` in CSS to initially hide a button, then show it dynamically through JavaScript.
+- **Highlight states:** Combine CSS classes with conditions in Kianda’s logic to emphasize fields that need attention.
 
-   Once the file is saved ensure to refresh Kianda to download the most recent changes into the cache. 
+This blend of styling and scripting can improve your workflows without cluttering your markup.
 
-4. Click on **Back** to return to the **Subscription** page and go to **Administration** and **Designer** to navigate to the desired process. Within that process **select the button** that needs the custom CSS.
+## Working with Bootstrap
 
-5. Click on the **Edit/Pen** button to edit the field and enter the attribute name into the **Custom CSS class name** field.
+Since Kianda uses Bootstrap, you can leverage Bootstrap’s utility classes to quickly style elements without custom CSS. For example, use `.text-center` to center text or `.d-none` to hide elements. If you do need custom rules, try extending or overriding Bootstrap styles sparingly. Keep these tips in mind:
 
-   ![Unique Name field change](/images/css-class-name.png)
+- **Avoid deep overrides:** Stick to high-level classes or create new classes rather than overriding too many built-in Bootstrap rules. This reduces complexity.
+- **Responsive design:** Use Bootstrap’s responsive classes and media queries to ensure your workspace looks good on all devices.
 
-6. Click on **OK** to submit changes or click on **Close** at any time to exit the dialog box.
+## Using Font Awesome Icons
 
-7. When the process is viewed in preview mode or published the Global CSS will override the default system CSS.
+Icons can improve usability and help users instantly recognize actions:
 
-   ![CSS styled button](/images/send-email-pink-button.jpg)
+```css
+a:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f007";
+  display: inline-block;
+  padding-right: 10px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+```
 
-The steps above can be used to edit any element in the subscription using any standard CSS syntax.
+This rule displays a user icon before any link (`<a>` element). Adjust icons by changing the Unicode value or adding conditions. For more details, see Font Awesome’s [pseudo-elements guide](https://fontawesome.com/web/setup/upgrade/pseudo-elements) and [cheatsheet](https://fontawesome.com/cheatsheet).
 
+## Local vs. Global CSS
 
+While the Global CSS file affects your entire Kianda workspace, sometimes you want to make changes only in one process or dashboard. In that case, add `<style>` tags directly into a **Rich Text** field in that process or dashboard. This local approach ensures your changes are contained and won’t impact other parts of the system.
 
-### Process and dashboard specific CSS
+For example, to color all buttons magenta in a specific process:
 
-The steps in the [Adding items to Global CSS](#adding-items-to-global-css) section provide a perfect means to ensure your CSS is available throughout the workspace subscription. However changes may unintentionally cause changes in other parts of the system. For this reason, it possible to add **localised CSS** to each process and dashboard through a rich text field.
-For example, if you want to change all buttons in the process to have a background colour of Magenta, you can follow the following steps.
+1. Add a **Rich Text** field to your process.
+2. Open **Code View** and wrap your CSS in `<style></style>` tags.
+3. Add your button styling inside the tags.
+4. Save and preview the process—the buttons will now have a magenta background, without altering buttons in other processes.
 
-1. Navigate to the process and add a **Rich Text** field. 
+## Naming Conventions and Maintenance
 
-2. **Give the field a title** **_CSS**. Within the Rich text field click on the **Code View** button ![Code view button](/images/source-code.jpg)to open up the code editor.
+Over time, your Global CSS file can grow. Keep it maintainable by:
 
-   ![Richtext _CSS title](/images/richtext-css.jpg)
+- **Using meaningful names:** Class names like `.primary-btn` or `.invoice-tile` convey purpose.
+- **Grouping related styles:** Organize your file so that similar rules (e.g., buttons, panels, modals) are together.
+- **Commenting your code:** Document why certain overrides exist. This helps future administrators or developers understand your intentions.
 
-3. Enter the `<style></style>` tags into the body. 
+## Testing and Iteration
 
-   ![Style tags in Richtext body](/images/style-tags-richtext.jpg)
+After saving changes, always refresh Kianda and test your workspace on different devices or browsers. Check that your modifications didn’t unintentionally affect other elements. If you notice unwanted changes, refine your selectors or consider using local CSS for more targeted modifications.
 
-4. Click the **Code View** button again to commit the change and click **OK** when you are finished editing the dialog box, or click on **Close** to exit the dialog box at any time.
+---
 
-5. To make all buttons show the changes, use the class selector by editing the richtext field again and go into the **Code View** and add the necessary CSS. 
-
-6. Click on the **Code View** button again to commit changes and then click on **OK** when you are finished editing the dialog box.
-
-   ![Richtext CSS example](/images/richtext-magenta.jpg)
-
-7. The buttons now have a background colour of magenta provided they do not have a custom colour already selected.
-
-   ![Richtext button styling example](/images/button-color-change.jpg)
-
-The steps above can be used to edit any element in a **process or dashboard** using any standard CSS syntax. 
+**In summary**, the Global CSS file is a powerful tool that helps you shape your Kianda environment. By planning ahead, using descriptive classes, taking advantage of Bootstrap utilities, and keeping your code organized, you’ll create a more engaging, visually appealing, and functional workspace for your users.

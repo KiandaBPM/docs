@@ -4,59 +4,107 @@ weight: 5
 typora-root-url: ..\..\..\static
 ---
 
-As a workspace **Administrator** you can add a **Global JavaScript** file to add new functionality to your organisation's workspace that is **globally available**, for example a helper class or a helper method that can be called from different parts of the platform. Your function could also bind to an onscreen element, for example if a user clicks on a particular element on screen you may want a specific action to happen using JavaScript.
+The **Global JavaScript file** in Kianda gives you a central place to add custom JavaScript code that will be loaded and available across your entire workspace. Whether you want to create helper functions, bind custom actions to user interactions, or integrate with front-end frameworks at a deeper level, this file provides a convenient, site-wide JavaScript environment.
 
-The **Global JavaScript editor** exists within the **Subscription details** section of the Subscription function, within the **Administration** section of the site, see [Subscription](/platform/administration/subscription/) for an introduction to the **Subscription** function.
+Because it’s globally accessible, you can think of this file as your own mini library of utilities and features that any process, form, or dashboard in Kianda can tap into. For example, you could define functions to:
 
-The benefit of this file is that any functions listed within it become **globally available** across the site. Therefore you are creating a library of reusable functions that can be called upon anywhere in the processes you create. The file loads immediately when the application starts.
+- Manipulate DOM elements dynamically,
+- Handle global events or user interactions,
+- Integrate external APIs or services consistently,
+- Hook into the Ember.js application lifecycle that Kianda’s front-end runs on.
 
-## How to get started with Global JavaScript file ##
+## Why Use a Global JavaScript File?
 
-To use a Global JavaScript file:
+**Reuse and maintainability:** Instead of duplicating code across multiple processes or forms, write it once here. Any code in this file can be called from anywhere else, reducing repetition and simplifying long-term maintenance.
 
-1. As an **administrator**, go to the left-hand side menu and **Administration** > **Subscription**.
+**Centralized customization:** Keep your custom logic organized in one place. If you need to adjust a commonly used function, updating it in the Global JavaScript file instantly applies the change throughout the workspace.
 
-2. Click on **Subscription Details**.
+**Deep integration:** Kianda is built on Ember.js. By hooking into the Ember application through the global file, you can access app instances, sessions, and stores, letting you implement advanced custom behaviors that integrate with Kianda’s internal mechanisms.
 
-3. Within the **Subscription Details** page, under **General Settings** there is a field for the **Global JavaScript file**. If a file has already been uploaded it will be named here. 
+## Getting Started
 
-   ![Global Javascript file in General Settings](/images/global-javascript-file.jpg)
+1. **Access the Developer Page:**  
+   As an **Administrator**, go to **Administration** > **Developer** in the Kianda menu.
 
-4. Click on the **ellipsis** button ![Ellipsis button](/images/expression.jpg) beside the **Global JavaScript** field to access the file details for files already uploaded. Alternatively click on **Browse** to browse for a file on a PC or network.
+2. **Open Global JavaScript Editor:**  
+   Click **Edit Global JavaScript** to open the JavaScript editor. If you’ve already added code, it will appear here; if not, you can start from scratch.
 
-5. The **JavaScript Editor** opens, allowing you to add new code or edit code if your organisation has already added in **functions**. Click on the Editor screen to show the code or to start adding code. The image below shows how a sample of code can be added/created.
+3. **Add or Modify Code:**  
+   Write or paste your JavaScript. You can define functions, create event listeners, or even hook into Ember’s initialization sequence. For example:
+   
+   ```javascript
+   function testClick() {
+     alert("Testing a button click");
+   }
+   
+   // Ember app hooks for advanced integration
+   window.kiandaApp = {
+     init: function (app) {
+       app.boot().then(async () => {
+         var appInstance = app.__container__.owner;
+         var session = appInstance.lookup("service:session");
+         var store = appInstance.lookup("service:store");
+         // Add custom logic here if needed
+       });
+     },
+     didInit: function(appInstance) {
+       // Fires after the app has initialized
+       // Ideal place for actions that require a fully loaded environment
+     }
+   };
+   ```
 
-   ![Javascript editor sample code](/images/javascript-editor.jpg)
+4. **Save and Apply Changes:**  
+   Click **OK**, then **Save Changes** in the Subscription Details page. After saving, refresh your workspace to ensure the new code is loaded globally.
 
-   A further example of a [JavaScript global function](#using-your-javascript-global-functions) is shown below. 
+5. **Use the Generated URL (If Needed):**  
+   A URL is generated for the Global JavaScript file. Typically, you don’t need to reference this URL directly within Kianda, but it’s available for troubleshooting or external references.
 
-6. Add or modify code as needed and when complete click on **OK** or alternatively click on **Close** at any time to close the dialog box.
+## Best Practices
 
-7. A **URL is generated** for the Global JavaScript file found in the Global JavaScript file field.
+- **Keep it organized:** Group related functions together and comment your code, so it’s easier to maintain as your workspace grows.
+- **Use namespaces:** To avoid naming conflicts, consider wrapping related functions in a single object or namespace. For example:
+  ```javascript
+  window.myCompanyUtils = {
+    setHeader: function(elementId, text) {
+      const headerElement = document.getElementById(elementId);
+      if (headerElement) {
+        headerElement.innerHTML = text;
+      }
+    }
+  };
+  ```
+- **Embrace Ember hooks:** The `window.kiandaApp` object gives you direct access to Ember’s lifecycle. Use `init` or `didInit` to run code at startup, obtain services, or dynamically modify application behavior.
+- **Leverage jQuery/Vanilla JS:** Kianda includes jQuery, but you can also use modern JavaScript APIs (`document.querySelector`, etc.). Prefer modern APIs when possible for cleaner, more performant code.
 
-8. Click on **Save Changes** to save changes for the Subscription Details page and click on **Back** to go back to the Subscription main page.
+## Example: Dynamic Interaction with a Dashboard
 
-By adding functions added to the file will are creating a library of reusable functions that can be made available globally within your application.
-
-### Using your JavaScript global functions
-
-Here is an example of code found in a JavaScript file:
+Here’s a more detailed example of a global function that updates a dashboard header based on a user’s selection in a dropdown:
 
 ```javascript
 function setHeader(elementId) {
+  // Assuming the dropdown has a Kendo UI component or a similar API
   var dropdown = $('filter.dropdown [data-role=dropdownlist]').data("kendoDropDownList");
+  
   dropdown.bind("cascade", function () {
-    var value = dropdown.value();
-    var text = dropdown.text();
+    var selectedText = dropdown.text();
     var headerElement = document.getElementById(elementId);
     if (headerElement) {
-      headerElement.innerHTML = text;
+      headerElement.innerHTML = selectedText;
     }
-  }
-  );
+  });
 }
 ```
 
-The function `setHeader`is used to locate an element on screen using JQuery where the function locates the element and sets a specific header ID. The function is used in combination with a filter drop-down list and will allow you to set the header. This can be used for example when selecting a particular filter in a dashboard, where the function sets the text on a particular header element in that dashboard.
+**How This Helps:**  
+When a user selects a new filter in the dropdown, `setHeader` runs automatically (after binding), updating the displayed header dynamically. This logic can be easily reused in multiple dashboards or pages—just call `setHeader` with the correct element ID in each case.
 
-This function can be attached to a page so when the page loads, the `setHeader` function executes and automatically changes the header of the project.
+## Additional Ideas
+
+- **Data formatting functions:** Create global helpers for formatting dates, numbers, or strings consistently across all processes.
+- **Event-based logic:** Attach global event listeners to window or document, and run specific functions in response to custom events fired within Kianda.
+- **Complex integrations:** Use `fetch` or AJAX calls to integrate with external APIs, then store or display the returned data in various parts of your workspace.
+
+---
+
+**In summary**, the Global JavaScript file in Kianda is your toolbox. By placing commonly used functions, event handlers, and Ember lifecycle hooks here, you maintain a cleaner, more efficient codebase and give yourself the flexibility to implement custom logic throughout your workspace with minimal repetition.

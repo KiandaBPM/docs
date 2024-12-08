@@ -4,56 +4,96 @@ weight: 2
 typora-root-url: ..\..\..\static
 ---
 
-There are currently 60 predefined rules available to use in forms and processes, across 10 categories:
+Kianda provides **60 predefined rules** organized into various categories—including [Workflow](/platform/rules/workflow/), [Communications](/platform/rules/communications/), and [Data](/platform/rules/data/)—so you can easily automate key tasks in your forms and processes. These out-of-the-box rules cover a wide range of scenarios, from sending notifications to manipulating data, managing files, interacting with SharePoint, and more. To learn about each category, simply follow the relevant links above.
 
-- [Workflow](/platform/rules/workflow/)
-- [Communications](/platform/rules/communications/)
-- [Data](/platform/rules/data/)
-- [Users](/platform/rules/users/)
-- [File management](/platform/rules/files/)
-- [Tables](/platform/rules/tables/)
-- [Dates](/platform/rules/dates/)
-- [Form actions](/platform/rules/form-actions/)
-- [SharePoint](/platform/rules/sharepoint/)
+When you need functionality beyond what these predefined rules offer, Kianda’s low-code platform lets you build your own **custom rule widgets**. Because Kianda is built on open web technologies (CSS, JavaScript, and templating with Handlebars), you can apply your existing web development knowledge to create powerful, tailor-made logic. This ensures that you’re never limited by predefined options—you can innovate and adapt to your organization’s evolving business needs, all while working in a familiar development environment.
 
-Click on the relevant links to find out more about each area. However if customised rules have been created, they are available to those with the role **Administration** and **Design business process** to use in process and form design in Kianda **Designer**. Customised rules are available under the **Custom rules** category under **Add a rule**.
+## Why Create Custom Rule Widgets?
 
-Custom rules are created by **Administrators** or **Developers** who have coding experience to use Kianda's low-code development feature, Kianda **Developer**. 
+While predefined rules handle many common use cases, your organization may have unique requirements that aren’t covered. For example, you may need a custom rule that:
 
-## How to get started
+- Integrates with a specialized external API,
+- Applies advanced transformations to your form data before submission,
+- Enforces specific business policies that evolve over time, or
+- Dynamically updates fields based on complex conditions that fall outside existing patterns.
 
-If you are an experienced developer with an **Administrator** or **Developer** role, see [Users & Groups](/platform/administration/users/), you can create a new rule widget within Kianda by doing the following: 
+Custom rule widgets give you direct control over the logic that drives your automated processes. You’ll use standard web technologies—HTML, CSS, and JavaScript—within the Kianda platform, making it easy to write, maintain, and scale your custom logic as requirements change.
 
-1. Navigate to **Administration** in the left-hand side menu, and click on **Developer**. This will bring you to the **Developer resources** page. Rule widgets are of type 'Rule' in this list.
+## How to Get Started
 
-   ***Widget view***
+To build custom rule widgets, you need an **Administrator** or **Developer** role. If you’re unsure about your role, check out [Users & Groups](/platform/administration/users/) for details.
 
-   ![Widget view](/images/developer-view.jpg)
+Once you have the right permissions:
 
-2. Click on **New widget** to create a new rule widget.
+1. **Access the Developer Resources**: Go to **Administration** > **Developer** in the left-hand menu. This page lists all existing widgets, including field, rule, dashboard, and data connector widgets.
 
-3. Fill out the **Edit widget** dialog box - that is **Title**, **Unique Id** (which is autofilled from the title), **Widget Icon**, where you can select from hundreds of icons, and then **Widget type**. 
+2. **Create a New Rule Widget**: Click **New widget** to open the widget creation dialog. Fill in the required details:
+   - **Title**: Give your widget a clear, descriptive name.
+   - **Unique Id**: Auto-generated from the title, but you can adjust if needed.
+   - **Widget Icon**: Select an icon that represents your widget’s purpose.
+   - **Widget Type**: Choose **Rule** for a custom rule widget.
 
-   ![Edit widget](/images/rule-widget.jpg)
+   Click **OK** to confirm. Your new widget will now appear in the Developer resources list.
 
-4. Click on **OK** when complete.
+3. **Widget UI and Code**: Open your new widget to see two tabs:
+   - **Widget UI (Handlebars template)**: Defines the widget’s configuration UI within Kianda Designer. Here, you can add form fields, dropdowns, and other elements to help process designers configure the rule’s settings. Use Handlebars to dynamically bind data and handle user input.
+   - **Widget Code (JavaScript)**: Implements the logic executed when the rule runs. Here, you’ll use JavaScript to manipulate process data, call APIs, set field values, or perform calculations.
 
-5. When you create a custom field widget, the **Widget UI** and **Widget Code** tabs are displayed. These two screenshots show the default code for 'Widget UI' and 'Widget Code'.
+   By separating UI from logic, Kianda keeps your code organized and easy to maintain.
 
-      The 'Widget UI' defines the HTML, handlers, expressions and more.
+## Example: Custom Warning Message Rule
 
-      ***Rule widget UI***
-      ![Widget UI](/images/rule-widget-ui.jpg)
+Below is an example that demonstrates how to create a simple custom rule widget. This widget allows a designer to set a warning message and choose a target field where the message will appear when the rule executes.
 
-      The 'Widget Code' defines the logic and functions.
+**Rule Widget UI (Handlebars)**
 
-      ***Rule widget code***
+```handlebars
+<div class="form-group">
+  <label class="control-label">Warning message to display</label>
+  {{input type="text" required=true class="form-control" value=rule.settings.message}}
+</div>
+<div class="form-group">
+  <label class="control-label">Field to display warning message in</label>
+  {{field-picker process=process required=true allowText=false value=field.settings.field}}
+</div>
+```
 
-      ![Widget code](/images/rule-widget-code.jpg)
+In this template, `{{input}}` and `{{field-picker}}` components let the process designer specify a message and select the field in the form that will display the warning. This empowers business users (or other designers) to configure the rule without writing code.
 
-6. Widgets created are visible in the main widget view. From here, you can edit a widget by clicking on the **Edit** button  ![Pen button](/images/bluepen.png) (Pen icon), delete a widget by clicking on the **Bin/Trash** button ![Bin button](/images/binicon.png) and restore earlier versions of a widget by clicking on the **Version restore** button ![Restore](/images/bluerestore.png).
+**Rule Widget Code (JavaScript)**
 
-7. Custom rule widgets you create will be available for use in Kianda Designer by going to **Side menu** > **Administration** > **Designer** > **click on an existing process** or **Add new** to add a new process, then click on **Add a rule** to see the **Custom** rule category added under **Rules**.
+```javascript
+{
+  execute: function() {
+    var rule = this.get('rule');
+    var process = this.get('process');
+    var field = process.findFieldByName(rule.get("settings.field.name"));
+    var message = rule.get("settings.message");
 
-      ![Custom fields](/images/custom-rule-category.jpg)
+    if(field) {
+      process.setField(field, message);
+    }
+  }
+}
+```
+
+Here, the `execute` function is the core logic that runs whenever the rule is triggered in a workflow. It retrieves the configured field and message, then updates that field’s value. This logic is concise, relying on standard JavaScript patterns and Kianda’s built-in APIs to interact with process data.
+
+## Managing Your Custom Rule Widgets
+
+After creating and saving your custom rule widget:
+
+- **Edit or Delete**: From the Developer resources page, you can edit the widget’s UI or code at any time. If a widget is no longer needed, you can delete it.
+- **Version History**: Restore older versions of your widget if necessary, ensuring you can roll back changes without losing previous work.
+- **Use in Designer**: Once finalized, your custom rule widget appears under **Rules** > **Custom** when adding a rule in Kianda Designer. This makes your new logic available to any process designer in your organization.
+
+   ![Custom rules category](/images/custom-rule-category.jpg)
+
+## Unlocking New Possibilities
+
+By creating your own rule widgets, you tailor Kianda’s automation capabilities to match your exact needs. Combine your JavaScript skills, CSS styling, and open web development experience with Kianda’s low-code environment to build a powerful library of custom logic. Over time, you’ll develop a suite of custom rules that streamline workflows, enforce business policies, and integrate with other systems—all while leveraging familiar standards and straightforward developer tools.
+
+---
+
+Embrace Kianda’s open, flexible architecture to quickly deliver tailored business process automation. If you have any questions or need further guidance, explore the platform’s documentation or inspect existing widgets with the Ember inspector. With Kianda, experienced web developers can easily extend the platform’s rule system, enabling dynamic and evolving business processes with minimal friction.
 

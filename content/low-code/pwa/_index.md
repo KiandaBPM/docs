@@ -1,97 +1,113 @@
 ---
-title: "Kianda is a Progressive Web Application (PWA)"
+title: "Kianda as a Progressive Web Application (PWA)"
 linkTitle: "PWA"
 weight: 7
 typora-root-url: ..\..\..\static
 ---
 
-Kianda is a **Progressive web application**. PWA's are the next generally the recommended way for deploying mobile applications for enterprise use. They do not require publishing to app stores but provide all the advantages of native mobile applications like push notifications and offline availability. 
+## What is a PWA?
 
-The Kianda platform is a progressive web application, you can access your businesses' Kianda workspace as if it were a native mobile application. 
+A **Progressive Web Application (PWA)** is a web-based application that delivers a native app-like experience on any device—mobile, tablet, or desktop—without requiring an app store download. PWAs leverage modern web technologies to offer features such as offline availability, push notifications, and fast load times, all while maintaining the convenience and accessibility of a standard website.
 
-Instead of having to download an application through your device's native application store, the PWA can be formatted and installed on your device so that you can easily access the website via a URL shortcut. This means with Kianda you get a digital experience that is native-like while maintaining online web benefits. When you have a Kianda subscription, you gain the ability to access your workspace via a PWA. Seen below is the accessing of the Kianda platform via a PWA on an android device.
+By running Kianda as a PWA, you gain a flexible, secure, and user-friendly solution for enterprise mobility without the overhead of traditional mobile app distribution. Accessing Kianda through a PWA feels like using a native app, but with the continuous updates and centralized maintenance of a cloud-based web application.
 
+## Why Choose a PWA for Enterprise Applications?
 
+- **No App Store Submission:**  
+  Distribute and update your enterprise application directly. Users can “install” Kianda from their browser without going through an app store.
+  
+- **Offline Capability:**  
+  Work seamlessly—even without network access. Tasks, forms, and process instances can be completed offline and automatically synced when connectivity returns.
 
-![PWA Gif](/videos/gifs/common/pwav2-gif-smaller.gif)
+- **Fast and Responsive:**  
+  Thanks to caching and efficient resource handling, PWAs load quickly. Users benefit from smoother interactions and better performance on all devices.
 
-## Benefits
+- **Engaging User Experience:**  
+  Receive timely push notifications and view content in a user-friendly interface that adapts to any screen size. Add your brand’s icon and color scheme for a polished, consistent experience.
 
-There are several benefits of using a PWA app when comparing to a web app or even a native only app.
+- **Enhanced Security:**  
+  PWAs use secure HTTPS connections, leveraging browser-level security features like SSL encryption to protect data in transit.
 
-### Offline Use
+## Key Benefits of Using Kianda as a PWA
 
-Apps keep working with or without network access, allowing for **offline availability** of resources. Even when your users are going through a tunnel or in a lift, changes are automatically queued offline and then **synchronised** when connectivity is restored. This can be extremely useful when completing process instances in remote locations, for example filling out an inspection form in an area with no internet coverage.
+### Offline Use  
+If users are in areas with limited or no connectivity—such as remote worksites or underground facilities—the PWA ensures they can still fill out forms, submit inspections, or log tasks. Changes made offline sync automatically when the device reconnects, eliminating data loss and downtime.
 
-### Fast Performance
+### Improved Performance  
+PWAs cache essential resources locally, reducing load times and improving reliability. Users enjoy instant access to Kianda processes and forms, contributing to better productivity and user satisfaction.
 
-The app loads quickly thanks to having it installed locally on your device. This provides you with an increased **ease of access** experience as you are not required to download the application via your device's native application store. Progressive web apps are faster because of the way the underlying technology **caches** and serves text, stylesheets, images and other content on the websites. As a result user experience, consistency and conversion rate increase.
+### Easy Installation and Maintenance  
+Installing Kianda as a PWA is as simple as adding it to your home screen. Since updates happen behind the scenes over the web, there’s no need for users to download updates manually. Your IT team can roll out new features or fixes instantly, ensuring everyone is always on the latest version.
 
-### Engaging
+### Brand Consistency and Engagement  
+Customize the PWA’s splash screen, icons, and theme colors to match your company’s identity. With push notifications enabled, you can engage your workforce, sending timely updates or alerts that improve communication and responsiveness.
 
-When installing on your home screen with your brand icons, users receive **timely push notifications** that help them stay engaged. If you would prefer to not receive notifications, you can disable them and relevant updates will be executed in the background silently.
+### Cross-Platform and Responsive  
+Kianda’s interface adapts to various screen sizes and devices. Whether users access it from a smartphone, tablet, or desktop browser, they enjoy a consistent, intuitive experience. This adaptability also reduces development costs and complexity.
 
-### Secure
+## How to Install the Kianda PWA
 
-PWAs make use of **HTTPS requests** to transfer data, which minimises potential security threats. As these applications access your Kianda workspace through your chosen web browser, PWAs utilise the added security features of these web browsers such as **SSL encryption**. 
+### General Requirements  
+- Ensure you have the latest version of your device’s operating system.
+- Obtain your unique Kianda workspace URL, typically `https://<businessName>.kianda.com`.
 
-### Responsive
+### Android Installation
 
-The Kianda platform is designed to be responsive on a myriad of mobile devices which reduces any future developmental costs. PWAs employ the **adaptive** nature of HTML, CSS and JavaScript so that your Kianda workspace will consistently maintain a neat display of features.
+1. **Navigate to the Kianda Workspace:**  
+   Open your preferred browser (e.g., Chrome) and go to `https://<businessName>.kianda.com`.
 
-
-
-## Installing your PWA on a mobile
-
-There are a few options to install your Kianda PWA workspace into mobile devices. The quickest is to let your users manually use the option **Add to Home screen** in their mobile devices.
-
-**Note:**  Please ensure you have the latest version of operating system installed on your device to ensure full functionality.
-
-### Android
-
-The primary method for android users to install the PWA onto their device is by:
-
-1. Navigate to ***https://&lt;businessName&gt;.kianda.com*** via your chosen web browser application.
-
-2. On the platform login screen, you will be prompted to install the PWA by clicking on the **Add *[Business Name]*** **to Home screen**. In the prompt box that appears, click on **Install**.
+2. **Prompt to Add to Home Screen:**  
+   On Android devices, you may be automatically prompted to add Kianda to your home screen. Tap **Add [Business Name] to Home screen**, then confirm by tapping **Install**.
 
    ![Android PWA Add to Home screen](/images/pwa-android1.jpg)
 
-3. Following this, you will receive an on screen notification stating that the PWA was **Added to Home screen.** A shortcut icon with your brand image will also show amongst the device's installed applications.
+3. **Confirmation and Access:**  
+   Once installed, a notification confirms the addition. An app-like icon with your brand’s image appears among your installed applications. Tapping the icon opens a loading screen with your chosen branding, then prompts for login credentials.
 
    ![PWA android notification](/images/pwa-android2.jpg)
-
-4. Once you click on the PWA icon to access your Kianda workspace, you will be presented with your custom loading screen with your chosen brand image, name and theme colour. Shortly afterwards, you will be prompted to login to your account which will grant you access to the workspace.
-
    ![PWA android access](/images/pwa-android3.jpg)
 
+**Manual Installation (Android)**  
+If the automatic prompt doesn’t appear, follow these steps:  
+- Navigate to `https://<businessName>.kianda.com` in your browser.  
+- Tap the menu icon ![android-nav](/images/android-nav.png) and select **Add to Home screen**.  
+- Confirm by tapping **Add**.
 
+### iOS Installation
 
-Optionally users can manually install it by following the steps:
-
-1. Navigate to ***https://&lt;businessName&gt;.kianda.com*** via your chosen web browser application.
-
-2. Click ![1567866702202](/images/android-nav.png) then tap on **Add to Home screen**.
-
-3. On the confirm dialog tap **Add**.
-
-   
-
-### iOS
-
-iOS users are not yet automatically prompted to install PWA's but it is something that can also very quickly be done by iOS users.
-
-1. Navigate to ***https://&lt;businessName&gt;.kianda.com*** via your chosen web browser application.
+1. **Open Kianda in Safari:**  
+   Navigate to `https://<businessName>.kianda.com` using Safari on your iPhone or iPad.
 
    ![iOS PWA Navigate to business domain](/images/pwa-ios1.jpg)
 
-2. Tap the action button ![1567867653481](/images/ios-action.png)  then tap **Add to Home screen**.
+2. **Add to Home Screen:**  
+   Tap the Share/Action button ![ios-action](/images/ios-action.png), then select **Add to Home Screen**.
 
    ![iOS PWA Add to Home screen](/images/pwa-ios2.jpg)
 
-3. On the Add to Home Screen, tap **Add**. Once you click on the PWA icon to access your Kianda workspace, you will be presented with your custom loading screen with your chosen brand image, name and theme colour. Shortly afterwards, you will be prompted to login to your account which will grant you access to the workspace.
+3. **Confirm Installation:**  
+   Tap **Add**. The Kianda icon now appears on your home screen. Launching it opens your branded splash screen and then the login prompt. After logging in, you can access your processes as you would on any native app.
 
    ![PWA iOS logging in using app](/images/pwa-ios3.jpg)
+
+## Tips and Best Practices
+
+- **Encourage Users to Install the PWA:**  
+  Provide instructions or internal communications explaining how easy it is to install Kianda as a PWA, ensuring widespread adoption.
+
+- **Manage Push Notifications:**  
+  If your organization uses push notifications, remind users that they can disable them if desired. For users who opt-in, timely and relevant notifications can improve engagement and responsiveness.
+
+- **Regular Updates:**  
+  Keep refining and updating your Kianda processes. Since PWAs update automatically, users always have access to the latest forms and features without manual intervention.
+
+- **Offline Testing:**  
+  Periodically test offline scenarios to ensure forms and tasks behave as expected without connectivity. This helps maintain user trust and productivity.
+
+---
+
+**In Summary:**  
+Turning Kianda into a Progressive Web Application provides a smooth, offline-capable, and engaging experience that feels just like a native mobile app—without the overhead of app store submissions or complex installations. By following the steps above and leveraging Kianda’s responsive, secure design, you can deliver a seamless, modern, and enterprise-ready application experience to your users.
 
 
 
