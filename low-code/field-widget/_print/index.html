@@ -16,15 +16,15 @@
 <link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
-<title>Field widget development | Kianda low-code platform for business process automation</title><meta name=description content="Kianda offers a range of predefined field (control) widgets to help you build forms and processes quickly. These include 16 built-in controls across …">
+<title>Field widget development | Kianda low-code platform for business process automation</title><meta name=description content="Build and customize Kianda field widgets with open web tech: CSS, JS, Handlebars">
 <meta property="og:title" content="Field widget development">
-<meta property="og:description" content>
+<meta property="og:description" content="Build and customize Kianda field widgets with open web tech: CSS, JS, Handlebars">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://docs.kianda.com/low-code/field-widget/">
 <meta itemprop=name content="Field widget development">
-<meta itemprop=description content><meta name=twitter:card content="summary">
+<meta itemprop=description content="Build and customize Kianda field widgets with open web tech: CSS, JS, Handlebars"><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Field widget development">
-<meta name=twitter:description content>
+<meta name=twitter:description content="Build and customize Kianda field widgets with open web tech: CSS, JS, Handlebars">
 <link rel=preload href=/scss/main.min.216ba436abab1abc7b86a0c734ab1d0f5857261e34a7a8727b80bd7728953357.css as=style>
 <link href=/scss/main.min.216ba436abab1abc7b86a0c734ab1d0f5857261e34a7a8727b80bd7728953357.css rel=stylesheet integrity>
 <script src=https://code.jquery.com/jquery-3.5.1.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
@@ -43,7 +43,7 @@
 <a class="nav-link active" href=/><span class=active>Documentation</span></a>
 </li><li class="nav-item mr-4 mb-2 mb-lg-0">
 <a class=nav-link href="https://portal.kianda.com/public/signup?type=free-developer-account" target=_blank><span>Developer Sign-up</span></a>
-</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.134c3f426208b010932603bc32dd7738.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.867ee5140edee11c04633b8425a1bd88.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 </div></nav></header><div class="container-fluid td-outer">
 <div class=td-main>
 <div class="row flex-xl-nowrap">
@@ -55,7 +55,7 @@ This is the multi-page printable view of this section.
 <a href=# onclick="return print(),!1">Click here to print</a>.
 </p><p>
 <a href=/low-code/field-widget/>Return to the regular view of this page</a>.
-</p></div><h1 class=title>Field widget development</h1><ul>
+</p></div><h1 class=title>Field widget development</h1><div class=lead>Build and customize Kianda field widgets with open web tech: CSS, JS, Handlebars</div><ul>
 </ul><div class=content>
 <p>Kianda offers a range of predefined field (control) widgets to help you build forms and processes quickly. These include <strong>16 built-in controls</strong> across three categories: <a href=/platform/controls/input/>Input</a>, <a href=/platform/controls/layout/>Layout</a>, and <a href=/platform/controls/actions/>Actions</a>. Developers with the appropriate permissions—<strong>Administrator</strong> or <strong>Developer</strong>—can also create <strong>custom field widgets</strong>. These custom widgets appear in the <strong>Custom controls</strong> category within Kianda Designer, ready to be added to any form or process.</p><p>Because Kianda is built on open technologies like <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Handlebars</strong>, creating custom fields feels familiar to experienced web developers. Rather than dealing with closed, proprietary components, you’ll use the same web standards you already know. The result is a flexible, low-code approach that lets you craft the exact user experiences your business workflows require.</p><h2 id=how-custom-controls-work>How Custom Controls Work</h2><p>Custom controls are created using Kianda’s <strong>Developer</strong> interface. Each widget you create has two main parts:</p><ol>
 <li><strong>Widget UI (Handlebars template)</strong>: Defines the markup, event handlers, and expressions.</li><li><strong>Widget Code (JavaScript)</strong>: Implements the widget’s logic and functions.</li></ol><p>This approach lets you cleanly separate your presentation and logic layers, making it easy to iterate, maintain, and reuse code.</p><h3 id=handlebars-syntax>Handlebars Syntax</h3><p>Kianda leverages <strong>Ember.js</strong>, an open-source JavaScript framework, which uses the <strong>Handlebars templating library</strong> for its UI. Handlebars is a simple way to create dynamic templates, using curly brace syntax (e.g., <code>{{...}}</code>) to bind data or call actions.</p><p>For example, consider the snippet below. It uses a <code>{{field-picker}}</code> component inside a <code>{{#if (eq displayMode "settings")}}</code> block. The <code>field-picker</code> lets users select which field in the form should be tied to a particular widget setting.</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-handlebars data-lang=handlebars><span style=display:flex><span><span style=color:#8f5902;font-style:italic>{{</span><span style=color:#204a87;font-weight:700>#if</span> <span style=color:#a40000>(</span><span style=color:#000>eq</span> <span style=color:#000>displayMode</span> <span style=color:#4e9a06>&#34;settings&#34;</span><span style=color:#a40000>)</span><span style=color:#8f5902;font-style:italic>}}</span><span style=color:#000>

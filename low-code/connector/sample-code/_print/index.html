@@ -3,8 +3,8 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=generator content="Hugo 0.93.3">
-<link rel=canonical type=text/html href=https://docs.kianda.com/low-code/custom-connector/sample-code/>
-<link rel=alternate type=application/rss+xml href=https://docs.kianda.com/low-code/custom-connector/sample-code/index.xml>
+<link rel=canonical type=text/html href=https://docs.kianda.com/low-code/connector/sample-code/>
+<link rel=alternate type=application/rss+xml href=https://docs.kianda.com/low-code/connector/sample-code/index.xml>
 <meta name=robots content="noindex, nofollow">
 <link rel="shortcut icon" href=/favicons/favicon.ico>
 <link rel=apple-touch-icon href=/favicons/apple-touch-icon-180x180.png sizes=180x180>
@@ -21,7 +21,7 @@ The following sections provide some sample code to help you get started in creat
 <meta property="og:title" content="Sample code for a microservice">
 <meta property="og:description" content>
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://docs.kianda.com/low-code/custom-connector/sample-code/">
+<meta property="og:url" content="https://docs.kianda.com/low-code/connector/sample-code/">
 <meta itemprop=name content="Sample code for a microservice">
 <meta itemprop=description content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Sample code for a microservice">
@@ -44,7 +44,7 @@ The following sections provide some sample code to help you get started in creat
 <a class="nav-link active" href=/><span class=active>Documentation</span></a>
 </li><li class="nav-item mr-4 mb-2 mb-lg-0">
 <a class=nav-link href="https://portal.kianda.com/public/signup?type=free-developer-account" target=_blank><span>Developer Sign-up</span></a>
-</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.134c3f426208b010932603bc32dd7738.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.867ee5140edee11c04633b8425a1bd88.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 </div></nav></header><div class="container-fluid td-outer">
 <div class=td-main>
 <div class="row flex-xl-nowrap">
@@ -55,7 +55,7 @@ The following sections provide some sample code to help you get started in creat
 This is the multi-page printable view of this section.
 <a href=# onclick="return print(),!1">Click here to print</a>.
 </p><p>
-<a href=/low-code/custom-connector/sample-code/>Return to the regular view of this page</a>.
+<a href=/low-code/connector/sample-code/>Return to the regular view of this page</a>.
 </p></div><h1 class=title>Sample code for a microservice</h1><ul>
 </ul><div class=content>
 <h2 id=sample-code>Sample code</h2><p>The following sections provide some sample code to help you get started in creating <strong>Test</strong>, <strong>Metadata</strong> and <strong>Query</strong> functions for your Microservice so that you can test and deploy a Custom Connector in Kianda, allowing you to connect forms and use data from any data source.</p><h3 id=encryption-and-decryption-sample-code>Encryption and Decryption sample code</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-C# data-lang=C#><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>static</span> <span style=color:#204a87;font-weight:700>string</span> <span style=color:#000>HashWithHMACSHA256</span><span style=color:#000;font-weight:700>(</span><span style=color:#204a87;font-weight:700>string</span> <span style=color:#000>key</span><span style=color:#000;font-weight:700>,</span> <span style=color:#204a87;font-weight:700>string</span> <span style=color:#204a87;font-weight:700>value</span><span style=color:#000;font-weight:700>)</span>
@@ -134,7 +134,7 @@ This is the multi-page printable view of this section.
 </span></span><span style=display:flex><span>        <span style=color:#000;font-weight:700>{</span>
 </span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>return</span> <span style=color:#4e9a06>&#34;{secret key generated from Kianda}&#34;</span><span style=color:#000;font-weight:700>;</span> <span style=color:#8f5902;font-style:italic>//REPLACE ME</span>
 </span></span><span style=display:flex><span>        <span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div><p>To return to Microservice development, click on the <a href=/low-code/custom-connector/create-microservice>Microservice</a> link.</p><h3 id=test-sample-code>Test sample code</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c# data-lang=c#><span style=display:flex><span><span style=color:#c4a000>        [FunctionName(&#34;connectorTest&#34;)]</span>
+</span></span></code></pre></div><p>To return to Microservice development, click on the <a href=/low-code/connector/create-microservice>Microservice</a> link.</p><h3 id=test-sample-code>Test sample code</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c# data-lang=c#><span style=display:flex><span><span style=color:#c4a000>        [FunctionName(&#34;connectorTest&#34;)]</span>
 </span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>static</span> <span style=color:#204a87;font-weight:700>async</span> <span style=color:#000>Task</span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#000>CustomConnectorResponse</span><span style=color:#000;font-weight:700>&gt;</span> <span style=color:#000>connectorTest</span><span style=color:#000;font-weight:700>(</span>
 </span></span><span style=display:flex><span><span style=color:#c4a000>            [HttpTrigger(AuthorizationLevel.Function, &#34;post&#34;, Route = null)]</span><span style=color:#000;font-weight:700>[</span><span style=color:#000>FromForm</span><span style=color:#000;font-weight:700>]</span> <span style=color:#000>HttpRequest</span> <span style=color:#000>req</span><span style=color:#000;font-weight:700>,</span>
 </span></span><span style=display:flex><span>            <span style=color:#000>ILogger</span> <span style=color:#000>log</span><span style=color:#000;font-weight:700>)</span>
@@ -179,7 +179,7 @@ This is the multi-page printable view of this section.
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>return</span> <span style=color:#000>response</span><span style=color:#000;font-weight:700>;</span>
 </span></span><span style=display:flex><span>        <span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div><p>To return to Microservice development, click on the <a href=/low-code/custom-connector/create-microservice>Microservice</a> link.</p><h3 id=metadata-sample-code>Metadata sample code</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c# data-lang=c#><span style=display:flex><span><span style=color:#c4a000>         [FunctionName(&#34;connectorMetadata&#34;)]</span>
+</span></span></code></pre></div><p>To return to Microservice development, click on the <a href=/low-code/connector/create-microservice>Microservice</a> link.</p><h3 id=metadata-sample-code>Metadata sample code</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c# data-lang=c#><span style=display:flex><span><span style=color:#c4a000>         [FunctionName(&#34;connectorMetadata&#34;)]</span>
 </span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>static</span> <span style=color:#204a87;font-weight:700>async</span> <span style=color:#000>Task</span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#000>CustomConnectorResponse</span><span style=color:#000;font-weight:700>&gt;</span> <span style=color:#000>connectorTree</span><span style=color:#000;font-weight:700>(</span><span style=color:#8f5902;font-style:italic>//metadata</span>
 </span></span><span style=display:flex><span><span style=color:#c4a000>            [HttpTrigger(AuthorizationLevel.Function, &#34;post&#34;, Route = null)]</span> <span style=color:#000>HttpRequest</span> <span style=color:#000>req</span><span style=color:#000;font-weight:700>,</span>
 </span></span><span style=display:flex><span>            <span style=color:#000>ILogger</span> <span style=color:#000>log</span><span style=color:#000;font-weight:700>)</span>
@@ -255,7 +255,7 @@ This is the multi-page printable view of this section.
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>            <span style=color:#204a87;font-weight:700>return</span> <span style=color:#000>result</span><span style=color:#000;font-weight:700>;</span>
 </span></span><span style=display:flex><span>        <span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div><p>To return to Microservice development, click on the <a href=/low-code/custom-connector/create-microservice>Microservice</a> link.</p><h3 id=query-sample-code>Query sample code</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-C# data-lang=C#><span style=display:flex><span><span style=color:#c4a000>    [FunctionName(&#34;connectorQuery&#34;)]</span>
+</span></span></code></pre></div><p>To return to Microservice development, click on the <a href=/low-code/connector/create-microservice>Microservice</a> link.</p><h3 id=query-sample-code>Query sample code</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-C# data-lang=C#><span style=display:flex><span><span style=color:#c4a000>    [FunctionName(&#34;connectorQuery&#34;)]</span>
 </span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>public</span> <span style=color:#204a87;font-weight:700>static</span> <span style=color:#204a87;font-weight:700>async</span> <span style=color:#000>Task</span><span style=color:#000;font-weight:700>&lt;</span><span style=color:#000>CustomConnectorResponse</span><span style=color:#000;font-weight:700>&gt;</span> <span style=color:#000>connectorQuery</span><span style=color:#000;font-weight:700>(</span>
 </span></span><span style=display:flex><span><span style=color:#c4a000>        [HttpTrigger(AuthorizationLevel.Function, &#34;post&#34;, Route = null)]</span> <span style=color:#000>HttpRequest</span> <span style=color:#000>req</span><span style=color:#000;font-weight:700>,</span>
 </span></span><span style=display:flex><span>        <span style=color:#000>ILogger</span> <span style=color:#000>log</span><span style=color:#000;font-weight:700>)</span>
@@ -332,7 +332,7 @@ This is the multi-page printable view of this section.
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>return</span> <span style=color:#000>result</span><span style=color:#000;font-weight:700>;</span>
 </span></span><span style=display:flex><span>    <span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div><p>To return to Microservice development, click on the <a href=/low-code/custom-connector/create-microservice>Microservice</a> link.</p><h2 id=whats-next-idea-iconimages18png>What&rsquo;s next <img src=/images/18.png alt="Idea icon"></h2><p>To learn how to create a custom connector view the <a href=/low-code/custom-connector/steps-to-create/>steps to create a custom connector</a>.</p></div></div></main></div></div><footer class="bg-dark py-5 row d-print-none">
+</span></span></code></pre></div><p>To return to Microservice development, click on the <a href=/low-code/connector/create-microservice>Microservice</a> link.</p><h2 id=whats-next-idea-iconimages18png>What&rsquo;s next <img src=/images/18.png alt="Idea icon"></h2><p>To learn how to create a custom connector view the <a href=/low-code/connector/steps-to-create/>steps to create a custom connector</a>.</p></div></div></main></div></div><footer class="bg-dark py-5 row d-print-none">
 <div class="container-fluid mx-sm-5">
 <div class=row>
 <div class="col-6 col-sm-4 text-xs-center order-sm-2">

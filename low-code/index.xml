@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – Building Apps with Kianda’s Low-Code Platform</title><link>https://docs.kianda.com/low-code/</link><description>Recent content in Building Apps with Kianda’s Low-Code Platform on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/low-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Low-Code: Microservice Creation</title><link>https://docs.kianda.com/low-code/custom-connector/create-microservice/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/low-code/custom-connector/create-microservice/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – Building Apps with Kianda’s Low-Code Platform</title><link>https://docs.kianda.com/low-code/</link><description>Recent content in Building Apps with Kianda’s Low-Code Platform on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/low-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Low-Code: Microservice Creation</title><link>https://docs.kianda.com/low-code/connector/create-microservice/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/low-code/connector/create-microservice/</guid><description>
 &lt;h2 id="what-is-a-microservice">What is a Microservice&lt;/h2>
 &lt;p>A microservice is a self contained independent service, usually hosted in the cloud, which can integrate with applications through REST APIs. Microservices allow developers to focus on developing a service without worrying about dependencies.&lt;/p>
 &lt;p>A microservice can be developed using almost any programming language.&lt;/p>
@@ -43,10 +43,10 @@
 &lt;p>The steps involved in creating the test function are as follows:&lt;/p>
 &lt;ol>
 &lt;li>
-&lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details and &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-code/#test-sample-code">Test sample code&lt;/a>.&lt;/p>
+&lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details and &lt;a href="https://docs.kianda.com/low-code/connector/sample-code/#test-sample-code">Test sample code&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function, see &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
+&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function, see &lt;a href="https://docs.kianda.com/low-code/connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Authorize the user and retrieve bearer token for subsequent requests and save the token to the settings property bag&lt;/strong>.&lt;/p>
@@ -58,10 +58,10 @@
 &lt;p>Create &lt;a href="#Custom-Connector-Response">custom connector response&lt;/a> and include success message to indicate test succeeded/failed.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
+&lt;p>Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see &lt;a href="https://docs.kianda.com/low-code/connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>To help you get started, see &lt;strong>sample code for the Test function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-code/#test-sample-code">Test sample code&lt;/a>.&lt;/p>
+&lt;p>To help you get started, see &lt;strong>sample code for the Test function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/low-code/connector/sample-code/#test-sample-code">Test sample code&lt;/a>.&lt;/p>
 &lt;h3 id="metadata">Metadata&lt;/h3>
 &lt;p>The Metadata function provides the list of available endpoints in the microservice and is called when selecting the datasource in a Kianda process, for example use a particular datasource to populate a &lt;a href="https://docs.kianda.com/platform/controls/input/list/">List field&lt;/a> in a Kianda form.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/tree-function-output.jpg" alt="Connector tree">&lt;/p>
@@ -71,19 +71,19 @@
 &lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
+&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function see &lt;a href="https://docs.kianda.com/low-code/connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Create a JSON tree structure similar to the one found at &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-schemas/#tree-schema">Tree schema&lt;/a>.&lt;/p>
+&lt;p>Create a JSON tree structure similar to the one found at &lt;a href="https://docs.kianda.com/low-code/connector/sample-schemas/#tree-schema">Tree schema&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Create &lt;a href="#Custom-Connector-Response">custom connector response&lt;/a> and include success message to indicate success/failure.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Create a signature string using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
+&lt;p>Create a signature string using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see &lt;a href="https://docs.kianda.com/low-code/connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>To help you get started, see &lt;strong>sample code for the Metadata function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-code/#metadata-sample-code">Metadata sample code&lt;/a>.&lt;/p>
+&lt;p>To help you get started, see &lt;strong>sample code for the Metadata function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/low-code/connector/sample-code/#metadata-sample-code">Metadata sample code&lt;/a>.&lt;/p>
 &lt;h3 id="query">Query&lt;/h3>
 &lt;p>The Query function is where the execution of the datasource methods occurs, the metadata function provides the list of available methods.&lt;/p>
 &lt;p>The steps involved in creating the query function are as follows:&lt;/p>
@@ -92,7 +92,7 @@
 &lt;p>Deserialize the data in the &lt;a href="#Custom-Connector-Request">custom connector request&lt;/a> - see schema for details.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function - see &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
+&lt;p>Decrypt the encrypted settings property bag using the shared secret key and the Decrypt function - see &lt;a href="https://docs.kianda.com/low-code/connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Get the &lt;a href="#request-query-object">query object&lt;/a> from the request - see schema for details, and call the function related to the query in the datasource .&lt;/p>
@@ -104,10 +104,10 @@
 &lt;p>&lt;strong>Create the &lt;a href="#response-queryresult">query result object&lt;/a> - see schema for details, and include in the custom connector response&lt;/strong>.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
+&lt;p>Sign the response using the EncryptdatawithHMACSHA256 method and include in the custom connector response, see &lt;a href="https://docs.kianda.com/low-code/connector/sample-code/#encryption-and-decryption-sample-code">Encryption/Decryption sample code&lt;/a> for an example.&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>To help you get started, see &lt;strong>sample code for the Query function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-code/#query-sample-code">Query sample code&lt;/a>.&lt;/p>
+&lt;p>To help you get started, see &lt;strong>sample code for the Query function&lt;/strong> by going to &lt;a href="https://docs.kianda.com/low-code/connector/sample-code/#query-sample-code">Query sample code&lt;/a>.&lt;/p>
 &lt;h2 id="security">Security&lt;/h2>
 &lt;h3 id="aes256">AES256&lt;/h3>
 &lt;p>&lt;strong>Advanced Encryption Standard&lt;/strong> (AES) is the technique used to encrypt sensitive data. This is a symmetric encryption technique, which means the same key is used to encrypt and decrypt the data, it is also a 2-way encryption algorithm.&lt;/p>
@@ -167,9 +167,9 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="retrieving-urls-for-custom-connector-settings">Retrieving URLs for Custom Connector settings&lt;/h3>
 &lt;p>When you have created the Test, Metadata and Query functions and your microservice is running, you should receive an output similar to the following shown using Azure functions:&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/azure-function-urls.jpg" alt="Azure function URLs">&lt;/p>
-&lt;p>These URLs will be used in the &lt;a href="https://docs.kianda.com/low-code/custom-connector/steps-to-create/#connector-settings-tab">&lt;strong>Connector Settings tab&lt;/strong>&lt;/a> when creating the Custom Connector.&lt;/p>
+&lt;p>These URLs will be used in the &lt;a href="https://docs.kianda.com/low-code/connector/steps-to-create/#connector-settings-tab">&lt;strong>Connector Settings tab&lt;/strong>&lt;/a> when creating the Custom Connector.&lt;/p>
 &lt;h2 id="whats-next-idea-iconimages18png">What&amp;rsquo;s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h2>
-&lt;p>Once your Microservice is deployed, you are ready to start creating a custom connector go to &lt;a href="https://docs.kianda.com/low-code/custom-connector/steps-to-create/">steps to create a custom connector&lt;/a>.&lt;/p></description></item><item><title>Low-Code: Sample schemas</title><link>https://docs.kianda.com/low-code/custom-connector/sample-schemas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/low-code/custom-connector/sample-schemas/</guid><description>
+&lt;p>Once your Microservice is deployed, you are ready to start creating a custom connector go to &lt;a href="https://docs.kianda.com/low-code/connector/steps-to-create/">steps to create a custom connector&lt;/a>.&lt;/p></description></item><item><title>Low-Code: Sample schemas</title><link>https://docs.kianda.com/low-code/connector/sample-schemas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/low-code/connector/sample-schemas/</guid><description>
 &lt;h1 id="introduction">Introduction&lt;/h1>
 &lt;p>This page features sample schemas for parameters used in the &lt;a href="https://docs.kianda.com/low-code/client-connector/how-to-create/#query-code">Query Code&lt;/a> tab when creating a customised data connector.&lt;/p>
 &lt;p>Each section below features exemplar schemas and parameters to help you when creating code for your hooks in the &lt;strong>Query Code&lt;/strong> tab.&lt;/p>
@@ -228,7 +228,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To return to Microservice development, click on the &lt;a href="https://docs.kianda.com/low-code/custom-connector/create-microservice">Microservice&lt;/a> link.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To return to Microservice development, click on the &lt;a href="https://docs.kianda.com/low-code/connector/create-microservice">Microservice&lt;/a> link.&lt;/p>
 &lt;h3 id="datasource-schema">Datasource schema&lt;/h3>
 &lt;p>&lt;strong>Note&lt;/strong>: The same structure below can be used used in both &lt;strong>Query hooks&lt;/strong> and &lt;strong>Query success hooks&lt;/strong>, although data will vary slightly.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
@@ -486,9 +486,9 @@
 &lt;p>To create other widgets go to &lt;a href="https://docs.kianda.com/low-code/field-widget/">Custom field widget&lt;/a>, &lt;a href="https://docs.kianda.com/low-code/dashboard-widget/">Custom dashboard widget&lt;/a> and &lt;a href="https://docs.kianda.com/low-code/rule-widget/">Custom rule widget&lt;/a> pages to find out more.&lt;/p>
 &lt;h3 id="to-return-to-the-previous-pages-click-on-the-links-below--idea-iconimages10png">&lt;strong>To return to the previous pages click on the links below&lt;/strong> &lt;img src="https://docs.kianda.com/images/10.png" alt="Idea icon">&lt;/h3>
 &lt;ul>
-&lt;li>&lt;a href="https://docs.kianda.com/low-code/custom-connector/steps-to-create">How to create a client connector&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://docs.kianda.com/low-code/custom-connector/create-microservice/">Create a microservice&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Low-Code: Steps to create a custom connector</title><link>https://docs.kianda.com/low-code/custom-connector/steps-to-create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/low-code/custom-connector/steps-to-create/</guid><description>
+&lt;li>&lt;a href="https://docs.kianda.com/low-code/connector/steps-to-create">How to create a client connector&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/low-code/connector/create-microservice/">Create a microservice&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Low-Code: Steps to create a custom connector</title><link>https://docs.kianda.com/low-code/connector/steps-to-create/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/low-code/connector/steps-to-create/</guid><description>
 &lt;h1 id="introduction">Introduction&lt;/h1>
 &lt;p>This section will detail how to create a new &lt;strong>Custom Connector&lt;/strong> which is a customised data connector for your organisation.&lt;/p>
 &lt;p>&lt;strong>Note:&lt;/strong> You must be have an &lt;strong>Administrator&lt;/strong> or &lt;strong>Developer&lt;/strong> role to create a custom connector.&lt;/p>
@@ -520,7 +520,7 @@
 &lt;p>Make sure to &lt;strong>copy the secret key&lt;/strong> to a safe location where you will find it as it will be needed later. You can do this by a) clicking on &lt;strong>Download TXT&lt;/strong> which will result in the Secret Key being downloaded as a CSV file or b) clicking on &lt;strong>Copy Key to Clipboard&lt;/strong>, then click on &lt;strong>OK&lt;/strong> when done.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Ensure that this secret key is added to your Microservice code, see &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code">Encryption and Decryption sample code&lt;/a>, where you need to replace the string in the &lt;code>GetSecretKey&lt;/code> function as shown below:&lt;/p>
+&lt;p>Ensure that this secret key is added to your Microservice code, see &lt;a href="https://docs.kianda.com/low-code/connector/sample-code/#encryption-and-decryption-sample-code">Encryption and Decryption sample code&lt;/a>, where you need to replace the string in the &lt;code>GetSecretKey&lt;/code> function as shown below:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c#" data-lang="c#">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">private&lt;/span> &lt;span style="color:#204a87;font-weight:bold">static&lt;/span> &lt;span style="color:#204a87;font-weight:bold">string&lt;/span> &lt;span style="color:#000">GetSecretKey&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">return&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;{secret key generated from Kianda}&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span> &lt;span style="color:#8f5902;font-style:italic">//REPLACE ME&lt;/span>
@@ -535,7 +535,7 @@
 &lt;h3 id="connector-settings-tab">Connector Settings tab&lt;/h3>
 &lt;p>This is where the Connector &lt;strong>Title&lt;/strong> and &lt;strong>Icon&lt;/strong> can be changed. These details will be seen in the &lt;a href="https://docs.kianda.com/platform/connectors/">Data connectors&lt;/a> function, once the customised connector is created.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/connector-settings-tab.jpg" alt="Connector Settings tab">&lt;/p>
-&lt;p>The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL&amp;rsquo;s can be populated when the microservice is created, see &lt;a href="https://docs.kianda.com/low-code/custom-connector/create-microservice/">Create a Microservice&lt;/a> link for more details.&lt;/p>
+&lt;p>The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL&amp;rsquo;s can be populated when the microservice is created, see &lt;a href="https://docs.kianda.com/low-code/connector/create-microservice/">Create a Microservice&lt;/a> link for more details.&lt;/p>
 &lt;p>For example when your Microservice is running you should receive an output similar to the following shown using Azure functions and use these URLs in the &lt;strong>Connector Settings tab&lt;/strong>.&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/azure-function-urls.jpg" alt="Azure function URLs">&lt;/p>
 &lt;p>To save details click on &lt;strong>Update&lt;/strong>, then click on &lt;strong>Close&lt;/strong> to return to the &lt;strong>Developer resources&lt;/strong> page.&lt;/p>
@@ -621,7 +621,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Other aspects to note in this sample code are the datasource settings, for example &lt;code>datasource.settings.accessToken&lt;/code> and &lt;code>datasource.settings.environment&lt;/code> denoting that you can add whatever &lt;strong>settings&lt;/strong> you want to the UI within the &lt;strong>Datasources details&lt;/strong> page using this type of code. These settings could be then used in a &lt;a href="https://docs.kianda.com/low-code/custom-connector/create-microservice/">Microservice&lt;/a> to create an action based on a chosen setting.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Other aspects to note in this sample code are the datasource settings, for example &lt;code>datasource.settings.accessToken&lt;/code> and &lt;code>datasource.settings.environment&lt;/code> denoting that you can add whatever &lt;strong>settings&lt;/strong> you want to the UI within the &lt;strong>Datasources details&lt;/strong> page using this type of code. These settings could be then used in a &lt;a href="https://docs.kianda.com/low-code/connector/create-microservice/">Microservice&lt;/a> to create an action based on a chosen setting.&lt;/p>
 &lt;h3 id="query-code">Query Code&lt;/h3>
 &lt;p>When using a data source, all data sources will have built-in &lt;strong>metadata&lt;/strong>, &lt;strong>query&lt;/strong> and &lt;strong>querySuccess&lt;/strong> functions to allow content searches, including metadata content or information about the content, such as title, author and creation date. The &lt;strong>Query code&lt;/strong> tab contains the code needed for these three functions. Default code is provided to help you get started, see below.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
@@ -739,9 +739,9 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This structure will result in the output as shown in the image below,&lt;/p>
 &lt;p>&lt;img src="https://docs.kianda.com/images/tree-function-output.png" alt="Connector tree">&lt;/p>
 &lt;h4 id="query-hook">Query Hook&lt;/h4>
-&lt;p>The &lt;strong>Query hook&lt;/strong> allows a query to the datasource to be customised. Parameters are passed into this function to allow customisation to happen. These parameters are: &lt;code>datasource&lt;/code>, &lt;code>query&lt;/code>, &lt;code>rule&lt;/code> and &lt;code>process&lt;/code>; sample schemas are available for each at the &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-schemas/">Sample schema&lt;/a> link.&lt;/p>
+&lt;p>The &lt;strong>Query hook&lt;/strong> allows a query to the datasource to be customised. Parameters are passed into this function to allow customisation to happen. These parameters are: &lt;code>datasource&lt;/code>, &lt;code>query&lt;/code>, &lt;code>rule&lt;/code> and &lt;code>process&lt;/code>; sample schemas are available for each at the &lt;a href="https://docs.kianda.com/low-code/connector/sample-schemas/">Sample schema&lt;/a> link.&lt;/p>
 &lt;p>In the sample code below, the filter is obtained by drilling into the query conditions object.
-This is just one example of how the query can be customized before being processed, which is an advantage of using custom connectors. Take a look at the &lt;a href="https://docs.kianda.com/low-code/custom-connector/sample-schemas/#query-success-hook-related-schemas">query schema&lt;/a> for more information&lt;/p>
+This is just one example of how the query can be customized before being processed, which is an advantage of using custom connectors. Take a look at the &lt;a href="https://docs.kianda.com/low-code/connector/sample-schemas/#query-success-hook-related-schemas">query schema&lt;/a> for more information&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">datasource&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">rule&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">process&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">conditions&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
