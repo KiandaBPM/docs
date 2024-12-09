@@ -1,6 +1,7 @@
 ---
 title: "Global CSS file"
 weight: 4
+description: "Customize Kianda’s look site-wide by adding global CSS to style elements and define reusable classes"
 typora-root-url: ..\..\..\static
 ---
 

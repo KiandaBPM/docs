@@ -1,6 +1,7 @@
 ---
 title: "Page (Dashboard) Widget Development"
-linkTitle: "Page widget development"
+linkTitle: "Page widget"
+description: "Learn how to build and customize Kianda page widgets with open web tech: CSS, JS, Handlebars"
 weight: 3
 typora-root-url: ..\..\..\static
 ---

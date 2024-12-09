@@ -1,5 +1,6 @@
 ---
 title: "Webhooks"
+description: "Learn how to configure webhooks to receive web callbacks from record creation"
 weight: 11
 typora-root-url: ..\..\..\static
 ---

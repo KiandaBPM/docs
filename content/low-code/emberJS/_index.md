@@ -1,6 +1,7 @@
 ---
 title: "Introduction to Ember.js in Kianda"
 linkTitle: "EmberJS"
+description: "Learn about the emberjs in Kianda"
 weight: 12
 typora-root-url: ..\..\..\static
 ---

@@ -80,7 +80,7 @@ Sample schemas for [`tree`](#tree-schema) and [`datasource`](#datasource-schema)
 }
 ```
 
-To return to Microservice development, click on the [Microservice](/low-code/custom-connector/create-microservice) link.
+To return to Microservice development, click on the [Microservice](/low-code/connector/create-microservice) link.
 
 ### Datasource schema 
 
@@ -387,6 +387,5 @@ To create other widgets go to [Custom field widget](/low-code/field-widget/), [C
 
 ### **To return to the previous pages click on the links below**  ![Idea icon](/images/10.png) 
 
-- [How to create a client connector](/low-code/custom-connector/steps-to-create)  
-- [Create a microservice](/low-code/custom-connector/create-microservice/)  
-
+- [How to create a client connector](/low-code/connector/steps-to-create)  
+- [Create a microservice](/low-code/connector/create-microservice/)  

@@ -40,7 +40,7 @@ To create a new customised connector, follow the steps below:
 
 3. Make sure to **copy the secret key** to a safe location where you will find it as it will be needed later. You can do this by a) clicking on **Download TXT** which will result in the Secret Key being downloaded as a CSV file or b) clicking on **Copy Key to Clipboard**, then click on **OK** when done. 
 
-4. Ensure that this secret key is added to your Microservice code, see [Encryption and Decryption sample code](/low-code/custom-connector/sample-code/#encryption-and-decryption-sample-code), where you need to replace the string in the `GetSecretKey` function as shown below:
+4. Ensure that this secret key is added to your Microservice code, see [Encryption and Decryption sample code](/low-code/connector/sample-code/#encryption-and-decryption-sample-code), where you need to replace the string in the `GetSecretKey` function as shown below:
 
    ```c#
     private static string GetSecretKey()
@@ -61,7 +61,7 @@ This is where the Connector **Title** and **Icon** can be changed. These details
 
 ![Connector Settings tab](/images/connector-settings-tab.jpg)
 
-The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/low-code/custom-connector/create-microservice/) link for more details.
+The URLs for metadata, test and query can be edited here too. The Metadata, Test and Query URL's can be populated when the microservice is created, see [Create a Microservice](/low-code/connector/create-microservice/) link for more details.
 
 For example when your Microservice is running you should receive an output similar to the following shown using Azure functions and use these URLs in the **Connector Settings tab**.
 
@@ -164,7 +164,7 @@ By default there is code in this tab, for example the **Authorize** button shown
 }
 ```
 
-Other aspects to note in this sample code are the datasource settings, for example `datasource.settings.accessToken` and  `datasource.settings.environment` denoting that you can add whatever **settings** you want to the UI within the **Datasources details** page using this type of code. These settings could be then used in a [Microservice](/low-code/custom-connector/create-microservice/) to create an action based on a chosen setting.
+Other aspects to note in this sample code are the datasource settings, for example `datasource.settings.accessToken` and  `datasource.settings.environment` denoting that you can add whatever **settings** you want to the UI within the **Datasources details** page using this type of code. These settings could be then used in a [Microservice](/low-code/connector/create-microservice/) to create an action based on a chosen setting.
 
 ### Query Code ###
 
@@ -307,10 +307,10 @@ This structure will result in the output as shown in the image below,
 
 #### Query Hook
 
-The **Query hook** allows a query to the datasource to be customised. Parameters are passed into this function to allow customisation to happen. These parameters are: `datasource`, `query`, `rule` and `process`; sample schemas are available for each at the [Sample schema](/low-code/custom-connector/sample-schemas/) link.
+The **Query hook** allows a query to the datasource to be customised. Parameters are passed into this function to allow customisation to happen. These parameters are: `datasource`, `query`, `rule` and `process`; sample schemas are available for each at the [Sample schema](/low-code/connector/sample-schemas/) link.
 
 In the sample code below, the filter is obtained by drilling into the query conditions object.
-This is just one example of how the query can be customized before being processed, which is an advantage of using custom connectors. Take a look at the [query schema](/low-code/custom-connector/sample-schemas/#query-success-hook-related-schemas) for more information
+This is just one example of how the query can be customized before being processed, which is an advantage of using custom connectors. Take a look at the [query schema](/low-code/connector/sample-schemas/#query-success-hook-related-schemas) for more information
 
 ```javascript
  query(datasource, query, rule, process) {

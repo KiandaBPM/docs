@@ -1,6 +1,7 @@
 ---
 title: "Global JavaScript file"
 weight: 5
+description: "Add global JavaScript for custom logic and reusable functions available across your entire Kianda workspace"
 typora-root-url: ..\..\..\static
 ---
 

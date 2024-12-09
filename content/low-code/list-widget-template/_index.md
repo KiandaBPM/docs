@@ -1,6 +1,7 @@
 ---
 title: "List widget template customisation"
 linkTitle: "List widget templating"
+description: "Learn how to customize Kianda list widget with Handlebars templates"
 weight: 6
 typora-root-url: ..\..\..\static
 ---

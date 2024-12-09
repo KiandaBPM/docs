@@ -1,6 +1,8 @@
 ---
 title: "Field widget development"
+linkTitle: "Field widget"
 weight: 1
+description: "Build and customize Kianda field widgets with open web tech: CSS, JS, Handlebars"
 typora-root-url: ..\..\..\static
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Kianda as a Progressive Web Application (PWA)"
 linkTitle: "PWA"
+description: "Learn about the benefits of PWA for enterprise mobile solutions deployment"
 weight: 7
 typora-root-url: ..\..\..\static
 ---

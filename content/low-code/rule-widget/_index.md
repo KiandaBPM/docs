@@ -1,6 +1,8 @@
 ---
 title: "Rule widget development"
+linkTitle: "Rule widget"
 weight: 2
+description: "Learn how to build and customize Kianda rule widgets with open web tech: CSS, JS, Handlebars"
 typora-root-url: ..\..\..\static
 ---
 
