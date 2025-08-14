@@ -1,6 +1,6 @@
 ---
 title: "Active Directory Connector"
-weight: 1
+weight: 18
 typora-root-url: ..\..\..\..\..\static
 description: "Kianda Active Directory Connector"
 ---

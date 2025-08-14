@@ -1,6 +1,6 @@
 ---
 title: "FTP"
-weight: 7
+weight: 8
 typora-root-url: ..\..\..\..\static
 ---
 

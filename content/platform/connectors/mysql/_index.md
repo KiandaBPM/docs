@@ -1,6 +1,6 @@
 ---
 title: "MySql"
-weight: 11
+weight: 4
 typora-root-url: ..\..\..\..\static
 ---
 
