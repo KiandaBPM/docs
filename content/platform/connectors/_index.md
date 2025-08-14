@@ -2,6 +2,7 @@
 title: "Data connectors"
 weight: 6
 typora-root-url: ..\..\..\..\static
+description: "Guides on available data connectors and their options"
 ---
 
 The **Data sources** function is found under **Administration** in the left-hand side menu, and provides an easy way to create connections to ERP, CRM and IT systems. These connections allow you to combine multiple sources of data in one place and from there Kianda processes can use and update the data to creative effective workflows. 

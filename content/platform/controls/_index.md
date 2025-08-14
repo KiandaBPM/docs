@@ -3,6 +3,7 @@ title: "Controls"
 linkTitle: "Controls"
 weight: 3
 typora-root-url: ..\..\..\static
+description: "Intro to form controls and their options"
 ---
 
 **Controls** (commonly called **fields**) are predefined field widgets that allow you to add specific elements to your forms and processes, such as lists, text boxes, buttons and tables. There are 16 types of controls (fields) you can add to a form - see the controls list below for details.

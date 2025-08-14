@@ -2,7 +2,7 @@
 title: "Rules"
 weight: 4
 typora-root-url: ..\..\..\..\static
-
+description: "Introduction to business rules"
 ---
 
 Business rules are what makes Kianda forms come alive. They represent the actual actions users intend to perform when they interact with form components. There are 60 rules you can apply to forms, see [Rules list](#rules-list).
