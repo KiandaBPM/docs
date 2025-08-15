@@ -1,0 +1,120 @@
+<!doctype html><html lang=en class=no-js>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=generator content="Hugo 0.93.3">
+<link rel=canonical type=text/html href=https://docs.kianda.com/platform/connectors/sharepoint/>
+<link rel=alternate type=application/rss+xml href=https://docs.kianda.com/platform/connectors/sharepoint/index.xml>
+<meta name=robots content="noindex, nofollow">
+<link rel="shortcut icon" href=/favicons/favicon.ico>
+<link rel=apple-touch-icon href=/favicons/apple-touch-icon-180x180.png sizes=180x180>
+<link rel=icon type=image/png href=/favicons/favicon-16x16.png sizes=16x16>
+<link rel=icon type=image/png href=/favicons/favicon-32x32.png sizes=32x32>
+<link rel=icon type=image/png href=/favicons/android-36x36.png sizes=36x36>
+<link rel=icon type=image/png href=/favicons/android-48x48.png sizes=48x48>
+<link rel=icon type=image/png href=/favicons/android-72x72.png sizes=72x72>
+<link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
+<link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
+<link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
+<title>SharePoint connector | Kianda low-code platform for business process automation</title><meta name=description content="Kianda SharePoint Connector — Developer Guide
+Overview
+The SharePoint data connector lets Kianda processes interact directly with SharePoint …">
+<meta property="og:title" content="SharePoint connector">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://docs.kianda.com/platform/connectors/sharepoint/">
+<meta itemprop=name content="SharePoint connector">
+<meta itemprop=description content><meta name=twitter:card content="summary">
+<meta name=twitter:title content="SharePoint connector">
+<meta name=twitter:description content>
+<link rel=preload href=/scss/main.min.e03a1ebb0b2299856907fd9def884012773322c89173b89906d5321f161e383f.css as=style>
+<link href=/scss/main.min.e03a1ebb0b2299856907fd9def884012773322c89173b89906d5321f161e383f.css rel=stylesheet integrity>
+<script src=https://code.jquery.com/jquery-3.5.1.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
+<script src=https://unpkg.com/lunr@2.3.8/lunr.min.js integrity=sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY crossorigin=anonymous></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2463M5RV55"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-2463M5RV55",{anonymize_ip:!1})}</script>
+</head><body class=td-section>
+<header>
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+<a class=navbar-brand href=/ title="Kianda Low-code Platform documentation">
+<span class=navbar-logo><svg width="124" height="26" viewBox="0 0 124 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M47.0114 22.8609 39.9609 12.543l6.7638-9.80049H41.5085L35.3752 11.4796V2.74251H30.7895V22.8609h4.5857V13.549l6.4199 9.3119h5.2163z" fill="#fff"/><path d="M50.7365 7.22603c1.4044.0 2.5795-1.17836 2.5795-2.58665.0-1.40828-1.1751-2.58665-2.5795-2.58665-1.4043.0-2.5794 1.17837-2.5794 2.58665.0 1.40829 1.1751 2.58665 2.5794 2.58665zM48.587 22.8609h4.2991V8.49062H48.587V22.8609z" fill="#fff"/><path d="M66.4358 8.49062v1.3508C65.49 8.74928 64.0856 8.08825 62.1654 8.08825c-3.7545.0-6.8499 3.30515-6.8499 7.58755.0 4.2823 3.0954 7.5875 6.8499 7.5875C64.0856 23.2633 65.49 22.6022 66.4358 21.5101v1.3508h4.2991V8.49062H66.4358zM63.0252 19.1821c-1.9776.0-3.4106-1.3508-3.4106-3.5063.0-2.1556 1.433-3.5064 3.4106-3.5064s3.4106 1.3508 3.4106 3.5064c0 2.1555-1.43300000000001 3.5063-3.4106 3.5063z" fill="#fff"/><path d="M82.2864 8.08825C80.3948 8.08825 78.9618 8.77802 78.188 9.84142V8.49062H73.8889V22.8609H78.188V15.0147C78.188 12.9741 79.2771 12.0544 80.8534 12.0544 82.2291 12.0544 83.3469 12.8879 83.3469 14.6698v8.1911H87.6459V14.0375c0-3.8799-2.4648-5.94925-5.3595-5.94925z" fill="#fff"/><path d="M101.002 2.74251V9.84142C100.056 8.74928 98.6518 8.08825 96.7316 8.08825 92.977 8.08825 89.8817 11.3934 89.8817 15.6758 89.8817 19.9581 92.977 23.2633 96.7316 23.2633 98.6518 23.2633 100.056 22.6022 101.002 21.5101v1.3508H105.301V2.74251H101.002zM97.5914 19.1821C95.6138 19.1821 94.1808 17.8313 94.1808 15.6758 94.1808 13.5202 95.6138 12.1694 97.5914 12.1694 99.569 12.1694 101.002 13.5202 101.002 15.6758 101.002 17.8313 99.569 19.1821 97.5914 19.1821z" fill="#fff"/><path d="M118.859 8.49062v1.3508C117.913 8.74928 116.509 8.08825 114.588 8.08825 110.834 8.08825 107.739 11.3934 107.739 15.6758c0 4.2823 3.095 7.5875 6.84899999999999 7.5875C116.509 23.2633 117.913 22.6022 118.859 21.5101v1.3508H123.158V8.49062H118.859zM115.448 19.1821c-1.97699999999999.0-3.41-1.3508-3.41-3.5063.0-2.1556 1.43300000000001-3.5064 3.41-3.5064 1.97800000000001.0 3.411 1.3508 3.411 3.5064.0 2.1555-1.43299999999999 3.5063-3.411 3.5063z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.28125C0 2.3645 2.3645.0 5.28125.0H20.7188C23.6355.0 26 2.3645 26 5.28125V20.7188C26 23.6355 23.6355 26 20.7188 26H5.28125C2.3645 26 0 23.6355.0 20.7188V5.28125zM23.4063 7.40596C22.6063 5.00596 12.7397 5.7393 7.90634 6.40596c2.83336.16663 8.89996.89989 10.49996 2.49989 1.6 1.60005-2 6.33335-4 8.50005 3.3334-2.3333 9.8-7.59994 9-9.99994zM18.9742 19.4062C14.1409 20.0729 4.27421 20.8062 3.47421 18.4062c-.8-2.4 5.66667-7.6666 8.99999-9.99986-2 2.16666-5.59999 6.89996-3.99999 8.49996 1.59999 1.6 7.66669 2.3333 10.49999 2.4999z" fill="#fff"/></svg></span><span class="text-uppercase font-weight-bold">Kianda low-code platform for business process automation</span>
+</a>
+<div class="td-navbar-nav-scroll ml-md-auto" id=main_navbar>
+<ul class="navbar-nav mt-2 mt-lg-0">
+<li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class="nav-link active" href=/><span class=active>Documentation</span></a>
+</li><li class="nav-item mr-4 mb-2 mb-lg-0">
+<a class=nav-link href="https://portal.kianda.com/public/signup?type=free-developer-account" target=_blank><span>Developer Sign-up</span></a>
+</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.f758722ecd77871ec2a6a720a66d9284.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+</div></nav></header><div class="container-fluid td-outer">
+<div class=td-main>
+<div class="row flex-xl-nowrap">
+<main class="col-12 col-md-9 col-xl-8 pl-md-5" role=main>
+<div class=td-content>
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+This is the multi-page printable view of this section.
+<a href=# onclick="return print(),!1">Click here to print</a>.
+</p><p>
+<a href=/platform/connectors/sharepoint/>Return to the regular view of this page</a>.
+</p></div><h1 class=title>SharePoint connector</h1><ul>
+</ul><div class=content>
+<h2 id=kianda-sharepoint-connector--developer-guide>Kianda SharePoint Connector — Developer Guide</h2><h3 id=overview>Overview</h3><p>The <strong>SharePoint data connector</strong> lets Kianda processes interact directly with SharePoint data—whether to display data in forms or dashboards or to update SharePoint lists dynamically.</p><hr>
+<h3 id=1-setup-adding-a-sharepoint-data-connector>1. Setup: Adding a SharePoint Data Connector</h3><p>To add a SharePoint connector:</p><ol>
+<li>
+<p>Go to <strong>Administration → Data sources</strong>.</p></li><li>
+<p>Click <strong>“Add new”</strong>, then select <strong>SharePoint</strong>.</p></li><li>
+<p>Configure:</p><ul>
+<li>
+<p><strong>Display Name</strong>: Choose a meaningful identifier (e.g., “HR Site Connector”).</p></li><li>
+<p><strong>Site URL</strong>: Link to your SharePoint site.</p></li><li>
+<p><strong>SharePoint Version</strong>: Choose from:</p><ul>
+<li>SharePoint Online (Microsoft 365)</li><li>SharePoint 2016</li><li>SharePoint 2013</li></ul></li><li>
+<p><strong>Scope</strong>: Select either one <strong>Site</strong> or an entire <strong>Site Collection</strong>.</p></li><li>
+<p><strong>Authentication Mode</strong>:</p><ul>
+<li><strong>SharePoint Online Authorization</strong> (requires admin rights)</li><li><strong>System User Credentials</strong> (uses username/password, no admin rights needed)</li></ul></li></ul></li><li>
+<p>Click <strong>Test connection</strong>—if successful, click <strong>Save</strong>, then optionally set up additional <strong>Security</strong> settings.([docs.kianda.com][1])</p></li></ol><hr>
+<h3 id=2-sharepoint-query-parameters-you-can-access>2. SharePoint Query Parameters You Can Access</h3><p>Once connected, the connector exposes both default SharePoint metadata and any custom list columns. Common fields include:</p><p><code>ID</code>, <code>Content Type</code>, <code>Title</code>, <code>Modified</code>, <code>Created</code>, <code>Created By</code>, <code>Modified By</code>, <code>Version</code>, <code>Server Relative URL</code>, <code>Item Child Count</code>, and more. Custom columns (e.g., <code>Location</code>) also appear in display, value, and sort dropdowns.</p><hr>
+<h3 id=3-binding-sharepoint-data-to-kianda-ui>3. Binding SharePoint Data to Kianda UI</h3><p>To display SharePoint list items:</p><ul>
+<li>
+<p>Use the <strong>List Control</strong> in a form:</p><ol>
+<li>Design or open your form in the <strong>Process Designer</strong>.</li><li>Add a <strong>List</strong> input control.</li><li>Under <strong>List Source → Data source</strong>, select your SharePoint connector.</li><li>Set <strong>Display Field</strong>, <strong>Value Field</strong>, and optionally <strong>Sort by</strong> (and sort direction).</li><li>Optionally, apply <strong>Conditions</strong> or cascading logic.</li></ol></li></ul><p>This makes the list option dynamic—automatically reflecting updates from SharePoint.</p><hr>
+<h3 id=4-managing-sharepoint-from-kianda-via-rules>4. Managing SharePoint from Kianda via Rules</h3><p>Kianda offers a suite of SharePoint-specific rules to perform CRUD operations and permission management via the SharePoint API.</p><p>Available rules include:</p><ul>
+<li>
+<p><strong>Create objects</strong>:</p><ul>
+<li><strong>Create Item / Document</strong> — Create items and upload documents..</li><li><strong>Create Site</strong> — start a new SharePoint site using a template.</li><li><strong>Create List</strong> — add a new list to a SharePoint site.</li><li><strong>Create Group</strong> — create a user group in SharePoint.</li></ul></li><li>
+<p><strong>User and Permissions Management</strong>:</p><ul>
+<li><strong>Find a User</strong> — search by display name, email, or ID; retrieve User ID or Username.</li><li><strong>Add User to Group</strong></li><li><strong>Remove User from Group</strong></li><li><strong>Reset Item Permissions</strong></li></ul></li><li>
+<p><strong>File and Attachment Handling</strong>:</p><ul>
+<li><strong>Check In / Out an Item</strong> — with support for comments.</li><li><strong>Get List Item Attachments</strong> — retrieve attachments for use in forms.</li><li><strong>Create Anonymous Link</strong> — generate a public-access link to a file.</li></ul></li></ul><p>Workflow integration:</p><ul>
+<li>Attach rules to form fields, processes, or buttons.</li><li>Provide a title, set optional <strong>Conditions</strong>, map <strong>Success</strong> and <strong>Error</strong> outputs.</li><li>Rules can run automatically (e.g., on load) or via manual triggers.</li></ul><hr>
+<h3 id=5-quick-example-retrieving-a-user-id-from-sharepoint>5. Quick Example: Retrieving a User ID from SharePoint</h3><p><strong>Use case</strong>: Auto-populate a form based on user lookup.</p><ol>
+<li>
+<p>Create a text field in your form (e.g., &ldquo;Email Input&rdquo;).</p></li><li>
+<p>Attach a <strong>Find a User</strong> rule:</p><ul>
+<li>Choose your SharePoint data source.</li><li>Set search criteria (e.g., “Search by Email”).</li><li>Map “Username” or “User ID” into target fields.</li></ul></li><li>
+<p>Optionally add success/error mapping and rules conditions.</p></li><li>
+<p>Trigger the rule (on load or via button).</p></li></ol><hr>
+<h3 id=summary--best-practices>Summary & Best Practices</h3><table>
+<thead>
+<tr>
+<th>Task</th><th>Approach</th></tr></thead><tbody>
+<tr>
+<td><strong>Set up connector</strong></td><td>Admin → Add new → Choose SharePoint → Configure → Test → Save</td></tr><tr>
+<td><strong>Populate UI</strong></td><td>Bind SharePoint via List Control with proper mapping and filters</td></tr><tr>
+<td><strong>Run operations</strong></td><td>Use SharePoint rules—Define rule, set source, conditions, and mappings</td></tr><tr>
+<td><strong>Handle data flow</strong></td><td>Use Success/Error mapping to chain logic or give user feedback</td></tr></tbody></table><p><strong>Tips for Developers</strong>:</p><ul>
+<li>Use consistent names for connectors to avoid confusion.</li><li>Apply conditions and error mappings for robust user experience.</li><li>Use rule chaining (e.g., Find user → Add to group) to build advanced logic.</li><li>Test thoroughly with both Site and Site Collection scopes, and across auth methods.</li></ul></div></div></main></div></div><footer class="bg-dark py-5 row d-print-none">
+<div class="container-fluid mx-sm-5">
+<div class=row>
+<div class="col-6 col-sm-4 text-xs-center order-sm-2">
+</div><div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+</div><div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+<small class=text-white>&copy; 2025 Kianda Technologies All Rights Reserved</small>
+<small class=ml-1><a href=https://www.kianda.com/privacy target=_blank rel=noopener>Privacy Policy</a></small>
+</div></div></div></footer></div><script src=https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js integrity=sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin=anonymous></script>
+<script src=/js/tabpane-persist.js></script>
+<script src=/js/main.min.e969fcc6c6f4a5f274732e5cfc9517216922476c3623b07b387618dcb82a2ada.js integrity="sha256-6Wn8xsb0pfJ0cy5c/JUXIWkiR2w2I7B7OHYY3LgqKto=" crossorigin=anonymous></script>
+<script type=text/javascript language=javascript>$(document).ready(function(){var e=$("#td-sidebar-menu a.active");e&&e.length>0&&e[0].scrollIntoView({behavior:"auto",block:"center",inline:"nearest"})})</script>
+</body></html>
