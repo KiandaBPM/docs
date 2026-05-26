@@ -4,7 +4,7 @@ weight: 2
 typora-root-url: ..\..\..\..\..\static
 ---
 
-## Introduction ##
+## Introduction
 
 When working with rules in forms, a key principle to consider is **rule order**. Rule order is important if there are **multiple rules** attached to an item like a button or form field to determine the sequence of rule execution. As a form designer, you can change the order of execution to suit your specific process design.
 
@@ -24,7 +24,7 @@ Rules are typically synchronously executed in Kianda, so for example when using 
 
 ![Execute in series option on rules](/images/execute-in-series.jpg)
 
-## Rule order example ##
+## Rule order example
 
 For example, you may want a process to send automated emails to a safety manager, where the email includes submitted form data. In this case a **Send email rule** could be attached to a form **Submit** button so an email is sent once the button is clicked. This will result in an automated email to a designated person. To generate a report of the completed form, you can use the **Generate word** **document** **rule** triggered again when the **Submit** button is clicked. In this example the **Generate word document rule** has to be executed <u>before</u> the **Send email rule**, so that the Word document can be generated and then attached to the email. 
 
@@ -53,6 +53,6 @@ The video below shows an example of a **Send email rule** being created and save
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To find out more about rule implementation, go to the main [Rules](/platform/rules/) page and then click on the links to the different rule categories.

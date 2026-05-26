@@ -94,7 +94,7 @@ You can edit details of the existing REST Methods by clicking on the **Edit/Pen*
 
 
 
-### How to add a new REST Method ###
+### How to add a new REST Method
 
 1. Click on the **+Add REST Method** button. The **REST Method editor** dialog box appears.
 
@@ -193,7 +193,7 @@ To see how 'catfacts' are mapped into Kianda processes, create a new process, ad
 
  
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Your **REST Service** is now set up and ready to be used in your **processes**. Check out the following article on how to implement a **REST Service** in order to [refresh an Access token](/platform/connectors/rest/rest-access-token/).
 

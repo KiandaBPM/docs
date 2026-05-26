@@ -86,7 +86,7 @@ To apply security to a dashboard widget:
 
 7. Save the changes you make by clicking on the **Save** button ![Save button](/images/save-dash.png) at the top of the page.
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about **Process level security**, find out more about other security access levels:
 

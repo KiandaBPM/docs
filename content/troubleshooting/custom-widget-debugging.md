@@ -116,7 +116,7 @@ To use the debugger function:
       * **Elements** tab allows you to inspect the nested HTML structure of your page and visualise any applied CSS styles, as well as allowing manipulation via the box model visualiser.
       * **Performance** tab showcases JavaScript execution, memory usage and more. It differs from the network tab in that it analyses overall performance as opposed to specific requests.
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about the **Custom widget debugging**, find out more about other troubleshooting features:
 

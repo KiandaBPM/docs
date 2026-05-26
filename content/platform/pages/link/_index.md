@@ -230,13 +230,13 @@ To update or edit your **Link widget** settings:
 
 
 
-### Saving changes ###
+### Saving changes
 
 Make sure to save any changes you make to your **Link widget** by clicking on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu. If you leave the dashboard without saving the changes you have made to a widget, the next time you visit the dashboard it won't include any of the changes made to it since the dashboard page was last saved.
 
 
 
-## What's next  ![Idea icon](/images/18.png) ##
+## What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about the **Dashboard Link widget**, find out more about the other types of **Dashboard widgets** you can add to your Kianda dashboard:
 

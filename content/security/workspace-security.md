@@ -47,7 +47,7 @@ Within the **Edit form** dialog box, you can select the **Enable quick actions**
 
 Select the **Enable quick actions** checkbox, then select one or more of the checkboxes for the three options that appear below it (as shown in the image). For each of the options you select, click on the ellipsis button ![ellipsis button used to select users and groups](https://academy.kianda.com/wp-content/uploads/2022/02/ellipsis-1.png) and select from Users, Groups and Partners, and/or check the box to **Allow form owners** the particular action – for example, re-assignment means the chosen users can click on the **quick action** button ![Quick action button on forms](https://academy.kianda.com/wp-content/uploads/2022/02/quick-action-1.png) in the form and **reassign** the form to someone else.
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about **Workspace security**, find out more about other security access levels:
 

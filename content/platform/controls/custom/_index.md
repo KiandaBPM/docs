@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\..\..\static
 
 
 
-## How to get started ##
+## How to get started
 
 To add a **Custom field** to a Kianda form:
 
@@ -50,7 +50,7 @@ To add a **Custom field** to a Kianda form:
 
 
 
-### How Custom controls are created ###
+### How Custom controls are created
 
 A Kianda Administrator or Developer can create **Custom controls** by opening the **Administration** menu from the left-side menu and clicking on **Developer**:
 
@@ -111,7 +111,7 @@ To delete a **Custom field** from your form:
 
 
 
-### How to view or edit Custom control Field properties ###
+### How to view or edit Custom control Field properties
 
 To view or edit the Field properties associated with a **Custom field**, select the field (by clicking on the field title or its **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)) - the **Field properties** menu will appear in the right-hand pane.
 
@@ -137,13 +137,13 @@ In the example shown here, a **Custom field** titled '**Field widget 1**' has be
 
 
 
-### Saving changes and version history ###
+### Saving changes and version history
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about **Custom controls**, find out more about how you can use Controls, how you can get started as a Kianda low-code developer, and more about the three other categories of **Controls** you can add to a Kianda process:
 

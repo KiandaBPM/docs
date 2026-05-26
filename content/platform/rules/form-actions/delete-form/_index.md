@@ -72,7 +72,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
    
 
-### User tip ![Target icon](/images/05.png) ###
+### User tip ![Target icon](/images/05.png)
 
 - When adding the **Delete form** rule to a process, make sure to change the rule order of execution of the **Delete form** to be after **Submit form**. Remember that you can't submit a deleted form.
 

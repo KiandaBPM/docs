@@ -18,7 +18,7 @@ You can add this rule:
 
 
 
-## Before you get started ##
+## Before you get started
 
 In advance of using this rule, you need to have **created one or more forms, complete with control fields**. For example a text box control with an employee's 'Name' may be part of a form 'Annual Leave Request'. Then this 'Name' field can be used as an **expression** in the email to send personalised emails, so these aspects must be set up in advance.
 
@@ -30,7 +30,7 @@ In advance of using this rule, you need to have **created one or more forms, com
 
 
 
-## How to get started ##
+## How to get started
 
 1. Click on an existing process by going to **Administration** > **Designer** and decide which form, or field you will apply the rule to, by clicking on that item so that it is in **edit mode** so you can see the Edit/pen button, **Pen** button ![Pen button](https://docs.kianda.com/images/penicon.png). For example selecting the **Submit** as shown below.
 
@@ -100,7 +100,7 @@ In advance of using this rule, you need to have **created one or more forms, com
        For more information on rule order, see [Multiple Rules](/platform/rules/general/multiple-rules/).
 
 
-### Email connector ###
+### Email connector
 
 The **Email connector** is a mailing tool that allows you to send emails with a specified email account, for example support@ or info@. An email connector must be set up in advance, to learn how to set up an **Email connector** go to [Email connector](/platform/connectors/email/).
 
@@ -114,7 +114,7 @@ Note that if **Global SMTP Mail connector** has been configured, all emails sent
 
 
 
-### Selection mode ###
+### Selection mode
 
 When you are filling out the **To**, **From**, **CC** or **BCC** fields and click on the **Person** button ![Person button](/images/person.png)you have the following selection mode options to choose from:
 
@@ -208,7 +208,7 @@ For example if you have a form Annual Leave request that contains a text box fie
 
 
 
-### Attachments ###
+### Attachments
 
 To attach a file into the **Send email** rule, you must first contain a file field in your process. To learn more about file control go to [File upload control](/platform/controls/input/file-upload/). 
 

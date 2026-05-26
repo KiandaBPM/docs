@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\..\static
 
 **Image fields** can be used to insert and display images, either statically or images captured from [File upload fields](/platform/controls/input/file-upload/). For example, you may wish to insert an image at the top of your form or may wish to enable form users to annotate an image.
 
-## How to get started ##
+## How to get started
 
 To add an **Image field** to a Kianda form:
 
@@ -146,7 +146,7 @@ To add an **Image field** to a Kianda form:
 
 
 
-### How to edit, move and delete Image fields ###
+### How to edit, move and delete Image fields
 
 To edit an **Image field**:
 
@@ -182,7 +182,7 @@ To delete an **Image field** from your form:
 
 
 
-### How to view and edit Image control Field properties ###
+### How to view and edit Image control Field properties
 
 To view or edit an Image control's **Field properties**:
 
@@ -206,13 +206,13 @@ To view or edit an Image control's **Field properties**:
 
 
 
-### Saving changes and version history ###
+### Saving changes and version history
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about **Image controls**, find out more about the other types of **Action fields** you can add to Kianda forms:
 

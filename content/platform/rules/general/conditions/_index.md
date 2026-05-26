@@ -58,7 +58,7 @@ The actions within **Hide or disable** are:
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Depending on how the rule is applied, for example to a **Submit** button, the rule order is important to consider, see [Multiple rules](/platform/rules/general/multiple-rules/).
 

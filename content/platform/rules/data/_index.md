@@ -20,7 +20,7 @@ The section below introduces each of the Data rules.
 
 
 
-## Getting started with Data rules ##
+## Getting started with Data rules
 
 If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the **Data** rules are found in the left-hand pane when you click on **Data**.
 
@@ -38,7 +38,7 @@ There are five types of **Data** rules as follows:
 
   
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 We have briefly introduced each of the five types of **Data rules**. Click on the links below to find out more about each rule in detail. 
 

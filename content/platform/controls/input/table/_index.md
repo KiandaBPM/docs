@@ -202,7 +202,7 @@ To delete a **Table field** from your form:
 
 
 
-### How to edit Table field properties ###
+### How to edit Table field properties
 
 To view or edit the field properties associated with a **Table field**, select the table (by clicking on the field title or field drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - the **Field properties** menu will appear in the right-hand pane.
 
@@ -228,6 +228,6 @@ You can also view and edit the **properties of the individual column fields** wi
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
-### Saving changes and version history ###
+### Saving changes and version history
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.

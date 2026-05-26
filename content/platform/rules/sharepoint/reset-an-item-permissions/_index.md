@@ -76,12 +76,12 @@ To apply this rule, first choose an item to attach the rule to and have a ShareP
 
 
 
-### User tip ![Target icon](/images/05.png) ###
+### User tip ![Target icon](/images/05.png)
 
 If you have multiple rules attached to the field or other item, you may wish to reorder the rules to change the order of rule execution. Go to [Multiple rules](/platform/rules/general/multiple-rules/)  to find out more. 
 
 
 
-## What's next  ![Idea icon](/images/18.png) ##
+## What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about **Reset permissions**, return to the [SharePoint rules](/platform/rules/sharepoint/) page to find out about other SharePoint rules. 

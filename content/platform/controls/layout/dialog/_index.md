@@ -133,7 +133,7 @@ To edit a **Modal dialog field**:
 
 
 
-#### How to move a Modal dialog field ####
+#### How to move a Modal dialog field
 
 To move a Modal dialog field:
 
@@ -144,7 +144,7 @@ To move a Modal dialog field:
 
 
 
-#### How to delete a Modal dialog field ####
+#### How to delete a Modal dialog field
 
 To delete a Modal dialog field from your form:
 
@@ -154,7 +154,7 @@ To delete a Modal dialog field from your form:
 
 
 
-### How to edit Modal dialog field properties ###
+### How to edit Modal dialog field properties
 
 To view or edit the field properties associated with a **Modal dialog field**, select the Dialog field (by clicking on the drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)or clicking in the area of the Dialog field) - the **Field properties** menu will appear in the right-hand pane.
 
@@ -167,13 +167,13 @@ In the example shown here, a **Dialog field** titled '**Reminder**' has been sel
 
 
 
-### Saving changes and version history ###
+### Saving changes and version history
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about the **Modal dialog control**, find out more about the other types of **Layout fields** you can add to a Kianda process:
 

@@ -4,7 +4,7 @@ weight: 6
 typora-root-url: ..\..\..\..\..\static
 ---
 
-## Introduction ##
+## Introduction
 
 The **Start a process** rule allows you to dynamically **start a new instance** of a different process, or a new instance of the same process, or **updates an existing process instance** from a chosen process. 
 
@@ -187,7 +187,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 
 
-### User tip ![Target icon](/images/05.png) ###
+### User tip ![Target icon](/images/05.png)
 
 1. Remember the target process can be a **Partner process** and in this case, the partner organisation **must have enabled process security** (in the Process settings for the target process) to allow your process to interact with the target process.
 2. Use the **Lookup existing process** flag to find a particular instance of the target process at runtime.  If you select **Yes**, then you can select a field in the current process which contains the id of the target instance.
@@ -198,7 +198,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To find out more about other workflow rules go to [Workflow](/platform/rules/workflow/).
 

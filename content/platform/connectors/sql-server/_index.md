@@ -3,7 +3,6 @@ title: "SQL Server connector"
 weight: 2
 typora-root-url: ..\..\..\..\static
 ---
-# Kianda SQL Server Connector — Developer Documentation
 
 ## Overview
 

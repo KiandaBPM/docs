@@ -145,7 +145,7 @@ When a **process** is shared within the B2B portal, you may choose to include on
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To read more about User and group management, go to [Users](/platform/administration/users/).
 

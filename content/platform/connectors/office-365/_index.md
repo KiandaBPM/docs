@@ -12,7 +12,7 @@ If you have an Office 365 subscription, you can create an Office 365 data connec
 
 Note: To create this datasource you need to have an **Administrator** or **Manage datasources** role in Kianda. You also need to be an **administrator in Office 365**.
 
-## How to get started ##
+## How to get started
 
 An Office 365 data connector can be configured by users with the role **Administrator** or **Manage datasources**. These users can access the datasource management function, found under **Administration** > **Data sources**.
 
@@ -76,7 +76,7 @@ An Office 365 data connector can be configured by users with the role **Administ
 
 
 
-## Office 365 parameters ##
+## Office 365 parameters
 
 When you use an Office 365 datasource, there are **default options** that can be passed as parameters, for example when using conditions with Office 365 data connectors. These are:
 
@@ -93,6 +93,6 @@ When you use an Office 365 datasource, there are **default options** that can be
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Your **Office 365 connector** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/platform/application-designer/designer/).

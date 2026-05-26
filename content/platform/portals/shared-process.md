@@ -64,7 +64,7 @@ Log into your subscription and navigate to the **Invite Partner** section locate
        
          Information on dashboard parameters under **Add partner group** is found under the heading below.
        
-### Shared dashboards ###
+### Shared dashboards
 
 There are a set of dashboard parameters under the field **Add partner group**. These are:
 
@@ -83,6 +83,6 @@ There are a set of dashboard parameters under the field **Add partner group**. T
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Once you have successfully creating a shared process and dashboard, these will be available in the B2B Portal for partners, for example when your partner users log into the B2B Portal they will be able to see the newly shared dashboard. From here they will be able to see the widgets within the dashboard and interact with the Processes. Go to the [Secure Data Access](/platform/b2b-portals/data-access/) to read more about security in shared processes and data sources.

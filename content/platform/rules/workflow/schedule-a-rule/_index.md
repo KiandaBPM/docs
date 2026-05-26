@@ -83,7 +83,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
 
-## What's next  ![Idea icon](/images/18.png) ##
+## What's next  ![Idea icon](/images/18.png)
 
 To find out more about other workflow rules go to [Workflow](/platform/rules/workflow/).
 

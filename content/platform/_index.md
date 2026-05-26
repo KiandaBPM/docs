@@ -5,7 +5,7 @@ typora-root-url: ..\..\static
 description: "Platform guides. Provides a detailed information for administrators on specific platform features"
 ---
 
-## What is Kianda? ##
+## What is Kianda?
 
 Kianda is the most flexible low-code platform that you can use to create digital business processes. Kianda can be used in two ways:
 

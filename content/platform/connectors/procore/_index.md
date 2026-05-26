@@ -73,6 +73,6 @@ When you use the **Procore** datasource, there are **default parameters** invoke
 
 
 
-## What's next  ![Idea icon](/images/18.png) ##
+## What's next  ![Idea icon](/images/18.png)
 
 Your **Procore service** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/platform/application-designer/designer/).

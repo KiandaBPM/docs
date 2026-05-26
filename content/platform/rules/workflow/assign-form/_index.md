@@ -4,7 +4,7 @@ weight: 4
 typora-root-url: ..\..\..\..\..\static
 ---
 
-## Introduction ##
+## Introduction
 
 The **Assign form** rule is used to assign a form to a user or to a group of users, making them the **form owners**.  This means that when a process instance is created, a form owner can **edit** the form in the process instance, for example a manager who needs to add comments on an appraisal form that has been submitted by an employee. 
 
@@ -89,7 +89,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 
 
-### User tip ![Target icon](/images/05.png) ###
+### User tip ![Target icon](/images/05.png)
 
 This rule can be used multiple times in sequence. A typical use case is that the first rule overrides the existing users and the following rule(s) appends users. 
 
@@ -103,7 +103,7 @@ Note: a form displays in edit mode if:
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To find out more about other workflow rules go to [Workflow](/platform/rules/workflow/).
 

@@ -99,7 +99,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 
 
-### User tip ![Target icon](/images/05.png) ###
+### User tip ![Target icon](/images/05.png)
 
 Selecting the **Compare to date** function displays an additional field where you can select two different dates, and determine if your Date to compare is within.
 
@@ -107,7 +107,7 @@ The resulting boolean value can be used within other Kianda [Conditions](/platfo
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To find out more about other date rules go to [Dates](/platform/rules/dates/).
 

@@ -33,7 +33,7 @@ There are 10 **SharePoint** rules as follows:
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 We have briefly introduced each of the ten types of **SharePoint rules**. Click on the links below to find out more about each rule in detail. 
 

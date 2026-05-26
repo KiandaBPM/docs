@@ -7,7 +7,7 @@ Rules within the **Form action** rules category allow you to perform form specif
 
 
 
-## Getting started with Form action rules ##
+## Getting started with Form action rules
 
 If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the **Form action** rules are found in the left-hand pane when you click on **Form action**.
 
@@ -29,6 +29,6 @@ There are six **Form action** rules as follows:
 
   
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To read more about each of the rule types go to the links below:

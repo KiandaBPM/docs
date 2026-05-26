@@ -4,7 +4,7 @@ weight: 5
 typora-root-url: ..\..\..\..\..\static
 ---
 
-## Introduction ##
+## Introduction
 
 The **Process security** rule dynamically changes the **security settings of a process instance**. 
 
@@ -94,7 +94,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 
 
-### User tip ![Target icon](/images/05.png) ###
+### User tip ![Target icon](/images/05.png)
 
 This rule can be used multiple times in sequence.  You can use the first rule to override the existing users and the following rule(s) to append users.
 
@@ -106,7 +106,7 @@ You can override the process security settings by setting Override security sett
 
 ![Process security rule dialog box 2](/images/override-security-settings.jpg)
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To find out more about other workflow rules go to [Workflow](/platform/rules/workflow/).
 

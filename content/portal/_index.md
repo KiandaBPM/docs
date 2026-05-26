@@ -19,7 +19,7 @@ Production is used as the main environment by your employees. They will be able 
 
 ## Development Environment
 
-The Dev environment is used as your testing grounds, here your will be able to start developing new process designs, new dashboards and new widgets. You can also experiment and learn with how kianda works, update or make changes to any existing process designs.  
+The Dev environment is used as your testing grounds, here your will be able to start developing new process designs, new dashboards and new widgets. You can also experiment and learn with how Kianda works, update or make changes to any existing process designs.  
 
 ## Quality Assurance Environment
 

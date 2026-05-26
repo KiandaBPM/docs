@@ -4,7 +4,7 @@ weight: 1
 typora-root-url: ..\..\..\..\..\static
 ---
 
-## Introduction ##
+## Introduction
 
 Use the **Hide or Disable** rule to hide, disable, show or enable a field or a component in a Kianda form. This rule is very useful if you want different parts of a form, a complete form or multiple forms, to appear or hide based on how the form user completes the form.  
 
@@ -91,7 +91,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 
 
-### User tip ![Target icon](/images/05.png) ###
+### User tip ![Target icon](/images/05.png)
 
 Note, it is not necessary to add a condition to the rule.  In this case the rule will be triggered automatically:  
 - if the rule is applied to a *field*, then the rule will be triggered when the user enters a value in that field.  
@@ -103,7 +103,7 @@ If a rule causes a mandatory field to be hidden or disabled, this will not stop 
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To find out more about other workflow rules go to [Workflow](/platform/rules/workflow/).
 

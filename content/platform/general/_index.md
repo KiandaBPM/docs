@@ -10,7 +10,7 @@ When you login to Kianda for the first time, you are presented with an easy-to-u
 
 The main navigation is driven from the left-hand **side menu**. Here you will find shared **dashboards** linked to processes. **Depending on your role** you may have **Administration** functions like **Designer** that allows you to design processes, or **Invite partner** that allows you to manage B2B shared processes and dashboards for example with third party contractors. 
 
-## How to get started ##
+## How to get started
 
 ***Kianda workspace***
 
@@ -30,7 +30,7 @@ The layout of the Kianda workspace is as follows:
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Go to [Personalise your workspace](/getting-started/logging-in/personalise-workspace/) to find out how to change the look and feel of your workspace and to set regional settings.
 

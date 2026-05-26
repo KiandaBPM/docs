@@ -7,7 +7,6 @@ hide_summary: true
 typora-root-url: ..\..\..\..\static
 ---
 
-# Introduction 
 This page features sample schemas for parameters used in the [Query Code](/low-code/client-connector/how-to-create/#query-code) tab when creating a customised data connector. 
 
 Each section below features exemplar schemas and parameters to help you when creating code for your hooks in the **Query Code** tab.
@@ -376,7 +375,7 @@ Sample schemas each are available by clicking on the relevant links: [`datasourc
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To discover how to use your customised data connector widget in Kianda process design, go to [Kianda application designer](/platform/application-designer/). 
 

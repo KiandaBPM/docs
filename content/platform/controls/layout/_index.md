@@ -8,7 +8,7 @@ Layout fields are one category of [controls](/platform/controls/) (fields). They
 
 
 
-## Getting started with Layout fields ##
+## Getting started with Layout fields
 
 1. To insert a **Layout field** into a form, first open an existing process or create a new process by going to **Administration**>**Designer** in the left side menu. See [Create First Process](/getting-started/create-first-process/) to learn how to create your first process.
 
@@ -36,9 +36,9 @@ Layout fields are one category of [controls](/platform/controls/) (fields). They
 
 
 
-### How to add, edit, move and delete Layout fields ###
+### How to add, edit, move and delete Layout fields
 
-#### How to add Layout fields ####
+#### How to add Layout fields
 
 To insert a **Layout field** into your form, click on the field type you want to add from the **Layout** menu. 
 
@@ -46,7 +46,7 @@ For example, to add a new panel to your form, click on **Panel** - a pop-up mess
 
 ![Insert panel field](/images/panel-insert.jpg)
 
-#### How to edit Layout fields ####
+#### How to edit Layout fields
 
 To edit whatever type of **Layout field** you have added to your form:
 
@@ -60,14 +60,14 @@ To edit whatever type of **Layout field** you have added to your form:
 
 ![Select panel to edit](/images/panel-select-to-edit.jpg)
 
-#### How to move Layout fields ####
+#### How to move Layout fields
 
 To move a Layout field:
 
 1. Select the field's **Drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)
 2. Drag and drop the field wherever you want to move it within your form
 
-#### How to delete Layout fields ####
+#### How to delete Layout fields
 
 To delete an input field from your form:
 
@@ -77,7 +77,7 @@ To delete an input field from your form:
 
 
 
-### How to edit Layout field properties ###
+### How to edit Layout field properties
 
 To view or edit the field properties associated with a **Layout field**, select the field (by clicking on the field title or drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - the **Field properties** menu will appear in the right-hand pane.
 
@@ -103,13 +103,13 @@ To learn more about the different options within the Field properties menu, go t
 
 
 
-### Saving changes and version history ###
+### Saving changes and version history
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 We have briefly introduced each of the four types of **Layout controls**. Now let's look at each of these types of Layout controls in more detail:
 

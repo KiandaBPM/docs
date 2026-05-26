@@ -54,7 +54,7 @@ For more information on this rule go to [Field Display mode rule](/platform/rule
 
 Other rules can be used in other ways to change process workflow and therefore how forms behave. For example using the [Assign form rule](/platform/rules/workflow/assign-form/) you can assign a form to a particular user, making them the form owner, and therefore giving them edit access to the form.
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To read more about form ownership go to [Form owner](/platform/application-designer/forms/form-owners/).
 To read more about quick actions, go to [Form quick actions menu](/platform/application-designer/forms/form-quick-action/).

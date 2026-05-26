@@ -8,7 +8,6 @@ typora-root-url: ..\..\..\..\static
 ---
 
 
-# Introduction 
 
 This section will detail how to create a new **Custom Connector** which is a customised data connector for your organisation. 
 
@@ -99,7 +98,7 @@ This code creates the content on the screen seen below, available in the **Data 
 
 Other details on the screen above, like the name of the page **Datasource details**, **Use Kianda Cloud Connect** and buttons **Test connection**, **Save**, **Security** and **Close** are automatically part of the UI for customised data connectors. However, custom handlebars can be added for the **settings** of the connector datasource using code in the **Settings UI** tab, namely fields like **Datasource Name** and **Client Key** as shown in the image above. This principle works the same as **Widget UI**, which is seen when creating custom [rule widgets](/low-code/rule-widget/) or [field widgets](/low-code/field-widget/) for example.
 
-### Settings Code ###
+### Settings Code
 
 In a similar manner to creating custom [rule widgets](/low-code/rule-widget/) or [field widgets](/low-code/field-widget/) where there are **Widget code** tabs, the connector widget has a tab called **Settings Code** which is used to create the JavaScript code for the settings UI.
 
@@ -166,7 +165,7 @@ By default there is code in this tab, for example the **Authorize** button shown
 
 Other aspects to note in this sample code are the datasource settings, for example `datasource.settings.accessToken` and  `datasource.settings.environment` denoting that you can add whatever **settings** you want to the UI within the **Datasources details** page using this type of code. These settings could be then used in a [Microservice](/low-code/connector/create-microservice/) to create an action based on a chosen setting.
 
-### Query Code ###
+### Query Code
 
 When using a data source, all data sources will have built-in **metadata**, **query** and **querySuccess** functions to allow content searches, including metadata content or information about the content, such as title, author and creation date. The **Query code** tab contains the code needed for these three functions. Default code is provided to help you get started, see below.
 
@@ -195,7 +194,7 @@ Click on each of the links above to see further details.
 
 In Ember, **bubbling** will search for each of the actions in the code above, and if not found, then a default action is used, but if found the default is overwritten. This principle is useful when something is created multiple times which is the case when creating custom data connectors.
 
-#### Metadata hook ####
+#### Metadata hook
 
 The **Metadata hook** is where the return of the tree or metadata call can be altered for a chosen datasource used in Kianda form design.  
 

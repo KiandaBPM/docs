@@ -91,6 +91,6 @@ Error mapping is a concept of populating a form field in your Kianda process whe
 
   
 
-## What's next  ![Idea icon](/images/18.png) ##
+## What's next  ![Idea icon](/images/18.png)
 
 To find out more about rule implementation, go to the main [Rules](/platform/rules/) page and then click on the links to the different rule categories.

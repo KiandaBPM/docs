@@ -7,7 +7,7 @@ The **Help** function is available to all users of all roles and is found in the
 
 
 
-## How to get started ##
+## How to get started
 
 1. Go to the left-hand side menu and click on **Help**.
 
@@ -37,7 +37,7 @@ The **Help** function is available to all users of all roles and is found in the
 
 
 
-## Feedback ##
+## Feedback
 In addition to getting support, we welcome your feedback. Your thoughts and suggestions help us improve our platform and services. The feedback feature is available to users with a defined role, for example those who have the role **Design business processes** or **Developer**. This feature can also be used to submit new FAQs. To access feedback:
 1. Go to **More** > **Feedback** in the left-hand pane. 
 
@@ -51,7 +51,7 @@ In addition to getting support, we welcome your feedback. Your thoughts and sugg
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To read more about how to create processes and forms go to [Application Designer](/platform/application-designer/).
 

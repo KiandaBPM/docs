@@ -166,7 +166,7 @@ Check-out the [development](/getting-started/welcome/low-code/) section for more
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 We have briefly introduced the key concepts of rules. Click on the links below to read more about rule concepts in detail:
 

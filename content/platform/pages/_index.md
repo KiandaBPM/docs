@@ -22,14 +22,14 @@ Before you begin, it is important to be aware that there are **two modes** invol
 
 
 
-## Edit mode and View mode ##
+## Edit mode and View mode
 
 When using dashboards, there are two modes: **Edit mode** and **View mode**.
 
-### View mode ###
+### View mode
 When you are in **View mode**, the **Edit** button ![Edit button](/images/edit-current-page.jpg) will be visible to the right in the top menu bar.
 
-### Edit mode ###
+### Edit mode
 When you click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) you will be in **Edit mode**. When you are viewing a page in **Edit mode**, these options will be available to you along the top of the dashboard page:
 
 - the **Widget menu** where you can insert any of the seven available dashboard widgets
@@ -46,7 +46,7 @@ If you want to create a dashboard page from scratch go to [How to create a dashb
 
 
 
-## How to create a page ##
+## How to create a page
 
 Kianda offers a user-friendly interface to create dashboards in minutes. This video covers the steps for creating a new dashboard:
 
@@ -129,7 +129,7 @@ The options in the **Create dashboard page** dialog box include:
 7. You are now in **View mode**. To make further changes to the dashboard page, return to **Edit mode** by clicking on the **Edit** button ![Edit button](/images/edit-current-page.jpg) in the top menu.
 
 
-### How to delete a Dashboard page ###
+### How to delete a Dashboard page
 
 1. Click on the **Edit current page** button ![Edit button](/images/edit-current-page.jpg) to go into **Edit mode**. 
 
@@ -145,7 +145,7 @@ The options in the **Create dashboard page** dialog box include:
 
 
 
-### How to add layout containers to a Dashboard page ###
+### How to add layout containers to a Dashboard page
 
 A layout container is a simple way to organise, arrange the page layout using a bootstrap columns layout style and move the widgets you add to your dashboard. It works in a way that is similar to how a [Panel layout control](/platform/controls/layout/panel/) is used in a form to organise the fields in a form.
 
@@ -192,7 +192,7 @@ To add a layout container to a Dashboard:
 	
 	The widgets that were previously within that layout container will then be appended to the end of the dashboard page.
 
-## How to add widgets to a Dashboard page ##
+## How to add widgets to a Dashboard page
 
 To add a widget to a Dashboard page:
 
@@ -211,7 +211,7 @@ To add a widget to a Dashboard page:
    
 
 
-### Dashboard widgets ###
+### Dashboard widgets
 
 Kianda comes with **7 predefined dashboard widgets** that you can add to a dashboard page once you are in **Edit mode**. Using these widgets, you can quickly and easily create a process dashboard in minutes.
 
@@ -238,7 +238,7 @@ When you have added one or more dashboard widgets, you can move the widgets arou
   
 
 
-### How to edit Dashboard page settings ###
+### How to edit Dashboard page settings
 
 To edit a Dashboard page:
 
@@ -275,7 +275,7 @@ To edit a Dashboard page:
 
 
 
-### Enabling data export from dashboards ###
+### Enabling data export from dashboards
 
 Kianda allows users to export the data from dashboards with a simple click. 
 
@@ -289,7 +289,7 @@ This video explains how to set up the configuration to export data from dashboar
 
 
 
-### Offline availability ###
+### Offline availability
 
 Kianda is a progressive web application. This enables Kianda dashboards to provide insights to the business processes, even in offline mode.
 
@@ -297,11 +297,11 @@ This can be beneficial for businesses with users who will need to complete forms
 
 
 
-### Saving changes ###
+### Saving changes
 Make sure to save any changes you make to your Dashboard by clicking on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg). 
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 We have briefly introduced Kianda Dashboards. Now let's look at each of available **Dashboard widgets** - and Conditions that can be applied to some of them - in more detail:

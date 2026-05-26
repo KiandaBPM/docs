@@ -8,7 +8,7 @@ typora-root-url: ..\..\..\..\..\static
 
 
 
-## Getting started with Input controls ##
+## Getting started with Input controls
 
 To start adding Input controls (fields) to your Kianda forms:
 
@@ -38,7 +38,7 @@ The eight types of input fields are:
 
 
 
-### How to add, edit, move and delete Input fields ###
+### How to add, edit, move and delete Input fields
 
 To insert an **Input field** into your form click on the field type you want to add from the **Input** menu. 
 
@@ -69,9 +69,9 @@ To **delete** an Input field from your form:
 
 You can also view and edit an input field's **Field Properties** by selecting the field - for more details, see [Field Properties](/platform/controls/properties/#field-properties/).
 
-### Saving changes and version history ###
+### Saving changes and version history
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 We have briefly introduced each of the eight types of **Input controls**. Now let's look at each of these types of input fields in more detail:

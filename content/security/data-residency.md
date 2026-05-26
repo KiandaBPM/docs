@@ -4,7 +4,7 @@ weight: 5
 typora-root-url: ..\..\..\static
 ---
 
-## Introduction ## 
+## Introduction
 
 **Data residency** refers to the actual physical location where data is held or stored for an organisation. For example data could be submitted by a user in Australia to a cloud application, but the servers that hold and process the data are in Europe, so the data residency in this case refers to the European location. 
 
@@ -14,7 +14,7 @@ The Kianda platform is a **SaaS (Software as a Service) cloud-based** solution, 
 
 
 
-## Kianda Security and GDPR ## 
+## Kianda Security and GDPR
 
 Kianda Technologies confirm that the data for Kianda Platform (including backup and test data) are stored within the EU. For optimal performance our platform is deployed to Microsoft Azure Ireland with geo replication to Azure Netherlands. 
 

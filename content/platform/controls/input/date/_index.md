@@ -78,7 +78,7 @@ To delete a **Date field** from your form:
 2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png). 
 3. Click on **OK** to confirm.
 
-### How to edit Date field properties ###
+### How to edit Date field properties
 To view or edit the field properties associated with a **Date field**, select the field (by clicking on the field title or field drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - the **Field properties** menu will appear in the right-hand pane.
 
 ![Field properties](/images/date-field-properties-new.jpg)
@@ -95,7 +95,7 @@ For example, the **Field Properties** associated with a **Date field** titled 'D
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
-### Saving changes and version history ###
+### Saving changes and version history
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
 

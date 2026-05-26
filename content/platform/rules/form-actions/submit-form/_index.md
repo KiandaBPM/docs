@@ -53,7 +53,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
    
 
-### User tip ![Target icon](/images/05.png) ###
+### User tip ![Target icon](/images/05.png)
 
 - You can display the internal status of a process in a list widget on your dashboard. This can help you keep track of the current state the process instance is. For example when the process is complete or which form in the process is currently active.
 

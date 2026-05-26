@@ -10,7 +10,7 @@ For example, as part of an Employee Appraisal Process, a manager may complete a 
 
 
 
-## How to get started ##
+## How to get started
 
 To add a **Button field** to a Kianda form:
 
@@ -118,7 +118,7 @@ In our example, if we changed the Button field title to 'Schedule Meeting' and c
 
   
 
-### How to edit, move and delete Button fields ###
+### How to edit, move and delete Button fields
 
 To edit a **Button field**:
 
@@ -152,7 +152,7 @@ To delete a **Button** from your form:
 
 
 
-### How to view and edit Button field properties ###
+### How to view and edit Button field properties
 
 To view or edit a Button's **Field properties**:
 
@@ -176,13 +176,13 @@ To view or edit a Button's **Field properties**:
 
 
 
-### Saving changes and version history ###
+### Saving changes and version history
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about **Button controls**, find out more about the other types of **Action fields** you can add to Kianda forms:
 

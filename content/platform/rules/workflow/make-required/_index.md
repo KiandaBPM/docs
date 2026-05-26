@@ -4,7 +4,7 @@ weight: 2
 typora-root-url: ..\..\..\..\..\static
 ---
 
-## Introduction ##
+## Introduction
 
 The **Make required** rule is used to **dynamically** make form elements required or mandatory for users to fill in, or not required or to toggle between both states.
 
@@ -82,7 +82,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To find out more about other workflow rules go to [Workflow](/platform/rules/workflow/).
 

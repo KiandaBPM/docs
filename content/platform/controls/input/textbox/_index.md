@@ -145,7 +145,7 @@ To delete a **Text box field** from your form:
 
 
 
-### How to edit Text box field properties ###
+### How to edit Text box field properties
 
 To view or edit the field properties associated with a **Text box field**, select the field (by clicking on its title or its drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - the **Field properties** menu will appear in the right-hand pane.
 
@@ -175,13 +175,13 @@ You can check how the Text box will appear to users on their PC or mobile phone 
 
 
 
-### Saving changes and version history ###
+### Saving changes and version history
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about the **Text box control**, find out more about the other types of **Input fields** you can add to a Kianda process:
 

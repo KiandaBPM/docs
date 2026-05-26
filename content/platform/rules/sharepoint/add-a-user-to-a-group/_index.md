@@ -49,7 +49,7 @@ To apply this rule, first choose an item to attach the rule to and have a ShareP
 
 
 
-### User tips ![Target icon](/images/05.png) ###
+### User tips ![Target icon](/images/05.png)
 
 To use this rule, you must have a user predefined in Kianda and in SharePoint. The group must also be predefined in SharePoint. This rule gives the advantage of allowing multiple users to move to SharePoint groups which could be useful for example during restructuring in an organisation, where existing users need to move to other departments/groups. 
 
@@ -58,7 +58,7 @@ If you have multiple rules attached to the field or other item, you may wish to 
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about **Add a user to a group**, return to the [SharePoint rules](/platform/rules/sharepoint/) page to find out about other SharePoint rules. 
 

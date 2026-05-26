@@ -184,7 +184,7 @@ To add new partner properties click on the **Partner properties** button in the 
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To read more about creating process designs in Designer and how to use the interface to create forms  go to [Application Designer](/platform/application-designer/).
 

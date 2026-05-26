@@ -30,7 +30,7 @@ description: "Intro to form controls and their options"
 
 If you have developer skills,  you can create your own custom field widget - see [Development](/low-code/) for more information.
 
-## Getting started with Controls ##
+## Getting started with Controls
 
 If you go to **Administration** > **Designer** and click on an existing process or create a new process and then select a form within that process so that the **Edit Form** button (Pen icon ![Pen button](/images/penicon.png)) is visible, the predefined fields you can add to forms are found in the left-hand pane.
 

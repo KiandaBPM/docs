@@ -43,7 +43,7 @@ This level of detail provides a precise way to monitor what is happening with a 
 
 When a process design has been published, and data captured using that design, then the [Process instance version history](/troubleshooting/version-history-and-auditing) provides a useful way to see how and when a process design has been used and who has captured data using that design. Click on the link to read more details. 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Find out more about other troubleshooting features:
 

@@ -40,7 +40,7 @@ To use the Scheduled tasks function:
 
    To see the shorter list again of tasks created via this function, click on **Show All** again. 
 
-## Scheduling a task ##
+## Scheduling a task
 
 1. To schedule a new task, click on the **Schedule a task** button ![Schedule a task button](/images/schedule-a-task.jpg). 
 

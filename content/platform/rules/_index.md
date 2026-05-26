@@ -17,7 +17,7 @@ These principles are explained in more in the next section on [How to get starte
 
    
 
-## How to get started ##
+## How to get started
 
 If you have the role **Administrator** or **Design business process**, go to **Administration** > **Designer** and click on a process or create a new process, the predefined rules are found in the left-hand pane under **Add a rule**.
 
@@ -38,7 +38,7 @@ There are 10 categories of rules:
 
 
 
-## Rule design ###
+## Rule design
 
 You can apply rules at button, field, and form level. At form level, rule(s) execute 'on load', that is when a process instance is initiated or kicked off for example as a result of a user creating a new instance from a [dashboard](/platform/pages/), or automated through a [scheduled task](/platform/administration/scheduledtasks/), then the rules are triggered into action when the form(s) within that process becomes the active form(s). 
 
@@ -58,7 +58,7 @@ To get started with rule design:
 
 The links at the end of this page will bring you to the different rule categories and from there you can navigate to rule pages to learn what each parameter is in the **Edit rule** dialog box for each rule. The next section highlights where rules can be applied.
 
-### Where to apply rules ###
+### Where to apply rules
 As introduced in the section above, rules can be added at **process**, **form** and **control/field** level, and are typically used as follows, bearing in mind that [Conditions](/platform/rules/general/add-conditions/) can be applied to rules to control how the rules are executed:
 
 - A rule applied at **process level** executes 'onload' meaning that when a new process instance is initiated, the rule will automatically execute, for example when someone opens a form, a 'Send email' rule could be used to send an email to someone notifying them that a form has been opened.
@@ -69,7 +69,7 @@ As introduced in the section above, rules can be added at **process**, **form** 
 
   As with all rules, [Conditions](/platform/rules/general/add-conditions/) within the rule determine how the rule is triggered, for example a rule applied to a control like a date field, may be executed only if a certain value is input into another field within a form.
 
-#### Edit rule dialog box ####
+#### Edit rule dialog box
 
 Whenever a rule is added, the **Edit rule dialog box** will remind you where and at what level the rule is being applied, for example in the image below a **Send email** rule is being added to a button/control called **Submit**.
 
@@ -79,7 +79,7 @@ Whenever a rule is added, the **Edit rule dialog box** will remind you where and
 
 
 
-## Rule order ###
+## Rule order
 
 If there is more than one rule for an item like a field or process, then the order of execution must be considered. 
 
@@ -93,7 +93,7 @@ Go to [Multiple rules](/platform/rules/general/multiple-rules/) to read more abo
 
 
 
-## Rules list ##
+## Rules list
 
 A full list of rules is available in the table below.
 
@@ -101,6 +101,6 @@ A full list of rules is available in the table below.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 We have briefly introduced the concept of **Rules**. To read more about rules including each category of rules, click on the links below:

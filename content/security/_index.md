@@ -20,7 +20,7 @@ Kianda uses the following methodologies to ensure the Kianda platform meets the 
 
 The Kianda Platform fully complies with all GDPR requirements and is being continually improved, with a roadmap of enhancements planned for deployment in the near future.
 
-## Security - Authentication ##
+## Security - Authentication
 
 The Kianda platform provides **Single Sign-On** capability with SharePoint or OneLogin. This allows users to create/view/approve forms by first logging in with their Active Directory (AD) account. Security is provided by integration with the Clients Active Directory / O365 or other multi-factor authentication requirements. 
 
@@ -55,6 +55,6 @@ Overall, Kianda Technologies follows ISO ISMS policies, GDPR best practices and 
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 This page introduces security in Kianda, to read more about how levels of security are administered, please see the links below:

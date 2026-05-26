@@ -162,7 +162,7 @@ By adding two text box fields (titled 'First Name' and 'Surname') and a date fie
 
 To see how your form or field will look on a mobile, view it in **Mobile preview** by using the **Preview** option which can be opened by clicking the play button icon ![Preview](/images/preview.png). You also have the options to see how it will look on a PC or tablet.
 
-#### How to move a Panel ####
+#### How to move a Panel
 
 To move a Panel, simply:
 
@@ -171,7 +171,7 @@ To move a Panel, simply:
 
 ![Move a Panel](/images/panel-move.jpg)
 
-#### How to delete a Panel ####
+#### How to delete a Panel
 
 To delete a Panel from your form:
 
@@ -182,7 +182,7 @@ To delete a Panel from your form:
 
 
 
-### How to edit Panel Field properties ###
+### How to edit Panel Field properties
 
 To view or edit the field properties associated with a **Panel**, select the Panel field (by clicking on the field title or drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - the **Field properties** menu will appear in the right-hand pane.
 
@@ -200,6 +200,6 @@ To learn more about the different options within the Field properties menu, go t
 
 
 
-### Saving changes and version history ###
+### Saving changes and version history
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.

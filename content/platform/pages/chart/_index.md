@@ -8,7 +8,7 @@ A dashboard **Chart widget** enables you to create pie charts, bar charts or lin
 
 
 
-## How to get started ##
+## How to get started
 
 1. After creating a dashboard page, make sure you are in Edit mode, by clicking on the **Edit** button ![Edit button](/images/edit.png) at the top of the page, so the Widget menu with 7 widget types is available. Then click on the Chart widget ![Chart widget](/images/chart.png).
 
@@ -62,7 +62,7 @@ A dashboard **Chart widget** enables you to create pie charts, bar charts or lin
 
 
 
-## How to edit Chart widgets ##
+## How to edit Chart widgets
 
 To edit a **Chart widget** on a dashboard:
 
@@ -96,7 +96,7 @@ To edit a **Chart widget** on a dashboard:
 
 
 
-### Choosing data from a Process ###
+### Choosing data from a Process
 
 If you choose data from a Process, then the options below become available.
 
@@ -109,7 +109,7 @@ Choose from the following options:
 
 
 
-### Choosing data from a Partner Process ###
+### Choosing data from a Partner Process
 
 If you choose data from a Partner Process, then the options below become available.
 
@@ -123,7 +123,7 @@ Choose from the following options:
 
 
 
-### Choosing data from a Data source ###
+### Choosing data from a Data source
 
 If you choose data from a Data source, then click on the **Select data source** button.
 
@@ -137,7 +137,7 @@ Click on the **OK** button when you are finished editing to save your changes or
 
 
 
-### Chart view fields #
+### Chart view fields
 
 When you choose the Chart widget for your dashboard, there are a number of options to configure the chart to make it look the way you want. 
 
@@ -224,13 +224,13 @@ To update or edit your **Chart widget** settings:
 
 
 
-### Saving changes ###
+### Saving changes
 
 Make sure to save any changes you make to your **Chart widget** by clicking on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu. If you leave the dashboard without saving the changes you have made to a widget, the next time you visit the dashboard it won't include any of the changes made to it since the dashboard page was last saved.
 
 
 
-## What's next  ![Idea icon](/images/18.png) ##
+## What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about the **Dashboard Chart widget**, find out more about the other types of **Dashboard widgets** you can add to your Kianda dashboard:
 

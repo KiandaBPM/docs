@@ -10,7 +10,7 @@ The process **designer** provides an intuitive interface where you can quickly s
 
 A **process design** is a JSON document that encapsulate the visual layout and logic that renders into a fully functional process app and allows users to perform all sort of tasks. The process designer allows process designers to easily compose the process JSON schema without ever requiring the user to write a single line of code.
 
-## Designer introduction ##
+## Designer introduction
 
 This video introduces the process designer and demonstrates how to start creating a form and add fields to a process.
 
@@ -20,7 +20,7 @@ This video introduces the process designer and demonstrates how to start creatin
     </source>
 </video>
 
-## Preview a process ##
+## Preview a process
 
 As an **Administrator** or someone with the role **Design business process**, you can preview your **process designs** at any time using the **Run and preview process** button <img src="/images/previewer-btn.png" alt="previewer button" style="zoom:75%;" />. This is a useful feature that allows you to preview your process, and visualise the logical flow of your design without publishing it yet for your users to view/use. Within the preview window, you can also troubleshoot your fields, rules and conditions by utilising the rule debugger feature.
 

@@ -9,7 +9,7 @@ typora-root-url: ..\..\..\..\..\static
 
 
 
-## Getting started with Action controls ##
+## Getting started with Action controls
 
 There are four types of **Action fields**:
 
@@ -53,7 +53,7 @@ To add an **Action field** to a Kianda form:
 
 
 
-### How to edit, move and delete Action fields ###
+### How to edit, move and delete Action fields
 
 To edit whatever type of **Action field** you have added to your form:
 
@@ -85,7 +85,7 @@ To delete an **Action field** from your form:
 
 
 
-### How to view and edit Action control Field Properties ###
+### How to view and edit Action control Field Properties
 
 To view or edit an Action control's **Field properties**:
 1. Select the Action field (by either clicking on the field title or on the field's **drag handle** button ![Drag handle button](/images/draghandlewhite-frame.png)).
@@ -108,12 +108,12 @@ To view or edit an Action control's **Field properties**:
 
 
 
-### Saving changes and version history ###
+### Saving changes and version history
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 We have briefly introduced each of the four types of **Action fields**. Now let's look at each of these Action fields in more detail:

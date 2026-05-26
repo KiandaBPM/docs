@@ -76,7 +76,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 4. To **view** a rule, click on the **rule name** to open the **Edit rule** dialog box.
 
-### User tip ![Target icon](/images/05.png) ###
+### User tip ![Target icon](/images/05.png)
 
 Note,  You cannot use Close form and Go to form in the same button.
 

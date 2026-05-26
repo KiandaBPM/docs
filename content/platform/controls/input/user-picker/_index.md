@@ -176,13 +176,13 @@ To learn more about the different options within the Field properties menu, go t
 
 
 
-### Saving changes and version history ###
+### Saving changes and version history
 
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
 
 
-### User tips ![Target icon](/images/05.png) ###
+### User tips ![Target icon](/images/05.png)
 Rules can be applied to User picker fields to make your form dynamic. Rules allow actions based upon conditions resulting from user interaction with fields. To learn about the different types of rules you can apply, go to [Rules](/platform/rules/). 
 
 For example, you could apply a [Set form field](/platform/rules/data/set-form-field) rule so that the User picker field is set to be the current user or the user who started the process off. The section below describes how to use a User picker field in forms with two rules in order to extract a value from a datasource. 
@@ -207,7 +207,7 @@ For example if '400' is entered into this process, then the fields 'Display name
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about the **User picker control**, find out more about the other types of **Input fields** you can add to a Kianda process:
 

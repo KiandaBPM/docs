@@ -36,7 +36,7 @@ A form is created using [Kianda Designer](docs/platform/application-designer/des
 
 Form rules are applied to fields in the form in the next section.
 
-#### Form rules ####
+#### Form rules
 
 Rules are applied to both the AccessToken textbox field and the Refresh button as follows:
 

@@ -7,7 +7,7 @@ description: "Guides on available data connectors and their options"
 
 The **Data sources** function is found under **Administration** in the left-hand side menu, and provides an easy way to create connections to ERP, CRM and IT systems. These connections allow you to combine multiple sources of data in one place and from there Kianda processes can use and update the data to creative effective workflows. 
 
-## Predefined data connectors ##
+## Predefined data connectors
 
 Connecting to data in Kianda is a breeze. You can quickly connect to a data source, for example data in Salesforce, and use this data in Kianda forms and dashboards. The connection is called a **data connector** and Kianda comes with a predefined set of data connectors, these include:
 
@@ -34,7 +34,7 @@ If you have a data source that is not on the list above, you can use SOAP or RES
 
 If you are an experienced developer, you can also create your own **Custom connector** customising pre- and post-processing of queries, see [Custom connector](/low-code/custom-connector).
 
-## Viewing existing data sources ##
+## Viewing existing data sources
 
 Only those with the role **Administrator** or **Manage data sources** have access to the **Datasource management** function. To view any existing data sources:
 
@@ -108,7 +108,7 @@ You can enable KCC when you **add a new** data source from the main by datasourc
 
 ​	For more information go to [Kianda Cloud Connect](/platform/connectors/kianda-cloud-connect/).
 
-### Setting security for data sources ###
+### Setting security for data sources
 
 All data sources can have security added at different levels, for example at a role level and even database query level.
 

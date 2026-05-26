@@ -64,7 +64,7 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
    
 
-### User tip ![Target icon](/images/05.png) ###
+### User tip ![Target icon](/images/05.png)
 
 - When validating a field, form or a process, think of conditions. When a condition is met, an action must follow. For example an error message is displayed (**Action**) when the wrong date is entered (**Condition**).
 

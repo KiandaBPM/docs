@@ -92,6 +92,6 @@ Before starting going through the steps below you must ensure that you have a Co
 
 14. Click on **Save**.
 
-## What's next  ![Idea icon](/images/18.png) ##
+## What's next  ![Idea icon](/images/18.png)
 
 Your **Salesforce service** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/platform/application-designer/designer/).

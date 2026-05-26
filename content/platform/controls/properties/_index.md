@@ -6,7 +6,7 @@ typora-root-url: ..\..\..\..\static
 
 Each process, form and control (field) will have the properties associated with it displayed in the right-hand pane of the [Designer](/platform/application-designer/designer/) view. 
 
-## Process properties ##
+## Process properties
 When you go to **Administration** > **Designer** and then click on a process, you will see the **Process properties** for that process in the right-hand pane.
 
 The Process properties include:
@@ -20,7 +20,7 @@ In the example shown here, the 'Training Process' has two forms: 'Training Reque
 
 
 
-## Form properties ##
+## Form properties
 When you click on a form, the **Form properties** appear in the right-hand pane.
 
 ![Form properties](/images/form-properties-trainingprocess.jpg)
@@ -41,7 +41,7 @@ Click on one particular field (control) in the form - for example a text box - t
 
 
 
-## Field properties ##
+## Field properties
 When you select any field within a form (by clicking on the field name or field drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - such as User picker, list or text box - the **Field properties** associated with that field will appear in the right-hand pane.
 
 ![Field properties](/images/field-properties-trainingprocess2.png)
@@ -64,7 +64,7 @@ The options within the Field properties menu are:
 
 Underneath the Field properties menu, you will see **Rules** - go to [Rules](/platform/rules/) to find out more about the rules that can be applied to fields.
 
-## Saving changes and version history ##
+## Saving changes and version history
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
 

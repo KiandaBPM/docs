@@ -4,7 +4,7 @@ weight: 3
 typora-root-url: ..\..\..\..\..\static
 ---
 
-## Introduction ##
+## Introduction
 
 Expressions allow you to put together form **identifiers** (form field IDs) and **constants** with **operators** and **functions** to return a **dynamic value** that can be used in various places – for example, in a form or field rule to automate processes.
 
@@ -83,7 +83,7 @@ In addition to defining your own expressions there is a set list of expressions 
 
 **Note**: In the case of the last three expressions, you should select a field which contains data.  If you give the name of a button field for example, then no data will be returned.
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To find out more about rule implementation, go to the main [Rules](/platform/rules/) page and then click on the links to the different rule categories.
 

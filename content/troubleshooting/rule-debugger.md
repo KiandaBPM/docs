@@ -52,7 +52,7 @@ To exit the debugging process, you can click on the **Stop debug** button ![stop
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about the **Rule debugger**, find out more about other troubleshooting features:
 

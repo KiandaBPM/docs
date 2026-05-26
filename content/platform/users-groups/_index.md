@@ -173,7 +173,7 @@ Seen below is an example CSV output in excel:
 
 
 
-## Groups ##
+## Groups
 
 When you create predefined **groups,** you can use these group names in a myriad of ways, for example to create a set of finance managers who can then be listed as [form owners](/platform/application-designer/forms/form-owners/) to edit forms in process instances for procurement, or a set of contractors in an [SSO bypass group](/security/sso/) who can go the workspace login page to login to Kianda.
 
@@ -280,7 +280,7 @@ From this main view you can:
 
 
 
-## What's next  ![Idea icon](/images/18.png) ###
+## What's next  ![Idea icon](/images/18.png)
 
 To read more about how to create processes and forms go to [Application Designer](/platform/application-designer/).
 

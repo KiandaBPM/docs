@@ -25,7 +25,7 @@ Support tickets can be raised and viewed through this area of the platform.
 
 Existing support tickets appear within this section, showing the **title** of the ticket, **date** it was issued and **status**. 
 
-### Existing tickets ### 
+### Existing tickets
 
 1. Click on the **name** of a ticket to view ticket details, such as who raised the ticket and a description of the issue. The date and time that the ticket is raised is visible, along with the status of the ticket.
 
@@ -78,7 +78,7 @@ System logs appear in this section when you click on **Load errors**. Logs are l
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To read more about how to create processes and forms go to [Application Designer](/platform/application-designer/).
 

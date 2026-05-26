@@ -24,7 +24,7 @@ For example when a user selects **Galway** from the **Location of training**, th
 
 ![User rules](/images/lookup-user-db.jpg)
 
-## Getting started with User rules ##
+## Getting started with User rules
 
 If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the User rules are found in the left-hand pane when you click on **Users**.
 
@@ -42,6 +42,6 @@ There are four types of User rules as follows:
 
   
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To read more about each of the rule types go to the links below:

@@ -10,7 +10,7 @@ Take an example of a **Create a file anonymous link** rule. Implementing this ru
 
 ![File management rules](/images/file-managemt-rules-example.jpg)
 
-## Getting started with File management rules ##
+## Getting started with File management rules
 
 If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the **File management** rules are found in the left-hand pane when you click on **File management**.
 
@@ -34,6 +34,6 @@ There are seven types of **File management** rules as follows:
 
   
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To read more about each of the rule types go to the links below:

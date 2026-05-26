@@ -14,7 +14,7 @@ You can attach the **Sort table** rule to a button and selecting one of the colu
 
  ![Example table](/images/table-rules-result-table.jpg)
 
-## Getting started with Table rules ##
+## Getting started with Table rules
 
 If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule**, the **Table** rules are found in the left-hand pane when you click on **Tables**.
 
@@ -48,6 +48,6 @@ There are 12 types of Table rules as follows:
 
   
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To read more about each of the rule types go to the links below:

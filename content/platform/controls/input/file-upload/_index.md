@@ -114,7 +114,7 @@ To delete a **File upload field** from your form:
 2. Click on the **Bin/Trash** button ![Bin icon](/images/binicon.png).
 3. Click on **OK** to confirm.
 
-### How to edit File upload field properties ###
+### How to edit File upload field properties
 To view or edit the field properties associated with a **File upload field**, select the field (by clicking on the field title or field drag handle button ![Drag handle button](/images/draghandlewhite-frame.png)) - the **Field properties** menu will appear in the right-hand pane.
 
 ![Field properties](/images/file-upload-field-prop.jpg)
@@ -131,12 +131,12 @@ For example, the **Field Properties** associated with a **File upload field** ti
 
 To learn more about the different options within the Field properties menu, go to [Field Properties](/platform/controls/properties#field-properties).
 
-### Saving changes and version history ###
+### Saving changes and version history
 Make sure to save any changes you make by clicking on the **Save** button ![Save](/images/saveprocess.png). You will always have the option to revert back to previous versions of your form by clicking the **Design Version History** ![Version button](/images/version8.png) button in the top right corner.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about the **File upload control**, find out more about the other types of **Input fields** you can add to a Kianda process:
 

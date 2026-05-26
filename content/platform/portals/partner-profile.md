@@ -80,7 +80,7 @@ If you **already have a subscription** you can choose to **Login** instead of Si
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Within your subscription you will be able to see if an invited partner has accepted their **invitation** based on the **status**. **Pending** means they have not accepted the **invite**, **active** means they have accepted the **invite**.
 

@@ -8,7 +8,7 @@ A dashboard **Tile widget** allows you to display a count of instances. This is 
 
 
 
-## How to get started ##
+## How to get started
 
 1. After creating a dashboard page, make sure you are in Edit mode, by clicking on the **Edit** button ![Edit button](/images/edit.png) at the top of the page, so the Widget menu with 7 widget types is available. Then click on the Tile widget ![Tile widget button](/images/tile.png).
 
@@ -67,7 +67,7 @@ A dashboard **Tile widget** allows you to display a count of instances. This is 
    
 
 
-## Configure your widget ##
+## Configure your widget
 
 1. Click on the **Update configuration** or **Pen** button in a tile widget you have created.
 
@@ -114,7 +114,7 @@ A dashboard **Tile widget** allows you to display a count of instances. This is 
 
 
 
-### Choosing data from a Process ###
+### Choosing data from a Process
 
 If you choose data from a Process, then the options below become available.
 
@@ -127,7 +127,7 @@ Choose from the following options:
 
 
 
-### Choosing data from a Partner Process ###
+### Choosing data from a Partner Process
 
 If you choose data from a Partner Process, then the options below become available.
 
@@ -141,7 +141,7 @@ Choose from the following options:
 
 
 
-### Choosing data from a Data source ###
+### Choosing data from a Data source
 
 If you choose data from a Data source, then click on the **Select data source** button.
 
@@ -200,13 +200,13 @@ To update or edit your **Tile widget** settings:
 
 
 
-### Saving changes ###
+### Saving changes
 
 Make sure to save any changes you make to your dashboard **Tile widget** by clicking on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu. If you leave the dashboard without saving the changes you have made to a widget, the next time you visit the dashboard it won't include any of the changes made to it since the dashboard page was last saved.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about **Dashboard Tile widgets**, find out more about the other types of **Dashboard widgets** you can add to your Kianda dashboard:
 

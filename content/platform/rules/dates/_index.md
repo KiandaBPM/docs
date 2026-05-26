@@ -12,7 +12,7 @@ Below is an example of a date rule in operation; a **Compare date** rule is appl
 
 
 
-## Getting started with Date rules ##
+## Getting started with Date rules
 
 If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule**, the **Date** rules are found in the left-hand pane when you click on **Dates**.
 
@@ -32,6 +32,6 @@ There are four types of **Date** rules as follows:
 
   
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 We have briefly introduced the four types of Date rules. To read more about each of the rule types go to the links below:

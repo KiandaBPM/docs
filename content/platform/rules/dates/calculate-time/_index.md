@@ -114,13 +114,13 @@ When you have clicked on an existing rule, and the rule is visible in the right-
 
 
 
-### User tip ![Target icon](/images/05.png) ###
+### User tip ![Target icon](/images/05.png)
 
 Multiple **Special dates** can be loaded at once to allow you to select a number of specific dates to exclude from the rule.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To find out more about other date rules go to [Dates](/platform/rules/dates/).
 

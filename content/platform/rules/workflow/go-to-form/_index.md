@@ -77,7 +77,7 @@ The next section will cover how to use the buttons visible in the right-hand pan
 
    
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To find out more about other workflow rules go to [Workflow](/platform/rules/workflow/).
 

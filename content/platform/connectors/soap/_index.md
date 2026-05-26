@@ -12,7 +12,7 @@ You will want to create a SOAP Service datasource when you want Kianda to have a
 
 
 
-## How to get started ##
+## How to get started
 
 A SOAP Service data connector can be configured by users with the role **Administrator** or **Manage datasources**. These users can access the datasource management function, found under **Administration** > **Data sources**.
 
@@ -60,7 +60,7 @@ A SOAP Service data connector can be configured by users with the role **Adminis
 
  
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Your **SOAP Service** is now set up and ready to be used in your **processes**. To find out more about how to design processes go to [Designer](/platform/application-designer/designer/).
 

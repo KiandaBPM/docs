@@ -10,7 +10,7 @@ Conditions can be applied to [Tile](/platform/pages/tile/), [List](/platform/pag
 
 
 
-## How to get started ##
+## How to get started
 
 1. Make sure you are in **Edit mode** on your dashboard page by clicking on the **Edit** button ![Edit button](/images/edit.png) in the top menu.
 
@@ -56,13 +56,13 @@ Conditions can be applied to [Tile](/platform/pages/tile/), [List](/platform/pag
 
 
 
-### Saving changes ###
+### Saving changes
 
 Make sure to save any changes you make to your dashboard by clicking on the **Save** button ![Dashboard Save button](/images/dashboard-save-button.jpg) in the dashboard top menu. If you leave the dashboard without saving the changes you have made, the next time you visit the dashboard it won't include any of the changes made to it since the dashboard page was last saved.
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 Now that you've learned about the **Conditions** that can be applied to Tile, List and Chart widgets, find out more about all of the types of **Dashboard widgets** you can add to your Kianda dashboard:
 

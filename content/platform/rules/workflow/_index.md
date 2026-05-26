@@ -16,7 +16,7 @@ Using rules in this way changes the flow of the process, and additional levels o
 
 
 
-## Getting started with Workflow rules ##
+## Getting started with Workflow rules
 
 If you have the role **Administrator** or **Design business process**, go to **Administration** in the left-hand side menu and then **Designer** and click on an existing process or create a new process. Then decide on a form or field to add the rule to by clicking on that item and click on **Add a rule**. 
 
@@ -56,6 +56,6 @@ There are seven types of **Workflow** rules as follows:
 
 
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 We have briefly introduced each of the six types of **Workflow rules**. Now let's look at each of these types of rules in more detail:

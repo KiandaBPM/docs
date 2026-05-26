@@ -11,7 +11,7 @@ hide_summary: true
 
 ### Introduction
 
-Here you will find the release notes for kianda patch minor and major releases 
+Here you will find the release notes for Kianda patch minor and major releases 
 
 The release will be based on semantic versioning specification, for more information visit https://semver.org/
 

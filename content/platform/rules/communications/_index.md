@@ -4,7 +4,7 @@ weight: 2
 typora-root-url: ..\..\..\..\..\static
 ---
 
-## Introduction ##
+## Introduction
 
 **Communication** rules is one category of [rules](/platform/rules/) to enable automated communications with process users, for example sending meeting requests or even user push notifications. 
 
@@ -24,7 +24,7 @@ Depending on how you configure the alert, you can create an alert message which 
 
 
 
-## Getting started with Communication rules ##
+## Getting started with Communication rules
 
 If you go to **Administration** > **Designer** and click on a process or create a new process, then click on **Add a rule** the **Communication** rules are found in the left-hand pane when you click on **Communications**.
 
@@ -44,6 +44,6 @@ There are four types of **Communication** rules as follows:
 
   
 
-### What's next  ![Idea icon](/images/18.png) ###
+### What's next  ![Idea icon](/images/18.png)
 
 To read more about each of the rule types go to the links below:
