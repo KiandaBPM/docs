@@ -62,9 +62,9 @@ This request creates a process instance/new record. To use POST:
     "instanceID" : "new-training-process",
     "TriggerField":"",
     "FieldsMappings":[{
-      "fieldname":"reason",
-      "text":"New employee",
-      "value":"New employee"
+      "FieldName":"reason",
+      "Text":"New employee",
+      "Value":"New employee"
      }
     ]
    }
