@@ -14,22 +14,20 @@
 <link rel=icon type=image/png href=/favicons/android-96x96.png sizes=96x96>
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
-<title>Instances | Kianda low-code platform for business process automation</title><meta name=description content="
-Introduction
-Kianda&rsquo;s REST Application Programming Interface (API) for instances allows you to flexibly and efficiently perform database …">
+<title>Instances | Kianda low-code platform for business process automation</title><meta name=description content="The Instances API lets you create, retrieve, update and delete Kianda process instances. An instance is an individual process record, such as one …">
 <meta property="og:title" content="Instances">
-<meta property="og:description" content="Introduction Kianda&rsquo;s REST Application Programming Interface (API) for instances allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on process instances. A process instance is created every time data is either saved or submitted to Kianda&rsquo;s database for a given process design, see Process instance for more details.
-How to get started Before you get started, there are three things to keep in mind:">
+<meta property="og:description" content="The Instances API lets you create, retrieve, update and delete Kianda process instances. An instance is an individual process record, such as one incident report or one inspection. A process design defines the forms, fields and rules used by those records.
+For integrations that set field values or change form properties, use the mapping-based create and update endpoints. Use the document endpoints when your integration works with a complete Kianda instance JSON document.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://docs.kianda.com/apis/instances/"><meta property="article:section" content="apis">
 <meta itemprop=name content="Instances">
-<meta itemprop=description content="Introduction Kianda&rsquo;s REST Application Programming Interface (API) for instances allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on process instances. A process instance is created every time data is either saved or submitted to Kianda&rsquo;s database for a given process design, see Process instance for more details.
-How to get started Before you get started, there are three things to keep in mind:">
-<meta itemprop=wordCount content="446">
+<meta itemprop=description content="The Instances API lets you create, retrieve, update and delete Kianda process instances. An instance is an individual process record, such as one incident report or one inspection. A process design defines the forms, fields and rules used by those records.
+For integrations that set field values or change form properties, use the mapping-based create and update endpoints. Use the document endpoints when your integration works with a complete Kianda instance JSON document.">
+<meta itemprop=wordCount content="2760">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Instances">
-<meta name=twitter:description content="Introduction Kianda&rsquo;s REST Application Programming Interface (API) for instances allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on process instances. A process instance is created every time data is either saved or submitted to Kianda&rsquo;s database for a given process design, see Process instance for more details.
-How to get started Before you get started, there are three things to keep in mind:">
+<meta name=twitter:description content="The Instances API lets you create, retrieve, update and delete Kianda process instances. An instance is an individual process record, such as one incident report or one inspection. A process design defines the forms, fields and rules used by those records.
+For integrations that set field values or change form properties, use the mapping-based create and update endpoints. Use the document endpoints when your integration works with a complete Kianda instance JSON document.">
 <link rel=preload href=/scss/main.min.e03a1ebb0b2299856907fd9def884012773322c89173b89906d5321f161e383f.css as=style>
 <link href=/scss/main.min.e03a1ebb0b2299856907fd9def884012773322c89173b89906d5321f161e383f.css rel=stylesheet integrity>
 <script src=https://code.jquery.com/jquery-3.5.1.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
@@ -48,14 +46,14 @@ How to get started Before you get started, there are three things to keep in min
 <a class="nav-link active" href=/><span class=active>Documentation</span></a>
 </li><li class="nav-item mr-4 mb-2 mb-lg-0">
 <a class=nav-link href="https://portal.kianda.com/public/signup?type=free-developer-account" target=_blank><span>Developer Sign-up</span></a>
-</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.a03eaf3ff2dfb38a5396bd4e7b3ac56b.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+</li></ul></div><div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.10384d352df4cb2a6114f9e1390b2df2.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 </div></nav></header><div class="container-fluid td-outer">
 <div class=td-main>
 <div class="row flex-xl-nowrap">
 <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <form class="td-sidebar__search d-flex align-items-center">
-<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.a03eaf3ff2dfb38a5396bd4e7b3ac56b.json data-offline-search-base-href=/ data-offline-search-max-results=10>
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off data-offline-search-index-json-src=/offline-search-index.10384d352df4cb2a6114f9e1390b2df2.json data-offline-search-base-href=/ data-offline-search-max-results=10>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form><nav class="collapse td-sidebar-nav foldable-nav" id=td-section-nav>
@@ -715,7 +713,31 @@ How to get started Before you get started, there are three things to keep in min
 </div><hr>
 <div class=td-toc><nav id=TableOfContents>
 <ul>
-<li><a href=#introduction>Introduction</a></li><li><a href=#how-to-get-started>How to get started</a></li><li><a href=#rest-api-methods>REST API Methods</a></li><li><a href=#create-a-process-instance---post>Create a process instance - POST</a></li><li><a href=#readretrieve-process-instance-fields---get>Read/Retrieve process instance fields - GET</a></li><li><a href=#update-a-process-instance---put>Update a process instance - PUT</a></li></ul></nav></div></aside><main class="col-12 col-md-9 col-xl-8 pl-md-5" role=main>
+<li><a href=#endpoint-reference>Endpoint reference</a></li><li><a href=#authentication-and-request-format>Authentication and request format</a>
+<ul>
+<li><a href=#run-the-examples>Run the examples</a></li></ul></li><li><a href=#identifiers-and-property-names>Identifiers and property names</a></li><li><a href=#field-mappings>Field mappings</a></li><li><a href=#background-execution>Background execution</a></li><li><a href=#create-an-instance>Create an instance</a>
+<ul>
+<li><a href=#request-body>Request body</a></li><li><a href=#example>Example</a></li><li><a href=#success-response>Success response</a></li></ul></li><li><a href=#create-multiple-instances>Create multiple instances</a>
+<ul>
+<li><a href=#request-body-1>Request body</a></li><li><a href=#success-response-1>Success response</a></li></ul></li><li><a href=#update-an-instance>Update an instance</a>
+<ul>
+<li><a href=#path-parameter>Path parameter</a></li><li><a href=#request-body-2>Request body</a></li><li><a href=#form-mappings>Form mappings</a></li><li><a href=#example-update-a-field-and-select-the-review-form>Example: update a field and select the review form</a></li><li><a href=#success-response-2>Success response</a></li></ul></li><li><a href=#update-multiple-instances>Update multiple instances</a>
+<ul>
+<li><a href=#request-body-3>Request body</a></li><li><a href=#success-response-3>Success response</a></li></ul></li><li><a href=#get-an-instance-document>Get an instance document</a>
+<ul>
+<li><a href=#example-1>Example</a></li><li><a href=#response>Response</a></li></ul></li><li><a href=#get-instance-version-information>Get instance version information</a>
+<ul>
+<li><a href=#example-2>Example</a></li><li><a href=#response-1>Response</a></li></ul></li><li><a href=#update-using-an-instance-document>Update using an instance document</a>
+<ul>
+<li><a href=#request-body-4>Request body</a></li><li><a href=#response-2>Response</a></li></ul></li><li><a href=#submit-an-instance-document>Submit an instance document</a>
+<ul>
+<li><a href=#request-body-5>Request body</a></li><li><a href=#example-3>Example</a></li><li><a href=#response-3>Response</a></li></ul></li><li><a href=#delete-an-instance>Delete an instance</a>
+<ul>
+<li><a href=#example-4>Example</a></li><li><a href=#response-4>Response</a></li></ul></li><li><a href=#delete-multiple-instances>Delete multiple instances</a>
+<ul>
+<li><a href=#request-body-6>Request body</a></li><li><a href=#example-5>Example</a></li><li><a href=#success-response-4>Success response</a></li></ul></li><li><a href=#get-selected-fields>Get selected fields</a>
+<ul>
+<li><a href=#parameters>Parameters</a></li><li><a href=#example-retrieve-one-field>Example: retrieve one field</a></li><li><a href=#response-5>Response</a></li></ul></li><li><a href=#response-handling>Response handling</a></li></ul></nav></div></aside><main class="col-12 col-md-9 col-xl-8 pl-md-5" role=main>
 <nav aria-label=breadcrumb class=td-breadcrumbs>
 <ol class=breadcrumb>
 <li class=breadcrumb-item>
@@ -724,62 +746,323 @@ How to get started Before you get started, there are three things to keep in min
 <a href=https://docs.kianda.com/apis/instances/>Instances</a>
 </li></ol></nav><div class=td-content>
 <h1>Instances</h1><header class=article-meta>
-</header><hr>
-<h2 id=introduction>Introduction</h2><p>Kianda&rsquo;s REST Application Programming Interface (API) for <strong>instances</strong> allows you to flexibly and efficiently perform database operations or methods such as create, update and get/retrieve values on <strong>process instances</strong>. A process instance is created every time data is either saved or submitted to Kianda&rsquo;s database for a given process design, see <a href=/platform/application-designer/process/process-instance/>Process instance</a> for more details.</p><h2 id=how-to-get-started>How to get started</h2><p>Before you get started, there are three things to keep in mind:</p><ol>
-<li>
-<p>To use API methods in Kianda you must have an <strong>administrator</strong> role, go to <a href=/platform/administration/users/>View and edit user details</a> to see information on how to set roles.</p></li><li>
-<p>Each API method requires a <strong>Bearer token</strong>, see <a href=/apis/authentication/>Authentication</a> for more details.</p></li><li>
-<p>Each of the following methods can be used on <strong>process instances</strong> or records, where <strong>{name}</strong> is the name of a process instance, such as &rsquo;training-approval-request-1'.</p></li></ol><h2 id=rest-api-methods>REST API Methods</h2><p>You can perform Create, Read, and Update operations on Kianda resources using standard HTTP method requests, as summarised below:</p><table>
+</header><p>The Instances API lets you create, retrieve, update and delete Kianda process instances. An <strong>instance</strong> is an individual process record, such as one incident report or one inspection. A <strong>process design</strong> defines the forms, fields and rules used by those records.</p><p>For integrations that set field values or change form properties, use the mapping-based <code>create</code> and <code>update</code> endpoints. Use the document endpoints when your integration works with a complete Kianda instance JSON document.</p><h2 id=endpoint-reference>Endpoint reference</h2><p>All paths are relative to your workspace URL.</p><table>
 <thead>
 <tr>
-<th>Method</th><th>Description</th></tr></thead><tbody>
+<th>Method</th><th>Path</th><th>Purpose</th></tr></thead><tbody>
 <tr>
-<td><a href=#create-a-process-instance-post>POST</a></td><td>Create a process instance</td></tr><tr>
-<td><a href=#read/retrieve-a-process-instance-get>GET</a></td><td>Read/Retrieve process instance fields</td></tr><tr>
-<td><a href=#update-a-process-instance-put>PUT</a></td><td>Update a process instance</td></tr><tr>
-<td>PATCH</td><td>Partially update a process instance</td></tr></tbody></table><p>Before any of the requests are used, you must have the bearer access token inserted into the request header, see <a href=/apis/authentication/>Authentication</a> for details.</p><h2 id=create-a-process-instance---post>Create a process instance - POST</h2><p>This request creates a process instance/new record. To use POST:</p><ol>
-<li>Use the following request format:</li></ol><pre tabindex=0><code>{{domain}}/api/instances/create
-</code></pre><ol start=2>
-<li>
-<p>Ensure that the <strong>bearer</strong> token is inserted into the authorisation header</p><p><img src=/images/create-instance.jpg alt="Create instance example"></p></li><li>
-<p>Pass parameters into the body of the request, for example to create a new instance of a process called &rsquo;new-training-process&rsquo; where a textbox field called &lsquo;Reason&rsquo; will be prepopulated with a value:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span> <span style=color:#204a87;font-weight:700>&#34;processName&#34;</span> <span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;new-training-process&#34;</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span> <span style=color:#204a87;font-weight:700>&#34;instanceID&#34;</span> <span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;new-training-process&#34;</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span> <span style=color:#204a87;font-weight:700>&#34;TriggerField&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span> <span style=color:#204a87;font-weight:700>&#34;FieldsMappings&#34;</span><span style=color:#000;font-weight:700>:[{</span>
-</span></span><span style=display:flex><span>   <span style=color:#204a87;font-weight:700>&#34;FieldName&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;reason&#34;</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span>   <span style=color:#204a87;font-weight:700>&#34;Text&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;New employee&#34;</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span>   <span style=color:#204a87;font-weight:700>&#34;Value&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;New employee&#34;</span>
+<td><code>POST</code></td><td><code>/api/instances/create</code></td><td><a href=#create-an-instance>Create an instance</a> from a process design and field mappings.</td></tr><tr>
+<td><code>POST</code></td><td><code>/api/instances/createBulk</code></td><td><a href=#create-multiple-instances>Create multiple instances</a> using an array of create requests.</td></tr><tr>
+<td><code>PATCH</code></td><td><code>/api/instances/{name}/update</code></td><td><a href=#update-an-instance>Update an instance</a> using field and form mappings.</td></tr><tr>
+<td><code>PATCH</code></td><td><code>/api/instances/updateBulk</code></td><td><a href=#update-multiple-instances>Update multiple instances</a> using an array of update requests.</td></tr><tr>
+<td><code>GET</code></td><td><code>/api/instances/{name}</code></td><td><a href=#get-an-instance-document>Get an instance document</a>.</td></tr><tr>
+<td><code>GET</code></td><td><code>/api/instances/{name}/version</code></td><td><a href=#get-instance-version-information>Get instance version information</a>.</td></tr><tr>
+<td><code>PUT</code></td><td><code>/api/instances/{name}</code></td><td><a href=#update-using-an-instance-document>Update using an instance document</a>.</td></tr><tr>
+<td><code>POST</code></td><td><code>/api/instances</code></td><td><a href=#submit-an-instance-document>Submit an instance document</a>.</td></tr><tr>
+<td><code>DELETE</code></td><td><code>/api/instances/{name}</code></td><td><a href=#delete-an-instance>Delete an instance</a>.</td></tr><tr>
+<td><code>POST</code></td><td><code>/api/instances/bulkdelete</code></td><td><a href=#delete-multiple-instances>Delete multiple instances</a>.</td></tr><tr>
+<td><code>GET</code></td><td><code>/api/instances/{name}/fields</code></td><td><a href=#get-selected-fields>Get selected fields</a> from an instance.</td></tr></tbody></table><h2 id=authentication-and-request-format>Authentication and request format</h2><p>Send requests to the workspace that contains the target process and instances. Obtain a bearer access token as described in <a href=/apis/authentication/>Authentication</a>, and use an account with permission to perform the requested operation.</p><p>Include these headers on requests with a JSON body:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>Authorization: Bearer YOUR_ACCESS_TOKEN
+</span></span></span><span style=display:flex><span><span style=color:#a40000>Accept: application/json
+</span></span></span><span style=display:flex><span><span style=color:#a40000>Content-Type: application/json
+</span></span></span></code></pre></div><p><code>GET</code> requests and the single-instance <code>DELETE</code> request have no request body; the <code>Content-Type</code> header is unnecessary for those examples.</p><h3 id=run-the-examples>Run the examples</h3><p>The cURL examples use Bash-style environment variables and cURL 7.76.0 or later. They include <a href=https://curl.se/docs/manpage.html#--fail-with-body><code>--fail-with-body</code></a> so HTTP responses with a status of 400 or above produce a non-zero exit status while retaining the response body.</p><p>Set these variables before running an example:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#204a87>export</span> <span style=color:#000>KIANDA_BASE_URL</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;https://your-workspace.kianda.com&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#204a87>export</span> <span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#ce5c00;font-weight:700>=</span><span style=color:#4e9a06>&#34;YOUR_ACCESS_TOKEN&#34;</span>
+</span></span></code></pre></div><p>Set <code>KIANDA_BASE_URL</code> to your workspace&rsquo;s base URL, without a trailing slash. Use your workspace&rsquo;s custom domain if applicable.</p><p>Process, instance, form and field identifiers in the examples are illustrative. Replace them with identifiers from your workspace. Example field values must also be valid for the target field and its configuration.</p><p>Examples are independent. For operations on existing instances, replace the sample instance name with an actual instance name from your workspace.</p><h2 id=identifiers-and-property-names>Identifiers and property names</h2><table>
+<thead>
+<tr>
+<th>Identifier</th><th>Meaning</th><th>Example</th></tr></thead><tbody>
+<tr>
+<td><code>ProcessName</code></td><td>The identifier of a <strong>process design</strong>, despite the property name.</td><td><code>incident-report</code></td></tr><tr>
+<td><code>{name}</code></td><td>The name of an existing <strong>process instance</strong>, used in the URL.</td><td><code>incident-report-42</code></td></tr><tr>
+<td><code>InstanceName</code></td><td>The instance name supplied in an update request body.</td><td><code>incident-report-42</code></td></tr><tr>
+<td><code>FieldName</code></td><td>A field&rsquo;s internal <code>name</code>, unique within the process.</td><td><code>description</code></td></tr><tr>
+<td><code>FormName</code></td><td>A form&rsquo;s internal unique name.</td><td><code>incident-details</code></td></tr><tr>
+<td><code>CurrentFormName</code></td><td>The internal name of the form to set as the current workflow form.</td><td><code>review</code></td></tr></tbody></table><p>Use internal field and form names when constructing mappings. Display labels and titles may differ from these names. An instance document&rsquo;s <code>id</code> and <code>name</code> are separate properties; the routes containing <code>{name}</code> use the instance name.</p><p>Mapping request properties use the spelling and casing shown in this reference, such as <code>FieldsMappings</code>, <code>FieldName</code> and <code>InstanceName</code>. Instance documents contain properties such as <code>name</code>, <code>forms</code>, <code>value</code> and <code>text</code>.</p><h2 id=field-mappings>Field mappings</h2><p>Both create and update requests use <code>InstanceRequestFieldMapping</code> objects in <code>FieldsMappings</code>.</p><table>
+<thead>
+<tr>
+<th>Property</th><th>JSON type</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td><code>FieldName</code></td><td>String</td><td>Internal name of the field to target. Corresponds to <code>field.name</code>.</td></tr><tr>
+<td><code>Value</code></td><td>Any JSON value</td><td>Value to assign to <code>field.value</code>. Supply the JSON structure expected by the target field.</td></tr><tr>
+<td><code>Text</code></td><td>String</td><td>Text to assign to <code>field.text</code>, for example the display text associated with a selected value.</td></tr><tr>
+<td><code>Visible</code></td><td>Boolean or <code>null</code></td><td><code>true</code> shows the field; <code>false</code> hides it. An omitted or <code>null</code> setting does not request a visibility change.</td></tr><tr>
+<td><code>Enabled</code></td><td>Boolean or <code>null</code></td><td><code>true</code> enables the field; <code>false</code> disables it. An omitted or <code>null</code> setting does not request an enabled-state change.</td></tr></tbody></table><p>For example, this mapping assigns a location value and display text, and explicitly shows and enables the field:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;FieldName&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;location&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;Value&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;dublin-depot&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;Text&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Dublin depot&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;Visible&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;Enabled&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span>
+</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
+</span></span></code></pre></div><p><code>Value</code> is represented by <code>JToken</code> in the request model. It can therefore carry a JSON string, number, boolean, object, array or <code>null</code>. The target field determines which of those representations is valid. For example, send a numeric JSON value when the field expects a number.</p><p><code>Value</code> and <code>Text</code> target separate properties. When your change requires both a stored value and corresponding display text, supply both. For updates, include mappings for the fields you intend to target. The nullable behaviour of <code>Visible</code> and <code>Enabled</code> should not be used as a general rule for clearing or preserving <code>Value</code> and <code>Text</code>.</p><h2 id=background-execution>Background execution</h2><p>Create and update requests support <code>TriggerField</code> and <code>ExecuteInSeries</code>:</p><table>
+<thead>
+<tr>
+<th>Property</th><th>JSON type</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td><code>TriggerField</code></td><td>String</td><td>Internal name of the field to schedule as a background task.</td></tr><tr>
+<td><code>ExecuteInSeries</code></td><td>String</td><td>Accepts <code>"yes"</code> or <code>"no"</code>. Set <code>"yes"</code> to request that tasks created by the trigger field execute one after another. Set <code>"no"</code> when serial execution is not being requested.</td></tr></tbody></table><p>For example, a request can include:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;TriggerField&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;submit&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;ExecuteInSeries&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;yes&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
+</span></span></code></pre></div><p>This is a request fragment: include these properties in a create or update body. <code>ExecuteInSeries</code> uses strings; the visibility and enabled properties use JSON booleans.</p><p>Background processing is scheduled separately from the API request. Receiving the HTTP response does not establish that the scheduled work has finished. <code>ExecuteInSeries</code> describes execution of the triggered tasks; it does not define the processing order of items in a bulk API request.</p><h2 id=create-an-instance>Create an instance</h2><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>POST /api/instances/create
+</span></span></span></code></pre></div><p>Creates an instance from the process design identified by <code>ProcessName</code>, applying the supplied field mappings. Use this endpoint when you have a process design identifier and values to populate.</p><h3 id=request-body>Request body</h3><p>One <code>CreateInstanceRequest</code> object:</p><table>
+<thead>
+<tr>
+<th>Property</th><th>JSON type</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td><code>ProcessName</code></td><td>String</td><td>Identifier of the process design from which to create the instance.</td></tr><tr>
+<td><code>FieldsMappings</code></td><td>Array of field mappings</td><td>Field values, text and presentation properties to apply. See <a href=#field-mappings>Field mappings</a>.</td></tr><tr>
+<td><code>TriggerField</code></td><td>String</td><td>Field to schedule as a background task. See <a href=#background-execution>Background execution</a>.</td></tr><tr>
+<td><code>ExecuteInSeries</code></td><td>String</td><td><code>"yes"</code> or <code>"no"</code>, controlling whether the triggered tasks are requested to execute in series.</td></tr><tr>
+<td><code>Status</code></td><td>String or <code>null</code></td><td>Process instance status to set. Use <code>null</code> to ignore this setting.</td></tr></tbody></table><p>Use the status values supported by the target process. This reference does not define a fixed status enumeration.</p><h3 id=example>Example</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --request POST <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances/create&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Content-Type: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --data <span style=color:#4e9a06>&#39;{
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>    &#34;ProcessName&#34;: &#34;incident-report&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>    &#34;FieldsMappings&#34;: [
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>      {
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;FieldName&#34;: &#34;description&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;Value&#34;: &#34;Loose handrail reported at the loading bay.&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;Text&#34;: &#34;Loose handrail reported at the loading bay.&#34;
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>      },
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>      {
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;FieldName&#34;: &#34;location&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;Value&#34;: &#34;dublin-depot&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;Text&#34;: &#34;Dublin depot&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;Visible&#34;: true,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;Enabled&#34;: true
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>      }
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>    ],
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>    &#34;Status&#34;: null
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>  }&#39;</span>
+</span></span></code></pre></div><p>Add <code>TriggerField</code> and <code>ExecuteInSeries</code> when background execution is part of the operation.</p><h3 id=success-response>Success response</h3><p>Returns <strong><code>200 OK</code></strong> with a JSON object:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;success&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;instanceID&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;example-created-instance-id&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Property</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td><code>success</code></td><td><code>true</code> in the successful response.</td></tr><tr>
+<td><code>instanceID</code></td><td>Identifier returned by the create result&rsquo;s <code>id</code> property (<code>result.id</code>). The example identifier is illustrative.</td></tr></tbody></table><h2 id=create-multiple-instances>Create multiple instances</h2><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>POST /api/instances/createBulk
+</span></span></span></code></pre></div><p>Creates multiple instances using the same request model as <a href=#create-an-instance>Create an instance</a>. Each array item identifies its process design and supplies its own mappings and execution settings.</p><h3 id=request-body-1>Request body</h3><p>A top-level JSON array of <code>CreateInstanceRequest</code> objects:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>[</span>
+</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>&#34;ProcessName&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;incident-report&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>&#34;FieldsMappings&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>[</span>
+</span></span><span style=display:flex><span>      <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;FieldName&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;description&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;Value&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Loose handrail at the loading bay.&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;Text&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Loose handrail at the loading bay.&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#000;font-weight:700>}</span>
+</span></span><span style=display:flex><span>    <span style=color:#000;font-weight:700>]</span>
+</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>&#34;ProcessName&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;incident-report&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>&#34;FieldsMappings&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>[</span>
+</span></span><span style=display:flex><span>      <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;FieldName&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;description&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;Value&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Damaged floor marking in the warehouse.&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;Text&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Damaged floor marking in the warehouse.&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#000;font-weight:700>}</span>
+</span></span><span style=display:flex><span>    <span style=color:#000;font-weight:700>]</span>
 </span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>}</span>
-</span></span><span style=display:flex><span> <span style=color:#000;font-weight:700>]</span>
+</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>]</span>
+</span></span></code></pre></div><p>Save the array as <code>create-requests.json</code>, then submit it:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --request POST <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances/createBulk&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Content-Type: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --data-binary @create-requests.json
+</span></span></code></pre></div><p>The array itself is the request body. Each item has the same properties described for a single create request.</p><h3 id=success-response-1>Success response</h3><p>Returns <strong><code>200 OK</code></strong> with a JSON object:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;success&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;instanceIDs&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>[</span>
+</span></span><span style=display:flex><span>    <span style=color:#4e9a06>&#34;example-created-instance-id-1&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#4e9a06>&#34;example-created-instance-id-2&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>]</span>
 </span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div></li><li>
-<p>The <strong>Response Body</strong> will be as follows:</p></li></ol><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;success&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#204a87;font-weight:700>true</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;instanceID&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;new-training-process-70&#34;</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Property</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td><code>success</code></td><td><code>true</code> in the successful response.</td></tr><tr>
+<td><code>instanceIDs</code></td><td>Array of instance identifiers collected during creation. The example identifiers are illustrative.</td></tr></tbody></table><p>The property name is <code>instanceIDs</code> for bulk creation. The response does not include a per-item result object alongside each identifier.</p><h2 id=update-an-instance>Update an instance</h2><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>PATCH /api/instances/{name}/update
+</span></span></span></code></pre></div><p>Applies field and form mappings to an existing instance. It can also set the process status, select the current workflow form and schedule a trigger field.</p><h3 id=path-parameter>Path parameter</h3><table>
+<thead>
+<tr>
+<th>Parameter</th><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td><code>name</code></td><td>String</td><td>Name of the instance to update.</td></tr></tbody></table><h3 id=request-body-2>Request body</h3><p>One <code>UpdateInstanceRequest</code> object:</p><table>
+<thead>
+<tr>
+<th>Property</th><th>JSON type</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td><code>InstanceName</code></td><td>String</td><td>Name of the instance to update. Use the same instance name as the URL.</td></tr><tr>
+<td><code>FieldsMappings</code></td><td>Array of field mappings</td><td>Field changes to apply. Uses the same mapping model as create.</td></tr><tr>
+<td><code>TriggerField</code></td><td>String</td><td>Field to schedule as a background task.</td></tr><tr>
+<td><code>ExecuteInSeries</code></td><td>String</td><td><code>"yes"</code> or <code>"no"</code> for execution of triggered tasks.</td></tr><tr>
+<td><code>Status</code></td><td>String</td><td>Process instance status to set.</td></tr><tr>
+<td><code>FormMappings</code></td><td>Array of form mappings</td><td>Form visibility, enabled-state or status changes. See the model below.</td></tr><tr>
+<td><code>CurrentFormName</code></td><td>String</td><td>Optional internal form name to set as the current workflow form.</td></tr></tbody></table><p>The request supplies the instance name in both the URL and <code>InstanceName</code>. Keep these values identical.</p><h3 id=form-mappings>Form mappings</h3><p>Each <code>InstanceRequestFormMapping</code> targets one form:</p><table>
+<thead>
+<tr>
+<th>Property</th><th>JSON type</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td><code>FormName</code></td><td>String</td><td>Internal unique name of the form to target.</td></tr><tr>
+<td><code>Visible</code></td><td>Boolean or <code>null</code></td><td>Optional visibility setting: <code>true</code> shows the form; <code>false</code> hides it.</td></tr><tr>
+<td><code>Enabled</code></td><td>Boolean or <code>null</code></td><td>Optional enabled setting: <code>true</code> enables the form; <code>false</code> disables it.</td></tr><tr>
+<td><code>Status</code></td><td>String</td><td>Optional status to assign to this form.</td></tr></tbody></table><p>Omit or use <code>null</code> for form visibility and enabled settings when you are not requesting a change to those flags. Process status, individual form status and the current workflow form are separate settings.</p><h3 id=example-update-a-field-and-select-the-review-form>Example: update a field and select the review form</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --request PATCH <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances/incident-report-42/update&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Content-Type: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --data <span style=color:#4e9a06>&#39;{
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>    &#34;InstanceName&#34;: &#34;incident-report-42&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>    &#34;FieldsMappings&#34;: [
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>      {
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;FieldName&#34;: &#34;description&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;Value&#34;: &#34;Loading bay handrail isolated pending repair.&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;Text&#34;: &#34;Loading bay handrail isolated pending repair.&#34;
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>      }
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>    ],
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>    &#34;FormMappings&#34;: [
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>      {
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;FormName&#34;: &#34;review&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;Visible&#34;: true,
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>        &#34;Enabled&#34;: true
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>      }
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>    ],
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>    &#34;CurrentFormName&#34;: &#34;review&#34;
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06>  }&#39;</span>
+</span></span></code></pre></div><p>To set statuses, add the process <code>Status</code> at the top level and the form <code>Status</code> inside the relevant <code>FormMappings</code> item. Use accepted status values for the process and form. Selecting <code>CurrentFormName</code> sets the current workflow form; use <code>TriggerField</code> when you also need to schedule background execution.</p><h3 id=success-response-2>Success response</h3><p>Returns <strong><code>200 OK</code></strong> with a JSON object:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;success&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;instanceID&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;incident-report-42&#34;</span>
 </span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div><p>In the example above a new instance is created with an ID &rsquo;new-training-process-70&rsquo;. The new instance can be see in a List widget in a dashboard as follows.</p><p><img src=/images/instance-api-example.jpg alt="New instance example using Instance API"></p><p>In this example the <strong>Reason</strong> text box is populated from the POST request.</p><p><img src=/images/new-training-process-70.jpg alt="New training process instance with field populated"></p><h2 id=readretrieve-process-instance-fields---get>Read/Retrieve process instance fields - GET</h2><pre tabindex=0><code>{{domain}}/api/instances/{name}/fields?names=field1,field2..
-</code></pre><pre><code>where `{name}`is the name of the process instance.
-</code></pre><p>This request retrieves the values of multiple fields by name.</p><p>No Request Body is required.</p><p>The <strong>Response Body</strong> will be as follows:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;name&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;text&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;value&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Property</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td><code>success</code></td><td><code>true</code> in the successful response.</td></tr><tr>
+<td><code>instanceID</code></td><td>The <code>InstanceName</code> supplied in the request body.</td></tr></tbody></table><h2 id=update-multiple-instances>Update multiple instances</h2><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>PATCH /api/instances/updateBulk
+</span></span></span></code></pre></div><p>Applies multiple update requests. Each item has the same structure as <a href=#update-an-instance>Update an instance</a>, including its own <code>InstanceName</code>.</p><h3 id=request-body-3>Request body</h3><p>A top-level JSON array of <code>UpdateInstanceRequest</code> objects:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>[</span>
+</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>&#34;InstanceName&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;incident-report-42&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>&#34;FieldsMappings&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>[</span>
+</span></span><span style=display:flex><span>      <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;FieldName&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;description&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;Value&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Handrail repair has been arranged.&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;Text&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Handrail repair has been arranged.&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#000;font-weight:700>}</span>
+</span></span><span style=display:flex><span>    <span style=color:#000;font-weight:700>]</span>
+</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>},</span>
+</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>&#34;InstanceName&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;incident-report-43&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>    <span style=color:#204a87;font-weight:700>&#34;FieldsMappings&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>[</span>
+</span></span><span style=display:flex><span>      <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;FieldName&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;description&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;Value&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Replacement floor markings have been ordered.&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>        <span style=color:#204a87;font-weight:700>&#34;Text&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Replacement floor markings have been ordered.&#34;</span>
+</span></span><span style=display:flex><span>      <span style=color:#000;font-weight:700>}</span>
+</span></span><span style=display:flex><span>    <span style=color:#000;font-weight:700>]</span>
+</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>}</span>
+</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>]</span>
+</span></span></code></pre></div><p>Save the array as <code>update-requests.json</code>, then submit it:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --request PATCH <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances/updateBulk&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Content-Type: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --data-binary @update-requests.json
+</span></span></code></pre></div><p>The bulk route has no <code>{name}</code> segment. Each item identifies its target using <code>InstanceName</code>.</p><h3 id=success-response-3>Success response</h3><p>Returns <strong><code>200 OK</code></strong> with a JSON object:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;success&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#204a87;font-weight:700>true</span>
 </span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div><h2 id=update-a-process-instance---put>Update a process instance - PUT</h2><pre tabindex=0><code>{{domain}}/api/instances/{name}
-</code></pre><pre><code>where `{name}`is the name of the process instance.
-</code></pre><p>This request updates all fields in the instance by performing a comparison based on version number, to ensure there are no duplicate process instances.</p><p>The <strong>Request Body</strong> for the PUT request is:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;ProcessName&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;FieldsMappings&#34;</span><span style=color:#000;font-weight:700>:[],</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;TriggerField&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;Status&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;&#34;</span>
+</span></span></code></pre></div><p>This success response contains an overall success flag. It does not include instance identifiers, updated documents or individual update results.</p><h2 id=get-an-instance-document>Get an instance document</h2><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>GET /api/instances/{name}
+</span></span></span></code></pre></div><p>Retrieves the full JSON document for an instance, including its identity, version, forms and fields.</p><h3 id=example-1>Example</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --request GET <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances/incident-report-42&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span>
+</span></span></code></pre></div><h3 id=response>Response</h3><p>The response is the instance JSON document. The following abbreviated example illustrates its structure; identifier and version strings are placeholders, and additional document properties are omitted.</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;id&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;example-instance-id&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;name&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;incident-report-42&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;version&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;example-version&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#204a87;font-weight:700>&#34;forms&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>[</span>
+</span></span><span style=display:flex><span>    <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>      <span style=color:#204a87;font-weight:700>&#34;title&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Incident details&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>      <span style=color:#204a87;font-weight:700>&#34;name&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;incident-details&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>      <span style=color:#204a87;font-weight:700>&#34;fields&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#000;font-weight:700>[</span>
+</span></span><span style=display:flex><span>        <span style=color:#000;font-weight:700>{</span>
+</span></span><span style=display:flex><span>          <span style=color:#204a87;font-weight:700>&#34;name&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;description&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>          <span style=color:#204a87;font-weight:700>&#34;value&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Loose handrail reported at the loading bay.&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>          <span style=color:#204a87;font-weight:700>&#34;text&#34;</span><span style=color:#000;font-weight:700>:</span> <span style=color:#4e9a06>&#34;Loose handrail reported at the loading bay.&#34;</span>
+</span></span><span style=display:flex><span>        <span style=color:#000;font-weight:700>}</span>
+</span></span><span style=display:flex><span>      <span style=color:#000;font-weight:700>]</span>
+</span></span><span style=display:flex><span>    <span style=color:#000;font-weight:700>}</span>
+</span></span><span style=display:flex><span>  <span style=color:#000;font-weight:700>]</span>
 </span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div><p>The <strong>Response Body</strong> will be as follows:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>{</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;ProcessName&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;FieldsMappings&#34;</span><span style=color:#000;font-weight:700>:[],</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;TriggerField&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;&#34;</span><span style=color:#000;font-weight:700>,</span>
-</span></span><span style=display:flex><span>	<span style=color:#204a87;font-weight:700>&#34;Status&#34;</span><span style=color:#000;font-weight:700>:</span><span style=color:#4e9a06>&#34;&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>}</span>
-</span></span></code></pre></div></div><ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
+</span></span></code></pre></div><p>Use the actual full response when your integration needs an instance document for a later document update. The example above is a structural excerpt, not a complete write payload.</p><h2 id=get-instance-version-information>Get instance version information</h2><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>GET /api/instances/{name}/version
+</span></span></span></code></pre></div><p>Retrieves modification, version and status information without retrieving the full instance document.</p><h3 id=example-2>Example</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --request GET <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances/incident-report-42/version&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span>
+</span></span></code></pre></div><h3 id=response-1>Response</h3><p>A JSON object containing these properties:</p><table>
+<thead>
+<tr>
+<th>Property</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td><code>modified</code></td><td>The instance&rsquo;s modification value, returned from <code>Modified</code>.</td></tr><tr>
+<td><code>version</code></td><td>The instance&rsquo;s version, returned from <code>Version</code>.</td></tr><tr>
+<td><code>id</code></td><td>The instance document&rsquo;s <code>id</code>.</td></tr><tr>
+<td><code>status</code></td><td>The process instance&rsquo;s status, returned from <code>Status</code>.</td></tr></tbody></table><p>Treat these as server-supplied metadata.</p><h2 id=update-using-an-instance-document>Update using an instance document</h2><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>PUT /api/instances/{name}
+</span></span></span></code></pre></div><p>Updates an instance using a Kianda instance JSON document as the request body. Use this endpoint when your integration already handles the document structure, including forms and fields. For targeted changes expressed as mappings, use <a href=#update-an-instance>Update an instance</a>.</p><h3 id=request-body-4>Request body</h3><p>The instance JSON document itself. Preserve its structure and properties that your integration is not intentionally changing.</p><p>A typical document-editing sequence is:</p><ol>
+<li>Retrieve the instance using <code>GET /api/instances/{name}</code>.</li><li>Edit the relevant properties in the returned document.</li><li>Send the resulting document to <code>PUT /api/instances/{name}</code> for the same instance.</li></ol><p>For example, retrieve the current document into <code>instance.json</code>:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --request GET <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances/incident-report-42&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --output instance.json
+</span></span></code></pre></div><p>Check that the request succeeded and the file contains the instance document. After making the intended edits, submit it:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --request PUT <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances/incident-report-42&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Content-Type: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --data-binary @instance.json
+</span></span></code></pre></div><h3 id=response-2>Response</h3><p>The controller returns a JSON document.</p><h2 id=submit-an-instance-document>Submit an instance document</h2><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>POST /api/instances
+</span></span></span></code></pre></div><p>Accepts an instance JSON document directly. Use this route when your integration constructs a valid Kianda instance document. To create an instance from a process design identifier and field mappings, use <a href=#create-an-instance>Create an instance</a>.</p><h3 id=request-body-5>Request body</h3><p>The instance JSON document itself, prepared with the structure required by the process. The abbreviated <code>GET</code> example is not a complete document-creation schema.</p><h3 id=example-3>Example</h3><p>Save the prepared document as <code>new-instance.json</code>, then submit it:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --request POST <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Content-Type: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --data-binary @new-instance.json
+</span></span></code></pre></div><h3 id=response-3>Response</h3><p>The controller returns a JSON document.</p><h2 id=delete-an-instance>Delete an instance</h2><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>DELETE /api/instances/{name}
+</span></span></span></code></pre></div><p>Deletes the instance identified by its name. No request body is required.</p><h3 id=example-4>Example</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --request DELETE <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances/incident-report-42&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span>
+</span></span></code></pre></div><h3 id=response-4>Response</h3><p>The controller returns a JSON document.</p><h2 id=delete-multiple-instances>Delete multiple instances</h2><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>POST /api/instances/bulkdelete
+</span></span></span></code></pre></div><p>Deletes multiple instances in one request.</p><h3 id=request-body-6>Request body</h3><p>A top-level JSON array of strings identifying the instances to delete:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#000;font-weight:700>[</span>
+</span></span><span style=display:flex><span>  <span style=color:#4e9a06>&#34;incident-report-42&#34;</span><span style=color:#000;font-weight:700>,</span>
+</span></span><span style=display:flex><span>  <span style=color:#4e9a06>&#34;incident-report-43&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#000;font-weight:700>]</span>
+</span></span></code></pre></div><h3 id=example-5>Example</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --request POST <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances/bulkdelete&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Content-Type: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --data <span style=color:#4e9a06>&#39;[&#34;incident-report-42&#34;, &#34;incident-report-43&#34;]&#39;</span>
+</span></span></code></pre></div><p>The body is the string array itself. The action&rsquo;s parameter name, <code>instances</code>, is not a JSON wrapper property.</p><h3 id=success-response-4>Success response</h3><p>Returns <strong><code>200 OK</code></strong>. With <code>Accept: application/json</code>, the response body is a JSON string:</p><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json><span style=display:flex><span><span style=color:#4e9a06>&#34;Completed&#34;</span>
+</span></span></code></pre></div><p>A JSON-aware client parses this response into the string <code>Completed</code>. There is no <code>success</code> property in this response.</p><h2 id=get-selected-fields>Get selected fields</h2><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-http data-lang=http><span style=display:flex><span><span style=color:#a40000>GET /api/instances/{name}/fields
+</span></span></span></code></pre></div><p>Retrieves selected fields from the instance document. No request body is required.</p><h3 id=parameters>Parameters</h3><table>
+<thead>
+<tr>
+<th>Parameter</th><th>Location</th><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td><code>name</code></td><td>Path</td><td>String</td><td>Name of the instance to read.</td></tr><tr>
+<td><code>names</code></td><td>Query string</td><td>String</td><td>Field selector using internal field names. The action parameter defaults to an empty string when omitted. Specify a field name explicitly for a selective read.</td></tr></tbody></table><h3 id=example-retrieve-one-field>Example: retrieve one field</h3><div class=highlight><pre tabindex=0 style=background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl --fail-with-body --get <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  <span style=color:#4e9a06>&#34;</span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_BASE_URL</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>/api/instances/incident-report-42/fields&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Authorization: Bearer </span><span style=color:#4e9a06>${</span><span style=color:#000>KIANDA_ACCESS_TOKEN</span><span style=color:#4e9a06>}</span><span style=color:#4e9a06>&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --header <span style=color:#4e9a06>&#34;Accept: application/json&#34;</span> <span style=color:#4e9a06>\
+</span></span></span><span style=display:flex><span><span style=color:#4e9a06></span>  --data-urlencode <span style=color:#4e9a06>&#34;names=description&#34;</span>
+</span></span></code></pre></div><p>This example selects the field whose internal name is <code>description</code>. <code>--data-urlencode</code> encodes the query parameter value.</p><h3 id=response-5>Response</h3><p>Returns the selected fields from the instance document.</p><h2 id=response-handling>Response handling</h2><p>Read the HTTP status and response body for each operation. The successful responses for <code>create</code>, <code>createBulk</code>, the mapping-based single update, <code>updateBulk</code> and <code>bulkdelete</code> all use <code>200 OK</code>.</p><p>Parse the body according to the endpoint. The create and update responses documented above are JSON objects; <code>bulkdelete</code> returns the JSON string <code>"Completed"</code> when JSON is requested. Other response formats are described in their endpoint sections. Error status codes and error response schemas are not specified in this reference.</p><p>The source of the <code>instanceID</code> response value is endpoint-specific: create returns <code>result.id</code>, while the mapping-based single update returns <code>request.InstanceName</code>. Use the instance name for routes containing <code>{name}</code>; the create return statement alone does not establish whether its returned identifier is interchangeable with that name.</p><p>This reference does not specify bulk atomicity, rollback, item ordering, retry deduplication or per-item error reporting. After an uncertain result, establish what was applied before repeating a write or an entire batch.</p></div><ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
 <li>
 <a class="btn btn-outline-primary" href=/apis/authentication/>
 <span class=mr-1>←</span>
