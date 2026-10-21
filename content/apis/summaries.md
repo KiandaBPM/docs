@@ -74,8 +74,7 @@ The controller accepts a query in the request body:
 
 ```csharp
 [HttpPost]
-public async Task<IEnumerable<Models.Summary>> Post(
-    [FromBody] Models.Query query)
+public async Task<IEnumerable<Models.Summary>> Post([FromBody] Models.Query query)
 ```
 
 The following request retrieves the first page of action instances, ordered by their custom ID:
@@ -153,7 +152,7 @@ The tile and chart examples retain the row limits used by those request patterns
 | `queryType` | String | Additional relationship filter: `all`, `assignedTo`, `createdBy`, or `modifiedBy`. |
 | `page` | Integer | Zero-based list page. `0` is the first page; `1` is the second. |
 | `isListWidget` | Boolean | Enables list-widget result identities that isolate cached summaries by widget. |
-| `id` | String | The widget identifier used with `isListWidget`; also appears as the result identifier in the chart examples. |
+| `id` | String | The query identity used with `isListWidget`; also identifies aggregate datasets in the client store. Use distinct IDs for separate tile or chart datasets, even when one widget requests them. |
 | `isOData` | Boolean | Enables additional typed or related field properties, such as date `_utc`, numeric `_number`, and user `_email` properties. It does not change the JSON body into an OData response envelope. |
 | `sortFieldType` | String | Selects the indexed representation used for sorting: text, date, or number. |
 | `additionalSortings` | Array | Additional sorting configuration carried by built-in list widgets. The examples here use a single explicit sort and do not define a descriptor format for additional sorts. |
@@ -936,19 +935,20 @@ const query = {
   },
   fields: fieldNames,
   conditions: conditions,
-  rowLimit: pageSize
+  rowLimit: pageSize,
+  preferOnline: true
 };
 
 const pending = this.get("store").query("summary", query);
 ```
 
-The full list implementation also handles cached results, a possible `pending.onlinePromise`, and subsequent record synchronization. Those are Kianda client-store behaviours. They are separate from the raw HTTP response, which contains an array plus the `total-items` header for lists.
+For custom page widgets, use `preferOnline: true` as shown above and await the returned `pending` Promise inside an error-handled asynchronous method. This option provides one Promise for the result. The full built-in list implementation can go further by handling cached results, a possible `pending.onlinePromise`, and subsequent record synchronization. That dual-result path is an advanced client-store behaviour, separate from the raw HTTP response, which contains an array plus the `total-items` header for lists.
 
 Similarly, `data.meta` in widget code is client-side metadata. A direct REST consumer should read the HTTP header rather than expect `data.meta` in the returned JSON.
 
-The built-in list client adds `preferOnline` before calling the store. This is absent from the server `Query` model, so the direct REST examples omit it. The separate datasource branch in the full refresh function calls `dataService.queryFromWidget`; it is not the instance-summary request path described here.
+`preferOnline` is absent from the server `Query` model, so the direct REST examples omit it. The separate datasource branch in the full refresh function calls `dataService.queryFromWidget`; it is not the instance-summary request path described here.
 
-Page filter widgets can also generate conditions dynamically. Prepare the final conditions for the current request, including current date boundaries, before loading the results. Page-widget lifecycle, refresh coordination, and filter wiring belong in the page-widget development guide.
+Page filters temporarily merge condition groups marked with `filterId` into the target widget's live `widget.settings.conditions`, then fire its `refresh` action without arguments or awaiting a Promise. Clone that complete array, retaining the temporary groups, before preparing dates or adding request-specific conditions. Kianda removes a filter's temporary groups when it is cleared and removes temporary groups before saving the page. See [Page widget development](/low-code/page-widget/) for the complete component, refresh coordination, and filter wiring.
 
 ## 13. Call the API from JavaScript
 
@@ -1065,5 +1065,4 @@ Verify the intended results under the users who will run the integration, becaus
 - [Chart widget](/platform/pages/chart/)
 - [Filter widget](/platform/pages/filter/)
 - [Page widget development](/low-code/page-widget/)
-
 
