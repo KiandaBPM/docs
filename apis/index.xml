@@ -1,67 +1,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kianda low-code platform for business process automation – REST APIs</title><link>https://docs.kianda.com/apis/</link><description>Recent content in REST APIs on Kianda low-code platform for business process automation</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.kianda.com/apis/index.xml" rel="self" type="application/rss+xml"/><item><title>Apis: Authentication</title><link>https://docs.kianda.com/apis/authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/apis/authentication/</guid><description>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The framework used for authentication in Kianda is &lt;strong>OAuth 2.0&lt;/strong>. This framework uses industry-standard protocol for authorisation focusing on simplifying client developer practices, and at the same time providing specific authorisation flows for applications. The &lt;strong>OAuth 2.0&lt;/strong> framework uses &lt;strong>Bearer&lt;/strong> type tokens to authorise access to the platform for individual users. This type of token is required by Kianda to perform any &lt;strong>Create, Read, Update and Delete&lt;/strong> (CRUD) requests to external &lt;strong>Application Programming Interfaces&lt;/strong> (APIs).&lt;/p>
-&lt;p>When working &lt;strong>within&lt;/strong> Kianda, there is no need for the Bearer token when making API requests during widget, rule or field creation because the Bearer token is already retrieved as part of a user login. If you may want to create an application outside of Kianda however, this Bearer token needs to be provided for any CRUD operations to the API. There are two methods to retrieve the Bearer token:&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="#retrieving-a-bearer-token-using-a-post-request">Using a POST request&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#retrieving-a-bearer-token-usin-devtools">Using DevTools&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;p>Click on the links above to go the the relevant sections.&lt;/p>
-&lt;h3 id="retrieving-bearer-token-using-a-post-request">Retrieving Bearer token using a POST request&lt;/h3>
-&lt;p>You can retrieve a bearer token using a &lt;strong>POST&lt;/strong> request where the &lt;strong>content body type&lt;/strong> is is set to &lt;strong>application&lt;/strong>, &lt;strong>x-www-form-urlencoded&lt;/strong>.&lt;/p>
-&lt;p>The request will look like &lt;code>https://domain.com/token&lt;/code> where the domain is your company, for example &lt;code>https://green-itr.kianda.com/token&lt;/code> . For the request to be valid, you need to pass the following form parameters to the body of the request:&lt;/p>
+&lt;p>Kianda REST APIs use &lt;strong>OAuth 2.0 bearer tokens&lt;/strong>. Requests run with the authenticated user&amp;rsquo;s permissions, so the user must have access to the data and operations your integration requires.&lt;/p>
+&lt;p>Use your workspace&amp;rsquo;s HTTPS URL for token and API requests.&lt;/p>
+&lt;h2 id="request-an-access-token">Request an access token&lt;/h2>
+&lt;p>The request below uses Kianda&amp;rsquo;s existing password-grant interface.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>OAuth security guidance:&lt;/strong> &lt;a href="https://www.rfc-editor.org/rfc/rfc9700.html#section-2.4">RFC 9700, section 2.4&lt;/a> states that the resource owner password credentials grant must not be used. The example below documents Kianda&amp;rsquo;s existing interface.&lt;/p>
+&lt;/blockquote>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-http" data-lang="http">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">POST https://{workspace-domain}/token
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">Content-Type: application/x-www-form-urlencoded
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Send these parameters in the form-encoded request body:&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align:left">Parameter&lt;/th>
+&lt;th>Parameter&lt;/th>
 &lt;th>Value&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align:left">&lt;code>username:&lt;/code>&lt;/td>
-&lt;td>your Kianda username&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>password:&lt;/code>&lt;/td>
-&lt;td>your Kianda password&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>scope:&lt;/code>&lt;/td>
-&lt;td>your Kianda subscription ID&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>grant_type:&lt;/code>&lt;/td>
+&lt;td>&lt;code>grant_type&lt;/code>&lt;/td>
 &lt;td>&lt;code>password&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>username&lt;/code>&lt;/td>
+&lt;td>The Kianda user&amp;rsquo;s username.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>password&lt;/code>&lt;/td>
+&lt;td>The Kianda user&amp;rsquo;s password.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>scope&lt;/code>&lt;/td>
+&lt;td>The target workspace&amp;rsquo;s subscription ID.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>The &lt;strong>Response Body&lt;/strong> will be as follows:&lt;/p>
+&lt;p>For this request, &lt;code>scope&lt;/code> identifies the Kianda subscription. Find it under &lt;strong>Administration &amp;gt; Subscription &amp;gt; Subscription Details &amp;gt; Subscription Id&lt;/strong>.&lt;/p>
+&lt;p>The following example reads credentials and the subscription ID from environment variables. Set &lt;code>KIANDA_USERNAME&lt;/code>, &lt;code>KIANDA_PASSWORD&lt;/code>, and &lt;code>KIANDA_SUBSCRIPTION_ID&lt;/code>, and replace the workspace URL before running it.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>curl --request POST &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;https://your-workspace.kianda.com/token&amp;#39;&lt;/span> &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> --header &lt;span style="color:#4e9a06">&amp;#39;Content-Type: application/x-www-form-urlencoded&amp;#39;&lt;/span> &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> --data-urlencode &lt;span style="color:#4e9a06">&amp;#39;grant_type=password&amp;#39;&lt;/span> &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> --data-urlencode &lt;span style="color:#4e9a06">&amp;#34;username=&lt;/span>&lt;span style="color:#000">$KIANDA_USERNAME&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&lt;/span> &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> --data-urlencode &lt;span style="color:#4e9a06">&amp;#34;password=&lt;/span>&lt;span style="color:#000">$KIANDA_PASSWORD&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&lt;/span> &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> --data-urlencode &lt;span style="color:#4e9a06">&amp;#34;scope=&lt;/span>&lt;span style="color:#000">$KIANDA_SUBSCRIPTION_ID&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="token-response">Token response&lt;/h3>
+&lt;p>A successful response includes the following fields. Additional session metadata is omitted here.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;access_token&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Bearer access_token&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;access_token&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;access-token&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;token_type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;bearer&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;expires_in&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">299&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;userName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Provided username&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;userId&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Application userId&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;subscriptionId&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;SubscriptionID&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;securityStamp&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Token Security token (Guid)&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;hostURL&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Your kianda domain&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;.issued&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Token Issued Date and time&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;.expires&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;lt;Token Issued Date and time&amp;gt;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;expires_in&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">299&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can obtain the &lt;code>scope&lt;/code> value by going to &lt;strong>Administration&lt;/strong> &amp;gt; &lt;strong>Subscription&lt;/strong> &amp;gt; &lt;strong>Subscription Details&lt;/strong> &amp;gt; &lt;strong>Subscription Id&lt;/strong>.&lt;/p>
-&lt;p>&lt;img src="https://docs.kianda.com/images/subscription-details.jpg" alt="Subscription Id">&lt;/p>
-&lt;h3 id="retrieving-bearer-token-using-devtools">Retrieving Bearer token using DevTools&lt;/h3>
-&lt;p>You can retrieve your Bearer token using Chrome DevTools, making sure you are logged into Kianda. When logged in, open Chrome DevTools by:&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Use &lt;code>access_token&lt;/code> as an opaque credential. &lt;code>expires_in&lt;/code> gives its lifetime in seconds; &lt;code>299&lt;/code> is an example, not a fixed lifetime. Track the returned expiry and obtain a valid token before sending further requests after it expires.&lt;/p>
+&lt;h2 id="authenticate-api-requests">Authenticate API requests&lt;/h2>
+&lt;p>Include the token in the &lt;code>Authorization&lt;/code> request header:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-http" data-lang="http">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">Authorization: Bearer &amp;lt;access-token&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Keep credentials and tokens out of source code, URLs, and logs. A token authenticates the user; it does not grant additional permissions.&lt;/p>
+&lt;p>Continue with the &lt;a href="https://docs.kianda.com/apis/instances/">Instances API&lt;/a> to work with process documents, or the &lt;a href="https://docs.kianda.com/apis/summaries/">Summaries API&lt;/a> to search data and retrieve aggregates.&lt;/p>
+&lt;h2 id="calls-from-widgets-and-rules">Calls from widgets and rules&lt;/h2>
+&lt;p>Calls through Kianda&amp;rsquo;s client store use the signed-in user&amp;rsquo;s session. You do not need to request or embed a separate token for those calls. Authentication is still required and is handled by the platform.&lt;/p>
+&lt;h2 id="inspect-a-token-for-testing">Inspect a token for testing&lt;/h2>
+&lt;p>To test an API using your current Kianda session:&lt;/p>
 &lt;ol>
-&lt;li>Right clicking your mouse anywhere on the screen.&lt;/li>
-&lt;li>Click on &lt;strong>Inspect&lt;/strong> in the dialog box.&lt;/li>
-&lt;li>Open the &lt;strong>Network&lt;/strong> tab.&lt;/li>
-&lt;li>Click on the &lt;strong>info&lt;/strong> request.&lt;/li>
-&lt;li>In the &lt;strong>Header&lt;/strong> tab, scroll down to &lt;strong>authorisation&lt;/strong>. You can find your &lt;strong>Bearer&lt;/strong> token here.&lt;/li>
+&lt;li>Sign in to the target workspace.&lt;/li>
+&lt;li>Open your browser&amp;rsquo;s developer tools and select &lt;strong>Network&lt;/strong>.&lt;/li>
+&lt;li>Reload the page or perform an action that makes an authenticated Kianda API request.&lt;/li>
+&lt;li>Select the request and find &lt;strong>Authorization&lt;/strong> under &lt;strong>Request Headers&lt;/strong>.&lt;/li>
+&lt;li>Use the value after &lt;code>Bearer&lt;/code> as your access token.&lt;/li>
 &lt;/ol>
-&lt;h3 id="whats-next-idea-iconimages18png">What’s next &lt;img src="https://docs.kianda.com/images/18.png" alt="Idea icon">&lt;/h3>
-&lt;p>To learn more about Kianda&amp;rsquo;s API go to &lt;a href="https://docs.kianda.com/apis/instances/">Instance API&lt;/a>.&lt;/p></description></item><item><title>Apis: Instances</title><link>https://docs.kianda.com/apis/instances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/apis/instances/</guid><description>
+&lt;p>This copies an existing session token. It remains subject to expiry and is intended for temporary testing.&lt;/p></description></item><item><title>Apis: Instances</title><link>https://docs.kianda.com/apis/instances/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/apis/instances/</guid><description>
 &lt;p>The Instances API lets you create, retrieve, update and delete Kianda process instances. An &lt;strong>instance&lt;/strong> is an individual process record, such as one incident report or one inspection. A &lt;strong>process design&lt;/strong> defines the forms, fields and rules used by those records.&lt;/p>
 &lt;p>For integrations that set field values or change form properties, use the mapping-based &lt;code>create&lt;/code> and &lt;code>update&lt;/code> endpoints. Use the document endpoints when your integration works with a complete Kianda instance JSON document.&lt;/p>
 &lt;h2 id="endpoint-reference">Endpoint reference&lt;/h2>
