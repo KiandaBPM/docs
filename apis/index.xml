@@ -795,4 +795,1497 @@
 &lt;p>Read the HTTP status and response body for each operation. The successful responses for &lt;code>create&lt;/code>, &lt;code>createBulk&lt;/code>, the mapping-based single update, &lt;code>updateBulk&lt;/code> and &lt;code>bulkdelete&lt;/code> all use &lt;code>200 OK&lt;/code>.&lt;/p>
 &lt;p>Parse the body according to the endpoint. The create and update responses documented above are JSON objects; &lt;code>bulkdelete&lt;/code> returns the JSON string &lt;code>&amp;quot;Completed&amp;quot;&lt;/code> when JSON is requested. Other response formats are described in their endpoint sections. Error status codes and error response schemas are not specified in this reference.&lt;/p>
 &lt;p>The source of the &lt;code>instanceID&lt;/code> response value is endpoint-specific: create returns &lt;code>result.id&lt;/code>, while the mapping-based single update returns &lt;code>request.InstanceName&lt;/code>. Use the instance name for routes containing &lt;code>{name}&lt;/code>; the create return statement alone does not establish whether its returned identifier is interchangeable with that name.&lt;/p>
-&lt;p>This reference does not specify bulk atomicity, rollback, item ordering, retry deduplication or per-item error reporting. After an uncertain result, establish what was applied before repeating a write or an entire batch.&lt;/p></description></item></channel></rss>
+&lt;p>This reference does not specify bulk atomicity, rollback, item ordering, retry deduplication or per-item error reporting. After an uncertain result, establish what was applied before repeating a write or an entire batch.&lt;/p></description></item><item><title>Apis: Summaries API</title><link>https://docs.kianda.com/apis/summaries/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.kianda.com/apis/summaries/</guid><description>
+&lt;p>The Summaries API searches the indexed properties of Kianda process instances. It is the central data-access API used by list, tile, chart, and filter widgets to retrieve selected fields and calculate aggregates across large collections of instance documents.&lt;/p>
+&lt;p>A request describes the process scope, conditions, fields, and result type. Kianda applies the current user&amp;rsquo;s instance permissions and executes the query against an optimized summary index. A successful HTTP response contains a JSON array; the objects in that array depend on the requested action.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Action&lt;/th>
+&lt;th>Use it to&lt;/th>
+&lt;th>Successful result with data&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>list&lt;/code>&lt;/td>
+&lt;td>Retrieve selected properties from matching instances.&lt;/td>
+&lt;td>An array of summary records.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>tile&lt;/code>&lt;/td>
+&lt;td>Calculate a count, sum, or average.&lt;/td>
+&lt;td>An array containing one aggregate result, with the populated value in &lt;code>properties.value&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>chart&lt;/code>&lt;/td>
+&lt;td>Group records by a field and calculate aggregate series.&lt;/td>
+&lt;td>An array containing a grouped result with &lt;code>properties.labels&lt;/code>, &lt;code>properties.values1&lt;/code>, and, when configured, &lt;code>properties.values2&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Designers normally compose conditions through Kianda&amp;rsquo;s conditions editor. The JSON examples in this page explain the resulting API contract and can also be used by external integrations. Page widgets use the same query concepts through Kianda&amp;rsquo;s client store.&lt;/p>
+&lt;h2 id="1-how-instance-data-becomes-searchable">1. How instance data becomes searchable&lt;/h2>
+&lt;p>Kianda stores selected representations of instance fields in shallow, highly indexed tables. This allows a query to search, sort, and aggregate field data without loading every complete instance document.&lt;/p>
+&lt;p>The index uses these representations:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Indexed representation&lt;/th>
+&lt;th>Source&lt;/th>
+&lt;th>Purpose&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>shortText&lt;/code>&lt;/td>
+&lt;td>A short text representation from &lt;code>field.text&lt;/code>.&lt;/td>
+&lt;td>Text search, displayed values, and alphabetical sorting.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>dateValue&lt;/code>&lt;/td>
+&lt;td>The value of a date field, together with applicable internal date properties.&lt;/td>
+&lt;td>Date comparisons and chronological sorting.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>numberValue&lt;/code>&lt;/td>
+&lt;td>The value of a number field.&lt;/td>
+&lt;td>Numeric comparisons, sorting, and aggregation.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>A summary is a query result over this indexed data. It is not an editable process model, and changing a returned object does not update the underlying instance. Use the instance&amp;rsquo;s &lt;code>name&lt;/code> with the appropriate &lt;a href="https://docs.kianda.com/apis/instances/">Instances API&lt;/a> operation when you need to work with the document itself.&lt;/p>
+&lt;h3 id="what-is-indexed">What is indexed&lt;/h3>
+&lt;p>Fields outside tables are indexed automatically. This includes fields inside panels and dialogs.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Data&lt;/th>
+&lt;th>Search coverage&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Ordinary instance fields outside tables&lt;/td>
+&lt;td>Automatically indexed using the applicable text, date, or number representation.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Fields inside panels and dialogs&lt;/td>
+&lt;td>Indexed in the same way as other fields outside tables.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Cells and fields inside tables&lt;/td>
+&lt;td>Table contents cannot be addressed by a Summaries search.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Custom field widgets&lt;/td>
+&lt;td>Their &lt;code>field.text&lt;/code> representation is automatically searchable.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Arbitrary properties inside a custom field&amp;rsquo;s structured value&lt;/td>
+&lt;td>These properties are not independently searchable.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Client-calculated list columns such as &lt;code>___CUSTOM_FIELD13&lt;/code>&lt;/td>
+&lt;td>Calculated by the client and deliberately omitted from server results.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>When a custom field needs to participate in searches, maintain a useful &lt;code>field.text&lt;/code> representation. Storing a nested object in &lt;code>field.value&lt;/code> does not automatically make each nested property queryable.&lt;/p>
+&lt;h3 id="indexing-is-asynchronous">Indexing is asynchronous&lt;/h3>
+&lt;p>After an instance document is updated, a background job updates its searchable field data. This typically completes in less than a second, but it is asynchronous: an immediately repeated query can briefly return the previous indexed values.&lt;/p>
+&lt;p>Treat a successful instance save and a refreshed summary result as separate events. If a workflow must confirm the saved document immediately, use the instance operation&amp;rsquo;s result or retrieve the instance; refresh summary-based views after the index catches up.&lt;/p>
+&lt;h3 id="permissions-apply-to-records">Permissions apply to records&lt;/h3>
+&lt;p>The endpoint is available to authenticated users, including ordinary users. Instance permissions apply to all three actions, including the records contributing to counts, sums, averages, and charts.&lt;/p>
+&lt;p>Field visibility inside a document is a presentation setting. It does not provide field-level API security. Use instance permissions to control access to the record.&lt;/p>
+&lt;h2 id="2-endpoint-and-first-request">2. Endpoint and first request&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-http" data-lang="http">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">POST https://{workspace-domain}/api/summaries
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">Authorization: Bearer {access-token}
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">Content-Type: application/json
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a40000">Accept: application/json
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Use the workspace&amp;rsquo;s domain and the authenticated user&amp;rsquo;s bearer token. See &lt;a href="https://docs.kianda.com/apis/authentication/">Authentication&lt;/a> for token acquisition.&lt;/p>
+&lt;p>The controller accepts a query in the request body:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-csharp" data-lang="csharp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c4a000">[HttpPost]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">public&lt;/span> &lt;span style="color:#204a87;font-weight:bold">async&lt;/span> &lt;span style="color:#000">Task&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">IEnumerable&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;lt;&lt;/span>&lt;span style="color:#000">Models&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">Summary&lt;/span>&lt;span style="color:#000;font-weight:bold">&amp;gt;&amp;gt;&lt;/span> &lt;span style="color:#000">Post&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c4a000"> [FromBody]&lt;/span> &lt;span style="color:#000">Models&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">Query&lt;/span> &lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The following request retrieves the first page of action instances, ordered by their custom ID:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;list&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;info&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;process&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;queryType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;page&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;sortFieldType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;fields/field-textbox&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;isOData&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;orderBy&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;processCustomID&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;orderAscending&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">false&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;fields&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;__NAME&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;__STATUS&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;processCustomID&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;ACT_TXTSIN_Desc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;ACT_DATE_DueDate&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;rowLimit&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">30&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Save the JSON as &lt;code>query.json&lt;/code> and send it, for example, with curl:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>curl --request POST &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> &lt;span style="color:#4e9a06">&amp;#39;https://your-workspace.kianda.com/api/summaries&amp;#39;&lt;/span> &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> --header &lt;span style="color:#4e9a06">&amp;#34;Authorization: Bearer &lt;/span>&lt;span style="color:#000">$KIANDA_ACCESS_TOKEN&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&lt;/span> &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> --header &lt;span style="color:#4e9a06">&amp;#39;Content-Type: application/json&amp;#39;&lt;/span> &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> --header &lt;span style="color:#4e9a06">&amp;#39;Accept: application/json&amp;#39;&lt;/span> &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> --dump-header response-headers.txt &lt;span style="color:#4e9a06">\
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#4e9a06">&lt;/span> --data-binary @query.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Set &lt;code>KIANDA_ACCESS_TOKEN&lt;/code> to your token before running the command. Replace the process and field names with names present in your workspace. The headers are saved separately because list pagination uses the &lt;code>total-items&lt;/code> response header.&lt;/p>
+&lt;p>For list queries, supply a nonempty &lt;code>fields&lt;/code> array. The examples also set the action, page size, relationship filter, and sorting explicitly so their intent is clear.&lt;/p>
+&lt;h2 id="3-request-reference">3. Request reference&lt;/h2>
+&lt;h3 id="top-level-query-properties">Top-level query properties&lt;/h3>
+&lt;p>The server&amp;rsquo;s &lt;code>Query&lt;/code> model exposes the following properties:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Property&lt;/th>
+&lt;th>JSON type&lt;/th>
+&lt;th>Purpose&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>action&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Result type: &lt;code>list&lt;/code>, &lt;code>tile&lt;/code>, or &lt;code>chart&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>info&lt;/code>&lt;/td>
+&lt;td>Object&lt;/td>
+&lt;td>Process scope and action-specific settings. The server model uses &lt;code>JObject&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>fields&lt;/code>&lt;/td>
+&lt;td>Array of strings&lt;/td>
+&lt;td>Field and system-property names requested from indexed storage. Required for list queries. See &lt;a href="#5-list-results-and-field-projection">field projection&lt;/a> for automatically added properties.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>conditions&lt;/code>&lt;/td>
+&lt;td>Array of condition groups&lt;/td>
+&lt;td>Structured query conditions. Use &lt;code>[]&lt;/code> when no explicit conditions are needed.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>orderBy&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Field or system-property name used to sort a list.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>orderAscending&lt;/code>&lt;/td>
+&lt;td>Boolean&lt;/td>
+&lt;td>&lt;code>true&lt;/code> for ascending order; &lt;code>false&lt;/code> for descending order.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>rowLimit&lt;/code>&lt;/td>
+&lt;td>Integer&lt;/td>
+&lt;td>Maximum row count the request asks the server to load. Use a positive value. A value of &lt;code>0&lt;/code> is converted to &lt;code>1&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>filter&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Text to search for using the separate text-filter facility.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>filterBy&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Field or system-property name searched by &lt;code>filter&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>filterMode&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Text-filter mode. See &lt;a href="#9-text-filters">text filters&lt;/a>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>id&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Present in the shared server model; not used by the request patterns on this page. List-widget result identity uses &lt;code>info.id&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>paging&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Present in the shared server model; not used by the page-number workflow on this page. List pagination uses &lt;code>info.page&lt;/code> and the &lt;code>total-items&lt;/code> header.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>There is no fixed upper limit for &lt;code>rowLimit&lt;/code> in the described implementation. Larger row counts and more requested fields increase the amount of work and data transferred. Use bounded pages for interactive lists.&lt;/p>
+&lt;p>The tile and chart examples retain the row limits used by those request patterns. Do not interpret a tile&amp;rsquo;s &lt;code>rowLimit: 1&lt;/code> as a documented instruction to aggregate only one instance.&lt;/p>
+&lt;h3 id="common-and-list-related-info-properties">Common and list-related &lt;code>info&lt;/code> properties&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Property&lt;/th>
+&lt;th>Type&lt;/th>
+&lt;th>Purpose&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>process&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>One process&amp;rsquo;s unique name. If blank or omitted, the query can search across processes accessible to the user.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>queryType&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Additional relationship filter: &lt;code>all&lt;/code>, &lt;code>assignedTo&lt;/code>, &lt;code>createdBy&lt;/code>, or &lt;code>modifiedBy&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>page&lt;/code>&lt;/td>
+&lt;td>Integer&lt;/td>
+&lt;td>Zero-based list page. &lt;code>0&lt;/code> is the first page; &lt;code>1&lt;/code> is the second.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isListWidget&lt;/code>&lt;/td>
+&lt;td>Boolean&lt;/td>
+&lt;td>Enables list-widget result identities that isolate cached summaries by widget.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>id&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>The widget identifier used with &lt;code>isListWidget&lt;/code>; also appears as the result identifier in the chart examples.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isOData&lt;/code>&lt;/td>
+&lt;td>Boolean&lt;/td>
+&lt;td>Enables additional typed or related field properties, such as date &lt;code>_utc&lt;/code>, numeric &lt;code>_number&lt;/code>, and user &lt;code>_email&lt;/code> properties. It does not change the JSON body into an OData response envelope.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>sortFieldType&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Selects the indexed representation used for sorting: text, date, or number.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>additionalSortings&lt;/code>&lt;/td>
+&lt;td>Array&lt;/td>
+&lt;td>Additional sorting configuration carried by built-in list widgets. The examples here use a single explicit sort and do not define a descriptor format for additional sorts.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isFilterWidget&lt;/code>&lt;/td>
+&lt;td>Boolean&lt;/td>
+&lt;td>Enables filter-widget-specific result identities to avoid client-store identity collisions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>filterWidgetId&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Identifies the filter widget when &lt;code>isFilterWidget&lt;/code> is used.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Tile-specific properties are described in &lt;a href="#10-tile-queries">Tile queries&lt;/a>. Chart-specific properties are described in &lt;a href="#11-chart-queries">Chart queries&lt;/a>.&lt;/p>
+&lt;p>&lt;code>processSource&lt;/code> and &lt;code>isPartner&lt;/code> are deprecated and should be omitted from new Summaries requests, even if they appear in older widget code.&lt;/p>
+&lt;h3 id="query-type-and-user-relationships">Query type and user relationships&lt;/h3>
+&lt;p>&lt;code>queryType&lt;/code> adds a relationship filter to the query&amp;rsquo;s matching conditions and instance permissions:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Value&lt;/th>
+&lt;th>Meaning&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>all&lt;/code>&lt;/td>
+&lt;td>Records matching the conditions that the current user can access.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>assignedTo&lt;/code>&lt;/td>
+&lt;td>Matching records assigned to the current user.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>createdBy&lt;/code>&lt;/td>
+&lt;td>Matching records created by the current user.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>modifiedBy&lt;/code>&lt;/td>
+&lt;td>Matching records modified by the current user.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>For example, use &lt;code>assignedTo&lt;/code> to build a &amp;ldquo;My actions&amp;rdquo; list. Use &lt;code>all&lt;/code> for matching records regardless of those particular relationships, while retaining normal instance permissions.&lt;/p>
+&lt;h3 id="query-across-specific-processes">Query across specific processes&lt;/h3>
+&lt;p>Set &lt;code>info.process&lt;/code> to a process name to restrict a query to that process. To select several specific processes, leave &lt;code>info.process&lt;/code> blank or omit it and add conditions on &lt;code>__PROCESS_NAME&lt;/code>, joined with &lt;code>or&lt;/code>.&lt;/p>
+&lt;p>This condition group selects action or observation instances:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;id&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;process-filter&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;group&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;and&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;operator&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;eq&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;arg1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;__PROCESS_NAME&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;__Field&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;arg2&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;text&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;group&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;or&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;operator&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;eq&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;arg1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;__PROCESS_NAME&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;__Field&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;arg2&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;observation&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;text&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;group&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;or&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This is a &lt;code>conditions&lt;/code> fragment, not a complete request. Request the field names needed for the selected processes and handle properties that are absent from a particular record.&lt;/p>
+&lt;h2 id="4-list-query-example">4. List query example&lt;/h2>
+&lt;p>The following request selects actions whose status is &lt;code>Follow-up&lt;/code>. It includes the list-widget identity settings used by Kianda&amp;rsquo;s built-in list widget.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;list&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;info&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;process&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;id&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;b84cb3d7-7638-481e-98ac-a35b52ddc2da&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;isListWidget&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">true&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;queryType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;page&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;sortFieldType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;fields/field-textbox&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;isOData&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;orderAscending&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">false&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;orderBy&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;processCustomID&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;fields&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;__NAME&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;__STATUS&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;__CREATED_BY&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;processCustomID&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;ACT_TXTSIN_Desc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;ACT_DATE_DueDate&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;ACT_USER_ResponsibleUsers&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;id&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;follow-up-filter&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;group&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;and&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;operator&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;eq&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;arg1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;__STATUS&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;__Field&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;arg2&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Follow-up&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;text&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;group&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;and&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;rowLimit&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">30&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The following response excerpt shows one representative row, with example display text and user details. A real page can contain up to the requested number of records.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;id&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ef0d79ba-49dd-4cd3-8e65-747fefb2fbd0-b84cb3d7-7638-481e-98ac-a35b52ddc2da&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ef0d79ba-49dd-4cd3-8e65-747fefb2fbd0&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;assignTo&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;owners&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;status&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Follow-up&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;processName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;modified&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;2026-09-30T13:15:51.547+00:00&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;created&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;2026-09-30T13:14:02.103+00:00&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;createdBy&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;049e635c-6ac8-4d47-a16d-edab750a8103&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;properties&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;__NAME&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ef0d79ba-49dd-4cd3-8e65-747fefb2fbd0&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;__STATUS&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Follow-up&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;__CREATED_BY&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;049e635c-6ac8-4d47-a16d-edab750a8103&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;__PROCESS_NAME&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;__CREATED&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;2026-09-30T13:14:02.103&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;__MODIFIED&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;2026-09-30T13:15:51.547&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;processCustomID&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ACT_2026_00143&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ACT_TXTSIN_Desc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Clear standing water near the access route&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ACT_DATE_DueDate&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;30/09/2026&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ACT_DATE_DueDate_utc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;2026-09-29T23:00:00&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ACT_USER_ResponsibleUsers&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Example User&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;ACT_USER_ResponsibleUsers_email&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;example.user@example.com&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>When no list records match, the response body is:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">[]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="use-name-for-instance-operations">Use &lt;code>name&lt;/code> for instance operations&lt;/h3>
+&lt;p>With &lt;code>info.isListWidget: true&lt;/code>, a list result&amp;rsquo;s identity is constructed using the instance name and widget ID:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Summary.id = Summary.name + &amp;#34;-&amp;#34; + info.id
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This allows multiple list widgets on the same page to cache their results independently in IndexedDB. Two widgets can display the same instance with different projected fields without sharing the same summary-record identity.&lt;/p>
+&lt;p>Use &lt;strong>&lt;code>Summary.name&lt;/code>&lt;/strong> when an action needs to retrieve, open, update, or otherwise address the underlying instance. Do not split the composite &lt;code>id&lt;/code>: instance names can themselves contain hyphens, and they are not always GUIDs.&lt;/p>
+&lt;h2 id="5-list-results-and-field-projection">5. List results and field projection&lt;/h2>
+&lt;h3 id="summary-model-properties">Summary model properties&lt;/h3>
+&lt;p>The server&amp;rsquo;s &lt;code>Summary&lt;/code> model has the following properties. Their presence depends on the action and available data; tile and chart results use only a subset of this model.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Property&lt;/th>
+&lt;th>JSON type&lt;/th>
+&lt;th>Meaning&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>id&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Summary result identity. It may include a widget-specific suffix.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>name&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Underlying instance identifier used for instance operations.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>title&lt;/code>&lt;/td>
+&lt;td>String or null&lt;/td>
+&lt;td>Title metadata, when supplied.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>assignTo&lt;/code>&lt;/td>
+&lt;td>Array of strings or null&lt;/td>
+&lt;td>Assignment information.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>owners&lt;/code>&lt;/td>
+&lt;td>Array of strings or null&lt;/td>
+&lt;td>Ownership information.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>status&lt;/code>&lt;/td>
+&lt;td>String&lt;/td>
+&lt;td>Instance status.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>version&lt;/code>&lt;/td>
+&lt;td>String or null&lt;/td>
+&lt;td>Instance version metadata.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>processName&lt;/code>&lt;/td>
+&lt;td>String or null&lt;/td>
+&lt;td>Process name.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>modified&lt;/code>&lt;/td>
+&lt;td>Date/time string or null&lt;/td>
+&lt;td>Instance modification time.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>created&lt;/code>&lt;/td>
+&lt;td>Date/time string or null&lt;/td>
+&lt;td>Instance creation time.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>createdBy&lt;/code>&lt;/td>
+&lt;td>String or null&lt;/td>
+&lt;td>Creator identifier.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>modifiedBy&lt;/code>&lt;/td>
+&lt;td>String or null&lt;/td>
+&lt;td>Modifier identifier.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>properties&lt;/code>&lt;/td>
+&lt;td>Object&lt;/td>
+&lt;td>Projected field values, system properties, or action-specific aggregate data.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Optional members can be omitted from the serialized response. The list example does not include every property declared by the model. Consumers should read the properties relevant to their action rather than requiring every model member to exist.&lt;/p>
+&lt;h3 id="requested-fields-and-automatically-added-properties">Requested fields and automatically added properties&lt;/h3>
+&lt;p>The &lt;code>fields&lt;/code> array identifies data to retrieve from summary storage. The result may also contain system properties and companion values.&lt;/p>
+&lt;p>These system properties are automatically included in every list result&amp;rsquo;s &lt;code>properties&lt;/code> dictionary for offline sorting and filtering:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>__NAME&lt;/code>&lt;/li>
+&lt;li>&lt;code>__PROCESS_NAME&lt;/code>&lt;/li>
+&lt;li>&lt;code>__CREATED&lt;/code>&lt;/li>
+&lt;li>&lt;code>__MODIFIED&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>Other selected system properties can appear both as top-level summary metadata and in &lt;code>properties&lt;/code>. For example, an explicitly requested &lt;code>__STATUS&lt;/code> can accompany the top-level &lt;code>status&lt;/code>.&lt;/p>
+&lt;p>With &lt;code>info.isOData: true&lt;/code>, additional properties can include:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Example property&lt;/th>
+&lt;th>Purpose&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>ACT_DATE_DueDate&lt;/code>&lt;/td>
+&lt;td>Display text for the selected date field.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>ACT_DATE_DueDate_utc&lt;/code>&lt;/td>
+&lt;td>Its UTC date representation, useful for sorting and data processing.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>&amp;lt;number-field&amp;gt;_number&lt;/code>&lt;/td>
+&lt;td>Numeric companion data.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>ACT_USER_ResponsibleUsers&lt;/code>&lt;/td>
+&lt;td>Display text for the selected user field.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>ACT_USER_ResponsibleUsers_email&lt;/code>&lt;/td>
+&lt;td>Related email information.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Do not assume that a companion key is present for every empty field. A blank date field can appear as &lt;code>&amp;quot;&amp;quot;&lt;/code> without an accompanying &lt;code>_utc&lt;/code> property, while a blank user field can also have an empty &lt;code>_email&lt;/code> property.&lt;/p>
+&lt;p>Date display strings and typed companion strings serve different purposes. For example, &lt;code>30/09/2026&lt;/code> is display text, while the sample &lt;code>_utc&lt;/code> value is &lt;code>2026-09-29T23:00:00&lt;/code>. The sample&amp;rsquo;s &lt;code>_utc&lt;/code> string has no explicit timezone suffix; preserve its UTC meaning deliberately when converting it in a client, rather than relying on ambiguous automatic date parsing.&lt;/p>
+&lt;h3 id="field-names-are-exact-storage-names">Field names are exact storage names&lt;/h3>
+&lt;p>Use field names as stored by the process designer. Names containing characters such as &lt;code>?&lt;/code> are preserved, including:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>ACT_LSTSIN_Priority?inlineButtons
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>OBS_LSTSIN_TopicType?radioCards
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Do not remove the suffix or treat it as a URL query string. Use bracket access for such property names:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">priority&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">summary&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">properties&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;ACT_LSTSIN_Priority?inlineButtons&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">];&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>A &lt;code>___CUSTOM_FIELD*&lt;/code> entry refers to a client-calculated list column. It can appear in widget configuration but is deliberately omitted from the API response. The widget calculates that column after loading the server data.&lt;/p>
+&lt;h3 id="system-property-names">System-property names&lt;/h3>
+&lt;p>These are the internal system-field identifiers available to the query model:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Identifier&lt;/th>
+&lt;th>Represents&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>__NAME&lt;/code>&lt;/td>
+&lt;td>Instance name used to address the instance.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__UNIQUE_ID&lt;/code>&lt;/td>
+&lt;td>Internal unique-ID property. Use &lt;code>name&lt;/code> for the instance operations described on this page.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__PROCESS_NAME&lt;/code>&lt;/td>
+&lt;td>Process name.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__PROCESS_TITLE&lt;/code>&lt;/td>
+&lt;td>Process title.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__STATUS&lt;/code>&lt;/td>
+&lt;td>Instance status.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__VERSION&lt;/code>&lt;/td>
+&lt;td>Instance version.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__PROCESS_VERSION&lt;/code>&lt;/td>
+&lt;td>Process version.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__CREATED&lt;/code>&lt;/td>
+&lt;td>Creation date/time.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__CREATED_BY&lt;/code>&lt;/td>
+&lt;td>Creator.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__MODIFIED&lt;/code>&lt;/td>
+&lt;td>Modification date/time.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__MODIFIED_BY&lt;/code>&lt;/td>
+&lt;td>Modifier.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__ASSIGN_TO&lt;/code>&lt;/td>
+&lt;td>Assignment information.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__SECURITY_USERS&lt;/code>&lt;/td>
+&lt;td>Instance security-user information.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Use &lt;code>type: &amp;quot;__Field&amp;quot;&lt;/code> when a condition argument refers to one of these system fields. Selectors generated by the conditions editor supply the appropriate metadata.&lt;/p>
+&lt;h2 id="6-condition-groups-and-query-operators">6. Condition groups and query operators&lt;/h2>
+&lt;p>The &lt;code>conditions&lt;/code> property contains groups of conditions. Each group represents parentheses in the generated query expression.&lt;/p>
+&lt;p>There is &lt;strong>one level of groups&lt;/strong>: a group contains conditions, and a condition cannot contain another group.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Structure&lt;/th>
+&lt;th>Property&lt;/th>
+&lt;th>Meaning&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Condition group&lt;/td>
+&lt;td>&lt;code>conditions&lt;/code>&lt;/td>
+&lt;td>Array of conditions inside this group.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Condition group&lt;/td>
+&lt;td>&lt;code>group&lt;/code>&lt;/td>
+&lt;td>&lt;code>and&lt;/code> or &lt;code>or&lt;/code> connector between groups.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Condition group&lt;/td>
+&lt;td>&lt;code>id&lt;/code>&lt;/td>
+&lt;td>Editor identity included when groups are serialized.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Condition&lt;/td>
+&lt;td>&lt;code>operator&lt;/code>&lt;/td>
+&lt;td>Exact operator identifier.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Condition&lt;/td>
+&lt;td>&lt;code>arg1&lt;/code>&lt;/td>
+&lt;td>Left-hand field or system-property reference.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Condition&lt;/td>
+&lt;td>&lt;code>arg2&lt;/code>&lt;/td>
+&lt;td>Comparison input or prepared date boundaries, when required.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Condition&lt;/td>
+&lt;td>&lt;code>group&lt;/code>&lt;/td>
+&lt;td>&lt;code>and&lt;/code> or &lt;code>or&lt;/code> connector between conditions within the group.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Condition&lt;/td>
+&lt;td>&lt;code>id&lt;/code>&lt;/td>
+&lt;td>Editor identity included when conditions are serialized.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>The condition and condition-group UI models default their &lt;code>group&lt;/code> property to &lt;code>and&lt;/code>. Preserve the serialized connectors emitted by the editor.&lt;/p>
+&lt;p>For example, a process group joined internally with &lt;code>or&lt;/code>, followed by a status group joined internally with &lt;code>or&lt;/code>, can express:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>(process is action OR process is observation)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>AND
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>(status is Follow-up OR status is Open)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Use the editor to construct mixed conditions and grouping. Do not add a nested group object where an individual condition is expected.&lt;/p>
+&lt;h3 id="argument-references">Argument references&lt;/h3>
+&lt;p>Argument types distinguish form fields, system fields, and literal text:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>type&lt;/code>&lt;/th>
+&lt;th>Meaning&lt;/th>
+&lt;th>Typical argument&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>field&lt;/code>&lt;/td>
+&lt;td>A form-field reference.&lt;/td>
+&lt;td>&lt;code>{&amp;quot;name&amp;quot;:&amp;quot;ACT_DATE_DueDate&amp;quot;,&amp;quot;type&amp;quot;:&amp;quot;field&amp;quot;,&amp;quot;fieldType&amp;quot;:&amp;quot;fields/field-date&amp;quot;}&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>__Field&lt;/code>&lt;/td>
+&lt;td>A system-property reference.&lt;/td>
+&lt;td>&lt;code>{&amp;quot;name&amp;quot;:&amp;quot;__STATUS&amp;quot;,&amp;quot;type&amp;quot;:&amp;quot;__Field&amp;quot;}&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>text&lt;/code>&lt;/td>
+&lt;td>Literal text.&lt;/td>
+&lt;td>&lt;code>{&amp;quot;text&amp;quot;:&amp;quot;Follow-up&amp;quot;,&amp;quot;type&amp;quot;:&amp;quot;text&amp;quot;}&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>For a field reference, &lt;code>name&lt;/code> selects the indexed field. Its optional &lt;code>text&lt;/code> is the selector&amp;rsquo;s display label, not the field&amp;rsquo;s current contents. &lt;code>fieldType&lt;/code> supplies type metadata for operations that need it.&lt;/p>
+&lt;p>Date ranges use &lt;code>arg2.date1&lt;/code> and &lt;code>arg2.date2&lt;/code>. The conditions editor supplies the appropriate argument representation for the selected control; retain that representation for numeric, boolean, and other typed comparisons rather than substituting an invented argument schema.&lt;/p>
+&lt;h3 id="comparison-text-blank-and-membership-operators">Comparison, text, blank, and membership operators&lt;/h3>
+&lt;p>Operator identifiers are listed with their exact spelling.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Operator&lt;/th>
+&lt;th>UI label&lt;/th>
+&lt;th>Behaviour&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>eq&lt;/code>&lt;/td>
+&lt;td>Equals&lt;/td>
+&lt;td>Equality comparison.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>neq&lt;/code>&lt;/td>
+&lt;td>Not equals&lt;/td>
+&lt;td>Inequality comparison.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>contains&lt;/code>&lt;/td>
+&lt;td>Contains&lt;/td>
+&lt;td>Text contains the supplied value.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>startsWith&lt;/code>&lt;/td>
+&lt;td>Starts with&lt;/td>
+&lt;td>Text begins with the supplied value.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>gt&lt;/code>&lt;/td>
+&lt;td>Greater than&lt;/td>
+&lt;td>Greater-than comparison.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>gte&lt;/code>&lt;/td>
+&lt;td>Greater or equal&lt;/td>
+&lt;td>Greater-than-or-equal comparison.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>lt&lt;/code>&lt;/td>
+&lt;td>Less than&lt;/td>
+&lt;td>Less-than comparison.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>lte&lt;/code>&lt;/td>
+&lt;td>Less or equal&lt;/td>
+&lt;td>Less-than-or-equal comparison.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isblank&lt;/code>&lt;/td>
+&lt;td>Is blank&lt;/td>
+&lt;td>SQL null or blank check.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>notblank&lt;/code>&lt;/td>
+&lt;td>Not blank&lt;/td>
+&lt;td>Complementary nonblank check.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>match&lt;/code>&lt;/td>
+&lt;td>Matches pattern&lt;/td>
+&lt;td>SQL &lt;code>LIKE&lt;/code> pattern matching.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>nomatch&lt;/code>&lt;/td>
+&lt;td>Does not match pattern&lt;/td>
+&lt;td>SQL &lt;code>NOT LIKE&lt;/code> pattern matching.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>IsUserOrMember&lt;/code>&lt;/td>
+&lt;td>Is Current User Or Member&lt;/td>
+&lt;td>Compares a user-picker field with the current user or the user&amp;rsquo;s groups. Uses the authenticated user context; no &lt;code>arg2&lt;/code> is required.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>String comparisons use case-insensitive SQL comparison. This describes comparison of field data; it does not establish case-insensitive spelling for property names, operators, or other API option values.&lt;/p>
+&lt;h3 id="date-operators">Date operators&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Operator&lt;/th>
+&lt;th>UI label&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>isToday&lt;/code>&lt;/td>
+&lt;td>Is Today&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isBeforeToday&lt;/code>&lt;/td>
+&lt;td>Is Before Today&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isAfterToday&lt;/code>&lt;/td>
+&lt;td>Is After Today&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isThisWeek&lt;/code>&lt;/td>
+&lt;td>Is This Week&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isPrevWeek&lt;/code>&lt;/td>
+&lt;td>Is Previous Week&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isNextWeek&lt;/code>&lt;/td>
+&lt;td>Is Next Week&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isThisMonth&lt;/code>&lt;/td>
+&lt;td>Is This Month&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isPrevMonth&lt;/code>&lt;/td>
+&lt;td>Is Previous Month&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isNextMonth&lt;/code>&lt;/td>
+&lt;td>Is Next Month&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isThisYear&lt;/code>&lt;/td>
+&lt;td>Is This Year&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isPrevYear&lt;/code>&lt;/td>
+&lt;td>Is Previous Year&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isNextYear&lt;/code>&lt;/td>
+&lt;td>Is Next Year&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isBetweenDates&lt;/code>&lt;/td>
+&lt;td>Is Between Days&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Date conditions require the client-side preparation described next. Relative operator names alone do not replace that preparation.&lt;/p>
+&lt;h2 id="7-prepare-date-conditions-before-sending">7. Prepare date conditions before sending&lt;/h2>
+&lt;p>Kianda prepares date conditions on the client so date selections can use client location awareness together with the workspace&amp;rsquo;s regional settings.&lt;/p>
+&lt;p>The helper used by the built-in list widget is:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;ruleEngine&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">).&lt;/span>&lt;span style="color:#000">parseDateConditions&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">conditions&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>It is called before the same &lt;code>conditions&lt;/code> object is included in the request. Use this side-effect-based calling pattern; the built-in list integration does not use a returned array or await a Promise from this helper.&lt;/p>
+&lt;p>Relative selections such as &amp;ldquo;Is Before Today&amp;rdquo; or &amp;ldquo;Is This Year&amp;rdquo; are resolved to explicit UTC boundaries in &lt;code>arg2.date1&lt;/code> and &lt;code>arg2.date2&lt;/code>. The posted query can retain its original relative operator name alongside those prepared boundaries.&lt;/p>
+&lt;p>For example, this condition was prepared for a query on 20 October 2026:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;operator&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;isBeforeToday&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;arg1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;text&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Due date&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;ACT_DATE_DueDate&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;field&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;fieldType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;fields/field-date&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;arg2&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;date1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;1926-10-20T21:42:28.679Z&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;date2&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;2026-10-19T22:59:59.000Z&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;group&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;and&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>These are captured example boundaries, not reusable constants for every overdue query. Recompute relative dates before issuing a new request.&lt;/p>
+&lt;p>A custom integration can copy the serialized settings before resolving dates:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">savedConditions&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;widget.settings.conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#000;font-weight:bold">[];&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">conditions&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">JSON&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">parse&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">JSON&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">stringify&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">savedConditions&lt;/span>&lt;span style="color:#000;font-weight:bold">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;ruleEngine&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">).&lt;/span>&lt;span style="color:#000">parseDateConditions&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">conditions&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This fragment assumes the component already has access to the rule engine. The copy is appropriate because &lt;code>serialize=true&lt;/code> stores plain objects in settings; resolving dates in the request copy avoids rewriting the persistent configuration.&lt;/p>
+&lt;p>An external REST client does not have access to the Ember helper. It must prepare explicit UTC date boundaries itself for the intended regional/calendar period. Use &lt;code>isBetweenDates&lt;/code> for an explicitly selected range, as demonstrated by the tile example. Avoid hard-coding one UTC offset for all dates, since the relevant offset can vary over the calendar.&lt;/p>
+&lt;h2 id="8-pagination-and-sorting">8. Pagination and sorting&lt;/h2>
+&lt;h3 id="pagination-uses-a-response-header">Pagination uses a response header&lt;/h3>
+&lt;p>List requests use:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>info.page&lt;/code>: the zero-based page index.&lt;/li>
+&lt;li>&lt;code>rowLimit&lt;/code>: the requested page size.&lt;/li>
+&lt;li>The &lt;strong>&lt;code>total-items&lt;/code> response header&lt;/strong>: the total number of matching items.&lt;/li>
+&lt;/ul>
+&lt;p>The JSON body remains an array of summaries. There is no &lt;code>meta&lt;/code> or &lt;code>totalItems&lt;/code> object added to the raw REST body.&lt;/p>
+&lt;p>For the second page of the first-request example, keep its query settings and change:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">info&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">page&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Given a parsed &lt;code>totalItems&lt;/code> header and a query with an explicit page size:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">pageSize&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">rowLimit&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">===&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">?&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">rowLimit&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">currentPage&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">info&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">page&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">pageCount&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">totalItems&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">===&lt;/span> &lt;span style="color:#204a87;font-weight:bold">null&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">?&lt;/span> &lt;span style="color:#204a87;font-weight:bold">null&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87">Math&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">ceil&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">totalItems&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">/&lt;/span> &lt;span style="color:#000">pageSize&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">hasNextPage&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">totalItems&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">===&lt;/span> &lt;span style="color:#204a87;font-weight:bold">null&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">?&lt;/span> &lt;span style="color:#204a87;font-weight:bold">null&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">currentPage&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">*&lt;/span> &lt;span style="color:#000">pageSize&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;&lt;/span> &lt;span style="color:#000">totalItems&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In this client example, &lt;code>null&lt;/code> means the total header was not available; it is not a zero-result count.&lt;/p>
+&lt;p>For example, a total of 75 items with &lt;code>rowLimit: 30&lt;/code> gives three pages:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>info.page&lt;/code>&lt;/th>
+&lt;th>User-facing page&lt;/th>
+&lt;th>Expected items, if the matching data stays unchanged&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>0&lt;/code>&lt;/td>
+&lt;td>1&lt;/td>
+&lt;td>30&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>1&lt;/code>&lt;/td>
+&lt;td>2&lt;/td>
+&lt;td>30&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>2&lt;/code>&lt;/td>
+&lt;td>3&lt;/td>
+&lt;td>15&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Reset the page to &lt;code>0&lt;/code> when changing the process scope, conditions, relationship filter, or search text. Refresh the total count with the new results.&lt;/p>
+&lt;h3 id="choose-the-correct-sort-representation">Choose the correct sort representation&lt;/h3>
+&lt;p>&lt;code>orderBy&lt;/code> identifies the field. &lt;code>orderAscending&lt;/code> chooses the direction. &lt;code>info.sortFieldType&lt;/code> determines which indexed representation SQL uses.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>info.sortFieldType&lt;/code>&lt;/th>
+&lt;th>Sort representation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Omitted, empty, or an ordinary text-field type&lt;/td>
+&lt;td>Alphabetical sorting by &lt;code>shortText&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>DateTime&lt;/code>&lt;/td>
+&lt;td>Chronological sorting by the indexed date value.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>fields/field-date&lt;/code>&lt;/td>
+&lt;td>Chronological sorting by the indexed date value.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>Number&lt;/code>&lt;/td>
+&lt;td>Numeric sorting by the indexed number value.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>fields/field-number&lt;/code>&lt;/td>
+&lt;td>Numeric sorting by the indexed number value.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>For example, the following request fragment selects an ascending numeric sort:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;orderBy&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;DATAMS_NUM_EmployeeHours&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;orderAscending&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">true&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;info&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;sortFieldType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;fields/field-number&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Merge these settings into the complete query; this fragment does not include the remaining request properties.&lt;/p>
+&lt;p>Without the number type, displayed values such as &lt;code>&amp;quot;10&amp;quot;&lt;/code> and &lt;code>&amp;quot;2&amp;quot;&lt;/code> are sorted as text. Similarly, sorting formatted display dates alphabetically is different from chronological date sorting.&lt;/p>
+&lt;p>The built-in list widget obtains the sort type from the selected field&amp;rsquo;s &lt;code>fieldType&lt;/code> or &lt;code>type&lt;/code>. Carry that metadata through when users change the sort field.&lt;/p>
+&lt;h2 id="9-text-filters">9. Text filters&lt;/h2>
+&lt;p>The separate text-filter properties let a client search a named field without constructing a condition group for the text search:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Property&lt;/th>
+&lt;th>Example&lt;/th>
+&lt;th>Meaning&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>filter&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;quot;fra&amp;quot;&lt;/code>&lt;/td>
+&lt;td>Search text.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>filterBy&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;quot;country&amp;quot;&lt;/code>&lt;/td>
+&lt;td>Field to search; system-property names are also supported.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>filterMode&lt;/code>&lt;/td>
+&lt;td>&lt;code>&amp;quot;contains&amp;quot;&lt;/code>&lt;/td>
+&lt;td>Search mode.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>The following filter-widget-style request searches country text in observation instances:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;list&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;info&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;process&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;observation&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;page&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;isFilterWidget&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">true&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;filterWidgetId&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;41ad30c0-103f-49cb-b251-ffc10479a40d&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;isOData&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;fields&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;country&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;processCountryCode&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;filter&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;fra&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;filterBy&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;country&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;filterMode&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;contains&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;rowLimit&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">500&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;orderAscending&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Prefix matching is also supported. A captured prefix-search request from the built-in filter widget uses &lt;code>&amp;quot;filterMode&amp;quot;: &amp;quot;startswith&amp;quot;&lt;/code>. Preserve the emitted mode spelling when reusing filter-widget configuration. This setting is separate from the condition operator named &lt;code>startsWith&lt;/code>.&lt;/p>
+&lt;p>For explicitly grouped text logic, use the &lt;code>contains&lt;/code>, &lt;code>startsWith&lt;/code>, &lt;code>match&lt;/code>, or &lt;code>nomatch&lt;/code> condition operators through the conditions editor.&lt;/p>
+&lt;h2 id="10-tile-queries">10. Tile queries&lt;/h2>
+&lt;p>Tile queries calculate a single aggregate.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>info.tile&lt;/code>&lt;/th>
+&lt;th>Aggregate&lt;/th>
+&lt;th>Field requirement&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>count&lt;/code>&lt;/td>
+&lt;td>Count matching instances.&lt;/td>
+&lt;td>&lt;code>info.field&lt;/code> is not required.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>sum&lt;/code>&lt;/td>
+&lt;td>Sum a number field across matching data.&lt;/td>
+&lt;td>Select a number field.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>avg&lt;/code>&lt;/td>
+&lt;td>Average a number field across matching data.&lt;/td>
+&lt;td>Select a number field.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>For sum and average tiles, the built-in configuration UI restricts field selection to &lt;code>fields/field-number&lt;/code>.&lt;/p>
+&lt;h3 id="count-matching-instances">Count matching instances&lt;/h3>
+&lt;p>This request counts action instances assigned to the current user:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;tile&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;info&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;process&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;queryType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;assignedTo&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;tile&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;count&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;rowLimit&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The instance permissions and relationship filter apply to the records being counted. A count tile does not require an expression field.&lt;/p>
+&lt;h3 id="sum-a-number-field-over-a-date-range">Sum a number field over a date range&lt;/h3>
+&lt;p>This request sums employee hours using explicitly prepared UTC date boundaries:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;tile&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;info&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;process&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;hours-worked-data&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;field&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;DATAMS_NUM_EmployeeHours&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;queryType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;tile&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;sum&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;fields&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;DATAMS_NUM_EmployeeHours&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;id&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;date-filter-group&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;group&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;and&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;operator&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;isBetweenDates&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;arg1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;processDate&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;type&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;field&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;fieldType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;fields/field-date&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;arg2&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;date1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;2026-09-30T23:00:00.000Z&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;date2&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;2026-10-31T23:59:59.999Z&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;group&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;and&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;rowLimit&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Example response:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;properties&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;value&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1249.92&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Read the aggregate from the result object&amp;rsquo;s &lt;code>properties.value&lt;/code>. Do not expect the instance metadata shown in a list response to accompany an aggregate result.&lt;/p>
+&lt;p>For an average, use &lt;code>&amp;quot;tile&amp;quot;: &amp;quot;avg&amp;quot;&lt;/code> with the appropriate number field and conditions.&lt;/p>
+&lt;h3 id="handle-an-absent-aggregate">Handle an absent aggregate&lt;/h3>
+&lt;p>Tile consumers must handle both an empty result array and a returned result with no usable aggregate value. A missing aggregate is different from a numeric zero.&lt;/p>
+&lt;p>This helper reads the confirmed populated-value shape while retaining an explicit no-value state:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">function&lt;/span> &lt;span style="color:#000">getTileValue&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">summaries&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">result&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">summaries&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#000">summaries&lt;/span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>&lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>&lt;span style="color:#000;font-weight:bold">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">properties&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">result&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#000">result&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">properties&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">!&lt;/span>&lt;span style="color:#000">properties&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">!&lt;/span>&lt;span style="color:#204a87">Object&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">prototype&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">hasOwnProperty&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">call&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">properties&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;value&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">return&lt;/span> &lt;span style="color:#204a87;font-weight:bold">null&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">return&lt;/span> &lt;span style="color:#000">properties&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">value&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>A legitimate value of &lt;code>0&lt;/code> is preserved. The caller can display a no-data state for &lt;code>null&lt;/code> instead of silently reporting a zero.&lt;/p>
+&lt;h2 id="11-chart-queries">11. Chart queries&lt;/h2>
+&lt;p>Chart queries group matching records by a field and calculate series values for those groups. Kianda&amp;rsquo;s built-in chart widgets render the resulting datasets using Chart.js.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;code>info&lt;/code> property&lt;/th>
+&lt;th>Purpose&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>labels&lt;/code>&lt;/td>
+&lt;td>Field whose values form the groups and returned labels.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>field1&lt;/code>&lt;/td>
+&lt;td>Field used by the first aggregate series.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>exp1&lt;/code>&lt;/td>
+&lt;td>First series&amp;rsquo; aggregation expression. The examples use &lt;code>Count&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>field2&lt;/code>&lt;/td>
+&lt;td>Optional field for a second series.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>exp2&lt;/code>&lt;/td>
+&lt;td>Second series&amp;rsquo; aggregation expression. A second field is also required.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>id&lt;/code>&lt;/td>
+&lt;td>Identifier returned with the chart result in the examples.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>chartType&lt;/code>&lt;/td>
+&lt;td>Chart configuration; the examples use &lt;code>pie&lt;/code> and &lt;code>bar&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>sortLabels&lt;/code>&lt;/td>
+&lt;td>Label-sorting configuration from the chart settings; the examples use &lt;code>desc&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>labelFormat&lt;/code>&lt;/td>
+&lt;td>Label-formatting configuration from the chart settings; the examples use &lt;code>text&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>In query terms, &lt;code>labels&lt;/code> supplies the grouping field, while each selected series field supplies values for its aggregate. Chart aggregation supports count, sum, and average. Preserve the expression values emitted by the chart settings; the requests below use the &lt;code>Count&lt;/code> spelling emitted by the built-in chart settings.&lt;/p>
+&lt;p>Include the grouping and series field names in &lt;code>fields&lt;/code>. The same field can appear more than once when it is used for both labels and a series, as in the built-in requests below.&lt;/p>
+&lt;h3 id="one-series-observations-by-topic">One series: observations by topic&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;chart&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;info&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;process&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;observation&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;queryType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;chartType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;pie&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;labels&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;OBS_LSTSIN_TopicType?radioCards&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;field1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;OBS_LSTSIN_TopicType?radioCards&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;exp1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Count&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;id&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;c4e6c595-12a9-4641-908f-8418e15dbe2e&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;sortLabels&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;desc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;labelFormat&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;text&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;fields&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;OBS_LSTSIN_TopicType?radioCards&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;OBS_LSTSIN_TopicType?radioCards&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;rowLimit&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">30&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Example response:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;id&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;c4e6c595-12a9-4641-908f-8418e15dbe2e&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;properties&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;labels&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;Unsafe observation&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;Positive observation&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;Improvement idea&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;values1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#0000cf;font-weight:bold">6&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#0000cf;font-weight:bold">2&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Values correspond by array position: &lt;code>labels[0]&lt;/code> identifies the group for &lt;code>values1[0]&lt;/code>. Keep labels and all series aligned when transforming or rendering the data.&lt;/p>
+&lt;h3 id="two-series">Two series&lt;/h3>
+&lt;p>A second series requires &lt;code>field2&lt;/code> as well as its expression. An &lt;code>exp2&lt;/code> property by itself does not create &lt;code>values2&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;action&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;chart&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;info&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;process&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;observation&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;queryType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;chartType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;bar&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;labels&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;processProject&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;field1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;processProject&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;field2&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;OBS_YN_SWAUsed&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;exp1&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Count&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;exp2&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Count&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;id&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;3d1e106e-59cd-4712-91f1-e78135552783&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;sortLabels&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;desc&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;labelFormat&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;text&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;fields&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;processProject&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;processProject&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;OBS_YN_SWAUsed&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">&amp;#34;rowLimit&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">30&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>With both series configured, consume &lt;code>properties.values1&lt;/code> and &lt;code>properties.values2&lt;/code> alongside the shared &lt;code>properties.labels&lt;/code>.&lt;/p>
+&lt;p>When no usable chart properties are found, the chart data contains empty label and value arrays. Consumers should also tolerate an empty result array before attempting to access its first item.&lt;/p>
+&lt;h2 id="12-build-conditions-in-the-kianda-ui">12. Build conditions in the Kianda UI&lt;/h2>
+&lt;p>The reusable conditions editor is:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-handlebars" data-lang="handlebars">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8f5902;font-style:italic">{{&lt;/span>&lt;span style="color:#000">rules&lt;/span>&lt;span style="color:#000">/rule-conditions&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">showProcessProperties&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">isCompact&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">btnText&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">serialize&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">conditions&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">this.widget.settings.conditions&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c4a000">process&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">this.process&lt;/span>&lt;span style="color:#8f5902;font-style:italic">}}&lt;/span>&lt;span style="color:#000">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Binding or option&lt;/th>
+&lt;th>Role in this integration&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;code>showProcessProperties=true&lt;/code>&lt;/td>
+&lt;td>Makes process/system properties available to the conditions editor.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>isCompact=true&lt;/code>&lt;/td>
+&lt;td>Uses the compact editor presentation.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>btnText=&amp;quot;&amp;quot;&lt;/code>&lt;/td>
+&lt;td>Sets the editor button-text option.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>serialize=true&lt;/code>&lt;/td>
+&lt;td>Serializes condition groups to plain objects suitable for the settings hash.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>conditions&lt;/code>&lt;/td>
+&lt;td>Binds the saved condition groups to &lt;code>widget.settings.conditions&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>process&lt;/code>&lt;/td>
+&lt;td>Supplies the process metadata used to select fields.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;code>serialize=true&lt;/code> does not mean the HTTP request should contain a JSON string inside &lt;code>conditions&lt;/code>. It means the settings contain plain objects that can be included as an array in the query JSON.&lt;/p>
+&lt;p>The built-in list refresh flow:&lt;/p>
+&lt;ol>
+&lt;li>Reads the saved conditions and the selected fields.&lt;/li>
+&lt;li>Resolves date boundaries using &lt;code>ruleEngine.parseDateConditions(conditions)&lt;/code>.&lt;/li>
+&lt;li>Maps the selected fields to their stored names.&lt;/li>
+&lt;li>Builds the query, including &lt;code>info.process&lt;/code>, &lt;code>info.page&lt;/code>, and sort metadata.&lt;/li>
+&lt;li>Calls &lt;code>store.query(&amp;quot;summary&amp;quot;, query)&lt;/code> for instance summary data.&lt;/li>
+&lt;/ol>
+&lt;p>The following fragment shows that query-construction path. It assumes the component has the same &lt;code>widget&lt;/code>, &lt;code>fields&lt;/code>, rule-engine, and store context as the built-in list integration; it is not a complete page-widget component.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">savedConditions&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;widget.settings.conditions&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#000;font-weight:bold">[];&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">conditions&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">JSON&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">parse&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">JSON&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">stringify&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">savedConditions&lt;/span>&lt;span style="color:#000;font-weight:bold">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">fieldNames&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;fields&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">).&lt;/span>&lt;span style="color:#000">mapBy&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;name&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">pageSize&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87">Number&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;widget.settings.pageSize&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">fieldNames&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">length&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">===&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">throw&lt;/span> &lt;span style="color:#204a87;font-weight:bold">new&lt;/span> &lt;span style="color:#204a87">Error&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;Select at least one field for the list query.&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">!&lt;/span>&lt;span style="color:#204a87">Number&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">isInteger&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">pageSize&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#000">pageSize&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;lt;&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">throw&lt;/span> &lt;span style="color:#204a87;font-weight:bold">new&lt;/span> &lt;span style="color:#204a87">Error&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;Configure a positive whole-number page size.&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;ruleEngine&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">).&lt;/span>&lt;span style="color:#000">parseDateConditions&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">conditions&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">query&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">action&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;list&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">info&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">process&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;widget.settings.processName&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">id&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;widget.id&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">isListWidget&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">true&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">queryType&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;widget.settings.queryType&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;all&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">page&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">isOData&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">fields&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">fieldNames&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">conditions&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">conditions&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">rowLimit&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">pageSize&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">pending&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">this&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;store&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">).&lt;/span>&lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;summary&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The full list implementation also handles cached results, a possible &lt;code>pending.onlinePromise&lt;/code>, and subsequent record synchronization. Those are Kianda client-store behaviours. They are separate from the raw HTTP response, which contains an array plus the &lt;code>total-items&lt;/code> header for lists.&lt;/p>
+&lt;p>Similarly, &lt;code>data.meta&lt;/code> in widget code is client-side metadata. A direct REST consumer should read the HTTP header rather than expect &lt;code>data.meta&lt;/code> in the returned JSON.&lt;/p>
+&lt;p>The built-in list client adds &lt;code>preferOnline&lt;/code> before calling the store. This is absent from the server &lt;code>Query&lt;/code> model, so the direct REST examples omit it. The separate datasource branch in the full refresh function calls &lt;code>dataService.queryFromWidget&lt;/code>; it is not the instance-summary request path described here.&lt;/p>
+&lt;p>Page filter widgets can also generate conditions dynamically. Prepare the final conditions for the current request, including current date boundaries, before loading the results. Page-widget lifecycle, refresh coordination, and filter wiring belong in the page-widget development guide.&lt;/p>
+&lt;h2 id="13-call-the-api-from-javascript">13. Call the API from JavaScript&lt;/h2>
+&lt;p>This standalone HTTP helper sends a query, checks for an HTTP error, validates the array response, and reads the optional list count.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87;font-weight:bold">async&lt;/span> &lt;span style="color:#204a87;font-weight:bold">function&lt;/span> &lt;span style="color:#000">findSummaries&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">workspaceUrl&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">accessToken&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">endpoint&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">new&lt;/span> &lt;span style="color:#000">URL&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;/api/summaries&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">workspaceUrl&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">response&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">await&lt;/span> &lt;span style="color:#000">fetch&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">endpoint&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">method&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;POST&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">headers&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">Authorization&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;Bearer &amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#000">accessToken&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;Content-Type&amp;#34;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;application/json&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">Accept&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;application/json&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">body&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#000">JSON&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">stringify&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">query&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">responseText&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">await&lt;/span> &lt;span style="color:#000">response&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">text&lt;/span>&lt;span style="color:#000;font-weight:bold">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">!&lt;/span>&lt;span style="color:#000">response&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">ok&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">error&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87;font-weight:bold">new&lt;/span> &lt;span style="color:#204a87">Error&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#4e9a06">&amp;#34;Summaries request failed (HTTP &amp;#34;&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#000">response&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">status&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">+&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;).&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">error&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">status&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">response&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">status&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000">error&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">responseBody&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">responseText&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">throw&lt;/span> &lt;span style="color:#000">error&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">summaries&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">JSON&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">parse&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">responseText&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">if&lt;/span> &lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">!&lt;/span>&lt;span style="color:#204a87">Array&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">isArray&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">summaries&lt;/span>&lt;span style="color:#000;font-weight:bold">))&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">throw&lt;/span> &lt;span style="color:#204a87;font-weight:bold">new&lt;/span> &lt;span style="color:#204a87">Error&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;Expected a JSON array from the Summaries API.&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">totalHeader&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">response&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">headers&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">get&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;total-items&amp;#34;&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">parsedTotal&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#000">totalHeader&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">===&lt;/span> &lt;span style="color:#204a87;font-weight:bold">null&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">||&lt;/span> &lt;span style="color:#000">totalHeader&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#000">trim&lt;/span>&lt;span style="color:#000;font-weight:bold">()&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">===&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">?&lt;/span> &lt;span style="color:#204a87;font-weight:bold">NaN&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87">Number&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">totalHeader&lt;/span>&lt;span style="color:#000;font-weight:bold">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">const&lt;/span> &lt;span style="color:#000">totalItems&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> &lt;span style="color:#204a87">Number&lt;/span>&lt;span style="color:#000;font-weight:bold">.&lt;/span>&lt;span style="color:#204a87">isSafeInteger&lt;/span>&lt;span style="color:#000;font-weight:bold">(&lt;/span>&lt;span style="color:#000">parsedTotal&lt;/span>&lt;span style="color:#000;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#000">parsedTotal&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">&amp;gt;=&lt;/span> &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">?&lt;/span> &lt;span style="color:#000">parsedTotal&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#ce5c00;font-weight:bold">:&lt;/span> &lt;span style="color:#204a87;font-weight:bold">null&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#204a87;font-weight:bold">return&lt;/span> &lt;span style="color:#000;font-weight:bold">{&lt;/span> &lt;span style="color:#000">summaries&lt;/span>&lt;span style="color:#000;font-weight:bold">,&lt;/span> &lt;span style="color:#000">totalItems&lt;/span> &lt;span style="color:#000;font-weight:bold">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#000;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>{ summaries, totalItems }&lt;/code> is the helper&amp;rsquo;s own return value; it is not the server&amp;rsquo;s JSON envelope. Read &lt;code>summaries&lt;/code> according to the requested action. Tile and chart consumers should not depend on a list count header.&lt;/p>
+&lt;p>The helper preserves a zero count and leaves a missing or invalid count as &lt;code>null&lt;/code>. It also retains the actual error response text without assuming a particular &lt;code>HttpError&lt;/code> JSON property name.&lt;/p>
+&lt;h2 id="14-errors-performance-and-troubleshooting">14. Errors, performance, and troubleshooting&lt;/h2>
+&lt;h3 id="error-handling">Error handling&lt;/h3>
+&lt;p>On failure, the API returns an HTTP error instead of a successful summary array. Check the HTTP response status before interpreting the body as list or aggregate data.&lt;/p>
+&lt;p>The failure is logged under &lt;strong>&lt;code>support/logs&lt;/code>&lt;/strong>, using the category:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Instance | Summary find(Query)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Use the request&amp;rsquo;s action, process scope, selected fields, prepared conditions, and error response to investigate the failure. An empty successful query result is different from a failed request; do not convert an HTTP error into an empty list or a zero-valued tile.&lt;/p>
+&lt;h3 id="keep-queries-focused">Keep queries focused&lt;/h3>
+&lt;p>The summary index is designed for fast searching across large collections, including hundreds of thousands of instance documents. Query cost still depends on the scope, requested properties, conditions, and amount of data returned.&lt;/p>
+&lt;ul>
+&lt;li>Set &lt;code>info.process&lt;/code> when the data belongs to one process.&lt;/li>
+&lt;li>Select the fields needed by the view.&lt;/li>
+&lt;li>Use a bounded &lt;code>rowLimit&lt;/code> and page through lists.&lt;/li>
+&lt;li>Use a tile or chart action when the required output is an aggregate.&lt;/li>
+&lt;li>Include the correct sort type for numbers and dates.&lt;/li>
+&lt;li>Recompute relative date conditions when refreshing.&lt;/li>
+&lt;li>Account for the short asynchronous indexing interval after a save.&lt;/li>
+&lt;/ul>
+&lt;h3 id="troubleshooting-reference">Troubleshooting reference&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Symptom&lt;/th>
+&lt;th>What to check&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>A recently saved value is not visible in a query&lt;/td>
+&lt;td>Allow for the asynchronous indexing job, then refresh the summary query.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A table-cell value cannot be found&lt;/td>
+&lt;td>Table contents are outside Summaries search coverage.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A custom field&amp;rsquo;s nested property cannot be found&lt;/td>
+&lt;td>Custom fields expose their &lt;code>field.text&lt;/code> representation; arbitrary nested value properties are not independently indexed.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>An expected calculated list column is absent&lt;/td>
+&lt;td>&lt;code>___CUSTOM_FIELD*&lt;/code> columns are computed by the client.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Numbers sort as &lt;code>10, 2&lt;/code>&lt;/td>
+&lt;td>Supply &lt;code>Number&lt;/code> or &lt;code>fields/field-number&lt;/code> as &lt;code>info.sortFieldType&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Dates sort by their displayed characters&lt;/td>
+&lt;td>Supply &lt;code>DateTime&lt;/code> or &lt;code>fields/field-date&lt;/code> as the sort type.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>An instance action cannot find the returned item&lt;/td>
+&lt;td>Use &lt;code>summary.name&lt;/code>, not a widget-specific &lt;code>summary.id&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>One list widget appears to reuse another widget&amp;rsquo;s summary data&lt;/td>
+&lt;td>Check &lt;code>isListWidget&lt;/code> and the distinct widget &lt;code>info.id&lt;/code> values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A pager cannot find the total in the JSON body&lt;/td>
+&lt;td>Read the &lt;code>total-items&lt;/code> response header.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A request with &lt;code>rowLimit: 0&lt;/code> returns one row&lt;/td>
+&lt;td>Zero is normalized to one; use an explicit positive page size.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A relative date filter keeps using old boundaries&lt;/td>
+&lt;td>Run &lt;code>parseDateConditions&lt;/code> before sending the current query.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A chart has no second series&lt;/td>
+&lt;td>Configure both &lt;code>field2&lt;/code> and &lt;code>exp2&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A tile displays zero when no aggregate is available&lt;/td>
+&lt;td>Preserve a missing-value state instead of using a truthiness fallback.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Users see different list or aggregate results&lt;/td>
+&lt;td>Check instance permissions, &lt;code>queryType&lt;/code>, conditions, and the current indexed data.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>A hidden form field remains queryable&lt;/td>
+&lt;td>Field visibility is a document presentation setting; record access is controlled by instance permissions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>The request fails&lt;/td>
+&lt;td>Check the HTTP error response and the summary-query category in &lt;code>support/logs&lt;/code>.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="verify-an-integration">Verify an integration&lt;/h3>
+&lt;p>Start with a known instance and a small field selection. Confirm its &lt;code>name&lt;/code>, requested properties, and typed sort order. Then test the next page, an empty list, a populated and empty aggregate, and the relevant date filters.&lt;/p>
+&lt;p>Verify the intended results under the users who will run the integration, because both instance permissions and relationship filters affect the results. When a test updates an instance, allow for indexing before comparing the saved document with a summary query.&lt;/p>
+&lt;h2 id="related-documentation">Related documentation&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.kianda.com/apis/authentication/">Authentication&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/apis/instances/">Instances API&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/conditions/">Page conditions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/list/">List widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/tile/">Tile widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/chart/">Chart widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/platform/pages/filter/">Filter widget&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.kianda.com/low-code/page-widget/">Page widget development&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
