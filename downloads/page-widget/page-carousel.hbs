@@ -1,0 +1,92 @@
+{{#if (eq displayMode "settings")}}
+  <div class="form-group">
+    <label>
+      Seconds between slides (at least 5)
+      {{input type="number" min="5" step="1" required=true
+        value=widget.settings.intervalSeconds class="form-control"}}
+    </label>
+  </div>
+
+  {{#each widget.settings.slides as |slide index|}}
+    <fieldset class="well">
+      <legend>{{slide.title}}</legend>
+      <div class="form-group">
+        <label>Title {{input value=slide.title required=true class="form-control"}}</label>
+      </div>
+      <div class="form-group">
+        <label>Description {{textarea value=slide.description class="form-control"}}</label>
+      </div>
+      <div class="form-group">
+        <label>Image URL {{input type="url" value=slide.imageUrl class="form-control"}}</label>
+        <label>Image description {{input value=slide.imageAlt class="form-control"}}</label>
+        <p class="help-block">Use a complete public-file or HTTPS URL. Leave the description empty for a decorative image.</p>
+      </div>
+      <div class="form-group">
+        <label>Button text (optional) {{input value=slide.buttonLabel class="form-control"}}</label>
+      </div>
+      {{#if slide.buttonLabel}}
+        <div class="form-group">
+          {{radio-button name=(concat this.elementId "-target-" index) label="Open page" value="dashboard" group=slide.targetType}}
+          {{radio-button name=(concat this.elementId "-target-" index) label="Start process" value="form" group=slide.targetType}}
+          {{radio-button name=(concat this.elementId "-target-" index) label="Open web address" value="external" group=slide.targetType}}
+        </div>
+        <div class="form-group">
+          <label>
+            Destination (page name, process name, or complete web address)
+            {{input value=slide.target required=true class="form-control"}}
+          </label>
+        </div>
+        {{#unless (eq slide.targetType "external")}}
+          <div class="form-group">
+            <label>
+              Query parameters, for example project=site1&amp;location=location1
+              {{input value=slide.queryParams class="form-control"}}
+            </label>
+          </div>
+        {{/unless}}
+      {{/if}}
+      <button type="button" class="btn btn-default" {{action "removeSlide" slide}}>Remove slide</button>
+    </fieldset>
+  {{/each}}
+  <button type="button" class="btn btn-primary" {{action "addSlide"}}>Add slide</button>
+{{else}}
+  <div class="kianda-page-carousel" role="region" aria-roledescription="carousel" aria-label="Page highlights">
+    {{#if activeSlide}}
+      <div aria-live={{if isPaused "polite" "off"}} aria-atomic="true">
+        <article role="group" aria-roledescription="slide" aria-label={{slidePosition}}>
+          {{#if imageUrl}}
+            <img class="kianda-page-carousel-image" src={{imageUrl}} alt={{activeSlide.imageAlt}}>
+          {{/if}}
+          <h3>{{activeSlide.title}}</h3>
+          <p>{{activeSlide.description}}</p>
+          {{#if activeSlide.buttonLabel}}
+            <button type="button" class="btn btn-primary" {{action "navigate" activeSlide}}>
+              {{activeSlide.buttonLabel}}
+            </button>
+          {{/if}}
+        </article>
+      </div>
+      {{#if hasSeveralSlides}}
+        <div class="kianda-page-carousel-controls">
+          <button type="button" class="btn btn-default" aria-label="Previous slide" {{action "previous"}}>Previous</button>
+          <span>{{slidePosition}}</span>
+          <button type="button" class="btn btn-default" aria-label="Next slide" {{action "next"}}>Next</button>
+          {{#if canRotate}}
+            <button type="button" class="btn btn-default" {{action "toggleRotation"}}>
+              {{if isPaused "Resume rotation" "Pause rotation"}}
+            </button>
+          {{/if}}
+        </div>
+      {{/if}}
+    {{else}}
+      <p>Add slides in the widget settings.</p>
+    {{/if}}
+    {{#if errorMessage}}<p class="text-danger" role="alert">{{errorMessage}}</p>{{/if}}
+  </div>
+
+  <style>
+    .kianda-page-carousel { padding: 1rem; background: #f6f8fb; }
+    .kianda-page-carousel .kianda-page-carousel-image { display: block; width: 100%; max-height: 280px; object-fit: cover; }
+    .kianda-page-carousel .kianda-page-carousel-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: 1rem; }
+  </style>
+{{/if}}

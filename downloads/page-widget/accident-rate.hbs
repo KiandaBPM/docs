@@ -1,0 +1,106 @@
+{{#if (eq this.displayMode "settings")}}
+  <p>
+    Calculate monthly incident totals divided by worked hours.
+    This example uses complete UTC calendar months, including the current month.
+    Enter the exact process and field names from your workspace.
+  </p>
+
+  <div class="form-group">
+    <label for="{{this.elementId}}-afr-months">UTC months to display</label>
+    {{input id=(concat this.elementId "-afr-months") type="number" min="1" max="24" step="1" required=true
+      value=this.widget.settings.monthsCount class="form-control"}}
+    <p class="help-block">Choose 1–24 months. More months require more data to load.</p>
+  </div>
+
+  <div class="form-group">
+    <label for="{{this.elementId}}-afr-scale">Rate scale</label>
+    {{input id=(concat this.elementId "-afr-scale") type="number" min="0" step="any" required=true
+      value=this.widget.settings.rateScale class="form-control"}}
+    <p class="help-block">
+      Use a number greater than zero. Rate = incident total × scale ÷ worked hours.
+      Select the scale appropriate to your reporting method.
+    </p>
+  </div>
+
+  <fieldset>
+    <legend>Incident dataset</legend>
+    <div class="form-group">
+      <label for="{{this.elementId}}-afr-incident-process">Process name</label>
+      {{input id=(concat this.elementId "-afr-incident-process") type="text" required=true value=this.widget.settings.incidentProcessName class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="{{this.elementId}}-afr-incident-number">Number field to sum</label>
+      {{input id=(concat this.elementId "-afr-incident-number") type="text" required=true value=this.widget.settings.incidentFieldName class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="{{this.elementId}}-afr-incident-date">Form date field for monthly grouping</label>
+      {{input id=(concat this.elementId "-afr-incident-date") type="text" required=true value=this.widget.settings.incidentDateFieldName class="form-control"}}
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Worked-hours dataset</legend>
+    <div class="form-group">
+      <label for="{{this.elementId}}-afr-hours-process">Process name</label>
+      {{input id=(concat this.elementId "-afr-hours-process") type="text" required=true value=this.widget.settings.hoursProcessName class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="{{this.elementId}}-afr-hours-number">Number field to sum</label>
+      {{input id=(concat this.elementId "-afr-hours-number") type="text" required=true value=this.widget.settings.hoursFieldName class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="{{this.elementId}}-afr-hours-date">Form date field for monthly grouping</label>
+      {{input id=(concat this.elementId "-afr-hours-date") type="text" required=true value=this.widget.settings.hoursDateFieldName class="form-control"}}
+    </div>
+  </fieldset>
+
+  <p class="help-block">
+    Connect page filters to this widget using fields applicable to both datasets.
+    Use AND between top-level condition groups; OR conditions inside a group are supported.
+    Each query adds its own UTC month condition. Existing filters also apply.
+  </p>
+{{else}}
+  <p>
+    Monthly totals use UTC. The current month includes any future-dated
+    records entered for this month.
+  </p>
+
+  {{#if this.isLoading}}
+    <p role="status" aria-live="polite">Loading monthly totals…</p>
+  {{/if}}
+  {{#if this.errorMessage}}
+    <div class="alert alert-danger" role="alert">{{this.errorMessage}}</div>
+  {{/if}}
+
+  {{!-- Keep the canvas mounted during loading, errors, and filter refreshes. --}}
+  <div style="position: relative; height: 320px; width: 100%;" aria-busy={{this.isLoading}}>
+    <canvas data-accident-rate-chart role="img"
+      aria-label="Accident rate by UTC month. Exact values are listed in the following table."></canvas>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-striped table-condensed">
+      <caption>Monthly totals and calculated rates. Missing rates appear as gaps in the chart.</caption>
+      <thead>
+        <tr>
+          <th scope="col">UTC month</th>
+          <th scope="col">Incident total</th>
+          <th scope="col">Worked hours</th>
+          <th scope="col">Rate</th>
+          <th scope="col">Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each this.rows as |row|}}
+          <tr>
+            <th scope="row">{{row.period}}</th>
+            <td>{{row.incidentText}}</td>
+            <td>{{row.hoursText}}</td>
+            <td>{{row.rateText}}</td>
+            <td>{{row.note}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+{{/if}}

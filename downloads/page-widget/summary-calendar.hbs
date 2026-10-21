@@ -1,0 +1,68 @@
+{{#if (eq displayMode "settings")}}
+  <div class="form-group">
+    <label class="control-label">Business process</label>
+    {{process-picker required=true processName=widget.settings.processName process=process}}
+  </div>
+
+  {{#if process}}
+    <div class="form-group">
+      <label class="control-label">Conditions</label>
+      {{rules/rule-conditions showProcessProperties=true isCompact=true btnText="" serialize=true conditions=widget.settings.conditions process=process}}
+      <p class="help-block">Join groups with AND. OR alternatives can be placed inside a group.</p>
+    </div>
+    <div class="form-group">
+      <label class="control-label">Title field</label>
+      {{field-picker value=widget.settings.titleField required=true allowText=false process=process}}
+    </div>
+    <div class="form-group">
+      <label class="control-label">Start date field</label>
+      {{field-picker includes='["fields/field-date"]' value=widget.settings.startDateField required=true allowText=false process=process}}
+    </div>
+    <div class="form-group">
+      <label class="control-label">End date field (optional, inclusive)</label>
+      {{field-picker includes='["fields/field-date"]' value=widget.settings.endDateField allowText=false process=process}}
+      <p class="help-block">An empty end date creates a one-day event. This example interprets all-day dates in UTC.</p>
+    </div>
+  {{/if}}
+
+  <div class="form-group">
+    <label class="control-label">FullCalendar JavaScript URL</label>
+    {{input type="text" class="form-control" value=widget.settings.fullCalendarUrl required=true}}
+    <p class="help-block">Use a trusted, pinned FullCalendar v6 global bundle that exposes FullCalendar.Calendar and includes the DayGrid views. Configure the same version for all calendars on a page.</p>
+  </div>
+  <div class="form-group">
+    <label class="control-label">FullCalendar stylesheet URL (if required by that bundle)</label>
+    {{input type="text" class="form-control" value=widget.settings.fullCalendarCssUrl}}
+    <p class="help-block">Load the matching stylesheet if your chosen version requires a separate CSS file. Reload the page after changing the library version.</p>
+  </div>
+  <div class="form-group">
+    <label class="control-label">Default calendar view</label>
+    {{radio-button label="Month" value="dayGridMonth" default=true group=widget.settings.calendarView}}
+    {{radio-button label="Week" value="dayGridWeek" group=widget.settings.calendarView}}
+    {{radio-button label="Day" value="dayGridDay" group=widget.settings.calendarView}}
+  </div>
+  <div class="form-group">
+    <label class="control-label">Show calendar view buttons?</label>
+    {{radio-button label="Yes" value="yes" default=true group=widget.settings.showCalendarButtons}}
+    {{radio-button label="No" value="no" group=widget.settings.showCalendarButtons}}
+  </div>
+  <div class="form-group">
+    <label class="control-label">Open a Kianda form when an event is clicked?</label>
+    {{radio-button label="Yes" value="yes" default=true group=widget.settings.openOnClick}}
+    {{radio-button label="No" value="no" group=widget.settings.openOnClick}}
+  </div>
+{{else}}
+  <div class="summary-calendar-widget">
+    {{#if isLoading}}
+      <p role="status">Loading calendar events...</p>
+    {{/if}}
+    {{#if errorMessage}}
+      <div class="alert alert-danger" role="alert">
+        <p>{{errorMessage}}</p>
+        <p>Previously displayed events may be out of date until refresh succeeds.</p>
+        <button type="button" class="btn btn-default" {{action "refresh"}}>Try again</button>
+      </div>
+    {{/if}}
+    <div class="summary-calendar-host"></div>
+  </div>
+{{/if}}

@@ -1,0 +1,68 @@
+{{#if (eq this.displayMode "settings")}}
+  <div class="form-group">
+    <label>Process</label>
+    {{process-picker
+      processName=this.widget.settings.processName
+      process=this.process
+      required=true}}
+  </div>
+
+  <fieldset class="form-group">
+    <legend>Calculation</legend>
+    {{radio-button name=(concat this.elementId "-calculation")
+      label="Count" value="count" group=this.widget.settings.tile}}
+    {{radio-button name=(concat this.elementId "-calculation")
+      label="Sum" value="sum" group=this.widget.settings.tile}}
+    {{radio-button name=(concat this.elementId "-calculation")
+      label="Average" value="avg" group=this.widget.settings.tile}}
+  </fieldset>
+
+  {{#if (and this.process (not-eq this.widget.settings.tile "count"))}}
+    <div class="form-group">
+      <label>Number field</label>
+      {{field-picker
+        includes='["fields/field-number"]'
+        process=this.process
+        allowText=false
+        value=this.widget.settings.field
+        required=true}}
+    </div>
+  {{/if}}
+
+  <fieldset class="form-group">
+    <legend>Record relationship</legend>
+    {{radio-button name=(concat this.elementId "-relationship")
+      label="All accessible" value="all" group=this.widget.settings.queryType}}
+    {{radio-button name=(concat this.elementId "-relationship")
+      label="Assigned to me" value="assignedTo" group=this.widget.settings.queryType}}
+    {{radio-button name=(concat this.elementId "-relationship")
+      label="Created by me" value="createdBy" group=this.widget.settings.queryType}}
+    {{radio-button name=(concat this.elementId "-relationship")
+      label="Modified by me" value="modifiedBy" group=this.widget.settings.queryType}}
+  </fieldset>
+
+  {{#if this.process}}
+    <div class="form-group">
+      <label>Conditions</label>
+      {{rules/rule-conditions
+        showProcessProperties=true
+        isCompact=true
+        btnText=""
+        serialize=true
+        conditions=this.widget.settings.conditions
+        process=this.process}}
+    </div>
+  {{/if}}
+{{else}}
+  <div class="text-center" aria-live="polite" aria-busy={{this.isLoading}}>
+    {{#if this.isLoading}}
+      <p role="status">Loading metric…</p>
+    {{else if this.errorMessage}}
+      <p class="text-danger" role="alert">{{this.errorMessage}}</p>
+    {{else if this.hasValue}}
+      <p class="h2">{{this.formattedValue}}</p>
+    {{else}}
+      <p class="text-muted">No aggregate value is available.</p>
+    {{/if}}
+  </div>
+{{/if}}
