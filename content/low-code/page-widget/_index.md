@@ -10,7 +10,7 @@ A page widget is a rendered Ember component that helps users find information, u
 
 For reports over Kianda instances, use the [Summaries API](/apis/summaries/). It searches indexed instance properties and returns selected fields or calculated aggregates without loading every complete instance document. This is the data-access foundation for dashboards that report across hundreds of thousands of instances.
 
-This guide targets Kianda's **Ember.js 2.18** widget environment. It develops a complete configurable metric, then explains how to extend the same approach to a rate chart, a calendar, and a carousel. The [Summaries reference](/apis/summaries/) contains the full query model, operators, field projection, permissions, and HTTP behaviour.
+This guide targets Kianda's **Ember.js** widget environment. It develops a complete configurable metric, then explains how to extend the same approach to a rate chart, a calendar, and a carousel. The [Summaries reference](/apis/summaries/) contains the full query model, operators, field projection, permissions, and HTTP behaviour.
 
 ![An Accident Rates dashboard with project and location filters, a monthly rate chart, summary tiles, a date-range filter, and an EHSwise heading.](/images/page-widget/accident-rate-page.png)
 
